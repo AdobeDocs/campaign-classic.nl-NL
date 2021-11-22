@@ -19,13 +19,13 @@ ht-degree: 3%
 
 Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij.
 
-Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** lusje op de controleinstantie worden betreden.
+Dit rapport, dat gericht is op technische beheerders, is ook toegankelijk via **[!UICONTROL Monitoring]** op de besturingsinstantie.
 
 ![](assets/mc_reports_2.png)
 
-Enkel zoals voor het **[!UICONTROL Message Center service level]** rapport, kunt u verkiezen om de algemene statistieken of die met betrekking tot een bepaalde uitvoeringsinstantie te tonen. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
+Net als voor de **[!UICONTROL Message Center service level]** rapport, kunt u verkiezen om de algemene statistieken of die met betrekking tot een bepaalde uitvoeringsinstantie te tonen. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
 
-De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie worden getoond worden berekend over de geselecteerde periode:
+De indicatoren die worden weergegeven in het **[!UICONTROL Indicators over the period]** de sectie wordt berekend over de geselecteerde periode:
 
 * **[!UICONTROL Average queuing time]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de verwerkingstijd wordt in aanmerking genomen.
 * **[!UICONTROL Average message sending time (s)]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de levertijd van de mta wordt in aanmerking genomen.
@@ -36,4 +36,4 @@ De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie word
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Raadpleeg [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).

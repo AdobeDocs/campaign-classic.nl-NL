@@ -27,4 +27,4 @@ Voordat u uw aanbiedingen maakt, moet u eerst een omgeving opgeven (zie [Overzic
 
 >[!IMPORTANT]
 >
->Het maken van de aanbiedingencatalogus, d.w.z. de categorieën en de aanbiedingen, valt onder de verantwoordelijkheid van **[!UICONTROL Offer manager]**.
+>De verantwoordelijkheid voor de opstelling van de aanbiedingencatalogus, d.w.z. de categorieën en de aanbiedingen, ligt bij de **[!UICONTROL Offer manager]**.

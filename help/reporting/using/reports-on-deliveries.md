@@ -21,11 +21,11 @@ Adobe Campaign biedt verschillende typen rapporten die toegankelijk zijn via de 
 
 De volgende typen rapporten zijn beschikbaar:
 
-* Rapporten over het volledige platform, zie [Globale rapporten](../../reporting/using/global-reports.md).
-* Leveringsrapporten, zie [Leveringsrapporten](../../reporting/using/delivery-reports.md).
-* Gecumuleerde rapporten, zie [Cumulatieve rapporten](../../reporting/using/cumulative-reports.md).
+* Rapporten over het gehele platform, zie [Algemene rapporten](../../reporting/using/global-reports.md).
+* Afleveringsrapporten, zie [Afleveringsrapporten](../../reporting/using/delivery-reports.md).
+* Gecumuleerde rapporten, zie [Cumulatieve verslagen](../../reporting/using/cumulative-reports.md).
 
-U kunt tot rapporten van de homepage van de cliëntconsole, het rapportdashboard of de leveringslijst toegang hebben. De vertoningswijze van een rapport hangt van zijn context af. De lijst met hoofdrapporten is beschikbaar op de homepage en biedt u snel toegang tot leveringsgegevens. U kunt deze lijst naar wens wijzigen. Zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md) voor meer informatie.
+U kunt tot rapporten van de homepage van de cliëntconsole, het rapportdashboard of de leveringslijst toegang hebben. De vertoningswijze van een rapport hangt van zijn context af. De lijst met hoofdrapporten is beschikbaar op de homepage en biedt u snel toegang tot leveringsgegevens. U kunt deze lijst naar wens wijzigen. Zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md) voor meer informatie .
 
 ## Rapporten gebruiken {#using-reports}
 
@@ -39,7 +39,7 @@ Wanneer het rapport wordt geproduceerd, kunt u diverse acties uitvoeren gebruike
 
 U kunt:
 
-* Hiermee exporteert u het rapport naar Excel, PDF of Open Document.
+* Exporteer het rapport naar Excel, PDF of Open Document.
 * Druk het rapport af,
 * Maak de rapportgeschiedenis,
 * Verschillende rapporthistorie weergeven,
@@ -49,4 +49,4 @@ U kunt:
 >
 >Sommige rapporten bevatten grafieken (kromme, bar, trechter, enz.). Plaats de cursor boven een diagram om de waarden ervan weer te geven.
 
-Raadpleeg [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md) voor meer informatie over deze opties.
+Voor meer informatie over deze opties raadpleegt u [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md).

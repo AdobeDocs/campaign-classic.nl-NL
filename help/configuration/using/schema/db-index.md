@@ -45,7 +45,7 @@ Met dit element kunt u een index definiëren die is gekoppeld aan een tabel.
 
 Het is mogelijk om verscheidene indexen te bepalen. Een index kan verwijzen naar een of meer velden in de tabel. De indexverklaring volgt gewoonlijk de definitie van het belangrijkste schemaelement.
 
-De volgorde van de `<keyfield>`-elementen die in een `<dbindex>` zijn gedefinieerd, is erg belangrijk. Het eerste `<keyfield>` moet het indexeringscriterium zijn waarop de vragen hoofdzakelijk gebaseerd zijn.
+De volgorde van de `<keyfield>` elementen gedefinieerd in a `<dbindex>` is zeer belangrijk. De eerste `<keyfield>` moet het indexeringscriterium zijn waarop de vragen hoofdzakelijk zijn gebaseerd.
 
 De naam van de index in de database wordt berekend door de naam van de tabel en de naam van de index samen te voegen. Bijvoorbeeld: Tabelnaam &quot;Voorbeeld&quot;, Namespace &quot;Cus&quot;, indexnaam &quot;MyIndex&quot;-> naam van het indexveld tijdens het opvragen van indexitems: &quot;CusSample_myIndex&quot;.
 
@@ -66,11 +66,11 @@ De naam van de index in de database wordt berekend door de naam van de tabel en 
 * **applyIf (string)**: voorwaarde voor het in aanmerking nemen van de index - ontvangt een uitdrukking XTK.
 * **label (tekenreeks)**: indexlabel.
 * **naam (MNTOKEN)**: unieke indexnaam.
-* **uniek (Booleaans)**: als deze optie is geactiveerd (@unique=&quot;true&quot;), garandeert het kenmerk de unieke kwaliteit van de index in alle velden.
+* **unique (boolean)**: als deze optie is geactiveerd (@unique=&quot;true&quot;), garandeert het kenmerk de unieke kwaliteit van de index in alle velden.
 
 ## Voorbeelden {#examples-3}
 
-Creation of an index on the &quot;id&quot; field. (Het kenmerk &quot;@unique&quot; op het element `<dbindex>` activeert het toevoegen van het trefwoord &quot;UNIQUE&quot; SQL wanneer de index in de database (query) wordt gemaakt.)
+Creation of an index on the &quot;id&quot; field. (het kenmerk &quot;@unique&quot; op het tabblad `<dbindex>` element brengt het toevoegen van het sleutelwoord &quot;UNIQUE&quot;SQL teweeg wanneer de index in het gegevensbestand (vraag) wordt gecreeerd.
 
 ```
 <element label="Sample" name="Sample">

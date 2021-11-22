@@ -25,4 +25,4 @@ In het geval van een configuratie op veelvoudige computers, moet u niet het zelf
 >
 >De belangrijkste stappen van de installatieconfiguratie kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, om de server en de dossiers van de instantieconfiguratie bijvoorbeeld te vormen.
 >
->Meer informatie over de belangrijkste verschillen tussen plaatsingen, verwijs naar [Het ontvangen modellen](../../installation/using/hosting-models.md) sectie of naar [De verschillen van de Eigenschap voor ontvangen en op-gebouw plaatsingen](../../installation/using/capability-matrix.md).
+>Voor meer informatie over de belangrijkste verschillen tussen implementaties raadpleegt u de [Hostmodellen](../../installation/using/hosting-models.md) van de [Verschillen in functies voor gehoste en on-premise implementaties](../../installation/using/capability-matrix.md).

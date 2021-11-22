@@ -17,17 +17,17 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-Importeren- en exportsjablonen worden opgeslagen in de map **[!UICONTROL Resources > Templates > Job templates]** van de Adobe Campaign-structuur.
+De invoer- en exportsjablonen worden opgeslagen in het dialoogvenster **[!UICONTROL Resources > Templates > Job templates]** directory van de Adobe Campaign-structuur.
 
 Standaard staan er drie importsjablonen en één exportsjabloon in deze map. Ze mogen niet worden gewijzigd.
 
-* De native sjabloon **[!UICONTROL Import denylist]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de lijst van gewezen personen zijn toegevoegd.
+* De native sjabloon **[!UICONTROL Import denylist]** is reeds gevormd om een lijst van e-mailadressen in te voeren die aan de lijst van gewezen personen werden toegevoegd.
 
-* Met de sjablonen **[!UICONTROL New text import]** en **[!UICONTROL New text export]** kunt u importeren of exporteren vanuit het niets.
+* De **[!UICONTROL New text import]** en **[!UICONTROL New text export]** Met sjablonen kunt u een geheel nieuwe import of export configureren.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-U kunt bestaande sjablonen dupliceren om uw eigen sjablonen te maken of u kunt een nieuwe sjabloon maken via het menu **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**.
+U kunt bestaande sjablonen dupliceren om uw eigen sjablonen te maken of een nieuwe sjabloon maken via het dialoogvenster **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** -menu.
 
 Het proces om een malplaatje te vormen is dan het zelfde dan dat in deze secties wordt voorgesteld:
 

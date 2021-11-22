@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >:warning: Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../social/using/about-social-marketing.md)
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Sociale marketing**.
+De hieronder beschreven workflows worden geïnstalleerd met de **Sociale marketing** module standaard.
 
 <table> 
  <tbody> 
@@ -38,17 +38,17 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
   <tr> 
    <td> <span class="uicontrol">Facebook-ventilatoren synchroniseren</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> Deze workflow importeert elke dag om 19.00 uur Facebook-ventilatoren naar Adobe Campaign.<br /> </td> 
+   <td> Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Facebook-pagina's synchroniseren</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
-   <td> Met deze workflow worden Facebook-pagina's elke dag om 19.00 uur gesynchroniseerd met Adobe Campaign.<br /> </td> 
+   <td> Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina's met Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Berekening van Twitter-statistieken</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> Deze workflow berekent statistieken met betrekking tot retweets en bezoeken aan Twitter.<br /> </td> 
+   <td> Deze workflow berekent statistieken over retweets en bezoeken aan Twitter.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Twitter-pagina's synchroniseren</span> <br /> </td> 

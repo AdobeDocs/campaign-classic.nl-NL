@@ -23,7 +23,7 @@ Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van
 
 >[!NOTE]
 >
->Wanneer het scripting altijd de richtlijnen volgt die in [checklist van de Veiligheid en van de Privacy worden beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Volg bij het schrijven van scripts altijd de richtlijnen die worden beschreven in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 
@@ -35,7 +35,7 @@ Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moe
 >
 >Als u uw eigen banner wilt maken, moet u de uit-van-de-box banner personaliseren.
 
-Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Raadpleeg de sectie [Een webtoepassing ontwerpen](designing-a-web-application.md).
+Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Zie de [Een webtoepassing ontwerpen](designing-a-web-application.md) sectie.
 
 Als Web het volgen wordt geactiveerd, kunt u of hebben:
 
@@ -64,7 +64,7 @@ De standaardbanner heeft de volgende structuur:
       
 ```
 
-U moet **Gelieve te nemen uw bericht hier** met het blok vervangen dat uw het volgen informatie bevat. Deze vervanging zou in uw nieuw personaliseringsblok met betrekking tot de uit opt-banner moeten worden uitgevoerd.
+U moet de opdracht **Voeg hier uw bericht in** met het blok met de trackinggegevens. Deze vervanging zou in uw nieuw personaliseringsblok met betrekking tot de uit opt-banner moeten worden uitgevoerd.
 
 De banner wordt geleverd met een specifieke CSS. U kunt de stijlen echter overschrijven bij het maken en configureren van een webpagina. Zie [deze pagina](content-editor-interface.md).
 
@@ -93,7 +93,7 @@ Als u een JSSP moet schrijven, zijn de server-zij APIs beschikbaar:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Genereert de opmaak voor de uitschakelbanner die in de JSSP-pagina moet worden ingevoegd
 
-   **escapeJs {Boolean}** : true wanneer de gegenereerde markering moet worden beschermd om in JavaScript te kunnen worden gebruikt.
+   **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd om in JavaScript te kunnen worden gebruikt.
 
    Deze geeft de HTML van de opmaakcode voor de uitschakelbanner die op de pagina moet worden afgedrukt.
 
@@ -109,7 +109,7 @@ Als u een JSSP moet schrijven, zijn de server-zij APIs beschikbaar:
 
    Geeft de prijsverhoging voor de opt-out banner door het in te voegen in de JSSP pagina terug. Wordt aangeroepen als in JPEG tussen &lt;% %>
 
-   **escapeJs {Boolean}** : waar (true) wanneer de gegenereerde markering moet worden beschermd voor gebruik in JavaScript
+   **escapeJs {Boolean}**: waar (true) wanneer de gegenereerde markering moet worden beschermd voor gebruik in JavaScript
 
 JSSP-voorbeeld:
 

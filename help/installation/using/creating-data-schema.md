@@ -23,19 +23,19 @@ Een schema maken voor een externe database:
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Voer een **[!UICONTROL Namespace]** en **[!UICONTROL Name]** voor het schema in en selecteer **[!UICONTROL External account]** waarmee verbinding met de database wordt ingeschakeld. Hierdoor hebt u toegang tot de lijst met tabellen die beschikbaar zijn in de externe basis.
+1. Voer een **[!UICONTROL Namespace]** en  **[!UICONTROL Name]** voor het schema en selecteer **[!UICONTROL External account]** waarmee verbinding kan worden gemaakt met de database. Hierdoor hebt u toegang tot de lijst met tabellen die beschikbaar zijn in de externe basis.
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Kies in het veld **[!UICONTROL Table name]** de tabel met de gegevens die moeten worden verzameld.
+1. Van de **[!UICONTROL Table name]** kiest u de tabel met de gegevens die moeten worden verzameld.
 
-   Met Snowflake kunt u hier uw weergaven selecteren als aan de databasegebruiker de juiste bevoegdheden zijn toegekend. Als u weergaven gebruikt, kan Adobe Campaign het XML-schema niet automatisch genereren. U moet het zelf maken. Raadpleeg [Snowflake documentatie](https://docs.snowflake.com/en/user-guide/views-introduction.html) voor meer informatie over weergaven.
+   Met Snowflake kunt u hier uw weergaven selecteren als aan de databasegebruiker de juiste bevoegdheden zijn toegekend. Als u weergaven gebruikt, kan Adobe Campaign het XML-schema niet automatisch genereren. U moet het zelf maken. Raadpleeg voor meer informatie over weergaven [Snowflake-documentatie](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Klik **[!UICONTROL OK]** om te bevestigen. Adobe Campaign detecteert automatisch de structuur van de geselecteerde tabel en genereert het logische schema. Adobe Campaign genereert geen koppelingen.
+1. Klikken **[!UICONTROL OK]** ter bevestiging. Adobe Campaign detecteert automatisch de structuur van de geselecteerde tabel en genereert het logische schema. Adobe Campaign genereert geen koppelingen.
 
-1. Klik op **[!UICONTROL Save]** om het maken te bevestigen.
+1. Klikken **[!UICONTROL Save]** om de aanmaak te bevestigen.
 
    >[!CAUTION]
    >

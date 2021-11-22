@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **Midden-bron platform**. Voor meer op deze module, verwijs naar dit [sectie](../../installation/using/mid-sourcing-deployment.md).
+De hieronder beschreven workflow wordt geïnstalleerd met de **Platform voor middelhoge bronnen** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **
   <tr> 
    <td> <span class="uicontrol">Leveringsindicatoren</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Deze werkstroom werkt leveringsvolgindicatoren voor een levering bij. Dit werkschema wordt teweeggebracht elk uur door gebrek.<br /> </td> 
+   <td> Deze werkstroom werkt leveringsvolgindicatoren voor een levering bij. Deze workflow wordt standaard elke uur geactiveerd.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

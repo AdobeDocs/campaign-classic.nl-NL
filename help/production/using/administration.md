@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Automatisch opstarten van de Adobe Campaign-modules (**web**, **mta**, **wfserver**, enz.) wordt geleverd door de **nlserver**-server.
+Automatisch opstarten van de Adobe Campaign-modules (**web**, **mta**, **wfserver**, enz.) wordt verstrekt door **nlserver** server.
 
-Als u Adobe Campaign installeert, wordt de computer automatisch zo geconfigureerd dat de **nlserver**-service wordt opgestart tijdens de opstartprocedure.
+Als u Adobe Campaign installeert, wordt de machine automatisch zo geconfigureerd dat de **nlserver** de dienst begint tijdens de laarsopeenvolging.
 
 De volgende opdrachten worden gebruikt om de Adobe Campaign-service handmatig te starten en af te sluiten:
 
@@ -35,7 +35,7 @@ De volgende opdrachten worden gebruikt om de Adobe Campaign-service handmatig te
 
 >[!NOTE]
 >
->Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver** / **systemctl stop nlserver**
+>Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten** / **systemctl stop nlserver**
 
 Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toegankelijk zijn (zoals **Adobe Campaign**):
 
@@ -43,8 +43,8 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
 
    >[!NOTE]
    >
-   >Door de parameter **-who** toe te voegen aan de opdracht **pdump** kunt u informatie verzamelen over de huidige verbindingen (gebruikers en processen).\
-   >De opdracht **/etc/init.d/nlserver6 status** (zonder de parameter &quot;-who&quot;) retourneert:
+   >Het toevoegen van **-who** aan de **spuiten** kunt u informatie over de huidige verbindingen (gebruikers en processen) verzamelen.\
+   >De **/etc/init.d/nlserver6 status** command (zonder de parameter &quot;-who&quot;) retourneert:
    >
    >    * 0 als alle processen worden uitgevoerd.
    >    * 1 als een proces ontbreekt.
@@ -52,13 +52,13 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >    * een andere waarde als er een fout is.
 
 
-* Een module voor meerdere instanties of mono-instanties starten/stoppen (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
+* Een meervoudige instantie- of monoinstantiemodule starten/stoppen (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
    **nlserver start`<module>[@<instance>]`**
 
    **nlserver-stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   U kunt ook de opdracht **Nlserver opnieuw starten`<module>[@<instance>]`** gebruiken om een module opnieuw te starten.
+   U kunt ook de opdracht **opnieuw starten van server`<module>[@<instance>]`** gebruiken om een module opnieuw te starten.
 
    Voorbeeld:
 
@@ -77,28 +77,29 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >[!NOTE]
    >
    >* Als de instantie niet is opgegeven, wordt de instantie &#39;default&#39; gebruikt.
-   >* In het geval van een noodsituatie, gebruik **-direct** optie om een directe stilstand aan het proces (gelijkwaardig aan het bevel van Unix **te dwingen - 9**).
-   >* Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via **syslogd** module worden geschreven.
-   >* Gebruik de optie **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
-   >
-   >   Voorbeeld:
-   >
-   >   **webbreedbeeldscherm opnieuw starten**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
+   >* In geval van een noodsituatie gebruikt u de **-onmiddellijk** optie om een onmiddellijke stopzetting van het proces (gelijkwaardig aan het bevel van Unix) te dwingen **doden -9**).
+   >* Gebruik de **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logbestanden worden via de **syslogd** module.
+   >* Gebruik de **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
+
+      >
+      >   Voorbeeld:
+      >
+      >   **webbreedbeeldscherm opnieuw starten**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan de processen opnieuw te starten zonder de **-verbose** als u de gewenste gegevens hebt gevonden, voorkomt u overbelasting van logbestanden.
 
 
-* Start alle Adobe Campaign-processen op (gelijk aan het starten van de **nlserver6**-service):
+* Alle Adobe Campaign-processen opstarten (gelijk aan het starten van de **nlserver6** service):
 
    **nlserver watchdog -noconsole**
 
-* Sluit alle Adobe Campaign-processen af (gelijk aan het afsluiten van de **nlserver6**-service):
+* Sluit alle Adobe Campaign-processen af (gelijk aan het afsluiten van de **nlserver6** service):
 
    **Uitschakelen van server**
 
-* Laad de **nlserver web** moduleconfiguratie (en de module van de Webserver uitbreiding, waar van toepassing) opnieuw wanneer **serverConf.xml** en **config-`<instance>  .xml </instance>`** dossiers zijn uitgegeven.
+* Laad de **nlserver-web** moduleconfiguratie (en de module van de Webserver uitbreiding, indien van toepassing) wanneer **serverConf.xml** en **config-`<instance>  .xml </instance>`** zijn bewerkt.
 
    **nlserver config-reload**
 

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-De [!DNL pipelined] status webservice geeft informatie over de status van het [!DNL pipelined] proces.
+De [!DNL pipelined] status webservice geeft informatie over de status van de [!DNL pipelined] proces.
 
 U kunt deze functie handmatig openen in een browser of automatisch met een bewakingstoepassing.
 
@@ -46,7 +46,7 @@ Aanbevolen indicatoren voor de bewaking worden gemarkeerd.
    * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één partij triggers.
    * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
    * gelezen door bytes: Het aantal bytes dat uit de wachtrij is gelezen sinds het proces is gestart.
-   * current-messages: Het huidige aantal berichten in behandeling die uit de wachtrij zijn gehaald en op verwerking wachten. **Deze indicator moet dicht bij nul** zijn.
+   * current-messages: Het huidige aantal berichten in behandeling die uit de wachtrij zijn gehaald en op verwerking wachten. **Deze indicator moet dicht bij nul liggen**.
    * huidige-pogingen: Het huidige aantal berichten dat niet is verwerkt en dat nog moet worden geprobeerd.
    * piekberichten: maximumaantal berichten dat in behandeling is sinds het proces is gestart.
    * aanwijzer-flushes: aantal batches berichten die sinds het begin zijn verwerkt.
@@ -59,8 +59,8 @@ Deze stats worden weergegeven per verwerkingsthread.
 
 * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
 * is-JS-processor: waarde &quot;1&quot; als deze thread de aangepaste JS gebruikt.
-* trigger-disczoals genegeerd: aantal berichten die na teveel pogingen wegens verwerkingsfouten werden verworpen. **Deze indicator moet nul** zijn.
-* triggerfouten: aantal verwerkingsfouten in het JS. **Deze indicator moet nul** zijn.
+* trigger-disczoals genegeerd: aantal berichten die na teveel pogingen wegens verwerkingsfouten werden verworpen. **Deze indicator moet nul zijn**.
+* triggerfouten: aantal verwerkingsfouten in het JS. **Deze indicator moet nul zijn**.
 * ontvangen trigger: aantal berichten die van de rij worden ontvangen.
 
 * Instellingen: ze worden ingesteld in de configuratiebestanden.

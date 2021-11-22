@@ -40,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> Query-streepjescodes<br /> </td> 
-   <td> <p>When multiple Campaign users connect to the same FDA Teradata external account, you can now pass a query band (key/value pairs) specific to each user. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. These data, which consist in a list of keys and values can then be used by Teradata administrators for audit purposes or to manage access rights, for example.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
+   <td> <p>Wanneer de veelvoudige gebruikers van de Campagne met de zelfde FDA Teradata externe rekening verbinden, kunt u een vraagband (sleutel/waardeparen) nu overgaan specifiek voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die uit een lijst van sleutels en waarden bestaan kunnen dan door de beheerders van Teradata voor controledoeleinden of om toegangsrechten, bijvoorbeeld te beheren worden gebruikt.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -48,15 +48,15 @@ ht-degree: 7%
 **Verbeteringen**
 
 * Logbestanden voor e-mailarchivering zijn verbeterd, waardoor het eenvoudiger en duidelijker wordt om te controleren welke e-mails met succes zijn geleverd of niet zijn gearchiveerd via BCC-archivering. (NEO-10675)
-* Fixed an issue which led to the display of load balancer IPs instead of customer IPs in the tracking broadlogs. (NEO-11295)
+* Probleem verholpen dat leidde tot de weergave van IP&#39;s van het taakverdelingsmechanisme in plaats van IP&#39;s van de klant in de weblogs voor het bijhouden van berichten. (NEO-11295)
 * Probleem verholpen waarbij een willekeurig probleem werd opgelost waardoor de eigenschappen van een levering onjuist werden overschreven. (NEO-11015)
 * Oplossing voor een syntaxisfout bij het sorteren van de resultaten van verrijkingsactiviteiten. (NEO-11394)
-* Fixed an issue when using calculated fields in a **[!UICONTROL Survey answers]** workflow activity. (NEO-11382)
+* Probleem verholpen bij het gebruik van berekende velden in een **[!UICONTROL Survey answers]** workflowactiviteit. (NEO-11382)
 * Tomcat is bijgewerkt om misbruik van kwetsbaarheden te voorkomen. (NEO-11503)
-* Fixed an error with LATIN1 encoding when using an FDA Connection to a PostgreSQL database. (NEO-11299)
+* Oplossing voor een fout met LATIN1-codering bij gebruik van een FDA-verbinding met een PostSQL-database. (NEO-11299)
 * Probleem verholpen dat optrad tijdens het gebruik van het dialoogvenster **[!UICONTROL Prepare the personalization data with a workflow]** leveringsoptie. (NEO-11047)
-* Fixed a postupgrade issue which prevented sending SMS from being sent when using an extended connector.
-* Improved package import/export (log and region were added in the interface).
+* Probleem verholpen waarbij het verzenden van SMS tijdens het gebruik van een uitgebreide connector werd verhinderd.
+* Verbeterde import/export van pakketten (logboek en regio zijn toegevoegd aan de interface).
 * Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven als een **[!UICONTROL Survey answers]** workflowactiviteit is niet volledig geconfigureerd.
 
 **Technische ontwikkelingen**
@@ -68,8 +68,8 @@ Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een gebruiker 
 Er is een nieuw tabblad toegevoegd aan de externe accounts van Teradata. De **[!UICONTROL Query banding]** bevat de volgende opties:
 
 * **[!UICONTROL Active]**: Schakel dit selectievakje in om de functie te activeren.
-* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. If there is no default query banding defined, the users who have no associated query banding will not be able to use Teradata.
-* **[!UICONTROL Users]**: for each user, specify a query banding. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt. Bijvoorbeeld: &quot;priority=1;workload=high;&quot;
+* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaard bepaalde vraagband is, zullen de gebruikers die geen bijbehorende vraagband hebben geen Teradata kunnen gebruiken.
+* **[!UICONTROL Users]**: voor elke gebruiker, specificeer een vraagband. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt. Bijvoorbeeld: &quot;priority=1;workload=high;&quot;
 
 Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
@@ -78,7 +78,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 ## Release 18.6 - build 8947{#release-18-6-build-8947}
 
-25 June 2018
+25 juni 2018
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
   </tr> 
   <tr> 
    <td> Ondersteuning voor Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Refer to <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic Compatibility matrix</a>.<br /> </td> 
+   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic-compatibiliteitsmatrix</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -109,11 +109,11 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 decryptString
 
-The **decryptString** function is deprecated. Zie de [Verouderde en verwijderde functies](deprecated-features.md) artikel.
+De **decryptString** functie is afgekeurd. Zie de [Verouderde en verwijderde functies](deprecated-features.md) artikel.
 
 Voor nieuwe klanten, wordt deze functie nu slechts gebruikt om crypt identiteitskaart van de ontvanger in het landen pagina&#39;s te decoderen. Als u wachtwoorden wilt decoderen die zijn opgeslagen in een externe account, gebruikt u de nieuwe **decryptPassword** functie.
 
-For existing customers, the behavior of this function is not changed but we recommend that you use **decryptPassword** instead of **decryptString**. De **XtkSecurity_Unsafe_DecryptString** de compatibiliteitsoptie wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de functie kunt blijven gebruiken. Als u wilt deactiveren **decryptString**, deactiveer de optie.
+Voor bestaande klanten, wordt het gedrag van deze functie niet veranderd maar wij adviseren dat u gebruikt **decryptPassword** in plaats van **decryptString**. De **XtkSecurity_Unsafe_DecryptString** de compatibiliteitsoptie wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de functie kunt blijven gebruiken. Als u wilt deactiveren **decryptString**, deactiveer de optie.
 
 decryptPassword
 

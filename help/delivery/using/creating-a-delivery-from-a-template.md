@@ -23,11 +23,11 @@ Als u een levering wilt maken op basis van een bestaande sjabloon, selecteert u 
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-Klik anders op de map **[!UICONTROL Select link]** rechts van het veld om door de structuur te bladeren.
+Klik anders op de knop **[!UICONTROL Select link]** aan de rechterkant van het veld om door de boomstructuur te bladeren.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Selecteer de gewenste directory in het veld **[!UICONTROL Folder]** of klik op het pictogram **[!UICONTROL Display sub-levels]** om de inhoud van de mappen in de substructuren van de huidige map weer te geven.
+Selecteer de gewenste directory in het menu **[!UICONTROL Folder]** of klik op de knop **[!UICONTROL Display sub-levels]** pictogram om de inhoud van de mappen in de substructuren van de huidige map weer te geven.
 
 Selecteer de leveringssjabloon die u wilt gebruiken en klik op **[!UICONTROL Ok]**.
 
@@ -35,7 +35,7 @@ Selecteer de leveringssjabloon die u wilt gebruiken en klik op **[!UICONTROL Ok]
 
 U kunt de uitvoering van een sjabloon rechtstreeks vanuit de sjabloonlijst starten zonder eerst een levering te maken. Selecteer hiertoe de sjabloon die u wilt uitvoeren en klik met de rechtermuisknop. Selecteer **[!UICONTROL Actions>Execute the delivery template...]**.
 
-U kunt ook **[!UICONTROL File>Actions>Execute the delivery template...]** gebruiken.
+U kunt ook **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
@@ -45,4 +45,4 @@ Met deze handeling wordt een levering gegenereerd in de map die aan de sjabloon 
 
 >[!NOTE]
 >
->Zie [De e-mailinhoud definiëren](defining-the-email-content.md) voor meer informatie over het configureren van een levering.
+>Voor meer informatie over het vormen van een levering, zie [De e-mailinhoud definiëren](defining-the-email-content.md).

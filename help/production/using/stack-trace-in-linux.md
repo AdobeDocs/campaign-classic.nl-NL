@@ -17,17 +17,17 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-Een **stackspoor** vertegenwoordigt een spoor in een **core** typedossier. Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
+A **stacktracering** vertegenwoordigt een spoor in een **kern** tekstbestand. Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
 
 >[!NOTE]
 >
->* Een **core**-bestand krijgt de naam **core.`<num>`**.
->* **gdb - De GNU-** foutopsporing moet op de computer zijn geïnstalleerd.
+>* A **kern** bestand heeft een naam **kern.`<num>`**.
+>* **gdb - De GNU-foutopsporing** moet op de computer zijn geïnstalleerd.
 
 >
 
 
-Technische ondersteuning van Adobe Campaign kan u om deze **stacktracering** vragen. Voer de volgende opdrachten in Linux in om deze te verkrijgen:
+Technische ondersteuning van Adobe Campaign kan u hierom vragen **stacktracering**. Voer de volgende opdrachten in Linux in om deze te verkrijgen:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 De technische steun van Adobe Campaign zou u kunnen vragen om dit bevel in werking te stellen gebruikend specifiek uitvoerbaar (door ons te leveren).
 
-In dit geval voert u gewoon de volgende opdracht uit door **nlserver** te vervangen door het uitvoerbare bestand dat door Adobe Campaign wordt geleverd:
+In dit geval voert u gewoon de volgende opdracht uit door **nlserver** met het uitvoerbare bestand van Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

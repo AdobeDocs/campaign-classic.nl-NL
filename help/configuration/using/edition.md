@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Het scherm voor het creëren van en het vormen van de configuratiedocumenten van de navigatiehiërarchie is toegankelijk via de **[!UICONTROL Administration > Configuration > Navigation hierarchies]** knoop:
+Het scherm voor het maken en configureren van de configuratiedocumenten voor de navigatiehiërarchie is toegankelijk via **[!UICONTROL Administration > Configuration > Navigation hierarchies]** knooppunt:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -29,7 +29,7 @@ Het bewerkingsveld bevat de inhoud van het XML-document:
 
 >[!NOTE]
 >
->Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van het element **`<navtree>`** worden automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
+>Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van de **`<navtree>`** het element wordt automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
 
 In de voorvertoning wordt automatisch het samengevoegde document met de volledige configuratie gegenereerd:
 

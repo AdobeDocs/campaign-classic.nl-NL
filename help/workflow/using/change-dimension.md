@@ -27,7 +27,7 @@ Het is mogelijk criteria voor gegevensdeduplicatie vast te stellen.
 
 Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen toe:
 
-1. Selecteer de nieuwe doeldimensie via het veld **[!UICONTROL Change dimension]**.
+1. Selecteer de nieuwe doeldimensie via de **[!UICONTROL Change dimension]** veld.
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -37,7 +37,7 @@ Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen 
 
    Wanneer u verkiest om slechts één verslag te houden, wordt een inzameling getoond in het het werkschema: Deze verzameling vertegenwoordigt alle records die in het eindresultaat niet als doel zullen worden gebruikt (aangezien er slechts één record wordt bewaard). Net als bij alle andere verzamelingen kunt u met deze verzameling aggregaten berekenen of gegevens in kolommen herstellen.
 
-   Als u bijvoorbeeld de **[!UICONTROL Customers]**-dimensie wijzigt in de **[!UICONTROL Recipients]**-dimensie, kunt u zich richten op klanten van een specifieke winkel en tegelijkertijd het aantal aanschafacties toevoegen.
+   Als u bijvoorbeeld de opdracht **[!UICONTROL Customers]** de **[!UICONTROL Recipients]** afmeting, zal het mogelijk zijn om klanten van een specifieke opslag te richten, terwijl het toevoegen van het aantal gemaakte aankopen.
 
 1. Als u verkiest om al deze informatie niet te houden, kunt u de dubbele beheerswijze vormen.
 
@@ -47,23 +47,23 @@ Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen 
 
    In het bovenstaande voorbeeld worden ontvangers eerst gededupliceerd op hun e-mailadres en vervolgens, indien nodig, op hun accountnummer.
 
-1. Op het tabblad **[!UICONTROL Result]** kunt u aanvullende informatie toevoegen.
+1. De **[!UICONTROL Result]** kunt u aanvullende informatie toevoegen.
 
-   Bijvoorbeeld, kunt u het graafschap terugkrijgen dat op de postcode wordt gebaseerd door een **Substring** typefunctie te gebruiken. Dit doet u als volgt:
+   U kunt bijvoorbeeld het land herstellen op basis van de postcode met behulp van een **Subtekenreeks** type functie. Dit doet u als volgt:
 
-   * Klik op de koppeling **[!UICONTROL Add data...]** en selecteer **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klik op de knop **[!UICONTROL Add data...]** koppelen en selecteren **[!UICONTROL Data linked to the filtering dimension]**.
 
       ![](assets/wf_change-dimension_sample_01.png)
 
       >[!NOTE]
       >
-      >Raadpleeg [Gegevens toevoegen](query.md#adding-data) voor informatie over het maken en beheren van extra kolommen.
+      >Voor informatie over het creëren van en het beheren van extra kolommen, verwijs naar [Gegevens toevoegen](query.md#adding-data).
 
-   * Selecteer de vorige het richten dimensie (vóór asschakelaar) en selecteer **[!UICONTROL Zip Code]** in de **[!UICONTROL Location]** subboom van de ontvanger, dan klik **[!UICONTROL Edit expression]**.
+   * Selecteer de vorige gericht afmeting (vóór asschakelaar) en selecteer **[!UICONTROL Zip Code]** in de **[!UICONTROL Location]** substructuur, en klik vervolgens op **[!UICONTROL Edit expression]**.
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * Klik **[!UICONTROL Advanced selection]** en kies **[!UICONTROL Edit the formula using an expression]**.
+   * Klikken **[!UICONTROL Advanced selection]** en kiest u **[!UICONTROL Edit the formula using an expression]**.
 
       ![](assets/wf_change-dimension_sample_03.png)
 

@@ -19,12 +19,12 @@ ht-degree: 3%
 
 Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te controleren en te bevestigen.
 
-1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie [E-mailparameters](email-parameters.md) voor meer informatie.
-1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie [Een proefdruk verzenden](steps-validating-the-delivery.md#sending-a-proof) voor meer informatie.
+1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie voor meer informatie [E-mailparameters](email-parameters.md).
+1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie voor meer informatie [Een proefafdruk verzenden](steps-validating-the-delivery.md#sending-a-proof).
 
-1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Om dit te doen, klik **[!UICONTROL Send]**, selecteer een actie en klik **[!UICONTROL Analyze]**. Zie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie.
+1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Klik op **[!UICONTROL Send]** selecteert u een handeling en klikt u op **[!UICONTROL Analyze]**. Zie voor meer informatie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. Wanneer de analyse is voltooid, klikt u op **[!UICONTROL Confirm delivery]** om de levering van berichten aan de beoogde ontvangers te starten. Zie [Levering bevestigen](steps-sending-the-delivery.md#confirming-delivery) voor meer informatie.
+1. Als de analyse is voltooid, klikt u op **[!UICONTROL Confirm delivery]** om de levering van berichten aan de beoogde ontvangers te starten. Zie voor meer informatie [Levering bevestigen](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 

@@ -25,17 +25,17 @@ In het onderstaande voorbeeld is de leveringsdoelstelling opgesplitst in twee gr
 
 ![](assets/a-b-testing-schema.png)
 
-Met Campaign Classic, A/B wordt het testen uitgevoerd door werkschema&#39;s, waar u de bevolking om evenals de groepen specificeert te richten die elke variant zullen ontvangen (zie [Vormend a/b het testen](configuring-a-b-testing.md)).
+Met Campaign Classic, wordt A/B het testen uitgevoerd door werkschema&#39;s, waar u de te richten bevolking evenals de groepen specificeert die elke variant zullen ontvangen (zie [A/b-tests configureren](configuring-a-b-testing.md)).
 
 De belangrijkste stappen zijn:
 
-1. **De** gewenste bevolking.
-1. **Splits de** bevolking in subsets waarop u de varianten van uw levering zult testen.
+1. **Doel** de gewenste bevolking.
+1. **De bevolking splitsen** in subsets waarop u de varianten van uw levering zult testen.
 
    U kunt bijvoorbeeld een versie van een levering verzenden naar een klein deel van de doelpopulatie en een andere versie naar de resterende populatie. Dit staat u toe om een nieuwe versie van een levering in tegenstelling tot de levering te testen die gewoonlijk naar uw klanten wordt verzonden. U kunt de doelpopulatie ook opsplitsen in drie groepen om ze drie verschillende versies van een levering te sturen.
 
-1. **Maak meerdere** versies van de levering voor elke subset. De te testen variant kan het onderwerp, de berichtinhoud, de naam van de afzender enz. zijn.
-1. Start de workflow en gebruik vervolgens de **leveringslogs** om het gedrag van de subsets met elke variant te analyseren.
+1. **Meerdere versies maken** van de levering voor elke deelverzameling. De te testen variant kan het onderwerp, de berichtinhoud, de naam van de afzender enz. zijn.
+1. Start de workflow en gebruik vervolgens de knop **leveringslogs** het gedrag van de subsets met elke variant te analyseren.
 
 >[!NOTE]
 >

@@ -19,15 +19,15 @@ ht-degree: 7%
 
 ## Vorm de activiteit van de Vraag {#configuring-the-query-activity}
 
-* Dubbelklik op de activiteit **[!UICONTROL Query]**.
+* Dubbelklik op de knop **[!UICONTROL Query]** activiteit.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Klik op de koppeling **[!UICONTROL Edit query]** en selecteer de ontvangers die u als doel wilt instellen.
+* Klik op de knop **[!UICONTROL Edit query]** en selecteer de ontvangers u wilt richten.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Koppel de **[!UICONTROL Query]** activiteit aan **[!UICONTROL Split]** activiteit.
+* De koppeling **[!UICONTROL Query]** aan de **[!UICONTROL Split]** activiteit.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -37,7 +37,7 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
 1. Bezig met maken van populatie A:
 
-   * Dubbelklik op de activiteit **[!UICONTROL Split]**.
+   * Dubbelklik op de knop **[!UICONTROL Split]** activiteit.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -45,21 +45,21 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Selecteer de optie **[!UICONTROL Limit the selected records]**.
+   * Selecteer **[!UICONTROL Limit the selected records]** optie.
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Klik op de koppeling **[!UICONTROL Edit]**, selecteer **[!UICONTROL Activate random sampling]** en klik op **[!UICONTROL Next]**.
+   * Klik op de knop **[!UICONTROL Edit]** koppeling, selecteren **[!UICONTROL Activate random sampling]** en klik op **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * Stel de drempel in op 10% en klik op **[!UICONTROL Finish]**.
+   * Stel de drempel in op 10% en klik vervolgens op **[!UICONTROL Finish]**.
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. Bezig met maken van populatie B:
 
-   * Klik **[!UICONTROL Add]** om een nieuw lusje voor populatie B tot stand te brengen.
+   * Klikken **[!UICONTROL Add]** om een nieuw tabblad voor populatie B te maken.
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 

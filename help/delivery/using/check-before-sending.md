@@ -26,7 +26,7 @@ Alvorens een levering te verzenden, moet u ervoor zorgen dat uw ontvangers het b
 
 Met deze stap kunt u mogelijke fouten detecteren en corrigeren voordat u deze aan uw hoofddoel kunt leveren.
 
-De stappen voor het valideren van een levering worden [weergegeven in deze sectie](steps-validating-the-delivery.md).
+De stappen voor het valideren van een levering worden weergegeven [in deze sectie](steps-validating-the-delivery.md).
 
 ## Inboxrendering {#inbox-and-email-rendering}
 
@@ -74,9 +74,9 @@ U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt 
 
 U kunt de verzendende orde voor uw leveringen plaatsen door het prioritaire niveau te verklaren. Dit doet u als volgt:
 
-1. Bewerk de leveringseigenschappen en selecteer het tabblad **[!UICONTROL Delivery]**.
+1. Bewerk de leveringseigenschappen en selecteer de **[!UICONTROL Delivery]** tab.
 
-1. Definieer het prioriteitsniveau voor de levering op een schaal van **[!UICONTROL Very low]** tot **[!UICONTROL Very high]**.
+1. Het prioriteitsniveau voor levering op schaal bepalen van **[!UICONTROL Very low]** tot **[!UICONTROL Very high]**.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ U kunt:
 
 * Voor elk element IPAffinity, verklaar de IP adressen die kunnen worden gebruikt. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keus, gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die bovengenoemde affiniteit beheert. [Meer info](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In de [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keuze gebruikt u de **[!UICONTROL Managing affinities with IP addresses]** veld voor het koppelen van leveringen aan de bezorgserver (MTA) die de opgegeven affiniteit beheert. [Meer info](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Zodra e-mail wordt verzonden, controleer de kopbal om te verifiëren welk IP adres de levering van werd verzonden. De e-mailbeheerder moet u helpen de koptekstgegevens op te halen.
 
@@ -102,7 +102,7 @@ U kunt:
 
 ### Typologieën gebruiken
 
-U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer [in dit voorbeeld](../../campaign-opt/using/filtering-rules.md) leren.
+U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer informatie [in dit voorbeeld](../../campaign-opt/using/filtering-rules.md).
 
 ### Bijlagen voorkomen
 

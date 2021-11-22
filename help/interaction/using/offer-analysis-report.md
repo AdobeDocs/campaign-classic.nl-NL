@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Het **[!UICONTROL Offer analysis]** rapport verstrekt u een overzicht van het aantal toegelaten of verworpen voorstellen.
+De **[!UICONTROL Offer analysis]** bevat een overzicht van het aantal geaccepteerde of afgewezen voorstellen.
 
 >[!NOTE]
 >
@@ -37,6 +37,6 @@ Statistieken worden gesorteerd op basis van drie criteria:
 
    ![](assets/offer_report_perdeliveries.png)
 
-Gegevens kunnen worden gefilterd op basis van de verschillende criteria die beschikbaar zijn in de bovenste sectie van het rapport. Nadat u de gewenste criteria hebt geselecteerd, klikt u op de koppeling **[!UICONTROL Refresh]** om deze toe te passen op het rapport.
+Gegevens kunnen worden gefilterd op basis van de verschillende criteria die beschikbaar zijn in de bovenste sectie van het rapport. Als u de gewenste criteria hebt geselecteerd, klikt u op de knop **[!UICONTROL Refresh]** koppeling om deze op het rapport toe te passen.
 
 ![](assets/offer_report_criteria.png)

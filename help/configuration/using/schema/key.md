@@ -46,9 +46,9 @@ Een tabel moet minstens één sleutel hebben.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-6}
 
-Normaliter worden sleutels gedeclareerd na het hoofdelement van het schema en de indexen.
+Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen.
 
-Een sleutel wordt bekend als een samengestelde sleutel als deze verschillende velden bevat (d.w.z. verschillende `<keyfield>` onderliggende items). Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
+Een sleutel wordt een samengestelde sleutel genoemd als het verscheidene gebieden omvat (d.w.z. verscheidene `<keyfield>` kinderen). Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
 
 Als het hoofdelement van het schema het kenmerk &quot;@autopk=true&quot; bevat, is de primaire sleutel uniek. We kunnen slechts één primaire sleutel per schema hebben.
 
@@ -61,7 +61,7 @@ De eerste 1000 id&#39;s zijn gereserveerd, dus als een reeks waarden moet worden
 * **internal (boolean)**: als het wordt geactiveerd, laat dit kenmerk Adobe Campaign weten dat de sleutel primair is.
 * **label (tekenreeks)**: label van de toets.
 * **naam (MNTOKEN)**: interne naam van de sleutel.
-* **noDbIndex (boolean)**: als deze is geactiveerd (noDbIndex=&quot;true&quot;), wordt het veld dat overeenkomt met de sleutel niet geïndexeerd.
+* **noDbIndex (Boolean)**: als deze is geactiveerd (noDbIndex=&quot;true&quot;), wordt het veld dat overeenkomt met de sleutel niet geïndexeerd.
 
 ## Voorbeelden {#examples-------}
 
@@ -74,7 +74,7 @@ Verklaring van een samengestelde sleutel die het veld &quot;@expr&quot; of &quot
  </key>
 ```
 
-Verklaring van een primaire sleutel op het gebied van de &quot;Naam&quot;van type STRING in een `<srcschema>` en de passende SQL vraag:
+Verklaring van een primaire sleutel op het gebied van de &quot;Naam&quot;van type STRING in een `<srcschema>`  en de overeenkomstige SQL-query:
 
 ```
  

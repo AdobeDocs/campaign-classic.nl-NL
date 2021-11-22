@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Zodra de simulatie wordt gebeëindigd, kunt u zijn resultaat analyseren via het **[!UICONTROL Results]** lusje dat aan het simulatievenster en **[!UICONTROL Breakdown of offers by rank]** rapport wordt toegevoegd, beschikbaar via in het simulatiedashboard.
+Wanneer de simulatie is voltooid, kunt u het resultaat analyseren via de knop **[!UICONTROL Results]** tabblad dat wordt toegevoegd aan het simulatievenster en het dialoogvenster **[!UICONTROL Breakdown of offers by rank]** -rapport, beschikbaar via het dashboard voor simulaties.
 
 De simulatieresultaten bevatten een uitsplitsing van de voorstellingen per rang en per ontvanger. De rapportageassen worden ook in aanmerking genomen en op dit tabblad weergegeven.
 
 U kunt deze resultaten opslaan en indien nodig exporteren door een beschrijvende analyse van de resultaten te maken. Klik hiertoe op de gewenste koppeling in het resultatenvenster.
 
-Raadpleeg [deze sectie](../../reporting/using/about-descriptive-analysis.md) voor meer informatie over de beschrijvende analysewizard.
+Zie [deze sectie](../../reporting/using/about-descriptive-analysis.md) voor meer informatie over de beschrijvende analysewizard.
 
 ![](assets/offer_simulation_012.png)
 

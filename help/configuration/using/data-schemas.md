@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Principes {#principles}
 
-Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-clientconsole.
+Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op de knop **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-clientconsole.
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ In de voorvertoning wordt het uitgebreide schema automatisch gegenereerd:
 >
 >Wanneer het bronschema wordt opgeslagen, wordt het genereren van het uitgebreide schema automatisch gestart.
 
-Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md).
+Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.
 
 ## Voorbeeld: het creëren van een contractlijst {#example--creating-a-contract-table}
 
-In het volgende voorbeeld, willen wij een nieuwe lijst voor **contracten** in het gegevensbestandmodel van het gegevensbestand van Adobe Campaign tot stand brengen. In deze tabel kunt u voor elk contract de voor- en achternaam en het e-mailadres van de houder en de medehouder opslaan.
+In het volgende voorbeeld willen we een nieuwe tabel maken voor **contracten** in het databasemodel van de Adobe Campaign-database. In deze tabel kunt u voor elk contract de voor- en achternaam en het e-mailadres van de houder en de medehouder opslaan.
 
 Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken om de bijbehorende tabel te genereren. Pas de volgende stappen toe:
 
-1. Bewerk het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-structuur en klik op **[!UICONTROL New]**.
-1. Kies de optie **[!UICONTROL Create a new table in the data model]** en klik **[!UICONTROL Next]**.
+1. Bewerk de **[!UICONTROL Administration > Configuration > Data schemas]** knoop van de boom van Adobe Campaign en klik **[!UICONTROL New]** .
+1. Kies de optie **[!UICONTROL Create a new table in the data model]** en klik op **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +62,9 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    >[!NOTE]
    >
-   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Voor meer op dit, verwijs naar [Identificatie van een schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Raadpleeg voor meer informatie hierover [Identificatie van een schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Maak de inhoud van de tabel. We raden u aan om de wizard Invoer te gebruiken om er zeker van te zijn dat er geen instellingen ontbreken. Klik hiertoe op de knop **[!UICONTROL Insert]** en kies het type instelling dat u wilt toevoegen.
+1. Maak de inhoud van de tabel. We raden u aan om de wizard Invoer te gebruiken om er zeker van te zijn dat er geen instellingen ontbreken. Om dit te doen, klik **[!UICONTROL Insert]** en kiest u het type instelling dat u wilt toevoegen.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,4 +120,4 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Raadpleeg [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
+1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Raadpleeg voor meer informatie hierover [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md).

@@ -34,8 +34,8 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
    * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
    * Voeg indicatoren aan een bestaand rapport toe. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
    * Bekijk de gegevens in de database. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
-   * Maak een nieuw leveringsrapport. Meer [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)) leren,
-   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow). Raadpleeg [deze sectie](../../workflow/using/about-workflows.md)
+   * Maak een nieuw leveringsrapport. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, zie [deze sectie](../../workflow/using/about-workflows.md)
    * Maak een draaitabel. Meer informatie [in deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Samengevoegde gegevens verkennen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
    * Gebruik een wizard om gegevens te analyseren. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
@@ -102,7 +102,7 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
    Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
-   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#indexes) voor meer informatie over indexen.
+   Raadpleeg voor meer informatie over indexen [deze sectie](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Zorg ervoor het rapport scalable is: het gegevensvolume kan in de loop der tijd aanzienlijk toenemen.
 
@@ -110,8 +110,8 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
    Tot slot moeten vertragingen bij het wissen van gegevens bekend zijn en waar nodig worden aangepast voor een gemakkelijke gegevensmanipulatie.
 
-   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention) voor meer informatie over opschonen en het bewaren van gegevens.
+   Raadpleeg voor meer informatie over opschoning en gegevensbewaring de [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Rapporten exporteren {#exporting-reports}
 
-Recommendations specifiek voor het exporteren van rapporten wordt beschreven in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations-specifieke exportrapporten worden nader beschreven in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report).

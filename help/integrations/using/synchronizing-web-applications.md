@@ -25,24 +25,24 @@ Als u veel services en webtoepassingen hebt in Campagne v7, kunt u deze mogelijk
 
 Hiervoor hebt u het volgende nodig:
 
-* Ontvangers die zijn opgeslagen in de Campagne v7-database en zijn gesynchroniseerd met Campaign Standard. Raadpleeg de sectie [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md).
+* Ontvangers die zijn opgeslagen in de Campagne v7-database en zijn gesynchroniseerd met Campaign Standard. Zie de [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md) sectie.
 * een service en een webtoepassing die zijn gemaakt en gepubliceerd in Campaign v7.
-* de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit bevatten met behulp van de identificatiemethode **[!UICONTROL Adobe Campaign encryption]**.
+* de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit met behulp van de **[!UICONTROL Adobe Campaign encryption]** identificatiemethode.
 
 ## De webtoepassing en -service maken {#creating-the-web-application-and-service}
 
-In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Raadpleeg [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes) voor meer informatie over webtoepassingen in Campagne v7.
+In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Als u meer wilt weten over webtoepassingen in Campagne v7, raadpleegt u [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
-In Campaign v7 zijn de volgende objecten gemaakt:
+In Campagne v7 zijn de volgende objecten gemaakt:
 
 * een nieuwsbrief
-* een webtoepassing die een **[!UICONTROL Pre-loading]**, een **[!UICONTROL Page]** en een **[!UICONTROL Storage]** activiteit bevat.
+* een webtoepassing met een **[!UICONTROL Pre-loading]**, **[!UICONTROL Page]** en **[!UICONTROL Storage]** activiteit.
 
-1. Ga naar **[!UICONTROL Resources > Online > Web applications]** en selecteer een bestaande webtoepassing.
+1. Ga naar **[!UICONTROL Resources > Online > Web applications]** en selecteert u een bestaande webtoepassing.
 
    ![](assets/acs_connect_lp_2.png)
 
-1. Bewerk de activiteit **[!UICONTROL Preloading]**. Het selectievakje **[!UICONTROL Auto-load data referenced in the form]** is ingeschakeld en de identificatiemethode **[!UICONTROL Adobe Campaign encryption]** is geselecteerd. Hierdoor kan de webtoepassing de formuliervelden vooraf laden met de gegevens die zijn opgeslagen in de Adobe Campaign-database. Zie [dit document](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. Bewerk de **[!UICONTROL Preloading]** activiteit. De **[!UICONTROL Auto-load data referenced in the form]** is ingeschakeld en **[!UICONTROL Adobe Campaign encryption]** de identificatiemethode is geselecteerd. Hierdoor kan de webtoepassing de formuliervelden vooraf laden met de gegevens die zijn opgeslagen in de Adobe Campaign-database. Zie [dit document](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
@@ -50,7 +50,7 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Ga naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en open de **[!UICONTROL Newsletter]** dienst. Dit is de dienst die van de mededeling van de Campaign Standard zal worden bijgewerkt. U kunt zien dat geen ontvanger zich op deze service heeft geabonneerd.
+1. Ga naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en opent u de **[!UICONTROL Newsletter]** service. Dit is de dienst die van de mededeling van de Campaign Standard zal worden bijgewerkt. U kunt zien dat geen ontvanger zich op deze service heeft geabonneerd.
 
    ![](assets/acs_connect_lp_5.png)
 
@@ -60,7 +60,7 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
 ## De gegevens repliceren {#replicating-the-data}
 
-Voor het repliceren van de benodigde gegevens tussen Campagne v7 en Campaign Standard, zijn er verschillende sjablonen voor de replicatiewerkstroom beschikbaar. De **[!UICONTROL Profiles replication]** werkstroom herhaalt automatisch alle ontvangers van de Campagne v7 aan Campaign Standard. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Met de **[!UICONTROL Landing pages replication]**-workflow kunt u de webtoepassingen die u in Campaign Standard wilt gebruiken, repliceren.
+Voor het repliceren van de benodigde gegevens tussen Campagne v7 en Campaign Standard, zijn er verschillende sjablonen voor de replicatiewerkstroom beschikbaar. De **[!UICONTROL Profiles replication]** worden alle Campagne v7-ontvangers automatisch naar Campaign Standard gekopieerd. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). De **[!UICONTROL Landing pages replication]** de workflow maakt de replicatie mogelijk van de webtoepassingen die we in Campaign Standard willen gebruiken.
 
 ![](assets/acs_connect_lp_1.png)
 
@@ -78,7 +78,7 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
    ![](assets/acs_connect_lp_9.png)
 
-1. Klik op het **[!UICONTROL Adobe Campaign]**-logo in de linkerbovenhoek en selecteer **Profielen en publiek > Services** en controleer of de nieuwsbrief ook beschikbaar is.
+1. Klik op de knop **[!UICONTROL Adobe Campaign]** logo, in de linkerbovenhoek, en selecteer vervolgens **Profielen en publiek > Services** en controleer of de nieuwsbrief ook beschikbaar is.
 
    ![](assets/acs_connect_lp_10.png)
 
@@ -89,7 +89,7 @@ In dit deel, zullen wij zien hoe te om een verbinding, in een e-mail van de Camp
 De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde als voor een klassieke e-mail. Zie de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl) documentatie.
 
 1. Maak een nieuwe e-mail en kies een of meer gerepliceerde profielen als het publiek.
-1. Bewerk de inhoud en voeg een **[!UICONTROL Link to a landing page]** in.
+1. Bewerk de inhoud en voeg een **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_lp_12.png)
 
@@ -110,15 +110,15 @@ De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde al
 
 Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Campaign v7 synchroon de bijgewerkte informatie op. Het wordt vervolgens gerepliceerd van Campaign v7 naar Campaign Standard.
 
-1. Ga in Campagne v7 naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en open de service **[!UICONTROL Newsletter]**. U ziet dat de ontvanger nu in de lijst met abonnees wordt weergegeven.
+1. Ga in Campagne v7 naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en opent u de **[!UICONTROL Newsletter]** service. U ziet dat de ontvanger nu in de lijst met abonnees wordt weergegeven.
 
    ![](assets/acs_connect_lp_16.png)
 
-1. Ga naar **[!UICONTROL Profiles and Targets > Recipient]** en selecteer de ontvanger. U kunt zien dat het telefoonnummer nu is opgeslagen.
+1. Ga naar **[!UICONTROL Profiles and Targets > Recipient]** en selecteert u de ontvanger. U kunt zien dat het telefoonnummer nu is opgeslagen.
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Op het tabblad **[!UICONTROL Subscriptions]** kunnen we ook zien dat deze ontvanger zich heeft geabonneerd op de nieuwsbrieven-service.
+1. In de **[!UICONTROL Subscriptions]** tab , we kunnen ook zien dat deze ontvanger zich heeft geabonneerd op de nieuwsbrief service .
 
    ![](assets/acs_connect_lp_18.png)
 
@@ -131,6 +131,6 @@ Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Ca
 
    ![](assets/acs_connect_lp_20.png)
 
-1. Klik op het tabblad **[!UICONTROL Subscriptions]**. De nieuwsbrief wordt nu weergegeven.
+1. Klik op de knop **[!UICONTROL Subscriptions]** tab. De nieuwsbrief wordt nu weergegeven.
 
    ![](assets/acs_connect_lp_21.png)

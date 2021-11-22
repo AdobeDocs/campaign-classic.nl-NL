@@ -19,14 +19,14 @@ ht-degree: 4%
 
 Social Marketing levert rapporten die u in staat stellen de reactiviteitsgraad van Facebook en Twitter leveringen te meten en de verwerving van Facebook profielen te analyseren. De volgende rapporten zijn beschikbaar:
 
-* Het **[!UICONTROL Reactivity rate]**-rapport, beschikbaar via het tabblad **[!UICONTROL Summary]** van een Facebook- of Twitter-levering.
+* De **[!UICONTROL Reactivity rate]** rapport, beschikbaar via **[!UICONTROL Summary]** tabblad van een levering via Facebook of Twitter.
 
    ![](assets/social_report_3.png)
 
-* Het **[!UICONTROL Reactivity rate]**-rapport, beschikbaar via het tabblad **[!UICONTROL Dashboard]** van een Twitter- of Facebook-service.
+* De **[!UICONTROL Reactivity rate]** rapport, beschikbaar via **[!UICONTROL Dashboard]** tabblad van een Twitter- of Facebook-service.
 
    ![](assets/social_report_2.png)
 
-* Het **[!UICONTROL Fan acquisition]**-rapport, beschikbaar via het tabblad **[!UICONTROL Dashboard]** van een Facebook-service.
+* De **[!UICONTROL Fan acquisition]** rapport, beschikbaar via **[!UICONTROL Dashboard]** tabblad van een Facebook-service.
 
    ![](assets/social_report_1.png)

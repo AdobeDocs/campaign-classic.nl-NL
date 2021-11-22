@@ -21,10 +21,10 @@ In dit hoofdstuk worden de verschillende mogelijke geavanceerde parameters in In
 
 >[!IMPORTANT]
 >
->Het volgende hoofdstuk is bedoeld voor **technische beheerders**.
+>Het volgende hoofdstuk is bestemd voor **technische beheerders**.
 
-* U kunt aanvullende contextafhankelijke gegevens gebruiken. Raadpleeg de sectie [Aanvullende gegevens](../../interaction/using/additional-data.md).
-* U kunt de toepassingscontext van de voorgestelde aanbiedingen via een inkomend kanaal verrijken. Hiervoor moet het interactieschema **nms:interaction** worden uitgebreid. Raadpleeg de sectie [Extensievoorbeeld](../../interaction/using/extension-example.md) voor de volledige procedure.
-* Het maken van een testomgeving wordt beschreven in de sectie [Een testomgeving maken](../../interaction/using/creating-a-test-environment.md).
-* U kunt het standaardgedrag van de motor wijzigen met haken. Raadpleeg voor meer informatie de sectie [Hooks](../../interaction/using/hooks.md)
-* Tot slot wordt het gebruiken van Interactie met een verdeelde architectuur gedetailleerd in [Verdeelde architectuur](../../interaction/using/distributed-architectures.md) sectie.
+* U kunt aanvullende contextafhankelijke gegevens gebruiken. Zie de [Aanvullende gegevens](../../interaction/using/additional-data.md) sectie.
+* U kunt de toepassingscontext van de voorgestelde aanbiedingen via een inkomend kanaal verrijken. Om dit te doen, **nms:interactie** interactieschema moet worden uitgebreid. Zie de [Extensievoorbeeld](../../interaction/using/extension-example.md) voor de volledige procedure.
+* Het maken van een testomgeving wordt gedetailleerd beschreven in het gedeelte [Een testomgeving maken](../../interaction/using/creating-a-test-environment.md) sectie.
+* U kunt het standaardgedrag van de motor wijzigen met haken. Raadpleeg voor meer informatie de [Hooks](../../interaction/using/hooks.md) sectie
+* Tot slot wordt het gebruiken van Interactie met een verdeelde architectuur gedetailleerd in [Gedistribueerde architecturen](../../interaction/using/distributed-architectures.md) sectie.

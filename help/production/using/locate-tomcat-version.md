@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign gebruikt een **ingesloten webserver met de naam Apache Tomcat** om HTTP/HTTPS-aanvragen tussen de toepassing en elke externe interface te verwerken (zoals Client Console, bijgehouden URL-koppelingen, SOAP-aanroepen en andere). Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
+Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, de vraag van de ZEEP, en anderen) te verwerken. Voor alle naar buiten gerichte Adobe Campaign-instanties is er vaak een externe webserver (gewoonlijk IIS of Apache) aanwezig.
 
-Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic on-premise instantie** wordt gebruikt om problemen op te lossen.
+Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic-instantie op locatie** om problemen op te lossen.
 
 ## Tomcat gebruikt in Adobe Campaign
 
-Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Zie Java Development Kit (JDK) in de sectie [Compatibiliteitsmatrix voor campagnes](../../rn/using/compatibility-matrix.md) voor meer informatie.
+Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Voor meer informatie, zie de Uitrusting van de Ontwikkeling van Java (JDK) in [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md) sectie.
 
 De Tomcat die in Adobe Campaign wordt gebruikt, is een aangepaste ingesloten versie die niet alle functies van de volledige algemeen beschikbare versie van Tomcat gebruikt en die mogelijk niet alle kwetsbaarheden van de volledige versie ondervindt. De Tomcat mag ook niet worden blootgesteld aan het externe internet, en Adobe Campaign-instanties die worden weergegeven, moeten een externe webserver hebben (IIS, Apache, enz.) voor de Tomcat om hem te beschermen.
 
@@ -35,13 +35,13 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 >[!NOTE]
 >
->U moet toegang hebben tot de bestanden op de Adobe Campaign-server die u moet controleren. De hieronder beschreven procedure is alleen van toepassing op **hostingmodellen op locatie**.
+>U moet toegang hebben tot de bestanden op de Adobe Campaign-server die u moet controleren. De hieronder beschreven procedure is alleen van toepassing op: **hostingmodellen op locatie**.
 
-1. Navigeer naar de *\tomcat-7\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Files\ [Installation_folder]* in Windows of */usr/local/neolane/nl6* in Linux).
+1. Ga naar de *\tomcat-7\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Files\ [Installatiemap]* in Windows, of */usr/local/neolane/nl6* in Linux).
 
-   Als u een oudere versie van Adobe Campaign gebruikt met Tomcat v6, gebruikt u *\tomcat-6\lib*.
+   Als u met Tomcat v6 een oudere versie van Adobe Campaign gebruikt, kunt u *\tomcat-6\lib*.
 
-1. Kopieer het bestand *catalina.jar* naar een externe tijdelijke map (bijvoorbeeld uw bureaublad) en wijzig de naam van de extensie van .jar in .zip.
+1. Het bestand kopiëren *catalina.jar* naar een externe tijdelijke map (bijvoorbeeld uw bureaublad) en wijzig de naam van de extensie van .jar in .zip.
 
 1. Pak het gekopieerde bestand uit. Dit resulteert in veel submappen en bestanden.
 
@@ -49,13 +49,13 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 1. Als het bestand zich op een servercomputer bevindt, verwijdert u de tijdelijke bestanden die u hebt gemaakt.
 
-Het *ServerInfo.properties*-bestand voor Adobe Campaign bevat bijvoorbeeld de volgende informatie die Tomcat v8.5.X aangeeft:
+Als voorbeeld *ServerInfo.properties* Het bestand voor Adobe Campaign bevat de volgende informatie, met vermelding van Tomcat v8.5.X:
 
 *server.info=Apache Tomcat/8.5.X*
 
 *server.number=8.5.X.Y*
 
-*server.built=MM DD YYY :MM:HHSS*
+*server.built=MM DD YYY HH:MM:SS*
 
 Zodra u de nauwkeurige versie van Tomcat kunt bepalen die in een bepaald geval wordt gebruikt, kan het u in het oplossen van problemen met betrekking tot Tomcat helpen.
 

@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u eerst **gebeurtenistypen** creëren.
+Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u eerst creëren **gebeurtenistypen**.
 
-Wanneer [het creëren van een berichtmalplaatje](../../message-center/using/creating-the-message-template.md), zult u het type van gebeurtenis selecteren die het bericht aanpast u wilt verzenden.
+Wanneer [een berichtsjabloon maken](../../message-center/using/creating-the-message-template.md), selecteert u het type gebeurtenis dat overeenkomt met het bericht dat u wilt verzenden.
 
 >[!IMPORTANT]
 >
@@ -27,19 +27,19 @@ Wanneer [het creëren van een berichtmalplaatje](../../message-center/using/crea
 
 Voer de volgende stappen uit om gebeurtenistypen te maken die door Adobe Campaign worden verwerkt:
 
-1. Meld u aan bij de **besturingsinstantie**.
+1. Aanmelden bij de **besturingsinstantie**.
 
-1. Ga naar **[!UICONTROL Administration > Platform > Enumerations]** omslag van de boom.
+1. Ga naar de **[!UICONTROL Administration > Platform > Enumerations]** map van de structuur.
 
-1. Selecteer **[!UICONTROL Event type]** in de lijst.
+1. Selecteren **[!UICONTROL Event type]** in de lijst.
 
-1. Klik **[!UICONTROL Add]** om een opsommingswaarde tot stand te brengen. Dit kan een bevestiging zijn van de bestelling, een wijziging van het wachtwoord, een wijziging in de levering van de bestelling, enzovoort.
+1. Klikken **[!UICONTROL Add]** om een opsommingswaarde te maken. Dit kan een bevestiging zijn van de bestelling, een wijziging van het wachtwoord, een wijziging in de levering van de bestelling, enzovoort.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Elk gebeurtenistype moet een waarde in de **[!UICONTROL Event type]** opsomming aanpassen.
+   >Elk gebeurtenistype moet overeenkomen met een waarde in het dialoogvenster **[!UICONTROL Event type]** opsomming.
 
 1. Nadat de gespecificeerde lijstwaarden zijn gecreeerd, logoff en terug op uw geval voor de verwezenlijking om efficiënt te zijn.
 

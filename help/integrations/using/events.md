@@ -30,13 +30,13 @@ Aangezien voor het bewerken van de Javascript-code technische vaardigheden verei
 
 Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze functie is door de gebruiker gedefinieerd.
 
-Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het attribuut &quot;JSConnector&quot;. Dit JavaScript wordt aangeroepen telkens wanneer een gebeurtenis wordt ontvangen. Het wordt in werking gesteld door het [!DNL pipelined] proces.
+Het wordt gevormd in **[!UICONTROL NmsPipeline_Config]** onder het kenmerk &quot;JSConnector&quot;. Dit JavaScript wordt aangeroepen telkens wanneer een gebeurtenis wordt ontvangen. Het wordt geleid door de [!DNL pipelined] proces.
 
 Het Javascript-voorbeeldbestand is cus:triggers.js.
 
 ### JavaScript, functie {#function-js}
 
-Javascript [!DNL pipelined] moet met een specifieke functie beginnen.
+De [!DNL pipelined] Javascript moet met een specifieke functie beginnen.
 
 Deze functie wordt één keer aangeroepen voor elke gebeurtenis:
 
@@ -50,14 +50,14 @@ Het moet terugkeren zoals
 <undefined/>
 ```
 
-Nadat u het JavaScript-bestand hebt bewerkt, moet u [!DNL pipelined] opnieuw starten.
+U moet opnieuw beginnen [!DNL pipelined] na het bewerken van Javascript.
 
 ### Gegevensindeling activeren {#trigger-format}
 
-De [!DNL trigger] gegevens worden overgegaan tot de functie JS in het formaat van XML.
+De [!DNL trigger] gegevens worden doorgegeven aan de JS-functie in XML-indeling.
 
-* Het **[!UICONTROL @triggerId]** attribuut bevat de naam van [!DNL trigger].
-* Het element **enrichments** in JSON-indeling bevat de gegevens die door Adobe Analytics zijn gegenereerd en is aan de trigger gekoppeld.
+* De **[!UICONTROL @triggerId]** bevat de naam van het [!DNL trigger].
+* De **verrijking** element in JSON-indeling bevat de gegevens die door Adobe Analytics zijn gegenereerd en aan de trigger zijn gekoppeld.
 * **[!UICONTROL @offset]** is de &quot;wijzer&quot;aan het bericht. Het wijst op de orde van het bericht binnen de rij.
 * **[!UICONTROL @partition]** is een container van berichten binnen de rij. De verschuiving is relatief ten opzichte van een partitie. <br>De wachtrij bevat ongeveer 15 partities.
 
@@ -109,20 +109,20 @@ Voorbeeld:
 
 ### Volgorde voor verwerking van gebeurtenissen{#order-events}
 
-De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke draad van [!DNL pipelined] verwerkt een verschillende verdeling.
+De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke thread van de [!DNL pipelined] verwerkt een andere partitie.
 
 De &quot;verschuiving&quot; van de laatste opgehaalde gebeurtenis wordt opgeslagen in de database. Daarom als het proces wordt tegengehouden, begint het van het laatste bericht opnieuw. Dit gegeven wordt opgeslagen in het ingebouwde schema xtk:pipeOffset.
 
 Deze aanwijzer is specifiek voor elk exemplaar en elke consument. Daarom wanneer vele instanties tot de zelfde pijpleiding met verschillende consumenten toegang hebben, krijgen zij elk alle berichten en in de zelfde orde.
 
-De **consumer** parameter van de pijpleidingsoptie identificeert de roepende instantie.
+De **consument** parameter van de pijpleidingsoptie identificeert de roepende instantie.
 
 Er is momenteel geen manier om verschillende wachtrijen te hebben voor afzonderlijke omgevingen zoals &#39;staging&#39; of &#39;dev&#39;.
 
 ### Logboekregistratie en foutafhandeling {#logging-error-handling}
 
-Logbestanden zoals logInfo() worden naar het logbestand [!DNL pipelined] geleid. Fouten zoals logError() worden naar het logbestand [!DNL pipelined] geschreven en zorgen ervoor dat de gebeurtenis in de wachtrij voor opnieuw proberen wordt geplaatst. In dit geval dient u het gepipetteerde log te controleren.
-Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die is ingesteld bij de opties [!DNL pipelined].
+Logbestanden, zoals logInfo(), worden naar de [!DNL pipelined] log. Fouten zoals logError() worden naar de [!DNL pipelined] logbestand en zorgen dat de gebeurtenis in een wachtrij voor opnieuw proberen wordt geplaatst. In dit geval dient u het gepipetteerde log te controleren.
+Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die is ingesteld in het dialoogvenster [!DNL pipelined] opties.
 
 Voor foutopsporing en bewaking worden de volledige triggergegevens in XML-indeling naar de triggertabel in het veld &quot;data&quot; geschreven. U kunt ook een logInfo() met de triggergegevens gebruiken voor hetzelfde doel.
 

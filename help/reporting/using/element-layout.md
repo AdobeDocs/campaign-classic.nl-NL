@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Naast de verschillende hier beschreven grafieken: [Grafiektypen en -varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kunt u de weergave aanpassen en elementen toevoegen aan de rapportpagina(&#39;s).
+Naast de verschillende hier beschreven grafieken: [Grafiektypen en -varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kunt u de weergave aanpassen en elementen toevoegen aan de rapportpagina(&#39;s).
 
 U kunt containers gebruiken: Hiermee kunt u verschillende elementen van een pagina aan elkaar koppelen en de lay-out ervan in kolommen en/of cellen configureren. Hoe deze te gebruiken is gedetailleerd in [deze sectie](../../web/using/defining-web-forms-layout.md#creating-containers).
 
@@ -27,31 +27,31 @@ U kunt de rapportlay-out bij de wortel van de boom vormen en het voor elke conta
 
 U kunt de opties op elke pagina van het rapport gebruiken.
 
-Met het tabblad **[!UICONTROL General]** kunt u de titel van de pagina wijzigen en legendeposities configureren en bladeren tussen de rapportpagina&#39;s.
+De **[!UICONTROL General]** kunt u de titel van de pagina veranderen, evenals legendeposities vormen en tussen de rapportpagina&#39;s doorbladeren.
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-Met het veld **[!UICONTROL Title]** kunt u het label in de koptekst van de rapportpagina aanpassen. De titel van het venster kan via het **[!UICONTROL Properties]** venster van het rapport worden gevormd. Raadpleeg [Koptekst en voettekst toevoegen](#adding-a-header-and-a-footer) voor meer informatie.
+De **[!UICONTROL Title]** In dit veld kunt u het label aanpassen in de koptekst van de rapportpagina. De titel van het venster kan worden geconfigureerd via de **[!UICONTROL Properties]** venster van het rapport. Raadpleeg voor meer informatie hierover [Een kop- en voettekst toevoegen](#adding-a-header-and-a-footer).
 
-Met de opties **[!UICONTROL Display settings]** kunt u de positie van het bijschrift van het besturingselement binnen een rapportpagina selecteren en het aantal kolommen op de pagina definiëren. Raadpleeg de sectie **Itemlayout** van [deze sectie](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page) voor meer informatie over paginalay-out.
+De **[!UICONTROL Display settings]** Met opties kunt u de positie van het bijschrift van het besturingselement in een rapportpagina selecteren en het aantal kolommen op de pagina definiëren. Raadpleeg voor meer informatie over de paginalay-out de **Itemlay-out** deel van [deze sectie](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Selecteer de verschillende opties in de **[!UICONTROL Browse]** sectie om het doorbladeren van één rapportpagina aan een andere toe te staan. Als de optie **[!UICONTROL Disable next page]** of **[!UICONTROL Disable previous page]** is geselecteerd, verdwijnen de knoppen **[!UICONTROL Next]** en **[!UICONTROL Previous]** uit de rapportpagina.
+Selecteer de verschillende opties in het dialoogvenster **[!UICONTROL Browse]** sectie gebruiken om het bladeren van de ene rapportpagina naar een andere toe te staan. Als de **[!UICONTROL Disable next page]** of de **[!UICONTROL Disable previous page]** is geselecteerd, wordt de **[!UICONTROL Next]** en **[!UICONTROL Previous]** de knoppen verdwijnen uit de rapportpagina.
 
 ## Een kop- en voettekst toevoegen {#adding-a-header-and-a-footer}
 
 In het venster met rapporteigenschappen kunt u ook de lay-outelementen definiëren, zoals: de titel van het venster, de HTML-inhoud van de kop- en voetteksten.
 
-Klik op de knop **[!UICONTROL Properties]** van het rapport om het eigenschappenvenster te openen.
+Klik op de knop **[!UICONTROL Properties]** knop van het rapport.
 
 ![](assets/reporting_properties.png)
 
-Met de tab **[!UICONTROL Page]** kunt u de weergave aanpassen.
+De **[!UICONTROL Page]** kunt u de weergave aanpassen.
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
 De inhoud die op dit lusje wordt gevormd zal op alle rapportpagina&#39;s zichtbaar zijn.
 
-Met het subtabblad **[!UICONTROL Texts]** kunt u variabele inhoud definiëren: tijdens de vertaalcyclus zal hiermee rekening worden gehouden indien het verslag is opgesteld voor gebruik in verschillende talen .
+De **[!UICONTROL Texts]** Met subtab kunt u variabele inhoud definiëren: tijdens de vertaalcyclus zal hiermee rekening worden gehouden indien het verslag is opgesteld voor gebruik in verschillende talen .
 
 Hiermee kunt u een lijst met tekstfragmenten maken en deze koppelen aan id&#39;s:
 

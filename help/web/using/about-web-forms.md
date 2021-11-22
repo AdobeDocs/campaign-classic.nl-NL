@@ -27,15 +27,15 @@ In dit hoofdstuk worden de creatie en het beheer van webformulieren beschreven, 
 
 ## Stappen voor het maken van een webformulier {#steps-for-creating-a-web-form}
 
-In dit hoofdstuk worden de stappen beschreven die nodig zijn voor het ontwerpen van een formulier van het type **webForm** in Adobe Campaign, plus de beschikbare opties en configuraties. Met Adobe Campaign kunt u dit webformulier beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
+In dit hoofdstuk worden de stappen beschreven die zijn vereist voor het ontwerpen van een **webForm** typt u het formulier in Adobe Campaign en de beschikbare opties en configuraties. Met Adobe Campaign kunt u dit webformulier beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
 
 >[!CAUTION]
 >
 >Wanneer u webtoepassingen en webformulieren configureert, hebt u een minimale verticale resolutie van 900 pixels nodig (bijv. 1600x900).
 
-Webformulieren zijn toegankelijk via het menu Webtoepassingen van het tabblad **Campagnes**. In de boomstructuur van Adobe Campaign, worden zij gegroepeerd onder de **[!UICONTROL Resources > Online > Web Applications]** knoop.
+Webformulieren zijn toegankelijk via het menu Webtoepassingen van het dialoogvenster **Campagnes** tab. In de Adobe Campaign-structuur worden ze gegroepeerd onder de **[!UICONTROL Resources > Online > Web Applications]** knooppunt.
 
-Om een vorm van het Web tot stand te brengen, klik **[!UICONTROL Create]** knoop boven de lijst van de toepassingen van het Web.
+Als u een webformulier wilt maken, klikt u op de knop **[!UICONTROL Create]** boven de lijst met webtoepassingen.
 
 ![](assets/webapp_create_new.png)
 
@@ -47,7 +47,7 @@ Hiermee gaat u naar het dashboard van het formulier.
 
 ![](assets/webapp_empty_dashboard.png)
 
-Met het tabblad **[!UICONTROL Edit]** kunt u uw inhoud maken.
+De **[!UICONTROL Edit]** kunt u uw inhoud maken.
 
 ![](assets/webapp_edit_tab.png)
 
@@ -59,7 +59,7 @@ Om de configuratie en de inhoud van de vorm van het Web te bepalen, pas de volge
 
 * Hiermee definieert u de volgorde van pagina&#39;s en bepaalt u de weergave.
 
-   Deze stap wordt beschreven in [Paginagereeks voor webformulieren definiëren](defining-web-forms-page-sequencing.md).
+   Deze stap wordt beschreven in [Opeenvolging van webformulierpagina&#39;s definiëren](defining-web-forms-page-sequencing.md).
 
 * Vertaal indien nodig de inhoud.
 
@@ -67,19 +67,19 @@ Om de configuratie en de inhoud van de vorm van het Web te bepalen, pas de volge
 
 ## Webformulieren ontwerpen {#about-web-forms-designing}
 
-De pagina&#39;s van het formulier worden gemaakt met een specifieke editor waarmee u invoerzones (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). Ze kunnen worden gegroepeerd in containers en hun lay-out kan worden aangepast aan uw behoeften (zie [Containers maken](defining-web-forms-layout.md#creating-containers) voor meer informatie).
+De pagina&#39;s van het formulier worden gemaakt met een specifieke editor waarmee u invoerzones (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). U kunt ze groeperen in containers en de lay-out ervan wordt aangepast aan uw wensen (voor meer informatie hierover raadpleegt u [Containers maken](defining-web-forms-layout.md#creating-containers)).
 
 In de volgende secties wordt beschreven hoe u inhoud en indeling voor formulierschermen definieert:
 
 * [Velden toevoegen aan een webformulier](adding-fields-to-a-web-form.md),
-* [HTML-inhoud](static-elements-in-a-web-form.md#inserting-html-content) invoegen,
+* [HTML-inhoud invoegen](static-elements-in-a-web-form.md#inserting-html-content),
 * [Statische elementen in een webformulier](static-elements-in-a-web-form.md),
 * [De opmaak van webformulieren definiëren](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
->* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven op het tabblad **[!UICONTROL Preview]**. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven op het tabblad **[!UICONTROL Log]**.
->* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Hiervoor gaat u naar de **[!UICONTROL Preview]**-subtab en schakelt u het selectievakje **[!UICONTROL Enable debug mode]** in: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
+>* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven in het dialoogvenster **[!UICONTROL Preview]** tab. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven in het dialoogvenster **[!UICONTROL Log]** tab.
+>* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Ga om dit te doen naar de **[!UICONTROL Preview]** subtab en controleer de **[!UICONTROL Enable debug mode]** vak: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
 
 >
 
@@ -94,6 +94,6 @@ In dit geval selecteert u eerst het type veld dat u wilt toevoegen en de opslagm
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Klik **[!UICONTROL Ok]** om de selectie goed te keuren.
+Klikken **[!UICONTROL Ok]** om de selectie goed te keuren.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)

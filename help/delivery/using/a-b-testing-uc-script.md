@@ -67,16 +67,16 @@ Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [dez
    vars.deliveryId = delivery.id
 ```
 
-Raadpleeg [deze sectie](#details-of-the-script) voor een gedetailleerde uitleg van het script.
+Voor een gedetailleerde uitleg van het script raadpleegt u [deze sectie](#details-of-the-script).
 
 ## Implementatie {#implementation}
 
 1. Open uw **[!UICONTROL JavaScript code]** activiteit.
-1. Kopieer het script dat wordt aangeboden in [Voorbeeld van een script](#example-of-a-script) naar het venster **[!UICONTROL JavaScript code]**.
+1. Het aangeboden script kopiëren in [Voorbeeld van een script](#example-of-a-script) in de **[!UICONTROL JavaScript code]** venster.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. Voer in het veld **[!UICONTROL Label]** de naam van het script in, dat wil zeggen
+1. In de **[!UICONTROL Label]** Voer de naam van het script in, dus
 
    ```
    <%= vars.deliveryId %>
@@ -91,7 +91,7 @@ Raadpleeg [deze sectie](#details-of-the-script) voor een gedetailleerde uitleg v
 
 In deze sectie worden de verschillende delen van het script en de bijbehorende uitvoermodus beschreven.
 
-* Het eerste deel van het script is een query. Met de opdracht **queryDef** kunt u de leveringen herstellen die zijn gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van de geschatte snelheid van de openen, waarna de informatie van de levering met de hoogste snelheid van de opening wordt hersteld.****
+* Het eerste deel van het script is een query. De **queryDef** kunt u herstellen vanaf **NmsDelivery** de leveringen die worden gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van hun geschatte openingssnelheid, waarna de informatie uit de levering met de hoogste openingsfrequentie wordt hersteld.
 
    ```
    // query the database to find the winner (best open rate)
@@ -120,7 +120,7 @@ In deze sectie worden de verschillende delen van het script en de bijbehorende u
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* Het label van de gedupliceerde levering wordt gewijzigd en het woord **final** wordt eraan toegevoegd.
+* Het label van de gedupliceerde levering wordt gewijzigd en het woord **final** wordt toegevoegd.
 
    ```
    // append 'final' to the delivery label
@@ -164,7 +164,7 @@ In het bovenstaande voorbeeld kunt u de inhoud van een levering selecteren op ba
 
 * Best geklikt doorvoer: `[indicators/@recipientClickRatio]`,
 * Hoogste reactiviteitspercentage (e-mail geopend en klik in het bericht): `[indicators/@reactivity]`,
-* Laagste klachtenpercentage: `[indicators/@refusedRatio]` (gebruik de false waarde voor het kenmerk sortDesc),
+* Laagste klachtenpercentage: `[indicators/@refusedRatio]` (gebruik de false-waarde voor het kenmerk sortDesc),
 * Hoogste conversiesnelheid: `[indicators/@transactionRatio]`,
 * Aantal bezochte pagina&#39;s na ontvangst van een bericht: `[indicators/@totalWebPage]`,
 * Laagste abonnement: `[indicators/@optOutRatio]`,

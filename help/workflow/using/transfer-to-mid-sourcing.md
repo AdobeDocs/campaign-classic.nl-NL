@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflows worden geïnstalleerd met de module **Overbrengen naar middelbron** standaard. Raadpleeg [Installatiehandleiding voor Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md) voor meer informatie over deze module.
+De hieronder beschreven workflows worden geïnstalleerd met de **Overschakelen naar middelmatig bronnen** module standaard. Voor meer informatie over deze module raadpleegt u [Installatiehandleiding voor Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de module **Overbren
   <tr> 
    <td> <span class="uicontrol">Midden-sourcing (leveringslogboeken)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Het wordt teweeggebracht elk uur door gebrek.<br /> </td> 
+   <td> Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

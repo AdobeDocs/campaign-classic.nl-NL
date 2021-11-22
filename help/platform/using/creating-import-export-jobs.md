@@ -19,13 +19,13 @@ ht-degree: 7%
 
 Nadat sjablonen zijn geconfigureerd, kunnen import- en exportbewerkingen in verschillende contexten in Adobe Campaign worden gestart.
 
-* Klik in de sectie **[!UICONTROL Profiles and targets]** van de Adobe Campaign-werkruimte op de koppeling **[!UICONTROL Jobs]**: dit brengt u naar de lijst van bestaande in - en uitvoer .
+* In de **[!UICONTROL Profiles and targets]** in de Adobe Campaign-werkruimte klikt u op de knop **[!UICONTROL Jobs]** koppeling: dit brengt u naar de lijst van bestaande in - en uitvoer .
 
-   Klik op de knop **[!UICONTROL Create]** en selecteer het type taak dat u wilt uitvoeren.
+   Klik op de knop **[!UICONTROL Create]** en selecteert u het taaktype dat u wilt uitvoeren.
 
    ![](assets/s_ncs_user_import_from_home.png)
 
-* U kunt ook importeren en exporteren vanuit het gedeelte **[!UICONTROL Monitoring]** van de werkruimte: met twee speciale koppelingen kunt u het importeren of exporteren rechtstreeks starten.
+* U kunt ook importeren en exporteren vanuit de **[!UICONTROL Monitoring]** sectie van de werkruimte: met twee speciale koppelingen kunt u het importeren of exporteren rechtstreeks starten.
 
    ![](assets/s_ncs_user_import_from_production.png)
 

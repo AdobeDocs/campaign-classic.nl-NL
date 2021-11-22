@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-De toepassingsserver en de omleidingsserver (**tracking**) kunnen handmatig of automatisch worden gecontroleerd.
+De toepassingsserver en de omleidingsserver (**bijhouden**) kan handmatig of automatisch worden gecontroleerd.
 
 ## Handmatige controle {#manual-monitoring}
 
-Ga naar **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL Overview]** om de pagina voor procesbewaking van Adobe Campaign weer te geven.
+Ga naar **[!UICONTROL Monitoring]** en klik op de knop **[!UICONTROL Overview]** koppeling gebruiken om de pagina voor procesbewaking van Adobe Campaign weer te geven.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -31,21 +31,21 @@ Met de weergegeven pagina kunt u de status van de verbonden instantie weergeven,
 * de lijst van ontbrekende processen en uitvoeringsinformatie (begindatum, PID, enz.);
 * een weergave van workflows en leveringen.
 
-Aanvullende manieren om de verschillende campagneprocessen te controleren worden weergegeven op [deze pagina](../../production/using/monitoring-guidelines.md).
+Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [deze pagina](../../production/using/monitoring-guidelines.md).
 
 ### Logboekjournaal {#log-journal}
 
-Het is mogelijk om het logboekdagboek met betrekking tot een proces te tonen. Om dit te doen, klik op het proces, **mta** bijvoorbeeld, dan klik **[!UICONTROL Open the log journal]**.
+Het is mogelijk om het logboekdagboek met betrekking tot een proces te tonen. Klik hiertoe op het proces. **mta** klikt u bijvoorbeeld op **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### Systeemindicatoren {#system-indicators}
 
-Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven, zoals het fysieke en virtuele geheugen, actieve processen en beschikbare schijfruimte. De indicatoren zijn verschillend voor Linux en Vensters werkende systemen. Ga naar de **[!UICONTROL Instance Monitoring]** pagina en klik **[!UICONTROL Display]** verbinding om de lijst van indicatoren te openen
+Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven, zoals het fysieke en virtuele geheugen, actieve processen en beschikbare schijfruimte. De indicatoren zijn verschillend voor Linux en Vensters werkende systemen. Ga naar de **[!UICONTROL Instance Monitoring]** en klik op de knop **[!UICONTROL Display]** link naar de lijst van indicatoren
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie.
+* **[!UICONTROL Pending events queued]** : specifieke indicator voor **Berichtencentrum**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie .
 
 * **[!UICONTROL Memory]** : informatie over het fysieke geheugen (RAM).
 
@@ -59,7 +59,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** indicatoren worden getoond, kunt u de kwestie oplossen door RAM aan de machine toe te voegen waarop de server van Adobe Campaign geïnstalleerd is. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
+   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door RAM toe te voegen aan het systeem waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
 * **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
@@ -73,7 +73,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** indicatoren worden getoond, kunt u de kwestie oplossen door de grootte van het uitwisselingsdossier in de geavanceerde montages van Vensters te verhogen.
+   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** de indicatoren worden getoond, kunt u de kwestie oplossen door de grootte van het uitwisselingsdossier in de geavanceerde montages van Vensters te verhogen.
 
 * **[!UICONTROL Disk XXX]** : informatie over machinelezers.
 
@@ -97,13 +97,13 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven als het aantal processen gelijk is aan 1.
 
-   Wanneer de **[!UICONTROL Alert]** indicator wordt getoond, kan het zijn dat het betrokken proces door de SQL gegevensbestandmotor wordt gesloten of dat het in een oneindige lijn geplakt is. Het **waakhond** proces dat door Adobe Campaign wordt verstrekt begint automatisch alle processen elke dag opnieuw en laat u toe om deze kwestie op te lossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
+   Wanneer de **[!UICONTROL Alert]** -indicator wordt weergegeven, kan het zijn dat het desbetreffende proces is vergrendeld door de SQL-database-engine of dat het proces vastzit in een oneindige lus. De **waakhond** -proces dat door Adobe Campaign wordt geleverd, wordt elke dag opnieuw gestart en kunt u dit probleem oplossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
 
 #### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie.
+* **[!UICONTROL Pending events queued]** : specifieke indicator voor **Berichtencentrum**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie .
 
 * **[!UICONTROL Load average (1/5/15 minutes)]** : informatie over de belasting, d.w.z. de gebruikssnelheid van de processor door de processen die gedurende de laatste minuut, vijf minuten of vijftien minuten op de machine worden uitgevoerd
 
@@ -127,7 +127,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** indicatoren worden getoond, kunt u de kwestie oplossen door RAM aan de machine toe te voegen waarop de server van Adobe Campaign geïnstalleerd is. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
+   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door RAM toe te voegen aan het systeem waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
 * **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
@@ -141,7 +141,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** indicatoren worden getoond, kunt u de kwestie oplossen door de grootte van het uitwisselingsdossier te verhogen.
+   Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door het uitwisselingsbestand groter te maken.
 
 * **[!UICONTROL Core Files]** : informatie over de bestanden die zijn gegenereerd na het vastlopen van een Adobe Campaign-proces. Met deze bestanden kunt u de oorzaken van het vastlopen vaststellen.
 
@@ -153,7 +153,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal bestanden gelijk is aan 1.
 
-   Wanneer een proces wegens een botsing ontbreekt, wordt het getoond in rood op de lijst van processen en automatisch opnieuw begonnen door het **waakhond** proces dat door Adobe Campaign wordt verstrekt.
+   Wanneer een proces wegens een botsing ontbreekt, wordt het getoond in rood op de lijst van processen en automatisch opnieuw begonnen door **waakhond** door Adobe Campaign opgegeven proces.
 
 * **[!UICONTROL Number of shared memory segments]** : informatie over de geheugensegmenten die door alle Adobe Campaign-processen worden gedeeld.
 
@@ -213,7 +213,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
 Met Adobe Campaign kunt u indicatoren aanpassen. Dit doet u als volgt:
 
-1. Maak een **.sh**-bestand en noem het **[!UICONTROL cust_indicators.sh]**.
+1. Een **.sh** bestand en noem het bestand **[!UICONTROL cust_indicators.sh]** .
 1. Voeg uw aangepaste indicatoren toe aan dit bestand. Bijvoorbeeld:
 
    ```
@@ -237,7 +237,7 @@ Met Adobe Campaign kunt u indicatoren aanpassen. Dit doet u als volgt:
    </indicator>"
    ```
 
-1. Plaats het bestand in de map **[!UICONTROL usr/local/neolane/nl6]**.
+1. Plaats het bestand in de **[!UICONTROL usr/local/neolane/nl6]** map.
 
 Dit bestand wordt aangeroepen door Adobe Campaign.
 
@@ -249,21 +249,21 @@ Deze rapporten tonen SMTP leveringsstatistieken en SMTP fouten door domein.
 
 De exploitant moet beheerrechten hebben om toegang te krijgen tot deze rechten.
 
-Deze worden gegroepeerd onder **Monitoring** > &#39;SMTP-bewaking&#39;.
+Ze zijn gegroepeerd onder **Toezicht** > &#39;SMTP-bewaking&#39;.
 
 ![](assets/smtp_reports_access.png)
 
 >[!IMPORTANT]
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
->* De **[!UICONTROL SMTP sending statistics]** worden alleen aangeboden als de statistische server op de instantie is gestart.
+>* De **[!UICONTROL SMTP sending statistics]** alleen worden aangeboden als de statistische server op de instantie is gestart.
 
 >
 
 
 ### SMTP-verzendende statistieken {#smtp-sending-statistics}
 
-Met het **[!UICONTROL SMTP sending statistics]**-rapport kunt u de serveractiviteit beheren. Er wordt een synthese van elk van de overeenkomende elementen weergegeven.
+De **[!UICONTROL SMTP sending statistics]** het rapport laat u serveractiviteit controleren. Er wordt een synthese van elk van de overeenkomende elementen weergegeven.
 
 ![](assets/smtp_stats_report.png)
 
@@ -275,7 +275,7 @@ De lijst van indicatoren voor dit verslag wordt onder de grafiek weergegeven.
 
    * Groene lijn: met succes verzonden berichten (valt samen met de uitgaande gegevens).
 
-   * Rode lijn: berichten die door Shaper worden verlaten, aan **mta** zijn teruggekeerd (valt samen met de gegevens die op deze terugwinning worden verworpen).
+   * Rode lijn: berichten die door Shaper worden verlaten, aan **mta** (valt samen met de gegevens die over deze terugvordering zijn afgewezen).
 
    Deze waarden worden uitgedrukt in aantal berichten per uur.
 
@@ -283,7 +283,7 @@ De lijst van indicatoren voor dit verslag wordt onder de grafiek weergegeven.
 
    * Blauwe curve: wachtrij met actieve berichten. Deze berichten worden zo snel mogelijk verzonden.
 
-   * Kaki-curve: de &#39;uitgestelde&#39; wachtrij. Deze berichten kunnen op dit moment niet worden geretourneerd vanwege een vertraging of omdat er geen verbinding met het doel beschikbaar is. De pogingen worden elke 5s, 10s, 20s, 40s, 2 min, enz. uitgevoerd. voor de gedefinieerde **MaxAgeSec**-tijd voordat deze wordt verlaten.
+   * Kaki-curve: de &#39;uitgestelde&#39; wachtrij. Deze berichten kunnen op dit moment niet worden geretourneerd vanwege een vertraging of omdat er geen verbinding met het doel beschikbaar is. De pogingen worden elke 5s, 10s, 20s, 40s, 2 min, enz. uitgevoerd. voor de definitie **MaxAgeSec** tijd voordat deze worden verlaten.
 
 1. Deze grafieken tonen een detail van verlaten berichten (rode kromme op de tweede grafiek): het toont het aandeel berichten die zonder herpoging (fout) worden verlaten vergeleken met berichten het waarvan verzenden ontbrak (rood). Dit laat u het aandeel berichten bekijken die niet binnen de toegekende periode wegens beperkingen door de statistiekserver (throttling) of wegens verre serveronbeschikbaarheid worden verwerkt.
 1. SMTP-verbindingen geopend of geopend.
@@ -299,23 +299,23 @@ Dit rapport laat u de leveringsfouten, over een vastgestelde periode bekijken, d
 
 >[!NOTE]
 >
->Met de opties **minConnectionsToLog**, **minErrorsToLog** en **minMessagesToLog** van het bestand **serverConf.xml** worden de drempels gedefinieerd waarboven verbindingsstatistieken in aanmerking worden genomen.
+>De **minConnectionsToLog**, **minErrorsToLog** en **minMessagesToLog** opties van de **serverConf.xml** het dossier bepaalt de drempels waarboven verbindingsstatistieken in aanmerking worden genomen.
 
 ![](assets/smtp_error_report.png)
 
 De lijst van indicatoren voor dit verslag is hieronder weergegeven.
 
-* De **Domain** kolom bevat de naam van het domein waarnaar de berichten worden verzonden (of de echte domeinnaam, yahoo.com bijvoorbeeld voor yahoo.fr),
-* De **Cnx** kolom toont het aantal verbindingen SMTP open voor dit domein,
-* De kolom **Verzonden** komt overeen met het aantal berichten dat naar dit domein wordt verzonden,
-* In de kolom **Volume** wordt het volume weergegeven van berichten die naar dit domein zijn verzonden (waarde bij benadering),
-* In de kolom **Fouten** wordt een volumeindicator weergegeven van fouten die in de periode in dit domein optreden.
-* De **Laatste reactie** kolom toont het laatste SMTP antwoordbericht dat voor dit domein wordt ontvangen,
-* De **Datum** kolom toont de datum van de laatste reactie SMTP die voor dit domein wordt ontvangen.
+* De **Domein** de kolom bevat de naam van het domein waarnaar de berichten worden verzonden (of de echte domeinnaam yahoo.com bijvoorbeeld voor yahoo.fr),
+* De **Cnx** de kolom toont het aantal verbindingen SMTP open voor dit domein,
+* De **Verzonden** de kolom komt overeen met het aantal berichten dat naar dit domein wordt verzonden;
+* De **Volume** in de kolom wordt het volume weergegeven van berichten die naar dit domein zijn verzonden (bij benadering waarde),
+* De **Fouten** de kolom toont een volumeindicator van fouten op dit domein over de periode,
+* De **Laatste reactie** de kolom toont het laatste SMTP antwoordbericht dat voor dit domein wordt ontvangen;
+* De **Datum** de kolom toont de datum van de laatste reactie SMTP voor dit domein wordt ontvangen dat.
 
 >[!NOTE]
 >
->De waarden die worden weergegeven in de kolommen **Cnx**, **Verzonden** en **Volume** worden berekend ten opzichte van de periode die is geselecteerd in het veld **[!UICONTROL Period]**.
+>De waarden die worden weergegeven in het dialoogvenster **Cnx**, **Verzonden**, en **Volume** de kolommen worden berekend ten opzichte van de in de **[!UICONTROL Period]** veld.
 
 Klik op een domeinnaam om de fouten te bekijken.
 
@@ -323,7 +323,7 @@ Ze zijn gecategoriseerd door PublicId: dit herkenningsteken beantwoordt aan een 
 
 ![](assets/smtp_error_report_details.png)
 
-In het veld **[!UICONTROL Owner of domain]** kunt u verschillende domeinnamen groeperen onder hetzelfde label. In de aanvankelijke rapportmening, zullen alle MX domeinnamen aan deze eigenaar worden geassocieerd.
+De **[!UICONTROL Owner of domain]** kunt u verschillende domeinnamen onder hetzelfde label groeperen. In de aanvankelijke rapportmening, zullen alle MX domeinnamen aan deze eigenaar worden geassocieerd.
 
 Klik op een PublicID om meer details te bekijken.
 
@@ -335,11 +335,11 @@ Klik op een PublicID om meer details te bekijken.
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../installation/using/email-deliverability.md) voor meer informatie over SMTP-fouten en het beheer ervan in Adobe Campaign.
+>Voor meer informatie over SMTP-fouten en het beheer ervan in Adobe Campaign raadpleegt u [deze sectie](../../installation/using/email-deliverability.md).
 
 ## Factureringsrapport {#billing-report}
 
-Het technische werkschema **[!UICONTROL Billing]** verzendt het rapport van de systeemactiviteit naar de &quot;facturerings&quot;exploitant per e-mail. Het wordt teweeggebracht door gebrek 25th van elke maand op de instantie van de Marketing.
+De **[!UICONTROL Billing]** de technische werkstroom verzendt het rapport van de systeemactiviteit naar de &quot;facturerings&quot;exploitant per e-mail. Het wordt teweeggebracht door gebrek 25th van elke maand op de instantie van de Marketing.
 
 De technische workflow vindt u in een submap van het volgende knooppunt: **Beheer** > **Productie** > **Technische workflows**.
 
@@ -354,7 +354,7 @@ De volgende cijfers zijn beschikbaar om uw leveringen te volgen:
 * **[!UICONTROL Start date]** : Begindatum van de levering. Merk op dat het vroeger dan de &quot;van&quot;datum van het rapport kan zijn.
 * **[!UICONTROL Label]** : Etiket van de levering. Leveringen met minder dan 100 berichten worden als te klein beschouwd en dus geaggregeerd op de begindatum. In dat geval geeft het label het aantal aggregaten weer, bijvoorbeeld [Samenvoeging van 3 kleine leveringen].
 * **[!UICONTROL Total volume]** : Het totale volume van de bytes dat voor de levering wordt overgebracht.
-* **[!UICONTROL Avg volume]** : Gemiddeld volume van overgedragen bytes. Dit is het resultaat van de volgende formule **(totaal volume/berichten)**, die de berekeningsbasis van **[!UICONTROL Multiplier]** metrisch is.
+* **[!UICONTROL Avg volume]** : Gemiddeld volume van overgedragen bytes. Dit is het resultaat van de volgende formule **(totaal volume / berichten)**, die de berekeningsgrondslag vormt voor de **[!UICONTROL Multiplier]** metrisch.
 * **[!UICONTROL Messages]** : Aantal verzonden berichten. Dit omvat zowel berichten die met succes werden verzonden als pogingen (na de ontvangst van een stuitbericht van de gecontacteerde server).
 * **[!UICONTROL Multiplier (x)]** : De waarde van de vermenigvuldiger wordt afgetrokken van het gemiddelde volume van de berichten.
 * **[!UICONTROL Count]** : Resultaat van de vermenigvuldiging van de berichten en de vermenigvuldiger.
@@ -373,7 +373,7 @@ Hier geeft u een aantal indicatoren weer voor de Adobe Campaign-modules en het s
 
 Er wordt uitvoer gegenereerd in een gemakkelijk verwerkte XML-indeling.
 
-Dit bevel kan ook met **-missing** parameter worden in werking gesteld, die van de processen een lijst maakt die van deze instantie missen wanneer de configuratiedossiers zeggen dat zij zouden moeten uitvoeren.
+Deze opdracht kan ook worden uitgevoerd met de opdracht **-missing** parameter, die van de processen een lijst maakt die van deze instantie missen wanneer de configuratiedossiers zeggen dat zij zouden moeten uitvoeren.
 
 ```
 nlserver monitor -missing
@@ -387,7 +387,7 @@ wfserver@prod
 
 #### /r/test {#r-test}
 
-De pagina **http(s):///`<application>`/r/test** wordt gebruikt om de omleidingsserver te testen. Wij adviseren gebruikend deze zelfde methode om de frontale servers te testen die voor het volgen worden gebruikt. Deze pagina kan ook worden gebruikt om een verzender van de lading te testen.
+De **http(s)://`<application>`/r/test** wordt gebruikt om de omleidingsserver te testen. Wij adviseren gebruikend deze zelfde methode om de frontale servers te testen die voor het volgen worden gebruikt. Deze pagina kan ook worden gebruikt om een verzender van de lading te testen.
 
 Een regel als deze wordt weergegeven in XML-indeling:
 
@@ -399,9 +399,9 @@ Een regel als deze wordt weergegeven in XML-indeling:
 
 #### /nl/jsp/ping.jsp {#nl-jsp-ping-jsp}
 
-Deze **http(s)://`<Application server url>`/nl/jsp/ping.jsp** pagina werkt op dezelfde manier als de bijbehorende netwerktegenhanger: het test een volledige vraag die door apache/tomcat/Webmodule/gegevensbestand gaat en aan de cliënt uploadt. Als alles goed werkt, geeft het een &quot;OK&quot;. We raden u aan deze test uit te voeren op computers met toegang tot de databases (bijvoorbeeld mtas&#39;s en enquêtes).
+Dit **http(s)://`<Application server url>`/nl/jsp/ping.jsp**  pagina werkt op dezelfde manier als zijn netwerktegenhanger: het test een volledige vraag die door apache/tomcat/Webmodule/gegevensbestand gaat en aan de cliënt uploadt. Als alles goed werkt, geeft het een &quot;OK&quot;. We raden u aan deze test uit te voeren op computers met toegang tot de databases (bijvoorbeeld mtas&#39;s en enquêtes).
 
-**Gebruik**: een zittingsteken verbonden aan een exploitant login moet als argument worden overgegaan om zich ver te registreren (zie de uiteinde in  [Automatische controle via manuscripten](#automatic-monitoring-via-adobe-campaign-scripts) van Adobe Campaign).
+**Gebruik**: een zittingsteken verbonden aan een exploitant login moet als argument worden overgegaan om ver login (zie de uiteinde in [Automatische controle via Adobe Campaign-scripts](#automatic-monitoring-via-adobe-campaign-scripts)).
 
 Bijvoorbeeld:
 
@@ -419,7 +419,7 @@ Dit is een test om te controleren of een operator via een webpagina toegang heef
 
 ![](assets/ncs_monitoring_web.png)
 
-**Gebruik**: Een zittingsteken verbonden aan een exploitant login die u met de instantie laat verbinden moet als argument worden gebruikt (zie de uiteinde in  [Automatische controle via manuscripten](#automatic-monitoring-via-adobe-campaign-scripts) van Adobe Campaign).
+**Gebruik**: een zittingsteken verbonden aan een exploitant login die u met de instantie laat verbinden moet als argument worden gebruikt (zie de uiteinde in [Automatische controle via Adobe Campaign-scripts](#automatic-monitoring-via-adobe-campaign-scripts)).
 
 De exploitant en hun login moeten eerder in de de cliëntconsole van Adobe Campaign met de aangewezen gegevensbestandrechten en beperkingen worden gevormd.
 
@@ -427,11 +427,11 @@ De exploitant en hun login moeten eerder in de de cliëntconsole van Adobe Campa
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Dit **jsp** vertegenwoordigt het punt van ingang van Adobe Campaign toepassing APIs. Zij kan daarom een gedetailleerd toezicht op de aanvraag uitvoeren. Het kan ook worden gebruikt om de Webdiensten van Adobe Campaign te controleren. Het wordt gebruikt in onze toezichtmanuscripten, maar merk op dat het voor machtsgebruikers slechts is.
+Dit **jsp** staat voor het toegangspunt voor Adobe Campaign-toepassings-API&#39;s. Zij kan daarom een gedetailleerd toezicht op de aanvraag uitvoeren. Het kan ook worden gebruikt om de Webdiensten van Adobe Campaign te controleren. Het wordt gebruikt in onze toezichtmanuscripten, maar merk op dat het voor machtsgebruikers slechts is.
 
 ### Controle op basis van implementatietypen {#monitoring-based-on-deployment-types}
 
-Adobe Campaign schakelt verschillende implementatieconfiguraties in (zie [deze sectie](../../installation/using/hosting-models.md) voor meer informatie). In deze sectie worden de verschillende automatische bewakingstechnieken beschreven die moeten worden toegepast, afhankelijk van het type installatie.
+Adobe Campaign maakt verschillende implementatieconfiguraties mogelijk (voor meer informatie hierover raadpleegt u [deze sectie](../../installation/using/hosting-models.md)). In deze sectie worden de verschillende automatische bewakingstechnieken beschreven die moeten worden toegepast, afhankelijk van het type installatie.
 
 <table> 
  <thead> 
@@ -445,30 +445,30 @@ Adobe Campaign schakelt verschillende implementatieconfiguraties in (zie [deze s
    <td> Zelfstandig </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.</span> jspon the Adobe Campaign server</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> en <span class="uicontrol">/nl/jsp/monitor.jsp</span> op de Adobe Campaign-server</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Standaard </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.</span> jspon the frontservers</p> </li> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.</span> jspon de toepassingsserver</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> en <span class="uicontrol">/nl/jsp/ping.jsp</span> op de frontservers</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> op de toepassingsserver</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Enterprise </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.</span> jspon the frontservers</p> </li> 
-     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.</span> jspon the application server</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> en <span class="uicontrol">/nl/jsp/ping.jsp</span> op de frontservers</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> en <span class="uicontrol">/nl/jsp/monitor.jsp</span> op de toepassingsserver</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Midden-sourcing </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.</span> jspon de toepassingsserver</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> op de toepassingsserver</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -488,10 +488,10 @@ Adobe Campaign kan een hulpmiddel van de instantiecontrole (netreport) verstrekk
 
 Voor automatische controle zijn de volgende voorzorgsmaatregelen voorafgaand aan de installatie vereist:
 
-* U moet de **netreport.tgz** (installatie van Linux) of **netreport.zip** (installatie van Vensters) dossiers hebben,
-* We raden u ten zeerste aan om geen controle op de te controleren machine te installeren,
+* U moet beschikken over de **netreport.tgz** (Linux-installatie) of **netreport.zip** (Windows-installatie),
+* We raden u ten zeerste aan geen bewaking op de te controleren machine te installeren,
 * het moet zijn geïnstalleerd op een machine met een JRE of JDK;
-* in Linux moet de te controleren machine het **bc** pakket hebben. Raadpleeg [deze sectie](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages) voor meer informatie.
+* in Linux moet de te controleren computer **bc** pakket. Raadpleeg [deze sectie](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages) voor meer informatie.
 
 ### Installatieprocedure {#installation-procedure}
 
@@ -499,9 +499,9 @@ De installatieprocedure is als volgt:
 
 1. Maak indien nodig in de console een nieuwe operator (de gebruiker voor &#39;controle&#39; bestaat al), maar wijs geen rechten toe.
 1. Ophalen van archief uitvoeren.
-1. Lees het bestand **readme**.
-1. Werk het **netconf.xml** configuratiedossier bij.
-1. Werk het bestand **netreport.bat** (Windows) of **netreport.sh** (Linux) bij.
+1. Lees de **readme** bestand.
+1. Werk de **netconf.xml** configuratiebestand.
+1. Werk de **netreport.bat** (Windows) of **netreport.sh** (Linux).
 
 ### Het bestand netconf.xml configureren {#configuring-the-netconf-xml-file}
 
@@ -542,11 +542,11 @@ Hier volgt een configuratievoorbeeld:
 
 >[!NOTE]
 >
->U kunt verschillende configuraties specificeren door een achtervoegsel aan **netconf.xml** dossier, bijvoorbeeld, **netconf-dev.xml**, **netconf-prod.xml**, enz. toe te voegen. Geef vervolgens de configuratie op die moet worden gebruikt voor het uitvoeren van het netreport in de bestanden **netreport.bat** of **netreport.sh** door **$JAVA_HOME/bin/java netreport dev** of **@%JAVA_HOME%binjava netreport prod** toe te voegen.
+>U kunt verschillende configuraties opgeven door een achtervoegsel toe te voegen aan de **netconf.xml** bestand, bijvoorbeeld **netconf-dev.xml**, **netconf-prod.xml**, enz. Dan specificeer de configuratie voor het uitvoeren van netreport in **netreport.bat** of **netreport.sh** bestanden toevoegen **$JAVA_HOME/bin/java netreport dev** of **@%JAVA_HOME%binjava netreport-proxy** bijvoorbeeld.
 
 >[!IMPORTANT]
 >
->De **monitoring** operator werkt alleen als de machine waarop het netreport wordt uitgevoerd zich in een beveiligingszone bevindt die zich in de modus **sessionTokenOnly** bevindt. Als er voor deze operator geen vertrouwd IP-masker is opgegeven, moet de beveiligingszone zich ook in de modus **allowEmptyPassword** en **allowUserPassword** bevinden.
+>Voor de **toezicht** -operator om te werken, moet de machine waarop het netreport wordt uitgevoerd zich in een beveiligingszone bevinden die zich in **sessionTokenOnly** in. Als er geen vertrouwd IP-masker is opgegeven voor deze operator, moet de beveiligingszone zich ook binnen **allowEmptyPassword** en **allowUserPassword** in.
 
 #### Element &#39;Eigenschappen&#39; {#properties--element}
 
@@ -555,18 +555,18 @@ Dit element wordt gebruikt om de configuratie van e-mailberichten te vullen, dat
 * **mailServer**: SMTP-server gebruikt om e-mailberichten te verzenden (bijvoorbeeld: smtp.domain.net).
 * **mailFrom**: e-mailadres van de afzender van het rapport (bv.: monitoring@domain.net).
 * **receivingList**: de lijst met e-mailadressen van ontvangers die toezicht houden. Adressen moeten worden gescheiden door komma&#39;s (geen spaties).
-* De modus &#39;**night**&#39; (optioneel) wordt gebruikt om het verzenden van e-mails tussen de opgegeven tijdsperiode te voorkomen. In plaats daarvan worden de gegevens geconsolideerd en wordt een e-mail over de activiteit van de nacht verzonden na de eindtijd (standaard 7:00).
-* Met het subelement **buildRange** (optioneel) kunt u een minimum- en maximumbuildnummer opgeven. Er wordt een fout gegenereerd voor alle computers waarvan het buildnummer niet binnen dit bereik valt
+* &#39;**nacht** De modus &#39; (optioneel) wordt gebruikt om te voorkomen dat e-mailberichten tussen de opgegeven tijdsperiode worden verzonden. In plaats daarvan worden de gegevens geconsolideerd en wordt een e-mail over de activiteit van de nacht verzonden na de eindtijd (standaard 7:00).
+* De **buildRange** Met subelement (optioneel) kunt u een minimum- en maximumbuildnummer opgeven. Er wordt een fout gegenereerd voor alle computers waarvan het buildnummer niet binnen dit bereik valt
 
    ```
    <buildRange minimum="0000" maximum="9999"/>
    ```
 
-* U kunt een **`<sla>`** (facultatief) subelement in **eigenschappen** element toevoegen. Een logboekdossier zal worden geproduceerd telkens als netreport wordt uitgevoerd. De naam van het bestand bevat de configuratienaam en de datum en tijd, bijvoorbeeld **dev_06_12_13_16_47_05.tmp**. Het bestand bevat de volgende informatie: instantienaam, machinenaam, ernstniveau, (0 tot 3, van minst kritiek aan meest kritiek), datum (timestamp formaat), tijd die (in milliseconden) tussen de vraag en de reactie, de gebruikte dienst (http, ncs, ncsex, redir) wordt verstreken. Deze informatie wordt gescheiden door lusrekentekens en lijnonderbrekingen aan het eind van elke dienst.
+* U kunt een **`<sla>`** (facultatief) subelement in **eigenschappen** element. Een logboekdossier zal worden geproduceerd telkens als netreport wordt uitgevoerd. De naam van het bestand bevat de configuratienaam en de datum en tijd, bijvoorbeeld **dev_06_12_13_16_47_05.tmp**. Het bestand bevat de volgende informatie: instantienaam, machinenaam, ernstniveau, (0 tot 3, van minst kritiek aan meest kritiek), datum (timestamp formaat), tijd die (in milliseconden) tussen de vraag en de reactie, de gebruikte dienst (http, ncs, ncsex, redir) wordt verstreken. Deze informatie wordt gescheiden door lusrekentekens en lijnonderbrekingen aan het eind van elke dienst.
 
 >[!NOTE]
 >
->Het **persistHtmlFile**-attribuut met de waarde &quot;true&quot; op het **`<property>`**-element wordt gebruikt om de laatste controlestatus op te nemen in het bestand **netreport.md**. Dit bestand wordt opgeslagen in de installatiemap.
+>De **persistHtmlFile** kenmerk met de waarde &quot;true&quot; op het tabblad **`<property>`** -element wordt gebruikt om de meest recente monitorstatus in het bestand op te nemen **netreport.md**. Dit bestand wordt opgeslagen in de installatiemap.
 
 #### Instantie-element {#instance--element}
 
@@ -583,40 +583,40 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 </instance
 ```
 
-* **naam**: instantienaam die in het eerste deel van de e-mail zal verschijnen.
-* **receivingList**  (optioneel): Hiermee kunt u via e-mail een monitoringrapport over een bepaald exemplaar verzenden.
+* **name**: instantienaam die in het eerste deel van de e-mail zal verschijnen.
+* **receivingList** (optioneel): Hiermee kunt u via e-mail een monitoringrapport over een bepaald exemplaar verzenden.
 
 #### Element &#39;Host&#39; {#host--element}
 
 Dit element vormt de controle van een bepaalde server op de gastheer, d.w.z.
 
-* **naam**: naam van de te controleren machine.
-* **alias**  (optioneel): naam van de bewaakte computer zoals deze in het rapport wordt weergegeven.
+* **name**: naam van de te controleren machine.
+* **alias** (optioneel): naam van de bewaakte computer zoals deze in het rapport wordt weergegeven.
 * **sessionToken**: biedt aanmeldingsverificatie via een geautoriseerd sessietoken.
 
-   Om het zittingsteken te vormen, selecteer **monitoring** exploitant in de console van Adobe Campaign. Geef op het tabblad **Toegangsrechten** de IP-adressen op van de computers die gemachtigd zijn om deze instantie te controleren. Vervolgens kunt u verbinding maken met de controlepagina van die computers met behulp van de **monitoring**-id en zonder dat u een wachtwoord hoeft op te geven.
+   Om het zittingsteken te vormen, selecteer **toezicht** in de Adobe Campaign-console. In de **Toegangsrechten** op, geeft u de IP-adressen op van de computers die gemachtigd zijn om dit exemplaar te controleren. U kunt dan verbinding maken met de controlepagina vanaf deze computers met behulp van de **toezicht** id en zonder een wachtwoord op te geven.
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **CriticalLevel**  (optioneel): Hiermee kunt u fouten sorteren en weergeven op ernst. Mogelijke waarden zijn &#39;0&#39; (alle weergegeven niveaus), &#39;1&#39; (alleen hoge en kritieke fouten weergegeven) en &#39;2&#39; (alleen kritieke fouten weergegeven). Als dit kenmerk niet wordt opgegeven, worden alle foutniveaus weergegeven.
-* **filter**  (optioneel): Hiermee kunt u bepaalde workflowfouten uitsluiten, bijvoorbeeld  **filter=&quot;wkf;wkf1&quot;**. Workflowlabels moeten worden gescheiden door puntkomma&#39;s.
+* **kritiekLevel** (optioneel): Hiermee kunt u fouten sorteren en weergeven op ernst. Mogelijke waarden zijn &#39;0&#39; (alle weergegeven niveaus), &#39;1&#39; (alleen hoge en kritieke fouten weergegeven) en &#39;2&#39; (alleen kritieke fouten weergegeven). Als dit kenmerk niet wordt opgegeven, worden alle foutniveaus weergegeven.
+* **filter** (optioneel): Hiermee kunt u bepaalde workflowfouten uitsluiten, bijvoorbeeld **filter=&quot;wkf;wkf1&quot;**. Workflowlabels moeten worden gescheiden door puntkomma&#39;s.
 
 #### Subelementen {#sub-elements}
 
 * **tcp**: controleert of de server omhoog of omlaag is. U moet een poortnummer invoeren.
 * **http**: controleert of de server van het Web bestaat (toepassingsserver is operationeel).
-* **ncs**: controleert de processen op de instantie ingegaan in het &quot;instantie&quot;attribuut (werkschemafouten, geheugengebruik, enz.). Het **include** (verplicht) attribuut geeft u de optie om dode processen (&quot;waar&quot;of &quot;vals&quot;waarden) te tonen.
+* **ncs**: controleert de processen op de instantie ingegaan in het &quot;instantie&quot;attribuut (werkschemafouten, geheugengebruik, enz.). De **inbegrepen** (verplicht) geeft u de optie om dode processen weer te geven (&#39;true&#39; of &#39;false&#39; waarden).
 * **redir**: controleert het volgen.
 
-In de meeste gevallen kunnen alleen de **ncs** en **redir** subelementen worden behouden.
+In de meeste gevallen is alleen de **ncs** en **redir** subelementen kunnen worden bewaard.
 
-In elk geval, kunnen bepaalde knopen in sub-elementen worden overbelast (b.v., de knoop **port=75** om de haven te overladen die voor de http, ncs of herr verbinding wordt gebruikt):
+In elk geval kunnen bepaalde knooppunten worden overbelast in de subelementen (bijvoorbeeld het knooppunt **port=75** om de haven te overladen die voor de http, ncs of redir verbinding wordt gebruikt):
 
 ```
 <ncs instance="clap40" url="/nl/jsp/soaprouter.jsp" includeDead="false" port="80"/>
 ```
 
-In **ncs**, **redir** en **http** subelements, kunt u **isSecure** (facultatief) toevoegen om te kiezen of om het HTTPS protocol (&quot;waar&quot;of &quot;vals&quot;waarden) al dan niet te gebruiken. Als dit kenmerk niet wordt opgegeven, wordt het http-protocol gebruikt.
+In de **ncs**, **redir** en **http** subelementen kunt u toevoegen **isSecure** (optioneel) om aan te geven of het HTTPS-protocol wel of niet moet worden gebruikt (&#39;true&#39; of &#39;false&#39; waarden). Als dit kenmerk niet wordt opgegeven, wordt het http-protocol gebruikt.
 
 ### Het vormen van het netreport.bat of netreport.sh- dossier {#configuring-the-netreport-bat-or-netreport-sh--file}
 
@@ -624,10 +624,10 @@ Om het te vormen, geef dit dossier uit en wijs op welke folder JRE of JDK geïns
 
 ### Bewaking starten {#launching-monitoring}
 
-Om controle te lanceren, voer **netreport.bat** of **netreport.sh** dossier met regelmatige intervallen via een manuscript uit. Een rapport wordt verzonden na de eerste uitvoering, en dan slechts in het geval van een verandering van status.
+Als u de controle wilt starten, voert u de **netreport.bat** of **netreport.sh** op regelmatige intervallen via een script. Een rapport wordt verzonden na de eerste uitvoering, en dan slechts in het geval van een verandering van status.
 
 ### Bewaking van tests {#testing-monitoring}
 
-Als u de controle wilt testen, voert u het bestand **netreport.bat** of **netreport.sh** uit.
+Als u de controle wilt testen, voert u de opdracht **netreport.bat** of **netreport.sh** bestand.
 
-Er wordt een e-mail verzonden naar de ontvangers die zijn opgegeven in de **receivingList** van het bestand **netconf.xml**.
+Er wordt een e-mail verzonden naar de ontvangers die zijn opgegeven in het dialoogvenster **receivingList** van de **netconf.xml** bestand.

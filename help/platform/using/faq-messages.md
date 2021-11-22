@@ -96,7 +96,7 @@ Voor elke URL van het bericht kunt u kiezen of u bijvoorbeeld het bijhouden wilt
 
 ### Waar heb ik toegang tot leverings- en trackinglogboeken? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Leer hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers [op deze pagina](../../delivery/using/delivery-dashboard.md) kunt begrijpen.
+Leer hoe u uw leveringen kunt bijhouden en hoe de ontvangers te werk gaan [van deze pagina](../../delivery/using/delivery-dashboard.md).
 
 ### Waar kan ik leveringsrapporten krijgen? {#where-can-i-get-delivery-reports-}
 

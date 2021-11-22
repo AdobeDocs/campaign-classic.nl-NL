@@ -38,7 +38,7 @@ Het Profiel van het product bepaalt het niveau van toegang een gebruiker op uw v
 
 Als u al een productprofiel voor Analytics hebt, moet u nog steeds een nieuw Adobe Analytics-productprofiel maken dat uitsluitend wordt gebruikt voor de Analytics-connector. Zo zorgt u ervoor dat uw productprofiel is ingesteld met de juiste machtigingen voor deze integratie.
 
-Raadpleeg voor meer informatie over productprofielen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Raadpleeg voor meer informatie over productprofielen de [Documentatie beheerconsole](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
 1. Van de [Admin-console](https://adminconsole.adobe.com/), selecteer je Adobe Analytics **[!UICONTROL Product]**.
 
@@ -58,7 +58,7 @@ Raadpleeg voor meer informatie over productprofielen de [Documentatie voor behee
 
 1. Andere mogelijkheden configureren door te klikken **[!UICONTROL Edit]** en selecteer de machtigingen die aan uw **[!UICONTROL Product profile]** door op de plusknop (+) te klikken.
 
-   Raadpleeg voor meer informatie over het beheren van machtigingen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Raadpleeg voor meer informatie over het beheren van machtigingen de [Documentatie beheerconsole](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
 1. Voor de **[!UICONTROL Report Suites]** mogelijkheden, voegt de **[!UICONTROL Report Suites]** moet u later gebruiken.
 

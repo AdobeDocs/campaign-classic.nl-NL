@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Hieronder volgen enkele algemene beginselen voor het gebruik van inputformulieren in Adobe Campaign.
 
-Forms worden beschreven in [deze sectie](../../configuration/using/identifying-a-form.md).
+Forms wordt gedetailleerd weergegeven in [deze sectie](../../configuration/using/identifying-a-form.md).
 
 ## Formulierstructuur {#form-structure}
 
-Het XML-document van een invoerformulier moet het basiselement **`<form>`** bevatten met de kenmerken **name** en **namespace** om respectievelijk de formuliernaam en de bijbehorende naamruimte te vullen.
+Het XML-document van een invoerformulier moet het **`<form>`** hoofdelement met de **name** en **namespace** kenmerken om respectievelijk de formuliernaam en de naamruimte te vullen.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ Het XML-document van een invoerformulier moet het basiselement **`<form>`** beva
 </form>
 ```
 
-Standaard is een formulier gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Als u een formulier wilt koppelen aan een andere naam, voert u de schemasleutel in het **entiteitsschema**-kenmerk van het **`<form>`**-element in.
+Standaard is een formulier gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Als u een formulier wilt koppelen aan een andere naam, voert u de schemasleutel in het dialoogvenster **entiteitsschema** kenmerk van de **`<form>`** element.
 
 Om de structuur van een invoerformulier te illustreren, beschrijven we een interface op basis van ons voorbeeldschema &quot;cus:book&quot;:
 
@@ -47,9 +47,9 @@ Dit is het corresponderende invoerformulier:
 </form>
 ```
 
-De beschrijving van de bewerkingselementen begint met het basiselement **`<form>`**.
+De beschrijving van de bewerkingselementen begint met de **`<form>`** hoofdelement.
 
-Een bewerkingscontrole is ingegaan in een **`<input>`** element met het **xpath** attribuut dat de weg van het gebied in zijn schema bevat.
+Een bewerkingsbesturingselement is ingevoerd in een **`<input>`** met de **xpath** kenmerk met het pad van het veld in het schema.
 
 **Herinnering voor XPath-syntaxis:**
 
@@ -62,8 +62,8 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 Voorbeelden:
 
 * **@date**: selecteert het kenmerk met de naam &quot;date&quot;
-* **hoofdstuk/@titel**: selecteert het kenmerk &quot;title&quot; onder het  `<chapter>` element
-* **../@datum**: selecteert de datum uit het bovenliggende element van het huidige element
+* **hoofdstuk/@titel**: selecteert het kenmerk &quot;title&quot; onder het tabblad `<chapter>` element
+* **../@date**: selecteert de datum uit het bovenliggende element van het huidige element
 
 Het bewerkingsbesturingselement past zich automatisch aan het overeenkomstige gegevenstype aan en gebruikt het label dat in het schema is gedefinieerd.
 
@@ -71,11 +71,11 @@ Elk veld wordt standaard op één regel weergegeven en neemt alle beschikbare ru
 
 >[!CAUTION]
 >
->Het invoerformulier moet verwijzen naar een **type=&quot;contentForm&quot;**-kenmerk op het **`<form>`**-element om automatisch het frame toe te voegen dat vereist is voor de inhoud die moet worden ingevoerd.
+>Het invoerformulier moet verwijzen naar een **type=&quot;contentForm&quot;** kenmerk op de **`<form>`** -element om automatisch het frame toe te voegen dat vereist is voor de invoer van inhoud.
 
 ## Opmaak {#formatting}
 
-De rangschikking van de besturingselementen ten opzichte van elkaar lijkt op de rangschikking die wordt gebruikt in HTML-tabellen, met de mogelijkheid om een besturingselement in meerdere kolommen te verdelen, elementen te interliniëren of de bezetting van de beschikbare ruimte op te geven. Houd er echter rekening mee dat de opmaak alleen de verdeling van de verhoudingen toestaat; u kunt geen vaste afmetingen opgeven voor een object.
+De rangschikking van de besturingselementen ten opzichte van elkaar lijkt op de rangschikking die wordt gebruikt in HTML-tabellen, met de mogelijkheid om een besturingselement te verdelen in meerdere kolommen, interliniërende elementen of het gebruik van de beschikbare ruimte te specificeren. Houd er echter rekening mee dat de opmaak alleen de verdeling van de verhoudingen toestaat; u kunt geen vaste afmetingen opgeven voor een object.
 
 Raadpleeg [deze sectie](../../configuration/using/form-structure.md#formatting) voor meer informatie.
 
@@ -96,13 +96,13 @@ Met dit besturingselement wordt een bewerkbare kolomlijst weergegeven met een we
 </input>
 ```
 
-De lijstcontrole moet met **type= &quot;lijst&quot;** attributen worden ingevuld, en de weg van de lijst moet naar het inzamelingselement verwijzen.
+Het besturingselement voor de lijst moet worden ingevuld met de **type=&quot;list&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
 
-De kolommen worden gedeclareerd door de onderliggende **`<input>`**-elementen van de lijst.
+De kolommen worden gedeclareerd door het onderliggende object **`<input>`** elementen van de lijst.
 
 >[!NOTE]
 >
->De pijl-omhoog en pijl-omlaag worden automatisch toegevoegd wanneer het kenmerk **ordered=&quot;true&quot;** voor het verzamelingselement in het gegevensschema wordt voltooid.
+>De pijl-omhoog en -omlaag worden automatisch toegevoegd wanneer de **ordered=&quot;true&quot;** attribuut wordt voltooid voor het inzamelingselement in het gegevensschema.
 
 Standaard worden de werkbalkknoppen verticaal uitgelijnd. Ze kunnen ook horizontaal worden uitgelijnd:
 
@@ -115,11 +115,11 @@ Standaard worden de werkbalkknoppen verticaal uitgelijnd. Ze kunnen ook horizont
 </input>
 ```
 
-Met het kenmerk **toolbarCaption** wordt de horizontale uitlijning van de werkbalk geforceerd en wordt de titel boven de lijst gevuld.
+De **toolbarCaption** Met dit kenmerk dwingt u de horizontale uitlijning van de werkbalk af en vult u de titel boven de lijst in.
 
 >[!NOTE]
 >
->Voor het etiket van het inzamelingselement dat niet aan de linkerzijde van de controle moet worden getoond, voeg **nolabel= &quot;waar&quot;** attribuut toe.
+>Voor het etiket van het inzamelingselement dat niet aan de linkerzijde van de controle moet worden getoond, voeg toe **nolabel=&quot;true&quot;** kenmerk.
 
 #### Inzoomen op een lijst {#zoom-in-a-list}
 
@@ -146,13 +146,13 @@ In de volgende gevallen worden formulieren in lijsten bewerken gebruikt:
 </input>
 ```
 
-De definitie van het bewerkingsformulier wordt opgegeven via het element **`<form>`** onder het lijstelement. De structuur ervan is identiek aan de structuur van een invoerformulier.
+De definitie van het bewerkingsformulier wordt opgegeven via de **`<form>`** -element onder het lijstelement. De structuur ervan is identiek aan de structuur van een invoerformulier.
 
-Een **[!UICONTROL Detail]** knoop wordt automatisch toegevoegd wanneer **zoom=&quot;waar&quot;** attribuut in de lijstdefinitie is ingegaan. Hiermee kunt u het bewerkingsformulier openen op de geselecteerde regel.
+A **[!UICONTROL Detail]** wordt automatisch toegevoegd wanneer de knop **zoom=&quot;true&quot;** wordt in de lijstdefinitie ingevoerd. Hiermee kunt u het bewerkingsformulier openen op de geselecteerde regel.
 
 >[!NOTE]
 >
->Als u het kenmerk **zoomOnAdd=&quot;true&quot;** toevoegt, wordt het bewerkingsformulier afgedwongen bij het invoegen van een element in de lijst.
+>Het toevoegen van **zoomOnAdd=&quot;true&quot;** Met dit kenmerk wordt het bewerkingsformulier afgedwongen wanneer een element in de lijst wordt ingevoegd.
 
 ### Tablijst {#tab-list}
 
@@ -170,23 +170,23 @@ In deze lijst wordt het bewerken van verzamelingselementen weergegeven in de vor
 </container>
 ```
 
-Het lijstbesturingselement moet worden ingevuld met het **type=&quot;notebooklist&quot;**-kenmerk en het pad van de lijst moet naar het verzamelingselement verwijzen.
+Het besturingselement voor de lijst moet worden ingevuld met de **type=&quot;notebooklist&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
 
-De titel van het tabblad bevat de waarde van de gegevens die zijn ingevoerd via het kenmerk **xpath-label**.
+De titel van het tabblad bevat de waarde van de gegevens die zijn ingevoerd via het dialoogvenster **xpath-label** kenmerk.
 
-De bewerkingsbesturingselementen moeten worden gedeclareerd onder een element **`<container>`** dat een onderliggend element is van het lijstbesturingselement.
+De besturingselementen voor bewerken moeten worden gedeclareerd onder een **`<container>`** element dat een kind van de lijstcontrole is.
 
 Met de werkbalkknoppen kunt u lijstelementen toevoegen of verwijderen.
 
 >[!NOTE]
 >
->De linker en juiste het ordenen pijlen worden automatisch toegevoegd wanneer **ordered=&quot;waar&quot;** attribuut voor het inzamelingselement in het gegevensschema wordt bevolkt.
+>De pijl-links en pijl-rechts wordt automatisch toegevoegd wanneer de **ordered=&quot;true&quot;** attribuut wordt bevolkt voor het inzamelingselement in het gegevensschema.
 
 ## Containers {#containers}
 
-Met containers kunt u een set besturingselementen groeperen. Ze bestaan via het element **`<container>`**. Zij zijn reeds gebruikt om controles in verscheidene kolommen en voor de controle van de lusjelijst te formatteren.
+Met containers kunt u een set besturingselementen groeperen. Ze bestaan via de **`<container>`** element. Zij zijn reeds gebruikt om controles in verscheidene kolommen en voor de controle van de lusjelijst te formatteren.
 
-Raadpleeg [deze sectie](../../configuration/using/form-structure.md#containers) voor meer informatie over containers en hoe u deze kunt gebruiken in invoerformulieren.
+Raadpleeg voor meer informatie over containers en hoe u deze kunt gebruiken in invoerformulieren [deze sectie](../../configuration/using/form-structure.md#containers).
 
 ## Formulieren bewerken {#editing-forms}
 
@@ -194,6 +194,6 @@ In de bewerkingszone kunt u de XML-inhoud van het invoerformulier invoeren:
 
 ![](assets/d_ncs_content_form12.png)
 
-Op het tabblad **[!UICONTROL Preview]** kunt u het invoerformulier weergeven:
+De **[!UICONTROL Preview]** kunt u het invoerformulier weergeven:
 
 ![](assets/d_ncs_content_form13.png)

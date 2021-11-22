@@ -21,11 +21,11 @@ Adobe Campaign biedt een add-on van het Beheer van de Reactie aan die u het succ
 
 ## Hypothese {#hypothesis-concept}
 
-De hypothesen kunnen over een bepaalde periode van de contactdatum worden gevormd om het gedrag van degenen te verminderen die na het ontvangen van een levering worden gericht. Deze hypothesen zijn gebaseerd op een **transactie** tabel die aankopen en details van deze aankopen bewaart.
+De hypothesen kunnen over een bepaalde periode van de contactdatum worden gevormd om het gedrag van degenen te verminderen die na het ontvangen van een levering worden gericht. Deze hypothesen zijn gebaseerd op een **transactie** een tabel waarin de aankopen en de details van deze aankopen worden opgeslagen.
 
-Hypothesen zijn beperkt in de tijd en kunnen worden toegepast op een controlegroep die moet worden vergeleken met de doelpopulatie. De resultaten van de hypothese worden verstrekt door **indicatoren** die automatisch worden bijgewerkt zodra de berekening volledig is. In de campagnerapporten zal rekening worden gehouden met de ROI die aan de hypothesen is gekoppeld.
+Hypothesen zijn beperkt in de tijd en kunnen worden toegepast op een controlegroep die moet worden vergeleken met de doelpopulatie. Hypothetische resultaten worden verstrekt door **indicatoren** die automatisch worden bijgewerkt wanneer de berekening is voltooid. In de campagnerapporten zal rekening worden gehouden met de ROI die aan de hypothesen is gekoppeld.
 
-Bovendien **reports** die van de Manager van de Reactie wordt voorzien laat u toe om de informatie samen te vatten verbonden aan omzetverhoging, margeberekening, evenals het rendement van de levering of de aanbieding.
+Ook de **rapporten** voorzien van de Manager van de Reactie laat u toe om de informatie samen te vatten met betrekking tot omzetverhoging, margeberekening, evenals het rendement van de levering of de aanbieding.
 
 Bovendien kunt u dankzij de detailregels voor aankopen uw hypothesen zo instellen dat deze zich bijvoorbeeld op één bepaald product concentreren.
 
@@ -33,7 +33,7 @@ Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde i
 
 >[!CAUTION]
 >
->De Manager van de reactie is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
+>Responsbeheer is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
 
 U kunt ook alle reacties berekenen voor het hele huishouden van de ontvanger die de levering of het aanbod heeft ontvangen.
 
@@ -41,7 +41,7 @@ Elke hypothese is gekoppeld aan een enkele transactietabel. Eén levering of aan
 
 ## Implementatiestappen {#method}
 
-Alvorens u begint de Manager van de Reactie te gebruiken, verwijs naar [Configuratie](configuration.md) en voer de noodzakelijke configuraties uit.
+Voordat u Reactiebeheer gaat gebruiken, raadpleegt u [Configuratie](configuration.md) en voert de nodige configuraties uit.
 
 Om een hypothese over een levering of een aanbieding te lanceren, moet u zijn context in een malplaatje bepalen dat voor elke hypothese zal worden gebruikt u creeert.
 

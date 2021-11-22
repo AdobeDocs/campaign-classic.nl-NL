@@ -26,9 +26,9 @@ De diensten van activa omvatten:
 
 Wanneer u een e-maillevering of een bestemmingspagina in Adobe Campaign bewerkt, kunt u elementen uit uw Adobe Experience Cloud-bibliotheken plaatsen. Afhankelijk van de oplossingen die u gebruikt, kunnen deze elementen worden opgeslagen in de kernservice Middelen of in Adobe Experience Manager Assets.
 
-De verschillende beschikbare bibliotheken worden beschreven in [dit document](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
+De verschillende beschikbare bibliotheken worden in detail beschreven in [dit document](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 
-Raadpleeg de sectie [Toegang tot middelen configureren](../../integrations/using/configuring-access-to-assets.md) voor meer informatie over de specifieke eigenschappen die aan elke bibliotheek zijn gekoppeld.
+Raadpleeg de [Toegang tot elementen configureren](../../integrations/using/configuring-access-to-assets.md) voor meer informatie over de specifieke eigenschappen die aan elke bibliotheek zijn gekoppeld.
 
 >[!NOTE]
 >

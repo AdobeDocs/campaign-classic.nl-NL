@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (Nm:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de bijbehorende tabellen die via de doeltoewijzing zijn gekoppeld (zie de sectie [Doeltoewijzing](../../configuration/using/target-mapping.md)).
+Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (NM:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de tabellen die via de doeltoewijzing zijn gekoppeld (zie de [Doeltoewijzing](../../configuration/using/target-mapping.md) ).
 
 Als u nieuwe rapporten wilt maken, raadpleegt u [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md).
 

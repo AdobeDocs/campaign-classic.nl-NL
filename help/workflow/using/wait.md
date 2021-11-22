@@ -17,18 +17,18 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Een **Wacht** activiteit activeert zijn overgang na een tijdvertraging van overal tussen een paar seconden en verscheidene maanden. Een wachttaak blokkeert de uitvoering van andere taken niet; de werkstroom kan taken parallel uitvoeren terwijl deze taak in behandeling is.
+A **Wachten** de activiteit activeert zijn overgang na een tijdvertraging van overal tussen een paar seconden en verscheidene maanden. Een wachttaak blokkeert de uitvoering van andere taken niet; de werkstroom kan taken parallel uitvoeren terwijl deze taak in behandeling is.
 
 U kunt het label invoeren en tijd wachten met de editor, zoals in het onderstaande voorbeeld:
 
 ![](assets/edit_wait.png)
 
-In het veld **[!UICONTROL Duration]** kan de waarde worden uitgedrukt in de eenheid van uw keuze: (volgens de regionale instellingen van de exploitant):
+In de **[!UICONTROL Duration]** -veld, kan de waarde worden uitgedrukt in de eenheid van uw keuze: (volgens de regionale instellingen van de exploitant):
 
-* Als er geen regionale instellingen zijn opgegeven: **s** voor seconden, **m** voor minuten, **h** voor uren, **d** voor dagen, **y** voor jaren. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de best leesbare eenheid.
+* Als er geen regionale instellingen zijn opgegeven: **s** gedurende seconden, **m** gedurende minuten, **h** gedurende uren, **d** dagen, **y** jarenlang. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de best leesbare eenheid.
 
    De standaardeenheid is de dag (**d**).
 
-* Als bijvoorbeeld de regionale instellingen worden ingesteld op &quot;Français&quot;: **s** voor seconden, **mn** voor minuten, **h** voor uren, **j** voor dagen, **m** voor maanden, **a** voor jaren. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de meest leesbare eenheid, zoals in het voorbeeld hierboven **90s** werd omgezet in **1mn 30s**.
+* Als bijvoorbeeld de regionale instellingen worden ingesteld op &quot;Français&quot;: **s** gedurende seconden, **mn** gedurende minuten, **h** gedurende uren, **j** dagen, **m** gedurende maanden, **a** jarenlang. Op het ogenblik van de goedkeuring wordt de waarde automatisch omgezet in de best leesbare eenheid, zoals in het bovenstaande voorbeeld **jaren 90** is omgezet in **1mn 30s**.
 
    De standaardeenheid is de dag (**d**).

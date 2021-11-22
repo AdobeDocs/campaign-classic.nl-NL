@@ -26,11 +26,11 @@ ht-degree: 5%
 
 ## Over dit gebruiksscenario {#about-this-use-case}
 
-In dit geval wordt beschreven hoe de **[!UICONTROL Merge]**-functionaliteit in de **[!UICONTROL Deduplication]**-activiteit moet worden gebruikt.
+In dit gebruiksgeval wordt beschreven hoe u het **[!UICONTROL Merge]** in de **[!UICONTROL Deduplication]** activiteit.
 
-Raadpleeg [deze sectie](deduplication.md#merging-fields-into-single-record) voor meer informatie over deze functionaliteit.
+Raadpleeg voor meer informatie over deze functionaliteit [deze sectie](deduplication.md#merging-fields-into-single-record).
 
-De activiteit **[!UICONTROL Deduplication]** wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensreeks. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
+De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensreeks. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
@@ -38,24 +38,24 @@ De activiteit **[!UICONTROL Deduplication]** wordt gebruikt voor het verwijderen
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 03-10-2020 | Bob |  | bob@mycompany.com |  | 888-888-888 |
 
-Met de **[!UICONTROL Merge]**-fonctionaliteit van de deduplicatieactiviteit kunt u een set regels voor de deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één resulterend gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
+Met de deduplicatieactiviteit **[!UICONTROL Merge]** Als lettertypen kunt u een set regels voor deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
 ## De functie Samenvoegen activeren {#activating-merge}
 
 
-Om de samenvoegfunctionaliteit toe te laten, moet u eerst **[!UICONTROL Deduplication]** activiteit vormen. Ga als volgt te werk om dit te doen:
+Om de samenvoegfunctionaliteit toe te laten, moet u eerst vormen **[!UICONTROL Deduplication]** activiteit. Ga als volgt te werk om dit te doen:
 
-1. Open de activiteit, dan klik **[geef configuratie]** verbinding uit.
+1. Open de activiteit en klik op de knop **[Configuratie bewerken]** koppeling.
 
-1. Selecteer het afstemmingsveld dat u voor de deduplicatie wilt gebruiken en klik op **[!UICONTROL Next]**. In dit voorbeeld willen we dedupliceren op basis van het e-mailveld.
+1. Selecteer het afstemmingsveld dat u wilt gebruiken voor de deduplicatie en klik op **[!UICONTROL Next]**. In dit voorbeeld willen we dedupliceren op basis van het e-mailveld.
 
    ![](assets/uc_merge_edit.png)
 
-1. Klik op de koppeling **[!UICONTROL Advanced parameters]** en activeer vervolgens de opties **[!UICONTROL Merge records]** en **[!UICONTROL Use several record merging criteria]**.
+1. Klik op de knop **[!UICONTROL Advanced parameters]** koppeling, activeer vervolgens de koppeling **[!UICONTROL Merge records]** en **[!UICONTROL Use several record merging criteria]** opties.
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. Het tabblad **[!UICONTROL Merge]** wordt toegevoegd aan het configuratiescherm **[!UICONTROL Deduplication]**. Dit tabblad wordt gebruikt om de gegevens op te geven die moeten worden samengevoegd bij het uitvoeren van deduplicatie.
+1. De **[!UICONTROL Merge]** wordt toegevoegd aan de **[!UICONTROL Deduplication]** configuratiescherm. Dit tabblad wordt gebruikt om de gegevens op te geven die moeten worden samengevoegd bij het uitvoeren van deduplicatie.
 
 ## Samenvoegen van velden configureren {#configuring-rules}
 
@@ -68,7 +68,7 @@ Hier volgen de regels die we willen gebruiken om de gegevens samen te voegen tot
 
 Om deze regels te vormen, volg deze stappen:
 
-1. Open het tabblad **[!UICONTROL Merge]** en klik op de knop **[!UICONTROL Add]**.
+1. Open de **[!UICONTROL Merge]** en klikt u op de knop **[!UICONTROL Add]** knop.
 
    ![](assets/uc_merge_add.png)
 

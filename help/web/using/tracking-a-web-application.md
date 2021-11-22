@@ -34,11 +34,11 @@ De belangrijkste verbeteringen in deze versie zijn:
 
    De belangrijkste indicatoren zijn:
 
-   * **Conversiesnelheid**: aantal personen dat alle stappen van een navigatiepad heeft weergegeven.
-   * **Stuitsnelheid**: aantal personen dat alleen de eerste stap heeft getoond
+   * **Omrekeningskoers**: aantal personen dat alle stappen van een navigatiepad heeft weergegeven.
+   * **Stuitpercentage**: aantal personen dat alleen de eerste stap heeft getoond
    * **Conversietrechter**: verliespercentage tussen elke stap.
 
-   Bovendien toont een **Sectordiagram** de populatie volgens zijn bron.
+   Bovendien **Sector** de typegrafiek geeft de populatie weer volgens de bron .
 
 ## Identificerend de verkeersbron {#identifying-the-traffic-source}
 
@@ -61,7 +61,7 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe C
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Als een webtoepassing wordt gemaakt met de HTML-inhoudeditor - **Digital Content Editor (DCE)** - worden trackingtags ingevoegd op het tabblad **[!UICONTROL Properties]** van de editor. Raadpleeg [deze sectie](about-campaign-html-editor.md) voor meer informatie over de Digital Content Editor (DCE).
+Wanneer een toepassing van het Web gebruikend de inhoudsredacteur van HTML wordt gecreeerd - **Digital Content Editor (DCE)** - tags voor bijhouden worden ingevoegd vanuit het **[!UICONTROL Properties]** tabblad van de editor. Voor meer informatie over de Digital Content Editor (DCE) raadpleegt u [deze sectie](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -69,6 +69,6 @@ Wanneer het gebruiken van de interface van het Web, moet het volgen markeringen 
 
 ![](assets/trackers_3.png)
 
-Met het pictogram **[!UICONTROL Display blocks]** kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
+De **[!UICONTROL Display blocks]** Met dit pictogram kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
 
 ![](assets/trackers_4.png)

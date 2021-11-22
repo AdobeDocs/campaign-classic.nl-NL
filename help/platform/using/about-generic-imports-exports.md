@@ -21,11 +21,11 @@ Adobe Campaign Classic levert generieke import en export. Zij staan u toe, bijvo
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-De generieke invoer en de uitvoer worden beheerd van **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** knoop van de boom van Adobe Campaign.
+Algemene invoer en uitvoer worden beheerd vanuit de **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** knooppunt van de boomstructuur Adobe Campaign.
 
 De stappen voor het uitvoeren van generieke import- en exportbewerkingen zijn als volgt:
 
-1. [Een import- of exportsjabloon](../../platform/using/creating-import-export-templates.md)  maken (optioneel).
-1. [Maak een import- of exporttaak](../../platform/using/creating-import-export-jobs.md).
-1. Configureer en voer de [import](../../platform/using/executing-import-jobs.md) of [export](../../platform/using/executing-export-jobs.md) taak uit.
-1. [De ](../../platform/using/monitoring-jobs-execution.md) uitvoering van de taak controleren.
+1. [Een import- of exportsjabloon maken](../../platform/using/creating-import-export-templates.md) (optioneel).
+1. [Een import- of exporttaak maken](../../platform/using/creating-import-export-jobs.md).
+1. Configureer en voer de [import](../../platform/using/executing-import-jobs.md) of [export](../../platform/using/executing-export-jobs.md) taak.
+1. [Monitor](../../platform/using/monitoring-jobs-execution.md) de uitvoering van de taak.

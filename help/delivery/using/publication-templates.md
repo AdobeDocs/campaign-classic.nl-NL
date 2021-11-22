@@ -29,7 +29,7 @@ De publicatiesjabloon is de identiteitskaart van de te publiceren inhoud. Zij ve
 
 Een publicatiesjabloon wordt aangeduid met de naam en naamruimte ervan.
 
-De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de naamruimte en de naam die door een dubbele punt wordt gescheiden. bijvoorbeeld: **cus:nieuwsbrief**.
+De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de naamruimte en de naam die door een dubbele punt wordt gescheiden. bijvoorbeeld: **focus:nieuwsbrief**.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de
 
 ## De sjabloon maken en configureren {#creating-and-configuring-the-template}
 
-Publicatiesjablonen worden standaard opgeslagen in het knooppunt **[!UICONTROL Administration > Configuration > Publication templates]**. Als u een nieuwe sjabloon wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met sjablonen.
+Publicatiesjablonen worden standaard opgeslagen in het dialoogvenster **[!UICONTROL Administration > Configuration > Publication templates]** knooppunt. Als u een nieuwe sjabloon wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met sjablonen.
 
 Als u de publicatiesjabloon wilt configureren, vult u de naam van de sjabloon (d.w.z. de identificatiecode die bestaat uit de naam en de naamruimte), het label, het gegevensschema en het invoerformulier waaraan de sjabloon is gekoppeld.
 
@@ -47,35 +47,35 @@ Als u de publicatiesjabloon wilt configureren, vult u de naam van de sjabloon (d
 >
 >Het label wordt weergegeven wanneer inhoud wordt gemaakt op basis van deze publicatiesjabloon.
 
-Met de optie **Status controleren om het genereren van inhoud te valideren** wordt een controle van de status &quot;Gevalideerd&quot; van de inhoudsinstanties gedwongen om het genereren van bestanden toe te staan. Raadpleeg [Publicatie](#publication) voor meer informatie hierover.
+De **Status controleren om het genereren van inhoud te valideren** Hiermee wordt een controle van de status &quot;Gevalideerd&quot; van de inhoudsinstanties afgedwongen om het genereren van bestanden toe te staan. Raadpleeg voor meer informatie hierover [Publicatie](#publication).
 
 Voor elk uitvoerdocument moet een transformatiesjabloon worden toegevoegd. U kunt zo veel transformatiesjablonen maken als nodig is.
 
-Het veld **[!UICONTROL Name of template]** is een gratis label dat het type rendering bij de uitvoer beschrijft. Voor elke transformatiesjabloon zijn de publicatie-instellingen beschikbaar op de tabbladen.
+De **[!UICONTROL Name of template]** field is een gratis label dat het type rendering bij de uitvoer beschrijft. Voor elke transformatiesjabloon zijn de publicatie-instellingen beschikbaar op de tabbladen.
 
 ### Renderen {#rendering}
 
-Kies het tabblad **[!UICONTROL Rendering]**:
+De **[!UICONTROL Rendering]** kiest u:
 
 * het type rendering dat wordt gebruikt voor de projectie van het uitvoerdocument: XSL-opmaakmodel of JavaScript-sjabloon,
-* de indeling van het uitvoerdocument: HTML, Text, XML of RTF,
+* de indeling van het uitvoerdocument: HTML, Tekst, XML of RTF,
 * de sjabloon die de constructiegegevens bevat, d.w.z. de te gebruiken stijlpagina of JavaScript-sjabloon.
 
 ### Publicatie {#publication}
 
-Bij publicatie wordt het uitvoerdocument gegenereerd in de vorm van een bestand als het geselecteerde type **[!UICONTROL File]** is.
+Bij publicatie wordt het uitvoerdocument gegenereerd in de vorm van een bestand, als het geselecteerde type **[!UICONTROL File]**.
 
 ![](assets/d_ncs_content_model2.png)
 
 De volgende publicatieopties zijn beschikbaar:
 
-* De tekenset voor het coderen van uitvoerbestanden kan worden afgedwongen via het veld **[!UICONTROL Encoding]**. De tekenset Latin 1 (1252) wordt standaard gebruikt.
-* Met de optie **[!UICONTROL Multi-file generation]** activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om mini-sites te genereren op basis van een inhoudsblok. Raadpleeg [Genereren van meerdere bestanden](#multi-file-generation) voor meer informatie hierover.
-* Het veld **[!UICONTROL Location]** bevat de naam van het uitvoerbestand. De naam kan uit variabelen worden samengesteld om een automatische filename te produceren.
+* De tekenset voor het coderen van het uitvoerbestand kan worden geforceerd via de **[!UICONTROL Encoding]** veld. De tekenset Latin 1 (1252) wordt standaard gebruikt.
+* De **[!UICONTROL Multi-file generation]** Hiermee activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om mini-sites te genereren op basis van een inhoudsblok. zie voor meer informatie : [Meerdere bestanden genereren](#multi-file-generation).
+* De **[!UICONTROL Location]** bevat de naam van het uitvoerbestand. De naam kan uit variabelen worden samengesteld om een automatische filename te produceren.
 
-   Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`**, waarbij **`<xpath>`** het pad is van een veld van het gegevensschema van de publicatiesjabloon.
+   Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`**, waarbij **`<xpath>`** Dit is het pad van een veld in het gegevensschema van de publicatiesjabloon.
 
-   De naam van een bestand kan een datumveld zijn. Om dit gebied correct te formatteren, gebruik **$date-format** functie, gebruikend de weg van het gebied en het outputformaat als parameters.
+   De naam van een bestand kan een datumveld zijn. Als u dit veld op de juiste wijze wilt opmaken, gebruikt u de opdracht **$date-format** gebruiken, waarbij het pad van het veld en de uitvoerindeling als parameters worden gebruikt.
 
    Standaard gebruikt de constructieindeling van de bestandsnaam de variabelen in de velden &quot;@name&quot; en &quot;@date&quot;:
 
@@ -87,17 +87,17 @@ De volgende publicatieopties zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Raadpleeg [Een inhoudsinstantie maken](using-a-content-template.md#creating-a-content-instance) voor meer informatie over het genereren van inhoud.
+   >Voor meer informatie over het genereren van inhoud raadpleegt u [Inhoudsinstanties maken](using-a-content-template.md#creating-a-content-instance).
 
 ### Levering {#delivery}
 
-Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de inhoud te starten. De inhoud van de e-mail wordt automatisch ingevuld op basis van de uitvoerindeling (HTML of Tekst).
+Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de inhoud te starten. De inhoud van het e-mailbericht wordt automatisch ingevuld op basis van de uitvoerindeling (HTML of Tekst).
 
 ![](assets/d_ncs_content_model3.png)
 
 >[!NOTE]
 >
->Raadpleeg [Inhoudsinstantie leveren](using-a-content-template.md#delivering-a-content-instance) voor een voorbeeld van het maken van een levering op basis van inhoud.
+>Voor een voorbeeld van het maken van leveringen op basis van inhoud raadpleegt u [Inhoudsinstantie leveren](using-a-content-template.md#delivering-a-content-instance).
 
 ### aggregator {#aggregator}
 
@@ -109,7 +109,7 @@ Als u meerdere bestanden wilt genereren, selecteert u de optie **[!UICONTROL Mul
 
 De partitioneringstag die in de stijlpagina moet worden geïntegreerd, ziet er als volgt uit:
 
-**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** waarbij  **`<name_of_file>`** is de bestandsnaam van de pagina die moet worden gegenereerd.
+**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** waar **`<name_of_file>`** is de bestandsnaam van de pagina die moet worden gegenereerd.
 
 **Voorbeeld:** Meerdere bestanden genereren met het schema &quot;cus:book&quot;.
 
@@ -173,12 +173,12 @@ De partitioneringstag wordt gevuld aan het begin van de pagina die moet worden o
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-De bestandsnaam wordt samengesteld met de variabele **$(path)** die het publicatiepad bevat en **`<xsl:value-of select="@id" />`**, die overeenkomt met de id van het hoofdstuk in het invoerdocument.
+De bestandsnaam wordt samengesteld met de **$(pad)** variabele met het publicatiepad en **`<xsl:value-of select="@id" />`**, die overeenkomt met de id van het hoofdstuk in het invoerdocument.
 
 In het publicatiemodel moeten de twee opmaakmodellen &quot;cus:book.xsl&quot; en &quot;cus:chapter.xsl&quot; worden ingevuld.
 
-De optie **[!UICONTROL Multi-file generation]** moet actief zijn op het model van de hoofdstuktransformatie:
+De **[!UICONTROL Multi-file generation]** Deze optie moet actief zijn in het transformatiemodel van het hoofdstuk:
 
 ![](assets/d_ncs_content_chunk2.png)
 
-Het veld **[!UICONTROL Location]** wordt niet gebruikt bij het genereren van meerdere bestanden, maar u moet dit veld toch vullen om een fout bij het publiceren te voorkomen.
+De **[!UICONTROL Location]** wordt niet gebruikt bij het genereren van meerdere bestanden, maar u moet dit veld toch vullen om een fout bij het publiceren te voorkomen.

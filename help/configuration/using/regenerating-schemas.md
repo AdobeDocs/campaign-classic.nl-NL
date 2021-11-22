@@ -20,10 +20,10 @@ ht-degree: 7%
 Wanneer u een schema wijzigt en de wijzigingen opslaat, wordt het uitgebreide schema automatisch gegenereerd. Desalniettemin, kunt u schema&#39;s moeten manueel regenereren om wijzigingen toe te passen. Dit doet u als volgt:
 
 1. Selecteer de schema&#39;s die u opnieuw moet genereren.
-1. Klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]**.
-1. Klik **[!UICONTROL OK]** om het proces te bevestigen en te lanceren.
+1. Klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** .
+1. Klikken **[!UICONTROL OK]** om het proces te bevestigen en te starten.
 
-U kunt de structuur van het gegenereerde schema vervolgens controleren op de tabbladen Voorbeeld en Documentatie. Raadpleeg voor meer informatie de sectie [Principles](../../configuration/using/data-schemas.md#principles).
+U kunt de structuur van het gegenereerde schema vervolgens controleren op de tabbladen Voorbeeld en Documentatie. Raadpleeg voor meer informatie de [Beginselen](../../configuration/using/data-schemas.md#principles) sectie.
 
 >[!NOTE]
 >

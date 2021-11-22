@@ -31,16 +31,16 @@ De workflowcyclus bestaat uit drie hoofdstappen.
 
    Een workflow is &#39;voltooid&#39; wanneer er geen taken meer worden uitgevoerd of wanneer een operator de instantie expliciet heeft gestopt.
 
-De **Start**- en **Delivery**-activiteiten worden bijvoorbeeld beschreven terwijl de **Approval**-activiteit knippert in de onderstaande workflow.
+De **Start** en **Aflevering** activiteiten worden beschreven terwijl de **Goedkeuring** activiteit knippert in de onderstaande workflow.
 
 ![](assets/new-workflow-6.png)
 
-Dit betekent dat de eerste twee activiteiten met succes zijn uitgevoerd en dat de goedkeuring in uitvoering is, d.w.z. dat zij is gecreëerd maar nog niet is voltooid.
+Dit betekent dat de eerste twee activiteiten met succes zijn uitgevoerd en dat de goedkeuring bezig is, d.w.z. dat zij is gecreëerd maar nog niet is voltooid.
 
-De tekens **574 -Ok** die boven de overgang na de activiteit **Delivery** worden weergegeven, betekenen dat de voorbereiding van de levering gericht is op 574 ontvangers en dat de bewerking met succes is voltooid. Deze informatie, die aan de overgangen wordt toegevoegd wanneer zij worden uitgevoerd, wordt berekend door de activiteiten die gegevens verwerken.
+De tekens **574 - OK** weergegeven boven de overgang na de overgang **Aflevering** de activiteit houdt in dat de voorbereiding van de levering gericht is op 574 ontvangers en dat de bewerking met succes is voltooid. Deze informatie, die aan de overgangen wordt toegevoegd wanneer zij worden uitgevoerd, wordt berekend door de activiteiten die gegevens verwerken.
 
-De werkstroom is begonnen en wacht op een exploitant die tot de groep behoort die in **Goedkeuring** activiteit wordt gespecificeerd om een besluit te nemen. De tot de groep behorende exploitanten die een e-mailadres of mobiel telefoonnummer hebben, worden op de hoogte gesteld.
+De workflow wordt gestart en er wordt gewacht op een operator die behoort tot de groep die in het dialoogvenster **Goedkeuring** activiteiten om een besluit te nemen. De tot de groep behorende exploitanten die een e-mailadres of mobiel telefoonnummer hebben, worden op de hoogte gesteld.
 
-Operator management is gedetailleerd in deze [sectie](../../platform/using/access-management.md).
+Het beheer van de exploitant wordt gedetailleerd in dit [sectie](../../platform/using/access-management.md).
 
-Raadpleeg [deze sectie](monitoring-workflow-execution.md) voor meer informatie over hoe u workflows kunt controleren.
+Raadpleeg voor meer informatie over hoe u uw workflows kunt controleren [deze sectie](monitoring-workflow-execution.md).

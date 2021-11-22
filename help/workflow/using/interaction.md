@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de **Aanbiedingsengine (Interaction)**-invoegtoepassing.
+De hieronder beschreven workflows worden geïnstalleerd met de **Aanbiedingsengine (interactie)** standaard invoegtoepassing.
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
@@ -36,12 +36,12 @@ Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagnev
   <tr> 
    <td> <span class="uicontrol">Volledige geaggregeerde berekening (voorzettingskubus)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Deze workflow werkt het <strong>Volledige</strong> aggregaat bij voor de <strong>Propositie aanbieding</strong> kubus. Het wordt teweeggebracht elke dag om 6 uur door gebrek. In dit aggregaat worden de volgende afmetingen vastgelegd: Kanaal, levering, marketingaanbieding en datum.<br /> Het  <strong>voorstel van de </strong> Aanbieding wordt dan gebruikt om rapporten te produceren die op voorstellen worden gebaseerd. U kunt meer over kubussen in <a href="../../reporting/using/about-cubes.md">deze sectie</a> leren.<br /> </td> 
+   <td> Deze workflow werkt de <strong>Volledig</strong> aggregaat voor de <strong>Voorstel</strong> kubus. Het wordt teweeggebracht elke dag om 6 uur door gebrek. In dit aggregaat worden de volgende afmetingen vastgelegd: Kanaal, levering, marketingaanbieding en datum.<br /> De <strong>Voorstel</strong> kube wordt dan gebruikt om rapporten te produceren die op aanbiedingen worden gebaseerd. Meer informatie over kubussen vindt u in <a href="../../reporting/using/about-cubes.md">deze sectie</a>.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter volledige geaggregeerde berekening</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> Deze workflow werkt het <strong>Volledige</strong> aggregaat voor de <strong>Berichtencentrum</strong> kubus bij. Deze wordt standaard elke dag om 3 uur geactiveerd. In dit aggregaat worden de volgende afmetingen vastgelegd: Het type Kanaal, Datum, Status en Gebeurtenis.<br /> Het  <strong>centrum van het Bericht </strong> wordt dan gebruikt om rapporten te produceren die op gebeurtenissen worden gebaseerd. U kunt meer over kubussen in <a href="../../reporting/using/about-cubes.md">deze sectie</a> leren.<br /> </td> 
+   <td> Deze workflow werkt de <strong>Volledig</strong> aggregaat voor de <strong>Berichtencentrum</strong> kubus. Deze wordt standaard elke dag om 3 uur geactiveerd. In dit aggregaat worden de volgende afmetingen vastgelegd: Het type Kanaal, Datum, Status en Gebeurtenis.<br /> De <strong>Berichtencentrum</strong> kubus wordt dan gebruikt om rapporten te produceren die op gebeurtenissen worden gebaseerd. Meer informatie over kubussen vindt u in <a href="../../reporting/using/about-cubes.md">deze sectie</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 

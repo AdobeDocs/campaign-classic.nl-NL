@@ -21,10 +21,10 @@ U kunt de uitvoering van uw import- en exporttaken rechtstreeks volgen vanuit de
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* Op het tabblad **[!UICONTROL Journal]** kunt u logberichten over uitvoering bekijken.
-* Het tabblad **[!UICONTROL Rejects]** bevat de geweigerde records. Zie [deze sectie](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* De **[!UICONTROL Journal]** kunt u logberichten over uitvoering bekijken.
+* De **[!UICONTROL Rejects]** bevat de geweigerde records. Zie [deze sectie](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
-Op het tabblad **[!UICONTROL General]** geeft het veld **[!UICONTROL Status]** de huidige status van een taak aan.
+In de **[!UICONTROL General]** de **[!UICONTROL Status]** wordt de huidige status van een taak aangegeven.
 
 Elke status wordt vertegenwoordigd door een speciaal pictogram en label. De statussen en hun pictogrammen worden hieronder weergegeven:
 
@@ -40,7 +40,7 @@ Elke status wordt vertegenwoordigd door een speciaal pictogram en label. De stat
 
 * **Annuleren**
 
-   Klik op de knop **[!UICONTROL Cancel]**: de actieve taak wordt geannuleerd.
+   Klik op de knop **[!UICONTROL Cancel]** knop: de actieve taak wordt geannuleerd.
 
 * **Annulering wordt uitgevoerd**
 
@@ -48,11 +48,11 @@ Elke status wordt vertegenwoordigd door een speciaal pictogram en label. De stat
 
 * **Onderbroken**
 
-   Klik op **[!UICONTROL Pause]**: de baan wordt geschorst.
+   Klikken **[!UICONTROL Pause]**: de baan wordt geschorst.
 
 * **Gepauzeerd**
 
-   Klik op **[!UICONTROL Pause]**: de baan is opgeschort. U kunt de toepassing opnieuw starten door op **[!UICONTROL Start]** te klikken.
+   Klikken **[!UICONTROL Pause]**: de baan is opgeschort. U kunt de toepassing opnieuw starten door op **[!UICONTROL Start]**.
 
 * **Voltooid**
 

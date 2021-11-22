@@ -23,9 +23,9 @@ Het volgen is op berichten van toepassing, maar het Web volgen laat u controlere
 
 >[!NOTE]
 >
->De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Raadpleeg [deze sectie](tracking-personalized-links.md) voor meer informatie over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden.
+>De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Raadpleeg voor meer informatie over het toevoegen van koppelingen in e-mailberichten die u kunt aanpassen en die ondersteuning bieden voor bijhouden [deze sectie](tracking-personalized-links.md).
 
-We raden u ten zeerste aan URL&#39;s op te nemen in scheidingstekens op het tabblad **[!UICONTROL Text content]** voordat u de volgende formule toepast. De URL-scheidingstekens die u op dit tabblad invoert, worden door Adobe Campaign gebruikt om URL&#39;s binnen tekenreeksen te identificeren. U kunt deze paren scheidingstekens gebruiken:
+We raden u ten zeerste aan URL&#39;s op te nemen in scheidingstekens in het dialoogvenster **[!UICONTROL Text content]** gebruiken voordat u de volgende formule toepast. De URL-scheidingstekens die u op dit tabblad invoert, worden door Adobe Campaign gebruikt om URL&#39;s binnen tekenreeksen te identificeren. U kunt deze paren scheidingstekens gebruiken:
 * Haakjes ( )
 * Haakjes [ ]
 * Accolades { }
@@ -37,7 +37,7 @@ In dit voorbeeld wordt de URL https://www.adobe.com gevolgd door een puntkomma. 
 
 Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de manier waarop URL&#39;s worden bijgehouden aan te passen:
 
-1. Selecteer de optie **[!UICONTROL Display URLs]** in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
+1. Selecteer **[!UICONTROL Display URLs]** in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -59,7 +59,7 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    >
    >De labels van de bijgehouden URL&#39;s en de labels kunnen worden gewijzigd om het lezen van informatie bij het bijhouden van leveringen te vereenvoudigen. Twee URL&#39;s of twee labels met dezelfde naam worden bij het berekenen van het aantal klikken opgeteld.
 
-1. Wijzig zo nodig de modus Tekstspatiëring en selecteer een nieuwe modus in de kolom **[!UICONTROL Tracking]** die overeenkomt met de doelkoppeling, zoals hieronder wordt getoond:
+1. Wijzig zo nodig de modus Tekstspatiëring en selecteer een nieuwe modus in het dialoogvenster **[!UICONTROL Tracking]** kolom die overeenkomt met de doelkoppeling, zoals hieronder wordt weergegeven:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -72,4 +72,4 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    * **[!UICONTROL Opt-out]** : beschouwt deze URL als een opt-out- of niet-abonnements-URL.
    * **[!UICONTROL Mirror page]** : beschouwt deze URL als een URL van een spiegelpagina.
 
-1. Daarnaast kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de kolom **[!UICONTROL Category]**. Deze categorieën kunnen rapporten, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)) worden getoond. Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (zie [Opsommingen beheren](../../platform/using/managing-enumerations.md)).
+1. Bovendien kunt u voor elke bijgehouden URL een categorie selecteren in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Category]** kolom. Deze categorieën kunnen rapporten weergeven, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (zie [Opsommingen beheren](../../platform/using/managing-enumerations.md)).

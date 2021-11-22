@@ -25,7 +25,7 @@ Sommige consolevelden zijn gedefinieerd met dit type opsommingen. Opsommingen wo
 
 ## Toegang tot waarden {#access-to-values}
 
-De waarden voor dit type veld worden gedefinieerd en het algemene beheer van deze velden (het toevoegen/verwijderen van een waarde) wordt uitgevoerd via het knooppunt **[!UICONTROL Administration > Platform > Enumerations]** van de structuur.
+De waarden voor dit type veld worden gedefinieerd en het algemene beheer van deze velden (het toevoegen/verwijderen van een waarde) wordt uitgevoerd via de **[!UICONTROL Administration > Platform > Enumerations]** knooppunt van de structuur.
 
 ![](assets/s_ncs_user_itemized_list_node.png)
 
@@ -38,11 +38,11 @@ De waarden voor dit type veld worden gedefinieerd en het algemene beheer van dez
 
    ![](assets/s_ncs_user_itemized_list.png)
 
-   Als de optie **[!UICONTROL Open]** is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
+   Als de **[!UICONTROL Open]** is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
 
    ![](assets/s_ncs_user_itemized_list_new_value.png)
 
-* Als de optie **[!UICONTROL Closed]** is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
+* Als de **[!UICONTROL Closed]** is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
 
 ## Gegevens standaardiseren {#standardizing-data}
 
@@ -56,8 +56,8 @@ In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ing
 
 De ingevoerde waarde is dan:
 
-* Toegevoegd aan de gespecificeerde lijstwaarden: in dat geval moet de optie **[!UICONTROL Open]** zijn geselecteerd,
-* of automatisch vervangen door de overeenkomstige alias: In dit geval moet dit geval worden gedefinieerd op het tabblad **[!UICONTROL Alias]** van de gespecificeerde lijst,
+* Toegevoegd aan de gespecificeerde lijstwaarden: in dit geval **[!UICONTROL Open]** moet worden geselecteerd,
+* of automatisch vervangen door de overeenkomstige alias: In dat geval moet dit geval worden gedefinieerd in het **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
 * of is opgeslagen in de lijst met aliassen: er wordt later een alias aan toegewezen.
 
    >[!NOTE]
@@ -66,17 +66,17 @@ De ingevoerde waarde is dan:
 
 ### Aliassen gebruiken {#using-aliases}
 
-Met de optie **[!UICONTROL Alias cleansing]** kunt u aliassen gebruiken voor de geselecteerde gespecificeerde lijst. Als deze optie is geselecteerd, wordt de tab **[!UICONTROL Alias]** onder in het venster weergegeven.
+De optie **[!UICONTROL Alias cleansing]** maakt het mogelijk aliassen te gebruiken voor de geselecteerde gespecificeerde lijst. Als deze optie is geselecteerd, wordt **[!UICONTROL Alias]** wordt onder in het venster weergegeven.
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
 #### Een alias maken {#creating-an-alias}
 
-Klik op **[!UICONTROL Add]** om een alias te maken.
+Als u een alias wilt maken, klikt u op **[!UICONTROL Add]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
-Voer de alias die u wilt omzetten en de waarde die u wilt toepassen in en klik op **[!UICONTROL Ok]**.
+Voer de alias die u wilt omzetten en de waarde in die u wilt toepassen en klik op **[!UICONTROL Ok]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_2.png)
 
@@ -88,7 +88,7 @@ Controleer parameters voordat u deze bewerking bevestigt.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Wanneer een gebruiker de waarde **NEILSEN** invoert in een veld &quot;company&quot; (in de Adobe Campaign-console of in een formulier), wordt deze automatisch vervangen door de waarde **NIELSEN Ltd**. De vervanging van de waarde wordt uitgevoerd door **Alias het zuiveren** werkschema. Zie [Gegevens opschonen](#running-data-cleansing) uitvoeren.
+Wanneer een gebruiker de waarde invoert **NEILSEN** in een &quot;bedrijf&quot;gebied (in de console van Adobe Campaign of in een vorm), zal het automatisch door de waarde vervangen **NIELSEN Ltd**. De vervanging van de waarde wordt uitgevoerd door **Aliasreiniging** workflow. Zie [Gegevens wissen](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -102,7 +102,7 @@ Kies de waarden die u wilt omzetten en klik op **[!UICONTROL Next]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_transform.png)
 
-Klik op **[!UICONTROL Start]** om de conversie uit te voeren.
+Klikken **[!UICONTROL Start]** om de conversie uit te voeren.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail1.png)
 
@@ -112,21 +112,21 @@ Zodra de uitvoering is voltooid, wordt de alias toegevoegd aan de lijst met alia
 
 #### Aliashits ophalen {#retrieving-alias-hits}
 
-De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Als de gebruiker een waarde invoert die niet is opgenomen in de gespecificeerde lijst, wordt de waarde opgeslagen op het tabblad **[!UICONTROL Alias]**.
+De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Wanneer de gebruiker een waarde invoert die niet in de gespecificeerde lijst is opgenomen, wordt de waarde opgeslagen in het dialoogvenster **[!UICONTROL Alias]** tab.
 
-De **technische workflow voor Alias-zuivering** herstelt deze waarden elke avond om de gespecificeerde lijst bij te werken. Zie [Gegevens opschonen](#running-data-cleansing) uitvoeren
+De **Aliasreiniging** de technische workflow herstelt deze waarden elke nacht om de gespecificeerde lijst bij te werken. Zie [Gegevens wissen](#running-data-cleansing)
 
-Indien nodig kan in de kolom **[!UICONTROL Hits]** het aantal keren worden weergegeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg [Invoerinstanties berekenen](#calculating-entry-occurrences) voor meer informatie hierover.
+Indien nodig **[!UICONTROL Hits]** kan het aantal keren weergeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg voor meer informatie hierover [Voorvallen van item berekenen](#calculating-entry-occurrences).
 
 ### Gegevens wissen {#running-data-cleansing}
 
-De gegevens worden schoongemaakt door het **[!UICONTROL Alias cleansing]** technische werkschema. De configuraties die voor opsommingen worden gedefinieerd, worden tijdens de uitvoering toegepast. Raadpleeg [Workflow voor Aliasreiniging](#alias-cleansing-workflow).
+De gegevens worden gewist door de **[!UICONTROL Alias cleansing]** technische workflow. De configuraties die voor opsommingen worden gedefinieerd, worden tijdens de uitvoering toegepast. Zie [Workflow voor Aliasverwijdering](#alias-cleansing-workflow).
 
-Reiniging kan worden geactiveerd via de koppeling **[!UICONTROL Cleanse values...]**.
+De reiniging kan worden geactiveerd via de **[!UICONTROL Cleanse values...]** koppeling.
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-Met de koppeling **[!UICONTROL Advanced parameters...]** kunt u de datum instellen vanaf welke verzamelde waarden in aanmerking worden genomen.
+De **[!UICONTROL Advanced parameters...]** Met de koppeling kunt u de datum instellen vanaf welke verzamelde waarden in aanmerking worden genomen.
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
@@ -134,13 +134,13 @@ Klik op de knop **[!UICONTROL Start]** om gegevens te wissen.
 
 #### Voorvallen van item berekenen {#calculating-entry-occurrences}
 
-Het **[!UICONTROL Alias]** subtabblad van een gespecificeerde lijst kan het aantal exemplaren van een alias onder alle ingevoerde waarden tonen. Deze informatie is een schatting en wordt weergegeven in de kolom **[!UICONTROL Hits]**.
+De **[!UICONTROL Alias]** Het subtabblad van een gespecificeerde lijst kan het aantal exemplaren van een alias onder alle ingevoerde waarden weergeven. Deze informatie is een schatting en wordt weergegeven in de **[!UICONTROL Hits]** kolom.
 
 >[!CAUTION]
 >
 >Het berekenen van voorvallen van aliasinggegevens kan lang duren. Daarom is voorzichtigheid geboden wanneer het gebruiken van deze functie.
 
-U kunt aanraakberekening handmatig uitvoeren via de koppeling **[!UICONTROL Cleanse values...]**. Klik hiertoe op de koppeling **[!UICONTROL Advanced parameters...]** en selecteer de gewenste optie(s).
+U kunt de aanraakberekening handmatig uitvoeren via de **[!UICONTROL Cleanse values...]** koppeling. Om dit te doen, klik **[!UICONTROL Advanced parameters...]** en selecteer de gewenste optie(s).
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
@@ -149,15 +149,15 @@ U kunt aanraakberekening handmatig uitvoeren via de koppeling **[!UICONTROL Clea
 
 U kunt ook een specifieke workflow maken, zodat de berekening automatisch gedurende een bepaalde periode wordt uitgevoerd, bijvoorbeeld eenmaal per week.
 
-Hiertoe maakt u een kopie van de **[!UICONTROL Alias cleansing]**-workflow, wijzigt u de planner en gebruikt u de volgende instellingen in de **[!UICONTROL Enumeration value cleansing]**-activiteit:
+Hiertoe maakt u een kopie van het **[!UICONTROL Alias cleansing]** de werkstroom, verandert de planner en gebruikt de volgende montages in **[!UICONTROL Enumeration value cleansing]** activiteit:
 
-* **-** updateHitsto het aantal aliashits bij te werken,
-* **-updateHits:alle** aliashits opnieuw berekenen.
+* **-updateHits** om het aantal aliashits bij te werken,
+* **-updateHits:full** om alle aliashits opnieuw te berekenen.
 
 #### Workflow voor Aliasverwijdering {#alias-cleansing-workflow}
 
-Met de **Alias-reinigingsmethode**-workflow worden opsommingswaarden gewist. Standaard wordt de transactie dagelijks uitgevoerd.
+De **Aliasreiniging** in de workflow worden opsommingswaarden gewist. Standaard wordt de transactie dagelijks uitgevoerd.
 
-Het wordt betreden via de **[!UICONTROL Administration > Production > Technical workflows]** knoop.
+Het is toegankelijk via de **[!UICONTROL Administration > Production > Technical workflows]** knooppunt.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)

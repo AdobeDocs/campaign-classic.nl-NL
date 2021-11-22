@@ -17,16 +17,16 @@ ht-degree: 17%
 
 ![](../../assets/common.svg)
 
-Wanneer de levering is verzonden en het volgen geactiveerd, is de **[!UICONTROL Tracking]** technische werkschema verantwoordelijk voor het terugwinnen van de het volgen gegevens. Deze wordt standaard per uur uitgevoerd.
+Wanneer de levering is verzonden en het volgen geactiveerd, **[!UICONTROL Tracking]** de technische werkstroom is belast met het ophalen van de volgende gegevens. Deze wordt standaard per uur uitgevoerd.
 
-Deze informatie wordt weergegeven op het tabblad **[!UICONTROL Tracking]** van het profiel van ontvangers die de levering als doel heeft, zoals in het volgende voorbeeld:
+Deze informatie wordt weergegeven in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van de ontvangers voor wie de levering bestemd is, zoals in het volgende voorbeeld:
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-Het is ook toegankelijk via het **[!UICONTROL Tracking]** lusje van de levering.
+Het is ook toegankelijk via de **[!UICONTROL Tracking]** tabblad van de levering.
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->Als u het **[!UICONTROL Tracking]** lusje van een levering niet kunt zien, betekent het dat het volgen niet is geactiveerd. Zie [deze sectie](how-to-configure-tracked-links.md).
+>Als u de **[!UICONTROL Tracking]** -tab van een levering, betekent dit dat de tracering niet is geactiveerd. Zie [deze sectie](how-to-configure-tracked-links.md).

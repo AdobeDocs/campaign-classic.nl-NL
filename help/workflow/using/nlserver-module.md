@@ -17,6 +17,6 @@ ht-degree: 27%
 
 ![](../../assets/common.svg)
 
-Een **nlserver module** activiteit lanceert een nlserver module met de parameters die in het centrale venster worden gespecificeerd.
+An **nlserver-module** activiteit lanceert een nlserver module met de parameters die in het centrale venster worden gespecificeerd.
 
 ![](assets/nlserver_module_edit.png)

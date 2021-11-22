@@ -19,6 +19,6 @@ ht-degree: 15%
 
 Adobe Campaign biedt verschillende rapporten waarmee u de activiteit en het vloeiend functioneren van uitvoeringsinstanties kunt beheren.
 
-Deze rapporten van het Centrum van Bericht kunnen van het **[!UICONTROL Reports]** lusje van **controleinstantie** worden betreden.
+Deze rapporten van het Centrum van Bericht kunnen van **[!UICONTROL Reports]** tabblad van het dialoogvenster **besturingsinstantie**.
 
 ![](assets/messagecenter_reporting_002.png)

@@ -5,7 +5,8 @@ description: Leer hoe u beveiligingszones kunt configureren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 0%
@@ -18,15 +19,15 @@ ht-degree: 0%
 
 Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
-Operatoren zijn verbonden met een beveiligingszone vanuit het profiel in de console, toegankelijk via het knooppunt **[!UICONTROL Administration > Access management > Operators]**. [Meer info](#linking-a-security-zone-to-an-operator).
+De exploitanten worden verbonden met een veiligheidsstreek van zijn profiel in de console, die in **[!UICONTROL Administration > Access management > Operators]** knooppunt. [Meer info](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
->Deze procedure is beperkt tot **on-premise** plaatsingen.
+>Deze procedure is beperkt tot **op locatie** implementaties.
 >
->Als **ontvangen** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->Andere **hybride/gehoste** klanten moeten zich tot het ondersteuningsteam van Adobe richten om IP aan de lijst van gewenste personen toe te voegen.
+>Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
 
 ## Beveiligingszones maken {#creating-security-zones}
 
@@ -37,7 +38,7 @@ Een zone wordt gedefinieerd door:
 
 Beveiligingszones zijn onderling vergrendeld, wat betekent dat het definiëren van een nieuwe zone binnen een andere zone het aantal operatoren verlaagt dat zich daarop kan aanmelden, terwijl de rechten die aan elke operator zijn toegewezen, worden vergroot.
 
-De zones moeten tijdens serverconfiguratie, in **serverConf.xml** dossier worden bepaald. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in [deze sectie](../../installation/using/the-server-configuration-file.md).
+Zones moeten tijdens de serverconfiguratie worden gedefinieerd, in de **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** zijn vermeld in [deze sectie](../../installation/using/the-server-configuration-file.md).
 
 Elke zone definieert rechten, zoals:
 
@@ -49,16 +50,16 @@ Elke zone definieert rechten, zoals:
 
 >[!NOTE]
 >
->**Elke exploitant moet met een zone** worden verbonden. Als het IP adres van de exploitant tot de waaier behoort die door de streek wordt bepaald, kan de exploitant aan de instantie het programma openen.\
->Het IP van de exploitant adres kan in verscheidene streken worden bepaald. In dit geval ontvangt de operator de **set** beschikbare rechten voor elke zone.
+>**Elke exploitant moet zijn verbonden met een zone**. Als het IP adres van de exploitant tot de waaier behoort die door de streek wordt bepaald, kan de exploitant aan de instantie het programma openen.\
+>Het IP van de exploitant adres kan in verscheidene streken worden bepaald. In dit geval ontvangt de exploitant de **set** van de beschikbare rechten voor elke zone.
 
-Het uit-van-de-doos **serverConf.xml** dossier omvat drie streken: **public, VPN en LAN**.
+De out-of-the-box **serverConf.xml** bestand bevat drie zones: **public, VPN en LAN**.
 
 >[!NOTE]
 >
 >**De uit-van-de-doos configuratie is veilig**. Het kan echter nodig zijn de beveiliging tijdelijk te verlagen om de nieuwe regels te migreren en goed te keuren, voordat een eerdere versie van Adobe Campaign naar een andere versie gaat.
 
-Voorbeeld van het definiëren van een zone in het bestand **serverConf.xml**:
+Voorbeeld van het definiëren van een zone in het deelvenster **serverConf.xml** bestand:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -87,19 +88,19 @@ Alle rechten die een zone definiëren, zijn als volgt:
 * **allowDebug**: schakelt een webApp in om te worden uitgevoerd in de modus &quot;foutopsporing&quot;
 * **allowEmptyPassword**: Hiermee wordt een verbinding met een instantie zonder wachtwoord toegestaan
 * **allowHTTP**: een sessie kan worden gemaakt zonder het HTTPS-protocol te gebruiken
-* **allowUserPassword**: het zittingsteken kan de volgende vorm &quot;`<login>/<password>`&quot;hebben
+* **allowUserPassword**: het sessietoken kan de volgende vorm hebben &quot;`<login>/<password>`&quot;
 * **sessionTokenOnly**: het beveiligingstoken is niet vereist in de verbindings-URL
 * **showErrors**: fouten aan de serverzijde worden doorgestuurd en weergegeven
 
 >[!IMPORTANT]
 >
->In een streekdefinitie, vermindert elk attribuut met **true** waarde veiligheid.
+>In een streekdefinitie, elk attribuut met **true** waarde vermindert de beveiliging.
 
-Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met **sessionTokenOnly** attributen tot stand brengen die als **true** worden bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Raadpleeg [dit document](../../message-center/using/configuring-instances.md) voor meer informatie over het configureren van instanties.
+Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met tot stand brengen **sessionTokenOnly** kenmerk gedefinieerd als **true**, waarbij alleen de noodzakelijke IP-adressen moeten worden toegevoegd. Raadpleeg voor meer informatie over het configureren van instanties [dit document](../../message-center/using/configuring-instances.md).
 
 ## Aanbevolen procedures voor beveiligingszones {#best-practices-for-security-zones}
 
-In de definitie van **lan** veiligheidsstreek, is het mogelijk om een IP adresmasker toe te voegen dat technische toegang bepaalt. Hierdoor wordt toegang mogelijk tot alle instanties die op de server worden gehost.
+In de definitie van **lan** veiligheidszone, is het mogelijk om een IP adresmasker toe te voegen dat technische toegang bepaalt. Hierdoor wordt toegang mogelijk tot alle instanties die op de server worden gehost.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -120,7 +121,7 @@ In de definitie van **lan** veiligheidsstreek, is het mogelijk om een IP adresma
 
 Wij adviseren direct bepalend IP adreswaaiers in het configuratiedossier dat aan de instantie voor exploitanten wordt gewijd die tot slechts een specifieke instantie toegang hebben.
 
-In het **`config-<instance>.xml`**-bestand:
+In de **`config-<instance>.xml`** bestand:
 
 ```
   <securityZone name="public">
@@ -131,7 +132,7 @@ In het **`config-<instance>.xml`**-bestand:
 
 ## Subnetwerken en proxy&#39;s in een beveiligingszone {#sub-networks-and-proxies-in-a-security-zone}
 
-De **proxy** parameter kan in een **subNetwork** element worden gebruikt om volmachtsgebruik in een veiligheidsstreek te specificeren.
+De **proxy** parameter kan worden gebruikt in een **subNetwork** -element om het proxygebruik in een beveiligingszone op te geven.
 
 Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ingeschakeld (zichtbaar via de HTTP X-Forwarded-For-header), is de geverifieerde zone die van de clients van de proxy en niet die van de proxy.
 
@@ -157,7 +158,7 @@ Er kunnen verschillende gevallen optreden:
 
    ![](assets/8101_proxy3.png)
 
-De IP adressen van volmachten die waarschijnlijk tot de server van Adobe Campaign zullen toegang hebben moeten in zowel **`<subnetwork>`** betrokken als eerste niveau subnetwork **`<subnetwork name="all"/>`** zijn ingegaan. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
+Het IP-adres van proxy&#39;s die waarschijnlijk toegang zullen krijgen tot de Adobe Campaign-server, moet worden ingevoerd in het dialoogvenster **`<subnetwork>`** betrokken en het eerste niveau subnetwork **`<subnetwork name="all"/>`**. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -186,47 +187,47 @@ Zodra de streken worden bepaald, moet elke exploitant met één van hen worden v
 
 De technische configuratie van de zones wordt uitgevoerd in het configuratiebestand van de Campagneserver: **serverConf.xml**.
 
-Voorafgaand aan dit, moet u beginnen door de uit-van-de-doos **[!UICONTROL Security zone]** opsomming te vormen om een etiket met de interne naam van de streek te verbinden die in **serverConf.xml** dossier wordt bepaald.
+Voorafgaand aan dit, moet u beginnen door uit-van-de-doos te vormen **[!UICONTROL Security zone]** opsomming voor koppeling van een label aan de interne naam van de zone die is gedefinieerd in het dialoogvenster **serverConf.xml** bestand.
 
 Deze configuratie wordt gedaan in de ontdekkingsreiziger van de Campagne:
 
-1. Klik op het knooppunt **[!UICONTROL Administration > Platform > Enumerations]**.
-1. Selecteer de **[!UICONTROL Security zone (securityZone)]** systeemopsomming.
+1. Klik op de knop **[!UICONTROL Administration > Platform > Enumerations]** knooppunt.
+1. Selecteer **[!UICONTROL Security zone (securityZone)]** systeemopsomming.
 
    ![](assets/enum_securityzone.png)
 
-1. Voor elke veiligheidsstreek die in het configuratiedossier van de server wordt bepaald, klik **[!UICONTROL Add]** knoop.
-1. Voer in het veld **[!UICONTROL Internal name]** de naam in van de zone die is gedefinieerd in het bestand **serverConf.xml**. Het komt overeen met het **@name**-kenmerk van het `<securityzone>`-element. Typ het label dat is gekoppeld aan de interne naam in het veld **Label**.
+1. Voor elke die veiligheidsstreek in het configuratiedossier van de server wordt bepaald, klik **[!UICONTROL Add]** knop.
+1. In de **[!UICONTROL Internal name]** veld, voert u de naam in van de zone die is gedefinieerd in het dialoogvenster **serverConf.xml** bestand. Het komt overeen met de **@name** kenmerk van de `<securityzone>`  element. Voer het label dat is gekoppeld aan de interne naam in het dialoogvenster  **Label** veld.
 
    ![](assets/enum_addsecurityvalue.png)
 
 1. Klik op OK en sla de wijzigingen op.
 
-Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming wordt gevormd, moet u elke exploitant aan een veiligheidsstreek verbinden:
+Zodra de zones zijn gedefinieerd en de **[!UICONTROL Security zone]** de opsomming wordt gevormd, moet u elke exploitant aan een veiligheidsstreek verbinden:
 
-1. Klik op het knooppunt **[!UICONTROL Administration > Access management > Operators]**.
-1. Selecteer de operator waaraan u een beveiligingszone wilt koppelen en klik op het tabblad **[!UICONTROL Edit]**.
-1. Ga naar het **[!UICONTROL Access rights]** lusje en klik **[!UICONTROL Edit access parameters...]** verbinding.
+1. Klik op de knop **[!UICONTROL Administration > Access management > Operators]** knooppunt.
+1. Selecteer de operator waaraan u een beveiligingszone wilt koppelen en klik op de knop **[!UICONTROL Edit]** tab.
+1. Ga naar de **[!UICONTROL Access rights]** en klik op de knop **[!UICONTROL Edit access parameters...]** koppeling.
 
    ![](assets/zone_operator.png)
 
-1. Selecteer een zone in de vervolgkeuzelijst **[!UICONTROL Authorized connection zone]**
+1. Selecteer een zone in het menu **[!UICONTROL Authorized connection zone]** vervolgkeuzelijst
 
    ![](assets/zone_operator_selection.png)
 
-1. Klik op **[!UICONTROL OK]** en sla de wijzigingen op om deze wijzigingen toe te passen.
+1. Klikken **[!UICONTROL OK]** en sla de wijzigingen op om deze wijzigingen toe te passen.
 
 
 
 ## Aanbevelingen
 
-* Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Als het het geval is, zal **all** verkeer worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
+* Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Zo ja, **alles** verkeer zal worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
 
 * Gebruik sessionTokenOnly=&quot;true&quot; minimaliseren:
 
-   * Waarschuwing: Als dit attribuut aan waar wordt geplaatst, kan de exploitant aan een **CRSF aanval** worden blootgesteld.
+   * Waarschuwing: Als dit kenmerk is ingesteld op true, kan de operator worden blootgesteld aan een **CRSF-aanval**.
    * Bovendien wordt het sessionToken cookie niet ingesteld met een httpOnly-markering, zodat sommige JavaScript-code aan de clientzijde deze kan lezen.
-   * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg **slechts noodzakelijke IP(s)** in deze streek toe.
+   * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg toe **alleen de benodigde IP(&#39;s)** in deze zone.
 
 * Indien mogelijk, plaats allen allowHTTP, showErrors om vals (niet voor localhost) te zijn en hen te controleren.
 
@@ -237,13 +238,13 @@ Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming w
 
 * Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
 
-   * **Operatoren** allowEmptyPasswordlets hebben een leeg wachtwoord. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
+   * **allowEmptyPassword** Laat exploitanten een leeg wachtwoord hebben. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
 
-   * **Operatoren** allowUserPasswordlets verzenden hun gegevens als parameters (zodat deze door apache/IIS/proxy worden geregistreerd). Deze functie is in het verleden gebruikt om het gebruik van de API te vereenvoudigen. U kunt in uw kookboek (of in de specificatie) controleren of sommige derdetoepassingen dit gebruiken. Als dat het geval is, moet u de gebruiker een melding sturen om de manier waarop hij of zij de API gebruikt te wijzigen en deze functie zo snel mogelijk verwijderen.
+   * **allowUserPassword** Laat exploitanten hun geloofsbrieven als parameters verzenden (zodat zullen zij door apache/IIS/proxy worden geregistreerd). Deze functie is in het verleden gebruikt om het gebruik van de API te vereenvoudigen. U kunt in uw kookboek (of in de specificatie) controleren of sommige derdetoepassingen dit gebruiken. Als dat het geval is, moet u de gebruiker een melding sturen om de manier waarop hij of zij de API gebruikt te wijzigen en deze functie zo snel mogelijk verwijderen.
 
-   * **Met** allowSQLInjectionnlets kan de gebruiker SQL-injecties uitvoeren met behulp van een oude syntaxis. Voer zo snel mogelijk de correcties uit die in [deze pagina](../../migration/using/general-configurations.md) worden beschreven om deze eigenschap aan vals te kunnen plaatsen. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
+   * **allowSQLInjection** Hiermee kan de gebruiker SQL-injecties uitvoeren met een oude syntaxis. Voer zo spoedig mogelijk de in [deze pagina](../../migration/using/general-configurations.md) om deze eigenschap aan vals te kunnen plaatsen. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
 
-* HttpOnly cookie/useSecurityToken: verwijs naar **sessionTokenOnly** vlag.
+* HttpOnly cookie/useSecurityToken: verwijzen naar **sessionTokenOnly** markering.
 
 * Minimaliseer IPs die aan de lijst van gewenste personen wordt toegevoegd: Uit de doos, in veiligheidszones, hebben wij de 3 waaiers voor privé netwerken toegevoegd. Het is onwaarschijnlijk dat u al deze IP adressen zult gebruiken. Bewaar dus alleen die dingen die je nodig hebt.
 

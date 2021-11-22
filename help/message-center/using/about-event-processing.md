@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-In de context van het transactieoverseinen, wordt een gebeurtenis geproduceerd door een extern informatiesysteem en verzonden naar Adobe Campaign via de **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methodes (zie [Gebeurtenisbeschrijving](../../message-center/using/event-description.md)).
+In de context van transactiemeldingen wordt een gebeurtenis gegenereerd door een extern informatiesysteem en wordt deze via het **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methoden (zie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md)).
 
-Deze gebeurtenis bevat gegevens die aan de gebeurtenis zijn gekoppeld, zoals het [type](../../message-center/using/creating-event-types.md) (bevestiging van de bestelling, aanmaak van account op een website, enz.), e-mailadres of mobiel nummer, en andere informatie waarmee u het transactiebericht vóór de levering kunt verrijken en personaliseren (contactgegevens van de klant, taal van het bericht, e-mailindeling, enz.).
+Deze gebeurtenis bevat gegevens die zijn gekoppeld aan de gebeurtenis, zoals [type](../../message-center/using/creating-event-types.md) (bevestiging van bestelling, het aanmaken van account op een website, enz.), e-mailadres of mobiel nummer, evenals andere informatie waarmee u het transactiemelding kunt verrijken en personaliseren vóór levering (contactgegevens van klant, taal van het bericht, e-mailindeling, enz.).
 
 Voorbeeld van gebeurtenisgegevens:
 
@@ -33,22 +33,22 @@ Om transactionele berichtengebeurtenissen te verwerken, worden de volgende stapp
 1. [Gebeurtenisoverdracht naar een berichtsjabloon](#routing-towards-a-template)
 1. Gebeurtenisverrijking met personalisatiegegevens
 1. [Uitvoering van levering](../../message-center/using/delivery-execution.md)
-1. [Recycling van ](#event-recycling) gebeurtenissen waarvan de gekoppelde levering is mislukt (via een Adobe Campaign-workflow)
+1. [Recycling van gebeurtenissen](#event-recycling) waarvan de gekoppelde levering is mislukt (via een Adobe Campaign-workflow)
 
 Zodra alle stappen hierboven door de uitvoeringsinstantie worden uitgevoerd, ontvangt elke gerichte ontvanger een gepersonaliseerd bericht.
 
 >[!NOTE]
 >
->Voor meer op de instanties van het transactionele overseinen, zie [Transactionele overseinenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
+>Voor meer op de instanties van het transactionele overseinen, zie [Transactionele berichtenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
 
 
 ## Gebeurtenisverzameling {#event-collection}
 
 Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee modi worden verzameld:
 
-* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: Met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u meerdere gebeurtenissen tegelijk verzenden. Zie [Gebeurtenisbeschrijving](../../message-center/using/event-description.md) voor meer informatie.
+* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: Met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u meerdere gebeurtenissen tegelijk verzenden. Zie voor meer informatie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
 
-* Door een workflow te maken kunt u gebeurtenissen herstellen door bestanden of via een SQL-gateway te importeren (met de optie [Federated Data Access](../../installation/using/about-fda.md)).
+* Als u een workflow maakt, kunt u gebeurtenissen herstellen door bestanden of via een SQL-gateway te importeren [Federale gegevenstoegang](../../installation/using/about-fda.md) ).
 
 Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische werkschema&#39;s tussen echt - tijd en partijrijen van de uitvoeringsinstantie(s), terwijl het wachten om aan een berichtmalplaatje worden verbonden.
 
@@ -56,7 +56,7 @@ Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische we
 
 >[!NOTE]
 >
->Bij de uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Raadpleeg [deze sectie](../../platform/using/access-management-folders.md) voor meer informatie over het instellen van een map als weergave.
+>In de uitvoeringsinstanties worden de **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** mappen mogen niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Raadpleeg voor meer informatie over het instellen van een map als weergave [deze sectie](../../platform/using/access-management-folders.md).
 
 ## Routering naar een sjabloon {#routing-towards-a-template}
 
@@ -80,23 +80,23 @@ Door gebrek, baseert het verpletteren zich op de volgende informatie:
 
 ## Gebeurtenisstatussen {#event-statuses}
 
-Met **Gebeurtenisgeschiedenis** onder **[!UICONTROL Message Center]** > **[!UICONTROL Event history]** worden alle verwerkte gebeurtenissen in één weergave gegroepeerd. Ze kunnen worden gecategoriseerd op gebeurtenistype of op **status**. Deze statussen zijn:
+De **Gebeurtenisgeschiedenis**, onder **[!UICONTROL Message Center]** > **[!UICONTROL Event history]** Hiermee groepeert u alle verwerkte gebeurtenissen in één weergave. Ze kunnen worden gecategoriseerd op gebeurtenistype of op **status**. Deze statussen zijn:
 
 * **In behandeling**: De gebeurtenis kan zijn:
 
-   * Een gebeurtenis die zojuist is verzameld en nog niet is verwerkt. In de kolom **[!UICONTROL Number of errors]** wordt de waarde 0 weergegeven. De e-mailsjabloon is nog niet gekoppeld.
-   * Een gebeurtenis die is verwerkt, maar waarvan de bevestiging onjuist is. In de kolom **[!UICONTROL Number of errors]** wordt een waarde weergegeven die niet 0 is. Als u wilt weten wanneer deze gebeurtenis opnieuw wordt verwerkt, raadpleegt u de kolom **[!UICONTROL Process requested on]**.
+   * Een gebeurtenis die zojuist is verzameld en nog niet is verwerkt. De **[!UICONTROL Number of errors]** geeft de waarde 0 aan in de kolom. De e-mailsjabloon is nog niet gekoppeld.
+   * Een gebeurtenis die is verwerkt, maar waarvan de bevestiging onjuist is. De **[!UICONTROL Number of errors]** in de kolom wordt een waarde weergegeven die niet 0 is. Als u wilt weten wanneer deze gebeurtenis opnieuw wordt verwerkt, raadpleegt u de **[!UICONTROL Process requested on]** kolom.
 
-* **In afwachting van levering**: De gebeurtenis is verwerkt en de leveringssjabloon is gekoppeld. De e-mail is in afwachting van levering en het klassieke leveringsproces wordt toegepast. Voor meer informatie kunt u de levering openen.
-* **Verzonden**,  **** genegeerd en  **leveringsfout**: Deze leveringsstatussen worden hersteld via de  **** updateEventsStatus-workflow. Voor meer informatie kunt u de relevante levering openen.
-* **Gebeurtenis niet behandeld**: Het transactionele overseinen die fase verplettert ontbrak. Adobe Campaign heeft bijvoorbeeld het e-mailbericht dat als sjabloon voor de gebeurtenis fungeert, niet gevonden.
+* **In behandeling**: De gebeurtenis is verwerkt en de leveringssjabloon is gekoppeld. De e-mail is in afwachting van levering en het klassieke leveringsproces wordt toegepast. Voor meer informatie kunt u de levering openen.
+* **Verzonden**, **Genegeerd** en **Afleveringsfout**: Deze leveringsstatussen worden teruggevorderd via de **updateEventsStatus** workflow. Voor meer informatie kunt u de relevante levering openen.
+* **Gebeurtenis niet gedekt**: Het transactionele overseinen die fase verplettert ontbrak. Adobe Campaign heeft bijvoorbeeld het e-mailbericht dat als sjabloon voor de gebeurtenis fungeert, niet gevonden.
 * **Gebeurtenis verlopen**: Het maximumaantal verzendpogingen is bereikt. De gebeurtenis wordt als null beschouwd.
 
 ## Recycling van gebeurtenissen {#event-recycling}
 
 Als de levering van een bericht op een specifiek kanaal mislukt, kan Adobe Campaign het bericht opnieuw verzenden via een ander kanaal. Als een levering op het SMS-kanaal bijvoorbeeld mislukt, wordt het bericht opnieuw verzonden via het e-mailkanaal.
 
-Hiervoor moet u een workflow configureren die alle gebeurtenissen opnieuw maakt met de status **Delivery error** en er een ander kanaal aan toewijst.
+Hiertoe moet u een workflow configureren die alle gebeurtenissen opnieuw maakt met de **Afleveringsfout** en wijst er een ander kanaal aan toe.
 
 >[!CAUTION]
 >

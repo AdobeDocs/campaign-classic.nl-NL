@@ -23,7 +23,7 @@ Deze activiteit verandert niet de gegevens in de het werklijst, het verandert sl
 
 ![](assets/wf_manipulation_box.png)
 
-Via het tabblad **[!UICONTROL Links]** kunt u ook verbindingen met andere werktabellen maken.
+U kunt ook verbindingen met andere werktabellen maken, via de **[!UICONTROL Links]** tab.
 
 ![](assets/wf_manipulation_box_link_tab.png)
 

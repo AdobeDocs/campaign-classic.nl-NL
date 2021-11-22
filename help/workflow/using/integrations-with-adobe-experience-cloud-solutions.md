@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de **integratie met de Adobe Experience Cloud**-module. Voor meer op deze module, verwijs naar dit [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
+De hieronder beschreven workflows worden geïnstalleerd met de **Integratie met de Adobe Experience Cloud** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 

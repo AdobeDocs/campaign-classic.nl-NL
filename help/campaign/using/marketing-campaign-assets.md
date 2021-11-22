@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-U kunt verschillende documenten aan een campagne koppelen: rapporten, foto&#39;s, webpagina&#39;s, diagrammen, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enzovoort).
+U kunt verschillende documenten aan een campagne koppelen: rapporten, foto&#39;s, webpagina&#39;s, diagrammen, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enz.).
 
 >[!IMPORTANT]
 >
@@ -33,12 +33,12 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 Documenten kunnen worden gekoppeld op campagneniveau (contextuele documenten) of op programmaniveau (algemene documenten).
 
-Het tabblad **[!UICONTROL Documents]** bevat:
+De **[!UICONTROL Documents]** bevat:
 
 * De lijst met alle documenten die vereist zijn voor de inhoud (sjabloon, afbeeldingen, enz.) die door Adobe Campaign-operatoren met de juiste rechten lokaal kunnen worden gedownload,
 * Documenten die informatie voor de router bevatten, als om het even welk.
 
-De documenten zijn gekoppeld aan het programma of de campagne via het tabblad **[!UICONTROL Edit > Documents]**.
+De documenten houden verband met het programma of de campagne via de **[!UICONTROL Edit > Documents]** tab.
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -46,11 +46,11 @@ U kunt ook een document aan een campagne toevoegen via de koppeling die in het d
 
 ![](assets/add_a_document_in_op.png)
 
-Klik op het pictogram **[!UICONTROL Details]** om de inhoud van een bestand weer te geven en informatie toe te voegen:
+Klik op de knop **[!UICONTROL Details]** pictogram om de inhoud van een bestand weer te geven en informatie toe te voegen:
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-In het dashboard worden documenten die bij de campagne horen gegroepeerd in de sectie **[!UICONTROL Document(s)]**, zoals in het volgende voorbeeld:
+In het dashboard worden de documenten die bij de campagne horen gegroepeerd in de **[!UICONTROL Document(s)]** , zoals in het volgende voorbeeld:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -64,47 +64,47 @@ U kunt ze ook vanuit deze weergave bewerken en wijzigen.
 
 Een leveringsoverzicht geeft een gestructureerde reeks elementen aan (documenten, opslagplaatsen, promotionele coupons, enz.) door het bedrijf en voor een bepaalde campagne worden opgericht.
 
-Deze elementen worden gegroepeerd in leveringsoverzichten, en elk leveringsoverzicht zal met een levering worden geassocieerd; in het extractiebestand dat naar de **serviceprovider** wordt verzonden, wordt ernaar verwezen om aan de levering te worden gekoppeld. U kunt bijvoorbeeld een leveringsoverzicht maken dat verwijst naar een vertakking en de marketingbrochures die erin worden gebruikt.
+Deze elementen worden gegroepeerd in leveringsoverzichten, en elk leveringsoverzicht zal met een levering worden geassocieerd; er wordt naar verwezen in het extractiebestand dat naar de **serviceprovider** om bij de levering te worden gevoegd. U kunt bijvoorbeeld een leveringsoverzicht maken dat verwijst naar een vertakking en de marketingbrochures die erin worden gebruikt.
 
 Voor een campagne, laten de leveringsoverzichten u externe elementen structureren die met de levering volgens bepaalde criteria moeten worden geassocieerd: verwante branche, aangeboden promotieaanbieding, uitnodiging voor een lokale evenement, enz.
 
 ### Een omtrek maken {#creating-an-outline}
 
-Als u een omtrek wilt maken, klikt u op het subtabblad **[!UICONTROL Delivery outlines]** op het tabblad **[!UICONTROL Edit > Documents]** van de desbetreffende campagne.
+Als u een omtrek wilt maken, klikt u op de knop **[!UICONTROL Delivery outlines]** subtab in het dialoogvenster **[!UICONTROL Edit > Documents]** tabblad van de desbetreffende campagne.
 
 >[!NOTE]
 >
 >Als dit tabblad niet aanwezig is, is deze functie niet beschikbaar voor deze campagne. Verwijs naar de configuratie van het campagnemalplaatje.
 >   
->Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-templates.md#campaign-templates) voor meer informatie over sjablonen.
+>Voor meer informatie over sjablonen raadpleegt u [deze sectie](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Klik vervolgens op **[!UICONTROL Add a delivery outline]** en maak de hiërarchie van contouren voor de campagne:
+Klik op Volgende **[!UICONTROL Add a delivery outline]** en maak de hiërarchie van contouren voor de campagne:
 
 1. Klik met de rechtermuisknop op de basis van de structuur en selecteer **[!UICONTROL New > Delivery outlines]**.
-1. Klik met de rechtermuisknop op de omtrek die u net hebt gemaakt en selecteer **[!UICONTROL New > Item]** of **[!UICONTROL New > Personalization fields]**.
+1. Klik met de rechtermuisknop op de omtrek die u zojuist hebt gemaakt en selecteer **[!UICONTROL New > Item]** of **[!UICONTROL New > Personalization fields]**.
 
 ![](assets/s_ncs_user_op_add_composition.png)
 
 Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen bevatten:
 
 * Items kunnen bijvoorbeeld fysieke documenten zijn waarnaar hier wordt verwezen en die hier worden beschreven en die aan de levering worden gekoppeld.
-* Met velden voor personalisatie kunt u personalisatie-elementen maken die te maken hebben met leveringen in plaats van met ontvangers. Het is dus mogelijk waarden te creëren die in leveringen voor een specifiek doel moeten worden gebruikt (welkomstaanbod, korting, enz.) Ze worden gemaakt in Adobe Campaign en geïmporteerd in de omtrek via de koppeling **[!UICONTROL Import personalization fields...]**.
+* Met velden voor personalisatie kunt u personalisatie-elementen maken die te maken hebben met leveringen in plaats van met ontvangers. Het is dus mogelijk waarden te creëren die in leveringen voor een specifiek doel moeten worden gebruikt (welkomstaanbod, korting, enz.) Ze zijn gemaakt in Adobe Campaign en geïmporteerd in de omtrek via de **[!UICONTROL Import personalization fields...]** koppeling.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Ze kunnen ook rechtstreeks in de omtrek worden gemaakt door op het pictogram **[!UICONTROL Add]** rechts van de lijstzone te klikken.
+   Ze kunnen ook rechtstreeks in de omtrek worden gemaakt door op de knop **[!UICONTROL Add]** rechts van de lijstzone.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* De bronnen zijn marketingbronnen die worden gegenereerd in het dashboard voor marketingbronnen dat wordt geopend via de koppeling **[!UICONTROL Resources]** van het tabblad **[!UICONTROL Campaigns]**.
+* De middelen zijn marketing middelen die in het marketing middeldashboard worden geproduceerd dat via **[!UICONTROL Resources]** koppeling van de **[!UICONTROL Campaigns]** tab.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
    >[!NOTE]
    >
-   >Raadpleeg [deze sectie](../../mrm/using/managing-marketing-resources.md) voor meer informatie over marketingbronnen.
+   >Voor meer informatie over marketingbronnen raadpleegt u [deze sectie](../../mrm/using/managing-marketing-resources.md).
 
 ### Een omtrek selecteren {#selecting-an-outline}
 
@@ -116,7 +116,7 @@ De geselecteerde omtrek wordt vervolgens weergegeven in de onderste sectie van h
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-Op het tabblad **[!UICONTROL Summary]** van de levering wordt ook deze informatie weergegeven:
+De **[!UICONTROL Summary]** tabblad van de levering geeft ook deze informatie weer:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -132,4 +132,4 @@ Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokke
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../platform/using/get-started-data-import-export.md) voor meer informatie over exporteren.
+>Raadpleeg voor meer informatie over exporteren [deze sectie](../../platform/using/get-started-data-import-export.md) sectie.

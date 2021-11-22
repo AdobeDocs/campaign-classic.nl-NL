@@ -17,29 +17,29 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-![](assets/do-not-localize/how-to-video.png) Bekijk deze  [](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video voor een overzicht van hoe aanbiedingen worden geleverd aan geïdentificeerde en anonieme doelen.
+![](assets/do-not-localize/how-to-video.png) Dit bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om een overzicht te krijgen van de wijze waarop aanbiedingen worden gedaan aan geïdentificeerde en anonieme doelstellingen.
 
 ## Een omgeving instellen en opslaan voor anonieme interacties {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) wilt richten, moet u de tovenaar van de doelafbeelding gebruiken om het milieu tot stand te brengen. Zie [Een aanbiedingsomgeving maken](../../interaction/using/live-design-environments.md#creating-an-offer-environment) voor meer informatie.
+Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) wilt richten, moet u de tovenaar van de doelafbeelding gebruiken om het milieu tot stand te brengen. Zie voor meer informatie [Een aanbiedingsomgeving maken](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-Wanneer u via de wizard voor het maken van toewijzingen een anonieme omgeving maakt, wordt het selectievakje **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatisch ingeschakeld op het tabblad **[!UICONTROL General]** van de omgeving.
+Wanneer u een anonieme omgeving maakt via de wizard voor het maken van toewijzingen, **[!UICONTROL Environment dedicated to incoming anonymous interactions]** wordt automatisch ingeschakeld in de omgeving **[!UICONTROL General]** tab.
 
 De **[!UICONTROL Targeting dimension]** wordt automatisch voltooid. Standaard is dit een koppeling naar de bezoekerstabel.
 
-Het veld **[!UICONTROL Visitor folder]** wordt weergegeven. Het wordt automatisch voltooid om aan de **[!UICONTROL Visitors]** omslag te verbinden. In dit veld kunt u kiezen waar bezoekersprofielen worden opgeslagen.
+De **[!UICONTROL Visitor folder]** wordt weergegeven. Het is automatisch voltooid om een koppeling te maken naar de **[!UICONTROL Visitors]** map. In dit veld kunt u kiezen waar bezoekersprofielen worden opgeslagen.
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->Als u verschillende soorten bezoekers wilt filteren, bijvoorbeeld in het geval van anonieme aanbiedingen die voor een of meer merken worden aangeboden, moet u een omgeving voor elk merk en een **[!UICONTROL Visitors]** typemap voor elke omgeving maken.
+>Als u verschillende soorten bezoekers wilt filteren, bijvoorbeeld in het geval van anonieme aanbiedingen die voor een of meer merken worden aangeboden, moet u een omgeving voor elk merk maken, en een **[!UICONTROL Visitors]** typemap voor elke omgeving.
 
 ## Catalogus aanbieden voor anonieme interacties {#offer-catalog-for-anonymous-interactions}
 
 Net als uitgaande interacties worden inkomende interacties georganiseerd in een aanbiedingencatalogus die bestaat uit categorieën en aanbiedingen.
 
-Als u categorieën en spaties wilt maken, past u hetzelfde proces toe als voor bepaalde bezoekers (zie [Aanbiedingscategorieën maken](../../interaction/using/creating-offer-categories.md) en [Een aanbiedingsomgeving maken](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
+Als u categorieën en spaties wilt maken, past u hetzelfde proces toe als voor bepaalde bezoekers (raadpleeg voor [Categorieën voorstellen maken](../../interaction/using/creating-offer-categories.md) en [Een aanbiedingsomgeving maken](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
 
 ## Anonieme bezoekers {#anonymous-visitors}
 
@@ -47,7 +47,7 @@ Wanneer anonieme bezoekers verbinding maken, kunnen ze een cookie-identificatiep
 
 Tijdens deze stap, wordt een vergelijking gemaakt tussen de gegevens die door de koekjes en die in uw gegevensbestand worden teruggekregen. In sommige gevallen worden bezoekers erkend (ze worden dan impliciet geïdentificeerd), in andere gevallen worden ze niet herkend (en blijven dus anoniem).
 
-Om deze analyse, voor de aanbiedingsruimte in werking te stellen, controleer de **[!UICONTROL Implicitly identify the individual based on their browser history]** optie.
+Om deze analyse, voor de aanbiedingsruimte in werking te stellen, controleer **[!UICONTROL Implicitly identify the individual based on their browser history]** optie.
 
 ![](assets/identification_anonymous_visitors.png)
 
@@ -57,6 +57,6 @@ Als een anonieme bezoeker na analyse niet wordt geïdentificeerd, kunt u zijn ge
 
 Als er geen element is dat u toestaat om een contact te identificeren, of als u geen geïdentificeerde aanbieding aan een contact wilt voorstellen dat impliciet kan worden geïdentificeerd, kunt u verkiezen om een reserve op een anonieme milieu uit te voeren.
 
-Om dit te doen, controleer **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**, dan specificeer het milieu gewijd aan deze niet geïdentificeerde bezoekers in **[!UICONTROL Linked anonymous space]** wanneer het specificeren van een aanbiedingsruimte.
+Om dit te doen, controleer **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** en geeft u vervolgens de omgeving op die aan deze niet-geïdentificeerde bezoekers in de **[!UICONTROL Linked anonymous space]** wanneer u een aanbiedingsruimte opgeeft.
 
 ![](assets/anonymous_to_anonymous_environment.png)

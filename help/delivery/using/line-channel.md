@@ -23,11 +23,11 @@ ht-degree: 2%
 
 [!DNL LINE] is een toepassing voor gratis instant messaging-, spraak- en videogesprekken, beschikbaar op elk mobiel besturingssysteem en op pc.
 
-[!DNL LINE] kan ook worden gecombineerd met de module Transactiebericht om realtime berichten te verzenden over de  [!DNL LINE] app die is geïnstalleerd in mobiele apparaten voor consumenten. Raadpleeg [deze pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) voor meer informatie.
+[!DNL LINE] kan ook met de transactionele berichtmodule worden gecombineerd om berichten in real time op te sturen [!DNL LINE] in mobiele apparaten voor consumenten geïnstalleerd. Raadpleeg [deze pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) voor meer informatie.
 
 ![](assets/line_message.png)
 
-De stappen voor het gebruiken van het [!DNL LINE] kanaal zijn:
+De stappen voor het gebruik van de [!DNL LINE] kanaal zijn:
 
 1. [LINE-kanaal instellen](#setting-up-line-channel)
 1. [Een levering maken](#creating-the-delivery)
@@ -36,112 +36,112 @@ De stappen voor het gebruiken van het [!DNL LINE] kanaal zijn:
 
 ## LINE-kanaal instellen {#setting-up-line-channel}
 
-Voordat u een [!DNL LINE]-account en een externe account maakt, moet u eerst het LINE-pakket op uw exemplaar installeren. Raadpleeg de sectie [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) in de installatiehandleiding voor meer informatie hierover.
+Voordat u een [!DNL LINE] -account en externe account, moet u eerst het LINE-pakket op uw exemplaar installeren. Voor meer informatie hierover raadpleegt u de [REGEL](../../installation/using/installing-campaign-standard-packages.md#line-package) in de installatiehandleiding.
 
-U moet eerst een [!DNL LINE]-account maken, zodat u deze aan Adobe Campaign kunt koppelen. Vervolgens kunt u [!DNL LINE] berichten verzenden naar gebruikers die uw [!DNL LINE]-account in hun mobiele toepassing hebben toegevoegd. Externe accounts en [!DNL LINE]-account kunnen alleen worden beheerd door de functionele beheerder van het platform.
+U moet eerst een [!DNL LINE] -account, zodat u deze aan Adobe Campaign kunt koppelen. Vervolgens kunt u [!DNL LINE] berichten aan de gebruikers die uw [!DNL LINE] in hun mobiele toepassing. Externe rekeningen en [!DNL LINE] -account kan alleen worden beheerd door de functionele beheerder van het platform.
 
-Zie [Documentatie voor lijnontwikkelaars](https://developers.line.me/) voor informatie over het maken en configureren van een [!DNL LINE]-account.
+Om een [!DNL LINE] account, zie [Documentatie voor lijnontwikkelaars](https://developers.line.me/).
 
 ### Creeer en vorm de dienst van de LIJN {#configure-line-service}
 
-Uw [!DNL LINE]-service maken:
+Om uw [!DNL LINE] service:
 
-1. Selecteer op de startpagina van Adobe Campaign Classic de tab **[!UICONTROL Profiles and Targets]**.
+1. Selecteer op de Adobe Campaign Classic-homepage de optie **[!UICONTROL Profiles and Targets]** tab.
 
-1. Selecteer **[!UICONTROL Services and Subscriptions]** in het linkermenu en klik op **[!UICONTROL Create]**.
+1. Selecteer in het menu aan de linkerkant de optie **[!UICONTROL Services and Subscriptions]** en klik op **[!UICONTROL Create]**.
 
    ![](assets/line_service_1.png)
 
-1. Voeg een **[!UICONTROL Label]** en **[!UICONTROL Internal name]** aan uw nieuwe dienst toe.
+1. Voeg een **[!UICONTROL Label]** en **[!UICONTROL Internal name]** naar uw nieuwe service.
 
-1. Selecteer **[!UICONTROL LINE]** van **[!UICONTROL Type]** drop-down.
+1. Selecteren **[!UICONTROL LINE]** van de **[!UICONTROL Type]** vervolgkeuzelijst.
 
    ![](assets/line_service_2.png)
 
 1. Klik op **[!UICONTROL Save]**.
 
-Zie [Abonnementen beheren](managing-subscriptions.md) voor meer informatie over abonnementen en services.
+Voor meer informatie over abonnementen en de diensten, zie [Abonnementen beheren](managing-subscriptions.md).
 
 ### Externe LINE-account configureren {#configure-line-external}
 
-Nadat u de [!DNL LINE]-service hebt gemaakt, moet u de [!DNL LINE] externe account op Adobe Campaign configureren:
+Nadat u uw [!DNL LINE] de dienst, moet u vormen [!DNL LINE] externe rekening op Adobe Campaign:
 
-1. Klik in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** boomstructuur op het tabblad **[!UICONTROL External Accounts]**.
+1. In de **[!UICONTROL Administration]** > **[!UICONTROL Platform]** boomstructuur, klik **[!UICONTROL External Accounts]** tab.
 
-1. Selecteer de ingebouwde **[!UICONTROL LINE V2 routing]** externe account.
+1. De ingebouwde **[!UICONTROL LINE V2 routing]** externe rekening.
 
    ![](assets/line_config.png)
 
-1. Klik op het tabblad **[!UICONTROL LINE]** van uw externe account om uw externe account te configureren. Vul de volgende velden in:
+1. Klik op de knop **[!UICONTROL LINE]** van uw externe account om uw externe account te configureren. Vul de volgende velden in:
 
    ![](assets/line_config_2.png)
 
-   * **[!UICONTROL Channel Alias]**: wordt via uw  [!DNL LINE] account op het  **[!UICONTROL Channels]** >- **[!UICONTROL Technical configuration]** tabblad opgegeven.
-   * **[!UICONTROL Channel ID]**: wordt via uw  [!DNL LINE] account op het  **[!UICONTROL Channels]** >- **[!UICONTROL Basic Information panel]** tabblad opgegeven.
-   * **[!UICONTROL Channel secret key]**: wordt via uw  [!DNL LINE] account op het  **[!UICONTROL Channels]** >- **[!UICONTROL Basic Information panel]** tabblad opgegeven.
-   * **[!UICONTROL Access token]**: via uw  [!DNL LINE] account in het ontwikkelaarsportaal of door op de  **[!UICONTROL Get access token]** knop te klikken.
+   * **[!UICONTROL Channel Alias]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** tab.
+   * **[!UICONTROL Channel ID]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
+   * **[!UICONTROL Channel secret key]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
+   * **[!UICONTROL Access token]**: wordt aangeboden via uw [!DNL LINE] in de ontwikkelaarportal of door op de knop **[!UICONTROL Get access token]** knop.
    * **[!UICONTROL Access token expiration date]**: staat u toe om de vervaldatum van het teken van de Toegang te specificeren.
    * **[!UICONTROL LINE subscription service]**: staat u toe om de diensten te specificeren waarop de gebruikers zullen worden ingetekend.
 
 1. Zodra uw configuratie gereed is, klikt u op **[!UICONTROL Save]**.
 
-1. Selecteer **[!UICONTROL Explorer]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL LINE workflows]** om te controleren of de **[!UICONTROL LINE V2 access token update (updateLineAccessToken)]**- en **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]**-workflows zijn gestart.**[!UICONTROL Administration]**
+1. Van de **[!UICONTROL Explorer]**, selecteert u **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL LINE workflows]** om te controleren of de **[!UICONTROL LINE V2 access token update (updateLineAccessToken)]** en **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** Er zijn workflows gestart.
 
-[!DNL LINE] wordt nu gevormd in Adobe Campaign, kunt u beginnen leveranties van de LIJN aan abonnees te creëren en te verzenden.
+De [!DNL LINE] is nu geconfigureerd in Adobe Campaign, kunt u beginnen met het maken en verzenden van lijnleveringen naar abonnees.
 
 ## LINE-levering maken {#creating-the-delivery}
 
 >[!NOTE]
 >
->Wanneer u een [!DNL LINE] levering voor het eerst naar een nieuwe ontvanger verzendt, moet u het officiële bericht van de LIJN betreffende de voorwaarden van gebruik en toestemming in de levering toevoegen. Het officiële bericht is beschikbaar op [volgende verbinding](https://terms.line.me/OA_privacy/).
+>Wanneer u een [!DNL LINE] voor het eerst aan een nieuwe ontvanger leveren, moet u het officiële lijnbericht betreffende de gebruiksvoorwaarden en de toestemming in de levering toevoegen. Het officiële bericht is beschikbaar op het [volgende koppeling](https://terms.line.me/OA_privacy/).
 
-Als u een levering [!DNL LINE] wilt maken, moet u de volgende stappen uitvoeren:
+Als u een [!DNL LINE] levering u moet deze stappen volgen:
 
-1. Selecteer **[!UICONTROL Campaigns]** op het tabblad **[!UICONTROL Deliveries]** en klik op de knop **[!UICONTROL Create]**.
+1. Van de **[!UICONTROL Campaigns]** tab, selecteert u **[!UICONTROL Deliveries]** Klik vervolgens op de knop **[!UICONTROL Create]** knop.
 
    ![](assets/line_message_07.png)
 
-1. Selecteer **[!UICONTROL LINE V2 delivery]** leveringssjabloon.
+1. Selecteren **[!UICONTROL LINE V2 delivery]** leveringssjabloon.
 
    ![](assets/line_message_01.png)
 
-1. Identificeer uw levering met **[!UICONTROL Label]**, **[!UICONTROL Delivery code]**, en **[!UICONTROL Description]**. Raadpleeg [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
+1. Identificeer uw levering met een **[!UICONTROL Label]**, **[!UICONTROL Delivery code]**, en  **[!UICONTROL Description]**. Raadpleeg [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
 
-1. Klik **[!UICONTROL Continue]** om uw levering tot stand te brengen.
+1. Klikken **[!UICONTROL Continue]** om uw levering te maken.
 
-1. In de leveringsredacteur, selecteer **[!UICONTROL To]** om de ontvangers van uw [!DNL LINE] levering te richten. Het richten wordt uitgevoerd op **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
+1. Selecteer in de leveringseditor de optie **[!UICONTROL To]** om de ontvangers van uw [!DNL LINE] levering. Er wordt gericht op **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Raadpleeg [Doelpopulaties identificeren](steps-defining-the-target-population.md) voor meer informatie.
+   Raadpleeg voor meer informatie [Doelpopulaties identificeren](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
-1. Klik **[!UICONTROL Add]** om uw **[!UICONTROL Delivery target population]** te selecteren.
+1. Klikken **[!UICONTROL Add]** om uw **[!UICONTROL Delivery target population]**.
 
    ![](assets/line_message_09.png)
 
-1. Kies of u [!DNL LINE] abonnees direct wilt richten of als u gebruikers afhankelijk van hun [!DNL LINE] abonnement wilt richten en **[!UICONTROL Next]** klikken. In dit voorbeeld hebben we **[!UICONTROL By LINE V2 subscription]** geselecteerd.
+1. Kiezen als u wilt richten [!DNL LINE] abonnees direct of als u gebruikers afhankelijk van hun wilt richten [!DNL LINE] abonnement en klik op **[!UICONTROL Next]**. In dit voorbeeld hebben we **[!UICONTROL By LINE V2 subscription]**.
 
-1. Selecteer **[!UICONTROL Line-V2]** in **[!UICONTROL Folder]** drop-down toen uw [!DNL LINE] dienst. Klik **[!UICONTROL Finish]** dan **[!UICONTROL Ok]** beginnen uw levering aan te passen.
+1. Selecteren **[!UICONTROL Line-V2]** in de **[!UICONTROL Folder]** vervolgkeuzelijst en daarna uw [!DNL LINE] service. Klikken **[!UICONTROL Finish]** dan **[!UICONTROL Ok]** om uw levering aan te passen.
 
    ![](assets/line_message_10.png)
 
-1. Van uw leveringsredacteur, klik **[!UICONTROL Add]** om één of veelvoudige bericht toe te voegen en **[!UICONTROL Content type]** te selecteren.
+1. Klik in de leveringseditor op **[!UICONTROL Add]** om een of meerdere berichten toe te voegen en de **[!UICONTROL Content type]**.
 
-   Raadpleeg [Het inhoudstype definiëren](#defining-the-content) voor meer informatie over de verschillende beschikbare **[!UICONTROL Content type]**.
+   Voor meer informatie over de verschillende **[!UICONTROL Content type]** beschikbaar, raadpleegt u [Het inhoudstype definiëren](#defining-the-content).
 
    ![](assets/line_message_11.png)
 
 1. Wanneer uw levering correct wordt gecreeerd en gevormd, kunt u het naar het vroeger bepaalde doel verzenden.
 
-   Voor meer informatie bij het verzenden van een levering, verwijs naar [Send berichten](sending-messages.md).
+   Voor meer informatie over het verzenden van een levering raadpleegt u [Berichten verzenden](sending-messages.md).
 
 1. Na het verzenden van uw bericht, heb toegang tot uw rapport om de doeltreffendheid van uw levering te meten.
 
-   Raadpleeg [Toegangsrapporten](#accessing-reports) voor meer informatie over [!DNL LINE]-rapporten.
+   Voor meer informatie over [!DNL LINE] rapporten, zie [Toegangsrapporten](#accessing-reports).
 
 ## Het inhoudstype definiëren {#defining-the-content}
 
-Om de inhoud van een [!DNL LINE] levering te bepalen, moet u eerst berichttype aan uw levering toevoegen. Elke [!DNL LINE] levering kan tot 5 berichten bevatten.
+De inhoud van een [!DNL LINE] levering, moet u eerst berichttype aan uw levering toevoegen. Elk [!DNL LINE] de levering kan maximaal 5 berichten bevatten.
 
 U kunt kiezen uit drie berichttypen:
 
@@ -153,17 +153,17 @@ U kunt kiezen uit drie berichttypen:
 
 >[!NOTE]
 >
->Met de syntaxis `<%@ include option='NmsServer_URL' %>/webApp/APP3?id=<%=escapeUrl(cryptString(visitor.id))%>` kunt u een koppeling naar een webtoepassing opnemen in een LINE-bericht.
+>De `<%@ include option='NmsServer_URL' %>/webApp/APP3?id=<%=escapeUrl(cryptString(visitor.id))%>` kunt u een koppeling naar een webtoepassing opnemen in een LINE-bericht.
 
-Een **[!UICONTROL Text message]** [!DNL LINE] levering is een bericht dat naar ontvangers in tekstvorm wordt verzonden.
+A **[!UICONTROL Text message]** [!DNL LINE] De levering is een bericht dat in tekstvorm aan ontvangers wordt verzonden.
 
 ![](assets/line_message_02.png)
 
-De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van **[!UICONTROL Text]** in e-mail. Raadpleeg deze [pagina](defining-the-email-content.md#message-content) voor meer informatie.
+De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van **[!UICONTROL Text]** in een e-mail. Raadpleeg deze voor meer informatie [page](defining-the-email-content.md#message-content).
 
 ### Afbeelding en koppelingslevering configureren {#configuring-an-image-and-link-delivery}
 
-Een **[!UICONTROL Image and link]** [!DNL LINE] levering is een bericht dat aan ontvangers in de vorm van een beeld wordt verzonden dat één of veelvoudige URLs kan bevatten.
+An **[!UICONTROL Image and link]** [!DNL LINE] levering is een bericht dat aan ontvangers wordt verzonden in de vorm van een afbeelding die een of meerdere URL&#39;s kan bevatten.
 
 U kunt het volgende gebruiken:
 
@@ -171,15 +171,15 @@ U kunt het volgende gebruiken:
 
    >[!NOTE]
    >
-   >Met de variabele **%SIZE%** kunt u de beeldweergave optimaliseren op basis van de schermgrootte van het mobiele apparaat van de ontvanger.
+   >U kunt de **%SIZE%** variabele om de beeldweergave te optimaliseren volgens de schermgrootte van het mobiele apparaat van de ontvanger.
 
    ![](assets/line_message_04.png)
 
-* en **[!UICONTROL Image URL]** per schermgrootte apparaat,
+* een **[!UICONTROL Image URL]** per apparaatschermgrootte,
 
    ![](assets/line_message_03.png)
 
-   Met de optie **[!UICONTROL Define images per device screen size]** kunt u verschillende afbeeldingsresoluties gebruiken om de zichtbaarheid van de levering op mobiele apparaten te optimaliseren. Alleen afbeeldingen met dezelfde hoogte en breedte worden ondersteund.
+   De **[!UICONTROL Define images per device screen size]** kunt u verschillende afbeeldingsresoluties gebruiken om de zichtbaarheid van de levering op mobiele apparaten te optimaliseren. Alleen afbeeldingen met dezelfde hoogte en breedte worden ondersteund.
 
    Afbeeldingen kunnen worden gedefinieerd op basis van de schermgrootte:
 
@@ -197,17 +197,17 @@ U kunt het volgende gebruiken:
 
 * en **[!UICONTROL Links]**.
 
-   In de sectie **[!UICONTROL Links]** kunt u kiezen tussen verschillende lay-outs die de afbeelding verdelen in meerdere klikbare gebieden. U kunt elk van hen dan toewijzen een specifieke **[!UICONTROL Link URL]**.
+   De **[!UICONTROL Links]** kunt u kiezen tussen verschillende lay-outs die de afbeelding verdelen in meerdere klikbare gebieden. U kunt dan elk van hen toewijzen een specifiek **[!UICONTROL Link URL]**.
 
    ![](assets/line_message_05.png)
 
 ### Een videoboodschap configureren {#configuring-a-video-message-delivery}
 
-Een **[!UICONTROL Video message]** [!DNL LINE] levering is een bericht dat aan ontvangers in de vorm van een video wordt verzonden die een URL kan bevatten.
+A **[!UICONTROL Video message]** [!DNL LINE] De levering is een bericht dat aan ontvangers in de vorm van een video wordt verzonden die een URL kan bevatten.
 
-In het veld **[!UICONTROL Preview Image URL]** kunt u de URL toevoegen van een voorvertoning met een tekenlimiet van 1000. JPEG en PNG worden ondersteund met een maximale bestandsgrootte van 1 MB.
+De **[!UICONTROL Preview Image URL]** kunt u de URL toevoegen van een voorvertoning met een tekenlimiet van 1000. JPEG en PNG worden ondersteund met een maximale bestandsgrootte van 1 MB.
 
-In het veld **[!UICONTROL Video Image URL]** kunt u de URL van het videobestand toevoegen met een tekenlimiet van 1000. Alleen MP4-indeling wordt ondersteund met een maximale bestandsgrootte van 200 MB.
+De **[!UICONTROL Video Image URL]** kunt u de URL van het videobestand toevoegen met een tekenlimiet van 1000. Alleen MP4-indeling wordt ondersteund met een maximale bestandsgrootte van 200 MB.
 
 Brede of lange video&#39;s kunnen worden bijgesneden wanneer deze op bepaalde apparaten worden afgespeeld.
 
@@ -215,7 +215,7 @@ Brede of lange video&#39;s kunnen worden bijgesneden wanneer deze op bepaalde ap
 
 ## Toegang tot rapporten {#accessing-reports}
 
-Nadat u de levering hebt verzonden, kunt u uw [!DNL LINE]-rapporten weergeven via het menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** van **[!UICONTROL Explorer]**.
+Nadat u de levering hebt verzonden, kunt u uw [!DNL LINE] rapporten via het menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** van de **[!UICONTROL Explorer]**.
 
 >[!NOTE]
 >
@@ -223,7 +223,7 @@ Nadat u de levering hebt verzonden, kunt u uw [!DNL LINE]-rapporten weergeven vi
 
 ![](assets/line_reports_01.png)
 
-Voor [!DNL LINE] servicerapporten opent u het menu **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** op het tabblad **[!UICONTROL Explorer]**. Klik vervolgens op het pictogram **[!UICONTROL Reports]** in de service [!DNL LINE].
+Voor [!DNL LINE] servicerapporten, toegang tot het menu **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** van de **[!UICONTROL Explorer]** tab. Klik vervolgens op de knop **[!UICONTROL Reports]** in het deelvenster [!DNL LINE] service.
 
 ![](assets/line_reports.png)
 
@@ -231,23 +231,23 @@ Voor [!DNL LINE] servicerapporten opent u het menu **[!UICONTROL Profiles and Ta
 
 In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vormen die gegevens bevatten die volgens de ontvanger zullen worden gepersonaliseerd.
 
-1. Maak uw [!DNL LINE] levering door op de knop **[!UICONTROL Create]** op het tabblad **[!UICONTROL Campaign]** te klikken.
+1. Maak uw [!DNL LINE] levering door op de knop **[!UICONTROL Create]** van de knop **[!UICONTROL Campaign]** tab.
 
    ![](assets/line_usecase.png)
 
-1. Selecteer de leveringssjabloon **[!UICONTROL LINE V2 delivery]** en geef uw levering een naam.
+1. Selecteer **[!UICONTROL LINE V2 delivery]** leveringssjabloon en naam van levering.
 
    ![](assets/line_usecase_01.png)
 
 1. Selecteer in het configuratievenster van uw levering de doelpopulatie.
 
-   Raadpleeg [Doelpopulaties identificeren](steps-defining-the-target-population.md) voor meer informatie.
+   Raadpleeg voor meer informatie [Doelpopulaties identificeren](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
-1. Klik **[!UICONTROL Add]** om uw bericht tot stand te brengen en **[!UICONTROL Content type]** te selecteren.
+1. Klikken **[!UICONTROL Add]** om uw bericht te creëren en selecteer **[!UICONTROL Content type]**.
 
-   Hier, willen wij eerst een **[!UICONTROL Text message]** tot stand brengen.
+   Hier willen we eerst een **[!UICONTROL Text message]**.
 
    ![](assets/line_usecase_03.png)
 
@@ -255,19 +255,19 @@ In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vo
 
    ![](assets/line_usecase_05.png)
 
-1. Volg dezelfde procedure om een afbeelding toe te voegen door **[!UICONTROL Image and links]** te selecteren in de vervolgkeuzelijst **[!UICONTROL Message type]**.
+1. Volg dezelfde procedure om een afbeelding toe te voegen, door **[!UICONTROL Image and links]** in de **[!UICONTROL Message type]** vervolgkeuzelijst.
 
-   Voeg uw **[!UICONTROL Image URL]** toe.
+   Voeg uw **[!UICONTROL Image URL]**.
 
    ![](assets/line_usecase_07.png)
 
-1. Selecteer in de sectie **[!UICONTROL Links]** de lay-out die de afbeelding in meerdere klikbare gebieden zal verdelen.
+1. In de **[!UICONTROL Links]** selecteert u de lay-out waarin de afbeelding wordt verdeeld in meerdere klikbare gebieden.
 
 1. Wijs een URL toe aan elk gebied van uw afbeelding.
 
    ![](assets/line_usecase_08.png)
 
-1. Sla de levering op en klik op **[!UICONTROL Send]** om de levering te analyseren en naar het doel te verzenden.
+1. Sla uw levering op en klik op **[!UICONTROL Send]** om te analyseren en naar het doel te verzenden.
 
    De levering wordt verzonden naar het doel.
 

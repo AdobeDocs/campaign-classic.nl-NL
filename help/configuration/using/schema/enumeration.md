@@ -49,7 +49,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
 
 ## Beschrijving van kenmerk {#attribute-description-5}
 
-* **basetype (tekenreeks)**: type van de waarden die in de opsomming zijn opgeslagen.
+* **basetype (string)**: type van de waarden die in de opsomming zijn opgeslagen.
 
    Lijst met beschikbare typen:
 
@@ -86,7 +86,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
 * **desc (tekenreeks)**: opsommingsbeschrijving.
 * **label (tekenreeks)**: opsommingslabel.
 * **name (string)**: interne naam van de opsomming.
-* **sjabloon (tekenreeks)**: this attribute define a reference to an  `<enumeration>` element shared by various schema&#39;s. De definitie wordt automatisch gekopieerd naar het huidige schema.
+* **sjabloon (tekenreeks)**: this attribute define a reference to an `<enumeration>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
 
 ## Voorbeelden {#examples-4}
 

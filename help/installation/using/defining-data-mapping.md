@@ -35,12 +35,12 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   U kunt kiezen of om uitsluitingen (**excludelog**), met berichten (**broadlog**) of in een afzonderlijke lijst op te slaan.
+   U kunt kiezen of u uitsluitingen wilt opslaan (**excludelog**), met berichten (**uitzenden**) of in een aparte tabel.
 
-   U kunt ook kiezen of het volgen voor deze leveringsafbeelding (**trackinglog**) te beheren.
+   U kunt ook kiezen of u het bijhouden van gegevens voor deze leveringstoewijzing wilt beheren (**trackinglog**).
 
 1. Selecteer vervolgens de extensies waarmee u rekening wilt houden. Het extensietype is afhankelijk van de parameters en opties van uw platform (uw licentiecontract weergeven).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klik op de knop **[!UICONTROL Save]** om het maken van de leveringstoewijzing te starten: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.
+   Klik op de knop **[!UICONTROL Save]** knop voor het maken van de toewijzing van levering: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.

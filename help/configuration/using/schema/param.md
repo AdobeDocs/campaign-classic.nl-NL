@@ -47,12 +47,12 @@ Met dit element kunt u een parameter definiëren voor het aanroepen van een SOAP
 
 ## Beschrijving van kenmerk {#attribute-description-12}
 
-* **desc (tekenreeks)**: beschrijving die betrekking heeft op het  `<param>` element.
+* **desc (tekenreeks)**: beschrijving die betrekking heeft op de `<param>` element.
 * **inout (tekenreeks)**: this attribute define whether or not the parameter is at the input (in) or output (out) of the SOAP call. Als dit kenmerk niet wordt opgegeven, wordt de standaardparameter invoer (&quot;@inout=in&quot;).
-* **label (tekenreeks)**:  `<param>` label
+* **label (tekenreeks)**: `<param>` label
 * **localizable (tekenreeks)**: Als dit kenmerk is geactiveerd, geeft dit het gereedschap Verzameling de opdracht om de waarde van het kenmerk &quot;@label&quot; te herstellen voor vertaling (intern gebruik).
-* **naam (MNTOKEN)**: interne naam van de  `<param>`
-* **type (tekenreeks)**: this attribute define the type of  `<param>` element
+* **naam (MNTOKEN)**: interne naam van de `<param>`
+* **type (tekenreeks)**: this attribute define the type of `<param>` element
 
    Lijst met beschikbare typen:
 

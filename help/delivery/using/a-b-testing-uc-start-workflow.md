@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-1. Klik op **[!UICONTROL Start]** de workflow.
+1. Klikken **[!UICONTROL Start]** de workflow.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

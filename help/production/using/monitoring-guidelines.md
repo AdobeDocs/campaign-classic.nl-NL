@@ -19,7 +19,7 @@ ht-degree: 20%
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-Het tabblad **[!UICONTROL Monitoring]**, dat toegankelijk is vanaf de startpagina van Campaign Classic, is het belangrijkste ingangspunt waarmee u uw instantie kunt controleren.
+De **[!UICONTROL Monitoring]** tab, dat vanaf de homepage van Campaign Classic toegankelijk is, is het belangrijkste ingangspunt om u te helpen uw instantie controleren.
 
 Het verstrekt een dashboard van wat op uw geval voorkomt: de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
 
@@ -58,7 +58,7 @@ In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beh
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de nieuwste [Gouden standaard](../../rn/using/gs-overview.md) of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Workflows controleren {#monitoring-workflows}
 
@@ -96,14 +96,14 @@ In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergeg
 
 **Best practices**
 
-[De beste praktijken voor levering verzenden en ](../../delivery/using/delivery-best-practices.md) ontwerpen kunnen u helpen hun prestaties verbeteren.
+[Aanbevolen procedures voor verzending en ontwerp van levering](../../delivery/using/delivery-best-practices.md) kan u helpen hun prestaties te verbeteren.
 
-**Het**
-oplossen van problemen van de leveringSpecifieke acties kunnen worden uitgevoerd wanneer het ontmoeten van kwesties met leveringen:
+**Problemen met levering oplossen**
+Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optreden:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
 * [Leveringsprestaties](../../delivery/using/delivery-performances.md)
-* [Uitgave](../../production/using/temporary-files.md)  van tijdelijke bestanden - alleen  *op locatie voor hostingmodellen*
+* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) - *alleen hostingmodellen op locatie*
 
 ### Toezicht op de database {#monitoring-database}
 

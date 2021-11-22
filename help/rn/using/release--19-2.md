@@ -127,7 +127,7 @@ _2 december 2019_
 
 **Verbeterde beveiliging**
 
-* Oplossing voor kwetsbaarheden met betrekking tot scripts die verwijzen naar andere sites in de Campagne-interface: validatie van invoergegevens en codering van uitvoer. (NEO-16810)
+* Oplossing voor een probleem met opgeslagen kwetsbaarheden voor scripts die verwijzen naar andere sites, in de Campagne-interface: validatie van invoergegevens en codering van uitvoer. (NEO-16810)
 * Oplossing voor een beveiligingsprobleem met profielautorisatie dat toegang tot onbevoegde gegevens mogelijk maakt door het beleid voor aanmeldingsbeperkingen te versterken. (NEO-14445)
 
 **Verbeteringen**

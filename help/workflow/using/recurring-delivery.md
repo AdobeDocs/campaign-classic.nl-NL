@@ -17,11 +17,11 @@ ht-degree: 21%
 
 ![](../../assets/common.svg)
 
-Met een activiteit **[!UICONTROL Recurring delivery]** kunt u een exemplaar van een leveringssjabloon configureren dat specifiek is voor een campagne.
+A **[!UICONTROL Recurring delivery]** De activiteit laat u een voorkomen van het leveringsmalplaatje vormen die voor een campagne specifiek is.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#recurring-delivery-video)
 
-Deze activiteit is slechts beschikbaar van het **[!UICONTROL Targeting and workflows]** lusje dat in een campagne wordt gevonden.
+Deze activiteit is alleen beschikbaar via de **[!UICONTROL Targeting and workflows]** wordt gevonden in een campagne.
 
 Dit doet u als volgt:
 
@@ -33,17 +33,17 @@ Dit doet u als volgt:
 
 Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het creëren van een leveringsmalplaatje in termen van de beschikbare opties. Raadpleeg deze [sectie](../../delivery/using/about-templates.md) voor meer informatie.
 
-Voor een voorbeeld van deze activiteit die wordt gebruikt, verwijs naar dit [sectie](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Raadpleeg dit voor een voorbeeld van deze activiteit die wordt gebruikt [sectie](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Hoe te opstelling terugkomende levering
 
-Een **terugkerende levering** zal tot een nieuwe leveringsinstantie leiden telkens als het uitvoert. Als de workflow bijvoorbeeld eenmaal per week wordt uitgevoerd, levert dat na één jaar 52 leveringen op. Dit betekent ook dat het brede logboek en het volgen logboeken door elke leveringsinstantie zullen worden gescheiden.
+A **terugkerende levering** wordt elke keer dat het wordt uitgevoerd, een nieuwe leveringsinstantie gemaakt. Als de workflow bijvoorbeeld eenmaal per week wordt uitgevoerd, levert dat na één jaar 52 leveringen op. Dit betekent ook dat het brede logboek en het volgen logboeken door elke leveringsinstantie zullen worden gescheiden.
 
 ![Terugkerende levering](assets/delivery_recurring.jpg)
 
 >[!NOTE]
 >
->Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** typeactiviteit te verzenden.\
+>Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** type activiteit.\
 >Om een levering via een campagnewerkschema direct tot stand te brengen, gebruik de kanaal specifieke activiteiten die (b.v. **[!UICONTROL Email delivery]**).
 
 ## Tutorial video (#repeat-delivery-video)
@@ -52,4 +52,4 @@ Deze video verklaart hoe te om een terugkomende levering en een planneractivitei
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

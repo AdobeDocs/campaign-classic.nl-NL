@@ -28,13 +28,13 @@ Ons uiteindelijke doel is om een levering te maken met een gepersonaliseerde sja
 
 >[!NOTE]
 >
->Voordat u begint, moet u minstens één **HTML-sjabloon** hebben geconfigureerd om de inhoud van toekomstige leveringen te hosten.
+>Voordat u begint, moet u ten minste één **HTML-sjabloon** geconfigureerd om de inhoud van uw toekomstige leveringen te hosten.
 >
->Zorg er bij levering **[!UICONTROL Properties]** voor dat **[!UICONTROL Content editing mode]** (op het tabblad **[!UICONTROL Advanced]**) is ingesteld op **[!UICONTROL DCE]**. Om de optimale verrichting van de redacteur te verzekeren, verwijs naar [Inhoud het uitgeven beste praktijken](content-editing-best-practices.md).
+>In de levering **[!UICONTROL Properties]**, zorgt u ervoor dat de **[!UICONTROL Content editing mode]** (in de **[!UICONTROL Advanced]** tab) is ingesteld op **[!UICONTROL DCE]**. Om de optimale werking van de redacteur te verzekeren, verwijs naar [Aanbevolen werkwijzen voor het bewerken van inhoud](content-editing-best-practices.md).
 
 ## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-Als u een nieuwe levering wilt maken, plaatst u de cursor in het tabblad **Campagnes** en klikt u op **Leveringen**. Klik vervolgens op de knop **Maken** boven de lijst met bestaande leveringen. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md) voor meer informatie over het maken van leveringen.
+Als u een nieuwe levering wilt maken, plaatst u de cursor in de **Campagnes** en klik op **Leveringen**. Klik op de knop **Maken** boven de lijst met bestaande leveringen. Raadpleeg voor meer informatie over het maken van leveringen [deze pagina](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
@@ -48,53 +48,53 @@ Selecteer een leveringssjabloon en geef uw levering een naam. Deze naam is allee
 
 De Editor voor digitale inhoud wordt geleverd met verschillende out-of-the-box sjablonen met verschillende structuren (kolommen, tekstgebieden, enz.).
 
-Selecteer het inhoudsmalplaatje dat u wilt gebruiken, dan klik **[!UICONTROL Start with the selected content]** knoop om het malplaatje in de gecreeerde levering te tonen.
+Selecteer de inhoudssjabloon die u wilt gebruiken en klik op de knop **[!UICONTROL Start with the selected content]** om de sjabloon weer te geven in de gemaakte levering.
 
 ![](assets/dce_select_model.png)
 
-U kunt ook HTML-inhoud die buiten Adobe Campaign is gemaakt, importeren door **[!UICONTROL From a file]** te selecteren.
+U kunt ook HTML-inhoud die buiten Adobe Campaign is gemaakt, importeren door **[!UICONTROL From a file]**.
 
 ![](assets/dce_select_from_file_template.png)
 
-U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. Raadpleeg [Sjabloonbeheer](template-management.md) voor meer informatie hierover.
+U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. Raadpleeg voor meer informatie hierover [Sjabloonbeheer](template-management.md).
 
 >[!CAUTION]
 >
->Als u de **Adobe Campaign-webinterface** gebruikt, moet u een .zip-bestand importeren dat de HTML-inhoud en verwante afbeeldingen bevat.
+>Als u het **Adobe Campaign-webinterface**, moet u een .zip-bestand importeren dat de HTML-inhoud en verwante afbeeldingen bevat.
 
 ## Stap 4 - Het ontwerpen van het bericht {#step-4---designing-the-message}
 
 * De eerste en tweede naam van de ontvangers weergeven
 
-   Als u de eerste en tweede naam van de ontvangers wilt invoegen in een tekstveld in de aflevering, klikt u op het gekozen tekstveld en plaatst u de cursor op de gewenste positie. Klik op het eerste pictogram op de pop-upwerkbalk en klik vervolgens op **[!UICONTROL Personalization block]**. Selecteer **[!UICONTROL Greetings]** en klik vervolgens op **[!UICONTROL OK]**.
+   Als u de eerste en tweede naam van de ontvangers wilt invoegen in een tekstveld in de aflevering, klikt u op het gekozen tekstveld en plaatst u de cursor op de gewenste positie. Klik op het eerste pictogram op de pop-upwerkbalk en klik vervolgens op **[!UICONTROL Personalization block]**. Selecteren **[!UICONTROL Greetings]** en klik vervolgens op **[!UICONTROL OK]**.
 
    ![](assets/dce_personalizationblock_greetings.png)
 
 * Een koppeling invoegen in een afbeelding
 
-   Als u ontvangers voor levering via een afbeelding naar een extern adres wilt sturen, klikt u op de desbetreffende afbeelding om de pop-upwerkbalk weer te geven. Plaats de cursor op het eerste pictogram en klik vervolgens op **[!UICONTROL Link to an external URL]**. Voor meer op dit, verwijs naar [Toevoegend een verbinding](editing-content.md#adding-a-link).
+   Als u ontvangers voor levering via een afbeelding naar een extern adres wilt sturen, klikt u op de desbetreffende afbeelding om de pop-upwerkbalk weer te geven. Plaats de cursor op het eerste pictogram en klik vervolgens op **[!UICONTROL Link to an external URL]**. Raadpleeg voor meer informatie hierover [Een koppeling toevoegen](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
-   Voer de URL voor de koppeling in het veld **URL** in met de volgende notatie **https://www.myURL.com** en bevestig vervolgens de URL.
+   Voer de URL voor de koppeling in het dialoogvenster **URL** veld met de volgende notatie **https://www.myURL.com**, bevestig vervolgens.
 
    U kunt de koppeling op elk gewenst moment wijzigen met de sectie rechts van het venster.
 
 * Koppelingen in tekst invoegen
 
-   Als u een externe koppeling wilt integreren in de tekst in uw bestelling, selecteert u een stuk tekst of een blok tekst en klikt u op het eerste pictogram in de pop-upwerkbalk. Klik **[!UICONTROL Link to an external URL]**, ga het verbindingsadres in **[!UICONTROL URL]** gebied in. Voor meer op dit, verwijs naar [Toevoegend een verbinding](editing-content.md#adding-a-link).
+   Als u een externe koppeling wilt integreren in de tekst in uw bestelling, selecteert u een stuk tekst of een blok tekst en klikt u op het eerste pictogram in de pop-upwerkbalk. Klikken **[!UICONTROL Link to an external URL]**, voert u het koppelingsadres in de **[!UICONTROL URL]** veld. Raadpleeg voor meer informatie hierover [Een koppeling toevoegen](editing-content.md#adding-a-link).
 
    U kunt de koppeling op elk gewenst moment wijzigen met de sectie rechts van het venster.
 
    >[!CAUTION]
    >
-   >De oorspronkelijke tekst wordt vervangen door de tekst die u in het veld **[!UICONTROL Label]** hebt ingevoerd.
+   >De tekst die is ingevoerd in het **[!UICONTROL Label]** wordt de oorspronkelijke tekst vervangen.
 
 * Een spiegelpagina toevoegen
 
    Om uw ontvangers toe te staan om uw leveringsinhoud in browser van het Web te bekijken, kunt u een verbinding aan een spiegelpagina in uw levering integreren.
 
-   Klik op het tekstveld waarin u de koppeling wilt plaatsen. Klik op het eerste pictogram op de pop-upwerkbalk, selecteer **[!UICONTROL Personalization block]** en **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klik **[!UICONTROL Save]** om te bevestigen.
+   Klik op het tekstveld waarin u de koppeling wilt plaatsen. Klik op het eerste pictogram op de pop-upwerkbalk en selecteer **[!UICONTROL Personalization block]** vervolgens **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klikken **[!UICONTROL Save]** ter bevestiging.
 
    ![](assets/dce_mirrorpage.png)
 
@@ -104,18 +104,18 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
 * Een koppeling naar een webtoepassing integreren
 
-   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campaign-console, zoals een openingspagina of een formulierpagina. Voor meer op dit, verwijs naar [Verbinding aan een toepassing van het Web](editing-content.md#link-to-a-web-application).
+   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campaign-console, zoals een openingspagina of een formulierpagina. Raadpleeg voor meer informatie hierover [Koppelen naar een webtoepassing](editing-content.md#link-to-a-web-application).
 
-   Selecteer een tekstveld voor de koppeling naar een webtoepassing en klik op het eerste pictogram. Kies **[!UICONTROL Link to a Web application]**, dan selecteer de gewenste toepassing door het pictogram aan het eind van **Web Application** te klikken gebied.
+   Selecteer een tekstveld voor de koppeling naar een webtoepassing en klik op het eerste pictogram. Kies **[!UICONTROL Link to a Web application]** selecteert u vervolgens de gewenste toepassing door op het pictogram aan het einde van het dialoogvenster **Webtoepassing** veld.
 
    ![](assets/dce_webapp.png)
 
-   Klik **Opslaan** om te bevestigen.
+   Klikken **Opslaan** ter bevestiging.
 
    >[!NOTE]
    >
-   >Voor deze stap moet u ten minste één webtoepassing opslaan. Deze vindt u op het tabblad **[!UICONTROL Campaigns > Web applications]** van uw console.
+   >Voor deze stap moet u ten minste één webtoepassing opslaan. Deze vindt u in het dialoogvenster **[!UICONTROL Campaigns > Web applications]** tabblad van uw console.
 
 ## Stap 5 - de levering bewaren {#step-5---saving-the-delivery}
 
-Wanneer de inhoud is geïntegreerd, slaat u de levering op door op **Opslaan** te klikken. Het wordt nu weergegeven in de lijst met leveringen op het tabblad **[!UICONTROL Campaigns > Deliveries]**.
+Nadat de inhoud is geïntegreerd, kunt u de levering opslaan door op **Opslaan**. Het wordt nu weergegeven in de lijst met leveringen die u kunt vinden in het dialoogvenster **[!UICONTROL Campaigns > Deliveries]** tab.

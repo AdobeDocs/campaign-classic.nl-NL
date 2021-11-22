@@ -25,9 +25,9 @@ In een gericht werkschema (uitgaand kanaal), kunt u de doelgegevens tijdens een 
 
 ## Aanvullende gegevensconfiguratie {#additional-data-configuration}
 
-U moet het **nms:interaction** schema uitbreiden verbonden aan het milieu en de lijst van extra gebieden verklaren die tijdens een vraag aan de motor van de Interactie zullen worden gebruikt. Wanneer het creëren van de geschiktheidsregel of het aanpassen van een aanbieding, zullen deze gebieden van de **knoop Interaction** toegankelijk worden (verwijs naar [het Gebruiken van extra gegevens](#using-additional-data)).
+U moet het dialoogvenster **nms:interactie** schema verbonden aan het milieu en verklaar de lijst van extra gebieden die tijdens een vraag aan de motor van de Interactie zullen worden gebruikt. Wanneer u de toelatingsregel maakt of een aanbieding personaliseert, worden deze velden toegankelijk via de **Interactie** node (verwijzing naar [Extra gegevens gebruiken](#using-additional-data)).
 
-Voor het binnenkomende kanaal, moet u de gebieden van vraaggegevens in **Interaction** knoop toevoegen.
+Voor het binnenkomende kanaal, moet u de gebieden van vraaggegevens in toevoegen **Interactie** knooppunt.
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -39,7 +39,7 @@ Voor het binnenkomende kanaal, moet u de gebieden van vraaggegevens in **Interac
 >
 >De inzamelingen van XML worden gesteund op het binnenkomende kanaal, maar de verbindingen aan andere schema&#39;s zijn niet.
 
-Voor het uitgaande kanaal, moet u een **targetData** element toevoegen die de extra gebieden in **Interaction** knoop bevatten.
+Voor het uitgaande kanaal moet u een **targetData** element met de aanvullende velden in het dialoogvenster **Interactie** knooppunt.
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -53,7 +53,7 @@ Voor het uitgaande kanaal, moet u een **targetData** element toevoegen die de ex
 >
 >Verzamelingen worden niet ondersteund voor het uitgaande kanaal. U kunt echter koppelingen naar andere schema&#39;s maken.
 
-Als u deze gegevens in de propositietabel wilt opslaan, moet u ook het schema **nms:propositionRcp** uitbreiden en deze velden declareren.
+Als u deze gegevens in de tabel met voorstellen wilt opslaan, moet u ook de opties **nms:propositionRcp** en declareer deze velden.
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -66,7 +66,7 @@ Als u deze gegevens in de propositietabel wilt opslaan, moet u ook het schema **
 
 ### Invoerkanaal (webpagina) {#input-channel--web-page-}
 
-Als u aanvullende gegevens wilt overbrengen wanneer u de engine aanroept, moet u de variabele **interactionGlobalCtx** toevoegen aan de JavaScript-code van de webpagina. Voeg de **Interaction** knoop in die de vraaggegevens in deze variabele bevat. U moet de zelfde xml structuur respecteren die in **nms:interaction** schema is. Zie: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
+Als u aanvullende gegevens wilt overbrengen wanneer u de engine aanroept, moet u de opdracht **interactionGlobalCtx** in de JavaScript-code van de webpagina. Voeg de **Interactie** knoop die de vraaggegevens in deze variabele bevatten. U moet dezelfde XML-structuur gebruiken als in het dialoogvenster **nms:interactie** schema. Zie: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -74,7 +74,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Uitvoerkanaal {#output-channel}
 
-U moet een doelworkflow maken waarin aanvullende gegevens in de werktabel worden geladen door dezelfde XML-structuur en dezelfde interne namen als in het schema **nms:interaction** te respecteren. Zie: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
+U moet een doelworkflow maken waarin aanvullende gegevens in de werktabel worden geladen door dezelfde XML-structuur en dezelfde interne namen als in de werktabel te gebruiken **nms:interactie** schema. Zie: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
 ## Extra gegevens gebruiken {#using-additional-data}
 
@@ -88,7 +88,7 @@ U kunt bijvoorbeeld het aanbod alleen laten weergeven aan mensen die de pagina i
 
 >[!NOTE]
 >
->U moet de regel beperken op de kanalen waarvoor de gegevens worden bepaald. In ons voorbeeld, beperken wij de regel op het binnenkomende Webkanaal (**[!UICONTROL Taken into account if]** gebied).
+>U moet de regel beperken op de kanalen waarvoor de gegevens worden bepaald. In ons voorbeeld beperken we de regel voor het binnenkomende webkanaal (**[!UICONTROL Taken into account if]** veld).
 
 ### Personalisatie {#personalization}
 
@@ -100,11 +100,11 @@ U kunt deze extra gegevens ook gebruiken wanneer u een aanbieding personaliseert
 >
 >U moet de personalisatie op de kanalen beperken waarvoor de gegevens worden bepaald. In ons voorbeeld beperken we de regel voor het binnenkomende webkanaal.
 
-Als u een aanbieding hebt gepersonaliseerd met behulp van aanvullende gegevens, worden deze gegevens standaard niet in de voorvertoning weergegeven omdat ze niet beschikbaar zijn in de database. Op het **[!UICONTROL Example of call data]** lusje van het milieu, moet u waardesteekproeven toevoegen om in de voorproef te gebruiken. Gelieve te respecteren de zelfde xml structuur die in **nms:interaction** schemauitbreiding is. Voor meer op dit, verwijs naar [Aanvullende gegevensconfiguratie](#additional-data-configuration).
+Als u een aanbieding hebt gepersonaliseerd met behulp van aanvullende gegevens, worden deze gegevens standaard niet in de voorvertoning weergegeven omdat ze niet beschikbaar zijn in de database. In het milieu **[!UICONTROL Example of call data]** kunt gebruiken, moet u waardesteekproeven toevoegen in de voorproef. Neem dezelfde XML-structuur in acht als in de **nms:interactie** schema-extensie. Raadpleeg voor meer informatie hierover [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
-Klik tijdens het voorvertonen op **[!UICONTROL Content personalization options for the preview]** en selecteer een waarde in het veld **[!UICONTROL Call data]**.
+Klik tijdens het voorvertonen op **[!UICONTROL Content personalization options for the preview]** en selecteer een waarde in het dialoogvenster **[!UICONTROL Call data]** veld.
 
 ![](assets/ita_calldata_preview2.png)
 
@@ -114,11 +114,11 @@ Tijdens een vraag aan de motor, kunt u extra gegevens in de propositietabel opsl
 
 >[!NOTE]
 >
->U moet het schema **nms:propositionRcp** hebben uitgebreid en de gebieden verklaard die de op te slaan gegevens zullen bevatten. Voor meer informatie hierover: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
+>U moet de **nms:propositionRcp** en de velden gedeclareerd die de gegevens bevatten die moeten worden opgeslagen. Voor meer informatie hierover: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
-Ga in de aanbiedingsruimte naar het tabblad **[!UICONTROL Storage]** en klik op de knop **[!UICONTROL Add]**.
+Ga in de aanbiedingsruimte naar de **[!UICONTROL Storage]** en klik op de knop **[!UICONTROL Add]** knop.
 
-Selecteer in de kolom **[!UICONTROL Storage path]** het opslagveld in de tabel met profielen. Selecteer in de kolom **[!UICONTROL Expression]** het extra veld in het knooppunt **[!UICONTROL Interaction]**.
+In de **[!UICONTROL Storage path]** selecteert u het opslagveld in de tabel met profielen. In de **[!UICONTROL Expression]** de kolom, selecteer het extra gebied in **[!UICONTROL Interaction]** knooppunt.
 
 U kunt vraaggegevens terugwinnen wanneer het voorstel wordt geproduceerd of wanneer het wordt goedgekeurd (wanneer de persoon op de aanbieding klikt).
 

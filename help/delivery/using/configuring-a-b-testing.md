@@ -19,17 +19,17 @@ ht-degree: 3%
 
 In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voeren.
 
-1. Creeer een nieuw werkschema dan vormen een [Vraag](../../workflow/using/query.md) activiteit om de gewenste bevolking te richten.
+1. Maak een nieuwe workflow en configureer vervolgens een [Query](../../workflow/using/query.md) activiteit om de gewenste bevolking te bereiken.
 
-1. Voeg een [Gesplitste ](../../workflow/using/split.md) activiteit toe om de doelpopulatie in veelvoudige ondergroepen te verdelen.
+1. Voeg een [Splitsen](../../workflow/using/split.md) activiteit om de doelpopulatie in meerdere subgroepen te verdelen.
 
-1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Raadpleeg [deze sectie](../../workflow/using/split.md) voor meer informatie over het configureren van een **[!UICONTROL Split]**-activiteit.
+1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om een te vormen **[!UICONTROL Split]** activiteit, zie [deze sectie](../../workflow/using/split.md).
 
    In dit voorbeeld willen we twee nieuwe onderwerpen testen voor een nieuwsbrief door ze allemaal te presenteren aan 10 procent van de doelgroep.
 
    ![](assets/ab-testing-split.png)
 
-1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Hiervoor activeert u de optie **[!UICONTROL Generate complement]** op het tabblad **[!UICONTROL General]**.
+1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Om dit te doen, activeer **[!UICONTROL Generate complement]** van de **[!UICONTROL General]** tab.
 
    ![](assets/ab-testing-complement.png)
 

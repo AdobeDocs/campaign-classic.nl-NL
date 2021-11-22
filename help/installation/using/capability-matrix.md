@@ -9,7 +9,7 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschi
 
 Deze pagina toont de belangrijkste verschillen tussen gehoste (Managed Services) en on-premise implementaties. De specifieke eigenschappen van hybride plaatsingen hangen van de elementen af die door Adobe worden ontvangen en in uw gebouwen worden ontvangen.
 
-De verschillende ontvangende modellen worden geïntroduceerd [in deze sectie](../../installation/using/hosting-models.md).
+De verschillende hostingmodellen zijn geïntroduceerd [in deze sectie](../../installation/using/hosting-models.md).
 
 ## Beschikbaarheid per implementatiemodel {#capability-matrix}
 
@@ -35,7 +35,7 @@ De verschillende ontvangende modellen worden geïntroduceerd [in deze sectie](..
 | Integreren met IMS (Adobe ID) | Op aanvraag | Op aanvraag | Op aanvraag | [Meer informatie](../../integrations/using/about-adobe-id.md) |
 | Gegevens versleutelen/ontsleutelen voor bestandsoverdracht | Op aanvraag | Beschikbaar | Beschikbaar | [Meer informatie](../../platform/using/unzip-decrypt.md) |
 | Zipping/Unzipping-bestanden | Op aanvraag | Beschikbaar | Beschikbaar | [Meer informatie](../../platform/using/unzip-decrypt.md) |
-| Domeinnaamdelegatie | Op aanvraag | Op aanvraag | Niet beschikbaar | [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html) |
+| Domeinnaamdelegatie | Op aanvraag | Op aanvraag | Niet beschikbaar | [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl) |
 | SpamAssassin installeren | Op aanvraag | Beschikbaar | Beschikbaar | [Meer informatie](../../delivery/using/spamassassin.md) |
 | Toegang tot leverbaarbaarheidsrapporten | Beschikbaar | Op aanvraag | Beschikbaar | [Meer informatie](../../delivery/using/monitoring-deliverability.md) |
 | LDAP-verificatie configureren | Niet beschikbaar | Beschikbaar | Beschikbaar | [Meer informatie](../../installation/using/connecting-through-ldap.md) |
@@ -43,11 +43,11 @@ De verschillende ontvangende modellen worden geïntroduceerd [in deze sectie](..
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign biedt de optie **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
+Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve met de [Snowflake-connector](../../installation/using/configure-fda-snowflake.md).
+>Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve voor [Snowflake-aansluiting](../../installation/using/configure-fda-snowflake.md).
 
 
 **Zie ook**

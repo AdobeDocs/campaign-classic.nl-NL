@@ -19,11 +19,11 @@ ht-degree: 5%
 
 Nadat de testleveringen zijn verzonden, kunt u controleren naar welke ontvanger(s) zij zijn verzonden en of zij al dan niet zijn geopend.
 
-* Om te weten te komen welke ontvangers zijn gericht, open een levering via het campagnesdashboard en klik **[!UICONTROL Delivery]** tabel.
+* Als u wilt weten welke ontvangers als doel hebben, opent u een levering via het campagnemdashboard en klikt u op de knop **[!UICONTROL Delivery]** tab.
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* Als u wilt weten of de levering is geopend, gaat u naar het tabblad **[!UICONTROL Tracking]**.
+* Als u wilt weten of de levering is geopend, gaat u naar de **[!UICONTROL Tracking]** tab.
 
    ![](assets/use_case_abtesting_analysis_002.png)
 

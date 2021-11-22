@@ -17,19 +17,19 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Met de activiteit **Extern signaal** kunt u de uitvoering van een set taken in een werkstroom in een planning activeren.
+De **Extern signaal** activiteit laat u uitvoering van een reeks taken in een werkschema aan een programma teweegbrengen.
 
-Wanneer een &quot;Externe signaaltaak&quot;wordt geactiveerd, wordt het voor onbepaalde tijd gepauzeerd of tot het eind van de gespecificeerde tijdspanne. De overgang ervan wordt geactiveerd door de SOAP-aanroep **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** De  **[!UICONTROL complete]** parameter staat de taak toe om worden gebeëindigd, zodat zal het niet op verdere vraag reageren.
+Wanneer een &quot;Externe signaaltaak&quot;wordt geactiveerd, wordt het voor onbepaalde tijd gepauzeerd of tot het eind van de gespecificeerde tijdspanne. De overgang ervan wordt geactiveerd door de SOAP-aanroep **PostEvent(sessionToken, workflowId, activiteit, overgang, parameters, voltooid).** De **[!UICONTROL complete]** parameter laat de taak toe worden gebeëindigd, zodat zal het niet op verdere vraag reageren.
 
 Raadpleeg de online documentatie over SOAP-oproepen voor meer informatie over de PostEvent-functie.
 
-U kunt deze activiteit vormen om gebeurtenissen te bepalen als geen signaal wordt ontvangen. Hiervoor bewerkt u de activiteit en klikt u op het tabblad **[!UICONTROL Expiration]**. Klik op de knop **[!UICONTROL Insert]** om een gebeurtenis te maken en te configureren.
+U kunt deze activiteit vormen om gebeurtenissen te bepalen als geen signaal wordt ontvangen. Hiervoor bewerkt u de activiteit en klikt u op de knop **[!UICONTROL Expiration]** tab. Klik op de knop **[!UICONTROL Insert]** om een gebeurtenis te maken en te configureren.
 
 ![](assets/edit_signal.png)
 
-De configuratie van verlopen wordt gedetailleerd in [Verlopen](defining-approvals.md).
+De configuratie van verlopen wordt in detail beschreven in [Verlopen](defining-approvals.md).
 
-Met het veld **Vertraging** kunt u een vervalvertraging opgeven in de gewenste eenheden. Zie [Wacht](wait.md).
+De **Vertraging** kunt u een vervalvertraging opgeven in de gewenste eenheden. Zie [Wachten](wait.md).
 
 Elke regel vertegenwoordigt een type vervaldatum en valt samen met een overgang.
 

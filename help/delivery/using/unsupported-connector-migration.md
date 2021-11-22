@@ -35,33 +35,33 @@ De volgende schakelaars worden afgekeurd vanaf versie 20.2:
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Verouderde mogelijkheden zijn nog steeds beschikbaar en worden ondersteund, maar ze worden niet verder uitgebreid. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar.
+Verouderde mogelijkheden zijn nog steeds beschikbaar en worden ondersteund, maar ze worden niet verder uitgebreid. We raden u aan de **[!UICONTROL Extended generic SMPP]** -aansluiting.
 
-Raadpleeg deze [pagina](../../rn/using/deprecated-features.md) voor meer informatie over vervangen en verwijderde functies.
+Raadpleeg voor meer informatie over vervangen en verwijderde functies [page](../../rn/using/deprecated-features.md).
 
-De oude schakelaars van SMS gebruiken de schakelaar van SMS van Java die het Webproces overlaadt. Het migreren aan de nieuwe **[!UICONTROL Extended Generic SMPP]** schakelaar zal deze lading aan MTA bewegen die het kan steunen.
+De oude schakelaars van SMS gebruiken de schakelaar van SMS van Java die het Webproces overlaadt. Migreren naar de nieuwe **[!UICONTROL Extended Generic SMPP]** de schakelaar zal deze lading naar MTA verplaatsen die het kan steunen.
 
 ## Migreren naar de Extended Generic SMPP-connector {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->Zelfs als u de parameters kunt omzetten, vereist het vormen van de **[!UICONTROL Extended Generic SMPP]** schakelaar u om met uw leverancier te spreken die u de informatie nodig zal geven om de rest parameters in te vullen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
+>Zelfs als u de parameters kunt omzetten, vormend **[!UICONTROL Extended Generic SMPP]** de schakelaar vereist u om met uw leverancier te spreken die u de informatie nodig zal geven om de rest parameters in te vullen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
 
-Eerst, zult u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening moeten creëren en dan zou u sommige parameters kunnen omzetten. U kunt de gedetailleerde stappen in deze [pagina](sms-set-up.md#creating-an-smpp-external-account) vinden.
+Eerst moet u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening en dan kunt u sommige parameters misschien omzetten. U vindt de gedetailleerde stappen in dit [page](sms-set-up.md#creating-an-smpp-external-account).
 
-U moet nu de parameters van het **[!UICONTROL Mobile]** lusje van uw onlangs gecreeerd **[!UICONTROL Extended Generic SMPP]** externe rekening, afhankelijk van uw vorige schakelaar invullen.
+U moet nu de parameters van de **[!UICONTROL Mobile]** tabblad van uw zojuist gemaakte **[!UICONTROL Extended Generic SMPP]** externe account, afhankelijk van uw vorige connector.
 
 ### Van de Algemene schakelaar {#from-generic-connector}
 
-Wanneer u de **[!UICONTROL Generic]**-connector kiest, moet u een aangepaste JavaScript-connector hebben die zich aan elke situatie aanpast.
+Als u de opdracht **[!UICONTROL Generic]** moet u beschikken over een aangepaste JavaScript-connector die zich aan elke situatie aanpast.
 
-Als u weet dat deze schakelaar reeds het protocol SMPP gebruikt dan kunt u aan de **[!UICONTROL Extended Generic SMPP]** schakelaar migreren. Als dat niet het geval is, raadpleegt u uw provider of deze het SMPP-protocol ondersteunt en stelt u een nieuwe connector in met de hulp van een consultant.
+Als u weet dat deze schakelaar reeds het protocol SMPP gebruikt dan kunt u aan **[!UICONTROL Extended Generic SMPP]** -aansluiting. Als dat niet het geval is, raadpleegt u uw provider of deze het SMPP-protocol ondersteunt en stelt u een nieuwe connector in met de hulp van een consultant.
 
-Vanuit uw **[!UICONTROL Generic]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL Generic]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_generic.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -70,11 +70,11 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 
 ### Van de Algemene schakelaar SMPP {#from-generic-smpp-connector}
 
-Vanuit uw **[!UICONTROL Generic SMPP]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL Generic SMPP]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_generic_2.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -82,7 +82,7 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-Op het tabblad **[!UICONTROL SMPP Channel Settings]**:
+In de **[!UICONTROL SMPP Channel Settings]** tab:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
@@ -90,22 +90,22 @@ Op het tabblad **[!UICONTROL SMPP Channel Settings]**:
 * **[!UICONTROL Source TON]**
 * **[!UICONTROL Destination TON]**
 
-Op het tabblad **[!UICONTROL Mapping of Encoding]**:
+In de **[!UICONTROL Mapping of Encoding]** tab:
 
 * **[!UICONTROL Outbound SMS coding]**
 
-Op het tabblad **[!UICONTROL SMSC specificities]**:
+In de **[!UICONTROL SMSC specificities]** tab:
 
-* **[!UICONTROL Coding when sending]** komt overeen met  **[!UICONTROL ID Format in MT acknowledgement]**
-* **[!UICONTROL Coding when receiving]** komt overeen met  **[!UICONTROL ID Format in the SR]**
+* **[!UICONTROL Coding when sending]** komt overeen met **[!UICONTROL ID Format in MT acknowledgement]**
+* **[!UICONTROL Coding when receiving]** komt overeen met **[!UICONTROL ID Format in the SR]**
 
 ### Van de Sybase365-connector {#from-sybase}
 
-Vanuit uw **[!UICONTROL Sybase365]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL Sybase365]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_3.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -115,11 +115,11 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 
 ### Van CLX-connector {#from-clx}
 
-Vanuit uw **[!UICONTROL CLX]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL CLX]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_4.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -127,22 +127,22 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-Op het tabblad **[!UICONTROL SMPP Channel Settings]**:
+In de **[!UICONTROL SMPP Channel Settings]** tab:
 
 * **[!UICONTROL Source number]**
 
-Op het tabblad **[!UICONTROL SMSC specificities]**:
+In de **[!UICONTROL SMSC specificities]** tab:
 
-* **[!UICONTROL Coding when sending]** komt overeen met  **[!UICONTROL ID Format in MT acknowledgement]**
-* **[!UICONTROL Coding when receiving]** komt overeen met  **[!UICONTROL ID Format in the SR]**
+* **[!UICONTROL Coding when sending]** komt overeen met **[!UICONTROL ID Format in MT acknowledgement]**
+* **[!UICONTROL Coding when receiving]** komt overeen met **[!UICONTROL ID Format in the SR]**
 
 ### Van de Tele2-connector {#from-tele2}
 
-Vanuit uw **[!UICONTROL Tele2]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL Tele2]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_6.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -150,24 +150,24 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-Op het tabblad **[!UICONTROL SMPP Channel Settings]**:
+In de **[!UICONTROL SMPP Channel Settings]** tab:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
 * **[!UICONTROL Destination NPI]**
 * **[!UICONTROL Source TON]**
 
-Op het tabblad **[!UICONTROL Mapping of Encoding]**:
+In de **[!UICONTROL Mapping of Encoding]** tab:
 
 * **[!UICONTROL Outbound SMS coding]**
 
 ### Van de O2-connector {#from-O2}
 
-Vanuit uw **[!UICONTROL O2]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
+Van uw **[!UICONTROL O2]** -aansluiting, kunt u omzetten naar uw nieuwe **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_5.png)
 
-Op het tabblad **[!UICONTROL Connection Settings]**:
+In de **[!UICONTROL Connection Settings]** tab:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -175,7 +175,7 @@ Op het tabblad **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-Op het tabblad **[!UICONTROL SMPP Channel Settings]**:
+In de **[!UICONTROL SMPP Channel Settings]** tab:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**

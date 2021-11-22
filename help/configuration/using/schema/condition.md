@@ -41,11 +41,11 @@ Met dit element kunt u een filtervoorwaarde definiëren.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-2}
 
-Één `<sysfiler>` element kan verscheidene het filtreren voorwaarden bevatten.
+Eén `<sysfiler>`  element kan verschillende filtervoorwaarden bevatten.
 
 ## Beschrijving van kenmerk {#attribute-description-2}
 
-* **boolOperator (tekenreeks)**: als er meerdere  `<conditions>` zijn gedefinieerd binnen hetzelfde   `<sysfilter>` element, kunt u deze combineren met dit kenmerk. Door gebrek, is de logische verbinding tussen `<condition>` elementen &quot;EN&quot;. Met het kenmerk &quot;@boolOperator&quot; kunt u koppelingen van het type &quot;OR&quot; en &quot;AND&quot; combineren.
+* **boolOperator (tekenreeks)**: indien meerdere `<conditions>` worden gedefinieerd binnen dezelfde  `<sysfilter>` -element, kunt u deze kenmerken combineren. Standaard is de logische koppeling tussen `<condition>` elementen is &quot;AND&quot;. Met het kenmerk &quot;@boolOperator&quot; kunt u koppelingen van het type &quot;OR&quot; en &quot;AND&quot; combineren.
 * **enabledIf (string)**: activeringstest voorwaarde.
 * **expr (tekenreeks)**: een XTK-expressie.
 

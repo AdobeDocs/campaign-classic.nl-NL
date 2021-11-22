@@ -23,12 +23,12 @@ In deze sectie worden de benodigde configuratiestappen in Adobe Campaign beschre
 >
 >Deze integraties zijn gelijktijdig. Lees de volgende informatie zorgvuldig door alvorens om het even welke configuratie te maken.
 
-* Integratie met **Experience Cloud Assets**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Cloud-bibliotheek invoegen. Deze integratie moet worden ingesteld door het ingebouwde **[!UICONTROL Integration with the Adobe Experience Cloud]**-pakket in Adobe Campaign te installeren.
-* Integratie met **AEM Assets**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Manager Assets-bibliotheek invoegen. Deze integratie moet worden ingesteld door het ingebouwde **[!UICONTROL AEM Integration]**-pakket in Adobe Campaign te installeren. Deze integratie is vanaf Adobe Experience Manager 6.4 niet meer beschikbaar.
+* Integratie met **Experience Cloud-middelen**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Cloud-bibliotheek invoegen. Deze integratie moet worden ingesteld door de installatie van de **[!UICONTROL Integration with the Adobe Experience Cloud]** ingebouwd pakket in Adobe Campaign.
+* Integratie met **AEM Assets**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Manager Assets-bibliotheek invoegen. Deze integratie moet worden ingesteld door de installatie van de **[!UICONTROL AEM Integration]** ingebouwd pakket in Adobe Campaign. Deze integratie is vanaf Adobe Experience Manager 6.4 niet meer beschikbaar.
 
 >[!NOTE]
 >
->Als de twee pakketten (**[!UICONTROL AEM Integration]** en **[!UICONTROL Integration with the Adobe Experience Cloud]**) zijn geïnstalleerd, kunnen alleen de elementen worden gebruikt die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek.
+>Indien de twee pakketten (**[!UICONTROL AEM Integration]** en **[!UICONTROL Integration with the Adobe Experience Cloud]** ) zijn geïnstalleerd, kunnen alleen de elementen die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek worden gebruikt.
 
 ## Integreren met Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
@@ -37,9 +37,9 @@ Als u de integratie tussen Adobe Campaign en Experience Cloud Assets wilt gebrui
 * Een Adobe Experience Cloud-organisatie
 * De Adobe IMS-verificatiemodus ingeschakeld
 
-Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschakelen, configureert u de verbinding via IMS (Adobe ID-verbindingsservice). Deze configuratie wordt gedetailleerd beschreven in [Verbinding maken via een Adobe ID](../../integrations/using/about-adobe-id.md)-document. Het gaat om:
+Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschakelen, configureert u de verbinding via IMS (Adobe ID-verbindingsservice). Deze configuratie wordt in het gedeelte [Verbinding maken via een Adobe ID](../../integrations/using/about-adobe-id.md) document. Het gaat om:
 
-* Het **[!UICONTROL Integration with the Adobe Experience Cloud]**-pakket installeren.
+* De installatie van de **[!UICONTROL Integration with the Adobe Experience Cloud]** pakket.
 * Een externe Adobe Experience Cloud-account configureren.
 
 >[!NOTE]
@@ -55,22 +55,22 @@ Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschak
 
 Als u AEM Assets wilt integreren met Adobe Campaign, moet u eerst de integratie tussen Adobe Experience Manager en Adobe Campaign configureren. Voor deze configuratie is voornamelijk het volgende vereist:
 
-* Het ingebouwde **[!UICONTROL AEM Integration]**-pakket installeren
+* De installatie van de **[!UICONTROL AEM Integration]** ingebouwd pakket
 * Een externe account configureren die specifiek is voor Adobe Experience Manager
 
 Leer hoe u Adobe Campaign en Adobe Experience Manager kunt integreren in de [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md).
 
 Zodra deze integratie is ingesteld, kunt u een nieuwe leveringssjabloon in Adobe Campaign configureren voor het gebruik van de AEM Assets-bibliotheek. Volg de onderstaande stappen om dit te doen:
 
-1. Een nieuwe leveringssjabloon maken - of een bestaande sjabloon dupliceren. Raadpleeg [deze pagina](../../delivery/using/about-templates.md) voor meer informatie over leveringssjablonen.
-1. Bewerk de **Eigenschappen** van deze sjabloon.
-1. Stel op het tabblad **[!UICONTROL Advanced]** de **[!UICONTROL Content editing mode]** in op **DCE**.
-1. Selecteer de externe **[!UICONTROL AEM account]** die u moet gebruiken om uw AEM Assets-bibliotheek te openen.
+1. Een nieuwe leveringssjabloon maken - of een bestaande sjabloon dupliceren. Voor meer informatie over leveringssjablonen raadpleegt u [deze pagina](../../delivery/using/about-templates.md).
+1. Bewerk de **Eigenschappen** van deze template.
+1. In de **[!UICONTROL Advanced]** tabblad, stelt u de **[!UICONTROL Content editing mode]** tot **DCE**.
+1. Externe selecteren **[!UICONTROL AEM account]** die u moet gebruiken om toegang te krijgen tot uw AEM Assets-bibliotheek.
 
    ![](assets/dam_aem_assets1.png)
 
-Wanneer u afbeeldingen invoegt in de inhoud van een levering die op deze sjabloon is gebaseerd, kunt u met de optie **[!UICONTROL Select a shared asset]** bladeren in afbeeldingen in de AEM Assets-bibliotheek. Meer informatie vindt u in [deze sectie](../../integrations/using/inserting-a-shared-asset.md).
+Wanneer u afbeeldingen invoegt in de inhoud van een levering die op deze sjabloon is gebaseerd, wordt de **[!UICONTROL Select a shared asset]** kunt u vervolgens door afbeeldingen bladeren in de AEM Assets-bibliotheek. Meer informatie in [deze sectie](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >
->Als het **[!UICONTROL Integration with the Adobe Experience Cloud]**-pakket ook op uw Adobe Campaign-instantie is geïnstalleerd, kunt u alleen de elementen gebruiken die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek. Als u ook toegang wilt tot de elementen in uw AEM Assets-bibliotheek, moet u AEM Assets en Adobe Experience Cloud synchroniseren. De middelen in AEM Assets zijn dan ook beschikbaar in de Adobe Experience Cloud-bibliotheek. In dit geval hoeft u geen specifieke leveringssjabloon te maken.
+>Als de **[!UICONTROL Integration with the Adobe Experience Cloud]** -pakket is ook geïnstalleerd op uw Adobe Campaign-instantie. U kunt alleen de middelen gebruiken die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek. Als u ook toegang wilt tot de elementen in uw AEM Assets-bibliotheek, moet u AEM Assets en Adobe Experience Cloud synchroniseren. De middelen in AEM Assets zijn dan ook beschikbaar in de Adobe Experience Cloud-bibliotheek. In dit geval hoeft u geen specifieke leveringssjabloon te maken.

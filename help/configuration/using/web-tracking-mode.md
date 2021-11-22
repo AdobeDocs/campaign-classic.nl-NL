@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Met Adobe Campaign kunt u een webvolgmodus selecteren waarmee wordt gedefinieerd hoe trackinglogbestanden in de toepassing worden verwerkt.
 
-Er zijn drie beschikbare wijzen het volgen van het Web: **&quot;Sessietracering&quot;**,**&quot;Permanente tracking&quot;** en **&quot;Anonieme tracking&quot;**.
+Er zijn drie beschikbare wijzen het volgen van het Web: **&quot;Sessietracering&quot;**,**&quot;Permanent tracking&quot;** en **&quot;Anoniem bijhouden&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -31,7 +31,7 @@ Elke modus heeft specifieke kenmerken. De &quot;permanente&quot;het volgen van h
 >
 >Op elk gewenst moment kan de standaardmodus worden gewijzigd in de wizard voor de implementatie van instanties.
 
-Als u de **permanente web** of **anonieme** volgmodus gebruikt, moet u een index toevoegen aan de kolom &quot;sourceID&quot; (uuid230) in de volgende tabellen (trackingLogXXX):
+Als u de opdracht **permanent web** of **anoniem** In de volgende modus moet u een index toevoegen aan de kolom &quot;sourceID&quot; (uuid230) in de volgende tabellen (trackingLogXXX):
 
 1. Identificeer de volgende tabel(len) waarop permanente tracering betrekking heeft.
 1. Breid de schema&#39;s uit die deze lijsten aanpassen door de volgende lijnen toe te voegen:
@@ -42,11 +42,11 @@ Als u de **permanente web** of **anonieme** volgmodus gebruikt, moet u een index
 </dbindex>
 ```
 
-**De volgende** modi Permanente en  **** AnonymousWeb omvatten twee opties:  **Geforceerde** levering en  **laatste levering**.
+**Permanent** en **Anoniem** Webtraceringsmodi hebben twee opties: **Geforceerde levering** en **Laatste levering**.
 
-Met de optie **Geforceerde levering** kunt u de id van de levering (@jobid) tijdens het bijhouden opgeven.
+De **Geforceerde levering** kunt u de id van de levering (@jobid) tijdens het bijhouden opgeven.
 
-Met de optie **Laatste levering** kunt u het huidige trackinglogboek koppelen aan de laatst bijgehouden levering.
+De **Laatste levering** Met deze optie kunt u het huidige traceringslogboek koppelen aan de laatst bijgehouden levering.
 
 **Kenmerken van webtracking voor sessies:**
 
@@ -81,7 +81,7 @@ Deze wijze is het duurst in termen van berekening en volume.
 
 >[!NOTE]
 >
->Als het **[!UICONTROL Leads]** pakket geïnstalleerd is, moet u het zelfde voor de activiteitenlijst (**crm:inkomendLead**) doen
+>Als de **[!UICONTROL Leads]** het pakket is geïnstalleerd, moet u het zelfde voor de activiteitenlijst doen (**crm:inkomendLead**)
 
 Het volgende schema vat de functionaliteit van alle drie het volgen wijzen van het Web samen:
 

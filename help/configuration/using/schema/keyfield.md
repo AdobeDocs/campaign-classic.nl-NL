@@ -41,7 +41,7 @@ Dit element definieert de velden die moeten worden geïntegreerd in een index of
 ## Beschrijving van kenmerk {#attribute-description-9}
 
 * **xlink (MNTOKEN)**: Hiermee kunt u automatisch verwijzen naar externe sleutels die zijn gedefinieerd in de samenvoeging voor een relatietabel (N-N koppeling).
-* **xpath (MNTOKEN)**: definitie van een index of een sleutel op een  `<attribute>`  element. Dit kenmerk ontvangt een Xpath dat het pad naar het schemakenmerk definieert dat de sleutel of de index definieert.
+* **xpath (MNTOKEN)**: definitie van een index of een toets op een `<attribute>`  element. Dit kenmerk ontvangt een Xpath dat het pad naar het schemakenmerk definieert dat de sleutel of de index definieert.
 
 ## Voorbeelden {#examples-}
 

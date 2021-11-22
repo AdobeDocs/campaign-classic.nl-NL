@@ -19,13 +19,13 @@ ht-degree: 3%
 
 Dit rapport geeft de leveringsstatistieken weer met betrekking tot transactieberichten en de uitsplitsing naar fouten. U kunt op een fouttype klikken om de details ervan weer te geven.
 
-Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** lusje op de controleinstantie worden betreden.
+Dit rapport, dat gericht is op technische beheerders, is ook toegankelijk via **[!UICONTROL Monitoring]** op de besturingsinstantie.
 
 ![](assets/mc_reports_1.png)
 
 In dit rapport kunt u de algemene statistieken of de statistieken ten opzichte van een bepaalde uitvoeringsinstantie weergeven. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
 
-De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie worden getoond worden berekend over de geselecteerde periode:
+De indicatoren die worden weergegeven in het **[!UICONTROL Indicators over the period]** de sectie wordt berekend over de geselecteerde periode:
 
 * **[!UICONTROL Incoming (throughput event/h)]** : gemiddeld aantal gebeurtenissen per uur dat is ingevoerd in de wachtrij van het Berichtencentrum.
 * **[!UICONTROL Incoming (event vol)]** : Aantal gebeurtenissen ingegaan in de rij van het Centrum van het Bericht.
@@ -36,4 +36,4 @@ De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie word
 
 >[!NOTE]
 >
->De waarschuwings (oranje) en waakzame (rode) indicatordrempels kunnen in de plaatsingstovenaar worden gevormd. Raadpleeg [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De waarschuwings (oranje) en waakzame (rode) indicatordrempels kunnen in de plaatsingstovenaar worden gevormd. Zie [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).

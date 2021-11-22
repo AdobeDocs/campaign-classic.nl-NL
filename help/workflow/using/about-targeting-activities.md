@@ -19,24 +19,24 @@ ht-degree: 3%
 
 Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren en deze sets te splitsen of te combineren met behulp van doorsnede-, samenvoegings- of uitsluitingsbewerkingen.
 
-* **Query**: Hiermee kunt u een query uitvoeren. Zie [Een query](query.md#creating-a-query) maken.
-* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Raadpleeg de sectie [Incrementele query](incremental-query.md).
-* **Leeslijst**: Hiermee kunt u gegevens in een lijst gebruiken. Zie [Gegevens uit een lijst gebruiken: Leeslijst](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) sectie.
-* **Unie**: Hiermee kunt u het resultaat van verschillende activiteiten groeperen in één doel. Raadpleeg de sectie [Union](union.md).
-* **Doorsnede**: laat u slechts de bevolking met de zelfde binnenkomende activiteitenresultaten halen. Raadpleeg de sectie [Intersection](intersection.md).
-* **Uitsluiting**: Hiermee kunt u een doel maken op basis van een hoofddoel waaruit een of meer andere doelen worden gehaald. Raadpleeg de sectie [Intersection](intersection.md).
-* **Splitsen**: Hiermee kunt u een doel opsplitsen in verschillende subsets. Raadpleeg de sectie [Splitsen](split.md).
-* **Cellen**: biedt een weergave van de verschillende subsets in de vorm van gegevenskolommen en vereenvoudigt het manipuleren van deze subsets wanneer er veel zijn. Raadpleeg voor meer informatie de sectie [Cellen](cells.md).
-* **Aanbiedingen per cel**: Hiermee kunt u verschillende aanbiedingen koppelen aan elke subset van een populatie. Raadpleeg de sectie [Aanbiedingen per cel](offers-by-cell.md).
-* **Antwoorden** enquête: Hiermee kunt u tijdens een enquête verzamelde informatie herstellen. Raadpleeg deze [sectie](../../surveys/using/getting-started-with-surveys.md) voor meer informatie.
-* **Overzicht** van levering: Hiermee kunt u een overzicht van de levering toevoegen. Raadpleeg de sectie [Overzicht van levering](../../workflow/using/delivery-outline.md).
-* **Verrijking**: Hiermee kunt u kolommen toevoegen aan een werktabel of workflow. Raadpleeg de sectie [Verrijking](../../workflow/using/enrichment.md).
-* **Schema** bewerken: Hiermee kunt u gegevens transformeren, standaardiseren en indien nodig verrijken. Voor meer op dit, verwijs naar [geef schema](../../workflow/using/edit-schema.md) sectie uit.
-* **Aanbiedingsengine**: Hiermee kunt u de engine voor de interactieaanbieding in een workflow aanroepen. Raadpleeg de sectie [Aanbiedingsengine](../../workflow/using/offer-engine.md).
-* **Deduplicatie**: Hiermee kunt u duplicaten verwijderen uit binnenkomende activiteiten. Raadpleeg de sectie [Deduplicatie](../../workflow/using/deduplication.md).
-* **Dimensie** wijzigen: Hiermee kunt u de doeldimensie wijzigen tijdens de bouwcyclus van de workflow. Raadpleeg de sectie [Dimensie wijzigen](../../workflow/using/change-dimension.md).
-* **Abonnementsservices**: Hiermee kunt u abonnementen en abonnementen op een informatieservice beheren. Raadpleeg de sectie [Subscription Services](../../workflow/using/subscription-services.md).
-* **Lijstupdate**: registreert het resultaat van binnenkomende activiteiten in een lijst. Raadpleeg de sectie [List update](../../workflow/using/list-update.md).
-* **Gegevens** bijwerken: Hiermee kunt u de gegevens in de database ingrijpend bijwerken. Raadpleeg de sectie [Gegevens bijwerken](../../workflow/using/update-data.md).
-* **CRM-connector**: Hiermee kunt u de synchronisatie tussen Adobe Campaign en een CRM configureren. Raadpleeg de sectie [CRM-aansluiting](../../workflow/using/crm-connector.md).
-* **[!UICONTROL Change data source]**: Hiermee kunt u de gegevensbron van een workflow wijzigen  **[!UICONTROL Working table]**. Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database. Raadpleeg de sectie [CRM-aansluiting](../../workflow/using/change-data-source.md).
+* **Query**: Hiermee kunt u een query uitvoeren. Zie [Een query maken](query.md#creating-a-query).
+* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Zie de [Incrementele query](incremental-query.md) sectie.
+* **Leeslijst**: Hiermee kunt u gegevens in een lijst gebruiken. Zie de [Gegevens uit een lijst gebruiken: Leeslijst](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) sectie.
+* **Unie**: Hiermee kunt u het resultaat van verschillende activiteiten groeperen in één doel. Zie de [Unie](union.md) sectie.
+* **Intersectie**: laat u slechts de bevolking met de zelfde binnenkomende activiteitenresultaten halen. Zie de [Intersectie](intersection.md) sectie.
+* **Uitsluiting**: Hiermee kunt u een doel maken op basis van een hoofddoel waaruit een of meer andere doelen worden gehaald. Zie de [Intersectie](intersection.md) sectie.
+* **Splitsen**: Hiermee kunt u een doel opsplitsen in verschillende subsets. Zie de [Splitsen](split.md) sectie.
+* **Cellen**: biedt een weergave van de verschillende subsets in de vorm van gegevenskolommen en vereenvoudigt het manipuleren van deze subsets wanneer er veel zijn. Raadpleeg voor meer informatie de [Cellen](cells.md) sectie.
+* **Aanbiedingen per cel**: Hiermee kunt u verschillende aanbiedingen koppelen aan elke subset van een populatie. Zie de [Aanbiedingen per cel](offers-by-cell.md) sectie.
+* **Antwoorden enquête**: Hiermee kunt u tijdens een enquête verzamelde informatie herstellen. Raadpleeg deze [sectie](../../surveys/using/getting-started-with-surveys.md) voor meer informatie.
+* **Overzicht van levering**: Hiermee kunt u een overzicht van de levering toevoegen. Zie de [Overzicht van levering](../../workflow/using/delivery-outline.md) sectie.
+* **Verrijking**: Hiermee kunt u kolommen toevoegen aan een werktabel of workflow. Zie de [Verrijking](../../workflow/using/enrichment.md) sectie.
+* **Schema bewerken**: Hiermee kunt u gegevens transformeren, standaardiseren en indien nodig verrijken. Raadpleeg voor meer informatie de [Schema bewerken](../../workflow/using/edit-schema.md) sectie.
+* **Aanbiedingsengine**: Hiermee kunt u de engine voor de interactieaanbieding in een workflow aanroepen. Zie de [Aanbiedingsengine](../../workflow/using/offer-engine.md) sectie.
+* **Deduplicatie**: Hiermee kunt u duplicaten verwijderen uit binnenkomende activiteiten. Zie de [Deduplicatie](../../workflow/using/deduplication.md) sectie.
+* **Dimensie wijzigen**: Hiermee kunt u de doeldimensie wijzigen tijdens de bouwcyclus van de workflow. Zie de [Dimensie wijzigen](../../workflow/using/change-dimension.md) sectie.
+* **Abonnementsdiensten**: Hiermee kunt u abonnementen en abonnementen op een informatieservice beheren. Zie de [Abonnementsservices](../../workflow/using/subscription-services.md) sectie.
+* **Lijstupdate**: registreert het resultaat van binnenkomende activiteiten in een lijst. Zie de [Lijstupdate](../../workflow/using/list-update.md) sectie.
+* **Gegevens bijwerken**: Hiermee kunt u de gegevens in de database ingrijpend bijwerken. Zie de [Gegevens bijwerken](../../workflow/using/update-data.md) sectie.
+* **CRM-connector**: Hiermee kunt u de synchronisatie tussen Adobe Campaign en een CRM configureren. Zie de [CRM-connector](../../workflow/using/crm-connector.md) sectie.
+* **[!UICONTROL Change data source]**: Hiermee kunt u de gegevensbron van een workflow wijzigen **[!UICONTROL Working table]**. Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database. Zie de [CRM-connector](../../workflow/using/change-data-source.md) sectie.

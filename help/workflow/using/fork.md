@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-U kunt de **[!UICONTROL Fork]** activiteit gebruiken om veelvoudige uitgaande overgangen tot stand te brengen en verscheidene activiteiten onafhankelijk binnen het zelfde werkschema in werking te stellen.
+U kunt de **[!UICONTROL Fork]** activiteit om veelvoudige uitgaande overgangen tot stand te brengen en verscheidene activiteiten onafhankelijk binnen het zelfde werkschema te leiden.
 
 >[!IMPORTANT]
 >
->De uitgaande overgangen die u na een **[!UICONTROL Fork]** activiteit toevoegt lopen niet gelijktijdig. Dit gedrag kan van invloed zijn op de workflowprestaties. Gebruik de **[!UICONTROL Fork]** activiteit als u verscheidene activiteiten onafhankelijk moet in werking stellen. Naar keuze, kunt u zich bij de uitgaande activiteiten vóór het verdere deel van het werkschema aansluiten.
+>De uitgaande overgangen die u na een **[!UICONTROL Fork]** activiteit wordt niet gelijktijdig uitgevoerd. Dit gedrag kan van invloed zijn op de workflowprestaties. Gebruik de **[!UICONTROL Fork]** activiteit als u verscheidene activiteiten onafhankelijk moet uitvoeren. Naar keuze, kunt u zich bij de uitgaande activiteiten vóór het verdere deel van het werkschema aansluiten.
 
-Voer de volgende stappen uit om een **[!UICONTROL Fork]**-activiteit en de bijbehorende activiteiten te configureren:
+Om een **[!UICONTROL Fork]** de activiteit en de daarmee samenhangende activiteiten volgen de volgende stappen :
 
-1. Open de activiteit **[!UICONTROL Fork]** en bepaal de naam en het etiket van de uitgaande overgangen.
+1. Open de **[!UICONTROL Fork]** en definieert u de naam en het label van de uitgaande overgangen.
 
    ![](assets/s_user_segmentation_fork.png)
 
@@ -36,7 +36,7 @@ Voer de volgende stappen uit om een **[!UICONTROL Fork]**-activiteit en de bijbe
 
 ## Voorbeeld: segmentatie
 
-In dit voorbeeld worden verschillende e-mails verzonden naar verschillende bevolkingsgroepen. Een **[!UICONTROL Fork]** activiteit wordt gebruikt na een vraag, om twee acties parallel uit te voeren:
+In dit voorbeeld worden verschillende e-mails verzonden naar verschillende bevolkingsgroepen. A **[!UICONTROL Fork]** activiteit wordt gebruikt na een vraag, om twee acties parallel uit te voeren:
 
 * Het queryresultaat opslaan
 * Segmenteer het resultaat om meerdere leveringen te verzenden
@@ -66,17 +66,17 @@ De workflow omvat de volgende activiteiten:
 
 ## Hoofdlettergebruik: een verjaardagsbericht verzenden
 
-Een terugkerende e-mail wordt verzonden naar een lijst met ontvangers op hun verjaardag. Een **[!UICONTROL Fork]** activiteit wordt gebruikt om ontvangers te omvatten die op 29 februari op een schrikkeljaar werden geboren. [Meer weten ](sending-a-birthday-email.md) over deze kwestie?
+Een terugkerende e-mail wordt verzonden naar een lijst met ontvangers op hun verjaardag. A **[!UICONTROL Fork]** Deze activiteit wordt gebruikt om ontvangers op te nemen die op 29 februari op een schrikkeljaar geboren zijn. [Meer informatie](sending-a-birthday-email.md) over dit gebruiksgeval.
 
 ![De vorkactiviteit volgt een testactiviteit en voorafgaat twee vraagactiviteiten.](assets/birthday-workflow_usecase_1.png)
 
 ## Hoofdlettergebruik: inhoud automatiseren met een workflow
 
-Het maken en leveren van een inhoudsblok wordt geautomatiseerd. Een **[!UICONTROL Fork]** activiteit wordt gebruikt om het doel te berekenen en, parallel, om de inhoud tot stand te brengen. [Meer weten ](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) over deze kwestie?
+Het maken en leveren van een inhoudsblok wordt geautomatiseerd. A **[!UICONTROL Fork]** wordt gebruikt om het doel te berekenen en tegelijkertijd de inhoud te maken. [Meer informatie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) over dit gebruiksgeval.
 
 ![De vorkactiviteit volgt een leveringsactiviteit en voorafgaat een vraagactiviteit en een activiteit van het inhoudsbeheer, die allebei door een EN-sluit zich aan bij activiteit worden aangesloten.](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
-U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd als de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.
+U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow slechts één keer uitgevoerd **[!UICONTROL Fork]** de uitgaande overgangen van de activiteit worden gebeëindigd.
 
 ## Verwante onderwerpen
 

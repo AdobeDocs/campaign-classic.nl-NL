@@ -35,11 +35,11 @@ Geen
 
 ## Beschrijving {#description-1}
 
-Met het element `<compute-string>` kunt u een tekenreeks genereren op basis van een XTK-expressie om een &quot;gebouwd&quot; label weer te geven in de interface op basis van verschillende waarden.
+De `<compute-string>` het element laat u toe om een koord te produceren dat op een uitdrukking XTK wordt gebaseerd om een &quot;gebouwd&quot;etiket in de interface te tonen die op verscheidene waarden wordt gebaseerd.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-1}
 
-Wanneer geen `<compute-string>` wordt bepaald, is een `<compute-string>` element ingegaan door gebrek met de waarden van de primaire sleutel in het schema.
+Wanneer `<compute-string>` wordt gedefinieerd, a `<compute-string>` het element is door gebrek ingegaan met de waarden van de primaire sleutel in het schema.
 
 ## Beschrijving van kenmerk {#attribute-description-1}
 

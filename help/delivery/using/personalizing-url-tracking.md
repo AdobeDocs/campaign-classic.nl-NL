@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ![](../../assets/common.svg)
 
-Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via het pictogram **[!UICONTROL Tracking & Images]** op de werkbalk van de wizard voor het verzenden van berichten.
+Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via **[!UICONTROL Tracking & Images]** op de werkbalk van de wizard voor levering.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ U kunt de volgende opties configureren:
 
    >[!CAUTION]
    >
-   >Wanneer &#39;tracking&#39; niet wordt geactiveerd bij een levering (d.w.z. **[!UICONTROL Activate tracking]** optie niet geselecteerd), zijn rapporten en gegevens met betrekking tot het bijhouden niet beschikbaar: Opent-, Hot click- en tracked URLs-rapporten bevatten geen gegevens en **[!UICONTROL Tracking logs]**-tabs worden niet weergegeven voor deze levering.
+   >Wanneer &#39;tracking&#39; niet wordt geactiveerd bij een levering (d.w.z. **[!UICONTROL Activate tracking]** optie niet geselecteerd), zijn rapporten en gegevens met betrekking tot het bijhouden niet beschikbaar: Opent, houdt de Hete klik en volgt URLs- rapporten geen gegevens tonen, en **[!UICONTROL Tracking logs]** Er worden geen tabbladen weergegeven voor deze levering.
 
 * Tracering activeren/deactiveren voor bericht wordt geopend.
 
@@ -41,7 +41,7 @@ De bijgehouden URL&#39;s worden in boomvorm weergegeven in het centrale venster.
 
 U kunt het bijhouden van gegevens voor elke URL van het bericht afzonderlijk activeren of deactiveren. Raadpleeg [deze sectie](how-to-configure-tracked-links.md) voor meer informatie.
 
-Met het tabblad **[!UICONTROL Advanced]** kunt u de berekeningsformules van de bijgehouden URL&#39;s en de openings-URL aanpassen.
+De **[!UICONTROL Advanced]** kunt u de berekeningsformules van bijgehouden URL&#39;s en de openings-URL aanpassen.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 

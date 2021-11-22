@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Oracle te configureren.
+Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Oracle te configureren.
 
 1. Oracle configureren op [Linux](#oracle-linux) of [Windows](#azure-windows)
-1. Het Oracle [externe account](#oracle-external) configureren in Campagne
+1. Het Oracle configureren [externe rekening](#oracle-external) in Campagne
 
 ## Oracle op Linux {#oracle-linux}
 
 Voor verbinding met een externe database van een Oracle in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
 
 1. Installeer de volledige client van het Oracle die overeenkomt met uw versie van het Oracle.
-1. Voeg uw definities TNS aan uw installatie toe. Om dit te doen, specificeer hen in een **tnsnames.ora** dossier in de /etc/oracle bewaarplaats. Als deze gegevensopslagruimte niet bestaat, maakt u deze.
+1. Voeg uw definities TNS aan uw installatie toe. Om dit te doen, specificeer hen in a **tnsnames.ora** in de opslagplaats van het /etc/oracle. Als deze gegevensopslagruimte niet bestaat, maakt u deze.
 
    Maak vervolgens een nieuwe omgevingsvariabele TNS_ADMIN: Exporteer TNS_ADMIN=/etc/oracle en start de computer opnieuw op.
 
-1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Hiervoor controleert u of het bestand **customer.sh** aanwezig is in de map &quot;nl6&quot; van de Adobe Campaign-serverboomstructuur en of dit bestand de koppelingen naar de bibliotheken met Oracles bevat.
+1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Om dit te doen, controleer dat **klant.sh** Het bestand is aanwezig in de map &quot;nl6&quot; van de Adobe Campaign-serverboomstructuur en bevat de koppelingen naar de bibliotheken van het Oracle.
 
    Bijvoorbeeld voor een client in 11.2:
 
@@ -62,7 +62,7 @@ Voor verbinding met een externe database van een Oracle in FDA zijn hieronder aa
       yum install libaio1
       ```
 
-1. In Campaign Classic kunt u vervolgens uw [!DNL Oracle] externe account configureren. Raadpleeg [deze sectie](#oracle-external) voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic, kunt u dan uw vormen [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
 
 ## Oracle in Windows {#oracle-windows}
 
@@ -70,23 +70,23 @@ Voor verbinding met een externe database van een Oracle in FDA zijn hieronder aa
 
 1. Installeer de client van het Oracle.
 
-1. Maak in de map C:Oracle een bestand **tnsnames.ora** met uw TNS-definitie.
+1. Maak in de map C:Oracle een **tnsnames.ora** bestand met uw TNS-definitie.
 
 1. Voeg een omgevingsvariabele TNS_ADMIN toe met C:Oracle als waarde en start de computer opnieuw op.
 
-1. In Campaign Classic kunt u vervolgens uw [!DNL Oracle] externe account configureren. Raadpleeg [deze sectie](#oracle-external) voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic, kunt u dan uw vormen [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
 
 ## Externe rekening van oracle {#oracle-external}
 
-Met de externe [!DNL Oracle]-account kunt u uw Campagne-instantie verbinden met de externe database van uw Oracle.
+De [!DNL Oracle] Met een externe account kunt u uw Campagne-instantie verbinden met de externe database van uw Oracle.
 
-1. Selecteer **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**&#39; in Campagne **[!UICONTROL Explorer]**.
+1. Van campagne **[!UICONTROL Explorer]**, selecteert u **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Kies **[!UICONTROL New]**.
 
-1. Selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]** van uw externe rekening.
+1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de externe account **[!UICONTROL Oracle]**. Geef de volgende instellingen op:
+1. Configureer de **[!UICONTROL Oracle]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: Oracle
 

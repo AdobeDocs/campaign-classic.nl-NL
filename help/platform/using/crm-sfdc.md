@@ -25,7 +25,7 @@ Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit.
 Met de externe account kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
 Volg onderstaande stappen om CRM-connector voor Salesforce te configureren:
 
-1. Maak een nieuwe externe account via het knooppunt **[!UICONTROL Administration > Platform > External accounts]** van de Adobe Campaign-structuur.
+1. Een nieuwe externe account maken via het dialoogvenster **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de boomstructuur Adobe Campaign.
 1. Selecteer **[!UICONTROL Salesforce.com]**.
 1. Voer instellingen in om de verbinding in te schakelen.
 
@@ -40,10 +40,10 @@ Account gebruikt om u aan te melden bij Salesforce CRM.
 Wachtwoord gebruikt om u aan te melden bij Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Raadpleeg deze  [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1) om te weten waar u uw client-id kunt vinden.
+Als u wilt weten waar u uw client-id vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL Security token]**
-Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze  [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL API version]**
 Selecteer de versie van de API.
@@ -55,15 +55,15 @@ Selecteer de versie van de API.
    >
    >Als u de installatie wilt goedkeuren, moet u zich afmelden en weer terugzetten op de Adobe Campaign-console.
 
-1. Controleer het schema dat in Adobe Campaign in de **[!UICONTROL Administration > Configuration > Data schemas]** knoop wordt geproduceerd.
+1. Controleer het schema dat in Adobe Campaign is gegenereerd in het dialoogvenster **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt.
 
-   Voorbeeld voor schema **Salesforce**:
+   Voorbeeld voor **Salesforce** schema:
 
    ![](assets/crm_connectors_sfdc_table.png)
 
 1. Als het schema eenmaal is gemaakt, kunt u opsommingen automatisch synchroniseren van Salesforce naar Adobe Campaign.
 
-   Om dit te doen, klik **[!UICONTROL Synchronizing enumerations...]** verbinding en selecteer de opsomming van Adobe Campaign die de opsomming Salesforce aanpast.
+   Om dit te doen, klik **[!UICONTROL Synchronizing enumerations...]** en selecteer de opsomming van Adobe Campaign die de opsomming Salesforce aanpast.
 
 
 
@@ -71,12 +71,12 @@ Selecteer de versie van de API.
 
    >[!NOTE]
    >
-   >U kunt alle waarden van een opsomming van Adobe Campaign door die van CRM vervangen: Selecteer **[!UICONTROL Yes]** in de kolom **[!UICONTROL Replace]** om dit te doen.
+   >U kunt alle waarden van een opsomming van Adobe Campaign door die van CRM vervangen: Selecteer **[!UICONTROL Yes]** in de **[!UICONTROL Replace]** kolom.
 
 
-   Klik op **[!UICONTROL Next]** en **[!UICONTROL Start]** om de lijst te importeren.
+   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om te beginnen met het importeren van de lijst.
 
-1. Controleer de geïmporteerde waarden in het menu **[!UICONTROL Administration > Platform > Enumerations]**.
+1. Controleer de geïmporteerde waarden in het dialoogvenster **[!UICONTROL Administration > Platform > Enumerations]** -menu.
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
@@ -86,7 +86,7 @@ Selecteer de versie van de API.
 
 Campagne en Salesforce.com zijn nu verbonden. U kunt gegevenssynchronisatie tussen de twee systemen instellen.
 
-Als u gegevens wilt synchroniseren tussen Adobe Campaign-gegevens en SFDC, moet u een workflow maken en de **[!UICONTROL CRM connector]**-activiteit gebruiken.
+Als u gegevens wilt synchroniseren tussen Adobe Campaign-gegevens en SFDC, moet u een workflow maken en de **[!UICONTROL CRM connector]** activiteit.
 
 ![](assets/crm_connectors_sfdc_wf.png)
 

@@ -28,29 +28,29 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 ## Een SMPP-externe account maken {#creating-an-smpp-external-account}
 
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
-Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [pagina](sms-protocol.md).
+Voor meer informatie over het protocol en de montages van SMS, verwijs naar dit [page](sms-protocol.md).
 
 Volg de onderstaande stappen om dit te doen:
 
-1. Klik in het knooppunt **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** van de structuur op het pictogram **[!UICONTROL New]**.
-1. Definieer het accounttype als **Routering**, het kanaal als **Mobiel (SMS)**, en de leveringswijze als **Bulk levering**.
+1. In de **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** knoop van de boom, klik **[!UICONTROL New]** pictogram.
+1. Het accounttype definiëren als **Routering**, het kanaal als **Mobiel (SMS)** en de leveringsmodus als **Bulklevering**.
 
    ![](assets/extended_smpp_create_account.png)
 
-1. Schakel het selectievakje **[!UICONTROL Enabled]** in.
-1. Selecteer op het tabblad **[!UICONTROL Mobile]** **[!UICONTROL Extended generic SMPP]** in de vervolgkeuzelijst **[!UICONTROL Connector]**.
+1. Controleer de **[!UICONTROL Enabled]** doos.
+1. In de **[!UICONTROL Mobile]** tab, selecteert u **[!UICONTROL Extended generic SMPP]** van de **[!UICONTROL Connector]** vervolgkeuzelijst.
 
    ![](assets/extended_smpp_connector.png)
 
    >[!CAUTION]
    >
-   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar deze [pagina](unsupported-connector-migration.md).
+   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. We raden u aan de **[!UICONTROL Extended generic SMPP]** -aansluiting. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar dit [page](unsupported-connector-migration.md).
 
-1. Met de optie **[!UICONTROL Enable verbose SMPP traces in the log file]** kunt u al het SMPP-verkeer in logbestanden dumpen. Deze optie moet zijn ingeschakeld om problemen met de connector op te lossen en om vergelijkingen te maken met het verkeer dat door de provider wordt waargenomen.
+1. De **[!UICONTROL Enable verbose SMPP traces in the log file]** optie staat u toe om al verkeer SMPP in logboekdossiers te dumpen. Deze optie moet zijn ingeschakeld om problemen met de connector op te lossen en om vergelijkingen te maken met het verkeer dat door de provider wordt waargenomen.
 
-1. Neem contact op met uw SMS-serviceprovider die u zal uitleggen hoe u de verschillende externe accountvelden op het tabblad **[!UICONTROL Connection settings]** kunt invullen.
+1. Neem contact op met uw SMS-serviceprovider die u zal uitleggen hoe u de verschillende velden voor externe accounts kunt invullen via de **[!UICONTROL Connection settings]** tab.
 
-   Neem vervolgens contact op met uw provider, afhankelijk van de gekozen provider, die u de waarde geeft die u in het veld **[!UICONTROL SMSC implementation name]** wilt invoeren.
+   Neem vervolgens contact op met uw provider, afhankelijk van de gekozen provider, die u de waarde geeft die u in de **[!UICONTROL SMSC implementation name]** veld.
 
    U kunt het aantal verbindingen aan de leverancier per MTA kind bepalen. De standaardwaarde is 1.
 
@@ -70,32 +70,32 @@ Volg de onderstaande stappen om dit te doen:
 
    Raadpleeg [deze sectie](#about-character-transliteration) voor meer informatie.
 
-1. Op het tabblad **[!UICONTROL Throughput and delays]** kunt u de maximale doorvoer van uitgaande berichten (&quot;MT&quot;, Mobiel beëindigd) in MT per seconde opgeven. Als u ‘0’ invoert in het overeenkomstige veld, is de doorvoer onbeperkt.
+1. In de **[!UICONTROL Throughput and delays]** kunt u de maximale doorvoer van uitgaande berichten (&quot;MT&quot;, Mobiel beëindigd) in MT per seconde opgeven. Als u ‘0’ invoert in het overeenkomstige veld, is de doorvoer onbeperkt.
 
    De waarden van alle velden die corresponderen met een tijdsduur, moeten in seconden worden ingevuld.
 
-1. Op het tabblad **[!UICONTROL Mapping of encodings]** kunt u coderingen definiëren.
+1. In de **[!UICONTROL Mapping of encodings]** kunt u coderingen definiëren.
 
    Raadpleeg [deze sectie](#about-text-encodings) voor meer informatie.
 
-1. Op het tabblad **[!UICONTROL SMSC specificities]** is de optie **[!UICONTROL Send full phone number]** standaard uitgeschakeld. Laat het niet toe als u het protocol wilt respecteren SMPP en slechts cijfers naar de server van de leverancier van SMS (SMSC) overbrengen.
+1. In de **[!UICONTROL SMSC specificities]** de **[!UICONTROL Send full phone number]** is standaard uitgeschakeld. Laat het niet toe als u het protocol wilt respecteren SMPP en slechts cijfers naar de server van de leverancier van SMS (SMSC) overbrengen.
 
    Aangezien bepaalde providers het gebruik van het voorvoegsel &#39;+&#39; vereisen, wordt u echter geadviseerd contact op te nemen met uw provider en wordt u aangeraden deze optie indien nodig in te schakelen.
 
-   Met het selectievakje **[!UICONTROL Enable TLS over SMPP]** kunt u SMPP-verkeer coderen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
+   De **[!UICONTROL Enable TLS over SMPP]** checkbox staat u toe om verkeer te coderen SMPP. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
 
-1. Als u een **[!UICONTROL Extended generic SMPP]** schakelaar vormt, kunt u opstelling automatische antwoorden.
+1. Als u een **[!UICONTROL Extended generic SMPP]** , kunt u automatische antwoorden instellen.
 
    Raadpleeg [deze sectie](#automatic-reply) voor meer informatie.
 
 ## Vertaling van SMS-tekens {#about-character-transliteration}
 
-Tekentransliteratie kan worden ingesteld in een externe account voor levering via SMPP voor mobiele apparaten, onder het tabblad **[!UICONTROL Mobile]**.
+Tekentransliteratie kan worden ingesteld in een externe rekening voor levering via SMPP voor mobiele apparaten, onder de **[!UICONTROL Mobile]** tab.
 
 Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard.
 
-* Als de transliteratie **[!UICONTROL authorized]** is, wordt elk karakter dat niet in aanmerking wordt genomen vervangen door een GSM karakter wanneer het bericht wordt verzonden. De letter ‘ë’ wordt bijvoorbeeld vervangen door ‘e’. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft hetzelfde.
-* Wanneer transliteratie **[!UICONTROL not authorized]** is, wordt elk bericht dat karakters bevat die niet in rekening worden gebracht verzonden in binair formaat (Unicode): alle tekens worden daarom naar behoren verzonden. De sms-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per sms voor berichten die in meerdere delen worden verzonden). Als het maximum aantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
+* Indien transliteratie **[!UICONTROL authorized]**, wordt elk teken dat niet in aanmerking wordt genomen, vervangen door een GSM-teken wanneer het bericht wordt verzonden. De letter ‘ë’ wordt bijvoorbeeld vervangen door ‘e’. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft hetzelfde.
+* Wanneer transliteratie **[!UICONTROL not authorized]**, wordt elk bericht dat tekens bevat waarmee geen rekening wordt gehouden, verzonden in binaire indeling (Unicode): alle tekens worden daarom naar behoren verzonden. De sms-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per sms voor berichten die in meerdere delen worden verzonden). Als het maximum aantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
 
 >[!IMPORTANT]
 >
@@ -145,7 +145,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> Aantal </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
@@ -235,7 +235,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ø </td> 
    <td> Æ </td> 
    <td> , </td> 
-   <td> &lt;&gt; </td> 
+   <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
    <td> l </td> 
@@ -290,20 +290,20 @@ CR: Enter-teken
 
 Wanneer u een sms-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een sms-bericht past.
 
-Wanneer u een nieuwe externe account voor levering via SMPP mobile configureert, kunt u **[!UICONTROL Mapping of encodings]** definiëren op het tabblad **[!UICONTROL Mobile]**: Met het veld **[!UICONTROL data_coding]** kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
+Wanneer u een nieuwe externe account voor levering via SMPP mobile configureert, kunt u de **[!UICONTROL Mapping of encodings]** in de **[!UICONTROL Mobile]** tab: de **[!UICONTROL data_coding]** in het veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
 
 >[!NOTE]
 >
->De toewijzing tussen de waarde **data_coding** en de werkelijk gebruikte codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval moet uw **Adobe Campaign**-beheerder deze toewijzing declareren. Neem contact op met uw provider om meer informatie te krijgen.
+>De toewijzing tussen de waarde **data_coding** en de werkelijk gebruikte codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval, uw **Adobe Campaign** de beheerder moet deze afbeelding verklaren. Neem contact op met uw provider om meer informatie te krijgen.
 
-U kunt **data_codings** verklaren en zonodig het coderen dwingen: Hiervoor geeft u één codering in de tabel op.
+U kunt declareren **data_codings** en zo nodig de codering forceren: Hiervoor geeft u één codering in de tabel op.
 
 * Wanneer geen afbeelding van coderingen wordt bepaald, neemt de schakelaar een generisch gedrag over:
 
    * Er wordt geprobeerd gsm-codering te gebruiken waaraan de waarde **data_coding = 0** wordt toegewezen.
    * Als gsm-codering mislukt, wordt **UCS2** -codering gebruikt waaraan de waarde **data_coding = 8** wordt toegewezen.
 
-* Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde **[!UICONTROL data_coding]**-veldwaarden, probeert Adobe Campaign de eerste codering in de lijst te gebruiken, gevolgd door de volgende codering als de eerste codering onmogelijk blijkt.
+* Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde coderingen **[!UICONTROL data_coding]** veldwaarden, probeert Adobe Campaign de eerste codering in de lijst te gebruiken, daarna het volgende als de eerste codering onmogelijk blijkt.
 
 >[!IMPORTANT]
 >
@@ -315,7 +315,7 @@ U kunt **data_codings** verklaren en zonodig het coderen dwingen: Hiervoor geeft
 
 Wanneer vestiging een uitgebreide generische schakelaar SMPP, kunt u automatische antwoorden vormen.
 
-Wanneer een abonnee op een SMS-bericht reageert dat via Adobe Campaign naar hem is verzonden en zijn bericht een trefwoord zoals &quot;STOP&quot; bevat, kunt u berichten configureren die automatisch naar hem worden teruggestuurd in de sectie **[!UICONTROL Automatic reply sent to the MO]**.
+Wanneer een abonnee op een SMS-bericht reageert dat via Adobe Campaign naar hem is verzonden en zijn bericht een trefwoord bevat zoals &quot;STOP&quot;, kunt u berichten configureren die automatisch naar hem worden teruggestuurd in het dialoogvenster **[!UICONTROL Automatic reply sent to the MO]** sectie.
 
 >[!NOTE]
 >
@@ -327,27 +327,27 @@ U kunt ook een actie koppelen aan uw automatische reactie: **[!UICONTROL Send to
 
 ![](assets/extended_smpp_reply.png)
 
-Als u de **[!UICONTROL Remove from quarantine]** actie aan een automatische reactie verbindt, worden de ontvangers die het overeenkomstige sleutelwoord verzenden automatisch verwijderd uit quarantaine.
+Als u de koppeling **[!UICONTROL Remove from quarantine]** actie aan een automatische reactie, worden de ontvangers die het overeenkomstige sleutelwoord verzenden automatisch verwijderd uit quarantaine.
 
-Ontvangers worden vermeld in de tabel **[!UICONTROL Non deliverables and addresses]** die beschikbaar is via het menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**.
+Ontvangers worden vermeld in het dialoogvenster **[!UICONTROL Non deliverables and addresses]** tabel beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** -menu.
 
-* Als u hetzelfde antwoord wilt verzenden, ongeacht de korte code, laat u de kolom **[!UICONTROL Short code]** leeg.
-* Als u hetzelfde antwoord wilt verzenden, ongeacht het trefwoord, laat u de kolom **[!UICONTROL Keyword]** leeg.
-* Als u een actie wilt uitvoeren zonder een reactie te verzenden, laat u de kolom **[!UICONTROL Response]** leeg. Zo kunt u bijvoorbeeld een gebruiker die met een ander bericht dan &quot;STOP&quot; reageert, uit quarantaine verwijderen.
+* Als u hetzelfde antwoord wilt verzenden, ongeacht de korte code, laat u de **[!UICONTROL Short code]** kolom leeg.
+* Als u hetzelfde antwoord wilt verzenden, ongeacht het trefwoord, laat u het **[!UICONTROL Keyword]** kolom leeg.
+* Als u een actie wilt uitvoeren zonder een antwoord te verzenden, laat u de **[!UICONTROL Response]** kolom leeg. Zo kunt u bijvoorbeeld een gebruiker die met een ander bericht dan &quot;STOP&quot; reageert, uit quarantaine verwijderen.
 
 Als u veelvoudige externe rekeningen gebruikend de Uitgebreide generische schakelaar SMPP met de zelfde leveranciersrekening hebt, kan de volgende kwestie gebeuren: wanneer u een antwoord op een korte code verzendt, kan dit antwoord op een van uw externe accountverbindingen worden ontvangen. Het automatische antwoord dat wordt verzonden, kan dan ook niet het verwachte bericht zijn.
 U kunt dit voorkomen door een van de volgende oplossingen toe te passen, afhankelijk van de provider die u gebruikt:
 
 * Maak één leverancieraccount voor elke externe account.
-* Gebruik het veld **[!UICONTROL System type]** op het tabblad **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** om elke korte code te onderscheiden. Vraag uw provider om een andere waarde voor elke account.
+* Gebruik de **[!UICONTROL System type]** veld van **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** om elke korte code van elkaar te onderscheiden. Vraag uw provider om een andere waarde voor elke account.
 
    ![](assets/extended_smpp_system-type.png)
 
-De stappen voor het instellen van een externe account met behulp van de uitgebreide algemene SMPP-connector worden beschreven in de sectie [Een externe SMPP-account maken](#creating-an-smpp-external-account).
+De stappen voor het opzetten van een externe account met behulp van de Extended Generic SMPP-connector worden beschreven in de [Een SMPP-externe account maken](#creating-an-smpp-external-account) sectie.
 
 ## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]**. Raadpleeg voor meer informatie de sectie [Informatie over sjablonen](about-templates.md).
+Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het dialoogvenster **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt. Raadpleeg voor meer informatie de [Over sjablonen](about-templates.md) sectie.
 
 Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen waarin de kanaalschakelaar van verwijzingen wordt voorzien.
 
@@ -355,21 +355,21 @@ Om het inheemse leveringsmalplaatje te houden, adviseren wij dat u het dupliceer
 
 In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van berichten via de SMPP-account die eerder is ingeschakeld. Dit doet u als volgt:
 
-1. Ga naar de **[!UICONTROL Delivery templates]** knoop.
-1. Klik met de rechtermuisknop op de sjabloon **[!UICONTROL Send to mobiles]** en selecteer **[!UICONTROL Duplicate]**.
+1. Ga naar de **[!UICONTROL Delivery templates]** knooppunt.
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL Send to mobiles]** en selecteer **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Wijzig het label van de sjabloon, bijvoorbeeld **Verzonden naar mobiele apparaten (SMPP)**.
+1. Het label van de sjabloon wijzigen, bijvoorbeeld **Verzonden naar mobiele apparaten (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klik op **[!UICONTROL Properties]**.
-1. Op **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan de externe rekening beantwoordt die u in de vorige stappen creeerde.
+1. In de **[!UICONTROL General]** selecteert u een routeringsmodus die overeenkomt met de externe account die u in de vorige stappen hebt gemaakt.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
-1. Klik op **[!UICONTROL Save]** om de sjabloon te maken.
+1. Klikken **[!UICONTROL Save]** om de sjabloon te maken.
 
    ![](assets/s_user_mobile_template_list.png)
 

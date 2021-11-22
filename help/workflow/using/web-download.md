@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Met de activiteit **Webdownload** wordt het downloaden van een bestand op een expliciete URL, een externe account of een Adobe Campaign-instantie gestart. Het HTTP-protocol wordt gebruikt. Dit kan een download van de GET of van de POST zijn.
+De **Webdownload** activiteit start het downloaden van een bestand op een expliciete URL, een externe account of een Adobe Campaign-instantie. Het HTTP-protocol wordt gebruikt. Dit kan een download van de GET of van de POST zijn.
 
 ## Properties {#properties}
 
@@ -29,25 +29,25 @@ Met de activiteit **Webdownload** wordt het downloaden van een bestand op een ex
 
       ![](assets/download_web_edit.png)
 
-   * Als u een **[!UICONTROL External account]** wilt gebruiken, selecteert u de account in de vervolgkeuzelijst en geeft u het bestand op dat u wilt downloaden.
+   * Als u een **[!UICONTROL External account]** selecteert u de account in de vervolgkeuzelijst en geeft u het bestand op dat u wilt downloaden.
 
-      Externe accounts worden geconfigureerd via het knooppunt **[!UICONTROL Administration > Platform > External accounts]** van de Adobe Campaign-structuur. De accountparameters kunnen worden bewerkt met het pictogram **[!UICONTROL Edit link]**.
+      Externe accounts worden geconfigureerd via de **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de boomstructuur Adobe Campaign. De accountparameters kunnen worden bewerkt via de **[!UICONTROL Edit link]** pictogram.
 
       ![](assets/download_web_edit_external.png)
 
-   * Als u het bestand wilt downloaden van de Adobe Campaign-instantie, selecteert u de optie **[!UICONTROL Adobe Campaign Instance]**.
+   * Selecteer de optie **[!UICONTROL Adobe Campaign Instance]** optie.
 
       ![](assets/download_web_edit_instance.png)
 
 1. **Bestandshistorie**
 
-   Met de koppeling **[!UICONTROL File historization settings...]** kunt u de opslagmap van het bestand en de zuiveringsfrequentie van deze map opgeven.
+   De **[!UICONTROL File historization settings...]** Met de koppeling kunt u de opslagmap van het bestand en de purgeerfrequentie van deze map opgeven.
 
    ![](assets/download_web_edit_hist.png)
 
    De volgende opties zijn beschikbaar:
 
-   * **[!UICONTROL Use a default storage directory]**: het bestand wordt altijd verplaatst voordat het wordt verwerkt. Als deze optie is ingeschakeld, wordt het bestand naar de standaardopslagmap verplaatst (de map **vars** van de installatiemap van Adobe Campaign). Als u een opslagmap wilt opgeven, schakelt u het selectievakje uit en voert u het pad in het veld **[!UICONTROL Storage directory]** in
+   * **[!UICONTROL Use a default storage directory]**: het bestand wordt altijd verplaatst voordat het wordt verwerkt. Als deze optie is ingeschakeld, wordt het bestand verplaatst naar de standaardopslagmap (de **vars** directory van de installatiemap van Adobe Campaign). Als u een opslagmap wilt opgeven, schakelt u het selectievakje uit en voert u het pad ervan in het dialoogvenster **[!UICONTROL Storage directory]** field
    * **[!UICONTROL Number of files]**: Voer het maximumaantal bestanden in dat in de opslagmap moet worden bewaard.
    * **[!UICONTROL Maximum size (in Mb)]**: Voer de maximale capaciteit van de opslagdirectory in (in megabytes).
 
@@ -55,15 +55,15 @@ Met de activiteit **Webdownload** wordt het downloaden van een bestand op een ex
 
    Bestanden worden verwijderd op basis van hun leeftijd (oudste naar nieuwste). De oudste bestanden worden gewist totdat beide regels voor leegmaken zijn geverifieerd. Daarom als een 100 dossiergrens wordt bepaald, betekent dit dat de opslagfolder altijd de 100 nieuwste dossiers vóór de aanvang van het werkschema zal bevatten, evenals die die die in het werkschema worden verwerkt dat lopend is.
 
-   Als u niet meer een grens voor **[!UICONTROL Number of files]** en **[!UICONTROL Maximum size (in Mb)]** opties wilt plaatsen, ga 0 als waarde in.
+   Als u niet langer een limiet wilt instellen voor de **[!UICONTROL Number of files]** en **[!UICONTROL Maximum size (in Mb)]** Voer 0 in als waarde.
 
 1. **Geavanceerde parameters**
 
-   Met de koppeling **[!UICONTROL Advanced parameters...]** kunt u de hieronder weergegeven aanvullende opties opgeven:
+   De **[!UICONTROL Advanced parameters...]** met de koppeling kunt u de hieronder weergegeven aanvullende opties opgeven:
 
    ![](assets/download_web_edit_advanced.png)
 
-   De optie **[!UICONTROL Process errors]** wordt beschreven in [Fouten verwerken](monitoring-workflow-execution.md#processing-errors).
+   De **[!UICONTROL Process errors]** deze optie is gedetailleerd in [Verwerkingsfouten](monitoring-workflow-execution.md#processing-errors).
 
 ## Uitvoerparameters {#output-parameters}
 

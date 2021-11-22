@@ -23,19 +23,19 @@ ht-degree: 4%
 
 Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experience Cloud-oplossingen en kernservices. Er zijn twee opties beschikbaar:
 
-1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Om deze integratie uit te voeren, moet u uw Platform van Gegevens van de Klant in real time met Campagne (RTCDP) verbinden. [Meer informatie vindt u in deze sectie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Als u deze integratie wilt implementeren, moet u een verbinding tot stand brengen tussen uw Real-time Customer Data Platform en Campagne (RTCDP). [Meer informatie in deze sectie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 
-1. Integreer **Adobe Campaign** met **People core service** (ook bekend als **Profiles &amp; Audiences core service**) of Adobe Audience Manager. Dan kunt u:
+1. Integreren **Adobe Campaign** with **Personenkern** (ook bekend als **Profielen en publiek kernservice**) of Adobe Audience Manager. Dan kunt u:
 
    * Importeer gedeelde soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen naar Adobe Campaign. Soorten publiek kan via lijsten in Adobe Campaign worden geïmporteerd.
 
-   * Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doel is ingesteld in een workflow, met behulp van een speciale **[!UICONTROL Update shared audience]**-activiteit.
+   * Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doelpubliek zich in een workflow heeft gericht, met behulp van een toegewezen publiek **[!UICONTROL Update shared audience]** activiteit.
 
 Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
 * **Bezoeker-id**: dit type id zorgt ervoor dat Adobe Experience Cloud-bezoekers zich kunnen verzoenen met Adobe Campaign-ontvangers.
-* **Opgegeven ID**: dit type id zorgt ervoor dat alle typen gegevens overeenkomen met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
+* **Opgegeven id**: dit type id zorgt ervoor dat alle typen gegevens overeenkomen met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
 
    >[!NOTE]
    >

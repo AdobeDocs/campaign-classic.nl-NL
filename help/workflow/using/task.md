@@ -21,12 +21,12 @@ ht-degree: 3%
 >
 >:warning: Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../mrm/using/creating-and-managing-tasks.md)
 
-In een campagnewerkschema, laat de **[!UICONTROL Task]** activiteit u twee scenario&#39;s specificeren: de eerste als de taak is voltooid en een tweede als de taak niet is voltooid (als deze handmatig als onvolledig is gemarkeerd of als deze vervalt).
+In een campagnewerkstroom, **[!UICONTROL Task]** Met activiteit kunt u twee scenario&#39;s opgeven: de eerste als de taak is voltooid en een tweede als de taak niet is voltooid (als deze handmatig als onvolledig is gemarkeerd of als deze vervalt).
 
 ![](assets/mrm_task_in_workflow.png)
 
-Hoe te om een taak te vormen en in werking te stellen is gedetailleerd in [Campaign Classic v7 documentatie](../../mrm/using/creating-and-managing-tasks.md).
+Hoe te vormen en een taak in werking te stellen is gedetailleerd in [Campaign Classic v7-documentatie](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
-Met de optie **[!UICONTROL Resources]** kunt u verschillende operatoren definiëren, evenals een goedkeuringsschema voor de taak. Als de persoon die het verzoek afwijst dit niet doet, wordt de taak zelf niet afgewezen.
+De **[!UICONTROL Resources]** Met deze optie kunt u verschillende operatoren definiëren en een goedkeuringsschema voor de taak opgeven. Als de persoon die het verzoek afwijst dit niet doet, wordt de taak zelf niet afgewezen.

@@ -22,7 +22,7 @@ Het kan zijn dat een begunstigde niet voor alle aanbiedingen in aanmerking komt.
 Voer de volgende stappen uit om altijd een categorie in de aanbevelingen op te nemen:
 
 1. Open de verkenner en klik op een aanbiedingencatalogus vanuit de boomstructuur.
-1. Klik op de tab **[!UICONTROL Eligibility]** en kruis het vakje **[!UICONTROL Always include this category in the recommendations]** aan.
-1. Voltooi en keur door **[!UICONTROL Save]** goed te klikken.
+1. Klik op de knop **[!UICONTROL Eligibility]** en tik de **[!UICONTROL Always include this category in the recommendations]** doos.
+1. Voltooien en goedkeuren door op **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

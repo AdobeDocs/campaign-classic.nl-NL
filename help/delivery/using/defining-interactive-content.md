@@ -91,7 +91,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    ![](assets/amp_tab_perso.png)
 
-1. Als u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
+1. Wanneer u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
 
    >[!NOTE]
    >

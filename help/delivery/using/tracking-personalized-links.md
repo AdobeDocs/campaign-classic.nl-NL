@@ -26,7 +26,7 @@ Met JavaScript in e-mailinhoud (HTML of Tekst) kunt u dynamische inhoud generere
 
 U kunt specifieke voorbewerkingsinstructies toevoegen om de URL te scripten en bij te houden. [Meer informatie](pre-processing-instructions.md)
 
-Voor traceringsdetectie sluit Adobe Campaign [Tidy](https://www.html-tidy.org/) in om de HTML-bron te parseren en het patroon te detecteren. Alle URL&#39;s van de inhoud worden weergegeven zodat ze afzonderlijk kunnen worden bijgehouden. Adobe Campaign gebruikt nogmaals Tidy om de URL (`http://myurl.com`) te vervangen door een URL die naar de Adobe Campaign-omleidingsserver wijst.
+Voor traceringsdetectie sluit Adobe Campaign in [Tidy](https://www.html-tidy.org/) om de HTML-bron te parseren en het patroon te detecteren. Alle URL&#39;s van de inhoud worden weergegeven zodat ze afzonderlijk kunnen worden bijgehouden. Adobe Campaign gebruikt Tidy opnieuw om de URL te vervangen (`http://myurl.com`) met een URL die naar de Adobe Campaign-omleidingsserver verwijst.
 
 Bijvoorbeeld in de eerste inhoud: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` wordt voor een bepaalde ontvanger vervangen door: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 

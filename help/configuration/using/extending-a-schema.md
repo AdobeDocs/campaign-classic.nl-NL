@@ -20,8 +20,8 @@ ht-degree: 5%
 >[!IMPORTANT]
 >
 >Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid: voornamelijk die waarvoor de volgende instellingen zijn gedefinieerd:\
->**dataSource=&quot;file&quot;** en  **mappingType=&quot;xmlFile&quot;**.\
->De volgende schema&#39;s mogen niet worden uitgebreid: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, &lt;a1 0/>ncm:publishing **,** nl:monitoring **,** nms:agenda **,** nms:remoteTracking **,** nms:userAgentRules 19/>, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList&lt;a22 7/>,** xtk:fusion **,** xtk: jst **,** xtk:navtree **,** xtk:queryDef **,** xtk:resourceMenu **,** xtk:schema 39/>, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.********
+>**dataSource=&quot;file&quot;** en **mappingType=&quot;xmlFile&quot;**.\
+>De volgende schema&#39;s mogen niet worden uitgebreid: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publiceren**, **nl:controleren**, **nms:kalender**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:verbindingen**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusie**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:sessie**, **xtk:sqlSchema**, **xtk:tekenreeksen**.
 >Deze lijst is niet limitatief.
 
 Er zijn twee methoden om een bestaand schema uit te breiden:
@@ -29,7 +29,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 1. Het bronschema rechtstreeks wijzigen.
 1. Een ander schema maken met dezelfde naam, maar met een andere naamruimte. Het voordeel is dat u een tabel kunt uitbreiden zonder het oorspronkelijke schema te hoeven wijzigen.
 
-   Het wortelelement van het schema moet **extendedSchema** attributen met de naam van het uit te breiden schema als zijn waarde bevatten.
+   Het hoofdelement van het schema moet het volgende bevatten: **extendedSchema** kenmerk met de naam van het schema dat als waarde moet worden uitgebreid.
 
    Een extensieschema heeft geen eigen schema: het schema dat met het bronschema wordt gegenereerd, wordt ingevuld met de velden van het extensieschema.
 
@@ -37,7 +37,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    >
    >U kunt de ingebouwde schema&#39;s van de toepassing niet wijzigen, maar eerder het mechanisme van de schemauitbreiding. Anders worden gewijzigde schema&#39;s niet bijgewerkt op het moment van toekomstige upgrades van de toepassing. Dit kan leiden tot storingen in het gebruik van Adobe Campaign.
 
-   **Voorbeeld**: extensie van de  **nms:** ontvanentschema.
+   **Voorbeeld**: verlenging van de **nms:ontvanger** schema.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -47,7 +47,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    </srcSchema>
    ```
 
-   Het uitgebreide schema **nms:ontvanger** is ingevuld met het veld dat is ingevuld in het extensieschema:
+   De **nms:ontvanger** Het uitgebreide schema wordt ingevuld met het veld dat is ingevuld in het extensieschema:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -57,11 +57,11 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    </schema>
    ```
 
-   Het **afhankelijkSchemas** attribuut op het wortelelement van het schema verwijst naar de gebiedsdelen op de uitbreidingsschema&#39;s.
+   De **afhankelijkSchemas** kenmerk op het hoofdelement van het schema verwijst naar de afhankelijkheden van de extensieschema&#39;s.
 
-   Het **behoortTo** attribuut op het gebied vult in het schema waar het wordt verklaard.
+   De **behoortTo** kenmerk op het veld vult het schema in waarin het wordt gedeclareerd.
 
 >[!IMPORTANT]
 >
->Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md).\
+>Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.\
 >Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.

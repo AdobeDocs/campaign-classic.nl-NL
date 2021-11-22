@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Info over SpamAssassin {#about-spamassassin}
 
-Adobe Campaign kan worden gevormd om met [SpamAssassin](https://spamassassin.apache.org) te werken, een derdedienst die voor e-mailspamfiltratie wordt gebruikt. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
+Adobe Campaign kan worden geconfigureerd om te werken met [SpamAssassin](https://spamassassin.apache.org), een service van derden die wordt gebruikt voor het filteren van e-mailspam. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
 
 SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 
@@ -39,7 +39,7 @@ SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 
 Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, volgt u de onderstaande stappen om de risico&#39;s te evalueren.
 
-Raadpleeg [deze sectie](about-email-channel.md) voor meer informatie over het maken en ontwerpen van een levering.
+Raadpleeg voor meer informatie over het maken en ontwerpen van een levering [deze sectie](about-email-channel.md).
 
 1. Ga naar het tabblad **[!UICONTROL Preview]**. 
 1. Selecteer een ontvanger om een voorvertoning van uw levering weer te geven.
@@ -54,12 +54,12 @@ Raadpleeg [deze sectie](about-email-channel.md) voor meer informatie over het ma
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Klik op de koppeling **[!UICONTROL More...]** naast de waarschuwing.
+1. Klik op de knop **[!UICONTROL More...]** naast de waarschuwing.
 1. Selecteer het tabblad **[!UICONTROL Anti-spam checking]**. 
-1. Ga naar **[!UICONTROL Points / Rule / Description]** sectie om de redenen voor dit risico te bekijken.
+1. Ga naar de **[!UICONTROL Points / Rule / Description]** om de redenen voor dit risico te bekijken.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Telkens als u **[!UICONTROL Anti-spam checking]** klikt, wordt de dienst SpamAssassin geroepen en het bericht wordt opnieuw geanalyseerd voor anti-spamopsporing. Controleer of u de inhoud hebt gewijzigd voordat u de anti-spamanalyse opnieuw uitvoert.
+>Elke keer dat u op de knop **[!UICONTROL Anti-spam checking]**, wordt de dienst SpamAssassin geroepen en het bericht wordt opnieuw geanalyseerd voor anti-spamopsporing. Controleer of u de inhoud hebt gewijzigd voordat u de anti-spamanalyse opnieuw uitvoert.

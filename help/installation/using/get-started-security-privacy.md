@@ -50,11 +50,11 @@ Toegangsbeheer is een belangrijk onderdeel van de beveiliging. Hier volgen enkel
 
 Volg bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.) altijd de volgende richtlijnen:
 
-* **Scripting**: probeer SQL verklaringen te vermijden, gebruik geparameterized functies in plaats van koordaaneenschakeling, vermijd SQL injectie door de SQL functies toe te voegen aan de lijst van gewenste personen te gebruiken.
+* **Scripts**: probeer SQL verklaringen te vermijden, gebruik geparameterized functies in plaats van koordaaneenschakeling, vermijd SQL injectie door de SQL functies toe te voegen aan de lijst van gewenste personen te gebruiken.
 
-* **Beveilig het gegevensmodel**: gebruik genoemde rechten om exploitatoracties te beperken, systeemfilters toe te voegen (sysFilter)
+* **Het gegevensmodel beveiligen**: gebruik genoemde rechten om exploitatoracties te beperken, systeemfilters toe te voegen (sysFilter)
 
-* **Hoofdletters toevoegen in webtoepassingen**: Leer hoe u hoofdletters kunt toevoegen aan uw openbare bestemmingspagina&#39;s en abonnementspagina&#39;s.
+* **Hoofdletters toevoegen aan webtoepassingen**: Leer hoe u hoofdletters kunt toevoegen aan uw openbare bestemmingspagina&#39;s en abonnementspagina&#39;s.
 
 [Meer informatie](../../installation/using/scripting-coding-guidelines.md)
 
@@ -80,13 +80,13 @@ De configuratie moet op alle servers worden uitgevoerd. De configuratiebestanden
 
 * **Beveiligingszones**: Vorm veiligheidsstreken zodat zij direct met de IP adressen van cliënten van een volmacht rekening houden.
 
-* **Beveiliging** bestandsupload: beperkt de typen bestanden die naar de Adobe Campaign-server kunnen worden geüpload met een nieuw kenmerk uploadAllowList. Dit kan in het dossier van de serverconfiguratie worden gebruikt.
+* **Beveiliging bestandsupload**: beperkt de typen bestanden die naar de Adobe Campaign-server kunnen worden geüpload met een nieuw kenmerk uploadAllowList. Dit kan in het dossier van de serverconfiguratie worden gebruikt.
 
-* **Relay**: verbeter de relaisconfiguratie door de relaisregels voor ongebruikte modules/toepassingen te deactiveren.
+* **Betaling**: verbeter de relaisconfiguratie door de relaisregels voor ongebruikte modules/toepassingen te deactiveren.
 
-* **Uitgaande** bescherming van de verbinding en  **Bevel beperking**  (server-kant)
+* **Uitgaande verbindingsbeveiliging** en **Opdrachtbeperking** (server-kant)
 
-* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Raadpleeg de [documentatie bij de configuratie van de campagneserver](../../installation/using/configuring-campaign-server.md) en de [beschrijving van het serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md) voor meer informatie.
+* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Zie de [Documentatie over de configuratie van de Campagneserver](../../installation/using/configuring-campaign-server.md) en de [Beschrijving van serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md) voor meer informatie .
 
 [Meer informatie](../../installation/using/server-configuration.md)
 

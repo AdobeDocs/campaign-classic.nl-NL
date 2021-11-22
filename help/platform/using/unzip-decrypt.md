@@ -17,25 +17,25 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [activiteit voor het laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md), kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
+Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen.
 
 Om dit te kunnen doen:
 
-1. Gebruik [Controlebord](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren.
+1. Gebruik de [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbare/privé zeer belangrijke paar te produceren.
 
    >[!NOTE]
    >
    >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
    >
-   >Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+   >Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de nieuwste [Gouden standaard](../../rn/using/gs-overview.md) of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
-1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
+1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
 1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
 
 Vervolgens kunt u de gewenste voorverwerkingsopdrachten in uw workflows gebruiken:
 
-1. Voeg en vorm een **[!UICONTROL File transfer]** activiteit in uw werkschema toe.
-1. Voeg een **[!UICONTROL Data loading (file)]** activiteit toe en bepaal het dossierformaat.
+1. Een **[!UICONTROL File transfer]** activiteit in uw werkstroom.
+1. Voeg een **[!UICONTROL Data loading (file)]** en definieert u de bestandsindeling.
 1. Schakel de optie **[!UICONTROL Pre-process the file]** in.
 1. Geef de voorverwerkingsopdracht op die u wilt toepassen.
 1. Voeg andere activiteiten toe om gegevens die uit het bestand komen te beheren.
@@ -45,8 +45,8 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 **Verwante onderwerpen:**
 
-* [Activiteit](../../workflow/using/data-loading--file-.md) bij laden van gegevens (bestand).
-* [Een bestand](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file) comprimeren of versleutelen.
+* [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md).
+* [Een bestand comprimeren of versleutelen](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## Hoofdlettergebruik: Gegevens importeren die zijn versleuteld met een sleutel die is gegenereerd door het Configuratiescherm {#use-case-gpg-decrypt}
 
@@ -56,7 +56,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in e
 
 De volgende stappen worden uitgevoerd:
 
-1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
@@ -72,15 +72,15 @@ De volgende stappen worden uitgevoerd:
    * **[!UICONTROL File transfer]** activiteit: Hiermee wordt het bestand van een externe bron naar Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
    * **[!UICONTROL Data loading (file)]** activiteit: Laadt de gegevens van het dossier in het gegevensbestand en decrypteert het gebruikend de privé sleutel die in het Controlebord wordt geproduceerd.
 
-1. Open de **[!UICONTROL File transfer]** activiteit dan specificeer de externe rekening waarvan u het gecodeerde .gpg dossier wilt invoeren.
+1. Open de **[!UICONTROL File transfer]** Geef vervolgens de externe account op waaruit u het gecodeerde .gpg-bestand wilt importeren.
 
    ![](assets/gpg_key_transfer.png)
 
-   De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/file-transfer.md).
+   Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/file-transfer.md).
 
-1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading--file-.md).
+1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading--file-.md).
 
-   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Om dit te doen, selecteer **[!UICONTROL Pre-process the file]** optie, dan kopieer-kleef dit decryptiebevel in het **[!UICONTROL Command]** gebied:
+   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer hiervoor de optie **[!UICONTROL Pre-process the file]** en kopieert en plakt u deze decoderingsopdracht in het dialoogvenster **[!UICONTROL Command]** field:
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -92,7 +92,7 @@ De volgende stappen worden uitgevoerd:
    >
    >Als u in het verleden al GPG-sleutels op uw exemplaar hebt geïnstalleerd via een verzoek van de klantenservice, is de passphrase mogelijk gewijzigd en is deze standaard anders.
 
-1. Klik **[!UICONTROL OK]** om de activiteitenconfiguratie te bevestigen.
+1. Klikken **[!UICONTROL OK]** om de activiteitenconfiguratie te bevestigen.
 
 1. U kunt de workflow nu uitvoeren. Nadat de decodering is uitgevoerd, kunt u in de werkstroomlogboeken controleren of de decodering is uitgevoerd en of de gegevens uit het bestand zijn geïmporteerd.
 
@@ -104,4 +104,4 @@ In deze video wordt getoond hoe u een GPG-sleutel kunt gebruiken voor het decode
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

@@ -28,11 +28,11 @@ Het gedetailleerde proces voor het valideren en verzenden van een levering wordt
 
 ## Geavanceerde parameters {#advanced-parameters}
 
-De **[!UICONTROL Properties]** knoop geeft toegang tot de geavanceerde leveringsparameter. De parameters specifiek voor de levering van SMS zijn in **[!UICONTROL SMS parameters]** sectie van **[!UICONTROL Delivery]** tabel.
+De **[!UICONTROL Properties]** de knoop geeft toegang tot de geavanceerde leveringsparameter. De parameters die specifiek zijn voor SMS-leveringen staan in de **[!UICONTROL SMS parameters]** van de **[!UICONTROL Delivery]** tab.
 
 De volgende opties zijn beschikbaar:
 
-* **Adres** afzender: Hiermee kunt u de naam van de afzender aanpassen met een reeks alfanumerieke tekens die zijn beperkt tot elf tekens. Het veld mag niet uitsluitend uit cijfers bestaan. U kunt een voorwaarde definiëren om bijvoorbeeld verschillende namen weer te geven op basis van de gebiedscode van de ontvanger:
+* **Adres van afzender**: Hiermee kunt u de naam van de afzender aanpassen met een reeks alfanumerieke tekens die zijn beperkt tot elf tekens. Het veld mag niet uitsluitend uit cijfers bestaan. U kunt een voorwaarde definiëren om bijvoorbeeld verschillende namen weer te geven op basis van de gebiedscode van de ontvanger:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -43,14 +43,14 @@ De volgende opties zijn beschikbaar:
    >Controleer de wet in je land met betrekking tot het bewerken van namen van afzenders. Vraag de operator ook of deze functionaliteit wordt aangeboden.
 
 * **Transmissiemodus**: berichtenverzending door SMS.
-* **Prioriteit**: het niveau van belang dat aan een boodschap wordt toegekend. **[!UICONTROL Normal]** De prioriteit wordt standaard geselecteerd. Vraag uw serviceprovider naar de kosten van SMS-berichten die met de prioriteit **[!UICONTROL High]** worden verzonden.
-* **Type aanvraag**: Kies de toepassing die u aan uw SMS-levering wilt toewijzen. De optie **[!UICONTROL Direct Marketing]** is standaard geselecteerd en wordt het meest gebruikt.
+* **Prioriteit**: het niveau van belang dat aan een boodschap wordt toegekend. **[!UICONTROL Normal]** De prioriteit wordt standaard geselecteerd. Vraag uw serviceprovider naar de kosten van SMS-berichten die worden verzonden met **[!UICONTROL High]** prioriteit.
+* **Type aanvraag**: Kies de toepassing die u aan uw SMS-levering wilt toewijzen. De **[!UICONTROL Direct Marketing]** Deze optie is standaard geselecteerd en wordt het meest gebruikt.
 
 **Parameters specifiek voor de NetSize-connector**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **Gebruik verschillende SMS-berichten voor één bericht**: hiermee kunt u een bericht van meer dan 160 tekens verzenden via verschillende SMS-berichten.
+* **Verschillende SMS gebruiken voor één bericht**: hiermee kunt u een bericht van meer dan 160 tekens verzenden via verschillende SMS-berichten.
 
 **Parameters specifiek voor een schakelaar SMPP**
 
@@ -68,7 +68,7 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 
-De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen. Op deze manier kan Adobe Campaign de voortgang van de leveringen volgen en de statusrapporten en aanvragen voor abonnementen bij ontvangers afhandelen.
+De **nlserver-sms** de module vraagt de router van SMS met regelmatige intervallen. Op deze manier kan Adobe Campaign de voortgang van de leveringen volgen en de statusrapporten en aanvragen voor abonnementen bij ontvangers afhandelen.
 
 * **Statusrapporten**: Bekijk leveringslogboeken om de status van uw berichten te controleren.
 
@@ -80,15 +80,15 @@ De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen.
    > * Een SMS-account kan alleen aan één externe account worden gekoppeld om ervoor te zorgen dat statusrapporten aan de juiste account worden toegewezen
 
 
-* **Abonnement opzeggen**: ontvangers die de levering van SMS willen ophouden kunnen een bericht terugkeren dat het woord STOP bevat. Als uw leverancier het onder de voorwaarden van het contract toestaat, kunt u berichten via de **Inkomende SMS** werkschemaactiviteit terugwinnen en dan een vraag creëren om **niet meer deze ontvanger** optie voor de betrokken ontvangers toe te laten.
+* **Abonnement opzeggen**: ontvangers die de levering van SMS willen ophouden kunnen een bericht terugkeren dat het woord STOP bevat. Als uw leverancier dit toestaat onder de voorwaarden van het contract, kunt u berichten via **Binnenkomende SMS** workflowactiviteit en maak vervolgens een query om de **Neem geen contact meer op met deze ontvanger** voor de betrokken begunstigden.
 
-   Raadpleeg de handleiding [Workflows](../../workflow/using/architecture.md).
+   Zie de [Workflows](../../workflow/using/architecture.md) hulplijn.
 
 ## InSMS-schema {#insms-schema}
 
 Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving van deze velden is beschikbaar via het desc-kenmerk.
 
-* **bericht**: inhoud van het ontvangen SMS.
+* **message**: inhoud van het ontvangen SMS.
 * **oorsprong**: mobiel nummer bij de oorsprong van het bericht.
 * **providerId**: Identificatiecode van het door het SMSC geretourneerde bericht (berichtcentrum).
 * **gemaakt**: datum waarop het inkomende bericht in Adobe Campaign is ingevoegd.
@@ -104,7 +104,7 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **scheidingsteken**: scheidingsteken tussen de alias en de hoofdtekst van het bericht.
 * **messageDate**: berichtdatum gegeven door de exploitant.
 * **receivalDate**: databericht van de exploitant is ontvangen door SMSC (berichtcentrum).
-* **leveringsdatum**: datumbericht verzonden door SMSC (berichtcentrum).
+* **deliveryDate**: datumbericht verzonden door SMSC (berichtcentrum).
 * **largeAccount**: de code van de klantenrekening verbonden aan inkomende SMS.
 * **countryCode**: de landcode van de exploitant.
 * **operatorCode**: netcode van de exploitant.
@@ -120,7 +120,7 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 >[!IMPORTANT]
 >
->De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Raadpleeg voor meer informatie de sectie [Een externe SMPP-account maken](sms-set-up.md#creating-an-smpp-external-account).
+>De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Raadpleeg voor meer informatie de [Een SMPP-externe account maken](sms-set-up.md#creating-an-smpp-external-account) sectie.
 >
 >Het maakt deel uit van het certificeringsproces dat door Amerikaanse marktdeelnemers wordt uitgevoerd voor marketingcampagnes in de VS. Deze reacties op SMS-berichten van abonnees die het trefwoord bevatten, moeten onmiddellijk na ontvangst van een bericht van de abonnee worden teruggestuurd naar de abonnee.
 
@@ -142,9 +142,9 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
    </autoreply>
    ```
 
-1. Geef voor het **name**-kenmerk van de **`<shortcode>`**-tag de korte code op die wordt weergegeven in de plaats van de naam van de berichtafzender.
+1. Voor de **name** kenmerk van de **`<shortcode>`** -tag, geeft u de korte code op die wordt weergegeven in de plaats van de naam van de afzender van het bericht.
 
-   In elke **`<reply>`** markering, ga **sleutelwoord** attributen met een sleutelwoord en **text** attributen met het bericht in dat u voor dit sleutelwoord zou willen verzenden.
+   In elke **`<reply>`** -tag, voert u de **trefwoord** kenmerk met een trefwoord en de **text** kenmerk met het bericht dat u voor dit trefwoord wilt verzenden.
 
    >[!NOTE]
    >
@@ -159,11 +159,11 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. Sla dit bestand op onder de naam **smsAutoReply.xml** als u klaar bent.
+1. Sla dit bestand op onder de naam als u klaar bent **smsAutoReply.xml**.
 
    De naam van het bestand is hoofdlettergevoelig in Linux.
 
-1. Kopieer dit bestand naar de map **conf** in Adobe Campaign, op dezelfde plaats als de webserver.
+1. Kopieer dit bestand naar de **conf** in Adobe Campaign, op dezelfde plaats als de webserver.
 
 >[!IMPORTANT]
 >

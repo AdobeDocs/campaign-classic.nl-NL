@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Met een wizard die toegankelijk is via **[!UICONTROL Tools > Advanced > Add new fields]** kunt u een of meer velden toevoegen aan een tabel in de database.
+Een wizard die via **[!UICONTROL Tools > Advanced > Add new fields]** Hiermee kunt u een of meer velden toevoegen aan een tabel in de database.
 
 Valideren van de wizard werkt het extensieschema bij van de tabel die moet worden uitgebreid en start het SQL-script om de fysieke structuur van de database te wijzigen.
 
@@ -35,7 +35,7 @@ De wizardschermen bevatten de volgende stappen:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Klik op de knop **[!UICONTROL Finish]** om de wijzigingen te bevestigen.
+1. Klik op de knop **[!UICONTROL Finish]** knop.
 
 In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:receiver&#39; gemaakt en wordt het bijbehorende SQL-script uitgevoerd:
 
@@ -49,4 +49,4 @@ In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:rece
 
 >[!NOTE]
 >
->Standaard worden de toegevoegde velden gedeclareerd met de eigenschap **user** (met de waarde &quot;true&quot;). Hiermee kunt u het veld in de invoervorm van het uitgebreide schema weergeven en bewerken met behulp van een &quot;treeEdit&quot;-type besturingselement (zie Invoerformulier).
+>Standaard worden de toegevoegde velden gedeclareerd met de eigenschap **user** (met de waarde &quot;true&quot;). Hiermee kunt u het veld in de invoervorm van het uitgebreide schema weergeven en bewerken met behulp van een besturingselement van het type treeEdit (zie Invoerformulier).

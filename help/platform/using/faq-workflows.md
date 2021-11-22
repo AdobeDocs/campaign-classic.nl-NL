@@ -25,7 +25,7 @@ Ontdek hoe u processen en taken kunt organiseren met Adobe Campaign-workflows.
 
 ## Hoe kan ik data importeren in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Leer beste praktijken om gegevens in [dit sectie](../../platform/using/import-export-best-practices.md) in te voeren.
+Leer de beste werkwijzen voor het importeren van gegevens in [deze sectie](../../platform/using/import-export-best-practices.md).
 
 ## Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution-}
 

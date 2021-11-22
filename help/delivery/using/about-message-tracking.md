@@ -19,9 +19,9 @@ ht-degree: 9%
 
 Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten traceren en het gedrag van de ontvangers controleren: openen, klikken op koppelingen, geen abonnement nemen, enz.
 
-Deze informatie wordt teruggewonnen in **[!UICONTROL Tracking]** lusje van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: de URL waarop is geklikt, de datum en tijd van de klik en het document waarin de URL is gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
+Deze informatie wordt opgehaald in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: de URL waarop is geklikt, de datum en tijd van de klik en het document waarin de URL is gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
 
-Het **leveringsdashboard** is ook van belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie [deze sectie](delivery-dashboard.md) voor meer informatie hierover.
+De **bezorgdashboard** is ook van essentieel belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie voor meer informatie [deze sectie](delivery-dashboard.md).
 
 Het volgende diagram toont de stadia van de dialoog tussen de gebruiker en de diverse servers.
 
@@ -43,7 +43,7 @@ Voor het configureren van tracering moet uw instantie worden gedeclareerd en ger
 
 Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worden geregistreerd. [Meer informatie](../../installation/using/deploying-an-instance.md#saving-tracking)
 
-## Tracking van berichten {#message-tracking}
+## Berichten tracken {#message-tracking}
 
 <img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
 
@@ -107,7 +107,7 @@ De verschillende tabellen geven u de lijst van indicatoren die in de verschillen
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Raadpleeg [deze sectie](tracking-troubleshooting.md) voor een geavanceerdere probleemoplossing.
+De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Voor een geavanceerdere oplossing raadpleegt u [deze sectie](tracking-troubleshooting.md).
 
 * Controleren of het trackinglogproces wordt uitgevoerd
 

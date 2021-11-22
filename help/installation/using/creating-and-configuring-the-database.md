@@ -19,8 +19,8 @@ ht-degree: 1%
 
 Als u een database maakt, biedt Adobe Campaign twee verschillende opties:
 
-1. Een database maken of recyclen: Kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Zie [Geval 1: Een database maken/recyclen](#case-1--creating-recycling-a-database).
-1. Een bestaande database gebruiken: Kies deze optie als de beheerder al een lege database heeft gemaakt en u deze wilt gebruiken. of om de structuur van een bestaande database uit te breiden. Zie [Geval 2: Een bestaande database](#case-2--using-an-existing-database) gebruiken.
+1. Een database maken of recyclen: Kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Zie [Zaak 1: Een database maken/recyclen](#case-1--creating-recycling-a-database).
+1. Een bestaande database gebruiken: Kies deze optie als de beheerder al een lege database heeft gemaakt en u deze wilt gebruiken. of om de structuur van een bestaande database uit te breiden. Zie [Zaak 2: Bestaande databases gebruiken](#case-2--using-an-existing-database).
 
 De configuratiestappen worden hieronder beschreven.
 
@@ -28,7 +28,7 @@ De configuratiestappen worden hieronder beschreven.
 >
 >Namen van databases, gebruikers en schema&#39;s mogen niet beginnen met een getal of speciale tekens bevatten.
 >
->Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
+>Alleen de **internal** identificator kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 ## Zaak 1: Een database maken/recyclen {#case-1--creating-recycling-a-database}
 
@@ -36,12 +36,12 @@ De stappen voor het creëren van een database of het recyclen van een bestaande 
 
 De volgende stappen zijn hierbij betrokken:
 
-* [Stap 1 - De database-engine](#step-1---selecting-the-database-engine) selecteren
+* [Stap 1 - De database-engine selecteren](#step-1---selecting-the-database-engine),
 * [Stap 2 - Verbinding maken met de server](#step-2---connecting-to-the-server),
 * [Stap 3 - Verbinding en kenmerken van de database](#step-3---connection-and-characteristics-of-the-database),
-* [Stap 4 - te installeren](#step-4---packages-to-install) pakketten,
+* [Stap 4 - Te installeren pakketten](#step-4---packages-to-install),
 * [Stap 5 - Aanmaakstappen](#step-5---creation-steps),
-* [Stap 6 - Het creëren van het gegevensbestand](#step-6---creating-the-database).
+* [Stap 6 - De database maken](#step-6---creating-the-database).
 
 ### Stap 1 - De database-engine selecteren {#step-1---selecting-the-database-engine}
 
@@ -51,34 +51,34 @@ Selecteer de database-engine in de vervolgkeuzelijst.
 
 Ondersteunde databases worden vermeld in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
-Identificeer de server en kies het type van verrichting om uit te voeren. In dit geval **[!UICONTROL Create or recycle a database]**.
+Identificeer de server en kies het type van verrichting om uit te voeren. In dit geval: **[!UICONTROL Create or recycle a database]**.
 
 ![](assets/s_ncs_install_db_oracle_creation01.png)
 
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
-* Voor een **Oracle** motor, bevolk **TNS naam** die voor de toepassingsserver wordt bepaald.
-* Voor een **PostgreSQL** of **DB2** motor, moet u de DNS naam (of IP adres) specificeren die op de toepassingsserver wordt bepaald om tot de gegevensbestandserver toegang te hebben.
-* Voor een **Microsoft SQL Server** motor, moet u bepalen: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
+* Voor een **Oracle** motor, bevolken **TNS-naam** gedefinieerd voor de toepassingsserver.
+* Voor een **PostgreSQL** of **DB2** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
+* Voor een **Microsoft SQL Server** engine, moet u definiëren: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
 
    >[!CAUTION]
    >
-   > Beginnend 20.3, wordt de authentificatie van NT van Vensters ontmanteld. **[!UICONTROL SQL Server authentication]** is nu de enige authentificatiemodus beschikbaar voor de Server van Microsoft SQL. [Meer informatie](../../rn/using/deprecated-features.md)
+   > Beginnend 20.3, wordt de authentificatie van NT van Vensters ontmanteld. **[!UICONTROL SQL Server authentication]** is nu de enige verificatiemodus beschikbaar voor Microsoft SQL Server. [Meer informatie](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Stap 2 - Verbinding maken met de server {#step-2---connecting-to-the-server}
 
-Definieer in het venster **[!UICONTROL Server access]** de toegang tot de databaseserver.
+In de **[!UICONTROL Server access]** , definieert u de toegang tot de databaseserver.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
-Om dit te doen, ga de naam en het wachtwoord van **het systeemrekening van het Beleid** in die toestemming heeft om tot de gegevensbestanden toegang te hebben, d.w.z.:
+Voer hiertoe de naam en het wachtwoord van een **Systeemaccount voor beheerders** die toegang heeft tot de databanken, d.w.z.:
 
-* **** systeem voor een gegevensbank van Oracles;
-* **** opslaan voor een Microsoft SQL Server-database,
-* **** postgressiviteit voor een PostgreSQL-database,
-* **db2inst1**  voor een DB2-database.
+* **systeem** voor een database van Oracles,
+* **sa** voor een Microsoft SQL Server-database,
+* **postzegels** voor een PostgreSQL-database,
+* **db2inst1** voor een DB2-database.
 
 ### Stap 3 - Verbinding en kenmerken van de database {#step-3---connection-and-characteristics-of-the-database}
 
@@ -97,17 +97,17 @@ U moet de volgende instellingen definiëren:
 * Voer het wachtwoord in van de account die aan deze database is gekoppeld.
 * Geef aan of de database zich in Unicode moet bevinden.
 
-   Met de optie **[!UICONTROL Unicode database]** kunt u alle typen tekens in Unicode opslaan, ongeacht de taal.
+   De **[!UICONTROL Unicode database]** Hiermee kunt u alle tekentypen opslaan in Unicode, ongeacht de taal.
 
    >[!NOTE]
    >
-   >Met een gegevensbestand van het Oracle, laat de **[!UICONTROL Unicode storage]** optie u **NCLOB** en **NVARCHAR** typegebieden gebruiken.
+   >Met een gegevensbestand van het Oracle, **[!UICONTROL Unicode storage]** gebruiken **NCLOB** en **NVARCHAR** tekstvelden.
    > 
    >Als u deze optie niet selecteert, moet de tekenset (charset) van de database van het Oracle gegevensopslag in alle talen inschakelen (AL32UTF8 wordt aanbevolen).
 
 * Kies een tijdzone voor de database en geef op of u deze in UTC wilt plaatsen (indien beschikbaar).
 
-   Raadpleeg [Tijdzonebeheer](../../installation/using/time-zone-management.md) voor meer informatie hierover.
+   Raadpleeg voor meer informatie hierover [Tijdzonebeheer](../../installation/using/time-zone-management.md).
 
 ### Stap 4 - Te installeren pakketten {#step-4---packages-to-install}
 
@@ -119,13 +119,13 @@ Raadpleeg de licentieovereenkomst om te controleren welke oplossingen en opties 
 
 ### Stap 5 - Aanmaakstappen {#step-5---creation-steps}
 
-In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven en bewerken dat wordt gebruikt om de tabellen te maken.
+De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de tabellen te maken, weergeven en bewerken.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Voor een Oracle, de Server van Microsoft SQL of het gegevensbestand PostgreSQL, kan de beheerder **opslagparameters** ook bepalen die moeten worden gebruikt wanneer het creëren van gegevensbestandvoorwerpen.
+* Voor een Oracle, de Server van Microsoft SQL of het gegevensbestand PostgreSQL, kan de beheerder ook bepalen **opslagparameters** te gebruiken bij het maken van databaseobjecten.
 
-   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk opgeslagen in het **[!UICONTROL Administration > Platform > Options]** knooppunt in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
+   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Zij worden respectievelijk in de **[!UICONTROL Administration > Platform > Options]** knoop in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: gebruikerstabellen die op een schema worden gebaseerd
    * **WdbcOptions_TableSpaceIndex**: index van gebruikerstabellen die op een schema worden gebaseerd
@@ -133,13 +133,13 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
    * **WdbcOptions_TableSpaceWorkIndex**: index van werktabellen zonder schema
 
 * Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
-* Met de optie **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
+* De **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 6 - De database maken {#step-6---creating-the-database}
 
-In het laatste werkgebied van de wizard kunt u de database maken. Klik **[!UICONTROL Start]** om te bevestigen.
+In het laatste werkgebied van de wizard kunt u de database maken. Klikken **[!UICONTROL Start]** ter bevestiging.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
@@ -147,9 +147,9 @@ Zodra het gegevensbestand wordt gecreeerd, kunt u opnieuw verbinden om instantie
 
 U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Zie [Implementatiewizard](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
+De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** gevonden in de installatiemap van Adobe Campaign.
 
-Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegevensbestand verbonden aan de &quot;campagne&quot;rekening met zijn gecodeerd wachtwoord:
+Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het gecodeerde wachtwoord:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
@@ -163,11 +163,11 @@ Voor een database van Oracles zijn de minimaal vereiste rechten bijvoorbeeld: GR
 
 Om een bestaand gegevensbestand te gebruiken, zijn de configuratiestappen als volgt:
 
-* [Stap 1 - De database-engine](#step-1---choosing-the-database-engine) kiezen
-* [Stap 2 - Verbindingsinstellingen](#step-2---database-connection-settings) database,
-* [Stap 3 - te installeren](#step-3---packages-to-install) pakketten,
+* [Stap 1 - De database-engine kiezen](#step-1---choosing-the-database-engine),
+* [Stap 2 - Verbindingsinstellingen database](#step-2---database-connection-settings),
+* [Stap 3 - Te installeren pakketten](#step-3---packages-to-install),
 * [Stap 4 - Aanmaakstappen](#step-4---creation-steps),
-* [Stap 5 - Het creëren van het gegevensbestand](#step-5---creating-the-database).
+* [Stap 5 - De database maken](#step-5---creating-the-database).
 
 ### Stap 1 - De database-engine kiezen {#step-1---choosing-the-database-engine}
 
@@ -175,15 +175,15 @@ Kies de database-engine in de vervolgkeuzelijst.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Identificeer de server en kies het type van verrichting u wilt uitvoeren. In dit geval **[!UICONTROL Use an existing database]**.
+Identificeer de server en kies het type van verrichting u wilt uitvoeren. In dit geval: **[!UICONTROL Use an existing database]**.
 
 ![](assets/s_ncs_install_db_oracle_exists_01.png)
 
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
-* Voor een **Oracle** motor, bevolk **TNS naam** die voor de toepassingsserver wordt bepaald.
-* Voor een **PostgreSQL** of **DB2** motor, moet u de DNS naam (of IP adres) specificeren die op de toepassingsserver wordt bepaald om tot de gegevensbestandserver toegang te hebben.
-* Voor een **Microsoft SQL Server** motor, moet u bepalen:
+* Voor een **Oracle** motor, bevolken **TNS-naam** gedefinieerd voor de toepassingsserver.
+* Voor een **PostgreSQL** of **DB2** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
+* Voor een **Microsoft SQL Server** engine, moet u definiëren:
 
    1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver;
    1. de veiligheidsmethode die wordt gebruikt om tot de Server van Microsoft SQL toegang te hebben: **[!UICONTROL SQL Server authentication]** of **[!UICONTROL Windows NT authentication]**.
@@ -192,7 +192,7 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 
 ### Stap 2 - Verbindingsinstellingen database {#step-2---database-connection-settings}
 
-Definieer in het venster **[!UICONTROL Database]** de instellingen voor de databaseverbinding.
+In de **[!UICONTROL Database]** , definieert u de instellingen voor de databaseverbinding.
 
 ![](assets/s_ncs_install_db_oracle_exists_02.png)
 
@@ -218,19 +218,19 @@ Raadpleeg de licentieovereenkomst om te controleren welke oplossingen en opties 
 
 ### Stap 4 - Aanmaakstappen {#step-4---creation-steps}
 
-In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven en bewerken dat wordt gebruikt om de tabellen te maken.
+De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de tabellen te maken, weergeven en bewerken.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Voor Oracle-, Microsoft SQL Server- of PostSQL-databases kan de beheerder de **opslagparameters** definiëren die moeten worden gebruikt bij het maken van databaseobjecten.
+* Voor Oracle-, Microsoft SQL Server- of PostgreSQL-databases kan de beheerder de **opslagparameters** te gebruiken bij het maken van databaseobjecten.
 * Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
-* Met de optie **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
+* De **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 5 - De database maken {#step-5---creating-the-database}
 
-In het laatste werkgebied van de wizard kunt u de database maken. Klik **[!UICONTROL Start]** om te bevestigen.
+In het laatste werkgebied van de wizard kunt u de database maken. Klikken **[!UICONTROL Start]** ter bevestiging.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
@@ -238,9 +238,9 @@ Wanneer het maken van een database is voltooid, kunt u opnieuw verbinding maken 
 
 U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Zie [Implementatiewizard](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
+De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** gevonden in de installatiemap van Adobe Campaign.
 
-Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegevensbestand verbonden aan de &quot;campagne&quot;rekening met zijn gecodeerd wachtwoord:
+Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het gecodeerde wachtwoord:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>

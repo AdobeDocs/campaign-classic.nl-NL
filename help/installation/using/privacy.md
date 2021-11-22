@@ -21,11 +21,11 @@ ht-degree: 4%
 
 Adobe Campaign biedt een reeks tools om u te helpen de privacyvereisten voor AVG en CCPA na te leven.
 
-Raadpleeg [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
+Zie [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
 
 ## URL-personalisatie {#url-personalization}
 
-Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. De volgende voorbeelden mogen nooit worden gebruikt in alle URL-kenmerken &lt;`a href="">` of `<img src="">`:
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. De volgende voorbeelden mogen nooit in alle URL-kenmerken worden gebruikt &lt;`a href="">` of `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -35,7 +35,7 @@ Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen pe
 
 ### Aanbeveling
 
-Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van Url- lijst via [de Algemene Redacteur van de Vraag van de Campagne](../../platform/using/steps-to-create-a-query.md) in werking of creeer een werkschema met filtercriteria in [vraagactiviteit](../../workflow/using/query.md).
+Voer een query uit voor het bijhouden van een URL-tabel via [Editor algemene query voor campagne](../../platform/using/steps-to-create-a-query.md) of maak een workflow met filtercriteria in het dialoogvenster [queryactiviteit](../../workflow/using/query.md).
 
 Voorbeeld:
 
@@ -57,11 +57,11 @@ Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd vo
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt deze fout geretourneerd: &quot;Gevraagde URL &#39;...&#39; is niet gevonden.&quot;
 
-Bovendien kunt u sinds Campagne 20.2 en de [!DNL Gold Standard] versie, een verhoging gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
+Daarnaast geldt sinds de campagne 20.2 en de [!DNL Gold Standard] release, kunt u een verbetering gebruiken om URL&#39;s uit te schakelen die zijn gegenereerd in vorige builds. Deze functie is standaard uitgeschakeld. U kunt uitreiken tot [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om deze functie in te schakelen.
 
-Als u [!DNL Gold Standard] 19.1.4 uitvoert, kunt u problemen ervaren met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
+Als u werkt [!DNL Gold Standard] 19.1.4. kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen of via leveringen via ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
-Of u campagne op gebouw of in een hybride architectuur in werking stelt, moet u tot [de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) richten om de handtekening van URL onbruikbaar te maken.
+Of u Campagne op gebouw of in een hybride architectuur in werking stelt, moet u bereiken aan [Klantenservice](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om URL-ondertekening uit te schakelen.
 
 Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
 * Voorafgaand aan de marketinginstantie ter plaatse
@@ -73,25 +73,25 @@ Anders kunnen sommige van deze problemen zich voordoen:
 
 Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert u de volgende stappen uit op alle Campagneservers tegelijk:
 
-1. Wijzig **blockRedirectForUnsignedTrackingLink** in **true** in het serverconfiguratiebestand (serverConf.xml).
-1. Start de **nlserver**-service opnieuw.
+1. Wijzig in het configuratiebestand van de server (serverConf.xml) de waarde **blockRedirectForUnsignedTrackingLink** tot **true**.
+1. Start de **nlserver** service.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
 Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
-1. Wijzig **signEmailLinks** in **false** in het serverconfiguratiebestand (serverConf.xml).
-1. Start de **nlserver**-service opnieuw.
+1. Wijzig in het configuratiebestand van de server (serverConf.xml) de waarde **signEmailLinks** tot **false**.
+1. Start de **nlserver** service.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
 ## Gegevensbeperking
 
 U moet ervoor zorgen dat de gecodeerde wachtwoorden niet toegankelijk zijn voor gebruikers met lage bevoegdheden. Hiervoor zijn er twee hoofdlijnen: toegang tot wachtwoordvelden alleen of tot de gehele entiteit beperken (moet u een build >= 8770 hebben).
 
-Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account is wel toegankelijk via de interface voor alle gebruikers. Zie [deze pagina](../../configuration/using/restricting-pii-view.md).
+Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account is toegankelijk via de interface voor alle gebruikers. Zie [deze pagina](../../configuration/using/restricting-pii-view.md).
 
-1. Ga in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. Ingaan **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
-1. Maak een nieuwe **[!UICONTROL Extension of a schema]**.
+1. Een nieuwe **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
@@ -99,7 +99,7 @@ Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account 
 
 1. In het laatste tovenaar scherm, kunt u uw nieuw srcSchema uitgeven om toegang tot alle wachtwoordgebieden te beperken:
 
-   U kunt het hoofdelement (`<element name="extAccount" ... >`) vervangen door:
+   U kunt het hoofdelement (`<element name="extAccount" ... >`) door:
 
    ```
    <element name="extAccount">
@@ -152,7 +152,7 @@ Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account 
 
    >[!NOTE]
    >
-   >U kunt `$(loginId) = 0 or $(login) = 'admin'` door `hasNamedRight('admin')` vervangen om alle gebruikers met beheerdersrechten toe te staan om deze wachtwoorden te zien.
+   >U kunt `$(loginId) = 0 or $(login) = 'admin'` with `hasNamedRight('admin')` om alle gebruikers met beheerdersrechten toe te staan deze wachtwoorden te zien.
 
 ## Pagina&#39;s met PII beveiligen
 
@@ -174,12 +174,12 @@ Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
    *Disallow: /
    ```
 
-   Voor IIS, verwijs naar [deze pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Voor IIS raadpleegt u [deze pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    Voor Apache kunt u het bestand plaatsen in **/var/www/robots.txt** (Debian).
 
-1. Soms is het toevoegen van een **robots.txt** dossier niet voldoende in termen van veiligheid. Als een andere website bijvoorbeeld een koppeling naar uw pagina bevat, wordt deze mogelijk weergegeven in een zoekresultaat.
+1. Soms wordt een **robots.txt** bestand is onvoldoende voor de beveiliging. Als een andere website bijvoorbeeld een koppeling naar uw pagina bevat, wordt deze mogelijk weergegeven in een zoekresultaat.
 
-Naast het bestand **robots.txt** wordt aangeraden een **X-Robots-Tag**-header toe te voegen. U kunt het in Apache of IIS en in het **serverConf.xml** configuratiedossier doen.
+Naast de **robots.txt** bestand, wordt aangeraden een **X-robots-tag** header. U kunt het in Apache of IIS en in **serverConf.xml** configuratiebestand.
 
-Raadpleeg [dit artikel](https://developers.google.com/search/reference/robots_meta_tag) voor meer informatie.
+Raadpleeg voor meer informatie [dit artikel](https://developers.google.com/search/reference/robots_meta_tag).

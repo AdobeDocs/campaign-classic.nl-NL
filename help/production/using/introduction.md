@@ -42,7 +42,7 @@ Adobe Campaign is gebaseerd op verschillende processen die aan de serverzijde wo
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../installation/using/general-architecture.md#logical-application-layer) voor meer informatie over de verschillende Adobe Campaign-processen.\
+>Raadpleeg voor meer informatie over de verschillende Adobe Campaign-processen de [deze sectie](../../installation/using/general-architecture.md#logical-application-layer).\
 >Wanneer u de architectuur van het type Power Booster of Power Cluster gebruikt, moet u dit proces toepassen op alle Power Booster-/Cluster-servers.
 
 Als de nieuwe versie een wijziging van de gegevensbestandstructuur impliceert, adviseren wij opnieuw beginnend de servers in de volgende orde:

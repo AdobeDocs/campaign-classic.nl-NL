@@ -17,11 +17,11 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-Gebruik de optie Adobe Campaign Classic **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in een externe database. Voer de onderstaande stappen uit om toegang tot [!DNL Google BigQuery] te configureren.
+Adobe Campaign Classic gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Google BigQuery].
 
-1. [!DNL Google BigQuery] configureren op [Windows](#google-windows) of [Linux](#google-linux)
-1. [!DNL Google BigQuery] [externe account](#google-external) in Adobe Campaign Classic configureren
-1. [!DNL Google BigQuery] bulkload van connector instellen op [Windows](#bulk-load-windows) of [Linux](#bulk-load-linux)
+1. Configureren [!DNL Google BigQuery] op [Windows](#google-windows) of [Linux](#google-linux)
+1. Configureer de [!DNL Google BigQuery] [externe rekening](#google-external) in Adobe Campaign Classic
+1. Instellen [!DNL Google BigQuery] bulkbelasting van connector aan [Windows](#bulk-load-windows) of [Linux](#bulk-load-linux)
 
 >[!NOTE]
 >
@@ -33,29 +33,29 @@ Gebruik de optie Adobe Campaign Classic **Federated Data Access** (FDA) om infor
 
 ### Stuurprogramma ingesteld op Windows {#driver-window}
 
-1. Download het [ODBC-stuurprogramma voor Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Download de [ODBC-stuurprogramma voor Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
 1. Configureer het ODBC-stuurprogramma in Windows. Raadpleeg [deze pagina](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf) voor meer informatie.
 
-1. Voor het functioneren van de [!DNL Google BigQuery]-connector vereist Adobe Campaign Classic de volgende parameters om verbinding te maken:
+1. Voor de [!DNL Google BigQuery] -connector werkt, vereist Adobe Campaign Classic de volgende parameters om verbinding te maken:
 
    * **[!UICONTROL Project]**: een bestaand project maken of gebruiken.
 
-      Raadpleeg deze [pagina](https://cloud.google.com/resource-manager/docs/creating-managing-projects) voor meer informatie.
+      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Service account]**: Maak een serviceaccount.
 
-      Raadpleeg deze [pagina](https://cloud.google.com/iam/docs/creating-managing-service-accounts) voor meer informatie.
+      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Key File Path]**: de  **[!UICONTROL Service account]** vereist  **[!UICONTROL Key File]** voor een  [!DNL Google BigQuery] verbinding door ODBC.
+   * **[!UICONTROL Key File Path]**: de **[!UICONTROL Service account]** vereist een **[!UICONTROL Key File]** voor een [!DNL Google BigQuery] verbinding via ODBC.
 
-      Raadpleeg deze [pagina](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) voor meer informatie.
+      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Dataset]**:  **[!UICONTROL Dataset]** is optioneel voor een ODBC-verbinding. Aangezien elke vraag de dataset moet verstrekken waar de lijst wordt gevestigd, is het specificeren van **[!UICONTROL Dataset]** verplicht voor [!DNL Google BigQuery] de Schakelaar van FDA in Adobe Campaign Classic.
+   * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** is optioneel voor een ODBC-verbinding. Aangezien elke vraag de dataset moet verstrekken waar de lijst wordt gevestigd, die a specificeren **[!UICONTROL Dataset]** is verplicht voor [!DNL Google BigQuery] FDA Connector in Adobe Campaign Classic.
 
-      Raadpleeg deze [pagina](https://cloud.google.com/bigquery/docs/datasets) voor meer informatie.
+      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/bigquery/docs/datasets).
 
-1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe account configureren. Raadpleeg [deze sectie](#google-external) voor meer informatie over het configureren van uw externe account.
+1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#google-external).
 
 ### Bulkbelasting ingesteld in Windows {#bulk-load-window}
 
@@ -63,17 +63,17 @@ Gebruik de optie Adobe Campaign Classic **Federated Data Access** (FDA) om infor
 >
 >Voor Google Cloud SDK moet Python zijn geïnstalleerd om te kunnen werken.
 >
->We raden u aan Python3 te gebruiken. Zie deze [pagina](https://www.python.org/downloads/).
+>We raden u aan Python3 te gebruiken. Zie dit [page](https://www.python.org/downloads/).
 
-Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met Google Cloud SDK.
+Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via de Google Cloud SDK.
 
-1. Download Windows 64-bits archief (x86_64) van deze [pagina](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheer het archief naar de corresponderende directory.
+1. Windows 64-bits archief (x86_64) downloaden uit dit [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheer het in de corresponderende directory.
 
-1. Voer het script `google-cloud-sdk\install.sh` uit. U moet het plaatsen van wegvariabele goedkeuren.
+1. Voer de `google-cloud-sdk\install.sh` script. U moet het plaatsen van wegvariabele goedkeuren.
 
 1. Controleer na de installatie of de padvariabele `...\google-cloud-sdk\bin` is ingesteld. Als dat niet het geval is, voegt u het handmatig toe.
 
-1. Voeg in het `..\google-cloud-sdk\bin\bq.cmd`-bestand de lokale variabele `CLOUDSDK_PYTHON` toe, die wordt omgeleid naar de locatie van de Python-installatie.
+1. In de  `..\google-cloud-sdk\bin\bq.cmd` bestand toevoegen `CLOUDSDK_PYTHON` lokale variabele, die wordt omgeleid naar de locatie van de Python-installatie.
 
    Bijvoorbeeld:
 
@@ -109,14 +109,14 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    apt-get install unixODBC
    ```
 
-1. Download het [Magnitude Simba Linux ODBC-stuurprogramma (.tar.gz)](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers). Breng het balbestand vervolgens over naar een tijdelijke map op uw computer of gebruik de opdracht Doel:
+1. Download de [Magnitude Simba Linux ODBC-stuurprogramma (.tar.gz)](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers). Breng het balbestand vervolgens over naar een tijdelijke map op uw computer of gebruik de opdracht Doel:
 
    ```
    # in this example driver version is 2.3.1.1001
    wget https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux.tar.gz
    ```
 
-1. Extraheer het hoofdbalbestand als volgt, waarbij **TarballName** de naam is van het tarball-pakket dat de bestuurder bevat:
+1. Extraheer het hoofdbalbestand als volgt: **TarballName** de naam is van het tarball-pakket dat de bestuurder bevat:
 
    ```
    tar --directory=/tmp -zxvf [TarballName]
@@ -130,7 +130,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    tar --directory=/tmp/BigQueryDriver/ -zxvf SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version].tar.gz
    ```
 
-1. Open de tijdelijke locatie waar het hoofdbalbestand is geëxtraheerd en kopieer de bestanden `GoogleBigQueryODBC.did` en `setup/simba.googlebigqueryodbc.ini` naar de nieuwe map die in de vorige stap is gemaakt:
+1. Open de tijdelijke locatie waar het hoofdbalbestand is geëxtraheerd en kopieer de `GoogleBigQueryODBC.did` en `setup/simba.googlebigqueryodbc.ini` bestanden naar de nieuwe map die in de vorige stap is gemaakt:
 
    ```
    cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
@@ -150,14 +150,14 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    cp -r /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/* /opt/simba/googlebigqueryodbc/
    ```
 
-1. Vervang `<INSTALLDIR>` door `/opt/simba/googlebigqueryodbc` in `simba.googlebigqueryodbc.ini` in de installatiemap:
+1. Vervangen `<INSTALLDIR>` with `/opt/simba/googlebigqueryodbc` in `simba.googlebigqueryodbc.ini` in de installatiemap:
 
    ```
    cd /opt/simba/googlebigqueryodbc/lib/
    sed -i 's/<INSTALLDIR>/\/opt\/simba\/googlebigqueryodbc/g' simba.googlebigqueryodbc.ini
    ```
 
-1. Wijzig `DriverManagerEncoding` in UTF-16 en `SwapFilePath` in `simba.googlebigqueryodbc.ini`. Indien nodig kunt u ook de loginstellingen wijzigen.
+1. Wijzig de `DriverManagerEncoding` naar UTF-16 en `SwapFilePath` in `simba.googlebigqueryodbc.ini`. Indien nodig kunt u ook de loginstellingen wijzigen.
 
    Hieronder ziet u een voorbeeld van een bijgewerkt configuratiebestand voor het hele stuurprogramma:
 
@@ -171,7 +171,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    SwapFilePath=/tmp
    ```
 
-1. Als u een bestand met systeemstuurprogramma&#39;s of een huidig `odbcinst.ini`-bestand gebruikt, configureert u `/etc/odbcinst.ini` zodanig dat dit verwijst naar de locatie `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so` van het Google BigQuery-stuurprogramma.
+1. Als u een systeemstuurprogramma of een ander huidig bestand gebruikt `odbcinst.ini` bestand, configureren `/etc/odbcinst.ini` naar de locatie van het Google BigQuery-stuurprogramma `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so`.
 
    Bijvoorbeeld:
 
@@ -187,7 +187,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    Driver=/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
    ```
 
-1. Zoek de locatie van de UnixODBC-beheerbibliotheken voor stuurprogramma&#39;s en voeg de bibliotheekpaden `unixODBC` en `googlebigqueryodbc` toe aan de variabele `LD_LIBRARY_PATH environment`.
+1. Zoek de locatie van de UnixODBC-beheerbibliotheken voor stuurprogramma&#39;s en voeg de `unixODBC` en `googlebigqueryodbc` bibliotheekpaden naar de `LD_LIBRARY_PATH environment` variabele.
 
    ```
    find / -name 'lib*odbc*.so*' -print
@@ -203,7 +203,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/simba/googlebigqueryodbc:/usr/lib
    ```
 
-1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe account configureren. Raadpleeg [deze sectie](#google-external) voor meer informatie over het configureren van uw externe account.
+1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#google-external).
 
 ### Bulkbelasting ingesteld op Linux {#bulk-load-linux}
 
@@ -211,41 +211,41 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
 >
 >Voor Google Cloud SDK moet Python zijn geïnstalleerd om te kunnen werken.
 >
->We raden u aan Python3 te gebruiken. Zie deze [pagina](https://www.python.org/downloads/).
+>We raden u aan Python3 te gebruiken. Zie dit [page](https://www.python.org/downloads/).
 
-Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met Google Cloud SDK.
+Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via de Google Cloud SDK.
 
-1. Download Linux 64-bits (x86_64)-archief in deze [pagina](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheer het in de corresponderende directory.
+1. Download Linux 64-bits (x86_64) archief in deze [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheren in de corresponderende directory.
 
-1. Voer het script `google-cloud-sdk\install.sh` uit. U moet het plaatsen van wegvariabele goedkeuren.
+1. Voer de `google-cloud-sdk\install.sh` script. U moet het plaatsen van wegvariabele goedkeuren.
 
 1. Controleer na de installatie of de padvariabele `...\google-cloud-sdk\bin` is ingesteld. Als dat niet het geval is, voegt u het handmatig toe.
 
-1. Als u wilt vermijden gebruikend `PATH` variabele of als u `google-cloud-sdk` folder naar een andere plaats wilt verplaatsen, gebruik `bqpath` optiewaarde wanneer het vormen van **[!UICONTROL External account]** om de nauwkeurige weg aan de bakfolder op uw systeem te specificeren.
+1. Als u het gebruik van de `PATH` of als u de `google-cloud-sdk` naar een andere locatie, gebruik de `bqpath` optiewaarde bij het configureren van de **[!UICONTROL External account]** om het exacte pad naar de map bin op uw systeem op te geven.
 
 1. Start Adobe Campaign Classic opnieuw om rekening te houden met de wijzigingen.
 
-## Externe account voor Google BigQuery {#google-external}
+## Google BigQuery, externe account {#google-external}
 
-U moet een [!DNL Google BigQuery] externe rekening tot stand brengen om uw instantie van Adobe Campaign Classic met uw [!DNL Google BigQuery] externe gegevensbestand te verbinden.
+U moet een [!DNL Google BigQuery] externe account om uw Adobe Campaign Classic-exemplaar aan te sluiten op uw [!DNL Google BigQuery] externe database.
 
-1. Klik in Adobe Campaign Classic **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Van Adobe Campaign Classic **[!UICONTROL Explorer]**, klikt u op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
-1. Selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]** van uw externe rekening.
+1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de externe account [!DNL Google BigQuery]. Geef de volgende instellingen op:
+1. Configureer de [!DNL Google BigQuery] externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
-   * **[!UICONTROL Service account]**: E-mail van uw  **[!UICONTROL Service account]**. Raadpleeg [Google Cloud-documentatie](https://cloud.google.com/iam/docs/creating-managing-service-accounts) voor meer informatie hierover.
+   * **[!UICONTROL Service account]**: E-mail van uw **[!UICONTROL Service account]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Project]**: Naam van uw  **[!UICONTROL Project]**. Raadpleeg [Google Cloud-documentatie](https://cloud.google.com/resource-manager/docs/creating-managing-projects) voor meer informatie hierover.
+   * **[!UICONTROL Project]**: Naam van uw **[!UICONTROL Project]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**: Selecteer  **[!UICONTROL Click here to upload]** als u de sleutel via Adobe Campaign Classic wilt uploaden.
+      * **[!UICONTROL Upload key file to the server]**: selecteren **[!UICONTROL Click here to upload]** als u ervoor kiest de toets te uploaden via Adobe Campaign Classic.
 
       * **[!UICONTROL Enter manually the key file path]**: Kopieer/plak het absolute pad in dit veld als u een bestaande sleutel wilt gebruiken.
-   * **[!UICONTROL Dataset]**: Naam van uw  **[!UICONTROL Dataset]**. Raadpleeg [Google Cloud-documentatie](https://cloud.google.com/bigquery/docs/datasets-intro) voor meer informatie hierover.
+   * **[!UICONTROL Dataset]**: Naam van uw **[!UICONTROL Dataset]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/bigquery/docs/datasets-intro).
    ![](assets/google-big-query.png)

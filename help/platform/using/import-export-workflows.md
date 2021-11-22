@@ -25,15 +25,15 @@ Workflows kunnen handig zijn om een aantal importprocessen te automatiseren. Of 
 
 De gegevens die in een werkstroom worden verzonden, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid en gestructureerd.
 
-Deze lijst is mogelijk rechtstreeks gemaakt in Adobe Campaign of geïmporteerd door de optie **[!UICONTROL Import a list]**. Voor meer op deze optie, verwijs naar deze [pagina](../../platform/using/about-generic-imports-exports.md).
+Deze lijst is mogelijk rechtstreeks gemaakt in Adobe Campaign of geïmporteerd door de **[!UICONTROL Import a list]** optie. Raadpleeg voor meer informatie over deze optie [page](../../platform/using/about-generic-imports-exports.md).
 
-Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie over het gebruik van de activiteit in de leeslijst in een workflow.
+Raadpleeg voor meer informatie over het gebruik van de activiteit in een leeslijst in een workflow de [deze pagina](../../workflow/using/read-list.md).
 
 ### Gegevens uit een bestand laden {#loading-data-from-a-file}
 
 De gegevens die in een werkstroom worden verwerkt, kunnen uit een gestructureerd bestand worden geëxtraheerd, zodat het bestand in Adobe Campaign kan worden geïmporteerd.
 
-Een beschrijving van de activiteit van de ladingsgegevens kan in [het laden van gegevens (dossier)](../../workflow/using/data-loading--file-.md) sectie worden gevonden.
+Een beschrijving van de activiteit van de ladingsgegevens is te vinden in de [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) sectie.
 
 Voorbeeld van gestructureerd bestand dat moet worden geïmporteerd:
 
@@ -49,6 +49,6 @@ Nadat gegevens zijn verzameld, kunt u deze gebruiken in uw workflows, bijvoorbee
 
 ## Gegevens exporteren {#exporting-data-via-a-workflow}
 
-Workflows kunnen een handige manier zijn om een aantal van uw exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
+Workflows kunnen een handige manier zijn om een aantal exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
 
-Exportbewerkingen worden uitgevoerd met een **[!UICONTROL Data extraction (file) activity]**. Raadpleeg [deze pagina](../../workflow/using/extraction--file-.md) voor meer informatie over het configureren en gebruiken van de activiteit.
+Exportbewerkingen worden uitgevoerd met een **[!UICONTROL Data extraction (file) activity]**. Voor meer op om de activiteit te vormen en te gebruiken, verwijs naar [deze pagina](../../workflow/using/extraction--file-.md).

@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
-Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md) voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign.
+Voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign raadpleegt u [deze sectie](../../configuration/using/about-schema-edition.md).
 
 ## Schemastructuur {#schema-structure}
 
-Het document van XML van een gegevensschema moet **`<srcschema>`** wortelelement met **name** en **namespace** attributen bevatten om de schemanaam en zijn namespace te bevolken.
+Het XML-document van een gegevensschema moet het **`<srcschema>`** hoofdelement met de **name** en **namespace** attributen om de schemanaam en zijn namespace te bevolken.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,13 +39,13 @@ In een inhoudsbeheerschema, wordt het belangrijkste element vertegenwoordigd doo
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-Met het **template**-kenmerk dat u in het hoofdelement hebt ingevoerd, kunt u het schema met algemene eigenschappen uitbreiden naar alle inhoudsdefinities, zoals naam, aanmaakdatum, auteur, gekoppelde tekenreeks, enz.
+De **template** kunt u het schema met algemene eigenschappen uitbreiden tot alle inhoudsdefinities, zoals naam, aanmaakdatum, auteur, gekoppelde tekenreeks, enzovoort.
 
-Deze eigenschappen worden beschreven in het schema **ncm:content**.
+Deze eigenschappen worden beschreven in het dialoogvenster **ncm:inhoud** schema.
 
 >[!NOTE]
 >
->De aanwezigheid van het **xmlChildren**-kenmerk geeft aan dat de gegevensstructuur die via het hoofdelement wordt ingevoerd, wordt opgeslagen in een XML-document van de inhoudsinstantie.
+>De aanwezigheid van de **xmlChildren** kenmerk geeft aan dat de gegevensstructuur die via het hoofdelement wordt ingevoerd, wordt opgeslagen in een XML-document van de instantie content.
 
 >[!CAUTION]
 >
@@ -73,15 +73,15 @@ Hier volgt een voorbeeld van een inhoudsbeheerschema met de ingevulde typen:
 
 ## Properties {#properties}
 
-Verschillende eigenschappen kunnen worden gebruikt om de elementen **`<element>`** en **`<attribute>`** van het gegevensschema te verrijken.
+U kunt verschillende eigenschappen gebruiken om de **`<element>`** en **`<attribute>`** elementen van het gegevensschema.
 
 De belangrijkste eigenschappen die in inhoudsbeheer worden gebruikt zijn als volgt:
 
 * **label**: korte beschrijving,
 * **desc**: lange beschrijving,
-* **standaard**: expressie die een standaardwaarde retourneert bij het maken van inhoud,
+* **default**: expressie die een standaardwaarde retourneert bij het maken van inhoud,
 * **userEnum**: gratis opsomming voor het opslaan en weergeven van de waarden die via dit veld worden ingevoerd;
-* **opsomming**: vaste opsomming die wordt gebruikt wanneer de lijst van mogelijke waarden vooraf bekend is.
+* **enum**: vaste opsomming die wordt gebruikt wanneer de lijst van mogelijke waarden vooraf bekend is.
 
 Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
@@ -110,7 +110,7 @@ Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
 Een verzameling is een lijst met elementen met dezelfde naam en hetzelfde hiërarchische niveau.
 
-In ons voorbeeld zijn de elementen **`<chapter>`** en **`<page>`** verzamelingselementen. Het **unbound** attribuut moet daarom aan de definitie van deze elementen worden toegevoegd:
+In ons voorbeeld **`<chapter>`** en **`<page>`** elementen zijn verzamelingselementen. De **ongebonden** Dit kenmerk moet derhalve worden toegevoegd aan de definitie van deze elementen:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -122,15 +122,15 @@ In ons voorbeeld zijn de elementen **`<chapter>`** en **`<page>`** verzamelingse
 
 >[!NOTE]
 >
->Met de aanwezigheid van het **ordered=&quot;true&quot;**-kenmerk kunt u de ingevoegde verzamelingselementen ordenen.
+>De aanwezigheid van de **ordered=&quot;true&quot;** Met dit kenmerk kunt u de ingevoegde verzamelingselementen ordenen.
 
 ## Element verwijzen {#element-referencing}
 
-Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Het laat u toe om de definitie van een **`<element>`** element te factoriseren zodat het op andere elementen met de zelfde structuur kan worden van verwijzingen voorzien.
+Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Hiermee kunt u de definitie van een **`<element>`** -element zodat er naar kan worden verwezen op andere elementen met dezelfde structuur.
 
-Het **ref** attribuut op het element waarnaar moet worden verwezen moet met de weg (XPath) van het verwijzingselement worden voltooid.
+De **ref** kenmerk op het element waarnaar moet worden verwezen, moet worden ingevuld met het pad (XPath) van het referentie-element.
 
-**Voorbeeld**: toevoegen van een  **** bijlage met de zelfde structuur zoals het  **`<chapter>`** element van ons voorbeeldschema.
+**Voorbeeld**: toevoeging van een **Aanhangsel** met dezelfde structuur als de **`<chapter>`** element van ons voorbeeldschema.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -154,9 +154,9 @@ De hoofdstukstructuur wordt verplaatst naar het element met de naam &quot;sectie
 
 ## Compute string {#compute-string}
 
-Een **Berekende tekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een inhoudsinstantie vertegenwoordigt.
+A **Rekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een inhoudsinstantie vertegenwoordigt.
 
-Hier is ons voorbeeldschema met zijn **Berekende koord**:
+Hier is ons voorbeeldschema met zijn **Rekenreeks**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ Wanneer het bronschema wordt opgeslagen, wordt het uitgebreide schema automatisc
 
 >[!NOTE]
 >
->Met het besturingselement **Naam** kunt u de sleutel van het schema invoeren, bestaande uit de naam en naamruimte. De **name** en **namespace** attributen van het schema wortelelement worden automatisch bijgewerkt op XML uitgeeft gebied van het schema.
+>De **Naam** Met de besturingselementen voor bewerken kunt u de sleutel van het schema invoeren. Deze bestaat uit de naam en naamruimte. De **name** en **namespace** attributen van het element van de schemawortel worden automatisch bijgewerkt op XML uitgeeft gebied van het schema.

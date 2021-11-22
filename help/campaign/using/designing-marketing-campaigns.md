@@ -17,14 +17,14 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegangscampagnes](../../distributed/using/accessing-campaigns.md) en [Marketingcampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie.
+Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg voor meer informatie hierover [Toegangscampagnes](../../distributed/using/accessing-campaigns.md) en [Marketingscampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Daarnaast kunt u met de module **Marketing Resource Management (MRM)** marketingacties in een samenwerkingsmodus beheren door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../mrm/using/about-marketing-resource-management.md) voor meer informatie.
+Bovendien **Marketing Resource Management (MRM)** kunt u marketingacties beheren in een samenwerkingsmodus door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../mrm/using/about-marketing-resource-management.md) voor meer informatie.
 
 >[!NOTE]
 >
->Zie [deze sectie](../../platform/using/about-adobe-campaign-classic.md) voor meer informatie over de kernfuncties van Adobe Campaign.\
->De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Voor meer informatie over de kernfuncties van Adobe Campaign raadpleegt u [deze sectie](../../platform/using/about-adobe-campaign-classic.md) sectie.\
+>Capaciteiten met betrekking tot het richten van de bevolking, berichtpersonalisatie en berichtlevering op de verschillende kanalen zijn gedetailleerd in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Concepten van marketingcampagnes ontdekken in video](#video)
 
@@ -36,7 +36,7 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Een campagne centraliseert alle elementen met betrekking tot een marketingcampagne: leveringen, doelgerichte regels, kosten, uitvoerbestanden, verwante documenten, enz. Elke campagne is aan een programma verbonden.
 
-   Raadpleeg [Een campagne toevoegen](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign) voor meer informatie.
+   Raadpleeg voor meer informatie hierover [Een campagne toevoegen](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programma**
 
@@ -46,7 +46,7 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Het marketingplan kan meerdere programma&#39;s bevatten. Het is gekoppeld aan een kalenderperiode, heeft een toegewezen budget en kan ook worden gekoppeld aan documenten en doelstellingen.
 
-   Voor meer op dit, verwijs naar [Campagne kalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   Raadpleeg voor meer informatie hierover [Campagnekalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
@@ -70,4 +70,4 @@ In deze video worden de belangrijkste concepten van marketingcampagnes gepresent
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

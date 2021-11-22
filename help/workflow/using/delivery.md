@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Met een activiteit van het type **Delivery** kunt u een leveringsactie maken. Deze kan worden samengesteld uit invoerelementen.
+A **Aflevering**-type activiteit laat u een leveringsactie tot stand brengen. Deze kan worden samengesteld uit invoerelementen.
 
 Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
@@ -27,7 +27,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
    U kunt:
 
-   * Akte op de levering in de binnenkomende overgang wordt gespecificeerd die. Selecteer hiertoe de eerste optie van de sectie **[!UICONTROL Delivery]** van het venster.
+   * Akte op de levering in de binnenkomende overgang wordt gespecificeerd die. Selecteer hiertoe de eerste optie van de optie **[!UICONTROL Delivery]** van het venster.
 
       Deze optie kan worden gebruikt wanneer een vorige werkstroomactiviteit reeds heeft gecreeerd of de levering gespecificeerd. Dit kan, zoals in het onderstaande voorbeeld, door een activiteit van het zelfde type worden gedaan die een uitgaande overgang heeft geproduceerd.
 
@@ -35,27 +35,27 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
       ![](assets/specified_transition_option_exemple.png)
 
-   * Selecteer de betrokken levering rechtstreeks. Selecteer hiertoe de optie **[!UICONTROL Explicit]** en selecteer de levering in de vervolgkeuzelijst van het veld **[!UICONTROL Delivery]**.
+   * Selecteer de betrokken levering rechtstreeks. Selecteer hiervoor de optie **[!UICONTROL Explicit]** en selecteert u de levering in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Delivery]** veld.
 
-      In de lijst worden de onvoltooide leveringen weergegeven die standaard in de map **Deliveries** staan. Als u andere campagnes wilt openen, klikt u op het pictogram **[!UICONTROL Select link]**.
+      In de lijst staan de onvoltooide leveringen in het dialoogvenster **Leveringen** map standaard. Als u andere campagnes wilt openen, klikt u op de knop **[!UICONTROL Select link]** pictogram.
 
       ![](assets/diffusion_edit_1.png)
 
-      Selecteer de campagne in de vervolgkeuzelijst van het veld **[!UICONTROL Folder]** of klik op **[!UICONTROL Display sub-levels]** om alle leveringen in submappen weer te geven:
+      Selecteer de campagne in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Folder]** veld of klik op **[!UICONTROL Display sub-levels]** om alle leveringen in submappen weer te geven:
 
       ![](assets/diffusion_edit_2.png)
 
-      Nadat u de leveringsactie hebt geselecteerd, kunt u de inhoud weergeven door op het pictogram **[!UICONTROL Edit link]** te klikken.
+      Nadat u de leveringsactie hebt geselecteerd, kunt u de inhoud weergeven door op de knop **[!UICONTROL Edit link]** pictogram.
 
-   * Maak een script om de levering te berekenen. Om dit te doen, selecteer **[!UICONTROL Computed by a script]** optie en ga het manuscript in. U kunt een invoervenster openen door op de optie **[!UICONTROL Edit...]** te klikken. In het volgende voorbeeld wordt de id van de levering hersteld:
+   * Maak een script om de levering te berekenen. Selecteer hiervoor de optie **[!UICONTROL Computed by a script]** en voert u het script in. U kunt een invoervenster openen door te klikken op de knop **[!UICONTROL Edit...]** optie. In het volgende voorbeeld wordt de id van de levering hersteld:
 
       ![](assets/diffusion_edit_3.png)
 
-   * Maak een nieuwe levering. Om dit te doen, selecteer **[!UICONTROL New, created from a template]** optie en selecteer het leveringsmalplaatje waarop de levering zal worden gebaseerd.
+   * Maak een nieuwe levering. Selecteer hiervoor de optie **[!UICONTROL New, created from a template]** en selecteer de leveringstemplate waarop de levering wordt gebaseerd.
 
       ![](assets/diffusion_edit_4.png)
 
-      Klik op het pictogram **[!UICONTROL Select link]** om door de mappen te bladeren en klik op het pictogram **[!UICONTROL Edit link]** als u de inhoud van de geselecteerde sjabloon wilt weergeven.
+      Klik op de knop **[!UICONTROL Select link]** om door de mappen te bladeren en op de knop **[!UICONTROL Edit link]** als u de inhoud van de geselecteerde sjabloon wilt weergeven.
 
 1. **Ontvangers**
 
@@ -78,12 +78,12 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
    Selecteer het type actie dat moet worden uitgevoerd:
 
    * **[!UICONTROL Save]**: met deze optie kunt u de levering maken en opslaan. Het zal het niet analyseren of leveren.
-   * **[!UICONTROL Estimate the target]**: met deze optie kunt u het leveringsdoel berekenen om het potentieel ervan te beoordelen ( eerste analysefase ) . Deze actie is het equivalent van het selecteren van de **[!UICONTROL Estimate the population to be targeted]** optie en het klikken **[!UICONTROL Analyze]** wanneer het verzenden van een levering naar het belangrijkste doel via **Levering**.
-   * **[!UICONTROL Prepare]**: met deze optie kunt u het volledige analyseproces uitvoeren ( doelberekening en inhoudsvoorbereiding ) . De levering wordt niet verzonden. Deze actie is het equivalent van het selecteren van de **[!UICONTROL Deliver as soon as possible]** optie en het klikken **[!UICONTROL Analyze]** wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
-   * **[!UICONTROL Send a proof]**: met deze optie kunt u een bewijs van levering verzenden. Deze actie is het equivalent van het klikken van de **[!UICONTROL Send a proof]** knoop in de toolbar van een levering met **Levering**
-   * **[!UICONTROL Prepare and start]**: met deze optie wordt het volledige analyseproces gestart ( doelberekening en inhoudsvoorbereiding ) en wordt de levering verzonden . Deze actie is het equivalent van het klikken **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]**, en **[!UICONTROL Confirm delivery]** optie wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
+   * **[!UICONTROL Estimate the target]**: met deze optie kunt u het leveringsdoel berekenen om het potentieel ervan te beoordelen ( eerste analysefase ) . Deze handeling is gelijk aan het selecteren van de **[!UICONTROL Estimate the population to be targeted]** en klikken **[!UICONTROL Analyze]** wanneer een levering naar het hoofddoel wordt verzonden via **Aflevering**.
+   * **[!UICONTROL Prepare]**: met deze optie kunt u het volledige analyseproces uitvoeren ( doelberekening en inhoudsvoorbereiding ) . De levering wordt niet verzonden. Deze handeling is gelijk aan het selecteren van de **[!UICONTROL Deliver as soon as possible]** en klikken **[!UICONTROL Analyze]** wanneer een levering naar het hoofddoel wordt verzonden met **Aflevering**.
+   * **[!UICONTROL Send a proof]**: met deze optie kunt u een bewijs van levering verzenden. Deze handeling is gelijk aan het klikken op de knop **[!UICONTROL Send a proof]** op de werkbalk van een levering met **Aflevering**
+   * **[!UICONTROL Prepare and start]**: met deze optie wordt het volledige analyseproces gestart ( doelberekening en inhoudsvoorbereiding ) en wordt de levering verzonden . Deze handeling is gelijk aan klikken **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]**, en **[!UICONTROL Confirm delivery]** optie bij het verzenden van een levering naar het hoofddoel met **Aflevering**.
 
-   Met de **[!UICONTROL Act on a delivery]** activiteit die verder in de workflow wordt gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Voor meer op dit, verwijs naar [Leveringscontrole](delivery-control.md).
+   De **[!UICONTROL Act on a delivery]** Met de activiteiten die u verder in de workflow gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Raadpleeg voor meer informatie hierover [Afleveringscontrole](delivery-control.md).
 
    De volgende opties zijn ook beschikbaar:
 
@@ -97,8 +97,8 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
    * **[!UICONTROL Processing errors]**
 
-      Zie [Leveringscontrole](delivery-control.md).
-   Met het tabblad **Script** kunt u de leveringsparameters wijzigen.
+      Zie [Afleveringscontrole](delivery-control.md).
+   De **Script** kunt u de leveringsparameters wijzigen.
 
    ![](assets/edit_diffusion_fil_script.png)
 
@@ -108,34 +108,34 @@ Maak een nieuwe workflow en voeg activiteiten toe zoals in de onderstaande afbee
 
 ![](assets/new-workflow-5.png)
 
-Open de activiteit **Delivery** en definieer de eigenschappen als volgt:
+Open de **Aflevering** en definieert de eigenschappen als volgt:
 
-* Selecteer **[!UICONTROL Delivery]** in de sectie **[!UICONTROL New, created from a template]** en selecteer een leveringssjabloon.
-* Selecteer **[!UICONTROL Specified in the delivery]** in de sectie **[!UICONTROL Recipients]**.
-* Houd in de sectie **[!UICONTROL Action to execute]** de optie **[!UICONTROL Prepare]**.
+* In de **[!UICONTROL Delivery]** sectie, selecteert u **[!UICONTROL New, created from a template]** en selecteer een leveringssjabloon.
+* In de **[!UICONTROL Recipients]** sectie, selecteert u **[!UICONTROL Specified in the delivery]**.
+* In de **[!UICONTROL Action to execute]** de **[!UICONTROL Prepare]** optie.
 
 ![](assets/new-workflow-param-delivery.png)
 
-Klik **[!UICONTROL OK]** om het eigenschappenvenster te sluiten. U hebt net een activiteit gevormd die bestaat uit het creëren van en het voorbereiden van een nieuwe levering die op een leveringsmalplaatje wordt gebaseerd het waarvan doel binnen het zal worden gespecificeerd.
+Klikken **[!UICONTROL OK]** om het eigenschappenvenster te sluiten. U hebt net een activiteit gevormd die bestaat uit het creëren van en het voorbereiden van een nieuwe levering die op een leveringsmalplaatje wordt gebaseerd het waarvan doel binnen het zal worden gespecificeerd.
 
-Open de activiteit **Approval** en definieer de eigenschappen als volgt:
+Open de **Goedkeuring** en definieert de eigenschappen als volgt:
 
-1. Selecteer in het veld **[!UICONTROL Assignment type]** een groep waarin u bent geregistreerd. Als u verbinding hebt via de account &#39;admin&#39;, selecteert u de groep Beheer.
+1. In de **[!UICONTROL Assignment type]** selecteert u een groep waarin u bent geregistreerd. Als u verbinding hebt via de account &#39;admin&#39;, selecteert u de groep Beheer.
 1. Voer vervolgens een titel in en voeg de volgende tekst in de berichttekst in:
 
    ```
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** vertegenwoordigt het aantal ontvangers gericht door de levering van de voorafgaande taak. Raadpleeg [JavaScript-scripts en -sjablonen](javascript-scripts-and-templates.md) voor meer informatie over JavaScript-expressies.
+   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** geeft het aantal ontvangers aan waarop de levering van de voorafgaande taak betrekking heeft. Raadpleeg voor meer informatie over JavaScript-expressies [JavaScript-scripts en -sjablonen](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   De goedkeuringstaak wordt gedetailleerd in [Goedkeuring](approval.md).
+   De goedkeuringstaak wordt in detail beschreven in [Goedkeuring](approval.md).
 
 ## Invoerparameters {#input-parameters}
 
-Leverings-id als de optie **[!UICONTROL Specified in the transition]** is geselecteerd in de sectie **[!UICONTROL Delivery]**.
+Identificatiecode van de levering, indien de **[!UICONTROL Specified in the transition]** is geselecteerd in het dialoogvenster **[!UICONTROL Delivery]** sectie.
 
 * deliveryId
 * tableName
@@ -145,15 +145,15 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 
 >[!NOTE]
 >
->Deze parameter wordt alleen weergegeven als de optie **[!UICONTROL Specified by inbound event(s)]** is geselecteerd in de sectie **[!UICONTROL Recipients]**.
+>Deze parameter wordt alleen weergegeven als **[!UICONTROL Specified by inbound event(s)]** is geselecteerd in het dialoogvenster **[!UICONTROL Recipients]** sectie.
 
 * filename
 
-   Volledige naam van het gegenereerde bestand als de optie **[!UICONTROL File(s) specified by inbound event(s)]** is geselecteerd in de sectie **[!UICONTROL Recipients]**.
+   Volledige naam van het bestand dat wordt gegenereerd als de **[!UICONTROL File(s) specified by inbound event(s)]** is geselecteerd in het dialoogvenster **[!UICONTROL Recipients]** sectie.
 
 * contentId
 
-   Inhoud-id als de optie **[!UICONTROL Specified by inbound events]** is geselecteerd in de sectie **[!UICONTROL Content]**.
+   Inhoud-id als de **[!UICONTROL Specified by inbound events]** is geselecteerd in het dialoogvenster **[!UICONTROL Content]** sectie.
 
 ## Uitvoerparameters {#output-parameters}
 
@@ -161,10 +161,10 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert het doel resulterend uit de levering. **[!UICONTROL tableName]** is de naam van de lijst die herkenningstekens van het doel memoriseert,  **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en  **[!UICONTROL recCount]** is het aantal elementen in de lijst.
+Deze reeks van drie waarden identificeert het doel resulterend uit de levering. **[!UICONTROL tableName]** de naam van de tabel die de id&#39;s van het doel in zich bergt, **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.
 
 De overgang verbonden aan het complement heeft de zelfde parameters.
 
 >[!NOTE]
 >
->Er zijn geen uitvoerparameters wanneer de optie **[!UICONTROL Do not recover target]** wordt geselecteerd.
+>Er zijn geen uitvoerparameters wanneer de **[!UICONTROL Do not recover target]** is geselecteerd.

@@ -21,23 +21,23 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**.
->Tijdens deze overgang naar [!DNL Adobe I/O] kunnen sommige inkomende triggers verloren gaan.
+>Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
+>Let op: tijdens deze overgang naar [!DNL Adobe I/O]bepaalde inkomende triggers kunnen verloren gaan.
 >
->De verouderde Auth authentificatiemodus met Campagne zal op **20 Oktober, 2021** worden gepensioneerd. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **23 Febuary, 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet [AppID van OAuth application](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+>De oude verificatiemodus Auth met Campagne wordt uitgeschakeld **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot  **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) naar Adobe.
 
 ## Vereisten {#adobe-io-prerequisites}
 
-Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.2.4 en hoger, 19.1.8 en Gold Standard 11-releases**.
+Deze integratie geldt alleen voor het starten **Campaign Classic 20.2.4 en hoger, 19.1.8 en Gold Standard 11-releases**.
 
 Controleer voordat u met deze implementatie begint of:
 
-* een geldige **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Toegang voor ontwikkelaars** tot uw organisatie. De systeembeheerder van de IMS-organisatie moet de **procedure voor het toevoegen van ontwikkelaars aan één enkel productprofiel** in deze pagina[volgen om ontwikkelaarstoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics te verlenen verbonden aan Trekkers.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)
+* geldig **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de IMS-organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
-1. Open [!DNL Adobe I/O] en meld u aan met de ontwikkelaarstoegang van de IMS-organisatie.
+1. Toegang [!DNL Adobe I/O] en meld u aan bij de Developer Access van de IMS-organisatie.
 
    >[!NOTE]
    >
@@ -47,27 +47,27 @@ Controleer voordat u met deze implementatie begint of:
 
    >[!NOTE]
    >
-   >Als uw client-id leeg is, kunt u direct **[!UICONTROL Create a New project]** in Adobe I/O.
+   >Als uw client-id leeg is, kunt u rechtstreeks **[!UICONTROL Create a New project]** in Adobe I/O.
 
 1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde herkenningsteken van de Cliënt zoals die in vorige stap wordt gehaald.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. Selecteer **[!UICONTROL + Add to Project]** en kies **[!UICONTROL API]**.
+1. Selecteren **[!UICONTROL + Add to Project]** en kiest u **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. Selecteer **[!UICONTROL Adobe Analytics]** in het venster **[!UICONTROL Add an API]**.
+1. In de **[!UICONTROL Add an API]** venster, selecteert u **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
-1. Kies **[!UICONTROL Service Account (JWT)]** als verificatietype.
+1. Kies **[!UICONTROL Service Account (JWT)]** als het verificatietype.
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een combinatie van openbare en persoonlijke sleutels te maken.
+1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbare en privé zeer belangrijke paar tot stand te brengen.
 
-   De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met Optie 2 kunt u ervoor kiezen om uw **[!UICONTROL Public key]** handmatig te maken en te uploaden met een langere vervaldatum.
+   De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met de optie 2 kunt u handmatig uw **[!UICONTROL Public key]** met een langere vervaldatum.
 
    >[!CAUTION]
    >
@@ -79,13 +79,13 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Kies een bestaande **[!UICONTROL Product profile]** of maak indien nodig een nieuwe . Voor deze **[!UICONTROL Product profile]** is geen toestemming vereist. Raadpleeg [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console) voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**.
+1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**, zie [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
    Klik vervolgens op **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Selecteer **[!UICONTROL Adobe Analytics]** in uw project en kopieer de volgende informatie onder **[!UICONTROL Service Account (JWT)]**:
+1. Van uw project, selecteer **[!UICONTROL Adobe Analytics]** en kopieert u de volgende informatie onder **[!UICONTROL Service Account (JWT)]**:
 
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
@@ -106,7 +106,7 @@ Controleer voordat u met deze implementatie begint of:
 
 De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet u als volgt:
 
-1. Gebruik de persoonlijke sleutel die in [Stap 1 wordt geproduceerd: Sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
+1. Gebruik de persoonlijke sleutel die is gegenereerd in het dialoogvenster [Stap 1: Sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
 
 1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
 
@@ -114,9 +114,9 @@ De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet
    >
    >Soms kunnen extra regels automatisch worden toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
 
-1. Kopieer de inhoud uit het bestand `private.key.base64`.
+1. De inhoud van het bestand kopiëren `private.key.base64`.
 
-1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens in Adobe Campaign toe door de volgende opdracht als `neolane`-gebruiker uit te voeren. Hiermee worden de **[!UICONTROL Technical Account]**-referenties ingevoegd in het configuratiebestand van de instantie.
+1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens toe in Adobe Campaign door de volgende opdracht uit te voeren als `neolane` gebruiker. Hiermee voegt u de **[!UICONTROL Technical Account]** referenties in het configuratiebestand van de instantie.
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
@@ -128,10 +128,10 @@ De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet
 >
 >Deze stap is niet vereist als uw client-id niet leeg was in [Stap 1: Adobe I/O-project maken/bijwerken](#creating-adobe-io-project).
 
-Als u [!DNL pipelined]-tag wilt bijwerken, moet u het verificatietype bijwerken naar een Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
+Bijwerken [!DNL pipelined] -tag, moet u het verificatietype bijwerken naar een Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-Voer vervolgens een `config -reload` en een nieuwe start van [!DNL pipelined] uit om de wijzigingen in overweging te nemen.
+Voer vervolgens een `config -reload` en het opnieuw opstarten van de [!DNL pipelined] voor de in aanmerking te nemen wijzigingen.

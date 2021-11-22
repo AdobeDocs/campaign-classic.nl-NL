@@ -78,9 +78,9 @@ Object kan:
    * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
    * **[!DNL provider]**: voor de huidige leverancier/het verpletteren (nms:externalAccount).
    * Een extra scriptobject: als een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
-   * Item van de foreach-lus: zie de onderstaande sectie [Foreach](#foreach).
+   * Item van de foreach-lus: zie [Foreach](#foreach) hieronder.
 * **[!DNL xpath]**: xpath of the field.
-* **[!DNL index]** (optioneel): als  **[!DNL object]** een array is (voor extra scriptobjecten), index item in de array (Begint bij 0).
+* **[!DNL index]** (optioneel): indien **[!DNL object]** is een array (voor extra scriptobjecten), itemindex in de array (Begint bij 0).
 
 ### [!DNL delivery] object {#delivery-object}
 
@@ -103,7 +103,7 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
 
 **Waarschuwing**
 
-Als u de volgende instructie gebruikt voor leveringen die via mid-sourcing worden verzonden, moet het aangepaste veld **@myCustomField** aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingsplatforms:
+Als u de volgende instructies gebruikt voor leveringen die via mid-sourcing worden verzonden, wordt het aangepaste veld **@myCustomField** moet aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingplatforms:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -146,7 +146,7 @@ Waar:
 * **[!DNL object]**: De naam van het object waarvan moet worden begonnen, is doorgaans een extra scriptobject, maar het kan een levering zijn.
 * **[!DNL xpath]** (optioneel): xpath of the collection to loop on. De standaardwaarde is &quot;.&quot;, wat betekent dat het object de array is die moet worden doorlopen.
 * **[!DNL index]** (optioneel): als xpath niet &quot;.&quot; is en object is een array zelf, itemindex van object (begint bij 0).
-* **[!DNL item]** (optioneel): naam van een nieuw object dat toegankelijk is met  &lt;> Standaard met de naam van de koppeling in het schema.
+* **[!DNL item]** (optioneel): naam van een nieuw object dat toegankelijk is met &lt;%@-waarde in de foreach-lus. Standaard met de naam van de koppeling in het schema.
 
 Voorbeeld:
 

@@ -23,50 +23,50 @@ Hieronder vindt u een aantal van de belangrijkste aanbevolen werkwijzen voor Apa
 
 * Oude SSL-versie en -ciphers uitschakelen:
 
-   **Bewerk /etc/apache2/mods-available/ssl.conf op Apache**. Hier volgt een voorbeeld:
+   **Op Apache**, bewerkt u /etc/apache2/mods-available/ssl.conf. Hier volgt een voorbeeld:
 
    * SSLProProtocol all -SSLv2 -SSLv3 -TLSv1
    * SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **Voor IIS**  (zie de  [documentatie](https://support.microsoft.com/en-us/kb/245030)), voer de volgende configuratie uit:
+   **Op IIS** (zie de [documentatie](https://support.microsoft.com/en-us/kb/245030)), voert de volgende configuratie uit:
 
    * Registersubsleutel toevoegen in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Om het systeem toe te laten om de protocollen te gebruiken die niet door gebrek (zoals TLS 1.2) zullen worden besproken, verander de DWORD waardegegevens van de waarde DisabledByDefault in 0x0 in de volgende registratiesleutels onder **Protocols** sleutel:
+   * Om het systeem toe te laten om de protocollen te gebruiken die niet door gebrek (zoals TLS 1.2) zullen worden besproken, verander de DWORD waardegegevens van de waarde DisabledByDefault in 0x0 in de volgende registratiesleutels onder **Protocollen** toets:
 
-      SCHANNEL\Protocols\TLS 1.2\Client
+      SCHANNEL\Protocollen\TLS 1.2\Client
 
-      SCHANNEL\Protocols\TLS 1.2\Server
+      SCHANNEL\Protocollen\TLS 1.2\Server
    **SSL x.0 uitschakelen**
 
    SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: DWORD-waarde (32 bits) tot 1
 
    SCHANNEL\Protocols\SSL 3.0\Server: Ingeschakeld: DWORD-waarde (32 bits) tot 0
 
-* Verwijder de methode **TRACE**:
+* Verwijder de **TRACE** methode:
 
-   **Bewerk in Apache** de map /etc/apache2/conf.d/security: TracerenInschakelen  **uit**
+   **Op Apache**, bewerken in /etc/apache2/conf.d/security: TraceEnable **Uit**
 
-   **Voor IIS**  (zie de  [documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), voer de volgende configuratie uit:
+   **Op IIS** (zie de [documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), voert de volgende configuratie uit:
 
-   * Zorg ervoor dat **Verzoek het Filtreren** de roldienst of de eigenschap geïnstalleerd is.
-   * Klik in het deelvenster **Verzoek filteren** op het tabblad Werkwoorden van HTTP en klik vervolgens op Verwerping weigeren. Voer in het deelvenster Handelingen TRACE in het dialoogvenster Openen in.
+   * Controleer of **Verzoek filteren** rolineservice of -functie is geïnstalleerd.
+   * In de **Verzoek filteren** klikt u op het tabblad Werkwoorden van HTTP en vervolgens op Verwerpt. Voer in het deelvenster Handelingen TRACE in het dialoogvenster Openen in.
 
 * Verwijder de banner:
 
-   **Bewerk /etc/apache2/conf.d/security op Apache**:
+   **Op Apache**, /etc/apache2/conf.d/security bewerken:
 
-   * ServerSignature **Off**
+   * ServerSignature **Uit**
    * ServerTokens **Prod**
 
-   **Voor IIS**, voer de volgende configuratie uit:
+   **Op IIS**, voert de volgende configuratie uit:
 
-   * Installeer **URLScan**.
-   * Bewerk het bestand **Urlscan.ini** om **RemoveServerHeader=1** te hebben
+   * Installeren **URLScan**.
+   * Bewerk de **Urlscan.ini** bestand dat **RemoveServerHeader=1**
 
 
 * Beperk de querygrootte om te voorkomen dat belangrijke bestanden worden geüpload:
 
-   **Voeg bij Apache** de  **** LimitRequestBodyDirective (grootte in bytes) toe in de map /.
+   **Op Apache**, voegt u de **LimitRequestBody** compileraanwijzing (grootte in bytes) in / directory.
 
    ```
    <Directory />
@@ -76,9 +76,9 @@ Hieronder vindt u een aantal van de belangrijkste aanbevolen werkwijzen voor Apa
    </Directory>
    ```
 
-   **Voor IIS**  (zie de  [documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), plaats  **maxAllowedContentLength**  (maximum toegestane inhoudslengte) in de inhoud het filtreren opties.
+   **Op IIS** (zie de [documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), stelt u de **maxAllowedContentLength** (maximale toegestane lengte van inhoud) in de filteropties voor inhoud.
 
 Verwante onderwerpen:
 
-* [Adobe Marketing Cloud-compatibiliteitsoverzicht](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf)  (PDF)
-* [Adobe Campaign Security-overzicht](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf)  (PDF)
+* [Adobe Marketing Cloud-compatibiliteitsoverzicht](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf) (PDF)
+* [Overzicht van Adobe Campaign Security](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf) (PDF)

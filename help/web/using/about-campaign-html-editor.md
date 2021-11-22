@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Aan de slag met de HTML-editor voor campagnes
+title: Aan de slag met de Campagne HTML Editor
 description: Aan de slag met campagne-DCE
 audience: web
 content-type: reference
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Aan de slag met de HTML-editor voor campagnes{#about-campaign-html-editor}
+# Aan de slag met de Campagne HTML Editor{#about-campaign-html-editor}
 
 ![](../../assets/common.svg)
 
@@ -33,28 +33,28 @@ Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en dat
 
 In deze sectie worden de belangrijkste stappen beschreven voor het bewerken en uploaden van inhoud die met de DCE is bewerkt, in de context van een webtoepassing en leveringsontwerp.
 
-De algemene operatie is als volgt:
+De algemene actie is als volgt:
 
 ![](assets/dce_schema.png)
 
-Als u een eenvoudige **webtoepassing** wilt maken, moet u:
+Een eenvoudig **webtoepassing**, moet u:
 
 1. Een webtoepassing maken - [Meer informatie](creating-a-landing-page.md)
-1. Bestaande inhoud selecteren of inhoud maken op basis van een standaardsjabloon - [Meer informatie](template-management.md)
+1. Selecteer bestaande inhoud of maak inhoud van een standaardsjabloon - [Meer informatie](template-management.md)
 1. Inhoud bewerken en configureren - [Meer informatie](editing-content.md)
 1. De webtoepassing publiceren - [Meer informatie](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->In [deze sectie](creating-a-landing-page.md) vindt u een volledige implementatiemonster in de context van een webtoepassing.
+>Er is een volledige implementatiemonster beschikbaar in de context van een webtoepassing in  [deze sectie](creating-a-landing-page.md).
 
-Als u een **e-maillevering** wilt maken, moet u:
+Om een **e-maillevering**, moet u:
 
 1. Een levering maken op basis van een DCE-sjabloon - [Meer informatie](use-case--creating-an-email-delivery.md)
 1. Bestaande inhoud selecteren of inhoud maken op basis van een [standaardsjabloon](template-management.md)
 1. Online-inhoud bewerken en configureren
-1. Verstuur de levering - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. De levering verzenden - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->In [dit gebruiksgeval](use-case--creating-an-email-delivery.md) vindt u een volledige implementatiemonster in de context van een e-maillevering.
+>Er is een volledige implementatiemonster beschikbaar in de context van een e-maillevering in [dit geval gebruiken](use-case--creating-an-email-delivery.md).

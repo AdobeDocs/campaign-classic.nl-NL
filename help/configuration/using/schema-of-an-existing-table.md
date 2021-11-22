@@ -31,8 +31,8 @@ Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tab
 
 Pas de volgende stappen toe om het bijbehorende schema te maken:
 
-1. Bewerk het knooppunt **[!UICONTROL Administration>Configuration>Data schemas]** van de Adobe Campaign-structuur en klik op **[!UICONTROL New]**.
-1. Selecteer de optie **[!UICONTROL Access data from an existing table or an SQL view]** en klik **[!UICONTROL Next]**.
+1. Bewerk de **[!UICONTROL Administration>Configuration>Data schemas]** knoop van de boom van Adobe Campaign en klik **[!UICONTROL New]** .
+1. Selecteer **[!UICONTROL Access data from an existing table or an SQL view]** en klik op **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -44,7 +44,7 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het basiselement `<srcSchema>` om geen SQL-script voor het maken van een tabel te genereren.
+   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het tabblad `<srcSchema>` basiselement om geen SQL-script voor het maken van tabellen te genereren.
 
 **Voorbeeld** :
 
@@ -61,6 +61,6 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 ## Toegang tot een externe database {#accessing-an-external-database}
 
-Met de optie **Federated Data Access - FDA** hebt u toegang tot de gegevens die in een externe database zijn opgeslagen.
+De **Federale gegevenstoegang - FDA** hebt u toegang tot de gegevens die in een externe database zijn opgeslagen.
 
-De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben is gedetailleerd in [deze pagina](../../installation/using/creating-data-schema.md).
+De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een externe gegevensbestand toegang te hebben is gedetailleerd in [deze pagina](../../installation/using/creating-data-schema.md).

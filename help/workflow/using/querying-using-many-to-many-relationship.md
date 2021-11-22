@@ -23,7 +23,7 @@ Dit voorbeeld toont ook hoe te om een filter met betrekking tot de keus van een 
 
 * Welke tabel moet worden geselecteerd?
 
-   De ontvankelijke lijst (**nms:ontvanger**)
+   De tabel met ontvangers (**nms:ontvanger**)
 
 * Velden die moeten worden geselecteerd voor de uitvoerkolom
 
@@ -35,8 +35,8 @@ Dit voorbeeld toont ook hoe te om een filter met betrekking tot de keus van een 
 
 Voer de volgende stappen uit:
 
-1. Open de Algemene vraagredacteur en selecteer de Ontvangende lijst **[!UICONTROL (nms:recipient)]**.
-1. Selecteer **[!UICONTROL Data to extract]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** en **[!UICONTROL Email]** in het venster **[!UICONTROL Primary key]**.
+1. Open de Algemene vraagredacteur en selecteer de Ontvangerlijst **[!UICONTROL (nms:recipient)]**.
+1. In de **[!UICONTROL Data to extract]** venster, selecteert u **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** en **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)
 
@@ -44,20 +44,20 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. Selecteer **[!UICONTROL Filtering conditions]** in het venster **[!UICONTROL Data filtering]**.
-1. In het **[!UICONTROL Target element]** venster, impliceert de het filtreren voorwaarde voor het halen van profielen zonder het volgen logboek voor de laatste 7 dagen twee stappen. Het element dat u moet selecteren, is een veel-op-veel-koppeling.
+1. In de **[!UICONTROL Data filtering]** venster, selecteert u **[!UICONTROL Filtering conditions]**.
+1. In de **[!UICONTROL Target element]** in het venster moeten twee stappen worden uitgevoerd voor het filteren van profielen zonder traceringslogbestand gedurende de laatste 7 dagen. Het element dat u moet selecteren, is een veel-op-veel-koppeling.
 
-   * Begin door het **[!UICONTROL Recipient delivery logs (broadlog)]** inzamelingselement (oranje knoop) voor de eerste **[!UICONTROL Value]** kolom te selecteren.
+   * Begin door te selecteren **[!UICONTROL Recipient delivery logs (broadlog)]** verzamelingselement (oranje knooppunt) voor de eerste **[!UICONTROL Value]** kolom.
 
       ![](assets/query_editor_nveau_67.png)
 
-      Kies de operator **[!UICONTROL do not exist as]**. U hoeft geen tweede waarde op deze regel te selecteren.
+      Kies de optie **[!UICONTROL do not exist as]** operator. U hoeft geen tweede waarde op deze regel te selecteren.
 
-   * De inhoud van de tweede filtervoorwaarde is afhankelijk van de eerste. Hier wordt het veld **[!UICONTROL Event date]** direct in de tabel **[!UICONTROL Recipient delivery logs]** aangeboden omdat er een koppeling naar deze tabel is.
+   * De inhoud van de tweede filtervoorwaarde is afhankelijk van de eerste. Hier, de **[!UICONTROL Event date]** het veld wordt rechtstreeks in het **[!UICONTROL Recipient delivery logs]** tabel omdat er een koppeling naar deze tabel is.
 
       ![](assets/query_editor_nveau_36.png)
 
-      Selecteer **[!UICONTROL Event date]** met de **[!UICONTROL greater than or equal to]** exploitant. Selecteer de waarde **[!UICONTROL DaysAgo (7)]**. Klik hiertoe op **[!UICONTROL Edit expression]** in het veld **[!UICONTROL Value]**. Selecteer **[!UICONTROL Formula type]** en **[!UICONTROL Current date minus n days]** in het venster **[!UICONTROL Process on dates]** en geef &quot;7&quot; als een waarde.
+      Selecteren **[!UICONTROL Event date]** met de **[!UICONTROL greater than or equal to]** operator. Selecteer **[!UICONTROL DaysAgo (7)]** waarde. Klik op **[!UICONTROL Edit expression]** in de **[!UICONTROL Value]** veld. In de **[!UICONTROL Formula type]** venster, selecteert u **[!UICONTROL Process on dates]** en **[!UICONTROL Current date minus n days]** en geeft &quot;7&quot; als een waarde.
 
       ![](assets/query_editor_nveau_37.png)
 
@@ -65,13 +65,13 @@ Voer de volgende stappen uit:
 
       ![](assets/query_editor_nveau_38.png)
 
-1. Schakel in het venster **[!UICONTROL Data formatting]** de achternaam in hoofdletters. Klik op de regel **[!UICONTROL Last name]** in de kolom **[!UICONTROL Transformation]** en selecteer **[!UICONTROL Switch to upper case]** in het vervolgkeuzemenu.
+1. In de **[!UICONTROL Data formatting]** venster, overschakelen van laatste namen naar hoofdletters. Klik op de knop **[!UICONTROL Last name]** in de **[!UICONTROL Transformation]** kolom en selecteer **[!UICONTROL Switch to upper case]** in het vervolgkeuzemenu.
 
    ![](assets/query_editor_nveau_39.png)
 
-1. Gebruik de functie **[!UICONTROL Add a calculated field]** om een kolom in te voegen in het venster van de gegevensvoorproef.
+1. Gebruik de **[!UICONTROL Add a calculated field]** gebruiken om een kolom in te voegen in het venster met gegevensvoorvertoning.
 
-   In dit voorbeeld voegt u een berekend veld met de eerste en laatste naam van de ontvangers toe in één kolom. Klik op de functie **[!UICONTROL Add a calculated field]**. Voer in het venster **[!UICONTROL Export calculated field definition]** een label en een interne naam in en kies het type **[!UICONTROL JavaScript Expression]**. Voer vervolgens de volgende expressie in:
+   In dit voorbeeld voegt u een berekend veld met de eerste en laatste naam van de ontvangers toe in één kolom. Klik op de knop **[!UICONTROL Add a calculated field]** functie. In de **[!UICONTROL Export calculated field definition]** in, voert u een label en een interne naam in en kiest u de **[!UICONTROL JavaScript Expression]** type. Voer vervolgens de volgende expressie in:
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -80,10 +80,10 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Klik op **[!UICONTROL OK]**. Het **[!UICONTROL Data formatting]** venster wordt gevormd.
+   Klik op **[!UICONTROL OK]**. De **[!UICONTROL Data formatting]** venster is geconfigureerd.
 
    Zie deze sectie voor meer informatie over het toevoegen van berekende velden.
 
-1. Het resultaat wordt weergegeven in het venster **[!UICONTROL Data preview]**. Ontvangers die de laatste 7 dagen geen contact hebben gehad, worden in alfabetische volgorde weergegeven. Namen worden in hoofdletters weergegeven en de kolom met de voor- en achternaam is gemaakt.
+1. Het resultaat wordt weergegeven in het dialoogvenster **[!UICONTROL Data preview]** venster. Ontvangers die de laatste 7 dagen geen contact hebben gehad, worden in alfabetische volgorde weergegeven. Namen worden in hoofdletters weergegeven en de kolom met de voor- en achternaam is gemaakt.
 
    ![](assets/query_editor_nveau_41.png)

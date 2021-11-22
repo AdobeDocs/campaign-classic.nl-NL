@@ -17,13 +17,13 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven om werktabellen te maken en te vullen.
+De **SQL-gegevensbeheer** Met activiteit kunt u uw eigen SQL-scripts schrijven om werktabellen te maken en te vullen.
 
 ## Vereisten {#prerequisites}
 
 Voordat u de activiteit configureert, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het **[!UICONTROL FDA]** (Federated Data Access)-pakket moet daarom op uw instantie worden geïnstalleerd. [Meer info](../../installation/using/about-fda.md).
+* De activiteit is beschikbaar voor verre slechts gegevensbronnen. De **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd. [Meer info](../../installation/using/about-fda.md).
 
    Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
@@ -32,12 +32,12 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
    ![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden.
-* De exploitant die het werkschema uitvoert moet **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd hebben recht. [Meer info](../../platform/using/access-management-named-rights.md).
+* De exploitant die het werkschema uitvoert moet hebben **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd recht. [Meer info](../../platform/using/access-management-named-rights.md).
 
 ## De SQL-gegevensbeheeractiviteit configureren {#configuring-the-sql-data-management-activity}
 
-1. Geef de activiteit **[!UICONTROL Label]** op.
-1. Selecteer **[!UICONTROL External account]** aan gebruik, dan selecteren **[!UICONTROL Outbound schema]** verbonden aan deze externe rekening.
+1. De activiteit opgeven **[!UICONTROL Label]**.
+1. Selecteer **[!UICONTROL External account]** om te gebruiken, dan selecteren **[!UICONTROL Outbound schema]** aan deze externe rekening gekoppeld.
 
    >[!CAUTION]
    >
@@ -49,7 +49,7 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
    >
    >Het is de verantwoordelijkheid van de SQL-scripteigenaar om ervoor te zorgen dat het SQL-script functioneel is en dat de referenties ervan (veldnamen, enz.) zijn in overeenstemming met het Uitgaande schema.
 
-   Als u een bestaande SQL-code wilt laden, selecteert u de optie **[!UICONTROL The SQL script is contained in an entity stored in the database]**. SQL-scripts moeten worden gemaakt en opgeslagen in het menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
+   Als u een bestaande SQL-code wilt laden, selecteert u de optie **[!UICONTROL The SQL script is contained in an entity stored in the database]** optie. SQL-scripts moeten worden gemaakt en opgeslagen in het dialoogvenster **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** -menu.
 
    Anders typt of kopieert u het SQL-script in het daarvoor bestemde gebied.
 
@@ -62,10 +62,10 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 
       >[!NOTE]
       >
-      >De waarde (&#39;name&#39;) komt overeen met het veld **[!UICONTROL Name]** van de overgangseigenschappen.
+      >De waarde (&#39;name&#39;) komt overeen met de waarde **[!UICONTROL Name]** van de overgangseigenschappen.
 
-1. Als het SQL manuscript reeds bevelen bevat om een uitgaande het werklijst tot stand te brengen, unselect de **[!UICONTROL Automatically create work table]** optie. Anders wordt automatisch een werktabel gemaakt zodra de workflow wordt uitgevoerd.
-1. Klik **[!UICONTROL Ok]** om de activiteitenconfiguratie te bevestigen.
+1. Als het SQL-script al opdrachten bevat om een uitgaande werktabel te maken, schakelt u de optie **[!UICONTROL Automatically create work table]** optie. Anders wordt automatisch een werktabel gemaakt zodra de workflow wordt uitgevoerd.
+1. Klikken **[!UICONTROL Ok]** om de activiteitenconfiguratie te bevestigen.
 
 De activiteit wordt nu gevormd. Het is klaar om in het werkschema te worden uitgevoerd.
 

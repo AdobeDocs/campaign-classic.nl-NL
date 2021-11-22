@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Met de toepassing **Sociale netwerken beheren** (Sociale marketing) die is ontworpen voor het beheer van sociale netwerken kunt u via Facebook en Twitter communiceren met klanten en vooruitzichten.
+De **Sociale netwerken beheren** (Sociale marketing) toepassing die voor het beheren van sociale netwerken wordt ontworpen laat u met klanten en vooruitzichten via Facebook en Twitter interactie aangaan.
 
 1. **Berichten verzenden**
 

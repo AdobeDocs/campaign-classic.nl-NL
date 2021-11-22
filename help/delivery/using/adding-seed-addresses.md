@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Zaadadressen in een levering {#seed-addresses-in-a-delivery}
 
-Om specifieke zaadadressen voor een levering toe te voegen, klik **[!UICONTROL To]** verbinding, dan selecteer **[!UICONTROL Seed addresses]** tabel.
+Om specifieke zaadadressen voor een levering toe te voegen, klik **[!UICONTROL To]** Selecteer vervolgens de koppeling **[!UICONTROL Seed addresses]** tab.
 
 ![](assets/s_ncs_user_edit_del_addresses_tab.png)
 
@@ -27,25 +27,25 @@ Er zijn drie mogelijke invoegmodi:
 
 1. Het ingaan van enige zaadadressen.
 
-   Klik hiertoe op de knop **[!UICONTROL Add]** en definieer de inhoud van de adresvelden. Herhaal dit voor elk adres.
+   Om dit te doen, klik **[!UICONTROL Add]** en definieert u de inhoud van de adresvelden. Herhaal dit voor elk adres.
 
 1. Adressjablonen importeren en deze aan uw wensen aanpassen.
 
-   Om dit te doen, klik **[!UICONTROL Import seed templates...]** verbinding en selecteer de omslag die de adresmalplaatjes bevat. Raadpleeg [deze sectie](creating-seed-addresses.md#creating-seed-address-templates) voor meer informatie.
+   Om dit te doen, klik **[!UICONTROL Import seed templates...]** en selecteer de map die de adressjablonen bevat. Raadpleeg [deze sectie](creating-seed-addresses.md#creating-seed-address-templates) voor meer informatie.
 
-   Indien nodig, zodra zij worden toegevoegd, kunt u hen tweemaal klikken of **[!UICONTROL Detail...]** knoop klikken om de inhoud van elk adres aan te passen.
+   Indien nodig kunt u dubbelklikken op de knoppen nadat u ze hebt toegevoegd of op de knop **[!UICONTROL Detail...]** om de inhoud van elk adres aan te passen.
 
 1. Creërend een voorwaarde om dynamisch de controleadressen te selecteren die moeten worden opgenomen.
 
-   Om dit te doen, klik **[!UICONTROL Edit the dynamic condition...]** verbinding, dan ga de parameters van de zaadselectie in. Bijvoorbeeld, kon u alle zaadadressen omvatten in een specifieke omslag, of zaadadressen die tot een specifieke afdeling van uw organisatie behoren.
+   Om dit te doen, klik **[!UICONTROL Edit the dynamic condition...]** en voer vervolgens de selectieparameters voor het zaadadres in. Bijvoorbeeld, kon u alle zaadadressen omvatten in een specifieke omslag, of zaadadressen die tot een specifieke afdeling van uw organisatie behoren.
 
-   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: zaadadressen op criteria](use-case--selecting-seed-addresses-on-criteria.md) selecteren.
+   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: zaadadressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->Deze optie wordt gebruikt wanneer de gebruikte ontvankelijke lijst niet het gebrek **nms:ontvanger** lijst is en u gebruikt de Inbox Rendering functionaliteit die met Adobe Campaign **[!UICONTROL Deliverability]** module wordt verstrekt.
+>Deze optie wordt gebruikt wanneer de gebruikte ontvankelijke lijst niet het gebrek is **nms:ontvanger** tabel en u gebruikt de bij Adobe Campaign geleverde functionaliteit voor Inbox Rendering **[!UICONTROL Deliverability]** module.
 >
->Zie [Een externe tabel voor ontvangers gebruiken](using-an-external-recipient-table.md) en de documentatie over [Inbox-rendering](inbox-rendering.md) voor meer informatie.
+>Raadpleeg voor meer informatie hierover [Een externe tabel voor ontvangers gebruiken](using-an-external-recipient-table.md) en de documentatie over [Inbox rendering](inbox-rendering.md).
 
 Voor leveringen kunt u ook de manier aanpassen waarop adressen worden ingevoegd in het extractiebestand. Deze worden standaard ingevoegd in de sorteervolgorde van het uitvoerbestand, maar u kunt ervoor kiezen ze aan het einde of het begin van het bestand in te voegen, of willekeurig onder de ontvangers van het hoofddoel.
 
@@ -53,9 +53,9 @@ Voor leveringen kunt u ook de manier aanpassen waarop adressen worden ingevoegd 
 
 ## Adressen in een campagne {#seed-addresses-in-a-campaign}
 
-Als u zaadadressen wilt toevoegen aan een doel voor een campagne, selecteert u de bewerking en klikt u op het tabblad **[!UICONTROL Edit]**.
+Als u zaadadressen wilt toevoegen aan een doel voor een campagne, selecteert u de bewerking en klikt u op de knop **[!UICONTROL Edit]** tab.
 
-Klik op de koppeling **[!UICONTROL Advanced campaign settings...]** en vervolgens op de tab **[!UICONTROL Seed addresses]**, zoals hieronder wordt weergegeven:
+Klik op de knop **[!UICONTROL Advanced campaign settings...]** en vervolgens de **[!UICONTROL Seed addresses]** tab, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_user_edit_op_addresses_tab.png)
 

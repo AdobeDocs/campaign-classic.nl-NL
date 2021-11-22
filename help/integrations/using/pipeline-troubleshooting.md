@@ -16,17 +16,17 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt;>&quot;**
+**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt; instantie >&quot;**
 
 De pijpleiding wordt niet ondersteund door uw versie van Adobe Campaign Classic.
 
-1. Controleer of het element [!DNL pipelined] aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
+1. Controleer of de [!DNL pipelined] -element aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
 1. Upgrade naar campagne 20.3 of [!DNL Gold Standard] 11.
 
-**Pipelined failed with &#39;&#39; aurait dû commencer par  `[` ou  `{` (iRc=16384)&quot;**
+**Pipetteer mislukt met &#39;&#39; aurait dû commencer par `[` ou `{` (iRc=16384)&quot;**
 
-De optie **NmsPipeline_Config** is niet ingesteld. Het is eigenlijk een JSON-parseringsfout.
-Stel de JSON-configuratie in de optie **NmsPipeline_Config** in. Zie &quot;verpletterende optie&quot;in deze pagina.
+De **NmsPipeline_Config** is niet ingesteld. Het is eigenlijk een JSON-parseringsfout.
+De JSON-configuratie instellen in de optie **NmsPipeline_Config**. Zie &quot;verpletterende optie&quot;in deze pagina.
 
 **Pipelined ontbreekt met &quot;het onderwerp moet een geldige organisatie of een cliënt zijn&quot;**
 
@@ -67,17 +67,17 @@ De logboeken moeten als volgt zijn:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Dit foutbericht geeft aan dat de verificatie is geconfigureerd met de Omniture base OAuth. Raadpleeg de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md)-documentatie om uw verificatie bij te werken.
+Dit foutbericht geeft aan dat de verificatie is geconfigureerd met de Omniture base OAuth. Zie de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) documentatie om uw authentificatie te bevorderen.
 
 **Er worden geen triggers opgehaald**
 
-Wanneer het [!DNL pipelined] proces loopt en geen trekkers worden teruggewonnen:
+Wanneer de [!DNL pipelined] proces wordt uitgevoerd en er worden geen triggers opgehaald:
 
 1. Zorg ervoor dat de trigger actief is in Analytics en gebeurtenissen genereert.
-1. Zorg ervoor dat het [!DNL pipelined] proces loopt.
-1. Zoek naar fouten in het [!DNL pipelined] logboek.
-1. Zoek naar fouten op de [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
-1. Controleer of de triggernaam is geconfigureerd in de optie **[!UICONTROL NmsPipeline_Config]**. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
+1. Zorg ervoor dat de [!DNL pipelined] -proces wordt uitgevoerd.
+1. Zoek naar fouten in [!DNL pipelined] log.
+1. Zoek naar fouten in [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
+1. Controleer of de triggernaam is geconfigureerd in het dialoogvenster **[!UICONTROL NmsPipeline_Config]** optie. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
 1. Controleer of Analytics een actieve trigger heeft en gebeurtenissen genereert. Er kan een vertraging van een paar uur optreden nadat de configuratie is gemaakt in Analytics voordat deze actief is.
 
 **Gebeurtenissen zijn niet gekoppeld aan een klant**
@@ -95,9 +95,9 @@ Wanneer de tijdstempel van Analytics veel ouder is dan de aanmaakdatum van de ge
 
 Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne wordt gestart. Dit varieert afhankelijk van de implementatie van gegevensinzameling, lading op de pijpleiding, douaneconfiguratie van de bepaalde trekker, en het werkschema in Adobe Campaign.
 
-1. Controleer of het proces [!DNL pipelined] is uitgevoerd.
+1. Controleer of de [!DNL pipelined] -proces is uitgevoerd.
 1. Zoek naar fouten in pipelined.log die nieuwe pogingen kunnen veroorzaken. Corrigeer de fouten, indien van toepassing.
-1. Controleer de [!DNL pipelined] statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
+1. Controleer de [!DNL pipelined] statuspagina voor de grootte van de wachtrij. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te stijgen, vorm de trekkers op Analytics gebruikend minder berichten.
 
 **Werkgebiedinstanties upgraden van verouderde verificatie naar Adobe IO-verificatie**

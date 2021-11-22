@@ -17,17 +17,17 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Wanneer u gegevens in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]** wilt vertegenwoordigen, kan het uit twee bronnen worden genomen: een nieuwe query (zie [Een direct filter definiëren op gegevens](#defining-a-direct-filter-on-data)) of de rapportcontext (zie [Contextgegevens gebruiken](#using-context-data)).
+Wanneer u gegevens wilt weergeven in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]**, kan uit twee bronnen worden afgeleid: een nieuwe query (zie [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data)) of de rapportcontext (zie [Contextgegevens gebruiken](#using-context-data)).
 
 ## Een rechtstreeks filter op gegevens definiëren {#defining-a-direct-filter-on-data}
 
 ### Gegevens filteren {#filtering-data}
 
-Het gebruiken van **[!UICONTROL Query]** typeactiviteit is niet verplicht wanneer het bouwen van een rapport. De gegevens kunnen direct in de lijsten en grafieken worden gefiltreerd die omhoog het rapport maken.
+Een **[!UICONTROL Query]** type activiteit is niet verplicht wanneer het bouwen van een rapport. De gegevens kunnen direct in de lijsten en grafieken worden gefiltreerd die omhoog het rapport maken.
 
-Dit laat u toe om de gegevens aan vertoning in het rapport direct via de **[!UICONTROL Page]** activiteit van het rapport te selecteren.
+Dit laat u toe om de gegevens te selecteren in het rapport direct via te tonen **[!UICONTROL Page]** activiteit van het verslag.
 
-Klik hiertoe op de koppeling **[!UICONTROL Filter data...]** op het tabblad **[!UICONTROL Data]**: met deze koppeling hebt u toegang tot de expressies-editor om een query te definiëren voor de gegevens die moeten worden geanalyseerd.
+Om dit te doen, klik **[!UICONTROL Filter data...]** in de **[!UICONTROL Data]** tab: met deze koppeling hebt u toegang tot de expressies-editor om een query te definiëren voor de gegevens die moeten worden geanalyseerd.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -35,7 +35,7 @@ Klik hiertoe op de koppeling **[!UICONTROL Filter data...]** op het tabblad **[!
 
 In het volgende voorbeeld willen we dat in het diagram alleen de ontvangende profielen worden weergegeven die in Frankrijk wonen en die in het jaar een aankoop hebben gedaan.
 
-Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de koppeling **[!UICONTROL Filter data]** en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md) voor meer informatie over het samenstellen van query&#39;s in Adobe Campaign.
+Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de knop **[!UICONTROL Filter data]** Maak een koppeling en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Raadpleeg voor meer informatie over het samenstellen van query&#39;s in Adobe Campaign [deze sectie](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -55,8 +55,8 @@ Voer de volgende stappen uit:
 
 1. Plaats een pagina in het diagram en bewerk deze.
 1. Maak een draaitabel.
-1. Ga naar het tabblad **[!UICONTROL Data]** en selecteer de kubus die u wilt gebruiken.
-1. Klik op de koppeling **[!UICONTROL Filter data...]** en definieer de volgende query om Adobe uit de lijst met bedrijven te verwijderen.
+1. Ga naar de **[!UICONTROL Data]** en selecteert u de kubus die u wilt gebruiken.
+1. Klik op de knop **[!UICONTROL Filter data...]** koppeling en definieer de volgende query om Adobe uit de lijst met bedrijven te verwijderen.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -66,14 +66,14 @@ Slechts zullen de ontvangers die de het filtreren criteria voldoen in het rappor
 
 ## Contextgegevens gebruiken {#using-context-data}
 
-Om gegevens in de vorm van **[!UICONTROL table]** of **[!UICONTROL chart]** te vertegenwoordigen, kunnen de gegevens uit de rapportcontext komen.
+Gegevens weergeven in de vorm van een **[!UICONTROL table]** of **[!UICONTROL chart]** De gegevens kunnen afkomstig zijn uit de rapportcontext.
 
-Op de pagina die de tabel of het diagram bevat, kunt u met het tabblad **[!UICONTROL Data]** de gegevensbron selecteren.
+Op de pagina die de tabel of het diagram bevat, worden de **[!UICONTROL Data]** kunt u de gegevensbron selecteren.
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Met de optie **[!UICONTROL New query]** kunt u een query maken om gegevens te verzamelen. Raadpleeg [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data) voor meer informatie.
-* Met de optie **[!UICONTROL Context data]** kunt u de invoergegevens gebruiken: de context van het rapport valt samen met de informatie in de binnenkomende overgang van de pagina die de grafiek of de tabel bevat. Deze context kan, bijvoorbeeld, gegevens bevatten die via een **[!UICONTROL Query]** activiteit worden verzameld die vóór **[!UICONTROL Page]** activiteit wordt geplaatst en waarvoor u de lijst en de gebieden moet specificeren die het rapport betrekking heeft.
+* De **[!UICONTROL New query]** kunt u een query maken om gegevens te verzamelen. Raadpleeg voor meer informatie hierover [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data).
+* De **[!UICONTROL Context data]** Met deze optie kunt u de invoergegevens gebruiken: de context van het rapport valt samen met de informatie in de binnenkomende overgang van de pagina die de grafiek of de tabel bevat. Deze context kan bijvoorbeeld gegevens bevatten die via een **[!UICONTROL Query]** activiteit die vóór de **[!UICONTROL Page]** activiteit en waarvoor u de lijst en de gebieden moet specificeren die het rapport betrekking heeft.
 
 Bijvoorbeeld, in een vraagvakje, bouw de volgende vraag voor de ontvangers:
 

@@ -19,11 +19,11 @@ ht-degree: 2%
 
 ## Nieuwe enquête maken {#creating-a-new-survey}
 
-In dit hoofdstuk wordt het ontwerpen van een **Beoordelingsformulier** met Adobe Campaign beschreven, evenals de beschikbare opties en configuraties. Met Adobe Campaign kunt u deze enquête beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
+In dit hoofdstuk wordt het ontwerpen van een **Enquête** typt u het formulier met Adobe Campaign en met de beschikbare opties en configuraties. Met Adobe Campaign kunt u deze enquête beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
 
-Webformulieren zijn toegankelijk via het knooppunt **[!UICONTROL Resources > Online > Web applications]** van de structuur. Als u een enquête wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met toepassingen of klikt u met de rechtermuisknop op de lijst en kiest u **[!UICONTROL New]**.
+Webformulieren zijn toegankelijk via de **[!UICONTROL Resources > Online > Web applications]** knooppunt van de structuur. Als u een enquête wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met toepassingen of klik met de rechtermuisknop op de lijst en kies **[!UICONTROL New]**.
 
-Selecteer het enquêtemalplaatje (**[!UICONTROL newSurvey]** door gebrek).
+Selecteer het enquêtemalplaatje (**[!UICONTROL newSurvey]** standaard).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -31,11 +31,11 @@ De pagina&#39;s van het formulier worden gemaakt met een speciale editor waarmee
 
 >[!NOTE]
 >
->Raadpleeg [dit document](../../web/using/about-web-forms.md) voor meer informatie over het definiëren van inhoud en het maken van schermlay-outs voor een webformulier.
+>Raadpleeg voor meer informatie over het definiëren van inhoud en het maken van schermlay-outs voor een webformulier [dit document](../../web/using/about-web-forms.md).
 
 ## Velden toevoegen {#adding-fields}
 
-Met de velden in een formulier kunnen gebruikers gegevens invoeren en opties selecteren. Voor elke pagina in het formulier worden ze gemaakt met de eerste knop op de werkbalk via het menu **[!UICONTROL Add using the wizard]**.
+Met de velden in een formulier kunnen gebruikers gegevens invoeren en opties selecteren. Voor elke pagina in het formulier worden ze gemaakt met de eerste knop op de werkbalk. **[!UICONTROL Add using the wizard]** -menu.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -54,9 +54,9 @@ Wanneer u een veld aan een enquête toevoegt, moet u het type van het veld selec
 
    >[!NOTE]
    >
-   >Opslagmodi en het importeren van velden worden beschreven in [deze sectie](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >Opslagmodi en invoer in het veld worden nader beschreven in [deze sectie](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-De aard van het veld dat moet worden toegevoegd (vervolgkeuzelijst, tekstveld, selectievakjes, enz.) wordt aangepast aan de geselecteerde opslagmodus. U kunt het veranderen gebruikend het **[!UICONTROL Type]** gebied van **[!UICONTROL General]** lusje, maar zorg ervoor om verenigbaar met het gegevenstype te blijven.
+De aard van het veld dat moet worden toegevoegd (vervolgkeuzelijst, tekstveld, selectievakjes, enz.) wordt aangepast aan de geselecteerde opslagmodus. U kunt dit wijzigen met de opdracht **[!UICONTROL Type]** van het **[!UICONTROL General]** , maar zorg ervoor dat u consistent blijft met het gegevenstype.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -68,7 +68,7 @@ De online onderzoeken zijn gebaseerd op de toepassingsmogelijkheden van het Web.
 
 ### Meerdere keuzen {#multiple-choice}
 
-Voor **[!UICONTROL Multiple choice]** typecontroles, kunt u een minimum en maximumaantal selecties bepalen. Met deze optie kunt u bijvoorbeeld de selectie op ten minste **2**-waarden en ten hoogste **4**-waarden van de beschikbare opties instellen:
+Voor **[!UICONTROL Multiple choice]** typecontroles, kunt u een minimum en maximumaantal selecties bepalen. Met deze optie kunt u bijvoorbeeld de selectie op zijn minst op **2** waarden en ten hoogste **4** waarden uit de beschikbare opties:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -84,13 +84,13 @@ De bijbehorende configuratie is als volgt:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple values]** type **gearchiveerd veld** zijn:
+Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple values]** type **gearchiveerd veld**:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
->* Deze functionaliteit is alleen beschikbaar voor formulieren van het type **Beoordeling**.
+>* Deze functionaliteit is alleen beschikbaar voor **Enquête** typt u formulieren.
 >* Deze optie is niet compatibel met willekeurige vraagweergave. [Meer info](#adding-questions).
 
 
@@ -98,19 +98,19 @@ Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple v
 
 Er zijn twee typen containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer info](../../web/using/about-web-forms.md).
 
-Gebruik een container **Vraag** om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
+Een **Vraag** container om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
 
 >[!CAUTION]
 >
->Plaats nooit een **Vraag**-container onder een andere **Vraag**-container in de hiërarchie.
+>Nooit een **Vraag** container onder een andere **Vraag** in de hiërarchie.
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Het label van de vraag wordt ingevoerd in het labelveld. In dit geval wordt de stijl uit het stijlblad van het formulier toegepast. Selecteer de optie **[!UICONTROL Enter the title in HTML format]** om deze aan te passen. Hierdoor hebt u toegang tot de HTML-editor.
+Het label van de vraag wordt ingevoerd in het labelveld. In dit geval wordt de stijl uit het stijlblad van het formulier toegepast. Selecteer **[!UICONTROL Enter the title in HTML format]** aanpassen. Hierdoor hebt u toegang tot de HTML-editor.
 
 >[!NOTE]
 >
->Raadpleeg [dit document](../../web/using/about-web-forms.md) voor meer informatie over het gebruik van de HTML-editor.
+>Zie [dit document](../../web/using/about-web-forms.md) voor meer informatie over het gebruik van de HTML editor.
 
 Bijvoorbeeld:
 
@@ -122,7 +122,7 @@ In het bovenstaande voorbeeld ziet de rendering er als volgt uit:
 
 >[!NOTE]
 >
->Elke vraag heeft een **Vraag** typecontainer.
+>Elke vraag heeft een **Vraag** tekstcontainer.
 
 U kunt het willekeurig tekenen van vragen door Adobe Campaign inschakelen. Het is dan mogelijk om het aantal vragen te specificeren dat in de pagina, op het gebied wordt getoond dat bij de bodem van het configuratievenster wordt gevestigd.
 
@@ -136,4 +136,4 @@ Wanneer de pagina wordt vernieuwd, zijn de weergegeven vragen anders.
 
 >[!CAUTION]
 >
->Wanneer u een vraag willekeurig weergeeft (**[!UICONTROL Display randomly]** optie ingeschakeld op de pagina), moet u ervoor zorgen dat u geen meerkeuzevragen gebruikt waarvoor een of meer selecties verplicht zijn.
+>Wanneer u een vraag willekeurig weergeeft (**[!UICONTROL Display randomly]** (weergegeven op de pagina), moet u ervoor zorgen dat u geen meerkeuzevragen gebruikt waarvoor een of meer selecties verplicht zijn.

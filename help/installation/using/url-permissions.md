@@ -5,7 +5,8 @@ description: Leer hoe u URL-machtigingen configureert
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
@@ -22,19 +23,19 @@ Instanties mogen standaard geen verbinding maken met externe URL’s. Het is ech
 
 >[!NOTE]
 >
->Deze procedure is beperkt tot **on-premise** plaatsingen.
+>Deze procedure is beperkt tot **op locatie** implementaties.
 >
->Als **gehoste** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de de toestemmingen gebruiken zelfinstellings interface van URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
+>Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de interface van de URL toestemmingen zelf gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 >
->Andere **hybride/gehoste** klanten moeten zich tot het ondersteuningsteam van Adobe richten om IP aan de lijst van gewenste personen toe te voegen.
+>Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
 
-Voor **Hybride** en **On-premise** plaatsingen, moet de beheerder een nieuwe **urlPermission** in **serverConf.xml** dossier van verwijzingen voorzien.
+Voor **Hybride** en **Op locatie** implementaties, moet de beheerder naar een nieuwe **urlPermission** in de **serverConf.xml** bestand.
 
 
 Er zijn drie modi voor verbindingsbeveiliging beschikbaar:
 
 * **Blokkeren**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
-* **Toestemming**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
+* **Permissief**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
 * **Waarschuwing**: alle URL&#39;s die niet tot de lijst van gewenste personen behoren, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
@@ -47,9 +48,9 @@ Er zijn drie modi voor verbindingsbeveiliging beschikbaar:
 
 >[!IMPORTANT]
 >
->Nieuwe implementaties gebruiken standaard de modus **Blokkeren**.
+>Nieuwe implementaties gebruiken standaard de **Blokkeren** in.
 >
->Als bestaande klant die afkomstig is uit een migratie, kunt u tijdelijk de **waarschuwingsmodus** gebruiken. Analyseer het uitgaande verkeer alvorens URLs toe te staan. Als de lijst met toegestane URL&#39;s is gedefinieerd, kunt u de URL&#39;s toevoegen aan de lijst van gewenste personen en de modus **Blokkeren** activeren.
+>Als bestaande klant die uit een migratie komt, kunt u tijdelijk gebruikmaken van de **Waarschuwing** in. Analyseer het uitgaande verkeer alvorens URLs toe te staan. Als de lijst met toegestane URL&#39;s is gedefinieerd, kunt u de URL&#39;s toevoegen aan de lijst van gewenste personen en de URL activeren **Blokkeren** in.
 
 Raadpleeg de volgende secties voor meer informatie:
 

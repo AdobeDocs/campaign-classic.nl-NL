@@ -56,15 +56,15 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 ## Pakketconfiguratie {#packages-configuration}
 
-Eventuele schema-extensies die rechtstreeks zijn gekoppeld aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
+Willekeurige schema-extensies die rechtstreeks zijn gekoppeld aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
 
 Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: één pakket dat op de controleinstanties moet worden geïnstalleerd, en een ander dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
 
 >[!NOTE]
 >
->Bij de installatie van het pakket worden de **long**-tekstvelden van de tabel **nms:proposition**, zoals de propositie-id, gewijzigd in **int64**-tekstvelden. Dit type gegevens wordt beschreven in [deze sectie](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wanneer u het pakket installeert, **lang** tekstvelden van het dialoogvenster **nms:voorstel** tabel, zoals de propositie-id, wordt **int64** tekstvelden. Dit type gegevens wordt in het dialoogvenster [deze sectie](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-De duur van het gegevensbehoud moet op elke instantie (via het **[!UICONTROL Data purge]** venster in de plaatsingstovenaar) worden gevormd. Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
+De duur van het gegevensbehoud moet op elke instantie (via **[!UICONTROL Data purge]** in de implementatiewizard). Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
 
 Op besturingsinstanties:
 
@@ -76,8 +76,8 @@ Op besturingsinstanties:
    * Selecteer **[!UICONTROL Execution instance]**.
    * Schakel de optie **[!UICONTROL Enabled]** in.
    * Voltooi de verbindingsparameters voor de uitvoeringsinstantie.
-   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op de **[!UICONTROL Initialize connection]** knoop klikt.
-   * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** of beide.
+   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op het tabblad **[!UICONTROL Initialize connection]** knop.
+   * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, of beide.
    * Voer de gebruikte FDA-account in. Een exploitant moet op de uitvoeringsinstanties worden gecreeerd en moet de volgende lees- en schrijfrechten op het gegevensbestand van de betrokken instantie hebben:
 
       ```
@@ -99,7 +99,7 @@ Op besturingsinstanties:
       >
       >Als er een fout optreedt, kunt u de synchronisatieworkflows raadplegen en meldingen aanbieden. Deze zijn te vinden in de technische workflows van de toepassing.
 
-Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal (**[!UICONTROL Taken into account if]** gebied) te beperken.
+Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal ( te beperken **[!UICONTROL Taken into account if]** veld).
 
 ![](assets/ita_filtering.png)
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-Als u de grootte van een type **Number** bewerkt, worden de waarden niet gewijzigd of wordt de index opnieuw geschreven. Het is dus onmiddellijk.
+De grootte van een **Getal** type leidt niet tot waarden of de index wordt opnieuw geschreven. Het is dus onmiddellijk.
 
 De uit te voeren query is als volgt:
 

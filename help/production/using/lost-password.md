@@ -21,7 +21,7 @@ U kunt een verloren wachtwoord wijzigen of herstellen.
 Er zijn twee mogelijke scenario&#39;s:
 
 * [Wachtwoord verloren door een Adobe Campaign-operator](#password-lost-by-campaign-operator)
-* [Intern wachtwoord verloren](#internal-password-lost)  (alleen on-premise klanten)
+* [Intern wachtwoord verloren](#internal-password-lost) (alleen on-premise klanten)
 
 ## Wachtwoord verloren door een Campagneoperator {#password-lost-by-campaign-operator}
 
@@ -45,9 +45,9 @@ Volg de onderstaande stappen om dit te doen:
 Als het interne wachtwoord verloren gaat, moet u het opnieuw initialiseren.
 Hiervoor volgt u de volgende procedure:
 
-1. Bewerk het bestand **/usr/local/neolane/nl6/conf/serverConf.xml**.
+1. Bewerk de **/usr/local/neolane/nl6/conf/serverConf.xml** bestand.
 
-1. Ga naar **internalPassword** lijn.
+1. Ga naar de **internalPassword** lijn.
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -77,4 +77,4 @@ Hiervoor volgt u de volgende procedure:
    Confirmation 
    ```
 
-1. U kunt uw nieuw wachtwoord nu gebruiken om op **Interne** wijze te verbinden.
+1. U kunt nu uw nieuwe wachtwoord gebruiken om verbinding te maken met **Intern** in.

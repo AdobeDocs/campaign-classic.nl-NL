@@ -19,13 +19,13 @@ ht-degree: 13%
 
 Er kunnen veelvoudige redenen voor het volgen van logboeken zijn niet door:sturen. We raden u aan de volgende gegevens te controleren:
 
-* **Heeft de****traceringsworkflow fouten?**
+* **doet het** Tekstspatiëring **bevat de workflow fouten?**
 
    Zie [Technische workflows controleren](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* **Wordt de module****die logardrunning op de server volgt?**
+* **Is de module** trackinglogd **op de server wordt uitgevoerd?**
 
    Zie [Logbestanden](../../production/using/log-files.md).
 

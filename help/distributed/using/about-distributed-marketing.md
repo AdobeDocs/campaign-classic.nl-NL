@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign biedt een **Distributed Marketing**-toepassing voor het uitvoeren van samenwerkingscampagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die **[!UICONTROL list of campaign packages]** wordt genoemd, waar centraal gemaakte campagnemalplaatjes en instanties aan lokale entiteiten worden aangeboden.
+Adobe Campaign biedt een **Distributed Marketing** aanvraag tot uitvoering van samenwerkingscampagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **[!UICONTROL list of campaign packages]**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
 
 De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken. Campagnes worden geconcretiseerd door pakketten die lokale of samenwerkingscampagnes vertegenwoordigen. Om een campagne te kunnen voeren, moet de lokale entiteit deze opdracht geven en moet de bestelling worden goedgekeurd.
 
@@ -46,7 +46,7 @@ De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken.
 
 * **Lokalisatie**
 
-   Lokalisatie is het vermogen van een lokale entiteit om het doel en de inhoud van een campagne te wijzigen. Het mogelijke niveau van localisatie hangt van het type van campagne en zijn implementatie af.
+   Lokalisatie is de capaciteit van een lokale entiteit om het doel en de inhoud van een campagne te wijzigen. Het mogelijke niveau van localisatie hangt van het type van campagne en zijn implementatie af.
 
 * **Lijst met campagnepakketten**
 
@@ -58,7 +58,7 @@ De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken.
 
 * **Lokale campagne**
 
-   Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst van **[!UICONTROL campaign packages]** met een **specifiek uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was.
+   Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst met **[!UICONTROL campaign packages]** met een **specifieke uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was.
 
    De mate van autonomie van de lokale entiteit hangt af van de gebruikte implementatie.
 
@@ -66,10 +66,10 @@ De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken.
 
 * **Gezamenlijke campagne**
 
-   Een samenwerkingscampagne is een campagne waarvan het **uitvoeringsschema wordt bepaald** door de centrale entiteit, die de lokale entiteit kan gebruiken. De inhoud blijft voor elke lokale entiteit hetzelfde, maar de kosten worden gedeeld. Om deel te nemen, onderschrijven lokale entiteiten de samenwerkingscampagne.
+   Een samenwerkingscampagne is een campagne waarvan **uitvoeringsschema is gedefinieerd** door de centrale entiteit, die de lokale entiteit mag gebruiken. De inhoud blijft voor elke lokale entiteit hetzelfde, maar de kosten worden gedeeld. Om deel te nemen, onderschrijven lokale entiteiten de samenwerkingscampagne.
 
    * **[!UICONTROL Collaborative campaign (by form)]**: aanbevolen voor campagnes waarbij maximaal 300 lokale entiteiten betrokken zijn. De lokale entiteit kan vooraf gedefinieerde parameters invoeren voor het toewijzen van doelen en inhoud aan de persoonlijke voorkeur in een webformulier. Het formulier kan een Adobe Campaign-formulier of een extern formulier (extranetclient) zijn. Een functionele beheerder kan het formulier definiëren en configureren op basis van een formuliersjabloon dat door de integrator is gedefinieerd. Om de campagne te bestellen, heeft de lokale entiteit enkel Webtoegang nodig.
-   * **[!UICONTROL Collaborative campaign (by campaign)]**: aanbevolen voor campagnes gericht op tientallen lokale entiteiten. Dit type campagne leidt tot kindcampagnes voor elke lokale entiteit. Zodra **[!UICONTROL collaborative campaign (by campaign)]** door de centrale entiteit wordt goedgekeurd, wordt de campagne ter beschikking gesteld aan de lokale entiteit, die het kan wijzigen. Uitvoering wordt automatisch gesynchroniseerd tussen bovenliggende en onderliggende campagnes. De lokale entiteit moet toegang hebben tot een instantie om een campagne te bestellen en er deel van te nemen.
+   * **[!UICONTROL Collaborative campaign (by campaign)]**: aanbevolen voor campagnes gericht op tientallen lokale entiteiten. Dit type campagne leidt tot kindcampagnes voor elke lokale entiteit. Wanneer de **[!UICONTROL collaborative campaign (by campaign)]** wordt goedgekeurd door de centrale entiteit, wordt de campagne ter beschikking gesteld van de lokale entiteit, die deze kan wijzigen. Uitvoering wordt automatisch gesynchroniseerd tussen bovenliggende en onderliggende campagnes. De lokale entiteit moet toegang hebben tot een instantie om een campagne te bestellen en er deel van te nemen.
    * **[!UICONTROL Collaborative campaign (by target approval)]**: aanbevolen voor campagnes die gericht zijn op enkele duizenden lokale entiteiten. De lokale entiteit ontvangt een lijst van contacten die door de centrale entiteit vooraf is bepaald. De lokale entiteit beslist of bepaalde contacten op basis van de inhoud van de campagne al dan niet via een webformulier worden onderhouden. Lokale entiteiten worden afgeleid van de lijst met geselecteerde contactpersonen. Om aan de campagne deel te nemen, heeft de lokale entiteit enkel Webtoegang nodig.
    * **[!UICONTROL Collaborative campaign (simple)]**: deze modus zorgt voor compatibiliteit met de specifieke uitvoeringsprocessen van eerdere versies.
 
@@ -81,7 +81,7 @@ Als een lokale entiteit zich voor een campagne registreert, wordt dit in een ord
 
 ## Werkruimte {#workspace}
 
-De lijst met campagnepakketten is toegankelijk via het tabblad **Campagnes**: Klik op de koppeling **[!UICONTROL Campaign packages]**.
+De lijst met campagnepakketten is toegankelijk via de **Campagnes** tab: klik op **[!UICONTROL Campaign packages]** koppeling.
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -91,7 +91,7 @@ In het geval van centrale agentschappen, toont dit venster alle pakketten beschi
 
 ## Exploitanten en entiteiten {#operators-and-entities}
 
-Begin door de centrale en lokale entiteitexploitanten via de **[!UICONTROL Access management]** omslag te specificeren.
+Begin met het opgeven van de centrale en lokale entiteitsoperatoren via de **[!UICONTROL Access management]** map.
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
@@ -99,19 +99,19 @@ Begin door de centrale en lokale entiteitexploitanten via de **[!UICONTROL Acces
 
 U moet centrale en lokale operatoren maken.
 
-Centrale exploitanten moeten tot de **[!UICONTROL Central management]** exploitantgroep behoren of **[!UICONTROL CENTRAL]** genoemd hebben recht.
+Centrale operatoren moeten tot de **[!UICONTROL Central management]** de **[!UICONTROL CENTRAL]** genoemd recht.
 
-Lokale operatoren moeten tot de groep van de **[!UICONTROL Local management]** exploitant behoren of **[!UICONTROL LOCAL]** genoemd hebben recht. Zij moeten ook gekoppeld zijn aan hun lokale entiteit.
+Lokale operatoren moeten tot de **[!UICONTROL Local management]** de **[!UICONTROL LOCAL]** genoemd recht. Zij moeten ook gekoppeld zijn aan hun lokale entiteit.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Organisatorische entiteiten {#organizational-entities}
 
-Als u een organisatorische entiteit wilt maken, klikt u op het knooppunt **[!UICONTROL Administration > Access management > Organizational entities]** en klikt u op het pictogram **[!UICONTROL New]** boven de lijst met entiteiten.
+Als u een organisatie-entiteit wilt maken, klikt u op de knop **[!UICONTROL Administration > Access management > Organizational entities]** en klik op de knop **[!UICONTROL New]** pictogram boven de lijst met entiteiten.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Elke organisatie bevat identificatiegegevens (label, interne naam, contactgegevens enz.) en groepen die betrokken zijn bij het goedkeuringsproces voor orders. Deze worden gedefinieerd in de sectie **[!UICONTROL Notifications and approvals]** op het tabblad **[!UICONTROL General]**.
+Elke organisatie bevat identificatiegegevens (label, interne naam, contactgegevens enz.) en groepen die betrokken zijn bij het goedkeuringsproces voor orders. Deze worden gedefinieerd in het dialoogvenster **[!UICONTROL Notifications and approvals]** sectie gevonden in het dialoogvenster **[!UICONTROL General]** tab.
 
 * Definieer een groep met pakketmeldingen: elke keer dat een nieuw pakket wordt toegevoegd aan de lijst van campagnepakketten en elke keer dat een campagne beschikbaar komt , ontvangen de exploitanten in deze groep een bericht .
 * Selecteer de groep van controleurs die belast is met de goedkeuring van orders, d.w.z. de controleurs die verantwoordelijk zijn voor de goedkeuring van door de lokale entiteit bestelde campagnes.
@@ -119,7 +119,7 @@ Elke organisatie bevat identificatiegegevens (label, interne naam, contactgegeve
 
 >[!NOTE]
 >
->Het goedkeuringsproces wordt gepresenteerd in de sectie [Goedkeuring](creating-a-local-campaign.md#approval-process).
+>Het goedkeuringsproces wordt weergegeven in het [Goedkeuringsproces](creating-a-local-campaign.md#approval-process) sectie.
 
 ## Implementatie {#implementation}
 
@@ -139,12 +139,12 @@ De procedure voor de tenuitvoerlegging hangt af van het type campagnemakket dat 
 
    * definitie van het doel en maximumgrootte;
    * inhoudsdefinitie,
-   * uitvoeringsschema (datum van contact en datum van extractie), **alleen voor lokale operatoren**;
+   * uitvoeringsschema (contactdatum en uitwinningsdatum); **alleen voor lokale operatoren**,
    * uitbreiding van het bestelschema met alle noodzakelijke extra gebieden.
 
 1. Maak een webformulier (Adobe of extranet) waarmee u lokalisatieparameters kunt weergeven, het doel en het budget kunt evalueren en een voorvertoning van de inhoud kunt weergeven en de volgorde kunt goedkeuren.
 
-   Voor **samenwerkingscampagnes (door doelgoedkeuring)**, creeer de lijst waar de goedkeuringen voor elke lokale entiteit zullen worden bewaard.
+   Voor **samenwerkingscampagnes ( door goedkeuring van het doel )** maakt u de tabel waarin de goedkeuringen voor elke lokale entiteit worden opgeslagen.
 
 ### Functionele beheerderstaken {#functional-administrator-side}
 

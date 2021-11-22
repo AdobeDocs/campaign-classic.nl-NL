@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-Als bepaalde **jsp** taken niet met succes worden uitgevoerd, moet u hen dwingen opnieuw te compileren.
+Als bepaalde **jsp** taken worden niet uitgevoerd. U moet ze dwingen opnieuw te compileren.
 
 Voer hiervoor de volgende opdrachten in:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-De **jsp** banen worden opnieuw geproduceerd de volgende tijd u verbindt.
+De **jsp** de taken worden opnieuw gegenereerd wanneer u de volgende keer verbinding maakt.

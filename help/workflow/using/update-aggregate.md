@@ -17,16 +17,16 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Voor rapportagedoeleinden worden aggregaten op kubueniveau gedefinieerd. Een **[!UICONTROL Workflow]** lusje is beschikbaar wanneer het vormen van een aggregaat.
+Voor rapportagedoeleinden worden aggregaten op kubueniveau gedefinieerd. A **[!UICONTROL Workflow]** is beschikbaar wanneer het vormen van een aggregaat.
 
-Raadpleeg de specifieke [sectie](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates) voor meer informatie over kubussen en het gebruik van aggregaten in Adobe Campaign.
+Raadpleeg voor meer informatie over kubussen en het gebruik van aggregaten in Adobe Campaign de betreffende [sectie](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-Met de activiteit **[!UICONTROL Update aggregate]** kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
+De **[!UICONTROL Update aggregate]** Met activiteit kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
 
 Standaard wordt bij elke berekening een volledige update uitgevoerd. Als u een gedeeltelijke update wilt inschakelen, selecteert u de desbetreffende optie en definieert u de updatevoorwaarden.
 
 ![](assets/s_advuser_cube_agregate_05.png)
 
-**Goede praktijken**: een  **[!UICONTROL Scheduler]** activiteit kan worden gebruikt om de frequentie van de actualiseringen van de berekeningen te specificeren .
+**Goede praktijken**: a **[!UICONTROL Scheduler]** de activiteit kan worden gebruikt om de frequentie van de berekening - updates te specificeren.
 
 ![](assets/s_advuser_cube_agregate_04.png)

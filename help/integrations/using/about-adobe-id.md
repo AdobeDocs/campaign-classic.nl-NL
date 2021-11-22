@@ -17,7 +17,7 @@ ht-degree: 23%
 
 ![](../../assets/common.svg)
 
-Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html) voor meer informatie over de verschillende typen Adobe-id&#39;s.
+Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg voor meer informatie over de verschillende typen Adobe-id&#39;s [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
 Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaign-console. Deze integratie biedt de volgende voordelen:
 
@@ -29,7 +29,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 
 >[!IMPORTANT]
 >
->Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan de recentste bouwstijl bevorderen om met Campagne na **30 Juni, 2021** te kunnen verbinden. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole. Afhankelijk van uw huidige versie, moet u aan één van de volgende versies bevorderen:
+>Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan recentste bouwstijl bevorderen om met Campagne na te kunnen verbinden **30 juni 2021**. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole. Afhankelijk van uw huidige versie, moet u aan één van de volgende versies bevorderen:
 >
 > * [Campagne [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campagne 21.1.3](../../rn/using/latest-release.md)

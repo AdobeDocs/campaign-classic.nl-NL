@@ -1,57 +1,58 @@
 ---
-title: Gegevensbron wijzigen
+title: Databron wijzigen
 description: Meer informatie over de activiteit van de gegevensbron van de Verandering
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-source-git-commit: 9fc4add3f12e3f06b031c4969bd8409c67e4359e
+exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
+source-git-commit: 31483bdd2e0a2dd0676ef391c5484e4b778317c1
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Gegevensbron wijzigen {#change-data-source}
+# Databron wijzigen {#change-data-source}
 
 >[!NOTE]
 >
-> De **[!UICONTROL Change data source]** activiteit is slechts beschikbaar met het **[!UICONTROL Access to external data (Federated Data Access)]** pakket. Raadpleeg deze [pagina](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie over ingebouwde Adobe Campaign Classic-pakketten.
+> De **[!UICONTROL Change data source]** activiteit is alleen beschikbaar bij de **[!UICONTROL Access to external data (Federated Data Access)]** pakket. Raadpleeg deze voor meer informatie over ingebouwde Adobe Campaign Classic-pakketten [page](../../installation/using/installing-campaign-standard-packages.md).
 
-Met de **[!UICONTROL Change data source]**-activiteit kunt u de gegevensbron van een workflow **[!UICONTROL Working table]** wijzigen. Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database.
+De **[!UICONTROL Change data source]** activiteit staat u toe om de gegevensbron van een werkschema te veranderen **[!UICONTROL Working table]**. Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database.
 
-Met de **[!UICONTROL Working table]** kan Adobe Campaign Classic-workflow gegevens verwerken en gegevens delen met de workflowactiviteiten.
-Door gebrek, wordt **[!UICONTROL Working table]** gecreeerd in het zelfde gegevensbestand zoals de bron van de gegevens die wij vragen.
+De **[!UICONTROL Working table]** staat Adobe Campaign Classic-workflow toe om gegevens te verwerken en gegevens te delen met de workflowactiviteiten.
+Standaard worden de **[!UICONTROL Working table]** wordt gecreeerd in het zelfde gegevensbestand zoals de bron van de gegevens wij waarvragen.
 
-Als u bijvoorbeeld een **[!UICONTROL Profiles]**-tabel opvraagt die is opgeslagen in de Cloud-database, maakt u een **[!UICONTROL Working table]** op dezelfde Cloud-database.
-Om dit te veranderen, kunt u **[!UICONTROL Change Data Source]** activiteit toevoegen om een verschillende gegevensbron voor uw **[!UICONTROL Working table]** te kiezen.
+Wanneer u bijvoorbeeld het **[!UICONTROL Profiles]** tabel, opgeslagen in de Cloud-database, maakt u een **[!UICONTROL Working table]** in dezelfde Cloud-database.
+Als u dit wilt wijzigen, kunt u de opdracht **[!UICONTROL Change Data Source]** activiteit om een verschillende gegevensbron voor uw te kiezen **[!UICONTROL Working table]**.
 
-Wanneer u de **[!UICONTROL Change Data Source]**-activiteit gebruikt, moet u terugschakelen naar de Cloud-database om door te gaan met de uitvoering van de workflow.
+Wanneer u de opdracht **[!UICONTROL Change Data Source]** is, moet u terugschakelen naar de Cloud-database om door te gaan met de uitvoering van de workflow.
 
-De **[!UICONTROL Change Data Source]**-activiteit gebruiken:
+Als u de opdracht **[!UICONTROL Change Data Source]** activiteit:
 
 1. Een workflow maken.
 
-1. Vraag uw beoogde ontvangers om een **[!UICONTROL Query]** activiteit.
+1. Vraag uw beoogde ontvangers om een query met een **[!UICONTROL Query]** activiteit.
 
-   Raadpleeg deze [pagina](../../workflow/using/query.md#creating-a-query) voor meer informatie over de **[!UICONTROL Query]**-activiteit.
+   Voor meer informatie over de **[!UICONTROL Query]** activiteit, verwijs naar deze [page](../../workflow/using/query.md#creating-a-query).
 
-1. Voeg op het tabblad **[!UICONTROL Targeting]** een **[!UICONTROL Change data source]**-activiteit toe.
+1. Van de **[!UICONTROL Targeting]** tabblad, voegt u een **[!UICONTROL Change data source]** activiteit.
 
    ![](assets/change-data-source.png)
 
-1. Dubbelklik op uw **[!UICONTROL Change data source]**-activiteit om **[!UICONTROL Default data source]** te selecteren.
+1. Dubbelklik op de knop **[!UICONTROL Change data source]** te selecteren activiteit **[!UICONTROL Default data source]**.
 
    De het werk lijst, die het resultaat van uw vraag bevat, wordt dan bewogen aan het gebrek PostSQL- gegevensbestand.
 
    ![](assets/change-data-source_2.png)
 
-1. Van **[!UICONTROL Actions]** lusje, sleep en laat vallen **[!UICONTROL JavaScript code]** activiteit om unitaire verrichtingen op de het werk lijst uit te voeren.
+1. Van de **[!UICONTROL Actions]** tabblad, slepen en neerzetten **[!UICONTROL JavaScript code]** activiteit om unitaire verrichtingen op de werkende lijst uit te voeren.
 
-   Raadpleeg de pagina [JavaScript-code en Geavanceerde JavaScript-code](../../workflow/using/sql-code-and-javascript-code.md#javascript-code) voor meer informatie over de **[!UICONTROL JavaScript code]**-activiteit.
+   Voor meer informatie over de **[!UICONTROL JavaScript code]** activiteit, verwijs naar [JavaScript-code en geavanceerde JavaScript-code](../../workflow/using/sql-code-and-javascript-code.md#javascript-code) pagina.
 
-1. Voeg nog een **[!UICONTROL Change data source]** activiteit toe om naar het gegevensbestand van de Wolk terug te schakelen.
+1. Nog een toevoegen **[!UICONTROL Change data source]** om terug te schakelen naar de Cloud-database.
 
-1. Dubbelklik op uw activiteit en selecteer **[!UICONTROL Active FDA external account]** dan de corresponderende **[!UICONTROL External database]** externe account.
+1. Dubbelklik op uw activiteit en selecteer **[!UICONTROL Active FDA external account]** dan de overeenkomstige **[!UICONTROL External database]** externe rekening.
 
    ![](assets/change-data-source_3.png)
 

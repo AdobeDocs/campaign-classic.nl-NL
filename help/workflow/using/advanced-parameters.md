@@ -17,17 +17,17 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Het eigenschappenscherm van een activiteit heeft een **[!UICONTROL Advanced]** lusje dat u een gedrag in het geval van fouten, de uitvoeringsperiode voor de activiteit laat bepalen; en kunt u een initialisatiescript invoeren. Er zijn twee versies van dit tabblad:
+Het eigenschappenscherm van een activiteit heeft een **[!UICONTROL Advanced]** tabblad waarin u een gedrag kunt definiëren in het geval van fouten, de uitvoeringsperiode voor de activiteit; en kunt u een initialisatiescript invoeren. Er zijn twee versies van dit tabblad:
 
-* een vereenvoudigde versie (bijvoorbeeld voor **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten)
+* een vereenvoudigde versie (voor **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten, bijvoorbeeld)
 
    ![](assets/wf-advanced-basic.png)
 
-* een gedetailleerdere versie (bijvoorbeeld voor de **[!UICONTROL Query]**-activiteit)
+* een meer gedetailleerde versie ( voor de **[!UICONTROL Query]** activiteit, bijvoorbeeld)
 
    ![](assets/wf-advanced-full.png)
 
-De velden die moeten worden ingevoerd op het tabblad **[!UICONTROL Advanced]** worden in de volgende secties beschreven.
+De velden die moeten worden ingevoerd in het **[!UICONTROL Advanced]** worden in de volgende secties beschreven.
 
 ## Naam {#name}
 
@@ -51,12 +51,12 @@ Deze opties worden over het algemeen geselecteerd in het winkelwagentje door met
 
 U kunt ervoor kiezen de uitvoering van een workflow of workflowactiviteit op een specifieke computer af te dwingen. Hiervoor moet u een of meer eigenschappen definiëren op het niveau van de workflow of de desbetreffende activiteit.
 
-De configuratie van de hoge beschikbaarheidswerkstroom wordt gedetailleerd in dit [sectie](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+De configuratie van de workflow voor hoge beschikbaarheid wordt in dit [sectie](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 
 ## Max. uitvoeringstermijn {#max--execution-period}
 
-In dit veld kunt u een waarschuwing instellen wanneer de taak te lang duurt. Het heeft geen invloed op de workflowbewerking. Als de taak niet tegen de tijd wordt gebeëindigd **[!UICONTROL Max. execution period]** is, **[!UICONTROL Instance monitoring]** zal de pagina een waarschuwing voor dit werkschema tonen. Deze pagina is toegankelijk via het tabblad **[!UICONTROL Monitoring]** van de startpagina.
+In dit veld kunt u een waarschuwing instellen wanneer de taak te lang duurt. Het heeft geen invloed op de workflowbewerking. Als de taak niet tegen tijd wordt gebeëindigd **[!UICONTROL Max. execution period]** is voorbij, de **[!UICONTROL Instance monitoring]** Er verschijnt een waarschuwing voor deze workflow. Deze pagina is toegankelijk via de **[!UICONTROL Monitoring]** van de startpagina.
 
 ## Gedrag {#behavior}
 
@@ -73,7 +73,7 @@ In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informati
 
 In dit veld kunt u de actie definiëren die moet worden uitgevoerd wanneer de activiteit fouten bevat. Er zijn twee mogelijke opties:
 
-* **[!UICONTROL Stop the process]**: de workflow wordt automatisch gestopt. De status verandert in **[!UICONTROL Failed]**. Als het probleem is opgelost, start u de workflow opnieuw.
+* **[!UICONTROL Stop the process]**: de workflow wordt automatisch gestopt. Zijn status verandert in **[!UICONTROL Failed]**. Als het probleem is opgelost, start u de workflow opnieuw.
 * **[!UICONTROL Ignore]**: deze taak en alle volgende taken (in dezelfde vertakking) worden niet uitgevoerd. Dit kan handig zijn voor terugkerende taken. Als de tak een eerder geplaatste planner heeft, zal het zoals gewoonlijk op de volgende uitvoeringsdatum beginnen.
 
 ## Initialisatiescript {#initialization-script}
@@ -82,4 +82,4 @@ In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijz
 
 ## Opmerking {#comment}
 
-Het veld **[!UICONTROL Comment]** is een gratis veld waarin u een beschrijving kunt toevoegen.
+De **[!UICONTROL Comment]** Veld is een gratis veld waarmee u een beschrijving kunt toevoegen.

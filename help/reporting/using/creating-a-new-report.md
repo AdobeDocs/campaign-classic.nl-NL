@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Voer de volgende stappen uit om een rapport te maken:
 
-1. Open de Ontdekkingsreiziger van Adobe Campaign en van **[!UICONTROL Administration > Configuration]** knoop, dan selecteer **[!UICONTROL Reports]** omslag.
+1. Open Adobe Campaign Explorer en vanuit de **[!UICONTROL Administration > Configuration]** knoop, dan selecteer **[!UICONTROL Reports]** map.
 1. Klik op de knop **[!UICONTROL New]** boven de lijst met rapporten.
 1. Selecteer **[!UICONTROL Create a new report from a template]** en klik op **[!UICONTROL Next]**.
 
@@ -27,13 +27,13 @@ Voer de volgende stappen uit om een rapport te maken:
 
 1. Selecteer het rapportmalplaatje in de drop-down lijst.
 
-   * **[!UICONTROL Extended report]** laat u een rapport tot stand brengen dat gebruikend een grafiek wordt gevormd.
-   * Met het **[!UICONTROL Qualitative distribution]**-rapport kunt u statistieken maken op basis van alle typen gegevens (bedrijfsnaam, e-maildomein, enzovoort).
-   * Met het **[!UICONTROL Quantitative distribution]**-rapport kunt u statistieken maken over gegevens die kunnen worden gemeten of geteld (factuurbedrag, leeftijd van ontvangers, enzovoort).
+   * De **[!UICONTROL Extended report]** laat u een gevormd rapport tot stand brengen gebruikend een grafiek.
+   * De **[!UICONTROL Qualitative distribution]** Met rapporten kunt u statistieken maken op basis van alle typen gegevens (bedrijfsnaam, e-maildomein, enzovoort).
+   * De **[!UICONTROL Quantitative distribution]** Met dit rapport kunt u statistieken maken over gegevens die kunnen worden gemeten of geteld (factuurbedrag, leeftijd van de ontvanger, enz.).
 
    Voor meer informatie over deze rapportmalplaatjes, verwijs naar [deze sectie](../../reporting/using/about-descriptive-analysis.md).
 
-1. Voer de rapportnaam en de beschrijving ervan in de desbetreffende velden in. Geef de **[!UICONTROL schema]** op waarop het rapport wordt toegepast.
+1. Voer de rapportnaam en de beschrijving ervan in de desbetreffende velden in. Geef de **[!UICONTROL schema]** waarop het verslag zal worden toegepast.
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 
@@ -55,31 +55,31 @@ Activiteiten worden gekoppeld met behulp van overgangen, weergegeven door pijlen
 
 Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttige elementen identificeren en hun logische opeenvolging verwissen.
 
-1. Gebruik de **[!UICONTROL Start]** activiteit om het eerste proces concretiseren dat moet worden uitgevoerd om het rapport te bouwen. U kunt slechts één van deze activiteiten per rapport gebruiken.
+1. Gebruik de **[!UICONTROL Start]** activiteiten om het eerste proces tot stand te brengen dat moet worden uitgevoerd om het verslag op te stellen. U kunt slechts één van deze activiteiten per rapport gebruiken.
 
    Het is verplicht als het diagram een lus bevat.
 
-1. Voeg één of meerdere **[!UICONTROL Query]** activiteiten toe om gegevens te verzamelen die voor de bouw van het rapport nuttig zijn. Gegevens kunnen rechtstreeks worden verzameld via een query op een schema van de database, of via een geïmporteerde lijst of een bestaande kubus.
+1. Een of meer toevoegen **[!UICONTROL Query]** activiteiten om gegevens te verzamelen die nuttig zijn voor het opstellen van het rapport. Gegevens kunnen rechtstreeks worden verzameld via een query op een schema van de database, of via een geïmporteerde lijst of een bestaande kubus.
 
-   Raadpleeg [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md) voor meer informatie.
+   Raadpleeg voor meer informatie hierover [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md).
 
    Deze gegevens zullen (of niet) in het rapport afhankelijk van paginasamenstelling worden getoond.
 
-1. Plaats een of meer **[!UICONTROL Page]**-activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
+1. Een of meer plaatsen **[!UICONTROL Page]** activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
 
-   Raadpleeg [Statische elementen](#static-elements) voor meer informatie.
+   Raadpleeg voor meer informatie hierover [Statische elementen](#static-elements).
 
-1. Gebruik een **[!UICONTROL Test]** activiteit om de voorwaarden te bepalen voor het tonen van of de toegang tot van gegevens.
+1. Een **[!UICONTROL Test]** activiteit om de voorwaarden voor het tonen van of de toegang tot van gegevens te bepalen.
 
-   Raadpleeg [Paginaweergave conditioneren](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display) voor meer informatie.
+   Raadpleeg voor meer informatie hierover [Paginaweergave van conditionering](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Voeg zo nodig gepersonaliseerde scripts toe via de activiteit **[!UICONTROL Script]**, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
+1. Voeg, indien nodig, gepersonaliseerde scripts toe via de **[!UICONTROL Script]** activiteit, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
 
-   Raadpleeg [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity) voor meer informatie hierover.
+   Raadpleeg voor meer informatie hierover [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Tot slot kunt u voor het gemakkelijker lezen van complexe rapporten, één of meerdere **[!UICONTROL Jump]** typeactiviteiten opnemen. Dit laat u van één activiteit aan een andere gaan zonder de overgang op het rapport te concretiseren. De **[!UICONTROL Jump]** activiteit kan ook worden gebruikt om een ander rapport te tonen.
+1. Tot slot kunt u voor het lezen van complexe rapporten een of meer **[!UICONTROL Jump]** type activiteiten. Dit laat u van één activiteit aan een andere gaan zonder de overgang op het rapport te concretiseren. De **[!UICONTROL Jump]** de activiteit kan ook worden gebruikt om een ander rapport te tonen.
 
-   Raadpleeg [Snelactiviteit](../../reporting/using/advanced-functionalities.md#jump-activity) voor meer informatie hierover.
+   Raadpleeg voor meer informatie hierover [Snelheid](../../reporting/using/advanced-functionalities.md#jump-activity).
 
 U kunt niet meerdere vertakkingen tegelijk uitvoeren. Dit betekent dat een dergelijk rapport niet werkt:
 
@@ -91,13 +91,13 @@ U kunt echter verschillende vertakkingen plaatsen. Slechts één van hen zal wor
 
 ## Een pagina maken {#creating-a-page}
 
-De inhoud wordt gevormd via de activiteiten die in de grafiek worden geplaatst. Voor meer op dit, verwijs naar [Modelizing de grafiek](#modelizing-the-chart).
+De inhoud wordt gevormd via de activiteiten die in de grafiek worden geplaatst. Raadpleeg voor meer informatie hierover [Het diagram modelleren](#modelizing-the-chart).
 
 Om een activiteit te vormen, klik zijn pictogram tweemaal.
 
-De weergegeven inhoud wordt gedefinieerd in de activiteiten van het type **Page**.
+De weergegeven inhoud wordt gedefinieerd in het dialoogvenster **Pagina** type activiteiten.
 
-Een rapport kan een of meer pagina&#39;s bevatten. Pagina&#39;s worden gemaakt via een speciale editor waarmee u in een boomstructuur invoervelden, selectievelden, statische elementen, grafieken of tabellen kunt invoegen. Met behulp van containers kunt u de lay-out definiëren. Raadpleeg [Elementlay-out](../../reporting/using/element-layout.md) voor meer informatie hierover.
+Een rapport kan een of meer pagina&#39;s bevatten. Pagina&#39;s worden gemaakt via een speciale editor waarmee u in een boomstructuur invoervelden, selectievelden, statische elementen, grafieken of tabellen kunt invoegen. Met behulp van containers kunt u de lay-out definiëren. Raadpleeg voor meer informatie hierover [Element-indeling](../../reporting/using/element-layout.md).
 
 Als u een component aan de pagina wilt toevoegen, gebruikt u de pictogrammen in de linkerbovensectie van de werkbalk.
 
@@ -109,12 +109,12 @@ U kunt ook met de rechtermuisknop op het knooppunt klikken waar u de component w
 
 >[!CAUTION]
 >
->Als het rapport bestemd is om in het formaat van Excel worden uitgevoerd, adviseren wij niet het gebruiken van complexe het formatteren van HTML. Voor meer op dit, verwijs naar [Exporting a report](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>Als het rapport bestemd is om in het formaat van Excel worden uitgevoerd, adviseren wij het gebruiken van complex HTML formatteren niet. Raadpleeg voor meer informatie hierover [Een rapport exporteren](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-A **[!UICONTROL Page]** kan de volgende elementen omvatten:
+A **[!UICONTROL Page]** kan de volgende elementen bevatten:
 
 * Staaf, taart, curvetype **[!UICONTROL charts]**, enz.
-* roteren; Lijst met groep, of Onderverdeling **[!UICONTROL tables]**.
+* roteren; List with group, or Breakdown **[!UICONTROL tables]**.
 * Tekst- of getaltype **[!UICONTROL Input controls]**.
 * Vervolgkeuzelijst, selectievakje, keuzerondje, meerkeuzevype, datum of type matrix **[!UICONTROL Selection controls]**.
 * Koppelingseditor, Constant, Mapselectietype **[!UICONTROL Advanced controls]**.
@@ -129,15 +129,15 @@ Met de werkbalk kunt u besturingselementen toevoegen of verwijderen en de volgor
 
 ### Statische elementen {#static-elements}
 
-De statische elementen laten u toe om informatie in het rapport, zoals grafische elementen of manuscripten te tonen, die de gebruiker niet met zal in wisselwerking staan. Zie [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) voor meer informatie.
+De statische elementen laten u toe om informatie in het rapport, zoals grafische elementen of manuscripten te tonen, die de gebruiker niet met zal in wisselwerking staan. Zie [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) voor meer informatie .
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
 ### Gegevens in een rapport filteren {#filtering-information-in-a-report}
 
-Met de besturingselementen voor invoer en selectie kunt u de informatie filteren die in het rapport wordt weergegeven. Voor meer bij het uitvoeren van dit type van het filtreren, verwijs naar [Filtrerende opties in query](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
+Met de besturingselementen voor invoer en selectie kunt u de informatie filteren die in het rapport wordt weergegeven. Raadpleeg voor meer informatie over het implementeren van dit type filters [Filteropties in de query&#39;s](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
-Raadpleeg [deze sectie](../../web/using/about-web-forms.md) voor meer informatie over het maken en configureren van invoervelden en selectievelden.
+Raadpleeg voor meer informatie over het maken en configureren van invoervelden en selectievelden de [deze sectie](../../web/using/about-web-forms.md).
 
 U kunt één of meerdere inputcontroles in uw rapporten integreren. Met dit type besturingselement kunt u informatie filteren die wordt weergegeven op basis van een ingevoerde waarde.
 

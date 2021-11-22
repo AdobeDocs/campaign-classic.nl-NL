@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Gerichte populatie is van essentieel belang: uw lijsten zorgvuldig samen te stellen, uw e-mailberichten te testen op populaire e-mailclients en mobiele apparaten en ervoor te zorgen dat uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
 
-Meer informatie over doelpopulaties [in deze sectie](steps-defining-the-target-population.md)
+Meer informatie over doelgroepen [in deze sectie](steps-defining-the-target-population.md)
 
 ## Doelgroep {#target-the-right-audience}
 
@@ -28,11 +28,11 @@ Om uw levering succesvol te maken, wilt u de meest relevante gepersonaliseerde i
 
 ## Doeltoewijzingen {#target-mappings}
 
-In Campaign Classic, door gebrek, richten de leveringsmalplaatjes **Ontvangers**. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen die u op basis van uw behoeften kunt wijzigen.
+In Campaign Classic, standaard, doel van leveringssjablonen **Ontvangers**. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen die u op basis van uw behoeften kunt wijzigen.
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
-Deze toewijzingen worden [in deze sectie](selecting-a-target-mapping.md) voorgesteld.
+Deze toewijzingen worden weergegeven [in deze sectie](selecting-a-target-mapping.md).
 
 U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.
 
@@ -49,9 +49,9 @@ Om berichten naar de abonnees van een nieuwsbrief te verzenden, kunt u de abonne
 
 Om uw levering te testen, gebruik proef alvorens naar het belangrijkste doel te verzenden.
 
-Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het definiëren van de proefontvangers worden [in deze sectie](steps-defining-the-target-population.md#selecting-the-proof-target) weergegeven.
+Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het bepalen van de ontvangers van de bewijzen worden weergegeven [in deze sectie](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden [in deze sectie ](about-seed-addresses.md) voorgesteld.
+De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden gepresenteerd [in deze sectie](about-seed-addresses.md).
 
 ## Gedupliceerde adressen {#deduplicate-addresses}
 
@@ -72,4 +72,4 @@ Deduplicating adressen beschermt uw verzendende reputatie en verzekert goed quar
 
 Om de prestaties van de SQL vragen te optimaliseren die in de toepassing worden gebruikt, kan een index van het belangrijkste element van het gegevensschema worden verklaard.
 
-De stappen voor het toevoegen van een index aan het e-mailadres worden [in deze sectie](../../configuration/using/database-mapping.md#indexed-fields) voorgesteld.
+De stappen voor het toevoegen van een index aan het e-mailadres worden weergegeven [in deze sectie](../../configuration/using/database-mapping.md#indexed-fields).

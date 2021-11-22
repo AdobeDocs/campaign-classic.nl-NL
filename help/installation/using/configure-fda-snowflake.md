@@ -17,10 +17,10 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-De Campagne van het gebruik **Federated Data Access** (FDA) optie om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Snowflake] te configureren.
+Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Snowflake].
 
-1. [!DNL Snowflake] configureren op [CentOS](#snowflake-centos), [Windows](#snowflake-windows) of [Debian](#snowflake-debian)
-1. [!DNL Snowflake] [externe account](#snowflake-external) configureren in campagne
+1. Configureren [!DNL Snowflake] op [CentOS](#snowflake-centos), [Windows](#snowflake-windows) of [Debian](#snowflake-debian)
+1. Configureer de [!DNL Snowflake] [externe rekening](#snowflake-external) in Campagne
 
 
 >[!NOTE]
@@ -31,9 +31,9 @@ De Campagne van het gebruik **Federated Data Access** (FDA) optie om informatie 
 
 ## Snowflake op CentOS {#snowflake-centos}
 
-Volg onderstaande stappen om [!DNL Snowflake] op CentOS te configureren:
+Om te vormen [!DNL Snowflake] Voer in CentOS de onderstaande stappen uit:
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) hier om te beginnen met downloaden.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) om te beginnen met downloaden.
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op CentOs installeren met de volgende opdracht:
 
    ```
@@ -48,19 +48,19 @@ Volg onderstaande stappen om [!DNL Snowflake] op CentOS te configureren:
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#snowflake-external).
 
 ## Snowflake in Windows {#snowflake-windows}
 
-1. Download het [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html) voor meer informatie
+1. Download de [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html) voor meer informatie
 
 1. Configureer het ODBC-stuurprogramma. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver) voor meer informatie
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#snowflake-external).
 
 ## Snowflake op Debian {#snowflake-debian}
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik op ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) Opnieuw downloaden.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) beginnen met downloaden.
 
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op Debian installeren met de volgende opdracht:
 
@@ -76,23 +76,23 @@ Volg onderstaande stappen om [!DNL Snowflake] op CentOS te configureren:
    systemctl start nlserver.service
    ```
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#snowflake-external).
 
 ## Snowflake externe rekening {#snowflake-external}
 
-U moet een [!DNL Snowflake] externe rekening tot stand brengen om uw instantie van de Campagne met uw [!DNL Snowflake] externe gegevensbestand te verbinden.
+U moet een [!DNL Snowflake] externe account om uw Campagne-instantie aan te sluiten op uw [!DNL Snowflake] externe database.
 
-1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Van campagne **[!UICONTROL Explorer]**, klikt u op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
-1. Selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]** van uw externe rekening.
+1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de externe account **[!UICONTROL Snowflake]**. Geef de volgende instellingen op:
+1. Configureer de **[!UICONTROL Snowflake]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**: URL van de  [!DNL Snowflake] server
+   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
@@ -102,7 +102,7 @@ U moet een [!DNL Snowflake] externe rekening tot stand brengen om uw instantie v
 
    ![](assets/snowflake.png)
 
-1. Klik op de tab **[!UICONTROL Parameters]** en vervolgens op de knop **[!UICONTROL Deploy functions]** om functies te maken.
+1. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** om functies te maken.
 
    ![](assets/snowflake_2.png)
 

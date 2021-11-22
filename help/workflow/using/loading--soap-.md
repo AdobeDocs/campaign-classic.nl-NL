@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->De **Loading (ZEEP)** activiteit is slechts beschikbaar als u **FDA (Federated Data Access)** module geïnstalleerd hebt. Controleer hiervoor uw licentieovereenkomst.
+>De **Laden (SOAP)** activiteit is alleen beschikbaar als u beschikt over **FDA (Federated Data Access)** geïnstalleerde module. Controleer hiervoor uw licentieovereenkomst.
 
-De activiteit **Laden (SOAP)** wordt gebruikt naast de activiteit **gegevens laden (RDBMS)** wanneer het niet mogelijk is om gegevens rechtstreeks via de FDA in een externe database te verzamelen.
+De **Laden (SOAP)** naast de **gegevens laden (RDBMS)** activiteit wanneer het niet mogelijk is om gegevens rechtstreeks via de FDA in een externe databank te verzamelen.
 
 De bewerking is als volgt:
 
@@ -37,13 +37,13 @@ De bewerking is als volgt:
 
    ![](assets/soap_load_003.png)
 
-1. Selecteer **[!UICONTROL Click here to view and edit analysis results]** om elke geïdentificeerde kolom te specificeren.
+1. Selecteren **[!UICONTROL Click here to view and edit analysis results]** om elke geïdentificeerde kolom te specificeren.
 
    ![](assets/soap_load_001.png)
 
-   Selecteer **[!UICONTROL Re-analyze the example]** als u het voorbeeld wilt bijwerken.
+   Als u het voorbeeld wilt bijwerken, selecteert u **[!UICONTROL Re-analyze the example]**.
 
-   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]**. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md) voor meer informatie over het opmaken van geïmporteerde gegevens.
+   U kunt de indeling van kolomgegevens ook aanpassen via het dialoogvenster **[!UICONTROL Advanced parameters]** koppeling. Raadpleeg deze voor meer informatie over het opmaken van geïmporteerde gegevens [sectie](../../platform/using/executing-import-jobs.md).
 
 1. U kunt het lijnaantal als herkenningsteken gebruiken en/of specificeren dat de vraag van de ZEEP verscheidene elementen terugkeert.
 1. Voer de volgende tabscripts in op basis van hun functie:

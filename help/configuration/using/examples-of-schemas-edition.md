@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## Een tabel uitbreiden {#extending-a-table}
 
-Pas de volgende procedure toe om de **nms:receiving** schema ontvankelijke lijst uit te breiden:
+De **nms:ontvanger** schema ontvanger lijst, pas de volgende procedure toe:
 
-1. Maak het extensieschema (**cus:extension**) met behulp van de volgende gegevens:
+1. Het extensieschema maken (**focus:extensie**) met behulp van de volgende gegevens:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ Pas de volgende procedure toe om de **nms:receiving** schema ontvankelijke lijst
    </srcSchema>
    ```
 
-   In dit voorbeeld wordt een geïndexeerd veld (**fidelity**) toegevoegd en wordt het element **location** (dat al bestond in het schema **nms:receiving**) aangevuld met een opgesomd veld (**area**).
+   In dit voorbeeld wordt een geïndexeerd veld (**getrouwheid**) wordt toegevoegd en **locatie** element (dat al in het **nms:ontvanger** schema) wordt aangevuld met een opgesomd veld (**gebied**).
 
    >[!IMPORTANT]
    >
-   >Vergeet niet het kenmerk **extendedSchema** toe te voegen om naar het extensieschema te verwijzen.
+   >Vergeet niet de **extendedSchema** kenmerk voor verwijzing naar het extensieschema.
 
-1. Controleer of het uitgebreide schema het schema **nms:receiving** is en of de aanvullende gegevens aanwezig zijn:
+1. Controleer of het uitgebreide schema het **nms:ontvanger** en dat de aanvullende gegevens aanwezig zijn:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ Bronschema van tabel bestellen:
 </srcSchema>
 ```
 
-Het tabeltype is **automatische** om een automatisch gegenereerde primaire sleutel te maken die moet worden gebruikt door de samenvoeging van de koppeling naar de ontvangende tabel.
+Het tabeltype is **automatische** om een automatisch gegenereerde primaire sleutel te maken die moet worden gebruikt door de samenvoeging van de koppeling met de ontvangende tabel.
 
 Gegenereerd schema:
 
@@ -155,7 +155,7 @@ Met een extensietabel kunt u de inhoud van een bestaande tabel in een gekoppelde
 
 Het doel van een extensietabel is het voorkomen van beperkingen op het aantal velden dat in een tabel wordt ondersteund, of het optimaliseren van de ruimte die wordt ingenomen door de gegevens, die op verzoek worden gebruikt.
 
-Het creëren van het schema van de uitbreidingslijst (**cus:feature**):
+Het maken van het extensietabelschema (**focus:functie**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -205,7 +205,7 @@ Een overlooplijst is een uitbreidingslijst (kardinaliteit 1-1), maar de verklari
 
 De overlooptabel bevat de vreemde sleutel voor de uit te breiden tabel. De uit te breiden tabel wordt derhalve niet gewijzigd. De relatie tussen de twee tabellen is de waarde van de primaire sleutel van de uit te breiden tabel.
 
-Het creëren van het schema van de overlooplijst (**cus:overflow**):
+Het overlooptabelschema maken (**focus:overloop**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Dit gebruiksgeval toont aan hoe u een bestaande verwijzingstabel als alternatief aan ingebouwde de opsingsmechanismen van Adobe Campaign (enum, userEnum, of dbEnum) kunt gebruiken.
 
-U kunt een bestaande verwijzingstabel als opsomming in uw schema&#39;s ook gebruiken. Dit kan worden bereikt door een verbinding tussen een lijst en de verwijzingstabel te creëren, en door de attributen **displayAsField=&quot;waar&quot;** toe te voegen.
+U kunt een bestaande verwijzingstabel als opsomming in uw schema&#39;s ook gebruiken. Dit kan door een verbinding tussen een lijst en de verwijzingstabel te creëren, en door de attributen toe te voegen **displayAsField=&quot;true&quot;**.
 
 In dit voorbeeld bevat de referentietabel een lijst met namen en identificatiecodes van banken:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In om het even welke lijst die deze verwijzingstabel gebruikt, bepaal een verbinding en voeg **displayAsField=&quot;waar&quot;** toe attribuut.
+In om het even welke lijst die deze verwijzingstabel gebruikt, bepaal een verbinding en voeg toe **displayAsField=&quot;true&quot;** kenmerk.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wannee
 
 * Als de instructie automatisch moet worden voltooid, moet u een compute-string definiëren in de referentietabel.
 
-* Voeg het **noDbIndex=&quot;waar&quot;** attribuut in de verbindingsdefinitie toe om Adobe Campaign te verhinderen een index op de waarden te creëren die in de bronlijst van de verbinding worden opgeslagen.
+* Voeg de **noDbIndex=&quot;true&quot;** in de koppelingsdefinitie om te voorkomen dat Adobe Campaign een index maakt voor de waarden in de brontabel van de koppeling.
 
 ## Verwante onderwerpen
 

@@ -87,7 +87,7 @@ Wanneer u probeert toegang te krijgen tot de trackingkoppelingen, wordt het volg
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Open &lt;redirection_server>/r/test URL en controleer of het bouwstijlaantal en de localhost door het verzoek zijn teruggekeerd.
+1. Toegang &lt;redirection_server>/r/test URL en controleer of het bouwstijlaantal en localhost door het verzoek zijn teruggekeerd.
 
 1. Controleer de configuratie reserveServer in het serverConf.xml- dossier voor de volgende server. Deze configuratie zou op redirection wijze moeten zijn.
 
@@ -104,13 +104,13 @@ Wanneer u probeert toegang te krijgen tot de trackingkoppelingen, wordt het volg
    </redirection>
    ```
 
-1. Controleer handmatig of het bestand &lt;deliveryID>.xml op de computer aanwezig is in .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> directory (YYYY staat voor leveringsjaar).
+1. Handmatig controleren of de &lt;deliveryid>.xml-bestand staat op de computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> directory (YYYY staat voor het leveringsjaar).
 
-1. Controleer handmatig of &lt;trackingUrlId> kan worden gevonden in het bestand &lt;deliveryID>.xml.
+1. Handmatig controleren &lt;trackingurlid> kunt u vinden in het dialoogvenster &lt;deliveryid>.xml-bestand.
 
 1. Controleer manueel bestaan van broadlogID in verwante levering van deliveryID.
 
-1. Rechten voor &lt;deliveryID>.xml-bestanden controleren in .../nl6/var/&lt;instance_name>/redir/url/year directory.
+1. Controleren &lt;deliveryid>Machtigingen .xml-bestanden in .../nl6/var/&lt;instance_name>/redir/url/year directory.
 
    Ze moeten minimaal 644 machtigingen hebben, zodat Apache URL&#39;s kan lezen die volgen om de aangevraagde koppeling om te leiden.
 

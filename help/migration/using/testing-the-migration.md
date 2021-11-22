@@ -164,7 +164,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM de schakelaarplaatsingstype zijn nu afgekeurd. 
+   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM connectorimplementatietype zijn nu afgekeurd. 
    </br>Als u een van deze verouderde implementatietypen gebruikt in een externe account, moet deze externe account worden verwijderd en moet u vervolgens het volgende uitvoeren <b>postupgrade</b> gebruiken. 
    </br>Als u wilt overschakelen op de webAPI-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
   </tr> 
@@ -175,7 +175,7 @@ Er wordt ook een coherentiecontrole van de database en het schema uitgevoerd.
 
 ### Herstellen, optie {#restoration-option}
 
-Met deze optie kunt u objecten uit de doos herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
+Met deze optie kunt u objecten die zich buiten het vak bevinden herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
 
 ```
 nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>

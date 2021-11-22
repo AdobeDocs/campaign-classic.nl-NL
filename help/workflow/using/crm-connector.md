@@ -16,9 +16,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Met de **CRM-connector**-activiteit kunt u de gegevenssynchronisatie configureren tussen Adobe Campaign en een CRM-systeem.
+De **CRM-connector** U kunt de gegevenssynchronisatie tussen Adobe Campaign en een CRM-systeem configureren.
 
-Voor meer informatie over de schakelaars van CRM in Adobe Campaign, verwijs naar dit [sectie](../../platform/using/crm-connectors.md).
+Voor meer informatie over CRM-connectors in Adobe Campaign raadpleegt u deze [sectie](../../platform/using/crm-connectors.md).
 
 Met deze activiteit kunt u:
 
@@ -33,4 +33,4 @@ Selecteer de externe rekening die CRM aanpast dat u synchronisatie met wilt vorm
 
 ![](assets/crm_task_select_obj.png)
 
-De configuratie van deze activiteit hangt af van het uit te voeren proces. Verschillende configuraties worden beschreven [op deze pagina](../../platform/using/crm-data-sync.md).
+De configuratie van deze activiteit hangt af van het uit te voeren proces. Verschillende configuraties zijn gedetailleerd [op deze pagina](../../platform/using/crm-data-sync.md).

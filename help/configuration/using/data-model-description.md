@@ -19,13 +19,13 @@ ht-degree: 1%
 
 Adobe Campaign bevat een vooraf gedefinieerd datamodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
 
-Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik **[!UICONTROL Documentation]** tabel.
+Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** selecteert u een bron in de lijst en klikt u op de knop **[!UICONTROL Documentation]** tab.
 
 ![](assets/data-model_documentation-tab.png)
 
 >[!NOTE]
 >
->De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Lees [deze sectie](../../configuration/using/about-schema-reference.md) voor meer informatie over Adobe Campaign-schema&#39;s.
+>De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Lees voor meer informatie over Adobe Campaign-schema&#39;s [deze sectie](../../configuration/using/about-schema-reference.md).
 
 ## Beschrijving van de belangrijkste tabellen {#description-main-tables}
 
@@ -41,27 +41,27 @@ Het vooraf gedefinieerde Adobe Campaign-gegevensmodel bevat de onderstaande hoof
 
 ### NmsRecipient {#NmsRecipient}
 
-Deze lijst past **nms aan:ontvanger** schema.
+Deze tabel komt overeen met de **nms:ontvanger** schema.
 
 Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van leveringen**. Bijgevolg bevat het de informatie die nodig is voor leveringen via de verschillende kanalen:
 
 * sEmail: e-mailadres.
-* iEmailFormat: voorkeursindeling voor e-mailberichten (1 voor tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
+* iEmailFormat: voorkeursindeling voor e-mails (1 voor tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity wordt gebruikt om het postadres te bouwen (in overeenstemming met de norm XPZ 10-011 AFNOR van Mei 1997).
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
 * iBlackList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, anders 0).
 
-Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Zie [XtkFolder](#XtkFolder) voor meer informatie.
+Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Zie voor meer informatie [XtkFolder](#XtkFolder).
 
 Het veld sCountryCode is de ISO-code 3166-1 Alpha 2 (2 tekens) van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
 
-Zie [deze sectie](../../configuration/using/about-data-model.md#default-recipient-table) voor meer informatie over de tabel Ontvanger.
+Voor meer informatie over de tabel Ontvanger raadpleegt u [deze sectie](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
-Deze tabel komt overeen met het schema **nms:group**.
+Deze tabel komt overeen met de **nms:groep** schema.
 
-Hiermee kunt u **statische groepen ontvangers** maken. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Zie [XtkFolder](#XtkFolder)) voor meer informatie.
+Hiermee kunt u **statistische groepen ontvangers**. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Zie voor meer informatie [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -69,37 +69,37 @@ De NmsRcpGrpRel-relatietabel bevat alleen de twee velden die overeenkomen met de
 
 ### NmsService {#NmsService}
 
-Deze tabel komt overeen met het schema **nms:service**.
+Deze tabel komt overeen met de **nms:service** schema.
 
 In Adobe Campaign kunt u abonnementen op informatieservices (onderwerpen) maken en beheren. De lijst NmsService slaat de definitie van de informatiediensten (onderwerpen) op die u uw ontvangers aanbiedt om aan (een nieuwsbrief bijvoorbeeld) in te schrijven.
 
 De diensten zijn entiteiten die aan groepen (statische ontvankelijke groeperingen) gelijkaardig zijn, behalve dat zij meer informatie verspreiden en gemakkelijke beheer van abonnementen en abonnementen via vormen toelaten.
 
-Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. Zie [XtkFolder](#XtkFolder)) voor meer informatie. Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
+Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. Zie voor meer informatie [XtkFolder](#XtkFolder)). Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
 
 ### NmsSubscription {#NmsSubscription}
 
-Deze tabel komt overeen met het schema **nms:subscription**.
+Deze tabel komt overeen met de **nms:abonnement** schema.
 
 Het laat u toe om ontvankelijke abonnementen aan informatiediensten te beheren.
 
 ### NmsSubHisto {#NmsSubHisto}
 
-Deze tabel komt overeen met het schema **nms:subHisto**.
+Deze tabel komt overeen met de **nms:subHisto** schema.
 
 Als de abonnementen worden beheerd met behulp van webformulieren of de interface van de toepassing, worden alle abonnementen en aftekeningen in de tabel NmsSubHisto gehistoriseerd. In het veld iAction wordt de handeling (0 voor abonnement en 1 voor abonnement) opgegeven die wordt uitgevoerd op de datum die is opgeslagen in het veld tsDate.
 
 ### NmsDelivery {#NmsDelivery}
 
-Deze tabel komt overeen met het schema **nms:delivery**.
+Deze tabel komt overeen met de **nms:levering** schema.
 
-Elke record in deze tabel vertegenwoordigt een **leveringsactie** of een **leveringssjabloon**. Het bevat alle parameters die nodig zijn voor het uitvoeren van leveringen (doel, inhoud, enz.). Logboeken voor levering (uitzending) (NmsBroadLog) en bijbehorende URL&#39;s voor tracering (NmsTrackingUrl) worden tijdens de analysefase gemaakt (zie hieronder voor meer informatie over beide tabellen).
+Elke record in deze tabel vertegenwoordigt een **actie voor levering** of **leveringssjabloon**. Het bevat alle parameters die nodig zijn voor het uitvoeren van leveringen (doel, inhoud, enz.). Logboeken voor levering (uitzending) (NmsBroadLog) en bijbehorende URL&#39;s voor tracering (NmsTrackingUrl) worden tijdens de analysefase gemaakt (zie hieronder voor meer informatie over beide tabellen).
 
-Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. Zie [XtkFolder](#XtkFolder)) voor meer informatie.
+Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. Zie voor meer informatie [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
-Het bevat **alle omslagen in de boom** zichtbaar in **Navigatie** tabel van de console.
+Bevat **alle mappen in de structuur** zichtbaar in het **Navigatie** tabblad van de console.
 
 De mappen worden getypt: De waarde van het veld sModel geeft het type gegevens aan dat in de map kan worden opgenomen. Met dit veld kan de clientconsole de gegevens ook correct weergeven met de bijbehorende formulieren. De mogelijke waarden voor dit veld worden gedefinieerd in de navTree.
 
@@ -107,49 +107,49 @@ De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFu
 
 ## Aflevering en tekstspatiëring {#delivery-and-tracking}
 
-Deze reeks lijsten is verbonden met **Levering** module, die toestaat om leveringen en uiteindelijke kwesties te controleren die wanneer de berichten worden verzonden worden ontmoet. Zie [Leveringen controleren](../../delivery/using/about-delivery-monitoring.md) voor meer informatie. Voor meer bij het volgen, zie [Tracking messages](../../delivery/using/about-message-tracking.md).
+Deze set tabellen is gekoppeld aan de **Aflevering** -module, waarmee u leveringen en eventuele problemen kunt controleren die optreden wanneer berichten worden verzonden. Zie voor meer informatie [Bewaking van leveringen](../../delivery/using/about-delivery-monitoring.md). Zie voor meer informatie over bijhouden [Berichten bijhouden](../../delivery/using/about-message-tracking.md).
 
 ![](assets/data-model_delivery.png)
 
-**NmsBroadLogMsg**: Deze tabel komt overeen met de  **nms:** wideLogMsgschema. Het is een uitbreiding van de lijst van het leveringslogboek.
+**NmsBroadLogMsg**: Deze tabel komt overeen met de **nms:wideLogMsg** schema. Het is een uitbreiding van de lijst van het leveringslogboek.
 
 ## Campagnebeheer {#campaign-management}
 
-Deze reeks lijsten is verbonden met **Marketing campagnes** module, die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Zie [Informatie over marketingcampagnes](../../campaign/using/designing-marketing-campaigns.md) voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Marketingscampagnes** -module, waarmee communicatie- en marketingcampagnes kunnen worden gedefinieerd, geoptimaliseerd, uitgevoerd en geanalyseerd. Zie voor meer informatie [Informatie over marketingcampagnes](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
-* **NmsOperation**: Deze tabel komt overeen met de  **nms:** operationeel schema. Het bevat de gegevens van marketingcampagnes.
-* **NmsDeliveryOutline**: Deze tabel komt overeen met de  **nms:** deliveryOutlineschema. Het bevat de uitgebreide eigenschappen van de levering (leveringsoverzicht).
-* **NmsDlvOutlineItem**: Deze tabel komt overeen met het  **nms:** dlvOutlineItemSchema. Het bevat de artikelen van een leveringsoverzicht.
-* **NmsDeliveryCustomization**: Deze tabel komt overeen met de  **nms:** deliveryCustomizationschema. Het bevat de verpersoonlijkingsgebieden van een levering.
-* **NmsBudget**: Deze tabel komt overeen met het  **nms:** budgetschema. Het bevat de gegevens van een begroting over een campagne, een plan, een programma, een taak en/of leveringen.
-* **NmsDocument**: Deze tabel komt overeen met de  **nms:** documentschema. Het bevat de marketingdocumenten van de campagne in de vorm van bestanden (afbeeldingen, excel- of woordbestanden, enz.)
-* **XtkWorkflow**: Deze tabel komt overeen met de  **xtk:** workflowschema. Het bevat campagnedoel.
-* **NmsTask**: Deze tabel komt overeen met de  **nms:** taakschema. Het bevat de definitie van een marketingtaak.
-* **NmsAsset**: Deze tabel komt overeen met de  **nms:** assetschema. Het bevat de definitie van een marketingmiddel.
+* **NmsOperation**: Deze tabel komt overeen met de **nms:bewerking** schema. Het bevat de gegevens van marketingcampagnes.
+* **NmsDeliveryOutline**: Deze tabel komt overeen met de **nms:deliveryOutline** schema. Het bevat de uitgebreide eigenschappen van de levering (leveringsoverzicht).
+* **NmsDlvOutlineItem**: Deze tabel komt overeen met de **nms:dlvOutlineItem** schema. Het bevat de artikelen van een leveringsoverzicht.
+* **NmsDeliveryCustomization**: Deze tabel komt overeen met de **nms:deliveryCustomization** schema. Het bevat de verpersoonlijkingsgebieden van een levering.
+* **NmsBudget**: Deze tabel komt overeen met de **nms:budget** schema. Het bevat de gegevens van een begroting over een campagne, een plan, een programma, een taak en/of leveringen.
+* **NmsDocument**: Deze tabel komt overeen met de **nms:document** schema. Het bevat de marketingdocumenten van de campagne in de vorm van bestanden (afbeeldingen, excel- of woordbestanden, enz.)
+* **XtkWorkflow**: Deze tabel komt overeen met de **xtk:workflow** schema. Het bevat campagnedoel.
+* **NmsTask**: Deze tabel komt overeen met de **nms:taak** schema. Het bevat de definitie van een marketingtaak.
+* **NmsAsset**: Deze tabel komt overeen met de **nms:element** schema. Het bevat de definitie van een marketingmiddel.
 
 ## Communicatieconsistentie {#communication-consistency}
 
-Deze reeks lijsten is verbonden met **de module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Voor meer op dit, zie [Ongeveer campagnetypologies](../../campaign-opt/using/about-campaign-typologies.md).
+Deze set tabellen is gekoppeld aan de **Campagne optimaliseren** -module, waarmee de verzending van leveringen kan worden gecontroleerd, gefilterd en gecontroleerd. Zie voor meer informatie [Informatie over campagetypologieën](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
-* **NmsTypologyRule**: Deze tabel komt overeen met de  **nms:** typologyRuleschema. Het bevat de regels die van toepassing zijn op leveringen afhankelijk van typologieën.
-* **NmsTypologie**: Deze tabel komt overeen met de  **nms:** typologyschema. Het bevat de regels die moeten worden toegepast op leveringen die overeenkomen met de typologie.
-* **NmsTypologyRuleRel**: Deze tabel komt overeen met de  **nms:** typologyRuleRelschema. Het bevat de relaties tussen typologieën en hun regels.
-* **NmsVolumeLine**: Deze tabel komt overeen met de  **nms:** volumeLineschema. Het bevat de reeks beschikbaarheidslijnen van de capaciteitsregels.
-* **NmsVolumeConsumed**: Deze tabel komt overeen met het  **nms:** volumeConsumedschema. Het bevat alle verbruikslijnen van de capaciteitsregels.
+* **NmsTypologyRule**: Deze tabel komt overeen met de **nms:typologyRule** schema. Het bevat de regels die van toepassing zijn op leveringen afhankelijk van typologieën.
+* **NmsTypology**: Deze tabel komt overeen met de **nms:typologie** schema. Het bevat de regels die moeten worden toegepast op leveringen die overeenkomen met de typologie.
+* **NmsTypologyRuleRel**: Deze tabel komt overeen met de **nms:typologyRuleRel** schema. Het bevat de relaties tussen typologieën en hun regels.
+* **NmsVolumeLine**: Deze tabel komt overeen met de **nms:volumeLine** schema. Het bevat de reeks beschikbaarheidslijnen van de capaciteitsregels.
+* **NmsVolumeConsumed**: Deze tabel komt overeen met de **nms:volumeConsumed** schema. Het bevat alle verbruikslijnen van de capaciteitsregels.
 
 ## Responsbeheer {#response-management}
 
-Deze reeks lijsten is verbonden met **de module van de Manager van de Reactie**, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Zie [Informatie over responsmanager](../../response/using/about-response-manager.md) voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Responsbeheer** -module, waarmee het succes en de winstgevendheid van marketingcampagnes kan worden gemeten of voorstellen voor alle communicatiekanalen kunnen worden gedaan. Zie voor meer informatie [Over responsbeheer](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
 ### NmsRemaHypothesis {#NmsRemaHypothesis}
 
-Deze tabel valt samen met het schema **nms:remaHypothesis**. Het bevat de definitie van de meethypothese.
+Deze tabel valt samen met de **nms:remaHypothesis** schema. Het bevat de definitie van de meethypothese.
 
 Deze tabel bevat belangrijke informatie die is opgeslagen in XML, zoals:
 
@@ -176,68 +176,68 @@ Het hypotheseoverbelastingsscript is een JavaScript-code waarmee u de inhoud van
 De volgende indicatoren worden automatisch bijgewerkt tijdens de uitvoering van de hypothese:
 
 * Aantal reacties: **iTransaction**. Aantal lijnen in de lijst van reactielogboeken.
-* Aantal gecontacteerde personen: **iContactReactie**. Afzonderlijk aantal gerichte contacten in de hypothese.
+* Aantal gecontacteerde personen: **iContactRehandelde**. Afzonderlijk aantal gerichte contacten in de hypothese.
 * Aantal controlegroepen: **iProofReactie**. Afzonderlijk aantal gerichte contacten tussen controlegroepen in de hypothese.
-* Behandelde responspercentage: **dContactReactingRate**. Responspercentage van de gerichte contacten in de hypothese.
-* Responspercentage van de controlegroep: **dProofReactingRate**. Responspercentage van de hypothesecontrolegroep.
+* Behandelde responspercentage: **dContactRehandelingsnelheid**. Responspercentage van de gerichte contacten in de hypothese.
+* Responspercentage van de controlegroep: **dProofRehandelingsnelheid**. Responspercentage van de hypothesecontrolegroep.
 * Totale gecontacteerde inkomsten van de bevolking: **dContactRehandeldeTotalAmount**. Totale inkomsten van de gerichte contacten in de hypothese.
 * Gemiddelde inkomsten van de controlegroep: **dContactRehandeldeAvgAmount**. Gemiddelde inkomsten van de doelgroep contacten in de hypothese.
-* Totale ontvangsten van de controlegroep: **dProofRehandeldeTotalAmount**. Totale inkomsten van de groep hypothesecontrole.
-* Gemiddelde inkomsten van de controlegroep: **dProofRehandeldeAvgAmount**. Gemiddelde inkomsten van de hypothesecontrolegroep.
+* Totale ontvangsten van de controlegroep: **dProofReactieTotalAmount**. Totale inkomsten van de groep hypothesecontrole.
+* Gemiddelde inkomsten van de controlegroep: **dProofReactieAvgAmount**. Gemiddelde inkomsten van de hypothesecontrolegroep.
 * Totale marge per contactpersoon: **dContactRehandeldeTotalMargin**. Totale marge per contact als bedoeld in de hypothese.
 * Gemiddelde marge per contact: **dContactRehandeldeAvgMargin**. Gemiddelde marge per contact als bedoeld in de hypothese.
 * Totale marge van de controlegroep: **dProofRehandeldeTotalMargin**. Totale marge van de in de hypothese beoogde controlegroep.
-* Gemiddelde marge van de controlegroep: **dProofRehandeldeAvgMargin**. Gemiddelde marge van de in de hypothese beoogde controlegroep.
-* Aanvullende inkomsten: **dAdditionalAmount**. (Gemiddelde inkomsten van gecontacteerde onderneming - Gemiddelde inkomsten van de controlegroep) * Aantal gecontacteerde partijen.
+* Gemiddelde marge van de controlegroep: **dProofReactieAvgMargin**. Gemiddelde marge van de in de hypothese beoogde controlegroep.
+* Aanvullende inkomsten: **dAdditionnalAmount**. (Gemiddelde inkomsten van gecontacteerde onderneming - Gemiddelde inkomsten van de controlegroep) * Aantal gecontacteerde partijen.
 * Aanvullende marge: **dAdditionalMargin**. (Gemiddelde marge van gecontacteerde partij - Gemiddelde marge van controlegroep) / Aantal gecontacteerde personen.
 * Gemiddelde kosten per contactpersoon (SQL-expressie). Berekende kosten van de levering / Aantal gecontacteerde personen.
 * ROI (SQL-expressie). Berekende kosten van de levering/totale marge van gecontacteerd.
 * Effectieve ROI (SQL-expressie). Berekende kosten van de levering / Aanvullende marge.
-* Significantie: **iSignificativy** (SQL-expressie). Bevat waarden van 0 tot en met 3, afhankelijk van het belang van de campagne.
+* Significantie: **Significativy** (SQL-expressie). Bevat waarden van 0 tot en met 3, afhankelijk van het belang van de campagne.
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
-Deze tabel komt overeen met het schema **nms:remaMatchRcp**.
+Deze tabel komt overeen met de **nms:remaMatchRcp** schema.
 
 Het bevat een overzicht van de reactie van een individu op een bepaalde hypothese. Deze verslagen werden gecreeerd tijdens hypotheseuitvoering.
 
 ## Simulatie en levering {#simulation-and-delivery}
 
-Deze reeks lijsten is verbonden met **Simulatie** module, die toestaat om de distributie van aanbiedingen te testen die tot een categorie of een milieu behoren alvorens uw voorstel naar ontvangers te verzenden. Zie [Informatie over biedt simulatie](../../interaction/using/about-offers-simulation.md) voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Simulatie** , waarmee u de distributie van aanbiedingen die tot een categorie of omgeving behoren, kunt testen voordat u uw voorstel naar ontvangers verzendt. Zie voor meer informatie [Informatie over simulatie van aanbiedingen](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
-* **NmsSimulation**: Deze tabel komt overeen met de  **nms:** simulatieschema. Het is een simulatie voor een reeks leveringen of aanbiedingen voor een bepaalde populatie.
-* **NmsDlvSimulationRel**: Deze tabel komt overeen met de  **nms:** dlvSimulationRelschema. Het bevat de lijst met leveringen waarmee in de simulatie rekening is gehouden. Het bereik van de simulatie wordt opgeslagen in XML.
-* **NmsOfferSimulationRel**: Deze tabel komt overeen met de  **nms:** offerSimulationRelschema. Hiermee kunt u een simulatie koppelen aan een aanbieding.
+* **NmsSimulation**: Deze tabel komt overeen met de **nms:simulatie** schema. Het is een simulatie voor een reeks leveringen of aanbiedingen voor een bepaalde populatie.
+* **NmsDlvSimulationRel**: Deze tabel komt overeen met de **nms:dlvSimulationRel** schema. Het bevat de lijst met leveringen waarmee in de simulatie rekening is gehouden. Het bereik van de simulatie wordt opgeslagen in XML.
+* **NmsOfferSimulationRel**: Deze tabel komt overeen met de **nms:aanbiedingSimulationRel** schema. Hiermee kunt u een simulatie koppelen aan een aanbieding.
 
 ## Interactiemodule {#interaction-module}
 
-Deze reeks lijsten is verbonden met de **Interactie** module, die toestaat om in echt - tijd tijdens een interactie met een bepaald contact te antwoorden door hen één of verscheidene aangepaste aanbiedingen te maken. Zie [Interactie en bied beheer](../../interaction/using/interaction-and-offer-management.md) aan voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Interactie** -module, die het mogelijk maakt in real time te reageren tijdens een interactie met een bepaald contact door er één of meerdere aangepaste aanbiedingen van te maken. Zie voor meer informatie [Interactie- en aanbiedingsbeheer](../../interaction/using/interaction-and-offer-management.md).
 
-* **NmsOffer**: Deze tabel komt overeen met de  **nms:** offerschema. Het bevat de definitie van elk marketingaanbod.
-* **NmsPropositionRcp**: Deze tabel komt overeen met de  **nms:** propositionRcpschema. Het bevat het kanaallogboek van marketingvoorstellen die naar elk individu worden verzonden. De record wordt gemaakt wanneer een voorstel wordt voorbereid of daadwerkelijk aan een individu wordt gedaan.
-* **NmsOfferSpace**: Deze tabel komt overeen met de  **nms:** offerSpaceschema. Het bevat de definitie van locaties waarop voorstellen worden gedaan.
-* **NmsOfferContext**: Deze tabel komt overeen met de  **nms:** offerContextSchema. Het bevat aanvullende criteria betreffende de toepasselijkheid van het voorstel en de definitie van de formule voor gewichtsberekening.
-* **NmsOfferView**: Deze tabel komt overeen met de  **nms:offerView**. Het bevat de aanbiedingsverklaringen.
-* **NmsOfferCategory**: Deze tabel komt overeen met de  **nms:offerCategory**. Het bevat de aanbiedingrubrieken.
-* **NmsOfferEnv**: Deze tabel komt overeen met de  **nms:offerEnv**. Het bevat de aanbiedingsomgevingen.
+* **NmsOffer**: Deze tabel komt overeen met de **nms:aanbieding** schema. Het bevat de definitie van elk marketingaanbod.
+* **NmsPropositionRcp**: Deze tabel komt overeen met de **nms:propositionRcp** schema. Het bevat het kanaallogboek van marketingvoorstellen die naar elk individu worden verzonden. De record wordt gemaakt wanneer een voorstel wordt voorbereid of daadwerkelijk aan een individu wordt gedaan.
+* **NmsOfferSpace**: Deze tabel komt overeen met de **nms:offerSpace** schema. Het bevat de definitie van locaties waarop voorstellen worden gedaan.
+* **NmsOfferContext**: Deze tabel komt overeen met de **nms:aanbiedingContext** schema. Het bevat aanvullende criteria betreffende de toepasselijkheid van het voorstel en de definitie van de formule voor gewichtsberekening.
+* **NmsOfferView**: Deze tabel komt overeen met de **nms:offerView**. Het bevat de aanbiedingsverklaringen.
+* **NmsOfferCategory**: Deze tabel komt overeen met de **nms:aanbiedingenCategorie**. Het bevat de aanbiedingrubrieken.
+* **NmsOfferEnv**: Deze tabel komt overeen met de **nms:aanbiedingEnv**. Het bevat de aanbiedingsomgevingen.
 
 ## Module Berichtencentrum {#message-center-module}
 
-De volgende reeks lijsten is verbonden met **Transactioneel overseinen** (het Centrum van het Bericht) module, die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Voor meer op dit, zie [Ongeveer transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
+De volgende set tabellen is gekoppeld aan de **Transactieberichten** (Berichtencentrum) module, die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Zie voor meer informatie [Informatie over transactieberichten](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
 ![](assets/data-model_message-center_rt.png)
 
-Deze tabel komt overeen met het schema **nms:rtEvent**. Het bevat een definitie van gebeurtenissen in real time.
+Deze tabel komt overeen met de **nms:rtEvent** schema. Het bevat een definitie van gebeurtenissen in real time.
 
 ### NmsBatchEvent {#NmsBatchEvent}
 
 ![](assets/data-model_message-center_batch.png)
 
-Deze tabel komt overeen met het schema **nms:batchEvent**. Het bevat de definitie van gebeurtenissen op batch.
+Deze tabel komt overeen met de **nms:batchEvent** schema. Het bevat de definitie van gebeurtenissen op batch.
 
 <!--## Microsites Module {#microsites-module}
 
@@ -251,23 +251,23 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## NMAC-module {#nmac-module}
 
-Deze set tabellen is gekoppeld aan het **mobiele App-kanaal**, waarmee gepersonaliseerde meldingen kunnen worden verzonden naar iOS- en Android-terminals via apps. Zie [Mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md) voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Mobiel App-kanaal**, waarmee gepersonaliseerde meldingen kunnen worden verzonden naar iOS- en Android-terminals via apps. Zie voor meer informatie [Mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md).
 
-* **NmsMobileApp**: Deze tabel komt overeen met de  **nms:** mobileAppschema. Het bevat de mobiele toepassingen die in Adobe Campaign zijn gedefinieerd.
-* **NmsAppSubscription**: Deze tabel komt overeen met de  **nms:** appSubscriptionschema. Het bevat de abonneeinformatie betreffende één of meerdere toepassingen.
-* **NmsAppSubscriptionRcp**: Deze tabel komt overeen met de  **nms:** appSubscriptionRcpschema. Hiermee kunt u bezoekers die zijn geabonneerd op een toepassing, koppelen aan de tabel met ontvangers.
-* **NmsExcludeLogAppSubRcp**: Deze tabel komt overeen met de  **nms:** excludeLogAppSubRcpschema.
-* **NmsTrackingLogAppSubRcp**: Deze tabel komt overeen met de  **nms:** trackingLogAppSubRcpschema.
-* **NmsBroadLogAppSubRcp**: Deze tabel komt overeen met de  **nms:** wideLogAppSubRcpschema.
+* **NmsMobileApp**: Deze tabel komt overeen met de **nms:mobileApp** schema. Het bevat de mobiele toepassingen die in Adobe Campaign zijn gedefinieerd.
+* **NmsAppSubscription**: Deze tabel komt overeen met de **nms:appSubscription** schema. Het bevat de abonneeinformatie betreffende één of meerdere toepassingen.
+* **NmsAppSubscriptionRcp**: Deze tabel komt overeen met de **nms:appSubscriptionRcp** schema. Hiermee kunt u bezoekers die zijn geabonneerd op een toepassing, koppelen aan de tabel met ontvangers.
+* **NmsExcludeLogAppSubRcp**: Deze tabel komt overeen met de **nms:excludeLogAppSubRcp** schema.
+* **NmsTrackingLogAppSubRcp**: Deze tabel komt overeen met de **nms:trackingLogAppSubRcp** schema.
+* **NmsBroadLogAppSubRcp**: Deze tabel komt overeen met de **nms:wideLogAppSubRcp** schema.
 
 ## Module voor sociale marketing {#social-marketing-module}
 
-Deze set tabellen is gekoppeld aan de module **Sociale netwerken beheren**, waarmee u via Facebook en Twitter kunt communiceren met klanten en vooruitzichten. Zie [Informatie over sociale marketing](../../social/using/about-social-marketing.md) voor meer informatie.
+Deze set tabellen is gekoppeld aan de **Sociale netwerken beheren** -module, waarmee u via Facebook en Twitter met klanten en vooruitzichten kunt communiceren. Zie voor meer informatie [Sociale marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
-* **NmsVisitor**: Deze tabel komt overeen met de  **nms:** bezoekersschema. Het bevat informatie over bezoekers.
-* **NmsVisitorSub**: Deze tabel komt overeen met de  **nms:** bezoekerSubschema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (Twitter of Facebook).
-* **NmsFriendShipRel**: Deze tabel komt overeen met de  **nms:** vriendshipRelschema. Met deze service kunt u bezoekers in het kader van de Facebook-service koppelen aan hun vrienden.
-* **NmsVisitorInterestRel**: Deze tabel komt overeen met de  **nms:** bezoekorInterestRelschema. U kunt bezoekers en hun belangen met elkaar verbinden.
-* **NmsInterest**: Deze tabel komt overeen met de  **nms:** interestschema. Het bevat de lijst met belangen voor elke bezoeker.
+* **NmsVisitor**: Deze tabel komt overeen met de **nms:bezoeker** schema. Het bevat informatie over bezoekers.
+* **NmsVisitorSub**: Deze tabel komt overeen met de **nms:bezoekerSub** schema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (Twitter of Facebook).
+* **NmsFriendShipRel**: Deze tabel komt overeen met de **nms:vriendshipRel** schema. Met deze service kunt u bezoekers in het kader van de Facebook-service koppelen aan hun vrienden.
+* **NmsVisitorInterestRel**: Deze tabel komt overeen met de **nms:bezoekerInterestRel** schema. U kunt bezoekers en hun belangen met elkaar verbinden.
+* **NmsInterest**: Deze tabel komt overeen met de **nms:interesse** schema. Het bevat de lijst met belangen voor elke bezoeker.

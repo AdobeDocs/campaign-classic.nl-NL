@@ -23,14 +23,14 @@ Zodra je voorstellen hebt gedaan, kun je de presentatiegeschiedenis bekijken.
 >
 >Deze functionaliteit is alleen online zichtbaar en alleen voor de leveringsmanager.
 
-* Klik op het aanbiedingsniveau op het tabblad **[!UICONTROL Edit]** op **[!UICONTROL Propositions]**.
+* Op het niveau van het aanbod, in de **[!UICONTROL Edit]** tabblad, klikt u op **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* Klik vanuit het profiel van een ontvanger op het tabblad **[!UICONTROL Propositions]**.
+* Klik vanuit het profiel van een ontvanger op de knop **[!UICONTROL Propositions]** tab.
 
    ![](assets/offer_followup_002.png)
 
-* Op het niveau van de aanbiedingsruimte, klik **[!UICONTROL Propositions]** tabel.
+* Klik op het niveau van de aanbiedingsruimte op de knop **[!UICONTROL Propositions]** tab.
 
    ![](assets/offer_space_prop_001_b.png)

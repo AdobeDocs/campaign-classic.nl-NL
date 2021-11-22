@@ -19,7 +19,7 @@ ht-degree: 15%
 
 ## Gebruiken {#use}
 
-Met de activiteit **[!UICONTROL Data loading (File)]** hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: het kan in externe dossiers ter beschikking worden gesteld.
+De **[!UICONTROL Data loading (File)]** Met deze activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: het kan in externe dossiers ter beschikking worden gesteld.
 
 Het bestand dat moet worden geladen, kan worden opgegeven door de overgang of worden berekend tijdens de uitvoering van deze activiteit. Bijvoorbeeld, kan het de lijst van 10 favoriete producten van een cliënt zijn de waarvan aankopen in een extern gegevensbestand worden beheerd.
 
@@ -31,7 +31,7 @@ In het bovenste gedeelte van het configuratievenster voor deze activiteit kunt u
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. Selecteer de optie **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg).
+U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. Selecteer **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
@@ -41,7 +41,7 @@ Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen 
 
 Wanneer u een bestand laadt, wordt de kolomindeling automatisch gedetecteerd met de standaardparameters voor elk gegevenstype. U kunt deze standaardparameters wijzigen om de specifieke processen op te geven die op uw data moeten worden toegepast, in het bijzonder wanneer er een fout of een lege waarde is.
 
-Selecteer **[!UICONTROL Click here to change the file format...]** in het hoofdvenster van de activiteit **[!UICONTROL Data loading (file)]** om dit te doen. Het venster met de indelingsdetails wordt dan geopend.
+Selecteer **[!UICONTROL Click here to change the file format...]** in het hoofdvenster van het **[!UICONTROL Data loading (file)]** activiteit. Het venster met de indelingsdetails wordt dan geopend.
 
 ![](assets/file_loading_columns_format.png)
 
@@ -59,23 +59,23 @@ Met de kolomopmaak kunt u de waardeverwerking van elke kolom definiëren:
    * **[!UICONTROL Empty value allowed]**: Dit autoriseert lege waarden. De waarde NULL wordt daarom ingevoegd.
    * **[!UICONTROL Always populated]**: Dit genereert een fout als een waarde leeg is.
 
-* **[!UICONTROL Length]**: Hiermee wordt het maximale aantal tekens voor het  **** stringgegevenstype opgegeven.
+* **[!UICONTROL Length]**: geeft het maximumaantal tekens voor de **string** gegevenstype.
 * **[!UICONTROL Format]**: definieert de notatie voor tijd en datum.
-* **[!UICONTROL Data transformation]**: definieert of een proces met hoofdletters/kleine letters moet worden toegepast op een  **tekenreeks**.
+* **[!UICONTROL Data transformation]**: bepaalt of een proces van het karaktergeval op een **string**.
 
    * **[!UICONTROL None]**: de geïmporteerde tekenreeks wordt niet gewijzigd.
    * **[!UICONTROL First letter in upper case]**: De eerste letter van elk woord van de tekenreeks begint met een hoofdletter.
    * **[!UICONTROL Upper case]**: alle tekens in de tekenreeks zijn in hoofdletters weergegeven.
    * **[!UICONTROL Lower case]**: alle tekens in de tekenreeks zijn in kleine letters weergegeven.
 
-* **[!UICONTROL White space management]**: Geeft aan of bepaalde spaties in een tekenreeks moeten worden genegeerd. Met de waarde **[!UICONTROL Ignore spaces]** kunnen spaties aan het begin en aan het einde van een tekenreeks alleen worden genegeerd.
+* **[!UICONTROL White space management]**: Geeft aan of bepaalde spaties in een tekenreeks moeten worden genegeerd. De **[!UICONTROL Ignore spaces]** Met waarde kunnen spaties alleen aan het begin en het einde van een tekenreeks worden genegeerd.
 * **[!UICONTROL Error processings]**: Dit definieert het gedrag als een fout optreedt.
 
    * **[!UICONTROL Ignore the value]**: De waarde wordt genegeerd. Er wordt een waarschuwing gegenereerd in het logboek voor workflowuitvoering.
    * **[!UICONTROL Reject line]**: De volledige regel wordt niet verwerkt.
    * **[!UICONTROL Use a default value in case of error]**: Dit vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het veld **[!UICONTROL Default value]** is gedefinieerd.
-   * **[!UICONTROL Reject the line when there is no remapping value]**: de hele lijn wordt alleen verwerkt als een toewijzing voor de onjuiste waarde is gedefinieerd (zie de  **[!UICONTROL Mapping]** optie hieronder).
-   * **[!UICONTROL Use a default value in case the value is not remapped]**: vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het  **[!UICONTROL Default value]** gebied wordt bepaald, tenzij een afbeelding voor de verkeerde waarde (zie de hieronder  **[!UICONTROL Mapping]** optie) was bepaald.
+   * **[!UICONTROL Reject the line when there is no remapping value]**: de gehele lijn wordt alleen verwerkt als een toewijzing voor de onjuiste waarde is gedefinieerd (zie **[!UICONTROL Mapping]** hieronder).
+   * **[!UICONTROL Use a default value in case the value is not remapped]**: vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in **[!UICONTROL Default value]** veld, tenzij een toewijzing voor de onjuiste waarde is gedefinieerd (zie de **[!UICONTROL Mapping]** hieronder).
 
 * **[!UICONTROL Default value]**: Hiermee geeft u de standaardwaarde op op basis van de gekozen foutverwerking.
 * **[!UICONTROL Mapping]**: dit veld is alleen beschikbaar in de configuratie van de kolomdetails (toegankelijk via een dubbelklik of via de opties rechts van de kolomlijst). Hiermee worden bepaalde waarden getransformeerd wanneer ze worden geïmporteerd. U kunt bijvoorbeeld ‘three’ omzetten in ‘3’.
@@ -88,21 +88,21 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
 1. Met de bestandscollector kunt u bestanden herstellen die in een map zijn opgeslagen, afhankelijk van de opgegeven frequentie.
 
-   Het tabblad **[!UICONTROL Directory]** bevat informatie over de bestanden die moeten worden hersteld. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
+   De **[!UICONTROL Directory]** bevat informatie over het terug te winnen bestand of de bestanden. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
-   Het gebruik van **[!UICONTROL File collector]** wordt gedetailleerd beschreven in de sectie [Bestandscollector](file-collector.md).
+   Met de **[!UICONTROL File collector]** wordt in het [Bestandsverzamelaar](file-collector.md) sectie.
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
-   Op het tabblad **[!UICONTROL Schedule]** kunt u de uitvoering van de verzamelaar plannen, met andere woorden om de frequentie op te geven waarmee de aanwezigheid van deze bestanden wordt gecontroleerd.
+   De **[!UICONTROL Schedule]** kunt u de uitvoering van de verzamelaar plannen, met andere woorden de frequentie opgeven waarmee de aanwezigheid van deze bestanden wordt gecontroleerd.
 
    Hier, willen wij de inzamelaar elke werkdag teweegbrengen om 9PM.
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   Om dit te doen, klik **[!UICONTROL Change...]** knoop die in de lagere juiste sectie van het het uitgeven hulpmiddel wordt gevestigd en vorm het programma.
+   Om dit te doen, klik **[!UICONTROL Change...]** in de lagere rechtersectie van het het uitgeven hulpmiddel wordt gevestigd en vorm het programma dat.
 
-   Raadpleeg [Planner](scheduler.md) voor meer informatie hierover.
+   Raadpleeg voor meer informatie hierover [Planner](scheduler.md).
 
 1. Configureer vervolgens de activiteit voor het laden van gegevens (bestand) om aan te geven hoe de verzamelde bestanden moeten worden gelezen. Selecteer hiertoe een voorbeeldbestand met dezelfde structuur als de bestanden die u wilt laden.
 
@@ -115,20 +115,20 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md#step-2---source-file-selection) voor meer informatie.
 
-1. Geef in de splitsingsactiviteit de subsets op die moeten worden gemaakt, volgens de kolomwaarde **Event**.
+1. Geef in de splitsingsactiviteit de subsets op die u wilt maken, volgens de **Gebeurtenis** kolomwaarde.
 
    De activiteit Splitsen wordt gedetailleerd beschreven in de sectie.
 
    ![](assets/s_advuser_load_file_sample_4.png)
 
-   Geef voor elke subset een van de waarden op in de kolom **Event**.
+   Geef voor elke subset een van de waarden op in het dialoogvenster **Gebeurtenis** kolom.
 
    ![](assets/s_advuser_load_file_sample_5.png)
 
-   De activiteit **[!UICONTROL Split]** zal daarom de volgende informatie bevatten:
+   De **[!UICONTROL Split]** de activiteit zal derhalve de volgende informatie bevatten :
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we naar **[!UICONTROL Update the data]** in de database. Om dit te doen, plaats een **[!UICONTROL Update data]** activiteit aan het eind van elke uitgaande overgang van de gespleten activiteit.
+1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we **[!UICONTROL Update the data]** in de database. Om dit te doen, plaats een **[!UICONTROL Update data]** activiteit aan het eind van elke uitgaande overgang van de splitsingsactiviteit.
 
-   De **[!UICONTROL Update data]** activiteit is gedetailleerd in [Gegevens bijwerken](update-data.md) sectie.
+   De **[!UICONTROL Update data]** de activiteit wordt in de [Gegevens bijwerken](update-data.md) sectie.

@@ -25,11 +25,11 @@ De meeste werkstromen die gericht zijn op het importeren van gegevens moeten de 
 
 Door workflowsjablonen te gebruiken is het heel handig om vergelijkbare importbewerkingen voor te bereiden en ervoor te zorgen dat de gegevensbestanden consistent zijn.
 
-In vele projecten, wordt de invoer gebouwd zonder **[!UICONTROL Deduplication]** activiteit omdat de dossiers die in het project worden gebruikt geen duplicaten hebben. Soms worden duplicaten weergegeven van het importeren van verschillende bestanden. De-duplicatie is dan moeilijk. Daarom is een deduplicatiestap een goede voorzorgsmaatregel in alle importworkflows.
+In veel projecten wordt de invoer zonder **[!UICONTROL Deduplication]** activiteit omdat de dossiers in het project worden gebruikt geen duplicaten hebben. Soms worden duplicaten weergegeven van het importeren van verschillende bestanden. De-duplicatie is dan moeilijk. Daarom is een deduplicatiestap een goede voorzorgsmaatregel in alle importworkflows.
 
 Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en correct zijn, of dat de afdeling van IT of de supervisor van Adobe Campaign het zal behandelen. Houd tijdens het project rekening met het opschonen van gegevens. U kunt gegevens dedupliceren, op elkaar afstemmen en de consistentie behouden bij het importeren van gegevens.
 
-Een voorbeeld van een generiek werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in [Voorbeeld: Workflowsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md)-sectie.
+Een voorbeeld van een generiek werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in [Voorbeeld: Workflowsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md) sectie.
 
 ## Vlakke bestandsindelingen gebruiken {#using-flat-file-formats}
 
@@ -54,7 +54,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 ## Compressie gebruiken {#using-compression}
 
-Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. GZIP wordt standaard ondersteund. U kunt voorbewerking toevoegen bij het importeren van bestanden of naverwerking bij het extraheren van gegevens, respectievelijk in de **[!UICONTROL Load file]**- en **[!UICONTROL Extract file]**-workflowactiviteiten.
+Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. GZIP wordt standaard ondersteund. U kunt voorbewerking toevoegen bij het importeren van bestanden of naverwerking bij het extraheren van gegevens, respectievelijk in het dialoogvenster **[!UICONTROL Load file]** en **[!UICONTROL Extract file]** workflowactiviteiten.
 
 **Verwante onderwerpen:**
 
@@ -72,7 +72,7 @@ Volledige invoer mag alleen voor eerste lading worden gebruikt.
 Om de consistentie van de gegevens in de Adobe Campaign-database te waarborgen, volgt u de volgende beginselen:
 
 * Als de geïmporteerde gegevens overeenkomen met een referentietabel in Adobe Campaign, moet de tabel in de workflow overeenkomen met die tabel. Records die niet overeenkomen, moeten worden afgewezen.
-* Zorg ervoor dat de geïmporteerde gegevens altijd **&quot;genormaliseerd&quot;** (e-mail, telefoonnummer, direct-mailadres) zijn en dat deze normalisatie betrouwbaar is en in de loop der jaren niet zal veranderen. Als dit niet het geval is, zullen sommige duplicaten waarschijnlijk in het gegevensbestand verschijnen, en aangezien Adobe Campaign geen hulpmiddelen verstrekt om &quot;vage&quot;aanpassing te doen, zal het zeer moeilijk zijn om hen te beheren en te verwijderen.
+* Zorg ervoor dat de geïmporteerde gegevens altijd zijn **&quot;normalized&quot;** (e-mail, telefoonnummer, direct mailadres) en dat deze normalisatie betrouwbaar is en in de loop der jaren niet zal veranderen. Als dit niet het geval is, zullen sommige duplicaten waarschijnlijk in het gegevensbestand verschijnen, en aangezien Adobe Campaign geen hulpmiddelen verstrekt om &quot;vage&quot;aanpassing te doen, zal het zeer moeilijk zijn om hen te beheren en te verwijderen.
 * Transactionele gegevens moeten een afstemmingssleutel hebben en in overeenstemming zijn met de bestaande gegevens om het creëren van duplicaten te voorkomen.
-* **Verwante bestanden op volgorde** importeren. Als het importeren uit meerdere bestanden bestaat die van elkaar afhankelijk zijn, moet de workflow ervoor zorgen dat de bestanden in de juiste volgorde worden geïmporteerd. Wanneer een bestand mislukt, worden de andere bestanden niet geïmporteerd.
-* **U kunt gegevens dedupliceren**, combineren en de consistentie behouden wanneer u ze importeert.
+* **Gerelateerde bestanden op volgorde importeren**. Als het importeren uit meerdere bestanden bestaat die van elkaar afhankelijk zijn, moet de workflow ervoor zorgen dat de bestanden in de juiste volgorde worden geïmporteerd. Wanneer een bestand mislukt, worden de andere bestanden niet geïmporteerd.
+* **Dedupliceren** te behouden, te combineren en consistentie te behouden bij het importeren van gegevens.

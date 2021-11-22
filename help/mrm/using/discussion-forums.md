@@ -23,7 +23,7 @@ Operatoren kunnen zich op een forum abonneren om elke keer dat een bericht wordt
 
 ## Toegang tot een forum {#accessing-a-forum}
 
-Als u het forum van een campagne wilt bezoeken, gaat een operator, enz. naar het dashboard en klikt u op de koppeling **[!UICONTROL Forum]** in de rechterbovenhoek. Deze verbinding geeft u ook het totale aantal berichten in het forum.
+Als u het forum van een campagne wilt bezoeken, gaat u naar het dashboard en klikt u op de knop **[!UICONTROL Forum]** in de rechterbovenhoek. Deze verbinding geeft u ook het totale aantal berichten in het forum.
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -37,13 +37,13 @@ Als u de inhoud van een bericht wilt weergeven, klikt u op de koptekst van het b
 
 **Een nieuwe discussie starten**
 
-Als u een nieuwe discussie wilt starten, klikt u op de knop **[!UICONTROL Add a discussion]** in de rechterbovenhoek. De doos **[!UICONTROL Discussion forum]** komt omhoog (zie hieronder).
+Als u een nieuwe discussie wilt starten, klikt u op de knop **[!UICONTROL Add a discussion]** in de rechterbovenhoek. De **[!UICONTROL Discussion forum]** wordt weergegeven (zie hieronder).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Een bericht sturen naar een bestaande discussie**
 
-Als u een bericht wilt plaatsen naar een bestaande discussie, opent u het bericht dat u wilt beantwoorden en klikt u op de koppeling **[!UICONTROL Reply]** in de linkerbovenhoek. De doos **[!UICONTROL Discussion forum]** komt omhoog (zie hieronder).
+Als u een bericht wilt plaatsen naar een bestaande discussie, opent u het bericht dat u wilt beantwoorden en klikt u op de knop **[!UICONTROL Reply]** in de linkerbovenhoek. De **[!UICONTROL Discussion forum]** wordt weergegeven (zie hieronder).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -51,18 +51,18 @@ Wanneer u op een bericht antwoordt, zal de persoon die het originele bericht pla
 
 **Een bericht schrijven**
 
-In het tekstvak **[!UICONTROL Discussion forum]**:
+In de **[!UICONTROL Discussion forum]** vak:
 
-1. Typ uw tekst in het veld **[!UICONTROL Message]** en een titel voor de beschrijving in het veld **[!UICONTROL Subject]**.
+1. Voer de tekst in het dialoogvenster **[!UICONTROL Message]** en een titel van het debat in het **[!UICONTROL Subject]** veld.
 
    ![](assets/mrm_forum_edit_msg.png)
 
 1. Indien nodig:
 
-   * Als u wilt dat iemand aan de bespreking deelneemt die niet aan het forum wordt geabonneerd, gebruik **[!UICONTROL Operator to notify]** gebied. De exploitant zal een kennisgevingsmail voor dit specifieke bericht ontvangen (zij zullen niet op het forum worden geabonneerd). Selecteer een groep operatoren als u meerdere operatoren wilt melden.
+   * Als u wilt dat iemand aan de discussie deelneemt die niet op het forum is geabonneerd, gebruikt u de opdracht **[!UICONTROL Operator to notify]** veld. De exploitant zal een kennisgevingsmail voor dit specifieke bericht ontvangen (zij zullen niet op het forum worden geabonneerd). Selecteer een groep operatoren als u meerdere operatoren wilt melden.
    * Als u een bijlage aan het bericht wilt toevoegen, klikt u op **[!UICONTROL Browse]**. De bijlage wordt ook opgenomen in de e-mail met het bericht. Bijlagen mogen alleen afzonderlijk worden verzonden: als u meerdere bestanden wilt verzenden, moet u deze zip geven.
 
-1. Klik **[!UICONTROL Create the message]** om het aan het forum te posten.
+1. Klikken **[!UICONTROL Create the message]** het aan het forum te plaatsen .
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ U kunt een bericht aan het forum van een exploitant posten als, bijvoorbeeld, uw
 
 Toegang tot het forum van een exploitant:
 
-* Als u de vereiste rechten hebt om toegang te krijgen tot de **[!UICONTROL Administration > Access management > Operators]**-node van de verkenner, opent u het dashboard van de gewenste operator en klikt u op de koppeling **[!UICONTROL Forum]** in de rechterbovenhoek.
+* Als u over de nodige rechten beschikt om toegang te krijgen tot **[!UICONTROL Administration > Access management > Operators]** van de verkenner, open het dashboard van de gewenste exploitant en klik **[!UICONTROL Forum]** in de rechterbovenhoek.
 * Zo niet, zoek dan de naam van de exploitant in Adobe Campaign (via een bericht dat door deze operator aan het forum is gepost, een taak die hem wordt toegewezen) en klik erop om het dashboard te openen. U kunt de beheerder ook vragen om een weergave van de map met operatoren te maken.
 
 ## Abonneren op een forum {#subscribing-to-a-forum}
@@ -87,17 +87,17 @@ Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een b
 
    De sectie gaat blauw en toont aan dat u aan het forum wordt geabonneerd.
 
-* Als u het abonnement op een forum wilt opzeggen, klikt u op de knop **[!UICONTROL Unsubscribe]**.
+* Als u uw abonnement op een forum wilt opzeggen, klikt u op de knop **[!UICONTROL Unsubscribe]** knop.
 
    ![](assets/mrm_forum_unsubscribe.png)
 
-* Het persoonlijke dashboard bevat de forums waarop u zich hebt geabonneerd. Klik op de koppeling **[!UICONTROL Subscription to discussion forums]** om de lijst weer te geven en klik vervolgens op het item dat u interesseert om het forum te openen.
+* Het persoonlijke dashboard bevat de forums waarop u zich hebt geabonneerd. Klik op de knop **[!UICONTROL Subscription to discussion forums]** Klik vervolgens op het gewenste item om het forum te openen.
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Raadpleeg [deze sectie](../../platform/using/access-management-operators.md) voor meer informatie over persoonlijke dashboards.
+   Raadpleeg voor meer informatie over persoonlijke dashboards de [deze sectie](../../platform/using/access-management-operators.md).
 
-* Om te zien wie aan een forum wordt geabonneerd, klik de **[!UICONTROL List of subscribers to this discussion forum]** verbinding boven de lijst van berichten.
+* Als u wilt zien wie op een forum is geabonneerd, klikt u op de knop **[!UICONTROL List of subscribers to this discussion forum]** koppeling boven de lijst met berichten.
 
    ![](assets/mrm_forum_subscribers.png)
 
@@ -106,9 +106,9 @@ Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een b
 Als operatoren die zijn geabonneerd op een forum geen meldingen ontvangen zoals u had verwacht:
 
 * Controleer of de e-mailadressen zijn ingevoerd in de profielen van de operator.
-* Ga naar **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** knoop en controleer dat **[!UICONTROL Jobs in discussion forums]** werkschema en vrij van fouten begonnen is.
+* Ga naar de **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** en controleer of de **[!UICONTROL Jobs in discussion forums]** de workflow is gestart en foutloos.
 * De leveringslogboeken weergeven:
 
-   * Ga op de startpagina van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]** en open vervolgens de levering **[!UICONTROL Discussion forum notification]**.
+   * Ga op de homepage van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]** en open vervolgens de **[!UICONTROL Discussion forum notification]** levering.
    * Ga in de verkenner naar **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** en klik vervolgens op **[!UICONTROL Discussion forum notifications]**.
-   In de **[!UICONTROL Discussion forum notifications]** doos, worden de leveringslogboeken gevonden in **[!UICONTROL Edit > Delivery]** tabel. U kunt ook de tabbladen **[!UICONTROL Tracking > Log]** en **[!UICONTROL Exclusion causes]** weergeven.
+   In de **[!UICONTROL Discussion forum notifications]** de leveringslogboeken vindt u in het dialoogvenster **[!UICONTROL Edit > Delivery]** tab. U kunt ook de **[!UICONTROL Tracking > Log]** en de **[!UICONTROL Exclusion causes]** tabs.

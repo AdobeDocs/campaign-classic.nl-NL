@@ -27,10 +27,10 @@ Er zijn twee typen tags:
 Pas de volgende stappen toe om deze tags in te stellen:
 
 1. Identificeer de pagina&#39;s u wenst om hun type (WEB of TRANSACTIE) te volgen en te bepalen.
-1. Bepaal welke aanvullende informatie u wenst te verzamelen, en breid **nms:webTrackingLog** schema met de beschrijving van deze informatie uit. Standaard kunnen in dit schema de transactiehoeveelheden en het aantal items per transactie worden opgeslagen.
+1. Bepaal welke aanvullende gegevens u wilt verzamelen en breid de **nms:webTrackingLog** schema met de beschrijving van deze informatie. Standaard kunnen in dit schema de transactiehoeveelheden en het aantal items per transactie worden opgeslagen.
 1. De webtrackingtags maken. Er zijn twee manieren om dit te doen:
 
-   * Voeg de URL&#39;s die overeenkomen met deze pagina&#39;s in uw Adobe Campaign-platform in en genereer en extraheer de bijbehorende tags voor webtracering (uit het knooppunt **[!UICONTROL Campaign execution>Resources>Web tracking tags]** van de clientconsole).
+   * Voeg de URL&#39;s die overeenkomen met deze pagina&#39;s in uw Adobe Campaign-platform in en genereer en extraheer vervolgens de bijbehorende webtrackingtags (vanuit het menu **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole).
    * Maak de webtrackingtags zelf in de modus &quot;Aanmaken ter plekke&quot;: De URL&#39;s die overeenkomen met deze pagina&#39;s worden automatisch ingevoegd in uw Adobe Campaign-platform.
 
 1. Voeg deze labels statisch of dynamisch toe aan de pagina&#39;s die u wilt bijhouden.

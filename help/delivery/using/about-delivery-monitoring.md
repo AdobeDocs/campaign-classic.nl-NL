@@ -47,7 +47,7 @@ Er moeten verschillende richtlijnen worden gevolgd om ervoor te zorgen dat uw le
 
 Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgehaald en dat is gekwalificeerd om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst.
 
-[Kennis van ](understanding-delivery-failures.md) leveringsfouten is een belangrijke stap om u te helpen uw marketingcampagnes te verbeteren.
+[Leveringsfouten begrijpen](understanding-delivery-failures.md) is een belangrijke stap om u te helpen uw marketing campagnes verbeteren.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 

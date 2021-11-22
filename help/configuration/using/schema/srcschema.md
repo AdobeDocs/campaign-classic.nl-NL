@@ -43,11 +43,11 @@ Geen
 
 ## Beschrijving {#description-14}
 
-`<srcschema>` is het wortelelement van een schema. Dit is het invoerpunt voor de definitie van het schema.
+De `<srcschema>` is het hoofdelement van een schema. Dit is het invoerpunt voor de definitie van het schema.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-9}
 
-Schemapresentatie is beschikbaar in [Schemenverwijzing](../../../configuration/using/about-schema-reference.md) en [Schemastructuur](../../../configuration/using/schema-structure.md).
+Schemapresentatie is beschikbaar in [Schema-verwijzing](../../../configuration/using/about-schema-reference.md) en [Schema-structuur](../../../configuration/using/schema-structure.md).
 
 ## Beschrijving van kenmerk {#attribute-description-14}
 
@@ -60,7 +60,7 @@ Schemapresentatie is beschikbaar in [Schemenverwijzing](../../../configuration/u
 * **label (tekenreeks)**: schemalabel.
 * **labelSingular (string)**: label (enkelvoudig) voor weergave in de interface.
 * **lastModified (datetime)**: this attribute provided information on the date and time of the last modification. Het heeft een formulier &#39;Datum en tijd&#39;. De weergegeven waarden worden opgehaald van de server. De tijd wordt getoond in formaat UTC.
-* **bibliotheek (Booleaans)**: gebruik van het schema als bibliotheek en niet als entiteit. Naar dit schema kan daarom door andere schema&#39;s worden verwezen dankzij de kenmerken &quot;@ref&quot; en &quot;@template&quot;.
+* **bibliotheek (Boolean)**: gebruik van het schema als bibliotheek en niet als entiteit. Naar dit schema kan daarom door andere schema&#39;s worden verwezen dankzij de kenmerken &quot;@ref&quot; en &quot;@template&quot;.
 * **mappingType (tekenreeks)**:
 
    * &quot;sql&quot;: databasetoewijzing
@@ -70,9 +70,9 @@ Schemapresentatie is beschikbaar in [Schemenverwijzing](../../../configuration/u
 
 * **modifiedBy-id (long)**: komt overeen met de id van de operator die het schema heeft gewijzigd.
 * **name (string)**: unieke schemanaam.
-* **naamruimte (tekenreeks)**: naamruimte van het schema (standaard: nms, xtk, nl). Wanneer het creëren van een nieuw schema voor een project, adviseren wij dat u specifieke namespace gebruikt.
+* **namespace (tekenreeks)**: naamruimte van het schema (standaard: nms, xtk, nl). Wanneer het creëren van een nieuw schema voor een project, adviseren wij dat u specifieke namespace gebruikt.
 * **useRecycleBin (Boolean)**: Hiermee activeert u de prullenbak-functie in de toepassing. Verwijderde records worden in de prullenbak geplaatst voordat ze definitief worden verwijderd. Deze functie is alleen beschikbaar in de modus &quot;Aflevering&quot;.
-* **weergave (Booleaans)**: als het wordt geactiveerd (@view=&quot;waar&quot;), zal het schema als mening worden gebruikt. De updatewizard voor de databasestructuur houdt geen rekening met het schema. Deze optie wordt vooral gebruikt voor het verwijzen naar externe tabellen.
+* **weergave (Boolean)**: als het wordt geactiveerd (@view=&quot;waar&quot;), zal het schema als mening worden gebruikt. De updatewizard voor de databasestructuur houdt geen rekening met het schema. Deze optie wordt vooral gebruikt voor het verwijzen naar externe tabellen.
 * **xtkschema (tekenreeks)**: naam van het schema dat schema grammatica bepaalt (xtk:srcSchema door gebrek).
 
 ## Voorbeelden {#examples-11}

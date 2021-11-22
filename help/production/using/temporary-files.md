@@ -23,7 +23,7 @@ Foutberichten zoals de volgende kunnen worden weergegeven (met name in leverings
 
 De oorzaak is als volgt:
 
-Adobe Campaign genereert tijdelijke bestanden onder **/tmp** en wijzigt vervolgens de naam van de bestanden om deze naar **/usr/local/neolane/nl6/var** te verplaatsen. Deze fout treedt op wanneer beide mappen (**/tmp** en **/usr/local/neolane/nl6/var**, wat in feite een symbolische koppeling is naar **/var/nl6**) overeenkomen met verschillende apparaten. De opdracht **df** wordt gebruikt voor verificatie.
+Adobe Campaign genereert tijdelijke bestanden onder **/tmp** en wijzigt vervolgens de naam van de **/usr/local/neolane/nl6/var**. Deze fout treedt op wanneer beide mappen (**/tmp** en **/usr/local/neolane/nl6/var**, die in feite een symbolische koppeling is naar **/var/nl6**) komt overeen met verschillende apparaten. De **df** wordt gebruikt voor verificatie.
 
 U verhelpt dit probleem door de tijdelijke bestanden te genereren op hetzelfde apparaat als het doelapparaat.
 

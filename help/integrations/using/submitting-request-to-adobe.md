@@ -21,7 +21,7 @@ ht-degree: 10%
 >
 >Om verder te kunnen gaan, zorg ervoor dat IMS op uw systeem wordt toegelaten. Raadpleeg de sectie over [IMS](../../integrations/using/about-adobe-id.md).
 
-Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manager van Mensen integratie met Campagne verzoeken. Om dat te doen, verzend een e-mail naar [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) met de volgende informatie:
+Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manager van Mensen integratie met Campagne verzoeken. Om dat te doen, stuur een e-mail naar [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) met de volgende informatie:
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manage
    <td> Uw organisatienaam </td> 
   </tr> 
   <tr> 
-   <td> <strong>IMS-organisatie-id</strong><br /> </td> 
+   <td> <strong>IMS-organisatie-ID</strong><br /> </td> 
    <td> Uw IMS-organisatie-id. <br> U kunt uw IMS Organisatie-id op de Experience Cloud, in het menu van het Beleid vinden. Deze wordt ook geleverd wanneer u voor het eerst verbinding maakt met de Adobe Experience Cloud. </td> 
   </tr> 
   <tr> 
@@ -43,7 +43,7 @@ Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manage
   </tr> 
   <tr> 
    <td> <strong>AAM of Persdienst</strong><br /> </td> 
-   <td> Voorbeeld: Adobe Audience Manager. Vergeet niet om aan het inrichtingsteam te vermelden of u al dan niet een Audience Manager-licentie hebt.</td> 
+   <td> Voorbeeld: Adobe Audience Manager. Vergeet niet om aan het provisioningteam mee te delen of u al dan niet een Audience Manager-licentie hebt.</td> 
   </tr> 
   <tr> 
    <td> <strong>Opgegeven ID of bezoeker-ID</strong><br /> </td> 

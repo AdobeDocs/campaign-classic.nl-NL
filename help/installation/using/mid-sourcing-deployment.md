@@ -64,4 +64,4 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 
 ### Installeren en configureren (implementatie van midsourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Zie [Midden-sourcingserver](../../installation/using/mid-sourcing-server.md).
+Zie [Server voor midsourcing](../../installation/using/mid-sourcing-server.md).

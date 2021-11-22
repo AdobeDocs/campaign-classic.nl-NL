@@ -29,7 +29,7 @@ Deze wordt toegevoegd aan de details van de overeenkomende volgorde en kan worde
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-De campagne blijft toegankelijk in het overzicht van de Campagne, dat via de **[!UICONTROL Campaigns]** verbinding op de homepage wordt gevestigd.
+De campagne blijft toegankelijk in het campagneoverzicht, dat zich bevindt via de **[!UICONTROL Campaigns]** koppeling op de startpagina.
 
 ## Beschikbare instellingen {#available-settings}
 

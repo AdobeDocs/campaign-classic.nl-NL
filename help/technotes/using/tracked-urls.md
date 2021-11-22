@@ -4,7 +4,8 @@ title: TechNote
 description: TechNote
 hide: true
 hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: e7d4331b-7149-4768-8e46-2e2911319074
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -23,7 +24,7 @@ Afmeldkoppelingen kunnen net als andere koppelingen mislukken. De frequentie ver
 
 **Heeft dit gevolgen voor u?**
 
-Om de beveiliging te verbeteren, is het handtekeningmechanisme voor het bijhouden van koppelingen in e-mailberichten geïntroduceerd in [Campagne Gold Standard 8](../../rn/using/gold-standard.md#gs8) - april 2020 - en is standaard ingeschakeld voor alle klanten die beginnen met Build 19.1.4 (9032@3a9dc9c) en Campagne 20.2.
+Om de beveiliging te verbeteren, is het handtekeningmechanisme voor het bijhouden van koppelingen in e-mails geïntroduceerd in [Campagne Gold Standard 8](../../rn/using/gold-standard.md#gs8) - April 2020 - en wordt toegelaten door gebrek voor alle klanten die Bouwstijl 19.1.4 (9032@3a9dc9c) en Campagne 20.2 beginnen.
 
 Als uw omgeving wordt uitgevoerd op een van de hieronder vermelde versies, kunt u dit beïnvloeden:
 
@@ -35,18 +36,18 @@ Als uw omgeving wordt uitgevoerd op een van de hieronder vermelde versies, kunt 
 * Campagne 19.2.2 (build 9080) tot en met 19.2.3 (build 9081). [Meer informatie](../../rn/using/release--19-2.md)
 * Campagne 19.1.5 (build 9033) tot en met 19.1.7 (build 9036). [Meer informatie](../../rn/using/release--19-1.md)
 
-Leer hoe u uw versie [in deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
+Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hoe kan ik bijwerken?**
 
-Als **gehoste klant**, zal Adobe met u samenwerken om uw configuratie binnenkort bij te werken.
+Als **gehoste klant**, werkt Adobe binnenkort samen met u om uw configuratie bij te werken.
 
 Als **on-premise/hybride klant**, moet u uw configuratie bijwerken.
 
 Volg de onderstaande stap:
 
-1. Wijzig **signEmailLinks** in **false** in het configuratiebestand [server](../../installation/using/the-server-configuration-file.md) (serverConf.xml).
-1. Start de **nlserver**-service opnieuw.
+1. In de [serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md) (serverConf.xml), wijzigen **signEmailLinks** tot **false**.
+1. Start de **nlserver** service.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
    ```
@@ -55,7 +56,7 @@ Volg de onderstaande stap:
 
 >[!NOTE]
 >
->Het **config-`<instance>`.xml** dossier treedt **serverConf.xml** montages met voeten. Als **signEmailLinks** aanwezig is in **config-`<instance>`.xml** (waarbij **instance** de naam van uw instantie is), moet het ook aan **false** worden gedraaid.
+>De **config-`<instance>`.xml** bestand overschrijft het **serverConf.xml** instellingen. Als de **signEmailLinks** aanwezig is in het dialoogvenster  **config-`<instance>`.xml** waarbij **instance** is de naam van uw instantie), moet het ook worden aangezet **false**.
 
 **Wat is de impact?**
 

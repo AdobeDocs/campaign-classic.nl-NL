@@ -17,11 +17,11 @@ ht-degree: 22%
 
 ![](../../assets/v7-only.svg)
 
-Voordat u een migratie uitvoert, raadpleegt u de secties [Voordat u de migratie start](../../migration/using/before-starting-migration.md) en [Uw platform configureren](../../migration/using/configuring-your-platform.md).
+Voordat u een migratie uitvoert, raadpleegt u de [Voordat u de migratie start](../../migration/using/before-starting-migration.md) en [Uw platform configureren](../../migration/using/configuring-your-platform.md) secties.
 
 Bij het migreren van v6.02 naar Adobe Campaign v7 worden sommige bestanden die vooraf zijn geleverd, niet geleverd.
 
-Als er een clientfout optreedt, moet u de dashboards bijwerken met de nieuwe Adobe Campaign v7-code of de volgende bestanden handmatig kopiëren van de versie 6.02-instantie naar de v7-instantie:
+Als er een clientfout optreedt, moet u uw dashboards bijwerken met de nieuwe Adobe Campaign v7-code of de volgende bestanden handmatig kopiëren van de versie 6.02-instantie naar de v7-instantie:
 
 ```
 v6.02 files and spaces:

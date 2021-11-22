@@ -27,14 +27,14 @@ Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van he
 
 Er zijn verschillende manieren om de gegevens te filteren die moeten worden weergegeven. Indien nodig kunnen deze samen worden gebruikt:
 
-* Filter op mappen. Raadpleeg [Filteren op map](#filter-by-folder).
-* Filter op status, verwijs naar [Filter op status](#filter-by-status),
-* Gegevenssortering, verwijs naar [Order by](#order-by),
-* Zoek, verwijs naar [Snelle onderzoek](#quick-search).
+* Filteren op mappen, zie [Filteren op map](#filter-by-folder),
+* Filteren op status, verwijs naar [Filteren op status](#filter-by-status),
+* Gegevenssortering, verwijs naar [Volgorde van](#order-by),
+* Zoeken, verwijzen naar [Snel zoeken](#quick-search).
 
 ## Filteren op map {#filter-by-folder}
 
-Klik op het pictogram **[!UICONTROL Folder]** om de map te selecteren die de gegevens bevat die u wilt weergeven.
+Klik op de knop **[!UICONTROL Folder]** om de map te selecteren die de gegevens bevat die moeten worden weergegeven.
 
 ![](assets/filter_web_select_folder.png)
 

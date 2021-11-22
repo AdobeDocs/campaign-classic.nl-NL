@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 
-Operatoren worden standaard opgeslagen in het knooppunt **[!UICONTROL Administration > Access management > Operators]**.
+Operatoren worden standaard opgeslagen in de **[!UICONTROL Administration > Access management > Operators]** knooppunt.
 
 ![](assets/s_ncs_user_list_operators.png)
 
@@ -29,11 +29,11 @@ Operatoren kunnen handmatig worden gemaakt of toegewezen aan een bestaande LDAP-
 
 De volledige procedure voor het maken van een operator wordt beschreven in [deze pagina](#creating-an-operator).
 
-Raadpleeg [deze pagina](../../installation/using/connecting-through-ldap.md) voor meer informatie over de integratie met Adobe Campaign en LDAP.
+Raadpleeg voor meer informatie over Adobe Campaign- en LDAP-integratie [deze pagina](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Raadpleeg [deze pagina](../../installation/using/security-zones.md) voor meer informatie over beveiligingszones in Adobe Campaign.
+>Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Voor meer informatie over beveiligingszones in Adobe Campaign raadpleegt u [deze pagina](../../installation/using/security-zones.md).
 
 Gebruikers kunnen ook rechtstreeks verbinding maken met Adobe Campaign via hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
@@ -45,23 +45,23 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Geef de **[!UICONTROL Identification parameters]** van de gebruiker op: zijn aanmelding, wachtwoord en naam. De aanmeldingsnaam en het wachtwoord worden door de operator gebruikt om u aan te melden bij Adobe Campaign. Zodra de gebruiker het programma wordt geopend, kunnen zij hun wachtwoord via het **[!UICONTROL Tools > Change password]** menu veranderen. Het e-mailadres van de exploitant is essentieel omdat het de exploitant in staat stelt meldingen te ontvangen, bijvoorbeeld bij de verwerking van goedkeuringen.
+1. Geef de **[!UICONTROL Identification parameters]** van de gebruiker: zijn aanmelding, wachtwoord en naam. De aanmeldingsnaam en het wachtwoord worden door de operator gebruikt om u aan te melden bij Adobe Campaign. Nadat de gebruiker is aangemeld, kan hij of zij hun wachtwoord wijzigen via het dialoogvenster **[!UICONTROL Tools > Change password]** -menu. Het e-mailadres van de exploitant is essentieel omdat het de exploitant in staat stelt meldingen te ontvangen, bijvoorbeeld bij de verwerking van goedkeuringen.
 
    In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Raadpleeg voor meer informatie de [deze pagina](../../distributed/using/about-distributed-marketing.md).
 
-1. Selecteer de toestemmingen die aan de exploitant in **[!UICONTROL Operator access rights]** sectie worden verleend.
+1. Selecteer de machtigingen die aan de operator zijn verleend in het dialoogvenster **[!UICONTROL Operator access rights]** sectie.
 
-   Als u rechten wilt toewijzen aan de operator, klikt u op de knop **[!UICONTROL Add]** boven de lijst met rechten en selecteert u vervolgens een groep operatoren in de lijst met beschikbare groepen:
+   Als u rechten aan de operator wilt toewijzen, klikt u op de knop **[!UICONTROL Add]** boven de lijst met rechten en selecteer vervolgens een groep operatoren in de lijst met beschikbare groepen:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   U kunt ook een of meer benoemde rechten selecteren (zie [Benoemde rechten](#named-rights)). Klik hiertoe op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteer **[!UICONTROL Named rights]**:
+   U kunt ook een of meer benoemde rechten selecteren (zie [Benoemde rechten](#named-rights)). Klik hiertoe op de pijl rechts van de knop **[!UICONTROL Folder]** en selecteer **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
    Selecteer groepen en/of benoemde rechten die u wilt toewijzen en klik op **[!UICONTROL OK]** om te valideren.
 
-1. Klik **[!UICONTROL Ok]** om de exploitant tot stand te brengen: het profiel wordt toegevoegd aan de lijst met bestaande operatoren.
+1. Klikken **[!UICONTROL Ok]** om de operator te maken: het profiel wordt toegevoegd aan de lijst met bestaande operatoren.
 
    ![](assets/operator_profile_new.png)
 
@@ -69,17 +69,17 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 >
 >U kunt de operatoren naar wens ordenen door nieuwe operatormappen te maken. Klik hiertoe met de rechtermuisknop op de operatormap en selecteer **[!UICONTROL Add an 'Operators' folder]**.
 
-Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen of bijwerken. Klik hiertoe op het tabblad **[!UICONTROL Edit]**.
+Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen of bijwerken. Om dit te doen, klik **[!UICONTROL Edit]** tab.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->Met het veld **[!UICONTROL Session timeout]** kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg [Informatie over Federated Data Access](../../installation/using/about-fda.md) voor meer informatie.
+>De **[!UICONTROL Session timeout]** kunt u de vertraging vóór de FDA sessieonderbreking aanpassen. Raadpleeg voor meer informatie hierover [Over Federale gegevenstoegang](../../installation/using/about-fda.md).
 
 ## De tijdzone van de operator definiëren {#time-zone-of-the-operator}
 
-Op het tabblad **[!UICONTROL General]** kunt u de tijdzone van de operator selecteren. Operatoren werken standaard in de tijdzone van de server. Het is echter mogelijk een andere tijdzone te selecteren met de vervolgkeuzelijst.
+In de **[!UICONTROL General]** kunt u de tijdzone van de operator selecteren. Operatoren werken standaard in de tijdzone van de server. Het is echter mogelijk een andere tijdzone te selecteren met de vervolgkeuzelijst.
 
 De configuratie van tijdzones wordt beschreven in [deze pagina](../../installation/using/time-zone-management.md).
 
@@ -89,23 +89,23 @@ De configuratie van tijdzones wordt beschreven in [deze pagina](../../installati
 >
 >Restricties en aanbevelingen in verband met deze contexten worden weergegeven in verwante secties van de documentatie van Adobe Campaign.
 
-Daarnaast kunt u in de vervolgkeuzelijst **[!UICONTROL Regional settings]** de notatie selecteren voor het weergeven van datums en getallen.
+Bovendien **[!UICONTROL Regional settings]** in de vervolgkeuzelijst kunt u de notatie selecteren voor het weergeven van datums en getallen.
 
 ## Machtigingen toevoegen {#access-rights-options}
 
-Gebruik het tabblad **[!UICONTROL Access rights]** om de groepen en benoemde rechten bij te werken die aan de operator zijn gekoppeld.
+Gebruik de **[!UICONTROL Access rights]** om de groepen en benoemde rechten die aan de operator zijn gekoppeld, bij te werken.
 
 ![](assets/operator_profile_security_options.png)
 
-Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang tot de volgende opties:
+De **[!UICONTROL Edit the access parameters...]** Via de koppeling hebt u toegang tot de volgende opties:
 
-* Met de optie **[!UICONTROL Disable account]** kunt u de account van de operator uitschakelen: deze gebruiker heeft geen toegang meer tot Adobe Campaign.
+* De **[!UICONTROL Disable account]** Met deze optie kunt u de account van de operator uitschakelen: deze gebruiker heeft geen toegang meer tot Adobe Campaign.
 
    >[!NOTE]
    >
    >Zelfs als zijn account is uitgeschakeld, kan de operator nog steeds waarschuwingen of meldingen ontvangen van Campagne. Adobe raadt u aan het e-mailadres uit zijn profiel te verwijderen om te stoppen met het verzenden van campagnemeldingen naar deze operator.
 
-* Met de optie **[!UICONTROL Forbid access from the rich client]** kunt u het gebruik van Adobe Campaign beperken tot [Webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
+* De **[!UICONTROL Forbid access from the rich client]** kunt u het gebruik van Adobe Campaign beperken tot [Webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
 * Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/security-zones.md) voor meer informatie.
 * U kunt een vertrouwd IP masker ook bepalen gebruikend de aangewezen verbinding.
 
@@ -119,7 +119,7 @@ Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang t
    >
    >Om toegang tot uw platform veilig te houden, moet deze optie met zorg worden gebruikt.
 
-* Met de optie **[!UICONTROL Restrict to information found in sub-folders of:]** kunt u de rechten beperken die aan de operator van een map worden toegewezen. Alleen de submappen van het knooppunt dat in deze optie is opgegeven, zijn zichtbaar voor de gebruiker:
+* De **[!UICONTROL Restrict to information found in sub-folders of:]** Hiermee kunt u de rechten beperken die aan de operator van een map worden toegewezen. Alleen de submappen van het knooppunt dat in deze optie is opgegeven, zijn zichtbaar voor de gebruiker:
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -129,7 +129,7 @@ Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang t
 
 ### Instellingen controleren {#check-settings}
 
-Op het tabblad **[!UICONTROL Audit]** kunt u informatie met betrekking tot de operator weergeven. De verschillende tabbladen worden automatisch toegevoegd op basis van de instellingen die zijn gedefinieerd in het interventiegebied van de operator.
+De **[!UICONTROL Audit]** kunt u informatie met betrekking tot de operator weergeven. De verschillende tabbladen worden automatisch toegevoegd op basis van de instellingen die zijn gedefinieerd in het interventiegebied van de operator.
 
 U hebt toegang tot:
 
@@ -139,7 +139,7 @@ U hebt toegang tot:
 
    >[!NOTE]
    >
-   >Raadpleeg [Maptoegangsbeheer](#folder-access-management) voor meer informatie hierover.
+   >Raadpleeg voor meer informatie hierover [Toegangsbeheer voor mappen](#folder-access-management).
 
 * Het erkenningslogboek van de exploitant.
 
@@ -161,19 +161,19 @@ Adobe Campaign gebruikt technische operatoren met profielen die standaard zijn g
 
 De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT, wat tot beveiligingsrisico&#39;s kan leiden. We raden u aan dit recht te verwijderen om dit probleem op te lossen. Dit doet u als volgt:
 
-1. Van **[!UICONTROL Administration > Access management > Named rights]** knoop, klik **[!UICONTROL New]** om een recht tot stand te brengen en het WEBAPP te noemen.
+1. Van de **[!UICONTROL Administration > Access management > Named rights]** knooppunt, klikken **[!UICONTROL New]** om een recht te creëren en het WEBAPP te noemen.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   Benoemde rechten worden beschreven in de sectie [Benoemde rechten](#named-rights).
+   Benoemde rechten worden nader beschreven in het dialoogvenster [Benoemde rechten](#named-rights) sectie.
 
-1. Selecteer in het knooppunt **[!UICONTROL Administration > Access management > Operators]** de webapplicatieagent (&#39;webapp&#39;).
+1. Van de **[!UICONTROL Administration > Access management > Operators]** -knooppunt, selecteert u de webapplicatieagent (&#39;webapp&#39;).
 
-   Selecteer de tab **[!UICONTROL Edit]**, dan de tab **[!UICONTROL Access rights]** en verwijder de rechts genoemde BEHEERDER uit de lijst.
+   Selecteer **[!UICONTROL Edit]** en vervolgens de **[!UICONTROL Access rights]** en verwijder de rechts genoemde BEHEER uit de lijst.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Klik **[!UICONTROL Add]** en selecteer het recht WEBAPP dat u net hebt gecreeerd, dan sparen uw veranderingen.
+   Klikken **[!UICONTROL Add]** en selecteer het WEBAPP-recht dat u net hebt gemaakt, en sla uw wijzigingen op.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -181,8 +181,8 @@ De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   Het wijzigen van rechten voor boommappen wordt beschreven in de sectie [Maptoegangsbeheer](#folder-access-management).
+   De rechten voor het wijzigen van boommappen worden beschreven in het gedeelte [Toegangsbeheer voor mappen](#folder-access-management) sectie.
 
 >[!NOTE]
 >
->Raadpleeg [Controlelijst voor Adobe Campaign-beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor meer informatie over beveiligingsrichtlijnen.
+>Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar [Controlelijst voor Adobe Campaign-beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).

@@ -33,15 +33,15 @@ Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. Klik op het tabblad **[!UICONTROL Data]** om de gegevensbron en de te berekenen reeks te definiëren.
+1. Klik op de knop **[!UICONTROL Data]** om de gegevensbron en de te berekenen reeks te bepalen.
 
-   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar [Using contextgegevens](../../reporting/using/using-the-context.md#using-context-data)).
+   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar [Contextgegevens gebruiken](../../reporting/using/using-the-context.md#using-context-data)).
 
-   * Klik op de koppeling **[!UICONTROL Filter data...]** om filtercriteria voor de gegevens in de database te definiëren.
+   * Klik op de knop **[!UICONTROL Filter data...]** koppeling om filtercriteria voor de gegevens in de database te definiëren.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Als u contextuele gegevens wilt gebruiken, selecteert u **[!UICONTROL Context data]** in de vervolgkeuzelijst **[!UICONTROL Source]** en klikt u op de koppeling **[!UICONTROL Advanced settings...]**. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
+   * Selecteer **[!UICONTROL Context data]** van de **[!UICONTROL Source]** en klik op de knop **[!UICONTROL Advanced settings...]** koppeling. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -57,11 +57,11 @@ Het grafiektype wordt geselecteerd wanneer het in de pagina wordt opgenomen.
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-Het kan ook worden gewijzigd via de sectie **[!UICONTROL Chart type]** van het tabblad **[!UICONTROL General]** in het diagram.
+Het kan ook worden gewijzigd via de **[!UICONTROL Chart type]** van de **[!UICONTROL General]** in het diagram.
 
 ![](assets/reporting_change_graph_type.png)
 
-Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden geselecteerd via de koppeling **[!UICONTROL Variants...]**.
+Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden geselecteerd via de **[!UICONTROL Variants...]** koppeling.
 
 ### Indeling: cirkeldiagrammen {#breakdown--pie-charts}
 
@@ -71,7 +71,7 @@ Met schijfgrafieken kunt u slechts één variabele analyseren.
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-Met de koppeling **[!UICONTROL Variants]** kunt u de algemene rendering van de grafiek aanpassen.
+De **[!UICONTROL Variants]** Met de koppeling kunt u de algemene rendering van het diagram aanpassen.
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -101,11 +101,11 @@ Met dit type grafische weergave kunt u de evolutie van een of meer maatstaven in
 
 Met histogrammen kunt u de waarden van een of meer variabelen vergelijken.
 
-Voor deze typen grafieken worden de volgende opties aangeboden in het venster **[!UICONTROL Variants]**:
+Voor deze typen grafieken worden de volgende opties aangeboden in het dialoogvenster **[!UICONTROL Variants]** venster:
 
 ![](assets/reporting_select_graph_var.png)
 
-Schakel de optie **[!UICONTROL Display caption]** in om het bijschrift met het diagram te tonen en de positie ervan te kiezen:
+Controleer de **[!UICONTROL Display caption]** om het bijschrift met het diagram weer te geven en de positie ervan te kiezen:
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,7 +113,7 @@ Indien van toepassing, kunt u waarden samen stapelen.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer de optie **[!UICONTROL Reverse stacking]** om dit te doen.
+Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer hiervoor de optie **[!UICONTROL Reverse stacking]** optie.
 
 ### Conversie: trechter {#conversion--funnel}
 
@@ -121,9 +121,9 @@ Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
 
 ## Interactie met de grafiek {#interaction-with-the-chart}
 
-U kunt een actie bepalen wanneer de gebruiker de grafiek klikt. Open het venster **[!UICONTROL Interaction events]** en selecteer de handeling die u wilt uitvoeren.
+U kunt een actie bepalen wanneer de gebruiker de grafiek klikt. Open de **[!UICONTROL Interaction events]** en selecteert u de handeling die u wilt uitvoeren.
 
-Mogelijke interactietypen en hun configuraties worden beschreven in [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Mogelijke interactietypen en de bijbehorende configuraties worden nader beschreven in [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
@@ -131,9 +131,9 @@ Mogelijke interactietypen en hun configuraties worden beschreven in [deze sectie
 
 Met grafieken kunt u statistieken weergeven over de verzamelde gegevens.
 
-Deze statistieken worden gedefinieerd via de sectie **[!UICONTROL Series parameters]** van het tabblad **[!UICONTROL Data]**.
+Deze statistieken worden gedefinieerd via de **[!UICONTROL Series parameters]** van de **[!UICONTROL Data]** tab.
 
-Als u een nieuwe statistiek wilt maken, klikt u op het pictogram **[!UICONTROL Add]** en configureert u het desbetreffende venster. De beschikbare berekeningstypen worden hieronder beschreven.
+Als u een nieuwe statistiek wilt maken, klikt u op de knop **[!UICONTROL Add]** en configureert u het juiste venster. De beschikbare berekeningstypen worden hieronder beschreven.
 
 ![](assets/reporting_add_statistics.png)
 

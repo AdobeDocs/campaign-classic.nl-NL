@@ -26,8 +26,8 @@ Met Adobe Campaign kunt u verzamelde webtraceringsgegevens koppelen aan een ontv
 
 Om anonieme het volgen van het Web op uw instantie toe te laten, moeten de volgende elementen worden gevormd:
 
-* De **trackWebVisitors**-parameter van het **redirection**-element van het **serverConf.xml**-bestand van de trackingserver moet zijn ingesteld op &#39;**true**&#39; om een permanente cookie (**uuuid230**) te plaatsen>) in de browsers van onbekende internetgebruikers die de site bezoeken.
-* De **Anonieme wijze van het Web die** volgen moet in het volgende configuratiescherm van de plaatsingstovenaar worden geselecteerd.
+* De **trackWebVisitors** parameter van de **omleiding** van het **serverConf.xml** bestand van de trackingserver moet zijn ingesteld op &#39;**true**&quot;, om een permanent cookie te plaatsen (**uuid230**) in de browsers van onbekende internetgebruikers die de site bezoeken.
+* De **Anonieme webtracering** De wijze moet in het volgende configuratiescherm van de plaatsingstovenaar worden geselecteerd.
 
    ![](assets/webtracking_anonymous_set.png)
 

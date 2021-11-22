@@ -19,9 +19,9 @@ ht-degree: 4%
 
 De aanbiedingen kunnen op diverse aanbiedingsruimten worden voorgesteld gebruikend een binnenkomend of uitgaand kanaal. In dit hoofdstuk worden enkele specifieke functies voor binnenkomende kanalen beschreven.
 
-![](assets/do-not-localize/how-to-video.png) U kunt ook naar deze  [](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) video kijken waarin wordt beschreven hoe u een aanbieding op een binnenkomend kanaal kunt aanbieden.
+![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) dat details hoe te om een aanbieding op een binnenkomend kanaal te leveren.
 
-Voor een aanbieding die door de aanbiedingsmotor moet worden geselecteerd, moet het worden goedgekeurd en in een levende milieu beschikbaar zijn Voor meer op dit, verwijs naar [Goedkeuring en het activeren van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md).
+Om een aanbieding door de aanbiedingsmotor te kunnen selecteren, moet deze worden goedgekeurd en beschikbaar zijn in een live omgeving. Raadpleeg voor meer informatie over [Een aanbieding goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md).
 
 Wanneer een contact binnenkomend is, zijn er twee mogelijke resultaten: de gebruiker die pagina&#39;s bladert, kan door de website worden geïdentificeerd of niet. De aanbiedingsengine biedt verschillende aanbiedingen, afhankelijk van of de gebruiker al dan niet is geïdentificeerd.
 
@@ -31,4 +31,4 @@ Alvorens aanbiedingen op een binnenkomend kanaal te kunnen voorstellen, moet u d
 >
 >Voor binnenkomende interactie, moet u de aanbiedingsmotor specifiek vormen om één of verscheidene aanbiedingen voor te stellen en bij te werken.
 >
->Je moet de eenheidsmodus ook inschakelen voor je aanbiedingsruimten. Raadpleeg voor meer informatie de sectie [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md).
+>Je moet de eenheidsmodus ook inschakelen voor je aanbiedingsruimten. Raadpleeg voor meer informatie de [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) sectie.

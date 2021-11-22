@@ -17,28 +17,28 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Verpersoonlijkingsblokken invoegen](#inserting-personalization-blocks).
+De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Aanmaakblokken invoegen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#personalization-blocks-video)
 
-De blokken van de Personalisering worden betreden via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knoop van de ontdekkingsreiziger van Adobe Campaign. Verscheidene blokken zijn beschikbaar door gebrek (zie [Out-of-the-box verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
+Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
-U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Voor meer op dit, verwijs naar [Bepalend de blokken van de douaneverpersoonlijking](#defining-custom-personalization-blocks).
+U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Raadpleeg voor meer informatie hierover [Aangepaste aanpassingsblokken definiëren](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
->De blokken van de aanpassing zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]**. Raadpleeg [deze pagina](../../web/using/editing-content.md#inserting-a-personalization-block) voor meer informatie.
+>De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . Raadpleeg [deze pagina](../../web/using/editing-content.md#inserting-a-personalization-block) voor meer informatie.
 
 ## Aanmaakblokken invoegen {#inserting-personalization-blocks}
 
 Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een bericht:
 
-1. Klik in de inhoudseditor van de wizard voor levering op het pictogram van het gepersonaliseerde veld en selecteer het menu **[!UICONTROL Include]**.
-1. Selecteer een verpersoonlijkingsblok van de lijst (de lijst toont de 10 laatst gebruikte blokken), of klik **[!UICONTROL Other...]** menu om tot de volledige lijst toegang te hebben.
+1. Klik in de inhoudseditor van de wizard voor levering op het pictogram van een gepersonaliseerd veld en selecteer het pictogram **[!UICONTROL Include]** -menu.
+1. Selecteer een verpersoonlijkingsblok in de lijst (in de lijst staan de tien laatst gebruikte blokken) of klik op de knop **[!UICONTROL Other...]** voor toegang tot de volledige lijst.
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. Het **[!UICONTROL Other...]** menu geeft toegang tot alle uit-van-de-doos en douane verpersoonlijkingsblokken (zie [Out-of-the-box verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks) en [Bepalend douaneverpersoonlijkingsblokken](#defining-custom-personalization-blocks)).
+1. De **[!UICONTROL Other...]** geeft toegang tot alle uit-van-de-doos en douane verpersoonlijkingsblokken (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks) en [Aangepaste aanpassingsblokken definiëren](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -46,15 +46,15 @@ Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een beri
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
-1. Klik op het tabblad **[!UICONTROL Preview]** en selecteer een ontvanger om de personalisatie weer te geven.
+1. Klik op de knop **[!UICONTROL Preview]** en selecteert u een ontvanger om de personalisatie weer te geven.
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
-U kunt de broncode van een verpersoonlijkingsblok in de leveringsinhoud omvatten. Selecteer **[!UICONTROL Include the HTML source code of the block]** wanneer u dit wilt doen.
+U kunt de broncode van een verpersoonlijkingsblok in de leveringsinhoud omvatten. Selecteer **[!UICONTROL Include the HTML source code of the block]** wanneer u het selecteert.
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-De HTML-broncode wordt ingevoegd in de leveringsinhoud. Het **[!UICONTROL Greetings]**-aanpassingsblok wordt bijvoorbeeld als volgt weergegeven:
+De broncode van de HTML wordt opgenomen in de leveringsinhoud. De **[!UICONTROL Greetings]** de vertoningen van het verpersoonlijkingsblok zoals hieronder:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -70,16 +70,16 @@ Om dit te doen, moeten wij de volgende verpersoonlijkingsblokken opnemen:
 
 >[!NOTE]
 >
->Raadpleeg [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
+>Raadpleeg voor meer informatie over het genereren van spiegelpagina&#39;s [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page).
 
 1. Maak een nieuwe levering of open een bestaande e-maillevering.
-1. Klik in de wizard voor aflevering op **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en een onderwerp in te voeren.
-1. Neem de verpersoonlijkingsblokken in het berichtlichaam op. Klik hiertoe in de berichtinhoud, klik op het pictogram van het gepersonaliseerde veld en selecteer het menu **[!UICONTROL Include]**.
+1. Klik in de wizard voor levering op **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en een onderwerp in te voeren.
+1. Neem de verpersoonlijkingsblokken in het berichtlichaam op. Om dit te doen, klik in de berichtinhoud, klik het gepersonaliseerde gebiedspictogram en selecteer **[!UICONTROL Include]** -menu.
 1. Selecteer het eerste blok dat u wilt invoegen. Vernieuw de procedure om de twee andere blokken op te nemen.
 
    ![](assets/s_ncs_user_personalized_block_example.png)
 
-1. Klik op het tabblad **[!UICONTROL Preview]** om het verpersoonlijkingsresultaat weer te geven. U moet een ontvanger selecteren om het bericht van die ontvanger te tonen.
+1. Klik op de knop **[!UICONTROL Preview]** om het verpersoonlijkingsresultaat weer te geven. U moet een ontvanger selecteren om het bericht van die ontvanger te tonen.
 
    ![](assets/s_ncs_user_personalized_block_example2.png)
 
@@ -102,12 +102,12 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
 
    >[!NOTE]
    >
-   >Raadpleeg [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
+   >Raadpleeg voor meer informatie over het genereren van spiegelpagina&#39;s [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Klik hier als je dit bericht niet juist kunt weergeven.&quot;
 * **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (lijst van gewezen personen).
-* **[!UICONTROL Formatting function for proper nouns]** : Hiermee wordt de functie  **[!UICONTROL toSmartCase]** JavaScript gegenereerd. De eerste letter van elk woord wordt in hoofdletters gewijzigd.
-* **[!UICONTROL Registration page URL]** : voegt een abonnement-URL in (zie  [Informatie over services en abonnementen](about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatting function for proper nouns]** : genereert de **[!UICONTROL toSmartCase]** De functie Javascript, die de eerste letter van elk woord in hoofdletters verandert.
+* **[!UICONTROL Registration page URL]** : voegt een abonnement-URL in (zie [Informatie over services en abonnementen](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : voegt een abonnementkoppeling in. die is gedefinieerd tijdens het configureren van de instantie.
 * **[!UICONTROL Registration link (with referrer)]** : voegt een abonnementkoppeling in, waarmee de bezoeker en de levering kunnen worden geïdentificeerd. De koppeling is gedefinieerd tijdens het configureren van de instantie.
 
@@ -116,31 +116,31 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
    >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee u het abonnement kunt bevestigen.
-* **[!UICONTROL Social network sharing links]** : voegt knopen in die de ontvanger toelaten om een verbinding aan de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, Twitter, en LinkedIn te delen (zie  [Viral marketing: door naar een vriend](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
-* **[!UICONTROL Style of content emails]** en  **[!UICONTROL Notification style]** : genereren code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
-* **[!UICONTROL Offer acceptance URL in unitary mode]** : voegt een URL in waarmee een interactieaanbieding kan worden ingesteld op  **[!UICONTROL Accepted]** (zie  [deze sectie](../../interaction/using/offer-analysis-report.md)).
+* **[!UICONTROL Social network sharing links]** : voegt knoppen in waarmee de ontvanger een koppeling naar de inhoud van de spiegel kan delen met de e-mailclient, Facebook, Twitter en LinkedIn (zie [Virale marketing: doorsturen naar een vriend](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Style of content emails]** en **[!UICONTROL Notification style]** : genereren code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in worden opgenomen **[!UICONTROL ...]** sectie, naar **`<style>...</style>`** -tags.
+* **[!UICONTROL Offer acceptance URL in unitary mode]** : voegt een URL in waarmee een interactieaanbieding kan worden ingesteld op **[!UICONTROL Accepted]** (zie [deze sectie](../../interaction/using/offer-analysis-report.md)).
 
 ## Aangepaste aanpassingsblokken definiëren {#defining-custom-personalization-blocks}
 
-U kunt nieuwe verpersoonlijkingsgebieden bepalen die van het gepersonaliseerde gebiedspictogram via het **[!UICONTROL Include...]** menu moeten worden opgenomen. Deze gebieden worden bepaald in verpersoonlijkingsblokken.
+U kunt nieuwe verpersoonlijkingsgebieden bepalen die van het gepersonaliseerde gebiedspictogram via worden opgenomen **[!UICONTROL Include...]** -menu. Deze gebieden worden bepaald in verpersoonlijkingsblokken.
 
 Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsblok te maken:
 
-1. Klik op het knooppunt **[!UICONTROL Resources > Campaign Management > Personalization blocks]**.
-1. Klik met de rechtermuisknop op de lijst met blokken en selecteer **[!UICONTROL New]**.
+1. Klik op de knop **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt.
+1. Klik met de rechtermuisknop op de lijst met blokken en selecteer **[!UICONTROL New]** .
 1. Vul de instellingen van het verpersoonlijkingsblok in:
 
    ![](assets/s_ncs_user_personalized_block.png)
 
    * Voer het label van het blok in. Dit label wordt weergegeven in het invoegvenster van het aanpassingsveld.
-   * Selecteer **[!UICONTROL Visible in the customization menus]** om dit blok toegankelijk van het pictogram van het verpersoonlijkingsgebiedtoevoeging te maken.
-   * Selecteer zo nodig **[!UICONTROL The content of the personalization block depends upon the format]** om twee aparte blokken voor e-mails in HTML-indeling en blokken in tekstindeling te definiëren.
+   * Selecteren **[!UICONTROL Visible in the customization menus]** om dit blok toegankelijk te maken vanaf het pictogram voor het invoegen van het aanpassingsveld.
+   * Selecteer indien nodig **[!UICONTROL The content of the personalization block depends upon the format]** om twee aparte blokken voor e-mails in de indeling HTML en in de tekstindeling te definiëren.
 
-      Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (HTML-inhoud en tekstinhoud) om de bijbehorende inhoud te definiëren.
+      Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (inhoud van HTML en tekst) om de bijbehorende inhoud te definiëren.
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik **[!UICONTROL Save]**.
+   * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik op **[!UICONTROL Save]**.
 
 ## Video over zelfstudie {#personalization-blocks-video}
 
@@ -148,4 +148,4 @@ Leer hoe u dynamische inhoudsblokken maakt en hoe u deze kunt gebruiken om de in
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

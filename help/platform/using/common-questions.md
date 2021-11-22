@@ -9,7 +9,7 @@ exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 meest gesteld
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
-Als u de Beheerde Diensten van Adobe gebruikt, kunt u van Campagne [!DNL Gold Standard] bevorderen. Raadpleeg [dit artikel](../../rn/using/gs-overview.md) voor meer informatie.
+Als u de Beheerde Diensten van Adobe gebruikt, kunt u van Campagne profiteren [!DNL Gold Standard] upgrade uitvoeren. Raadpleeg [dit artikel](../../rn/using/gs-overview.md) voor meer informatie.
 
 [Lees deze sectie](../../production/using/build-upgrade.md) om te leren hoe u uw omgeving kunt bijwerken en lees de [Algemene vragen](../../platform/using/faq-build-upgrade.md) over dit specifieke onderwerp.
 
@@ -74,4 +74,4 @@ U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](../..
 Een subdomein is een afdeling van uw domein dat kan worden gebruikt om uw merken of diverse typen van traffic (transactionele berichten, marketinginformatie, enzovoort) te isoleren.
 Adobe houdt rekening met het DNS (Domain Name System) voor e-maillevering, dat een klant toestaat om zijn merkimago te behouden door een DNS-alias met zijn domeinnamen te gebruiken, en Adobe om autonoom alle technische best practices uit te voeren die het toestaan om de leverbaarheid tijdens het e-mailen te optimaliseren.
 
-[Klik hier voor meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html).
+[Klik hier voor meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl).

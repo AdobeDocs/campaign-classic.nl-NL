@@ -19,30 +19,30 @@ ht-degree: 2%
 
 U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die toegankelijk zijn vanuit het leveringsoverzicht. Pas de volgende procedure toe om rapporten weer te geven:
 
-1. Ga naar de **[!UICONTROL Campaigns]** tabel en klik op de koppeling **[!UICONTROL Delivery]** om de lijst met leveringen weer te geven.
+1. Ga naar de **[!UICONTROL Campaigns]** en klik op de knop **[!UICONTROL Delivery]** koppeling om de lijst met leveringen weer te geven.
 1. Klik op de naam van de levering die u wilt weergeven om de details weer te geven.
 
    ![](assets/s_ncs_user_detailled_report.png)
 
-1. Selecteer het tabblad **[!UICONTROL Summary]** en klik op de koppeling **[!UICONTROL Reports]** om de specifieke rapporten voor de levering te openen.
+1. Selecteer **[!UICONTROL Summary]** en klik op de knop **[!UICONTROL Reports]** link naar de specifieke rapporten over de levering.
 
    ![](assets/s_ncs_user_detailled_report2.png)
 
    Standaard zijn de volgende rapporten beschikbaar:
 
-   * **[!UICONTROL Delivery throughput]** : Raadpleeg de  [leveringstijd](../../reporting/using/global-reports.md#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : Zie  [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : zie  [Statistieken over het delen van activiteiten](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
-   * **[!UICONTROL Hot clicks]** : zie  [Hete kliks](#hot-clicks).
-   * **[!UICONTROL Tracking statistics]** : verwijzen naar  [volgstatistieken](#tracking-statistics)
-   * **[!UICONTROL URLs and click streams]** : verwijst naar  [URLs en klikt stromen](#urls-and-click-streams).
-   * **[!UICONTROL Tracking indicators]** : zie  [Trackingindicatoren](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar  [Niet te leveren items en stuitingen](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : zie  [Gebruikersactiviteiten](../../reporting/using/global-reports.md#user-activities).
-   * **[!UICONTROL Delivery summary]** : raadpleeg het overzicht [ van de ](#delivery-summary)levering.
-   * **[!UICONTROL Subscription tracking]** : Raadpleeg  [Abonnementsbeheer](../../reporting/using/global-reports.md#subscription-tracking).
-   * **[!UICONTROL Delivery statistics]** : zie  [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : Zie  [Uitsplitsing van openen](../../reporting/using/global-reports.md#breakdown-of-opens).
+   * **[!UICONTROL Delivery throughput]** : verwijzen naar [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Sharing to social networks]** : verwijzen naar [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistics on sharing activities]** : verwijzen naar [Statistieken over de activiteiten voor het delen van diensten](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
+   * **[!UICONTROL Hot clicks]** : verwijzen naar [Hot kliks](#hot-clicks).
+   * **[!UICONTROL Tracking statistics]** : verwijzen naar [Trackingstatistieken](#tracking-statistics)
+   * **[!UICONTROL URLs and click streams]** : verwijzen naar [URL&#39;s en klik op streams](#urls-and-click-streams).
+   * **[!UICONTROL Tracking indicators]** : verwijzen naar [Traceringsindicatoren](#tracking-indicators).
+   * **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar [Niet-te leveren producten en bedragen](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL User activities]** : verwijzen naar [Gebruikersactiviteiten](../../reporting/using/global-reports.md#user-activities).
+   * **[!UICONTROL Delivery summary]** : verwijzen naar [Overzicht van levering](#delivery-summary).
+   * **[!UICONTROL Subscription tracking]** : verwijzen naar [Abonnement bijhouden](../../reporting/using/global-reports.md#subscription-tracking).
+   * **[!UICONTROL Delivery statistics]** : verwijzen naar [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Breakdown of opens]** : verwijzen naar [Indeling van openen](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Trackingsindicatoren {#tracking-indicators}
 
@@ -50,7 +50,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 
 >[!NOTE]
 >
->Waarden die worden berekend op basis van berichten die worden geopend, zijn altijd schattingen, vanwege de foutmarge die is gekoppeld aan e-mails in tekstindeling. De **[!UICONTROL Distinct opens/Sum of opens for the population reached]**-indicatoren houden rekening met deze foutenmarge. Voor meer informatie over het volgen opent, verwijs naar [het Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
+>Waarden die worden berekend op basis van berichten die worden geopend, zijn altijd schattingen, vanwege de foutmarge die is gekoppeld aan e-mails in tekstindeling. De **[!UICONTROL Distinct opens/Sum of opens for the population reached]** deze foutenmarge wordt in aanmerking genomen. Voor meer informatie over het volgen opent opent, verwijs naar [Tekstspatiëring wordt geopend](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -68,12 +68,12 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 * **[!UICONTROL Distinct opens for the population reached]** : Schatting van het aantal ontvangers voor wie het bericht bestemd is dat een bericht ten minste eenmaal heeft geopend. Er wordt rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
 * **[!UICONTROL Sum of opens for the population reached]** : Schatting van het totale aantal openingen door de beoogde ontvangers.
 * **[!UICONTROL Clicks on opt-out link]** : Aantal klikken op de verbinding van het unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Zie deze [pagina](../../delivery/using/about-delivery-monitoring.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Zie dit [page](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Schatting van het aantal e-mails dat door de beoogde ontvangers is doorgestuurd. Deze waarde wordt berekend door het aantal verschillende personen en het aantal verschillende ontvangers af te trekken die in de e-mail hebben geklikt.
 
    >[!NOTE]
    >
-   >Raadpleeg [Gerichte personen / ontvangers](../../reporting/using/indicator-calculation.md#targeted-persons---recipients) voor meer informatie over het verschil tussen verschillende personen en beoogde ontvangers.
+   >Voor meer informatie over het verschil tussen verschillende personen en beoogde ontvangers raadpleegt u [Gerichte personen/ontvangers](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -87,7 +87,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de gespecificeerde lijst **[!UICONTROL Domains]** en wijzigt u waarden en aliassen. Raadpleeg [deze sectie](../../platform/using/managing-enumerations.md) voor meer informatie. De categorie **[!UICONTROL Others]** bevat domeinnamen die niet bij een waarde van de gespecificeerde lijst horen.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt waarden en aliassen. Raadpleeg [deze sectie](../../platform/using/managing-enumerations.md) voor meer informatie. De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -98,7 +98,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 * **[!UICONTROL Distinct clicks for the population reached]** : Aantal verschillende personen dat ten minste één keer in een levering heeft geklikt.
 * **[!UICONTROL Cumulated clicks]** : Het totale aantal klikken door beoogde ontvangers, exclusief koppelingen zonder abonnement en spiegel.
 * **[!UICONTROL Recipient clicks]** : Aantal afzonderlijke beoogde ontvangers die minstens één keer op dezelfde levering hebben geklikt.
-* **[!UICONTROL Estimated recipient reactivity]** : Verhouding tussen het aantal ontvangers dat ten minste eenmaal in een levering heeft geklikt en het geschatte aantal ontvangers dat een levering ten minste eenmaal heeft geopend. Er wordt geen rekening gehouden met de klikken op de pagina-link Weigeren en de koppeling spiegelen.
+* **[!UICONTROL Estimated recipient reactivity]** : Verhouding van het aantal ontvangers dat ten minste eenmaal in een levering heeft geklikt ten opzichte van het geschatte aantal ontvangers dat een levering ten minste eenmaal heeft geopend. Er wordt geen rekening gehouden met de klikken op de pagina-link Weigeren en de koppeling spiegelen.
 
 **[!UICONTROL 5. Web tracking]**
 
@@ -116,7 +116,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-Deze sectie toont het aantal berichten die op elk sociaal netwerk worden gedeeld. Raadpleeg [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks) voor meer informatie.
+Deze sectie toont het aantal berichten die op elk sociaal netwerk worden gedeeld. Raadpleeg voor meer informatie hierover [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
 
 ## URL&#39;s en klikpaden {#urls-and-click-streams}
 
@@ -132,7 +132,7 @@ De volgende tarieven worden getoond in de hogere sectie van het rapport:
 
    >[!NOTE]
    >
-   >Voor meer informatie over het volgen opent, verwijs naar [het Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
+   >Voor meer informatie over het volgen opent opent, verwijs naar [Tekstspatiëring wordt geopend](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 * **[!UICONTROL Distinct clicks]** : Aantal verschillende personen dat ten minste één keer heeft geklikt (met uitzondering van de koppeling zonder abonnement en de spiegel) in een levering. De getoonde snelheid wordt berekend op basis van het aantal berichten dat met succes is afgeleverd.
 * **[!UICONTROL Cumulated clicks]** : Het totale aantal klikken door beoogde ontvangers (exclusief koppeling zonder abonnement en spiegel). Het getoonde tarief wordt berekend gebaseerd op het aantal berichten met succes door:sturen.
@@ -159,7 +159,7 @@ Dit rapport bevat alle belangrijke informatie over de levering.
 Deze sectie heeft twee indicatoren:
 
 * **[!UICONTROL Initial population]** : Het totale aantal ontvangers waarop de levering betrekking heeft.
-* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: het adres ontbreekt, quarantined, op lijst van gewezen personen, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) voor meer informatie over typologische regels.
+* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: het adres ontbreekt, quarantined, op lijst van gewezen personen, enz. Zie voor meer informatie over typologische regels [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -194,6 +194,6 @@ Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren 
 
 Dit rapport bevat een tabel met waarden en een Pareto-grafiek met de tijd die nodig is voor de levering om de maximale efficiëntie te bereiken. De volgende indicatoren worden gebruikt:
 
-* **[!UICONTROL Opens]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geopende berichten te bereiken. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent, verwijs naar [het Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
+* **[!UICONTROL Opens]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geopende berichten te bereiken. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent opent, verwijs naar [Tekstspatiëring wordt geopend](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geregistreerde klikken te bereiken. Klikken op de opt-out-koppeling en de spiegelpagina worden niet in aanmerking genomen.
 * **[!UICONTROL Transactions]** : Tijd die nodig is om een percentage van het totale aantal transacties na ontvangst van berichten te bereiken. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).

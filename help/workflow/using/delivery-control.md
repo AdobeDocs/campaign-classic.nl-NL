@@ -17,13 +17,13 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Met een handeling van het type **Delivery control** kunt u een levering starten, pauzeren of stoppen.
+A **Afleveringscontrole** Met een handeling van het type -kunt u een levering starten, pauzeren of stoppen.
 
-Dit kan de levering zijn die in de overgang wordt gespecificeerd, uitdrukkelijk geselecteerde levering, of een levering die door een manuscript wordt berekend. Raadpleeg [Delivery](delivery.md) voor meer informatie hierover.
+Dit kan de levering zijn die in de overgang wordt gespecificeerd, uitdrukkelijk geselecteerde levering, of een levering die door een manuscript wordt berekend. Raadpleeg voor meer informatie hierover [Aflevering](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Als u **[!UICONTROL Start]** selecteert, voert de activiteit alle stappen uit die worden vereist om de levering te beginnen (doelberekening, inhoudsvoorbereiding, levering). Als sommige van deze stappen al zijn uitgevoerd door een eerdere workflowactiviteit, worden ze niet opnieuw uitgevoerd. Als de doelschatting bijvoorbeeld al is uitgevoerd door een **[!UICONTROL Delivery]** type activiteit (zie [Delivery](delivery.md)), start de **[!UICONTROL Act on the delivery]** activiteit de resterende stappen (voorbereiding en levering van inhoud).
+Als u **[!UICONTROL Start]**, voert de activiteit alle stappen uit die nodig zijn om de levering te starten (doelberekening, inhoudsvoorbereiding, levering). Als sommige van deze stappen al zijn uitgevoerd door een eerdere workflowactiviteit, worden ze niet opnieuw uitgevoerd. Als de doelschatting bijvoorbeeld al is uitgevoerd door een **[!UICONTROL Delivery]** tekstactiviteit (zie [Aflevering](delivery.md)), de **[!UICONTROL Act on the delivery]** de resterende stappen ( voorbereiding en levering van inhoud ) zullen worden opgestart .
 
 De volgende opties zijn beschikbaar:
 
@@ -33,10 +33,10 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Processing errors]**
 
-   Zie [Fouten verwerken](monitoring-workflow-execution.md#processing-errors).
+   Zie [Verwerkingsfouten](monitoring-workflow-execution.md#processing-errors).
 
 ## Invoerparameters {#input-parameters}
 
 * deliveryId
 
-Leverings-id als de geselecteerde actie **[!UICONTROL Specified in the transition]** is.
+Leverings-id als de geselecteerde actie **[!UICONTROL Specified in the transition]**.

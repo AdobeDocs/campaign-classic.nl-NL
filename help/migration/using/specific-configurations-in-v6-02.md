@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in [Algemene configuraties](../../migration/using/general-configurations.md) sectie worden gedetailleerd.
+In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in [Algemene configuraties](../../migration/using/general-configurations.md) sectie.
 
 ## Webapplicaties {#web-applications}
 
@@ -37,13 +37,13 @@ Als u deze webtoepassingen niet hebt gebruikt, voert u het volgende opschoonscri
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, moet u de optie **allowSQLInjection** in uw verschillende beveiligingszones activeren en de postupgrade opnieuw starten. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
+Als u deze webtoepassingen hebt gewijzigd en u wilt deze blijven gebruiken in v7, moet u het dialoogvenster **allowSQLInjection** in uw verschillende beveiligingszones en start de naupgrade opnieuw. Zie de [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
 
 ## Gebruikersvriendelijkheid: Homepage en navigatie {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Als u v6.02 overzicht-type van Web toepassingen wilt blijven gebruiken, moet u **allowSQLInjection** optie in uw verschillende veiligheidsstreken vóór de postupgrade activeren. Zie [Webtoepassingen](#web-applications).
+>Als u wilt doorgaan met het gebruik van v6.02-webtoepassingen met een overzichtstype, moet u het dialoogvenster **allowSQLInjection** in uw verschillende veiligheidsstreken vóór postupgrade. Zie [Webtoepassingen](#web-applications).
 
 Na een migratie van versie 6.02 wordt de Adobe Campaign v6.02-startpagina niet meer weergegeven, maar is deze nog steeds toegankelijk en compatibel met Adobe Campaign v7.
 
@@ -51,9 +51,9 @@ Als u de v6.02-startpagina wilt blijven gebruiken, moet u na de migratie een pak
 
 Hiertoe importeert u het compatibiliteitspakket:
 
-Klik **[!UICONTROL Tools > Advanced > Import package]** en kies **campagneMigration.xml** pakket in **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klikken **[!UICONTROL Tools > Advanced > Import package]** en kiest u **campagneMigration.xml** in de **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Om toegang tot de v6.02 het type van Toepassing van het Web interfaces toe te staan, moet **sessionTokenOnly** de optie van de serverconfiguratie in **serverConf.xml** dossier worden geactiveerd:
+Om toegang tot de v6.02 het type van Toepassing van het Web interfaces toe te staan, **sessionTokenOnly** de serverconfiguratieoptie moet in **serverConf.xml** bestand:
 
 ```
 sessionTokenOnly="true"
@@ -79,4 +79,4 @@ Als u een ander overzicht wilt toevoegen dat is geconfigureerd in v6.02, moet u 
 
 Na een migratie van de controleinstantie van het Centrum van het Bericht, moet u de transactionele berichtmalplaatjes voor hen opnieuw publiceren om te werken.
 
-In v7 zijn de namen van transactionele berichtsjablonen op uitvoeringsinstanties gewijzigd. Ze worden momenteel voorafgegaan door de naam van de operator die overeenkomt met de besturingsinstantie waarop ze zijn gemaakt, bijvoorbeeld **control1_template1_rt** (waarbij **control1** de naam van de operator is). Als u een significant volume van malplaatjes hebt, adviseren wij schrappend oude malplaatjes op controleinstanties.
+In v7 zijn de namen van transactionele berichtsjablonen op uitvoeringsinstanties gewijzigd. Ze worden momenteel voorafgegaan door de naam van de operator die correspondeert met de besturingsinstantie waarop ze zijn gemaakt, bijvoorbeeld **control1_template1_rt** waarbij **control1** is de naam van de operator). Als u een significant volume van malplaatjes hebt, adviseren wij schrappend oude malplaatjes op controleinstanties.

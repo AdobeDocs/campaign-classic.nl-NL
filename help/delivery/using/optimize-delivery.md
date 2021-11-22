@@ -8,7 +8,7 @@ exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -24,15 +24,15 @@ In de volgende sectie worden aanbevolen procedures en aanbevolen procedures voor
 
 Verschillende factoren kunnen de serverprestaties rechtstreeks beïnvloeden en het platform vertragen:
 
-* Het aantal en het type van verpersoonlijkingselementen: personalisatie in e-mailberichten haalt gegevens uit de database voor elke ontvanger. Als er vele verpersoonlijkingselementen zijn, verhoogt dat de hoeveelheid gegevens nodig om de levering voor te bereiden.  Meer informatie over personalisatie vindt u in [deze sectie](about-personalization.md)
+* Het aantal en het type van verpersoonlijkingselementen: personalisatie in e-mailberichten haalt gegevens uit de database voor elke ontvanger. Als er vele verpersoonlijkingselementen zijn, verhoogt dat de hoeveelheid gegevens nodig om de levering voor te bereiden.  Meer informatie over personalisatie in [deze sectie](about-personalization.md)
 
 * De server wordt geladen: wanneer de marketingserver verschillende taken tegelijk afhandelt, kan dit de prestaties vertragen. De marketingserver moet alle inkomende en uitgaande gegevens voor alle leveringen coördineren om ervoor te zorgen dat de gegevens correct en op tijd zijn.
 
-   **TIP**  - om dit te vermijden, coördineert het plannen van leveringen met de andere leden van uw team om de beste prestaties te verzekeren.
+   **TIP** - Om dit te voorkomen, coördineert u de planning van de leveringen met de andere leden van uw team om de beste prestaties te garanderen.
 
-* De workflowuitvoering: het controleren van uw workflows is essentieel om problemen met de prestaties van het platform te voorkomen. Volg de richtlijnen [in dit document](../../workflow/using/workflow-best-practices.md#execution-and-performance) worden vermeld die.
+* De workflowuitvoering: het controleren van uw workflows is essentieel om problemen met de prestaties van het platform te voorkomen. Volg de vermelde richtlijnen [in dit document](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Als u hiervoor in aanmerking komt, kunt u [Mogelijkheden van het Configuratiescherm ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) gebruiken om uw platform te bewaken met behulp van [prestatiebewaking](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html) functies.
+* Als je hiervoor in aanmerking komt, kun je gebruikmaken van [Mogelijkheden van het bedieningspaneel voor campagnes](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) om uw platform te controleren, gebruiken [prestatiebewaking](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=nl) functies.
 
 ## Netwerkconfiguratie controleren {#network-config}
 
@@ -48,9 +48,9 @@ Om uw ontvangers&#39; te bereiken inbox zonder te stuiteren of als spam worden g
 
    * Het verwijst naar de factoren van een e-mail die zijn capaciteit bepalen om door de server van een ontvanger worden goedgekeurd. ISPs (de Dienstverleners van Internet) filter uit e-mails die zij als SPAM identificeren, of zij blokkeren beelden van het downloaden. Als ze vaststellen dat een bepaald domein te veel e-mails verzendt, stellen ze een limiet in voor het aantal e-mails dat ze van die afzender accepteren.
 
-   * Wanneer u uw e-mail controleert op leverbaarheid, wilt u zich op vier hoofdcategorieën concentreren: gegevenskwaliteit, bericht en inhoud, verzendende infrastructuur, en reputatie. Raadpleeg [deze sectie](about-deliverability.md) voor een dieper overzicht van dit onderwerp.
+   * Wanneer u uw e-mail controleert op leverbaarheid, wilt u zich op vier hoofdcategorieën concentreren: gegevenskwaliteit, bericht en inhoud, verzendende infrastructuur, en reputatie. Voor een diepere bespreking van dit onderwerp, verwijs naar [deze sectie](about-deliverability.md).
 
-* Pas de aanbevelingen toe [in dit document](about-deliverability.md) worden gedetailleerd.
+* De gedetailleerde aanbevelingen toepassen [in dit document](about-deliverability.md).
 
 * Neem contact op met uw Adobe-vertegenwoordiger voor hulp.
 
@@ -62,7 +62,7 @@ Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst
 
 **Tips**
 
-* Als u een lijst met ongeldige adressen hebt, raadt Adobe u aan deze te importeren in de quarantainetabel via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
+* Als u een lijst met ongeldige adressen hebt, raadt Adobe u aan deze te importeren in de quarantainetabel, via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
 * De ontvangers de waarvan adressen quarantined zijn uitgesloten door gebrek tijdens de leveringsanalyse: zij zijn niet gericht . Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid. Een e-mailadres kan in quarantaine worden geplaatst bijvoorbeeld wanneer inbox volledig is of als het adres niet bestaat. [Meer informatie](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -77,4 +77,4 @@ Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst
 
 Om te voorkomen dat berichten naar ongeldige adressen worden verzonden, onjuiste communicatie wordt beperkt en de reputatie van de afzender wordt verbeterd, raadt Adobe aan een dubbele opt-in-mechanisme in te voeren voor bevestiging na abonnement. Zo weet u zeker dat een ontvanger met opzet is geabonneerd.
 
-De details voor het uitvoeren van dit mechanisme worden geschetst in [dit sectie](../../web/using/use-cases--web-forms.md).
+Nadere bijzonderheden over de toepassing van dit mechanisme worden uiteengezet in [deze sectie](../../web/using/use-cases--web-forms.md).

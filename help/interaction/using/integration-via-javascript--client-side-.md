@@ -29,30 +29,29 @@ Het script dat URL aanroept ziet er als volgt uit:
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-De parameter &quot;**env**&quot;ontvangt de interne naam van het levende milieu gewijd aan anonieme interactie.
+De &quot;**env**&quot; de parameter ontvangt de interne naam van het levende milieu gewijd aan anonieme interactie.
 
-Om een aanbieding te presenteren, moeten wij een milieu en een aanbiedingsruimte in Adobe Campaign creëren, dan de HTML- pagina vormen.
+Om een aanbieding te presenteren, moeten wij een milieu en een aanbiedingsruimte in Adobe Campaign creëren, dan de pagina van de HTML vormen.
 
 In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het integreren van aanbiedingen via JavaScript.
 
-## HTML-modus {#html-mode}
+## HTML, modus {#html-mode}
 
 ### Een anonieme aanbieding presenteren {#presenting-an-anonymous-offer}
 
 1. **De interactie-engine voorbereiden**
 
-   Open de Adobe Campaign-interface en bereid een anonieme omgeving voor.
+   Open the Adobe Campaign interface and prepare an anonymous environment.
 
    Maak een aanbiedingsruimte die is gekoppeld aan de anonieme omgeving.
 
    Maak een aanbieding en geef deze weer in verband met de aanbiedingsruimte.
 
-1. **Inhoud van de HTML-pagina**
+1. **Inhoud van de pagina HTML**
 
-   De HTML-pagina moet een
+   De pagina HTML moet een
 
-   element met een @id-kenmerk met de waarde van de interne naam van de gemaakte aanbiedingsruimte (&quot;i_internal name space&quot;). Het aanbod wordt in dit
-element op interactie.
+   element met een @id-kenmerk met de waarde van de interne naam van de gemaakte aanbiedingsruimte (&quot;i_internal name space&quot;). Het aanbod zal in dit element door Interaction worden opgenomen.
 
    In ons voorbeeld ontvangt het kenmerk @id de waarde &quot;i_SPC12&quot;, waarbij &quot;SPC12&quot; de interne naam is van de eerder gemaakte aanbiedingsruimte:
 
@@ -68,15 +67,15 @@ element op interactie.
 
    >[!IMPORTANT]
    >
-   >De tag `<script>` mag niet zelfsluitend zijn.
+   >De `<script>` -tag mag niet zelfsluitend zijn.
 
    Deze statische vraag zal automatisch een dynamische vraag produceren die alle parameters bevat nodig door de motor van de Interactie.
 
    Dit gedrag laat u verscheidene aanbiedingsruimten op de zelfde pagina gebruiken, die door één enkele vraag aan de motor worden beheerd.
 
-1. **Resultaten in de HTML-pagina**
+1. **Resultaten in de pagina HTML**
 
-   De inhoud van de aanbiedingsrepresentatie wordt door de Interaction-engine geretourneerd aan de HTML-pagina:
+   De inhoud van de aanbiedingsvertegenwoordiging is teruggekeerd aan de pagina van de HTML door de motor van de Interactie:
 
    ```
    <div id="banner_header">
@@ -110,7 +109,7 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
 </script>
 ```
 
-1. Ga naar de aanbiedingsruimte die door de Web-pagina omhoog zal worden geroepen, klik **[!UICONTROL Advanced parameters]** en voeg één of meerdere identificatietoetsen toe.
+1. Ga naar de aanbiedingsruimte die door de webpagina wordt aangeroepen, en klik op **[!UICONTROL Advanced parameters]** en voeg een of meer identificatietoetsen toe.
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -118,7 +117,7 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
 
 1. Tijdens de Web-pagina vertoning, laat de manuscriptevaluatie u ontvankelijke identiteitskaart op de aanbiedingsmotor overgaan. Als de id een samenstelling heeft, worden de toetsen weergegeven in dezelfde volgorde als in de geavanceerde instellingen en worden ze van elkaar gescheiden door een |.
 
-   In het volgende voorbeeld is de contactpersoon aangemeld bij de website en is deze via e-mail en naam herkend tijdens het aanroepen naar de Interactie-engine.
+   In het volgende voorbeeld is de contactpersoon aangemeld bij de website en is deze via e-mail en naam herkend tijdens het aanroepen naar de Interaction-engine.
 
    ```
    <script type="text/javascript">
@@ -128,11 +127,11 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
 
 ### Een HTML-renderfunctie gebruiken {#using-an-html-rendering-function}
 
-Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u een renderfunctie gebruiken.
+To generate the HTML offer representation automatically, you can use a rendering function.
 
-1. Ga naar de aanbiedingsruimte en klik op de koppeling **[!UICONTROL Edit functions]**.
+1. Ga naar de aanbiedingsruimte en klik op de knop **[!UICONTROL Edit functions]** koppeling.
 1. Selecteer **[!UICONTROL Overload the HTML rendering function]**.
-1. Ga naar het **[!UICONTROL HTML rendering]** lusje en neem de variabelen op die de gebieden aanpassen die voor de aanbiedingsinhoud in de aanbiedingsruimte worden bepaald.
+1. Ga naar de **[!UICONTROL HTML rendering]** en voegt de variabelen die overeenkomen met de velden die voor de aanbiedingsinhoud zijn gedefinieerd, in de aanbiedingsruimte in.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -142,7 +141,7 @@ Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u
 
 ### Een voorstel presenteren {#presenting-an-offer}
 
-De interactie laat u een knoop van XML aan de HTML- pagina terugkeren die omhoog de aanbiedingsmotor roept. Dit XML-knooppunt kan worden verwerkt door functies die aan de kant van de klant moeten worden ontwikkeld.
+De interactie laat u een knoop van XML aan de pagina terugkeren van de HTML die de aanbiedingsmotor omhoog roept. Dit XML-knooppunt kan worden verwerkt door functies die aan de kant van de klant moeten worden ontwikkeld.
 
 De vraag aan de motor van de Interactie kijkt als dit:
 
@@ -150,17 +149,17 @@ De vraag aan de motor van de Interactie kijkt als dit:
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-De parameter &quot;**env**&quot; ontvangt de interne naam van de live omgeving.
+De &quot;**env**&quot; parameter ontvangt de interne naam van de live omgeving.
 
-De parameter &quot;**cb**&quot; ontvangt de naam van de functie die de XML-node zal lezen die wordt geretourneerd door de engine die de (callback) propositie(s) bevat. Deze parameter is optioneel.
+De &quot;**cb**&quot; parameter ontvangt de naam van de functie die het XML-knooppunt zal lezen dat wordt geretourneerd door de engine die de (callback) propositie(s) bevat. Deze parameter is optioneel.
 
-De parameter &quot;**t**&quot;ontvangt de waarde van het doel, slechts voor een geïdentificeerde interactie. Deze parameter kan ook met **interactionTarget** variabele worden overgegaan. Deze parameter is optioneel.
+De &quot;**t**&quot;parameter ontvangt de waarde van het doel, slechts voor een geïdentificeerde interactie. Deze parameter kan ook worden doorgegeven met de **interactionTarget** variabele. Deze parameter is optioneel.
 
-De parameter &quot;**c**&quot;ontvangt de lijst van interne namen van de categorieën. Deze parameter is optioneel.
+De &quot;**c**&quot; de parameter ontvangt de lijst van interne namen van de categorieën. Deze parameter is optioneel.
 
-De parameter &quot;**th**&quot;ontvangt de lijst van thema&#39;s. Deze parameter is optioneel.
+The &quot;**th**&quot; parameter receives the list of themes. Deze parameter is optioneel.
 
-De &quot;**gctx**&quot;parameter ontvangt de vraaggegevens globaal (context) aan de volledige pagina. Deze parameter is optioneel.
+De &quot;**gctx**&quot; parameter ontvangt de vraaggegevens globaal (context) aan de volledige pagina. Deze parameter is optioneel.
 
 Het geretourneerde XML-knooppunt ziet er als volgt uit:
 
@@ -173,19 +172,19 @@ Het geretourneerde XML-knooppunt ziet er als volgt uit:
 </propositions>
 ```
 
-In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Campaign moeten worden uitgevoerd om de XML-modus in te schakelen en wordt vervolgens het resultaat van de aanroep naar de engine in de HTML-pagina weergegeven.
+Het volgende gebruiksgeval specificeert de configuraties om in Adobe Campaign uit te voeren om de wijze van XML toe te laten dan het resultaat van de vraag aan de motor op de pagina van de HTML tonen.
 
 1. **Een omgeving en een aanbiedingsruimte maken**
 
-   Raadpleeg [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) voor meer informatie over het maken van een omgeving.
+   Raadpleeg voor meer informatie over het maken van een omgeving [Live/Design-omgevingen](../../interaction/using/live-design-environments.md).
 
-   Voor meer bij het creëren van een aanbiedingsruimte, verwijs naar [het Creëren van aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md).
+   Raadpleeg voor meer informatie over het maken van een aanbiedingsruimte [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md).
 
 1. **Het aanbiedingsschema uitbreiden om nieuwe velden toe te voegen**
 
    Met dit schema worden de volgende velden gedefinieerd: Titel nummer 2 en prijs.
 
-   De naam van het schema in het voorbeeld is **cus:aanbieding**
+   De naam van het schema in het voorbeeld is **focus:aanbieding**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -218,11 +217,11 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
    >[!NOTE]
    >
-   >U kunt het aanbiedingsschema uitbreiden om nieuwe velden toe te voegen in batch- en eenheidsmodus en in elke gewenste indeling (tekst, HTML en XML).
+   >U kunt het aanbiedingsschema uitbreiden om nieuwe velden zowel in batch- als eenheidsmodus en in elke gewenste indeling (tekst, HTML en XML) toe te voegen.
 
 1. **De aanbiedingsformule uitbreiden om nieuwe velden te bewerken en een bestaand veld te wijzigen**
 
-   Bewerk het invoerformulier **Aanbieding (nsm)**.
+   Bewerk de **Voorstel (nsm)** invoerformulier.
 
    Voeg in de sectie Weergaven de twee nieuwe velden in met de volgende inhoud:
 
@@ -262,34 +261,34 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
    >[!IMPORTANT]
    >
-   >De velden van het formulier ( `<input>`) moeten verwijzen naar de CDATA-typeelementen die zijn gedefinieerd in het gemaakte schema.
+   >De velden van de ( `<input>`) moet het formulier verwijzen naar de CDATA-typeelementen die zijn gedefinieerd in het gemaakte schema.
 
    De rendering in het formulier met aanbiedingsweergaven ziet er als volgt uit:
 
    ![](assets/interaction_xmlmode_form.png)
 
-   De velden **[!UICONTROL Title 2]** en **[!UICONTROL Price]** zijn toegevoegd en het veld **[!UICONTROL Destination URL]** wordt niet meer weergegeven.
+   De **[!UICONTROL Title 2]** en **[!UICONTROL Price]** zijn toegevoegd en **[!UICONTROL Destination URL]** wordt niet meer weergegeven.
 
 1. **Een aanbieding maken**
 
-   Raadpleeg [Een aanbieding maken](../../interaction/using/creating-an-offer.md) voor meer informatie over het maken van aanbiedingen.
+   Raadpleeg voor meer informatie over het maken van aanbiedingen [Een aanbieding maken](../../interaction/using/creating-an-offer.md).
 
    In het volgende gebruiksgeval wordt de aanbieding als volgt vermeld:
 
    ![](assets/interaction_xmlmode_offer.png)
 
 1. Goedkeuren of laten goedkeuren door iemand anders, dan activeren op de aanbiedingsruimte die bij de laatste stap is gecreëerd, zodat deze beschikbaar wordt gesteld in de gekoppelde live omgeving.
-1. **De vraag van de motor en resultaat op de HTML- pagina**
+1. **De vraag van de motor en het resultaat op de pagina van de HTML**
 
-   De aanroep van de interactieengine in de HTML-pagina ziet er als volgt uit:
+   De vraag aan de interactiemotor in de pagina van de HTML ziet als volgt:
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   De waarde van de parameter &quot;**env**&quot; is de interne naam van de live omgeving.
+   De waarde van &quot;**env**&quot; parameter is de interne naam van de live omgeving.
 
-   De waarde van de parameter &quot;**cb**&quot; is de naam van de functie die het XML-knooppunt moet interpreteren dat door de engine wordt geretourneerd. In ons voorbeeld opent de aangeroepen functie een modaal venster (alert() functie).
+   De waarde van &quot;**cb**&quot; parameter is de naam van de functie die het XML-knooppunt moet interpreteren dat door de engine wordt geretourneerd. In ons voorbeeld opent de aangeroepen functie een modaal venster (alert() functie).
 
    Het XML-knooppunt dat door de Interaction-engine wordt geretourneerd, ziet er als volgt uit:
 
@@ -311,11 +310,11 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
 ### Een renderfunctie gebruiken {#using-a-rendering-function-}
 
-Het is mogelijk een XML-renderfunctie te gebruiken om een aanbiedingspresentatie te maken. Deze functie wijzigt het XML-knooppunt dat tijdens de aanroep naar de engine wordt geretourneerd naar de HTML-pagina.
+Het is mogelijk een XML-renderfunctie te gebruiken om een aanbiedingspresentatie te maken. Deze functie wijzigt de knoop van XML die aan de pagina van de HTML tijdens de vraag aan de motor is teruggekeerd.
 
-1. Ga naar de aanbiedingsruimte en klik op de koppeling **[!UICONTROL Edit functions]**.
+1. Ga naar de aanbiedingsruimte en klik op de knop **[!UICONTROL Edit functions]** koppeling.
 1. Selecteer **[!UICONTROL Overload the XML rendering function]**.
-1. Ga naar het tabblad **[!UICONTROL XML rendering]** en voeg de gewenste functie in.
+1. Ga naar de **[!UICONTROL XML rendering]** en voegt u de gewenste functie in.
 
    De functie kan er als volgt uitzien:
 

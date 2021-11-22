@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [webformulieren](about-web-forms.md).
+Webtoepassingen worden volgens hetzelfde principe als [webformulieren](about-web-forms.md).
 
 >[!CAUTION]
 >
->Gebruik het subtabblad **[!UICONTROL Preview]** om fouten tijdens het ontwerpen van webtoepassingen te controleren.
+>Gebruik de **[!UICONTROL Preview]** subtabblad om fouten tijdens het ontwerpen van webtoepassingen te controleren.
 >
 >Totdat de toepassing van het Web wordt gepubliceerd, worden de veranderingen niet blootgesteld aan eind - gebruikers.
 
@@ -31,7 +31,7 @@ U kunt grafieken in de toepassingen van het Web omvatten. Hiervoor selecteert u 
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-U kunt ook het menu **[!UICONTROL Add a chart]** selecteren.
+U kunt ook de **[!UICONTROL Add a chart]** -menu.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -51,7 +51,7 @@ De interface van Adobe Campaign gebruikt vele toepassingen van het Web om, tot o
 
 Deze worden in de interface weergegeven in de vorm van dashboards met slechts één pagina.
 
-De uit-van-de-doos toepassingen van het Web worden opgeslagen in de **[!UICONTROL Administration > Configuration > Web applications]** knoop.
+De uit-van-de-doos toepassingen van het Web worden opgeslagen in **[!UICONTROL Administration > Configuration > Web applications]** knooppunt.
 
 ## Formuliertype webtoepassingen bewerken {#edit-forms-type-web-applications}
 

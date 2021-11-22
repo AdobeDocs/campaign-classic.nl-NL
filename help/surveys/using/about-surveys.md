@@ -19,22 +19,22 @@ ht-degree: 4%
 
 Adobe Campaign bevat een grafische module voor het definiëren en publiceren van webtoepassingen. Hiermee maakt u pagina&#39;s, zoals een bewerkingsformulier op een extranet, of meldingsformulieren, inclusief gegevens uit de database met tabellen, grafieken, invoerformulieren, enz. Met deze functie kunt u webpagina&#39;s ontwerpen en plaatsen waarin gebruikers gegevens kunnen opzoeken of invoeren.
 
-Met de optionele **Survey** add-on kunt u een nieuw type webtoepassing maken en beheren voor het maken en beheren van online vragenlijsten, zoals formulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren op of het opzeggen van een informatieservice of een formulier voor mededingingsgegevens. Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
+De optionele **Enquête** Met add-on kunt u een nieuw type webtoepassing maken voor het maken en beheren van online vragenlijsten, zoals formulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren op of het opzeggen van een informatieservice of een formulier voor mededingingsgegevens. Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
 
-In dit hoofdstuk wordt beschreven hoe u **Enquêtes**, veld- en paginabeheer, opslagmodi en records kunt maken en beheren.
+In dit hoofdstuk wordt beschreven hoe u bestanden kunt maken en beheren **Enquêtes**, veld- en paginabeheer, opslagmodi en records.
 
-Leer hoe u uw eerste enquête maakt op [deze pagina](getting-started-with-surveys.md).
+Leer hoe u uw eerste enquête maakt in [deze pagina](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
->* De gedetailleerde stappen voor het creëren van een standaardvorm van het Web zijn beschikbaar in [dit document](../../web/using/about-web-forms.md).
+>* Gedetailleerde stappen voor het maken van een standaard webformulier zijn beschikbaar in [dit document](../../web/using/about-web-forms.md).
 >
->* Webtoepassingsbeheer wordt beschreven in [dit document](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
+>* Webtoepassingsbeheer is gedetailleerd in [dit document](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
 
 
 ## Functiebereik {#campaign-surveys-scope}
 
-In Adobe Campaign, gebruik [de toepassingen van het Web](../../web/using/about-web-forms.md) aan:
+In Adobe Campaign: gebruiken [Webtoepassingen](../../web/using/about-web-forms.md) tot:
 
 * Formulieren met meerdere pagina&#39;s maken,
 * Meertalige formulieren beheren met een geïntegreerd vertaalhulpprogramma
@@ -73,7 +73,7 @@ Voor meer informatie bij het vormen en het rangschikken van deze stappen, verwij
 
 ## Instellingen {#settings}
 
-Standaard zijn enquêtes beschikbaar in het knooppunt **[!UICONTROL Resources > Online > Web Applications]** van de Adobe Campaign-structuur.
+Standaard zijn enquêtes beschikbaar in het dialoogvenster **[!UICONTROL Resources > Online > Web Applications]** knooppunt van de boomstructuur Adobe Campaign.
 
 Instellingen worden opgeslagen in de volgende mappen:
 
@@ -82,4 +82,4 @@ Instellingen worden opgeslagen in de volgende mappen:
 
 >[!NOTE]
 >
->De details van montages zijn beschikbaar in [dit document](../../web/using/about-web-forms.md).
+>De instellingsdetails zijn beschikbaar in [dit document](../../web/using/about-web-forms.md).

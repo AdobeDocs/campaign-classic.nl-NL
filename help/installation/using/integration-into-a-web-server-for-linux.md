@@ -52,13 +52,13 @@ Voer de volgende stappen uit:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Zorg ervoor dat de **alias**, **authz_host** en **mime** modules nog steeds zijn ingeschakeld. Hiervoor gebruikt u de volgende opdracht:
+   Zorg ervoor dat de **alias**, **authz_host** en **mime** modules zijn nog steeds ingeschakeld. Hiervoor gebruikt u de volgende opdracht:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Maak het bestand **nlsrv.load** in **/etc/apache2/mods-available** en voeg de volgende inhoud in:
+1. Het bestand maken **nlsrv.load** in **/etc/apache2/mods-available** en voeg de volgende inhoud in:
 
    In het Debian 8:
 
@@ -66,7 +66,7 @@ Voer de volgende stappen uit:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Maak het bestand **nlsrv.conf** in **/etc/apache2/mods-available** met de volgende opdracht:
+1. Het bestand maken **nlsrv.conf** in **/etc/apache2/mods-available** met de volgende opdracht:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Voer de volgende stappen uit:
     a2enmod nlsrv
    ```
 
-   Als u de **mod_rewrite** module voor Adobe Campaign-pagina&#39;s gebruikt, moet u de bestanden **nlsrv.load** en **nlsrv.conf** hernoemen naar **zz-nlsrv.load** en **zz-nlsrv.load conf**. Voer de volgende opdracht uit om de module te activeren:
+   Als u het **mod_rewrite** voor Adobe Campaign-pagina&#39;s moet u de naam van de **nlsrv.load** en **nlsrv.conf** bestanden naar **zz-nlsrv.load** en **zz-nlsrv.conf**. Voer de volgende opdracht uit om de module te activeren:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Voeg de volgende regels toe aan het bestand **/etc/apache2/envars**:
+1. Bewerk de **/etc/apache2/envars** Voeg de volgende regels toe aan het bestand:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Deze procedure is van toepassing als u Apache hebt geïnstalleerd en beveiligd o
 
 Voer de volgende stappen uit:
 
-1. Activeer in het `httpd.conf`-bestand de volgende Apache-modules:
+1. In de `httpd.conf` activeer de volgende Apache-modules:
 
    ```
    alias
@@ -152,9 +152,9 @@ Voer de volgende stappen uit:
    ForceLanguagePriority
    ```
 
-1. Maak een Adobe Campaign-specifiek configuratiebestand in de map `/etc/httpd/conf.d/`. Bijvoorbeeld `CampaignApache.conf`
+1. Maak een Adobe Campaign-specifiek configuratiebestand in het dialoogvenster `/etc/httpd/conf.d/` map. Bijvoorbeeld `CampaignApache.conf`
 
-1. Voeg voor **RHEL7** de volgende instructies toe in het bestand:
+1. Voor **RHEL7** voegt u de volgende instructies toe aan het bestand:
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -163,7 +163,7 @@ Voer de volgende stappen uit:
 
 1. Voor **RHEL7**:
 
-   Voeg het `/etc/systemd/system/httpd.service` dossier met de volgende inhoud toe:
+   Voeg de `/etc/systemd/system/httpd.service` bestand met de volgende inhoud:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ De volgende informatie wordt weergegeven:
 Connection closed by foreign host.
 ```
 
-U kunt URL [`https://<computer>`](https://myserver.adobe.com/r/test) van browser van het Web ook verzoeken.
+U kunt ook de URL aanvragen [`https://<computer>`](https://myserver.adobe.com/r/test) vanuit een webbrowser.

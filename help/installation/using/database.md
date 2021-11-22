@@ -21,7 +21,7 @@ De databaseserver kan op elk besturingssysteem worden uitgevoerd, ongeacht het b
 
 Het besturingssysteem van de databaseserver is niet belangrijk zolang er verbinding met de verschillende componenten van Adobe Campaign beschikbaar is.
 
-Controleer ook de [sectie van de Toegang van het Gegevensbestand](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
+Controleer ook de [Databasetoegangslagen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) sectie.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -31,7 +31,7 @@ U kunt controleren op de native client op de server via het configuratiescherm v
 
 De volgende toegang DLL moet aanwezig zijn: **sqlncli11.dll**.
 
-Toegang-DLL&#39;s vindt u op de Microsoft-website.
+Toegang tot DLL&#39;s vindt u op de Microsoft-website.
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ Toegang-DLL&#39;s vindt u op de Microsoft-website.
 >
 >Kolomnamen met multi-bytetekens worden niet ondersteund.
 
-De parameters **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** moeten correct worden gevormd opdat het gegevensbestand in Unicode of ANSI werkt.
+De **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** parameters moeten correct worden gevormd opdat het gegevensbestand in Unicode of ANSI werkt.
 
 Adobe Campaign gebruikt standaardcodering voor Oracles. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
 
-Als u meer wilt weten over uw codering, gebruikt u de volgende **sqlplus**-opdracht:
+Ga als volgt te werk om meer te weten te komen over uw codering **sqlplus** opdracht:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -66,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Als u zich wilt aanmelden bij **sqlplus**, gebruikt u het gebruikersprofiel van het Oracle:
+Aanmelden bij **sqlplus** en gebruik het gebruikersprofiel van het Oracle:
 
 ```
 su - oracle 
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-U kunt ook naar [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux) verwijzen.
+U kunt ook verwijzen naar [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 

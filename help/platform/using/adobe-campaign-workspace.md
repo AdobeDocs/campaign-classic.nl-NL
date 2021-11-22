@@ -63,7 +63,7 @@ U kunt kiezen uit vijf verschillende talen:
 
 De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
 
-Raadpleeg deze [pagina](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie over het maken van een instantie.
+Raadpleeg dit voor meer informatie over het maken van een instantie [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -79,15 +79,15 @@ De verschillende functies van het platform zijn onderverdeeld in kernmogelijkhed
 
 De lijst met kernmogelijkheden waartoe u toegang hebt, is afhankelijk van de pakketten en invoegtoepassingen die u hebt geïnstalleerd en van uw toegangsrechten.
 
-Elk vermogen omvat een reeks functionaliteiten die op taak betrekking hebbende behoeften en gebruikscontext worden gebaseerd. Met de koppeling **[!UICONTROL Profiles and targets]** krijgt u bijvoorbeeld toegang tot de lijsten met ontvangers, abonnementsservices, bestaande workflows voor activering en de sneltoetsen voor het maken van deze elementen.
+Elk vermogen omvat een reeks functionaliteiten die op taak betrekking hebbende behoeften en gebruikscontext worden gebaseerd. Bijvoorbeeld de **[!UICONTROL Profiles and targets]** via de koppeling kunt u de lijsten met ontvangers, abonnementsservices, bestaande workflows voor activering en de sneltoetsen voor het maken van deze elementen gebruiken.
 
-De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** verbinding in de linkersectie van de **[!UICONTROL Profiles and Targets]** interface.
+De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** in het linkergedeelte van het dialoogvenster **[!UICONTROL Profiles and Targets]** interface.
 
 ![](assets/recipient_list_overview.png)
 
 ### Tabs gebruiken {#using-tabs}
 
-* Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Als u wilt teruggaan naar de vorige pagina, klikt u op de knop **[!UICONTROL Back]** op de werkbalk. Als u wilt terugkeren naar de startpagina, klikt u op de knop **[!UICONTROL Home]**.
+* Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Als u terug wilt gaan naar de vorige pagina, klikt u op de knop **[!UICONTROL Back]** op de werkbalk. Als u wilt terugkeren naar de startpagina, klikt u op de knop **[!UICONTROL Home]** knop.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -97,11 +97,11 @@ De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** verbinding in de linke
 
 ### Een element maken {#creating-an-element}
 
-In elke sectie met kernmogelijkheden kunt u bladeren door de beschikbare elementen. Hiervoor gebruikt u de sneltoetsen in de sectie **[!UICONTROL Browsing]**. Met de koppeling **[!UICONTROL Other choices]** hebt u toegang tot alle andere pagina&#39;s, ongeacht de omgeving.
+In elke sectie met kernmogelijkheden kunt u bladeren door de beschikbare elementen. Hiervoor gebruikt u de sneltoetsen in het dialoogvenster **[!UICONTROL Browsing]** sectie. De **[!UICONTROL Other choices]** Met de koppeling hebt u toegang tot alle andere pagina&#39;s, ongeacht de omgeving.
 
-U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in de sectie **[!UICONTROL Create]** links van het scherm. Gebruik de knop **[!UICONTROL Create]** boven de lijst om nieuwe elementen aan de lijst toe te voegen.
+U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in het dialoogvenster **[!UICONTROL Create]** aan de linkerkant van het scherm. Gebruik de **[!UICONTROL Create]** boven de lijst om nieuwe elementen aan de lijst toe te voegen.
 
-Gebruik bijvoorbeeld op de leveringspagina de knop **[!UICONTROL Create]** om een nieuwe levering te maken.
+Gebruik bijvoorbeeld op de leveringspagina de **[!UICONTROL Create]** om een nieuwe levering te maken.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -119,7 +119,7 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
 <table> 
  <thead> 
   <tr> 
-   <th> Formaten<br /> </th> 
+   <th> Indelingen<br /> </th> 
    <th> Engels (VS)<br /> </th> 
    <th> Engels (EN)<br /> </th> 
   </tr> 
@@ -137,27 +137,27 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
   </tr> 
   <tr> 
    <td> Korte datum met tijd<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25-09-2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25-09-2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25-09-2018 10:47:25:00</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 09-25-2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Waarden toevoegen aan een opsomming {#add-values-in-an-enumeration}
 
-Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. In het veld **[!UICONTROL City]** van het tabblad **[!UICONTROL General]** van een ontvankelijk profiel kunt u bijvoorbeeld Londen invoeren. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
+Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. In het dialoogvenster **[!UICONTROL City]** van het **[!UICONTROL General]** kunt u naar Londen gaan. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Als u op **[!UICONTROL Yes]** klikt, is deze waarde beschikbaar in de keuzelijst met invoervak van het desbetreffende veld (in dit geval: **[!UICONTROL London]**).
+Als u op **[!UICONTROL Yes]** Deze waarde is beschikbaar in de keuzelijst met invoervak van het desbetreffende veld (in dit geval: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
->Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de sectie **[!UICONTROL Administration > Platform > Enumerations]**. Raadpleeg [Opsommingen beheren](../../platform/using/managing-enumerations.md) voor meer informatie.
+>Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de **[!UICONTROL Administration > Platform > Enumerations]** sectie. Raadpleeg voor meer informatie hierover [Opsommingen beheren](../../platform/using/managing-enumerations.md).
 
 ### Standaardeenheden {#default-units}
 
-In de velden die een duur uitdrukken (bijvoorbeeld de geldigheidsperiode van de bronnen van een levering, de goedkeuringstermijn voor een taak, enz.), kan de waarde worden uitgedrukt in de volgende **eenheden**:
+Op de gebieden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van een levering, goedkeuringstermijn voor een taak, enz.), kan de waarde in het volgende worden uitgedrukt **eenheden**:
 
 * **[!UICONTROL s]** gedurende seconden,
 * **[!UICONTROL mn]** gedurende minuten,
@@ -172,4 +172,4 @@ In deze video wordt de werkruimte Campaign Classic weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

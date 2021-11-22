@@ -21,10 +21,10 @@ Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot
 
 ## Veelvoorkomende en algemene problemen {#common-and-general-issues}
 
-* Deze [pagina](../../production/using/modules-and-frequent-issues.md) presenteert de frequentste problemen die voor de vermelde modules worden ontmoet.
-* Deze [pagina](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het onder ogen zien van kwesties met werkschemauitvoering.
-* Deze [pagina](../../production/using/lost-password.md) details om een verloren wachtwoord te veranderen of terug te krijgen.
-* Deze [pagina](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakt.
+* Dit [page](../../production/using/modules-and-frequent-issues.md) geeft een overzicht van de meest voorkomende problemen die voor de vermelde modules worden ondervonden.
+* Dit [page](../../production/using/workflow-execution.md) geeft een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het ontmoeten van kwesties met werkschemauitvoering.
+* Dit [page](../../production/using/lost-password.md) details hoe te om een verloren wachtwoord te veranderen of terug te krijgen.
+* Dit [page](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakte.
 
 ## Problemen met een levering oplossen {#delivery-troubleshooting}
 
@@ -32,7 +32,7 @@ Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
 * [Afbeelding ontbreekt](../../production/using/images-missing.md)
-* [Problemen met](../../production/using/temporary-files.md)  tijdelijke bestanden (alleen ** hostingmodellen op locatie)
+* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) (*alleen on-premise hostingmodellen*)
 
 **Verwant onderwerp**:
 

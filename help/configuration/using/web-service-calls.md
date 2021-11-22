@@ -31,7 +31,7 @@ De diensten van het Web laten u vele toepassingen van een derdesysteem tot stand
 
 De definitie van de diensten van het Web die op de de toepassingsserver van Adobe Campaign worden uitgevoerd is beschikbaar bij de gegevensschema&#39;s.
 
-Een dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij het **`<methods>`** element.
+De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij de **`<methods>`** element.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Een dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#
 </methods>
 ```
 
-Hier hebben wij een voorbeeld van de definitie van de methode genoemd **GenerateForm**.
+Hier hebben we een voorbeeld van de definitie van de methode die **GenerateForm**.
 
-De beschrijving van de service begint met het element `<method>`. De lijst van parameters van de methode wordt voltooid van het `<parameters>` element. Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Het &quot;inout&quot;attribuut met de &quot;uit&quot;waarde laat u specificeren dat de &quot;resultaat&quot;parameter bij de vraagoutput van de ZEEP is.
+De beschrijving van de dienst begint met de `<method>` element. De lijst met parameters van de methode wordt voltooid via de  `<parameters>` element. Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Het &quot;inout&quot;attribuut met de &quot;uit&quot;waarde laat u specificeren dat de &quot;resultaat&quot;parameter bij de vraagoutput van de ZEEP is.
 
 De aanwezigheid van het attribuut &quot;static&quot; (met de waarde &quot;true&quot;) beschrijft deze methode als statisch, wat betekent dat alle parameters van de methode moeten worden gedeclareerd.
 
 Een &quot;const&quot;methode heeft impliciet een document van XML in het formaat van zijn bijbehorend schema als input.
 
-Een volledige beschrijving van het element `<method>` van een Adobe Campaign-schema is beschikbaar in het hoofdstuk &quot;Schemaverwijzingen&quot; onder [Methode](../../configuration/using/schema/method.md)
+Een volledige beschrijving van de `<method>` element of an Adobe Campaign schema is available in the &quot;Schema references&quot; chapter under [Methode](../../configuration/using/schema/method.md)
 
 Voorbeeld van de methode &quot;const&quot;-type &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
 
@@ -94,7 +94,7 @@ Een beschrijving WSDL begint door de types te bepalen die aan vormberichten, ver
 
 #### Typen {#types}
 
-De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld gebruikt de methode &quot;ExecuteQuery&quot; een tekenreeks &quot;s:string&quot; en een XML-document (`<s:complextype>`) als parameters. De geretourneerde waarde van de methode (&quot;ExecuteQueryResponse&quot;) is een XML-document ( `<s:complextype>`).
+De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld gebruikt de methode &quot;ExecuteQuery&quot; een tekenreeks &quot;s:string&quot; en een XML-document (`<s:complextype>`) als parameters. De geretourneerde waarde van de methode (&quot;ExecuteQueryResponse&quot;) is een XML-document (  `<s:complextype>`).
 
 ```
 <types>
@@ -130,7 +130,7 @@ De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld ge
 
 #### Berichten {#messages}
 
-Met `<message>` worden de namen en typen beschreven van een set velden die moeten worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
+De `<message>` beschrijft de namen en typen van een set velden die moeten worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ Met `<message>` worden de namen en typen beschreven van een set velden die moete
 
 #### PortType {#porttype}
 
-`<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;produceren).
+De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;) produceert.
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ Met `<message>` worden de namen en typen beschreven van een set velden die moete
 
 #### Binding {#binding}
 
-Het `<binding>` deel specificeert het de communicatie protocol van de ZEEP ( `<soap:binding>`), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
+De `<binding>` part specificeert het SOAP communicatie protocol ( `<soap:binding>` ), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ Het `<binding>` deel specificeert het de communicatie protocol van de ZEEP ( `<s
 
 #### Service {#service}
 
-In het deel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met de URI op de URL van de Adobe Campaign-toepassingsserver.
+De `<service>` In dit onderdeel wordt de service &quot;XtkQueryDef&quot; beschreven met de URI ervan op de URL van de Adobe Campaign-toepassingsserver.
 
 ```
 <service name="XtkQueryDef">
@@ -188,7 +188,7 @@ In het deel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met 
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft de beveiliging voor verificatiemechanismen verbeterd door de invoering van [beveiligingszones](../../installation/using/security-zones.md) en instellingen voor sessiebeheer.
+Adobe Campaign heeft de beveiliging van authenticatiemechanismen verbeterd door de invoering van [beveiligingszones](../../installation/using/security-zones.md) en sessiebeheerinstellingen.
 
 Er zijn twee beschikbare verificatiemodi:
 
@@ -196,7 +196,7 @@ Er zijn twee beschikbare verificatiemodi:
 
 of
 
-* **via Adobe Campaign login +** wachtwoord dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign-aanmelding + wachtwoord** die een sessietoken maakt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
 
 ### Sessietekenmerken {#session-token-characteristics}
 
@@ -240,7 +240,7 @@ Van een SOAP-aanroep:
 
 ### Voorbeelden bellen {#call-examples}
 
-* Met **HttpSoapConnection/SoapService**:
+* Gebruiken **HttpSoapConnection/SoapService**:
 
 ```
   
@@ -273,11 +273,11 @@ Van een SOAP-aanroep:
   logInfo(queryRes[0].toXMLString())
 ```
 
-* Met **HttpServletRequest**:
+* Gebruiken **HttpServletRequest**:
 
 >[!NOTE]
 >
->De URL&#39;s die in de volgende **HttpServletRequest**-aanroepen worden gebruikt, moeten zich op de lijst van gewenste personen bevinden in de sectie met url-machtigingen van het bestand **serverConf.xml**. Dit geldt ook voor de URL van de server zelf.
+>De URL&#39;s die in het volgende worden gebruikt **HttpServletRequest** de vraag moet op lijst van gewenste personen in de url toestemmingensectie van zijn **serverConf.xml** bestand. Dit geldt ook voor de URL van de server zelf.
 
 Uitvoering aanmelding():
 

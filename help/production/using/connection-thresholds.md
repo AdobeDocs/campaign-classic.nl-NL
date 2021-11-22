@@ -21,15 +21,15 @@ Voor zwaar geladen servers, zou de verbindingsdrempel kunnen worden overschreden
 
 Er zijn drie verschillende drempels:
 
-* De **Webverbindingsdrempel**, geconfigureerd in uw webserver. Neem contact op met de systeembeheerder om het bestand te wijzigen.
+* De **Drempel webverbinding**, geconfigureerd in uw webserver. Neem contact op met de systeembeheerder om het bestand te wijzigen.
 
 * De **drempel voor databaseverbinding**. Neem contact op met de databasebeheerder om deze te wijzigen.
 
 * De **Adobe Campaign-verbindingsdrempel**, beschikbaar op twee plaatsen:
 
-   * **** Tomcatside: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
+   * **Tomcat** zijde: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
 
-      Deze drempel wordt gevormd in **nl6/tomcat-8/conf/server.xml** dossier. Met het kenmerk **maxThreads** kunt u de drempel verhogen voor het aantal query&#39;s dat tegelijkertijd wordt verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
+      Deze drempel wordt geconfigureerd in de **nl6/tomcat-8/conf/server.xml** bestand. De **maxThreads** Met kenmerk kunt u de drempel verhogen voor het aantal query&#39;s dat tegelijkertijd wordt verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,9 +43,9 @@ Er zijn drie verschillende drempels:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * **Database**: reeks van alle verbindingen opent tezelfdertijd op het gegevensbestand door een proces.
+   * **Database**: reeks van alle verbindingen die tezelfdertijd op het gegevensbestand door een proces worden geopend.
 
-      Deze drempel wordt gevormd in het dossier **nl6/conf/serverConf.xml**. Met het **maxCnx**-kenmerk in **datasource pool** kunt u de drempel verhogen voor gelijktijdig verwerkte query&#39;s.
+      Deze drempel is geconfigureerd in het bestand **nl6/conf/serverConf.xml**. De **maxCnx** kenmerk bevindt zich in **gegevensbrongroep** laat u de drempel van gelijktijdig verwerkte vragen verhogen.
 
       ```
           <!-- Data source

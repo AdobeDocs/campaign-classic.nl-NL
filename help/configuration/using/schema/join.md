@@ -41,13 +41,13 @@ Hiermee kunt u de velden definiëren waarmee een samenvoeging tussen SQL-tabelle
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-5}
 
-Een element `<join>` kan alleen worden gebruikt als het bovenliggende element `<element>` van het type &#39;link&#39; is. Dit betekent dat het bovenliggende element het kenmerk &quot;@type=link&quot; moet hebben gedeclareerd.
+A `<join>`  -element kan alleen worden gebruikt als het bovenliggende element  `<element>`  element is van het type &#39;link&#39;. Dit betekent dat het bovenliggende element het kenmerk &quot;@type=link&quot; moet hebben gedeclareerd.
 
-Het is niet noodzakelijk om de naam en namespace van de verre lijst in het `<join>` element te specificeren. Zij moeten in de ouder `<element>` worden gespecificeerd.
+U hoeft de naam en naamruimte van de externe tabel niet op te geven in het dialoogvenster `<join>`  element. Zij moeten in de ouder worden gespecificeerd  `<element>`.
 
 Door overeenkomst, worden de verbindingen bepaald aan het eind van het schema.
 
-Als het `<join>` element niet wordt gespecificeerd wanneer het element van het verbindingstype wordt bepaald, zal de verbinding automatisch op de primaire sleutels van beide lijsten worden geplaatst.
+Als de `<join>` het element wordt niet gespecificeerd wanneer het element van het verbindingstype wordt bepaald, zal de verbinding automatisch op de primaire sleutels van beide lijsten worden geplaatst.
 
 ## Beschrijving van kenmerk {#attribute-description-7}
 

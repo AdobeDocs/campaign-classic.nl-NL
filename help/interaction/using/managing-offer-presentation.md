@@ -23,8 +23,8 @@ De interactie laat u de stroom van aanbiedingsvoorstellen controleren gebruikend
 
 ## Een presentatieregel voor aanbiedingen maken en ernaar verwijzen {#creating-and-referencing-an-offer-presentation-rule}
 
-1. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knoop.
-1. Maak een typologieregel en kies het type **[!UICONTROL Offer presentation]**.
+1. Ga naar de **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knooppunt.
+1. Maak een typologieregel en kies de optie **[!UICONTROL Offer presentation]** type.
 
    ![](assets/offer_typology_001.png)
 
@@ -32,8 +32,8 @@ De interactie laat u de stroom van aanbiedingsvoorstellen controleren gebruikend
 
    ![](assets/offer_typology_002.png)
 
-1. Vorm de de toepassingscriteria van de regel. Raadpleeg [Instellingen van presentatieregel](#presentation-rule-settings) voor meer informatie hierover.
-1. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** knoop en creeer een typologie die alle **[!UICONTROL Offer presentation]** typeregels zal groeperen.
+1. Vorm de de toepassingscriteria van de regel. Raadpleeg voor meer informatie hierover [Instellingen voor presentatieregel](#presentation-rule-settings).
+1. Ga naar de **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** knoop en creeer een typologie die allen zal groeperen **[!UICONTROL Offer presentation]** typeregels.
 
    ![](assets/offer_typology_003.png)
 
@@ -49,9 +49,9 @@ De interactie laat u de stroom van aanbiedingsvoorstellen controleren gebruikend
 
 ### Toepassingscriteria {#application-criteria-}
 
-Met de toepassingscriteria op het tabblad **[!UICONTROL General]** kunt u de aanbiedingen opgeven waarop de presentatieregel van toepassing is. Hiervoor moet u een query maken en de desbetreffende aanbiedingen kiezen, zoals hieronder beschreven.
+De toepassingscriteria die beschikbaar zijn in de **[!UICONTROL General]** kunt u opgeven op welke aanbiedingen de presentatieregel van toepassing is. Hiervoor moet u een query maken en de desbetreffende aanbiedingen kiezen, zoals hieronder beschreven.
 
-1. In uw typologieregel, klik **[!UICONTROL Edit the rule application conditions...]** verbinding om uw vraag tot stand te brengen.
+1. Klik in de typologieregel op de knop **[!UICONTROL Edit the rule application conditions...]** koppeling om uw query te maken.
 
    ![](assets/offer_typology_006.png)
 
@@ -63,21 +63,21 @@ Met de toepassingscriteria op het tabblad **[!UICONTROL General]** kunt u de aan
 
 ### Afmetingen voorstel {#offer-dimensions}
 
-Op **[!UICONTROL Offer presentation]** lusje, moet u de zelfde afmetingen voor de presentatieregel specificeren zoals die in het milieu worden gevormd.
+In de **[!UICONTROL Offer presentation]** , moet u dezelfde afmetingen voor de presentatieregel opgeven als de afmetingen die in de omgeving zijn geconfigureerd.
 
-De **[!UICONTROL Targeting dimension]** valt samen met de lijst van ontvangers (door gebrek: nms:ontvangers) die de voorstellen ontvangen. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard:nms:propositionRcp).
+De **[!UICONTROL Targeting dimension]** komt overeen met de tabel met ontvangers (standaard: nms:ontvangers) die de voorstellen ontvangen. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->U kunt ook niet-standaardtabellen gebruiken. Als u een specifieke het richten dimensie wilt gebruiken, zult u lijsten evenals een specifiek milieu moeten creëren gebruikend de doelafbeelding. Voor meer op dit, verwijs naar [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>U kunt ook niet-standaardtabellen gebruiken. Als u een specifieke het richten dimensie wilt gebruiken, zult u lijsten evenals een specifiek milieu moeten creëren gebruikend de doelafbeelding. Raadpleeg voor meer informatie hierover [Een aanbiedingsomgeving maken](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### Periode {#period}
 
 Dit is een verschuivende periode die begint op de presentatiedatum van de aanbieding. Er wordt een termijn vastgesteld voor de geldigheid van de voorstellen. De regel geldt niet voor voorstellen die na deze periode worden gedaan.
 
-De periode begint **n** dagen vóór de propositiedatum en eindigt **n** dagen daarna, waarbij **n** overeenkomt met het getal dat is ingevoerd in het veld **[!UICONTROL Period considered]**:
+De periode start **n** dagen vóór de datum en einddatum van het voorstel **n** dagen na **n** komt overeen met het nummer dat is ingevoerd in het **[!UICONTROL Period considered]** veld:
 
 * Voor binnenkomende ruimten, is de voorstellingsdatum de datum van de aanbiedingspresentatie.
 * Voor uitgaande ruimten, is de voorstellingsdatum de datum van het leveringscontact (bijvoorbeeld de leveringsdatum ingegaan in een het richten werkschema).
@@ -96,7 +96,7 @@ Gebruik de pijlen om het aantal aanbiedingsvoorstellen te veranderen.
 
 ## Profielen en ontvangers definiëren {#defining-propositions-and-recipients}
 
-In de sectie **[!UICONTROL Propositions to count]** kunt u zowel de ontvangers als de voorstellingen opgeven die leiden tot uitsluiting van de aanbiedingen die zijn gedefinieerd op het tabblad **[!UICONTROL General]** als deze een bepaald aantal keren voorkomen in de geschiedenis van de voorstellen.
+De **[!UICONTROL Propositions to count]** in dit gedeelte kunt u zowel de ontvangers als de voorstellen opgeven die ertoe leiden dat de aanbiedingen die in het dialoogvenster **[!UICONTROL General]** tabblad als deze een bepaald aantal keren in de geschiedenis van de voorstellen worden weergegeven.
 
 ### Profielen filteren {#filtering-propositions}
 
@@ -104,19 +104,19 @@ U kunt filtercriteria selecteren om voorstellen uit te sluiten die op het kanaal
 
 ![](assets/offer_typology_014.png)
 
-Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. Als u andere criteria wilt gebruiken, kunt u een query maken met de koppeling **[!UICONTROL Limit propositions...]**. Voor meer op dit, verwijs naar [Creërend een vraag op proposities](#creating-a-query-on-propositions) sectie.
+Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. Als u andere criteria wilt gebruiken, kunt u een query maken met de opdracht **[!UICONTROL Limit propositions...]** koppeling. Raadpleeg voor meer informatie de [Query maken op voorvertoningen](#creating-a-query-on-propositions) sectie.
 
 * **Filter op het kanaal**
 
-   **[!UICONTROL On the same channel only]** : Hiermee sluit u aanbiedingsvoorstellen uit op het kanaal dat op het  **[!UICONTROL General]** tabblad wordt opgegeven.
+   **[!UICONTROL On the same channel only]** : Hiermee kunt u voorstellen uitsluiten voor het kanaal dat is opgegeven in het dialoogvenster **[!UICONTROL General]** tab.
 
-   Het kanaal dat voor de regel op het tabblad **[!UICONTROL General]** is opgegeven, is bijvoorbeeld e-mail. Als de aanbiedingen waarop de regel van toepassing is, tot dusverre alleen via het webkanaal worden aangeboden, kan de Interaction-engine de aanbiedingen in een e-maillevering presenteren. Als de aanbiedingen echter eenmaal per e-mail zijn verzonden, kiest de interactieengine een ander kanaal om de aanbiedingen weer te geven.
+   Het kanaal dat bijvoorbeeld voor de regel is opgegeven in het dialoogvenster **[!UICONTROL General]** tab is e-mail. Als de aanbiedingen waarop de regel van toepassing is, tot dusverre alleen via het webkanaal worden aangeboden, kan de Interaction-engine de aanbiedingen in een e-maillevering presenteren. Als de aanbiedingen echter eenmaal per e-mail zijn verzonden, kiest de interactieengine een ander kanaal om de aanbiedingen weer te geven.
 
    >[!NOTE]
    >
    >We hebben het over het kanaal en niet over de ruimte. Als de regel een aanbieding op het webkanaal moet uitsluiten, wordt het aanbod dat bestemd is om in twee ruimten op een website te worden aangeboden (bijvoorbeeld in een banner en in de tekst van de pagina), niet op de site weergegeven als het al eerder is gepresenteerd.
    >
-   >Voor een werkschema dat aanbiedingspresentatie impliceert, worden de regels slechts correct in aanmerking genomen als zij op **[!UICONTROL All channels]** worden gevormd.
+   >Voor een werkschema dat aanbiedingspresentatie impliceert, worden de regels slechts correct in aanmerking genomen als zij worden gevormd **[!UICONTROL All channels]**.
 
 * **Filter op de aanbieding**
 
@@ -124,13 +124,13 @@ Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. A
 
    **[!UICONTROL All offers]** : standaardwaarde. Er wordt geen filter toegepast op de aanbiedingen.
 
-   **[!UICONTROL Offer being presented]** : het aanbod dat op het  **[!UICONTROL General]** tabblad wordt vermeld, wordt uitgesloten als het al is gepresenteerd.
+   **[!UICONTROL Offer being presented]** : het aanbod dat in het **[!UICONTROL General]** is uitgesloten als het al is weergegeven.
 
    **[!UICONTROL Offers from the same category]** : een aanbieding is uitgesloten indien reeds een voorstel van dezelfde categorie is ingediend.
 
-   **[!UICONTROL The offers which the rule applies to]** : wanneer op het  **[!UICONTROL General]** tabblad meerdere aanbiedingen zijn gedefinieerd, wordt elk voorstel uit deze reeks aanbiedingen in aanmerking genomen en eindigt het in de uitsluiting van alle aanbiedingen als de propositiedrempel wordt bereikt.
+   **[!UICONTROL The offers which the rule applies to]** : wanneer in het dialoogvenster **[!UICONTROL General]** tabs, wordt elk voorstel van deze reeks aanbiedingen in aanmerking genomen en eindigt de uitsluiting van alle aanbiedingen indien de propositiedrempel wordt bereikt.
 
-   Aanbiedingen 2, 3 en 5 worden bijvoorbeeld gedefinieerd op het tabblad **[!UICONTROL General]**. Het maximumaantal voorstellen wordt ingesteld op 2. Als aanbiedingen 2 en 5 elk één keer worden gepresenteerd, wordt het aantal voorstellen geteld op 2. Dit heeft tot gevolg dat aanbod 3 nooit zal worden gepresenteerd.
+   Aanbiedingen 2, 3 en 5 worden bijvoorbeeld gedefinieerd in de **[!UICONTROL General]** tab. Het maximumaantal voorstellen wordt ingesteld op 2. Als aanbiedingen 2 en 5 elk één keer worden gepresenteerd, wordt het aantal voorstellen geteld op 2. Dit heeft tot gevolg dat aanbod 3 nooit zal worden gepresenteerd.
 
 * **Filter op de status van het voorstel**
 
@@ -146,14 +146,14 @@ Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. A
 
 ### Ontvangers definiëren {#defining-recipients}
 
-Om de ontvangers te specificeren, klik **[!UICONTROL Edit the query from the targeting dimension...]** verbinding en selecteer de ontvangers betrokken bij de regel.
+Klik op de knop **[!UICONTROL Edit the query from the targeting dimension...]** en selecteer de ontvangers waarop de regel betrekking heeft.
 
 ![](assets/offer_typology_012.png)
 
 ### Query maken op voorvertoningen {#creating-a-query-on-propositions}
 
-Als u de voorstellen wilt opgeven die via een query moeten worden geteld, klikt u op de koppeling **[!UICONTROL Limit propositions...]** en geeft u de criteria op waarmee rekening moet worden gehouden.
+Als u de voorstellen wilt opgeven die via een query moeten worden geteld, klikt u op de knop **[!UICONTROL Limit propositions...]** en de in aanmerking te nemen criteria specificeren.
 
-In het volgende voorbeeld zijn de voorstellingen die na twee presentaties moeten worden geteld, die in de categorie **Speciale aanbiedingen** voor de ruimte **Call center**, met een gewicht onder **20**.
+In het volgende voorbeeld zijn de voorstellen die na twee presentaties moeten worden geteld, de voorstellen in het dialoogvenster **Speciale aanbiedingen** categorie, voor de **Bellen** ruimte, met een gewicht onder **20**.
 
 ![](assets/offer_typology_013.png)

@@ -23,15 +23,15 @@ U kunt tot de lijsten van verslagen in het gegevensbestand van de Campagne toega
 
 Standaard laadt Adobe Campaign de eerste 200 records van een lijst. Dit betekent dat niet noodzakelijkerwijs alle records van de tabel worden weergegeven die u bekijkt. U kunt een telling van het aantal verslagen in de lijst in werking stellen en meer verslagen laden.
 
-In het onderste rechtergedeelte van het lijstscherm, toont **[!UICONTROL counter]** hoeveel verslagen zijn geladen en het totale aantal verslagen in het gegevensbestand (na het toepassen van om het even welke filters):
+In het onderste rechtergedeelte van het lijstscherm, **[!UICONTROL counter]** toont hoeveel records zijn geladen en het totale aantal records in de database (na het toepassen van filters):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Als een &quot;**?**&quot; wordt weergegeven in plaats van het nummer aan de rechterkant, klikt u op de teller om de berekening te starten.
+Als &quot;**?**&quot; wordt weergegeven in plaats van het nummer aan de rechterkant, klikt u op de teller om de berekening te starten.
 
 ### Meer records laden {#loading-more-records}
 
-Als u aanvullende records (standaard 200 regels) wilt laden (en dus wilt weergeven), klikt u op **[!UICONTROL Continue loading]**.
+Om extra verslagen (200 lijnen door gebrek) te laden en te tonen klik **[!UICONTROL Continue loading]**.
 
 ![](assets/s_ncs_user_load_list.png)
 
@@ -43,7 +43,7 @@ Als u alle records wilt laden, klikt u met de rechtermuisknop op de lijst en sel
 
 ### Standaardaantal records wijzigen {#change-default-number-of-records}
 
-Als u het standaardaantal geladen records wilt wijzigen, klikt u op **[!UICONTROL Configure list]** rechtsonder in de lijst.
+Als u het standaardaantal geladen records wilt wijzigen, klikt u op **[!UICONTROL Configure list]** in de rechterbenedenhoek van de lijst.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -68,55 +68,55 @@ U kunt snel een kolom aan een lijst van het detail van een verslag toevoegen. Di
 
 Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt tonen die niet op het detailscherm worden getoond, is het venster van de lijstconfiguratie te gebruiken. Dit doet u als volgt:
 
-1. Klik op **[!UICONTROL Configure list]** hieronder en rechts van de lijst.
+1. Klikken **[!UICONTROL Configure list]** en rechts van de lijst.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Dubbelklik in het lijstconfiguratievenster op het veld dat u wilt toevoegen in de lijst **[!UICONTROL Available fields]** om het veld toe te voegen aan **[!UICONTROL Output columns]**.
+1. Dubbelklik in het lijstconfiguratievenster op het veld dat u wilt toevoegen in het dialoogvenster **[!UICONTROL Available fields]** om deze aan de **[!UICONTROL Output columns]**.
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >Geavanceerde velden worden standaard niet weergegeven. Klik **Geavanceerde velden weergeven** hieronder en rechts van de lijst met beschikbare velden om deze weer te geven.
+   >Geavanceerde velden worden standaard niet weergegeven. Klik op **Geavanceerde velden weergeven** en rechts van de lijst met beschikbare velden.
    >
    >De labels worden weergegeven als een tabel en vervolgens in alfabetische volgorde.
    >
-   >Gebruik het veld **Zoeken** om een zoekopdracht uit te voeren in de beschikbare velden. Zie [deze sectie](#sorting-a-list) voor meer informatie.
+   >Gebruik de **Zoeken** veld om een zoekopdracht uit te voeren in de beschikbare velden. Zie voor meer informatie [deze sectie](#sorting-a-list).
    >
    >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer info](#configuring-lists).
    >
    >U kunt gegevens ook sorteren en filteren. Zie [deze sectie](../../platform/using/filtering-options.md).
 
 1. Herhaal deze bewerking voor elke kolom die u wilt weergeven.
-1. Gebruik de pijlen om de **weergavevolgorde** te wijzigen. De hoogste kolom zal op de linkerzijde in de lijst van verslagen zijn.
+1. De pijlen gebruiken om de **weergavevolgorde**. De hoogste kolom zal op de linkerzijde in de lijst van verslagen zijn.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Indien nodig, kunt u **[!UICONTROL Distribution of values]** klikken om de verdeling van waarden voor het geselecteerde gebied in de huidige omslag te bekijken.
+1. U kunt desgewenst op **[!UICONTROL Distribution of values]** om de verdeling van waarden voor het geselecteerde veld in de huidige map weer te geven.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
+1. Klikken **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
 ### Een nieuwe kolom maken {#create-a-new-column}
 
 U kunt nieuwe kolommen maken om extra velden in de lijst weer te geven. Dit doet u als volgt:
 
-1. Klik op **[!UICONTROL Configure the list]** hieronder en rechts van de lijst.
-1. Klik **[!UICONTROL Add]** om een nieuw gebied in de lijst te tonen.
+1. Klikken **[!UICONTROL Configure the list]** rechts van de lijst.
+1. Klikken **[!UICONTROL Add]** om een nieuw veld in de lijst weer te geven.
 
 ### Een kolom verwijderen {#remove-a-column}
 
-U kunt een of meer kolommen in een lijst met records maskeren met behulp van **[!UICONTROL Configure list]** die zich onder en rechts van de lijst bevindt.
+U kunt een of meer kolommen in een lijst met records maskeren met **[!UICONTROL Configure list]** zich onder en rechts van de lijst bevindt.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Selecteer in het lijstconfiguratievenster de kolom die u wilt maskeren in de zone **[!UICONTROL Output columns]** en klik op de knop Verwijderen.
+Selecteer in het lijstconfiguratievenster de kolom die u wilt maskeren in het menu **[!UICONTROL Output columns]** en klik op de knop Verwijderen.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Herhaal deze bewerking voor elke kolom die u wilt maskeren. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
+Herhaal deze bewerking voor elke kolom die u wilt maskeren. Klikken **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
 ### Kolombreedte aanpassen {#adjust-column-width}
 
@@ -149,17 +149,17 @@ Volg onderstaande stappen om deze lijstconfiguratie op te slaan zodat deze opnie
 
 1. Klik met de rechtermuisknop op de map met de weergegeven gegevens.
 1. Selecteer **[!UICONTROL Properties]**.
-1. Klik op **[!UICONTROL Advanced settings]** en geef een naam op in het veld **[!UICONTROL Configuration]**.
+1. Klikken **[!UICONTROL Advanced settings]** en geef vervolgens een naam op in het dialoogvenster **[!UICONTROL Configuration]** veld.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Klik **[!UICONTROL OK]** en klik dan **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL OK]** en klik vervolgens op **[!UICONTROL Save]**.
 
-U kunt deze configuratie dan toepassen op een andere **Delivery** omslag:
+U kunt deze configuratie dan op een andere toepassen **Aflevering** map:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klik **[!UICONTROL Save]** in het venster van omslageigenschappen. De lijstweergave wordt aangepast aan de opgegeven configuratie:
+Klikken **[!UICONTROL Save]** in het venster met mapeigenschappen. De lijstweergave wordt aangepast aan de opgegeven configuratie:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
@@ -185,7 +185,7 @@ U kunt ook sorteren configureren of sorteercriteria combineren. Volg de ondersta
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Klik in het lijstconfiguratievenster op het tabblad **[!UICONTROL Sorting]**.
+1. Klik in het lijstconfiguratievenster op de knop **[!UICONTROL Sorting]** tab.
 1. Selecteer de velden die u wilt sorteren en de sorteerrichting (oplopend of aflopend).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -196,11 +196,11 @@ U kunt ook sorteren configureren of sorteercriteria combineren. Volg de ondersta
 
    De sorteerprioriteit heeft geen invloed op de weergave van de kolommen in de lijst.
 
-1. Klik **[!UICONTROL Ok]** om deze configuratie te bevestigen en het resultaat in de lijst te tonen.
+1. Klikken **[!UICONTROL Ok]** om deze configuratie te bevestigen en het resultaat in de lijst te tonen.
 
 ### Elementen zoeken {#running-a-search}
 
-U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking stellen gebruikend het **[!UICONTROL Search]** gebied boven de lijst van gebieden wordt gevestigd die. Druk op **Enter** op het toetsenbord of blader door de lijst. De velden die overeenkomen met uw zoekopdracht, hebben vette labels.
+U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking stellen gebruikend **[!UICONTROL Search]** veld boven de lijst met velden. Druk **Enter** op het toetsenbord of door de lijst bladeren. De velden die overeenkomen met uw zoekopdracht, hebben vette labels.
 
 >[!NOTE]
 >

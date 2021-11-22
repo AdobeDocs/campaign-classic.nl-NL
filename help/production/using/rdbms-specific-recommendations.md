@@ -149,10 +149,10 @@ REINDEX TABLE nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* Adobe raadt u aan kleinere tabellen te gebruiken: als het proces op grote tabellen mislukt ( waarbij het risico van mislukking het grootst is ) , is ten minste een deel van het onderhoud voltooid .
->* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse stromen van de gegevensreplicatie hebt.
+>* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval zijn voor **NmsRecipient** als u grote dagelijkse gegevensreplicatiestromen hebt.
 >* De instructies VACUUM en REINDEX vergrendelen de tabel, die sommige processen onderbreekt terwijl het onderhoud wordt uitgevoerd.
->* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de tabel **YyyNmsBroadLogXxx**.
->* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+>* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze functie te gebruiken voor de **YyyNmsBroadLogXxx** tabel.
+>* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow, met behulp van een **[!UICONTROL SQL]** activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 
 >
 
@@ -162,9 +162,9 @@ REINDEX TABLE nmsmirrorpageinfo;
 PostgreSQL biedt geen eenvoudige manier om een online tabel opnieuw samen te stellen, aangezien de VACUUM FULL-instructie de tabel vergrendelt, waardoor normale productie wordt voorkomen. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
 
 * onderhoud uitvoeren wanneer het Adobe Campaign-platform wordt gestopt;
-* Stop de diverse subservices van Adobe Campaign die waarschijnlijk in de tabel zullen schrijven die opnieuw wordt samengesteld (**nlserver stop wfserver instance_name** om het werkschemaproces te stoppen).
+* Stop de diverse subservices van Adobe Campaign die waarschijnlijk in de tabel schrijven die wordt herbouwd (**nlserver stop wfserver instance_name** om het workflowproces te stoppen).
 
-Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. Met de volgende SQL kunt u twee nieuwe functies maken: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kunnen worden gebruikt om de noodzakelijke DDL te produceren om een lijst te ontspannen.
+Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. Met de volgende SQL kunt u twee nieuwe functies maken: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kan worden gebruikt om noodzakelijke DDL te produceren om een lijst opnieuw te creëren.
 
 * Met de eerste functie kunt u (** _tmp** hier) een werktabel maken die een kopie is van de oorspronkelijke tabel.
 * De tweede functie verwijdert vervolgens de oorspronkelijke tabel en wijzigt de naam van de werktabel en de bijbehorende indexen.
@@ -384,7 +384,7 @@ Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om 
  $$ LANGUAGE plpgsql;
 ```
 
-Het volgende voorbeeld kan in een werkschema worden gebruikt om de vereiste lijsten te herbouwen eerder dan het gebruiken van **vacuum/rebuild** bevel:
+Het volgende voorbeeld kan in een werkschema worden gebruikt om de vereiste lijsten te herbouwen eerder dan het gebruiken van **vacuüm/reconstructie** opdracht:
 
 ```
 function sqlGetMemo(strSql)
@@ -421,23 +421,23 @@ Neem contact op met de databasebeheerder voor meer informatie over de procedures
 
 >[!NOTE]
 >
->Voor de Server van Microsoft SQL, kunt u het onderhoudsplan gebruiken dat op [deze pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html) wordt gedetailleerd.
+>Voor Microsoft SQL Server kunt u het onderhoudsplan gebruiken dat is beschreven op [deze pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u een andere versie gebruikt, neemt u contact op met uw databasebeheerder voor informatie over onderhoudsprocedures.
 
 1. Eerst, verbind met de Studio van het Beheer van de Server van Microsoft SQL, met login met beheerderrechten.
-1. Ga naar **[!UICONTROL Management > Maintenance Plans]** omslag, klik op het met de rechtermuisknop aan en kies **[!UICONTROL Maintenance Plan Wizard]**.
-1. Klik **[!UICONTROL Next]** wanneer de eerste pagina omhoog komt.
-1. Selecteer het type onderhoudsplan dat u wilt maken (afzonderlijke schema&#39;s voor elke taak of één schema voor het hele abonnement) en klik op de knop **[!UICONTROL Change...]**.
-1. Selecteer in het venster **[!UICONTROL Job schedule properties]** de gewenste uitvoeringsinstellingen en klik op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Next]**.
-1. Selecteer de onderhoudstaken die u wilt uitvoeren en klik op **[!UICONTROL Next]**.
+1. Ga naar de **[!UICONTROL Management > Maintenance Plans]** map, klikt u er met de rechtermuisknop op en kiest u **[!UICONTROL Maintenance Plan Wizard]**.
+1. Klikken **[!UICONTROL Next]** wanneer de eerste pagina naar boven komt.
+1. Selecteer het type onderhoudsplan dat u wilt maken (afzonderlijke schema&#39;s voor elke taak of één schema voor het hele abonnement) en klik op de knop **[!UICONTROL Change...]** knop.
+1. In de **[!UICONTROL Job schedule properties]** Selecteer de gewenste instellingen en klik op **[!UICONTROL OK]** en klik vervolgens op **[!UICONTROL Next]**.
+1. Selecteer de onderhoudstaken die u wilt uitvoeren en klik vervolgens op **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
    >We raden u aan ten minste de hieronder weergegeven onderhoudstaken uit te voeren. U kunt ook de statistische updatetaak selecteren, hoewel deze al wordt uitgevoerd door de workflow voor het opschonen van databases.
 
-1. Selecteer in de vervolgkeuzelijst de database waarop u de taak **[!UICONTROL Database Check Integrity]** wilt uitvoeren.
-1. Selecteer de database en klik op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Next]**.
+1. Selecteer in de vervolgkeuzelijst de database waarop u het dialoogvenster **[!UICONTROL Database Check Integrity]** taak.
+1. Selecteer de database en klik op **[!UICONTROL OK]** en klik vervolgens op **[!UICONTROL Next]**.
 1. Vorm de maximumgrootte die aan uw gegevensbestand wordt toegewezen, dan klik **[!UICONTROL Next]**.
 
    >[!NOTE]
@@ -448,7 +448,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    * Als het indexfragmentatietempo tussen 10% en 40% ligt, wordt een reorganisatie aanbevolen.
 
-      Kies welke databases en objecten (tabellen of weergaven) u wilt reorganiseren en klik op **[!UICONTROL Next]**.
+      Kies welke databases en objecten (tabellen of weergaven) u opnieuw wilt ordenen en klik vervolgens op **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
@@ -456,26 +456,26 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    * Als het indexfragmentatietempo hoger is dan 40%, wordt een heropbouw aanbevolen.
 
-      Selecteer de opties u op de index wilt toepassen herbouwt taak, dan klik **[!UICONTROL Next]**.
+      Selecteer de opties die u wilt toepassen op de taak voor het opnieuw samenstellen van de index en klik vervolgens op **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Selecteer de optie **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
+      >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Selecteer **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
 
-1. Selecteer de opties u in het activiteitenrapport wilt tonen, dan klik **[!UICONTROL Next]**.
+1. Selecteer de opties die u in het activiteitenrapport wilt weergeven en klik vervolgens op **[!UICONTROL Next]**.
 1. Controleer de lijst van taken die voor het onderhoudsplan worden gevormd, dan klik **[!UICONTROL Finish]**.
 
    Er wordt een samenvatting van het onderhoudsplan en de status van de verschillende stappen weergegeven.
 
 1. Als het onderhoudsplan is voltooid, klikt u op **[!UICONTROL Close]**.
-1. Dubbelklik in de Microsoft SQL Server-verkenner op de map **[!UICONTROL Management > Maintenance Plans]**.
+1. Dubbelklik in de Microsoft SQL Server-verkenner op de knop **[!UICONTROL Management > Maintenance Plans]** map.
 1. Selecteer het Adobe Campaign-onderhoudsplan: de verschillende stappen worden beschreven in een workflow .
 
-   Een object is gemaakt in de map **[!UICONTROL SQL Server Agent > Jobs]**. Met dit object kunt u het onderhoudsplan starten. In ons voorbeeld is er slechts één object omdat alle onderhoudstaken deel uitmaken van hetzelfde plan.
+   Er is een object gemaakt in het dialoogvenster **[!UICONTROL SQL Server Agent > Jobs]** map. Met dit object kunt u het onderhoudsplan starten. In ons voorbeeld is er slechts één object omdat alle onderhoudstaken deel uitmaken van hetzelfde plan.
 
    >[!IMPORTANT]
    >
-   >Voor dit voorwerp om te lopen, moet de agent van de Server van Microsoft SQL worden toegelaten.
+   >Dit object kan alleen worden uitgevoerd als de Microsoft SQL Server-agent is ingeschakeld.
 
 **Een afzonderlijke database voor het werken met tabellen configureren**
 
@@ -483,7 +483,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 >
 >Deze configuratie is optioneel.
 
-Met de optie **WdbcOptions_TempDbName** kunt u een aparte database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd.
+De **WdbcOptions_TempDbName** staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL. Hierdoor worden back-ups en replicatie geoptimaliseerd.
 
 Deze optie kan worden gebruikt als u de het werk lijsten (bijvoorbeeld, de lijsten die tijdens de uitvoering van een werkschema worden gecreeerd) op een andere gegevensbestand wilt worden gecreeerd.
 

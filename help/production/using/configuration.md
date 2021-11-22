@@ -19,13 +19,13 @@ ht-degree: 1%
 
 ## De syslogd-luisterpoort wijzigen {#changing-the-syslogd-listening-port}
 
-Standaard is de **syslogd** luisterpoort 666 (udp). Indien nodig kunt u dit wijzigen met een omgevingsvariabele.
+Standaard worden de **syslogd** de luisterpoort is 666 (udp). Indien nodig kunt u dit wijzigen met een omgevingsvariabele.
 
 Zodra het wordt gevormd, wordt deze variabele in aanmerking genomen door alle modules van Adobe Campaign.
 
 ### In Linux {#in-linux}
 
-Bewerk het bestand **customer.sh** en voeg de volgende regel toe:
+Bewerk de **klant.sh** en voeg de volgende regel toe:
 
 ```
 export TRACE_ADDR=localhost:<listening port>
@@ -33,7 +33,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### In Windows {#in-windows}
 
-U moet de **TRACE_ADDR** omgevingsvariabele met de **localhost** waarde tot stand brengen: **`<listening port="" />`**.
+U moet de **TRACE_ADDR** omgevingsvariabele met de **localhost** waarde: **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >
@@ -41,8 +41,8 @@ U moet de **TRACE_ADDR** omgevingsvariabele met de **localhost** waarde tot stan
 
 ## Beveiligingszones configureren {#configuring-security-zones}
 
-Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. De configuratie van de technische zone wordt uitgevoerd in het configuratiedossier van de server van Adobe Campaign. De verbinding van een exploitant aan een veiligheidsstreek moet in de console worden bepaald ( **[!UICONTROL Administration > Access management > Operators]** knoop).
+Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. De configuratie van de technische zone wordt uitgevoerd in het configuratiedossier van de server van Adobe Campaign. De koppeling van een exploitant aan een veiligheidsstreek moet in de console worden bepaald ( **[!UICONTROL Administration > Access management > Operators]** knooppunt).
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../installation/using/security-zones.md) voor meer informatie over het configureren van beveiligingszones.
+>Voor meer bij het vormen van veiligheidsstreken, verwijs naar [deze sectie](../../installation/using/security-zones.md).

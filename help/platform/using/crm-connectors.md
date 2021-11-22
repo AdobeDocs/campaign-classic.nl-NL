@@ -25,12 +25,12 @@ Deze connectoren maken snelle en eenvoudige data-integratie mogelijk: Adobe Camp
 
 >[!NOTE]
 >
->Deze functie is beschikbaar in Adobe Campaign via het speciale pakket **CRM-connectors**.
+>Deze functie is beschikbaar in Adobe Campaign via de **CRM-connectors** toegewezen pakket.
 
 
 ### Compatibele systemen {#compatible-crm-systems-and-limitations}
 
-Ondersteunde CRM&#39;s en versies worden beschreven in Campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+Ondersteunde CRM&#39;s en versies worden in de campagne gedetailleerd weergegeven [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Ondersteunde CRM&#39;s en versies worden beschreven in Campagne [Compatibiliteit
 
 ### Implementatiestappen {#crm-implementation-steps}
 
-Leer geleidelijke procedure om Campagne en de Dynamica van Microsoft [in deze sectie](../../platform/using/crm-ms-dynamics.md) te verbinden
+Leer geleidelijke procedure om Campagne en de Dynamica van Microsoft te verbinden [in deze sectie](../../platform/using/crm-ms-dynamics.md)
 
 
-Leer geleidelijke procedure om Campagne en Salesforce [in deze sectie ](../../platform/using/crm-sfdc.md) aan te sluiten
+Leer geleidelijke procedure om Campagne en Salesforce aan te sluiten [in deze sectie](../../platform/using/crm-sfdc.md)

@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ## E-mailpersonalisatie optimaliseren met externe gegevens {#optimizing-email-personalization-with-external-data}
 
-U kunt berichtpersonalisatie vooraf verwerken in een specifieke workflow. Om dit uit te voeren, gebruik **[!UICONTROL Prepare the personalization data with a workflow]** optie, beschikbaar op **[!UICONTROL Analysis]** lusje van de leveringseigenschappen.
+U kunt berichtpersonalisatie vooraf verwerken in een specifieke workflow. Om dit uit te voeren, gebruik **[!UICONTROL Prepare the personalization data with a workflow]** beschikbaar in het dialoogvenster **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen.
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in een extern gegevensbestand opslaat.
 
@@ -29,13 +29,13 @@ Met deze optie worden de prestaties aanzienlijk verbeterd wanneer de stap voor p
 
 Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken die in een externe database zijn opgeslagen.
 
-* **Filter op externe gegevens**  - Met  [](../../workflow/using/targeting-data.md#selecting-data) Queryactivity kunt u externe gegevens toevoegen en gebruiken in de gedefinieerde filterconfiguraties. Raadpleeg [deze pagina](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
+* **Filter op externe gegevens** - de [Query](../../workflow/using/targeting-data.md#selecting-data) Met activiteit kunt u externe gegevens toevoegen en gebruiken in de gedefinieerde filterconfiguraties. Raadpleeg [deze pagina](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
 
-* **Subsets**  maken: met  [](../../workflow/using/split.md) Splitactivity kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
+* **Subsets maken** - de [Splitsen](../../workflow/using/split.md) kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
 
-* **Externe database**  laden - U kunt de externe gegevens gebruiken in de activiteit  [Gegevens laden](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Meer informatie vindt u op [deze pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Externe database laden** - U kunt externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading--rdbms-.md) (RDBMS) activiteit. Meer informatie in [deze pagina](../../workflow/using/data-loading--rdbms-.md).
 
-* **Informatie en koppelingen**  toevoegen - Met de  [](../../workflow/using/enrichment.md) Enrichmentactiviteit kunt u aanvullende gegevens toevoegen aan de werktabel van de workflow en koppelingen naar een externe tabel. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie vindt u op [deze pagina](../../workflow/using/enrichment.md).
+* **Informatie en koppelingen toevoegen** - de [Verrijking](../../workflow/using/enrichment.md) Met activiteit kunt u aanvullende gegevens toevoegen aan de werktabel van de werkstroom en koppelingen maken naar een externe tabel. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie in [deze pagina](../../workflow/using/enrichment.md).
 
 ## FDA-beperkingen {#limitations}
 

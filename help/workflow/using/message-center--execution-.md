@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflows worden geïnstalleerd met **Berichtcentrum - Uitvoering** toe:voegen-aan door gebrek.
+De hieronder beschreven workflows worden geïnstalleerd met de **Berichtcentrum - uitvoering** standaard invoegtoepassing.
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
@@ -38,11 +38,11 @@ Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagnev
    <td> Met deze workflow kunt u een status aan een gebeurtenis toewijzen. Gebeurtenisstatussen zijn als volgt:<br /> 
     <ul> 
      <li> <p><strong>In behandeling</strong>: de gebeurtenis bevindt zich in een wachtrij. Er is nog geen berichtsjabloon aan gekoppeld.</p> </li> 
-     <li> <p><strong>In afwachting van levering</strong>: Als de gebeurtenis zich in een wachtrij bevindt, is er een berichtsjabloon aan gekoppeld en wordt deze momenteel verwerkt door de levering.</p> </li> 
+     <li> <p><strong>In behandeling</strong>: Als de gebeurtenis zich in een wachtrij bevindt, is er een berichtsjabloon aan gekoppeld en wordt deze momenteel verwerkt door de levering.</p> </li> 
      <li> <p><strong>Verzonden</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.</p> </li> 
-     <li> <p><strong>Genegeerd door de levering</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</p> </li> 
+     <li> <p><strong>Genegeerd door levering</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</p> </li> 
      <li> <p><strong>Afleveringsfout</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.</p> </li> 
-     <li> <p><strong>Gebeurtenis niet behandeld</strong>: de gebeurtenis is niet gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet opnieuw verwerkt.</p> </li> 
+     <li> <p><strong>Gebeurtenis niet gedekt</strong>: de gebeurtenis is niet gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet opnieuw verwerkt.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

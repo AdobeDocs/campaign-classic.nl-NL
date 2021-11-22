@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **Distributed Marketing**. Voor meer op deze module, verwijs naar dit [sectie](../../distributed/using/about-distributed-marketing.md).
+De hieronder beschreven workflow wordt geïnstalleerd met de **Distributed Marketing** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **
   <tr> 
    <td> <span class="uicontrol">Verspreide marketingprocessen</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Deze workflow begint met het verwerken van de gedistribueerde marketingmodule. Het lanceert de verwezenlijking van lokale campagnes en beheert berichten met betrekking tot ordes en campagnepakketbeschikbaarheid.<br /> </td> 
+   <td> Deze workflow begint met het verwerken van de gedistribueerde marketingmodule. Het lanceert de verwezenlijking van lokale campagnes en beheert berichten met betrekking tot orden en campagnepakketbeschikbaarheid.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

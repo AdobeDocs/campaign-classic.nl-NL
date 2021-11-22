@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign biedt de optie **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen.
+Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen.
 
 ## Vereisten {#operating-principle}
 
@@ -25,7 +25,7 @@ Met de optie FDA kunt u uw gegevensmodel uitbreiden in een database van derden. 
 
 Voor het gebruik van deze functie worden de volgende voorwaarden vermeld:
 
-* **Configuratie**: behalve Snowflake hebt u een  **on-** premiseor of  **** hybridhosting model nodig om Federated Data Access in te stellen. [Meer informatie](../../installation/using/hosting-models.md)
-* **Externe databaseversie**: u hebt een externe database nodig die compatibel is met de Adobe Campaign FDA-module. De lijst met databasesystemen en compatibele versies wordt beschreven in Campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-* **Machtigingen**: gebruikers moeten ook in Adobe Campaign en in de externe database over de  [nodige ](../../installation/using/remote-database-access-rights.md) machtigingen beschikken.
+* **Configuratie**: behalve voor Snowflake hebt u een **op locatie** of **hybride** hostingmodel voor instellen van Federated Data Access. [Meer informatie](../../installation/using/hosting-models.md)
+* **Externe databaseversie**: u hebt een externe database nodig die compatibel is met de Adobe Campaign FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Machtigingen**: de gebruikers moeten ook [noodzakelijke machtigingen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign en in de externe database.
 

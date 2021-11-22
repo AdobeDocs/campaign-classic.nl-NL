@@ -35,11 +35,11 @@ Geen
 
 ## Beschrijving {#description-13}
 
-This element define a group of `<parameter>` elements.
+Dit element definieert een groep `<parameter>`  elementen.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-8}
 
-Dit element is verplicht, zelfs voor één enkel `<param>` kindelement van het `<method>` element.
+Dit element is verplicht, zelfs voor één `<param>` onderliggend element van het `<method>`  element.
 
 ## Beschrijving van kenmerk {#attribute-description-13}
 

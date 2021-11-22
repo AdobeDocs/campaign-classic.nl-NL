@@ -19,15 +19,15 @@ ht-degree: 0%
 
 ## Bestandsindeling voor uploaden beperken {#limiting-uploadable-files}
 
-Gebruik het **uploadWhiteList** attribuut om de dossiertypes te beperken beschikbaar voor upload op de server van Adobe Campaign.
+Gebruik de **uploadWhiteList** om de bestandstypen te beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
 
-Dit kenmerk is beschikbaar in het **dataStore**-element van het **serverConf.xml**-bestand. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Dit kenmerk is beschikbaar in het dialoogvenster **dataStore** van het **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-De standaardwaarde van dit kenmerk is **.+** en laat u om het even welk dossiertype uploaden.
+De standaardwaarde van dit kenmerk is **.+** en kunt u elk bestandstype uploaden.
 
 Als u de mogelijke indelingen wilt beperken, vervangt u de kenmerkwaarde door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
-Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
+Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** Hiermee kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van h
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 
-U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend een **de werkschemaactiviteit van de Overdracht van het Dossier** bijvoorbeeld. Hiervoor moet u de sectie **proxyConfig** van het bestand **serverConf.xml** via een specifieke opdracht configureren. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend **Bestandsoverdracht** bijvoorbeeld workflowactiviteit. Om dit te bereiken, moet u vormen **proxyConfig** van de **serverConf.xml** een specifieke opdracht gebruiken. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat de HTTP- en HTTPS-protocolparameters **niet meer beschikbaar zijn** vanaf de campagneversie 20.2. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
+De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat vanaf 20.2 de campagneversie de parameters HTTP en HTTPS protocol **niet meer beschikbaar**. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
 
 >[!CAUTION]
 >
@@ -109,23 +109,23 @@ Als u de iOS HTTP/2-connector via een proxy moet gebruiken, worden de volgende H
 * HTTP zonder verificatie
 * HTTP-basisverificatie
 
-U kunt de proxymodus alleen activeren als het bestand `serverconf.xml` de volgende wijziging bevat:
+Als u de proxymodus wilt activeren, moet de volgende wijziging worden uitgevoerd in het dialoogvenster `serverconf.xml` bestand:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Raadpleeg deze [pagina](../../delivery/using/about-mobile-app-channel.md) voor meer informatie over deze iOS HTTP/2-connector.
+Voor meer informatie over deze iOS HTTP/2-connector raadpleegt u deze [page](../../delivery/using/about-mobile-app-channel.md).
 
 ## Overheidsmiddelen beheren {#managing-public-resources}
 
 Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer info](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Openbare bronnen worden opgeslagen in de map **/var/res/instance** van de installatiemap van Adobe Campaign.
+De openbare middelen worden opgeslagen in **/var/res/instance** directory van de installatiemap van Adobe Campaign.
 
-De overeenkomende URL is: **http://server/res/instance** waarbij **instance** de naam van de volgende instantie is.
+De overeenkomende URL is: **http://server/res/instance** waar **instance** is de naam van de instantie tracking.
 
-U kunt een andere folder specificeren door een knoop aan **conf-`<instance>`.xml** dossier toe te voegen om opslag op de server te vormen. Dit betekent dat de volgende regels moeten worden toegevoegd:
+U kunt een andere map opgeven door een knooppunt toe te voegen aan de **conf-`<instance>`.xml** bestand om opslag op de server te configureren. Dit betekent dat de volgende regels moeten worden toegevoegd:
 
 ```
 <serverconf>

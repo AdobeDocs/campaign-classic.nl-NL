@@ -45,9 +45,9 @@ Nadat u elk account afzonderlijk hebt gecontroleerd, zijn er twee mogelijke scen
 U moet contact opnemen met de provider om mogelijke conflicten aan de zijkant vast te stellen.
 
    * Sommige externe accounts hebben dezelfde combinatie van aanmelding/wachtwoord.
-De provider heeft geen manier om te bepalen van welke externe account de `BIND PDU` afkomstig is, zodat ze alle verbindingen van de meerdere accounts als één enkele beschouwen. Ze hadden MO en SR mogelijk willekeurig rond de twee accounts gerouteerd, wat problemen veroorzaakte.
-Als de leverancier veelvoudige korte codes voor de zelfde login/wachtwoordcombinatie steunt, zult u hen moeten vragen waar te om die korte code in `BIND PDU` te zetten. Merk op dat dit stuk informatie binnen `BIND PDU`, en niet in `SUBMIT_SM` moet worden gezet, aangezien `BIND PDU` de enige plaats is die het verpletteren van MOs correct zal toestaan.
-Zie [Informatie in elk type PDU](sms-protocol.md#information-pdu) sectie hierboven om te weten welk gebied in `BIND PDU` beschikbaar is, gewoonlijk voegt u de korte code in `address_range` toe, maar dat speciale steun van de leverancier vereist. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
+De provider kan niet zien van welke externe account de `BIND PDU` komt van, zodat behandelen zij alle verbindingen van de veelvoudige rekeningen als één enkel. Ze hadden MO en SR mogelijk willekeurig rond de twee accounts gerouteerd, wat problemen veroorzaakte.
+Als de leverancier veelvoudige korte codes voor de zelfde login/wachtwoordcombinatie steunt, zult u hen moeten vragen waar te om die korte code in te zetten `BIND PDU`. Deze informatie moet in de `BIND PDU`, en niet in `SUBMIT_SM`, sinds de `BIND PDU` is de enige plaats die het verpletteren van MOs correct zal toestaan.
+Zie de [Informatie in elke soort PDU](sms-protocol.md#information-pdu) in de sectie hierboven om te weten welk veld beschikbaar is in het dialoogvenster `BIND PDU`, meestal voegt u de korte code toe in `address_range`, maar daarvoor is speciale steun van de leverancier nodig. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
 Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes op dezelfde externe account.
 
 ## Uitgifte met externe rekening in het algemeen {#external-account-issues}
@@ -77,15 +77,15 @@ Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes o
 
 ## Probleem bij verbinding met de provider {#issue-provider}
 
-* Als de `BIND PDU` een niet-nul `command_status` code terugkeert, vraag de leverancier om meer informatie.
+* Als de `BIND PDU` retourneert een andere waarde dan nul `command_status` Vraag de provider om meer informatie.
 
 * Controleer of het netwerk correct is geconfigureerd, zodat de TCP-verbinding tot stand kan worden gebracht met de provider.
 
 * Vraag de leverancier om te controleren dat zij behoorlijk IPs aan de lijst van gewenste personen van de instantie van Adobe Campaign toevoegden.
 
-* Controleer **Externe account** instellingen. Vraag de provider de waarde van de velden.
+* Controleren **Externe rekening** instellingen. Vraag de provider de waarde van de velden.
 
-* Als de verbinding succesvol maar onstabiel is, controleer [Kwestie met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie.
+* Als de verbinding succesvol maar instabiel is, controleert u [Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie.
 
 * Als verbindingsproblemen moeilijk te diagnosticeren zijn, kan een netwerk vangen informatie verstrekken. Zorg ervoor dat het netwerk vangt gelijktijdig loopt terwijl het probleem voor het efficiënt kan worden geanalyseerd. Let ook op het exacte tijdstip waarop het probleem verschijnt.
 
@@ -95,25 +95,25 @@ Een verbinding wordt als instabiel beschouwd als om het even welke volgend gebeu
 
 * De verbinding duurt minder dan 1 uur. Adobe Campaign Classic-transmissieverbindingen vormen een uitzondering vanwege de manier waarop de Adobe Campaign Classic MTA werkt.
 
-* De provider verzendt `UNBIND PDU`s.
+* De leverancier verzendt `UNBIND PDU`s.
 
-* `enquire_link` keren uit, aan de kant van Adobe Campaign of aan de kant van de provider. In dat geval ziet u `ENQUIRE_LINK_RESP` met een foutcode die niet gelijk is aan nul.
+* `enquire_link` keren uit, aan de kant van Adobe Campaign of aan de kant van de provider. Misschien ziet u `ENQUIRE_LINK_RESP` met een foutcode die niet gelijk is aan nul.
 
 * Er zijn veel `BIND PDU`s. Afhankelijk van het aantal verbindingen mag er niet meer dan een paar zijn per dag. Meer dan 1 BIND PDU per uur zou alarm moeten zijn.
 
 Verbindingsstabiliteitsproblemen oplossen:
 
-* De instabiele verbindingen zijn zelden de worteloorzaak, het is vaak het resultaat van een ander probleem die tot een losmaken leidt. Het vinden van de worteloorzaak is de prioriteit.
+* De instabiele verbindingen zijn zelden de worteloorzaak, het is vaak het resultaat van een ander probleem dat een losmaken veroorzaakt. Het vinden van de worteloorzaak is de prioriteit.
 
 * Brede SMPP-sporen inschakelen. U zult hen nodig hebben om te zien wat gebeurt wanneer de verbinding opnieuw begint.
 
-* Als de provider `BIND PDU`s verzendt, is er mogelijk iets mis. Vraag uw provider waarom `UNBING` is verzonden.
+* Als de provider `BIND PDU`Er kan dus iets mis zijn. Vraag uw provider waarom `UNBING` wordt verzonden.
 
 * Het vastleggen van een netwerk is soms de enige manier om te zien hoe de verbinding wordt gesloten.
 
-* Als de provider de verbindingen sluit door een `TCP FIN` of een `TCP RST packet` te verzenden, vraagt u uw provider om meer informatie.
+* Als de leverancier de verbindingen door of te verzenden sluit `TCP FIN` of `TCP RST packet`, vraag uw provider om meer informatie.
 
-* Als de leverancier de verbinding sluit na het verzenden van een schone fout zoals `DELIVER_SM_RESP` met een foutencode, moeten zij hun schakelaar anders bevestigen die andere soorten berichten zullen verhinderen worden overgebracht en MTA throttling zullen teweegbrengen. Dit is met name belangrijk in de transceivermodus, waarbij het sluiten van de verbinding invloed heeft op zowel MT als SR.
+* Als de provider de verbinding sluit na het verzenden van een schone fout, zoals `DELIVER_SM_RESP` met een foutcode, moeten ze hun connector op een andere manier repareren, zodat andere soorten berichten niet worden verzonden en de MTA-vertraging wordt geactiveerd. Dit is met name belangrijk in de transceivermodus, waarbij het sluiten van de verbinding invloed heeft op zowel MT als SR.
 
 ## Probleem bij het verzenden van een MT (regelmatig naar een eindgebruiker verzonden SMS){#issue-MT}
 
@@ -125,11 +125,11 @@ Verbindingsstabiliteitsproblemen oplossen:
 
 * Controleer of de MTA het bericht daadwerkelijk verwerkt. Als het niet het geval is, zou dit geen kwestie van SMS kunnen zijn.
 
-* Controleer of de SMS-connector daadwerkelijk is gebonden aan de apparatuur van de provider. Vraag de leverancier om feedback om te controleren of alle systemen correct communiceren. Zie `BIND_TRANSMITTER` en `BIND_TRANSCEIVER PDU`s voor informatie over het bindingsproces. Mogelijk moet u SMPP-sporen inschakelen voor het oplossen van problemen.
+* Controleer of de SMS-connector daadwerkelijk is gebonden aan de apparatuur van de provider. Vraag de leverancier om feedback om te controleren of alle systemen correct communiceren. Zie `BIND_TRANSMITTER` en `BIND_TRANSCEIVER PDU`s voor informatie over bindt proces. Mogelijk moet u SMPP-sporen inschakelen voor het oplossen van problemen.
 
-* Als de sporen SMPP toegelaten, controleer dat `SUBMIT_SM PDU` de juiste informatie bevat.
+* Als de sporen SMPP toegelaten, controleer dat `SUBMIT_SM PDU` bevat de juiste informatie.
 
-* Controleer of de provider reageert met een waarde `SUBMIT_SM_RESP PDU` met de waarde &quot;OK&quot; (code 0). Zorg ervoor dat de PDU met een redelijke vertraging aankomt: iets langer dan 1 seconde moet met de leverancier worden besproken , komt het gewoonlijk binnen minder dan 100 ms aan .
+* Controleer of de provider reageert met een `SUBMIT_SM_RESP PDU` met een waarde &quot;OK&quot; (code 0). Zorg ervoor dat de PDU met een redelijke vertraging aankomt: iets langer dan 1 seconde moet met de leverancier worden besproken , komt het gewoonlijk binnen minder dan 100 ms aan .
 
 * Als al deze stappen werken, kunt u erop vertrouwen dat het probleem aan de leverancierszijde is. Zij zullen het oplossen van problemen op hun platform moeten doen.
 
@@ -139,29 +139,29 @@ Verbindingsstabiliteitsproblemen oplossen:
 
 Duplicaten worden vaak veroorzaakt door nieuwe pogingen. Het is normaal om duplicaten te hebben wanneer het opnieuw proberen van berichten, zou u moeten proberen om de worteloorzaak van herpogingen te verwijderen.
 
-* Als u duplicaten ziet die precies 60 seconden van elkaar zijn verzonden, is het waarschijnlijk een probleem aan de kant van de provider, dan sturen ze niet snel genoeg een `SUBMIT_SM_RESP`.
+* Als u duplicaten ziet die precies 60 seconden van elkaar zijn verwijderd, is dit waarschijnlijk een probleem aan de aanbodzijde, wordt er geen `SUBMIT_SM_RESP` snel genoeg.
 
-* Als u veel `BIND/UNBIND` ziet, hebt u een instabiele verbinding. Zie [Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie voor oplossingen alvorens te proberen om dubbele berichtkwesties op te lossen.
+* Als u veel `BIND/UNBIND`, u hebt een instabiele verbinding. Zie de[Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) voor oplossingen alvorens dubbele berichtkwesties op te lossen.
 
 Het verminderen van de hoeveelheid duplicaten wanneer er opnieuw wordt geprobeerd:
 
-* Verlaag het verzendende venster. Het verzendende venster zou groot genoeg moeten zijn om voor `SUBMIT_SM_RESP` latentie te behandelen. De waarde ervan vertegenwoordigt het maximum aantal berichten dat kan worden gedupliceerd als een fout optreedt terwijl het venster vol is.
+* Verlaag het verzendende venster. Het verzendende venster moet groot genoeg zijn voor `SUBMIT_SM_RESP` latentie. De waarde ervan vertegenwoordigt het maximum aantal berichten dat kan worden gedupliceerd als een fout optreedt terwijl het venster vol is.
 
 ## Uitgave bij verwerking van SR (ontvangstbewijzen) {#issue-process-SR}
 
 * U hebt SMPP-sporen nodig die zijn ingeschakeld voor het uitvoeren van elk type SR-probleemoplossing.
 
-* Controleer of de `DELIVER_SM PDU` afkomstig is van de provider en of deze goed is samengesteld.
+* Controleer of de `DELIVER_SM PDU` komt van de leverancier en is goed gevormd.
 
-* Controleer of Adobe Campaign tijdig reageert met een geslaagde `DELIVER_SM_RESP PDU`. Op Adobe Campaign Classic garandeert dit dat de SR is ingevoegd in de tabel `providerMsgId` voor uitgestelde verwerking door het SMS-proces.
+* Controleren of Adobe Campaign met succes reageert `DELIVER_SM_RESP PDU` tijdig. Op Adobe Campaign Classic is dit de garantie dat de SR in de `providerMsgId` tabel voor uitgestelde verwerking door het SMS-proces.
 
-Als `DELIVER_SM PDU` niet met succes wordt erkend, dan zou u het volgende moeten controleren:
+Als de `DELIVER_SM PDU` wordt niet erkend, dan zou u het volgende moeten controleren:
 
-* Controleer regex met betrekking tot id-extractie en foutverwerking in de **External account**. Mogelijk moet u deze valideren op basis van de inhoud van de `DELIVER_SM PDU`.
+* Controleer regex met betrekking tot id-extractie en fout-verwerking in het dialoogvenster **Externe rekening**. Mogelijk moet u deze valideren aan de hand van de inhoud van het dialoogvenster `DELIVER_SM PDU`.
 
-* Controleer of de fouten correct zijn opgenomen in de tabel `broadLogMsg`.
+* Controleer of de fouten correct zijn ingesteld in het dialoogvenster `broadLogMsg` tabel.
 
-Als de `DELIVER_SM PDU` door de Adobe Campaign Classic uitgebreide schakelaar SMPP is erkend maar het wideLog niet behoorlijk wordt bijgewerkt, controleer het proces van de aanpassing van identiteitskaart dat in de sectie [Matching MT, SR en uitzendingangen ](sms-protocol.md#matching-mt) wordt beschreven.
+Als de `DELIVER_SM PDU` is erkend door de Adobe Campaign Classic extended SMPP-connector, maar het wideLog is niet correct bijgewerkt. Controleer het in de sectie beschreven proces voor het afstemmen van de id [Overeenkomende MT-, SR- en Broadlog-vermeldingen](sms-protocol.md#matching-mt).
 
 Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffers van de provider staan, kunt u deze overslaan met de optie &quot;Ongeldige id bevestigt telling&quot;. Dit dient met voorzichtigheid te worden gebruikt en zo snel mogelijk na het schoonmaken van de buffers op 0 te worden ingesteld.
 
@@ -171,19 +171,19 @@ Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffer
 
 * Wanneer het vangen van netwerkverkeer of het analyseren van sporen SMPP, ben zeker om het volledige gesprek met MO en zijn antwoord MT te vangen als een antwoord wordt gevormd.
 
-* Als de MO (`DELIVER_SM PDU`) niet in de sporen verschijnt, is het probleem op de leverancierskant. Zij zullen het oplossen van problemen op hun platform moeten doen.
+* Als de MO (`DELIVER_SM PDU`) niet in de sporen wordt weergegeven, het probleem ligt aan de aanbodzijde. Zij zullen het oplossen van problemen op hun platform moeten doen.
 
-* Als `DELIVER_SM PDU` verschijnt, controleer dat het door Adobe Campaign met succes `DELIVER_SM_RESP PDU` (code 0) wordt erkend. Dit RESP garandeert dat alle verwerkingslogica is toegepast door Adobe Campaign (automatisch antwoord en allow/lijst van gewezen personen). Als het niet het geval is, zoek naar een foutenmelding in de het proceslogboeken van SMS.
+* Als de `DELIVER_SM PDU` wordt weergegeven, controleert u of het door Adobe Campaign is erkend met succes `DELIVER_SM_RESP PDU` (code 0). Dit RESP garandeert dat alle verwerkingslogica is toegepast door Adobe Campaign (automatisch antwoord en allow/lijst van gewezen personen). Als het niet het geval is, zoek naar een foutenmelding in de het proceslogboeken van SMS.
 
-* Als automatische reacties zijn ingeschakeld, controleert u of `SUBMIT_SM` naar de provider is verzonden. Als niet, is het gegarandeerd om een foutenmelding in de het proceslogboeken van SMS te vinden.
+* Als automatische reacties zijn ingeschakeld, controleert u of de optie `SUBMIT_SM` is naar de provider verzonden. Als niet, is het gegarandeerd om een foutenmelding in de het proceslogboeken van SMS te vinden.
 
-* Als de `SUBMIT_SM MT PDU` met het antwoord in de sporen wordt gevonden maar SMS niet aan de mobiele telefoon aankomt, zult u voor hulp bij het oplossen van problemen contact met de leverancier moeten opnemen.
+* Als de `SUBMIT_SM MT PDU` die het antwoord bevat, wordt in de tracés gevonden maar het SMS komt niet aan de mobiele telefoon, u moet contact opnemen met de provider voor hulp bij het oplossen van problemen.
 
 ## Uitgave tijdens de voorbereiding van de levering, exclusief in quarantaine geplaatste ontvangers (in quarantaine geplaatst door de functie voor automatisch antwoord) {#issue-delivery-preparation}
 
-* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar dit [sectie](sms-protocol.md#automatic-reply) als u kwesties met het plus voorvoegsel van het internationale formaat van het telefoonaantal hebt.
+* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar dit [sectie](sms-protocol.md#automatic-reply) als u problemen hebt met het plus-voorvoegsel van de internationale notatie voor telefoonnummers.
 
-* Controleer korte codes. Uitsluitingen kunnen optreden als de korte code van de ontvanger gelijk is aan de code die in de externe account is gedefinieerd of als deze leeg is (leeg = enige snelcode). Als slechts één korte code voor de volledige instantie van Adobe Campaign wordt gebruikt, is het gemakkelijker om alle **korte code** gebieden leeg te verlaten.
+* Controleer korte codes. Uitsluitingen kunnen optreden als de korte code van de ontvanger gelijk is aan de code die in de externe account is gedefinieerd of als deze leeg is (leeg = enige snelcode). Als er maar één korte code wordt gebruikt voor de hele Adobe Campaign-instantie, is het eenvoudiger om alles te laten **korte code** velden zijn leeg.
 
 ## Coderingsproblemen {#encoding-issues}
 
@@ -201,25 +201,25 @@ Kopieer uw bericht niet en plak het tijdens het testen altijd rechtstreeks in de
 
 Met hexadecimaal kunt u het verschil zien tussen vergelijkbare tekens. Een L in kleine letters, een I in hoofdletters, O, 0, alle verschillende typen aanhalingstekens, niet-Latijnse coderingen of zelfs verschillende typen spaties kunnen er allemaal hetzelfde uitzien of zelfs helemaal niet worden weergegeven.
 
-Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals [de code van Unicode converter](https://r12a.github.io/app-conversion/) website gebruiken. Typ uw tekst, controleer of er geen PII zoals telefoonnummers is en klik op **Omzetten**. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
+Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals gebruiken [Unicode-codeconverter](https://r12a.github.io/app-conversion/) website. Typ in de tekst, controleer of er geen PII is zoals telefoonnummers en klik op **Omzetten**. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
 
-Wanneer het openen van kaartjes over coderingsproblemen, of met de leverancier of [Adobe de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie omvat van wat u typt en wat u ziet.
+Bij het openen van tickets over coderingsproblemen, ongeacht of dit gebeurt bij de provider of [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Neem altijd een hexadecimale versie op van wat u typt en wat u ziet.
 
 **Stap 3: Weet wat u moet verzenden**
 
-Bepaal de codering die u wilt gebruiken en zoek online naar de bijbehorende tekentabel. Controleer of de tekens die u wilt verzenden, daadwerkelijk beschikbaar zijn op de doelcodepagina. Controleer of het veld `data_coding` correct is en overeenkomt met wat u en de provider verwachten.
+Bepaal de codering die u wilt gebruiken en zoek online naar de bijbehorende tekentabel. Controleer of de tekens die u wilt verzenden, daadwerkelijk beschikbaar zijn op de doelcodepagina. Controleer of de `data_coding` het veld is juist en komt overeen met wat u en de provider verwachten.
 
 **Stap 4: Weet wat je daadwerkelijk hebt verzonden**
 
-U zult zuivert output van de schakelaar nodig hebben om precies te zien welke bytes u naar de leverancier verzendt. Coderingsproblemen verschijnen in `SUBMIT_SM PDU`s, zodat zeker ben om hen te vangen. Verzend zeer duidelijke berichten die gemakkelijk in het logboek zijn te vinden.
+U zult zuivert output van de schakelaar nodig hebben om precies te zien welke bytes u naar de leverancier verzendt. Coderingsproblemen verschijnen in `SUBMIT_SM PDU`Zorg er dus voor dat u ze vastlegt. Verzend zeer duidelijke berichten die gemakkelijk in het logboek zijn te vinden.
 
-Verschillende soorten speciale tekens verzenden tijdens het testen. GSM7-codering bevat bijvoorbeeld uitgebreide tekens die sterk van elkaar verschillen in hun hexadecimale vorm. Ze zijn gemakkelijk te vinden omdat ze niet in andere codering worden weergegeven.
+Verschillende soorten speciale tekens verzenden tijdens het testen. GSM7-codering bevat bijvoorbeeld uitgebreide tekens die sterk van elkaar verschillen in hun hexadecimale vorm. Ze zijn gemakkelijk te vinden omdat ze niet in andere codering voorkomen.
 
 ## Elementen die moeten worden opgenomen bij communicatie over een SMS-probleem {#element-include}
 
 Wanneer u om hulp over een kwestie van SMS, of het een steunkaartje aan Adobe Campaign, aan de leverancier van SMS, of om het even welk soort mededeling over de kwestie opent, zult u de volgende informatie moeten omvatten om ervoor te zorgen dat het behoorlijk gekwalificeerd zal zijn. Goed gekwalificeerde problemen zijn essentieel om problemen sneller op te lossen.
 
-* **Schakel uitgebreide SMPP-** berichten in wanneer het probleem optreedt. De meeste SMS-problemen kunnen zonder deze oplossing niet worden opgelost.
+* **Brede SMPP-berichten inschakelen** wanneer het probleem verschijnt. De meeste SMS-problemen kunnen zonder deze oplossing niet worden opgelost.
 
 * Als het probleem met het verkeer van SMS verwant is, contacteer eerst de leverancier. Hun platform is het meest geschikt voor efficiënte diagnose van de verkeersproblemen van SMS in real time.
 
@@ -275,14 +275,14 @@ De nieuwe schakelaar steunt uitgebreide het registreren door sporen: SMPP. De sp
 
 **Per externe account inschakelen (voorkeursmethode)**
 
-1. Schakel in de **Externe account** **Brede SMPP-sporen inschakelen in het logbestand**.
+1. In de **Externe rekening**, controle **Brede SMPP-sporen inschakelen in het logbestand**.
 1. Wacht 10 minuten om de server externe accounts opnieuw te laten laden.
 
 Het moet nu actief zijn.
 
 **Configuratie inschakelen**
 
-Stel in het bestand `config-instance.xml` de volgende parameters in:
+In de `config-instance.xml` , stelt u de volgende parameters in:
 
 ```
 <mta>

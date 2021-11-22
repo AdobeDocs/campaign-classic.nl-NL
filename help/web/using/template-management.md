@@ -29,8 +29,8 @@ Als u een sjabloon wilt toevoegen, raadpleegt u [Algemene opties](content-editor
 
 Na het vormen van een levering, kunt u het als malplaatje bewaren om het voor toekomstige leveringen opnieuw te gebruiken.
 
-Open op het tabblad **Campagnes** de gekozen levering. Klik op de **knop Opslaan als sjabloon**, geef de sjabloon een naam en sla deze op.
+In de **Campagnes** , opent u de gekozen levering. Klik op de knop **Opslaan als sjabloon** de sjabloon een naam geven en vervolgens opslaan.
 
 ![](assets/dce_save_model.png)
 
-De nieuwe sjabloon wordt opgeslagen onder **Bronnen > Sjablonen > Inhoudssjablonen**-knooppunt in de verkenner.
+De nieuwe sjabloon wordt opgeslagen onder **Bronnen > Sjablonen > Inhoudssjablonen** in de verkenner.

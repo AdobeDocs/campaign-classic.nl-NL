@@ -39,7 +39,7 @@ Kwantitatieve analyses leveren algemene statistieken op over de numerieke gegeve
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-Deze rapporten worden gecreeerd via de beschrijvende analysetovenaar, die op diverse stappen gebaseerd is, laat u het type van rapport kiezen u evenals de gegevens en de lay-out wilt tot stand brengen. Het rapport wordt weergegeven in de laatste stap. Indien nodig kan het rapport worden gepubliceerd en gedeeld met andere operatoren, worden afgedrukt, worden geëxporteerd in Excel-, PDF- of OpenDocument-indeling.
+Deze rapporten worden gecreeerd via de beschrijvende analysetovenaar, die op diverse stappen gebaseerd is, laat u het type van rapport kiezen u evenals de gegevens en de lay-out wilt tot stand brengen. Het rapport wordt weergegeven in de laatste stap. Indien nodig, kan het rapport worden gepubliceerd en met andere exploitanten worden gedeeld, gedrukt, uitgevoerd in Excel, PDF of formaat OpenDocument.
 
 De beschrijvende analysetovenaars zijn niet zo krachtig zoals de rapporten van Adobe Campaign maar zij verstrekken een snel overzicht van de gegevensbestandinhoud of een selectie van gegevens.
 

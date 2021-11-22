@@ -30,4 +30,4 @@ HTTP/2-connector: u moet communicatie aan en van de volgende servers toestaan:
 
 >[!NOTE]
 >
->Raadpleeg [De mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md) voor meer informatie over de twee connectors.
+>Voor meer informatie over de twee schakelaars, verwijs naar [De mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md).

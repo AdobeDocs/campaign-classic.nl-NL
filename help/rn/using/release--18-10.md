@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. Please [upgrade to the latest build](../../production/using/build-upgrade.md) or contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 

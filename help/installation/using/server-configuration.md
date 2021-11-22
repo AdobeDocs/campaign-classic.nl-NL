@@ -28,13 +28,13 @@ Controleer met operationele gebruikers welk type bestanden zij naar de server up
 * ETL (txt, csv, tab, ...)
 * enz.
 
-Voeg alle tags toe in serverConf/shared/datastore/@uploadAllowlist (geldige reguliere Java-expressie). Meer informatie vindt u op [deze pagina](../../installation/using/file-res-management.md).
+Voeg alle tags toe in serverConf/shared/datastore/@uploadAllowlist (geldige reguliere Java-expressie). Meer informatie in [deze pagina](../../installation/using/file-res-management.md).
 
-Adobe Campaign beperkt de bestandsgrootte niet. Maar u kunt het doen door IIS/Apache te vormen. Meer informatie vindt u in [deze sectie](../../installation/using/web-server-configuration.md).
+Adobe Campaign beperkt de bestandsgrootte niet. Maar u kunt het doen door IIS/Apache te vormen. Meer informatie in [deze sectie](../../installation/using/web-server-configuration.md).
 
 ## Betaling
 
-Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) voor meer informatie.
+Zie [deze pagina](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) voor meer informatie .
 
 Door gebrek, worden alle dynamische pagina&#39;s automatisch afgelost aan de lokale server van Tomcat van de machine de waarvan module van het Web is begonnen. U kunt er ook voor kiezen om sommige ervan niet door te geven. Als u niet bepaalde Adobe Campaign-modules gebruikt (zoals webapp, interactie, sommige jsp), kunt u deze verwijderen uit de relayregels.
 
@@ -44,12 +44,12 @@ Als u verschillende gastheernamen (één openbaar en één voor exploitanten) ge
 
 ## Uitgaande verbindingsbeveiliging
 
-De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) is beperkt. Als u een nieuwe URL wilt toestaan, moet de beheerder ernaar verwijzen in het bestand [serverConf.xml](../../installation/using/the-server-configuration-file.md).
+De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) is beperkt. Als u een nieuwe URL wilt toestaan, moet de beheerder ernaar verwijzen in het dialoogvenster [serverConf.xml, bestand](../../installation/using/the-server-configuration-file.md).
 
 Er zijn drie modi voor verbindingsbeveiliging:
 
 * **Blokkeren** : alle URL&#39;s die niet bij de lijst van gewenste personen horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
-* **Toestemming** : alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
+* **Permissief** : alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
 * **Waarschuwing** : alle URL&#39;s die zich niet op de lijst van gewenste personen bevinden, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder ze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
@@ -66,11 +66,11 @@ Bestaande klanten die uit een migratie komen, kunnen de waarschuwingsmodus een t
 
 ## Opdrachtbeperking (server-kant)
 
-Verschillende opdrachten staan op de zwarte lijst en kunnen niet worden uitgevoerd met de functie execCommand. Een extra-veiligheid wordt verstrekt door een specifieke gebruiker van Unix om externe bevelen uit te voeren. Deze beperking wordt automatisch toegepast op gehoste installaties. Voor installaties op locatie kunt u deze beperking handmatig instellen door de instructies van [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands) te volgen. Daarnaast zijn de **[!UICONTROL Script]**- en **[!UICONTROL External task]**-workflowactiviteiten niet beschikbaar (nieuw geïnstalleerde exemplaren).
+Verschillende opdrachten staan op de zwarte lijst en kunnen niet worden uitgevoerd met de functie execCommand. Een extra-veiligheid wordt verstrekt door een specifieke gebruiker van Unix om externe bevelen uit te voeren. Deze beperking wordt automatisch toegepast op gehoste installaties. Voor installaties op locatie kunt u deze beperking handmatig instellen door de instructies van [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Daarnaast **[!UICONTROL Script]** en **[!UICONTROL External task]** workflowactiviteiten zijn niet beschikbaar (nieuw geïnstalleerde instanties).
 
 ## Andere configuraties
 
-U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (zie [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands) voor meer informatie):
+U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (zie voor meer informatie [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)):
 
 * U kunt enkele extra kopteksten toevoegen, zoals HSTS, X-FRAME-OPTIONS, CSP..
 * U moet ze in een testomgeving testen voordat u ze in de productie toepast.
@@ -79,10 +79,10 @@ U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (zie [deze pagina](..
    >
    >Adobe Campaign kan worden verbroken door bepaalde kopteksten toe te voegen.
 
-Met Adobe Campaign kunt u een leeg wachtwoord instellen in het element `<dbcnx .../>`. Gebruik deze functie niet.
+Met Adobe Campaign kunt u een leeg wachtwoord instellen in het dialoogvenster `<dbcnx .../>` element. Gebruik deze functie niet.
 
-Adobe Campaign hecht standaard geen sessie aan een specifiek IP, maar u kunt deze activeren om te voorkomen dat de sessie wordt gestolen. U doet dit door in het bestand [serverConf.xml](../../installation/using/the-server-configuration-file.md) het kenmerk checkIPConsistent in te stellen op **true** in het knooppunt `<authentication>`.
+Adobe Campaign hecht standaard geen sessie aan een specifiek IP, maar u kunt deze activeren om te voorkomen dat de sessie wordt gestolen. Om het te doen, in [serverConf.xml, bestand](../../installation/using/the-server-configuration-file.md), stelt u het kenmerk checkIPConsistent in op **true** in de `<authentication>` knooppunt.
 
-Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Om dit te doen, plaats **enableTLS** aan **true** in de `<smtp ...>` knoop.
+Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Om dit te doen, stelt u **enableTLS** tot **true** in de `<smtp ...>` knooppunt.
 
 U kunt de levensduur van een sessie in het verificatieknooppunt (kenmerk sessionTimeOutSec) verminderen.

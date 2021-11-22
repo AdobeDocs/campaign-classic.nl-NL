@@ -27,7 +27,7 @@ Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegeven
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**Workflows** zijn een handige manier om uw importprocessen te automatiseren. Of u nu gegevens uit een lokaal bestand of uit een SFTP importeert, u kunt hiermee de procedures voor gegevensbeheer standaardiseren.
+**Workflows** Dit is een handige manier om importprocessen te automatiseren. Of u nu gegevens uit een lokaal bestand of uit een SFTP importeert, u kunt hiermee de procedures voor gegevensbeheer standaardiseren.
 
 Met workflows kunnen import- en exportbewerkingen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren.
 
@@ -37,11 +37,11 @@ Raadpleeg [deze sectie](../../platform/using/import-export-workflows.md) voor me
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Bovendien, verstrekt Campaign Classic **generische invoer en de uitvoer** die u toestaan om af en toe invoer of uitvoerbanen tot stand te brengen.
+Bovendien biedt Campaign Classic **algemene invoer en uitvoer** waarmee u af en toe import- of exporttaken kunt maken.
 
 De invoer en de uitvoer worden gevormd in specifieke malplaatjes, die u kunt vormen en gebruiken om invoer en de uitvoerbanen te lanceren en te controleren.
 
-Raadpleeg [deze sectie](../../platform/using/about-generic-imports-exports.md) voor meer informatie over generieke import en export.
+Voor meer informatie over de invoer en de uitvoer van generieke geneesmiddelen raadpleegt u [deze sectie](../../platform/using/about-generic-imports-exports.md).
 
 >[!IMPORTANT]
 >Algemene invoer en uitvoer mogen alleen voor incidentele transacties worden gebruikt. Om de consistentie van de gegevens te waarborgen en de efficiëntie te verbeteren, wordt aangeraden de import- en exportbewerkingen uit te voeren met behulp van workflows.
@@ -63,6 +63,6 @@ Raadpleeg deze secties voor meer informatie hierover:
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-Bij het uitvoeren van import- en exportbewerkingen dient u verschillende [aanbevolen procedures](../../platform/using/import-export-best-practices.md) te volgen om de consistentie van de gegevens in de database te waarborgen en algemene fouten tijdens update- of exportbewerkingen te voorkomen.
+U moet verschillende [best practices](../../platform/using/import-export-best-practices.md) bij het uitvoeren van import- en exportbewerkingen om de consistentie van de gegevens in de database te waarborgen en om veelvoorkomende fouten tijdens update- of exportbewerkingen te voorkomen.
 
 Daarnaast zijn aanbevelingen en algemene problemen met betrekking tot het gebruik van SFTP-servers beschikbaar in [deze sectie](../../platform/using/sftp-server-usage.md).

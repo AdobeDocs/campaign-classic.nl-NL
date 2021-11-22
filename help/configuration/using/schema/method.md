@@ -54,7 +54,7 @@ De &quot;@bibliotheek&quot; is nodig voor het declareren van een nieuwe methode 
 
 ## Beschrijving van kenmerk {#attribute-description-10}
 
-* **toegang (tekenreeks)**: this attribute define access control for using the method. Als dit kenmerk ontbreekt, is identificatie verplicht. Beschikbare waarden zijn: &#39;anoniem&#39;, &#39;admin&#39; en &#39;sql&#39;.
+* **access (tekenreeks)**: this attribute define access control for using the method. Als dit kenmerk ontbreekt, is identificatie verplicht. Beschikbare waarden zijn: &#39;anoniem&#39;, &#39;admin&#39; en &#39;sql&#39;.
 * **const (Boolean)**: als deze eigenschap is geactiveerd, betekent dit dat de gedeclareerde methode de entiteit wijzigt
 * **label (tekenreeks)**: label van de methode.
 * **bibliotheek (tekenreeks)**: deze methode is niet native voor de toepassing. Dit kenmerk neemt de waarde van de methodebibliotheek waar de methodedefinitie is gevonden (nms:mylibrary.js).

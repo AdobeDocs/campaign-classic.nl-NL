@@ -21,15 +21,15 @@ Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan wor
 
 >[!IMPORTANT]
 >
->Gebeurtenistypen moeten vooraf worden gemaakt. Raadpleeg [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md) voor meer informatie.
+>Gebeurtenistypen moeten vooraf worden gemaakt. Raadpleeg voor meer informatie hierover [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md).
 
-De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor het personaliseren van het transactionele bericht. U kunt malplaatjes ook gebruiken om de berichtvoorproef te testen en proeven te verzenden gebruikend zaadadressen alvorens aan het definitieve doel te leveren. Voor meer op dit, zie [Transactieberichtmalplaatjes](../../message-center/using/testing-message-templates.md) van de Test.
+De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor het personaliseren van het transactionele bericht. U kunt malplaatjes ook gebruiken om de berichtvoorproef te testen en proeven te verzenden gebruikend zaadadressen alvorens aan het definitieve doel te leveren. Zie voor meer informatie [Transactieberichtsjablonen testen](../../message-center/using/testing-message-templates.md).
 
 ## De berichtsjabloon maken {#creating-message-template}
 
-1. Ga naar de **[!UICONTROL Message Center >Transactional message templates]** omslag in de boom van Adobe Campaign.
+1. Ga naar de **[!UICONTROL Message Center >Transactional message templates]** in de Adobe Campaign-structuur.
 
-1. Klik in de lijst met transactiemalplaatjes met de rechtermuisknop en selecteer **[!UICONTROL New]** in het vervolgkeuzemenu of klik op de knop **[!UICONTROL New]** boven de lijst met transactionele berichtsjablonen.
+1. Klik in de lijst met transactiemalesjablonen met de rechtermuisknop en selecteer **[!UICONTROL New]** in het vervolgkeuzemenu of klik op de knop **[!UICONTROL New]** boven de lijst met transactiemalusjablonen voor berichten.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -43,24 +43,24 @@ De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor h
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Gebeurtenistypen moeten vooraf in de console worden gemaakt. Raadpleeg [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md) voor meer informatie.
+   Gebeurtenistypen moeten vooraf in de console worden gemaakt. Raadpleeg voor meer informatie hierover [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md).
 
    >[!IMPORTANT]
    >
    >Een gebeurtenistype kan niet aan meer dan één malplaatje worden verbonden.
 
-1. Voer een aard en een beschrijving in en klik vervolgens op **[!UICONTROL Continue]** om de berichttekst te maken (verwijs naar [De berichtinhoud maken](#creating-message-content)).
+1. Voer een aard en beschrijving in en klik vervolgens op **[!UICONTROL Continue]** om het berichtlichaam tot stand te brengen (verwijs naar [Berichtinhoud maken](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Berichtinhoud maken {#creating-message-content}
 
-De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk [E-maillevering](../../delivery/using/about-email-channel.md).
+De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. Voor een e-maillevering kunt u bijvoorbeeld inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie de [E-maillevering](../../delivery/using/about-email-channel.md) hoofdstuk
 
 >[!IMPORTANT]
 >
 >Afbeeldingen in het bericht moeten openbaar toegankelijk zijn. Adobe Campaign biedt geen mechanisme voor het uploaden van afbeeldingen voor transactieberichten.\
->In tegenstelling tot JSSP of webApp heeft `<%=` geen standaardescaping.
+>In tegenstelling tot JSSP of webApp, `<%=` heeft geen standaardescape.
 >
 >In dit geval moet u alle gegevens die uit de gebeurtenis komen, op de juiste wijze verwijderen. Deze escape is afhankelijk van de manier waarop dit veld wordt gebruikt. Gebruik in een URL bijvoorbeeld encodeURIComponent. U kunt escapeXMLString gebruiken om in de HTML te worden weergegeven.
 
@@ -77,14 +77,14 @@ Voer de volgende stappen uit om personalisatietags in te voegen in de tekst van 
 
 1. Voer de tekst van het bericht in.
 
-1. Voeg de tag in de hoofdtekst van de tekst in met behulp van het menu **[!UICONTROL Real time events > Event XML]**.
+1. Voeg in de tekst de tag in met behulp van de **[!UICONTROL Real time events > Event XML]** -menu.
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Vul de tag in met de volgende syntaxis: **elementnaam**.@**kenmerknaam** zoals hieronder getoond.
+1. Vul de tag in met de volgende syntaxis: **elementnaam**.@**kenmerknaam** zoals hieronder weergegeven.
 
    ![](assets/messagecenter_create_custo_003.png)
 
 1. Sla uw inhoud op.
 
-Uw bericht is nu klaar om [getest te zijn](../../message-center/using/testing-message-templates.md).
+Uw bericht is nu klaar om te worden [getest](../../message-center/using/testing-message-templates.md).

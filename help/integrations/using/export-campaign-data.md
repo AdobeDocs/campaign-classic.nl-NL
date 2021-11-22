@@ -8,7 +8,7 @@ exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Als u Campaign Classic-gegevens wilt exporteren naar het RTCDP-Platform (Adobe Real-Time Customer Data ), moet u eerst een workflow in Campaign Classic maken om de gegevens die u wilt delen naar de opslaglocatie van uw S3- of Azure-blok te exporteren.
+Als u Campaign Classic-gegevens wilt exporteren naar Adobe Real-time Customer Data Platform (RTCDP), moet u eerst een workflow in Campaign Classic maken om de gegevens die u wilt delen naar de opslaglocatie van uw S3- of Azure-blok te exporteren.
 
-Nadat de workflow is geconfigureerd en de gegevens naar de opslaglocatie zijn verzonden, moet u de opslaglocatie van uw S3- of Azure-blok aansluiten als een **Source** in het Platform Adobe Experience.
+Nadat de workflow is geconfigureerd en de gegevens naar de opslaglocatie zijn verzonden, moet u de opslaglocatie van uw S3- of Azure-blob als een verbinding maken **Bron** Adobe ervaren Platform.
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ Als u gegevens van Campaign Classic naar uw opslaglocatie van S3 of Azure Blob w
 
 Hiervoor kunt u toevoegen en configureren:
 
-* Een **[!UICONTROL Data extraction (file)]** activiteit om de gerichte gegevens in een Csv- dossier te halen. Raadpleeg [deze sectie](../../workflow/using/extraction--file-.md) voor meer informatie over het configureren van deze activiteit.
+* An **[!UICONTROL Data extraction (file)]** activiteit om de gerichte gegevens in een Csv- dossier te halen. Voor meer op hoe te om deze activiteit te vormen, verwijs naar [deze sectie](../../workflow/using/extraction--file-.md).
 
    ![](assets/rtcdp-extract-file.png)
 
-* Een **[!UICONTROL File transfer]** activiteit om het CSV dossier naar uw opslagplaats over te brengen. Raadpleeg [deze sectie](../../workflow/using/file-transfer.md) voor meer informatie over het configureren van deze activiteit.
+* A **[!UICONTROL File transfer]** activiteit om het CSV-bestand naar uw opslaglocatie over te brengen. Voor meer op hoe te om deze activiteit te vormen, verwijs naar [deze sectie](../../workflow/using/file-transfer.md).
 
    ![](assets/rtcdp-file-transfer.png)
 
@@ -44,9 +44,9 @@ In de onderstaande workflow worden logbestanden regelmatig uitgepakt in een CSV-
 
 ## De opslaglocatie aansluiten als bron
 
-De belangrijkste stappen om uw opslagplaats van S3 of van de Azure blob als **Bron** in het Platform van de Ervaring van Adobe aan te sluiten zijn hieronder vermeld. Gedetailleerde informatie over elk van deze stappen is beschikbaar in de [documentatie van de bronschakelaars](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html).
+De belangrijkste stappen om uw opslaglocatie van de S3- of Azure-blob als een **Bron** in Adobe experience wordt het Platform hieronder weergegeven. Gedetailleerde informatie over elk van deze stappen is beschikbaar in het dialoogvenster [Documentatie van bronconnectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
 
-1. Maak in het menu van het Adobe Experience-platform een verbinding met uw opslaglocatie:**[!UICONTROL Sources]**
+1. In het Adobe Experience-platform **[!UICONTROL Sources]** een verbinding maken met uw opslaglocatie:
 
    * [Een Amazon S3-bronverbinding maken](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob-connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)

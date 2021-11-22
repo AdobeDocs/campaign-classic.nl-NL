@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
+Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
 
-1. [Drivers voor Netezza&#39;s installeren en configureren](#netezza-config)
-1. De Netezza [externe account](#netezza-external) configureren in campagne
+1. Installeren en configureren [Netezza&#39;s](#netezza-config)
+1. De Netezza configureren [externe rekening](#netezza-external) in Campagne
 
 ## Configuratie van netezza {#netezza-config}
 
@@ -28,10 +28,10 @@ Als u verbinding maakt met een externe database van een Netezza in FDA, hebt u h
 
 1. Installeer de ODBC-stuurprogramma&#39;s voor Netezza, afhankelijk van het besturingssysteem dat u gebruikt:
 
-   * **nz-linuxclient-v7.2.0.0.tar.** gzfor Linux. Selecteer de map die overeenkomt met uw besturingssysteem (linux of linux64) en start de opdracht Uitpakken. U kunt de installatie laten uitvoeren in de opslagplaats die standaard wordt voorgesteld: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.** zipfor Windows. Pak het bestand uit en start het uitvoerbare script dat overeenkomt met uw besturingssysteem: nzodbcsetup.exe of nzodbcsetup64.exe. Volg de aanwijzingen van de wizard om de installatie van de stuurprogramma&#39;s te voltooien.
+   * **nz-linuxclient-v7.2.0.0.tar.gz** voor Linux. Selecteer de map die overeenkomt met uw besturingssysteem (linux of linux64) en start de opdracht Uitpakken. U kunt de installatie laten uitvoeren in de opslagplaats die standaard wordt voorgesteld: &quot;/usr/local/nz&quot;.
+   * **nz-winclient-v7.2.0.0.zip** voor Windows. Pak het bestand uit en start het uitvoerbare script dat overeenkomt met uw besturingssysteem: nzodbcsetup.exe of nzodbcsetup64.exe. Volg de aanwijzingen van de wizard om de installatie van de stuurprogramma&#39;s te voltooien.
 
-1. Configureer het ODBC-stuurprogramma. De configuratie kan in de standaarddossiers worden uitgevoerd: **/etc/odbc.ini** voor algemene parameters en **/etc/odbcinst.ini** voor het declareren van stuurprogramma&#39;s.
+1. Configureer het ODBC-stuurprogramma. De configuratie kan in de standaarddossiers worden uitgevoerd: **/etc/odbc.ini** voor algemene parameters en **/etc/odbcinst.ini** voor het aangeven van bestuurders.
 
    * **/etc/odbc.ini**
 
@@ -73,11 +73,11 @@ Als u verbinding maakt met een externe database van een Netezza in FDA, hebt u h
 
 Met de externe account van de Netezza kunt u uw Campagne-instantie verbinden met uw Netezza externe database.
 
-1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Van campagne **[!UICONTROL Explorer]**, klikt u op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Klik **[!UICONTROL New]** en selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]**.
+1. Klikken **[!UICONTROL New]** en selecteert u **[!UICONTROL External database]** als **[!UICONTROL Type]**.
 
-1. Om de **[!UICONTROL Netezza]** externe rekening te vormen, moet u specificeren:
+1. Om het **[!UICONTROL Netezza]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: Netezza
 
@@ -93,4 +93,4 @@ Met de externe account van de Netezza kunt u uw Campagne-instantie verbinden met
 >
 >Bewerkingen op schema&#39;s die automatisch gegenereerde primaire sleutels bevatten, worden niet in aanmerking genomen.
 >
->De tabel gebruikt de **Organize on**-component op de eerste index die in het schema is gedefinieerd. Aangezien deze clausule tot 1 tot 4 kolommen met Netezza wordt beperkt, kan deze index niet meer dan 4 kolommen bevatten.
+>De tabel gebruikt de **Organiseren op** clausule op de eerste index die in het schema wordt bepaald. Aangezien deze clausule tot 1 tot 4 kolommen met Netezza wordt beperkt, kan deze index niet meer dan 4 kolommen bevatten.

@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-U klikte **Send** knoop? Laten we eens kijken wat er gebeurt. Zodra de levering wordt verzonden, laat Adobe Campaign u toe om spoor van de verzonden berichten te houden en te ontdekken hoe uw ontvangers op uw levering reageren. Op deze manier kunt u uw volgende campagnes beter verzenden en optimaliseren.
+U hebt op de knop **Verzenden** knop? Laten we eens kijken wat er gebeurt. Zodra de levering wordt verzonden, laat Adobe Campaign u toe om spoor van de verzonden berichten te houden en te ontdekken hoe uw ontvangers op uw levering reageren. Op deze manier kunt u uw volgende campagnes beter verzenden en optimaliseren.
 
 ## Leveringen controleren {#monitoring-deliveries}
 
@@ -25,7 +25,7 @@ Om uw campagnes te controleren, moet u ervoor zorgen dat het bericht inderdaad a
 Van het dashboard van de levering van de Campagne, kunt u de verwerkte berichten en de logboeken van de leveringscontrole controleren.
 U kunt de status van de berichten in de leveringslogboeken ook controleren. [Meer info](about-delivery-monitoring.md).
 
-Wat als de leveringen niet worden verzonden en hun status **Pending** blijft?
+Wat als de leveringen niet worden verzonden en hun status blijft **In behandeling**?
 
 * Het uitvoeringsproces wacht op de beschikbaarheid van sommige bronnen. De MTA is mogelijk niet gestart.
 Controleer of uw modules mta@instance op uw servers MTA worden gelanceerd en begin indien nodig de module MTA. [Meer info](../../production/using/administration.md).
@@ -43,11 +43,11 @@ Om het gedrag van uw ontvangers beter te kennen, kunt u volgen hoe zij op een le
 
 **Tip**: Berichten bijhouden is standaard ingeschakeld. Als u URL&#39;s wilt configureren, selecteert u de optie URL&#39;s weergeven in de onderste sectie van de wizard voor levering. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
 
-Raadpleeg voor meer informatie de sectie [Tracking](how-to-configure-tracked-links.md) configureren en de beschrijving [Tracking-indicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
+Raadpleeg voor meer informatie de [Tekstspatiëring configureren](how-to-configure-tracked-links.md) en de [Traceringsindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators) beschrijving.
 
 ## Leveringsprestaties {#delivery-performances}
 
-Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de leveringsproductie controleren. De criteria zijn het aantal berichten die per uur worden verzonden en de grootte van de berichten (in beetjes per seconde). Zie [Productie-doorvoer](../../reporting/using/global-reports.md#delivery-throughput) voor meer informatie.
+Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de leveringsproductie controleren. De criteria zijn het aantal berichten die per uur worden verzonden en de grootte van de berichten (in beetjes per seconde). Zie voor meer informatie [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput).
 
 **Tips**:
 
@@ -67,4 +67,4 @@ Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optr
 
 * [Leveringsprestaties](delivery-performances.md)
 
-* [Uitgave van tijdelijke bestanden](../../production/using/temporary-files.md)  - alleen  *klanten op locatie*
+* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) - *alleen on-premise klanten*

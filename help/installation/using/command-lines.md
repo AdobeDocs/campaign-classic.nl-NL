@@ -27,9 +27,9 @@ Het maken van instanties kan worden uitgevoerd met behulp van opdrachtregels, me
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(waarbij **eng** en **fra** mogelijke waarden zijn voor de parameter `[lang]`)
+waarbij **eng** en **fra** zijn mogelijke waarden voor de `[lang]` parameter)
 
-Met de opdracht **nlserver config -addinstance:instance1/demo*/eng** kunt u een instantie maken met de naam **instance1** in het Engels met de DNS-maskerdemo*.
+De opdracht **nlserver config -addinstance:instance1/demo*/eng** laat u toe om een instantie tot stand te brengen genoemd **instance1** in het Engels met de DNS mask demo*.
 
 ## Een database declareren {#declaring-a-database}
 
@@ -39,14 +39,14 @@ U kunt een bestaande database aan een instantie koppelen via de opdrachtregel do
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-De volgende waarden zijn mogelijk voor de parameter **`[rdbms]`**:
+De volgende waarden zijn mogelijk voor de **`[rdbms]`** parameter:
 
 * **postgresql**: voor PostgreSQL,
 * **oracle**: voor Oracle,
 * **mssql**: voor Microsoft SQL Server,
 * **DB2**: voor de DB2-engine.
 
-Met de volgende opdracht configureert u de **demo**-instantie met de SQL-typeserver die bekend staat als **base6**, gekoppeld aan de **campagne**-account en zijn **password** op de **dbsrv**-server:
+Het volgende bevel vormt het **demo** instantie met de SQL-typeserver die bekend staat als **base6**, gekoppeld aan de **campagne** en **password** op de **dbsrv** server:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

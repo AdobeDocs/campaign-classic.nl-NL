@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Met de activiteit **Inbound SMS** kunt u tekstberichten downloaden en verwerken van een externe account.
+De **Binnenkomende SMS** Met activiteit kunt u tekstberichten van een externe account downloaden en verwerken.
 
 ## Properties {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-Het eerste lusje van **Binnenkomende SMS** activiteit laat u de verpletterende parameters voor de berichten van SMS ingaan en het manuscript ingaan dat bij het ontvangen van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de vervalvoorwaarden van de activiteit.
+Het eerste tabblad van het dialoogvenster **Binnenkomende SMS** De activiteit laat u de verpletterende parameters voor de berichten van SMS ingaan en het manuscript ingaan dat bij het ontvangen van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de vervalvoorwaarden van de activiteit.
 
-1. **[!UICONTROL SMS routing]**: Selecteer de externe account die moet worden gebruikt voor SMS-herstel. Externe accounts worden geconfigureerd via het knooppunt **[!UICONTROL Administration > Platform > External accounts]** van de structuur.
+1. **[!UICONTROL SMS routing]**: Selecteer de externe account die moet worden gebruikt voor SMS-herstel. Externe accounts worden geconfigureerd via de **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de structuur.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -33,4 +33,4 @@ Het eerste lusje van **Binnenkomende SMS** activiteit laat u de verpletterende p
 
 1. **[!UICONTROL Expiration]**
 
-De tabbladen **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** worden beschreven in [Binnenkomende e-mails](inbound-emails.md).
+De **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabbladen worden weergegeven in [Binnenkomende e-mails](inbound-emails.md).

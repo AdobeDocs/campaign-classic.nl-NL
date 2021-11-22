@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Een leveringsconfiguratie kan in een leveringsmalplaatje worden bewaard om opnieuw te worden gebruikt. De sjabloon kan een volledige of gedeeltelijke configuratie van de levering bevatten.
 
-Het leveringsmalplaatje kan manueel, zoals beschreven in dit hoofdstuk, of volgens een gebeurtenis (gelanceerd op een bepaald tijdstip, bij aankomst van een dossier bij een server, enz.) worden uitgevoerd. De malplaatjes van de levering kunnen via de **[!UICONTROL Resources > Templates > Delivery templates]** knoop in de boom worden gevormd.
+Het leveringsmalplaatje kan manueel, zoals beschreven in dit hoofdstuk, of volgens een gebeurtenis (gelanceerd op een bepaald tijdstip, bij aankomst van een dossier bij een server, enz.) worden uitgevoerd. De malplaatjes van de levering kunnen via worden gevormd **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt in de structuur.
 
 ![](assets/s_user_template_list.png)
 
@@ -31,8 +31,8 @@ Er zijn twee typen sjablonen:
 
 1. Vooraf gedefinieerde leveringssjablonen
 
-   De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruikers tot levering gebruikend dit malplaatje leiden, moeten zij eenvoudig de tekst of de inhoud van HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
+   De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruikers tot levering gebruikend dit malplaatje leiden, moeten zij eenvoudig de tekst of de inhoud van de HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
 
 >[!NOTE]
 >
->De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg [Selecteer een doeltoewijzing](selecting-a-target-mapping.md) en [Informatie over services en abonnementen](about-services-and-subscriptions.md) voor meer informatie.
+>De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg voor meer informatie hierover [Doeltoewijzing selecteren](selecting-a-target-mapping.md) en [Informatie over services en abonnementen](about-services-and-subscriptions.md).

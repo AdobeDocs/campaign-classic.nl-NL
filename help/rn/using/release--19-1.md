@@ -53,7 +53,7 @@ _16 december 2020_
 * De de integratieauthentificatie van trekkers oorspronkelijk gebaseerd op de authentificatie van de AUTH aan toegangspijplijn is veranderd en aan Adobe I/O verplaatst. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 * Nu het verouderde binaire protocol voor iOS APN’s niet meer wordt ondersteund, zijn alle instanties die dit protocol gebruiken, bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
-* Fixed an issue causing the deactivation of the SMPP connector after a connection error, preventing other SMS deliveries from being sent and leading to performance issues.
+* Probleem verholpen waarbij de SMPP-connector werd gedeactiveerd na een verbindingsfout, waardoor andere SMS-leveringen niet werden verzonden en prestatieproblemen optraden.
 * Probleem verholpen waarbij onjuiste percentages werden weergegeven bij het genereren van een beschrijvend rapport via een workflowactiviteit. (NEO-14314)
 * Het probleem met de voorbereiding van de levering verholpen toen de **Dubbel adres tijdens levering uitsluiten** is uitgeschakeld. (NEO-13240)
 * Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
@@ -79,21 +79,21 @@ _15 september 2020_
 
 * Verbeterd gebruik van nlsrvmod voor Apache 2.4-thread voor het corrigeren van nlsrvmod-crashes.
 * Probleem verholpen bij het gebruik van bestandsoverdrachtactiviteiten met een Azure extern account en een SSL-codering. De verbinding is uitgevoerd via HTTP in plaats van via HTTPS. (NEO-26720)
-* Fixed an issue with the url cache mechanism which did not retrieve the label or category.
+* Probleem verholpen met het mechanisme voor url-cache dat het label of de categorie niet heeft opgehaald.
 * Probleem verholpen waarbij URL&#39;s van spiegelpagina&#39;s onjuist werden gedefinieerd in e-mailleveringen (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
 * De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand dat niet meer werd gebruikt, te verwijderen (iOS-meldingen).
-* Fixed a regression issue which prevented after publication after postupgrade.
+* Probleem verholpen waarbij een regressieprobleem werd verholpen dat na publicatie na de upgrade werd voorkomen.
 * Oplossing voor een regressie met out-of-the-box leveringsrapporten die afgebroken bleken te zijn bij het exporteren naar PDF. (NEO-25757)
 * Probleem verholpen waarbij de parameterwaarde voor codering tijdens het omleiden van een tracking-URL werd verwijderd (van invloed op Japanse tekens). (NEO-25637)
 * Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd terwijl ze moesten worden toegestaan. (NEO-25210)
 * Oplossing voor een regressie die invloed had op berekende velden in een workflow waardoor de workflow mislukte. (NEO-25194)
-* Fixed a compatibility issue with Microsoft Dynamics (from version 8.2) that could prevent some API calls from executing (RetrieveAllEntities). (NEO-24528)
+* Probleem met compatibiliteit met Microsoft Dynamics (versie 8.2) verholpen waarbij sommige API-aanroepen niet konden worden uitgevoerd (RetrieveAllEntities). (NEO-24528)
 * Oplossing voor een regressieprobleem tijdens het gebruik van de ACS-connectorfunctie waardoor er geen verbinding kon worden gemaakt met een Campaign Standard-instantie (onjuist beheer van de FOH/FOH2-verbinding). (NEO-23433)
 * Oplossing voor een regressieprobleem met een databaseverbinding waarbij de webserver voortdurend opnieuw werd opgestart vanwege een probleem met de databasecodering. Dit kan leiden tot overmatig verbruik. (NEO-23264)
 * Probleem verholpen met de opschoningsworkflow voor databases die zou kunnen mislukken als gevolg van een niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
 * Tijdens de opschoningsworkflow worden nu verlopen lijsten in batches van 100 verwijderd in plaats van één voor één.
 * Na de overstap naar het [nieuwe ID-mechanisme voor reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
-* Fixed an issue preventing emails from being sent when there was Javascript code outside of the HTML content tag. (NEO-18628)
+* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden als er JavaScript-code buiten de HTML-inhoudstag stond. (NEO-18628)
 * Probleem verholpen waardoor de traceringsindicatoren voor transactionele berichten niet konden worden bijgewerkt door de workflow voor bijhouden. (NEO-17770)
 * Verbeterde prestaties van de wizard Database bijwerken om minder SQL-instructies te maken en zo de responstijd te optimaliseren.
 * Probleem met vastlopen van de console die kan optreden wanneer bijgehouden URL&#39;s in een e-mail worden uitgeschakeld, is opgelost via het dialoogvenster **Tekstinhoud** vanwege een niet-geïnitialiseerde variabele. (NEO-13545)
@@ -136,7 +136,7 @@ _13 augustus 2019_
 
 >[!NOTE]
 >
->19.1.4 [!DNL Gold Standard] releases are listed in this [page](../../rn/using/gold-standard.md).
+>19.1.4. [!DNL Gold Standard] worden in deze [page](../../rn/using/gold-standard.md).
 
 
 ## ![](assets/do-not-localize/red_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
@@ -150,14 +150,14 @@ _21 juni 2019_
 **Verbeteringen**
 
 * Oplossing voor een regressie in verband met het beheer van domeinkolommen waardoor e-mails niet konden worden verzonden op bepaalde configuraties.
-* To improve performance, a _operation=&quot;none&quot; attribute has been added to rtEvent SOAP calls to avoid &quot;SELECT FOR UPDATE&quot; requests.
-* Fixed a workflow display issue with outbound transitions after the Test activity. (NEO-12727)
+* Om de prestaties te verbeteren, is een _operation=&quot;niets&quot;attribuut toegevoegd aan de vraag van de ZEEP rtEvent om &quot;SELECT VOOR UPDATE&quot;verzoeken te vermijden.
+* Probleem met workflowweergave met uitgaande overgangen na de testactiviteit verholpen. (NEO-12727)
 * We staan nu toe dat dummy-records die in Microsoft Dynamics zijn gemaakt, worden verwijderd tijdens de workflow voor importeren.
-* Improved permissions to execute the security zone package when using internal account.
+* Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 
 ## ![](assets/do-not-localize/red_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
 
-_May 30, 2019_
+_30 mei 2019_
 
 **Nieuwe functies**
 
@@ -171,7 +171,7 @@ _May 30, 2019_
  <tbody> 
   <tr> 
    <td> Configuratiescherm<br /> </td> 
-   <td> <p>To increase efficiency in your work as an Admin user, manage settings of your SFTP servers by monitoring storage, add IP addresses to allowlist, and installing SSH keys for each instance. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login door de Experience Cloud vandaag</a>).</p> <p>Raadpleeg voor meer informatie de <a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl">gedetailleerde documentatie</a> en de <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=nl">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
+   <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag te controleren, voeg IP adressen aan lijst van gewenste personen toe, en installeer de sleutels van SSH voor elke instantie. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login door de Experience Cloud vandaag</a>).</p> <p>Raadpleeg voor meer informatie de <a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl">gedetailleerde documentatie</a> en de <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=nl">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
@@ -197,7 +197,7 @@ _May 30, 2019_
 
 **Verbeterde beveiliging**
 
-* Om veiligheidsredenen kunt u geen willekeurige opdrachten meer invoegen wanneer u de opdracht **[!UICONTROL Pre-process the file]** in een **[!UICONTROL Data loading (file)]** workflowactiviteit. Er is nu een vervolgkeuzelijst beschikbaar waarmee u uit drie opties kunt kiezen: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg). De XtkSecurity_Disable_Preproc-beveiligingsmarkering is toegevoegd. For new customers, this option will be set to 0. Voor bestaande klanten, zal deze optie aan 1 door postupgrade worden geplaatst om het vorige gedrag te houden. Refer to this [section](../../workflow/using/data-loading--file-.md).
+* Om veiligheidsredenen kunt u geen willekeurige opdrachten meer invoegen wanneer u de opdracht **[!UICONTROL Pre-process the file]** in een **[!UICONTROL Data loading (file)]** workflowactiviteit. Er is nu een vervolgkeuzelijst beschikbaar waarmee u uit drie opties kunt kiezen: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg). De XtkSecurity_Disable_Preproc-beveiligingsmarkering is toegevoegd. Voor nieuwe klanten wordt deze optie ingesteld op 0. Voor bestaande klanten, zal deze optie aan 1 door postupgrade worden geplaatst om het vorige gedrag te houden. Zie dit [sectie](../../workflow/using/data-loading--file-.md).
 * Probleem met wachtwoordzichtbaarheid verholpen die optrad tijdens het testen van de verbinding van een externe FDA-account zonder tijdzone ingesteld.
 * De PDFBox-bibliotheek is verwijderd.
 * Tomcat is bijgewerkt naar versie 7.0.93.
@@ -218,34 +218,34 @@ _May 30, 2019_
 * Workflow voor bijhouden: de volgwerkstroom is robuuster geworden. Verschillende problemen met betrekking tot het bijhouden van logbestanden, invoegingen/updates en aanpassing van URL-tracking zijn opgelost. Bovendien detecteert de workflow voor bijhouden nu problemen met trackinglogbestanden die tot fouten kunnen leiden en de workflow kunnen stoppen. Deze kwesties worden nu genegeerd en niet verwerkt.
 * Workflow voor opschonen: de opschoningsworkflow is verbeterd om mogelijke fouten en stops te voorkomen . Hierdoor worden de databasegrootte en de prestaties geoptimaliseerd.
 * Ingesloten afbeeldingen in transactieberichten: wij hebben de volledige steun van ingebedde beelden in transactionele berichten toegevoegd, om mogelijke neerstortingen of ontbrekende beelden te vermijden.
-* Database size - XtkJobLog: a purge mechanism has been added to this table. Dit heeft een positief effect op de databasegrootte.
+* Databasegrootte - XtkJobLog: er is een zuiveringsmechanisme toegevoegd aan deze tabel. Dit heeft een positief effect op de databasegrootte.
 * BCC-archivering: de standaardparameters voor BCC-archivering zijn gewijzigd om de archiveringssnelheid te verhogen. [Meer informatie](../../installation/using/email-archiving.md#parameters)
 * Update van databasestructuur: SQL de verzoeken die door de Tovenaar van de Update van de Structuur van het Gegevensbestand worden geproduceerd zijn verbeterd voor snellere uitvoering.
-* Guardrails for operator actions: several guardrails have been implemented to prevent operators from performing actions which could impact the platform&#39;s integrity. De ingebouwde schema&#39;s kunnen niet meer door de interface worden geschrapt. De XML van de workflowbron kan ook niet meer worden bewerkt door gebruikers die geen beheerder zijn.
+* Hulplijnen voor handelingen van de operator: er zijn diverse instructies ingevoerd om te voorkomen dat exploitanten acties uitvoeren die de integriteit van het platform kunnen aantasten . De ingebouwde schema&#39;s kunnen niet meer door de interface worden geschrapt. De XML van de workflowbron kan ook niet meer worden bewerkt door gebruikers die geen beheerder zijn.
 * Er zijn twee nieuwe opties beschikbaar gesteld: **XtkSecurity_Restrict_EditXML** (hiermee kunt u de XML-code van de leveringen uitschakelen) en **NmsOperation_OperationMgtDebug** (staat u toe om de technische werkschemauitvoering te controleren operationMgt). [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
 **Andere wijzigingen**
 
-* Push notifications: we now support the Thread ID option for iOS push.
+* Pushmeldingen: We ondersteunen nu de optie Thread ID voor iOS push.
 * Verbeterde het beheer van lange naamindexen die postupgrade-problemen kunnen veroorzaken.
-* Now, during the analysis of a decomail delivery, if the publication mode is set to **[!UICONTROL None]** in the deployment wizard, an error is logged and the analysis is stopped: &quot;Publication mode is set to &#39;none&#39;: Cannot embed image. De beelden zullen niet op eigenschaptelefoon worden getoond.&quot; (NEO-12208)
+* Nu, tijdens de analyse van een decomail levering, als de publicatiemodus wordt geplaatst aan **[!UICONTROL None]** in de plaatsingstovenaar, wordt een fout geregistreerd en de analyse wordt tegengehouden: &quot;Publicatiemodus is ingesteld op &#39;none&#39;: Kan afbeelding niet insluiten. De beelden zullen niet op eigenschaptelefoon worden getoond.&quot; (NEO-12208)
 * Het breedbandbeheer is verbeterd voor transactioneel overseinen. Wanneer de uitzendingen van de uitvoeringsinstantie aan de controleinstantie worden gesynchroniseerd, wordt het @lastModified gebied bijgewerkt aan de huidige datum van het systeem. De optie MC_Update_BlLastModified is toegevoegd voor besturingsinstanties. Waar betekent dat de huidige datum op de controleinstantie (standaardgedrag) zal worden gebruikt. Onwaar betekent dat we de @lastModified-datum van de uitzendingsinstantie gebruiken. (NEO-12579)
 * Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Verwijderd de recordlimiet van 10.000 in WorkflowHeatmap om een probleem met ontbrekende gegevens op te lossen. (NEO-12329)
-* Open Office is not supported and is now fully removed from the application. If you were still using it, move to Libre Office as it will not work anymore starting 19.1.
-* You can now limit Write access to Update data activity in Workflow using sysfilter attributes. [Meer informatie](../../configuration/using/filtering-schemas.md)
+* Open Office wordt niet ondersteund en wordt nu volledig uit de toepassing verwijderd. Als u het nog steeds gebruikt, ga naar Libre Office omdat het vanaf 19.1 niet meer werkt.
+* U kunt schrijven toegang tot de activiteit van de Update in Werkschema nu beperken gebruikend systeemfilterattributen. [Meer informatie](../../configuration/using/filtering-schemas.md)
 
 **Patches**
 
-* Fixed an issue which prevented the certificate from being uploaded for iOS mobile push notifications.
-* Fixed potential recurrent server crashes for transactional push notifications. Other crash issues have been fixed.
-* Fixed an issue which caused reporting discrepancies between user activities and tracking reports for the open delivery indicator. (NEO-11742)
+* Probleem verholpen waardoor het certificaat niet kon worden geüpload voor mobiele pushberichten van iOS.
+* Oplossing voor mogelijke terugkerende servercrashes voor pushberichten voor transacties. Andere problemen met crashes zijn opgelost.
+* Probleem opgelost waarbij discrepanties tussen gebruikersactiviteiten werden gemeld en rapporten voor de open leveringsindicator werden bijgehouden. (NEO-11742)
 * Probleem verholpen met de IMS-aanmelding.
 * Probleem verholpen waarbij een afbeelding uit de bibliotheek werd toegevoegd en afbeeldingen in de levering konden ontbreken. (NEO-11900)
-* Fixed an issue that could occur when extracting offer details in a direct mail delivery. (NEO-11700)
+* Probleem opgelost dat zich kon voordoen bij het uitpakken van de details van de aanbieding in een directe postbestelling. (NEO-11700)
 * Probleem verholpen dat gevolgen kon hebben voor de prestaties van SMS-berichten. (NEO-9812)
-* Fixed a console crash that could occur when using the Defined in an external file option for the main target of a delivery. (NEO-12349)
+* Probleem verholpen waarbij de console vastloopt die kan optreden wanneer de optie Gedefinieerd in een extern bestand wordt gebruikt voor het hoofddoel van een levering. (NEO-12349)
 * Probleem verholpen tijdens het analyseren van een bericht waarin ontvangers voor Japanse (.JP) domeinen als doel werden ingesteld. (NEO-12246)
 * Oplossing voor een weergaveprobleem bij het gebruik van een verdeling van waarden met een 1:N-koppeling. (NEO-12212, NEO-11820)
 * Probleem verholpen waarbij NmsMxDomain-fouten konden optreden in de MTA-logbestanden na een postupgrade. (NEO-12752)
@@ -263,7 +263,7 @@ _May 30, 2019_
 * Probleem verholpen met instellingen van Oracles waarbij verschuivingen van pijplijnen (triggers) niet correct zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
 * Correctie van een probleem dat weergavefouten kon veroorzaken in draaitabellen bij gebruik van de integratie Analytics (NEO-12103)
 * Probleem opgelost met het rapport van de beschrijvende analyse. (NEO-11414)
-* Fixed an issue with CRM connectors when the remote table contained a field with an underscore in its name.
+* Probleem verholpen met CRM-connectors wanneer de externe tabel een veld met een onderstrepingsteken in de naam bevatte.
 * Probleem opgelost waarbij valutasymbolen in Hypotheseverslagen konden worden weergegeven. (NEO-11634)
 * Probleem met omleiding en tekstspatiëring verholpen bij het gebruik van bepaalde tekens voor het bijhouden van koppelingen.
 * Probleem verholpen waarbij de voorvertoning van de aanbieding niet correct werkte.
@@ -277,17 +277,17 @@ _May 30, 2019_
 * Correctie van een fout bij het goedkeuren van de inhoud van een proefdruk. (NEO-12725)
 * Probleem verholpen met de workflowfunctie &quot;Deze subset uitsluiten van populatie&quot;. (NEO-12441)
 * Oplossing voor een probleem met de HTTPRequest-wait API die niet op alle callbacks wachtte. (NEO-12628)
-* Fixed an issue with the &quot;Update Shared Audience&quot; task in a split activity. (NEO-11562)
-* Fixed a web server crash issue. (NEO-12904)
+* Probleem verholpen met de taak Gedeeld publiek bijwerken in een gesplitste activiteit. (NEO-11562)
+* Probleem verholpen waarbij de webserver vastliep. (NEO-12904)
 * Probleem verholpen met de parameter Natuur in transactiesjablonen. (NEO-12334)
-* Fixed a console crash issue when displaying the tracked URLs in the email text editor. (NEO-13122)
+* Probleem verholpen waarbij de console vastliep tijdens de weergave van bijgehouden URL&#39;s in de e-mailteksteditor. (NEO-13122)
 * Probleem verholpen met de activiteit Bestand splitsen bij het importeren van soorten publiek uit Audience Manager. (NEO-11550)
-* Fixed an issue which caused errors in the hot click report. (NEO-11459)
+* Probleem verholpen dat fouten veroorzaakte in het rapport met hot click. (NEO-11459)
 * Probleem verholpen met renderen van aanbieding. (NEO-11565)
 * Probleem verholpen met de activiteit van de Update van de Lijst wanneer het invoeren van publiek van Audience Manager. (NEO-11226)
 * Oplossing voor een probleem met de activiteiten en configuratie van de tijdzone van het Programma. (NEO-11662)
 * Probleem verholpen waarbij de traceringsworkflow mislukte in het geval van onjuist gevormde URL&#39;s.
-* Fixed an issue with external accounts after importing the mobile application package.
+* Probleem met externe accounts opgelost na het importeren van het pakket met mobiele toepassingen.
 * Probleem verholpen bij het toewijzen van een tijdzone aan een operator. (NEO-12464)
 * Probleem verholpen waarbij fouten in de onderliggende logboeken konden optreden. (NEO-11539, NEO-8978)
 * Probleem verholpen door te klikken op het pictogram Historie in een opgeslagen rapport. (NEO-11620)

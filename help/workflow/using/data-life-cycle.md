@@ -29,11 +29,11 @@ Selecteer hiertoe het relevante menu:
 
 * Het doel weergeven
 
-   Dit menu toont de beschikbare gegevens over de doelpopulatie evenals de structuur van de het werklijst (**[!UICONTROL Schema]** tabel).
+   Dit menu toont de beschikbare gegevens over de doelpopulatie evenals de structuur van de het werklijst (**[!UICONTROL Schema]** ).
 
    ![](assets/wf-right-click-display.png)
 
-   Raadpleeg [Worktables and workflow schema](monitoring-workflow-execution.md#worktables-and-workflow-schema) voor meer informatie hierover.
+   Raadpleeg voor meer informatie hierover [Worktables and workflow schema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Het doel analyseren
 
@@ -41,7 +41,7 @@ Selecteer hiertoe het relevante menu:
 
    Raadpleeg deze [sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md) voor meer informatie.
 
-De doelgegevens worden gewist terwijl de workflow wordt uitgevoerd. Alleen de laatste werktabel is toegankelijk. U kunt het werkschema vormen zodat alle het werklijsten toegankelijk blijven: Controleer de optie **[!UICONTROL Keep the result of interim populations between two executions]** in de werkschemaeigenschappen.
+De doelgegevens worden gewist terwijl de workflow wordt uitgevoerd. Alleen de laatste werktabel is toegankelijk. U kunt het werkschema vormen zodat alle het werklijsten toegankelijk blijven: controleren **[!UICONTROL Keep the result of interim populations between two executions]** in de workfloweigenschappen.
 
 Wij raden u echter aan deze optie niet te activeren als er grote hoeveelheden gegevens zijn.
 
@@ -59,7 +59,7 @@ Hiermee kunt u gegevens gebruiken die via een lijst zijn verzameld of die zijn g
 
 **[!UICONTROL Target extension]** (targetData) type verpersoonlijkingselementen zijn niet beschikbaar voor het richten van werkschema&#39;s. Het leveringsdoel moet in het werkschema worden gebouwd en in de binnenkomende overgang van de levering worden gespecificeerd.
 
-Als u leveringsproeven wilt tot stand brengen, moet het proefdrukdoel op **[!UICONTROL Address substitution]** wijze worden gebouwd zodat de verpersoonlijkingsgegevens kunnen worden ingegaan. Raadpleeg deze [sectie](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof) voor meer informatie.
+Als u proefdrukken voor levering wilt maken, moet het proefdrukdoel worden gebaseerd op de **[!UICONTROL Address substitution]** zodat de verpersoonlijkingsgegevens kunnen worden ingevoerd. Raadpleeg deze [sectie](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof) voor meer informatie.
 
 In het volgende voorbeeld, gaan wij een lijst van informatie over klanten verzamelen, die in een gepersonaliseerd e-mail moet worden gebruikt.
 
@@ -85,29 +85,29 @@ Voer de volgende stappen uit:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configureer de tekstactiviteit **[!UICONTROL Enrichment]** om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campaign-database staan.
+1. Configureer de **[!UICONTROL Enrichment]** Typ activiteit om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campaign-database staan.
 
    Hier is de afstemmingssleutel het rekeningnummer:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Configureer vervolgens **[!UICONTROL Delivery]**: het wordt gecreeerd gebaseerd op een malplaatje, en de ontvangers worden gespecificeerd door de binnenkomende overgang.
+1. Dan vorm **[!UICONTROL Delivery]**: het wordt gecreeerd gebaseerd op een malplaatje, en de ontvangers worden gespecificeerd door de binnenkomende overgang.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Alleen gegevens in de overgang mogen worden gebruikt om de levering aan te passen. **De** targetDatatype verpersoonlijkingsgebieden zijn slechts beschikbaar voor de binnenkomende bevolking van de  **[!UICONTROL Delivery]** activiteit.
+   >Alleen gegevens in de overgang mogen worden gebruikt om de levering aan te passen. **targetData** de gebieden van de typeverpersoonlijking zijn slechts beschikbaar voor de binnenkomende bevolking van **[!UICONTROL Delivery]** activiteit.
 
 1. In het leveringsmalplaatje, gebruik de gebieden die in het werkschema worden verzameld.
 
-   Om dit te doen, neem **[!UICONTROL Target extension]** gebieden van de typeverpersoonlijking op.
+   Om dit te doen, voeg **[!UICONTROL Target extension]** type verpersoonlijkingsgebieden.
 
    ![](assets/wf-targetdata-sample-5.png)
 
    Hier willen we het favoriete muziekgenre en mediatype (CD of DVD) van de klant invoegen, zoals vermeld in het bestand dat tijdens de workflow wordt verzameld.
 
-   Als plus gaan we een coupon toevoegen voor houders van een getrouwde kaart, dat wil zeggen ontvangers voor wie de waarde van de &#39;Kaart&#39; gelijk is aan 1.
+   Als plus gaan we een coupon toevoegen voor houders van een loyaliteitskaart, dat wil zeggen ontvangers voor wie de waarde van de &#39;Kaart&#39; gelijk is aan 1.
 
    ![](assets/wf-targetdata-sample-6.png)
 

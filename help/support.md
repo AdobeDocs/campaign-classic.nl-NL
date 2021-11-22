@@ -7,7 +7,7 @@ exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
@@ -31,7 +31,7 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
 
 ### Veelgestelde vragen
 
-Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de workflow worden gecontroleerd? wat is de workflow voor het opschonen van databases?.. [Lees de eerste 10 vragen](platform/using/common-questions.md).
+Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de workflow worden gecontroleerd? wat is de workflow voor het opschonen van databases?.. [10 belangrijkste vragen lezen](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Onderwerpen van Vragen en antwoorden</strong></td><td><strong>Veelvoorkomende problemen</strong></td><td><strong>Best practices</strong></td><td><strong>Instructies</strong></td></tr>
@@ -99,7 +99,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.4)](rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de nieuwste [Gouden standaard](rn/using/gs-overview.md) of de [nieuwste GA-build (21.1.4)](rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -117,13 +117,13 @@ In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn
 
 U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informatie vindt u op de volgende pagina&#39;s:
 * [Branding van subdomein](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=nl)
-* [Een nieuw subdomein instellen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [SSL-certificaten controleren](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Een nieuw subdomein instellen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl)
+* [SSL-certificaten controleren](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=nl)
 
 ### Versie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel beheert. Meer informatie vindt u op de volgende pagina&#39;s:
-* [Voeg IPs op toe ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) staat om tot uw instantie(s) van de Campagne toegang te hebben
+* [Voeg IPs op de lijst van gewenste personen toe](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) om toegang te krijgen tot uw Campagne-instantie(s)
 * [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
 * [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [De GPG-sleutels voor gegevenscodering beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
@@ -132,7 +132,7 @@ Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel b
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Het nieuwe ticketing-systeem is gestart via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. De klantenservice helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
+Het nieuwe ticketsysteem is gestart via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. De klantenservice helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
 ### Vraag het de experts.
 
@@ -140,11 +140,11 @@ Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vr
 
 ### Downloadcentrum voor campagne openen
 
-Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden. [Klik ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) hier voor toegang tot de softwaredistributie van Experience Cloud.
+Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden. [Klik hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van de Experience Cloud toegang te hebben.
 Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 ### Een ticket maken of een chat starten
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Als u een probleem wilt melden of een chatsessie wilt starten in dat nieuwe systeem, maakt u verbinding met de [Adobe Admin Console](https://adminconsole.adobe.com/overview). Volg de gedetailleerde procedure die in [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) wordt beschreven.
+Als u een probleem wilt melden of een chatsessie wilt starten in dat nieuwe systeem, maakt u verbinding met de [Adobe Admin Console](https://adminconsole.adobe.com/overview). Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) wordt beschreven.

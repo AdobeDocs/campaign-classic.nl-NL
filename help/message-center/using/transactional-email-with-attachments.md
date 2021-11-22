@@ -23,25 +23,25 @@ Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vl
 
 In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload op de Transactionele berichtenserver: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
 
-Wanneer u interactie of details van klanten vastlegt, moet u deze informatie mogelijk aan het einde van het proces terugsturen naar de klant, bijvoorbeeld in een PDF-bestand dat aan een e-mail is gekoppeld.
+Wanneer u klanteninteractie of details vangt, kunt u deze informatie naar de klant aan het eind van het proces moeten terugsturen, bijvoorbeeld in een dossier van PDF in bijlage aan een e-mail.
 
 Hieronder volgen de belangrijkste stappen van dit scenario:
 
 1. De klant voert de website in en zoekt een product dat hij of zij wil kopen.
 1. De klant selecteert het product en past enkele opties aan.
 1. De klant voltooit de transactie.
-1. De klant ontvangt een e-mail waarin de transactie wordt bevestigd. Omdat het niet wordt aangeraden PII (Persoonlijke identificeerbare gegevens) in de e-mail te verzenden, wordt een beveiligde PDF gegenereerd en aan de e-mail toegevoegd.
+1. De klant ontvangt een e-mail waarin de transactie wordt bevestigd. Omdat het niet wordt aanbevolen PII (Persoonlijke Identificeerbare Informatie) in e-mail te verzenden, wordt een veilige PDF gegenereerd en aan de e-mail toegevoegd.
 1. De klant ontvangt de e-mail en de bijbehorende bijlage met de relevante gegevens.
 
 In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd aan de uitgaande e-mails, hetgeen de volgende voordelen biedt:
 
 * Zo kunt u de inhoud van de bijlage aanpassen.
 * Als de gehechtheid met een transactie (zoals in het hierboven beschreven voorbeeldscenario) wordt geassocieerd, kan het dynamische gegevens bevatten die tijdens het klantenproces worden geproduceerd.
-* Als u PDF-bestanden bijvoegt, wordt de beveiliging geoptimaliseerd omdat u deze kunt versleutelen en verzenden via HTTPS.
+* Als u PDF-bestanden koppelt, wordt de beveiliging geoptimaliseerd omdat u deze kunt versleutelen en verzenden via HTTPS.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Aanbevelingen {#important-notes}
 
@@ -54,7 +54,7 @@ Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implemen
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempel kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementatie {#implementation}
 
@@ -70,11 +70,11 @@ Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan e
 
 1. U kunt e-mailberichten verzenden via een SOAP-berichttrigger. In de SOAP-aanroep is er een URL-parameter (bijlageURL).
 
-   Zie [Gebeurtenisbeschrijving](../../message-center/using/event-description.md) voor meer informatie over SOAP-aanvragen.
+   Voor meer informatie over de verzoeken van de ZEEP, zie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
 
-1. Klik **[!UICONTROL Attachment]** bij het ontwerpen van uw e-mail.
+1. Klik tijdens het ontwerpen van uw e-mail op **[!UICONTROL Attachment]**.
 
-1. Voer in het scherm **[!UICONTROL Attachment definition]** de parameter SOAP-bijlage in:
+1. In de **[!UICONTROL Attachment definition]** scherm, ga de parameter van de gehechtheid van de ZEEP in:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

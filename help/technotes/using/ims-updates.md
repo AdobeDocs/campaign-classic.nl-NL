@@ -14,7 +14,7 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Op 30 juni zijn 2021 wijzigingen aangebracht in de [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) aanmeldingsmogelijkheden die van invloed kunnen zijn op uw vermogen om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
+Op 30 juni zijn wijzigingen aangebracht in 2021 [Adobe Identity Management-systeem](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) aanmeldingsmogelijkheden die van invloed kunnen zijn op uw vermogen om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
 
 ## Wat is er veranderd?
 
@@ -22,11 +22,11 @@ Adobe Identity Management Service (IMS) biedt geen ondersteuning voor oude Inter
 
 Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
-Om deze functionaliteit te behouden, moeten klanten de clientconsole op de computer van elke gebruiker bijwerken en ervoor zorgen dat de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met ingebouwde **Internet Explorer 11**, op de computer van elke gebruiker is geïnstalleerd.
+Om deze functionaliteit te behouden, moeten klanten de clientconsole op de computer van elke gebruiker bijwerken en zorgen voor de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **Internet Explorer 11** ingebouwd, wordt geïnstalleerd op de computer van elke gebruiker.
 
 ## Heeft dit gevolgen voor u?
 
-Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) en als u een oudere versie van Campagne uitvoert dan de hieronder vermelde versies, heeft dit gevolgen voor u.
+Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) en het uitvoeren van een oudere versie van Campagne dan de hieronder vermelde, is dit van invloed op u.
 
 Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet Explorer gebruikt, moet u een upgrade uitvoeren naar Internet Explorer 11.
 
@@ -34,7 +34,7 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
 
 * Als gehoste klant heeft Adobe uw exemplaar(s) al bijgewerkt naar de nieuwere versie.
 
-* Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies die hierboven zijn vermeld om te profiteren van de nieuwe clientconsole en een naadloze overgang **vóór 30 juni 2021** te garanderen.
+* Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies die hierboven zijn vermeld om te profiteren van de nieuwe clientconsole en een naadloze overgang te garanderen **vóór 30 juni 2021**.
 
    U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden vermeld.
 
@@ -45,22 +45,22 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
    * Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--19-2.md)
    * Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
 
-   Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties worden bevorderd, moet de Console van de Cliënt aan deze versie evenals aan Campagne kunnen worden bevorderd na **30 Juni, 2021**.
+   Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties zijn bijgewerkt, moet de clientconsole worden bijgewerkt naar deze versie en moet deze ook verbinding kunnen maken met Campagne nadat **30 juni 2021**.
 
-Zorg er bovendien voor dat de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met ingebouwde **Internet Explorer 11**, op de computer van elke gebruiker is geïnstalleerd.
+Zorg bovendien voor de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **Internet Explorer 11** ingebouwd, wordt geïnstalleerd op de computer van elke gebruiker.
 
 ## Veelgestelde vragen
 
 **Hoe kan ik mijn versie van Campagne controleren?**
 
-Leer hoe u uw versie [in deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
+Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 
 **Hoe kan ik controleren of ik IMS gebruik?**
 
 U kunt de verbindingsmodus als volgt controleren:
 
-* Start de Campagne Client Console en open de verbindingsinstellingen voor de instantie. Als de optie **Verbinding maken met een Adobe ID** is geselecteerd, gebruikt u Adobe IMS.
+* Start de Campagne Client Console en open de verbindingsinstellingen voor de instantie. Als de **Verbinding maken met een Adobe ID** is geselecteerd, gebruikt u Adobe IMS.
 
    ![](../../integrations/using/assets/ims_1.png)
 
@@ -72,7 +72,7 @@ of
 
 **Verbindingswaarschuwing**
 
-De volgende waarschuwing is zichtbaar voor gebruikers als zij hun Console van de Cliënt moeten bijwerken of een oude versie van Microsoft Internet Explorer gebruiken: **U moet de meest recente update installeren naar Windows en/of uw Adobe-apps.**
+De volgende waarschuwing is zichtbaar voor gebruikers als ze hun clientconsole moeten bijwerken of een oude versie van Microsoft Internet Explorer moeten gebruiken: **U moet de meest recente update installeren naar Windows en/of uw Adobe-apps.**
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 

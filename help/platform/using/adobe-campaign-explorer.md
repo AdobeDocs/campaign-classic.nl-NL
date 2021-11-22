@@ -5,8 +5,8 @@ description: Meer informatie over het gebruik van Campagne Explorer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
-De werkruimte **[!UICONTROL Explorer]** is verdeeld in drie zones:
+De **[!UICONTROL Explorer]** De werkruimte bestaat uit drie zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg [deze sectie](#about-navigation-hierarchy).) voor meer informatie.
+**1 - boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg voor meer informatie hierover  [deze sectie](#about-navigation-hierarchy).).
 
 **2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer info](adobe-campaign-ui-lists.md).
 
@@ -37,13 +37,13 @@ De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invo
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]**. Selecteer in het snelmenu het type bestand dat u wilt maken.
+Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]** . Selecteer in het snelmenu het type bestand dat u wilt maken.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-Leer hoe te om de boomstructuur van de navigatie van de Campagne [in deze sectie ](../../configuration/using/configuration.md) te vormen.
+Leer hoe u de boomstructuur voor cameranavigatie configureert [in deze sectie](../../configuration/using/configuration.md).
 
-Leer hoe u machtigingen voor mappen [instelt in deze sectie](access-management-folders.md).
+Leer hoe u machtigingen voor mappen instelt [in deze sectie](access-management-folders.md).
 
 ## Aanbevolen werkwijzen voor mapconfiguratie
 
@@ -76,10 +76,10 @@ Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermre
 >
 >Resoluties van minder dan 1600 x 900 pixels worden niet ondersteund door Adobe Campaign.
 
-Als in de **[!UICONTROL Explorer]** werkruimte sommige delen van de **[!UICONTROL Details]** streek lijken te zijn afgekapt, breidt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
+In de **[!UICONTROL Explorer]** werkruimte, als sommige delen van de **[!UICONTROL Details]** zone lijkt te zijn afgekapt, uitgevouwen met de pijl boven de zone of klik op de knop **[!UICONTROL Enlarge]** knop.
 
 ![](assets/s_ncs_user_resolution.png)
 
 ## Lijsten verkennen en aanpassen {#browsing-lists}
 
-Leer hoe u lijsten [in deze sectie](adobe-campaign-ui-lists.md) doorbladert, beheert en aanpast.
+Leer hoe u lijsten kunt bladeren, beheren en aanpassen [in deze sectie](adobe-campaign-ui-lists.md).

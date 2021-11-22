@@ -23,11 +23,11 @@ Voor gehoste klanten heeft dit geen gevolgen. Lees het volgende voor installatie
 
 **Apache-gebruikers:**
 
-Er is geen effect voor Apache-gebruikers als ze de meegeleverde **apache_neolane.conf** gebruiken.
+Er is geen effect voor Apache-gebruikers als zij de meegeleverde **apache_neolane.conf**.
 
 **IIS-gebruikers:**
 
 Voor gebruikers IIS (op Vensters), zullen verscheidene pictogrammen in de console na de bouwstijlupdate lijken te ontbreken. Er zijn aanvullende IIS-updatestappen vereist:
 
-1. Na de bouwstijlupdate, klik **is_neolane_setup.vbs** in de de installatiemap van de Campagne tweemaal. Het standaardpad is C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
+1. Dubbelklik na de update van de build **is_neolane_setup.vbs** bevindt zich in de installatiemap van Campagne. Het standaardpad is C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
 1. Start de IIS-site opnieuw die door de vorige stap is bijgewerkt.

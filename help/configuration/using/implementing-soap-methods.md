@@ -90,7 +90,7 @@ De handtekening van de functie moet een argument bevatten voor elke parameter &#
 Specifieke gevallen:
 
 * **niet-statische methoden**: de functie moet eerst een extra argument bevatten, dat samenvalt met de XML-entiteit die wordt doorgegeven in de vorm van een object van het type &#39;xml&#39; (E4X).
-* **Methoden** van het type &quot;key only&quot;: de functie moet eerst een extra argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
+* **Methoden van het type &quot;key only&quot;**: de functie moet eerst een extra argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
 
 **3. Geretourneerde waarden**
 

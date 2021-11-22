@@ -30,7 +30,7 @@ Workflows vinden plaats in verschillende contexten en fasen van het campagnemana
 Adobe Campaign gebruikt workflows om:
 
 * Voer gerichte campagnes uit. [Meer informatie](building-a-workflow.md#implementation-steps-)
-* Campagnes opbouwen: voor elke campagne, laat het **[!UICONTROL Workflow]** lusje u het doel bouwen en de leveringen tot stand brengen. [Meer informatie](building-a-workflow.md#campaign-workflows)
+* Campagnes opbouwen: voor elke campagne **[!UICONTROL Workflow]** kunt u het doel maken en de leveringen maken. [Meer informatie](building-a-workflow.md#campaign-workflows)
 * Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen maken. [Meer informatie](building-a-workflow.md#technical-workflows)
 
 Een werkstroom kan zowel een procesdefinitie (het werkschemamodel, dat een vertegenwoordiging van is wat verondersteld om is te gebeuren) als een geval van dit proces (een werkschemainstantie, die een vertegenwoordiging van is wat eigenlijk gebeurt) betekenen.
@@ -43,11 +43,11 @@ Elke werkstroom bevat:
 
 * **[!UICONTROL Activities]**
 
-   Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, heeft alleen de activiteit **[!UICONTROL Approval]** een toewijzing.
+   Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, worden alleen de **[!UICONTROL Approval]** activiteit heeft een toewijzing.
 
    In een workflowdiagram kan een bepaalde activiteit meerdere taken produceren, met name wanneer er een lus of terugkerende (periodieke) handelingen zijn.
 
-   Alle werkstroomactiviteiten worden vermeld in [deze sectie](about-activities.md), met inbegrip van gebruiksgevallen en steekproeven.
+   Alle workflowactiviteiten worden vermeld in [deze sectie](about-activities.md), met inbegrip van gebruiksgevallen en monsters.
 
 * **[!UICONTROL Transitions]**
 
@@ -59,22 +59,22 @@ Elke werkstroom bevat:
    >
    >Een workflow met niet-afgesloten overgangen kan nog steeds worden uitgevoerd: er wordt een waarschuwingsbericht gegenereerd en de workflow wordt gepauzeerd zodra de overgang is bereikt , maar er wordt geen fout gegenereerd . Het is dus mogelijk om een werkstroom te starten zonder dat deze is voltooid en om deze tijdens het proces toe te voegen.
 
-   Voor meer informatie over hoe te om een werkschema te bouwen, verwijs naar [deze sectie](building-a-workflow.md).
+   Voor meer informatie over hoe u een workflow kunt maken, raadpleegt u [deze sectie](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
    De werktabel bevat alle informatie die door de overgang wordt overgedragen. Voor elke workflow worden meerdere werktabellen gebruikt. De gegevens in deze tabellen kunnen gedurende de gehele levenscyclus van de werkstroom worden versneld en gebruikt, zolang deze niet worden gewist. Onbenodigde tabellen worden immers gewist wanneer de workflow wordt gepassiveerd en mogelijk tijdens de uitvoering van de grootste workflows om overbelasting van de server te voorkomen.
 
-   Meer informatie over workflowgegevens en tabellen vindt u in [deze sectie](how-to-use-workflow-data.md).
+   Meer informatie over workflowgegevens en tabellen in [deze sectie](how-to-use-workflow-data.md).
 
 ## Belangrijkste beginselen en beste praktijken{#principles-workflows}
 
 Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automatiseren met workflows:
 
-* Meer informatie over workflowactiviteiten vindt u op [deze pagina](how-to-use-workflow-data.md).
-* Leer hoe u een workflow bouwt in [deze sectie](building-a-workflow.md).
+* Meer informatie over workflowactiviteiten in [deze pagina](how-to-use-workflow-data.md).
+* Leer hoe u een workflow maakt in [deze sectie](building-a-workflow.md).
 * Ontdek hoe u workflows kunt gebruiken om gegevens te importeren in Campagne in [deze sectie](../../platform/using/import-export-workflows.md).
 * Best practices voor workflows worden beschreven in [deze pagina](workflow-best-practices.md).
 * Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](starting-a-workflow.md).
-* Leer hoe u workflows in [deze pagina](monitoring-workflow-execution.md) kunt controleren.
+* Leer hoe u workflows kunt controleren in [deze pagina](monitoring-workflow-execution.md).
 * Leer hoe u gebruikers toegang biedt om workflows te gebruiken in [deze pagina](managing-rights.md).

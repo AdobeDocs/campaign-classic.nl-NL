@@ -30,14 +30,14 @@ ht-degree: 7%
 * Probleem verholpen waarbij gegevens uit de workflowlijst verloren konden gaan. (NEO-11696)
 * Probleem met prestaties verholpen bij het verzenden van pushberichten. (NEO-11787)
 * Probleem verholpen waarbij webtracering niet werkte voor &#39;com.au&#39;-domeinen (NEO-4385).
-* Oplossing voor een probleem met de blokkering van clients dat zich kon voordoen bij het gebruik van complexe workflows. (NEO-11847)
+* Fixed a client freeze issue which could occur when using complex workflows. (NEO-11847)
 * Probleem verholpen met een fout in het Oracle bij het opslaan van een nieuwe levering nadat een element van een specifiek schema was geselecteerd (NEO-11682).
 * Probleem verholpen bij het opvragen van een veld met tekens met accenten (FDA/Teradata). Met de externe account kunt u nu de codering wijzigen die wordt gebruikt voor de communicatie met het stuurprogramma voor Teradata. (NEO-11818).
 * Probleem met bijhouden bij het doorgeven van URL&#39;s in extra variabelen in een pushmelding verholpen dat kan leiden tot onjuiste of onjuiste gegevens die door de mobiele toepassing worden ontvangen. (NEO-11468, NEO-11960)
 * Probleem verholpen dat een weergaveprobleem veroorzaakte bij het gebruik van een verdeling van waarden met een koppeling 1:N. (NEO-11820)
-* Probleem verholpen waardoor de bulklading niet op Teradata 16 kon werken.
-* De buffergrootte voor tijdstempel op Teradata is vergroot om problemen met de binding met 15.10-stuurprogramma te voorkomen.
-* Verbeterde het beheer van lange naamindexen die postupgrade-problemen kunnen veroorzaken.
+* Fixed an issue which prevented bulk load from working on Teradata 16.
+* Increased the buffer size for timestamp on Teradata to avoid binding issues with 15.10 driver.
+* Improved the management of long name indexes which could cause postupgrade issues.
 * Verbeterde beschikbare tijd voor gedeeld geheugen tijdens dood verwerken van kinderen (MTA).
 * Oplossing voor een mogelijke impasse in Apache (tracking).
 
@@ -65,7 +65,7 @@ ht-degree: 7%
 **Verbeteringen**
 
 * Probleem met codering van bijhouden opgelost met Microsoft Edge en Internet Explorer. (NEO-11257)
-* Probleem verholpen met aanpassen van afbeeldingskoppelingen in lijnleveringen. (NEO-11077)
+* Fixed an issue with image link personalization in LINE deliveries. (NEO-11077)
 * Probleem verholpen waardoor het genereren van de id-reeks niet correct werkte. (NEO-11115)
 * Probleem verholpen waarbij privacyverzoeken (GDPR) niet werkten bij het gebruik van een aangepaste naamruimte met een combinatietoets. (NEO-11123)
 * Oplossing voor een fout die kan optreden bij het gebruik van de **[!UICONTROL Distribution of values]** optie in **[!UICONTROL Query]** workflowactiviteiten. (NEO-10958)
@@ -102,7 +102,7 @@ ht-degree: 7%
    <td> <p>GDPR is de nieuwe privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert en op 25 mei 2018 van kracht wordt. AVG is van toepassing op Adobe Campaign-klanten die data bewaren voor in de EU wonende betrokken personen.</p> <p>Naast de privacy mogelijkheden reeds beschikbaar in Adobe Campaign (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans in onze rol als Bewerker van Gegevens om extra mogelijkheden te omvatten, om uw bereidheid als Datacontrole voor bepaalde GDPR verzoeken te helpen vergemakkelijken:</p> 
     <ul> 
      <li> <p>Recht op toegang: staat de betrokkene toe een kopie te ontvangen van zijn/haar persoonsgegevens die door de gegevensverwerkingsverantwoordelijken zijn vastgelegd, met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
-     <li> <p>Rechts om te verwijderen: geeft de betrokkene het recht om zijn/haar persoonsgegevens die door gegevensverwerkingsverantwoordelijken zijn vastgelegd, te laten wissen, eventueel met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
+     <li> <p>Right to Delete: entitles the Data Subject to have his/her personal data captured by Data Controllers erased, potentially including data stored in Adobe Campaign.</p> </li> 
     </ul> Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
@@ -110,7 +110,7 @@ ht-degree: 7%
    <td> <p>Adobe Campaign biedt nu een lijst met actieve profielen, die maandelijks wordt bijgewerkt via een specifieke workflow.</p> <p>Raadpleeg de <a href="../../platform/using/about-profiles.md#active-profiles">gedetailleerde documentatie</a> voor meer informatie.</p> </td> 
   </tr> 
   <tr> 
-   <td> Verbetering Android-pushconnector<br /> </td> 
+   <td> Android Push Connector enhancement<br /> </td> 
    <td> <p>De Android-connector is verbeterd en biedt nu ondersteuning voor een hogere doorvoer. </p> <p>Raadpleeg de <a href="../../delivery/using/configuring-the-mobile-application.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td> 
   </tr> 
  </tbody> 
@@ -118,7 +118,7 @@ ht-degree: 7%
 
 **Verbeterde beveiliging**
 
-* De uitbreiding van externe entiteiten is nu uitgeschakeld om potentiële aanvallen van niet-geverifieerde gebruikers te voorkomen. (NEO-10173)
+* Expansion of external entities is now disabled to prevent potential attacks from unauthenticated users. (NEO-10173)
 * Verharde machtigingen om te voorkomen dat standaardgebruikers de parameters voor de instantieconfiguratie kunnen wijzigen, zoals toegangs-URL&#39;s voor toepassingen, LDAP-instellingen, enz. (NEO-10171)
 * Probleem verholpen waarbij gevoelige informatie via stacktraceringen kon worden weergegeven. De details van de fout worden nu het programma geopend in het achterste eind aan een plaats ontoegankelijk van het externe netwerk. (NEO-10176)
 * Verharde machtigingen om te voorkomen dat standaardgebruikers de geüploade documenten en/of geëxporteerde pakketten van een beheerder kunnen bekijken. (NEO-10170)
@@ -126,21 +126,21 @@ ht-degree: 7%
 **Verbeteringen**
 
 * **LINE-kanaal - architectuurverbetering**: Net als bij alle andere kanalen in Adobe Campaign wordt het LINE-kanaal nu ondersteund voor alle implementatietypen: gehost, hybride en op locatie.
-* **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. Raadpleeg deze voor meer informatie [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html).
+* **Sequence auto-generation**: The ID generation mechanism has been enhanced to increase the lifespan of Campaign instances with large volumes of objects. For more information, refer to this [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html).
 
 **Andere wijzigingen**
 
-* Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-8979)
-* De betere prestaties voor grote hoeveelheid gegevens die in Teradata worden geladen en verholpen een kwestie die verhinderde de juiste waarde van gegevens te tonen die in het logboek worden verwerkt. (NEO-10429)
+* Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). See the &#39;Technical evolutions&#39; section for more information. (NEO-8979)
+* Improved performance for large amount of data loading in Teradata and fixed an issue which prevented from displaying the right value of data processed in the log. (NEO-10429)
 * Het importeren van soorten publiek uit Audience Manager werkt nu met gesplitste bestanden. Eerder werd alleen het laatste bestand van het segment geïmporteerd door de technische workflow van importSharedAudience. (NEO-10156)
 * In Windows is het standaardinstallatiepad van de Campagneserver gewijzigd. Wanneer u de installatie van de 64-bits versie start, is het standaardinstallatiepad nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** in plaats van **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * De standaard MX regels zijn verbeterd om meer domeinen te omvatten en productie te optimaliseren.
 * Afgedwongen toegangsbeperkingen voor de SOAP-aanroep van de implementatiewizard (xtk:serverOptions#SaveOptions).
 * De verouderde bibliotheek weka.jar is verwijderd en de OpenSSL-bibliotheek is bijgewerkt voor optimalisatie van de beveiliging.
 * Verbeterde technische workflow voor facturering om uitvoeringen van instanties te beveiligen.
-* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator en selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stelt u het nieuwe wachtwoord van de operator in. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md) voor meer informatie.
-* Ter ondersteuning van de nieuwe functie voor meervoud in Adobe Target kan nu een nieuwe parameter &quot;at_property&quot; aan URL&#39;s worden toegevoegd wanneer u opties en externe accounts voor de integratie met Target configureert. De waarde die voor deze parameter moet worden gebruikt, is te vinden in Adobe Target en wordt door Campagne gebruikt bij het uitvoeren van aanroepen naar Doel. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
-* U kunt nu een standaard openingspagina opgeven die moet worden geopend wanneer u klikt op een afbeelding die wordt geleverd door Adobe Target. Als u voorheen op die afbeelding klikte, werd de standaardafbeeldingsset gebruikt bij het maken van de e-mail. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
+* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator en selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stelt u het nieuwe wachtwoord van de operator in. We recommend that operators change their password when they first reconnect. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md) voor meer informatie.
+* To support the new multitenancy feature in Adobe Target, a new “at_property” parameter can now be added to URLs when configuring options and external accounts for the integration with Target. De waarde die voor deze parameter moet worden gebruikt, is te vinden in Adobe Target en wordt door Campagne gebruikt bij het uitvoeren van aanroepen naar Doel. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
+* You can now specify a default landing page to open when clicking on an image served by Adobe Target. Als u voorheen op die afbeelding klikte, werd de standaardafbeeldingsset gebruikt bij het maken van de e-mail. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
 * Toegevoegd **SMPP-sporen inschakelen** Schakel het selectievakje in de externe account in om de uitvoer te forceren. Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account) voor meer informatie.
 
 **Technische ontwikkelingen**
@@ -195,8 +195,8 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
 * Oplossing voor een fout die ongeldige domeinen als een **Niet gedefinieerd** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
-* Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
-* Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
+* Probleem verholpen waarbij bepaalde streepjescode-indelingen mogelijk niet leesbaar werden door streepjescodescanners. (NEO-10125)
+* Fixed an issue with the &#39;urlEncode&#39; JavaScript function when using non ASCII characters. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
 * Probleem verholpen bij het uitvoeren van een query, waaronder sha256-functies op Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
 * Probleem verholpen met de **Complement genereren** optie bij het toewijzen van workflowactiviteiten bij gebruik van FDA. (NEO-9878)
@@ -205,18 +205,18 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem verholpen waarbij het doel van een levering niet kon worden opgegeven bij gebruik van een extern XML-bestand. (NEO-9312)
 * Probleem verholpen dat tot workflowfouten kon leiden wanneer een hypothese over een aanbieding werd uitgevoerd en de status van het voorstel werd bijgewerkt. (NEO-9304)
 * Fouten verholpen die optraden tijdens de afleveringsanalyse bij het gebruik van drukregels op basis van een kenmerk van de Android-aflevering. (NEO-9202)
-* Probleem verholpen bij het sorteren op kolommen in de lijst met ontvangers die tot prestatieproblemen kunnen leiden. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie over de wijzigingen queryDef. (NEO-9042)
+* Probleem verholpen bij het sorteren op kolommen in de lijst met ontvangers die tot prestatieproblemen kunnen leiden. For more information on the queryDef modifications, see the &#39;Technical evolutions&#39; section below. (NEO-9042)
 * Probleem verholpen waarbij de koppelingen in een goedkeurings-e-mail zouden kunnen verwijzen naar een onjuiste aanmeldings-URL, vooral wanneer u een aanmeldingstype Federated ID gebruikt. (NEO-9011)
 * Probleem opgelost waarbij onjuiste datums werden weergegeven in de datumkiezers van rapporten voor bepaalde tijdzones. (NEO-9007)
 * Probleem verholpen waarbij het doel van een uitgaande database niet kon worden weergegeven bij gebruik van een FDA SQL-database. (NEO-8924)
-* Probleem verholpen waardoor de MS Dynamics CRM-connector er niet in slaagde gegevens te verzamelen gedurende de eerste 7 dagen van de maand. (NEO-8803)
-* Probleem verholpen met integratie met Analytics waardoor gebruikers internationale tekens niet konden opnemen. (NEO-8719)
+* Fixed an issue that led the MS Dynamics CRM connector to fail to pull data for the first 7 days of month. (NEO-8803)
+* Fixed an error with Analytics integration that prevented users to include international characters. (NEO-8719)
 * Probleem opgelost waarbij workflowbewerking zonder de juiste rechten mogelijk was. (NEO-8708)
 * Probleem verholpen met FDA via HTTP&#39;s bij gebruik van Message Center in een hybride architectuur, wat leidde tot het neerzetten of het verlies van verbinding (timeout). (NEO-8438)
 * Workflowfouten die optraden bij incrementele queryactiviteit voor negatieve id&#39;s. Dit probleem is nu opgelost. (NEO-8229)
 * Probleem verholpen dat tot de weergave van dubbele schuifbalken in bepaalde schermen kan leiden. (NEO-8208)
 * Probleem verholpen die ertoe leidde dat een foutbericht werd weergegeven wanneer de wizard voor updatedatabasestructuur werd uitgevoerd. De PostUpgrade voert een nieuwe naam van indexen uit met namen die langer zijn dan 30. Houd er rekening mee dat voor grote tabellen de indexvervanging tijd in beslag neemt. (NEO-7983)
-* Probleem verholpen waarbij trackinglogboeken niet correct werden gesynchroniseerd van de uitvoeringsinstantie van het Centrum van het Bericht om instantie te besturen. (NEO-7286)
+* Fixed an issue with tracking logs not getting synched correctly from Message Center execution instance to control instance. (NEO-7286)
 * Oplossing voor een prestatieprobleem met de activiteit van de aanbiedingsverrijking. (NEO-7263)
 * Probleem verholpen waarbij de functie DaysAgo niet kon worden gebruikt bij het opvragen van een Redshift-database via FDA. (NEO-7099)
 * Oplossing voor een regressie in gegevensbeheer die het maken van indexen op verrijkingsachtige werkstroomactiviteiten verhinderde.

@@ -125,7 +125,7 @@ PDU&#39;s kunnen optionele velden hebben. Alleen de meest voorkomende velden wor
 
 **BIND_TRANSMITTER / BIND_RECEIVER / BIND_TRANSCEIVER**
 
-Deze PDU wordt gebruikt om een verbinding met SMSC in werking te stellen. **Transmitter**, **Ontvanger** en **Transceiver** De modi wijzigen alleen het type SMS dat via deze verbinding mag worden overgedragen, met name:
+Deze PDU wordt gebruikt om een verbinding met SMSC in werking te stellen. **Transmitter**, **Ontvanger** en **Transceiver** De wijzen veranderen slechts het soort SMS dat om over deze verbinding wordt toegestaan, specifiek:
 
 | Modus | Typen SMS toegestaan |
 |:-:|:-:|
@@ -658,7 +658,7 @@ Als u niet genoeg context in de regex opneemt, kan er een klein veiligheidsprobl
 
 Wanneer berichten met een onbekende stat/err gebiedscombinatie worden ontmoet, worden deze regex toegepast op het staatsgebied om te bepalen of SR een succes of een fout was. SR met statuswaarden die niet overeenkomen met een van deze regexes wordt genegeerd.
 
-Stelt standaard waarden in die beginnen met `DELIV`, bijvoorbeeld `DELIVRD` in de [Aanhangsel B](sms-protocol.md#sr-error-management), worden beschouwd als succesvol afgeleverd en alle statuswaarden die overeenkomen met fouten, bijvoorbeeld `REJECTED`, `UNDELIV`worden beschouwd als fouten.
+Stelt standaard waarden in die beginnen met `DELIV`, bijvoorbeeld `DELIVRD` in de [Aanhangsel B](sms-protocol.md#sr-error-management), worden beschouwd als succesvol geleverd en alle statuswaarden die overeenkomen met fouten, bijvoorbeeld `REJECTED`, `UNDELIV`worden beschouwd als fouten.
 
 #### ID-indeling in MT-bevestiging {#id-format-mt}
 

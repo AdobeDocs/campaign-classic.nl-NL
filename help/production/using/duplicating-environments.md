@@ -35,13 +35,13 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Maak een kopie van de databases op alle instanties in de bronomgeving.
 1. Herstel deze kopieën in alle gevallen van de doelomgeving.
-1. Voer het **nms:vriesinstance.js**-waarschuwingsscript uit op de doelomgeving voordat u het opstart.
+1. Voer de **nms:vriesinstantie.js** het waarschuwings manuscript op het doelmilieu alvorens het op te starten.
 
    Dit proces heeft geen invloed op de servers en hun configuratie.
 
    >[!NOTE]
    >
-   >In de context van Adobe Campaign combineert een **waarschuwing** acties waarmee u alle processen die met de buitenkant communiceren kunt stoppen: logboeken, tracering, leveringen, campagneworkflows, enz.\
+   >In de context van Adobe Campaign **vermaning** combineert acties waarmee u alle processen die met de buitenkant in wisselwerking staan kunt tegenhouden: logboeken, tracering, leveringen, campagneworkflows, enz.\
    >Deze stap is nodig om te voorkomen dat berichten meerdere keren worden verzonden (eenmaal vanuit de nominale omgeving en één vanuit de gedupliceerde omgeving).
 
    >[!IMPORTANT]
@@ -61,14 +61,14 @@ Dit proces werkt alleen als de bron- en doelomgevingen hetzelfde aantal instanti
 
 ### Overdrachtsprocedure {#transfer-procedure}
 
-Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen van een bronomgeving naar een doelomgeving via een casestudy: Ons doel is hier om een productieomgeving (**prod** instantie) aan een ontwikkelomgeving (**dev** instantie) te herstellen om te werken in een context die zo dicht mogelijk bij het &quot;levende&quot;platform is.
+Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen van een bronomgeving naar een doelomgeving via een casestudy: ons doel is het herstel van een productieomgeving (**prod** instantie) naar een ontwikkelomgeving (**dev** (bijvoorbeeld) te werken in een context die zo dicht mogelijk bij het &#39;live&#39;-platform ligt.
 
 De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen zijn mogelijk nog in uitvoering wanneer de gegevensbestanden van het bronmilieu worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
 
 >[!IMPORTANT]
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
->* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod**-instantie en een **dev**-instantie onder PostgreSQL.
+>* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod** instantie en een **dev** onder PostgreSQL.
 
 >
 
@@ -95,8 +95,8 @@ Met deze exportbewerking kunt u de configuratie van de ontwikkelaar behouden en 
 
 Hiervoor voert u een pakketexport uit voor de volgende twee elementen:
 
-* Exporteer de tabel **xtk:option** naar een bestand &#39;options_dev.xml&#39; zonder de records met de volgende interne namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; en &#39;NmsBroadcast_RegexRules&#39;.
-* Exporteer in een bestand &#39;extaccount_dev.xml&#39; de tabel **nms:extAccount** voor alle records waarvan de id niet 0 is (@id &lt;> 0).
+* Exporteer de **xtk:option** tabel in een bestand &#39;options_dev.xml&#39;, zonder de records met de volgende interne namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; en &#39;NmsBroadcast_RegexRules&#39;.
+* Exporteer in een bestand &#39;extaccount_dev.xml&#39; het bestand **nms:extAccount** tabel voor alle records waarvan de id niet 0 is (@id &lt;> 0).
 
 Controleer of het aantal geëxporteerde opties/accounts gelijk is aan het aantal regels dat in elk bestand moet worden geëxporteerd.
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->In Windows kan het **webmdl**-proces nog steeds actief zijn zonder invloed op andere bewerkingen.
+>In Windows **webmdl** Het proces kan nog actief zijn zonder andere bewerkingen te beïnvloeden.
 
 U kunt ook controleren of er nog geen systeemprocessen actief zijn.
 
 Hiervoor gebruikt u het volgende proces:
 
-* In Windows: Open **Taakmanager** en controleer dat er geen **nlserver.exe** processen zijn.
-* In Linux: **ps aux uitvoeren | grep nlserver** opdracht en controleer of er geen **nlserver** processen zijn.
+* In Windows: open **Taakmanager** en controleert u of er geen **nlserver.exe** processen.
+* In Linux: uitvoeren **ps aux | grep nlserver** en controleer of er geen **nlserver** processen.
 
 ### Stap 4 - Herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +192,9 @@ Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 
 >[!NOTE]
 >
->Voordat u Adobe Campaign opnieuw start in de **dev**-omgeving, kunt u een extra veiligheidsprocedure toepassen: Start alleen de **web** module.
+>Voordat u Adobe Campaign opnieuw start op de **dev** milieu, kunt u een extra veiligheidsprocedure toepassen: start de **web** alleen.
 >  
->Om dit te doen, geef het configuratiedossier van uw instantie (**config-dev.xml**) uit, dan voeg &quot;_&quot;karakter vóór autoStart= &quot;ware&quot;opties voor elke module (mta, staat, enz.) toe.
+>Hiervoor bewerkt u het configuratiebestand van uw instantie (**config-dev.xml**), voegt u het teken &quot;_&quot; toe vóór de opties autoStart=&quot;true&quot; voor elke module (mta, start, enz.).
 
 Voer het volgende bevel in werking om het proces van het Web te beginnen:
 
@@ -223,15 +223,15 @@ Om de configuratie van het gegevensbestand van het doelmilieu (dev) in te voeren
 1. Open de beheerconsole van de database en wis de externe accounts (table nms:extAccount) waarvan de id niet 0 is (@id &lt;> 0).
 1. Importeer in de Adobe Campaign-console het pakket options_dev.xml dat eerder is gemaakt via de functionaliteit van het importpakket.
 
-   Controleer of de opties inderdaad zijn bijgewerkt in het knooppunt **[!UICONTROL Administration > Platform > Options]**.
+   Controleer of de opties inderdaad zijn bijgewerkt in het gedeelte **[!UICONTROL Administration > Platform > Options]** knooppunt.
 
 1. Importeer in de Adobe Campaign-console het bestand extaccount_dev.xml dat eerder is gemaakt via de functionaliteit voor het importeren van pakketten
 
-   Controleer of er inderdaad externe databases zijn geïmporteerd in **[!UICONTROL Administration > Platform > External accounts]**.
+   Controleer of er inderdaad externe databases zijn geïmporteerd in de **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Stap 9 - Start alle processen opnieuw en wijzig gebruikers (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Gebruik de volgende opdrachten om Adobe Campaign-processen te starten:
+Gebruik de volgende opdrachten om de Adobe Campaign-processen te starten:
 
 * In Windows:
 

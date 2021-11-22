@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst van **[!UICONTROL campaign packages]** met een **specifiek uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was. De belangrijkste fasen voor de uitvoering van een lokale actie zijn:
+Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst met **[!UICONTROL campaign packages]** met een **specifieke uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was. De belangrijkste fasen voor de uitvoering van een lokale actie zijn:
 
 **Voor de centrale entiteit**
 
@@ -33,9 +33,9 @@ Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wo
 
 ## Een lokale campagnemalplaatje maken {#creating-a-local-campaign-template}
 
-Als u een campagnepakket wilt maken, moet u eerst de **campagnemalplaatje** via het knooppunt **[!UICONTROL Resources > Templates]** maken.
+Als u een campagnepakket wilt maken, moet u eerst het **campagnemalsjabloon** via de **[!UICONTROL Resources > Templates]** knooppunt.
 
-Als u een nieuwe lokale sjabloon wilt maken, dupliceert u de standaardsjabloon **[!UICONTROL Local campaign (opLocal)]**.
+Als u een nieuwe lokale sjabloon wilt maken, dupliceert u de standaardinstelling **[!UICONTROL Local campaign (opLocal)]** sjabloon.
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -43,13 +43,13 @@ Geef uw campagnemalplaatje een naam en vul de beschikbare velden in.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Klik in het campagnevenster op het tabblad **[!UICONTROL Edit]** en klik vervolgens op de koppeling **[!UICONTROL Advanced campaign settings...]**.
+Klik in het campagnevenster op de knop **[!UICONTROL Edit]** en klikt u op de knop **[!UICONTROL Advanced campaign settings...]** koppeling.
 
 ![](assets/mkt_distr_4.png)
 
 ### Webinterface {#web-interface}
 
-Op **Verdeelde marketing** tabel, kunt u het type van de interface van het Web kiezen en de standaardwaarden en parameters specificeren die moeten worden ingegaan wanneer een lokale entiteit een orde plaatst.
+In de **Distributed Marketing** kunt u het type webinterface kiezen en de standaardwaarden en -parameters opgeven die moeten worden ingevoerd wanneer een lokale entiteit een volgorde plaatst.
 
 De webinterface komt overeen met een formulier dat door de lokale entiteit moet worden ingevuld bij het bestellen van de campagne.
 
@@ -67,7 +67,7 @@ Er zijn vier typen webinterfaces beschikbaar:
 
    ![](assets/mkt_distr_8.png)
 
-   Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het veld **[!UICONTROL web Interface]** in de koppeling **[!UICONTROL Advanced campaign settings...]** van de sjabloon. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
+   Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het menu **[!UICONTROL web Interface]** in de sjabloon **[!UICONTROL Advanced campaign settings...]** koppeling. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
@@ -75,27 +75,27 @@ Er zijn vier typen webinterfaces beschikbaar:
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : de lokale entiteit heeft toegang tot campagneparameters in zijn Extranet (niet Adobe Campaign). Deze parameters zijn identiek aan die van een **lokale campagne (door vorm)**.
+* **[!UICONTROL By external form]** : de lokale entiteit heeft toegang tot campagneparameters in zijn Extranet (niet Adobe Campaign). Deze parameters zijn identiek aan die van a **lokale campagne (per formulier)**.
 * **[!UICONTROL Pre-set]** : de lokale entiteit geeft opdracht tot campagne gebruikend het standaardformulier, zonder het te lokaliseren.
 
    ![](assets/mkt_distr_5.png)
 
 ### Standaardwaarden {#default-values}
 
-Selecteer de **[!UICONTROL Default values]** die door lokale entiteiten moet worden ingevuld. Bijvoorbeeld:
+Selecteer **[!UICONTROL Default values]** in te vullen door lokale entiteiten. Bijvoorbeeld:
 
 * de datum van contact en extractie;
 * doelkenmerken (leeftijdssegment enz.).
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-Vul de velden **[!UICONTROL Parent marketing program]** en **[!UICONTROL Charge]** in.
+Voltooi de **[!UICONTROL Parent marketing program]** en **[!UICONTROL Charge]** velden.
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### Goedkeuringen {#approvals}
 
-Via de koppeling **[!UICONTROL Advanced parameters for campaign entry]** kunt u het maximumaantal revisoren opgeven.
+Van de **[!UICONTROL Advanced parameters for campaign entry]** kunt u het maximumaantal controleurs opgeven.
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
@@ -107,7 +107,7 @@ Als u geen controleurs voor een campagne wilt noemen, ga 0 in.
 
 ### Documenten {#documents}
 
-U kunt operatoren van lokale entiteiten toestaan om documenten (tekstbestanden, spreadsheets, afbeeldingen, campagnebeschrijvingen enzovoort) te koppelen. aan de lokale campagne wanneer het creëren van de orde. Met de koppeling **[!UICONTROL Advanced parameters for campaign entry...]** kunt u het aantal documenten beperken. Om dit te doen, ga eenvoudig het maximumaantal in toegestaan op het **[!UICONTROL Number of documents]** gebied.
+U kunt operatoren van lokale entiteiten toestaan om documenten (tekstbestanden, spreadsheets, afbeeldingen, campagnebeschrijvingen enzovoort) te koppelen. aan de lokale campagne wanneer het creëren van de orde. De **[!UICONTROL Advanced parameters for campaign entry...]** Met de koppeling kunt u het aantal documenten beperken. Om dit te doen, ga eenvoudig het maximumaantal in toegestaan in **[!UICONTROL Number of documents]** veld.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -115,31 +115,31 @@ Als u een campagnepakket bestelt, wordt in het formulier voorgesteld om zoveel d
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-Als u geen veld voor het uploaden van documenten wilt weergeven, voert u **[!UICONTROL 0]** in het veld **[!UICONTROL Number of documents]** in.
+Als u geen veld voor het uploaden van documenten wilt weergeven, voert u **[!UICONTROL 0]** in de **[!UICONTROL Number of documents]** veld.
 
 >[!NOTE]
 >
->De **[!UICONTROL Advanced parameters for campaign entry]** kan worden gedeactiveerd door **[!UICONTROL Do not display the page used to enter the campaign parameters]** te controleren.
+>De **[!UICONTROL Advanced parameters for campaign entry]** kan worden gedeactiveerd door **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### Workflow {#workflow}
 
-Maak op het tabblad **[!UICONTROL Targeting and workflows]** de campagneworkflow die de **[!UICONTROL Default values]** verzamelt die is opgegeven in **[!UICONTROL Advanced campaign settings...]** en de leveringen maakt.
+In de **[!UICONTROL Targeting and workflows]** tabblad, maakt u de campagneworkflow die de **[!UICONTROL Default values]** in de **[!UICONTROL Advanced campaign settings...]** en maakt de leveringen.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-Dubbelklik op de **[!UICONTROL Query]**-activiteit om deze te configureren volgens de opgegeven **[!UICONTROL Default values]**.
+Dubbelklik op de knop **[!UICONTROL Query]** activiteit om het volgens gespecificeerde te vormen **[!UICONTROL Default values]**.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### Levering {#delivery}
 
-Klik op het tabblad **[!UICONTROL Audit]** op het pictogram **[!UICONTROL Detail...]** om **[!UICONTROL Scheduling]** voor de geselecteerde levering weer te geven.
+In de **[!UICONTROL Audit]** klikt u op de knop **[!UICONTROL Detail...]** pictogram om het **[!UICONTROL Scheduling]** voor de geselecteerde levering.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-Met het pictogram **[!UICONTROL Scheduling]** kunt u de contactpersoon en uitvoeringsdatum van de levering configureren.
+De **[!UICONTROL Scheduling]** Met dit pictogram kunt u de contactpersoon en uitvoeringsdatum van de levering configureren.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
@@ -147,17 +147,17 @@ Indien nodig, vorm de maximumgrootte van de levering:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Zoek de HTML van uw levering. Gebruik in **[!UICONTROL Delivery > Current order > Additional fields]** bijvoorbeeld het veld **[!UICONTROL Age segment]** om de levering te zoeken op basis van de leeftijd van het doel.
+Zoek de HTML van uw levering. Bijvoorbeeld in **[!UICONTROL Delivery > Current order > Additional fields]**, gebruikt u de **[!UICONTROL Age segment]** veld om de levering te vinden op basis van de leeftijd van het doel.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Sla uw campagnemalplaatje op. U kunt deze nu gebruiken vanuit de weergave **[!UICONTROL Campaign packages]** op het tabblad **[!UICONTROL Campaigns]** door op de knop **[!UICONTROL Create]** te klikken.
+Sla uw campagnemalplaatje op. U kunt het nu gebruiken vanuit het dialoogvenster **[!UICONTROL Campaign packages]** in de **[!UICONTROL Campaigns]** door op de knop **[!UICONTROL Create]** knop.
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->De malplaatjes van de campagne en hun algemene configuratie worden gedetailleerd in [de malplaatjes van de Campagne](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>De sjablonen voor campagnes en hun algemene configuratie worden beschreven in [Campagnersjablonen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ## Het campagnepakket maken {#creating-the-campaign-package}
 
@@ -165,14 +165,14 @@ Het campagnemalplaatje kan alleen beschikbaar worden voor lokale entiteiten als 
 
 Voer de volgende stappen uit:
 
-1. Klik in de sectie **[!UICONTROL Navigation]** op de pagina **Campagnes** op de koppeling **[!UICONTROL Campaign packages]**.
+1. In de **[!UICONTROL Navigation]** de **Campagnes** pagina, klikt u op de knop **[!UICONTROL Campaign packages]** koppeling.
 1. Klik op de knop **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. In de sectie boven het venster kunt u de eerder [opgegeven sjabloon voor het campagnepakket selecteren.](#creating-a-local-campaign-template)
+1. In de sectie boven het venster kunt u de optie [voorheen](#creating-a-local-campaign-template) de gespecificeerde malplaatje van het campagnepakket.
 
-   Standaard wordt de sjabloon **[!UICONTROL New local campaign package (localEmpty)]** gebruikt voor lokale campagnes.
+   Standaard worden de **[!UICONTROL New local campaign package (localEmpty)]** sjabloon wordt gebruikt voor lokale campagnes.
 
 1. Geef het label, de map en het uitvoeringsschema voor het campagnemakket op.
 
@@ -192,33 +192,33 @@ Deze informatie is te vinden in het aan lokale agentschappen verzonden kennisgev
 
 ### Doelgroep {#audience}
 
-Voor een lokale campagne kan de centrale entiteit de betrokken lokale entiteiten specificeren door **[!UICONTROL Limit the package to a set of local entities]** te controleren.
+Voor een lokale campagne kan de centrale entiteit de betrokken lokale entiteiten specificeren door de **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### Aanvullende instellingen {#additional-settings}
 
-Nadat het pakket is opgeslagen, kan de centrale entiteit het bewerken via het tabblad **[!UICONTROL Edit]**.
+Als het pakket eenmaal is opgeslagen, kan de centrale entiteit het vanuit de **[!UICONTROL Edit]** tab.
 
 ![](assets/mkg_dist_edit_kit.png)
 
-Vanaf het tabblad **[!UICONTROL General]** kan de centrale entiteit:
+Van de **[!UICONTROL General]** tab, kan de centrale entiteit:
 
-* de beoordelaar(s) van het campagnepakket configureren via de koppeling **[!UICONTROL Approval parameters...]**;
+* de beoordelaar(s) voor het campagnepakket configureren vanuit de **[!UICONTROL Approval parameters...]** koppeling,
 * het uitvoeringsschema te herzien;
 * lokale entiteiten toevoegen of verwijderen.
 
 >[!NOTE]
 >
->Door gebrek, kan elke entiteit tot een **lokale campagne** slechts eenmaal opdracht geven.
+>Elke entiteit kan standaard een **lokale campagne** slechts eenmaal.
 >   
->Schakel de optie **[!UICONTROL Enable multiple creation]** in als u meerdere lokale campagnes wilt maken op basis van het campagnepakket.
+>Controleer de **[!UICONTROL Enable multiple creation]** optie om meerdere lokale campagnes op basis van het campagnepakket mogelijk te maken.
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
 ### Meldingen {#notifications}
 
-Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. Raadpleeg [Organisatorische entiteiten](about-distributed-marketing.md#organizational-entities) voor meer informatie hierover.
+Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. Raadpleeg voor meer informatie hierover [Organisatorische entiteiten](about-distributed-marketing.md#organizational-entities).
 
 ## Een campagne bestellen {#ordering-a-campaign}
 
@@ -234,15 +234,15 @@ Om een campagne van de centrale entiteit te gebruiken, moet de lokale entiteit h
 
 Een campagne bestellen:
 
-1. Klik **[!UICONTROL Order campaign]** in het berichtbericht, of de overeenkomstige knoop in Adobe Campaign.
+1. Klikken **[!UICONTROL Order campaign]** in het meldingsbericht of de bijbehorende knop in Adobe Campaign.
 
    Voer uw id en wachtwoord in om de campagne te bestellen. De interface bestaat uit een set pagina&#39;s die zijn gedefinieerd in een webtoepassing.
 
    >[!NOTE]
    >
-   >Webtoepassingen worden beschreven in [deze sectie](../../web/using/about-web-applications.md).
+   >Webtoepassingen worden gedetailleerd in [deze sectie](../../web/using/about-web-applications.md).
 
-1. Voer de benodigde informatie in de eerste pagina in (orderlabel en opmerking) en klik op **[!UICONTROL Next]**.
+1. Voer de benodigde gegevens op de eerste pagina in (orderlabel en opmerking) en klik op **[!UICONTROL Next]**.
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
@@ -260,7 +260,7 @@ Een campagne bestellen:
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   Het tabblad **[!UICONTROL Edit]** bevat informatie die door de lokale entiteit is ingevoerd tijdens het bestellen van de campagne.
+   De **[!UICONTROL Edit]** bevat informatie die de lokale entiteit heeft ingevoerd tijdens het bestellen van de campagne.
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
@@ -268,11 +268,11 @@ Een campagne bestellen:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Raadpleeg voor meer informatie de sectie [Goedkeuringsproces](#approval-process).
+   Raadpleeg voor meer informatie de [Goedkeuringsproces](#approval-process) sectie.
 
-1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst van campagnepakketten binnen **Campagnes** tabel. De campagne kan dan worden gebruikt. Voor meer op dit, verwijs naar [Toegang tot campagnes](accessing-campaigns.md).
+1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst met campagnepakketten in het gedeelte **Campagnes** tab. De campagne kan dan worden gebruikt. Raadpleeg voor meer informatie hierover [Toegang tot campagnes](accessing-campaigns.md).
 
-   Met de optie **[!UICONTROL Start targeting with order approval]** kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
+   De **[!UICONTROL Start targeting with order approval]** met deze optie kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
@@ -280,7 +280,7 @@ Een campagne bestellen:
 
 Om een campagneorder te bevestigen, moet de centrale entiteit het goedkeuren.
 
-In het **[!UICONTROL Campaign orders]**-overzicht, dat u kunt openen via het tabblad **Campagnes**, kunt u de status van campagneorders weergeven en deze goedkeuren.
+De **[!UICONTROL Campaign orders]** overzicht, toegankelijk via **Campagnes** kunt u de status van campagnebestellingen weergeven en deze goedkeuren.
 
 >[!NOTE]
 >
@@ -296,19 +296,19 @@ Wanneer een campagne wordt besteld door een lokale entiteit, worden de revisoren
 
 >[!NOTE]
 >
->Het selecteren van revisoren wordt weergegeven in de sectie [Revisors](#reviewers). Ze kunnen de bestelling accepteren of afwijzen.
+>Het selecteren van revisoren wordt weergegeven in het dialoogvenster [Revisoren](#reviewers) sectie. Ze kunnen de bestelling accepteren of afwijzen.
 
 ![](assets/mkg_dist_command_valid_web.png)
 
 #### Goedkeuring via de Adobe Campaign-console {#approving-via-the-adobe-campaign-console}
 
-De bestelling kan ook worden goedgekeurd via de console, in het overzicht van de campagnevolgorde. Als u een volgorde wilt goedkeuren, selecteert u deze en klikt u op **[!UICONTROL Approve the order]**.
+De bestelling kan ook worden goedgekeurd via de console, in het overzicht van de campagnevolgorde. Als u een bestelling wilt goedkeuren, selecteert u deze en klikt u op **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->De campagne kan nog worden uitgegeven en worden aangepast tot de datum van de campagnebeschikbaarheid. Lokale entiteiten kunnen de campagne ook afwijzen door op de knop **[!UICONTROL Cancel]** te klikken.
+>De campagne kan nog worden uitgegeven en worden aangepast tot de datum van de campagnebeschikbaarheid. Lokale entiteiten kunnen de campagne ook afwijzen door op de knop **[!UICONTROL Cancel]** knop.
 
 #### Een campagne maken {#creating-a-campaign}
 
@@ -316,7 +316,7 @@ Zodra een campagneorde wordt goedgekeurd, kan het door de lokale entiteit worden
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-Voor meer op dit, verwijs naar [Toegang tot campagnes](accessing-campaigns.md).
+Raadpleeg voor meer informatie hierover [Toegang tot campagnes](accessing-campaigns.md).
 
 ### Afwijzing van een goedkeuring {#rejecting-an-approval}
 
@@ -330,7 +330,7 @@ De informatie wordt getoond op de lijst van campagnepakketpagina of op de pagina
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Ze kunnen de verwante opmerking weergeven op het tabblad **[!UICONTROL Edit]** van het campagnepakket.
+Ze kunnen de verwante opmerking bekijken in de **[!UICONTROL Edit]** tab.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
@@ -338,7 +338,7 @@ Ze kunnen de verwante opmerking weergeven op het tabblad **[!UICONTROL Edit]** v
 
 Elke keer dat goedkeuring wordt vereist, worden revisoren via e-mail op de hoogte gesteld.
 
-Voor elke lokale entiteit worden revisoren geselecteerd voor goedkeuring van de campagneorder en goedkeuring van de campagne. Raadpleeg [Organisatorische entiteiten](about-distributed-marketing.md#organizational-entities) voor meer informatie over het selecteren van lokale revisoren.
+Voor elke lokale entiteit worden revisoren geselecteerd voor goedkeuring van de campagneorder en goedkeuring van de campagne. Voor meer informatie over het selecteren van lokale revisoren raadpleegt u [Organisatorische entiteiten](about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >
@@ -346,8 +346,8 @@ Voor elke lokale entiteit worden revisoren geselecteerd voor goedkeuring van de 
 
 ### Een bestelling annuleren {#canceling-an-order}
 
-Het centrale bureau kan een orde annuleren gebruikend de **[!UICONTROL Delete]** knoop, die op het ordedashboard wordt gevestigd.
+Het centrale agentschap kan een bestelling annuleren met behulp van **[!UICONTROL Delete]** op het orderdashboard.
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-Hiermee annuleert u de campagne in de weergave **[!UICONTROL Campaign orders]**.
+Hiermee annuleert u de campagne in de **[!UICONTROL Campaign orders]** weergeven.

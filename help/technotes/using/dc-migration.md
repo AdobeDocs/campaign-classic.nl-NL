@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Migratie naar openbare cloud
+title: Migratie naar Public Cloud
 description: Meer informatie over Campaign Classic-migratie naar openbare cloud
 feature: Overview
 role: User
@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## Context
 
-Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als onderdeel van ons [Gold Standard Initiative](../../rn/using/gold-standard.md) verplaatsen we al onze klanten naar Adobe Managed Services (Public Cloud op AWS) voor betere en betrouwbaardere services.
+Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als onderdeel van onze [Gold Standard-initiatief](../../rn/using/gold-standard.md)We verplaatsen al onze klanten naar Adobe Managed Services (Public Cloud op AWS) voor betere en betrouwbaardere services.
 
 Dit programma heeft drie hoofddoelstellingen:
 
 * Oplossing van geïdentificeerde beveiligingskwetsbaarheden door de infrastructuur te verplaatsen naar een beveiligde en moderne omgeving (AWS).
-* Elimineer mogelijk lastige schaalprocessen, verbeter toegang tot onze [Enhanced MTA&#39;s](../../delivery/using//sending-with-enhanced-mta.md) en verbeter alle serviceniveaus voor onderhoud.
+* Elimineer mogelijk omslachtige schaalprocessen en verstrek toegang tot onze [Verbeterde MTA&#39;s](../../delivery/using//sending-with-enhanced-mta.md) en alle serviceniveaus voor onderhoud te verbeteren.
 * Bereid uw exemplaar voor voor de toekomst van Adobe Campaign Classic, inclusief meer geautomatiseerde, regelmatige upgrades waarvoor niet zoveel bronnen en niet zoveel tijd nodig zijn.
 
 ### Verklarende woordenlijst
 
-* **Upgrade**  van build-upgrade: wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het meest recente beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke/kleine build&#39; staan. Bijvoorbeeld: Campagne versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer info](../../platform/using/faq-build-upgrade.md).
-* **MID/RT**  - de uitvoeringsservers van Berichten die op Adobe Cloud worden ontvangen (MID voor partijcampagnes en RT voor Echte - tijd unitaire berichten)
-* **Gold Standard-upgrade** : dit programma biedt verbeterde beveiliging, verbeterde ondersteuning, verbeterd onderhoud en stabiliteit. Het maakt toekomstige verbeteringen gemakkelijker en verleent toegang tot nieuwe mogelijkheden in Campagne.  [Meer info](../../rn/using/gs-overview.md).
-* **AWS**  - Amazon Web Services (Amazon Public Cloud)
-* **SFTP**  - Beveiligd protocol voor bestandsoverdracht. [Meer info](../../platform/using/sftp-server-usage.md).
+* **Upgrade maken** - Wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het nieuwste beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke&#39; en &#39;kleine&#39; build-niveau staan. Bijvoorbeeld: Campagne versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer info](../../platform/using/faq-build-upgrade.md).
+* **MID/RT** - Servers voor het uitvoeren van berichten die worden gehost op Adobe Cloud (MID voor batchcampagnes en RT voor realtime eenheidsberichten)
+* **Gold Standard-upgrade** - dit programma biedt betere veiligheid, betere ondersteuning, beter onderhoud en meer stabiliteit. Het maakt toekomstige verbeteringen gemakkelijker en verleent toegang tot nieuwe mogelijkheden in Campagne.  [Meer info](../../rn/using/gs-overview.md).
+* **AWS** - Amazon Web Services (Amazon Public Cloud)
+* **SFTP** - Beveiligd protocol voor bestandsoverdracht. [Meer info](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
->De Campaign Classic v7-migratie naar de openbare cloud is alleen van invloed op klanten die **Beheerde services van Adobe** gebruiken.
+>Campaign Classic v7-migratie naar openbare cloud is van invloed op klanten die **Beheerde services van Adobe** alleen.
 
 
 ## Voordelen
@@ -80,24 +80,24 @@ De migratie naar Adobe Managed Services (Public Cloud) vindt in 2020/2021 plaats
 
 Om deze inspanning op gang te brengen, zullen de rekeningen die deze migratie vereisen een e-mailmededeling van Adobe ontvangen die een chronologie en toegang tot documentatie verstrekken. Dit is uw melding dat uw account is gepland voor migratie.
 
-Een migratie kan worden geïnitieerd door [een nieuw ondersteuningsticket voor de klantenservice te openen](https://experienceleague.adobe.com/?support-solution=Campaign#support). Gebruik de onderwerpregel &quot;Migreren naar AWS&quot;.
+Een migratie kan worden geïnitieerd door [het openen van een nieuw ondersteuningsticket voor de klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support). Gebruik de onderwerpregel &#39;Migreren naar AWS&#39;.
 
 ### Is deze migratie verplicht?
 
 Deze migratie naar de cloud is **eerste stap naar de [Gold Standard-certificering](../../rn/using/gs-overview.md)** van uw Adobe Campaign-instanties. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
 
-De Adobe Managed Services-cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [Meer weten over AWS](https://aws.amazon.com/application-hosting/benefits/)?
+De Adobe Managed Services-cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [Meer informatie over AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-Adobe is van plan het oude datacenter uit te schakelen, Adobe Campaign-instanties die daar actief zijn, moeten worden overgebracht naar het nieuwe referentiecentrum, AWS.
+Adobe is van plan het oude datacenter uit te schakelen, Adobe Campaign-instanties die daar actief zijn, moeten worden overgebracht naar het nieuwe referentiecentrum in AWS.
 
-Dit is een kritiek pad naar voren, aangezien uw huidige locatie mogelijk wordt blootgesteld aan **beveiligings- en prestatiekwetsbaarheden**.
+Dit is een kritiek pad voorwaarts, aangezien uw huidige locatie kan worden blootgesteld aan **beveiligings- en prestatiekwetsbaarheid**.
 
-Bovendien is deze migratie nu een **vereiste voor elke toekomstige upgrade van Build** van uw Adobe Campaign. Upgrade bouwen is niet meer mogelijk in het oude datacenter.
+Bovendien is deze migratie nu een **vereiste voor elke toekomstige upgrade van Build** van je Adobe Campaign. Upgrade bouwen is niet meer mogelijk in het oude datacenter.
 
 Adobe heeft alles in het werk gesteld om uw gegevens te beveiligen en u op koers te brengen voor de toekomst van Adobe Campaign. We hebben uw partnerschap nodig om het tot een gezamenlijk succes te maken!
 
 
-**We hebben een** team van speciale Customer Care-medewerkers, Customer Success Managers, Product Managers, Engineers, TechOps-specialisten en Product Consultants georganiseerd om u te helpen en ervoor te zorgen dat de ervaring soepel en naadloos verloopt. We doen er alles aan om u te voorzien van alle relevante project- en contactinformatie.
+**We hebben een team georganiseerd** van specifieke Customer Care Reps, Customer Success Managers, Product Managers, Engineers, TechOps Specialisten en Product Consultants om u te helpen en ervoor te zorgen dat de ervaring soepel en naadloos is. We doen er alles aan om u te voorzien van alle relevante project- en contactinformatie.
 
 We hebben enorme inspanningen gedaan om technologieën te ontwikkelen die deze migratie snel, naadloos en veilig maken.
 
@@ -128,7 +128,7 @@ Adobe handelt de meeste acties af. We hebben u nodig voor validatie en aftekenin
 
 **Database**
 
-De database wordt uit het oude datacenter verwijderd en hersteld in de Public Cloud (AWS). Wanneer u de toepassing opnieuw start in het nieuwe datacenter, wordt deze hervat in de toestand die deze was voordat de toepassing werd afgesloten. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn.
+De database wordt uit het oude datacenter verwijderd en hersteld in Public Cloud (AWS). Wanneer u de toepassing opnieuw start in het nieuwe datacenter, wordt deze hervat in de toestand die deze was voordat de toepassing werd afgesloten. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn.
 
 **IP&#39;s verzenden via e-mail**
 
@@ -147,7 +147,7 @@ In het algemeen betekent dit dat de client mogelijke IP-beperkingen op hun firew
 
 **Campagneservers**
 
-Bestaande campagnemeservers (containers in feite) worden in een &quot;lift-and-shift&quot;-aanpak verplaatst naar de Public Cloud (AWS). Er is dus geen nieuwe serverinstallatie nodig, maar de volledige server wordt naar het nieuwe datacenter overgebracht. Voor de bewerking is alleen een technische herconfiguratie op laag niveau nodig.
+Bestaande campagnemeservers (containers in feite) worden verplaatst naar de Public Cloud (AWS) via een &quot;lift-and-shift&quot;-aanpak. Er is dus geen nieuwe serverinstallatie nodig, maar de volledige server wordt naar het nieuwe datacenter overgebracht. Voor de bewerking is alleen een technische herconfiguratie op laag niveau nodig.
 
 **Servernamen**
 
@@ -170,8 +170,8 @@ Adobe zal het zelfde aantal IPs op het nieuwe gegevenscentrum verstrekken.
 
 De oprijving van nieuwe IPs kan beginnen zodra nieuwe IPs provisioned is.
 
-**Overdracht van gegevens tussen datacenters wordt**
-door de toepassing opgeschoond.
+**Opschonen van toepassingen**
+De gegevensoverdracht tussen gegevenscentra is op de kritieke weg van onderbreking.
 
 De gegevens worden op twee manieren opgeslagen:
 
@@ -189,7 +189,7 @@ Suggesties:
 
 **Uitvoeringen pauzeren**
 
-We raden u aan alle uitvoeringen te vertragen en idealiter te pauzeren vlak voordat de toepassing wordt afgesloten in het oude datacenter: leveringen en workflows. Hierdoor wordt het opnieuw opstarten in de Public Cloud (AWS) eenvoudiger, omdat processen tijd hebben gekregen om &#39;netjes&#39; te pauzeren en eventuele uitvoeringsstatus in uitvoering op te slaan.
+We raden u aan alle uitvoeringen te vertragen en idealiter te pauzeren vlak voordat de toepassing wordt afgesloten in het oude datacenter: leveringen en workflows. Hierdoor wordt het opnieuw opstarten van Public Cloud (AWS) eenvoudiger, omdat processen tijd hebben gekregen om ‘netjes’ te pauzeren en eventuele uitvoeringsstatus in uitvoering op te slaan.
 
 **Tijdens de migratie**
 
@@ -206,11 +206,11 @@ Nadat de toepassing naar de nieuwe omgeving is gemigreerd, wordt de toepassing g
 
 **Verwijderen van instanties in het verouderde datacenter**
 
-Wanneer de migratie van de toepassing is voltooid, is er geen plan om een proces opnieuw uit te voeren in het oude datacenter. We verwachten dat alle gegevens in het oude datacenter kunnen worden gewist, behalve voor tijdelijke back-updoeleinden, totdat de geplande back-upprocessen zijn uitgevoerd op de Public Cloud (AWS).
+Wanneer de migratie van de toepassing is voltooid, is er geen plan om een proces opnieuw uit te voeren in het oude datacenter. We verwachten dat alle gegevens in het oude datacenter kunnen worden gewist, behalve voor tijdelijke back-updoeleinden, totdat de geplande back-upprocessen zijn uitgevoerd op Public Cloud (AWS).
 
 **DNS-delegatie**
 
-Normaal, is het domein dat voor het verzenden van e-mail (deel op het recht van @ teken in het foutenadres) van Campagne wordt gebruikt afgevaardigd aan Adobe. De delegatie kan in de richting van de DNS-servers van AWS worden gewijzigd en geïmplementeerd.
+Normaal, is het domein dat voor het verzenden van e-mail (deel op het recht van @ teken in het foutenadres) van Campagne wordt gebruikt afgevaardigd aan Adobe. De delegatie kan worden gewijzigd en geïmplementeerd in de richting van de AWS DNS-servers.
 
 
 ## Ondersteuning en andere handige koppelingen{#support}

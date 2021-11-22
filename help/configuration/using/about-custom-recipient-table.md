@@ -47,33 +47,33 @@ Het gebruiken van een externe ontvankelijke lijst heeft de volgende beperkingen:
 
    We raden aan:
 
-   * De schema&#39;s **[!UICONTROL nms:BroadLogRcp]** en **[!UICONTROL nms:TrackingLogRcp]** verwijzen naar de schema&#39;s **[!UICONTROL nms:Recipientschema]** die buiten de doos liggen. Die twee logboeklijsten zouden niet aan een extra douane ontvankelijke lijst moeten worden verbonden.
-   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer vestiging de doelafbeelding, zie [Doelafbeelding](../../configuration/using/target-mapping.md).
+   * De **[!UICONTROL nms:BroadLogRcp]** en **[!UICONTROL nms:TrackingLogRcp]** schema&#39;s voor de uit-van-de-doos **[!UICONTROL nms:Recipientschema]**. Die twee logboeklijsten zouden niet aan een extra douane ontvankelijke lijst moeten worden verbonden.
+   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer het plaatsen van de doelafbeelding, zie [Doeltoewijzing](../../configuration/using/target-mapping.md).
 
-* U kunt de standaard **[!UICONTROL Services and Subscriptions]** niet gebruiken die in het product wordt aangeboden.
+* U kunt de standaard niet gebruiken **[!UICONTROL Services and Subscriptions]** aangeboden in het product.
 
-   Dit betekent dat de algemene bewerking die in [deze sectie](../../delivery/using/managing-subscriptions.md) wordt beschreven, niet van toepassing is.
+   Dit betekent dat de in [deze sectie](../../delivery/using/managing-subscriptions.md) is niet van toepassing.
 
-* De koppeling met de tabel **[!UICONTROL visitor]** werkt niet.
+* De koppeling met de **[!UICONTROL visitor]** tabel werkt niet.
 
-   Als u dus de module **[!UICONTROL Social Marketing]** wilt gebruiken, moet u de opslagstap configureren om naar de juiste tabel te verwijzen.
+   Om de **[!UICONTROL Social Marketing]** moet u de opslagstap configureren om naar de juiste tabel te verwijzen.
 
    Op dezelfde manier moet bij het gebruik van verwijzingsfuncties het standaard eerste berichtoverdrachtmodel worden aangepast.
 
 * U kunt niet handmatig profielen toevoegen aan een lijst.
 
-   Daarom is de in [dit sectie](../../platform/using/creating-and-managing-lists.md) gedetailleerde procedure niet van toepassing zonder een extra configuratie.
+   Daarom wordt de in [deze sectie](../../platform/using/creating-and-managing-lists.md) is niet van toepassing zonder een extra configuratie.
 
    >[!NOTE]
    >
-   >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Raadpleeg [Een profiellijst maken met een workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md) voor meer informatie.
+   >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Raadpleeg voor meer informatie hierover [Een profiellijst maken met een workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Wij adviseren ook controlerend de standaardwaarden die in de verschillende uit-van-de-doos configuraties worden gebruikt: afhankelijk van de gebruikte functies moeten verschillende aanpassingen worden uitgevoerd .
 
 Bijvoorbeeld:
 
-* Bepaalde standaardrapporten, met name die welke worden aangeboden door **Interactie** en **Mobiele toepassingen** moeten opnieuw worden ontwikkeld. Raadpleeg de sectie [Rapporten beheren](../../configuration/using/managing-reports.md).
-* De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Raadpleeg de sectie [Workflows beheren](../../configuration/using/managing-workflows.md).
-* Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
+* Bepaalde standaardverslagen, met name die van **Interactie** en de **Mobiele toepassingen** moet worden vernieuwd. Zie de [Rapporten beheren](../../configuration/using/managing-reports.md) sectie.
+* De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Zie de [Workflows beheren](../../configuration/using/managing-workflows.md) sectie.
+* De norm **[!UICONTROL Unsubscription link]** het personaliseringsblok moet worden aangepast .
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
 * V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.

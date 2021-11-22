@@ -25,7 +25,7 @@ Adobe Campaign gebruikt een id-reeks die dienovereenkomstig moet worden gebruikt
 
 Wanneer de opeenvolging meer dan 2 miljard (2.147.483.648 is het nauwkeurige aantal) bereikt, gaat het terug naar nul. Het moet worden vermeden en er moeten problemen ontstaan, en daarom moet deze volgorde worden bewaakt.
 
-Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan met **pkSequence** attributen in het schema worden gedaan.
+Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan worden gedaan met de **pkSequence** in het schema.
 
 Workflows met hoge frequentie die veel logbestanden maken, verbruiken veel id&#39;s. Daarom wordt het ten zeerste aanbevolen te veel logbestanden en hoge frequenties in workflows te vermijden.
 
@@ -47,13 +47,13 @@ Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
 Het aantal bestanden op de schijf van de toepassingsserver mag niet oneindig toenemen.
 
-De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden voorkomen door de standaardactiviteit [Bestandscollector](../../workflow/using/file-collector.md) te gebruiken. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
+De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan door het gebruiken van de norm worden verhinderd [Bestandsverzamelaar](../../workflow/using/file-collector.md) activiteit. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
 
 Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfuncties, moet deze worden leeggemaakt om schijfruimte tot een minimum te beperken.
 
 ## Transactionele gegevens en logboeken {#transactional-data-and-logs}
 
-Elke [werkstroom](../../workflow/using/data-life-cycle.md#work-table) die gegevens in Adobe Campaign invoert veroorzaakt de grootte van het gegevensbestand om te groeien.
+Elke [werkstroom](../../workflow/using/data-life-cycle.md#work-table) dat de invoer van gegevens in Adobe Campaign de grootte van het gegevensbestand om veroorzaakt te groeien.
 
 Controleer of werkstromen voor opschonen of leegmaken worden uitgevoerd en of de records op effectieve wijze worden gewist. Alle transactiegegevens en logbestanden moeten worden gewist. Met de opschoningstaak worden alleen de standaardtabellen verwijderd: bijhouden en brede logboeken. Specifieke tabellen moeten worden leeggemaakt door specifieke workflows. Zie [deze sectie](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 

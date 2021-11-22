@@ -19,7 +19,7 @@ U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt ge
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
-* Maak een **[!UICONTROL Mobile application]**-tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](configuring-the-mobile-application-android.md#configuring-android-service).
+* Een **[!UICONTROL Mobile application]** type information service for the Neotrips mobile application. Zie [deze sectie voor iOS](configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
 * Een levering maken voor [iOS](create-notifications-ios.md) en [Android](create-notifications-android.md).
 
@@ -27,35 +27,35 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 >[!NOTE]
 >
->Ga naar het tabblad **[!UICONTROL Subscriptions]** van de service om de lijst met abonnees van de service weer te geven, d.w.z. alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
+>Ga naar de **[!UICONTROL Subscriptions]** tabblad van de service om de lijst met abonnees van de service weer te geven, d.w.z. alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
 
 ## Het pakket installeren {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-Als hybride/gehoste klant neemt u contact op met het team van [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om toegang te krijgen tot het pushmeldingskanaal in Campagne.
+Als hybride/gehoste klant neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) -team voor toegang tot het pushmeldingskanaal in Campagne.
 
 Als klant op locatie moet u een ingebouwd pakket installeren.
 
 >[!CAUTION]
 >
->Meer informatie over ingebouwde pakketten, beste praktijken en aanbevelingen van de Campagne in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
+>Meer informatie over geïntegreerde pakketten, aanbevolen procedures en aanbevelingen in de campagne vindt u in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 Installatiestappen zijn:
 
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Import package]** in de Adobe Campaign-clientconsole.
+1. De wizard Pakket importeren openen vanuit **[!UICONTROL Tools > Advanced > Import package]** in de Adobe Campaign-clientconsole.
 
    ![](assets/package_ios.png)
 
 1. Selecteer **[!UICONTROL Install a standard package]**.
 
-1. Controleer **[!UICONTROL Mobile App Channel]** in de lijst die wordt weergegeven.
+1. Controleer in de lijst die wordt weergegeven **[!UICONTROL Mobile App Channel]**.
 
    ![](assets/package_ios_2.png)
 
-1. Klik **[!UICONTROL Next]**, dan **[!UICONTROL Start]** om de pakketinstallatie te beginnen.
+1. Klikken **[!UICONTROL Next]** vervolgens **[!UICONTROL Start]** om de pakketinstallatie te starten.
 
-   Zodra de pakketten worden geïnstalleerd, toont de vooruitgangsbar **100%** en u kunt het volgende bericht in de installatielogboeken zien: **[!UICONTROL Installation of packages successful]**.
+   Nadat de pakketten zijn geïnstalleerd, wordt op de voortgangsbalk weergegeven **100%** en u kunt het volgende bericht in de installatielogboeken zien: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 

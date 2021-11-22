@@ -25,17 +25,17 @@ De stappen van de implementatie worden hieronder beschreven, terwijl een uitvoer
 
 ### Identificatie van de te analyseren populatie {#identifying-the-population-to-analyze}
 
-In dit voorbeeld, willen wij de doelbevolking van de leveringen onderzoeken inbegrepen in de **omslag Newsletters**.
+In dit voorbeeld willen we de doelpopulatie van de leveringen in de **Nieuwsbrieven** map.
 
-U doet dit door de desbetreffende leveringen te selecteren, vervolgens met de rechtermuisknop te klikken en **[!UICONTROL Action > Explore the target...]** te selecteren.
+U doet dit door de betreffende leveringen te selecteren, vervolgens met de rechtermuisknop te klikken en vervolgens te selecteren **[!UICONTROL Action > Explore the target...]**.
 
 ![](assets/reporting_quick_start_1.png)
 
 ### Een type analyse selecteren {#selecting-a-type-of-analysis}
 
-In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Adobe Campaign biedt standaard twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]**. Voor meer op dit verwijs naar [het Vormen van het kwalitatieve distributiemalplaatje](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) sectie. De verschillende weergaven worden weergegeven in de sectie [Informatie over beschrijvende analyse](../../reporting/using/about-descriptive-analysis.md).
+In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Adobe Campaign biedt standaard twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]**. Zie voor meer informatie de [De kwalitatieve distributiesjabloon configureren](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) sectie. De verschillende renderingen worden weergegeven in het [Informatie over beschrijvende analyse](../../reporting/using/about-descriptive-analysis.md) sectie.
 
-In dit voorbeeld selecteert u de sjabloon **[!UICONTROL Qualitative distribution]** en kiest u een weergave met een grafiek en tabel (array). Geef het rapport een naam (&quot;Beschrijvende analyse&quot;) en klik **[!UICONTROL Next]**.
+Selecteer in dit voorbeeld de optie **[!UICONTROL Qualitative distribution]** en kies een weergave met een grafiek en tabel (array). Geef het rapport een naam (&quot;Beschrijvende analyse&quot;) en klik **[!UICONTROL Next]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -43,13 +43,13 @@ In dit voorbeeld selecteert u de sjabloon **[!UICONTROL Qualitative distribution
 
 In de volgende stap kunt u de gegevens selecteren die in de tabel moeten worden weergegeven.
 
-Klik op de koppeling **[!UICONTROL Add...]** om de variabele te selecteren die de gegevens bevat die moeten worden weergegeven. Hier willen we de steden van onze ontvangers op één lijn weergeven:
+Klik op de knop **[!UICONTROL Add...]** koppeling gebruiken om de variabele te selecteren die de gegevens bevat die moeten worden weergegeven. Hier willen we de steden van onze ontvangers op één lijn weergeven:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
-In de kolommen wordt het aantal aankopen per bedrijf weergegeven. In dit voorbeeld worden bedragen samengevoegd in het veld **Wekopties**.
+In de kolommen wordt het aantal aankopen per bedrijf weergegeven. In dit voorbeeld worden bedragen geaggregeerd in de **Webaankopen** veld.
 
-Hier, willen wij resultaat binden bepalen om hun vertoning te verduidelijken. Hiervoor selecteert u de bindingsoptie **[!UICONTROL Manual]** en stelt u de berekeningsklassen in voor de segmenten die u wilt weergeven:
+Hier, willen wij resultaat binden bepalen om hun vertoning te verduidelijken. Selecteer hiervoor de optie **[!UICONTROL Manual]** de bindingsoptie en de rekenklassen voor de segmenten die moeten worden weergegeven:
 
 ![](assets/reporting_descriptive_quickstart_step_2a.png)
 
@@ -67,7 +67,7 @@ Kies in dit geval het histogram.
 
 ![](assets/reporting_descriptive_quickstart_step_3.png)
 
-Mogelijke configuraties van de verschillende grafiek worden gedetailleerd in [de sectie van het het rapportdiagram van de Analyse opties](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
+Mogelijke configuraties van de verschillende afbeeldingen worden beschreven in de [Opties in het diagram met analyserapporten](../../reporting/using/processing-a-report.md#analysis-report-chart-options) sectie.
 
 ### De te berekenen statistiek configureren {#configuring-the-statistic-to-calculate}
 
@@ -77,13 +77,13 @@ In dit venster kunt u de lijst met statistieken definiëren die moeten worden be
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Als u een nieuwe statistiek wilt maken, klikt u op de knop **[!UICONTROL Add]**. Raadpleeg [Berekening van statistieken](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation) voor meer informatie hierover.
+Als u een nieuwe statistiek wilt maken, klikt u op de knop **[!UICONTROL Add]** knop. Raadpleeg voor meer informatie hierover [Berekening van statistieken](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Het bekijken van en het gebruiken van het rapport {#viewing-and-using-the-report}
 
 De laatste stap van de tovenaar toont de lijst en de grafiek.
 
-U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel. Voor meer op dit, verwijs naar [Verwerking een rapport](../../reporting/using/processing-a-report.md).
+U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel. Raadpleeg voor meer informatie hierover [Een rapport verwerken](../../reporting/using/processing-a-report.md).
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
@@ -93,19 +93,19 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
 **Doel**: een analyseverslag opstellen over de locatie van de vooruitzichten of afnemers.
 
-1. Open de beschrijvende analysewizard en selecteer alleen **[!UICONTROL Chart]**.
+1. Open de beschrijvende analysewizard en selecteer **[!UICONTROL Chart]** alleen.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
-   Klik **[!UICONTROL Next]** om deze stap goed te keuren.
+   Klikken **[!UICONTROL Next]** om deze stap goed te keuren.
 
-1. Selecteer vervolgens de optie **[!UICONTROL 2 variables]** en geef op dat de **[!UICONTROL First variable (abscissa)]** verwijst naar de status van de ontvanger (vooruitzichten/klanten) en de tweede variabele naar het land.
-1. Selecteer **[!UICONTROL Cylinders]** als een type.
+1. Selecteer vervolgens de **[!UICONTROL 2 variables]** en geeft aan dat de **[!UICONTROL First variable (abscissa)]** heeft betrekking op de status van ontvanger (vooruitzichten/klanten) en de tweede variabele heeft betrekking op het land.
+1. Selecteren **[!UICONTROL Cylinders]** als een type.
 
    ![](assets/s_ncs_user_report_wizard_05.png)
 
-1. Klik **[!UICONTROL Next]** en verlaat de standaard **[!UICONTROL Simple count]** statistiek.
-1. Klik **[!UICONTROL Next]** om het rapport te tonen.
+1. Klikken **[!UICONTROL Next]** en laat de standaardwaarde **[!UICONTROL Simple count]** statistiek.
+1. Klikken **[!UICONTROL Next]** om het rapport weer te geven.
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
@@ -119,20 +119,20 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
 **Doel**: analyse van de e-maildomeinen van het bedrijf.
 
-1. Open de beschrijvende analysewizard en selecteer alleen de weergavemodus **[!UICONTROL Array]**.
+1. Open de beschrijvende analysewizard en selecteer de **[!UICONTROL Array]** alleen weergavemodus.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
    Klik op de knop **[!UICONTROL Next]** om deze stap goed te keuren.
 
-1. Selecteer de variabele **[!UICONTROL Company]** als een kolom en de variabele **[!UICONTROL Email domain]** als een rij.
-1. Houd de optie **[!UICONTROL By rows]** voor statistische oriëntatie: de statistische berekening wordt rechts van de variabele **[!UICONTROL Email domain]** weergegeven.
+1. Selecteer **[!UICONTROL Company]** variabele als een kolom en de **[!UICONTROL Email domain]** variabele als een rij.
+1. De **[!UICONTROL By rows]** optie voor statistische oriëntatie : rechts van de **[!UICONTROL Email domain]** variabele.
 
    ![](assets/s_ncs_user_report_wizard_03b.png)
 
-   Klik **[!UICONTROL Next]** om deze stap goed te keuren.
+   Klikken **[!UICONTROL Next]** om deze stap goed te keuren.
 
-1. Voer vervolgens de te berekenen statistieken in: de standaardtelling houden en een nieuwe statistiek creëren. Om dit te doen, klik **[!UICONTROL Add]** en selecteer **[!UICONTROL Total percentage distribution]** als exploitant.
+1. Voer vervolgens de te berekenen statistieken in: de standaardtelling houden en een nieuwe statistiek creëren. Klik op **[!UICONTROL Add]** en selecteert u **[!UICONTROL Total percentage distribution]** als de operator.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -140,7 +140,7 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
    ![](assets/s_ncs_user_report_wizard_014.png)
 
-1. Klik **[!UICONTROL Next]** om het rapport te tonen.
+1. Klikken **[!UICONTROL Next]** om het rapport weer te geven.
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
@@ -162,15 +162,15 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
    Klik op de knop **[!UICONTROL Next]** om deze stap goed te keuren.
 
-1. Selecteer de variabele **[!UICONTROL Age]** en voer het label ervan in. Geef op of het een geheel getal is en klik op **[!UICONTROL Next]**.
+1. Selecteer **[!UICONTROL Age]** en voert u het label ervan in. Geef op of het een geheel getal is en klik vervolgens op **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
-1. Verwijder de **[!UICONTROL Deciles]**-, **[!UICONTROL Distribution]**- en **[!UICONTROL Sum]**-statistieken: ze zijn hier niet nodig .
+1. Verwijder de **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** en **[!UICONTROL Sum]** statistieken: ze zijn hier niet nodig .
 
    ![](assets/s_ncs_user_report_wizard_012.png)
 
-1. Klik **[!UICONTROL Next]** om het rapport te tonen.
+1. Klikken **[!UICONTROL Next]** om het rapport weer te geven.
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
@@ -180,11 +180,11 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
 1. Open de gewenste doelworkflow.
 1. Klik met de rechtermuisknop op een overgang die naar de tabel met ontvangers verwijst.
-1. Selecteer **[!UICONTROL Analyze target]** in het drop-down menu om het beschrijvende analysevenster te openen.
+1. Selecteren **[!UICONTROL Analyze target]** in het keuzemenu om het beschrijvende analysevenster te openen.
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. Op dit punt kunt u de optie **[!UICONTROL Existing analyses and reports]** selecteren en rapporten gebruiken die eerder zijn gemaakt (zie [Bestaande rapporten en analyses opnieuw gebruiken](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)), of een nieuwe beschrijvende analyse maken. Laat de optie **[!UICONTROL New descriptive analysis from a template]** standaard geselecteerd om dit te doen.
+1. Op dit punt kunt u de optie **[!UICONTROL Existing analyses and reports]** optie en gebruik eerder gemaakte rapporten (zie [Hergebruik van bestaande rapporten en analyses](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)), of maak een nieuwe beschrijvende analyse. Om dit te doen, verlaat **[!UICONTROL New descriptive analysis from a template]** geselecteerd door gebrek.
 
    De rest van de configuratie is hetzelfde als voor alle beschrijvende analyses.
 
@@ -196,7 +196,7 @@ De analyse van een populatie in een workflow vereist dat de populatie nog steeds
 
    ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Wijzig de eigenschappen van de workflow door de optie **[!UICONTROL Keep the result of interim populations between two executions]** te selecteren. Hiermee kunt u een analyse van de overgang van uw keuze starten, zelfs als de workflow is voltooid.
+* Wijzig de eigenschappen van de workflow door de optie **[!UICONTROL Keep the result of interim populations between two executions]** optie. Hiermee kunt u een analyse van de overgang van uw keuze starten, zelfs als de workflow is voltooid.
 
    ![](assets/s_ncs_user_report_wizard_020.png)
 
@@ -206,8 +206,8 @@ De analyse van een populatie in een workflow vereist dat de populatie nog steeds
 
 >[!CAUTION]
 >
->De optie **[!UICONTROL Keep the result of interim populations between two executions]** mag alleen worden gebruikt in ontwikkelingsfasen, maar nooit voor een productieomgeving.\
->De tussentijdse populaties worden automatisch leeggemaakt zodra de bewaartermijn is bereikt. Deze deadline wordt opgegeven in de eigenschappen van de workflow **[!UICONTROL Execution]** tabblad.
+>De **[!UICONTROL Keep the result of interim populations between two executions]** deze optie mag alleen in de ontwikkelingsfase worden gebruikt , maar nooit voor een productieomgeving .\
+>De tussentijdse populaties worden automatisch leeggemaakt zodra de bewaartermijn is bereikt. Deze deadline wordt opgegeven in de workfloweigenschappen **[!UICONTROL Execution]** tab.
 
 ## Logbestanden voor bijhouden ontvangers analyseren {#analyzing-recipient-tracking-logs}
 
@@ -217,7 +217,7 @@ In dit voorbeeld, willen wij het reactiviteitstarief van nieuwsbrieven ontvanger
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Open de beschrijvende analysewizard via het menu **[!UICONTROL Tools > Descriptive analysis]** en wijzig de standaardwerktabel. Selecteer **[!UICONTROL Recipient tracking log]** en voeg een filter toe om Proefdrukken uit te sluiten en nieuwsbrieven op te nemen.
+1. Open de wizard Omschrijvende analyse via **[!UICONTROL Tools > Descriptive analysis]** en wijzigt u de standaardwerktabel. Selecteren **[!UICONTROL Recipient tracking log]** en voeg een filter toe om Proofs uit te sluiten en nieuwsbrieven op te nemen.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -233,11 +233,11 @@ Hiervoor voert u de volgende stappen uit:
 
    In de tabel ziet u voor elke nieuwsbrief het volgende: het aantal wordt geopend, het aantal klikken, het reactiviteitspercentage (als percentage).
 
-1. Voeg een statistiek toe voor het tellen van het aantal klikken: Hiermee definieert u het relevante filter op het tabblad **[!UICONTROL Filter]**.
+1. Voeg een statistiek toe voor het tellen van het aantal klikken: de relevante filter in de **[!UICONTROL Filter]** tab.
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
-1. Klik vervolgens op het tabblad **[!UICONTROL General]** om de naam van het label en de alias van de statistiek te wijzigen:
+1. Klik vervolgens op de knop **[!UICONTROL General]** tab om de naam van het statistische label en alias te wijzigen:
 
    ![](assets/reporting_descriptive_sample_tracking_4.png)
 
@@ -245,15 +245,15 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/reporting_descriptive_sample_tracking_5.png)
 
-1. Klik vervolgens op het tabblad **[!UICONTROL General]** om de naam van het label voor statistische gegevens en de bijbehorende alias te wijzigen:
+1. Klik vervolgens op de knop **[!UICONTROL General]** tab om de naam van het statistische label en de alias te wijzigen:
 
    ![](assets/reporting_descriptive_sample_tracking_6.png)
 
-1. Voeg de derde statistiek toe en selecteer de operator **[!UICONTROL Calculated field]** om de reactiviteitssnelheid te meten.
+1. Voeg de derde statistiek toe en selecteer de **[!UICONTROL Calculated field]** om de reactiviteitsgraad te meten.
 
    ![](assets/reporting_descriptive_sample_tracking_7.png)
 
-   Ga naar het **[!UICONTROL User function]** gebied en ga de volgende formule in:
+   Ga naar de **[!UICONTROL User function]** en voert u de volgende formule in:
 
    ```
    @clic / @open * 100
@@ -263,17 +263,17 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/reporting_descriptive_sample_tracking_8.png)
 
-   Geef ten slotte op of de waarden als een percentage worden weergegeven: U doet dit door de optie **[!UICONTROL Default formatting]** op het tabblad **[!UICONTROL Advanced]** uit te schakelen en **[!UICONTROL Percentage]** zonder decimaalteken te selecteren.
+   Geef ten slotte op of de waarden als een percentage worden weergegeven: Om dit te doen, uncheck **[!UICONTROL Default formatting]** in de **[!UICONTROL Advanced]** en selecteert u **[!UICONTROL Percentage]** zonder decimaalteken.
 
    ![](assets/reporting_descriptive_sample_tracking_10.png)
 
-1. Klik **[!UICONTROL Next]** om het rapport te tonen.
+1. Klikken **[!UICONTROL Next]** om het rapport weer te geven.
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
 ## Logboeken voor leveringsuitsluitingen analyseren {#analyzing-delivery-exclusion-logs}
 
-Als de analyse betrekking heeft op een levering, kunt u de uitgesloten populatie analyseren. Selecteer hiertoe de te analyseren leveringen en klik met de rechtermuisknop om het menu **[!UICONTROL Action > Explore exclusions]** te openen.
+Als de analyse betrekking heeft op een levering, kunt u de uitgesloten populatie analyseren. Hiervoor selecteert u de te analyseren leveringen en klikt u met de rechtermuisknop op de knop **[!UICONTROL Action > Explore exclusions]** -menu.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 

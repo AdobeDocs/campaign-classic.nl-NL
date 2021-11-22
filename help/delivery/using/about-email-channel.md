@@ -23,7 +23,7 @@ Voordat u begint met het verzenden van e-mails:
 
 * Zorg ervoor dat de ontvangende profielen minstens een e-mailadres bevatten.
 * Meer informatie over de Adobe Campaign [Best practices voor levering](delivery-best-practices.md).
-* Lees de volgende secties voor meer informatie over de aflevering: [Deliverability management in Campaign](about-deliverability.md) en [Deliverability Best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+* Lees de volgende secties voor meer informatie over de aflevering: [Leverbaarheidsbeheer in campagne](about-deliverability.md) en [Handleiding voor best practices voor levering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 De belangrijkste stappen voor het verzenden van een e-mail zijn:
 

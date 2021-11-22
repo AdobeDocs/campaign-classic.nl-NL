@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met **Centrum van het Bericht - Control** module door gebrek.
+De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met de **Berichtencentrum - Besturing** module standaard.
 
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:

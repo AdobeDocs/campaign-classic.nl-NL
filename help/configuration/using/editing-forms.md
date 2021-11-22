@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-Het aanmaak- en configuratiescherm van het invoerformulier is toegankelijk via de map **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** van de Adobe Campaign-clientconsole:
+Het ontwerp- en configuratiescherm van het invoerformulier is toegankelijk via het **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** map van de Adobe Campaign-clientconsole:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

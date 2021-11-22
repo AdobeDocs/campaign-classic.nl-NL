@@ -85,7 +85,7 @@ Dit betekent dat als de gebruiker een bedrijfsvoertuig selecteert, het formulier
 
 ## Gezamelde gegevens gebruiken {#using-collected-information}
 
-Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de velden of de labels. De volgende syntaxis moet worden gebruikt:
+For each form, the answers provided can be re-used in the fields or the labels. De volgende syntaxis moet worden gebruikt:
 
 * Voor inhoud die is opgeslagen in een veld van de database:
 

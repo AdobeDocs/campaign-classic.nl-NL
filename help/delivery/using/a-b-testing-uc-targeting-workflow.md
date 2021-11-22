@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Een targetinglworkflow maken
+title: Een targetingworkflow maken
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
@@ -17,9 +17,9 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]** van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit, een **[!UICONTROL Split]** activiteit verbonden met twee **[!UICONTROL Email delivery]** activiteiten, een **[!UICONTROL Wait]** activiteit, een **[!UICONTROL JavaScript code]** activiteit, en een **[!UICONTROL Delivery]** activiteit.
+U moet uw workflow maken in het dialoogvenster **[!UICONTROL Targeting and Workflows]** tabblad van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit **[!UICONTROL Split]** activiteiten in verband met twee **[!UICONTROL Email delivery]** activiteiten **[!UICONTROL Wait]** activiteit **[!UICONTROL JavaScript code]** en een **[!UICONTROL Delivery]** activiteit.
 
-1. Als u dit nog niet hebt gedaan, creeer een campagne (voor meer op dit, verwijs naar [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Als u dit nog niet hebt gedaan, maakt u een campagne (voor meer informatie hierover raadpleegt u [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -27,11 +27,11 @@ U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]**
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Wijzig het label van de bestaande workflow of klik op **[!UICONTROL Add]** om een nieuwe workflow te maken (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population) voor meer informatie).
+1. Wijzig het label van de bestaande workflow of klik op **[!UICONTROL Add]** om een nieuwe te maken (voor meer informatie hierover raadpleegt u [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Gebruik de muis om activiteiten naar het werkstroomdiagram te slepen, inclusief een **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), een **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), twee **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), een **[!UICONTROL Wait]** activiteit (**[!UICONTROL Flow Control]** tab), een **[!UICONTROL JavaScript code]** activiteit (**[!UICONTROL Actions]** tab) en een **[!UICONTROL Delivery]** activiteit (**[!UICONTROL Actions]** tabblad).
+1. Gebruik de muis om activiteiten naar het werkstroomdiagram te slepen, inclusief een **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), a **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), twee **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), a **[!UICONTROL Wait]** activiteit (**[!UICONTROL Flow Control]** tab), a **[!UICONTROL JavaScript code]** activiteit (**[!UICONTROL Actions]** en een **[!UICONTROL Delivery]** activiteit (**[!UICONTROL Actions]** ).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 

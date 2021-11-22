@@ -21,16 +21,16 @@ Adobe Campaign biedt verschillende connectors waarmee u kunt communiceren met ex
 
 Beschikbare connectors worden hieronder vermeld:
 
-* De Schakelaar FDA (**Federated Data Access**) laat u toe om Campagne met één of meerdere externe gegevensbestanden aan te sluiten en informatie te verwerken die in hen wordt opgeslagen zonder uw gegevens van de Campagne te beïnvloeden. [Meer info](../../installation/using/about-fda.md).
+* FDA-aansluiting (**Federale gegevenstoegang**) kunt u Campagne verbinden met een of meer externe databases en de procesgegevens die hierin zijn opgeslagen zonder dat dit van invloed is op uw Campagnegegevens. [Meer info](../../installation/using/about-fda.md).
 * CRM-connectors maken het mogelijk gegevens uit te wisselen tussen Adobe Campaign en uw CRM-oplossing met behulp van speciale workflowactiviteiten. [Meer info](../../platform/using/crm-connectors.md).
 * Met Analytics Connectors kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer info](../../platform/using/adobe-analytics-connector.md).
 
 U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 
 * Adobe Experience Cloud-oplossingen: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, Experience Cloud-triggers, enz. [Meer informatie](../../integrations/using/about-campaign-integrations.md)
-* Adobe IMS/SSO, om toegang tot uw instantie van de Campagne te beveiligen, en met Adobe Campaign met zelfde Adobe ID te verbinden zoals voor de andere oplossingen van Adobe Experience Cloud. [Meer info](../../integrations/using/about-adobe-id.md).
+* Adobe IMS/SSO, om toegang tot uw instantie van de Campagne te beveiligen, en met Adobe Campaign met de zelfde Adobe ID te verbinden zoals voor de andere oplossingen van Adobe Experience Cloud. [Meer info](../../integrations/using/about-adobe-id.md).
 * LDAP-directory, voor het verenigen van toegangsbeheer. [Meer info](../../installation/using/connecting-through-ldap.md).
 
 >[!NOTE]
 >
->De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Raadpleeg [Campagne op locatie - matrix met gehoste mogelijkheden](../../installation/using/capability-matrix.md).
+>De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Zie [Campagne op locatie - matrix met gehoste mogelijkheden](../../installation/using/capability-matrix.md).

@@ -19,11 +19,11 @@ ht-degree: 5%
 
 U kunt webtoepassingspagina&#39;s die zijn gemaakt met de Adobe Campaign Digital Content Editor (DCE), vertalen.
 
-Als u via het tabblad **[!UICONTROL Localization]** in **[!UICONTROL Properties]** van een webtoepassing ten minste één extra taal selecteert, wordt een nieuwe optie beschikbaar wanneer u een HTML-inhoudsblok toevoegt aan een pagina die is bewerkt met DCE.
+Als u ten minste één extra taal selecteert via de **[!UICONTROL Localization]** in de **[!UICONTROL Properties]** van een toepassing van het Web, wordt een nieuwe optie beschikbaar wanneer het toevoegen van een HTML inhoudsblok in een pagina die met DCE wordt uitgegeven.
 
 Met deze optie kunt u aangeven of de blokinhoud moet worden vertaald of niet.
 
-Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het tabblad **[!UICONTROL Translations]** van de toepassing. Raadpleeg [deze pagina](translating-a-web-form.md) voor meer informatie.
+Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via de **[!UICONTROL Translations]** van de toepassing. Raadpleeg [deze pagina](translating-a-web-form.md) voor meer informatie.
 
 De tekenreeksen markeren die moeten worden vertaald:
 
@@ -32,7 +32,7 @@ De tekenreeksen markeren die moeten worden vertaald:
    ![](assets/dce_translation_3.png)
 
 1. Selecteer een HTML-blok.
-1. In het parameterblok op het recht, laat de **[!UICONTROL Localization]** optie u de inhoud van het geselecteerde blok markeren. Standaard wordt alleen de paginatitel vertaald.
+1. In het parameterblok rechts, **[!UICONTROL Localization]** kunt u de inhoud van het geselecteerde blok markeren. Standaard wordt alleen de paginatitel vertaald.
 
    ![](assets/dce_translation_1.png)
 
@@ -51,7 +51,7 @@ De tekenreeksen markeren die moeten worden vertaald:
 
       ![](assets/dce_translation_2.png)
 
-1. Wanneer u de tekenreeksen hebt gemarkeerd, gaat u terug naar de webtoepassing en selecteert u het tabblad **[!UICONTROL Translations]**.
+1. Als u de tekenreeksen hebt gemarkeerd, gaat u terug naar de webtoepassing en selecteert u de optie **[!UICONTROL Translations]** tab.
 1. Selecteer **[!UICONTROL Collect the strings to translate]**. De tekenreeksen die in DCE worden gemarkeerd, worden toegevoegd aan de tekenreeksen van de webtoepassing.
 
    >[!NOTE]
@@ -60,4 +60,4 @@ De tekenreeksen markeren die moeten worden vertaald:
 
 1. Vertaal en keur de tekenreeksen goed.
 
-   U kunt dan voorproef de vertalingen door de gewenste taal van **[!UICONTROL Preview]** lusje in de toepassing van het Web te selecteren.
+   U kunt vervolgens een voorvertoning van de vertalingen bekijken door de gewenste taal te selecteren in het menu **[!UICONTROL Preview]** in de webtoepassing.

@@ -35,7 +35,7 @@ methode
 
 ## Beschrijving {#description-11}
 
-Met dit element kunt u een element `<method>` definiëren. Het is verplicht een methode te declareren.
+Met dit element kunt u een `<method>`  element. Het is verplicht een methode te declareren.
 
 ## Beschrijving van kenmerk {#attribute-description-11}
 

@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Zodra [populaties worden gecreeerd](a-b-testing-uc-population-samples.md), kunt u de leveringen vormen. In dit geval, laten de eerste twee leveringen u toe om verschillende inhoud naar populatie A en B te verzenden. De derde levering is de levering die terugvalt: het wordt verzonden naar de ontvangers die niet tot A of B behoren. De inhoud ervan wordt berekend met behulp van een script en is gelijk aan A of B, afhankelijk van welke score de hoogste open snelheid heeft behaald. We moeten een wachtperiode configureren voor de derde levering, om het resultaat van de leveringen A en B te achterhalen. Dit is waarom de derde levering een **[!UICONTROL Wait]** activiteit omvat.
+Eenmaal [populaties worden gecreëerd](a-b-testing-uc-population-samples.md), kunt u de leveringen configureren. In dit geval, laten de eerste twee leveringen u toe om verschillende inhoud naar populatie A en B te verzenden. De derde levering is de levering die terugvalt: het wordt verzonden naar de ontvangers die niet tot A of B behoren. De inhoud ervan wordt berekend met behulp van een script en is gelijk aan A of B, afhankelijk van welke score de hoogste open snelheid heeft behaald. We moeten een wachtperiode configureren voor de derde levering, om het resultaat van de leveringen A en B te achterhalen. Daarom omvat de derde levering een **[!UICONTROL Wait]** activiteit.
 
-1. Ga naar **[!UICONTROL Split]** activiteit en verbind de overgang die voor populatie A aan één van de e-mailleveringen wordt bestemd reeds in het werkschema.
+1. Ga naar de **[!UICONTROL Split]** activiteit en koppel de overgang voor populatie A aan één van de e-mailleveringen reeds in het werkschema.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -28,11 +28,11 @@ Zodra [populaties worden gecreeerd](a-b-testing-uc-population-samples.md), kunt 
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. Klik **[!UICONTROL Continue]** om de levering te bekijken, dan sparen het.
+1. Klikken **[!UICONTROL Continue]** om de levering te bekijken, dan sparen het.
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Koppel de overgang van de **[!UICONTROL Split]** activiteit bestemd voor populatie B aan de tweede e-maillevering.
+1. De overgang van de **[!UICONTROL Split]** activiteit bestemd voor populatie B tot de tweede e-maillevering.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -40,15 +40,15 @@ Zodra [populaties worden gecreeerd](a-b-testing-uc-population-samples.md), kunt 
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. Koppel de overgang bestemd voor de resterende populatie aan de **[!UICONTROL Wait]** activiteit.
+1. Koppel de overgang voor de resterende bevolking aan de **[!UICONTROL Wait]** activiteit.
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. Open de **[!UICONTROL Wait]** activiteit en vorm een wachttijd van 5 dagen.
+1. Open de **[!UICONTROL Wait]** en configureer een wachttijd van 5 dagen.
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Koppel de **[!UICONTROL Wait]** activiteit aan **[!UICONTROL JavaScript code]** activiteit.
+1. De koppeling **[!UICONTROL Wait]** aan de **[!UICONTROL JavaScript code]** activiteit.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 

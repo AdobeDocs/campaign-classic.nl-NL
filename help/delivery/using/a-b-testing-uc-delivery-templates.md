@@ -17,10 +17,10 @@ ht-degree: 20%
 
 ![](../../assets/common.svg)
 
-We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]**-activiteit die is gekoppeld aan de **[!UICONTROL Split]**-activiteit. Raadpleeg [deze sectie](about-templates.md) voor meer informatie.
+We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** activiteiten in verband met de **[!UICONTROL Split]** activiteit. Raadpleeg [deze sectie](about-templates.md) voor meer informatie.
 
-1. Blader naar de map **[!UICONTROL Resources > Delivery template]**.
-1. Dupliceer **[!UICONTROL Email]** leveringsmalplaatje.
+1. Bladeren naar de **[!UICONTROL Resources > Delivery template]** map.
+1. Dupliceer de **[!UICONTROL Email]** leveringssjabloon.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

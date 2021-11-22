@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Het **leveringsdashboard** is van essentieel belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden.
+De **bezorgdashboard** is de sleutel om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden.
 
 Hiermee kunt u informatie over een levering ophalen en deze indien nodig bewerken. De tabinhoud kan niet meer worden gewijzigd nadat de levering is verzonden.
 
@@ -41,43 +41,43 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 
 ## Leveringsoverzicht {#delivery-summary}
 
-Het tabblad **[!UICONTROL Summary]** bevat de kenmerken van de levering: leveringsstatus, gebruikt kanaal, informatie over de afzender, onderwerp, informatie over uitvoering.
+De **[!UICONTROL Summary]** tab bevat de kenmerken van de levering: leveringsstatus, gebruikt kanaal, informatie over de afzender, onderwerp, informatie over uitvoering.
 
 ## Leveringsrapporten {#delivery-reports}
 
-Met de koppeling **[!UICONTROL Reports]**, die toegankelijk is via het tabblad **[!UICONTROL Summary]**, kunt u een set rapporten bekijken die betrekking hebben op de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, verspreiding van mislukte berichten, openingsfrequentie, klikken en transacties, enz.
+De **[!UICONTROL Reports]** , die toegankelijk is via de **[!UICONTROL Summary]** kunt u een set rapporten bekijken die betrekking hebben op de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, verspreiding van mislukte berichten, openingsfrequentie, klikken en transacties, enz.
 
-De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Raadpleeg [deze sectie](../../reporting/using/delivery-reports.md) voor meer informatie over leveringsrapporten.
+De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Voor meer informatie over leveringsrapporten raadpleegt u [deze sectie](../../reporting/using/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
 ## Afleveringsregisters, geschiedenis en uitsluitingen {#delivery-logs-and-history}
 
-Het tabblad **[!UICONTROL Delivery]** geeft een geschiedenis van de gebeurtenissen in deze levering. Het bevat de leveringslogboeken, d.w.z. de lijst van verzonden berichten en hun status en de bijbehorende berichten.
+De **[!UICONTROL Delivery]** tabblad geeft een overzicht van de gebeurtenissen in deze levering. Het bevat de leveringslogboeken, d.w.z. de lijst van verzonden berichten en hun status en de bijbehorende berichten.
 
-Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte levering of een adres in quarantaine weergeven. Om dit te doen, klik **[!UICONTROL Filters]** knoop en selecteer **[!UICONTROL By state]**. Selecteer vervolgens het frame in de vervolgkeuzelijst. Verschillende statussen worden vermeld in [deze pagina](delivery-statuses.md).
+Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte levering of een adres in quarantaine weergeven. Om dit te doen, klik **[!UICONTROL Filters]** en selecteert u **[!UICONTROL By state]**. Selecteer vervolgens het frame in de vervolgkeuzelijst. Verschillende statussen worden vermeld in [deze pagina](delivery-statuses.md).
 
 >[!NOTE]
 >
->De lijst met de leveringslogboeken kan worden aangepast, net als elke lijst in Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Voor meer op dit, verwijs naar het gebruiksgeval in [dit sectie](#use-case) wordt beschreven.
+>De lijst met de leveringslogboeken kan worden aangepast, net als elke lijst in Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Raadpleeg voor meer informatie het gebruiksgeval in [deze sectie](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
-Met de koppeling **[!UICONTROL Display the mirror page for this message...]** kunt u de spiegelpagina weergeven voor de inhoud van de levering die is geselecteerd in de lijst in een nieuw venster.
+De **[!UICONTROL Display the mirror page for this message...]** Met de koppeling kunt u de spiegelpagina weergeven voor de inhoud van de levering die in de lijst is geselecteerd, in een nieuw venster.
 
-De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar [Generating the mirror page](sending-messages.md#generating-the-mirror-page).
+De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Raadpleeg voor meer informatie hierover [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Logbestanden en geschiedenis voor het bijhouden van leveringen {#tracking-logs}
 
-Op het tabblad **[!UICONTROL Tracking]** wordt de geschiedenis van het bijhouden van gegevens voor deze levering weergegeven. Op dit tabblad worden volggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
+De **[!UICONTROL Tracking]** wordt de volggeschiedenis voor deze levering weergegeven. Op dit tabblad worden volggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
 
 >[!NOTE]
 >
 >Als &#39;tracking&#39; niet is ingeschakeld voor levering, wordt dit tabblad niet weergegeven.
 
-De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. Zie [Hoe te om gevolgde verbindingen](how-to-configure-tracked-links.md) te vormen.
+De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. Zie [Hoe te om gevolgde verbindingen te vormen](how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** gegevens worden geïnterpreteerd in de leveringsrapporten. Zie [deze sectie](../../reporting/using/delivery-reports.md).
 
@@ -85,27 +85,27 @@ De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveri
 
 ## Inboxrendering {#delivery-rendering}
 
-Op het tabblad **[!UICONTROL Inbox rendering]** kunt u een voorvertoning van het bericht weergeven in de verschillende contexten waarin het bericht kan worden ontvangen en kunt u de compatibiliteit van grote desktops en toepassingen controleren.
+De **[!UICONTROL Inbox rendering]** kunt u een voorvertoning van het bericht bekijken in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
 
 Op deze manier kunt u ervoor zorgen dat uw bericht optimaal aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten.
 
-Raadpleeg [deze pagina](inbox-rendering.md) voor meer informatie over het renderen in de Postvak IN.
+Raadpleeg voor meer informatie over het renderen in Postvak IN [deze pagina](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 ## Afleveringscontrole {#delivery-audit-}
 
-Het tabblad **[!UICONTROL Audit]** bevat het leveringslogboek en alle berichten met betrekking tot de proefdrukken.
+De **[!UICONTROL Audit]** bevat het leveringslogboek en alle berichten betreffende de proefdrukken.
 
-Met de knop **[!UICONTROL Refresh]** kunt u de gegevens bijwerken. Gebruik de knop **[!UICONTROL Filters]** om een filter op de gegevens te definiëren.
+De **[!UICONTROL Refresh]** kunt u de gegevens bijwerken. Gebruik de **[!UICONTROL Filters]** om een filter op de gegevens te definiëren.
 
 Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie [De levering analyseren](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Met het subtabblad **[!UICONTROL Proofs]** kunt u de lijst met proefdrukken weergeven die zijn verzonden.
+De **[!UICONTROL Proofs]** In het subtabblad kunt u de lijst met proefdrukken weergeven die zijn verzonden.
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-U kunt de informatie wijzigen die in dit venster wordt weergegeven (en die van de tabbladen **[!UICONTROL Delivery]** en **[!UICONTROL Tracking]**) door de kolommen te selecteren die moeten worden weergegeven. Klik hiertoe op het pictogram **[!UICONTROL Configure list]** in de rechterbenedenhoek. Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md#configuring-lists) voor meer informatie over het configureren van de lijstweergave.
+U kunt de informatie wijzigen die wordt weergegeven in dit venster (en in het venster **[!UICONTROL Delivery]** en **[!UICONTROL Tracking]** tabs) door de kolommen te selecteren die moeten worden weergegeven. Om dit te doen, klik **[!UICONTROL Configure list]** in de rechterbenedenhoek. Raadpleeg voor meer informatie over het configureren van de lijstweergave [deze sectie](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Synchronisatie van het dashboard voor levering {#delivery-dashboard-synchronization}
 
@@ -113,13 +113,13 @@ Van uw leveringsdashboard, wilt u de verwerkte berichten en leveringslogboeken c
 
 Sommige indicatoren of status kunnen onjuist of niet bijgewerkt zijn, dit kan met de volgende oplossingen worden opgelost:
 
-* Als uw leveringsstatus onjuist is, controleer dat alle noodzakelijke goedkeuringen voor deze levering zijn gedaan of **[!UICONTROL operationMgt]** en **[!UICONTROL deliveryMgt]** werkschema&#39;s zonder fouten lopen. Dit kan ook zijn toe te schrijven aan de levering gebruikend een affiniteit die niet op de verzendende instantie wordt gevormd.
+* Als uw leveringsstatus onjuist is, controleert u of alle vereiste goedkeuringen zijn uitgevoerd voor deze levering of of de **[!UICONTROL operationMgt]** en **[!UICONTROL deliveryMgt]** workflows worden uitgevoerd zonder fouten. Dit kan ook zijn toe te schrijven aan de levering gebruikend een affiniteit die niet op de verzendende instantie wordt gevormd.
 
-* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer het **[!UICONTROL Mid-sourcing (delivery counters)]** technische werkschema. Start het als de status ervan niet **[!UICONTROL Started]** is. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren. Voor meer informatie over volgindicatoren, verwijs naar dit [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer **[!UICONTROL Mid-sourcing (delivery counters)]** technische workflow. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en vervolgens **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Raadpleeg voor meer informatie over trackingindicatoren deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren om opnieuw te synchroniseren. Voor meer informatie over volgindicatoren, verwijs naar dit [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg voor meer informatie over trackingindicatoren deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Als uw leveringsteller niet bijgewerkt is voor midsourcingimplementaties, controleert u of de technische workflow **[!UICONTROL Mid-Sourcing (Delivery counters)]** actief is. Raadpleeg [deze pagina](../../installation/using/mid-sourcing-deployment.md) voor meer informatie.
+* Als uw leveringsteller niet up-to-date is voor mid-sourcing plaatsingen, controleer dat **[!UICONTROL Mid-Sourcing (Delivery counters)]** de technische workflow wordt uitgevoerd. Raadpleeg [deze pagina](../../installation/using/mid-sourcing-deployment.md) voor meer informatie.
 
 U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md) voor meer informatie.
 
@@ -133,13 +133,13 @@ In deze sectie leert u hoe u informatie over de leveringslogs toevoegt aan het I
 
 ### Stap 1: Het schema uitbreiden
 
-Om **publicID** in uw leveringslogboeken toe te voegen moet u het schema eerst uitbreiden. U kunt doorgaan zoals volgt.
+Toevoegen **publicID** in uw leveringslogboeken moet u het schema eerst uitbreiden. U kunt doorgaan zoals volgt.
 
-1. Maak een schema-extensie onder **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
+1. Een schema-extensie maken onder **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
 
    Voor meer informatie over schemauitbreidingen, verwijs naar [deze pagina](../../configuration/using/extending-a-schema.md).
 
-1. Selecteer **[!UICONTROL broadLogRcp]** om de Ontvanger leverlogboeken (nms) uit te breiden en een douanemespace te bepalen. In dit geval is het &quot;cus&quot;:
+1. Selecteren **[!UICONTROL broadLogRcp]** om de Ontvanger leveringslogboeken (nms) uit te breiden en een aangepaste Namespace te bepalen. In dit geval is het &quot;cus&quot;:
 
    ![](assets/schema-parameters.png)
 
@@ -170,23 +170,23 @@ Zodra de wijzigingen worden gedaan, moet u gegevensbestandstructuur bijwerken zo
 
 Volg de onderstaande stappen om dit te doen:
 
-1. Klik op het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]**.
+1. Klik op de knop **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** -menu.
 
    ![](assets/update-database-structure.png)
 
-1. In het venster **[!UICONTROL Edit tables]** wordt de tabel **[!UICONTROL NmsBroadLogRcp]** gecontroleerd (of de tabel **[!UICONTROL broadLogMid]** als de tabel zich in een omgeving voor midsourcing bevindt), zoals hieronder:
+1. In de **[!UICONTROL Edit tables]** venster, **[!UICONTROL NmsBroadLogRcp]** tabel is ingeschakeld (of de **[!UICONTROL broadLogMid]** tabel als uw computer zich in een omgeving voor midsourcing bevindt), zoals hieronder:
 
    ![](assets/edit-tables.png)
 
    >[!IMPORTANT]
    >
-   >Zorg er altijd voor dat er geen andere wijziging is, behalve de tabel **[!UICONTROL NmsBroadLoGRcp]** (of de tabel **[!UICONTROL broadLogMid]** als de tabel zich in een omgeving voor midsourcing bevindt). Als dat het geval is, schakelt u andere tabellen uit.
+   >Zorg er altijd voor dat er geen andere wijzigingen zijn, behalve de **[!UICONTROL NmsBroadLoGRcp]** of de **[!UICONTROL broadLogMid]** tabel als uw computer zich in een omgeving voor midsourcing bevindt). Als dat het geval is, schakelt u andere tabellen uit.
 
-1. Klik **[!UICONTROL Next]** om te bevestigen. Het volgende scherm wordt weergegeven:
+1. Klikken **[!UICONTROL Next]** om te valideren. Het volgende scherm wordt weergegeven:
 
    ![](assets/update-script.png)
 
-1. Klik **[!UICONTROL Next]**, dan **[!UICONTROL Start]** beginnen gegevensbestandstructuur bij te werken. Indexopbouw begint. Deze stap kan lang zijn, afhankelijk van het aantal rijen in de **[!UICONTROL NmsBroadLogRcp]** lijst.
+1. Klikken **[!UICONTROL Next]** vervolgens **[!UICONTROL Start]** om de databasestructuur bij te werken. Indexopbouw begint. Deze stap kan lang zijn, afhankelijk van het aantal rijen in de **[!UICONTROL NmsBroadLogRcp]** tabel.
 
    ![](assets/start-database-update.png)
 
@@ -206,6 +206,6 @@ Om dit te doen, heb toegang tot de leveringslogboeken en voeg de &quot;IP herken
 >
 >Leren hoe te om lijsten in de interface van Campaign Classic te vormen, verwijs naar [deze pagina](../../platform/using/adobe-campaign-workspace.md).
 
-Hieronder ziet u wat u na wijzigingen op het tabblad **[!UICONTROL Delivery]** moet zien:
+Hieronder ziet u wat u moet zien in het dialoogvenster **[!UICONTROL Delivery]** tabblad na wijzigingen:
 
 ![](assets/logs-with-ip.png)

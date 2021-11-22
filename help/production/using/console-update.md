@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Als u de optie **[!UICONTROL Do not request console update]** hebt geselecteerd en u wilt het verzoek om de update opnieuw activeren, past u de volgende procedure toe:
+Als u **[!UICONTROL Do not request console update]** en u wilt het verzoek om een update opnieuw activeren, past u de volgende procedure toe:
 
-1. Open de editor van de registerdatabase met de opdracht **regedit** in het menu **[!UICONTROL Start > Execute]** van Windows.
+1. Open de editor van de registerdatabase met de **regedit** in Windows **[!UICONTROL Start > Execute]** -menu.
 
    ![](assets/ncs_console_update_1.png)
 
-1. Geef in de structuur de opties van het knooppunt **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** weer.
-1. Verwijder het **[!UICONTROL confAdvisedUpgrade]**-item en sluit de Register-editor.
+1. Geef in de structuur de opties van het dialoogvenster **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** knooppunt.
+1. Verwijder de **[!UICONTROL confAdvisedUpgrade]** vermelding en sluit de Register-editor.
 
    ![](assets/ncs_console_update_2.png)

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Een lokale campagne maken (op formulier) {#creating-a-local-campaign--by-form-}
 
-De **Door vorm** typeWebinterface impliceert het gebruiken van **Webtoepassing**. Afhankelijk van zijn configuratie, kan deze Webtoepassing om het even welk type van bepaalde gepersonaliseerde elementen bevatten. U kunt bijvoorbeeld koppelingen voorstellen om het doel, het budget, de inhoud, enzovoort te evalueren. via specifieke API&#39;s.
+De **Op formulier** type-webinterface gebruikt een **webtoepassing**. Afhankelijk van zijn configuratie, kan deze Webtoepassing om het even welk type van bepaalde gepersonaliseerde elementen bevatten. U kunt bijvoorbeeld koppelingen voorstellen om het doel, het budget, de inhoud, enzovoort te evalueren. via specifieke API&#39;s.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ De **Door vorm** typeWebinterface impliceert het gebruiken van **Webtoepassing**
 >
 >De toepassing van het Web die in dit voorbeeld wordt gebruikt is geen app van het Web die uit-van-de-doos met Adobe Campaign komt. Als u een formulier in een campagne wilt gebruiken, moet u de toegewijde webtoepassing maken.
 
-Wanneer u de campagnemalplaatje maakt, klikt u op het pictogram **[!UICONTROL Zoom]** in de optie **[!UICONTROL Web interface]** van de koppeling **[!UICONTROL Advanced campaign settings...]** om details van de webtoepassing te openen.
+Klik tijdens het maken van de campagnemalplaatje op de knop **[!UICONTROL Zoom]** pictogram in de **[!UICONTROL Web interface]** de **[!UICONTROL Advanced campaign settings...]** koppeling naar toegang tot details van de webtoepassing.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -35,11 +35,11 @@ Wanneer u de campagnemalplaatje maakt, klikt u op het pictogram **[!UICONTROL Zo
 >
 >De toepassingsparameters van het Web zijn slechts beschikbaar in het campagnemalplaatje.
 
-Selecteer op het tabblad **[!UICONTROL Edit]** de **Campagnevolgorde** activiteit en open deze om de inhoud te openen.
+In de **[!UICONTROL Edit]** selecteert u de **Campagnevolgorde** en open deze voor toegang tot de inhoud ervan.
 
 ![](assets/mkg_dist_web_app1.png)
 
-In dit voorbeeld omvat de **Campagnevolgorde**-activiteit:
+In dit voorbeeld wordt **Campagnevolgorde** de activiteit omvat :
 
 * velden die de lokale entiteit tijdens de bestelling moet invoeren;
 
@@ -96,7 +96,7 @@ De stappen zijn als volgt:
 
 **Voor de centrale entiteit:**
 
-1. Maak een **[!UICONTROL Data distribution]**-activiteit.
+1. Een **[!UICONTROL Data distribution]** activiteit.
 1. Maak de samenwerkingscampagne.
 1. Publiceer de campagne.
 
@@ -106,7 +106,7 @@ De stappen zijn als volgt:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Door op de koppeling **[!UICONTROL Access your contact list and approve targeting]** te klikken krijgt de lokale entiteit toegang (via webbrowser) tot de lijst met clients die voor de campagne zijn geselecteerd.
+1. Klik op de knop **[!UICONTROL Access your contact list and approve targeting]** de lokale entiteit heeft via de webbrowser toegang tot de lijst met voor de campagne geselecteerde klanten.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -120,23 +120,23 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 #### Een activiteit voor gegevensdistributie maken {#creating-a-data-distribution-activity}
 
-1. Als u een samenwerkingscampagne wilt instellen (door goedkeuring als doel), moet u eerst een **[!UICONTROL Data distribution activity]** maken. Klik op het pictogram **[!UICONTROL New]** in het knooppunt **[!UICONTROL Resources > Campaign management > Data distribution]**.
+1. Als u een samenwerkingscampagne wilt instellen (door goedkeuring als doel), moet u eerst een **[!UICONTROL Data distribution activity]**. Klik op de knop **[!UICONTROL New]** in het deelvenster **[!UICONTROL Resources > Campaign management > Data distribution]** knooppunt.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. Op het tabblad **[!UICONTROL General]** moet u het volgende opgeven:
+1. In de **[!UICONTROL General]** -tab, moet u opgeven:
 
-   * de **[!UICONTROL Targeting dimension]**. Hier wordt de **Gegevensdistributie** uitgevoerd op **Ontvangers**.
-   * de **[!UICONTROL Distribution type]**. U kunt een **Vaste grootte** of een **Grootte als percentage** kiezen.
-   * de **[!UICONTROL Assignment type]**. Selecteer de optie **Lokale entiteit**.
-   * de **[!UICONTROL Distribution type]**. Hier is het veld **[!UICONTROL Origin (@origin)]** aanwezig in de tabel Ontvanger waarmee u de relatie tussen de contactpersoon en de lokale entiteit kunt identificeren.
-   * Het veld **[!UICONTROL Approval storage]**. Selecteer de optie **Lokale goedkeuring van ontvanger**.
+   * de **[!UICONTROL Targeting dimension]**. Hier **Gegevensverspreiding** wordt uitgevoerd op **Ontvangers**.
+   * de **[!UICONTROL Distribution type]**. U kunt een **Vaste grootte** of **Grootte als percentage**.
+   * de **[!UICONTROL Assignment type]**. Selecteer **Lokale entiteit** optie.
+   * de **[!UICONTROL Distribution type]**. Hier is het **[!UICONTROL Origin (@origin)]** veld aanwezig in de tabel Ontvanger waarmee u de relatie tussen de contactpersoon en de lokale entiteit kunt identificeren.
+   * De **[!UICONTROL Approval storage]** veld. Selecteer **Lokale erkenning van de ontvanger** optie.
 
-1. Geef op het tabblad **[!UICONTROL Breakdown]** het volgende op:
+1. In de **[!UICONTROL Breakdown]** -tab, geeft u op:
 
-   * de **[!UICONTROL Distribution field value]**, die overeenkomt met de lokale entiteiten die betrokken zijn bij de komende campagne.
+   * de **[!UICONTROL Distribution field value]**, hetgeen overeenkomt met de lokale entiteiten die betrokken zijn bij de komende campagne.
    * de lokale entiteit **[!UICONTROL label]**.
-   * de **[!UICONTROL Size]** (vast of als percentage). De standaardwaarde **0** omvat het selecteren van alle ontvangers verbonden aan de lokale entiteit.
+   * de **[!UICONTROL Size]** (vast of als percentage). De **0 standaardwaarde** Hierbij worden alle ontvangers geselecteerd die aan de lokale entiteit zijn gekoppeld.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -144,12 +144,12 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 #### Een collaboratieve campagne maken {#creating-a-collaborative-campaign}
 
-1. Van **[!UICONTROL Campaign management > Campaign]** knoop, creeer nieuw **[!UICONTROL collaborative campaign (by target approval)]**.
-1. Maak op het tabblad **[!UICONTROL Targeting and workflows]** een workflow voor uw campagne. Dit moet een **Splitsing** activiteit bevatten waarin **[!UICONTROL Record count limitation]** door de **[!UICONTROL Data distribution]** activiteit wordt bepaald.
+1. Van de **[!UICONTROL Campaign management > Campaign]** knooppunt, een nieuw knooppunt maken **[!UICONTROL collaborative campaign (by target approval)]**.
+1. In de **[!UICONTROL Targeting and workflows]** een workflow voor uw campagne maken. Dit moet een **Splitsen** de **[!UICONTROL Record count limitation]** wordt gedefinieerd door de **[!UICONTROL Data distribution]** activiteit.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. Voeg een **[!UICONTROL Local approval]** actie toe waar u kunt specificeren:
+1. Voeg een **[!UICONTROL Local approval]** handeling waar u kunt opgeven:
 
    * de inhoud van het bericht die naar de lokale entiteiten in de kennisgeving zal worden verzonden;
    * de goedkeuringsherinnering;
@@ -161,16 +161,16 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 #### De campagne publiceren {#publishing-the-campaign}
 
-U kunt nu een **campagnepakket** van **[!UICONTROL Campaigns]** tabel toevoegen.
+U kunt nu een **campagnepakket** van de **[!UICONTROL Campaigns]** tab.
 
-1. Kies uw **[!UICONTROL Reference campaign]**. Op het tabblad **[!UICONTROL Edit]** van uw pakket kunt u **[!UICONTROL Approval mode]** selecteren voor uw campagne:
+1. Kies uw **[!UICONTROL Reference campaign]**. In de **[!UICONTROL Edit]** kunt u de **[!UICONTROL Approval mode]** voor uw campagne gebruiken:
 
-   * in de modus **Handmatig** nemen de lokale entiteiten deel aan de campagne als ze de uitnodiging van de centrale entiteit accepteren. Zij kunnen vooraf geselecteerde contacten schrappen als zij willen en goedkeuring van de manager noodzakelijk is om hun deelname aan de campagne te bevestigen.
-   * in de modus **Automatisch** moeten de lokale entiteiten deelnemen aan de campagne, tenzij ze zichzelf uit de campagne verwijderen. Ze kunnen contacten verwijderen zonder goedkeuring.
+   * in **Handmatig** in mode nemen de lokale entiteiten deel aan de campagne als zij de uitnodiging van de centrale entiteit aanvaarden. Zij kunnen vooraf geselecteerde contacten schrappen als zij willen en goedkeuring van de manager noodzakelijk is om hun deelname aan de campagne te bevestigen.
+   * in **Automatisch** in mode moeten de lokale entiteiten deelnemen aan de campagne , tenzij ze zich ervan verwijderen . Ze kunnen contacten verwijderen zonder goedkeuring.
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. Op het tabblad **[!UICONTROL Description]** kunt u zowel een beschrijving voor uw campagne als alle documenten toevoegen die naar de lokale entiteiten moeten worden verzonden.
+1. In de **[!UICONTROL Description]** kunt u een beschrijving van uw campagne en alle documenten toevoegen die naar de lokale entiteiten moeten worden verzonden.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
@@ -203,7 +203,7 @@ De stappen zijn als volgt:
 **Voor de centrale entiteit:**
 
 1. Maak de samenwerkingscampagne.
-1. Configureer **[!UICONTROL Advanced campaign settings...]** zoals u zou doen voor een lokale campagne.
+1. Configureer de **[!UICONTROL Advanced campaign settings...]** zoals u zou doen voor een lokale campagne .
 1. Configureer de campagneworkflow en de levering op dezelfde manier als voor een lokale campagne.
 1. Het webformulier bijwerken.
 1. Maak het campagnepakket en publiceer het.
@@ -228,11 +228,11 @@ De stappen zijn als volgt:
 
 ### Centrale entiteitzijde {#central-entity-side-1}
 
-1. Als u een samenwerkingscampagne wilt implementeren (op formulier), moet u een campagne maken met de sjabloon **Samenwerken (op formulier)**.
+1. Als u een samenwerkingscampagne wilt implementeren (op formulier), moet u een campagne maken met de opdracht **Samenwerkingscampagne (op formulier)** sjabloon.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Klik op het tabblad **[!UICONTROL Edit]** van de campagne op de koppeling **[!UICONTROL Advanced campaign settings...]** om deze te configureren als een lokale campagne. Zie [Een lokale campagne maken (op formulier)](#creating-a-local-campaign--by-form-).
+1. In de campagne **[!UICONTROL Edit]** klikt u op de knop **[!UICONTROL Advanced campaign settings...]** verbinding om het als lokale campagne te vormen. Zie [Een lokale campagne maken (op formulier)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
@@ -241,11 +241,11 @@ De stappen zijn als volgt:
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. Voltooi de pakketconfiguratie door de goedkeuringswijze op **[!UICONTROL Edit]** tabel te selecteren.
+1. Voltooi de pakketconfiguratie door de goedkeuringsmodus te selecteren in het dialoogvenster **[!UICONTROL Edit]** tab.
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. Op het tabblad **[!UICONTROL Description]** kunt u een beschrijving van het campagnepakket invoeren, een meldingsbericht dat naar lokale entiteiten moet worden verzonden wanneer het pakket wordt gepubliceerd en informatieve documenten aan uw campagnepakket toevoegen.
+1. Van de **[!UICONTROL Description]** kunt u een beschrijving van het campagnepakket invoeren, een meldingsbericht dat naar lokale entiteiten moet worden verzonden wanneer het pakket wordt gepubliceerd en alle informatieve documenten aan uw campagnepakket toevoegen.
 
    ![](assets/mkg_dist_use_case_form_5.png)
 

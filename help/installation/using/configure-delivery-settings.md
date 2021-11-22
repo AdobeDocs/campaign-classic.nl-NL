@@ -17,19 +17,19 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-De leveringsparameters moeten worden geconfigureerd in de map **serverConf.xml**.
+De leveringsparameters moeten in worden gevormd **serverConf.xml** map.
 
-* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van de  **`<dnsconfig>`** vanaf worden gemaakt.
+* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van worden gemaakt **`<dnsconfig>`** en.
 
    >[!NOTE]
    >
-   >De **nameServers** parameter is essentieel voor een installatie in Vensters. Voor een installatie in Linux, moet het leeg worden verlaten.
+   >De **nameServers** parameter is essentieel voor een installatie in Windows. Voor een installatie in Linux, moet het leeg worden verlaten.
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuraties uitvoeren: configureer een [SMTP relais](#smtp-relay), pas het aantal [MTA kindprocessen](#mta-child-processes), [Beheer uitgaand verkeer SMTP](#managing-outbound-smtp-traffic-with-affinities) aan.
+Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuraties uitvoeren: configureren [SMTP-relais](#smtp-relay)wijzigt u het aantal [MTA onderliggende processen](#mta-child-processes), [Uitgaande SMTP-verkeer beheren](#managing-outbound-smtp-traffic-with-affinities).
 
 ## SMTP-relais {#smtp-relay}
 
@@ -37,7 +37,7 @@ De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzendi
 
 Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval, zal de globale productie relais zijn één (op voorwaarde dat de productie van de relaisserver aan Adobe Campaign minder is).
 
-In dit geval, worden deze parameters geplaatst door de server SMTP in **`<relay>`** sectie te vormen. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
+In dit geval worden deze parameters geplaatst door de server SMTP in te vormen **`<relay>`** sectie. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -49,13 +49,13 @@ In dit geval, worden deze parameters geplaatst door de server SMTP in **`<relay>
 
 ## MTA onderliggende processen {#mta-child-processes}
 
-Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendingsprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in de **`<master>`** sectie van configuratie MTA op elke individuele computer worden gemaakt.
+Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendingsprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in **`<master>`** sectie van MTA configuratie op elke individuele computer.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Zie ook [Optimalisatie voor verzenden via e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
+Zie ook [Optimalisatie van e-mailverzending](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Beheer uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -67,9 +67,9 @@ U kunt uitgaand verkeer SMTP door affiniteiten met IP adressen verbeteren.
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Voer de affiniteiten in de sectie **`<ipaffinity>`** van het bestand **serverConf.xml** in.
+1. Voer de affiniteiten in het dialoogvenster **`<ipaffinity>`** van de **serverConf.xml** bestand.
 
-   Een affiniteit kan verschillende namen hebben: om hen te scheiden, gebruik **;** karakter.
+   Een affiniteit kan verschillende namen hebben: om ze te scheiden, gebruikt u de **;** teken.
 
    Voorbeeld:
 
@@ -78,15 +78,15 @@ Hiervoor voert u de volgende stappen uit:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Raadpleeg het bestand **serverConf.xml** om de relevante parameters weer te geven.
+   Als u de relevante parameters wilt bekijken, raadpleegt u de **serverConf.xml** bestand.
 
-1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in de **IPAffinity**-opsomming.
+1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in het dialoogvenster **IPAffinity** opsomming.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Opsommingen worden beschreven in [dit document](../../platform/using/managing-enumerations.md).
+   >Opsommingen worden gedetailleerd weergegeven in [dit document](../../platform/using/managing-enumerations.md).
 
    Vervolgens kunt u de affiniteit selecteren die u wilt gebruiken, zoals hieronder voor typologieën wordt getoond:
 
@@ -94,7 +94,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt ook naar [Configuratie leveringsserver](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
+   >U kunt ook verwijzen naar [Configuratie van de leveringsserver](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **Verwante onderwerpen**
 * [Technische e-mailconfiguraties](email-deliverability.md)

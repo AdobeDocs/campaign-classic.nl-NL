@@ -66,25 +66,25 @@ Wanneer aanbiedingen in leveringen worden opgenomen, worden de aanbiedingen door
 
 Als u aanbiedingen in een verrijkingsactiviteit selecteert, kunt u kiezen welke ruimte u wilt gebruiken. Ongeacht de geselecteerde aanbiedingsruimte, hangt het menu voor de aanpassing van de levering echter af van de aanbiedingsruimte die in de levering is ingesteld.
 
-In het onderstaande voorbeeld is **[!UICONTROL Email (Environment - Recipient)]** geselecteerd als aanbiedingsruimte:
+In het onderstaande voorbeeld is de ruimte voor het aanbieden geselecteerd in de levering **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Als er geen HTML-renderfunctie is ingesteld voor de aanbiedingsruimte die u in de levering selecteert, wordt deze niet weergegeven in het menu van de levering en kan deze niet worden geselecteerd. Ook dit staat los van de aanbiedingsruimte die in de verrijkingsactiviteit is geselecteerd.
+Als er geen renderfunctie voor HTML is ingesteld voor de aanbiedingsruimte die u in de levering selecteert, wordt deze niet weergegeven in het menu van de levering en kan deze niet worden geselecteerd. Ook dit staat los van de aanbiedingsruimte die in de verrijkingsactiviteit is geselecteerd.
 
-In het onderstaande voorbeeld is de HTML-renderfunctie beschikbaar in de vervolgkeuzelijst omdat de aanbiedingsruimte die in de levering is geselecteerd, een renderfunctie heeft:
+In het onderstaande voorbeeld is de renderfunctie HTML beschikbaar in de vervolgkeuzelijst omdat de aanbiedingsruimte die in de levering is geselecteerd, een renderfunctie heeft:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
 Deze functie voegt code in zoals: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-Wanneer u het voorstel selecteert, is de waarde van het **[!UICONTROL view]** attribuut als volgt:
-* &quot;rendering/html&quot;: html-rendering. De HTML-renderfunctie wordt gebruikt.
-* &quot;aanbieding/weergave/html&quot;: html-inhoud. De klasse maakt geen gebruik van de HTML-renderfunctie. Het bevat alleen het HTML-veld.
+Wanneer u het voorstel selecteert, wordt de waarde van de optie **[!UICONTROL view]** Het kenmerk is als volgt:
+* &quot;rendering/html&quot;: html-rendering. De renderfunctie HTML wordt gebruikt.
+* &quot;aanbieding/weergave/html&quot;: html-inhoud. De renderfunctie HTML wordt niet gebruikt. Het bevat alleen het veld HTML.
 
-Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies spaties bieden en welke ruimten renderfuncties bieden.
+Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies ruimtes bieden en welke ruimten renderfuncties bieden.
 
-Daarom wordt u aangeraden voor alle aanbiedingsruimten een HTML-renderfunctie te definiëren, zelfs als uw aanbiedingsruimte alleen HTML-inhoud vereist.
+Daarom wordt u aangeraden voor alle aanbiedingsruimten een renderfunctie voor HTML te definiëren, zelfs als voor uw aanbiedingsruimte alleen HTML-inhoud is vereist.
 
 ### De positie in de tabel in het propositielogboek instellen {#rank-proposition-log-table}
 
@@ -108,7 +108,7 @@ U kunt extra velden toevoegen, zoals een veld @rank:
 
 Omdat er een veld in de tabel met voorstellen staat met de naam @rank, wordt de waarde in de tabel met werkstroomsjablonen gekopieerd.
 
-Zie [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights) voor meer informatie over het opslaan van extra velden in de tabel met profielen.
+Voor meer informatie over het opslaan van extra velden in de tabel met profielen raadpleegt u [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Voor uitgaande aanbiedingen met interactie is dit handig wanneer er meerdere aanbiedingen zijn geselecteerd en u wilt opnemen in welke volgorde deze in een e-mail worden weergegeven.
 
@@ -123,7 +123,7 @@ Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan
 ### NMS uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
 
 Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-doosstructuur reeds opstelling volgt:
-* Definieer een nieuw veld voor de opslag van inhoud onder `<element name="view">`.
+* Een nieuw veld definiëren voor de opslag van inhoud onder `<element name="view">`.
 * Elk nieuw veld moet tweemaal worden gedefinieerd. Eenmaal als een regulier XML-veld en eenmaal als een CDATA XML-veld met &quot;_jst&quot; toegevoegd aan de naam. Bijvoorbeeld:
 
    ```
@@ -131,4 +131,4 @@ Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-do
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten worden geplaatst onder `<element name="trackedUrls">` die zich onder `<element name="view" >` bevindt.
+* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten onder `<element name="trackedUrls">` die u vindt onder `<element name="view" >`.

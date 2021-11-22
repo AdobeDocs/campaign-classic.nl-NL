@@ -23,6 +23,6 @@ U kunt gecumuleerde rapporten weergeven bij leveringen. Selecteer hiertoe de te 
 
 Als u niet-aangrenzende leveringen in de lijst wilt selecteren, houdt u de CTRL-toets ingedrukt terwijl u een selectie maakt.
 
-Als u leveringen wilt selecteren die zijn opgeslagen in een andere map, klikt u op **[!UICONTROL Display sub-levels]** (toegankelijk via de werkbalk). Deze worden vervolgens in dezelfde lijst weergegeven.
+Als u leveringen wilt selecteren die in een andere map zijn opgeslagen, klikt u op **[!UICONTROL Display sub-levels]** (toegankelijk via de werkbalk). Deze worden vervolgens in dezelfde lijst weergegeven.
 
 ![](assets/s_ncs_user_display_children_icon.png)

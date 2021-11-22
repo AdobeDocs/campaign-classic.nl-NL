@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Als u een Adobe Experience Platform-publiek wilt opnemen in Campagne en deze wilt gebruiken in uw workflows, moet u eerst Adobe Campaign verbinden als een Adobe Experience Platform **Doel** en deze configureren met het te exporteren segment.
+Als u een Adobe Experience Platform-publiek wilt opnemen in de campagne en deze wilt gebruiken in uw workflows, moet u eerst Adobe Campaign als een Adobe Experience Platform verbinden **Doel** en configureer deze met het segment dat u wilt exporteren.
 
 Zodra de Bestemming is gevormd, zullen de gegevens naar uw opslagplaats worden uitgevoerd, en u zult een specifieke werkschema in Campaign Classic moeten bouwen om het in te voeren.
 
@@ -24,7 +24,7 @@ Zodra de Bestemming is gevormd, zullen de gegevens naar uw opslagplaats worden u
 
 In het Adobe Experience-platform configureert u een verbinding met Adobe Campaign door een opslaglocatie voor de geëxporteerde segmenten te selecteren. Met deze stappen kunt u ook de segmenten selecteren die u wilt exporteren en aanvullende XDM-velden opgeven die u wilt opnemen.
 
-Raadpleeg de [documentatie bij Doelen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html) voor meer informatie.
+Raadpleeg voor meer informatie de [Doelen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 Nadat de Bestemming is gevormd, leidt Adobe Experience Platform tot een lusje-afgebakend .txt of .csv- dossier in de opslagplaats die u verstrekte. Deze bewerking is gepland en wordt één keer per 24 uur uitgevoerd.
 
@@ -34,7 +34,7 @@ U kunt nu een Campaign Classic-workflow configureren om het segment in te voeren
 
 Zodra Campaign Classic is gevormd als Bestemming, moet u een specifieke werkschema bouwen om het dossier in te voeren dat door Adobe Experience Platform is uitgevoerd.
 
-Om dit te doen, moet u een **[!UICONTROL File transfer]** activiteit toevoegen en vormen. Raadpleeg [deze sectie](../../workflow/using/file-transfer.md) voor meer informatie over het configureren van deze activiteit.
+Om dit te doen, moet u toevoegen en vormen a **[!UICONTROL File transfer]** activiteit. Voor meer op hoe te om deze activiteit te vormen, verwijs naar [deze sectie](../../workflow/using/file-transfer.md).
 
 ![](assets/rtcdp-file-transfer.png)
 

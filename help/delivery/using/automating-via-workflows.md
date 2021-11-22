@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Het maken, bewerken en publiceren van inhoud kan worden geautomatiseerd met behulp van een workflow die via de Adobe Campaign-clientinterface is geconfigureerd.
 
-De activiteit **Inhoudsbeheer** is toegankelijk via de werkbalk **[!UICONTROL Tools]** van het werkstroomdiagram.
+De **Inhoudsbeheer** activiteit is toegankelijk via de **[!UICONTROL Tools]** werkbalk van het werkstroomdiagram.
 
 Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
@@ -74,7 +74,7 @@ Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
 ### Transition {#transition}
 
-Met de optie **Een uitvoerovergang genereren** kunt u een uitvoerovergang toevoegen aan de activiteit **[!UICONTROL Content management]** om een nieuwe activiteit te koppelen aan de uitvoering van de workflow. Nadat u deze optie hebt ingeschakeld, voert u een label voor de overgang in.
+De **Een uitvoerovergang genereren** kunt u een uitvoerovergang toevoegen aan de **[!UICONTROL Content management]** activiteit om een nieuwe activiteit met werkschemauitvoering te verbinden. Nadat u deze optie hebt ingeschakeld, voert u een label voor de overgang in.
 
 ## Voorbeelden {#examples}
 
@@ -90,7 +90,7 @@ De inhoud wordt geconfigureerd via de activiteit &quot;Inhoudsbeheer&quot;:
 
 Er wordt een nieuwe instantie van de inhoud gemaakt via het publicatiemodel en de map met de inhoudstekenreeks.
 
-In ons voorbeeld hebben we het bezorgingsonderwerp overbelast. Er wordt rekening mee gehouden in plaats van de in de sjabloon **[!UICONTROL Delivery]** ingevoerde waarde.
+In ons voorbeeld hebben we het bezorgingsonderwerp overbelast. In plaats van de in de **[!UICONTROL Delivery]** sjabloon.
 
 De inhoud wordt automatisch ingevuld door een XML-feed die afkomstig is van de ingevoerde URL:
 
@@ -103,7 +103,7 @@ De inhoud wordt automatisch ingevuld door een XML-feed die afkomstig is van de i
 </book>
 ```
 
-De gegevensindeling komt niet overeen met het gegevensschema dat is ingevoerd in de publicatiesjabloon (**cus:book** in ons voorbeeld); het **`<section>`**-element moet worden vervangen door het **`<chapter>`**-element. We moeten de stijlpagina &quot;cus:book-workflow.xsl&quot; toepassen om de benodigde wijzigingen aan te brengen.
+De gegevensindeling komt niet overeen met het gegevensschema dat is ingevoerd in de publicatiesjabloon (**focus:boek** in ons voorbeeld); de **`<section>`** moet worden vervangen door de **`<chapter>`** element. We moeten de stijlpagina &quot;cus:book-workflow.xsl&quot; toepassen om de benodigde wijzigingen aan te brengen.
 
 Broncode van de gebruikte XSLT-stijlpagina:
 
@@ -142,11 +142,11 @@ Broncode van de gebruikte XSLT-stijlpagina:
 
 De laatste actie van de activiteit is het opslaan van het inhoudsexemplaar en doorgaan naar de volgende taak.
 
-Het richten wordt uitgevoerd via **Vraag** activiteit.
+De gerichte acties worden uitgevoerd via de **Query** activiteit.
 
-Er is een **AND-join**-activiteit toegevoegd om ervoor te zorgen dat de levering pas wordt gestart als het zoeken naar doelen en het bijwerken van de inhoud zijn voltooid.
+An **AND-join** Er is activiteit toegevoegd om ervoor te zorgen dat de levering pas wordt gestart als het zoeken naar doelen en het bijwerken van de inhoud zijn voltooid.
 
-De leveringsactie wordt gevormd via **Levering** activiteit:
+De leveringsactie wordt gevormd via **Aflevering** activiteit:
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -166,13 +166,13 @@ In dit voorbeeld wordt een inhoudsblok gemaakt en wordt de bestandspublicatie na
 
 ![](assets/d_ncs_content_workflow5.png)
 
-Met de eerste **Inhoudsbeheer**-taak wordt een inhoudsinstantie gemaakt.
+De eerste **Inhoudsbeheer** maakt een instantie van de inhoud.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->Het tabblad **[!UICONTROL Publication]** van het venster met transformatiesjablonen moet worden gevuld met de locatie van het te genereren doel.
+>De **[!UICONTROL Publication]** tabblad van het venster met transformatiesjablonen moet worden gevuld met de locatie van het te genereren doel.
 
 Een wachtende activiteit wordt toegevoegd om de volgende overgang voor een week te pauzeren.
 
@@ -188,7 +188,7 @@ De te publiceren inhoud wordt ingevoerd via de inkomende overgang.
 
 De laatste actie bestaat uit het genereren van deze inhoud door de publicatiedirectory te forceren.
 
-Met de activiteit **JavaScript Code** wordt de volledige naam van elk gegenereerd bestand opgehaald.
+De **JavaScript-code** de activiteit wint de volledige naam van elk geproduceerd dossier terug.
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -198,11 +198,11 @@ In dit voorbeeld wordt hetzelfde concept gebruikt als in het eerste voorbeeld, a
 
 ![](assets/d_ncs_content_workflow10.png)
 
-De eerste **Create levering** taak leidt tot de leveringsactie.
+De eerste **Levering maken** De taak leidt tot de leveringsactie.
 
 Met de vorkactiviteit kunt u de doelberekening starten en de inhoudsinstantie parallel maken.
 
-Nadat de taken zijn uitgevoerd, activeert het vak AND-join de taak **Delivery** om de eerder gemaakte levering op inhoud en doelgericht te starten.
+Zodra de taken zijn uitgevoerd, activeert EN-toets doos **Aflevering** taak om de eerder gemaakte levering van inhoud en het richten te lanceren.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -228,11 +228,11 @@ Inhoudsgegevens kunnen worden bijgewerkt in de modus &quot;semi-automatisch&quot
 
 De activering van gegevensherstel wordt handmatig uitgevoerd via het invoerformulier.
 
-Het doel is een **editBtn** type **`<input>`** gebied in de vorm te verklaren. Dit besturingselement bestaat uit een bewerkingszone en een knop om de verwerking te starten.
+Het doel is een **editBtn** type **`<input>`** in het formulier. Dit besturingselement bestaat uit een bewerkingszone en een knop om de verwerking te starten.
 
 In de bewerkingszone kunt u variabele gegevens vullen die worden gebruikt om de URL van de XML-feed met gegevens te maken die moeten worden opgehaald.
 
-De knoop voert **GetAndTransform** de methode van de ZEEP uit die onder de **`<input>`** markering wordt bevolkt.
+De knop voert het **GetAndTransform** SOAP-methode gevuld onder de map **`<input>`** tag.
 
 De controleverklaring is als volgt:
 
@@ -248,7 +248,7 @@ De controleverklaring is als volgt:
 </input>
 ```
 
-De methode **GetAndTransform** moet worden gedeclareerd onder het element **`<enter>`** van de tag **`<input>`**. Deze tag gebruikt als parameters de URL voor het herstellen van XML-gegevens van een dynamisch geconstrueerde expressie. De tweede parameter van de functie is optioneel en verwijst naar een opmaakmodel dat wordt gebruikt voor een tussenliggende transformatie wanneer de inkomende XML-gegevens niet in dezelfde indeling staan als de inhoud.
+De **GetAndTransform** methode moet worden gedeclareerd in het kader van de **`<enter>`** van het **`<input>`** tag. Deze tag gebruikt als parameters de URL voor het herstellen van XML-gegevens van een dynamisch geconstrueerde expressie. De tweede parameter van de functie is optioneel en verwijst naar een opmaakmodel dat wordt gebruikt voor een tussenliggende transformatie wanneer de inkomende XML-gegevens niet in dezelfde indeling staan als de inhoud.
 
 De uitvoer werkt de inhoud bij op basis van het pad dat in de laatste parameter is ingevoerd.
 

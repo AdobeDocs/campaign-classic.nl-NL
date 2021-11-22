@@ -23,9 +23,9 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!AVAILABILITY]
 >
->* De materialen van de hulp in deze inzameling zijn op Campaign Classic v7 in zijn [recentste bouwstijl](../../rn/using/latest-release.md) van toepassing. Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
+>* De materialen van de hulp in deze inzameling zijn op Campaign Classic v7 in zijn van toepassing [nieuwste build](../../rn/using/latest-release.md). Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
 >
->* Adobe Campaign v8-documentatie is [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html) beschikbaar.
+>* Adobe Campaign v8-documentatie is beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=nl).
 
 
 ![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](#video)
@@ -96,4 +96,4 @@ In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Cla
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

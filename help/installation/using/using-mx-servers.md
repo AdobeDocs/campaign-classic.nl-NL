@@ -34,7 +34,7 @@ Wanneer u een e-mail verzendt, zal de softwareserver een verbinding met de ontva
 
 In het verbindingsprotocol moeten de regels worden gerespecteerd om spamming en monopolisering van servers te voorkomen. De belangrijkste zijn de volgende:
 
-* **Maximum aantal toegestane** verbindingen: Wanneer dit aantal wordt gerespecteerd, zijn IPs niet op de lijst van gewezen personen en e-mails worden niet geweigerd wegens extra verbindingen.
+* **Maximum aantal toegestane verbindingen**: Wanneer dit aantal wordt gerespecteerd, zijn IPs niet op de lijst van gewezen personen en e-mails worden niet geweigerd wegens extra verbindingen.
 * **Maximum aantal berichten**: Tijdens de verbinding moet het aantal berichten worden gedefinieerd dat mag worden verzonden. Als dit aantal niet wordt bepaald, zal de server zo veel mogelijk verzenden. Dit resulteert in wordt geïdentificeerd als spammer en wordt toegevoegd aan de lijst van gewezen personen door ISP.
 * **Berichten per uur**: Adobe Campaign bepaalt het aantal e-mailberichten dat uw IP&#39;s per uur kunnen verzenden om aan uw e-reputatie te voldoen. Dit systeem beschermt u tegen e-mailweigering of lijst van gewezen personen.
 
@@ -48,7 +48,7 @@ Dit is het proces dat Adobe Campaign gebruikt om fouten tijdens servercommunicat
 
 Het foutenadres zal stuitingen verwerken die door ISPs worden teruggestuurd. Het proces zal verschillende SMTP foutencodes analyseren en de juiste actie volgens de norm toepassen RegEx.
 
-Bijvoorbeeld, heeft een e-mailadres terugkoppelen &quot;550 Gebruiker Onbekend&quot;die door ISP wordt verzonden. Deze foutcode wordt verwerkt door het Adobe Campaign-foutadres (Retournpath-adres). Deze fout wordt dan vergeleken met de norm RegEx en de juiste regel zal van toepassing zijn. Het e-mailbericht wordt beschouwd als een *Hard stuiteren* (overeenkomend met het type) en vervolgens *Gebruiker onbekend* (overeenkomend met de reden) en in quarantaine geplaatst na de eerste lus in het systeem.
+Bijvoorbeeld, heeft een e-mailadres terugkoppelen &quot;550 Gebruiker Onbekend&quot;die door ISP wordt verzonden. Deze foutcode wordt verwerkt door het Adobe Campaign-foutadres (Retournpath-adres). Deze fout wordt dan vergeleken met de norm RegEx en de juiste regel zal van toepassing zijn. Het e-mailadres wordt beschouwd als een *Hard stuiteren* (overeenkomend met het type) en vervolgens *Gebruiker onbekend* (die de reden aanpast) en in quarantaine geplaatst na de eerste lus in het systeem.
 
 ### Hoe beheert Adobe Campaign het?
 
@@ -62,7 +62,7 @@ Adobe Campaign beheert dit proces met een overeenkomst tussen een fouttype en ee
 
 >[!NOTE]
 >
->Meer over de types en de redenen van de leveringsmislukking leren, verwijs naar dit [sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Om meer over de types en de redenen van de leveringsmislukking te leren, verwijs naar dit [sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Deliberability-instantie
 
@@ -78,12 +78,12 @@ De modus Aangepast is voor geavanceerde clients die hun eigen MX-regels willen i
 
 ## Stuitvoorbeelden
 
-* **Gebruiker onbekend**  (harde stuit): 550 5.1.1 ... Gebruiker is onbekend {mx003}
-* **Volledige**  postbus (zachte stuit): 550 5.2.2 Gebruikerquotum overschreden
-* **Inactieve postbus**  (soft bounce): 550 5.7.1 : Ontvangen adres: Inactive MailBox, niet langer dan 6 maanden opgevuld
-* **Domein ongeldig**  (soft bounce): DNS-query is mislukt voor &#39;ourdan.com&#39;
-* **Geweigerd**  (zachte stuit): Binnenkomende e-mailbounce (regel &#39;Feedback_loop_Hotmail&#39; komt overeen met deze stuit)
-* **Onbereikbaar**  (zachte stuit): 421 4.16.55  [TS01] Berichten van x.x.x.x tijdelijk uitgesteld wegens bovenmatige klachten van gebruikers
+* **Gebruiker onbekend** (harde stuit): 550 5.1.1 ... Gebruiker is onbekend {mx003}
+* **Postbus vol** (zachte stuit): 550 5.2.2 Gebruikerquotum overschreden
+* **Inactieve postbus** (zachte stuit): 550 5.7.1 : Ontvangen adres: Inactive MailBox, niet langer dan 6 maanden opgevuld
+* **Domein ongeldig** (zachte stuit): DNS-query is mislukt voor &#39;ourdan.com&#39;
+* **Geweigerd** (zachte stuit): Binnenkomende e-mailbounce (regel &#39;Feedback_loop_Hotmail&#39; komt overeen met deze stuit)
+* **Onbereikbaar** (zachte stuit): 421 4,16,55 [TS01] Berichten van x.x.x.x tijdelijk uitgesteld wegens bovenmatige gebruikersklachten
 
 **Verwante onderwerpen:**
 * [MX-configuratie](../../installation/using/email-deliverability.md#mx-configuration)

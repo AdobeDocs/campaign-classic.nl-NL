@@ -21,21 +21,21 @@ Adobe Campaign biedt een keuze uit drie hostingmodellen, die flexibiliteit en vr
 
 >[!NOTE]
 >
->Voor op Adobe gehoste omgevingen kunnen de hoofdinstallatie- en configuratiestappen alleen worden uitgevoerd door Adobe, zoals het configureren van de server en het aanpassen van configuratiebestanden voor instanties. Raadpleeg [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de belangrijkste verschillen tussen de implementatiemodi.
+>Voor op Adobe gehoste omgevingen kunnen de hoofdinstallatie- en configuratiestappen alleen door Adobe worden uitgevoerd, zoals het configureren van de server en het aanpassen van configuratiebestanden voor instanties. Meer over de belangrijkste verschillen tussen plaatsingswijzen leren, verwijs naar [deze pagina](../../installation/using/capability-matrix.md).
 
 ## Managed Services / Gehost
 
-Adobe Campaign kan worden geïmplementeerd als een beheerde service: alle componenten van Adobe Campaign, inclusief de gebruikersinterface, de uitvoeringsbeheerengine en de Campagne-database van de klant, worden volledig gehost door Adobe, zoals het uitvoeren van e-mail, het spiegelen van pagina&#39;s, de trackingserver en extern opvallende webcomponenten, zoals het afmelden van pagina&#39;s/voorkeurscentrum en bestemmingspagina&#39;s.
+Adobe Campaign kan as a Managed Service worden geïmplementeerd: alle componenten van Adobe Campaign, inclusief de gebruikersinterface, de uitvoeringsbeheerengine en de Campagne-database van de klant, worden volledig gehost door Adobe, inclusief e-mailuitvoering, spiegelpagina&#39;s, traceringsserver en extern opvallende webcomponenten, zoals pagina/voorkeurscentrum voor afmelden en bestemmingspagina&#39;s.
 
 ![](assets/deployment_hosted.png)
 
 Als ontvangen klant, worden de meeste installatie en configuratiestappen uitgevoerd door Adobe. U kunt de volgende secties openen om uw implementatie aan te passen:
 
-* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Raadpleeg [voor transactieberichten deze sectie](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* De clientconsole installeren: zie [deze sectie](../../installation/using/installing-the-client-console.md).
-* Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor de levering de [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
-* Campagneopties configureren: zie [deze sectie](../../installation/using/configuring-campaign-options.md).
-* CRM-connectors configureren: zie [deze sectie](../../platform/using/crm-connectors.md).
+* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Voor transactieberichten raadpleegt u [aan deze sectie](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* De clientconsole installeren: doorverwijzen [aan deze sectie](../../installation/using/installing-the-client-console.md).
+* Lees voor meer informatie over de gereedschappen en de beste werkwijzen van de leverancier [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
+* Campagneopties configureren: doorverwijzen [aan deze sectie](../../installation/using/configuring-campaign-options.md).
+* CRM-connectors configureren: doorverwijzen [aan deze sectie](../../platform/using/crm-connectors.md).
 
 ## Op locatie
 
@@ -43,15 +43,15 @@ Adobe Campaign kan op locatie worden geïmplementeerd: alle onderdelen van Adobe
 
 ![](assets/deployment_onpremise.png)
 
-Als klant op locatie, alvorens te beginnen met het implementeren van Campaign Classic, zorg dan voor de volgende voorwaarden en aanbevelingen:
+Als klant op locatie, alvorens met het implementeren van Campaign Classic te beginnen, zorg dan voor de volgende voorwaarden en aanbevelingen:
 
-* Lees de [Compatibility matrix](../../rn/using/compatibility-matrix.md) die alle versies van de systemen en componenten bevat die voor Adobe Campaign worden ondersteund.
-* Afhankelijk van uw milieu, lees uit [eerste vereisten voor Vensters ](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) en [eerste vereisten voor Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
-* Leer aanbevelingen met betrekking tot gegevensbestandmotoren [in deze sectie](../../installation/using/database.md).
+* Lees de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) die alle versies bevat van de systemen en componenten die worden ondersteund voor Adobe Campaign.
+* Lees, afhankelijk van uw omgeving, de [voorwaarden voor Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) en [voorwaarden voor Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
+* Meer informatie over databasemotoren [in deze sectie](../../installation/using/database.md).
 * Controleer of de vereiste databasetoegangslagen op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account. [Meer info](../../installation/using/application-server.md).
-* Vorm uw netwerken aangezien sommige processen met anderen moeten communiceren of tot LAN en Internet toegang hebben. Dit betekent dat sommige havens van TCP voor deze processen open moeten zijn. [Leer ](../../installation/using/network-configuration.md) meer over de configuratievereisten van het Netwerk.
-* Lees [Controlelijst voor beveiliging en privacy van campagne](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
-* Raadpleeg de algemene richtlijnen voor het schatten van de hardwarevereisten voor on-premise implementatie [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
+* Vorm uw netwerken aangezien sommige processen met anderen moeten communiceren of tot LAN en Internet toegang hebben. Dit betekent dat sommige havens van TCP voor deze processen open moeten zijn. [Meer informatie](../../installation/using/network-configuration.md) over de configuratievereisten van het Netwerk.
+* Uitlezen [Checklist Campagne Security and Privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
+* Algemene richtlijnen controleren voor het schatten van hardwarevereisten voor implementatie op locatie [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybride
 
@@ -61,12 +61,12 @@ Wanneer de Adobe Campaign-oplossingssoftware als hybride model wordt geïmplemen
 
 Als hybride klant, worden de meeste installatie en configuratiestappen uitgevoerd door Adobe. U kunt de volgende secties openen om uw implementatie aan te passen:
 
-* Transactieberichten configureren: zie [deze sectie](../../message-center/using/transactional-messaging-architecture.md).
-* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Raadpleeg [voor transactieberichten deze sectie](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* De clientconsole installeren: zie [deze sectie](../../installation/using/installing-the-client-console.md).
-* Ingebouwde pakketten installeren: zie [deze sectie](../../installation/using/installing-campaign-standard-packages.md).
-* Leverbaarheid: configureren [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor de levering de [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
-* Campagneopties configureren: zie [deze sectie](../../installation/using/configuring-campaign-options.md).
-* Een externe database configureren (Federated Data Access): zie [deze sectie](../../installation/using/about-fda.md).
-* CRM-connectors configureren: zie [deze sectie](../../platform/using/crm-connectors.md).
-* Raadpleeg [deze sectie](../../installation/using/mid-sourcing-deployment.md) voor meer informatie over implementatiebeginselen voor midsourcing.
+* Transactieberichten configureren: doorverwijzen [aan deze sectie](../../message-center/using/transactional-messaging-architecture.md).
+* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Voor transactieberichten raadpleegt u [aan deze sectie](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* De clientconsole installeren: doorverwijzen [aan deze sectie](../../installation/using/installing-the-client-console.md).
+* Ingebouwde pakketten installeren: doorverwijzen [aan deze sectie](../../installation/using/installing-campaign-standard-packages.md).
+* Leverbaarheid: vormen [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de beste werkwijzen van de leverancier [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
+* Campagneopties configureren: doorverwijzen [aan deze sectie](../../installation/using/configuring-campaign-options.md).
+* Een externe database configureren (Federated Data Access): doorverwijzen [aan deze sectie](../../installation/using/about-fda.md).
+* CRM-connectors configureren: doorverwijzen [aan deze sectie](../../platform/using/crm-connectors.md).
+* Raadpleeg voor meer informatie over implementatiebeginselen voor midsourcing de [aan deze sectie](../../installation/using/mid-sourcing-deployment.md).

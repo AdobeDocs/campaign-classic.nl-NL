@@ -17,12 +17,12 @@ ht-degree: 6%
 
 ![](../../assets/v7-only.svg)
 
-Met de **[!UICONTROL Managing social networks]**-workflows die via het knooppunt **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** kunnen worden geopend, kunt u Adobe Campaign synchroniseren met Twitter en Facebook.
+De **[!UICONTROL Managing social networks]** workflows, die toegankelijk zijn via de **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** kunt u Adobe Campaign synchroniseren met Twitter en Facebook.
 
-De eerste keer dat u Sociale marketing gebruikt, worden deze workflows standaard gestopt. Start ze door op de knop **[!UICONTROL Start]** op de werkbalk te klikken.
+De eerste keer dat u Sociale marketing gebruikt, worden deze workflows standaard gestopt. Begin ze door op de knop **[!UICONTROL Start]** in de werkbalk.
 
 ![](assets/social_start_workflows.png)
 
-Als er één sociaal netwerk is dat u niet wilt gebruiken, adviseren wij om niet de passende werkschema&#39;s te beginnen. Als u wilt voorkomen dat een waarschuwing wordt ontvangen dat productiewerkstromen worden gestopt, selecteert u het prioriteitsniveau **[!UICONTROL Normal]** op het tabblad **[!UICONTROL Execution]** van de eigenschappen van de betreffende workflows.
+Als er één sociaal netwerk is dat u niet wilt gebruiken, adviseren wij om niet de passende werkschema&#39;s te beginnen. Als u wilt voorkomen dat u een waarschuwing krijgt dat productiewerkstromen worden gestopt, selecteert u het ernstniveau **[!UICONTROL Normal]** in de **[!UICONTROL Execution]** tabblad van de eigenschappen van de betreffende workflows.
 
 ![](assets/social_start_workflows2.png)

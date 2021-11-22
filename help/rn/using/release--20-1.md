@@ -173,7 +173,7 @@ _17 februari 2020_
 
 * Probleem verholpen bij het voorvertonen van een geïmporteerde lijst in een queryactiviteit van een rapport. (NEO-13119)
 
-* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer u het dialoogvenster **Aangedreven door campagne** personaliseringsblok in de e-maileditor.
+* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer u het dialoogvenster **Aangedreven door campagne** personaliseringsblok in de e-mailredacteur.
 
 * De netwerkcommunicatie tussen de client en de server is verbeterd.
 

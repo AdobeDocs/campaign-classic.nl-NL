@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-Voor een bestaande **prod** instantie in Linux/PostgreSQL, zijn de stappen voor omschakeling aan unicode als volgt:
+Voor bestaande **prod** In Linux/PostgreSQL zijn de stappen voor het schakelen naar unicode als volgt:
 
 1. Stop de processen die naar de database schrijven:
 
@@ -60,7 +60,7 @@ Voor een bestaande **prod** instantie in Linux/PostgreSQL, zijn de stappen voor 
    vi config-prod.xml
    ```
 
-   Voeg het **u** karakter vóór de waarde met betrekking tot het gegevensbestandherkenningsteken (**databaseId**) toe:
+   Voeg de **u** vóór de waarde met betrekking tot de database-id (**databaseId**):
 
    ```
    <web>
@@ -97,5 +97,5 @@ Voor een bestaande **prod** instantie in Linux/PostgreSQL, zijn de stappen voor 
 
 1. Bevestig de schakelaar. Hiervoor maakt u verbinding via de Adobe Campaign-console en:
 
-   * controleert u of de gegevens correct worden weergegeven, met name de tekens met accent:
+   * controleren of de gegevens correct worden weergegeven, met name de tekens waarvoor de accentuatie is toegestaan:
    * start een levering en controleer of de opzoekfunctie voor bijhouden werkt.

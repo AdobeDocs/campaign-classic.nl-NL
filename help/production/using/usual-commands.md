@@ -23,12 +23,12 @@ De opdracht **nlserver** is de invoeropdracht voor de hele Adobe Campaign-toepas
 
 Deze opdracht heeft de volgende syntaxis: **nlserver **`<command>`****`<arguments>`****
 
-De parameter **`<command>`** beantwoordt aan de module.
+De parameter **`<command>`** komt overeen met de module.
 
 >[!NOTE]
 >
->* In elk geval, kunt u **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
->* Omgekeerd, kunt u het argument **-verbose** toevoegen om meer informatie te tonen.
+>* In elk geval kunt u de opdracht **-noconsole** argument om opmerkingen te verwijderen die worden weergegeven wanneer de modules zijn gestart.
+>* Omgekeerd kunt u het argument toevoegen **-verbose** voor meer informatie.
 
 >
 
@@ -37,9 +37,9 @@ De parameter **`<command>`** beantwoordt aan de module.
 
 >[!NOTE]
 >
->Als u alle modules wilt weergeven, moet u de opdracht **nlserver pdump** gebruiken.
+>Om van alle modules een lijst te maken, moet u gebruiken **nlserver pdump** gebruiken.
 
-U kunt de parameter **-who** toevoegen om van de lopende verbindingen (gegevensbestand en toepassing) een lijst te maken.
+U kunt de parameter toevoegen **-who** om een lijst weer te geven van de lopende verbindingen (database en toepassing).
 
 ```
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Een andere handige opdracht is **nlserver monitor**. Het bevat het XML-bestand voor controle (verkregen in de Adobe Campaign-client of via de webpagina **monitor.jsp**).
+Een andere handige opdracht is **nlserver-monitor**. Het bevat een lijst met XML-controlebestanden (verkregen in de Adobe Campaign-client of via de **monitor.jsp** webpagina).
 
-U kunt de parameter **-missing** toevoegen om van de ontbrekende modules (fout in modules, modules sluiten, enz.) een lijst te maken
+U kunt de parameter toevoegen **-missing** om de ontbrekende modules (fout in modules, modules gesloten, enz.) op te nemen
 
 ```
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** komt overeen met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden of  **** standaardinstellingen voor monoinstantiemodules.
+>**`<instance>`** overeenkomt met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden, of **default** voor mono-instantiemodules.
 
 ## Afsluiten van services {#shut-down-services}
 
@@ -129,7 +129,7 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
       >[!NOTE]
       >
-      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
    * In Windows: netwerkbeginserver6
 
@@ -137,9 +137,9 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
 ## Het configuratiebevel {#the-config-command}
 
-Met de opdracht **config** kunt u de serverconfiguratie beheren, inclusief de herconfiguratie van de databaseverbinding.
+De **config** Met deze opdracht kunt u de serverconfiguratie beheren, inclusief de herconfiguratie van de databaseverbinding.
 
-Gebruik **config** bevel van **nlserver** uitvoerbaar dossier met **-setdblogin** parameter.
+Gebruik de **config** de **nlserver** uitvoerbaar bestand met de **-setdblogin** parameter.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Voer het wachtwoord in.
 
-Het **internal** wachtwoord wijzigen: **nlserver config -internalpassword**
+Als u het dialoogvenster **internal** wachtwoord: **nlserver config - intern wachtwoord**
 
 >[!IMPORTANT]
 >
->Als u zich wilt aanmelden met de **Internal**-id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
+>Als u zich wilt aanmelden met de **Intern** id, moet u vooraf een wachtwoord hebben bepaald. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 >[!NOTE]
 >
->* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u **config** bevel gebruiken
->* Om de lijst van parameters te krijgen, gebruik **-?** parameter:  **nlserver config -?**
+>* In het algemeen kunt u in plaats van de configuratiebestanden handmatig te wijzigen de opdracht **config** command
+>* Als u de lijst met parameters wilt ophalen, gebruikt u de opdracht **-?** parameter: **nlserver config -?**
 >* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver

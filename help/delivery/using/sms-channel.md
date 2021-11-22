@@ -34,12 +34,12 @@ De belangrijkste stappen om SMS te verzenden zijn als volgt:
 * [SMS verzenden, controleren en volgen](sms-send.md)
 * [Problemen oplossen](troubleshooting-sms.md)
 
-Bovendien moet u met het protocol en de montages van SMS vertrouwd zijn. Doorloop de verbindingsinstelling die is ingesteld tussen Adobe Campaign en een SMPP-provider in [dit document](sms-protocol.md)
+Bovendien moet u met het protocol en de montages van SMS vertrouwd zijn. Doorloop de verbindingsinstelling tussen Adobe Campaign en een SMPP-provider in [dit document](sms-protocol.md)
 
 Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Met Adobe Campaign kunt u ook berichten verzenden op mobiele terminals via de optie **Adobe Campaign Mobile App Channel (NMAC)**.
+>Met Adobe Campaign kunt u ook via de **Adobe Campaign Mobile App Channel (NMAC)** optie.
 > 
->Raadpleeg voor meer informatie de sectie [Aan de slag met mobiel toepassingskanaal](about-mobile-app-channel.md).
+>Raadpleeg voor meer informatie de [Aan de slag met mobiel toepassingskanaal](about-mobile-app-channel.md) sectie.

@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ![](../../assets/common.svg)
 
-De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Besturingselement van de aanbiedingsengine met uitvoeringsinstantie**.
+De hieronder beschreven workflow wordt geïnstalleerd met de **Besturing van de aanbiedingsengine met uitvoeringsinstantie** module standaard.
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Besturi
   <tr> 
    <td> <span class="uicontrol">Propositiesynchronisatie</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die wordt gebruikt voor interacties.<br /> </td> 
+   <td> Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die voor interacties wordt gebruikt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

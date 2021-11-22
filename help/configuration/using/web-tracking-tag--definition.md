@@ -79,8 +79,7 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Leverings-id die moet worden gebruikt als er geen sessiecookie is. Deze waarde moet
-                                 uitgedrukt in hexadecimaal.
+                              <p>Leverings-id die moet worden gebruikt als er geen sessiecookie is. Deze waarde moet worden uitgedrukt in hexadecimale waarden.
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter die wordt gebruikt om de internetgebruiker te identificeren. De notatie van deze parameter is "name=value",
-                                 waarbij de naam een veld van het ontvangende schema is. Deze parameter heeft voorrang op
-                                 de id in het sessiecookie.
+                              <p>Parameter die wordt gebruikt om de internetgebruiker te identificeren. De indeling van deze parameter is "name=value", waarbij de naam een veld is van het ontvangende schema. Deze parameter heeft voorrang op het herkenningsteken in het zittingskoekje.
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
 
 De volgende methoden zijn mogelijk:
 
-* De URL invoegen in het **&quot;src&quot;**-kenmerk van een HTML **`<img>`**-tag die is opgenomen in de webpagina die u wilt bijhouden.
+* De URL invoegen in het dialoogvenster **&quot;src&quot;** kenmerk van een HTML **`<img>`** -tag wordt opgenomen in de webpagina die u wilt bijhouden.
 * Directe aanroep naar de omleidingsserver wanneer de webpagina die u wilt bijhouden, wordt gegenereerd.

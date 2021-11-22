@@ -22,14 +22,14 @@ Adobe Campaign kan alleen publicaties naar Facebook walls verzenden als u de sch
 1. Maak een Facebook-account met een of meer pagina&#39;s.
 1. Maak een Facebook-testpagina voor het verzenden van proefdrukken.
 1. Een Facebook-applicatie maken.
-1. Voer de Facebook-toepassingsinstellingen in Adobe Campaign in op de externe account **[!UICONTROL Facebook routing]**.
+1. Voer de instellingen van de Facebook-toepassing in in Adobe Campaign, in het dialoogvenster **[!UICONTROL Facebook routing]** externe rekening.
 
 ## Vereisten {#prerequisites}
 
 Begin door een Facebook-account en meerdere pagina&#39;s te maken: deze zullen worden gebruikt voor de verzending van publicaties .
 
-* Als u een Facebook-account wilt maken, gebruikt u de koppeling [https://www.facebook.com](https://www.facebook.com).
-* Als u een Facebook-pagina wilt maken, gebruikt u de koppeling [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create).
+* Als u een Facebook-account wilt maken, gebruikt u de [https://www.facebook.com](https://www.facebook.com) koppeling.
+* Als u een Facebook-pagina wilt maken, gebruikt u de opdracht [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create) koppeling.
 
    We raden je aan om hetzelfde Facebook-account te gebruiken voor het beheer van al je pagina&#39;s. Op deze manier hebt u slechts één Facebook-toepassing en één externe account nodig om op alle pagina&#39;s van de account te schrijven.
 
@@ -37,12 +37,12 @@ Begin door een Facebook-account en meerdere pagina&#39;s te maken: deze zullen w
 
 ## Een Facebook-testpagina maken {#creating-a-test-facebook-page}
 
-We raden u aan een persoonlijke Facebook-pagina te maken voor het afleveren van proefdrukken (zie [De proefdruk verzenden](../../social/using/publishing-on-facebook.md#sending-the-proof) voor meer informatie.
+We raden u aan een persoonlijke Facebook-pagina te maken voor het afleveren van proefdrukken (zie voor meer informatie hierover [De proefdruk verzenden](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Meld u aan bij de Facebook-account waarmee u uw pagina&#39;s beheert.
 1. Maak een nieuwe Facebook-pagina.
 1. Klik op de knop **[!UICONTROL Settings]** in de rechterbovenhoek.
-1. Wijzig op het tabblad **[!UICONTROL General]** de zichtbaarheidsparameters van de pagina: Schakel het selectievakje **[!UICONTROL Page unpublished]** in.
+1. In de **[!UICONTROL General]** wijzigt u de zichtbaarheidsparameters van de pagina: controleren **[!UICONTROL Page unpublished]** doos.
 1. Klik op de knop **[!UICONTROL Save Changes]**.
 
 ![](assets/social_facebook_test_page.png)
@@ -58,21 +58,21 @@ Adobe Campaign kan alleen op de wanden van uw pagina&#39;s publiceren als u een 
    >
    >Afhankelijk van het type account dat u hebt, kunnen een of meer machtigingen nodig zijn.
    >
-   >Als u een Facebook-toepassing wilt maken, hebt u een **geverifieerde** Facebook-account nodig.
+   >Als u een Facebook-toepassing wilt maken, hebt u een **geverifieerd** Facebook-account.
 
 1. Klik op de knop **[!UICONTROL Add a New App]** in de rechterbovenhoek van de pagina. Voer een toepassingsnaam en een e-mailbericht met contactgegevens in en geef vervolgens de beveiligingscontrole door.
 
    ![](assets/social_create_facebook_app_002.png)
 
-1. Klik onder **[!UICONTROL Settings > Basic]** op **[!UICONTROL Add a platform]** en selecteer het type **[!UICONTROL Facebook Web Games]**.
+1. Onder **[!UICONTROL Settings > Basic]**, klikt u op **[!UICONTROL Add a platform]** en selecteert u de **[!UICONTROL Facebook Web Games]** type.
 
    ![](assets/social_create_facebook_app_003.png)
 
-1. Controleer in de sectie **[!UICONTROL Products]** in het linkermenu of u het product **[!UICONTROL Facebook Login]** ziet. Als dat niet het geval is, voegt u een nieuw product toe en selecteert u **[!UICONTROL Facebook Login]**.
+1. In de **[!UICONTROL Products]** in het linkermenu controleren of de **[!UICONTROL Facebook Login]** product. Als dat niet het geval is, voegt u een nieuw product toe en selecteert u **[!UICONTROL Facebook Login]**.
 
    ![](assets/social_create_facebook_app_003bis.png)
 
-1. Nadat de toepassing is gemaakt, selecteert u het tabblad **[!UICONTROL App Review]** en publiceert u de toepassing.
+1. Als de toepassing eenmaal is gemaakt, selecteert u de optie **[!UICONTROL App Review]** en publiceert u de toepassing.
 
    ![](assets/social_create_facebook_app_004.png)
 
@@ -86,19 +86,19 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
 >
 >De Adobe Campaign-exploitant moet beheerrechten hebben om deze configuratie uit te voeren.
 
-* **Facebook**: Selecteer de eerder gemaakte toepassing (  [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) en selecteer het  **[!UICONTROL Settings > Basic]** tabblad.
+* **Facebook**: Selecteer de eerder gemaakte toepassing ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) en selecteert u de **[!UICONTROL Settings > Basic]** tab.
 
    ![](assets/social_facebook_external_account_002.png)
 
    >[!NOTE]
    >
-   >Als de **[!UICONTROL Facebook Web Games]** sectie niet verschijnt, klik **[!UICONTROL Add Platform]** knoop, bij de bodem van de pagina, en selecteer **[!UICONTROL Facebook Web Games]**.
+   >Als de **[!UICONTROL Facebook Web Games]** niet wordt weergegeven, klikt u op de knop **[!UICONTROL Add Platform]** onder aan de pagina en selecteert u **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**: Ga naar het  **[!UICONTROL Administration > Platform > External Accounts]** knooppunt van de structuur, selecteer de  **[!UICONTROL Facebook routing]** externe account en klik op het  **[!UICONTROL Connector]** tabblad.
+* **Adobe Campaign**: ga naar **[!UICONTROL Administration > Platform > External Accounts]** knoop van de boom, selecteer **[!UICONTROL Facebook routing]** externe account en klik op de knop **[!UICONTROL Connector]** tab.
 
    ![](assets/social_facebook_external_account_001.png)
 
-1. Kopieer in de Adobe Campaign-console het adres in het veld **[!UICONTROL Secure Canvas URL]** en plak het in het veld **[!UICONTROL Secure Web Games URL (https)]** in Facebook (in de sectie **[!UICONTROL Facebook Web Games]**).
+1. Kopieer in de Adobe Campaign-console het adres in het dialoogvenster **[!UICONTROL Secure Canvas URL]** veld en plak het in het **[!UICONTROL Secure Web Games URL (https)]** veld op Facebook (in het **[!UICONTROL Facebook Web Games]** ).
 
    ![](assets/social_facebook_external_account_006.png)
 
@@ -106,11 +106,11 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
    >
    >U mag in geen geval de onveilige URL gebruiken.
 
-   Kopieer en plak deze URL ook onder **[!UICONTROL Products]** > **[!UICONTROL Facebook Login]** > **[!UICONTROL Settings]** > **[!UICONTROL Valid OAuth Redirect URIs]**. Als u de geldigheid van de URL wilt controleren, slaat u de toepassing op, kopieert en plakt u de URL in het veld **[!UICONTROL Redirect URI to Check]** en klikt u op **[!UICONTROL Check URI]**.
+   Deze URL ook kopiëren en plakken onder **[!UICONTROL Products]** > **[!UICONTROL Facebook Login]** > **[!UICONTROL Settings]** > **[!UICONTROL Valid OAuth Redirect URIs]**. Als u de geldigheid van de URL wilt controleren, slaat u de toepassing op, kopieert en plakt u de URL in het dialoogvenster **[!UICONTROL Redirect URI to Check]** veld en klik op **[!UICONTROL Check URI]**.
 
    ![](assets/social_facebook_external_account_007bis.png)
 
-1. Kopieer in Facebook de inhoud van de velden **[!UICONTROL App ID]** en **[!UICONTROL App Secret]** en plak deze in de overeenkomende velden van de console.
+1. Kopieer in Facebook de inhoud van de **[!UICONTROL App ID]** en **[!UICONTROL App Secret]** en plak het in de overeenkomstige gebieden van de console.
 
    ![](assets/social_facebook_external_account_007.png)
 
@@ -119,15 +119,15 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
 
    >[!NOTE]
    >
-   >Het veld **[!UICONTROL Marketing URL]** is optioneel.
+   >De **[!UICONTROL Marketing URL]** veld is optioneel.
 
-1. Klik in de Adobe Campaign-console op de koppeling **[!UICONTROL Request the authorization from the application]** onder aan het tabblad **[!UICONTROL Connector]**. De **[!UICONTROL Synchronize Facebook pages]** workflow wordt automatisch geactiveerd en verzamelt alle Facebook-pagina&#39;s die door de beheerder worden beheerd. Raadpleeg [Facebook-pagina&#39;s synchroniseren](#synchronizing-facebook-pages) voor meer informatie.
+1. Klik in de Adobe Campaign-console op de knop **[!UICONTROL Request the authorization from the application]** koppeling onder aan **[!UICONTROL Connector]** tab. De **[!UICONTROL Synchronize Facebook pages]** de workflow wordt automatisch geactiveerd en verzamelt alle Facebook-pagina&#39;s die door de beheerder worden beheerd. Raadpleeg voor meer informatie hierover [Facebook-pagina&#39;s synchroniseren](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
    >[!NOTE]
    >
-   >Standaard worden de pagina&#39;s toegevoegd aan de servicemap **[!UICONTROL Facebook]**, die beschikbaar is via het knooppunt **[!UICONTROL Profiles and Targets > Services and Subscriptions]**. In het veld **[!UICONTROL Folder]** van het tabblad **[!UICONTROL Connector]** kunt u de servicemap wijzigen waarin de Facebook-pagina&#39;s na synchronisatie worden gemaakt. U kunt ook de Facebook-pagina&#39;s selecteren die u in Adobe Campaign wilt synchroniseren via het veld **[!UICONTROL Filter]**. Als u dit veld leeg laat, worden alle Facebook-pagina&#39;s die door de beheerder worden beheerd, gesynchroniseerd.
+   >Standaard worden de pagina&#39;s toegevoegd aan de **[!UICONTROL Facebook]** servicemap, beschikbaar via de **[!UICONTROL Profiles and Targets > Services and Subscriptions]** knooppunt. De **[!UICONTROL Folder]** van het **[!UICONTROL Connector]** kunt u de servicemap wijzigen waarin de Facebook-pagina&#39;s na synchronisatie worden gemaakt. U kunt ook de Facebook-pagina&#39;s selecteren die u in Adobe Campaign wilt synchroniseren dankzij de **[!UICONTROL Filter]** veld. Als u dit veld leeg laat, worden alle Facebook-pagina&#39;s die door de beheerder worden beheerd, gesynchroniseerd.
 
 1. Er wordt een dialoogvenster weergegeven met de verschillende Facebook-machtigingsinstellingen. Hiermee kan Adobe Campaign publicaties naar de Facebook-accountpagina&#39;s verzenden.
 
@@ -141,16 +141,16 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
 
 >[!NOTE]
 >
->Als de Facebook-account meerdere pagina&#39;s beheert, configureert u gewoon één externe account om op elke pagina van de Facebook-account te schrijven. Voor elke nieuwe Facebook-account moet u een nieuwe **[!UICONTROL Routing]**-type externe account maken.
+>Als de Facebook-account meerdere pagina&#39;s beheert, configureert u gewoon één externe account om op elke pagina van de Facebook-account te schrijven. Voor elke nieuwe Facebook-account moet je een nieuwe **[!UICONTROL Routing]** type external account.
 
-Met de **[!UICONTROL Synchronization of Facebook pages]**-workflow worden alle pagina&#39;s gesynchroniseerd die door de Facebook-account worden beheerd, zodat u rechtstreeks via Adobe Campaign op de muur kunt plaatsen. Raadpleeg [Facebook-pagina&#39;s synchroniseren](#synchronizing-facebook-pages) voor meer informatie.
+De **[!UICONTROL Synchronization of Facebook pages]** Met deze workflow synchroniseert u alle pagina&#39;s die door de Facebook-account worden beheerd, zodat u rechtstreeks via Adobe Campaign op de muur kunt plaatsen. Raadpleeg voor meer informatie hierover [Facebook-pagina&#39;s synchroniseren](#synchronizing-facebook-pages).
 
 ## Facebook-pagina&#39;s synchroniseren {#synchronizing-facebook-pages}
 
-Met de **[!UICONTROL Synchronization of Facebook pages]**-workflow, die toegankelijk is via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**-knooppunt, kunt u (in Adobe Campaign) de pagina&#39;s van de Facebook-account synchroniseren die eerder zijn geconfigureerd. Door gebrek, wordt dit werkschema gevormd om één keer per dag te lopen of wanneer een beheerder de **[!UICONTROL Request an authorization from the application]** verbinding in het scherm van de de dienstconfiguratie klikt (verwijs naar [Delend schrijf toegang aan Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
+De **[!UICONTROL Synchronization of Facebook pages]** workflow, die toegankelijk is via de **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** -knooppunt, kunt u (in Adobe Campaign) de pagina&#39;s synchroniseren van de Facebook-account die eerder is geconfigureerd. Deze workflow is standaard geconfigureerd om één keer per dag te worden uitgevoerd, of telkens wanneer een beheerder op de knop **[!UICONTROL Request an authorization from the application]** verbinding in het scherm van de de dienstconfiguratie (verwijs naar [Schrijftoegang delegeren aan Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
 
-Nadat de synchronisatie is voltooid, worden de verzamelde pagina&#39;s weergegeven in de servicemap die is ingevoerd in de externe account (zie [Schrijftoegang delegeren naar Adobe Campaign](#delegating-write-access-to-adobe-campaign)). Pagina&#39;s worden standaard toegevoegd aan de hoofdmap van de servicemap **[!UICONTROL Facebook]**, die beschikbaar is via het menu **[!UICONTROL Profiles and Targets > Services and subscriptions]**.
+Nadat de synchronisatie is voltooid, worden de verzamelde pagina&#39;s weergegeven in de servicemap die is ingevoerd in de externe account (raadpleeg de [Schrijftoegang delegeren aan Adobe Campaign](#delegating-write-access-to-adobe-campaign)). Standaard worden pagina&#39;s toegevoegd aan de hoofdmap van het dialoogvenster **[!UICONTROL Facebook]** servicemap die beschikbaar is via de **[!UICONTROL Profiles and Targets > Services and subscriptions]** -menu.
 
 ![](assets/social_facebook_service_002.png)
 
-U kunt nu rechtstreeks via Adobe Campaign publiceren op de wanden van uw Facebook-pagina&#39;s. Raadpleeg [Publiceren op Facebook](#publishing-on-facebook-walls) voor meer informatie.
+U kunt nu rechtstreeks via Adobe Campaign publiceren op de wanden van uw Facebook-pagina&#39;s. Raadpleeg voor meer informatie hierover [Publiceren op Facebook](#publishing-on-facebook-walls).

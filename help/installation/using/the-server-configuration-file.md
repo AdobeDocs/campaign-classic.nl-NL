@@ -17,13 +17,13 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-De algemene configuratie van Adobe Campaign wordt gedefinieerd in het bestand **serverConf.xml** in de map **conf** van de installatiemap. In deze sectie worden alle verschillende knooppunten en parameters van het bestand **serverConf.xml** weergegeven.
+De algemene configuratie van Adobe Campaign wordt gedefinieerd in het gedeelte **serverConf.xml** bestand, bevindt zich in het **conf** directory van de installatiemap. In deze sectie worden alle verschillende knooppunten en parameters van de **serverConf.xml** bestand.
 
 >[!NOTE]
 >
->De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties. De installatie- en configuratiestappen voor gehoste en hybride modellen worden beschreven in deze [sectie](../../installation/using/hosting-models.md).
+>De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Voor meer informatie over de verschillende implementaties raadpleegt u de [Hostmodellen](../../installation/using/hosting-models.md) van [deze pagina](../../installation/using/capability-matrix.md). De installatie- en configuratiestappen voor gehoste en hybride modellen worden in deze [sectie](../../installation/using/hosting-models.md).
 
-De eerste parameters bevinden zich binnen de **shared** knoop. Deze zijn gerelateerd aan het exemplaar. Deze worden mogelijk door alle nlserver-opdrachten gebruikt (nlserver, nlserver wfserver, enz.). De andere secties zijn verwant aan een specifiek nlserver sub-bevel.
+De eerste parameters bevinden zich in de **gedeeld** knooppunt. Deze zijn gerelateerd aan het exemplaar. Deze worden mogelijk door alle nlserver-opdrachten gebruikt (nlserver, nlserver wfserver, enz.). De andere secties zijn verwant aan een specifiek nlserver sub-bevel.
 
 **Gedeelde parameters**
 
@@ -63,7 +63,7 @@ De eerste parameters bevinden zich binnen de **shared** knoop. Deze zijn gerelat
 
 ## verificatie {#authentication}
 
-Hier zijn de verschillende parameters van **authentication** knoop:
+Hier zijn de verschillende parameters van **verificatie** knooppunt:
 
 <table> 
  <thead> 
@@ -77,7 +77,7 @@ Hier zijn de verschillende parameters van **authentication** knoop:
  <tbody> 
   <tr> 
    <td> checkIPConsistent<br /> </td> 
-   <td> IP adres controleren inschakelen.<br /> </td> 
+   <td> Controleren van IP-adressen inschakelen.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -90,25 +90,25 @@ Hier zijn de verschillende parameters van **authentication** knoop:
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
    <td> Time-out van lange sessies in seconden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1296000<br /> </td> 
   </tr> 
   <tr> 
    <td> securityTimeOutSec<br /> </td> 
    <td> Time-out beveiligingstoken in seconden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> sessionCacheSec<br /> </td> 
    <td> Cacheduur: cache van sessiegegevens in seconden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> sessionTimeOutSec<br /> </td> 
    <td> Time-out sessie in seconden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
  </tbody> 
@@ -116,7 +116,7 @@ Hier zijn de verschillende parameters van **authentication** knoop:
 
 ### XTK {#xtk}
 
-Hier volgen de verschillende parameters van de **verificatie > XTK**-node:
+Hier zijn de verschillende parameters van **verificatie > XTK** knooppunt:
 
 <table> 
  <thead> 
@@ -136,7 +136,7 @@ Hier volgen de verschillende parameters van de **verificatie > XTK**-node:
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> Veilige zone interne rekening: geoorloofde zone voor de interne account.<br /> </td> 
+   <td> Veilige zone interne rekening: zone met bevoegdheden voor de interne rekening.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
@@ -145,7 +145,7 @@ Hier volgen de verschillende parameters van de **verificatie > XTK**-node:
 
 ## dataStore {#datastore}
 
-Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de gegevensbronnen van de server gedefinieerd.
+Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden de gegevensbronnen van de server gedefinieerd.
 
 <table> 
  <thead> 
@@ -165,18 +165,18 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
   </tr> 
   <tr> 
    <td> extraSandboxDirectories<br /> </td> 
-   <td> Extra sandboxmappen: andere paden die in de sandbox moeten worden toegevoegd (door komma's gescheiden).<br /> </td> 
+   <td> Extra sandboxmappen: andere paden die in de sandbox moeten worden toegevoegd (gescheiden door coma's).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '/home/customer/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
    <td> Vertraging bij verlopen van formuliercache: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. O betekent dat cachemarangen alleen worden vernieuwd op het moment van publicatie.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
-   <td> hosts<br /> </td> 
+   <td> gastheren<br /> </td> 
    <td> DNS-maskers: lijst met DNS-maskers die in deze instantie worden gebruikt (gescheiden door komma's), kan * en ? patronen).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '*'<br /> </td> 
@@ -184,7 +184,7 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
    <td> Vertraging bij JSSP-cache van interactie: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -207,7 +207,7 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> Bewaar geheimen in Vault: gebruik Hashicorp Vault.<br /> </td> 
+   <td> Bewaar geheimen in Vault: Gebruik Hashicorp Vault.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -232,7 +232,7 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
    <td> Geldigheidsperiode van weergavecache: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -246,7 +246,7 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
 
 ### proxyAdjust {#proxyadjust}
 
-Hier zijn de verschillende parameters van **dataStore > proxyAdjust** knoop. URL&#39;s die overeenkomen met de reguliere expressie, worden opnieuw gegenereerd op basis van de URL die is gedefinieerd in urlBase.
+Hier zijn de verschillende parameters van **dataStore > proxyAdjust** knooppunt. URL&#39;s die overeenkomen met de reguliere expressie, worden opnieuw gegenereerd op basis van de URL die is gedefinieerd in urlBase.
 
 <table> 
  <thead> 
@@ -272,7 +272,7 @@ Hier zijn de verschillende parameters van **dataStore > proxyAdjust** knoop. URL
 
 ### dataSource {#datasource}
 
-Hier volgen de verschillende parameters van het knooppunt **dataStore > dataSource**.
+Hier zijn de verschillende parameters van **dataStore > dataSource** knooppunt.
 
 <table> 
  <thead> 
@@ -293,7 +293,7 @@ Hier volgen de verschillende parameters van het knooppunt **dataStore > dataSour
  </tbody> 
 </table>
 
-In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
+In de **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
 
 <table> 
  <thead> 
@@ -318,13 +318,13 @@ In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
    <td> </td> 
   </tr> 
   <tr> 
-   <td> encrypted<br /> </td> 
+   <td> gecodeerd<br /> </td> 
    <td> Gecodeerd wachtwoord<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> login<br /> </td> 
+   <td> aanmelden<br /> </td> 
    <td> Account<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> </td> 
@@ -348,7 +348,7 @@ In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
    <td> </td> 
   </tr> 
   <tr> 
-   <td> timezone<br /> </td> 
+   <td> tijdzone<br /> </td> 
    <td> Tijdzone: zie <a href="../../installation/using/time-zone-management.md" target="_blank">Tijdzonebeheer</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> </td> 
@@ -368,7 +368,7 @@ In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
  </tbody> 
 </table>
 
-Configureer de SQL-parameters in het knooppunt **dataStore > dataSource > sqlParams**:
+In de **dataStore > dataSource > sqlParams** knoop, vorm de SQL parameters:
 
 <table> 
  <thead> 
@@ -387,7 +387,7 @@ Configureer de SQL-parameters in het knooppunt **dataStore > dataSource > sqlPar
  </tbody> 
 </table>
 
-In **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende verbindingspool:
+In de **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende verbindingspool:
 
 <table> 
  <thead> 
@@ -400,7 +400,7 @@ In **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende 
  <tbody> 
   <tr> 
    <td> liveTestDelaySec<br /> </td> 
-   <td> Vertraging tussen controles van de verbindingsgeldigheid.<br /> </td> 
+   <td> Vertraging tussen geldigheidscontroles van de verbinding.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 
@@ -410,12 +410,12 @@ In **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende 
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximum aantal toegestane verbindingen voordat een nieuwe verbinding wordt geweigerd. Zie deze <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
+   <td> Maximum aantal toegestane verbindingen voordat een nieuwe verbinding wordt geweigerd. Zie dit <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 
    <td> maxIdleDelaySec<br /> </td> 
-   <td> Maximale inactieve tijd van verbinding. 0 betekent standaardwaarde.<br /> </td> 
+   <td> Maximale inactieve tijd van verbinding. 0 staat voor standaardwaarde.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
  </tbody> 
@@ -423,9 +423,9 @@ In **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende 
 
 ### virtualDir {#virtualdir}
 
-Hier volgen de verschillende parameters van het knooppunt **dataStore > virtualDir**. Dit is de configuratie van de virtuele folder aan echte folderafbeelding.
+Hier zijn de verschillende parameters van **dataStore > virtualDir** knooppunt. Dit is de configuratie van de virtuele folder aan echte folderafbeelding.
 
-Voor extra informatie, verwijs naar [Beheren van openbare middelen](file-res-management.md).
+Raadpleeg voor meer informatie [Openbare middelen beheren](file-res-management.md).
 
 <table> 
  <thead> 
@@ -443,7 +443,7 @@ Voor extra informatie, verwijs naar [Beheren van openbare middelen](file-res-man
   </tr> 
   <tr> 
    <td> pad<br /> </td> 
-   <td> Volledig pad van de daadwerkelijke map<br /> </td> 
+   <td> Volledig pad van de feitelijke map<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -459,7 +459,7 @@ Hier is de standaardconfiguratie:
 
 ### preprocessCommand {#preprocesscommand}
 
-Hier volgen de verschillende parameters van het knooppunt **dataStore > preprocessCommand**. Dit zijn de geoorloofde opdrachten voor het voorbewerken van de workflowactiviteit &#39;Bestand laden&#39;.
+Hier zijn de verschillende parameters van **dataStore > preprocessCommand** knooppunt. Dit zijn de geoorloofde opdrachten voor het voorbewerken van de workflowactiviteit &#39;Bestand laden&#39;.
 
 <table> 
  <thead> 
@@ -497,9 +497,9 @@ Hier is de standaardconfiguratie:
 
 ## dnsConfig {#dnsconfig}
 
-Hier zijn de verschillende parameters van **dnsConfig** (DNS configuratie) knoop.
+Hier zijn de verschillende parameters van **dnsConfig** (DNS-configuratie).
 
-Voor extra informatie, verwijs naar dit [sectie](../../installation/using/configuring-campaign-server.md).
+Raadpleeg voor meer informatie deze [sectie](../../installation/using/configuring-campaign-server.md).
 
 <table> 
  <thead> 
@@ -513,7 +513,7 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Gebruikt standaard de netwerkparameters van de eerste netwerkinterface die in Windows is gedeclareerd; of parseert file/etc/resolv.conf onder Linux (domein of onderzoeksingang). <br /> </td> 
+   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Gebruikt standaard de netwerkparameters van de eerste netwerkinterface die in Windows is gedeclareerd; of parseert de file/etc/resolv.conf onder Linux (domein of zoekingang). <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -524,15 +524,15 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> retry<br /> </td> 
-   <td> Aantal pogingen voor een DNS vraag.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> opnieuw proberen<br /> </td> 
+   <td> Aantal pogingen voor een DNS vraag opnieuw.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Time-out in milliseconden voor een DNS-query.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
  </tbody> 
@@ -546,7 +546,7 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
 >gebruikt door MTA om de Uitwisseling van de Post te krijgen voor
 >een domein.
 >
->Als deze waarde niet wordt bepaald, zoekt MTA deze informatie in de configuratie van het gastheernetwerk. Als verscheidene DNS mogelijk zijn, moeten de verschillende DNS adressen door een komma worden gescheiden (voorbeeld: 212.15.207.1.212.15.207.2). Als uw leveringsserver verscheidene netwerkinterfaces heeft, is de DNS lijst die door MTA wordt gebruikt eerste. In dit geval raden we aan de parameter **nameServer** op te geven om elke dubbelzinnigheid te voorkomen.
+>Als deze waarde niet wordt bepaald, zoekt MTA deze informatie in de configuratie van het gastheernetwerk. Als verscheidene DNS mogelijk zijn, moeten de verschillende DNS adressen door een komma worden gescheiden (voorbeeld: 212.15.207.1.212.15.207.2). Als uw leveringsserver verscheidene netwerkinterfaces heeft, is de DNS lijst die door MTA wordt gebruikt eerste. In dit geval raden we u aan de **nameServer** om dubbelzinnigheid te voorkomen.
 
 >[!CAUTION]
 >
@@ -554,9 +554,9 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
 
 ## exec {#exec}
 
-Hier zijn de verschillende parameters van **exec** (beveluitvoering) knoop.
+Hier zijn de verschillende parameters van **exec** node (opdrachtuitvoering).
 
-Voor extra informatie, verwijs naar [Beperkend geoorloofde externe bevelen](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
+Raadpleeg voor meer informatie [Toegestane externe opdrachten beperken](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
 
 <table> 
  <thead> 
@@ -574,7 +574,7 @@ Voor extra informatie, verwijs naar [Beperkend geoorloofde externe bevelen](../.
   </tr> 
   <tr> 
    <td> user<br /> </td> 
-   <td> Voer bevelen als verschillende gebruiker uit.<br /> </td> 
+   <td> Opdrachten uitvoeren als een andere gebruiker.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -582,7 +582,7 @@ Voor extra informatie, verwijs naar [Beperkend geoorloofde externe bevelen](../.
 
 ## htmlToPdf {#htmltopdf}
 
-Hier volgen de verschillende parameters van het **htmlToPdf**-knooppunt. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
+Hier zijn de verschillende parameters van **htmlToPdf** knooppunt. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
 
 <table> 
  <thead> 
@@ -602,8 +602,8 @@ Hier volgen de verschillende parameters van het **htmlToPdf**-knooppunt. Dit is 
   </tr> 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
-   <td> Max. aantal conversieprocessen dat tegelijkertijd is toegestaan op één computer.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Max. aantal conversieprocessen dat op een computer tegelijkertijd is toegestaan.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -614,12 +614,12 @@ Hier volgen de verschillende parameters van het **htmlToPdf**-knooppunt. Dit is 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Time-out voor conversie: maximale conversietijd in seconden. Buiten deze drempelwaarde wordt het conversieproces gestopt en wordt een fout opgetreden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Time-out voor conversie: maximale conversietijd in seconden. Buiten deze drempelwaarde wordt het conversieproces gestopt en een fout opgetreden.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
   <tr> 
-   <td> verbose<br /> </td> 
+   <td> uitgebreid<br /> </td> 
    <td> Modus Uitgebreid: begin in uitgebreide wijze om mogelijke fouten te diagnostiseren.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
@@ -627,7 +627,7 @@ Hier volgen de verschillende parameters van het **htmlToPdf**-knooppunt. Dit is 
   <tr> 
    <td> waitTime<br /> </td> 
    <td> Vertraging bij wachten op een proces: vertraging in seconden, wanneer alle processen tegelijkertijd worden gebruikt en wanneer het wachten op een proces om omhoog vrij te maken. Als deze vertraging wordt overschreden, wordt de omzetting tegengehouden en een fout wordt opgeheven. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
  </tbody> 
@@ -641,7 +641,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## ims {#ims}
 
-Hier zijn de verschillende parameters van **ims** knoop. Dit is de configuratie voor Campagne die met een andere dienst gebruikend [IMS](../../integrations/using/about-adobe-id.md) verbindt.
+Hier zijn de verschillende parameters van **ims** knooppunt. Dit is de configuratie voor Campagne die met een andere dienst verbindt gebruikend [IMS](../../integrations/using/about-adobe-id.md).
 
 <table> 
  <thead> 
@@ -685,19 +685,19 @@ Hier zijn de verschillende parameters van **ims** knoop. Dit is de configuratie 
   </tr> 
   <tr> 
    <td> authIMSTAClientSecret<br /> </td> 
-   <td> Technical Account Secret-sleutel (gecodeerd in AES)<br /> </td> 
+   <td> Key technisch-accountgeheim (gecodeerd in AES)<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAId<br /> </td> 
-   <td> Technische account-id<br /> </td> 
+   <td> Technisch account-id<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAPrivateKey<br /> </td> 
-   <td> Technical Account Private Key (gecodeerd in AES)<br /> </td> 
+   <td> Persoonlijke sleutel technische account (gecodeerd in AES)<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -706,9 +706,9 @@ Hier zijn de verschillende parameters van **ims** knoop. Dit is de configuratie 
 
 ## JavaScript {#javascript}
 
-Hier zijn de verschillende parameters van de **javaScript** knoop. Dit is de configuratie van de JavaScript-interpreter.
+Hier zijn de verschillende parameters van **javaScript** knooppunt. Dit is de configuratie van de JavaScript-interpreter.
 
-Raadpleeg de [Rapporteringsdocumentatie](../../reporting/using/actions-on-reports.md#memory-allocation) en deze [technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html) voor aanvullende informatie.
+Raadpleeg voor meer informatie de [Rapportagedocumentatie](../../reporting/using/actions-on-reports.md#memory-allocation) en [technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
 
 <table> 
  <thead> 
@@ -723,13 +723,13 @@ Raadpleeg de [Rapporteringsdocumentatie](../../reporting/using/actions-on-report
   <tr> 
    <td> maxMB<br /> </td> 
    <td> Maximale grootte in megabytes voordat de afvalophaler wordt uitgevoerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 512 <br /> </td> 
   </tr> 
   <tr> 
    <td> stackSizeKB<br /> </td> 
    <td> Grootte van elk stapelsegment in kilo-octetten. Dit is een afstemmingsparameter voor geheugenbeheer die de meeste gebruikers niet zouden moeten aanpassen. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
  </tbody> 
@@ -737,7 +737,7 @@ Raadpleeg de [Rapporteringsdocumentatie](../../reporting/using/actions-on-report
 
 ## mailExchanger {#mailexchanger}
 
-Hier zijn de verschillende parameters van de **mailExchanger** knoop. Dit is de configuratie van de server SMTP.
+Hier zijn de verschillende parameters van **mailExchanger** knooppunt. Dit is de configuratie van de server SMTP.
 
 <table> 
  <thead> 
@@ -766,7 +766,7 @@ Hier zijn de verschillende parameters van de **mailExchanger** knoop. Dit is de 
 
 ## module {#module}
 
-Hier zijn de verschillende parameters van **module** knoop. Dit is de configuratie voor de namespaces beperkingsmodule xtk.
+Hier zijn de verschillende parameters van **module** knooppunt. Dit is de configuratie voor de namespaces beperkingsmodule xtk.
 
 <table> 
  <thead> 
@@ -789,7 +789,7 @@ Hier zijn de verschillende parameters van **module** knoop. Dit is de configurat
 
 ## toezicht {#monitoring}
 
-Hier zijn de verschillende parameters van **monitoring** knoop. Dit is de configuratie van de controledienst.
+Hier zijn de verschillende parameters van **toezicht** knooppunt. Dit is de configuratie van de controledienst.
 
 <table> 
  <thead> 
@@ -803,13 +803,13 @@ Hier zijn de verschillende parameters van **monitoring** knoop. Dit is de config
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> Maximale bereidingstijd: duur in seconden waarna een leveringsactie niet meer in voorbereiding zou moeten zijn.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximale bereidingstijd: duur in seconden waarna een leveringsactie niet langer moet worden voorbereid.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
   <tr> 
    <td> unixScript<br /> </td> 
-   <td> Unix-script uitgevoerd door de bewakingsservice.<br /> </td> 
+   <td> Unix script uitgevoerd door de bewakingsservice.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -824,7 +824,7 @@ Hier zijn de verschillende parameters van **monitoring** knoop. Dit is de config
 
 ## ooconv {#ooconv}
 
-Hier zijn de verschillende parameters van **ooconv** knoop. Dit is de configuratie van de documentconversieserver.
+Hier zijn de verschillende parameters van **ooconv** knooppunt. Dit is de configuratie van de documentconversieserver.
 
 <table> 
  <thead> 
@@ -839,18 +839,18 @@ Hier zijn de verschillende parameters van **ooconv** knoop. Dit is de configurat
   <tr> 
    <td> maxConversions<br /> </td> 
    <td> Maximum aantal omzettingen die een server OpenOffice wordt toegestaan uit te voeren. Buiten dit getal wordt de server opnieuw gestart.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
-   <td> Maximale inactieve tijd van de OpenOffice-server voordat het bestand geforceerd wordt gesloten.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximale inactieve tijd van de OpenOffice-server voordat deze geforceerd wordt gesloten.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
   <tr> 
    <td> portRange<br /> </td> 
-   <td> Interval van havens waarop de servers OpenOffice luisteren.<br /> </td> 
+   <td> Het interval van havens waarop de servers OpenOffice luisteren.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
@@ -865,9 +865,9 @@ Hier zijn de verschillende parameters van **ooconv** knoop. Dit is de configurat
 
 ## proxyConfig {#proxyconfig}
 
-Hier zijn de verschillende parameters van **proxyConfig** knoop. Dit is de configuratie van proxyparameters.
+Hier zijn de verschillende parameters van **proxyConfig** knooppunt. Dit is de configuratie van proxyparameters.
 
-Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Configuratie proxyverbinding](file-res-management.md).
 
 <table> 
  <thead> 
@@ -881,13 +881,13 @@ Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullend
  <tbody> 
   <tr> 
    <td> enabled<br /> </td> 
-   <td> Een proxyserver gebruiken.<br /> </td> 
+   <td> Gebruik een proxyserver.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> override<br /> </td> 
-   <td> Uitzonderingen: lijst van adressen waarvoor proxyparameters moeten worden genegeerd.<br /> </td> 
+   <td> Uitzonderingen: lijst van adressen waarvoor proxyparameters worden genegeerd.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
@@ -902,9 +902,9 @@ Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullend
 
 ### HTTP-proxy / Veilige proxy {#http-proxy---secure-proxy-}
 
-In **proxyConfig > de Volmacht van HTTP / Veilige volmacht** knoop, vorm de volgende parameters.
+In de **proxyConfig > HTTP-proxy / Secure-proxy** knoop, vorm de volgende parameters.
 
-Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Configuratie proxyverbinding](file-res-management.md).
 
 <table> 
  <thead> 
@@ -921,7 +921,7 @@ Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullend
    <td> Tekenreeks<br /> </td> 
   </tr> 
   <tr> 
-   <td> login<br /> </td> 
+   <td> aanmelden<br /> </td> 
    <td> Aanmelden voor verbinding met proxyserver<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
@@ -940,7 +940,7 @@ Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullend
 
 ## threadPool {#threadpool}
 
-Hier zijn de verschillende parameters van **threadPool** knoop.
+Hier zijn de verschillende parameters van **threadPool** knooppunt.
 
 <table> 
  <thead> 
@@ -955,7 +955,7 @@ Hier zijn de verschillende parameters van **threadPool** knoop.
   <tr> 
    <td> maxThreadCount<br /> </td> 
    <td> Maximum aantal draden in pool. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -963,13 +963,13 @@ Hier zijn de verschillende parameters van **threadPool** knoop.
 
 ## urlPermission {#urlpermission}
 
-Hier zijn de verschillende parameters van de **urlPermission** knoop. Dit is de lijst met URL&#39;s waartoe de JavaScript-code toegang heeft.
+Hier zijn de verschillende parameters van **urlPermission** knooppunt. Dit is de lijst met URL&#39;s waartoe de JavaScript-code toegang heeft.
 
 Lijst met domeinen en reguliere expressies die aangeven of een URL die in de JavaScript-code wordt aangetroffen, door de Adobe Campaign-server kan worden gebruikt of niet.
 
 Als de URL niet kan worden gevonden, wordt de standaardactie uitgevoerd volgens de opgegeven standaardmodus.
 
-Raadpleeg [Uitgaande verbindingsbeveiliging](../../installation/using/configuring-campaign-server.md#url-permissions) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -985,7 +985,7 @@ Raadpleeg [Uitgaande verbindingsbeveiliging](../../installation/using/configurin
    <td> action<br /> </td> 
    <td> Standaardactie als de URL niet in de geoorloofde lijst (opsomming) staat. Mogelijke waarden zijn 'ignore' (autoriseren zonder waarschuwingsbericht, dit vereist het uitschakelen van de beveiliging), 'warn' (autoriseer en geef een waarschuwingsbericht op) en 'deny' (belemmert toegang tot de URL).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> deny<br /> </td> 
+   <td> ontkennen<br /> </td> 
   </tr> 
   <tr> 
    <td> debugTrace<br /> </td> 
@@ -998,9 +998,9 @@ Raadpleeg [Uitgaande verbindingsbeveiliging](../../installation/using/configurin
 
 ### url {#url}
 
-Voeg voor elke URL een **url**-knooppunt met de volgende parameters toe:
+Voeg voor elke URL een **url** knooppunt met de volgende parameters:
 
-Raadpleeg [Uitgaande verbindingsbeveiliging](../../installation/using/configuring-campaign-server.md#url-permissions) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -1018,13 +1018,13 @@ Raadpleeg [Uitgaande verbindingsbeveiliging](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Gewone expressie voor het verfijnen van validatie van URL's die tot dit domein behoren: reguliere expressie die door de URL moet worden gecontroleerd, voor het geval deze overeenkomt met dnsSuffix.<br /> </td> 
+   <td> Gewone expressie voor het verfijnen van validatie van URL's die tot dit domein behoren: reguliere expressie die door de URL moet worden geverifieerd, voor het geval deze overeenkomt met dnsSuffix.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Als een record voldoet aan **dnsSuffix** maar niet **urlRegEx**, wordt de volgende record gecontroleerd.
+Indien een record voldoet **dnsSuffix** maar niet **urlRegEx**, wordt de volgende record onderzocht.
 
 Bijvoorbeeld, om toegang tot alle URLs van het domein business.com te verlenen, kunnen wij twee verslagen bepalen:
 
@@ -1055,7 +1055,7 @@ Hier is de standaardconfiguratie:
 
 ## xtkJobs {#xtkjobs}
 
-Hier zijn de verschillende parameters van **xtkJobs** knoop. Dit is de configuratie van de servertaken.
+Hier zijn de verschillende parameters van **xtkJobs** knooppunt. Dit is de configuratie van de servertaken.
 
 <table> 
  <thead> 
@@ -1070,7 +1070,7 @@ Hier zijn de verschillende parameters van **xtkJobs** knoop. Dit is de configura
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> Vernieuwingsperiode voor serververwerking (in ms) voor geheugenstatus.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -1078,9 +1078,9 @@ Hier zijn de verschillende parameters van **xtkJobs** knoop. Dit is de configura
 
 ## archivering {#archiving}
 
-Hier zijn de verschillende parameters van **archiving** knoop. Dit is de configuratie van de uitgevoerde archiveringsbewerkingen op de achtergrond.
+Hier zijn de verschillende parameters van **archivering** knooppunt. Dit is de configuratie van de uitgevoerde archiveringsbewerkingen op de achtergrond.
 
-Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/email-archiving.md#activating-email-archiving--on-premise-) voor meer informatie.
+Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../installation/using/email-archiving.md#activating-email-archiving--on-premise-).
 
 <table> 
  <thead> 
@@ -1094,8 +1094,8 @@ Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/em
  <tbody> 
   <tr> 
    <td> verwervingLimit<br /> </td> 
-   <td> Aantal EML's dat tegelijkertijd moet worden verwerkt<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Aantal te verwerken EML's<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
@@ -1119,79 +1119,79 @@ Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/em
   <tr> 
    <td> compressBatchSize<br /> </td> 
    <td> Grootte van een gecomprimeerd archief: max. aantal bestanden in een gecomprimeerd archief.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 10000<br /> </td> 
   </tr> 
   <tr> 
    <td> compressionFormat<br /> </td> 
-   <td> Compressie-indeling die wordt gebruikt tijdens archivering (opsomming). Mogelijke waarden zijn '0' (geen compressie) en '1' (verzonden berichten comprimeren in de ZIP-indeling).<br /> </td> 
+   <td> Compressie-indeling die wordt gebruikt tijdens archivering (opsomming). Mogelijke waarden zijn '0' (geen compressie) en '1' (verzonden berichten comprimeren met de ZIP-indeling).<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> expirationDelay<br /> </td> 
    <td> Vertraging voordat onverwerkte e-mails automatisch worden gearchiveerd: aantal dagen voordat onverwerkte e-mails worden gearchiveerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollDelay<br /> </td> 
    <td> Vertraging (in seconden) tussen elke update-gebeurtenis.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
    <td> Aantal dagen voordat onverwerkte e-mails worden verwijderd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 7<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpBccAddress<br /> </td> 
-   <td> Doelbestemming archiveren<br /> </td> 
+   <td> Doel archiveren<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> smtpEnableTLS<br /> </td> 
-   <td> Ondersteuning voor SMTPS activeren: activeert de levering van e-mailberichten in veilige modus (STARTTLS/SMTPS) wanneer deze worden ondersteund door de externe server.<br /> </td> 
+   <td> Ondersteuning voor SMTPS activeren: Hiermee activeert u de levering van e-mailberichten in de veilige modus (STARTTLS/SMTPS) wanneer deze worden ondersteund door de externe server.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpNbConnection<br /> </td> 
    <td> Aantal verbindingen met de archiverende server SMTP.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -1203,7 +1203,7 @@ Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/em
   <tr> 
    <td> smtpRelayPort<br /> </td> 
    <td> IP-poort van SMTP-server.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1211,7 +1211,7 @@ Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/em
 
 ## inMail {#inmail}
 
-Hier zijn de verschillende parameters van de **inMail** knoop. Dit is de configuratie van de binnenkomende e-mailbeheermodule.
+Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de configuratie van de binnenkomende e-mailbeheermodule.
 
 <table> 
  <thead> 
@@ -1262,78 +1262,78 @@ Hier zijn de verschillende parameters van de **inMail** knoop. Dit is de configu
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
    <td> Leesperiode bericht: de stemfrequentie van de berichtrij.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
    <td> Maximumaantal bij te werken logboeken: bepaalt het maximumaantal logboekberichten in geheugen te houden alvorens het gegevensbestand bij te werken.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerSession<br /> </td> 
-   <td> Maximum aantal berichten tijdens POP3 zitting te lezen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximumaantal berichten dat tijdens POP3-sessie kan worden gelezen.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 200<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionTTLSec<br /> </td> 
-   <td> Sessieduur: maximale duur van sessie voor berichtverwerking.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Sessieduur: maximale duur van berichtverwerkingssessie.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popMailPeriodSec<br /> </td> 
-   <td> POP3-opiniepeilingsperiode<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> POP3-stemperiode<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> popQueueSize<br /> </td> 
-   <td> Wachtrijgrootte van leesberichten<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Wachtrijgrootte voor leesberichten<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popTimeoutSec<br /> </td> 
    <td> Communicatie onderbreking met POP3 server. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
-   <td> De frequentie van het opnieuw laden van het gegevensbestand van rekeningen om te polsen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Herlaadfrequentie database voor te pollen accounts.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1342,7 +1342,7 @@ Hier zijn de verschillende parameters van de **inMail** knoop. Dit is de configu
 
 ### msgDump {#msgdump}
 
-In **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configuratie van de stortplaats van verwerkte berichten.
+In de **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configuratie van de stortplaats van verwerkte berichten.
 
 <table> 
  <thead> 
@@ -1355,14 +1355,14 @@ In **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configurat
  </thead> 
  <tbody> 
   <tr> 
-   <td> dump<br /> </td> 
+   <td> stortplaats<br /> </td> 
    <td> Sla alle binnenkomende berichten op in tekstopmaak. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> msgPath<br /> </td> 
-   <td> Pad voor berichtendumping.<br /> </td> 
+   <td> Berichtstortpad.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
@@ -1371,9 +1371,9 @@ In **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configurat
 
 ## interactief {#interactiond}
 
-Hier zijn de verschillende parameters van **interactiond** knoop. Dit is de configuratie van schrijven daemon voor binnenkomende gebeurtenissen van de Interactie.
+Hier zijn de verschillende parameters van **interactief** knooppunt. Dit is de configuratie van schrijven daemon voor binnenkomende gebeurtenissen van de Interactie.
 
-Voor extra informatie, verwijs naar [Interactie - de buffer van Gegevens](../../installation/using/interaction---data-buffer.md).
+Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/using/interaction---data-buffer.md).
 
 <table> 
  <thead> 
@@ -1399,8 +1399,8 @@ Voor extra informatie, verwijs naar [Interactie - de buffer van Gegevens](../../
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> Max. aantal karakters die in het gedeelde geheugen voor vraaggegevens worden opgeslagen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Max. aantal tekens dat in het gedeelde geheugen is opgeslagen voor aanroepgegevens.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -1412,49 +1412,49 @@ Voor extra informatie, verwijs naar [Interactie - de buffer van Gegevens](../../
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
-   <td> maxSharedEnapters<br /> </td> 
+   <td> maxSharedEntry<br /> </td> 
    <td> Max. aantal gebeurtenissen dat is opgeslagen in het gedeelde geheugen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> Maximum aantal in aanmerking komende aanbiedingen dat direct na voorstellen wordt gesorteerd, om te worden opgeslagen voor statistieken.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximumaantal in aanmerking komende aanbiedingen dat recht na voorstellen wordt gesorteerd en dat voor statistieken wordt opgeslagen.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
    <td> De duur van de samenvoeging in seconden voor de statistieken van de reactietijd. 0 betekent dat de statistische opslag is gedeactiveerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
    <td> Max. aantal tekens dat in het gedeelde geheugen is opgeslagen om personen te identificeren.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
  </tbody> 
@@ -1462,7 +1462,7 @@ Voor extra informatie, verwijs naar [Interactie - de buffer van Gegevens](../../
 
 ## mta {#mta}
 
-Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configuratie van leveringsagenten.
+Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configuratie van leveringsagenten.
 
 <table> 
  <thead> 
@@ -1501,18 +1501,18 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   <tr> 
    <td> dnsRequestLogDelayMS<br /> </td> 
    <td> DNS-vertraging voor querylogbestanden: tijd in milliseconden om de logbestanden weer te geven.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
    <td> Frequentie foutstatistieken: tijd tussen de productie van statistieken en de opslag in de database. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1525,61 +1525,61 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   <tr> 
    <td> logLevel<br /> </td> 
    <td> Geef het niveau van logberichten weer. Prioriteitsniveau van de logs die in de database zijn geschreven. De berichten van het logboek die door MTA worden geproduceerd worden niet altijd geschreven in het gegevensbestand. Met deze parameter, kunt u het niveau bepalen waarvan u van mening bent dat een bericht in het gegevensbestand moet worden geschreven. Als u niveau 2 bepaalt, worden de berichten van niveau 1 en 0 ook geschreven, terwijl als u niveau 1 bepaalt, slechts worden de berichten van niveau 1 en 0 geschreven. Mogelijke waarden zijn: 0 (fouten), 1 (waarschuwing), 2 (info)<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
    <td> Maximale geheugengrootte (in MB) die een mta-proces kan gebruiken. Boven deze limiet wordt het proces opnieuw gestart, zodat het gebruikte geheugen naar het systeem wordt vrijgegeven.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
-   <td> Verbindingsdrempel waarmee rekening moet worden gehouden. Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal verbindingen voor de periode opgegeven door errorPeriodSec strikt onder de drempel ligt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Verbindingsdrempel waarmee rekening moet worden gehouden. Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal verbindingen voor de door errorPeriodSec opgegeven periode strikt onder de drempel ligt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
-   <td> Foutdrempel waarmee rekening moet worden gehouden: Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal fouten voor de periode opgegeven door errorPeriodSec strikt onder de drempel ligt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Foutdrempel waarmee rekening moet worden gehouden: Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal fouten voor de door errorPeriodSec opgegeven periode strikt onder de drempel ligt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> minMessagesToLog<br /> </td> 
-   <td> Berichtdrempel waarmee rekening moet worden gehouden. Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal berichten dat wordt verzonden voor de periode opgegeven door errorPeriodSec strikt onder de drempel ligt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Berichtdrempel waarmee rekening moet worden gehouden. Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal berichten dat gedurende de door errorPeriodSec opgegeven periode wordt verzonden, strikt onder de drempel ligt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Port gebruikt om berichten af te lossen.<br /> </td> 
+   <td> Meldingsrelais: HostName:Haven die aan relaisberichten wordt gebruikt.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
-   <td> Vertraging voordat gearchiveerde e-mailberichten worden verwijderd: aantal dagen voordat gearchiveerde e-mailberichten in de map die in dataLogPath is opgegeven, zijn gewist.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Vertraging voordat gearchiveerde e-mailberichten worden verwijderd: aantal dagen voordat gearchiveerde e-mailberichten in de map die in dataLogPath is opgegeven, worden gewist.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
@@ -1590,24 +1590,24 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> signEmailLinks<br /> </td> 
-   <td> Schakel het handtekeningmechanisme in. Dit verbetert de beveiliging bij het bijhouden van koppelingen in e-mail.<br /> </td> 
+   <td> Schakel het handtekeningmechanisme in. Hierdoor wordt de beveiliging bij het bijhouden van koppelingen in e-mail verbeterd.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true<br /> </td> 
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Adres van de server van de leveringsstatistiek, die als wordt gegeven 
-    &lt;dns or ip&gt; 
+    &lt;dns or="" ip=""&gt; 
       <code>[</code>: 
      &lt;port&gt; 
        <code>]</code>. Zie 
-      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coördinaten van de statistische server</a>. 
+      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coördinaten van de statistiekserver</a>. 
       <br /> 
      </td> 
    <td> Tekenreeks<br /> </td> 
@@ -1621,13 +1621,13 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   </tr> 
   <tr> 
    <td> statServerVersion<br /> </td> 
-   <td> Gebruikte versie protocol: versie communicatieprotocol (1 voor een v5.11- en 6.0.2-server, 2 voor een v6.1-server).<br /> </td> 
+   <td> Gebruikte versie protocol: versie van communicatieprotocol (1 voor een v5.11- en 6.0.2-server, 2 voor een v6.1-server).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> Indien niet gedefinieerd, wordt de laatste versie gebruikt. <br /> </td> 
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Indien ingesteld op "true", gebruikt uw instantie <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Indien ingesteld op "true", gebruikt uw instantie de <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1639,13 +1639,13 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   </tr> 
   <tr> 
    <td> workingPath<br /> </td> 
-   <td> Werkmap: locatie van tijdelijke bestanden die door de MTA worden gebruikt om te communiceren met de onderliggende processen.<br /> </td> 
+   <td> Werkmap: locatie van tijdelijke bestanden die door de MTA worden gebruikt om te communiceren met onderliggende processen.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
-   <td> Veld X-Mailer: Waarde van veld 'X-Mailer' in SMTP-mailheader.<br /> </td> 
+   <td> Veld X-Mailer: waarde van veld 'X-Mailer' in SMTP-mailheader.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
@@ -1654,7 +1654,7 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
 
 ### cachegeheugen {#cache}
 
-In **cache** knoop, vorm de volgende parameters. Dit is de lokale configuratie van het dossiergeheime voorgeheugen.
+In de **cachegeheugen** knoop, vorm de volgende parameters. Dit is de lokale configuratie van het dossiergeheime voorgeheugen.
 
 <table> 
  <thead> 
@@ -1668,20 +1668,20 @@ In **cache** knoop, vorm de volgende parameters. Dit is de lokale configuratie v
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> Gerecycled na: punt, uitgedrukt in seconden, waarna het bestand automatisch wordt verwijderd uit de cache om de opslag terug te winnen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Gerecycled na: punt, uitgedrukt in seconden, waarna het bestand automatisch van de cache wordt verwijderd om de opslag terug te winnen.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
    <td> Maximale cachegrootte (MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
-   <td> Frequentie leegmaken: punt in seconden tussen de uitvoering van het mechanisme voor het leegmaken van de cache.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Frequentie leegmaken: periode in seconden tussen de executies van het mechanisme voor het leegmaken van de cache.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
  </tbody> 
@@ -1689,11 +1689,11 @@ In **cache** knoop, vorm de volgende parameters. Dit is de lokale configuratie v
 
 ### doorgeven {#relay}
 
-In **mta > relais** knoop, vorm de volgende parameters. Dit is de configuratie van de postserver voor de berichtlevering.
+In de **mta > relais** knoop, vorm de volgende parameters. Dit is de configuratie van de postserver voor de berichtlevering.
 
 De lijst zal op de zelfde manier worden behandeld zoals een lijst van MX door een MX DNS vraag is teruggekeerd, gewoonlijk eerste MX wordt gebruikt zolang het beschikbaar is, dan volgende wordt gebruikt, etc.
 
-Voor extra informatie, verwijs naar [SMTP relais](../../installation/using/configuring-campaign-server.md#smtp-relay).
+Raadpleeg voor meer informatie [SMTP-relais](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
 <table> 
  <thead> 
@@ -1714,7 +1714,7 @@ Voor extra informatie, verwijs naar [SMTP relais](../../installation/using/confi
   <tr> 
    <td> poort<br /> </td> 
    <td> IP-poort van SMTP-server.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1722,9 +1722,9 @@ Voor extra informatie, verwijs naar [SMTP relais](../../installation/using/confi
 
 ### master {#master}
 
-In **mta > master** knoop, vorm de volgende parameters. Dit is de configuratie van de hoofdserver.
+In de **mta > master** knoop, vorm de volgende parameters. Dit is de configuratie van de hoofdserver.
 
-Voor extra informatie, verwijs naar dit [sectie](../../installation/using/configuring-campaign-server.md#mta-child-processes).
+Raadpleeg voor meer informatie deze [sectie](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
 <table> 
  <thead> 
@@ -1738,38 +1738,38 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> De opiniepeilingsfrequentie van het gegevensbestand van de te leveren banen. Deze waarde geeft de opiniepeilingsfrequentie van de database aan (in seconden). Om de lijst van banen te verkrijgen die op levering wachten, opiniepeilt de MTA regelmatig het gegevensbestand. Wanneer er geen baan wacht, wordt de opiniepeilingsperiode bepaald door deze waarde. Als een taak naar een onderliggende server is overgebracht, wordt deze opiniepeilingduur automatisch tot één seconde verminderd zodat een nieuwe baan zo spoedig mogelijk opnieuw kan worden verwerkt, d.w.z. zodra een kindserver opnieuw beschikbaar is. Dit betekent niet dat de gegevensbestandvraag elke seconde zal worden gedaan tot een kindserver opnieuw beschikbaar is. In feite wordt een gegevensbestandtoegang slechts gedaan wanneer minstens één kindserver beschikbaar wordt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> De opiniepeilingsfrequentie van het gegevensbestand van de te leveren banen. Deze waarde geeft de opiniepeilingsfrequentie van de database aan (in seconden). Om de lijst van banen te verkrijgen die op levering wachten, opiniepeilt de MTA regelmatig het gegevensbestand. Wanneer er geen baan wacht, wordt de opiniepeilingsperiode bepaald door deze waarde. Als een taak naar een onderliggende server is overgebracht, wordt deze opiniepeilingduur automatisch tot één seconde verminderd zodat een nieuwe baan zo spoedig mogelijk opnieuw kan worden verwerkt, d.w.z. zodra een kindserver opnieuw beschikbaar is. Dit betekent niet dat de gegevensbestandvraag elke seconde zal worden gedaan tot een kindserver opnieuw beschikbaar is. In feite, wordt een gegevensbestandtoegang slechts gedaan wanneer minstens één kindserver beschikbaar wordt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
    <td> Wachten op periode na fout met databaseverbinding. Een fout in de databaseverbinding wordt meestal veroorzaakt door de databaseserver zelf. De server kan bijvoorbeeld ook voor onderhoudsdoeleinden worden gestopt. De parameter DataBaseRetryDelay bepaalt de duur tussen twee verbindingspogingen in het geval van een mislukking van de gegevensbestandverbinding.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
    <td> Geldigheidsperiode voor de cache van persoonlijke sleutels (DomainKeys). De privé sleutels die worden gebruikt om e-mails na de aanbeveling DomainKeys (http://antispam.yahoo.com/domainkeys) te ondertekenen worden opgeslagen als opties in het gegevensbestand. De domainKeysReloadPeriodSec parameter bepaalt hoeveel seconden MTA deze sleutels in een geheime voorgeheugen kan houden. Na deze vertraging moeten alle toetsen opnieuw uit de database worden geladen.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximum aantal onderliggende servers. Vertegenwoordigt het maximumaantal servers dat wordt uitgevoerd. U wordt aangeraden dit aantal te beperken tot een optimaal niveau dat compatibel is met de geheugenbronnen van de server. Dit kan tijdens een levering worden gecontroleerd. Het gebruikte geheugen mag niet groter zijn dan een derde van het beschikbare fysieke geheugen, anders wordt de wisselaar gebruikt. Zie <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA-onderliggende processen</a>.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximum aantal onderliggende servers. Vertegenwoordigt het maximumaantal servers dat wordt uitgevoerd. U wordt aangeraden dit aantal te beperken tot een optimaal niveau dat compatibel is met de geheugenbronnen van de server. Dit kan tijdens een levering worden gecontroleerd. Het gebruikte geheugen mag niet groter zijn dan een derde van het beschikbare fysieke geheugen, anders wordt de wisselaar gebruikt. Zie <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA onderliggende processen</a>.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
    <td> Minimum aantal onderliggende servers. MTA probeert om minstens dit aantal servers in werking te houden. Als er minder zijn, start het elke seconde opnieuw nieuwe servers totdat deze waarde wordt bereikt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Aantal onderliggende server bij opstarten. Het aantal onderliggende servers wordt dynamisch gecontroleerd; wanneer MTA begint, leidt het tot zo vele kindservers zoals die door deze waarde worden vermeld. Onderliggende servers kunnen gewoonlijk niet sneller dan één server per seconde worden gestart om hostbronnen op te slaan. Wanneer de MTA echter wordt gestart, wordt deze beperking genegeerd, zodat onderliggende servers zo snel mogelijk beschikbaar zijn.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Aantal onderliggende server bij opstarten. Het aantal onderliggende servers wordt dynamisch gecontroleerd; wanneer MTA begint, leidt het tot zo vele kindservers zoals die door deze waarde worden vermeld. Onderliggende servers kunnen gewoonlijk niet sneller dan één server per seconde worden gestart om hostbronnen op te slaan. Nochtans, wanneer MTA begint, wordt deze beperking genegeerd zodat de kindservers beschikbaar zijn zo spoedig mogelijk.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
  </tbody> 
@@ -1777,9 +1777,9 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
 
 ### onderliggend {#child}
 
-In **mta > kind** knoop, vorm de volgende parameters. Dit is de configuratie van kindservers.
+In de **mta > child** knoop, vorm de volgende parameters. Dit is de configuratie van kindservers.
 
-Raadpleeg [Optimalisatie voor verzending via e-mail verzenden](../../installation/using/email-deliverability.md#email-sending-optimization) voor meer informatie.
+Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 <table> 
  <thead> 
@@ -1800,43 +1800,43 @@ Raadpleeg [Optimalisatie voor verzending via e-mail verzenden](../../installatio
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
    <td> Time-out totdat inactieve onderliggende servers worden gestopt. Als een kindserver een nutteloze tijd groter dan deze parameter heeft, zal het automatisch doden om gastheermiddelen vrij te maken.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale tijd voor berichtbehoud. Als een voorbereid bericht niet wegens throttling kon worden verzonden of niet met het doel MTA kon verbinden, wordt het bericht verlaten en zal bij volgende opnieuw proberen worden verwerkt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximale tijd voor berichtbehoud. Als een voorbereid bericht niet kon worden verzonden wegens throttling of niet met het doel MTA kon verbinden, wordt het bericht verlaten en zal bij volgende opnieuw proberen worden verwerkt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
-   <td> Maximum aantal parallelle HTTP-aanvragen bij de FCM die door elke onderliggende server worden geïnitieerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximum van parallelle Http- verzoeken aan FCM die door elke kindserver in werking wordt gesteld.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> Maximum aantal berichten per kindserver. Elk kind MTA verwerkt dit aantal berichten en sterft. Het is belangrijk om een aantal te specificeren zodat geheugen of middellekken in MTA (typisch een paar duizenden) onschadelijk zijn. Zelfs als er geen bekende geheugenlekken in de code MTA zijn, zijn de ingebedde motoren JavaScript en XSL niet volledig betrouwbaar.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximum aantal berichten per kindserver. Elk kind MTA verwerkt dit aantal berichten en sterft. Het is belangrijk om een aantal te specificeren zodat geheugen of middellekken in MTA (typisch een paar duizenden) onschadelijk zijn. Zelfs als er geen bekende geheugenlekken in de MTA-code zijn, zijn de ingesloten JavaScript- en XSL-engines niet volledig betrouwbaar.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
    <td> In behandeling zijnde berichten: maximumaantal berichten dat in het geheugen wacht om te worden afgeleverd. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
    <td> Maximale geheugengrootte (in MB) die een onderliggend proces kan gebruiken. Boven deze limiet wordt het proces gestopt, zodat het gebruikte geheugen naar het systeem wordt vrijgegeven. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
    <td> Timeout (in seconden) waarna een verbinding van de ZEEP voor een leveringsschakelaar wordt verlaten.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -1847,14 +1847,14 @@ Raadpleeg [Optimalisatie voor verzending via e-mail verzenden](../../installatio
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
-   <td> Maximum aantal opeenvolgende pogingen wanneer hervat.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximumaantal opeenvolgende pogingen bij hervatting.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In **mta > kind > smtp** knoop, vorm de volgende parameters. Dit is de configuratie van zittingen SMTP.
+In de **mta > child > smtp** knoop, vorm de volgende parameters. Dit is de configuratie van zittingen SMTP.
 
 <table> 
  <thead> 
@@ -1874,28 +1874,28 @@ In **mta > kind > smtp** knoop, vorm de volgende parameters. Dit is de configura
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Time-out niet-actieve sessie. Deze parameter wordt slechts gebruikt als de zitting voor het overbrengen van verscheidene berichten naar een bepaald domein wordt opnieuw gebruikt. Wanneer MTA de berichttransmissie heeft voltooid, wordt de zitting SMTP het heeft gebruikt niet systematisch gesloten. Als een bericht klaar is om voor dit zelfde domein te worden verzonden dan zal de zelfde zitting SMTP opnieuw worden gebruikt en dit is waarom de zitting niet automatisch wordt gesloten. De parameter IdleSessionTimeout laat u de tijd bepalen waarin een zitting SMTP actief kan blijven wachtend op een ander bericht. Zodra de duur is verstreken, wordt de zitting automatisch gesloten.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Time-out niet-actieve sessie. Deze parameter wordt slechts gebruikt als de zitting voor het overbrengen van verscheidene berichten naar een bepaald domein wordt opnieuw gebruikt. Wanneer MTA de berichttransmissie heeft voltooid, wordt de zitting SMTP het heeft gebruikt niet systematisch gesloten. Als een bericht klaar is om voor dit zelfde domein te worden verzonden dan zal de zelfde zitting SMTP opnieuw worden gebruikt en dit is waarom de zitting niet automatisch wordt gesloten. De parameter IdleSessionTimeout laat u de tijd bepalen waarin een zitting SMTP actief kan blijven wachtend op een ander bericht. Nadat de duur is verstreken, wordt de sessie automatisch gesloten.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> initialDelaySec<br /> </td> 
    <td> Oorspronkelijke vertraging voordat de verbinding opnieuw wordt geprobeerd. Deze vertraging wordt verdubbeld telkens als de verbinding ontbreekt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Maximum aantal zittingen SMTP door kindserver. Om een bericht te leveren, initialiseert MTA een verbinding SMTP met ontvankelijke MTA. Het maximumaantal gelijktijdige en actieve zittingen SMTP voor een bepaalde kindserver wordt beperkt door deze waarde. Als u deze waarde vermenigvuldigt met maxSpareServers, krijgt u het maximumaantal berichten dat gelijktijdig door een bepaalde kindserver kan worden verwerkt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximum aantal zittingen SMTP door kindserver. Om een bericht te leveren, initialiseert MTA een verbinding SMTP met ontvankelijke MTA. Het maximumaantal gelijktijdige en actieve zittingen SMTP voor een bepaalde kindserver wordt beperkt door deze waarde. Als u deze waarde met maxSpareServers vermenigvuldigt, krijgt u het maximumaantal berichten dat gelijktijdig door een bepaalde kindserver kan worden verwerkt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In **mta > kind > smtp > IPAffinity** knoop, vorm de volgende parameters. Dit is de configuratie van het beheer van affiniteiten met IP adressen voor geoptimaliseerd uitgaand verkeer SMTP.
+In de **mta > child > smtp > IPAffinity** knoop, vorm de volgende parameters. Dit is de configuratie van het beheer van affiniteiten met IP adressen voor geoptimaliseerd uitgaand verkeer SMTP.
 
-Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) en [Het leiden van uitgaande verkeer SMTP met affiniteiten](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
+Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) en [Het leiden van uitgaand verkeer SMTP met affiniteiten](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
 
 <table> 
  <thead> 
@@ -1908,20 +1908,20 @@ Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../in
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domeinnaam: lokale domeinnaam die aan het IP-adres is gekoppeld. Gebruikt wanneer het uitgeven van een bevel van de HELO SMTP.<br /> </td> 
+   <td> Domeinnaam: lokale domeinnaam die aan het IP-adres is gekoppeld. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Logische naam: namen die door gebruikers zijn gekoppeld aan de affiniteit. Namen worden gescheiden met puntkomma's;<br /> </td> 
+   <td> Logische naam: namen die door gebruikers zijn gekoppeld aan de affiniteit. Namen worden met puntkomma's van elkaar gescheiden;<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In **mta > kind > smtp > IP** knoop, vorm de volgende parameters.
+In de **mta > child > smtp > IP** knoop, vorm de volgende parameters.
 
-Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 
 <table> 
  <thead> 
@@ -1939,13 +1939,13 @@ Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../in
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Bijbehorende id van openbare adres. Gebruikt als sleutel voor de statistiekserver. Moet numeriek zijn. Zie deze <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sectie</a>.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Bijbehorende id van openbare adres. Gebruikt als sleutel voor de statistiekserver. Moet numeriek zijn. Zie dit <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sectie</a>.<br /> </td> 
+   <td> Lang<br /> </td> 
   </tr> 
   <tr> 
-   <td> weight<br /> </td> 
+   <td> gewicht<br /> </td> 
    <td> Specificeert de frequentie van gebruik voor dit IP, met betrekking tot andere IPs (grotere gewichten leiden tot hogere frequenties).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
   </tr> 
   <tr> 
    <td> includeDomains<br /> </td> 
@@ -1959,7 +1959,7 @@ Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../in
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
-   <td> De naam van de computer verbonden aan het IP adres. Gebruikt wanneer het uitgeven van een bevel van de HELO SMTP.<br /> </td> 
+   <td> De naam van de computer verbonden aan het IP adres. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -1967,7 +1967,7 @@ Voor extra informatie, verwijs naar [Lijst van IP adressen aan gebruik](../../in
 
 ## nmac {#nmac}
 
-Hier zijn de verschillende parameters van de **name** knoop. Dit is de configuratie van voor de levering van de pushmelding.
+Hier zijn de verschillende parameters van **nmac** knooppunt. Dit is de configuratie van voor de levering van de pushmelding.
 
 <table> 
  <thead> 
@@ -1990,7 +1990,7 @@ Hier zijn de verschillende parameters van de **name** knoop. Dit is de configura
 
 ### doorgeven {#relay-1}
 
-Hier zijn de verschillende parameters van **name > relais** knoop. Dit vormt het gebruik van een relais voor de berichtlevering (ios http2 schakelaar).
+Hier zijn de verschillende parameters van **nmac > relais** knooppunt. Dit vormt het gebruik van een relais voor de berichtlevering (ios http2 schakelaar).
 
 <table> 
  <thead> 
@@ -2010,8 +2010,8 @@ Hier zijn de verschillende parameters van **name > relais** knoop. Dit vormt het
   </tr> 
   <tr> 
    <td> poort<br /> </td> 
-   <td> Relay-port<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Relaispoort<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 443<br /> </td> 
   </tr> 
   <tr> 
@@ -2025,7 +2025,7 @@ Hier zijn de verschillende parameters van **name > relais** knoop. Dit vormt het
 
 ## gelijnd {#pipelined}
 
-Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configuratie van de module van de gebeurtenisverwerking voor de Diensten van de Pijpleiding.
+Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de configuratie van de module van de gebeurtenisverwerking voor de Diensten van de Pijpleiding.
 
 <table> 
  <thead> 
@@ -2051,7 +2051,7 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
-   <td> URL om een gatewayteken te verkrijgen.<br /> </td> 
+   <td> URL om een gatewaytoken te verkrijgen.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'https://api.omniture.com' <br /> </td> 
   </tr> 
@@ -2082,7 +2082,7 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
    <td> Opslagperiode status: frequentie waarmee de interne informatie van het proces in een bestand wordt opgeslagen. Inactief als 0. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -2093,26 +2093,26 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
    <td> Statusserverpoort: De serverhaven van HTTP die u toestaat om de status van het proces te vragen. Inactief als 0.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 7781<br /> </td> 
   </tr> 
   <tr> 
@@ -2123,43 +2123,43 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
   </tr> 
   <tr> 
    <td> pointerFlushPeriodSec<br /> </td> 
-   <td> Vertraging voordat de aanwijzer is opgeslagen: De aanwijzer wordt minstens één keer in de database opgeslagen gedurende deze periode (nuttig in het geval van een lage activiteit).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Vertraging voordat de aanwijzer is opgeslagen: de aanwijzer wordt minstens één keer in de database opgeslagen gedurende deze periode (nuttig in het geval van een lage activiteit).<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
    <td> Aantal threads voor gebeurtenisverwerking met een gepersonaliseerde JavaScript-connector.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> processingThreads<br /> </td> 
-   <td> Aantal draden voor gebeurtenisverwerking.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Aantal threads voor gebeurtenisverwerking.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> retryPeriodSec<br /> </td> 
-   <td> Vertraging tussen verwerking als er een fout is.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Vertraging tussen de verwerking bij een fout.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> retryValiditySec<br /> </td> 
-   <td> Na deze periode vervalt: De gebeurtenis beëindigen als de verwerking na deze periode nog steeds mislukt.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Na deze periode vervalt: de gebeurtenis te beëindigen als de verwerking na deze periode nog steeds mislukt.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2168,7 +2168,7 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
 
 ## repareren {#repair}
 
-Hier zijn de verschillende parameters van **repareert** knoop. Dit is de configuratie van de module van de gegevensbestandreparatie.
+Hier zijn de verschillende parameters van **repareren** knooppunt. Dit is de configuratie van de module van de gegevensbestandreparatie.
 
 <table> 
  <thead> 
@@ -2183,7 +2183,7 @@ Hier zijn de verschillende parameters van **repareert** knoop. Dit is de configu
   <tr> 
    <td> RepareerActionDelayMin<br /> </td> 
    <td> Herstellingsmodule voor leveringsacties: vertraging (in minuten) waarna de leveringsacties door de reparatiemodule kunnen worden verwerkt. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
  </tbody> 
@@ -2191,9 +2191,9 @@ Hier zijn de verschillende parameters van **repareert** knoop. Dit is de configu
 
 ## securityZone {#securityzone}
 
-Hier zijn de verschillende parameters van **securityZone** knoop.
+Hier zijn de verschillende parameters van **securityZone** knooppunt.
 
-Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zones.md) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Beveiligingszones definiëren](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2213,13 +2213,13 @@ Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zone
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
-   <td> Autoriseer de gebruiker om de toepassing zonder een wachtwoord te gebruiken.<br /> </td> 
+   <td> Geef de gebruiker toestemming om de toepassing zonder wachtwoord te gebruiken.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowHTTP<br /> </td> 
-   <td> Autoriseer het gebruik van HTTP voor exploitant opening van een sessie.<br /> </td> 
+   <td> Geef het gebruik van HTTP voor aanmeldingsgegevens voor de operator toe.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2231,7 +2231,7 @@ Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zone
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
-   <td> Tokens voor gebruikers-/wachtwoordsessies autoriseren.<br /> </td> 
+   <td> Tokens voor gebruikers-/wachtwoordsessies autoriseren<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2255,7 +2255,7 @@ Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zone
   </tr> 
   <tr> 
    <td> showErrors<br /> </td> 
-   <td> Foutgegevens weergeven<br /> </td> 
+   <td> Foutdetails weergeven<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2289,9 +2289,9 @@ Hier is de standaardconfiguratie:
 
 ### subNetwork {#subnetwork}
 
-Hier zijn de verschillende parameters van **securityZone > subNetwork** knoop.
+Hier zijn de verschillende parameters van **securityZone > subNetwork** knooppunt.
 
-Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zones.md) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Beveiligingszones definiëren](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2310,7 +2310,7 @@ Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zone
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
-   <td> mask<br /> </td> 
+   <td> masker<br /> </td> 
    <td> Masker of adres<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
@@ -2332,7 +2332,7 @@ Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zone
 
 ## sms {#sms}
 
-Hier zijn de verschillende parameters van de **sms** knoop. Dit is de configuratie van de binnenkomende het beheersmodule van SMS.
+Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configuratie van de binnenkomende het beheersmodule van SMS.
 
 <table> 
  <thead> 
@@ -2359,73 +2359,73 @@ Hier zijn de verschillende parameters van de **sms** knoop. Dit is de configurat
   <tr> 
    <td> dataRetentionDays<br /> </td> 
    <td> Maximumaantal dagen dat bestanden werkbestanden zijn die door de SMPP-connector worden bewaard.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> dataSizeMo<br /> </td> 
    <td> Maximale grootte in MB van de SMPP-werkbestanden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 512<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
-   <td> Herhaling van het sessiecontinuïteitskader: max. periode in seconden tussen twee kaders voor het op de hoogte brengen dat de ontvangende zitting nog wordt toegelaten.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Herhaling van het sessiecontinuïteitskader: max. periode in seconden tussen twee frames om aan te geven dat de ontvangende sessie nog steeds is ingeschakeld.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
-   <td> Zoekfrequentie: Periode voor opiniepeiling van SMS-account.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Zoekfrequentie: Periode voor opiniepeiling van SMS-accounts.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
-   <td> Frequentie voor opnieuw laden van account: database reload frequency of accounts to polate.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Frequentie voor opnieuw laden van account: opnieuw laden van de database van rekeningen die moeten worden gepolled.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> srReadDelay<br /> </td> 
    <td> Aantal seconden vertraging bij SR-verwerking: alleen SRs met een terugwinningsdatum vroeger dan de huidige tijd minus de duur in seconden die door srReadDelay wordt gegeven. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Communicatie onderbreking met de gateway van SMS.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
  </tbody> 
@@ -2433,7 +2433,7 @@ Hier zijn de verschillende parameters van de **sms** knoop. Dit is de configurat
 
 ### netsize {#netsize}
 
-Hier zijn de verschillende parameters van de **sms > netsize** knoop.
+Hier zijn de verschillende parameters van **sms > netsize** knooppunt.
 
 <table> 
  <thead> 
@@ -2447,8 +2447,8 @@ Hier zijn de verschillende parameters van de **sms > netsize** knoop.
  <tbody> 
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
-   <td> Timeout in seconden wanneer het vestigen van een verbinding met Netsize.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Time-out in seconden bij het tot stand brengen van een verbinding met Netsize.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
  </tbody> 
@@ -2456,7 +2456,7 @@ Hier zijn de verschillende parameters van de **sms > netsize** knoop.
 
 ## stat {#stat}
 
-Hier zijn de verschillende parameters van **stat** knoop. Dit is de configuratie van de MTA statistiekmodule.
+Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configuratie van de MTA statistiekmodule.
 
 <table> 
  <thead> 
@@ -2482,37 +2482,37 @@ Hier zijn de verschillende parameters van **stat** knoop. Dit is de configuratie
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> poort<br /> </td> 
-   <td> Server luisterpoort. Zie deze <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">sectie</a>.<br /> </td> 
+   <td> Server luisterpoort. Zie dit <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">sectie</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2521,7 +2521,7 @@ Hier zijn de verschillende parameters van **stat** knoop. Dit is de configuratie
 
 ## syslogd {#syslogd}
 
-Hier zijn de verschillende parameters van **syslogd** knoop. Dit is de configuratie van de het beheersmodule van het Logboek.
+Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de configuratie van de het beheersmodule van het Logboek.
 
 <table> 
  <thead> 
@@ -2547,43 +2547,43 @@ Hier zijn de verschillende parameters van **syslogd** knoop. Dit is de configura
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxFileSizeMb<br /> </td> 
    <td> Maximale grootte in MB voor een logbestand. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> maxNumberOfLoginsFiles<br /> </td> 
    <td> Maximumaantal logins.log-bestanden dat behouden moet blijven. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 365<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2592,7 +2592,7 @@ Hier zijn de verschillende parameters van **syslogd** knoop. Dit is de configura
 
 ## bijhouden {#tracking}
 
-Hier zijn de verschillende parameters van **tracking** knoop. Dit is de configuratie van de volgende server.
+Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de configuratie van de volgende server.
 
 <table> 
  <thead> 
@@ -2618,20 +2618,20 @@ Hier zijn de verschillende parameters van **tracking** knoop. Dit is de configur
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
-   <td> Schakel misvormde URL's die zijn gegenereerd op basis van vorige builds uit.<br /> </td> 
+   <td> Schakel onjuist gevormde URL's die zijn gegenereerd uit vorige builds uit.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> consolidatiePeriodSec<br /> </td> 
    <td> Consolidatieperiode<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
    <td> Deduplicatieopeningen: Verwijder dubbele open het volgen logboeken om de gevolgen van postvoorproeven in postlezers zoals Vooruitzichten te beperken.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -2643,79 +2643,79 @@ Hier zijn de verschillende parameters van **tracking** knoop. Dit is de configur
   <tr> 
    <td> errorIgnorePeriod<br /> </td> 
    <td> Foutindicatoren bijwerken: maximale duur voordat de foutindicatoren opnieuw worden berekend.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> indicatorDuration<br /> </td> 
    <td> Indicatoren berekenen tijdens: duur na de geldigheidsdatum van een levering waarna de geconsolideerde indicatoren niet langer worden berekend.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd bij het starten van het proces <br /> </td> 
+   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> logCountPerRequest<br /> </td> 
-   <td> Aantal logbestanden dat is aangevraagd door aanroep naar de externe traceringsserver.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Aantal logboeken die door vraag aan de verre volgende server worden gevraagd.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
    <td> API sleutel voor de Integratie van het Eindpunt van de Dienst Phishbowl. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
-   <td> Eindpunt voor de Integratie van het Eindpunt van de Dienst Phishbowl. Dit beschermt omleiding van misvormde URLs die van oudere bouwstijlen worden geproduceerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Eindpunt voor de Integratie van het Eindpunt van de Dienst Phishbowl. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> Tot X% van tekstspatiëring negeren: werk de trackingindicatoren niet bij zolang de verhouding van tijdschriften die nog niet in aanmerking zijn genomen deze waarde niet bereikt.<br /> </td> 
+   <td> Tot X% van tekstspatiëring negeren: de volgindicatoren niet bijwerken zolang de verhouding van tijdschriften die nog niet in aanmerking zijn genomen deze waarde niet bereikt.<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingIgnorePeriod<br /> </td> 
-   <td> Trackingindicatoren bijwerken: maximale duur voordat trackingindicatoren opnieuw worden berekend.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Trackingindicatoren bijwerken: maximumduur voordat de traceerindicatoren opnieuw worden berekend.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> userAgentCacheSize<br /> </td> 
    <td> Grootte van browserid-cache.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -2723,7 +2723,7 @@ Hier zijn de verschillende parameters van **tracking** knoop. Dit is de configur
 
 ## trackinglogd {#trackinglogd}
 
-Hier zijn de verschillende parameters van de **trackinglogd** knoop. Dit is de configuratie van het volgende logboek schrijvend daemon.
+Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de configuratie van het volgende logboek schrijvend daemon.
 
 <table> 
  <thead> 
@@ -2749,62 +2749,62 @@ Hier zijn de verschillende parameters van de **trackinglogd** knoop. Dit is de c
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd bij het starten van het proces <br /> </td> 
+   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
    <td> Max. schrijfpogingen: maximumaantal bestanden dat kan worden gemaakt in geval van een schrijffout in logbestanden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
    <td> Maximale loggrootte: maximale ruimte die wordt gebruikt door het aanmelden op de schijf (in MB). Mag niet minder dan 100 MB zijn. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
    <td> Maximum aantal logbestanden: maximumaantal logbestanden dat in het gedeelde geheugen is opgeslagen. Kan niet kleiner zijn dan 10000. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> Aantal stammen vóór zuivering: Het aantal logbestanden dat is ingevoegd voordat de logbestanden worden gewist. Mag niet lager zijn dan 50000.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 50000<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> webTrackingParamSize<br /> </td> 
-   <td> Maximumaantal tekens dat in het gedeelde geheugen is opgeslagen voor extra webtrackingparameters.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximumaantal tekens dat in gedeeld geheugen is opgeslagen voor extra parameters voor webtracking.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 64<br /> </td> 
   </tr> 
  </tbody> 
@@ -2812,9 +2812,9 @@ Hier zijn de verschillende parameters van de **trackinglogd** knoop. Dit is de c
 
 ## web {#web}
 
-Hier zijn de verschillende parameters van **web** knoop. Dit is de configuratie van de Module van het Web.
+Hier zijn de verschillende parameters van **web** knooppunt. Dit is de configuratie van de Module van het Web.
 
-Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#default-port-for-tomcat).
+Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2828,20 +2828,20 @@ Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#
  <tbody> 
   <tr> 
    <td> JVMOptions<br /> </td> 
-   <td> Opties van de JVM doorgegeven als een tekenreeks.<br /> </td> 
+   <td> Opties van de JVM worden doorgegeven als een tekenreeks.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> MaxThreads<br /> </td> 
    <td> Maximum aantal draden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 75<br /> </td> 
   </tr> 
   <tr> 
    <td> MinSpareThreads<br /> </td> 
    <td> Minimum aantal draden.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -2858,55 +2858,55 @@ Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat-luistercontrolepoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> Tomcat-luistercontrolepoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-luisterpoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> Tomcat HTTP-luisterpoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
    <td> Grootte van de rij voor Vraag SubmitDelivery: maximumaantal vraag van de ZEEP SubmitDelivery die een rij kan worden gevormd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB)<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Port toelatend relais van berichten.<br /> </td> 
+   <td> Meldingsrelais: HostName:Port die relais van berichten toelaat.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2921,7 +2921,7 @@ Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#
 
 ### jsp {#jsp}
 
-Hier zijn de verschillende parameters van **web > jsp** knoop. Dit is de configuratie van de parameters die door JSPs worden gebruikt.
+Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de configuratie van de parameters die door JSPs worden gebruikt.
 
 <table> 
  <thead> 
@@ -2934,8 +2934,8 @@ Hier zijn de verschillende parameters van **web > jsp** knoop. Dit is de configu
  </thead> 
  <tbody> 
   <tr> 
-   <td> debug<br /> </td> 
-   <td> Uitvoering van JSP in zuivert wijze of niet.<br /> </td> 
+   <td> foutopsporing<br /> </td> 
+   <td> Uitvoering van JSP in foutopsporingsmodus of niet.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2960,7 +2960,7 @@ Hier zijn de verschillende parameters van **web > jsp** knoop. Dit is de configu
  </tbody> 
 </table>
 
-Het knooppunt **web > jsp > classpath** bevat de lijst met alle klassenpaden die moeten worden gebruikt bij het starten van JVM. Hier is de standaardconfiguratie:
+De **web > jsp > classpath** knooppunt bevat de lijst met alle klassenpaden die moeten worden gebruikt bij het starten van JVM. Hier is de standaardconfiguratie:
 
 ```
 '$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
@@ -3001,7 +3001,7 @@ Het knooppunt **web > jsp > classpath** bevat de lijst met alle klassenpaden die
 
 ### jssp {#jssp}
 
-Hier volgen de verschillende parameters van het knooppunt **web > jssp**. Dit is de configuratie van de parameters die door JSSPs worden gebruikt.
+Hier zijn de verschillende parameters van **web > jssp** knooppunt. Dit is de configuratie van de parameters die door JSSPs worden gebruikt.
 
 <table> 
  <thead> 
@@ -3015,26 +3015,26 @@ Hier volgen de verschillende parameters van het knooppunt **web > jssp**. Dit is
  <tbody> 
   <tr> 
    <td> collectsGarbageAfterRequest<br /> </td> 
-   <td> Laat de vuilnisman van de context JavaScript na elke vraag toe.<br /> </td> 
+   <td> Schakelt de opschoonfunctie van de JavaScript-context na elke query in.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
    <td> Maximumaantal pagina's dat door een JavaScript-context wordt aangeboden. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Het knooppunt **web > jsp > classpath** bevat de lijst met alle klassenpaden die moeten worden gebruikt bij het starten van JVM.
+De **web > jsp > classpath** knooppunt bevat de lijst met alle klassenpaden die moeten worden gebruikt bij het starten van JVM.
 
 ### doorgeven {#relay-2}
 
-Hier zijn de verschillende parameters van **web > relais** knoop. Dit is de configuratie van het relais voor HTTP- verzoeken tussen twee streken.
+Hier zijn de verschillende parameters van **web > relais** knooppunt. Dit is de configuratie van het relais voor HTTP- verzoeken tussen twee streken.
 
-Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3054,7 +3054,7 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Verboden teken(s) (domein): lijst met verboden tekens in de sectie 'Authority' van een URI.<br /> </td> 
+   <td> Verboden teken(s) (domein): lijst met verboden tekens in de sectie 'gezag' van een URI.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
@@ -3066,13 +3066,13 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
-   <td> Waarde van de module 'mod_dir'-optie: lijst van dossiers die tijdens een vraag op een omslag moeten worden gebruikt.<br /> </td> 
+   <td> Waarde van de module 'mod_dir'-optie: lijst met bestanden die moeten worden gebruikt tijdens een query op een map.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
   <tr> 
    <td> startRelay<br /> </td> 
-   <td> Start de HTTP relaismodule.<br /> </td> 
+   <td> Start de HTTP relay module.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3086,14 +3086,14 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
    <td> timeout<br /> </td> 
    <td> Wacht even voordat u de verboden URL verwijdert.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '60'<br /> </td> 
+   <td> "60"<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Voeg een **web > relais > url** knoop voor elke URL aan relais toe (tussenvoegselorde bepaalt prioriteit) met de volgende parameters.
+Voeg een **web > relais > url** knooppunt voor elke URL die moet worden doorgestuurd (invoegvolgorde definieert prioriteit) met de volgende parameters.
 
-Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) en [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources) voor meer informatie.
+Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) en [sectie](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3112,14 +3112,14 @@ Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/con
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> deny<br /> </td> 
+   <td> ontkennen<br /> </td> 
    <td> Toegang tot deze URL's weigeren (een HTTP 403-fout retourneren)<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> hostMask<br /> </td> 
-   <td> DNS-alias naar relais: door komma's gescheiden lijst met DNS-aliasmaskers die moeten worden doorgestuurd (bijv. '*.adobe.com').<br /> </td> 
+   <td> DNS-alias naar relais: door komma's gescheiden lijst met DNS-aliasmaskers die moeten worden doorgestuurd (bijv. "*.adobe.com").<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3131,7 +3131,7 @@ Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/con
   </tr> 
   <tr> 
    <td> relaisHost<br /> </td> 
-   <td> Oorspronkelijke host toevoegen: gebruik de HTTP "Gastheer"kopbal van het originele verzoek wanneer het opnieuw afspelen.<br /> </td> 
+   <td> Oorspronkelijke host toevoegen: gebruik de HTTP 'Host'-header van de oorspronkelijke aanvraag bij het opnieuw afspelen.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3145,18 +3145,18 @@ Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/con
    <td> status<br /> </td> 
    <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blacklist' (url added to lijst van gewezen personen in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> normal<br /> </td> 
+   <td> normaal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL van de doelpagina: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> URL van de doelpagina: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Maximale uitvoeringstijd (in seconden) van het verzoek dat wordt afgelost.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Maximale uitvoeringstijd (in seconden) van de aanvraag die wordt afgespeeld.<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3233,9 +3233,9 @@ Hier is de standaardconfiguratie:
      timeout="" status="spare" httpAllowed="true" urlPath="/*.jpg"/>
 ```
 
-Voeg een **web > relais > responseHeader** knoop voor elke kopbal van HTTP toe om aan antwoorden toe te voegen die aan het relais door:sturen.
+Voeg een **web > relais > responseHeader** knoop voor elke kopbal van HTTP aan antwoorden toe te voegen die aan het relais door:sturen.
 
-Raadpleeg [HTTP-koppen beheren](../../installation/using/configuring-campaign-server.md#managing-http-headers) voor aanvullende informatie.
+Raadpleeg voor meer informatie [HTTP-headers beheren](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
 <table> 
  <thead> 
@@ -3267,9 +3267,9 @@ Hier is de standaardconfiguratie:
 
 ### omleiding {#redirection}
 
-Hier zijn de verschillende parameters van **web > redirection** knoop. Dit is de configuratie van de omleidingsmodule.
+Hier zijn de verschillende parameters van **web > omleiden** knooppunt. Dit is de configuratie van de omleidingsmodule.
 
-Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3308,7 +3308,7 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
   <tr> 
    <td> defLogCount<br /> </td> 
    <td> Aantal logbestanden per aanroep: aantal logboeken die door gebrek op een vraag van methode GetTrackingLogs zijn teruggekeerd.<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
@@ -3320,7 +3320,7 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
   <tr> 
    <td> maxJobsInCache<br /> </td> 
    <td> Maximum aantal taken: maximumaantal leveringsacties in cache. Mag niet lager zijn dan 50. <br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
@@ -3350,9 +3350,9 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/deploy
  </tbody> 
 </table>
 
-Hier volgen de verschillende parameters van het knooppunt **web > redirection > reserveServer**.
+Hier zijn de verschillende parameters van **web > redirection > reserveServer** knooppunt.
 
-Raadpleeg [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Overbodige tekstspatiëring](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 <table> 
  <thead> 
@@ -3378,7 +3378,7 @@ Raadpleeg [Redundant tracking](../../installation/using/configuring-campaign-ser
   </tr> 
   <tr> 
    <td> url<br /> </td> 
-   <td> URL extra omleiding van server<br /> </td> 
+   <td> URL van extra omleidingsserver<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3387,9 +3387,9 @@ Raadpleeg [Redundant tracking](../../installation/using/configuring-campaign-ser
 
 ### spamCheck {#spamcheck}
 
-Hier zijn de verschillende parameters van **web > spamCheck** knoop. Dit is de configuratie de anti-spam het scoren van e-mail evaluatieparameters.
+Hier zijn de verschillende parameters van **web > spamCheck** knooppunt. Dit is de configuratie de anti-spam het scoren van e-mail evaluatieparameters.
 
-Voor extra informatie, verwijs naar [het Vormen SpamAssassin](../../installation/using/configuring-spamassassin.md).
+Raadpleeg voor meer informatie [SpamAssassin configureren](../../installation/using/configuring-spamassassin.md).
 
 <table> 
  <thead> 
@@ -3402,7 +3402,7 @@ Voor extra informatie, verwijs naar [het Vormen SpamAssassin](../../installation
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Uit te voeren opdracht om de anti-spamscore van een e-mail te evalueren (bijvoorbeeld 'perl spamcheck.pl').<br /> </td> 
+   <td> Uit te voeren opdracht om de anti-spamscore van een e-mail te evalueren (bijvoorbeeld "perl spamcheck.pl").<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -3410,9 +3410,9 @@ Voor extra informatie, verwijs naar [het Vormen SpamAssassin](../../installation
 
 ## wfserver {#wfserver}
 
-Hier zijn de verschillende parameters van **wfserver** knoop. Dit is de configuratie van het werkschemaproces.
+Hier zijn de verschillende parameters van **wfserver** knooppunt. Dit is de configuratie van het werkschemaproces.
 
-Raadpleeg [Workflows met hoge beschikbaarheid en affiniteiten](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities) voor aanvullende informatie.
+Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarheid](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 <table> 
  <thead> 
@@ -3426,7 +3426,7 @@ Raadpleeg [Workflows met hoge beschikbaarheid en affiniteiten](../../installatio
  <tbody> 
   <tr> 
    <td> affiniteit<br /> </td> 
-   <td> Affinity<br /> </td> 
+   <td> affiniteit<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3444,43 +3444,43 @@ Raadpleeg [Workflows met hoge beschikbaarheid en affiniteiten](../../installatio
   </tr> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Punt<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Periode<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
+   <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
-   <td> Long<br /> </td> 
+   <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Port toelatend relais van berichten.<br /> </td> 
+   <td> Meldingsrelais: HostName:Port die relais van berichten toelaat.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De syslogmodule moet daarom prioriteit 0 hebben.<br /> </td> 
+   <td> Prioriteit aan het begin. Modules met lage prioriteit worden eerst gestart en voor het laatst gestopt. De module syslogd moet daarom prioriteit 0 hebben.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 

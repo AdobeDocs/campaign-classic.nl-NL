@@ -17,16 +17,16 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-De technische configuratie en software die nodig zijn voor de installatie van Adobe Campaign worden beschreven in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+De technische configuratie en software die nodig zijn voor de installatie van Adobe Campaign worden weergegeven in het gedeelte [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 Het installatieproces van de Adobe Campaign-server voor meervoudig gebruik wordt hieronder beschreven in [De server installeren](../../installation/using/installing-the-server.md).
 
 De belangrijkste stappen zijn:
 
 1. Installeer de toepassingsserver. Raadpleeg [Het installatieprogramma uitvoeren](../../installation/using/installing-the-server.md#executing-the-installation-program).
-1. Integreer met een server van het Web (facultatief, afhankelijk van de opgestelde componenten), verwijs naar [het Vormen van de server van het Web IIS](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+1. Integreer met een server van het Web (facultatief, afhankelijk van de opgestelde componenten), verwijs naar [Het vormen van de server van het Web IIS](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbestand en de server vormen. Voor meer op dit, verwijs naar [Ongeveer aanvankelijke configuratie](../../installation/using/about-initial-configuration.md).
+Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbestand en de server vormen. Raadpleeg voor meer informatie hierover [Informatie over initiële configuratie](../../installation/using/about-initial-configuration.md).
 
 >[!NOTE]
 >

@@ -23,21 +23,21 @@ Een vereniging groepeert het resultaat van verscheidene binnenkomende activiteit
 
 >[!NOTE]
 >
->Raadpleeg [Verschillende doelen combineren (Union)](targeting-data.md#combining-several-targets--union-) voor meer informatie over het configureren en gebruiken van de samenvoegingsactiviteit.
+>Voor meer bij het vormen van en het gebruiken van de vakbondsactiviteit, verwijs naar [Combinatie van verschillende doelen (Unie)](targeting-data.md#combining-several-targets--union-).
 
 ## Voorbeeld van Vereniging {#union-example}
 
 In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd om de lijst bij te werken. De twee vragen richten zich op de ontvangers. De resultaten zijn derhalve gebaseerd op dezelfde tabel.
 
-1. Voeg een activiteit van het type **[!UICONTROL Union]** direct na de twee vragen en vóór een update-type activiteit van de lijst in dan open het.
+1. Een **[!UICONTROL Union]** -type activiteit direct na de twee vragen en vóór een update-type activiteit van de lijst dan open het.
 1. U kunt een label invoeren.
-1. Selecteer de verzoeningsmethode **[!UICONTROL Keys only]** aangezien, in dit voorbeeld, de populatie die uit vragen resulteert verenigbare gegevens bevat.
+1. Selecteer **[!UICONTROL Keys only]** afstemmingsmethode, aangezien in dit voorbeeld de populatie die het resultaat is van query’s consistente gegevens bevat.
 1. Als u aanvullende gegevens voor de query&#39;s hebt toegevoegd, kunt u alleen de gedeelde gegevens behouden.
-1. Als u de grootte van de uiteindelijke populatie wilt beperken, schakelt u het selectievakje **[!UICONTROL Limit size of generated population]** in.
+1. Als u de omvang van de uiteindelijke populatie wilt beperken, controleert u de **[!UICONTROL Limit size of generated population]** doos.
 
    Specificeer dit definitieve aantal door het maximumaantal ontvangers in te gaan en door de vraag te selecteren waarvan de bevolking prioriteit zal nemen.
 
-1. Goedkeuren van de samenvoegingsactiviteit en configureren vervolgens de update-activiteit van de lijst (zie [Update van lijst](list-update.md)).
+1. Goedkeuren van de vakbondsactiviteit en configureren van de update-activiteit van de lijst (zie [Lijstupdate](list-update.md)).
 1. De workflow starten. Het aantal resultaten wordt weergegeven en de lijst die is gedefinieerd in de updateactiviteit van de lijst, wordt gemaakt of bijgewerkt. Deze lijst bevat de reeks ontvangers voor beide query&#39;s of, indien van toepassing, het nummer dat bij de vorige stap is gedefinieerd.
 
    ![](assets/union_example.png)
@@ -55,4 +55,4 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert het doel dat uit de unie voortvloeit. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert,  **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en  **[!UICONTROL recCount]** is het aantal elementen in de lijst.
+Deze reeks van drie waarden identificeert het doel dat uit de unie voortvloeit. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.

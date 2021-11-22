@@ -25,17 +25,17 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 
 De machtigingen zijn van toepassing op operatorprofielen of groepen operatoren.
 
-Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Voor meer informatie over veiligheidsstreken in [deze pagina](../../installation/using/security-zones.md).
+Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Voor meer informatie over beveiligingszones in [deze pagina](../../installation/using/security-zones.md).
 
 Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
-* U kunt groepen operatoren definiëren waaraan u rechten toewijst en de operatoren vervolgens koppelen aan een of meer groepen. Op deze manier kunt u rechten opnieuw gebruiken en de consistentie van operatorprofielen verhogen. Het vergemakkelijkt ook het beheer en het onderhoud van profielen. Het creëren en het beheer van de groep worden voorgesteld in [deze sectie](access-management-groups.md).
+* U kunt groepen operatoren definiëren waaraan u rechten toewijst en de operatoren vervolgens koppelen aan een of meer groepen. Op deze manier kunt u rechten opnieuw gebruiken en de consistentie van operatorprofielen verhogen. Het vergemakkelijkt ook het beheer en het onderhoud van profielen. Het creëren en beheren van groepen worden voorgesteld in [deze sectie](access-management-groups.md).
 
-* U kunt benoemde rechten rechtstreeks toewijzen aan gebruikers, in sommige gevallen om de rechten die via groepen zijn toegewezen, te overladen. Deze rechten worden weergegeven op [deze pagina](access-management-named-rights.md).
+* U kunt benoemde rechten rechtstreeks toewijzen aan gebruikers, in sommige gevallen om de rechten die via groepen zijn toegewezen, te overladen. Deze rechten worden weergegeven in [deze pagina](access-management-named-rights.md).
 
 >[!NOTE]
 >
->Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [checklist voor beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) te lezen.
+>Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [Controlelijst voor beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
 
 Leer hoe te om toegang en opstellingstoestemmingen in deze secties te verlenen:
 

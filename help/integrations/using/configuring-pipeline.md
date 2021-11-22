@@ -48,18 +48,18 @@ Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
 
 Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
-Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Merk op dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl het toevoegen van API aan de referentie van de Adobe I/O.
+Voor klanten op locatie raadpleegt u de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) pagina. Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** tijdens het toevoegen van API aan de Adobe I/O-referentie.
 
 ## Stap 2: De pijplijnoptie NmsPipeline_Config configureren {#configuring-nmspipeline}
 
 Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
 
-1. Open in Adobe Campaign het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in **[!UICONTROL Explorer]**.
+1. Open in Adobe Campaign het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** in de **[!UICONTROL Explorer]**.
 
-1. Selecteer de optie **[!UICONTROL NmsPipeline_Config]**.
+1. Selecteer **[!UICONTROL NmsPipeline_Config]** optie.
 
-1. In het veld **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
+1. In de **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
 
    ```
    {
@@ -104,7 +104,7 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
 
 De pijpleiding werkt als een leverancier- en consumentenmodel. Berichten worden alleen voor een individuele consument verbruikt: elke consument krijgt zijn eigen exemplaar van de berichten .
 
-De **Consumer** parameter identificeert de instantie als één van deze consumenten. De identiteit van de instantie zal de pijpleiding roepen. U kunt deze vullen met de instantienaam die u kunt vinden op de pagina Bewaking van de clientconsole.
+De **Consumenten** parameter geeft de instantie aan als een van deze consumenten . De identiteit van de instantie zal de pijpleiding roepen. U kunt deze vullen met de instantienaam die u kunt vinden op de pagina Bewaking van de clientconsole.
 
 De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Door verschillende consumenten voor verschillende instanties te gebruiken, kunt u ervoor zorgen dat elk bericht naar elke instantie wordt verzonden.
 
@@ -112,8 +112,8 @@ De pijpleidingsdienst houdt spoor van de berichten die door elke consument worde
 
 Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 
-* Voeg of geef trekkers onder **[!UICONTROL Triggers]** uit, zou u niet de rest moeten uitgeven.
-* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](https://jsonlint.com/).
+* Triggers toevoegen of bewerken onder **[!UICONTROL Triggers]**, moet u de rest niet bewerken.
+* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg deze [website](https://jsonlint.com/) bijvoorbeeld.
 * &quot;name&quot; komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumenten&quot; komt overeen met de naam van de oproepende instantie of toepassing.
 * Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.
@@ -132,7 +132,7 @@ De lijst met optionele parameters is hieronder te vinden:
 | authPrivateKey(Verouderd) | De persoonlijke sleutel, het openbare deel dat in de Oudere Oath-toepassing wordt geüpload, AES gecodeerd met de optie XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Schakel authentificatie uit, verbindend zonder gatewaytokens slechts door sommige eindpunten van de ontwikkelingsPijpleiding zal worden goedgekeurd. |
 | findPipelineEndpoint | URL om het eindpunt te vinden van de Diensten van de Pijpleiding dat voor deze huurder moet worden gebruikt. Standaard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | De periode tussen twee dumps van het interne staatsproces in ```var/INSTANCE/pipelined.json.``` <br> Interne staat is ook hier op bestelling toegankelijk: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Periode tussen twee dumps van het proces van de interne staat in ```var/INSTANCE/pipelined.json.``` <br> De interne staat is ook hier op bestelling toegankelijk: ```http://INSTANCE:7781/pipelined/status``` |
 | forcePipelineEndpoint | Maak de opsporing van PipelineServicesEndpoint onbruikbaar om het te dwingen |
 | monitorServerPort | Met behulp van een leidinggevend proces wordt naar deze poort geluisterd om het interne statusproces hier te verzorgen: ```http://INSTANCE:PORT/pipelined/status```. <br>Standaard is 7781 |
 | pointerFlushMessageCount | Wanneer dit aantal berichten wordt verwerkt, zullen de compensatie in het gegevensbestand worden bewaard. <br> Standaard is 1000 |
@@ -164,6 +164,6 @@ nlserver restart pipelined@instance
 
 Volg onderstaande stappen om de installatie van de pijplijn voor provisioning te valideren:
 
-* Zorg ervoor het [!DNL pipelined] proces loopt.
+* Zorg ervoor dat de [!DNL pipelined] -proces wordt uitgevoerd.
 * Controleer pipelined.log voor de logboeken van de pijpleidingsverbinding.
 * Controleer de verbinding en of pingelt wordt ontvangen. Gehoste klanten kunnen de Controle van de Console van de Cliënt gebruiken.

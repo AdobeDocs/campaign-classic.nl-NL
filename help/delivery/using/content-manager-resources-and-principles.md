@@ -27,11 +27,11 @@ Wanneer u het XML-document en de XSL- of JavaScript-sjabloonopmaakmodellen combi
 
 De volgende middelen worden vereist voor inhoudsconfiguratie:
 
-* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [Gegevensschema&#39;s](data-schemas.md).
-* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. Raadpleeg [Invoerformulieren](input-forms.md) voor meer informatie.
-* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Raadpleeg [Afbeeldingsbeheer](formatting.md#image-management) voor meer informatie.
-* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Raadpleeg [Opmaak](formatting.md) voor meer informatie hierover.
-* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. Raadpleeg [Publicatiesjablonen](publication-templates.md) voor meer informatie.
-* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Raadpleeg [Samenvoegtoepassing](publication-templates.md#aggregator) voor meer informatie hierover.
-* Publicatiesjablonen: definitie van publicatiesjablonen. Raadpleeg [Publicatiesjablonen](publication-templates.md) voor meer informatie.
-* Inhoud: te maken en te publiceren inhoudsinstanties. Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](using-a-content-template.md).
+* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Raadpleeg voor meer informatie hierover [Gegevensschema&#39;s](data-schemas.md).
+* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. Raadpleeg voor meer informatie hierover [Invoerformulieren](input-forms.md).
+* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Raadpleeg voor meer informatie hierover [Afbeeldingsbeheer](formatting.md#image-management).
+* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Raadpleeg voor meer informatie hierover [Opmaak](formatting.md).
+* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. Raadpleeg voor meer informatie hierover [Publicatiesjablonen](publication-templates.md).
+* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Raadpleeg voor meer informatie hierover [aggregator](publication-templates.md#aggregator).
+* Publicatiesjablonen: definitie van publicatiesjablonen. Raadpleeg voor meer informatie hierover [Publicatiesjablonen](publication-templates.md).
+* Inhoud: te maken en te publiceren inhoudsinstanties. Raadpleeg voor meer informatie hierover [Een inhoudssjabloon gebruiken](using-a-content-template.md).

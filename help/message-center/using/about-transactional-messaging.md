@@ -20,7 +20,7 @@ ht-degree: 7%
 
 ## Overzicht {#overview}
 
-**Transactioneel overseinen**  (het Centrum van het Bericht) is een module van de Campagne die voor het beheren van de berichten van de douanetrekker wordt ontworpen die van gebeurtenissen worden geproduceerd die door een extern informatiesysteem worden verzonden.
+**Transactieberichten** (Berichtencentrum) is een module van de Campagne die voor het beheren van de berichten van de douanetrekker wordt ontworpen die van gebeurtenissen worden geproduceerd die door een extern informatiesysteem worden verzonden.
 
 Een transactiebericht is een individuele en unieke communicatie die in real time door een leverancier zoals een website wordt verzonden. Dit wordt vooral verwacht, omdat het belangrijke informatie bevat die de ontvanger wil controleren of bevestigen.
 
@@ -42,11 +42,11 @@ Transactionele berichtenmogelijkheden worden ontworpen om scalability te steunen
 
 De module van het Overseinen van Adobe Campaign Transactional integreert in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
 
-Deze eigenschap baseert zich op een specifieke architectuur, waar **uitvoeringsinstantie** van **control instantie** wordt gescheiden. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Voor meer op dit, zie [Transactionele overseinenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
+Deze functie is afhankelijk van een specifieke architectuur, waarbij de **uitvoeringsinstantie** wordt gescheiden van de **besturingsinstantie**. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Zie voor meer informatie [Transactionele berichtenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
->Als u nieuwe gebruikers wilt maken voor de uitvoering van Message Center-instanties die worden gehost op Adobe Cloud, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen aan toegang **[!UICONTROL Real time events (nmsRtEvent)]** omslagen vereisen.
+>Als u nieuwe gebruikers wilt maken voor instanties die worden gehost op de Adobe Cloud voor uitvoering in het Berichtencentrum, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om toegang te hebben **[!UICONTROL Real time events (nmsRtEvent)]** mappen.
 
 Het algemene proces van het transactieoverseinen kan als volgt worden beschreven:
 
@@ -56,7 +56,7 @@ Stel dat u een bedrijf bent met een website waar uw klanten producten kunnen kop
 
 Met Adobe Campaign kunt u een meldingsbericht verzenden naar klanten die producten aan hun winkelwagentje hebben toegevoegd. Wanneer een van hen uw website verlaat zonder door te gaan met hun aankopen (externe gebeurtenis die een Campagne-gebeurtenis activeert), wordt er automatisch een e-mailbericht over het verlaten van de winkelwagen naar hen verzonden (levering van transactiemeldingen).
 
-De belangrijkste stappen voor het plaatsen van dit in plaats zijn hieronder in [dit sectie](#key-steps) beschreven.
+De belangrijkste stappen om dit in te voeren zijn hieronder beschreven [deze sectie](#key-steps).
 
 >[!NOTE]
 >
@@ -68,23 +68,23 @@ De belangrijkste stappen bij het maken en beheren van persoonlijke transactiemel
 
 ### Stappen om op de controleinstantie uit te voeren
 
-Op **control instance**, moet u de volgende acties uitvoeren:
+Op de **besturingsinstantie** moet u de volgende handelingen uitvoeren:
 
-1. [Maak een gebeurtenistype](../../message-center/using/creating-event-types.md).
-1. [Maak en ontwerp de berichtsjabloon](../../message-center/using/creating-the-message-template.md). Tijdens deze stap moet u een gebeurtenis koppelen aan uw bericht.
-1. [Test het bericht](../../message-center/using/testing-message-templates.md).
+1. [Een gebeurtenistype maken](../../message-center/using/creating-event-types.md).
+1. [De berichtsjabloon maken en ontwerpen](../../message-center/using/creating-the-message-template.md). Tijdens deze stap moet u een gebeurtenis koppelen aan uw bericht.
+1. [Het bericht testen](../../message-center/using/testing-message-templates.md).
 1. [Publiceer de berichtsjabloon](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >
->Alle bovenstaande stappen worden uitgevoerd op de **besturingsinstantie**. Het publiceren van het malplaatje op de controleinstantie zal het op alle **uitvoeringsinstanties** ook publiceren. Voor meer op de instanties van het transactionele overseinen, zie [Transactionele overseinenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
+>Alle bovenstaande stappen worden uitgevoerd op de **besturingsinstantie**. Het publiceren van het malplaatje op de controleinstantie zal het op allen ook publiceren **uitvoeringsinstanties**. Voor meer op de instanties van het transactionele overseinen, zie [Transactionele berichtenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
 
 ### Gebeurtenisverwerking op de uitvoeringsinstantie
 
-Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een overeenkomstige gebeurtenis wordt teweeggebracht, worden de belangrijkste hieronder stappen uitgevoerd op **uitvoeringsinstantie**:
+Nadat u de transactiemplate hebt ontworpen en gepubliceerd, worden de onderstaande hoofdstappen uitgevoerd op het **uitvoeringsinstantie**:
 
-1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie [Gebeurtenisverzameling](../../message-center/using/about-event-processing.md#event-collection).
-1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [Verpletterend naar een malplaatje](../../message-center/using/about-event-processing.md#routing-towards-a-template).
+1. Wanneer de gebeurtenis door het externe informatiesysteem wordt gegenereerd, worden de relevante gegevens via de **PushEvent** en **PushEvents** methoden. Zie [Gebeurtenisverzameling](../../message-center/using/about-event-processing.md#event-collection).
+1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [Het verpletteren aan een malplaatje](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. Zodra het verrijkingsstadium volledig is, wordt de levering verzonden. Zie [Uitvoering van levering](../../message-center/using/delivery-execution.md). Elke beoogde ontvanger ontvangt een gepersonaliseerd bericht.
 
 ## Verwante onderwerpen {#related-topics}

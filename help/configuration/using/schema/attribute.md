@@ -39,9 +39,9 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use}
 
-`<attribute>` elementen moeten in een  `<element>` element worden gedeclareerd.
+`<attribute>` elementen moeten worden gedeclareerd in een `<element>` element.
 
-De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald beïnvloedt niet de opeenvolging van de gebiedsverwezenlijking in het gegevensbestand. De aanmaakvolgorde is alfabetisch.
+De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschema>` heeft geen invloed op de volgorde waarin het veld wordt gemaakt in de database. De aanmaakvolgorde is alfabetisch.
 
 ## Beschrijving van kenmerk {#attribute-description}
 
@@ -57,11 +57,11 @@ De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald b
    * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
    * &quot;delete&quot;: verwijderen. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
-* **geavanceerd (Booleaans)**: als deze optie is geactiveerd (@advanced=&quot;true&quot;), kunt u het kenmerk verbergen in de lijst met beschikbare velden die toegankelijk zijn voor het configureren van een lijst in een formulier.
-* **applyIf (string)**: Met dit kenmerk kunt u velden optioneel maken. Het `<attribute>` element zal in aanmerking worden genomen wanneer het bijwerken van het gegevensbestand wanneer de beperking wordt nageleefd. &quot;applyIf&quot; ontvangt een XTK-expressie.
+* **geavanceerd (Boolean)**: als deze optie is geactiveerd (@advanced=&quot;true&quot;), kunt u het kenmerk verbergen in de lijst met beschikbare velden die toegankelijk zijn voor het configureren van een lijst in een formulier.
+* **applyIf (string)**: Met dit kenmerk kunt u velden optioneel maken. De `<attribute>` bij het bijwerken van de gegevensbank wordt rekening gehouden met het element wanneer de beperking wordt nageleefd. &quot;applyIf&quot; ontvangt een XTK-expressie.
 * **autoIncrement (Boolean)**: als deze optie is geactiveerd, wordt het veld een teller. Hierdoor kunt u een waarde verhogen (meestal id&#39;s). (extern gebruik)
 * **behoortTo (tekenreeks)**: neemt de naam en de naamruimte van de tabel die het veld deelt en vult het schema in waarin het kenmerk wordt gedeclareerd. (alleen gebruikt in een `<schema>`).
-* **dataPolicy (tekenreeks)**: kunt u goedkeuringsbeperkingen opgeven voor waarden die zijn toegestaan in het SQL- of XML-veld. De waarden voor dit kenmerk zijn:
+* **dataPolicy (string)**: kunt u goedkeuringsbeperkingen opgeven voor waarden die zijn toegestaan in het SQL- of XML-veld. De waarden voor dit kenmerk zijn:
 
    * &quot;none&quot;: geen waarde
    * &quot;smartCase&quot;: eerste letters hoofdletters
@@ -72,8 +72,8 @@ De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald b
    * &quot;identificatiecode&quot;: id-naam
    * &quot;resIdentifier&quot;: bestandsnaam
 
-* **dbEnum (tekenreeks)**: ontvangt de interne naam van een &quot;gesloten&quot;opsomming. De opsommingswaarden moeten in `<srcschema>` worden bepaald.
-* **defOnDuplicate (boolean)**: Als dit kenmerk wordt geactiveerd, wordt de standaardwaarde (gedefinieerd in @default) automatisch opnieuw toegepast op de record wanneer een record wordt gedupliceerd.
+* **dbEnum (tekenreeks)**: ontvangt de interne naam van een &quot;gesloten&quot;opsomming. De opsommingswaarden moeten worden gedefinieerd in de `<srcschema>`.
+* **defOnDuplicate (Boolean)**: Als dit kenmerk wordt geactiveerd, wordt de standaardwaarde (gedefinieerd in @default) automatisch opnieuw toegepast op de record wanneer een record wordt gedupliceerd.
 * **default (string)**: Hiermee kunt u de waarde van het standaardveld definiëren (aanroepen van een functie, standaardwaarde). Dit kenmerk ontvangt een XTK-expressie.
 * **desc (tekenreeks)**: Hiermee kunt u een beschrijving van het kenmerk invoegen. Deze beschrijving wordt getoond in de statusbar van de interface.
 * **bewerken (tekenreeks)**: This attribute specifies the type of input which will be used in the form linked to the schema.
@@ -91,7 +91,7 @@ De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald b
 
    Er zijn twee typen kenmerkvelden: eenvoudige oà¹-velden, waar één enkele waarde is toegestaan op de karakteristieken, en o à¹ multiple choice velden, waar de eigenschap is gekoppeld aan een collectie element dat meerdere waarden kan bevatten.
 
-   Wanneer een kenmerk in een schema wordt bepaald, moet dit schema een hoofdsleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
+   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
 * **featureDate (boolean)**: kenmerk gekoppeld aan het veld &quot;@feature&quot;-kenmerken. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
 * **img (tekenreeks)**: Hiermee kunt u een pad definiëren voor een afbeelding die is gekoppeld aan een veld (naamruimte + naam van afbeelding) (bijvoorbeeld: img=&quot;cus:mypicture.jpg&quot;). De afbeelding moet fysiek naar de toepassingsserver worden geïmporteerd.
@@ -116,12 +116,12 @@ De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald b
    * &quot;never&quot;: nooit
    * &quot;default (or none)&quot;: de waarde wordt uitgevoerd behalve als het de standaardwaarde is of als het geen intern gebied is dat niet met andere instanties compatibel zou zijn.
 
-* **ref (tekenreeks)**: this attribute define a reference to an  `<attribute>` element shared by various schema&#39;s (definition factoring). De definitie wordt niet gekopieerd naar het huidige schema.
-* **vereist (Booleaans)**: als dit kenmerk is geactiveerd (@required=&quot;true&quot;), wordt het veld gemarkeerd in de interface. Het label van het veld wordt rood in formulieren.
+* **ref (tekenreeks)**: this attribute define a reference to an `<attribute>` element gedeeld door verscheidene schema&#39;s (definitiefactoring). De definitie wordt niet gekopieerd naar het huidige schema.
+* **vereist (Boolean)**: als dit kenmerk is geactiveerd (@required=&quot;true&quot;), wordt het veld gemarkeerd in de interface. Het label van het veld wordt rood in formulieren.
 * **sql (Boolean)**: als dit kenmerk wordt geactiveerd (@sql=&quot;true&quot;), wordt de opslag van het SQL-kenmerk afgedwongen, zelfs als het element dat het kenmerk bevat de eigenschap xml=&quot;true&quot; heeft.
 * **sqlDefault (tekenreeks)**: Met dit kenmerk kunt u de standaardwaarde definiëren waarmee rekening wordt gehouden bij het bijwerken van de database als het kenmerk @notNull is geactiveerd. Als dit attribuut na de attributenverwezenlijking wordt toegevoegd, zal het schemagedrag niet veranderen zelfs voor de nieuwe verslagen. Als u het schema wilt wijzigen en de waarde voor nieuwe records wilt bijwerken, moet u het kenmerk verwijderen en opnieuw maken.
 * **sqlname (tekenreeks)**: van het veld tijdens het maken van de tabel. Als @sqlname niet wordt gespecificeerd, wordt de waarde van het &quot;@name&quot;attribuut gebruikt door gebrek. Wanneer het schema in het gegevensbestand wordt geschreven, worden de prefixen automatisch toegevoegd afhankelijk van het type van gebied.
-* **sjabloon (tekenreeks)**: this attribute define a reference to an  `<attribute>` element shared by various schema&#39;s. De definitie wordt automatisch gekopieerd naar het huidige schema.
+* **sjabloon (tekenreeks)**: this attribute define a reference to an `<attribute>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
 * **translateDefault (tekenreeks)**: Als een kenmerk &quot;@default&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die in @default is gedefinieerd, en die worden verzameld met het gereedschap Vertalen (intern gebruik).
 * **translateExpr (tekenreeks)**: Als er een kenmerk &quot;@expr&quot; aanwezig is, kunt u met het kenmerk &quot;@translateExpr&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in @expr, die moet worden verzameld met het gereedschap Vertalen (intern gebruik).
 * **type (MNTOKEN)**: veldtype.

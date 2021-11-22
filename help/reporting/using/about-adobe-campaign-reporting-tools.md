@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/common.svg)
 
-Naast [ingebouwde rapporten](../../reporting/using/about-campaign-built-in-reports.md), laat Adobe Campaign u rapporten in diverse contexten produceren en om aan verschillende behoeften te voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
+Naast [ingebouwde rapporten](../../reporting/using/about-campaign-built-in-reports.md)Met Adobe Campaign kunt u rapporten genereren in verschillende contexten en aan verschillende behoeften voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
 
 Adobe Campaign is geen speciaal rapportagehulpmiddel: Met rapporten die in Adobe Campaign zijn gemaakt, kunt u vooral geaggregeerde gegevens weergeven. Adobe Campaign-rapporten, die speciaal zijn bedoeld voor het analyseren en weergeven van gegevens, zijn niet bedoeld voor het exporteren van databases.
 

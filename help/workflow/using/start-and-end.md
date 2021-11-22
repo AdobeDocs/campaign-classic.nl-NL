@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Met de activiteiten **[!UICONTROL Start]** en **[!UICONTROL End]** kunt u het begin en einde van een workflow grafisch markeren. Deze activiteiten hebben geen functioneel effect en zijn derhalve facultatief.
+De **[!UICONTROL Start]** en **[!UICONTROL End]** Met activiteiten kunt u het begin en einde van een workflow grafisch markeren. Deze activiteiten hebben geen functioneel effect en zijn derhalve facultatief.
 
 * **[!UICONTROL Start]**
 
@@ -27,7 +27,7 @@ Met de activiteiten **[!UICONTROL Start]** en **[!UICONTROL End]** kunt u het be
 
 * **[!UICONTROL End]**
 
-   U kunt de **[!UICONTROL End]** activiteit vormen om alle taken te onderbreken die lopend zijn. Dubbelklik hiertoe op de activiteit om de eigenschappen weer te geven en controleer de gewenste optie.
+   U kunt de **[!UICONTROL End]** om alle actieve taken te onderbreken. Dubbelklik hiertoe op de activiteit om de eigenschappen weer te geven en controleer de gewenste optie.
 
    ![](assets/s_user_segmentation_end.png)
 

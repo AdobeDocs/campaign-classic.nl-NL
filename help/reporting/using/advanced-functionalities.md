@@ -17,13 +17,13 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-Als technische gebruiker, naast [algemene eigenschappen](../../reporting/using/properties-of-the-report.md), kunt u geavanceerde mogelijkheden gebruiken om uw rapporten te vormen, zoals:
+Als technische gebruiker, naast [algemene eigenschappen](../../reporting/using/properties-of-the-report.md)kunt u geavanceerde mogelijkheden gebruiken om uw rapporten te configureren, zoals:
 
-* Maak complexe query&#39;s voor het verwerken van gegevens in een **Script**-activiteit. [Meer informatie](#script-activity)
+* Complexe query&#39;s maken om gegevens te verwerken in een **Script** activiteit. [Meer informatie](#script-activity)
 
 * Voeg een extern script toe dat op de server of client moet worden uitgevoerd. [Meer informatie](#external-script)
 
-* Roep een rapport aan met een **Jump** activiteit. [Meer informatie](#calling-up-another-report)
+* Een rapport bellen met een **Springen** activiteit. [Meer informatie](#calling-up-another-report)
 
 * Voeg een parameter URL aan een rapport toe om het toegankelijker te maken. [Meer informatie](#calling-up-another-report)
 
@@ -37,8 +37,8 @@ U kunt verwijzen naar JavaScript-codes die aan de client- en/of serverzijde word
 
 Dit doet u als volgt:
 
-1. Bewerk de [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) en klik op **[!UICONTROL Scripts]**.
-1. Klik op **[!UICONTROL Add]** en selecteer het script waarnaar moet worden verwezen.
+1. Bewerk de [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) en klik op de knop **[!UICONTROL Scripts]**.
+1. Klikken **[!UICONTROL Add]** en selecteert u het script waarnaar moet worden verwezen.
 1. Selecteer vervolgens de uitvoeringsmodus.
 
    Als u meerdere scripts toevoegt, gebruikt u de pijlen van de werkbalk om de desbetreffende uitvoeringsvolgorde te definiëren.
@@ -49,9 +49,9 @@ Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwez
 
 ### Een scriptactiviteit toevoegen {#script-activity}
 
-Wanneer [het ontwerpen van uw rapport](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), gebruik **[!UICONTROL Script]** activiteit om gegevens te verwerken en gemakkelijk complexe vragen tot stand te brengen die SQL taal niet toelaten. U kunt uw query rechtstreeks invoeren in het scriptvenster.
+Wanneer [uw rapport ontwerpen](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), gebruikt u de **[!UICONTROL Script]** activiteit om gegevens te verwerken en gemakkelijk complexe vragen tot stand te brengen die SQL taal niet toelaten. U kunt uw query rechtstreeks invoeren in het scriptvenster.
 
-Met de tab **[!UICONTROL Texts]** kunt u tekstreeksen definiëren. Deze kunnen vervolgens met de volgende syntaxis worden gebruikt: **$(Identifier)**. Raadpleeg [Koptekst en voettekst toevoegen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer) voor meer informatie over het gebruik van tekst.
+De **[!UICONTROL Texts]** kunt u tekstreeksen definiëren. Deze kunnen vervolgens met de volgende syntaxis worden gebruikt: **$(id)**. Voor meer informatie over het gebruik van teksten raadpleegt u [Een kop- en voettekst toevoegen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ Anders worden alleen de huidige gegevens weergegeven.
 
 ## Een URL-parameter toevoegen {#defining-additional-settings}
 
-Met het tabblad **[!UICONTROL Parameters]** van de [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) kunt u aanvullende instellingen voor het rapport definiëren: deze montages zullen in URL tijdens de vraag worden overgegaan.
+De **[!UICONTROL Parameters]** tabblad van het dialoogvenster [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) laat u extra montages voor het rapport bepalen: deze montages zullen in URL tijdens de vraag worden overgegaan.
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Met het tabblad **[!UICONTROL Parameters]** van de [rapporteigenschappen](../../
 
 Een nieuwe instelling maken:
 
-1. Klik op de knop **[!UICONTROL Add]** en voer de naam van de instelling in.
+1. Klik op de knop **[!UICONTROL Add]** en voert u de naam van de instelling in.
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
@@ -83,17 +83,17 @@ Een nieuwe instelling maken:
 
 1. Selecteer het type instelling dat u wilt maken: **[!UICONTROL Filter]** of **[!UICONTROL Variable]**.
 
-   Met de optie **[!UICONTROL Filter entities]** kunt u een veld van de database als parameter gebruiken.
+   De **[!UICONTROL Filter entities]** kunt u een veld van de database als parameter gebruiken.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   De gegevens worden direct op het niveau van de entiteit teruggevorderd: **ctx/receiver/@account**.
+   De gegevens worden direct op het niveau van de entiteit teruggevorderd: **ctx/ontvanger/@account**.
 
-   Met de optie **[!UICONTROL Variable]** kunt u een variabele maken of selecteren die wordt doorgegeven als een parameter van de URL en die kan worden gebruikt in de filters.
+   De **[!UICONTROL Variable]** Met deze optie kunt u een variabele maken of selecteren die als parameter van de URL wordt doorgegeven en die in de filters kan worden gebruikt.
 
-Met **[!UICONTROL Response HTTP headers]** kunt u klikaanvallen voorkomen wanneer u de pagina van uw rapport opneemt in een HTML-pagina die iframe gebruikt. Als u wilt voorkomen dat wordt geklikt, kunt u het gedrag **[!UICONTROL X-Frame-options header]** kiezen:
+De **[!UICONTROL Response HTTP headers]** staat u toe om klikjacking te verhinderen wanneer het omvatten van de pagina van uw rapport in een HTML pagina gebruikend iframe. Als u wilt voorkomen dat er op de knop wordt geklikt, kunt u de optie **[!UICONTROL X-Frame-options header]** gedrag:
 
-* **[!UICONTROL None]**: Het verslag heeft niets  **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL None]**: Het verslag bevat geen **[!UICONTROL X-Frame-options header]**.
 * **[!UICONTROL Same as origin]**: Standaard ingesteld voor nieuwe rapporten en opnieuw gepubliceerde rapporten. De hostname zal het zelfde als URL van het rapport zijn.
 * **[!UICONTROL Deny]**: Het rapport kan niet worden opgenomen in een HTML-pagina die iframe gebruikt.
 
@@ -101,11 +101,11 @@ Met **[!UICONTROL Response HTTP headers]** kunt u klikaanvallen voorkomen wannee
 
 ## Variabelen toevoegen {#adding-variables}
 
-Het **[!UICONTROL Variables]** lusje bevat de lijst van variabelen die in het rapport worden gevormd. Deze variabelen worden in de context van het verslag weergegeven en kunnen in berekeningen worden gebruikt.
+De **[!UICONTROL Variables]** bevat de lijst met variabelen die in het rapport zijn geconfigureerd. Deze variabelen worden in de context van het verslag weergegeven en kunnen in berekeningen worden gebruikt.
 
 Klik op de knop **[!UICONTROL Add]** om een nieuwe variabele te maken.
 
-Als u de definitie van een variabele wilt weergeven, selecteert u de variabele en klikt u op de knop **[!UICONTROL Detail...]**.
+Als u de definitie van een variabele wilt weergeven, selecteert u de variabele en klikt u op de knop **[!UICONTROL Detail...]** knop.
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
@@ -118,4 +118,4 @@ In het videovoorbeeld hieronder, zult u leren hoe te om een &quot;_type&quot;par
 
 ## Een ander rapport opvragen {#calling-up-another-report}
 
-Een **Jump** activiteit is als een overgang zonder een pijl: het laat u van één activiteit naar een andere gaan of tot een ander rapport toegang hebben.
+A **Springen** activiteit is als een overgang zonder een pijl: het laat u van één activiteit naar een andere gaan of tot een ander rapport toegang hebben.

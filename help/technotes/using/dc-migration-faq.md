@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Als onderdeel van het [Gold Standard Initiative](../../rn/using/gold-standard.md) ontmantelt Adobe het oude Data Center. Campaign Classic-instanties moeten worden overgebracht naar AWS (Public Cloud Amazon Web Services). [Meer weten over dit initiatief](dc-migration.md)?
+Als onderdeel van het [Gold Standard-initiatief](../../rn/using/gold-standard.md), ontmantelt Adobe het oude datacenter. Campaign Classic-exemplaren moeten worden overgebracht naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
 
 Hieronder vindt u een aantal veelgestelde vragen over dit project, de invloed op uw campagneomgeving en andere nuttige bronnen.
 
-Voor elke andere vraag kunt u [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) bereiken.
+Voor elke andere vraag kunt u zich tot [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Infrastructuureffecten
 
@@ -37,7 +37,7 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
 * **Is er een risico op gegevensverlies?**
 
-   De database wordt uit het oude datacenter verwijderd en hersteld in de Public Cloud (AWS). Wanneer de toepassing opnieuw wordt gestart in het nieuwe datacenter, wordt deze hervat in de toestand die vóór de migratie was. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn.
+   De database wordt uit het oude datacenter verwijderd en hersteld in Public Cloud (AWS). Wanneer de toepassing opnieuw wordt gestart in het nieuwe datacenter, wordt deze hervat in de toestand die vóór de migratie was. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn.
 
 * **Zijn er verschillen in de grootte van het pakket tussen het oude datacenter en de openbare cloud?**
 
@@ -47,11 +47,11 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
    Als eerste stap zullen we dezelfde Campaign Classic opbouwen met migratie.
 
-   In een volgende stap zullen we doorgaan met de upgrade naar de nieuwste Campaign Classic GA-build. Raadpleeg voor meer informatie de [Veelgestelde vragen over upgrades voor build](../../platform/using/faq-build-upgrade.md) en [Opmerkingen bij de release van de Goudstandaard campagne](../../rn/using/gold-standard.md).
+   In een volgende stap zullen we doorgaan met de upgrade naar de nieuwste Campaign Classic GA-build. Raadpleeg voor meer informatie de [Veelgestelde vragen over upgrade maken](../../platform/using/faq-build-upgrade.md) en [Opmerkingen bij de release Campagne Gold Standard](../../rn/using/gold-standard.md).
 
 * **Wat is het plan om eventuele problemen na migratie aan te pakken?**
 
-   Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. In geval van problemen blijft [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) echter het belangrijkste contactpunt. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
+   Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. In het geval van problemen [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support) blijft het belangrijkste contactpunt. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
 
 ## Leveringseffecten
 
@@ -63,7 +63,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen in de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik ](#config) hier voor meer details over IP op de lijst van gewenste personen.
+   [Klik hier](#config) voor meer details over IP op de lijst van gewenste personen.
 
 * **Hoe zullen wij haven behandelen die aan de lijst van gewenste personen voor toegang SFTP/FTP wordt toegevoegd?**
 
@@ -73,13 +73,13 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik ](#config) hier voor meer details over IP op de lijst van gewenste personen.
+   [Klik hier](#config) voor meer details over IP op de lijst van gewenste personen.
 
 * **Hoe zal subdomeindelegatie worden behandeld?**
 
    Bestaande subdomeinen worden verplaatst van het oude datacenter naar de openbare cloud (AWS). Dit onderdeel wordt door het Adobe-leveringsteam afgehandeld als onderdeel van het migratieproces.
 
-   Adobe begeleidt de klant door de vereiste tests om te controleren of de configuratie na de migratie wordt uitgevoerd op nieuwe servers van de Public Cloud (AWS).
+   Adobe begeleidt de klant door de vereiste tests om te controleren of de configuratie na de migratie op nieuwe servers van de Public Cloud (AWS) wordt uitgevoerd.
 
 * **Zal de migratie nieuwe URL&#39;s produceren voor tracering, bronnen en webtoepassingen?**
 
@@ -87,13 +87,13 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
 * **Zal er een verandering in subdomain van Neolane.net in campagne.adobe.com zijn?**
 
-   Zowel `neolane.net` als `campaign.adobe.com` worden na de migratie geplaatst. Zo eenvoudig maakt u het: we zullen neolane.net omleiden naar nieuwe instanties in de Public Cloud (AWS), zodat de klant geen wijzigingen hoeft aan te brengen.
+   Beide `neolane.net` en `campaign.adobe.com` is na de migratie van kracht. Zo eenvoudig maakt u het: we zullen neolane.net omleiden naar nieuwe exemplaren in Public Cloud (AWS), zodat de klant geen wijzigingen hoeft aan te brengen.
 
 * **Wat is het plan voor IP Warm?**
 
    Allereerst zal de Leverbaarheid van Adobe de status van de leverbaarheid van het platform beoordelen en een plan voor de omschakeling aan nieuwe IPs aanbevelen
 
-   Na de migratie is geen opwarmen vereist. Het kan een uitzondering zijn en in dat geval zal [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) de klanten bereiken.
+   Na de migratie is geen opwarmen vereist. Het zou een uitzondering kunnen zijn en in dat geval [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal aan klanten bereiken.
 
    Het is echter de bedoeling om deze operatie transparant te maken voor het bedrijf, in tegenstelling tot de eerste oprijplaat die tijdens het liveproces wordt uitgevoerd.
 
@@ -149,34 +149,34 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
 * **Heeft de migratie gevolgen voor configuraties met meerdere merken?**
 
-   Zodra subdomein en alle bijbehorende configuratie correct van het oude datacenter naar de openbare cloud (AWS) worden verplaatst of omgeleid, verwachten we geen effect.
+   Zodra subdomein en alle bijbehorende configuratie correct van het oude datacenter naar de Public Cloud (AWS) worden verplaatst of omgeleid, verwachten we geen effect.
 
 * **Heeft de migratie invloed op de API-connectiviteit?**
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik ](#config) hier voor meer details over IP op lijst van gewenste personen.
+   [Klik hier](#config) voor meer details over IP op lijst van gewenste personen.
 
 * **Zorgen we ervoor dat alle JavaScript-parameters voor geheugenconfiguratie na de migratie correct zijn ingesteld?**
 
-   Instantieconfiguratie wordt gekopieerd van het oude datacenter naar de openbare cloud (AWS), zodat deze waarden na de migratie behouden blijven.
+   Instantieconfiguratie wordt gekopieerd van het oude datacenter naar de openbare cloud (AWS). Deze waarden blijven dus behouden na de migratie.
 
 * **Bestaat er enig risico voor de toegang tot bepaalde bestandsextensies?**
 
-   De klant kan wensen om doopvontdossiers, de dossiers van de outlook vergadering toe te staan om in openbare middelenomslag worden geladen. Deze configuratie wordt gedaan in huidig `config-<instance>.xml` dossier. Dit wordt gekopieerd met configuratiebestanden.
+   De klant kan wensen om doopvontdossiers, de dossiers van de outlook vergadering toe te staan om in openbare middelenomslag worden geladen. Deze configuratie wordt uitgevoerd in de huidige `config-<instance>.xml` bestand. Dit wordt gekopieerd met configuratiebestanden.
 
 * **Verandert de tijdzone op nieuwe server? Kan de klant zijn huidige tijdzone behouden?**
 
    Het kan veranderen afhankelijk van nieuwe serverplaats. Nochtans zal de klant hun huidige timezone kunnen behouden.
 
-   [Klik ](../../workflow/using/managing-time-zones.md) hier voor meer informatie over tijdzonebeheer in Adobe Campaign Classic v7.
+   [Klik hier](../../workflow/using/managing-time-zones.md) voor meer informatie over tijdzonebeheer in Adobe Campaign Classic v7.
 
 
 ## Beveiliging en machtigingen
 
 ![](assets/do-not-translate/security.png)
 
-Met deze migratie naar de Public Cloud (AWS) worden de klantomgevingen bijgewerkt met alle vereiste beveiligingsvereisten. Dit omvat:
+Met deze migratie naar Public Cloud (AWS) worden de klantomgevingen bijgewerkt met alle vereiste beveiligingsvereisten. Dit omvat:
 
 * Nieuwste patches voor besturingssysteem en beveiliging op periodieke basis
 * Isolatie van infrastructuur per klant
@@ -268,7 +268,7 @@ De wereldwijde effecten tijdens de migratie worden hieronder vermeld.
 
 * **Kunnen we na de migratie nog steeds toegang krijgen tot oude gevallen?**
 
-   Wanneer de migratie van de toepassing is voltooid, is er geen plan om een proces opnieuw uit te voeren in het oude datacenter. We verwachten dat alle gegevens in het oude datacenter kunnen worden gewist, behalve voor tijdelijke back-updoeleinden, totdat de geplande back-upprocessen zijn uitgevoerd op de Public Cloud (AWS).
+   Wanneer de migratie van de toepassing is voltooid, is er geen plan om een proces opnieuw uit te voeren in het oude datacenter. We verwachten dat alle gegevens in het oude datacenter kunnen worden gewist, behalve voor tijdelijke back-updoeleinden, totdat de geplande back-upprocessen zijn uitgevoerd op Public Cloud (AWS).
 
 * **Hoeveel tijd is er toegestaan voor het testen van elke instantie na de migratie naar de Public Cloud?**
 
