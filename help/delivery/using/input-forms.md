@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ Forms wordt gedetailleerd weergegeven in [deze sectie](../../configuration/using
 
 Het XML-document van een invoerformulier moet het **`<form>`** hoofdelement met de **name** en **namespace** kenmerken om respectievelijk de formuliernaam en de naamruimte te vullen.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
@@ -39,7 +39,7 @@ Om de structuur van een invoerformulier te illustreren, beschrijven we een inter
 
 Dit is het corresponderende invoerformulier:
 
-```
+```xml
 <form name="book" namespace="cus" type="contentForm">
   <input xpath="@name"/>
   <input xpath="@date"/>
@@ -89,7 +89,7 @@ Met dit besturingselement wordt een bewerkbare kolomlijst weergegeven met een we
 
 ![](assets/d_ncs_content_form4.png)
 
-```
+```xml
 <input xpath="chapter" type="list">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -108,7 +108,7 @@ Standaard worden de werkbalkknoppen verticaal uitgelijnd. Ze kunnen ook horizont
 
 ![](assets/d_ncs_content_form5.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -133,7 +133,7 @@ In de volgende gevallen worden formulieren in lijsten bewerken gebruikt:
 
 ![](assets/d_ncs_content_form7.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter" zoom="true" zoomOnAdd="true">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -160,7 +160,7 @@ In deze lijst wordt het bewerken van verzamelingselementen weergegeven in de vor
 
 ![](assets/d_ncs_content_form6.png)
 
-```
+```xml
 <container toolbarCaption="List of chapters" type="notebooklist" xpath="chapter" xpath-label="@name">
   <container colcount="2">
     <input xpath="@name"/>
@@ -197,3 +197,5 @@ In de bewerkingszone kunt u de XML-inhoud van het invoerformulier invoeren:
 De **[!UICONTROL Preview]** kunt u het invoerformulier weergeven:
 
 ![](assets/d_ncs_content_form13.png)
+
+Meer informatie over [formulieren bewerken](../../configuration/using/editing-forms.md) en [formulierstructuur](../../configuration/using/form-structure.md).

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2420'
+ht-degree: 99%
 
 ---
 
@@ -76,6 +76,10 @@ In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UI
 Voordat u privacyverzoeken maakt, moet u de naamruimte definiëren die u wilt gebruiken. Dit is de sleutel die wordt gebruikt om de betrokkene in de Adobe Campaign-database te identificeren.
 
 Drie naamruimten zijn standaard beschikbaar: e-mail, telefoon en mobiele telefoon. Als u een andere naamruimte nodig hebt (bijvoorbeeld een aangepast veld voor ontvangers), kunt u een nieuwe naamruimte maken via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
+
+>[!NOTE]
+>
+>Voor optimale prestaties is het raadzaam naamruimten buiten de box te gebruiken.
 
 ## Een privacyverzoek maken {#create-privacy-request-ui}
 

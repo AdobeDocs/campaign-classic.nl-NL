@@ -6,30 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 898353f80a93052cd25088098c9570c2b44ceac4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
 
 # Formulierstructuur{#form-structure}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 De beschrijving van een formulier is een gestructureerd XML-document waarin de grammatica van het formulierschema wordt gevolgd **xtk:form**.
 
-Het XML-document van het invoerformulier moet de `<form>` hoofdelement met de  **name** en  **namespace** kenmerken om de formuliernaam en naamruimte te vullen.
+Het XML-document van het invoerformulier moet de `<form>` hoofdelement met de **name** en **namespace** kenmerken om de formuliernaam en naamruimte te vullen.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
 Een formulier is standaard gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Als u een formulier wilt koppelen aan een andere naam, stelt u de optie **entiteitsschema** kenmerk van de `<form>` element aan de naam van de schemasleutel. Als u de structuur van een invoerformulier wilt illustreren, kunt u een interface beschrijven met het voorbeeldschema &quot;focus:receiver&quot;:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -49,7 +49,7 @@ Het invoerformulier op basis van het voorbeeldschema:
 
 ![](assets/d_ncs_integration_form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -76,7 +76,7 @@ De besturingselementen van het bovenstaande voorbeeld in twee kolommen weergeven
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -92,7 +92,7 @@ De **colspan** attribuut op een controle breidt de controle door het aantal kolo
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -106,7 +106,7 @@ Door de **type=&quot;frame&quot;** -kenmerk, voegt de container een frame toe ro
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -120,7 +120,7 @@ A **`<static>`** -element kan worden gebruikt om het invoerformulier op te maken
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -138,11 +138,11 @@ Er is een Help-tekst toegevoegd met de `<static>` -tag met Help-type. De inhoud 
 
 Met containers kunt u een set besturingselementen groeperen. Zij worden vertegenwoordigd door de **`<container>`** element. Deze werden hierboven gebruikt om besturingselementen in te delen in meerdere kolommen.
 
-De **xpath** kenmerk op een `<container>` Hiermee kunt u het verwijzen naar onderliggende besturingselementen vereenvoudigen. De verwijzing van controles is dan met betrekking tot de ouder `<container>` bovenliggend element.
+De **xpath** kenmerk op een `<container>` Hiermee kunt u het verwijzen naar onderliggende besturingselementen vereenvoudigen. De verwijzing van controles is dan met betrekking tot de ouder `<container>` element.
 
 Voorbeeld van een container zonder &quot;xpath&quot;:
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -151,7 +151,7 @@ Voorbeeld van een container zonder &quot;xpath&quot;:
 
 Voorbeeld met de toevoeging van &quot;xpath&quot; aan het element &quot;location&quot;:
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -168,7 +168,7 @@ Met een tabcontainer worden gegevens op pagina&#39;s opgemaakt die toegankelijk 
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -176,18 +176,19 @@ Met een tabcontainer worden gegevens op pagina&#39;s opgemaakt die toegankelijk 
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location">
-    ...
+    …
   </container>
 </container>
 ```
 
 De hoofdcontainer wordt gedefinieerd door de **type=&quot;laptop&quot;** kenmerk. Tabs worden gedeclareerd in de onderliggende containers en het label van de tabbladen wordt gevuld vanuit het tabblad **label** kenmerk.
 
+![](assets/d_ncs_integration_form_exemple7.png)
+
 >[!NOTE]
 >
 >A **style=&quot;down|up**(standaard)**&quot;** dwingt de verticale plaatsing van de labels onder of boven het besturingselement af. Deze functie is optioneel.
->![](assets/d_ncs_integration_form_exemple7.png)
->`<container style="down" type="notebook">  ... </container>`
+>`<container style="down" type="notebook">  … </container>`
 
 #### Pictogramlijst {#icon-list}
 
@@ -195,7 +196,7 @@ In deze container wordt een verticale pictogrambalk weergegeven waarmee u de pag
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -203,7 +204,7 @@ In deze container wordt een verticale pictogrambalk weergegeven waarmee u de pag
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location" img="nms:msgfolder.png">
-    ...
+    …
   </container>
 </container>
 ```
@@ -220,12 +221,12 @@ U kunt een set besturingselementen maskeren via een dynamische voorwaarde.
 
 Dit voorbeeld illustreert de zichtbaarheid van besturingselementen voor de waarde van het veld Geslacht:
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
-  ...
+  …
 </container>
 <container type="visibleGroup" visibleIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -241,12 +242,12 @@ Voorbeelden van syntaxis van voorwaarde:
 
 Met deze container kunt u een set gegevens in- of uitschakelen vanuit een dynamische voorwaarde. Als u een besturingselement uitschakelt, wordt het niet bewerkt. In het volgende voorbeeld wordt getoond hoe besturingselementen kunnen worden ingeschakeld met behulp van de waarde van het veld &quot;Geslacht&quot;:
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
-  ...
+  …
 </container>
 <container type="enabledGroup" enabledIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -256,7 +257,7 @@ Een machtigingscontainer wordt gedefinieerd door de **type=&quot;enabledGroup&qu
 
 Vergeet niet dat een koppeling als volgt in het gegevensschema wordt gedeclareerd:
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -264,7 +265,7 @@ De bewerkingscontrole voor de koppeling in de invoervorm is als volgt:
 
 ![](assets/d_ncs_integration_form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -280,7 +281,7 @@ De **[!UICONTROL Edit link]** (vergroting) het pictogram start de bewerkvorm van
 
 U kunt de keuze van doelelementen beperken door de optie **`<sysfilter>`** -element uit de koppelingsdefinitie in het invoerformulier:
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -290,7 +291,7 @@ U kunt de keuze van doelelementen beperken door de optie **`<sysfilter>`** -elem
 
 U kunt de lijst ook sorteren met de opdracht **`<orderby>`** element:
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -318,9 +319,9 @@ Het principe bestaat uit het weergeven van de lijst met gekoppelde elementen die
 
 Voorbeeld van een verzamelingskoppeling in een schema:
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
-...
+…
 </element>
 ```
 
@@ -328,7 +329,7 @@ De lijst in de invoervorm:
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -349,7 +350,7 @@ De **[!UICONTROL Detail]** wordt automatisch toegevoegd wanneer de knop **zoom=&
 
 Filteren en sorteren kan worden toegepast wanneer de lijst wordt geladen:
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -370,7 +371,7 @@ Als u een element aan de lijst toevoegt, kunt u daarom een lijst van een van de 
 
 Voorbeeld van een relatietabel in een schema:
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -381,7 +382,7 @@ Bij ons voorbeeld beginnen we met de invoervorm van het schema &#39;cus:receiver
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -417,7 +418,7 @@ Met dit besturingselement wordt een bewerkbare kolomlijst weergegeven met een we
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -436,7 +437,7 @@ De werkbalkknoppen kunnen horizontaal worden uitgelijnd:
 
 ![](assets/d_ncs_integration_form_exemple14.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -451,7 +452,7 @@ U kunt de gegevens in een lijst invoegen en bewerken in een afzonderlijk bewerki
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -463,7 +464,7 @@ U kunt de gegevens in een lijst invoegen en bewerken in een afzonderlijk bewerki
 </input>
 ```
 
-Het bewerkingsformulier wordt ingevuld via het `<form>`  element onder lijstdefinitie. De structuur is identiek aan die van een invoerformulier. De **[!UICONTROL Detail]** wordt automatisch toegevoegd wanneer de knop **zoom=&quot;true&quot;** kenmerk is voltooid op het tabblad **`<input>`** -tag van de lijst. Met dit kenmerk kunt u het bewerkingsformulier van de geselecteerde regel starten.
+Het bewerkingsformulier wordt ingevuld via het `<form>` element onder lijstdefinitie. De structuur is identiek aan die van een invoerformulier. De **[!UICONTROL Detail]** wordt automatisch toegevoegd wanneer de knop **zoom=&quot;true&quot;** kenmerk is voltooid op het tabblad **`<input>`** -tag van de lijst. Met dit kenmerk kunt u het bewerkingsformulier van de geselecteerde regel starten.
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Voorbeeld op het veld &quot;Geslacht&quot;:
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -499,7 +500,7 @@ Met een keuzerondje kunt u kiezen uit verschillende opties. De **`<input>`** -ta
 
 Voorbeeld op het veld &quot;Geslacht&quot;:
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -511,12 +512,16 @@ Voorbeeld op het veld &quot;Geslacht&quot;:
 
 Een selectievakje geeft een Booleaanse status weer (geselecteerd of niet). Dit besturingselement wordt standaard gebruikt door Booleaanse velden (true/false). Een variabele met de standaardwaarde 0 of 1 kan aan deze knop worden gekoppeld. Deze waarde kan via **checkValue** kenmerken.
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
 ![](assets/d_ncs_integration_form_exemple20.png)
+
+## Opsomming {#enumeration}
+
+<!-- to be completed -->
 
 ## Navigatiehiërarchie bewerken {#navigation-hierarchy-edit}
 
@@ -524,7 +529,7 @@ Deze controle bouwt een boom op een reeks gebieden om uit te geven.
 
 De te bewerken besturingselementen worden gegroepeerd in een **`<container>`** zijn ingevoerd onder de **`<input>`** code van het structuurbesturingselement:
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -541,9 +546,9 @@ De te bewerken besturingselementen worden gegroepeerd in een **`<container>`** z
 
 ## Expressieveld {#expression-field}
 
-Een expressieveld werkt een veld dynamisch bij vanuit een expressie. de **`<input>`** -tag wordt gebruikt met een **xpath** -kenmerk om het pad in te voeren van het veld dat moet worden bijgewerkt en een **expr** kenmerk met de update-expressie.
+Een expressieveld werkt een veld dynamisch bij vanuit een expressie. de **`<input>`** -tag wordt gebruikt met een **xpath** -kenmerk om het pad in te voeren van het veld dat moet worden bijgewerkt en een **expo** kenmerk met de update-expressie.
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -566,21 +571,21 @@ Voorbeelden van het gebruik van de `<set>` tag:
 
 De context van het formulier kan worden bijgewerkt tijdens het initialiseren en sluiten van het formulier via het dialoogvenster **`<enter>`** en **`<leave>`** -tags.
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
-    <set...
+    <set…
   </enter>
-  ...
+  …
   <leave>
-    <set...
+    <set…
   </leave>
 </form>
 ```
 
 >[!NOTE]
 >
->De `<enter>`  en  `<leave>`   -tags kunnen worden gebruikt op de `<container>` van pagina&#39;s (&quot;laptop&quot;- en &quot;iconbox&quot;-typen).
+>De `<enter>` en `<leave>` -tags kunnen worden gebruikt op de `<container>` van pagina&#39;s (&quot;laptop&quot;- en &quot;iconbox&quot;-typen).
 
 ### Expressietaal {#expression-language-}
 
@@ -588,7 +593,7 @@ Een macrotaal kan in formulierdefinitie worden gebruikt om voorwaardelijke tests
 
 De **`<if expr="<expression>" />`** -tag voert de instructies uit die onder de -tag zijn opgegeven als de expressie wordt geverifieerd:
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -596,7 +601,7 @@ De **`<if expr="<expression>" />`** -tag voert de instructies uit die onder de -
 
 De **`<check expr="<condition>" />`** tag gecombineerd met de **`<error>`** -tag voorkomt validatie van het formulier en geeft een foutbericht weer als niet aan de voorwaarde wordt voldaan:
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -604,22 +609,24 @@ De **`<check expr="<condition>" />`** tag gecombineerd met de **`<error>`** -tag
 </leave>
 ```
 
+<!-- changer exemple par un exemple plus parlant. cf. vidéo validation 02:27. noter aussi l'attribut required dans l'exemple de la vidéo. -->
+
 ## Wizards {#wizards}
 
 Een wizard begeleidt u door een reeks gegevensinvoerstappen in de vorm van pagina&#39;s. De ingevoerde gegevens worden opgeslagen wanneer u het formulier valideert.
 
 Een wizard heeft de volgende structuur:
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
   </container>
   <container title="Title of page 2" desc="Long description of page 2">
-    ...
+    …
   </container>
-  ...
+  …
 </form>
 ```
 
@@ -635,10 +642,10 @@ De uitvoering van de SOAP-methode kan worden gestart vanuit een gevulde **`<leav
 
 De **`<soapcall>`** -tag bevat de aanroep van de methode met de volgende invoerparameters:
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
-  <param type="<type>" exprIn="<xpath>"/>  
-  ...
+  <param  type="<type>" exprIn="<xpath>"/>  
+  …
 </soapCall>
 ```
 
@@ -661,12 +668,12 @@ De **exprIn** bevat de locatie van de gegevens die als parameter moeten worden d
 
 **Voorbeeld**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
-    <param type="DOMElement" exprIn="/tmp/entityList"/>         
-    <param type="DOMElement" exprIn="/tmp/choiceList"/>         
-    <param type="boolean"    exprIn="true"/>       
+    <param  type="DOMElement"    exprIn="/tmp/entityList"/>         
+    <param  type="DOMElement"    exprIn="/tmp/choiceList"/>         
+    <param  type="boolean"       exprIn="true"/>       
   </soapCall>
 </leave>
 ```
