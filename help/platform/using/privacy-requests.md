@@ -8,8 +8,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -251,7 +251,7 @@ De **[!UICONTROL CreateRequestByName]** JS-API wordt als volgt gedefinieerd.
 
 ### De API extern aanroepen {#invoking-api-externally}
 
-Hier ziet u een voorbeeld van hoe u de API extern kunt aanroepen, in het bijzonder de verificatie via de API en informatie over de Privacy-API. Raadpleeg de [API-documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html) voor meer informatie over de Privacy-API. U kunt ook de [documentatie voor webserviceaanroepen](../../configuration/using/web-service-calls.md) raadplegen.
+Hier ziet u een voorbeeld van hoe u de API extern kunt aanroepen, in het bijzonder de verificatie via de API en informatie over de Privacy-API. Raadpleeg de [API-documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=nl) voor meer informatie over de Privacy-API. U kunt ook de [documentatie voor webserviceaanroepen](../../configuration/using/web-service-calls.md) raadplegen.
 
 Allereerst moet u de verificatie uitvoeren via de API:
 

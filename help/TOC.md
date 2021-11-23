@@ -166,7 +166,7 @@ ht-degree: 99%
    + Direct mail verzenden {#sending-direct-mail}
       + [Kanaal voor direct mail](delivery/using/about-direct-mail-channel.md)
       + [Een levering voor direct mail maken](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definieer de content van de direct mail](delivery/using/defining-the-direct-mail-content.md)
+      + [Content van direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
    + Leveringssjablonen gebruiken {#using-delivery-templates}
       + [Sjablonen](delivery/using/about-templates.md)
@@ -394,7 +394,7 @@ ht-degree: 99%
       + [Pijplijncontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met de pijplijn oplossen](integrations/using/pipeline-troubleshooting.md)
    + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
-      + [Werken met bronnen en doelen](integrations/using/get-started-sources-destinations.md)
+      + [Werken met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
       + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
       + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatiseren met workflows {#automating-with-workflows}

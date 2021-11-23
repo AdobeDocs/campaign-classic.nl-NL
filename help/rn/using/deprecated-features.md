@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
    </tr>
    <tr>
    <td>Documentatie van Campaign-API’s - jsapi.chm-bestand</td>
-   <td>Vanaf de release van Campaign 19.1 zijn Campaign Classic-API’s beschikbaar op een specifieke pagina. Als u het verouderde bestand jsapi.chm gebruikte, moet u nu naar <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">de nieuwe onlineversie</a> verwijzen.</td>
+   <td>Vanaf de release van Campaign 19.1 zijn Campaign Classic-API’s beschikbaar op een specifieke pagina. Als u het verouderde bestand jsapi.chm gebruikte, moet u nu naar <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl">de nieuwe onlineversie</a> verwijzen.</td>
   </tr> 
   <tr> 
    <td>Campaign-orkestrering - predictive marketing</td>
