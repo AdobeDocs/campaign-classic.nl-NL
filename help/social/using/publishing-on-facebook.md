@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Publiceren op Facebook
-description: Publiceren op Facebook
+description: Meer informatie over publiceren op Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1138'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Een nieuwe levering maken met de **[!UICONTROL Publish to a brand page]** leveri
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Het hoofddoel selecteren {#selecting-the-main-target}
+## Selecteer het hoofddoel {#selecting-the-main-target}
 
 U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
@@ -52,9 +52,9 @@ U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Het proefdrukdoel selecteren {#selecting-the-proof-target}
+## Proofingdoel selecteren {#selecting-the-proof-target}
 
-De **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Voor meer informatie over het maken van een persoonlijke Facebook-pagina raadpleegt u [Een Facebook-testpagina maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: [Het hoofddoel selecteren](#selecting-the-main-target).
+De **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Voor meer informatie over het maken van een persoonlijke Facebook-pagina raadpleegt u [deze pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel. [Meer informatie](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -62,7 +62,7 @@ De **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren d
 >
 >Als u dezelfde Facebook-testpagina gebruikt voor alle leveringen, kunt u het proefdrukdoel opslaan in het dialoogvenster **[!UICONTROL Publish to a brand page]** leveringssjabloon, dat toegankelijk is via de **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt. Het proefdrukdoel wordt standaard ingevoerd voor elke nieuwe levering.
 
-## Het publiek definiëren {#defining-the-audience}
+## De doelgroep definiëren {#defining-the-audience}
 
 Als u lokale segmenten wilt gebruiken om het type openbaar te verfijnen dat is geautoriseerd om de publicatie te bekijken, raden we u aan één Facebook-pagina per segment te maken (bijvoorbeeld: Adobe Campaign Paris, Adobe Campaign London, enz.).
 
@@ -73,7 +73,7 @@ Het is echter ook mogelijk om de publieksfilters te gebruiken die door Facebook 
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Wees voorzichtig met deze functie. In leveringsrapporten, **[!UICONTROL Number of fans]** Deze Facebook-filters worden niet in aanmerking genomen.
 >
@@ -110,7 +110,7 @@ Een levering van het statustype met een koppeling kan tekst, afbeeldingen en een
 
 Voer de verschillende velden in:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alle URL&#39;s moeten beginnen met **&quot;http://&quot;** of **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ Voer de verschillende velden in:
 
 1. In de **[!UICONTROL Image]** Voer de URL in van de afbeelding die links van de publicatie wordt weergegeven.
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >De afbeelding moet op een openbare website worden gehost, anders kan Facebook deze niet uploaden.
 
@@ -140,7 +140,7 @@ Voer de verschillende velden in:
 
 ![](assets/social_facebook_delivery_005.png)
 
-### Een status publiceren met een YouTube-koppeling {#publishing-a-status-with-a-youtube-link}
+### Een status met een YouTube-koppeling publiceren {#publishing-a-status-with-a-youtube-link}
 
 Met dit type inhoud kunt u een koppeling naar een YouTube-video publiceren. Net als bij een status met een gewone koppeling kunt u een status, naam, bijschrift, beschrijving en aanvullende koppeling definiëren. De afbeelding wordt automatisch door Facebook toegevoegd. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook worden hieronder beschreven:
 
@@ -148,7 +148,7 @@ Met dit type inhoud kunt u een koppeling naar een YouTube-video publiceren. Net 
 
 Voer de verschillende velden in:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alle URL&#39;s moeten beginnen met **&quot;http://&quot;** of **&quot;https://&quot;**.
 
@@ -188,9 +188,9 @@ De **[!UICONTROL Preview]** kunt u de rendering van de publicatie weergeven.
 
 >[!NOTE]
 >
->De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. Zie [De proefdruk verzenden](#sending-the-proof).
+>De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. [Meer info](#sending-the-proof).
 
-## Tekstspatiëring configureren {#configuring-tracking}
+## Tracking configureren {#configuring-tracking}
 
 Het volgen kan in de leveringsrapporten en in worden bekeken **[!UICONTROL Edit > Tracking]** tabblad van de levering en de service.
 
@@ -204,11 +204,11 @@ De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [d
 
 ## De proefdruk verzenden {#sending-the-proof}
 
-We raden u aan een bewijs van uw publicatie vóór de uiteindelijke levering te verzenden om de exacte weergave van de publicatie op een persoonlijke Facebook-testpagina te bekijken. Voor meer informatie over het maken van een persoonlijke Facebook-testpagina raadpleegt u [Een Facebook-testpagina maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). De stappen voor het selecteren van de doelproefdruk worden beschreven in [Het proefdrukdoel selecteren](#selecting-the-proof-target).
+We raden u aan een bewijs van uw publicatie vóór de uiteindelijke levering te verzenden om de exacte weergave van de publicatie op een persoonlijke Facebook-testpagina te bekijken. Voor meer informatie over het maken van een persoonlijke Facebook-testpagina raadpleegt u [deze pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). De stappen voor het selecteren van de doelproefdruk worden beschreven in [deze sectie](#selecting-the-proof-target).
 
 Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Het bericht verzenden {#sending-the-message}
+## Bericht verzenden {#sending-the-message}
 
 1. Als de inhoud is goedgekeurd, klikt u op de knop **[!UICONTROL Send]** knop.
 1. Selecteren **[!UICONTROL Deliver as soon as possible]** en klik op de knop **[!UICONTROL Analyze]** knop.

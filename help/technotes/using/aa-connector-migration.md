@@ -3,7 +3,7 @@ product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Vanaf de release van Campaign Classic v7 21.1.3 is de Adobe Analytics Data Connector afgekeurd. [Meer informatie](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Op 1 augustus 2021 is Adobe Campaign Classic verwijderd uit de bestaande interface voor gegevensverbindingen, maar de bestaande integratie van de campagne zal tot augustus 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
+Op 1 augustus 2021 is Adobe Campaign Classic verwijderd uit de bestaande interface voor gegevensverbindingen, maar de bestaande integratie van de campagne zal tot 17 augustus 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
 
 U **moeten** de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van Adobe die de integratie van de Verbindingen van erfenisGegevens vervangt. Voor meer informatie over Adobe Analytics Connector raadpleegt u [deze pagina](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 ## Hoe kan ik bijwerken?
 
-U moet een upgrade uitvoeren naar Campagne 21.1.3 (of meer) **vóór augustus 2022**.
+U moet een upgrade uitvoeren naar Campagne 21.1.3 (of meer) **vóór 17 augustus 2022**.
 
 Als gehoste klant werkt Adobe samen met u om uw exemplaar(s) te upgraden naar de nieuwere versie. U kunt dan [Adobe Analytics-connector](../../platform/using/adobe-analytics-connector.md).
 

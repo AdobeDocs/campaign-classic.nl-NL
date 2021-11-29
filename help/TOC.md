@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2575'
 ht-degree: 99%
 
 ---
@@ -596,7 +596,7 @@ ht-degree: 99%
       + [Een Facebook-applicatie maken](social/using/creating-a-facebook-application.md)
       + [Publicatie op Twitter configureren](social/using/configuring-publishing-on-twitter.md)
    + Publiceren op social media {#publishing-on-facebook-twitter}
-      + [Overzicht](social/using/overview.md)
+      + [Aan de slag met sociale media](social/using/overview.md)
       + [Publiceren op Facebook](social/using/publishing-on-facebook.md)
       + [Publiceren op Twitter](social/using/publishing-on-twitter.md)
    + Bijlagen {#annexes}
