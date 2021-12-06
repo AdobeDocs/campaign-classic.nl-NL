@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2420'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Drie naamruimten zijn standaard beschikbaar: e-mail, telefoon en mobiele telefoo
 
 >[!NOTE]
 >
->Voor optimale prestaties is het raadzaam naamruimten buiten de box te gebruiken.
+>Voor optimale prestaties is het raadzaam om unieke naamruimten te gebruiken.
 
 ## Een privacyverzoek maken {#create-privacy-request-ui}
 
