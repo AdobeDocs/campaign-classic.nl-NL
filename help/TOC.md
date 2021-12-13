@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2575'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -596,7 +596,7 @@ ht-degree: 99%
       + [Een Facebook-applicatie maken](social/using/creating-a-facebook-application.md)
       + [Publicatie op Twitter configureren](social/using/configuring-publishing-on-twitter.md)
    + Publiceren op social media {#publishing-on-facebook-twitter}
-      + [Aan de slag met sociale media](social/using/overview.md)
+      + [Aan de slag met social media](social/using/overview.md)
       + [Publiceren op Facebook](social/using/publishing-on-facebook.md)
       + [Publiceren op Twitter](social/using/publishing-on-twitter.md)
    + Bijlagen {#annexes}
@@ -660,7 +660,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
