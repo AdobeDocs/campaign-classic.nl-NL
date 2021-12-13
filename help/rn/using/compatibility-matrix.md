@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bits) </br><strong>Belangrijk:</strong> CentOS Linux 8 zal Eind van Leven (EOL) op 31 December 2021 bereiken. Raadpleeg voor meer informatie de <a href="../../rn/using/deprecated-features.md">Verouderde functies</a> pagina.</p>
+<p>8.x (64 bits) </br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
 <p>7.x (64 bits)</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
@@ -154,7 +154,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">Meer info</a>.</p>
+<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -214,9 +214,9 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -227,9 +227,9 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
