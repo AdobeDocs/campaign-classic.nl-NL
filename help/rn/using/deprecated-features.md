@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,8 +45,8 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
   <tr>
   <td>CentOs 8.x (64 bits)<br></td>
-   <td><p>CentOS Linux 8 zal Eind van Leven (EOL) op 31 December 2021 bereiken. <a href="https://www.centos.org/centos-linux-eol/">Meer informatie</a></p>
-   <p>Als u dit besturingssysteem gebruikt, moet u de implementatie op basis daarvan aanpassen. CentOS 7.x (64 bits) en RHEL 8.x/7.x (64 bits) worden nog gesteund.</p>
+   <td><p>CentOS Linux 8 bereikt op31 december 2021 het einde van de levensduur (EOL). <a href="https://www.centos.org/centos-linux-eol/">Meer informatie</a></p>
+   <p>Als u dit besturingssysteem gebruikt, moet u de implementatie dienovereenkomstig aanpassen. CentOS 7.x (64 bits) en RHEL 8.x/7.x (64 bits) worden nog ondersteund.</p>
   <p><em>Doeldatum verwijdering: 31 december 2021.</em></p>
   </td>
  </tr>
