@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: a6549ad4d94b93d65752df66aeec39b90e4c3ec5
+source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 5%
+source-wordcount: '488'
+ht-degree: 4%
 
 ---
 
@@ -83,3 +83,91 @@ U kunt verschillende typen invoerformulieren maken. Het formuliertype bepaalt ho
 
    Dit formulier bevat een lijst met items.
 
+## Containers
+
+In formulieren kunt u containers voor verschillende doeleinden gebruiken:
+
+* Inhoud indelen in formulieren
+* Toegang tot invoervelden definiëren
+* Formulieren nesten in andere formulieren
+
+[Meer informatie](form-structure.md#containers).
+
+### Inhoud ordenen
+
+Gebruik containers om inhoud in formulieren te ordenen:
+
+* U kunt velden groeperen in secties.
+* U kunt pagina&#39;s toevoegen aan formulieren met meerdere pagina&#39;s.
+
+Als u een container wilt invoegen, gebruikt u de `<container>` element. [Meer informatie](form-structure.md#containers).
+
+#### Velden groeperen
+
+Gebruik containers om invoervelden te groeperen in georganiseerde secties.
+
+Gebruik dit element om een sectie in een formulier in te voegen: `<container type="frame">`. Als u een sectietitel wilt toevoegen, kunt u desgewenst de opdracht `label` kenmerk.
+
+Syntaxis: `<container type="frame" label="`*section_title*`"> […] </container>`
+
+In dit voorbeeld definieert een container de **Maken** , die de **[!UICONTROL Created by]** en **[!UICONTROL Name]** invoervelden:
+
+```xml
+<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
+      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
+  <input xpath="@code"/>
+  <input xpath="@type"/>
+  <container label="Creation" type="frame">
+    <input xpath="createdBy"/>
+    <input xpath="createdBy/@name"/>
+  </container>
+</form>
+```
+
+![](assets/console_screen_form.png)
+
+#### Pagina&#39;s toevoegen aan formulieren met meerdere pagina&#39;s
+
+Voor formulieren met meerdere pagina&#39;s gebruikt u een container om een formulierpagina te maken.
+
+In dit voorbeeld worden containers voor de **Algemeen** en **Details** pagina&#39;s van een formulier:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+### Toegang tot velden definiëren
+
+Gebruik containers om te definiëren wat zichtbaar is en om de toegang tot velden te definiëren. U kunt groepen velden in- of uitschakelen.
+
+### Formulieren nesten
+
+Gebruik containers om formulieren in andere formulieren te nesten. [Meer informatie](#add-pages-to-multipage-forms).
+
+## Verwijzingen naar afbeeldingen
+
+Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** in het menu.
+
+Als u een afbeelding wilt koppelen aan een element in het formulier, bijvoorbeeld een pictogram, kunt u een verwijzing naar een afbeelding toevoegen. Gebruik de `img` in het dialoogvenster `<container>` element.
+
+Syntaxis: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+
+In dit voorbeeld worden verwijzingen naar de `book.png` en `detail.png` afbeeldingen van de `ncm` naamruimte:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+Deze afbeeldingen worden gebruikt voor pictogrammen waarop gebruikers klikken om door een formulier met meerdere pagina&#39;s te navigeren:
+
+![](assets/nested_forms_preview.png)
