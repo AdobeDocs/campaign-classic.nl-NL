@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
+source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 4%
+source-wordcount: '1105'
+ht-degree: 2%
 
 ---
 
@@ -169,5 +169,237 @@ In dit voorbeeld worden verwijzingen naar de `book.png` en `detail.png` afbeeldi
 ```
 
 Deze afbeeldingen worden gebruikt voor pictogrammen waarop gebruikers klikken om door een formulier met meerdere pagina&#39;s te navigeren:
+
+![](assets/nested_forms_preview.png)
+
+
+## Een eenvoudig formulier maken {#create-simple-form}
+
+Voer de volgende stappen uit om een formulier te maken:
+
+1. Kies in het menu de optie **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+1. Klik op de knop **[!UICONTROL New]** aan de rechterbovenhoek van de lijst.
+
+   ![](assets/input-form-create-1.png)
+
+1. Geef de formuliereigenschappen op:
+
+   * Geef de naam van het formulier en de naamruimte op.
+
+      De formuliernaam en de naamruimte kunnen overeenkomen met het gerelateerde gegevensschema.  In dit voorbeeld wordt een formulier getoond voor de `cus:order` gegevensschema:
+
+      ```xml
+      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+      U kunt het gegevensschema ook expliciet opgeven in het dialoogvenster `entity-schema` kenmerk.
+
+      ```xml
+      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+   * Geef het label op dat op het formulier moet worden weergegeven.
+   * Geef desgewenst het formuliertype op. Als u geen formuliertype opgeeft, wordt standaard het schermtype voor de console gebruikt.
+
+      ![](assets/input-form-create-2.png)
+
+      Als u een formulier met meerdere pagina&#39;s ontwerpt, kunt u het formuliertype weglaten in het dialoogvenster `<form>` en geeft u het type op in een container.
+
+1. Klik op **[!UICONTROL Save]**.
+
+1. Voeg de formulierelementen in.
+
+   Als u bijvoorbeeld een invoerveld wilt invoegen, gebruikt u de opdracht `<input>` element. Stel de `xpath` kenmerk aan de veldverwijzing als een XPath-expressie. [Meer informatie](schema-structure.md#referencing-with-xpath).
+
+   In dit voorbeeld worden invoervelden weergegeven op basis van de `nms:recipient` schema.
+
+   ```xml
+   <input xpath="@firstName"/>
+   <input xpath="@lastName"/>
+   ```
+
+1. Als het formulier is gebaseerd op een specifiek schematype, kunt u de velden voor dit schema opzoeken:
+
+   1. Klik op **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+
+      ![](assets/input-form-create-4.png)
+
+   1. Selecteer het veld en klik op **[!UICONTROL OK]**.
+
+      ![](assets/input-form-create-5.png)
+
+1. Geef desgewenst de veldeditor op.
+
+   Een standaardeditor voor velden wordt aan elk gegevenstype gekoppeld:
+   * Voor een datumveld wordt in het formulier een invoerkalender weergegeven.
+   * Voor een veld van het type opsomming wordt in het formulier een selectielijst weergegeven.
+
+   U kunt de volgende veldeditortypen gebruiken:
+
+   | Veldeditor | Formulierkenmerk |
+   | --- | --- |
+   | Keuzerondje | `type="radiobutton"` |
+   | Selectievakje | `type="checkbox"` |
+   | Boomstructuur bewerken | `type="tree"` |
+
+   Meer informatie over [besturingselementen voor geheugenlijsten](form-structure.md#memory-list-controls).
+
+1. U kunt ook toegang tot de velden definiëren:
+
+   | Element | Kenmerk | Beschrijving |
+   | --- | --- | --- |
+   | `<input>` | `read-only:"true"` | Biedt alleen-lezen toegang tot een veld |
+   | `<container>` | `type="visibleGroup" visibleIf="`*bewerken-expr*`"` | Hiermee geeft u een groep velden voorwaardelijk weer |
+   | `<container>` | `type="enabledGroup" enabledIf="`*bewerken-expr*`"` | Hiermee wordt een groep velden voorwaardelijk ingeschakeld |
+
+   Voorbeeld:
+
+   ```xml
+   <container type="enabledGroup" enabledIf="@gender=1">
+     […]
+   </container>
+   <container type="enabledGroup" enabledIf="@gender=2">
+     […]
+   </container>
+   ```
+
+1. U kunt containers ook gebruiken om velden te groeperen in secties.
+
+   ```xml
+   <container type="frame" label="Name">
+      <input xpath="@firstName"/>
+      <input xpath="@lastName"/>
+   </container>
+   <container type="frame" label="Contact details">
+      <input xpath="@email"/>
+      <input xpath="@phone"/>
+   </container>
+   ```
+
+   ![](assets/input-form-create-3.png)
+
+## Een formulier met meerdere pagina&#39;s maken {#create-multipage-form}
+
+U kunt formulieren met meerdere pagina&#39;s maken. U kunt formulieren ook nesten binnen andere formulieren.
+
+### Een `iconbox` formulier
+
+Gebruik de `iconbox` formuliertype om pictogrammen links van het formulier weer te geven. Hiermee gaan gebruikers naar verschillende pagina&#39;s in het formulier.
+
+![](assets/iconbox_form_preview.png)
+
+Het type van een bestaand formulier wijzigen in `iconbox`Voer de volgende stappen uit:
+
+1. Wijzig de `type` kenmerk van de `<form>` element naar `iconbox`:
+
+   ```xml
+   <form […] type="iconbox">
+   ```
+
+1. Stel een container in voor elke formulierpagina:
+
+   1. Voeg een `<container>` element as a child of the `<form>` element.
+   1. Als u een label en een afbeelding voor het pictogram wilt definiëren, gebruikt u de opdracht `label` en `img` kenmerken.
+
+      ```xml
+      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
+          <container img="xtk:properties.png" label="General">
+              <input xpath="@label"/>
+              <input xpath="@name"/>
+              […]
+          </container>
+          <container img="nms:msgfolder.png" label="Details">
+              <input xpath="@address"/>
+              […]
+          </container>
+          <container img="nms:supplier.png" label="Services">
+              […]
+          </container>
+      </form>
+      ```
+   U kunt ook de `type="frame"` kenmerk van het bestaande `<container>` elementen.
+
+### Een laptopformulier maken
+
+Gebruik de `notebook` formuliertype om tabbladen boven aan het formulier weer te geven. Hiermee gaan gebruikers naar verschillende pagina&#39;s.
+
+![](assets/notebook_form_preview.png)
+
+Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stappen uit:
+
+1. Wijzig de `type` kenmerk van de `<form>` element naar `notebook`:
+
+   ```xml
+   <form […] type="notebook">
+   ```
+
+1. Voeg een container toe voor elke formulierpagina:
+
+   1. Voeg een `<container>` element as a child of the `<form>` element.
+   1. Als u het label en de afbeelding voor het pictogram wilt definiëren, gebruikt u de opdracht `label` en `img` kenmerken.
+
+   ```xml
+     <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
+         <container label="General">
+             <input xpath="@label"/>
+             <input xpath="@name"/>
+             […]
+         </container>
+         <container label="Details">
+             <input xpath="@address"/>
+             […]
+         </container>
+         <container label="Services">
+             […]
+         </container>
+     </form>
+   ```
+
+   U kunt ook de `type="frame"` kenmerk van het bestaande `<container>` elementen.
+
+### Formulieren nesten {#nest-forms}
+
+U kunt formulieren nesten binnen andere formulieren. U kunt bijvoorbeeld laptopformulieren nesten in iconbox-formulieren.
+
+Het niveau van het nesten controleert navigatie. Gebruikers kunnen naar subformulieren gaan.
+
+Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` en stel de `type` aan het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het dialoogvenster `<form>` element.
+
+### Voorbeeld
+
+In dit voorbeeld wordt een complex formulier getoond:
+
+* De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
+
+   Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+
+* Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
 
 ![](assets/nested_forms_preview.png)
