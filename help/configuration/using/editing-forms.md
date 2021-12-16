@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,150 @@ In dit voorbeeld wordt een complex formulier getoond:
 Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
 
 ![](assets/nested_forms_preview.png)
+
+Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` en stel de `type` aan het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het dialoogvenster `<form>` element.
+
+### Voorbeeld
+
+In dit voorbeeld wordt een complex formulier getoond:
+
+* De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
+
+   Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+
+* Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+
+![](assets/nested_forms_preview.png)
+
+
+
+## Een fabrieksinvoerformulier wijzigen {#modify-factory-form}
+
+Voer de volgende stappen uit om een fabrieksformulier te wijzigen:
+
+1. Het fabrieksinvoerformulier wijzigen:
+
+   1. Kies in het menu de optie **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Selecteer een invoerformulier en wijzig dit.
+
+   U kunt schema&#39;s met fabrieksgegevens uitbreiden, maar u kunt geen formulieren met fabrieksinvoer uitbreiden. We raden u aan fabrieksinvoerformulieren rechtstreeks te wijzigen zonder ze opnieuw te maken. Tijdens software-upgrades worden uw wijzigingen in de fabrieksinvoerformulieren samengevoegd met de upgrades. Als het automatisch samenvoegen mislukt, kunt u de conflicten oplossen. [Meer informatie](../../production/using/upgrading.md#resolving-conflicts).
+
+   Als u bijvoorbeeld een fabrieksschema met een extra veld uitbreidt, kunt u dit veld toevoegen aan het gerelateerde fabrieksformulier.
+
+## Formulieren valideren {#validate-forms}
+
+U kunt validatiecontroles opnemen in formulieren.
+
+### Alleen-lezen toegang verlenen tot velden
+
+Als u alleen-lezen toegang wilt verlenen tot een veld, gebruikt u de opdracht `readOnly="true"` kenmerk. U kunt bijvoorbeeld de primaire sleutel van een record weergeven, maar dan met alleen-lezen toegang. [Meer informatie](form-structure.md#non-editable-fields).
+
+In dit voorbeeld wordt de primaire toets (`iRecipientId`) van de `nms:recipient` schema wordt getoond in read-only toegang:
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### Verplichte velden controleren
+
+U kunt verplichte gegevens controleren:
+
+* Gebruik de `required="true"` voor de vereiste velden.
+* Gebruik de `<leave>` knoop om deze gebieden te controleren en foutenmeldingen te tonen.
+
+In dit voorbeeld is het e-mailadres vereist en wordt een foutbericht weergegeven als de gebruiker deze informatie niet heeft opgegeven:
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+Meer informatie over [expressievelden](form-structure.md#expression-field) en [formuliercontext](form-structure.md#context-of-forms).
+
+### Waarden valideren
+
+U kunt SOAP-aanroepen van JavaScript gebruiken om formuliergegevens vanuit de console te valideren. Gebruik deze aanroepen voor complexe validatie, bijvoorbeeld om een waarde te controleren op basis van een lijst met toegestane waarden. [Meer informatie](form-structure.md#soap-methods).
+
+1. Maak een validatiefunctie in een JS-bestand.
+
+   Voorbeeld:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   In dit voorbeeld wordt de functie benoemd `checkValue`. Deze functie wordt gebruikt om de `recipient` gegevenstype in het dialoogvenster `nms` naamruimte. De waarde die wordt gecontroleerd wordt geregistreerd. Als de waarde niet geldig is, wordt een foutbericht geregistreerd. Als de waarde geldig is, wordt de waarde 1 geretourneerd.
+
+   U kunt de geretourneerde waarde gebruiken om het formulier te wijzigen.
+
+1. Voeg in het formulier de `<soapCall>` aan de `<leave>` element.
+
+   In dit voorbeeld wordt een SOAP-aanroep gebruikt om de `@valueToCheck` tekenreeks:
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   In dit voorbeeld wordt `checkValue` en de `nms:recipient` de dienst wordt gebruikt:
+
+   * De dienst is namespace en het gegevenstype.
+   * De methode is de functienaam. De naam is hoofdlettergevoelig.
+
+   De vraag wordt uitgevoerd synchroon.
+
+   Alle uitzonderingen worden weergegeven. Als u het `<leave>` , kunnen gebruikers het formulier pas opslaan nadat de ingevoerde gegevens zijn gevalideerd.
+
+In dit voorbeeld wordt getoond hoe u serviceaanroepen kunt uitvoeren vanuit formulieren:
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+In dit voorbeeld is de invoer een id, die een primaire sleutel is. Wanneer gebruikers het formulier voor deze id invullen, wordt een SOAP-aanroep met deze id gemaakt als invoerparameter. De uitvoer is een Booleaanse waarde die naar dit veld wordt geschreven: `/tmp/@count`. U kunt deze Booleaanse waarde in het formulier gebruiken. Meer informatie over [formuliercontext](form-structure.md#context-of-forms).
