@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1196'
 ht-degree: 2%
 
 ---
@@ -416,11 +416,4 @@ Voer de volgende stappen uit om een fabrieksformulier te wijzigen:
       >[!CAUTION]
       > Wijzig de oorspronkelijke gegevens niet in een fabrieksnaamruimte, maar breid deze uit in een aangepaste naamruimte. De reden is dat tijdens software-upgrades alle gegevens in de fabrieksnaamruimten worden overschreven. De gegevens in het dialoogvenster `xtk`, `ncm`, en `nms` fabrieksnaamruimten worden overschreven. De gegevens in uw aangepaste naamruimten worden niet gewijzigd.
 
-1. Het fabrieksinvoerformulier wijzigen:
 
-   1. Kies in het menu de optie **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. Selecteer een invoerformulier en wijzig dit.
-
-   U kunt schema&#39;s met fabrieksgegevens uitbreiden, maar u kunt geen formulieren met fabrieksinvoer uitbreiden. We raden u aan fabrieksinvoerformulieren rechtstreeks te wijzigen zonder ze opnieuw te maken. Tijdens software-upgrades worden uw wijzigingen in de fabrieksinvoerformulieren samengevoegd met de upgrades. Als het automatisch samenvoegen mislukt, kunt u de conflicten oplossen. [Meer informatie](../../production/using/upgrading.md#resolving-conflicts).
-
-   Als u bijvoorbeeld een fabrieksschema met een extra veld uitbreidt, kunt u dit veld toevoegen aan het gerelateerde fabrieksformulier.
