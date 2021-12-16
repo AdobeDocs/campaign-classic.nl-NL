@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: df3c833e99caeb94df1978dc8792b86c8634626b
+source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -366,3 +366,40 @@ Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stapp
 U kunt formulieren nesten binnen andere formulieren. U kunt bijvoorbeeld laptopformulieren nesten in iconbox-formulieren.
 
 Het niveau van het nesten controleert navigatie. Gebruikers kunnen naar subformulieren gaan.
+
+Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` en stel de `type` aan het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het dialoogvenster `<form>` element.
+
+### Voorbeeld
+
+In dit voorbeeld wordt een complex formulier getoond:
+
+* De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
+
+   Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+
+* Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+
+![](assets/nested_forms_preview.png)
