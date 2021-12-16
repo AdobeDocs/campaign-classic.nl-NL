@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
+source-git-commit: 2b7341bb7fd5ecd93ccc9abd27789a013fda37fa
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -360,3 +360,9 @@ Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stapp
    ```
 
    U kunt ook de `type="frame"` kenmerk van het bestaande `<container>` elementen.
+
+### Formulieren nesten {#nest-forms}
+
+U kunt formulieren nesten binnen andere formulieren. U kunt bijvoorbeeld laptopformulieren nesten in iconbox-formulieren.
+
+Het niveau van het nesten controleert navigatie. Gebruikers kunnen naar subformulieren gaan.
