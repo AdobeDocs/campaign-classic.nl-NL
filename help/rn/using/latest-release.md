@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _8 oktober 2021_
 
 **Patches**
 
+* Verbeterde oplossing voor de factureringsworkflow die beschikbaar was in build 9342. Hiervoor moest de workflow handmatig opnieuw worden opgestart voordat de correctie kon worden toegepast. De postupgrade start de workflow nu automatisch opnieuw.
+
 * Probleem verholpen waarbij een correcte Offer Decisioning kon worden voorkomen bij gebruik van de **Interactie**-module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
 * Probleem verholpen: &#39;De ipaffinity xxx is niet gevonden op middenserver xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multimid-sourcingversie. (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _7 september 2021_
 
 **Andere wijzigingen**
 
+* Oplossing voor een regressie die in 21.1.3 werd geïntroduceerd met de factureringsworkflow voor nieuwe guardrail. De factureringswerkstroom werd uitgevoerd op verkeerde instanties en crashte pogingen om het factureringsrapport te verzenden dat niet werd geproduceerd. U moet de workflow handmatig opnieuw starten om de correctie toe te passen.
 * Eerder vervangen connectoren van Microsoft CRM (Bureau 365 en On-premise-implementaties) zijn uit de interface verwijderd. [Meer informatie](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Na de migratie aan Tomcat 8 is het IIS-instellingenscript bijgewerkt om IIS-integratiekwesties te bevestigen. (NEO-31019)
-* Er is een veiligheidsbarrière toegevoegd waarmee alleen de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) op de marketingversie kan worden uitgevoerd.
 * De identificatie van de databron is verbeterd in de gegevens- en schematabbladen van het venster **Populatie weergeven** van de workflowtransities.
 * Ontbrekende database-indexen zijn toegevoegd aan de volgende schema&#39;s om problemen met database-updates te voorkomen: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -193,6 +194,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 
 **Andere wijzigingen**
 
+* Er is een veiligheidsbarrière toegevoegd waarmee alleen de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) op de marketingversie kan worden uitgevoerd.
 * De derde partij openssl voor Windows is bijgewerkt naar versie 1.1.1h.
 * In de beschrijving van het Debian-pakket is nlServer gewijzigd in Adobe Campaign Classic-server.
 
