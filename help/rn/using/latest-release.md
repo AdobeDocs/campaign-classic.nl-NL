@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2556'
 ht-degree: 88%
 
 ---
@@ -22,7 +22,7 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 ## Release 7.1 (21.1)
 
 >[!CAUTION]
->Campagne **[!UICONTROL Help > About...]** menu laat u uw controleren [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Houd er echter rekening mee dat voor alle builds tussen 9277 en 9343 op deze pagina het versienummer is ingesteld op 7.0 in plaats van 7.1.
+>Campagne **[!UICONTROL Help > About...]** menu laat u uw controleren [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Houd er echter rekening mee dat voor alle builds tussen 9277 en 9343 op deze pagina het versienummer 7.0 in plaats van 7.1 wordt weergegeven.
 
 ### ![](assets/do-not-localize/green_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
 
