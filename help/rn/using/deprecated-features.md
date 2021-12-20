@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics Data Connector afgeschaft.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
-  <p><em>Streefdatum voor verwijdering: augustus 2022</em></p>
+  <p><em>Doeldatum verwijdering: 17 augustus 2022</em></p>
   </td>
  </tr>
     <tr>
