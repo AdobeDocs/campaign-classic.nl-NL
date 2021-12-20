@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 97%
+source-wordcount: '1744'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><p>Met ingang van de 21.1-release van Campaign is het rapport over de technische afleveringscontrole afgeschaft.</p>
    <p>U kunt dit rapport desgewenst dagelijks per e-mail ontvangen tot de datum waarop de functie wordt verwijderd. Open een <a href="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">ondersteuningskwestie</a> om hiervoor een verzoek in te dienen. Geef de naam op van de instantie en de e-mailadressen die het rapport moeten ontvangen.</p> 
    <p>Adobe raadt u aan contact op te nemen met het Afleverteam om te bepalen welke tools u het beste kunt gebruiken om de afleveringsprestaties van uw instantie te controleren.</p>
-  <p><em>Verwachte verwijdering: eind 2021</em></p>
+  <p><em>Doeldatum verwijdering: Begin 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
   <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
-  <p><em>Doeldatum voor verwijdering: november 2021</em></p>
+  <p><em>Doeldatum verwijdering: 20 oktober 2021. Gehoste omgevingen profiteren van een verlenging tot 23 februari 2022. </em></p>
   </td>
   </tr>
  </tbody> 
@@ -179,7 +179,7 @@ Vanaf release 21.1.3 is de ondersteuning voor Debian 8 afgeschaft.
 
 Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
 
-* CentOS 6 [Meer informatie](https://wiki.centos.org/Download)
+* CentOS 6. [Meer informatie](https://wiki.centos.org/Download)
 * Debian 7. [Meer informatie](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Meer informatie](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/1163)

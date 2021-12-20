@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
 >Let op: tijdens deze overgang naar [!DNL Adobe I/O]bepaalde inkomende triggers kunnen verloren gaan.
 >
->De oude verificatiemodus Auth met Campagne wordt uitgeschakeld **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot  **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) naar Adobe.
+>De oude verificatiemodus Auth met Campagne is uitgeschakeld op **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot  **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) naar Adobe.
 
 ## Vereisten {#adobe-io-prerequisites}
 
