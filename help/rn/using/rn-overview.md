@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 77%
 
 ---
 
@@ -17,19 +17,17 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign wordt regelmatig bijgewerkt. Gemiddeld worden er elk jaar twee of drie kleine versies uitgebracht met nieuwe functies, verbeteringen en oplossingen. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen.
+Adobe Campaign wordt regelmatig bijgewerkt. Elk jaar worden er een of twee kleine versies uitgebracht met nieuwe functies, verbeteringen en oplossingen. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen.
 
 Deze regelmatige updates zijn bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
-Daarom is het zo belangrijk dat u met de meest recente versie van Adobe Campaign werkt. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
+Dat is de reden waarom wij het van essentieel belang achten dat u **Voer de meest recente versie uit** van Adobe Campaign. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
 
 ## Releasestatussen{#rn-statuses}
 
-Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statussen en hoe u deze kunt interpreteren.
+Elke nieuwe build wordt geleverd met een status die wordt geconcretiseerd door een kleur.
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
-
-De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard] release 11](../../rn/using/gold-standard.md#gs-11) en de [release Campaign 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -41,9 +39,9 @@ De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard] release 11](../../rn/us
 
 ## Aanbevelingen{#recommendations}
 
-Voor een stabiele configuratie adviseren we u dezelfde stabiele build te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
+Om een stabiele configuratie te verzekeren, adviseren wij dat u installeert **dezelfde stabiele build** op alle servers die op de zelfde cliëntconfiguratie lopen.
 
-Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serverinstantie.
+Daarnaast moet de clientconsole zich op dezelfde build bevinden als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
@@ -62,6 +60,7 @@ Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
+* [Campagneversie zoeken](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Help en ondersteuning](../../support.md)
 * [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)

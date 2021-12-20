@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Laatste release
-description: Nieuwste opmerkingen bij de release van Campaign Classic
+description: Opmerkingen bij de nieuwste release Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 97%
+source-wordcount: '2559'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic**.
+Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd bij de **nieuwste Campaign Classic v7-release**. Elke nieuwe build wordt geleverd met een status die wordt geconcretiseerd door een kleur. Meer informatie over de status van Campaign Classic v7 build in [deze pagina](rn-overview.md).
 
-Krijg inzicht in de Campaign-versiestatussen op [deze pagina](rn-overview.md).
+## Release 7.1 (21.1)
 
+>[!CAUTION]
+>Campagne **[!UICONTROL Help > About...]** menu laat u uw controleren [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Houd er echter rekening mee dat voor alle builds tussen 9277 en 9343 op deze pagina het versienummer is ingesteld op 7.0 in plaats van 7.1.
 
-## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
 
 _8 oktober 2021_
 
@@ -34,7 +36,7 @@ _8 oktober 2021_
 
 * Probleem verholpen: &#39;De ipaffinity xxx is niet gevonden op middenserver xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multimid-sourcingversie. (NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
 
 _7 september 2021_
 
@@ -68,7 +70,7 @@ _7 september 2021_
 * Probleem verholpen waardoor u geen variabelen kon gebruiken in een workflowactiviteit **Verrijkings** als de binnenkomende transitie afkomstig was van een FDA-databron.
 * Probleem verholpen dat kon leiden tot verbroken URL&#39;s in e-mailberichten.
 
-## ![](assets/do-not-localize/orange_2.png) Release 21.1.3 - versie 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png) Release 21.1.3 - versie 9330 {#release-21-1-3-build-9330}
 
 _5 juni 2021_
 
@@ -179,18 +181,18 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 
 **Verouderde functies**
 
-* Vanaf Campaign 21.1 is de Adobe Analytics-gegevensconnector afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen met de nieuwe connector Adobe Analytics Connector.
-Raadpleeg de [gedetailleerde documentatie](../../technotes/using/aa-connector-migration.md) voor meer informatie.
-* De ondersteuning voor Debian 8 is nu afgeschaft.
-* Na het afschaffen van Oracle CRM in 20.3 is het verbonden externe account uit de interface verwijderd.
+* ODBC-stuurprogramma&#39;s worden nu rechtstreeks geïnstalleerd bij Adobe Campaign Third Party. Handmatige stappen zijn niet meer vereist om de stuurprogramma&#39;s te installeren.
+* Google Big Query is nu beschikbaar voor gehoste implementaties.
 
-Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md).
+[Meer informatie](../../installation/using/configure-fda.md)
 
 **Verbeteringen**
 
-* Er zijn extra controles toegevoegd bij het opslaan van een workflow om ervoor te zorgen dat de namen van activiteiten uniek zijn en dat overgangen altijd worden gevolgd door een activiteit.
-* De technische workflow **Facturering (facturering)** bevat nu de taken die oorspronkelijk werden uitgevoerd door de workflow **Aantal actieve factureringsprofielen** (billingActiveContactCount), die is verwijderd. Het e-mailrapport dat elke maand door de workflow wordt verzonden, bevat nu informatie over het aantal actieve profielen voor de instantie. [Meer informatie](../../workflow/using/about-technical-workflows.md).
-* Het nieuwe **_keyOnMData** attribuut is toegevoegd om een sleutel voor bewerkingen van memogegevens te kunnen gebruiken.
+* Er zijn kritieke correcties toegepast voor de webAPI van Microsoft Dynamics Connector:
+   * Probleem verholpen waarbij gegevensimport vanuit Microsoft CRM zou kunnen mislukken of niet zou werken als de filtervoorwaarde opzoekvelden bevatte.
+   * Probleem verholpen tijdens het importeren die werd geactiveerd door een workflow. Hierdoor werden de null-waarden van tekenreeksvelden opgeslagen als null in plaats van als lege waarden.
+   * Probleem verholpen die tot de volgende fout voor het importeren of exporteren van gegevens met API-aanroepen voor het web heeft geleid: &quot;Ongeldige URI: Het URI-schema is te lang.&quot;
+   * Probleem verholpen tijdens het importeren uit Microsoft Dynamics 365, waardoor de gegevens van opzoekvelden niet konden worden geïmporteerd.
 
 **Andere wijzigingen**
 
@@ -224,14 +226,14 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost waarbij u geen levering kon verzenden met een groep proeven vanwege een specifiek samenvoegingsmechanisme dat de personalisatie van de levering niet kon uitvoeren. (NEO-14391)
 * Er is een probleem opgelost waarbij geen waarschuwing met de waarschuwingsactiviteit werd verzonden als een query en een verrijkingsactiviteit de leveringstabel als doel hadden. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - versie 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png) Release 21.1.2 - versie 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
 * Wachtwoordbeheer is verbeterd om de beveiliging te optimaliseren.
 * Er is een probleem opgelost waarbij MTA soms vastliep.
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - versie 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png) Release 21.1.1 - versie 9277 {#release-21-1-1-build-9277}
 
 _22 februari 2021_
 

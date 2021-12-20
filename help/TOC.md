@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: ht
-source-wordcount: '2575'
-ht-degree: 100%
+source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+workflow-type: tm+mt
+source-wordcount: '2581'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,14 @@ ht-degree: 100%
 + Aanvullende informatie {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
-   + [!DNL Gold Standard]-release {#gs-release}
-      + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [Aanvullende informatie over [!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard]-compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
-      + [Release 20.3](rn/using/release--20-3.md)
-      + [Release 20.2](rn/using/release--20-2.md)
-      + [Release 20.1](rn/using/release--20-1.md)
-      + [Release 19.2](rn/using/release--19-2.md)
-      + [Release 19.1](rn/using/release--19-1.md)
-      + [Release 18.10](rn/using/release--18-10.md)
-      + [Release 18.6](rn/using/release--18-6.md)
-      + [Release 18.4](rn/using/release--18-4.md)
+      + [!DNL Gold Standard]-release {#gs-release}
+         + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
+         + [Aanvullende informatie over [!DNL Gold Standard]](rn/using/gold-standard.md)
+         + [[!DNL Gold Standard]-compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
+      + [2020](rn/using/release--2020.md)
+      + [2019](rn/using/release--2019.md)
+      + [2018](rn/using/release--2018.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
@@ -560,7 +555,7 @@ ht-degree: 100%
       + [Aanvullende gegevens](interaction/using/additional-data.md)
       + [Extensievoorbeeld](interaction/using/extension-example.md)
       + [Een testomgeving maken](interaction/using/creating-a-test-environment.md)
-      + [Hooks](interaction/using/hooks.md)
+      + [Het standaardgedrag van de motor wijzigen](interaction/using/hooks.md)
       + [Gedistribueerde architecturen](interaction/using/distributed-architectures.md)
       + [Configuratie van gegevensbuffers](installation/using/interaction---data-buffer.md)
    + Gebruiksscenario {#case-study}
@@ -660,7 +655,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -849,6 +844,7 @@ ht-degree: 100%
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
       + [IMS-updates](technotes/using/ims-updates.md)
+      + [Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning](technotes/using/eol-tls-support.md)
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)

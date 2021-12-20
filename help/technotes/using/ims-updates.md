@@ -3,9 +3,9 @@ product: campaign
 title: TechNote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '587'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ Op 30 juni zijn wijzigingen aangebracht in 2021 [Adobe Identity Management-syste
 
 ## Wat is er veranderd?
 
-Adobe Identity Management Service (IMS) biedt geen ondersteuning voor oude Internet Explorer-versies op **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management Service (IMS) biedt geen ondersteuning voor oude Internet Explorer-versies op **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
@@ -40,10 +40,9 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
 
    * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
    * Release van campagne 21.1.3. [Meer informatie](../../rn/using/latest-release.md)
-   * Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--20-2.md)
-   * Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--20-1.md)
-   * Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--19-2.md)
-   * Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
+   * Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+   * Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+   * Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 
    Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties zijn bijgewerkt, moet de clientconsole worden bijgewerkt naar deze versie en moet deze ook verbinding kunnen maken met Campagne nadat **30 juni 2021**.
 

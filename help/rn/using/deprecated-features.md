@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,12 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   <tr> 
    <td><strong>Gebied - functie</strong></td>
    <td><strong>Vervanging</strong></td> 
+  </tr>
+ <tr>  
+   <td>CRM-connectoren activiteiten<br></td>
+   <td><p> Microsoft CRM, Salesforce en Oracle CRM On Demand Action zijn niet meer beschikbaar.</p>
+   <p>Om de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM te vormen, kunt u de de schakelaaractiviteit van CRM gebruiken.</p>
+   <p><a href="../../workflow/using/crm-connector.md">Meer informatie</a></p>
   </tr>
   <tr>  
    <td>Rapportage<br></td>

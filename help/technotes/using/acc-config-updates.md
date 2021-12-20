@@ -3,7 +3,7 @@ product: campaign
 title: TechNote - Adobe Campaign-configuratieupdates
 description: Adobe Campaign-configuratieupdates
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 12%
@@ -36,10 +36,10 @@ Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heef
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.4. [Meer informatie](../../rn/using/release--20-2.md)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--20-1.md)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--19-2.md)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
+* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -62,13 +62,13 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 De **nu beschikbaar** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Consoleupgrade** is verplicht.
 
 * Nieuwste Gold Standard 11 build 9032@10c2709. [Meer informatie](../../rn/using/gold-standard.md)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--20-1.md)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--19-2.md)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
+* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 ## Adobe Identity Management System (IMS)-update
 
-Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies van **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies van **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
@@ -78,10 +78,10 @@ Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--20-2.md)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--20-1.md)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--19-2.md)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
+* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht, zodat zowel de campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
 
@@ -111,8 +111,8 @@ U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--20-2.md)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--19-1.md)
+* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -120,7 +120,7 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 Zodra de instanties aan een nieuwere versie worden bevorderd, moeten alle klanten volgen [de procedure gaat naar de nieuwe authentificatiemodus](../../integrations/using/configuring-adobe-io.md). Dit vereist u om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
 
-Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer info](../../integrations/using/configuring-pipeline.md).
+Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../../integrations/using/configuring-pipeline.md).
 
 [Leer hoe u naar Adobe I/O migreert](../../integrations/using/configuring-adobe-io.md).
 
