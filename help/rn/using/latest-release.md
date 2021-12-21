@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ _7 september 2021_
 
 **Andere wijzigingen**
 
-* Oplossing voor een regressie die in 21.1.3 werd geïntroduceerd met de factureringsworkflow voor nieuwe guardrail. De factureringswerkstroom werd uitgevoerd op verkeerde instanties en crashte pogingen om het factureringsrapport te verzenden dat niet werd geproduceerd. U moet de workflow handmatig opnieuw starten om de correctie toe te passen.
+* Er is een regressie opgelost die in 21.1.3 werd geïntroduceerd met de nieuwe beveiliging van de factureringsworkflow. De factureringsworkflow werd uitgevoerd op verkeerde instanties en crashte tijdens het verzenden van het factureringsrapport dat niet werd gegenereerd. U moet de workflow handmatig opnieuw starten om de correctie toe te passen.
 * Eerder vervangen connectoren van Microsoft CRM (Bureau 365 en On-premise-implementaties) zijn uit de interface verwijderd. [Meer informatie](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Na de migratie aan Tomcat 8 is het IIS-instellingenscript bijgewerkt om IIS-integratiekwesties te bevestigen. (NEO-31019)
 * De identificatie van de databron is verbeterd in de gegevens- en schematabbladen van het venster **Populatie weergeven** van de workflowtransities.
@@ -196,7 +196,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 
 **Andere wijzigingen**
 
-* Er is een veiligheidsbarrière toegevoegd waarmee alleen de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) op de marketingversie kan worden uitgevoerd.
+* Er is een veiligheidsbarrière toegevoegd waardoor alleen de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) op de marketinginstantie kan worden uitgevoerd.
 * De derde partij openssl voor Windows is bijgewerkt naar versie 1.1.1h.
 * In de beschrijving van het Debian-pakket is nlServer gewijzigd in Adobe Campaign Classic-server.
 
