@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 48%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 48%
 
 ## Nieuwe functies
 
-* **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+* **[Oktober Release is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Aanvankelijke aanwijzingen vinden in reactie op de aankondiging van Apple met betrekking tot iOS 15
+* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
 
 * **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne nadat** 30 juni 2021 **
 

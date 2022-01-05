@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
+source-git-commit: fbab510788abe0fccbbd791233c906e7f9d8d703
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1198'
 ht-degree: 1%
 
 ---
@@ -200,12 +200,11 @@ Bewerk indien nodig de **klant.sh** bestand met de **vi customer.sh** en pas de 
 
    * Debian
 
-      Er zijn standaardwaarden voor OOO_INSTALL_DIR, OOO_BASIS_INSTALL_DIR, OOO_URE_INSTALL_DIR. U kunt deze overschrijven in **klant.sh** als uw lay-out van de installatie LibreOffice verschillend is:
+      De standaardwaarden voor OO_INSTALL_DIR en OOO_BASIS_INSTALL_DIR worden verstrekt. U kunt deze overschrijven in **klant.sh** als uw lay-out van de installatie LibreOffice verschillend is:
 
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
       export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-      export OOO_URE_INSTALL_DIR=/usr/lib/ure/share/
       ```
 
    * CentOs
@@ -215,7 +214,6 @@ Bewerk indien nodig de **klant.sh** bestand met de **vi customer.sh** en pas de 
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
       export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-      export OOO_URE_INSTALL_DIR=/usr/lib64/libreoffice/ure/share/
       ```
 
 * Voor Java Development Kit (JDK):

@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2599'
 ht-degree: 99%
 
 ---
@@ -597,6 +597,7 @@ ht-degree: 99%
    + Bijlagen {#annexes}
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
++ [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 + Installatie- en configuratiehandleiding {#installing-campaign-classic}
    + Architectuurprincipes {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
@@ -854,3 +855,4 @@ ht-degree: 99%
    + Migratie naar Adobe Managed Services{#dc-migration}
       + [Migratie naar Public Cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)
++ [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)

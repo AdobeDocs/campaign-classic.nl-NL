@@ -5,9 +5,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -92,9 +92,11 @@ U kunt:
 
 * Voor elk element IPAffinity, verklaar de IP adressen die kunnen worden gebruikt. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In de [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keuze gebruikt u de **[!UICONTROL Managing affinities with IP addresses]** veld voor het koppelen van leveringen aan de bezorgserver (MTA) die de opgegeven affiniteit beheert. [Meer info](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In de [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keuze gebruikt u de **[!UICONTROL Managing affinities with IP addresses]** veld voor het koppelen van leveringen aan de bezorgserver (MTA) die de opgegeven affiniteit beheert. [Meer informatie](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Zodra e-mail wordt verzonden, controleer de kopbal om te verifiëren welk IP adres de levering van werd verzonden. De e-mailbeheerder moet u helpen de koptekstgegevens op te halen.
+
+* Voor SMS-leveringen moet u ervoor zorgen dat het SMS-kanaal een specifieke affiniteit heeft die beperkt is tot **één** toepassingsservercontainer. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

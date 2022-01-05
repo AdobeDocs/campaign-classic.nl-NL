@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1697'
 ht-degree: 35%
 
 ---
@@ -24,6 +24,10 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
    Merk op dat de erfenisschakelaars nu verouderd zijn. Afgeschafte mogelijkheden zijn nog steeds beschikbaar, maar ze zullen niet verder worden verbeterd of ondersteund. Meer informatie vindt u [op deze pagina](../../rn/using/deprecated-features.md).
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
+
+>[!NOTE]
+>
+> Voor SMS-leveringen moet de typologie een specifieke SMS-affiniteit gebruiken die in **één** specifieke toepassingsservercontainer. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Een SMPP-externe account maken {#creating-an-smpp-external-account}
 

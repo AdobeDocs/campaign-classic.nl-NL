@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,10 @@ U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Pictogrammen met betrekking tot het bijhouden en starten van een geavanceerd workflow voor doelgerichte toepassingen worden in deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Pictogrammen die betrekking hebben op de voortgangsweergave en de logboekweergave worden in de volgende secties beschreven:
+
+   * [Voortgang weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Logboeken weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objectuitlijning**
 
@@ -122,7 +125,7 @@ Voor een beter begrip van de activiteiten en een betere leesbaarheid van de work
 
 ![](assets/example1-comment.png)
 
-## Workflows voorbereiden {#targeting-workflows}
+## Targetingworkflows {#targeting-workflows}
 
 Met doelgerichte workflows kunt u verschillende leveringsdoelen maken. U kunt query&#39;s maken, samenvoegingen of uitsluitingen definiëren op basis van specifieke criteria, planning toevoegen dankzij workflowactiviteiten. Het resultaat van deze gerichte actie kan automatisch worden overgedragen naar een lijst die als doel van leveringsacties kan dienen
 
