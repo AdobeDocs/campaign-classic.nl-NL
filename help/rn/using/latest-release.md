@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2580'
+ht-degree: 97%
 
 ---
 
@@ -181,18 +181,18 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 
 **Verouderde functies**
 
-* ODBC-stuurprogramma&#39;s worden nu rechtstreeks geïnstalleerd bij Adobe Campaign Third Party. Handmatige stappen zijn niet meer vereist om de stuurprogramma&#39;s te installeren.
-* Google Big Query is nu beschikbaar voor gehoste implementaties.
+* Vanaf Campaign 21.1 is de Adobe Analytics-gegevensconnector afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen met de nieuwe connector Adobe Analytics Connector.
+Raadpleeg de [gedetailleerde documentatie](../../technotes/using/aa-connector-migration.md) voor meer informatie.
+* De ondersteuning voor Debian 8 is nu afgeschaft.
+* Na het afschaffen van Oracle CRM in 20.3 is het verbonden externe account uit de interface verwijderd.
 
-[Meer informatie](../../installation/using/configure-fda.md)
+Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md).
 
 **Verbeteringen**
 
-* Er zijn kritieke correcties toegepast voor de webAPI van Microsoft Dynamics Connector:
-   * Probleem verholpen waarbij gegevensimport vanuit Microsoft CRM zou kunnen mislukken of niet zou werken als de filtervoorwaarde opzoekvelden bevatte.
-   * Probleem verholpen tijdens het importeren die werd geactiveerd door een workflow. Hierdoor werden de null-waarden van tekenreeksvelden opgeslagen als null in plaats van als lege waarden.
-   * Probleem verholpen die tot de volgende fout voor het importeren of exporteren van gegevens met API-aanroepen voor het web heeft geleid: &quot;Ongeldige URI: Het URI-schema is te lang.&quot;
-   * Probleem verholpen tijdens het importeren uit Microsoft Dynamics 365, waardoor de gegevens van opzoekvelden niet konden worden geïmporteerd.
+* Er zijn extra controles toegevoegd bij het opslaan van een workflow om ervoor te zorgen dat de namen van activiteiten uniek zijn en dat overgangen altijd worden gevolgd door een activiteit.
+* De technische workflow **Facturering (facturering)** bevat nu de taken die oorspronkelijk werden uitgevoerd door de workflow **Aantal actieve factureringsprofielen** (billingActiveContactCount), die is verwijderd. Het e-mailrapport dat elke maand door de workflow wordt verzonden, bevat nu informatie over het aantal actieve profielen voor de instantie. [Meer informatie](../../workflow/using/about-technical-workflows.md).
+* Het nieuwe **_keyOnMData** attribuut is toegevoegd om een sleutel voor bewerkingen van memogegevens te kunnen gebruiken.
 
 **Andere wijzigingen**
 

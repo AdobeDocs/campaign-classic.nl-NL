@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 96%
+source-wordcount: '1707'
+ht-degree: 98%
 
 ---
 
@@ -84,14 +84,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
  <tbody>
   <tr> 
    <td><strong>Gebied - functie</strong></td>
-   <td><strong>Vervanging</strong></td> 
-  </tr>
- <tr>  
-   <td>CRM-connectoren activiteiten<br></td>
-   <td><p> Microsoft CRM, Salesforce en Oracle CRM On Demand Action zijn niet meer beschikbaar.</p>
-   <p>Om de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM te vormen, kunt u de de schakelaaractiviteit van CRM gebruiken.</p>
-   <p><a href="../../workflow/using/crm-connector.md">Meer informatie</a></p>
-  </tr>
+   <td><strong>Vervanging</strong></td>
   <tr>  
    <td>Rapportage<br></td>
    <td><p>Na Adobe Flash Player EOL zijn het Gauge-rapport en de Chart-rendering-engine niet meer beschikbaar. <a href="../../reporting/using/creating-a-new-report.md">Meer informatie</a></p>
