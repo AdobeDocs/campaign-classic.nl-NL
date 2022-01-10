@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1056'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ Er zijn verschillende beveiligingsverbeteringen aangebracht in de FDA-rekeningen
 * ODBC-stuurprogramma&#39;s worden nu rechtstreeks geïnstalleerd bij Adobe Campaign Third Party. Handmatige stappen zijn niet meer vereist om deze stuurprogramma&#39;s te installeren.
 * Wanneer u uw externe FDA-account configureert, kunt u zich nu aanmelden bij uw Snowflake-account met behulp van sleutelparverificatie voor uitgebreide verificatiebeveiliging. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
 * Wanneer het vormen van uw FDA externe rekening, kunt u nu login aan uw rekening van de Analytics van de Azure synapse gebruikend de systeem-toegewezen beheerde identiteit. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* Alle verwijzingen naar de bibliotheek log4j zijn verwijderd uit Campagne om optimale veiligheid te verzekeren.
 
 **Verbeteringen**
 
@@ -55,6 +55,7 @@ Er zijn verschillende beveiligingsverbeteringen aangebracht in de FDA-rekeningen
 * Er is een nieuwe optie toegevoegd aan het dialoogvenster **Foutbeheer** eigenschappen van workflowactiviteiten: De **Afbreken bij fout** deze optie wordt automatisch beëindigd. U kunt het daarna niet opnieuw starten (NEO-29661). [Meer informatie](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * Een specifieke opeenvolging wordt nu gebruikt om de primaire sleutels voor de lijst te produceren nmsGroup, die wordt gebruikt om statistische groepen van ontvangers tot stand te brengen. Eerder werd de xtknownId-reeks gebruikt. (NEO-30832)
 * Toegevoegde ondersteuning voor batch-updatebewerkingen met behulp van de CRM-connectoractiviteit.
+* Verbeterde prestaties voor transactionele overseinenverwerkingstijd. (NEO-40370)
 
 **Patches**
 
