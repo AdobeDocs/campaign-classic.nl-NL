@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -23,7 +23,7 @@ In dit geval, de plaats **Mijn onlinebibliotheek** wil haar nieuwsbrieven person
 
 In samenwerking met de aankoopafdeling heeft de gebruiker die verantwoordelijk is voor de levering een nieuwsbrief gemaakt voor abonnees die politieromans hebben gekocht.
 
-Om het definitieve resultaat van hun samenwerking met hen te delen, besluit de leveringsmanager om zijn collega&#39;s van de aankoopafdeling aan de levering als zaadadressen toe te voegen. Met een dynamische voorwaarde kunt u tijd besparen bij het configureren en bijwerken van adressen.
+Om het definitieve resultaat van hun samenwerking met hen te delen, besluit de leveringsmanager om hun collega&#39;s van de aankoopafdeling aan de levering als zaadadressen toe te voegen. Met een dynamische voorwaarde kunt u tijd besparen bij het configureren en bijwerken van adressen.
 
 Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 

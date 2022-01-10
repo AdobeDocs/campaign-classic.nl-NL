@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3285'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,8 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
    >[!NOTE]
    >
    >Geplande leveringen worden alleen in aanmerking genomen als de **[!UICONTROL Take the deliveries into account in the provisional calendar]** is geselecteerd. Raadpleeg voor meer informatie hierover [Vaststelling van de periode](#setting-the-period).
+   >
+   >Deze optie is niet beschikbaar in Campagne v8.
 
 1. Definieer de methode voor het berekenen van het hoogste aantal berichten.
 
@@ -149,28 +151,29 @@ Met het groeperingstype kunt u het dialoogvenster **[!UICONTROL Period considere
 
 Bijvoorbeeld, zal een drukregel die een drempel van 2 berichten per week bepaalt, met een groepering aan elke kalendermaand, de levering van meer dan 2 berichten binnen de zelfde week EN binnen de zelfde kalendermaand verhinderen. Waarschuwing: als de periode twee maanden overlapt, wordt bij de berekening rekening gehouden met de leveringen van deze twee kalendermaanden en kunnen derhalve alle nieuwe leveringen in de tweede maand worden voorkomen.
 
->[!NOTE]
->
->Standaard wordt bij de berekening van de drempel alleen rekening gehouden met reeds verzonden leveringen. Controleer de **[!UICONTROL Take the deliveries into account in the provisional calendar]** als u ook rekening wilt houden met de leveringen die voor de betrokken periode zijn gepland. In dit geval wordt de beoordelingsperiode verdubbeld om toekomstige leveringen en eerdere leveringen te kunnen integreren.\
->Als u de geleverde producten wilt beperken tot een periode van twee weken, kunt u:
->
->* Enter **15 quinquies** in de **[!UICONTROL Concerned period]** veld: leveringen die tot twee weken vóór de datum van levering waarop de regel wordt toegepast, zijn verzonden, worden bij de berekening in aanmerking genomen;
->
->  of
->
->* Enter **7 quinquies** in de **[!UICONTROL Period considered]** veld EN controleer de **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
-   >optie: bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum waarop de regel wordt toegepast, zijn gepland.
->
->De begindatum van de periode is afhankelijk van de configuratie van de database.
+Merk op dat door gebrek, slechts reeds verzonden leveringen in aanmerking worden genomen wanneer het berekenen van de drempel. Controleer in Campaign Classic v7 het **[!UICONTROL Take the deliveries into account in the provisional calendar]** als u ook rekening wilt houden met de leveringen die voor de betrokken periode zijn gepland. In dit geval wordt de beoordelingsperiode verdubbeld om toekomstige leveringen en eerdere leveringen te kunnen integreren.
+
+Als u de geleverde producten wilt beperken tot een periode van twee weken, kunt u:
+
+1. Enter **15 quinquies** in de **[!UICONTROL Concerned period]** veld: leveringen die tot twee weken vóór de datum van levering waarop de regel wordt toegepast, zijn verzonden, worden bij de berekening in aanmerking genomen;
+
+of
+
+1. Enter **7 quinquies** in de **[!UICONTROL Period considered]** veld EN controleer de **[!UICONTROL Take the deliveries into account in the provisional calendar]** optie: bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum waarop de regel wordt toegepast, zijn gepland.
+
+   >[!AVAILABILITY]
+   >Deze methode is niet beschikbaar in Campagne v8.
+
+De begindatum van de periode is afhankelijk van de configuratie van de database.
 
 Als u bijvoorbeeld een drukregel van 15 dagen toepast zonder te groeperen in een levering van 12/11, wordt rekening gehouden met leveringen tussen 11/27 en 12/12. Indien bij de drukregel rekening wordt gehouden met de leveringen in het voorlopige tijdschema, worden alle tussen 11.27 en 12.27 geplande leveringen in aanmerking genomen. Tot slot als u een groepering per kalendermaand in de regel vormt, zullen alle leveringen in November en December in aanmerking worden genomen voor het berekenen van de drempel (van 11/1 tot 12/31).
 
->[!CAUTION]
->
->**Frequente gevallen**
->Om ervoor te zorgen dat geen rekening wordt gehouden met leveringen voor de lopende kalenderweek en om geen risico&#39;s te lopen die ook rekening houden met die van de vorige week voor de berekeningsdrempel, geeft u de **[!UICONTROL Period considered]** bij &#39;0&#39; en selecteer &#39;Groepering per kalenderweek&#39; als de **[!UICONTROL Period type]**.
-> 
->Wanneer een periode groter is dan 0 (bijvoorbeeld 1), kan bij de berekening de waarde van de leveringen van de voorgaande dag in aanmerking worden genomen. Indien de vorige dag overeenkomt met de vorige kalenderweek en de gekozen periode &quot;Groepering per kalenderweek&quot; is, wordt derhalve met alle voorafgaande weken rekening gehouden voor de berekeningsdrempel.
+
+**Frequente gevallen**
+
+Om ervoor te zorgen dat geen rekening wordt gehouden met leveringen voor de lopende kalenderweek en om geen risico&#39;s te lopen die ook rekening houden met die van de vorige week voor de berekeningsdrempel, geeft u de **[!UICONTROL Period considered]** bij &#39;0&#39; en selecteer &#39;Groepering per kalenderweek&#39; als de **[!UICONTROL Period type]**.
+
+Wanneer een periode groter is dan 0 (bijvoorbeeld 1), kan bij de berekening de waarde van de leveringen van de voorgaande dag in aanmerking worden genomen. Indien de vorige dag overeenkomt met de vorige kalenderweek en de gekozen periode &quot;Groepering per kalenderweek&quot; is, wordt derhalve met alle voorafgaande weken rekening gehouden voor de berekeningsdrempel.
 
 **Voorbeeld:**
 
@@ -333,6 +336,9 @@ Eerst, vorm de drukregel.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    Bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum zijn gepland. Raadpleeg voor meer informatie hierover [Vaststelling van de periode](#setting-the-period).
+
+   >[!AVAILABILITY]
+   >In Campagne v8 kan geen rekening worden gehouden met geplande leveringen.
 
 1. In de **[!UICONTROL Typologies]** , koppelt u de regel aan een campagnetypologie.
 1. Sla uw wijzigingen op.

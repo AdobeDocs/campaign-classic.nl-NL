@@ -1,32 +1,30 @@
 ---
 product: campaign
-title: Migreren in Windows voor Adobe Campaign 7
-description: Migreren in Windows voor Adobe Campaign 7
+title: Een Microsoft Windows-platform migreren naar Adobe Campaign v7
+description: Leer hoe u een Microsoft Windows-platform kunt migreren naar Adobe Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 1%
+source-wordcount: '1504'
+ht-degree: 0%
 
 ---
 
-# Migreren in Windows voor Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+# Een Microsoft Windows-platform migreren naar Campagne v7{#migrating-in-windows-for-adobe-campaign}
 
 ![](../../assets/v7-only.svg)
 
-## Algemene procedure {#general-procedure}
+Voor een Microsoft Windows-omgeving zijn de migratiestappen als volgt:
 
-Voor Windows zijn de migratiestappen als volgt:
-
-1. Stopservices: verwijzen naar [Servicestop](#service-stop).
-1. Back-up maken van de database: verwijzen naar [Maak een back-up van de database en de huidige installatie](#back-up-the-database-and-the-current-installation).
-1. Het platform migreren: verwijzen naar [Adobe Campaign v7 implementeren](#deploying-adobe-campaign-v7).
-1. Migreer de omleidingsserver (IIS): verwijzen naar [De omleidingsserver (IIS) migreren](#migrating-the-redirection-server--iis-).
-1. Herstart service: verwijzen naar [De services opnieuw starten](#re-starting-the-services).
-1. Vorige Adobe Campaign-versie verwijderen en verwijderen: verwijzen naar [Verwijderen en opschonen van vorige Adobe Campaign-versie](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. Stop alle services - [Meer informatie](#service-stop).
+1. Maak een back-up van uw database - [Meer informatie](#back-up-the-database).
+1. Het platform migreren - [Meer informatie](#deploying-adobe-campaign-v7).
+1. De omleidingsserver (IIS) migreren - [Meer informatie](#migrating-the-redirection-server--iis-).
+1. Service opnieuw starten - [Meer informatie](#re-starting-the-services).
+1. Vorige Adobe Campaign-versie verwijderen en opschonen - [Meer informatie](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## Servicestop {#service-stop}
 
@@ -83,11 +81,11 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    taskkill /F /IM nlserver* /T
    ```
 
-## Maak een back-up van de database en de huidige installatie {#back-up-the-database-and-the-current-installation}
+## Back-ups maken van uw Campagne-database {#back-up-the-database}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+### Voor Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Maak een back-up van de **Neolane v5** map met de volgende opdracht:
@@ -127,7 +125,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    </serverconf>
    ```
 
-### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+### Voor Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Maak een back-up van de **Neolane v6** map met de volgende opdracht:
@@ -167,7 +165,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    </serverconf>
    ```
 
-### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Voor Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Maak een back-up van de **Adobe Campaign v6** map met de volgende opdracht:
@@ -267,7 +265,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 >
 >Start nog geen Adobe Campaign-services: op IIS moeten enkele wijzigingen worden aangebracht.
 
-## De omleidingsserver (IIS) migreren {#migrating-the-redirection-server--iis-}
+## De omleidingsserver migreren {#migrating-the-redirection-server--iis-}
 
 In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#service-stop).
 
@@ -331,9 +329,9 @@ In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#serv
 
 ## Beveiligingszones {#security-zones}
 
-Als u vanaf v6.02 of eerder migreert, moet u uw veiligheidsstreken vormen alvorens de diensten te beginnen. Raadpleeg voor meer informatie [Beveiliging](../../migration/using/general-configurations.md#security).
+Als u vanaf v6.02 of eerder migreert, moet u uw veiligheidsstreken vormen alvorens de diensten te beginnen. [Meer informatie](../../migration/using/general-configurations.md#security)
 
-## De services opnieuw starten {#re-starting-the-services}
+## Herstart {#re-starting-the-services}
 
 Start IIS- en Adobe Campaign-services op elk van de volgende servers:
 
@@ -341,13 +339,13 @@ Start IIS- en Adobe Campaign-services op elk van de volgende servers:
 1. Midsourcingserver.
 1. Marketingsserver.
 
-Voordat u verdergaat met de volgende stap, voert u een volledige test van de nieuwe installatie uit, controleert u of er geen regressies zijn en of alles werkt door alle aanbevelingen in het deelvenster [Algemene configuraties](../../migration/using/general-configurations.md) sectie.
+Voordat u verdergaat met de volgende stap, voert u een volledige test van de nieuwe installatie uit, controleert u of er geen regressies zijn en of alles werkt door alle aanbevelingen in [deze pagina](../../migration/using/general-configurations.md).
 
-## Verwijderen en opschonen van vorige Adobe Campaign-versie {#deleting-and-cleansing-adobe-campaign-previous-version}
+## De vorige versie verwijderen {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Adobe Campaign v5 {#adobe-campaign-v5}
+### Voor Adobe Campaign v5 {#adobe-campaign-v5}
 
 Voordat u de Adobe Campaign v5-installatie verwijdert en wist, moet u de volgende aanbevelingen uitvoeren:
 
@@ -368,7 +366,7 @@ Voordat u de Adobe Campaign v5-installatie verwijdert en wist, moet u de volgend
 
 1. Start de server opnieuw.
 
-### Adobe Campaign v6.02 {#adobe-campaign-v6-02}
+### Voor Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
 Voordat u de Adobe Campaign v6.02-installatie verwijdert en wist, moet u de volgende aanbevelingen uitvoeren:
 
@@ -383,7 +381,7 @@ Voordat u de Adobe Campaign v6.02-installatie verwijdert en wist, moet u de volg
 
 1. Start de server opnieuw.
 
-### Adobe Campaign v6.1 {#adobe-campaign-v6-1}
+### Voor Adobe Campaign v6.1 {#adobe-campaign-v6-1}
 
 Voordat u de Adobe Campaign v6-installatie verwijdert en wist, moet u de volgende aanbevelingen uitvoeren:
 

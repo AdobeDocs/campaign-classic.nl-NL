@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -75,7 +75,7 @@ U kunt een bericht aan het forum van een exploitant posten als, bijvoorbeeld, uw
 Toegang tot het forum van een exploitant:
 
 * Als u over de nodige rechten beschikt om toegang te krijgen tot **[!UICONTROL Administration > Access management > Operators]** van de verkenner, open het dashboard van de gewenste exploitant en klik **[!UICONTROL Forum]** in de rechterbovenhoek.
-* Zo niet, zoek dan de naam van de exploitant in Adobe Campaign (via een bericht dat door deze operator aan het forum is gepost, een taak die hem wordt toegewezen) en klik erop om het dashboard te openen. U kunt de beheerder ook vragen om een weergave van de map met operatoren te maken.
+* Zo niet, zoek dan de naam van de exploitant in Adobe Campaign (via een bericht dat door deze operator aan het forum is gepost, een taak die aan hen wordt toegewezen) en klik erop om hun dashboard te openen. U kunt de beheerder ook vragen om een weergave van de map met operatoren te maken.
 
 ## Abonneren op een forum {#subscribing-to-a-forum}
 

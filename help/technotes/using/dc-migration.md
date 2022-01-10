@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Context
 
-Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als onderdeel van onze [Gold Standard-initiatief](../../rn/using/gold-standard.md)We verplaatsen al onze klanten naar Adobe Managed Services (Public Cloud op AWS) voor betere en betrouwbaardere services.
+Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als onderdeel van onze [Jaarlijks upgradeinitiatief](../../rn/using/rn-overview.md#yearly-upgrade)We verplaatsen al onze klanten naar Adobe Managed Services (Public Cloud op AWS) voor betere en betrouwbaardere services.
 
 Dit programma heeft drie hoofddoelstellingen:
 
@@ -29,11 +29,11 @@ Dit programma heeft drie hoofddoelstellingen:
 
 ### Verklarende woordenlijst
 
-* **Upgrade maken** - Wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het nieuwste beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke&#39; en &#39;kleine&#39; build-niveau staan. Bijvoorbeeld: Campagne versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer info](../../platform/using/faq-build-upgrade.md).
+* **Upgrade maken** - Wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het nieuwste beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke&#39; en &#39;kleine&#39; build-niveau staan. Bijvoorbeeld: Campagne versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer informatie](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Servers voor het uitvoeren van berichten die worden gehost op Adobe Cloud (MID voor batchcampagnes en RT voor realtime eenheidsberichten)
-* **Gold Standard-upgrade** - dit programma biedt betere veiligheid, betere ondersteuning, beter onderhoud en meer stabiliteit. Het maakt toekomstige verbeteringen gemakkelijker en verleent toegang tot nieuwe mogelijkheden in Campagne.  [Meer info](../../rn/using/gs-overview.md).
+* **Jaarlijks upgradeprogramma** - dit programma biedt betere veiligheid, betere ondersteuning, beter onderhoud en meer stabiliteit. Het maakt toekomstige verbeteringen gemakkelijker en verleent toegang tot nieuwe mogelijkheden in Campagne.  [Meer informatie](../../rn/using/rn-overview.md#yearly-upgrade).
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
-* **SFTP** - Beveiligd protocol voor bestandsoverdracht. [Meer info](../../platform/using/sftp-server-usage.md).
+* **SFTP** - Beveiligd protocol voor bestandsoverdracht. [Meer informatie](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
@@ -59,7 +59,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 * Verbeterde e-mailcapaciteit
 * Grotere databases
-* Proofing Campagne-versie - Gold Standard
+* Proofing Campagne
 
 **Kies voor een robuuste, betrouwbare oplossing voor Adobe Campaign Classic-klanten**
 
@@ -67,10 +67,10 @@ Dit programma heeft drie hoofddoelstellingen:
 1. Hogere verzendcapaciteit voor e-mail. Exemplaren die in het nieuwe datacenter worden gehost, kunnen profiteren van een gespecialiseerde infrastructuur voor e-maillevering. Dat zou tot hogere e-mailleveringssnelheid kunnen leiden of voor het gebruiken van minder verzendende IPs toestaan.
 1. Betere schaalbaarheid van hardware. Het verhogen van hardwaremiddelen kan veel sneller worden gedaan. Technisch gezien zou dat in de orde van grootte van 1 uur in plaats van enkele dagen zijn.
 
-**Gold Standard maakt toekomstige upgrades eenvoudiger**
+**Dankzij de jaarlijkse upgrades kunt u toekomstige upgrades eenvoudiger maken**
 
 1. Hoe langer uw organisatie wacht op een upgrade, hoe complexer uw upgrade wordt en hoe kwetsbaarheden toenemen (vooral wanneer u van een oudere versie overschakelt).
-1. Met de Gold Standard Upgrade wordt uw exemplaar gemoderniseerd en is het klaar om meer geautomatiseerde en regelmatige updates te ontvangen met minder handmatige interventie en minder bronnen.
+1. Met de jaarlijkse upgrade van Campagne (voorheen Gold Standard) wordt uw exemplaar gemoderniseerd en is het klaar om meer geautomatiseerde en regelmatige updates te ontvangen met minder handmatige interventie en minder bronnen.
 
 ![](assets/GSMigrations.png)
 
@@ -84,7 +84,7 @@ Een migratie kan worden geïnitieerd door [het openen van een nieuw ondersteunin
 
 ### Is deze migratie verplicht?
 
-Deze migratie naar de cloud is **eerste stap naar de [Gold Standard-certificering](../../rn/using/gs-overview.md)** van uw Adobe Campaign-instanties. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
+Deze migratie naar de cloud is **eerste stap naar de [jaarlijks upgradeprogramma](../../rn/using/rn-overview.md#yearly-upgrade)** van uw Adobe Campaign-instanties. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
 
 De Adobe Managed Services-cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [Meer informatie over AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -109,12 +109,6 @@ We hebben enorme inspanningen gedaan om technologieën te ontwikkelen die deze m
 
 Meer informatie over de migratie van campagnes naar [Veelgestelde vragen over openbare cloud](dc-migration-faq.md).
 
-
-## Reizen naar Gold Standard-certificering
-
-We helpen u bij de validatiestappen tussen elke mijlpaal.
-
-![](assets/GS-milestones.png)
 
 ## Migratiepad naar openbare cloud
 
@@ -216,5 +210,5 @@ Normaal, is het domein dat voor het verzenden van e-mail (deel op het recht van 
 ## Ondersteuning en andere handige koppelingen{#support}
 
 * [Migratie naar veelgestelde vragen over Adobe Managed Services (Public Cloud)](dc-migration-faq.md)
-* [Upgrade van gouden standaard](../../rn/using/gs-overview.md)
+* [Jaarlijkse upgrades campagne](../../rn/using/rn-overview.md)
 * [Veelgestelde vragen over upgrade maken](../../platform/using/faq-build-upgrade.md)

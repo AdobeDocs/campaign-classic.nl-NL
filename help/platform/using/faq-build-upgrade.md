@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 5%
+source-wordcount: '2023'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepublice
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-[!DNL Gold Standard] is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-premise- en hybride klanten kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer info](../../rn/using/gs-overview.md).
+Als gehoste gebruiker profiteert u automatisch van de jaarlijkse upgrade van Campagne met de nieuwste stabiele versie zonder actie. Ook on-premise en Hybrid-klanten kunnen van deze release profiteren. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/rn-overview.md).
 
 ## Wat is een bouwstijlverbetering?
 
@@ -206,4 +206,4 @@ alle inhoud wordt weergegeven en weergegeven.
 * [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
 * [Help- en ondersteuningsopties voor Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
+* [Jaarlijks upgradeprogramma](../../rn/using/rn-overview.md#yearly-upgrade)

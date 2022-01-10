@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '501'
+ht-degree: 1%
 
 ---
 
@@ -73,8 +73,9 @@ In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informati
 
 In dit veld kunt u de actie definiëren die moet worden uitgevoerd wanneer de activiteit fouten bevat. Er zijn twee mogelijke opties:
 
-* **[!UICONTROL Stop the process]**: de workflow wordt automatisch gestopt. Zijn status verandert in **[!UICONTROL Failed]**. Als het probleem is opgelost, start u de workflow opnieuw.
+* **[!UICONTROL Suspend the process]**: de workflow wordt automatisch gestopt. Zijn status verandert in **[!UICONTROL Failed]**. Als het probleem is opgelost, start u de workflow opnieuw.
 * **[!UICONTROL Ignore]**: deze taak en alle volgende taken (in dezelfde vertakking) worden niet uitgevoerd. Dit kan handig zijn voor terugkerende taken. Als de tak een eerder geplaatste planner heeft, zal het zoals gewoonlijk op de volgende uitvoeringsdatum beginnen.
+* **[!UICONTROL Abort on error]**: de workflow wordt automatisch gestopt en kan niet opnieuw worden gestart. Zijn status verandert in **[!UICONTROL Failed]**.
 
 ## Initialisatiescript {#initialization-script}
 

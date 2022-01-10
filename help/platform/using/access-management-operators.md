@@ -6,7 +6,7 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -103,7 +103,7 @@ De **[!UICONTROL Edit the access parameters...]** Via de koppeling hebt u toegan
 
    >[!NOTE]
    >
-   >Zelfs als zijn account is uitgeschakeld, kan de operator nog steeds waarschuwingen of meldingen ontvangen van Campagne. Adobe raadt u aan het e-mailadres uit zijn profiel te verwijderen om te stoppen met het verzenden van campagnemeldingen naar deze operator.
+   >Zelfs als hun account is uitgeschakeld, kan de operator nog steeds waarschuwingen of meldingen ontvangen vanuit Campagne. Adobe raadt u aan het e-mailadres uit hun profiel te verwijderen om te stoppen met het verzenden van campagnemeldingen naar deze operator.
 
 * De **[!UICONTROL Forbid access from the rich client]** kunt u het gebruik van Adobe Campaign beperken tot [Webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
 * Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/security-zones.md) voor meer informatie.

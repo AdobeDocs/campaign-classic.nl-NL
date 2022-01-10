@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 89%
+source-wordcount: '720'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor [de nieuwste versie](../../rn/using/latest-release.md) van **Adobe Campaign Classic v7**. Producten en versies die niet in deze lijst staan, zijn niet compatibel met Adobe Campaign.
 
-Als u een [!DNL Gold Standard]-gebruiker bent, raadpleegt u de [[!DNL Gold Standard] -compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
+Als u een [!DNL Gold Standard]-gebruiker bent, raadpleegt u de [[!DNL Gold Standard] -compatibiliteitsmatrix](../../rn/using/gold-standard.md#compatibility-matrix-gs).
 
 ## Belangrijke opmerkingen{#important-notes}
 
@@ -48,7 +48,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 bits)</p>
 <p>10 (64 bits)</p>
 <p>9 (64 bits)</p>
 </td>
@@ -64,7 +63,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -190,54 +188,31 @@ Hieronder vindt u de Customer Relationship Management-systemen (CRM) die compati
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Federated Data Access-module](../../installation/using/about-fda.md).
+Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Federated Data Access-module. ](../../installation/using/about-fda.md) De compatibiliteit is afhankelijk van uw [hostmodel](../../installation/using/hosting-models.md).
+
+**Managed Services** (gehost), **Hybride** en **Op locatie** omgevingen kunnen campagne verbinden met de volgende externe databasesystemen:
+
 <table>
 <tbody>
-<td><strong>Connector</strong></td>
-<td><strong>Versiecompatibiliteit</strong></td>
-<td><strong>Compatibiliteit van hostmodel</strong></td>
-<td><strong>Compatibiliteit opbouwen</strong></td>
+<td><strong>Databasesysteem</strong></td>
+<td><strong>Databaseversie</strong></td>
+<td><strong>Campagneversie</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Managed Services, hybride en op locatie</td>
-<td>minimaal 21.1.5</td>
-</tr>
-<td>Vertica</td>
-<td> </td>
-<td>Alleen hybride en op locatie</td>
-<td>minimaal 19.1.4</td>
+<td>minimaal 7.2.1</td>
 </tr>
 <tr>
-<td>Google Big Query</td>
+<td>Google BigQuery</td>
 <td> </td>
-<td>Managed Services, hybride en op locatie</td>
-<td>minimaal 21.1.5</td>
-</tr>
-<tr>
-<td>Microsoft Azure Synapse Analytics</td>
-<td> </td>
-<td>Hybride en op locatie</td>
-<td>minimaal 19.1.4</td>
+<td>minimaal 7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Managed Services, hybride en op locatie</td>
-<td>minimaal 19.1.4</td>
+<td>v7.0 minimaal 19.1.4</td>
 </td>
-</tr>
-<tr>
-<td>Oracle</td>
-<td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
-<p>11g</p>
-</td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -250,8 +225,37 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>Managed Services, hybride en op locatie</td>
-<td>minimaal 19.1.4</td>
+<td>v7.0 minimaal 19.1.4</td>
+</tr>
+</tbody>
+</table>
+
+Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden met:
+
+<table>
+<tbody>
+<td><strong>Databasesysteem</strong></td>
+<td><strong>Databaseversie</strong></td>
+<td><strong>Campagneversie</strong></td>
+<tr>
+<td>Vertica</td>
+<td> </td>
+<td>v7.0 minimaal 19.1.4</td>
+</tr>
+<tr>
+<td>Microsoft Azure Synapse Analytics</td>
+<td> </td>
+<td>v7.0 minimaal 19.1.4</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
+<p>11g</p>
+</td>
+<td>minimum v7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -261,15 +265,13 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>2014</p>
 <p>2012 SP1 en SP2</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -279,16 +281,14 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,16 +296,14 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>versie 1 SPS 12</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -313,11 +311,13 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>Alleen hybride en op locatie</td>
-<td>Minimaal V6.11</td>
+<td>minimum v7.0</td>
 </tr>
 </tbody>
 </table>
+
+
+
 
 
 ## Clientconsole {#ClientConsoleoperatingsystems}

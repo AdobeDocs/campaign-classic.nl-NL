@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Met deze vervanging bespaart u tijd bij het maken van de levering: in plaats van
 
 In dit geval, de plaats **Mijn onlinebibliotheek** Ik wil haar klanten een korting geven op basis van hun favoriete literaire genre.
 
-De leveringsmanager heeft een verpersoonlijkingsgebied met favoriete genre in zijn e-mail geïntegreerd. Het doel is om enkele adressen van zaden te gebruiken: deze zaadadressen hebben het verpersoonlijkingsgebied in hun lijst maar geen waarde wordt bewaard daar.
+De leveringsmanager heeft een verpersoonlijkingsgebied met favoriete genre in hun e-mail geïntegreerd. Het doel is om enkele adressen van zaden te gebruiken: deze zaadadressen hebben het verpersoonlijkingsgebied in hun lijst maar geen waarde wordt bewaard daar.
 
 Als u een willekeurige veldvervanging wilt gebruiken, moet u beschikken over:
 

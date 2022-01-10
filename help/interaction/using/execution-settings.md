@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Instellingen voor uitvoering{#execution-settings}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Wanneer u een simulatie maakt, kunt u indien nodig uitvoeringsinstellingen opgeven. Deze montages laten u de simulatie tijdens een tijd van lage activiteit afhankelijk van zijn prioriteit uitvoeren, of SQL vragen in het logboek registreren. Dit werkgebied is optioneel.
 

@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 99%
+source-wordcount: '2556'
+ht-degree: 98%
 
 ---
 
@@ -22,10 +22,8 @@ ht-degree: 99%
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
    + Eerdere releases {#previous-releases}
-      + [!DNL Gold Standard]-release {#gs-release}
-         + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
-         + [Aanvullende informatie over [!DNL Gold Standard]](rn/using/gold-standard.md)
-         + [[!DNL Gold Standard]-compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
+      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2021](rn/using/release--2021.md)
       + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -597,7 +595,6 @@ ht-degree: 99%
    + Bijlagen {#annexes}
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
-+ [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 + Installatie- en configuratiehandleiding {#installing-campaign-classic}
    + Architectuurprincipes {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
@@ -821,23 +818,15 @@ ht-degree: 99%
       + [Alle bezoeken verzamelen](configuration/using/collecting-all-visits.md)
       + [Anonieme tracking](configuration/using/anonymous-tracking.md)
 + Migratiehandleiding {#migrating-to-a-new-version}
-   + Migratieoverzicht {#migration-overview}
-      + [Migratie](migration/using/about-migration.md)
-      + [Migratiemethode](migration/using/migration-method.md)
-      + [Migratiewaarschuwingen](migration/using/migration-warnings.md)
+   + [Migreren naar Adobe Campaign v7](migration/using/about-migration.md)
    + Migratieprocedure {#migration-procedure}
-      + [Voordat u de migratie start](migration/using/before-starting-migration.md)
-      + [De migratie testen](migration/using/testing-the-migration.md)
-      + [Uw platform configureren](migration/using/configuring-your-platform.md)
-   + Migreren naar Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [Vereisten voor migratie naar Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migreren in Windows voor Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migreren in Linux voor Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + Configuratie {#configuration}
-      + [Algemene configuraties](migration/using/general-configurations.md)
-      + [Specifieke configuraties in v5.11](migration/using/specific-configurations-in-v5-11.md)
-      + [Specifieke configuraties in v6.02](migration/using/specific-configurations-in-v6-02.md)
-      + [Specifieke configuraties in v6.10](migration/using/specific-configurations-in-v6-10.md)
+      + [Vereisten](migration/using/before-starting-migration.md)
+      + [Migratietests](migration/using/testing-the-migration.md)
+      + [Pas uw configuratie aan](migration/using/configuring-your-platform.md)
+   + De migratie starten {#migrating-to-adobe-campaign-7}
+      + [Microsoft Windows-platform migreren](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Een Linux-platform migreren](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [Uw platform configureren](migration/using/general-configurations.md)
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
@@ -848,11 +837,11 @@ ht-degree: 99%
       + [Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning](technotes/using/eol-tls-support.md)
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)
+      + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
       + [Onjuiste harde bounces  bijwerken](delivery/using/update-bounce-qualification.md)
       + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
       + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + Migratie naar Adobe Managed Services{#dc-migration}
       + [Migratie naar Public Cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)
-+ [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Campaign configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)

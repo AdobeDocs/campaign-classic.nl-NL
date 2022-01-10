@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 48%
+source-wordcount: '259'
+ht-degree: 49%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 48%
 
 ## Nieuwe functies
 
-* **[Oktober Release is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+* **[Release januari is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
+* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
 
 * **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne nadat** 30 juni 2021 **
 
@@ -83,6 +83,6 @@ ht-degree: 48%
 | [Release-opmerkingen](rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [[!DNL Gold Standard] -upgrade](rn/using/gs-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
+| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
-| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
+| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 19%
+source-wordcount: '293'
+ht-degree: 20%
 
 ---
 
@@ -47,8 +47,7 @@ Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie t
 
 >[!CAUTION]
 >
->Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve voor [Snowflake-aansluiting](../../installation/using/configure-fda-snowflake.md).
-
+>Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Meer informatie in [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md).
 
 **Zie ook**
 
@@ -57,4 +56,3 @@ Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie t
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)

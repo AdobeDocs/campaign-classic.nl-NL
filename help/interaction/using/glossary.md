@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Hieronder vindt u de definitie van de belangrijkste interactieelementen.
 * **Eenvoudige modus**: één enkel contact wordt verwerkt tegelijkertijd. Deze wijze wordt over het algemeen gebruikt voor binnenkomende interactie en transactieberichten.
 * **Identificatiemodus**: verwijst naar de status van een contactpersoon.
 
-   * **[!UICONTROL explicit]** : het contact wordt geïdentificeerd na zijn login op de kanaalinterface.
+   * **[!UICONTROL explicit]** : het contact wordt geïdentificeerd na hun login op de kanaalinterface.
    * **[!UICONTROL implicit]** : de contactpersoon is geïdentificeerd door een cookie (permanent of sessie). Het kan als anoniem of geïdentificeerd contact worden verwerkt.
    * **[!UICONTROL anonymous]** : het contact kan niet worden geïdentificeerd.
 

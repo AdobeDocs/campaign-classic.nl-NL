@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd vo
 
 Daarnaast geldt sinds de campagne 20.2 en de [!DNL Gold Standard] release, kunt u een verbetering gebruiken om URL&#39;s uit te schakelen die zijn gegenereerd in vorige builds. Deze functie is standaard uitgeschakeld. U kunt uitreiken tot [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om deze functie in te schakelen.
 
-Als u werkt [!DNL Gold Standard] 19.1.4. kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen of via leveringen via ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
+Als u werkt op build 19.1.4, kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
 Of u Campagne op gebouw of in een hybride architectuur in werking stelt, moet u bereiken aan [Klantenservice](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om URL-ondertekening uit te schakelen.
 

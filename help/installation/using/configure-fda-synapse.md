@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Microsoft Azure synapse Analytics te configureren.
+Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang te configureren voor **Microsoft Azure synapse Analytics**.
 
 1. Azure synapse configureren op [CentOS](#azure-centos), [Windows](#azure-windows) of [Debian](#azure-debian)
 1. De Azure synapse configureren [externe rekening](#azure-external) in Campagne
@@ -191,7 +191,6 @@ Om Azure synapse op Debian te vormen:
    >
    >Om mededeling van de kant van de Analyse van de Azure synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg hiertoe de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-
 ## Externe rekening azure synapse {#azure-external}
 
 De [!DNL Azure Synapse] Met een externe account kunt u uw Campagne-instantie verbinden met uw Azure synapse externe database.
@@ -206,14 +205,34 @@ Om uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
    ![](assets/azure_1.png)
 
-1. Configureer de [!DNL Azure Synapse] externe account, moet u opgeven:
+1. Onder **[!UICONTROL Configuration]**, selecteert u **[!UICONTROL Azure Synapse Analytics]** van de **[!UICONTROL Type]** vervolgkeuzelijst.
 
-   * **[!UICONTROL Type]**: azure synapse Analytics
+   ![](assets/azure_2.png)
 
-   * **[!UICONTROL Server]**: URL van de Azure synapse-server
+1. Configureer de [!DNL Azure Synapse] externe rekening:
 
-   * **[!UICONTROL Account]**: Naam van de gebruiker
+   * Voor standaardverificatie moet u opgeven:
 
-   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+      * **[!UICONTROL Server]**: URL van de Azure synapse-server
 
-   * **[!UICONTROL Database]**: Naam van de database
+      * **[!UICONTROL Account]**: Naam van de gebruiker
+
+      * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+
+      * **[!UICONTROL Database]**: Naam van de database
+
+      ![](assets/azure_3.png)
+
+   * Voor systeem-toegewezen beheerde identiteitsauthentificatie, moet u specificeren:
+
+      * **[!UICONTROL Server]**: URL van de Azure synapse-server
+
+      * **[!UICONTROL Database]**: Naam van de database
+
+      * **[!UICONTROL Options]**: De volgende syntaxis toevoegen `Authentication=ActiveDirectoryMsi`
+
+      ![](assets/azure_4.png)
+
+
+
+1. Klik op **[!UICONTROL Save]**.

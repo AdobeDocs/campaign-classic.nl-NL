@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Rapporten beheren{#managing-reports}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (NM:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de tabellen die via de doeltoewijzing zijn gekoppeld (zie de [Doeltoewijzing](../../configuration/using/target-mapping.md) ).
 

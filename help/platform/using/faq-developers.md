@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Lees de [handleiding om aan de slag te gaan met tabellen en schema’s](../../co
 
 ## Hoe kan ik een aangepaste ontvangerstabel gebruiken? {#how-to-use-a-custom-recipient-table-}
 
-U kunt een niet-standaard ontvangerstabel in Campaign maken en implementeren om uw berichten te verzenden.
+U kunt een niet-ingebouwde ontvankelijke lijst in Campagne tot stand brengen en uitvoeren om uw berichten te verzenden.
 
 [Klik hier voor meer informatie](../../configuration/using/about-custom-recipient-table.md)
 
@@ -65,4 +65,4 @@ Het principe van datapakketten is een dataconfiguratie te exporteren en deze in 
 
 ## Waar vind ik de lijst met Campaign Classic-API’s? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Alle Campaign-API’s, inclusief de volledige beschrijving, zijn beschikbaar in deze [specifieke documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Alle Campaign-API’s, inclusief de volledige beschrijving, zijn beschikbaar in deze [specifieke documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).

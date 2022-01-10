@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Schema-eigenschappen{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 
@@ -25,7 +25,7 @@ De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 
 >[!IMPORTANT]
 >
->Verwijder geen velden uit de standaardtabel voor ontvangers, zelfs niet als deze geen nut hebben. Dit kan gedragsfouten in de Adobe Campaign-database veroorzaken.
+>Verwijder geen velden in de ingebouwde tabel voor ontvangers, zelfs niet als deze geen nut hebben. Dit kan gedragsfouten in de Adobe Campaign-database veroorzaken.
 
 ## Het weergavekenmerk {#the-view-attribute}
 

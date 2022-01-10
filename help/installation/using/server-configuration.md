@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '624'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Bestaande klanten die uit een migratie komen, kunnen de waarschuwingsmodus een t
 
 ## Opdrachtbeperking (server-kant)
 
-Verschillende opdrachten staan op de zwarte lijst en kunnen niet worden uitgevoerd met de functie execCommand. Een extra-veiligheid wordt verstrekt door een specifieke gebruiker van Unix om externe bevelen uit te voeren. Deze beperking wordt automatisch toegepast op gehoste installaties. Voor installaties op locatie kunt u deze beperking handmatig instellen door de instructies van [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Daarnaast **[!UICONTROL Script]** en **[!UICONTROL External task]** workflowactiviteiten zijn niet beschikbaar (nieuw geïnstalleerde instanties).
+Verscheidene bevelen zijn inbegrepen in de lijst van gewezen personen en kunnen niet worden uitgevoerd gebruikend de functie execCommand. Een extra-veiligheid wordt verstrekt door een specifieke gebruiker van Unix om externe bevelen uit te voeren. Deze beperking wordt automatisch toegepast op gehoste installaties. Voor installaties op locatie kunt u deze beperking handmatig instellen door de instructies van [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Daarnaast **[!UICONTROL Script]** en **[!UICONTROL External task]** workflowactiviteiten zijn niet beschikbaar (nieuw geïnstalleerde instanties).
 
 ## Andere configuraties
 

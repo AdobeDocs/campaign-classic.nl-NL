@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Seedadressen{#seed-addresses}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties vereist. De **[!UICONTROL nms:seedMember]** schema moet worden uitgebreid. Er wordt een extra tabblad toegevoegd aan de podadressen voor het definiëren van de juiste velden, zoals hieronder wordt getoond:
 

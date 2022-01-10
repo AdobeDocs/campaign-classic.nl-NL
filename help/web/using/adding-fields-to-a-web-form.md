@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -367,7 +367,7 @@ U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoor
 
 Als u een uploadveld wilt invoegen in een formulierpagina, selecteert u de optie **[!UICONTROL Advanced controls > File...]** op de werkbalk van de pagina-editor.
 
-De geüploade bestanden worden standaard opgeslagen in bronbestanden die toegankelijk zijn via de **[!UICONTROL Resources > Online > Public resources]** -menu. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html), met inbegrip van die welke betrekking hebben op bestandmanipulatie.
+De geüploade bestanden worden standaard opgeslagen in bronbestanden die toegankelijk zijn via de **[!UICONTROL Resources > Online > Public resources]** -menu. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl), met inbegrip van die welke betrekking hebben op bestandmanipulatie.
 
 U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in een databaseveld. U kunt bijvoorbeeld het ontvangende schema uitbreiden om een koppeling naar op een bestand gebaseerde bronnen toe te voegen.
 
@@ -383,7 +383,7 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 
 ## Een verborgen constante invoegen {#inserting-a-hidden-constant}
 
-Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u een specifieke waarde instellen op een veld van zijn profiel of op een variabele.
+Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u een specifieke waarde instellen op een veld van het profiel of op een variabele.
 
 Dit veld is niet zichtbaar voor de gebruiker, maar kan worden gebruikt om de gegevens in het gebruikersprofiel te verrijken.
 

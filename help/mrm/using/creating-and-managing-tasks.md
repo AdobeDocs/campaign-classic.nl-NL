@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Ze worden geselecteerd met de opdracht **[!UICONTROL Resources]** in de taakwerk
 
 Klikken **[!UICONTROL Ok]** en voer vervolgens de gebruiksfrequentie in: dit vertegenwoordigt de lading die aan de exploitant voor de duur van taakuitvoering wordt toegewezen. Dit percentage is slechts een indicatie en wordt uitgedrukt als een percentage.
 
-Voor een taak waarvan het uitvoeringsschema op 10 dagen wordt vastgesteld, zal bijvoorbeeld een exploitant met een gebruiksgraad van 50% op deze taak voor de helft van zijn werktijd voor de tien dagen worden gemobiliseerd.
+Voor een taak waarvan het uitvoeringsschema bijvoorbeeld op 10 dagen is vastgesteld, zal een exploitant met een gebruiksfrequentie van 50% op deze taak voor de helft van zijn werktijd voor de tien dagen worden gemobiliseerd.
 
 Voor elke operator kunt u een geplande werkbelasting en een werkelijke werkbelasting invoeren. Deze tijdsduur is ook uitsluitend ter informatie.
 
@@ -325,7 +325,7 @@ In de **[!UICONTROL Marketing resource]** veld, definieert u de bron die u via d
 
 De **[!UICONTROL Publish the marketing resource]** Met deze optie kunt u het publiceren van bronnen automatiseren: zodra de taak **[!UICONTROL Finished]**, schakelt de status van de bron automatisch over op **[!UICONTROL Published]**, zelfs als deze niet ter goedkeuring of goedkeuring is ingediend, ook als de controleur die de taak voltooit, niet de inhoudrevisor is die in de bron is gedefinieerd.
 
-De **[!UICONTROL Publish the resource]** de knop wordt beschikbaar gesteld en de revisor van de publicatie van de bron ontvangt een e-mail met een bericht om hem te laten weten dat hij klaar is om te worden gepubliceerd. In de **[!UICONTROL Edit > Tracking]** tabblad wordt het reviseren en publiceren door de taakcontroleur zichtbaar. Als een workflow voor de naverwerking van bronnen is gedefinieerd, wordt deze nu uitgevoerd.
+De **[!UICONTROL Publish the resource]** de knop wordt beschikbaar gesteld en de revisor van de publicatie-resource ontvangt een e-mailbericht waarin hij of zij weet dat het klaar is om te worden gepubliceerd. In de **[!UICONTROL Edit > Tracking]** tabblad wordt het reviseren en publiceren door de taakcontroleur zichtbaar. Als een workflow voor de naverwerking van bronnen is gedefinieerd, wordt deze nu uitgevoerd.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -472,7 +472,7 @@ Hieronder staan de fasen van een volledige taaklevenscyclus waarvoor de verantwo
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. De controleur ontvangt een e-mail met een bericht dat hij of zij de hem toegewezen sectie heeft voltooid.
+1. De controleur ontvangt een e-mailbericht met de kennisgeving dat de operator de aan hem toegewezen sectie heeft voltooid.
 
    Zij kunnen de vooruitgang op het taakdashboard volgen.
 

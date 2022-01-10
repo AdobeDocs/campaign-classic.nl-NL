@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # Aan de slag met de appconfiguratie
 
-U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt gebaseerd dat online vakantiepakketten verkoopt. Zijn mobiele toepassing (Neotrips) is beschikbaar aan zijn klanten in twee versies: Neotrips voor Android en Neotrips voor iOS.
+U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt gebaseerd dat online vakantiepakketten verkoopt. De mobiele toepassing (Neotrips) van Neotrips is in twee versies beschikbaar voor klanten: Neotrips voor Android en Neotrips voor iOS.
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 

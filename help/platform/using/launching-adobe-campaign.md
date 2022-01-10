@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 8491b3a5d1333f4445f90a8a051cd1f5149691bc
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 9%
 
 ---
 
@@ -100,12 +100,6 @@ De **[!UICONTROL Help > About...]** kunt u de volgende informatie gebruiken:
 ![](assets/about-acc.png)
 
 Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
-
-Als u aan loopt [Campagne [!DNL Gold Standard] versie](../../rn/using/gold-standard.md), moet u ook de SHA/1-tekens delen die worden weergegeven in het dialoogvenster **[!UICONTROL About]** doos. Bijvoorbeeld voor **Gold Standard 12** release, kan dit buildnummer worden weergegeven: &quot;build 9032@554dbcd&quot;.
-
-![](assets/about-acc-gs.png)
-
-Meer informatie over [!DNL Gold Standard] [in dit artikel](../../rn/using/gs-overview.md).
 
 **Verwante onderwerpen**:
 

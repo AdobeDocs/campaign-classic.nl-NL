@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '4705'
-ht-degree: 97%
+source-wordcount: '4796'
+ht-degree: 98%
 
 ---
 
@@ -21,38 +21,62 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
-## December 2021{#dec-2021}
+## 2022
 
-Campaign Classic v7 Opmerkingen bij de release zijn gereorganiseerd om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
+### Januari
+
+**Documentatie-updates die bij de release 7.2.1 worden geleverd**
+
+Bijgewerkte compatibiliteitsmatrix. [Meer informatie](compatibility-matrix.md)
+
+Bijgewerkte sectie Opmerkingen bij release. [Meer informatie](rn-overview.md)
+
+Bijgewerkte FDA configuratie externe rekening voor Snowflake. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
+
+Bijgewerkte FDA-configuratie voor externe accounts voor Azure synapse Analytics. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
+
+Bijgewerkte Google BigQuery FDA-connector. [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
+
+Na hun afkapping zijn Microsoft CRM, Salesforce en Oracle CRM On Demand action activiteiten uit de documentatie verwijderd.
+
+Nieuwe optie **Afbreken bij fout** toegevoegd aan de sectie van het Beheer van de werkschemafout. [Meer informatie](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+
+Optie voor batchupdate toegevoegd in de activiteit van de CRM-connector. [Meer informatie](../../workflow/using/crm-connector.md)
+
+## 2021
+
+### December 2021{#dec-2021}
+
+Release-opmerkingen van Campaign Classic v7 zijn gereorganiseerd om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
 
 De documentatie over de uitgave van het Formulier in Campaign is bijgewerkt en verbeterd. [Meer informatie](../../configuration/using/editing-forms.md)
 
-CentOs 8 heeft einde-van-Leven bereikt en is nu verouderd met Adobe Campaign Classic. [Meer informatie](deprecated-features.md)
+CentOs 8 heeft het einde van zijn levensduur bereikt en is nu verouderd met Adobe Campaign Classic. [Meer informatie](deprecated-features.md)
 
-## November 2021{#nov-2021}
+### November 2021{#nov-2021}
 
 Een beperking toegevoegd over inkomende SMS (MO). [Meer informatie](../../delivery/using/sms-protocol.md#multipart)
 
-Bijgewerkt de loggegevens van het migratieproces voor de schakelaarplaatsing van CRM. [Meer informatie](../../migration/using/testing-the-migration.md#verification-process)
+De logboekgegevens van het migratieproces voor de implementatie van de CRM-connector zijn bijgewerkt. [Meer informatie](../../migration/using/testing-the-migration.md#verification-process)
 
 Toegevoegde vereisten voor IMS-machtigingen om Adobe Campaign-Adobe Analytics-integratie te implementeren. [Meer informatie](../../platform/using/adobe-analytics-provisioning.md)
 
-Bijgewerkte einddatum Adobe Analytics Data Connector van 1 maart 2022 tot 17 augustus 2022. [Meer informatie](deprecated-features.md)
+Einde levensduur van Adobe Analytics Data Connector bijgewerkt van 1 maart 2022 tot 17 augustus 2022. [Meer informatie](deprecated-features.md)
 
-Er is een koppeling toegevoegd naar de documentatie van Adobe Experience Platform Mobile SDK voor informatie over het configureren van de extensie Campagne in Adobe Launch. [Meer informatie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+Er is een koppeling toegevoegd naar de documentatie van Adobe Experience Platform Mobile SDK voor informatie over het configureren van de extensie Campaign in Adobe Launch. [Meer informatie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
-Er is een sectie toegevoegd over het gebruik van JavaScript voor het berekenen van waarden, het uitwisselen van gegevens en het uitvoeren van specifieke bewerkingen met SOAP-aanroepen.[Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
+Er is een sectie toegevoegd over het gebruik van JavaScript voor het berekenen van waarden, het uitwisselen van gegevens en het uitvoeren van specifieke bewerkingen met SOAP-oproepen.[Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
 Toegevoegde voorbeelden van de implementatie van JavaScript-codes in workflows. [Meer informatie](../../workflow/using/javascript-in-workflows.md)
 
 
-## Oktober 2021{#oct-2021}
+### Oktober 2021{#oct-2021}
 
 Bestaande technologieën zijn gegroepeerd in de nieuwe sectie **TechNote**.
 
 De pagina **voor het aanpassen van de hardwaregrootte** is bijgewerkt en toegevoegd aan de sectie **TechNotes**. [Meer informatie](../../technotes/using/hardware-sizing.md)
 
-## September 2021{#sept-2021}
+### September 2021{#sept-2021}
 
 **Documentatie-updates die bij de release 21.1.4 worden geleverd**
 
@@ -62,7 +86,7 @@ Screenshots en parameters van rapporten en webapplicaties zijn bijgewerkt na het
 
 De beschrijving van de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) is bijgewerkt met een nieuwe veiligheidsbarrière.
 
-## Augustus 2021{#aug-2021}
+### Augustus 2021{#aug-2021}
 
 Nieuwe workflowactiviteit toegevoegd: Databron wijzigen - [Meer informatie](../../workflow/using/change-data-source.md)
 
@@ -71,12 +95,12 @@ Toepassingsbadges zijn toegevoegd aan de documentatiepagina&#39;s: **Is alleen v
 Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets, die vanaf Adobe Experience Manager 6.4 is buiten gebruik is gesteld. [Meer informatie](../../integrations/using/configuring-access-to-assets.md)
 
 
-## Juli 2021 {#july-2021}
+### Juli 2021 {#july-2021}
 
 [Campaign 21.1.3-release](../../rn/using/latest-release.md#release-21-1-3-build-9330) is verplaatst naar Algemene beschikbaarheid (General Availability, ofwel GA).
 
 
-## Juni 2021 {#june-2021}
+### Juni 2021 {#june-2021}
 
 De sectie **Transactional Messaging** is gereorganiseerd en verduidelijkt met een nieuwe sectie Aan de slag, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
@@ -88,11 +112,11 @@ Verbeteringen voor lijnkanaal - [Meer informatie](../../delivery/using/line-chan
 
 Nieuwe Vertica FDA-connector - [Meer informatie](../../installation/using/configure-fda-vertica.md)
 
-Nieuwe Google Big Query FDA-connector - [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
+Nieuwe Google BigQuery FDA-connector - [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
 
 De technische workflowbeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk werden uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
-## Mei 2021 {#may-2021}
+### Mei 2021 {#may-2021}
 
 De documentatie voor het workflowheatmaprapport is bijgewerkt en verbeterd. [Meer informatie](../../workflow/using/heatmap.md)
 
@@ -102,13 +126,13 @@ De installatiestappen voor de Campaign-clientconsole zijn verbeterd en verduidel
 
 Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/using/tracked-urls.md)
 
-## April 2021 {#april-2021}
+### April 2021 {#april-2021}
 
 Er is een nieuwe sectie toegevoegd over hoe u bronnen en bestemmingen van het Adobe Experience Platform kunt gebruiken om gegevens te delen tussen Campaign Classic en het Adobe Real-time Customer Data Platform (RTCDP). [Meer informatie](../../integrations/using/get-started-sources-destinations.md)
 
 Er is een nieuwe technische opmerking gemaakt waarin wordt uitgelegd hoe u de bouncekwalificatie kunt bijwerken na een ISP-uitval. [Meer informatie](../../delivery/using/update-bounce-qualification.md)
 
-## Maart 2021 {#march-2021}
+### Maart 2021 {#march-2021}
 
 De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu in speciale secties leren hoe u [het sms-kanaal configureert](../../delivery/using/sms-set-up.md), [een sms maakt](../../delivery/using/sms-create.md) en [een sms verzendt en volgt](../../delivery/using/sms-send.md).
 
@@ -129,7 +153,7 @@ Er is informatie toegevoegd aan het activiteitsgedeelte **[!UICONTROL Advanced J
 
 Het gedeelte [Afleverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [gids met best practices voor afleverbaarheid van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl). Alle generieke informatie over afleverbaarheid die op diverse oplossingen van Adobe van toepassing kan zijn, is verplaatst naar de [bijlage van de gids met best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=nl#additional-resources).
 
-## Februari 2021 {#release-21.1}
+### Februari 2021 {#release-21.1}
 
 **Documentatie-updates die bij de 21.1-release worden geleverd**
 
@@ -155,7 +179,7 @@ De sectie **Een e-mail verzenden** is gereorganiseerd en verduidelijkt met nieuw
 
 Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor tracking. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
 
-## Januari 2021 {#jan-2021}
+### Januari 2021 {#jan-2021}
 
 De sectie **[!UICONTROL Fork]**-activiteit bevat nu ook best practices. [Meer informatie](../../workflow/using/fork.md)
 
@@ -173,7 +197,14 @@ De sectie over probleemoplossing in de **Bewakingshandleiding** is gereorganisee
 
 Er is een nieuwe sectie over het **importeren en exporteren van data** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en best practices voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
 
-## December 2020 {#dec-2020}
+
+
+
+
+
+## 2020
+
+### December 2020 {#dec-2020}
 
 De sectie over **leveringscontrole** is opnieuw ingedeeld in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
 
@@ -187,7 +218,7 @@ De volledige beschrijving van de pagina over protocol en instellingen voor de sm
 
 Er is een opmerking toegevoegd aan de sectie **Transactionele berichten** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/about-event-processing.md#event-collection)
 
-## November 2020 {#nov-2020}
+### November 2020 {#nov-2020}
 
 Het overzicht van het Campaign-gegevensmodel is verbeterd en opnieuw ingedeeld. [Meer informatie](../../configuration/using/about-data-model.md).
 
@@ -207,7 +238,7 @@ De sectie Persoonlijke gegevens en persona&#39;s is bijgewerkt met een gebruikss
 
 Er is een nieuwe sectie toegevoegd met veelgestelde vragen over privacy. [Meer informatie](../../platform/using/privacy-faq.md)
 
-## Oktober 2020 {#oct-2020}
+### Oktober 2020 {#oct-2020}
 
 **Nieuwe mogelijkheden in de 20.3-release**
 
@@ -221,8 +252,8 @@ De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compat
 
 De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
 
-Aanvullende informatie over en de compatibiliteitsmatrix voor de [!DNL Gold Standard]-release zijn nu beschikbaar in een speciale sectie.
-[Meer informatie](../../rn/using/gold-standard.md#gs-11).
+Opmerkingen bij de release en compatibiliteitsmatrix voor [!DNL Gold Standard] release is nu beschikbaar op een specifieke pagina.
+[Meer informatie](../../rn/using/gold-standard.md).
 
 De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
@@ -246,7 +277,7 @@ De pagina met rapporteigenschappen is opnieuw ingedeeld en verrijkt om de config
 
 Er is een nieuwe technische notitie geschreven met details over de migratie van het oude binaire protocol naar de op HTTP/2 gebaseerde APNs-provider-API. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/migrate-to-apns-http2.html)
 
-## September 2020 {#september-2020}
+### September 2020 {#september-2020}
 
 Er is een opmerking toegevoegd om aan te geven dat het aantal actieve profielen alleen beschikbaar is voor marketinginstanties. [Meer informatie](../../platform/using/about-profiles.md#active-profiles)
 
@@ -254,7 +285,7 @@ Er is een nieuw voorbeeld van een schema-editie toegevoegd om een veld te koppel
 
 Er is een opmerking toegevoegd over het gebruik van aanvullende data met seed-adressen in leveringen. [Meer informatie](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## Augustus 2020 {#aug-2020}
+### Augustus 2020 {#aug-2020}
 
 Leer best practices voor leveringsontwerp en -verzending met Campaign in een speciale sectie. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
@@ -293,7 +324,7 @@ Er staan nieuwe gebruiksscenario’s in de lijst met [workflowgebruiksscenario�
 
 De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende informatie over het gebruik ervan, en met een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
 
-## Juli 2020 {#july-2020}
+### Juli 2020 {#july-2020}
 
 Er is een gebruiksscenario toegevoegd aan de workflowgebruiksscenario’s voor het automatisch bijwerken van een lijst met behulp van een incrementele query. [Meer informatie](../../workflow/using/about-workflow-use-cases.md)
 
@@ -311,7 +342,7 @@ Er is informatie toegevoegd aan de logboeken van subworkflows en aan de gedragin
 
 Er zijn best practices toegevoegd in de **[!UICONTROL Scheduler]**-activiteitensectie. [Meer informatie](../../workflow/using/scheduler.md)
 
-## Juni 2020 {#june-2020}
+### Juni 2020 {#june-2020}
 
 De sectie over het verwijderen van een in quarantaine geplaatste adres is bijgewerkt. Hieronder valt ook een verduidelijking van de gevallen waarin adressen automatisch uit de quarantainelijst worden verwijderd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -319,7 +350,7 @@ Er zijn gebruiksscenario’s toegevoegd voor het [versleutelen](../../platform/u
 
 De pagina over de integratie van Experience Cloud Triggers en Adobe Campaign Classic is [hier](../../integrations/using/about-triggers.md) geplaatst.
 
-## Juli 2020 {#release-20-2}
+### Juli 2020 {#release-20-2}
 
 **Nieuwe mogelijkheden in de 20.2-release**
 
@@ -351,7 +382,7 @@ De sectie Spam Assassin-installatie is bijgewerkt met de nieuwe naam van het ins
 
 De sectie over het dupliceren van omgevingen is bijgewerkt. [Meer informatie](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## Mei 2020 {#may-2020}
+### Mei 2020 {#may-2020}
 
 De sectie over het controleren van de leverbaarheid is verplaatst en verbeterd. [Meer informatie](../../delivery/using/monitoring-deliverability.md)
 
@@ -363,7 +394,7 @@ De sectie voor het verzenden van transactionele e-mails met bijlagen is verplaat
 
 De sectie met best practices voor datapakketten is verplaatst en bijgewerkt. [Meer informatie](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## April 2020 {#april-2020}
+### April 2020 {#april-2020}
 
 De tabel met FDA-rechten is verplaatst naar de documentatie voor toegang tot een externe database (FDA). [Meer informatie](../../installation/using/remote-database-access-rights.md)
 
@@ -379,7 +410,7 @@ De secties over [kwalificatieregels voor niet-bezorging](../../delivery/using/un
 
 Het artikel over Adobe Campaign Enhanced MTA is bijgewerkt. Het is nu alleen van toepassing op Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## Maart 2020 {#march-2020}
+### Maart 2020 {#march-2020}
 
 De best practices voor het datamodel zijn bijgewerkt met nieuwe secties met inbegrip van onder meer [Reeksen](../../configuration/using/data-model-best-practices.md#sequences), [Prestaties](../../configuration/using/data-model-best-practices.md#performance) en [Grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
@@ -393,7 +424,7 @@ Er is nu een nieuwe sectie beschikbaar waarin de verschillende talen die in Adob
 
 De richtlijnen voor toegangscontrole zijn bijgewerkt met meer informatie over opgegeven rechten. [Meer informatie](../../platform/using/access-management-named-rights.md)
 
-## Februari 2020 {#february-2020}
+### Februari 2020 {#february-2020}
 
 Er is nu een nieuwe sectie beschikbaar met best practices en belangrijke aanbevelingen bij het ontwerpen van het Adobe Campaign-datamodel. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
@@ -405,7 +436,7 @@ AMP for Email wordt nu ondersteund door nieuwe e-mailproviders en de desbetreffe
 
 De sectie over e-mailarchivering is verbeterd. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-## Januari 2020 {#release-20-1}
+### Januari 2020 {#release-20-1}
 
 **Nieuwe mogelijkheden in de 20.1-release**
 
@@ -465,7 +496,9 @@ De handleiding over rapportage is bijgewerkt en opnieuw geordend. [Meer informat
 
 Er is een voorbeeld toegevoegd over het gebruik van een instantievariabele in een workflow. [Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
-## December 2019 {#december-2019}
+## 2019
+
+### December 2019 {#december-2019}
 
 De optie WdbcOptions_TempDbName is toegevoegd aan de lijst met Campaign-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
@@ -503,7 +536,7 @@ Er is een aanbeveling toegevoegd voor het kenmerk **sqlDefault** in de schemadef
 
 Er wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform in de handleiding over **integratie met Adobe Experience Cloud**. [Meer informatie](../../integrations/using/about-campaign-integrations.md).
 
-## November 2019 {#november-2019}
+### November 2019 {#november-2019}
 
 Er is een waarschuwing toegevoegd aan de secties [Multiplexing van de midsourcingserver](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server) en [Ondersteuning van verschillende controle-instanties](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances) waarin wordt vermeld dat deze implementaties niet worden ondersteund voor volledig gehoste en hybride clients.
 
@@ -517,7 +550,7 @@ De documentatie voor het Configuratiescherm is geïntegreerd in de nieuwe collab
 
 De handleiding om aan de slag te gaan met best practices voor levering is bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
-## Oktober 2019 {#october-2019}
+### Oktober 2019 {#october-2019}
 
 De lijst met foutberichten voor Campaign is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl)
 
@@ -535,7 +568,7 @@ Er is informatie toegevoegd aan de documentatie bij de activiteit Planner over h
 
 De stappen om inboxrendering voor on-premise installaties te configureren, zijn toegevoegd aan de documentatie. [Meer informatie](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## September 2019 {#september-2019}
+### September 2019 {#september-2019}
 
 Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor het onderhoud van Campaign Classic. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
@@ -545,7 +578,7 @@ Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor tracking in Ado
 
 De best practices voor prestatiesverbeteringen van workflows en leveringen zijn bijgewerkt. [Lees meer over workflows](../../workflow/using/workflow-best-practices.md) en [leveringen](../../delivery/using/delivery-performances.md#best-practices-performance).
 
-## Mei 2019 {#release-19-1}
+### Mei 2019 {#release-19-1}
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
@@ -624,7 +657,7 @@ De handleiding over de omvang van hardware van Campaign is bijgewerkt. [Meer inf
 
 Er is informatie toegevoegd over querybanding voor het externe Teradata-account. [Meer informatie](../../installation/using/external-accounts.md)
 
-## Januari 2019{#release-doc-16-01-2019}
+### Januari 2019{#release-doc-16-01-2019}
 
 De technische opmerking over Marketing Cloud-triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 

@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 4%
+source-wordcount: '909'
+ht-degree: 3%
 
 ---
 
@@ -35,17 +35,17 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 
 ### Console en webtoegang {#console-and-web-access}
 
-Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser.
+Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser. Zie de compatibele browsers in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#Browsers).
 
-De toegang van het Web verstrekt een interface die aan de console maar met een verminderde reeks functionaliteiten gelijkaardig is.
+De interface van de Webtoegang is gelijkaardig aan de consoleinterface. Vanuit een browser kunt u dezelfde navigatie- en weergavefuncties gebruiken als in de console, maar u kunt slechts een beperkte set acties op campagnes uitvoeren. U kunt bijvoorbeeld campagnes weergeven en annuleren, maar u kunt geen campagnes wijzigen. Voor een bepaalde exploitant, zal een campagne met de volgende opties in de console verschijnen:
 
-Bijvoorbeeld, voor een bepaalde exploitant, zal een campagne met de volgende opties in de console verschijnen:
+![Vanuit het dashboard van een campagne kan de operator een campagne weergeven en annuleren, maar deze ook wijzigen en leveringen, documenten en taken aan de campagne toevoegen.](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+Terwijl de opties bij toegang tot het web vooral het weergeven van:
 
-Terwijl met de toegang van het Web, de opties hoofdzakelijk het bekijken zullen toelaten:
+![Vanuit een browser kan dezelfde operator de campagne alleen weergeven en annuleren.](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+Meer informatie over [de webinterface gebruiken](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Talen {#languages}
 

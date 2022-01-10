@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a23f66a4822f3c87770c5c9741e91f78778931cb
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 4%
+source-wordcount: '161'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,10 @@ Met de optie FDA kunt u uw gegevensmodel uitbreiden in een database van derden. 
 
 Voor het gebruik van deze functie worden de volgende voorwaarden vermeld:
 
-* **Configuratie**: behalve voor Snowflake hebt u een **op locatie** of **hybride** hostingmodel voor instellen van Federated Data Access. [Meer informatie](../../installation/using/hosting-models.md)
-* **Externe databaseversie**: u hebt een externe database nodig die compatibel is met de Adobe Campaign FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Configuratie**: de lijst met compatibele externe databases is afhankelijk van uw [hostmodel](../../installation/using/hosting-models.md).
+* **Externe databaseversie**: u hebt een externe database nodig die compatibel is met de Adobe Campaign FDA-module.
+
+   De lijst met databasesystemen en compatibele versies per hostingmodel wordt gedetailleerd weergegeven in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+
 * **Machtigingen**: de gebruikers moeten ook [noodzakelijke machtigingen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign en in de externe database.
 

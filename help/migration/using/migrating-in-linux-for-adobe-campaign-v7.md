@@ -1,31 +1,29 @@
 ---
 product: campaign
-title: Migreren in Linux voor Adobe Campaign v7
-description: Migreren in Linux voor Adobe Campaign v7
+title: Een Linux-platform migreren naar Adobe Campaign v7
+description: Leer hoe u een Linux-platform kunt migreren naar Adobe Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 1%
+source-wordcount: '1858'
+ht-degree: 0%
 
 ---
 
-# Migreren in Linux voor Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+# Een Linux-platform migreren naar Campagne v7{#migrating-in-linux-for-adobe-campaign-v}
 
 ![](../../assets/v7-only.svg)
 
-## Algemene procedure {#general-procedure}
-
 De migratiestappen in Linux zijn als volgt:
 
-1. Stopservices: zie [Servicestop](#service-stop).
-1. Sla de database op: zie [Maak een back-up van de database en de bestaande installatie](#back-up-the-database-and-the-existing-installation).
-1. Verwijder vorige Adobe Campaign-versiepakketten: zie [Oude Adobe Campaign-versiepakketten verwijderen](#uninstalling-adobe-campaign-previous-version-packages).
-1. Het platform migreren: verwijzen naar [Adobe Campaign v7 implementeren](#deploying-adobe-campaign-v7).
-1. Herstart service: verwijzen naar [Herstart](#re-starting-services).
+1. Stop alle services - [Meer informatie](#service-stop).
+1. De database opslaan - [Meer informatie](#back-up-the-database).
+1. Verwijder vorige Adobe Campaign-versiepakketten - [Meer informatie](#uninstalling-adobe-campaign-previous-version-packages).
+1. Het platform migreren - [Meer informatie](#deploying-adobe-campaign-v7).
+1. Service opnieuw starten - [Meer informatie](#re-starting-services).
 
 ## Servicestop {#service-stop}
 
@@ -71,11 +69,11 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    killall -9 nlserver
    ```
 
-## Maak een back-up van de database en de bestaande installatie {#back-up-the-database-and-the-existing-installation}
+## Back-up maken van uw database {#back-up-the-database}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+### Voor Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Aanmelden als **neolane** en maakt een back-up van de **nl5** map met de volgende opdracht:
@@ -110,7 +108,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    </serverconf>
    ```
 
-### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+### Voor Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Aanmelden als **neolane** en maakt een back-up van de **nl6** map met de volgende opdracht:
@@ -145,7 +143,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    </serverconf>
    ```
 
-### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Voor Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Aanmelden als **neolane** en maakt een back-up van de **nl6** map met de volgende opdracht:
@@ -163,7 +161,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Adobe Campaign v5-pakketten verwijderen {#uninstalling-adobe-campaign-v5-packages}
+### Voor v5-pakketten {#uninstalling-adobe-campaign-v5-packages}
 
 1. Aanmelden als **basis**.
 1. Identificeer de geïnstalleerde pakketten van Adobe Campaign gebruikend het volgende bevel.
@@ -201,7 +199,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### Adobe Campaign v6-pakketten verwijderen {#uninstalling-adobe-campaign-v6-packages}
+### Voor v6-pakketten {#uninstalling-adobe-campaign-v6-packages}
 
 In deze sectie wordt getoond hoe u Adobe Campaign v6.02- of v6.1-pakketten kunt verwijderen.
 
@@ -245,7 +243,7 @@ In deze sectie wordt getoond hoe u Adobe Campaign v6.02- of v6.1-pakketten kunt 
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
+### Uit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
 
 Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
@@ -372,7 +370,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 >
 >Start nog geen Adobe Campaign-services: In Apache moeten nog wijzigingen worden aangebracht.
 
-### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
+### Uit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
 
 Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
@@ -450,7 +448,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >De modus &quot;multi timezone&quot; was alleen beschikbaar in v6.02 voor PostgreSQL-databasemotoren. Het is nu beschikbaar ongeacht welke versie van de database-engine wordt gebruikt. We raden u ten zeerste aan uw basis te upgraden naar &quot;multi timezone&quot;. Raadpleeg voor meer informatie over tijdzoneopties de [Tijdzones](../../migration/using/general-configurations.md#time-zones) sectie.
 
-### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
+### Van Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
 
 Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
@@ -514,7 +512,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## De omleidingsserver (Apache) migreren {#migrating-the-redirection-server--apache-}
+## De omleidingsserver migreren (Apache) {#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
@@ -580,7 +578,7 @@ Als u vanaf v6.02 of eerder migreert, moet u uw veiligheidsstreken vormen alvore
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}
+### Voor Adobe Campaign v5 {#migrating-from-adobe-campaign-v5_11-2}
 
 In de **config-`<instance name>`.xml** bestanden, activeer het automatisch opstarten van de **mta**, **wfserver**, **stat**, enz. diensten.
 
@@ -611,7 +609,7 @@ Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 Voordat u verdergaat met de volgende stap, voert u een volledige test van de nieuwe installatie uit, controleert u of er geen regressies zijn en of alles werkt door alle aanbevelingen in het deelvenster [Algemene configuraties](../../migration/using/general-configurations.md) sectie.
 
-### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
+### Voor Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
 
 In de **config-`<instance name>`.xml** bestanden, activeer het automatisch opstarten van de **mta**, **wfserver**, **stat**, enz. diensten.
 
@@ -642,7 +640,7 @@ Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 Test de nieuwe installatie volledig, controleer of deze niet achteruitgaat en zorg ervoor dat alles correct werkt door alle aanbevelingen in de [Algemene configuraties](../../migration/using/general-configurations.md) sectie.
 
-### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
+### Voor Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
 
 Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
@@ -652,7 +650,7 @@ Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 Test de nieuwe installatie volledig, controleer of deze niet achteruitgaat en zorg ervoor dat alles correct werkt door alle aanbevelingen in de [Algemene configuraties](../../migration/using/general-configurations.md) sectie.
 
-## Adobe Campaign v5 verwijderen en opschonen {#deleting-and-cleansing-adobe-campaign-v5}
+## Vorige versie van Adobe Campaign verwijderen {#deleting-and-cleansing-adobe-campaign-v5}
 
 >[!NOTE]
 >

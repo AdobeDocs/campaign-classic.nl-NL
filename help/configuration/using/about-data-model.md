@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 4%
@@ -83,7 +83,7 @@ Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegeven
 
 ## Een aangepaste tabel voor ontvangers gebruiken {#custom-recipient-table}
 
-Bij het ontwerpen van uw Adobe Campaign-gegevensmodel kunt u de opdracht [out-of-the-box Ontvangertabel](#default-recipient-table)of besluit een [aangepaste tabel voor ontvangers](../../configuration/using/about-custom-recipient-table.md) tabel waarin u marketingprofielen worden opgeslagen.
+Bij het ontwerpen van uw Adobe Campaign-gegevensmodel kunt u de opdracht [ingebouwde tabel voor ontvangers](#default-recipient-table)of besluit een [aangepaste tabel voor ontvangers](../../configuration/using/about-custom-recipient-table.md) tabel waarin u marketingprofielen worden opgeslagen.
 
 Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u andere tabellen instellen als de doeldimensie in Adobe Campaign. Dit kan bijvoorbeeld van belang zijn wanneer u huishoudens, rekeningen (zoals mobiele telefoons) en bedrijven/sites moet aanspreken in plaats van alleen ontvangers.
 
@@ -95,11 +95,11 @@ Alle principes en stappen die nodig zijn bij het gebruik van een aangepaste tabe
 
 De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
-* **Flexibel gegevensmodel** - De tabel Ontvanger uit de doos is niet bruikbaar als u de meeste tabelvelden Ontvanger niet nodig hebt of als het gegevensmodel niet op de ontvanger is gericht.
+* **Flexibel gegevensmodel** - De ingebouwde ontvankelijke lijst is nutteloos als u niet de meeste Ontvankelijke lijstgebieden nodig hebt, of als het gegevensmodel niet ontvanger-centric is.
 
-* **Schaalbaarheid** - Grote volumes vereisen een gestroomlijnde tabel met weinig velden voor een efficiënt ontwerp. De out-of-the-box ontvangertabel zou te veel nutteloze velden hebben, wat van invloed kan zijn op de prestaties en een gebrek aan efficiëntie.
+* **Schaalbaarheid** - Grote volumes vereisen een gestroomlijnde tabel met weinig velden voor een efficiënt ontwerp. De ingebouwde ontvankelijke lijst zou teveel nutteloze gebieden hebben, die prestaties en gebrek aan efficiency zouden kunnen beïnvloeden.
 
-* **Gegevenslocatie** - Als de gegevens op een externe bestaande marketing gegevensbestand verblijven, kan het teveel inspanning vereisen om de uit-van-de-doos Ontvangerlijst te gebruiken. Het maken van een nieuwe op basis van een bestaande structuur is eenvoudiger.
+* **Gegevenslocatie** - Als de gegevens op een externe bestaande marketing gegevensbestand verblijven, kan het teveel inspanning vereisen om de ingebouwde ontvankelijke lijst te gebruiken. Het maken van een nieuwe op basis van een bestaande structuur is eenvoudiger.
 
 * **Eenvoudige migratie** - Er is geen onderhoud nodig om te controleren of alle extensies nog geldig zijn na de upgrade.
 

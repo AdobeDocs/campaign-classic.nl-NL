@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6cecc81135afd067712e51ec9c1ad3239170702e
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 10%
+source-wordcount: '411'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,8 @@ ht-degree: 10%
 
 Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Snowflake].
 
-1. Configureren [!DNL Snowflake] op [CentOS](#snowflake-centos), [Windows](#snowflake-windows) of [Debian](#snowflake-debian)
+1. Configureren [!DNL Snowflake] op [Linux](#snowflake-linux).
 1. Configureer de [!DNL Snowflake] [externe rekening](#snowflake-external) in Campagne
-
 
 >[!NOTE]
 >
@@ -29,47 +28,43 @@ Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken
 
 ![](assets/snowflake_3.png)
 
-## Snowflake op CentOS {#snowflake-centos}
+## Snowflake op Linux {#snowflake-linux}
 
-Om te vormen [!DNL Snowflake] Voer in CentOS de onderstaande stappen uit:
+Om te vormen [!DNL Snowflake] Voer in Linux de onderstaande stappen uit:
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) om te beginnen met downloaden.
-1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op CentOs installeren met de volgende opdracht:
+1. Controleer vóór de ODBC-installatie of de volgende pakketten op uw Linux-distributie zijn geïnstalleerd:
 
-   ```
-   rpm -Uvh unixodbc
-   rpm -Uvh snowflake-odbc-2.20.2.x86_64.rpm
-   ```
+   * Voor Red Hat/CentOS:
 
-1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
 
-   ```
-   /etc/init.d/nlserver6 stop
-   /etc/init.d/nlserver6 start
-   ```
+   * Voor Debian:
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#snowflake-external).
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
 
-## Snowflake in Windows {#snowflake-windows}
-
-1. Download de [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html) voor meer informatie
-
-1. Configureer het ODBC-stuurprogramma. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver) voor meer informatie
-
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#snowflake-external).
-
-## Snowflake op Debian {#snowflake-debian}
-
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) beginnen met downloaden.
-
-1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op Debian installeren met de volgende opdracht:
+1. Voordat u het script uitvoert, hebt u toegang tot meer informatie via de `--help` optie:
 
    ```
-   apt-get install unixodbc
-   apt-get install snowflake-odbc-x.xx.x.x86_64.deb
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
+   ./snowflake_odbc-setup.sh --help
    ```
 
-1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
+1. Open de map waarin het script zich bevindt en voer het volgende script als een hoofdgebruiker uit:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./snowflake_odbc-setup.sh
+   ```
+
+1. Nadat u de ODBC-stuurprogramma&#39;s hebt geïnstalleerd, moet u Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
 
    ```
    systemctl stop nlserver.service
@@ -88,23 +83,36 @@ U moet een [!DNL Snowflake] externe account om uw Campagne-instantie aan te slui
 
 1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de **[!UICONTROL Snowflake]** externe account, moet u opgeven:
+1. Onder **[!UICONTROL Configuration]**, selecteert u [!DNL Snowflake] van de **[!UICONTROL Type]** vervolgkeuzelijst.
 
-   * **[!UICONTROL Type]**: [!DNL Snowflake]
+   ![](assets/snowflake_5.png)
 
-   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
+1. Voeg uw **[!UICONTROL Server]** URL en **[!UICONTROL Database]**.
 
-   * **[!UICONTROL Account]**: Naam van de gebruiker
+1. Configureer de **[!UICONTROL Snowflake]** externe accountverificatie:
 
-   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+   * Voor account-/wachtwoordverificatie moet u opgeven:
 
-   * **[!UICONTROL Database]**: Naam van de database
+      * **[!UICONTROL Account]**: Naam van de gebruiker
 
-   ![](assets/snowflake.png)
+      * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount.
+
+      ![](assets/snowflake.png)
+
+   * Voor Keypair-verificatie klikt u op de knop **[!UICONTROL Keypair Auth]** tabblad gebruiken **[!UICONTROL Private key]** om uw gegevens te verifiëren en te kopiëren **[!UICONTROL Private key]**.
+
+      ![](assets/snowflake_4.png)
+
 
 1. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** om functies te maken.
 
+   >[!NOTE]
+   >
+   >Alle functies zijn alleen beschikbaar als u de Adobe Campaign SQL-functies maakt in de externe database. Raadpleeg deze voor meer informatie [page](../../configuration/using/adding-additional-sql-functions.md).
+
    ![](assets/snowflake_2.png)
+
+1. Klikken **[!UICONTROL Save]** wanneer uw configuratie wordt gebeëindigd.
 
 De connector ondersteunt de volgende opties:
 

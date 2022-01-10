@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-In deze sectie wordt de configuratie beschreven die in Adobe Campaign v7 moet worden uitgevoerd als u van versie 5.11 of v6.02 migreert.
+In dit gedeelte wordt de configuratie beschreven die in Adobe Campaign v7 moet worden uitgevoerd wanneer wordt gemigreerd van versie 5.11 of v6.02.
 
 Daarnaast:
 
-* Als u migreert vanaf v5.11, moet u ook de configuratie voltooien die in het dialoogvenster [Specifieke configuraties in v5.11](../../migration/using/specific-configurations-in-v5-11.md) sectie.
-* Als u vanaf v6.02 migreert, moet u ook de configuratie voltooien die in het dialoogvenster [Specifieke configuraties in v6.02](../../migration/using/specific-configurations-in-v6-02.md) sectie.
+* Als u migreert vanaf v5.11, moet u ook de configuratie voltooien die in [deze sectie](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Als u migreert vanaf v6.02, moet u ook de configuratie voltooien die in [deze sectie](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Tijdzones {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### Anonieme webtoepassingen {#anonymous-web-applications}
 
 Als u problemen ondervindt, publiceert u de webtoepassing opnieuw.
-
-## Rood-Hoed {#red-hat}
-
-Als de out-of-the-box schema&#39;s in v6.02 of v5.11 zijn geschrapt, kunt u uw schema&#39;s na de postupgrade misschien niet meer uitgeven. Als dit gebeurt, voert u de opdracht uit:
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

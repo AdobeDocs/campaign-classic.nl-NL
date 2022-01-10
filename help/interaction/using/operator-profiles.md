@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ De aan de aanbiedingsmanager toegewezen rechten stellen hen in staat de volgende
 
    >[!NOTE]
    >
-   >De aanbiedingsmanager kan slechts in twee gevallen een aanbieding goedkeuren. Het eerste geval was dat niemand in het bijzonder als recensent werd gespecificeerd, en het tweede is dat de exploitant die belast was met het creëren van sjablonen (met het recht om recensenten toe te wijzen) hem/haar als recensent in het aanbiedingsmalplaatje specificeerde waarop het aanbod was gebaseerd.
+   >De aanbiedingsmanager kan slechts in twee gevallen een aanbieding goedkeuren. Het eerste was dat niemand in het bijzonder als de controleur werd gespecificeerd, en het tweede was dat de exploitant die belast was met het creëren van sjablonen (met het recht om controleurs toe te wijzen) hen als recensent in het aanbiedingsmalplaatje specificeerde waarop het aanbod was gebaseerd.
 
 ## Leveringsmanager {#delivery-manager}
 

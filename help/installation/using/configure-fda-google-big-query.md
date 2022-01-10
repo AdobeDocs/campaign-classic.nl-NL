@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
+source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign Classic gebruiken **Federale gegevenstoegang** (FDA) om informati
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] -aansluiting is beschikbaar voor hybride en on-premise implementaties. Raadpleeg [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie.
+> [!DNL Google BigQuery] -aansluiting is beschikbaar voor gehoste, hybride en on-premise implementaties. Raadpleeg [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie.
 
 ![](assets/snowflake_3.png)
 
@@ -85,125 +85,50 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via
 
 ### Stuurprogramma ingesteld op Linux {#driver-linux}
 
-1. Voordat u het ODBC-stuurprogramma installeert, moet u uw systeem bijwerken. Voer in Linux of CentOS de volgende opdracht uit:
+Voordat u het stuurprogramma instelt, moet u het script en de opdrachten uitvoeren op de hoofdgebruiker. Het wordt ook aanbevolen om Google DNS 8.8.8.8 te gebruiken terwijl het script wordt uitgevoerd.
+
+Om te vormen [!DNL Google BigQuery] Voer in Linux de onderstaande stappen uit:
+
+1. Controleer vóór de ODBC-installatie of de volgende pakketten op uw Linux-distributie zijn geïnstalleerd:
+
+   * Voor Red Hat/CentOS:
+
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
+
+   * Voor Debian:
+
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
+
+1. Systeem bijwerken vóór installatie:
+
+   * Voor Red Hat/CentOS:
+
+      ```
+      # install unixODBC driver manager
+      yum install -y unixODBC
+      ```
+
+   * Voor Debian:
+
+      ```
+      # install unixODBC driver manager
+      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+      ```
+
+1. Open de map waarin het script zich bevindt en voer het volgende script uit:
 
    ```
-   yum update
-   # install unixODBC driver manager
-   yum install unixODBC
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_odbc-setup.sh
    ```
-
-1. Vervolgens moet u het stuurprogramma unixODBC installeren met de volgende opdracht:
-
-   ```
-   # switch to root user
-   sudo su
-   ```
-
-   In Debian:
-
-   ```
-   apt-get update
-   apt-get upgrade
-   # install unixODBC driver manager
-   apt-get install unixODBC
-   ```
-
-1. Download de [Magnitude Simba Linux ODBC-stuurprogramma (.tar.gz)](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers). Breng het balbestand vervolgens over naar een tijdelijke map op uw computer of gebruik de opdracht Doel:
-
-   ```
-   # in this example driver version is 2.3.1.1001
-   wget https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux.tar.gz
-   ```
-
-1. Extraheer het hoofdbalbestand als volgt: **TarballName** de naam is van het tarball-pakket dat de bestuurder bevat:
-
-   ```
-   tar --directory=/tmp -zxvf [TarballName]
-   ```
-
-1. Open de map die u hebt uitgepakt en extraheer het binnenste tarball-bestand dat overeenkomt met de versie van het stuurprogramma. Installeer het in een andere tijdelijke map, in het volgende voorbeeld BigQueryDriver:
-
-   ```
-   mkdir /tmp/BigQueryDriver/
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   tar --directory=/tmp/BigQueryDriver/ -zxvf SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version].tar.gz
-   ```
-
-1. Open de tijdelijke locatie waar het hoofdbalbestand is geëxtraheerd en kopieer de `GoogleBigQueryODBC.did` en `setup/simba.googlebigqueryodbc.ini` bestanden naar de nieuwe map die in de vorige stap is gemaakt:
-
-   ```
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   cp GoogleBigQueryODBC.did /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   cp setup/simba.googlebigqueryodbc.ini /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   ```
-
-1. Maak als volgt de installatiemap:
-
-   ```
-   mkdir -p /opt/simba/googlebigqueryodbc/
-   ```
-
-1. Kopieer de inhoud van de map naar de nieuwe installatiemap:
-
-   ```
-   cp -r /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/* /opt/simba/googlebigqueryodbc/
-   ```
-
-1. Vervangen `<INSTALLDIR>` with `/opt/simba/googlebigqueryodbc` in `simba.googlebigqueryodbc.ini` in de installatiemap:
-
-   ```
-   cd /opt/simba/googlebigqueryodbc/lib/
-   sed -i 's/<INSTALLDIR>/\/opt\/simba\/googlebigqueryodbc/g' simba.googlebigqueryodbc.ini
-   ```
-
-1. Wijzig de `DriverManagerEncoding` naar UTF-16 en `SwapFilePath` in `simba.googlebigqueryodbc.ini`. Indien nodig kunt u ook de loginstellingen wijzigen.
-
-   Hieronder ziet u een voorbeeld van een bijgewerkt configuratiebestand voor het hele stuurprogramma:
-
-   ```
-   # /opt/simba/googlebigqueryodbc/lib/simba.googlebigqueryodbc.ini
-   [Driver]
-   DriverManagerEncoding=UTF-16
-   ErrorMessagesPath=opt/simba/googlebigqueryodbc/ErrorMessages
-   LogLevel=6
-   LogPath=/tmp
-   SwapFilePath=/tmp
-   ```
-
-1. Als u een systeemstuurprogramma of een ander huidig bestand gebruikt `odbcinst.ini` bestand, configureren `/etc/odbcinst.ini` naar de locatie van het Google BigQuery-stuurprogramma `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so`.
-
-   Bijvoorbeeld:
-
-   ```
-   # /etc/odbcinst.ini
-   # Make sure to use Simba ODBC Driver for Google BigQuery as a driver name.
-   
-   [ODBC Drivers]
-   Simba ODBC Driver for Google BigQuery=Installed
-   
-   [Simba ODBC Driver for Google BigQuery]
-   Description=Simba ODBC Driver for Google BigQuery(64-bit)
-   Driver=/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   ```
-
-1. Zoek de locatie van de UnixODBC-beheerbibliotheken voor stuurprogramma&#39;s en voeg de `unixODBC` en `googlebigqueryodbc` bibliotheekpaden naar de `LD_LIBRARY_PATH environment` variabele.
-
-   ```
-   find / -name 'lib*odbc*.so*' -print
-   #output:
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.2
-   /usr/lib/x86_64-linux-gnu/libodbcinst.so.2.0.0
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.1
-   .
-   .
-   /opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   
-   #the command would look like this
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/simba/googlebigqueryodbc:/usr/lib
-   ```
-
-1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#google-external).
 
 ### Bulkbelasting ingesteld op Linux {#bulk-load-linux}
 
@@ -215,15 +140,30 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via
 
 Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via de Google Cloud SDK.
 
-1. Download Linux 64-bits (x86_64) archief in deze [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheren in de corresponderende directory.
+1. Controleer vóór de ODBC-installatie of de volgende pakketten op uw Linux-distributie zijn geïnstalleerd:
 
-1. Voer de `google-cloud-sdk\install.sh` script. U moet het plaatsen van wegvariabele goedkeuren.
+   * Voor Red Hat/CentOS:
 
-1. Controleer na de installatie of de padvariabele `...\google-cloud-sdk\bin` is ingesteld. Als dat niet het geval is, voegt u het handmatig toe.
+      ```
+      yum update
+      yum upgrade
+      yum install -y python3
+      ```
 
-1. Als u het gebruik van de `PATH` of als u de `google-cloud-sdk` naar een andere locatie, gebruik de `bqpath` optiewaarde bij het configureren van de **[!UICONTROL External account]** om het exacte pad naar de map bin op uw systeem op te geven.
+   * Voor Debian:
 
-1. Start Adobe Campaign Classic opnieuw om rekening te houden met de wijzigingen.
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y python3
+      ```
+
+1. Open de map waarin het script zich bevindt en voer het volgende script uit:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_sdk-setup.sh
+   ```
 
 ## Google BigQuery, externe account {#google-external}
 
@@ -248,4 +188,16 @@ U moet een [!DNL Google BigQuery] externe account om uw Adobe Campaign Classic-e
 
       * **[!UICONTROL Enter manually the key file path]**: Kopieer/plak het absolute pad in dit veld als u een bestaande sleutel wilt gebruiken.
    * **[!UICONTROL Dataset]**: Naam van uw **[!UICONTROL Dataset]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/bigquery/docs/datasets-intro).
+
    ![](assets/google-big-query.png)
+
+De connector ondersteunt de volgende opties:
+
+| Option | Waarde | Beschrijving |
+|:-:|:-:|:-:|
+| ProxyType | string | Het type proxy dat wordt gebruikt om verbinding te maken met BigQuery via ODBC- en SDK-connectors. </br>HTTP (standaard), http_no_tunnel, socks4 en socks5 worden momenteel ondersteund. |
+| ProxyHost | string | Hostnaam of IP-adres waar de proxy kan worden bereikt. |
+| ProxyPort | getal | Poortnummer waarop de proxy wordt uitgevoerd, bijvoorbeeld 8080 |
+| ProxyUid | string | Gebruikersnaam voor de geverifieerde proxy |
+| ProxyPwd | string | Wachtwoord ProxyUid |
+| bqpath | string | Dit is alleen van toepassing voor bulkload (Cloud SDK). </br> Als u wilt voorkomen dat de PATH-variabele wordt gebruikt of als de google-cloud-sdk-map naar een andere locatie moet worden verplaatst, kunt u met deze optie het exacte pad naar de SDK-binmap van de cloud op de server opgeven. |

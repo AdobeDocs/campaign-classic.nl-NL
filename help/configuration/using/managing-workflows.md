@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Workflows beheren{#managing-workflows}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Door gebrek, zijn uw nieuwe werkschema&#39;s gebaseerd op een werkschemamalplaatje dat pre-gevormd en gebaseerd op een ontvankelijke lijst (nms:ontvanger) is. Om ervoor te zorgen dat ze automatisch worden gebaseerd op de aangepaste lijst met ontvangers waarnaar wordt verwezen in het dialoogvenster **Nms_DefaultRcpSchema** (zie [De interface configureren](../../configuration/using/configuring-the-interface.md) ), moet u een nieuw werkstroomsjabloon maken.
 

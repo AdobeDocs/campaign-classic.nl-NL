@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 08af51345c047612b010c82646cba99becfda459
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
@@ -31,6 +31,4 @@ ht-degree: 2%
 * **SQL-code en JavaScript-code**: Voert het SQL-script of JavaScript uit dat in de activiteit is opgegeven. Zie [SQL-code en JavaScript-code](sql-code-and-javascript-code.md).
 * **SQL-gegevensbeheer**: Hiermee kunt u uw eigen SQL-query&#39;s schrijven om werktabellen te maken en te vullen. Zie [SQL-gegevensbeheer](sql-data-management.md).
 * **nlserver-module**: start een nlserver module met de argumenten ervan. Zie [Nlserver-module](nlserver-module.md).
-* **Importeren en exporteren (compatibel met v4)**: Met import- en exportactiviteiten (v4-compatibiliteit) kunt u gegevens importeren en exporteren met de sjabloon (importeren of exporteren) die is opgegeven in de activiteit.
-* **Microsoft CRM, Salesforce, Oracle CRM op aanvraag**: Hiermee kunt u Adobe Campaign specifiek verbinden met een van de vooraf geconfigureerde CRM&#39;s. Deze activiteiten zijn vergelijkbaar met de CRM-aansluiting die in [deze sectie](crm-connector.md), met meer specifieke opties. U kunt met name het type campagne kiezen dat u wilt uitvoeren voor de synchronisatie.
 * **Samenvoegen bijwerken**: Hiermee kunt u de geaggregeerde updatemodus (volledig of gedeeltelijk) selecteren. Zie [Samenvoegen bijwerken](update-aggregate.md).

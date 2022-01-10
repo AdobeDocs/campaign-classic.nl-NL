@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 2cdcd45fc142eb9ae9e32c17a67beb4eaf2d2953
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Op deze pagina leert u hoe u Campaign Classic kunt verbinden met **Microsoft Dyn
 
 Mogelijke implementatie vindt plaats via **Web-API** (aanbevolen). Zie [het onderstaande gedeelte](#microsoft-dynamics-implementation-step) voor meer informatie over het instellen van de verbinding met Microsoft Dynamics.
 
-Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer info](../../platform/using/crm-data-sync.md).
+Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
 
 ## Implementatiestappen{#microsoft-dynamics-implementation-steps}
 
@@ -60,7 +60,7 @@ Als u het toegangstoken en de sleutels voor het instellen van de account wilt ge
 Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve Folder registreren. Client ID is hetzelfde als Application ID.
 
 1. Navigeren naar **Azure Active Directory > App-registraties** en klik op  **Nieuwe toepassingsregistratie**.
-1. Geef een unieke naam die u kunt helpen bij het identificeren van een instantie, zoals **adobecampagne`<instance identifier>`**.
+1. Geef een unieke naam die u kunt helpen een instantie te identificeren, zoals **adobecampagne`<instance identifier>`**.
 1. Kies **Toepassingstype** als **Web-app / API**.
 1. Gebruiken `http://localhost` for **Aanmeldings-URL**.
 
@@ -155,7 +155,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 
 >[!NOTE]
 >
-> Na de ontmanteling van [RDS uit Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint), zijn de On-premise en Bureau 365 types van plaatsingen van CRM niet meer compatibel met Campagne. Adobe Campaign ondersteunt nu alleen Web API-implementatie voor de CRM-versie **Dynamische CRM 365**. [Meer info](../../rn/using/deprecated-features.md#crm-connectors).
+> Na de ontmanteling van [RDS uit Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint), zijn de On-premise en Bureau 365 types van plaatsingen van CRM niet meer compatibel met Campagne. Adobe Campaign ondersteunt nu alleen Web API-implementatie voor de CRM-versie **Dynamische CRM 365**. [Meer informatie](../../rn/using/deprecated-features.md#crm-connectors).
 
 Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u tot stand brengen en een specifieke vorm vormen **[!UICONTROL External Account]** in Campaign.
 
@@ -199,7 +199,7 @@ Campagne en Microsoft Dynamics zijn nu verbonden. U kunt gegevenssynchronisatie 
 
 >[!NOTE]
 >
-> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: de server-URL en `login.microsoftonline.com` in de serverconfiguratie.
+> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: de server-URL en `login.microsoftonline.com` in de serverconfiguratie. Voor meer informatie over hoe te om toestemmingen URL te vormen, verwijs naar dit [page](../../installation/using/url-permissions.md).
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 

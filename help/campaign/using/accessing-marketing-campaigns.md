@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1271'
 ht-degree: 1%
 
 ---
@@ -161,6 +161,35 @@ U kunt de Adobe Campaign-consoleschermen openen via een internetbrowser om alle 
 1. Via de menu&#39;s hebt u toegang tot de overzichten.
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+Naast het navigeren over campagnes en het bekijken van hen, kunt u deze soorten taken uitvoeren:
+
+* De activiteit van de monitor op een geval
+* Deelnemen aan validatieprocessen, bijvoorbeeld een leveringsinhoud goedkeuren of afwijzen
+* Andere snelle handelingen uitvoeren, bijvoorbeeld een werkstroom onderbreken
+* Alle rapportfuncties openen
+* Deelnemen aan forumdiscussies
+
+In deze tabel worden de acties samengevat die u kunt uitvoeren op campagnes vanuit een browser:
+
+| Pagina  | Actie |
+| --- | --- |
+| Lijst met campagnes, leveringen, aanbiedingen, enz. | Een lijstitem verwijderen |
+| Campaign | Een campagne annuleren |
+| Levering | Inhoud en doel van levering goedkeuren<br/>De leveringsinhoud verzenden<br/>Levering bevestigen<br/>Een levering onderbreken en stoppen |
+| Webtoepassing | Een webtoepassing maken<br/>De inhoud en eigenschappen van de toepassing bewerken<br/>De toepassingsinhoud opslaan als een sjabloon<br/>De toepassing publiceren |
+| Voorstel | Inhoud en geschiktheid van aanbieding goedkeuren<br/>Een online aanbieding uitschakelen |
+| Taak | Een taak voltooien<br/>Een taak annuleren |
+| Marketingbronnen | Een resource goedkeuren<br/>Een bron vergrendelen en ontgrendelen |
+| Campagne | Een pakket ter goedkeuring indienen<br/>Een pakket goedkeuren of afwijzen<br/>Een pakket annuleren |
+| Campagnevolgorde | Een bestelling maken<br/>Een bestelling accepteren of afwijzen <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Voorraad | Een voorraadlijn verwijderen |
+| Aanbiedingssimulatie | Een simulatie starten en stoppen |
+| Doelworkflow | Een workflow starten, pauzeren en stoppen |
+| Rapporteren | De huidige gegevens opslaan in de rapportgeschiedenis |
+| Forum | Een discussie toevoegen<br/>Reageren op een boodschap in een gesprek<br/>Een discussie volgen en het abonnement opzeggen |
+
+### Goedkeuringen
 
 Goedkeuringen (bijvoorbeeld van een doel of een leveringsinhoud) kunnen via webtoegang worden uitgevoerd.
 

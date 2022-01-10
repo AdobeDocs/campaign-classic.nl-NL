@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 30f2451849dec0f640915e81c36d0a9c5f466d6c
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,6 @@ De beschikbare modules worden in de volgende tabel beschreven:
 | facturering | Het rapport over de systeemactiviteit verzenden naar billing@neolane.net |
 | opruimen | De database opschonen: verwijdert verouderde gegevens uit de database en voert een update uit van de statistieken die worden gebruikt door de optimalisator voor de database-engine. |
 | config | Serverconfiguratie wijzigen |
-| copybase | Kopie van een database |
 | export | Exporteren naar opdrachtregel: Hiermee kunt u een exportmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden |
 | fileconvert | Een bestand met een ingestelde grootte omzetten |
 | import | Importeren naar opdrachtregel: Hiermee kunt u een importmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden. |

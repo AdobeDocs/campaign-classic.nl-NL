@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Na een migratie, in het geval van kwesties, zou u aan de vorige versie van Campa
 
 De terugdraaiprocedure hangt van uw aanvankelijke versie van Campagne af.
 
-## v6.1 herstellen
+## Terugzetten naar campagne v6.1
 
 Hier volgt de procedure voor het herstellen van een versie 6.1 van een versie 7.
 
@@ -32,7 +32,7 @@ Hier volgt de procedure voor het herstellen van een versie 6.1 van een versie 7.
 1. Start IIS opnieuw.
 1. Start de Adobe Campaign v6.1-service opnieuw.
 
-## Herstellen naar campagne v6.02
+## Terugzetten naar campagne v6.02
 
 Hier volgt de procedure voor het herstellen van een versie 6.02 van een versie 7.
 
@@ -43,7 +43,7 @@ Hier volgt de procedure voor het herstellen van een versie 6.02 van een versie 7
 1. Start IIS opnieuw.
 1. Start de Adobe Campaign v6.02-service opnieuw.
 
-## Herstellen naar campagne v5.11
+## Terugzetten naar campagne v5.11
 
 Hier volgt de procedure voor het herstellen van een versie 5.11 van een versie 7.
 

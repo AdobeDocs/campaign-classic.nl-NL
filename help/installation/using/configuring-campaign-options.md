@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 1%
@@ -697,7 +697,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
     <ul> 
      <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel</p> </li> 
      <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
-    </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a> voor meer informatie.<br /> </td> 
+    </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">deze sectie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -37,13 +37,13 @@ Bovendien zijn de verzendkosten voor sms-berichten lager doordat onjuiste telefo
 
 **Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Wanneer twee profielen hetzelfde e-mailadres hebben, worden ze dus allebei beïnvloed als het adres in quarantaine wordt geplaatst.
 
-Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan dan opnieuw worden getarget door leveringsacties.
+Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan vervolgens opnieuw worden geactiveerd door leveringsacties.
 
 Aan de slag **lijst van gewezen personen** anderzijds zal het profiel niet langer het doelwit zijn van leveringen, bijvoorbeeld na een abonnement (opt-out).
 
 >[!NOTE]
 >
->Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet toegevoegd aan de lijst van gewezen personen, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
+>Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt zijn profiel niet toegevoegd aan de lijst van gewezen personen, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
 
 ## In quarantaine geplaatste adressen identificeren {#identifying-quarantined-addresses}
 

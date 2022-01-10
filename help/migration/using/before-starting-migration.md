@@ -6,48 +6,26 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
-# Voordat u de migratie start{#before-starting-migration}
+# Vereisten{#before-starting-migration}
 
 ![](../../assets/v7-only.svg)
 
+Deze pagina bevat specifieke stappen die moeten worden uitgevoerd voordat het migratieproces wordt gestart. U moet ook verwijzen naar [deze pagina](about-migration.md) voor meer richtsnoeren.
+
 >[!NOTE]
 >
->In dit document worden aan de database gekoppelde opdrachten als voorbeeld gegeven. Deze kunnen afhankelijk van hun configuratie variëren. Neem contact op met de databasebeheerder.
+>In dit document worden opdrachten als voorbeelden gegeven. Zij kunnen afhankelijk van uw configuratie variëren.
 
-## Waarschuwingen {#warnings}
-
-* Het migratieproces mag alleen door deskundige gebruikers worden uitgevoerd. U moet door minstens een gegevensbestanddeskundige, een systeembeheerder en een toepassingsontwikkelaar van Adobe Campaign worden bijgestaan.
-* Voordat u de migratie start, moet u controleren of de systemen en systeemonderdelen die u gebruikt, in feite compatibel zijn met versie 7. Raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
-* Als u Adobe Campaign Cloud Messaging (medio-sourcing) gebruikt, neemt u contact op met Adobe voordat u de gehele migratieprocedure start.
-* Voordat u een migratieproces start, **moet** Maak een back-up van uw gegevens.
-* Het migratieproces kan enkele dagen duren.
-* Adobe Campaign v7 is wat configuratie betreft strenger dan de versies 5.11 en 6.02. Dit is hoofdzakelijk om problemen zoals gegevenscorruptie te vermijden en gegevensintegriteit in het gegevensbestand te bewaren. Bijgevolg werken bepaalde functies die in v5.11 en v6.02 worden aangeboden, mogelijk niet meer in v7 en moeten deze daarom mogelijk na de migratie worden aangepast. Voordat u iets gaat produceren, raden we u aan systematisch alle configuraties te testen, met name workflows die nodig zijn voor het gebruik van Adobe Campaign.
-
-### Geïnstalleerde versie {#installed-version}
-
-Voordat u gaat migreren, moet u de nieuwste build van de huidige versie installeren die u gebruikt.
-
-Controleer de versie op de server door naar de **[!UICONTROL Help> About]** op de clientconsole met behulp van de **nlserver pdump** gebruiken.
-
-### Gegevensback-up {#data-backup}
-
-Voordat u een migratieproces start, **moet** Maak een back-up van uw gegevens.
-
-### Omgeving {#environment}
-
-* Het is niet mogelijk om het type database-engine (DBMS) te wijzigen. U kunt bijvoorbeeld niet schakelen van een PostgreSQL-engine naar een Oracle-engine. U kunt echter schakelen van een Oracle 8-engine naar een Oracle 10-engine.
-* Het is niet mogelijk van een niet-Unicode-database naar een Unicode-database te gaan.
-
-### Aanbeveling {#recommendation}
-
-Aangezien de migratieprocedure gevoelig ligt, raden wij u ten zeerste aan dit document grondig te lezen voordat de procedure wordt gestart.
+1. Controleer uw Adobe Campaign-versie: voordat u gaat migreren, installeert u de meest recente build van de huidige versie die u gebruikt.
+1. Maak een back-up van uw gegevens.
+1. Controleer uw omgeving: u kunt het systeem van de gegevensbestandmotor (DBMS) niet veranderen. U kunt bijvoorbeeld niet schakelen van een PostgreSQL-engine naar een Oracle-engine. U kunt echter wel overschakelen naar de meest recente versie van de database-engine. Het is niet mogelijk van een niet-Unicode-database naar een Unicode-database te gaan.
 
 ## Migratiestappen {#migration-steps}
 
@@ -75,6 +53,6 @@ In v7: **internal** en **beheerder** De verbinding van de exploitant moet door e
 nlserver config -internalpassword
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >De **internal** wachtwoord moet identiek zijn voor alle volgende servers. Raadpleeg voor meer informatie de [Interne id](../../installation/using/configuring-campaign-server.md#internal-identifier) en [Machtigingen](../../platform/using/access-management.md) secties.

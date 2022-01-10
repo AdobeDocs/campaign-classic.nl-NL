@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
-# De migratie testen{#testing-the-migration}
+# Migratietests{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Afhankelijk van uw configuratie zijn er verschillende manieren om migratietests uit te voeren.
 
-U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voeren. Voor ontwikkelomgevingen geldt een licentie: controleer uw licentieovereenkomst of neem contact op met de verkoopservice van Adobe Campaign.
+U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voeren. Adobe Campaign-omgevingen zijn onderworpen aan licentie: controleer uw licentieovereenkomst of neem contact op met uw Adobe-vertegenwoordiger.
 
 1. Stop alle ontwikkelingen in uitvoering en zorg ervoor dat ze in de productieomgeving terechtkomen.
 1. Maak een steun van het gegevensbestand van de ontwikkelomgeving.
@@ -39,18 +39,12 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 1. Zorg ervoor dat uw back-ups correct zijn door ze te herstellen. Zorg ervoor dat u toegang hebt tot uw database, tabellen, gegevens, enzovoort.
 1. Test de migratieprocedure in de ontwikkelomgeving.
-
-   De volledige procedures worden in de [Vereisten voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sectie.
-
 1. Als de migratie van de ontwikkelomgeving succesvol is, kunt u de productieomgeving migreren.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Vanwege wijzigingen in de gegevensstructuur is het niet mogelijk gegevenspakketten te importeren en te exporteren tussen een v5-platform en een v7-platform.
 
->[!NOTE]
->
->De opdracht Adobe Campaign-update (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van bronnen, **postupgrade** laat u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
@@ -70,9 +64,11 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 
 >[!NOTE]
 >
->U moet de opdracht **-instance:`<instanceame>`** optie. We raden u niet aan het **-allinstances** optie.
+>* U moet de opdracht **-instance:`<instanceame>`** optie. We raden u niet aan het **-allinstances** optie.
+>* De opdracht Adobe Campaign-update (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van bronnen, **postupgrade** laat u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
-### -showCustomEntities en -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
+
+### Niet-standaard of ontbrekende objecten
 
 * De **-showCustomEntities** geeft de lijst met alle niet-standaardobjecten weer:
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->Negeer alle waarschuwingen en fouten met de JST-310040-code.
+>Met de JST-310040-code kunt u alle waarschuwingen en fouten negeren.
 
 De volgende expressies worden gezocht (hoofdlettergevoelig):
 
@@ -158,7 +154,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Als u foutlogbestanden voor webtoepassingen met een overzichtstype krijgt (migratie vanuit v6.02), raadpleegt u <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Campagne configureren</a>.<br /> </td> 
+   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Als u foutlogbestanden voor webtoepassingen met een overzichtstype krijgt (migratie vanuit v6.02), raadpleegt u <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Campagne configureren</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
@@ -167,6 +163,12 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM connectorimplementatietype zijn nu afgekeurd. 
    </br>Als u een van deze verouderde implementatietypen gebruikt in een externe account, moet deze externe account worden verwijderd en moet u vervolgens het volgende uitvoeren <b>postupgrade</b> gebruiken. 
    </br>Als u wilt overschakelen op de webAPI-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> Fout<br /> </td> 
+   <td> Actieactiviteiten van Microsoft CRM, Salesforce en Oracle CRM On Demand zijn niet langer beschikbaar. Om de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM te vormen, moet u gebruiken <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-connector</a> gericht op activiteiten.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -185,6 +187,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >We raden u ten zeerste aan absolute mappaden te gebruiken en de structuur van de mappenstructuur te behouden. Bijvoorbeeld: backupFolder\nms\srcSchema\billing.xml.
 
-### Hervatten van migratie {#resuming-migration}
+### De migratie hervatten {#resuming-migration}
 
 Als u na een migratiemislukking opnieuw begint, hervat het van de zelfde plaats het werd tegengehouden.

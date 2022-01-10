@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,11 @@ Pas voor een exportbewerking de volgende configuratie toe op de **[!UICONTROL CR
    >
    >De exportfunctie van de **[!UICONTROL CRM Connector]** activiteit kan gebieden op de kant van CRM opnemen of bijwerken. Om gebiedsupdates in CRM toe te laten, moet u de primaire sleutel van de verre lijst specificeren. Als de sleutel ontbreekt, worden gegevens ingevoegd (in plaats van bijgewerkt).
 
-1. In de **[!UICONTROL Mapping]** in, geeft u de velden op die geëxporteerd moeten worden en de toewijzing ervan in de CRM.
+1. Controleren **[!UICONTROL Export in Batches]** als u sneller wilt exporteren.
+
+   ![](assets/crm_export_config_2.png)
+
+1. In de **[!UICONTROL Mapping]** sectie, klikt u op **[!UICONTROL New]** om de velden te specificeren die geëxporteerd moeten worden en hun toewijzing in de CRM.
 
    ![](assets/crm_export_config.png)
 

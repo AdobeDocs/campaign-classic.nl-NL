@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -28,7 +28,7 @@ De interactie werkt met twee soorten aanbiedingsmilieu&#39;s:
 
 Elk **[!UICONTROL Design]** milieu is gekoppeld aan een **[!UICONTROL Live]** milieu. Wanneer een aanbieding is voltooid, worden de inhoud en de subsidiabiliteitsregels ervan onderworpen aan een goedkeuringscyclus. Zodra deze cyclus is voltooid, wordt het desbetreffende aanbod automatisch aan de **[!UICONTROL Live]** milieu. Vanaf dat moment is het beschikbaar voor levering.
 
-De interactie wordt standaard geleverd met een **[!UICONTROL Design]** milieu en **[!UICONTROL Live]** omgeving. Beide milieu&#39;s worden pre-gevormd om de uit-van-de-doos ontvankelijke lijst te richten.
+De interactie wordt standaard geleverd met een **[!UICONTROL Design]** milieu en **[!UICONTROL Live]** omgeving. Beide milieu&#39;s worden pre-gevormd om de ingebouwde ontvankelijke lijst te richten.
 
 >[!NOTE]
 >

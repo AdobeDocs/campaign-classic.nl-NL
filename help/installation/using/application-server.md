@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8794464d6fcc8ab648cd6866266855a701538fde
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ yum install java-1.8.0-openjdk
 
 ## OpenSSL {#openssl}
 
-In Linux moet OpenSSL zijn geïnstalleerd. De versies die door Adobe Campaign worden ondersteund zijn **OpenSSL 1.0.1** en **OpenSSL 0.9.8**. Subversies 0.9.8g tot en met 0.9.8o worden geaccepteerd.
+In Linux moet OpenSSL zijn geïnstalleerd. Adobe Campaign ondersteunt OpenSSL versie 1.0.2 of hoger.
 
 ## Rapporten exporteren {#exporting-reports}
 
