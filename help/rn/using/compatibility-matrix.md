@@ -40,7 +40,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bits) </br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
+<p>8.x (64 bits)  </br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
 <p>7.x (64 bits)</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
@@ -201,12 +201,12 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>minimaal 7.2.1</td>
+<td>Minimaal 7.2.1</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>minimaal 7.2.1</td>
+<td>Minimaal 7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
@@ -436,7 +436,7 @@ De volgende browsers zijn compatibel met Campaign voor [toegang tot internet](..
 
 ## Wellicht ook interessant{#Morelikethis}
 
-* [Aanvullende informatie over Campaign Classic ](../../rn/using/latest-release.md)
+* [Aanvullende informatie voor Campaign Classic](../../rn/using/latest-release.md)
 * [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
 * [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)

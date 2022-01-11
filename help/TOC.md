@@ -20,7 +20,7 @@ ht-degree: 98%
 + [Laatste updates](rn/using/documentation-updates.md)
 + Aanvullende informatie {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
-   + [Laatste release](rn/using/latest-release.md)
+   + [Nieuwste release](rn/using/latest-release.md)
    + Eerdere releases {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021](rn/using/release--2021.md)
@@ -553,7 +553,7 @@ ht-degree: 98%
       + [Aanvullende gegevens](interaction/using/additional-data.md)
       + [Extensievoorbeeld](interaction/using/extension-example.md)
       + [Een testomgeving maken](interaction/using/creating-a-test-environment.md)
-      + [Het standaardgedrag van de motor wijzigen](interaction/using/hooks.md)
+      + [Het standaardgedrag van de engine wijzigen](interaction/using/hooks.md)
       + [Gedistribueerde architecturen](interaction/using/distributed-architectures.md)
       + [Configuratie van gegevensbuffers](installation/using/interaction---data-buffer.md)
    + Gebruiksscenario {#case-study}
@@ -834,14 +834,14 @@ ht-degree: 98%
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
       + [IMS-updates](technotes/using/ims-updates.md)
-      + [Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning](technotes/using/eol-tls-support.md)
+      + [Ondersteuning voor TLS 1.0 en 1.1 verloopt](technotes/using/eol-tls-support.md)
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)
       + [Onjuiste harde bounces  bijwerken](delivery/using/update-bounce-qualification.md)
       + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
       + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + Migratie naar Adobe Managed Services{#dc-migration}
       + [Migratie naar Public Cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)
-+ [Campaign configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)

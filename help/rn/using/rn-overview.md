@@ -19,7 +19,7 @@ ht-degree: 87%
 
 ## Releasestatussen{#rn-statuses}
 
-Elke nieuwe samenstelling wordt geleverd met een status die wordt geconcretiseerd door een kleur.
+Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
@@ -41,9 +41,9 @@ Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabie
 
 ## Aanbevelingen{#recommendations}
 
-Om een stabiele configuratie te garanderen, raden we aan dat u **dezelfde stabiele samenstelling** installeert op alle servers die op dezelfde clientconfiguratie werken.
+Voor een stabiele configuratie adviseren we u dezelfde **stabiele build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
-Bovendien moet de clientconsole op dezelfde samenstelling worden uitgevoerd als de serverinstantie.
+Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
@@ -136,7 +136,7 @@ We doen er alles aan om u te voorzien van alle relevante project- en contactinfo
 
 ## Aanvullende bronnen{#support}
 
-* [Vind uw Campaign-versie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [Uw Campaign-versie zoeken](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Help en ondersteuning](../../support.md)
 * [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)

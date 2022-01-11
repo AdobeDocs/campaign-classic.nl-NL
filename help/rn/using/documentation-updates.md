@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
-Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## 2022
 
@@ -47,27 +47,27 @@ Optie voor batchupdate toegevoegd in de activiteit van de CRM-connector. [Meer i
 
 ### December 2021{#dec-2021}
 
-Release-opmerkingen van Campaign Classic v7 zijn gereorganiseerd om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
+De aanvullende informatie voor Campaign Classic v7 is gereorganiseerd om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
 
-De documentatie over de uitgave van het Formulier in Campaign is bijgewerkt en verbeterd. [Meer informatie](../../configuration/using/editing-forms.md)
+De documentatie over de bewerking van formulieren in Campaign is bijgewerkt en verbeterd. [Meer informatie](../../configuration/using/editing-forms.md)
 
-CentOs 8 heeft het einde van zijn levensduur bereikt en is nu verouderd met Adobe Campaign Classic. [Meer informatie](deprecated-features.md)
+CentOs 8 heeft het einde van zijn levensduur bereikt en is met ingang van Adobe Campaign Classic verouderd. [Meer informatie](deprecated-features.md)
 
 ### November 2021{#nov-2021}
 
-Een beperking toegevoegd over inkomende SMS (MO). [Meer informatie](../../delivery/using/sms-protocol.md#multipart)
+Er is een beperking toegevoegd voor inkomende SMS (MO). [Meer informatie](../../delivery/using/sms-protocol.md#multipart)
 
 De logboekgegevens van het migratieproces voor de implementatie van de CRM-connector zijn bijgewerkt. [Meer informatie](../../migration/using/testing-the-migration.md#verification-process)
 
-Toegevoegde vereisten voor IMS-machtigingen om Adobe Campaign-Adobe Analytics-integratie te implementeren. [Meer informatie](../../platform/using/adobe-analytics-provisioning.md)
+Er zijn vereisten toegevoegd voor IMS-machtigingen om de Adobe Campaign/Adobe Analytics-integratie te implementeren. [Meer informatie](../../platform/using/adobe-analytics-provisioning.md)
 
-Einde levensduur van Adobe Analytics Data Connector bijgewerkt van 1 maart 2022 tot 17 augustus 2022. [Meer informatie](deprecated-features.md)
+Einde levensduur van Adobe Analytics-gegevensconnector is bijgewerkt van 1 maart 2022 naar 17 augustus 2022. [Meer informatie](deprecated-features.md)
 
-Er is een koppeling toegevoegd naar de documentatie van Adobe Experience Platform Mobile SDK voor informatie over het configureren van de extensie Campaign in Adobe Launch. [Meer informatie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+Er is een koppeling toegevoegd naar de documentatie van de mobiele SDK van Adobe Experience Platform voor informatie over het configureren van de Campaign-extensie in Adobe Launch. [Meer informatie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
-Er is een sectie toegevoegd over het gebruik van JavaScript voor het berekenen van waarden, het uitwisselen van gegevens en het uitvoeren van specifieke bewerkingen met SOAP-oproepen.[Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
+Er is een sectie toegevoegd over het gebruik van JavaScript voor het berekenen van waarden, het uitwisselen van gegevens en het uitvoeren van specifieke bewerkingen met SOAP-calls.[Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
-Toegevoegde voorbeelden van de implementatie van JavaScript-codes in workflows. [Meer informatie](../../workflow/using/javascript-in-workflows.md)
+Er zijn voorbeelden van de implementatie van JavaScript-codes in workflows toegevoegd. [Meer informatie](../../workflow/using/javascript-in-workflows.md)
 
 
 ### Oktober 2021{#oct-2021}
@@ -328,7 +328,7 @@ De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende infor
 
 Er is een gebruiksscenario toegevoegd aan de workflowgebruiksscenario’s voor het automatisch bijwerken van een lijst met behulp van een incrementele query. [Meer informatie](../../workflow/using/about-workflow-use-cases.md)
 
-De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina toegevoegd voor de [[!DNL Gold Standard] -releases](../../rn/using/gold-standard.md) en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
+De [Aanvullende informatie](../../rn/using/latest-release.md) is opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina toegevoegd voor de [[!DNL Gold Standard] -releases](../../rn/using/gold-standard.md) en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
 
 Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
 

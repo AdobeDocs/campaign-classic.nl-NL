@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Releases van Campaign Classic 2021
-description: Meer informatie over Campaign Classic 2021 releases
+description: Meer informatie over Campaign Classic 2021-releases
 feature: Overview
 role: User
 level: Beginner
@@ -17,7 +17,7 @@ ht-degree: 99%
 ## Release 7.1 (21.1)
 
 >[!CAUTION]
->Gebruik de **[!UICONTROL Help > About...]** menu om je Adobe Campaign te controleren [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Houd er echter rekening mee dat voor alle samenstellingen tussen 9277 en 9343 die op deze pagina worden vermeld, het versienummer 7.0 toont in plaats van 7.1.
+>Gebruik de **[!UICONTROL Help > About...]** menu om je Adobe Campaign te controleren [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Houd er echter rekening mee dat voor alle builds tussen 9277 en 9343 die op deze pagina worden vermeld, het versienummer 7.0 wordt getoond in plaats van 7.1.
 
 ### ![](assets/do-not-localize/limited_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
 

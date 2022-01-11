@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Nieuwste release
-description: Aanvullende informatie voor de nieuwst Campaign Classic v7
+description: De nieuwste aanvullende informatie voor Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 ![](../../assets/v7-only.svg)
 
-Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe samenstelling wordt geleverd met een status die wordt geconcretiseerd door een kleur. Meer informatie over de samenstellingsstatus van Campaign Classic v7 op [deze pagina](rn-overview.md).
+Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
 
@@ -27,7 +27,7 @@ _10 januari 2022_
 
 Er zijn verschillende beveiligingsverbeteringen aangebracht in de FDA-rekeningen:
 
-* ODBC-stuurprogramma&#39;s worden nu rechtstreeks geïnstalleerd bij Adobe Campaign Third Party. Handmatige stappen zijn niet meer vereist om deze stuurprogramma&#39;s te installeren.
+* ODBC-stuurprogramma&#39;s worden nu rechtstreeks geïnstalleerd met Adobe Campaign Third Parties. Handmatige stappen zijn niet meer vereist om deze stuurprogramma&#39;s te installeren.
 * Wanneer u uw externe FDA-account configureert, kunt u zich nu aanmelden bij uw Snowflake-account met behulp van sleutelparverificatie voor uitgebreide verificatiebeveiliging. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
 * Wanneer het vormen van uw FDA externe rekening, kunt u nu login aan uw rekening van de Analytics van de Azure synapse gebruikend de systeem-toegewezen beheerde identiteit. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
 * Alle verwijzingen naar de bibliotheek log4j zijn verwijderd uit Campagne om optimale veiligheid te verzekeren.
@@ -36,10 +36,10 @@ Er zijn verschillende beveiligingsverbeteringen aangebracht in de FDA-rekeningen
 
 * Microsoft Dynamics CRM 365 Connector
 
-   Er zijn kritieke correcties toegepast voor de web API van Microsoft Dynamics Connector:
+   Er zijn kritieke correcties toegepast voor de web-API van Microsoft Dynamics Connector:
 
-   * Probleem verholpen tijdens het importeren die werd geactiveerd door een workflow. Hierdoor werden de nul-waarden van tekenreeksvelden opgeslagen als nul in plaats van als lege waarden.
-   * Probleem verholpen dat leidde tot de volgende fout voor het importeren of exporteren van gegevens met behulp van web-API-aanroepen: Ongeldige URI: het URI-schema is te lang.
+   * Probleem verholpen dat optrad tijdens een importeractie die werd geactiveerd door een workflow. Hierdoor werden de lege waarden van tekenreeksvelden opgeslagen als nul in plaats van als lege waarden.
+   * Probleem verholpen dat leidde tot de volgende fout voor het importeren of exporteren van gegevens met behulp van web-API-calls: Ongeldige URI: het URI-schema is te lang.
    * Verschillende problemen verholpen bij het importeren, vanuit Microsoft Dynamics 365, van gegevens die opzoekvelden bevatten.
 
 * Google BigQuery FDA-connector
