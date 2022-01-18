@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### Januari
 
-**Documentatie-updates die bij de release 7.2.1 worden geleverd**
+**Documentatie-updates die bij release 7.2.1 worden geleverd**
 
-Bijgewerkte compatibiliteitsmatrix. [Meer informatie](compatibility-matrix.md)
+Compatibiliteitsmatrix bijgewerkt. [Meer informatie](compatibility-matrix.md)
 
-Bijgewerkte sectie Opmerkingen bij release. [Meer informatie](rn-overview.md)
+Bijgewerkte sectie Aanvullende informatie. [Meer informatie](rn-overview.md)
 
-Bijgewerkte FDA configuratie externe rekening voor Snowflake. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
+Bijgewerkte FDA externe accountconfiguratie voor Snowflake. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
 
-Bijgewerkte FDA-configuratie voor externe accounts voor Azure synapse Analytics. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
+Bijgewerkte FDA externe accountconfiguratie voor Azure Synapse Analytics. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
 
 Bijgewerkte Google BigQuery FDA-connector. [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
 
-Na hun afkapping zijn Microsoft CRM, Salesforce en Oracle CRM On Demand action activiteiten uit de documentatie verwijderd.
+Na hun afschaffing zijn de actieactiviteiten van Microsoft CRM, Salesforce en Oracle CRM On Demand uit de documentatie verwijderd.
 
-Nieuwe optie **Afbreken bij fout** toegevoegd aan de sectie van het Beheer van de werkschemafout. [Meer informatie](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+Nieuwe optie **Afbreken bij fout** toegevoegd aan de workflow Error Management-sectie. [Meer informatie](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 
 Optie voor batchupdate toegevoegd in de activiteit van de CRM-connector. [Meer informatie](../../workflow/using/crm-connector.md)
 
@@ -252,7 +252,7 @@ De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compat
 
 De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
 
-Opmerkingen bij de release en compatibiliteitsmatrix voor [!DNL Gold Standard] release is nu beschikbaar op een specifieke pagina.
+Aanvullende informatie en de compatibiliteitsmatrix voor de [!DNL Gold Standard]-release zijn nu beschikbaar op een speciale pagina.
 [Meer informatie](../../rn/using/gold-standard.md).
 
 De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
@@ -450,7 +450,7 @@ De handleidingen inzake [installatie](../../installation/using/general-architect
 
 De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
 
-De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 Een best practice over IP-affiniteit is toegevoegd aan de installatiehandleiding. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -468,7 +468,7 @@ De nieuwe parameter voor rapportconfiguratie van URL’s is [hier](../../reporti
 
 De pagina over de **On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic** is bijgewerkt met de nieuwe FDA-connectoren. [Meer informatie](../../installation/using/capability-matrix.md).
 
-De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 De nieuwe workflow **[!UICONTROL Cleanup of Nmsaddress]** is [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) gedocumenteerd.
 
@@ -520,7 +520,7 @@ Beveiligde sms-berichten (TLS) - [Meer informatie](https://helpx.adobe.com/nl/ca
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status Zo snel mogelijk starten blijft in een campagne. [Meer informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -582,7 +582,7 @@ De best practices voor prestatiesverbeteringen van workflows en leveringen zijn 
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
-Configuratiescherm - [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Configuratiescherm - [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 
 Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
@@ -606,7 +606,7 @@ De beschrijving van de optie van de workflow voor voorverwerking is bijgewerkt o
 
 De technische opmerking over Marketing Cloud-triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
-De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl)
 
 Er is meer informatie over SOAP-verificatiemethoden voor transactionele berichten toegevoegd. [Meer informatie](../../message-center/using/event-description.md)
 
@@ -645,7 +645,7 @@ Er is informatie toegevoegd over het factureringsrapport.
 De documentatie over de integratie van gedeelde doelgroepen is bijgewerkt.
 [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 De sectie over technische workflows is bijgewerkt. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
