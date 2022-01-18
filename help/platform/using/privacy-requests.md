@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2425'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -281,7 +281,7 @@ Roep vervolgens de Privacy-API aan:
 
    * U kunt een **queryDef** op het **nms:gdprRequest**-schema gebruiken om de status van het toegangsverzoek te controleren.
    * U kunt een **queryDef** op het **nms:gdprRequestData**-schema gebruiken om het resultaat van het toegangsverzoek te krijgen.
-   * Het XML-bestand kunnen downloaden van **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**, moet u het programma worden geopend en tot het toegang hebben van IP die in de lijst van gewenste personen inbegrepen is. U kunt dit doen door een webapplicatie te maken waarmee u toegang krijgt tot het bestand dat door de JSSP wordt gegenereerd.
+   * Om het XML-bestand van **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** te kunnen downloaden moet u zijn aangemeld en het bestand openen vanaf een IP-adres dat is toegevoegd aan de lijst met gewenste personen. U kunt dit doen door een webapplicatie te maken waarmee u toegang krijgt tot het bestand dat door de JSSP wordt gegenereerd.
 
 ### De API aanroepen vanuit een JS {#invoking-api-from-js}
 
