@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -188,15 +188,15 @@ Hieronder vindt u de Customer Relationship Management-systemen (CRM) die compati
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Federated Data Access-module. ](../../installation/using/about-fda.md) De compatibiliteit is afhankelijk van uw [hostmodel](../../installation/using/hosting-models.md).
+Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Federated Data Access-module](../../installation/using/about-fda.md). De compatibiliteit is afhankelijk van uw [hostmodel](../../installation/using/hosting-models.md).
 
-**Managed Services** (gehost), **Hybride** en **Op locatie** omgevingen kunnen campagne verbinden met de volgende externe databasesystemen:
+**Managed Services** (gehost), **Hybride** en **on-premise** omgevingen kunnen Campaign verbinden met de volgende externe databasesystemen:
 
 <table>
 <tbody>
 <td><strong>Databasesysteem</strong></td>
 <td><strong>Databaseversie</strong></td>
-<td><strong>Campagneversie</strong></td>
+<td><strong>Campaign-versie</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
@@ -221,7 +221,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
+<p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
@@ -230,13 +230,13 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 </tbody>
 </table>
 
-Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden met:
+Bovendien kunnen **Hybride** en **on-premise** omgevingen Campaign ook verbinden met:
 
 <table>
 <tbody>
 <td><strong>Databasesysteem</strong></td>
 <td><strong>Databaseversie</strong></td>
-<td><strong>Campagneversie</strong></td>
+<td><strong>Campaign-versie</strong></td>
 <tr>
 <td>Vertica</td>
 <td> </td>
@@ -250,12 +250,12 @@ Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -265,13 +265,13 @@ Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden
 <p>2014</p>
 <p>2012 SP1 en SP2</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -281,14 +281,14 @@ Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,14 +296,14 @@ Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>versie 1 SPS 12</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -311,7 +311,7 @@ Daarnaast **Hybride** en **Op locatie** omgevingen kunnen ook campagne verbinden
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>minimum v7.0</td>
+<td>Minimaal V7.0</td>
 </tr>
 </tbody>
 </table>
