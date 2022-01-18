@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -653,7 +653,7 @@ ht-degree: 98%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -817,12 +817,12 @@ ht-degree: 98%
       + [Tags op uw site invoegen](configuration/using/inserting-tags-in-your-site.md)
       + [Alle bezoeken verzamelen](configuration/using/collecting-all-visits.md)
       + [Anonieme tracking](configuration/using/anonymous-tracking.md)
-+ Migratiehandleiding {#migrating-to-a-new-version}
++ Migratiehandboek {#migrating-to-a-new-version}
    + [Migreren naar Adobe Campaign v7](migration/using/about-migration.md)
    + Migratieprocedure {#migration-procedure}
       + [Vereisten](migration/using/before-starting-migration.md)
       + [Migratietests](migration/using/testing-the-migration.md)
-      + [Pas uw configuratie aan](migration/using/configuring-your-platform.md)
+      + [Uw configuratie aanpassen](migration/using/configuring-your-platform.md)
    + De migratie starten {#migrating-to-adobe-campaign-7}
       + [Microsoft Windows-platform migreren](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Een Linux-platform migreren](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
