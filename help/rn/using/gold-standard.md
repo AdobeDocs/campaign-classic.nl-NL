@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: '[!DNL Gold Standard]-releases '
-description: Opmerkingen bij de release en compatibiliteitsmatrix voor Campaign Classic [!DNL Gold Standard]
+description: Aanvullende informatie en compatibiliteitsmatrix voor Campaign Classic [!DNL Gold Standard]
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: f20ac97be9390fd7e6fd6a6c4d738c0fde9c72c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1676'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 ![](../../assets/v7-only.svg)
 
-In deze paginareleaseopmerkingen en compatibiliteitsmatrix kunt u zoeken naar [!DNL Gold Standard] lozingen.
+Op deze pagina vindt u aanvullende informatie en compatibiliteitsmatrix voor [!DNL Gold Standard]-releases.
 
 ## [!DNL Gold Standard] Aanvullende informatie
 
@@ -52,7 +52,7 @@ De build 9032@d030c36 bevat de volgende oplossing:
 >
 > * Als u verbinding maakt met Campaign met uw Adobe ID, via Adobe Identity Management Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de klantconsole om verbinding te kunnen maken met Campaign na **30 juni 2021**. [Meer informatie](../../technotes/using/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. Verouderde verificatiemodus voor auteur met campagne [is met pensioen gegaan](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot  **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-authentificatiemodus met Campaign [is beëindigd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) in **september 2021**. De gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als on-premise of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 >
 >Meer informatie vindt u in de [[!DNL Gold Standard] veelgestelde vragen van de upgrade naar 11](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)
@@ -117,11 +117,11 @@ _29 april 2020_
 
 De build 9032@3a9dc9c bevat de volgende oplossingen:
 
-* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
+>Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
 
 * Er is een probleem verholpen waarbij afbeeldingen niet konden worden weergegeven in Line-leveringen. (NEO-23207)
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
@@ -194,7 +194,7 @@ De eerste 19.1.4-build bevat de volgende oplossingen:
 
 ## [!DNL Gold Standard] Compatibiliteitsmatrix{#compatibility-matrix-gs}
 
-In deze sectie worden alle systemen en componenten weergegeven die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 builds. Producten en versies die niet in deze lijst staan, zijn niet compatibel met deze versie van Adobe Campaign.
+Dit gedeelte bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die niet in deze lijst staan, zijn niet compatibel met deze versie van Adobe Campaign.
 
 >[!CAUTION]
 >Tenzij anders vermeld worden alle kleine releases ondersteund.
@@ -377,7 +377,7 @@ In deze sectie worden alle systemen en componenten weergegeven die worden onders
 <tr>
 <td>Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -386,8 +386,8 @@ In deze sectie worden alle systemen en componenten weergegeven die worden onders
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
