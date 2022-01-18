@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
 
 ![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt.
 
-## Vergrendelingscyclus
+## Releasecyclus
 
-Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige updates zijn bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
+Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
-Dat is de reden waarom wij het van essentieel belang achten dat u **Voer de meest recente stabiele versie uit** van Adobe Campaign. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
+Dit is de reden waarom we het van cruciaal belang vinden dat u **de meest recente stabiele versie** van Adobe Campaign gebruikt. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
 
-Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele versie zonder actie. Meer informatie in het dialoogvenster [Jaarlijkse upgrade-sectie](#yearly-upgrade). Als u van een oude bouwstijl migreert, adviseert Adobe dat u aan deze versie eerst bevordert.
+Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele versie zonder enige actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u migreert van een oude build, raadt Adobe u aan eerst naar deze versie te upgraden.
 
 ## Aanbevelingen{#recommendations}
 
@@ -59,13 +59,13 @@ Adobe en Adobe Campaign willen u met onze softwareoplossing(en) de beste ervarin
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
-Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder actie. Meer informatie vindt u in de volgende veelgestelde vragen.
+Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder enige actie. Meer informatie vindt u in de volgende veelgestelde vragen.
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
 Als gehoste klant wordt u rechtstreeks door Adobe op de hoogte gesteld wanneer is vastgesteld dat voor uw account bepaalde technologieën voor Campaign Classic moeten worden bijgewerkt. Dit is ook het geval als u de huidige build en/of versie moet bijwerken.
 
-Als klant op locatie of hybride die op een oudere versie werkt, moedigt Adobe u aan om over te stappen naar de recentste stabiele build.
+Als on-premise of hybride klant met een oudere versie raadt Adobe u aan over te stappen op de nieuwste stabiele build.
 
 Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst van de gebruiker vereisen.
 
@@ -143,4 +143,4 @@ We doen er alles aan om u te voorzien van alle relevante project- en contactinfo
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 
-Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-releases, meld u dan aan voor de [Adobe Priority Product Update](https://www.adobe.com/nl/subscription/priority-product-update.html).
+Word lid van de [Adobe Priority Product Update](https://www.adobe.com/nl/subscription/priority-product-update.html) om op de hoogte te blijven van nieuwe releases van Experience Cloud-oplossingen.
