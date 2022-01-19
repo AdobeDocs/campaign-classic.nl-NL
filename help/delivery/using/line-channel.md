@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ De stappen voor het gebruik van de [!DNL LINE] kanaal zijn:
 
 ## LINE-kanaal instellen {#setting-up-line-channel}
 
-Voordat u een [!DNL LINE] -account en externe account, moet u eerst het LINE-pakket op uw exemplaar installeren. Voor meer informatie hierover raadpleegt u de [REGEL](../../installation/using/installing-campaign-standard-packages.md#line-package) in de installatiehandleiding.
+Voordat u een [!DNL LINE] -account en externe account, moet u eerst het LINE-pakket op uw exemplaar installeren. Voor meer informatie hierover raadpleegt u [deze sectie](../../installation/using/installing-campaign-standard-packages.md#line-package).
 
 U moet eerst een [!DNL LINE] -account, zodat u deze aan Adobe Campaign kunt koppelen. Vervolgens kunt u [!DNL LINE] berichten aan de gebruikers die uw [!DNL LINE] in hun mobiele toepassing. Externe rekeningen en [!DNL LINE] -account kan alleen worden beheerd door de functionele beheerder van het platform.
 

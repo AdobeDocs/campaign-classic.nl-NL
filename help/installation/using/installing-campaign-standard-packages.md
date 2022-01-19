@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1254'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
 
 ### Message Center-pakket {#message-center-package}
 
-U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, enz.) voordat u het Transactiebericht installeert (Message Center-pakket). Als u een project van het Centrum van het Bericht van het e-mail-enige bent begonnen, en een nieuw kanaal daarna moet toevoegen, moet u deze stappen volgen:
+U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, LINE, enz.) voordat u het Transactiebericht installeert (Message Center-pakket). Als u een project van het Centrum van het Bericht van het e-mail-enige bent begonnen, en een nieuw kanaal daarna moet toevoegen, moet u deze stappen volgen:
 
 1. Installeer het nieuwe kanaal, bijvoorbeeld **Mobiel kanaal**, met de wizard Pakket importeren ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Het bestand importeren ( **[!UICONTROL Tools > Advanced > Import package > File]**) en selecteer:
@@ -254,6 +254,19 @@ U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, e
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] kanaalinstelling{#line-package}
+
+Als u de opdracht [!DNL LINE] kanaal, moet u eerst installeren [!DNL LINE] pakket.
+
+In de context van een midsourcingconfiguratie, moet u:
+
+* Installeer de [!DNL LINE] pakket op zowel de Marketing als de instantie MID
+
+* Stel de [!DNL LINE] externe rekening op de markt om naar het midden van de instantie te wijzen door de leveringsmodus te wijzigen. [Meer informatie](../../delivery/using/line-channel.md#configure-line-external)
+
+* Stel de [!DNL LINE] referenties in de externe account op de instantie MID.
+
 >[!CAUTION]
 >
->De leveringsmalplaatjes van het Centrum van het Bericht voor LIJN zullen niet beschikbaar zijn als de pakketten van het Centrum van het Bericht vóór LIJN worden geïnstalleerd
+>De leveringsmalplaatjes van het Centrum van het Bericht voor [!DNL LINE] kanaal is niet beschikbaar als de pakketten van het Berichtencentrum zijn geïnstalleerd vóór [!DNL LINE].
