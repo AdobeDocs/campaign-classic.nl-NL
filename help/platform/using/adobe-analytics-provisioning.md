@@ -7,10 +7,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
+source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
+source-wordcount: '646'
+ht-degree: 4%
 
 ---
 
@@ -141,10 +141,21 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het Adobe I/O-project 
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Plak deze serviceaccountgegevens op de server met de volgende opdracht:
+1. Gebruik de in stap 6 gegenereerde persoonlijke sleutel.
+
+   Als u reeds opstellingsTriggers gebruikend deze geloofsbrieven, uw privé sleutel voor deze schakelaarconfiguratie het zelfde moet zijn.
+
+1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
+
+   >[!NOTE]
+   >
+   >Soms kunnen extra regels automatisch worden toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
+
+1. De inhoud van het bestand kopiëren `private.key.base64`.
+
+1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens toe in Adobe Campaign door de volgende opdracht uit te voeren als `neolane` gebruiker. Hiermee voegt u de **[!UICONTROL Technical Account]** referenties in het configuratiebestand van de instantie.
 
    ```
-   nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 U kunt nu de Analytics-connector gebruiken en uw klantgedrag volgen.
