@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 49%
+source-wordcount: '270'
+ht-degree: 47%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 49%
 
 ## Nieuwe functies
 
+* **[Release-programma 2022](technotes/using/dc-migration.md)**<br/> Upgrade uw omgeving en verbeter de beveiliging, infrastructuur en prestaties
+
 * **[Release januari is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
+* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
 
 * **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne nadat** 30 juni 2021 **
 
@@ -85,4 +87,4 @@ ht-degree: 49%
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
 | [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
-| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
+| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |

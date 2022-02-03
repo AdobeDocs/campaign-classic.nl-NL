@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Als onderdeel van het [Gold Standard-initiatief](../../rn/using/gold-standard.md), ontmantelt Adobe het oude datacenter. Campaign Classic-exemplaren moeten worden overgebracht naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
+Adobe ontmantelt het oude datacenter: Campaign Classic-exemplaren moeten worden overgebracht naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
 
 Hieronder vindt u een aantal veelgestelde vragen over dit project, de invloed op uw campagneomgeving en andere nuttige bronnen.
 
@@ -47,7 +47,7 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
    Als eerste stap zullen we dezelfde Campaign Classic opbouwen met migratie.
 
-   In een volgende stap zullen we doorgaan met de upgrade naar de nieuwste Campaign Classic GA-build. Raadpleeg voor meer informatie de [Veelgestelde vragen over upgrade maken](../../platform/using/faq-build-upgrade.md) en [Opmerkingen bij de release Campagne Gold Standard](../../rn/using/gold-standard.md).
+   In een volgende stap zullen we doorgaan met de upgrade naar de nieuwste Campaign Classic GA-build. Raadpleeg [deze pagina](../../rn/using/rn-overview.md) voor meer informatie.
 
 * **Wat is het plan om eventuele problemen na migratie aan te pakken?**
 
@@ -63,7 +63,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen in de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik hier](#config) voor meer details over IP op de lijst van gewenste personen.
+   [Meer informatie](#config) over IP op de lijst van gewenste personen.
 
 * **Hoe zullen wij haven behandelen die aan de lijst van gewenste personen voor toegang SFTP/FTP wordt toegevoegd?**
 
@@ -73,7 +73,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik hier](#config) voor meer details over IP op de lijst van gewenste personen.
+   [Meer informatie](#config) over IP op de lijst van gewenste personen.
 
 * **Hoe zal subdomeindelegatie worden behandeld?**
 
@@ -155,7 +155,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
    Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-   [Klik hier](#config) voor meer details over IP op lijst van gewenste personen.
+   [Meer informatie](#config) over IP op lijst van gewenste personen.
 
 * **Zorgen we ervoor dat alle JavaScript-parameters voor geheugenconfiguratie na de migratie correct zijn ingesteld?**
 
@@ -169,7 +169,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
    Het kan veranderen afhankelijk van nieuwe serverplaats. Nochtans zal de klant hun huidige timezone kunnen behouden.
 
-   [Klik hier](../../workflow/using/managing-time-zones.md) voor meer informatie over tijdzonebeheer in Adobe Campaign Classic v7.
+   [Meer informatie](../../workflow/using/managing-time-zones.md) over tijdzonebeheer in Adobe Campaign Classic v7.
 
 
 ## Beveiliging en machtigingen
