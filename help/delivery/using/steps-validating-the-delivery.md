@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: De levering valideren
-description: De levering valideren
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: Leer hoe u een levering kunt valideren
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 5%
+source-wordcount: '1666'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +18,7 @@ Wanneer een levering is gecreeerd en gevormd, moet u het bevestigen alvorens het
 
 Dit doet u als volgt:
 
-1. **De levering analyseren**: met deze stap kunt u de te leveren berichten voorbereiden. [Meer info](#analyzing-the-delivery).
+1. **De levering analyseren**: met deze stap kunt u de te leveren berichten voorbereiden. [Meer informatie](#analyzing-the-delivery).
 
    De regels die tijdens de analyse worden toegepast, worden weergegeven in [deze sectie](#validation-process-with-typologies). De beschikbare validatiemodi worden gedetailleerd beschreven in de [De goedkeuringsmodus wijzigen](#changing-the-approval-mode) sectie.
 
@@ -135,7 +132,6 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 >
 >* Beschikbare validatiemodi worden nader beschreven in [De goedkeuringsmodus wijzigen](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 

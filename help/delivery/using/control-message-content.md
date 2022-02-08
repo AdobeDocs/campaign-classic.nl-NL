@@ -1,19 +1,17 @@
 ---
 product: campaign
 title: Informatie over leverbaarbaarheid in Adobe Campaign Classic
-description: Meer weten over het beheren van de leverbaarbaarheid in Adobe Campaign Classic?
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: Meer informatie over het beheren van de leverbaarheid in Adobe Campaign
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 4%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
-# De inhoud van uw bericht beheren{#control-message-content}
+# De inhoud van uw bericht bepalen{#control-message-content}
 
 ![](../../assets/common.svg)
 
@@ -39,7 +37,7 @@ Bepaalde ISPs controleren de geldigheid van het afzenderadres (**[!UICONTROL Fro
 
 U moet ervoor zorgen dat het juiste adres wordt opgegeven op instantieniveau (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) of in de meest gebruikte scenario&#39;s.
 
-Zie voor meer informatie [De afzender definiëren](defining-the-email-content.md).
+Ga voor meer informatie naar [deze pagina](defining-the-email-content.md).
 
 ## Personalisatie {#personalization}
 

@@ -2,11 +2,8 @@
 product: campaign
 title: Consistentieregels
 description: Consistentieregels
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
@@ -21,9 +18,9 @@ ht-degree: 3%
 
 Adobe Campaign garandeert consistente communicatie dankzij een set regels die zijn opgenomen in campagnetypologieën. Zij hebben tot doel de leveringen die aan de ontvangers worden verzonden, te controleren, zoals volume, aard, relevantie, enz.
 
-**Capaciteit** regels kunnen bijvoorbeeld voorkomen dat het platform waarop de levering van berichten betrekking heeft , wordt overbelast . Bijvoorbeeld, speciale aanbiedingen die een downloadverbinding bevatten mogen niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Raadpleeg voor meer informatie hierover [Beheerscapaciteit](#controlling-capacity).
+**Capaciteit** regels kunnen bijvoorbeeld voorkomen dat het platform waarop de levering van berichten betrekking heeft , wordt overbelast . Bijvoorbeeld, speciale aanbiedingen die een downloadverbinding bevatten mogen niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Raadpleeg voor meer informatie hierover [Besturingscapaciteit](#controlling-capacity).
 
-## Beheerscapaciteit {#controlling-capacity}
+## Besturingscapaciteit {#controlling-capacity}
 
 Alvorens berichten te leveren, moet u ervoor zorgen uw organisatie de capaciteit heeft om de levering (fysieke infrastructuur) te verwerken, de reacties die de levering (binnenkomende berichten) kan produceren, en het aantal vraag die aan contactabonnees (de verwerkingscapaciteit van het vraagcentrum) moet worden gemaakt, bijvoorbeeld.
 
@@ -55,7 +52,7 @@ Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
 
    Raadpleeg [deze sectie](#monitoring-consumption) voor meer informatie.
 
-## De maximumbelasting definiëren {#defining-the-maximum-load}
+## De maximale belasting definiëren {#defining-the-maximum-load}
 
 Om de maximumlading te bepalen, moet u beschikbaarheidslijnen bepalen. Hiervoor zijn twee opties beschikbaar: u kunt manueel één of meerdere beschikbaarheidslijnen tot stand brengen (verwijs naar [Beschikbaarheidsregels een voor een toevoegen](#adding-availability-lines-one-by-one)) of maak beschikbaarheidsbereiken. De frequentie van deze tijdsperiodes kan worden geautomatiseerd (zie [Een set beschikbaarheidsregels toevoegen](#add-a-set-of-availability-lines)).
 
@@ -113,7 +110,7 @@ Het aantal berichten dat moet worden verwerkt, wordt gelijkmatig verdeeld over h
 
 ![](assets/campaign_opt_create_capacity_06.png)
 
-## Toezicht op het verbruik {#monitoring-consumption}
+## Verbruik monitoren {#monitoring-consumption}
 
 Capaciteitsregels zijn standaard alleen ter indicatie. Selecteer **[!UICONTROL Exclude messages in excess of capacity from the target]** om te voorkomen dat de gedefinieerde belasting wordt overschreden. In dit geval worden overtollige berichten automatisch uitgesloten van de leveringen die gebruikmaken van deze typologieregel.
 

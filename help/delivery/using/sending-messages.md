@@ -1,26 +1,23 @@
 ---
 product: campaign
-title: Een e-mail verzenden met Adobe Campaign Classic
-description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+title: Belangrijke stappen voor het verzenden van een e-mail
+description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 3%
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
-# De belangrijkste stappen om een e-mail te verzenden {#confirming-email-delivery}
+# Belangrijke stappen voor het verzenden van een e-mail {#key-steps-to-send-an-email}
 
 ![](../../assets/common.svg)
 
 Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te controleren en te bevestigen.
 
 1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie voor meer informatie [E-mailparameters](email-parameters.md).
-1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie voor meer informatie [Een proefafdruk verzenden](steps-validating-the-delivery.md#sending-a-proof).
+1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie voor meer informatie [Een proefdruk verzenden](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Klik op **[!UICONTROL Send]** selecteert u een handeling en klikt u op **[!UICONTROL Analyze]**. Zie voor meer informatie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
 
@@ -36,5 +33,5 @@ In de volgende secties vindt u gedetailleerde instellingen en configuraties die 
 <!--* [Generating the mirror page](generating-mirror-page.md)
 * [Email BCC](email-bcc.md)-->
 * [E-mailparameters](email-parameters.md)
-* [E-mailberichten verzenden met de verbeterde MTA](sending-with-enhanced-mta.md)
+* [E-mails verzenden met de verbeterde MTA](sending-with-enhanced-mta.md)
 * [E-mails verzenden naar Japanse mobiele telefoons](sending-emails-on-japanese-mobiles.md)

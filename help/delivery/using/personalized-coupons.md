@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Gepersonaliseerde coupons
-description: Gepersonaliseerde coupons
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Leer hoe u gepersonaliseerde coupons maakt en invoegt
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -149,7 +147,7 @@ Bevestig dat de levering succesvol was:
 
 >[!NOTE]
 >
->Standaard gebruikt de module voor couponbeheer een **nms:ontvanger** tabel. [Meer info](../../configuration/using/about-data-model.md#default-recipient-table).
+>Standaard gebruikt de module voor couponbeheer een **nms:ontvanger** tabel. [Meer informatie](../../configuration/using/about-data-model.md#default-recipient-table).
 >
 >Leer hoe u een aangepaste tabel voor ontvangers gebruikt [op deze pagina](../../configuration/using/about-custom-recipient-table.md).
 

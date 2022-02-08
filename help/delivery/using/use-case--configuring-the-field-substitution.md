@@ -2,11 +2,9 @@
 product: campaign
 title: '"Gebruiksscenario: de veldvervanging configureren"'
 description: '"Gebruiksscenario: de veldvervanging configureren"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -75,7 +73,7 @@ Voor deze wijziging van het gegevensschema om in de zaadadressen te bekijken **I
 
    >[!NOTE]
    >
-   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** koppeling, verwijzen naar [Hoofdlettergebruik: het selecteren van zaadadressen op criteria](use-case--selecting-seed-addresses-on-criteria.md).
+   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** koppeling, verwijzen naar [Hoofdlettergebruik: zaadadressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klik op de knop **[!UICONTROL Preview]** selecteert u vervolgens een zaadadres om de personalisatie te testen.
 

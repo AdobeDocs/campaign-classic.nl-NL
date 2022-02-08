@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: De levering configureren en verzenden
-description: De levering configureren en verzenden
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: Leer hoe te vormen en de levering te verzenden
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1526'
 ht-degree: 5%
 
 ---
@@ -59,7 +56,7 @@ U kunt de leveringstovenaar dan sluiten en de uitvoering van de levering van vol
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Een levering controleren](about-delivery-monitoring.md)
+* [Een verzending controleren](about-delivery-monitoring.md)
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 * [Berichttracking](about-message-tracking.md)
 
@@ -179,9 +176,9 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Na die datum en tot de uiterste datum van levering, die in de **[!UICONTROL Validity]** tab (zie [Geldigheidsduur definiëren](#defining-validity-period)).
+Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Na die datum en tot de uiterste datum van levering, die in de **[!UICONTROL Validity]** tab. Zie [De geldigheidsperiode definiëren](#defining-validity-period).
 
-## Geldigheidsduur definiëren {#defining-validity-period}
+## De geldigheidsperiode definiëren {#defining-validity-period}
 
 Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe pogingen) worden verzonden tot de leveringstermijn. Dit wordt aangegeven in de levereigenschappen, via de **[!UICONTROL Validity]** tab.
 

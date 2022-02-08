@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Bronnen en beginselen voor contentmanagement
-description: Bronnen en beginselen voor contentmanagement
-audience: delivery
-content-type: reference
-topic-tags: content-management
+description: Middelen en beginselen voor inhoudsbeheer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 

@@ -2,13 +2,10 @@
 product: campaign
 title: Targettoewijzing
 description: Leer hoe u een doeltoewijzing maakt
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 468a986d7cfb8a4c51229cf81b6656ca2d101f40
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -124,7 +121,3 @@ Er zijn twee manieren om het nieuwe schema als doel van een levering te gebruike
 * Selecteer direct toewijzingen tijdens doelselectie wanneer het creëren van een levering, zoals hieronder getoond:
 
 ![](assets/mapping_selection_ciblage.png)
-
-**Verwant onderwerp**
-
-* [Snel reageren op verzoeken van klanten om toegang te krijgen tot hun gegevens](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)

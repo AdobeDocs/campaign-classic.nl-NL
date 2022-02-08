@@ -2,22 +2,18 @@
 product: campaign
 title: Werken met quarantainebeheer
 description: Werken met quarantainebeheer
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 14%
+source-wordcount: '2613'
+ht-degree: 12%
 
 ---
 
-# Werken met quarantainebeheer{#understanding-quarantine-management}
+# Quarantainebeheer begrijpen{#understanding-quarantine-management}
 
 ![](../../assets/common.svg)
-
-## Quarantaine {#about-quarantines}
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer het postvak vol is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
 
@@ -25,9 +21,9 @@ Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvang
 >
 >Deze sectie is van toepassing op online kanalen: e-mail, SMS, pushmelding.
 
-### Uw levering optimaliseren via quarantaine {#optimizing-your-delivery-through-quarantines}
+## De levering optimaliseren via quarantainebeheer {#optimizing-your-delivery-through-quarantines}
 
-De profielen waarvan de e-mailadressen of telefoonnummers in quarantaine zijn geplaatst, worden automatisch uitgesloten tijdens de voorbereiding van berichten (zie [In quarantaine geplaatste adressen voor een levering identificeren](#identifying-quarantined-addresses-for-a-delivery)). Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid.
+De profielen waarvan e-mailadressen of telefoonaantal in quarantaine zijn zijn automatisch uitgesloten tijdens berichtvoorbereiding (zie [Identificeer quarantined adressen voor een levering](#identifying-quarantined-addresses-for-a-delivery)). Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid.
 
 Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan de lijst van gewezen personen wordt toegevoegd.
 
@@ -49,11 +45,11 @@ Aan de slag **lijst van gewezen personen** anderzijds zal het profiel niet lange
 
 Adressen kunnen in quarantaine worden geplaatst voor een specifieke levering of voor het volledige platform.
 
-### In quarantaine geplaatste adressen voor een levering identificeren {#identifying-quarantined-addresses-for-a-delivery}
+### Identificeer quarantined adressen voor een levering {#identifying-quarantined-addresses-for-a-delivery}
 
 De gekwantificeerde adressen voor een specifieke levering zijn vermeld tijdens de leveringsvoorbereidingsfase, in de leveringslogboeken van het leveringsdashboard (zie [Leveringslogboeken en geschiedenis](delivery-dashboard.md#delivery-logs-and-history)).
 
-### In quarantaine geplaatste adressen voor het volledige platform identificeren {#identifying-quarantined-addresses-for-the-entire-platform}
+### Identificeer quarantined adressen voor het volledige platform {#identifying-quarantined-addresses-for-the-entire-platform}
 
 De beheerders kunnen van de adressen in quarantaine voor het volledige platform van een lijst maken **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
 
@@ -72,7 +68,7 @@ Voor elk adres is de volgende informatie beschikbaar:
 >Einde van jaar 1: (1*0,33)/(1+0,5)=22%.
 Einde van jaar 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
 
-### Het identificeren van quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
+### Identificeer quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
 De volgende rapporten verstrekken informatie over de adressen in quarantaine:
 
@@ -86,13 +82,13 @@ De volgende rapporten verstrekken informatie over de adressen in quarantaine:
 
 U kunt deze informatie opzoeken voor alle leveringen van het platform (**[!UICONTROL Home page > Reports]**) of voor een specifieke levering. U kunt ook aangepaste rapporten maken en de informatie selecteren die moet worden weergegeven.
 
-### Het identificeren van quarantined adressen voor een ontvanger {#identifying-quarantined-addresses-for-a-recipient}
+### Identificeer quarantined adressen voor een ontvanger {#identifying-quarantined-addresses-for-a-recipient}
 
 U kunt de status van het e-mailadres van elke ontvanger opzoeken. Selecteer hiertoe het ontvangende profiel en klik op de knop **[!UICONTROL Deliveries]** tab. Voor alle leveringen aan die ontvanger, kunt u te weten komen of het ontbroken adres, tijdens analyse in quarantined, enz. was. Voor elke map kunt u alleen de ontvangers weergeven van wie het e-mailadres in quarantaine staat. Om dit te doen, gebruik **[!UICONTROL Quarantined email address]** toepassingsfilter.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Het verwijderen van een quarantined adres {#removing-a-quarantined-address}
+### Een in quarantaine geplaatst adres verwijderen {#removing-a-quarantined-address}
 
 Indien nodig, kunt u een adres uit de quarantainelijst manueel verwijderen. Bovendien worden adressen die aan specifieke voorwaarden voldoen automatisch geschrapt uit de quarantainelijst door **[!UICONTROL Database cleanup]** workflow.
 
@@ -257,6 +253,7 @@ Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soort
 * Verbindingsprobleem aan het begin van de levering: fouttype **[!UICONTROL Undefined]**, reden van fout **[!UICONTROL Unreachable]**, wordt opnieuw geprobeerd.
 * Verbinding verloren tijdens een levering: soft error, error reason **[!UICONTROL Refused]**, wordt opnieuw geprobeerd.
 * Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, reden van fout **[!UICONTROL Refused]**, wordt het opnieuw proberen niet uitgevoerd.
+>
 Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
 **Voor Android V2**

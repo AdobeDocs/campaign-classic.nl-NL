@@ -2,11 +2,8 @@
 product: campaign
 title: Een targetingworkflow maken
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -35,4 +32,4 @@ U moet uw workflow maken in het dialoogvenster **[!UICONTROL Targeting and Workf
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-U kunt nu de bevolkingssteekproeven vormen. [Meer info](a-b-testing-uc-population-samples.md).
+U kunt nu de bevolkingssteekproeven vormen. [Meer informatie](a-b-testing-uc-population-samples.md).

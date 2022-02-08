@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Voorverwerkingsinstructies voor bijgehouden URL's
-description: Meer informatie over instructies voor voorbewerking die moeten worden gebruikt om de URL van een e-mailbericht te scripten, zodat deze nog steeds wordt bijgehouden.
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: Meer informatie over voorbewerkingsinstructies die moeten worden gebruikt om de URL van een e-mailbericht te scripten en deze nog steeds te laten bijhouden
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%

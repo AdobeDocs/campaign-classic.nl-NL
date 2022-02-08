@@ -2,14 +2,12 @@
 product: campaign
 title: Seedadressen
 description: Seedadressen
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +42,7 @@ Definitie van het uitgebreide schema van de lijst van ontvangers:
 
 Voer de volgende stappen uit:
 
-1. Een extensie maken van de **nms:zaadMember** schema. Raadpleeg voor meer informatie hierover [Een schema uitbreiden](../../configuration/using/extending-a-schema.md).
+1. Een extensie maken van de **nms:zaadMember** schema. Raadpleeg [deze sectie](../../configuration/using/extending-a-schema.md) voor meer informatie.
 1. Voeg in deze nieuwe extensie een nieuw element toe aan de basis van **[!UICONTROL seedMember]** met de volgende parameters:
 
    ```
@@ -82,7 +80,7 @@ Voer de volgende stappen uit:
    >    * In de **nms:zaadMember** extensie, moet het veld dat het e-mailadres bevat **name=&quot;email&quot;** als een kenmerk. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk worden gedeclareerd onder het **`<element name="custom_cus_person" />`** element.
 
 
-1. De **[!UICONTROL seedMember]** formulier dienovereenkomstig een nieuw tabblad &quot;Interne ontvanger&quot; definiëren in het dialoogvenster **[!UICONTROL Seed addresses]** venster. Raadpleeg voor meer informatie hierover [Formulierstructuur](../../configuration/using/form-structure.md).
+1. De **[!UICONTROL seedMember]** formulier dienovereenkomstig een nieuw tabblad &quot;Interne ontvanger&quot; definiëren in het dialoogvenster **[!UICONTROL Seed addresses]** venster. Raadpleeg [deze pagina](../../configuration/using/form-structure.md) voor meer informatie.
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

@@ -2,14 +2,12 @@
 product: campaign
 title: Bedrijfsgerichte API’s
 description: Bedrijfsgerichte API’s
-audience: configuration
-content-type: reference
-topic-tags: api
+feature: API
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,7 +19,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 * Leveringen:
 
-   * Een leveringsactie maken. Raadpleeg voor meer informatie [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
+   * Een leveringsactie maken. Raadpleeg [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
    * het verzenden van een campagne (starten, pauzeren, stoppen, verzenden van bewijzen);
    * leveringslogboeken herstellen.
 
@@ -40,7 +38,7 @@ In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Un
 
 >[!IMPORTANT]
 >
->[JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) bevat aanvullende informatie over SOAP-aanroepen en het gebruik van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methoden en functies die in de toepassing worden gebruikt.
+>[JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) bevat aanvullende informatie over SOAP-aanroepen en het gebruik van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methoden en functies die in de toepassing worden gebruikt.
 
 ## Abonneren (nms:abonnement) {#subscribe--nms-subscription-}
 

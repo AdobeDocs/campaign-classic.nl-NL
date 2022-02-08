@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: E-mails verzenden naar Japanse mobiele telefoons met Adobe Campaign Classic
-description: Leer hoe u e-mailberichten configureert, ontwerpt en verzendt die op een Japanse mobiele telefoon worden gelezen.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Leer hoe u e-mailberichten configureert, ontwerpt en verzendt die op een Japanse mobiele telefoon worden gelezen
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -50,9 +47,9 @@ Daarom moet u:
 >* Raadpleeg voor Softbank [deze pagina](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
 
-## E-mailinhoud testen {#testing-the-email-content}
+## De e-mailinhoud testen {#testing-the-email-content}
 
-### Een voorbeeld van het bericht bekijken {#previewing-the-message}
+### Een voorvertoning van het bericht weergeven {#previewing-the-message}
 
 Met Adobe Campaign kunt u controleren of de berichtindeling is aangepast voor verzending naar een Japanse mobiele telefoon.
 
@@ -76,7 +73,7 @@ Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij 
 
 Met deze typologieregel kunt u ervoor zorgen dat de levering voldoet aan de [indelingsbeperkingen](#limitations-and-recommendations) door de Japanse operatoren worden gedefinieerd, met name ten opzichte van de totale grootte van de e-mail, de grootte van de HTML- en tekstsecties, het aantal afbeeldingen in de berichten en de tags in de inhoud van de HTML.
 
-### Proeven verzenden {#sending-proofs}
+### Verzend proeven {#sending-proofs}
 
 U kunt proefdrukken verzenden om de levering te testen. Als u de proefdruk verzendt en vervangende adressen gebruikt, voert u adressen in die overeenkomen met de e-mailindeling van het gebruikte profiel.
 
@@ -101,7 +98,7 @@ Om dit te doen, gebruik **[!UICONTROL Split]** activiteit in uw werkschema en be
 
 ![](assets/deco-mail_07.png)
 
-### Een levering ontwerpen voor alle indelingen {#designing-a-delivery-for-all-formats}
+### Een levering voor alle indelingen ontwerpen {#designing-a-delivery-for-all-formats}
 
 Als Adobe Campaign de indelingen dynamisch beheert op basis van het domein (profielen met e-mailindelingen die zijn gedefinieerd als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]** ), kunt u dezelfde levering naar al uw ontvangers verzenden.
 

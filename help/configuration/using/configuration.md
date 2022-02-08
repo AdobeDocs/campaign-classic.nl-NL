@@ -2,14 +2,11 @@
 product: campaign
 title: Configuratie
 description: Configuratie
-audience: configuration
-content-type: reference
-topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +92,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt door de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Raadpleeg voor meer informatie over de SOAP API [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Raadpleeg voor meer informatie over de SOAP API [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** tag. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 

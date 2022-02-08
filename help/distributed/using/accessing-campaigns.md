@@ -2,18 +2,16 @@
 product: campaign
 title: Toegang tot campagnes
 description: Toegang tot campagnes
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
 
 ---
 
-# Toegang tot campagnes{#accessing-campaigns}
+# Campagnes openen{#accessing-campaigns}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +19,7 @@ Zodra een campagne is bevolen, is de orde goedgekeurd, en de beschikbaarheidsdat
 
 Afhankelijk van het type campagne en de geselecteerde opties wordt de campagne lokaal of centraal uitgevoerd.
 
-## De campagne openen {#accessing-the-campaign}
+## Toegang tot de campagne {#accessing-the-campaign}
 
 Zodra de orde wordt goedgekeurd en de beschikbaarheidsdatum bereikt, wordt de campagne gecreeerd plaatselijk en kan worden gebruikt. Lokale exploitanten worden op de hoogte gebracht van de beschikbaarheid ervan.
 

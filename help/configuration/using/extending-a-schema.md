@@ -2,14 +2,12 @@
 product: campaign
 title: Een schema uitbreiden
 description: Leer hoe u een schema kunt uitbreiden
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
@@ -63,5 +61,5 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 
 >[!IMPORTANT]
 >
->Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.\
->Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
+>Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg [deze pagina](../../configuration/using/regenerating-schemas.md) voor meer informatie.\
+>Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg [deze pagina](../../configuration/using/updating-the-database-structure.md) voor meer informatie.

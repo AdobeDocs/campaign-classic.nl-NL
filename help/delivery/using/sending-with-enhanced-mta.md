@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Verzenden met de verbeterde MTA in Adobe Campaign Classic
-description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%

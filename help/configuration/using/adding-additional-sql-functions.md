@@ -1,23 +1,18 @@
 ---
 product: campaign
 title: Extra SQL-functies toevoegen
-description: Extra SQL-functies toevoegen
-audience: configuration
-content-type: reference
-topic-tags: api
+description: Meer informatie over het definiëren van extra SQL-functies
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 1%
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
-# Extra SQL-functies toevoegen{#adding-additional-sql-functions}
+# Aanvullende SQL-functies definiëren{#adding-additional-sql-functions}
 
 ![](../../assets/v7-only.svg)
-
-## Inleiding {#introduction}
 
 Met Adobe Campaign kan de gebruiker definiëren **hun eigen functies** die tot SQL functies kunnen toegang hebben, zowel die aangeboden door het gegevensbestand als die die niet reeds beschikbaar in de console zijn. Dit is nuttig voor geaggregeerde functies (gemiddelde, maximum, som) bijvoorbeeld, die alleen op de server kunnen worden berekend of wanneer de database een eenvoudigere manier biedt om bepaalde functies te implementeren, in plaats van &quot;handmatig&quot; de expressie in de console te schrijven (bijvoorbeeld datumbeheer).
 

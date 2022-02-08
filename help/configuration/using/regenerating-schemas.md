@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Schema’s opnieuw genereren
-description: Schema’s opnieuw genereren
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+title: Regeneratieschema's
+description: Leer hoe u campagnereschema's opnieuw kunt genereren
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '132'
+ht-degree: 2%
 
 ---
 
-# Schema’s opnieuw genereren{#regenerating-schemas}
+# Regeneratieschema&#39;s{#regenerating-schemas}
 
 ![](../../assets/v7-only.svg)
 

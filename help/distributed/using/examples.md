@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Voorbeelden
-description: Voorbeelden
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Distributed Marketing samples
+description: Distributed Marketing samples
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
 
-# Voorbeelden{#examples}
+# Distributed Marketing samples{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
@@ -23,7 +21,7 @@ De **Op formulier** type-webinterface gebruikt een **webtoepassing**. Afhankelij
 
 >[!NOTE]
 >
->API&#39;s worden beschreven in een speciaal document, waartoe de toegang afhankelijk is van uw contract. Zie [API](../../configuration/using/about-web-services.md).
+>API&#39;s worden beschreven in een speciaal document. [Meer informatie](../../configuration/using/about-web-services.md).
 >
 >De toepassing van het Web die in dit voorbeeld wordt gebruikt is geen app van het Web die uit-van-de-doos met Adobe Campaign komt. Als u een formulier in een campagne wilt gebruiken, moet u de toegewijde webtoepassing maken.
 

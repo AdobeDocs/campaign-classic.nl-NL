@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Een levering maken vanaf een sjabloon
-description: Een levering maken vanaf een sjabloon
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Een levering maken met een sjabloon
+description: Leer hoe u een levering maakt op basis van een sjabloon
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 7%
 
 ---
 
-# Een levering maken vanaf een sjabloon{#creating-a-delivery-from-a-template}
+# Een levering maken met een sjabloon{#creating-a-delivery-from-a-template}
 
 ![](../../assets/common.svg)
 

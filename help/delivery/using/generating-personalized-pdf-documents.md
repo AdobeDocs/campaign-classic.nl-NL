@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Gepersonaliseerde PDF-documenten genereren
-description: Gepersonaliseerde PDF-documenten genereren
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Leer hoe u persoonlijke PDF-documenten kunt genereren
+feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +51,7 @@ Het invoegen van externe afbeeldingen is handig als u bijvoorbeeld een document 
 
 Om dit te doen, moet u een verpersoonlijkingsblok vormen, dan een vraag aan het verpersoonlijkingsblok in de gehechtheid omvatten.
 
-**Voorbeeld: invoering van een gepersonaliseerd logo afhankelijk van het land van de ontvanger**
+**Voorbeeld: een gepersonaliseerd logo invoegen , afhankelijk van het land van de ontvanger**
 
 **Stap 1: de bijlage maken:**
 

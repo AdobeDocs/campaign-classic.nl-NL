@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: De verzendingssjablonen maken
-description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -32,4 +29,4 @@ We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-U kunt de leveringen nu configureren in de workflow. [Meer info](a-b-testing-uc-configuring-deliveries.md).
+U kunt de leveringen nu configureren in de workflow. [Meer informatie](a-b-testing-uc-configuring-deliveries.md).

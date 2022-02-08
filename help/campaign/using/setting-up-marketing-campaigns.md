@@ -2,11 +2,9 @@
 product: campaign
 title: Marketingscampagnes maken
 description: Meer informatie over het maken en uitvoeren van marketingcampagnes
-audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
+feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
@@ -23,17 +21,17 @@ De campagnes omvatten acties (leveringen) en processen (het invoeren of het hale
 
 Een marketingcampagne maken:
 
-1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer info](#creating-a-campaign).
+1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer informatie](#creating-a-campaign).
 
-1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-1. Leveringen goedkeuren. [Meer info](../../campaign/using/marketing-campaign-approval.md).
+1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
 
-1. Verzendingen controleren. [Meer info](../../campaign/using/marketing-campaign-monitoring.md).
+1. Verzendingen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Plan campagnes en bijbehorende kosten. [Meer info](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen te controleren en, indien nodig, de bijbehorende documenten te beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
 

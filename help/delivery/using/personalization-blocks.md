@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Personalisatieblokken
-description: Personalisatieblokken
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Leer hoe u aanpassingsblokken kunt gebruiken
+feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---
@@ -17,11 +15,11 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Aanmaakblokken invoegen](#inserting-personalization-blocks).
+De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Verpersoonlijkingsblokken invoegen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#personalization-blocks-video)
 
-Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
+Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign-verkenner. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
 U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Raadpleeg voor meer informatie hierover [Aangepaste aanpassingsblokken definiëren](#defining-custom-personalization-blocks).
 
@@ -29,7 +27,7 @@ U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen 
 >
 >De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . Raadpleeg [deze pagina](../../web/using/editing-content.md#inserting-a-personalization-block) voor meer informatie.
 
-## Aanmaakblokken invoegen {#inserting-personalization-blocks}
+## Verpersoonlijkingsblokken invoegen {#inserting-personalization-blocks}
 
 Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een bericht:
 

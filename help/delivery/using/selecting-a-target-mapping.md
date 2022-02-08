@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Een doeltoewijzing selecteren
-description: Een doeltoewijzing selecteren
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Een targettoewijzing selecteren
+description: Leer hoe u toewijzingen als doel instelt
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# Een doeltoewijzing selecteren{#selecting-a-target-mapping}
+# Een targettoewijzing selecteren{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +32,4 @@ Deze toewijzingen zijn als volgt:
 
 >[!NOTE]
 >
->U kunt ook nieuwe doeltoewijzingen maken. Deze bewerking is gereserveerd voor professionele gebruikers. Raadpleeg voor meer informatie de [Configuratiegids](../../configuration/using/target-mapping.md).
+>U kunt ook nieuwe doeltoewijzingen maken. Deze bewerking is gereserveerd voor professionele gebruikers. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.

@@ -2,11 +2,9 @@
 product: campaign
 title: Leveringsfouten begrijpen
 description: Leer hoe u fouten met leveringen begrijpt
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -192,7 +190,7 @@ Als een bericht mislukt als gevolg van een **Zacht** of **Genegeerd** De fout di
 
 Voor installaties op locatie en gehoste/hybride installaties die de oude Campagne MTA gebruiken, om de duur van een levering te wijzigen, ga naar de geavanceerde parameters van het leveringsmalplaatje en specificeer de gewenste duur op het overeenkomstige gebied. Zie [Geldigheidsduur definiëren](steps-sending-the-delivery.md#defining-validity-period).
 
-De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje (zie [Opnieuw proberen configureren](steps-sending-the-delivery.md#configuring-retries)).
+De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje. Zie [Opnieuw proberen configureren](steps-sending-the-delivery.md#configuring-retries).
 
 ## Synchrone en asynchrone fouten {#synchronous-and-asynchronous-errors}
 

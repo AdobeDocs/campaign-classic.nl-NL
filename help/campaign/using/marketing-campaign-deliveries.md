@@ -2,9 +2,9 @@
 product: campaign
 title: Leveringen voor marketingcampagnes
 description: Meer informatie over marketingcampagneleveringen
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -126,7 +126,7 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [Marketing-bronnen beheren](../../mrm/using/managing-marketing-resources.md).
+>Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [Marketing-resources beheren](../../mrm/using/managing-marketing-resources.md).
 
 ### Documenten toevoegen {#adding-documents}
 
@@ -155,7 +155,7 @@ In het dashboard worden de documenten die bij de campagne horen gegroepeerd in d
 
 U kunt ze ook vanuit deze weergave bewerken en wijzigen.
 
-### Middelen koppelen en structureren via een leveringsoverzicht {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### Bronnen koppelen en structureren via een leveringsoverzicht {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >

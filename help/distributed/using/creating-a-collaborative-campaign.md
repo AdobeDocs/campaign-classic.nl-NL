@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Een collaboratieve campagne maken
-description: Een collaboratieve campagne maken
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+description: Leer hoe u een samenwerkingscampagne kunt maken
+feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '915'
 ht-degree: 3%
 
 ---

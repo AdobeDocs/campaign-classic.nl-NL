@@ -1,32 +1,29 @@
 ---
 product: campaign
-title: '"Gebruiksscenario: contentmanagement maken"'
-description: '"Gebruiksscenario: contentmanagement maken"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: '"Hoofdlettergebruik: inhoudsbeheer maken"'
+description: '"Hoofdlettergebruik: inhoudsbeheer maken"'
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Gebruiksscenario: contentmanagement maken{#use-case-creating-content-management}
+# Hoofdlettergebruik: inhoudsbeheer maken{#use-case-creating-content-management}
 
 ![](../../assets/common.svg)
 
 Voor het maken van contentbeheer in Adobe Campaign zijn de volgende stappen nodig:
 
-* [Stap 1 - De te produceren inhoud analyseren](#step-1---analyzing-the-content-to-be-produced),
-* [Stap 2 - het creëren van het gegevensschema](#step-2---creating-the-data-schema),
-* [Stap 3 - Het invoerformulier maken](#step-3---creating-the-input-form),
-* [Stap 4 - Het creëren van het bouwmalplaatje](#step-4---creating-the-construction-template),
-* [Stap 5 - Het creëren van het publicatiemalplaatje](#step-5---creating-the-publication-template),
+* [Stap 1 - Analyseer de inhoud die moet worden geproduceerd](#step-1---analyzing-the-content-to-be-produced),
+* [Stap 2 - creeer het gegevensschema](#step-2---creating-the-data-schema),
+* [Stap 3 - Maak het invoerformulier](#step-3---creating-the-input-form),
+* [Stap 4 - Een constructiesjabloon maken](#step-4---creating-the-construction-template),
+* [Stap 5 - De publicatiesjabloon maken](#step-5---creating-the-publication-template),
 * [Stap 6 - Inhoud maken](#step-6---creating-contents).
 
-## Stap 1 - De te produceren inhoud analyseren {#step-1---analyzing-the-content-to-be-produced}
+## Stap 1 - Analyseer de inhoud die moet worden geproduceerd {#step-1---analyzing-the-content-to-be-produced}
 
 Voordat u begint, moet u een nauwkeurige analyse uitvoeren van de inhoud die moet worden geproduceerd: identificeert de elementen die moeten worden weergegeven, bestudeert de beperkingen die eraan zijn gekoppeld, definieert een type voor elk element, enz. U moet ook onderscheid maken tussen statische elementen en variabele elementen.
 
@@ -52,7 +49,7 @@ De verschillende elementen van deze nieuwsbrief worden samengesteld op basis van
 
 Deze elementen worden gemaakt via een speciaal schema dat de volgende elementen voor elke inhoud opgeeft: naam, etiket, type, grootte en alle andere informatie die relevant is voor de verwerking ervan in Adobe Campaign.
 
-## Stap 2 - het creëren van het gegevensschema {#step-2---creating-the-data-schema}
+## Stap 2 - creeer het gegevensschema {#step-2---creating-the-data-schema}
 
 Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt de XML-structuur van de gegevens in deze inhoud beschreven.
 
@@ -162,7 +159,7 @@ Het schema bevat de volgende informatie:
 
 1. Klikken **[!UICONTROL Save]** om het gegevensschema te maken.
 
-## Stap 3 - Het invoerformulier maken {#step-3---creating-the-input-form}
+## Stap 3 - Maak het invoerformulier {#step-3---creating-the-input-form}
 
 Met het invoerformulier kunt u een inhoudsinstantie bewerken via een invoerinterface vanuit de Adobe Campaign-clientconsole.
 
@@ -214,7 +211,7 @@ Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
 
 1. Klikken **[!UICONTROL Save]** om het invoerformulier te maken.
 
-## Stap 4 - Het creëren van het bouwmalplaatje {#step-4---creating-the-construction-template}
+## Stap 4 - Een constructiesjabloon maken {#step-4---creating-the-construction-template}
 
 Met de XSLT-taal kunt u een XML-document transformeren in een ander uitvoerdocument. Deze transformatie wordt beschreven in XML in een document genoemd een stijlblad.
 
@@ -349,7 +346,7 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Stap 5 - Het creëren van het publicatiemalplaatje {#step-5---creating-the-publication-template}
+## Stap 5 - De publicatiesjabloon maken {#step-5---creating-the-publication-template}
 
 De volgende stap bestaat uit het maken van een publicatiesjabloon voor inhoud om het schema, het formulier en de constructiesjabloon voor inhoud te koppelen. Deze publicatiesjabloon kan verschillende uitvoerindelingen hebben.
 

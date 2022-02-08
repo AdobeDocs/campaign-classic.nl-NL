@@ -2,24 +2,22 @@
 product: campaign
 title: Leverbaarheid in Adobe Campaign Classic bewaken
 description: Meer informatie over gereedschappen en richtlijnen voor het controleren van de prestaties in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 2%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
-# Leverbaarheid controleren{#monitoring-deliverability}
+# Controleer uw prestaties{#monitoring-deliverability}
 
 ![](../../assets/common.svg)
 
 Hieronder vindt u meer informatie over de verschillende bewakingstools van Adobe Campaign en enkele aanvullende richtlijnen voor het benutten van de functies die Adobe Campaign biedt om de prestaties van uw platform te controleren.
 
-## Leverbaarheidscontrole {#configuration}
+## Informatie over de controle op de prestaties {#about-deliverability-monitoring}
 
 Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakket moet zijn geïnstalleerd om het te kunnen gebruiken. Start vervolgens de server opnieuw om rekening te houden met het pakket.
 * Voor gehoste en hybride clients **Leverbaarheidscontrole** wordt op uw exemplaar gevormd door de technische steun en de consultants van Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
@@ -59,7 +57,3 @@ Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaar
 * Wanneer u [golven](steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer of het aantal fouten en het aantal nieuwe fouten [quarantaine](understanding-quarantine-management.md) consistent zijn met andere leveringen.
 * Raadpleeg de [leveringslogs](delivery-dashboard.md#delivery-logs-and-history) in detail om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
-
-<!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
-
-Each delivery will generate a broadcast statistics report when you open a delivery in the “Deliveries List”, which includes some reputation metrics that may impact your deliverability.-->

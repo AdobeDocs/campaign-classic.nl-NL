@@ -2,11 +2,8 @@
 product: campaign
 title: Publicatiesjablonen
 description: Publicatiesjablonen
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -87,7 +84,7 @@ De volgende publicatieopties zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Voor meer informatie over het genereren van inhoud raadpleegt u [Inhoudsinstanties maken](using-a-content-template.md#creating-a-content-instance).
+   >Voor meer informatie over het genereren van inhoud raadpleegt u [Een inhoudsinstantie maken](using-a-content-template.md#creating-a-content-instance).
 
 ### Levering {#delivery}
 
@@ -97,7 +94,7 @@ Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de
 
 >[!NOTE]
 >
->Voor een voorbeeld van het maken van leveringen op basis van inhoud raadpleegt u [Inhoudsinstantie leveren](using-a-content-template.md#delivering-a-content-instance).
+>Voor een voorbeeld van het maken van leveringen op basis van inhoud raadpleegt u [Een inhoudsinstantie leveren](using-a-content-template.md#delivering-a-content-instance).
 
 ### aggregator {#aggregator}
 

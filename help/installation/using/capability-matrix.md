@@ -2,11 +2,8 @@
 product: campaign
 title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
-audience: installation
-content-type: reference
-topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 20%
@@ -52,7 +49,7 @@ Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie t
 **Zie ook**
 
 * [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
-* [Release-opmerkingen](../../rn/using/latest-release.md)
+* [Aanvullende informatie](../../rn/using/latest-release.md)
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)

@@ -2,14 +2,11 @@
 product: campaign
 title: De levering maken en identificeren
 description: De levering maken en identificeren
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 13%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +31,7 @@ Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar:
 
 U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Voor meer informatie over sjablonen raadpleegt u [deze sectie](about-templates.md).
 
-## Identificatie van de levering {#identifying-the-delivery}
+## Identificeer de levering {#identifying-the-delivery}
 
 U moet parameters voltooien om de levering te identificeren. Dit doet u als volgt:
 
@@ -53,5 +50,5 @@ De leveringsinhoud is klaar om te worden gevormd. De definitie van de inhoud van
 
 * [De e-mailcontent opgeven](defining-the-email-content.md)
 * [Definieer de content van de sms](sms-create.md#defining-the-sms-content)
-* [Definieer de content van de direct mail](defining-the-direct-mail-content.md)
+* [Content van direct mail definiëren](defining-the-direct-mail-content.md)
 * [Pushmeldingen](about-mobile-app-channel.md)

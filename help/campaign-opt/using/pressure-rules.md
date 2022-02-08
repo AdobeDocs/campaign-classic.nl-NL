@@ -2,11 +2,9 @@
 product: campaign
 title: Drukregels
 description: Drukregels
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -95,7 +93,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
 1. De **[!UICONTROL Typologies]** laat u de campagnemetypologieën bekijken die deze regel toepassen of de regel verbinden met één of meerdere bestaande typologieën. Raadpleeg voor meer informatie hierover [Typologieën toepassen](about-campaign-typologies.md#applying-typologies).
 
-## Definitie van drempels en gewichten {#defining-thresholds-and-weights}
+## Drempels en gewichten definiëren {#defining-thresholds-and-weights}
 
 ### Maximum aantal berichten {#maximum-number-of-messages}
 
@@ -141,7 +139,7 @@ In het volgende voorbeeld willen we het gewicht van nieuwsbrieven op muziek kopp
 
 1. Pas deze regel op berichten met het volgende onderwerp toe: nieuwsbrieven, speciale aanbiedingen, enz. Het gewicht van deze leveringen, en dus het prioriteitsniveau ervan, zal afhangen van de geschiktheidsscore van elke ontvanger.
 
-## Vaststelling van de periode {#setting-the-period}
+## De periode instellen {#setting-the-period}
 
 De drukregels worden gedefinieerd in **n**-dag rolperiodes.
 
@@ -219,7 +217,7 @@ Als dit aantal de drempel overschrijdt, worden de arbitrageregels toegepast die 
 
 ## Gevallen gebruiken voor drukregels {#use-cases-on-pressure-rules}
 
-### Aanpassing van de drempel op basis van criterium {#adapting-the-threshold-based-on-criterion}
+### Aanpassing van de drempel op basis van het criterium {#adapting-the-threshold-based-on-criterion}
 
 Wij willen een typologieregel tot stand brengen om de levering van meer dan 4 berichten per week aan klanten en 2 berichten per week aan vooruitzichten te verhinderen.
 
@@ -335,7 +333,7 @@ Eerst, vorm de drukregel.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum zijn gepland. Raadpleeg voor meer informatie hierover [Vaststelling van de periode](#setting-the-period).
+   Bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum zijn gepland. Raadpleeg voor meer informatie hierover [De periode instellen](#setting-the-period).
 
    >[!AVAILABILITY]
    >In Campagne v8 kan geen rekening worden gehouden met geplande leveringen.

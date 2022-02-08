@@ -2,11 +2,8 @@
 product: campaign
 title: Leveringen configureren
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -52,4 +49,4 @@ Eenmaal [populaties worden gecreëerd](a-b-testing-uc-population-samples.md), ku
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-U kunt nu het script maken. [Meer info](a-b-testing-uc-script.md).
+U kunt nu het script maken. [Meer informatie](a-b-testing-uc-script.md).

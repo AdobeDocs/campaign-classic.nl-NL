@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Filterregels
-description: Filterregels
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Leer hoe te om het filtreren regels te gebruiken
+feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '507'
 ht-degree: 2%
 
 ---
@@ -21,7 +19,7 @@ Met filterregels kunt u de berichten definiëren die u wilt uitsluiten op basis 
 
 Filterregels kunnen worden gekoppeld aan andere soorten regels (controle, druk, enz.) in typologieën, of gegroepeerd in een specifiek **Filteren** typologie. Raadpleeg voor meer informatie hierover [Filtertypologie maken en gebruiken](#creating-and-using-a-filtering-typology).
 
-## Filterregels maken {#creating-a-filtering-rule}
+## Een filterregel maken {#creating-a-filtering-rule}
 
 Bijvoorbeeld, kunt u uw nieuwsbrief abonnees filtreren om mededelingen te verhinderen worden verzonden naar ontvangers die onderage zijn.
 

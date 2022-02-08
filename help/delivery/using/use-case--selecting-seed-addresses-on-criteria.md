@@ -2,18 +2,16 @@
 product: campaign
 title: '"Gebruiksscenario: seed-adressen selecteren op criteria"'
 description: '"Gebruiksscenario: seed-adressen selecteren op criteria"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '837'
 ht-degree: 3%
 
 ---
 
-# Gebruiksscenario: seed-adressen selecteren op criteria{#use-case-selecting-seed-addresses-on-criteria}
+# Gebruiksscenario: seedadressen selecteren op criteria{#use-case-selecting-seed-addresses-on-criteria}
 
 ![](../../assets/common.svg)
 
@@ -44,7 +42,7 @@ Als u een gemeenschappelijke waarde wilt maken, zoals in ons voorbeeld (afdeling
 
 ### Het gegevensschema uitbreiden {#extending-the-data-schema}
 
-Raadpleeg voor meer informatie over schema-extensies de [Configuratiegids](../../configuration/using/data-schemas.md).
+Voor meer informatie over schema-extensies raadpleegt u [deze sectie](../../configuration/using/data-schemas.md).
 
 1. In de **[!UICONTROL Administration > Configuration > Data schemas]** knoop, klik **[!UICONTROL New]** pictogram.
 1. In de **[!UICONTROL Creation of a data schema]** venster, selecteert u de **[!UICONTROL Extension of a schema]** en klik op **[!UICONTROL Next]**.

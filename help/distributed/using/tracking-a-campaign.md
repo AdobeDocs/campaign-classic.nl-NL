@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Een campagne opvolgen
-description: Een campagne opvolgen
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Een campagne bijhouden
+description: Leer hoe u een campagne kunt bijhouden met campagne Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# Een campagne opvolgen{#tracking-a-campaign}
+# Een campagne bijhouden{#tracking-a-campaign}
 
 ![](../../assets/v7-only.svg)
 

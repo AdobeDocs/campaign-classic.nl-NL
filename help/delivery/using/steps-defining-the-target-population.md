@@ -1,32 +1,28 @@
 ---
 product: campaign
-title: De doelpopulatie definiëren
-description: De doelpopulatie definiëren
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Doelpopulatie definiëren
+description: Leer hoe u de doelpopulatie definieert
+feature: Audiences
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 3%
+source-wordcount: '1598'
+ht-degree: 2%
 
 ---
 
-# De doelpopulatie definiëren {#defining-the-target-population}
+# Doelpopulatie definiëren {#defining-the-target-population}
 
 ![](../../assets/common.svg)
-
-## Over doelpopulaties {#about-target-populations}
 
 Voor elke levering kunt u verschillende typen doelpopulaties definiëren:
 
 * **Hoofdpubliek**: profielen die berichten ontvangen. [Meer informatie](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Proef**: ontvangers van bewijsberichten, betrokken bij de bevestigingscyclus. [Meer informatie](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Zaadadressen**: ontvangers die buiten het leveringsdoel vallen, maar de levering zullen ontvangen (alleen in het kader van een marketingcampagne). [Meer informatie](about-seed-addresses.md)
-* **Controlegroepen**: bevolking die de levering niet zal ontvangen, gebruikt om het gedrag en de gevolgen van de campagne te volgen (alleen in het kader van een marketingcampagne). [Meer info](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Controlegroepen**: bevolking die de levering niet zal ontvangen, gebruikt om het gedrag en de gevolgen van de campagne te volgen (alleen in het kader van een marketingcampagne). [Meer informatie](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
-## De belangrijkste ontvangers van de levering selecteren {#selecting-the-main-target}
+## Selecteer de belangrijkste ontvangers van de levering {#selecting-the-main-target}
 
 In de meeste gevallen wordt het hoofddoel opgehaald uit de Adobe Campaign-database (standaardmodus). Ontvangers kunnen echter ook in een extern bestand worden opgeslagen. Meer informatie in [deze sectie](steps-defining-the-target-population.md#selecting-external-recipients).
 
@@ -39,7 +35,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
 1. Selecteer de doeltoewijzing in het dialoogvenster **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard Adobe Campaign-doeltoewijzing is **[!UICONTROL Recipients]**, gebaseerd op **nms:ontvanger** schema.
 
-   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Voor meer informatie over doeltoewijzingen raadpleegt u [Een doeltoewijzing selecteren](selecting-a-target-mapping.md).
+   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Voor meer informatie over doeltoewijzingen raadpleegt u [Doeltoewijzing selecteren](selecting-a-target-mapping.md).
 
 1. Klik op de knop **[!UICONTROL Add]** om beperkingsfilters te definiëren.
 
@@ -98,7 +94,7 @@ Dit doet u als volgt:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Ontvangers worden standaard in de database geïmporteerd. U moet de **[!UICONTROL Target mapping]**. Voor meer informatie over doeltoewijzingen raadpleegt u [Een doeltoewijzing selecteren](selecting-a-target-mapping.md)
+1. Ontvangers worden standaard in de database geïmporteerd. U moet de **[!UICONTROL Target mapping]**. Voor meer informatie over doeltoewijzingen raadpleegt u [Doeltoewijzing selecteren](selecting-a-target-mapping.md)
 
    U kunt ook **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -112,7 +108,7 @@ Dit doet u als volgt:
 >
 >Neem bij het definiëren van de inhoud van het bericht voor verzending via e-mail niet de koppeling naar de spiegelpagina op; het kan niet op deze leveringswijze worden geproduceerd.
 
-### Uitsluitingsinstellingen instellen {#customizing-exclusion-settings}
+### Uitsluitingsinstellingen definiëren {#define-exclusion-settings}
 
 Adresfouten en kwaliteitsbeoordelingen worden geleverd door de serviceprovider (IAP). Deze informatie wordt automatisch bijgewerkt in het ontvangende profiel na leveringsacties en met dossiers die door dienstverleners zijn teruggekeerd. Deze kan alleen-lezen in het profiel worden weergegeven.
 
@@ -152,11 +148,11 @@ De volgende opties zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Voor meer informatie over quarantainebeheer raadpleegt u [Werken met quarantainebeheer](understanding-quarantine-management.md).
+   >Voor meer informatie over quarantainebeheer raadpleegt u [quarantainebeheer begrijpen](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** naar een bepaald aantal berichten. Met deze optie kunt u het maximum aantal berichten invoeren dat moet worden verzonden. Als de inhoud van het doel het aangegeven aantal berichten overschrijdt, wordt een willekeurige selectie toegepast op het doel.
 
-### De omvang van de doelpopulatie verminderen {#reducing-the-size-of-the-target-population}
+### De doelpopulatie verkleinen {#reducing-the-size-of-the-target-population}
 
 U kunt de grootte van de doelpopulatie verminderen. Hiervoor geeft u het aantal ontvangers op dat u wilt exporteren in het dialoogvenster **[!UICONTROL Requested quantity]** veld.
 
@@ -183,13 +179,13 @@ Voer de onderstaande stappen uit om het doel van de proefdrukken te selecteren:
 
 Als u het proefdrukdoel selecteert, wordt **[!UICONTROL Definition of a specific proof target]** Met deze optie kunt u de ontvangers van de proefdrukken selecteren uit de profielen in de database.
 
-Selecteer deze optie om ontvangers te kiezen met de **[!UICONTROL Add]** , zoals bij het definiëren van het hoofddoel. Zie [Het hoofddoel selecteren](steps-defining-the-target-population.md#selecting-the-main-target).
+Selecteer deze optie om ontvangers te kiezen met de **[!UICONTROL Add]** , zoals bij het definiëren van het hoofddoel. Zie [Selecteer het hoofddoel](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
 Voor meer informatie over het verzenden van bewijzen raadpleegt u [deze sectie](steps-validating-the-delivery.md#sending-a-proof).
 
-### Het vervangen van adressen gebruiken in proef {#using-address-substitution-in-proof}
+### Adres vervangen in proefdruk gebruiken {#using-address-substitution-in-proof}
 
 In plaats van speciale ontvangers in de database te selecteren, kunt u de opdracht **[!UICONTROL Substitution of the address]** optie.
 
@@ -213,7 +209,7 @@ De configuratie wordt uitgevoerd als volgt:
 
    U kunt zo veel vervangende adressen definiëren als nodig is.
 
-## zaadadressen gebruiken als proef {#using-seed-addresses-as-proof}
+## zaadadressen gebruiken als proefdruk {#using-seed-addresses-as-proof}
 
 U kunt **[!UICONTROL Seed addresses]** als doel van de proefdrukken: met deze optie kunt u een lijst met bestaande zaadadressen gebruiken of importeren.
 
@@ -227,9 +223,9 @@ U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadres
 
 Zie ook:
 
-* [Het proefdrukdoel selecteren](#selecting-the-proof-target)
+* [Proofingdoel selecteren](#selecting-the-proof-target)
 * [Seedadressen](about-seed-addresses.md)
-* [Gebruiksscenario: seed-adressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md)
+* [Gebruiksscenario: seedadressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Video over zelfstudie {#seeds-and-proofs-video}
 
