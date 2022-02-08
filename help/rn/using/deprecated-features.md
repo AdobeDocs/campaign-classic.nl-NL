@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
   <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
-  <p><em>Streefdatum voor verwijdering: 20 oktober 2021. Gehoste omgevingen profiteren van een verlenging tot 25 mei 2022. </em></p>
+  <p><em>Streefdatum voor verwijdering: 20 oktober 2021. Gehoste omgevingen profiteren van een verlenging tot 25 mei 2022. </em></p>
   </td>
   </tr>
  </tbody> 
