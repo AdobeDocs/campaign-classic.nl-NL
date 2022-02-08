@@ -3,10 +3,8 @@ product: campaign
 title: Marketing-campagnes goedkeuren
 description: Leer hoe u goedkeuringen van marketingcampagnes beheert
 audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -19,14 +17,14 @@ ht-degree: 0%
 
 Elke leveringsstap kan worden goedgekeurd om volledige controle en controle op de verschillende processen van de campagne te waarborgen: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs.
 
-De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleren of de revisoren beschikken over de **juiste machtigingen** voor goedkeuring, en dat hun veiligheidszone correct wordt bepaald. [Meer info](#selecting-reviewers).
+De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleren of de revisoren beschikken over de **juiste machtigingen** voor goedkeuring, en dat hun veiligheidszone correct wordt bepaald. [Meer informatie](#selecting-reviewers).
 
 De goedkeuringsprocedure wordt weergegeven in [deze sectie](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
 >Alleen de eigenaar van de levering kan een levering starten. Als u wilt dat een andere operator (of groep met operatoren) een levering kan starten, moet u deze als controleurs toevoegen in het dialoogvenster **[!UICONTROL Delivery start:]** veld.\
->[Meer info](#selecting-reviewers).
+>[Meer informatie](#selecting-reviewers).
 
 ## Werkwijze {#operating-principle-}
 
@@ -173,7 +171,7 @@ Voor directe postleveringen, kunnen de exploitanten van Adobe Campaign het extra
 
 Voor elke campagne kunt u het leveringsdoel goedkeuren, inhoud (zie [Inhoud goedkeuren](#approving-content)) en kosten. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen. Zie [Stappen om een levering goed te keuren](#approving-processes).
 
-Wanneer deze validatiefasen zijn voltooid, kan de levering worden gestart. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
+Wanneer deze validatiefasen zijn voltooid, kan de levering worden gestart. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
 ### Stappen om een levering goed te keuren {#approving-processes}
 
@@ -252,7 +250,6 @@ Als u een lijst met operatoren wilt selecteren, klikt u op de knop **[!UICONTROL
 >* Als een lijst met revisoren is gedefinieerd, wordt een taak goedgekeurd wanneer één revisor deze heeft geaccepteerd. De desbetreffende goedkeuringslink wordt dan niet meer in het dashboard aangeboden. Wanneer het verzenden van meldingen is ingeschakeld en een andere controleur op de goedkeuringskoppeling in het meldingsbericht klikt, wordt hem meegedeeld dat een andere operator de taak al heeft goedgekeurd.
 >* U kunt een goedkeuringsschema voor de campagne definiëren in de onderste sectie van het revisiebewerkingsvenster. Standaard hebben revisoren drie dagen vanaf de verzenddatum om een proces goed te keuren. Het is mogelijk om een herinnering te vormen die automatisch naar de betrokken exploitanten vóór de goedkeuringstermijn wordt verzonden.
 >* U kunt vanuit deze sectie herinneringen toevoegen.
-
 >
 
 

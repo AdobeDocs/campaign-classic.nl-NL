@@ -2,14 +2,12 @@
 product: campaign
 title: Marketingscampagnes
 description: Marketingscampagnes
-audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
+feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,4 +53,4 @@ Als u de status van een levering wilt controleren, bewerkt u deze en bekijkt u h
 
 U kunt de status van de leveringen opzoeken door op de knop **[!UICONTROL Deliveries]**, die toegankelijk is via de homepage van Adobe Campaign. Zie [Aflevering volgen](#delivery-tracking).
 
-Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld in de **[!UICONTROL Edit > Audit]** tabblad van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. [Meer info](#tracking-a-campaign).
+Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld in de **[!UICONTROL Edit > Audit]** tabblad van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. [Meer informatie](#tracking-a-campaign).

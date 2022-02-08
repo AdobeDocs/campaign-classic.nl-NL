@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: ht
-source-wordcount: '913'
-ht-degree: 100%
+source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
 
-![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
+![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe.
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -41,7 +41,7 @@ Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabie
 
 ## Aanbevelingen{#recommendations}
 
-Voor een stabiele configuratie adviseren we u dezelfde **stabiele build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
+Om een stabiele configuratie te verzekeren, adviseren wij dat u installeert **dezelfde build** op alle servers die op de zelfde cliëntconfiguratie lopen.
 
 Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serverinstantie.
 
@@ -51,7 +51,7 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
+Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Om dit te doen, moet u [download de nieuwste stabiele build (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en upgrade al uw omgevingen. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jaarlijkse upgrade {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe en Adobe Campaign willen u met onze softwareoplossing(en) de beste ervarin
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
-Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder enige actie. Meer informatie vindt u in de volgende veelgestelde vragen.
+Als gehoste -gebruiker profiteert u automatisch van de -upgrade met de nieuwste GA-build zonder actie te hoeven ondernemen. Meer informatie vindt u in de volgende veelgestelde vragen.
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
 Als gehoste klant wordt u rechtstreeks door Adobe op de hoogte gesteld wanneer is vastgesteld dat voor uw account bepaalde technologieën voor Campaign Classic moeten worden bijgewerkt. Dit is ook het geval als u de huidige build en/of versie moet bijwerken.
 
-Als on-premise of hybride klant met een oudere versie raadt Adobe u aan over te stappen op de nieuwste stabiele build.
+Als klant op locatie of hybride die op een oudere versie werkt, moedigt Adobe u aan om over te stappen naar de nieuwste stabiele build (GA).
 
 Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst van de gebruiker vereisen.
 

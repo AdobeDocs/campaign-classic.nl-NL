@@ -3,10 +3,8 @@ product: campaign
 title: Leveringen voor marketingcampagnes
 description: Meer informatie over marketingcampagneleveringen
 audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -29,7 +27,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer info](../../delivery/using/steps-about-delivery-creation-steps.md).
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Levering starten {#starting-a-delivery}
 
@@ -124,7 +122,7 @@ U kunt verschillende documenten aan een campagne koppelen: rapport, foto, webpag
 >
 >Deze modus is gereserveerd voor kleine documenten.
 
-In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een specifieke winkel of filiaal, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. [Meer info](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een specifieke winkel of filiaal, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. [Meer informatie](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
