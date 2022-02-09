@@ -2,13 +2,11 @@
 product: campaign
 title: Een workflow maken
 description: Leer hoe u een workflow kunt maken
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -109,7 +107,7 @@ U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen
 
 * **Afbeeldingsbeheer**
 
-   U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen beheren](managing-activity-images.md).
+   U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen wijzigen](managing-activity-images.md).
 
 ## Activiteiten configureren {#configuring-activities}
 
@@ -147,7 +145,7 @@ Het richten van werkschema&#39;s binnen het kader van een campagne wordt opgesla
 
 De stappen voor het maken van een doelworkflow worden in de volgende secties beschreven:
 
-1. **Identificeren** gegevens in de database - Zie [Vragen maken](targeting-data.md#creating-queries)
+1. **Identificeren** gegevens in de database - Zie [Query&#39;s maken](targeting-data.md#creating-queries)
 1. **Voorbereiden** gegevens die voldoen aan de behoeften voor levering - Zie [Gegevens verrijken en wijzigen](targeting-data.md#enriching-and-modifying-data)
 1. **Gebruiken** gegevens om updates of levering uit te voeren - Zie [De database bijwerken](how-to-use-workflow-data.md#updating-the-database)
 
@@ -239,7 +237,7 @@ De dubbele functie is niet rechtstreeks beschikbaar in de weergave van een campa
 
 U kunt echter een weergave maken om alle workflows op uw exemplaar weer te geven. In deze weergave kunt u workflows dupliceren met **Dupliceren naar**.
 
-**Laten we eerst een weergave maken:**
+**Een weergave maken**
 
 1. In **Verkenner** Ga naar de map waarin u de weergave wilt maken.
 1. Klik met de rechtermuisknop en ga naar **Een nieuwe map toevoegen** > **Proces**, selecteert u **Workflows**.

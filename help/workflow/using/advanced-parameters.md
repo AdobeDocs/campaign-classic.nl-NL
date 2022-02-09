@@ -2,11 +2,8 @@
 product: campaign
 title: Geavanceerde parameters
 description: Geavanceerde parameters
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -35,7 +32,7 @@ Dit veld bevat de interne naam van de activiteit.
 
 ## Afbeelding {#image}
 
-In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Activiteitenafbeeldingen beheren](managing-activity-images.md).
+In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie hierover [Activiteitenafbeeldingen wijzigen](managing-activity-images.md).
 
 ## Execution {#execution}
 

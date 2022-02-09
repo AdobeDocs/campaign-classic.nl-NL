@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: ht
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 100%
       + [Voorbeelden van JavaScript-code in workflows](workflow/using/javascript-in-workflows.md)
       + [Een externe database openen](workflow/using/accessing-an-external-database--fda-.md)
       + [Machtigingen beheren](workflow/using/managing-rights.md)
-      + [Activiteitenafbeeldingen beheren](workflow/using/managing-activity-images.md)
+      + [Activiteitenafbeeldingen wijzigen](workflow/using/managing-activity-images.md)
       + [Tijdzones beheren](workflow/using/managing-time-zones.md)
       + [Technische workflows](workflow/using/about-technical-workflows.md)
 + Aanbiedingen beheren {#managing-offers}
@@ -653,7 +653,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

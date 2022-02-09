@@ -4,7 +4,7 @@ title: Query
 description: Meer informatie over de activiteit van de Query-workflow
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Gegevens toevoegen uit de Adobe Campaign-database:
    * Een veld dat wordt berekend op basis van gegevens van de doelpopulatie of een geaggregeerd (aantal lopende aankopen in de laatste maand, gemiddeld bedrag van een ontvangstbewijs enz.). Ga bijvoorbeeld naar [Gegevens selecteren](targeting-data.md#selecting-data).
    * Een nieuw veld, gemaakt met de **[!UICONTROL Add]** rechts van de lijst met uitvoerkolommen.
 
-      U kunt ook een verzameling gegevens toevoegen, zoals een lijst met contracten, de laatste vijf leveringen, enzovoort. Verzamelingen komen overeen met velden die meerdere waarden kunnen hebben voor hetzelfde profiel (1-N relatie). Raadpleeg voor meer informatie hierover [Extra gegevens bewerken](targeting-data.md#editing-additional-data).
+      U kunt ook een verzameling gegevens toevoegen, zoals een lijst met contracten, de laatste vijf leveringen, enzovoort. Verzamelingen komen overeen met velden die meerdere waarden kunnen hebben voor hetzelfde profiel (1-N relatie). Raadpleeg voor meer informatie hierover [Aanvullende gegevens bewerken](targeting-data.md#editing-additional-data).
 
 Een verzameling gegevens toevoegen die verband houden met een doelgroep:
 

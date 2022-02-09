@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Activiteitenafbeeldingen beheren
-description: Activiteitenafbeeldingen beheren
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
+title: Activiteitenafbeeldingen wijzigen
+description: Leer hoe u de activiteitenafbeelding kunt wijzigen
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
-# Activiteitenafbeeldingen beheren{#managing-activity-images}
+# Activiteitenafbeeldingen wijzigen{#change-activity-images}
 
 ![](../../assets/common.svg)
 
