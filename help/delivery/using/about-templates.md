@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Sjablonen
-description: Sjablonen
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: Aan de slag met leveringssjablonen
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -35,4 +33,4 @@ Er zijn twee typen sjablonen:
 
 >[!NOTE]
 >
->De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg voor meer informatie hierover [Doeltoewijzing selecteren](selecting-a-target-mapping.md) en [Informatie over services en abonnementen](about-services-and-subscriptions.md).
+>De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg voor meer informatie hierover [Doeltoewijzing selecteren](selecting-a-target-mapping.md) en [Services en abonnementen](about-services-and-subscriptions.md).

@@ -2,11 +2,9 @@
 product: campaign
 title: Lijsten beheren en aanpassen
 description: Leer om lijsten te doorbladeren en te vormen
-audience: platform
-content-type: reference
-topic-tags: starting-with-adobe-campaign
+feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -84,7 +82,7 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
    >
    >Gebruik de **Zoeken** veld om een zoekopdracht uit te voeren in de beschikbare velden. Zie voor meer informatie [deze sectie](#sorting-a-list).
    >
-   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer info](#configuring-lists).
+   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer informatie](#configuring-lists).
    >
    >U kunt gegevens ook sorteren en filteren. Zie [deze sectie](../../platform/using/filtering-options.md).
 
@@ -204,4 +202,4 @@ U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking ste
 
 >[!NOTE]
 >
->U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. [Meer info](../../platform/using/creating-filters.md).
+>U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. [Meer informatie](../../platform/using/creating-filters.md).

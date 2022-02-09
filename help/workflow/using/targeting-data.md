@@ -2,22 +2,20 @@
 product: campaign
 title: Targetingdata
 description: Meer informatie over doelgegevens in een workflow
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
 
 ---
 
-# Targetingdata{#targeting-data}
+# Targetgegevens{#targeting-data}
 
 ![](../../assets/common.svg)
 
-## Query’s maken {#creating-queries}
+## Query&#39;s maken {#creating-queries}
 
 ### Gegevens selecteren {#selecting-data}
 
@@ -27,7 +25,7 @@ U kunt ook de volgende activiteiten gebruiken om gegevens in de database te zoek
 
 Het is mogelijk aanvullende gegevens te verzamelen die gedurende de gehele levenscyclus van de werkstroom moeten worden doorgestuurd en verwerkt. Raadpleeg voor meer informatie hierover [Gegevens toevoegen](query.md#adding-data) en [Extra gegevens bewerken](#editing-additional-data).
 
-### Extra gegevens bewerken {#editing-additional-data}
+### Aanvullende gegevens bewerken {#editing-additional-data}
 
 Zodra extra gegevens zijn toegevoegd, kunt u het uitgeven of het gebruiken om het doel te raffineren dat in de vraagactiviteit wordt bepaald.
 
@@ -59,7 +57,7 @@ De extra verzamelde gegevens kunnen u toelaten om gegevens het filtreren in het 
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### Gegevens homogeneren {#homogenizing-data}
+### Gegevens homogeniseren {#homogenizing-data}
 
 In **[!UICONTROL Union]** of **[!UICONTROL Intersection]** type activiteiten, kunt u verkiezen om slechts gedeelde extra gegevens te houden om de gegevens verenigbaar te houden. In dit geval bevat de tijdelijke uitvoerwerktabel van deze activiteit alleen de aanvullende gegevens die in alle binnenkomende sets worden gevonden.
 
@@ -79,9 +77,9 @@ U kunt een doel in verscheidene subsets verdelen gebruikend slechts extra gegeve
 
 Raadpleeg voor meer informatie hierover [Subsets maken met behulp van de splitsingsactiviteit](#creating-subsets-using-the-split-activity).
 
-## Gegevens segmenteren {#segmenting-data}
+## Segmentgegevens {#segmenting-data}
 
-### Combinatie van verschillende doelen (Unie) {#combining-several-targets--union-}
+### Verschillende doelen combineren (Unie) {#combining-several-targets--union-}
 
 Met de vakbondsactiviteit kunt u het resultaat van verschillende activiteiten in één overgang combineren. Stellen hoeven niet noodzakelijkerwijs homogeen te zijn.
 
@@ -129,7 +127,7 @@ Bovendien is het mogelijk om slechts een selectie van kolommen te houden, of sle
 
 De intersectieactiviteit wordt beschreven in de [Intersectie](intersection.md) sectie.
 
-### Exclusief een populatie (Uitsluiting) {#excluding-a-population--exclusion-}
+### Een populatie uitsluiten (Uitsluiting) {#excluding-a-population--exclusion-}
 
 Met de uitsluitingsactiviteit kunt u de elementen van een doel uitsluiten van een andere doelpopulatie. De doeldimensie van deze activiteit is die van de hoofdset.
 

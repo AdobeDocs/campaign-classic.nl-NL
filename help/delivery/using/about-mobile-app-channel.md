@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Mobiel toepassingskanaal in Adobe Campaign Classic
-description: Deze sectie bevat algemene informatie die specifiek is voor het mobiele toepassingskanaal in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: sending-push-notifications
+title: 'Aan de slag met het kanaal voor mobiele apps '
+description: Ga aan de slag met het kanaal voor mobiele apps in Adobe Campaign Classic
+feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 1%
+source-wordcount: '666'
+ht-degree: 2%
 
 ---
 
@@ -53,7 +51,7 @@ U kunt het gedrag van de toepassing bepalen wanneer de gebruiker het bericht act
 >* Waarschuwing: in sommige landen vereist de wet dat u de gebruikers informeert over uw verzamelde datatype mobiele toepassingen en het doel van hun verwerking . U moet de wetgeving controleren.
 
 
-De **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflowupdates voor meldingen van abonnementen op mobiele apparaten. Raadpleeg voor meer informatie over deze workflow de [lijst van technische werkstromen](../../workflow/using/about-technical-workflows.md).
+De **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflowupdates voor meldingsabonnementen op mobiele apparaten. Raadpleeg voor meer informatie over deze workflow de [lijst van technische werkstromen](../../workflow/using/about-technical-workflows.md).
 
 Adobe Campaign is compatibel met HTTP/2 APNs. Voor meer details over de configuratiestappen, verwijs naar [deze sectie](configuring-the-mobile-application.md) sectie.
 

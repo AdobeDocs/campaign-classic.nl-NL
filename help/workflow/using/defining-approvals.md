@@ -2,13 +2,11 @@
 product: campaign
 title: Goedkeuringen definiëren
 description: Met goedkeuringen kunnen operators beslissingen nemen over een workflow of de voortzetting van de uitvoering bevestigen
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -29,7 +27,7 @@ Bij vluchtuitvoeringen zijn alle stadia die goedkeuring vereisen, gebaseerd op h
 
 ![](assets/validation-1-in-op.png)
 
-In dit venster vindt u goedkeuringsvoorbeelden [sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Goedkeuringsvoorbeelden vindt u in [deze sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Een operator kan op twee manieren reageren: valideren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
 
@@ -37,7 +35,7 @@ Een operator kan op twee manieren reageren: valideren met de webpagina die is ge
 >
 >Zodra de reactie wordt bewaard kan het niet worden gewijzigd.
 
-## E-mails verzenden {#sending-emails}
+## Goedkeuring per e-mail {#sending-emails}
 
 Het is mogelijk om een goedkeuringsbericht te ontvangen die een verbinding met een Web-pagina bevat waarmee het mogelijk is te antwoorden. Voor de beoogde exploitant om een goedkeuringse-mail te ontvangen, moet het exploitant e-mailadres volledig zijn. Als dit niet het geval is, moet de exploitant de console gebruiken om te antwoorden
 
@@ -47,7 +45,7 @@ Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon 
 
 Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** map.
 
-## Goedkeuring via de console {#approval-via-the-console}
+## Goedkeuringen via de console {#approval-via-the-console}
 
 Bij bewerkingen worden elementen die moeten worden goedgekeurd, weergegeven op het campagnemdashboard.
 

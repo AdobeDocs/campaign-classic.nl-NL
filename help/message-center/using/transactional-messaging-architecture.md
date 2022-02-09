@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Architectuur van transactionele berichten
-description: In deze sectie worden de Adobe Campaign Classic-structuur voor transactiemeldingen en de beschikbare kanalen beschreven voor het verzenden van transactiemeldingen.
-audience: message-center
-content-type: reference
-topic-tags: introduction
+description: In deze sectie worden de Adobe Campaign Classic-structuur voor transactiemeldingen en de beschikbare kanalen voor het leveren van transactiemeldingen beschreven
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%

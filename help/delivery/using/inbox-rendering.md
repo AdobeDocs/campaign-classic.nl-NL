@@ -2,11 +2,9 @@
 product: campaign
 title: Inbox rendering in campagne
 description: Leer hoe u e-mailweergaven vastlegt en beschikbaar maakt in een speciaal rapport
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -84,7 +82,6 @@ Elke keer dat u de **[!UICONTROL Inbox rendering]** Bij elke gegenereerde render
 >
 >* Telkens als het Inbox teruggevende rapport wordt geproduceerd, wordt één teken per overseinencliënt afgetrokken: één token voor de rendering van Outlook 2000, één token voor de rendering van Outlook 2010, één token voor de rendering van Apple Mail 9, enzovoort.
 >* Als u voor dezelfde levering de rendering Inbox opnieuw genereert, wordt het aantal beschikbare tokens opnieuw verminderd met het aantal gegenereerde renderingen.
-
 >
 
 

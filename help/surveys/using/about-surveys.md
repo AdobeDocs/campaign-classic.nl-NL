@@ -2,11 +2,9 @@
 product: campaign
 title: 'Aan de slag met enquêtes '
 description: Aan de slag met campagneenquêtes
-audience: web
-content-type: reference
-topic-tags: online-surveys
+feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -49,11 +47,11 @@ In Adobe Campaign: gebruiken [Webtoepassingen](../../web/using/about-web-forms.m
 
 De optionele module voor het maken van enquêtes biedt een gebruikersvriendelijke gebruikersinterface en de volgende aanvullende functies:
 
-* Dynamische extensie van de database: het creëren van antwoorden die geen deel van het aanvankelijke gegevensmodel uitmaken. [Meer info](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Score-beheer. [Meer info](../../surveys/using/managing-answers.md#score-management).
-* Willekeurige weergave van vragen. [Meer info](../../surveys/using/building-a-survey.md#adding-questions).
-* Real time tracking van antwoorden. [Meer info](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Speciale rapporten genereren. [Meer info](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Dynamische extensie van de database: het creëren van antwoorden die geen deel van het aanvankelijke gegevensmodel uitmaken. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
+* Score-beheer. [Meer informatie](../../surveys/using/managing-answers.md#score-management).
+* Willekeurige weergave van vragen. [Meer informatie](../../surveys/using/building-a-survey.md#adding-questions).
+* Real time tracking van antwoorden. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+* Speciale rapporten genereren. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Implementatiestappen {#surveys-implementation-steps}

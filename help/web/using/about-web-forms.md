@@ -2,11 +2,9 @@
 product: campaign
 title: Aan de slag met webformulieren
 description: Aan de slag met webformulieren in campagne
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Landing Pages
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -80,7 +78,6 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 >
 >* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven in het dialoogvenster **[!UICONTROL Preview]** tab. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven in het dialoogvenster **[!UICONTROL Log]** tab.
 >* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Ga om dit te doen naar de **[!UICONTROL Preview]** subtab en controleer de **[!UICONTROL Enable debug mode]** vak: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
-
 >
 
 
