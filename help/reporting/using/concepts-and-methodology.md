@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Concepten en methodologie
-description: Concepten en methodologie
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Aanbevolen werkwijzen voor kubussen
+description: Aanbevolen werkwijzen voor kubussen
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 1%
+source-wordcount: '1493'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +75,7 @@ Als u bereiken handmatig wilt definiëren, klikt u op de knop **[!UICONTROL Add]
 
 Geef vervolgens de onderste en bovenste limiet op en klik op **[!UICONTROL Ok]** ter bevestiging.
 
-### Automatisch bins genereren {#generating-bins-automatically}
+### Automatisch vakken genereren {#generating-bins-automatically}
 
 Het is ook mogelijk om automatisch bakken te produceren. Om dit te doen, klik **[!UICONTROL Generate bins...]** koppeling.
 
@@ -122,7 +119,7 @@ De **[!UICONTROL Domains]** opsomming wordt gebruikt om ingebouwde rapporten te 
 
 U kunt andere opsommingen maken die zijn gereserveerd voor binden en deze gebruiken in andere kubussen: alle aliaswaarden worden opnieuw gegroepeerd in de vakken die zijn opgegeven op het eerste tabblad voor opsomming.
 
-## Berekenen en gebruiken van aggregaten {#calculating-and-using-aggregates}
+## aggregaten berekenen en gebruiken {#calculating-and-using-aggregates}
 
 De grootste gegevensvolumes kunnen in aggregaten worden berekend.
 
@@ -158,7 +155,7 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Vaststelling van maatregelen {#defining-measures}
+## Maatregelen definiëren {#defining-measures}
 
 De soorten maatregelen worden gedefinieerd in de **[!UICONTROL Measures]** tabblad van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
 
@@ -182,7 +179,7 @@ Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
 1. Voer het label van de maatregel in en voeg een beschrijving toe. Klik vervolgens op **[!UICONTROL Finish]** om het te maken.
 
-## Weergavemaatregelen {#displaying-measures}
+## Weergavemetingen {#displaying-measures}
 
 U kunt de weergave van maatregelen in de tabel configureren, afhankelijk van uw behoeften:
 
@@ -218,7 +215,7 @@ Binnen elke meting kunt u de toe te passen eenheid en opmaak definiëren.
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Een rapport delen {#sharing-a-report}
+## Uw rapport delen {#sharing-a-report}
 
 Zodra het rapport wordt gevormd, kunt u het bewaren en het met andere exploitanten delen.
 

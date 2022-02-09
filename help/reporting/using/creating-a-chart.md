@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Een diagram maken
-description: Een diagram maken
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Een grafiek maken
+description: Leer hoe u een grafiek ontwerpt
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '525'
 ht-degree: 3%
 
 ---
 
-# Een diagram maken{#creating-a-chart}
+# Een grafiek maken{#creating-a-chart}
 
 ![](../../assets/common.svg)
 
@@ -127,7 +124,7 @@ Mogelijke interactietypen en de bijbehorende configuraties worden nader beschrev
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Berekening van statistieken {#calculating-statistics}
+## Statistieken berekenen {#calculating-statistics}
 
 Met grafieken kunt u statistieken weergeven over de verzamelde gegevens.
 

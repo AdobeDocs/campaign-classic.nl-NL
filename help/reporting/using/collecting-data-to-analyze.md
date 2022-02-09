@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Data verzamelen om te analyseren
-description: Data verzamelen om te analyseren
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Gegevens verzamelen om te analyseren
+description: Gegevens verzamelen om te analyseren
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
 
 ---
 
-# Data verzamelen om te analyseren{#collecting-data-to-analyze}
+# Gegevens verzamelen om te analyseren{#collecting-data-to-analyze}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +30,7 @@ In alle gevallen worden gegevens verzameld via een **[!UICONTROL Query]** type a
 
 Deze wijze van de gegevensselectie is relevant wanneer de gegevens in het rapport moeten worden verzameld of worden gebouwd gebruikend gegevens in het gegevensbestand. In sommige gevallen kunt u de gegevens ook rechtstreeks selecteren uit de elementen die in het rapport worden gebruikt. Als u bijvoorbeeld een grafiek invoegt, kunt u de brongegevens rechtstreeks selecteren. Raadpleeg voor meer informatie hierover [De context gebruiken](../../reporting/using/using-the-context.md).
 
-## De gegevens van een schema gebruiken {#using-the-data-from-a-schema}
+## De gegevens uit een schema gebruiken {#using-the-data-from-a-schema}
 
 Om gegevens te gebruiken verbonden aan een gegevensbestandschema, selecteer de aangewezen optie in de vraagredacteur en vorm de vraag die moet worden toegepast.
 

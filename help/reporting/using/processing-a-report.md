@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Een rapport verwerken
-description: Een rapport verwerken
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Een analyserapport gebruiken
+description: Een analyserapport gebruiken
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 1%
 
 ---
 
@@ -125,7 +122,7 @@ Als u gegevens uit een analyserapport wilt exporteren, klikt u op de vervolgkeuz
 
 Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md) voor meer informatie.
 
-## Hergebruik van bestaande rapporten en analyses {#re-using-existing-reports-and-analyses}
+## Bestaande rapporten en analyses opnieuw gebruiken {#re-using-existing-reports-and-analyses}
 
 U kunt beschrijvende analyserapporten over gegevens maken met bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
 

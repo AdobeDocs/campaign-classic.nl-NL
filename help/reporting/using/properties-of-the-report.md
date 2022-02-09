@@ -2,11 +2,8 @@
 product: campaign
 title: Eigenschappen van het rapport
 description: Meer informatie over de instellingen van de rapporteigenschappen
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -52,7 +49,7 @@ Mogelijke opties zijn:
 * **[!UICONTROL Access control]**: met deze optie kunnen Adobe Campaign-operatoren de toepassing openen nadat ze zijn aangemeld.
 * **[!UICONTROL Specific account]**: Met deze optie kunt u het rapport uitvoeren met de rechten van de operator die u hebt geselecteerd in het dialoogvenster **[!UICONTROL Operator]** veld.
 
-## De lokalisatie van rapporten beheren {#managing-report-localization}
+## Uw rapport vertalen {#report-localization}
 
 U kunt de talen vormen waarin u het rapport wilt worden vertaald. Om dit te doen, klik **[!UICONTROL Localization]** tab.
 

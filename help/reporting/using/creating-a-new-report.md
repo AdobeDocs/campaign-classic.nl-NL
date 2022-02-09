@@ -2,11 +2,8 @@
 product: campaign
 title: Een nieuw rapport maken
 description: Leer belangrijke stappen om een nieuw rapport te creëren
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -39,7 +36,7 @@ Voer de volgende stappen uit om een rapport te maken:
 
 1. Sla dit rapport op.
 
-## De grafiek modelleren {#modelizing-the-chart}
+## Het diagram modelleren {#modelizing-the-chart}
 
 Nadat u uw rapport hebt opgeslagen, moet dit worden weergegeven. U kunt nu het diagram van uw rapport maken.
 
@@ -61,7 +58,7 @@ Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttig
 
 1. Een of meer toevoegen **[!UICONTROL Query]** activiteiten om gegevens te verzamelen die nuttig zijn voor het opstellen van het rapport. Gegevens kunnen rechtstreeks worden verzameld via een query op een schema van de database, of via een geïmporteerde lijst of een bestaande kubus.
 
-   Raadpleeg voor meer informatie hierover [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md).
+   Raadpleeg voor meer informatie hierover [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md).
 
    Deze gegevens zullen (of niet) in het rapport afhankelijk van paginasamenstelling worden getoond.
 
@@ -91,7 +88,7 @@ U kunt echter verschillende vertakkingen plaatsen. Slechts één van hen zal wor
 
 ## Een pagina maken {#creating-a-page}
 
-De inhoud wordt gevormd via de activiteiten die in de grafiek worden geplaatst. Raadpleeg voor meer informatie hierover [Het diagram modelleren](#modelizing-the-chart).
+De inhoud wordt gevormd via de activiteiten die in de grafiek worden geplaatst. Raadpleeg voor meer informatie hierover [De grafiek wissen](#modelizing-the-chart).
 
 Om een activiteit te vormen, klik zijn pictogram tweemaal.
 

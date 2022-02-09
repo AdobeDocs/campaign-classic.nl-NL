@@ -2,13 +2,11 @@
 product: campaign
 title: Best practices voor rapportage
 description: Campagne die beste praktijken meldt
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-## De behoeften analyseren{#analyzing-needs}
+## Analyseer uw behoeften{#analyzing-needs}
 
 Het gebruik van een rapportagegereedschap hangt af van het te manipuleren gegevensvolume, de complexiteit ervan en het type rapportage dat moet worden ingesteld.
 
@@ -62,7 +60,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    De kwesties die verband houden met gegevensvolumes en updates moeten zorgvuldig worden bestudeerd om weergaveproblemen, met name in termen van tijd, te vermijden. Daarom raden we u aan aggregaten te maken om bepaalde gegevens buiten het rapport vooraf te berekenen. Tabellen die de tracerings- en leveringslogboeken bevatten, kunnen miljoenen records bevatten: dit betekent dat de gegevens moeten worden samengevoegd via een werkstroom die in een rapport moet worden gebruikt .
 
-## Rapport maken optimaliseren{#optimizing-report-creation}
+## Rapportontwerp optimaliseren{#optimizing-report-creation}
 
 ### Gegevensvolume {#data-volume}
 
@@ -112,6 +110,6 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
    Raadpleeg voor meer informatie over opschoning en gegevensbewaring de [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Rapporten exporteren {#exporting-reports}
+### Uw rapporten exporteren {#exporting-reports}
 
 Recommendations-specifieke exportrapporten worden nader beschreven in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report).

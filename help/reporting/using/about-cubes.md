@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Kubussen
-description: Kubussen
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Aan de slag met kubussen
+description: Aan de slag met kubussen
+feature: Reporting
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 10%
+source-wordcount: '728'
+ht-degree: 11%
 
 ---
 
@@ -29,22 +27,22 @@ Zodra kubussen zijn gemaakt en geconfigureerd, worden ze gebruikt in vakken voor
 >
 >**Marketing Analytics** is een Adobe Campaign-module. Het moet op uw instantie worden geïnstalleerd zodat u de hieronder beschreven mogelijkheden kunt gebruiken.
 
-Met de module van de Analyse van de Marketing, laat de Campagne u toe:
+Met de module Campagne Marketing Analytics kunt u:
 
-1. Kubussen maken met het oog op:
+1. Kubussen maken
 
    * gegevens samenvoegen en opslaan in een werktabel om indicatoren vooraf te berekenen op basis van gebruikersbehoeften;
-   * vermindering van de hoeveelheid gegevens die betrokken is bij de verschillende berekeningen die voor rapporten en vragen worden gebruikt, waardoor de berekeningstijden van de indicatoren aanzienlijk worden geoptimaliseerd;
-   * het vereenvoudigen van de toegang tot gegevens, waardoor gebruikers gegevens (al dan niet vooraf geaggregeerd) kunnen manipuleren, afhankelijk van verschillende dimensies.
+   * het gegevensvolume te verminderen dat betrokken is bij de verschillende berekeningen die voor rapporten en vragen worden gebruikt, zodat de berekeningstijden van de indicatoren aanzienlijk worden geoptimaliseerd;
+   * de toegang tot gegevens te vereenvoudigen, gebruikers in staat te stellen gegevens (al dan niet vooraf geaggregeerd) afhankelijk van verschillende afmetingen te manipuleren.
 
    Raadpleeg voor meer informatie hierover [Indicatoren maken](../../reporting/using/creating-indicators.md).
 
-1. Draai-tabellen maken met de volgende weergave:
+1. Draai-tabellen maken
 
-   * het verkennen van berekende gegevens, geconfigureerde maatregelen;
-   * selecteren van de gegevens die moeten worden weergegeven en de weergavemodus;
-   * aanpassing van de gebruikte maatregelen en indicatoren;
-   * het aanbieden van interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
+   * berekende gegevens, geconfigureerde maatregelen verkennen;
+   * de gegevens selecteren die moeten worden weergegeven, alsmede de weergavemodus;
+   * de gebruikte maatregelen en indicatoren aanpassen;
+   * bieden interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
 
    Raadpleeg voor meer informatie hierover [Kubussen gebruiken om gegevens te verkennen](../../reporting/using/using-cubes-to-explore-data.md).
 
@@ -53,33 +51,17 @@ Met de module van de Analyse van de Marketing, laat de Campagne u toe:
 
 ## Terminologie {#terminology}
 
-Wanneer het werken met kubussen, moeten de volgende concepten gekend zijn:
+De specifieke termijnen wanneer het werken met kubussen worden hieronder vermeld.
 
-* Kubus
+* **Kubus** - Een kubus is een weergave van multidimensionale informatie: het biedt eindgebruikers structuren die ontworpen zijn voor interactieve gegevensanalyse .
 
-   Een kubus is een weergave van multidimensionale informatie: het biedt eindgebruikers structuren die ontworpen zijn voor interactieve gegevensanalyse .
+* **Feitentabel/schema** - De tabel met feiten (of het feitelijke schema) bevat de onbewerkte of elementaire gegevens waarop analyses worden gebaseerd. Dit zijn hoofdzakelijk grote volumelijsten (misschien met verbonden lijsten) met potentieel lange berekeningen. Een feitentabel kan bijvoorbeeld: de omroeptabel, de aankooptabel, enz.
 
-* Feitentabel/schema
+* **Dimension** - Met Dimension kunt u gegevens segmenteren in groepen: zodra zij zijn gecreëerd , dienen de afmetingen als analysecentra . In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
 
-   De tabel met feiten (of het feitelijke schema) bevat de onbewerkte of elementaire gegevens waarop analyses worden gebaseerd. Dit zijn hoofdzakelijk grote volumelijsten (misschien met verbonden lijsten) met potentieel lange berekeningen.
+* **Binding** - Voor sommige velden kunt u binden aan groepswaarden definiëren en het gemakkelijker maken om informatie te lezen. Binding wordt toegepast op niveaus. Wij adviseren dat u het binden bepaalt wanneer er een mogelijkheid van vele verschillende waarden is.
 
-   Een feitentabel kan bijvoorbeeld: de omroeptabel, de aankooptabel, enz.
-
-* Dimension
-
-   Met Dimension kunt u gegevens segmenteren in groepen: zodra zij zijn gecreëerd , dienen de afmetingen als analysecentra . In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
-
-* Binding
-
-   Voor sommige velden kunt u binding met groepswaarden definiëren en het gemakkelijker maken om informatie te lezen. Binding wordt toegepast op niveaus
-
-   Wij adviseren dat u het binden bepaalt wanneer er een mogelijkheid van vele verschillende waarden is.
-
-* Meetlat
-
-   De meest voorkomende maatregelen zijn som, gemiddelde, maximum, minimum, standaardafwijking enz.
-
-   De maatregelen kunnen worden berekend: zo is het aanvaardingspercentage van een aanbieding bijvoorbeeld de verhouding tussen het aantal ingediende aanbiedingen en het aantal aanvaarde inschrijvingen .
+* **Meetlat** - De meest voorkomende maatregelen zijn som, gemiddelde, maximum, minimum, standaardafwijking enz. De maatregelen kunnen worden berekend: zo is het aanvaardingspercentage van een aanbieding bijvoorbeeld de verhouding tussen het aantal ingediende aanbiedingen en het aantal aanvaarde inschrijvingen .
 
 ## De werkruimte Kubus {#cube-workspace}
 

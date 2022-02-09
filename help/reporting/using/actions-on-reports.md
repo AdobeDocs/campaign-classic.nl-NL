@@ -2,14 +2,11 @@
 product: campaign
 title: Acties voor rapporten
 description: Acties voor rapporten
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '544'
+ht-degree: 3%
 
 ---
 
@@ -56,7 +53,7 @@ Voor **[!UICONTROL List with group]** de typerapporten die naar Excel worden uit
 * In de rapporten hoeft geen specifieke opmaak te worden gebruikt die op celniveau is gedefinieerd. Het verdient de voorkeur **[!UICONTROL Form rendering]** Hiermee definieert u de indeling van de cellen in de tabel. De **[!UICONTROL Form rendering]** kan worden geraadpleegd via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * We raden u niet aan HTML-inhoud in te voegen.
 * Als een rapport meerdere tabellen, grafieken enzovoort bevat. typeelementen, zullen zij onder andere worden uitgevoerd.
-* U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Raadpleeg de volgende secties voor meer informatie [Celindeling definiëren](../../reporting/using/creating-a-table.md#defining-cell-format).
+* U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Raadpleeg [deze sectie](../../reporting/using/creating-a-table.md#defining-cell-format) voor meer informatie.
 
 ### Exporteren uitstellen {#postpone-the-export}
 

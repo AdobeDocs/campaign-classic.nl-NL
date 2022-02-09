@@ -2,11 +2,8 @@
 product: campaign
 title: De wizard voor beschrijvende analyse gebruiken
 description: De wizard voor beschrijvende analyse gebruiken
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -59,7 +56,7 @@ Open de beschrijvende analysewizard door items te selecteren en met de rechtermu
 
    Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: [Een populatie analyseren](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [Logbestanden voor bijhouden ontvangers analyseren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-## De kwalitatieve distributiesjabloon configureren {#configuring-the-qualitative-distribution-template}
+## De sjabloon voor kwalitatieve distributie configureren {#configuring-the-qualitative-distribution-template}
 
 De **[!UICONTROL Qualitative distribution]** Met een sjabloon kunt u statistieken maken over alle typen gegevens (bijvoorbeeld de bedrijfsnaam of het e-maildomein).
 
@@ -118,7 +115,7 @@ In het bovenste gedeelte van het venster kunt u de weergave-instellingen selecte
 
 U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de richting van de statistieken kiezen. Raadpleeg voor meer informatie hierover [Weergaveinstellingen van analyserapport](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
-### Gegevens in het diagram weergeven {#displaying-data-in-the-chart}
+### Gegevens weergeven in het diagram {#displaying-data-in-the-chart}
 
 In de eerste stap van de beschrijvende analysewizard kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
 

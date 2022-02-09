@@ -1,27 +1,24 @@
 ---
 product: campaign
-title: Kubussen gebruiken om data te verkennen
-description: Kubussen gebruiken om data te verkennen
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Kubussen gebruiken om data gegevens te verkennen
+description: Kubussen gebruiken om data gegevens te verkennen
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
 
 ---
 
-# Kubussen gebruiken om data te verkennen{#using-cubes-to-explore-data}
+# Kubussen gebruiken om data gegevens te verkennen{#using-cubes-to-explore-data}
 
 ![](../../assets/common.svg)
 
 Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de database identificeren en selecteren via kubussen. Hierdoor kunt u:
 
 * Maak rapporten op basis van kubussen. Het proces wordt hier nader beschreven: [De gegevens in een rapport verkennen](#exploring-the-data-in-a-report).
-* Verzamel de gegevens in het gegevensbestand en groepeer het in lijsten, bijvoorbeeld om doelstellingen en leveringen te identificeren en te bouwen. Raadpleeg voor meer informatie hierover [Bouwen aan een doelpopulatie](#building-a-target-population).
-* Voeg een draaitabel in een rapport in en verwijs naar een bestaande kubus in het rapport. Raadpleeg voor meer informatie hierover [Een draaitabel invoegen in een rapport](#inserting-a-pivot-table-into-a-report).
+* Verzamel de gegevens in het gegevensbestand en groepeer het in lijsten, bijvoorbeeld om doelstellingen en leveringen te identificeren en te bouwen. Raadpleeg voor meer informatie hierover [Een doelpopulatie maken](#building-a-target-population).
+* Voeg een draaitabel in een rapport in en verwijs naar een bestaande kubus in het rapport. Raadpleeg voor meer informatie hierover [Een draaientabel invoegen in een rapport](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
@@ -29,13 +26,13 @@ Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de d
 
 ## De gegevens in een rapport verkennen {#exploring-the-data-in-a-report}
 
-### Stap 1 - het Creëren van een rapport dat op een kubus wordt gebaseerd {#step-1---creating-a-report-based-on-a-cube}
+### Stap 1 - creeer een rapport dat op een kubus wordt gebaseerd {#step-1---creating-a-report-based-on-a-cube}
 
 Als u een rapport wilt maken op basis van een kubus, klikt u op de knop **[!UICONTROL Create]** in de **[!UICONTROL Reports]** en selecteert u de kubus die u wilt gebruiken.
 
 Het proces wordt hier nader beschreven: [Een rapport maken op basis van een kubus](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### Stap 2 - Lijnen en kolommen selecteren {#step-2---selecting-lines-and-columns}
+### Stap 2 - selecteer lijnen en kolommen {#step-2---selecting-lines-and-columns}
 
 In de standaardweergave worden de eerste twee afmetingen van de kubus (in dit geval leeftijd en stad) weergegeven.
 
@@ -54,7 +51,7 @@ De **[!UICONTROL Add]** met de knoppen op elke as kunt u dimensies toevoegen.
 
    De parameters zijn afhankelijk van het gegevenstype van de geselecteerde dimensie.
 
-   Voor datums kunnen bijvoorbeeld verschillende niveaus beschikbaar zijn. Raadpleeg voor meer informatie hierover [Weergavemaatregelen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Voor datums kunnen bijvoorbeeld verschillende niveaus beschikbaar zijn. Raadpleeg voor meer informatie hierover [Weergavemetingen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    In dit geval worden de volgende opties aangeboden:
 
@@ -74,7 +71,7 @@ De **[!UICONTROL Add]** met de knoppen op elke as kunt u dimensies toevoegen.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Stap 3 - Het vormen van de maatregelen om te tonen {#step-3---configuring-the-measures-to-display}
+### Stap 3 - Vorm de maatregelen om te tonen {#step-3---configuring-the-measures-to-display}
 
 Wanneer de lijnen en kolommen op hun plaats zijn, wijs op de maatregelen u evenals hun vertoningswijze wilt tonen.
 
@@ -120,7 +117,7 @@ Standaard wordt slechts één maat weergegeven. Om maatregelen toe te voegen of 
 
    Klik vervolgens op **[!UICONTROL Edit the dynamic measure]** om het instellingenmenu te openen.
 
-## Bouwen aan een doelpopulatie {#building-a-target-population}
+## Een doelpopulatie maken {#building-a-target-population}
 
 De rapporten bouwen gebruikend kubussen laten u toe om gegevens van de lijst te verzamelen en het te bewaren in een lijst.
 
@@ -156,7 +153,7 @@ Als u een populatie in een lijst wilt groeperen, voert u de volgende stappen uit
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## Een draaitabel invoegen in een rapport {#inserting-a-pivot-table-into-a-report}
+## Een draaientabel invoegen in een rapport {#inserting-a-pivot-table-into-a-report}
 
 Voer de volgende stappen uit om een tabel te maken en de gegevens in een kubus te verkennen:
 

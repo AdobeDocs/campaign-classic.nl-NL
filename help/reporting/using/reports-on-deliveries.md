@@ -2,13 +2,10 @@
 product: campaign
 title: Rapporten over leveringen
 description: Rapporten over leveringen
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 5%
 
 ---
@@ -27,7 +24,6 @@ De volgende typen rapporten zijn beschikbaar:
 
 U kunt tot rapporten van de homepage van de cliëntconsole, het rapportdashboard of de leveringslijst toegang hebben. De vertoningswijze van een rapport hangt van zijn context af. De lijst met hoofdrapporten is beschikbaar op de homepage en biedt u snel toegang tot leveringsgegevens. U kunt deze lijst naar wens wijzigen. Zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md) voor meer informatie .
 
-## Rapporten gebruiken {#using-reports}
 
 Een onderzoeksgebied is beschikbaar via het rapportdashboard voor snelle toegang tot één van de rapporten op de lijst.
 

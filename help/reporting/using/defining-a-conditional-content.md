@@ -2,11 +2,8 @@
 product: campaign
 title: Voorwaardelijke content definiëren
 description: Voorwaardelijke content definiëren
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -19,11 +16,11 @@ ht-degree: 8%
 
 U kunt de weergave van specifieke rapportitems of pagina&#39;s voorschrijven.
 
-Pas de zichtbaarheidsinstellingen van bepaalde items aan om deze voorwaardelijk te maken. Raadpleeg voor meer informatie hierover [Weergave van items conditioneren](#conditioning-item-display).
+Pas de zichtbaarheidsinstellingen van bepaalde items aan om deze voorwaardelijk te maken. Raadpleeg voor meer informatie hierover [Weergave van Condition-item](#conditioning-item-display).
 
-Als u de weergave van een of meer pagina&#39;s voorwaardelijk wilt maken, gebruikt u een **[!UICONTROL Test]** type activiteit. Raadpleeg voor meer informatie hierover [Paginaweergave van conditionering](#conditioning-page-display).
+Als u de weergave van een of meer pagina&#39;s voorwaardelijk wilt maken, gebruikt u een **[!UICONTROL Test]** type activiteit. Raadpleeg voor meer informatie hierover [Weergave voorwaardepagina](#conditioning-page-display).
 
-## Weergave van items conditioneren {#conditioning-item-display}
+## Weergave van Condition-item {#conditioning-item-display}
 
 Om de vertoning van een deel van een rapport voorwaardelijk te maken, moet u zijn zichtbaarheidsvoorwaarden bepalen: als deze niet worden ontmoet, zullen de punten niet worden getoond.
 
@@ -35,7 +32,7 @@ In het volgende voorbeeld hangt de weergavevoorwaarde af van de taal:
 
 ![](assets/reporting_display_condition.png)
 
-## Paginaweergave van conditionering {#conditioning-page-display}
+## Weergave voorwaardepagina {#conditioning-page-display}
 
 In het overzicht van een verslag worden de **[!UICONTROL Test]** Met activiteit kunt u de volgorde van pagina&#39;s wijzigen afhankelijk van een of meer voorwaarden.
 

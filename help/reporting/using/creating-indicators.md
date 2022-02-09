@@ -2,13 +2,10 @@
 product: campaign
 title: Indicatoren maken
 description: Indicatoren maken
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '715'
 ht-degree: 2%
 
 ---
@@ -23,8 +20,8 @@ Voer de volgende stappen uit om een kubus te maken:
 
 1. Selecteer de werktabel. Zie [De werktabel selecteren](#selecting-the-work-table).
 1. Definieer de afmetingen. Zie [Afmetingen definiëren](#defining-dimensions).
-1. Bepaal maatregelen. Zie [Bouwindicatoren](#building-indicators).
-1. Maak aggregaten (optioneel). Zie [Berekenen en gebruiken van aggregaten](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Bepaal maatregelen. Zie [Indicatoren samenstellen](#building-indicators).
+1. Maak aggregaten (optioneel). Zie [aggregaten berekenen en gebruiken](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 In dit voorbeeld ziet u hoe u snel een eenvoudige kubus in een rapport kunt maken om de bijbehorende maatregelen te exporteren.
 
@@ -92,7 +89,7 @@ Klik op de knop **[!UICONTROL Add]** om een nieuwe dimensie te maken, vervolgens
 
    Raadpleeg voor meer informatie hierover [Banden dynamisch beheren](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Bouwindicatoren {#building-indicators}
+## Indicatoren samenstellen {#building-indicators}
 
 Wanneer de afmetingen zijn gedefinieerd, moet u een berekeningsmodus opgeven voor de waarden die in de cellen moeten worden weergegeven. Hiertoe maakt u de bijbehorende indicatoren in het dialoogvenster **[!UICONTROL Measures]** tab: zoveel maatregelen te treffen als er kolommen in het rapport staan die de kubus zullen gebruiken.
 
@@ -105,7 +102,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   De **[!UICONTROL Filter the measure data...]** met de link kunt u alleen vrouwen selecteren . Raadpleeg voor meer informatie over het definiëren van maatregelen en de beschikbare opties [Vaststelling van maatregelen](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   De **[!UICONTROL Filter the measure data...]** met de link kunt u alleen vrouwen selecteren . Raadpleeg voor meer informatie over het definiëren van maatregelen en de beschikbare opties [Maatregelen definiëren](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -131,7 +128,7 @@ Dit doet u als volgt:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Hier worden mogelijke bewerkingen beschreven: [Kubussen gebruiken om gegevens te verkennen](../../reporting/using/using-cubes-to-explore-data.md).
+1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Mogelijke bewerkingen worden nader beschreven in [deze pagina](../../reporting/using/using-cubes-to-explore-data.md).
 
    Gebruik hiervoor de juiste pictogrammen.
 

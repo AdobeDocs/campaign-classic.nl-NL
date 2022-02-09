@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 1e2c20befebf2343cb0f781aa7f2bd1ed6b3f383
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 100%
+source-wordcount: '2543'
+ht-degree: 99%
 
 ---
 
@@ -215,7 +215,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost bij het gebruik van webapplicaties dat ervoor zorgde dat trackinglabels onjuiste primaire sleutels genereerden naar het schema **nms: trackingURL**. (NEO-27931)
 * De compatibiliteit met ODBC 3.x is verbeterd om de nauwkeurigheid van foutberichten te verzekeren.
 * Er is een probleem opgelost waarbij de console vastliep als aangepaste contentsjablonen werden gebruikt in e-mailleveringen. (NEO-31547)
-* Er is een probleem opgelost waardoor Tomcat geen geldige antwoorden kon verzenden vanwege een trage verbinding of een grote respons.
+* Er is een probleem opgelost waardoor Tomcat geen geldige antwoorden kon verzenden vanwege een trage verbinding of een grote respons. (NEO-30858)
 * Er is een probleem opgelost dat kon optreden bij het lezen van UUID vanuit een PostgreSQL-database.
 * Er is een probleem opgelost dat tot prestatieproblemen kon leiden bij het zoeken naar voorstelgegevens gekoppeld aan aanbiedingen. (NEO-27554)
 * Er is een probleem opgelost waarbij het webproces niet reageerde wanneer de IMS-service was geactiveerd, maar niet reageerde.
@@ -277,7 +277,7 @@ Als u geïnteresseerd bent in deelname aan deze gesloten bèta, vult u dit [form
 * Er is een probleem opgelost waarbij sommige tekens in de broncode werden gewijzigd wanneer een webapplicatie die eerder was gemaakt en opgeslagen, opnieuw werd geopend. (NEO-27597)
 * Er is een probleem opgelost dat zich kon voordoen bij de upgrade naar een build met het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen (vanaf build 19.1.4 en Campaign 20.2): wanneer verschillende sjablonen aan een gebeurtenis waren gekoppeld, kon de upgrade ertoe leiden dat de verkeerde sjabloon werd geselecteerd tijdens het verzenden van het transactionele bericht. (NEO-28326)
 * Er is een probleem opgelost waarbij de MTA niet meer reageerde en geen verzendingen kon verwerken tenzij deze opnieuw werd gestart. (NEO-27455)
-* Er is een probleem opgelost met het tijdstempelbeheer van een MSSQL-database tijdens het bulksgewijs laden van een kolom van het type Datum/tijd.
+* Oplossing voor een probleem met de MSSQL-database met betrekking tot tijdzonebeheer tijdens bulklaadbewerkingen voor een kolom van het gegevenstype datetime. (NEO-27375)
 * Er is een probleem opgelost met een workflowquery bij het gebruik van Redshift-xtk-functies. SubDays, SubSeconds, SubMinutes en SubHours accepteren nu beide Redshift-tijdstempeltypen (NEO-24962).
 * Er is een probleem opgelost waarbij een scriptfoutbericht werd weergegeven bij een voorvertoning van een rapport met anonieme toegang. (NEO-27081)
 * Er is een probleem opgelost waarbij het geheugengebruik op de server werd verminderd tijdens het uitvoeren van de verzendingsanalyse.

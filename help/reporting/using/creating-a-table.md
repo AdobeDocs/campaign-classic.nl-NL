@@ -2,11 +2,8 @@
 product: campaign
 title: Een tabel maken
 description: Een tabel maken
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -27,7 +24,7 @@ A **[!UICONTROL List with group]** Met typetabel kunt u gegevens in de tabel gro
 
 >[!CAUTION]
 >
->De **[!UICONTROL Page]** activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** of **[!UICONTROL Script]** activiteit om de in het verslag te analyseren gegevens te verzamelen. Raadpleeg voor meer informatie over deze activiteiten [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md) en [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity).
+>De **[!UICONTROL Page]** activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** of **[!UICONTROL Script]** activiteit om de in het verslag te analyseren gegevens te verzamelen. Raadpleeg voor meer informatie over deze activiteiten [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md) en [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Werkwijze {#operating-principle}
 
@@ -45,7 +42,7 @@ Hier vindt u een volledig voorbeeld van implementatie: [Hoofdlettergebruik: Een 
 
 Houd rekening met de volgende stappen om een tabel van het type &#39;Lijst met groep&#39; te maken:
 
-1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Zie [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md).
+1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Zie [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md).
 1. Vul de brontabel in en selecteer de velden van de tabel die de statistieken betreffen.
 1. Een **[!UICONTROL Page]** activiteit in de grafiek. Raadpleeg voor meer informatie hierover [Statische elementen](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Een **[!UICONTROL List with group]** typt u tabel in de pagina.
@@ -448,7 +445,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    Uw pagina is nu geconfigureerd.
 
-### Stap 6 - Het rapport bekijken {#step-6---viewing-the-report}
+### Stap 6 - Bekijk het rapport {#step-6---viewing-the-report}
 
 Als u het resultaat van deze configuratie wilt weergeven, klikt u op de knop **[!UICONTROL Preview]** en selecteert u de **[!UICONTROL Global]** optie.
 
