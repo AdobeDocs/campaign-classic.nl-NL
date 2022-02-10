@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Doelgroepen synchroniseren
-description: Doelgroepen synchroniseren
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: Leer hoe te om publiek met Schakelaar ACS te synchroniseren
+feature: ACS Connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
@@ -17,9 +15,9 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-You can build a sophisticated list by using the Campaign v7 advanced features and share this list as an audience directly and in real time with Campaign Standard (including additional data) in a seamless way. Uw gebruiker van de Campaign Standard kan dan het publiek in Adobe Campaign Standard verbruiken.
+U kunt een geavanceerde lijst maken met de geavanceerde functies van Campagne v7 en deze lijst direct en in real time delen met Campaign Standard (inclusief extra gegevens), zonder problemen. Uw gebruiker van de Campaign Standard kan dan het publiek in Adobe Campaign Standard verbruiken.
 
-Complex targeting involving additional data that are not replicated in Campaign Standard can only be achieved using Campaign v7.
+Complexe gericht gebruiken van extra gegevens die niet in Campaign Standard worden herhaald kan slechts worden bereikt gebruikend Campagne v7.
 
 U kunt lijsten van ontvangers of gegevens ook eenvoudig delen die door een schakelaar zoals de Dynamiek van Microsoft met Campaign Standard komen.
 
@@ -40,7 +38,7 @@ Hiervoor hebt u het volgende nodig:
 
 ## Een doelworkflow met aanvullende gegevens maken in Campagne v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
-Complex targeting involving additional data that are not replicated in Campaign Standard can only be achieved using Campaign v7.
+Complexe gericht gebruiken van extra gegevens die niet in Campaign Standard worden herhaald kan slechts worden bereikt gebruikend Campagne v7.
 
 Zodra het doel en zijn extra gegevens worden bepaald, is het mogelijk om het als lijst op te slaan die met Campaign Standard kan worden gedeeld.
 
@@ -51,15 +49,15 @@ Zodra het doel en zijn extra gegevens worden bepaald, is het mogelijk om het als
 Zo krijgt u het uiteindelijke publiek en de aanvullende gegevens:
 
 1. Een nieuwe workflow maken op basis van **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Add a **[!UICONTROL Query]** activity and select the recipients that you want to send final email to. Bijvoorbeeld alle ontvangers tussen 18 en 30 jaar oud die in Frankrijk wonen.
+1. Voeg een **[!UICONTROL Query]** en selecteer de ontvangers waarnaar u de laatste e-mail wilt verzenden. Bijvoorbeeld alle ontvangers tussen 18 en 30 jaar oud die in Frankrijk wonen.
 
    ![](assets/acs_connect_query1.png)
 
-1. Voeg aanvullende gegevens toe vanuit de query. For more information, refer to the [Adding data](../../workflow/using/query.md#adding-data) section.
+1. Voeg aanvullende gegevens toe vanuit de query. Raadpleeg voor meer informatie de [Gegevens toevoegen](../../workflow/using/query.md#adding-data) sectie.
 
    In dit voorbeeld ziet u hoe u een aggregaat toevoegt om te tellen hoeveel leveringen een ontvanger in een jaar heeft ontvangen.
 
-   In the **[!UICONTROL Query]**, select **[!UICONTROL Add data...]**.
+   In de **[!UICONTROL Query]**, selecteert u **[!UICONTROL Add data...]**.
 
    ![](assets/acs_connect_query2.png)
 
@@ -94,7 +92,7 @@ Zo krijgt u het uiteindelijke publiek en de aanvullende gegevens:
 
 ## Doel delen met Campaign Standard {#share-the-target-with-campaign-standard}
 
-Once the target population is defined, you can share it with ACS through a **[!UICONTROL List update]** activity.
+Zodra de doelpopulatie wordt bepaald, kunt u het met ACS door delen **[!UICONTROL List update]** activiteit.
 
 1. Voeg in de eerder gemaakte workflow een **[!UICONTROL List update]** en geeft u de lijst op die u wilt bijwerken of maken.
 
@@ -112,7 +110,7 @@ Als er een fout optreedt op het tabblad **[!UICONTROL List update]** activiteit,
 
 ## Haal de gegevens op in Campaign Standard en gebruik deze bij levering {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
-Once the targeting workflow is executed in Campaign v7, you are able to find the list audience in read-only mode from the **[!UICONTROL Audiences]** menu of Campaign Standard.
+Wanneer de doelworkflow in Campagne v7 is uitgevoerd, kunt u het publiek van de lijst in de modus Alleen-lezen vinden in het menu **[!UICONTROL Audiences]** menu van Campaign Standard.
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
@@ -123,9 +121,9 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
    Deze activiteit wordt gebruikt om de gegevens van het geselecteerde publiek terug te winnen. U kunt ook een extra **[!UICONTROL Source Filtering]** indien nodig door het tabblad volgens van deze activiteit te gebruiken.
 
-1. Add an **[!UICONTROL Email delivery]** activity and configure it as any other [email delivery activity](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Een **[!UICONTROL Email delivery]** activiteit en vorm het als om het even welke andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Open de leveringsinhoud.
-1. Een personalisatieveld toevoegen. Zoek vanuit de pop-up de **[!UICONTROL Additional data (targetData)]** knooppunt. This node contains the additional data of the audience that were computed in the initial targeting workflow. You can use them as any other personalization field.
+1. Een personalisatieveld toevoegen. Zoek vanuit de pop-up de **[!UICONTROL Additional data (targetData)]** knooppunt. Dit knooppunt bevat de aanvullende gegevens van het publiek die zijn berekend in de initiële doelworkflow. U kunt ze als elk ander verpersoonlijkingsveld gebruiken.
 
    In dit voorbeeld zijn de aanvullende gegevens die afkomstig zijn van de oorspronkelijke doelworkflow het aantal leveringen dat in de laatste 365 dagen aan elke ontvanger is verzonden. De alias NBDeliies die is opgegeven in de doelworkflow is hier zichtbaar.
 
@@ -148,6 +146,6 @@ Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
    * **In Campaign Standard**: Toegang [rapporten](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) en [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) in verband met de levering, zoals voor elke levering.
    * **in Campagne v7 en Campaign Standard**: Logbestanden voor levering-id&#39;s, e-mailbrede logboeken en e-mailtracking worden gesynchroniseerd met Campagne v7. U kunt dan tot 360° mening van uw marketing campagnes van Campaign v7 krijgen.
 
-      Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. This allows to take non-deliverable information into account for the next targeting performed in Campaign v7.
+      Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
       Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).

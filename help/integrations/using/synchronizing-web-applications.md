@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Webapplicaties synchroniseren
-description: Webapplicaties synchroniseren
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: Leer hoe te om Webtoepassingen met Schakelaar ACS te synchroniseren
+feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---
@@ -29,7 +27,7 @@ Hiervoor hebt u het volgende nodig:
 * een service en een webtoepassing die zijn gemaakt en gepubliceerd in Campaign v7.
 * de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit met behulp van de **[!UICONTROL Adobe Campaign encryption]** identificatiemethode.
 
-## De webtoepassing en -service maken {#creating-the-web-application-and-service}
+## Webtoepassing en -service maken {#creating-the-web-application-and-service}
 
 In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Als u meer wilt weten over webtoepassingen in Campagne v7, raadpleegt u [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -82,11 +80,11 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
    ![](assets/acs_connect_lp_10.png)
 
-## De e-mail ontwerpen en verzenden {#designing-and-sending-the-email}
+## E-mail ontwerpen en verzenden {#designing-and-sending-the-email}
 
 In dit deel, zullen wij zien hoe te om een verbinding, in een e-mail van de Campaign Standard, aan de landingspagina te omvatten die van een de Webtoepassing van de Campagne v7 wordt herhaald.
 
-De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde als voor een klassieke e-mail. Zie de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl) documentatie.
+De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde als voor een klassieke e-mail. Zie de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=nl) documentatie.
 
 1. Maak een nieuwe e-mail en kies een of meer gerepliceerde profielen als het publiek.
 1. Bewerk de inhoud en voeg een **[!UICONTROL Link to a landing page]**.

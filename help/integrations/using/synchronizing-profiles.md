@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Profielen synchroniseren
-description: Profielen synchroniseren
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: Leer hoe te om profielen met Schakelaar ACS te synchroniseren
+feature: ACS Connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1201'
 ht-degree: 3%
 
 ---
@@ -158,7 +156,7 @@ Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bes
 
    ![](assets/acs_connect_profile_sync_19.png)
 
-## De service voor het annuleren van abonnementen controleren {#verifying-the-unsubscription-service}
+## Verifieer de unsubscription-service {#verifying-the-unsubscription-service}
 
 Volg de instructies in [Een workflow maken](#creating-a-workflow) en [Een levering maken](#creating-a-delivery) voordat u verdergaat naar de onderstaande stappen.
 

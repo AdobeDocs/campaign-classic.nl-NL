@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Het oplossen van problemen de Schakelaar ACS
-description: Het oplossen van problemen de Schakelaar ACS
+title: Los de Schakelaar ACS problemen op
+description: Los de Schakelaar ACS problemen op
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
-# Het oplossen van problemen de Schakelaar ACS{#troubleshooting-the-acs-connector}
+# Los de Schakelaar ACS problemen op{#troubleshooting-the-acs-connector}
 
 ![](../../assets/v7-only.svg)
 
@@ -78,7 +78,7 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
 
    Bovendien worden alle gegevens die aan ontvangers zijn gekoppeld en zijn opgeslagen in tabellen met betrekking tot nms:ontvangers niet standaard gesynchroniseerd met Campaign Standard.
 
-   Om verwante gegevens nog steeds te kunnen gebruiken, kunt u uw richten in Campagne v7 uitvoeren en extra gegevens toevoegen zoals die in [Synchroniseren van publiek](../../integrations/using/synchronizing-audiences.md) , of u kunt naar uw consultant verwijzen om mogelijkheden voor aanpassingen te verkennen.
+   Om verwante gegevens nog steeds te kunnen gebruiken, kunt u uw richten in Campagne v7 uitvoeren en extra gegevens toevoegen zoals die in [Doelgroepen synchroniseren](../../integrations/using/synchronizing-audiences.md) , of u kunt naar uw consultant verwijzen om mogelijkheden voor aanpassingen te verkennen.
 
 * **Ik gebruik een andere profieldimensie dan de standaardnms:ontvanger in Campagne v7, hoe kan ik hen met Campaign Standard synchroniseren?**
 

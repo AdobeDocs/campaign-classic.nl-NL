@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: ACS-verbindingsbeginselen en gegevenscyclus
+title: Aan de slag met ACS-connector
 description: ACS-verbindingsbeginselen en gegevenscyclus
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
 
-# ACS-verbindingsbeginselen en gegevenscyclus{#acs-connector-principles-and-data-cycle}
+# Aan de slag met ACS-connector{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
-
-## Inleiding {#introduction}
 
 ACS Connector bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Campagne v7 heeft geavanceerde hulpmiddelen om het primaire marketing gegevensbestand te beheren. De gegevensreplicatie van Campagne v7 staat Campaign Standard toe om de rijke gegevens in een gebruikersvriendelijk milieu te gebruiken.
 
@@ -38,7 +34,7 @@ Dit document stelt de mogelijkheden ACS-Connector voor. In de volgende secties v
 * [Proces](#process): Overzicht van de Schakelaar ACS en hoe de gegevensreplicatie wordt beheerd.
 * [Implementatie](#implementation): Overzicht van hoe te beginnen met de Schakelaar ACS evenals instructies op hoe te om basis en geavanceerde gegevens te herhalen.
 * [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md): Instructies voor het repliceren van profielen en het maken van leveringen met deze profielen.
-* [Synchroniseren van publiek](../../integrations/using/synchronizing-audiences.md): Instructies over hoe te om een lijst van ontvangers in Campagne v7 te richten en dan de lijst aan Campaign Standard als publiek te herhalen.
+* [Doelgroepen synchroniseren](../../integrations/using/synchronizing-audiences.md): Instructies over hoe te om een lijst van ontvangers in Campagne v7 te richten en dan de lijst aan Campaign Standard als publiek te herhalen.
 * [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md): Instructies voor het koppelen van Campagne v7-webtoepassingen aan Campaign Standard.
 * [Het oplossen van problemen de Schakelaar ACS](../../integrations/using/troubleshooting-the-acs-connector.md): Herzie antwoorden op gemeenschappelijke problemen.
 
