@@ -3,9 +3,9 @@ product: campaign
 title: Verzenden met de verbeterde MTA in Adobe Campaign Classic
 description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1946'
 ht-degree: 3%
 
 ---
@@ -135,6 +135,10 @@ Zie voor meer informatie over stuiteren [deze sectie](understanding-delivery-fai
 De grafiek van de productie van de Levering van de Campagne zal niet meer de productie aan uw e-mailontvangers tonen. Die grafiek zal nu de productiesnelheid voor het relais van uw berichten van Campaign over aan Verbeterde MTA tonen.
 
 Voor meer op de leveringsproductie, zie [deze sectie](../../reporting/using/global-reports.md#delivery-throughput).
+
+>[!NOTE]
+>
+>Met de [E-mailfeedbackservice](#email-feedback-service) (EFS) capaciteit (momenteel beschikbaar als bèta), toont de grafiek van de productie van de Levering van de Campagne nog de productie aan uw e-mailontvangers.
 
 ### Geldigheidsperiode
 

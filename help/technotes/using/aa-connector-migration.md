@@ -3,10 +3,10 @@ product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 4%
+source-wordcount: '814'
+ht-degree: 5%
 
 ---
 
@@ -27,8 +27,6 @@ U **moeten** de nieuwe integratie van de Verbinding van Adobe Analytics op de Ui
 ## Wat is er veranderd?
 
 Er is nu een nieuwe integratie tussen Campaign Classic v7 en Adobe Analytics beschikbaar. Belangrijke wijzigingen worden hieronder weergegeven.
-
-* De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie is van gebruiker/wachtwoord naar Adobe Identity Management Service (IMS) verplaatst. Daarom moet u Adobe IMS implementeren en verbinding maken met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), voordat u de implementatie van de Analytics Connector start.
 
 * De **Contactdatum** De classificatie, die van type datum is, is verouderd door Adobe Analytics. Voor gemigreerde integratie zal het van hetzelfde type blijven. Voor alle **Contactdatum** gemaakt door Campagne, wordt het type **String**.
 

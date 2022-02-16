@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Het WSDL-pad voor toegang tot beide methoden is:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** om tot het typeschema in real time toegang te hebben.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** om het batchtypeschema te openen.
+
+Voor meer informatie over het genereren van een WSDL-bestand raadpleegt u [deze sectie](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Beide methoden bevatten een **`<urn:sessiontoken>`** element voor het het programma openen aan de module van het transactionele overseinen. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
 

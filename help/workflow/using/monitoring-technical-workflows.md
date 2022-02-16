@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 8%
+source-wordcount: '504'
+ht-degree: 5%
 
 ---
 
@@ -43,9 +43,8 @@ Om beter te begrijpen wat elke technische werkstroom wordt verondersteld te doen
 
 Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Controleer of de **[!UICONTROL Database Cleanup]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
+1. Controleer of de **[!UICONTROL Database Cleanup]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg de volgende secties voor meer informatie [page](../../production/using/database-cleanup-workflow.md)..
 1. Bekijk het dagboek om te verifiëren dat de verstreken tijd in tijd vrij constant is en zich niet in andere werkschema&#39;s mengt.
-1. Voor meer informatie, controleer dit [page](../../production/using/database-cleanup-workflow.md).
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
@@ -53,7 +52,7 @@ Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standa
 
 Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Controleer of de **[!UICONTROL Deliverability update]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
+1. Controleer of de **[!UICONTROL Deliverability update]** de workflow wordt elke dag uitgevoerd en voltooid.
 1. Verifieer in het dagboek dat de regels regelmatig worden bijgewerkt.
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
