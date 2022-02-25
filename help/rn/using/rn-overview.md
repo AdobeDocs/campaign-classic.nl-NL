@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabie
 
 ## Aanbevelingen{#recommendations}
 
-Om een stabiele configuratie te verzekeren, adviseren wij dat u installeert **dezelfde build** op alle servers die op de zelfde cliëntconfiguratie lopen.
+Om een stabiele configuratie te garanderen raden we u aan **dezelfde build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
 Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serverinstantie.
 
@@ -51,7 +51,7 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Om dit te doen, moet u [download de nieuwste stabiele build (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en upgrade al uw omgevingen. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
+Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Ontdek meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jaarlijkse upgrade {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe en Adobe Campaign willen u met onze softwareoplossing(en) de beste ervarin
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
-Als gehoste -gebruiker profiteert u automatisch van de -upgrade met de nieuwste GA-build zonder actie te hoeven ondernemen. Meer informatie vindt u in de volgende veelgestelde vragen.
+Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA-build zonder actie te hoeven ondernemen. Meer informatie vindt u in de volgende veelgestelde vragen.
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
 Als gehoste klant wordt u rechtstreeks door Adobe op de hoogte gesteld wanneer is vastgesteld dat voor uw account bepaalde technologieën voor Campaign Classic moeten worden bijgewerkt. Dit is ook het geval als u de huidige build en/of versie moet bijwerken.
 
-Als klant op locatie of hybride die op een oudere versie werkt, moedigt Adobe u aan om over te stappen naar de nieuwste stabiele build (GA).
+Als een on-premise of hybride klant met een oudere versie raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
 
 Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst van de gebruiker vereisen.
 
