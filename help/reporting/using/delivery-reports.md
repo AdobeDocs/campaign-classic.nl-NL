@@ -4,9 +4,9 @@ title: Leveringsrapporten
 description: Leveringsrapporten
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1451'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 >
 >De bijbehorende percentages worden berekend op basis van het aantal berichten dat met succes is doorgestuurd.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Schatting van het aantal ontvangers voor wie het bericht bestemd is dat een bericht ten minste eenmaal heeft geopend. Er wordt rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
+* **[!UICONTROL Distinct opens for the population reached]** : Schatting van het aantal ontvangers voor wie het bericht bestemd is dat een bericht ten minste eenmaal heeft geopend. Er wordt rekening gehouden met klikken op bijgehouden URL&#39;s omdat e-mails moeten worden geopend om op een koppeling te klikken.
 * **[!UICONTROL Sum of opens for the population reached]** : Schatting van het totale aantal openingen door de beoogde ontvangers.
 * **[!UICONTROL Clicks on opt-out link]** : Aantal klikken op de verbinding van het unsubscription.
 * **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Zie dit [page](../../delivery/using/about-delivery-monitoring.md).

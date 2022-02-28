@@ -5,10 +5,10 @@ description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 
 >[!CAUTION]
 >
->Deze mogelijkheid is niet rechtstreeks beschikbaar als onderdeel van het product. Voor de implementatie moet Adobe Consulting worden ingeschakeld. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie
+>Deze mogelijkheid is niet rechtstreeks beschikbaar als onderdeel van het product. Voor deze implementatie moet u eerst een ticket openen met Adobe Support. U kunt dan de in dit [page](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] Voer marketingacties uit binnen een korte tijdspanne na de actie van een gebruiker. De gemiddelde responstijd is minder dan een uur.
 
