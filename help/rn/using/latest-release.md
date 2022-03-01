@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,24 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
+
+## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 4349 {#release-7-2-2}
+
+_1 maart 2022_
+
+**Patches**
+
+* Probleem verholpen tijdens het configureren van de **Webanalyse** externe account, die ervoor zorgde dat de integratiestatus altijd &#39;Integratie succesvol&#39; weergaf, zelfs als er fouten optraden. (NEO-36672)
+* Oplossing voor verschillende postupgradefouten die te maken hadden met het mechanisme van de reeks-id bij een negatieve id. (NEO-43205, NEO-42846, NEO-42845)
+* Probleem verholpen tijdens het gebruik van de **Webanalyse** externe account met terugkerende en doorlopende leveringen, waardoor gegevens van de externe rekening gedeeltelijk verloren zijn gegaan. (NEO-38548)
+* Probleem verholpen waardoor de postupgrade vertraagde bij het bijwerken van de tabel NmsActiveContact. (NEO-43206)
+* Probleem verholpen met een fout na de upgrade die optrad als mappen buiten het vak waren verplaatst van het dialoogvenster **Beheer** naar een andere locatie. (NEO-42875)
+* Probleem verholpen bij het gebruik van een **Gegevens bijwerken** workflowactiviteit die kan voorkomen dat het ontvangende schema wordt bijgewerkt met de ontvangende gegevens uit een externe Google Cloud-database. (NEO-42343)
+* Probleem verholpen tijdens naupgrade met betrekking tot de Adobe Analytics-aansluiting. (NEO-43318, NEO-38136)
+* Probleem verholpen met een overschreven CUID door &#39;VALUE_TO_CHANGE&#39; tijdens postupgrade. (NEO-43267)
+* Probleem verholpen dat tot fouten leidde bij het synchroniseren van de mid-sourcing en marketing instanties in een multi-mid configuratie. (NEO-10432)
+* Probleem verholpen dat tot een fout leidde bij het vernieuwen van de leverbare werkstroom wanneer er meer dan 1000 uitzendingen tegelijk werden aangeboden. (NEO-40276)
+* Probleem verholpen waardoor de open ratio niet kon worden bijgewerkt en op leveringsindicatoren voor de verhouding kon worden geklikt. (NEO-43253)
 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
 
