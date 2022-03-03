@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: '"[!DNL Gold Standard] releases"'
+title: '[!DNL Gold Standard]-releases '
 description: Aanvullende informatie en compatibiliteitsmatrix voor Campaign Classic [!DNL Gold Standard]
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 2fd845ba5e9ced87cef7fd101579ffa4f177f367
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -116,11 +116,11 @@ _29 april 2020_
 
 De build 9032@3a9dc9c bevat de volgende oplossingen:
 
-* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
+>Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
 
 * Er is een probleem verholpen waarbij afbeeldingen niet konden worden weergegeven in Line-leveringen. (NEO-23207)
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
@@ -376,7 +376,7 @@ Dit gedeelte bevat een lijst met alle systemen en onderdelen die worden onderste
 <tr>
 <td>Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -385,8 +385,8 @@ Dit gedeelte bevat een lijst met alle systemen en onderdelen die worden onderste
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
