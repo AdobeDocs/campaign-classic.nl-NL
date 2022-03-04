@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Query’s uitvoeren met behulp van groeperingsbeheer
+title: Een query uitvoeren met behulp van groeperingsbeheer
 description: Leer hoe u query's uitvoert met behulp van groeperingsbeheer
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%

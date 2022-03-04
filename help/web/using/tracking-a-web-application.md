@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Een webapplicatie opvolgen
-description: Een webapplicatie opvolgen
-audience: web
-content-type: reference
-topic-tags: web-applications
+title: Bezoeken aan een webapplicatie bijhouden
+description: Bezoeken aan een webapplicatie bijhouden
+feature: Web Apps
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '401'
+ht-degree: 4%
 
 ---
 

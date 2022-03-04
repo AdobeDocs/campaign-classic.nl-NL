@@ -2,11 +2,9 @@
 product: campaign
 title: Content bewerken
 description: Content bewerken
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -19,7 +17,7 @@ ht-degree: 1%
 
 ## Een zichtbaarheidsvoorwaarde definiëren {#defining-a-visibility-condition}
 
-You can specify a visibility condition on a web page element: this element will only be visible if the condition is respected.
+U kunt een zichtbaarheidsvoorwaarde opgeven voor een webpagina-element: dit element is alleen zichtbaar als aan de voorwaarde wordt voldaan .
 
 Als u een zichtbaarheidsvoorwaarde wilt toevoegen, selecteert u een blok en voert u de voorwaarde in het dialoogvenster **[!UICONTROL Visibility condition]** veld met de expressie-editor.
 
@@ -31,7 +29,7 @@ Als u een zichtbaarheidsvoorwaarde wilt toevoegen, selecteert u een blok en voer
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Deze voorwaarden nemen de XTK-expressiesyntaxis over (bijvoorbeeld **ctx.receiver.@email!= &quot;&quot;** of **ctx.receiver.@status==&quot;0&quot;**). By default, all fields are visible.
+Deze voorwaarden nemen de XTK-expressiesyntaxis over (bijvoorbeeld **ctx.receiver.@email!= &quot;&quot;** of **ctx.receiver.@status==&quot;0&quot;**). Standaard zijn alle velden zichtbaar.
 
 >[!NOTE]
 >
@@ -99,9 +97,9 @@ Wanneer de gebruiker op een knop klikt, kunt u een bijbehorende actie definiëre
 
 ![](assets/dce_sidebar_button.png)
 
-The actions available are as follows:
+De beschikbare acties zijn als volgt:
 
-* **[!UICONTROL Refresh]** : refreshes the current page.
+* **[!UICONTROL Refresh]** : Hiermee vernieuwt u de huidige pagina.
 * **[!UICONTROL Next page]** : leidt tot een verbinding aan de volgende pagina in de toepassing van het Web.
 * **[!UICONTROL Previous page]** : maakt een koppeling naar de vorige pagina in de webtoepassing.
 
@@ -133,11 +131,10 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >
 >* Overige (IFrame)
 >* Bovenste venster (_boven)
->* Parent window (_parent)
+>* Bovenliggend venster (_bovenliggend)
 >* Nieuw venster (_leeg)
 >* Huidig venster (_zelf)
 >* Standaardbrowsergedrag
-
 >
 
 
@@ -178,7 +175,7 @@ Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: 
 
 >[!NOTE]
 >
->If the link is deleted, the content is still kept.
+>Als de koppeling wordt verwijderd, blijft de inhoud behouden.
 
 ## Lettertypekenmerken wijzigen {#changing-font-attributes}
 
@@ -190,7 +187,7 @@ De beschikbare opties zijn als volgt:
 
 * **Lettertype vergroten** pictogram: Hiermee vergroot u de grootte van de geselecteerde tekst (voeg `<span style="font size:">`)
 * **Lettertype reduceren** pictogram: Hiermee verkleint u de grootte van de geselecteerde tekst (toevoegen) `<span style="font size:">`)
-* **Bold** icon: makes selected text bold (wrap text with the `<strong> </strong>` tag)
+* **Vet** pictogram: maakt geselecteerde tekst vet (omlooptekst met de `<strong> </strong>` tag)
 * **Cursief** pictogram: maakt geselecteerde tekst cursief (omlooptekst met de  `<em> </em>` tag)
 * **Onderstrepen** pictogram: maakt geselecteerde tekst onderstreept (omloop tekst met de `<span style="text-decoration: underline;">` tag)
 * **Links uitlijnen** pictogram: Hiermee lijnt u tekst links van het geselecteerde blok uit (add style=&quot;text-align: left;&quot;)
@@ -230,7 +227,7 @@ De **Dupliceren** wordt het pictogram gedupliceerd ![]() -tags en de inhoud erva
 
 >[!CAUTION]
 >
->When you duplicate an image, the identifiers related to the new image are deleted.
+>Wanneer u een afbeelding dupliceert, worden de id&#39;s voor de nieuwe afbeelding verwijderd.
 
 ### Afbeeldingseigenschappen bewerken {#editing-image-properties}
 

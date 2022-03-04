@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Seed-adressen maken
+title: Seedadressen maken
 description: Leer hoe u zaadadressen maakt en gebruikt
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%

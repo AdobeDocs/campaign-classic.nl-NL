@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: De mobiele iOS-toepassing configureren in Adobe Campaign
+title: De mobiele iOS-toepassing in Adobe Campaign configureren
 description: Meer informatie over het instellen van uw mobiele toepassing voor iOS
+feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 7%

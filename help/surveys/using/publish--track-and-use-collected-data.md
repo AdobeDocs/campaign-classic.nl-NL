@@ -2,11 +2,9 @@
 product: campaign
 title: Verzamelde data gegevens publiceren, bijhouden en gebruiken
 description: Leer hoe u in een enquête verzamelde gegevens publiceert, bijhoudt en gebruikt
-audience: web
-content-type: reference
-topic-tags: online-surveys
+feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -25,7 +23,7 @@ Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppel
 
 ## Beoordelingsdashboard {#survey-dashboard}
 
-Elk onderzoek heeft zijn eigen dashboard dat u zijn status, beschrijving, openbare URL en beschikbaarheidsprogramma laat bekijken. U kunt ook de beschikbare rapporten weergeven. [Meer info](#reports-on-surveys).
+Elk onderzoek heeft zijn eigen dashboard dat u zijn status, beschrijving, openbare URL en beschikbaarheidsprogramma laat bekijken. U kunt ook de beschikbare rapporten weergeven. [Meer informatie](#reports-on-surveys).
 
 De openbare URL van de enquête wordt weergegeven op het dashboard:
 

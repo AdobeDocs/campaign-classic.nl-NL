@@ -2,11 +2,9 @@
 product: campaign
 title: Vertakking
 description: Meer informatie over de workflowactiviteit van Fork
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -30,7 +28,7 @@ Om een **[!UICONTROL Fork]** de activiteit en de daarmee samenhangende activitei
    ![](assets/s_user_segmentation_fork.png)
 
 1. Open elke uitgaande overgang en vorm het.
-1. Naar keuze, om zich bij uitgaande overgangen aan te sluiten, voeg een EN-lid activiteit toe. [Meer info](and-join.md).
+1. Naar keuze, om zich bij uitgaande overgangen aan te sluiten, voeg een EN-lid activiteit toe. [Meer informatie](and-join.md).
 
    Het volgende gedeelte van de workflow wordt alleen uitgevoerd na voltooiing van de gecombineerde uitgaande overgangen.
 

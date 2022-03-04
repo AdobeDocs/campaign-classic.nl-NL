@@ -2,8 +2,9 @@
 product: campaign
 title: Belangrijke stappen voor het verzenden van een e-mail
 description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken
+feature: Email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%

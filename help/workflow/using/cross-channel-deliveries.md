@@ -2,11 +2,9 @@
 product: campaign
 title: Cross-channel leveringen
 description: Meer informatie over leveringen via meerdere kanalen
-audience: workflow
-content-type: reference
-topic-tags: action-activities
+feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 8%
@@ -37,7 +35,7 @@ In het onderstaande voorbeeld maken we een workflow voor het verzenden van een e
 
 1. Een campagne maken.
 1. In de **[!UICONTROL Targeting and workflows]** tabblad van uw campagne, voegt u een **[!UICONTROL Query]** naar uw workflow.
-1. Configure your query. Hier selecteren we bijvoorbeeld de ontvangers die zijn geabonneerd op pushberichten als doeldimensie.
+1. Configureer uw query. Hier selecteren we bijvoorbeeld de ontvangers die zijn geabonneerd op pushberichten als doeldimensie.
 
    >[!NOTE]
    >
@@ -45,21 +43,21 @@ In het onderstaande voorbeeld maken we een workflow voor het verzenden van een e
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Add the filter conditions to your query. In this case, we will select recipients who have a mobile number or email address.
+1. Voeg de filtervoorwaarden aan uw vraag toe. In dit geval selecteren we ontvangers met een mobiel nummer of e-mailadres.
 
    ![](assets/cross_channel_delivery_2.png)
 
 1. Voeg een **[!UICONTROL Split]** activiteit aan uw werkschema om ontvangers te verdelen die een mobiel aantal en degenen hebben die een e-mailadres hebben.
-1. In the **[!UICONTROL Delivery]** tab, select a delivery for each of your targets.
+1. In de **[!UICONTROL Delivery]** selecteert u een levering voor elk van uw doelen.
 
    U kunt uw levering op dezelfde manier maken als met een klassieke wizard voor levering door te dubbelklikken op de leveringsactiviteit in uw workflow. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md) voor meer informatie.
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. Add and configure a **[!UICONTROL Wait]** activity in order for the recipients not to receive too many deliveries at once.
-1. Add a **[!UICONTROL Split]** activity to divide subscribers of an iOS or Android mobile applications.
+1. Een **[!UICONTROL Wait]** om ervoor te zorgen dat de ontvangers niet te veel leveringen tegelijk ontvangen.
+1. Voeg een **[!UICONTROL Split]** activiteit om abonnees van mobiele iOS- of Android-toepassingen te verdelen.
 
-   Select a service for each of the operating systems. Raadpleeg voor meer informatie over het maken van services deze [page](../../delivery/using/configuring-the-mobile-application.md).
+   Selecteer een service voor elk besturingssysteem. Raadpleeg voor meer informatie over het maken van services deze [page](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 

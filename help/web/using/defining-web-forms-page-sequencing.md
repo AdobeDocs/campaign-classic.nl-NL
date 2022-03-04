@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: De volgorde van webformulierpagina’s definiëren
-description: De volgorde van webformulierpagina’s definiëren
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Opeenvolging webformulierpagina's definiëren
+description: Opeenvolging webformulierpagina's definiëren
+feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# De volgorde van webformulierpagina’s definiëren{#defining-web-forms-page-sequencing}
+# Opeenvolging webformulierpagina&#39;s definiëren{#defining-web-forms-page-sequencing}
 
 ![](../../assets/common.svg)
 

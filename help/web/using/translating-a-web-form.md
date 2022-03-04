@@ -2,11 +2,9 @@
 product: campaign
 title: Een webformulier vertalen
 description: Een webformulier vertalen
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -19,13 +17,13 @@ ht-degree: 1%
 
 Het is mogelijk om een toepassing van het Web in verscheidene talen te lokaliseren.
 
-You can carry out translations directly in the Adobe Campaign console (refer to [Managing translations in the editor](#managing-translations-in-the-editor)), or export and import strings to externalize translation (refer to [Externalizing translation](#externalizing-translation)).
+U kunt vertalingen rechtstreeks uitvoeren in de Adobe Campaign-console (raadpleeg voor [Vertalingen beheren in de editor](#managing-translations-in-the-editor)), of tekenreeksen exporteren en importeren om de vertaling te externaliseren (zie [Externe vertaling](#externalizing-translation)).
 
 De lijst met talen die standaard beschikbaar zijn, wordt weergegeven in [Weergavetaal van formulieren wijzigen](#changing-forms-display-language).
 
-The Web application is designed in an editing language: this is the reference language used to enter labels and other content to be translated.
+De toepassing van het Web wordt ontworpen in een het uitgeven taal: dit is de referentietaal die wordt gebruikt om labels en andere te vertalen inhoud in te voeren.
 
-The default language is the language which the Web application will be displayed in if no language setting is added to its access URL.
+De standaardtaal is de taal waarin de toepassing van het Web zal worden getoond als geen taal het plaatsen aan zijn toegang URL wordt toegevoegd.
 
 >[!NOTE]
 >
@@ -47,7 +45,7 @@ Adobe Campaign beschikt over een instrument voor het vertalen en beheren van mee
 
 ## Vertalingen beheren in de editor {#managing-translations-in-the-editor}
 
-### Collecting strings {#collecting-strings}
+### Tekenreeksen verzamelen {#collecting-strings}
 
 De **[!UICONTROL Translations]** kunt u vertalingen invoeren voor de tekenreeksen die de toepassing Web vormen.
 
@@ -103,15 +101,15 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 >
 >Nadat u de tekenreeksen hebt geëxporteerd, hoeft u geen vertalingen meer uit te voeren met het geïntegreerde gereedschap. Dit zou tot een conflict leiden wanneer u de vertalingen opnieuw invoert en deze zullen verloren gaan.
 
-### Exporting files {#exporting-files}
+### Bestanden exporteren {#exporting-files}
 
-1. Select the Web application(s) whose strings you want to export, right-click, then select **[!UICONTROL Actions > Export strings for translation...]**
+1. Selecteer de webtoepassing(en) waarvan u de tekenreeksen wilt exporteren, klik met de rechtermuisknop en selecteer **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. Select an **[!UICONTROL Export strategy]** :
+1. Selecteer een **[!UICONTROL Export strategy]** :
 
-   * **[!UICONTROL One file per language]**: bij de export wordt één bestand per vertaaltaal gegenereerd . Each file will be common to all selected Web applications.
+   * **[!UICONTROL One file per language]**: bij de export wordt één bestand per vertaaltaal gegenereerd . Elk dossier zal voor alle geselecteerde toepassingen van het Web gemeenschappelijk zijn.
    * **[!UICONTROL One file per Web application]**: bij het exporteren één bestand per geselecteerde webtoepassing wordt gegenereerd. Elk bestand bevat alle vertaaltalen.
 
       >[!NOTE]
@@ -134,7 +132,7 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 >
 >De namen van exportbestanden worden automatisch gegenereerd. Als u dezelfde exportbewerking meerdere malen uitvoert, vervangt u bestaande bestanden door de nieuwe bestanden. Als u de vorige bestanden wilt behouden, wijzigt u de **[!UICONTROL Target folder]** en klik vervolgens op **[!UICONTROL Start]** opnieuw om het exporteren uit te voeren.
 
-Wanneer u bestanden exporteert in **CSV-indeling**, is elke taal gekoppeld aan een status en goedkeuringsstatus. De **Goedkeuren?** kunt u een vertaling goedkeuren. This column may contain the values **Yes** or **No**. De geïntegreerde editor (zie [Vertalingen beheren in de editor](#managing-translations-in-the-editor)), is het goedkeuren van vertalingen optioneel en blokkeert het proces niet.
+Wanneer u bestanden exporteert in **CSV-indeling**, is elke taal gekoppeld aan een status en goedkeuringsstatus. De **Goedkeuren?** kunt u een vertaling goedkeuren. Deze kolom kan de waarden bevatten **Ja** of **Nee**. De geïntegreerde editor (zie [Vertalingen beheren in de editor](#managing-translations-in-the-editor)), is het goedkeuren van vertalingen optioneel en blokkeert het proces niet.
 
 ### Bestanden importeren {#importing-files}
 
@@ -154,7 +152,7 @@ Nadat de externe vertaling is voltooid, kunt u de vertaalde bestanden importeren
 
 >[!NOTE]
 >
->Externe vertalingen hebben altijd voorrang op interne vertalingen. In case of conflicts, the internal translation will be overwritten with the external translation.
+>Externe vertalingen hebben altijd voorrang op interne vertalingen. In geval van conflicten wordt de interne vertaling overschreven door de externe vertaling.
 
 ## Weergavetaal van formulieren wijzigen {#changing-forms-display-language}
 
@@ -176,7 +174,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
 
 **Standaardsysteemwoordenboek**: sommige talen bevatten een standaardwoordenboek dat de vertaling van de systeemtekenreeksen bevat. Raadpleeg voor meer informatie hierover [De systeemtekenreeksen omzetten](#translating-the-system-strings).
 
-**Calendar management**: the pages of a Web application can include a calendar for entering dates. By default, this calendar is available in several languages (translation of days, date format).
+**Kalenderbeheer**: de pagina&#39;s van een toepassing van het Web kunnen een kalender voor het ingaan van data omvatten. Deze kalender is standaard beschikbaar in verschillende talen (vertaling van dagen, datumnotatie).
 
 <table> 
  <tbody> 
@@ -306,7 +304,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Lithuanian (lt)<br /> </td> 
+   <td> Litouws (lt)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -326,17 +324,17 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Dutch (Holland) (nl_NL)<br /> </td> 
+   <td> Nederlands (Nederland) (nl_NL)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Norwegian (Norway) (no_NO)<br /> </td> 
+   <td> Noors (Noorwegen) (nr_NO)<br /> </td> 
    <td> </td> 
-   <td> yes<br /> </td> 
+   <td> ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Polish (pl)<br /> </td> 
+   <td> Pools (pl)<br /> </td> 
    <td> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -474,6 +472,6 @@ Om de toepassingen van het Web in andere talen dan de standaardtalen te vertalen
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. Click the **[!UICONTROL Add]** button, then enter the **[!UICONTROL Internal name]**, **[!UICONTROL Label]** and identifier of the image (flag). Neem contact op met de beheerder als u een nieuwe afbeelding wilt toevoegen.
+1. Klik op de knop **[!UICONTROL Add]** en voert u vervolgens de **[!UICONTROL Internal name]**, **[!UICONTROL Label]** en id van de afbeelding (markering). Neem contact op met de beheerder als u een nieuwe afbeelding wilt toevoegen.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

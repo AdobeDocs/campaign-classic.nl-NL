@@ -2,13 +2,11 @@
 product: campaign
 title: Best practices voor workflows
 description: Meer informatie over best practices voor de campagnereschemap
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1687'
 ht-degree: 6%
 
 ---
@@ -56,9 +54,9 @@ Als u wilt weten hoe u uw logbestanden kunt leegmaken, raadpleegt u deze [docume
 
 ### Workflowuitvoering {#workflow-execution}
 
-Het is aan te raden een workflow niet meer dan om de 15 minuten te plannen, omdat dit de algehele systeemprestaties kan belemmeren en blokken in de database kan maken.
+**Een workflow niet meer dan om de 15 minuten plannen** omdat het algemene systeemprestaties kan belemmeren en blokken in het gegevensbestand kan creëren.
 
-Laat uw workflows niet pauzeren. Als u een tijdelijke werkstroom creeert, zorg ervoor het correct zal kunnen voltooien en niet in een **[!UICONTROL paused]** status. Als het wordt gepauzeerd, zou het impliceren dat u de tijdelijke lijsten moet houden en zo de grootte van het gegevensbestand verhogen. Wijs onder Workfloweigenschappen workflowtoezichthouders toe om een waarschuwing te verzenden wanneer een workflow mislukt of wordt gepauzeerd door het systeem.
+**Laat uw workflows niet in een pauzestatus staan**. Als u een tijdelijke werkstroom creeert, zorg ervoor het correct zal kunnen voltooien en niet in een **[!UICONTROL paused]** status. Als het wordt gepauzeerd, zou het impliceren dat u de tijdelijke lijsten moet houden en zo de grootte van het gegevensbestand verhogen. Wijs onder Workfloweigenschappen workflowtoezichthouders toe om een waarschuwing te verzenden wanneer een workflow mislukt of wordt gepauzeerd door het systeem.
 
 U voorkomt als volgt dat workflows worden gepauzeerd:
 
@@ -66,9 +64,11 @@ U voorkomt als volgt dat workflows worden gepauzeerd:
 * Houd uw workflows zo eenvoudig mogelijk, bijvoorbeeld door grote workflows te splitsen in verschillende workflows. U kunt **[!UICONTROL External signal]** activiteiten worden uitgevoerd op basis van de uitvoering van andere workflows.
 * Vermijd het hebben van gehandicapte activiteiten met stromen in uw werkschema&#39;s die draden open verlaten en tot vele tijdelijke lijsten leiden die veel ruimte kunnen verbruiken. Bewaar activiteiten niet in **[!UICONTROL Do not enable]** of **[!UICONTROL Enable but do not execute]** statussen in uw workflows.
 
-Stop ook ongebruikte workflows. Workflows die actief blijven, onderhouden verbindingen met de database.
+**Ongebruikte workflows stoppen**. Workflows die actief blijven, onderhouden verbindingen met de database.
 
-Gebruik alleen onvoorwaardelijke stop in de zeldzame gevallen. Deze handeling niet regelmatig gebruiken. Het niet uitvoeren van een schone sluiting op verbindingen die door werkstromen aan het gegevensbestand worden geproduceerd beïnvloedt prestaties.
+**Alleen onvoorwaardelijke stop gebruiken in de zeldzame gevallen**. Deze handeling niet regelmatig gebruiken. Het niet uitvoeren van een schone sluiting op verbindingen die door werkstromen aan het gegevensbestand worden geproduceerd beïnvloedt prestaties.
+
+**Geen meerdere stopverzoeken uitvoeren op dezelfde workflow**. Een werkstroom stoppen is een asynchroon proces: Het verzoek is geregistreerd en vervolgens worden bewerkingen door de workflowserver of servers geannuleerd. Het stoppen van een werkstroominstantie kan daarom tijd in beslag nemen, vooral als de werkstroom op meerdere servers wordt uitgevoerd, die elk de controle moeten krijgen om de actieve taken te annuleren. U voorkomt problemen door te wachten tot de stopbewerking is voltooid en te voorkomen dat een workflow meerdere keren wordt gestopt.
 
 ### Uitvoeren in de motoroptie {#execute-in-the-engine-option}
 

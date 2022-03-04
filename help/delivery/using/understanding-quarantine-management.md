@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Werken met quarantainebeheer
-description: Werken met quarantainebeheer
-feature: Monitoring
+title: Quarantainebeheer begrijpen
+description: Quarantainebeheer begrijpen
+feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '2837'
 ht-degree: 9%

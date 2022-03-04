@@ -2,11 +2,9 @@
 product: campaign
 title: Antwoorden op webformulieren
 description: Antwoorden op webformulieren
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -85,7 +83,7 @@ Dit betekent dat als de gebruiker een bedrijfsvoertuig selecteert, het formulier
 
 ## Gezamelde gegevens gebruiken {#using-collected-information}
 
-For each form, the answers provided can be re-used in the fields or the labels. De volgende syntaxis moet worden gebruikt:
+Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de velden of de labels. De volgende syntaxis moet worden gebruikt:
 
 * Voor inhoud die is opgeslagen in een veld van de database:
 

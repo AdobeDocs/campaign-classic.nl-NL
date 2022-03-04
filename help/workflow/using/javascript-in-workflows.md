@@ -2,10 +2,9 @@
 product: campaign
 title: Voorbeelden van JavaScript-code in workflows
 description: Deze voorbeelden laten zien hoe u JavaScript-code kunt gebruiken in een workflow
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
-source-git-commit: fa3a3e1801738928876734aa42342f0a5b49e320
+feature: Workflows
+exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 2%
@@ -36,11 +35,11 @@ Voer de volgende stappen uit om deze voorbeelden uit te proberen:
 
    [Meer informatie](building-a-workflow.md) over het bouwen van workflows.
 
-1. Voeg de JavaScript-code toe aan een activiteit. [Meer info](advanced-parameters.md).
+1. Voeg de JavaScript-code toe aan een activiteit. [Meer informatie](advanced-parameters.md).
 1. Sla de workflow op.
 1. Test de voorbeelden:
-   1. De workflow starten. [Meer info](starting-a-workflow.md).
-   1. Open het dagboek. [Meer info](monitoring-workflow-execution.md#displaying-logs).
+   1. De workflow starten. [Meer informatie](starting-a-workflow.md).
+   1. Open het dagboek. [Meer informatie](monitoring-workflow-execution.md#displaying-logs).
 
 ## Voorbeeld 1: schrijven naar de database{#write-example}
 
@@ -81,7 +80,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Een record bijwerken
 
-Gebruik de `_update` bewerking. [Meer info](../../configuration/using/data-oriented-apis.md).
+Gebruik de `_update` bewerking. [Meer informatie](../../configuration/using/data-oriented-apis.md).
 
 Geef deze informatie op als XML-kenmerken:
 
@@ -101,7 +100,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Een record verwijderen
 
-Gebruik de `DeleteCollection` methode. [Meer info](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
+Gebruik de `DeleteCollection` methode. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
 
 Geef deze informatie op:
 
@@ -361,8 +360,8 @@ U kunt werkstromen programmatically, bijvoorbeeld, in technische werkschema&#39;
 
 Workflowactivering werkt door het gebruik van gebeurtenissen. U kunt deze functies voor gebeurtenissen gebruiken:
 
-* Als u een gebeurtenis wilt posten, kunt u de statische `PostEvent` methode. [Meer info](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
-* Als u een gebeurtenis wilt ontvangen, kunt u de opdracht **[!UICONTROL External signal]** activiteit. [Meer info](external-signal.md).
+* Als u een gebeurtenis wilt posten, kunt u de statische `PostEvent` methode. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
+* Als u een gebeurtenis wilt ontvangen, kunt u de opdracht **[!UICONTROL External signal]** activiteit. [Meer informatie](external-signal.md).
 
 U kunt workflows op verschillende manieren activeren:
 
@@ -428,10 +427,10 @@ Voer de volgende stappen uit:
 
 1. Definieer de query:
 
-   * Een entiteit ophalen met de opdracht `create` methode op het overeenkomstige schema, bijvoorbeeld `xtk:workflow` schema. [Meer info](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
+   * Een entiteit ophalen met de opdracht `create` methode op het overeenkomstige schema, bijvoorbeeld `xtk:workflow` schema. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
    * Gebruik de `queryDef` om een SQL-query uit te geven.
 
-1. Voer de query uit met de `ExecuteQuery` methode. [Meer info](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
+1. Voer de query uit met de `ExecuteQuery` methode. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
 
    Gebruik de `for each` om de resultaten op te halen.
 

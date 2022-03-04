@@ -2,11 +2,9 @@
 product: campaign
 title: Een enquête ontwerpen
 description: Belangrijke stappen leren om een enquête te ontwerpen
-audience: web
-content-type: reference
-topic-tags: online-surveys
+feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -47,7 +45,7 @@ Met de velden in een formulier kunnen gebruikers gegevens invoeren en opties sel
 
 Wanneer u een veld aan een enquête toevoegt, moet u het type van het veld selecteren. De volgende opties zijn beschikbaar:
 
-1. **[!UICONTROL Answer a question]**: Met deze optie kunt u een nieuw veld (gearchiveerd veld) declareren waarin antwoorden kunnen worden opgeslagen. In dit geval worden alle verzamelde waarden opgeslagen, zelfs wanneer een deelnemer het formulier meerdere keren invult. Deze opslagmodus is alleen beschikbaar in **Enquêtes**. [Meer info](../../surveys/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Answer a question]**: Met deze optie kunt u een nieuw veld (gearchiveerd veld) declareren waarin antwoorden kunnen worden opgeslagen. In dit geval worden alle verzamelde waarden opgeslagen, zelfs wanneer een deelnemer het formulier meerdere keren invult. Deze opslagmodus is alleen beschikbaar in **Enquêtes**. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Edit a recipient]**: met deze optie kunt u een veld in de database selecteren. In dit geval worden de gebruikersantwoorden in dit veld opgeslagen. Voor elke deelnemer wordt alleen de laatste opgeslagen waarde behouden en toegevoegd aan de profielgegevens.
 1. **[!UICONTROL Add a variable]**: Met deze optie kunt u een instelling maken die ervoor zorgt dat informatie niet in de database wordt opgeslagen. Lokale variabelen kunnen upstream worden gedeclareerd. U kunt de knoppen ook rechtstreeks toevoegen wanneer u het veld maakt.
 1. **[!UICONTROL Import an existing question]**: met deze optie kunt u bestaande vragen importeren die in andere enquêtes zijn gemaakt.
@@ -91,12 +89,12 @@ Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple v
 >[!CAUTION]
 >
 >* Deze functionaliteit is alleen beschikbaar voor **Enquête** typt u formulieren.
->* Deze optie is niet compatibel met willekeurige vraagweergave. [Meer info](#adding-questions).
+>* Deze optie is niet compatibel met willekeurige vraagweergave. [Meer informatie](#adding-questions).
 
 
 ### Vragen toevoegen {#adding-questions}
 
-Er zijn twee typen containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer info](../../web/using/about-web-forms.md).
+Er zijn twee typen containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer informatie](../../web/using/about-web-forms.md).
 
 Een **Vraag** container om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
 

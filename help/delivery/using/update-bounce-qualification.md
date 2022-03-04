@@ -2,8 +2,9 @@
 product: campaign
 title: Kwalificatie van niet-bezorging bijwerken na een ISP-uitval
 description: Leer hoe te om stuitkwalificatie na een ISP stroomonderbreking bij te werken
+feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%

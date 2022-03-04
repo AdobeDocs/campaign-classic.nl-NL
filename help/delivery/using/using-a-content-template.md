@@ -2,11 +2,9 @@
 product: campaign
 title: Een contentsjabloon gebruiken
 description: Een contentsjabloon gebruiken
-audience: delivery
-content-type: reference
-topic-tags: content-management
+feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -23,17 +21,17 @@ Er kan rechtstreeks naar inhoudssjablonen worden verwezen en deze kunnen worden 
 
 Ze kunnen ook worden gebruikt om inhoudsinstanties te maken. Zodra zij zijn gecreeerd, zijn deze instanties klaar om te worden geleverd (verwijs naar [Inhoudsinstantie leveren](#delivering-a-content-instance)) of geëxporteerd (zie [Inhoudsinstanties maken](#creating-a-content-instance)).
 
-## Creating a delivery via content management {#creating-a-delivery-via-content-management}
+## Levering maken via contentbeheer {#creating-a-delivery-via-content-management}
 
 U kunt in een levering naar een inhoudssjabloon verwijzen om invoervelden te gebruiken om inhoud in te voeren. Er wordt een extra tabblad toegevoegd aan de wizard voor levering voor het definiëren van inhoud voor levering.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-The layout will be applied automatically based on the selected settings. Klik op de knop **[!UICONTROL HTML preview]** (of **[!UICONTROL Text preview]** ) en selecteer een ontvanger om personalisatie-elementen te testen.
+De lay-out wordt automatisch toegepast op basis van de geselecteerde instellingen. Klik op de knop **[!UICONTROL HTML preview]** (of **[!UICONTROL Text preview]** ) en selecteer een ontvanger om personalisatie-elementen te testen.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-For more on this, refer to the full implementation example: [Creating content in the delivery wizard](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de wizard voor levering](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Inhoudsinstanties maken {#creating-a-content-instance}
 
@@ -65,7 +63,7 @@ Voer de volgende stappen uit:
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
-1. If necessary, once the content is approved it can be generated using the appropriate button on the toolbar.
+1. Indien nodig kan de inhoud worden gegenereerd met de desbetreffende knop op de werkbalk nadat de inhoud is goedgekeurd.
 
    ![](assets/s_ncs_content_folder_template_generate.png)
 
@@ -77,7 +75,7 @@ Voer de volgende stappen uit:
 
 ## Inhoudsinstantie leveren {#delivering-a-content-instance}
 
-To create a content instance and deliver it, a delivery template needs to be linked to the publication template used to generate this content. Raadpleeg voor meer informatie hierover [Aflevering](publication-templates.md#delivery).
+Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Raadpleeg voor meer informatie hierover [Aflevering](publication-templates.md#delivery).
 
 Bovendien moet de opslagmap voor inhoud worden toegewezen aan inhoud die is ontleend aan deze publicatiesjabloon (wanneer u met een inhoudsmap meerdere typen inhoud kunt genereren, kunnen leveringen niet automatisch worden gemaakt).
 

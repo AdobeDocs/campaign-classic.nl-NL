@@ -2,8 +2,9 @@
 product: campaign
 title: De mobiele Android-toepassing configureren in Adobe Campaign
 description: Leer hoe u uw mobiele toepassing instelt voor Android
+feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%

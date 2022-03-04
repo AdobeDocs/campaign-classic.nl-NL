@@ -2,11 +2,9 @@
 product: campaign
 title: Velden toevoegen aan een webformulier
 description: Velden toevoegen aan een webformulier
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: a5f6478d3c0780464974053e389923614abba582
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 1%
@@ -377,7 +375,6 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 >* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor veilige de plaatsen van het typeIntranet slechts.
 >* Als verscheidene servers met de instantie (lading het in evenwicht brengen architectuur) worden verbonden, moet u ervoor zorgen vraag aan de vorm van het Web op de zelfde server aankomt.
 >* Deze implementaties vereisen de hulp van het Adobe Campaign Consulting-team.
-
 >
 
 

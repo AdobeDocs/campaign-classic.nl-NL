@@ -2,9 +2,9 @@
 product: campaign
 title: Leveringsstatussen
 description: Meer informatie over de statussen die beschikbaar zijn op het dashboard voor levering
-feature: Monitoring
+feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 4%

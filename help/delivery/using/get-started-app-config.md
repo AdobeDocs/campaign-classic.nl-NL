@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: 'De mobiele applicatie configureren in Adobe Campaign '
+title: 'De mobiele toepassing configureren in Adobe Campaign '
 description: Leer hoe u begint met de configuratie van de mobiele toepassing
-audience: delivery
-content-type: reference
-topic-tags: sending-push-notifications
+feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
