@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2f22f1a3cbf0dccb6872718ea4e0bd20b257c169
+source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 83%
+source-wordcount: '1273'
+ht-degree: 82%
 
 ---
 
@@ -48,6 +48,10 @@ Er zijn verschillende beveiligingsverbeteringen aangebracht in FDA-accounts:
 * Wanneer u uw externe FDA-account configureert, kunt u zich nu aanmelden bij uw Snowflake-account met behulp van sleutelpaarverificatie voor verbeterde verificatiebeveiliging. [Meer informatie](../../installation/using/configure-fda-snowflake.md)
 * Wanneer u uw externe FDA-account configureert, kunt u zich nu aanmelden bij uw Azure Synapse Analytics-account met behulp van de door het systeem toegewezen beheerde identiteit. [Meer informatie](../../installation/using/configure-fda-synapse.md#azure-external)
 * Alle verwijzingen naar de log4j-bibliotheek zijn uit Campaign verwijderd om een optimale beveiliging te garanderen.
+
+**Compatibiliteitsupdates**
+
+Adobe Campaign is nu compatibel met Windows Server 2019. Zie de [Matrix voor campagnecompatibiliteit](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
 **Verbeteringen**
 
