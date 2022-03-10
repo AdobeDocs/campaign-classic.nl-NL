@@ -4,10 +4,10 @@ title: Terugkerende levering
 description: Meer informatie over de activiteit van de workflow Terugkerende levering
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 17%
 
 ---
 
@@ -39,9 +39,12 @@ A **terugkerende levering** wordt elke keer dat het wordt uitgevoerd, een nieuwe
 
 ![Terugkerende levering](assets/delivery_recurring.jpg)
 
+Als u een terugkerende levering wilt tegenhouden van het lopen, zou u de campagne volledig moeten annuleren of de werkschema ophouden uitvoerend het. Als u de levering stopt vanaf het Campagne-dashboard, wordt alleen de levering gestopt: de volgende exemplaren van de terugkerende levering zullen bij elke werkschemauitvoering verder worden gecreeerd.
+
 >[!NOTE]
 >
->Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** type activiteit.\
+>Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** type activiteit.
+> 
 >Om een levering via een campagnewerkschema direct tot stand te brengen, gebruik de kanaal specifieke activiteiten die (b.v. **[!UICONTROL Email delivery]**).
 
 ## Tutorial video (#repeat-delivery-video)

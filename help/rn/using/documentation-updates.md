@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
 workflow-type: tm+mt
-source-wordcount: '4887'
+source-wordcount: '4903'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,8 @@ De sectie Quarantaine vs Lijsten van ongewenste personen is verduidelijkt. [Meer
 De secties over het verzenden van een adres naar quarantaine en het verwijderen van adressen uit de quarantainelijst zijn bijgewerkt. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Er is een aanbevolen werkwijze toegevoegd voor de workflow om niet meerdere stopaanvragen uit te voeren in dezelfde workflow. [Meer informatie](../../workflow/using/workflow-best-practices.md)
+
+Informatie toegevoegd over hoe u kunt voorkomen dat een terugkerende levering wordt uitgevoerd binnen een campagne. [Meer informatie](../../workflow/using/recurring-delivery.md)
 
 ### Januari 2022 {#january-2022}
 
