@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -25,17 +25,17 @@ _1 maart 2022_
 
 **Patches**
 
-* Probleem verholpen tijdens het configureren van de **Webanalyse** externe account, die ervoor zorgde dat de integratiestatus altijd &#39;Integratie succesvol&#39; weergaf, zelfs als er fouten optraden. (NEO-36672)
-* Oplossing voor verschillende postupgradefouten die te maken hadden met het mechanisme van de reeks-id bij een negatieve id. (NEO-43205, NEO-42846, NEO-42845)
-* Probleem verholpen tijdens het gebruik van de **Webanalyse** externe account met terugkerende en doorlopende leveringen, waardoor gegevens van de externe rekening gedeeltelijk verloren zijn gegaan. (NEO-38548)
-* Probleem verholpen waardoor de postupgrade vertraagde bij het bijwerken van de tabel NmsActiveContact. (NEO-43206)
-* Probleem verholpen met een fout na de upgrade die optrad als mappen buiten het vak waren verplaatst van het dialoogvenster **Beheer** naar een andere locatie. (NEO-42875)
-* Probleem verholpen bij het gebruik van een **Gegevens bijwerken** workflowactiviteit die kan voorkomen dat het ontvangende schema wordt bijgewerkt met de ontvangende gegevens uit een externe Google Cloud-database. (NEO-42343)
-* Probleem verholpen tijdens naupgrade met betrekking tot de Adobe Analytics-aansluiting. (NEO-43318, NEO-38136)
-* Probleem verholpen met een overschreven CUID door &#39;VALUE_TO_CHANGE&#39; tijdens postupgrade. (NEO-43267)
-* Probleem verholpen dat tot fouten leidde bij het synchroniseren van de mid-sourcing en marketing instanties in een multi-mid configuratie. (NEO-10432)
-* Probleem verholpen dat tot een fout leidde bij het vernieuwen van de leverbare werkstroom wanneer er meer dan 1000 uitzendingen tegelijk werden aangeboden. (NEO-40276)
-* Probleem verholpen waardoor de open ratio niet kon worden bijgewerkt en op leveringsindicatoren voor de verhouding kon worden geklikt. (NEO-43253)
+* Er is een probleem opgelost bij het configureren van het externe account **Webanalytics** die altijd de integratiestatus &#39;Integratie succesvol&#39; weergaf, zelfs als er fouten optraden. (NEO-36672)
+* Verschillende postupgradefouten opgelost met het mechanisme voor de sequentie-ID bij negatieve ID&#39;s. (NEO-43205, NEO-42846, NEO-42845)
+* Er is een probleem opgelost bij het gebruik van het externe account **Webanalytics** met terugkerende en continue leveringen, waardoor gegevens van het externe account gedeeltelijk verloren gingen. (NEO-38548)
+* Er is een probleem opgelost dat de postupgrade vertraagde bij het bijwerken van de tabel NmsActiveContact. (NEO-43206)
+* Er is een probleem opgelost met een postupgradefout die optrad als kant-en-klare mappen waren verplaatst van de **Beheer**-node naar een andere locatie. (NEO-42875)
+* Er is een probleem opgelost met het gebruik van een workflowactiviteit **Gegevens bijwerken** waardoor het schema van de ontvanger niet kon worden bijgewerkt met gegevens van de ontvanger uit een externe Google Cloud-database. (NEO-42343)
+* Er is een probleem opgelost tijdens de postupgrade met betrekking tot de Adobe Analytics-connector. (NEO-43318, NEO-38136)
+* Er is een probleem opgelost met een overschreven CUID door VALUE_TO_CHANGE tijdens de postupgrade. (NEO-43267)
+* Er is een probleem opgelost dat leidde tot fouten bij het synchroniseren van de mid-sourcing- en marketinginstanties op een multi-mid-configuratie. (NEO-10432)
+* Er is een probleem opgelost dat leidde tot een fout bij het vernieuwen van de afleveringsworkflow bij meer dan 1000 brede logboeken tegelijk. (NEO-40276)
+* Er is een probleem opgelost waardoor de leveringsindicatoren voor de open-ratio en de click-ratio niet automatisch werden bijgewerkt. (NEO-43253)
 
 ## ![](assets/do-not-localize/limited_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
 
