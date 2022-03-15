@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 5%
 
 ---
@@ -21,13 +21,13 @@ Met behulp van webtoepassingen kunt u in de module Campagne Social Marketing gep
 
 >[!NOTE]
 >
->U kunt Adobe Campaign ook integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval hoeft u de Adobe Campaign-webtoepassing niet te gebruiken voor het aanschaffen van Facebook-profielen. [Meer info](#configuring-external-accounts).
+>U kunt Adobe Campaign ook integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval hoeft u de Adobe Campaign-webtoepassing niet te gebruiken voor het aanschaffen van Facebook-profielen. [Meer informatie](#configuring-external-accounts).
 
 ![](assets/social_webapp_fb_000.png)
 
 Configuratiestappen zijn:
 
-1. Maak een of meer Facebook-toepassingen. [Meer informatie](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. Maak een of meer Facebook-toepassingen.
 1. Voer de **[!UICONTROL terms of service]** en **[!UICONTROL Privacy policy]** koppelingen die moeten worden weergegeven op het scherm voor Facebook-machtigingsaanvragen. [Meer informatie](#entering-the-terms-of-service-and-privacy-policy-links)
 1. Voor elke Facebook-toepassing maakt u een **[!UICONTROL Facebook Connect]** type external account. [Meer informatie](#configuring-external-accounts)
 1. Maak voor elke Facebook-toepassing een Facebook-webtoepassing in Adobe Campaign. [Meer informatie](#creating-a-facebook-type-web-application)

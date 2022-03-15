@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2555'
-ht-degree: 100%
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 99%
 
 ---
 
@@ -585,14 +585,12 @@ ht-degree: 100%
    + [Social marketing](social/using/about-social-marketing.md)
    + Configuratie {#configuration}
       + [Workflows starten](social/using/starting-workflows.md)
-      + [Publiceren op Facebook-pagina&#39;s](social/using/publishing-on-facebook-walls.md)
       + [Een Facebook-applicatie maken](social/using/creating-a-facebook-application.md)
       + [Publicatie op Twitter configureren](social/using/configuring-publishing-on-twitter.md)
-   + Publiceren op social media {#publishing-on-facebook-twitter}
-      + [Aan de slag met social media](social/using/overview.md)
-      + [Publiceren op Facebook](social/using/publishing-on-facebook.md)
+   + Publiceren op Twitter {#publishing-on-facebook-twitter}
+      + [Aan de slag met Twitter](social/using/overview.md)
       + [Publiceren op Twitter](social/using/publishing-on-twitter.md)
-   + Bijlagen {#annexes}
+   + Facebook-contactpersonen ophalen {#annexes}
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Installatie- en configuratiehandleiding {#installing-campaign-classic}
@@ -653,7 +651,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
