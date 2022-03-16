@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
+source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 98%
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 9349 {#release-7-2-2}
 
 _1 maart 2022_
+
+>[!NOTE]
+>
+> Deze build is compatibel met clientconsole versie 7.2.1.
 
 **Patches**
 
@@ -37,6 +41,7 @@ _1 maart 2022_
 * Er is een probleem opgelost dat leidde tot een fout bij het vernieuwen van de afleveringsworkflow bij meer dan 1000 brede logboeken tegelijk. (NEO-40276)
 * Er is een probleem opgelost waardoor de leveringsindicatoren voor de open-ratio en de click-ratio niet automatisch werden bijgewerkt. (NEO-43253)
 
+
 ## ![](assets/do-not-localize/limited_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
 
 _10 januari 2022_
@@ -51,7 +56,7 @@ Er zijn verschillende beveiligingsverbeteringen aangebracht in FDA-accounts:
 
 **Compatibiliteitsupdates**
 
-Adobe Campaign is nu compatibel met Windows Server 2019. Zie de [Matrix voor campagnecompatibiliteit](../../rn/using/compatibility-matrix.md#OperatingSystems).
+Adobe Campaign is nu compatibel met Windows Server 2019. Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
 **Verbeteringen**
 
