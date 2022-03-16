@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 47%
+source-wordcount: '243'
+ht-degree: 48%
 
 ---
 
@@ -18,17 +18,15 @@ ht-degree: 47%
 
 * **[Release-programma 2022](technotes/using/dc-migration.md)**<br/> Upgrade uw omgeving en verbeter de beveiliging, infrastructuur en prestaties
 
-* **[Release januari is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+* **[Release maart is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen, en moeilijke situaties in de Nota&#39;s van de Versie
 
 * **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
-
-* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne nadat** 30 juni 2021 **
 
 * **[Onjuiste harde grenzen verwijderen](delivery/using/update-bounce-qualification.md)**<br/> Meer informatie over het bijwerken van onjuiste harde grenzen na Apple-storing
 
 * **[Beveilig uw instanties van de Campagne](technotes/using/acc-config-updates.md)**<br/> Update naar de nieuwste builds om uw campagneplatform te beveiligen
 
-* **[Adobe Experience Cloud Triggers-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet migreren naar Adobe I/O.
+* **[Adobe Experience Cloud Triggers-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet migreren naar Adobe I/O
 
 [Meer updates](rn/using/documentation-updates.md)
 
@@ -85,6 +83,6 @@ ht-degree: 47%
 | [Release-opmerkingen](rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
-| [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
+| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html) |
+| [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
 | [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
