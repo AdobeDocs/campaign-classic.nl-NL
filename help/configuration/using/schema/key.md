@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Schema-elementen en -kenmerken
+title: Schemaelementen en -kenmerken - hoofdelement
 description: sleutelelement
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

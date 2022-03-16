@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Gegevensschema’s
-description: Gegevensschema’s
+title: Gegevensschema's gebruiken in campagne
+description: Leer hoe u gegevensschema's kunt gebruiken in Campagne
 feature: Data Model
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
-# Gegevensschema’s{#data-schemas}
+# Gegevensschema&#39;s gebruiken in campagne{#data-schemas}
 
 ![](../../assets/common.svg)
 
