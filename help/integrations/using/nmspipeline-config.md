@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: De integratie configureren
-description: De integratie configureren
+title: Pipelineoptie NmsPipeline_Config
+description: Pipelineoptie NmsPipeline_Config
 audience: integrations
 content-type: reference
-source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '374'
+ht-degree: 3%
 
 ---
 
@@ -77,7 +77,7 @@ De parameter &quot;consument&quot; identificeert het geval als een van deze cons
 ## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
 Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
-Ervoor zorgen dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
+Zorg ervoor dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumer&quot; is een unieke tekenreeks die de instantie van de server uniek identificeert. Dit kan doorgaans de instantienaam zelf zijn. Voor meerdere omgevingen (dev/stage/prod) dient u ervoor te zorgen dat deze uniek zijn voor elk van deze omgevingen, zodat elke instantie een kopie van het bericht krijgt.
