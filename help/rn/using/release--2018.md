@@ -1,15 +1,16 @@
 ---
 product: campaign
-title: Release van Campaign Classic 2018
-description: Meer informatie over de release van Campaign Classic 2018
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Releases van Campaign Classic 2018
+description: Meer informatie over Campaign Classic 2018-releases
+exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
+source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
 workflow-type: tm+mt
 source-wordcount: '5414'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# releases van 2018{#release-2018}
+# Releases van 2018{#release-2018}
 
 ![](../../assets/v7-only.svg)
 
