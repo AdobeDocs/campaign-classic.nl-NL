@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4932'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 Er is een gedetailleerde beschrijving toegevoegd voor de **[!UICONTROL Test SMTP delivery]** optie. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-De overzichtssectie Opmerkingen bij de release is bijgewerkt om de richtlijnen voor upgrades van de Campagneconsole te verduidelijken. [Meer informatie](../../rn/using/rn-overview.md)
+De pagina Aan de slag met upgrades is bijgewerkt om de richtlijnen voor upgrades van de Campagneconsole te verduidelijken. [Meer informatie](../../rn/using/rn-overview.md)
 
 De nieuwe build voor campagne v7.2.2 is nu beschikbaar. [Meer informatie](../../rn/using/latest-release.md)
 
@@ -69,7 +69,7 @@ Optie voor batchupdate toegevoegd in de activiteit van de CRM-connector. [Meer i
 
 ### December 2021{#dec-2021}
 
-De aanvullende informatie voor Campaign Classic v7 is gereorganiseerd om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
+Opmerkingen bij de release van Campaign Classic v7 zijn opnieuw ingedeeld om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
 
 De documentatie over de bewerking van formulieren in Campaign is bijgewerkt en verbeterd. [Meer informatie](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets,
 
 ### Juni 2021 {#june-2021}
 
-De sectie **Transactional Messaging** is gereorganiseerd en verduidelijkt met een nieuwe sectie Aan de slag, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
+De **Transactieberichten** deze sectie is gereorganiseerd en verduidelijkt met een nieuwe sectie Aan de slag, die een [uitgebreid schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
 **Documentatie-updates die bij de 21.1.3-release worden geleverd**
 
@@ -156,7 +156,7 @@ Er is een nieuwe technische opmerking gemaakt waarin wordt uitgelegd hoe u de bo
 
 ### Maart 2021 {#march-2021}
 
-De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu in speciale secties leren hoe u [het sms-kanaal configureert](../../delivery/using/sms-set-up.md), [een sms maakt](../../delivery/using/sms-create.md) en [een sms verzendt en volgt](../../delivery/using/sms-send.md).
+De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu leren hoe u [het SMS-kanaal configureren](../../delivery/using/sms-set-up.md), [een SMS-bericht maken](../../delivery/using/sms-create.md), [SMS verzenden en volgen](../../delivery/using/sms-send.md) in specifieke afdelingen.
 
 De pagina Help en ondersteuningsopties voor Campaign Classic is geïntegreerd in de belangrijkste documentatie. [Meer informatie](../../support.md)
 
@@ -285,7 +285,7 @@ Documentatiepagina’s zijn bijgewerkt met de Tomcat 8-update.
 
 Er zijn details toegevoegd aan de beschrijving in het vak Over in de sectie Adobe Campaign-versie ophalen. [Meer informatie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Er zijn richtlijnen voor het uitvoeren van een buildupgrade toegevoegd aan de sectie Adobe Campaign Classic bijwerken. Meer informatie [Meer informatie](../../production/using/build-upgrade.md)
+Er zijn richtlijnen voor het uitvoeren van een buildupgrade toegevoegd aan de sectie Adobe Campaign Classic bijwerken. [Meer informatie](../../production/using/build-upgrade.md)
 
 Er zijn veelgestelde vragen over upgrades van de Campaign-build toegevoegd aan de algemene vragen over Campaign. Meer informatie [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Er staan nieuwe gebruiksscenario’s in de lijst met [workflowgebruiksscenario�
 * Een instantievariabele in een query aanroepen
 * Een gesplitst percentage toepassen op een populatie
 
-De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende informatie over het gebruik ervan, en met een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
+De **[!UICONTROL AND-join]** de sectie activiteit is verrijkt met aanvullende informatie over het gebruik ervan en een opmerking over het gebruik van variabelen . [Meer informatie](../../workflow/using/and-join.md)
 
 ### Juli 2020 {#july-2020}
 
@@ -612,7 +612,7 @@ Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
 Er is een nieuwe lijst met veelgestelde vragen voor een buildupgrade gemaakt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html)
 
-De [compatibiliteitsmatrix](compatibility-matrix.md) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK’s. De 19.0-compatibiliteitsmatrix is gearchiveerd.
+De [compatibiliteitsmatrix](compatibility-matrix.md) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, Android/iOS-versies en verwante SDK&#39;s. De 19.0-compatibiliteitsmatrix is gearchiveerd.
 
 De pagina met verouderde en verwijderde functies in Campaign Classic is bijgewerkt. [Meer informatie](deprecated-features.md)
 
@@ -626,7 +626,7 @@ De handleidingen om aan de slag te gaan met [beveiliging](https://helpx.adobe.co
 
 De beschrijving van de optie van de workflow voor voorverwerking is bijgewerkt om de productwijzigingen weer te geven. [Meer informatie](../../workflow/using/data-loading--file-.md)
 
-De technische opmerking over Marketing Cloud-triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
+Het Experience Cloud Triggers-technologie is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
 De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -681,7 +681,7 @@ Er is informatie toegevoegd over querybanding voor het externe Teradata-account.
 
 ### Januari 2019{#release-doc-16-01-2019}
 
-De technische opmerking over Marketing Cloud-triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
+Het Experience Cloud Triggers-technologie is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
 Er is een opmerking toegevoegd aan de sectie over aanbiedingsgoedkeuring om te specificeren dat de vermelding Goedgekeurde content aangeeft dat het goedkeuringsproces voor de content is voltooid, ongeacht of alle aanbiedingen zijn ingeschakeld/goedgekeurd of niet. [Meer informatie](../../interaction/using/offer-catalog-overview.md)
 
