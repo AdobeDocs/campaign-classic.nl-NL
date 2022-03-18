@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '4903'
-ht-degree: 100%
+source-wordcount: '4938'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,16 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## 2022
+
+
+### Maart 2022 {#mar-2022}
+
+Er is een gedetailleerde beschrijving toegevoegd voor de **[!UICONTROL Test SMTP delivery]** optie. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+
+De overzichtssectie Opmerkingen bij de release is bijgewerkt om de richtlijnen voor upgrades van de Campagneconsole te verduidelijken. [Meer informatie](../../rn/using/rn-overview.md)
+
+De nieuwe build voor campagne v7.2.2 is nu beschikbaar. [Meer informatie](../../rn/using/latest-release.md)
+
 
 ### Februari 2022 {#february-2022}
 

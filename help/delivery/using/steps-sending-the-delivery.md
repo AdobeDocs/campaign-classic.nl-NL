@@ -4,9 +4,9 @@ title: De levering configureren en verzenden
 description: Leer hoe te vormen en de levering te verzenden
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1556'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,16 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
    >
    >Wanneer de levering wordt gedupliceerd, wordt de parameter opnieuw ingesteld.
 
-* **[!UICONTROL Send using multiple waves]**: Raadpleeg voor meer informatie hierover [Verzenden met meerdere golven](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Gebruik deze optie om uw berichten in golven, eerder dan aan uw volledig publiek te verzenden. Configureer het aantal batches en hun verhouding. [Meer informatie](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Deze optie staat u toe om het verzenden van een levering via SMTP te testen. De levering wordt verwerkt tot verbinding aan de server SMTP maar niet verzonden.
+* **[!UICONTROL Test SMTP delivery]**: Gebruik deze optie om het verzenden via SMTP te testen. De levering wordt verwerkt tot verbinding aan de server SMTP maar niet verzonden: voor elke ontvanger van de levering, verbindt de Campagne met de SMTP leverancierserver, voert SMTP RCPT aan bevel uit, en sluit de verbinding vóór het bevel van SMTP DATA.
 
    >[!NOTE]
    >
-   >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen. Voor meer bij het vormen van een server SMTP, verwijs [aan deze sectie](../../installation/using/configure-delivery-settings.md).
+   >* Deze optie wordt niet aanbevolen bij midsourcing.
+   >
+   >* Meer informatie over SMTP-serverconfiguratie vindt u in [deze sectie](../../installation/using/configure-delivery-settings.md).
+
 
 * **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](sending-messages.md#archiving-emails) voor meer informatie.
 

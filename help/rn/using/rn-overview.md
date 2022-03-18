@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 329cf80ff021322e57a63cf86f4b4e206f6385d1
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 97%
@@ -31,7 +31,7 @@ Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
 
 ![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt.
 
-## Releasecyclus
+## Releasecyclus{#rn-cycle}
 
 Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
