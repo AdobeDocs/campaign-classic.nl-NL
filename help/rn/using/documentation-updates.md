@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### Maart 2022 {#mar-2022}
 
-Er is een gedetailleerde beschrijving toegevoegd voor de **[!UICONTROL Test SMTP delivery]** optie. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+Er is een gedetailleerde beschrijving toegevoegd voor de optie **[!UICONTROL Test SMTP delivery]**. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-De pagina Aan de slag met upgrades is bijgewerkt om de richtlijnen voor upgrades van de Campagneconsole te verduidelijken. [Meer informatie](../../rn/using/rn-overview.md)
+De pagina Aan de slag met upgrades is bijgewerkt om de upgraderichtlijnen van de Campaign Console te verduidelijken. [Meer informatie](../../rn/using/rn-overview.md)
 
-De nieuwe build voor campagne v7.2.2 is nu beschikbaar. [Meer informatie](../../rn/using/latest-release.md)
+De nieuwe build voor Campaign v7.2.2 is nu beschikbaar. [Meer informatie](../../rn/using/latest-release.md)
 
 
 ### Februari 2022 {#february-2022}
@@ -69,7 +69,7 @@ Optie voor batchupdate toegevoegd in de activiteit van de CRM-connector. [Meer i
 
 ### December 2021{#dec-2021}
 
-Opmerkingen bij de release van Campaign Classic v7 zijn opnieuw ingedeeld om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
+De aanvullende informatie voor Campaign Classic v7 is opnieuw ingedeeld om de navigatie te vereenvoudigen. [Meer informatie](rn-overview.md)
 
 De documentatie over de bewerking van formulieren in Campaign is bijgewerkt en verbeterd. [Meer informatie](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets,
 
 ### Juni 2021 {#june-2021}
 
-De **Transactieberichten** deze sectie is gereorganiseerd en verduidelijkt met een nieuwe sectie Aan de slag, die een [uitgebreid schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
+De sectie **Transactionele berichten** is opnieuw ingedeeld en verduidelijkt met een nieuwe sectie Aan de slag, inclusief een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter begrip van het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
 **Documentatie-updates die bij de 21.1.3-release worden geleverd**
 
@@ -156,7 +156,7 @@ Er is een nieuwe technische opmerking gemaakt waarin wordt uitgelegd hoe u de bo
 
 ### Maart 2021 {#march-2021}
 
-De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu leren hoe u [het SMS-kanaal configureren](../../delivery/using/sms-set-up.md), [een SMS-bericht maken](../../delivery/using/sms-create.md), [SMS verzenden en volgen](../../delivery/using/sms-send.md) in specifieke afdelingen.
+De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu in speciale secties ontdekken hoe u [het sms-kanaal configureert](../../delivery/using/sms-set-up.md), [een sms maakt](../../delivery/using/sms-create.md), [sms verzendt en volgt](../../delivery/using/sms-send.md).
 
 De pagina Help en ondersteuningsopties voor Campaign Classic is geïntegreerd in de belangrijkste documentatie. [Meer informatie](../../support.md)
 
@@ -344,7 +344,7 @@ Er staan nieuwe gebruiksscenario’s in de lijst met [workflowgebruiksscenario�
 * Een instantievariabele in een query aanroepen
 * Een gesplitst percentage toepassen op een populatie
 
-De **[!UICONTROL AND-join]** de sectie activiteit is verrijkt met aanvullende informatie over het gebruik ervan en een opmerking over het gebruik van variabelen . [Meer informatie](../../workflow/using/and-join.md)
+De sectie **[!UICONTROL AND-join]** over activiteit is verrijkt met aanvullende informatie over het gebruik ervan en een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
 
 ### Juli 2020 {#july-2020}
 
@@ -472,7 +472,7 @@ De handleidingen inzake [installatie](../../installation/using/general-architect
 
 De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
 
-De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 Een best practice over IP-affiniteit is toegevoegd aan de installatiehandleiding. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ De nieuwe parameter voor rapportconfiguratie van URL’s is [hier](../../reporti
 
 De pagina over de **On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic** is bijgewerkt met de nieuwe FDA-connectoren. [Meer informatie](../../installation/using/capability-matrix.md).
 
-De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 De nieuwe workflow **[!UICONTROL Cleanup of Nmsaddress]** is [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) gedocumenteerd.
 
@@ -542,7 +542,7 @@ Beveiligde sms-berichten (TLS) - [Meer informatie](https://helpx.adobe.com/nl/ca
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status Zo snel mogelijk starten blijft in een campagne. [Meer informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ De best practices voor prestatiesverbeteringen van workflows en leveringen zijn 
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
-Configuratiescherm - [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Configuratiescherm - [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 
 Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
 Er is een nieuwe lijst met veelgestelde vragen voor een buildupgrade gemaakt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html)
 
-De [compatibiliteitsmatrix](compatibility-matrix.md) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, Android/iOS-versies en verwante SDK&#39;s. De 19.0-compatibiliteitsmatrix is gearchiveerd.
+De [compatibiliteitsmatrix](compatibility-matrix.md) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, Android/iOS-versies en gerelateerde SDK&#39;s. De 19.0-compatibiliteitsmatrix is gearchiveerd.
 
 De pagina met verouderde en verwijderde functies in Campaign Classic is bijgewerkt. [Meer informatie](deprecated-features.md)
 
@@ -626,9 +626,9 @@ De handleidingen om aan de slag te gaan met [beveiliging](https://helpx.adobe.co
 
 De beschrijving van de optie van de workflow voor voorverwerking is bijgewerkt om de productwijzigingen weer te geven. [Meer informatie](../../workflow/using/data-loading--file-.md)
 
-Het Experience Cloud Triggers-technologie is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
+De technische opmerking over Experience Cloud Triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
-De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl)
 
 Er is meer informatie over SOAP-verificatiemethoden voor transactionele berichten toegevoegd. [Meer informatie](../../message-center/using/event-description.md)
 
@@ -667,7 +667,7 @@ Er is informatie toegevoegd over het factureringsrapport.
 De documentatie over de integratie van gedeelde doelgroepen is bijgewerkt.
 [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 De sectie over technische workflows is bijgewerkt. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
@@ -681,7 +681,7 @@ Er is informatie toegevoegd over querybanding voor het externe Teradata-account.
 
 ### Januari 2019{#release-doc-16-01-2019}
 
-Het Experience Cloud Triggers-technologie is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
+De technische opmerking over Experience Cloud Triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
 Er is een opmerking toegevoegd aan de sectie over aanbiedingsgoedkeuring om te specificeren dat de vermelding Goedgekeurde content aangeeft dat het goedkeuringsproces voor de content is voltooid, ongeacht of alle aanbiedingen zijn ingeschakeld/goedgekeurd of niet. [Meer informatie](../../interaction/using/offer-catalog-overview.md)
 
