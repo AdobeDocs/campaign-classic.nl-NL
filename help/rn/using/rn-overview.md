@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -35,45 +35,45 @@ Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
 
 Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
-Daarom is het van essentieel belang dat u **Voer de meest recente stabiele versie uit** van Adobe Campaign. Het zorgt er ook voor dat u een betere ervaring krijgt met ondersteuning, omdat het doorgaans veel sneller is om een probleem op een recente build te identificeren, te reproduceren en te verhelpen. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
+Dit is de reden waarom we het van cruciaal belang vinden dat u **de meest recente stabiele versie** van Adobe Campaign gebruikt. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
 
 Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele versie zonder enige actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u migreert van een oude build, raadt Adobe u aan eerst naar deze versie te upgraden.
 
 ## Aanbevelingen{#recommendations}
 
-Om een stabiele configuratie te verzekeren, adviseert Adobe dat u installeert **dezelfde build** op alle servers die op de zelfde cliëntconfiguratie lopen.
+Voor een stabiele configuratie raadt Adobe aan om **dezelfde build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
-Daarnaast moet de clientconsole zijn ingeschakeld, tenzij anders vermeld in de Opmerkingen bij de release. **dezelfde build** als de serverinstantie.
+Bovendien, tenzij anders vermeld in de aanvullende informatie, moet de clientconsole zich op **dezelfde build** bevinden als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
 ## Upgradeproces{#process-upgrade}
 
-Als gehoste klant (Managed Service of Hybrid) neemt u contact op met het zorgteam van de klant om uw omgeving te laten upgraden.
+Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Om dit te doen, [download de nieuwste stabiele build (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en upgrade al uw omgevingen. Ontdek meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md).
+Als een on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Ontdek meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jaarlijkse upgrade {#yearly-upgrade}
 
-Adobe heeft er alles aan gedaan om u de beste ervaring en waarde te bieden via onze softwareoplossingen. De organisatie is geëngageerd om ervoor te zorgen dat u toegang tot de recentste versies van verwante technologie hebt die onze oplossingen gebruiken om zijn taken uit te voeren.
+Adobe wil u met onze softwareoplossing(en) de beste ervaring en waarde bieden. De organisatie doet er alles aan om ervoor te zorgen dat u toegang hebt tot de nieuwste versies van gerelateerde technologie die onze oplossingen gebruiken om taken uit te voeren.
 
-Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist u om uw exemplaar(s) van de Campaign Classic regelmatig te bevorderen, om ervoor te zorgen de meest bijgewerkte versies worden gebruikt om superieure veiligheid, stabiliteit, en prestaties te leveren.
+Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig bijwerkt, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
-Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA-build zonder actie. Meer informatie vindt u in de volgende veelgestelde vragen.
+Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA-build zonder enige actie te hoeven ondernemen. Meer informatie vindt u in de volgende veelgestelde vragen.
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
-Als gehoste klant, als uw rekening is geïdentificeerd zoals het moeten één of meerdere technologieën met betrekking tot Campaign Classic bevorderen, en het bijwerken van de huidige bouwstijl en/of versie, brengt Adobe u rechtstreeks op de hoogte.
+Als uw account als gehoste klant een upgrade nodig heeft van een of meer technologieën die betrekking hebben op Campaign Classic, en de huidige build en/of versie moet worden bijgewerkt, stelt Adobe u daarvan rechtstreeks op de hoogte.
 
 Als een on-premise of hybride klant met een oudere versie raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
 
-Dit zorgt ervoor dat uw account beveiligd is tegen kwetsbaarheden en dat u de bijgewerkte prestatietechnologie gebruikt. Deze upgrade plaatst uw account ook voor eenvoudige, regelmatige upgrades die u kunt uitvoeren en waarvoor minder handmatig werk en interventie vereist is.
+Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst vereisen.
 
 ### Wat zijn de procedure en de tijdlijn voor deze upgrade?
 
-Het team van Adobe is hier om uw organisatie door deze reis te leiden en te begeleiden.
+Het team van Adobe begeleidt uw organisatie tijdens dit traject.
 
-Er is een team van speciale vertegenwoordigers van de klantenservice, productmanagers, technici en technici en consultants van de technische afdeling aanwezig om u te helpen en ervoor te zorgen dat de ervaring soepel verloopt.
+Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, technische specialisten en productconsultants biedt u ondersteuning en zorgt voor een probleemloze ervaring.
 
 ### Voordelen
 
@@ -99,7 +99,7 @@ Er is een team van speciale vertegenwoordigers van de klantenservice, productman
     <ul>
     <li>De meeste kritieke problemen worden gewoon opgelost met upgrades en kunnen worden vermeden.</li>
     <li>Met regelmatige upgrades loopt u tegen minder problemen aan waardoor u ook de efficiëntie verbetert.</li>
-    <li>Het zorgvolume van de klant wordt verlaagd, zodat u sneller kunt reageren en meer aandacht kunt besteden aan uw problemen die geen verband houden met upgrades.</li>
+    <li>De klantenservice wordt minder belast waardoor we sneller kunnen reageren en meer aandacht kunnen besteden aan problemen die geen verband houden met upgrades.</li>
     </ul>
   </td>
 </tr>
@@ -113,7 +113,7 @@ Er is een team van speciale vertegenwoordigers van de klantenservice, productman
     <ul>
     <li>In de loop der tijd identificeert het Adobe Campaign-team manieren om de stabiliteit en de prestaties van het product te verbeteren en bekende problemen op te lossen.</li>
     <li>Door uw instantie te upgraden krijgt u deze nieuwste verbeteringen. U voorkomt zo bovendien veelvoorkomende problemen binnen organisaties die een snelle groei doormaken en/of tegen moeilijkheden aanlopen in hun Campaign Classic-instanties.</li>
-    <li>De verbeteringen over de technologiestapel die Campaign Classic aandrijven zijn voelbaar over zowel marketing als de teams van IT van uw organisatie.</li>
+    <li>De verbeteringen in de technologie achter Campaign Classic zullen zowel bij de marketing- als IT-teams binnen uw organisatie merkbaar zijn.</li>
     </ul>
   </td>
 
@@ -124,9 +124,9 @@ Er is een team van speciale vertegenwoordigers van de klantenservice, productman
     </a>
     </div>
     <ul>
-    <li>De inspanningen en de complexiteit van het upgraden van uw Campaign Classic-instantie nemen toe met de afstand tussen twee versies (v5 —&gt; v7).</li>
+    <li>Hoe groter het verschil tussen twee versies (bijvoorbeeld v5 -&gt; v7), hoe complexer het is om uw Campaign Classic-instantie bij te werken.</li>
     <li>Hoe langer uw organisatie wacht, des te complexer de upgrade wordt (en hoe kwetsbaarder u bent voor beveiligingsrisico's).</li>
-    <li>De regelmatige updates verminderen onderbreking aan verbetering en het risico van regressie.</li>
+    <li>Regelmatige updates verminderen de downtime tijdens upgrades en het risico op regressie.</li>
     </ul>
   </td>
 </tr>
