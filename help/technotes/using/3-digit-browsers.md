@@ -4,9 +4,9 @@ title: Campagne maken van webcomponenten en versie 100 in Chrome- en Firefox-bro
 description: Campagne maken van webcomponenten en versie 100 in Chrome- en Firefox-browsers
 hide: true
 hidefromtoc: true
-source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
+source-git-commit: d238f0aa28289c69c91dc6a028792260708ed9f3
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Mogelijke problemen of verlies van functionaliteit op de website komen voort uit
 
 ## Heeft dit gevolgen voor u?{#version-100-impact}
 
-Adobe raadt u aan uw Campagne-webtoepassingen, waaronder webformulieren en enquêtes, en e-mailspiegel-pagina&#39;s te testen om ervoor te zorgen dat deze nog steeds goed werken met deze nieuwe browserversies.
+Adobe raadt u aan uw Campagne-webtoepassingen, waaronder webformulieren en enquêtes, te testen om te controleren of deze nog steeds goed werken met deze nieuwe browserversies.
 
 Deze aanbeveling is van toepassing op alle webtoepassingen, en vooral als u JavaScript-code hebt opgenomen.
 
