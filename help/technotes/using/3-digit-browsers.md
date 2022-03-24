@@ -4,20 +4,20 @@ title: Campagne maken van webcomponenten en versie 100 in Chrome Firefox en Edge
 description: Webcomponenten en versie 100 van de campagne in Chrome, Firefox, en browsers van de Rand
 hide: true
 hidefromtoc: true
-source-git-commit: 48c9aab4f7e5f1f204a003a4d53f8d975247b867
+source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Browserversie van 3 cijfers heeft invloed op webcomponenten voor campagnes {#version-100}
 
-Google, Mozilla waarschuwen dat Chrome en Firefox sommige websites kunnen verbreken vanwege hun aanstaande versies van 3 cijfers.
+Google en Mozilla waarschuwen dat Chrome en Firefox sommige websites kunnen verbreken vanwege de aanstaande versies van 3 cijfers.
 
 Chrome v100 is ingesteld voor release op **29 maart 2022** en Firefox v100 op **3 mei 2022**.
 
-Microsoft Edge heeft versie 100 eerder uitgebracht in maart 2022.
+Microsoft heeft Edge v100 eerder uitgebracht in maart 2022.
 
 De wijziging in het versienummer van 2 naar 3 cijfers kan problemen veroorzaken bij het bezoeken van websites die niet zijn voorbereid voor deze wijziging. Sommige webpagina&#39;s worden mogelijk niet meer correct weergegeven in deze nieuwe browserversies.
 
