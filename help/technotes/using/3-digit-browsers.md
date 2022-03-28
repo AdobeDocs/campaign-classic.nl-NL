@@ -2,11 +2,10 @@
 product: campaign
 title: Campagne maken van webcomponenten en versie 100 in Chrome Firefox en Edge-browsers
 description: Webcomponenten en versie 100 van de campagne in Chrome, Firefox, en browsers van de Rand
-hide: true
-hidefromtoc: true
-source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
+exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
+source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Adobe raadt u aan uw Campagne-webtoepassingen, waaronder webformulieren en enqu√
 
 Deze aanbeveling is van toepassing op alle webtoepassingen, en vooral als u JavaScript-code hebt opgenomen.
 
-U moet beide controleren bij alle browsers, mobiel en bureaublad.
+U moet dit controleren bij alle browsers, mobiel en bureaublad.
 
 ## Hoe kan ik testen?{#version-100-test}
 
