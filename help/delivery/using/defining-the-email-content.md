@@ -4,7 +4,7 @@ title: E-mailinhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign Classic gebruikt.
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -65,7 +65,7 @@ U kunt ook emoticons aan uw onderwerpregel toevoegen met de **[!UICONTROL Insert
 
 De inhoud van het bericht wordt bepaald in de lagere sectie van het venster van de leveringsconfiguratie.
 
-Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van de voorkeur van de ontvanger. We raden u aan inhoud in beide indelingen te maken om ervoor te zorgen dat berichten correct kunnen worden weergegeven in elk e-mailsysteem. Raadpleeg voor meer informatie hierover [Berichtindelingen selecteren](#selecting-message-formats).
+Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van de voorkeur van de ontvanger. We raden u aan inhoud in beide indelingen te maken om ervoor te zorgen dat berichten correct kunnen worden weergegeven in elk e-mailsysteem. Raadpleeg voor meer informatie hierover [Berichtindelingen selecteren](email-parameters.md#selecting-message-formats).
 
 * Als u inhoud van een HTML wilt importeren, gebruikt u de **[!UICONTROL Open]** knop. U kunt de broncode ook rechtstreeks in de **[!UICONTROL Source]** subtab.
 
