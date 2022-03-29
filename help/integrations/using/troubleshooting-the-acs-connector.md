@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,11 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
 * **Ik kan een profiel, een publiek of een openingspagina niet bewerken in Campaign Standard. Wat betekent het?**
 
    De middelen die van Campagne v7 worden gesynchroniseerd zijn op read-only wijze in Campaign Standard, om gegevensconsistentie te verzekeren. Als u één van deze elementen moet uitgeven, kunt u het in Campagne v7 doen en dan de verandering in Campaign Standard herhalen.
+
+* **Er treden fouten op in het dialoogvenster [ACS] Logreplicatieworkflow voor het leveringslogboek van profielen. Wat moet ik doen?**
+
+   Als zowel Campaign Classic- als Campaign Standard-instanties worden gebruikt om e-mails met bijgehouden URL&#39;s te verzenden, kan er tijdens de synchronisatie een probleem met dubbele URL-tagID&#39;s optreden. In dit geval worden de **[ACS] Logboek voor levering van profiel** (newRcpDeliveryLogReplication) de workflow werkt nog steeds met de volgende fout:
+
+   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+
+   Als u het probleem wilt oplossen en wilt voorkomen dat het zich opnieuw voordoet, werkt u de **URL&#39;s voor bijhouden bijwerken** (writerTrackingUrls) in de workflow en voeg het voorvoegsel &quot;ACS&quot; toe aan de @tagId-bronexpressie.
