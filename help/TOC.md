@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -651,7 +651,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -830,7 +830,7 @@ ht-degree: 99%
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
-      + [Versie van browser met 3 cijfers is van invloed op](technotes/using/3-digit-browsers.md)
+      + [Effecten van 3-cijferige browserversie](technotes/using/3-digit-browsers.md)
       + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
       + [IMS-updates](technotes/using/ims-updates.md)
       + [Ondersteuning voor TLS 1.0 en 1.1 verloopt](technotes/using/eol-tls-support.md)
