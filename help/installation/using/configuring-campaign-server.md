@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 1%
@@ -23,20 +23,20 @@ In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen w
 
 Deze procedures zijn beperkt tot **op locatie**/**hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **gehost** implementaties, server-side instellingen kunnen alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld binnen  [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL. [Meer info](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Voor **gehost** implementaties, server-side instellingen kunnen alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld binnen [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
-Raadpleeg de volgende secties voor meer informatie:
+For more information, refer to these sections:
 
 * [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 * [Hostmodellen](../../installation/using/hosting-models.md)
-* [Campaign Classic On-premisse en gehoste capaciteitmatrix](../../installation/using/capability-matrix.md)
+* [Campaign Classic On-premise &amp; Hosted capability matrix](../../installation/using/capability-matrix.md)
 
-## Configuratiebestanden
+## Configuration files
 
-Campaign Classic-configuratiebestanden worden opgeslagen in het dialoogvenster **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+Campaign Classic configuration files are stored in the **conf** folder of the Adobe Campaign installation folder. De configuratie wordt verspreid over twee bestanden:
 
-* **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters die in dit [sectie](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** waarbij **instance** is de naam van de instantie): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
+* **serverConf.xml**: general configuration for all instances. This file combines the technical parameters of the Adobe Campaign server: these are shared by all instances. The description of some of these parameters is detailed below. The different nodes and parameters and listed in this [section](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (where **instance** is the name of the instance): specific configuration of the instance. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
 
 ## Configuratiebereik
 
@@ -71,7 +71,7 @@ Gebruik de volgende opdracht:
 nlserver config -internalpassword
 ```
 
-De volgende informatie wordt dan getoond. Voer het wachtwoord in en bevestig het:
+De volgende informatie wordt dan getoond. Enter and confirm the password:
 
 ```
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -83,11 +83,11 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## Processen inschakelen {#enabling-processes}
+## Enable processes {#enabling-processes}
 
 Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via de **config-default.xml** en **`config-<instance>.xml`** bestanden.
 
-Als u de wijzigingen op deze bestanden wilt toepassen en de Adobe Campaign-service is gestart, moet u de opdracht **nlserver config-reload** gebruiken.
+To apply the changes to these files, if the Adobe Campaign service is started, you must run the **nlserver config -reload** command.
 
 Er zijn twee soorten processen: meerdere instanties en één instantie.
 
@@ -127,24 +127,24 @@ Er zijn twee soorten processen: meerdere instanties en één instantie.
 
 U kunt de opslagmap configureren (**var** directory) van Adobe Campaign-gegevens (logbestanden, downloads, omleidingen, enz.). Om dit te doen, gebruik **XTK_VAR_DIR** systeemvariabele:
 
-* Geef in Windows de volgende waarde op in het dialoogvenster **XTK_VAR_DIR** systeemvariabele
+* In Windows, indicate the following value value in the **XTK_VAR_DIR** system variable
 
    ```
    D:\log\AdobeCampaign
    ```
 
-* Ga in Linux naar de **klant.sh** en vermelden: **XTK_VAR_DIR=/app/log/AdobeCampaign exporteren**.
+* In Linux, go to the **customer.sh** file and indicate: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Raadpleeg voor meer informatie hierover [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
-## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
+## Dynamic page security and relays {#dynamic-page-security-and-relays}
 
-Standaard worden alle dynamische pagina&#39;s automatisch gekoppeld aan de **lokaal** Tomcat-server van de computer waarvan de webmodule is gestart. Deze configuratie is ingevoerd in het dialoogvenster **`<url>`** sectie van de vraag relaisconfiguratie voor **ServerConf.xml** bestand.
+By default, all dynamic pages are automatically related to the **local** Tomcat server of the machine whose Web module has started. Deze configuratie is ingevoerd in het dialoogvenster **`<url>`** sectie van de vraag relaisconfiguratie voor **ServerConf.xml** bestand.
 
-U kunt uitvoering van de dynamische pagina op een **extern** server; als de module Web niet op de computer wordt geactiveerd. Om dit te doen, moet u vervangen **localhost** met de naam van de verre computer voor JSP en JSSP, de toepassingen van het Web, rapporten en koorden.
+U kunt uitvoering van de dynamische pagina op een **extern** server; als de module Web niet op de computer wordt geactiveerd. To do this, you must replace the **localhost** with the name of the remote computer for JSP and JSSP, Web applications, reports and strings.
 
-Raadpleeg voor meer informatie over de verschillende beschikbare parameters de **serverConf.xml** configuratiebestand.
+For more on the various parameters available, refer to the **serverConf.xml** configuration file.
 
 Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
@@ -154,19 +154,19 @@ Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
 Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
-* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s),
+* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s);
 * /nl/jsp/**m.jsp**: spiegelpagina&#39;s,
-* /nl/jsp/**opening van een sessie.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
-* /nl/jsp/**s.jsp** : Het gebruik van virale marketing (sponsoring en sociale netwerken).
+* /nl/jsp/**logon.jsp**: Web-based access to reports and to deployment of the client console,
+* /nl/jsp/**s.jsp** : Using viral marketing (sponsoring and social networks).
 
-De JSSPs die voor het Mobiele Kanaal van de App wordt gebruikt zijn als volgt:
+The JSSPs used for the Mobile App Channel are as follows:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
 **Voorbeeld:**
 
-Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. Om dit te doen, beperkt eenvoudig de uitvoering van **soaprouter.jsp** en alleen toestaan dat spiegelpagina&#39;s, virale links, webformulieren en publieke middelen worden uitgevoerd.
+Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. To do this, simply restrict the execution of **soaprouter.jsp** and only authorize the execution of mirror pages, viral links, web forms and public resources.
 
 De parameters zijn als volgt:
 
@@ -184,7 +184,7 @@ De parameters zijn als volgt:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In dit voorbeeld wordt **`<IP_addresses>`** De waarde valt samen met de lijst van IP adressen (die door koma&#39;s worden gescheiden) die worden gemachtigd om de relaismodule voor dit masker te gebruiken.
+In this example, the **`<IP_addresses>`** value coincides with the list of IP addresses (separated by comas) authorized to use the relay module for this mask.
 
 >[!NOTE]
 >
@@ -294,16 +294,16 @@ U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   De vervolgkeuzelijst bevat eerder gebruikte affiniteiten. Het wordt voltooid in tijd met de verschillende ingegaan waarden.
+   De vervolgkeuzelijst bevat eerder gebruikte affiniteiten. It is completed over time with the different entered values.
 
 1. Open de **nl6/conf/config-`<instance>.xml`** bestand.
-1. Wijzig de lijn die met de **[!UICONTROL wfserver]** als volgt:
+1. Modify the line which matches the **[!UICONTROL wfserver]** module as follows:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
    ```
 
-   Als u meerdere affiniteiten definieert, moeten deze worden gescheiden door komma&#39;s zonder spaties:
+   If you define several affinities, they must be separated by commas without any spaces:
 
    ```
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
@@ -325,7 +325,7 @@ U kunt deze configuratie echter wijzigen.
 
 Ga om dit te doen naar de **serverConf.xml** bestand, bevindt zich in het **conf** opslagplaats van uw installatie.
 
-Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** kenmerk. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
+Each process configured in this file has a **processRestartTime** attribute. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
 
 >[!IMPORTANT]
 >

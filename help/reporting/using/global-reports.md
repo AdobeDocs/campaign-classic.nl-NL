@@ -4,10 +4,10 @@ title: Algemene rapporten
 description: Algemene rapporten
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 1%
+source-wordcount: '2295'
+ht-degree: 4%
 
 ---
 
@@ -48,6 +48,14 @@ Dit verslag bevat informatie over de leveringsproductie van het gehele platform 
 ![](assets/s_ncs_user_report_toolbar.png)
 
 U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: Weergave van 1 uur, weergave van 3 uur, weergave van 24 uur, enz. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+
+>[!NOTE]
+>
+>Als uw exemplaar op AWS wordt gehost, kunt u ook het aantal verzonden leveringen per uur controleren met de Campaign Classic [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>
+>Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
+>
+>Merk op dat uw instantie met recentste moet worden bevorderd [Gouden standaard](../../rn/using/gold-standard.md) of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Gebruikersactiviteiten {#user-activities}
 
