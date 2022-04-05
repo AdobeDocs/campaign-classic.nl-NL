@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '517'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks i
 
 [Klik hier voor meer informatie over het Campaign-datamodel](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
 
-De best practices worden vermeld [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-data-model-best-practices.html).
+De best practices worden vermeld [in dit artikel](../../configuration/using/data-model-best-practices.md).
 
 ## Hoe kan ik werken met Campaign-schema’s? {#how-to-work-with-campaign-schemas-}
 

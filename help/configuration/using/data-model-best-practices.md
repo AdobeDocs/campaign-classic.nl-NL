@@ -4,10 +4,10 @@ title: Best practices voor het gegevensmodel
 description: Leer hoe u met het gegevensmodel Campaign Classic werkt
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4007'
-ht-degree: 1%
+source-wordcount: '3988'
+ht-degree: 0%
 
 ---
 
@@ -148,9 +148,7 @@ Wanneer in Adobe Campaign een aangepaste tabel wordt gemaakt met een primaire sl
 
 Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet voorzichtig worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campaign in gegenereerde SQL-query&#39;s.
 
-**Verwante onderwerpen:**
-* Voor meer informatie over **Volgorde automatisch genereren** functie, zie [dit document](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html).
-* Voor meer over opeenvolgingen uitputting, horloge [deze video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Voor meer over opeenvolgingen uitputting, horloge [deze video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indexen {#indexes}
 
@@ -327,5 +325,3 @@ In dit voorbeeld:
 * De *Product* en *Winkel* tabellen zijn kleiner : minder dan 10.000.
 * Het etiket en de referentie van het product zijn in het *Product* tabel.
 * De *Transactiepunt* alleen de tabel bevat een koppeling naar de *Product* tabel, die numeriek is.
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

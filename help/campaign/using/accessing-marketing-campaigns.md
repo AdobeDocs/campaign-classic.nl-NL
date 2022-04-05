@@ -4,9 +4,9 @@ title: Toegang tot marketingcampagnes
 description: Toegang tot marketingcampagnes
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen 
 
 >[!NOTE]
 >
->Om tot de campagneconfiguraties toegang te hebben en veranderingen in hen aan te brengen, klik **[!UICONTROL Advanced campaign parameters...]** in de **[!UICONTROL Edit]** tab. Voor meer informatie over het plaatsen van parameters op campagneniveau zodat erven de leveringen automatisch waarden, zie [onze technische notitie](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Om tot de campagneconfiguraties toegang te hebben en veranderingen in hen aan te brengen, klik **[!UICONTROL Advanced campaign parameters...]** in de **[!UICONTROL Edit]** tab.
 
 ## De webinterface gebruiken {#using-the-web-interface-}
 

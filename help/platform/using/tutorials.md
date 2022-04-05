@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '366'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 7%
 
 Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleidingen te raadplegen.
 
-* [E-mailinhoud bewerken met Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Leer over de grondbeginselen om met de integratie tussen Adobe Campaign en Experience Manager te beginnen.
 * [Privacybeheer](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen bij het naleven van uw privacy wanneer u onze service gebruikt.
 * [Dynamische inhoud in een e-mail integreren](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
 * [Te leveren items beheren](../../delivery/using/about-deliverability.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.

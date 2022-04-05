@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
 1. Geef een verbinding met uw Adobe Campaign-toepassingsserver op via een URL. Gebruik of DNS of een alias van de machine, of uw IP adres.
 
-   U kunt bijvoorbeeld de opdracht [`https://<machine>.<domain>.com`](https://myserver.adobe.com) type URL.
+   U kunt bijvoorbeeld de opdracht `https://<machine>.<domain>.com` type URL.
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
    U kunt een lijst met waarden definiëren, gescheiden door komma&#39;s.
 
-   De ? en * tekens kunnen worden gebruikt als jokertekens om een of meer tekens (DNS, poort, enz.) te vervangen. Bijvoorbeeld de **demo*** value werkt met &quot;https://demo&quot; zoals met &quot;https://demo:8080&quot; en zelfs met &quot;https://demo2&quot;.
+   De ? en &#42; tekens kunnen worden gebruikt als jokertekens om een of meer tekens (DNS, poort, enz.) te vervangen. Bijvoorbeeld de **demo&#42;** value werkt met &quot;https://demo&quot; zoals met &quot;https://demo:8080&quot; en zelfs met &quot;https://demo2&quot;.
 
    De gebruikte namen moeten in uw DNS worden bepaald. U kunt ook de correspondentie tussen een DNS-naam en een IP-adres in het dialoogvenster **c:/windows/system32/drivers/etc/hosts** in Windows en in het **/etc/hosts** in Linux. Daarom moet u de verbindingsmontages wijzigen om deze DNS naam te gebruiken om met uw gekozen instantie te verbinden.
 

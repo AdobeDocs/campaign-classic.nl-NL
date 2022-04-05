@@ -3,9 +3,9 @@ product: campaign
 title: Releases van Campaign Classic 2019
 description: Meer informatie over Campaign Classic 2019-releases
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4825'
 ht-degree: 24%
 
 ---
@@ -277,7 +277,7 @@ _15 september 2020_
 * Oplossing voor een regressieprobleem met een databaseverbinding waarbij de webserver voortdurend opnieuw werd opgestart vanwege een probleem met de databasecodering. Dit kan leiden tot overmatig verbruik. (NEO-23264)
 * Probleem verholpen met de opschoningsworkflow voor databases die zou kunnen mislukken als gevolg van een niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
 * Tijdens de opschoningsworkflow worden nu verlopen lijsten in batches van 100 verwijderd in plaats van één voor één.
-* Na de overstap naar het [nieuwe ID-mechanisme voor reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
+* Na de overstap naar het nieuwe ID-mechanisme voor reeksen worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
 * Probleem verholpen waarbij e-mailberichten niet konden worden verzonden als er JavaScript-code buiten de HTML-inhoudstag stond. (NEO-18628)
 * Probleem verholpen waardoor de traceringsindicatoren voor transactionele berichten niet konden worden bijgewerkt door de workflow voor bijhouden. (NEO-17770)
 * Verbeterde prestaties van de wizard Database bijwerken om minder SQL-instructies te maken en zo de responstijd te optimaliseren.
@@ -401,7 +401,7 @@ _30 mei 2019_
 
 **Verbeteringen op het gebied van Guardrail, robuustheid en schaalbaarheid**
 
-* Lifespan - Optimalisatie van het reeksgebruik van XtkNewId: de meest verbruikende lijsten zijn verplaatst van de xtkNewId opeenvolging naar specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - Optimalisatie van het reeksgebruik van XtkNewId: de meest verbruikende lijsten zijn verplaatst van de xtkNewId opeenvolging naar specifieke opeenvolgingen.
 * FDA over HTTP v2: De FDA over het protocol van HTTP wordt wijd gebruikt op Hybride plaatsingen, vooral voor de herwinning en de leveringsvoorbereiding bredeLogboek. De robuustheid is verbeterd om netwerkkwesties en mogelijke fouten te vermijden zoals het terugwinnen van of het duwen van gegevens. Dit vereist dat bouwt bij beide einden van de verbinding bijgewerkt is, anders zal het oude protocol nog worden gebruikt.
 * Workflow voor bijhouden: de volgwerkstroom is robuuster geworden. Verschillende problemen met betrekking tot het bijhouden van logbestanden, invoegingen/updates en aanpassing van URL-tracking zijn opgelost. Bovendien detecteert de workflow voor bijhouden nu problemen met trackinglogbestanden die tot fouten kunnen leiden en de workflow kunnen stoppen. Deze kwesties worden nu genegeerd en niet verwerkt.
 * Workflow voor opschonen: de opschoningsworkflow is verbeterd om mogelijke fouten en stops te voorkomen . Hierdoor worden de databasegrootte en de prestaties geoptimaliseerd.

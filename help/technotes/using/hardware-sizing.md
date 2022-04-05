@@ -3,7 +3,7 @@ product: campaign
 title: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
 description: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -87,7 +87,7 @@ Geraamd volume:
 | Actieve ontvangers | 5 miljoen |
 | Email | 4,2 miljoen/maand |
 | Direct mail | 1 miljoen/maand |
-| Mobiele SMS | 100.000/maand |
+| Mobile SMS | 100.000/maand |
 | Maximale dagelijkse e-mailvolume | 500 |
 
 Voor deze volumes biedt een paar Adobe Campaign-toepassingsserversystemen alle functionaliteit voor Adobe Campaign Client-gebruikers en workflowuitvoering. Voor 5 miljoen actieve ontvangers en dit e-mailvolume zijn de werklasten van de toepassingsserver niet CPU- of I/O-intensief. het grootste deel van de stress ligt in de database .
@@ -136,7 +136,7 @@ Geraamd volume:
 | Actieve ontvangers | 20 miljoen |
 | E-mail | 42 miljoen per maand |
 | Direct mail | 10 miljoen/maand |
-| Mobiele SMS | 1.000.000/maand |
+| Mobile SMS | 1.000.000/maand |
 | Maximale dagelijkse e-mailvolume | 5 000 000 |
 
 ### Web- en toepassingsservers
@@ -172,7 +172,7 @@ Geraamd volume:
 | Actieve ontvangers | 50 miljoen |
 | E-mail | 108 miljoen per maand |
 | Direct mail | 25 miljoen per maand |
-| Mobiele SMS | 2,5 miljoen/maand |
+| Mobile SMS | 2,5 miljoen/maand |
 | Transactionele berichten | 2,5 miljoen/maand |
 | Maximale dagelijkse e-mailvolume | 2,5 miljoen |
 
@@ -252,7 +252,7 @@ Gegroepeerde servers, bijvoorbeeld, overtollige toepassingsservers onder een lad
 Elke aanbevolen RAID-configuratie moet worden onderhouden voor databasebeveiliging, om te voorkomen dat gegevensverlies optreedt bij een opslagapparaat.
 
 * **I/O-prestaties**
-De aanbevolen IOPS-classificatie voor databaseopslag moet in acht worden genomen. Cloudservices zoals Amazon EC2 leveren mogelijk niet de vereiste prestaties en moeten zorgvuldig worden geëvalueerd. De Amazon EC2-volumes voor SSD-voorzieningen worden momenteel bijvoorbeeld op elk 20.000 IOPS beoordeeld. Meer informatie in [Amazon-documentatie](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)Een RAID-configuratie van 4 volumes zou dus worden beoordeeld op 80.000 IOPS, wat wellicht niet voldoende is.
+De aanbevolen IOPS-classificatie voor databaseopslag moet in acht worden genomen. Cloudservices zoals Amazon EC2 leveren mogelijk niet de vereiste prestaties en moeten zorgvuldig worden geëvalueerd. De Amazon EC2-volumes voor SSD-voorzieningen worden momenteel bijvoorbeeld op elk 20.000 IOPS beoordeeld. Meer informatie in [Amazon-documentatie](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), dus een 4-volume RAID-configuratie zou worden beoordeeld op 80.000 IOPS, wat wellicht niet voldoende is.
 
 Adobe raadt aan om voor elke gevirtualiseerde implementatie van Adobe Campaign prestatietests uit te voeren voordat het systeem in productie wordt genomen.
 

@@ -4,10 +4,10 @@ title: Campagnetypologieën
 description: Campagnetypologieën
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 17%
+source-wordcount: '468'
+ht-degree: 18%
 
 ---
 
@@ -78,8 +78,6 @@ Moeheidsbeheer bepaalt de frequentie en de hoeveelheid van de berichten om de on
 Er zijn aanvullende instructievideo&#39;s beschikbaar voor campagnes [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
 
 **Verwant onderwerp**
-
-* [Pas automatische bedrijfsregels op leveringen op om het even welk kanaal toe](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [Aan de slag met typologieën en moeheidsbeheer](pressure-rules.md)
 

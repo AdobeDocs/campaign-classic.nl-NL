@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -297,8 +297,6 @@ De Campaign-capaciteitsmatrix per hostingmodel is bijgewerkt en verplaatst in de
 De sectie voor geavanceerde rapportagemogelijkheden in Campaign is verbeterd met details over het gebruik van URL-parameters en variabelen in aangepaste rapporten. [Meer informatie](../../reporting/using/advanced-functionalities.md)
 
 De pagina met rapporteigenschappen is opnieuw ingedeeld en verrijkt om de configuratie te vergemakkelijken. [Meer informatie](../../reporting/using/properties-of-the-report.md)
-
-Er is een nieuwe technische notitie geschreven met details over de migratie van het oude binaire protocol naar de op HTTP/2 gebaseerde APNs-provider-API. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/migrate-to-apns-http2.html)
 
 ### September 2020 {#september-2020}
 
@@ -668,13 +666,11 @@ Er is informatie toegevoegd over het factureringsrapport.
 De documentatie over de integratie van gedeelde doelgroepen is bijgewerkt.
 [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Het volgende technische artikel is bijgewerkt: [Protocol en instellingen voor SMS-aansluiting](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 De sectie over technische workflows is bijgewerkt. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
 De procedure voor het instellen van de domeinnaam van Campaign is verbeterd en bijgewerkt.
-
-De migratieprocedure voor Android-apps van Google Cloud Messaging (GCM) naar Firebase Cloud Messaging (FCM) is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/migrate-to-fcm.html)
 
 De handleiding over de omvang van hardware van Campaign is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html)
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2fd845ba5e9ced87cef7fd101579ffa4f177f367
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 100%
+source-wordcount: '1670'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ De build 9032@d030c36 bevat de volgende oplossing:
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-authentificatiemodus met Campaign [is beëindigd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) in **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als een on-premise of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning te verlengen tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 >
->Meer informatie vindt u in de [[!DNL Gold Standard] veelgestelde vragen van de upgrade naar 11](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)
+>Meer informatie in het dialoogvenster [[!DNL Gold Standard] sectie](../../rn/using/gold-standard.md)
 
 _2 maart 2021_
 

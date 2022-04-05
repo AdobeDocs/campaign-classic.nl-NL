@@ -4,9 +4,9 @@ title: Gegevensgerichte API’s
 description: Gegevensgerichte API’s
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
 Voor een presentatie van het gegevensmodel raadpleegt u de [Beschrijving van Adobe Campaign-gegevensmodel](../../configuration/using/data-model-description.md).
-
-Raadpleeg dit artikel voor informatie over het genereren van de structuur: [Een gegevensmodel of gegevenswoordenboek genereren](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## Query en schrijver {#query-and-writer}
 
