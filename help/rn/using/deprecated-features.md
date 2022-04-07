@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Da
 
 * DB2 UDB 9.5, 9.7. Een recentere versie van DB2 wordt ondersteund via FDA (Federated Data Access). [Meer informatie](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i, 10G R2. Recentere versies van Oracle worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostSQL-versies tot 9.6 hebben het einde van de levensduur bereikt. Recentere versies van PostgreSQL worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://www.postgresql.org/support/versioning)
+* PostgreSQL-versies tot 9.6 hebben het einde van de levensduur bereikt. Recentere versies van PostgreSQL worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. Recentere versies van SQL Server worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/1044)
 * MySQL 5.1. Recentere versies van MySQL worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB heeft het einde van de levensduur bereikt. [Meer informatie](https://www.mysql.com/support)
@@ -235,7 +235,7 @@ Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgend
 * MySQL 5.1
 * DB2 UDB 9.7
 
-PostSQL-versies tot 9.6 hebben het einde van de levensduur bereikt. Zij worden daarom niet door Adobe Campaign ondersteund.
+PostgreSQL-versies tot 9.6 hebben het einde van de levensduur bereikt. Ze worden daarom niet ondersteund door Adobe Campaign.
 
 ### Sms-connectoren {#sms-eol}
 
