@@ -4,9 +4,9 @@ title: Aan de slag met bijhouden
 description: Meer informatie over de algemene richtlijnen voor tekstspatiëring in Adobe Campaign Classic
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten traceren en het gedrag van de ontvangers controleren: openen, klikken op koppelingen, geen abonnement nemen, enz.
+Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bijhouden en het gedrag van de ontvangers controleren: openen, klikken op koppelingen, geen abonnement nemen, enz.
 
 Deze informatie wordt opgehaald in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: de URL waarop is geklikt, de datum en tijd van de klik en het document waarin de URL is gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
 

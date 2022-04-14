@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 48%
+source-wordcount: '235'
+ht-degree: 50%
 
 ---
 
@@ -83,6 +83,6 @@ ht-degree: 48%
 | [Release-opmerkingen](rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html) |
+| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](delivery/using/about-message-tracking.md) |
 | [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
 | [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
