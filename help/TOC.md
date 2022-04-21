@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
-      + [Verzoeken om toegang tot persoonsgegevens](platform/using/privacy-requests.md)
+      + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+         + [Privacyverzoeken](platform/using/privacy-requests.md)
+         + [Privacy-aanvragen maken en beheren](platform/using/privacy-requests-ui.md)
+         + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
+         + [Opt-out voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
    + Profielmanagement {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
@@ -651,7 +655,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
