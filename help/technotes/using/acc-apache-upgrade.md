@@ -4,9 +4,9 @@ title: Technote - Adobe Campaign - Beveiligingsupdate Apache-versie
 description: Adobe Campaign - Beveiligingsupdate Apache-versie
 hide: true
 hidefromtoc: true
-source-git-commit: 086d03cf0ceb5c2db7ded0c2bedb1b0514257d8a
+source-git-commit: 41aa16e3ac6f150b9a048a22729b4cc4b9ccc10a
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,17 @@ ht-degree: 0%
 
 Campaign Classic werkt met hulpmiddelen van derden en de compatibiliteit wordt regelmatig bijgewerkt, zodat alleen ondersteunde versies kunnen worden geïmplementeerd en de nieuwste correcties en verbeteringen kunnen worden toegepast.
 
-Adobe Campaign bevat Apache Tomcat, die via HTTP als ingangspunt fungeert in de toepassingsserver, en die is geïntegreerd met Apache Web-server. De Apache Software Foundation heeft Apache HTTP Server 2.4.53 uitgebracht. Deze versie verhelpt kwetsbaarheden —CVE-2021-44790 en CVE-2021-44224— waarvan er één een externe aanvaller in staat kan stellen de controle over een beïnvloed systeem te verkrijgen. Meer informatie in [Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
+Adobe Campaign bevat Apache Tomcat, die via HTTP als ingangspunt fungeert in de toepassingsserver, en die is geïntegreerd met Apache Web-server. De Apache Software Foundation heeft Apache HTTP Server 2.4.53 uitgebracht. Deze versie verhelpt kwetsbaarheden die een externe aanvaller in staat kunnen stellen de controle over een beïnvloed systeem te verkrijgen. Meer informatie in [Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit door **31 mei 2022** om deze Apache-kwetsbaarheid te beperken en uw instantieomgeving veiliger te maken. Deze upgrade is van toepassing op alle Managed Services-klanten die op een kwetsbare versie van Apache HHTP Server werken. Als dit gevolgen heeft, heeft Adobe al contact met u opgenomen om u op de hoogte te stellen van deze upgrade.
+Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit door **31 mei 2022** om deze Apache-kwetsbaarheid te beperken en uw instantieomgeving veiliger te maken. Deze upgrade is van toepassing op alle Managed Services-klanten die een kwetsbare versie van Apache HTTP Server gebruiken. Als dit gevolgen heeft, heeft Adobe al contact met u opgenomen om u op de hoogte te stellen van deze upgrade.
 
 Van deze upgrade wordt verwacht dat deze automatisch buiten de normale kantooruren wordt uitgevoerd, zodat u de Campagneservice zonder onderbreking kunt blijven gebruiken.
 
-Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat we uw productie-instantie(s) upgraden. Aangezien dit een auto verbeteringsproces is, is er geen actie van uw kant wordt vereist. Als u echter problemen ondervindt, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat we uw productie-instantie(s) upgraden. Aangezien dit een automatisch upgradeproces is dat eigendom is van Adobe, hoeft u niets te doen. Als u echter problemen ondervindt, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
-Aangezien de upgrade de Apache opnieuw moet starten, verwachten we dat de downtime niet langer zal zijn dan 10 minuten binnen de hieronder vermelde periode.
+
+>[!NOTE]
+>Deze upgrade vereist om de Apache-webserver opnieuw te starten. De downtime zal niet langer zijn dan 10 minuten binnen de hieronder vermelde periode.
 
 ## Veelgestelde vragen {#apache-faq}
 
@@ -34,7 +36,7 @@ Aangezien de upgrade de Apache opnieuw moet starten, verwachten we dat de downti
 
 * **Welke klanten worden gericht voor veiligheidsupgrades?**
 
-   Alle klanten wier Campagneomgevingen zijn geïmplementeerd op oudere Apache-versies worden geüpgraded naar de meest recente toepasselijke Apache-versie.
+   Alle klanten die gebruikmaken van Campagne-omgevingen die zijn geïmplementeerd in oudere Apache-versies, worden geüpgraded naar de nieuwste Apache-versie die van toepassing is.
 
 * **Wat is de verwachte onderbreking?**
 
