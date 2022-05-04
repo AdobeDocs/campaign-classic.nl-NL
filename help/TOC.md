@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 490ba0102f54e2d82e0bff1aa72b67ac118bf7a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2570'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,9 +55,9 @@ ht-degree: 99%
       + [Privacybeheer](platform/using/privacy-management.md)
       + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
          + [Privacyverzoeken](platform/using/privacy-requests.md)
-         + [Privacy-aanvragen maken en beheren](platform/using/privacy-requests-ui.md)
+         + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
          + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
-         + [Opt-out voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
+         + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
    + Profielmanagement {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
@@ -655,7 +655,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -834,7 +834,7 @@ ht-degree: 99%
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
-      + [Apache Security Upgrade](technotes/using/acc-apache-upgrade.md)
+      + [Apache-beveiligingsupgrade](technotes/using/acc-apache-upgrade.md)
       + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
       + [IMS-updates](technotes/using/ims-updates.md)
       + [Ondersteuning voor TLS 1.0 en 1.1 verloopt](technotes/using/eol-tls-support.md)
