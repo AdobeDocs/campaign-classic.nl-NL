@@ -1,22 +1,23 @@
 ---
 product: campaign
-title: Privacy-aanvragen maken
-description: Meer informatie over het maken en beheren van privacyverzoeken
+title: Privacyverzoeken maken
+description: Meer informatie over maken en beheren van privacyverzoeken
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Privacy-aanvragen maken en beheren {#privacy-request-ui}
+# Privacyverzoeken maken en beheren {#privacy-request-ui}
 
 ![](../../assets/v7-only.svg)
 
-In deze sectie wordt beschreven hoe u aanvragen voor toegang en verwijderen kunt maken en hoe Adobe Campaign deze verwerkt.
+In dit gedeelte wordt beschreven hoe u toegangs- en verwijderingsverzoeken kunt maken en hoe Adobe Campaign deze verwerkt.
 
 ## Een privacyverzoek maken {#create-privacy-request-ui}
 
