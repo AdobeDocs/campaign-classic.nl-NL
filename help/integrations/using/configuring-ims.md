@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 2%
 
 De integratie met de IMS gebruiken:
 
-* U moet beschikken over een Adobe Experience Cloud-organisatie en IMS-id&#39;s (opgegeven wanneer u voor het eerst verbinding maakt met de Adobe Experience Cloud).
-* U moet gebruikers toevoegen in de Experience Cloud. Raadpleeg [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie.
+* U moet een Adobe Experience Cloud-naam en -id hebben. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
+* U moet gebruikers toevoegen in de Experience Cloud. Raadpleeg voor meer informatie hierover [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
->Controleer of uw gebruikers zijn gekoppeld aan de Adobe Experience Cloud-groepen die worden gesynchroniseerd met Adobe Campaign. Zie [De externe account configureren](#configuring-the-external-account).
+>Controleer of uw gebruikers zijn gekoppeld aan de Adobe Experience Cloud-groepen die worden gesynchroniseerd met Adobe Campaign. [Meer informatie](#configuring-the-external-account).
 
 ## De console bijwerken {#updating-the-console}
 
@@ -38,7 +38,7 @@ Om deze functionaliteit te gebruiken, is het noodzakelijk dat u de recentste ver
 
 ## Het pakket installeren {#installing-the-package}
 
-U moet de **[!UICONTROL Integration with the Adobe Experience Cloud]** pakket. Een integratiepakket installeren is hetzelfde als een standaardpakket installeren, dat in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
+U moet de ingebouwde **[!UICONTROL Integration with the Adobe Experience Cloud]** pakket. Een integratiepakket installeren is hetzelfde als een standaardpakket installeren, dat in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
@@ -58,8 +58,8 @@ Voer de volgende gegevens in:
 
    De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 
-* IMS-organisatie-id: deze informatie is beschikbaar op de Experience Cloud (in **[!UICONTROL Administration > Experience Cloud Details]** ) en wordt geleverd wanneer u voor het eerst verbinding maakt met de Adobe Experience Cloud.
-* Associatiemasker: In dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.*)&quot;, wordt de beveiligingsgroep die in Adobe Campaign is gemaakt, gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
+* Organisatie-id: om uw organisatie-id te zoeken, raadpleegt u [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
+* Associatiemasker: In dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.&#42;)&quot;, wordt de in Adobe Campaign gemaakte beveiligingsgroep gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
 
    >[!CAUTION]
    >

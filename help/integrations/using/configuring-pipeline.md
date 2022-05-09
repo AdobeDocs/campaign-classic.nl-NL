@@ -5,10 +5,10 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 2%
 
 ---
 
@@ -34,8 +34,8 @@ Voordat u deze configuratie start, moet u controleren of u deze configuratie geb
 U hebt ook het volgende nodig:
 
 * Adobe I/O-projectverificatie
-* een geldige IMSOrgID, de id van de Experience Cloud-klant met Adobe Analytics toegevoegd
-* Een ontwikkelaarstoegang tot de IMS-organisatie
+* een geldige organisatie-id - Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}
+* Een ontwikkelaar heeft toegang tot uw organisatie
 * triggerconfiguratie uitgevoerd in Adobe Analytics
 
 ## Verificatie- en configuratiebestanden {#authentication-configuration}

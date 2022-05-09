@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
 * **Hoe zit het met de klant die niet gekoppeld is aan de organisatie-id voor IMS-integratie?**
 
-   Klanten die geen IMS hebben, krijgen een van deze programma&#39;s: een IMS org ID zal aan hun instantie worden vastgemaakt.
+   Klanten die geen IMS hebben, krijgen een van deze programma&#39;s: een organisatie-id wordt aan hun exemplaar gekoppeld.
 
 * **Heeft de migratie gevolgen voor configuraties met meerdere merken?**
 

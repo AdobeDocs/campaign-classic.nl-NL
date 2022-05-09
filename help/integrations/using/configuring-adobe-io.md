@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 4%
 
 ---
 
@@ -32,12 +32,12 @@ Deze integratie geldt alleen voor het starten **Campaign Classic 20.2.4 en hoger
 
 Controleer voordat u met deze implementatie begint of:
 
-* geldig **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de IMS-organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
+* geldig **Organisatie-id**: de organisatie-id is de unieke id in de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de service VisitorID en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
+* a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
-1. Toegang [!DNL Adobe I/O] en meld u aan bij de Developer Access van de IMS-organisatie.
+1. Toegang [!DNL Adobe I/O] en meld u aan bij de toegang tot ontwikkelaars van uw organisatie.
 
    >[!NOTE]
    >

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '7961'
+source-wordcount: '7957'
 ht-degree: 5%
 
 ---
@@ -3282,7 +3282,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Id van Identity Management System (IMS)-organisatie: unieke organisatie-id binnen de Adobe Experience Cloud, met name gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
+   <td> Organisatie-id: unieke organisatie-id binnen de Adobe Experience Cloud, met name gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 

@@ -6,9 +6,9 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 3%
 
 ---
@@ -95,7 +95,7 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het Adobe I/O-project 
 
 ## Adobe I/O-project maken {#create-adobe-io}
 
-1. Adobe I/O benaderen en aanmelden als **Systeembeheerder** van de IMS-organisatie.
+1. Adobe I/O benaderen en aanmelden als **Systeembeheerder** van uw organisatie.
 
    Raadpleeg deze voor meer informatie over beheerdersrollen [page](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 

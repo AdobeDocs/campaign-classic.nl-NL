@@ -5,10 +5,10 @@ description: 'Problemen met de pijplijn oplossen '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ De JSON-configuratie instellen in de optie **NmsPipeline_Config**. Zie &quot;ver
 
 **Pipelined ontbreekt met &quot;het onderwerp moet een geldige organisatie of een cliënt zijn&quot;**
 
-De configuratie van de Organisatie-id is ongeldig.
+De configuratie van de organisatie-id is ongeldig.
 
-1. Controleer of de IMSOrgId is ingesteld in de serverConf.xml.
-1. Zoek een lege IMSOrgId in het instantie config dossier dat het gebrek kan met voeten treden. Als dat het geval is, verwijdert u het.
-1. Controleer of de IMSOrgId overeenkomt met die van de klant in de Experience Cloud.
+1. Controleer of de organisatie-id (ImsOrgId) is ingesteld in de serverConf.xml.
+1. Controleer of een lege Organisatie-id in het configuratiebestand van de instantie de standaardinstelling kan overschrijven. Als dat het geval is, verwijdert u het.
+1. Controleer of de organisatie-id correct is. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}
 
 **Pipelined ontbreekt met &quot;ongeldige sleutel&quot;**
 
@@ -104,4 +104,4 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 
 Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om uw werkgebiedinstantie te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor uw werkgebiedinstantie te testen.
 
-Uw productie-instantie blijft de verouderde verificatie gebruiken en wordt door deze wijziging niet beïnvloed.
+Uw productie-instantie zal de oudere verificatie blijven gebruiken en deze wijziging heeft geen invloed op deze instantie.
