@@ -5,22 +5,17 @@ description: Adobe Campaign - Beveiligingsupdate Apache-versie
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 854278e3e2013293888ea194c12ec1a75e70d981
+source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
 # Adobe Campaign - Beveiligingsupdate Apache-versie {#apache-update}
 
->[!NOTE]
->Dit artikel is van toepassing op:
-> * Campaign Classic v7 Managed Services-klanten
-> * Campagne voor v8-klanten
-> * Campaign Standard-klanten
-
-
+>[!CAUTION]
+>Dit artikel is van toepassing op: Campaign Classic v7 Managed Services-klanten, Campagne v8-klanten en Campaign Standard-klanten.
 
 Adobe Campaign werkt met hulpprogramma&#39;s van derden en de compatibiliteit wordt regelmatig bijgewerkt, zodat alleen ondersteunde versies kunnen worden geïmplementeerd en de nieuwste correcties en verbeteringen kunnen worden toegepast.
 
