@@ -4,10 +4,10 @@ title: Een webapplicatie ontwerpen
 description: Een webapplicatie ontwerpen
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,7 @@ Webtoepassingen worden volgens hetzelfde principe als [webformulieren](about-web
 
 >[!CAUTION]
 >
->Gebruik de **[!UICONTROL Preview]** subtabblad om fouten tijdens het ontwerpen van webtoepassingen te controleren.
->
->Totdat de toepassing van het Web wordt gepubliceerd, worden de veranderingen niet blootgesteld aan eind - gebruikers.
+>Gebruik de **[!UICONTROL Preview]** subtabblad om fouten tijdens het ontwerpen van webtoepassingen te controleren. De profieltest die wordt gebruikt om een voorvertoning van uw webtoepassing weer te geven, moet zich bevinden in een map met **[!UICONTROL Access rights]** voor de **[!UICONTROL Web application agent]** operator. </br>Totdat de toepassing van het Web wordt gepubliceerd, worden de veranderingen niet blootgesteld aan eind - gebruikers.
 
 ## Het opnemen van grafieken in een toepassing van het Web {#inserting-charts-in-a-web-application}
 
