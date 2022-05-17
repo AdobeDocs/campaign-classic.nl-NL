@@ -5,9 +5,9 @@ description: Adobe Campaign - Beveiligingsupdate Apache-versie
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat 
 
    De huidige Apache-versie is kwetsbaar en heeft een potentieel veiligheidsrisico. Het is belangrijk dat uw instantie(s) van de Campagne wordt (worden) geüpgraded naar de meest recente toepasselijke Apache-versie om het beveiligingsrisico te verhelpen.
 
-
 * **Welke klanten worden gericht voor veiligheidsupgrades?**
 
    Alle klanten die gebruikmaken van Campagne-omgevingen die zijn geïmplementeerd in oudere Apache-versies, worden geüpgraded naar de nieuwste Apache-versie die van toepassing is.
@@ -49,6 +48,10 @@ Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat 
 * **Zijn er om het even welke acties die door de klant voor deze veiligheidsverbetering worden vereist?**
 
    Er zijn geen handelingen vereist omdat de beveiligingsupgrade automatisch wordt uitgevoerd.
+
+* **Wat is het effect op de lopende campagnes/werkschema&#39;s tijdens het onderhoudsvenster?**
+
+   Tijdens het onderhoudsvenster worden de workflow en de e-mailservices stopgezet en worden de geplande activiteiten niet uitgevoerd. Om het even welke aan de gang zijnde activiteiten of lopende processen zullen tijdens onderbreking worden gestopt tot de server opnieuw begint. Zodra de activiteit wordt voltooid en de server opnieuw is begonnen, zullen alle diensten hervatten.
 
 * **Welke bevestigingen moeten door de klanten worden in werking gesteld?**
 
