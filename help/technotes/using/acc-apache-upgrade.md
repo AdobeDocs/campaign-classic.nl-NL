@@ -5,7 +5,7 @@ description: Adobe Campaign - Beveiligingsupdate Apache-versie
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Adobe Campaign - Beveiligingsupdate Apache-versie {#apache-update}
 
 >[!CAUTION]
->Dit artikel is van toepassing op: Campaign Classic v7 Managed Services-klanten, Campagne v8-klanten en Campaign Standard-klanten.
+>Dit artikel is van toepassing op: **Campaign Classic v7 Managed Services** klanten, **Campagne v8** klanten en **Campaign Standard** klanten.
 
 Adobe Campaign werkt met hulpprogramma&#39;s van derden en de compatibiliteit wordt regelmatig bijgewerkt, zodat alleen ondersteunde versies kunnen worden geïmplementeerd en de nieuwste correcties en verbeteringen kunnen worden toegepast.
 
@@ -25,7 +25,7 @@ Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit d
 
 Van deze upgrade wordt verwacht dat deze automatisch buiten de normale kantooruren wordt uitgevoerd, zodat u de Campagneservice zonder onderbreking kunt blijven gebruiken.
 
-Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat we uw productie-instantie(s) upgraden. Aangezien dit een automatisch upgradeproces is dat eigendom is van Adobe, hoeft u niets te doen. Als u echter problemen ondervindt, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+De niet-productie-instantie(s) worden eerst door Adobe bijgewerkt, waarna de productie-instantie(s) worden bijgewerkt. Aangezien dit een automatisch upgradeproces is dat eigendom is van Adobe, hoeft u niets te doen. Als u echter problemen ondervindt, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Uw niet-productie-instantie(s) worden eerst door onze teams geüpgraded voordat 
 
 * **Welke bevestigingen moeten door de klanten worden in werking gesteld?**
 
-   Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kan ik om een verandering in Datum/Tijd in de geplande groef van de veiligheidsverbetering verzoeken?**
