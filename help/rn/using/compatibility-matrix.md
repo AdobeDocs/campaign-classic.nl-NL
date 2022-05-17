@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 </tbody>
 </table>
 
-Bovendien kunnen **Hybride** en **on-premise** omgevingen Campaign ook verbinden met:
+Daarnaast **Hybride** en **Op locatie** De milieu&#39;s kunnen Campagne met de volgende externe gegevensbestandsystemen ook verbinden. Deze systemen zijn **niet compatibel** met campagne **Managed Services** (gehoste) omgevingen.
 
 <table>
 <tbody>
@@ -247,9 +247,9 @@ Bovendien kunnen **Hybride** en **on-premise** omgevingen Campaign ook verbinden
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimaal V7.0</td>
@@ -420,13 +420,7 @@ De volgende browsers zijn compatibel met Campaign voor [toegang tot internet](..
 <p>Laatste versie</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
