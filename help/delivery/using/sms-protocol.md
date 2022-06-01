@@ -4,7 +4,7 @@ title: Protocol en instellingen voor sms-connector
 description: Meer informatie over de SMS-connector en hoe u deze configureert
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%
@@ -410,7 +410,7 @@ De Adobe Campaign Classic Extended SMPP-connector kan het aantal verbindingen pe
 
 Voor Adobe Campaign Classic kan het aantal ontvangers- en transmissieverbindingen verschillen:
 
-* **Transmitterverbindingen = Aantal MTA kindverbindingen * aantal MTA kindprocessen * aantal MTAs (als auto-antwoord wordt geplaatst) + Aantal MTA kindverbindingen**
+* **Transmitterverbindingen = Aantal MTA kindverbindingen * aantal MTA kindprocessen * aantal MTA aantal MTAs </br> (als auto-antwoord wordt geplaatst) + Aantal MTA kindverbindingen**
 
 Zoals hierboven gesuggereerd, opent het proces van Adobe Campaign Classic SMS meer transmissieverbindingen als het auto-antwoord wordt toegelaten. Deze extra verbindingen worden gebruikt om de automatische antwoorden te verzenden.
 
