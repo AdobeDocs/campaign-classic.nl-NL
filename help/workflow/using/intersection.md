@@ -4,14 +4,20 @@ title: Doorsnede
 description: Doorsnede
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: eb7a8cd2c9ff476a830dcc6e8e7c29ccd72c24f0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Doorsnede{#intersection}
+
+>[!CONTEXTUALHELP]
+>id="ac_workflow_intersection"
+>title="Intersectie-activiteit"
+>abstract="Een het type van Doorsnede activiteit leidt tot een doel van de doorsnede van de ontvangen doelstellingen. Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten daarom worden beëindigd voordat de doorsnede kan worden uitgevoerd."
+
 
 ![](../../assets/common.svg)
 
