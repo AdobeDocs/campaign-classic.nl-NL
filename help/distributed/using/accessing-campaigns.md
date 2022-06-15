@@ -4,16 +4,16 @@ title: Toegang tot campagnes
 description: Toegang tot campagnes
 feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Campagnes openen{#accessing-campaigns}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Zodra een campagne is bevolen, is de orde goedgekeurd, en de beschikbaarheidsdatum bereikt, kan het worden uitgevoerd.
 

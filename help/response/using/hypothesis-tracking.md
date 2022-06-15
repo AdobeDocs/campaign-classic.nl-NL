@@ -6,16 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Tracking van hypothesen{#hypothesis-tracking}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Het resultaat van hypotheseberekeningen is beschikbaar op verschillende niveaus van het Adobe Campaign-platform: De indicatoren berekend op basis van hypothesen en de reacties op de doelpopulaties zijn zichtbaar via de werkelijke hypothese, alsmede in de hypotheseverslagen die beschikbaar zijn via campagnes en leveringen.
 
@@ -49,7 +49,7 @@ De indicatoren geven de volgende informatie:
 * **Totale marge van de controlegroep**: totale marge over controlegroep.
 * **Gemiddelde marge per contact**: totale marge / gecontacteerd.
 * **Gemiddelde marge van controlegroepen**: totale marges / controlegroep.
-* **Aanvullende inkomsten**: (Gemiddelde inkomsten van gecontacteerde gemiddelde opbrengsten van de controlegroep)*Aantal gecontacteerde personen
+* **Aanvullende inkomsten**: (Gemiddelde inkomsten van de gecontacteerde gemiddelde opbrengsten van de controlegroep)&#42;Aantal gecontacteerde personen
 * **Aanvullende marge**: (Gemiddelde marge van de gecontacteerde-gemiddelde marge van de controlegroep) / aantal gecontacteerde personen
 * **Gemiddelde kosten per contactpersoon**: berekende leveringskosten / Aantal contacten.
 * **ROI**: berekende kosten van de levering / totale marge per contactpersoon

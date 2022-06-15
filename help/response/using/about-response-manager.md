@@ -3,7 +3,7 @@ product: campaign
 title: Responsbeheer
 description: Responsbeheer
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Aan de slag met Campagne Response Manager{#about-response-manager}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Adobe Campaign biedt een add-on van het Beheer van de Reactie aan die u het succes en de rentabiliteit van marketing campagnes laat meten of voorstellen over communicatiekanalen aanbiedt: e-mail, mobiel, direct mail, enz.
 
