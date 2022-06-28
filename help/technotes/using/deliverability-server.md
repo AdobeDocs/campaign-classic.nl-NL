@@ -4,10 +4,10 @@ title: Migreren naar de nieuwe releaseserver
 description: Meer informatie over het implementeren van de server voor het leveren van campagnes
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
    >Sla het bestand config.zip op wanneer de downloadprompt verschijnt, omdat u deze niet opnieuw kunt downloaden.
 
 1. Klik op **[!UICONTROL Next]**.
-1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**, zie [deze olie](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**, zie [deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
    Klik vervolgens op **[!UICONTROL Save configured API]**.
 
