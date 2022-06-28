@@ -4,7 +4,7 @@ title: Migreren naar de nieuwe releaseserver
 description: Meer informatie over het implementeren van de server voor het leveren van campagnes
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt 
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
-Als u de bestaande Adobe Campaign-releaseserver gebruikt en uw omgeving is geïmplementeerd op een lagere build dan Campagne 21.1.1, heeft dit gevolgen voor u. U moet een upgrade uitvoeren naar Campagne 21.1 (of meer).
+Als u de oude Adobe Campaign-releaseserver gebruikt en uw omgeving is geïmplementeerd op een lagere build dan Campagne 21.1.1, heeft dit gevolgen voor u. U moet een upgrade uitvoeren naar Campagne 21.1 (of meer).
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
