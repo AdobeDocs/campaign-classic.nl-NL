@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '399'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken
 
 1. Configureren [!DNL Vertica] op [CentOS](#vertica-centos), [Windows](#vertica-windows) of [Debian](#vertica-debian)
 1. Configureer de [!DNL Vertica] [externe rekening](#vertica-external) in Campagne
-
 
 >[!NOTE]
 >
@@ -166,4 +165,12 @@ U moet een [!DNL Vertica] externe account om uw Campagne-instantie aan te sluite
    * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
    * **[!UICONTROL Database]**: Naam van de database
+
    ![](assets/vertica.png)
+
+De connector ondersteunt de volgende opties:
+
+| Option | Beschrijving |
+|---|---|
+| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-toepassingsserver wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. |
+

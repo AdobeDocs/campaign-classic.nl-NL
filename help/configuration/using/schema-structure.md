@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1520'
 ht-degree: 1%
 
 ---
@@ -175,33 +175,27 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Tekenreeks<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 als unicode)<br /> </td> 
-   <td> VARCHAR (VARCHAR TEKEN STELT UNICODE IN ALS Unicode.<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR indien unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMMER(3)<br /> </td> 
-   <td> NUMERIEK(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMMER(3)<br /> </td> 
-   <td> NUMERIEK(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,38 +203,28 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> SMALLINT<br /> </td> 
    <td> NUMMER(5)<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
    <td> DUBBELE PRECISIE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBBEL<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMMER(10)<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> INTEGER<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMMER(20)<br /> </td> 
-   <td> NUMERIC(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
@@ -248,24 +232,18 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> Tijd<br /> </td> 
    <td> TIJD<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TIJD<br /> </td> 
-   <td> TIJD<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datumtijd<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> DUBBELE PRECISIE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBBEL<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB als Unicode)<br /> </td> 
-   <td> CLOB (CLOB-TEKEN STELT UNICODE IN ALS Unicode.)<br /> </td> 
-   <td> CLOB(6 MB)<br /> </td> 
    <td> TEXT (NTEXT als Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Klodder<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4 MB)<br /> </td> 
    <td> AFBEELDING<br /> </td> 
   </tr> 
  </tbody> 

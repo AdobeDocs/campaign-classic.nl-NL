@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '1933'
+ht-degree: 68%
 
 ---
 
@@ -18,6 +18,72 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) Release 7.3.1 - build 9352 {#release-7-3-1}
+
+_1 juli 2022_
+
+**Nieuwe functies**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Tijdgevoelige meldingen</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Met iOS 15 heeft Apple een concept van gevoelige meldingen toegevoegd dat de ontwikkelaar van de app de mogelijkheid geeft om de modus Focus te omzeilen wanneer een melding als gevoelig wordt beschouwd en de gebruiker in real-time moet bereiken.</p>
+<p>Leer hoe u een gevoelige melding maakt in het dialoogvenster <a href="../../delivery/using/create-notifications-ios.md">gedetailleerde documentatie</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Compatibiliteitsupdates**
+
+* Adobe Campaign SDK ondersteunt nu Android 12 en iOS 15 voor pushberichten.
+* Adobe Campaign is nu compatibel met MySQL 8.
+* Adobe Campaign is nu compatibel met Windows 11.
+* Adobe Campaign is nu compatibel met Debian 11.
+
+Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#OperatingSystems).
+
+**Verbeteringen**
+
+* Na het einde van de levensduur van Internet Explorer 11 gebruikt de HTML-renderingengine van de console nu Edge Chromium.
+* Het beheer van de databaseverbinding in Adobe Campaign is verbeterd om de stabiliteit te optimaliseren.
+* Microsoft Exchange Online OAuth 2.0-verificatie voor POP3 wordt nu ondersteund in Campagne. [Meer informatie](../../installation/using/external-accounts.md#bounce-mails-external-account)
+* Verschillende problemen verholpen bij het gebruik van een verrijkingswerkstroom met externe gegevens. (NEO-38069)
+* De SAP Hana FDA-connector is bijgewerkt en werkt nu met de nieuwste SAP Hana-databaseversie (2.x).
+* De Teradata FDA-connector is bijgewerkt en werkt nu met de nieuwste Teradata-versie (17).
+* In 20.2 werd de ondersteuning van tokengebaseerde verificatie voor iOS-leveringen geïntroduceerd voor nieuwe leveringen en leveringssjablonen. In 7.2, werd een flard toegevoegd aan de postugrade om de op token-gebaseerde authentificatiesteun op maximaal 10.000 eerder gecreeerde leverings en leveringsmalplaatjes toe te passen. In 7.3 is de pleister verbeterd en is de limiet verwijderd.
+
+**Patches**
+
+* Probleem verholpen met een fout van de vorige build waardoor gebruikers de grootte van de IMS-aanmeldingspagina niet konden wijzigen.
+* Oplossing voor een fout die optrad bij de installatie van het inhoudsbeheerpakket op een bestaande instantie.
+* Probleem opgelost in het dialoogvenster **Campagnes** menu waar het bericht &quot;bewerking in uitvoering&quot; voortdurend werd weergegeven.
+* Met Adobe Analytics ingeschakeld heeft u een probleem verholpen waarbij BID (Broadlog ID) en CID (Campagne-id) van de URL werden verwijderd bij het verzenden van een e-mail met een URL zonder de levering op te slaan.
+* Probleem verholpen bij het uploaden van een afbeelding in de map Public Resources in een instantie met de specifieke configuratie van Message Center. Het volgende foutbericht wordt weergegeven: &quot;Kan de afbeeldingen niet uploaden naar de volgende servers&quot;.
+* Probleem verholpen waarbij het systeem vastliep bij het opnieuw genereren van configuratie in geval van slechte configuratiebestanden.
+* Probleem opgelost waarbij de leveringsindicatoren niet correct werden bijgewerkt. (NEO-44827)
+* Probleem verholpen dat tot een fout na de upgrade kon leiden bij het gebruik van complexe query&#39;s. (NEO-43648)
+* Probleem verholpen waarbij de voorvertoning van webApps niet kon werken. (NEO-43242)
+* Probleem verholpen waarbij de voorbereiding van de levering mislukte wanneer een extern doeltoewijzingsbestand werd gebruikt in een werkstroom met activiteit voor het laden van gegevens (bestand). (NEO-43691)
+* Probleem verholpen waarbij het exemplaar kon vastlopen en opnieuw moest worden opgestart. (NEO-44645)
+* Probleem verholpen waarbij workflowwarmtekaart geen resultaten kon laden. (NEO-43360)
+* Probleem verholpen dat tot verbindingsproblemen kon leiden bij gebruik van de externe FDA-connector. (NEO-42722)
+* Probleem verholpen met proefdrukken bij het gebruik van adresvervanging en uitsluiting van controlegroepen. (NEO-39695)
+* Probleem verholpen waarbij workflowproblemen konden optreden als gevolg van een probleem met de Snowflake-aansluiting. (NEO-46299)
+* Probleem verholpen waarbij de clientconsole kon worden stilgezet vanwege een ongeldig teken in een personalisatieblok. (NEO-45761)
+* Probleem verholpen dat tot verbindingsproblemen kon leiden bij het maken van een externe account voor Snowflake als externe database. (NEO-45744)
+* Probleem verholpen dat tot de informatie van de vertoningstabel kon leiden die door een visibleIf attribuut wordt beschermd. (NEO-37865)
+* Probleem verholpen waarbij het foutbericht &#39;$ is niet gedefinieerd&#39; kon worden weergegeven tijdens de fase van de leveringsanalyse. (NEO-32940)
+* Probleem opgelost waarbij leveringen aan een onjuist eventType werden gekoppeld. (NEO-45743)
+* Probleem verholpen dat tot crashes kon leiden als gevolg van periodiek optredende kerndumps (NEO-30549)
+* Probleem verholpen dat tot crashes kon leiden bij het gebruik van onjuiste HTML-code in een levering. (NEO-40385)
+* Probleem verholpen waardoor gebruikers die geen beheerder zijn, geen toegang krijgen tot het dialoogvenster **Analyse** tabblad in leveringseigenschappen. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 9349 {#release-7-2-2}
 
@@ -40,7 +106,6 @@ _1 maart 2022_
 * Er is een probleem opgelost dat leidde tot fouten bij het synchroniseren van de mid-sourcing- en marketinginstanties op een multi-mid-configuratie. (NEO-10432)
 * Er is een probleem opgelost dat leidde tot een fout bij het vernieuwen van de afleveringsworkflow bij meer dan 1000 brede logboeken tegelijk. (NEO-40276)
 * Er is een probleem opgelost waardoor de leveringsindicatoren voor de open-ratio en de click-ratio niet automatisch werden bijgewerkt. (NEO-43253)
-
 
 ## ![](assets/do-not-localize/limited_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
 

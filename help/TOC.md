@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2585'
 ht-degree: 99%
 
 ---
@@ -677,6 +677,8 @@ ht-degree: 99%
             + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
             + [Teradata configureren](installation/using/configure-fda-teradata.md)
             + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
+            + [Microsoft SQL Server configureren](installation/using/configure-fda-sql.md)
+            + [PostSQL configureren](installation/using/configure-fda-postgresql.md)
          + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
          + [Verbinding maken met de database](installation/using/connecting-to-database.md)
          + [Het gegevensschema maken](installation/using/creating-data-schema.md)
@@ -688,6 +690,7 @@ ht-degree: 99%
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
       + [Lijst met Campaign-opties](installation/using/configuring-campaign-options.md)
       + [Campaign verwijderen](installation/using/uninstalling-campaign.md)
+      + [Nieuwe lettertypen installeren](installation/using/install-fonts.md)
 + Bewakingshandleiding{#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)

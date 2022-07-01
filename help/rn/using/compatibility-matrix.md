@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: ht
-source-wordcount: '733'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 98%
 
 ---
 
@@ -48,6 +48,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Debian</td>
 <td>
+<p>11 (64 bits)</p>
 <p>10 (64 bits)</p>
 <p>9 (64 bits)</p>
 </td>
@@ -247,9 +248,9 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimaal V7.0</td>
@@ -266,9 +267,13 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 </tr>
 <tr><td>MySQL</td>
 <td>
+<p>8</p>
 <p>5.7</p>
 </td>
-<td>Minimaal V7.0</td>
+<td>
+<p>v7.3 minimaal </p>
+<p>Minimaal V7.0</p>
+</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -336,8 +341,9 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>8</p>
+<p>11 (campagne starten v7.3)</p>
 <p>10 (aanbevolen voor Japanse instanties)</p>
+<p>8</p>
 </td>
 </tr>
 </tbody>
@@ -368,15 +374,15 @@ U kunt Campaign gebruiken om [pushmeldingen](../../delivery/using/about-mobile-a
 <tr>
 <td>Android</td>
 <td>
-<p>7.x, 8.x, 9.0</p>
-<p>met mobiele SDK-build 1.0.27.</p>
+<p>12 (startcampagne v7.3), 9.0, 8.x, 7.x</p>
+<p>met mobiele SDK-build 1.1.1</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
-<p>met mobiele SDK-build 1.0.26, compatibel met de 32-bits en de 64-bits versie.</p>
+<p>iOS 9 - 15</p>
+<p>met mobiele SDK-build 1.0.26, compatibel met de 32-bits en de 64-bits versie. iOS 15 wordt ondersteund voor startcampagne v7.3</p>
 </td>
 </tr>
 </tbody>

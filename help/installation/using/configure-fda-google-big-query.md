@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -193,11 +193,11 @@ U moet een [!DNL Google BigQuery] externe account om uw Adobe Campaign Classic-e
 
 De connector ondersteunt de volgende opties:
 
-| Option | Waarde | Beschrijving |
-|:-:|:-:|:-:|
-| ProxyType | string | Het type proxy dat wordt gebruikt om verbinding te maken met BigQuery via ODBC- en SDK-connectors. </br>HTTP (standaard), http_no_tunnel, socks4 en socks5 worden momenteel ondersteund. |
-| ProxyHost | string | Hostnaam of IP-adres waar de proxy kan worden bereikt. |
-| ProxyPort | getal | Poortnummer waarop de proxy wordt uitgevoerd, bijvoorbeeld 8080 |
-| ProxyUid | string | Gebruikersnaam voor de geverifieerde proxy |
-| ProxyPwd | string | Wachtwoord ProxyUid |
-| bqpath | string | Dit is alleen van toepassing voor bulkload (Cloud SDK). </br> Als u wilt voorkomen dat de PATH-variabele wordt gebruikt of als de google-cloud-sdk-map naar een andere locatie moet worden verplaatst, kunt u met deze optie het exacte pad naar de SDK-binmap van de cloud op de server opgeven. |
+| Option | Beschrijving |
+|:-:|:-:|
+| ProxyType | Het type proxy dat wordt gebruikt om verbinding te maken met BigQuery via ODBC- en SDK-connectors. </br>HTTP (standaard), http_no_tunnel, socks4 en socks5 worden momenteel ondersteund. |
+| ProxyHost | Hostnaam of IP-adres waar de proxy kan worden bereikt. |
+| ProxyPort | Poortnummer waarop de proxy wordt uitgevoerd, bijvoorbeeld 8080 |
+| ProxyUid | Gebruikersnaam voor de geverifieerde proxy |
+| ProxyPwd | Wachtwoord ProxyUid |
+| bqpath | Dit is alleen van toepassing voor bulkload (Cloud SDK). </br> Als u wilt voorkomen dat de PATH-variabele wordt gebruikt of als de google-cloud-sdk-map naar een andere locatie moet worden verplaatst, kunt u met deze optie het exacte pad naar de SDK-binmap van de cloud op de server opgeven. |

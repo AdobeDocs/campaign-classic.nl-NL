@@ -4,10 +4,10 @@ title: Een pushmelding maken voor iOS-apparaten
 description: Meer informatie over het maken van pushmeldingen voor iOS
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '965'
+ht-degree: 6%
 
 ---
 
@@ -43,7 +43,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. Selecteer het berichttype: **[!UICONTROL Alert]**, **[!UICONTROL Badge]**, of **[!UICONTROL Alert and badge]** of **[!UICONTROL Silent Push]**.
+1. Kies uw **[!UICONTROL Notification type]** Tussen **[!UICONTROL General notification (Alert, Sound, Badge)]** of **[!UICONTROL Silent notification]**.
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -51,32 +51,67 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
    >
    >De **Silent Push** in de modus kan een melding &quot;stil&quot; naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
-1. In de **[!UICONTROL Title]** Voer het label in van de titel die u in het bericht wilt weergeven. Deze wordt alleen weergegeven in de lijst met meldingen die beschikbaar zijn in het meldingscentrum. In dit veld kunt u de waarde van de optie **titel** parameter van de iOS-berichtlading.
+1. In de **[!UICONTROL Title]** Voer in het veld het label in van de titel die u wilt weergeven in de lijst met meldingen die beschikbaar is in het meldingscentrum.
 
-1. Als u de HTTP/2-connector gebruikt, kunt u een ondertitel (waarde van de **ondertitel** parameter van de iOS-berichtlading). Zie de [deze sectie](configuring-the-mobile-application.md).
+   In dit veld kunt u de waarde van de optie **titel** parameter van de iOS-berichtlading.
 
-1. Voer vervolgens de **[!UICONTROL Message]** en de **[!UICONTROL Value of the badge]** op basis van het gekozen meldingstype.
+1. U kunt een **[!UICONTROL Subtitle]**, waarde van de ondertitelparameter van de iOS-berichtlading. Zie de [deze sectie](configuring-the-mobile-application.md).
+
+1. Voer de inhoud van het bericht in het dialoogvenster **[!UICONTROL Message content]** van de wizard. Het gebruik van personalisatievelden wordt weergegeven in de [Over personalisatie](about-personalization.md) sectie.
 
    ![](assets/nmac_delivery_ios_5.png)
 
-   >[!NOTE]
-   >
-   >**[!UICONTROL Badge]** en **[!UICONTROL Alert and badge]** met typedeclaraties kunt u de waarde van de badge wijzigen (het nummer boven het logo van de mobiele toepassing). Als u de badge wilt vernieuwen, hoeft u alleen 0 als waarde in te voeren. Als het veld leeg is, verandert de waarde van de badge niet.
-
 1. Klik op de knop **[!UICONTROL Insert emoticon]** pictogram om emoticons in te voegen in uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u [deze sectie](customizing-emoticon-list.md)
 
-1. De **[!UICONTROL Action button]** Hiermee kunt u een label definiëren voor de actieknop in de waarschuwingsmeldingen (**action_loc_key** veld van de lading). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de corresponderende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Voor meer informatie over lokaliseerbare tekenreeksen raadpleegt u de [Apple-documentatie](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. In de **[!UICONTROL Play a sound]** veld, selecteert u het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
+1. Van de **[!UICONTROL Sound and Badge]** kunt u de volgende opties bewerken:
 
+   * **[!UICONTROL Clean Badge]**: Schakel deze optie in om de waarde van de badge te vernieuwen.
+
+   * **[!UICONTROL Value]**: Stel een nummer in dat wordt gebruikt om het aantal nieuwe ongelezen gegevens direct op het toepassingspictogram weer te geven.
+
+   * **[!UICONTROL Critical alert mode]**: Schakel deze optie in om geluid toe te voegen aan uw melding, zelfs als de telefoon van de gebruiker is ingesteld op de focusmodus of als de iPhone is gedempt.
+
+   * **[!UICONTROL Name]**: Selecteer het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
+
+   * **[!UICONTROL Volume]**: volume van uw geluid van 0 tot 100.
    >[!NOTE]
    >
    >Geluiden moeten in de toepassing worden opgenomen en worden gedefinieerd wanneer de service wordt gemaakt. Zie [deze sectie](configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. In de **[!UICONTROL Application variables]** Voer de waarde van elke variabele in. Met toepassingsvariabelen kunt u berichtgedrag definiëren: U kunt bijvoorbeeld een specifiek toepassingsscherm configureren dat moet worden weergegeven wanneer de gebruiker het bericht activeert.
+   ![](assets/nmac_delivery_ios_6.png)
 
-   >[!NOTE]
-   >
-   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg [deze sectie](configuring-the-mobile-application.md) voor meer informatie.
+1. Van de **[!UICONTROL Application variables]** tab, uw **[!UICONTROL Application variables]** automatisch worden toegevoegd. Met deze instructies kunt u bijvoorbeeld het berichtgedrag definiëren. U kunt dan een specifiek toepassingsscherm configureren dat wordt weergegeven wanneer de gebruiker het bericht activeert.
+
+   Raadpleeg [deze sectie](configuring-the-mobile-application.md) voor meer informatie.
+
+1. Van de **[!UICONTROL Advanced]** kunt u de volgende algemene opties bewerken:
+
+   * **[!UICONTROL Mutable content]**: Schakel deze optie in als u wilt dat de mobiele toepassing media-inhoud kan downloaden.
+
+   * **[!UICONTROL Thread-id]**: identifier die wordt gebruikt om gerelateerde meldingen te groeperen.
+
+   * **[!UICONTROL Category]**: naam van de rubriek-id die knoppen voor handelingen weergeeft. Met deze meldingen kan de gebruiker sneller verschillende taken uitvoeren als reactie op een melding zonder de applicatie te openen of erin te moeten navigeren.
+
+   ![](assets/nmac_delivery_ios_7.png)
+
+1. Voor meldingen met tijdgevoeligheid kunt u de volgende opties opgeven:
+
+   * **[!UICONTROL Target content ID]**: identifier die wordt gebruikt om aan te geven welk toepassingsvenster moet worden verzonden wanneer de melding wordt geopend.
+
+   * **[!UICONTROL Launch image]**: naam van het startafbeeldingsbestand dat moet worden weergegeven. Als de gebruiker ervoor kiest de toepassing te starten, wordt de geselecteerde afbeelding weergegeven in plaats van het startscherm van de toepassing.
+
+   * **[!UICONTROL Interruption level]**:
+
+      * **[!UICONTROL Active]**: Het systeem stelt de melding standaard in, licht het scherm aan en kan een geluid afspelen. Meldingen doorbreken niet door de focusmodi.
+
+      * **[!UICONTROL Passive]**: Het systeem voegt het bericht toe aan de meldingslijst zonder het scherm te belichten of een geluid af te spelen. Meldingen doorbreken niet door de focusmodi.
+
+      * **[!UICONTROL Time sensitive]**: Het systeem presenteert de melding onmiddellijk, licht het scherm op, kan een geluid afspelen en door de modus Focus breken. Voor dit niveau is geen speciale toestemming van Apple vereist.
+
+      * **[!UICONTROL Critical]**: Het systeem presenteert onmiddellijk het bericht, licht omhoog het scherm, en mijdt de demtschakelaar of nadrukwijzen. Voor dit niveau is een speciale machtiging van Apple vereist.
+   * **[!UICONTROL Relevance score]**: een relevantiescore instellen van 0 tot 100. Het systeem gebruikt dit om de berichten in het berichtoverzicht te sorteren.
+
+   ![](assets/nmac_delivery_ios_8.png)
 
 1. Zodra het bericht wordt gevormd, klik **[!UICONTROL Preview]** om een voorvertoning van de melding weer te geven.
 
@@ -88,14 +123,13 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
    >
    >In de voorvertoning wordt het uiterlijk van iOS 10 gebruikt.
 
-Als u een bewijs wilt verzenden en de uiteindelijke levering wilt verzenden, gebruikt u hetzelfde proces als voor e-mailleveringen.
+Als u een bewijs wilt verzenden en de uiteindelijke levering wilt verzenden, gebruikt u hetzelfde proces als voor e-mailleveringen. [Meer informatie](steps-validating-the-delivery.md)
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
 * [Push notification quarantines](understanding-quarantine-management.md#push-notification-quarantines)
 * [Een levering controleren](about-delivery-monitoring.md)
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
-
 
 ## Een rijke iOS-melding maken {#creating-ios-delivery}
 
@@ -118,7 +152,6 @@ U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing d
 1. In de **[!UICONTROL Target type]** venster, selecteert u **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** en klik op **[!UICONTROL Next]**.
 
 1. In de **[!UICONTROL Service]** vervolgkeuzelijst, selecteert u eerst de eerder gemaakte service en vervolgens de toepassing waarvoor u een toepassing wilt maken. Klik vervolgens op **[!UICONTROL Finish]**.
-De **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
 
    ![](assets/nmac_ios_6.png)
 
@@ -126,10 +159,22 @@ De **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankel
 
    ![](assets/nmac_ios_7.png)
 
-1. Controleer de **[!UICONTROL Mutable content]** in het venster Meldingen bewerken om de mobiele toepassing in staat te stellen media-inhoud te downloaden.
+1. Van de **[!UICONTROL Application variables]** tab, uw **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
+
+   >[!NOTE]
+   >
+   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg [deze sectie](configuring-the-mobile-application.md) voor meer informatie.
+
+   ![](assets/nmac_ios_10.png)
+
+1. Van de **[!UICONTROL Advanced]** tabblad, controleert u de **[!UICONTROL Mutable content]** zodat de mobiele toepassing media-inhoud kan downloaden.
 
 1. Klikken **[!UICONTROL Save]** en verzend uw levering.
 
 De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer deze worden ontvangen op de mobiele iOS-apparaten van de abonnees.
 
 ![](assets/nmac_ios_8.png)
+
+
+
+

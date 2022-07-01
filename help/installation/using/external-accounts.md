@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 8%
+source-wordcount: '1817'
+ht-degree: 7%
 
 ---
 
@@ -75,6 +75,34 @@ Om het **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening:
 * **[!UICONTROL Encryption]**
 
    Type gekozen codering tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
+
+* **[!UICONTROL Function]**
+
+   Binnenkomende e-mail of SOAP-router
+
+>[!IMPORTANT]
+>
+>Voordat u uw POP3-externe account configureert met Microsoft OAuth 2.0, moet u uw toepassing eerst registreren in de Azure-portal. Raadpleeg [deze pagina](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) voor meer informatie.
+
+Een POP3 extern configureren met **Microsoft OAuth 2.0**, controleert u de **[!UICONTROL Microsoft OAuth 2.0]** en vult de volgende velden in:
+
+* **[!UICONTROL Azure tenant]**
+
+   Azure ID (of Directory (huurder) ID) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
+
+* **[!UICONTROL Azure Client ID]**
+
+   Client-id (of toepassings-id (client)) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
+
+* **[!UICONTROL Azure Client secret]**
+
+   Identiteitskaart van het geheim van de cliënt kan in worden gevonden **Clientgegevens** uit de **Certificaten en geheimen** in het Azure-portaal.
+
+* **[!UICONTROL Azure Redirect URL]**
+
+   De omleidings-URL vindt u in het dialoogvenster **Verificatie** in het Azure-portaal. Het moet eindigen met de volgende syntaxis `nl/jsp/oauth.jsp`, bijvoorbeeld `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+Nadat u de andere gegevens hebt ingevoerd, kunt u op **[!UICONTROL Setup the connection]** om de configuratie van uw externe account te voltooien.
 
 ### Routering{#routing-external-account}
 
@@ -166,6 +194,14 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 * **[!UICONTROL Password]**
 
    Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
+
+SSH-toetsen toevoegen aan Windows:
+
+1. Maak de **HOME** omgevingsvariabele met waarde ingesteld als installatiemap.
+
+2. Voeg uw persoonlijke sleutel toe aan de `/$HOME/.ssh/id_rsa` map.
+
+3. Start de Adobe Campaign-services opnieuw.
 
 ### Externe database (FDA) {#external-database-external-account}
 
