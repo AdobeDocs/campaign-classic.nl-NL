@@ -4,9 +4,9 @@ title: Acties voor rapporten
 description: Acties voor rapporten
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ Meer informatie over de **nlserver** service, raadpleeg [deze sectie](../../prod
 
 U kunt uw rapport afdrukken: Klik hiertoe op het printerpictogram: hiermee wordt het dialoogvenster geopend.
 
-Voor een beter resultaat bewerkt u de afdrukopties van Internet Explorer en selecteert u **[!UICONTROL Print background colors and images]**.
+Voor een beter resultaat bewerkt u de afdrukopties van Verkenner en selecteert u **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 

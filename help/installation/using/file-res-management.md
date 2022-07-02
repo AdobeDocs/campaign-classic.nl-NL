@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 0%
+source-wordcount: '598'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,7 @@ De standaardwaarde van dit kenmerk is **.+** en kunt u elk bestandstype uploaden
 
 Als u de mogelijke indelingen wilt beperken, vervangt u de kenmerkwaarde door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
-Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** Hiermee kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
-
->[!NOTE]
->
->In Internet Explorer moet het volledige bestandspad worden gecontroleerd door de reguliere expressie.
+Bijvoorbeeld: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** Hiermee kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
 U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van het Web te vormen. [Meer informatie](web-server-configuration.md)
 
@@ -119,7 +115,7 @@ Voor meer informatie over deze iOS HTTP/2-connector raadpleegt u deze [page](../
 
 ## Overheidsmiddelen beheren {#managing-public-resources}
 
-Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer info](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 De openbare middelen worden opgeslagen in **/var/res/instance** directory van de installatiemap van Adobe Campaign.
 

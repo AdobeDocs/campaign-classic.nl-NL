@@ -4,9 +4,9 @@ title: Een landingspagina maken
 description: Een landingspagina maken
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Pas deze stappen voor elke pagina toe die in de toepassing van het Web wordt opg
 
 >[!CAUTION]
 >
->**De DCE voert de code JavaScript voor de geladen pagina van de HTML uit.** JavaScript-fouten in de HTML-sjabloon die kunnen voorkomen in de Adobe Campaign-interface. Deze fouten hebben geen betrekking op de editor. Als u wilt controleren of de geïmporteerde bestanden geen fouten bevatten, raden we u aan deze bestanden in een browser (Internet Explorer/Firefox/Chrome) te testen voordat u de bestanden in de DCE importeert.
+>**De DCE voert de code JavaScript voor de geladen pagina van de HTML uit.** JavaScript-fouten in de HTML-sjabloon die kunnen voorkomen in de Adobe Campaign-interface. Deze fouten hebben geen betrekking op de editor. Als u wilt controleren of de geïmporteerde bestanden geen fouten bevatten, kunt u het beste deze testen in een webbrowser voordat u de bestanden importeert in de DCE.
 
 ## Stap 2 - De inhoud configureren {#step-2---configuring-the-content}
 
