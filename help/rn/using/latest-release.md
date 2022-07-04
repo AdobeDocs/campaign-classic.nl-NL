@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 2bbf548992b7ab9c0d8a6a0666c2024db5af1f63
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1936'
 ht-degree: 68%
 
 ---
@@ -51,7 +51,7 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 
 **Verbeteringen**
 
-* Na het einde van de levensduur van Internet Explorer 11 gebruikt de HTML-renderingengine van de console nu Edge Chromium.
+* Na afloop van de levensduur van Internet Explorer 11 gebruikt de HTML-renderingengine voor Adobe Services in de console nu Edge Chromium.
 * Het beheer van de databaseverbinding in Adobe Campaign is verbeterd om de stabiliteit te optimaliseren.
 * Microsoft Exchange Online OAuth 2.0-verificatie voor POP3 wordt nu ondersteund in Campagne. [Meer informatie](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Verschillende problemen verholpen bij het gebruik van een verrijkingswerkstroom met externe gegevens. (NEO-38069)
