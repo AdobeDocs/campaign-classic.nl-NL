@@ -5,10 +5,10 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '1067'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 Vanaf de release van Campaign Classic v7 21.1 stelt Adobe Campaign een nieuwe leverbaarbaarheidsserver voor die problemen met hoge beschikbaarheid oplost en de naleving van de beveiligingsvereisten aanpakt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver.
 
-Als klant van Campaign Classic, moet u de nieuwe leveringsserver uitvoeren.
+Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren **vóór augustus, 31 augustus 2022**.
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen raadpleegt u de [Veelgestelde vragen](#faq)of contact op [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Wat is er veranderd?{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt 
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
-Als u de oude Adobe Campaign-releaseserver gebruikt en uw omgeving is geïmplementeerd op een lagere build dan Campagne 21.1.1, heeft dit gevolgen voor u. U moet een upgrade uitvoeren naar Campagne 21.1 (of meer).
+Als uw omgeving is geïmplementeerd op een lagere build dan [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2), heeft dat gevolgen voor u. U moet een upgrade uitvoeren naar Campagne versie 7.2.1 (of meer).
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -150,5 +150,22 @@ Volg onderstaande stappen om te controleren of de integratie is gelukt:
 1. Bladeren naar **Beheer > Productie > Technische workflows**.
 1. Start de **Update voor leverbaarheid** (leverabilityUpdate) workflow. Dit moet worden uitgevoerd op al uw campagneinstanties (MKT, MID, RT, EXEC).
 1. Logbestanden controleren: de workflow moet zonder fouten worden uitgevoerd.
+
+
+## Veelgestelde vragen {#faq}
+
+### Wat gebeurt er als ik mijn omgeving niet opwaardeer?
+
+Om het even welke instantie van de Campagne die niet tegen 31 Augustus wordt bevorderd zal niet meer met de server van de Leverbaarheid van de Campagne kunnen verbinden. Als gevolg daarvan **Update voor leverbaarheid** (DeliabilityUpdate) workflow zal mislukken. Deze workflow beheert de dagelijkse update van de MX-regels en -factureringsregels.
+
+Als u uw milieu niet bevordert, zullen de e-mailmontages ophouden gesynchroniseerd (MX de regels van het Beheer, Binnenkomende E-mailregels, de regels van het Beheer van het Domein, en stuiterende kwalificatieregels). Dit kan in de loop der tijd invloed hebben op uw leverbaarheid. Als deze regels ingrijpend worden gewijzigd, moeten ze vanaf dit punt handmatig worden toegepast.
+
+Alleen voor MKT-instanties [Algemene lijst voor onderdrukking](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) is aangetast.
+
+### Ik kan nu niet upgraden. Wat zijn de richtsnoeren?
+
+Als u uw instantie niet vóór 31 augustus kunt bijwerken, moet u tijdelijk onbruikbaar maken **Update voor leverbaarheid** (DeliabilityUpdate) werkschema tot de verbetering volledig is zodat het niet probeert om met de oude leverbaarheidsserver te synchroniseren.
+
+
 
 Voor meer hulp, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
