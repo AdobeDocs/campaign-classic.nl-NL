@@ -5,9 +5,9 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Vanaf de release van Campaign Classic v7 21.1 stelt Adobe Campaign een nieuwe leverbaarbaarheidsserver voor die problemen met hoge beschikbaarheid oplost en de naleving van de beveiligingsvereisten aanpakt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver.
 
-Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren
+Als klant van Campaign Classic, moet u de nieuwe leveringsserver uitvoeren.
 
 >[!NOTE]
 >
@@ -27,7 +27,6 @@ Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren
 Adobe ontmantelt oudere gegevenscentra wegens veiligheidsoverwegingen. Adobe Campaign Classic-clients moeten migreren naar de nieuwe, op de Amazon Web Service (AWS) gehoste service.
 
 Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt veilige en geverifieerde eindpunten om campagnemeservers in staat te stellen de vereiste gegevens op te halen: in plaats van verbinding te maken met de database voor elk verzoek, slaat de nieuwe, te leveren server de gegevens in de cache op om de aanvragen waar mogelijk te bedienen. Dit mechanisme verbetert de responstijd. &#x200B;
-
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ Als **on-premise/hybride klant**, moet u een upgrade uitvoeren naar een van de n
 
 ## Implementatiestappen (hybride en on-premise klanten) {#implementation-steps}
 
+Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Campagne met Adobe Gedeelde Diensten via een op de Dienst van Identity Management (IMS) gebaseerde authentificatie communiceren. De aangewezen manier is de op Adobe Developer gebaseerde Token van de Gateway te gebruiken (ook genoemd de Token van de Technische Rekening of JWT van Adobe IO).
+
+
 >[!WARNING]
 >
 >Deze stappen mogen alleen worden uitgevoerd door Hybride en On-premise implementaties.
@@ -51,11 +53,18 @@ Als **on-premise/hybride klant**, moet u een upgrade uitvoeren naar een van de n
 
 ### Vereisten{#prerequisites}
 
-Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Campagne met Adobe Gedeelde Diensten via een op de Dienst van Identity Management (IMS) gebaseerde authentificatie communiceren. De aangewezen manier is het op Adobe Developer gebaseerde Token van de Gateway te gebruiken (ook genoemd Token van de Technische Rekening of JWT van Adobe IO).
+Controleer uw instantieconfiguratie voordat u de implementatie start.
+
+1. Open de clientconsole van Campagne en meld u als beheerder aan bij Adobe Campaign.
+1. Bladeren naar **Beheer > Platform > Opties**.
+1. Controleer de `DmRendering_cuid` option value is fill.
+
+   * Als de optie is gevuld, kunt u de implementatie starten.
+   * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om uw CUID op te halen.
+
+      Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de zelfde waarde worden ingevuld.
 
 ### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
-
-
 
 1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie.
 
@@ -126,15 +135,7 @@ Dit doet u als volgt:
 
 1. U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden. U kunt ook een `config -reload` gebruiken.
 
-### Stap 3: Controleer uw configuratie
-
-Zodra de montages worden gedaan, kunt u uw instantieconfiguratie controleren. Volg de onderstaande stappen:
-
-1. Open de clientconsole en meld u als beheerder aan bij Adobe Campaign.
-1. Bladeren naar **Beheer > Platform > Opties**.
-1. Controleer de `DmRendering_cuid` option value is fill. Deze moet op al uw campagneexemplaren worden ingevuld (MKT, MID, RT, EXEC). Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om uw CUID op te halen.
-
-### Stap 4: De nieuwe releaseserver inschakelen
+### Stap 3: De nieuwe releaseserver inschakelen
 
 U kunt nu de nieuwe releaseserver inschakelen. Dit doet u als volgt:
 
@@ -142,7 +143,7 @@ U kunt nu de nieuwe releaseserver inschakelen. Dit doet u als volgt:
 1. Bladeren naar **Beheer > Platform > Opties**.
 1. Toegang krijgen tot `NewDeliverabilityServer_FeatureFlag` en de waarde instellen op `1`. Deze configuratie zou op al uw instanties van de Campagne (MKT, MID, RT, EXEC) moeten worden uitgevoerd.
 
-### Stap 5: Valideer uw configuratie
+### Stap 4: Valideer uw configuratie
 
 Volg onderstaande stappen om te controleren of de integratie is gelukt:
 
