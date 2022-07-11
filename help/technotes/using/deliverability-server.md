@@ -5,10 +5,10 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '909'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Als **gehoste klant**, werkt Adobe samen met u om uw exemplaar(s) te upgraden na
 
 Als **on-premise/hybride klant**, moet u een upgrade uitvoeren naar een van de nieuwere versies om te kunnen profiteren van de nieuwe releaseserver. Zodra alle instanties worden bevorderd, zult u kunnen [de nieuwe integratie uitvoeren](#implementation-steps) naar Adobe-leverbaarbaarheidsserver en zorg voor een naadloze overgang.
 
-## Implementatiestappen (hybride en on-premise klanten) {#implementation-steps}
+## Implementatiestappen {#implementation-steps}
 
 Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Campagne met Adobe Gedeelde Diensten via een op de Dienst van Identity Management (IMS) gebaseerde authentificatie communiceren. De aangewezen manier is de op Adobe Developer gebaseerde Token van de Gateway te gebruiken (ook genoemd de Token van de Technische Rekening of JWT van Adobe IO).
 
@@ -48,8 +48,6 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 >[!WARNING]
 >
 >Deze stappen mogen alleen worden uitgevoerd door Hybride en On-premise implementaties.
->
->Voor gehoste implementaties neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Vereisten{#prerequisites}
 
