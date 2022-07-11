@@ -5,16 +5,16 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
 # Campagne Deliverability Server {#acc-deliverability}
 
-Vanaf de release van Campaign Classic v7 21.1 stelt Adobe Campaign een nieuwe leverbaarbaarheidsserver voor die problemen met hoge beschikbaarheid oplost en de naleving van de beveiligingsvereisten aanpakt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver.
+Starten [release v7.2.1](../../rn/using/latest-release.md#release-7-2-2)Adobe Campaign stelt een nieuwe, te leveren server voor die hoge beschikbaarheid biedt en problemen met de naleving van de beveiligingsvereisten aanpakt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver.
 
 Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren **vóór augustus, 31 augustus 2022**.
 
