@@ -3,10 +3,10 @@ product: campaign
 title: Leveringen
 description: Meer informatie over standaardleveringsworkflows
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Leveringen** mo
    <td> Deze werkstroom normaliseert opsommingswaarden. Deze wordt standaard elke dag om 3 uur geactiveerd.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Update for deliverability</span> <br /> </td> 
+   <td> <span class="uicontrol">Vernieuwen voor leverbaarheid</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> Met deze workflow kunt u een lijst maken met regels voor stuiterende mailkwalificatie en een lijst met domeinen en MX's in het platform. Deze workflow werkt alleen als de HTTPS-poort geopend is. Deze lijsten worden alleen bijgewerkt als de module Leverbaarheid is geïnstalleerd.<br /> </td> 
   </tr> 

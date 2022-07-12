@@ -4,7 +4,7 @@ title: Technische workflows controleren
 description: Technische workflows controleren
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 5%
@@ -48,9 +48,9 @@ Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standaard elk uur) en of het dagboek geen terugkerende fouten markeert. Raadpleeg deze [sectie](delivery.md) voor meer informatie.
 
-Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+Voor **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Controleer of de **[!UICONTROL Deliverability update]** de workflow wordt elke dag uitgevoerd en voltooid.
+1. Controleer of de **[!UICONTROL Refresh for Deliverability]** de workflow wordt elke dag uitgevoerd en voltooid.
 1. Verifieer in het dagboek dat de regels regelmatig worden bijgewerkt.
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
