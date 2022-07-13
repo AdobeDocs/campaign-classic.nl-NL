@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 
 ## Adobe Gehoste implementaties {#hosted-customers}
 
-Voor een gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bij te werken:
+Als gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bij te werken:
 
 1. Adobe kan direct implementeren. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
