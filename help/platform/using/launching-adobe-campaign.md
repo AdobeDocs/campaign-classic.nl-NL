@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '513'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-Campagne-clientconsole is
+De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden. Leer hoe u de clientconsole kunt downloaden en configureren in [deze pagina](../../installation/using/installing-the-client-console.md).
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
    De eerste keer u tot het gegevensbestand toegang hebt, is uw wachtwoord dat aan u door de beheerder wordt gegeven. Wanneer u verbinding hebt, kunt u uw wachtwoord wijzigen via het dialoogvenster **[!UICONTROL Tools > Change password...]** -menu. Details over operatoren en aansluitingen zijn beschikbaar in [Toegangsbeheer](../../platform/using/access-management.md).
 
-1. Klikken **[!UICONTROL LOG IN]** ter bevestiging.<!--You can also press the **Enter** key to launch connection.-->
+1. Klik op **[!UICONTROL LOG IN]** om te bevestigen.<!--You can also press the **Enter** key to launch connection.-->
 
 U hebt nu toegang tot [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
 

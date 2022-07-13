@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 50%
@@ -18,7 +18,7 @@ ht-degree: 50%
 
 * **[Release-programma 2022](technotes/using/dc-migration.md)**<br/> Upgrade uw omgeving en verbeter de beveiliging, infrastructuur en prestaties
 
-* **[Release maart is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen, en moeilijke situaties in de Nota&#39;s van de Versie
+* **[Release juli is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen, en moeilijke situaties in de Nota&#39;s van de Versie
 
 * **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Zie het antwoord op de aankondiging van Apple met betrekking tot iOS 15
 

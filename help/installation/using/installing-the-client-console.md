@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,7 @@ Voordat u de clientconsole gaat installeren, moet u:
 * Controleer de compatibiliteit van uw systeem en gereedschappen met Adobe Campaign in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * URL van campagneserver ophalen
 * Je gebruikersgegevens ophalen
+* Microsoft Edge Webview2-runtime op uw systeem laten installeren (vanaf versie Campaign Classic 7.3). [Meer informatie](#webview)
 
 Het proces voor het installeren of bijwerken van de clientconsole is afhankelijk van uw implementatie van Adobe Campaign Classic.
 Controleer de onderstaande details om te begrijpen wat nodig is voor uw implementatie.
@@ -33,6 +34,12 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 >[!CAUTION]
 >
 >Campagne Client Console en Campagne application server moeten in werking stellen **op dezelfde productversie**. Adobe beveelt ook ten zeerste aan de **zelfde product bouwen**. Leer hoe u de versies van uw Campagne Client en Server kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
+## Installatie van de Microsoft Edge Webview2-runtime {#webview}
+
+Vanuit de Campaign Classic 7.3-build-versie is de installatie van de Microsoft Edge Webview 2-runtime vereist voor elke consoleinstallatie.
+
+De webweergave wordt standaard geïnstalleerd als onderdeel van het besturingssysteem Windows 11. Als dit nog niet het geval is op uw systeem, wordt u gevraagd het te downloaden via het Campaign Classic Console-installatieprogramma [Microsoft Developer-website](http://www.adobe.com/go/acc-ms-webview2-runtime-download). De downloadkoppeling werkt niet in Internet Explorer 11, omdat Microsoft de ondersteuning heeft vervangen. Zorg ervoor dat u een andere browser gebruikt om de koppeling te openen.
 
 ## Adobe Gehoste implementaties {#hosted-customers}
 
@@ -150,6 +157,9 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
 1. Voer uw aanmeldingsgegevens voor de gebruiker in en klik op **[!UICONTROL Log in]**
 
+>[!NOTE]
+>
+>Voor campagne klassieke 7.3 bouwt versies, kan de cliëntconsole van Adobe Campaign om volmachtsgeloofsbrieven twee keer tijdens volmachtsauthentificatie vragen. Dit komt doordat Microsoft Edge Webview2 in tegenstelling tot Internet Explorer geen proxygegevens in de cache-/wachtwoordwinkel opslaat.
 
 **Verwante onderwerpen**
 
