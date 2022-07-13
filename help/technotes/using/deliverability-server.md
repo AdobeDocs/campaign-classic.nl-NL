@@ -5,9 +5,9 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,13 @@ Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt 
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
-Als uw omgeving is geïmplementeerd op een lagere build dan [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2), heeft dat gevolgen voor u. U moet een upgrade uitvoeren naar Campagne versie 7.2.1 (of meer).
-
-Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Alle klanten moeten een upgrade uitvoeren naar [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2) en implementeren van hun omgeving om te profiteren van de nieuwe, te leveren server.
 
 ## Hoe kan ik bijwerken?{#acc-deliverability-update}
 
 Als **gehoste klant**, werkt Adobe samen met u om uw exemplaar(s) te upgraden naar de nieuwere versie en het project te maken in Adobe Developer Console.
 
-Als **on-premise/hybride klant**, moet u een upgrade uitvoeren naar een van de nieuwere versies om te kunnen profiteren van de nieuwe releaseserver. Zodra alle instanties worden bevorderd, zult u kunnen [de nieuwe integratie uitvoeren](#implementation-steps) naar Adobe-leverbaarbaarheidsserver en zorg voor een naadloze overgang.
+Als **on-premise/hybride klant**, moet u upgraden naar [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2) om te profiteren van de nieuwe, te leveren server. Zodra alle instanties worden bevorderd, moet u [de nieuwe integratie uitvoeren](#implementation-steps) naar Adobe-leverbaarbaarheidsserver en zorg voor een naadloze overgang.
 
 ## Implementatiestappen {#implementation-steps}
 
@@ -47,7 +45,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 
 >[!WARNING]
 >
->Deze stappen mogen alleen worden uitgevoerd door Hybride en On-premise implementaties.
+>Deze stappen dienen alleen te worden uitgevoerd voor Hybride en On-premise implementaties.
 
 ### Vereisten{#prerequisites}
 
