@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 8221afc3b73e1ddce4143394a1d77eab3995d892
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Teradata configureren](installation/using/configure-fda-teradata.md)
             + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
             + [Microsoft SQL Server configureren](installation/using/configure-fda-sql.md)
-            + [PostSQL configureren](installation/using/configure-fda-postgresql.md)
+            + [PostgreSQL configureren](installation/using/configure-fda-postgresql.md)
          + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
          + [Verbinding maken met de database](installation/using/connecting-to-database.md)
          + [Het gegevensschema maken](installation/using/creating-data-schema.md)
