@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# Aan de slag met upgrades{#rn-overview}
+# Release-updates{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, insectenmoeilijke situaties, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden vrijgegeven wanneer het product wordt gebouwd. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Opmerkingen bij de release](latest-release.md).
+
 ## Releasestatussen{#rn-statuses}
 
-Elke nieuwe build heeft een status die wordt aangegeven door een kleur.
+Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur in het dialoogvenster [Opmerkingen bij de release](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe.
 
@@ -43,7 +45,7 @@ Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabie
 
 Voor een stabiele configuratie raadt Adobe aan om **dezelfde build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
-Bovendien, tenzij anders vermeld in de aanvullende informatie, moet de clientconsole zich op **dezelfde build** bevinden als de serverinstantie.
+Voorts, tenzij anders vermeld in het [Opmerkingen bij de release](latest-release.md), moet de clientconsole zijn ingeschakeld **dezelfde build** als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
@@ -51,7 +53,9 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als een on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Ontdek meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md).
+Als een on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden.
+
+Meer informatie over de [upgradeproces](../../production/using/build-upgrade.md)en in de [Veelgestelde vragen over upgrades maken](../../platform/using/faq-build-upgrade.md).
 
 ## Jaarlijkse upgrade {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, tec
     </a>
     </div>
     <ul>
-    <li>Hoe groter het verschil tussen twee versies (bijvoorbeeld v5 -&gt; v7), hoe complexer het is om uw Campaign Classic-instantie bij te werken.</li>
+    <li>Hoe groter het verschil tussen twee versies (bijvoorbeeld v6 -&gt; v7), hoe complexer het is om uw Campaign Classic-instantie bij te werken.</li>
     <li>Hoe langer uw organisatie wacht, des te complexer de upgrade wordt (en hoe kwetsbaarder u bent voor beveiligingsrisico's).</li>
     <li>Regelmatige updates verminderen de downtime tijdens upgrades en het risico op regressie.</li>
     </ul>

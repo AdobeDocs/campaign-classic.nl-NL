@@ -4,10 +4,10 @@ title: De levering configureren en verzenden
 description: Leer hoe te vormen en de levering te verzenden
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 5%
+source-wordcount: '1502'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->Alleen de eigenaar van de levering kan een levering starten. Als een andere operator (of een operatorgroep) een levering wil starten, moet u deze als controleurs toevoegen in het dialoogvenster **[!UICONTROL Delivery start:]** veld. Zie voor meer informatie [deze sectie](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+## Machtigingen{#delivery-permissions}
+
+Alleen de eigenaar van de levering kan een levering starten. Als u wilt dat andere operatoren (of groepen van operatoren) een levering kunnen starten, voegt u deze als controleurs toe in het dialoogvenster **[!UICONTROL Delivery start:]** veld. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Aanvullende parameters voor levering {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**: Met deze optie kunt u de verzendvolgorde voor uw leveringen beïnvloeden door hun prioriteitsniveau (normaal, hoog of laag) op te geven. Hierdoor kunt u de volgorde voor bepaalde, meer urgente leveringen voorrang geven boven andere.
+* **[!UICONTROL Delivery priority]**: gebruik deze optie om de verzendvolgorde voor uw leveringen te wijzigen door het prioriteitsniveau in te stellen: normaal, hoog of laag.
 
-* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat is gegroepeerd binnen hetzelfde XML-leveringspakket. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt gedefinieerd door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
+* **[!UICONTROL Message batch quantity]**: Gebruik deze optie om het aantal berichten te bepalen die binnen het zelfde leveringspakket van XML worden gegroepeerd. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt gedefinieerd door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
 
    >[!IMPORTANT]
    >
-   >Wanneer de levering wordt gedupliceerd, wordt de parameter opnieuw ingesteld.
+   >Wanneer de levering door bestaande wordt gecreeerd te dupliceren, wordt deze parameter teruggesteld.
 
-* **[!UICONTROL Send using multiple waves]**: Gebruik deze optie om uw berichten in golven, eerder dan aan uw volledig publiek te verzenden. Configureer het aantal batches en hun verhouding. [Meer informatie](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Gebruik deze optie als u uw berichten batchgewijs wilt verzenden in plaats van naar het gehele publiek tegelijk. [Meer informatie](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Gebruik deze optie om het verzenden via SMTP te testen. De levering wordt verwerkt tot verbinding aan de server SMTP maar niet verzonden: voor elke ontvanger van de levering, verbindt de Campagne met de SMTP leverancierserver, voert SMTP RCPT aan bevel uit, en sluit de verbinding vóór het bevel van SMTP DATA.
+* **[!UICONTROL Test SMTP delivery]**: gebruik deze optie om het verzenden via SMTP te testen. De levering wordt verwerkt tot verbinding aan de server SMTP maar niet verzonden: voor elke ontvanger van de levering, verbindt de Campagne met de SMTP leverancierserver, voert SMTP RCPT aan bevel uit, en sluit de verbinding vóór het bevel van SMTP DATA.
 
    >[!NOTE]
    >
-   >* Deze optie wordt niet aanbevolen bij midsourcing.
+   >* Deze optie mag niet worden ingesteld in mid-sourcing.
    >
    >* Meer informatie over SMTP-serverconfiguratie vindt u in [deze sectie](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](sending-messages.md#archiving-emails) voor meer informatie.
+* **[!UICONTROL Email BCC]**: Gebruik deze optie om e-mails op te slaan op een extern systeem via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. [Meer informatie](sending-messages.md#archiving-emails).
 
 ## Levering bevestigen {#confirming-delivery}
 
-Wanneer de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de leveringsanalyse in werking hebt gesteld.
+Wanneer de levering wordt gevormd en klaar om worden verzonden, voer de leveringsanalyse uit.
 
-Klik op **[!UICONTROL Send]** selecteert u de gewenste actie en klikt u op **[!UICONTROL Analyze]**. Zie voor meer informatie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
+Klik op **[!UICONTROL Send]** selecteert u de gewenste actie en klikt u op **[!UICONTROL Analyze]**. [Meer informatie](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
 ## De verzending van de levering plannen {#scheduling-the-delivery-sending}
 
-U kunt de levering van berichten uitstellen om de levering te plannen of om de salesdruk te beheren en te voorkomen dat een populatie overbevraagd wordt.
+U kunt het verzenden van het bericht uitstellen door de levering te plannen.
 
 1. Klik op de knop **[!UICONTROL Send]** en selecteert u de **[!UICONTROL Postpone delivery]** optie.
 
@@ -78,7 +78,7 @@ U kunt de levering van berichten uitstellen om de levering te plannen of om de s
 
 >[!IMPORTANT]
 >
->Wanneer u met de analyse bent begonnen, is de contactdatum die u hebt bepaald vast. Als u deze datum wijzigt, moet u de analyse opnieuw starten, zodat rekening wordt gehouden met uw wijzigingen.
+>Wanneer u met de analyse bent begonnen, is de contactdatum die u hebt bepaald vast. Als u deze datum wijzigt, moet u de analyse opnieuw beginnen zodat uw wijzigingen in overweging worden genomen.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
