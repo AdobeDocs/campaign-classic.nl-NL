@@ -5,10 +5,10 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren 
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen raadpleegt u de [Veelgestelde vragen](#faq)of contact op [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor meer vragen over deze wijzigingen raadpleegt u de [Veelgestelde vragen](#faq)of contact op [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 
 ## Wat is er veranderd?{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 1. Controleer de `DmRendering_cuid` option value is fill.
 
    * Als de optie is gevuld, kunt u de implementatie starten.
-   * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om uw CUID op te halen.
+   * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om uw CUID op te halen.
 
       Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de zelfde waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
@@ -91,7 +91,7 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
    >U moet de `config.zip` bestand wanneer de downloadprompt verschijnt omdat u deze niet opnieuw kunt downloaden.
 
 1. Klik op **[!UICONTROL Next]**.
-1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over **[!UICONTROL Product Profiles]**, zie [deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over **[!UICONTROL Product Profiles]**, zie [deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Klik vervolgens op **[!UICONTROL Save configured API]**.
@@ -152,18 +152,17 @@ Volg onderstaande stappen om te controleren of de integratie is gelukt:
 
 ## Veelgestelde vragen {#faq}
 
+### Wat is de tijdlijn voor de update?
+
+De overgang naar de nieuwe leverbaarbaarheidsserver, die de toevoeging van deze verbeterde mogelijkheden en de versterking van de beveiliging mogelijk maakt, begint op 22 juli voor gehoste klanten (Campagne Managed Services). Alle gehoste klanten worden eind augustus bijgewerkt.
+
+Op locatie en hybride klanten moeten binnen hetzelfde tijdsbestek overstappen.
+
 ### Wat gebeurt er als ik mijn omgeving niet opwaardeer?
 
-Om het even welke instantie van de Campagne die niet tegen 31 Augustus wordt bevorderd zal niet meer met de server van de Leverbaarheid van de Campagne kunnen verbinden. Als gevolg daarvan **Vernieuwen voor leverbaarheid** (DeliabilityUpdate) workflow zal mislukken. Deze workflow beheert de dagelijkse update van de MX-regels en -factureringsregels.
+Om het even welke instantie van de Campagne die niet tegen 31 Augustus wordt bevorderd zal niet meer met de server van de Leverbaarheid van de Campagne kunnen verbinden. Als gevolg daarvan **Vernieuwen voor leverbaarheid** De workflow (DeliabilityUpdate) zal mislukken en dit is van invloed op de te leveren items.
 
 Als u uw milieu niet bevordert, zullen de e-mailmontages ophouden gesynchroniseerd (MX de regels van het Beheer, Binnenkomende E-mailregels, de regels van het Beheer van het Domein, en stuiterende kwalificatieregels). Dit kan in de loop der tijd invloed hebben op uw leverbaarheid. Als deze regels ingrijpend worden gewijzigd, moeten ze vanaf dit punt handmatig worden toegepast.
 
 Alleen voor MKT-instanties [Algemene lijst voor onderdrukking](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) is aangetast.
 
-### Ik kan nu niet upgraden. Wat zijn de richtsnoeren?
-
-Als u uw instantie niet vóór 31 augustus kunt bijwerken, moet u tijdelijk onbruikbaar maken **Vernieuwen voor leverbaarheid** (DeliabilityUpdate) werkschema tot de verbetering volledig is zodat het niet probeert om met de oude leverbaarheidsserver te synchroniseren.
-
-
-
-Voor meer hulp, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
