@@ -5,7 +5,7 @@ description: Meer informatie over het implementeren van de server voor het lever
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
    * Als de optie is gevuld, kunt u de implementatie starten.
    * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om uw CUID op te halen.
 
-      Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de zelfde waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
+   Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de correcte waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
 ### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
