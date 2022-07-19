@@ -1,18 +1,16 @@
 ---
 product: campaign
-title: Migreren naar de nieuwe releaseserver
-description: Meer informatie over het implementeren van de server voor het leveren van campagnes
-hide: true
-hidefromtoc: true
+title: Bijwerken naar de nieuwe releaseserver
+description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 02af725ec7f75e31496b72b533db485c85a416e1
+source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Campagne Deliverability Server {#acc-deliverability}
+# Bijwerken naar de nieuwe leverbaarheidsserver {#acc-deliverability}
 
 Starten [release v7.2.1](../../rn/using/latest-release.md#release-7-2-2)Adobe Campaign is afhankelijk van een nieuwe, te leveren server die hoge beschikbaarheid biedt en problemen met de naleving van de beveiligingsvereisten verhelpt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver. De oude leverbaarheidsserver wordt op 31 augustus 2022 gedecomisseerd.
 
