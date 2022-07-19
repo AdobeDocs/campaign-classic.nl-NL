@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1965'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 
 **Patches**
 
-* Er is een fout uit de vorige samenstelling opgelost waardoor gebruikers de IMS-aanmeldingspagina niet konden vergroten of verkleinen.
-* Er is een fout opgelost die optrad bij het installeren van het contentmanagerpakket op een bestaande instantie.
-* Er is een probleem opgelost in het menu **Campagnes** waarbij continu het bericht voor bewerking in uitvoering werd weergegeven.
-* Er is een probleem opgelost waarbij, met Adobe Analytics ingeschakeld, BID (Broadlog-ID) en CID (Campaign ID) uit de URL werden verwijderd bij het verzenden van een e-mail met een URL zonder de levering op te slaan.
-* Er is een probleem opgelost bij het uploaden van een afbeelding in de map Openbare bronnen in een instantie met een specifieke configuratie voor het Berichtencentrum. De volgende foutmelding verschijnt: Kan de afbeeldingen niet uploaden naar de trackingservers.
-* Er is een probleem opgelost waardoor het systeem crashte bij het opnieuw genereren van de configuratie in geval van beschadigde configuratiebestanden.
+* Er is een fout uit de vorige samenstelling opgelost waardoor gebruikers de IMS-aanmeldingspagina niet konden vergroten of verkleinen. (NEO-30085)
+* Er is een fout opgelost die optrad bij het installeren van het contentmanagerpakket op een bestaande instantie. (NEO-32349)
+* Er is een probleem opgelost in het menu **Campagnes** waarbij continu het bericht voor bewerking in uitvoering werd weergegeven. (NEO-44904)
+* Er is een probleem opgelost waarbij, met Adobe Analytics ingeschakeld, BID (Broadlog-ID) en CID (Campaign ID) uit de URL werden verwijderd bij het verzenden van een e-mail met een URL zonder de levering op te slaan. (NEO-38678)
+* Er is een probleem opgelost bij het uploaden van een afbeelding in de map Openbare bronnen in een instantie met een specifieke configuratie voor het Berichtencentrum. De volgende foutmelding verschijnt: Kan de afbeeldingen niet uploaden naar de trackingservers. (NEO-38546, NEO-45572)
+* Er is een probleem opgelost waardoor het systeem crashte bij het opnieuw genereren van de configuratie in geval van beschadigde configuratiebestanden. (NEO-38752)
 * Er is een probleem opgelost waardoor leveringsindicatoren niet correct werden bijgewerkt. (NEO-44827)
 * Er is een probleem opgelost dat tot een postupgradefout kon leiden bij het gebruik van complexe query&#39;s. (NEO-43648)
 * Er is een probleem opgelost waardoor de voorvertoning van webApps niet werkte. (NEO-43242)
