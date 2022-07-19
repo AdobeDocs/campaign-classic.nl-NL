@@ -4,7 +4,7 @@ title: Vraag die een vele-aan-vele verhouding gebruikt
 description: Leer hoe te om vragen uit te voeren gebruikend een vele-aan-vele verhouding
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Vraag die een vele-aan-vele verhouding gebruikt {#querying-using-a-many-to-many-relationship}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit voorbeeld willen we ontvangers herstellen die de afgelopen 7 dagen geen contact hebben gehad. Deze query heeft betrekking op alle leveringen.
 

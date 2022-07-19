@@ -4,7 +4,7 @@ title: Workflows controleren
 description: Leer hoe u toezicht houdt op de workflows voor campagnes
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Hoofdlettergebruik: toezicht houden op uw workflows{#supervising-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit geval wordt het maken van een workflow beschreven waarmee u de status kunt controleren van een set werkstromen die worden gepauzeerd, gestopt of met fouten.
 

@@ -4,7 +4,7 @@ title: Driemaandelijkse lijstupdate met een incrementele query
 description: In dit geval wordt een incrementele query gebruikt om een lijst met ontvangers automatisch bij te werken.
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Driemaandelijkse lijstupdate met een incrementele query {#quarterly-list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In het volgende voorbeeld wordt een [incrementele query](incremental-query.md) wordt gebruikt om automatisch een lijst met ontvangers bij te werken. Deze ontvangers zijn gericht op seizoensgebonden marketingcampagnes.
 

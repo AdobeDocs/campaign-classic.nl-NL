@@ -4,7 +4,7 @@ title: Verrijking
 description: Meer informatie over de activiteit van de verrijkingsworkflow
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Verrijking{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **[!UICONTROL Enrichment]** Met activiteit kunt u informatie toevoegen aan een profiellijst en koppelingen maken naar een bestaande tabel (een nieuwe koppeling maken). Er kunnen ook afstemmingscriteria worden gedefinieerd met profielen in de database.
 

@@ -4,7 +4,7 @@ title: JavaScript-scripts en -sjablonen
 description: JavaScript-scripts en -sjablonen
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # JavaScript-scripts en -sjablonen{#javascript-scripts-and-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Met scripts kunt u waarden berekenen, gegevens uitwisselen tussen verschillende taken in het proces en specifieke bewerkingen uitvoeren met SOAP-aanroepen.
 

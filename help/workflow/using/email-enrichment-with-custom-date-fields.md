@@ -4,7 +4,7 @@ title: E-mailverrijking met aangepaste datumvelden
 description: Leer hoe u e-mailberichten verrijkt met aangepaste datumvelden
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # E-mailverrijking met aangepaste datumvelden{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit voorbeeld willen we een e-mail met aangepaste gegevensvelden verzenden aan ontvangers die deze maand hun verjaardagen vieren. Het e-mailbericht bevat een coupon die een week voor en na hun verjaardagen geldig is.
 

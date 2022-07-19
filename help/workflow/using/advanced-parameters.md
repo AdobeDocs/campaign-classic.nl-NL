@@ -4,7 +4,7 @@ title: Geavanceerde parameters
 description: Geavanceerde parameters
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Geavanceerde parameters{#advanced-parameters}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Het eigenschappenscherm van een activiteit heeft een **[!UICONTROL Advanced]** tabblad waarin u een gedrag kunt definiëren in het geval van fouten, de uitvoeringsperiode voor de activiteit; en kunt u een initialisatiescript invoeren. Er zijn twee versies van dit tabblad:
 

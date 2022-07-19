@@ -4,7 +4,7 @@ title: Extern signaal
 description: Meer informatie over de activiteit van de externe signaalworkflow
 feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Extern signaal{#external-signal}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **Extern signaal** activiteit laat u uitvoering van een reeks taken in een werkschema aan een programma teweegbrengen.
 

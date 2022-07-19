@@ -4,7 +4,7 @@ title: Een query uitvoeren met behulp van groeperingsbeheer
 description: Leer hoe u query's uitvoert met behulp van groeperingsbeheer
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Een query uitvoeren met behulp van groeperingsbeheer {#querying-using-grouping-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken die meer dan 30 keer zijn aangewezen tijdens eerdere leveringen.
 

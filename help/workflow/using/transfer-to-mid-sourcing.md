@@ -3,7 +3,7 @@ product: campaign
 title: Overdracht naar midsourcing
 description: Meer informatie over workflows voor overbrengen naar Midden-sourcing
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Overdracht naar midsourcing{#transfer-to-mid-sourcing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Overschakelen naar middelmatig bronnen** module standaard. Voor meer informatie over deze module raadpleegt u [Installatiehandleiding voor Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 

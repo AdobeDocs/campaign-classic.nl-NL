@@ -4,7 +4,7 @@ title: AND-join
 description: AND-join
 feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # AND-join{#and-join}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Verbinden teweegbrengt zijn uitgaande overgang slechts teweeg wanneer alle binnenkomende overgangen worden geactiveerd, d.w.z. wanneer alle vroegere activiteiten worden gebeëindigd. Op deze manier kunt u ervoor zorgen dat bepaalde activiteiten zijn voltooid voordat u doorgaat met het uitvoeren van de workflow.
 

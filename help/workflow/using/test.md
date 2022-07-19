@@ -4,7 +4,7 @@ title: Testen
 description: Meer informatie over de activiteit van de testworkflow
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Testen{#test}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Testen** type activity activeert de eerste overgang die voldoet aan de bijbehorende voorwaarde. Indien aan geen voorwaarde is voldaan en indien de **[!UICONTROL Use the default fork]** wordt geactiveerd, wordt de standaardovergang geactiveerd.
 

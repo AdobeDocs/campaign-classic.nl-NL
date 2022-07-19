@@ -6,16 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
 # Tracking van hypothesen{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Het resultaat van hypotheseberekeningen is beschikbaar op verschillende niveaus van het Adobe Campaign-platform: De indicatoren berekend op basis van hypothesen en de reacties op de doelpopulaties zijn zichtbaar via de werkelijke hypothese, alsmede in de hypotheseverslagen die beschikbaar zijn via campagnes en leveringen.
 

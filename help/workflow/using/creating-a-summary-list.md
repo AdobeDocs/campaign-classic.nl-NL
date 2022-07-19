@@ -4,7 +4,7 @@ title: Een overzichtslijst maken
 description: Een overzichtslijst maken
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Een overzichtslijst maken{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit geval wordt beschreven hoe u een workflow maakt waarin u na het verzamelen van bestanden en na verschillende verbeteringen een overzichtslijst kunt maken. Het voorbeeld is gebaseerd op een lijst van contacten die aankopen in een opslag maakten.
 
@@ -61,7 +61,7 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
    Raadpleeg voor meer informatie over deze activiteit [Gegevens uit een bestand laden](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configureer de **Bestandsverzamelaar** activiteit om teksttypedossiers (*.txt) van de geselecteerde folder te verzamelen.
+1. Configureer de **Bestandsverzamelaar** activiteit om tekst te verzamelen (&#42;.txt) typt bestanden uit de geselecteerde map.
 
    ![](assets/uc2_enrich_collecteur.png)
 

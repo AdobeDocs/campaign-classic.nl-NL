@@ -4,7 +4,7 @@ title: Overzicht van levering
 description: Meer informatie over de workflowactiviteit van het overzicht van de levering
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Overzicht van levering{#delivery-outline}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **leveringsoverzicht** Hiermee kunt u een omtrek gebruiken in een campagneworkflow. De contouren moeten vooraf in de campagne zijn gemaakt.
 

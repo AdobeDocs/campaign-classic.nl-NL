@@ -4,7 +4,7 @@ title: Workflows
 description: Automatiseer processen met workflows, beheer gegevens en publiek, verzend berichten, en meer.
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 24%
@@ -13,7 +13,7 @@ ht-degree: 24%
 
 # Aan de slag met workflows{#gs-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Workflows{#about-workflows}
 

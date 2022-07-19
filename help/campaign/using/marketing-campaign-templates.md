@@ -4,16 +4,16 @@ title: Sjablonen voor marketingcampagnes
 description: Sjablonen voor marketingcampagnes
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
 # Campagnesjablonen maken en configureren {#campaign-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Alle marketing campagnes zijn gebaseerd op een malplaatje, dat belangrijkste kenmerken en mogelijkheden opslaat. De sjablonen voor campagnes zijn gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knooppunt. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
 

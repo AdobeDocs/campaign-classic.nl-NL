@@ -4,7 +4,7 @@ title: Wachten
 description: Meer informatie over de workflowactiviteit Wachten
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Wachten{#wait}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Wachten** de activiteit activeert zijn overgang na een tijdvertraging van overal tussen een paar seconden en verscheidene maanden. Een wachttaak blokkeert de uitvoering van andere taken niet; de werkstroom kan taken parallel uitvoeren terwijl deze taak in behandeling is.
 

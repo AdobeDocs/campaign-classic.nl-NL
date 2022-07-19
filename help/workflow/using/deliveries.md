@@ -3,7 +3,7 @@ product: campaign
 title: Leveringen
 description: Meer informatie over standaardleveringsworkflows
 feature: Workflows
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Leveringen{#deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Leveringen** module standaard.
 

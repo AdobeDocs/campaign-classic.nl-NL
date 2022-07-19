@@ -4,7 +4,7 @@ title: Een workflow starten
 description: Leer hoe u een workflow start en werkstroomhandelingen ontdekt op de werkbalk en met de rechtermuisknop op het menu klikt
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Een workflow starten {#starting-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Een workflow wordt altijd handmatig gestart. Wanneer begonnen, kan het echter inactief afhankelijk van de informatie blijven die via een planner wordt gespecificeerd (zie [Planner](scheduler.md)) of activiteiten plannen.
 

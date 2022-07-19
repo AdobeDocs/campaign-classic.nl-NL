@@ -4,7 +4,7 @@ title: Targetingactiviteiten
 description: Targetingactiviteiten
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Gerichte activiteiten in workflows{#about-targeting-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren en deze sets te splitsen of te combineren met behulp van doorsnede-, samenvoegings- of uitsluitingsbewerkingen.
 

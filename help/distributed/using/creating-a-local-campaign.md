@@ -4,16 +4,16 @@ title: Een lokale campagne maken
 description: Een lokale campagne maken
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1564'
+ht-degree: 1%
 
 ---
 
 # Een lokale campagne maken{#creating-a-local-campaign}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst met **[!UICONTROL campaign packages]** met een **specifieke uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was. De belangrijkste fasen voor de uitvoering van een lokale actie zijn:
 

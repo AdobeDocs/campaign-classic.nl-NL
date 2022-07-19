@@ -4,7 +4,7 @@ title: Het goedkeuringsproces instellen en beheren
 description: Leer hoe u goedkeuringen van marketingcampagnes beheert
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '2438'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Het goedkeuringsproces instellen en beheren {#approving-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Elke leveringsstap kan worden goedgekeurd om volledige controle en controle op de verschillende processen van de campagne te waarborgen: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs.
 

@@ -4,7 +4,7 @@ title: Lidmaatschapsservices
 description: Meer informatie over de workflowactiviteiten van Subscription Services
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Lidmaatschapsservices{#subscription-services}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Abonnementsdiensten** Met activiteit van het type -type kunt u een abonnement op een informatiedienst maken of verwijderen voor de populatie die in de overgang is opgegeven.
 

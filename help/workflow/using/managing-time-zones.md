@@ -4,7 +4,7 @@ title: Tijdzones beheren
 description: Tijdzones beheren
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Tijdzones beheren{#managing-time-zones}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Met Adobe Campaign kunt u de tijd tussen verschillende landen beheren die bij hetzelfde geval betrokken zijn. De toegepaste configuratie wordt gevormd tijdens instantieverwezenlijking.
 

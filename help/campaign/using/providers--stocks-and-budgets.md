@@ -4,7 +4,7 @@ title: Providers, voorraden en budgetten
 description: Providers, voorraden en budgetten
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Providers, voorraden en budgetten{#providers-stocks-and-budgets}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Met Adobe Campaign kunt u serviceproviders definiëren die betrokken zijn bij de taken die in de campagnes worden uitgevoerd. Informatie over de dienstverleners en de bijbehorende kostenstructuren wordt door de Adobe Campaign-beheerder in hoofdlijnen gedefinieerd. Van de levering wordt naar de dienstverlener verwezen en de kostenstructuur ervan maakt het mogelijk de kosten van deze levering te berekenen en het betrokken bestand te beheren.
 

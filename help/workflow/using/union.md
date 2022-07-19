@@ -4,7 +4,7 @@ title: Samenvoegen
 description: Meer informatie over de workflowactiviteiten van de Unie
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Samenvoegen{#union}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Een vereniging groepeert het resultaat van verscheidene binnenkomende activiteiten in één enkel doel. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten derhalve worden voltooid voordat de unie kan worden uitgevoerd .
 

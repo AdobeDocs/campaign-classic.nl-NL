@@ -4,7 +4,7 @@ title: Bestandsoverdracht
 description: Meer informatie over de activiteiten in de workflow voor bestandsoverdracht
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Bestandsoverdracht{#file-transfer}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **Bestandsoverdracht** Met activiteit kunt u bestanden ontvangen of verzenden, testen op bestandsaanwezigheid of bestanden op een server weergeven. Het gebruikte protocol is Azure Blob Storage, Amazon Simple Storage Service (S3), FTP of SFTP.
 Met de S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook gesegmenteerde gegevens importeren naar Adobe Campaign met het Adobe Real-Time Customer Data-platform. Raadpleeg de volgende secties voor meer informatie [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).

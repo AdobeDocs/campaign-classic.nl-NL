@@ -4,7 +4,7 @@ title: Gepersonaliseerde waarschuwingen verzenden naar operatoren
 description: Leer hoe u persoonlijke waarschuwingen naar operatoren kunt sturen
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Gepersonaliseerde waarschuwingen verzenden naar operatoren{#sending-personalized-alerts-to-operators}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit voorbeeld willen wij een alarm naar een exploitant verzenden die de naam van profielen zal bevatten die een nieuwsbrief opende maar niet de verbinding klikte het bevat.
 

@@ -4,7 +4,7 @@ title: Bestandsophaler
 description: Meer informatie over de workflowactiviteit van de bestandscollector
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bestandsophaler{#file-collector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **Bestandsverzamelaar** controleert de aankomst van een of meer bestanden in een directory en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis geldt een **[!UICONTROL filename]** De variabele bevat de volledige naam van het ontvangen bestand. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
 
@@ -35,7 +35,7 @@ Het eerste tabblad van het dialoogvenster **[!UICONTROL File collector]** Met ac
 
    * **[!UICONTROL Filter]**
 
-      Alleen bestanden die overeenkomen met dit filter worden in aanmerking genomen. De andere bestanden in de map worden genegeerd. Als het filter leeg is, worden alle bestanden in de map in aanmerking genomen. Voorbeelden van filters: ***.zip**, **import-*.txt**.
+      Alleen bestanden die overeenkomen met dit filter worden in aanmerking genomen. De andere bestanden in de map worden genegeerd. Als het filter leeg is, worden alle bestanden in de map in aanmerking genomen. Voorbeelden van filters: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 

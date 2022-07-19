@@ -4,7 +4,7 @@ title: Splitsen
 description: Meer informatie over de activiteit van de gesplitste workflow
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Splitsen{#split}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Splitsen** Met activiteit van het type -kunt u een doel in verscheidene subsets splitsen. Het doel wordt geconstrueerd met alle ontvangen resultaten: alle voorgaande activiteiten moeten dus zijn voltooid om deze activiteit te kunnen uitvoeren .
 
@@ -98,7 +98,7 @@ Als u niet de gehele populatie wilt gebruiken die zich in een subset bevindt, ku
    * **[!UICONTROL By data grouping (in %)]**: u kunt een limiet instellen voor het aantal records, afhankelijk van de waarden in een bepaald veld van de binnenkomende populatie met een percentage. Raadpleeg voor meer informatie over dit onderwerp [Het aantal subsetrecords beperken door gegevensgroepering](#limiting-the-number-of-subset-records-by-data-grouping).
    * **[!UICONTROL By data distribution]**: Als uw groeperingsgebieden teveel waarden hebben of als u wilt vermijden opnieuw ingaat de waarden voor elke nieuwe spleet activiteit, laat Adobe Campaign u vormen **[!UICONTROL By data distribution]** beperking (optionele module Distributed Marketing). Raadpleeg voor meer informatie hierover [Het aantal subsetrecords per gegevensdistributie beperken](#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. Klikken **[!UICONTROL Finish]** de criteria voor de recordselectie goed te keuren. De gedefinieerde configuratie wordt vervolgens weergegeven in het middelste venster van de editor.
+1. Klikken **[!UICONTROL Finish]** de criteria voor de recordselectie goed te keuren. De bepaalde configuratie wordt dan getoond in het middelste venster van de redacteur.
 
 ## Het aantal subsetrecords beperken door gegevensgroepering {#limiting-the-number-of-subset-records-by-data-grouping}
 

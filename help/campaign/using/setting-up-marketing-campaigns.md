@@ -4,7 +4,7 @@ title: Marketingscampagnes maken
 description: Meer informatie over het maken en uitvoeren van marketingcampagnes
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Aan de slag met marketingcampagnes{#setting-up-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
@@ -41,7 +41,7 @@ Om uw omslaghiërarchie voor marketing plannen en programma&#39;s te vormen:
 
 1. Klik op de knop **Verkenner** op de startpagina.
 1. Klik met de rechtermuisknop op de map waarin u het abonnement wilt maken.
-1. Selecteren **Nieuwe map toevoegen > Campagnebeheer > Plan**.
+1. Selecteren **Nieuwe map toevoegen > Campaign Management > Plan**.
 
    ![](assets/create_plan_1.png)
 

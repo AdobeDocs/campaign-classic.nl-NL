@@ -4,7 +4,7 @@ title: Activiteitsafbeeldingen wijzigen
 description: Leer hoe u de activiteitenafbeelding kunt wijzigen
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Activiteitsafbeeldingen wijzigen{#change-activity-images}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 U kunt de afbeeldingen wijzigen die worden gebruikt in de diagrammen van de verschillende workflows. Zij moeten echter wel aan bepaalde voorwaarden voldoen. Hier volgen de fasen van de implementatie:
 

@@ -4,7 +4,7 @@ title: Lijst lezen
 description: Meer informatie over de activiteit van de workflow in de Leeslijst
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Lijst lezen{#read-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of bestandsupload).
 

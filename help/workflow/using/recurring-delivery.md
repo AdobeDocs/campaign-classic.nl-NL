@@ -4,7 +4,7 @@ title: Terugkerende levering
 description: Meer informatie over de activiteit van de workflow Terugkerende levering
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 17%
@@ -13,7 +13,7 @@ ht-degree: 17%
 
 # Terugkerende levering{#recurring-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **[!UICONTROL Recurring delivery]** De activiteit laat u een voorkomen van het leveringsmalplaatje vormen die voor een campagne specifiek is.
 

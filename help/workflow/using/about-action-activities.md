@@ -4,7 +4,7 @@ title: Actieactiviteiten
 description: Actieactiviteiten
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Acties in workflows{#about-action-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 * **Aflevering**: Hiermee kunt u een leveringsactie configureren. Zie de [Aflevering](delivery.md) sectie.
 * **Afleveringscontrole**: Hiermee kunt u een levering starten, pauzeren of stoppen. Zie de [Afleveringscontrole](delivery-control.md) sectie.

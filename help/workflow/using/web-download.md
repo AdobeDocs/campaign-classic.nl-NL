@@ -4,7 +4,7 @@ title: Webdownload
 description: Meer informatie over de activiteiten van de webdownloadworkflow
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Webdownload{#web-download}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **Webdownload** activiteit start het downloaden van een bestand op een expliciete URL, een externe account of een Adobe Campaign-instantie. Het HTTP-protocol wordt gebruikt. Dit kan een download van de GET of van de POST zijn.
 

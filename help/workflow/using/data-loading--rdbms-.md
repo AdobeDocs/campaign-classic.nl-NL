@@ -4,7 +4,7 @@ title: Gegevens laden (RDBMS)
 description: Meer informatie over de activiteit van de workflow voor het laden van gegevens (RDBMS)
 feature: Workflows, Data Management Activity
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Gegevens laden (RDBMS){#data-loading-rdbms}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De **[!UICONTROL Data loading (RDBMS)]** Met deze activiteit hebt u rechtstreeks toegang tot deze externe database en kunt u alleen de gegevens verzamelen die nodig zijn voor de doelindeling.
 

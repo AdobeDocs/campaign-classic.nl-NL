@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Een berekend veld voor het type opsomming toevoegen {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Hier willen wij een vraag met tot stand brengen **[!UICONTROL Enumerations]** berekende type-veld. Met dit veld wordt een extra kolom gegenereerd in het venster met de gegevensvoorvertoning. Deze kolom zal de numerieke waarden specificeren die als resultaat voor elke ontvanger (0, 1 en 2) zijn teruggekeerd. Aan elke waarde in de nieuwe kolom wordt een geslacht toegewezen: &quot;Mannelijk&quot; voor &quot;1&quot;, &quot;Vrouwelijk&quot; voor &quot;2&quot; of &quot;Niet aangegeven&quot; als de waarde gelijk is aan &quot;0&quot;.
 

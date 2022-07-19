@@ -4,7 +4,7 @@ title: Marketingcampagnes ontwerpen en uitvoeren
 description: Marketing-campagnes definiëren, optimaliseren, uitvoeren en analyseren
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Marketingcampagnes ontwerpen en uitvoeren{#designing-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg voor meer informatie hierover [Toegangscampagnes](../../distributed/using/accessing-campaigns.md) en [Marketingscampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md).
 

@@ -4,7 +4,7 @@ title: Dimensie wijzigen
 description: Dimensie wijzigen
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Dimensie wijzigen{#change-dimension}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De activiteit van de veranderingsdimensie laat u de het richten dimensie tijdens de cyclus van de doelbouw veranderen. Axisverschuiving is afhankelijk van de gegevenssjabloon en de invoerdimensie. Dit laat u van de &quot;contracten&quot;afmeting aan de &quot;cliënten&quot;afmeting schakelen, bijvoorbeeld.
 

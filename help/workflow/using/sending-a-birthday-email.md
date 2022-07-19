@@ -4,16 +4,16 @@ title: Een verjaardags-e-mail verzenden
 description: Leer hoe u een e-mailbericht over een verjaardag verzendt met een workflow
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Een verjaardags-e-mail verzenden{#sending-a-birthday-email}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Inleiding {#introduction}
 
@@ -68,7 +68,7 @@ Hiervoor voert u de volgende stappen uit:
    Day(@birthDate)
    ```
 
-   Klikken **[!UICONTROL Finish]** ter bevestiging.
+   Klik op **[!UICONTROL Finish]** om te bevestigen.
 
 1. In de vraagredacteur, in de eerste cel van **[!UICONTROL Operator]** kolom, selecteren **[!UICONTROL equal to]**.
 
@@ -86,7 +86,7 @@ Hiervoor voert u de volgende stappen uit:
    Day(GetDate())
    ```
 
-   Klikken **[!UICONTROL Finish]** ter bevestiging.
+   Klik op **[!UICONTROL Finish]** om te bevestigen.
 
 1. Herhaal deze procedure om de geboortemaand van de huidige maand op te halen. Om dit te doen, klik **[!UICONTROL Add]** en herhaal stap 3 tot en met 10, vervangen **[!UICONTROL Day]** with **[!UICONTROL Month]**.
 

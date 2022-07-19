@@ -4,7 +4,7 @@ title: Goedkeuring
 description: Goedkeuring
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Goedkeuring{#approval}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 An **Goedkeuring** de taak vereist de deelname van een exploitant. De operator krijgt een taak toegewezen en kan per e-mail reageren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
 

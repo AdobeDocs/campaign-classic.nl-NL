@@ -4,7 +4,7 @@ title: Een filter maken
 description: Leer hoe u een filter maakt bij het uitvoeren van query's
 feature: Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Een filter maken {#creating-a-filter}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 De filters die beschikbaar zijn in Adobe Campaign worden gedefinieerd door filtervoorwaarden die worden gemaakt in dezelfde besturingsmodus als query&#39;s.
 

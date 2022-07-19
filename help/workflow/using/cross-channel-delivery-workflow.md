@@ -4,7 +4,7 @@ title: Cross-channel leveringsworkflow
 description: Meer informatie over workflows voor levering via meerdere kanalen
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Cross-channel leveringsworkflow{#cross-channel-delivery-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. Het algemene concept van de levering over meerdere kanalen wordt weergegeven in [deze sectie](cross-channel-deliveries.md).
 
