@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
+source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
@@ -247,7 +247,7 @@ Met deze taak verwijdert u de webbronnen (spiegel-pagina&#39;s) die door leverin
 1. Ten eerste wordt de lijst met te wissen leveringen hersteld met behulp van de volgende query:
 
    ```sql
-   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
+   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)
    ```
 
    waar `$(curDate)` is de huidige serverdatum.
@@ -255,11 +255,11 @@ Met deze taak verwijdert u de webbronnen (spiegel-pagina&#39;s) die door leverin
 1. De **NmsMirrorPageInfo** de tabel wordt vervolgens gezuiverd, zo nodig met behulp van de identificatiecode van de eerder teruggewonnen levering. De massa-schrapping wordt gebruikt om de volgende vragen te produceren:
 
    ```sql
-   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    ```sql
-   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    waar `$(dl)` is de identificatiecode van de levering.
@@ -304,7 +304,7 @@ Met deze stap kunt u records verwijderen waarvoor niet alle gegevens tijdens het
 1. De massale schrapping wordt uitgevoerd op de **XtkReject** tabel met de volgende query:
 
    ```sql
-   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
+   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
    waar `$(curDate)` is de huidige serverdatum waarvan we de periode aftrekken die is gedefinieerd voor de **NmsCleanup_RejectsPurgeDelay** (raadpleeg [Implementatiewizard](#deployment-wizard)) en `$(l)` het maximumaantal te verwijderen records is.
