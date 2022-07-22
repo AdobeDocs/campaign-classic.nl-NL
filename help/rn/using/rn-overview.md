@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 90%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, insectenmoeilijke situaties, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden vrijgegeven wanneer het product wordt gebouwd. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Opmerkingen bij de release](latest-release.md).
+Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden uitgebracht als productbuilds. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
 
 ## Releasestatussen{#rn-statuses}
 
-Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur in het dialoogvenster [Opmerkingen bij de release](latest-release.md).
+Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur in het dialoogvenster [Aanvullende informatie](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe.
 
@@ -45,7 +45,7 @@ Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabie
 
 Voor een stabiele configuratie raadt Adobe aan om **dezelfde build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
-Voorts, tenzij anders vermeld in het [Opmerkingen bij de release](latest-release.md), moet de clientconsole zijn ingeschakeld **dezelfde build** als de serverinstantie.
+Bovendien, tenzij anders vermeld in de [Aanvullende informatie](latest-release.md), moet de clientconsole zich in **dezelfde build** bevinden als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
@@ -55,7 +55,7 @@ Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het kl
 
 Als een on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden.
 
-Meer informatie over de [upgradeproces](../../production/using/build-upgrade.md)en in de [Veelgestelde vragen over upgrades maken](../../platform/using/faq-build-upgrade.md).
+Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over build-upgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jaarlijkse upgrade {#yearly-upgrade}
 
