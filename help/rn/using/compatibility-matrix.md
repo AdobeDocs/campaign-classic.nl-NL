@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
-source-wordcount: '768'
-ht-degree: 100%
+source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -248,9 +248,9 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimaal V7.0</td>
@@ -344,21 +344,6 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <p>11 (vanaf Campaign v7.3)</p>
 <p>10 (aanbevolen voor Japanse instanties)</p>
 <p>8</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Browser
-
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
 </td>
 </tr>
 </tbody>
