@@ -3,9 +3,9 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1144'
 ht-degree: 2%
 
 ---
@@ -58,13 +58,13 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 
    Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de correcte waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
+>[!CAUTION]
+>
+>Als klant op locatie, als een firewall aan uw zijde is geïmplementeerd, moet u deze URL toevoegen `https://deliverability-service.adobe.io` op uw lijst van gewenste personen. [Meer informatie](../../installation/using/url-permissions.md).
+
 ### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
-1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie.
-
-   >[!NOTE]
-   >
-   > Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
+1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
 1. Selecteer **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
