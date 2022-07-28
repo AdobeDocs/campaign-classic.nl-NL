@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,12 +61,12 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 
 **Patches**
 
-* Er is een fout uit de vorige samenstelling opgelost waardoor gebruikers de IMS-aanmeldingspagina niet konden vergroten of verkleinen. (NEO-30085)
+* Er is een fout uit de vorige build opgelost waardoor gebruikers de IMS-aanmeldingspagina niet konden vergroten of verkleinen. (NEO-30085)
 * Er is een fout opgelost die optrad bij het installeren van het contentmanagerpakket op een bestaande instantie. (NEO-32349)
 * Er is een probleem opgelost in het menu **Campagnes** waarbij continu het bericht voor bewerking in uitvoering werd weergegeven. (NEO-44904)
 * Er is een probleem opgelost waarbij, met Adobe Analytics ingeschakeld, BID (Broadlog-ID) en CID (Campaign ID) uit de URL werden verwijderd bij het verzenden van een e-mail met een URL zonder de levering op te slaan. (NEO-38678)
-* Er is een probleem opgelost bij het uploaden van een afbeelding in de map Openbare bronnen in een instantie met een specifieke configuratie voor het Berichtencentrum. De volgende foutmelding verschijnt: Kan de afbeeldingen niet uploaden naar de trackingservers. (NEO-38546, NEO-45572)
-* Er is een probleem opgelost waardoor het systeem crashte bij het opnieuw genereren van de configuratie in geval van beschadigde configuratiebestanden. (NEO-38752)
+* Er is een probleem opgelost bij het uploaden van een afbeelding in de map Openbare bronnen in een instantie met een specifieke Berichtencentrum-configuratie. De volgende foutmelding verschijnt: Kan de afbeeldingen niet uploaden naar de trackingservers. (NEO-38546, NEO-45572)
+* Er is een probleem opgelost waardoor het systeem crashte bij het opnieuw genereren de configuratie bij beschadigde configuratiebestanden. (NEO-38752)
 * Er is een probleem opgelost waardoor leveringsindicatoren niet correct werden bijgewerkt. (NEO-44827)
 * Er is een probleem opgelost dat tot een postupgradefout kon leiden bij het gebruik van complexe query&#39;s. (NEO-43648)
 * Er is een probleem opgelost waardoor de voorvertoning van webApps niet werkte. (NEO-43242)
@@ -84,7 +84,7 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 * Een probleem opgelost dat kon leiden tot crashes als gevolg van intermitterende core dumps (NEO-30549)
 * Er is een probleem opgelost dat tot crashes kon leiden bij het gebruik van foutieve HTML-code in een levering. (NEO-40385)
 * Er is een probleem opgelost waardoor gebruikers die geen beheerder waren, geen toegang hadden tot het tabblad **Analyse** in de leveringseigenschappen. (NEO-34025)
-* Probleem verholpen waardoor een afbeelding tijdens het voorbereiden van berichten niet kon worden geüpload in segmentmodus van een externe server. (NEO-40307)
+* Er is een probleem opgelost waardoor een afbeelding tijdens het voorbereiden van berichten niet kon worden geüpload in segmentmodus van een externe server. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 9349 {#release-7-2-2}
 
