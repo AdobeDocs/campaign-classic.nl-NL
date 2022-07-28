@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 3%
+source-wordcount: '2031'
+ht-degree: 2%
 
 ---
 
@@ -128,7 +128,7 @@ Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei 
 
 ## Werken mijn trackingkoppelingen nog tijdens de upgrade?
 
-Het bijhouden van koppelingen werkt tijdens de upgrade. Er kunnen geen nieuwe e-mailberichten worden verzonden tijdens de upgrade, maar het bijhouden van koppelingen in reeds verzonden e-mails blijft werken
+Het bijhouden van koppelingen op e-mailberichten die al zijn verzonden, werkt niet tijdens de upgrade omdat alle servers zijn gestopt. Ze zijn weer operationeel als de upgrade is voltooid en de servers opnieuw zijn opgestart.
 
 ## Moet ik tijdens het proces van de bouwstijlverbetering beschikbaar zijn?
 
@@ -195,7 +195,7 @@ alle inhoud wordt weergegeven en weergegeven.
    * De aanmaakdatum en wijzigingsdatum verifiëren met de tijdstempel en de tijdzone
    * Verifieer dat de uitvoering van planner in een werkschema op de gespecificeerde tijd werkt
    * Lijst met werkstromen opzoeken die zijn gepauzeerd en waarvan de status MISLUKT is. Deze starten en controleren
-   * AB Testen uitvoeren voor één scenario
+   * AB Testing voor één scenario uitvoeren
    * Pushmeldingen testen en de bijbehorende trackingfunctionaliteit voor uitgebreide koppelingen
    * SMS verzenden testen
    * Als u een externe FDA hebt aangesloten, test of de gegevens beide manieren worden verzonden
