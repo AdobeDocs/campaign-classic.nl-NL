@@ -3,7 +3,7 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
+source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Bijwerken naar de nieuwe releaseserver {#acc-deliverability}
 
-Starten [release v7.2.1](../../rn/using/latest-release.md#release-7-2-2)Adobe Campaign is afhankelijk van een nieuwe, te leveren server die hoge beschikbaarheid biedt en problemen met de naleving van de beveiligingsvereisten verhelpt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver. De oude leverbaarheidsserver wordt op 31 augustus 2022 gedecomisseerd.
+Starten [release v7.2.2](../../rn/using/latest-release.md#release-7-2-2)Adobe Campaign is afhankelijk van een nieuwe, te leveren server die hoge beschikbaarheid biedt en problemen met de naleving van de beveiligingsvereisten verhelpt. Campaign Classic synchroniseert nu de leveringsregels, de uitzendingen en het onderdrukkingsadres van en aan nieuwe leverbaarheidsserver. De oude leverbaarheidsserver wordt op 31 augustus 2022 gedecomisseerd.
 
 Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren **vóór 31 augustus 2022**.
 
@@ -28,13 +28,13 @@ Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt 
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
-Alle klanten worden beïnvloed en moeten bevorderen aan [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (of meer) en implementeer hun omgeving om te profiteren van de nieuwe leverbaarbaarheidsserver.
+Alle klanten worden beïnvloed en moeten bevorderen aan [Campagne v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (of meer) en implementeer hun omgeving om te profiteren van de nieuwe leverbaarbaarheidsserver.
 
 ## Hoe kan ik bijwerken?{#acc-deliverability-update}
 
 Als **gehoste klant**, werkt Adobe samen met u om uw exemplaar(s) te upgraden naar de nieuwere versie en het project te maken in Adobe Developer Console.
 
-Als **on-premise/hybride klant**, moet u upgraden naar [Campagne v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (of meer) om te profiteren van de nieuwe, te leveren server. Zodra alle instanties worden bevorderd, moet u [de nieuwe integratie uitvoeren](#implementation-steps) naar Adobe-leverbaarbaarheidsserver en zorg voor een naadloze overgang.
+Als **on-premise/hybride klant**, moet u upgraden naar [Campagne v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (of meer) om te profiteren van de nieuwe, te leveren server. Zodra alle instanties worden bevorderd, moet u [de nieuwe integratie uitvoeren](#implementation-steps) naar Adobe-leverbaarbaarheidsserver en zorg voor een naadloze overgang.
 
 ## Implementatiestappen {#implementation-steps}
 
