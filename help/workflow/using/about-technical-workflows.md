@@ -4,9 +4,9 @@ title: Technische workflows
 description: Meer informatie over de technische workflows die beschikbaar zijn bij Campaign Classic-pakketten.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1705'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,6 @@ Raadpleeg voor meer informatie over het controleren van technische workflows de 
 | **Facebook-pagina&#39;s synchroniseren** (syncFacebook) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
 | **Twitter-pagina&#39;s synchroniseren** (syncTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow importeert elke dag om 7.00 uur Twitter-volgers naar Adobe Campaign. |
 | **Taakmelding** (taskMgt) | Marketingbronnen (MRM) - alleen campagne v7 | Met deze workflow kunt u meldingen verzenden met betrekking tot taken in marketingcampagnes. |
-| **Tekstspatiëring** (reeksspatiëring | Levering | Deze workflow voert het herstel en de consolidatie van trackinggegevens uit. Het verzekert ook de herberekening van het volgen en leveringsstatistieken, vooral die gebruikt door het archiveren van het Centrum van het Bericht werkschema. Deze wordt standaard één keer per uur geactiveerd. |
+| **Tekstspatiëring** (reeksspatiëring) | Levering | Deze workflow voert het herstel en de consolidatie van trackinggegevens uit. Het verzekert ook de herberekening van het volgen en leveringsstatistieken, vooral die gebruikt door het archiveren van het Centrum van het Bericht werkschema. Deze wordt standaard één keer per uur geactiveerd. |
 | **Status van gebeurtenis bijwerken** (updateEventsStatus) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Met deze workflow kunt u een status aan een gebeurtenis toewijzen. Gebeurtenisstatussen zijn als volgt:<ul><li>In behandeling: de gebeurtenis bevindt zich in een wachtrij. Er is nog geen berichtsjabloon aan gekoppeld.</li><li>In afwachting van levering: Als de gebeurtenis zich in een wachtrij bevindt, is er een berichtsjabloon aan gekoppeld en wordt deze momenteel verwerkt door de levering.</li><li>Verzonden: deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.</li><li>Genegeerd door de levering: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</li><li>Afleveringsfout: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.</li><li>Gebeurtenis niet gedekt: de gebeurtenis is niet gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet opnieuw verwerkt.</li></ul> |
-| **Vernieuwen voor leverbaarheid** (DeliabilityUpdate) | Levering | Zodra het pakket voor de bewaking van de aflevering (e-mail aflevering) is geïnstalleerd, wordt deze workflow elke avond uitgevoerd en worden de kwalificatieregels voor stuiterende e-mailadressen en de lijst met domeinen en MX&#39;s beheerd. Hiervoor moet de HTTPS-poort open zijn op het platform. |
+| **Vernieuwen voor leverbaarheid** (DeliabilityUpdate) | Levering | Deze workflow wordt elke avond uitgevoerd en beheert de kwalificatieregels voor stuiterende e-mailadressen, evenals de lijst met domeinen en MX&#39;s. Hiervoor moet de HTTPS-poort open zijn op het platform. |
