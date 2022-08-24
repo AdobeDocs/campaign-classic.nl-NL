@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: ht
-source-wordcount: '1730'
-ht-degree: 100%
+source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 92%
 
 ---
 
@@ -43,36 +43,10 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Functie</strong></td>
    <td><strong>Vervanging</strong></td>
   </tr>
-  <tr>
-  <td>CentOs 8.x (64 bits)<br></td>
-   <td><p>CentOS Linux 8 bereikt op31 december 2021 het einde van de levensduur (EOL). <a href="https://www.centos.org/centos-linux-eol/">Meer informatie</a></p>
-   <p>Als u dit besturingssysteem gebruikt, moet u de implementatie dienovereenkomstig aanpassen. CentOS 7.x (64 bits) en RHEL 8.x/7.x (64 bits) worden nog ondersteund.</p>
-  <p><em>Doeldatum verwijdering: 31 december 2021.</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>Adobe Analytics-gegevensconnector<br></td>
-   <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics Data Connector afgeschaft.</p>
-   <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
-  <p><em>Streefdatum voor verwijdering: 17 augustus 2022</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>Rapport over de technische afleveringscontrole<br></td>
-   <td><p>Met ingang van de 21.1-release van Campaign is het rapport over de technische afleveringscontrole afgeschaft.</p>
-   <p>U kunt dit rapport desgewenst dagelijks per e-mail ontvangen tot de datum waarop de functie wordt verwijderd. Open een <a href="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">ondersteuningskwestie</a> om hiervoor een verzoek in te dienen. Geef de naam op van de instantie en de e-mailadressen die het rapport moeten ontvangen.</p> 
-   <p>Adobe raadt u aan contact op te nemen met het Afleverteam om te bepalen welke tools u het beste kunt gebruiken om de afleveringsprestaties van uw instantie te controleren.</p>
-  <p><em>Streefdatum voor verwijdering: begin 2022</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>OAuth-verificatie (OAuth en JWT)<br></td>
-  <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
-  <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
-  <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
-  <p><em>Streefdatum voor verwijdering: 20 oktober 2021. Gehoste omgevingen profiteren van een verlenging tot 25 mei 2022. </em></p>
-  </td>
-  </tr>
+<tr>
+ <td>N.v.t.</td>
+ <td>N.v.t.</td>
+</tr>
  </tbody> 
 </table>
 
@@ -83,9 +57,29 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
 <table> 
  <tbody>
   <tr> 
-   <td><strong>Gebied - functie</strong></td>
-   <td><strong>Vervanging</strong></td>
+   <td><strong>Functie</strong></td>
+   <td><strong>Details</strong></td>
   <tr>  
+      <tr>
+  <td>Adobe Analytics-gegevensconnector<br></td>
+   <td><p>De Adobe Analytics Data Connector is verwijderd op 17 augustus 2022. Het is vervangen door de release van Campaign 21.1.3.</p>
+   <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
+  </td>
+ </tr>
+    <tr>
+  <td>Rapport over de technische afleveringscontrole<br></td>
+   <td><p>Het rapport Technical Deliverability Monitoring Report is niet meer beschikbaar. Het is vervangen door de release van Campaign 21.1.3.</p>
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+  </td>
+ </tr>
+  <tr>
+  <td>OAuth-verificatie (OAuth en JWT)<br></td>
+  <td><p> De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. Deze authentificatiemodus was verouderd met de versie van Campagne 20.3.<p>
+  <p>Leer hoe u uw implementatie kunt aanpassen als u de integratie met Triggers hebt gebruikt <a href="../../integrations/using/configuring-adobe-io.md">op deze pagina</a>.</p> 
+  <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
+  <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
+  </td>
+  </tr>
    <td>Rapportage<br></td>
    <td><p>Na Adobe Flash Player EOL zijn het Gauge-rapport en de Chart-rendering-engine niet meer beschikbaar. <a href="../../reporting/using/creating-a-new-report.md">Meer informatie</a></p>
   </tr>
@@ -142,13 +136,9 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
  </tbody> 
 </table>
 
-## Afgeschafte compatibiliteit {#deprecated-compatibility}
+<!--## Deprecated compatibility {#deprecated-compatibility}
 
-De volgende systemen zijn afgeschaft voor Campaign Classic. Raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) om een upgrade naar een nieuwere versie uit te voeren of naar een nieuw systeem over te schakelen voordat de compatibiliteit wordt beëindigd.
-
-### Adobe Campaign 20.2-release {#compat-20-2-release}
-
-Vanaf release 20.2 zijn oude sms-connectoren afgeschaft. Zie de sectie [Verouderde functies](#deprecated-features)
+The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.-->
 
 ## Einde van compatibiliteit {#end-of-compatibility}
 
@@ -168,15 +158,20 @@ De Adobe Campaign Classic-clientconsole kan niet meer worden uitgevoerd op de vo
 
 ### Besturingssystemen {#o-s-eol}
 
-Vanaf release 21.1.3 is de ondersteuning voor Debian 8 afgeschaft.
 
-Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
+* Vanaf de release 22.1 is Adobe Campaign niet meer compatibel met CentOs 8.x (64 bits). CentOS Linux 8 bereikte het Eind van Leven (EOL) op 31 December 2021. [Meer informatie](https://www.centos.org/centos-linux-eol/).
 
-* CentOS 6. [Meer informatie](https://wiki.centos.org/Download)
-* Debian 7. [Meer informatie](https://wiki.debian.org/DebianReleases)
-* RHEL 6.x. [Meer informatie](https://access.redhat.com/support/policy/updates/errata)
-* Windows Server 2008. [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/1163)
-* SLES 11. [Meer informatie](https://www.suse.com/lifecycle)
+   Als u dit besturingssysteem gebruikte, past u de implementatie dienovereenkomstig aan. CentOS 7.x (64 bits) en RHEL 8.x/7.x (64 bits) worden nog ondersteund.
+
+* Vanaf release 21.1.3 is Adobe Campaign niet meer compatibel met Debian 8.
+
+* Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
+
+   * CentOS 6. [Meer informatie](https://wiki.centos.org/Download)
+   * Debian 7. [Meer informatie](https://wiki.debian.org/DebianReleases)
+   * RHEL 6.x. [Meer informatie](https://access.redhat.com/support/policy/updates/errata)
+   * Windows Server 2008. [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/1163)
+   * SLES 11. [Meer informatie](https://www.suse.com/lifecycle)
 
 ### Webservers {#web-server-eol}
 
@@ -239,7 +234,7 @@ PostgreSQL-versies tot 9.6 hebben het einde van de levensduur bereikt. Ze worden
 
 ### Sms-connectoren {#sms-eol}
 
-Adobe Campaign is niet compatibel met de volgende SMS-connectoren:
+Vanaf release 20.2 zijn oude sms-connectoren afgeschaft. Adobe Campaign is niet compatibel met:
 
 * Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)
 * Sybase365 (SAP SMS 365)
