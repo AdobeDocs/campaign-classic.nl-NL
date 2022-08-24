@@ -3,10 +3,10 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 2%
+source-wordcount: '1235'
+ht-degree: 3%
 
 ---
 
@@ -51,16 +51,26 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 
 1. Open de clientconsole van Campagne en meld u als beheerder aan bij Adobe Campaign.
 1. Bladeren naar **Beheer > Platform > Opties**.
-1. Controleer de `DmRendering_cuid` option value is fill.
+1. Controleer of de `DmRendering_cuid` option value is fill.
 
    * Als de optie is gevuld, kunt u de implementatie starten.
    * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om uw CUID op te halen.
 
    Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de correcte waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
+Als klant op locatie moet u ook controleren of een campagne **[!UICONTROL Product profile]** is beschikbaar voor uw organisatie. Volg onderstaande stappen om dit te doen:
+
+1. Als beheerder maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Toegang krijgen tot **Product en services** sectie en controle **Adobe Campaign** is vermeld.
+Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
+1. Klikken **Adobe Campaign** en selecteer uw organisatie.
+1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**.
+
+
 >[!CAUTION]
 >
 >Als klant op locatie, als een firewall aan uw zijde is geïmplementeerd, moet u deze URL toevoegen `https://deliverability-service.adobe.io` op uw lijst van gewenste personen. [Meer informatie](../../installation/using/url-permissions.md).
+
 
 ### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
@@ -123,7 +133,7 @@ Dit doet u als volgt:
 1. De inhoud van het bestand kopiëren `private.key.base64`.
 1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens toe in Adobe Campaign door de volgende opdracht uit te voeren als `neolane` gebruiker. Hiermee voegt u de **[!UICONTROL Technical Account]** referenties in het configuratiebestand van de instantie.
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
