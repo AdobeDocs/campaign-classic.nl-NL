@@ -3,9 +3,9 @@ product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 5%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 5%
 
 Vanaf de release van Campaign Classic v7 21.1.3 is de Adobe Analytics Data Connector afgekeurd. [Meer informatie](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Op 1 augustus 2021 is Adobe Campaign Classic verwijderd uit de bestaande interface voor gegevensverbindingen, maar de bestaande integratie van de campagne zal tot 17 augustus 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
+Op 1 augustus 2021 is Adobe Campaign Classic verwijderd van de oude interface van Data Connectors, maar de bestaande integratie van de Campagne zal tot 17 augustus 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
 
-U **moeten** de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van Adobe die de integratie van de Verbindingen van erfenisGegevens vervangt. Voor meer informatie over Adobe Analytics Connector raadpleegt u [deze pagina](../../platform/using/adobe-analytics-connector.md).
+U **moeten** de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van Adobe die de erfenisIntegratie van Data Connectors vervangt. Voor meer informatie over Adobe Analytics Connector raadpleegt u [deze pagina](../../platform/using/adobe-analytics-connector.md).
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Als gebruiker op locatie kunt u de breedtelodus als volgt implementeren:
 
 **Wat betekent de fout &#39;Integratie-eigenaar niet-beheerder&#39;?**
 
-Meer informatie over de gegevensconnectors `Integration Owner Not Admin` Fout in [deze pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Meer informatie over de Data Connectors `Integration Owner Not Admin` Fout in [deze pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Wat gebeurt er met oude gegevens en rapportreeksen als de migratie naar de nieuwe connector is voltooid?**
 
@@ -80,7 +80,7 @@ Integratie is afhankelijk van gegevens over Technical Account Token voor dagelij
 
 Als wij voor details van een component Analytics (zoals metriek/afmetingen/segmenten/rapportreeksen) lezen, zal API deze componenten in het resultaat niet terugkeren (die als iets kunnen kijken geschrapt op de zijde van Analytics of niet aanwezig is). De API voor Analytics zal deze aanvragen en foutmeldingen negeren.
 
-De oplossing is het bijwerken van de **Productprofiel** in Analytics User Context of Technical User Token met de nieuw gemaakte/ontbrekende componenten door deze componenten toe te voegen in [Adobe Admin Console](https://adminconsole.adobe.com/). Voor meer hulp, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+De oplossing is het bijwerken van de **Productprofiel** in Analytics User Context of Technical User Token met de nieuw gemaakte/ontbrekende componenten door deze componenten toe te voegen in [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Voor meer hulp, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nuttige koppelingen
 

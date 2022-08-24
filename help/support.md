@@ -4,10 +4,10 @@ title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 62%
+source-wordcount: '798'
+ht-degree: 59%
 
 ---
 
@@ -132,19 +132,19 @@ Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel b
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Het nieuwe ticketsysteem is gestart via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. De klantenservice helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
+Het nieuwe ticketsysteem is gestart via [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. De klantenservice helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [Deelnemen aan het gesprek](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [Deelnemen aan het gesprek](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Downloadcentrum voor campagne openen
 
 Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden. [Klik hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van de Experience Cloud toegang te hebben.
-Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){_blank}.
 
 ### Een ticket maken of een chat starten
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Als u een probleem wilt melden of een chatsessie wilt starten in dat nieuwe systeem, maakt u verbinding met de [Adobe Admin Console](https://adminconsole.adobe.com/overview). Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) wordt beschreven.
+Als u een probleem wilt registreren of een chatsessie wilt starten op dat nieuwe systeem, maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Volg de in [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
