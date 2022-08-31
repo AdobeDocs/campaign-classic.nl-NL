@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -61,21 +61,21 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
    <td><strong>Details</strong></td>
   <tr>  
       <tr>
-  <td>Adobe Analytics-gegevensconnector<br></td>
-   <td><p>De Adobe Analytics Data Connector is verwijderd op 17 augustus 2022. Het is vervangen door de release van Campaign 21.1.3.</p>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>De Adobe Analytics Data Connector is verwijderd op 17 augustus 2022. Deze is vervangen door de release van Campaign 21.1.3.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
   </td>
  </tr>
     <tr>
-  <td>Rapport over de technische afleveringscontrole<br></td>
-   <td><p>Het rapport Technical Deliverability Monitoring Report is niet meer beschikbaar. Het is vervangen door de release van Campaign 21.1.3.</p>
+  <td>Rapport Technical Deliverability Monitoring<br></td>
+   <td><p>Het rapport Technical Deliverability Monitoring is niet meer beschikbaar. Deze is vervangen door de release van Campaign 21.1.3.</p>
    <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
-  <td><p> De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. Deze authentificatiemodus was verouderd met de versie van Campagne 20.3.<p>
-  <p>Leer hoe u uw implementatie kunt aanpassen als u de integratie met Triggers hebt gebruikt <a href="../../integrations/using/configuring-adobe-io.md">op deze pagina</a>.</p> 
+  <td><p> Activeert integratieverificatie die oorspronkelijk was gebaseerd op oAUTH-verificatie-instellingen om toegang te krijgen tot de pijplijn, is nu gewijzigd en verplaatst naar Adobe I/O. Deze verificatiemodus was beëindigd met de release van Campaign 20.3.<p>
+  <p>Als u Triggers-integratie hebt gebruikt, leest u <a href="../../integrations/using/configuring-adobe-io.md">op deze pagina</a> hoe u uw implementatie kunt aanpassen.</p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>
@@ -159,9 +159,9 @@ De Adobe Campaign Classic-clientconsole kan niet meer worden uitgevoerd op de vo
 ### Besturingssystemen {#o-s-eol}
 
 
-* Vanaf de release 22.1 is Adobe Campaign niet meer compatibel met CentOs 8.x (64 bits). CentOS Linux 8 bereikte het Eind van Leven (EOL) op 31 December 2021. [Meer informatie](https://www.centos.org/centos-linux-eol/).
+* Vanaf release 22.1 is Adobe Campaign niet meer compatibel met CentOs 8.x (64-bits). CentOS Linux 8 heeft op 31 december 2021 het einde van de levensduur (EOL) bereikt. [Meer informatie](https://www.centos.org/centos-linux-eol/).
 
-   Als u dit besturingssysteem gebruikte, past u de implementatie dienovereenkomstig aan. CentOS 7.x (64 bits) en RHEL 8.x/7.x (64 bits) worden nog ondersteund.
+   Als u dit besturingssysteem hebt gebruikt, past u de implementatie dienovereenkomstig aan. CentOS 7.x (64-bits) en RHEL 8.x/7.x (64-bits) worden nog ondersteund.
 
 * Vanaf release 21.1.3 is Adobe Campaign niet meer compatibel met Debian 8.
 
