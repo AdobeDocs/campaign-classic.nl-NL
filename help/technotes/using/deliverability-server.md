@@ -3,9 +3,9 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1317'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,6 @@ Als **on-premise/hybride klant**, moet u upgraden naar [Campagne v7.2.2](../../r
 
 Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Campagne met Adobe Gedeelde Diensten via een op de Dienst van Identity Management (IMS) gebaseerde authentificatie communiceren. De aangewezen manier is de op Adobe Developer gebaseerde Token van de Gateway te gebruiken (ook genoemd de Token van de Technische Rekening of JWT van Adobe IO).
 
-
 >[!WARNING]
 >
 >Deze stappen dienen alleen te worden uitgevoerd voor Hybride en On-premise implementaties.
@@ -64,6 +63,11 @@ Als klant op locatie moet u ook controleren of een campagne **[!UICONTROL Produc
 1. Toegang krijgen tot **Product en services** sectie en controle **Adobe Campaign** is vermeld.
 Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
 1. Klikken **Adobe Campaign** en selecteer uw organisatie.
+
+   >[!CAUTION]
+   >
+   >Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**.
 
 
@@ -76,9 +80,12 @@ Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.
 
 1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
+   >[!CAUTION]
+   >
+   >Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Selecteer **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
-
 
    >[!CAUTION]
    >
@@ -151,12 +158,14 @@ U kunt nu de nieuwe releaseserver inschakelen. Dit doet u als volgt:
 
 Volg onderstaande stappen om te controleren of de integratie is gelukt:
 
-
 1. Open de clientconsole en meld u aan bij Adobe Campaign.
 1. Bladeren naar **Beheer > Productie > Technische workflows**.
 1. Start de **Vernieuwen voor leverbaarheid** (leverabilityUpdate) workflow. Dit moet worden uitgevoerd op al uw campagneinstanties (MKT, MID, RT, EXEC). Als hybride klant, reik uit aan Adobe om het werkschema op uw MID, RT en EXEC instanties te hebben opnieuw begonnen.
 1. Logbestanden controleren: de workflow moet zonder fouten worden uitgevoerd.
 
+>[!CAUTION]
+>
+>Na de update worden de **Zaadnetwerk bijwerken voor Inbox Rendering (updateRenderingSeeds)** de workflow moet worden stopgezet omdat deze niet langer van toepassing is en mislukt.
 
 ## Veelgestelde vragen {#faq}
 
@@ -173,4 +182,3 @@ Om het even welke instantie van de Campagne die niet tegen 31 Augustus wordt bev
 Als u uw milieu niet bevordert, zullen de e-mailmontages ophouden gesynchroniseerd (MX de regels van het Beheer, Binnenkomende E-mailregels, de regels van het Beheer van het Domein, en stuiterende kwalificatieregels). Dit kan in de loop der tijd invloed hebben op uw leverbaarheid. Als deze regels ingrijpend worden gewijzigd, moeten ze vanaf dit punt handmatig worden toegepast.
 
 Alleen voor MKT-instanties [Algemene lijst voor onderdrukking](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) is aangetast.
-
