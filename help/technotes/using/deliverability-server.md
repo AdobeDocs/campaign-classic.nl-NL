@@ -3,9 +3,9 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -62,11 +62,7 @@ Als klant op locatie moet u ook controleren of een campagne **[!UICONTROL Produc
 1. Als beheerder maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Toegang krijgen tot **Product en services** sectie en controle **Adobe Campaign** is vermeld.
 Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
-1. Klikken **Adobe Campaign** en selecteer uw organisatie.
-
-   >[!CAUTION]
-   >
-   >Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Klikken **Adobe Campaign** en selecteer uw organisatie. **Waarschuwing**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**.
 
@@ -79,11 +75,7 @@ Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.
 ### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
 1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
-
-   >[!CAUTION]
-   >
-   >Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-
+   **Waarschuwing**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Selecteer **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
 
