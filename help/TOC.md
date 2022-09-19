@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: ht
-source-wordcount: '2582'
-ht-degree: 100%
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+workflow-type: tm+mt
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -655,7 +655,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -667,18 +667,18 @@ ht-degree: 100%
          + [Best practices en beperkingen](installation/using/fda-best-practices.md)
          + Configuratierichtlijnen {#config-databases}
             + [Configuratiestappen](installation/using/configure-fda.md)
-            + [Vertica configureren](installation/using/configure-fda-vertica.md)
-            + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
-            + [Google BigQuery configureren](installation/using/configure-fda-google-big-query.md)
             + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
+            + [Google BigQuery configureren](installation/using/configure-fda-google-big-query.md)
             + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
-            + [Oracle configureren](installation/using/configure-fda-oracle.md)
+            + [Microsoft SQL Server configureren](installation/using/configure-fda-sql.md)
             + [Netezza configureren](installation/using/configure-fda-netezza.md)
+            + [Oracle configureren](installation/using/configure-fda-oracle.md)
+            + [PostgreSQL configureren](installation/using/configure-fda-postgresql.md)
+            + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
+            + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
             + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
             + [Teradata configureren](installation/using/configure-fda-teradata.md)
-            + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
-            + [Microsoft SQL Server configureren](installation/using/configure-fda-sql.md)
-            + [PostgreSQL configureren](installation/using/configure-fda-postgresql.md)
+            + [Vertica analytics configureren](installation/using/configure-fda-vertica.md)
          + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
          + [Verbinding maken met de database](installation/using/connecting-to-database.md)
          + [Het gegevensschema maken](installation/using/creating-data-schema.md)
