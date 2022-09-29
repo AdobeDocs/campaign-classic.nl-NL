@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
+source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2008'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 
 **Verbeteringen**
 
-* Na afloop van de levensduur van Internet Explorer 11 gebruikt de HTML-renderingengine voor Adobe Services in de console nu Edge Chromium. Bovendien is de installatie van de Microsoft Edge Webview 2-runtime nu vereist voor elke installatie van de clientconsole (van Campaign Classic 7.3 build-versie). [Meer informatie](../../installation/using/installing-the-client-console.md)
+* Na afloop van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor Adobe Services (aanmeldingspagina) in de clientconsole nu Edge Chromium. Microsoft Internet Explorer 11 is nog steeds de HTML-renderingengine voor dashboards in de clientconsole.  Bovendien is de installatie van de Microsoft Edge Webview 2-runtime nu vereist voor elke installatie van de clientconsole (van Campaign Classic 7.3 build-versie). [Meer informatie](../../installation/using/installing-the-client-console.md)
 * Het beheer van de databaseverbinding in Adobe Campaign is verbeterd om de stabiliteit te optimaliseren.
 * Microsoft Exchange Online OAuth 2.0-verificatie voor POP3 wordt nu ondersteund in Campaign. [Meer informatie](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Er zijn verschillende problemen verholpen bij het gebruik van een verrijkingsworkflowactiviteit met externe gegevens. (NEO-38069)
