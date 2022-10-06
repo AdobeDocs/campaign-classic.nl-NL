@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -655,7 +655,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
             + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
             + [Teradata configureren](installation/using/configure-fda-teradata.md)
-            + [Vertica analytics configureren](installation/using/configure-fda-vertica.md)
+            + [Vertica Analytics configureren](installation/using/configure-fda-vertica.md)
          + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
          + [Verbinding maken met de database](installation/using/connecting-to-database.md)
          + [Het gegevensschema maken](installation/using/creating-data-schema.md)
