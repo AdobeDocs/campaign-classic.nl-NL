@@ -71,8 +71,9 @@ Voor elk adres is de volgende informatie beschikbaar:
 >
 >De toename van het aantal quarantines is een normaal effect dat gerelateerd is aan de &quot;slijtage&quot; van de database. Als de levensduur van een e-mailadres bijvoorbeeld wordt beschouwd als drie jaar en de tabel met ontvangers elk jaar met 50% toeneemt, kan de toename van quarantaine als volgt worden berekend:
 >
->Einde van jaar 1: (1*0,33)/(1+0,5)=22%.
-Einde van jaar 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
+>Einde van jaar 1: 1&#42;0,33)/(1+0,5)=22%.
+>
+>Einde van jaar 2: (1,22)&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificeer quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -101,7 +102,8 @@ Indien nodig, kunt u een adres uit de quarantainelijst manueel verwijderen. Bove
 Als u een adres handmatig uit de quarantainelijst wilt verwijderen, voert u een van de onderstaande handelingen uit.
 
 >[!IMPORTANT]
-Als u handmatig een e-mailadres uit quarantaine verwijdert, betekent dit dat u opnieuw gaat leveren aan dit adres. Dientengevolge, kan dit ernstige gevolgen op uw leverbaarheid en IP reputatie hebben, die uiteindelijk tot uw IP adres of verzendend domein zou kunnen leiden die worden geblokkeerd. Ga extra voorzichtig te werk wanneer u overweegt een adres uit quarantaine te verwijderen. Neem in geval van twijfel contact op met een leverancier.
+>
+>Als u handmatig een e-mailadres uit quarantaine verwijdert, betekent dit dat u opnieuw gaat leveren aan dit adres. Dientengevolge, kan dit ernstige gevolgen op uw leverbaarheid en IP reputatie hebben, die uiteindelijk tot uw IP adres of verzendend domein zou kunnen leiden die worden geblokkeerd. Ga extra voorzichtig te werk wanneer u overweegt een adres uit quarantaine te verwijderen. Neem in geval van twijfel contact op met een leverancier.
 
 * U kunt de status wijzigen in **[!UICONTROL Valid]** van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
 
@@ -118,7 +120,8 @@ De adressen worden automatisch verwijderd uit de quarantainelijst in de volgende
 Hun status verandert vervolgens in **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+>
+>Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
 Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](sending-with-enhanced-mta.md), het maximumaantal opnieuw uit te voeren pogingen in geval van **[!UICONTROL Erroneous]** status en de minimumvertraging tussen pogingen zijn nu gebaseerd op hoe goed IP zowel historisch als momenteel bij een bepaald domein presteert.
 
@@ -135,7 +138,8 @@ Adobe Campaign beheert quarantaine volgens het type van leveringsmislukking en d
 Als een gebruiker een e-mailbericht kwalificeert als spam ([feedbacklus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), wordt het bericht automatisch opnieuw gericht naar een technische brievenbus die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch in quarantaine geplaatst met de status **[!UICONTROL Denylisted]**. Deze status verwijst alleen naar het adres, het profiel staat niet op de lijst van gewezen personen, zodat de gebruiker SMS-berichten en pushberichten blijft ontvangen.
 
 >[!NOTE]
-Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
+>
+>Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
 
 In de lijst van quarantined adressen (zie [Het identificeren van quarantined adressen voor het volledige platform](#identifying-quarantined-addresses-for-the-entire-platform)), de **[!UICONTROL Error reason]** geeft aan waarom het geselecteerde adres in quarantaine is geplaatst.
 
@@ -261,12 +265,14 @@ De **[!UICONTROL mobileAppOptOutMgt]** werkstroom wordt elke 6 uur uitgevoerd om
 Tijdens de leveringsanalyse, worden alle apparaten die van het doel worden uitgesloten automatisch toegevoegd aan **excludeLogAppSubRcp** tabel.
 
 >[!NOTE]
-Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
-* Verbindingsprobleem aan het begin van de levering: fouttype **[!UICONTROL Undefined]**, reden van fout **[!UICONTROL Unreachable]**, wordt opnieuw geprobeerd.
-* Verbinding verloren tijdens een levering: soft error, error reason **[!UICONTROL Refused]**, wordt opnieuw geprobeerd.
-* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, reden van fout **[!UICONTROL Refused]**, wordt het opnieuw proberen niet uitgevoerd.
 >
-Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
+>Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
+>
+>* Verbindingsprobleem aan het begin van de levering: fouttype **[!UICONTROL Undefined]**, reden van fout **[!UICONTROL Unreachable]**, wordt opnieuw geprobeerd.
+>* Verbinding verloren tijdens een levering: soft error, error reason **[!UICONTROL Refused]**, wordt opnieuw geprobeerd.
+>* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, reden van fout **[!UICONTROL Refused]**, wordt het opnieuw proberen niet uitgevoerd.
+>
+>Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
 **Voor Android V2**
 
@@ -484,7 +490,8 @@ Het Android V2-quarantainemechanisme gebruikt hetzelfde proces als Android V1. H
 Het quarantainemechanisme voor SMS-berichten is over het algemeen hetzelfde als het algemene proces. Zie [Informatie over quarantines](#about-quarantines). De specifieke kenmerken voor SMS worden hieronder weergegeven.
 
 >[!NOTE]
-De **[!UICONTROL Delivery log qualification]** de tabel is niet van toepassing op **Uitgebreide algemene SMPP** -aansluiting.
+>
+>De **[!UICONTROL Delivery log qualification]** de tabel is niet van toepassing op **Uitgebreide algemene SMPP** -aansluiting.
 
 <table> 
  <tbody> 
@@ -542,8 +549,10 @@ De schakelaar SMPP wint gegevens van het bericht van SR (Status Report) terug da
 Voordat een nieuw type fout wordt gekwalificeerd, is de reden van de fout altijd ingesteld op **Geweigerd** standaard.
 
 >[!NOTE]
-De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
+>
+>De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
 

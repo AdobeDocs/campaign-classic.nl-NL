@@ -21,15 +21,15 @@ Adobe Campaign biedt verschillende connectors waarmee u kunt communiceren met ex
 
 Beschikbare connectors worden hieronder vermeld:
 
-* FDA-aansluiting (**Federale gegevenstoegang**) kunt u Campagne verbinden met een of meer externe databases en de procesgegevens die hierin zijn opgeslagen zonder dat dit van invloed is op uw Campagnegegevens. [Meer info](../../installation/using/about-fda.md).
-* CRM-connectors maken het mogelijk gegevens uit te wisselen tussen Adobe Campaign en uw CRM-oplossing met behulp van speciale workflowactiviteiten. [Meer info](../../platform/using/crm-connectors.md).
-* Met Analytics Connectors kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer info](../../platform/using/adobe-analytics-connector.md).
+* FDA-aansluiting (**Federale gegevenstoegang**) kunt u Campagne verbinden met een of meer externe databases en de procesgegevens die hierin zijn opgeslagen zonder dat dit van invloed is op uw Campagnegegevens. [Meer informatie](../../installation/using/about-fda.md).
+* CRM-connectors maken het mogelijk gegevens uit te wisselen tussen Adobe Campaign en uw CRM-oplossing met behulp van speciale workflowactiviteiten. [Meer informatie](../../platform/using/crm-connectors.md).
+* Met Analytics Connectors kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer informatie](../../platform/using/adobe-analytics-connector.md).
 
 U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 
 * Adobe Experience Cloud-oplossingen: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, Experience Cloud-triggers, enz. [Meer informatie](../../integrations/using/about-campaign-integrations.md)
-* Adobe IMS/SSO, om toegang tot uw instantie van de Campagne te beveiligen, en met Adobe Campaign met de zelfde Adobe ID te verbinden zoals voor de andere oplossingen van Adobe Experience Cloud. [Meer info](../../integrations/using/about-adobe-id.md).
-* LDAP-directory, voor het verenigen van toegangsbeheer. [Meer info](../../installation/using/connecting-through-ldap.md).
+* Adobe IMS/SSO, om toegang tot uw instantie van de Campagne te beveiligen, en met Adobe Campaign met de zelfde Adobe ID te verbinden zoals voor de andere oplossingen van Adobe Experience Cloud. [Meer informatie](../../integrations/using/about-adobe-id.md).
+* LDAP-directory, voor het verenigen van toegangsbeheer. [Meer informatie](../../installation/using/connecting-through-ldap.md).
 
 >[!NOTE]
 >

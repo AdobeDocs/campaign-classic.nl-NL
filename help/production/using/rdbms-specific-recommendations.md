@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ''
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
@@ -153,7 +153,6 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* De instructies VACUUM en REINDEX vergrendelen de tabel, die sommige processen onderbreekt terwijl het onderhoud wordt uitgevoerd.
 >* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze functie te gebruiken voor de **YyyNmsBroadLogXxx** tabel.
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow, met behulp van een **[!UICONTROL SQL]** activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
-
 >
 
 

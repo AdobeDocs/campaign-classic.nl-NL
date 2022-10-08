@@ -239,7 +239,7 @@ Deze regels worden achtereenvolgens toegepast: de eerste regel wordt toegepast w
 
 De volgende parameters beschikbaar voor elke regel zijn:
 
-* **[!UICONTROL MX mask]**: domein waarop de regel wordt toegepast. Elke regel bepaalt een adresmasker voor MX. Elke MX waarvan de naam overeenkomt met dit masker is daarom in aanmerking. Het masker kan &quot;*&quot; en &quot;?&quot; bevatten algemene tekens.
+* **[!UICONTROL MX mask]**: domein waarop de regel wordt toegepast. Elke regel bepaalt een adresmasker voor MX. Elke MX waarvan de naam overeenkomt met dit masker is daarom in aanmerking. Het masker kan &quot;&#42;&quot; en &quot;?&quot; algemene tekens.
 
    De volgende adressen zijn bijvoorbeeld:
 
@@ -249,7 +249,7 @@ De volgende parameters beschikbaar voor elke regel zijn:
 
    zijn compatibel met de volgende maskers:
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    Voor het e-mailadres foobar@gmail.com is het domein bijvoorbeeld gmail.com en de MX-record is:
@@ -402,9 +402,9 @@ Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruik
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: Hiermee kunt u dit IP-adres reserveren voor e-mailberichten die tot een bepaald domein behoren. Dit is een lijst met maskers die een of meer jokertekens (&#39;*&#39;) kunnen bevatten. Als het attribuut niet wordt gespecificeerd, kunnen alle domeinen dit IP adres gebruiken.
+* **includeDomains**: Hiermee kunt u dit IP-adres reserveren voor e-mailberichten die tot een bepaald domein behoren. Dit is een lijst met maskers die een of meer jokertekens kunnen bevatten (&#39;&#42;&quot;). Als het attribuut niet wordt gespecificeerd, kunnen alle domeinen dit IP adres gebruiken.
 
-   Voorbeeld: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
+   Voorbeeld: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: sluit een lijst van domeinen voor dit IP adres uit. Dit filter wordt toegepast na de **includeDomains** filter.
 

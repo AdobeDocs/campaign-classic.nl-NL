@@ -93,7 +93,7 @@ In dit voorbeeld wil een marketeer een beloningsaanbod sturen naar de ontvangers
 
    ![](assets/identify-email-open-tracking-2.png)
 
-* U kunt een vooraf gedefinieerd filter gebruiken. [Meer info](../../workflow/using/creating-a-filter.md).
+* U kunt een vooraf gedefinieerd filter gebruiken. [Meer informatie](../../workflow/using/creating-a-filter.md).
 
    ![](assets/identify-email-open-tracking-3.png)
 
@@ -138,7 +138,7 @@ In dit voorbeeld wordt een aangepaste implementatie in één technische workflow
 >
 >We raden u ten zeerste aan dit pakket te testen en te valideren in een niet-productieomgeving.
 
-Download de [voorbeeldpakket](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) en installeer het. [Meer info](../../platform/using/working-with-data-packages.md#importing-packages).
+Download de [voorbeeldpakket](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) en installeer het. [Meer informatie](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Nadat u het pakket hebt geïnstalleerd, kunt u tot het werkschema van de omslag toegang hebben die de uit-van-de-doos technische werkschema&#39;s in uw geval bevat:
 

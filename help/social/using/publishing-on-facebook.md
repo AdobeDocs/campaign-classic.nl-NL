@@ -188,7 +188,7 @@ De **[!UICONTROL Preview]** kunt u de rendering van de publicatie weergeven.
 
 >[!NOTE]
 >
->De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. [Meer info](#sending-the-proof).
+>De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. [Meer informatie](#sending-the-proof).
 
 ## Tracking configureren {#configuring-tracking}
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Aan de slag met transactionele berichten
-description: 'Meer informatie over het Adobe Campaign Classic-principe voor het bedienen van berichten en de belangrijkste stappen. '
+description: Meer informatie over het Adobe Campaign Classic-principe voor het bedienen van berichten en de belangrijkste stappen.
 feature: Transactional Messaging
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055

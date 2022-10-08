@@ -7,7 +7,7 @@ exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -29,7 +29,7 @@ Voer de onderstaande stappen uit om een doelworkflow te maken en ontvangers bij 
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Dubbelklik op de knop **Query** activiteit, dan klik **[!UICONTROL Edit the query]** om een het richten dimensie te kiezen die op het schema van de nieuwe ontvankelijke lijst wordt gebaseerd (in ons voorbeeld: **Individueel**). Klikken **[!UICONTROL Finish]** ter bevestiging.
+1. Dubbelklik op de knop **Query** activiteit, dan klik **[!UICONTROL Edit the query]** om een het richten dimensie te kiezen die op het schema van de nieuwe ontvankelijke lijst wordt gebaseerd (in ons voorbeeld: **Individueel**). Klik op **[!UICONTROL Finish]** om te bevestigen.
 
    ![](assets/mapping_create_list_workflow03.png)
 

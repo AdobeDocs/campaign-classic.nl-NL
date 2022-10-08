@@ -49,7 +49,7 @@ Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie t
 **Zie ook**
 
 * [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
-* [Aanvullende informatie](../../rn/using/latest-release.md)
+* [Aanvullende informatie ](../../rn/using/latest-release.md)
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)

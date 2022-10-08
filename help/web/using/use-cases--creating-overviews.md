@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: '"Gebruiksscenario’s: overzichten maken"'
-description: '"Gebruiksscenario’s: overzichten maken"'
+title: "Gebruiksscenario’s: overzichten maken"
+description: "Gebruiksscenario’s: overzichten maken"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: '"Gebruiksscenario: de veldvervanging configureren"'
-description: '"Gebruiksscenario: de veldvervanging configureren"'
+title: "Gebruiksscenario: de veldvervanging configureren"
+description: "Gebruiksscenario: de veldvervanging configureren"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05

@@ -121,7 +121,7 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
    >
    >De **[!UICONTROL Marketing URL]** veld is optioneel.
 
-1. Klik in de Adobe Campaign-console op de knop **[!UICONTROL Request the authorization from the application]** koppeling onder aan **[!UICONTROL Connector]** tab. De **[!UICONTROL Synchronize Facebook pages]** de workflow wordt automatisch geactiveerd en verzamelt alle Facebook-pagina&#39;s die door de beheerder worden beheerd. [Meer info](#synchronizing-facebook-pages).
+1. Klik in de Adobe Campaign-console op de knop **[!UICONTROL Request the authorization from the application]** koppeling onder aan **[!UICONTROL Connector]** tab. De **[!UICONTROL Synchronize Facebook pages]** de workflow wordt automatisch geactiveerd en verzamelt alle Facebook-pagina&#39;s die door de beheerder worden beheerd. [Meer informatie](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,11 +143,11 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
 >
 >Als de Facebook-account meerdere pagina&#39;s beheert, configureert u gewoon één externe account om op elke pagina van de Facebook-account te schrijven. Voor elke nieuwe Facebook-account moet je een nieuwe **[!UICONTROL Routing]** type external account.
 
-De **[!UICONTROL Synchronization of Facebook pages]** Met deze workflow synchroniseert u alle pagina&#39;s die door de Facebook-account worden beheerd, zodat u rechtstreeks via Adobe Campaign op de muur kunt plaatsen. [Meer info](#synchronizing-facebook-pages).
+De **[!UICONTROL Synchronization of Facebook pages]** Met deze workflow synchroniseert u alle pagina&#39;s die door de Facebook-account worden beheerd, zodat u rechtstreeks via Adobe Campaign op de muur kunt plaatsen. [Meer informatie](#synchronizing-facebook-pages).
 
 ## Facebook-pagina&#39;s synchroniseren {#synchronizing-facebook-pages}
 
-De **[!UICONTROL Synchronization of Facebook pages]** workflow, die toegankelijk is via de **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** -knooppunt, kunt u (in Adobe Campaign) de pagina&#39;s synchroniseren van de Facebook-account die eerder is geconfigureerd. Deze workflow is standaard geconfigureerd om één keer per dag te worden uitgevoerd, of telkens wanneer een beheerder op de knop **[!UICONTROL Request an authorization from the application]** verbinding in het scherm van de de dienstconfiguratie. [Meer info](#delegating-write-access-to-adobe-campaign).
+De **[!UICONTROL Synchronization of Facebook pages]** workflow, die toegankelijk is via de **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** -knooppunt, kunt u (in Adobe Campaign) de pagina&#39;s synchroniseren van de Facebook-account die eerder is geconfigureerd. Deze workflow is standaard geconfigureerd om één keer per dag te worden uitgevoerd, of telkens wanneer een beheerder op de knop **[!UICONTROL Request an authorization from the application]** verbinding in het scherm van de de dienstconfiguratie. [Meer informatie](#delegating-write-access-to-adobe-campaign).
 
 Zodra de synchronisatie is voltooid, worden de verzamelde pagina&#39;s weergegeven in de servicemap die is ingevoerd in de externe account. [Meer informatie](#delegating-write-access-to-adobe-campaign)).
 
@@ -155,4 +155,4 @@ Standaard worden pagina&#39;s toegevoegd aan de hoofdmap van het dialoogvenster 
 
 ![](assets/social_facebook_service_002.png)
 
-U kunt nu rechtstreeks via Adobe Campaign publiceren op de wanden van uw Facebook-pagina&#39;s. [Meer info](#publishing-on-facebook-walls).
+U kunt nu rechtstreeks via Adobe Campaign publiceren op de wanden van uw Facebook-pagina&#39;s. [Meer informatie](#publishing-on-facebook-walls).

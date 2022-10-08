@@ -9,7 +9,7 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -139,7 +139,7 @@ De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de t
 
 ### Stap 6 - De database maken {#step-6---creating-the-database}
 
-In het laatste werkgebied van de wizard kunt u de database maken. Klikken **[!UICONTROL Start]** ter bevestiging.
+In het laatste werkgebied van de wizard kunt u de database maken. Klik op **[!UICONTROL Start]** om te bevestigen.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
@@ -230,7 +230,7 @@ De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de t
 
 ### Stap 5 - De database maken {#step-5---creating-the-database}
 
-In het laatste werkgebied van de wizard kunt u de database maken. Klikken **[!UICONTROL Start]** ter bevestiging.
+In het laatste werkgebied van de wizard kunt u de database maken. Klik op **[!UICONTROL Start]** om te bevestigen.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 

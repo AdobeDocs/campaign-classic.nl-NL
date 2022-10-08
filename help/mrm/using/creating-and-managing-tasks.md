@@ -434,7 +434,6 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 >
 >* De taakstatus wordt automatisch bijgewerkt.
 >* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
-
 >
 
 

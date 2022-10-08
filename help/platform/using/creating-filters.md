@@ -145,7 +145,7 @@ Om een **geavanceerd filter** Voer de volgende stappen uit:
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. Selecteer in de lijst het veld waarop de gegevens worden gefilterd. Klikken **[!UICONTROL Finish]** ter bevestiging.
+1. Selecteer in de lijst het veld waarop de gegevens worden gefilterd. Klik op **[!UICONTROL Finish]** om te bevestigen.
 1. Klik op de knop **[!UICONTROL Operator]** en selecteert u de operator die u wilt toepassen in de vervolgkeuzelijst.
 1. Selecteer een verwachte waarde in het menu **[!UICONTROL Value]** kolom. U kunt verschillende filters combineren om de query te verfijnen. Als u een filtervoorwaarde wilt toevoegen, klikt u op **[!UICONTROL Add]**.
 

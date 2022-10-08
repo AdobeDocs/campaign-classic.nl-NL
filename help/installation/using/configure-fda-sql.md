@@ -2,7 +2,8 @@
 product: campaign
 title: Toegang tot Microsoft SQL Server configureren
 description: Leer hoe u toegang tot Microsoft SQL Server configureert
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
+source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -113,4 +114,3 @@ De connector ondersteunt de volgende opties:
 | Verificatie | Type van authentificatie die door de schakelaar wordt gesteund. Huidige ondersteunde waarde: ActiveDirectoryMSI. <br> Zie voorbeeld 8 van [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Coderen | Geeft aan of verbindingen de TLS-codering via het netwerk gebruiken. Mogelijke waarden zijn **ja/verplicht (18.0 en hoger)**, **neen/optioneel (18.0 en hoger)**, en **strikt (18.0 en hoger)**. De standaardwaarde is ingesteld op **ja** in versie 18.0 en hoger en **nee** in eerdere versies. <br>Raadpleeg voor meer informatie hierover [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Hiermee wordt codering ingeschakeld met behulp van een zelfondertekend servercertificaat, indien gebruikt met **Coderen**. <br>Geaccepteerde waarden: **ja** of **nee** (standaardwaarde, wat betekent dat het servercertificaat wordt gevalideerd). |
-

@@ -29,7 +29,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 waarbij **eng** en **fra** zijn mogelijke waarden voor de `[lang]` parameter)
 
-De opdracht **nlserver config -addinstance:instance1/demo*/eng** laat u toe om een instantie tot stand te brengen genoemd **instance1** in het Engels met de DNS mask demo*.
+De opdracht **nlserver config -addinstance:instance1/demo&#42;/nl** laat u toe om een instantie tot stand te brengen genoemd **instance1** in het Engels met de DNS maskerdemo&#42;.
 
 ## Een database declareren {#declaring-a-database}
 

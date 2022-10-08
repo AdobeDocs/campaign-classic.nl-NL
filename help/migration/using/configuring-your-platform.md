@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Pas uw configuratie aan
+title: Uw configuratie aanpassen
 description: Leer hoe u uw configuratie aanpast voor en na een migratie naar Campagne v7
 audience: migration
 content-type: reference
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ---
 
-# Pas uw configuratie aan{#configuring-your-platform}
+# Uw configuratie aanpassen{#configuring-your-platform}
 
 ![](../../assets/v7-only.svg)
 

@@ -48,7 +48,7 @@ Als klant op locatie, alvorens met het implementeren van Campaign Classic te beg
 * Lees de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) die alle versies bevat van de systemen en componenten die worden ondersteund voor Adobe Campaign.
 * Lees, afhankelijk van uw omgeving, de [voorwaarden voor Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) en [voorwaarden voor Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Meer informatie over databasemotoren [in deze sectie](../../installation/using/database.md).
-* Controleer of de vereiste databasetoegangslagen op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account. [Meer info](../../installation/using/application-server.md).
+* Controleer of de vereiste databasetoegangslagen op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account. [Meer informatie](../../installation/using/application-server.md).
 * Vorm uw netwerken aangezien sommige processen met anderen moeten communiceren of tot LAN en Internet toegang hebben. Dit betekent dat sommige havens van TCP voor deze processen open moeten zijn. [Meer informatie](../../installation/using/network-configuration.md) over de configuratievereisten van het Netwerk.
 * Uitlezen [Checklist Campagne Security and Privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
 * Algemene richtlijnen controleren voor het schatten van hardwarevereisten voor implementatie op locatie [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
