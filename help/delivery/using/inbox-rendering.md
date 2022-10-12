@@ -4,9 +4,9 @@ title: Inbox rendering in campagne
 description: Leer hoe u e-mailweergaven vastlegt en beschikbaar maakt in een speciaal rapport
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '821'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 8%
 Voordat u de **Verzenden** , zorgt u ervoor dat uw bericht op optimale wijze aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten.
 
 Om dit mogelijk te maken, gebruikt Adobe Campaign de [Litmus](https://litmus.com/email-testing) testoplossing voor e-mail via internet om de renderingen vast te leggen en beschikbaar te maken in een speciaal rapport. Hierdoor kunt u een voorvertoning van het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
+
+>[!CAUTION]
+>Inbox-rendering is niet compatibel met [terugkerende leveringen](communication-channels.md#recurring-delivery).
 
 Litmus is een functie-rijke e-mailbevestiging en previewing toepassing. Hiermee kunnen makers van e-mailinhoud hun berichtinhoud voorvertonen in meer dan 70 e-mailrenderers, zoals de Gmail inbox of de Apple Mail client.
 
