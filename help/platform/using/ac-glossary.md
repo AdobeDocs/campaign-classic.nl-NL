@@ -6,16 +6,16 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
+source-git-commit: d898a43b7a3f826a63a754f9fcb76953a696f3fb
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Adobe Campaign Verklarende woordenlijst{#ac-glossary}
 
-Hieronder volgt de definitie van de belangrijkste termen en concepten in Adobe Campaign
+Hieronder volgt de definitie van de belangrijkste termen en concepten in Adobe Campaign, met koppelingen naar gerelateerde documentatie. Klik op een term om de definitie ervan weer te geven.
 
 ## A - D{#sec-1}
 
@@ -28,7 +28,7 @@ Meer informatie over [A/B-tests](../../delivery/using/get-started-a-b-testing.md
 
 +++**Toegangscontrole**
 
-Met toegangsbeheer kunnen beheerders toegang en machtigingen toewijzen aan gebruikers van Adobe Campaign. De toestemmingen omvatten de capaciteit om de eigenschappen van Adobe Campaign, zoals het uitvoeren van werkschema&#39;s, het bepalen van schema&#39;s, en het beheren van publiek te bekijken en te gebruiken
+Met toegangsbeheer kunnen beheerders toegang en machtigingen toewijzen aan gebruikers van Adobe Campaign. De toestemmingen omvatten de capaciteit om de eigenschappen van Adobe Campaign, zoals het uitvoeren van werkschema&#39;s, het bepalen van schema&#39;s, en het beheren van publiek te bekijken en te gebruiken.
 
 Meer informatie over [Toegangsbeheer](access-management.md).
 +++
