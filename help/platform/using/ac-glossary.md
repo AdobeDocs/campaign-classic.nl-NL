@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 5%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -41,6 +41,43 @@ Een activiteit is een paletpunt dat aan een werkschema wordt toegevoegd om een u
 Meer informatie over [Workflowactiviteiten](../../workflow/using/about-activities.md).
 +++
 
++++**ACS Connector**
+
+ACS Connector (eerste aanbieding) zorgt voor een brug tussen Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Campagne v7 heeft geavanceerde hulpmiddelen om het primaire marketing gegevensbestand te beheren. De gegevensreplicatie van Campagne v7 staat Campaign Standard toe om de rijke gegevens in een gebruikersvriendelijk milieu te gebruiken.
+
+Meer informatie over [ACS-connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
++++
+
++++**Actief profiel**
+
+Profielen worden als actief beschouwd als ze de afgelopen twaalf maanden via een kanaal zijn getarget of gecommuniceerd. Volgens uw contract wordt elk van uw campagneexemplaren voorzien van een specifiek aantal actieve profielen die voor factureringsdoeleinden worden geteld.
+
+Meer informatie over [Actieve profielen](about-profiles.md#active-profiles).
++++
+
+
++++**Activiteit goedkeuringswerkstroom**
+
+*Context: Gdistribueerde campagne*
+
+De activiteit van de Lokale Goedkeuring is een werkschemaactiviteit die wordt gebruikt om een proces van de leveringsgoedkeuring op te zetten alvorens de berichten worden verzonden.
+
+Meer informatie over de [Lokale goedkeuringsactiviteit](../../workflow/using/local-approval.md).
++++
+
++++**Doelgroep**
+
+Een publiek is de resulterende set profielen die voldoen aan de criteria van een filterdefinitie, op basis van regels en kenmerken.
+
+Meer informatie over [Soorten publiek](../../campaign/using/marketing-campaign-target.md).
++++
+
++++**Audittrail**
+
+Met het audittrail wordt in real-time een uitgebreide lijst met acties en gebeurtenissen in uw Adobe Campaign-instantie vastgelegd. Het omvat een zelfbediende manier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat er met uw workflows is gebeurd en wie deze voor het laatst heeft bijgewerkt of wat uw gebruikers in dat geval hebben gedaan.
+
+Meer informatie over [Audittrail](../../production/using/audit-trail.md).
++++
 
 ## E - H {#sec-2}
 
