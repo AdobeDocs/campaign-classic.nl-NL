@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: ht
-source-wordcount: '2583'
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
+source-wordcount: '2584'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 100%
          + [Rapporten](platform/using/faq-reporting.md)
          + [Ontwikkeling](platform/using/faq-developers.md)
          + [Tutorials](platform/using/tutorials.md)
+      + [Verklarende woordenlijst](platform/using/ac-glossary.md)
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
@@ -516,7 +517,7 @@ ht-degree: 100%
 + Aanbiedingen beheren {#managing-offers}
    + Aan de slag met Interaction {#interaction-overview}
       + [Interaction- en aanbiedingenbeheer](interaction/using/interaction-and-offer-management.md)
-      + [Verklarende woordenlijst](interaction/using/glossary.md)
+      + [Verklarende woordenlijst](interaction/using/i-glossary.md)
       + [Best practices voor Interaction](interaction/using/interaction-best-practices.md)
    + Algemene werking {#general-operation}
       + [Implementatiestappen](interaction/using/implementation-steps.md)
@@ -655,7 +656,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

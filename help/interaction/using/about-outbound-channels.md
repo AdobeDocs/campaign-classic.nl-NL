@@ -3,7 +3,7 @@ product: campaign
 title: Outbound-kanalen
 description: Outbound-kanalen
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -20,6 +20,6 @@ Aanbiedingen kunnen in diverse ruimten worden voorgesteld gebruikend binnenkomen
 
 Om een aanbieding door de aanbiedingsmotor te kunnen selecteren, moet deze zijn goedgekeurd en beschikbaar zijn in een levende omgeving. Raadpleeg voor meer informatie hierover [Een aanbieding goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md).
 
-De presentatie van de aanbieding via een uitgaande communicatiekanaal wordt uitgevoerd via direct mail, e-mail, of campagnes van SMS enz., over het algemeen in partijwijze (verwijs naar [Verklarende woordenlijst](../../interaction/using/glossary.md)). U kunt de eenheidswijze, vooral met het Centrum van het Bericht ook gebruiken (voor meer op dit, verwijs naar [Berichtencentrum](../../message-center/using/about-transactional-messaging.md) handleiding).
+De presentatie van de aanbieding via een uitgaande communicatiekanaal wordt uitgevoerd via direct mail, e-mail, of campagnes van SMS enz., over het algemeen in partijwijze (verwijs naar [Verklarende woordenlijst](../../interaction/using/i-glossary.md)). U kunt de eenheidswijze, vooral met het Centrum van het Bericht ook gebruiken (voor meer op dit, verwijs naar [Berichtencentrum](../../message-center/using/about-transactional-messaging.md) handleiding).
 
 Er zijn verschillende opties beschikbaar voor het aanbieden van een aanbieding. Bijvoorbeeld via een levering, een campagne, leveringscontouren of zelfs via workflowactiviteiten.
