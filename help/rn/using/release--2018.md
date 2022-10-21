@@ -2,8 +2,9 @@
 product: campaign
 title: Releases van Campaign Classic 2018
 description: Meer informatie over Campaign Classic 2018-releases
+hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 7%
@@ -151,7 +152,7 @@ ht-degree: 7%
 * De **Datumberekeningsformule** Deze optie is nu beschikbaar in de leveringseigenschappen wanneer u één levering maakt met behulp van de sjabloon voor directe verzending. (NEO-9792)
 * Het beheer van domeinnamen is verbeterd voor het bijhouden van cookies en webtoepassingen. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie.
 * De import van gedeelde Adobe Marketing Cloud-middelen op een bezorgings- of landingspagina is verbeterd op het gebied van beveiliging en prestaties.
-* Er is een nieuw selectievakje beschikbaar in de externe account van het Mobile-kanaal om uitgebreide SMPP-sporen in te schakelen in het logbestand. Hierdoor is deze uitvoer rechtstreeks toegankelijk via de Adobe Campaign-interface.
+* Er is een nieuw selectievakje beschikbaar in de externe account van het mobiele kanaal om uitgebreide SMPP-sporen in te schakelen in het logbestand, waardoor deze uitvoer rechtstreeks toegankelijk wordt via de Adobe Campaign-interface.
 * In de uitzendingen, is er nu een onderscheid tussen het maximumaantal verbindingen en het maximumaantal berichten per uur. Wanneer de grenzen worden bereikt, is het dan mogelijk te weten waarom de productie beperkt is. Eerder was hetzelfde bericht (&quot;met quotum bereikt&quot;) van toepassing op beide gevallen.
 * U kunt nu een SQL-script opgeven dat moet worden uitgevoerd wanneer u een verbinding verwerft vanuit de pool. Dit script kan worden gebruikt om het standaardschema in te stellen. Dit script wordt toegepast na query-streepvorming. (NEO-11256)
 * In de campagne-SDK wordt de gebruikersnaam niet meer opgeslagen om te voldoen aan onze PII-regels. Gegevens worden nu opgeslagen als een hash.
@@ -213,7 +214,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht de geaggregeerde operator die werd geselecteerd. (NEO-10913)
 * Aangezien de &quot;request.scheme&quot;functie wordt afgekeurd, is het verwijderd uit de documentatie JSAPI. (NEO-10828)
 * Probleem verholpen waardoor sommige gebruikers met specifieke configuraties voor tijdzones zich niet konden aanmelden bij Adobe Campaign. (NEO-10712)
-* Probleem verholpen die optrad bij het instellen van een externe Mobile-account met behulp van de Extended Generic SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.
+* Probleem verholpen die optrad bij het instellen van een externe account voor een mobiel kanaal met behulp van de uitgebreide algemene SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.
 * Probleem opgelost waarbij geplande leveringen mislukten bij het instellen van een frequentie voor de drukregel, omdat de leveringen na de eerste arbitrage voortdurend opnieuw werden berekend. (NEO-10016)
 * Probleem verholpen waarbij de IIS-webserver vastliep tijdens het recyclingproces van de toepassingspool (in de bibliotheek nlsrvmod.dll). (NEO-10862)
 * Probleem verholpen waarbij een ontvanger niet kon worden gezocht in het dialoogvenster **Profielen en doel** scherm. (NEO-8228)

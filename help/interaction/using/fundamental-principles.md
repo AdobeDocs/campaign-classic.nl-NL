@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Een aanbieding wordt slechts opgesteld op de aanbiedingsruimten die tijdens het 
 
 ## Interactietypen en contactmethoden {#interaction-types-and-contact-methods}
 
-Er zijn twee mogelijke typen interactie: binnenkomende interacties (geïnitieerd door een contactpersoon) en uitgaande interacties (geïnitieerd door de aanbiedingsmaker).
+Er zijn twee mogelijke typen interactie: binnenkomende interactie (in werking gesteld door een contact) en uitgaande interactie (in werking gesteld door de aanbiedingsontwerper).
 
 Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (het aanbod wordt berekend voor één contactpersoon) of in batchmodus (het aanbod wordt berekend voor een reeks contactpersonen). Over het algemeen worden binnenkomende interacties uitgevoerd in monitaire modus en uitgaande interacties in batchmodus. Er kunnen echter bepaalde uitzonderingen zijn, bijvoorbeeld voor transactiemeldingen, waarbij de uitgaande interactie plaatsvindt in de eenheidsmodus (zie [deze sectie](../../message-center/using/about-transactional-messaging.md)).
 
