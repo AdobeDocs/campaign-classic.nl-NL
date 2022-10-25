@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
+source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
 workflow-type: tm+mt
-source-wordcount: '6260'
+source-wordcount: '6087'
 ht-degree: 3%
 
 ---
@@ -77,12 +77,15 @@ Met het audittrail wordt in real-time een uitgebreide lijst met acties en gebeur
 Meer informatie over [Audittrail](../../production/using/audit-trail.md).
 +++
 
-+++**Geautomatiseerde campagnes**
+<!--
+----DUPLICATE WITH THE "CAMPAIGN" ENTRY?---
++++**Automated campaigns**
 
-Campagnes die op een programma lopen, zoals voor het richten van ontvangers die een verjaardag of een verjaardag hebben. Kan ook worden gebruikt voor het uitvoeren van &#39;look-ahead&#39;- en &#39;look-back&#39;-logica, zoals wie gisteren heeft gekocht of wie morgen een betaling moet betalen.
+Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Meer informatie over [Campagnes](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
 +++
+-->
 
 +++**Batchmodus**
 
@@ -101,7 +104,7 @@ Meer informatie over [Campagnes](../../campaign/using/designing-marketing-campai
 +++
 
 <!--
------UNCLEAR-----
+-----NOT USEFUL HERE?-----
 +++**Changeover process**
 
 *Context: Campaign Interaction*
@@ -193,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Context: E-maillevering*
 
-Een metrisch die exploitanten toestaat om het succes van een campagne te meten in het bereiken van hun ontvangers&#39; inbox zonder te stuiteren of als spam worden gemerkt.
+Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren of als spam te worden gemarkeerd. Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
 Meer informatie over [Leverbaarheid](../../delivery/using/about-deliverability.md).
 +++
@@ -219,14 +222,17 @@ De leveringslogboeken bevatten informatie die bij het verzenden van een bericht 
 Meer informatie over [Leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 +++
 
-+++**Grondbeginselen van levering**
+<!--
+----STRANGE IN DOCS?----
++++**Delivery fundamentals**
 
-*Context: E-maillevering*
+*Context: Email Deliverability*
 
-De Adobe Campaign Deliverability Fundamentals Consulting Service biedt advies over de leverbaarbaarheid per e-mail en beheer van de reputatie om klanten te ondersteunen die Adobe Campaign-producten gebruiken.
+Adobe Campaign Deliverability Fundamentals Consulting Service provides email deliverability consultation and reputation management to support customers using Adobe Campaign deliveries.
 
-Meer informatie over [Leverbaarheid](../../delivery/using/about-deliverability.md).
+Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++
+-->
 
 +++**Overzicht van levering**
 
@@ -310,15 +316,21 @@ De e-mailcapaciteit BCC verzendt een nauwkeurige exemplaar in formaat EML van ee
 Meer informatie over [BCC e-mailen](../../delivery/using/email-parameters.md#email-bcc).
 +++
 
-+++**E-mailvolumecijfer**
+<!--
+-----STRANGE FOR DOCS?----
++++**Email volume commitment**
 
-De verwachte e-mails die per jaar worden verzonden, zoals vermeld in de verkooporder. Dit is het totale jaarlijkse e-mailvolume van de verplichting, inclusief verzonden maar niet bezorgd e-mails als gevolg van leveringsfouten zoals: niet-levering van een bericht, inclusief maar niet beperkt tot fouten met e-mailadressen, harde stormen, zachte stuiteringen, e-mailfilters van e-mailklanten en zwarte lijsten voor e-mail.
+The anticipated emails sent per year as set forth in the Sales Order. This is the total annual email volume commitment, including emails sent but not delivered due to delivery errors such as: non-delivery of a message including but not limited to email address errors, hard bounces, soft bounces, email filters of mail clients, and email blacklists. 
 +++
+-->
 
-+++**Motoraanroep**
+<!--
+-----USEFUL FOR DOCS?----
++++**Engine call**
 
-Een motoraanroep is een serveraanroep die real-time verwerking op de server start voor de extractie van gegevens, zoals gegevens met betrekking tot enquêtes, WebApps, JSSP, API&#39;s, registraties van mobiele apps, enz. De vraag van de motor moet in pakketten van 5.000 Vraag van de Motor per dag worden vergunning gegeven.
+An engine call is a server call that starts real-time processing on server side for the extraction of data, such as data relating to surveys, WebApps, JSSP, APIs, mobile app registrations, etc. Engine calls must be licensed in packs of 5,000 Engine Calls per day.
 +++
+-->
 
 +++**Verrijkingsactiviteit**
 
@@ -389,7 +401,7 @@ Meer informatie over [Mappen](../../platform/using/adobe-campaign-explorer.md).
 
 +++**Mapweergave**
 
-De omslagmening is een speciaal de omslagtype van de Ontdekkingsreiziger dat wordt gebruikt om alle verslagen van een geselecteerd gegevenstype, ongeacht te tonen tot welke omslag het behoort. Mapweergaven worden gebruikt als een beheerprogramma voor het beheer van gepartitioneerde gegevens of gegevens die over veel mappen worden verspreid.
+De Mapweergave is een speciaal maptype van Verkenner dat wordt gebruikt om alle records van een geselecteerd gegevenstype weer te geven, ongeacht tot welke map het behoort. Mapweergaven worden gebruikt als een beheerprogramma voor het beheer van gepartitioneerde gegevens of gegevens die over veel mappen worden verspreid.
 
 Meer informatie over [Mapweergave](../../platform/using/adobe-campaign-explorer.md).
 +++
@@ -401,12 +413,15 @@ Forms definieert de interfacerepresentatie voor een specifiek schematype. Forms 
 Meer informatie over [Forms](../../configuration/using/identifying-a-form.md).
 +++
 
-+++**Gegenereerde SQL-query**
+<!--
+-----USEFUL HERE?-----
++++**Generated SQL query**
 
-De SQL-code die voor de onderliggende database wordt gegenereerd wanneer een operator een schema manipuleert. De schema&#39;s bepalen de gegevenstypes die dan gebruikend gegevensbestandlijsten en kolommen worden uitgevoerd. SQL die voor schemamanipulatie (zoals in een vraag) wordt geproduceerd is gebaseerd op het geïnstalleerde gegevensbestandtype. Zo kan de database worden omgewisseld naar een ander type en blijven de query&#39;s in Campagne ongewijzigd. Adobe verwijst naar deze functionaliteit als database-agnostic.
+The SQL code generated for the underlying database when an operator manipulates a schema. Schemas define the data types that are then implemented using database tables and columns. The SQL generated for schema manipulation (such as in a query) is based on the installed database type. Thus, the database can be swapped to a different type and the queries in Campaign remain unchanged. Adobe refers to this functionality as being database-agnostic.
 
-Meer informatie over [Gegenereerde SQL-query&#39;s](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
+Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
 +++
+-->
 
 +++**Heatmap**
 
@@ -425,11 +440,12 @@ Meer informatie over [Hybride implementatie](../../installation/using/hosting-mo
 
 ## I - L {#sec-3}
 
+<!-- added more details but maybe still not clear/useful here? -->
 +++**Identificatiemodus**
 
 *Context: Campagne-interactie*
 
-Verwijst naar de status van een contactpersoon. Het kan expliciet, impliciet of anoniem zijn.
+De identificatiemodus verwijst naar de status van een contactpersoon. Het kan expliciet, impliciet of anoniem zijn.
 
 * **expliciet**: het contact wordt geïdentificeerd na hun login op de kanaalinterface.
 * **impliciet**: de contactpersoon is geïdentificeerd door een cookie (permanent of sessie). Het kan als anoniem of geïdentificeerd contact worden verwerkt.
@@ -439,7 +455,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 +++
 
 <!--
-----UNCLEAR----
+----NOT USEFUL HERE?----
 +++**Image serving**
 
 The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
@@ -464,7 +480,7 @@ Inbox-rendering is het genereren van e-mailvoorvertoningen, zodat het bericht op
 Meer informatie over [Inbox rendering](../../delivery/using/delivery-dashboard.md#delivery-rendering).
 +++
 
-+++**Instantie-instellingen**
++++**Versie-instellingen**
 
 Instantie-instellingen zijn configuratiedetails van een Adobe Campaign-instantie. Deze instellingen worden gedefinieerd in de wizard Implementatie (Extra>Geavanceerd>Implementatiewizard) of in de server- en/of instantieconfiguratiebestanden.
 
@@ -488,7 +504,7 @@ Meer informatie over [Lijsten](../../platform/using/creating-and-managing-lists.
 
 +++**Lokale cache**
 
-Informatie die lokaal op de computer van de exploitant wordt opgeslagen. De in cache geplaatste informatie wordt door de console gebruikt om het vereiste verkeer naar de server te beperken en de prestaties te verbeteren. Het periodiek ontruimen van het lokale geheime voorgeheugen (op het menu van het Dossier) werkt de opgeslagen informatie bij en verbetert prestaties en stabiliteit.
+Het lokale geheime voorgeheugen is de informatie die plaatselijk op de computer van de exploitant wordt opgeslagen. De in cache geplaatste informatie wordt door de console gebruikt om het vereiste verkeer naar de server te beperken en de prestaties te verbeteren. Het periodiek ontruimen van het lokale geheime voorgeheugen (op het menu van het Dossier) werkt de opgeslagen informatie bij en verbetert prestaties en stabiliteit.
 
 Meer informatie over [Lokale cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -521,21 +537,21 @@ Meer informatie over [Benoemde rechten](../../platform/using/access-management-n
 
 +++**Naamruimte**
 
-Een verdeling die de types van klantengegevens van inheemse datatypes van Adobe Campaign in het gegevensmodel scheidt. Wordt ook gebruikt om de migratie van definities van de ene instantie naar de andere te vergemakkelijken, zoals het verplaatsen van een schema of sjabloon van de instantie Development naar de instantie Production.
+De naamruimte is een partitie die de gegevenstypen van de klant scheidt van de native datatypen van Adobe Campaign in het gegevensmodel. Wordt ook gebruikt om de migratie van definities van de ene instantie naar de andere te vergemakkelijken, zoals het verplaatsen van een schema of sjabloon van de instantie Development naar de instantie Production.
 
 Meer informatie over [Naamruimte](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
 +++**Navigatiebalk**
 
-Het navigatie-element dat over de bovenkant van de interface loopt. De navigatiebalk hergroepeert de verschillende kernmogelijkheden van het platform. Klik op een koppeling naar een navigatiebalk om de set functies weer te geven die betrekking hebben op deze functie. De lijst met kernmogelijkheden waartoe u toegang hebt, is afhankelijk van de pakketten en invoegtoepassingen die u hebt geïnstalleerd en van uw toegangsrechten. Het doel van de navigatiebalk is om het schermbeheer te vereenvoudigen en de productiviteit te verhogen.
+De navigatiebalk is het navigatie-element dat boven aan de interface wordt uitgevoerd. De navigatiebalk hergroepeert de verschillende kernmogelijkheden van het platform. Klik op een koppeling naar een navigatiebalk om de set functies weer te geven die betrekking hebben op deze functie. De lijst met kernmogelijkheden waartoe u toegang hebt, is afhankelijk van de pakketten en invoegtoepassingen die u hebt geïnstalleerd en van uw toegangsrechten. Het doel van de navigatiebalk is om het schermbeheer te vereenvoudigen en de productiviteit te verhogen.
 
 Meer informatie over [Navigatiebalk](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
 
 +++**Navigatiestructuur**
 
-De belangrijkste navigatie in de mening van de Ontdekkingsreiziger van Adobe Campaign. De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt. De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invoerformulier voor het bewerken van de geselecteerde regel. U kunt de navigatiestructuur aanpassen en machtigingen voor mappen instellen.
+De navigatieboom is de belangrijkste navigatie in de mening van de Ontdekkingsreiziger van Adobe Campaign. De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt. De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invoerformulier voor het bewerken van de geselecteerde regel. U kunt de navigatiestructuur aanpassen en machtigingen voor mappen instellen.
 
 Meer informatie over [Navigatiestructuur](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
@@ -553,7 +569,7 @@ Meer informatie over [Doelstellingen](../../mrm/using/creating-and-managing-task
 
 *Context: Campagne-interactie*
 
-Set aanbiedingen die is gedefinieerd in Adobe Campaign en die tijdens een interactie kan worden geselecteerd. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
+Een aanbiedingencatalogus is een reeks aanbiedingen die in Adobe Campaign zijn gedefinieerd en die tijdens een interactie kunnen worden geselecteerd. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
 
 Meer informatie over [Catalogus aanbieden](../../interaction/using/offer-catalog-overview.md).
 +++
@@ -562,7 +578,7 @@ Meer informatie over [Catalogus aanbieden](../../interaction/using/offer-catalog
 
 *Context: Campagne-interactie*
 
-Een contact van een binnenkomende interactie. Tijdens de verwerking van de motorvraag, wordt het contact geassocieerd met een gericht afmeting. Niet-geïdentificeerde, anonieme contacten worden toegeschreven aan de bezoeker richtend dimensie. Er zijn twee soorten contacten, geïdentificeerd en anoniem:
+Een aanbiedingscontact is een contact van een binnenkomende interactie. Tijdens de verwerking van de motorvraag, wordt het contact geassocieerd met een gericht afmeting. Niet-geïdentificeerde, anonieme contacten worden toegeschreven aan de bezoeker richtend dimensie. Er zijn twee soorten contacten, geïdentificeerd en anoniem:
 
 * **Geïdentificeerd contact**: een contact dat vrijwillig op het kanaal is geïdentificeerd. In uitgaande interactie, wordt het contact automatisch geïdentificeerd.
 * **Anonieme contactpersoon**: een contactpersoon die niet vrijwillig via het kanaal is geabonneerd, maar impliciet via een cookie kan worden geïdentificeerd. Deze terminologie wordt alleen gebruikt voor binnenkomende interacties.
@@ -583,7 +599,7 @@ Meer informatie over [Ontwerpomgevingen](../../interaction/using/fundamental-pri
 
 *Context: Campagne-interactie*
 
-Aanbiedingen selecteren die in een omgeving worden weergegeven (in aanmerking komende aanbiedingen). Het arbitragebeginsel rangschikt de aanbiedingen naar prioriteit volgens de criteria die in de categorieën en aanbiedingen zijn vastgesteld.
+De aanbiedingsmotor selecteert de aanbiedingen die op een milieu (in aanmerking komende aanbiedingen) zullen worden getoond. Het arbitragebeginsel rangschikt de aanbiedingen naar prioriteit volgens de criteria die in de categorieën en aanbiedingen zijn vastgesteld.
 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -592,7 +608,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 *Context: Campagne-interactie*
 
-Het verwijderen van aanbiedingen die niet in aanmerking komen voor selectie. Uitgevoerd voorafgaand aan de stap voor de arbitrage van de aanbiedingsmotor.
+De aanbiedingsengine wordt gewist door aanbiedingen die niet voor selectie in aanmerking komen, te verwijderen. Uitgevoerd voorafgaand aan de stap voor de arbitrage van de aanbiedingsmotor.
 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -601,7 +617,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 *Context: Campagne-interactie*
 
-De hoofdmap die een aanbiedingencatalogus, de beschikbare ruimten en de vooraf gedefinieerde filters van de omgeving definieert. De exploitanten moeten één milieu voor elke het richten dimensie tot stand brengen. Er zijn twee soorten omgevingen voor aanbiedingen: Ontwerp en live.
+De aanbiedingsomgeving is de hoofdmap die een aanbiedingencatalogus, de beschikbare ruimten en de vooraf gedefinieerde filters van de omgeving definieert. De exploitanten moeten één milieu voor elke het richten dimensie tot stand brengen. Er zijn twee soorten omgevingen voor aanbiedingen: Ontwerp en live.
 
 Meer informatie over [Omgevingen](../../interaction/using/fundamental-principles.md).
 +++
@@ -610,27 +626,27 @@ Meer informatie over [Omgevingen](../../interaction/using/fundamental-principles
 
 *Context: Campagne-interactie*
 
-Omgeving gekoppeld aan een campagne **Ontwerpomgeving**. Het bevat alleen-lezen aanbiedingen waarvan de inhoud en geschiktheid zijn goedgekeurd via de **Ontwerpomgeving**. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
+De omgeving Live aanbieden is gekoppeld aan een campagne **Ontwerpomgeving**. Het bevat alleen-lezen aanbiedingen waarvan de inhoud en geschiktheid zijn goedgekeurd via de **Ontwerpomgeving**. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
 
 Meer informatie over [Live omgevingen](../../interaction/using/fundamental-principles.md).
-+++
-
-+++**Voorvertoning voorstel**
-
-*Context: Campagne-interactie*
-
-Voorbeeld van de aanbieding zoals deze in de bijbehorende map wordt weergegeven. Het is toegankelijk vanaf het tabblad Voorvertoning aanbieding of het contactprofiel.
-
-Meer informatie over [Voorvertoning voorstel](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Presentatieregels aanbieden**
 
 *Context: Campagne-interactie*
 
-Typologieregels waarnaar in de aanbiedingsomgeving wordt verwezen, waarbij exploitanten specifieke aanbiedingen kunnen uitsluiten door rekening te houden met de voorpositiegeschiedenis van de ontvanger.
+De de presentatieregels van de aanbieding zijn typologieregels die in het aanbiedingsmilieu van verwijzingen worden voorzien, die Exploitanten specifieke aanbiedingen laten door rekening te houden met de voorpositiegeschiedenis van de ontvanger.
 
 Meer informatie over [Presentatieregels aanbieden](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
++++
+
++++**Voorvertoning voorstel**
+
+*Context: Campagne-interactie*
+
+Dit is de voorvertoning van de aanbieding zoals deze in de bijbehorende map wordt weergegeven. Het is toegankelijk vanaf het tabblad Voorvertoning aanbieding of het contactprofiel.
+
+Meer informatie over [Voorvertoning voorstel](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Voorstel**
@@ -687,18 +703,18 @@ Het aanbiedingsgewicht is gebaseerd op formules die de relevantie van een aanbie
 Meer informatie over [Aanbiedingsgewicht](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**Exploitantgroepen**
-
-Met operatorgroepen kunt u rollen voor campagneoperatoren beheren. U definieert groepen operatoren waaraan u rechten toewijst en koppelt de operatoren vervolgens aan een of meer groepen. Op deze manier kunt u rechten opnieuw gebruiken en de consistentie van operatorprofielen verhogen. Het vergemakkelijkt ook het beheer en het onderhoud van profielen.
-
-Meer informatie over [Exploitantgroepen](../../platform/using/access-management-groups.md).
-+++
-
 +++**Operator**
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren. Operatoren zijn gekoppeld aan groepen operatoren en nemen de rechten en privileges van deze groepen over. U kunt benoemde rechten ook rechtstreeks toewijzen aan operatoren.
 
 Meer informatie over [Operatoren](../../platform/using/access-management-operators.md).
++++
+
++++**Exploitantgroepen**
+
+Met operatorgroepen kunt u rollen voor campagneoperatoren beheren. U definieert groepen operatoren waaraan u rechten toewijst en koppelt de operatoren vervolgens aan een of meer groepen. Op deze manier kunt u rechten opnieuw gebruiken en de consistentie van operatorprofielen verhogen. Het vergemakkelijkt ook het beheer en het onderhoud van profielen.
+
+Meer informatie over [Exploitantgroepen](../../platform/using/access-management-groups.md).
 +++
 
 +++**Opties**
@@ -774,7 +790,7 @@ Meer informatie over [Vooraf gedefinieerde filters](../../platform/using/creatin
 +++
 
 <!--
-----DEPREACTED----
+----DEPRECATED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
@@ -839,25 +855,25 @@ Meer informatie over [Renderfunctie](../../interaction/using/creating-offer-spac
 +++
 
 <!--
------DID NOT FIND IN DOCS----
+-----DID NOT FIND IN ACC DOCS, ACS?----
 +++**Retargeting campaigns**
 
 Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
 -->
 
-+++**Schema-extensie**
-
-De Uitbreiding van het schema staat u toe om de uit-van-de-doosschema&#39;s aan te passen om uw zaken van het bedrijfsgebruik het best aan te passen. U kunt bijvoorbeeld het veld Loyalty toevoegen aan de tabel Ontvanger.
-
-Meer informatie over [Schema-extensie](../../configuration/using/extending-a-schema.md).
-+++
-
 +++**Schema**
 
 Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
 
 Meer informatie over [Schemas](../../configuration/using/about-schema-reference.md).
++++
+
++++**Schema-extensie**
+
+De uitbreiding van het schema staat u toe om de uit-van-de-doos schema&#39;s aan te passen om uw zaken van het bedrijfsgebruik het best aan te passen. U kunt bijvoorbeeld het veld Loyalty toevoegen aan de tabel Ontvanger.
+
+Meer informatie over [Schema-extensie](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Seed-adressen**
@@ -868,6 +884,7 @@ Meer informatie over [Zaadadressen](../../delivery/using/about-seed-addresses.md
 +++
 
 <!--
+-------ACS?-----
 +++**Send-time optimization**
 
 To improve the open rate of your messages, you can manually define a sending time per recipient. Each profile will receive the message at the specified date and time, whenever possible. Defining a sending time can be done at the delivery level or using a workflow.
@@ -906,7 +923,7 @@ Doelgoedkeuring is het proces waarbij een afzonderlijke exploitant of groep expl
 Meer informatie over [Doelgoedkeuring](../../workflow/using/local-approval.md).
 +++
 
-+++**Doelgegevens**
++++**Targetgegevens**
 
 Doelgegevens zijn de gegevens die zijn opgeslagen in de werktabel (overgang) van een werkstroom. Deze gegevens zijn beschikbaar binnen de levering voor verpersoonlijking van de leveringsinhoud of om de logica van dynamische elementen van de levering te bepalen.
 
@@ -915,7 +932,7 @@ Meer informatie over [Doelgegevens](../../workflow/using/data-life-cycle.md#targ
 
 +++**Doeltoewijzing**
 
-De Toewijzing van het doel is de afbeelding van leveringskanalen aan een specifiek gegevenstype. De afbeeldingen van het doel bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
+De afbeelding van het doel is de afbeelding van leveringskanalen aan een specifiek gegevenstype. De afbeeldingen van het doel bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
 
 Meer informatie over [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md).
 +++
@@ -944,7 +961,7 @@ Meer informatie over [Taakactiviteit](../../workflow/using/task.md).
 +++
 
 <!--
------NOT USEFUL-----
+-----NOT USEFUL, detail-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -960,7 +977,6 @@ Een sjabloon is een ontwerpelement dat wordt gebruikt om een object te maken. De
 
 <!--
 -----ACS -> SEEDS IN ACC-----
-
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -970,7 +986,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
------NOT USEFUL?-----
+-----NOT FOR DOCS?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -993,6 +1009,7 @@ Het transactieoverseinen is een module van de Campagne die voor het beheren van 
 Meer informatie over [Transactieberichten](../../message-center/using/about-transactional-messaging.md).
 +++
 
+<!------- USEFUL HERE??----->
 +++**Teweeggebrachte campagnes**
 
 Geïnactiveerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een workflow wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
@@ -1010,22 +1027,22 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**Typologieregel**
-
-*Context: Campagne optimaliseren*
-
-Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (de regels van de Controle) of het doel van de levering (het Filtreren regels) of andere logica (de regels van de Druk) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere Typologieën kunnen worden omvat.
-
-Meer informatie over [Typologieregels](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
-+++
-
 +++**Typologie**
 
 *Context: Campagne optimaliseren*
 
-Een typologie is een groepering van Typologieregels die worden toegepast op de analysefase van een levering. Een campagneretypologie kan verschillende typologische regels bevatten, maar een levering kan slechts naar één typologie verwijzen.
+Een typologie is een groepering van typologische regels die worden toegepast op de analysefase van een levering. Een campagneretypologie kan verschillende typologische regels bevatten, maar een levering kan slechts naar één typologie verwijzen.
 
 Meer informatie over [Typologieën](../../campaign-opt/using/about-campaign-typologies.md#typologies).
++++
+
++++**Typologieregel**
+
+*Context: Campagne optimaliseren*
+
+Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (controleregels) of het doel van de levering (het filtreren regels) of andere logica (drukregels) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere typologieën kunnen worden omvat.
+
+Meer informatie over [Typologieregels](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U - Z {#sec-6}
@@ -1056,18 +1073,18 @@ Webtoepassingen zijn dynamische en interactieve toepassingspagina&#39;s die word
 Meer informatie over [Webtoepassingen](../../web/using/about-web-applications.md).
 +++
 
-+++**Workflow Journal**
-
-Het werkschemadagboek is het geleidelijke uitvoeringslogboek van een werkschema. Het bevat alle historie of audittrail van de workflow. Het wordt gebruikt voor ontwikkeling, het oplossen van problemen of zuivert doeleinden.
-
-Meer informatie over [Workflow Journal](../../workflow/using/monitoring-workflow-execution.md).
-+++
-
 +++**Workflow**
 
 Een workflow is een visuele weergave van de uitvoeringsstroom van de campagne. Hiermee kunt u het volledige scala aan processen en taken in de verschillende modules van de toepassingsserver ordenen. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enzovoort. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
 
 Meer informatie over [Workflows](../../workflow/using/about-workflows.md).
++++
+
++++**Workflow Journal**
+
+Het werkschemadagboek is het geleidelijke uitvoeringslogboek van een werkschema. Het bevat alle historie of audittrail van de workflow. Het wordt gebruikt voor ontwikkeling, het oplossen van problemen of zuivert doeleinden.
+
+Meer informatie over [Workflow Journal](../../workflow/using/monitoring-workflow-execution.md).
 +++
 
 +++**Werkbaar**
