@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Meer informatie over [Workflowactiviteiten](../../workflow/using/about-activitie
 
 Profielen worden als actief beschouwd als ze de afgelopen twaalf maanden via een kanaal zijn getarget of gecommuniceerd. Volgens uw contract wordt elk van uw campagneexemplaren voorzien van een specifiek aantal actieve profielen die voor factureringsdoeleinden worden geteld.
 
-Meer informatie over [Actieve profielen](about-profiles.md#active-profiles).
+Meer informatie over [Actieve profielen](../../platform/using/about-profiles.md#active-profiles).
 +++
 
 +++**Activiteit goedkeuringswerkstroom**
@@ -759,7 +759,7 @@ Meer informatie over [Abonnementen](../../campaign/using/setting-up-marketing-ca
 
 Vooraf gedefinieerde filters zijn query&#39;s die zijn opgeslagen voor hergebruik. Het gebruik van vooraf gedefinieerde filters verhoogt de productiviteit (omdat ze slechts eenmaal zijn gemaakt), helpt u de consistentie te vergroten (omdat alle marketers ze kunnen gebruiken) en de vaardigheden te verlagen die de markeerder nodig heeft omdat ze code of logica kunnen gebruiken die ze mogelijk niet zelf kunnen maken.
 
-Meer informatie over [Vooraf gedefinieerde filters](../../platforrm/using/creating-filters.md).
+Meer informatie over [Vooraf gedefinieerde filters](../../configuration/using/creating-filters.md).
 +++
 
 <!--
@@ -775,14 +775,14 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 De primaire sleutel is het unieke herkenningsteken voor elk verslag in een gegevensbestandlijst. Een tabel moet minstens één sleutel hebben. Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen. Primaire sleutels kunnen geen samengestelde sleutels zijn (omvatten verscheidene gebieden).
 
-Meer informatie over [Primaire sleutel](../../configuration/using/key.md).
+Meer informatie over [Primaire sleutel](../../configuration/using/schema/key.md).
 +++
 
 +++**Profiel**
 
 Een profiel is een verslag van informatie die een eindklant, vooruitzicht, of lood vertegenwoordigt. Elk profiel komt overeen met een record in de tabel nmsRecipient of een externe tabel met daarin een cookie-id, de klant-id, de mobiele id of andere informatie die relevant is voor een bepaald kanaal.
 
-Meer informatie over [Profielen](../../platforrm/using/about-profiles.md).
+Meer informatie over [Profielen](../../platform/using/about-profiles.md).
 +++
 
 +++**Programma**
@@ -900,7 +900,7 @@ Meer informatie over [Doelgegevens](../../workflow/using/data-life-cycle.md#targ
 
 Dit is de afbeelding van leveringskanalen aan een specifiek gegevenstype. Adobe Campaign verzendt niet per se naar e-mailadressen of telefoonnummers, maar naar gegevenstypen. De kaarten van het doel (soms genoemd de kaarten van de Levering) bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
 
-Meer informatie over [Doelgegevens](../../workflow/using/define-the-right-audience.md#target-mappings).
+Meer informatie over [Doelgegevens](../../delivery/using/define-the-right-audience.md#target-mappings).
 +++
 
 +++**Targetingactiviteiten**
@@ -1000,7 +1000,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (de regels van de Controle) of het doel van de levering (het Filtreren regels) of andere logica (de regels van de Druk) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere Typologieën kunnen worden omvat.
 
-Meer informatie over [Typologieën](../../campaign/using/about-campaign-typologies.md#typology-rules).
+Meer informatie over [Typologieën](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typologie**
@@ -1009,7 +1009,7 @@ Meer informatie over [Typologieën](../../campaign/using/about-campaign-typologi
 
 Een typologie is een groepering van Typologieregels die worden toegepast op de analysefase van een levering. Een campagneretypologie kan verschillende typologische regels bevatten, maar een levering kan slechts naar één typologie verwijzen.
 
-Meer informatie over [Typologieën](../../campaign/using/about-campaign-typologies.md#typologies).
+Meer informatie over [Typologieën](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 ## U - Z {#sec-6}
@@ -1018,7 +1018,7 @@ Meer informatie over [Typologieën](../../campaign/using/about-campaign-typologi
 
 *Context: Campagne Interactie, Transactioneel Overseinen*
 
-In de eenheidsmodus wordt één contactpersoon tijdens runtime door de Offertenengine verwerkt. Deze wijze wordt over het algemeen gebruikt voor binnenkomende interactie en transactieberichten.
+In de eenheidswijze, wordt één enkel contact verwerkt door de motor van de Aanbieding bij runtime. Deze wijze wordt over het algemeen gebruikt voor binnenkomende interactie en transactieberichten.
 
 Meer informatie over [Eenvoudige modus](../../interaction/using/about-inbound-channels.md).
 +++
