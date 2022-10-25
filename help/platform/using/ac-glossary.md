@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
+source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
 workflow-type: tm+mt
-source-wordcount: '6453'
-ht-degree: 2%
+source-wordcount: '6260'
+ht-degree: 3%
 
 ---
 
@@ -100,14 +100,17 @@ Campagne is een interface voor het coördineren, definiëren en uitvoeren van ma
 Meer informatie over [Campagnes](../../campaign/using/designing-marketing-campaigns.md).
 +++
 
-+++**Wijzigingsproces**
+<!--
+-----UNCLEAR-----
++++**Changeover process**
 
-*Context: Campagne-interactie*
+*Context: Campaign Interaction*
 
-In de context van de Interactie van de Campagne, is het omschakelingsproces een geactiveerd proces in een geïdentificeerd milieu, verantwoordelijk voor het leiden van de vraag aan een anoniem milieu als het contact niet uitdrukkelijk en/of impliciet geïdentificeerd is.
+In the context of Campaign Interaction, the changeover process is an activated process in an identified environment, responsible for directing the call to an anonymous environment if the contact has not been explicitly and/or implicitly identified.
 
-Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
+Learn more about [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
+-->
 
 +++**Kanaal**
 
@@ -174,14 +177,17 @@ De het schoonmaken werkschema van het Gegevensbestand schrapt verouderde gegeven
 Meer informatie over [Workflow voor opschonen van databases](../../production/using/database-cleanup-workflow.md).
 +++
 
-+++**Speciale server**
+<!--
+----UNCLEAR----
++++**Dedicated server**
 
-*Context: Transactieberichten*
+*Context: Transactional Messaging*
 
-Speciale uitvoeringsserver(s) voor het gebruik van Transactieberichten. Een server kan typisch tot 50.000 Vraag van de Motor per uur verwerken. De aanduiding &quot;Per-Dedicated Server&quot; heeft niet noodzakelijkerwijs een 1:1-correlatie met een fysieke server omdat Adobe virtualisatietechnologieën kan gebruiken om het equivalente effect te bereiken.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
-Meer informatie over [Transactieberichten](../../message-center/using/about-transactional-messaging.md).
+Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
+-->
 
 +++**Aflevering**
 
@@ -272,6 +278,7 @@ Meer informatie over [Domeindelegatie](https://experienceleague.adobe.com/docs/c
 ## E - H {#sec-2}
 
 <!--
+----DEPREACTED----
 +++**E4X**
 
 The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
@@ -431,12 +438,15 @@ Verwijst naar de status van een contactpersoon. Het kan expliciet, impliciet of 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Beeldmateriaal**
+<!--
+----UNCLEAR----
++++**Image serving**
 
-De functionaliteit die de afbeeldingen die zijn ingesloten in e-mails, levert aan de ontvangers van de levering. De invoeging van de afbeeldingen op basis van de functie &quot;Afbeeldingen downloaden&quot; van een e-mailsysteem genereert een &quot;open&quot; item in de trackinglogboeken van de campagne.
+The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
 
-Meer informatie over [Beeldmateriaal](../../delivery/using/defining-the-email-content.md#adding-images).
+Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
+-->
 
 +++**Binnenkomende interactie**
 
@@ -495,6 +505,7 @@ Meer informatie over [MRM](../../mrm/using/about-marketing-resource-management.m
 +++
 
 <!--
+----ACS?----
 +++**Localization**
 
 This template type is used to manage multilingual messages.  It is available for Email and SMS messages and useable in standalone mode, within a workflow or in a recurring delivery. In the multilingual feature templates, the language management is based on variants. Each variant represents one language.  This functionality is available only in Adobe Campaign Standard.  
@@ -729,7 +740,7 @@ Meer informatie over [Prestatiebewaking](../../production/using/monitoring-proce
 
 +++**Personalisatieblokken**
 
-Adobe Campaign biedt ingebouwde aanpassingsblokken die u in uw leveringen kunt invoegen. Ze zijn dynamisch, gepersonaliseerd en bevatten een specifieke rendering. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Verschillende verpersoonlijkingsblokken zijn standaard beschikbaar. U kunt ook aangepaste aanpassingsblokken definiëren waarmee u uw levering kunt optimaliseren. De daadwerkelijke gegevens worden opgenomen in elk geproduceerd bericht tijdens de analysefase van de levering.
+Adobe Campaign biedt ingebouwde aanpassingsblokken die u in uw leveringen kunt invoegen. Ze zijn dynamisch, gepersonaliseerd en bevatten een specifieke rendering. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Verschillende verpersoonlijkingsblokken zijn standaard beschikbaar. U kunt ook aangepaste verpersoonlijkingsblokken definiëren waarmee u uw verpersoonlijking van de levering kunt optimaliseren. De daadwerkelijke gegevens worden opgenomen in elk geproduceerd bericht tijdens de analysefase van de levering.
 
 Meer informatie over [Aanpassingsblokken](../../delivery/using/personalization-blocks.md).
 +++
@@ -759,15 +770,16 @@ Meer informatie over [Abonnementen](../../campaign/using/setting-up-marketing-ca
 
 Vooraf gedefinieerde filters zijn query&#39;s die zijn opgeslagen voor hergebruik. Het gebruik van vooraf gedefinieerde filters verhoogt de productiviteit (omdat ze slechts eenmaal zijn gemaakt), helpt u de consistentie te vergroten (omdat alle marketers ze kunnen gebruiken) en de vaardigheden te verlagen die de markeerder nodig heeft omdat ze code of logica kunnen gebruiken die ze mogelijk niet zelf kunnen maken.
 
-Meer informatie over [Vooraf gedefinieerde filters](../../configuration/using/creating-filters.md).
+Meer informatie over [Vooraf gedefinieerde filters](../../platform/using/creating-filters.md#filtering-recipients).
 +++
 
 <!--
+----DEPREACTED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
 
-Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-filters.md).
+Learn more about [Predictive Engagement Scoring](../../platform/using/creating-filters.md).
 +++
 -->
 
@@ -794,12 +806,14 @@ Meer informatie over [Programma&#39;s](../../campaign/using/setting-up-marketing
 
 +++**Overheidsmiddelen**
 
-In de map Public Resources in de Adobe-campagne vindt u afbeeldingen die worden gehost door de toepassingsserver. Afbeeldingen in leveringen moeten worden gepubliceerd naar de toepassingsserver (of naar een imagehostingserver als Campagne zo is geconfigureerd) om te worden weergegeven in leveringen, zoals e-mails.
+De map Public Resources in Adobe Campaign bevat afbeeldingen die worden gehost door de toepassingsserver. Afbeeldingen in leveringen moeten worden gepubliceerd naar de toepassingsserver (of naar een imagehostingserver als Campagne zo is geconfigureerd) om te worden weergegeven in leveringen, zoals e-mails.
 
 Meer informatie over [Overheidsmiddelen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 +++
 
 +++**Push**
+
+*Context: Mobiel App-kanaal*
 
 Pushberichten zijn berichten die door mobiele toepassingen worden ontvangen. Push-berichten zijn geconfigureerd om met Adobe Campaign te werken door de SDK-code van het Experience Platform in de mobiele toepassing op te nemen. Voor Push zijn twee leveringskanalen beschikbaar: iOS en Android.
 
@@ -824,10 +838,13 @@ De renderfunctie wordt gedefinieerd in een aanbiedingsruimte. Het wordt gebruikt
 Meer informatie over [Renderfunctie](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**Bezig met opnieuw rangschikken van campagnes**
+<!--
+-----DID NOT FIND IN DOCS----
++++**Retargeting campaigns**
 
-Campagnes die de ontvangers van een vorige levering of leveringen opnieuw richten.
+Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
+-->
 
 +++**Schema-extensie**
 
@@ -838,14 +855,14 @@ Meer informatie over [Schema-extensie](../../configuration/using/extending-a-sch
 
 +++**Schema**
 
-Een schema is een XML-document dat een specifiek gegevenstype definieert. De schema&#39;s worden uitgevoerd als gegevensbestandlijsten in het gegevensbestand van het product.  De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd. Merk op dat deze termijnen (Schema/Lijst) vaak door exploitanten onderling verwisselbaar worden gebruikt, maar zij zijn verschillende elementen van de productarchitectuur.
+Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
 
 Meer informatie over [Schemas](../../configuration/using/about-schema-reference.md).
 +++
 
 +++**Seed-adressen**
 
-Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger.
+Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger. Zij worden toegevoegd aan het publiek van een bericht om het even welk frauduleus gebruik van uw ontvankelijke gegevensbestand te ontdekken of levering te verzekeren.
 
 Meer informatie over [Zaadadressen](../../delivery/using/about-seed-addresses.md).
 +++
@@ -870,12 +887,12 @@ Meer informatie over [Services](../../delivery/using/about-services-and-subscrip
 
 In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. Met het regelpaneel kunt u handelingen uitvoeren op uw SFTP-servers, zoals de opslagcapaciteit controleren, IP-adressen beheren voor aanbiedingen en het beheren van openbare SSH-sleutels.
 
-Meer informatie over [SFTP-beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=en).
+Meer informatie over [SFTP-beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Activiteit abonnementsdiensten**
 
-Met deze workflowactiviteit kunt u een abonnement op een informatiedienst maken of verwijderen voor de populatie die is opgegeven in de overgang.
+Met de workflowactiviteit Subscription Services kunt u een abonnement op een informatieservice maken of verwijderen voor de bevolking die in de overgang is opgegeven.
 
 Meer informatie over [Activiteit abonnementsdiensten](../../workflow/using/subscription-services.md).
 +++
@@ -896,23 +913,23 @@ Doelgegevens zijn de gegevens die zijn opgeslagen in de werktabel (overgang) van
 Meer informatie over [Doelgegevens](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**Doelmap**
++++**Doeltoewijzing**
 
-Dit is de afbeelding van leveringskanalen aan een specifiek gegevenstype. Adobe Campaign verzendt niet per se naar e-mailadressen of telefoonnummers, maar naar gegevenstypen. De kaarten van het doel (soms genoemd de kaarten van de Levering) bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
+De Toewijzing van het doel is de afbeelding van leveringskanalen aan een specifiek gegevenstype. De afbeeldingen van het doel bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
 
-Meer informatie over [Doelgegevens](../../delivery/using/define-the-right-audience.md#target-mappings).
+Meer informatie over [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Targetingactiviteiten**
 
-Dit zijn workflowactiviteiten die specifiek zijn voor doelgerichte, manipulerende bevolkingsgegevens en filteractiviteiten. Zij laten de Exploitanten één of meerdere doelstellingen bouwen door reeksen te bepalen en deze reeksen te verdelen of te combineren gebruikend doorsnede, verenigings of uitsluitingsverrichtingen.
+Doelactiviteiten zijn workflowactiviteiten die specifiek zijn voor doelgerichte, manipulerende bevolkingsgegevens en filteractiviteiten. Zij laten de Exploitanten één of meerdere doelstellingen bouwen door reeksen te bepalen en deze reeksen te verdelen of te combineren gebruikend doorsnede, verenigings of uitsluitingsverrichtingen.
 
 Meer informatie over [Gerichte activiteiten](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**Doeldimensie**
 
-Het gegevenstype dat wordt geproduceerd (teruggekeerd) door een vraag of andere werkschemaactiviteiten. Merk op dat Adobe Campaign slechts de Primaire Sleutel van de geënquêteerde gegevensbestandrijen terugkeert, geen kwestie welke vraag werd gebruikt om hen te verkrijgen.
+Het richten dimensie is het gegevenstype dat (teruggekeerd) door een vraag of andere werkschemaactiviteiten wordt veroorzaakt. Merk op dat Adobe Campaign slechts de Primaire Sleutel van de geënquêteerde gegevensbestandrijen terugkeert, geen kwestie welke vraag werd gebruikt om hen te verkrijgen.
 
 Meer informatie over [Doeldimensie](../../workflow/using/targeting-data.md).
 +++
@@ -921,18 +938,13 @@ Meer informatie over [Doeldimensie](../../workflow/using/targeting-data.md).
 
 *Context: Marketing Resource Management (MRM)*
 
-De het werkschemaactiviteit van de Taak neemt menselijke actie in de logica van een werkschema op. U kunt twee scenario&#39;s specificeren: de eerste als de taak is voltooid en een tweede als de taak niet is voltooid (als deze handmatig als onvolledig is gemarkeerd of als deze vervalt).
-
-De typische gebruiksgevallen zijn voor het opnemen van off-line acties in een campagne, of voor douaneacties zoals goedkeuringen.
-
-In een campagnewerkstroom, de activiteit van de Taak
-
-
+De het werkschemaactiviteit van de Taak neemt menselijke actie in de logica van een werkschema op. U kunt twee scenario&#39;s specificeren: de eerste als de taak is voltooid en de tweede als de taak niet is voltooid. De typische gebruiksgevallen zijn voor het opnemen van off-line acties in een campagne, of voor douaneacties zoals goedkeuringen.
 
 Meer informatie over [Taakactiviteit](../../workflow/using/task.md).
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -947,6 +959,8 @@ Een sjabloon is een ontwerpelement dat wordt gebruikt om een object te maken. De
 +++
 
 <!--
+-----ACS -> SEEDS IN ACC-----
+
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -956,6 +970,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
+-----NOT USEFUL?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -986,6 +1001,7 @@ Meer informatie over [Teweeggebrachte campagnes](../../workflow/using/external-s
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Triggers**
 
 Signals that initiate execution of a workflow, delivery or other action. Typically an API call. 
@@ -1000,7 +1016,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (de regels van de Controle) of het doel van de levering (het Filtreren regels) of andere logica (de regels van de Druk) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere Typologieën kunnen worden omvat.
 
-Meer informatie over [Typologieën](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Meer informatie over [Typologieregels](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typologie**
@@ -1024,6 +1040,7 @@ Meer informatie over [Eenvoudige modus](../../interaction/using/about-inbound-ch
 +++
 
 <!--
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
@@ -1034,7 +1051,7 @@ Learn more about [Universes](../../workflow/using/about-workflows.md).
 
 +++**Webapplicaties**
 
-Webtoepassingen zijn dynamische en interactieve toepassingspagina&#39;s die worden gehost door de instantie Campagne. Het bevat gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker. U kunt bijvoorbeeld een bewerkingsformulier maken op een extranet, of berichtformulieren met gegevens uit de database met tabellen, grafieken, invoerformulieren, enzovoort. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
+Webtoepassingen zijn dynamische en interactieve toepassingspagina&#39;s die worden gehost door de instantie Campagne. Zij bevatten gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker. U kunt bijvoorbeeld een bewerkingsformulier maken op een extranet, of berichtformulieren met gegevens uit de database met tabellen, grafieken, invoerformulieren, enzovoort. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
 
 Meer informatie over [Webtoepassingen](../../web/using/about-web-applications.md).
 +++
@@ -1055,7 +1072,7 @@ Meer informatie over [Workflows](../../workflow/using/about-workflows.md).
 
 +++**Werkbaar**
 
-De werktabel bevat alle informatie die door workflowovergangen wordt overgedragen. Voor elke workflow worden meerdere werktabellen gebruikt. De gegevens in deze tabellen kunnen gedurende de gehele levenscyclus van de werkstroom worden versneld en gebruikt, zolang deze niet worden gewist. Onbenodigde tabellen worden immers gewist wanneer de workflow wordt gepassiveerd en mogelijk tijdens de uitvoering van de grootste workflows om overbelasting van de server te voorkomen.
+De werktabel bevat alle informatie die door workflowovergangen wordt overgedragen. Voor elke workflow worden meerdere werktabellen gebruikt. De werktabel bevat de resultaten van de oorspronkelijke activiteit en de inhoud ervan wordt gebruikt als invoer voor de volgende (verbonden) activiteit in de workflow.  Manipulatie (uitbreiding, aanpassing) van de werktafel is één van de belangrijkste vaardigheden van een exploitant van Adobe Campaign.
 
 Meer informatie over [Worktables](../../workflow/using/about-workflows.md).
 +++
