@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 3%
+source-wordcount: '5993'
+ht-degree: 2%
 
 ---
 
@@ -140,14 +140,14 @@ Meer informatie over [Goedkeuring van inhoud](../../campaign/using/marketing-cam
 
 Gebruik Controlegroepen om de impact van uw campagnes te meten door een deel van hun publiek uit te sluiten. De exploitanten kunnen het gedrag van de doelbevolking vergelijken die het bericht met het gedrag van contacten ontving die niet werden gericht. Gebaseerd op de verzendende logboeken, kunnen de Exploitanten een controlegroep in toekomstige campagnes ook richten.
 
-Meer informatie over [Goedkeuring van inhoud](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Meer informatie over [Inhoudsgroepen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Configuratiescherm**
 
-Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerder van Adobe Campaign verhogen, doordat u de instellingen kunt beheren en het gebruik voor elk van uw instanties kunt bijhouden. Met de intuïtieve interface kunt u eenvoudig het gebruik van belangrijke elementen bewaken en beheertaken uitvoeren, zoals het toevoegen van IP-adressen aan de lijst van gewenste IP-adressen, SFTP-opslagbewaking, sleutelbeheer, enzovoort.
+Met het Configuratiescherm kunnen productbeheerders van Adobe Campaign hun werk efficiënter maken, door ze in staat te stellen instellingen te beheren en het gebruik voor elk van hun instanties bij te houden. Zijn intuïtieve interface laat hen gemakkelijk het gebruik van zeer belangrijke activa controleren, evenals beheerstaken zoals IP adressen toevoeging van de lijst van gewenste personen, SFTP opslagcontrole, zeer belangrijk beheer, en meer uitvoeren.
 
-Meer informatie over [Goedkeuring van inhoud](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Meer informatie over [Deelvenster Inhoud](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
 +++
 
 +++**Kubussen**
@@ -166,11 +166,11 @@ Adobe Campaign wordt geleverd met een vooraf gedefinieerd gegevensmodel, waarbij
 Meer informatie over [Aangepaste bronnen](../../configuration/using/about-schema-edition.md).
 +++
 
-+++**Gegevensmodel**
++++**Datamodel**
 
 Het de gegevensmodel van de campagne is een reeks schema&#39;s die de gegevenstypes en hun verhoudingen (verbindingen) bepalen. Het gegevensmodel is een abstracte definitie die fysisch met een gegevensbestand wordt uitgevoerd dat de daadwerkelijke gegevens bevat.
 
-Meer informatie over [Aangepaste bronnen](../../configuration/using/about-data-model.md).
+Meer informatie over [Gegevensmodel](../../configuration/using/about-data-model.md).
 +++
 
 +++**Workflow voor opschonen van databases**
@@ -261,7 +261,7 @@ Meer informatie over [Beschrijvende analyse](../../reporting/using/about-descrip
 
 *Context: Distributed Marketing*
 
-De Distributed Marketing add-on biedt aan campagnebeheerders een gezamenlijke werkruimte aan voor het uitvoeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **lijst met campagnepakketten**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
+De Distributed Marketing add-on biedt aan Campagneontwikkelaars een gezamenlijke werkruimte aan voor het uitvoeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **lijst met campagnepakketten**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
 
 Meer informatie over [Distributed Marketing](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -270,7 +270,7 @@ Meer informatie over [Distributed Marketing](../../distributed/using/about-distr
 
 De verspreiding van waarden is een hulpmiddel dat de distributie van de waarden voor een schemaattribuut toont dat momenteel in het gegevensbestand bestaat. Op deze manier kunt u bepalen welke waarden beschikbaar zijn, wat hun aantallen en percentages zijn en kunt u problemen met hoofdlettergebruik en spelling van waarden voorkomen bij het maken van een query of expressie.
 
-Meer informatie over [Distributed Marketing](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Meer informatie over [Verdeling van waarden](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Domeindelegatie**
@@ -492,7 +492,7 @@ Meer informatie over [Instantie-instellingen](../../installation/using/about-ini
 
 Taken worden beheerd door een wizardsysteem dat het importeren en exporteren van gegevens in en uit het product vereenvoudigt. Taken gebruiken het sjabloonsysteem voor eenvoud en consistentie en kunnen worden gedefinieerd om volgens een schema te worden uitgevoerd.
 
-Meer informatie over [Taken importeren en exporteren](../../platform/using/get-started-data-import-export.md).
+Meer informatie over [import- en exporttaken](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Lijsten**
@@ -542,12 +542,15 @@ De naamruimte is een partitie die de gegevenstypen van de klant scheidt van de n
 Meer informatie over [Naamruimte](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**Navigatiebalk**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-De navigatiebalk is het navigatie-element dat boven aan de interface wordt uitgevoerd. De navigatiebalk hergroepeert de verschillende kernmogelijkheden van het platform. Klik op een koppeling naar een navigatiebalk om de set functies weer te geven die betrekking hebben op deze functie. De lijst met kernmogelijkheden waartoe u toegang hebt, is afhankelijk van de pakketten en invoegtoepassingen die u hebt geïnstalleerd en van uw toegangsrechten. Het doel van de navigatiebalk is om het schermbeheer te vereenvoudigen en de productiviteit te verhogen.
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-Meer informatie over [Navigatiebalk](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**Navigatiestructuur**
 
@@ -565,13 +568,13 @@ In het kader van de campagne, het programma of het plan kunnen exploitanten een 
 Meer informatie over [Doelstellingen](../../mrm/using/creating-and-managing-tasks.md#expenses-and-revenues).
 +++
 
-+++**Catalogus aanbieden**
++++**Aanbiedingscatalogus**
 
 *Context: Campagne-interactie*
 
 Een aanbiedingencatalogus is een reeks aanbiedingen die in Adobe Campaign zijn gedefinieerd en die tijdens een interactie kunnen worden geselecteerd. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
 
-Meer informatie over [Catalogus aanbieden](../../interaction/using/offer-catalog-overview.md).
+Meer informatie over [Aanbiedingscatalogus](../../interaction/using/offer-catalog-overview.md).
 +++
 
 +++**Contact aanbieden**
@@ -592,7 +595,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 Het voorstel **Ontwerpomgeving** is het milieu waarin de exploitanten aanbiedingen creëren, typologieregels bepalen, en het schema selecteren dat door de aanbiedingen zal worden gericht. De tabel voor het opslaan van gegenereerde aanbiedingsvoorstellen wordt ook door de omgeving gedefinieerd. Standaard wordt de invoegtoepassing Interactie geleverd met een **Ontwerp** milieu en **Live** omgeving. Beide milieu&#39;s worden pre-gevormd om de ingebouwde ontvankelijke lijst te richten.
 
-Meer informatie over [Ontwerpomgevingen](../../interaction/using/fundamental-principles.md).
+Meer informatie over [Ontwerpomgevingen aanbieden](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Bied motorarbitrage aan**
@@ -619,7 +622,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 De aanbiedingsomgeving is de hoofdmap die een aanbiedingencatalogus, de beschikbare ruimten en de vooraf gedefinieerde filters van de omgeving definieert. De exploitanten moeten één milieu voor elke het richten dimensie tot stand brengen. Er zijn twee soorten omgevingen voor aanbiedingen: Ontwerp en live.
 
-Meer informatie over [Omgevingen](../../interaction/using/fundamental-principles.md).
+Meer informatie over [Aanbiedingsomgevingen](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Live-omgeving aanbieden**
@@ -628,7 +631,7 @@ Meer informatie over [Omgevingen](../../interaction/using/fundamental-principles
 
 De omgeving Live aanbieden is gekoppeld aan een campagne **Ontwerpomgeving**. Het bevat alleen-lezen aanbiedingen waarvan de inhoud en geschiktheid zijn goedgekeurd via de **Ontwerpomgeving**. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
 
-Meer informatie over [Live omgevingen](../../interaction/using/fundamental-principles.md).
+Meer informatie over [Live-omgevingen aanbieden](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Presentatieregels aanbieden**
@@ -662,7 +665,7 @@ Meer informatie over [Voorstellen aanbieden](../../interaction/using/creating-of
 
 *Context: Campagne-interactie*
 
-Een aanbiedingsvoorstel is het resultaat van de actie die bestaat uit het aanbieden van een aanbieding aan een contact in een bepaalde aanbiedingsruimte, bijvoorbeeld de banner op een website, een e-mail of sms-inhoud. Dit resultaat wordt opgeslagen in de lijst met aanbiedingsvoorstellen waarin de aanbieding, de ontvanger en de tijdstempel worden gedefinieerd, met een overzicht van alle aanbiedingen die een ontvanger heeft ontvangen.
+Een aanbiedingsvertegenwoordiging is informatie die door het kanaal wordt gebruikt om de aanbieding te tonen. De aanbiedingsvertegenwoordiging kan van de teruggevende functie van de ruimte worden geconstrueerd waarop de aanbieding wordt vertegenwoordigd of direct in de interface (bijvoorbeeld, in het blok van HTML) ingegaan. Een aanbieding kan door een ruimte worden vertegenwoordigd.
 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +685,7 @@ Meer informatie over [Aanbiedingssimulaties](../../interaction/using/about-offer
 
 Een aanbiedingsruimte is een map waarin de locatie van de aanbieding wordt gedefinieerd. Als u een spatie definieert, kunt u het gebruikte kanaal opgeven, de inhoud van de aanbieding opbouwen en de aangeboden aanbiedingen opgeven. De aanbiedingsruimte is de interface tussen het kanaal en de aanbiedingsmotor.
 
-Meer informatie over [Aanbiedingssimulaties](../../interaction/using/creating-offer-spaces.md).
+Meer informatie over [Ruimte voor aanbod](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Thema&#39;s aanbieden**
@@ -1010,11 +1013,11 @@ Meer informatie over [Transactieberichten](../../message-center/using/about-tran
 +++
 
 <!------- USEFUL HERE??----->
-+++**Teweeggebrachte campagnes**
++++**Gedetailleerde campagnes**
 
-Geïnactiveerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een workflow wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
+Gegenereerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een workflow wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
 
-Meer informatie over [Teweeggebrachte campagnes](../../workflow/using/external-signal.md).
+Meer informatie over [Gegroepeerde componenten](../../workflow/using/external-signal.md).
 +++
 
 <!--
