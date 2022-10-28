@@ -4,11 +4,9 @@ title: Verklarende woordenlijst voor Adobe Campaign
 description: Verklarende woordenlijst voor Adobe Campaign
 role: User, Data Architect
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
+source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '6041'
 ht-degree: 2%
 
 ---
@@ -140,14 +138,14 @@ Meer informatie over [Goedkeuring van inhoud](../../campaign/using/marketing-cam
 
 Gebruik Controlegroepen om de impact van uw campagnes te meten door een deel van hun publiek uit te sluiten. De exploitanten kunnen het gedrag van de doelbevolking vergelijken die het bericht met het gedrag van contacten ontving die niet werden gericht. Gebaseerd op de verzendende logboeken, kunnen de Exploitanten een controlegroep in toekomstige campagnes ook richten.
 
-Meer informatie over [Inhoudsgroepen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Meer informatie over [Controlegroepen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Configuratiescherm**
 
 Met het Configuratiescherm kunnen productbeheerders van Adobe Campaign hun werk efficiënter maken, door ze in staat te stellen instellingen te beheren en het gebruik voor elk van hun instanties bij te houden. Zijn intuïtieve interface laat hen gemakkelijk het gebruik van zeer belangrijke activa controleren, evenals beheerstaken zoals IP adressen toevoeging van de lijst van gewenste personen, SFTP opslagcontrole, zeer belangrijk beheer, en meer uitvoeren.
 
-Meer informatie over [Deelvenster Inhoud](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Meer informatie over [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
 +++
 
 +++**Kubussen**
@@ -284,12 +282,12 @@ Meer informatie over [Domeindelegatie](https://experienceleague.adobe.com/docs/c
 ## E - H {#sec-2}
 
 <!--
-----DEPREACTED----
+----DEPRECATED------>
 +++**E4X**
 
-The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
+E4X is de versie van Javascript die in Adobe Campaign Classic wordt gebruikt. Soms ECMAScript genoemd, is het een uitbreiding van Javascript die het mengen van Javascript en de primitieven van XML in de zelfde code toestaat. E4X is geclassificeerd als een verouderde taal.
 +++
--->
+
 
 +++**Subsidiabiliteitsregels**
 
@@ -1060,14 +1058,14 @@ Meer informatie over [Eenvoudige modus](../../interaction/using/about-inbound-ch
 +++
 
 <!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
 
 Learn more about [Universes](../../workflow/using/about-workflows.md).
 +++
--->
+------>
 
 +++**Webapplicaties**
 
