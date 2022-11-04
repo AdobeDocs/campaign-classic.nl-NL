@@ -1,53 +1,21 @@
 ---
 product: campaign
-title: Aan de slag met kubussen
+title: Kubussen
 description: Aan de slag met kubussen
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 2665ea2ba67a0ca2a4beb0b076543b3245acbebb
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 11%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Aan de slag met kubussen{#about-cubes}
 
 ![](../../assets/common.svg)
-
-De exploratie van gegevens in het gegevensbestand wordt aangeboden via **Marketing Analytics** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
-
-De kubussen worden gebruikt voor het produceren van bepaalde ingebouwde rapporten, met inbegrip van leveringsrapporten (levering het volgen, klikt, opent, enz.). Rapporten op basis van kubussen mogen alleen worden gebruikt als standaard voor gegevensvolumes onder 5 miljoen feitenlijnen.
-
-U kunt de mogelijkheden van databaseverkenning en -analyse uitbreiden terwijl het voor eindgebruikers gemakkelijker wordt om rapporten en tabellen te configureren. Alles wat gebruikers moeten doen is een bestaande (volledig geconfigureerde) kubus selecteren bij het maken van hun rapport of tabel om berekeningen, metingen en statistieken te verwerken.
-
-Zodra kubussen zijn gemaakt en geconfigureerd, worden ze gebruikt in vakken voor rapportquery’s en webapplicaties. Ze kunnen worden gebruikt en bewerkt binnen draaitabellen.
-
->[!CAUTION]
->
->**Marketing Analytics** is een Adobe Campaign-module. Het moet op uw instantie worden geïnstalleerd zodat u de hieronder beschreven mogelijkheden kunt gebruiken.
-
-Met de module Campagne Marketing Analytics kunt u:
-
-1. Kubussen maken
-
-   * gegevens samenvoegen en opslaan in een werktabel om indicatoren vooraf te berekenen op basis van gebruikersbehoeften;
-   * het gegevensvolume te verminderen dat betrokken is bij de verschillende berekeningen die voor rapporten en vragen worden gebruikt, zodat de berekeningstijden van de indicatoren aanzienlijk worden geoptimaliseerd;
-   * de toegang tot gegevens te vereenvoudigen, gebruikers in staat te stellen gegevens (al dan niet vooraf geaggregeerd) afhankelijk van verschillende afmetingen te manipuleren.
-
-   Raadpleeg voor meer informatie hierover [Indicatoren maken](../../reporting/using/creating-indicators.md).
-
-1. Draai-tabellen maken
-
-   * berekende gegevens, geconfigureerde maatregelen verkennen;
-   * de gegevens selecteren die moeten worden weergegeven, alsmede de weergavemodus;
-   * de gebruikte maatregelen en indicatoren aanpassen;
-   * bieden interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
-
-   Raadpleeg voor meer informatie hierover [Kubussen gebruiken om gegevens te verkennen](../../reporting/using/using-cubes-to-explore-data.md).
-
-1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.
-1. Identificeer populaties en verwijs hen in lijsten.
 
 ## Terminologie {#terminology}
 
