@@ -4,7 +4,7 @@ title: Gegevens verzamelen om te analyseren
 description: Gegevens verzamelen om te analyseren
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -55,7 +55,7 @@ Het is mogelijk om een kubus voor het bepalen van de vraag te selecteren.
 
 ![](assets/reporting_query_from_cube.png)
 
-Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en tegelijkertijd de configuratie van rapporten en tabellen voor eindgebruikers vereenvoudigen: Selecteer eenvoudig een bestaande, volledig gevormde kubus en gebruik zijn berekeningen, maatregelen en statistieken. Voor meer informatie over het maken van kubussen raadpleegt u [deze sectie](../../reporting/using/about-cubes.md).
+Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en tegelijkertijd de configuratie van rapporten en tabellen voor eindgebruikers vereenvoudigen: Selecteer eenvoudig een bestaande, volledig gevormde kubus en gebruik zijn berekeningen, maatregelen en statistieken. Voor meer informatie over het maken van kubussen raadpleegt u [deze sectie](../../reporting/using/ac-cubes.md).
 
 Klik op de knop **[!UICONTROL Edit query...]** en selecteer de indicatoren die u in uw rapport wilt tonen of gebruiken.
 

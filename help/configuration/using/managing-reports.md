@@ -3,7 +3,7 @@ product: campaign
 title: Rapporten beheren
 description: Rapporten beheren
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Ad
 
 Als u nieuwe rapporten wilt maken, raadpleegt u [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor deze tabellen. De kubussen worden gedetailleerd in [deze sectie](../../reporting/using/about-cubes.md).
+In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor deze tabellen. De kubussen worden gedetailleerd in [deze sectie](../../reporting/using/ac-cubes.md).
 
 De volgende verslagen hebben betrekking op:
 

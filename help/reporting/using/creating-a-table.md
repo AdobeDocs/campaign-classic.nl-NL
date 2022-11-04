@@ -4,7 +4,7 @@ title: Een tabel maken
 description: Een tabel maken
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -464,4 +464,4 @@ Dit type van lijst laat u statistieken tonen die op de gegevens in het gegevensb
 
 De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysetovenaar. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) voor meer informatie.
 
-Raadpleeg voor meer informatie over het maken van een draaitabel [deze sectie](../../reporting/using/using-cubes-to-explore-data.md).
+Raadpleeg voor meer informatie over het maken van een draaitabel [deze sectie](../../reporting/using/ac-cubes.md).

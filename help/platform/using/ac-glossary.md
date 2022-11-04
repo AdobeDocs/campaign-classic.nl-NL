@@ -4,7 +4,7 @@ title: Verklarende woordenlijst voor Adobe Campaign
 description: Verklarende woordenlijst voor Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Meer informatie over [Deelvenster Beheer](https://experienceleague.adobe.com/doc
 
 Kube is een intuïtief hulpprogramma voor gegevensverkenning van Adobe Campaign waarmee gebruikers dynamische rapporten kunnen maken en delen.
 
-Meer informatie over [Kubussen](../../reporting/using/about-cubes.md).
+Meer informatie over [Kubussen](../../reporting/using/ac-cubes.md).
 +++
 
 +++**Aangepaste resources**

@@ -3,8 +3,10 @@ product: campaign
 title: Aanbevolen werkwijzen voor kubussen
 description: Aanbevolen werkwijzen voor kubussen
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
@@ -127,8 +129,6 @@ De grootste gegevensvolumes kunnen in aggregaten worden berekend.
 Samengevoegde gegevens zijn handig wanneer u grote hoeveelheden gegevens bewerkt. Ze worden automatisch bijgewerkt op basis van de instellingen die in het specifieke werkstroomvak zijn gedefinieerd, zodat de gegevens die het laatst zijn verzameld, worden geïntegreerd in de indicatoren
 
 De aggregaten worden bepaald in het relevante lusje van elke kubus.
-
-![](assets/s_advuser_cube_agregate_01.png)
 
 >[!NOTE]
 >

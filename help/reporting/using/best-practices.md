@@ -4,7 +4,7 @@ title: Best practices voor rapportage
 description: Campagne die beste praktijken meldt
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    U kunt bijvoorbeeld:
 
-   * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
+   * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Meer informatie [in deze sectie](../../reporting/using/ac-cubes.md)
    * Voeg indicatoren aan een bestaand rapport toe. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
    * Bekijk de gegevens in de database. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
    * Maak een nieuw leveringsrapport. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, zie [deze sectie](../../workflow/using/about-workflows.md)
    * Maak een draaitabel. Meer informatie [in deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Samengevoegde gegevens verkennen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
+   * Samengevoegde gegevens verkennen. Meer informatie [in deze sectie](../../reporting/using/ac-cubes.md)
    * Gebruik een wizard om gegevens te analyseren. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
    * Analyseer grote hoeveelheden gegevens. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
 

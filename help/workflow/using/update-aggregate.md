@@ -4,10 +4,10 @@ title: Samenvoeging bijwerken
 description: Meer informatie over de workflowactiviteit voor het bijwerken van aggregaten
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '123'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,12 @@ ht-degree: 4%
 
 Voor rapportagedoeleinden worden aggregaten op kubueniveau gedefinieerd. A **[!UICONTROL Workflow]** is beschikbaar wanneer het vormen van een aggregaat.
 
-Raadpleeg voor meer informatie over kubussen en het gebruik van aggregaten in Adobe Campaign de betreffende [sectie](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+Samengevoegde gegevens zijn handig wanneer u grote hoeveelheden gegevens bewerkt. Ze worden automatisch bijgewerkt op basis van de instellingen die in het specifieke werkstroomvak zijn gedefinieerd, zodat de gegevens die het laatst zijn verzameld, worden geïntegreerd in de indicatoren
+
+De aggregaten worden bepaald in het relevante lusje van elke kubus.
+
+![](assets/s_advuser_cube_agregate_01.png)
+
 
 De **[!UICONTROL Update aggregate]** Met activiteit kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
 

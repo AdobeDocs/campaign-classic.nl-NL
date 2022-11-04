@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: '"Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"'
-description: '"Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"'
+title: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
+description: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -65,7 +65,7 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
 ## Stap 2 - De kubus, de maatregelen en de indicatoren ervan maken {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Voor meer bij het creëren van en het vormen van kubussen, verwijs naar [Kubussen](../../reporting/using/about-cubes.md).
+U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Voor meer bij het creëren van en het vormen van kubussen, verwijs naar [Kubussen](../../reporting/using/ac-cubes.md).
 
 In dit voorbeeld is de kubus gebaseerd op de gegevens in de lijst die worden gevoed door de eerder gemaakte workflow.
 

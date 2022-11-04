@@ -3,7 +3,7 @@ product: campaign
 title: Ingebouwde Campaign Classic-pakketten installeren
 description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 5%
@@ -145,7 +145,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Marketing Analytics<br /> </td> 
-   <td> Hiermee kunt u gegevens analyseren en meten, statistieken berekenen, het maken en berekenen van rapporten vereenvoudigen en optimaliseren. U kunt ook rapporten maken en doelpopulaties maken. Optioneel. <a href="../../reporting/using/about-cubes.md">Meer informatie</a><br /> </td> 
+   <td> Hiermee kunt u gegevens analyseren en meten, statistieken berekenen, het maken en berekenen van rapporten vereenvoudigen en optimaliseren. U kunt ook rapporten maken en doelpopulaties maken. Optioneel. <a href="../../reporting/using/ac-cubes.md">Meer informatie</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

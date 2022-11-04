@@ -4,7 +4,7 @@ title: Algemene rapporten
 description: Algemene rapporten
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 4%
@@ -125,7 +125,7 @@ U kunt elke regel van de waardetabel openen door op de knop [+] symbool. Voor el
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/about-cubes.md) voor meer informatie. De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/ac-cubes.md) voor meer informatie. De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
 
 ## Browsers {#browsers}
 

@@ -3,8 +3,10 @@ product: campaign
 title: Kubussen gebruiken om data gegevens te verkennen
 description: Kubussen gebruiken om data gegevens te verkennen
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -23,7 +25,7 @@ Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de d
 
 >[!NOTE]
 >
->Marketing Analytics is nodig om kubussen te maken of te wijzigen. Raadpleeg voor meer informatie hierover [Kubussen](../../reporting/using/about-cubes.md).
+>Marketing Analytics is nodig om kubussen te maken of te wijzigen. Raadpleeg voor meer informatie hierover [Kubussen](../../reporting/using/ac-cubes.md).
 
 ## De gegevens in een rapport verkennen {#exploring-the-data-in-a-report}
 
