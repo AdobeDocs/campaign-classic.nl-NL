@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
 workflow-type: tm+mt
-source-wordcount: '2588'
+source-wordcount: '2570'
 ht-degree: 100%
 
 ---
@@ -315,11 +315,6 @@ ht-degree: 100%
       + [Toegang tot het rapport configureren](reporting/using/configuring-access-to-the-report.md)
       + [Acties voor rapporten](reporting/using/actions-on-reports.md)
    + [Rapporten met kubussen ontwerpen](reporting/using/ac-cubes.md)
-   + Rapporten met kubussen ontwerpen {#designing-reports-with-cubes}
-      + [Aan de slag met kubussen](reporting/using/about-cubes.md)
-      + [Indicatoren maken](reporting/using/creating-indicators.md)
-      + [Kubussen gebruiken om data gegevens te verkennen](reporting/using/using-cubes-to-explore-data.md)
-      + [Concepten en methodologie](reporting/using/concepts-and-methodology.md)
 + Webcontent ontwerpen {#designing-content}
    + Webapplicaties {#web-applications}
       + [Aan de slag met webapplicaties](web/using/about-web-applications.md)

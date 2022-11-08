@@ -3,9 +3,9 @@ product: campaign
 title: Privacy-beveiliging per post in Apple Mail-app
 description: Meer informatie over de gevolgen van de functie Apple Mail Privacy Protection voor campagnes
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ In 2021 introduceerde Apple nieuwe mogelijkheden voor privacybescherming voor hu
 
 ## Hoe worden mijn campagnes beïnvloed?
 
-Adobe Campaign biedt mogelijkheden om trackingpixels te gebruiken om het openen van e-mail te volgen. U kunt deze mogelijkheid niet alleen gebruiken voor doelframes en campagnes, maar ook voor meetgegevens. U kunt bijvoorbeeld de e-mailsnelheid gebruiken om de doeltreffendheid van de campagne en de betrokkenheid van de gebruiker te meten. Kortom, de segmentatie, het richten, en de metriek zouden in uw campagnes kunnen worden beïnvloed. [Meer informatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+Adobe Campaign biedt mogelijkheden om trackingpixels te gebruiken om het openen van e-mail te volgen. U kunt deze mogelijkheid niet alleen gebruiken voor doelframes en campagnes, maar ook voor meetgegevens. U kunt bijvoorbeeld de e-mailsnelheid gebruiken om de doeltreffendheid van de campagne en de betrokkenheid van de gebruiker te meten. Kortom, de segmentatie, het richten, en de metriek zouden in uw campagnes kunnen worden beïnvloed.
 
 ## Welke maatregelen moet ik nemen?
 
@@ -450,7 +450,3 @@ In deze voorbeelden ziet u hoe u workflows kunt gebruiken om records op iOS-appa
    Dit type workflow is handig als u ontvangers opslaat in een andere tabel dan de tabel met out-of-the-box ontvangers.
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## Nuttige koppelingen
-
-[Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
