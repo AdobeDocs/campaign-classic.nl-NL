@@ -4,7 +4,7 @@ title: Privacy
 description: Meer informatie over de beste praktijken voor privacy
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -77,7 +77,7 @@ Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert 
 
 Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
-1. Wijzig in het configuratiebestand van de server (serverConf.xml) de waarde **signEmailLinks** tot **false**.
+1. Wijzig in het configuratiebestand van de server (serverConf.xml) de waarde **signEmailLinks** tot **true**.
 1. Start de **nlserver** service.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
