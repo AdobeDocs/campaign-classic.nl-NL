@@ -4,7 +4,7 @@ title: Gepersonaliseerde coupons
 description: Leer hoe u gepersonaliseerde coupons maakt en invoegt
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Gepersonaliseerde coupons{#personalized-coupons}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde krijgen voor producten en services. Met de module Campagne-coupon kunt u een set coupons maken die u naar verwachting aan toekomstige marketingaanbiedingen wilt toevoegen. Als u klaar bent om een levering te maken, wijst u de toepasselijke coupons toe. Aangezien coupons geldig zijn voor een bepaalde periode, wordt een toegewezen coupon op unieke wijze gekoppeld aan het bijbehorende leveringsbericht. Bovendien bevestigt Campaign dat er voldoende coupons zijn voor het aantal berichten voordat de levering wordt verzonden.
 

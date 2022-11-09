@@ -4,7 +4,7 @@ title: Een enquête voor een vriend maken
 description: Meer informatie over het maken van een formulier voor een vriend
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gebruiksscenario: een referralformulier maken{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 In dit voorbeeld willen we een wedstrijd aanbieden aan de ontvangers in de database. Het webformulier bevat een sectie waarin u antwoorden kunt invoeren en een andere sectie waarin u een vriend kunt verwijzen door zijn e-mailadres in te voeren.
 
