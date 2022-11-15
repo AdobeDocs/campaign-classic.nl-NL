@@ -3,10 +3,10 @@ product: campaign
 title: Privacy-beveiliging per post in Apple Mail-app
 description: Meer informatie over de gevolgen van de functie Apple Mail Privacy Protection voor campagnes
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 1%
+source-wordcount: '2056'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Wat is er veranderd?
 
-In 2021 introduceerde Apple nieuwe mogelijkheden voor privacybescherming voor hun native Mail-app. Deze app bevat nu de functie Apple Mail Privacy Protection. Afzenders kunnen de functie voor het bijhouden van pixels niet meer gebruiken om informatie te verzamelen over ontvangers die ervoor hebben gekozen de functie voor de bescherming van e-mails van Apple in te schakelen. [Meer informatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl){target=&quot;_blank&quot;}.
+In 2021 introduceerde Apple nieuwe mogelijkheden voor privacybescherming voor hun native Mail-app. Deze app bevat nu de functie Apple Mail Privacy Protection. Afzenders kunnen de functie voor het bijhouden van pixels niet meer gebruiken om informatie te verzamelen over ontvangers die ervoor hebben gekozen de functie voor de bescherming van e-mails van Apple in te schakelen.
 
 ## Hoe worden mijn campagnes beïnvloed?
 
