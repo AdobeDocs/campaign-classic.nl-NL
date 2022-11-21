@@ -4,14 +4,14 @@ title: TechNote - Adobe Campaign-systeemupgrades
 description: Adobe Campaign-systeemupgrade
 hide: true
 hidefromtoc: true
-source-git-commit: 6fc11ea75863abe86e81c4978843e8487cbd83a0
+source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
 
 ---
 
-# Adobe Campaign 2023-systeemupgrade {#ac-system-upgrade}
+# Adobe Campaign 2023-omgevingsupgrades {#ac-system-upgrade}
 
 De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig met de meest recente versies en correcties moeten worden bijgewerkt. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast is een Campagne-upgrade vereist om compatibiliteit met systeemwijzigingen van derden te garanderen.
 
