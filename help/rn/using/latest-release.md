@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
+source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '2654'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,67 @@ ht-degree: 100%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/limited_2.png) Release 7.3.1 - build 9352 {#release-7-3-1}
+## ![](assets/do-not-localize/green_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
+
+_21 november 2022_
+
+**Compatibiliteitsupdates**
+
+* Na het einde van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor dashboards in de clientconsole nu Edge Chromium. (NEO-20741)
+
+<!--
+**Deprecated features**
+
+* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
+
+* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
+
+Learn more in the [Deprecated and removed features page](deprecated-features.md).
+
+-->
+
+**Verbeteringen**
+
+* De Google BigQuery-aansluiting biedt nu volledige ondersteuning voor Booleaanse velden. (NEO-49181)
+* U kunt nu de geldigheidsperiode van de IMS-cookies configureren in de `Configuration for the redirection service` van het bestand serverConf.xml. Dit geldt voor de volgende cookies: `uuid230`, `nllastdelid` en `AMCV_` (NEO-42541)
+* IP kan nu in het &quot;/r/test&quot;verzoek worden verborgen door te plaatsen `showSourceIP` naar false in het knooppunt redirection van het bestand serverConf.xml. [Meer informatie](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Andere wijzigingen**
+
+* Weblogboeken zijn verbeterd: De waarschuwingen van opening van een sessieEscalation worden nu slechts getoond voor gebruikers met admin voorrechten. (NEO-47167)
+* Om fouten te voorkomen, **Gegevens verzamelen voor workflow van Heatmap-service** (collectDataHeatMapService) wordt nu standaard gestopt. (NEO-33959)
+* Er zijn verschillende verbeteringen doorgevoerd om het CPU-gebruik voor het campagnesdashboard te optimaliseren. (NEO-46417)
+* Om vastlopen te voorkomen, is de loadLibraryDebug JS-methode verwijderd. (NEO-46968)
+* De resterende verwijzingen naar de bibliotheek log4j zijn verwijderd uit de installatie van de Campagne in Vensters. (NEO-44851)
+
+**Patches**
+
+* Probleem verholpen waarbij het gebruik van de **Geselecteerde lijnen samenvoegen** workflowoptie. (NEO-48488)
+* Het probleem dat de **Succes** De leveringsindicator wordt correct bijgewerkt bij gebruik van Adobe Campaign Enhanced MTA. (NEO-50462)
+* Probleem verholpen waarbij goedkeuring van inhoud opnieuw werd ingesteld in een e-maillevering. Hierdoor kon u het probleem niet opnieuw goedkeuren. (NEO-44259)
+* Het probleem dat de **Afleveringsgoedkeuring** weergegeven. (NEO-47547)
+* Oplossing voor een prestatieprobleem op het tabblad HTML van een levering dat zich zou kunnen voordoen voor code met een grote HTML. (NEO-47440)
+* Oplossing voor een probleem dat invloed had op de statusupdates van het leveringslogboek voor de MID-instantie toen de optie FeatureFlag_GZIP_Compression was ingeschakeld. (NEO-49183)
+* Probleem verholpen waardoor u geen berichten voor mobiele apps van iOS kunt verzenden van een uitvoeringsinstantie tijdens het gebruik van tokenverificatie. (NEO-45961)
+* Probleem verholpen met de **Vernieuwen voor leverbaarheid** werkstroom (DeliabilityUpdate) die vastliep toen het hebben van teveel uitzendingen aan synchronisatie. (NEO-48287)
+* Probleem verholpen met het gebeurtenistype dat de synchronisatieworkflow van het Message Center (mcSynch) blokkeerde.
+* Probleem verholpen dat tot een fout kon leiden bij het toevoegen van de **Ontvangers die zijn geopend** indicator (estiméRecipientOpen) in de aanvullende gegevens van een **Query** workflowactiviteit. (NEO-46665)
+* Probleem verholpen met de **Facturering** werkstroom die mislukte toen het hebben van de pakketten van de Controle en van de Uitvoering van het Centrum van het Bericht op de zelfde instantie werd geïnstalleerd. (NEO-47674)
+* Probleem verholpen met de **Facturering** workflow die mislukte wanneer tabellen met de primaire sleutel als een tekenreeks in plaats van als een geheel getal werden gedefinieerd. (NEO-46254)
+* Probleem verholpen met heatmap-filters als de naam van de workflow te lang was. (NEO-46301)
+* Probleem opgelost dat in 7.3.1 op de Snowflake FDA-aansluiting werd geïntroduceerd en dat ertoe leidde dat records werden weggelaten wanneer tijdens het verrijken &quot;0 of 1 cardinaliteit simple join&quot; werd gebruikt. (NEO-48737)
+* Probleem verholpen met Snowflake FFDA bij gebruik van de sorteerparameter in een **Splitsen** workflowactiviteit. (NEO-45899)
+* Probleem verholpen waardoor u de configuratie van externe accounts niet kunt opslaan. Het externe account wordt nu automatisch opgeslagen na de verbindingstest voor connectors met parseringsmogelijkheden (Snowflake en Google BigQuery). (NEO-47636)
+* Probleem verholpen waardoor u geen datatype Tijd kon invoegen in een **Gegevensupdate** workflowactiviteit op MSSQL. (NEO-47763)
+* Probleem verholpen die ertoe leidde dat het MTA-proces vastliep wanneer de tijdzone van de engine niet was ingesteld (specifiek voor MSSQL). (NEO-46619)
+* Probleem verholpen met het importeren van HTML-bestanden wanneer afbeeldingsknooppunten (img) URL&#39;s bevatten met aanpassingsvelden. (NEO-48396)
+* Probleem verholpen waarbij een HTTP 500-fout werd verholpen bij een poging verbinding te maken met een instantie waarbij de `limit` knooppunt niet geconfigureerd in het bestand serverConf.xml.
+* Probleem verholpen waarbij een fout met een tekenset kon optreden bij het gebruik van bepaalde functies, zoals `to_nclob` met een Oracle unicode-database waarbij NChar niet is ingeschakeld. (NEO-49361)
+* Probleem verholpen dat tot een fout leidde wanneer een gebruiker met leestoegangsrechten in de map nmsDeliveryMapping een campagne of workflow probeerde uit te voeren. (NEO-48230)
+* Het probleem dat de `JSPContext.sqlExecWithOneParam` van het werken. (NEO-50066)
+* Correctie van verschillende omleidingsfouten. (NEO-50030)
+
+## ![](assets/do-not-localize/orange_2.png) Release 7.3.1 - build 9352 {#release-7-3-1}
 
 _1 juli 2022_
 

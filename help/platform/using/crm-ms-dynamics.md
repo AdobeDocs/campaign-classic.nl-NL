@@ -4,10 +4,10 @@ title: Campagne - Microsoft Dynamics CRM Connector
 description: Leer hoe u Campagne en Microsoft Dynamics kunt verbinden
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -216,3 +216,4 @@ Voor Microsoft Dynamics 365 worden de ondersteunde/niet-ondersteunde kenmerktype
 | Betreffende | Nee |
 | PartyList | Nee |
 | ManagedProperty | Nee |
+| MultiSelect Option-set | Nee |

@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-In dit document worden de voorwaarden voor een migratie beschreven, de stappen voor een migratie naar Adobe Campaign Classic v7. De stappen en de facultatieve montages hangen van uw configuratie af. [Meer informatie](../../migration/using/general-configurations.md).
+In dit document worden de voorwaarden voor een migratie beschreven, de stappen voor een migratie naar Adobe Campaign Classic v7. De stappen en de facultatieve montages hangen van uw configuratie af.
 
 Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u aan contact op te nemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat een migratieprocedure wordt gestart.
 
@@ -35,7 +35,7 @@ De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorg
 * Als u Adobe Campaign Cloud Messaging (mid-sourcing implementatie) gebruikt, neemt u contact op met de klantenservice van de Adobe voordat u begint.
 * Voordat u een migratieproces start, **moet** Maak een back-up van uw gegevens.
 * Het migratieproces kan enkele dagen duren.
-* Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en de gegevensintegriteit in de database te behouden . Als gevolg daarvan worden bepaalde functies die in v5.11 en v6.02 worden aangeboden, mogelijk niet langer ondersteund in v7 en moeten deze na migratie worden aangepast. Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
+* Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en de gegevensintegriteit in de database te behouden . Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
 
 Meer voorwaarden zijn beschikbaar in [deze pagina](../../migration/using/before-starting-migration.md).
 

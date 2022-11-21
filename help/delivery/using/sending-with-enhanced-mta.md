@@ -4,9 +4,9 @@ title: S met de verbeterde MTA in Adobe Campaign Classic
 description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1999'
 ht-degree: 3%
 
 ---
@@ -37,9 +37,9 @@ De verbeterde implementatie MTA kan enkele bestaande functionaliteit van de Camp
 
 **Wat is de verbeterde MTA?**
 
-Adobe Campaign kan nu worden bevorderd om een nieuwe MTA (de Agent van de Overdracht van de Post) te gebruiken die commerciële e-mail MTA van SparkPost genoemd in werking stelt **Momentum**.
+Adobe Campaign kan nu worden geüpgraded om een nieuwe MTA (Mail Transfer Agent) te gebruiken die de commerciële e-mail MTA van SparkPost met de naam **Momentum**.
 
-Momentum vertegenwoordigt innovatieve, krachtige MTA-technologie, die slimmere stuiterende behandeling en een geautomatiseerde optimaliseringscapaciteit van de leverbaarheid omvat die afzenders helpt optimale inbusleversnelheden te bereiken en te handhaven. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+Momentum vertegenwoordigt innovatieve, krachtige MTA-technologie, die slimmere stuiterende behandeling en een geautomatiseerde optimaliseringscapaciteit van de leverbaarheid omvat die afzenders helpt optimale inbusleversnelheden te bereiken en te handhaven. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
 **Wat zijn de voordelen?**
 
@@ -59,7 +59,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 * If you are new to Adobe Campaign Classic, you are already using the Enhanced MTA.
 
-* For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
+* For Adobe Campaign Classic existing customers, we've implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you're not already using it, we'll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
 ### Verbetering van de verbeterde MTA
@@ -141,6 +141,12 @@ Voor meer op de leveringsproductie, zie [deze sectie](../../reporting/using/glob
 >
 >Met de [E-mailfeedbackservice](#email-feedback-service) (EFS) capaciteit (momenteel beschikbaar als bèta), toont de grafiek van de productie van de Levering van de Campagne nog de productie aan uw e-mailontvangers.
 
+### Hernieuwde pogingen
+
+De instellingen voor Opnieuw proberen in de levering worden niet meer gebruikt door de campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+
+Voor meer informatie over pogingen raadpleegt u [deze sectie](steps-sending-the-delivery.md#configuring-retries).
+
 ### Geldigheidsperiode
 
 De geldigheidsperiode die in uw campagneleveringen wordt ingesteld, wordt alleen door de verbeterde MTA gebruikt als deze is ingesteld op **3,5 dagen of minder**. Als u in Campagne een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
@@ -182,7 +188,7 @@ Met de e-mailfeedbackservice (EFS) wordt de status van elke e-mail correct gerap
 >
 >De e-mailfeedbackservice is momenteel beschikbaar als bètafunctie.
 >
->Vul het veld in als u geïnteresseerd bent in deelname aan dit bètaprogramma. [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) en wij zullen aan u terugkomen.
+>Vul het veld in als u geïnteresseerd bent in deelname aan dit bètaprogramma. [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) en we komen terug bij je .
 
 Wanneer de levering is gestart, is er geen wijziging in de **[!UICONTROL Success]** percentage wanneer het bericht met succes van Campagne aan Verbeterde MTA wordt afgelost.
 

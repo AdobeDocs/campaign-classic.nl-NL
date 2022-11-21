@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
+source-wordcount: '3140'
 ht-degree: 1%
 
 ---
@@ -78,10 +78,10 @@ Deze parameters kunnen in leveringsmalplaatjes, en individueel voor elke leverin
 
 Geef de volgende parameters op:
 
-* **[!UICONTROL Sender name]** : Naam van de verzender
-* **[!UICONTROL Sender address]** : het adres van de verzender,
-* **[!UICONTROL Reply address text]** : De naam, die aanpasbaar is, die zal worden gebruikt wanneer de ontvanger klikt **[!UICONTROL Reply]** in hun e-mailclientsoftware,
-* **[!UICONTROL Reply address]** : Het e-mailadres dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware,
+* **[!UICONTROL Sender name]** : Naam van de afzender
+* **[!UICONTROL Sender address]** : Adres van de afzender
+* **[!UICONTROL Reply address text]** : De naam, die aanpasbaar is, die zal worden gebruikt wanneer de ontvanger klikt **[!UICONTROL Reply]** in hun e-mailclientsoftware
+* **[!UICONTROL Reply address]** : Het e-mailadres dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware
 * **[!UICONTROL Error address]** : E-mailadres van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen.
 
 Daarnaast kunt u de opdracht **maskers** geoorloofd voor het afzenderadres en het foutenadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
@@ -106,14 +106,22 @@ In dit venster kunt u voor alle e-mailcampagnes de opties voor levering en behee
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen),
-* **[!UICONTROL Online resources validity duration]** : Tijdstip waarop informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te genereren;
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt bij lijsten van gewezen personen geen contact opgenomen met de ontvangers van de 
+* **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen).
+* **[!UICONTROL Online resources validity duration]** : Tijd waarvoor informatie van het ontvankelijke profiel wordt gehouden om spiegelpagina&#39;s te produceren.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt geen contact opgenomen met de ontvangers van de lijst van gewezen personen.
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
+
+>[!NOTE]
+>
+>Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)de **[!UICONTROL Delivery duration of the messages]** wordt alleen gebruikt als ingesteld op **3,5 dagen of minder**. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 
 ### Parameters opnieuw proberen {#retry-parameters}
 
 De informatie over terugvorderingen is te vinden in het **Herstelperioden** en **Aantal terugvorderingen** velden: wanneer een ontvanger onbereikbaar is, bijvoorbeeld als hun inbox volledig is, door gebrek zal het programma proberen contacterend hen vijf keer, met een interval van één uur tussen elke poging (tijdens de maximumleveringstijd). U kunt deze waarden naar wens wijzigen.
+
+>[!NOTE]
+>
+>Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), worden de parameters voor het opnieuw proberen van de campagne niet meer gebruikt. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
 ### Quarantaine-parameters {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ Als de POP-instellingen zijn opgegeven, klikt u op **Testen** om ervoor te zorge
 
 ### Onverwerkte stuitberichten {#unprocessed-bounce-mails}
 
-Bounces worden automatisch afgehandeld door Adobe Campaign, waarbij de regels worden toegepast die in de **Beheer > Campagnebeheer > Beheer van niet-te leveren items > Kwalificatie van leveringslogboek** knooppunt. Raadpleeg voor meer informatie hierover [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Bounces worden automatisch afgehandeld door Adobe Campaign, waarbij de regels worden toegepast die in de **Beheer > Campaign Management > Beheer van niet-te leveren items > Kwalificatie van leveringslogboek** knooppunt. Raadpleeg voor meer informatie hierover [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
 

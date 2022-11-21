@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
@@ -124,7 +124,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. Zie <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Anders moet u controleren of het waardetype correct is.<br /> </td> 
+   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> aanmelden(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Deze verbindingsmethode mag niet meer worden gebruikt. Zie <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Geïdentificeerde webtoepassingen</a>.<br /> </td> 
+   <td> Deze verbindingsmethode mag niet meer worden gebruikt.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall()<br /> </td> 
@@ -148,14 +148,8 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Dit type fout leidt tot een migratiefout.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Als u foutlogbestanden voor webtoepassingen met een overzichtstype krijgt (migratie vanuit v6.02), raadpleegt u <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Campagne configureren</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 

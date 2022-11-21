@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ Als u de mogelijke indelingen wilt beperken, vervangt u de kenmerkwaarde door ee
 Bijvoorbeeld: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** Hiermee kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
 U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van het Web te vormen. [Meer informatie](web-server-configuration.md)
+
+>[!NOTE]
+>
+>De **uploadWhiteList** -kenmerk beperkt de bestandstypen die beschikbaar zijn voor uploaden op de Adobe Campaign-server. Wanneer de publicatiemodus echter **Volgserver(s)** of **Andere Adobe Campaign-server(s)** de **uploadWhitelist** kenmerken moeten ook op die servers worden bijgewerkt.
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 

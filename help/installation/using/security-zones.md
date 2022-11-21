@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
-De exploitanten worden verbonden met een veiligheidsstreek van zijn profiel in de console, die in **[!UICONTROL Administration > Access management > Operators]** knooppunt. [Meer info](#linking-a-security-zone-to-an-operator).
+De exploitanten worden verbonden met een veiligheidsstreek van zijn profiel in de console, die in **[!UICONTROL Administration > Access management > Operators]** knooppunt. [Meer informatie](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
@@ -236,13 +236,25 @@ Zodra de zones zijn gedefinieerd en de **[!UICONTROL Security zone]** de opsommi
 
 * Plaats allowDebug aan waar slechts op IPs die door marketing gebruikers/beheerders wordt gebruikt die (in feite voorproef) onderzoeken, webApps en rapporten moeten tot stand brengen. Deze vlag staat deze IPs toe om relaisregels te krijgen die worden getoond en hen te zuiveren.
 
+   * Wanneer allowDebug is ingesteld op false, wordt de uitvoer als volgt ingesteld:
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * Wanneer allowDebug op true is ingesteld, wordt de uitvoer als volgt uitgevoerd:
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
 
    * **allowEmptyPassword** Laat exploitanten een leeg wachtwoord hebben. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
 
    * **allowUserPassword** Laat exploitanten hun geloofsbrieven als parameters verzenden (zodat zullen zij door apache/IIS/proxy worden geregistreerd). Deze functie is in het verleden gebruikt om het gebruik van de API te vereenvoudigen. U kunt in uw kookboek (of in de specificatie) controleren of sommige derdetoepassingen dit gebruiken. Als dat het geval is, moet u de gebruiker een melding sturen om de manier waarop hij of zij de API gebruikt te wijzigen en deze functie zo snel mogelijk verwijderen.
 
-   * **allowSQLInjection** Hiermee kan de gebruiker SQL-injecties uitvoeren met een oude syntaxis. Voer zo spoedig mogelijk de in [deze pagina](../../migration/using/general-configurations.md) om deze eigenschap aan vals te kunnen plaatsen. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
+   * **allowSQLInjection** Hiermee kan de gebruiker SQL-injecties uitvoeren met een oude syntaxis. Dit kenmerk moet op false worden ingesteld. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
 
 * HttpOnly cookie/useSecurityToken: verwijzen naar **sessionTokenOnly** markering.
 

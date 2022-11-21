@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '7957'
+source-wordcount: '7979'
 ht-degree: 5%
 
 ---
@@ -3319,6 +3319,12 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
    <td> Maximum aantal taken: maximumaantal leveringsacties in cache. Mag niet lager zijn dan 50. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> showSourceIP<br /> </td> 
+   <td> Wanneer ingesteld op false, is de waarde van sourceIP in de reactie die wordt geretourneerd door r/test een lege tekenreeks. <br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirection<br /> </td> 
