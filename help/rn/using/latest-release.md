@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
+source-git-commit: d592902157b499423283307402eb74452d4827bc
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,6 @@ _21 november 2022_
 **Afgeschafte functies**
 
 * Sociale marketing met Facebook is nu afgekeurd. U kunt Twitter-integratie gebruiken om sociale media te plaatsen of met Adobe te werken om een aangepast kanaal te maken.
-
 * ACS Connector (prime-aanbieding) is nu afgekeurd. U kunt de uitvoer/de invoermogelijkheden van de Campagne gebruiken om gegevens in beide producten te halen en te injecteren.
 
 Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](deprecated-features.md).
