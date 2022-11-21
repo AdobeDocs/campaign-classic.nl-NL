@@ -4,16 +4,16 @@ title: TechNote - Adobe Campaign-systeemupgrades
 description: Adobe Campaign-systeemupgrade
 hide: true
 hidefromtoc: true
-source-git-commit: b119d52b94d95086261fcdc1744698a78296df9c
+source-git-commit: 6fc11ea75863abe86e81c4978843e8487cbd83a0
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 9%
+source-wordcount: '502'
+ht-degree: 8%
 
 ---
 
 # Adobe Campaign 2023-systeemupgrade {#ac-system-upgrade}
 
-De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig moeten worden bijgewerkt met de systeemversies en -oplossingen. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast zijn upgrades vereist om deze uit te lijnen met systeemwijzigingen van derden.
+De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig met de meest recente versies en correcties moeten worden bijgewerkt. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast is een Campagne-upgrade vereist om compatibiliteit met systeemwijzigingen van derden te garanderen.
 
 Als **Ontvangen of Beheerde klant van Cloud Services** Adobe informeert u over deze upgrades wanneer deze nodig zijn. U moet uw omgevingen upgraden in overeenstemming met de aanbevelingen om naleving te garanderen.
 
@@ -23,7 +23,7 @@ Om veiligheidsredenen moet u [De nieuwste build voor campagne installeren](#ac-u
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md).
 
 ## Verbetering van campagne-build {#ac-upgrade}
 
@@ -60,12 +60,12 @@ Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovat
 
 * Als ontvangen of Beheerde klant van Cloud Services, zal Adobe u contacteren en uw gegevensbestandsysteem van PostgreSQL 11 aan PostgreSQL 14 bevorderen.
 * Als hybride klant, als uw marketing gegevensbestandsysteem PostgreSQL is, moet u het bevorderen aan PostgreSQL 14.
-* Als klant op locatie wordt u gevraagd uw databasesysteem bij te werken naar PostgreSQL 14. ../integrations/using/configuring-adobe-io.md).
+* Als klant op locatie wordt u gevraagd uw databasesysteem bij te werken naar PostgreSQL 14.
 
 
 ## Nuttige koppelingen
 
 * [Upgrade uw omgeving](../../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
-* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Download de nieuwste Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)
