@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: a2817dabf421281dc0ade3531af62525e045bbee
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 52%
+source-wordcount: '183'
+ht-degree: 60%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 52%
 
 * **[Release juli is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen, en moeilijke situaties in de Nota&#39;s van de Versie
 
-* **[Onjuiste harde grenzen verwijderen](delivery/using/update-bounce-qualification.md)**<br/> Meer informatie over het bijwerken van onjuiste harde grenzen na Apple-storing
-
-* **[Beveilig uw instanties van de Campagne](technotes/using/acc-config-updates.md)**<br/> Update naar de nieuwste builds om uw campagneplatform te beveiligen
+<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
 * **[Adobe Experience Cloud Triggers-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet migreren naar Adobe I/O
 

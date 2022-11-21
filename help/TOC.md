@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 100%
+source-wordcount: '2556'
+ht-degree: 99%
 
 ---
 
@@ -836,7 +836,7 @@ ht-degree: 100%
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Nieuwe bezorgingsserver](technotes/using/deliverability-server.md)
       + [Apache-beveiligingsupgrade](technotes/using/acc-apache-upgrade.md)
-      + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
+      + [2023 systeemupgrades](technotes/using/tech-stack-upgrade.md)
       + [IMS-updates](technotes/using/ims-updates.md)
       + [Ondersteuning voor TLS 1.0 en 1.1 verloopt](technotes/using/eol-tls-support.md)
    + E-mails en pushberichten{#technotes-email}
