@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2709'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](depre
 
 **Andere wijzigingen**
 
-* Weblogboeken zijn verbeterd: De waarschuwingen van opening van een sessieEscalation worden nu slechts getoond voor gebruikers met admin voorrechten. (NEO-47167)
-* Om fouten te voorkomen, **Gegevens verzamelen voor workflow van Heatmap-service** (collectDataHeatMapService) wordt nu standaard gestopt. (NEO-33959)
+* Weblogboeken zijn verbeterd: `logonEscalation` waarschuwingen worden nu alleen weergegeven voor gebruikers met beheerdersrechten. (NEO-47167)
+* Om fouten te voorkomen, **Gegevens verzamelen voor Heatmap-service** (collectDataHeatMapService) workflow wordt nu standaard gestopt. (NEO-33959)
 * Er zijn verschillende verbeteringen doorgevoerd om het CPU-gebruik voor het campagnesdashboard te optimaliseren. (NEO-46417)
 * Om vastlopen te voorkomen, is de loadLibraryDebug JS-methode verwijderd. (NEO-46968)
 * De resterende verwijzingen naar de bibliotheek log4j zijn verwijderd uit de installatie van de Campagne in Vensters. (NEO-44851)
@@ -56,11 +56,11 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](depre
 * Probleem verholpen waarbij goedkeuring van inhoud opnieuw werd ingesteld in een e-maillevering. Hierdoor kon u het probleem niet opnieuw goedkeuren. (NEO-44259)
 * Het probleem dat de **Afleveringsgoedkeuring** weergegeven. (NEO-47547)
 * Oplossing voor een prestatieprobleem op het tabblad HTML van een levering dat zich zou kunnen voordoen voor code met een grote HTML. (NEO-47440)
-* Oplossing voor een probleem dat invloed had op de statusupdates van het leveringslogboek voor de MID-instantie toen de optie FeatureFlag_GZIP_Compression was ingeschakeld. (NEO-49183)
+* Oplossing voor een probleem dat invloed had op de statusupdates van het leveringslogboek voor de MID-instantie, wanneer de `FeatureFlag_GZIP_Compression` is ingeschakeld. (NEO-49183)
 * Probleem verholpen waardoor u geen berichten voor mobiele apps van iOS kunt verzenden van een uitvoeringsinstantie tijdens het gebruik van tokenverificatie. (NEO-45961)
 * Probleem verholpen met de **Vernieuwen voor leverbaarheid** werkstroom (DeliabilityUpdate) die vastliep toen het hebben van teveel uitzendingen aan synchronisatie. (NEO-48287)
-* Probleem verholpen met het gebeurtenistype dat de synchronisatieworkflow van het Message Center (mcSynch) blokkeerde.
-* Probleem verholpen dat tot een fout kon leiden bij het toevoegen van de **Ontvangers die zijn geopend** indicator (estiméRecipientOpen) in de aanvullende gegevens van een **Query** workflowactiviteit. (NEO-46665)
+* Probleem verholpen met het gebeurtenistype dat de **Synchronisatie van Message Center** (mcSynch) workflow.
+* Probleem verholpen dat tot een fout kon leiden bij het toevoegen van de **Ontvangers die zijn geopend**  (estimatedRecipientOpen)-indicator in de aanvullende gegevens van een **Query** workflowactiviteit. (NEO-46665)
 * Probleem verholpen met de **Facturering** werkstroom die mislukte toen het hebben van de pakketten van de Controle en van de Uitvoering van het Centrum van het Bericht op de zelfde instantie werd geïnstalleerd. (NEO-47674)
 * Probleem verholpen met de **Facturering** workflow die mislukte wanneer tabellen met de primaire sleutel als een tekenreeks in plaats van als een geheel getal werden gedefinieerd. (NEO-46254)
 * Probleem verholpen met heatmap-filters als de naam van de workflow te lang was. (NEO-46301)
