@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 7%
+source-wordcount: '1714'
+ht-degree: 8%
 
 ---
 
@@ -117,7 +117,7 @@ De volgende kanalen kunnen worden gevormd:
 * [Telefoon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/configuring-publishing-on-twitter.md)
+* [Twitter](../../social/using/about-social-marketing.md)
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -225,29 +225,6 @@ De instellingen voor externe accountconfiguratie zijn afhankelijk van de databas
 * Toegang configureren tot [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Toegang configureren tot [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Facebook connect {#facebook-connect-external-account}
-
-De **[!UICONTROL Facebook Connect]** Met een externe account kunt u persoonlijke inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
-
-Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type external account. Raadpleeg voor meer informatie hierover [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-![](assets/ext_account_12.png)
-
-* **[!UICONTROL Hosting mode]**
-
-   De hostingmodus van de toepassing tussen **[!UICONTROL hosted by a partner]** of **[!UICONTROL hosted by this instance]**.
-
-* **[!UICONTROL Application ID]**
-
-   Toepassings-id van uw Facebook-toepassing.
-
-* **[!UICONTROL Application secret]**
-
-   Toepassingsgeheim van uw Facebook-toepassing.
-
-Als u de host hebt gekozen voor deze instantiemodus, moet de URL van het beveiligde canvas worden geplakt in de **Facebook Web Games (https)** veld op Facebook
-
-Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar dit [page](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Adobe Oplossing integratie externe accounts
 

@@ -3,9 +3,9 @@ product: campaign
 title: Ingebouwde Campaign Classic-pakketten installeren
 description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1253'
 ht-degree: 5%
 
 ---
@@ -229,8 +229,8 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Alles </td> 
   </tr> 
   <tr> 
-   <td> ACS Connector<br /> </td> 
-   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Optioneel. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Meer informatie</a> <br /> </td> 
+   <td> ACS Connector (afgekeurd)<br /> </td> 
+   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Optioneel.<br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 

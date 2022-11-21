@@ -4,9 +4,9 @@ title: Cross-channel leveringen
 description: Meer informatie over leveringen via meerdere kanalen
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '283'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ De verschillende beschikbare kanalen zijn:
 * [Email](../../delivery/using/about-email-channel.md)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Mobiel](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md) (alleen Campaign Classic v7)
+* [Twitter](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 

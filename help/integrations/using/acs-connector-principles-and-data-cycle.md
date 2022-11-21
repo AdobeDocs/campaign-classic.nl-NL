@@ -3,8 +3,10 @@ product: campaign
 title: Aan de slag met ACS-connector
 description: ACS-verbindingsbeginselen en gegevenscyclus
 feature: ACS Connector
+hide: true
+hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 0%
@@ -44,7 +46,7 @@ Dit document stelt de mogelijkheden ACS-Connector voor. In de volgende secties v
 
 ## Proces {#process}
 
-### Datareplicatie {#data-replication}
+### Gegevensreplicatie {#data-replication}
 
 ![](assets/acs_connect_flows_01.png)
 

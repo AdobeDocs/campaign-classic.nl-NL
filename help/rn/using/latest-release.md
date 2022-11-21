@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
+source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 77%
+source-wordcount: '2713'
+ht-degree: 75%
 
 ---
 
@@ -27,22 +27,19 @@ _21 november 2022_
 
 * Na het einde van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor dashboards in de clientconsole nu Edge Chromium. (NEO-20741)
 
-<!--
-**Deprecated features**
-
-* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
-
-* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
-
-Learn more in the [Deprecated and removed features page](deprecated-features.md).
-
--->
-
 **Verbeteringen**
 
 * De Google BigQuery-aansluiting biedt nu volledige ondersteuning voor Booleaanse velden. (NEO-49181)
 * U kunt nu de geldigheidsperiode van de IMS-cookies configureren in de `Configuration for the redirection service` van het bestand serverConf.xml. Dit geldt voor de volgende cookies: `uuid230`, `nllastdelid` en `AMCV_` (NEO-42541)
 * IP kan nu in het &quot;/r/test&quot;verzoek worden verborgen door te plaatsen `showSourceIP` naar false in het knooppunt redirection van het bestand serverConf.xml. [Meer informatie](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Afgeschafte functies**
+
+* Sociale marketing met Facebook is nu afgekeurd. U kunt Twitter-integratie gebruiken om sociale media te plaatsen of met Adobe te werken om een aangepast kanaal te maken.
+
+* ACS Connector (prime-aanbieding) is nu afgekeurd. U kunt de uitvoer/de invoermogelijkheden van de Campagne gebruiken om gegevens in beide producten te halen en te injecteren.
+
+Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](deprecated-features.md).
 
 **Andere wijzigingen**
 

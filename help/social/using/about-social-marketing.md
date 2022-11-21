@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Social marketing
-description: Leer hoe u via Campagne communiceert met klanten via Facebook en Twitter
+description: Leer hoe u campagne kunt gebruiken om via Twitter te communiceren met klanten
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 4%
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
@@ -17,14 +17,10 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-De **Sociale netwerken beheren** (Sociale marketing) toepassing die voor het beheren van sociale netwerken wordt ontworpen laat u met klanten en vooruitzichten via Facebook en Twitter interactie aangaan.
+De **Sociale netwerken beheren** (Sociale marketing) toepassing die voor het beheren van sociale netwerken wordt ontworpen laat u met klanten en vooruitzichten via Twitter interactie aangaan.
 
-**Het verkrijgen van nieuwe contacten**
+Meer informatie over de belangrijkste stappen om Campagne en Twitter te integreren in [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
 
-Met Adobe Campaign Social Marketing kunt u eenvoudig nieuwe contactpersonen aanschaffen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het accepteren, herstelt Adobe Campaign automatisch de gegevens, waarmee u doelgerichte campagnes kunt voeren en waar mogelijk kanaalstrategieën kunt implementeren.
+Als klant op locatie of hybride, moet uw Twitter External-account zijn geconfigureerd en ingeschakeld. Voor hybride configuraties: **Midden-sourcing** moet ook worden ingesteld met een actieve verbinding met het platform voor midsourcing.
 
->[!IMPORTANT]
->
->Facebook en Twitter brengen regelmatig wijzigingen aan in hun schermen en processen. Dit document wordt dienovereenkomstig bijgewerkt.
->
->Adobe Campaign vraagt dat je voldoet aan de servicevoorwaarden van Facebook en Twitter.
+![](assets/tw-external-account.png)

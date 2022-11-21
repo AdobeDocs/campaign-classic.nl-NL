@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2524'
 ht-degree: 99%
 
 ---
@@ -584,16 +584,6 @@ ht-degree: 99%
    + [Gebruiksscenario](message-center/using/transactional-email-with-attachments.md)
 + Integreren met social media {#integrating-with-social-media}
    + [Social marketing](social/using/about-social-marketing.md)
-   + Configuratie {#configuration}
-      + [Workflows starten](social/using/starting-workflows.md)
-      + [Een Facebook-applicatie maken](social/using/creating-a-facebook-application.md)
-      + [Publicatie op Twitter configureren](social/using/configuring-publishing-on-twitter.md)
-   + Publiceren op Twitter {#publishing-on-facebook-twitter}
-      + [Aan de slag met Twitter](social/using/overview.md)
-      + [Publiceren op Twitter](social/using/publishing-on-twitter.md)
-   + Facebook-contacten verwerven {#annexes}
-      + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
-      + [Tracking](social/using/tracking.md)
 + Installatie- en configuratiehandleiding {#installing-campaign-classic}
    + Architectuurprincipes {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
