@@ -4,22 +4,17 @@ title: Privacy
 description: Meer informatie over de beste praktijken voor privacy
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
-# Privacy {#privacy}
+# Personalisatie en privacy {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## Privacyverzoeken
-
-Adobe Campaign biedt een reeks tools om u te helpen de privacyvereisten voor AVG en CCPA na te leven.
-
-Zie [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
 
 ## URL-personalisatie {#url-personalization}
 
@@ -187,3 +182,8 @@ Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
    Naast de **robots.txt** bestand, wordt aangeraden een **X-robots-tag** header. U kunt het in Apache of IIS en in **serverConf.xml** configuratiebestand.
 
    Raadpleeg voor meer informatie [dit artikel](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## Privacyverzoeken
+
+Zie [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
