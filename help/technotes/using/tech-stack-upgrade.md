@@ -4,7 +4,8 @@ title: TechNote - Adobe Campaign-systeemupgrades
 description: Adobe Campaign-systeemupgrade
 hide: true
 hidefromtoc: true
-source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
+exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
+source-git-commit: 1b7b216c22d48159a1590603de220714c1d7cf32
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -29,7 +30,7 @@ Om veiligheidsredenen moet u [De nieuwste build voor campagne installeren](#ac-u
 
 **Heeft dit gevolgen voor u?**
 
-Als de [besturingssysteemupgrade](#os-upgrade) en/of de [upgrade van databasesysteem](#pg-upgrade) hieronder beschreven, moet u uw milieu&#39;s van de Campagne aan de recentste versie 7.3.2 bevorderen, die met deze systemen compatibel is.
+Als de [besturingssysteemupgrade](#os-upgrade) en/of de [upgrade van databasesysteem](#pg-upgrade) hieronder gedetailleerd, moet u uw Campagneomgevingen upgraden naar [de nieuwste versie 7.3.2](../../rn/using/latest-release.m#release-7-3-2), die compatibel is met deze systemen.
 
 **Hoe kan ik bijwerken?**
 
