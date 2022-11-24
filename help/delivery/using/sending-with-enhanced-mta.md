@@ -164,7 +164,7 @@ Voor meer informatie over DKIM raadpleegt u de [Adobe Handleiding voor beste pra
 
 ### Leveringssuccesrapportage
 
-In de **[!UICONTROL Summary]** weergave van een e-maillevering [dashboard](delivery-dashboard.md)de **[!UICONTROL Success]** het percentage begint bij 100% en daalt geleidelijk gedurende de hele levering. [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period), terwijl de zachte en harde grenzen worden gemeld van de Enhanced MTA naar Campaign.
+In de **[!UICONTROL Summary]** weergave van een e-maillevering [dashboard](delivery-dashboard.md)de **[!UICONTROL Success]** het percentage begint bij 100% en daalt vervolgens geleidelijk gedurende de hele levering. [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period), terwijl de zachte en harde grenzen worden gemeld van de Enhanced MTA naar Campaign.
 
 Alle berichten worden zelfs als **[!UICONTROL Sent]** in de [verzenden, logbestanden](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campaign aan de Verbeterde MTA worden opnieuw aangeboden. Zij blijven deze status behouden, tenzij of totdat [stuiten](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campaign.
 
