@@ -5,7 +5,7 @@ description: Adobe Campaign-systeemupgrade
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
+source-git-commit: 7948f6423b80788adf26a53afcd380953c8b8463
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -55,7 +55,7 @@ Als u Campagne op een Debian werkend systeem in werking stelt, om van de recents
 
 **Heeft dit gevolgen voor u?**
 
-Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u bevorderen om **PostgreSQL 14**. Merk op dat PostreSQL 11 op 30 november 2022 het Eind van het Leven zal bereiken.
+Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u bevorderen om **PostgreSQL 14**. Merk op dat PostreSQL 11 eind van het Leven op 9 November 2023 zal bereiken.
 
 **Hoe kan ik bijwerken?**
 
