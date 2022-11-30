@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Details</strong></td>
   </tr>
 <tr>
- <td>Sociale marketing met Facebook</td>
- <td>Sociale marketing met Facebook is nu afgekeurd. U kunt Twitter-integratie gebruiken om sociale media te plaatsen of met Adobe te werken om een aangepast kanaal te maken.
+ <td>Social marketing met Facebook</td>
+ <td>Social marketing met Facebook is nu afgeschaft. U kunt Twitter-integratie gebruiken om te posten op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
  <p></p>
   <p>Verwachte verwijdering: eind 2023</p>
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
- <td>ACS Connector (prime-aanbieding) is nu afgekeurd. U kunt de uitvoer/de invoermogelijkheden van de Campagne gebruiken om gegevens in beide producten te halen en te injecteren.<p></p>
+ <td>ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.<p></p>
   <p>Verwachte verwijdering: eind 2023</p>
   </td>
 </tr>

@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### November 2022 {#nov-2022}
 
-De bijgewerkte sectie van de Nota&#39;s van de Versie met 7.3.2 verbeteringen en flarden. [Meer informatie](latest-release.md)
+Sectie 7.3.2 van de aanvullende informatie is bijgewerkt met verbeteringen en patches. [Meer informatie](latest-release.md)
 
-Bijgewerkte Matrix van de Verenigbaarheid met Teradata 17 steun. [Meer informatie](compatibility-matrix.md)
+Ccompatibiliteitsmatrix is bijgewerkt met Teradata 17-ondersteuning. [Meer informatie](compatibility-matrix.md)
 
-De sectie Bestands- en resourcebeheer is bijgewerkt met aanvullende informatie over de **uploadWhiteList** kenmerk. [Meer informatie](../../installation/using/file-res-management.md)
+De sectie Bestands- en resourcebeheer is bijgewerkt met aanvullende informatie over het kenmerk **uploadWhiteList**. [Meer informatie](../../installation/using/file-res-management.md)
 
-De documentatie over beveiligingszones is bijgewerkt met aanvullende informatie over de **allowDebug** attribuut. [Meer informatie](../../installation/using/security-zones.md#recommendations)
+De documentatie over beveiligingszones is bijgewerkt met aanvullende informatie over het kenmerk **allowDebug**. [Meer informatie](../../installation/using/security-zones.md#recommendations)
 
-De migratiegids is bijgewerkt. Verwijzingen naar niet-ondersteunde Adobe Campaign-versies zijn verwijderd. [Meer informatie](../../migration/using/about-migration.md)
+De migratiegids is bijgewerkt. Verwijzingen naar niet-ondersteunde versies van Adobe Campaign zijn verwijderd. [Meer informatie](../../migration/using/about-migration.md)
 
 
 ### Juli 2022 {#july-2022}
