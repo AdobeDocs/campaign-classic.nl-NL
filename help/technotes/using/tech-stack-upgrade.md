@@ -5,10 +5,10 @@ description: Adobe Campaign-systeemupgrade
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
+source-git-commit: bffad77458ab0b4d40490a52c64c99a0fe882d22
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig 
 
 Als **Ontvangen of Beheerde klant van Cloud Services** Adobe informeert u over deze upgrades wanneer deze nodig zijn. U moet uw omgevingen upgraden in overeenstemming met de aanbevelingen om naleving te garanderen.
 
-Als **Op locatie of hybride klant** Adobe raadt u dan ook ten zeerste aan uw systeem- en campagneversies volgens dezelfde kalender te upgraden.
+Als **Op locatie of hybride klant** Adobe raadt u dan ook ten zeerste aan om uw systeem- en campagneversies volgens dezelfde kalender te upgraden.
 
 Om veiligheidsredenen moet u [De nieuwste build voor campagne installeren](#ac-upgrade)en upgrade vervolgens uw [besturingssysteem](#os-upgrade) en/of uw [Relation Database Management System (RDBMS)](#pg-upgrade).
 
@@ -43,7 +43,7 @@ Als de [besturingssysteemupgrade](#os-upgrade) en/of de [upgrade van databasesys
 
 **Heeft dit gevolgen voor u?**
 
-Als u Campagne op een Debian werkend systeem in werking stelt, om van de recentste beveiligingsupdates van Debian te profiteren, moet u uw infrastructuur van de Campagne verplaatsen naar **Debian 11**. Merk op dat Debian 9 Einde van het Leven op 30 juni 2022 bereikte, en niet meer veiligheidsmoeilijke situaties verstrekt. Adobe biedt beveiligingsondersteuning voor Debian 9 tot 30 juni 2023.
+Als u Campagne op een Debian werkend systeem in werking stelt, om van de recentste beveiligingsupdates van Debian te profiteren, moet u uw infrastructuur van de Campagne verplaatsen naar **Debian 11**. De beveiligingsondersteuning voor Debian 9 is beschikbaar tot 30 juni 2023.
 
 **Hoe kan ik bijwerken?**
 
@@ -55,7 +55,7 @@ Als u Campagne op een Debian werkend systeem in werking stelt, om van de recents
 
 **Heeft dit gevolgen voor u?**
 
-Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u bevorderen om **PostgreSQL 14**. Merk op dat PostreSQL 11 eind van het Leven op 9 November 2023 zal bereiken.
+Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u bevorderen om **PostgreSQL 14**. Merk op dat PostgreSQL 11 eind van het Leven op 9 November 2023 zal bereiken.
 
 **Hoe kan ik bijwerken?**
 
