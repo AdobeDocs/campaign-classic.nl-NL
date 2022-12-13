@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2737'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2771'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,8 @@ _21 november 2022_
 
 **Compatibiliteitsupdates**
 
-* Adobe Campaign is nu compatibel met PostgreSQL 14.
+* Adobe Campaign is nu compatibel met PostgreSQL 14. Raadpleeg deze voor meer informatie [technote](../../technotes/using/tech-stack-upgrade.md).
+
 * Na afloop van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor dashboards in de clientconsole nu Edge Chromium. (NEO-20741)
 
 Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#RDBMSservers).
@@ -108,7 +109,7 @@ _1 juli 2022_
 * Adobe Campaign SDK ondersteunt nu Android 12 en iOS 15 voor pushberichten.
 * Adobe Campaign is nu compatibel met MySQL 8.
 * Adobe Campaign is nu compatibel met Windows 11.
-* Adobe Campaign is nu compatibel met Debian 11.
+* Adobe Campaign is nu compatibel met Debian 11. Raadpleeg deze voor meer informatie [technote](../../technotes/using/tech-stack-upgrade.md).
 
 Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -241,3 +242,4 @@ Adobe Campaign is nu compatibel met Windows Server 2019. Raadpleeg de [Campaign-
 * Er is een probleem opgelost waardoor u geen voorbeeld van e-mailleveringen kon bekijken die aan een workflow waren gekoppeld. (NEO-37840)
 * Er is een probleem opgelost dat ertoe kon leiden dat geldige tabellen met lijstwaarden werden verwijderd door de workflow voor het opschonen van de database. (NEO-34911)
 * Er is een probleem opgelost waardoor de factureringsworkflow kon crashen op marketinginstanties.
+* Probleem verholpen waardoor de levering naar een groter aantal ontvangers kon worden verzonden dan verwacht. (NEO-45108)
