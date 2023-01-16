@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## De integratie van Adobe Analytics Connector {#about-analytics-connector-integration}
 
-Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communiceren via het pakket **[!UICONTROL Web Analytics connectors]**. Het programma stuurt gegevens door naar Adobe Campaign in de vorm van segmenten over gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.
+Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communiceren via het pakket **[!UICONTROL Web Analytics connectors]**. Het stuurt gegevens door naar Adobe Campaign in de vorm van segmenten met betrekking tot gebruikersgedrag na een campagne. Omgekeerd verzendt het programma indicatoren en kenmerken van campagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.
 
 >[!CAUTION]
 >
@@ -34,8 +34,8 @@ De actievelden voor elke tool zijn als volgt:
 
 * De rol van webanalytics:
 
-   1. markeert de e-mailcampagnes die met Adobe Campaign zijn gestart
-   1. slaat het gedrag op dat ontvangers vertonen op de site die ze hebben verkend nadat ze op de campagne-e-mail hebben geklikt, in de vorm van segmenten. Segmenten hebben betrekking op verlaten producten (bekeken, maar niet toegevoegd aan de winkelwagen of gekocht), aankopen of verlaten winkelwagens.
+   1. markeert de campagnes die met Adobe Campaign zijn gestart;
+   1. bespaart ontvankelijk gedrag, op de plaats zij na het klikken van de campagne, in de vorm van segmenten doorbladerde. Segmenten hebben betrekking op verlaten producten (bekeken, maar niet toegevoegd aan de winkelwagen of gekocht), aankopen of verlaten winkelwagens.
 
 * Rol van Adobe Campaign:
 
@@ -98,7 +98,7 @@ U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]
 
    ![](assets/analytics_connnector_5.png)
 
-1. Klik op **[!UICONTROL Add new]** om de id&#39;s te maken die nodig zijn voor het meten van de impact van de e-mailcampagne, dat wil zeggen de interne naam van de campagne (cid) en de tabel-id van de iNmsBroadlog (bid).
+1. Klikken **[!UICONTROL Add new]** om de vereiste id&#39;s te maken voor het meten van de impact van de campagne, d.w.z. de interne naam van de campagne (cid) en de id van de tabel iNmsBroadlog (bid).
 
    Voor informatie over de bewerking van **[!UICONTROL Conversion variables]** raadpleegt u deze [sectie](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=nl#admin-tools).
 
@@ -202,7 +202,7 @@ Raadpleeg voor meer informatie hierover de pagina [Productprofielen voor Adobe A
 
    >[!IMPORTANT]
    >
-   >Deze configuratiemodus is voorbehouden aan ervaren gebruikers: elke fout in deze formule kan ertoe leiden dat e-mailleveringen worden stopgezet.
+   >Deze configuratiewijze is gereserveerd voor deskundige gebruikers: als deze formule een fout bevat, kunnen de leveringen worden gestopt.
 
 1. Met het tabblad **[!UICONTROL Advanced]** kunt u meer technische instellingen configureren of wijzigen.
 
@@ -224,7 +224,7 @@ Ze zijn beschikbaar in de Adobe Campaign-structuur, onder de map **[!UICONTROL A
 * **[!UICONTROL Recovering of web events]**: eenmaal per uur downloadt deze workflow segmenten over het gedrag van gebruikers op een bepaalde site, neemt ze op in de Adobe Campaign-database en start de remarketingworkflow.
 * **[!UICONTROL Event purge]**: met deze workflow kunt u alle gebeurtenissen uit de database verwijderen, afhankelijk van de periode die is geconfigureerd in het veld **[!UICONTROL Lifespan]**. Raadpleeg voor meer informatie hierover [Uw externe account configureren in Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identification of converted contacts]**: directory van de bezoekers die een aankoop hebben gedaan na een remarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het rapport **[!UICONTROL Re-marketing efficiency]**. Raadpleeg deze[pagina](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: hiermee kunt u e-mailcampagne-indicators via Adobe Campaign naar de Adobe Experience Cloud verzenden via Adobe Analytics Connector. Deze workflow wordt elke dag om 04.00 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u campagne-indicatoren via Adobe Campaign naar de Adobe Experience Cloud verzenden via Adobe Analytics Connector. Deze workflow wordt elke dag om 04.00 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
 
    Deze workflow moet niet opnieuw worden gestart, anders worden alle eerdere gegevens opnieuw verzonden, waardoor de resultaten van Analytics kunnen worden scheefgetrokken.
 
