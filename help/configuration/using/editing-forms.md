@@ -3,7 +3,7 @@ product: campaign
 title: Formulieren bewerken
 description: Formulieren bewerken
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -249,7 +249,7 @@ Voer de volgende stappen uit om een formulier te maken:
 
    | Element | Kenmerk | Beschrijving |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | Biedt alleen-lezen toegang tot een veld |
+   | `<input>` | `read-only="true"` | Biedt alleen-lezen toegang tot een veld |
    | `<container>` | `type="visibleGroup" visibleIf="`*bewerken-expr*`"` | Hiermee geeft u een groep velden voorwaardelijk weer |
    | `<container>` | `type="enabledGroup" enabledIf="`*bewerken-expr*`"` | Hiermee wordt een groep velden voorwaardelijk ingeschakeld |
 
