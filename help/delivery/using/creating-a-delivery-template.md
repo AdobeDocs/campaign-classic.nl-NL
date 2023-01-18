@@ -4,9 +4,9 @@ title: Een leveringssjabloon maken
 description: Een leveringssjabloon maken
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '383'
 ht-degree: 11%
 
 ---
@@ -33,6 +33,10 @@ Voor meer informatie over de configuratiewijze, verwijs naar [De sjabloon koppel
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
+>[!NOTE]
+>
+>Om configuratiefouten te voorkomen, raadt Adobe u aan een native sjabloon te dupliceren en de instellingen ervan aan te passen in plaats van een nieuwe sjabloon te maken.
+
 Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
 1. Open Campagneverkenner.
@@ -40,7 +44,7 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
    ![](assets/delivery_template_1.png)
 
-1. Klikken **Nieuw** in de werkbalk om een nieuwe leveringssjabloon te maken.
+1. Klikken **Nieuw** in de werkbalk om een nieuwe leveringssjabloon te maken, of **Dupliceren** een bestaande sjabloon.
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
 1. Klikken **Opslaan**. Je template is nu klaar om te worden gebruikt in een levering.
 
->[!NOTE]
->
->Om configuratiefouten te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen veranderen eerder dan een nieuw malplaatje tot stand te brengen.
 
 ## Tutorialvideo’s {#delivery-template-video}
 
