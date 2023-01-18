@@ -4,7 +4,7 @@ title: Targetingactiviteiten
 description: Targetingactiviteiten
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 * **Leeslijst**: Hiermee kunt u gegevens in een lijst gebruiken. Zie de [Gegevens uit een lijst gebruiken: Leeslijst](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) sectie.
 * **Unie**: Hiermee kunt u het resultaat van verschillende activiteiten groeperen in één doel. Zie de [Unie](union.md) sectie.
 * **Intersectie**: laat u slechts de bevolking met de zelfde binnenkomende activiteitenresultaten halen. Zie de [Intersectie](intersection.md) sectie.
-* **Uitsluiting**: Hiermee kunt u een doel maken op basis van een hoofddoel waaruit een of meer andere doelen worden gehaald. Zie de [Intersectie](intersection.md) sectie.
+* **Uitsluiting**: Hiermee kunt u een doel maken op basis van een hoofddoel waaruit een of meer andere doelen worden gehaald. Zie de [Uitsluiting](exclusion.md) sectie.
 * **Splitsen**: Hiermee kunt u een doel opsplitsen in verschillende subsets. Zie de [Splitsen](split.md) sectie.
 * **Cellen**: biedt een weergave van de verschillende subsets in de vorm van gegevenskolommen en vereenvoudigt het manipuleren van deze subsets wanneer er veel zijn. Raadpleeg voor meer informatie de [Cellen](cells.md) sectie.
 * **Aanbiedingen per cel**: Hiermee kunt u verschillende aanbiedingen koppelen aan elke subset van een populatie. Zie de [Aanbiedingen per cel](offers-by-cell.md) sectie.
