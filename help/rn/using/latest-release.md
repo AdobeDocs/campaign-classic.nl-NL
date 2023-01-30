@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2771'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ _21 november 2022_
 
 **Compatibiliteitsupdates**
 
-* Adobe Campaign is nu compatibel met PostgreSQL 14. Raadpleeg deze voor meer informatie [technote](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign is nu compatibel met PostgreSQL 14. Raadpleeg deze [technische opmerking](../../technotes/using/tech-stack-upgrade.md) voor meer informatie.
 
 * Na afloop van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor dashboards in de clientconsole nu Edge Chromium. (NEO-20741)
 
@@ -109,7 +109,7 @@ _1 juli 2022_
 * Adobe Campaign SDK ondersteunt nu Android 12 en iOS 15 voor pushberichten.
 * Adobe Campaign is nu compatibel met MySQL 8.
 * Adobe Campaign is nu compatibel met Windows 11.
-* Adobe Campaign is nu compatibel met Debian 11. Raadpleeg deze voor meer informatie [technote](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign is nu compatibel met Debian 11. Raadpleeg deze [technische opmerking](../../technotes/using/tech-stack-upgrade.md) voor meer informatie.
 
 Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -149,7 +149,7 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 * Er is een probleem opgelost dat tot crashes kon leiden bij het gebruik van foutieve HTML-code in een levering. (NEO-40385)
 * Er is een probleem opgelost waardoor gebruikers die geen beheerder waren, geen toegang hadden tot het tabblad **Analyse** in de leveringseigenschappen. (NEO-34025)
 * Er is een probleem opgelost waardoor een afbeelding tijdens het voorbereiden van berichten niet kon worden geüpload in segmentmodus van een externe server. (NEO-40307)
-* Probleem verholpen waardoor de levering naar een groter aantal ontvangers kon worden verzonden dan verwacht. (NEO-45108)
+* Er is een probleem opgelost waardoor de levering naar een groter aantal ontvangers kon worden verzonden dan verwacht. (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 9349 {#release-7-2-2}
 
