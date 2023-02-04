@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
+source-git-commit: b4feba7b3099c998d2dc05947390e383acb5fa14
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -831,6 +831,7 @@ ht-degree: 100%
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Onjuiste harde bounces  bijwerken](delivery/using/update-bounce-qualification.md)
+      + [Bijwerken onjuiste harde grenzen na een ISP stroomonderbreking](delivery/using/update-bounces.md)
       + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
       + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + Migratie naar Adobe Managed Services{#dc-migration}
