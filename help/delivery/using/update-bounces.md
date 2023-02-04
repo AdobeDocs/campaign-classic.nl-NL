@@ -5,9 +5,9 @@ description: Leer hoe te om stuitkwalificatie na een ISP stroomonderbreking bij 
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Merk op dat als het uitstel met het bericht &quot;452 gevraagde actie aborteerde
 >
 >U kunt het Google Workspace Status Dashboard inschakelen [deze pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 
-## Symptomen{#update-bounce-symptoms}
+## Gevolgen{#update-bounce-impact}
 
 In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
 
@@ -57,7 +57,10 @@ Gebaseerd op het timeframe van het incident, en ISP, hieronder zijn de geadvisee
 
 * Voor Campaign Classic v7-instanties met SMTP-responsgegevens voor stuiteren in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
 
-   * **Fouttekst (quarantainetekst)** bevat &quot;550-5.1.1&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.ISP.com&quot;&quot;support.ISP.com&quot;kan zijn: bijvoorbeeld &quot;support.apple.com&quot; of &quot;support.google.com&quot;
+   * **Fouttekst (quarantainetekst)** bevat &quot;550-5.1.1&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.ISP.com&quot;
+
+      waar &quot;support.ISP.com&quot; kan zijn: bijvoorbeeld &quot;support.apple.com&quot; of &quot;support.google.com&quot;
+
    * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
    * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
 
