@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '934'
+ht-degree: 85%
 
 ---
 
@@ -67,7 +67,7 @@ Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
-Als uw account als gehoste klant een upgrade nodig heeft van een of meer technologieën die betrekking hebben op Campaign Classic, en de huidige build en/of versie moet worden bijgewerkt, stelt Adobe u daarvan rechtstreeks op de hoogte.
+Als gehoste klant geldt dat als uw account is geïdentificeerd dat een of meer van de technologieën met betrekking tot Campaign Classic moeten worden bijgewerkt en dat uw infrastructuur moet worden bijgewerkt naar de huidige build (bijvoorbeeld van v7.2.1 naar v7.3.3) en/of versie (van v7 naar v8), Adobe u rechtstreeks op de hoogte stelt.
 
 Als een klant op locatie of hybride die op een oudere build werkt, raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
 

@@ -5,9 +5,9 @@ description: Leer hoe u de stuiterkwalificatie bijwerkt na Italia Online-storing
 feature: Deliverability
 hide: true
 hidefromtow: true
-source-git-commit: 3cf6ffb2b69d44b56615492dd9db8965ae3cf4e1
+source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Meer informatie in de officiële communicatie [hier](https://tecnologia.libero.i
 
 ## Gevolgen{#outage-impact}
 
-In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd . Dit heeft niet alleen invloed op Adobe, maar iedereen probeert via e-mail aan Italia Online te worden bezorgd.
+Net als in de meeste gevallen waarin een internetprovider buiten beeld is, zijn sommige e-mails die via campagne zijn verzonden, ten onrechte gemarkeerd als steunkleuren. Dit was niet alleen van invloed op Adobe, maar iedereen probeerde om via e-mail aan Italia Online te worden bezorgd tijdens de periode van de storing.
 
-Symptomen zijn:
+Symptomen waren:
 
-* **Uitstel** met het bericht `452 requested action aborted: try again later` worden waargenomen - deze worden automatisch opnieuw beproefd en er zijn geen acties nodig. Zij zouden moeten verbeteren aangezien ISP volledige capaciteit terugkrijgt.
+* **Uitstel** met het bericht `452 requested action aborted: try again later` - deze werden automatisch opnieuw beproefd en er zijn geen acties nodig.
 
 * **Harde vlekken** met het bericht `550 <email address> recipient rejected` zijn teruggekeerd door ISP op 26 Januari, tussen 8h - 2 pm lokale tijd, om afzenders te verhinderen hun servers te blijven overbelasten. Zoals bevestigd door de Italia Online Postmaster, zijn dit geen echte harde bochten, dus raden we aan om alle e-mailadressen die op 26 januari 2023 zijn uitgesloten, uit de quarantaine te halen vanwege dat bericht.
 
