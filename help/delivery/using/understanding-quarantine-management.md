@@ -4,9 +4,9 @@ title: Quarantainebeheer begrijpen
 description: Quarantainebeheer begrijpen
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2983'
 ht-degree: 9%
 
 ---
@@ -95,37 +95,6 @@ U kunt de status van het e-mailadres van elke ontvanger opzoeken. Selecteer hier
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Een in quarantaine geplaatst adres verwijderen {#removing-a-quarantined-address}
-
-Indien nodig, kunt u een adres uit de quarantainelijst manueel verwijderen. Bovendien worden adressen die aan specifieke voorwaarden voldoen automatisch geschrapt uit de quarantainelijst door [Database opschonen](../../production/using/database-cleanup-workflow.md) workflow.
-
-Als u een adres handmatig uit de quarantainelijst wilt verwijderen, voert u een van de onderstaande handelingen uit.
-
->[!IMPORTANT]
->
->Als u handmatig een e-mailadres uit quarantaine verwijdert, betekent dit dat u opnieuw gaat leveren aan dit adres. Dientengevolge, kan dit ernstige gevolgen op uw leverbaarheid en IP reputatie hebben, die uiteindelijk tot uw IP adres of verzendend domein zou kunnen leiden die worden geblokkeerd. Ga extra voorzichtig te werk wanneer u overweegt een adres uit quarantaine te verwijderen. Neem in geval van twijfel contact op met een leverancier.
-
-* U kunt de status wijzigen in **[!UICONTROL Valid]** van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
-
-   ![](assets/tech_quarant_error_status.png)
-
-* U kunt ook de status wijzigen in **[!UICONTROL Allowlisted]**. In dit geval blijft het adres op de quarantainelijst staan, maar het wordt systematisch als doel gebruikt, zelfs als er een fout optreedt.
-
-De adressen worden automatisch verwijderd uit de quarantainelijst in de volgende gevallen:
-
-* Adressen in een **[!UICONTROL With errors]** de status wordt na een geslaagde levering uit de quarantainelijst verwijderd .
-* Adressen in een **[!UICONTROL With errors]** de status wordt uit de quarantainelijst verwijderd als de laatste zachte stuit meer dan tien dagen geleden heeft plaatsgevonden . Zie voor meer informatie over softerror management [deze sectie](#soft-error-management).
-* Adressen in een **[!UICONTROL With errors]** status die met de **[!UICONTROL Mailbox full]** De fout wordt na 30 dagen uit de quarantainelijst verwijderd.
-
-Hun status verandert vervolgens in **[!UICONTROL Valid]**.
-
->[!IMPORTANT]
->
->Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
-
-Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](sending-with-enhanced-mta.md), het maximumaantal opnieuw uit te voeren pogingen in geval van **[!UICONTROL Erroneous]** status en de minimumvertraging tussen pogingen zijn nu gebaseerd op hoe goed IP zowel historisch als momenteel bij een bepaald domein presteert.
-
-Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, kunt u het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de bijbehorende instellingen in het dialoogvenster [implementatiewizard](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) of [op het leveringsniveau](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## Voorwaarden voor het in quarantaine plaatsen van een adres {#conditions-for-sending-an-address-to-quarantine}
 
@@ -152,6 +121,57 @@ In tegenstelling tot harde fouten, verzenden de zachte fouten onmiddellijk geen 
 Opnieuw proberen wordt uitgevoerd tijdens de [leveringsduur](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Wanneer de foutenteller de grenswaarde bereikt, wordt het adres in quarantaine geplaatst. Raadpleeg voor meer informatie hierover [Retourneert na een tijdelijke leverfout](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 De foutenteller wordt opnieuw geïnitialiseerd als de laatste significante fout meer dan 10 dagen geleden voorkwam. De adresstatus verandert vervolgens in **Geldig** en wordt door de [Database opschonen](../../production/using/database-cleanup-workflow.md) workflow.
+
+
+Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](sending-with-enhanced-mta.md), het maximumaantal opnieuw uit te voeren pogingen in geval van **[!UICONTROL Erroneous]** status en de minimumvertraging tussen pogingen zijn nu gebaseerd op hoe goed IP zowel historisch als momenteel bij een bepaald domein presteert.
+
+Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, kunt u het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de bijbehorende instellingen in het dialoogvenster [implementatiewizard](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) of [op het leveringsniveau](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+
+
+## Een in quarantaine geplaatst adres verwijderen {#removing-a-quarantined-address}
+
+Adressen die aan specifieke voorwaarden voldoen, worden automatisch uit de quarantainelijst verwijderd door de [Database opschonen](../../production/using/database-cleanup-workflow.md) workflow.
+
+De adressen worden automatisch verwijderd uit de quarantainelijst in de volgende gevallen:
+
+* Adressen in een **[!UICONTROL With errors]** de status wordt na een geslaagde levering uit de quarantainelijst verwijderd .
+* Adressen in een **[!UICONTROL With errors]** de status wordt uit de quarantainelijst verwijderd als de laatste zachte stuit meer dan tien dagen geleden heeft plaatsgevonden . Zie voor meer informatie over softerror management [deze sectie](#soft-error-management).
+* Adressen in een **[!UICONTROL With errors]** status die met de **[!UICONTROL Mailbox full]** De fout wordt na 30 dagen uit de quarantainelijst verwijderd.
+
+Hun status verandert vervolgens in **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+>
+>Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+
+U kunt een adres ook handmatig uit de quarantaine verwijderen. Als u een adres handmatig uit de quarantainelijst wilt verwijderen, wijzigt u de status in **[!UICONTROL Valid]** van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
+
+![](assets/tech_quarant_error_status.png)
+
+U zou bulkupdates op de quarantainelijst kunnen moeten uitvoeren, bijvoorbeeld in het geval van een ISP stroomonderbreking waarin de e-mails verkeerd als grenzen worden gemerkt omdat zij niet met succes aan hun ontvanger kunnen worden geleverd.
+
+Om dit uit te voeren, creeer een werkschema en voeg een vraag op uw quarantainetabel toe om alle beïnvloede ontvangers uit te filteren zodat zij uit de quarantainelijst kunnen worden verwijderd, en inbegrepen in toekomstige e-mailleveringen van de Campagne.
+
+Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
+
+* Voor Campagne v8- en Campaign Classic v7-omgevingen met informatie over de regels voor inkomende e-mail in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+
+   * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
+   * **E-maildomein (@domein)** is gelijk aan domain1.com OR **E-maildomein (@domein)** is gelijk aan domain2.com OR **E-maildomein (@domein)** is gelijk aan domain3.com
+   * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
+   * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
+
+* Voor Campaign Classic v7-instanties met SMTP-responsgegevens voor stuiteren in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+
+   * **Fouttekst (quarantainetekst)** bevat &quot;550-5.1.1&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.ISP.com&quot;
+
+   waar &quot;support.ISP.com&quot; kan zijn: bijvoorbeeld &quot;support.apple.com&quot; of &quot;support.google.com&quot;
+
+   * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
+   * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
+
+
+Als u de lijst met betrokken ontvangers hebt, voegt u een **[!UICONTROL Update data]** activiteit om hun status in te stellen op **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** workflow. U kunt ze ook gewoon uit de quarantainetabel verwijderen.
 
 ## Push notification quarantines {#push-notification-quarantines}
 
