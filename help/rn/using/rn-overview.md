@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden uitgebracht als productbuilds. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
+Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden vrijgegeven op **productconstructies**. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
 
 ## Releasestatussen{#rn-statuses}
 
@@ -27,7 +27,7 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
-![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
+![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - Nieuwste build met nieuwe mogelijkheden.
 
 ![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen.
 
@@ -37,9 +37,9 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 
 Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
-Dit is de reden waarom we het van cruciaal belang vinden dat u **de meest recente stabiele versie** van Adobe Campaign gebruikt. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
+Daarom is het van essentieel belang dat u **Voer de meest recente stabiele build uit** van Adobe Campaign. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
 
-Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele versie zonder enige actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u migreert van een oude build, raadt Adobe u aan eerst naar deze versie te upgraden.
+Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u van een oude bouwstijl migreert, adviseert Adobe dat u eerst aan deze bouwstijl bevordert.
 
 ## Aanbevelingen{#recommendations}
 
@@ -69,7 +69,7 @@ Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA
 
 Als uw account als gehoste klant een upgrade nodig heeft van een of meer technologieën die betrekking hebben op Campaign Classic, en de huidige build en/of versie moet worden bijgewerkt, stelt Adobe u daarvan rechtstreeks op de hoogte.
 
-Als een on-premise of hybride klant met een oudere versie raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
+Als een klant op locatie of hybride die op een oudere build werkt, raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
 
 Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst vereisen.
 

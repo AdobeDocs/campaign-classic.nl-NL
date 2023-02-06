@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Bounce-kwalificatie bijwerken na Gmail-uitgang
-description: Leer hoe te om stuitkwalificatie na een ISP stroomonderbreking bij te werken
+title: De stuitkwalificatie bijwerken na Apple 2021-storing
+description: Leer hoe u de stuiterende kwalificatie bijwerkt na een Apple 2021-storing
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---

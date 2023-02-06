@@ -4,9 +4,9 @@ title: Quarantainebeheer begrijpen
 description: Quarantainebeheer begrijpen
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2997'
 ht-degree: 9%
 
 ---
@@ -128,7 +128,9 @@ Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced M
 Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, kunt u het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de bijbehorende instellingen in het dialoogvenster [implementatiewizard](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) of [op het leveringsniveau](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## Een in quarantaine geplaatst adres verwijderen {#removing-a-quarantined-address}
+## Een adres uit quarantaine verwijderen {#removing-a-quarantined-address}
+
+### Automatische updates {#unquarantine-auto}
 
 Adressen die aan specifieke voorwaarden voldoen, worden automatisch uit de quarantainelijst verwijderd door de [Database opschonen](../../production/using/database-cleanup-workflow.md) workflow.
 
@@ -144,17 +146,21 @@ Hun status verandert vervolgens in **[!UICONTROL Valid]**.
 >
 >Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
+### Handmatige updates {#unquarantine-manual}
+
 U kunt een adres ook handmatig uit de quarantaine verwijderen. Als u een adres handmatig uit de quarantainelijst wilt verwijderen, wijzigt u de status in **[!UICONTROL Valid]** van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
 
 ![](assets/tech_quarant_error_status.png)
 
-U zou bulkupdates op de quarantainelijst kunnen moeten uitvoeren, bijvoorbeeld in het geval van een ISP stroomonderbreking waarin de e-mails verkeerd als grenzen worden gemerkt omdat zij niet met succes aan hun ontvanger kunnen worden geleverd.
+### Bulkupdates {#unquarantine-bulk}
 
-Om dit uit te voeren, creeer een werkschema en voeg een vraag op uw quarantainetabel toe om alle beïnvloede ontvangers uit te filteren zodat zij uit de quarantainelijst kunnen worden verwijderd, en inbegrepen in toekomstige e-mailleveringen van de Campagne.
+U zou bulkupdates op de quarantainelijst, bijvoorbeeld in het geval van een ISP stroomonderbreking kunnen moeten uitvoeren. In dat geval worden e-mails ten onrechte als bonnen gemarkeerd omdat ze niet met succes aan de ontvanger kunnen worden bezorgd. Deze adressen moeten uit de quarantainelijst worden verwijderd.
+
+Om dit te doen, creeer een werkschema en voeg toe **[!UICONTROL Query]** activiteit op uw quarantainetabel om alle getroffen ontvangers uit te filteren. Als deze eenmaal zijn geïdentificeerd, kunnen ze uit de quarantainelijst worden verwijderd en worden opgenomen in toekomstige e-mailleveringen voor campagnes.
 
 Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
 
-* Voor Campagne v8- en Campaign Classic v7-omgevingen met informatie over de regels voor inkomende e-mail in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campaign Classic v7-omgevingen met informatie over de regels voor inkomende e-mail in de **[!UICONTROL Error text]** veld van de quarantainelijst:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-maildomein (@domein)** is gelijk aan domain1.com OR **E-maildomein (@domein)** is gelijk aan domain2.com OR **E-maildomein (@domein)** is gelijk aan domain3.com
@@ -171,11 +177,11 @@ Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
    * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
 
 
-Als u de lijst met betrokken ontvangers hebt, voegt u een **[!UICONTROL Update data]** activiteit om hun status in te stellen op **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** workflow. U kunt ze ook gewoon uit de quarantainetabel verwijderen.
+Als u de lijst met betrokken ontvangers hebt, voegt u een **[!UICONTROL Update data]** activiteit om hun e-mailadresstatus in te stellen op **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** workflow. U kunt ze ook gewoon uit de quarantainetabel verwijderen.
 
 ## Push notification quarantines {#push-notification-quarantines}
 
-Het quarantainemechanisme voor pushmeldingen is over het algemeen hetzelfde als het algemene proces. Zie [Informatie over quarantines](#about-quarantines). Bepaalde fouten worden echter anders beheerd voor pushberichten. Voor bepaalde fouten in de software worden bijvoorbeeld geen pogingen opnieuw uitgevoerd binnen dezelfde levering. De specifieke kenmerken voor pushmeldingen worden hieronder weergegeven. Het mechanisme voor opnieuw proberen (aantal pogingen, frequentie) is hetzelfde als voor e-mailberichten.
+Het quarantainemechanisme voor pushmeldingen is over het algemeen hetzelfde als het algemene proces. Bepaalde fouten worden echter anders beheerd voor pushberichten. Voor bepaalde fouten in de software worden bijvoorbeeld geen pogingen opnieuw uitgevoerd binnen dezelfde levering. De specifieke kenmerken voor pushmeldingen worden hieronder weergegeven. Het mechanisme voor opnieuw proberen (aantal pogingen, frequentie) is hetzelfde als voor e-mailberichten.
 
 De items die in quarantaine worden geplaatst, zijn apparaattokens.
 

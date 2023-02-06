@@ -5,9 +5,9 @@ description: Leer hoe te om stuitkwalificatie na een ISP stroomonderbreking bij 
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -48,14 +48,14 @@ U moet een vraag op uw quarantainetabel in werking stellen om alle beïnvloede o
 
 Gebaseerd op het timeframe van het incident, en ISP, hieronder zijn de geadviseerde richtlijnen voor deze vraag.
 
-* Voor Campagne v8- en Campaign Classic v7-omgevingen met informatie over de regels voor inkomende e-mail in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campagneomgevingen met informatie over de binnenkomende e-mailregel in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-maildomein (@domein)** is gelijk aan domain1.com OR **E-maildomein (@domein)** is gelijk aan domain2.com OR **E-maildomein (@domein)** is gelijk aan domain3.com
    * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
    * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
 
-* Voor Campaign Classic v7-instanties met SMTP-responsgegevens voor stuiteren in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campagneomgevingen met SMTP-stuiteringsresponsinformatie in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;550-5.1.1&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.ISP.com&quot;
 
