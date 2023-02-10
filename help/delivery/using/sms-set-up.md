@@ -4,10 +4,10 @@ title: SMS-kanaal voor campagne configureren
 description: Leer hoe te om het kanaal van SMS in Campagne te vormen
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 35%
+source-wordcount: '1722'
+ht-degree: 34%
 
 ---
 
@@ -28,6 +28,10 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 > Voor SMS-leveringen moet de typologie een specifieke SMS-affiniteit gebruiken die in **één** specifieke toepassingsservercontainer. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Een SMPP-externe account maken {#creating-an-smpp-external-account}
+
+>[!IMPORTANT]
+>
+>Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Zie de [De pagina voor probleemoplossing via SMS](troubleshooting-sms.md#external-account-conflict).
 
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
 Voor meer informatie over het protocol en de montages van SMS, verwijs naar dit [page](sms-protocol.md).
@@ -118,9 +122,9 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> TP </td> 
+   <td> ¡ </td> 
    <td> P </td> 
-   <td> voor </td> 
+   <td> ¿ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -146,7 +150,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
   <tr> 
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
-   <td> Aantal </td> 
+   <td> # </td> 
    <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
