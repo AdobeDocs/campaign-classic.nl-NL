@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 85%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden vrijgegeven op **productconstructies**. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
+Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden uitgebracht als **productbuilds**. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
 
 ## Releasestatussen{#rn-statuses}
 
@@ -27,7 +27,7 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
-![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - Nieuwste build met nieuwe mogelijkheden.
+![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste build met nieuwe mogelijkheden.
 
 ![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen.
 
@@ -37,9 +37,9 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 
 Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
-Daarom is het van essentieel belang dat u **Voer de meest recente stabiele build uit** van Adobe Campaign. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
+Dit is de reden waarom het essentieel is dat u **de meest recente stabiele build** van Adobe Campaign gebruikt. U krijgt dan ook een betere ondersteuningservaring, aangezien het identificeren, reproduceren en oplossen van een probleem met een recente versie meestal veel sneller gaat. Bovendien zijn veel problemen die u kunt tegenkomen, in de meest recente builds al opgelost.
 
-Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u van een oude bouwstijl migreert, adviseert Adobe dat u eerst aan deze bouwstijl bevordert.
+Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder enige actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u migreert van een oude build, raadt Adobe u aan eerst naar deze build te upgraden.
 
 ## Aanbevelingen{#recommendations}
 
@@ -67,9 +67,9 @@ Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
-Als gehoste klant geldt dat als uw account is geïdentificeerd dat een of meer van de technologieën met betrekking tot Campaign Classic moeten worden bijgewerkt en dat uw infrastructuur moet worden bijgewerkt naar de huidige build (bijvoorbeeld van v7.2.1 naar v7.3.3) en/of versie (van v7 naar v8), Adobe u rechtstreeks op de hoogte stelt.
+Als gehoste klant geldt dat als er wordt vastgesteld dat uw account voor een of meer van de technologieën met betrekking tot Campaign Classic moet worden bijgewerkt en dat uw infrastructuur moet worden bijgewerkt naar de huidige build (bijvoorbeeld van v7.2.1 naar v7.3.3) en/of versie (van v7 naar v8), Adobe u rechtstreeks op de hoogte stelt.
 
-Als een klant op locatie of hybride die op een oudere build werkt, raadt Adobe u aan over te stappen op de nieuwste stabiele build (GA).
+Adobe raadt on-premise of hybride klanten die een oudere build gebruiken, aan om over te stappen naar de nieuwste stabiele build (GA).
 
 Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst vereisen.
 
