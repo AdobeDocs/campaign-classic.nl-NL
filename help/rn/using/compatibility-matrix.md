@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+source-git-commit: 76218abd198f677541338c7f854d047d2c644013
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -40,9 +40,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bits)  </br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
-<p>7.x (64 bits)</p>
+<p>7.x</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
+<p>8,x</br><strong>Belangrijk:</strong> CentOS Linux 8 zal Eind van Leven (EOL) op 31 December 2021 bereiken. Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 voor RHEL7 - CentOS 7, Debian 8/9, Windows (64 bits)</p>
+<p>2.4 voor RHEL7 - CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>De applicatie is goedgekeurd voor zowel de Java Development Kit (JDK) die is ontwikkeld door Oracle als voor OpenJDK.</p>
+<p>De campagne steunt de Uitrusting van de Ontwikkeling van Java (JDK) die door Oracle, en OpenJDK wordt ontwikkeld.</p>
 </td>
 </tr>
 <tr>
