@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1cf94ee5edac7087d7d21709243e9f56c2b3d6f5
-workflow-type: ht
-source-wordcount: '778'
-ht-degree: 100%
+source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 98%
 
 ---
 
@@ -48,23 +48,23 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 bits)</p>
-<p>10 (64 bits)</p>
-<p>9 (64 bits)</p>
+<p>11 (vanaf Campaign v7.3)</p>
+<p>10</p>
+<p>9</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8.x (64 bits)</p>
-<p>7.x (64 bits)</p>
+<p>8.x</p>
+<p>7.x</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (vanaf release 7.2.1)</p>
+<p>2019 (vanaf Campaign v7.2)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -138,7 +138,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x</p>
+<p>14.x (campagne starten v7.3.2)</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=nl#database-access-layers">Meer informatie</a>.</p>
+<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -208,7 +208,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>Minimaal 7.2.1</td>
+<td>Minimaal 7.2</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -224,7 +224,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Minimaal 7.2.1</td>
+<td>Minimaal 7.2</td>
 </tr>
 <tr>
 <td>Vertica Analytics</td>
@@ -248,7 +248,7 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8</p>
+<p>8 (vanaf Campaign v7.3)</p>
 <p>5.7</p>
 </td>
 <td>
@@ -336,7 +336,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (vanaf release 7.3)</p>
+<p>11 (vanaf Campaign v7.3)</p>
 <p>10 (aanbevolen voor Japanse instanties)</p>
 <p>8</p>
 </td>
@@ -344,7 +344,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (vanaf release 7.2.1)</p>
+<p>2019 (vanaf Campaign v7.2.1)</p>
 <p>2016</p>
 <p>2012</p>
 </td>
