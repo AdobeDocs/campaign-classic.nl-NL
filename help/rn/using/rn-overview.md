@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 88%
 
 ---
 
@@ -51,9 +51,9 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 ## Upgradeproces{#process-upgrade}
 
-Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
+Als gehoste, Managed Services- of Hybride klant, neemt u contact op met de klantenservice van Adobe om de omgeving te laten upgraden.
 
-Als een on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden.
+Als klant op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de [nieuwste stabiele build (GA) downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden.
 
 Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over build-upgrades](../../platform/using/faq-build-upgrade.md).
 
@@ -67,7 +67,7 @@ Als gehoste gebruiker profiteert u automatisch van de upgrade met de nieuwste GA
 
 ### Waarom heeft mijn organisatie deze upgrade nodig?
 
-Als gehoste klant geldt dat als er wordt vastgesteld dat uw account voor een of meer van de technologieën met betrekking tot Campaign Classic moet worden bijgewerkt en dat uw infrastructuur moet worden bijgewerkt naar de huidige build (bijvoorbeeld van v7.2.1 naar v7.3.3) en/of versie (van v7 naar v8), Adobe u rechtstreeks op de hoogte stelt.
+Als gehoste klant geldt dat als uw account is geïdentificeerd dat een of meer van de technologieën met betrekking tot Campaign Classic moeten worden bijgewerkt en dat uw infrastructuur moet worden bijgewerkt naar de huidige build (bijvoorbeeld van v7.2.1 naar v7.3.3) en/of versie (bijvoorbeeld van v7 naar v8), Adobe u rechtstreeks op de hoogte stelt.
 
 Adobe raadt on-premise of hybride klanten die een oudere build gebruiken, aan om over te stappen naar de nieuwste stabiele build (GA).
 
@@ -77,7 +77,7 @@ Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste pre
 
 Het team van Adobe begeleidt uw organisatie tijdens dit traject.
 
-Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, technische specialisten en productconsultants biedt u ondersteuning en zorgt voor een probleemloze ervaring.
+Er is een team van speciale vertegenwoordigers van de klantenservice, productmanagers, technici en technici en consultants van de technische afdeling aanwezig om u te helpen en ervoor te zorgen dat de ervaring soepel verloopt.
 
 ### Voordelen
 
