@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <td>
 <p>7.x</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
-<p>8,x</br><strong>Belangrijk:</strong> CentOS Linux 8 zal Eind van Leven (EOL) op 31 December 2021 bereiken. Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
+<p>8.x</br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>De campagne steunt de Uitrusting van de Ontwikkeling van Java (JDK) die door Oracle, en OpenJDK wordt ontwikkeld.</p>
+<p>Campaign ondersteunt de Java Development Kit (JDK) die is ontwikkeld door Oracle, en OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -138,7 +138,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x (campagne starten v7.3.2)</p>
+<p>14.x (vanaf Campaign v7.3.2)</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Meer informatie</a>.</p>
+<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=nl#database-access-layers">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -366,7 +366,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 
 ### Microsoft WebView2-runtime
 
-Microsoft Edge WebView2-runtime De nieuwste versie is verplicht voor de Campagne-clientconsole.
+Microsoft Edge WebView2-runtime de nieuwste versie is verplicht voor de Campaign-clientconsole.
 
 Download Microsoft Edge WebView2 van [Microsoft Developer-site](http://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
@@ -396,7 +396,7 @@ U kunt Campaign gebruiken om [pushmeldingen](../../delivery/using/about-mobile-a
 
 ## Browsers{#Browsers}
 
-De volgende browsers, in hun meest recente versie, zijn compatibel met Campagne voor [Webtoegang](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+De volgende browsers, in hun meest recente versie, zijn compatibel met Campaign voor [Webtoegang](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
