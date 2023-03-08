@@ -7,7 +7,7 @@ exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,7 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
    Om uw ontvangers toe te staan om uw leveringsinhoud in browser van het Web te bekijken, kunt u een verbinding aan een spiegelpagina in uw levering integreren.
 
-   Klik op het tekstveld waarin u de koppeling wilt plaatsen. Klik op het eerste pictogram op de pop-upwerkbalk en selecteer **[!UICONTROL Personalization block]** vervolgens **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klikken **[!UICONTROL Save]** ter bevestiging.
+   Klik op het tekstveld waarin u de koppeling wilt plaatsen. Klik op het eerste pictogram op de pop-upwerkbalk en selecteer **[!UICONTROL Personalization block]** vervolgens **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klik op **[!UICONTROL Save]** om te bevestigen.
 
    ![](assets/dce_mirrorpage.png)
 

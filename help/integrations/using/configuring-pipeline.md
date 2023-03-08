@@ -28,7 +28,7 @@ Voordat u deze configuratie start, moet u controleren of u deze configuratie geb
    * 19.1.8.9039
    * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
-   * 20.3.1.
+   * 20.3.1
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:

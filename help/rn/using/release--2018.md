@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -249,7 +249,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -305,7 +305,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [technische ondersteuning](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. Gelieve [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of contact opnemen [technische ondersteuning](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -323,7 +323,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
   </tr> 
   <tr> 
    <td> Ondersteuning voor Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic-compatibiliteitsmatrix</a>.<br /> </td> 
+   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html">Campaign Classic-compatibiliteitsmatrix</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ Voor bestaande klanten, wordt het gedrag van deze functie niet veranderd maar wi
 
 decryptPassword
 
-De **decryptPassword** functie is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Zie de [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) documentatie voor meer informatie.
+De **decryptPassword** functie is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Zie de [JSAPI](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) documentatie voor meer informatie.
 
 Bestand-API&#39;s
 

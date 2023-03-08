@@ -9,7 +9,7 @@ exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -34,7 +34,7 @@ Zodra IMS voor uw organisatie wordt toegelaten, kunt u levering van de de kerndi
    <td> Uw organisatienaam </td> 
   </tr> 
   <tr> 
-   <td> <strong>Organisatie-id</strong><br /> </td> 
+   <td> <strong>Organisatie-ID</strong><br /> </td> 
    <td> Uw organisatie-id. <br> Raadpleeg voor meer informatie over uw organisatie-id <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl">deze pagina</a></td> 
   </tr> 
   <tr> 

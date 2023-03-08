@@ -227,7 +227,7 @@ _16 december 2020_
 >[!CAUTION]
 >
 > * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/using/ims-updates.md)
-> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-authentificatiemodus met Campaign [is beëindigd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) in **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 
@@ -300,7 +300,7 @@ _3 oktober 2019_
 
 * Er is een probleem verholpen met het gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Er is een indexprobleem verholpen dat prestatieproblemen kon veroorzaken bij het verzenden van transactieberichten.
-* Oplossing voor een prestatieprobleem bij het verzenden van berichten. (NEO-1758)
+* Oplossing voor een prestatieprobleem bij het verzenden van berichten. (NEO-17558)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen waardoor de SQL-gegevensbeheeractiviteit niet volledig kon worden gebruikt (het genoemde recht SQL-gegevensbeheer ontbreekt).
 
@@ -372,7 +372,7 @@ _30 mei 2019_
   </tr> 
   <tr> 
    <td> Update over compatibiliteitsmatrix<br /> </td> 
-   <td> Met deze nieuwe versie ondersteunt Adobe Campaign nu de volgende databasesystemen. Zie de <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Compatibiliteitsmatrix</a>.<br /> 
+   <td> Met deze nieuwe versie ondersteunt Adobe Campaign nu de volgende databasesystemen. Zie de <a href="https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html">Compatibiliteitsmatrix</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18 quater</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 

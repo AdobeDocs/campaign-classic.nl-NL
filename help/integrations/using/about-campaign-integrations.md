@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Campaign-integraties
-description: Gebruik andere Adobe-oplossingen en combineer hun verschillende mogelijkheden met Campagne.
+description: Gebruik andere Adobe-oplossingen en combineer hun verschillende mogelijkheden met Campaign.
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '757'
+ht-degree: 12%
 
 ---
 

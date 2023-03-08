@@ -61,7 +61,7 @@ De stappen hieronder voor het veranderen van één enkel punt van gegevens biede
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Bevestig dat de naam van de ontvanger is bijgewerkt in Campaign Standard. Ga voor meer informatie over waar u naar profielen in Campaign Standard wilt zoeken naar [Basisbeginselen van navigatie](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Bevestig dat de naam van de ontvanger is bijgewerkt in Campaign Standard. Ga voor meer informatie over waar u naar profielen in Campaign Standard wilt zoeken naar [Basisbeginselen van navigatie](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=nl).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,6 +174,6 @@ Volg de instructies in [Een workflow maken](#creating-a-workflow) en [Een leveri
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Ga naar Campaign Standard en open de profieldetails voor de ontvanger. Bevestig dat naast **[!UICONTROL No longer contact (by any channel)]**. Ga voor meer informatie over waar u naar profielen in Campaign Standard wilt zoeken naar [Basisbeginselen van navigatie](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Ga naar Campaign Standard en open de profieldetails voor de ontvanger. Bevestig dat naast **[!UICONTROL No longer contact (by any channel)]**. Ga voor meer informatie over waar u naar profielen in Campaign Standard wilt zoeken naar [Basisbeginselen van navigatie](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=nl).
 
    ![](assets/acs_connect_profile_sync_23.png)

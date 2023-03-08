@@ -8,8 +8,8 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '345'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ Voer de volgende gegevens in:
 
    De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 
-* Organisatie-id: om uw organisatie-id te zoeken, raadpleegt u [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
+* Organisatie-id: om uw organisatie-id te zoeken, raadpleegt u [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
 * Associatiemasker: In dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.&#42;)&quot;, wordt de in Adobe Campaign gemaakte beveiligingsgroep gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
 
    >[!CAUTION]
