@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: f2ec24a122eff94f62bd79e656e771fecd803659
 workflow-type: tm+mt
-source-wordcount: '3606'
+source-wordcount: '3610'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,6 @@ Ze zijn gegroepeerd onder **Toezicht** > &#39;SMTP-bewaking&#39;.
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
 >* De **[!UICONTROL SMTP sending statistics]** alleen worden aangeboden als de statistische server op de instantie is gestart.
-
 >
 
 
@@ -270,7 +269,8 @@ De **[!UICONTROL SMTP sending statistics]** het rapport laat u serveractiviteit 
 De lijst van indicatoren voor dit verslag wordt onder de grafiek weergegeven.
 
 1. Het totale aantal verzonden berichten.
-1. 
+1. Vertegenwoordigt in/uit berichten:
+
    * Blauwe lijn: berichten die klaar zijn om te worden verzonden en die in de Shaper zijn binnengekomen, d.w.z. laatste fase voordat SMTP wordt verzonden (valt samen met de binnenkomende gegevens).
 
    * Groene lijn: met succes verzonden berichten (valt samen met de uitgaande gegevens).
