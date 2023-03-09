@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
+source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 100%
+source-wordcount: '2969'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,37 @@ ht-degree: 100%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green_2.png) Release 7.3.3 - build 9359 {#release-7-3-3}
+
+>[!CAUTION]
+>
+> Deze release is momenteel alleen beschikbaar voor gebruikers van beheerde Cloud Services en is binnenkort beschikbaar voor on-premise en hybride implementaties.
+
+>[!CAUTION]
+>
+>De upgrade van Client Console is verplicht. Lees op deze [pagina](../../installation/using/installing-the-client-console.md) hoe u uw Client Console kunt upgraden.
+
+_9 maart 2023_
+
+**Beveiligingsverbetering**
+
+* Tomcat is bijgewerkt van versie 8.5.81 naar 8.5.85 om de beveiliging te optimaliseren. (NEO-56936)
+
+**Verbeteringen**
+
+* De factureringsworkflow is verbeterd om de prestaties te optimaliseren. (NEO-47658)
+* De workflow voor bijhouden is verbeterd en optimaliseert de prestaties in geval van een hoge leveringsgrootte. (NEO-45064)
+* Het beheer voor bijhouden is verbeterd en verhelpt nu mogelijke problemen met dynamische parameters in URL&#39;s. Beheer van bijhouden v3 handelt nu ajax-type-URL&#39;s (met parameters na een &#39;#&#39;) af en voorkomt dat hulpmiddelen van derden URL&#39;s die worden bijgehouden, wijzigen. Als u deze wijziging wilt toepassen, moet u contact opnemen met Adobe. (NEO-46535)
+
+<!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
+
+**Patches**
+
+* Probleem verholpen waardoor pushberichten voor iOS-proefdrukken niet konden worden verzonden van het besturingsorgaan (context Transactieberichten). (NEO-54713)
+* Probleem verholpen waardoor u niet in het dialoogvenster **Bewerken** tabblad van de Digital Content Editor (DCE). (NEO-54474)
+* Probleem verholpen waarbij twee verrijkingsactiviteiten dezelfde naam-id gebruikten in hun koppeling, wat ertoe leidde dat de tweede verrijkingsactiviteit gebruikmaakte van de koppelingen van de eerste. (NEO-48851)
+
+## ![](assets/do-not-localize/orange_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
 
 _21 november 2022_
 
