@@ -4,9 +4,9 @@ title: De mobiele iOS-toepassing in Adobe Campaign configureren
 description: Meer informatie over het instellen van uw mobiele toepassing voor iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '651'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 
 >[!CAUTION]
 >
->De toepassing moet zijn geconfigureerd voor pushacties VOORDAT deze wordt geïntegreerd in de SDK van Adobe Campaign.
+>De toepassing moet voor de Acties van de Duw vóór om het even welke integratie aan Adobe SDK zijn gevormd.
 >
 >Indien dit niet het geval is, gelieve te verwijzen naar [deze pagina](https://developer.apple.com/documentation/usernotifications).
 
