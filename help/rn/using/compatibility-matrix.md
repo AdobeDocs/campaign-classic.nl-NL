@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
+source-git-commit: 2ba04c785f6587741fdf421116781306e74f0168
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '802'
+ht-degree: 97%
 
 ---
 
@@ -374,6 +374,9 @@ Download Microsoft Edge WebView2 van [Microsoft Developer-site](http://www.adobe
 ## Mobiele SDK{#MobileSDK}
 
 U kunt Campaign gebruiken om [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) te verzenden op de hieronder vermelde besturingssystemen met de bijbehorende [mobiele SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+
+U kunt de Adobe Experience Platform Mobile SDK ook gebruiken door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling.
+
 
 <table>
 <tbody>
