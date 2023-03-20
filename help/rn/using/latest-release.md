@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
+source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '2989'
-ht-degree: 93%
+source-wordcount: '2947'
+ht-degree: 95%
 
 ---
 
@@ -23,15 +23,9 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 >[!CAUTION]
 >
-> Deze release is momenteel alleen beschikbaar voor gebruikers van beheerde Cloud Services en is binnenkort beschikbaar voor on-premise en hybride implementaties.
->
 >De upgrade van Client Console is verplicht. Lees op deze [pagina](../../installation/using/installing-the-client-console.md) hoe u uw Client Console kunt upgraden.
 
->[!NOTE]
->
->Deze release is alleen GA voor gebruikers van beheerde Cloud Services.
-
-_9 maart 2023_
+_20 maart 2023_
 
 **Beveiligingsverbetering**
 
@@ -51,17 +45,13 @@ _9 maart 2023_
 * Probleem verholpen waardoor u niet in het dialoogvenster **Bewerken** tabblad van de Digital Content Editor (DCE). (NEO-54474)
 * Probleem verholpen waarbij twee verrijkingsactiviteiten dezelfde naam-id gebruikten in hun koppeling, wat ertoe leidde dat de tweede verrijkingsactiviteit gebruikmaakte van de koppelingen van de eerste. (NEO-48851)
 
-## ![](assets/do-not-localize/green.png) Release 7.3.2 - build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/orange_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
 
 _21 november 2022_
 
 >[!CAUTION]
 >
 >De upgrade van Client Console is verplicht. Lees op deze [pagina](../../installation/using/installing-the-client-console.md) hoe u uw Client Console kunt upgraden.
-
->[!NOTE]
->
->Deze release is alleen GA voor on-premise en hybride implementaties.
 
 **Compatibiliteitsupdates**
 
