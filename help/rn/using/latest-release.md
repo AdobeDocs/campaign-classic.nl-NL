@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,16 +34,16 @@ _20 maart 2023_
 **Verbeteringen**
 
 * De factureringsworkflow is verbeterd om de prestaties te optimaliseren. (NEO-47658)
-* De workflow voor bijhouden is verbeterd en optimaliseert de prestaties in geval van een hoge leveringsgrootte. (NEO-45064)
-* Het beheer voor bijhouden is verbeterd en verhelpt nu mogelijke problemen met dynamische parameters in URL&#39;s. Beheer van bijhouden v3 handelt nu ajax-type-URL&#39;s (met parameters na een &#39;#&#39;) af en voorkomt dat hulpmiddelen van derden URL&#39;s die worden bijgehouden, wijzigen. Als u deze wijziging wilt toepassen, moet u contact opnemen met Adobe. (NEO-46535)
+* De trackingworkflow is verbeterd om de prestaties bij grote leveringen te optimaliseren. (NEO-45064)
+* Trackingbeheer is verbeterd om mogelijke problemen met dynamische parameters in URL&#39;s op te lossen. Trackingbeheer v3 verwerkt nu URL&#39;s van het ajax-type (met parameters na een &#39;#&#39;) af en voorkomt dat tools van derden tracking-URL&#39;s kunnen wijzigen. Neem contact op met Adobe om deze wijziging toe te passen. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Patches**
 
-* Probleem verholpen waardoor pushberichten voor iOS-proefdrukken niet konden worden verzonden van het besturingsorgaan (context Transactieberichten). (NEO-54713)
-* Probleem verholpen waardoor u niet in het dialoogvenster **Bewerken** tabblad van de Digital Content Editor (DCE). (NEO-54474)
-* Probleem verholpen waarbij twee verrijkingsactiviteiten dezelfde naam-id gebruikten in hun koppeling, wat ertoe leidde dat de tweede verrijkingsactiviteit gebruikmaakte van de koppelingen van de eerste. (NEO-48851)
+* Probleem verholpen waardoor proef-pushberichten voor iOS niet konden worden verzonden van de controle-instantie (context transactionele berichten). (NEO-54713)
+* Probleem verholpen waardoor scrollen soms niet mogelijk was in het tabblad **Bewerken** van de Digital Content Editor (DCE). (NEO-54474)
+* Probleem verholpen waarbij twee verrijkingsactiviteiten dezelfde naam-ID gebruikten in hun koppeling, waardoor de tweede verrijkingsactiviteit de koppelingen van de eerste gebruikte. (NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
 

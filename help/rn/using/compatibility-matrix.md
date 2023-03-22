@@ -336,7 +336,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <table>
 <tbody>
 <td><strong>Systeem</strong></td>
-<td><strong>Versie besturingssysteem</strong></td>
+<td><strong>Besturingssysteemversie</strong></td>
 <td><strong>Campaign-versie</strong></td>
 <tr>
 <td>Microsoft Windows</td>
@@ -346,7 +346,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <p>8</p>
 </td>
 <td>
-<p>v7.3 minimaal </p>
+<p>minimaal v7.3 </p>
 <p></p>
 <p></p>
 </tr>
