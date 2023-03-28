@@ -4,7 +4,7 @@ title: Seedadressen maken
 description: Leer hoe u zaadadressen maakt en gebruikt
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -32,11 +32,11 @@ Voer de volgende stappen uit om zaadadressen te maken:
    >
    >Het label van het adres wordt automatisch ingevuld met de achternaam en voornaam die u hebt gedefinieerd.
    >
-   >Het is niet nodig om alle gebieden van elk lusje in te gaan wanneer het creëren van een zaadadres. Ontbrekende personalisatie-elementen worden willekeurig ingevoerd tijdens de levering.
+   >U hoeft niet alle velden van elk tabblad in te voeren wanneer u een zaadadres maakt. Ontbrekende personalisatie-elementen worden willekeurig ingevoerd tijdens de leveringsanalyse.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. In de **[!UICONTROL Seed fields]** voert u de waarden in die tijdens de analysefase in de leveringslogboeken worden ingevoegd (in de **[!UICONTROL nms:broadLog]** tabel).
+1. In de **[!UICONTROL Address fields]** voert u de waarden in die tijdens de analysefase in de leveringslogboeken worden ingevoegd (in de **[!UICONTROL nms:broadLog]** tabel).
 
 1. In de **[!UICONTROL Additional data]** voert u de aanpassingsgegevens in die worden gebruikt voor de leveringen die worden gemaakt in de workflows voor gegevensbeheer en waaraan u een specifieke waarde wilt toewijzen.
 
