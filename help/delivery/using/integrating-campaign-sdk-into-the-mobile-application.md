@@ -4,9 +4,9 @@ title: Campagne SDK integreren
 description: Leer hoe u de campagne-SDK kunt integreren in uw mobiele app
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,17 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-
->[!NOTE]
+>[!CAUTION]
 >
->Adobe raadt u aan de Adobe Experience Platform Mobile SDK te gebruiken door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile SDK helpt Adobe Experience Cloud-oplossingen en -services aan te schaffen in uw mobiele apps. De configuratie SDKs wordt beheerd door de Inzameling UI van Gegevens voor flexibele configuratie en verlengbare, op regels-gebaseerde integratie. [Meer informatie in de documentatie van Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-Campagne-SDK&#39;s voor iOS en Android zijn een van de componenten van de Mobile App Channel-module. Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
+>Adobe raadt u ten zeerste aan de Adobe Experience Platform Mobile SDK te gebruiken door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile SDK helpt Adobe Experience Cloud-oplossingen en -services aan te schaffen in uw mobiele apps. De configuratie SDKs wordt beheerd door de Inzameling UI van Gegevens voor flexibele configuratie en verlengbare, op regels-gebaseerde integratie. [Meer informatie in de documentatie van Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Neem contact op met de [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 Raadpleeg voor meer informatie over de verschillende ondersteunde Android- en iOS-versies de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
 
+U vindt onder de integratiestappen voor Campagne SDK.
 
-## Campagne SDK laden {#loading-campaign-sdk}
++++**Campagne SDK laden**
 
 * **In Android**: de **neolane_sdk-release.aar** bestand moet aan het project zijn gekoppeld.
 
@@ -55,7 +53,9 @@ Raadpleeg voor meer informatie over de verschillende ondersteunde Android- en iO
    >
    >Voor versie 1.0.25 van de SDK zijn de vier architecturen beschikbaar in de **Neolane_SDK.h** bestand.
 
-## Integratie-instellingen declareren {#declaring-integration-settings}
++++
+
++++**Integratie-instellingen declareren**
 
 Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de functionele beheerder de ontwikkelaar de volgende informatie geven:
 
@@ -85,7 +85,9 @@ Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de function
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## Registratiefunctie {#registration-function}
++++
+
++++**Registratiefunctie**
 
 Met de registratiefunctie kunt u:
 
@@ -141,7 +143,9 @@ Met de registratiefunctie kunt u:
    }
    ```
 
-## Trackingfunctie {#tracking-function}
++++
+
++++**Trackingfunctie**
 
 * **In Android**:
 
@@ -293,7 +297,9 @@ Met de registratiefunctie kunt u:
    >
    >Vanaf versie 7.0 **toepassing:didReceiveRemoteNotification:fetchCompletionHandler** -functie wordt geïmplementeerd, roept het besturingssysteem alleen deze functie aan. De **application:didReceiveRemoteNotification** functie wordt daarom niet aangeroepen.
 
-## Beheer van stille meldingen {#silent-notification-tracking}
++++
+
++++**Beheer van stille meldingen**
 
 Met iOS kunt u meldingen op de achtergrond verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kun je ze volgen.
 
@@ -333,7 +339,9 @@ Volg het onderstaande voorbeeld om je melding op te volgen:
 }
 ```
 
-### RegisterDeviceStatus-gedelegeerde {#registerdevicestatus-delegate}
++++
+
++++**RegisterDeviceStatus-gedelegeerde**
 
 >[!NOTE]
 >
@@ -529,7 +537,9 @@ Om **registerDeviceStatus** afgevaardigde, volg deze stappen:
    @end
    ```
 
-## Variabelen {#variables}
++++
+
++++**Variabelen**
 
 Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de mobiele toepassingscode en in de Adobe Campaign-console, in het **[!UICONTROL Variables]** in de toegewijde mobiele toepassingsservice (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
@@ -577,7 +587,9 @@ Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u
 >
 >Adobe raadt u aan korte variabelenamen te kiezen, omdat de berichtgrootte voor iOS en Android beperkt is tot 4 kB.
 
-## Meldingsservice-extensie {#notification-service-extension}
++++
+
++++**Meldingsservice-extensie**
 
 **Voor iOS**
 
@@ -611,7 +623,9 @@ De media moeten worden gedownload op het niveau van de berichtdienst uitbreiding
     // Perform the download to local storage
 ```
 
-## Extensie meldingsinhoud {#notification-content-extension}
++++
+
++++**Extensie meldingsinhoud**
 
 **Voor iOS**
 
@@ -662,3 +676,5 @@ Op dit niveau moet u:
    }
    @end
    ```
+
++++
