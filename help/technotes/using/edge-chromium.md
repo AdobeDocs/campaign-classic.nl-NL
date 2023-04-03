@@ -4,10 +4,10 @@ title: TechNote - Microsoft Edge Chromium inschakelen voor uw Campagne-omgeving
 description: Campagne - Edge Chromium
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 12%
+source-wordcount: '246'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 ## Wat is er veranderd?
 
-Na afloop van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor Adobe Services (aanmeldingspagina) in de clientconsole nu Microsoft Edge Chromium, vanaf Campaign Classic v7.3.
+Na het einde van de levensduur van Microsoft Internet Explorer 11 gebruikt de HTML-renderingengine voor dashboards in de clientconsole Edge Chromium, vanaf Campaign Classic v7.3.
 
 Naast de installatie van de Microsoft Edge Webview 2-runtime, die nu [vereist voor elke installatie van de clientconsole](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium moet zijn ingeschakeld voor uw exemplaar(s).
 
@@ -29,7 +29,7 @@ Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit g
 
 ## Hoe kan ik bijwerken?
 
-* Als **gehost** Adobe heeft Microsoft Edge Chromium al ingeschakeld voor uw exemplaar(s).
+* Als **gehost** Adobe heeft Microsoft Edge Chromium al ingeschakeld voor uw exemplaar(s). Er is geen aanvullende actie vereist.
 
 * Als **op locatie/hybride** moet u Microsoft Edge Chromium inschakelen voor uw exemplaar(s).
 
@@ -39,19 +39,19 @@ Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit g
 
    1. Het configuratiebestand van de Campagneserver bewerken (`serverConf.xml`)
    1. In de `<web>` module, set `webView2Mode = "1"`
-   1. Laad de serverconfiguratie opnieuw
+   1. Voer de volgende opdracht uit om de serverconfiguratie opnieuw te laden:
 
       ```
       nlserver config -reload
       ```
 
-   1. De webserver opnieuw starten
+   1. Voer de volgende opdracht uit om de webserver opnieuw te starten:
 
       ```
       nlserver restart web
       ```
 
-   1. Start Apache opnieuw als uw omgeving op Apache wordt uitgevoerd
+   1. Als uw omgeving Apache als webserver gebruikt, voert u de volgende opdracht uit om Apache opnieuw te starten:
 
       ```
       /etc/init.d/apache2 restart
