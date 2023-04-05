@@ -4,7 +4,7 @@ title: De mobiele iOS-toepassing in Adobe Campaign configureren
 description: Meer informatie over het instellen van uw mobiele toepassing voor iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Configuratiestappen voor iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Nadat het pakket is geïnstalleerd, kunt u de iOS-toepassingsinstellingen in Adobe Campaign Classic definiëren.
 
