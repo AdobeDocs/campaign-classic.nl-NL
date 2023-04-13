@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### April 2023
 
-Er is een technologie toegevoegd voor het inschakelen van Microsoft Edge Chromium in omgevingen op locatie/hybride omgevingen. [Meer informatie](../../technotes/using/edge-chromium.md)
+Er is een technische opmerking toegevoegd voor het inschakelen van Microsoft Edge Chromium in on-premise/hybride omgevingen. [Meer informatie](../../technotes/using/edge-chromium.md)
 
 ### Maart 2023
 
