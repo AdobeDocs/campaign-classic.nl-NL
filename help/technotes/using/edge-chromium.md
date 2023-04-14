@@ -2,13 +2,13 @@
 product: campaign
 title: TechNote - Microsoft Edge Chromium inschakelen voor uw Campagne-omgeving
 description: Campagne - Edge Chromium
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 11%
 
 ---
-
 
 # Microsoft Edge Chromium inschakelen voor uw omgeving {#edge-conf}
 
@@ -65,4 +65,3 @@ Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit g
 * [Upgrade uw omgeving](../../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [Campagne-clientconsole installeren](../../installation/using/installing-the-client-console.md)
-

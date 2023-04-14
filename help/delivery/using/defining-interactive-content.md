@@ -4,10 +4,10 @@ title: Interactieve inhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren met AMP in Adobe Campaign
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Met Adobe Campaign kunt u de nieuwe interactieve [AMP voor e-mail](https://amp.dev/about/email/) -indeling, waarmee onder bepaalde omstandigheden dynamische e-mailberichten kunnen worden verzonden.
+Met Adobe Campaign kunt u de interactieve [AMP voor e-mail](https://amp.dev/about/email/) -indeling, waarmee onder bepaalde omstandigheden dynamische e-mailberichten kunnen worden verzonden.
 
 Met AMP voor e-mail kunt u:
 * Test het leveren van AMP-e-mails naar specifieke adressen die correct zijn geconfigureerd.
-* E-mails met AMP naar Gmail-, Outlook- of Mail.ru-adressen verzenden na registratie bij de betreffende providers.
+* E-mails met AMP naar Gmail- of Mail.ru-adressen verzenden nadat u zich hebt geregistreerd bij de betreffende providers.
 
 Ga voor meer informatie over het testen en verzenden van AMP-e-mails naar [deze sectie](#targeting-amp-email).
 
@@ -89,7 +89,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    ![](assets/amp_tab_perso.png)
 
-1. Als u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
+1. Wanneer u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
 
    >[!NOTE]
    >
@@ -131,16 +131,16 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
 Wanneer u AMP-inhoud maakt in Adobe Campaign, moet u voldoen aan de voorwaarden voor het verzenden van een dynamische e-mail, die specifiek zijn voor de e-mailproviders van uw ontvangers.
 
-Momenteel ondersteunen drie e-mailproviders het testen van deze indeling: Gmail, Outlook en Mail.ru.
+Momenteel ondersteunen twee e-mailproviders het testen van deze indeling: Gmail en Mail.ru.
 
-Alle stappen en specificaties die vereist zijn om levering met AMP-indeling op Gmail-accounts te testen, worden in de corresponderende [Gmail](https://developers.google.com/gmail/ampemail?), [Outlook ](https://docs.microsoft.com/en-gb/outlook/amphtml/), en [Mail.ru](https://postmaster.mail.ru/amp) documentatie voor ontwikkelaars.
+Alle stappen en specificaties die vereist zijn om levering met AMP-indeling op Gmail-accounts te testen, worden in de corresponderende [Gmail](https://developers.google.com/gmail/ampemail?), en [Mail.ru](https://postmaster.mail.ru/amp) documentatie voor ontwikkelaars.
 
 Met name moet aan de volgende eisen worden voldaan:
-* Volg de beveiligingsvereisten voor AMP die specifiek gelden voor [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/security-requirements), en [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
+* Volg de beveiligingsvereisten voor AMP die specifiek gelden voor [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), en [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
 * Het AMP MIME-onderdeel moet een [geldig AMP-document](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email).
 * Het AMP MIME-onderdeel moet kleiner zijn dan 100 kB.
 
-U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google.com/gmail/ampemail/tips) en de [Beste werkwijzen van AMP voor Vooruitzichten](https://docs.microsoft.com/en-gb/outlook/amphtml/best-practices).
+U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google.com/gmail/ampemail/tips) documentatie.
 
 ## Een AMP-e-mail sturen {#targeting-amp-email}
 
@@ -156,15 +156,15 @@ U kunt testen hoe dynamische berichten van Adobe Campaign naar geselecteerde e-m
 
 >[!NOTE]
 >
->Momenteel ondersteunen alleen Gmail, Outlook en Mail.ru het testen van de AMP-indeling.
+>Alleen Gmail en Mail.ru ondersteunen het testen van de AMP-indeling.
 
-Voor Gmail en Vooruitzichten, moet u eerst de afzenderadres(sen) toevoegen u aan de lijst van gewenste personen gebruikt om van Adobe Campaign voor de rekeningen van Gmail en van Vooruitzichten te leveren u richt.
+Voor Gmail, moet u eerst de afzenderadres(sen) toevoegen u aan de lijst van gewenste personen gebruikt om van Adobe Campaign voor de rekeningen te leveren Gmail u richt.
 
 Dit doet u als volgt:
 1. Controleer of de optie voor het inschakelen van dynamische e-mail is ingeschakeld bij de desbetreffende e-mailprovider(s).
 1. Kopieer het afzenderadres dat in de levering wordt getoond **[!UICONTROL From]** veld en plak dit in de juiste sectie voor de accountinstellingen van uw e-mailprovider.
 
-Voor meer informatie raadpleegt u de [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) en [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#individual-mailbox-registration) documentatie voor ontwikkelaars.
+Voor meer informatie raadpleegt u de [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) ontwikkelaarsdocumentatie.
 
 ![](assets/amp_from_field.png)
 
@@ -176,9 +176,9 @@ U kunt experimenteren met het leveren van dynamische e-mailberichten door u te r
 
 >[!NOTE]
 >
->Momenteel ondersteunen alleen Gmail, Outlook en Mail.ru de AMP-indeling.
+>Alleen Gmail en Mail.ru ondersteunen de AMP-indeling.
 
-Als u eenmaal met een paar adressen bent getest, kunt u AMP-e-mails naar elk Gmail- of Outlook-adres sturen. Hiervoor moet u zich met respect registreren bij Google of Microsoft en wachten op hun antwoord. Volg de stappen in het dialoogvenster [Gmail](https://developers.google.com/gmail/ampemail/register) en [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration) documentatie voor ontwikkelaars. Nadat je bent ingeschreven, word je een geautoriseerde afzender.
+Als u eenmaal met een paar adressen bent getest, kunt u AMP-e-mails naar elk Gmail-adres sturen. Hiervoor moet u zich registreren bij Google en wachten op het antwoord. Volg de stappen in het dialoogvenster [Gmail](https://developers.google.com/gmail/ampemail/register) ontwikkelaarsdocumentatie. Nadat je bent ingeschreven, word je een geautoriseerde afzender.
 
 Als u AMP-e-mails naar Mail.ru-adressen wilt verzenden, voert u de vereisten en stappen uit die in het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/?lang=en#howto) (**Als u een e-mailafzender bent** ).
 
@@ -186,7 +186,7 @@ Als u AMP-e-mails naar Mail.ru-adressen wilt verzenden, voert u de vereisten en 
 
 Zodra uw AMP-inhoud en -fallback klaar zijn en u een compatibel doel hebt gedefinieerd, kunt u de e-mail verzenden zoals u dat gewoonlijk doet.
 
-Momenteel ondersteunen alleen Gmail, Outlook en Mail.ru de AMP-indeling onder bepaalde voorwaarden. U kunt adressen van andere e-mailleveranciers richten, maar zij zullen de HTML of gewone tekstversie van uw e-mail ontvangen.
+Momenteel ondersteunen alleen Gmail en Mail.ru de AMP-indeling onder bepaalde omstandigheden. U kunt adressen van andere e-mailleveranciers richten, maar zij zullen de HTML of gewone tekstversie van uw e-mail ontvangen.
 
 >[!IMPORTANT]
 >
