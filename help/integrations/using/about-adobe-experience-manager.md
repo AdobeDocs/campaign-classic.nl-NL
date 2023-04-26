@@ -5,9 +5,9 @@ description: Informatie over Adobe Experience Manager
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 98a67e5b6e3f8cf8ba596db1fadd61fff821be30
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,5 @@ U moet de volgende elementen hebben:
 * Een Adobe Campaign-instantie.
 
 Adobe Campaign is compatibel met Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 en 6.5. In de volgende secties wordt een overzicht van de integratie gegeven.
-
->[!NOTE]
->
->Adobe Campaign Classic-sjablonen zijn niet meer beschikbaar met Adobe Experience Manager 6.5.
 
 Raadpleeg voor meer informatie [Adobe Experience Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

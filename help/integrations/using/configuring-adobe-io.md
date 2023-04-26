@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 98a67e5b6e3f8cf8ba596db1fadd61fff821be30
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '717'
 ht-degree: 4%
 
 ---
@@ -68,6 +68,9 @@ Controleer voordat u met deze implementatie begint of:
 1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbare en privé zeer belangrijke paar tot stand te brengen.
 
    De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met de optie 2 kunt u handmatig uw **[!UICONTROL Public key]** met een langere vervaldatum.
+
+   Voor een geleidelijke gids over hoe te om het verlopen sleutelparen van het certificaat te vervangen, verwijs naar [deze pagina](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs).
+
 
    >[!CAUTION]
    >
