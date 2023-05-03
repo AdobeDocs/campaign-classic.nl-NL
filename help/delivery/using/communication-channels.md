@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Communicatiekanalen
-description: Leveringen maken om gepersonaliseerde berichten op verschillende kanalen te verzenden
+description: Leveringen maken om gepersonaliseerde berichten via verschillende kanalen te verzenden
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355

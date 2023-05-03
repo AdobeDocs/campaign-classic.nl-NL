@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Aan de slag met het gegevensmodel Campaign Classic
-description: Leer hoe u het gegevensmodel van de campagne kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
+description: Leer hoe u het Campaign-datamodel kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
