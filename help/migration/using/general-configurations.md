@@ -5,8 +5,10 @@ description: Algemene configuraties
 audience: migration
 content-type: reference
 topic-tags: configuration
+hide: true
+hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '2625'
 ht-degree: 0%
@@ -354,7 +356,7 @@ Samengevoegde functie (verzameling)
    >
    >De verbindingen worden automatisch uitgevoerd voor de gezamenlijke functies. Het is niet meer noodzakelijk om de voorwaarde WHERE O0.iOperationId=iOperationId te specificeren.
    >
-   >Het is niet meer mogelijk om de functie &quot;count(*)&quot; te gebruiken. Je moet &quot;countall()&quot; gebruiken.
+   >Het is niet meer mogelijk om &quot;count()&#42;)&quot;. Je moet &quot;countall()&quot; gebruiken.
 
 * Voormalige syntaxis:
 
@@ -456,7 +458,8 @@ Er zijn drie manieren om een conflict op te lossen:
 * **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
 
    >[!IMPORTANT]
-   Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
+   >
+   >Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
@@ -502,12 +505,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in elk representatieschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
 
 >[!IMPORTANT]
-Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
+>
+>Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
 Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in het dialoogvenster **Migratie** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** velden). De inhoud in de **NmsEmailOfferView** tabel is verplaatst naar de aanbiedingstabel.
 
 >[!NOTE]
-Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
+>
+>Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +611,8 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 1. Voer uitgebreide tests uit.
 
    >[!NOTE]
-   De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
+   >
+   >De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
 
 ## Rapporten {#reports}
 
