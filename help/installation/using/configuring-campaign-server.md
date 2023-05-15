@@ -156,7 +156,7 @@ Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
 Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
-* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s),
+* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s);
 * /nl/jsp/**m.jsp**: spiegelpagina&#39;s,
 * /nl/jsp/**opening van een sessie.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
 * /nl/jsp/**s.jsp** : Het gebruik van virale marketing (sponsoring en sociale netwerken).
