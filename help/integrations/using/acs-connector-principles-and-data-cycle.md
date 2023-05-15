@@ -2,11 +2,12 @@
 product: campaign
 title: Aan de slag met ACS-connector
 description: ACS-verbindingsbeginselen en gegevenscyclus
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Aan de slag met ACS-connector{#acs-connector-gs}
 
-![](../../assets/v7-only.svg)
+
 
 ACS Connector bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Campagne v7 heeft geavanceerde hulpmiddelen om het primaire marketing gegevensbestand te beheren. De gegevensreplicatie van Campagne v7 staat Campaign Standard toe om de rijke gegevens in een gebruikersvriendelijk milieu te gebruiken.
 

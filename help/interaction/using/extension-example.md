@@ -2,11 +2,13 @@
 product: campaign
 title: Extensievoorbeeld
 description: Extensievoorbeeld
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Extensievoorbeeld{#extension-example}
 
-![](../../assets/common.svg)
+
 
 In het geval van een binnenkomend contact (callcenter of website) worden de meest relevante aanbiedingen aan een bepaald contact voorgesteld met behulp van een reeks subsidiabiliteitsregels. Als u de geschiktheidscriteria voor uw aanbiedingen wilt verrijken, breidt u de **nms:interactie** schema.
 

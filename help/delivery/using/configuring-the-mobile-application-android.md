@@ -2,9 +2,10 @@
 product: campaign
 title: De mobiele Android-toepassing configureren in Adobe Campaign
 description: Leer hoe u uw mobiele toepassing instelt voor Android
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Configuratiestappen voor Android
 
-![](../../assets/v7-only.svg)
+
 
 Nadat het pakket is geïnstalleerd, kunt u de instellingen voor uw Android-app definiëren in Adobe Campaign Classic.
 

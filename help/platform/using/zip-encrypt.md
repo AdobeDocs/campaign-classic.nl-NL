@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Een bestand zoeken of versleutelen
-description: Leer hoe u een bestand in Campaign Classic kunt comprimeren of comprimeren voordat u het verwerkt.
+description: Leer hoe u een bestand kunt zippen of versleutelen in Campagne voordat u het verwerkt
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '540'
 ht-degree: 6%
 
 ---
 
 # Een bestand comprimeren of versleutelen {#zipping-or-encrypting-a-file}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wanneer u een exportbewerking definieert via een **[!UICONTROL Data extraction (file)]** kunt u een nabewerking definiëren om het bestand te zip of te coderen.
 

@@ -2,10 +2,12 @@
 product: campaign
 title: Problemen met de pijplijn oplossen
 description: Problemen met de pijplijn oplossen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -14,7 +16,7 @@ ht-degree: 1%
 
 # Problemen met de pijplijn oplossen {#pipeline-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 **Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt; instantie >&quot;**
 
@@ -104,4 +106,4 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 
 Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om uw werkgebiedinstantie te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor uw werkgebiedinstantie te testen.
 
-Uw productie-instantie blijft de verouderde verificatie gebruiken en wordt door deze wijziging niet beïnvloed.
+Uw productie-instantie zal de oudere verificatie blijven gebruiken en deze wijziging heeft geen invloed op deze instantie.

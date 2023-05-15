@@ -2,9 +2,10 @@
 product: campaign
 title: Niet-ondersteunde migratie van SMS-connector
 description: Niet-ondersteunde SMS-connector migreren naar de uitgebreide algemene SMPP-connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Niet-ondersteunde SMS-connector migreren naar de uitgebreide algemene SMPP-connector{#unsupported-connector-migration}
 
-![](../../assets/v7-only.svg)
+
 
 Vanaf versie 20.2, zijn de erfenisschakelaars verouderd. Dit document zal u helpen schakelaars migreren die op het oude systeem nog lopen aan de geadviseerde schakelaar SMPP.
 

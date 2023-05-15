@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: PII-weergave beperken
-description: PII-weergave beperken
+title: PI-weergave beperken
+description: Leer hoe u de weergave PI beperkt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: PI
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 2%
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
 # PI-weergave beperken{#restricting-pii-view}
-
-![](../../assets/v7-only.svg)
 
 ## Overzicht {#overview}
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Aangepaste tabel voor ontvangers
 description: Aangepaste tabel voor ontvangers
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Custom Resources
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Een aangepaste tabel voor ontvangers gebruiken{#about-custom-recipient-table}
 
-![](../../assets/common.svg)
+
 
 In deze sectie worden de beginselen beschreven voor het gebruik van een aangepaste (of externe) tabel voor ontvangers.
 

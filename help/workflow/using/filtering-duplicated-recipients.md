@@ -2,9 +2,10 @@
 product: campaign
 title: Gedupliceerde ontvangers filteren
 description: Leer hoe u gedupliceerde ontvangers filtert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Gedupliceerde ontvangers filteren {#filtering-duplicated-recipients}
 
-![](../../assets/v7-only.svg)
+
 
 In dit voorbeeld willen we ontvangers filteren die twee of meer in een levering verschijnen om dubbele profielen te herstellen.
 

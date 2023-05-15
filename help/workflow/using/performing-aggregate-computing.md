@@ -2,9 +2,10 @@
 product: campaign
 title: Berekening van samenvoegingen uitvoeren
 description: Leer hoe u geaggregeerde computertaken kunt uitvoeren in query's
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Berekening van samenvoegingen uitvoeren {#performing-aggregate-computing}
 
-![](../../assets/v7-only.svg)
+
 
 In dit voorbeeld willen we het aantal ontvangers dat in Londen woont, op basis van geslacht tellen.
 

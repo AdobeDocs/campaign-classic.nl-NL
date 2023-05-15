@@ -2,9 +2,11 @@
 product: campaign
 title: Bijgehouden koppelingen configureren
 description: Bijgehouden koppelingen configureren
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # Bijgehouden koppelingen configureren{#how-to-configure-tracked-links}
 
-![](../../assets/common.svg)
+
 
 Voor elke levering kunt u de ontvangst van berichten en de activering van de koppelingen die in de berichtcontent zijn opgenomen, opvolgen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarvoor ze als doel zijn opgegeven.
 

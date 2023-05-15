@@ -2,8 +2,9 @@
 product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 4%
@@ -12,7 +13,7 @@ ht-degree: 4%
 
 # Bestaande Genesis-integratie migreren naar Adobe Analytics Connector {#acc-aa-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Vanaf de release van Campaign Classic v7 21.1.3 is de Adobe Analytics Data Connector afgekeurd. [Meer informatie](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 

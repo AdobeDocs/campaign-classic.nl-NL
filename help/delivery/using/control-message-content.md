@@ -2,9 +2,11 @@
 product: campaign
 title: Informatie over leverbaarbaarheid in Adobe Campaign Classic
 description: Meer informatie over het beheren van de leverbaarheid in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # De inhoud van uw bericht bepalen{#control-message-content}
 
-![](../../assets/common.svg)
+
 
 Om ervoor te zorgen dat je e-mailberichten bij je ontvangers terechtkomen en je e-mailsnelheid verbeteren, moeten ze een aantal regels in acht nemen. Anders, kan de inhoud van bepaalde berichten als spam worden ontdekt. Adobe Campaign biedt u verschillende gereedschappen om ervoor te zorgen dat uw inhoud aan deze regels voldoet.
 

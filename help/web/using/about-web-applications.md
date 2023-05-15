@@ -2,9 +2,11 @@
 product: campaign
 title: Aan de slag met webapplicaties
 description: Dynamische webtoepassingen, bestemmingspagina's en enquêtes maken en delen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # Aan de slag met webapplicaties{#about-web-applications}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u dynamische en interactieve webtoepassingen maken en publiceren met gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker.
 

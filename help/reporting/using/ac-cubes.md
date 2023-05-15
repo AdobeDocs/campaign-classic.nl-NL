@@ -2,17 +2,19 @@
 product: campaign
 title: Aan de slag met kubussen
 description: Aan de slag met kubussen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '343'
 ht-degree: 24%
 
 ---
 
 # Aan de slag met kubussen{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 De exploratie van gegevens in het gegevensbestand wordt aangeboden via **Marketing Analytics** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
@@ -44,4 +46,4 @@ Met de module Campagne Marketing Analytics kunt u:
 1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.
 1. Identificeer populaties en verwijs hen in lijsten.
 
-Leer hoe u kubussen kunt maken en gebruiken in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}.
+Leer hoe u kubussen kunt maken en gebruiken in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

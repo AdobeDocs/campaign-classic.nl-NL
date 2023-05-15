@@ -2,9 +2,10 @@
 product: campaign
 title: Beschrijving van Adobe Campaign Classic-gegevensmodel
 description: In dit document wordt het Adobe Campaign-gegevensmodel beschreven
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -13,7 +14,6 @@ ht-degree: 1%
 
 # Beschrijving van gegevensmodel campagne{#data-model-description}
 
-![](../../assets/v7-only.svg)
 
 Adobe Campaign bevat een vooraf gedefinieerd datamodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
 

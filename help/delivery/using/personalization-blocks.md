@@ -2,9 +2,11 @@
 product: campaign
 title: Personalisatieblokken
 description: Leer hoe u aanpassingsblokken kunt gebruiken
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Personalisatieblokken{#personalization-blocks}
 
-![](../../assets/common.svg)
+
 
 De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Verpersoonlijkingsblokken invoegen](#inserting-personalization-blocks).
 

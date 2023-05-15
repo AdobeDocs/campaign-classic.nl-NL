@@ -2,11 +2,12 @@
 product: campaign
 title: Profielen synchroniseren
 description: Leer hoe te om profielen met Schakelaar ACS te synchroniseren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Profielen synchroniseren{#synchronizing-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 ACS Connector repliceert gegevens van Campaign v7 aan Campaign Standard. De gegevens die van Campagne v7 worden ontvangen kunnen in Campaign Standard worden gebruikt om leveringen tot stand te brengen. U kunt zien hoe profielen worden gesynchroniseerd door de hieronder vermelde bewerkingen uit te voeren.
 

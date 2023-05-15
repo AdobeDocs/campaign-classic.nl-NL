@@ -2,11 +2,13 @@
 product: campaign
 title: Releases van 2020
 description: Meer informatie over Campaign Classic 2020-releases
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
+hidefromtoc: true
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '6601'
 ht-degree: 73%
@@ -15,7 +17,7 @@ ht-degree: 73%
 
 # Releases van 2020{#release-2020}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## Release 20.3{#release-20-3}

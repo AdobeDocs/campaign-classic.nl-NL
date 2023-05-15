@@ -2,9 +2,11 @@
 product: campaign
 title: Controleren vóór verzending
 description: Zodra uw bericht klaar is, voer alle controles uit alvorens te verzenden
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Alle controles uitvoeren voordat ze worden verzonden {#perform-all-checks}
 
-![](../../assets/common.svg)
+
 
 Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wordt getoond, en bevat geen fouten zoals verkeerde verpersoonlijking of gebroken verbindingen.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Een workflow starten
 description: Leer hoe u een workflow start en werkstroomhandelingen ontdekt op de werkbalk en met de rechtermuisknop op het menu klikt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Een workflow starten {#starting-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 Een workflow wordt altijd handmatig gestart. Wanneer begonnen, kan het echter inactief afhankelijk van de informatie blijven die via een planner wordt gespecificeerd (zie [Planner](scheduler.md)) of activiteiten plannen.
 

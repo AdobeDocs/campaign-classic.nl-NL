@@ -2,11 +2,12 @@
 product: campaign
 title: Midsourcingimplementatie
 description: Midsourcingimplementatie
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Midsourcingimplementatie{#mid-sourcing-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een &quot;mid-sourcing&quot;-server die wordt gehost op Adobe Campaign.
 

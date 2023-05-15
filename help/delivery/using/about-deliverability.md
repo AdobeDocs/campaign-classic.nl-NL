@@ -2,9 +2,11 @@
 product: campaign
 title: Ga aan de slag met de prestaties in de campagne
 description: Tips en trucs voor levering
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # Wat is afleverbaarheid?{#about-deliverability}
 
-![](../../assets/common.svg)
+
 
 Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren, of als spam worden gemerkt. [Meer weten waarom het van belang is om te leveren](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
@@ -31,7 +33,7 @@ De leveringsproblemen houden gewoonlijk verband met maatregelen van bescherming 
 
 >[!NOTE]
 >
->Omdat ISPs verplicht is voortdurend nieuwe verfijnde het filtreren technieken te ontwikkelen om hun klanten tegen spammers te beschermen, wordt de e-maillevering gekenmerkt door voortdurend veranderende criteria en regels. Zorg ervoor dat u naar de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) die regelmatig wordt bijgewerkt.
+>Omdat ISPs verplicht is voortdurend nieuwe verfijnde het filtreren technieken te ontwikkelen om hun klanten tegen spammers te beschermen, wordt de e-maillevering gekenmerkt door voortdurend veranderende criteria en regels. Zorg ervoor dat u naar de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) die regelmatig wordt bijgewerkt.
 
 ### Leverbaarheidsgraad
 

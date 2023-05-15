@@ -2,8 +2,9 @@
 product: campaign
 title: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
 description: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # Aanbevelingen voor hardwareaanpassing{#hardware-sizing-reco}
 
-![](../../assets/v7-only.svg)
+
 
 ## Overzicht
 
@@ -87,7 +88,7 @@ Geraamd volume:
 | Actieve ontvangers | 5 miljoen |
 | Email | 4,2 miljoen/maand |
 | Direct mail | 1 miljoen/maand |
-| Mobile SMS | 100.000/maand |
+| Mobiele SMS | 100.000/maand |
 | Maximale dagelijkse e-mailvolume | 500 |
 
 Voor deze volumes biedt een paar Adobe Campaign-toepassingsserversystemen alle functionaliteit voor Adobe Campaign Client-gebruikers en workflowuitvoering. Voor 5 miljoen actieve ontvangers en dit e-mailvolume zijn de werklasten van de toepassingsserver niet CPU- of I/O-intensief. het grootste deel van de stress ligt in de database .
@@ -134,10 +135,10 @@ Geraamd volume:
 | Kanaal | Volume |
 | ----------------------- | ----------------- |
 | Actieve ontvangers | 20 miljoen |
-| E-mail | 42 miljoen per maand |
+| Email | 42 miljoen per maand |
 | Direct mail | 10 miljoen/maand |
-| Mobile SMS | 1.000.000/maand |
-| Maximale dagelijkse e-mailvolume | 5 000 000 |
+| Mobiele SMS | 1.000.000/maand |
+| Maximale dagelijkse e-mailvolume | 5,000,000 |
 
 ### Web- en toepassingsservers
 
@@ -170,9 +171,9 @@ Geraamd volume:
 | Kanaal | Volume |
 | ----------------------- | ----------------- |
 | Actieve ontvangers | 50 miljoen |
-| E-mail | 108 miljoen per maand |
+| Email | 108 miljoen per maand |
 | Direct mail | 25 miljoen per maand |
-| Mobile SMS | 2,5 miljoen/maand |
+| Mobiele SMS | 2,5 miljoen/maand |
 | Transactionele berichten | 2,5 miljoen/maand |
 | Maximale dagelijkse e-mailvolume | 2,5 miljoen |
 

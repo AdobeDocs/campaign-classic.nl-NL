@@ -2,9 +2,10 @@
 product: campaign
 title: Levering
 description: Meer informatie over de workflowactiviteit van het leveringstype
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Levering{#delivery}
 
-![](../../assets/v7-only.svg)
+
 
 A **Aflevering**-type activiteit laat u een leveringsactie tot stand brengen. Deze kan worden samengesteld uit invoerelementen.
 

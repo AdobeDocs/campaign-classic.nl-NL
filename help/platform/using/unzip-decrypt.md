@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Een bestand ontsleutelen of ontsleutelen
-description: Leer hoe u een bestand in Campaign Classic decodeert of decodeert voordat u het verwerkt.
+description: Leer hoe u een bestand in Campagne decodeert of decodeert voordat u het verwerkt
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '715'
 ht-degree: 11%
 
 ---
 
 # Een bestand decoderen of decoderen {#unzipping-or-decrypting-a-file-before-processing}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen.
 

@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Data importeren en exporteren met behulp van workflows
-description: Leer hoe u gegevens importeert en exporteert met workflows in Campaign Classic.
+description: Leer hoe u gegevens importeert en exporteert met workflows in Campagne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 5%
 
 ---
 
 # Gegevens importeren en exporteren met workflows {#import-export-workflows}
 
-![](../../assets/common.svg)
+
 
 ## Gegevens verzamelen {#collecting-data-workflows}
 

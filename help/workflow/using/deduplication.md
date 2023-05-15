@@ -2,9 +2,10 @@
 product: campaign
 title: Deduplicatie
 description: Meer informatie over de deduplicatieworkflowactiviteit
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -13,7 +14,7 @@ ht-degree: 10%
 
 # Deduplicatie{#deduplication}
 
-![](../../assets/v7-only.svg)
+
 
 Deduplicatie verwijdert duplicaten van de resultaten van binnenkomende activiteiten. U kunt deduplicatie uitvoeren op het e-mailadres, telefoonnummer of een ander veld.
 
@@ -21,24 +22,24 @@ De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 -----|------------|-----------|-------|--------------|------
-| 03-02-2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
-| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22-07-2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 De **[!UICONTROL Deduplication]** activiteit heeft de capaciteit om een volledige rij als uniek verslag te houden nadat de duplicaten werden geïdentificeerd. Bijvoorbeeld in het bovenstaande gebruiksgeval, als de activiteit wordt gevormd om slechts het verslag met het oudste te houden **[!UICONTROL Date]** Het resultaat zou zijn:
 
-| Datum | Voornaam | Achternaam | E-mail | Mobiele telefoon | Telefoon |
+| Datum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 -----|----------|------------|-------|--------------|------
-| 03-02-2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 De geselecteerde hoofdrecord stuurt de gegevens door zonder dat veldgegevens worden samengevoegd met andere relevante gegevens in de dubbele rijen.
 
 Complementeren:
 
-| Datum | Voornaam | Achternaam | E-mail | Mobiele telefoon | Telefoon |
+| Datum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 -----|------------|-----------|-------|--------------|------
-| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22-07-2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## Best practices {#best-practices}
 

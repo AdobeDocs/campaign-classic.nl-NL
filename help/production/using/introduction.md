@@ -2,26 +2,27 @@
 product: campaign
 title: Inleiding
 description: Inleiding
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
 # Inleiding{#introduction}
 
-![](../../assets/v7-only.svg)
+
 
 In deze sectie wordt de procedure beschreven die moet worden toegepast om Adobe Campaign, client en server bij te werken, en wordt de overschakeling naar Unicode van een bestaande instantie beschreven.
 
 >[!NOTE]
 >
->Voor gehoste instanties, moet u met uw Beheerder van Adobe coördineren.\
+>Voor ontvangen/beheerde de diensteninstanties, moet u met uw Beheerder van Adobe coördineren.\
 >Voor on-premise gevallen, kunt u hulp van Adobe Consultants krijgen.
 
 De upgrade moet worden toegepast op alle servers waarop Adobe Campaign is geïnstalleerd.

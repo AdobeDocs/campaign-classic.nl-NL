@@ -2,9 +2,11 @@
 product: campaign
 title: Leveringen configureren
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # De leveringen in de workflow configureren {#step-4--configuring-the-deliveries-in-the-workflow}
 
-![](../../assets/common.svg)
+
 
 Eenmaal [populaties worden gecreëerd](a-b-testing-uc-population-samples.md), kunt u de leveringen configureren. In dit geval, laten de eerste twee leveringen u toe om verschillende inhoud naar populatie A en B te verzenden. De derde levering is de levering die terugvalt: het wordt verzonden naar de ontvangers die niet tot A of B behoren. De inhoud ervan wordt berekend met behulp van een script en is gelijk aan A of B, afhankelijk van welke score de hoogste open snelheid heeft behaald. We moeten een wachtperiode configureren voor de derde levering, om het resultaat van de leveringen A en B te achterhalen. Daarom omvat de derde levering een **[!UICONTROL Wait]** activiteit.
 

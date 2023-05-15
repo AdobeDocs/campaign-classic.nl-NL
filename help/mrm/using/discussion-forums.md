@@ -2,11 +2,12 @@
 product: campaign
 title: Discussieforums
 description: Meer informatie over het gebruik van discussieforums voor campagnes
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Discussieforums{#discussion-forums}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign-operatoren kunnen discussieforums gebruiken om informatie te delen. De volgende elementen hebben elk hun eigen forum: plannen, programma&#39;s, campagnes, middelen, simulaties, bestanden. Elke exploitant heeft ook een persoonlijk forum. Alle discussies zijn openbaar, zelfs op persoonlijke forums.
 

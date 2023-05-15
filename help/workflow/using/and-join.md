@@ -2,9 +2,10 @@
 product: campaign
 title: AND-join
 description: AND-join
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # AND-join{#and-join}
 
-![](../../assets/v7-only.svg)
+
 
 Verbinden teweegbrengt zijn uitgaande overgang slechts teweeg wanneer alle binnenkomende overgangen worden geactiveerd, d.w.z. wanneer alle vroegere activiteiten worden gebeëindigd. Op deze manier kunt u ervoor zorgen dat bepaalde activiteiten zijn voltooid voordat u doorgaat met het uitvoeren van de workflow.
 

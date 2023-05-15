@@ -2,18 +2,19 @@
 product: campaign
 title: Voorbeelden van JavaScript-code in workflows
 description: Deze voorbeelden laten zien hoe u JavaScript-code kunt gebruiken in een workflow
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 2%
+source-wordcount: '1764'
+ht-degree: 3%
 
 ---
 
 # Voorbeelden van JavaScript-code in workflows{#javascript-in-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 Deze voorbeelden laten zien hoe u JavaScript-code in een workflow kunt gebruiken:
 
@@ -52,7 +53,7 @@ Als u naar de database wilt schrijven, kunt u de statische `Write` op de `xtk:se
    1. Roep de `Write` op de `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+      > Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Geef de XML-code door als een argument voor de schrijfaanvraag.
 
@@ -562,7 +563,7 @@ U kunt records invoegen, bijwerken en verwijderen. U kunt de `Write` in Adobe Ca
 * De `delete` bewerking
 
 >[!IMPORTANT]
-> Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Voorbeeld 1: een record invoegen of bijwerken
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Campaign Classic algemene architectuur
 description: Leer hoe u Campaign Classic installeert en configureert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Algemene architectuur{#general-architecture}
 
-![](../../assets/v7-only.svg)
+
 
 De gebruikelijke Adobe Campaign-implementatie van oplossingen bestaat uit de volgende onderdelen:
 
@@ -71,7 +72,7 @@ Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatte
 
 * Tekstspatiëring: Trackinglogboeken herstellen en consolideren. Het laat u de logboeken van de omleidingsserver terugwinnen en de gezamenlijke indicatoren creëren die door de rapporteringsmodule worden gebruikt.
 * Overbodig verwijderen: Database reinigen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
-* Facturering: Automatisch verzenden van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
+* Facturering: Automatisch verzenden van een activiteitenrapport voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
 
 **Leveringsserver** (nlserver mta)
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Een filter maken
 description: Leer hoe u een filter maakt bij het uitvoeren van query's
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 6232e0df09165bc07c8e521df271874abd5698a9
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Een filter maken {#creating-a-filter}
 
-![](../../assets/v7-only.svg)
+
 
 De filters die beschikbaar zijn in Adobe Campaign worden gedefinieerd door filtervoorwaarden die worden gemaakt in dezelfde besturingsmodus als query&#39;s.
 

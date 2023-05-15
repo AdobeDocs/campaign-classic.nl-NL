@@ -2,9 +2,11 @@
 product: campaign
 title: Een grafiek maken
 description: Leer hoe u een grafiek ontwerpt
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Een grafiek maken{#creating-a-chart}
 
-![](../../assets/common.svg)
+
 
 De gegevens in het gegevensbestand kunnen ook in een grafiek worden verzameld en worden getoond. Adobe Campaign biedt een aantal grafische voorstellingen. Hun configuratie wordt hieronder gedetailleerd beschreven.
 

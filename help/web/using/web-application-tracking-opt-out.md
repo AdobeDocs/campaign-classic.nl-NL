@@ -2,9 +2,11 @@
 product: campaign
 title: Opt-out voor tracking van een webapplicatie
 description: Opt-out voor tracking van een webapplicatie
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Opt-out voor tracking van een webapplicatie{#web-application-tracking-opt-out}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 

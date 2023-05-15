@@ -2,9 +2,11 @@
 product: campaign
 title: Aan de slag met webformulieren
 description: Aan de slag met webformulieren in campagne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # Aan de slag met webformulieren{#about-web-forms}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign integreert een grafische module voor het definiëren en publiceren van webformulieren om pagina&#39;s te maken die invoer- en selectievelden bevatten en die mogelijk gegevens in de database bevatten. Zo kunt u webpagina&#39;s ontwerpen en plaatsen die gebruikers kunnen openen om informatie weer te geven of in te voeren.
 

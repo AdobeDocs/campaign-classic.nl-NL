@@ -2,9 +2,10 @@
 product: campaign
 title: Wizard Nieuw veld
 description: Wizard Nieuw veld
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -13,7 +14,6 @@ ht-degree: 4%
 
 # Wizard Nieuw veld{#new-field-wizard}
 
-![](../../assets/v7-only.svg)
 
 Een wizard die via **[!UICONTROL Tools > Advanced > Add new fields]** Hiermee kunt u een of meer velden toevoegen aan een tabel in de database.
 

@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: 'Probleem met handtekening van bijgehouden URL''s '
-description: 'Probleem met handtekening van bijgehouden URL''s '
+title: Probleem met handtekening van bijgehouden URL's
+description: Probleem met handtekening van bijgehouden URL's
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 36%
@@ -14,7 +15,7 @@ ht-degree: 36%
 
 # Probleem met handtekening van bijgehouden URL&#39;s {#tracked-urls}
 
-![](../../assets/v7-only.svg)
+
 
 Na recente wijzigingen kunnen bijgehouden URL&#39;s mislukken wanneer een URL-handtekening actief is in de campagne. De impact van het probleem verschilt per e-mailaccount. Sommige bedrijven hebben namelijk specifieke beveiligingstools die verbindingen kunnen beïnvloeden en het URL-handtekeningmechanisme kunnen veranderen.
 

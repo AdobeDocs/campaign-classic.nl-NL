@@ -2,9 +2,10 @@
 product: campaign
 title: Lijsten beheren en aanpassen
 description: Leer om lijsten te doorbladeren en te vormen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Lijsten beheren en aanpassen{#manage-and-customize-lists}
 
-![](../../assets/v7-only.svg)
+
 
 U kunt tot de lijsten van verslagen in het gegevensbestand van de Campagne toegang hebben gebruikend de Ontdekkingsreiziger. U kunt deze lijsten filteren, zoekopdrachten uitvoeren, informatie toevoegen, filteren en sorteren.
 

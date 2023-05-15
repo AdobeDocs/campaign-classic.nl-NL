@@ -2,11 +2,13 @@
 product: campaign
 title: Instellingen voor uitvoering
 description: Instellingen voor uitvoering
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # Instellingen voor uitvoering{#execution-settings}
 
-![](../../assets/common.svg)
+
 
 Wanneer u een simulatie maakt, kunt u indien nodig uitvoeringsinstellingen opgeven. Deze montages laten u de simulatie tijdens een tijd van lage activiteit afhankelijk van zijn prioriteit uitvoeren, of SQL vragen in het logboek registreren. Dit werkgebied is optioneel.
 

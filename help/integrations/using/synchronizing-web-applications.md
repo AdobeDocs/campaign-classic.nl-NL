@@ -2,11 +2,12 @@
 product: campaign
 title: Webapplicaties synchroniseren
 description: Leer hoe te om Webtoepassingen met Schakelaar ACS te synchroniseren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Webapplicaties synchroniseren{#synchronizing-web-applications}
 
-![](../../assets/v7-only.svg)
+
 
 In dit geval, zullen wij een mededeling, gebruikend Campaign Standard, verzenden die een verbinding aan een Webtoepassing van de Campagne v7 omvat. Wanneer de ontvanger op de koppeling in de e-mail klikt, geeft de webtoepassing een formulier weer dat verschillende velden bevat die zijn voorgeladen met de gegevens van de ontvanger en een abonnementkoppeling naar een nieuwsbrief. De ontvanger kan zijn gegevens bijwerken evenals aan de dienst intekenen. Zijn profiel zal in Campaign v7 worden bijgewerkt en de informatie zal in Campaign Standard worden herhaald.
 

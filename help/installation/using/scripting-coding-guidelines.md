@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Richtlijnen voor scripting en versleuteling
-description: Meer informatie over de richtlijnen die moeten worden gevolgd bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.).
+description: Meer informatie over de richtlijnen die moeten worden gevolgd bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # Richtlijnen voor scripting en versleuteling {#scripting-coding-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## Scripts
 
@@ -56,7 +57,7 @@ Om SQL-injecties te voorkomen, moeten SQL-functies worden toegevoegd aan de lijs
 >
 >Als u een build gebruikt die ouder is dan 8140, wordt **XtkPassUnknownSQLFunctionsToRDBMS** kan worden ingesteld op &#39;1&#39;. Als u uw database wilt beveiligen, verwijdert u deze optie (of stelt u deze in op &#39;0&#39;).
 
-Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Gegevensbescherming: escapefuncties). Deze functies zijn:
+Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - Gegevensbescherming: escapefuncties). Deze functies zijn:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

@@ -2,11 +2,12 @@
 product: campaign
 title: Veelgestelde vragen over buildupgrades
 description: Algemene vragen met betrekking tot upgrades van de Campagne-build
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Veelgestelde vragen over upgrade maken {#build-upgrade-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md)U weet waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en correcties elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
@@ -104,7 +105,7 @@ Identificeer laag volume of lage verkeerstijden die voor onderhoudsvensters idea
 
 Beoordeel onze [upgrade-checklist hieronder samenstellen](#check-list) en uw testplannen en zorg ervoor dat de middelen die deze tests kunnen uitvoeren binnen 24 tot 48 uur beschikbaar zijn. van de voltooiing van een upgrade.
 
-Voor meer informatie, [verwijzen naar dit document](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Voor meer informatie, [verwijzen naar dit document](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html).
 
 ## Kunnen upgrades worden uitgevoerd &#39;s nachts of tijdens buiten kantooruren?
 

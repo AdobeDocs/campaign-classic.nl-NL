@@ -2,9 +2,11 @@
 product: campaign
 title: De leveringssjablonen maken
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # De leveringssjablonen maken {#step-3--creating-two-delivery-templates}
 
-![](../../assets/common.svg)
+
 
 We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** activiteiten in verband met de **[!UICONTROL Split]** activiteit. Raadpleeg [deze sectie](about-templates.md) voor meer informatie.
 

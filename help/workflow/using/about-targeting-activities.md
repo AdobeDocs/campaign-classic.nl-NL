@@ -2,9 +2,10 @@
 product: campaign
 title: Targetingactiviteiten
 description: Targetingactiviteiten
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # Gerichte activiteiten in workflows{#about-targeting-activities}
 
-![](../../assets/v7-only.svg)
+
 
 Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren en deze sets te splitsen of te combineren met behulp van doorsnede-, samenvoegings- of uitsluitingsbewerkingen.
 

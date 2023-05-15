@@ -2,9 +2,11 @@
 product: campaign
 title: Gebruiksscenario voor tests door AB
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # A/B Het testen van dit gebruiksgeval {#ab-testing-use-case}
 
-![](../../assets/common.svg)
+
 
 In dit geval gaan we twee inhoud van de e-maillevering vergelijken via een doelworkflow. Het bericht en de tekst zijn identiek in beide leveringen: alleen de layout wordt gewijzigd.
 

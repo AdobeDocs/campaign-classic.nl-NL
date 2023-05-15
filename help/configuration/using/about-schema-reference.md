@@ -2,9 +2,10 @@
 product: campaign
 title: Schema-verwijzing in Adobe Campaign Classic
 description: Leer hoe te om uitbreidingsschema's te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign Classic uit te breiden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 7%
@@ -12,8 +13,6 @@ ht-degree: 7%
 ---
 
 # Schemaverwijzing{#about-schema-reference}
-
-![](../../assets/v7-only.svg)
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 

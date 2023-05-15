@@ -2,11 +2,12 @@
 product: campaign
 title: Aanbiedingsplaatsingen maken
 description: Aanbiedingsplaatsingen maken
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Aanbiedingsplaatsingen maken{#creating-offer-spaces}
 
-![](../../assets/v7-only.svg)
+
 
 Ruimtevaartaanbod mag alleen worden gedaan door een **technisch beheerder** met toegang tot de submap van de aanbiedingsruimte. De ruimten van de aanbieding kunnen slechts in het ontwerpmilieu worden gecreeerd, en automatisch in het levende milieu tijdens aanbiedingsgoedkeuring worden gedupliceerd.
 

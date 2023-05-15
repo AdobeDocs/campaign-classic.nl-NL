@@ -2,9 +2,11 @@
 product: campaign
 title: Content verrijken
 description: Content verrijken
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Content verrijken{#enriching-content}
 
-![](../../assets/common.svg)
+
 
 Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven komt uit generische vragen of verbonden lijsten.
 

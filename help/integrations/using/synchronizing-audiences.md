@@ -2,11 +2,12 @@
 product: campaign
 title: Doelgroepen synchroniseren
 description: Leer hoe te om publiek met Schakelaar ACS te synchroniseren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Doelgroepen synchroniseren{#synchronizing-audiences}
 
-![](../../assets/v7-only.svg)
+
 
 U kunt een geavanceerde lijst maken met de geavanceerde functies van Campagne v7 en deze lijst direct en in real time delen met Campaign Standard (inclusief extra gegevens), zonder problemen. Uw gebruiker van de Campaign Standard kan dan het publiek in Adobe Campaign Standard verbruiken.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Campagneopties configureren
 description: Leer hoe u de opties voor campagne configureert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 

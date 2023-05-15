@@ -2,8 +2,9 @@
 product: campaign
 title: TechNote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 8%
@@ -12,7 +13,7 @@ ht-degree: 8%
 
 # Uw omgeving bijwerken om verbinding te maken met Adobe Campaign met IMS {#acc-ims-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Op 30 juni zijn wijzigingen aangebracht in 2021 [Adobe Identity Management-systeem](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) aanmeldingsmogelijkheden die van invloed kunnen zijn op uw vermogen om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Communicatiekanalen
 description: Leveringen maken om gepersonaliseerde berichten via verschillende kanalen te verzenden
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1204'
+ht-degree: 12%
 
 ---
 
 # Communicatiekanalen{#communication-channels}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u kanaalcampagnes verzenden, waaronder e-mails, SMS, LIJN-berichten, pushmeldingen en directe mails, en de doeltreffendheid van deze campagnes meten met behulp van verschillende speciale [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
 

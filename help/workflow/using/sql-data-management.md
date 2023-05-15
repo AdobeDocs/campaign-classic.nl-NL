@@ -2,18 +2,19 @@
 product: campaign
 title: SQL Data Management
 description: Meer informatie over de workflowactiviteit van SQL Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 4%
 
 ---
 
-# SQL-gegevensbeheer{#sql-data-management}
+# SQL Data Management{#sql-data-management}
 
-![](../../assets/v7-only.svg)
+
 
 De **SQL-gegevensbeheer** Met activiteit kunt u uw eigen SQL-scripts schrijven om werktabellen te maken en te vullen.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Nieuwste release
 description: De nieuwste aanvullende informatie voor Campaign Classic v7
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2947'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Nieuwste release{#latest-release}
 
-![](../../assets/v7-only.svg)
+
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 

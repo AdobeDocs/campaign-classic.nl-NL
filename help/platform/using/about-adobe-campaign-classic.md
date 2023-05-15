@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Adobe Campaign Classic
-description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen.
+description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -15,7 +16,7 @@ ht-degree: 92%
 
 # Aan de slag met Campaign Classic{#about-adobe-campaign-classic}
 
-![](../../assets/v7-only.svg)
+
 
 Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moeten merken consistente klantreizen op alle contactpunten tot stand brengen. Marketeers kunnen nu efficiënt marketingcampagnes op alle kanalen ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 

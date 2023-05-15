@@ -2,9 +2,11 @@
 product: campaign
 title: SpamAssassin
 description: Leer hoe te opstelling e-mailspamopsporing met SpamAssassin
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Deliverability
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # SpamAssassin{#spamassassin}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign kan worden geconfigureerd om te werken met [SpamAssassin](https://spamassassin.apache.org), een service van derden die wordt gebruikt voor het filteren van e-mailspam. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
 

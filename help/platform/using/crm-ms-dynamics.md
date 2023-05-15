@@ -2,9 +2,10 @@
 product: campaign
 title: Campagne - Microsoft Dynamics CRM Connector
 description: Leer hoe u Campagne en Microsoft Dynamics kunt verbinden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Connect-campagne en Microsoft Dynamics 365{#connect-to-msdyn}
 
-![](../../assets/v7-only.svg)
+
 
 Op deze pagina leert u hoe u Campaign Classic kunt verbinden met **Microsoft Dynamics CRM 365**.
 
@@ -32,7 +33,7 @@ In Microsoft Dynamics CRM:
 1. Een App-gebruiker maken
 1. De persoonlijke sleutel coderen
 
-[Meer informatie in deze sectie](#config-crm-microsoft)
+[Meer informatie in dit gedeelte](#config-crm-microsoft)
 
 In Campaign Classic:
 1. Een nieuwe externe account maken
@@ -40,7 +41,7 @@ In Campaign Classic:
 1. Gebruik de configuratietovenaar om lijsten in kaart te brengen en opsommingen te synchroniseren
 1. De synchronisatieworkflow maken
 
-[Meer informatie in deze sectie](#configure-acc-for-microsoft)
+[Meer informatie in dit gedeelte](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
@@ -58,7 +59,7 @@ Als u het toegangstoken en de sleutels voor het instellen van de account wilt ge
 Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve Folder registreren. Client ID is hetzelfde als Application ID.
 
 1. Navigeren naar **Azure Active Directory > App-registraties** en klik op  **Nieuwe toepassingsregistratie**.
-1. Geef een unieke naam die u kunt helpen een instantie te identificeren, zoals **adobecampagne`<instance identifier>`**.
+1. Geef een unieke naam die u kunt helpen bij het identificeren van een instantie, zoals **adobecampagne`<instance identifier>`**.
 1. Kies **Toepassingstype** als **Web-app / API**.
 1. Gebruiken `http://localhost` for **Aanmeldings-URL**.
 

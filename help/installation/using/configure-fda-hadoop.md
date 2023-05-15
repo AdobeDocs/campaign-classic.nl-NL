@@ -2,11 +2,12 @@
 product: campaign
 title: Toegang tot Hadoop configureren
 description: Leer hoe te om toegang tot Hadoop in FDA te vormen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Toegang tot Hadoop configureren {#configure-access-to-hadoop}
 
-![](../../assets/v7-only.svg)
+
 
 Campagne gebruiken **Federale gegevenstoegang** (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
@@ -70,7 +71,7 @@ De schakelaar steunt de volgende opties ODBC:
 | Naam | Waarde |
 |---|---|
 | ODBCMgr | iODBC |
-| entrepot | 02-01-4 |
+| entrepot | 1/2/4 |
 
 De aansluiting ondersteunt ook de volgende opties voor Hive:
 

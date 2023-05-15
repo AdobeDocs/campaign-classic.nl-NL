@@ -2,9 +2,10 @@
 product: campaign
 title: De lokale goedkeuringsactiviteit gebruiken
 description: Leer hoe u de lokale goedkeuringsactiviteit gebruikt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # De lokale goedkeuringsactiviteit gebruiken{#using-the-local-approval-activity}
 
-![](../../assets/v7-only.svg)
+
 
 De **[!UICONTROL Local approval]** Met de activiteit die in een doelworkflow is geïntegreerd, kunt u een goedkeuringsproces voor ontvangers instellen voordat de levering wordt verzonden.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Statische elementen in een webformulier
 description: Statische elementen in een webformulier
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Statische elementen in een webformulier{#static-elements-in-a-web-form}
 
-![](../../assets/common.svg)
+
 
 U kunt elementen opnemen waarmee de gebruiker geen interactie heeft op de pagina&#39;s van het formulier. Dit zijn statische elementen, zoals afbeeldingen, HTML-inhoud, een horizontale balk of een hypertekstkoppeling. Deze elementen worden gemaakt met de eerste knop op de werkbalk, door **[!UICONTROL Static elements]**.
 

@@ -2,20 +2,21 @@
 product: campaign
 title: E-mailarchivering
 description: E-mailarchivering
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # Bcc van e-mail configureren {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 U kunt Adobe Campaign zo configureren dat een kopie van de e-mails die u van uw platform hebt ontvangen, bewaard blijft.
 
@@ -34,6 +35,9 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 * Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Zie voor meer informatie de [Naar de nieuwe e-mail-BCC gaan](#updated-email-archiving-system--bcc-) sectie.
 
 ## BCC via e-mail activeren (op locatie) {#activating-email-archiving--on-premise-}
+
+[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+
 
 Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
 
@@ -102,6 +106,9 @@ Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bi
 
 ## Het BCC-e-mailadres configureren (op locatie) {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+
+
 >[!IMPORTANT]
 >
 >Om privacyredenen moeten BCC-e-mails worden verwerkt door een archiveringssysteem dat veilig identificeerbare informatie (PII) kan opslaan.
@@ -124,6 +131,10 @@ In de **config-`<instance name>.xml`** bestand, gebruikt u de volgende parameter
 >Bovendien wijst de relais een **[!UICONTROL Sent]** status voor alle e-mails, inclusief die welke niet zijn verzonden. Daarom worden alle berichten gearchiveerd.
 
 ## Naar de nieuwe e-mail-BCC gaan {#updated-email-archiving-system--bcc-}
+
+[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+
+
 
 >[!IMPORTANT]
 >

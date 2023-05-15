@@ -2,11 +2,12 @@
 product: campaign
 title: Migratie naar veelgestelde vragen over Adobe Managed Services (Public Cloud)
 description: Veelgestelde vragen over Campaign Classic-migratie naar openbare cloud
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Veelgestelde vragen over migratie naar openbare cloud{#dc-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe ontmantelt het oude datacenter: Campaign Classic-exemplaren moeten worden overgebracht naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
 

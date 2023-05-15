@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Aan de slag met bijhouden
-description: Meer informatie over de algemene richtlijnen voor tekstspatiëring in Adobe Campaign Classic
+description: Meer informatie over de algemene richtlijnen voor tekstspatiëring in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 9%
 
 ---
 
 # Aan de slag met bericht bijhouden {#get-started-tracking}
 
-![](../../assets/common.svg)
+
 
 Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bijhouden en het gedrag van de ontvangers controleren: openen, klikken op koppelingen, geen abonnement nemen, enz.
 

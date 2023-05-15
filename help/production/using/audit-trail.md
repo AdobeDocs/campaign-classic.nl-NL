@@ -2,18 +2,19 @@
 product: campaign
 title: Audit trail
 description: Leer hoe u uw exemplaar kunt controleren met het Campagne Audit Trail
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audit Trail, Monitoring
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
 
 ---
 
-# Audittrail{#audit-trail}
+# Audit trail{#audit-trail}
 
-![](../../assets/v7-only.svg)
+
 
 In Adobe Campaign **[!UICONTROL Audit trail]** geeft u toegang tot de volledige geschiedenis van veranderingen die binnen uw instantie worden aangebracht.
 

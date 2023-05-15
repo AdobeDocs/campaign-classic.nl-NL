@@ -2,8 +2,9 @@
 product: campaign
 title: Anonieme tracking
 description: Leer hoe u anonieme tracking instelt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -11,8 +12,6 @@ ht-degree: 5%
 ---
 
 # Anonieme tracking{#anonymous-tracking}
-
-![](../../assets/v7-only.svg)
 
 Met Adobe Campaign kunt u verzamelde webtraceringsgegevens koppelen aan een ontvanger wanneer deze anoniem door uw site bladert. Wanneer een gebruiker door de gelabelde pagina&#39;s van uw website bladert, worden deze bladergegevens verzameld. Als deze eenmaal in een e-mailbericht van Adobe Campaign klikken, worden ze geïdentificeerd en worden de gegevens automatisch aan de pagina&#39;s gekoppeld.
 

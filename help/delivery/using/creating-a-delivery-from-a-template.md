@@ -2,9 +2,11 @@
 product: campaign
 title: Een levering maken met een sjabloon
 description: Leer hoe u een levering maakt op basis van een sjabloon
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Een levering maken met een sjabloon{#creating-a-delivery-from-a-template}
 
-![](../../assets/common.svg)
+
 
 ## De sjabloon koppelen aan een levering {#linking-the-template-to-a-delivery}
 

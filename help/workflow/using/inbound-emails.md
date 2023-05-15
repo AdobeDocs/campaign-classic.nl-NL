@@ -2,9 +2,10 @@
 product: campaign
 title: Binnenkomende e-mails
 description: Meer informatie over de workflowactiviteiten voor inkomende e-mails
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Binnenkomende e-mails{#inbound-emails}
 
-![](../../assets/v7-only.svg)
+
 
 De **Binnenkomende e-mails** Met activiteit kunt u e-mailberichten downloaden en verwerken vanaf een POP3-mailserver.
 

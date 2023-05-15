@@ -2,9 +2,11 @@
 product: campaign
 title: Berichtlevering optimaliseren
 description: Leer hoe u de levering van berichten kunt optimaliseren
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Levering optimaliseren {#optimize-delivery}
 
-![](../../assets/common.svg)
+
 
 Voordat u zelfs begint met het maken van leveringen, kunt u verschillende acties uitvoeren om het verzendingsproces te beveiligen en te optimaliseren.
 

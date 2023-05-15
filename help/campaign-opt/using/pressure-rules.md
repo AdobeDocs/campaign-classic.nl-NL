@@ -2,9 +2,10 @@
 product: campaign
 title: Drukregels
 description: Drukregels
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -12,8 +13,6 @@ ht-degree: 4%
 ---
 
 # Drukregels{#pressure-rules}
-
-![](../../assets/v7-only.svg)
 
 ## Over vermoeidheid bij het op de markt brengen {#about-marketing-fatigue}
 
@@ -389,9 +388,9 @@ Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers
    <td> Aflevering 1<br /> </td> 
    <td> Uitgeschakeld<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 13:00<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 8.00 uur (volgende dag)<br /> </td> 
-   <td> 2 uur<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Night<br /> </td> 
    <td> Uitgesloten<br /> </td> 
    <td> Uitgesloten<br /> </td> 
@@ -400,9 +399,9 @@ Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers
    <td> Aflevering 2<br /> </td> 
    <td> Uitgeschakeld<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 16:00<br /> </td> 
+   <td> 4pm<br /> </td> 
    <td> 9.00 uur (volgende dag)<br /> </td> 
-   <td> 2 uur<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Night<br /> </td> 
    <td> Verzonden<br /> </td> 
    <td> 9.00 uur (volgende dag)<br /> </td> 

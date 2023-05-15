@@ -2,9 +2,11 @@
 product: campaign
 title: Contentmanagement
 description: Aan de slag met de module Inhoudsbeheer voor campagne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Email Design
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Contentmanagement{#about-content-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign Content Manager is een specifieke Campaign Classic [ingebouwd pakket](../../installation/using/installing-campaign-standard-packages.md) die u kunt installeren om terugkerende nieuwsbrieven of website te creëren. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Rapporten over leveringen
 description: Rapporten over leveringen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # Rapporten over leveringen{#reports-on-deliveries}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign biedt verschillende typen rapporten die toegankelijk zijn via de klantenconsole of een internetbrowser.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: S met de verbeterde MTA in Adobe Campaign Classic
 description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Verzenden met de Enhanced MTA {#sending-with-enhanced-mta}
 
-![](../../assets/common.svg)
+
 
 De **Adobe Campaign Enhanced MTA** (De Agent van de Overdracht van de Post) verstrekt een bevorderde verzendende infrastructuur die voor betere levering, reputatie, productie, rapportering, stuitbehandeling, IP oprijplaat en verbinding het plaatsen beheer toestaat.
 
@@ -164,7 +166,7 @@ Voor meer informatie over DKIM raadpleegt u de [Adobe Handleiding voor beste pra
 
 ### Leveringssuccesrapportage
 
-In de **[!UICONTROL Summary]** weergave van een e-maillevering [dashboard](delivery-dashboard.md)de **[!UICONTROL Success]** het percentage begint bij 100% en daalt vervolgens geleidelijk gedurende de hele levering. [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period), terwijl de zachte en harde grenzen worden gemeld van de Enhanced MTA naar Campaign.
+In de **[!UICONTROL Summary]** weergave van een e-maillevering [dashboard](delivery-dashboard.md)de **[!UICONTROL Success]** het percentage begint bij 100% en daalt geleidelijk gedurende de hele levering. [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period), terwijl de zachte en harde grenzen worden gemeld van de Enhanced MTA naar Campaign.
 
 Alle berichten worden zelfs als **[!UICONTROL Sent]** in de [verzenden, logbestanden](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campaign aan de Verbeterde MTA worden opnieuw aangeboden. Zij blijven deze status behouden, tenzij of totdat [stuiten](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campaign.
 

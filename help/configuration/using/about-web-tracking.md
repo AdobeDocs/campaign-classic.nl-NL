@@ -2,8 +2,9 @@
 product: campaign
 title: Webtracking
 description: Webtracking
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -11,8 +12,6 @@ ht-degree: 4%
 ---
 
 # Webtracking{#about-web-tracking}
-
-![](../../assets/v7-only.svg)
 
 Naast de standaardtracering die het gedrag van een internetgebruiker die op een koppeling in een e-mailbericht klikt, toont, kunt u met het Adobe Campaign-platform informatie verzamelen over hoe internetgebruikers door uw website bladeren. Deze gegevensverzameling wordt uitgevoerd door de module Webtracering.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Push Troubleshooting
 description: Push Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Problemen oplossen{#troubleshooting}
 
-![](../../assets/v7-only.svg)
+
 
 Als uw mobiele apparaat is verbonden met Wi-Fi en u ontvangt geen meldingen, controleert u of de FCM-/APN-poorten niet worden geblokkeerd door uw firewall.
 

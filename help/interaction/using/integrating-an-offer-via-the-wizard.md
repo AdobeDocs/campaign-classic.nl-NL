@@ -2,11 +2,12 @@
 product: campaign
 title: Een aanbieding integreren via de wizard
 description: Een aanbieding integreren via de wizard
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Een aanbieding integreren via de wizard{#integrating-an-offer-via-the-wizard}
 
-![](../../assets/v7-only.svg)
+
 
 Wanneer het creëren van een levering, zijn er twee mogelijke methodes om aanbiedingen te integreren:
 

@@ -2,8 +2,9 @@
 product: campaign
 title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 20%
@@ -12,7 +13,7 @@ ht-degree: 20%
 
 # Capaciteitsmatrix per model{#capability-matrix-per-model}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. In dit artikel worden enkele details weergegeven over de belangrijkste verschillen tussen volledig gehoste (Managed Services) en on-premise implementaties voor bepaalde functies.
 

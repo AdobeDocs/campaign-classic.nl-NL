@@ -2,11 +2,12 @@
 product: campaign
 title: De beste praktijken en beperkingen van de FDA bestrijden
 description: Leer beste praktijken en beperkingen wanneer het werken met een externe gegevensbestand (FDA)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # Best practices en beperkingen
 
-![](../../assets/v7-only.svg)
+
 
 ## E-mailpersonalisatie optimaliseren met externe gegevens {#optimizing-email-personalization-with-external-data}
 

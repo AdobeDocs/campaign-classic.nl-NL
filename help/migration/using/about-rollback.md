@@ -2,13 +2,14 @@
 product: campaign
 title: Terugdraaien naar de vorige versie
 description: Leer hoe u terugkeert naar de vorige versie
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: rollback
 hide: true
 hidefromtoc: true
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Terugdraaien naar de vorige versie{#about-rollback}
 
-![](../../assets/v7-only.svg)
+
 
 Na een migratie, in het geval van kwesties, zou u aan de vorige versie van Campagne kunnen moeten terugdraaien.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Integratie via SOAP (serverzijde)
 description: Integratie via SOAP (serverzijde)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Integratie via SOAP (server-kant){#integration-via-soap-server-side}
 
-![](../../assets/v7-only.svg)
+
 
 De SOAP-webservices die worden aangeboden voor aanbiedingsbeheer, verschillen van de services die gewoonlijk in Adobe Campaign worden gebruikt. U hebt toegang tot deze bestanden via de interactie-URL die in de vorige sectie is beschreven. U kunt nu aanbiedingen voor een bepaalde contactpersoon presenteren of bijwerken.
 

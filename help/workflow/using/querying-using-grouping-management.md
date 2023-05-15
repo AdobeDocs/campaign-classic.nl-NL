@@ -2,9 +2,10 @@
 product: campaign
 title: Een query uitvoeren met behulp van groeperingsbeheer
 description: Leer hoe u query's uitvoert met behulp van groeperingsbeheer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Een query uitvoeren met behulp van groeperingsbeheer {#querying-using-grouping-management}
 
-![](../../assets/v7-only.svg)
+
 
 In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken die meer dan 30 keer zijn aangewezen tijdens eerdere leveringen.
 

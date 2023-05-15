@@ -2,11 +2,12 @@
 product: campaign
 title: Adobe Campaign-werkruimte
 description: Leer de werkruimte Campagne gebruiken en aanpassen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Adobe Campaign-werkruimte{#adobe-campaign-workspace}
 
-![](../../assets/v7-only.svg)
+
 
 ## De Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
 

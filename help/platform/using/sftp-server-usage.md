@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: SFTP-servergebruik
-description: Meer informatie over best practices en probleemoplossing voor SFTP-servers.
+description: Meer informatie over best practices en probleemoplossing voor SFTP-servers
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 14%
@@ -15,7 +17,7 @@ ht-degree: 14%
 
 # Best practices en probleemoplossing voor SFTP-servers {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## Algemene aanbevelingen voor SFTP-server {#global-recommendations}
 
@@ -31,7 +33,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
 
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan worden gevraagd via [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan worden gevraagd via [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Best practices voor databasegebruik {#sftp-server-best-practices}
 
@@ -68,7 +70,7 @@ Wanneer u bovendien in Campaign Classic een pad naar een externe SFTP-server opg
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
-In de onderstaande sectie wordt de informatie weergegeven die u via [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
+In de onderstaande sectie wordt de informatie weergegeven die u via [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
 
 1. Controleer of de instantie actief is. Om dit te doen, open uw browser, dan maak **[!UICONTROL GET]** aanroepen van de instantie **[!UICONTROL /r/test]** eindpunt:
 
@@ -100,11 +102,11 @@ In de onderstaande sectie wordt de informatie weergegeven die u via [Adobe Klant
    >
    >Met het gereedschap Netcat kunt u eenvoudig netwerkverbindingen beheren op verschillende besturingssystemen (zie [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 1. Controleer dat openbare IP waarvan u probeert om de verbinding in werking te stellen SFTP is die u aan de Steun van de Adobe voor de lijst van gewenste personen verstrekte.
 1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsduur van 90 dagen). Daarom adviseren wij sterk gebruikend een zeer belangrijke gebaseerde authentificatie (zie [Aanbevolen werkwijzen SFTP-server](#sftp-server-best-practices)).
-1. Als u een op sleutels gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u verstrekte aan [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team voor de instantieconfiguratie.
+1. Als u een op sleutels gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u verstrekte aan [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team voor de instantieconfiguratie.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
 
 ## Fout &quot;Kan hostnaam niet oplossen&quot;

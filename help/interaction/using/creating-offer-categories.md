@@ -2,11 +2,12 @@
 product: campaign
 title: Categorieën voor aanbiedingen maken
 description: Categorieën voor aanbiedingen maken
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Categorieën voor aanbiedingen maken{#creating-offer-categories}
 
-![](../../assets/v7-only.svg)
+
 
 De categorieën aanbiedingen kunnen alleen worden gemaakt in de **[!UICONTROL Design]** milieu. Zij worden automatisch opgesteld in **[!UICONTROL Live]** omgeving (d.w.z. beschikbaar gesteld) wanneer de gecreëerde/gewijzigde aanbieding(en) die zij bevatten, zijn goedgekeurd. Standaard worden de **[!UICONTROL Design]** omgeving bevat een categorie voor alle aanbiedingen. U kunt subcategorieën maken om een hiërarchie toe te voegen aan de catalogusaanbiedingen.
 

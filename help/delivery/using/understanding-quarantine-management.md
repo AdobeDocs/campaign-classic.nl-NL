@@ -2,9 +2,11 @@
 product: campaign
 title: Quarantainebeheer begrijpen
 description: Quarantainebeheer begrijpen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2997'
 ht-degree: 9%
@@ -13,7 +15,7 @@ ht-degree: 9%
 
 # Quarantainebeheer begrijpen{#understanding-quarantine-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer het postvak vol is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
 

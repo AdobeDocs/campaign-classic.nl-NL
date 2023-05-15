@@ -2,9 +2,11 @@
 product: campaign
 title: Geavanceerde mogelijkheden
 description: Meer informatie over geavanceerde mogelijkheden bij het werken met rapporten
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Geavanceerde mogelijkheden{#advanced-functionalities}
 
-![](../../assets/common.svg)
+
 
 Als technische gebruiker, naast [algemene eigenschappen](../../reporting/using/properties-of-the-report.md)kunt u geavanceerde mogelijkheden gebruiken om uw rapporten te configureren, zoals:
 

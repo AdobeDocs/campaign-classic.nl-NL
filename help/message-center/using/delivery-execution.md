@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Uitvoering van levering
-description: Meer informatie over de uitvoering en bewaking van transactieberichten.
+description: Meer informatie over uitvoering en bewaking van transactiemeldingen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 # Uitvoering van levering {#delivery-execution}
 
-![](../../assets/v7-only.svg)
+
 
 ## Transactiebericht verzenden {#transactional-message-send}
 

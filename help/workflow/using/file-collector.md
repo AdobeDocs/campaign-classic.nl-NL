@@ -2,9 +2,10 @@
 product: campaign
 title: Bestandsophaler
 description: Meer informatie over de workflowactiviteit van de bestandscollector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Bestandsophaler{#file-collector}
 
-![](../../assets/v7-only.svg)
+
 
 De **Bestandsverzamelaar** controleert de aankomst van een of meer bestanden in een directory en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis geldt een **[!UICONTROL filename]** De variabele bevat de volledige naam van het ontvangen bestand. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
 

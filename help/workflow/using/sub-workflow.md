@@ -2,9 +2,10 @@
 product: campaign
 title: Subworkflow
 description: Meer informatie over de subworkflowactiviteit
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Subworkflow{#sub-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 De **[!UICONTROL Sub-workflow]** Met activiteit kunt u de uitvoering van een andere workflow starten en het resultaat herstellen. Met deze activiteit kunt u complexe workflows gebruiken terwijl u een vereenvoudigde interface gebruikt.
 

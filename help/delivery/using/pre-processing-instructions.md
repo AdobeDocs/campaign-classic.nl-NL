@@ -2,9 +2,11 @@
 product: campaign
 title: Voorverwerkingsinstructies voor bijgehouden URL's
 description: Meer informatie over voorbewerkingsinstructies die moeten worden gebruikt om de URL van een e-mailbericht te scripten en deze nog steeds te laten bijhouden
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Voorverwerkingsinstructies {#pre-processing-instructions}
 
-![](../../assets/common.svg)
+
 
 U kunt een specifieke syntaxis in de bezorginhoud gebruiken om instructies toe te voegen en de URL van het bijgehouden e-mailbericht te scripten. De &lt;%@-instructies zijn geen JavaScript: Deze syntaxis is specifiek voor Adobe Campaign.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Zakelijke implementatie
 description: Zakelijke implementatie
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Zakelijke implementatie{#enterprise-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 Dit is de meest volledige configuratie. Het bouwt op de standaardconfiguratie voor grotere veiligheid en beschikbaarheid voort:
 
@@ -76,7 +77,7 @@ Hogere hardware- en beheerkosten.
 In de volgende voorbeelden zijn de parameters van de instantie:
 
 * Naam van de instantie: demo
-* DNS-masker: tracking.campagne.net*, console.campagne.net* (de toepassingsserver verwerkt de URL&#39;s voor verbindingen en rapporten van de clientconsole en voor spiegelpagina&#39;s en pagina&#39;s zonder abonnement)
+* DNS-masker: tracking.campagne.net&#42;, console.campagne.net&#42; (De toepassingsserver verwerkt de URL&#39;s voor verbindingen en rapporten van de clientconsole en voor spiegel- en niet-abonnementspagina&#39;s)
 * Taal: Engels
 * Database: campagne:demo@dbsrv
 
@@ -165,7 +166,7 @@ De stappen voor het installeren van de eerste server zijn:
 
    Raadpleeg voor meer informatie hierover [Configuratie van campagneserver](../../installation/using/configuring-campaign-server.md).
 
-1. Het installatieprogramma van de clientconsole kopiëren (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYY.exe** voor v6.1) aan de **/datakit/nl/eng/jsp** map. [Meer info](../../installation/using/client-console-availability-for-windows.md).
+1. Het installatieprogramma van de clientconsole kopiëren (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYY.exe** voor v6.1) aan de **/datakit/nl/eng/jsp** map. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
 1. De Adobe Campaign-server starten (**netwerkbeginserver6** in Windows **/etc/init.d/nlserver6 start** in Linux) en voer de opdracht uit **nlserver pdump** nogmaals de aanwezigheid van alle ingeschakelde modules te controleren.
 
@@ -189,7 +190,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Test de **nlserver-web** met de URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client. [Meer info](../../installation/using/client-console-availability-for-windows.md).
+   Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
    Voer de **internal** login en bijbehorend wachtwoord wanneer u de pagina van de toegangscontrole bereikt.
 

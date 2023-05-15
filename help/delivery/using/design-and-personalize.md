@@ -2,9 +2,11 @@
 product: campaign
 title: Gepersonaliseerde content maken
 description: Leer hoe u persoonlijke inhoud kunt maken in Adobe Campaign-leveringen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Personalization
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # Gepersonaliseerde content maken {#build-personalized-content}
 
-![](../../assets/common.svg)
+
 
 Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten betrekking op [personalisatie](about-personalization.md), [opmaken](defining-the-email-content.md#message-content) en [afbeeldingen](defining-the-email-content.md#adding-images).
 

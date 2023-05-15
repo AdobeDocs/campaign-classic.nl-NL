@@ -2,9 +2,11 @@
 product: campaign
 title: Een targetingworkflow maken
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # Een targetingworkflow maken {#step-1--creating-a-targeting-workflow}
 
-![](../../assets/common.svg)
+
 
 U moet uw workflow maken in het dialoogvenster **[!UICONTROL Targeting and Workflows]** tabblad van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit **[!UICONTROL Split]** activiteiten in verband met twee **[!UICONTROL Email delivery]** activiteiten **[!UICONTROL Wait]** activiteit **[!UICONTROL JavaScript code]** en een **[!UICONTROL Delivery]** activiteit.
 

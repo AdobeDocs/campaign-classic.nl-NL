@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Over Adobe Campaign-rapportagegereedschappen
-description: Analyseer het succes van uw campagnes in geïntegreerde of aangepaste rapporten.
+description: Analyseer het succes van uw campagnes in geïntegreerde of aangepaste rapporten
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '334'
+ht-degree: 16%
 
 ---
 
 # Aan de slag met rapportages {#about-adobe-campaign-reporting-tools}
 
-![](../../assets/common.svg)
+
 
 Naast [ingebouwde rapporten](../../reporting/using/about-campaign-built-in-reports.md)Met Adobe Campaign kunt u rapporten genereren in verschillende contexten en aan verschillende behoeften voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
 

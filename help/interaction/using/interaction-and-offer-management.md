@@ -2,9 +2,10 @@
 product: campaign
 title: Interaction- en aanbiedingenbeheer
 description: Leer hoe u de beste voorstellen naar uw contactpersonen kunt sturen op basis van subsidiabiliteitsregels
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # Interaction- en aanbiedingenbeheer{#interaction-and-offer-management}
 
-![](../../assets/v7-only.svg)
+
 
 De interactie laat u in echt - tijd tijdens een interactie met een bepaald contact (een klant of een doel) antwoorden door hen één of verscheidene aangepaste aanbiedingen te maken. Dit kunnen bijvoorbeeld eenvoudige communicatieberichten, speciale aanbiedingen voor een of meerdere producten of een service zijn.
 

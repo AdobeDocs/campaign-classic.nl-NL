@@ -2,11 +2,12 @@
 product: campaign
 title: Zelfstandige implementatie
 description: Zelfstandige implementatie
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Zelfstandige implementatie{#standalone-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 Deze configuratie omvat alle componenten op de zelfde computer:
 
@@ -75,7 +76,7 @@ Naarmate het volume toeneemt, verplaatst een variant van deze architectuur de da
 In de volgende voorbeelden zijn de parameters van de instantie:
 
 * Naam van de instantie: **demo**
-* DNS-masker: **console.campagne.net*** (alleen voor clientconsoleverbindingen en voor rapporten)
+* DNS-masker: **console.campagne.net&#42;** (alleen voor clientconsoleverbindingen en voor rapporten)
 * Database: **campagne:demo@dbsrv**
 
 ### Installeren en configureren (één computer) {#installing-and-configuring--single-machine-}
@@ -164,7 +165,7 @@ Voer de volgende stappen uit:
 
    Raadpleeg voor meer informatie hierover [Configuratie van campagneserver](../../installation/using/configuring-campaign-server.md).
 
-1. Het installatieprogramma van de clientconsole kopiëren (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYY.exe** voor v6.1) aan de **/datakit/nl/eng/jsp** map. [Meer info](../../installation/using/client-console-availability-for-windows.md).
+1. Het installatieprogramma van de clientconsole kopiëren (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYY.exe** voor v6.1) aan de **/datakit/nl/eng/jsp** map. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
@@ -207,7 +208,7 @@ Voer de volgende stappen uit:
 
    Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client.
 
-   Voer de **internal** login en bijbehorend wachtwoord wanneer u de pagina van de toegangscontrole bereikt. [Meer info](../../installation/using/client-console-availability-for-windows.md).
+   Voer de **internal** login en bijbehorend wachtwoord wanneer u de pagina van de toegangscontrole bereikt. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
    ![](assets/s_ncs_install_access_client.png)
 

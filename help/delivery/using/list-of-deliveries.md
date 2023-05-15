@@ -2,9 +2,11 @@
 product: campaign
 title: De lijst met leveringen openen
 description: Leer hoe u toegang krijgt tot de lijst met gemaakte items
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # De lijst met leveringen openen {#list-of-deliveries}
 
-![](../../assets/common.svg)
+
 
 U hebt toegang tot leveringen via de **[!UICONTROL Campaign Management > Deliveries]** knooppunt van de structuur.
 

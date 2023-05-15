@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Interaction
-description: Interactie
+description: Interaction
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Interaction
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 6%
@@ -11,9 +12,9 @@ ht-degree: 6%
 ---
 
 
-# Interactie{#interaction}
+# Interaction{#interaction}
 
-![](../../assets/v7-only.svg)
+
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Aanbiedingsengine (interactie)** standaard invoegtoepassing.
 

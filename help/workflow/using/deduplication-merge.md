@@ -1,9 +1,10 @@
 ---
 title: De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken
 description: Leer hoe u de samenvoegfunctionaliteit van de deduplicatieactiviteit gebruikt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken {#deduplication-merge}
 
-![](../../assets/v7-only.svg)
+
 
 ## Over dit gebruiksscenario {#about-this-use-case}
 
@@ -24,9 +25,9 @@ De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
-| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 22-07-2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 03-10-2020 | Bob |  | bob@mycompany.com |  | 888-888-888 |
+| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
 
 Met de deduplicatieactiviteit **[!UICONTROL Merge]** Als lettertypen kunt u een set regels voor deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
@@ -90,17 +91,17 @@ Om deze regels te vormen, volg deze stappen:
 
 Na het vormen van deze regels, worden de volgende gegevens ontvangen aan het eind van **[!UICONTROL Deduplication]** activiteit.
 
-| Wijzigingsdatum | Voornaam | Achternaam | E-mail | Mobiele telefoon | Telefoon |
+| Wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
-| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 22-07-2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 03-10-2020 | Bob |  | bob@mycompany.com |  | 888-888-888 |
+| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
 
 Het resultaat wordt samengevoegd van de drie verslagen volgens de eerder gevormde regels. Na vergelijking wordt geconcludeerd dat de meest recente naam en mobiele telefoon samen met het originele telefoonnummer worden gebruikt.
 
-| Voornaam | Achternaam | E-mail | Mobiele telefoon | Telefoon |
+| Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |------------|-----------|-------|--------------|------|
-| Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
+| Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 >[!NOTE]
 >

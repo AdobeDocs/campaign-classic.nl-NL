@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Importtaken configureren
-description: Leer hoe u importtaken configureert en uitvoert in Campaign Classic.
+description: Leer hoe u importtaken configureert en uitvoert in Campagne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2955'
+source-wordcount: '2954'
 ht-degree: 0%
 
 ---
 
 # Importtaken configureren {#executing-import-jobs}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TAB- of XML-indeling importeren in de database. Deze bestanden zijn gekoppeld aan een tabel (hoofd of gekoppeld) en elk veld van het bronbestand of de bronbestanden is gekoppeld aan een veld van de database.
 

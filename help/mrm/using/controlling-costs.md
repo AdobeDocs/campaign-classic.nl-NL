@@ -2,11 +2,12 @@
 product: campaign
 title: Kosten beheersen
 description: Leer hoe u kosten kunt beheersen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Kosten beheersen{#controlling-costs}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign laat u geplande, geëngageerde en gefactureerde marketing kosten controleren en om hen door categorie te verdelen gebruikend de module van het Beheer van het Middel van de Marketing.
 

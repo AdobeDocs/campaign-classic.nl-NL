@@ -2,9 +2,11 @@
 product: campaign
 title: Een levering voor direct mail maken
 description: Leer hoe u een direct mailbericht maakt
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Direct Mail
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # Een levering voor direct mail maken{#creating-a-direct-mail-delivery}
 
-![](../../assets/common.svg)
+
 
 Voer de volgende stappen uit om een nieuwe levering via e-mail te maken:
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Een rapport naar een lijst verzenden
 description: Leer hoe u een rapport naar een lijst met een workflow kunt verzenden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Een rapport naar een lijst verzenden{#sending-a-report-to-a-list}
 
-![](../../assets/v7-only.svg)
+
 
 Met dit gebruiksgeval kunt u elke maand een out-of-the-box genereren **[!UICONTROL Tracking indicators]** rapporteren in PDF-indeling en hoe deze naar een lijst met ontvangers wordt verzonden.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Aan de slag met verzendingscontrole
 description: Meer informatie over de mogelijkheden voor bewaking van Campaign Classic-levering
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 16%
@@ -13,7 +15,7 @@ ht-degree: 16%
 
 # Aan de slag met verzendingscontrole {#about-delivery-monitoring}
 
-![](../../assets/common.svg)
+
 
 Het controleren van uw leveringen nadat deze zijn verzonden, is een belangrijke stap om ervoor te zorgen dat uw marketingcampagnes efficiënt zijn en uw klanten bereiken.
 

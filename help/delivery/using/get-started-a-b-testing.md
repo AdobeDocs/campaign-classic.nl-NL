@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Aan de slag met A/B-tests
-description: Meer informatie over A/B testen in Campaign Classic.
+description: Meer informatie over A/B-tests in Campagne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
 
 # Aan de slag met A/B-tests {#get-started-a-b-testing}
 
-![](../../assets/common.svg)
+
 
 Met A/B-tests kunt u meerdere versies van een levering vergelijken met elkaar om te bepalen welke versie de grootste invloed heeft op de doelpopulatie.
 

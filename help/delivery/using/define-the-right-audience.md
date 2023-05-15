@@ -2,9 +2,11 @@
 product: campaign
 title: De juiste doelgroep definiëren
 description: Leer de beste praktijken bij het selecteren van uw publiek
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # De juiste doelgroep definiëren {#define-the-right-audience}
 
-![](../../assets/common.svg)
+
 
 Gerichte populatie is van essentieel belang: uw lijsten zorgvuldig samen te stellen, uw e-mailberichten te testen op populaire e-mailclients en mobiele apparaten en ervoor te zorgen dat uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
 

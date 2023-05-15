@@ -1,20 +1,22 @@
 ---
 product: campaign
-title: Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning
-description: Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning
+title: Ondersteuning voor TLS 1.0 en 1.1 verloopt
+description: Ondersteuning voor TLS 1.0 en 1.1 verloopt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Einde van levensduur voor TLS 1.0- en 1.1-ondersteuning{#eol-tls-support}
+# Ondersteuning voor TLS 1.0 en 1.1 verloopt{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe steunt niet meer gebruikerssystemen en cliëntsystemen die niet volgzaam met het Protocol van de Veiligheid van de Laag van het Vervoer (TLS) 1.2 zijn. Als u oudere versies van TLS blijft gebruiken, kan de toegang tot alle Adobe-producten en -services verloren gaan.
 

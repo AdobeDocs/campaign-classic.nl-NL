@@ -2,8 +2,9 @@
 product: campaign
 title: Toegang tot Microsoft SQL Server configureren
 description: Leer hoe u toegang tot Microsoft SQL Server configureert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # Toegang tot Microsoft SQL Server configureren {#configure-fda-sql}
 
-![](../../assets/v7-only.svg)
+
 
 Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die is opgeslagen in een externe Microsoft SQL Server-database. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Microsoft SQL Server].
 

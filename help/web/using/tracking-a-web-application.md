@@ -2,9 +2,11 @@
 product: campaign
 title: Bezoeken aan een webapplicatie bijhouden
 description: Bezoeken aan een webapplicatie bijhouden
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Bezoeken aan een webapplicatie bijhouden{#tracking-a-web-application}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u bezoeken op webtoepassingspagina&#39;s bijhouden en meten door trackingtags in te voegen. Deze functionaliteit kan voor alle toepassingstypes van het Web (vormen, Web-pagina&#39;s, enz.) worden gebruikt.
 

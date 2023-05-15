@@ -2,9 +2,11 @@
 product: campaign
 title: Eigenschappen van het rapport
 description: Meer informatie over de instellingen van de rapporteigenschappen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Eigenschappen van het rapport{#properties-of-the-report}
 
-![](../../assets/common.svg)
+
 
 U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen. Rapporteigenschappen zijn toegankelijk via de **[!UICONTROL Properties]** boven het diagram met de activiteitsvolgorde.
 

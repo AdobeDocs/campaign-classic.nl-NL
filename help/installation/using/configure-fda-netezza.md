@@ -2,11 +2,12 @@
 product: campaign
 title: Toegang tot Netezza configureren
 description: Leer hoe te om toegang tot Netezza in FDA te vormen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Toegang tot Netezza configureren {#configure-access-to-netezza}
 
-![](../../assets/v7-only.svg)
+
 
 Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
 

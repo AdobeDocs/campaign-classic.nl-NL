@@ -2,11 +2,13 @@
 product: campaign
 title: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
 description: Leer hoe u integratie met gedeelde soorten publiek configureert
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-![](../../assets/common.svg)
+
 
 Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie voor u te werk gaan en u contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
 

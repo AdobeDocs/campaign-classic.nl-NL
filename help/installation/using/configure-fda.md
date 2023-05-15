@@ -2,11 +2,12 @@
 product: campaign
 title: FDA-connectors configureren
 description: Meer informatie over configuratiestappen voor FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # FDA-connectoren configureren {#specific-configurations-by-database-type}
 
-![](../../assets/v7-only.svg)
+
 
 Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Bij deze configuraties worden vooral stuurprogramma&#39;s geïnstalleerd en worden omgevingsvariabelen opgegeven die bij elke RDBMS op de Adobe Campaign-server horen.
 

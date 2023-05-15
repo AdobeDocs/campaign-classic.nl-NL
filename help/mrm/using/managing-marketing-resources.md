@@ -2,11 +2,12 @@
 product: campaign
 title: Marketingbronnen beheren
 description: Leer hoe u marketingbronnen beheert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Marketingbronnen beheren{#managing-marketing-resources}
 
-![](../../assets/v7-only.svg)
+
 
 Met Adobe Campaign kunt u de marketingbronnen beheren en bijhouden die zijn betrokken bij de levenscyclus van de campagne. Deze marketingmiddelen kunnen een brochure, een visuele ondersteuning of een ander communicatiemiddel zijn waarbij verschillende marktdeelnemers zijn betrokken.
 

@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Driemaandelijkse lijstupdate met een incrementele query
-description: In dit geval wordt een incrementele query gebruikt om een lijst met ontvangers automatisch bij te werken.
+description: In dit geval wordt een incrementele query gebruikt om automatisch een lijst met ontvangers bij te werken
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # Driemaandelijkse lijstupdate met een incrementele query {#quarterly-list-update}
 
-![](../../assets/v7-only.svg)
+
 
 In het volgende voorbeeld wordt een [incrementele query](incremental-query.md) wordt gebruikt om automatisch een lijst met ontvangers bij te werken. Deze ontvangers zijn gericht op seizoensgebonden marketingcampagnes.
 

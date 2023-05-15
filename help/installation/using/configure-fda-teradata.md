@@ -2,11 +2,12 @@
 product: campaign
 title: Toegang tot Teradata configureren
 description: Leer hoe u toegang tot Teradata kunt configureren in FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Toegang tot Teradata configureren {#configure-access-to-teradata}
 
-![](../../assets/v7-only.svg)
+
 
 Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda.md) (FDA) optie voor het verwerken van informatie die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Teradata te configureren.
 

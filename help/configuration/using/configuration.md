@@ -2,8 +2,9 @@
 product: campaign
 title: Navigatiestructuur van Campagne Explorer configureren
 description: Leer hoe te om de boomstructuur van de Navigatie van de Ontdekkingsreiziger van de Campagne te vormen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -11,8 +12,6 @@ ht-degree: 1%
 ---
 
 # Navigatiestructuur van Campagne Explorer configureren{#configuration}
-
-![](../../assets/v7-only.svg)
 
 Als deskundige gebruiker, kunt u omslagen in de ontdekkingsboomstructuur toevoegen en het aanpassen.
 
@@ -265,7 +264,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt door de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor meer informatie over SOAP API&#39;s raadpleegt u [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor meer informatie over SOAP API&#39;s raadpleegt u [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** tag. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Toegang tot marketingcampagnes
 description: Toegang tot marketingcampagnes
-badge: label="v7" type="Informatief" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 517a343011ff313d016638c586867673e406fd88
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,17 @@ Met Adobe Campaign kunt u marketingcampagnes maken, configureren, uitvoeren en a
 
 ### Startpagina {#home-page}
 
-Zodra u verbinding hebt met Adobe Campaign, wordt de homepage weergegeven.
+Als u eenmaal verbinding hebt met Adobe Campaign, bladert u door de verschillende mogelijkheden via koppelingen in de navigatiebalk.
+
 
 ![](assets/campaign_global_view.png)
 
-Klik op de koppelingen in de navigatiebalk voor toegang tot de verschillende mogelijkheden.
 
-Campagne-elementen vindt u in het dialoogvenster **[!UICONTROL Campaigns]** tab: Hier ziet u een overzicht van de marketingprogramma&#39;s en -campagnes en de bijbehorende subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes zijn de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes te vinden.
+Campagne-elementen vindt u in het dialoogvenster **[!UICONTROL Campaigns]** tab: Hier ziet u een overzicht van de marketingprogramma&#39;s, campagnes en hun subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes worden de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes gevonden.
 
 De **[!UICONTROL Browsing]** van de **[!UICONTROL Campaigns]** biedt verschillende ingangen aan, afhankelijk van modules die op de instantie worden geïnstalleerd. U hebt bijvoorbeeld toegang tot:
 
-* **Campagnekalender**: tijdschema van de plannen, marketingprogramma&#39;s, leveringen en campagnes. Zie [Campagnekalender](#campaign-calendar).
+* **Campagnekalender**: kalender met plannen, marketingprogramma&#39;s, leveringen en campagnes. Zie [Campagnekalender](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes in alle marketingprogramma&#39;s.
 * **Leveringen**: toegang tot de met de campagnes verband houdende leveringen.
 * **Webtoepassingen**: toegang tot webtoepassingen (formulieren, bestemmingspagina&#39;s, enz.).
@@ -43,19 +43,19 @@ De **[!UICONTROL Browsing]** van de **[!UICONTROL Campaigns]** biedt verschillen
 
 ### Campagnekalender {#campaign-calendar}
 
-Elke campagne behoort tot een programma dat op zijn beurt deel uitmaakt van een plan. Plannen, programma&#39;s en campagnes zijn toegankelijk via de **[!UICONTROL Campaign calendar]** in het menu **Campagnes** tab.
+Elke campagne behoort tot een programma dat op zijn beurt deel uitmaakt van een plan. Abonnementen, programma&#39;s en campagnes zijn toegankelijk via de **[!UICONTROL Campaign calendar]** in het menu **Campagnes** tab.
 
 Als u een abonnement, programma, campagne of levering wilt bewerken, klikt u op de naam van het abonnement in de kalender en klikt u vervolgens op **[!UICONTROL Open...]**. Het wordt dan getoond in een nieuw lusje, zoals hieronder getoond:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-U kunt de informatie filteren die in de campagnemalender wordt weergegeven. Om dit te doen, klik **[!UICONTROL Filter]** en selecteer de filtercriteria.
+U kunt de informatie filteren die in de campagnemalender wordt weergegeven: klik op **[!UICONTROL Filter]** en selecteer de filtercriteria.
 
 ![](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
->Wanneer u filtert op een datum, worden alle campagnes met een begindatum die later is dan de opgegeven datum en/of met een einddatum die ouder is dan de opgegeven datum, weergegeven. De data moeten worden geselecteerd met de kalenders rechts van elk veld.
+>Wanneer u filtert op een datum, worden alle campagnes met een begindatum die later is dan de opgegeven datum en/of met een einddatum die ouder is dan de opgegeven datum, weergegeven. Selecteer datums met de kalenders rechts van elk veld.
 
 U kunt ook de opdracht **[!UICONTROL Search]** veld om de weergegeven items te filteren.
 
@@ -116,7 +116,7 @@ Met Adobe Campaign kunt u samenwerkingsprocessen instellen voor het maken en goe
 
 #### Schema {#schedule}
 
-Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het programma een globaal overzicht van alle componenten: dit laat u de taken en de leveringen tonen en tot hen gemakkelijk toegang hebben.
+Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het programma een globaal overzicht van alle componenten: u kunt de taken en leveringen weergeven en deze gemakkelijk openen.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -124,7 +124,7 @@ Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het p
 
 Voor elke campagne kunnen exploitanten berichten uitwisselen via een speciaal forum.
 
-Raadpleeg voor meer informatie hierover [Discussieforums](../../mrm/using/discussion-forums.md).
+Meer informatie in [Discussieforums](../../mrm/using/discussion-forums.md).
 
 #### Rapporten {#reports}
 
@@ -140,11 +140,11 @@ De **[!UICONTROL Reports]** via de koppeling hebt u toegang tot de campagnerappo
 
 Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen configureren waarvoor sommige opties zijn geselecteerd en andere instellingen al zijn opgeslagen. Voor elke campagne wordt de volgende functionaliteit aangeboden:
 
-* Referentie van documenten en bronnen: u kunt documenten aan de campagne associëren (kort, rapport, beelden, enz.). Alle documentindelingen worden ondersteund. Zie [Gekoppelde documenten beheren](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
-* Vastlegkosten: voor elke campagne kunt u in Adobe Campaign de kostenposten en kostenberekeningsstructuren definiëren die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een extern bureau, huur van ruimten enz. Zie [Definiëren van kostencategorieën](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
+* Verwijzing van [documenten en middelen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten aan de campagne associëren (kort, rapport, beelden, enz.). Alle documentindelingen worden ondersteund.
+* Vastlegkosten: voor elke campagne kunt u met Adobe Campaign definiëren [kostenposten en kostenberekeningsstructuren](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een extern agentschap, huur van ruimten.
 * Definitie van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
-* Het beheren van zaadadressen (voor meer op dit, verwijs naar [deze sectie](../../delivery/using/about-seed-addresses.md)) en controlegroepen (zie [Een besturingsgroep definiëren](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
-* Goedkeuringen beheren: u kunt kiezen welke behandelingen moeten worden goedgekeurd en, indien nodig, de revisieoperatoren of groepen operatoren selecteren. Zie [Controle en goedkeuring van leveringen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Beheer [zaadadressen](../../delivery/using/about-seed-addresses.md) en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* Goedkeuringen beheren: u kunt kiezen welke behandelingen moeten worden goedgekeurd en, indien nodig, de revisieoperatoren of groepen operatoren selecteren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >

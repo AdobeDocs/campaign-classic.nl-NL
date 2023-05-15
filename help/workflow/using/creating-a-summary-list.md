@@ -2,9 +2,10 @@
 product: campaign
 title: Een overzichtslijst maken
 description: Een overzichtslijst maken
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Een overzichtslijst maken{#creating-a-summary-list}
 
-![](../../assets/v7-only.svg)
+
 
 In dit geval wordt beschreven hoe u een workflow maakt waarin u na het verzamelen van bestanden en na verschillende verbeteringen een overzichtslijst kunt maken. Het voorbeeld is gebaseerd op een lijst van contacten die aankopen in een opslag maakten.
 

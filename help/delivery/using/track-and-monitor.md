@@ -2,9 +2,11 @@
 product: campaign
 title: Berichten bijhouden en controleren
 description: Leer hoe u berichten kunt bijhouden en controleren
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Bijhouden en bewaken {#track-and-monitor}
 
-![](../../assets/common.svg)
+
 
 U hebt op de knop **Verzenden** knop? Laten we eens kijken wat er gebeurt. Zodra de levering wordt verzonden, laat Adobe Campaign u toe om spoor van de verzonden berichten te houden en te ontdekken hoe uw ontvangers op uw levering reageren. Op deze manier kunt u uw volgende campagnes beter verzenden en optimaliseren.
 

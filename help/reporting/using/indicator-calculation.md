@@ -2,18 +2,19 @@
 product: campaign
 title: Indicatoren berekenen
 description: Indicatoren berekenen
+badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2983'
 ht-degree: 2%
 
 ---
 
 # Indicatoren berekenen {#indicator-calculation}
 
-![](../../assets/common.svg)
+
 
 ## Gebruikersactiviteiten {#user-activities-1}
 
@@ -592,7 +593,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Ontvanger klikt<br /> </td> 
-   <td> @receivingClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Afzonderlijke telling van de @wideLog-ids met een type URL dat "E-mail klikt"evenaart.<br /> </td> 
    <td> Countdifferent(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
   </tr> 
@@ -870,7 +871,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Geopende items<br /> </td> 
-   <td> @receivingOpen<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Het totale aantal @wideLog-ids in de volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
   </tr> 

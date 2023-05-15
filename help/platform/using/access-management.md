@@ -2,18 +2,19 @@
 product: campaign
 title: Aan de slag met machtigingen
 description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
+badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # Aan de slag met machtigingen{#access-management}
 
-![](../../assets/common.svg)
+
 
 Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschillende operatoren zijn toegewezen. Dit zijn een reeks rechten en beperkingen die autoriseren of weigeren:
 

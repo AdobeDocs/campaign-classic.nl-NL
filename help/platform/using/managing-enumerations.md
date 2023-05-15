@@ -2,20 +2,21 @@
 product: campaign
 title: Opsommingen beheren
 description: Opsommingen beheren
+badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
 
 # Opsommingen beheren{#managing-enumerations}
 
-![](../../assets/common.svg)
+
 
 Een opsomming (ook wel &#39;gespecificeerde lijst&#39; genoemd) is een lijst met waarden die door het systeem worden voorgesteld om bepaalde velden te vullen. Met opsommingen kunt u de waarden van deze velden standaardiseren en informatie invoeren of gebruiken binnen query&#39;s.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Taken maken en beheren
 description: Taken maken en beheren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Taken maken en beheren{#creating-and-managing-tasks}
 
-![](../../assets/v7-only.svg)
+
 
 Met Adobe Campaign kunt u taken maken en de volledige levenscyclus ervan rechtstreeks binnen de toepassing beheren. De uitvoering van programma&#39;s en campagnes kan worden onderverdeeld in taken die worden toegewezen aan Adobe Campaign-exploitanten of externe dienstverleners. In deze modus kunt u een open samenwerkingsomgeving maken waarin alle deelnemers aan het programma en externe deelnemers zijn opgenomen.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Gegevensschema’s
 description: Aan de slag met schema's voor campagnegegevens
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -12,8 +13,6 @@ ht-degree: 1%
 ---
 
 # Gegevensschema’s{#data-schemas}
-
-![](../../assets/v7-only.svg)
 
 ## Principes {#principles}
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Aanbiedingen per cel
 description: Aanbiedingen per cel
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity, Interaction
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
@@ -13,7 +14,7 @@ ht-degree: 8%
 
 # Aanbiedingen per cel{#offers-by-cell}
 
-![](../../assets/v7-only.svg)
+
 
 De **[!UICONTROL Offers by cell]** de activiteit laat u de binnenkomende bevolking (van een vraag bijvoorbeeld) in verscheidene segmenten verdelen en een aanbieding specificeren om voor elk van deze segmenten voor te stellen.
 

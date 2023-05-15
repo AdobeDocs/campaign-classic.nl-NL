@@ -2,9 +2,10 @@
 product: campaign
 title: Overzicht van levering
 description: Meer informatie over de workflowactiviteit van het overzicht van de levering
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Overzicht van levering{#delivery-outline}
 
-![](../../assets/v7-only.svg)
+
 
 De **leveringsoverzicht** Hiermee kunt u een omtrek gebruiken in een campagneworkflow. De contouren moeten vooraf in de campagne zijn gemaakt.
 
