@@ -2,11 +2,13 @@
 product: campaign
 title: Aan de slag met build-upgrades
 description: Leer belangrijke stappen om aan een nieuwe bouwstijl te bevorderen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '2356'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Een build-upgrade uitvoeren{#performing-a-build-upgrade}
 
-![](../../assets/v7-only.svg)
+
 
 Deze sectie zal u van een diepgaande analyse op het verbeteringsproces en de stappen voorzien om conflicten te identificeren en op te lossen.
 
@@ -246,7 +248,7 @@ Wanneer het Transactionele Overseinen (het Centrum van het Bericht) op uw instan
 
 In de context van een omgeving voor midsourcing moet u de volgende aanvullende stappen uitvoeren om te upgraden:
 
-1. Contact [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronsserver te coördineren.
+1. Contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronsserver te coördineren.
 1. Valideer of de versie is bijgewerkt door een testkoppeling uit te voeren. Bijvoorbeeld:
 
    ```

@@ -2,11 +2,13 @@
 product: campaign
 title: Beheer
 description: Beheer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Beheer{#administration}
 
-![](../../assets/v7-only.svg)
+
 
 Automatisch opstarten van de Adobe Campaign-modules (**web**, **mta**, **wfserver**, enz.) wordt verstrekt door **nlserver** server.
 
@@ -80,14 +82,15 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >* In geval van een noodsituatie gebruikt u de **-onmiddellijk** optie om een onmiddellijke stopzetting van het proces (gelijkwaardig aan het bevel van Unix) te dwingen **doden -9**).
    >* Gebruik de **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logbestanden worden via de **syslogd** module.
    >* Gebruik de **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
-   >
-   >   Voorbeeld:
-   >
-   >   **webbreedbeeldscherm opnieuw starten**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan de processen opnieuw te starten zonder de **-verbose** als u de gewenste gegevens hebt gevonden, voorkomt u overbelasting van logbestanden.
+
+      >
+      >   Voorbeeld:
+      >
+      >   **webbreedbeeldscherm opnieuw starten**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan de processen opnieuw te starten zonder de **-verbose** als u de gewenste gegevens hebt gevonden, voorkomt u overbelasting van logbestanden.
 
 
 * Alle Adobe Campaign-processen opstarten (gelijk aan het starten van de **nlserver6** service):

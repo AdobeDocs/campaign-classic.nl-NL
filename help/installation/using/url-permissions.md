@@ -2,11 +2,13 @@
 product: campaign
 title: URL-machtigingen configureren
 description: Leer hoe u URL-machtigingen configureert
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
@@ -15,7 +17,7 @@ ht-degree: 29%
 
 # URL-machtigingen configureren (op locatie){#url-permissions}
 
-![](../../assets/v7-only.svg)
+
 
 De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) door uw Campaign Classic-instanties, is beperkt. Dit zijn URL’s waardoor uw instanties correct kunnen werken.
 
@@ -54,7 +56,7 @@ Er zijn drie modi voor verbindingsbeveiliging beschikbaar:
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 * [Hostmodellen](hosting-models.md)
 * [Configuratie van de Campaign-server](configuring-campaign-server.md)
 * [Parameters van het configuratiebestand van de Campagneserver](the-server-configuration-file.md)

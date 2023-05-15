@@ -2,11 +2,13 @@
 product: campaign
 title: Stacktracering in Linux
 description: Stacktracering in Linux
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # Stacktracering in Linux{#stack-trace-in-linux}
 
-![](../../assets/v7-only.svg)
+
 
 A **stacktracering** vertegenwoordigt een spoor in een **kern** tekstbestand. Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
 
@@ -23,7 +25,6 @@ A **stacktracering** vertegenwoordigt een spoor in een **kern** tekstbestand. Di
 >
 >* A **kern** bestand heeft een naam **kern.`<num>`**.
 >* **gdb - De GNU-foutopsporing** moet op de computer zijn geïnstalleerd.
-
 >
 
 

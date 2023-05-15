@@ -2,18 +2,20 @@
 product: campaign
 title: Inbox rendering in campagne
 description: Leer hoe u e-mailweergaven vastlegt en beschikbaar maakt in een speciaal rapport
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 8%
+source-wordcount: '839'
+ht-degree: 9%
 
 ---
 
 # Inboxrendering{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## Inbox-rendering {#about-inbox-rendering}
 
@@ -33,6 +35,8 @@ De mobiele clients, berichten en webmail zijn beschikbaar voor **Inbox rendering
 >Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe Campaign-programma&#39;s zoals **[!UICONTROL Preview]** en [Proefdrukken](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Inbox-rendering activeren {#activating-inbox-rendering}
+
+[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning van Adobe en consultants. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 

@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Tomcat-versie zoeken in Adobe Campaign
-description: Leer hoe u de huidige versie van de ingesloten Tomcat-webservlet kunt achterhalen die in een exemplaar van Adobe Campaign wordt gebruikt.
+description: Leer hoe u de huidige versie van de ingesloten Tomcat-webservlet kunt achterhalen die in een instantie van Adobe Campaign wordt gebruikt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Tomcat-versie zoeken{#locate-tomcat-version}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, de vraag van de ZEEP, en anderen) te verwerken. Voor alle naar buiten gerichte Adobe Campaign-instanties is er vaak een externe webserver (gewoonlijk IIS of Apache) aanwezig.
 

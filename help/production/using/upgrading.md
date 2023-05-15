@@ -2,11 +2,13 @@
 product: campaign
 title: Upgraden naar een nieuwe build
 description: Leer technische stappen om aan een nieuwe bouwstijl te bevorderen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
 
-![](../../assets/v7-only.svg)
+
 
 Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen bij de release](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 >* Adobe raadt u ten zeerste aan een databaseback-up te maken voor elke instantie voordat u deze bijwerkt. Raadpleeg [deze sectie](../../production/using/backup.md) voor meer informatie.
 >* Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
 >* Uitlezen [deze sectie](../../installation/using/general-architecture.md) en de [upgrade voor build](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk voordat u begint.
-
 >
 
 

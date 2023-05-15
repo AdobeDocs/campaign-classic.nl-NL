@@ -2,11 +2,13 @@
 product: campaign
 title: Vereisten voor installatie van Campaign in Windows
 description: Vereisten voor installatie van Campaign in Windows
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: a7cf59cc-9260-4109-af4c-b2e2a9c999da
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 8%
@@ -15,7 +17,7 @@ ht-degree: 8%
 
 # Ga aan de slag met de installatie van Campagne in Windows {#prerequisites-of-campaign-installation-in-windows}
 
-![](../../assets/v7-only.svg)
+
 
 De technische configuratie en software die nodig zijn voor de installatie van Adobe Campaign worden weergegeven in het gedeelte [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 

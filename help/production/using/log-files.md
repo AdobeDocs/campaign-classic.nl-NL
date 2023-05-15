@@ -2,11 +2,13 @@
 product: campaign
 title: Logboekbestanden
 description: Logboekbestanden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Logboekbestanden{#log-files}
 
-![](../../assets/v7-only.svg)
+
 
 De logbestanden zijn als volgt ingedeeld:
 
@@ -57,7 +59,7 @@ De mono-instantie logboekdossiers zijn vermeld in de volgende lijst:
 
 Voor prestaties en opslagoptimalisering, wordt het logins.log- dossier verdeeld in veelvoudige dossiers, één elke dag (logins.yy-mm-dd.log) met een maximum van 365 bewaarde dossiers. Het aantal dagen kan worden gewijzigd in serverConf.xml, onder syslogd (**maxNumberOfLoginsFiles** ). Zie de documentatie op de [serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Standaard zijn de logbestanden beperkt tot twee bestanden van 10 MB per module en per instantie. Het tweede bestand wordt aangeroepen: **`<modulename>`_2.log**. De grootte van de logboeken is daarom beperkt tot 2*10MB per module en per instantie.
+Standaard zijn de logbestanden beperkt tot twee bestanden van 10 MB per module en per instantie. Het tweede bestand wordt aangeroepen: **`<modulename>`_2.log**. De omvang van de stammen is daarom beperkt tot 2&#42;10 MB per module en per instantie.
 
 U kunt echter grotere bestanden behouden. Als u dit wilt inschakelen, wijzigt u de waarde van de optie **maxFileSizeMb=&quot;10&quot;** in het dialoogvenster **syslogd** knooppunt van de **conf/serverConf.xml** bestand. Deze waarde vertegenwoordigt de maximumgrootte in MB van een logboekdossier.
 
