@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 2%
 
 ---
@@ -93,9 +93,9 @@ U moet ook alle [nuttige opdrachtregels](../../installation/using/command-lines.
 * **nlserver pdump**: lijsten lopende processen
 * **nlserver pdump -who**: lijsten actieve cliëntzittingen
 * **nlserver monitor ontbreekt**: lijsten ontbrekende eigenschappen
-* **nlserver start process@instanceName**: start een proces
-* **nlserver stop process@instanceName**: stopt een proces
-* **process@instanceName opnieuw starten op de server**: start een proces opnieuw
+* **nlserver start process@instance-name**: start een proces
+* **nlserver stop process@instance-name**: stopt een proces
+* **process@instance-name opnieuw starten op de server**: start een proces opnieuw
 * **Uitschakelen van server**: stopt alle Campagneprocessen
 * **nlserver waakhond - svc**: start de waakhond (alleen UNIX)
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de gebruiker vereist om het op te lossen.
 
-De **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installationDirectory/var/instanceName/postupgrade**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
+De **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installDirectory/var/`<instance-name>`/postupgrade**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
 
 ### Conflicten analyseren
 

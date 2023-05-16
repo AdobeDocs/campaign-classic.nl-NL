@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 2%
@@ -56,13 +56,13 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 * in de **config** opdracht:
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * of na de upgrade:
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 * De **-showCustomEntities** geeft de lijst met alle niet-standaardobjecten weer:
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    Voorbeeld van een verzonden bericht:
@@ -88,7 +88,7 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 * De **-showDeletteEntities** geeft de lijst weer van alle standaardobjecten die ontbreken in de database of het bestandssysteem. Voor elk ontbrekend object wordt het pad opgegeven.
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    Voorbeeld van een verzonden bericht:
@@ -104,7 +104,7 @@ Geïntegreerd als norm in het postupgrade bevel, laat dit proces u waarschuwinge
 U kunt het verificatieproces zelfstandig (zonder migratie) starten met de opdracht:
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Er wordt ook een coherentiecontrole van de database en het schema uitgevoerd.
 Met deze optie kunt u objecten die zich buiten het vak bevinden herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]

@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -52,20 +52,20 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Version X.Y (build XXXX) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
    Als de module niet actief is, neemt u contact op met de klantenservice van Adobe. Als u een installatie op locatie hebt, moet een beheerder de service opnieuw starten met de onderstaande opdracht.
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >Vervangen **`<instancename>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >Vervangen **`<instance-name>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    Raadpleeg voor meer informatie over het opnieuw opstarten van modules [deze sectie](../../production/using/usual-commands.md#module-launch-commands).
 
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
@@ -104,13 +104,13 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 1. Als de module niet actief is, neemt u contact op met de klantenservice van Adobe. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >Vervangen **`<instancename>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >Vervangen **`<instance-name>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    Raadpleeg voor meer informatie over het opnieuw opstarten van modules [deze sectie](../../production/using/usual-commands.md#module-launch-commands).
 

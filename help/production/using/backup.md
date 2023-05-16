@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
 
 # Back-up{#backup}
-
-
 
 Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer.
 
@@ -32,33 +30,29 @@ De meeste gegevens bevinden zich in de database. Dit is 99% van de informatie wa
 
 Bestanden zijn verdeeld in verschillende categorieën:
 
-* Configuratiebestanden in **nl6/conf**
+* Configuratiebestanden, opgeslagen in **nl6/conf** kunt u Adobe Campaign zeer snel opnieuw configureren.
 
-   Hiermee kunt u Adobe Campaign zeer snel opnieuw configureren.
+* Bestanden omleiden, opgeslagen in  **nl6/var/`<instance-name>`/redir**, op de trackingservers (vaak &quot;frontal&quot; genoemd) staan en alle eerdere instructies voor de campagne bevatten. Ze worden nog steeds gebruikt door vorige campagnes.
 
-* Bestanden omleiden ** nl6/var/`<instancename>`/redir**
-
-   Dit zijn op het volgen (vaak &quot;frontal&quot;genoemd) servers, en omvat alle vorige campagneomleiding. Ze worden nog steeds gebruikt door vorige campagnes.
-
-* Logbestanden: **nl6/var/`<instancename>`/log**
-
-   Deze kunnen worden gebruikt om problemen te traceren.
+* Logbestanden, opgeslagen in **nl6/var/`<instance-name>`/log** kan worden gebruikt om problemen op te sporen.
 
 De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
 * nl6/conf
 
-* nl6/var/`<instanceName>`/redir (voor elke instantie)
+* nl6/var/`<instance-name>`/redir (voor elke instantie)
 
-* nl6/var/`<instanceName>`/log (optioneel)
+* nl6/var/`<instance-name>`/log (optioneel)
 
-* nl6/var/`<instanceName>`/relay (facultatief)
+* nl6/var/`<instance-name>`/relay (facultatief)
+
+
+## Database {#database}
 
 >[!IMPORTANT]
 >
->Het is van essentieel belang een back-up van de database te maken.
+>Het is noodzakelijk om een back-up van de database te maken.
 
-## Database {#database}
 
 Het gegevensbestand bevat alle informatie die in de rijke cliëntconsole van Adobe Campaign wordt getoond, evenals alle lijn-van-bedrijfsgegevens.
 
