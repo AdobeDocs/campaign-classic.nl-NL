@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 9ea7eea5a539407a17b0a11c942570cfa6c16f2f
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,11 @@ ht-degree: 0%
 # Processen opvolgen{#monitoring-processes}
 
 
-
 De toepassingsserver en de omleidingsserver (**bijhouden**) kan handmatig of automatisch worden gecontroleerd.
 
 ## Handmatige controle {#manual-monitoring}
 
-Ga naar **[!UICONTROL Monitoring]** en klik op de knop **[!UICONTROL Overview]** koppeling gebruiken om de pagina voor procesbewaking van Adobe Campaign weer te geven.
+Als u de pagina voor procescontrole van Adobe Campaign wilt openen, bladert u naar de **[!UICONTROL Monitoring]** en klikt u op de knop **[!UICONTROL Overview]** koppeling.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,71 +32,71 @@ Met de weergegeven pagina kunt u de status van de verbonden instantie weergeven,
 * de lijst van ontbrekende processen en uitvoeringsinformatie (begindatum, PID, enz.);
 * een weergave van workflows en leveringen.
 
-Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [deze pagina](../../production/using/monitoring-guidelines.md).
+Aanvullende manieren om de Campagne-processen te bewaken worden weergegeven in [deze pagina](../../production/using/monitoring-guidelines.md).
 
 ### Logboekjournaal {#log-journal}
 
-Het is mogelijk om het logboekdagboek met betrekking tot een proces te tonen. Klik hiertoe op het proces. **mta** klikt u bijvoorbeeld op **[!UICONTROL Open the log journal]** .
+Om het logboekdagboek met betrekking tot een proces te tonen, klik op het proces, **mta** selecteert u vervolgens **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### Systeemindicatoren {#system-indicators}
 
-Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven, zoals het fysieke en virtuele geheugen, actieve processen en beschikbare schijfruimte. De indicatoren zijn verschillend voor Linux en Vensters werkende systemen. Ga naar de **[!UICONTROL Instance Monitoring]** en klik op de knop **[!UICONTROL Display]** link naar de lijst van indicatoren
+Blader naar de lijst met systeemindicatoren om informatie over de computer weer te geven, zoals het fysieke en virtuele geheugen, actieve processen en beschikbare schijfruimte. De indicatoren zijn verschillend voor Linux en Vensters werkende systemen. Ga naar de **[!UICONTROL Instance Monitoring]** en klik op de knop **[!UICONTROL Display]** link naar de lijst van indicatoren.
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor **Berichtencentrum**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie .
+* **[!UICONTROL Pending events queued]**: specifieke indicator voor **Berichtencentrum**. [Meer informatie](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]** : informatie over het fysieke geheugen (RAM).
+* **[!UICONTROL Memory]**: informatie over het fysieke geheugen (RAM).
 
-   **[!UICONTROL Current value]** : daadwerkelijk geheugenverbruik.
+   **[!UICONTROL Current value]**: huidig geheugenverbruik.
 
-   **[!UICONTROL Max Value]** : totale hoeveelheid geïnstalleerd geheugen.
+   **[!UICONTROL Max Value]**: totale hoeveelheid geïnstalleerd geheugen.
 
-   **[!UICONTROL Available]** : hoeveelheid beschikbaar geheugen.
+   **[!UICONTROL Available]**: hoeveelheid beschikbaar geheugen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
    Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door RAM toe te voegen aan het systeem waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
-* **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
+* **[!UICONTROL Swap Memory]**: informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
-   **[!UICONTROL Current value]** : daadwerkelijk geheugenverbruik.
+   **[!UICONTROL Current value]**: daadwerkelijk geheugenverbruik.
 
-   **[!UICONTROL Max Value]** : totale hoeveelheid geheugen.
+   **[!UICONTROL Max Value]**: totale hoeveelheid geheugen.
 
-   **[!UICONTROL Available]** : hoeveelheid beschikbaar geheugen.
+   **[!UICONTROL Available]**: hoeveelheid beschikbaar geheugen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
    Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** de indicatoren worden getoond, kunt u de kwestie oplossen door de grootte van het uitwisselingsdossier in de geavanceerde montages van Vensters te verhogen.
 
-* **[!UICONTROL Disk XXX]** : informatie over machinelezers.
+* **[!UICONTROL Disk XXX]**: informatie over machinelezers.
 
-   **[!UICONTROL Current value]** : werkelijk gebruikte schijfruimte.
+   **[!UICONTROL Current value]**: werkelijk gebruikte schijfruimte.
 
-   **[!UICONTROL Max Value]** : totale schijfcapaciteit.
+   **[!UICONTROL Max Value]**: totale schijfcapaciteit.
 
-   **[!UICONTROL Available]** : schijfruimte beschikbaar
+   **[!UICONTROL Available]**: beschikbare schijfruimte.
 
-   **[!UICONTROL Used]** : percentage gebruikte schijf.
+   **[!UICONTROL Used]**: percentage gebruikte schijf.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer de beschikbare schijfruimte 80% van de totale capaciteit bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer de beschikbare schijfruimte 80% van de totale capaciteit bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer de beschikbare schijfruimte 90% van de totale capaciteit bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer de beschikbare schijfruimte 90% van de totale capaciteit bereikt.
 
-* **[!UICONTROL Number of processes too old]** : informatie over Adobe Campaign-processen die al meer dan een dag actief zijn.
+* **[!UICONTROL Number of processes too old]**: informatie over Adobe Campaign-processen die al meer dan een dag actief zijn.
 
-   **[!UICONTROL Current value]** : aantal processen dat momenteel actief is.
+   **[!UICONTROL Current value]**: aantal processen dat momenteel actief is.
 
-   **[!UICONTROL Max Value]** : maximumaantal toegestane processen (1).
+   **[!UICONTROL Max Value]**: maximumaantal toegestane processen (1).
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven als het aantal processen gelijk is aan 1.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven als het aantal processen gelijk is aan 1.
 
    Wanneer de **[!UICONTROL Alert]** -indicator wordt weergegeven, kan het zijn dat het desbetreffende proces is vergrendeld door de SQL-database-engine of dat het proces vastzit in een oneindige lus. De **waakhond** -proces dat door Adobe Campaign wordt geleverd, wordt elke dag opnieuw gestart en kunt u dit probleem oplossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
 
@@ -105,115 +104,115 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor **Berichtencentrum**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie .
+* **[!UICONTROL Pending events queued]**: specifieke indicator voor **Berichtencentrum**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie .
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** : informatie over de belasting, d.w.z. de gebruikssnelheid van de processor door de processen die gedurende de laatste minuut, vijf minuten of vijftien minuten op de machine worden uitgevoerd
+* **[!UICONTROL Load average (1/5/15 minutes)]**: informatie over de belasting, d.w.z. de gebruikssnelheid van de processor door de processen die gedurende de laatste minuut, vijf minuten of vijftien minuten op de machine worden uitgevoerd
 
-   **[!UICONTROL Current value]** : werkelijke lading van de machine.
+   **[!UICONTROL Current value]**: werkelijke lading van de machine.
 
-   **[!UICONTROL Max value]** : maximale belasting van het proces of de processen op de machine
+   **[!UICONTROL Max value]**: maximale belasting van het proces of de processen op de machine
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer de lading 80 % van de maximaal toegestane waarde over de laatste minuut , vijf minuten of vijftien minuten bereikt .
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer de lading 80 % van de maximaal toegestane waarde over de laatste minuut , vijf minuten of vijftien minuten bereikt .
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer de lading 90 % bereikt van de maximaal toegestane waarde van de laatste minuut , vijf minuten of vijftien minuten .
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer de lading 90 % bereikt van de maximaal toegestane waarde van de laatste minuut , vijf minuten of vijftien minuten .
 
-* **[!UICONTROL Memory]** : informatie over het fysieke geheugen (RAM).
+* **[!UICONTROL Memory]**  informatie over het fysieke geheugen (RAM).
 
-   **[!UICONTROL Current value]** : daadwerkelijk geheugenverbruik.
+   **[!UICONTROL Current value]**: daadwerkelijk geheugenverbruik.
 
-   **[!UICONTROL Max Value]** : totale hoeveelheid geïnstalleerd geheugen.
+   **[!UICONTROL Max Value]**: totale hoeveelheid geïnstalleerd geheugen.
 
-   **[!UICONTROL Available]** : hoeveelheid beschikbaar geheugen.
+   **[!UICONTROL Available]**: hoeveelheid beschikbaar geheugen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
    Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door RAM toe te voegen aan het systeem waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
-* **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
+* **[!UICONTROL Swap Memory]**: informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
-   **[!UICONTROL Current value]** : daadwerkelijk geheugenverbruik.
+   **[!UICONTROL Current value]**: daadwerkelijk geheugenverbruik.
 
-   **[!UICONTROL Max Value]** : totale hoeveelheid geheugen.
+   **[!UICONTROL Max Value]**: totale hoeveelheid geheugen.
 
-   **[!UICONTROL Available]** : hoeveelheid beschikbaar geheugen.
+   **[!UICONTROL Available]**: hoeveelheid beschikbaar geheugen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 80% van de totale hoeveelheid bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
    Wanneer de **[!UICONTROL Warning]** en **[!UICONTROL Alert]** Er worden indicatoren weergegeven. U kunt dit probleem oplossen door het uitwisselingsbestand groter te maken.
 
-* **[!UICONTROL Core Files]** : informatie over de bestanden die zijn gegenereerd na het vastlopen van een Adobe Campaign-proces. Met deze bestanden kunt u de oorzaken van het vastlopen vaststellen.
+* **[!UICONTROL Core Files]**: informatie over de bestanden die zijn gegenereerd na het vastlopen van een Adobe Campaign-proces. Met deze bestanden kunt u de oorzaken van het vastlopen vaststellen.
 
-   **[!UICONTROL Current Value]** : aantal bestaande bestanden.
+   **[!UICONTROL Current Value]**: aantal bestaande bestanden.
 
-   **[!UICONTROL Max Value]** : maximumaantal geoorloofde bestanden (1).
+   **[!UICONTROL Max Value]**: maximumaantal geoorloofde bestanden (1).
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het aantal bestanden groter is dan 1.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het aantal bestanden groter is dan 1.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal bestanden gelijk is aan 1.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het aantal bestanden gelijk is aan 1.
 
    Wanneer een proces wegens een botsing ontbreekt, wordt het getoond in rood op de lijst van processen en automatisch opnieuw begonnen door **waakhond** door Adobe Campaign opgegeven proces.
 
-* **[!UICONTROL Number of shared memory segments]** : informatie over de geheugensegmenten die door alle Adobe Campaign-processen worden gedeeld.
+* **[!UICONTROL Number of shared memory segments]**: informatie over de geheugensegmenten die door alle Adobe Campaign-processen worden gedeeld.
 
-   **[!UICONTROL Current value]** : aantal geheugensegmenten dat momenteel in gebruik is.
+   **[!UICONTROL Current value]**: aantal geheugensegmenten dat momenteel in gebruik is.
 
-   **[!UICONTROL Max Value]** : maximum aantal geoorloofde geheugensegmenten (2).
+   **[!UICONTROL Max Value]**: maximum aantal geoorloofde geheugensegmenten (2).
 
-   **[!UICONTROL Warning]** : deze indicator wordt getoond wanneer het aantal geheugensegmenten 1 bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt getoond wanneer het aantal geheugensegmenten 1 bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt getoond wanneer het aantal geheugensegmenten 2 bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt getoond wanneer het aantal geheugensegmenten 2 bereikt.
 
-* **[!UICONTROL Number of processes too old]** : informatie over processen die langer dan één dag actief zijn geweest.
+* **[!UICONTROL Number of processes too old]**: informatie over processen die langer dan één dag actief zijn geweest.
 
-   **[!UICONTROL Current value]** : aantal processen dat momenteel actief is.
+   **[!UICONTROL Current value]**: aantal processen dat momenteel actief is.
 
-   **[!UICONTROL Max Value]** : maximumaantal toegestane processen.
+   **[!UICONTROL Max Value]**: maximumaantal toegestane processen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het aantal processen 80 % van de toegestane drempel bereikt .
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het aantal processen 80 % van de toegestane drempel bereikt .
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal processen 90 % van de toegestane drempel bereikt .
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het aantal processen 90 % van de toegestane drempel bereikt .
 
-* **[!UICONTROL File Handles]** : informatie over de bestandsdescriptoren, d.w.z. het aantal geopende bestanden per proces.
+* **[!UICONTROL File Handles]**: informatie over de bestandsdescriptoren, d.w.z. het aantal geopende bestanden per proces.
 
-   **[!UICONTROL Current value]** : het huidige aantal bestandsdescriptors.
+   **[!UICONTROL Current value]**: het huidige aantal bestandsdescriptors.
 
-   **[!UICONTROL Max Value]** : maximumaantal bestandsdescriptors dat door het besturingssysteem is geautoriseerd.
+   **[!UICONTROL Max Value]**: maximumaantal bestandsdescriptors dat door het besturingssysteem is geautoriseerd.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het aantal geautoriseerde bestandsdescriptors de drempel van 80% bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het aantal geautoriseerde bestandsdescriptors de drempel van 80% bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal geautoriseerde bestandsdescriptors de drempel van 90% bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het aantal geautoriseerde bestandsdescriptors de drempel van 90% bereikt.
 
-* **[!UICONTROL Processes]** : informatie over de machineverwerking.
+* **[!UICONTROL Processes]**: informatie over de machineverwerking.
 
-   **[!UICONTROL Current value]** : aantal processen dat momenteel actief is.
+   **[!UICONTROL Current value]**: aantal processen dat momenteel actief is.
 
-   **[!UICONTROL Max Value]** : maximumaantal toegestane processen.
+   **[!UICONTROL Max Value]**: maximumaantal toegestane processen.
 
-   **[!UICONTROL Active Processes]** : aantal actieve processen.
+   **[!UICONTROL Active Processes]**: aantal actieve processen.
 
-   **[!UICONTROL Inactive Processes]** : aantal inactieve processen.
+   **[!UICONTROL Inactive Processes]**: aantal inactieve processen.
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het aantal toegestane processen de drempel van 80 % bereikt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het aantal toegestane processen de drempel van 80 % bereikt.
 
-   **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal toegestane processen de drempel van 90% bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het aantal toegestane processen de drempel van 90% bereikt.
 
-* **[!UICONTROL Zombie Processes]** : informatie over de processen die zijn gestopt maar nog een proces-herkenningsteken (PID) hebben en in de proceslijst zichtbaar blijven.
+* **[!UICONTROL Zombie Processes]**: informatie over de processen die zijn gestopt maar nog een proces-herkenningsteken (PID) hebben en in de proceslijst zichtbaar blijven.
 
-   **[!UICONTROL Current value]** : aantal zombie-processen dat momenteel actief is.
+   **[!UICONTROL Current value]**: aantal zombie-processen dat momenteel actief is.
 
-   **[!UICONTROL Max Value]** : maximumaantal toegestane zombie-processen (2).
+   **[!UICONTROL Max Value]**: maximumaantal toegestane zombie-processen (2).
 
-   **[!UICONTROL Warning]** : deze indicator wordt weergegeven wanneer het aantal zombie-processen dichtbij 2 ligt.
+   **[!UICONTROL Warning]**: deze indicator wordt weergegeven wanneer het aantal zombie-processen dichtbij 2 ligt.
 
-   **[!UICONTROL Alert]** deze indicator wordt weergegeven wanneer het aantal zombie-processen 2 bereikt.
+   **[!UICONTROL Alert]**: deze indicator wordt weergegeven wanneer het aantal zombie-processen 2 bereikt.
 
-#### Aangepaste indicatoren {#customized-indicators}
+#### Indicatoren aanpassen {#customized-indicators}
 
-Met Adobe Campaign kunt u indicatoren aanpassen. Dit doet u als volgt:
+Met Adobe Campaign kunt u indicatoren aanpassen, zoals hieronder wordt beschreven:
 
 1. Een **.sh** bestand en noem het bestand **[!UICONTROL cust_indicators.sh]** .
 1. Voeg uw aangepaste indicatoren toe aan dit bestand. Bijvoorbeeld:
@@ -239,7 +238,7 @@ Met Adobe Campaign kunt u indicatoren aanpassen. Dit doet u als volgt:
    </indicator>"
    ```
 
-1. Plaats het bestand in de **[!UICONTROL usr/local/neolane/nl6]** map.
+1. Sla het bestand op in het dialoogvenster **[!UICONTROL usr/local/neolane/nl6]** map.
 
 Dit bestand wordt aangeroepen door Adobe Campaign.
 
@@ -247,9 +246,7 @@ Dit bestand wordt aangeroepen door Adobe Campaign.
 
 SMTP-rapporten voor de bewaking van de levering zijn geïntegreerd in het Adobe Campaign-platform. Zij kunnen via de console of het gebruiken van de toegang van het Web worden betreden.
 
-Deze rapporten tonen SMTP leveringsstatistieken en SMTP fouten door domein.
-
-De exploitant moet beheerrechten hebben om toegang te krijgen tot deze rechten.
+Deze rapporten tonen SMTP leveringsstatistieken en SMTP fouten door domein. De exploitant moet **Beheer** rechten.
 
 Ze zijn gegroepeerd onder **Toezicht** > &#39;SMTP-bewaking&#39;.
 
