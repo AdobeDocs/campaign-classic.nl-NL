@@ -7,9 +7,9 @@ feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1133'
 ht-degree: 1%
 
 ---
@@ -151,4 +151,4 @@ Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 
       Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
-      Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).
+      Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

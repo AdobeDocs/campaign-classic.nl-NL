@@ -3,14 +3,14 @@ product: campaign
 title: Mislukte verbinding
 description: Mislukte verbinding
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 4%
 
 ---
@@ -60,7 +60,7 @@ Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van h
 </tr>
 <tr>
 <td>Controleer de algemene configuratie van de beveiligingszones.</td>
-<td>Voor meer bij het vormen van veiligheidsstreken, verwijs naar <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>deze afdeling.</a></td>
+<td>Voor meer bij het vormen van veiligheidsstreken, verwijs naar <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>deze afdeling.</a></td>
 </tr>
 <tr>
 <td>De pdump van de bevelserver keert terug <b>Geen taken</b></td>

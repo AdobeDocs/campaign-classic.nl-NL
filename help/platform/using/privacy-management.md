@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
@@ -64,7 +64,7 @@ U kunt in Adobe Campaign verzoeken voor **Toegang** en **Verwijderen** afhandele
 Raadpleeg de [implementatiestappen](../../platform/using/privacy-requests.md) om te leren hoe u **toegangs**- en **verwijderings** verzoeken kunt maken en hoe Adobe Campaign ze verwerkt.
 
 <!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
 
 ## Toestemming, retentie en rollen {#consent-retention-roles}
 

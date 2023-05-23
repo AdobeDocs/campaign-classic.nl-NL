@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1499'
 ht-degree: 4%
 
 ---
@@ -91,7 +91,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    ![](assets/amp_tab_perso.png)
 
-1. Wanneer u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
+1. Als u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Momenteel ondersteunen twee e-mailproviders het testen van deze indeling: Gmail 
 Alle stappen en specificaties die vereist zijn om levering met AMP-indeling op Gmail-accounts te testen, worden in de corresponderende [Gmail](https://developers.google.com/gmail/ampemail?), en [Mail.ru](https://postmaster.mail.ru/amp) documentatie voor ontwikkelaars.
 
 Met name moet aan de volgende eisen worden voldaan:
-* Volg de beveiligingsvereisten voor AMP die specifiek gelden voor [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), en [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
+* Volg de beveiligingsvereisten voor AMP die specifiek gelden voor [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), en [Mail.ru](https://postmaster.mail.ru/amp/#howto).
 * Het AMP MIME-onderdeel moet een [geldig AMP-document](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email).
 * Het AMP MIME-onderdeel moet kleiner zijn dan 100 kB.
 
@@ -170,7 +170,7 @@ Voor meer informatie raadpleegt u de [Gmail](https://developers.google.com/gmail
 
 ![](assets/amp_from_field.png)
 
-Volg de stappen van het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/?lang=en#howto) (**Als u een gebruiker bent** ).
+Volg de stappen van het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/#howto) (**Als u een gebruiker bent** ).
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 
@@ -182,7 +182,7 @@ U kunt experimenteren met het leveren van dynamische e-mailberichten door u te r
 
 Als u eenmaal met een paar adressen bent getest, kunt u AMP-e-mails naar elk Gmail-adres sturen. Hiervoor moet u zich registreren bij Google en wachten op het antwoord. Volg de stappen in het dialoogvenster [Gmail](https://developers.google.com/gmail/ampemail/register) ontwikkelaarsdocumentatie. Nadat je bent ingeschreven, word je een geautoriseerde afzender.
 
-Als u AMP-e-mails naar Mail.ru-adressen wilt verzenden, voert u de vereisten en stappen uit die in het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/?lang=en#howto) (**Als u een e-mailafzender bent** ).
+Als u AMP-e-mails naar Mail.ru-adressen wilt verzenden, voert u de vereisten en stappen uit die in het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/#howto) (**Als u een e-mailafzender bent** ).
 
 ## Een AMP-e-mail verzenden {#sending-amp-email}
 

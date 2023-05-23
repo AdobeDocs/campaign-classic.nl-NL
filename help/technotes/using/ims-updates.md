@@ -4,9 +4,9 @@ title: TechNote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign
 description: Campagne - IMS-updates
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '585'
 ht-degree: 8%
 
 ---
@@ -92,5 +92,5 @@ Als u de Internet Explorer-versie niet hebt bijgewerkt, wordt het volgende beric
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)
 * [Campagne-clientconsole installeren](../../installation/using/installing-the-client-console.md)
-* [Toegang tot Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)
+* [Toegang tot Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 * [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

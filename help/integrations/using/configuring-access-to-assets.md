@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschak
 
 >[!CAUTION]
 >
->Deze mogelijkheid is uitgeschakeld, vanaf Adobe Experience Manager 6.4. [Meer informatie](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
+>Deze mogelijkheid is uitgeschakeld, vanaf Adobe Experience Manager 6.4. [Meer informatie](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 Als u AEM Assets wilt integreren met Adobe Campaign, moet u eerst de integratie tussen Adobe Experience Manager en Adobe Campaign configureren. Voor deze configuratie is voornamelijk het volgende vereist:
 

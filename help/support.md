@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 'Help- en ondersteuningsopties voor Campaign Classic '
+title: Help- en ondersteuningsopties voor Campaign Classic
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 59%
 
 ---
@@ -103,7 +103,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 
 ### Hoe kan ik het configuratiescherm openen?
 
-U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud. Het is alleen toegankelijk voor gebruikers met beheerdersrechten. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html) voor meer informatie.
+U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud. Het is alleen toegankelijk voor gebruikers met beheerdersrechten. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=nl) voor meer informatie.
 
 ### Veelgestelde vragen over configuratiescherm
 
@@ -124,9 +124,9 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel beheert. Meer informatie vindt u op de volgende pagina&#39;s:
 * [Voeg IPs op de lijst van gewenste personen toe](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) om toegang te krijgen tot uw Campagne-instantie(s)
-* [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+* [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 * [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [De GPG-sleutels voor gegevenscodering beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [De GPG-sleutels voor gegevenscodering beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
 
@@ -147,4 +147,4 @@ Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://experie
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Als u een probleem wilt registreren of een chatsessie wilt starten op dat nieuwe systeem, maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Volg de in [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
+Als u een probleem wilt registreren of een chatsessie wilt starten op dat nieuwe systeem, maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Volg de in [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank}.

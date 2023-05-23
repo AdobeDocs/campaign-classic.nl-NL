@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '2032'
-ht-degree: 100%
+source-wordcount: '2030'
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ Dankzij de trackingfuncties van Adobe Campaign kunt u bijhouden hoe verzendingso
 * Een **sessiecookie**: de **nlid**-cookie bevat de id van de e-mail die is verzonden naar de contactpersoon (**broadlogId**) en de id van de berichtsjabloon (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
 
 * Twee **permanente** cookies:
-   * Het **UUID**-cookie (Universal Unique IDentifier) wordt gedeeld tussen Adobe Experience Cloud-oplossingen. Dit wordt één keer ingesteld totdat het verdwijnt uit de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan worden geplaatst door een introductiepagina (om onbekende klantenactiviteiten aan een ontvanger te koppelen) of door een verzending. De beschrijving van dit cookie is beschikbaar op [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=nl#ec-cookies).
+   * Het **UUID**-cookie (Universal Unique IDentifier) wordt gedeeld tussen Adobe Experience Cloud-oplossingen. Dit wordt één keer ingesteld totdat het verdwijnt uit de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan worden geplaatst door een introductiepagina (om onbekende klantenactiviteiten aan een ontvanger te koppelen) of door een verzending. De beschrijving van dit cookie is beschikbaar op [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
    * Het **nllastdelid**-cookie (geïntroduceerd in Campaign Classic 20.3) is een permanente cookie die de **deliveryId** bevat van de laatste verzending waarvan de gebruiker op de koppeling heeft geklikt. Deze cookie wordt gebruikt wanneer de sessiecookie ontbreekt om te identificeren welke trackingtabel moet worden gebruikt.
 
 In verordeningen zoals de Algemene verordening gegevensbescherming (AVG) wordt bepaald dat bedrijven de toestemming van webgebruikers nodig hebben voordat ze cookies mogen installeren.

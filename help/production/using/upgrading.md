@@ -3,14 +3,14 @@ product: campaign
 title: Upgraden naar een nieuwe build
 description: Leer technische stappen om aan een nieuwe bouwstijl te bevorderen
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1145'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Uitvoeren **setup.exe**.
 
-   Als u dit bestand wilt downloaden, maakt u verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Als u dit bestand wilt downloaden, maakt u verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 1. Selecteer de installatiemodus: kiezen **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
@@ -125,7 +125,7 @@ Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bi
 
 ### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: verbinden met [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: verbinden met [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 

@@ -7,10 +7,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 6%
+source-wordcount: '512'
+ht-degree: 5%
 
 ---
 
@@ -74,4 +74,4 @@ Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde 
 
 Adobe Campaign-matrix voor toegangsrechten is beschikbaar [hier](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
