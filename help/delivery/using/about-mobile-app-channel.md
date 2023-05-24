@@ -53,7 +53,7 @@ U kunt het gedrag van de toepassing bepalen wanneer de gebruiker het bericht act
 >* Waarschuwing: in sommige landen vereist de wet dat u de gebruikers informeert over uw verzamelde datatype mobiele toepassingen en het doel van hun verwerking . U moet de wetgeving controleren.
 
 
-De **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflowupdates voor meldingen van abonnementen op mobiele apparaten. Raadpleeg voor meer informatie over deze workflow de [lijst van technische werkstromen](../../workflow/using/about-technical-workflows.md).
+De **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflowupdates voor meldingsabonnementen op mobiele apparaten. Raadpleeg voor meer informatie over deze workflow de [lijst van technische werkstromen](../../workflow/using/about-technical-workflows.md).
 
 Adobe Campaign is compatibel met HTTP/2 APNs. Voor meer details over de configuratiestappen, verwijs naar [deze sectie](configuring-the-mobile-application.md) sectie.
 

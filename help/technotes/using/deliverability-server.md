@@ -53,7 +53,7 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 1. Controleer of de `DmRendering_cuid` option value is fill.
 
    * Als de optie is gevuld, kunt u de implementatie starten.
-   * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om uw CUID op te halen.
+   * Als geen waarde wordt gevuld, contacteer [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om uw CUID op te halen.
 
    Deze optie moet op al uw instanties van de Campagne (MKT, MID, RT, EXEC) met de correcte waarde worden ingevuld. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
@@ -61,7 +61,7 @@ Als klant op locatie moet u ook controleren of een campagne **[!UICONTROL Produc
 
 1. Als beheerder maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Toegang krijgen tot **Product en services** sectie en controle **Adobe Campaign** is vermeld.
-Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
+Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
 1. Klikken **Adobe Campaign** en selecteer uw organisatie.
    **Waarschuwing**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 

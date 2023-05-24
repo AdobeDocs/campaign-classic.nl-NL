@@ -362,7 +362,7 @@ De maximumgrootte van een bericht hangt van zijn codering af. In deze tabel word
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (verschilt per telefoon) |
 
-## SMPP-parameters voor externe accounts {#SMPP-parameters-external}
+## SMPP-parameters voor externe account {#SMPP-parameters-external}
 
 Elke implementatie van het protocol SMPP heeft vele variaties. Om de compatibiliteit en het aanpassingsvermogen te verbeteren, zijn er veel instellingen beschikbaar om het gedrag van de SMPP-connector te wijzigen. Deze sectie beschrijft elke parameter en zijn gevolgen op de schakelaar.
 

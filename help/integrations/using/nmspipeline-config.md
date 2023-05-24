@@ -79,7 +79,7 @@ De parameter &quot;consument&quot; identificeert het geval als een van deze cons
 ## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
 Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
-Ervoor zorgen dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
+Zorg ervoor dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumer&quot; is een unieke tekenreeks die de instantie van de server uniek identificeert. Dit kan doorgaans de instantienaam zelf zijn. Voor meerdere omgevingen (dev/stage/prod) dient u ervoor te zorgen dat deze uniek zijn voor elk van deze omgevingen, zodat elke instantie een kopie van het bericht krijgt.

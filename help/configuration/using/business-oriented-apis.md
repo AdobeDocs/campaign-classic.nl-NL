@@ -18,7 +18,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 * Leveringen:
 
-   * Een leveringsactie maken. Raadpleeg voor meer informatie [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
+   * Een leveringsactie maken. Raadpleeg [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
    * het verzenden van een campagne (starten, pauzeren, stoppen, verzenden van bewijzen);
    * leveringslogboeken herstellen.
 

@@ -63,7 +63,7 @@ Om uw gebruikersagent terug naar zijn gebrek te veranderen, ga eenvoudig terug i
 
 Als u de Google Chrome 100-gebruikersagent wilt testen op uw eigen webapps, kunt u deze test inschakelen door de volgende stappen uit te voeren:
 
-1. Chroom openen, typ `chrome://flags` in de adresbar, en druk binnengaan.
+1. Chroom openen, Enter `chrome://flags` in de adresbar, en druk binnengaan.
 1. Zoeken `Force major version to 100 in User-Agent` in het zoekveld en inschakelen zoals hieronder wordt weergegeven.
 
    ![](assets/force-user-agent-chrome.png)

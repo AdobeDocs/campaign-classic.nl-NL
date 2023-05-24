@@ -106,4 +106,4 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 
 Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om uw werkgebiedinstantie te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor uw werkgebiedinstantie te testen.
 
-Uw productie-instantie zal de oudere verificatie blijven gebruiken en deze wijziging heeft geen invloed op deze instantie.
+Uw productie-instantie blijft de verouderde verificatie gebruiken en wordt door deze wijziging niet beïnvloed.

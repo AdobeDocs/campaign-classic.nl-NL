@@ -72,7 +72,7 @@ Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatte
 
 * Tekstspatiëring: Trackinglogboeken herstellen en consolideren. Het laat u de logboeken van de omleidingsserver terugwinnen en de gezamenlijke indicatoren creëren die door de rapporteringsmodule worden gebruikt.
 * Overbodig verwijderen: Database reinigen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
-* Facturering: Automatisch verzenden van een activiteitenrapport voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
+* Facturering: Automatisch verzenden van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
 
 **Leveringsserver** (nlserver mta)
 

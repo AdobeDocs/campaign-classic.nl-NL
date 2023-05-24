@@ -59,7 +59,7 @@ Als u het toegangstoken en de sleutels voor het instellen van de account wilt ge
 Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve Folder registreren. Client ID is hetzelfde als Application ID.
 
 1. Navigeren naar **Azure Active Directory > App-registraties** en klik op  **Nieuwe toepassingsregistratie**.
-1. Geef een unieke naam die u kunt helpen bij het identificeren van een instantie, zoals **adobecampagne`<instance identifier>`**.
+1. Geef een unieke naam die u kunt helpen een instantie te identificeren, zoals **adobecampagne`<instance identifier>`**.
 1. Kies **Toepassingstype** als **Web-app / API**.
 1. Gebruiken `http://localhost` for **Aanmeldings-URL**.
 

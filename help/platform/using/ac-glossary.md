@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '5972'
+source-wordcount: '5974'
 ht-degree: 2%
 
 ---
@@ -1013,7 +1013,7 @@ Het transactieoverseinen is een module van de Campagne die voor het beheren van 
 Meer informatie over [Transactieberichten](../../message-center/using/about-transactional-messaging.md).
 +++
 
-<!------- USEFUL HERE??----->
+&lt;!— NUTTIG HIER?—>
 +++**Gedetailleerde campagnes**
 
 Gegenereerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een workflow wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
