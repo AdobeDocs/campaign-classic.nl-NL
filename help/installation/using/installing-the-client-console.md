@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ Hiervoor moet u:
 
 1. Selecteer het pakket dat het consoleinstallatieprogramma bevat.
 
-   Dit bestand wordt setup-client-7.X.XXXX.exe voor v7 of setup-client-6.X.XXXX.exe voor v6.1 genoemd, waarbij X de subversie van Adobe Campaign is en XXXX het buildnummer.
+   Dit bestand wordt setup-client-7.X.XXXX.exe genoemd, waarbij X de subversie van Adobe Campaign is en XXXX het buildnummer.
 
 1. Kopieer en plak dit pakket naar de installatiemap van Adobe Campaign (op de marketingserver voor hybride installaties) onder /datakit/nl/eng/jsp.
 

@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,6 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 1. Ga naar de *\tomcat-7\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Files\ [Installatiemap]* in Windows, of */usr/local/neolane/nl6* in Linux).
 
-   Als u met Tomcat v6 een oudere versie van Adobe Campaign gebruikt, kunt u *\tomcat-6\lib*.
-
 1. Het bestand kopiëren *catalina.jar* naar een externe tijdelijke map (bijvoorbeeld uw bureaublad) en wijzig de naam van de extensie van .jar in .zip.
 
 1. Pak het gekopieerde bestand uit. Dit resulteert in veel submappen en bestanden.
@@ -64,5 +62,4 @@ Zodra u de nauwkeurige versie van Tomcat kunt bepalen die in een bepaald geval w
 >[!NOTE]
 >
 >De belangrijkste versie van het ingesloten Tomcat-bestand wordt alleen bijgewerkt wanneer de belangrijkste versie van Adobe Campaign wordt gewijzigd (hoewel oudere versies mogelijk niet meer officieel worden ondersteund, kan de informatie nuttig zijn omdat sommige klanten deze versies mogelijk nog steeds uitvoeren).
->
->Adobe Campaign v6.02 gebruikt bijvoorbeeld altijd Tomcat v6.x.
+

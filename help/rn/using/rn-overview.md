@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '935'
-ht-degree: 100%
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -129,7 +129,7 @@ Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, tec
     </a>
     </div>
     <ul>
-    <li>Hoe groter het verschil tussen twee versies (bijvoorbeeld v6 -&gt; v7), hoe complexer het is om uw Campaign Classic-instantie bij te werken.</li>
+    <li>De inspanningen en de complexiteit van het upgraden van uw Campaign Classic-instantie nemen toe met de afstand tussen twee versies.</li>
     <li>Hoe langer uw organisatie wacht, des te complexer de upgrade wordt (en hoe kwetsbaarder u bent voor beveiligingsrisico's).</li>
     <li>Regelmatige updates verminderen de downtime tijdens upgrades en het risico op regressie.</li>
     </ul>

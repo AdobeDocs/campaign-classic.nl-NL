@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1995'
 ht-degree: 2%
 
 ---
@@ -54,15 +54,16 @@ De verbeteringen van de versie aan de andere kant komen gewoonlijk met significa
 
 Bijvoorbeeld, gebruikend de serverinformatie van het het schermschot in de vorige sectie:
 
-* Een bouwstijlverbetering zou het bewegen van bouwstijl 6880 aan om het even welke bouwstijl groter dan 6880 impliceren. Versie 6.1.1-build 8222 tot v6.1.1-build 8666
+* Een bouwstijlverbetering zou het bewegen van bouwstijl 9342 aan om het even welke bouw groter dan 9342 impliceren. Bijvoorbeeld v7.1 build 9342 to v7.1 build 9342
 
-* Bij een versieverbetering wordt overgeschakeld van versie 6.0.2 naar een versie die hoger is dan versie 6.0.2. Bijvoorbeeld: v6.0.1 build 2222 to v6.1.1 build 8666
+* Bij een versieupgrade moet u overstappen van versie 6 naar een recentere versie.  Bijvoorbeeld: v6.1.1 build 8666 to v7.1 build 9342.
 
 ## Moet ik vóór deze updates back-ups maken van mijn gegevens?
 
 Adobe zal een steun van uw systeem alvorens om het even welke veranderingen nemen. Nochtans, als er kritiek aanpassingswerk is dat in uw niet productiesysteem (ontwikkeling of het opvoeren servers) is, wordt het HIGH AANBEVOLEN u dat werk als pakket voorafgaand aan om het even welke verbetering uitvoert.
 
-![](assets/do-not-localize/how-to-video.png) Voor meer informatie, [deze hoe te video bekijken](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## Wanneer zullen de upgrades plaatsvinden?
 
@@ -97,7 +98,9 @@ Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
 ## Hoe kan ik voorbereidingen treffen voor de bouwstijlverbetering?
 
-Exporteer in uw ontwikkelings- en staging-systemen werk dat essentieel is en dat behouden moet blijven. Voor meer informatie [deze hoe te video bekijken](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exporteer in uw ontwikkelings- en staging-systemen werk dat essentieel is en dat behouden moet blijven.
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 Vernieuw uw kennis van de kritieke wegwerkschema&#39;s en leveringen die in uw loopboeken (of door uw raadplegend team/partner) worden ontwikkeld door de documentatie te herzien die aan uw team aan het eind van uw implementatie wordt verstrekt.
 
@@ -105,7 +108,7 @@ Identificeer laag volume of lage verkeerstijden die voor onderhoudsvensters idea
 
 Beoordeel onze [upgrade-checklist hieronder samenstellen](#check-list) en uw testplannen en zorg ervoor dat de middelen die deze tests kunnen uitvoeren binnen 24 tot 48 uur beschikbaar zijn. van de voltooiing van een upgrade.
 
-Voor meer informatie, [verwijzen naar dit document](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html).
+Voor meer informatie, [verwijzen naar deze sectie](../../production/using/build-upgrade.md).
 
 ## Kunnen upgrades worden uitgevoerd &#39;s nachts of tijdens buiten kantooruren?
 

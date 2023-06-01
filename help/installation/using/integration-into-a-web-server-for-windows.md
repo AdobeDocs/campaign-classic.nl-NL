@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -171,15 +171,3 @@ In dit geval moet u deze limiet verhogen:
 >
 >Voor meer informatie over deze optie IIS, verwijs naar de &quot;hoe te&quot;sectie van [officiële documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
-### De weergave van http-foutberichten configureren {#configuring-http-error-message-display}
-
-Als u een 6.1 versie IIS server gebruikt, kunnen de geproduceerde foutenmeldingen moeilijk zijn te lezen toe te schrijven aan een ongewenste HTML code die in het bericht wordt getoond.
-
-Pas de volgende configuratie toe om dit te verhelpen en de fout correct weer te geven:
-
-1. Open IIS via **[!UICONTROL Start > Control Panel > Administrative tools]** -menu.
-1. In de **Verbindingen** selecteert u de site die u voor uw Adobe Campaign-installatie hebt gemaakt en dubbelklikt u op **Configuratiebewerker** in het hoofdvenster.
-1. In de **Sectie** vervolgkeuzelijst, selecteert u **system.webServer** > **httpErrors**.
-1. Selecteer **PassThrough** waarde bij de **existingResponse** lijn.
-
-![](assets/ins_iis_httperrors.png)
