@@ -7,7 +7,7 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2531'
 ht-degree: 100%
 
@@ -642,7 +642,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
