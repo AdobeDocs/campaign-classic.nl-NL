@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ De connector ondersteunt de volgende opties:
 
 | Option | Beschrijving |
 |---|---|
-| TD_MAX_SESSIONS | Specificeert het maximumaantal openings van een sessies dat de Parallelle Transporter van de Teradata voor een exploitantbaan kan verwerven. <br>Raadpleeg [deze pagina](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html) voor meer informatie. |
+| TD_MAX_SESSIONS | Specificeert het maximumaantal openings van een sessies dat de Parallelle Transporter van de Teradata voor een exploitantbaan kan verwerven. |
 | TimeZoneName | Naam van de tijdzone van de server. |
 | CharacterSet | Wordt gebruikt om de tekenset Teradata te configureren. <br>Raadpleeg [deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001) voor meer informatie. |
 | IANAppCodePage | Codepagina van ODBC-toepassing. <br>[Raadpleeg deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) voor meer informatie |
@@ -226,7 +226,7 @@ Om sha2 te installeren:
 
 ### UDF_UTF16TO8-installatie {#UDF-UTF16TO8-installation}
 
-Als u de functies udf_utf16to8 in uw Adobe Campaign-instantie wilt gebruiken, moet u de gebruikersmodusfunctie in uw Teradata-database installeren via de **Teradata unicode, gereedschapset** van [page](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Als u de functies udf_utf16to8 in uw Adobe Campaign-instantie wilt gebruiken, installeert u de gebruikersmodusfunctie in uw Teradata-database via de **Teradata unicode, gereedschapset**.
 
 De sha1 van het gedownloade bestand is als volgt: e58235f434f52c71316a577cb48e20b97d24f470.
 

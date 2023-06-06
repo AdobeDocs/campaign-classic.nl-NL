@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,7 @@ Daarom moet u:
 
 >[!NOTE]
 >
->Wanneer u uw bericht maakt, moet u rekening houden met de beperkingen die specifiek zijn voor elke operator. Zie:
->
->* Raadpleeg voor DoCoMo [deze pagina](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
->* Voor KDDI AU, verwijs naar [deze pagina](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
->* Raadpleeg voor Softbank [deze pagina](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
+>Bij het maken van uw bericht moet rekening worden gehouden met beperkingen die specifiek zijn voor elke operator. Raadpleeg de productdocumentatie.
 
 
 ## De e-mailinhoud testen {#testing-the-email-content}
