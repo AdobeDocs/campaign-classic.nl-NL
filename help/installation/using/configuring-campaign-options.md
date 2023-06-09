@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 1%
 
 ---
 
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
-
-
 
 De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
@@ -26,7 +24,6 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
 >* Opties die niet in deze pagina worden vermeld, zijn alleen intern en **mag niet worden gewijzigd**.
 >
 >* U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
-
 
 ## Levering {#delivery}
 
@@ -147,11 +144,11 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> Het standaard e-mailadres 'repliek' op instantieniveau dat wordt gebruikt voor e-maillevering als deze door de gebruiker leeg wordt gelaten.<br /> </td> 
+   <td> Het standaard e-mailadres 'response-to' op instantieniveau wordt gebruikt voor e-maillevering als dit door de gebruiker leeg wordt gelaten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Algemene naam van de klant. Gebruikt in sommige waarschuwingsberichten die aan de ontvangers worden getoond.<br /> "Je ontvangt dit bericht omdat je contact hebt gehad met ***** of een gelieerde onderneming. Geen berichten meer ontvangen van *****".<br /> </td> 
+   <td> Algemene naam van de klant. Gebruikt in sommige waarschuwingsberichten die aan de ontvangers worden getoond.<br /> "Je ontvangt dit bericht omdat je contact hebt gehad met 'Organisatie' of een gelieerde onderneming. Geen berichten meer ontvangen van "Organisation"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Het standaard e-maillabel 'repliek' op instantieniveau wordt gebruikt voor e-maillevering als dit door de gebruiker leeg wordt gelaten.<br /> </td> 
+   <td> Het standaard e-maillabel 'response-to' op instantieniveau wordt gebruikt voor e-maillevering als dit door de gebruiker leeg wordt gelaten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 

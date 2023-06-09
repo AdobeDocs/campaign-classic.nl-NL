@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 4%
@@ -106,6 +106,7 @@ Om de voorbereiding van de levering te versnellen, kunt u controleren **[!UICONT
 Wanneer deze optie wordt toegelaten, wordt de levering voorbereiding uitgevoerd direct binnen het gegevensbestand, dat de analyse kan beduidend versnellen.
 
 Deze optie is momenteel alleen beschikbaar als aan de volgende voorwaarden is voldaan:
+
 * De levering moet een e-mail zijn. De andere kanalen worden momenteel niet ondersteund.
 * U moet niet midsourcing of extern verpletteren, slechts bulklevering gebruiken die type verplettert. U kunt het verpletteren controleren die in wordt gebruikt **[!UICONTROL General]** tabblad van het dialoogvenster **[!UICONTROL Delivery properties]**.
 * U kunt geen populatie richten die uit een extern dossier komt. Voor één levering klikt u op de knop **[!UICONTROL To]** koppeling van de **[!UICONTROL Email parameters]** en controleert of de **[!UICONTROL Defined in the database]** is geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers zijn **[!UICONTROL Specified by the inbound event(s)]** in de **[!UICONTROL Delivery]** tab.
@@ -136,7 +137,6 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 >* Beschikbare validatiemodi worden nader beschreven in [De goedkeuringsmodus wijzigen](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 Volg onderstaande stappen om een proefdruk te verzenden:
 

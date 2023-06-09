@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 8%
+source-wordcount: '1830'
+ht-degree: 7%
 
 ---
 
@@ -59,27 +59,27 @@ Om het **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening:
 
 * **[!UICONTROL Server]**
 
-   URL van de POP3-server.
+  URL van de POP3-server.
 
 * **[!UICONTROL Port]**
 
-   POP3-poortnummer van verbinding. De standaardpoort is 110.
+  POP3-poortnummer van verbinding. De standaardpoort is 110.
 
 * **[!UICONTROL Account]**
 
-   Naam van de gebruiker.
+  Naam van de gebruiker.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord voor gebruikersaccount.
+  Wachtwoord voor gebruikersaccount.
 
 * **[!UICONTROL Encryption]**
 
-   Type gekozen codering tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
+  Type gekozen codering tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
 
 * **[!UICONTROL Function]**
 
-   Binnenkomende e-mail of SOAP-router
+  Binnenkomende e-mail of SOAP-router
 
 >[!IMPORTANT]
 >
@@ -89,19 +89,19 @@ Een POP3 extern configureren met **Microsoft OAuth 2.0**, controleert u de **[!U
 
 * **[!UICONTROL Azure tenant]**
 
-   Azure ID (of Directory (huurder) ID) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
+  Azure ID (of Directory (huurder) ID) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
 
 * **[!UICONTROL Azure Client ID]**
 
-   Client-id (of toepassings-id (client)) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
+  Client-id (of toepassings-id (client)) is te vinden in de **Essentiële elementen** vervolgkeuzelijst van het overzicht van uw toepassing in de Azure-portal.
 
 * **[!UICONTROL Azure Client secret]**
 
-   Identiteitskaart van het geheim van de cliënt kan in worden gevonden **Clientgegevens** uit de **Certificaten en geheimen** in het Azure-portaal.
+  Identiteitskaart van het geheim van de cliënt kan in worden gevonden **Clientgegevens** uit de **Certificaten en geheimen** in het Azure-portaal.
 
 * **[!UICONTROL Azure Redirect URL]**
 
-   De omleidings-URL vindt u in het dialoogvenster **Verificatie** in het Azure-portaal. Het moet eindigen met de volgende syntaxis `nl/jsp/oauth.jsp`, bijvoorbeeld `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  De omleidings-URL vindt u in het dialoogvenster **Verificatie** in het Azure-portaal. Het moet eindigen met de volgende syntaxis `nl/jsp/oauth.jsp`, bijvoorbeeld `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 Nadat u de andere gegevens hebt ingevoerd, kunt u op **[!UICONTROL Setup the connection]** om de configuratie van uw externe account te voltooien.
 
@@ -113,7 +113,7 @@ De **[!UICONTROL Routing]** met een externe account kunt u elk kanaal dat beschi
 
 De volgende kanalen kunnen worden gevormd:
 
-* [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [Email](#email-routing-external-account)
 * [Mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefoon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
@@ -122,23 +122,37 @@ De volgende kanalen kunnen worden gevormd:
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
+### E-mailroutering {#email-routing-external-account}
+
+De e-mail die externe rekening verplettert wordt verstrekt door gebrek, aangepast aan uw configuratie.
+
+Als klant op-gebouw, kunt u nieuwe verpletterende externe rekeningen, of updateparameters tot stand brengen, zoals hieronder beschreven. Deze configuratie is gereserveerd voor deskundige gebruikers en kan van invloed zijn op uw prestaties. Neem voor alle vragen contact op met de klantenservice van de Adobe of met uw Adobe.
+
+* U moet een **Midden-sourcing**, **Extern** routering, of **Bulk** levering die type verplettert.
+
+* Voor **Bulk** en **Midden-sourcing** de leveringswijzen, kunt u uw brandingparameters in specificeren **Branding** tab. Deze parameters worden gebruikt om de [standaardparameters](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL van pagina spiegelen** en **Foutadres** met specifieke instellingen voor uw merk.
+
+  ![](assets/ext-account-branding.png)
+
+* Als u een externe account voor een tussenaccount wilt configureren, raadpleegt u [deze sectie](mid-sourcing-server.md)
+
 ### Uitvoeringsinstantie  {#execution-instance-external-account}
 
-Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactieberichtsjablonen worden geïmplementeerd in de uitvoeringsinstantie
+Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactionele berichtmalplaatjes worden opgesteld aan de uitvoeringsinstantie.
 
 ![](assets/ext_account_13.png)
 
 * **[!UICONTROL URL]**
 
-   URL van de server waarop de uitvoeringsinstantie is geïnstalleerd.
+  URL van de server waarop de uitvoeringsinstantie is geïnstalleerd.
 
 * **[!UICONTROL Account]**
 
-   Naam van de rekening, moet het de Agent van het Centrum van het Bericht aanpassen zoals die in de exploitantomslag wordt bepaald.
+  Naam van de rekening, moet het de Agent van het Centrum van het Bericht aanpassen zoals die in de exploitantomslag wordt bepaald.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
+  Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
 
 Voor meer informatie over deze configuratie, verwijs naar dit [page](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -154,23 +168,23 @@ Hiertoe geeft u in deze externe account het adres en de referenties op waarmee d
 
 * **[!UICONTROL Server]**
 
-   Naam van de FTP-server.
+  Naam van de FTP-server.
 
 * **[!UICONTROL Port]**
 
-   FTP-poortnummer. De standaardpoort is 21.
+  FTP-poortnummer. De standaardpoort is 21.
 
 * **[!UICONTROL Account]**
 
-   Naam van de gebruiker.
+  Naam van de gebruiker.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord voor gebruikersaccount.
+  Wachtwoord voor gebruikersaccount.
 
 * **[!UICONTROL Encryption]**
 
-   Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
+  Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
 
 Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar dit [page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -182,19 +196,19 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 
 * **[!UICONTROL Server]**
 
-   URL van de SFTP-server.
+  URL van de SFTP-server.
 
 * **[!UICONTROL Port]**
 
-   FTP-poortnummer. De standaardpoort is 22.
+  FTP-poortnummer. De standaardpoort is 22.
 
 * **[!UICONTROL Account]**
 
-   Accountnaam gebruikt om verbinding te maken met de SFTP-server.
+  Accountnaam gebruikt om verbinding te maken met de SFTP-server.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
+  Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
 
 SSH-toetsen toevoegen aan Windows:
 
@@ -237,39 +251,39 @@ Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet
 
 * **[!UICONTROL IMS server]**
 
-   URL van uw IMS-server. Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
+  URL van uw IMS-server. Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
 
 * **[!UICONTROL IMS scope]**
 
-   De hier gedefinieerde bereiken moeten een subset zijn van de gebieden die door IMS zijn ingericht.
+  De hier gedefinieerde bereiken moeten een subset zijn van de gebieden die door IMS zijn ingericht.
 
 * **[!UICONTROL IMS client identifier]**
 
-   ID van uw IMS-client.
+  ID van uw IMS-client.
 
 * **[!UICONTROL IMS client secret]**
 
-   Credentials van het geheim van de IMS-client.
+  Credentials van het geheim van de IMS-client.
 
 * **[!UICONTROL Callback server]**
 
-   Toegang tot URL van je Adobe Campaign-instantie.
+  Toegang tot URL van je Adobe Campaign-instantie.
 
 * **[!UICONTROL IMS organization ID]**
 
-   Id van uw organisatie. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
+  Id van uw organisatie. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
 
 * **[!UICONTROL Association mask]**
 
-   Syntaxis waarmee configuratienamen in Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign.
+  Syntaxis waarmee configuratienamen in Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
-   URL van je Adobe Experience Cloud-exemplaar.
+  URL van je Adobe Experience Cloud-exemplaar.
 
 * **[!UICONTROL Tenant]**
 
-   Naam van je Adobe Experience Cloud Tenant.
+  Naam van je Adobe Experience Cloud Tenant.
 
 Voor meer informatie over deze configuratie, verwijs naar [deze pagina](../../integrations/using/configuring-ims.md).
 
@@ -289,15 +303,15 @@ De **[!UICONTROL AEM (AEM instance)]** Met een extern account kunt u de inhoud v
 
 * **[!UICONTROL Server]**
 
-   URL van de Adobe Experience Manager-server.
+  URL van de Adobe Experience Manager-server.
 
 * **[!UICONTROL Port]**
 
-   Accountnaam gebruikt om verbinding te maken met de Adobe Experience Manager-ontwerpinstantie.
+  Accountnaam gebruikt om verbinding te maken met de Adobe Experience Manager-ontwerpinstantie.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord waarmee verbinding wordt gemaakt met de Adobe Experience Manager-ontwerpinstantie.
+  Wachtwoord waarmee verbinding wordt gemaakt met de Adobe Experience Manager-ontwerpinstantie.
 
 Raadpleeg deze [sectie](../../integrations/using/about-adobe-experience-manager.md) voor meer informatie.
 
@@ -319,21 +333,21 @@ Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Password credent
 
 * **[!UICONTROL Account]**
 
-   Account gebruikt om u aan te melden bij Microsoft CRM.
+  Account gebruikt om u aan te melden bij Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
-   URL van uw Microsoft CRM-server.
+  URL van uw Microsoft CRM-server.
 
-   Je Microsoft CRM vinden **[!UICONTROL Server URL]**, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamiek 365** en selecteer uw app. U kunt dan uw **[!UICONTROL Server URL]** in de adresbalk van uw browser, bijvoorbeeld `https://myserver.crm.dynamics.com/`.
+  Je Microsoft CRM vinden **[!UICONTROL Server URL]**, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamiek 365** en selecteer uw app. U kunt dan uw **[!UICONTROL Server URL]** in de adresbalk van uw browser, bijvoorbeeld `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   Client ID, te vinden op de Microsoft Azure-beheerportal in het **[!UICONTROL Update your code]** categorie, **[!UICONTROL Client ID]** veld.
+  Client ID, te vinden op de Microsoft Azure-beheerportal in het **[!UICONTROL Update your code]** categorie, **[!UICONTROL Client ID]** veld.
 
 * **[!UICONTROL CRM version]**
 
-   Kies **[!UICONTROL Dynamics CRM 365]** CRM-versie.
+  Kies **[!UICONTROL Dynamics CRM 365]** CRM-versie.
 
 Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Certificate]** de authentificatie, moet u de volgende details verstrekken:
 
@@ -341,15 +355,15 @@ Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Certificate]** d
 
 * **[!UICONTROL Server]**
 
-   URL van uw Microsoft CRM-server.
+  URL van uw Microsoft CRM-server.
 
-   Je Microsoft CRM vinden **[!UICONTROL Server URL]**, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamiek 365** en selecteer uw app. U kunt dan uw **[!UICONTROL Server URL]** in de adresbalk van uw browser, bijvoorbeeld `https://myserver.crm.dynamics.com/`.
+  Je Microsoft CRM vinden **[!UICONTROL Server URL]**, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamiek 365** en selecteer uw app. U kunt dan uw **[!UICONTROL Server URL]** in de adresbalk van uw browser, bijvoorbeeld `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   Merk op dat de Privé sleutel aan Base64 moet worden gecodeerd.
+  Merk op dat de Privé sleutel aan Base64 moet worden gecodeerd.
 
-   Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn gebruiken `base64 -w0 private.key` voor Linux.
+  Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn gebruiken `base64 -w0 private.key` voor Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -357,11 +371,11 @@ Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Certificate]** d
 
 * **[!UICONTROL Client identifier]**
 
-   Client ID, te vinden op de Microsoft Azure-beheerportal in het **[!UICONTROL Update your code]** categorie, **[!UICONTROL Client ID]** veld.
+  Client ID, te vinden op de Microsoft Azure-beheerportal in het **[!UICONTROL Update your code]** categorie, **[!UICONTROL Client ID]** veld.
 
 * **[!UICONTROL CRM version]**
 
-   Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
+  Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
 
 Voor meer informatie over deze configuratie, verwijs naar dit [page](../../platform/using/crm-connectors.md).
 
@@ -375,23 +389,23 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 * **[!UICONTROL Account]**
 
-   Account gebruikt om u aan te melden bij Salesforce CRM.
+  Account gebruikt om u aan te melden bij Salesforce CRM.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord gebruikt om u aan te melden bij Salesforce CRM.
+  Wachtwoord gebruikt om u aan te melden bij Salesforce CRM.
 
 * **[!UICONTROL Client identifier]**
 
-   Als u wilt weten waar u uw client-id vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Als u wilt weten waar u uw client-id vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
-   Selecteer de versie van de API.
+  Selecteer de versie van de API.
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
@@ -409,23 +423,23 @@ Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
 
 * **[!UICONTROL AWS S3 Account Server]**
 
-   URL van uw server, zou het als volgt moeten worden gevuld:
+  URL van uw server, zou het als volgt moeten worden gevuld:
 
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
+  ```
+  <S3bucket name>.s3.amazonaws.com/<s3object path>
+  ```
 
 * **[!UICONTROL AWS access key ID]**
 
-   Als u wilt weten waar je AWS-toegangs sleutel-id moet worden gevonden, raadpleegt u deze [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+  Als u wilt weten waar je AWS-toegangs sleutel-id moet worden gevonden, raadpleegt u deze [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Als je wilt weten waar je je geheime toegangssleutel voor AWS vindt, raadpleeg dan deze [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  Als je wilt weten waar je je geheime toegangssleutel voor AWS vindt, raadpleeg dan deze [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Raadpleeg de volgende secties voor meer informatie over AWS-regio [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Raadpleeg de volgende secties voor meer informatie over AWS-regio [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * De **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de gecodeerde modus van S3.
 
@@ -441,12 +455,12 @@ Om het **[!UICONTROL Azure external account]** om met Adobe Campaign te werken, 
 
 * **[!UICONTROL Server]**
 
-   URL van uw Azure Blob-opslagserver.
+  URL van uw Azure Blob-opslagserver.
 
 * **[!UICONTROL Encryption]**
 
-   Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
+  Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
-   Om te weten waar te vinden uw **[!UICONTROL Access key]**, verwijzen naar [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Om te weten waar te vinden uw **[!UICONTROL Access key]**, verwijzen naar [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

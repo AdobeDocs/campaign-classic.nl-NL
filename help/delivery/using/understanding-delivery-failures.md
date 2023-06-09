@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -201,15 +201,15 @@ Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het 
 * Synchrone fout: Als de externe mailserver waarmee contact is opgenomen door de Adobe Campaign-leveringsserver onmiddellijk een foutbericht heeft geretourneerd, mag de levering niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Kwalificatie van niet-bezorgde e-mails](#bounce-mail-qualification).
 * Asynchrone fout: Een niet-bezorgde e-mail of een SR is later opnieuw verzonden door de ontvangende server. Deze post wordt geladen in een technische brievenbus de toepassing gebruikt om berichten met een fout te etiketteren. Asynchrone fouten kunnen optreden tot een week nadat een levering is verzonden.
 
-   >[!NOTE]
-   >
-   >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
+  >[!NOTE]
+  >
+  >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   De [feedbacklus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) werkt als stuiterende e-mails. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van gewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van gewezen personen in (**NmsAddress**) quarantainetabel en niet in de (**NmsRecipient**) tabel met ontvangers.
+  De [feedbacklus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) werkt als stuiterende e-mails. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van gewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van gewezen personen in (**NmsAddress**) quarantainetabel en niet in de (**NmsRecipient**) tabel met ontvangers.
 
-   >[!NOTE]
-   >
-   >Het klachtenbeheer wordt in het [Leverbaarheidsbeheer](about-deliverability.md) sectie.
+  >[!NOTE]
+  >
+  >Het klachtenbeheer wordt in het [Leverbaarheidsbeheer](about-deliverability.md) sectie.
 
 ## Bounce mail management {#bounce-mail-management}
 
@@ -234,7 +234,6 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 >* **** Asynchrone niet-bezorgingen worden nog steeds gekwalificeerd door het inMail-proces aan de hand van de regels voor **[!UICONTROL Inbound email]**. Zie voor meer informatie [E-mailbeheerregels](#email-management-rules).
 >
 >* Voor instanties die gebruikmaken van de verbeterde MTA **zonder webhaken/EFS** de **[!UICONTROL Inbound email]** De regels zullen ook worden gebruikt om de synchrone stuiterende e-mails die uit Verbeterde MTA komen te verwerken, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
-
 
 Voor installaties op locatie en de gehoste/hybride installaties die de oude Campagne MTA gebruiken, wanneer de levering van een e-mail ontbreekt, ontvangt de de leveringsserver van Adobe Campaign een foutenmelding van de overseinenserver of de verre DNS server. De lijst met fouten bestaat uit tekenreeksen in het bericht dat door de externe server wordt geretourneerd. De types en de redenen van mislukkingen worden toegewezen aan elk foutenbericht.
 
@@ -287,7 +286,6 @@ De standaardregels zijn als volgt.
 >* De leveringsserver (MTA) moet opnieuw worden begonnen als de parameters zijn veranderd.
 >* De wijziging of invoering van beheerregels is alleen voor professionele gebruikers.
 
-
 #### Binnenkomende e-mail {#inbound-email}
 
 >[!IMPORTANT]
@@ -296,7 +294,7 @@ De standaardregels zijn als volgt.
 
 Voor on-premisse installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, bevatten deze regels de lijst van karakterkoorden die door verre servers kunnen zijn teruggekeerd en die u de fout laten kwalificeren (**Hard**, **Zacht** of **Genegeerd**).
 
-Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht naar het adres dat is opgegeven in de platformparameters. Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan toe één van de drie [fouttypen](#delivery-failure-types-and-reasons).
+Wanneer een e-mailbericht mislukt, geeft de externe server een stuiterend bericht weer naar het adres dat is opgegeven in het dialoogvenster [platformparameters](../../installation/using/deploying-an-instance.md). Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan toe één van de drie [fouttypen](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >

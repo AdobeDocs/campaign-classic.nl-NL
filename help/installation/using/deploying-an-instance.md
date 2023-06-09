@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3140'
+source-wordcount: '3333'
 ht-degree: 1%
 
 ---
 
 # Een instantie implementeren{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 1%
 
 ## Implementatiewizard {#deployment-wizard}
 
-Met een grafische wizard, die beschikbaar is in de Adobe Campaign-clientconsole, kunt u de parameters definiëren van de instantie waarmee u verbinding gaat maken.
+Adobe Campaign biedt een grafische assistent, beschikbaar in de Adobe Campaign-clientconsole, om de parameters van de instantie te definiëren waarmee u verbinding gaat maken.
 
 Selecteer **Gereedschappen > Geavanceerd > Implementatiewizard**.
 
@@ -80,13 +78,36 @@ Deze parameters kunnen in leveringsmalplaatjes, en individueel voor elke leverin
 
 Geef de volgende parameters op:
 
-* **[!UICONTROL Sender name]** : Naam van de afzender
-* **[!UICONTROL Sender address]** : Adres van de afzender
-* **[!UICONTROL Reply address text]** : De naam, die aanpasbaar is, die zal worden gebruikt wanneer de ontvanger klikt **[!UICONTROL Reply]** in hun e-mailclientsoftware
-* **[!UICONTROL Reply address]** : Het e-mailadres dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware
-* **[!UICONTROL Error address]** : E-mailadres van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen.
+* **[!UICONTROL Sender name]** : Voer de naam van de afzender in.
+* **[!UICONTROL Sender address]** : Voer het e-mailadres van de afzender in.
+
+  >[!NOTE]
+  >
+  > Wanneer u e-mailberichten verzendt vanuit Adobe Campaign, worden de **Adres van afzender** de brievenbus wordt niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen.
+
+* **[!UICONTROL Reply address text]** : Voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** knop.
+* **[!UICONTROL Reply address]** : Voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware.
+
+  >[!NOTE]
+  >
+  >Het doel van de **Reactieadres** het veld is wanneer de ontvanger op een ander adres moet antwoorden dan het veld **Adres van afzender**.  Dit adres moet een geldig e-mailadres zijn, en met een gecontroleerd brievenbus verbonden.  Deze brievenbus moet door de klant worden ontvangen.  Dit kan bijvoorbeeld een ondersteuningsmailbox zijn, customer-care@customer.com, waar e-mails worden gelezen en waarop wordt gereageerd.
+
+* **[!UICONTROL Error address]** : Voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen.
+
+  >[!NOTE]
+  >
+  > Dit adres moet een geldig e-mailadres zijn, en met een gecontroleerd brievenbus verbonden. Deze brievenbus moet door de klant worden ontvangen. Het zou een stuiterende brievenbus kunnen zijn, bijvoorbeeld, errors@customer.com.
+
 
 Daarnaast kunt u de opdracht **maskers** geoorloofd voor het afzenderadres en het foutenadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
+
+>[!NOTE]
+>
+>* Deze instellingen worden opgeslagen in de opties voor het campagneplatform. [Meer informatie](../../installation/using/configuring-campaign-options.md).
+> 
+>* Voor configuraties met meerdere branding kunt u het adres van de Fout aanpassen en deze configuratie overschrijven vanuit de e-mail die externe account verplettert. [Meer informatie](../../installation/using/external-accounts.md#email-routing-external-account).
+>
+
 
 ### Tekens geautoriseerd in adressen {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
 * De informatie over externe (of veilig of niet) ingevoerde URLs op deze pagina van de plaatsingstovenaar wordt gebruikt om nieuwe URL te bouwen. De gewijzigde koppeling bevat naast deze informatie ook: de identificatiecodes van de levering, de ontvanger en de URL.
 
-   De trackinggegevens worden door Adobe Campaign verzameld op de trackingserver(s) om de ontvangende profielen en de aan de levering gekoppelde gegevens te verrijken ( **[!UICONTROL Tracking]** tabs).
+  De trackinggegevens worden door Adobe Campaign verzameld op de trackingserver(s) om de ontvangende profielen en de aan de levering gekoppelde gegevens te verrijken ( **[!UICONTROL Tracking]** tabs).
 
-   Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
+  Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
 
-   Raadpleeg voor meer informatie hierover [Trackingserver](#tracking-server).
+  Raadpleeg voor meer informatie hierover [Trackingserver](#tracking-server).
 
 * Zodra URLs wordt gevormd, moet u het volgen toelaten. Hiervoor moet de instantie zijn geregistreerd op de volgende server(s).
 
-   Raadpleeg voor meer informatie hierover [Tekstspatiëring opslaan](#saving-tracking).
+  Raadpleeg voor meer informatie hierover [Tekstspatiëring opslaan](#saving-tracking).
 
 ### Trackingserver {#tracking-server}
 
@@ -203,7 +224,7 @@ Om de efficiëntie van het bijhouden van wijzigingen op dit exemplaar te garande
 * **[!UICONTROL External URL]** en/of **[!UICONTROL Secure external URL]** : Voer de URL voor omleiding in die moet worden gebruikt in de e-mail die moet worden verzonden.
 * **[!UICONTROL Internal URL(s)]** : URL&#39;s die alleen door de Adobe Campaign-server worden gebruikt om contact op te nemen met de trackingserver(s) voor het verzamelen van logbestanden en het uploaden van de URL&#39;s. Het is niet nodig deze aan de instantie te koppelen.
 
-   Als u geen URL opgeeft, wordt standaard de URL voor bijhouden gebruikt.
+  Als u geen URL opgeeft, wordt standaard de URL voor bijhouden gebruikt.
 
 Met de architectuur van de middelste-sourcing, kunt u het volgen beheer externaliseren. Dit doet u als volgt:
 
@@ -337,6 +358,13 @@ Gebruik deze pagina om de server-URL&#39;s te vullen met:
 
 Met Adobe Campaign kunt u deze drie URL&#39;s onderscheiden om de laadbewerking over meerdere platforms te spreiden.
 
+
+>[!NOTE]
+>
+>* Deze instellingen worden opgeslagen in de opties voor het campagneplatform. [Meer informatie](../../installation/using/configuring-campaign-options.md).
+>* Voor configuraties met meerdere branding kunt u de URL van de pagina Mirror aanpassen en deze configuratie overschrijven via de e-mail die een externe account verplettert. [Meer informatie](../../installation/using/configuring-campaign-options.md).
+
+
 ## Openbare middelen beheren {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek o
 
 * Voor e-mailafbeeldingen **https://** server **/res/img** URL.
 
-   Deze waarde kan voor elke levering worden overschreven.
+  Deze waarde kan voor elke levering worden overschreven.
 
 * Voor openbare middelen, URL **https://** server **/res/** instance ****waar **instance**is de naam van de instantie tracking.
 
@@ -390,38 +418,38 @@ De volgende publicatiemodi zijn beschikbaar:
 
 * Volgserver(s)
 
-   De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [Configuratie bijhouden](#tracking-configuration).
+  De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [Configuratie bijhouden](#tracking-configuration).
 
 * Andere Adobe Campaign-servers
 
-   U kunt een of meer andere Adobe Campaign-servers gebruiken waar de bronnen worden gekopieerd.
+  U kunt een of meer andere Adobe Campaign-servers gebruiken waar de bronnen worden gekopieerd.
 
-   Als u een specifieke Adobe Campaign-server wilt gebruiken aan de serverzijde, moet u een nieuwe instantie maken met de volgende opdracht:
+  Als u een specifieke Adobe Campaign-server wilt gebruiken aan de serverzijde, moet u een nieuwe instantie maken met de volgende opdracht:
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   Voer vervolgens het wachtwoord in.
+  Voer vervolgens het wachtwoord in.
 
-   De parameters van de toegewijde server(s) worden gegeven in de **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** en **[!UICONTROL Instance name]** velden.
+  De parameters van de toegewijde server(s) worden gegeven in de **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** en **[!UICONTROL Instance name]** velden.
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * Handmatig publicatiescript (alleen voor openbare bronnen)
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   U kunt de afbeeldingen publiceren met behulp van een script:
+  U kunt de afbeeldingen publiceren met behulp van een script:
 
    * U moet dit script maken: Zijn inhoud hangt van uw configuratie af.
    * Het script wordt aangeroepen door de volgende opdracht:
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      waar `[INSTALL]` is het toegangspad naar de installatiemap van Adobe Campaign.
+     waar `[INSTALL]` is het toegangspad naar de installatiemap van Adobe Campaign.
 
    * Controleer in Unix of het script uitvoerbaar is.
 

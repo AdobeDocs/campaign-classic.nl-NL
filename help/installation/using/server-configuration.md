@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 3%
@@ -15,8 +15,6 @@ ht-degree: 3%
 ---
 
 # Beveiligingsinstellingen van server {#server-configuration}
-
-
 
 ## Beveiliging bestandsupload
 
@@ -76,9 +74,9 @@ U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (zie voor meer inform
 * U kunt enkele extra kopteksten toevoegen, zoals HSTS, X-FRAME-OPTIONS, CSP..
 * U moet ze in een testomgeving testen voordat u ze in de productie toepast.
 
-   >[!IMPORTANT]
-   >
-   >Adobe Campaign kan worden verbroken door bepaalde kopteksten toe te voegen.
+  >[!IMPORTANT]
+  >
+  >Adobe Campaign kan worden verbroken door bepaalde kopteksten toe te voegen.
 
 Met Adobe Campaign kunt u een leeg wachtwoord instellen in het dialoogvenster `<dbcnx .../>` element. Gebruik deze functie niet.
 
