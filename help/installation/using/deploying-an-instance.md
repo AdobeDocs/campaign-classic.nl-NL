@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 131f1c658f76bd9e4e62fe95cf1cec8e9cc25122
+source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
 workflow-type: tm+mt
-source-wordcount: '3343'
+source-wordcount: '3341'
 ht-degree: 1%
 
 ---
@@ -82,9 +82,9 @@ Geef de volgende parameters op:
 * **[!UICONTROL Sender address]** : Voer het e-mailadres van de afzender in. Wanneer u e-mailberichten verzendt vanuit Adobe Campaign, worden de **Adres van afzender** de brievenbus wordt niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Meer informatie over aanbevolen werkwijzen voor levering [in deze documentatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** : Voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** knop.
-* **[!UICONTROL Reply address]** : Voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware. Het doel van de **Reactieadres** het veld is wanneer de ontvanger op een ander adres moet antwoorden dan het veld **Adres van afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Dit kan bijvoorbeeld een ondersteuningsmailbox zijn, customer-care@customer.com, waar e-mails worden gelezen en waarop wordt gereageerd.
+* **[!UICONTROL Reply address]** : Voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware. Het doel van de **Reactieadres** het veld is wanneer de ontvanger op een ander adres moet antwoorden dan het veld **Adres van afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Het zou bijvoorbeeld een steunbrievenbus kunnen zijn, `customer-care@customer.com`, waar e-mails worden gelezen en beantwoord.
 
-* **[!UICONTROL Error address]** : Voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het zou een stuiterende brievenbus kunnen zijn, bijvoorbeeld, errors@customer.com.
+* **[!UICONTROL Error address]** : Voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het zou bijvoorbeeld een stuiterende brievenbus kunnen zijn, `errors@customer.com`.
 
 
 Daarnaast kunt u de opdracht **maskers** geoorloofd voor het afzenderadres en het foutenadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
