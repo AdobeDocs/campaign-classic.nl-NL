@@ -4,9 +4,9 @@ title: Interactieve inhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren met AMP in Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Email Design, Dynamic Content
+feature: Email Design
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: ae7aa6989314677a839795e8caa8ba0f95009e09
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 4%
@@ -91,7 +91,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    ![](assets/amp_tab_perso.png)
 
-1. Als u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
+1. Wanneer u klaar bent met bewerken, selecteert u de volledige AMP-inhoud en kopieert u deze naar de [AMP-webvalidatie](https://validator.ampproject.org) of een vergelijkbare website.
 
    >[!NOTE]
    >
