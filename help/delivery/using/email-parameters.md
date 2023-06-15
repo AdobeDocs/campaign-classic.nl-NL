@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 8%
@@ -61,19 +61,19 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 * **[!UICONTROL Use recipient preferences]** (standaardmodus)
 
-   De berichtindeling wordt gedefinieerd op basis van de gegevens die zijn opgeslagen in het ontvangende profiel en wordt standaard opgeslagen in het dialoogvenster **[!UICONTROL email format]** veld (@emailFormat). Als een ontvanger berichten in een bepaalde indeling wenst te ontvangen, wordt deze indeling gebruikt. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
+  De berichtindeling wordt gedefinieerd op basis van de gegevens die zijn opgeslagen in het ontvangende profiel en wordt standaard opgeslagen in het dialoogvenster **[!UICONTROL email format]** veld (@emailFormat). Als een ontvanger berichten in een bepaalde indeling wenst te ontvangen, wordt deze indeling gebruikt. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   Het bericht bevat beide indelingen: tekst en HTML. Het formaat dat op ontvangst wordt getoond hangt van de configuratie van de postsoftware van de ontvanger (multipart-alternatief) af.
+  Het bericht bevat beide indelingen: tekst en HTML. Het formaat dat op ontvangst wordt getoond hangt van de configuratie van de postsoftware van de ontvanger (multipart-alternatief) af.
 
-   >[!IMPORTANT]
-   >
-   >Deze optie omvat beide versies van het document. Het heeft daarom invloed op de leveringstarieven, omdat de berichtgrootte groter is.
+  >[!IMPORTANT]
+  >
+  >Deze optie omvat beide versies van het document. Het heeft daarom invloed op de leveringstarieven, omdat de berichtgrootte groter is.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   Het bericht wordt verzonden in tekstformaat. De indeling HTML wordt niet verzonden, maar wordt alleen voor de spiegelpagina gebruikt wanneer de ontvanger op het bericht klikt.
+  Het bericht wordt verzonden in tekstformaat. De indeling HTML wordt niet verzonden, maar wordt alleen voor de spiegelpagina gebruikt wanneer de ontvanger op het bericht klikt.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Naast de standaardmodus zijn ook de volgende opties beschikbaar:
 * **[!UICONTROL Do not generate the mirror page]**: er wordt geen spiegelpagina gegenereerd, zelfs niet als de koppeling aanwezig is in de levering.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: deze optie laat u tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek toegang hebben. Als u dit wilt doen, klikt u na afloop van de levering op de knop **[!UICONTROL Delivery]** en selecteert u de regel van de ontvanger waarvan u de spiegelpagina wilt weergeven. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Tekencodering {#character-encoding}
 
@@ -117,7 +117,7 @@ Selecteer hiervoor de optie **[!UICONTROL Force the encoding used for messages]*
 
 De **[!UICONTROL SMTP]** tabblad van de leveringsparameters kunt u het beheer van stuiterende berichten configureren.
 
-Standaard worden teruggestuurde e-mailberichten ontvangen in het standaardfoutvak van het platform, maar u kunt een specifiek foutadres voor een levering definiëren.
+Standaard worden teruggestuurde e-mails ontvangen in de [standaardfoutvak van het platform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), maar u kunt een specifiek foutadres voor een levering definiëren.
 
 U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor stuiterende berichten te onderzoeken wanneer deze niet automatisch door de toepassing kunnen worden gekwalificeerd. Voor elk van deze velden wordt **Aangepaste velden toevoegen** kunt u personalisatieparameters toevoegen.
 

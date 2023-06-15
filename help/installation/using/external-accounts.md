@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 7%
@@ -126,9 +126,9 @@ De volgende kanalen kunnen worden gevormd:
 
 De e-mail die externe rekening verplettert wordt verstrekt door gebrek, aangepast aan uw configuratie.
 
-Als klant op-gebouw, kunt u nieuwe verpletterende externe rekeningen, of updateparameters tot stand brengen, zoals hieronder beschreven. Deze configuratie is gereserveerd voor deskundige gebruikers en kan van invloed zijn op uw prestaties. Neem voor alle vragen contact op met de klantenservice van de Adobe of met uw Adobe.
+Als klant op locatie/hybride, kunt u nieuwe verpletterende externe rekeningen, of updateparameters tot stand brengen, zoals hieronder beschreven. Deze configuratie is gereserveerd voor deskundige gebruikers en kan van invloed zijn op uw prestaties. Neem voor alle vragen contact op met de klantenservice van de Adobe of met uw Adobe.
 
-* U moet een **Midden-sourcing**, **Extern** routering, of **Bulk** levering die type verplettert.
+* U kunt een **Midden-sourcing**, **Extern** routering, of **Bulk** levering die type verplettert.
 
 * Voor **Bulk** en **Midden-sourcing** de leveringswijzen, kunt u uw brandingparameters in specificeren **Branding** tab. Deze parameters worden gebruikt om de [standaardparameters](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL van pagina spiegelen** en **Foutadres** met specifieke instellingen voor uw merk.
 
