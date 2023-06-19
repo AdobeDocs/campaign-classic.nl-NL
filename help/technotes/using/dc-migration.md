@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1533'
 ht-degree: 2%
 
 ---
@@ -76,8 +76,6 @@ Dit programma heeft drie hoofddoelstellingen:
 ![](assets/GSMigrations.png)
 
 ## Migratie
-
-De migratie naar Adobe Managed Services (Public Cloud) vindt in 2020/2021 plaats voor betrokken accounts. Adobe zal uw organisatie door deze reis leiden en begeleiden.
 
 Om deze inspanning op gang te brengen, zullen de rekeningen die deze migratie vereisen een e-mailmededeling van Adobe ontvangen die een chronologie en toegang tot documentatie verstrekken. Dit is uw melding dat uw account is gepland voor migratie.
 

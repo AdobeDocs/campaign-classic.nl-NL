@@ -4,10 +4,10 @@ title: Help- en ondersteuningsopties voor Campaign Classic
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 59%
+source-wordcount: '755'
+ht-degree: 63%
 
 ---
 
@@ -99,7 +99,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de nieuwste [GA-build](rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de nieuwste [GA-build](rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -107,7 +107,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### Veelgestelde vragen over configuratiescherm
 
-[Klik hier ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
+[Klik hier ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
 
 ### SFTP-beheer
 
@@ -140,8 +140,7 @@ Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vr
 
 ### Downloadcentrum voor campagne openen
 
-Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden. [Klik hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van de Experience Cloud toegang te hebben.
-Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){_blank}.
+Blader als Campagnebeheerder naar [deze pagina](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van de Experience Cloud toegang te hebben.
 
 ### Een ticket maken of een chat starten
 
