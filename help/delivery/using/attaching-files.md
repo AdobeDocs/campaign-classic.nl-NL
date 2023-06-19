@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
 
 # Bestanden bijvoegen bij een e-mail{#attaching-files}
-
-
 
 ## E-mailbijlagen {#about-email-attachments}
 
@@ -33,6 +31,14 @@ Er zijn twee mogelijke gevallen:
 >[!NOTE]
 >
 >Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Raadpleeg voor meer informatie hierover [Over sjablonen](about-templates.md).
+
+## Guardrails {#attachments-guardrails}
+
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 MB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+
+Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` optie.
+
+Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+
 
 ### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ De **[!UICONTROL Advanced]** kunt u geavanceerde opties definiëren voor bijgevo
 * U kunt filteropties definiëren om te voorkomen dat het bijgevoegde bestand naar alle ontvangers wordt verzonden. De optie **[!UICONTROL Enable filtering of recipients who will receive the attachment]** Hiermee activeert u een invoerveld dat wordt gebruikt om een ontvankelijk selectiescript te definiëren. Dit veld moet in JavaScript worden ingevoerd.
 * U kunt de naam van het bestand in een script opnemen om het bestand aan te passen.
 
-   Voer uw tekst in het venster in en gebruik de velden voor personalisatie die beschikbaar zijn in de vervolgkeuzelijst. In het volgende voorbeeld, wordt filename gepersonaliseerd om de datum van vandaag en de naam van de ontvanger te bevatten.
+  Voer uw tekst in het venster in en gebruik de velden voor personalisatie die beschikbaar zijn in de vervolgkeuzelijst. In het volgende voorbeeld, wordt filename gepersonaliseerd om de datum van vandaag en de naam van de ontvanger te bevatten.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
 
 # De e-mailcontent opgeven {#defining-the-email-content}
-
-
 
 ## Afzender {#sender}
 
@@ -29,15 +27,14 @@ Als u wilt weten hoe u verpersoonlijkingsvelden invoegt en gebruikt, raadpleegt 
 
 >[!NOTE]
 >
->* Het adres van de afzender zal voor antwoorden door gebrek worden gebruikt.
->* De headerparameters mogen niet leeg zijn. Door gebrek, bevatten zij de waardeninput wanneer het vormen van de plaatsingstovenaar. Raadpleeg voor meer informatie de [Installatiehandleiding](../../installation/using/deploying-an-instance.md).
+>* Het adres van de afzender wordt gebruikt voor antwoorden door gebrek.
+>* De headerparameters mogen niet leeg zijn. Door gebrek, bevatten zij de waardeninput wanneer het vormen van de plaatsingstovenaar. Meer informatie in [deze sectie](../../installation/using/deploying-an-instance.md).
 >* Het adres van de afzender is verplicht om een e-mailbericht toe te staan (norm RFC).
 >* Adobe Campaign controleert de syntaxis van de ingevoerde e-mailadressen.
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->In het kader van de controles die door de Leveranciers van de Toegang van Internet (ISPs) worden uitgevoerd om ongevraagde e-mail (spam) te bestrijden, adviseert Adobe het creëren van e-mailrekeningen die aan de adressen beantwoorden die voor leveringen en antwoorden worden gespecificeerd. Vraag de beheerder van het berichtensysteem om advies.
+>Om leveringsproblemen te voorkomen, moeten de e-mailaccounts die overeenkomen met de adressen die voor leveringen en antwoorden zijn opgegeven, bestaan en worden gecontroleerd. Raadpleeg de systeembeheerder.
 
 ## Berichtonderwerp {#message-subject}
 
@@ -71,45 +68,45 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
 * Als u inhoud van een HTML wilt importeren, gebruikt u de **[!UICONTROL Open]** knop. U kunt de broncode ook rechtstreeks in de **[!UICONTROL Source]** subtab.
 
-   Als u het [Editor voor digitale inhoud](../../web/using/about-campaign-html-editor.md) (DCE), zie [Een inhoudssjabloon selecteren](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Als u het [Editor voor digitale inhoud](../../web/using/about-campaign-html-editor.md) (DCE), zie [Een inhoudssjabloon selecteren](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >De HTML-inhoud moet vooraf worden gemaakt en vervolgens worden geïmporteerd in Adobe Campaign. De HTML-editor is niet ontworpen voor het maken van inhoud.
+  >[!IMPORTANT]
+  >
+  >De HTML-inhoud moet vooraf worden gemaakt en vervolgens worden geïmporteerd in Adobe Campaign. De HTML-editor is niet ontworpen voor het maken van inhoud.
 
-   De **[!UICONTROL Preview]** Met de subtab kunt u de rendering van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel.
+  De **[!UICONTROL Preview]** Met de subtab kunt u de rendering van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel.
 
-   Met de werkbalkknoppen hebt u toegang tot de standaardhandelingen en opmaakparameters voor de pagina HTML.
+  Met de werkbalkknoppen hebt u toegang tot de standaardhandelingen en opmaakparameters voor de pagina HTML.
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   U kunt afbeeldingen invoegen in berichten vanuit een lokaal bestand of vanuit een afbeeldingsbibliotheek in Adobe Campaign. Om dit te doen, klik **[!UICONTROL Image]** en selecteert u de gewenste optie.
+  U kunt afbeeldingen invoegen in berichten vanuit een lokaal bestand of vanuit een afbeeldingsbibliotheek in Adobe Campaign. Om dit te doen, klik **[!UICONTROL Image]** en selecteert u de gewenste optie.
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Bibliotheekafbeeldingen zijn toegankelijk via de **[!UICONTROL Resources>Online>Public resources]** in de mappenstructuur. Zie ook [Afbeeldingen toevoegen](#adding-images).
+  Bibliotheekafbeeldingen zijn toegankelijk via de **[!UICONTROL Resources>Online>Public resources]** in de mappenstructuur. Zie ook [Afbeeldingen toevoegen](#adding-images).
 
-   Met de laatste knop op de werkbalk kunt u aanpassingsvelden invoegen.
+  Met de laatste knop op de werkbalk kunt u aanpassingsvelden invoegen.
 
-   >[!NOTE]
-   >
-   >Het gebruik van personalisatievelden wordt weergegeven in [Over personalisatie](about-personalization.md).
+  >[!NOTE]
+  >
+  >Het gebruik van personalisatievelden wordt weergegeven in [Over personalisatie](about-personalization.md).
 
-   Met de tabbladen onder aan de pagina kunt u de HTML-code weergeven van de pagina die wordt gemaakt en kunt u de weergave van het bericht met de personalisatie bekijken. Klik op **[!UICONTROL Preview]** en selecteer een ontvanger met de **[!UICONTROL Test personalization]** in de werkbalk. U kunt een ontvanger selecteren bij de gedefinieerde doelgroep(en) of een andere ontvanger kiezen.
+  Met de tabbladen onder aan de pagina kunt u de HTML-code weergeven van de pagina die wordt gemaakt en kunt u de weergave van het bericht met de personalisatie bekijken. Klik op **[!UICONTROL Preview]** en selecteer een ontvanger met de **[!UICONTROL Test personalization]** in de werkbalk. U kunt een ontvanger selecteren bij de gedefinieerde doelgroep(en) of een andere ontvanger kiezen.
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   U kunt het bericht HTML valideren. U kunt ook de inhoud van de koptekst van de e-mail weergeven.
+  U kunt het bericht HTML valideren. U kunt ook de inhoud van de koptekst van de e-mail weergeven.
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * Als u tekstinhoud wilt importeren, gebruikt u de opdracht **[!UICONTROL Open]** of de **[!UICONTROL Text Content]** om de inhoud van het bericht in te voeren wanneer deze wordt weergegeven in tekstopmaak. Gebruik de werkbalkknoppen om toegang te krijgen tot handelingen over de inhoud. Met de laatste knop kunt u aanpassingsvelden invoegen.
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   Als voor het formaat van de HTML klik **[!UICONTROL Preview]** onder aan de pagina om de weergave van het bericht met de personalisatie weer te geven.
+  Als voor het formaat van de HTML klik **[!UICONTROL Preview]** onder aan de pagina om de weergave van het bericht met de personalisatie weer te geven.
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Interactieve content definiëren {#amp-for-email-format}
@@ -149,18 +146,25 @@ Als u de lijst met emoticonen wilt aanpassen, raadpleegt u deze [page](customizi
 
 E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de wizard voor levering kunt u een HTML-pagina met afbeeldingen importeren of rechtstreeks via de HTML-editor afbeeldingen invoegen **[!UICONTROL Image]** pictogram.
 
+
+### Guardrails {#img-guardrails}
+
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 MB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+
+Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+
+### Afbeeldingstypen {#img-types}
+
 Afbeeldingen kunnen:
 
 * Een lokale afbeelding of een afbeelding die wordt aangeroepen vanaf een server
 * Een afbeelding die is opgeslagen in de openbare-bronnenbibliotheek van Adobe Campaign
 
-   Openbare middelen zijn toegankelijk via **[!UICONTROL Resources > Online]** knooppunt van de Adobe Campaign-hiërarchie. Ze zijn gegroepeerd in een bibliotheek en kunnen worden opgenomen in e-mailberichten, maar kunnen ook worden gebruikt voor campagnes of taken, of voor inhoudsbeheer.
+  Openbare middelen zijn toegankelijk via **[!UICONTROL Resources > Online]** knooppunt van de Adobe Campaign-hiërarchie. Ze zijn gegroepeerd in een bibliotheek en kunnen worden opgenomen in e-mailberichten, maar kunnen ook worden gebruikt voor campagnes of taken, of voor inhoudsbeheer.
 
 * An asset shared with Adobe Experience Cloud. Zie [deze sectie](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!IMPORTANT]
->
->Als u afbeeldingen in de e-mailberichten wilt opnemen met de wizard voor levering, moet de Adobe Campaign-instantie zo zijn geconfigureerd dat het beheer van openbare bronnen is ingeschakeld. Deze procedure kan van de plaatsingstovenaar worden uitgevoerd. Zie de [deze sectie](../../installation/using/deploying-an-instance.md) voor meer informatie over de configuratie.
+### Afbeeldingen invoegen en beheren {#manage-images}
 
 Met de wizard voor levering kunt u lokale afbeeldingen of afbeeldingen die zijn opgeslagen in de bibliotheek toevoegen aan de inhoud van berichten. Om dit te doen, klik **[!UICONTROL Image]** op de werkbalk Inhoud HTML.
 
@@ -188,14 +192,12 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 
 >[!IMPORTANT]
 >
->* De toegangspaden voor afbeeldingen worden gewijzigd tijdens het handmatig uploaden of tijdens het verzenden van berichten.
+> De afbeeldings-URL&#39;s worden gewijzigd tijdens handmatig uploaden of tijdens het verzenden van berichten.
 > 
->* Om prestatieproblemen te voorkomen, als u direct gedownloade afbeeldingen opneemt van een persoonlijke URL als [bijlage](attaching-files.md), mag elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes. Deze aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
+### Hoofdlettergebruik: een bericht met afbeeldingen verzenden {#uc-images}
 
-**Hoofdlettergebruik: een bericht met afbeeldingen verzenden**
-
-Hier volgt een voorbeeld van een levering met vier afbeeldingen:
+Hieronder ziet u een voorbeeld van een levering met vier afbeeldingen:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
@@ -253,23 +255,23 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
    * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campaign: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
 
-      Voorbeeld van een 1D-streepjescode:
+     Voorbeeld van een 1D-streepjescode:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * De typen DataMatrix en PDF417 hebben betrekking op de 2D-indeling.
 
-      Voorbeeld van een 2D-streepjescode:
+     Voorbeeld van een 2D-streepjescode:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Als u een QR-code wilt invoegen, selecteert u dit type en voert u de toe te passen foutcorrectiesnelheid in. Dit percentage bepaalt de hoeveelheid gegevens die wordt herhaald en de tolerantie voor kwaliteitsverlies.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Voorbeeld van een QR-code:
+     Voorbeeld van een QR-code:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Voer de grootte in van de streepjescode die u in de e-mail wilt invoegen: Door de schaal te configureren kunt u de grootte van de streepjescode verhogen of verlagen, van x1 tot x10.
 1. De **[!UICONTROL Value]** kunt u de waarde van de streepjescode definiëren. Een waarde kan een speciale aanbieding aanpassen en kan de functie van criteria zijn, het kan de waarde van een gegevensbestandgebied zijn verbonden met de klanten.
