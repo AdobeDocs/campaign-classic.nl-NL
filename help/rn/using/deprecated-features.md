@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ De Adobe Campaign Classic-clientconsole kan niet meer worden uitgevoerd op de vo
 
 * Vanaf release 22.1 is Adobe Campaign niet meer compatibel met CentOs 8.x (64-bits). CentOS Linux 8 heeft op 31 december 2021 het einde van de levensduur (EOL) bereikt. [Meer informatie](https://www.centos.org/centos-linux-eol/).
 
-   Als u dit besturingssysteem hebt gebruikt, past u de implementatie dienovereenkomstig aan. CentOS 7.x (64-bits) en RHEL 8.x/7.x (64-bits) worden nog ondersteund.
+  Als u dit besturingssysteem hebt gebruikt, past u de implementatie dienovereenkomstig aan. CentOS 7.x (64-bits) en RHEL 8.x/7.x (64-bits) worden nog ondersteund.
 
 * Vanaf release 21.1.3 is Adobe Campaign niet meer compatibel met Debian 8.
 
@@ -216,19 +216,19 @@ Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgend
 * DB2 9.5.
 * Teradata 14 - 14.1.
 
-Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Data Access). Gebruik meer recente versies of systemen.
+Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Data Access). Gebruik recentere versies of systemen.
 
 * DB2 UDB 9.5, 9.7.
 * Oracle 9i, 10G R2.
-* PostgreSQL-versies tot 9.6 hebben het einde van de levensduur bereikt.
+* PostgreSQL-versies tot 9.6 hebben het einde van hun gebruiksduur bereikt.
 * MSSQL 2000, 2005, 2008 R2.
 * MySQL 5.1.
-* InfiniDB heeft het einde van de levensduur bereikt.
+* InfiniDB heeft het einde van de gebruiksduur bereikt.
 * Teradata 13, 13.1.
-* Netezza 6.02, 7.0. Netezza heeft het einde van de levensduur bereikt.
-* AsterData 5.0. AsterData heeft het einde van de levensduur bereikt.
-* sybase IQ 15.2, 15.4, 15.5 en Sybase ASE 15.0.
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic ondersteunt nog steeds de vermelde versies van Hadoop via HiveSQL via FDA (Federated Data Access), maar deze versies zijn samengevoegd met: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) en HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Netezza 6.02, 7.0. Netezza heeft het einde van de gebruiksduur bereikt.
+* AsterData 5.0. AsterData heeft het einde van de gebruiksduur bereikt.
+* Sybase IQ 15.2, 15.4, 15.5 en Sybase ASE 15.0.
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic biedt nog steeds ondersteuning voor de vermelde versies van Hadoop via HiveSQL via Federated Data Access (FDA), maar deze versies zijn samengevoegd met: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) en HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **RDBMS SERVER**
 
