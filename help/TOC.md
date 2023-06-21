@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
-workflow-type: ht
-source-wordcount: '2531'
-ht-degree: 100%
+source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,7 @@ ht-degree: 100%
    + Eerdere releases {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021](rn/using/release--2021.md)
-      + [2020](rn/using/release--2020.md)
-      + [2019](rn/using/release--2019.md)
-      + [2018](rn/using/release--2018.md)
+      + [2022](rn/using/release--2022.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
@@ -642,7 +640,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
