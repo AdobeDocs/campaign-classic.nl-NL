@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 12%
+source-wordcount: '1097'
+ht-degree: 10%
 
 ---
 
@@ -28,6 +28,7 @@ Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaan
 >[!NOTE]
 >
 >Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Beveiligingsupdates {#acc-security-updates}
 
@@ -39,10 +40,10 @@ Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heef
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Release van campagne 20.2.5.
+* Release van campagne 20.1.4.
+* Release van campagne 19.2.4.
+* Release van campagne 19.1.8.
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -52,22 +53,23 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 * Als hybride klant, zal Adobe u van de geplande verbeteringsdata voor uw midsourcing instanties op de hoogte brengen. Adobe raadt u ten zeerste aan om ook een upgrade uit te voeren voor uw marketingexemplaar.
 
-   De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade van alle instanties aan om beveiligingskwetsbaarheden te verhelpen
+  De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade van alle instanties aan om beveiligingskwetsbaarheden te verhelpen
 
 * Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar de nieuwste build.
 
 >[!CAUTION]
 >
 >Als u niet binnen de aanbevolen periode kunt upgraden **u dient contact op te nemen met het Adobe Customer Care-team om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw instanties**.
+>
 
 ## Campaign Classic Client Console-update  {#acc-cc-updates}
 
 De **nu beschikbaar** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Consoleupgrade** is verplicht.
 
 * Nieuwste Gold Standard 11 build 9032@10c2709. [Meer informatie](../../rn/using/gold-standard.md)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Release van campagne 20.1.4.
+* Release van campagne 19.2.4.
+* Release van campagne 19.1.8.
 
 ## Adobe Identity Management System (IMS)-update
 
@@ -81,10 +83,10 @@ Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Release van campagne 20.1.4. [Meer informatie](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Release van campagne 19.2.4. [Meer informatie](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Release van campagne 20.2.5.
+* Release van campagne 20.1.4.
+* Release van campagne 19.2.4.
+* Release van campagne 19.1.8.
 
 Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht, zodat zowel de campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
 
@@ -114,8 +116,8 @@ U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
-* Release van campagne 20.2.5. [Meer informatie](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Release van campagne 19.1.8. [Meer informatie](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Release van campagne 20.2.5.
+* Release van campagne 19.1.8.
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

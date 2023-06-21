@@ -7,8 +7,8 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+workflow-type: tm+mt
 source-wordcount: '3577'
 ht-degree: 100%
 
@@ -290,7 +290,7 @@ De configuratie van externe accounts is verplaatst naar [deze sectie](../../inst
 
 De FDA-documentatie (Federated Data Access) van Campaign is verbeterd met details voor elke externe databaseconfiguratie en is verplaatst naar [deze sectie](../../installation/using/about-fda.md).
 
-[Campaign 20.2.3-release](../../rn/using/release--2020.md#release-20-2-3-build-9182) is verplaatst naar Algemene beschikbaarheid (General Availability, ofwel GA).
+Campaign 20.2.3-release is verplaatst naar Algemene beschikbaarheid (General Availability, ofwel GA).
 
 De sectie Privacy is verplaatst en aangevuld met twee nieuwe pagina’s: [Privacybeheer](../../platform/using/privacy-management.md) en [Verzoeken om toegang tot persoonsgegevens beheren](../../platform/using/privacy-requests.md).
 

@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 36%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -31,11 +31,11 @@ Als uw omgeving wordt uitgevoerd op een van de hieronder vermelde versies, kunt 
 
 * Gold Standard 8 tot 11. [Meer informatie](../../rn/using/gold-standard.md#gs-8)
 * Campagne 21.1.1 (build 9277) tot en met 21.1.2 (build 9282). [Meer informatie](../../rn/using/latest-release.md)
-* Campagne 20.3.1 (build 9228) tot 20.3.3 (build 9234)-releases. [Meer informatie](../../rn/using/release--2020.md#release-20-3)
-* Campagne 20.2.1 (build 9178) tot 20.2.4 (build 9187)-releases. [Meer informatie](../../rn/using/release--2020.md#release-20-2)
-* Campagne 20.1.1 (build 9122) tot en met 21.1.3 (build 9124). [Meer informatie](../../rn/using/release--2020.md#release-20-1)
-* Campagne 19.2.2 (build 9080) tot en met 19.2.3 (build 9081). [Meer informatie](../../rn/using/release--2019.md#release-19-2)
-* Campagne 19.1.5 (build 9033) tot en met 19.1.7 (build 9036). [Meer informatie](../../rn/using/release--2019.md#release-19-1)
+* Campagne 20.3.1 (build 9228) tot 20.3.3 (build 9234)-releases.
+* Campagne 20.2.1 (build 9178) tot 20.2.4 (build 9187)-releases.
+* Campagne 20.1.1 (build 9122) tot en met 21.1.3 (build 9124).
+* Campagne 19.2.2 (build 9080) tot en met 19.2.3 (build 9081).
+* Campagne 19.1.5 (build 9033) tot en met 19.1.7 (build 9036).
 
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -59,6 +59,7 @@ Volg de onderstaande stap:
 >[!NOTE]
 >
 >De **config-`<instance>`.xml** bestand overschrijft het **serverConf.xml** instellingen. Als de **signEmailLinks** aanwezig is in het dialoogvenster  **config-`<instance>`.xml** waarbij **instance** is de naam van uw instantie), moet het ook worden aangezet **false**.
+>
 
 **Wat is de impact?**
 
@@ -69,3 +70,4 @@ Zodra de update is uitgevoerd, werken alle koppelingen weer naar behoren.
 >[!NOTE]
 >
 >Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
