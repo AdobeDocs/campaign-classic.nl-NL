@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 3%
@@ -32,9 +32,9 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 
 >[!CAUTION]
 >
->Campagne Client Console en Campagne application server moeten in werking stellen **op dezelfde productversie**. Adobe beveelt ook ten zeerste aan de **zelfde product bouwen**. Leer hoe u de versies van uw Campagne Client en Server kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Campagne Client Console en Campagne application server moeten in werking stellen **op dezelfde productversie**. Adobe beveelt ook ten zeerste aan de **zelfde product bouwen**. Leer hoe u de versies van uw Campagne Client en Server kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->De toegang tot de installatiemap waarin de console wordt geïnstalleerd zou tot de voorgenomen gebruiker moeten worden beperkt slechts, die ervoor zorgt dat de schrijftoestemmingen dienovereenkomstig worden beperkt.
+>* De toegang tot de installatiemap waarin de console wordt geïnstalleerd zou tot de voorgenomen gebruiker moeten worden beperkt slechts, die ervoor zorgt dat de schrijftoestemmingen dienovereenkomstig worden beperkt.
 
 
 
