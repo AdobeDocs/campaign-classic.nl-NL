@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1135'
 ht-degree: 3%
 
 ---
 
 # De clientconsole van de campagne installeren en bijwerken{#installing-the-client-console}
-
-
 
 De Console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
 
@@ -35,6 +33,10 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 >[!CAUTION]
 >
 >Campagne Client Console en Campagne application server moeten in werking stellen **op dezelfde productversie**. Adobe beveelt ook ten zeerste aan de **zelfde product bouwen**. Leer hoe u de versies van uw Campagne Client en Server kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>
+>De toegang tot de installatiemap waarin de console wordt geïnstalleerd zou tot de voorgenomen gebruiker moeten worden beperkt slechts, die ervoor zorgt dat de schrijftoestemmingen dienovereenkomstig worden beperkt.
+
+
 
 ## Installatie van de Microsoft Edge Webview2-runtime {#webview}
 
