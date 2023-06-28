@@ -7,20 +7,20 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 99%
 
 ---
 
 # Nieuwste release{#latest-release}
 
-
-
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Release 7.3.3 - build 9359 {#release-7-3-3}
+## Release 7.3.3 - build 9359 {#release-7-3-3}
+
+[!BADGE Algemene beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
 
 >[!CAUTION]
 >
@@ -46,7 +46,9 @@ _20 maart 2023_
 * Probleem verholpen waardoor scrollen soms niet mogelijk was in het tabblad **Bewerken** van de Digital Content Editor (DCE). (NEO-54474)
 * Probleem verholpen waarbij twee verrijkingsactiviteiten dezelfde naam-ID gebruikten in hun koppeling, waardoor de tweede verrijkingsactiviteit de koppelingen van de eerste gebruikte. (NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png) Release 7.3.2 - build 9356 {#release-7-3-2}
+## Release 7.3.2 - build 9356 {#release-7-3-2}
+
+[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 _21 november 2022_
 

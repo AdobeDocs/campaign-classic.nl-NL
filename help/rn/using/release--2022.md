@@ -5,16 +5,18 @@ description: Meer informatie over Campaign Classic 2022-releases
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2025'
+ht-degree: 100%
 
 ---
 
 # Releases van 2022{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) Release 7.3.1 - build 9352 {#release-7-3-1}
+## Release 7.3.1 - build 9352 {#release-7-3-1}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _1 juli 2022_
 
@@ -82,7 +84,9 @@ Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matr
 * Er is een probleem opgelost waardoor een afbeelding tijdens het voorbereiden van berichten niet kon worden geüpload in segmentmodus van een externe server. (NEO-40307)
 * Er is een probleem opgelost waardoor de levering naar een groter aantal ontvangers kon worden verzonden dan verwacht. (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) Release 7.2.2 - build 9349 {#release-7-2-2}
+## Release 7.2.2 - build 9349 {#release-7-2-2}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _1 maart 2022_
 
@@ -104,7 +108,9 @@ _1 maart 2022_
 * Er is een probleem opgelost dat leidde tot een fout bij het vernieuwen van de afleveringsworkflow bij meer dan 1000 brede logboeken tegelijk. (NEO-40276)
 * Er is een probleem opgelost waardoor de leveringsindicatoren voor de open-ratio en de click-ratio niet automatisch werden bijgewerkt. (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) Release 7.2.1 - build 9346 {#release-7-2-1}
+## Release 7.2.1 - build 9346 {#release-7-2-1}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _10 januari 2022_
 

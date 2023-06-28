@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2595'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >Gebruik het menu **[!UICONTROL Help > About...]** om de [versie en het buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) van uw Adobe Campaign te controleren. Houd er echter rekening mee dat voor alle builds tussen 9277 en 9343 die op deze pagina worden vermeld, het versienummer 7.0 wordt getoond in plaats van 7.1.
+> 
 
-### ![](assets/do-not-localize/limited_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
+### Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _8 oktober 2021_
 
@@ -32,7 +35,9 @@ _8 oktober 2021_
 
 * Probleem verholpen: &#39;De ipaffinity xxx is niet gevonden op middenserver xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multimid-sourcingversie. (NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
+### Release 21.1.4 - build 9342 {#release-21-1-4-build-9342}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _7 september 2021_
 
@@ -66,7 +71,9 @@ _7 september 2021_
 * Probleem verholpen waardoor u geen variabelen kon gebruiken in een workflowactiviteit **Verrijkings** als de binnenkomende transitie afkomstig was van een FDA-databron.
 * Probleem verholpen dat kon leiden tot verbroken URL&#39;s in e-mailberichten.
 
-### ![](assets/do-not-localize/limited_2.png) Release 21.1.3 - versie 9330 {#release-21-1-3-build-9330}
+### Release 21.1.3 - build 9330 {#release-21-1-3-build-9330}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _5 juni 2021_
 
@@ -222,14 +229,18 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost waarbij u geen levering kon verzenden met een groep proeven vanwege een specifiek samenvoegingsmechanisme dat de personalisatie van de levering niet kon uitvoeren. (NEO-14391)
 * Er is een probleem opgelost waarbij geen waarschuwing met de waarschuwingsactiviteit werd verzonden als een query en een verrijkingsactiviteit de leveringstabel als doel hadden. (NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png) Release 21.1.2 - versie 9282 {#release-21-1-2-build-9282}
+### Release 21.1.2 - build 9282 {#release-21-1-2-build-9282}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _15 april 2021_
 
 * Wachtwoordbeheer is verbeterd om de beveiliging te optimaliseren.
 * Er is een probleem opgelost waarbij MTA soms vastliep.
 
-### ![](assets/do-not-localize/red_2.png) Release 21.1.1 - versie 9277 {#release-21-1-1-build-9277}
+### Release 21.1.1 - build 9277 {#release-21-1-1-build-9277}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _22 februari 2021_
 

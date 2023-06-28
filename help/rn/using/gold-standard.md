@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,9 @@ Op deze pagina vindt u aanvullende informatie en compatibiliteitsmatrix voor [!D
 ## [!DNL Gold Standard] Aanvullende informatie
 
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] release 12{#gs-12}
+### [!DNL Gold Standard] release 12{#gs-12}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _7 september 2021_
 
@@ -38,7 +40,9 @@ Versie 9032@99a3894 bevat de volgende oplossingen:
 * De functie voor het bijhouden van handtekeningen is verbeterd om fouten te voorkomen die gekoppeld zijn aan tools van derden (klant-e-mail, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
 * Probleem verholpen met datumpickers waardoor een console een foutbericht over een blokkering weergaf. (NEO-36345)
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] release 11{#gs-11}
+### [!DNL Gold Standard] 11 release{#gs-11}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _14 april 2021_
 
@@ -83,7 +87,9 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10 release{#gs-10}
+### [!DNL Gold Standard] 10 release{#gs-10}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _7 juli 2020_
 
@@ -95,7 +101,9 @@ Er is een probleem verholpen waarbij tracking niet werkte als de handtekeningfun
 >
 >Wij adviseren u de clientconsole bij te werken met de beschikbare console in deze release. Zie [deze pagina](../../installation/using/installing-the-client-console.md)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 9{#gs-9}
+### [!DNL Gold Standard] 9 release{#gs-9}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _22 juni 2020_
 
@@ -111,7 +119,9 @@ De volgende correcties betreffen het beveiligingsmechanisme voor koppelingen bij
 * Er is een probleem verholpen met de antiphishingservice. (NEO-25283)
 * Er is een probleem verholpen met tracking bij gebruik van specifieke aangepaste trackingformules. (NEO-25277)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 8{#gs-8}
+### [!DNL Gold Standard] release 8{#gs-8}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _29 april 2020_
 
@@ -136,7 +146,9 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 6{#gs-6}
+### [!DNL Gold Standard] release 6{#gs-6}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _9 maart 2020_
 
@@ -144,7 +156,9 @@ De build 9032@19f73c5 bevat de volgende oplossing:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 5{#gs-5}
+### [!DNL Gold Standard] release 5{#gs-5}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _17 december 2019_
 
@@ -152,7 +166,9 @@ De build 9032@d6b8062 bevat de volgende oplossing:
 
 * Er is een trackingprobleem verholpen op de volgende communicatiekanalen: mobiel (sms, mms), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 4{#gs-4}
+### [!DNL Gold Standard] release 4{#gs-4}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _11 december 2019_
 
@@ -160,7 +176,9 @@ De build 9032@bc4a935 bevat de volgende oplossing:
 
 * Er is een prestatieprobleem verholpen met het verzenden van berichten met een MSSQL-database. (NEO-17558)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 3{#gs-3}
+### [!DNL Gold Standard] release 3{#gs-3}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _20 november 2019_
 
@@ -170,7 +188,9 @@ De build 9032@3468c7b bevat de volgende oplossingen:
 * Er is een probleem verholpen met het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Er is een probleem verholpen waarbij de webserver geblokkeerd kon raken of vastlopen.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 2{#gs-2}
+### [!DNL Gold Standard] release 2{#gs-2}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _19 september 2019_
 
@@ -179,7 +199,9 @@ De build 9032@cee805c bevat de volgende oplossingen:
 * Er is een probleem verholpen met het gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Er is een indexprobleem verholpen dat prestatieproblemen kon veroorzaken bij het verzenden van transactieberichten.
 
-### ![](assets/do-not-localize/red_2.png) Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+### Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _13 augustus 2019_
 
@@ -200,6 +222,7 @@ Dit gedeelte bevat een lijst met alle systemen en onderdelen die worden onderste
 >Tenzij anders vermeld worden alle kleine releases ondersteund.
 >
 >Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagina worden vermeld. Wanneer specifieke versies van deze externe systemen en tools het einde van de levensduur bereiken bij hun respectieve makers, is Adobe Campaign niet meer compatibel met deze versies. Ze worden dan in de volgende productrelease uit onze compatibiliteitsmatrix verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in de compatibiliteitsmatrix gebruikt om problemen te voorkomen.
+>
 
 ### Besturingssystemen{#OperatingSystems-gs}
 
