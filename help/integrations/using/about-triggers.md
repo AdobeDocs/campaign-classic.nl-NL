@@ -7,16 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 8%
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
 # Werken met campagne- en Experience Cloud-triggers{#about-adobe-experience-triggers}
-
-
 
 [!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics die de pijpleiding gebruikt. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
 
@@ -28,6 +26,8 @@ ht-degree: 8%
 
 Het staat voor meer flexibele integratie toe aangezien de configuratie minimaal is en een derde niet betrokken is.
 Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is op de prestaties van marketingactiviteiten. De integratie kan bijvoorbeeld een miljoen triggers per uur verwerken.
+
+![](assets/do-not-localize/book.png) Ontdek hoe u [een Experience Cloud-trigger maken](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) en kritieke consumentengedragingen identificeren, definiëren en bewaken.
 
 ## [!DNL Triggers] architectuur {#triggers-architecture}
 
