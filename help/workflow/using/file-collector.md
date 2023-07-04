@@ -5,7 +5,7 @@ description: Meer informatie over de workflowactiviteit van de bestandscollector
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -32,39 +32,39 @@ Het eerste tabblad van het dialoogvenster **[!UICONTROL File collector]** Met ac
 
    * **[!UICONTROL Directory]**
 
-      Map met de bestanden die moeten worden gedownload. Deze map moet vooraf op de server worden gemaakt: als het niet bestaat , zal een fout worden opgeheven .
+     Map met de bestanden die moeten worden gedownload. Deze map moet vooraf op de server worden gemaakt: als het niet bestaat , zal een fout worden opgeheven .
 
    * **[!UICONTROL Filter]**
 
-      Alleen bestanden die overeenkomen met dit filter worden in aanmerking genomen. De andere bestanden in de map worden genegeerd. Als het filter leeg is, worden alle bestanden in de map in aanmerking genomen. Voorbeelden van filters: **&#42;.zip**, **import-&#42;.txt**.
+     Alleen bestanden die overeenkomen met dit filter worden in aanmerking genomen. De andere bestanden in de map worden genegeerd. Als het filter leeg is, worden alle bestanden in de map in aanmerking genomen. Voorbeelden van filters: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      Als deze optie is ingeschakeld, wordt de taak beëindigd na ontvangst van het eerste bestand. Als de map meerdere bestanden bevat die overeenkomen met het filter, wordt er slechts één bestand in aanmerking genomen. Deze optie garandeert dat slechts één gebeurtenis wordt verzonden. Het in aanmerking genomen bestand is het eerste in de lijst in alfabetische volgorde.
+     Als deze optie is ingeschakeld, wordt de taak beëindigd na ontvangst van het eerste bestand. Als de map meerdere bestanden bevat die overeenkomen met het filter, wordt er slechts één bestand in aanmerking genomen. Deze optie garandeert dat slechts één gebeurtenis wordt verzonden. Het in aanmerking genomen bestand is het eerste in de lijst in alfabetische volgorde.
 
-      Voor een niet-geplande activiteit, als er geen bestand is gevonden dat overeenkomt met het filter in de opgegeven map en als de **[!UICONTROL Process file nonexistence]** Deze optie is niet ingeschakeld. Er wordt een fout weergegeven.
+     Voor een niet-geplande activiteit, als er geen bestand is gevonden dat overeenkomt met het filter in de opgegeven map en als de **[!UICONTROL Process file nonexistence]** Deze optie is niet ingeschakeld. Er wordt een fout weergegeven.
 
    * **[!UICONTROL Execution schedule]**
 
-      Hiermee bepaalt u de frequentie van de controle op bestandsaanwezigheid via de parameters van het dialoogvenster **[!UICONTROL Schedule]** tab.
+     Hiermee bepaalt u de frequentie van de controle op bestandsaanwezigheid via de parameters van het dialoogvenster **[!UICONTROL Schedule]** tab.
 
 1. **Foutafhandeling**
 
    De volgende twee opties zijn beschikbaar:
 
-   * **[!UICONTROL Process file nonexistence]**
+   * **[!UICONTROL Process missing file]**
 
-      Met deze optie wordt telkens een speciale overgang gestart wanneer er geen bestand wordt gevonden dat overeenkomt met het filter in de opgegeven map.
+     Met deze optie wordt telkens een speciale overgang gestart wanneer er geen bestand wordt gevonden dat overeenkomt met het filter in de opgegeven map.
 
-      Als de taak niet is gepland, wordt deze overgang slechts eenmaal geactiveerd.
+     Als de taak niet is gepland, wordt deze overgang slechts eenmaal geactiveerd.
 
-   * **[!UICONTROL Processing errors]**
+   * **[!UICONTROL Process errors]**
 
-      Met deze optie wordt een speciale overgang weergegeven die moet worden geactiveerd wanneer een fout wordt gegenereerd. In dit geval verandert de werkstroom niet in de foutstatus en gaat de uitvoering verder
+     Met deze optie wordt een speciale overgang weergegeven die moet worden geactiveerd wanneer een fout wordt gegenereerd. In dit geval verandert de werkstroom niet in de foutstatus en gaat de uitvoering verder
 
-      Fouten waarmee rekening wordt gehouden, zijn fouten in het bestandssysteem (het bestand kan niet worden verplaatst, de map kan niet worden geopend, enz.).
+     Fouten waarmee rekening wordt gehouden, zijn fouten in het bestandssysteem (het bestand kan niet worden verplaatst, de map kan niet worden geopend, enz.).
 
-      Deze optie verwerkt geen fouten met betrekking tot activiteitsconfiguratie, d.w.z. ongeldige waarden.
+     Deze optie verwerkt geen fouten met betrekking tot activiteitsconfiguratie, d.w.z. ongeldige waarden.
 
 1. **Historiatie**
 
