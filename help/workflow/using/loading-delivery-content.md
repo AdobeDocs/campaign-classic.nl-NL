@@ -2,13 +2,13 @@
 product: campaign
 title: Leveringscontent laden
 description: Leveringscontent laden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 3%
+source-wordcount: '324'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +46,7 @@ Dit doet u als volgt:
 1. In de **[!UICONTROL Script]** tabblad van het dialoogvenster **[!UICONTROL Delivery]** activiteit, voeg het volgende bevel toe om de inhoud van het ingevoerde dossier in de levering te laden:
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)
