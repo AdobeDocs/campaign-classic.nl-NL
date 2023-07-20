@@ -2,14 +2,14 @@
 product: campaign
 title: Campagneopties configureren
 description: Leer hoe u de opties voor campagne configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 1%
 
 ---
@@ -72,11 +72,11 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Aantal bredeLogboeken die voor een levering in één keer worden gecreeerd.<br /> </td> 
+   <td> Minimale partijgrootte (aantal rijen) voor het opnemen van wideLogs tijdens een leveringsvoorbereiding.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Invoeging (in lijst) van logboeken (wideLogs) per transacties: aantal rijen dat per batch moet worden verwerkt.<br /> </td> 
+   <td> De drempel van de partijduur (aantal milliseconden) waaronder de partijgrootte voor het opnemen van wideLogs tijdens een leveringsvoorbereiding wordt verdubbeld.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
