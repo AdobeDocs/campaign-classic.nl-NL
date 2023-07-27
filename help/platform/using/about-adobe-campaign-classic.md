@@ -2,21 +2,19 @@
 product: campaign
 title: Adobe Campaign Classic
 description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '930'
 ht-degree: 92%
 
 ---
 
 # Aan de slag met Campaign Classic{#about-adobe-campaign-classic}
-
-
 
 Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moeten merken consistente klantreizen op alle contactpunten tot stand brengen. Marketeers kunnen nu efficiënt marketingcampagnes op alle kanalen ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
@@ -24,10 +22,9 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!AVAILABILITY]
 >
->* De materialen van de hulp in deze inzameling zijn op Campaign Classic v7 in zijn van toepassing [nieuwste build](../../rn/using/latest-release.md). Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
+>* Help-materialen in deze verzameling zijn van toepassing op Campaign Classic v7 in de [nieuwste build](../../rn/using/latest-release.md). Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
 >
 >* Adobe Campaign v8-documentatie is beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=nl).
-
 
 ![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](#video)
 
