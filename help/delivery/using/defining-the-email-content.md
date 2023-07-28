@@ -2,13 +2,13 @@
 product: campaign
 title: E-mailinhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign gebruikt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1955'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Als u wilt weten hoe u verpersoonlijkingsvelden invoegt en gebruikt, raadpleegt 
 
 >[!CAUTION]
 >
->Om leveringsproblemen te voorkomen, moeten de e-mailaccounts die overeenkomen met de adressen die voor leveringen en antwoorden zijn opgegeven, bestaan en worden gecontroleerd. Raadpleeg de systeembeheerder.
+>Om leveringsproblemen te voorkomen, moeten de e-mailaccounts die overeenkomen met de adressen die voor leveringen en antwoorden zijn opgegeven, bestaan en worden gecontroleerd. Neem contact op met de systeembeheerder.
 
 ## Berichtonderwerp {#message-subject}
 
@@ -66,7 +66,7 @@ De inhoud van het bericht wordt bepaald in de lagere sectie van het venster van 
 
 Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van de voorkeur van de ontvanger. We raden u aan inhoud in beide indelingen te maken om ervoor te zorgen dat berichten correct kunnen worden weergegeven in elk e-mailsysteem. Raadpleeg voor meer informatie hierover [Berichtindelingen selecteren](email-parameters.md#selecting-message-formats).
 
-* Als u inhoud van een HTML wilt importeren, gebruikt u de **[!UICONTROL Open]** knop. U kunt de broncode ook rechtstreeks in de **[!UICONTROL Source]** subtab.
+* Als u inhoud van een HTML wilt importeren, gebruikt u de **[!UICONTROL Open]** knop. U kunt de broncode ook rechtstreeks in het dialoogvenster **[!UICONTROL Source]** subtab.
 
   Als u het [Editor voor digitale inhoud](../../web/using/about-campaign-html-editor.md) (DCE), zie [Een inhoudssjabloon selecteren](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -149,7 +149,7 @@ E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de wizard
 
 ### Guardrails {#img-guardrails}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 MB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
 Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -211,7 +211,7 @@ Voor elke gedetecteerde afbeelding kunt u de status bekijken:
 
 * Als een afbeelding lokaal is opgeslagen of zich op een andere server bevindt, zelfs als deze server van buitenaf zichtbaar is (bijvoorbeeld op een internetsite), wordt deze gedetecteerd als **[!UICONTROL Not yet online]**.
 * De afbeeldingen worden gedetecteerd als **[!UICONTROL Already online]** als ze eerder zijn geüpload terwijl een andere levering wordt gemaakt.
-* In de plaatsingstovenaar, kunt u URLs bepalen waarvoor beeldopsporing niet wordt toegelaten: Deze afbeeldingen uploaden **[!UICONTROL Skipped]**.
+* In de implementatietovenaar kunt u URLs bepalen waarvoor beeldopsporing niet wordt toegelaten: het uploaden van deze beelden zal worden **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Voor elke gedetecteerde afbeelding kunt u de status bekijken:
 
 Tijdens de analysefase worden de afbeeldingen automatisch geüpload naar de server, zodat ze van buitenaf toegankelijk zijn, behalve de lokale afbeeldingen die vooraf moeten worden geüpload.
 
-U kunt vooruit werken en afbeeldingen uploaden, zodat deze door andere Adobe Campaign-operatoren kunnen worden weergegeven. Dit is handig als u in samenwerking werkt. Klik op **[!UICONTROL Upload the images straightaway...]** om de afbeeldingen naar de server te uploaden.
+U kunt vooruit werken en afbeeldingen uploaden, zodat deze door andere Adobe Campaign-operatoren kunnen worden weergegeven. Dit is handig als u in samenwerking werkt. Om dit te doen, klik **[!UICONTROL Upload the images straightaway...]** om de afbeeldingen naar de server te uploaden.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -253,7 +253,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Selecteer het type streepjescode.
 
-   * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campaign: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * Voor 1D-indeling zijn de volgende typen beschikbaar in Adobe Campaign: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET en Royal Mail (RM4SCC).
 
      Voorbeeld van een 1D-streepjescode:
 
@@ -273,7 +273,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
      ![](assets/barcode_insert_12.png)
 
-1. Voer de grootte in van de streepjescode die u in de e-mail wilt invoegen: Door de schaal te configureren kunt u de grootte van de streepjescode verhogen of verlagen, van x1 tot x10.
+1. Voer de grootte in van de streepjescode die u in de e-mail wilt invoegen: als u de schaal configureert, kunt u de streepjescode groter of kleiner maken, van x1 tot x10.
 1. De **[!UICONTROL Value]** kunt u de waarde van de streepjescode definiëren. Een waarde kan een speciale aanbieding aanpassen en kan de functie van criteria zijn, het kan de waarde van een gegevensbestandgebied zijn verbonden met de klanten.
 
    In dit voorbeeld wordt een streepjescode van het type EAN-8 getoond, waaraan het rekeningnummer van een ontvanger is toegevoegd. Als u dit accountnummer wilt toevoegen, klikt u op de knop voor personalisatie rechts van het dialoogvenster **[!UICONTROL Value]** veld en selecteer **[!UICONTROL Recipient > Account number]**.

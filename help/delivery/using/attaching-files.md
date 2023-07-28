@@ -2,13 +2,13 @@
 product: campaign
 title: Bestanden bijvoegen
 description: Bestanden bijvoegen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -21,12 +21,12 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempel kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 Er zijn twee mogelijke gevallen:
 
 * Selecteer een bestand en koppel het op dezelfde manier aan de levering.
-* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval moet u een **berekende bijlage**: de naam van de gehechtheid wordt berekend op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook worden gepersonaliseerd en in de indeling PDF worden omgezet op het moment van levering, als u beschikt over de **Variabel digitaal afdrukken** optie.
+* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval moet u een **berekende bijlage**: de naam van de gehechtheid wordt berekend op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook worden gepersonaliseerd en in de indeling PDF worden omgezet op het moment van levering, als u beschikt over de **Variabel digitaal afdrukken** -optie.
 
 >[!NOTE]
 >
@@ -34,9 +34,9 @@ Er zijn twee mogelijke gevallen:
 
 ## Guardrails {#attachments-guardrails}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 MB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
-Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` optie.
+Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` -optie.
 
 Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -71,7 +71,7 @@ Wanneer u een berekende gehechtheid creeert, kan de naam van de gehechtheid tijd
 Voer de volgende stappen uit om een gepersonaliseerde bijlage te maken:
 
 1. Klik op de koppeling **[!UICONTROL Attachments]**.
-1. Klik op de knop **[!UICONTROL Add]** selecteert u vervolgens **[!UICONTROL Calculated attachment]**.
+1. Klik op de knop **[!UICONTROL Add]** en vervolgens selecteert u **[!UICONTROL Calculated attachment]**.
 1. Selecteer het type berekening in het menu **[!UICONTROL Type]** vervolgkeuzelijst:
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
@@ -123,7 +123,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 ### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
-U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie om dit te doen **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >

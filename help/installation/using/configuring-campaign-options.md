@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> Lijst van schema's waarvoor u testadressen voor het Teruggeven Inbox wilt gebruiken. (elementnamen worden met komma's van elkaar gescheiden), bijvoorbeeld: custom_nms_receiving.<br /> </td> 
+   <td> Lijst van schema's waarvoor u testadressen voor het Teruggeven Inbox wilt gebruiken. (elementnamen worden met komma's van elkaar gescheiden), bijvoorbeeld custom_nms_receiver.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -57,7 +57,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
+   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer "0" in om deze optie te deactiveren.</p><p> Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers.<br /> </td> 
@@ -112,7 +112,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Hiermee kunt u de maximale grootte (in bytes) definiëren die is toegestaan voor afbeeldingen die zijn gedownload van een gepersonaliseerde URL en die zijn gekoppeld aan een e-mail. De standaardwaarde is 100.000 bytes. Als een proefdruk wordt verzonden en de afbeelding(en) wordt (worden) gedownload om de e-mail te verwerken, als de grootte van een afbeelding deze waarde overschrijdt of als er een downloadprobleem is, wordt een fout weergegeven in de leveringslogboeken en mislukt de proefaflevering.<br /> </td> 
+   <td> Hiermee kunt u de maximale grootte (in bytes) definiëren die is toegestaan voor afbeeldingen die zijn gedownload van een gepersonaliseerde URL en die zijn gekoppeld aan een e-mail. De standaardwaarde is 100.000 bytes (100 KB). Als een proefdruk wordt verzonden en de afbeelding(en) wordt (worden) gedownload om de e-mail te verwerken, als de grootte van een afbeelding deze waarde overschrijdt of als er een downloadprobleem is, wordt een fout weergegeven in de leveringslogboeken en mislukt de proefaflevering.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
@@ -180,23 +180,23 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
-   <td> Op kanaal "email" (standaard gebruiken): Maximale aantal fouten dat wordt geaccepteerd, voor SOFT-fouten tijdens het verzenden voordat de ontvanger in quarantaine wordt geplaatst.<br /> </td> 
+   <td> Op kanaal "e-mail"(gebruik als gebrek): Maximaal aantal fouten dat wordt goedgekeurd, voor de fouten van SOFT tijdens het verzenden alvorens de ontvanger in quarantaine te zetten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> Op kanaal "email" (standaard gebruiken): Minimale periode die moet worden doorgebracht sinds de vorige SOFT-fout waarnaar wordt verwezen, voordat u rekening houdt met een nieuwe SOFT-fout.<br /> </td> 
+   <td> Op kanaal "email" (gebruiken als standaard): Minimale periode die moet worden doorgebracht sinds de vorige SOFT-fout waarnaar wordt verwezen, voordat er rekening wordt gehouden met een nieuwe SOFT-fout.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> Op kanaal "mobile": Maximale aantal fouten dat wordt geaccepteerd, voor SOFT-fouten tijdens het verzenden voordat de ontvanger in quarantaine wordt geplaatst.<br /> </td> 
+   <td> Op kanaal "mobiel": maximumaantal fouten dat wordt geaccepteerd, voor SOFT-fouten tijdens het verzenden voordat de ontvanger in quarantaine wordt geplaatst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> Op kanaal "mobile": Minimale periode die moet worden doorgebracht sinds de vorige SOFT-fout waarnaar wordt verwezen, voordat u rekening houdt met een nieuwe SOFT-fout.<br /> </td> 
+   <td> Op kanaal "mobile": minimale periode die moet worden doorgebracht sinds de vorige SOFT-fout waarnaar wordt verwezen, voordat er rekening wordt gehouden met een nieuwe SOFT-fout.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om te worden gespecificeerd het aantal uitzendingen te beperken die telkens als het synchronisatiewerkschema wordt uitgevoerd worden teruggekregen.</a>.<br /> </td> 
+   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om het aantal uitzendingen te beperken wordt teruggekregen telkens als het synchronisatiewerkschema wordt uitgevoerd.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
@@ -236,7 +236,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
-   <td> Parameters van verzonden SMS-berichten: informatie die aan de gateway van SMS wordt overgebracht om op de berichtprioriteit te wijzen.<br /> </td> 
+   <td> Parameters van verzonden SMS-berichten: informatie die naar de SMS-gateway wordt verzonden om de berichtprioriteit aan te geven.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
@@ -248,7 +248,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Laatste consolidatiedatum voor <span class="uicontrol">NmsUserAgent</span> statistieken.<br /> </td> 
+   <td> Datum laatste consolidatie voor <span class="uicontrol">NmsUserAgent</span> statistieken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
@@ -315,7 +315,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Hiermee kunt u de server definiëren waarop de afbeeldingen worden opgeslagen die in de leveringen worden gebruikt, zodat de browser ze kan ophalen.<br /> Voor buildversies &lt;= 5098 gebruiken we de URL van de afbeeldingen die naar de instantie zijn geüpload.<br /> Voor buildversies &gt; 5098 gebruiken we in plaats daarvan de openbare URL van de levering of de <span class="uicontrol">XtkFileRes_Public_URL</span> URL van optie.<br /> </td> 
+   <td> Hiermee kunt u de server definiëren waarop de afbeeldingen worden opgeslagen die in de leveringen worden gebruikt, zodat de browser ze kan ophalen.<br /> Voor buildversies &lt;= 5098 gebruiken we de URL van de afbeeldingen die naar de instantie zijn geüpload.<br /> Voor buildversies &gt; 5098 gebruiken we in plaats daarvan de openbare URL van de levering of de <span class="uicontrol">XtkFileRes_Public_URL</span> de URL van de optie.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -384,7 +384,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
-   <td> Activeer de validatie van leveringen door de eigenaar van de bewerking door "1" in te voeren als waarde. Voer 0 in om deze optie te deactiveren.<br /> </td> 
+   <td> Activeer de validatie van leveringen door de eigenaar van de bewerking door "1" in te voeren als waarde. Voer "0" in om deze optie te deactiveren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span> <br /> </td> 
@@ -413,7 +413,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
-   <td> (Compatibiliteitsmodus installeren: build&gt;6000) Als deze optie is geactiveerd (waarde "1"), kunt u oude wachtwoorden die in de database zijn opgeslagen, gebruiken voor de verbinding met externe accounts of met de instantie.<br /> </td> 
+   <td> (Compatibiliteitsmodus installeren: build&gt;6000) Wanneer deze optie is geactiveerd (waarde "1"), kunt u oude wachtwoorden die in de database zijn opgeslagen, gebruiken voor de verbinding met externe accounts of de instantie.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -458,10 +458,10 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
-   <td> JavaScript-bibliotheek die moet worden gepersonaliseerd voor het verrijken van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
+   <td> JavaScript-bibliotheek die moet worden aangepast voor het verrijken van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : verrijkt en bewaart gebeurtenissen in het gegevensbestand (waar <span class="uicontrol">aiEventId</span> komt overeen met de tabel van real-time gebeurtenissen die zijn verwerkt).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : verrijkt en bewaart gebeurtenissen in het gegevensbestand (waar <span class="uicontrol">aiEventId</span> komt overeen met de id-tabel met verwerkte batchgebeurtenissen).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> komt overeen met de tabel van real-time gebeurtenissen die zijn verwerkt).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> komt overeen met de id-tabel met verwerkte batchgebeurtenissen).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -473,12 +473,12 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
    <td> JavaScript-bibliotheek die gepersonaliseerd moet worden voor het routeren van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : retourneert de interne naam van het transactiebericht dat is geselecteerd om de realtime-gebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> komt overeen met de id van de real-time gebeurtenis die is verwerkt).</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding die is geselecteerd om de batchgebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> komt overeen met de id van de verwerkte batchgebeurtenis).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding dat is geselecteerd om de batchgebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> komt overeen met de id van de verwerkte batchgebeurtenis).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeAlert</span> <br /> </td> 
-   <td> Drempel voor waarschuwing van gemiddelde verzendtijd van realtime gebeurtenissen.<br /> </td> 
+   <td> Drempel van een waarschuwing voor de gemiddelde verzendtijd van realtime gebeurtenissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeWarning</span> <br /> </td> 
@@ -498,7 +498,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
-   <td> Alert drempel voor gemiddelde het een rij vormen tijd van gebeurtenissen in real time.<br /> </td> 
+   <td> Waarschuwingsdrempel voor gemiddelde wachttijd van realtime gebeurtenissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeWarning</span> <br /> </td> 
@@ -635,7 +635,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
    <td>Laat u onvoorwaardelijk gedrag van het Einde op alle werkschema's en de gegevensbestandvragen van PostgreSQL volgens de volgende potentiële waarden beïnvloeden:<ul>
     <li><p>0 - standaard: stopt werkstroomproces, geen invloed op de database<p></li>
     <li><p>1 - pg_cancel_backend: stopt workflowproces en annuleert query in de database<p></li>
-    <li><p>2 - pg_terminate_backend: stopt workflowproces en beëindigt query in de database<p></li></ul></td> 
+    <li><p>2 - pg_terminate_backend: stopt het werkstroomproces en beëindigt de query in de database<p></li></ul></td> 
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
@@ -655,7 +655,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL, om steunen en replicatie te optimaliseren. De optie komt overeen met de naam van de tijdelijke database: Indien opgegeven, worden werktabellen in deze database geschreven. Voorbeeld: 'tempdb.dbo.' (de naam moet eindigen met een punt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Meer informatie</a> <br /> </td> 
+   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL, om steunen en replicatie te optimaliseren. De optie komt overeen met de naam van de tijdelijke database: werktabellen worden in deze database geschreven, indien opgegeven. Voorbeeld: 'tempdb.dbo'. (de naam moet eindigen met een punt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Meer informatie</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -957,11 +957,11 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_AppLogin</span> <br /> </td> 
-   <td> Aanmelden bij de toepassing om contact op te nemen met de server voor verschillende zoekopdrachten.<br /> </td> 
+   <td> Meld u aan bij de toepassing om contact op te nemen met de server voor verschillende zoekopdrachten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_AppPassword</span> <br /> </td> 
-   <td> Gecodeerd wachtwoord voor de aanmelding van de toepassing.<br /> </td> 
+   <td> Gecodeerd wachtwoord voor de toepassingsaanmelding.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_AutoOperator</span> <br /> </td> 
@@ -988,7 +988,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
    <td> Zoekbereik.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLoad_Mechanism</span> <br /> </td> 
+   <td> <span class="uicontrol">XtkLDAP_Mechanism</span> <br /> </td> 
    <td> Type verificatie gebruikt om contact op te nemen met de LDAP-server (normaal, md5, lds, ntlm, dpa).<br /> </td> 
   </tr> 
   <tr> 
@@ -997,7 +997,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsAttr</span> <br /> </td> 
-   <td> LDAP-kenmerk met de machtigingsnaam.<br /> </td> 
+   <td> LDAP-kenmerk met de naam van de autorisatie.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsBase</span> <br /> </td> 
@@ -1005,7 +1005,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsFilter</span> <br /> </td> 
-   <td> Filter Zoeken naar gebruikersautorisaties.<br /> </td> 
+   <td> Filter Zoeken naar gebruikersmachtigingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsMask</span> <br /> </td> 
@@ -1046,7 +1046,7 @@ De **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-op
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Optie waarmee u de validatiemodus van webformulieren kunt opgeven: standaard lokaal, gebruikt trackingservers als de optie 'tracking' is en een lijst met gepersonaliseerde items gebruikt met de optie 'Andere server(s)'.<br /> </td> 
+   <td> Optie waarmee u de validatiemodus van webformulieren kunt opgeven: standaard lokaal, gebruikt u trackingservers als de optie 'tracking' is en gebruikt u een gepersonaliseerde lijst met de optie 'Andere server(s)'.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

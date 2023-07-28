@@ -2,17 +2,17 @@
 product: campaign
 title: Transactionele e-mails verzenden met bijlagen
 description: Leer hoe je transactie-e-mails kunt verzenden met individuele en/of gepersonaliseerde bijlagen met Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
 
-# Hoofdlettergebruik: Transactiee-mails verzenden met bijlagen {#transactional-email-with-attachments}
+# Hoofdlettergebruik: transactie-e-mails met bijlagen verzenden {#transactional-email-with-attachments}
 
 
 
@@ -20,7 +20,7 @@ Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vl
 
 ## Belangrijkste stappen {#key-steps}
 
-In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload op de Transactionele berichtenserver: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
+In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload op de Transactionele berichtenserver: ze worden direct gegenereerd.
 
 Wanneer u klanteninteractie of details vangt, kunt u deze informatie naar de klant aan het eind van het proces moeten terugsturen, bijvoorbeeld in een dossier van PDF in bijlage aan een e-mail.
 
@@ -29,7 +29,7 @@ Hieronder volgen de belangrijkste stappen van dit scenario:
 1. De klant voert de website in en zoekt een product dat hij of zij wil kopen.
 1. De klant selecteert het product en past enkele opties aan.
 1. De klant voltooit de transactie.
-1. De klant ontvangt een e-mail waarin de transactie wordt bevestigd. Omdat het niet wordt aanbevolen PII (Persoonlijke Identificeerbare Informatie) in e-mail te verzenden, wordt een veilige PDF gegenereerd en aan de e-mail toegevoegd.
+1. Er wordt een e-mail naar de klant verzonden waarin de transactie wordt bevestigd. Omdat het niet wordt aanbevolen PII (Persoonlijke Identificeerbare Informatie) in e-mail te verzenden, wordt een veilige PDF gegenereerd en aan de e-mail toegevoegd.
 1. De klant ontvangt de e-mail en de bijbehorende bijlage met de relevante gegevens.
 
 In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd aan de uitgaande e-mails, hetgeen de volgende voordelen biedt:
@@ -40,9 +40,9 @@ In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd a
 
 ## Recommendations en guardrails {#important-notes}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 MB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
-Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` optie.
+Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` -optie.
 
 Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -55,7 +55,7 @@ Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implemen
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempel kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementatie {#implementation}
 
@@ -71,7 +71,7 @@ Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan e
 
 1. U kunt e-mailberichten verzenden via een SOAP-berichttrigger. In de SOAP-aanroep is er een URL-parameter (bijlageURL).
 
-   Voor meer informatie over de verzoeken van de ZEEP, zie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
+   Zie voor meer informatie over SOAP-aanvragen [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
 
 1. Klik tijdens het ontwerpen van uw e-mail op **[!UICONTROL Attachment]**.
 
