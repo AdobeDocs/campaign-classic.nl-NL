@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Versie 9032@99a3894 bevat de volgende oplossingen:
 * De functie voor het bijhouden van handtekeningen is verbeterd om fouten te voorkomen die gekoppeld zijn aan tools van derden (klant-e-mail, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
 * Probleem verholpen met datumpickers waardoor een console een foutbericht over een blokkering weergaf. (NEO-36345)
 
-### [!DNL Gold Standard] 11 release{#gs-11}
+### [!DNL Gold Standard] Release 11{#gs-11}
 
 [!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
@@ -87,7 +87,7 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
 
-### [!DNL Gold Standard] 10 release{#gs-10}
+### [!DNL Gold Standard] Release 10{#gs-10}
 
 [!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
@@ -101,7 +101,7 @@ Er is een probleem verholpen waarbij tracking niet werkte als de handtekeningfun
 >
 >Wij adviseren u de clientconsole bij te werken met de beschikbare console in deze release. Zie [deze pagina](../../installation/using/installing-the-client-console.md)
 
-### [!DNL Gold Standard] 9 release{#gs-9}
+### [!DNL Gold Standard] Release 9{#gs-9}
 
 [!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
