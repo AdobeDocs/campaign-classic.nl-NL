@@ -2,14 +2,15 @@
 product: campaign
 title: Een instantie maken en aanmelden
 description: Een instantie maken en aanmelden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '594'
 ht-degree: 5%
 
 ---
@@ -48,7 +49,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
    >
    >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]`, `[0-9]` en streepjes (-) of volledige stops.
 
-1. Klikken **[!UICONTROL Ok]** om de instellingen te bevestigen: U kunt nu beginnen met het maken van de instantie.
+1. Klikken **[!UICONTROL Ok]** om de instellingen te bevestigen: u kunt nu beginnen met het maken van de instantie.
 1. In de **[!UICONTROL Connection settings]** venster, voert u de **internal** en het bijbehorende wachtwoord om verbinding te maken met de Adobe Campaign-toepassingsserver. Nadat u verbinding hebt gemaakt, kunt u de wizard voor het maken van instanties gebruiken om een nieuwe instantie te declareren
 1. In de **[!UICONTROL Name]** veld, voert u de **instantienaam**. Aangezien deze naam wordt gebruikt om een configuratiedossier te produceren **config-`<instance>`.xml** en wordt gebruikt in de opdrachtregelparameters om de instantie te identificeren, controleert u of u een korte naam zonder speciale tekens kiest. Bijvoorbeeld: **eMarketing**.
 
@@ -58,13 +59,13 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
 1. In de **[!UICONTROL DNS masks]** velden, voert u de **lijst met DNS-maskers** waaraan de instantie moet worden toegevoegd. De Adobe Campaign-server gebruikt de hostnaam die in de HTTP-aanvragen wordt weergegeven om te bepalen welke instantie moet worden bereikt.
 
-   De hostnaam staat tussen de tekenreeks **https://** en de eerste schuine streep **/** van het serveradres.
+   De hostnaam bevindt zich tussen de tekenreeks **https://** en de eerste schuine streep **/** van het serveradres.
 
    U kunt een lijst met waarden definiëren, gescheiden door komma&#39;s.
 
    De ? en &#42; tekens kunnen worden gebruikt als jokertekens om een of meer tekens (DNS, poort, enz.) te vervangen. Bijvoorbeeld de **demo&#42;** value werkt met &quot;https://demo&quot; zoals met &quot;https://demo:8080&quot; en zelfs met &quot;https://demo2&quot;.
 
-   De gebruikte namen moeten in uw DNS worden bepaald. U kunt ook de correspondentie tussen een DNS-naam en een IP-adres in het dialoogvenster **c:/windows/system32/drivers/etc/hosts** in Windows en in het **/etc/hosts** in Linux. Daarom moet u de verbindingsmontages wijzigen om deze DNS naam te gebruiken om met uw gekozen instantie te verbinden.
+   De gebruikte namen moeten in uw DNS worden bepaald. U kunt ook de correspondentie tussen een DNS-naam en een IP-adres in de **c:/windows/system32/drivers/etc/hosts** in Windows en in het **/etc/hosts** in Linux. Daarom moet u de verbindingsmontages wijzigen om deze DNS naam te gebruiken om met uw gekozen instantie te verbinden.
 
    De server moet met deze naam worden geïdentificeerd, met name voor het uploaden van afbeeldingen in e-mails.
 
@@ -76,7 +77,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
    >[!CAUTION]
    >
-   >De instantietaal kan na deze stap niet meer worden gewijzigd. Adobe Campaign-instanties zijn niet meertalig: u kunt niet de interface van een taal aan een andere schakelen.
+   >De instantietaal kan na deze stap niet meer worden gewijzigd. Adobe Campaign-instanties zijn niet meertalig: u kunt de interface niet van taal naar taal schakelen.
 
 1. Klikken **[!UICONTROL Ok]** ter bevestiging van de instantieverklaring. Log uit en weer aan om de database te declareren.
 

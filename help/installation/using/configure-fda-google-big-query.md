@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot Google BigQuery configureren
 description: Leer hoe u toegang tot Google BigQuery configureert in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 2%
 Adobe Campaign Classic gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Google BigQuery].
 
 1. Configureren [!DNL Google BigQuery] op [Windows](#google-windows) of [Linux](#google-linux)
-1. Configureer de [!DNL Google BigQuery] [externe rekening](#google-external) in Adobe Campaign Classic
+1. Vorm [!DNL Google BigQuery] [externe rekening](#google-external) in Adobe Campaign Classic
 1. Instellen [!DNL Google BigQuery] bulkbelasting van connector aan [Windows](#bulk-load-windows) of [Linux](#bulk-load-linux)
 
 >[!NOTE]
@@ -40,21 +41,21 @@ Adobe Campaign Classic gebruiken **Federale gegevenstoegang** (FDA) om informati
 
 1. Voor de [!DNL Google BigQuery] -connector werkt, vereist Adobe Campaign Classic de volgende parameters om verbinding te maken:
 
-   * **[!UICONTROL Project]**: een bestaand project maken of gebruiken.
+   * **[!UICONTROL Project]**: maak of gebruik een bestaand project.
 
-      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     Raadpleeg deze voor meer informatie [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
-   * **[!UICONTROL Service account]**: Maak een serviceaccount.
+   * **[!UICONTROL Service account]**: maak een serviceaccount.
 
-      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
    * **[!UICONTROL Key File Path]**: de **[!UICONTROL Service account]** vereist een **[!UICONTROL Key File]** voor een [!DNL Google BigQuery] verbinding via ODBC.
 
-      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     Raadpleeg deze voor meer informatie [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
    * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** is optioneel voor een ODBC-verbinding. Aangezien elke vraag de dataset moet verstrekken waar de lijst wordt gevestigd, die a specificeren **[!UICONTROL Dataset]** is verplicht voor [!DNL Google BigQuery] FDA Connector in Adobe Campaign Classic.
 
-      Raadpleeg deze voor meer informatie [page](https://cloud.google.com/bigquery/docs/datasets).
+     Raadpleeg deze voor meer informatie [page](https://cloud.google.com/bigquery/docs/datasets).
 
 1. In Adobe Campaign Classic kunt u vervolgens uw [!DNL Google BigQuery] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#google-external).
 
@@ -62,7 +63,7 @@ Adobe Campaign Classic gebruiken **Federale gegevenstoegang** (FDA) om informati
 
 >[!NOTE]
 >
->Voor Google Cloud SDK moet Python zijn geïnstalleerd om te kunnen werken.
+>Voor Google Cloud SDK moet Python zijn geïnstalleerd om te werken.
 >
 >We raden u aan Python3 te gebruiken. Zie dit [page](https://www.python.org/downloads/).
 
@@ -94,35 +95,35 @@ Om te vormen [!DNL Google BigQuery] Voer in Linux de onderstaande stappen uit:
 
    * Voor Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Voor Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Systeem bijwerken vóór installatie:
 
    * Voor Red Hat/CentOS:
 
-      ```
-      # install unixODBC driver manager
-      yum install -y unixODBC
-      ```
+     ```
+     # install unixODBC driver manager
+     yum install -y unixODBC
+     ```
 
    * Voor Debian:
 
-      ```
-      # install unixODBC driver manager
-      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
-      ```
+     ```
+     # install unixODBC driver manager
+     apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+     ```
 
 1. Voordat u het script uitvoert, kunt u meer informatie opvragen door het —help-argument op te geven:
 
@@ -142,7 +143,7 @@ Om te vormen [!DNL Google BigQuery] Voer in Linux de onderstaande stappen uit:
 
 >[!NOTE]
 >
->Voor Google Cloud SDK moet Python zijn geïnstalleerd om te kunnen werken.
+>Voor Google Cloud SDK moet Python zijn geïnstalleerd om te werken.
 >
 >We raden u aan Python3 te gebruiken. Zie dit [page](https://www.python.org/downloads/).
 
@@ -152,19 +153,19 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt via
 
    * Voor Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y python3
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y python3
+     ```
 
    * Voor Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y python3
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y python3
+     ```
 
 1. Open de map waarin het script zich bevindt en voer het volgende script uit:
 
@@ -183,18 +184,19 @@ U moet een [!DNL Google BigQuery] externe account om uw Adobe Campaign Classic-e
 
 1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de [!DNL Google BigQuery] externe account, moet u opgeven:
+1. Vorm [!DNL Google BigQuery] externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
-   * **[!UICONTROL Service account]**: E-mail van uw **[!UICONTROL Service account]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+   * **[!UICONTROL Service account]**: E-mail met uw **[!UICONTROL Service account]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
    * **[!UICONTROL Project]**: Naam van uw **[!UICONTROL Project]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**: selecteren **[!UICONTROL Click here to upload]** als u ervoor kiest de toets te uploaden via Adobe Campaign Classic.
+      * **[!UICONTROL Upload key file to the server]**: select **[!UICONTROL Click here to upload]** als u ervoor kiest de toets te uploaden via Adobe Campaign Classic.
 
-      * **[!UICONTROL Enter manually the key file path]**: Kopieer/plak het absolute pad in dit veld als u een bestaande sleutel wilt gebruiken.
+      * **[!UICONTROL Enter manually the key file path]**: kopieer/plak het absolute pad in dit veld als u een bestaande sleutel wilt gebruiken.
+
    * **[!UICONTROL Dataset]**: Naam van uw **[!UICONTROL Dataset]**. Raadpleeg voor meer informatie hierover [Google Cloud-documentatie](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)

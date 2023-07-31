@@ -2,13 +2,14 @@
 product: campaign
 title: Responsbeheer
 description: Responsbeheer
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 5%
+source-wordcount: '418'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 
 
-Adobe Campaign biedt een add-on van het Beheer van de Reactie aan die u het succes en de rentabiliteit van marketing campagnes laat meten of voorstellen over communicatiekanalen aanbiedt: e-mail, mobiel, direct mail, enz.
+Adobe Campaign biedt een add-on voor responsbeheer waarmee u het succes en de winstgevendheid van marketingcampagnes kunt meten of voorstellen kunt bieden via communicatiekanalen: e-mail, mobiel, direct mail, enz.
 
 ## Hypothese {#hypothesis-concept}
 
@@ -28,11 +29,11 @@ Ook de **rapporten** voorzien van de Manager van de Reactie laat u toe om de inf
 
 Bovendien kunt u dankzij de detailregels voor aankopen uw hypothesen zo instellen dat deze zich bijvoorbeeld op één bepaald product concentreren.
 
-Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de daaruit voortvloeiende ontvangsten te bepalen als de som van deze begrotingslijnen.
+Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de resulterende ontvangsten te bepalen als de som van deze begrotingslijnen.
 
 >[!CAUTION]
 >
->Responsbeheer is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
+>Responsbeheer is een **[!UICONTROL Campaign]** -optie. Controleer hiervoor uw licentieovereenkomst.
 
 U kunt ook alle reacties berekenen voor het hele huishouden van de ontvanger die de levering of het aanbod heeft ontvangen.
 

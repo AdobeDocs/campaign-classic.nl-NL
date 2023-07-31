@@ -2,13 +2,13 @@
 product: campaign
 title: Problemen met tracking oplossen
 description: Deze sectie bevat veelgestelde vragen over het bijhouden van configuratie en implementatie in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Monitoring, Troubleshooting
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Mijn traceringsworkflow mislukt. Hoe kan ik de beschadigde regels in het trackin
 >
 >Alleen beschikbaar voor Windows
 
-Het beschadigde logbestand voor bijhouden../nl6/var/&lt;instance_name>/redir/log/0x0000 log kan de volgende workflow stoppen. Om bedorven lijnen gemakkelijk te ontdekken en hen te verwijderen om het volgen werkschema te hervatten, kunt u de hieronder bevelen gebruiken.
+Het beschadigde logbestand voor bijhouden van gegevens../nl6/var/&lt;instance_name>/redir/log/0x0000 log kan de volgende workflow stoppen. Om bedorven lijnen gemakkelijk te ontdekken en hen te verwijderen om het volgen werkschema te hervatten, kunt u de hieronder bevelen gebruiken.
 
 ### Ik weet in welk bestand de beschadigde regel staat
 
@@ -60,7 +60,7 @@ Vervolgens kunt u de workflow voor het bijhouden van wijzigingen stoppen, de bes
    >
    >Regeleinde is toegevoegd vóór gebruikersagent voor een betere leesbaarheid en geeft geen effectieve rendering aan.
 
-1. Voer een grep-opdracht uit om het bijbehorende bestand te zoeken.
+1. Voer een grep-opdracht uit om het corresponderende bestand te zoeken.
 
 ```
 $ grep -Rn <Log Id>
@@ -104,19 +104,19 @@ Wanneer u probeert toegang te krijgen tot de trackingkoppelingen, wordt het volg
    </redirection>
    ```
 
-1. Handmatig controleren of de &lt;deliveryid>.xml-bestand staat op de computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> directory (YYYY staat voor het leveringsjaar).
+1. Handmatig controleren of de &lt;deliveryid>Het .xml-bestand bevindt zich op de computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> directory (YYYY staat voor het leveringsjaar).
 
 1. Handmatig controleren &lt;trackingurlid> kunt u vinden in het dialoogvenster &lt;deliveryid>.xml-bestand.
 
 1. Controleer manueel bestaan van broadlogID in verwante levering van deliveryID.
 
-1. Controleren &lt;deliveryid>Machtigingen .xml-bestanden in .../nl6/var/&lt;instance_name>/redir/url/year directory.
+1. Controleren &lt;deliveryid>.xml files permissions in .../nl6/var/&lt;instance_name>/redir/url/year directory.
 
    Ze moeten minimaal 644 machtigingen hebben, zodat Apache URL&#39;s kan lezen die volgen om de aangevraagde koppeling om te leiden.
 
 ## De optie NmsTracking_Pointer bijwerken? {#updating-option}
 
-Voer de volgende stappen uit wanneer u de optie NmsTracking_Pointer bijwerkt:
+Ga als volgt te werk wanneer u de optie NmsTracking_Pointer bijwerkt:
 
 1. Stop de workflow voor bijhouden.
 
@@ -140,24 +140,24 @@ Dit soort extra linefeed-teken in de URL voor bijhouden leidt tot publicatie in 
 
 * Onjuiste syntaxis
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>
-   &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>
+  &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 * Correcte syntaxis
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 Om te begrijpen waar de extra linefeed is kunt u de uitdrukking van JavaScript door een vaste koordSTRING vervangen.
 
@@ -174,26 +174,26 @@ STRING1&cid=STRING2&bid=STRING3
 
 * Onjuiste syntaxis
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %>
-   <% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %>
+  <% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 * Correcte syntaxis
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 Om te begrijpen waar de extra linefeed is kunt u de uitdrukking van JavaScript door een vaste koordSTRING vervangen.
 
@@ -209,7 +209,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 Wanneer de instantie niet direct het volgen logboeken maar van een verre server van Adobe Campaign Classic terugwint, worden de logboeken teruggewonnen door de vraag van de ZEEP GetTrackingLogs die in het remoteTracking schema wordt bepaald.
 
-Met een optie in het bestand serverConf.xml kunt u het aantal logbestanden instellen dat tegelijk met deze methode wordt opgehaald: logCountPerRequest.
+Met een optie in het bestand serverConf.xml kunt u het aantal logbestanden instellen dat tegelijk wordt opgehaald met deze methode: logCountPerRequest.
 
 De standaardwaarde van logCountPerRequest die 1000 is, kan het in sommige gevallen te klein blijken te zijn. De toegestane waarden moeten tussen 0 en 10.000 liggen.
 
@@ -223,6 +223,6 @@ Het is niet mogelijk om veelvoudige het richten schema&#39;s met het zelfde trac
 
 Als u niet de out-of-the-box doelafbeelding met nms wilt gebruiken:ontvanger, adviseren wij de volgende benaderingen:
 
-* Als u een aangepaste dimensie voor het toewijzen van doelen wilt gebruiken, moet u een aangepast breedLog/trackinglogschema maken met nms:broadlog als sjabloon (bijvoorbeeld nms:wideLogRcp, nms:wideLogSvc, enz.).
+* Als u een aangepaste dimensie voor het toewijzen van doelen wilt gebruiken, moet u een aangepast breedLog/trackingLog-schema maken met nms:broadlog als sjabloon (bijvoorbeeld nms:wideLogRcp, nms:wideLogSvc, enz.).
 
 * Als u OOB trackingLogRcp/wideLogRcp wilt gebruiken, moet de het richten dimensie nms zijn:ontvanger en het filtreren dimensie zou een douaneschema kunnen zijn.

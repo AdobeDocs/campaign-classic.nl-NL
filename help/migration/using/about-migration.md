@@ -2,16 +2,17 @@
 product: campaign
 title: Migratie naar Campaign Classic
 description: Leer hoe u van een vorige campagneversie naar Campaign Classic migreert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-overview
 hide: true
 hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -38,7 +39,7 @@ De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorg
 * Als u Adobe Campaign Cloud Messaging (mid-sourcing implementatie) gebruikt, neemt u contact op met de klantenservice van de Adobe voordat u begint.
 * Voordat u een migratieproces start, **moet** Maak een back-up van uw gegevens.
 * Het migratieproces kan enkele dagen duren.
-* Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en de gegevensintegriteit in de database te behouden . Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
+* Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en gegevensintegriteit in de database te behouden. Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
 
 Meer voorwaarden zijn beschikbaar in [deze pagina](../../migration/using/before-starting-migration.md).
 
@@ -58,9 +59,9 @@ De algemene procedure voor migratie naar Adobe Campaign v7 wordt beschreven in [
 
 ## Specifieke configuraties {#specific-configurations}
 
-Door de wijzigingen die Adobe Campaign v7 aanbrengt, moet u mogelijk ook bepaalde specifieke configuraties aanpassen die in eerdere versies zijn ontwikkeld. Daarom kan het noodzakelijk zijn om een controle op al uw configuraties vóór de migratie uit te voeren: Neem contact op met Adobe Campaign voor hulp.
+Door de wijzigingen die Adobe Campaign v7 aanbrengt, moet u mogelijk ook bepaalde specifieke configuraties aanpassen die in eerdere versies zijn ontwikkeld. Daarom kan het nodig zijn om een controle uit te voeren op al uw configuraties vóór de migratie: neem contact op met Adobe Campaign voor hulp.
 
 Bijvoorbeeld, zou de bijzondere aandacht aan specifieke montages voor de toepassingen van het Web, schemauitbreidingen met SQLdata of uit-van-de-doos schemakolonering moeten worden besteed. Raadpleeg [deze sectie](../../migration/using/configuring-your-platform.md) voor meer informatie.
 
-Om te reageren op de toegenomen veiligheid in Adobe Campaign zijn ook enkele interne mechanismen gewijzigd: u moet deze configuraties dienovereenkomstig aanpassen.
+Om te kunnen reageren op de verhoogde veiligheid in Adobe Campaign zijn enkele interne mechanismen gewijzigd: u moet deze configuraties dienovereenkomstig aanpassen.
 

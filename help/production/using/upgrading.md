@@ -2,20 +2,21 @@
 product: campaign
 title: Upgraden naar een nieuwe build
 description: Leer technische stappen om aan een nieuwe bouwstijl te bevorderen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 2%
+source-wordcount: '1170'
+ht-degree: 3%
 
 ---
 
-# Upgraden naar een nieuwe build (on-premise){#upgrading}
+# Upgraden naar een nieuwe build (op locatie){#upgrading}
 
 
 
@@ -28,7 +29,6 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 >* Uitlezen [deze sectie](../../installation/using/general-architecture.md) en de [upgrade voor build](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk voordat u begint.
 >
 
-
 ## Windows {#in-windows}
 
 Voor een Windows-omgeving voert u de onderstaande stappen uit om Adobe Campaign bij te werken naar een nieuwe build:
@@ -38,7 +38,7 @@ Voor een Windows-omgeving voert u de onderstaande stappen uit om Adobe Campaign 
 * [Bronnen synchroniseren](#synchronize-resources),
 * [Herstartservices](#restart-services).
 
-Als u wilt weten hoe u de clientconsole kunt bijwerken, raadpleegt u [deze sectie](../../installation/using/client-console-availability-for-windows.md).
+Raadpleeg voor informatie over het bijwerken van de clientconsole [deze sectie](../../installation/using/client-console-availability-for-windows.md).
 
 ### Afsluiten van services {#shut-down-services}
 
@@ -48,12 +48,13 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
    * Webservices (IIS):
 
-      **iisreset /stop**
+     **iisreset /stop**
 
    * Adobe Campaign-service: **netstop nlserver6**
+
    >[!IMPORTANT]
    >
-   >U moet er ook voor zorgen dat de omleidingsserver (webmdl) wordt gestopt, zodat de **nlsrvmod.dll** bestand dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
+   >U moet er ook voor zorgen dat de omleidingsserver (webmdl) wordt gestopt, zodat **nlsrvmod.dll** bestand dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
 
 1. Controleer of er geen taken actief zijn door het dialoogvenster **nlserver pdump** gebruiken. Het volgende moet naar voren komen:
 
@@ -63,7 +64,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
    No tasks
    ```
 
-   U kunt de Manager van de Taak van Vensters gebruiken om ervoor te zorgen alle processen worden tegengehouden.
+   U kunt Windows Taakbeheer gebruiken om ervoor te zorgen dat alle processen worden gestopt.
 
 ### De Adobe Campaign-servertoepassing upgraden {#upgrade-the-adobe-campaign-server-application}
 
@@ -71,15 +72,15 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Uitvoeren **setup.exe**.
 
-   Als u dit bestand wilt downloaden, maakt u verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+   Maak verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
-1. Selecteer de installatiemodus: kiezen **[!UICONTROL Update or repair]**
+1. Selecteer de installatiemodus: kies **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
 1. Klik op **[!UICONTROL Finish]** .
 
    Het installatieprogramma kopieert vervolgens de nieuwe bestanden.
 
-1. Als de bewerking is voltooid, klikt u op **[!UICONTROL Finish]** .
+1. Klik op **[!UICONTROL Finish]** .
 
 ### Bronnen synchroniseren {#synchronize-resources}
 
@@ -101,11 +102,11 @@ Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegene
 
 ### Herstartservices {#restart-services}
 
-De volgende diensten moeten opnieuw worden opgestart:
+De diensten die opnieuw moeten worden opgestart zijn:
 
 * Webservices (IIS):
 
-   **iisreset /start**
+  **iisreset /start**
 
 * Adobe Campaign-service: **netwerkbeginserver6**
 
@@ -125,7 +126,7 @@ Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bi
 
 ### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: verbinden met [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: maak verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 
@@ -133,27 +134,27 @@ Het bestand is **nlserver6-v7-XXX.rpm**
 
 * RPM-gebaseerde distributie (RedHat, SuSe)
 
-   Als u deze wilt installeren, voert u uit als hoofdmap:
+  Als u deze wilt installeren, voert u uit als hoofdmap:
 
-   ```
-   $rpm -Uvh nlserver6-v7-XXXX.rpm
-   ```
+  ```
+  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  ```
 
-   Hierbij is XXX de versie van het bestand.
+  Hierbij is XXX de versie van het bestand.
 
-   Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken, kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
+  Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken, kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
 
-   ```
-   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-   ```
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
 
 * DEB-distributie (Debian)
 
-   Als u deze wilt installeren, voert u uit als hoofdmap:
+  Als u deze wilt installeren, voert u uit als hoofdmap:
 
-   ```
-   dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
-   ```
+  ```
+  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  ```
 
 >[!NOTE]
 >
@@ -171,12 +172,10 @@ Hiervoor voert u de volgende opdracht uit:
 
 >[!IMPORTANT]
 >
->* Uw script wordt mogelijk aangeroepen **httpd** in plaats van **apathie**.
+>* Uw script wordt mogelijk aangeroepen **httpd** in plaats van **pijn**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
-
-   >
-   >   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
-
+>
+>   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
 
 Start vervolgens Apache opnieuw:
 
@@ -194,16 +193,16 @@ Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
 * In de bevel-lijn interface, worden de fouten geconcretiseerd door een drievoudig chevron **>>>** en synchronisatie wordt automatisch gestopt. Waarschuwingen worden geconcretiseerd door een dubbele chevron **>>** en moet worden opgelost zodra de synchronisatie is voltooid. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Het kan er als volgt uitzien:
 
-   ```
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de gebruiker vereist om het op te lossen.
+  Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de gebruiker vereist om het op te lossen.
 
 * De **postupgrade_`<server version number>_<time of postupgrade>`.log** het logboekdossier bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **`<installation directory>/var/<instance/postupgrade`**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
 
@@ -216,13 +215,13 @@ Pas het volgende proces toe om conflicten op te lossen:
 
 Er zijn drie manieren om een conflict op te lossen:
 
-* **[!UICONTROL Declare as resolved]** : moet vooraf door de gebruiker worden ingeschakeld.
-* **[!UICONTROL Accept the new version]** : aanbevolen als de gebruiker de bronnen die bij Adobe Campaign worden geleverd, niet heeft gewijzigd.
+* **[!UICONTROL Declare as resolved]** : vereist vooraf tussenkomst van de gebruiker.
+* **[!UICONTROL Accept the new version]** : aanbevolen als de bronnen die bij Adobe Campaign worden geleverd, niet door de gebruiker zijn gewijzigd.
 * **[!UICONTROL Keep the current version]** : betekent dat de bijwerking wordt afgewezen.
 
-   >[!IMPORTANT]
-   >
-   >Als u deze resolutiemodus selecteert, kunt u geen baat hebben bij correcties in de nieuwe versie.
+  >[!IMPORTANT]
+  >
+  >Als u deze resolutiemodus selecteert, kunt u geen baat hebben bij correcties in de nieuwe versie.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
@@ -235,7 +234,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
    ![](assets/s_ncs_production_conflict003.png)
 
 1. Ga naar het conflict dat u hebt opgelost. Klik op de knop **[!UICONTROL Actions]** pictogram en selecteer **[!UICONTROL Declare as resolved]** .
-1. Sla uw wijzigingen op: het conflict is nu opgelost .
+1. Sla uw wijzigingen op: het conflict is nu opgelost.
 
 ### Best practices {#best-practices}
 

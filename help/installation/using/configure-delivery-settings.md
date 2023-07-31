@@ -2,16 +2,17 @@
 product: campaign
 title: Configuratie van de instellingen voor de levering van campagnes
 description: Leer hoe u instellingen voor de levering van campagnes configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Channel Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
@@ -23,17 +24,17 @@ De leveringsparameters moeten in worden gevormd **serverConf.xml** map.
 
 * **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van worden gemaakt **`<dnsconfig>`** en.
 
-   >[!NOTE]
-   >
-   >De **nameServers** parameter is essentieel voor een installatie in Windows. Voor een installatie in Linux, moet het leeg worden verlaten.
+  >[!NOTE]
+  >
+  >De **nameServers** parameter is essentieel voor een installatie in Windows. Voor een installatie in Linux, moet het leeg worden verlaten.
 
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
+  ```
+  <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+  ```
 
-Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuraties uitvoeren: configureren [SMTP-relais](#smtp-relay)wijzigt u het aantal [MTA onderliggende processen](#mta-child-processes), [Uitgaande SMTP-verkeer beheren](#managing-outbound-smtp-traffic-with-affinities).
+U kunt de volgende configuraties afhankelijk van uw behoeften en montages ook uitvoeren: vorm een [SMTP-relay](#smtp-relay)wijzigt u het aantal [MTA onderliggende processen](#mta-child-processes), [Uitgaande SMTP-verkeer beheren](#managing-outbound-smtp-traffic-with-affinities).
 
-## SMTP-relais {#smtp-relay}
+## SMTP-relay {#smtp-relay}
 
 De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzending SMTP (haven 25).
 
@@ -51,7 +52,7 @@ In dit geval worden deze parameters geplaatst door de server SMTP in te vormen *
 
 ## MTA onderliggende processen {#mta-child-processes}
 
-Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendingsprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in **`<master>`** sectie van MTA configuratie op elke individuele computer.
+Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in **`<master>`** sectie van MTA configuratie op elke individuele computer.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -71,7 +72,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Voer de affiniteiten in het dialoogvenster **`<ipaffinity>`** van de **serverConf.xml** bestand.
 
-   Een affiniteit kan verschillende namen hebben: om ze te scheiden, gebruikt u de **;** teken.
+   Een affiniteit kan verschillende namen hebben: gebruik de **;** teken.
 
    Voorbeeld:
 
@@ -80,7 +81,7 @@ Hiervoor voert u de volgende stappen uit:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Als u de relevante parameters wilt bekijken, raadpleegt u de **serverConf.xml** bestand.
+   Raadpleeg de **serverConf.xml** bestand.
 
 1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in het dialoogvenster **IPAffinity** opsomming.
 

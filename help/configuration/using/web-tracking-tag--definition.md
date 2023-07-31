@@ -2,11 +2,12 @@
 product: campaign
 title: Tag voor webspatiëring definiëren
 description: Tag voor webspatiëring definiëren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -55,18 +56,18 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>Permanent cookie</p> 
                            </td>
                            <td>
-                              <p>Ontvanger-id (nuttig als het sessiecookie afwezig is).</p> 
+                              <p>Ontvanger-id (nuttig als het sessiecookie ontbreekt).</p> 
                            </td> 
                         </tr>
                         <tr>
                            <td>
-                              <p>tagid</p> 
+                              <p>gelabeld</p> 
                            </td>
                            <td>
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Id van bijgehouden webpagina: dit is de enige verplichte parameter .</p> 
+                              <p>Id van bijgehouden webpagina: dit is de enige verplichte parameter.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -89,7 +90,7 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter die wordt gebruikt om de internetgebruiker te identificeren. De indeling van deze parameter is "name=value", waarbij de naam een veld is van het ontvangende schema. Deze parameter heeft voorrang op het herkenningsteken in het zittingskoekje.
+                              <p>Parameter gebruikt om de internetgebruiker te identificeren. De indeling van deze parameter is "name=value", waarbij de naam een veld is van het ontvangende schema. Deze parameter heeft voorrang op het herkenningsteken in het zittingskoekje.
                               </p> 
                            </td> 
                         </tr> 
@@ -100,23 +101,23 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
 
 * Bezoek naar een homepage met id&#39;s
 
-   **https://myserver.adobe.com/r/9862?tagid=home**
+  **https://myserver.adobe.com/r/9862?tagid=home**
 
 * Gegevens over bedrijfsvolumes verzamelen
 
-   **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Veld opgeven om ontvanger te zoeken
 
-   **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Een ontvanger van wie het rekeningnummer 10 is, wordt naar de homepage verzonden.
+  Een ontvanger van wie het rekeningnummer 10 is, wordt naar de homepage verzonden.
 
 * Een standaardlevering gebruiken
 
-   **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Een ontvanger wordt verzonden naar de homepage. Deze informatie zal in de levering met herkenningsteken 230 (e6 in gegevensbestand 16) worden opgeslagen tenzij een zittingskoekje die een leveringsherkenningsteken bevat met deze vraag wordt verzonden.
+  Een ontvanger wordt verzonden naar de homepage. Deze informatie zal in de levering met herkenningsteken 230 (e6 in gegevensbestand 16) worden opgeslagen tenzij een zittingskoekje die een leveringsherkenningsteken bevat met deze vraag wordt verzonden.
 
 >[!NOTE]
 >

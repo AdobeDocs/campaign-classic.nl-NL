@@ -2,15 +2,16 @@
 product: campaign
 title: Problemen met de pijplijn oplossen
 description: Problemen met de pijplijn oplossen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 1%
+source-wordcount: '717'
+ht-degree: 2%
 
 ---
 
@@ -43,8 +44,8 @@ De configuratie van de organisatie-id is ongeldig.
 De parameter @authPrivateKey van het instance config-bestand is onjuist.
 
 1. Controleer of de authPrivateKey is ingesteld.
-1. Controleer of de authPrivateKey: begint met @, eindigt met = en is ongeveer 4000 tekens lang.
-1. Zoek de originele sleutel en controleer of deze: in RSA formaat, 4096 beetjes lang, en begint met `-----BEGIN RSA PRIVATE KEY-----`.
+1. Controleer of de authPrivateKey: begint met @, eindigt met = en ongeveer 4000 tekens lang is.
+1. Zoek naar de originele sleutel en controleer dat het is: in formaat RSA, 4096 beetjes lang, en begint met `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Maak de sleutel zo nodig opnieuw en registreer deze op Adobe Analytics.
 1. Controleer of de sleutel is gecodeerd binnen dezelfde instantie als [!DNL pipelined]. <br>Voer zo nodig de codering opnieuw uit met behulp van het voorbeeld JavaScript of de workflow.
 
@@ -79,7 +80,7 @@ Wanneer de [!DNL pipelined] proces wordt uitgevoerd en er worden geen triggers o
 1. Zorg ervoor dat de [!DNL pipelined] -proces wordt uitgevoerd.
 1. Zoek naar fouten in [!DNL pipelined] log.
 1. Zoek naar fouten in [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
-1. Controleer of de triggernaam is geconfigureerd in het dialoogvenster **[!UICONTROL NmsPipeline_Config]** optie. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
+1. Controleer of de triggernaam is geconfigureerd in het dialoogvenster **[!UICONTROL NmsPipeline_Config]** -optie. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
 1. Controleer of Analytics een actieve trigger heeft en gebeurtenissen genereert. Er kan een vertraging van een paar uur optreden nadat de configuratie is gemaakt in Analytics voordat deze actief is.
 
 **Gebeurtenissen zijn niet gekoppeld aan een klant**
@@ -102,8 +103,8 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 1. Controleer de [!DNL pipelined] statuspagina voor de grootte van de wachtrij. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te stijgen, vorm de trekkers op Analytics gebruikend minder berichten.
 
-**Werkgebiedinstanties upgraden van verouderde verificatie naar Adobe IO-verificatie**
+**Werkgebiedinstanties upgraden van verouderde verificatie naar Adobe-IO-verificatie**
 
 Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om uw werkgebiedinstantie te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor uw werkgebiedinstantie te testen.
 
-Uw productie-instantie blijft de verouderde verificatie gebruiken en wordt door deze wijziging niet beïnvloed.
+Uw productie-instantie zal de oudere verificatie blijven gebruiken en deze wijziging heeft geen invloed op deze instantie.

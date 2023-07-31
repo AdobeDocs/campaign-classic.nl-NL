@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Navigatiestructuur van Campagne Explorer configureren
+feature: Application Settings
 description: Leer hoe te om de boomstructuur van de Navigatie van de Ontdekkingsreiziger van de Campagne te vormen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1203'
 ht-degree: 1%
 
 ---
@@ -80,9 +81,9 @@ De beschrijving van een algemene opdracht is ingevoerd in het dialoogvenster **`
 
 * **name**: interne naam van de opdracht: de naam moet worden ingevoerd en uniek zijn
 * **label**: label van de opdracht.
-* **desc**: een beschrijving die zichtbaar is op de statusbalk van het hoofdscherm.
-* **formulier**: te lanceren formulier: de in te voeren waarde is de identificatiecode van het invoerformulier (bv. &quot;cus:ontvanger&quot;)
-* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten kan worden geraadpleegd op **[!UICONTROL Administration > Access management > Named rights]** map.
+* **desc**: beschrijving zichtbaar vanaf de statusbalk van het hoofdscherm.
+* **formulier**: formulier dat moet worden gestart: de in te voeren waarde is de identificatiesleutel van het invoerformulier (bijv. &quot;cus:receiving&quot;)
+* **rechten**: lijst met benoemde rechten (gescheiden door een komma) voor toegang tot deze opdracht. De lijst met beschikbare rechten kan worden geraadpleegd op **[!UICONTROL Administration > Access management > Named rights]** map.
 * **promptLabel**: geeft een bevestigingsvak weer voordat de opdracht wordt uitgevoerd.
 
 A **`<command>`** element kan bevatten **`<command>`** subelementen. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
@@ -91,43 +92,43 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt door de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Raadpleeg voor meer informatie over de SOAP API [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De facultatieve aanwezigheid van de **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Raadpleeg voor meer informatie over de SOAP API [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
-De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** tag. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
+De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** -tag. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 
 **Voorbeeld**:
 
-* Declaratie van een algemene opdracht voor het starten van het formulier &quot;xtk:import&quot;:
+* Verklaring van een algemene opdracht om het formulier &quot;xtk:import&quot; te starten:
 
-   ```
-   <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
-   ```
+  ```
+  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  ```
 
-   Een sneltoets wordt op het teken &#39;I&#39; gedeclareerd door de aanwezigheid van **&amp;** in het opdrachtlabel.
+  Een sneltoets wordt op het teken I gedeclareerd door de aanwezigheid van **&amp;** in het opdrachtlabel.
 
 * Voorbeeld van een submenu met een scheidingsteken:
 
-   ![](assets/d_ncs_integration_navigation_exemple1.png)
+  ![](assets/d_ncs_integration_navigation_exemple1.png)
 
-   ```
-   <command label="Administration" name="admin">
-     <command name="cmd1" label="Example 1" form="cus:example1"/>
-     <command name="sep" label="-"/>
-     <command name="cmd1" label="Example 2" form="cus:example2">
-       <enter>
-         <set xpath="@type" expr="1"/>
-       </enter>
-     </command>
-   </command>
-   ```
+  ```
+  <command label="Administration" name="admin">
+    <command name="cmd1" label="Example 1" form="cus:example1"/>
+    <command name="sep" label="-"/>
+    <command name="cmd1" label="Example 2" form="cus:example2">
+      <enter>
+        <set xpath="@type" expr="1"/>
+      </enter>
+    </command>
+  </command>
+  ```
 
 * Uitvoering van een SOAP-methode:
 
-   ```
-   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
-     <soapCall name="Execute" service="xtk:sql"/>
-   </command>
-   ```
+  ```
+  <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
+    <soapCall name="Execute" service="xtk:sql"/>
+  </command>
+  ```
 
 ## Maptype {#folder-type}
 
@@ -160,7 +161,7 @@ De **name** en **label** de kenmerken vullen de interne naam van het element en 
 De **`<nodemodel>`** element bevat de beschrijving van het omslagtype met de volgende eigenschappen:
 
 * **name**: interne naam
-* **label**: in het **[!UICONTROL Add new folder]** en als standaardlabel bij het invoegen van een map.
+* **label**: label dat wordt gebruikt in de **[!UICONTROL Add new folder]** en als standaardlabel bij het invoegen van een map.
 * **img**: standaardafbeelding bij het invoegen van de map.
 * **hiddenCommands**: lijst met opdrachten (gescheiden door een komma) die moeten worden gemaskeerd. Mogelijke waarden: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; en &quot;adbdup&quot;.
 * **newFolderShortCuts**: lijst met sneltoetsen voor modellen (**`<nodemodel>`** gescheiden door een komma) in het maken van mappen.
@@ -170,10 +171,10 @@ De **`<view>`** element onder de **`<nodemodel>`** -element bevat de configurati
 
 Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier met dezelfde naam als het lijstschema gebruikt. De **type** kenmerk op de **`<view>`** Het element is van invloed op de weergave van het formulier. Mogelijke waarden zijn:
 
-* **keuzelijst**: Hiermee geeft u het formulier onder aan de lijst weer.
+* **keuzelijst**: geeft het formulier onder aan de lijst weer.
 * **list**: geeft alleen de lijst weer. Het formulier wordt gestart door te dubbelklikken of door te klikken op Openen in het menu om de lijst te selecteren.
 * **formulier**: geeft een alleen-lezen formulier weer.
-* **editForm**: Hiermee geeft u een formulier weer in de bewerkingsmodus.
+* **editForm**: geeft een formulier weer in de bewerkingsmodus.
 
 >[!NOTE]
 >
@@ -181,7 +182,7 @@ Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier
 
 De standaardconfiguratie van de lijstkolommen is ingegaan via **`<columns>`** element. Een kolom wordt gedeclareerd op een **`<node>`** element met het **xpath** kenmerk met het veld waarnaar in het schema moet worden verwezen als waarde.
 
-**Voorbeeld**: verklaring van een omslagtype op het &quot;nms:ontvanger&quot;schema.
+**Voorbeeld**: declaratie van een maptype in het schema &quot;nms:ontvanger&quot;.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -247,14 +248,14 @@ De structuur van de bevelconfiguratie is als volgt:
 
 De beschrijving van een opdracht is ingevoerd in het dialoogvenster **`<command>`** element met de volgende eigenschappen:
 
-* **name**: interne naam van de opdracht: de naam moet worden ingevoerd en uniek zijn.
+* **name**: interne naam van de opdracht: u moet een unieke naam invoeren.
 * **label**: label van de opdracht.
-* **desc**: een beschrijving die zichtbaar is op de statusbalk van het hoofdscherm.
-* **formulier**: te lanceren formulier: de in te voeren waarde is de identificatiecode van het invoerformulier (bv. &quot;cus:ontvanger&quot;).
-* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten kan worden geraadpleegd op **[!UICONTROL Administration > Access management > Named rights]** map.
+* **desc**: beschrijving zichtbaar vanaf de statusbalk van het hoofdscherm.
+* **formulier**: formulier dat moet worden gestart: de in te voeren waarde is de identificatiesleutel van het invoerformulier (bv. &quot;cus:receiving&quot;).
+* **rechten**: lijst met benoemde rechten (gescheiden door een komma) voor toegang tot deze opdracht. De lijst met beschikbare rechten kan worden geraadpleegd op **[!UICONTROL Administration > Access management > Named rights]** map.
 * **promptLabel**: geeft een bevestigingsvak weer voordat de opdracht wordt uitgevoerd
-* **monoSelection**: Hiermee wordt monoselectie geforceerd (standaard meerdere selecties).
-* **refreshView**: dwingt het opnieuw laden van de lijst na uitvoering van het bevel.
+* **monoSelection**: forceert monoselectie (standaard meerdere selecties).
+* **refreshView**: forceert het opnieuw laden van de lijst na uitvoering van de opdracht.
 * **enabledIf**: activeert de opdracht afhankelijk van de ingevoerde expressie.
 * **img**: voert een afbeelding in die toegang geeft tot de opdracht via de lijstwerkbalk.
 
@@ -264,9 +265,9 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt door de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor meer informatie over SOAP API&#39;s raadpleegt u [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De facultatieve aanwezigheid van de **`<soapcall>`** -tag met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor meer informatie over SOAP API&#39;s raadpleegt u [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
-De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** tag. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
+De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`** -tag. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 
 **Voorbeeld**:
 
@@ -289,7 +290,7 @@ De formuliercontext kan bij initialisatie worden bijgewerkt via de **`<enter>`**
 
 Er zijn twee typen bewerkingen voor mapbeheer:
 
-1. De map is een weergave: in de lijst worden alle records weergegeven die aan het schema zijn gekoppeld, met de mogelijkheid om het systeem te filteren dat in de mapeigenschappen is ingevoerd.
+1. De map is een weergave: in de lijst worden alle records weergegeven die aan het schema zijn gekoppeld, met de mogelijkheid van systeemfiltering die in de mapeigenschappen is ingevoerd.
 1. De map is gekoppeld: de records in de lijst worden impliciet gefilterd op de mapkoppeling.
 
 Voor een gekoppelde map **folderLink** kenmerk op de **`<nodemodel>`** element moet worden gevuld. Dit kenmerk bevat de naam van de koppeling in de map die in het gegevensschema is geconfigureerd.

@@ -2,16 +2,17 @@
 product: campaign
 title: Problemen met IMS oplossen
 description: Problemen met IMS oplossen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 1%
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 
@@ -23,10 +24,10 @@ De volgende tips voor het oplossen van problemen helpen **op locatie** klanten l
 
 **Externe account**
 
-Alleen **één** externe account met de volgende instellingen:
+Er mag alleen **één** externe account met de volgende instellingen:
 
 * **Interne naam**: Adobe_Marketing_Cloud
-* **Type**: Adobe Marketing Cloud
+* **Type**: ADOBE MARKETING CLOUD
 
 Verwijder gedupliceerde externe accounts die dezelfde instellingen hebben.
 
@@ -69,18 +70,18 @@ Controleer of het ingevoerde clientgeheim juist is.
 
 **De server opnieuw starten**
 
-Start de server opnieuw als er wijzigingen zijn aangebracht in de bovenstaande instellingen in de externe account van Campagne
+Start de server opnieuw als er wijzigingen zijn aangebracht in de bovenstaande instellingen in de externe account voor campagne
 
-**Veelvoorkomende fouttypen en mogelijke oplossingen**
+**Algemene fouttypen en mogelijke oplossingen**
 
-* De gebruiker wordt omgeleid naar de pagina adobe.com:
+* Gebruiker wordt omgeleid naar adobe.com-pagina:
 
-   Er is een probleem met de **[!UICONTROL Callback URL]**. Raadpleeg de vorige stappen om het dialoogvenster **[!UICONTROL Callback URL]** configuratie.
+  Er is een probleem met de **[!UICONTROL Callback URL]**. Raadpleeg de vorige stappen om het dialoogvenster **[!UICONTROL Callback URL]** configuratie.
 
 * Bericht &quot;Login heeft geen recht dat de uitdrukking&quot;aanpast:
 
-   Raadpleeg de vorige stappen om het dialoogvenster **[!UICONTROL Association Mask]** en configuratie van groepen met operatoren.
+  Raadpleeg de vorige stappen om het dialoogvenster **[!UICONTROL Association Mask]** en configuratie van groepen met operatoren.
 
 * De gebruiker heeft geen toegang tot de Adobe ID-aanmeldingspagina:
 
-   Verwijs naar de vorige stappen om de werkingsgebiedconfiguratie te controleren.
+  Verwijs naar de vorige stappen om de werkingsgebiedconfiguratie te controleren.

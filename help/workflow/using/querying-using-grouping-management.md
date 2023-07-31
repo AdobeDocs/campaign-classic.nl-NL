@@ -2,12 +2,12 @@
 product: campaign
 title: Een query uitvoeren met behulp van groeperingsbeheer
 description: Leer hoe u query's uitvoert met behulp van groeperingsbeheer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 4%
 
 ---
@@ -20,15 +20,15 @@ In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken 
 
 * Welke tabel moet worden geselecteerd?
 
-   De tabel met ontvangers (nms:ontvanger)
+  De tabel met ontvangers (nms:ontvanger)
 
 * Velden die moeten worden geselecteerd in uitvoerkolommen?
 
-   E-maildomein en primaire sleutel (met aantal)
+  E-maildomein en primaire sleutel (met aantal)
 
 * Gegevensgroepering?
 
-   Gebaseerd op e-maildomein met een aantal primaire sleutels boven 30. Deze bewerking wordt uitgevoerd met de **[!UICONTROL Group by + Having]** optie. **[!UICONTROL Group by + Having]** Hiermee kunt u gegevens groeperen (&quot;groeperen door&quot;) en een selectie maken van gegroepeerde objecten (&quot;hebben&quot;).
+  Gebaseerd op e-maildomein met een aantal primaire sleutels boven 30. Deze bewerking wordt uitgevoerd met de **[!UICONTROL Group by + Having]** -optie. **[!UICONTROL Group by + Having]** Hiermee kunt u gegevens groeperen (&quot;groeperen door&quot;) en een selectie maken van gegroepeerde objecten (&quot;hebben&quot;).
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
@@ -38,7 +38,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
 1. In de **[!UICONTROL Data to extract]** venster, selecteert u de **[!UICONTROL Email domain]** en **[!UICONTROL Primary key]** velden. Een telling uitvoeren op de **[!UICONTROL Primary key]** veld.
 
-   Voor meer informatie over primaire sleutelaantallen, verwijs naar [deze sectie](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Raadpleeg voor meer informatie over primaire sleutels de [deze sectie](../../platform/using/defining-filter-conditions.md#building-expressions).
 
 1. Controleer de **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** doos.
 
@@ -57,11 +57,11 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
 1. In de **[!UICONTROL Grouping condition]** Geef een aantal primaire sleutels op dat groter is dan 30, omdat we alleen willen dat e-maildomeinen die als doel zijn ingesteld, meer dan 30 keer als resultaat worden geretourneerd.
 
-   Dit venster verschijnt wanneer het **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** selectievakje ingeschakeld: Hier wordt het groeperingsresultaat gefilterd (HAVING).
+   Dit venster verschijnt wanneer het **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** Selectievakje: hier wordt het groeperingsresultaat gefilterd (HAVING).
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. In de **[!UICONTROL Data formatting]** venster, klikt u op **[!UICONTROL Next]**: hier is geen opmaak nodig .
-1. Klik in het venster met gegevensvoorvertoningen op **[!UICONTROL Launch data preview]**: hier worden drie verschillende e-maildomeinen geretourneerd die meer dan 30 keer als doel hebben.
+1. In de **[!UICONTROL Data formatting]** venster, klikt u op **[!UICONTROL Next]**: hier is geen opmaak nodig.
+1. Klik in het venster met gegevensvoorvertoningen op **[!UICONTROL Launch data preview]**: hier worden drie verschillende e-maildomeinen geretourneerd die meer dan 30 keer als doel zijn ingesteld.
 
    ![](assets/query_editor_blocklist_06.png)

@@ -2,13 +2,14 @@
 product: campaign
 title: Gegevens exporteren van Campaign naar Adobe Experience Platform
 description: Leer hoe u gegevens exporteert van Campaign Classic naar Adobe Experience Platform
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '504'
 ht-degree: 4%
 
 ---
@@ -31,13 +32,13 @@ Als u gegevens van Campaign Classic naar uw opslaglocatie van S3 of Azure Blob w
 
 Hiervoor kunt u toevoegen en configureren:
 
-* An **[!UICONTROL Data extraction (file)]** activiteit om de gerichte gegevens in een Csv- dossier te halen. Voor meer op hoe te om deze activiteit te vormen, verwijs naar [deze sectie](../../workflow/using/extraction--file-.md).
+* An **[!UICONTROL Data extraction (file)]** activiteit om de gerichte gegevens in een Csv- dossier te halen. Raadpleeg voor meer informatie over het configureren van deze activiteit [deze sectie](../../workflow/using/extraction--file-.md).
 
-   ![](assets/rtcdp-extract-file.png)
+  ![](assets/rtcdp-extract-file.png)
 
-* A **[!UICONTROL File transfer]** activiteit om het CSV-bestand naar uw opslaglocatie over te brengen. Voor meer op hoe te om deze activiteit te vormen, verwijs naar [deze sectie](../../workflow/using/file-transfer.md).
+* A **[!UICONTROL File transfer]** activiteit om het CSV-bestand naar uw opslaglocatie over te brengen. Raadpleeg voor meer informatie over het configureren van deze activiteit [deze sectie](../../workflow/using/file-transfer.md).
 
-   ![](assets/rtcdp-file-transfer.png)
+  ![](assets/rtcdp-file-transfer.png)
 
 In de onderstaande workflow worden logbestanden regelmatig uitgepakt in een CSV-bestand en wordt het bestand vervolgens overgebracht naar een opslaglocatie.
 

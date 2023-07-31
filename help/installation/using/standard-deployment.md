@@ -2,14 +2,15 @@
 product: campaign
 title: Standaardimplementatie
 description: Standaardimplementatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '839'
 ht-degree: 3%
 
 ---
@@ -55,7 +56,7 @@ Dit type van configuratie kan een groot aantal ontvangers (500.000 tot 1.000.000
    * de eerste die aan het publiek wordt blootgesteld voor het volgen en aanwijzen van het taakverdelingsmechanisme op een virtueel IP adres (VIP) en die dan aan de twee frontale servers wordt verdeeld;
    * de tweede die aan de interne gebruikers voor toegang via de console wordt blootgesteld en aan de zelfde toepassingsserver richt.
 
-* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Zie voor meer informatie de sectie [Toegang tot database](../../installation/using/network-configuration.md#database-access).
+* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Zie voor meer informatie de sectie [Toegang tot database](../../installation/using/network-configuration.md#database-access).
 
 ### De toepassingsserver installeren {#installing-the-application-server}
 
@@ -66,7 +67,7 @@ Aangezien de computer geen volgende server is, neem niet de integratie met de se
 In de volgende voorbeelden zijn de parameters van de instantie:
 
 * Naam van de instantie: **demo**
-* DNS-masker: **console.campagne.net&#42;** (alleen voor clientconsoleverbindingen en voor rapporten)
+* DNS-masker: **console.campaign.net&#42;** (alleen voor clientconsoleverbindingen en voor rapporten)
 * Taal: Engels
 * Database: **campagne:demo@dbsrv**
 
@@ -76,9 +77,9 @@ De installatie en configuratieprocedure is identiek op beide computers.
 
 De stappen zijn als volgt:
 
-1. Installeer de Adobe Campaign-server.
+1. De Adobe Campaign-server installeren.
 
-   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor installatie van campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor de installatie van de Campagne in Vensters](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
@@ -89,22 +90,23 @@ De stappen zijn als volgt:
 
    * Maak de instantie via de console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      of
+     of
 
    * Maak de instantie met behulp van opdrachtregels:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*
+     ```
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
+     Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
+
    De naam van de instantie is gelijk aan die van de toepassingsserver.
 
-   De verbinding met de server met de **nlserver-web** module (mirror pages, unsubscription) zal van URL van het ladingsverdelingsmechanisme (tracking.campagne.net) worden gemaakt.
+   De verbinding met de server **nlserver-web** -module (mirror pages, unsubscription) wordt gemaakt via de URL van het taakverdelingsmechanisme (tracking.campaign.net).
 
 1. Wijzig de **internal** op dezelfde manier als de toepassingsserver.
 
@@ -124,24 +126,24 @@ De stappen zijn als volgt:
 
    * de DNS-configuratie van de MTA-module:
 
-      ```
-      <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
-      ```
+     ```
+     <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
+     ```
 
-      >[!NOTE]
-      >
-      >De **nameServers** wordt alleen gebruikt in Windows.
+     >[!NOTE]
+     >
+     >De **nameServers** wordt alleen gebruikt in Windows.
 
-      Raadpleeg voor meer informatie hierover [Afleveringsinstellingen](configure-delivery-settings.md).
+     Raadpleeg voor meer informatie hierover [Afleveringsinstellingen](configure-delivery-settings.md).
 
    * de overtollige het volgen servers in de omleidingsparameters:
 
-      ```
-      <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
-      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
-      ```
+     ```
+     <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
+     <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
+     ```
 
-      Raadpleeg voor meer informatie hierover [Overbodige tekstspatiëring](configuring-campaign-server.md#redundant-tracking).
+     Raadpleeg voor meer informatie hierover [Overbodige tekstspatiëring](configuring-campaign-server.md#redundant-tracking).
 
 1. Start de website en test de omleiding via de URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -163,7 +165,7 @@ De stappen zijn als volgt:
    * Voor Windows: [De server van het Web lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Start de Adobe Campaign-server.
-1. Maak in de Adobe Campaign-console verbinding met de **beheerder** Meld u aan zonder wachtwoord en start de implementatietovenaar.
+1. Maak in de Adobe Campaign-console verbinding met de **admin** Meld u aan zonder wachtwoord en start de implementatietovenaar.
 
    Raadpleeg voor meer informatie hierover [Een instantie implementeren](../../installation/using/deploying-an-instance.md).
 

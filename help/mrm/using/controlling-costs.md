@@ -2,14 +2,15 @@
 product: campaign
 title: Kosten beheersen
 description: Leer hoe u kosten kunt beheersen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Voor de uitvoering van het begrotingsbeheer met behulp van MRM moeten de volgend
 
    Raadpleeg voor meer informatie hierover [Een budget maken](#creating-a-budget).
 
-1. Vaststelling van de kostprijsberekeningsmethode
+1. De kostprijsberekeningsmethode definiëren
 
    Kostenstructuren worden gedefinieerd voor de dienstverleners. Zie [Een serviceprovider en de bijbehorende kostencategorieën maken](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
@@ -48,25 +49,25 @@ Voor de uitvoering van het begrotingsbeheer met behulp van MRM moeten de volgend
 
 ## Een budget maken {#creating-a-budget}
 
-Op de kaart worden budgetten gecreëerd via de **[!UICONTROL Campaign management > Budgets]** knooppunt. De **[!UICONTROL New]** in de werkbalk kunt u een budget maken.
+Op de kaart worden budgetten gecreëerd, via de **[!UICONTROL Campaign management > Budgets]** knooppunt. De **[!UICONTROL New]** in de werkbalk kunt u een budget maken.
 
 * Nieuwe begroting toevoegen
 
-   Klik op de knop **[!UICONTROL New]** en sla het budget op.
+  Klik op de knop **[!UICONTROL New]** en sla het budget op.
 
 * Invoering van het oorspronkelijke bedrag
 
-   Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [Bedragen berekenen](#calculating-amounts).
+  Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [Bedragen berekenen](#calculating-amounts).
 
 * Vaststelling van de geldigheidsperiode
 
-   Geef de begin- en einddatum op. Deze informatie is slechts indicatief.
+  Geef de begin- en einddatum op. Deze informatie is slechts indicatief.
 
 * Uitgaven
 
-   Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [Categorieën kosten](#expense-categories).
+  Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [Categorieën kosten](#expense-categories).
 
-   ![](assets/s_ncs_user_budget_create_and_save.png)
+  ![](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
@@ -88,9 +89,9 @@ Voor campagnes kunnen, afhankelijk van het niveau van de verbintenis, kosten wor
 
 >[!CAUTION]
 >
->Wanneer een campagne wordt gemaakt, wordt de status van de voortgang in **[!UICONTROL Budget]** moet worden ingesteld op **[!UICONTROL Defined]** de kosten die bij de uitvoering in aanmerking moeten worden genomen. Als de status **[!UICONTROL Being edited]** De kosten worden niet geconsolideerd.
+>Wanneer een campagne wordt gemaakt, wordt de status van de voortgang in **[!UICONTROL Budget]** moet worden ingesteld op **[!UICONTROL Defined]** voor de kosten die bij de uitvoering in aanmerking moeten worden genomen. Als de status **[!UICONTROL Being edited]** De kosten worden niet geconsolideerd.
 >   
->De optie **[!UICONTROL Commitment level]** staat voor een kostenprognose in de toekomst voordat deze ten laste van de begroting komen . Afhankelijk van de voortgang van een campagne, taak of levering, kunt u besluiten een hoger of lager verbintenisniveau toe te wijzen (1). Geplant, 2. Gereserveerd, 3. Toegewezen) gebruikend de combodoos.
+>De optie **[!UICONTROL Commitment level]** staat voor een kostenprognose in de toekomst voordat deze ten laste van de begroting komen . Afhankelijk van de voortgang van een campagne, taak of levering kunt u een hoger of lager verbintenisniveau toewijzen (1). Geplant, 2. Gereserveerd, 3. Toegewezen) gebruikend de combodoos.
 
 De geraamde kosten van een webcampagne bedragen bijvoorbeeld 45.000 euro.
 
@@ -123,7 +124,7 @@ Wanneer een uitgave aanleiding geeft tot een factuur en de factuur wordt betaald
 
 De bedragen kunnen in verschillende uitgavencategorieën worden verdeeld voor een betere leesbaarheid van de gegevens en voor een gedetailleerdere rapportage van marketinginvesteringen. De kostencategorieën worden tijdens het creëren van de begroting gedefinieerd via de **[!UICONTROL Budgets]** knooppunt van de structuur.
 
-Als u een categorie wilt toevoegen, klikt u op de knop **[!UICONTROL Add]** in de onderste sectie van het venster.
+Als u een categorie wilt toevoegen, klikt u op **[!UICONTROL Add]** in de onderste sectie van het venster.
 
 ![](assets/s_user_budget_category.png)
 
@@ -272,7 +273,7 @@ We gaan een campagne opzetten met:
 
 1. Maak een workflow voor de campagne en plaats de query-activiteiten om het doel te selecteren (waarschuwingsbericht: de geadresseerde postadressen moeten worden opgegeven).
 
-1. Creeer een directe postlevering en selecteer de dienstverlener die in Stap 2 wordt gecreeerd: de kostencategorieën worden automatisch weergegeven.
+1. Creeer een directe postlevering en selecteer de dienstverlener die in Stap 2 wordt gecreeerd: de kostencategorieën worden automatisch getoond.
 
 1. Overschrijf de kosten van de enveloppen en voeg vaste kosten toe. Selecteer ook de categorieën waarop deze kosten betrekking hebben.
 
@@ -302,7 +303,7 @@ Wanneer u de berekende kosten bewerkt, kunt u de uitsplitsing van de kosten en d
 
 #### Stap 5 - Taken maken {#step-5---creating-tasks}
 
-Aan deze campagne zullen wij de twee taken toevoegen waarvoor de kostenstructuren eerder zijn gecreëerd (zie [Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op het campagnemarkeerteken op de knop **[!UICONTROL Add a task]** knop. Geef een naam op voor de taak en klik op **[!UICONTROL Save]**.
+Aan deze campagne zullen wij de twee taken toevoegen waarvoor de kostenstructuren eerder zijn gecreëerd (zie [Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op het campagnemarkeerteken op de knop **[!UICONTROL Add a task]** knop. Geef de taak een naam en klik op **[!UICONTROL Save]**.
 
 1. De taak wordt vervolgens toegevoegd aan de takenlijst. U moet het uitgeven om het te vormen.
 
@@ -310,7 +311,7 @@ Aan deze campagne zullen wij de twee taken toevoegen waarvoor de kostenstructure
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 
-1. Klik op de knop **[!UICONTROL Expenses and revenue]** pictogram van de taak en vermelding van de geraamde voorlopige kosten.
+1. Klik op de knop **[!UICONTROL Expenses and revenue]** pictogram van de taak en de geraamde voorlopige kosten.
 
    ![](assets/s_user_cost_mgmt_sample_15.png)
 
@@ -318,7 +319,7 @@ Aan deze campagne zullen wij de twee taken toevoegen waarvoor de kostenstructure
 
    Wanneer de taak is voltooid (status **[!UICONTROL Finished]** ), worden de berekende kosten automatisch bijgewerkt met de kosten van de Grote Ruimte zoals die in zijn kostenstructuur zijn vermeld. Deze kosten worden ook in deze categorie in de uitsplitsing weergegeven.
 
-1. Vervolgens maakt u een tweede taak volgens dezelfde procedure. die langer dan vijf dagen zijn gepland en betrekking hebben op de eerder gemaakte kostenstructuur.
+1. Vervolgens maakt u een tweede taak volgens dezelfde procedure. Deze taak is gepland gedurende vijf dagen en heeft betrekking op de kostenstructuur die u eerder hebt gemaakt.
 
    ![](assets/s_user_cost_mgmt_sample_16.png)
 

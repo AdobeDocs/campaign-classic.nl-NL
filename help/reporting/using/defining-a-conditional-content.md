@@ -2,13 +2,13 @@
 product: campaign
 title: Voorwaardelijke content definiëren
 description: Voorwaardelijke content definiëren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '257'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,11 @@ U kunt de weergave van specifieke rapportitems of pagina&#39;s voorschrijven.
 
 Pas de zichtbaarheidsinstellingen van bepaalde items aan om deze voorwaardelijk te maken. Raadpleeg voor meer informatie hierover [Weergave van Condition-item](#conditioning-item-display).
 
-Als u de weergave van een of meer pagina&#39;s voorwaardelijk wilt maken, gebruikt u een **[!UICONTROL Test]** type activiteit. Raadpleeg voor meer informatie hierover [Weergave voorwaardepagina](#conditioning-page-display).
+Als u de weergave van een of meer pagina&#39;s voorwaardelijk wilt maken, gebruikt u een **[!UICONTROL Test]** type activiteit. Raadpleeg voor meer informatie hierover [Weergave van voorwaardepagina](#conditioning-page-display).
 
 ## Weergave van Condition-item {#conditioning-item-display}
 
-Om de vertoning van een deel van een rapport voorwaardelijk te maken, moet u zijn zichtbaarheidsvoorwaarden bepalen: als deze niet worden ontmoet, zullen de punten niet worden getoond.
+Om de vertoning van een deel van een rapport voorwaardelijk te maken, moet u zijn zichtbaarheidsvoorwaarden bepalen: als deze niet worden voldaan aan, zullen de punten niet worden getoond.
 
 De zichtbaarheidsvoorwaarden kunnen afhankelijk zijn van de status van de operator, van de items die zijn geselecteerd of ingevoerd op de rapportpagina.
 
@@ -35,7 +35,7 @@ In het volgende voorbeeld hangt de weergavevoorwaarde af van de taal:
 
 ![](assets/reporting_display_condition.png)
 
-## Weergave voorwaardepagina {#conditioning-page-display}
+## Weergave van voorwaardepagina {#conditioning-page-display}
 
 In het overzicht van een verslag worden de **[!UICONTROL Test]** Met activiteit kunt u de volgorde van pagina&#39;s wijzigen afhankelijk van een of meer voorwaarden.
 
@@ -50,7 +50,7 @@ Deze activiteit is gebaseerd op het volgende operationele beginsel:
 
    ![](assets/reporting_test_transitions.png)
 
-1. Selecteer **[!UICONTROL Enable default transition]** om een overgang toe te voegen, voor het geval dat één van de gevormde voorwaarden niet wordt voldaan.
+1. Selecteer de **[!UICONTROL Enable default transition]** om een overgang toe te voegen, voor het geval dat één van de gevormde voorwaarden niet wordt voldaan.
 
    Raadpleeg [deze sectie](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 

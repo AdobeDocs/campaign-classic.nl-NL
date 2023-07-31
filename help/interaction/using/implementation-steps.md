@@ -2,12 +2,12 @@
 product: campaign
 title: Implementatiestappen
 description: Implementatiestappen voor de module Campagne Interaction
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '295'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 1. Het creëren van aanbiedingscategorieën in ontwerpmilieu&#39;s. Raadpleeg voor meer informatie hierover [Categorieën voorstellen maken](../../interaction/using/creating-offer-categories.md).
 1. Aanbiedingen maken in ontwerpomgevingen. Raadpleeg voor meer informatie hierover [Een aanbieding maken](../../interaction/using/creating-an-offer.md).
-1. Aanbiedingen goedkeuren en publiceren op één of meerdere ruimten om deze beschikbaar te maken in live omgevingen voor de leveringsmanager. Raadpleeg voor meer informatie hierover [Een aanbieding goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md).
+1. Aanbiedingen goedkeuren en publiceren op één of meerdere ruimten om deze beschikbaar te maken in live omgevingen voor de leveringsmanager. Raadpleeg voor meer informatie hierover [Aanbiedingen goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## De aanbiedingencatalogus gebruiken {#using-the-offer-catalog-}
 

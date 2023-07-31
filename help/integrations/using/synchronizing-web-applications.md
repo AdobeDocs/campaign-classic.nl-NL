@@ -2,14 +2,14 @@
 product: campaign
 title: Webapplicaties synchroniseren
 description: Leer hoe te om Webtoepassingen met Schakelaar ACS te synchroniseren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ Hiervoor hebt u het volgende nodig:
 
 * Ontvangers die zijn opgeslagen in de Campagne v7-database en zijn gesynchroniseerd met Campaign Standard. Zie de [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md) sectie.
 * een service en een webtoepassing die zijn gemaakt en gepubliceerd in Campaign v7.
-* de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit met behulp van de **[!UICONTROL Adobe Campaign encryption]** identificatiemethode.
+* de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit met behulp van **[!UICONTROL Adobe Campaign encryption]** identificatiemethode.
 
 ## Webtoepassing en -service maken {#creating-the-web-application-and-service}
 
-In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Als u meer wilt weten over webtoepassingen in Campagne v7, raadpleegt u [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
+In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Raadpleeg voor meer informatie over webtoepassingen in Campagne v7 [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
-In Campagne v7 zijn de volgende objecten gemaakt:
+In Campaign v7 zijn de volgende objecten gemaakt:
 
 * een nieuwsbrief
 * een webtoepassing met een **[!UICONTROL Pre-loading]**, **[!UICONTROL Page]** en **[!UICONTROL Storage]** activiteit.
@@ -61,7 +61,7 @@ In Campagne v7 zijn de volgende objecten gemaakt:
 
 ## De gegevens repliceren {#replicating-the-data}
 
-Voor het repliceren van de benodigde gegevens tussen Campagne v7 en Campaign Standard, zijn er verschillende sjablonen voor de replicatiewerkstroom beschikbaar. De **[!UICONTROL Profiles replication]** worden alle Campagne v7-ontvangers automatisch naar Campaign Standard gekopieerd. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). De **[!UICONTROL Landing pages replication]** de workflow maakt de replicatie mogelijk van de webtoepassingen die we in Campaign Standard willen gebruiken.
+Om de benodigde gegevens tussen Campagne v7 en Campaign Standard te repliceren, zijn er verschillende sjablonen voor replicatiewerkstromen beschikbaar. De **[!UICONTROL Profiles replication]** worden alle Campagne v7-ontvangers automatisch naar Campaign Standard gedupliceerd. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). De **[!UICONTROL Landing pages replication]** de workflow maakt de replicatie mogelijk van de webtoepassingen die we in Campaign Standard willen gebruiken.
 
 ![](assets/acs_connect_lp_1.png)
 
@@ -79,7 +79,7 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
    ![](assets/acs_connect_lp_9.png)
 
-1. Klik op de knop **[!UICONTROL Adobe Campaign]** logo, in de linkerbovenhoek, en selecteer vervolgens **Profielen en publiek > Services** en controleer of de nieuwsbrief ook beschikbaar is.
+1. Klik op de knop **[!UICONTROL Adobe Campaign]** logo, in de linkerbovenhoek selecteert u **Profielen en publiek > Services** en controleer of de nieuwsbrief ook beschikbaar is.
 
    ![](assets/acs_connect_lp_10.png)
 

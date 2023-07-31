@@ -2,12 +2,13 @@
 product: campaign
 title: Formulieren bewerken
 description: Formulieren bewerken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -28,7 +29,7 @@ U kunt invoerformulieren maken en wijzigen:
 
 Forms zijn entiteiten van `xtk:form` type. U kunt de invoerformulierstructuur bekijken in het dialoogvenster `xtk:form` schema. Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** in het menu. Meer informatie over [formulierstructuur](form-structure.md).
 
-Kies **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** in het menu:
+Als u invoerformulieren wilt openen, kiest u **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** in het menu:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -48,39 +49,39 @@ U kunt verschillende typen invoerformulieren maken. Het formuliertype bepaalt ho
 
 * Consolescherm
 
-   Dit is het standaardformuliertype. Het formulier bestaat uit één pagina.
+  Dit is het standaardformuliertype. Het formulier bestaat uit één pagina.
 
-   ![](assets/console_screen_form.png)
+  ![](assets/console_screen_form.png)
 
 * Contentmanagement
 
-   Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [use case](../../delivery/using/use-case--creating-content-management.md).
+  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [use case](../../delivery/using/use-case--creating-content-management.md).
 
-   ![](../../delivery/using/assets/d_ncs_content_form13.png)
+  ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * Wizard
 
-   Dit formulier bestaat uit meerdere zwevende schermen die in een bepaalde reeks zijn geordend. Gebruikers navigeren van het ene scherm naar het andere. [Meer informatie](form-structure.md#wizards).
+  Dit formulier bestaat uit meerdere zwevende schermen die in een bepaalde reeks zijn geordend. Gebruikers navigeren van het ene scherm naar het andere. [Meer informatie](form-structure.md#wizards).
 
 * Iconbox
 
-   Dit formulier bestaat uit meerdere pagina&#39;s. Gebruikers kunnen door het formulier navigeren door pictogrammen links van het formulier te selecteren.
+  Dit formulier bestaat uit meerdere pagina&#39;s. Gebruikers kunnen door het formulier navigeren door pictogrammen links van het formulier te selecteren.
 
-   ![](assets/iconbox_form_preview.png)
+  ![](assets/iconbox_form_preview.png)
 
 * Laptop
 
-   Dit formulier bestaat uit meerdere pagina&#39;s. Als gebruikers in het formulier willen navigeren, selecteren ze boven aan het formulier tabbladen.
+  Dit formulier bestaat uit meerdere pagina&#39;s. Als gebruikers in het formulier willen navigeren, selecteren ze boven aan het formulier tabbladen.
 
-   ![](assets/notebook_form_preview.png)
+  ![](assets/notebook_form_preview.png)
 
 * Verticaal deelvenster
 
-   In dit formulier wordt een boomstructuur weergegeven.
+  In dit formulier wordt een boomstructuur weergegeven.
 
 * Horizontaal venster
 
-   Dit formulier bevat een lijst met items.
+  Dit formulier bevat een lijst met items.
 
 ## Containers
 
@@ -176,8 +177,8 @@ Deze afbeeldingen worden gebruikt voor pictogrammen waarop gebruikers klikken om
 
 Voer de volgende stappen uit om een formulier te maken:
 
-1. Kies in het menu de optie **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-1. Klik op de knop **[!UICONTROL New]** aan de rechterbovenhoek van de lijst.
+1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+1. Klik op de knop **[!UICONTROL New]** boven aan de lijst.
 
    ![](assets/input-form-create-1.png)
 
@@ -185,28 +186,28 @@ Voer de volgende stappen uit om een formulier te maken:
 
    * Geef de naam van het formulier en de naamruimte op.
 
-      De formuliernaam en de naamruimte kunnen overeenkomen met het gerelateerde gegevensschema.  In dit voorbeeld wordt een formulier getoond voor de `cus:order` gegevensschema:
+     De formuliernaam en de naamruimte kunnen overeenkomen met het gerelateerde gegevensschema.  In dit voorbeeld wordt een formulier getoond voor de `cus:order` gegevensschema:
 
-      ```xml
-      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
-      U kunt het gegevensschema ook expliciet opgeven in het dialoogvenster `entity-schema` kenmerk.
+     U kunt het gegevensschema ook expliciet opgeven in het dialoogvenster `entity-schema` kenmerk.
 
-      ```xml
-      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
    * Geef het label op dat op het formulier moet worden weergegeven.
    * Geef desgewenst het formuliertype op. Als u geen formuliertype opgeeft, wordt standaard het schermtype voor de console gebruikt.
 
-      ![](assets/input-form-create-2.png)
+     ![](assets/input-form-create-2.png)
 
-      Als u een formulier met meerdere pagina&#39;s ontwerpt, kunt u het formuliertype weglaten in het dialoogvenster `<form>` en geeft u het type op in een container.
+     Als u een formulier met meerdere pagina&#39;s ontwerpt, kunt u het formuliertype weglaten in het dialoogvenster `<form>` en geeft u het type op in een container.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -320,7 +321,8 @@ Het type van een bestaand formulier wijzigen in `iconbox`Voer de volgende stappe
           </container>
       </form>
       ```
-   U kunt ook de `type="frame"` kenmerk van het bestaande `<container>` elementen.
+
+   U kunt ook de knop `type="frame"` kenmerk van het bestaande `<container>` elementen.
 
 ### Een laptopformulier maken
 
@@ -358,7 +360,7 @@ Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stapp
      </form>
    ```
 
-   U kunt ook de `type="frame"` kenmerk van het bestaande `<container>` elementen.
+   U kunt ook de knop `type="frame"` kenmerk van het bestaande `<container>` elementen.
 
 ### Formulieren nesten
 
@@ -374,7 +376,7 @@ In dit voorbeeld wordt een complex formulier getoond:
 
 * De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
 
-   Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+  Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
 
 * Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
 
@@ -399,7 +401,7 @@ In dit voorbeeld wordt een complex formulier getoond:
 </form>
 ```
 
-Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+Dientengevolge, **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
 
 ![](assets/nested_forms_preview.png)
 
@@ -411,7 +413,7 @@ In dit voorbeeld wordt een complex formulier getoond:
 
 * De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
 
-   Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+  Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
 
 * Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
 
@@ -436,7 +438,7 @@ In dit voorbeeld wordt een complex formulier getoond:
 </form>
 ```
 
-Als gevolg hiervan **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+Dientengevolge, **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
 
 ![](assets/nested_forms_preview.png)
 
@@ -448,7 +450,7 @@ Voer de volgende stappen uit om een fabrieksformulier te wijzigen:
 
 1. Het fabrieksinvoerformulier wijzigen:
 
-   1. Kies in het menu de optie **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
    1. Selecteer een invoerformulier en wijzig dit.
 
    U kunt schema&#39;s met fabrieksgegevens uitbreiden, maar u kunt geen formulieren met fabrieksinvoer uitbreiden. We raden u aan fabrieksinvoerformulieren rechtstreeks te wijzigen zonder ze opnieuw te maken. Tijdens software-upgrades worden uw wijzigingen in de fabrieksinvoerformulieren samengevoegd met de upgrades. Als het automatisch samenvoegen mislukt, kunt u de conflicten oplossen. [Meer informatie](../../production/using/upgrading.md#resolving-conflicts).

@@ -2,16 +2,17 @@
 product: campaign
 title: Beschikbaarheid van clientconsole voor Windows
 description: Beschikbaarheid van clientconsole voor Windows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 4%
+source-wordcount: '353'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +30,7 @@ Hiervoor moet u:
 
 1. Selecteer het pakket dat het consoleinstallatieprogramma bevat.
 
-   Dit bestand wordt aangeroepen `setup-client-7.X.XXXX.exe`, waarbij `X` is de subversie van Adobe Campaign en `XXXX` is het bouwstijlaantal.
+   Dit bestand wordt `setup-client-7.X.XXXX.exe`, waarbij `X` is de subversie van Adobe Campaign en `XXXX` is het bouwstijlaantal.
 
 1. Kopieer en plak dit pakket naar de installatiemap van Adobe Campaign (op de marketingserver voor hybride installaties), onder **/datakit/nl/eng/jsp**.
 1. Start Adobe Campaign-server.

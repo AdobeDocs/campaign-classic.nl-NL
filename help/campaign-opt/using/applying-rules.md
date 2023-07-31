@@ -2,12 +2,12 @@
 product: campaign
 title: Typologieregels toepassen
 description: Leer hoe u typologische regels toepast
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '990'
 ht-degree: 9%
 
 ---
@@ -20,13 +20,13 @@ Om de gemaakte typologische regels toe te passen, moet u deze koppelen aan een t
 
 1. Maak een campagnetypologie.
 
-   Via de **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** knooppunt.
+   De typologieën zijn toegankelijk via **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** knooppunt.
 
 1. Ga naar de **[!UICONTROL Rules]** klikt u op de knop **[!UICONTROL Add]** en selecteert u de regels die u met deze typologie wilt toepassen.
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. Sla de typologie op: wordt toegevoegd aan de lijst van bestaande typologieën.
+1. Sla de typologie op: wordt deze toegevoegd aan de lijst met bestaande typologieën.
 1. Open de levering waarop u de regels wilt toepassen.
 1. Open de leveringseigenschappen en open tot **[!UICONTROL Typology]** tab.
 1. Selecteer de typologie in de vervolgkeuzelijst.
@@ -51,7 +51,7 @@ Dan gebruik de vraagredacteur om het filtreren voorwaarden te bepalen. In het vo
 
 >[!NOTE]
 >
->Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: zij kunnen afhangen van de levering of het leveringsoverzicht . Raadpleeg voor meer informatie hierover [Een filterregel conditioneren](filtering-rules.md#conditioning-a-filtering-rule).
+>Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: deze kunnen afhankelijk zijn van de levering of de leveringscontour. Raadpleeg voor meer informatie hierover [Een filterregel conditioneren](filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Rekenfrequentie aanpassen {#adjusting-calculation-frequency}
 
@@ -59,7 +59,7 @@ Arbitrages worden elke avond automatisch opnieuw uitgevoerd via de workflow voor
 
 Sommige berekeningen gebruiken namelijk waarden die niet dagelijks veranderen. Het zou daarom irrelevant zijn om de gegevens elke dag opnieuw te berekenen en de database voor niets te overladen. Bijvoorbeeld, als een proces het marketing gegevensbestand met klantennestscores verrijkt en informatie op een wekelijkse basis koopt, te hoeven de gegevens die op deze waarden worden gebaseerd niet elke dag opnieuw te worden berekend.
 
-Om dit te doen, **[!UICONTROL Frequency]** van het **[!UICONTROL General]** kunt u een maximumperiode definiëren waarin het doel wordt opgeslagen. Standaard wordt de waarde **0** geeft aan dat de berekening geldig blijft tot de volgende uitvoering van dagelijkse herarbitrage.
+Om dit te doen, **[!UICONTROL Frequency]** van het **[!UICONTROL General]** kunt u een maximumperiode definiëren gedurende welke het doel wordt opgeslagen. Standaard wordt de waarde **0** geeft aan dat de berekening geldig blijft tot de volgende uitvoering van dagelijkse herarbitrage.
 
 Als u de resultaten na deze periode wilt opslaan, geeft u een waarde groter dan 12 op in het dialoogvenster **[!UICONTROL Frequency]** veld: zodra deze termijn is verstreken, worden alle regels opnieuw toegepast.
 
@@ -76,7 +76,7 @@ In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepas
 1. Controleregels, indien toegepast aan het begin van targeting.
 1. Filterregels:
 
-   * Native toepassingsregels voor adreskwalificatie: bepaald adres / niet-geverifieerd adres / adres op de lijst van gewezen personen / quarantined adres / adreskwaliteit.
+   * Native toepassingsregels voor adreskwalificatie: gedefinieerd adres / niet-geverifieerd adres / adres op de lijst van gewezen personen / in quarantaine geplaatst adres / adreskwaliteit.
    * Filterregels die door de gebruiker zijn gedefinieerd.
    * Deduplicatieregel op het adres of de id (indien nodig toegepast).
 
@@ -96,7 +96,7 @@ Bijvoorbeeld, zal een drukregel met een uitvoeringsorde van 20 vóór een drukre
 
 ### Controleregels {#control-rules}
 
-Voor **[!UICONTROL Control]** regels, kunt u beslissen op welk punt van de leveringslevenscyclus de regel zal worden toegepast (vóór of na het richten, bij het begin van verpersoonlijking, aan het eind van de analyse). Selecteer de waarde die u wilt toepassen in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Phase]** in de **[!UICONTROL General]** tabblad van de typologieregel.
+Voor **[!UICONTROL Control]** regels, kunt u beslissen op welk punt van de leveringslevenscyclus de regel zal worden toegepast (vóór of na het richten, bij het begin van verpersoonlijking, aan het eind van de analyse). Selecteer de waarde die u wilt toepassen in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Phase]** in het veld **[!UICONTROL General]** tabblad van de typologieregel.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -104,21 +104,21 @@ Mogelijke waarden zijn:
 
 * **[!UICONTROL At the start of targeting]**
 
-   Om de verpersoonlijkingsstap te verhinderen in het geval van fouten worden uitgevoerd, kunt u de controleregel hier toepassen.
+  Om de verpersoonlijkingsstap te verhinderen in het geval van fouten worden uitgevoerd, kunt u de controleregel hier toepassen.
 
 * **[!UICONTROL After targeting]**
 
-   Als u het volume van het doel moet kennen om de controleregel toe te passen, selecteer deze fase.
+  Als u het volume van het doel moet kennen om de controleregel toe te passen, selecteer deze fase.
 
-   De **[!UICONTROL Check proof size]** de controleregel is van toepassing na elke doelfase: deze regel verhindert berichtverpersoonlijking als er teveel proefontvangers zijn.
+  Bijvoorbeeld de **[!UICONTROL Check proof size]** de controleregel is van toepassing na elk gericht stadium: deze regel verhindert berichtverpersoonlijking als er teveel proefontvangers zijn.
 
 * **[!UICONTROL At the start of personalization]**
 
-   Deze fase moet worden geselecteerd als de controle de goedkeuring van berichtverpersoonlijking betreft. De personalisatie van berichten wordt uitgevoerd tijdens de analysefase.
+  Deze fase moet worden geselecteerd als de controle de goedkeuring van berichtverpersoonlijking betreft. De personalisatie van berichten wordt uitgevoerd tijdens de analysefase.
 
 * **[!UICONTROL At the end of the analysis]**
 
-   Wanneer een controle berichtverpersoonlijking om vereist te zijn volledig, selecteer deze fase.
+  Wanneer een controle berichtverpersoonlijking om vereist te zijn volledig, selecteer deze fase.
 
 ## Aanvullende configuraties {#additional-configurations}
 
@@ -133,7 +133,7 @@ Als optie kunt u de optie **[!UICONTROL Managing affinities with IP addresses]**
 >Affinity-beheer is niet van toepassing op **[!UICONTROL Filtering]** typologieën.\
 >Affinities worden gedefinieerd in het configuratiebestand van de instantie, op de Adobe Campaign-server. Raadpleeg [deze sectie](../../installation/using/about-initial-configuration.md) voor meer informatie.
 
-### Campagne optimaliseren en Distribueren {#campaign-optimization-and-distributed-marketing}
+### De Optimalisering van de campagne en Distribute Marketing {#campaign-optimization-and-distributed-marketing}
 
 De **[!UICONTROL Distributed Marketing]** kunt u het opnieuw in kaart brengen van typologieën en/of regels bepalen die van toepassing zijn wanneer een gedeelde campagne wordt bevolen en/of gereserveerd. Voor een lokale entiteit gedefinieerde typologieën/regels (gekoppeld aan die welke voor de centrale entiteit zijn gedefinieerd) vervangen regels/typologieën die aan de centrale entiteit zijn gekoppeld. Met Opnieuw toewijzen kunt u de regels van de centrale entiteit aanpassen aan de lokale entiteiten die de campagne bestellen.
 
@@ -141,5 +141,5 @@ De **[!UICONTROL Distributed Marketing]** kunt u het opnieuw in kaart brengen va
 
 >[!NOTE]
 >
->In typologieën en typologieregels worden de **[!UICONTROL Distributed Marketing]** wordt toegevoegd als uw licentie deze optie bevat: gelieve uw vergunningsovereenkomst te controleren.\
+>In typologieën en typologieregels worden de **[!UICONTROL Distributed Marketing]** wordt toegevoegd als uw licentie deze optie bevat: controleer uw licentieovereenkomst.\
 >Voor meer informatie over Verdeelde Marketing, verwijs naar [Informatie over gedistribueerde marketing](../../distributed/using/about-distributed-marketing.md).

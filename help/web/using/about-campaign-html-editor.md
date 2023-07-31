@@ -2,14 +2,14 @@
 product: campaign
 title: Aan de slag met de Campagne HTML Editor
 description: Aan de slag met campagne-DCE
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+feature: Web Apps, Web Forms, Landing Pages, Email Design
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Een eenvoudig **webtoepassing**, moet u:
 
 >[!NOTE]
 >
->Er is een volledige implementatiemonster beschikbaar in de context van een webtoepassing in  [deze sectie](creating-a-landing-page.md).
+>Er is een volledige implementatiemonster beschikbaar voor een webtoepassing in  [deze sectie](creating-a-landing-page.md).
 
 Om een **e-maillevering**, moet u:
 

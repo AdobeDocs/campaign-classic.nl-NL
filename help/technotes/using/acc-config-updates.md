@@ -2,13 +2,14 @@
 product: campaign
 title: TechNote - Adobe Campaign-configuratieupdates
 description: Adobe Campaign-configuratieupdates
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1104'
 ht-degree: 10%
 
 ---
@@ -53,7 +54,7 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 * Als hybride klant, zal Adobe u van de geplande verbeteringsdata voor uw midsourcing instanties op de hoogte brengen. Adobe raadt u ten zeerste aan om ook een upgrade uit te voeren voor uw marketingexemplaar.
 
-  De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade van alle instanties aan om beveiligingskwetsbaarheden te verhelpen
+  De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade aan voor alle instanties om beveiligingsproblemen te verhelpen
 
 * Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar de nieuwste build.
 
@@ -88,7 +89,7 @@ Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/
 * Release van campagne 19.2.4.
 * Release van campagne 19.1.8.
 
-Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht, zodat zowel de campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
+Deze versies worden geleverd met een nieuw verbindingsprotocol: een upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
 
 Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -100,19 +101,19 @@ Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de 
 
 Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan deze versie worden bevorderd.
 
-* Leer hoe u toegang krijgt [Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+* Meer informatie over toegang [Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 * [Meer informatie over het installeren van Campagne Client Console](../../installation/using/installing-the-client-console.md).
 
 ## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Verouderde verificatiemodus voor auteur met campagne [is met pensioen gegaan](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md#step-optional) aan Adobe verstrekken.
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Verouderde verificatiemodus voor auteur met campagne [is met pensioen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md#step-optional) aan Adobe verstrekken.
 
 **Heeft dit gevolgen voor u?**
 
 Als uw instanties op een **oudere versie dan Campagne 19.1.8, 20.2.4, Gold Standard 11**, dan gebruikt u een oudere versie van de integratie van Trekkers door Authentificatie Auth: **moet u een upgrade uitvoeren naar een nieuwere versie en naar Adobe I/O gaan**.
 
-U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden vermeld.
+U dient een upgrade uit te voeren naar een van de nieuwe versies die hieronder worden vermeld.
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
@@ -123,11 +124,11 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 **Hoe kan ik bijwerken?**
 
-Zodra de instanties aan een nieuwere versie worden bevorderd, moeten alle klanten volgen [de procedure gaat naar de nieuwe authentificatiemodus](../../integrations/using/configuring-adobe-io.md). Dit vereist u om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
+Zodra de instanties aan een nieuwere versie worden bevorderd, moeten alle klanten volgen [de procedure gaat naar de nieuwe authentificatiemodus](../../integrations/using/configuring-adobe-io.md). Hiervoor moet u het nieuwe Adobe I/O-token genereren en gebruiken in de implementatie.  
 
 Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../../integrations/using/configuring-pipeline.md).
 
-[Leer hoe u naar Adobe I/O migreert](../../integrations/using/configuring-adobe-io.md).
+[Meer informatie over migreren naar Adobe I/O](../../integrations/using/configuring-adobe-io.md).
 
 ## APNs-updates {#acc-apns-updates}
 

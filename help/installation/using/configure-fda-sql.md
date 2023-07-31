@@ -2,11 +2,12 @@
 product: campaign
 title: Toegang tot Microsoft SQL Server configureren
 description: Leer hoe u toegang tot Microsoft SQL Server configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -20,7 +21,7 @@ Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken
 1. Configureren [!DNL Microsoft SQL Server] op [CentOS](#sql-centos).
 1. Configureren [!DNL Microsoft SQL Server] op [Linux](#sql-linux).
 1. Configureren [!DNL Microsoft SQL Server] op [Windows](#sql-windows).
-1. Configureer de [!DNL Microsoft SQL Server] [externe rekening](#sql-external) in Campagne
+1. Vorm [!DNL Microsoft SQL Server] [externe rekening](#sql-external) in Campagne
 
 ## Microsoft SQL Server op CentOS {#sql-centos}
 
@@ -88,7 +89,7 @@ U moet een [!DNL Microsoft SQL Server] externe account om uw Campagne-instantie 
 
    ![](assets/sql.png)
 
-1. Configureer de **[!UICONTROL Microsoft SQL Server]** externe accountverificatie:
+1. Vorm **[!UICONTROL Microsoft SQL Server]** externe accountverificatie:
 
    * **[!UICONTROL Server]**: URL van de [!DNL Microsoft SQL Server] server.
 
@@ -100,7 +101,7 @@ U moet een [!DNL Microsoft SQL Server] externe account om uw Campagne-instantie 
 
    * **[!UICONTROL Timezone]**: Tijdzone ingesteld in [!DNL Microsoft SQL Server]. [Meer informatie](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
 
-1. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** om functies te maken.
+1. Klik op de knop **[!UICONTROL Parameters]** en vervolgens de **[!UICONTROL Deploy functions]** om functies te maken.
 
    >[!NOTE]
    >
@@ -113,5 +114,5 @@ De connector ondersteunt de volgende opties:
 | Option | Beschrijving |
 |---|---|
 | Verificatie | Type van authentificatie die door de schakelaar wordt gesteund. Huidige ondersteunde waarde: ActiveDirectoryMSI. <br> Zie voorbeeld 8 van [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
-| Coderen | Geeft aan of verbindingen de TLS-codering via het netwerk gebruiken. Mogelijke waarden zijn **ja/verplicht (18.0 en hoger)**, **neen/optioneel (18.0 en hoger)**, en **strikt (18.0 en hoger)**. De standaardwaarde is ingesteld op **ja** in versie 18.0 en hoger en **nee** in eerdere versies. <br>Raadpleeg voor meer informatie hierover [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
+| Coderen | Geeft aan of verbindingen de TLS-codering via het netwerk gebruiken. Mogelijke waarden zijn **ja/verplicht (18.0 en hoger)**, **neen/optioneel (18.0 en hoger)**, en **strikt (18.0 en hoger)**. De standaardwaarde is **ja** in versie 18.0 en hoger en **nee** in eerdere versies. <br>Raadpleeg voor meer informatie hierover [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Hiermee wordt codering ingeschakeld met behulp van een zelfondertekend servercertificaat, indien gebruikt met **Coderen**. <br>Geaccepteerde waarden: **ja** of **nee** (standaardwaarde, wat betekent dat het servercertificaat wordt gevalideerd). |

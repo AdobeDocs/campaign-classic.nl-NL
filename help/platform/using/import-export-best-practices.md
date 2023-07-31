@@ -2,16 +2,17 @@
 product: campaign
 title: Best practices voor importeren en exporteren
 description: Meer informatie over de aanbevolen procedures bij het importeren of exporteren van gegevens
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +32,7 @@ In veel projecten wordt de invoer zonder **[!UICONTROL Deduplication]** activite
 
 Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en correct zijn, of dat de afdeling van IT of de supervisor van Adobe Campaign het zal behandelen. Houd tijdens het project rekening met het opschonen van gegevens. U kunt gegevens dedupliceren, op elkaar afstemmen en de consistentie behouden bij het importeren van gegevens.
 
-Een voorbeeld van een generiek werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in [Voorbeeld: Workflowsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md) sectie.
+Een voorbeeld van een generiek werkstroomsjabloon dat is ontworpen voor het importeren van gegevens is beschikbaar in het dialoogvenster [Voorbeeld: werkstroomsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md) sectie.
 
 ## Vlakke bestandsindelingen gebruiken {#using-flat-file-formats}
 
@@ -42,7 +43,7 @@ Bijvoorbeeld:
 * Scheidingsteken: tab of puntkomma
 * Eerste regel met kopteksten
 * Geen scheidingsteken voor tekenreeks
-* Datumnotatie: YYYY/MM/DD HH:mm:SS
+* Datumnotatie: JJJJ/MM/DD UU:mm:SS
 
 Voorbeeld van te importeren bestand:
 

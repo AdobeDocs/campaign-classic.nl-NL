@@ -2,11 +2,12 @@
 product: campaign
 title: Webtags voor bijhouden maken
 description: Leer hoe u webtrackingtags maakt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -20,14 +21,14 @@ Op elke pagina van de site die u wilt bijhouden, moet in uw Adobe Campaign-platf
 
 ## De URL&#39;s definiëren die in de toepassing moeten worden bijgehouden {#defining-the-urls-to-be-tracked-in-the-application}
 
-Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende webtrackingtag. Deze bewerking wordt gedefinieerd in het dialoogvenster **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole.
+Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende tag voor webtracering. Deze bewerking wordt gedefinieerd in het dialoogvenster **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
 U genereert de HTML-code die op de pagina moet worden ingevoegd:
 
-* Voer het label in: het wordt weergegeven in de trackinglogboeken;
-* Geef de bron-URL op: dit veld dient ter informatie en geeft de bijgehouden pagina aan (optioneel);
+* Voer het label van de tag in: het wordt weergegeven in de logboeken voor bijhouden,
+* De bron-URL aangeven: dit veld dient ter informatie en u kunt de bijgehouden pagina aangeven (optioneel).
 * Voer zo nodig een geldigheidsperiode in.
 * Klikken **[!UICONTROL Generate]** HTML-code.
 
@@ -35,9 +36,9 @@ Vervolgens kopieert u de gegenereerde code en plakt u deze in de pagina die u wi
 
 ## Tijdens het maken van URL&#39;s die moeten worden bijgehouden {#on-the-fly-creation-of-urls-to-be-tracked}
 
-U kunt de URL&#39;s voor webtracering direct maken door informatie toe te voegen aan de waarde van de optie **tagid** parameter:
+U kunt de URL&#39;s voor webtracering direct maken door informatie toe te voegen aan de waarde van de optie **gelabeld** parameter:
 
-* Type bijgehouden pagina: &quot;w&quot; voor WEB of &quot;t&quot; voor TRANSACTIE,
+* Type bijgehouden pagina: &#39;w&#39; voor WEB of &#39;t&#39; voor TRANSACTIE,
 * De interne naam van de map waarin de URL moet worden gemaakt.
 
 Deze twee gegevens moeten worden samengevoegd met de id van de bijgehouden pagina door het teken &#39;|&#39; toe te voegen:
@@ -48,8 +49,8 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Vergeet niet de waarde van de **tagid** parameter wanneer deze wordt gebruikt als een URL-parameter.
+>Vergeet niet de waarde van het gereedschap **gelabeld** parameter wanneer deze wordt gebruikt als een URL-parameter.
 
-**Voorbeeld**: het maken van een URL voor webtracering van het transactietype.
+**Voorbeeld**: het maken van een URL voor webtracking van het type transactie.
 
 **http://myserver.adobe.com/r/a?tagid=home%7Ct%7CMyFolder**

@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Filterregels
-description: Leer hoe te om het filtreren regels te gebruiken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+description: Leer hoe u filterregels gebruikt
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '514'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Wanneer deze regel in een levering wordt gebruikt, worden minderjarige abonnees 
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## Een filterregel conditioneren {#conditioning-a-filtering-rule}
+## Voorwaarde een filterregel {#conditioning-a-filtering-rule}
 
 U kunt het toepassingsgebied van de het filtreren regel beperken die op de verbonden levering of leveringsoverzicht wordt gebaseerd.
 
@@ -56,11 +56,11 @@ In dit geval wordt de regel, zelfs als deze aan alle leveringen is gekoppeld, al
 
 >[!NOTE]
 >
->De typologieën en het filtreren regels kunnen in een werkschema, in worden gebruikt **[!UICONTROL Delivery outline]** activiteit. Raadpleeg [deze sectie](../../workflow/using/delivery-outline.md) voor meer informatie.
+>Typologieën en filterregels kunnen worden gebruikt in een workflow, in het dialoogvenster **[!UICONTROL Delivery outline]** activiteit. Raadpleeg [deze sectie](../../workflow/using/delivery-outline.md) voor meer informatie.
 
 ## Filtertypologie maken en gebruiken {#creating-and-using-a-filtering-typology}
 
-U kunt **[!UICONTROL Filtering]** typologieën: zij bevatten alleen filterregels .
+U kunt **[!UICONTROL Filtering]** typologieën: ze bevatten alleen filterregels.
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
@@ -79,6 +79,7 @@ U kunt filterregels ook rechtstreeks via dit tabblad koppelen, zonder ze te groe
 >Alleen typologieën en filterregels zijn beschikbaar in het selectievenster.
 >
 >Deze configuraties kunnen in het leveringsmalplaatje worden bepaald dat automatisch op alle nieuwe die leveringen worden toegepast worden gecreeerd gebruikend het malplaatje.
+>
 
 ## Uitsluitingsregels voor standaardlevering {#default-deliverability-exclusion-rules}
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Uw configuratie aanpassen
 description: Leer hoe u uw configuratie aanpast voor en na een migratie naar Campagne v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 2%
 
 ---
@@ -59,7 +60,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
 * Wachtwoorden
 
-   U moet de **Beheer** en **Intern** wachtwoorden. [Meer informatie](../../migration/using/before-starting-migration.md#user-passwords)
+  U moet de **Beheerder** en **Intern** wachtwoorden. [Meer informatie](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -82,33 +83,33 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
 * Pagina&#39;s spiegelen
 
-   Het aanpassingsblok van de pagina Mirror is gewijzigd met v6.x. Deze nieuwe versie verbetert de beveiliging bij het openen van deze pagina&#39;s.
+  Het aanpassingsblok van de pagina Mirror is gewijzigd met v6.x. Deze nieuwe versie verbetert de beveiliging bij het openen van deze pagina&#39;s.
 
-   Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
+  Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
 
-   Als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog steeds actief zijn) kunt u echter terugkeren naar het oude aanpassingsblok om dit probleem te voorkomen door de optie te wijzigen **[!UICONTROL XtkAcceptOldPasswords]** en stel deze in op **[!UICONTROL 1]**. Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
+  Als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog steeds actief zijn) kunt u echter terugkeren naar het oude aanpassingsblok om dit probleem te voorkomen door de optie te wijzigen **[!UICONTROL XtkAcceptOldPasswords]** en stel deze in op **[!UICONTROL 1]**. Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
 
 * Syntaxis
 
-   Als er fouten optreden met betrekking tot de syntaxis, moet u de functie **allowSQLInjection** in de **serverConf.xml** bestand, omdat u dan tijd hebt om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren.
+  Als er fouten optreden met betrekking tot de syntaxis, moet u de functie **allowSQLInjection** in de **serverConf.xml** bestand, omdat u dan tijd hebt om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren.
 
 * Conflicten
 
-   De migratie wordt uitgevoerd via een postupgrade en conflicten kunnen optreden in rapporten, formulieren of webtoepassingen. Deze conflicten kunnen vanaf de console worden opgelost.
+  De migratie wordt uitgevoerd via een postupgrade en conflicten kunnen optreden in rapporten, formulieren of webtoepassingen. Deze conflicten kunnen vanaf de console worden opgelost.
 
 * Tomcat
 
-   Als u de installatiemap hebt aangepast, moet u controleren of deze na de migratie correct is bijgewerkt.
+  Als u de installatiemap hebt aangepast, moet u controleren of deze na de migratie correct is bijgewerkt.
 
 * Rapporten
 
-   Alle out-of-box-rapporten gebruiken momenteel de v6.x-renderingengine. Als u JavaScript-code aan de rapporten hebt toegevoegd, kan dit invloed hebben op bepaalde elementen.
+  Alle out-of-box-rapporten gebruiken momenteel de v6.x-renderingengine. Als u JavaScript-code aan de rapporten hebt toegevoegd, kan dit invloed hebben op bepaalde elementen.
 
 * Webtoepassingen
 
-   Na postupgrade, als u om het even welke problemen hebt die met uw geïdentificeerde toepassingen van het Web verbinden, moet u activeren **allowUserPassword** en **sessionTokenOnly** opties in het dialoogvenster **serverConf.xml** bestand. Om veiligheidskwesties te vermijden, moeten deze twee opties opnieuw geactiveerd worden nadat het probleem is opgelost.
+  Na postupgrade, als u om het even welke problemen hebt die met uw geïdentificeerde toepassingen van het Web verbinden, moet u activeren **allowUserPassword** en **sessionTokenOnly** in de **serverConf.xml** bestand. Om veiligheidskwesties te vermijden, moeten deze twee opties opnieuw geactiveerd worden nadat het probleem is opgelost.
 
-   Afhankelijk van het type van de toepassingen van het Web en hun configuratie, moet u extra manipulaties uitvoeren om ervoor te zorgen zij correct werken.
+  Afhankelijk van het type van de toepassingen van het Web en hun configuratie, moet u extra manipulaties uitvoeren om ervoor te zorgen zij correct werken.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +138,7 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
 * Interaction
 
-   Als u **Interactie**, moet u parameters aanpassen na de migratie.
+  Als u **Interactie**, moet u parameters aanpassen na de migratie.
 
 <!--
 

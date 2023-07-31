@@ -2,13 +2,13 @@
 product: campaign
 title: Controlerichtlijnen
 description: Ontdek richtlijnen en best practices om de Campaign-instantie en -processen te controleren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 21%
+source-wordcount: '767'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 21%
 
 De **[!UICONTROL Monitoring]** tab, dat vanaf de homepage van Campaign Classic toegankelijk is, is het belangrijkste ingangspunt om u te helpen uw instantie controleren.
 
-Het verstrekt een dashboard van wat op uw geval voorkomt: de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
+Het verstrekt een dashboard van wat op uw instantie voorkomt: zijn status (bouwstijlversie, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, werkschema&#39;s die momenteel lopen, staat van laatste verzonden leveringen, enz.
 
 Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.md) beschikbaar.
 
@@ -51,13 +51,13 @@ Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekki
 
 **Configuratiescherm**
 
-In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) voor meer informatie.
+In het Configuratiescherm kunt u verschillende instellingen van uw instantie beheren: beheer de URL-machtigingen, controleer de instantiedetails zoals de buildversies van uw servers, enzovoort. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) voor meer informatie.
 
 >[!NOTE]
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Workflows controleren {#monitoring-workflows}
 
@@ -75,7 +75,7 @@ Met het audittrail kunt u alle wijzigingen visualiseren die in workflows zijn aa
 
 Er kunnen specifieke acties worden uitgevoerd wanneer er problemen optreden met de uitvoering van een workflow. [Klik hier](../../production/using/workflow-execution.md) voor meer informatie
 
-**Workflow Status Monitoring**
+**Workflowstatuscontrole**
 
 Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set workflows kunt controleren en terugkerende berichten naar supervisors kunt verzenden. [Klik hier](../../workflow/using/supervising-workflows.md) voor meer informatie.
 

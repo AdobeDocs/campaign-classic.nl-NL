@@ -2,12 +2,12 @@
 product: campaign
 title: CRM-connectors, gegevenssynchronisatie
 description: Gegevens beheren tussen Campagne en uw CRM
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Salesforce Integration, Microsoft CRM Integration
+feature: Microsoft CRM Integration, Salesforce Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Met deze activiteit kunt u:
 
 ![](assets/crm_task_select_op.png)
 
-Selecteer de externe rekening die CRM aanpast dat u synchronisatie met wilt vormen, dan het te synchroniseren voorwerp selecteren: accounts, mogelijkheden, leads, contacten, enz.
+Selecteer de externe rekening die CRM aanpast dat u synchronisatie met wilt vormen, dan het te synchroniseren voorwerp selecteren: rekeningen, kansen, lood, contacten, enz.
 
 ![](assets/crm_task_select_obj.png)
 
@@ -49,9 +49,9 @@ Om gegevens via CRM in Adobe Campaign te importeren, moet u het volgende type wo
 
 ![](assets/crm_wf_import.png)
 
-Voor een importactiviteit: **[!UICONTROL CRM Connector]** de stappen van de activiteitenconfiguratie zijn:
+Voor een importactiviteit **[!UICONTROL CRM Connector]** de stappen van de activiteitenconfiguratie zijn:
 
-1. Selecteer een **[!UICONTROL Import from the CRM]** bewerking.
+1. Selecteer een **[!UICONTROL Import from the CRM]** -bewerking.
 1. Ga naar de **[!UICONTROL Remote object]** vervolgkeuzelijst en selecteer het object waarop het proces betrekking heeft. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 1. Ga naar de **[!UICONTROL Remote fields]** en voert u de velden in die u wilt importeren.
 
@@ -106,13 +106,13 @@ Standaard worden de volgende velden gebruikt (in de opgegeven volgorde):
 
 De **[!UICONTROL Automatic index]** Deze optie genereert drie variabelen die in de synchronisatieworkflow kunnen worden gebruikt via een **[!UICONTROL JavaScript code]** type activiteit. Deze activiteiten zijn:
 
-* **vars.crmOptionName**: geeft de naam aan van de optie die de laatste importdatum bevat.
+* **vars.crmOptionName**: staat voor de naam van de optie die de laatste importdatum bevat.
 * **vars.crmStartImport**: staat voor de begindatum (inclusief) van de laatste gegevensherstel.
 * **vars.crmEndDate**: staat voor de einddatum (exclusief) van de laatste gegevensherstel.
 
-   >[!NOTE]
-   >
-   >Deze datums worden weergegeven in de volgende notatie: **yyyy/MM/dd hh:mm:ss**.
+  >[!NOTE]
+  >
+  >Deze datums worden weergegeven in de volgende notatie: **yyyy/MM/dd hh:mm:ss**.
 
 ### Gegevens filteren {#filtering-data}
 
@@ -127,7 +127,7 @@ Om efficiënte werking met diverse CRMs te verzekeren, moeten de filters worden 
 
 De volgende filtervoorwaarden zijn bijvoorbeeld NIET geldig voor een CRM-import, omdat de OR-operator op hetzelfde niveau wordt geplaatst als de AND-operatoren:
 
-* De operator OR wordt op hetzelfde niveau geplaatst als de AND-operatoren
+* De operator OR wordt op hetzelfde niveau geplaatst als de operator AND
 * Vergelijkingen worden uitgevoerd op tekenreeksen
 
 ![](assets/crm_import_wrong_filter.png)
@@ -146,7 +146,7 @@ De volgorde van de kolommen in de lijst is de sorteervolgorde:
 
 In plaats van elementen te importeren die in de CRM zijn opgenomen (en mogelijk zijn gefilterd), kunt u een populatie gebruiken die vooraf in de workflow is berekend.
 
-Selecteer hiervoor de optie **[!UICONTROL Use the population calculated upstream]** en geeft u het veld op dat de externe id bevat.
+Selecteer de optie **[!UICONTROL Use the population calculated upstream]** en geeft u het veld op dat de externe id bevat.
 
 Selecteer vervolgens de velden van de binnenkomende populatie die u wilt importeren, zoals hieronder wordt weergegeven:
 
@@ -162,7 +162,7 @@ Als u gegevens naar CRM wilt exporteren, moet u het volgende type workflow maken
 
 Pas voor een exportbewerking de volgende configuratie toe op de **[!UICONTROL CRM Connector]** activiteit:
 
-1. Selecteer een **[!UICONTROL Export to CRM]** bewerking.
+1. Selecteer een **[!UICONTROL Export to CRM]** -bewerking.
 1. Ga naar de **[!UICONTROL Remote object]** vervolgkeuzelijst en selecteer het object waarop het proces betrekking heeft. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 
    >[!IMPORTANT]
@@ -173,7 +173,7 @@ Pas voor een exportbewerking de volgende configuratie toe op de **[!UICONTROL CR
 
    ![](assets/crm_export_config_2.png)
 
-1. In de **[!UICONTROL Mapping]** sectie, klikt u op **[!UICONTROL New]** om de velden te specificeren die geëxporteerd moeten worden en hun toewijzing in de CRM.
+1. In de **[!UICONTROL Mapping]** sectie, klikken **[!UICONTROL New]** om de velden te specificeren die geëxporteerd moeten worden en hun toewijzing in de CRM.
 
    ![](assets/crm_export_config.png)
 
@@ -181,7 +181,7 @@ Pas voor een exportbewerking de volgende configuratie toe op de **[!UICONTROL CR
 
    >[!NOTE]
    >
-   >Als er voor een bepaald veld geen overeenkomst is gedefinieerd aan de CRM-zijde, kunnen de waarden niet worden bijgewerkt: zij worden rechtstreeks in de BCR ingevoegd.
+   >Voor een bepaald veld kunnen de waarden niet worden bijgewerkt als er geen overeenkomst aan de CRM-zijde is gedefinieerd: ze worden rechtstreeks in de CRM ingevoegd.
 
    Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Conversion]** kolommen. Mogelijke conversietypen worden nader beschreven in [Gegevensindeling](#data-format).
 
@@ -209,7 +209,7 @@ Andere mogelijke omzettingen zijn:
 
 ### Fout bij verwerken {#error-processing}
 
-In het kader van de invoer of de uitvoer van gegevens, kunt u een specifiek proces op fouten en verwerpingen toepassen. Selecteer hiervoor de optie **[!UICONTROL Process rejects]** en **[!UICONTROL Process errors]** opties in het dialoogvenster **[!UICONTROL Behavior]** tab.
+In het kader van de invoer of de uitvoer van gegevens, kunt u een specifiek proces op fouten en verwerpingen toepassen. Selecteer de optie **[!UICONTROL Process rejects]** en **[!UICONTROL Process errors]** in de **[!UICONTROL Behavior]** tab.
 
 ![](assets/crm_export_options.png)
 
@@ -235,7 +235,7 @@ Om het opzetten van een uitgebreid proces van de gegevenssynchronisatie toe te l
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Selecteer een **[!UICONTROL Import objects deleted in the CRM]** bewerking.
+1. Selecteer een **[!UICONTROL Import objects deleted in the CRM]** -bewerking.
 1. Ga naar de **[!UICONTROL Remote object]** vervolgkeuzelijst en selecteer het object waarop het proces betrekking heeft. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 1. Geef de verwijderingsperiode op die in de **[!UICONTROL Start date]** en de **[!UICONTROL End date]** velden. Deze data worden in de periode opgenomen.
 
@@ -243,7 +243,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!IMPORTANT]
    >
-   >De periode van elementenverwijdering moet samenvallen met de specifieke beperkingen van de BCR. Dit betekent dat voor Salesforce.com bijvoorbeeld elementen die meer dan 30 dagen geleden zijn verwijderd, niet kunnen worden hersteld.
+   >De periode voor het verwijderen van elementen moet samenvallen met de specifieke beperkingen van de BCR. Dit betekent bijvoorbeeld dat elementen die meer dan 30 dagen geleden zijn verwijderd, niet kunnen worden hersteld.
 
 ## Objecten verwijderen in de CRM-toepassing {#deleting-objects-in-the-crm}
 
@@ -256,3 +256,4 @@ De **[!UICONTROL Behavior]** kunt u de verwerking van afwijzingen inschakelen. M
 >[!NOTE]
 >
 >Zelfs als de **[!UICONTROL Process rejects]** is uitgeschakeld, wordt een waarschuwing gegenereerd voor elke geweigerde kolom.
+>

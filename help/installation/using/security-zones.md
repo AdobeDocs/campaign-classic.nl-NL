@@ -2,16 +2,17 @@
 product: campaign
 title: Beveiligingszones configureren
 description: Leer hoe u beveiligingszones kunt configureren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 0%
+source-wordcount: '1489'
+ht-degree: 1%
 
 ---
 
@@ -30,6 +31,7 @@ De exploitanten worden verbonden met een veiligheidsstreek van zijn profiel in d
 >Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
 >Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
+>
 
 ## Beveiligingszones maken {#creating-security-zones}
 
@@ -47,7 +49,7 @@ Elke zone definieert rechten, zoals:
 * HTTP-verbinding in plaats van HTTPS
 * Foutweergave (Java-fouten, JavaScript, C++, enz.)
 * Voorvertoning van rapport en webApp
-* Verificatie via aanmelding/wachtwoord
+* Verificatie via inlognaam/wachtwoord
 * Niet-beveiligde verbindingsmodus
 
 >[!NOTE]
@@ -87,10 +89,10 @@ Voorbeeld van het definiëren van een zone in het deelvenster **serverConf.xml**
 
 Alle rechten die een zone definiëren, zijn als volgt:
 
-* **allowDebug**: schakelt een webApp in om te worden uitgevoerd in de modus &quot;foutopsporing&quot;
-* **allowEmptyPassword**: Hiermee wordt een verbinding met een instantie zonder wachtwoord toegestaan
+* **allowDebug**: hiermee kan een webApp worden uitgevoerd in de modus &quot;foutopsporing&quot;
+* **allowEmptyPassword**: hiermee wordt een verbinding met een instantie zonder wachtwoord toegestaan
 * **allowHTTP**: een sessie kan worden gemaakt zonder het HTTPS-protocol te gebruiken
-* **allowUserPassword**: het sessietoken kan de volgende vorm hebben &quot;`<login>/<password>`&quot;
+* **allowUserPassword**: de sessietoken kan de volgende vorm hebben &quot;`<login>/<password>`&quot;
 * **sessionTokenOnly**: het beveiligingstoken is niet vereist in de verbindings-URL
 * **showErrors**: fouten aan de serverzijde worden doorgestuurd en weergegeven
 
@@ -134,7 +136,7 @@ In de **`config-<instance>.xml`** bestand:
 
 ## Subnetwerken en proxy&#39;s in een beveiligingszone {#sub-networks-and-proxies-in-a-security-zone}
 
-De **proxy** parameter kan worden gebruikt in een **subNetwork** -element om het proxygebruik in een beveiligingszone op te geven.
+De **proxy** parameter kan in een **subNetwork** -element om het proxygebruik in een beveiligingszone op te geven.
 
 Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ingeschakeld (zichtbaar via de HTTP X-Forwarded-For-header), is de geverifieerde zone die van de clients van de proxy en niet die van de proxy.
 
@@ -148,17 +150,17 @@ Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ing
 
 Er kunnen verschillende gevallen optreden:
 
-* Een subnetwerk wordt direct van verwijzingen voorzien in de veiligheidsstreek en geen volmacht wordt gevormd: gebruikers van het subnetwerk kunnen rechtstreeks verbinding maken met de Adobe Campaign-server.
+* Er wordt rechtstreeks verwezen naar een subnetwerk in de beveiligingszone en er wordt geen proxy geconfigureerd: gebruikers van het subnetwerk kunnen rechtstreeks verbinding maken met de Adobe Campaign-server.
 
-   ![](assets/8101_proxy1.png)
+  ![](assets/8101_proxy1.png)
 
-* Een volmacht wordt gespecificeerd voor een subnetwerk in de veiligheidsstreek: gebruikers van dit subnetwerk hebben via deze proxy toegang tot de Adobe Campaign-server.
+* Er is een proxy opgegeven voor een subnetwerk in de beveiligingszone: gebruikers van dit subnetwerk hebben via deze proxy toegang tot de Adobe Campaign-server.
 
-   ![](assets/8101_proxy2.png)
+  ![](assets/8101_proxy2.png)
 
-* Een volmacht is inbegrepen in een subnetwerk van de veiligheidszone: gebruikers die toegang hebben via deze proxy, ongeacht de oorsprong ervan, hebben toegang tot de Adobe Campaign-server.
+* Een proxy is opgenomen in een subnetwerk voor een beveiligingszone: gebruikers die toegang hebben via deze proxy, ongeacht hun oorsprong, hebben toegang tot de Adobe Campaign-server.
 
-   ![](assets/8101_proxy3.png)
+  ![](assets/8101_proxy3.png)
 
 Het IP-adres van proxy&#39;s die waarschijnlijk toegang zullen krijgen tot de Adobe Campaign-server, moet worden ingevoerd in het dialoogvenster **`<subnetwork>`** betrokken en het eerste niveau subnetwork **`<subnetwork name="all"/>`**. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
 
@@ -194,7 +196,7 @@ Voorafgaand aan dit, moet u beginnen door uit-van-de-doos te vormen **[!UICONTRO
 Deze configuratie wordt gedaan in de ontdekkingsreiziger van de Campagne:
 
 1. Klik op de knop **[!UICONTROL Administration > Platform > Enumerations]** knooppunt.
-1. Selecteer **[!UICONTROL Security zone (securityZone)]** systeemopsomming.
+1. Selecteer de **[!UICONTROL Security zone (securityZone)]** systeemopsomming.
 
    ![](assets/enum_securityzone.png)
 
@@ -227,28 +229,28 @@ Zodra de zones zijn gedefinieerd en de **[!UICONTROL Security zone]** de opsommi
 
 * Gebruik sessionTokenOnly=&quot;true&quot; minimaliseren:
 
-   * Waarschuwing: Als dit kenmerk is ingesteld op true, kan de operator worden blootgesteld aan een **CRSF-aanval**.
+   * Waarschuwing: als dit kenmerk is ingesteld op true, kan de operator worden blootgesteld aan een **CRSF-aanval**.
    * Bovendien wordt het sessionToken cookie niet ingesteld met een httpOnly-markering, zodat sommige JavaScript-code aan de clientzijde deze kan lezen.
    * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg toe **alleen de benodigde IP(&#39;s)** in deze zone.
 
 * Indien mogelijk, plaats allen allowHTTP, showErrors om vals (niet voor localhost) te zijn en hen te controleren.
 
-   * allowHTTP = &quot;false&quot;: exploitanten dwingen HTTPS te gebruiken
-   * showErrors = &quot;false&quot;: Hiermee verbergt u technische fouten (waaronder SQL-fouten). Het verhindert het tonen van teveel informatie, maar vermindert het vermogen voor de teller om fouten op te lossen (zonder om meer informatie van een beheerder te vragen)
+   * allowHTTP = &quot;false&quot;: hiermee worden operators gedwongen HTTPS te gebruiken
+   * showErrors = &quot;false&quot;: verbergt technische fouten (inclusief SQL-fouten). Het verhindert het tonen van teveel informatie, maar vermindert het vermogen voor de teller om fouten op te lossen (zonder om meer informatie van een beheerder te vragen)
 
 * Plaats allowDebug aan waar slechts op IPs die door marketing gebruikers/beheerders wordt gebruikt die (in feite voorproef) onderzoeken, webApps en rapporten moeten tot stand brengen. Deze vlag staat deze IPs toe om relaisregels te krijgen die worden getoond en hen te zuiveren.
 
    * Wanneer allowDebug is ingesteld op false, wordt de uitvoer als volgt ingesteld:
 
-      ```
-      <redir status='OK' date='...' sourceIP='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' sourceIP='...'/>
+     ```
 
    * Wanneer allowDebug op true is ingesteld, wordt de uitvoer als volgt uitgevoerd:
 
-      ```
-      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+     ```
 
 * Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
 
@@ -258,8 +260,8 @@ Zodra de zones zijn gedefinieerd en de **[!UICONTROL Security zone]** de opsommi
 
    * **allowSQLInjection** Hiermee kan de gebruiker SQL-injecties uitvoeren met een oude syntaxis. Dit kenmerk moet op false worden ingesteld. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
 
-* HttpOnly cookie/useSecurityToken: verwijzen naar **sessionTokenOnly** markering.
+* HttpOnly cookie/useSecurityToken: zie **sessionTokenOnly** markering.
 
-* Minimaliseer IPs die aan de lijst van gewenste personen wordt toegevoegd: Uit de doos, in veiligheidszones, hebben wij de 3 waaiers voor privé netwerken toegevoegd. Het is onwaarschijnlijk dat u al deze IP adressen zult gebruiken. Bewaar dus alleen die dingen die je nodig hebt.
+* Minimaliseer IPs die aan de lijst van gewenste personen wordt toegevoegd: Uit de doos, in veiligheidsstreken, hebben wij de 3 waaiers voor privé netwerken toegevoegd. Het is onwaarschijnlijk dat u al deze IP adressen zult gebruiken. Bewaar dus alleen die dingen die je nodig hebt.
 
 * webApp/internal-operator bijwerken zodat deze alleen toegankelijk is in localhost.

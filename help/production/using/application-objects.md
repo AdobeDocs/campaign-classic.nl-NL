@@ -2,14 +2,15 @@
 product: campaign
 title: Applicatieobjecten
 description: Applicatieobjecten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 4%
 
 ---
@@ -48,7 +49,7 @@ Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
 Het aantal bestanden op de schijf van de toepassingsserver mag niet oneindig toenemen.
 
-De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan door het gebruiken van de norm worden verhinderd [Bestandsverzamelaar](../../workflow/using/file-collector.md) activiteit. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
+De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden voorkomen door de standaard te gebruiken [Bestandsverzamelaar](../../workflow/using/file-collector.md) activiteit. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
 
 Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfuncties, moet deze worden leeggemaakt om schijfruimte tot een minimum te beperken.
 

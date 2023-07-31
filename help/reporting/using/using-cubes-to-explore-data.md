@@ -2,15 +2,15 @@
 product: campaign
 title: Kubussen gebruiken om data gegevens te verkennen
 description: Kubussen gebruiken om data gegevens te verkennen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 hide: true
 hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de d
 
 * Maak rapporten op basis van kubussen. Het proces wordt hier nader beschreven: [De gegevens in een rapport verkennen](#exploring-the-data-in-a-report).
 * Verzamel de gegevens in het gegevensbestand en groepeer het in lijsten, bijvoorbeeld om doelstellingen en leveringen te identificeren en te bouwen. Raadpleeg voor meer informatie hierover [Een doelpopulatie maken](#building-a-target-population).
-* Voeg een draaitabel in een rapport in en verwijs naar een bestaande kubus in het rapport. Raadpleeg voor meer informatie hierover [Een draaientabel invoegen in een rapport](#inserting-a-pivot-table-into-a-report).
+* Voeg een draaientabel in een rapport in en verwijs naar een bestaande kubus in het rapport. Raadpleeg voor meer informatie hierover [Een draaientabel invoegen in een rapport](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ De **[!UICONTROL Add]** met de knoppen op elke as kunt u dimensies toevoegen.
 
    De parameters zijn afhankelijk van het gegevenstype van de geselecteerde dimensie.
 
-   Voor datums kunnen bijvoorbeeld verschillende niveaus beschikbaar zijn. Raadpleeg voor meer informatie hierover [Weergavemetingen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Voor datums kunnen bijvoorbeeld verschillende niveaus beschikbaar zijn. Raadpleeg voor meer informatie hierover [Weergaveopties](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    In dit geval worden de volgende opties aangeboden:
 
@@ -64,15 +64,15 @@ De **[!UICONTROL Add]** met de knoppen op elke as kunt u dimensies toevoegen.
 
    U kunt:
 
-   * Gegevens uitbreiden tijdens laden: de waarden zullen door gebrek worden getoond telkens als het rapport wordt bijgewerkt (standaardwaarde: neen).
-   * Het totaal aan het einde van de regel weergeven: wanneer de gegevens in kolommen worden weergegeven, kunt u het totaal aan het einde van de regel weergeven met een extra optie: er wordt een kolom aan de tabel toegevoegd (standaardwaarde): ja).
-   * Een sortering toepassen: de waarden van de kolom kunnen worden gesorteerd op waarde, label of op basis van een maat (standaardwaarde: op waarde).
+   * Gegevens uitbreiden tijdens laden: de waarden worden standaard weergegeven wanneer het rapport wordt bijgewerkt (standaardwaarde: no).
+   * Het totaal aan het einde van de regel weergeven: als de gegevens in kolommen worden weergegeven, kunt u het totaal aan het einde van de regel weergeven: er wordt een kolom aan de tabel toegevoegd (standaardwaarde: ja).
+   * Een sortering toepassen: de waarden van de kolom kunnen worden gesorteerd op basis van waarde, label of op basis van een maat (standaardwaarde: op waarde).
    * Geef de waarden weer in oplopende (a-z, 0-9) of aflopende (z-a, 9-0) volgorde.
    * Het aantal kolommen wijzigen dat bij het laden moet worden weergegeven (standaard: 200).
 
-1. Klikken **[!UICONTROL Ok]** ter bevestiging: de dimensie wordt toegevoegd aan de bestaande afmetingen.
+1. Klikken **[!UICONTROL Ok]** ter bevestiging : de dimensie wordt toegevoegd aan de bestaande afmetingen .
 
-   De gele banner boven de tabel geeft aan dat u wijzigingen hebt aangebracht: klik op **[!UICONTROL Save]** om ze op te slaan.
+   De gele banner boven de tabel geeft aan dat u wijzigingen hebt aangebracht: klik op de knop **[!UICONTROL Save]** om ze op te slaan.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -80,7 +80,7 @@ De **[!UICONTROL Add]** met de knoppen op elke as kunt u dimensies toevoegen.
 
 Wanneer de lijnen en kolommen op hun plaats zijn, wijs op de maatregelen u evenals hun vertoningswijze wilt tonen.
 
-Standaard wordt slechts één maat weergegeven. Om maatregelen toe te voegen of te vormen:
+Standaard wordt slechts één maat weergegeven. Maatregelen toevoegen of configureren:
 
 1. Klik op de knop **[!UICONTROL Measures]**.
 
@@ -100,19 +100,19 @@ Standaard wordt slechts één maat weergegeven. Om maatregelen toe te voegen of 
 
    Vervolgens kunt u kiezen of u maatlabels wilt weergeven of niet. Raadpleeg voor meer informatie hierover [De weergave configureren](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. Het is mogelijk om nieuwe maatregelen te bouwen gebruikend bestaande. Klik op **[!UICONTROL Create a measure]** en configureren.
+1. Het is mogelijk om nieuwe maatregelen te bouwen gebruikend bestaande. Om dit te doen, klik **[!UICONTROL Create a measure]** en configureren.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
    De volgende soorten maatregelen zijn beschikbaar:
 
-   * Combinatie van maatregelen: met dit type maatregel kunt u de nieuwe maatregel bouwen met behulp van bestaande maatregelen :
+   * Combinatie van maatregelen: met dit type maatregel kunt u de nieuwe maatregel bouwen aan de hand van bestaande maatregelen:
 
-      De beschikbare operatoren zijn: som, verschil, vermenigvuldiging en frequentie.
+     De beschikbare operatoren zijn: som, verschil, vermenigvuldiging en snelheid.
 
-   * Verhouding: met dit type maatregel kunt u het aantal records berekenen dat voor een bepaalde dimensie wordt gemeten. U kunt de evenredigheid berekenen op basis van een dimensie of subdimensie.
+   * Proportie: met dit type maatregel kunt u het aantal records berekenen dat voor een bepaalde dimensie wordt gemeten. U kunt de evenredigheid berekenen op basis van een dimensie of subdimensie.
    * Variatie: met deze maatregel kunt u de variatie in waarden van een niveau berekenen.
-   * Standaardafwijking: met dit type meting kunt u afwijkingen binnen elke groep cellen berekenen in vergelijking met het gemiddelde van de waarden . U kunt bijvoorbeeld het aankoopvolume voor alle bestaande segmenten vergelijken.
+   * Standaardafwijking: met dit type maat kunt u afwijkingen binnen elke groep cellen berekenen in vergelijking met het gemiddelde van de waarden. U kunt bijvoorbeeld het aankoopvolume voor alle bestaande segmenten vergelijken.
 
    De gecreëerde maatregel wordt toegevoegd aan het rapport.
 
@@ -154,7 +154,7 @@ Als u een populatie in een lijst wilt groeperen, voert u de volgende stappen uit
 
    U kunt de inhoud van het winkelwagentje opslaan of leeg maken.
 
-   De relevante lijst is toegankelijk via de **[!UICONTROL Profiles and targets]** tab.
+   De relevante lijst is toegankelijk via **[!UICONTROL Profiles and targets]** tab.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 

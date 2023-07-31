@@ -2,14 +2,15 @@
 product: campaign
 title: Beschrijving van een gebeurtenis
 description: Leer hoe de transactie overseinengebeurtenissen in Adobe Campaign Classic gebruikend de methodes van de ZEEP worden beheerd
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -36,9 +37,9 @@ Het WSDL-pad voor toegang tot beide methoden is:
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** om tot het typeschema in real time toegang te hebben.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** om het batchtypeschema te openen.
 
-Voor meer informatie over het genereren van een WSDL-bestand raadpleegt u [deze sectie](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+Zie voor meer informatie over het genereren van een WSDL-bestand [deze sectie](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-Beide methoden bevatten een **`<urn:sessiontoken>`** element voor het het programma openen aan de module van het transactionele overseinen. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
+Beide methoden bevatten een **`<urn:sessiontoken>`** element voor het het programma openen aan de transactionele overseinenmodule. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
 
 Als u een taakgebalanceerde server gebruikt, kunt u de gebruiker/Wachtwoord authentificatie (op het niveau van het bericht van RT) gebruiken. Voorbeeld:
 
@@ -80,7 +81,7 @@ Voorbeeld met PushEvent:
 
 >[!NOTE]
 >
->In geval van een oproep aan de **PushEvents** -methode, moeten we een bovenliggend XML-element toevoegen om te voldoen aan de standaard-XML. In dit XML-element worden de verschillende **`<rtevent>`** elementen in de gebeurtenis.
+>Bij een oproep aan de **PushEvents** -methode, moeten we een bovenliggend XML-element toevoegen om te voldoen aan de standaard-XML. In dit XML-element worden de verschillende **`<rtevent>`** elementen in de gebeurtenis.
 
 Voorbeeld met PushEvents:
 
@@ -110,7 +111,7 @@ De **`<rtevent>`** en **`<batchevent>`** elementen hebben een set kenmerken en e
 
 >[!NOTE]
 >
->De **`<batchevent>`** Met een element kunt u de gebeurtenis toevoegen aan de wachtrij met &#39;batch&#39;. De **`<rtevent>`** voegt de gebeurtenis toe aan de &quot;real time&quot; wachtrij.
+>De **`<batchevent>`** Met een element kunt u de gebeurtenis toevoegen aan de wachtrij met de naam &quot;batch&quot;. De **`<rtevent>`** voegt de gebeurtenis toe aan de &quot;real time&quot; wachtrij.
 
 De verplichte eigenschappen van de **`<rtevent>`** en **`<batchevent>`** elementen zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
 
@@ -120,7 +121,7 @@ De verplichte eigenschappen van de **`<rtevent>`** en **`<batchevent>`** element
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In dit voorbeeld zijn twee kanalen beschikbaar: het e-mailadres en het mobiele telefoonnummer. De **wishedChannel** Hiermee kunt u het kanaal selecteren dat u wilt gebruiken wanneer u de gebeurtenis omzet in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
+In dit voorbeeld worden twee kanalen opgegeven: het e-mailadres en het mobiele telefoonnummer. De **wishedChannel** Hiermee kunt u het kanaal selecteren dat u wilt gebruiken wanneer u de gebeurtenis omzet in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
 
 Als u de levering van een gebeurtenis wilt uitstellen, voegt u de opdracht **[!UICONTROL scheduled]** gevolgd door de datum van voorkeur. De gebeurtenis wordt op deze datum omgezet in een bericht.
 
@@ -136,7 +137,7 @@ De **`<ctx>`** -element bevat de berichtgegevens. De XML-inhoud is open, wat bet
 >
 >Het is belangrijk om het aantal en de grootte van de knopen van XML in het bericht te optimaliseren om het overladen van de servers tijdens levering te vermijden.
 
-Voorbeeld van gegevens:
+Gegevensvoorbeeld:
 
 ```
    <ctx>
@@ -167,15 +168,15 @@ Wanneer Adobe Campaign een gebeurtenis ontvangt, genereert het een unieke retour
 
 * Voorbeeld van een id die door de methode wordt geretourneerd wanneer de gebeurtenisverwerking is geslaagd:
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
-            <plId xsi:type="xsd:long">72057594037935966</plId>
-         </urn:PushEventResponse>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
+           <plId xsi:type="xsd:long">72057594037935966</plId>
+        </urn:PushEventResponse>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 Als de waarde van de retour-id strikt groter is dan nul, betekent dit dat de gebeurtenis met succes is gearchiveerd in Adobe Campaign.
 
@@ -183,51 +184,51 @@ Als de gebeurtenis echter niet kan worden verwerkt, retourneert de methode een f
 
 * Voorbeeld verwerken van een gebeurtenis die is mislukt wanneer de query geen aanmeldingsnaam bevat of de opgegeven operator niet de vereiste rechten heeft:
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <SOAP-ENV:Fault>
-            <faultcode>SOAP-ENV:Client</faultcode>
-            <faultstring xsi:type="xsd:string">Error while reading parameters of method 'PushEvent' of service 'nms:rtEvent'.</faultstring>
-            <detail xsi:type="xsd:string">Invalid login or password. Connection denied.</detail>
-         </SOAP-ENV:Fault>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <SOAP-ENV:Fault>
+           <faultcode>SOAP-ENV:Client</faultcode>
+           <faultstring xsi:type="xsd:string">Error while reading parameters of method 'PushEvent' of service 'nms:rtEvent'.</faultstring>
+           <detail xsi:type="xsd:string">Invalid login or password. Connection denied.</detail>
+        </SOAP-ENV:Fault>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Voorbeeld van een gebeurtenis die is mislukt als gevolg van een fout in de query (de XML-classificatie is niet nageleefd):
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <SOAP-ENV:Fault>
-            <faultcode>SOAP-ENV:Client</faultcode>
-            <faultstring xsi:type="xsd:string">The XML SOAP message is invalid (service 'PushEvent', method 'nms:rtEvent').</faultstring>
-            <detail xsi:type="xsd:string"><![CDATA[(16:8) : Expected end of tag 'rtevent'
-   Error while parsing XML string '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:nms:rtEvent">
-      <soapenv:Header/>
-      <soapenv:Body>
-         <urn:PushEvent>
-            <urn:sessiontoken>mc/</urn:sessiontoken>
-            <urn:domEvent>
-   <rtevent type="create_account" email="esther.hall@adobe.com" origin="eCommerce" wishedChannel="email" 
-         externalId="1596" language="english" country="EN" emailFormat="2"
-         mobilePhone="+447700123123">
-     <ctx>
-      <website name="eCommerce" url="http://www.eCo']]></detail>
-         </SOAP-ENV:Fault>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <SOAP-ENV:Fault>
+           <faultcode>SOAP-ENV:Client</faultcode>
+           <faultstring xsi:type="xsd:string">The XML SOAP message is invalid (service 'PushEvent', method 'nms:rtEvent').</faultstring>
+           <detail xsi:type="xsd:string"><![CDATA[(16:8) : Expected end of tag 'rtevent'
+  Error while parsing XML string '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:nms:rtEvent">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:PushEvent>
+           <urn:sessiontoken>mc/</urn:sessiontoken>
+           <urn:domEvent>
+  <rtevent type="create_account" email="esther.hall@adobe.com" origin="eCommerce" wishedChannel="email" 
+        externalId="1596" language="english" country="EN" emailFormat="2"
+        mobilePhone="+447700123123">
+    <ctx>
+     <website name="eCommerce" url="http://www.eCo']]></detail>
+        </SOAP-ENV:Fault>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Voorbeeld van een gebeurtenis die is mislukt en die een nul-id heeft geretourneerd (onjuiste methodenaam):
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
-            <plId xsi:type="xsd:long">0</plId>
-         </urn:PushEventResponse>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
+           <plId xsi:type="xsd:long">0</plId>
+        </urn:PushEventResponse>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```

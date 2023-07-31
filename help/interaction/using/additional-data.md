@@ -2,15 +2,16 @@
 product: campaign
 title: Aanvullende gegevens
 description: Aanvullende gegevens
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 0%
+source-wordcount: '724'
+ht-degree: 1%
 
 ---
 
@@ -115,7 +116,7 @@ Tijdens een vraag aan de motor, kunt u extra gegevens in de propositietabel opsl
 
 >[!NOTE]
 >
->U moet de **nms:propositionRcp** en de velden gedeclareerd die de gegevens bevatten die moeten worden opgeslagen. Voor meer informatie hierover: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
+>U moet de **nms:propositionRcp** en declareert de velden die de op te slaan gegevens bevatten. Voor meer informatie hierover: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
 Ga in de aanbiedingsruimte naar de **[!UICONTROL Storage]** en klik op de knop **[!UICONTROL Add]** knop.
 

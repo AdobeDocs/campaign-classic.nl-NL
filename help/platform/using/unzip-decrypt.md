@@ -2,16 +2,17 @@
 product: campaign
 title: Een bestand ontsleutelen of ontsleutelen
 description: Leer hoe u een bestand in Campagne decodeert of decodeert voordat u het verwerkt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Workflows
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 10%
+source-wordcount: '725'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 10%
 
 
 
-Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen.
+Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
 
 Om dit te kunnen doen:
 
@@ -29,10 +30,10 @@ Om dit te kunnen doen:
    >
    >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
    >
-   >Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+   >Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
-1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
+1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
 
 Vervolgens kunt u de gewenste voorverwerkingsopdrachten in uw workflows gebruiken:
 
@@ -50,13 +51,13 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 * [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md).
 * [Een bestand comprimeren of versleutelen](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-## Hoofdlettergebruik: Gegevens importeren die zijn versleuteld met een sleutel die is gegenereerd door het Configuratiescherm {#use-case-gpg-decrypt}
+## Hoofdlettergebruik: gegevens importeren die zijn versleuteld met een toets die is gegenereerd door Configuratiescherm {#use-case-gpg-decrypt}
 
 In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in een extern systeem zijn gecodeerd, gebruikend een sleutel die in het Controlebord wordt geproduceerd.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#video)
 
-De volgende stappen worden uitgevoerd:
+De volgende stappen voor dit gebruik zijn nodig:
 
 1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
@@ -71,8 +72,8 @@ De volgende stappen worden uitgevoerd:
 
    ![](assets/gpg_import_workflow.png)
 
-   * **[!UICONTROL File transfer]** activiteit: Hiermee wordt het bestand van een externe bron naar Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
-   * **[!UICONTROL Data loading (file)]** activiteit: Laadt de gegevens van het dossier in het gegevensbestand en decrypteert het gebruikend de privé sleutel die in het Controlebord wordt geproduceerd.
+   * **[!UICONTROL File transfer]** activiteit: hiermee wordt het bestand van een externe bron naar Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
+   * **[!UICONTROL Data loading (file)]** activiteit: laadt de gegevens van het dossier in het gegevensbestand en decrypteert het gebruikend de privé sleutel die in het Controlebord wordt geproduceerd.
 
 1. Open de **[!UICONTROL File transfer]** Geef vervolgens de externe account op waaruit u het gecodeerde .gpg-bestand wilt importeren.
 
@@ -82,7 +83,7 @@ De volgende stappen worden uitgevoerd:
 
 1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading--file-.md).
 
-   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer hiervoor de optie **[!UICONTROL Pre-process the file]** en kopieert en plakt u deze decoderingsopdracht in het dialoogvenster **[!UICONTROL Command]** field:
+   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer de optie **[!UICONTROL Pre-process the file]** en kopieert en plakt u deze decoderingsopdracht in het dialoogvenster **[!UICONTROL Command]** field:
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 

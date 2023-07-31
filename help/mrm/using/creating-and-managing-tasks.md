@@ -2,14 +2,15 @@
 product: campaign
 title: Taken maken en beheren
 description: Taken maken en beheren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3736'
 ht-degree: 0%
 
 ---
@@ -66,7 +67,7 @@ Klikken **[!UICONTROL Save]** om de taak te maken.
 
 ![](assets/s_ncs_user_task_create_simple.png)
 
-U kunt ook een taak maken via het dashboard van een campagne: in dit geval wordt de steun automatisch gekoppeld aan de campagne die zij heeft opgezet .
+U kunt ook een taak maken via het dashboard van een campagne: in dit geval wordt de taak automatisch gekoppeld aan de campagne waarvan deze is gemaakt.
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
@@ -74,11 +75,11 @@ Nadat een taak wordt gecreeerd, wordt het toegevoegd aan het campagneprogramma e
 
 ![](assets/s_ncs_user_task_edit_simple.png)
 
-Om het te vormen, moet u wijzen op:
+Om het te vormen, moet u wijzen:
 
-* De manager en de deelnemers: verwijzen naar [Manager en deelnemers](#manager-and-participants).
-* Het schema voor het maken: verwijzen naar [Uitvoeringsschema](#execution-schedule).
-* Toegezegde kosten: verwijzen naar [Uitgaven en ontvangsten](#expenses-and-revenues).
+* De manager en de deelnemers: verwijs naar [Manager en deelnemers](#manager-and-participants).
+* Het aanmaakschema: zie [Uitvoeringsschema](#execution-schedule).
+* Vastgelegde kosten: zie [Uitgaven en ontvangsten](#expenses-and-revenues).
 
 Het is ook mogelijk om revisoren toe te voegen (zie [Revisoren](#reviewers)) en documenten waarnaar wordt verwezen (zie [Documenten waarnaar wordt verwezen](#documents-referenced)).
 
@@ -88,7 +89,7 @@ De levenscyclus van taken wordt weergegeven in [Levenscyclus](#life-cycle).
 
 Alleen de exploitant die met een taak is belast, mag deze sluiten.
 
-Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automatisch toegewezen aan deze beheerders. Als u een andere operator wilt selecteren, gebruikt u de opdracht **[!UICONTROL Assigned to]** veld.
+Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automatisch toegewezen aan deze beheerders. Als u een andere operator wilt selecteren, gebruikt u de **[!UICONTROL Assigned to]** veld.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -102,7 +103,7 @@ Ze worden geselecteerd met de opdracht **[!UICONTROL Resources]** in de taakwerk
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
-Klikken **[!UICONTROL Ok]** en voer vervolgens de gebruiksfrequentie in: dit vertegenwoordigt de lading die aan de exploitant voor de duur van taakuitvoering wordt toegewezen. Dit percentage is slechts een indicatie en wordt uitgedrukt als een percentage.
+Klikken **[!UICONTROL Ok]** en voer vervolgens de gebruiksfrequentie in: dit geeft de belasting weer die aan de operator is toegewezen voor de duur van de uitvoering van de taak. Dit percentage is slechts een indicatie en wordt uitgedrukt als een percentage.
 
 Voor een taak waarvan het uitvoeringsschema bijvoorbeeld op 10 dagen is vastgesteld, zal een exploitant met een gebruiksfrequentie van 50% op deze taak voor de helft van zijn werktijd voor de tien dagen worden gemobiliseerd.
 
@@ -210,7 +211,7 @@ Wanneer een dienstverlener wordt geselecteerd, wordt het getoond in het taakdash
 
 ### Te late taken {#late-tasks}
 
-Een taak is te laat als de einddatum is bereikt zonder dat de status verandert in **[!UICONTROL Finished]**. Standaard wordt geen enkele operator gewaarschuwd wanneer een taak te laat is. U kunt de levering van een bericht-e-mail configureren: alle exploitanten kunnen op de hoogte worden gesteld , ook al zijn zij niet bij de taak betrokken .
+Een taak is te laat als de einddatum is bereikt zonder dat de status verandert in **[!UICONTROL Finished]**. Door gebrek, wordt geen exploitant gewaarschuwd wanneer een taak te laat is. U kunt de levering van een bericht-e-mail configureren: alle operatoren kunnen op de hoogte worden gesteld, zelfs als ze niet bij de taak zijn betrokken.
 
 Ga naar de **[!UICONTROL Resources]** en voegt de operator toe aan de **[!UICONTROL Assignation]** veld. Selecteer een groep operatoren om meerdere personen op de hoogte te stellen.
 
@@ -224,7 +225,7 @@ Wanneer u een taak maakt of wijzigt met een begindatum in de toekomst, biedt Ado
 
 Nochtans, als de taak u creeert ver weg is, kan het verkieslijk zijn om het bericht te plannen dat moet worden verzonden alvorens de taak begint. Als de taak bijvoorbeeld binnen een maand begint, kunt u de verantwoordelijke persoon één week voordat deze begint op de hoogte stellen.
 
-Als u een melding wilt plannen, gaat u naar de **[!UICONTROL Resources]** en de **[!UICONTROL Initial notification]** veld.
+Als u een melding wilt plannen, gaat u naar **[!UICONTROL Resources]** en de **[!UICONTROL Initial notification]** veld.
 
 ![](assets/mrm_task_alert_before.png)
 
@@ -239,8 +240,8 @@ U kunt taken rechtstreeks in een programma maken om acties te beheren die betrek
 
 Een taak maken die rechtstreeks aan een programma is gekoppeld:
 
-1. Open het programma: Ga op de homepage naar **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. Het algemene programma wordt geopend in het rechtergedeelte van het venster.
-1. Klik in het programma op het gewenste programma: er verschijnt een venster met het programma erin .
+1. Open het programma schema: ga op de homepage naar **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. Het algemene programma wordt geopend in het rechtergedeelte van het venster.
+1. Klik in het programma op het gewenste programma: er verschijnt een venster met het programma.
 1. Klik in dit venster op **[!UICONTROL Open]**. Het programma wordt geopend.
 1. Klik op de knop **[!UICONTROL Add]** klikt u rechts boven het schema en vervolgens op **[!UICONTROL Add a task]**.
 
@@ -258,7 +259,7 @@ Een **[!UICONTROL Task]** het element in een campagnewerkschema laat u toe om tw
 
 ![](assets/mrm_task_in_workflow.png)
 
-In de campagneworkflows worden de **[!UICONTROL Task]** activiteit wordt gevonden in **[!UICONTROL Flow control]** tab.
+In de campagneworkflows worden de **[!UICONTROL Task]** activiteit wordt gevonden in de **[!UICONTROL Flow control]** tab.
 
 ## Typen taken {#types-of-task}
 
@@ -280,7 +281,7 @@ De volgende taken kunnen worden gepland:
 
 ### Taken beheren {#control-tasks}
 
-A **[!UICONTROL Control task]** is gekoppeld aan de goedkeuring van de levering: goedkeuring van de bestemming, de inhoud, het extractiebestand, het budget of het bewijs.
+A **[!UICONTROL Control task]** is gekoppeld aan de goedkeuring van de levering: goedkeuring van doelwit, inhoud, extractiebestand, budget of bewijs.
 
 ![](assets/s_ncs_user_task_new_control.png)
 
@@ -298,35 +299,35 @@ Een marketing middelaanmaaktaak kan worden gebruikt om de verwezenlijking en de 
 * Bekijk het proces van de middelverwezenlijking in een programma.
 * Het maken van bronnen beheren (herinneringen, meldingen).
 * Berekenen en controleren van de kosten in verband met het creëren van bronnen.
-* Goedkeuren en publiceren van de bron via de taak (als de relevante optie is ingeschakeld).
+* De bron goedkeuren en publiceren via de taak (als de relevante optie is ingeschakeld).
 
 #### Interactie tussen de taak en de daaraan gekoppelde bron {#interaction-between-the-task-and-its-linked-resource}
 
 De het creëren van marketingmiddelen taak staat in wisselwerking met het middel verbonden aan het. Dit betekent:
 
 * Het programma voor het aanmaken van bronnen en de bijbehorende kosten worden via de taak beheerd.
-* Operatoren kunnen aan de bron werken zoals normaal (downloaden of uploaden, vergrendelen en ontgrendelen): dit heeft geen invloed op de taak .
-* Goedkeuring en publicatie van bronnen kunnen worden uitgevoerd via de taak: als de **[!UICONTROL Publish the marketing resource]** wordt toegelaten, wordt het middel goedgekeurd en gepubliceerd automatisch zodra de taak wordt gebeëindigd. Als de optie niet wordt toegelaten, werken de taak en het middel niet: de ene actie heeft geen invloed op de andere.
+* Operatoren kunnen aan de bron werken zoals normaal (downloaden of uploaden, vergrendelen en ontgrendelen): dit heeft geen invloed op de taak.
+* Goedkeuring en publicatie van bronnen kunnen worden uitgevoerd via de taak: als de **[!UICONTROL Publish the marketing resource]** wordt toegelaten, wordt het middel goedgekeurd en gepubliceerd automatisch zodra de taak wordt gebeëindigd. Als de optie niet wordt toegelaten, zullen de taak en het middel niet in wisselwerking staan: handelend op één zal niet andere beïnvloeden.
 
-   U kunt een reeks gekoppelde taken gebruiken om een volledige goedkeuringscyclus te definiëren. Controleer de **[!UICONTROL Publish the marketing resource]** alleen voor de laatste taak: alle taken moeten zijn voltooid om de bron te kunnen publiceren . Bovendien wanneer u een kind marketing middeltaak creeert, zal het middel automatisch in de kindtaak worden geselecteerd.
+  U kunt een reeks gekoppelde taken gebruiken om een volledige goedkeuringscyclus te definiëren. Controleer de **[!UICONTROL Publish the marketing resource]** alleen voor de laatste taak: alle taken moeten zijn voltooid voordat de bron kan worden gepubliceerd. Bovendien wanneer u een kind marketing middeltaak creeert, zal het middel automatisch in de kindtaak worden geselecteerd.
 
-   * **Via de bron**: als u de bron ter goedkeuring voorlegt of goedkeurt , hebben deze acties geen invloed op de taak .
-   * **Via de taak**: als de **[!UICONTROL Publish the marketing resource]** Deze optie wordt in de taak gecontroleerd, wordt de bron goedgekeurd en automatisch gepubliceerd zodra de taak is voltooid (zie hierboven). Als de optie niet wordt gecontroleerd, zullen de taak en het middel niet in wisselwerking staan: de ene actie heeft geen invloed op de andere.
+   * **Via de bron**: als u de bron ter goedkeuring indient of goedkeurt, hebben deze acties geen invloed op de taak.
+   * **Via de taak**: als de **[!UICONTROL Publish the marketing resource]** Deze optie wordt in de taak gecontroleerd, wordt de bron goedgekeurd en automatisch gepubliceerd zodra de taak is voltooid (zie hierboven). Als de optie niet wordt gecontroleerd, zullen de taak en het middel niet in wisselwerking staan: handelend op één zal niet andere beïnvloeden.
 
 #### Een taak voor het maken van marketingbronnen configureren {#configuring-a-marketing-resource-creation-task}
 
-De persoon die de taak controleert is niet noodzakelijk de zelfde persoon die de inhoud controleert die in het middel wordt bepaald. Als de **[!UICONTROL Publish the marketing resource]** wordt gecontroleerd (zie hieronder), wordt de taakcontroleur gemachtigd om de middelinhoud goed te keuren, aangezien het voltooien van de taak automatisch het middel goedkeurt (of, als geen recensent wordt bepaald, de taakmanager).
+De persoon die de taak controleert is niet noodzakelijk de zelfde persoon die de inhoud controleert die in het middel wordt bepaald. Als de **[!UICONTROL Publish the marketing resource]** wordt gecontroleerd (zie hieronder), wordt de taakrecensent gemachtigd om de middelinhoud goed te keuren, aangezien het voltooien van de taak automatisch het middel goedkeurt (of, als geen recensent wordt bepaald, de taakmanager).
 
 ![](assets/mrm_task_asset_creation.png)
 
 In de **[!UICONTROL Marketing resource]** veld, definieert u de bron die u via deze taak wilt beheren. U kunt:
 
-* Selecteer een bestaande bron: de drop-down lijst biedt alle middelen met de status aan **[!UICONTROL Being edited]**.
-* Een bron maken: klik op **[!UICONTROL Select the link]** klikt u op het pictogram **[!UICONTROL Create]** pictogram.
+* Selecteer een bestaande bron: de vervolgkeuzelijst biedt alle bronnen de status **[!UICONTROL Being edited]**.
+* Een bron maken: klik op de knop **[!UICONTROL Select the link]** klikt u vervolgens op het pictogram **[!UICONTROL Create]** pictogram.
 
-De **[!UICONTROL Publish the marketing resource]** Met deze optie kunt u het publiceren van bronnen automatiseren: zodra de taak **[!UICONTROL Finished]**, schakelt de status van de bron automatisch over op **[!UICONTROL Published]**, zelfs als deze niet ter goedkeuring of goedkeuring is ingediend, ook als de controleur die de taak voltooit, niet de inhoudrevisor is die in de bron is gedefinieerd.
+De **[!UICONTROL Publish the marketing resource]** met deze optie kunt u het publiceren van bronnen automatiseren: zodra de taak is uitgevoerd **[!UICONTROL Finished]**, schakelt de status van de bron automatisch over op **[!UICONTROL Published]**, zelfs als deze niet ter goedkeuring of goedkeuring is ingediend, ook als de controleur die de taak voltooit, niet de inhoudrevisor is die in de bron is gedefinieerd.
 
-De **[!UICONTROL Publish the resource]** de knop wordt beschikbaar gesteld en de revisor van de publicatie-resource ontvangt een e-mailbericht waarin hij of zij weet dat het klaar is om te worden gepubliceerd. In de **[!UICONTROL Edit > Tracking]** tabblad wordt het reviseren en publiceren door de taakcontroleur zichtbaar. Als een workflow voor de naverwerking van bronnen is gedefinieerd, wordt deze nu uitgevoerd.
+De **[!UICONTROL Publish the resource]** de knop wordt beschikbaar gesteld en de revisor van de publicatie-resource ontvangt een e-mailbericht waarin hij of zij weet dat het klaar is om te worden gepubliceerd. In de **[!UICONTROL Edit > Tracking]** tabblad wordt het reviseren en publiceren door de taakcontroleur zichtbaar. Als er een workflow voor de naverwerking van bronnen is gedefinieerd, wordt deze nu uitgevoerd.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -336,7 +337,7 @@ De **[!UICONTROL Grouping task]** met typetaak kunt u verschillende taken groepe
 
 Groeperingstaken hebben geen gekoppelde uitgaven of middelen.
 
-Alle taken die aan een groeperingstaak worden gegroepeerd kunnen op zijn eigen dashboard worden gezien. Hiermee kunt u de lijst met taken filteren en alleen de taken weergeven die u interesseren.
+Alle taken die aan een groeperingstaak worden gegroepeerd, kunnen op zijn eigen dashboard worden gezien. Hiermee kunt u de lijst met taken filteren en alleen de taken weergeven die u interesseren.
 
 Groeperingstaken hebben een koppeling waarmee u eenvoudig een gegroepeerde taak kunt maken.
 
@@ -350,7 +351,7 @@ Als u echter al een taak hebt gemaakt die u wilt koppelen aan een groeperingstaa
 
 ### Meldingstaak {#notification-task}
 
-Met behulp van meldingstaken kunt u e-mailleveringen plannen (aan een operator, een groep operatoren, een serviceprovider, enzovoort). Hiermee kunt u herinneringen plannen, bijvoorbeeld om iemand te laten weten dat een campagne binnenkort wordt voltooid, of om documenten te verzenden voordat een campagne wordt gestart, zodat de operatoren deze kunnen voorbereiden. Dit betekent dat u uw communicatie binnen uw campagne of programma kunt bijhouden en de uitgevoerde acties beter in het oog kunt houden.
+Met behulp van meldingstaken kunt u e-mailleveringen plannen (aan een operator, een groep operatoren, een serviceprovider, enzovoort). Hiermee kunt u herinneringen plannen, bijvoorbeeld om iemand te laten weten dat een campagne binnenkort wordt voltooid, of om documenten te verzenden voordat een campagne wordt gestart, zodat exploitanten deze kunnen voorbereiden. Dit betekent dat u uw communicatie binnen uw campagne of programma kunt bijhouden en de uitgevoerde acties beter in het oog kunt houden.
 
 #### Levenscyclus {#life-cycle}
 
@@ -370,12 +371,12 @@ Een meldingstaak kan de volgende statussen hebben:
 
 Tijdens het creëren, moeten de volgende elementen in de taak zijn ingegaan:
 
-* **[!UICONTROL Assigned to]** : de exploitant of de groep exploitanten die de e-mail zullen ontvangen. Als u de taak opnieuw toewijst nadat de e-mail is verzonden, wordt de e-mail niet verzonden naar de nieuwe operator (hiervoor moet u de taak opnieuw initialiseren en de begindatum wijzigen).
-* **Begindatum van taak**: de datum waarop de e-mail met de melding wordt verzonden. Deze datum moet in de toekomst plaatsvinden op het moment van de registratie van de taak.
+* **[!UICONTROL Assigned to]** : de exploitant of de groep van exploitanten die de e-mail zullen ontvangen. Als u de taak opnieuw toewijst nadat de e-mail is verzonden, wordt de e-mail niet verzonden naar de nieuwe operator (hiervoor moet u de taak opnieuw initialiseren en de begindatum wijzigen).
+* **Begindatum van taak**: datum waarop de e-mail met de melding wordt verzonden. Deze datum moet in de toekomst plaatsvinden op het moment van de registratie van de taak.
 * **Einddatum taak**: datum waarop de taakstatus verandert in **[!UICONTROL Finished]**. Standaard is de einddatum gelijk aan de begindatum. Nochtans, laat het toewijzen van een duur aan de taak u de hoeveelheid tijd symboliseren die de exploitant in het programma moet handelen, indien nodig.
-* **[!UICONTROL Description]** : de hier ingevoerde tekst wordt in de tekst van het e-mailbericht vermeld .
+* **[!UICONTROL Description]** : de hier ingevoerde tekst wordt weergegeven in de tekst van de e-mail met kennisgeving.
 
-   ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![](assets/mrm_task_notif_dashboard_msg.png)
 
 U kunt een bijlage aan de taak en aan het bericht e-mail toevoegen. Om dit te doen, klik **[!UICONTROL Documents]** in de werkbalk in de rechterbovenhoek.
 
@@ -409,13 +410,13 @@ De afhankelijkheid tussen taken wordt vertegenwoordigd door pijlen in het campag
 
 In het geval van gegroepeerde taken, wijst Adobe Campaign automatisch de einddatum van de oudertaak aan de kindtaak als begindatum toe. Bijvoorbeeld als een **Uitnodiging maken** De taak eindigt op 15 oktober om 15.30 uur, de **Uitnodiging-e-mail verzenden** De kindertaak begint op 15 oktober om 15.30 uur.
 
-Bovendien als u het eind van een oudertaak uitstelt, kunnen sommige van zijn kindtaken worden beïnvloed: dit zijn de onderliggende taken waarvan de status **[!UICONTROL Scheduled]** en waarvan de begindatum eerder is dan de nieuwe einddatum van de bovenliggende taak. De duur van de taak blijft ongewijzigd. Als de begindatum van een kindtaak later dan de nieuwe einddatum van de oudertaak is, wordt de kindtaak niet beïnvloed.
+Bovendien, als u het eind van een oudertaak uitstelt, kunnen sommige van zijn kindtaken worden beïnvloed: dit zijn de kindtaken de waarvan status is **[!UICONTROL Scheduled]** en waarvan de begindatum eerder is dan de nieuwe einddatum van de bovenliggende taak. De duur van de taak blijft ongewijzigd. Als de begindatum van een kindtaak later dan de nieuwe einddatum van de oudertaak is, wordt de kindtaak niet beïnvloed.
 
 **Voorbeeld**
 
-Een oudertaak die op 9 oktober om 5 PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A moet op 10 oktober om 2 uur beginnen en taak B moet op 12 oktober om 8.00 uur beginnen.
+Een oudertaak die op 9 Oktober om 5 PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A is gepland om op 10 Oktober te beginnen om 2 PM en taak B is gepland om op 12 oktober om 8.00 te beginnen.
 
-Laten we de bovenliggende taak uitstellen: het loopt nu af op 11 oktober om 13.00 uur. Alleen taak A wordt uitgesteld en begint op 11 oktober om 13.00 uur.
+Laten we de bovenliggende taak uitstellen: deze loopt nu af op 11 oktober om 13.00 uur. Alleen taak A wordt uitgesteld en begint op 11 oktober om 13.00 uur.
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -434,9 +435,8 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 >[!NOTE]
 >
 >* De taakstatus wordt automatisch bijgewerkt.
->* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+>* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met lopende taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
 >
-
 
 ### Voortgangsstatus van een taak {#progress-status-of-a-task}
 
@@ -466,7 +466,7 @@ Hieronder staan de fasen van een volledige taaklevenscyclus waarvoor de verantwo
    * via het e-mailbericht.
    * via de console of de webinterface, in het taakdashboard.
 
-      ![](assets/s_ncs_user_task_start_rea.png)
+     ![](assets/s_ncs_user_task_start_rea.png)
 
 1. Telkens wanneer een deelnemer een taak goedkeurt, wordt de voortgangsstatus van de taak bijgewerkt.
 
@@ -501,7 +501,7 @@ Hieronder staan de fasen van een volledige taaklevenscyclus waarvoor de verantwo
    >[!NOTE]
    >
    >De taakstatus verandert alleen in **[!UICONTROL To approve]** als u de **[!UICONTROL Enable task validation]** in de **[!UICONTROL Resources]** venster van de taak.\
-   >Als de controleur de taak afwijst, verandert de status in **[!UICONTROL Rejected]** en de taaklevenscyclus wordt automatisch opnieuw gestart.
+   >Als de controleur de taak afwijst, verandert de status in **[!UICONTROL Rejected]** en de levenscyclus van de taak wordt automatisch opnieuw gestart.
 
 1. De taakstatus verandert in **[!UICONTROL Finished]**. Aan alle betrokkenen wordt een kennisgeving gezonden.
 

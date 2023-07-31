@@ -2,17 +2,18 @@
 product: campaign
 title: De migratie testen
 description: De migratie testen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +39,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
    >[!NOTE]
    >
-   >De opdracht wordt standaard gestart **drogen** en geeft een overzicht van alle aanvragen die door die opdracht zijn uitgevoerd, zonder deze te starten. Gebruik **run** in de opdracht.
+   >De opdracht wordt standaard gestart **drogen** en geeft een overzicht van alle aanvragen die door die opdracht zijn uitgevoerd, zonder deze te starten. Gebruik voor het uitvoeren van waarschuwingen **run** in de opdracht.
 
 1. Zorg ervoor dat uw back-ups correct zijn door ze te herstellen. Zorg ervoor dat u toegang hebt tot uw database, tabellen, gegevens, enzovoort.
 1. Test de migratieprocedure in de ontwikkelomgeving.
@@ -49,53 +50,52 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 >Vanwege wijzigingen in de gegevensstructuur is het niet mogelijk gegevenspakketten te importeren en te exporteren tussen een v5-platform en een v7-platform.
 
 
-## Migratiehulpmiddelen {#migration-tools}
+## Migratieprogramma&#39;s {#migration-tools}
 
 Met verschillende opties kunt u de impact van een migratie meten en de mogelijke problemen identificeren. Deze opties moeten worden uitgevoerd:
 
 * in de **config** opdracht:
 
-   ```
-   nlserver.exe config <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config <option> -instance:<instance-name>
+  ```
 
 * of na de upgrade:
 
-   ```
-   nlserver.exe config -postupgrade <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -postupgrade <option> -instance:<instance-name>
+  ```
 
 >[!NOTE]
 >
->* U moet de opdracht **-instance:`<instanceame>`** optie. We raden u niet aan het **-allinstances** optie.
->* De opdracht Adobe Campaign-update (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van bronnen, **postupgrade** laat u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
-
+>* U moet de opdracht **-instance:`<instanceame>`** -optie. We raden u niet aan het **-allinstances** -optie.
+>* De opdracht Adobe Campaign-update (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Nadat u bronnen hebt gesynchroniseerd, kunt u **postupgrade** laat u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
 ### Niet-standaard of ontbrekende objecten
 
 * De **-showCustomEntities** geeft de lijst met alle niet-standaardobjecten weer:
 
-   ```
-   nlserver.exe config -showCustomEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showCustomEntities -instance:<instance-name>
+  ```
 
-   Voorbeeld van een verzonden bericht:
+  Voorbeeld van een verzonden bericht:
 
-   ```
-   xtk_migration:opsecurity2 xtk:entity
-   ```
+  ```
+  xtk_migration:opsecurity2 xtk:entity
+  ```
 
 * De **-showDeletteEntities** geeft de lijst weer van alle standaardobjecten die ontbreken in de database of het bestandssysteem. Voor elk ontbrekend object wordt het pad opgegeven.
 
-   ```
-   nlserver.exe config -showDeletedEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showDeletedEntities -instance:<instance-name>
+  ```
 
-   Voorbeeld van een verzonden bericht:
+  Voorbeeld van een verzonden bericht:
 
-   ```
-   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
-   ```
+  ```
+  Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
+  ```
 
 ### Verificatieproces {#verification-process}
 
@@ -145,7 +145,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> new SoapMethodCall()<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone die zich in <strong>sessionTokenOnly</strong> in.<br /> </td> 
+   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone die zich in <strong>sessionTokenOnly</strong> -modus.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,7 +157,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM connectorimplementatietype zijn nu afgekeurd. 
+   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM de schakelaarplaatsingstype zijn nu afgekeurd. 
    </br>Als u een van deze verouderde implementatietypen gebruikt in een externe account, moet deze externe account worden verwijderd en moet u vervolgens het volgende uitvoeren <b>postupgrade</b> gebruiken. 
    </br>Als u wilt overschakelen op de webAPI-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
   </tr> 
@@ -174,7 +174,7 @@ Er wordt ook een coherentiecontrole van de database en het schema uitgevoerd.
 
 ### Herstellen, optie {#restoration-option}
 
-Met deze optie kunt u objecten die zich buiten het vak bevinden herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
+Met deze optie kunt u objecten uit de doos herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
 
 ```
 nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>

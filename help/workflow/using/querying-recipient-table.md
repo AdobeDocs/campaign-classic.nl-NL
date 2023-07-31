@@ -2,12 +2,12 @@
 product: campaign
 title: Een query uitvoeren op de tabel met ontvangers
 description: Leer hoe u een query uitvoert op de tabel met ontvangers
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 3%
 
 ---
@@ -20,19 +20,19 @@ In dit voorbeeld willen we de namen en e-mails herstellen van ontvangers wier e-
 
 * Welke tabel moeten we kiezen?
 
-   De tabel met ontvangers (nms:ontvanger)
+  De tabel met ontvangers (nms:ontvanger)
 
 * Velden die moeten worden geselecteerd als uitvoerkolommen
 
-   E-mail, naam, plaats en rekeningnummer
+  E-mail, naam, plaats en rekeningnummer
 
 * Wat zijn de filtervoorwaarden van de ontvangers?
 
-   Plaats en e-maildomein
+  Plaats en e-maildomein
 
 * Is een soort gevormd?
 
-   Ja, gebaseerd op **[!UICONTROL Account number]** en **[!UICONTROL Last name]**
+  Ja, gebaseerd op **[!UICONTROL Account number]** en **[!UICONTROL Last name]**
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
@@ -45,7 +45,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_04.png)
 
-1. In de **[!UICONTROL Data filtering]** venster, verfijnen uw zoekopdracht: kiezen **[!UICONTROL Filtering conditions]** en klik op **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Data filtering]** venster, verfijnen uw zoekopdracht: kies **[!UICONTROL Filtering conditions]** en klik op **[!UICONTROL Next]**.
 1. De **[!UICONTROL Target element]** kunt u de filterinstellingen invoeren.
 
    Definieer de volgende filtervoorwaarde: ontvangers met een e-maildomein dat gelijk is aan &quot;orange.co.uk&quot;. Kies **E-maildomein (@email)** in de **[!UICONTROL Expression]** kolom, kies **gelijk aan** in de **[!UICONTROL Operator]** kolom en voer &quot;orange.co.uk&quot; in in het dialoogvenster **[!UICONTROL Value]** kolom.
@@ -56,7 +56,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    Een samenvatting van de vraag wordt getoond bij de bodem van het venster: **E-maildomein is gelijk aan &#39;orange.co.uk&#39;**.
 
-1. Klik op de knop **[!UICONTROL Preview]** om een idee van het vraagresultaat te krijgen: alleen de e-maildomeinen &quot;orange.co.uk&quot; worden weergegeven.
+1. Klik op de knop **[!UICONTROL Preview]** om een idee van het vraagresultaat te krijgen: slechts &quot;orange.co.uk&quot;e-maildomeinen worden getoond.
 
    ![](assets/query_editor_nveau_17.png)
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Transactieberichtsjablonen ontwerpen
 description: Leer hoe u een transactiemalplaatje maakt en ontwerpt in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor h
 
 ## Berichtinhoud maken {#creating-message-content}
 
-De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. Voor een e-maillevering kunt u bijvoorbeeld inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie de [E-maillevering](../../delivery/using/about-email-channel.md) hoofdstuk
+De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. Voor een e-maillevering kunt u bijvoorbeeld inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie de [E-maillevering](../../delivery/using/about-email-channel.md) hoofdstuk.
 
 >[!IMPORTANT]
 >

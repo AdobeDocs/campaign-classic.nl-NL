@@ -2,14 +2,15 @@
 product: campaign
 title: Campaign Classic algemene architectuur
 description: Leer hoe u Campaign Classic installeert en configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -22,15 +23,15 @@ De gebruikelijke Adobe Campaign-implementatie van oplossingen bestaat uit de vol
 
 * **Persoonlijke clientomgeving**
 
-   Intuïtieve grafische interface waarin gebruikers marketingaanbiedingen kunnen communiceren en volgen, campagnes kunnen maken, alle marketingactiviteiten, programma&#39;s en plannen (inclusief e-mails, workflows en bestemmingspagina&#39;s) kunnen beoordelen en beheren, klantprofielen kunnen maken en beheren en klantsoorten kunnen definiëren.
+  Intuïtieve grafische interface waarin gebruikers marketingaanbiedingen kunnen communiceren en volgen, campagnes kunnen maken, alle marketingactiviteiten, programma&#39;s en plannen (inclusief e-mails, workflows en bestemmingspagina&#39;s) kunnen beoordelen en beheren, klantprofielen kunnen maken en beheren en klantsoorten kunnen definiëren.
 
 * **Ontwikkelingsomgeving**
 
-   Server-side software die de marketing campagnes door gekozen communicatie kanalen, met inbegrip van e-mail, SMS, dupberichten, direct mail, Web of sociaal uitvoert, op de regels en de werkschema&#39;s die in het gebruikersinterface worden bepaald.
+  Server-side software die de marketing campagnes door gekozen communicatie kanalen, met inbegrip van e-mail, SMS, dupberichten, direct mail, Web of sociaal uitvoert, op de regels en de werkschema&#39;s die in het gebruikersinterface worden bepaald.
 
 * **Databasecontainers**
 
-   Gebaseerd op relationele gegevensbestandtechnologie, slaat het gegevensbestand van Adobe Campaign alle klanteninformatie, campagnecomponenten, aanbiedingen en werkschema&#39;s, evenals campagneresultaten in de containers van het klantengegevensbestand op.
+  Gebaseerd op relationele gegevensbestandtechnologie, slaat het gegevensbestand van Adobe Campaign alle klanteninformatie, campagnecomponenten, aanbiedingen en workflows, evenals campagneresultaten in de containers van het klantengegevensbestand op.
 
 Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat uit verschillende functionele modules. Deze modules kunnen op één of meerdere computers, in enige of veelvoudige instanties, afhankelijk van beperkingen in termen van scalability, beschikbaarheid en de dienstisolatie worden opgesteld. Het werkingsgebied van plaatsingsconfiguraties is daarom zeer breed, en overspant één enkele, centrale computer door aan configuraties met inbegrip van veelvoudige specifieke servers over veelvoudige plaatsen.
 
@@ -46,10 +47,10 @@ Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat
 
 ## Presentatielaag {#presentation-layer}
 
-De toepassing kan op verschillende manieren worden benaderd, afhankelijk van de behoeften van de gebruikers: Rich client-, thin client- of API-integratie.
+De toepassing kan op verschillende manieren worden benaderd, afhankelijk van de behoeften van de gebruikers: rijke client, dunne client of API-integratie.
 
 * **Rijke client**: De hoofdgebruikersinterface van de toepassing is een rijke client, met andere woorden een native toepassing (Windows) die alleen communiceert met de Adobe Campaign-toepassingsserver met standaard internetprotocollen (SOAP, HTTP, enzovoort). Deze console biedt grote gebruiksvriendelijkheid voor productiviteit, gebruikt zeer weinig bandbreedte (door het gebruik van een lokale cache) en is ontworpen voor eenvoudige implementatie. Deze console kan vanuit een internetbrowser worden geïmplementeerd, kan automatisch worden bijgewerkt en vereist geen specifieke netwerkconfiguratie omdat alleen HTTP(S)-verkeer wordt gegenereerd.
-* **Dunne client**: Bepaalde delen van de toepassing zijn toegankelijk via een eenvoudige webbrowser met behulp van een gebruikersinterface van HTML, zoals de rapporteringsmodule, de goedkeuringsfasen van de levering, de functies van de module Distributed Marketing (centraal/lokaal), de controle van instanties, enz. Met deze modus kunt u Adobe Campaign-functies opnemen in een intranet of extranet.
+* **Dunne client**: Bepaalde delen van de toepassing kunnen worden benaderd via een eenvoudige webbrowser met behulp van een HTML-gebruikersinterface, zoals de rapporteringsmodule, de goedkeuringsfasen voor de levering, de functies van de Distributed Marketing-module (centraal/lokaal), de controle van instanties, enz. Deze wijze maakt het mogelijk om de functionaliteit van Adobe Campaign in een Intranet of een Extranet te omvatten.
 * **Integratie via de API&#39;s**: In bepaalde gevallen, kan het systeem van externe toepassing worden geroepen gebruikend de Diensten APIs van het Web die via het protocol van de ZEEP worden blootgesteld.
 
 ## Logische toepassingslaag {#logical-application-layer}
@@ -70,11 +71,11 @@ Het voert de werkschemaprocessen uit die in de toepassing worden bepaald.
 
 Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatten:
 
-* Tekstspatiëring: Trackinglogboeken herstellen en consolideren. Het laat u de logboeken van de omleidingsserver terugwinnen en de gezamenlijke indicatoren creëren die door de rapporteringsmodule worden gebruikt.
-* Overbodig verwijderen: Database reinigen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
-* Facturering: Automatisch verzenden van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
+* Tekstspatiëring: bijhouden van logbestanden herstellen en consolideren. Het laat u de logboeken van de omleidingsserver terugwinnen en de gezamenlijke indicatoren creëren die door de rapporteringsmodule worden gebruikt.
+* Overbodig verwijderen: Database opschonen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
+* Facturering: automatische verzending van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
 
-**Leveringsserver** (nlserver mta)
+**Leveringsserver** (nlserver-mta)
 
 Adobe Campaign heeft native functionaliteit voor e-mailuitzending. Dit proces functioneert als SMTP agent van de postoverdracht (MTA). Het voert &quot;één-op-één&quot;verpersoonlijking van berichten uit en behandelt hun fysieke levering. Het werkt met leveringstaken en handelt automatische pogingen af. Wanneer reeksspatiëring is ingeschakeld, worden de URL&#39;s automatisch vervangen, zodat ze naar de omleidingsserver verwijzen.
 
@@ -84,7 +85,7 @@ Dit proces kan de aanpassing en het automatische verzenden naar een derderouter 
 
 Voor e-mail, behandelt Adobe Campaign automatisch open en klikt het volgen (transactie het volgen op het niveau van de Website is een verdere mogelijkheid). Hiertoe worden de URL&#39;s die in de e-mailberichten zijn opgenomen, herschreven zodat ze naar deze module verwijzen. Deze module registreert het doorgeven van de internetgebruiker voordat deze naar de vereiste URL wordt doorgestuurd.
 
-Om de hoogste beschikbaarheid te garanderen, is dit proces volledig onafhankelijk van het gegevensbestand: de andere serverprocessen communiceren ermee met behulp van alleen SOAP-aanroepen (HTTP, HTTP(S) en XML). Technisch, wordt deze functionaliteit uitgevoerd in een uitbreidingsmodule van een server van HTTP (ISAPI uitbreiding in IIS, of een module van DSO Apache, enz.) en is alleen beschikbaar in Windows.
+Om de hoogste beschikbaarheid te garanderen, is dit proces volledig onafhankelijk van de database: de andere serverprocessen communiceren ermee met behulp van alleen SOAP-aanroepen (HTTP, HTTP(S) en XML). Technisch, wordt deze functionaliteit uitgevoerd in een uitbreidingsmodule van een server van HTTP (ISAPI uitbreiding in IIS, of een module van DSO Apache, enz.) en is alleen beschikbaar in Windows.
 
 Er zijn ook andere meer technische processen beschikbaar:
 

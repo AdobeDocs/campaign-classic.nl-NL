@@ -2,13 +2,13 @@
 product: campaign
 title: Een analyserapport gebruiken
 description: Een analyserapport gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Als u wijzigingen in dit rapport wilt aanbrengen, bewerkt u de **[!UICONTROL Adm
 
 ## Aanvullende instellingen voor analyserapport {#analysis-report-additional-settings}
 
-Nadat u een beschrijvend analyserapport hebt opgeslagen, kunt u de eigenschappen ervan bewerken en aanvullende opties openen.
+Nadat u een beschrijvend analyserapport hebt opgeslagen, kunt u de eigenschappen van het rapport bewerken en aanvullende opties openen.
 
 ![](assets/s_ncs_user_report_wizard_08b.png)
 
@@ -53,7 +53,7 @@ Wanneer u een rapport maakt met de opdracht **[!UICONTROL qualitative distributi
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-Als u het schema van het rapport wilt wijzigen, klikt u op de knop **[!UICONTROL Select the link]** en selecteer een andere tabel in de database.
+Om het schema van het rapport te veranderen, klik **[!UICONTROL Select the link]** en selecteer een andere tabel in de database.
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -71,7 +71,7 @@ Hun naam zal in het rapport worden getoond.
 
 ![](assets/s_ncs_advuser_report_display_07.png)
 
-Als u echter de controle van het label en de optie voor het subtotaal weergeven ongedaan maakt, zijn deze niet zichtbaar in het rapport. De naam wordt als knopinfo weergegeven wanneer u de cursor op een cel van de tabel plaatst.
+Als u echter de controle van het label en de optie voor het subtotaal weergeven ongedaan maakt, zijn deze niet zichtbaar in het rapport. De naam wordt als knopinfo weergegeven wanneer u de muisaanwijzer op een cel van de tabel plaatst.
 
 ![](assets/s_ncs_advuser_report_display_08.png)
 
@@ -94,11 +94,11 @@ U kunt de gegevenslay-out rechtstreeks in de beschrijvende analystabel aanpassen
 * **[!UICONTROL Sort from A to Z]** als u de variabelewaarden laag tot hoog wilt sorteren.
 * **[!UICONTROL Sort from Z to A]** als u de waarden van de variabele hoog naar laag wilt sorteren.
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 Als u wilt terugkeren naar de oorspronkelijke weergave, vernieuwt u de weergave.
 
-### Opties in het diagram met analyserapporten {#analysis-report-chart-options}
+### Opties in het overzichtsrapport {#analysis-report-chart-options}
 
 Het is mogelijk om de weergave van gegevens in het diagram aan te passen. Om dit te doen, klik **[!UICONTROL Variables...]** koppeling beschikbaar tijdens het selectiestadium van het diagramtype.
 
@@ -107,15 +107,15 @@ Het is mogelijk om de weergave van gegevens in het diagram aan te passen. Om dit
 De volgende opties zijn beschikbaar:
 
 * In de bovenste sectie van het venster kunt u het weergavegebied van het diagram wijzigen.
-* Standaard worden labels weergegeven in het diagram. U kunt deze verbergen door het selectievakje **[!UICONTROL Show values]** optie.
+* Standaard worden labels weergegeven in het diagram. U kunt deze verbergen door het selectievakje **[!UICONTROL Show values]** -optie.
 * De **[!UICONTROL Accumulate values]** Met deze optie kunt u waarden van de ene reeks toevoegen aan de andere.
-* U kunt beslissen of u de legenda van het diagram wilt weergeven: om het te verbergen, uncheck de aangewezen optie. Standaard wordt de legenda buiten het diagram in de rechterbovenhoek weergegeven.
+* U kunt beslissen of u de diagramlegenda wilt weergeven: als u deze wilt verbergen, schakelt u de desbetreffende optie uit. Standaard wordt de legenda buiten het diagram in de rechterbovenhoek weergegeven.
 
-   De legenda kan ook boven op het diagram worden weergegeven om op weergaveruimte te besparen. Selecteer de optie om dit te doen **[!UICONTROL Include in the chart]**
+  De legenda kan ook boven op het diagram worden weergegeven om op weergaveruimte te besparen. Selecteer de optie **[!UICONTROL Include in the chart]**
 
-   Selecteer de verticale en horizontale uitlijning in het dialoogvenster **[!UICONTROL Caption position]** vervolgkeuzelijst.
+  Selecteer de verticale en horizontale uitlijning in het dialoogvenster **[!UICONTROL Caption position]** vervolgkeuzelijst.
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## Een analyserapport exporteren {#exporting-an-analysis-report}
 
@@ -127,7 +127,7 @@ Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md) voor meer i
 
 ## Bestaande rapporten en analyses opnieuw gebruiken {#re-using-existing-reports-and-analyses}
 
-U kunt beschrijvende analyserapporten over gegevens maken met bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
+U kunt beschrijvende analyserapporten over gegevens maken aan de hand van bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
 
 Als u wilt weten hoe u beschrijvende analyses kunt opslaan, raadpleegt u [Een analyserapport opslaan](#saving-an-analysis-report).
 

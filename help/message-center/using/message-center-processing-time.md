@@ -2,15 +2,16 @@
 product: campaign
 title: Verwerkingstijd van het Berichtencentrum
 description: Meer informatie over de verwerkingstijd van Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij.
 
-Dit rapport, dat gericht is op technische beheerders, is ook toegankelijk via **[!UICONTROL Monitoring]** op de besturingsinstantie.
+Dit rapport, dat gericht is op technische beheerders, is ook toegankelijk via de **[!UICONTROL Monitoring]** op de besturingsinstantie.
 
 ![](assets/mc_reports_2.png)
 

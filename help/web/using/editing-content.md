@@ -2,13 +2,13 @@
 product: campaign
 title: Content bewerken
 description: Content bewerken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Een zichtbaarheidsvoorwaarde definiëren {#defining-a-visibility-condition}
 
-U kunt een zichtbaarheidsvoorwaarde opgeven voor een webpagina-element: dit element is alleen zichtbaar als aan de voorwaarde wordt voldaan .
+U kunt een zichtbaarheidsvoorwaarde opgeven op een webpagina-element: dit element is alleen zichtbaar als aan de voorwaarde wordt voldaan.
 
 Als u een zichtbaarheidsvoorwaarde wilt toevoegen, selecteert u een blok en voert u de voorwaarde in het dialoogvenster **[!UICONTROL Visibility condition]** veld met de expressie-editor.
 
@@ -75,11 +75,11 @@ Dit doet u als volgt:
 
 * Klik op de knop **[!UICONTROL Edit]** pictogram.
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
 * Voer de opgegeven lijstwaarde (gedefinieerd door het geselecteerde veld) in in het dialoogvenster **[!UICONTROL Value]** veld.
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### Formuliervelden wijzigen {#modifying-form-fields}
 
@@ -91,7 +91,7 @@ Dit betekent dat u:
 * Het geselecteerde veld dupliceren door een nieuw blok te maken met het gereedschap **[!UICONTROL Duplicate]** pictogram.
 * Bewerk de **[!UICONTROL Form data]** venster voor het koppelen van een databaseveld aan de formulierzone met behulp van de **[!UICONTROL Edit]** pictogram.
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## Een handeling aan een knop toevoegen {#adding-an-action-to-a-button}
 
@@ -101,8 +101,8 @@ Wanneer de gebruiker op een knop klikt, kunt u een bijbehorende actie definiëre
 
 De beschikbare acties zijn als volgt:
 
-* **[!UICONTROL Refresh]** : Hiermee vernieuwt u de huidige pagina.
-* **[!UICONTROL Next page]** : leidt tot een verbinding aan de volgende pagina in de toepassing van het Web.
+* **[!UICONTROL Refresh]** : vernieuwt de huidige pagina.
+* **[!UICONTROL Next page]** : maakt een koppeling naar de volgende pagina in de webtoepassing.
 * **[!UICONTROL Previous page]** : maakt een koppeling naar de vorige pagina in de webtoepassing.
 
 >[!NOTE]
@@ -113,7 +113,7 @@ U kunt het label dat aan de knop is gekoppeld, wijzigen in het desbetreffende ve
 
 ## Een koppeling toevoegen {#adding-a-link}
 
-U kunt een koppeling invoegen in elk pagina-element: afbeelding, woord, groep woorden, tekstblok, enz.
+U kunt een koppeling invoegen in elk pagina-element: afbeelding, woord, groep woorden, tekstblok, enzovoort.
 
 Selecteer hiertoe het element en gebruik vervolgens het eerste pictogram in het pop-upmenu.
 
@@ -127,7 +127,7 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 
 >[!NOTE]
 >
->Voor elk type verbinding, kunt u de openingswijze vormen: Selecteer het doelvenster in het dialoogvenster **Doel** vervolgkeuzelijst. Deze waarde komt overeen met de **`<target>`** HTML-tag.
+>Voor elk type koppeling kunt u de openingsmodus configureren: selecteer het doelvenster in het dialoogvenster **Doel** vervolgkeuzelijst. Deze waarde komt overeen met de **`<target>`** HTML-tag.
 >
 >De lijst met beschikbare **streefdoelen** is als volgt:
 >
@@ -138,7 +138,6 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >* Huidig venster (_zelf)
 >* Standaardbrowsergedrag
 >
-
 
 ### Koppeling maken naar een URL {#link-to-a-url}
 
@@ -187,23 +186,22 @@ Wanneer u een tekstelement selecteert, kunt u lettertypekenmerken (stijl, opmaak
 
 De beschikbare opties zijn als volgt:
 
-* **Lettertype vergroten** pictogram: Hiermee vergroot u de grootte van de geselecteerde tekst (voeg `<span style="font size:">`)
-* **Lettertype reduceren** pictogram: Hiermee verkleint u de grootte van de geselecteerde tekst (toevoegen) `<span style="font size:">`)
-* **Vet** pictogram: maakt geselecteerde tekst vet (omlooptekst met de `<strong> </strong>` tag)
+* **Lettertype vergroten** pictogram: vergroot de grootte van de geselecteerde tekst (voeg toe) `<span style="font size:">`)
+* **Lettertype reduceren** pictogram: verkleint de grootte van de geselecteerde tekst (toevoegen) `<span style="font size:">`)
+* **Vet** pictogram: hiermee wordt geselecteerde tekst vet gemaakt (omlooptekst met de `<strong> </strong>` tag)
 * **Cursief** pictogram: maakt geselecteerde tekst cursief (omlooptekst met de  `<em> </em>` tag)
-* **Onderstrepen** pictogram: maakt geselecteerde tekst onderstreept (omloop tekst met de `<span style="text-decoration: underline;">` tag)
-* **Links uitlijnen** pictogram: Hiermee lijnt u tekst links van het geselecteerde blok uit (add style=&quot;text-align: left;&quot;)
-* **Midden** pictogram: centreert de tekst voor het geselecteerde blok (voeg style=&quot;text-align toe: middelpunt;&quot;)
-* **Rechts uitlijnen** pictogram: Hiermee lijnt u tekst rechts van het geselecteerde blok uit (add style=&quot;text-align: right;&quot;)
-* **De achtergrondkleur wijzigen** pictogram: Hiermee kunt u de achtergrondkleur van het geselecteerde blok wijzigen (stijl=&quot;background-color: rgba(170, 86, 255, 0,87)
-* **Tekstkleur wijzigen** pictogram: Hiermee kunt u de tekstkleur van het geselecteerde blok of alleen de geselecteerde tekst wijzigen (`<span style="color: #CODE">`)
+* **Onderstrepen** pictogram: maakt geselecteerde tekst onderstreept (omlooptekst met de `<span style="text-decoration: underline;">` tag)
+* **Links uitlijnen** pictogram: hiermee wordt tekst links van het geselecteerde blok uitgelijnd (add style=&quot;text-align: left;&quot;)
+* **Midden** pictogram: centreert de tekst voor het geselecteerde blok (add style=&quot;text-align: center;&quot;)
+* **Rechts uitlijnen** pictogram: hiermee wordt tekst rechts van het geselecteerde blok uitgelijnd (add style=&quot;text-align: right;&quot;)
+* **De achtergrondkleur wijzigen** pictogram: hiermee kunt u de achtergrondkleur van het geselecteerde blok wijzigen (stijl=&quot;background-color: rgba(170, 86, 255, 0.87) toevoegen)
+* **Tekstkleur wijzigen** pictogram: hiermee kunt u de tekstkleur van het geselecteerde blok of alleen de geselecteerde tekst wijzigen (`<span style="color: #CODE">`)
 
 >[!NOTE]
 >
->* **Verwijderen** pictogram: Hiermee verwijdert u het blok en alle inhoud ervan.
+>* **Verwijderen** pictogram: hiermee verwijdert u het blok en alle inhoud ervan.
 >
->* **Dupliceren** pictogram: dupliceert het blok evenals alle stijlen met betrekking tot het blok.
-
+>* **Dupliceren** pictogram: dupliceert het blok en alle stijlen die betrekking hebben op het blok.
 
 ## Afbeeldingen en animaties beheren {#managing-images-and-animations}
 
@@ -219,7 +217,7 @@ Als u een afbeelding wilt invoegen, selecteert u een blok met afbeeldingstypen e
 
 ![](assets/dce_insert_image.png)
 
-Selecteer een afbeeldingsbestand dat lokaal is opgeslagen.
+Selecteer een lokaal opgeslagen afbeeldingsbestand.
 
 ![](assets/dce_popup_imgupload.png)
 
@@ -238,13 +236,13 @@ Wanneer u een blok selecteert dat een afbeelding bevat, hebt u toegang tot de vo
 * **Bijschrift** Hiermee kunt u het bijschrift definiëren dat aan de afbeelding is gekoppeld (dat overeenkomt met de **alt** HTML, kenmerk).
 * **Dimension** Hiermee kunt u de afbeeldingsgrootte opgeven, in pixels.
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## Aanpassingsinhoud toevoegen {#adding-personalization-content}
 
 ### Een personalisatieveld invoegen {#inserting-a-personalization-field}
 
-De **Veld voor aanpassen** kunt u een databaseveld toevoegen aan de inhoud, bijvoorbeeld de naam van de ontvanger. Deze optie is alleen beschikbaar voor tekstblokken.
+De **Personalisatieveld** kunt u een databaseveld toevoegen aan de inhoud, bijvoorbeeld de naam van de ontvanger. Deze optie is alleen beschikbaar voor tekstblokken.
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 

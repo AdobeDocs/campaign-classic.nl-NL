@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: Bestands- en bronbeheer
+title: Bestands- en resourcebeheer
+feature: Installation, Application Settings
 description: Leer hoe u het beheer van bestanden en bronnen configureert in de campagne
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 2%
 
 ---
 
-# Bestands- en bronbeheer{#file-and-resmanagement}
+# Bestands- en resourcebeheer{#file-and-resmanagement}
 
 
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 Gebruik de **uploadWhiteList** om de bestandstypen te beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
 
-Dit kenmerk is beschikbaar in het dialoogvenster **dataStore** van het **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Dit kenmerk is beschikbaar in het dialoogvenster **dataStore** element van het **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 De standaardwaarde van dit kenmerk is **.+** en kunt u elk bestandstype uploaden.
 
@@ -39,7 +40,7 @@ U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van h
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 
-U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend **Bestandsoverdracht** bijvoorbeeld workflowactiviteit. Om dit te bereiken, moet u vormen **proxyConfig** van de **serverConf.xml** een specifieke opdracht gebruiken. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend **Bestandsoverdracht** workflowactiviteit, bijvoorbeeld. Om dit te bereiken, moet u vormen **proxyConfig** van de **serverConf.xml** een specifieke opdracht gebruiken. Alle parameters beschikbaar in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat vanaf 20.2 de campagneversie de parameters HTTP en HTTPS protocol **niet meer beschikbaar**. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
 
@@ -48,6 +49,7 @@ De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rek
 >Alleen de standaardverificatiemodus wordt ondersteund. NTLM-verificatie wordt niet ondersteund.
 >
 >SOCKS-proxy&#39;s worden niet ondersteund.
+>
 
 U kunt de volgende opdracht gebruiken:
 

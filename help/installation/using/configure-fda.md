@@ -2,14 +2,15 @@
 product: campaign
 title: FDA-connectors configureren
 description: Meer informatie over configuratiestappen voor FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '349'
 ht-degree: 5%
 
 ---
@@ -25,6 +26,7 @@ Als algemene regel geldt dat u de corresponderende clientlaag op de externe data
 >[!NOTE]
 >
 >Compatibele versies worden weergegeven in [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+>
 
 ## Configuratiestappen {#fda-configuration-steps}
 
@@ -39,11 +41,11 @@ Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#3
 
 ## Databasespecifieke configuratie {#fda-specific-configuration}
 
-Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Deze configuraties omvatten hoofdzakelijk het installeren van bestuurders en het verklaren van omgevingsvariabelen die tot elke RDBMS op de server van Adobe Campaign behoren, en het vormen van de externe rekening.
+Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Deze configuraties omvatten hoofdzakelijk het installeren van bestuurders en het verklaren van milieuvariabelen die tot elke RDBMS op de server van Adobe Campaign behoren, en het vormen van de externe rekening.
 
 Volg de onderstaande koppelingen voor meer informatie:
 
-* Campagne verbinden en [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Campagne verbinden en [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Campagne verbinden en [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Campagne verbinden en [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Campagne verbinden en [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
@@ -52,6 +54,6 @@ Volg de onderstaande koppelingen voor meer informatie:
 * Campagne verbinden en [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Campagne verbinden en [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Campagne verbinden en [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Campagne verbinden en [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Campagne verbinden en [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Campagne verbinden en [Teradata](../../installation/using/configure-fda-teradata.md)
-* Campagne verbinden en [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Campagne verbinden en [Vertica analytics](../../installation/using/configure-fda-vertica.md)

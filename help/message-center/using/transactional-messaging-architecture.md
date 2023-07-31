@@ -2,11 +2,12 @@
 product: campaign
 title: Architectuur van transactionele berichten
 description: In deze sectie worden de Adobe Campaign Classic-structuur voor transactiemeldingen en de beschikbare kanalen voor het leveren van transactiemeldingen beschreven
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1099'
 ht-degree: 1%
 
 ---
@@ -57,7 +58,7 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 >[!NOTE]
 >
->Voor meer op de noodzakelijke configuratie, verwijs naar [Verschillende besturingsinstanties gebruiken](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Raadpleeg voor meer informatie over de benodigde configuratie [Verschillende besturingsinstanties gebruiken](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Uitvoeringsinstantie {#execution-instance}
 
@@ -175,77 +176,73 @@ Hier volgt een voorbeeld van een gebeurtenis die deze informatie bevat:
 
 ### Transactieberichten en LIJN {#transactional-messaging-and-line}
 
-In combinatie met het lijnkanaal kunt u met transactiemeldingen realtime berichten verzenden naar de LINE-app die is geïnstalleerd in mobiele apparaten voor consumenten. Dit wordt gebruikt om het Welkome bericht te verzenden wanneer een gebruiker van de LIJN de pagina van het merk toevoegt.
+In combinatie met het lijnkanaal kunt u met transactiemeldingen realtime berichten verzenden naar de LINE-app die is geïnstalleerd in mobiele apparaten voor consumenten. Hiermee wordt het welkomstbericht verzonden wanneer een lijngebruiker de pagina van het merk toevoegt.
 
-Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elementen nodig voor de configuratie op uw **marketing** -instantie en uw **uitvoering** instantie:
+Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elementen nodig voor de configuratie op uw **marketing** -instantie en uw **executie** -instantie:
 
-* Installeer de **[!UICONTROL LINE Connect]** op beide instanties.
+* Installeer de **[!UICONTROL LINE Connect]** verpakken op beide instanties.
 * Installeer de **[!UICONTROL Transactional message control]** pakket op uw marketingexemplaar, en **[!UICONTROL Transactional message execution]** in de uitvoeringsinstantie.
-* Een LIJN maken **externe rekening** en **service** op beide instanties met identieke naamgeving voor synchronisatie. Voor meer informatie over hoe te om een externe rekening en de dienst van de LIJN tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Een LIJN maken **externe rekening** en **service** op beide instanties met identieke naamgeving, zodat deze kunnen worden gesynchroniseerd. Voor meer informatie over hoe te om een externe rekening en de dienst van de LIJN tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , moet u verschillende externe rekeningen op beide instanties vormen:
 
-1. Een **[!UICONTROL External database]** externe account in uw **uitvoering** instantie met de volgende configuratie:
+1. Een **[!UICONTROL External database]** externe account in uw **executie** instantie met de volgende configuratie:
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
-   * **[!UICONTROL Type]** : selecteren **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : geef uw externe account de naam die u nodig hebt.
+   * **[!UICONTROL Type]** : select **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** moet worden ingeschakeld.
 
    Van de **[!UICONTROL Connection]** categorie:
 
-   * **[!UICONTROL Type]** : Selecteer uw databaseserver, bijvoorbeeld PostgresSQL.
-   * **[!UICONTROL Server]** : Voer de URL van de databaseserver in.
-   * **[!UICONTROL Account]** : Voer uw databaseaccount in.
+   * **[!UICONTROL Type]** : selecteer uw databaseserver, bijvoorbeeld PostgresSQL.
+   * **[!UICONTROL Server]** : voer de URL van de databaseserver in.
+   * **[!UICONTROL Account]** : voer uw databaseaccount in.
 
-      >[!NOTE]
-      >
-      >De databasegebruiker moet leesrechten hebben voor de volgende tabellen voor FDA-verbinding: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroad LogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
+     >[!NOTE]
+     >
+     >De databasegebruiker moet leesrechten hebben voor de volgende tabellen voor FDA-verbinding: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRms tEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
 
-   * **[!UICONTROL Password]** : Voer het wachtwoord voor uw databaseaccount in.
-   * **[!UICONTROL Database]** : Voer de databasenaam van de uitvoeringsinstantie in.
+   * **[!UICONTROL Password]** : voer het wachtwoord voor uw databaseaccount in.
+   * **[!UICONTROL Database]** : voer de databasenaam van de uitvoeringsinstantie in.
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** moet worden ingeschakeld.
-
 
 1. Een **[!UICONTROL External Database]** account in uw **marketing** instantie met de volgende configuratie.
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
-   * **[!UICONTROL Type]** : selecteren **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : geef uw externe account de naam die u nodig hebt.
+   * **[!UICONTROL Type]** : select **[!UICONTROL External database]** .
    * Ingeschakelde doos moet worden gecontroleerd.
 
    Van de **[!UICONTROL Connection]** categorie:
 
-   * **[!UICONTROL Type]** : selecteren **[!UICONTROL HTTP relay to remote Database]** .
-   * **[!UICONTROL Server]** : Voer de server-URL van de uitvoeringsinstantie van uw campagne in.
-   * **[!UICONTROL Account]** : Voer de account in die wordt gebruikt voor toegang tot uw uitvoeringsinstantie.
-   * **[!UICONTROL Password]** : Voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsexemplaar.
-   * **[!UICONTROL Data Source]** : Voer de volgende syntaxis in **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
-
+   * **[!UICONTROL Type]** : select **[!UICONTROL HTTP relay to remote Database]** .
+   * **[!UICONTROL Server]** : voer de server-URL van de uitvoeringsinstantie van uw campagne in.
+   * **[!UICONTROL Account]** : voer de account in die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
+   * **[!UICONTROL Password]** : voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
+   * **[!UICONTROL Data Source]** : voer de volgende syntaxis in **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
 1. Een **[!UICONTROL Execution instance]** externe account in uw **marketing** instantie die de volgende configuratie gebruikt om het werkschema van de gegevenssynchronisatie tot stand te brengen:
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
-   * **[!UICONTROL Type]** : selecteren **[!UICONTROL Execution instance]** .
+   * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : geef uw externe account de naam die u nodig hebt.
+   * **[!UICONTROL Type]** : select **[!UICONTROL Execution instance]** .
    * Ingeschakelde doos moet worden gecontroleerd.
 
    Van de **[!UICONTROL Connection]** categorie:
 
-   * **[!UICONTROL URL]** : Voer de URL van de uitvoeringsinstantie in.
-   * **[!UICONTROL Account]** : Voer uw account in die u gebruikt om toegang te krijgen tot uw uitvoeringsexemplaar.
-   * **[!UICONTROL Password]** : Voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsexemplaar.
+   * **[!UICONTROL URL]** : voer de URL van de uitvoeringsinstantie in.
+   * **[!UICONTROL Account]** : voer uw account in die u gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
+   * **[!UICONTROL Password]** : voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
 
    Van de **[!UICONTROL Account connection method]** categorie:
 
-   * **[!UICONTROL Method]** : selecteren **[!UICONTROL Federated Data Access (FDA)]** .
-   * **[!UICONTROL FDA account]** : Selecteer uw FDA-account in de vervolgkeuzelijst.
+   * **[!UICONTROL Method]** : select **[!UICONTROL Federated Data Access (FDA)]** .
+   * **[!UICONTROL FDA account]** : selecteer uw FDA-account in de vervolgkeuzelijst.
    * Klik op de knop **[!UICONTROL Create the archiving workflow]**.
    * Klik op de knop **[!UICONTROL Create data synchronization workflow]** om de workflow voor het synchroniseren van LINE-gegevens te maken.
-
-
 
 1. U kunt nu beginnen [transactieberichten maken](../../message-center/using/creating-the-message-template.md).

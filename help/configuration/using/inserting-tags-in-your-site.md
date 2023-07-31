@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Tags voor webtracering op uw site invoegen
-description: Leer hoe u tags voor webspatiëring invoegt in uw site
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Leer hoe u tags voor webspatiëring op uw site kunt invoegen
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ De ingevoegde tag neemt contact op met de omleidingsserver.
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-Wanneer u een pagina definieert die in de console moet worden bijgehouden, kunt u een voorbeeld van een webtrackingtag genereren om deze te kopiëren en in de broncode van uw webpagina te plakken.
+Wanneer u een pagina definieert die in de console moet worden bijgehouden, kunt u een voorbeeld van een webtrackingtag genereren en deze kopiëren en plakken in de broncode van uw webpagina.
 
 Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en alle informatie die in een extensieschema is gedefinieerd in te voegen.
 
@@ -87,7 +88,7 @@ Een webtrackingtag van het type TRANSACTION wordt ingevoegd in de bevestigingspa
 
 Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web tracking tijdens het genereren van de pagina toevoegen.
 
-**Voorbeeld**: Webspatiëring toegevoegd aan JSP&#39;s.
+**Voorbeeld**: Web tracking toegevoegd aan JSPs.
 
 ```
 <%@page import="java.util.Random" %>
@@ -124,7 +125,7 @@ Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web track
 
 Als u wenst om de informatie te controleren die naar de omleidingsserver wordt verzonden, is de betrouwbaarste manier de vraag van HTTP synchroon uit te voeren zelf gebruikend een pagina die taal produceert.
 
-De URL die u maakt, moet voldoen aan de syntaxisregels die zijn gedefinieerd in [Tag voor webtracering: definitie](../../configuration/using/web-tracking-tag--definition.md).
+De URL die u maakt, moet voldoen aan de syntaxisregels die zijn gedefinieerd in [Tag voor webspatiëring: definitie](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

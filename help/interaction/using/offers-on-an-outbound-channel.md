@@ -2,15 +2,16 @@
 product: campaign
 title: Aanbiedingen op een outbound-kanaal
 description: Aanbiedingen op een outbound-kanaal
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '457'
 ht-degree: 3%
 
 ---
@@ -60,7 +61,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
    ![](assets/offer_delivery_example_009.png)
 
 1. Sla uw levering op en start de doelworkflow.
-1. Open uw levering en klik op de knop **[!UICONTROL Audit]** tabblad van uw levering: u kunt zien dat de aanbiedingsmotor de voorstellen heeft geselecteerd die uit de diverse aanbiedingen in de catalogus moeten worden gemaakt.
+1. Open uw levering en klik op de knop **[!UICONTROL Audit]** tabblad van uw levering: u kunt zien dat de aanbiedingsengine de voorstellen heeft geselecteerd die uit de verschillende aanbiedingen in de catalogus moeten worden gemaakt.
 
    ![](assets/offer_delivery_example_010.png)
 
@@ -121,7 +122,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
    ![](assets/offer_simulation_example_012.png)
 
-1. Indien nodig, kunt u de werkingsgebiedmontages veranderen en de simulatie opnieuw in werking stellen door te klikken **[!UICONTROL Start simulation]**.
+1. Indien nodig kunt u de bereikinstellingen wijzigen en de simulatie opnieuw uitvoeren door op **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 

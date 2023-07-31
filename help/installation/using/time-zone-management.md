@@ -2,16 +2,17 @@
 product: campaign
 title: Tijdzonebeheer
 description: Tijdzonebeheer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 1%
+source-wordcount: '911'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +22,13 @@ ht-degree: 1%
 
 ## Werkwijze {#operating-principle}
 
-Met Adobe Campaign kunt u datums uitdrukken als een functie van de tijdzone: dit stelt internationale gebruikers in staat wereldwijd aan verschillende tijdzones te werken . Elk land dat hetzelfde exemplaar gebruikt, kan de uitvoering van campagnes, bijhouden, archiveren, enz. beheren. afhankelijk van de lokale tijd.
+In Adobe Campaign kunt u datums uitdrukken als een functie van de tijdzone: dit stelt internationale gebruikers in staat wereldwijd aan verschillende tijdzones te werken. Elk land dat hetzelfde exemplaar gebruikt, kan de uitvoering van campagnes, bijhouden, archiveren, enz. beheren. afhankelijk van de lokale tijd.
 
 Om het gebruik van het Adobe Campaign-platform op internationale schaal mogelijk te maken, moeten alle data die door de systemen worden gebruikt, aan een tijdzone kunnen worden gekoppeld. Een datum waarvan de tijdzone gekend is kan zo in om het even welke andere tijdzone, of ongeacht tijdzone worden ingevoerd.
 
 Met Adobe Campaign kunt u datums/tijden opslaan in UTC-indeling (Coordinated Universal Time). Wanneer gegevens worden weergegeven, worden deze omgezet in de lokale datum/tijd van de operator. De omzetting wordt automatisch uitgevoerd wanneer het gegevensbestand in UTC wordt gevormd (verwijs naar [Configuratie](#configuration)). Als het gegevensbestand niet in UTC wordt gevormd, wordt de informatie over de tijdzone van de data in het platform opgeslagen in een optie.
 
-De belangrijkste platformfuncties voor het beheer van tijdzones zijn: invoer/uitvoer gegevens en exploitant en werkstroombeheer. De **erfenisconcept** is beschikbaar voor import/export of Workflows. Door gebrek, worden zij gevormd voor de tijdzone van de gegevensbestandserver, nochtans kunt u nieuwe tijdstreken voor een werkschema en zelfs voor één enkele activiteit opnieuw bepalen.
+De belangrijkste platformfuncties met betrekking tot tijdzonebeheer zijn: invoer-/exportgegevens en beheer van de exploitant en werkstroom. De **erfenisconcept** is beschikbaar voor import/export of Workflows. Door gebrek, worden zij gevormd voor de tijdzone van de gegevensbestandserver, nochtans kunt u nieuwe tijdstreken voor een werkschema en zelfs voor één enkele activiteit opnieuw bepalen.
 
 **Operatoren** kan tijdzones tijdens **leveringsconfiguratie** en kan de specifieke tijdzone specificeren waarin de levering zal worden uitgevoerd.
 
@@ -35,15 +36,15 @@ De belangrijkste platformfuncties voor het beheer van tijdzones zijn: invoer/uit
 >
 >Als het gegevensbestand veelvoudige tijdstreken niet beheert, voor alle gegevens die manipulaties filtreren, SQL moeten de vragen in de tijdzone van de gegevensbestandserver worden uitgevoerd.
 
-Elke Adobe Campaign-operator is gekoppeld aan een tijdzone: deze informatie is geconfigureerd in hun profiel. Raadpleeg voor meer informatie hierover [dit document](../../platform/using/access-management.md).
+Elke Adobe Campaign-operator is gekoppeld aan een tijdzone: deze informatie wordt geconfigureerd in hun profiel. Raadpleeg voor meer informatie hierover [dit document](../../platform/using/access-management.md).
 
 Als het Adobe Campaign-platform geen tijdzonebeheer nodig heeft, kunt u een opslagmodus in lokale indeling behouden met een specifieke gekoppelde tijdzone.
 
 ## Aanbevelingen {#recommendations}
 
-In tijdzones zijn verschillende situaties samengevat: de expressie kan een constante tijdvertraging met de UTC-datum beschrijven, of de tijden van een regio die tweemaal per jaar (zomertijd) kunnen veranderen.
+In tijdzones worden verschillende realiteiten gecombineerd: in de expressie kan een constante tijdsvertraging met de UTC-datum worden beschreven, of de tijdstippen van een regio die tweemaal per jaar (zomertijd) kunnen veranderen.
 
-In postgreSQL bijvoorbeeld **TIJDZONE &quot;Europe/Paris&quot; VASTSTELLEN;** bij het commando wordt rekening gehouden met de zomer - en wintertijd : de datum wordt uitgedrukt in UTC+1 of UTC+2, afhankelijk van het tijdstip van het jaar.
+In postgreSQL bijvoorbeeld **TIJDZONE &quot;Europe/Paris&quot; VASTSTELLEN;** rekening houden met de zomer- en wintertijd: de datum wordt uitgedrukt in UTC+1 of UTC+2, afhankelijk van de tijd van het jaar.
 
 Als u echter de opdracht **TIJDZONE 0200 INSTELLEN;** -opdracht, is de tijdvertraging altijd UTC+2.
 
@@ -53,8 +54,8 @@ De opslagmodus voor datums en tijden wordt geselecteerd tijdens het maken van de
 
 Vanuit technisch oogpunt zijn er twee manieren om op te slaan **Date+time** typegegevens in de database:
 
-1. TIJDSTEMPEL MET TIMEZONE-indeling: de database-engine de datums in UTC opslaat. Elke geopende sessie heeft een tijdzone en de datums worden overeenkomstig deze tijdzone omgezet.
-1. Lokale notatie + lokale tijdzone: alle datums worden opgeslagen in het lokale formaat (geen tijd-lag beheer) en er wordt één tijdzone aan toegewezen. De tijdzone wordt opgeslagen in de **WdbcTimeZone** optie van het Adobe Campaign-exemplaar en kan via **[!UICONTROL Administration > Platform > Options]** menu van de boomstructuur.
+1. TIJDSTEMPEL MET TIMEZONE-indeling: de database-engine slaat datums op in UTC. Elke geopende sessie heeft een tijdzone en de datums worden overeenkomstig deze tijdzone omgezet.
+1. Lokale notatie + lokale tijdzone: alle datums worden opgeslagen in de lokale notatie (geen tijdvertragingsbeheer) en er wordt één tijdzone aan toegewezen. De tijdzone wordt opgeslagen in de **WdbcTimeZone** optie van het Adobe Campaign-exemplaar en kan via **[!UICONTROL Administration > Platform > Options]** menu van de boomstructuur.
 
 >[!IMPORTANT]
 >
@@ -88,11 +89,11 @@ Om compatibiliteit met externe hulpprogramma&#39;s die toegang krijgen tot de Ad
 
 XML-velden met datums worden nu opgeslagen in UTC. Tijdens het laden worden velden die niet de UTC-indeling hebben, automatisch geconverteerd met de tijdzone van de servers. Dit betekent dat alle XML-velden progressief worden omgezet in UTC-indeling.
 
-Als u een bestaande instantie wilt gebruiken, voegt u de opdracht **WdbcTimeZone** en voert u de tijdzone van de instantie in.
+Als u een bestaande instantie wilt gebruiken, voegt u **WdbcTimeZone** en voert u de tijdzone van de instantie in.
 
 >[!IMPORTANT]
 >
->Controleer of de juiste waarde is geconfigureerd voor de optie WdbcTimeZone: latere wijzigingen kunnen tot inconsistenties leiden .
+>Controleer of de juiste waarde is geconfigureerd voor de optie WdbcTimeZone: wijzigingen die u later uitvoert, kunnen leiden tot inconsistenties.
 
 Voorbeeld van mogelijke waarden:
 
@@ -100,4 +101,4 @@ Voorbeeld van mogelijke waarden:
 * Europa/Londen,
 * Amerika/New_York, enz.
 
-   Deze waarden zijn afkomstig uit de tz-database (Olson). Raadpleeg voor meer informatie [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+  Deze waarden zijn afkomstig uit de tz-database (Olson). Raadpleeg voor meer informatie [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).

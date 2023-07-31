@@ -2,15 +2,16 @@
 product: campaign
 title: Een aanbieding goedkeuren en activeren
 description: Een aanbieding goedkeuren en activeren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '634'
 ht-degree: 2%
 
 ---
@@ -65,27 +66,27 @@ Goedkeuring van de aanbieding betekent aanvaarding of afwijzing van de aanbiedin
 
 * U kunt de volledige lijst met regels weergeven door op **[!UICONTROL Schedule and eligibility rules]**.
 
-   ![](assets/offer_validate_005.png)
+  ![](assets/offer_validate_005.png)
 
 * Als u de subsidiabiliteitsregels wilt wijzigen, klikt u op **[!UICONTROL Reject]** en klik vervolgens op **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_007.png)
+  ![](assets/offer_validate_007.png)
 
-   De verschillende statussen worden bijgewerkt op het aanboddddashboard.
+  De verschillende statussen worden bijgewerkt op het aanbiedingdashboard.
 
-   ![](assets/offer_validate_006.png)
+  ![](assets/offer_validate_006.png)
 
 * Klik op **[!UICONTROL Approve eligibility]**.
 
-   ![](assets/offer_validate_008.png)
+  ![](assets/offer_validate_008.png)
 
-   Goedkeuren, zo nodig een opmerking toevoegen en vervolgens klikken **[!UICONTROL Eligibility approval]**.
+  Goedkeuren, zo nodig een opmerking toevoegen en vervolgens klikken **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_009.png)
+  ![](assets/offer_validate_009.png)
 
-   De verschillende statussen worden bijgewerkt op het aanboddddashboard.
+  De verschillende statussen worden bijgewerkt op het aanbiedingdashboard.
 
-   ![](assets/offer_validate_010.png)
+  ![](assets/offer_validate_010.png)
 
 ## Goedkeuring bijhouden {#approval-tracking}
 
@@ -115,7 +116,7 @@ Het dashboard van de aanbieding die beschikbaar is in de ontwerpomgeving bevat i
 
 ![](assets/offer_golive_001.png)
 
-Klik op het aanbiedingslabel om het aanbod weer te geven dat beschikbaar is in de live omgeving: de live aanbieding heeft een dashboard dat alle relevante informatie bevat .
+Als u het aanbod wilt weergeven dat beschikbaar is in de live omgeving, klikt u op het label van het aanbod: het live aanbod heeft een dashboard dat alle relevante informatie bevat.
 
 ![](assets/offer_golive_002.png)
 

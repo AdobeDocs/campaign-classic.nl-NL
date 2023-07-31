@@ -2,12 +2,12 @@
 product: campaign
 title: Aan de slag met kubussen
 description: Aan de slag met kubussen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '350'
 ht-degree: 24%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 
 
-De exploratie van gegevens in het gegevensbestand wordt aangeboden via **Marketing Analytics** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
+De exploratie van gegevens in het gegevensbestand wordt aangeboden via **Marketing Analytics** -module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
 De kubussen worden gebruikt voor het produceren van bepaalde ingebouwde rapporten, met inbegrip van leveringsrapporten (levering het volgen, klikt, opent, enz.). Rapporten op basis van kubussen mogen alleen worden gebruikt als standaard voor gegevensvolumes onder 5 miljoen feitenlijnen.
 
@@ -40,7 +40,7 @@ Met de module Campagne Marketing Analytics kunt u:
 
    * berekende gegevens, geconfigureerde maatregelen verkennen;
    * de gegevens selecteren die moeten worden weergegeven, alsmede de weergavemodus;
-   * de gebruikte maatregelen en indicatoren aanpassen;
+   * de gebruikte maatregelen en indicatoren aan te passen;
    * bieden interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
 
 1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.

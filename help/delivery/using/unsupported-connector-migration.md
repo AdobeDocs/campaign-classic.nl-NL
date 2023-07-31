@@ -2,12 +2,13 @@
 product: campaign
 title: Niet-ondersteunde migratie van SMS-connector
 description: Niet-ondersteunde SMS-connector migreren naar de uitgebreide algemene SMPP-connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: SMS, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ De volgende schakelaars worden afgekeurd vanaf versie 20.2:
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Verouderde mogelijkheden zijn nog steeds beschikbaar en worden ondersteund, maar ze worden niet verder uitgebreid. We raden u aan de **[!UICONTROL Extended generic SMPP]** -aansluiting.
+Verouderde mogelijkheden zijn nog steeds beschikbaar en worden ondersteund, maar ze zullen niet verder worden uitgebreid. We raden u aan de **[!UICONTROL Extended generic SMPP]** -aansluiting.
 
 Raadpleeg voor meer informatie over vervangen en verwijderde functies [page](../../rn/using/deprecated-features.md).
 

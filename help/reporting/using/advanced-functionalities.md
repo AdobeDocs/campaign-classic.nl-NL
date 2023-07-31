@@ -2,13 +2,13 @@
 product: campaign
 title: Geavanceerde mogelijkheden
 description: Meer informatie over geavanceerde mogelijkheden bij het werken met rapporten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '612'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ Anders worden alleen de huidige gegevens weergegeven.
 
 ## Een URL-parameter toevoegen {#defining-additional-settings}
 
-De **[!UICONTROL Parameters]** tabblad van het dialoogvenster [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) laat u extra montages voor het rapport bepalen: deze montages zullen in URL tijdens de vraag worden overgegaan.
+De **[!UICONTROL Parameters]** tabblad van het [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) laat u extra montages voor het rapport bepalen: deze montages zullen in URL tijdens de vraag omhoog worden overgegaan.
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Een nieuwe instelling maken:
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   De gegevens worden direct op het niveau van de entiteit teruggevorderd: **ctx/ontvanger/@account**.
+   De gegevens worden direct op entiteitniveau teruggevorderd: **ctx/ontvanger/@account**.
 
    De **[!UICONTROL Variable]** Met deze optie kunt u een variabele maken of selecteren die als parameter van de URL wordt doorgegeven en die in de filters kan worden gebruikt.
 

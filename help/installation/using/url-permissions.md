@@ -2,15 +2,16 @@
 product: campaign
 title: URL-machtigingen configureren
 description: Leer hoe u URL-machtigingen configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '362'
 ht-degree: 29%
 
 ---
@@ -30,6 +31,7 @@ Instanties mogen standaard geen verbinding maken met externe URL’s. Het is ech
 >Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de interface van de URL toestemmingen zelf gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 >
 >Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
+>
 
 Voor **Hybride** en **Op locatie** implementaties, moet de beheerder naar een nieuwe **urlPermission** in de **serverConf.xml** bestand.
 
@@ -50,9 +52,9 @@ Er zijn drie modi voor verbindingsbeveiliging beschikbaar:
 
 >[!IMPORTANT]
 >
->Nieuwe implementaties gebruiken standaard de **Blokkeren** in.
+>Nieuwe implementaties gebruiken standaard de opdracht **Blokkeren** -modus.
 >
->Als bestaande klant die uit een migratie komt, kunt u tijdelijk gebruikmaken van de **Waarschuwing** in. Analyseer het uitgaande verkeer alvorens URLs toe te staan. Als de lijst met toegestane URL&#39;s is gedefinieerd, kunt u de URL&#39;s toevoegen aan de lijst van gewenste personen en de URL activeren **Blokkeren** in.
+>Als bestaande klant die uit een migratie komt, kunt u tijdelijk gebruikmaken van de **Waarschuwing** -modus. Analyseer het uitgaande verkeer alvorens URLs toe te staan. Als de lijst met toegestane URL&#39;s is gedefinieerd, kunt u de URL&#39;s toevoegen aan de lijst van gewenste personen en de URL activeren **Blokkeren** -modus.
 
 Raadpleeg de volgende secties voor meer informatie:
 

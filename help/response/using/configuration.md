@@ -2,15 +2,16 @@
 product: campaign
 title: Campagne-responsbeheer configureren
 description: Leer hoe te om de Manager van de Reactie van de Campagne te vormen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ De out-of-the-box **[!UICONTROL nms:remaMatch]** schema bevat de tabel van het r
 
 De **[!UICONTROL nms:remaMatchRcp]** schema wordt ook als standaard geleverd, het bevat de opslag van reactielogboeken voor Adobe Campaign-ontvangers ( **[!UICONTROL nms:recipient]** ). Om te kunnen worden gebruikt, moet het worden uitgebreid tot een transactietabel (met aankopen enz.).
 
-### Transactietabellen en transactiegegevens {#transaction-tables-and-transaction-details}
+### Transactietabellen en transactiedetails {#transaction-tables-and-transaction-details}
 
 De transactietabel moet directe koppelingen naar personen bevatten.
 
@@ -63,12 +64,12 @@ In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met 
 
 De tabel met reacties logt op een **[!UICONTROL nms:remaMatchRcp]** de ontvanger wordt uitgebreid om een verbinding aan het schema van de kooplijst toe te voegen. In het volgende voorbeeld wordt de aankooptabel aangeroepen **demo:aankoop**.
 
-1. Selecteer via de Adobe Campaign-verkenner de **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. Selecteer via de Adobe Campaign Explorer de **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
 1. Klikken met rechtermuisknop **Ontvanger** Selecteer vervolgens **[!UICONTROL Actions]** en **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. U kunt de **[!UICONTROL Extension namespace]** in het volgende venster klikt u op **[!UICONTROL Next]**.
+1. U kunt de **[!UICONTROL Extension namespace]** in het volgende venster klikt u vervolgens op **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
@@ -108,43 +109,43 @@ In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met 
 
 * Creeer een nieuw schema van het reactielogboek dat van wordt afgeleid **[!UICONTROL nms:remaMatch]** schema.
 
-   Aangezien de lijst van individuen van de lijst van ontvangers van Adobe Campaign verschillend is, is het noodzakelijk om een nieuw schema van de reactielogboeken tot stand te brengen die op worden gebaseerd **[!UICONTROL nms:remaMatch]** schema. Vul vervolgens het bestand in met koppelingen naar de leveringslogboeken en de aankooptabel.
+  Aangezien de lijst van individuen van de lijst van ontvangers van Adobe Campaign verschillend is, is het noodzakelijk om een nieuw schema van de reactielogboeken tot stand te brengen die op worden gebaseerd **[!UICONTROL nms:remaMatch]** schema. Vul vervolgens het bestand in met koppelingen naar de leveringslogboeken en de aankooptabel.
 
-   In het volgende voorbeeld gebruiken we de **demo:wideLogPers** schema en de **demo:aankoop** transactietabel:
+  In het volgende voorbeeld gebruiken we de **demo:wideLogPers** schema en de **demo:aankoop** transactietabel:
 
-   ```
-   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
-   img="nms:remaMatch.png" label="Responses on persons" labelSingular="Responses on a person" name="remaMatchPers" namespace="nms">
-     <element name="remaMatchPers" template="nms:remaMatch">
-       <key internal="true" name="match">
-         <keyfield xlink="hypothesis"/>
-        <keyfield xlink="purchase"/>
-       </key>
-   
-       <element name="hypothesis" revLabel="Response logs for persons" revLink="remaMatchPers"/>
-       <element applicableIf="HasPackage('nms:interaction')" label="Proposition" name="proposition"
-                target="demo:propositionPers" type="link"/>
-       <element label="Delivery log" name="broadLog" target="demo:broadLogPers" type="link"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
+  img="nms:remaMatch.png" label="Responses on persons" labelSingular="Responses on a person" name="remaMatchPers" namespace="nms">
+    <element name="remaMatchPers" template="nms:remaMatch">
+      <key internal="true" name="match">
+        <keyfield xlink="hypothesis"/>
+       <keyfield xlink="purchase"/>
+      </key>
+  
+      <element name="hypothesis" revLabel="Response logs for persons" revLink="remaMatchPers"/>
+      <element applicableIf="HasPackage('nms:interaction')" label="Proposition" name="proposition"
+               target="demo:propositionPers" type="link"/>
+      <element label="Delivery log" name="broadLog" target="demo:broadLogPers" type="link"/>
+    </element>
+  </srcSchema>
+  ```
 
 * De vorm van de hypothese in het **[!UICONTROL nms:remaHypothesis]** schema.
 
-   Standaard is de lijst met responslogboeken zichtbaar in de logboeken van de geadresseerde. U moet daarom het hypotheseformulier wijzigen om de nieuwe reactielogboeken te bekijken die tijdens de vorige stap zijn gemaakt.
+  Standaard is de lijst met responslogboeken zichtbaar in de logboeken van de geadresseerde. U moet daarom het hypotheseformulier wijzigen om de nieuwe reactielogboeken te bekijken die tijdens de vorige stap zijn gemaakt.
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
-   ```
-    <container type="visibleGroup" visibleIf="[context/@remaMatchStorage]= 'demo:remaMatchPers'">
-                 <input hideEditButtons="true" img="nms:remaMatch.png" nolabel="true" refresh="true"
-                  toolbarCaption="Responses generated by the hypothesis" type="linklist"
-                  xpath="remaMatchPers">
-             <input xpath="[.]"/>
-             <input xpath="@controlGroup"/>
-           </input>
-      </container> 
-   ```
+  ```
+   <container type="visibleGroup" visibleIf="[context/@remaMatchStorage]= 'demo:remaMatchPers'">
+                <input hideEditButtons="true" img="nms:remaMatch.png" nolabel="true" refresh="true"
+                 toolbarCaption="Responses generated by the hypothesis" type="linklist"
+                 xpath="remaMatchPers">
+            <input xpath="[.]"/>
+            <input xpath="@controlGroup"/>
+          </input>
+     </container> 
+  ```
 
 ## Indicatoren beheren {#managing-indicators}
 

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Eigenschappen van het rapport
-description: Meer informatie over de instellingen van de rapporteigenschappen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+description: Meer informatie over de instellingen van de rapporten
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 
 
-U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen. Rapporteigenschappen zijn toegankelijk via de **[!UICONTROL Properties]** boven het diagram met de activiteitsvolgorde.
+U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen ervan. Rapporteigenschappen zijn toegankelijk via de **[!UICONTROL Properties]** boven het diagram met de activiteitsvolgorde.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
@@ -33,7 +33,7 @@ In de **[!UICONTROL General]** van de rapporteigenschappen kunt u de hieronder v
 
 * De **Opslag** wordt geselecteerd wanneer het creëren van het rapport. Om de gegevenslijst van het rapport te veranderen, klik **[!UICONTROL Select link]** pictogram rechts van **[!UICONTROL Document type]** veld.
 
-   ![](assets/s_ncs_advuser_report_properties_02.png)
+  ![](assets/s_ncs_advuser_report_properties_02.png)
 
 * De **Toegangsbeheer** parameters. Deze instellingen worden hieronder beschreven.
 
@@ -45,12 +45,12 @@ Een rapport kan in de console van Adobe Campaign of met Webbrowser worden betred
 
 Mogelijke opties zijn:
 
-* **[!UICONTROL Anonymous access]**: deze optie maakt onbeperkte toegang tot het rapport mogelijk . Er is echter geen manipulatie mogelijk.
+* **[!UICONTROL Anonymous access]**: deze optie maakt onbeperkte toegang tot het rapport mogelijk. Er is echter geen manipulatie mogelijk.
 
-   Machtigingen van de technische operator &#39;webapp&#39; worden gebruikt om rapportelementen weer te geven. Meer informatie [in deze sectie](../../platform/using/access-management-operators.md).
+  Machtigingen van de technische operator &#39;webapp&#39; worden gebruikt om rapportelementen weer te geven. Meer informatie [in deze sectie](../../platform/using/access-management-operators.md).
 
-* **[!UICONTROL Access control]**: met deze optie kunnen Adobe Campaign-operatoren de toepassing openen nadat ze zijn aangemeld.
-* **[!UICONTROL Specific account]**: Met deze optie kunt u het rapport uitvoeren met de rechten van de operator die u hebt geselecteerd in het dialoogvenster **[!UICONTROL Operator]** veld.
+* **[!UICONTROL Access control]**: deze optie stelt Adobe Campaign-operatoren in staat om deze te openen zodra ze zijn aangemeld.
+* **[!UICONTROL Specific account]**: met deze optie kunt u het rapport uitvoeren met de rechten van de operator geselecteerd in het dialoogvenster **[!UICONTROL Operator]** veld.
 
 ## Uw rapport vertalen {#report-localization}
 

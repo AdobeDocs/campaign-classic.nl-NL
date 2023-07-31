@@ -2,11 +2,12 @@
 product: campaign
 title: SOAP-methoden implementeren
 description: SOAP-methoden implementeren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -17,9 +18,9 @@ ht-degree: 3%
 
 ## Inleiding {#introduction}
 
-Het is mogelijk om SOAP-methoden te maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
+U kunt SOAP-methoden maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
 
-Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen sleutel en const.
+Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen-toets en const.
 
 ## Een methodebibliotheek definiëren {#defining-a-method-library}
 
@@ -88,11 +89,11 @@ De handtekening van de functie moet een argument bevatten voor elke parameter &#
 Specifieke gevallen:
 
 * **niet-statische methoden**: de functie moet eerst een extra argument bevatten, dat samenvalt met de XML-entiteit die wordt doorgegeven in de vorm van een object van het type &#39;xml&#39; (E4X).
-* **Methoden van het type &quot;key only&quot;**: de functie moet eerst een extra argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
+* **Methoden van het type &quot;key only&quot;**: de functie moet eerst een aanvullend argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
 
 **3. Geretourneerde waarden**
 
-De functie moet een waarde retourneren voor elke parameter van het type &#39;out&#39; of &#39;inout&#39;. Specifiek geval: Als de methode wordt gedeclareerd zonder de kenmerken &#39;static&#39;, &#39;key only&#39; of &#39;const&#39;, moet de eerste geretourneerde waarde overeenkomen met de gewijzigde entiteit. Het is mogelijk om een nieuw object te retourneren of de eerste gewijzigde parameter te retourneren.
+De functie moet een waarde retourneren voor elke parameter van het type &#39;out&#39; of &#39;inout&#39;. Specifiek geval: als de methode wordt gedeclareerd zonder de kenmerken &#39;static&#39;, &#39;key only&#39; of &#39;const&#39;, moet de eerste geretourneerde waarde overeenkomen met de gewijzigde entiteit. Het is mogelijk om een nieuw object te retourneren of de eerste gewijzigde parameter te retourneren.
 
 Bijvoorbeeld:
 

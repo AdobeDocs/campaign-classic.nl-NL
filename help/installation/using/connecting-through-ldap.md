@@ -2,16 +2,17 @@
 product: campaign
 title: Verbinding maken via LDAP
 description: Leer hoe u zich bij de campagne aanmeldt met LDAP
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -29,32 +30,32 @@ In het venster kunt u de identificatie van Adobe Campaign-gebruikers configurere
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_01.png)
 
-* Geef het adres van de LDAP-server op in het dialoogvenster **[!UICONTROL LDAP server]** veld. U kunt het poortnummer toevoegen. Standaard is de gebruikte poort 389.
+* Geef het adres van de LDAP-server op in het dialoogvenster **[!UICONTROL LDAP server]** veld. U kunt het poortnummer toevoegen. Standaard wordt 389 gebruikt.
 * Selecteer in de vervolgkeuzelijst de verificatiemethode voor gebruikers:
 
    * Gecodeerd wachtwoord (**md5**)
 
-      Standaardmodus.
+     Standaardmodus.
 
    * Wachtwoord voor normale tekst + SSL (**TLS**)
 
-      De volledige verificatieprocedure (inclusief wachtwoord) wordt gecodeerd. De veilige haven 636 moet niet op deze wijze worden gebruikt: Adobe Campaign schakelt automatisch over naar de beveiligde modus.
+     De volledige verificatieprocedure (inclusief wachtwoord) wordt gecodeerd. Beveiligde poort 636 mag niet worden gebruikt in deze modus: Adobe Campaign schakelt automatisch over naar de beveiligde modus.
 
-      Wanneer u deze verificatiemodus in Linux gebruikt, wordt het certificaat geverifieerd door een openLDAP-clientbibliotheek. Wij adviseren gebruikend een geldig SSL certificaat zodat de authentificatieprocedure wordt gecodeerd. Anders is de informatie onbewerkte tekst.
+     Wanneer u deze verificatiemodus in Linux gebruikt, wordt het certificaat geverifieerd door een openLDAP-clientbibliotheek. Wij adviseren gebruikend een geldig SSL certificaat zodat de authentificatieprocedure wordt gecodeerd. Anders wordt de informatie in onbewerkte tekst weergegeven.
 
-      Het certificaat wordt ook geverifieerd in Windows.
+     Het certificaat wordt ook geverifieerd in Windows.
 
    * Windows NT LAN Manager (**NTLM**)
 
-      Eigen Windows-verificatie. De **[!UICONTROL Unique identifier]** wordt alleen voor de domeinnaam gebruikt.
+     Eigen Windows-verificatie. De **[!UICONTROL Unique identifier]** wordt alleen voor de domeinnaam gebruikt.
 
    * Verdeelde wachtwoordverificatie (**DPA**)
 
-      Eigen Windows-verificatie. De **[!UICONTROL Unique identifier]** wordt alleen gebruikt voor de domeinnaam (domain.com).
+     Eigen Windows-verificatie. De **[!UICONTROL Unique identifier]** wordt alleen voor de domeinnaam gebruikt (domain.com).
 
    * Wachtwoord voor normale tekst
 
-      Geen versleuteling (alleen voor gebruik in testfasen).
+     Geen versleuteling (alleen voor gebruik in testfasen).
 
 * Selecteer de modus voor gebruikersverificatie: **[!UICONTROL Automatically compute the unique user identifier]** (zie stap [Berekening van Distinguished Name](#distinguished-name-calculation)) of **[!UICONTROL Search the unique user identifier in the directory]** (zie stap [Zoeken naar id&#39;s](#searching-for-identifiers)).
 
@@ -87,7 +88,7 @@ Welke systemen compatibel zijn, is afhankelijk van het geselecteerde verificatie
    <td> Windows<br /> </td> 
   </tr> 
   <tr> 
-   <td> normale tekst<br /> </td> 
+   <td> onbewerkte tekst<br /> </td> 
    <td> Windows, Linux<br /> </td> 
    <td> Windows, Linux<br /> </td> 
   </tr> 
@@ -102,17 +103,17 @@ Als u wenst om de Distinguished Name (DN) herkenningstekens gegevens te verwerke
 
 * Geef de unieke id van de gebruiker op in de map (Distinguished Name - DN) in het dialoogvenster **[!UICONTROL Distinguished Name]** veld.
 
-   **[!UICONTROL (login)]** wordt vervangen door de identificatiecode van de Adobe Campaign-exploitant.
+  **[!UICONTROL (login)]** wordt vervangen door de identificatiecode van de Adobe Campaign-exploitant.
 
-   >[!CAUTION]
-   >
-   >De **[!UICONTROL dc]** de instelling moet in kleine letters worden weergegeven.
+  >[!CAUTION]
+  >
+  >De **[!UICONTROL dc]** de instelling moet in kleine letters worden weergegeven.
 
 * Selecteer de optie **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** om de groep- en gebruikerskoppelingen in de LDAP-directory en de groep- en gebruikerskoppelingen in Adobe Campaign te synchroniseren.
 
-   Wanneer u deze optie selecteert, wordt **[!UICONTROL Application level DN used for the search]** en **[!UICONTROL Password of the application login]** zijn ingeschakeld.
+  Wanneer u deze optie selecteert, wordt **[!UICONTROL Application level DN used for the search]** en **[!UICONTROL Password of the application login]** zijn ingeschakeld.
 
-   Als u deze twee velden invult, maakt Adobe Campaign verbinding met de LDAP-server met een eigen aanmelding en wachtwoord. Als deze leeg zijn, maakt Adobe Campaign anoniem verbinding met de server.
+  Als u deze twee velden invult, maakt Adobe Campaign verbinding met de LDAP-server met een eigen aanmelding en wachtwoord. Als deze leeg zijn, maakt Adobe Campaign anoniem verbinding met de server.
 
 ## Zoeken naar id&#39;s {#searching-for-identifiers}
 
@@ -121,9 +122,9 @@ Als u verkiest om naar een herkenningsteken te zoeken, laat de plaatsingstovenaa
 * In de **[!UICONTROL Application level DN used for the search]** en **[!UICONTROL Password of the application login]** velden, geef de id en het wachtwoord op waarmee Adobe Campaign verbinding maakt met de zoekopdracht naar de id. Als deze leeg zijn, maakt Adobe Campaign anoniem verbinding met de server.
 * Geef de **[!UICONTROL Base identifier]** en **[!UICONTROL Search scope]** velden om te bepalen van welke subset van de LDAP-directory de zoekopdracht moet worden gestart.
 
-   Selecteer de gewenste modus in de vervolgkeuzelijst:
+  Selecteer de gewenste modus in de vervolgkeuzelijst:
 
-   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
+  ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
    1. **[!UICONTROL Recursive (default mode)]**.
 
@@ -141,7 +142,7 @@ Als u verkiest om naar een herkenningsteken te zoeken, laat de plaatsingstovenaa
 
 ## LDAP-machtigingen configureren {#configuring-ldap-authorizations}
 
-Dit venster wordt weergegeven wanneer u het dialoogvenster **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** optie.
+Dit venster wordt weergegeven wanneer u het dialoogvenster **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** -optie.
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_04.png)
 
@@ -150,9 +151,9 @@ U moet verschillende parameters opgeven om de groep of groepen te vinden waartoe
 * de **[!UICONTROL Database identifier]** veld,
 * de **[!UICONTROL Search scope]** veld,
 
-   >[!NOTE]
-   >
-   >Als u naar de DN wilt zoeken, kunt u **[!UICONTROL Reuse the DN search parameters]** om de geselecteerde waarden voor de DN en het zoekbereik van het vorige scherm over te nemen.
+  >[!NOTE]
+  >
+  >Als u naar de DN wilt zoeken, kunt u **[!UICONTROL Reuse the DN search parameters]** om de geselecteerde waarden voor de DN en het zoekbereik van het vorige scherm over te nemen.
 
 * de **[!UICONTROL Rights search filter]** veld, gebaseerd op de aanmelding en de volledige naam van de gebruiker,
 * de **[!UICONTROL Attribute containing the group or authorization name]** veld betreffende de gebruiker,
@@ -165,7 +166,7 @@ Klikken **[!UICONTROL Save]** om het configureren van de instantie te voltooien.
 
 Nadat u de configuratie hebt bevestigd, moet u bepalen welke Adobe Campaign-operatoren via de LDAP-directory worden beheerd.
 
-Als u de LDAP-directory wilt gebruiken om een operator te verifiëren, bewerkt u het bijbehorende profiel en klikt u op de knop **[!UICONTROL Edit the access parameters]** koppeling. Selecteer **[!UICONTROL Use LDAP for authentication]** optie: De **[!UICONTROL Password]** wordt voor deze operator grijs weergegeven.
+Als u de LDAP-directory wilt gebruiken om een operator te verifiëren, bewerkt u het bijbehorende profiel en klikt u op de knop **[!UICONTROL Edit the access parameters]** koppeling. Selecteer de **[!UICONTROL Use LDAP for authentication]** optie: De **[!UICONTROL Password]** wordt voor deze operator grijs weergegeven.
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
@@ -175,7 +176,7 @@ Deze sectie biedt een aantal eenvoudige gebruiksgevallen om u te helpen de meest
 
 1. Er is een gebruiker gemaakt in de LDAP-directory, maar niet in Adobe Campaign.
 
-   Adobe Campaign kan zo worden geconfigureerd dat de gebruiker toegang krijgt tot het platform via de LDAP-verificatie. Adobe Campaign moet de geldigheid van de combinatie ID/wachtwoord in de LDAP-directory kunnen controleren, zodat de operator in Adobe Campaign direct kan worden gemaakt. Om dit te doen, controleer **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** optie. In dit geval, moet de groepssynchronisatie ook worden gevormd: de **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** moet worden geselecteerd.
+   Adobe Campaign kan zo worden geconfigureerd dat de gebruiker toegang krijgt tot het platform via de LDAP-verificatie. Adobe Campaign moet de geldigheid van de combinatie id/wachtwoord in de LDAP-directory kunnen controleren, zodat de operator in Adobe Campaign direct kan worden gemaakt. Controleer de **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** -optie. In dit geval moet ook groepssynchronisatie worden geconfigureerd: de **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** moet worden geselecteerd.
 
 1. De gebruiker is gemaakt in Adobe Campaign, maar niet in de LDAP-directory.
 
@@ -183,10 +184,10 @@ Deze sectie biedt een aantal eenvoudige gebruiksgevallen om u te helpen de meest
 
 1. De LDAP-directory bevat een groep die niet bestaat in Adobe Campaign.
 
-   Deze groep wordt niet gemaakt in Adobe Campaign. U moet de groep maken en de groepen synchroniseren om een match-up via de **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** optie.
+   Deze groep wordt niet gemaakt in Adobe Campaign. U moet de groep maken en de groepen synchroniseren om een match-up via de **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** -optie.
 
 1. Groepen bestaan in Adobe Campaign en de LDAP-directory wordt geactiveerd na de gebeurtenis: gebruikersgroepen in Adobe Campaign worden niet automatisch vervangen door de inhoud van LDAP-groepen. Op dezelfde manier geldt dat als een groep alleen in Adobe Campaign bestaat, er geen LDAP-gebruikers aan kunnen worden toegevoegd totdat de groep is gemaakt en gesynchroniseerd in LDAP.
 
    Groepen worden nooit direct gemaakt, noch door Adobe Campaign, noch door LDAP. Ze moeten afzonderlijk worden gemaakt, zowel in Adobe Campaign als in de LDAP-directory.
 
-   De namen van groepen in de LDAP-directory moeten overeenkomen met de namen van Adobe Campaign-groepen. Hun verenigingsmasker wordt bepaald in het laatste configuratiestadium van de plaatsingstovenaar: Adobe Campaign_(.&#42;), bijvoorbeeld.
+   De namen van groepen in de LDAP-directory moeten overeenkomen met de namen van Adobe Campaign-groepen. Hun verenigingsmasker wordt bepaald in het laatste configuratiestadium van de plaatsingstovenaar: Adobe Campaign_ (.&#42;).

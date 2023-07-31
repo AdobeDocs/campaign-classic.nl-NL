@@ -2,15 +2,16 @@
 product: campaign
 title: Filteropties
 description: Filteropties
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 2%
 
 ## Filteren {#about-filtering}
 
-Standaard geeft Adobe Campaign alle gegevens weer in de database waarvoor de betrokken operator leestrechten heeft.
+Standaard geeft Adobe Campaign alle gegevens weer in de database waarvoor de betrokken operator leesrechten heeft.
 
 Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van het browservenster.
 
@@ -62,7 +63,7 @@ U kunt taken bijvoorbeeld sorteren op prioriteit, aanmaakdatum of alfabetische v
 
 ## Snel zoeken {#quick-search}
 
-Met het zoekveld hebt u snel toegang tot het gewenste item: Voer de tekens in die zijn opgenomen in het label of de interne naam van het item dat u wilt weergeven, en bevestig vervolgens dat u een automatisch filter op de gegevens op de pagina wilt toepassen.
+Gebruik het zoekveld om snel toegang te krijgen tot het item dat u zoekt: voer de tekens in die in het label staan of de interne naam van het item dat u wilt weergeven, en bevestig vervolgens dat u een automatisch filter op de gegevens op de pagina wilt toepassen.
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 

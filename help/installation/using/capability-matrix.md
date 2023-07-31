@@ -2,11 +2,12 @@
 product: campaign
 title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '300'
 ht-degree: 20%
 
 ---
@@ -41,11 +42,12 @@ De verschillende hostingmodellen zijn geïntroduceerd [in deze sectie](../../ins
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) optie om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
+Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
 >Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Meer informatie in [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md).
+>
 
 **Zie ook**
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Een bestand zoeken of versleutelen
 description: Leer hoe u een bestand kunt zippen of versleutelen in Campagne voordat u het verwerkt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 7%
 
 ---
 
@@ -28,9 +29,10 @@ Om dit te kunnen doen:
    >[!NOTE]
    >
    >Het Configuratiescherm is beperkt tot Admin-gebruikers en is alleen beschikbaar voor bepaalde campagneversies. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >
 
 1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
-1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
+1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
 
 U kunt dan bevelen of code in gebruiken **[!UICONTROL Script]** tabblad van de activiteit of in een **[!UICONTROL JavaScript code]** activiteit. In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
@@ -39,13 +41,13 @@ U kunt dan bevelen of code in gebruiken **[!UICONTROL Script]** tabblad van de a
 * [Een bestand uitpakken of ontsleutelen vóór verwerking](../../platform/using/unzip-decrypt.md)
 * [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction--file-.md).
 
-## Hoofdlettergebruik: Gegevens versleutelen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
+## Hoofdlettergebruik: gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
 
 In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te voeren gebruikend een sleutel die op Controlebord wordt geïnstalleerd.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#video)
 
-De volgende stappen worden uitgevoerd:
+De volgende stappen voor dit gebruik zijn nodig:
 
 1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
@@ -54,11 +56,11 @@ De volgende stappen worden uitgevoerd:
    ![](assets/gpg-workflow-encrypt.png)
 
    * **[!UICONTROL Query]** activiteit: In dit voorbeeld, willen wij een vraag uitvoeren om de gegevens van het gegevensbestand te richten dat wij willen uitvoeren.
-   * **[!UICONTROL Data extraction (file)]** activiteit: Extraheert de gegevens naar een bestand.
-   * **[!UICONTROL JavaScript code]** activiteit: Codeert de gegevens die u wilt extraheren.
-   * **[!UICONTROL File transfer]** activiteit: Hiermee verzendt u de gegevens naar een externe bron (in dit voorbeeld een SFTP-server).
+   * **[!UICONTROL Data extraction (file)]** activiteit: extraheert de gegevens naar een bestand.
+   * **[!UICONTROL JavaScript code]** activiteit: versleutelt de gegevens die geëxtraheerd moeten worden.
+   * **[!UICONTROL File transfer]** activiteit: verzendt de gegevens naar een externe bron (in dit voorbeeld, een server SFTP).
 
-1. Configureer de **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie.
+1. Vorm **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie.
 
 1. Open de **[!UICONTROL Data extraction (file)]** activiteit vormt dan het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/extraction--file-.md).
 

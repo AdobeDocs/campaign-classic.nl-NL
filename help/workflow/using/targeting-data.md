@@ -2,12 +2,12 @@
 product: campaign
 title: Targetingdata
 description: Meer informatie over doelgegevens in een workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor, Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1929'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Verzamelingen worden weergegeven in het dialoogvenster **[!UICONTROL Collections
 
 ### Het doel verfijnen met behulp van aanvullende gegevens {#refining-the-target-using-additional-data}
 
-De extra verzamelde gegevens kunnen u toelaten om gegevens het filtreren in het gegevensbestand te verfijnen. Om dit te doen, klik **[!UICONTROL Refine the target using additional data...]** koppeling: Hiermee kunt u de toegevoegde gegevens te veel filteren.
+De extra verzamelde gegevens kunnen u toelaten om gegevens het filtreren in het gegevensbestand te verfijnen. Om dit te doen, klik **[!UICONTROL Refine the target using additional data...]** koppeling: hiermee kunt u de toegevoegde gegevens overschrijven.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
@@ -74,9 +74,9 @@ Tijdens de afstemmingsfasen (**[!UICONTROL Union]**, **[!UICONTROL Intersection]
 
 De **[!UICONTROL Split]** Met activiteit kunt u subsets maken op criteria die zijn gedefinieerd via extractiemery&#39;s. Voor elke ondergroep, wanneer u een filtervoorwaarde op de bevolking uitgeeft, zult u tot de standaardvraagactiviteit toegang hebben die u de voorwaarden van de doelsegmentatie laat bepalen.
 
-U kunt een doel in verscheidene subsets verdelen gebruikend slechts extra gegevens als het filtreren voorwaarden, of naast doelgegevens. U kunt ook externe gegevens gebruiken als u de **Federale gegevenstoegang** optie.
+U kunt een doel in verscheidene subsets verdelen gebruikend slechts extra gegevens als het filtreren voorwaarden, of naast doelgegevens. U kunt ook externe gegevens gebruiken als u de **Federale gegevenstoegang** -optie.
 
-Raadpleeg voor meer informatie hierover [Subsets maken met behulp van de splitsingsactiviteit](#creating-subsets-using-the-split-activity).
+Raadpleeg voor meer informatie hierover [Subsets maken met de splitsingsactiviteit](#creating-subsets-using-the-split-activity).
 
 ## Segmentgegevens {#segmenting-data}
 
@@ -90,33 +90,33 @@ De volgende afstemmingsopties voor gegevens zijn beschikbaar:
 
 * **[!UICONTROL Keys only]**
 
-   Deze optie kan worden gebruikt als de inputpopulaties homogeen zijn.
+  Deze optie kan worden gebruikt als de inputpopulaties homogeen zijn.
 
 * **[!UICONTROL All columns in common]**
 
-   Met deze optie kunt u gegevens afstemmen op basis van alle kolommen die de verschillende populaties van het doel gemeen hebben.
+  Met deze optie kunt u gegevens afstemmen op basis van alle kolommen die de verschillende populaties van het doel gemeen hebben.
 
-   Adobe Campaign geeft kolommen aan op basis van hun naam. Er wordt een tolerantiedrempel aanvaard: Een kolom &#39;E-mail&#39; kan bijvoorbeeld worden herkend als identiek aan een kolom &#39;@email&#39;.
+  Adobe Campaign geeft kolommen aan op basis van hun naam. Een tolerantiedrempel wordt geaccepteerd: een kolom &#39;E-mail&#39; kan bijvoorbeeld worden herkend als identiek aan een kolom &#39;@email&#39;.
 
 * **[!UICONTROL A selection of columns]**
 
-   Selecteer deze optie om de lijst met kolommen te definiëren waarop de afstemming van gegevens wordt toegepast.
+  Selecteer deze optie om de lijst met kolommen te definiëren waarop de afstemming van gegevens wordt toegepast.
 
-   Begin door de belangrijkste reeks (die bevat de brongegevens) te selecteren, dan de kolommen die voor de verbinding moeten worden gebruikt.
+  Begin door de belangrijkste reeks (die bevat de brongegevens) te selecteren, dan de kolommen die voor de verbinding moeten worden gebruikt.
 
-   ![](assets/join_reconciliation_options_01.png)
+  ![](assets/join_reconciliation_options_01.png)
 
-   >[!CAUTION]
-   >
-   >Tijdens de afstemming van gegevens worden populaties niet gededupliceerd.
+  >[!CAUTION]
+  >
+  >Tijdens de afstemming van gegevens worden populaties niet gededupliceerd.
 
-   U kunt de populatiegrootte tot een bepaald aantal verslagen beperken. Klik hiertoe op de gewenste optie en geef het aantal records op dat u wilt behouden.
+  U kunt de populatiegrootte tot een bepaald aantal verslagen beperken. Klik hiertoe op de gewenste optie en geef het aantal records op dat u wilt behouden.
 
-   Specificeer ook de prioriteit van inkomend populaties: in de onderste sectie van het venster worden de binnenkomende overgangen van de union-activiteit weergegeven en kunt u deze sorteren met de blauwe pijlen rechts van het venster.
+  Geef ook de prioriteit van de binnenkomende populaties op: in de onderste sectie van het venster worden de binnenkomende overgangen van de samenvoegactiviteit weergegeven en kunt u deze sorteren met de blauwe pijlen rechts van het venster.
 
-   De gegevens worden eerst overgenomen uit de populatie van de eerste binnenkomende overgang in de lijst. Als het maximum niet is bereikt, worden ze onttrokken aan de populatie van de tweede binnenkomende overgang, enz.
+  De gegevens worden eerst overgenomen uit de populatie van de eerste binnenkomende overgang in de lijst. Als het maximum niet is bereikt, worden ze onttrokken aan de populatie van de tweede binnenkomende overgang, enz.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Verbindingsgegevens extraheren (doorsnede) {#extracting-joint-data--intersection-}
 
@@ -132,13 +132,13 @@ De intersectieactiviteit wordt beschreven in de [Intersectie](intersection.md) s
 
 Met de uitsluitingsactiviteit kunt u de elementen van een doel uitsluiten van een andere doelpopulatie. De doeldimensie van deze activiteit is die van de hoofdset.
 
-Indien nodig, is het mogelijk om binnenkomende lijsten te manipuleren. Om een doel van een andere dimensie uit te sluiten, moet dit doel worden teruggebracht naar dezelfde doeldimensie als het hoofddoel. Klik hiervoor op de knop **[!UICONTROL Add]** en geeft u de voorwaarden voor het wijzigen van de afmetingen op.
+Indien nodig, is het mogelijk om binnenkomende lijsten te manipuleren. Om een doel van een andere dimensie uit te sluiten, moet dit doel worden teruggebracht naar dezelfde doeldimensie als het hoofddoel. Klik op de knop **[!UICONTROL Add]** en geeft u de voorwaarden voor het wijzigen van de afmetingen op.
 
-Afstemming van gegevens vindt plaats via een id, een veranderende as of een samenvoeging. Een voorbeeld is beschikbaar in [Gegevens uit een lijst gebruiken: Leeslijst](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
+Afstemming van gegevens vindt plaats via een id, een veranderende as of een samenvoeging. Een voorbeeld is beschikbaar in [Gegevens uit een lijst gebruiken: lijst lezen](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Subsets maken met behulp van de splitsingsactiviteit {#creating-subsets-using-the-split-activity}
+### Subsets maken met de splitsingsactiviteit {#creating-subsets-using-the-split-activity}
 
 De **[!UICONTROL Split]** activiteit is een standaardactiviteit die u zo vele reeksen door één of verscheidene het filtreren dimensies zonodig, evenals het produceren van of één outputovergang per ondergroep of een unieke overgang laat tot stand brengen.
 
@@ -148,13 +148,13 @@ Om het te vormen, moet u eerst criteria selecteren:
 
 1. Sleep een **[!UICONTROL Split]** activiteit.
 1. In de **[!UICONTROL General]** selecteert u de gewenste optie: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** of **[!UICONTROL Use external data]**.
-1. Als de **[!UICONTROL Use data from the target and additional data]** Als deze optie is geselecteerd, kunt u alle gegevens gebruiken die door de binnenkomende overgang worden overgedragen.
+1. Als de **[!UICONTROL Use data from the target and additional data]** Als deze optie is geselecteerd, kunt u met de doeldimensie alle gegevens gebruiken die door de binnenkomende overgang worden overgedragen.
 
    ![](assets/split-general-tab-options.png)
 
    Wanneer subsets worden gemaakt, worden de eerder vermelde filterparameters gebruikt.
 
-   Als u filtervoorwaarden wilt definiëren, kiest u de optie **[!UICONTROL Add a filtering condition on the inbound population]** en klik op de knop **[!UICONTROL Edit...]** koppeling. Geef vervolgens de filtervoorwaarden op voor het maken van deze subset.
+   Als u filtervoorwaarden wilt definiëren, kiest u de **[!UICONTROL Add a filtering condition on the inbound population]** en klik op de knop **[!UICONTROL Edit...]** koppeling. Geef vervolgens de filtervoorwaarden op voor het maken van deze subset.
 
    ![](assets/split-subset-config-all-data.png)
 
@@ -164,7 +164,7 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    U kunt ook een segmentcode aan de subset toewijzen om deze te identificeren en te gebruiken om de populatie te bepalen.
 
-   Indien nodig, kunt u de het richten en het filtreren dimensies individueel voor elke ondergroep veranderen u wilt tot stand brengen. Om dit te doen, geef de het filtreren voorwaarde van de ondergroep uit en controleer **[!UICONTROL Use a specific filtering dimension]** optie.
+   Indien nodig, kunt u de het richten en het filtreren dimensies individueel voor elke ondergroep veranderen u wilt tot stand brengen. Om dit te doen, geef de het filtreren voorwaarde van de ondergroep uit en controleer **[!UICONTROL Use a specific filtering dimension]** -optie.
 
    ![](assets/split-subset-config-specific-filtering.png)
 
@@ -178,9 +178,9 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Documentatie voor Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 Vervolgens moeten nieuwe subsets worden toegevoegd:
 
@@ -192,19 +192,19 @@ Vervolgens moeten nieuwe subsets worden toegevoegd:
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Indien nodig kunt u de filterdimensie voor elke subset afzonderlijk wijzigen. Hiermee kunt u een set maken voor alle houders van een Gold-kaart, één voor alle ontvangers die op de meest recente nieuwsbrief hebben geklikt en een derde voor personen van 18 tot en met 25 jaar die de laatste 30 dagen in de winkel een aankoop hebben gedaan, allemaal met dezelfde gesplitste activiteit. Selecteer hiervoor de optie **[!UICONTROL Use a specific filtering dimension]** en selecteert u de context voor het filteren van gegevens.
+1. Indien nodig kunt u de filterdimensie voor elke subset afzonderlijk wijzigen. Hiermee kunt u een set maken voor alle houders van een Gold-kaart, één voor alle ontvangers die op de meest recente nieuwsbrief hebben geklikt en een derde voor personen van 18 tot en met 25 jaar die de laatste 30 dagen in de winkel een aankoop hebben gedaan, allemaal met dezelfde gesplitste activiteit. Selecteer de optie **[!UICONTROL Use a specific filtering dimension]** en selecteert u de context voor het filteren van gegevens.
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >Als u de **Federale gegevenstoegang** kunt u subsets maken op basis van de informatie in een externe basis. Selecteer hiertoe het schema van de externe tabel in het dialoogvenster **[!UICONTROL Targeting dimension]** veld. Raadpleeg voor meer informatie hierover [Toegang tot een externe database (FDA)](accessing-an-external-database--fda-.md).
+   >Als u de **Federale gegevenstoegang** kunt u subsets maken op basis van de informatie in een externe basis. Om dit te doen, selecteer het schema van de externe lijst in **[!UICONTROL Targeting dimension]** veld. Raadpleeg voor meer informatie hierover [Toegang tot een externe database (FDA)](accessing-an-external-database--fda-.md).
 
 Nadat subsets zijn gemaakt, toont de splitsingsactiviteit standaard evenveel uitvoerovergangen als er subsets zijn:
 
 ![](assets/wf_split_multi_outputs.png)
 
-U kunt al deze subsets groeperen in één uitvoerovergang. In dit geval is de koppeling naar de desbetreffende subsets bijvoorbeeld zichtbaar in de segmentcode. Selecteer hiervoor de optie **[!UICONTROL Generate all subsets in the same table]** optie.
+U kunt al deze subsets groeperen in één uitvoerovergang. In dit geval is de koppeling naar de desbetreffende subsets bijvoorbeeld zichtbaar in de segmentcode. Selecteer de optie **[!UICONTROL Generate all subsets in the same table]** -optie.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -220,15 +220,15 @@ Zodra de gegevens zijn geïdentificeerd en opgesteld, kunnen ze in de volgende c
 
 * U kunt de gegevens in de database bijwerken na gegevensmanipulatie in de verschillende werkstroomfasen.
 
-   Voor meer informatie hierover: [Gegevens bijwerken](update-data.md).
+  Voor meer informatie hierover: [Gegevens bijwerken](update-data.md).
 
 * U kunt ook de inhoud van bestaande lijsten vernieuwen.
 
-   Raadpleeg voor meer informatie hierover [Lijstupdate](list-update.md).
+  Raadpleeg voor meer informatie hierover [Lijstupdate](list-update.md).
 
 * U kunt leveringen rechtstreeks voorbereiden of starten in de workflow.
 
-   Raadpleeg voor meer informatie hierover [Aflevering](delivery.md), [Afleveringscontrole](delivery-control.md) en [Doorlopende levering](continuous-delivery.md).
+  Raadpleeg voor meer informatie hierover [Aflevering](delivery.md), [Afleveringscontrole](delivery-control.md) en [Doorlopende levering](continuous-delivery.md).
 
 ## Data management {#data-management}
 
@@ -241,7 +241,7 @@ In Adobe Campaign combineert het gegevensbeheer een reeks activiteiten om comple
 Voor de uitvoering van deze transacties biedt Adobe Campaign:
 
 * Gegevensverzameling: [Bestandsoverdracht](file-transfer.md), [Gegevens laden (bestand)](data-loading--file-.md), [Gegevens laden (RDBMS)](data-loading--rdbms-.md), [Gegevens bijwerken](update-data.md). In deze eerste stap voor het verzamelen van gegevens worden de gegevens voorbereid, zodat ze in andere activiteiten kunnen worden verwerkt. Verschillende parameters moeten worden gecontroleerd om ervoor te zorgen dat de workflow correct wordt uitgevoerd en de verwachte resultaten oplevert. Wanneer u bijvoorbeeld gegevens importeert, moet de primaire sleutel (sleutel) voor deze gegevens uniek zijn voor elke record.
-* Doelactiviteiten zijn verrijkt met opties voor gegevensbeheer: [Query](query.md), [Unie](union.md), [Intersectie](intersection.md), [Splitsen](split.md). Zo kunt u een samenvoeging of een doorsnede configureren tussen gegevens van verschillende doeldimensies, zolang de gegevens met elkaar in overeenstemming zijn.
+* Doelactiviteiten zijn verrijkt met opties voor gegevensbeheer: [Query](query.md), [Unie](union.md), [Intersectie](intersection.md), [Splitsen](split.md). Zo kunt u een samenvoeging of een doorsnede configureren tussen gegevens van verschillende doeldimensies, zolang de gegevens met elkaar in overeenstemming kunnen worden gebracht.
 * Transformatie van gegevens: [Verrijking](enrichment.md), [Dimensie wijzigen](change-dimension.md).
 
 >[!CAUTION]

@@ -2,12 +2,12 @@
 product: campaign
 title: Aan de slag met transactionele berichten
 description: Meer informatie over het Adobe Campaign Classic-operatieprincipe voor berichten en de belangrijkste stappen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '651'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Een transactiebericht is een individuele en unieke communicatie die in real time
 
 Transactionele berichtenmogelijkheden worden ontworpen om scalability te steunen en de dienst te verlenen 24/7.
 
-* **Wanneer komt het?** Omdat dit bericht belangrijke informatie bevat, verwacht de gebruiker dat het in echt - tijd wordt verzonden. De vertraging tussen de gebeurtenis die wordt geactiveerd en het bericht dat aankomt, moet daarom zeer kort zijn.
+* **Wanneer is het te verwachten?** Omdat dit bericht belangrijke informatie bevat, verwacht de gebruiker dat het in echt - tijd wordt verzonden. De vertraging tussen de gebeurtenis die wordt geactiveerd en het bericht dat aankomt, moet daarom zeer kort zijn.
 
 * **Waarom is het belangrijk?** Over het algemeen zijn er voor een transactiebericht hoge open tarieven. Het moet daarom zorgvuldig worden ontworpen, omdat het een sterke invloed kan hebben op het gedrag van de klanten, aangezien het de relatie met de klant definieert.
 
@@ -45,7 +45,7 @@ Deze functie is afhankelijk van een specifieke architectuur, waarbij de **uitvoe
 
 >[!NOTE]
 >
->Als u nieuwe gebruikers wilt maken voor instanties die worden gehost op de Adobe Cloud voor uitvoering in het Berichtencentrum, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om toegang te hebben **[!UICONTROL Real time events (nmsRtEvent)]** mappen.
+>Als u nieuwe gebruikers wilt maken voor instanties die worden gehost op de Adobe Cloud voor uitvoering in Message Center, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om toegang te hebben **[!UICONTROL Real time events (nmsRtEvent)]** mappen.
 
 Het algemene proces van het transactieoverseinen kan als volgt worden beschreven:
 

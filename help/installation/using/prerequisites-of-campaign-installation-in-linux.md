@@ -2,16 +2,17 @@
 product: campaign
 title: Vereisten voor installatie van Campaign in Linux
 description: Vereisten voor installatie van Campaign in Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
+source-wordcount: '914'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +31,7 @@ Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct
 * Apache, zie [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md),
 * Java JDK en OpenJDK, zie [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, zie [Bibliotheken](#libraries),
-* De de toegangslagen van het gegevensbestand, verwijs naar [Databasetoegangslagen](#database-access-layers),
+* De de toegangslagen van het gegevensbestand, verwijzen naar [Databasetoegangslagen](#database-access-layers),
 * LibreOffice, zie [LibreOffice voor Debian installeren](#installing-libreoffice-for-debian) en [LibreOffice voor CentOS installeren](#installing-libreoffice-for-centos),
 * Lettertypen, zie [Lettertypen voor MTA-statistieken](#fonts-for-mta-statistics) en [Lettertypen voor Japanse instanties](#fonts-for-japanese-instances).
 
@@ -44,33 +45,33 @@ Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken 
 
 * Bibliotheek C moet de TLS-modus (Thread Local Storage) kunnen ondersteunen. Deze modus is in de meeste gevallen actief, behalve bij sommige kernels waarvoor Xen-ondersteuning is uitgeschakeld.
 
-   Om dit te controleren, kunt u gebruiken **uname -a | groene xen** bijvoorbeeld.
+  Om dit te controleren, kunt u gebruiken **uname -a | groene xen** bijvoorbeeld.
 
-   Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
+  Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
 
 * U moet OpenSSL-versie hebben **1.0.2.** of hoger.
 
-   Voor RHEL 7/8-distributies is versie 1.0 van OpenSSL vereist.
+  Voor RHEL 7/8-distributies is versie 1.0 van OpenSSL vereist.
 
 * Als je Adobe Campaign wilt gebruiken, moet je beschikken over de **libicu** geïnstalleerde bibliotheek.
 
-   De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
+  De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-   Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
+  Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
 
-   ```
-   yum install c-ares
-   ```
+  ```
+  yum install c-ares
+  ```
 
-   In Debian:
+  In Debian:
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
 ### SELinux {#selinux}
 
@@ -82,7 +83,7 @@ Om dit te doen, login als wortel en ga het volgende bevel in:
 echo 0 >/selinux/enforce
 ```
 
-Daarnaast wordt in de **/etc/sysconfig/httpd** bestand is de volgende regel toegevoegd om te verwijzen naar het Adobe Campaign-omgevingsconfiguratiescript:
+Daarnaast wordt in de **/etc/sysconfig/httpd** bestand, is de volgende regel toegevoegd om naar het Adobe Campaign-omgevingsconfiguratiescript te verwijzen:
 
 ```
 . ~neolane/nl6/env.sh
@@ -114,15 +115,15 @@ Gebruik in Redhat de volgende opdracht:
 
 * Voor CentOS/RHEL 7:
 
-   ```
-   yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-   ```
+  ```
+  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
+  ```
 
 * Voor RHEL 8:
 
-   ```
-   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-   ```
+  ```
+  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+  ```
 
 ### Lettertypen voor Japanse instanties {#fonts-for-japanese-instances}
 
@@ -138,15 +139,15 @@ Voeg de opdracht in Rode hoed toe:
 
 * Voor RHEL 7:
 
-   ```
-   yum install ipa-gothic-fonts ipa-mincho-fonts
-   ```
+  ```
+  yum install ipa-gothic-fonts ipa-mincho-fonts
+  ```
 
 * Voor RHEL 8:
 
-   ```
-   dnf install vlgothic-fonts
-   ```
+  ```
+  dnf install vlgothic-fonts
+  ```
 
 ### LibreOffice voor Debian installeren {#installing-libreoffice-for-debian}
 
@@ -194,7 +195,7 @@ U kunt een Linux RPM pakket van het Netwerk van de Technologie van het Oracle ve
 
 >[!NOTE]
 >
->Als u al de client van het Oracle maar de algemene omgeving hebt geïnstalleerd (bijvoorbeeld: /etc/profile) niet correct wordt gevormd, kunt u ontbrekende informatie aan toevoegen **nl6/customer.sh** script Raadpleeg voor meer informatie hierover [Omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Als u de client voor het Oracle al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet correct is geconfigureerd, kunt u ontbrekende informatie toevoegen aan de **nl6/customer.sh** script Raadpleeg voor meer informatie hierover [Omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Problemen oplossen en best practices**
 
@@ -224,7 +225,7 @@ Adobe Campaign-installaties voor Linux moeten in de volgende volgorde worden uit
 
 Het installatieproces wordt in dit hoofdstuk beschreven. De installatiestappen zijn als volgt:
 
-* Stap 1: De toepassingsserver installeren, raadpleegt u [Pakketten installeren met Linux](../../installation/using/installing-packages-with-linux.md).
-* Stap 2: Integratie met een webserver (optioneel, afhankelijk van de gebruikte componenten).
+* Stap 1: De toepassingsserver installeren, verwijs naar [Pakketten installeren met Linux](../../installation/using/installing-packages-with-linux.md).
+* Stap 2: Het integreren met een server van het Web (facultatief, afhankelijk van de opgestelde componenten).
 
 Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbestand en de server vormen. Raadpleeg voor meer informatie hierover [Informatie over initiële configuratie](../../installation/using/about-initial-configuration.md).

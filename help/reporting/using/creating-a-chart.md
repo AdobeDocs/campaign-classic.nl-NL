@@ -2,13 +2,13 @@
 product: campaign
 title: Een grafiek maken
 description: Leer hoe u een grafiek ontwerpt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 3%
 
 ---
@@ -39,19 +39,19 @@ Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
    * Klik op de knop **[!UICONTROL Filter data...]** koppeling om filtercriteria voor de gegevens in de database te definiëren.
 
-      ![](assets/reporting_graph_add_filter.png)
+     ![](assets/reporting_graph_add_filter.png)
 
    * Selecteer **[!UICONTROL Context data]** van de **[!UICONTROL Source]** en klik op de knop **[!UICONTROL Advanced settings...]** koppeling. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
 
-      ![](assets/reporting_graph_from_context.png)
+     ![](assets/reporting_graph_from_context.png)
 
-      Vervolgens hebt u toegang tot de contextafhankelijke gegevens om de waarden te definiëren die in het diagram moeten worden weergegeven:
+     Vervolgens hebt u toegang tot de contextafhankelijke gegevens om de waarden te definiëren die in het diagram moeten worden weergegeven:
 
-      ![](assets/reporting_graph_select-from_context.png)
+     ![](assets/reporting_graph_select-from_context.png)
 
 ## Grafiektypen en -varianten {#chart-types-and-variants}
 
-Adobe Campaign biedt verschillende typen grafische voorstellingen. Deze worden hieronder nader beschreven.
+Adobe Campaign biedt verschillende typen grafische voorstellingen. Deze worden hieronder nader toegelicht.
 
 Het grafiektype wordt geselecteerd wanneer het in de pagina wordt opgenomen.
 
@@ -63,7 +63,7 @@ Het kan ook worden gewijzigd via de **[!UICONTROL Chart type]** van de **[!UICON
 
 Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden geselecteerd via de **[!UICONTROL Variants...]** koppeling.
 
-### Indeling: cirkeldiagrammen {#breakdown--pie-charts}
+### Indeling: schijfgrafieken {#breakdown--pie-charts}
 
 Met dit type grafische weergave kunt u een overzicht van de gemeten elementen weergeven.
 
@@ -113,9 +113,9 @@ Indien van toepassing, kunt u waarden samen stapelen.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer hiervoor de optie **[!UICONTROL Reverse stacking]** optie.
+Indien nodig, kunt u de reeks van de waardevertoning omkeren. Selecteer de optie **[!UICONTROL Reverse stacking]** -optie.
 
-### Conversie: trechter {#conversion--funnel}
+### Omzetting: trechter {#conversion--funnel}
 
 Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
 
@@ -133,7 +133,7 @@ Met grafieken kunt u statistieken weergeven over de verzamelde gegevens.
 
 Deze statistieken worden gedefinieerd via de **[!UICONTROL Series parameters]** van de **[!UICONTROL Data]** tab.
 
-Als u een nieuwe statistiek wilt maken, klikt u op de knop **[!UICONTROL Add]** en configureert u het juiste venster. De beschikbare berekeningstypen worden hieronder beschreven.
+Als u een nieuwe statistiek wilt maken, klikt u op de **[!UICONTROL Add]** en configureert u het juiste venster. De beschikbare berekeningstypen worden hieronder beschreven.
 
 ![](assets/reporting_add_statistics.png)
 

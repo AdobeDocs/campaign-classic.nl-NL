@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot Snowflake configureren
 description: Leer hoe u toegang tot Snowflake kunt configureren in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '519'
 ht-degree: 6%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 6%
 Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Snowflake].
 
 1. Configureren [!DNL Snowflake] op [Linux](#snowflake-linux).
-1. Configureer de [!DNL Snowflake] [externe rekening](#snowflake-external) in Campagne
+1. Vorm [!DNL Snowflake] [externe rekening](#snowflake-external) in Campagne
 
 >[!NOTE]
 >
@@ -37,19 +38,19 @@ Om te vormen [!DNL Snowflake] Voer in Linux de onderstaande stappen uit:
 
    * Voor Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Voor Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Voordat u het script uitvoert, hebt u toegang tot meer informatie via de `--help` optie:
 
@@ -90,7 +91,7 @@ U moet een [!DNL Snowflake] externe account om uw Campagne-instantie aan te slui
 
 1. Voeg uw **[!UICONTROL Server]** URL en **[!UICONTROL Database]**.
 
-1. Configureer de **[!UICONTROL Snowflake]** externe accountverificatie:
+1. Vorm **[!UICONTROL Snowflake]** externe accountverificatie:
 
    * Voor account-/wachtwoordverificatie moet u opgeven:
 
@@ -98,14 +99,13 @@ U moet een [!DNL Snowflake] externe account om uw Campagne-instantie aan te slui
 
       * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount.
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
    * Voor Keypair-verificatie klikt u op de knop **[!UICONTROL Keypair Auth]** tabblad gebruiken **[!UICONTROL Private key]** om uw gegevens te verifiëren en te kopiëren **[!UICONTROL Private key]**.
 
-      ![](assets/snowflake_4.png)
+     ![](assets/snowflake_4.png)
 
-
-1. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** om functies te maken.
+1. Klik op de knop **[!UICONTROL Parameters]** en vervolgens de **[!UICONTROL Deploy functions]** om functies te maken.
 
    >[!NOTE]
    >

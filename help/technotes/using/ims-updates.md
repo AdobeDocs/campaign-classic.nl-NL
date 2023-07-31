@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: TechNote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign met IMS
+title: Technote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '586'
 ht-degree: 7%
 
 ---
 
-# Uw omgeving bijwerken om verbinding te maken met Adobe Campaign met IMS {#acc-ims-faq}
+# Uw omgeving bijwerken voor verbinding met Adobe Campaign met IMS {#acc-ims-faq}
 
 
 
@@ -37,7 +38,7 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
 
 * Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies die hierboven zijn vermeld om te profiteren van de nieuwe clientconsole en een naadloze overgang te garanderen **vóór 30 juni 2021**.
 
-  U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden vermeld.
+  U dient een upgrade uit te voeren naar een van de nieuwe versies die hieronder worden vermeld.
 
    * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
    * Release van campagne 21.1.3. [Meer informatie](../../rn/using/latest-release.md)
@@ -45,7 +46,7 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
    * Release van campagne 20.1.4.
    * Release van campagne 19.2.4.
 
-  Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties zijn bijgewerkt, moet de clientconsole worden bijgewerkt naar deze versie en moet deze ook verbinding kunnen maken met Campagne nadat **30 juni 2021**.
+  Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: wanneer alle exemplaren zijn bijgewerkt, moet de clientconsole worden bijgewerkt naar deze versie en moet deze ook verbinding kunnen maken met de campagne na **30 juni 2021**.
 
 Zorg bovendien voor de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **Internet Explorer 11** ingebouwd, wordt geïnstalleerd op de computer van elke gebruiker.
 
@@ -76,7 +77,7 @@ De volgende waarschuwing is zichtbaar voor gebruikers als ze hun clientconsole m
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Als u een dergelijke waarschuwing ziet, moet u de nieuwste updates van het besturingssysteem installeren dat u gebruikt. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Als u een dergelijke waarschuwing ziet, moet u de meest recente updates van het besturingssysteem installeren dat u gebruikt. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 Als u de Internet Explorer-versie niet hebt bijgewerkt, wordt het volgende bericht weergegeven en kunt u geen verbinding meer maken met Adobe Campaign:
 

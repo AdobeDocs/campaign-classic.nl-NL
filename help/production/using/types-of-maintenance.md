@@ -2,16 +2,17 @@
 product: campaign
 title: Typen onderhoud
 description: Typen onderhoud
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 2%
+source-wordcount: '519'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +34,7 @@ Adobe Campaign biedt een ingebouwde workflow waarmee u bepaalde onderhoudstaken 
 
 ## Technisch onderhoud {#technical-maintenance}
 
-De workflow voor het opschonen van databases bevat geen enkele tool voor databaseonderhoud: het is aan u om onderhoud te organiseren. Hiervoor kunt u:
+De workflow voor het opschonen van databases bevat geen onderhoudsprogramma&#39;s voor databases: het is aan u om onderhoud te organiseren. Hiervoor kunt u:
 
 * met uw beheerder van het Gegevensbestand aan opstellings gegevensbestandonderhoud met derdehulpmiddelen,
 * gebruik de Adobe Campaign-workflowengine om deze onderhoudsactiviteiten te plannen en te volgen.
@@ -66,7 +67,7 @@ Er zijn verschillende strategieën beschikbaar:
  </thead> 
  <tbody> 
   <tr> 
-   <td> Online defragmentation<br /> </td> 
+   <td> Onlinedefragmentatie<br /> </td> 
    <td> De meeste gegevensbestandmotoren verstrekken defragmentatiemethodes.<br /> </td> 
    <td> Gebruik eenvoudig de database defragmentation methode. Deze methodes behandelen typisch integriteitskwesties door de gegevens tijdens defragmentation te sluiten.<br /> </td> 
    <td> Afhankelijk van het gegevensbestand, kunnen deze defragmentation methodes als optie RDBMS (Oracle) worden verstrekt en zijn niet altijd de meest efficiënte manier om grotere lijsten te behandelen.<br /> </td> 

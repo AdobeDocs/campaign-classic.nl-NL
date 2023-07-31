@@ -2,13 +2,14 @@
 product: campaign
 title: Rapporten beheren
 description: Rapporten beheren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Reporting, Configuration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 4%
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
@@ -24,10 +25,10 @@ In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor d
 
 De volgende verslagen hebben betrekking op:
 
-* **[!UICONTROL Recent proposition tracking]** (recentProposities): realtime propositie bijhouden.
-* **[!UICONTROL Breakdown of opens]** (openByUserAgent): wordt uitgesplitst volgens de software van de gebruiker.
-* **[!UICONTROL Statistics of the sharing activities]** (forwardActiviteiten): analyse van het delen van activiteiten, het openen en de abonnementen per tijdsperiode.
-* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): volgindicatoren voor levering op een mobiele toepassing.
-* **[!UICONTROL Offer analysis]** (offerteanalyse): analyse per datum en kanaal aanbieden.
-* **[!UICONTROL Reactivity rate]** (mobileAppDistribution): reactiviteitsgraad voor de meest recente leveringen.
+* **[!UICONTROL Recent proposition tracking]** (recentProposities): propositiebepaling in real time.
+* **[!UICONTROL Breakdown of opens]** (openByUserAgent): opent uitgesplitst volgens gebruikerssoftware.
+* **[!UICONTROL Statistics of the sharing activities]** (forwardActiviteiten): analyse van gezamenlijke activiteiten, open en abonnementen per tijdsperiode.
+* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): trackingsindicatoren voor een levering op een mobiele toepassing.
+* **[!UICONTROL Offer analysis]** (offerteanalyse): aanbiedingsanalyse per datum en kanaal.
+* **[!UICONTROL Reactivity rate]** (mobileAppDistribution): reactiviteitspercentage voor de meest recente leveringen.
 * **[!UICONTROL Breakdown of subscriptions]** (mobileAppDistribution): uitsplitsing van actieve abonnementen per mobiele toepassing.

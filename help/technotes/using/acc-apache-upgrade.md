@@ -2,10 +2,11 @@
 product: campaign
 title: Technote - Adobe Campaign - Beveiligingsupdate Apache-versie
 description: Adobe Campaign - Beveiligingsupdate Apache-versie
+feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -30,37 +31,38 @@ De niet-productie-instantie(s) worden eerst door Adobe bijgewerkt, waarna de pro
 
 >[!NOTE]
 >Deze upgrade vereist om de Apache-webserver opnieuw te starten. De downtime zal niet langer zijn dan 10 minuten binnen de hieronder vermelde periode.
+> 
 
 ## Veelgestelde vragen {#apache-faq}
 
 * **Waarom is dit een verplichte upgrade?**
 
-   De huidige Apache-versie is kwetsbaar en heeft een potentieel veiligheidsrisico. Het is belangrijk dat uw instantie(s) van de Campagne wordt (worden) geüpgraded naar de meest recente toepasselijke Apache-versie om het beveiligingsrisico te verhelpen.
+  De huidige Apache-versie is kwetsbaar en heeft een potentieel veiligheidsrisico. Het is belangrijk dat uw instantie(s) van de Campagne wordt (worden) geüpgraded naar de meest recente toepasselijke Apache-versie om het beveiligingsrisico te verhelpen.
 
 * **Welke klanten worden gericht voor veiligheidsupgrades?**
 
-   Alle klanten die gebruikmaken van Campagne-omgevingen die zijn geïmplementeerd in oudere Apache-versies, worden geüpgraded naar de nieuwste Apache-versie die van toepassing is.
+  Alle klanten die gebruikmaken van Campagne-omgevingen die zijn geïmplementeerd in oudere Apache-versies, worden geüpgraded naar de nieuwste Apache-versie die van toepassing is.
 
 * **Wat is de verwachte onderbreking?**
 
-   De verwachte downtime is minder dan 10 minuten.
+  De verwachte downtime is minder dan 10 minuten.
 
 * **Zijn er om het even welke acties die door de klant voor deze veiligheidsverbetering worden vereist?**
 
-   Er zijn geen handelingen vereist omdat de beveiligingsupgrade automatisch wordt uitgevoerd.
+  Er zijn geen handelingen vereist omdat de beveiligingsupgrade automatisch wordt uitgevoerd.
 
 * **Wat is het effect op de lopende campagnes/werkschema&#39;s tijdens het onderhoudsvenster?**
 
-   Tijdens het onderhoudsvenster worden de workflow en de e-mailservices stopgezet en worden de geplande activiteiten niet uitgevoerd. Om het even welke aan de gang zijnde activiteiten of lopende processen zullen tijdens onderbreking worden gestopt tot de server opnieuw begint. Zodra de activiteit wordt voltooid en de server opnieuw is begonnen, zullen alle diensten hervatten.
+  Tijdens het onderhoudsvenster worden de workflow en de e-mailservices stopgezet en worden de geplande activiteiten niet uitgevoerd. Om het even welke aan de gang zijnde activiteiten of lopende processen zullen tijdens onderbreking worden gestopt tot de server opnieuw begint. Zodra de activiteit wordt voltooid en de server opnieuw is begonnen, zullen alle diensten hervatten.
 
 * **Welke bevestigingen moeten door de klanten worden in werking gesteld?**
 
-   Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kan ik om een verandering in Datum/Tijd in de geplande groef van de veiligheidsverbetering verzoeken?**
 
-   Aangezien dit een veiligheidsmoeilijke situatie is, adviseren wij u sterk aan het bestaande programma aan te passen.
+  Aangezien dit een veiligheidsmoeilijke situatie is, adviseren wij u sterk aan het bestaande programma aan te passen.
 
 
 Voor elke andere vraag kunt u zich tot [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).

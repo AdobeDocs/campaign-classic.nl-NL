@@ -2,16 +2,17 @@
 product: campaign
 title: RDBMS - Specifieke aanbevelingen
 description: RDBMS - Specifieke aanbevelingen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 1%
+source-wordcount: '1201'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 
 
-Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een overzicht van een aantal aanbevelingen en aanbevolen procedures die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
+Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een overzicht van een aantal aanbevelingen en aanbevolen procedures die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, in overeenstemming met uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
 
 ## PostgreSQL {#postgresql}
 
@@ -86,7 +87,7 @@ In PostgreSQL, kunt u deze typische sleutelwoorden gebruiken:
 
 * VACUUM (VOLLEDIG, ANALYSEREN, VERBODEN)
 
-U kunt de VACUUM-bewerking uitvoeren en analyseren en er tijd aan toewijzen door deze syntaxis te gebruiken:
+Als u de VACUUM-bewerking wilt uitvoeren en analyseren en uitvoeren, kunt u deze syntaxis gebruiken:
 
 ```
 \timing on
@@ -137,13 +138,12 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe raadt u aan kleinere tabellen te gebruiken: als het proces op grote tabellen mislukt ( waarbij het risico van mislukking het grootst is ) , is ten minste een deel van het onderhoud voltooid .
+>* Adobe raadt aan om te beginnen met kleinere tabellen: als het proces op grote tabellen mislukt (waar het risico op mislukking het grootst is), is ten minste een deel van het onderhoud voltooid.
 >* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval zijn voor **NmsRecipient** als u grote dagelijkse gegevensreplicatiestromen hebt.
 >* De instructie VACUUM vergrendelt de tabel, die sommige processen onderbreekt terwijl onderhoud wordt uitgevoerd.
 >* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze functie te gebruiken voor de **YyyNmsBroadLogXxx** tabel.
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow, met behulp van een **[!UICONTROL SQL]** activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 >
-
 
 ### Database opnieuw samenstellen {#rebuilding-a-database}
 
@@ -411,7 +411,7 @@ Neem contact op met de databasebeheerder voor meer informatie over de procedures
 >
 >Voor Microsoft SQL Server kunt u het onderhoudsplan gebruiken dat is beschreven op [deze pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
-Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u een andere versie gebruikt, neemt u contact op met uw databasebeheerder voor informatie over onderhoudsprocedures.
+Het onderstaande voorbeeld betreft Microsoft SQL Server 2005. Als u een andere versie gebruikt, neemt u contact op met uw databasebeheerder voor informatie over onderhoudsprocedures.
 
 1. Eerst, verbind met de Studio van het Beheer van de Server van Microsoft SQL, met login met beheerderrechten.
 1. Ga naar de **[!UICONTROL Management > Maintenance Plans]** map, klikt u er met de rechtermuisknop op en kiest u **[!UICONTROL Maintenance Plan Wizard]**.
@@ -422,7 +422,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    >[!NOTE]
    >
-   >We raden u aan ten minste de hieronder weergegeven onderhoudstaken uit te voeren. U kunt ook de statistische updatetaak selecteren, hoewel deze al wordt uitgevoerd door de workflow voor het opschonen van databases.
+   >We raden u aan ten minste de hieronder weergegeven onderhoudstaken uit te voeren. U kunt ook de statistische updatetaak selecteren, hoewel deze al wordt uitgevoerd door de workflow voor het opschonen van de database.
 
 1. Selecteer in de vervolgkeuzelijst de database waarop u het dialoogvenster **[!UICONTROL Database Check Integrity]** taak.
 1. Selecteer de database en klik op **[!UICONTROL OK]** en klik vervolgens op **[!UICONTROL Next]**.
@@ -436,19 +436,19 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    * Als het indexfragmentatietempo tussen 10% en 40% ligt, wordt een reorganisatie aanbevolen.
 
-      Kies welke databases en objecten (tabellen of weergaven) u opnieuw wilt ordenen en klik vervolgens op **[!UICONTROL Next]**.
+     Kies welke databases en objecten (tabellen of weergaven) u opnieuw wilt ordenen en klik vervolgens op **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Afhankelijk van uw configuratie kunt u de eerder geselecteerde tabellen of alle tabellen in uw database kiezen.
+     >[!NOTE]
+     >
+     >Afhankelijk van uw configuratie kunt u de eerder geselecteerde tabellen of alle tabellen in uw database kiezen.
 
    * Als het indexfragmentatietempo hoger is dan 40%, wordt een heropbouw aanbevolen.
 
-      Selecteer de opties die u wilt toepassen op de taak voor het opnieuw samenstellen van de index en klik vervolgens op **[!UICONTROL Next]**.
+     Selecteer de opties die u wilt toepassen op de taak voor het opnieuw samenstellen van de index en klik vervolgens op **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Selecteer **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
+     >[!NOTE]
+     >
+     >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Selecteer de **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
 
 1. Selecteer de opties die u in het activiteitenrapport wilt weergeven en klik vervolgens op **[!UICONTROL Next]**.
 1. Controleer de lijst van taken die voor het onderhoudsplan worden gevormd, dan klik **[!UICONTROL Finish]**.
@@ -456,8 +456,8 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
    Er wordt een samenvatting van het onderhoudsplan en de status van de verschillende stappen weergegeven.
 
 1. Als het onderhoudsplan is voltooid, klikt u op **[!UICONTROL Close]**.
-1. Dubbelklik in de Microsoft SQL Server-verkenner op de knop **[!UICONTROL Management > Maintenance Plans]** map.
-1. Selecteer het Adobe Campaign-onderhoudsplan: de verschillende stappen worden beschreven in een workflow .
+1. Dubbelklik in Microsoft SQL Server Explorer op de knop **[!UICONTROL Management > Maintenance Plans]** map.
+1. Selecteer het Adobe Campaign-onderhoudsplan: de verschillende stappen worden beschreven in een workflow.
 
    Er is een object gemaakt in het dialoogvenster **[!UICONTROL SQL Server Agent > Jobs]** map. Met dit object kunt u het onderhoudsplan starten. In ons voorbeeld is er slechts één object omdat alle onderhoudstaken deel uitmaken van hetzelfde plan.
 

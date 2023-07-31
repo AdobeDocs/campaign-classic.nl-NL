@@ -2,16 +2,17 @@
 product: campaign
 title: Gebruikelijke opdrachten
 description: Gebruikelijke opdrachten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 5%
 
 ---
 
@@ -30,9 +31,8 @@ De parameter **`<command>`** komt overeen met de module.
 >[!NOTE]
 >
 >* In elk geval kunt u de opdracht **-noconsole** argument om opmerkingen te verwijderen die worden weergegeven wanneer de modules zijn gestart.
->* Omgekeerd kunt u het argument toevoegen **-verbose** voor meer informatie.
+>* U kunt het argument daarentegen toevoegen **-verbose** voor meer informatie.
 >
-
 
 ## Bewaking, opdrachten {#monitoring-commands-}
 
@@ -90,7 +90,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** overeenkomt met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden, of **default** voor mono-instantiemodules.
+>**`<instance>`** overeenkomt met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden, of **default** voor mono-instance modules.
 
 ## Afsluiten van services {#shut-down-services}
 
@@ -100,25 +100,25 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
 
    * In Linux:
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+     >[!NOTE]
+     >
+     >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
 
    * In Windows:
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * Zo niet, dan op de Adobe Campaign-account:
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## Herstartservices {#restart-services}
 
@@ -128,11 +128,11 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
    * In Linux: /etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+     >[!NOTE]
+     >
+     >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
-   * In Windows: netwerkbeginserver6
+   * In Windows: Net start Nlserver6
 
 * Anders, in de rekening van Adobe Campaign: **nlserver watchdog -svc -noconsole**
 
@@ -165,3 +165,4 @@ Als u het dialoogvenster **internal** wachtwoord: **nlserver config - intern wac
 >* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver
+>

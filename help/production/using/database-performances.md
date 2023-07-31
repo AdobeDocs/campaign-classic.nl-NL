@@ -2,16 +2,17 @@
 product: campaign
 title: Databaseprestaties
 description: Databaseprestaties
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 8%
+source-wordcount: '506'
+ht-degree: 10%
 
 ---
 
@@ -34,13 +35,13 @@ Controleer of de eerste configuratie van het Adobe Campaign-platform nog geldig 
 >
 >U kunt verwijzen naar [Handleiding voor Adobe Campaign Hardware Sizing](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html) voor inzichten.
 
-## Platform configureren {#platform-configuration}
+## Configuratie van Platform {#platform-configuration}
 
 Onjuiste configuratie kan de prestaties van het platform beïnvloeden. Wij adviseren dat u netwerkconfiguratie, de opties van de platformleverbaarheid evenals configuratie MTA in **serverConf.xml** bestand.
 
 ## Databaseonderhoud {#database-maintenance}
 
-**Opschoontaak database**
+**Database opschonen, taak**
 
 Controleer of de opschoontaak van de database actief is. U doet dit door de logbestanden weer te geven om te zien of deze fouten bevatten. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md) voor meer informatie.
 

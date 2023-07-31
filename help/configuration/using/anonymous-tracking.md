@@ -2,11 +2,12 @@
 product: campaign
 title: Anonieme tracking
 description: Leer hoe u anonieme tracking instelt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '219'
 ht-degree: 5%
 
 ---
@@ -22,11 +23,11 @@ Met Adobe Campaign kunt u verzamelde webtraceringsgegevens koppelen aan een ontv
 
 Om anonieme het volgen van het Web op uw instantie toe te laten, moeten de volgende elementen worden gevormd:
 
-* De **trackWebVisitors** parameter van de **omleiding** van het **serverConf.xml** bestand van de trackingserver moet zijn ingesteld op &#39;**true**&quot;, om een permanent cookie te plaatsen (**uuid230**) in de browsers van onbekende internetgebruikers die de site bezoeken.
+* De **trackWebVisitors** parameter van de **omleiding** element van het **serverConf.xml** bestand van de trackingserver moet zijn ingesteld op &#39;**true**&quot;, om een permanent cookie te plaatsen (**uuid230**) in de browsers van onbekende internetgebruikers die de site bezoeken.
 * De **Anonieme webtracering** De wijze moet in het volgende configuratiescherm van de plaatsingstovenaar worden geselecteerd.
 
-   ![](assets/webtracking_anonymous_set.png)
+  ![](assets/webtracking_anonymous_set.png)
 
 * Webformulieren moeten worden gepubliceerd en uitgevoerd op de trackingserver. De passende optie moet in de plaatsingstovenaar worden geselecteerd.
 
-   ![](assets/webtracking_publication_set_for_webapps.png)
+  ![](assets/webtracking_publication_set_for_webapps.png)

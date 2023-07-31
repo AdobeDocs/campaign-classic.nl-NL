@@ -2,16 +2,17 @@
 product: campaign
 title: Problemen met prestaties en doorvoer
 description: Problemen met prestaties en doorvoer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 4%
+source-wordcount: '736'
+ht-degree: 5%
 
 ---
 
@@ -39,10 +40,10 @@ Adobe Campaign biedt ook een [gereedschap](../../production/using/monitoring-pro
 
 Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de belangrijkste onderdelen:
 
-* Configuratie: We raden u aan de eerste configuratie van het Adobe Campaign-platform te controleren en een volledige hardwarecontrole uit te voeren.
-* Installatie en configuratie van het Adobe Campaign-platform: controleer de opties voor netwerkconfiguratie en platformleverantie.
-* Onderhoud database: zorg ervoor dat de taak van de gegevensbestandschoonmaakbeurt operationeel is en dat het gegevensbestandonderhoud correct gepland en uitgevoerd is. Controleer het aantal en de grootte van werktabellen.
-* Realtime diagnose: controleer het proces en de dossiers van het platformlogboek, dan controleert gegevensbestandactiviteit terwijl het ontspannen van de kwestie.
+* Configuratie: we raden u aan de eerste configuratie van het Adobe Campaign-platform te controleren en een volledige hardwarecontrole uit te voeren.
+* Installatie en configuratie van het Adobe Campaign-platform: controleer de configuratie van het netwerk en de opties voor het leveren van het platform.
+* Het onderhoud van het gegevensbestand: zorg ervoor dat de taak van de gegevensbestandschoonmaakbeurt operationeel is en dat het gegevensbestandonderhoud correct gepland en uitgevoerd is. Controleer het aantal en de grootte van werktabellen.
+* In real time diagnose: controleer het proces en de dossiers van het platformlogboek, controleer dan gegevensbestandactiviteit terwijl het ontspannen van de kwestie.
 
 >[!NOTE]
 >
@@ -52,20 +53,20 @@ Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de 
 
 Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwijzen voor toepassingsconfiguratie:
 
-* MTA en MTAChild processen en geheugen: de **mta** module verspreidt berichten aan zijn **mtachild** onderliggende modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Zie dit [page](../../installation/using/email-deliverability.md) voor meer informatie .
+* MTA en MTAChild processen en geheugen: het **mta** module verspreidt berichten aan zijn **mtachild** onderliggende modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Zie dit [page](../../installation/using/email-deliverability.md) voor meer informatie .
 * TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Zie dit [page](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie .
-* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* DKIM: om het beveiligingsniveau van de DKIM te garanderen, is 1024b de aanbevolen aanbevolen versleutelingsgrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Leverbaarheidsproblemen {#deliverability-issues}
 
 Hier volgt een lijst met best practices en artikelen met betrekking tot de te leveren items:
 
-* IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie dit [page](../../delivery/using/monitoring-deliverability.md).
-* Opwarmen IP: IP warm-up wordt uitgevoerd door het leveringsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
-* Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie dit [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie dit [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). In de [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) rapport, controleer het aantal bytes dat door uur wordt overgebracht.
-* Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan het effect op de productie hebben. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
-* Hoeveelheid personalisatie: als een levering in &quot;Personalisatie lopend&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
+* IP reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie dit [page](../../delivery/using/monitoring-deliverability.md).
+* IP opwarmen: IP opwarmen wordt uitgevoerd door het leverbaarheidsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
+* IP affiniteitopstelling: een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie dit [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* E-mailformaat: e-mailgrootte speelt een belangrijke rol bij de doorvoer. De aanbevolen maximale e-mailgrootte is 60 kB. Zie dit [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). In de [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) rapport, controleer het aantal bytes dat door uur wordt overgebracht.
+* Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan dit van invloed zijn op de doorvoer. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
+* Hoeveelheid personalisatie: als een levering in &quot;Personalisatie in uitvoering&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 
 >[!NOTE]
 >

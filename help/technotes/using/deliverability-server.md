@@ -2,8 +2,9 @@
 product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
+feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 3%
@@ -19,12 +20,13 @@ Als klant van Campaign Classic, moet u de nieuwe leverbaarheidsserver uitvoeren 
 >[!NOTE]
 >
 >Voor meer vragen over deze wijzigingen raadpleegt u de [Veelgestelde vragen](#faq)of contact op [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>
 
 ## Wat is er veranderd?{#acc-deliverability-changes}
 
 Adobe ontmantelt oudere gegevenscentra wegens veiligheidsoverwegingen. Adobe Campaign Classic-clients moeten migreren naar de nieuwe, op de Amazon Web Service (AWS) gehoste service.
 
-Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt veilige en geverifieerde eindpunten om campagnemeservers in staat te stellen de vereiste gegevens op te halen: in plaats van verbinding te maken met de database voor elk verzoek, slaat de nieuwe, te leveren server de gegevens in de cache op om de aanvragen waar mogelijk te bedienen. Dit mechanisme verbetert de responstijd. &#x200B;
+Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt veilige en geverifieerde eindpunten om campagnemeservers in staat te stellen de vereiste gegevens op te halen: in plaats van verbinding te maken met de database voor elk verzoek, slaat de nieuwe leverbaarbaarheidsserver de gegevens in cache om de aanvragen waar mogelijk te bedienen. Dit mechanisme verbetert de responstijd. &#x200B;
 
 ## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
 
@@ -43,6 +45,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 >[!WARNING]
 >
 >Deze stappen dienen alleen te worden uitgevoerd voor Hybride en On-premise implementaties.
+>
 
 ### Vereisten{#prerequisites}
 
@@ -60,10 +63,10 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 Als klant op locatie moet u ook controleren of een campagne **[!UICONTROL Product profile]** is beschikbaar voor uw organisatie. Volg onderstaande stappen om dit te doen:
 
 1. Als beheerder maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
-1. Toegang krijgen tot **Product en services** sectie en controle **Adobe Campaign** is vermeld.
-Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om deze toe te voegen.
+1. Toegang krijgen tot de **Product en services** sectie en controle **Adobe Campaign** is vermeld.
+Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} om het toe te voegen.
 1. Klikken **Adobe Campaign** en selecteer uw organisatie.
-   **Waarschuwing**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Waarschuwing**: Als u meerdere organisaties hebt, moet u de juiste selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**.
 
@@ -73,10 +76,10 @@ Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.
 >Als klant op locatie, als een firewall aan uw zijde is geïmplementeerd, moet u deze URL toevoegen `https://deliverability-service.adobe.io` op uw lijst van gewenste personen. [Meer informatie](../../installation/using/url-permissions.md).
 
 
-### Stap 1: Adobe Developer-project maken/bijwerken {#adobe-io-project}
+### Stap 1: uw Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
 1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
-   **Waarschuwing**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Waarschuwing**: Als u meerdere organisaties hebt, moet u de juiste selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Selecteer **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
 
@@ -117,7 +120,7 @@ Als u niet ziet **Adobe Campaign** contact [Adobe Klantenservice](https://helpx.
 >
 >Adobe Developer-certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
 
-### Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
+### Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign toe {#add-credentials-campaign}
 
 De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd.
 
@@ -139,13 +142,13 @@ Dit doet u als volgt:
 
 1. U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden. U kunt ook een `config -reload` gebruiken.
 
-### Stap 3: De nieuwe releaseserver inschakelen
+### Stap 3: De nieuwe, te leveren server inschakelen
 
 U kunt nu de nieuwe releaseserver inschakelen. Dit doet u als volgt:
 
 1. Open de clientconsole en meld u als beheerder aan bij Adobe Campaign.
 1. Bladeren naar **Beheer > Platform > Opties**.
-1. Toegang krijgen tot `NewDeliverabilityServer_FeatureFlag` en de waarde instellen op `1`. Deze configuratie zou op al uw instanties van de Campagne (MKT, MID, RT, EXEC) moeten worden uitgevoerd. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
+1. Toegang krijgen tot de `NewDeliverabilityServer_FeatureFlag` en de waarde instellen op `1`. Deze configuratie zou op al uw instanties van de Campagne (MKT, MID, RT, EXEC) moeten worden uitgevoerd. Als hybride klant, reik uit naar Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
 
 ### Stap 4: Valideer uw configuratie
 
@@ -153,7 +156,7 @@ Volg onderstaande stappen om te controleren of de integratie is gelukt:
 
 1. Open de clientconsole en meld u aan bij Adobe Campaign.
 1. Bladeren naar **Beheer > Productie > Technische workflows**.
-1. Start de **Vernieuwen voor leverbaarheid** (leverabilityUpdate) workflow. Dit moet worden uitgevoerd op al uw campagneinstanties (MKT, MID, RT, EXEC). Als hybride klant, reik uit aan Adobe om het werkschema op uw MID, RT en EXEC instanties te hebben opnieuw begonnen.
+1. De opdracht opnieuw starten **Vernieuwen voor leverbaarheid** (leverabilityUpdate) workflow. Dit moet worden uitgevoerd op al uw campagneinstanties (MKT, MID, RT, EXEC). Als hybride klant, reik uit aan Adobe om het werkschema op uw MID, RT en EXEC instanties te hebben opnieuw begonnen.
 1. Logbestanden controleren: de workflow moet zonder fouten worden uitgevoerd.
 
 >[!CAUTION]

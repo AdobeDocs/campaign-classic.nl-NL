@@ -2,13 +2,13 @@
 product: campaign
 title: Acties voor rapporten
 description: Acties voor rapporten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ U kunt uw rapport vormen met het oog op het uitvoeren van het in PDF, formaat Ex
 
 Exportopties zijn toegankelijk via de **[!UICONTROL Page]** activiteiten van het verslag, in het **[!UICONTROL Advanced]** tab.
 
-De instellingen wijzigen van **[!UICONTROL Paper]** en **[!UICONTROL Margins]** aan uw behoeften. U kunt het exporteren van een pagina ook alleen in de indeling PDF toestaan. Om dit te doen, uncheck **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** optie.
+De instellingen wijzigen van **[!UICONTROL Paper]** en **[!UICONTROL Margins]** aan uw behoeften te voldoen. U kunt het exporteren van een pagina ook alleen in de indeling PDF toestaan. Om dit te doen, uncheck **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** -optie.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -47,16 +47,16 @@ Voor **[!UICONTROL List with group]** de typerapporten die naar Excel worden uit
 
 * Deze rapporten mogen geen lege regels bevatten.
 
-   ![](assets/export_limitations_remove_empty_line.png)
+  ![](assets/export_limitations_remove_empty_line.png)
 
 * De legenda van de lijst moet verborgen zijn.
 
-   ![](assets/export_limitations_hide_label.png)
+  ![](assets/export_limitations_hide_label.png)
 
 * In de rapporten hoeft geen specifieke opmaak te worden gebruikt die op celniveau is gedefinieerd. Het verdient de voorkeur **[!UICONTROL Form rendering]** Hiermee definieert u de indeling van de cellen in de tabel. De **[!UICONTROL Form rendering]** kan worden geraadpleegd via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * We raden u niet aan HTML-inhoud in te voegen.
 * Als een rapport meerdere tabellen, grafieken enzovoort bevat. typeelementen, zullen zij onder andere worden uitgevoerd.
-* U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Raadpleeg [deze sectie](../../reporting/using/creating-a-table.md#defining-cell-format) voor meer informatie.
+* U kunt de regelterugloop in cellen forceren: deze configuratie wordt in Excel bewaard. Raadpleeg [deze sectie](../../reporting/using/creating-a-table.md#defining-cell-format) voor meer informatie.
 
 ### Exporteren uitstellen {#postpone-the-export}
 
@@ -82,11 +82,11 @@ Als u wijzigingen wilt toepassen die in de configuratie zijn aangebracht, **nlse
 
 Meer informatie over de **serverConf.xml** bestand, zie [deze sectie](../../production/using/configuration-principle.md).
 
-Meer informatie over de **nlserver** service, raadpleeg [deze sectie](../../production/using/administration.md).
+Meer informatie over de **nlserver** service, raadpleegt u [deze sectie](../../production/using/administration.md).
 
 ## Een rapport afdrukken {#printing-a-report}
 
-U kunt uw rapport afdrukken: Klik hiertoe op het printerpictogram: hiermee wordt het dialoogvenster geopend.
+U kunt uw rapport afdrukken. Hiervoor klikt u op het printerpictogram: het dialoogvenster wordt geopend.
 
 Voor een beter resultaat bewerkt u de afdrukopties van Verkenner en selecteert u **[!UICONTROL Print background colors and images]**.
 
@@ -100,7 +100,7 @@ Als u een archief wilt maken, opent u het desbetreffende rapport en klikt u op h
 
 ![](assets/s_ncs_advuser_report_wizard_07.png)
 
-Klik op het pictogram voor tonen/verbergen om bestaande archieven weer te geven of te verbergen.
+Als u bestaande archieven wilt weergeven of verbergen, klikt u op het pictogram voor tonen/verbergen.
 
 ![](assets/s_ncs_advuser_report_history_06.png)
 

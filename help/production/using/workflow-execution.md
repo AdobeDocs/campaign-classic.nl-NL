@@ -2,16 +2,17 @@
 product: campaign
 title: Workflowuitvoering
 description: Workflowuitvoering
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 3%
+source-wordcount: '658'
+ht-degree: 5%
 
 ---
 
@@ -40,7 +41,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    >[!NOTE]
    >
-   >Nadat de workflow opnieuw is gestart, moet u de volgende taken uitvoeren (klik met de rechtermuisknop op de knop **[!UICONTROL Scheduler]** activiteit / **[!UICONTROL Execute pending task(s) now]**) om na te gaan of er bij een van de activiteiten opnieuw een fout optreedt.
+   >Nadat de workflow opnieuw is gestart, moet u de volgende taken uitvoeren (klik met de rechtermuisknop op de knop **[!UICONTROL Scheduler]** activiteit / **[!UICONTROL Execute pending task(s) now]**) om na te gaan of er bij een van de activiteiten opnieuw sprake is van een mislukking.
 
    Als het werkschema nog ontbreekt, controleer het controlelogboek voor specifieke fout, los dienovereenkomstig problemen op, dan opnieuw begin het werkschema opnieuw.
 
@@ -99,7 +100,7 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
    [...]
    ```
 
-   Voor meer op hoe te om modules te controleren, verwijs naar [deze sectie](../../production/using/usual-commands.md#monitoring-commands-).
+   Raadpleeg voor meer informatie over het controleren van modules [deze sectie](../../production/using/usual-commands.md#monitoring-commands-).
 
 1. Als de module niet actief is, neemt u contact op met de klantenservice van Adobe. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
 

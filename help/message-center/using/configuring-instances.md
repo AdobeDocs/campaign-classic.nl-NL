@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Instanties configureren
-description: Leer hoe te om de Transactionele controle en uitvoeringsinstanties van het overseinen in Adobe Campaign Classic te vormen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Leer hoe te om de Transactieoverseinencontrole en uitvoeringsinstanties in Adobe Campaign Classic te vormen
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -62,7 +63,7 @@ Om een **[!UICONTROL Execution instance]** Typ een externe account en pas het vo
 
    ![](assets/messagecenter_create_extaccount_002.png)
 
-1. Selecteer **[!UICONTROL Enabled]** optie om de externe rekening operationeel te maken.
+1. Selecteer de **[!UICONTROL Enabled]** optie om de externe rekening operationeel te maken.
 
    ![](assets/messagecenter_create_extaccount_003.png)
 
@@ -94,7 +95,7 @@ Om een **[!UICONTROL Execution instance]** Typ een externe account en pas het vo
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Voor meer informatie over Federated Data Access (FDA) raadpleegt u [deze sectie](../../installation/using/about-fda.md).
+   Raadpleeg voor meer informatie over FDA (Federated Data Access) [deze sectie](../../installation/using/about-fda.md).
 
 1. Klikken **[!UICONTROL Test the connection]** om ervoor te zorgen dat de besturingsinstantie en de uitvoeringsinstantie aan elkaar zijn gekoppeld.
 
@@ -137,15 +138,15 @@ Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties e
 >Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Zie voor meer informatie [Verschillende besturingsinstanties gebruiken](#using-several-control-instances).
 
 1. Ga in een uitvoeringsinstantie naar de map met operatoren ( **[!UICONTROL Administration > Access management > Operators]** ).
-1. Selecteer **Berichtencentrum** agent.
+1. Selecteer de **Berichtencentrum** agent.
 
    ![](assets/messagecenter_operator_001.png)
 
-1. Selecteer **[!UICONTROL Edit]** tabblad, klikt u op **[!UICONTROL Access rights]** en klik vervolgens op de knop **[!UICONTROL Edit the access parameters...]** koppeling.
+1. Selecteer de **[!UICONTROL Edit]** tabblad, klikt u op **[!UICONTROL Access rights]** en klik vervolgens op de knop **[!UICONTROL Edit the access parameters...]** koppeling.
 
    ![](assets/messagecenter_operator_002.png)
 
-1. In de **[!UICONTROL Access settings]** venster, klikt u op de knop **[!UICONTROL Add a trusted IP mask]** verbinding en voeg het IP adres van de controleinstantie toe.
+1. In de **[!UICONTROL Access settings]** venster, klikt u op **[!UICONTROL Add a trusted IP mask]** verbinding en voeg het IP adres van de controleinstantie toe.
 
    ![](assets/messagecenter_operator_003.png)
 
@@ -155,7 +156,7 @@ Herhaal deze stappen voor elke uitvoeringsinstantie wanneer u meerdere uitvoerin
 
 U kunt een uitvoeringscluster met diverse controleinstanties delen. Voor dit type architectuur is de volgende configuratie vereist.
 
-Stel dat uw bedrijf bijvoorbeeld twee merken beheert, elk met een eigen bedieningsinstantie: **Control 1** en **Control 2**. Er worden ook twee uitvoeringsinstanties gebruikt. U moet een verschillende exploitant van het Centrum van het Bericht voor elke controleinstantie ingaan: een **mc1** voor de **Control 1** en een **mc2** voor de **Control 2** -instantie.
+Stel dat uw bedrijf bijvoorbeeld twee merken beheert, elk met een eigen bedieningsinstantie: **Control 1** en **Control 2**. Er worden ook twee uitvoeringsinstanties gebruikt. U moet een verschillende exploitant van het Centrum van het Bericht voor elke controleinstantie ingaan: en **mc1** voor de **Control 1** instantie en een **mc2** voor de **Control 2** -instantie.
 
 Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (**Map 1** en **Map 2**), en de gegevenstoegang van elke exploitant tot hun omslag beperken.
 
@@ -181,7 +182,7 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
 
 >[!NOTE]
 >
->De onderstaande stappen moeten worden uitgevoerd **op uitvoeringsinstanties**.
+>De onderstaande stappen moeten worden uitgevoerd **in de uitvoeringsinstanties**.
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 
@@ -189,7 +190,7 @@ Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE 
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Maak de **mc1** en **mc2** operators door de standaardoperator voor het Berichtencentrum te dupliceren (**mc**). Voor meer informatie over het maken van operatoren raadpleegt u [deze sectie](../../platform/using/access-management-operators.md).
+1. Maak de **mc1** en **mc2** operatoren door de standaardoperator voor het Berichtencentrum te dupliceren (**mc**). Voor meer informatie over het maken van operatoren raadpleegt u [deze sectie](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 
@@ -201,6 +202,6 @@ Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE 
 
    ![](assets/messagecenter_multi_control_5.png)
 
-1. Geef elke exploitant lees en schrijf toestemmingen voor hun omslag. Klik hiertoe met de rechtermuisknop op de map en selecteer **[!UICONTROL Properties]** . Selecteer vervolgens de **[!UICONTROL Security]** en voegt de relevante exploitant toe (**mc1** for **Map 1** en **mc2** for **Map 2**). Zorg ervoor dat de **[!UICONTROL Read/Write data]** worden ingeschakeld.
+1. Geef elke exploitant lees en schrijf toestemmingen voor hun omslag. Klik hiertoe met de rechtermuisknop op de map en selecteer **[!UICONTROL Properties]** . Selecteer vervolgens de optie **[!UICONTROL Security]** en voegt de relevante exploitant toe (**mc1** for **Map 1** en **mc2** for **Map 2**). Zorg ervoor dat de **[!UICONTROL Read/Write data]** worden ingeschakeld.
 
    ![](assets/messagecenter_multi_control_6.png)

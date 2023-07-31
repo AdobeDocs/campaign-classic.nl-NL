@@ -2,13 +2,13 @@
 product: campaign
 title: Berichten bijhouden en controleren
 description: Leer hoe u berichten kunt bijhouden en controleren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Monitoring, Reporting
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Wat als de leveringen niet worden verzonden en hun status blijft **In behandelin
 Controleer of uw modules mta@instance op uw servers MTA worden gelanceerd en begin indien nodig de module MTA. [Meer informatie](../../production/using/administration.md).
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende instantie is gevormd.
-Tip: Controleer de configuratie van verkeersbeheer (IP affiniteit). Voor meer op dit, zie het uitgaande verkeer SMTP van de Controle.
+Tip: controleer de configuratie van verkeersbeheer (IP affiniteit). Voor meer op dit, zie het uitgaande verkeer SMTP van de Controle.
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ Tip: Controleer de configuratie van verkeersbeheer (IP affiniteit). Voor meer op
 
 ## Traceergedrag {#track-behaviour}
 
-Om het gedrag van uw ontvangers beter te kennen, kunt u volgen hoe zij op een levering reageren: ontvangen, openen, klikken op koppelingen, abonnementen enz. In Campaign Classic wordt deze informatie weergegeven op het tabblad Tracking van de ontvangers die de levering als doel heeft en op het tabblad Tracking van de levering.
+Als u het gedrag van de ontvangers beter wilt weten, kunt u bijhouden hoe zij op een levering reageren: ontvangst, openen, klikken op koppelingen, abonnementen, enz. In Campaign Classic wordt deze informatie weergegeven op het tabblad Tracking van de ontvangers die de levering als doel heeft en op het tabblad Tracking van de levering.
 
-**Tip**: Berichten bijhouden is standaard ingeschakeld. Als u URL&#39;s wilt configureren, selecteert u de optie URL&#39;s weergeven in de onderste sectie van de wizard voor levering. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
+**Tip**: Het bijhouden van berichten is standaard ingeschakeld. Als u URL&#39;s wilt configureren, selecteert u de optie URL&#39;s weergeven in de onderste sectie van de wizard voor levering. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
 
 Raadpleeg voor meer informatie de [Tracking configureren](how-to-configure-tracked-links.md) en de [Traceringsindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators) beschrijving.
 
@@ -52,7 +52,7 @@ Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de levering
 
 **Tips**:
 
-* Bewaar de levering niet in mislukte staat op het geval, aangezien dit tijdelijke lijsten handhaaft en de prestaties beïnvloedt.
+* Bewaar de levering niet in mislukte staat, aangezien dit tijdelijke lijsten handhaaft en de prestaties beïnvloedt.
 
 * Verwijder leveringen die niet meer nodig zijn en inactieve ontvangers uit de database om de adreskwaliteit te behouden.
 

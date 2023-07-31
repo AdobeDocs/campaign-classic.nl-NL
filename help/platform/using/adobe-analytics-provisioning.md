@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics-connector
 description: Meer informatie over Adobe Analytics-connectorprovisioning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 3%
 
 ---
@@ -38,9 +38,9 @@ Het Profiel van het product bepaalt het niveau van toegang een gebruiker op uw v
 
 Als u al een productprofiel voor Analytics hebt, moet u nog steeds een nieuw Adobe Analytics-productprofiel maken dat uitsluitend wordt gebruikt voor de Analytics-connector. Zo zorgt u ervoor dat uw productprofiel is ingesteld met de juiste machtigingen voor deze integratie.
 
-Raadpleeg voor meer informatie over productprofielen de [Documentatie beheerconsole](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Raadpleeg voor meer informatie over productprofielen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. Van de [Admin-console](https://adminconsole.adobe.com/), selecteer je Adobe Analytics **[!UICONTROL Product]**.
+1. Van de [Admin Console](https://adminconsole.adobe.com/), selecteer je Adobe Analytics **[!UICONTROL Product]**.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -56,13 +56,13 @@ Raadpleeg voor meer informatie over productprofielen de [Documentatie beheercons
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. Andere mogelijkheden configureren door te klikken **[!UICONTROL Edit]** en selecteer de machtigingen die aan uw **[!UICONTROL Product profile]** door op de plusknop (+) te klikken.
+1. De verschillende mogelijkheden configureren door te klikken **[!UICONTROL Edit]** en selecteer de machtigingen die aan uw **[!UICONTROL Product profile]** door op de plusknop (+) te klikken.
 
-   Raadpleeg voor meer informatie over het beheren van machtigingen de [Documentatie beheerconsole](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Raadpleeg voor meer informatie over het beheren van machtigingen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
 1. Voor de **[!UICONTROL Report Suites]** mogelijkheden, voegt de **[!UICONTROL Report Suites]** moet u later gebruiken.
 
-   Als u geen rapportsuites hebt, kunt u het volgende tot stand brengen [deze stappen](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   Als u geen rapportsuites hebt, kunt u het volgende creëren [deze stappen](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -116,7 +116,7 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het Adobe I/O-project 
 
    ![](assets/do-not-localize/triggers_8.png)
 
-1. Selecteer **[!UICONTROL Option 1: Generate a Key-Pair]** en klik op **[!UICONTROL Generate a Key-Pair]**.
+1. Selecteer de **[!UICONTROL Option 1: Generate a Key-Pair]** en klik op **[!UICONTROL Generate a Key-Pair]**.
 
    Het bestand config.zip wordt dan automatisch gedownload.
 
@@ -126,7 +126,7 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het Adobe I/O-project 
 
    ![](assets/do-not-localize/triggers_10.png)
 
-1. Selecteer **[!UICONTROL Product profile]** gemaakt in de vorige stappen die in dit [sectie](#analytics-product-profile).
+1. Selecteer de **[!UICONTROL Product profile]** gemaakt in de vorige stappen die in dit [sectie](#analytics-product-profile).
 
 1. Klik vervolgens op **[!UICONTROL Save Configured API]**.
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Zelfstandige implementatie
 description: Zelfstandige implementatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -71,12 +72,12 @@ Naarmate het volume toeneemt, verplaatst een variant van deze architectuur de da
    * de eerste die aan het publiek voor het volgen van en het richten aan de computer op zijn openbaar IP wordt blootgesteld;
    * de tweede alias die aan interne gebruikers voor consoletoegang wordt blootgesteld en aan de zelfde computer richten.
 
-* Firewall geconfigureerd voor het openen van SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Zie voor meer informatie [Netwerkconfiguratie](../../installation/using/network-configuration.md).
+* Firewall geconfigureerd voor het openen van SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Zie voor meer informatie [Netwerkconfiguratie](../../installation/using/network-configuration.md).
 
 In de volgende voorbeelden zijn de parameters van de instantie:
 
 * Naam van de instantie: **demo**
-* DNS-masker: **console.campagne.net&#42;** (alleen voor clientconsoleverbindingen en voor rapporten)
+* DNS-masker: **console.campaign.net&#42;** (alleen voor clientconsoleverbindingen en voor rapporten)
 * Database: **campagne:demo@dbsrv**
 
 ### Installeren en configureren (één computer) {#installing-and-configuring--single-machine-}
@@ -85,7 +86,7 @@ Voer de volgende stappen uit:
 
 1. Volg de installatieprocedure voor de Adobe Campaign-server: **nlserver** pakket op Linux of **setup.exe** in Windows.
 
-   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor installatie van campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor de installatie van de Campagne in Vensters](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Zodra de Adobe Campaign-server is geïnstalleerd, start u de toepassingsserver (web) met de opdracht **nlserver web-tomcat** (de module van het Web laat u toe om Tomcat in standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
@@ -115,25 +116,25 @@ Voer de volgende stappen uit:
 
    Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
-1. Maak de **demo** instantie met de DNS-maskers voor tracering (in dit geval, **tracking.campagne.net**) en de toegang tot clientconsoles (in dit geval, **console.campagne.net**). Er zijn twee manieren om dit te doen:
+1. Maak de **demo** instantie met de DNS-maskers voor tracering (in dit geval), **tracking.campaign.net**) en de toegang tot clientconsoles (in dit geval, **console.campaign.net**). Er zijn twee manieren om dit te doen:
 
    * Maak de instantie via de console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      of
+     of
 
    * Maak de instantie met behulp van opdrachtregels:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
+     Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Bewerk de **config-demo.xml** bestand (gemaakt in de vorige stap naast **config-default.xml**) en zorg ervoor dat de **mta** (levering), **wfserver** (workflow), **inMail** (stuiterende berichten) en **stat** (statistiek) processen zijn ingeschakeld. Dan vorm het adres van de statistiekserver:
+1. Bewerk de **config-demo.xml** bestand (gemaakt in de vorige stap naast **config-default.xml**) en de **mta** (levering), **wfserver** (workflow), **inMail** (stuiterende berichten) en **stat** (statistiek) processen zijn ingeschakeld. Dan vorm het adres van de statistiekserver:
 
    ```
    <?xml version='1.0'?>
@@ -226,22 +227,22 @@ Voer de volgende stappen uit:
 
    Als de database eenmaal is gemaakt, meldt u zich af.
 
-1. Meld u weer aan bij de clientconsole met de **beheerder** aanmelden zonder wachtwoord en de wizard starten ( **[!UICONTROL Tools > Advanced]** (menu) om het configureren van de instantie te voltooien.
+1. Meld u weer aan bij de clientconsole met de **admin** aanmelden zonder wachtwoord en de wizard starten ( **[!UICONTROL Tools > Advanced]** (menu) om het configureren van de instantie te voltooien.
 
    Raadpleeg voor meer informatie hierover [Een instantie implementeren](../../installation/using/deploying-an-instance.md).
 
    De belangrijkste parameters die moeten worden ingesteld zijn:
 
-   * E-maillevering: afzender en antwoordadressen en de foutenbrievenbus voor stuitende post.
-   * Tekstspatiëring: Vul de externe URL voor omleiding en de interne URL in en klik op **Registratie op de trackingserver(s)** en vervolgens valideren op het tabblad **demo** instantie van de trackingserver.
+   * E-maillevering: verzender- en antwoordadressen en de foutbrievenbus voor stuiterende berichten.
+   * Bijhouden: vul de externe URL die wordt gebruikt voor omleiding en de interne URL, en klik **Registratie op de trackingserver(s)** en vervolgens valideren op het tabblad **demo** instantie van de trackingserver.
 
-      Raadpleeg voor meer informatie hierover [Configuratie bijhouden](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Raadpleeg voor meer informatie hierover [Configuratie bijhouden](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-      ![](assets/s_ncs_install_deployment_wiz_09.png)
+     ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Aangezien de Adobe Campaign-server zowel als de toepassingsserver als de omleidingsserver wordt gebruikt, is de interne URL die wordt gebruikt voor het verzamelen van trackinglogboeken en het overbrengen van URL&#39;s een directe interne verbinding met Tomcat (https://localhost:8080).
+     Aangezien de Adobe Campaign-server zowel als de toepassingsserver als de omleidingsserver wordt gebruikt, is de interne URL die wordt gebruikt voor het verzamelen van trackinglogboeken en het overbrengen van URL&#39;s een directe interne verbinding met Tomcat (https://localhost:8080).
 
-   * Stuitbeheer: Voer de parameters in voor het afhandelen van stuiterende e-mail (neem de parameter niet **Onverwerkte stuitberichten** rekening).
-   * Toegang vanaf: Geef de twee URL&#39;s op voor rapporten, webformulieren en spiegel.
+   * Stuitbeheer: voer de parameters in voor het afhandelen van stuiterende berichten (gebruik niet de **Onverwerkte stuitberichten** in aanmerking te nemen).
+   * Toegang van: Geef twee URL&#39;s op voor rapporten, webformulieren en spiegel.
 
-      ![](assets/d_ncs_install_web_url.png)
+     ![](assets/d_ncs_install_web_url.png)

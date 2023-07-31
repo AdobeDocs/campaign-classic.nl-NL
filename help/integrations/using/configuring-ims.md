@@ -2,16 +2,17 @@
 product: campaign
 title: IMS configureren
 description: Leer hoe u verbinding maakt via een Adobe ID
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ U moet de ingebouwde **[!UICONTROL Integration with the Adobe Experience Cloud]*
 
 ## De externe account configureren {#configuring-the-external-account}
 
-Configureer de **Adobe Experience Cloud** externe rekening in **[!UICONTROL Administration > Platform > External accounts]**.
+Vorm **Adobe Experience Cloud** externe rekening in **[!UICONTROL Administration > Platform > External accounts]**.
 
 >[!CAUTION]
 >
@@ -58,13 +59,13 @@ Voer de volgende gegevens in:
 
 * Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door de steun van Adobe. Raadpleeg voor meer informatie de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
-   De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
+  De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 
-* Organisatie-id: om uw organisatie-id te zoeken, raadpleegt u [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
-* Associatiemasker: In dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.&#42;)&quot;, wordt de in Adobe Campaign gemaakte beveiligingsgroep gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
+* Organisatie-id: raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
+* Associatiemasker: in dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.&#42;)&quot;, wordt de in Adobe Campaign gemaakte beveiligingsgroep gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
 
-   >[!CAUTION]
-   >
-   >Het associatiemasker is essentieel voor de verbinding via Adobe ID om correct te werken.
+  >[!CAUTION]
+  >
+  >Het associatiemasker is essentieel voor de verbinding via Adobe ID om correct te werken.
 
 * Adobe Experience Cloud-verbindingsgegevens, met name de naam van de Adobe Experience Cloud Tenant.

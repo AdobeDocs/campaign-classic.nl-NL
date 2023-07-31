@@ -2,11 +2,12 @@
 product: campaign
 title: Schema van een bestaande tabel
 description: Schema van een bestaande tabel
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '223'
 ht-degree: 9%
 
 ---
@@ -17,18 +18,18 @@ ht-degree: 9%
 
 Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tabel, een SQL-weergave of gegevens uit een externe database, maakt u het schema in Adobe Campaign met de volgende gegevens:
 
-* Naam van tabel: Voer de naam van de tabel (met de alias wanneer een koppeling wordt gebruikt) in met het kenmerk &quot;sqltable&quot;,
+* Naam van tabel: voer de naam in van de tabel (met de alias wanneer een koppeling wordt gebruikt) met het kenmerk &quot;sqltable&quot;.
 * schemasleutel: verwijzing naar het (de) afstemmingsveld(en);
-* indexen: gebruikt om vragen te produceren,
-* De velden en hun locatie in de XML-structuur: alleen de velden invullen die in de toepassing worden gebruikt;
-* koppelingen: als er verbindingen met de andere lijsten van de basis zijn.
+* indexen: gebruikt om query&#39;s te genereren;
+* De velden en hun locatie in de XML-structuur: vul alleen de velden in die in de toepassing worden gebruikt.
+* koppelingen: als er verbindingen zijn met de andere tabellen in de basis.
 
 ## Implementatie {#implementation}
 
 Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 1. Bewerk de **[!UICONTROL Administration>Configuration>Data schemas]** knoop van de boom van Adobe Campaign en klik **[!UICONTROL New]** .
-1. Selecteer **[!UICONTROL Access data from an existing table or an SQL view]** en klik op **[!UICONTROL Next]** .
+1. Selecteer de **[!UICONTROL Access data from an existing table or an SQL view]** en klik op **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 

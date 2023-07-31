@@ -2,15 +2,16 @@
 product: campaign
 title: Presentatieregels
 description: Presentatieregels
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -58,11 +59,11 @@ We gaan onze regels zodanig configureren dat de reis naar Canada slechts één k
 
    ![](assets/offer_typology_example_008.png)
 
-1. Selecteer **[!UICONTROL Offers for the same category]** filter om alle aanbiedingen uit te sluiten van de **Canada** categorie.
+1. Selecteer de **[!UICONTROL Offers for the same category]** filter om alle aanbiedingen uit te sluiten van de **Canada** categorie.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Selecteer **[!UICONTROL Rejected propositions]** filter om alleen rekening te houden met door de ontvanger afgewezen voorstellen.
+1. Selecteer de **[!UICONTROL Rejected propositions]** filter om alleen rekening te houden met door de ontvanger afgewezen voorstellen.
 
    ![](assets/offer_typology_example_021.png)
 
@@ -86,7 +87,7 @@ Hier volgt een voorbeeld van de eerder gemaakte typologieregel.
 
 We willen een eerste voorstel verzenden dat tot de categorie Canada behoort. Indien het aanbod eenmaal door een van de ontvangers wordt afgewezen, wordt het niet opnieuw aan hen aangeboden.
 
-1. In de **Frequente reizigers** de ontvangende omslag, kies één van de profielen om de aanbiedingen te controleren waarvoor zij verkiesbaar zijn: klik op **[!UICONTROL Propositions]** en vervolgens de **[!UICONTROL Preview]** tab.
+1. In de **Frequente reizigers** de ontvankelijke omslag, kies één van de profielen om de aanbiedingen te controleren waarvoor zij verkiesbaar zijn: klik **[!UICONTROL Propositions]** en vervolgens de **[!UICONTROL Preview]** tab.
 
    In ons voorbeeld: **Tim Ramsey** komt in aanmerking voor een aanbod dat deel uitmaakt van het **Amerika** categorie.
 
@@ -109,6 +110,6 @@ We willen een eerste voorstel verzenden dat tot de categorie Canada behoort. Ind
 
 1. Controleer de aanbiedingen waarvoor ze nu in aanmerking komen.
 
-   We zien dat er geen aanbiedingen voor Canada worden gekozen.
+   We kunnen zien dat er geen aanbiedingen voor Canada worden gekozen.
 
    ![](assets/offer_typology_example_019.png)

@@ -2,12 +2,12 @@
 product: campaign
 title: Audit trail
 description: Leer hoe u uw exemplaar kunt controleren met het Campagne Audit Trail
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Audit Trail, Monitoring
+feature: Audit Trail, Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '468'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 In Adobe Campaign **[!UICONTROL Audit trail]** geeft u toegang tot de volledige geschiedenis van veranderingen die binnen uw instantie worden aangebracht.
 
-**[!UICONTROL Audit trail]** legt in real-time een uitgebreide lijst vast met acties en gebeurtenissen die plaatsvinden in uw Adobe Campaign-instantie. Het omvat een zelfbediende manier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat er met uw workflows is gebeurd en wie deze voor het laatst heeft bijgewerkt of wat uw gebruikers in dat geval hebben gedaan.
+**[!UICONTROL Audit trail]** legt in real-time een uitgebreide lijst vast met acties en gebeurtenissen die plaatsvinden in uw Adobe Campaign-instantie. Het omvat een zelf-servermanier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat met uw werkschema&#39;s gebeurde, en wie hen het laatst bijwerkte of wat uw gebruikers in de instantie deden.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Audittrail bestaat uit drie onderdelen:
 
 * **Schema audit trail**: Controleer de activiteiten en de laatste wijzigingen die u in uw schema&#39;s hebt aangebracht.
 
-   Voor meer informatie over schema&#39;s, verwijs naar dit [page](../../configuration/using/data-schemas.md).
+  Voor meer informatie over schema&#39;s, verwijs naar dit [page](../../configuration/using/data-schemas.md).
 
 * **Workflowaudittrail**: Controleer activiteiten en laatste wijzigingen die zijn aangebracht aan workflows, en daarnaast de status van uw workflows, zoals:
 
@@ -42,19 +42,19 @@ Audittrail bestaat uit drie onderdelen:
    * Wakeup die gelijk is aan de handeling Voer taken uit die in behandeling zijn.
    * Onvoorwaardelijk stoppen
 
-   Raadpleeg deze voor meer informatie over workflows [page](../../workflow/using/about-workflows.md).
+  Raadpleeg deze voor meer informatie over workflows [page](../../workflow/using/about-workflows.md).
 
-   Raadpleeg voor meer informatie over het controleren van workflows de [speciale sectie](../../workflow/using/monitoring-workflow-execution.md).
+  Raadpleeg voor meer informatie over het controleren van workflows de [speciale sectie](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Optie audittrail**: Controleer de activiteiten en de laatste wijzigingen die u hebt aangebracht in uw opties.
+* **Optie audittrail**: Controleer de activiteiten en laatste wijzigingen die u hebt aangebracht in uw opties.
 
-   Raadpleeg deze voor meer informatie over opties [page](../../installation/using/configuring-campaign-options.md).
+  Raadpleeg deze voor meer informatie over opties [page](../../installation/using/configuring-campaign-options.md).
 
 ## Audittrail openen {#accessing-audit-trail}
 
 Toegang krijgen tot de **[!UICONTROL Audit trail]** :
 
-1. Toegang krijgen tot **[!UICONTROL Explorer]** van uw instantie.
+1. Toegang krijgen tot de **[!UICONTROL Explorer]** van uw instantie.
 1. Onder de **[!UICONTROL Administration]** menu, selecteert u **[!UICONTROL Audit]** .
 
    ![](assets/audit_trail_1.png)
@@ -87,7 +87,7 @@ Het audittrail kan gemakkelijk voor een specifieke activiteit worden geactiveerd
 
 Dit doet u als volgt:
 
-1. Toegang krijgen tot **[!UICONTROL Explorer]** van uw instantie.
+1. Toegang krijgen tot de **[!UICONTROL Explorer]** van uw instantie.
 1. Onder de **[!UICONTROL Administration]** menu, selecteert u **[!UICONTROL Platform]** dan **[!UICONTROL Options]** .
 
    ![](assets/audit_trail_4.png)

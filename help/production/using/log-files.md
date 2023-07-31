@@ -2,16 +2,17 @@
 product: campaign
 title: Logboekbestanden
 description: Logboekbestanden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +26,7 @@ De logbestanden zijn als volgt ingedeeld:
 
 Elk **nlserver** wordt een logbestand gegenereerd dat in de volgende map is opgeslagen: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-De **nlserver-syslogd** slaat de logboeken op de schijf op. Deze module is vergelijkbaar met Unix **syslog daemon**, maar is aangepast voor compatibiliteit tussen Unix en Windows. De andere Adobe Campaign-modules slaan hun logbestanden niet op de schijf op. zij delegeren deze taak aan **syslogd** door het UDP-pakketten te verzenden.
+De **nlserver-syslogd** slaat de logboeken op de schijf op. Deze module is vergelijkbaar met Unix **syslog daemon**, maar is aangepast voor compatibiliteit tussen Unix en Windows. De andere modules van Adobe Campaign bewaren hun logboeken aan de schijf niet; zij delegeren deze taak aan **syslogd** door het UDP-pakketten te verzenden.
 
 Standaard heeft het Adobe Campaign-platform het **syslogd** op de module geïnstalleerd, maar het is mogelijk een andere **syslog daemon**. Deze module maakt de logbestanden in het dialoogvenster **log** directory.
 
@@ -61,7 +62,7 @@ Voor prestaties en opslagoptimalisering, wordt het logins.log- dossier verdeeld 
 
 Standaard zijn de logbestanden beperkt tot twee bestanden van 10 MB per module en per instantie. Het tweede bestand wordt aangeroepen: **`<modulename>`_2.log**. De omvang van de stammen is daarom beperkt tot 2&#42;10 MB per module en per instantie.
 
-U kunt echter grotere bestanden behouden. Als u dit wilt inschakelen, wijzigt u de waarde van de optie **maxFileSizeMb=&quot;10&quot;** in het dialoogvenster **syslogd** knooppunt van de **conf/serverConf.xml** bestand. Deze waarde vertegenwoordigt de maximumgrootte in MB van een logboekdossier.
+U kunt echter grotere bestanden behouden. Wijzig de waarde van de optie **maxFileSizeMb=&quot;10&quot;** in het dialoogvenster **syslogd** knooppunt van de **conf/serverConf.xml** bestand. Deze waarde vertegenwoordigt de maximumgrootte in MB van een logboekdossier.
 
 Als u meer detailniveaus wilt behouden in de logboeken, kunt u de Adobe Campaign-modules starten met de **-verbose** parameter:
 

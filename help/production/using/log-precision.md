@@ -2,16 +2,17 @@
 product: campaign
 title: Logboekprecisie
 description: Logboekprecisie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 U kunt dit proces op alle modules van Adobe Campaign toepassen om logboekprecisie te verhogen.
 
-Het betekent dat de processen opnieuw moeten worden gestart met een hoger logbestand.
+Het betekent dat de processen opnieuw moeten worden opgestart met een hoger logbestand.
 
 >[!IMPORTANT]
 >
@@ -49,7 +50,7 @@ Adobe Campaign kan werken met twee logniveaus:
 
    >[!NOTE]
    >
-   >Als u **tracefilter:&#42;**, worden alle logbestandstypen geactiveerd: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
+   >Als u **trekfilter:&#42;**, worden alle logboektypes geactiveerd: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    >De nuttigste logboektypes zijn: **wdbc** (geeft alle SQL-query&#39;s weer), **zeep** (geeft alle SOAP-aanroepen weer), **ldap** (geeft alle LDAP-query&#39;s weer na verificatie), **xtkquery** (toont de lijst van al querydef).\
    >U kunt ze afzonderlijk gebruiken (**tracefilter:zeep,wdbc** bijvoorbeeld). U kunt ze ook allemaal activeren en ervoor kiezen bepaalde andere opties uit te sluiten: **-tracefilter:&#42;,!soap**
 

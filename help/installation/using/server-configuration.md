@@ -2,14 +2,15 @@
 product: campaign
 title: Serverbeveiligingsconfiguratie
 description: Meer informatie over best practices voor serverconfiguratie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -43,13 +44,13 @@ Als u verschillende gastheernamen (één openbaar en één voor exploitanten) ge
 
 ## Uitgaande verbindingsbeveiliging
 
-De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) is beperkt. Als u een nieuwe URL wilt toestaan, moet de beheerder ernaar verwijzen in het dialoogvenster [serverConf.xml, bestand](../../installation/using/the-server-configuration-file.md).
+De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) is beperkt. Om een nieuwe URL toe te staan, moet de beheerder het in verwijzen [serverConf.xml, bestand](../../installation/using/the-server-configuration-file.md).
 
 Er zijn drie modi voor verbindingsbeveiliging:
 
 * **Blokkeren** : alle URL&#39;s die niet bij de lijst van gewenste personen horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
 * **Permissief** : alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
-* **Waarschuwing** : alle URL&#39;s die zich niet op de lijst van gewenste personen bevinden, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder ze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
+* **Waarschuwing** : alle URL&#39;s die zich niet op de lijst van gewenste personen bevinden, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -69,7 +70,7 @@ Verscheidene bevelen zijn inbegrepen in de lijst van gewezen personen en kunnen 
 
 ## Andere configuraties
 
-U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (zie voor meer informatie [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)):
+U kunt extra HTTP-headers toevoegen voor alle pagina&#39;s (voor meer informatie raadpleegt u [deze pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)):
 
 * U kunt enkele extra kopteksten toevoegen, zoals HSTS, X-FRAME-OPTIONS, CSP..
 * U moet ze in een testomgeving testen voordat u ze in de productie toepast.
@@ -82,6 +83,6 @@ Met Adobe Campaign kunt u een leeg wachtwoord instellen in het dialoogvenster `<
 
 Adobe Campaign hecht standaard geen sessie aan een specifiek IP, maar u kunt deze activeren om te voorkomen dat de sessie wordt gestolen. Om het te doen, in [serverConf.xml, bestand](../../installation/using/the-server-configuration-file.md), stelt u het kenmerk checkIPConsistent in op **true** in de `<authentication>` knooppunt.
 
-Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Om dit te doen, stelt u **enableTLS** tot **true** in de `<smtp ...>` knooppunt.
+Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Stel **enableTLS** tot **true** in de `<smtp ...>` knooppunt.
 
 U kunt de levensduur van een sessie in het verificatieknooppunt (kenmerk sessionTimeOutSec) verminderen.

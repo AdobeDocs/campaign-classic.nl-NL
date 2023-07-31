@@ -2,14 +2,15 @@
 product: campaign
 title: Data bijwerken
 description: Data bijwerken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 2%
 
 ---
@@ -30,7 +31,7 @@ Als u handmatige updates wilt uitvoeren, klikt u met de rechtermuisknop op de ge
 
 ![](assets/s_ncs_user_action_icon.png)
 
-Er zijn twee typen updates: massa-update voor een reeks ontvangers en gegevens samenvoegen tussen twee profielen. Voor elke actie, laat een tovenaar u de update vormen.
+Er zijn twee soorten updates: massa-update voor een reeks ontvangers, en gegevens die tussen twee profielen samenvoegen. Voor elke actie, laat een tovenaar u de update vormen.
 
 ### Massa-update {#mass-update}
 
@@ -54,7 +55,7 @@ U kunt op **[!UICONTROL Distribution of values]** om de verdeling van waarden va
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
-U kunt filters definiëren om de verdeling van waarden in dit venster weer te geven of de huidige map wijzigen om de verdeling van waarden in een andere map weer te geven. Dit zijn alleen-lezen handelingen; ze hebben geen invloed op de configuratie van de update die wordt gedefinieerd.
+U kunt filters definiëren om de verdeling van waarden in dit venster weer te geven of de huidige map wijzigen om de verdeling van waarden in een andere map weer te geven. Dit zijn alleen-lezen handelingen; deze zijn niet van invloed op de configuratie van de update die wordt gedefinieerd.
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
@@ -82,7 +83,7 @@ Controleer de **[!UICONTROL Result]** kolommen van beide secties van het venster
 
 ## Gegevens exporteren {#exporting-data}
 
-De inhoud van een lijst kan worden geëxporteerd. Het exporteren configureren en uitvoeren:
+U kunt de inhoud van een lijst exporteren. Het exporteren configureren en uitvoeren:
 
 1. Selecteer de records die u wilt exporteren.
 1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Export...]**.
@@ -93,11 +94,11 @@ De inhoud van een lijst kan worden geëxporteerd. Het exporteren configureren en
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Voor meer op hoe te om de uitvoertovenaar te vormen, verwijs naar [deze sectie](../../platform/using/executing-export-jobs.md).
+   Raadpleeg voor meer informatie over het configureren van de exportwizard [deze sectie](../../platform/using/executing-export-jobs.md).
 
 ## Abonneren op een service {#subscribing-to-a-service}
 
-In de meeste gevallen abonneren ontvangers op een nieuwsbrief via een specifieke landingspagina, zoals uitgelegd in [deze sectie](../../delivery/using/managing-subscriptions.md). De profielen van gefilterde ontvangers kunnen echter handmatig worden geabonneerd op een service (Newsletter of Viral-service). Dit doet u als volgt:
+In de meeste gevallen abonneren ontvangers op een nieuwsbrief via een specifieke landingspagina, zoals uitgelegd in [deze sectie](../../delivery/using/managing-subscriptions.md). De profielen van gefilterde ontvangers kunnen echter handmatig worden geabonneerd op een service (nieuwsbrief of virtuele service). Dit doet u als volgt:
 
 1. Selecteer de ontvangers u zich wilt intekenen en met de rechtermuisknop klikken.
 1. Selecteer **[!UICONTROL Actions > Subscribe selection to a service]**.
@@ -110,7 +111,7 @@ In de meeste gevallen abonneren ontvangers op een nieuwsbrief via een specifieke
 
    >[!NOTE]
    >
-   >Met deze editor kunt u een nieuwe service maken: klik op **[!UICONTROL Create]** knop.
+   >Met deze editor kunt u een nieuwe service maken: klik op de knop **[!UICONTROL Create]** knop.
 
 1. U kunt **[!UICONTROL Send a confirmation message]** aan ontvangers. De inhoud van dit bericht kan in het abonnementsscenario worden gevormd verbonden aan de geselecteerde dienst.
 1. Klik op de knop **[!UICONTROL Start]** om het abonnementsproces uit te voeren.
@@ -121,7 +122,7 @@ In de bovenste sectie van het venster kunt u het uitvoeringsproces volgen. De **
 
 Als u de optie **[!UICONTROL Do not keep a trace of this job in the database]** kunt u de uitvoeringsmap selecteren (of maken) waarin de informatie over dit proces wordt opgeslagen.
 
-Als u het proces wilt controleren, gaat u naar de **[!UICONTROL Subscriptions]** op de profielen van de ontvangers waarop deze bewerking betrekking heeft, of op de **[!UICONTROL Subscriptions]** tabblad dat via de **[!UICONTROL Profiles and Targets > Services and Subscriptions]** knooppunt.
+Ga naar de pagina **[!UICONTROL Subscriptions]** op de profielen van de ontvangers waarop deze bewerking betrekking heeft, of op de **[!UICONTROL Subscriptions]** tabblad dat via de **[!UICONTROL Profiles and Targets > Services and Subscriptions]** knooppunt.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

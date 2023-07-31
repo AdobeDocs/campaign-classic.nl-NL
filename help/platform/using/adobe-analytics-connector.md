@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics Connector
 description: Meer informatie over Adobe Analytics Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1510'
 ht-degree: 88%
 
 ---
@@ -27,7 +27,6 @@ Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communice
 >* Adobe Analytics Connector is niet compatibel met Transactional Messaging (Message Center).
 >
 >* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campaign. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
-
 
 Met Adobe Analytics Connector kan Adobe Campaign de internetdoelgroep meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) remarketingcampagnes uitvoeren om deze in kopers om te zetten. Omgekeerd kan Adobe Campaign dankzij de webanalyticstools indicatoren en campagneattributen aan hun platforms doorsturen.
 
@@ -203,12 +202,12 @@ Raadpleeg voor meer informatie hierover de pagina [Productprofielen voor Adobe A
 
    >[!IMPORTANT]
    >
-   >Deze configuratiewijze is gereserveerd voor deskundige gebruikers: als deze formule een fout bevat, kunnen de leveringen worden gestopt.
+   >Deze configuratiewijze is gereserveerd voor deskundige gebruikers: om het even welke fout in deze formule kan in tegengehouden leveringen resulteren.
 
 1. Met het tabblad **[!UICONTROL Advanced]** kunt u meer technische instellingen configureren of wijzigen.
 
    * **[!UICONTROL Lifespan]**: hiermee kunt u de vertraging opgeven (in dagen_) waarna de webgebeurtenissen worden hersteld in Adobe Campaign door technische workflows. Standaard: 180 dagen.
-   * **[!UICONTROL Persistence]**: Hiermee kunt u de periode definiëren gedurende welke alle webgebeurtenissen (bijvoorbeeld een aankoop) kunnen worden toegewezen aan een campagne voor het opnieuw op de markt brengen, Standaard: 7 dagen.
+   * **[!UICONTROL Persistence]** Met : kunt u de periode definiëren waarin alle webgebeurtenissen (bijvoorbeeld een aankoop) kunnen worden toegeschreven aan een campagne voor het opnieuw op de markt brengen, Standaard: 7 dagen.
 
 >[!NOTE]
 >
@@ -225,11 +224,11 @@ Ze zijn beschikbaar in de Adobe Campaign-structuur, onder de map **[!UICONTROL A
 * **[!UICONTROL Recovering of web events]**: eenmaal per uur downloadt deze workflow segmenten over het gedrag van gebruikers op een bepaalde site, neemt ze op in de Adobe Campaign-database en start de remarketingworkflow.
 * **[!UICONTROL Event purge]**: met deze workflow kunt u alle gebeurtenissen uit de database verwijderen, afhankelijk van de periode die is geconfigureerd in het veld **[!UICONTROL Lifespan]**. Raadpleeg voor meer informatie hierover [Uw externe account configureren in Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identification of converted contacts]**: directory van de bezoekers die een aankoop hebben gedaan na een remarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het rapport **[!UICONTROL Re-marketing efficiency]**. Raadpleeg deze[pagina](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u campagne-indicatoren via Adobe Campaign naar de Adobe Experience Cloud verzenden via Adobe Analytics Connector. Deze workflow wordt elke dag om 04.00 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: hiermee kunt u campagne-indicatoren via Adobe Campaign naar de Adobe Experience Cloud verzenden via Adobe Analytics Connector. Deze workflow wordt elke dag om 04.00 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
 
-   Deze workflow moet niet opnieuw worden gestart, anders worden alle eerdere gegevens opnieuw verzonden, waardoor de resultaten van Analytics kunnen worden scheefgetrokken.
+  Deze workflow moet niet opnieuw worden gestart, anders worden alle eerdere gegevens opnieuw verzonden, waardoor de resultaten van Analytics kunnen worden scheefgetrokken.
 
-   De betreffende indicatoren zijn:
+  De betreffende indicatoren zijn:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -242,11 +241,11 @@ Ze zijn beschikbaar in de Adobe Campaign-structuur, onder de map **[!UICONTROL A
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >De verzonden gegevens zijn de delta die op de laatste momentopname wordt gebaseerd, wat tot negatieve waarde in de metrische gegevens kan leiden.
+  >[!NOTE]
+  >
+  >De verzonden gegevens zijn de delta die op de laatste momentopname wordt gebaseerd, wat tot negatieve waarde in de metrische gegevens kan leiden.
 
-   De verzonden kenmerken zijn als volgt:
+  De verzonden kenmerken zijn als volgt:
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -256,7 +255,6 @@ Ze zijn beschikbaar in de Adobe Campaign-structuur, onder de map **[!UICONTROL A
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## Leveringen bijhouden in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Campagne - Microsoft Dynamics CRM Connector
 description: Leer hoe u Campagne en Microsoft Dynamics kunt verbinden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Microsoft CRM Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 2%
+source-wordcount: '1118'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ Op deze pagina leert u hoe u Campaign Classic kunt verbinden met **Microsoft Dyn
 
 Mogelijke implementatie vindt plaats via **Web-API** (aanbevolen). Zie [het onderstaande gedeelte](#microsoft-dynamics-implementation-step) voor meer informatie over het instellen van de verbinding met Microsoft Dynamics.
 
-Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
+Gegevenssynchronisatie wordt uitgevoerd via een toegewijde werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
 
 ## Implementatiestappen{#microsoft-dynamics-implementation-steps}
 
@@ -49,7 +49,6 @@ In Campaign Classic:
 > * Plug-ins installeren die het gedrag van CRM kunnen wijzigen en compatibiliteitsproblemen met Adobe Campaign kunnen veroorzaken
 > * Meerdere opsommingen selecteren
 
-
 ## Microsoft Dynamics CRM configureren {#config-crm-microsoft}
 
 Als u het toegangstoken en de sleutels voor het instellen van de account wilt genereren, moet u zich aanmelden bij [Microsoft Azure Directory](https://portal.azure.com) met een **Algemene beheerder** referenties. Voer vervolgens de hieronder beschreven stappen uit.
@@ -59,7 +58,7 @@ Als u het toegangstoken en de sleutels voor het instellen van de account wilt ge
 Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve Folder registreren. Client ID is hetzelfde als Application ID.
 
 1. Navigeren naar **Azure Active Directory > App-registraties** en klik op  **Nieuwe toepassingsregistratie**.
-1. Geef een unieke naam die u kunt helpen een instantie te identificeren, zoals **adobecampagne`<instance identifier>`**.
+1. Geef een unieke naam die u kunt helpen bij het identificeren van een instantie, zoals **adobecampagne`<instance identifier>`**.
 1. Kies **Toepassingstype** als **Web-app / API**.
 1. Gebruiken `http://localhost` for **Aanmeldings-URL**.
 
@@ -84,7 +83,7 @@ Om de **Id van certificaatsleutel (customKeyIdentifier)** en de **Sleutel-id (ke
 
    >[!NOTE]
    >
-   >U kunt hier het aantal dagen wijzigen `-days 365`, in de voorbeeldcode voor een langere geldigheidsperiode van het certificaat.
+   >U kunt het aantal dagen hier wijzigen `-days 365`, in de voorbeeldcode voor een langere geldigheidsperiode van het certificaat.
 
 1. U zult dan het in base64 moeten coderen. Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn gebruiken `base64 -w0 private.key` voor Linux.
 
@@ -97,14 +96,14 @@ De **Id van certificaatsleutel (customKeyIdentifier)** en de **Sleutel-id (keyId
 **Stap 1**: Configureer de **Vereiste machtigingen** voor de app die is gemaakt.
 
 1. Navigeren naar **Azure Active Directory > App-registraties** en selecteer de toepassing die eerder is gemaakt.
-1. Klikken **Instellingen** links boven.
+1. Klikken **Instellingen** linksboven.
 1. Aan **Vereiste machtigingen**, klikt u op **Toevoegen** en **Selecteer een API > Dynamics CRM Online**.
-1. Klikken **Selecteren**, enable **De Dynamica 365 van de toegang als organisatiegebruikers** selectievakje en klik op **Selecteren**.
+1. Klikken **Selecteren**, enable **Access Dynamics 365 as organisation users** selectievakje en klik op **Selecteren**.
 1. Selecteer vervolgens in uw app de optie **Manifest** onder de **Beheren** -menu.
 
 1. Van de **Manifest** editor, stelt de `allowPublicClient` eigenschap van `null` tot `true` en klik op **Opslaan**.
 
-**Stap 2**: Toelating beheerder
+**Stap 2**: Toekenning beheerder
 
 1. Navigeren naar **Azure Active Directory > Enterprise-toepassingen**.
 
@@ -124,20 +123,20 @@ Raadpleeg voor meer informatie hierover [Azure-documentatie](https://docs.micros
 
 De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassing zal gebruiken. Wijzigingen die met de bovenstaande app zijn aangebracht in Microsoft Dynamics, worden via deze gebruiker doorgevoerd.
 
-**Stap 1**: Een niet-interactieve gebruiker maken in de azure actieve map
+**Stap 1**: Een niet-interactieve gebruiker maken op de azure actieve map
 
 1. Klikken **Azure Active Directory > Users** en klik op **Nieuwe gebruiker**.
 1. Geef een juiste naam die u wilt gebruiken en de gebruikersnaam moet een e-mailindeling zijn.
 1. Kies **Dynamics 365 Administrator** in de **Maprol**.
 
-**Stap 2**: Een juiste licentie toewijzen aan de nieuwe gebruiker
+**Stap 2**: Een juiste licentie toewijzen aan de gemaakte gebruiker
 
 1. Van [Microsoft Azure](https://portal.azure.com), klikt u op **Admin-app**.
 1. Ga naar **Gebruikers > Actieve gebruikers** en klik op de nieuwe gebruiker.
 1. Klikken op **Productlicenties bewerken** en selecteert u de **Dynamics 365 Customer Engagement Plan**.
 1. Klikken **Sluiten**.
 
-**Stap 3**: Creeer een toepassingsgebruiker op Dynamica CRM
+**Stap 3**: Maak een toepassingsgebruiker op Dynamics CRM
 
 1. Van [Microsoft Azure](https://portal.azure.com), navigeer naar **Instellingen > Beveiliging > Gebruikers**.
 1. Klik in de vervolgkeuzelijst en selecteer **Toepassingsgebruikers** en klik op **Nieuw**.
@@ -146,6 +145,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
    >[!NOTE]
    >
    >Als dezelfde naam wordt gebruikt, treedt een dubbele toetsfout op. Gebruik dus een andere gebruikersnaam en ga verder totdat u bevestigt dat deze stap nodig is.
+   >
 
 1. Wijs het **Toepassings-id** for [de toepassing die u eerder hebt gemaakt](#get-client-id-microsoft).
 1. Klikken op **Rollen beheren** en kiest u **Systeembeheerder** rol voor de gebruiker.
@@ -160,7 +160,7 @@ Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u tot stand bren
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
 
-1. Selecteer **[!UICONTROL Microsoft Dynamics CRM]** externe rekening. Schakel de optie **[!UICONTROL Enabled]** in.
+1. Selecteer de **[!UICONTROL Microsoft Dynamics CRM]** externe rekening. Schakel de optie **[!UICONTROL Enabled]** in.
 
 1. Vul de gegevens in die nodig zijn om verbinding te maken met Microsoft Dynamics 365 en Campaign.
 
@@ -198,7 +198,7 @@ Campagne en Microsoft Dynamics zijn nu verbonden. U kunt gegevenssynchronisatie 
 
 >[!NOTE]
 >
-> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: de server-URL en `login.microsoftonline.com` in de serverconfiguratie. Voor meer informatie over hoe te om toestemmingen URL te vormen, verwijs naar dit [page](../../installation/using/url-permissions.md).
+> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: de server URL en `login.microsoftonline.com` in de serverconfiguratie. Voor meer informatie over hoe te om toestemmingen URL te vormen, verwijs naar dit [page](../../installation/using/url-permissions.md).
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 

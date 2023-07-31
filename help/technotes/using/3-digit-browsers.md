@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: Campagne maken van webcomponenten en versie 100 in Chrome Firefox en Edge-browsers
+title: Webcomponenten en versie 100 van de campagne in Chrome Firefox, en browsers van de Rand
 description: Webcomponenten en versie 100 van de campagne in Chrome, Firefox, en browsers van de Rand
+feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
-source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -22,7 +23,7 @@ De wijziging in het versienummer van 2 naar 3 cijfers kan problemen veroorzaken 
 
 De compatibiliteit van belangrijke websites is van tevoren getest. Als er problemen zijn met sites die niet kunnen worden opgelost voordat deze versies worden uitgebracht, hebben bedrijven back-upplannen die klaar zijn om ervoor te zorgen dat de sites niet worden beïnvloed.
 
-Mogelijke problemen of verlies van functionaliteit op de website komen voort uit de userAgent-tekenreeks die browsers verzenden naar websites die u bezoekt: de gebruikersagent is een tekenreeks die door de browser naar de website wordt verzonden om de site te laten weten welke browser en versie u gebruikt en welke technologie u gebruikt. Wanneer uw browser een verzoek naar een website verzendt, identificeert het zich met het koord van de gebruikersagent alvorens het de gevraagde inhoud terugwint. De gegevens in de tekenreeks van de gebruikersagent helpen de website de inhoud te leveren in een indeling die geschikt is voor uw browser. De versie van de gebruikersagent wordt verhoogd zodat deze overeenkomt met het versienummer van de browser. Het verplaatsen van 2 naar 3 cijfers kan problemen veroorzaken.
+Mogelijke problemen of verlies van functionaliteit op de website komen voort uit de userAgent-tekenreeks die browsers verzenden naar websites die u bezoekt: de userAgent is een tekenreeks die door de browser naar de website wordt verzonden om de site te laten weten welke browser en versie u gebruikt, en de bijbehorende technologie. Wanneer uw browser een verzoek naar een website verzendt, identificeert het zich met het koord van de gebruikersagent alvorens het de gevraagde inhoud terugwint. De gegevens in de tekenreeks van de gebruikersagent helpen de website de inhoud te leveren in een indeling die geschikt is voor uw browser. De versie van de gebruikersagent wordt verhoogd zodat deze overeenkomt met het versienummer van de browser. Het verplaatsen van 2 naar 3 cijfers kan problemen veroorzaken.
 
 ## Heeft dit gevolgen voor u?{#version-100-impact}
 
@@ -42,7 +43,7 @@ Met deze instellingen stuurt de browser de tekenreeks new userAgent naar website
 
 Als u uw webpagina&#39;s wilt testen met Mozilla Firefox 100, kunt u de volgende wijziging van de gebruikersagent in uw webapps simuleren door de tekenreeks van de gebruikersagent handmatig te wijzigen.
 
-1. Firefox openen, voer `about:config` in de adresbar, en druk binnengaan.
+1. Firefox openen, voer `about:config` in de adresbar, en druk binnen.
 1. Zoeken naar `general.useragent.override`.
 1. Selecteer &#39;String&#39; en klik op het plusteken (+).
 
@@ -63,13 +64,13 @@ Om uw gebruikersagent terug naar zijn gebrek te veranderen, ga eenvoudig terug i
 
 Als u de Google Chrome 100-gebruikersagent wilt testen op uw eigen webapps, kunt u deze test inschakelen door de volgende stappen uit te voeren:
 
-1. Chroom openen, Enter `chrome://flags` in de adresbar, en druk binnengaan.
+1. Chroom openen, typ `chrome://flags` in de adresbar, en druk binnen.
 1. Zoeken `Force major version to 100 in User-Agent` in het zoekveld en inschakelen zoals hieronder wordt weergegeven.
 
    ![](assets/force-user-agent-chrome.png)
 
 1. Start de browser opnieuw.
-1. Sluit de `chrome://flags` tab.
+1. Sluit het dialoogvenster `chrome://flags` tab.
 
 Om gebruikersagent terug naar zijn gebrek te veranderen, volg eenvoudig dit proces en verander het plaatsen van de vlag aan `Default` en start de browser opnieuw.
 
@@ -78,12 +79,12 @@ Om gebruikersagent terug naar zijn gebrek te veranderen, volg eenvoudig dit proc
 
 Vanaf versie 97 kunnen siteeigenaars deze versie emuleren door de experimentatiemarkering in te schakelen  `#force-major-version-to-100` in `edge://flags`.
 
-1. Microsoft Edge openen, voer `edge://flags` in de adresbar, en druk binnengaan.
+1. Microsoft Edge openen, voer `edge://flags` in de adresbar, en druk binnen.
 1. Zoeken naar `force-major-version-to-100` en inschakelen, zoals hieronder wordt weergegeven.
 
    ![](assets/force-user-agent-edge.png)
 
 1. Start de browser opnieuw.
-1. Sluit de `edge://flags` tab.
+1. Sluit het dialoogvenster `edge://flags` tab.
 
 Om gebruikersagent terug naar zijn gebrek te veranderen, volg eenvoudig dit proces en verander het plaatsen van de vlag aan `Default` en start de browser opnieuw.

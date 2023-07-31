@@ -2,16 +2,17 @@
 product: campaign
 title: Algemene configuraties
 description: Algemene configuraties
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Daarnaast:
 
 In v6.02 was de modus &quot;multi-time zone&quot; alleen beschikbaar voor PostgreSQL-databasemotoren. Er wordt nu aangeboden welk type database-engine wordt gebruikt. Wij adviseren sterk dat u uw basis in een &quot;multi timezone&quot;basis omzet.
 
-Als u de TIMESTAMP met de modus TIMEZONE wilt gebruiken, moet u ook de opdracht **-userTimestamptz:1** optie aan de post-verbeteringsbevellijn.
+Als u de TIMESTAMP met de modus TIMEZONE wilt gebruiken, moet u ook de opdracht **-userTimestamptz:1** optie aan de postupgrade bevellijn.
 
 >[!IMPORTANT]
 >
@@ -87,7 +88,7 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
 
 >[!IMPORTANT]
 >
->Om veiligheidsredenen is het Adobe Campaign-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, en daarom exploitantIP adressen verzamelen.
+>Om veiligheidsredenen, is het platform van Adobe Campaign niet meer toegankelijk door gebrek: u moet de veiligheidsstreken vormen, en daarom exploitant IP adressen verzamelen.
 
 In Adobe Campaign v7 wordt het concept van **beveiligingszones**. Elke gebruiker moet met een streek worden geassocieerd om aan login aan een instantie en het IP van de gebruiker adres moet in de adressen of adreswaaiers worden omvat die in de veiligheidsstreek worden bepaald. U kunt de beveiligingszones configureren in het configuratiebestand van de Adobe Campaign-server. De veiligheidsstreek waaraan een gebruiker wordt geassocieerd moet in de console worden bepaald (**[!UICONTROL Administration > Access management > Operators]**).
 
@@ -99,7 +100,7 @@ Configuratie van beveiligingszone is gevonden in [deze sectie](../../installatio
 
 ### Gebruikerswachtwoorden {#user-passwords}
 
-In v7: **internal** en **beheerder** De verbinding van de exploitant moet door een wachtwoord worden beveiligd. Wij adviseren sterk wachtwoorden aan deze rekeningen en alle exploitantrekeningen toe te wijzen, **voor migratie**. Als u geen wachtwoord hebt opgegeven voor **internal**, kunt u geen verbinding maken. Een wachtwoord toewijzen aan **internal** voert u de volgende opdracht in:
+In v7: **internal** en **admin** De verbinding van de exploitant moet door een wachtwoord worden beveiligd. Wij adviseren sterk wachtwoorden aan deze rekeningen en alle exploitantrekeningen toe te wijzen, **voor migratie**. Als u geen wachtwoord hebt opgegeven voor **internal**, kunt u geen verbinding maken. Een wachtwoord toewijzen aan **internal** voert u de volgende opdracht in:
 
 ```
 nlserver config -internalpassword
@@ -113,13 +114,13 @@ nlserver config -internalpassword
 
 * Gebruikers zonder machtigingen kunnen niet langer verbinding maken met Adobe Campaign. Hun toestemmingen moeten manueel worden toegevoegd, bijvoorbeeld door een toestemming te creëren genoemd **verbinden**.
 
-   De gebruikers die door deze wijziging worden beïnvloed worden geïdentificeerd en worden vermeld tijdens postupgrade.
+  De gebruikers die door deze wijziging worden beïnvloed worden geïdentificeerd en worden vermeld tijdens postupgrade.
 
 * Tekstspatiëring werkt niet meer als het wachtwoord leeg is. Als dit het geval is, zal een foutenmelding u op de hoogte brengen en u vragen om het aan te passen.
 * Gebruikerswachtwoorden worden niet meer opgeslagen in het dialoogvenster **xtk:sessionInfo** schema.
 * Beheerdersmachtigingen zijn nu nodig om de **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** functies.
 
-Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de **beheerder** machtiging:
+Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de **admin** machtiging:
 
 * ncm:publiceren
 * nl:controleren
@@ -170,7 +171,7 @@ Nieuwe koppeling met de verbindingspagina:
 
 >[!IMPORTANT]
 >
->Als u een exploitant gebruikt verbonden aan een vertrouwd op IP masker, controleer dat het de minimumrechten heeft en dat het in een veiligheidsstreek binnen is **sessionTokenOnly** in.
+>Als u een exploitant gebruikt verbonden aan een vertrouwd op IP masker, controleer dat het de minimumrechten heeft en dat het in een veiligheidsstreek binnen is **sessionTokenOnly** -modus.
 
 ### SQL-functies {#sql-functions}
 
@@ -199,71 +200,71 @@ Bijvoorbeeld:
 
 Adobe Campaign v7 integreert een recentere tolk JavaScript. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
 
-De **[!UICONTROL myObject.@attribute]** syntaxis is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis gebruikt voor een niet-XML-object, werken de verpersoonlijkingsfuncties niet meer.
+De **[!UICONTROL myObject.@attribute]** is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis gebruikt voor een niet-XML-object, werken de verpersoonlijkingsfuncties niet meer.
 
 Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt: **[!UICONTROL employee.@sn]** moet nu de volgende syntaxis gebruiken: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Voormalige syntaxis:
 
-   ```
-   employee.@sn
-   ```
+  ```
+  employee.@sn
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   employee["sn"]
-   ```
+  ```
+  employee["sn"]
+  ```
 
 Als u een waarde in een XML-object wilt wijzigen, moet u nu beginnen met het bijwerken van de waarde voordat u het XML-knooppunt toevoegt:
 
 * Oude JavaScript-code:
 
-   ```
-   var cellStyle = node.style.copy();
-   this.styles.appendChild(cellStyle);
-   cellStyle.@width = column.@width;
-   ```
+  ```
+  var cellStyle = node.style.copy();
+  this.styles.appendChild(cellStyle);
+  cellStyle.@width = column.@width;
+  ```
 
 * Nieuwe JavaScript-code:
 
-   ```
-   var cellStyle = node.style.copy();
-   cellStyle.@width = column.@width;
-   this.styles.appendChild(cellStyle);
-   ```
+  ```
+  var cellStyle = node.style.copy();
+  cellStyle.@width = column.@width;
+  this.styles.appendChild(cellStyle);
+  ```
 
 U kunt een XML-kenmerk niet meer gebruiken als een tabelsleutel.
 
 * Voormalige syntaxis:
 
-   ```
-   if(serverForm.activities[ctx.activityHistory.activity[0].@name].type !="end")
-   ```
+  ```
+  if(serverForm.activities[ctx.activityHistory.activity[0].@name].type !="end")
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   if(serverForm.activities[String(ctx.activityHistory.activity[0].@name)].type !="end"
-   ```
+  ```
+  if(serverForm.activities[String(ctx.activityHistory.activity[0].@name)].type !="end"
+  ```
 
 ### SQLData {#sqldata}
 
 Om de instantieveiligheid te versterken, is een nieuwe syntaxis geïntroduceerd in Adobe Campaign v7 om de syntaxis te vervangen die op SQLData wordt gebaseerd. Als u deze code-elementen met deze syntaxis gebruikt, moet u deze wijzigen. De belangrijkste elementen zijn:
 
 * Filteren op subquery: de nieuwe syntaxis is gebaseerd op de `<subQuery>`  element om een subquery te definiëren
-* Aggregaten: de nieuwe syntaxis is &quot;statistische functie(verzameling)&quot;
-* Filteren met samenvoeging: de nieuwe syntaxis is `[schemaName:alias:xPath]`
+* Samengevoegde gegevens: de nieuwe syntaxis is &quot;statistische functie(verzameling)&quot;
+* Filteren op samenvoeging: de nieuwe syntaxis is `[schemaName:alias:xPath]`
 
 Het schema queryDef (xtk:queryDef) is gewijzigd:
 
-* een nieuwe `<subQuery>`  -element is beschikbaar ter vervanging van de SELECT die is opgenomen in SQLData
+* een nieuwe `<subQuery>`  -element is beschikbaar om de SELECT in SQLData te vervangen
 * Er zijn twee nieuwe waarden &quot;IN&quot; en &quot;NOT IN&quot; geïntroduceerd voor het @setOperator-kenmerk
-* een nieuwe `<where>`  element, dat een onderliggend element is van het `<node>` element: hiermee kunt u &quot;subselecties&quot; maken in SELECT
+* een nieuwe `<where>`  element, dat een onderliggend element is van het `<node>` element: hiermee kunt u subselecties maken in SELECT
 
 Wanneer een &quot;@expr&quot;attribuut wordt gebruikt, kan SQLData aanwezig zijn. U kunt de volgende termen zoeken: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campaign v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsgebieden in **[!UICONTROL serverConf.xml]** bestand: de **allowSQLInjection** -kenmerk beheert de SQL-syntaxisbeveiliging.
+Adobe Campaign v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsgebieden in **[!UICONTROL serverConf.xml]** bestand: het **allowSQLInjection** beheert de SQL-syntaxisbeveiliging.
 
 Als een SQLData-fout optreedt tijdens de uitvoering na de upgrade, moet u dit kenmerk wijzigen om het gebruik van op SQLData gebaseerde syntaxis tijdelijk toe te staan, zodat u de code kunt herschrijven. Hiervoor moet u de volgende optie wijzigen in het dialoogvenster **serverConf.xml** bestand:
 
@@ -289,53 +290,53 @@ Hieronder vindt u vergelijkende voorbeelden tussen de oude en de nieuwe syntaxis
 
 * Voormalige syntaxis:
 
-   ```
-   <condition expr="@id NOT IN ([SQLDATA[SELECT iOperatorId FROM XtkOperatorGroup WHERE iGroupId = $(../@owner-id)]])" enabledIf="$(/ignored/@ownerType)=1"/>
-   ```
+  ```
+  <condition expr="@id NOT IN ([SQLDATA[SELECT iOperatorId FROM XtkOperatorGroup WHERE iGroupId = $(../@owner-id)]])" enabledIf="$(/ignored/@ownerType)=1"/>
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
-     <subQuery schema="xtk:operatorGroup">
-        <select>
-          <node expr="[@operator-id]" />
-        </select>
-        <where>
-          <condition expr="[@group-id]=$long(../@owner-id)"/>
-        </where>
-      </subQuery>
-   </condition>
-   ```
+  ```
+  <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
+    <subQuery schema="xtk:operatorGroup">
+       <select>
+         <node expr="[@operator-id]" />
+       </select>
+       <where>
+         <condition expr="[@group-id]=$long(../@owner-id)"/>
+       </where>
+     </subQuery>
+  </condition>
+  ```
 
 * Voormalige syntaxis:
 
-   ```
-   <queryFilter name="dupEmail" label="Emails duplicated in the folder" schema="nms:recipient">
-       <where>
-         <condition sql="sEmail in (select sEmail from nmsRecipient where iFolderId=$(folderId) group by sEmail having count(sEmail)>1)" internalId="1"/>
-       </where>
-       <folder _operation="none" name="nmsSegment"/>
-     </queryFilter>
-   ```
+  ```
+  <queryFilter name="dupEmail" label="Emails duplicated in the folder" schema="nms:recipient">
+      <where>
+        <condition sql="sEmail in (select sEmail from nmsRecipient where iFolderId=$(folderId) group by sEmail having count(sEmail)>1)" internalId="1"/>
+      </where>
+      <folder _operation="none" name="nmsSegment"/>
+    </queryFilter>
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   <queryFilter name="dupEmail" label=" Emails duplicated in the folder " schema="nms:recipient">
-       <where>
-         <condition expr="@email" setOperator="IN" internalId="1">
-           <subQuery schema="nms:recipient">
-             <select><node expr="@email"/></select>
-             <where><condition expr="[@folder-id]=$(folderId)"/></where>
-             <groupBy><node expr="@email"/></groupBy>
-             <having><condition expr="count(@email)>1"/></having>
-           </subQuery>
-         </condition>
-       </where>
-       <folder _operation="none" name="nmsSegment"/>
-     </queryFilter>
-   ```
+  ```
+  <queryFilter name="dupEmail" label=" Emails duplicated in the folder " schema="nms:recipient">
+      <where>
+        <condition expr="@email" setOperator="IN" internalId="1">
+          <subQuery schema="nms:recipient">
+            <select><node expr="@email"/></select>
+            <where><condition expr="[@folder-id]=$(folderId)"/></where>
+            <groupBy><node expr="@email"/></groupBy>
+            <having><condition expr="count(@email)>1"/></having>
+          </subQuery>
+        </condition>
+      </where>
+      <folder _operation="none" name="nmsSegment"/>
+    </queryFilter>
+  ```
 
 **Het aggregaat**
 
@@ -343,34 +344,34 @@ Samengevoegde functie (verzameling)
 
 * Voormalige syntaxis:
 
-   ```
-   <node sql="(select count(*) from NmsNewsgroup WHERE O0.iOperationId=iOperationId)" alias="@nbMessages"/>
-   ```
+  ```
+  <node sql="(select count(*) from NmsNewsgroup WHERE O0.iOperationId=iOperationId)" alias="@nbMessages"/>
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   <node expr="count([newsgroup/@id])" alias="../@nbMessages"/>
-   ```
+  ```
+  <node expr="count([newsgroup/@id])" alias="../@nbMessages"/>
+  ```
 
-   >[!NOTE]
-   >
-   >De verbindingen worden automatisch uitgevoerd voor de gezamenlijke functies. Het is niet meer noodzakelijk om de voorwaarde WHERE O0.iOperationId=iOperationId te specificeren.
-   >
-   >Het is niet meer mogelijk om &quot;count()&#42;)&quot;. Je moet &quot;countall()&quot; gebruiken.
+  >[!NOTE]
+  >
+  >De verbindingen worden automatisch uitgevoerd voor de gezamenlijke functies. Het is niet meer noodzakelijk om de voorwaarde WHERE O0.iOperationId=iOperationId te specificeren.
+  >
+  >Het is niet meer mogelijk om &quot;count()&#42;)&quot;. Je moet &quot;countall()&quot; gebruiken.
 
 * Voormalige syntaxis:
 
-   ```
-   <node sql="(select Sum(iToDeliver) from NmsDelivery WHERE O0.iOperationId=iOperationId AND iSandboxMode=0 AND iState>=45)" alias="@nbMessages"/>
-   ```
+  ```
+  <node sql="(select Sum(iToDeliver) from NmsDelivery WHERE O0.iOperationId=iOperationId AND iSandboxMode=0 AND iState>=45)" alias="@nbMessages"/>
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   <node expr="Sum([delivery-linkedDelivery/properties/@toDeliver])" alias= "../@sumToDeliver">
-                     <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
-   ```
+  ```
+  <node expr="Sum([delivery-linkedDelivery/properties/@toDeliver])" alias= "../@sumToDeliver">
+                    <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
+  ```
 
 **Filters op verbindingen**
 
@@ -380,16 +381,16 @@ De alias is optioneel
 
 * Voormalige syntaxis:
 
-   ```
-   <condition expr={"[" + joinPart.destination.nodePath + "] = [SQLDATA[W." + joinPart.source.SQLName + "]]"}
-                                            aliasSqlTable={nodeSchemaRoot.SQLTable + " W"}/>
-   ```
+  ```
+  <condition expr={"[" + joinPart.destination.nodePath + "] = [SQLDATA[W." + joinPart.source.SQLName + "]]"}
+                                           aliasSqlTable={nodeSchemaRoot.SQLTable + " W"}/>
+  ```
 
 * Nieuwe syntaxis:
 
-   ```
-   <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
-   ```
+  ```
+  <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
+  ```
 
 **Tips en trucs**
 
@@ -430,16 +431,16 @@ Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
 * In de bevel-lijn interface, worden de fouten geconcretiseerd door een drievoudig chevron **>>>** en synchronisatie wordt automatisch gestopt. Waarschuwingen worden geconcretiseerd door een dubbele chevron **>>** en moet worden opgelost zodra de synchronisatie is voltooid. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Bijvoorbeeld:
 
-   ```
-   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
-   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
+  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de exploitant vereist om het op te lossen.
+  Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de exploitant vereist om het op te lossen.
 
 * De **postupgrade_`<server version number>`_tijd na upgrade`>`.log** bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installatiemap/var/`<instance>`postupgrade**. Fouten en waarschuwingen worden aangegeven door de **fout** en **waarschuwing** kenmerken.
 
@@ -454,13 +455,13 @@ U lost een conflict op door het volgende proces toe te passen:
 
 Er zijn drie manieren om een conflict op te lossen:
 
-* **[!UICONTROL Declared as resolved]**: van tevoren ingrijpen van de exploitant vereist.
-* **[!UICONTROL Accept the new version]**: aanbevolen als de gebruiker de bronnen die bij Adobe Campaign worden geleverd, niet heeft gewijzigd.
+* **[!UICONTROL Declared as resolved]**: vereist vooraf ingrijpen van de exploitant.
+* **[!UICONTROL Accept the new version]**: aanbevolen als de bronnen die bij Adobe Campaign worden geleverd, niet door de gebruiker zijn gewijzigd.
 * **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
 
-   >[!IMPORTANT]
-   >
-   >Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
+  >[!IMPORTANT]
+  >
+  >Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
@@ -473,7 +474,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
    ![](assets/s_ncs_production_conflict003.png)
 
 1. Ga naar het conflict dat u had opgelost. Klik op de knop **[!UICONTROL Actions]** pictogram en selecteer **[!UICONTROL Declare as resolved]**.
-1. Sla uw wijzigingen op: het conflict is nu opgelost .
+1. Sla uw wijzigingen op: het conflict is nu opgelost.
 
 ## Tomcat {#tomcat}
 
@@ -509,7 +510,7 @@ In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in 
 >
 >Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
-Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in het dialoogvenster **Migratie** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** velden). De inhoud in de **NmsEmailOfferView** tabel is verplaatst naar de aanbiedingstabel.
+Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in het dialoogvenster **Migratie** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** velden). De inhoud in het dialoogvenster **NmsEmailOfferView** tabel is verplaatst naar de aanbiedingstabel.
 
 >[!NOTE]
 >
@@ -619,7 +620,7 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 
 ### Standaardrapporten {#standard-reports}
 
-Alle standaardrapporten maken momenteel gebruik van de renderingengine v6.x. Als u JavaScript in deze rapporten had toegevoegd, zouden bepaalde elementen niet meer kunnen werken. De oude versie van JavaScript is namelijk niet compatibel met de v6.x-renderingengine. U moet daarom de JavaScript-code controleren en deze later aanpassen. U moet elk rapport testen, met name de exportfunctie.
+Alle standaardrapporten gebruiken momenteel de renderingengine v6.x. Als u JavaScript in deze rapporten had toegevoegd, zouden bepaalde elementen niet meer kunnen werken. De oude versie van JavaScript is namelijk niet compatibel met de v6.x-renderingengine. U moet daarom de JavaScript-code controleren en deze later aanpassen. U moet elk rapport testen, met name de exportfunctie.
 
 ### Persoonlijke rapporten {#personalized-reports}
 
@@ -640,7 +641,7 @@ Er zijn twee families voor webtoepassingen:
 
 Net als voor rapporten ([Meer informatie](#reports)), als u JavaScript hebt toegevoegd, moet u controleren en indien nodig aanpassen. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
 
-Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u verbindingsproblemen ondervindt in uw geïdentificeerde webtoepassingen, moet u tijdelijk het dialoogvenster **allowUserPassword** en **sessionTokenOnly** opties in het dialoogvenster **serverConf.xml** bestand. Na de postupgrade wijzigt u de volgende waarden voor opties:
+Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u verbindingsproblemen ondervindt in uw geïdentificeerde webtoepassingen, moet u tijdelijk het dialoogvenster **allowUserPassword** en **sessionTokenOnly** in de **serverConf.xml** bestand. Na de postupgrade wijzigt u de volgende waarden voor opties:
 
 ```
 allowUserPassword="true"

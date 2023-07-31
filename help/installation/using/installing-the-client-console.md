@@ -2,14 +2,15 @@
 product: campaign
 title: De clientconsole installeren
 description: Leer hoe u de clientconsole installeert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1142'
 ht-degree: 3%
 
 ---
@@ -116,7 +117,7 @@ Gebruikers moeten de console nu downloaden en installeren door de onderstaande s
 
 1. Klik op de knop **[!UICONTROL Download]** koppeling op de installatiepagina.
 1. Download en sla het instellingenbestand van de client op.
-1. Het gedownloade bestand uitvoeren op een computer in Windows: De installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, waarbij &#39;X&#39; &#39;6&#39; of &#39;7&#39; is, volgens uw Adobe Campaign-versie.
+1. Het gedownloade bestand uitvoeren op een computer in Windows: de installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, waarbij &#39;X&#39; 6 of &#39;7&#39; is, volgens uw Adobe Campaign-versie.
 
 ### Verbinding maken - alleen eerste gebruikers{#create-the-connection}
 

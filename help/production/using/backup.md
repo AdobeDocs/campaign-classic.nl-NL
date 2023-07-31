@@ -2,16 +2,17 @@
 product: campaign
 title: Back-up
 description: Back-up
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,7 @@ Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van ee
 
 Gegevens worden op twee verschillende locaties opgeslagen:
 
-* fysieke bestanden worden opgeslagen in de mappen van Adobe Campaign;
+* fysieke bestanden worden opgeslagen in de directory&#39;s van Adobe Campaign;
 * andere gegevens worden in de database opgeslagen.
 
 De meeste gegevens bevinden zich in de database. Dit is 99% van de informatie waarvan een back-up moet worden gemaakt.
@@ -51,7 +52,7 @@ De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
 >[!IMPORTANT]
 >
->Het is noodzakelijk om een back-up van de database te maken.
+>Het is absoluut noodzakelijk om een back-up van de database te maken.
 
 
 Het gegevensbestand bevat alle informatie die in de rijke cliëntconsole van Adobe Campaign wordt getoond, evenals alle lijn-van-bedrijfsgegevens.

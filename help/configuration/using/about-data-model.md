@@ -2,12 +2,12 @@
 product: campaign
 title: Aan de slag met het gegevensmodel Campaign Classic
 description: Leer hoe u het Campaign-datamodel kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Data Model
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Data Model, Configuration
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '987'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ De voordelen van de ingebouwde tabel Ontvanger zijn als volgt:
 
 * Ingebouwd werken met functies zoals abonnementen, zaadlijsten, en meer.
 * Het verstrekken van een marketing gegevensbestand van een ontvanger-centric gegevensmodel.
-* Snellere implementatie.
+* Snellere implementatie
 * Gemakkelijk onderhoud door steun en partners.
 
 Het is echter mogelijk de tabel Ontvanger uit te breiden, maar niet het aantal velden of koppelingen in de tabel te verminderen.
@@ -67,7 +67,7 @@ Wanneer u begint met Adobe Campaign, moet u het standaardgegevensmodel beoordele
 
 Indien relevant, kunt u de standaard Ontvanger lijst met de uit-van-de-doos gebieden gebruiken, zoals die in wordt beschreven [deze sectie](#default-recipient-table).
 
-Indien nodig kunt u het uitbreiden met twee mechanismen:
+Indien nodig, kunt u het uitbreiden met twee mechanismen:
 
 * Een bestaande tabel uitbreiden met nieuwe velden. U kunt bijvoorbeeld een nieuw veld Loyalty toevoegen aan de tabel Ontvanger.
 * Maak een nieuwe tabel, bijvoorbeeld een tabel met de naam Aanschaffen, waarin alle aankopen worden vermeld die door elk profiel van de database zijn gedaan, en koppel deze aan de tabel Ontvanger.
@@ -96,7 +96,7 @@ De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
 * **Schaalbaarheid** - Grote volumes vereisen een gestroomlijnde tabel met weinig velden voor een efficiënt ontwerp. De ingebouwde ontvankelijke lijst zou teveel nutteloze gebieden hebben, die prestaties en gebrek aan efficiency zouden kunnen beïnvloeden.
 
-* **Gegevenslocatie** - Als de gegevens op een externe bestaande marketing gegevensbestand verblijven, kan het teveel inspanning vereisen om de ingebouwde ontvankelijke lijst te gebruiken. Het maken van een nieuwe op basis van een bestaande structuur is eenvoudiger.
+* **Gegevenslocatie** - Als de gegevens op een externe bestaande marketing gegevensbestand verblijven, kan het teveel inspanning vereisen om de ingebouwde ontvankelijke lijst te gebruiken. Het is eenvoudiger om een nieuwe te maken op basis van een bestaande structuur.
 
 * **Eenvoudige migratie** - Er is geen onderhoud nodig om te controleren of alle extensies nog geldig zijn na de upgrade.
 
@@ -112,9 +112,9 @@ Meer informatie over het gegevensmodel van campagne vindt u in de volgende secti
 
 * **Volledige beschrijving van elke tabel** - Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** selecteert u een bron in de lijst en klikt u op de knop **[!UICONTROL Documentation]** tab.
 
-   ![](assets/data-model_documentation-tab.png)
+  ![](assets/data-model_documentation-tab.png)
 
 
-* **Campagne-schema&#39;s** - De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Lees voor meer informatie over Adobe Campaign-schema&#39;s [deze sectie](../../configuration/using/about-schema-reference.md).
+* **Campagneprogramma&#39;s** - De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Lees voor meer informatie over Adobe Campaign-schema&#39;s [deze sectie](../../configuration/using/about-schema-reference.md).
 
-* **Aanbevolen werkwijzen voor gegevensmodellen** - Leer de architectuur van het gegevensmodel van de Campagne en verwante beste praktijken, in [deze sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+* **Aanbevolen werkwijzen voor gegevensmodellen** - Leer de architectuur van het gegevensmodel van de campagne en verwante beste praktijken, in [deze sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture).

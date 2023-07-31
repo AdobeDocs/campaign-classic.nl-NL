@@ -2,14 +2,15 @@
 product: campaign
 title: Aanbevolen procedures voor Adobe Campaign Classic-interactie
 description: In deze sectie wordt de aanbevolen aanpak beschreven voor het beheer van de Interactiemodule in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -49,17 +50,17 @@ Hieronder staan enkele beste praktijken met betrekking tot subsidiabiliteitsrege
 
 ### Provisietabel {#proposition-table}
 
-Hieronder staan enkele aanbevolen procedures voor de tabel met voorstellen.
+Hieronder vindt u een aantal aanbevolen procedures voor de tabel met voorstellen.
 
 * Gebruik een minimumaantal regels om de verwerking zo snel mogelijk te maken.
-* Het aantal records in de tabel met voorstellen beperken: Bewaar alleen de records die nodig zijn om de statusupdate en de vereisten van de regels bij te houden en archiveer ze vervolgens in een ander systeem.
+* Beperk het aantal verslagen in de voorstellingstabel: houd slechts de verslagen die nodig zijn om zijn statusupdate te volgen en wat door de regels wordt vereist, dan archiveer hen in een ander systeem.
 * Voer intensief gegevensbestandonderhoud op de propositietabel uit, zoals opnieuw bouwt indexen of ontspant lijst.
 * Beperk het aantal voorgestelde voorstellen per doel. Stel niet meer in dan wat u gaat gebruiken.
 * Vermijd zoveel mogelijk samengevoegde regels in de regelcriteria.
 
 ## Tips en trucs voor het beheren van aanbiedingen {#tips-managing-offers}
 
-Deze sectie bevat meer gedetailleerd advies over het beheer van aanbiedingen en het gebruik van de Interactiemodule in Adobe Campaign Classic.
+Deze sectie bevat gedetailleerder advies over het beheer van aanbiedingen en het gebruik van de Interactiemodule in Adobe Campaign Classic.
 
 ### Meerdere aanbiedingsruimten gebruiken in een e-maillevering {#multiple-offer-spaces}
 
@@ -80,8 +81,8 @@ In het onderstaande voorbeeld is de renderfunctie HTML beschikbaar in de vervolg
 Deze functie voegt code in zoals: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 Wanneer u het voorstel selecteert, wordt de waarde van de optie **[!UICONTROL view]** Het kenmerk is als volgt:
-* &quot;rendering/html&quot;: html-rendering. De renderfunctie HTML wordt gebruikt.
-* &quot;aanbieding/weergave/html&quot;: html-inhoud. De renderfunctie HTML wordt niet gebruikt. Het bevat alleen het veld HTML.
+* &quot;rendering/html&quot;: html rendering. De renderfunctie HTML wordt gebruikt.
+* &quot;aanbieding/view/html&quot;: HTML-inhoud. De renderfunctie HTML wordt niet gebruikt. Het bevat alleen het veld HTML.
 
 Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies ruimtes bieden en welke ruimten renderfuncties bieden.
 
@@ -109,13 +110,13 @@ U kunt extra velden toevoegen, zoals een veld @rank:
 
 Omdat er een veld in de tabel met voorstellen staat met de naam @rank, wordt de waarde in de tabel met werkstroomsjablonen gekopieerd.
 
-Voor meer informatie over het opslaan van extra velden in de tabel met profielen raadpleegt u [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Zie voor meer informatie over het opslaan van extra velden in de tabel met profielen [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Voor uitgaande aanbiedingen met interactie is dit handig wanneer er meerdere aanbiedingen zijn geselecteerd en u wilt opnemen in welke volgorde deze in een e-mail worden weergegeven.
 
 U kunt extra meta-gegevens in de propositietabel, zoals het huidige uitgeeft niveau ook direct opslaan, om historische verslagen over de uitgaven te houden op het tijdstip dat de aanbiedingen werden geproduceerd.
 
-Wanneer het gebruiken van uitgaande Interactie, kan het @rank gebied worden toegevoegd, zoals in het voorbeeld hierboven, maar zijn waarde wordt automatisch geplaatst gebaseerd op de orde die door Interaction is teruggekeerd. Als u bijvoorbeeld Interactie gebruikt om drie aanbiedingen te selecteren, heeft het veld @rank de waarden 1, 2 en 3 geretourneerd.
+Wanneer het gebruiken van uitgaande Interactie, kan het @rank gebied, zoals in het voorbeeld hierboven worden toegevoegd, maar zijn waarde wordt automatisch geplaatst gebaseerd op de orde die door Interaction is teruggekeerd. Als u bijvoorbeeld Interactie gebruikt om drie aanbiedingen te selecteren, heeft het veld @rank de waarden 1, 2 en 3 geretourneerd.
 
 Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan de gebruiker beide benaderingen combineren. De gebruiker kan het veld @rank bijvoorbeeld handmatig instellen op 1 voor de handmatig geselecteerde aanbieding en een expressie zoals &quot;1 + @rank&quot; gebruiken voor de aanbiedingen die door Interactie worden geretourneerd. Ervan uitgaande dat Interactie drie aanbiedingen selecteert, worden de aanbiedingen die door beide benaderingen worden geretourneerd, gerangschikt in 1-4:
 
@@ -125,11 +126,11 @@ Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan
 
 Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-doosstructuur reeds opstelling volgt:
 * Een nieuw veld definiëren voor de opslag van inhoud onder `<element name="view">`.
-* Elk nieuw veld moet tweemaal worden gedefinieerd. Eenmaal als een regulier XML-veld en eenmaal als een CDATA XML-veld met &quot;_jst&quot; toegevoegd aan de naam. Bijvoorbeeld:
+* Elk nieuw veld moet tweemaal worden gedefinieerd. Eenmaal als een normaal XML-veld en eenmaal als een CDATA XML-veld met &quot;_jst&quot; toegevoegd aan de naam. Bijvoorbeeld:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten onder `<element name="trackedUrls">` die u vindt onder `<element name="view" >`.

@@ -2,11 +2,12 @@
 product: campaign
 title: Aanvullende parameters voor webtracking
 description: Meer informatie over parameters voor webtracking
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Uw Adobe Campaign-platform biedt standaard twee webtrackingparameters van het type TRANSACTION:
 
-* **bedrag**: het bedrag van een transactie vertegenwoordigt;
+* **bedrag**: staat voor het bedrag van een transactie;
 * **artikel**: geeft het aantal items in een transactie aan.
 
 Deze parameters worden gedefinieerd in het dialoogvenster **nms:webTrackingLog** en zijn enkele van de indicatoren die worden weergegeven in de rapportage.
@@ -68,16 +69,16 @@ Wanneer de configuratie is gewijzigd, moet u:
 * Stop de webserver die als host fungeert voor de omleidingsmodule (Apache, IIS, enz.),
 * Stop de Adobe Campaign-server: **netstop nlserver6** in Windows **/etc/init.d/nlserver6 stop** in Linux,
 
-   >[!NOTE]
-   >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
 
 * Verwijder in Linux de gedeelde geheugensegmenten met behulp van de **ipcrm** opdracht,
 * Start de Adobe Campaign-server opnieuw: **netwerkbeginserver6** in Windows **/etc/init.d/nlserver6 start** in Linux,
 
-   >[!NOTE]
-   >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+  >[!NOTE]
+  >
+  >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
 * Start de webserver opnieuw.
 

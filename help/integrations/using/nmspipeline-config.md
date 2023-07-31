@@ -2,13 +2,14 @@
 product: campaign
 title: Pipelineoptie NmsPipeline_Config
 description: Pipelineoptie NmsPipeline_Config
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '386'
 ht-degree: 3%
 
 ---
@@ -70,7 +71,7 @@ In dit tweede voorbeeld worden alle triggers afgevangen.
 >
 >De [!DNL Trigger] De waarde UID aan een specifieke trekkernaam in de interface van Analytics kan als deel van de URL querystring parameters in de interface Triggers worden gevonden. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
 
-## De parameter voor de consument {#consumer-parameter}
+## De consumentenparameter {#consumer-parameter}
 
 De pijpleiding werkt met een &quot;leverancier en consument&quot;-model. Er kunnen veel consumenten op dezelfde rij staan. Berichten worden alleen voor een individuele consument &quot;verbruikt&quot;. Elke consument krijgt zijn eigen &quot;exemplaar&quot;van de berichten.
 
@@ -78,8 +79,8 @@ De parameter &quot;consument&quot; identificeert het geval als een van deze cons
 
 ## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
-Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
-Zorg ervoor dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
+Voeg Experience Cloud-triggers toe of bewerk deze onder de &quot;triggers&quot;-array. Bewerk de rest niet.
+Ervoor zorgen dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumer&quot; is een unieke tekenreeks die de instantie van de server uniek identificeert. Dit kan doorgaans de instantienaam zelf zijn. Voor meerdere omgevingen (dev/stage/prod) dient u ervoor te zorgen dat deze uniek zijn voor elk van deze omgevingen, zodat elke instantie een kopie van het bericht krijgt.

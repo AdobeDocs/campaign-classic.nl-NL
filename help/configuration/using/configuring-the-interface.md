@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: De interface configureren
-description: Leer hoe te om de interface van de Campagne te vormen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Leer hoe u de interface Campagne configureert
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Voer de volgende stappen uit om de nieuwe tabel met ontvangers in de Adobe Campa
 Adobe Campaign gebruikt een globale variabele &quot;Nms_DefaultRcpSchema&quot;aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger). Deze variabele moet daarom worden gewijzigd.
 
 1. Ga naar de **[!UICONTROL Administration>Platform>Options]** knooppunt van de verkenner.
-1. De waarde van de optie **Nms_DefaultRcpSchema** variabele met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers (in dit geval: focus:individu).
+1. De waarde van de optie **Nms_DefaultRcpSchema** variabele met de naam van het schema dat overeenkomt met de externe ontvangende tabel (in dit geval: cus:individual).
 1. Wijzigingen opslaan.
 
 ## Een nieuw formulier maken {#creating-a-new-form-}
@@ -44,7 +45,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
    >
    >Meer informatie over **formulier** tekstbestanden, verwijzing naar [deze pagina](../../configuration/using/identifying-a-form.md).
 
-   In ons huidige voorbeeld wordt **formulier** bestand moet zijn gebaseerd op de **focus:individueel** en hebben daarom de volgende indeling:
+   In ons huidige voorbeeld wordt **formulier** bestand moet zijn gebaseerd op de **focus:individueel** schema en hebben daarom de volgende lay-out:
 
    ```
    <container colspan="2">

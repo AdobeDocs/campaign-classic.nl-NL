@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot synapse configureren
 description: Leer hoe u toegang tot Synapse in FDA configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -23,14 +24,13 @@ Campagne gebruiken [Federale gegevenstoegang](../../installation/using/about-fda
 1. Azure synapse configureren op [CentOS](#azure-centos), [Windows](#azure-windows) of [Debian](#azure-debian)
 1. De Azure synapse configureren [externe rekening](#azure-external) in Campagne
 
-## azure synapse op CentOS {#azure-centos}
+## Azure synapse op CentOS {#azure-centos}
 
 >[!CAUTION]
 >
 >* U hebt basisrechten nodig om een ODBC-stuurprogramma te installeren.
 >* Red Hat Enterprise ODBC-stuurprogramma&#39;s van Microsoft kunnen ook worden gebruikt met CentOS om verbinding te maken met SQL Server.
 >* Versie 13.0 werkt met Red Hat 6 en 7.
-
 
 Voer de onderstaande stappen uit om de Azure synapse in CentOS te configureren:
 
@@ -107,7 +107,7 @@ Voer de onderstaande stappen uit om de Azure synapse in CentOS te configureren:
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## azure synapse in Windows {#azure-windows}
+## Azure synapse in Windows {#azure-windows}
 
 >[!NOTE]
 >
@@ -129,16 +129,16 @@ Azure synapse in Windows configureren:
 
 1. Aangezien de Analytics van de Azure synapse door de haven van TCP 1433 meedeelt, moet u deze haven op de Firewall van de Verdediger van Vensters openen. Raadpleeg voor meer informatie hierover [Windows-documentatie](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## azure synapse over Debian {#azure-debian}
+## Azure synapse over Debian {#azure-debian}
 
 **Vereisten:**
 
 * U hebt basisrechten nodig om een ODBC-stuurprogramma te installeren.
 * Er is een curve nodig om het msodbcsql-pakket te installeren. Als u het geïnstalleerd hebt, stel het volgende bevel in werking:
 
-   ```
-   sudo apt-get install curl
-   ```
+  ```
+  sudo apt-get install curl
+  ```
 
 Om Azure synapse op Debian te vormen:
 
@@ -153,7 +153,7 @@ Om Azure synapse op Debian te vormen:
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. Als u de volgende fout krijgt **&quot;Het stuurprogramma voor de methode /usr/lib/apt/methods/https is niet gevonden&quot;** wanneer wordt aangeroepen **sudo apt-get-update**, moet u de opdracht uitvoeren:
+1. Als u de volgende fout krijgt **&quot;Het stuurprogramma voor de methode /usr/lib/apt/methods/https is niet gevonden&quot;** wanneer wordt opgeroepen **sudo apt-get-update**, moet u de opdracht uitvoeren:
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -192,11 +192,11 @@ Om Azure synapse op Debian te vormen:
    >
    >Om mededeling van de kant van de Analyse van de Azure synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg hiertoe de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-## Externe rekening azure synapse {#azure-external}
+## Externe rekening van azure synapse {#azure-external}
 
 De [!DNL Azure Synapse] Met een externe account kunt u uw Campagne-instantie verbinden met uw Azure synapse externe database.
 
-Om uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
+Als u uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
 1. Van campagne **[!UICONTROL Explorer]**, klikt u op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -210,7 +210,7 @@ Om uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
    ![](assets/azure_2.png)
 
-1. Configureer de [!DNL Azure Synapse] externe rekening:
+1. Vorm [!DNL Azure Synapse] externe rekening:
 
    * Voor standaardverificatie moet u opgeven:
 
@@ -218,11 +218,11 @@ Om uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
       * **[!UICONTROL Account]**: Naam van de gebruiker
 
-      * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+      * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount
 
       * **[!UICONTROL Database]**: Naam van de database
 
-      ![](assets/azure_3.png)
+     ![](assets/azure_3.png)
 
    * Voor systeem-toegewezen beheerde identiteitsauthentificatie, moet u specificeren:
 
@@ -230,11 +230,9 @@ Om uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
       * **[!UICONTROL Database]**: Naam van de database
 
-      * **[!UICONTROL Options]**: De volgende syntaxis toevoegen `Authentication=ActiveDirectoryMsi`
+      * **[!UICONTROL Options]**: Voeg de volgende syntaxis toe `Authentication=ActiveDirectoryMsi`
 
-      ![](assets/azure_4.png)
-
-
+     ![](assets/azure_4.png)
 
 1. Klik op **[!UICONTROL Save]**.
 

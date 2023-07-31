@@ -2,13 +2,14 @@
 product: campaign
 title: De server installeren
 description: De server installeren
+feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: b58edd9566d0f3d6aad5d2768706ead66e11e949
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 4%
@@ -48,7 +49,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Klikken **[!UICONTROL Finish]** om de installatie te starten:
+1. Klikken **[!UICONTROL Finish]** de installatie starten:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -137,7 +138,7 @@ De volgende informatie wordt weergegeven:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** dat heeft in alle gevallen alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De Adobe Campaign-server definieert een technische aanmeldingsnaam **internal** dat heeft alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
 Meer informatie in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Workflow voor het opschonen van databases
 description: Leer hoe verouderde gegevens automatisch worden opgeschoond
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2830'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ De **[!UICONTROL Database cleanup]** via de **[!UICONTROL Administration > Produ
 
 ## Configuratie {#configuration}
 
-De database wordt op twee niveaus opgeschoond: in de werkstroomplanner en in de plaatsingstovenaar.
+De database wordt op twee niveaus opgeschoond: in de workflowplanner en in de implementatietovenaar.
 
 ### Workflowplanner {#the-scheduler}
 
@@ -45,15 +46,15 @@ Standaard worden de **[!UICONTROL Database cleanup]** de workflow is geconfigure
 
 >[!IMPORTANT]
 >
->Om **[!UICONTROL Database cleanup]** werkschema om bij de datum en de tijd te beginnen die in de planner wordt bepaald, moet de werkschemamotor (wfserver) worden begonnen.
+>Om de **[!UICONTROL Database cleanup]** werkschema om bij de datum en de tijd te beginnen die in de planner wordt bepaald, moet de werkschemamotor (wfserver) worden begonnen.
 
 ### Implementatiewizard {#deployment-wizard}
 
-De **[!UICONTROL Deployment wizard]**, toegankelijk via de **[!UICONTROL Tools > Advanced]** , kunt u configureren hoe lang gegevens worden opgeslagen. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
+De **[!UICONTROL Deployment wizard]**, toegankelijk via de **[!UICONTROL Tools > Advanced]** , kunt u configureren voor hoe lang gegevens worden opgeslagen. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
-De velden van de **[!UICONTROL Purge of data]** vallen samen met de volgende opties. Deze worden gebruikt door sommige van de taken die worden uitgevoerd door de **[!UICONTROL Database cleanup]** workflow:
+De velden van de **[!UICONTROL Purge of data]** vallen samen met de volgende opties. Deze worden gebruikt door sommige van de taken die door **[!UICONTROL Database cleanup]** workflow:
 
 * Geconsolideerde reeksspatiëring: **NmsCleanup_TrackingStatePurgeDelay** (zie [Opschonen van trackinglogboeken](#cleanup-of-tracking-logs))
 * Leveringslogboeken: **NmsCleanup_BroadLogPurgeDelay** (zie [Opschonen van leveringslogboeken](#cleanup-of-delivery-logs))
@@ -63,20 +64,20 @@ De velden van de **[!UICONTROL Purge of data]** vallen samen met de volgende opt
 * Bezoekersprofielen: **NmsCleanup_VisitorPurgeDelay** (zie [Opschonen van bezoekers](#cleanup-of-visitors))
 * Voorstellen voorstellen: **NmsCleanup_PropositionPurgeDelay** (zie [Opschonen van voorstellen](#cleanup-of-propositions))
 
-   >[!NOTE]
-   >
-   >De **[!UICONTROL Offer propositions]** veld is alleen beschikbaar als de **Interactie** is geïnstalleerd.
+  >[!NOTE]
+  >
+  >De **[!UICONTROL Offer propositions]** veld is alleen beschikbaar als de **Interactie** is geïnstalleerd.
 
 * Gebeurtenissen: **NmsCleanup_EventPurgeDelay** (zie [Verlopen gebeurtenissen wissen](#cleansing-expired-events))
 * Gearchiveerde gebeurtenissen: **NmsCleanup_EventHistoPurgeDelay** (zie [Verlopen gebeurtenissen wissen](#cleansing-expired-events))
 
-   >[!NOTE]
-   >
-   >De **[!UICONTROL Events]** en **[!UICONTROL Archived events]** velden zijn alleen beschikbaar als de **Berichtencentrum** is geïnstalleerd.
+  >[!NOTE]
+  >
+  >De **[!UICONTROL Events]** en **[!UICONTROL Archived events]** velden zijn alleen beschikbaar als de **Berichtencentrum** is geïnstalleerd.
 
 * Audittrail: **XtkCleanup_AuditTrailPurgeDelay** (zie [Reiniging van audittrail](#cleanup-of-audit-trail))
 
-Alle taken die door **[!UICONTROL Database cleanup]** wordt in de volgende sectie beschreven.
+Alle taken uitgevoerd door de **[!UICONTROL Database cleanup]** wordt in de volgende sectie beschreven.
 
 ## Taken die worden uitgevoerd door de workflow voor het opschonen van databases {#tasks-carried-out-by-the-database-cleanup-workflow}
 
@@ -86,7 +87,7 @@ Op de datum en tijd die in de werkstroomplanner worden bepaald (verwijs naar [De
 >
 >Als een van deze taken mislukt, worden de volgende niet uitgevoerd.
 >
->SQL-query&#39;s met een **LIMIET** kenmerk wordt herhaaldelijk uitgevoerd totdat alle informatie is verwerkt.
+>SQL-query&#39;s met **LIMIET** kenmerk wordt herhaaldelijk uitgevoerd totdat alle informatie is verwerkt.
 
 
 ### Lijsten om opschoonbewerking te verwijderen {#lists-to-delete-cleanup}
@@ -132,36 +133,36 @@ Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
    * In de uitsluitingstabel van de levering (**NmsDlvExclusion**), wordt de volgende query gebruikt:
 
-      ```sql
-      DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
+     ```
 
-      waar **$(l)** is de identificatiecode van de levering.
+     waar **$(l)** is de identificatiecode van de levering.
 
    * In de coupontabel (**NmsCouponValue**), wordt de volgende zoekopdracht gebruikt (met massale schrappingen):
 
-      ```sql
-      DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
-      ```
+     ```sql
+     DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
+     ```
 
-      waar `$(l)` is de identificatiecode van de levering.
+     waar `$(l)` is de identificatiecode van de levering.
 
    * In de lijsten van het leveringslogboek (**NmsBroadlogXxx**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records.
    * In de tabellen met voorstellen (**NmsPropositionXxx**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records.
    * In de volgende logtabellen (**NmsTrackinglogXxx**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records.
    * In de tabel met het leveringsfragment (**NmsDeliveryPart**), worden massale verwijderingen uitgevoerd in partijen van 500.000 records. Deze lijst bevat verpersoonlijkingsinformatie over de resterende te leveren berichten.
    * In de tabel met gegevensfragmenten op de spiegelpagina (**NmsMirrorPageInfo**) worden massavernietigingen uitgevoerd in partijen van 20.000 records voor verlopen leveringsonderdelen en voor afgewerkte of geannuleerde onderdelen. Deze lijst bevat verpersoonlijkingsinformatie over alle berichten die voor het produceren van spiegelpagina&#39;s worden gebruikt.
-   * In de tabel met zoekopdrachten op de spiegelpagina (**NmsMirrorPageSearch**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in wordt opgeslagen **NmsMirrorPageInfo** tabel.
+   * In de zoektabel met de spiegelpagina (**NmsMirrorPageSearch**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in wordt opgeslagen **NmsMirrorPageInfo** tabel.
    * In de logboeklijst van het partijproces (**XtkJobLog**), worden massale verwijderingen uitgevoerd in partijen van 20.000 records. Deze tabel bevat het logboek met te verwijderen leveringen.
    * In de tabel URL van levering (**NmsTrackingUrl**), wordt de volgende query gebruikt:
 
-      ```sql
-      DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
+     ```
 
-      waar `$(l)` is de identificatiecode van de levering.
+     waar `$(l)` is de identificatiecode van de levering.
 
-      Deze tabel bevat de URL&#39;s in de te verwijderen items, zodat deze kunnen worden bijgehouden.
+     Deze tabel bevat de URL&#39;s in de te verwijderen items, zodat deze kunnen worden bijgehouden.
 
 1. De levering wordt geschrapt uit de leveringstabel (**NmsDelivery**):
 
@@ -189,7 +190,7 @@ De **[!UICONTROL Database cleanup]** worden ook leveringen op de server(s) voor 
 
 Met deze taak worden leveringen gestopt waarvan de geldigheidsperiode is verlopen.
 
-1. De **[!UICONTROL Database cleanup]** de workflow maakt een lijst met verlopen leveringen. Deze lijst bevat alle verlopen leveringen met een andere status dan **[!UICONTROL Finished]** en onlangs stopte met leveringen met meer dan 10.000 niet-verwerkte berichten. De volgende query wordt gebruikt:
+1. De **[!UICONTROL Database cleanup]** de workflow maakt een lijst met leveringen die zijn verlopen. Deze lijst bevat alle verlopen leveringen met een andere status dan **[!UICONTROL Finished]** en onlangs stopte met leveringen met meer dan 10.000 niet-verwerkte berichten. De volgende query wordt gebruikt:
 
    ```sql
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
@@ -352,7 +353,7 @@ Met deze taak wist u elke werkstroominstantie met de bijbehorende id (**lWorkflo
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-1. Vervolgens worden alle tabellen die worden gebruikt door een instantie van een werkstroom die in behandeling is, uitgesloten. De lijst met actieve workflows wordt hersteld met behulp van de volgende query:
+1. Vervolgens worden alle tabellen die worden gebruikt door een instantie in de wachtrij, uitgesloten. De lijst met actieve workflows wordt hersteld met behulp van de volgende query:
 
    ```sql
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
@@ -369,7 +370,7 @@ Met deze taak wist u elke werkstroominstantie met de bijbehorende id (**lWorkflo
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId IN ($(strCondition))
    ```
 
-   waar `$(strcondition)` is de lijst met tabellen die overeenkomen met de **wkfhisto%** masker.
+   waar `$(strcondition)` is de lijst met tabellen die overeenkomen met **wkfhisto%** masker.
 
 1. De overige tabellen worden verwijderd met de volgende query:
 
@@ -401,7 +402,7 @@ Met deze taak verwijdert u overbodige records uit de bezoekerstabel door middel 
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
-waar `$(tsDate)` is de huidige serverdatum, waarvan wij de periode aftrekken die voor wordt bepaald **NmsCleanup_VisitorPurgeDelay** optie.
+waar `$(tsDate)` is de huidige serverdatum, waarvan wij de periode aftrekken die voor wordt bepaald **NmsCleanup_VisitorPurgeDelay** -optie.
 
 ### Opruiming van NPAI {#cleanup-of-npai}
 
@@ -411,7 +412,7 @@ Met deze taak kunt u records verwijderen die overeenkomen met geldige adressen u
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=2 AND tsLastModified < $(tsDate1) AND tsLastModified >= $(tsDate2) LIMIT 5000)
 ```
 
-waar `status 2` komt overeen met de **[!UICONTROL Valid]** status, `$(tsDate1)` de huidige serverdatum is, en `$(tsDate2)` komt overeen met de **NmsCleanup_LastCleanup** optie.
+waar `status 2` komt overeen met de **[!UICONTROL Valid]** status, `$(tsDate1)` de huidige serverdatum is, en `$(tsDate2)` komt overeen met de **NmsCleanup_LastCleanup** -optie.
 
 ### Opschonen van abonnementen {#cleanup-of-subscriptions-}
 
@@ -437,7 +438,7 @@ Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden 
    DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
-   waar `$(tsDate)` is de huidige serverdatum waarvan we de periode aftrekken die is gedefinieerd voor de **NmsCleanup_TrackingLogPurgeDelay** optie.
+   waar `$(tsDate)` is de huidige serverdatum waarvan we de periode aftrekken die is gedefinieerd voor de **NmsCleanup_TrackingLogPurgeDelay** -optie.
 
 1. De tabel met volgstatistieken wordt gewist door middel van massale verwijdering. De volgende query wordt gebruikt:
 
@@ -445,13 +446,13 @@ Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden 
    DELETE FROM NmsTrackingStats WHERE iTrackingStatsId IN (SELECT iTrackingStatsId FROM NmsTrackingStats WHERE tsStart < $(tsDate) LIMIT 5000) 
    ```
 
-   waar `$(tsDate)` is de huidige serverdatum waarvan we de periode aftrekken die is gedefinieerd voor de **NmsCleanup_TrackingStatePurgeDelay** optie.
+   waar `$(tsDate)` is de huidige serverdatum waarvan we de periode aftrekken die is gedefinieerd voor de **NmsCleanup_TrackingStatePurgeDelay** -optie.
 
 ### Opschonen van leveringslogboeken {#cleanup-of-delivery-logs}
 
 Met deze taak kunt u de leveringslogboeken die in verschillende tabellen zijn opgeslagen, leegmaken.
 
-1. Hiertoe wordt de lijst van schema&#39;s van het leveringslogboek teruggekregen gebruikend de volgende vraag:
+1. Voor dit doel, wordt de lijst van de schema&#39;s van het leveringslogboek teruggekregen gebruikend de volgende vraag:
 
    ```sql
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
@@ -464,9 +465,9 @@ Met deze taak kunt u de leveringslogboeken die in verschillende tabellen zijn op
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   waar `$(tableName)` de naam is van elke tabel in de lijst van schema&#39;s, en `$(option)` is de datum die is gedefinieerd voor de **NmsCleanup_BroadLogPurgeDelay** (raadpleeg [Implementatiewizard](#deployment-wizard)).
+   waar `$(tableName)` de naam is van elke tabel in de lijst van schema&#39;s, en `$(option)` is de datum die voor **NmsCleanup_BroadLogPurgeDelay** (raadpleeg [Implementatiewizard](#deployment-wizard)).
 
-1. Tot slot controleert de werkstroom of **NmsProviderMsgId** de tabel bestaat. Als dat het geval is, worden alle verouderde gegevens verwijderd met de volgende query:
+1. Tot slot controleert de werkstroom of **NmsProviderMsgId** bestaat. Als dat het geval is, worden alle verouderde gegevens verwijderd met de volgende query:
 
    ```sql
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
@@ -491,7 +492,7 @@ Het totale aantal fouten in de **NmsEmailErrorStat** tabel, tussen de begin- en 
 SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)
 ```
 
-waar `$end` en `$start` Dit zijn de eerder gedefinieerde begin- en einddatum.
+waar `$end` en `$start` Dit zijn de begin- en einddatum die eerder zijn gedefinieerd.
 
 Als het totaal groter is dan 0:
 
@@ -540,7 +541,7 @@ De volgende query wordt gebruikt:
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Met deze query verwijdert u alle regels zonder een gekoppelde record in het dialoogvenster **NmsEmailErrorStat** tabel **NmsMxDomain** tabel.
+Met deze query worden alle regels zonder een gekoppelde record uit de **NmsEmailErrorStat** tabel **NmsMxDomain** tabel.
 
 ### Opschonen van voorstellen {#cleanup-of-propositions}
 
@@ -552,7 +553,7 @@ De lijst met voorstellingstabellen wordt teruggewonnen en de massa-schrapping wo
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-waar `$(option)` is de datum die is gedefinieerd voor de **NmsCleanup_PropositionPurgeDelay** (raadpleeg [Implementatiewizard](#deployment-wizard)).
+waar `$(option)` is de datum die voor **NmsCleanup_PropositionPurgeDelay** (raadpleeg [Implementatiewizard](#deployment-wizard)).
 
 ### Opschonen van simulatietabellen {#cleanup-of-simulation-tables}
 
@@ -604,7 +605,7 @@ Als de waarde van de optie 2 is, zal dit de opslaganalyse op uitgebreide wijze (
 
 Met deze taak verwijdert u alle abonnementen die betrekking hebben op verwijderde services of mobiele toepassingen.
 
-Om de lijst van breedbandschema&#39;s terug te krijgen, wordt de volgende vraag gebruikt:
+Om de lijst van uitzendingsschema&#39;s terug te krijgen, wordt de volgende vraag gebruikt:
 
 ```sql
 SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
@@ -612,7 +613,7 @@ SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema I
 
 De taak herstelt dan de namen van de lijsten verbonden aan **appSubscription** Deze tabellen koppelen en verwijderen.
 
-Deze opschoonworkflow verwijdert ook alle items waarvoor de optie = 1 is uitgeschakeld en die niet zijn bijgewerkt sinds de tijd die is ingesteld in het dialoogvenster **NmsCleanup_AppSubscriptionRcpPurgeDelay** optie.
+Deze opschoonworkflow verwijdert ook alle items waarvoor de optie = 1 is uitgeschakeld en die niet zijn bijgewerkt sinds de tijd die is ingesteld in het dialoogvenster **NmsCleanup_AppSubscriptionRcpPurgeDelay** -optie.
 
 ### Sessiegegevens wissen {#cleansing-session-information}
 
@@ -626,6 +627,6 @@ DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate)
 
 Deze taak schoonmaakt de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
 
-### Reacties {#cleansing-reactions}
+### Reacties op schoonmaken {#cleansing-reactions}
 
 Hiermee worden de reacties gewist (tabel **NmsRemaMatchRcp**) waarin de hypothesen zelf zijn geschrapt.

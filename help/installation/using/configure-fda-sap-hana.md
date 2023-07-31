@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot SAP HANA configureren
 description: Leer hoe te om toegang tot SAP HANA in FDA te vormen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -32,33 +33,33 @@ Voor verbinding met een externe database van een SAP HANA in FDA zijn bepaalde a
    * **hdb_client_linux.tgz** voor Linux. Nadat u de installatie hebt beëindigd, start u de hdbinst-opdracht en volgt u de instructies om de installatie van de stuurprogramma&#39;s te voltooien.
    * **hdb_client_windows.zip** voor Windows. Pak het bestand uit en start het uitvoerbare bestand: **hdbinst.exe**. Volg de aanwijzingen van de wizard om de installatie van de stuurprogramma&#39;s te voltooien.
 
-1. Configureer het ODBC-stuurprogramma. De configuratie kan in de standaarddossiers worden uitgevoerd: /etc/odbc.ini voor algemene parameters en /etc/odbcinst.ini voor het declareren van stuurprogramma&#39;s.
+1. Vorm het ODBC bestuurder. De configuratie kan worden uitgevoerd in de standaardbestanden: /etc/odbc.ini voor algemene parameters en /etc/odbcinst.ini voor het declareren van stuurprogramma&#39;s.
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      
-      [HDB]
-      Driver=HDBODBC
-      servernode=localhost:39013 (this value depend of your server)
-      User:SYSTEM
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     
+     [HDB]
+     Driver=HDBODBC
+     servernode=localhost:39013 (this value depend of your server)
+     User:SYSTEM
+     ```
 
-      &quot;InstallDir&quot; komt overeen met de locatie van de **odbcinst.ini** bestand.
+     &quot;InstallDir&quot; komt overeen met de locatie van de **odbcinst.ini** bestand.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [HDBODBC]
-      Description = "SmartCloudPT HANA"
-      Driver = /usr/sap/hdbclient/libodbcHDB.so
-      ```
+     ```
+     [HDBODBC]
+     Description = "SmartCloudPT HANA"
+     Driver = /usr/sap/hdbclient/libodbcHDB.so
+     ```
 
 1. Geef de omgevingsvariabelen van de Adobe Campaign-server op:
 
-   * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
+   * **LD_LIBRARY_PATH**: De koppeling moet standaard de koppeling naar uw SAP Hana-client (/usr/sap/hdbclient/libodbcHDB.so) bevatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
 ## Externe rekening van SAP HANA{#sap-external}
@@ -69,7 +70,7 @@ Met de externe account van het SAP HANA kunt u uw Campagne-instantie verbinden m
 
 1. Klikken **[!UICONTROL New]** en selecteert u **[!UICONTROL External database]** als **[!UICONTROL Type]**.
 
-1. Om het **[!UICONTROL SAP Hana]** externe account, moet u opgeven:
+1. Om te vormen **[!UICONTROL SAP Hana]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: SAP Hana
 
@@ -77,4 +78,4 @@ Met de externe account van het SAP HANA kunt u uw Campagne-instantie verbinden m
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
-   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+   * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount

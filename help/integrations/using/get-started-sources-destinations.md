@@ -2,13 +2,14 @@
 product: campaign
 title: Aan de slag met bronnen en bestemmingen
 description: Meer informatie over Adobe Experience Platform-bronnen en -doelen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 15%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 15%
 
 
 
-## Bronnen en doelen
+## Informatie over bronnen en doelen
 
 Met Adobe Experience Platform kunt u gegevens delen tussen Campaign Classic en Adobe Real-time Customer Data Platform (RTCDP). Op deze manier kunt u Adobe Experience Platform-doelgroepen in uw campagneworkflows gebruiken en vervolgens gegevens naar Adobe Real-time Customer Data Platform sturen die betrekking hebben op deze doelgroepen, zoals verzenden, openen en klikken.
 
@@ -36,7 +37,7 @@ Raadpleeg de volgende pagina&#39;s voor een gedetailleerder overzicht van Adobe 
 
 ## Connect Campaign Classic met Adobe Experience Platform
 
-Als u gegevens wilt delen tussen Adobe Experience Platform en Campaign Classic, moet u eerst Adobe Campaign verbinden als een **Doel** en sluit uw AWS S3- of Azure-blob-opslaglocatie aan als een **Bron** Adobe ervaren Platform.
+Als u gegevens wilt delen tussen Adobe Experience Platform en Campaign Classic, moet u eerst Adobe Campaign verbinden als een **Doel** en sluit uw AWS S3- of Azure-blob-opslaglocatie aan als **Bron** Adobe ervaren Platform.
 
 Zodra de schakelaars zijn gevormd, kunt u opstelling een gegevensinvoer of uitvoer naar Campaign Classic gebruikend werkschema&#39;s.
 

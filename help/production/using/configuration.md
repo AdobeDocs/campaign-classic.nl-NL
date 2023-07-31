@@ -2,13 +2,14 @@
 product: campaign
 title: Aanvullende configuratie
 description: Configuratie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 1%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -44,4 +45,4 @@ Elke exploitant moet met een streek worden verbonden om aan een geval te login e
 
 >[!NOTE]
 >
->Voor meer bij het vormen van veiligheidsstreken, verwijs naar [deze sectie](../../installation/using/security-zones.md).
+>Raadpleeg voor meer informatie over het configureren van beveiligingszones [deze sectie](../../installation/using/security-zones.md).

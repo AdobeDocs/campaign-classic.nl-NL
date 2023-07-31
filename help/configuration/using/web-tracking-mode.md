@@ -2,12 +2,13 @@
 product: campaign
 title: Webtrackingmodus
 description: Leer hoe u de webtraceringsmodus selecteert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 0%
+source-wordcount: '688'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +30,7 @@ Elke modus heeft specifieke kenmerken. De &quot;permanente&quot;het volgen van h
 >
 >Op elk gewenst moment kan de standaardmodus worden gewijzigd in de wizard voor de implementatie van instanties.
 
-Als u de opdracht **permanent web** of **anoniem** In de volgende modus moet u een index toevoegen aan de kolom &quot;sourceID&quot; (uuid230) in de volgende tabellen (trackingLogXXX):
+Let op: als u de **permanent web** of **anoniem** In de volgende modus moet u een index toevoegen aan de kolom &quot;sourceID&quot; (uuid230) in de volgende tabellen (trackingLogXXX):
 
 1. Identificeer de volgende tabel(len) waarop permanente tracering betrekking heeft.
 1. Breid de schema&#39;s uit die deze lijsten aanpassen door de volgende lijnen toe te voegen:

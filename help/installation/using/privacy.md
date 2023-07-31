@@ -2,12 +2,12 @@
 product: campaign
 title: Personalisatie en privacy
 description: Meer informatie over best practices op het gebied van beveiliging voor privacy en personalisatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: URL Personalization, Privacy
+feature: Installation, Privacy, Privacy Tools, URL Personalization
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '852'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 
 
-## URL-personalisatie {#url-personalization}
+## URL aanpassen {#url-personalization}
 
-Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. De volgende voorbeelden mogen nooit in alle URL-kenmerken worden gebruikt &lt;`a href="">` of `<img src="">`:
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. De volgende voorbeelden mogen nooit in alle URL-kenmerken worden gebruikt &lt;`a href="">` of `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -48,7 +48,7 @@ Voorbeeld:
 
 ### URL-handtekening
 
-Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd voor het bijhouden van koppelingen in e-mails. Het is beschikbaar vanaf de builds 19.1.4 (9032@3a9dc9c) en 20.2. Deze functie is standaard ingeschakeld.
+Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd voor het bijhouden van koppelingen in e-mails. De build is beschikbaar vanaf 19.1.4 (9032@3a9dc9c) en 20.2. Deze functie is standaard ingeschakeld.
 
 >[!NOTE]
 >
@@ -72,21 +72,21 @@ Anders kunnen enkele van deze problemen optreden:
 
 Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert u de volgende stappen uit op alle Campagneservers tegelijk:
 
-1. In het configuratiebestand van de server (`serverConf.xml`), wijzigt u de **blockRedirectForUnsignedTrackingLink** optie voor **true**.
-1. Start de `nlserver` service.
+1. In het serverconfiguratiebestand (`serverConf.xml`), wijzigt u **blockRedirectForUnsignedTrackingLink** optie voor **true**.
+1. De opdracht opnieuw starten `nlserver` service.
 1. Op de `tracking` server, start de `web` server (apache2 op Debian, httpd op CentOS/RedHat, IIS in Windows).
 
 Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
-1. In het configuratiebestand van de server (`serverConf.xml`), wijzigen **signEmailLinks** optie, naar **true**.
-1. Start de **nlserver** service.
+1. In het serverconfiguratiebestand (`serverConf.xml`), wijzigen **signEmailLinks** optie, naar **true**.
+1. De opdracht opnieuw starten **nlserver** service.
 1. Op de `tracking` server, start de `web` server (apache2 op Debian, httpd op CentOS/RedHat, IIS in Windows).
 
 ## Gegevensbeperking
 
 U moet ervoor zorgen dat de gecodeerde wachtwoorden niet toegankelijk zijn voor gebruikers met lage bevoegdheden. Hiervoor beperkt u alleen de toegang tot wachtwoordvelden of tot de gehele entiteit (u hebt een build >= 8770 nodig).
 
-Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account is toegankelijk via de interface voor alle gebruikers. [Meer informatie](../../configuration/using/restricting-pii-view.md).
+Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account is wel toegankelijk via de interface voor alle gebruikers. [Meer informatie](../../configuration/using/restricting-pii-view.md).
 
 Volg onderstaande stappen om dit te doen:
 

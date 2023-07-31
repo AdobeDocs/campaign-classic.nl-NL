@@ -2,14 +2,15 @@
 product: campaign
 title: Power Booster en Power Cluster
 description: Power Booster en Power Cluster
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '403'
 ht-degree: 6%
 
 ---
@@ -24,11 +25,11 @@ Adobe Campaign biedt u twee sets vooraf verpakte architecturale opties voor het 
 
 * **Extra voeding**
 
-   Deze optie biedt ondersteuning voor één extra uitvoeringsinstantie die is losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie. Speciale uitvoeringsinstanties kunnen op afstand of door een derde worden gehost. Wanneer geïmplementeerd, worden e-mailuitvoering, bijhouden, spiegel- en stuiterberichten onafhankelijk van de centrale toepassingsfuncties afgehandeld.
+  Deze optie biedt ondersteuning voor één extra uitvoeringsinstantie die is losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie. Speciale uitvoeringsinstanties kunnen op afstand of door een derde worden gehost. Wanneer geïmplementeerd, worden e-mailuitvoering, bijhouden, spiegel- en stuiterberichten onafhankelijk van de centrale toepassingsfuncties afgehandeld.
 
 * **Power Cluster**
 
-   Deze optie biedt ondersteuning voor 2 tot N geclusterde uitvoeringsinstanties die zijn losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie met betrekking tot een bepaalde toepassing. Clusters kunnen op afstand, in gedistribueerde implementaties en door derden worden gehost. Naast de voordelen van procesisolatie, maakt de Adobe Campaign Power Cluster-optie redundantie mogelijk en schaalt deze strategieën uit met behulp van gewone hardware voor een vereenvoudigde ontwikkeling van SLA of prestaties.
+  Deze optie biedt ondersteuning voor 2 tot N geclusterde uitvoeringsinstanties die zijn losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie met betrekking tot een bepaalde toepassing. Clusters kunnen op afstand, in gedistribueerde implementaties en door derden worden gehost. Naast de voordelen van procesisolatie, maakt de Adobe Campaign Power Cluster-optie redundantie mogelijk en schaalt deze strategieën uit met behulp van gewone hardware voor een vereenvoudigde ontwikkeling van SLA of prestaties.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -78,7 +79,7 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
    <td> Implementatiesjabloon<br /> </td> 
    <td> Alles op één site (kan zich op locatie bevinden of in de cloud)<br /> </td> 
    <td> Marketing op locatie met uitvoering in de cloud mogelijk<br /> </td> 
-   <td> marketing op locatie met uitvoering in de cloud; uitvoering in verschillende geo ' s mogelijk<br /> </td> 
+   <td> Marketing op locatie met uitvoering in de cloud; uitvoering in verschillende geopos mogelijk<br /> </td> 
   </tr> 
  </tbody> 
 </table>

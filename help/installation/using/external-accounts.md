@@ -2,14 +2,15 @@
 product: campaign
 title: Externe accounts
 description: Meer informatie over het maken van externe accounts
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Application Settings, External Account
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1837'
 ht-degree: 7%
 
 ---
@@ -40,7 +41,7 @@ Voer de onderstaande stappen uit om een nieuwe externe account te maken. Gedetai
 
    De benodigde informatie wordt meestal verstrekt door de provider van de server waarmee u verbinding maakt.
 
-1. Controleer de **[!UICONTROL Enabled]** om de verbinding te activeren.
+1. Controleer de **[!UICONTROL Enabled]** activeren.
 1. Klik op **[!UICONTROL Save]**.
 
 De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts.
@@ -55,7 +56,7 @@ Alle servers die voor POP3 toegang worden gevormd kunnen worden gebruikt om teru
 
 ![](assets/ext_account_6.png)
 
-Om het **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening:
+Om te vormen **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening:
 
 * **[!UICONTROL Server]**
 
@@ -63,7 +64,7 @@ Om het **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening:
 
 * **[!UICONTROL Port]**
 
-  POP3-poortnummer van verbinding. De standaardpoort is 110.
+  POP3-poortnummer van verbinding. De standaardpoort is 10.
 
 * **[!UICONTROL Account]**
 
@@ -97,7 +98,7 @@ Een POP3 extern configureren met **Microsoft OAuth 2.0**, controleert u de **[!U
 
 * **[!UICONTROL Azure Client secret]**
 
-  Identiteitskaart van het geheim van de cliënt kan in worden gevonden **Clientgegevens** uit de **Certificaten en geheimen** in het Azure-portaal.
+  Identiteitskaart van het geheim cliënt kan in worden gevonden **Clientgeheimen** kolom van de **Certificaten en geheimen** in het Azure-portaal.
 
 * **[!UICONTROL Azure Redirect URL]**
 
@@ -130,7 +131,7 @@ Als klant op locatie/hybride, kunt u nieuwe verpletterende externe rekeningen, o
 
 * U kunt een **Midden-sourcing**, **Extern** routering, of **Bulk** levering die type verplettert.
 
-* Voor **Bulk** en **Midden-sourcing** de leveringswijzen, kunt u uw brandingparameters in specificeren **Branding** tab. Deze parameters worden gebruikt om de [standaardparameters](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL van pagina spiegelen** en **Foutadres** met specifieke instellingen voor uw merk.
+* Voor **Bulk** en **Midden-sourcing** de leveringswijzen, kunt u uw brandingparameters specificeren in **Branding** tab. Deze parameters worden gebruikt om de [standaardparameters](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL van pagina spiegelen** en **Foutadres** met specifieke instellingen voor uw merk.
 
   ![](assets/ext-account-branding.png)
 
@@ -186,7 +187,7 @@ Hiertoe geeft u in deze externe account het adres en de referenties op waarmee d
 
   Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
 
-Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar dit [page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
+Als u wilt weten waar u deze referenties kunt vinden, raadpleegt u deze [page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
 ### SFTP {#sftp-external-account}
 
@@ -204,7 +205,7 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 
 * **[!UICONTROL Account]**
 
-  Accountnaam gebruikt om verbinding te maken met de SFTP-server.
+  Accountnaam gebruikt voor verbinding met de SFTP-server.
 
 * **[!UICONTROL Password]**
 
@@ -220,7 +221,7 @@ SSH-toetsen toevoegen aan Windows:
 
 ### Externe database (FDA) {#external-database-external-account}
 
-Gebruik de **Externe database** type external account to connect to external an database. Meer informatie over de FDA-optie (Federated Data Access) vindt u in [deze sectie](../../installation/using/about-fda.md).
+Gebruik de **Externe database** type external account to connect to external an database. Meer informatie over FDA (Federated Data Access) in [deze sectie](../../installation/using/about-fda.md).
 
 Externe databases die compatibel zijn met Campagne worden vermeld in het dialoogvenster [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
 
@@ -228,16 +229,16 @@ Externe databases die compatibel zijn met Campagne worden vermeld in het dialoog
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Toegang configureren tot [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Toegang configureren tot [Vertica analytics](../../installation/using/configure-fda-vertica.md)
 * Toegang configureren tot [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Toegang configureren tot [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Toegang configureren tot [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Toegang configureren tot [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Toegang configureren tot [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Toegang configureren tot [Oracle](../../installation/using/configure-fda-oracle.md)
 * Toegang configureren tot [Netezza](../../installation/using/configure-fda-netezza.md)
 * Toegang configureren tot [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Toegang configureren tot [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Toegang configureren tot [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Toegang configureren tot [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Toegang configureren tot [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
@@ -285,7 +286,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet
 
   Naam van je Adobe Experience Cloud Tenant.
 
-Voor meer informatie over deze configuratie, verwijs naar [deze pagina](../../integrations/using/configuring-ims.md).
+Raadpleeg voor meer informatie over deze configuratie [deze pagina](../../integrations/using/configuring-ims.md).
 
 ## Web Analytics {#web-analytics-external-account}
 
@@ -325,7 +326,7 @@ Raadpleeg deze [sectie](../../integrations/using/about-adobe-experience-manager.
 
 De **[!UICONTROL Microsoft Dynamics CRM]** Met een externe account kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
-Meer informatie over de Microsoft Dynamics CRM-connector in de campagne vindt u in deze [page](../../platform/using/crm-ms-dynamics.md).
+Meer informatie over de Microsoft Dynamics CRM-connector in de campagne [page](../../platform/using/crm-ms-dynamics.md).
 
 Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Password credentials]** de authentificatie, moet u de volgende details verstrekken:
 
@@ -333,7 +334,7 @@ Met **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Password credent
 
 * **[!UICONTROL Account]**
 
-  Account gebruikt om u aan te melden bij Microsoft CRM.
+  Account gebruikt voor aanmelden bij Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
@@ -439,7 +440,7 @@ Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
 
 * **[!UICONTROL AWS Region]**
 
-  Raadpleeg de volgende secties voor meer informatie over AWS-regio [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Raadpleeg deze voor meer informatie over AWS-regio [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * De **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de gecodeerde modus van S3.
 
@@ -447,11 +448,11 @@ Om te leren waar te om toegangs belangrijkste identiteitskaart en geheime toegan
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-De **Azure Blob-opslag** een externe account kan worden gebruikt om gegevens naar Adobe Campaign te importeren of te exporteren met behulp van een **[!UICONTROL Transfer file]** workflowactiviteit. Raadpleeg deze [sectie](../../workflow/using/file-transfer.md) voor meer informatie.
+De **Azure Blob-opslag** een externe account kan worden gebruikt om gegevens te importeren of naar Adobe Campaign te exporteren met behulp van een **[!UICONTROL Transfer file]** workflowactiviteit. Raadpleeg deze [sectie](../../workflow/using/file-transfer.md) voor meer informatie.
 
 ![](assets/ext_account_23.png)
 
-Om het **[!UICONTROL Azure external account]** om met Adobe Campaign te werken, moet u de volgende details verstrekken:
+Om te vormen **[!UICONTROL Azure external account]** om met Adobe Campaign te werken, moet u de volgende details verstrekken:
 
 * **[!UICONTROL Server]**
 

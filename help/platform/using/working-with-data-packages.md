@@ -2,16 +2,17 @@
 product: campaign
 title: Werken met datapakketten
 description: Werken met datapakketten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management, Package Export/Import
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 2%
+source-wordcount: '2454'
+ht-degree: 3%
 
 ---
 
@@ -29,20 +30,20 @@ Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie exporteren 
 
 ### Typen pakketten {#types-of-packages}
 
-Er zijn drie soorten exporteerbare pakketten: gebruikerspakketten, platformpakketten en beheerpakketten.
+Er zijn drie typen exporteerbare pakketten: gebruikerspakketten, platformpakketten en beheerpakketten.
 
 * **Gebruikerspakket**: hiermee kunt u de lijst met te exporteren entiteiten selecteren. Dit type pakket beheert afhankelijkheden en controleert fouten.
-* **Platform**: het omvat alle toegevoegde technische middelen ( niet - standaard ) : schema&#39;s, JavaScript-code, enz.
+* **Platform**: het bevat alle toegevoegde technische bronnen (niet-standaard): schema&#39;s, JavaScript-code, enz.
 
-   ![](assets/ncs_datapackage_package_platform.png)
+  ![](assets/ncs_datapackage_package_platform.png)
 
-* **Admin-pakket**: het omvat alle toegevoegde malplaatjes en bedrijfsvoorwerpen (niet norm): sjablonen, bibliotheken, enz.
+* **Beheerpakket**: het bevat alle toegevoegde sjablonen en bedrijfsobjecten (niet standaard): sjablonen, bibliotheken, enz.
 
-   ![](assets/ncs_datapackage_package_admin.png)
+  ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
->De **platform** en **beheerder** typen bevatten een vooraf gedefinieerde lijst met te exporteren entiteiten. Elke entiteit is verbonden met het filtreren voorwaarden die u toelaten om de uit-van-de-doosmiddelen van het gecreeerde pakket te verwijderen.
+>De **platform** en **admin** typen bevatten een vooraf gedefinieerde lijst met te exporteren entiteiten. Elke entiteit is verbonden met het filtreren voorwaarden die u toelaten om de uit-van-de-doosmiddelen van het gecreeerde pakket te verwijderen.
 
 ## Gegevensstructuur {#data-structure}
 
@@ -68,7 +69,7 @@ Voorbeeld van gegevenspakketten:
 
 Het XML-document moet beginnen en eindigen met het **`<package>`** element. Alle **`<entities>`** elementen die volgen, verdelen de gegevens per documenttype.
 
-An **`<entities>`** element bevat de gegevens van het pakket in de indeling van het gegevensschema dat in het dialoogvenster **schema** kenmerk.
+An **`<entities>`** element bevat de gegevens van het pakket in de indeling van het gegevensschema dat is ingevoerd in het dialoogvenster **schema** kenmerk.
 
 De gegevens in een pakket mogen geen interne sleutels bevatten die niet compatibel zijn tussen databases, zoals automatisch gegenereerde toetsen (**automatische** ).
 
@@ -89,7 +90,7 @@ Een gegevenspakket kan manueel van om het even welke tekstredacteur worden samen
 
 ### Over exporteren van pakket {#about-package-export}
 
-Pakketten kunnen op drie verschillende manieren worden geëxporteerd:
+U kunt pakketten op drie verschillende manieren exporteren:
 
 * De **[!UICONTROL Package Export Wizard]** kunt u een set objecten exporteren in één pakket. Zie voor meer informatie [Een set objecten in een pakket exporteren](#exporting-a-set-of-objects-in-a-package)
 * A **één object** kan in een pakket rechtstreeks worden geëxporteerd door er met de rechtermuisknop op te klikken en **[!UICONTROL Actions > Export in a package]**.
@@ -105,7 +106,7 @@ De wizard Pakket exporteren is toegankelijk via de **[!UICONTROL Tools > Advance
 
 Voor de drie typen pakketten biedt de wizard de volgende stappen:
 
-1. Geef de entiteiten weer die u wilt exporteren op documenttype:
+1. Geef een lijst weer van de entiteiten die moeten worden geëxporteerd op documenttype:
 
    ![](assets/ncs_datapackage_export2.png)
 
@@ -158,7 +159,7 @@ Dit mechanisme wordt gedefinieerd door twee regels:
 
 #### Een campagne exporteren {#exporting-a-campaign}
 
-Hier volgt een voorbeeld van hoe u een campagne kunt exporteren. De uit te voeren marketingcampagne bevat een taak (label: &quot;MyTask&quot;) en een workflow (label: &quot;CampaignWorkflow&quot;) in een map &quot;MyWorkflow&quot; (knooppunt: Beheer / Productie / Technische workflows / Campagne processen / MyWorkflow).
+Hier volgt een voorbeeld van hoe u een campagne kunt exporteren. De marketingcampagne die geëxporteerd moet worden, bevat een taak (label: &quot;MyTask&quot;) en een workflow (label: &quot;CampaignWorkflow&quot;) in een map &quot;MyWorkflow&quot; (knooppunt: Beheer / Productie / Technische workflows / Campagne-processen / MyWorkflow).
 
 De taak en de workflow worden geëxporteerd in hetzelfde pakket als de campagne, aangezien de overeenkomende schema&#39;s worden verbonden door koppelingen met een integriteit van het type &quot;own&quot;.
 
@@ -214,11 +215,11 @@ De verbinding met een type pakket wordt bepaald in een schema met het **@pkgAdmi
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-Tot slot **@pkgStatus** kunt u de exportregels voor deze elementen of kenmerken definiëren. Afhankelijk van de waarde van het kenmerk, wordt het element of kenmerk gevonden in het geëxporteerde pakket. De drie mogelijke waarden voor dit kenmerk zijn:
+Tot slot de **@pkgStatus** kunt u de exportregels voor deze elementen of kenmerken definiëren. Afhankelijk van de waarde van het kenmerk, wordt het element of kenmerk gevonden in het geëxporteerde pakket. De drie mogelijke waarden voor dit kenmerk zijn:
 
-* **nooit**: exporteert het veld/de koppeling niet
-* **altijd**: exportkrachten voor dit gebied
-* **preCreate**: hecht zijn goedkeuring aan de oprichting van de verbonden entiteit
+* **nooit**: exporteert het veld / de koppeling niet
+* **altijd**: forceert export voor dit veld
+* **preCreate**: staat oprichting van de gekoppelde entiteit toe
 
 >[!NOTE]
 >
@@ -278,18 +279,18 @@ Pakketgeneratie kan worden geconfigureerd via de pakketdefinitie **[!UICONTROL C
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**: bevat de definitie die momenteel wordt gebruikt in de pakketdefinitie.
-* **[!UICONTROL Include an installation script]**: Hiermee kunt u een JavaScript-script toevoegen dat wordt uitgevoerd bij het importeren van het pakket. Als deze optie is geselecteerd, wordt een **[!UICONTROL Script]** wordt toegevoegd in het scherm met pakketdefinities.
+* **[!UICONTROL Include an installation script]**: hiermee kunt u een JavaScript-script toevoegen dat moet worden uitgevoerd bij het importeren van het pakket. Als deze optie is geselecteerd, wordt een **[!UICONTROL Script]** wordt toegevoegd in het scherm met pakketdefinities.
 * **[!UICONTROL Include default values]**: voegt de waarden van alle kenmerken van de entiteiten toe aan het pakket.
 
-   Deze optie is niet standaard geselecteerd om langdurige export te voorkomen. Dit betekent dat de attributen van entiteiten met standaardwaarden (&quot;lege koord&quot;, &quot;0&quot;, en &quot;vals&quot;als niet anders bepaald in het schema) niet aan het pakket zullen worden toegevoegd en daarom niet zullen worden uitgevoerd.
+  Deze optie is niet standaard geselecteerd om langdurige export te voorkomen. Dit betekent dat de attributen van entiteiten met standaardwaarden (&quot;lege koord&quot;, &quot;0&quot;, en &quot;vals&quot;als niet anders bepaald in het schema) niet aan het pakket zullen worden toegevoegd en daarom niet zullen worden uitgevoerd.
 
-   >[!CAUTION]
-   >
-   >Als u deze optie uitschakelt, worden lokale en geïmporteerde versies samengevoegd.
-   >
-   >Als de instantie waarin het pakket wordt geïmporteerd, entiteiten bevat die identiek zijn aan die van het pakket (bijvoorbeeld met dezelfde externe id), worden de kenmerken ervan niet bijgewerkt. Dit kan gebeuren als de kenmerken van de eerste instantie standaardwaarden hebben, omdat ze niet in het pakket zijn opgenomen.
-   >
-   >In dat geval selecteert u de **[!UICONTROL Include default values]** deze optie voorkomt dat versies worden samengevoegd , aangezien alle kenmerken van de eerste instantie samen met het pakket worden geëxporteerd .
+  >[!CAUTION]
+  >
+  >Als u deze optie uitschakelt, kunnen lokale en geïmporteerde versies worden samengevoegd.
+  >
+  >Als de instantie waarin het pakket wordt geïmporteerd, entiteiten bevat die identiek zijn aan die van het pakket (bijvoorbeeld met dezelfde externe id), worden de kenmerken ervan niet bijgewerkt. Dit kan gebeuren als de kenmerken van de eerste instantie standaardwaarden hebben, omdat ze niet in het pakket zijn opgenomen.
+  >
+  >In dat geval selecteert u de **[!UICONTROL Include default values]** deze optie voorkomt dat versies worden samengevoegd , aangezien alle kenmerken van de eerste instantie samen met het pakket worden geëxporteerd .
 
 ### Pakketten uit een pakketdefinitie exporteren {#exporting-packages-from-a-package-definition}
 
@@ -398,10 +399,10 @@ Een update kan niet alleen een oplossing zijn, maar ook een nieuw element van uw
 
 Nu er typen zijn gedefinieerd, moeten we een naamgevingsconventie opgeven. Adobe Campaign staat het niet toe om subfolders voor pakketspecificaties tot stand te brengen, betekenend dat de aantallen de beste oplossing voor het blijven georganiseerd zijn. Nummervoorvoegselpakketnamen. U kunt de volgende conventie gebruiken:
 
-* Entiteit: van 1 tot en met 99
-* Functie: van 100 tot en met 199
-* Campagne: van 200 tot en met 299
-* Bijwerken: 5000 tot en met 5999
+* Entiteit: van 1 tot 99
+* Te gedenken gebeurtenis: van 100 tot 199
+* Campagne: van 200 tot 299
+* Bijwerken: van 5000 tot 5999
 
 ### Pakketten {#data-packages}
 
@@ -423,7 +424,7 @@ Om het importeren te vergemakkelijken, moeten eenheidspakketten worden geordend 
 
 #### Pakket 200 {#package-200}
 
-Pakketnummer &quot;200&quot; mag niet worden gebruikt voor een specifieke campagne: dit nummer zal worden gebruikt om iets bij te werken dat alle campagnes aangaat .
+Pakketnummer &quot;200&quot; mag niet worden gebruikt voor een specifieke campagne: dit nummer wordt gebruikt om iets bij te werken dat betrekking heeft op alle campagnes.
 
 #### Pakket bijwerken {#update-package}
 
@@ -434,15 +435,15 @@ Het laatste punt betreft de nummering van updatepakketten. Het is uw pakketnumme
 
 Het updatepakket mag slechts één specifieke entiteit bevatten, zodat het gemakkelijk opnieuw kan worden gebruikt. Als u deze wilt splitsen, voegt u een nieuw nummer toe (begin vanaf 1). Er zijn geen specifieke bestelregels voor deze pakketten. Om beter te begrijpen, veronderstel dat wij een 101 eigenschap, een sociale toepassing hebben:
 * Het bevat een webApp en een externe account.
-   * Het etiket van de verpakking is: 101 - Sociale toepassing (socialApplication).
+   * Het pakketlabel is: 101 - Sociale toepassing (socialApplication).
 * Er is een fout opgetreden in de webApp.
    * De wepApp wordt gecorrigeerd.
-   * Er moet een reparatiepakket met de volgende naam worden gemaakt: 5101 - 1 - Webtoepassing voor sociale toepassingen (socialApplication_webApp).
+   * Er moet een reparatiepakket worden gemaakt met de volgende naam: 5101 - 1 - WebApp voor sociale toepassing (socialApplication_webApp).
 * Er moet een nieuwe externe rekening worden toegevoegd voor het sociale aspect.
    * Externe account wordt gemaakt.
-   * Het nieuwe pakket is: 5101 - 2 - Externe account voor sociale toepassing (socialApplication_extAccount).
+   * Het nieuwe pakket is: 5101 - 2 - Externe account voor sociale toepassingen (socialApplication_extAccount).
    * Parallel hieraan wordt het 101-pakket bijgewerkt en toegevoegd aan de externe account, maar het wordt niet geïmplementeerd.
-      ![](assets/ncs_datapackage_best-practices-1.png)
+     ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Pakketdocumentatie {#package-documentation}
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Stacktracering in Linux
 description: Stacktracering in Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 16%
 
 ---
 
@@ -26,7 +27,6 @@ A **stacktracering** vertegenwoordigt een spoor in een **kern** tekstbestand. Di
 >* A **kern** bestand heeft een naam **kern.`<num>`**.
 >* **gdb - De GNU-foutopsporing** moet op de computer zijn geïnstalleerd.
 >
-
 
 Technische ondersteuning van Adobe Campaign kan u hierom vragen **stacktracering**. Voer de volgende opdrachten in Linux in om deze te verkrijgen:
 

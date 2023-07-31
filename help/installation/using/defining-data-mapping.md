@@ -2,11 +2,12 @@
 product: campaign
 title: Externe gegevenstoewijzing definiëren
 description: Leer hoe u gegevens in een externe database kunt toewijzen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '201'
 ht-degree: 3%
 
 ---
@@ -41,4 +42,4 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klik op de knop **[!UICONTROL Save]** knop voor het maken van de toewijzing van levering: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.
+   Klik op de knop **[!UICONTROL Save]** knop om het maken van de leveringstoewijzing te starten: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.

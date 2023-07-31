@@ -2,15 +2,16 @@
 product: campaign
 title: Stappen om een query te maken
 description: Stappen om een query te maken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '853'
 ht-degree: 2%
 
 ---
@@ -41,7 +42,7 @@ Selecteer de tabel met de gegevens waarop u een query wilt uitvoeren in het dial
 
 ## Stap 2 - Kies de gegevens die u wilt extraheren {#step-2---choose-data-to-extract}
 
-In de **[!UICONTROL Data to extract]** Selecteer de gegevens die u wilt weergeven: deze velden vormen de uitvoerkolommen .
+In de **[!UICONTROL Data to extract]** Selecteer de gegevens die u wilt weergeven. Deze velden vormen de uitvoerkolommen.
 
 Selecteer bijvoorbeeld **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** en **[!UICONTROL City]**. De resultaten worden op basis van deze selectie geordend. Gebruik de blauwe pijlen rechts van het venster om de kolomvolgorde te wijzigen.
 
@@ -51,22 +52,22 @@ U kunt een expressie bewerken door er een formule in op te nemen of door een pro
 
 ![](assets/query_editor_nveau_97.png)
 
-U kunt uitvoerkolomgegevens groeperen: om dit te doen, controleer **[!UICONTROL Yes]** in de **[!UICONTROL Group]** kolom van de **[!UICONTROL Data to extract]** venster. Deze functie genereert een resultaat rond de geselecteerde groeperingsas. Een voorbeeld van een query met groepering is beschikbaar in [deze sectie](../../workflow/using/querying-delivery-information.md).
+U kunt uitvoerkolomgegevens groeperen: hiervoor controleert u **[!UICONTROL Yes]** in de **[!UICONTROL Group]** kolom van de **[!UICONTROL Data to extract]** venster. Deze functie genereert een resultaat rond de geselecteerde groeperingsas. Een voorbeeld van een query met groepering is beschikbaar in [deze sectie](../../workflow/using/querying-delivery-information.md).
 
 ![](assets/query_editor_nveau_56.png)
 
 * De **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kunt u &quot;groeperen door&quot; en selecteren wat is gegroepeerd (&quot;hebben&quot;). Deze functie is van toepassing op alle velden in de uitvoerkolom. Met deze optie kunt u bijvoorbeeld alle keuzen van een uitvoerkolom groeperen en een bepaald type informatie herstellen, zoals ontvangers tussen 35 en 50.
 
-   Raadpleeg [deze sectie](../../workflow/using/querying-using-grouping-management.md) voor meer informatie.
+  Raadpleeg [deze sectie](../../workflow/using/querying-using-grouping-management.md) voor meer informatie.
 
-* De **[!UICONTROL Remove duplicate rows (DISTINCT)]** Met deze functie kunt u identieke resultaten dedupliceren die in de uitvoerkolom zijn verkregen. Als u bijvoorbeeld een telling uitvoert door de velden Achternaam, Voornaam en E-mail te selecteren in de uitvoerkolom, worden de velden met identieke gegevens verwijderd, omdat dit betekent dat dezelfde contactpersoon meerdere malen in de database is ingevoerd: slechts één resultaat zal in aanmerking worden genomen .
+* De **[!UICONTROL Remove duplicate rows (DISTINCT)]** Met deze functie kunt u identieke resultaten dedupliceren die in de uitvoerkolom zijn verkregen. Als u bijvoorbeeld een telling uitvoert door de velden Achternaam, Voornaam en E-mail te selecteren in de uitvoerkolom, worden de velden met identieke gegevens verwijderd, omdat dit betekent dat dezelfde contactpersoon meerdere malen in de database is ingevoerd: er wordt slechts één resultaat in aanmerking genomen.
 
 ## Stap 3 - Gegevens sorteren {#step-3---sort-data}
 
 De **[!UICONTROL Sorting]** kunt u kolominhoud sorteren. Gebruik de pijlen om de kolomvolgorde te wijzigen:
 
 * De **[!UICONTROL Sorting]** de kolom maakt een eenvoudige sortering mogelijk en rangschikt de kolominhoud van A naar Z of in oplopende volgorde.
-* De **[!UICONTROL Descending sort]** Hiermee rangschikt u de inhoud van Z naar A en in aflopende volgorde. Dit is bijvoorbeeld handig voor het weergeven van recordverkopen: boven aan de lijst staan de hoogste cijfers .
+* De **[!UICONTROL Descending sort]** Hiermee rangschikt u de inhoud van Z naar A en in aflopende volgorde. Dit is bijvoorbeeld handig voor het weergeven van recordverkopen: de hoogste cijfers worden boven aan de lijst weergegeven.
 
 In dit voorbeeld worden de gegevens in oplopende volgorde gesorteerd op basis van de leeftijd van de ontvanger.
 
@@ -80,20 +81,20 @@ De aangeboden filters zijn afhankelijk van de tabel waarop de query betrekking h
 
 ![](assets/query_editor_nveau_09.png)
 
-Wanneer u de **[!UICONTROL Filtering conditions]** u krijgt toegang tot de **[!UICONTROL Target elements]** sectie: hiermee kunt u definiëren hoe de te verzamelen gegevens moeten worden gefilterd.
+Wanneer u de **[!UICONTROL Filtering conditions]** u krijgt toegang tot de **[!UICONTROL Target elements]** sectie: hiermee kunt u definiëren hoe de te verzamelen gegevens worden gefilterd.
 
 * Als u een nieuw filter wilt maken, selecteert u de velden, operatoren en waarden die nodig zijn voor het maken van de formule die moet worden gecontroleerd voordat de gegevens worden geselecteerd. Het is mogelijk verschillende voorwaarden te combineren (voor meer informatie hierover raadpleegt u [Filtervoorwaarden definiëren](../../platform/using/defining-filter-conditions.md)).
-* Als u eerder opgeslagen filters wilt gebruiken, opent u de vervolgkeuzelijst door op de knop **[!UICONTROL Add]** klikt u op **[!UICONTROL Predefined filter]** en selecteer de gewenste versie.
+* Als u eerder opgeslagen filters wilt gebruiken, opent u de vervolgkeuzelijst door op de knop **[!UICONTROL Add]** klikt u op **[!UICONTROL Predefined filter]** en selecteert u de gewenste versie.
 
-   ![](assets/query_editor_15.png)
+  ![](assets/query_editor_15.png)
 
 * De filters die in de **[!UICONTROL Generic query editor]** zijn beschikbaar in andere vraagtoepassingen en vice versa. Als u een filter wilt opslaan, klikt u op de knop **[!UICONTROL Save]** pictogram.
 
-   >[!NOTE]
-   >
-   >Raadpleeg voor meer informatie over het maken en gebruiken van filters [Filteropties](../../platform/using/filtering-options.md).
+  >[!NOTE]
+  >
+  >Raadpleeg voor meer informatie over het maken en gebruiken van filters [Filteropties](../../platform/using/filtering-options.md).
 
-Zoals aangetoond in het volgende voorbeeld, om alle Engelstalige ontvangers terug te krijgen, selecteer: &quot;taal van de ontvanger **gelijk aan** NL&quot;.
+Zoals getoond in het volgende voorbeeld, om alle Engelstalige ontvangers terug te krijgen, selecteer: &quot;de ontvangende taal **gelijk aan** NL&quot;.
 
 ![](assets/query_editor_nveau_89.png)
 

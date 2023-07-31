@@ -2,14 +2,15 @@
 product: campaign
 title: Uitvoering van levering
 description: Meer informatie over uitvoering en bewaking van transactiemeldingen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center, Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '240'
 ht-degree: 6%
 
 ---
@@ -30,13 +31,13 @@ Alle leveringen worden gegroepeerd in de **[!UICONTROL Administration > Producti
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze soort kan in de eigenschappen van het berichtmalplaatje worden veranderd zoals hieronder getoond.
+Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze sortering kan worden gewijzigd in de eigenschappen van de berichtsjabloon, zoals hieronder wordt weergegeven.
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->Voor gehoste of hybride installaties, als u hebt geüpgraded naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), kunnen alle transactiemeldingen ook worden verzonden met de Adobe Campaign Enhanced MTA voor verbeterde leverbaarheid, doorvoer en stuiterende afhandeling. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
+>Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), kunnen alle transactiemeldingen ook worden verzonden met de Adobe Campaign Enhanced MTA voor verbeterde leverbaarheid, doorvoer en stuiterende afhandeling. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
 
 ## Transactionele berichtbewaking {#transactional-message-monitoring}
 

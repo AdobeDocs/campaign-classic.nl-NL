@@ -2,12 +2,13 @@
 product: campaign
 title: Targettoewijzing
 description: Leer hoe u een doeltoewijzing maakt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '502'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ In twee gevallen is het noodzakelijk om doeltoewijzingen te maken:
 * als u een andere ontvangertabel gebruikt dan die van Adobe Campaign,
 * als u een het filtreren afmeting vormt die van de standaard gericht afmeting op het scherm van de doelafbeelding verschillend is.
 
-De tovenaar van de verwezenlijking van de doelafbeelding zal u helpen alle schema&#39;s tot stand brengen die worden vereist om uw douanetabel te gebruiken.
+Met de wizard voor het maken van doeltoewijzingen kunt u alle schema&#39;s maken die nodig zijn om uw aangepaste tabel te gebruiken.
 
 ## Schema&#39;s maken en configureren die zijn gekoppeld aan de aangepaste tabel {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -33,7 +34,7 @@ Hiervoor voert u de volgende stappen uit:
 
    Zie voor meer informatie [Schemaverwijzing (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   In ons voorbeeld, zullen wij een klantenschema, een zeer eenvoudige lijst tot stand brengen die de volgende gebieden bevat: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of sms-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
+   In ons voorbeeld maken we een klantschema, een zeer eenvoudige tabel met de volgende velden: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of sms-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
 
    Voorbeeldschema (cus:individual)
 
@@ -83,7 +84,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Klik op de knop **[!UICONTROL Administration > Campaign management > Target mappings]** knooppunt.
 1. Klik op de knop **Nieuw** om de wizard Doeltoewijzing maken te openen.
-1. Voer de **Label** en selecteer het schema dat u zojuist hebt gemaakt in het dialoogvenster **Doeldimensie** veld.
+1. Voer de **Label** en selecteer het schema dat u net in het **Doeldimensie** veld.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 

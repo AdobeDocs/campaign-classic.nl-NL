@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: TechNote - Microsoft Edge Chromium inschakelen voor uw Campagne-omgeving
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 description: Campagne - Edge Chromium
+feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -32,9 +33,9 @@ Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit g
 
 * Als **op locatie/hybride** moet u Microsoft Edge Chromium inschakelen voor uw exemplaar(s).
 
-   Bij de upgrade naar Campaign Classic v7.3 (en hoger) wordt een nieuwe `webView2Mode` kenmerk is beschikbaar in het configuratiebestand van de Campagneserver `serverConf.xml`. Dit kenmerk moet zijn ingeschakeld.
+  Bij de upgrade naar Campaign Classic v7.3 (en hoger) wordt een nieuwe `webView2Mode` kenmerk is beschikbaar in het configuratiebestand van de Campagneserver `serverConf.xml`. Dit kenmerk moet zijn ingeschakeld.
 
-   Hiervoor voert u de volgende stappen uit op al uw omgevingen (MKT, MID, RT):
+  Hiervoor voert u de volgende stappen uit op al uw omgevingen (MKT, MID, RT):
 
    1. Het configuratiebestand van de Campagneserver bewerken (`serverConf.xml`)
    1. In de `<web>` module, set `webView2Mode = "1"`
@@ -60,6 +61,7 @@ Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit g
 >[!NOTE]
 >
 >Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Verwante onderwerpen
 

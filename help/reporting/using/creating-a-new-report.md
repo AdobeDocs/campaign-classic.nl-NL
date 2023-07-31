@@ -2,9 +2,9 @@
 product: campaign
 title: Een nieuw rapport maken
 description: Leer belangrijke stappen om een nieuw rapport te creëren
-feature: Reporting
+feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttig
 
    Raadpleeg voor meer informatie hierover [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md).
 
-   Deze gegevens zullen (of niet) in het rapport afhankelijk van paginasamenstelling worden getoond.
+   Deze gegevens zullen (of niet) in het rapport afhankelijk van paginaconfiguratie worden getoond.
 
 1. Een of meer plaatsen **[!UICONTROL Page]** activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
 
@@ -69,7 +69,7 @@ Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttig
 
 1. Een **[!UICONTROL Test]** activiteit om de voorwaarden voor het tonen van of de toegang tot van gegevens te bepalen.
 
-   Raadpleeg voor meer informatie hierover [Paginaweergave van conditionering](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
+   Raadpleeg voor meer informatie hierover [Weergave van pagina&#39;s conditioneren](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
 1. Voeg, indien nodig, gepersonaliseerde scripts toe via de **[!UICONTROL Script]** activiteit, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
 
@@ -112,7 +112,7 @@ U kunt ook met de rechtermuisknop op het knooppunt klikken waar u de component w
 A **[!UICONTROL Page]** kan de volgende elementen bevatten:
 
 * Staaf, taart, curvetype **[!UICONTROL charts]**, enz.
-* roteren; List with group, or Breakdown **[!UICONTROL tables]**.
+* Draaien; weergeven met groep of Indeling **[!UICONTROL tables]**.
 * Tekst- of getaltype **[!UICONTROL Input controls]**.
 * Vervolgkeuzelijst, selectievakje, keuzerondje, meerkeuzevype, datum of type matrix **[!UICONTROL Selection controls]**.
 * Koppelingseditor, Constant, Mapselectietype **[!UICONTROL Advanced controls]**.
@@ -133,11 +133,11 @@ De statische elementen laten u toe om informatie in het rapport, zoals grafische
 
 ### Gegevens in een rapport filteren {#filtering-information-in-a-report}
 
-Met de besturingselementen voor invoer en selectie kunt u de informatie filteren die in het rapport wordt weergegeven. Raadpleeg voor meer informatie over het implementeren van dit type filters [Filteropties in de query&#39;s](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
+De controles van de input en van de selectie laten u toe om de informatie te filtreren die in het rapport wordt getoond. Raadpleeg voor meer informatie over het implementeren van dit type filters [Filteropties in de query&#39;s](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
 Raadpleeg voor meer informatie over het maken en configureren van invoervelden en selectievelden de [deze sectie](../../web/using/about-web-forms.md).
 
-U kunt één of meerdere inputcontroles in uw rapporten integreren. Met dit type besturingselement kunt u informatie filteren die wordt weergegeven op basis van een ingevoerde waarde.
+U kunt één of meerdere inputcontroles in uw rapporten integreren. Met dit type besturingselement kunt u informatie filteren die wordt weergegeven volgens een ingevoerde waarde.
 
 ![](assets/reporting_control_text.png)
 
@@ -145,15 +145,15 @@ U kunt ook een of meer selectiemiddelen in uw rapporten integreren. Met dit type
 
 * via keuzerondjes of selectievakjes:
 
-   ![](assets/reporting_radio_buttons.png)
+  ![](assets/reporting_radio_buttons.png)
 
 * via een vervolgkeuzelijst:
 
-   ![](assets/reporting_control_list.png)
+  ![](assets/reporting_control_list.png)
 
 * via een kalender:
 
-   ![](assets/reporting_control_date.png)
+  ![](assets/reporting_control_date.png)
 
 Tot slot kunt u één of meer geavanceerde controles in uw rapporten integreren. Met dit type besturingselement kunt u een koppeling, constante of een map invoegen.
 

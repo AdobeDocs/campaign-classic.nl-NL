@@ -2,14 +2,15 @@
 product: campaign
 title: Gebeurtenissen configureren
 description: Leer hoe u gebeurtenissen configureert voor een aangepaste implementatie
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -20,8 +21,8 @@ ht-degree: 0%
 
 De delen van deze configuratie zijn een douaneontwikkeling en vereisen het volgende:
 
-* Werken met kennis van JSON-, XML- en Javascript-parsering in Adobe Campaign.
-* Werken met kennis van de API&#39;s QueryDef en Writer.
+* Werken met JSON-, XML- en Javascript-parsering in Adobe Campaign.
+* Werkkennis van de API&#39;s QueryDef en Writer.
 * Werken met codering en verificatie met persoonlijke sleutels.
 
 Aangezien voor het bewerken van de Javascript-code technische vaardigheden vereist zijn, probeert u dit niet zonder het juiste inzicht.
@@ -32,7 +33,7 @@ Aangezien voor het bewerken van de Javascript-code technische vaardigheden verei
 
 Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze functie is door de gebruiker gedefinieerd.
 
-Het wordt gevormd in **[!UICONTROL NmsPipeline_Config]** onder het kenmerk &quot;JSConnector&quot;. Dit JavaScript wordt aangeroepen telkens wanneer een gebeurtenis wordt ontvangen. Het wordt geleid door de [!DNL pipelined] proces.
+Het wordt gevormd in **[!UICONTROL NmsPipeline_Config]** onder het kenmerk &quot;JSConnector&quot;. Dit JavaScript wordt aangeroepen telkens wanneer een gebeurtenis wordt ontvangen. Het wordt gerund door de [!DNL pipelined] proces.
 
 Het Javascript-voorbeeldbestand is cus:triggers.js.
 
@@ -229,7 +230,7 @@ De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is g
 
 Verzoening is het proces waarbij de klant van Adobe Analytics in de Adobe Campaign-database wordt opgenomen. De criteria voor overeenkomsten kunnen bijvoorbeeld de shopper_id zijn.
 
-Om prestatieredenen moet de overeenkomst in batchmodus worden uitgevoerd door een workflow.
+Om prestatieredenen moet de overeenkomst in batchmodus worden uitgevoerd door middel van een workflow.
 De frequentie moet op 15 minuten worden ingesteld om de werkbelasting te optimaliseren. Als gevolg hiervan is de periode tussen de ontvangst van een gebeurtenis in Adobe Campaign en de verwerking ervan via een marketingworkflow maximaal 15 minuten.
 
 ### Opties voor afstemming per eenheid in JavaScript {#options-unit-reconciliation}
@@ -242,7 +243,7 @@ Het kan moeilijk zijn om uit te voeren als geen index op shopper_id wordt geplaa
 
 Triggers worden binnen een uur verwerkt. Het volume kan ongeveer 1 miljoen triggers per uur zijn. Er wordt uitgelegd waarom er een zuiveringsworkflow moet worden opgezet. De purge wordt eenmaal per dag uitgevoerd en verwijdert alle triggers die ouder zijn dan drie dagen.
 
-### Campagneworkflow {#campaign-workflow}
+### Campagne-workflow {#campaign-workflow}
 
 De workflow voor triggercampagnes lijkt vaak op andere terugkerende campagnes die zijn gebruikt.
 Bijvoorbeeld, kan het met een vraag op de trekkers beginnen die specifieke gebeurtenissen tijdens de laatste dag zoeken. Dit doel wordt gebruikt om de e-mail te verzenden. Verrijkingen of gegevens kunnen afkomstig zijn van de trigger. Het kan veilig door Marketing worden gebruikt aangezien het geen configuratie vereist.

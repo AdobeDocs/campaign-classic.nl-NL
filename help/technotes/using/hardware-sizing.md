@@ -2,11 +2,12 @@
 product: campaign
 title: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
 description: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2519'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 1%
 >
 >Dit artikel is alleen bedoeld als algemene voorbeeldgids. U moet contact opnemen met uw Adobe Campaign Customer Success Manager om de exacte grootte van uw implementatie te meten voordat u uw Campagne-project start. **Niet gebruiken** infrastructuur of hardware aanschaffen of implementeren totdat dit gebeurt.
 
-Dit document bevat algemene aanbevelingen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort inzet, waarnaar wordt verwezen als **hybride** of **midsourcing**, plaatst u de marketinginstantie en de marketingdatabase van Campagne onder uw controle en gebruikt u de services van Adobe Cloud Messaging om e-mails, SMS- of SMPP-berichten te verzenden en e-mail te verzamelen, open te stuiteren en te klikken op trackinggegevens.
+Dit document bevat algemene aanbevelingen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort inzet, waarnaar wordt verwezen als **hybride** of **midsourcing**, plaatst u de marketinginstantie en de marketingdatabase van Campagne onder uw controle en gebruikt u de services van Adobe Cloud Messaging om e-mails, SMS- of SMPP-berichten te verzenden en e-mail te verzamelen die is geopend, stuit en klik op volggegevens.
 
 De marketinginstantie is het deel van de Adobe Campaign-architectuur dat alle marketingactiviteiten stuurt en alle gegevens van de ontvanger en de analytische gegevens opslaat die door campagnes worden geretourneerd. De marketinginstantie is een set on-premise servers waarop Adobe Campaign-services worden uitgevoerd, en een relationele database.
 
@@ -40,7 +41,7 @@ De diagrammen van de plaatsing en de aanbevelingen van de hardwarerangschikking 
 1. [Groot](#scenario-2) - 20 miljoen actieve ontvangers in het systeem
 1. [Enterprise](#scenario-3) - 50 miljoen actieve ontvangers, met transactieberichten
 
-### Aannames
+### Veronderstellingen
 
 Dit document veronderstelt ook de volgende types van gebruik voor alle drie scenario&#39;s:
 
@@ -59,11 +60,11 @@ De toepassingsservers in uw marketinginstantie vereisen voldoende CPU en geheuge
 
 Campagne-webtoepassingen kunnen ook worden geïmplementeerd op de App-servers voor marketinginstanties of op afzonderlijke webserversystemen. Omdat werklasten van webtoepassingen conflicteren met kritieke workflows en Campagnegebruikers, kunnen webtoepassingen en binnenkomende interacties worden geïmplementeerd op afzonderlijke servers om ervoor te zorgen dat de functionaliteit van de kerncampagne betrouwbaar werkt met goede prestaties.
 
-Voor veiligheid en beschikbaarheid, adviseert Adobe het scheiden van het verkeer van Internet van het verkeer dat door de bedrijfsgebruikers wordt geproduceerd. Daarom bevatten de diagrammen twee groepen servers: de server van het Web (Internet onder ogen ziend Web1 en Web2), en de servers van de App (bedrijfsprocessen App1 en App2).
+Voor veiligheid en beschikbaarheid, adviseert Adobe het scheiden van het verkeer van Internet van het verkeer dat door de bedrijfsgebruikers wordt geproduceerd. Om die reden, bevatten de diagrammen twee groepen servers: de server van het Web (Internet die Web1 en Web2 onder ogen ziet), en de servers van de App (bedrijfsprocessen App1 en App2).
 
 Het is een wettelijke vereiste voor commerciële e-mailzenders om een functionele opt-out-webpagina te hebben. Adobe raadt u aan om voor failover-scenario&#39;s in elke groepsserver een redundante computer op te nemen. Dit geldt vooral als Adobe Campaign de pagina&#39;s voor niet-deelname host.
 
-### Reverse proxies
+### Proxy&#39;s omkeren
 
 De architectuur van de Campagne dwingt hoge veiligheid af door SSL over HTTP (HTTPS) te gebruiken om tussen uw marketing instantie en het Overseinen van de Wolk van Adobe te communiceren. De veiligheid, de betrouwbaarheid, en de beschikbaarheid worden afgedwongen door omgekeerde volmachten in &quot;gedemilitariseerde streek&quot;(DMZ) subnet te gebruiken om de marketing instantieservers en het gegevensbestand te isoleren en te beveiligen.
 
@@ -75,9 +76,9 @@ Adobe biedt u de exclusieve lijst met URL-paden die u kunt afspelen op de Adobe 
 
 ### Architectuur
 
-De algemene architectuur is vrijwel identiek, ongeacht de volumes. De vereisten inzake beveiliging en hoge beschikbaarheid vereisen minimaal vier servers; twee servers als er geen WebApps worden gebruikt. Het verschil in configuratie varieert hoofdzakelijk in de hardwareconfiguratie zoals de kern van cpu en geheugen.
+De algemene architectuur is vrijwel identiek, ongeacht de volumes. De veiligheids en hoge beschikbaarheidsvereisten bepalen een minimum van vier servers; twee servers als geen WebApps wordt gebruikt. Het verschil in configuratie varieert hoofdzakelijk in de hardwareconfiguratie zoals de kern van cpu en geheugen.
 
-## Scenario 1: Moderne implementatie op grootte{#scenario-1}
+## Scenario 1: Moderne Plaatsing{#scenario-1}
 
 ![](assets/scenario-1.png)
 
@@ -91,7 +92,7 @@ Geraamd volume:
 | Mobiele SMS | 100.000/maand |
 | Maximale dagelijkse e-mailvolume | 500 |
 
-Voor deze volumes biedt een paar Adobe Campaign-toepassingsserversystemen alle functionaliteit voor Adobe Campaign Client-gebruikers en workflowuitvoering. Voor 5 miljoen actieve ontvangers en dit e-mailvolume zijn de werklasten van de toepassingsserver niet CPU- of I/O-intensief. het grootste deel van de stress ligt in de database .
+Voor deze volumes biedt een paar Adobe Campaign-toepassingsserversystemen alle functionaliteit voor Adobe Campaign Client-gebruikers en workflowuitvoering. Voor 5 miljoen actieve ontvangers en dit e-mailvolume zijn de werklasten van de toepassingsserver niet CPU- of I/O-intensief; het grootste deel van de belasting ligt in de database.
 
 De servers van het Web van Adobe Campaign worden getoond in de veilige streek.
 
@@ -103,7 +104,7 @@ In dit scenario wordt aangeraden Adobe Campaign op vier computers te installeren
 
 Deze systemen creëren de Server van de toepassing van de marketinginstantie, die direct uw gebruikers van de Console van de Campagne steunt en de campagnewerkschema&#39;s uitvoert.
 
-Reverse volmachten in een DMZ verkeer van de ladingsbalans aan de servers van het Web van Adobe Campaign. De Adobe Campaign-softwarestack hoeft niet op proxycomputers te worden geïnstalleerd. alle reverse-proxysoftware of -netwerkapparatuur kan worden gebruikt.
+Reverse volmachten in een DMZ verkeer van de ladingsbalans aan de servers van het Web van Adobe Campaign. De Adobe Campaign-softwarestack hoeft niet te worden geïnstalleerd op proxycomputers. Eventuele reverse-proxysoftware of netwerkapparatuur kan worden gebruikt.
 
 De functies voor het kiezen voor een abonnement of het weigeren en het instellen van een voorkeurscentrum kunnen via de campagne of via uw eigen website worden aangeboden. Als u ervoor kiest om deze functionaliteit op uw website te implementeren, moet u ervoor zorgen dat voorkeur- en abonnementsgegevens worden doorgegeven aan de marketingdatabase voor campagnes. Dit gebeurt gewoonlijk door extractiebestanden te maken die automatisch worden geüpload door campagneworkflows.
 
@@ -121,12 +122,12 @@ Er wordt geschat dat de schijfruimte die nodig is voor de database voor het opsl
 
 >[!CAUTION]
 >
->Deze schatting omvat geen aanvullende klantgegevens. Als u van plan bent om extra kolommen of lijsten van klantengegevens in het gegevensbestand van Adobe Campaign te herhalen, dan moet u de extra behoefte van de schijfruimte voor het schatten. Geüploade segmenten/lijsten vereisen ook meer opslag, afhankelijk van hun grootte, frequentie en retentieperiode.
+>In deze schatting zijn geen aanvullende klantgegevens opgenomen. Als u van plan bent om extra kolommen of lijsten van klantengegevens in het gegevensbestand van Adobe Campaign te herhalen, dan moet u de extra behoefte van de schijfruimte voor het schatten. Geüploade segmenten/lijsten vereisen ook meer opslag, afhankelijk van hun grootte, frequentie en retentieperiode.
 
 Houd er ook rekening mee dat vanwege het dagelijks verwerkte gegevensvolume de IOPS van de databaseserver van essentieel belang is. Bijvoorbeeld, op een piekdag, kunt u campagnes opstellen die in totaal 500.000 ontvangers richten. Om elke campagne uit te voeren, neemt Adobe Campaign 500.000 verslagen in een lijst op die ruwweg 12 miljoen verslagen (de lijst van het leveringslogboek) bevatten. Om acceptabele prestaties tijdens de campagnemplementatie te bieden, adviseert Adobe een minimum van 60.000 4-KB Willekeurige lees-schrijfIOPS voor dit scenario.
 
 
-## Scenario 2: Implementatie op grote schaal{#scenario-2}
+## Scenario 2: grootschalige implementatie{#scenario-2}
 
 ![](assets/scenario-2.png)
 
@@ -150,7 +151,7 @@ De toepassingsservers ondersteunen rechtstreeks de gebruikers van de Campagne Co
 
 De servers van het Web ontvangen het Webtoepassingen van de Campagne die de 10 miljoen actieve ontvangers in het systeem steunen.
 
-Zie [Scenario 1: Moderne implementatie op grootte](#scenario-1) voor meer opmerkingen over proxy&#39;s, voorkeurscentra/abonnementsafhandeling en schijfruimtegebruik.
+Zie [Scenario 1: Moderne Plaatsing](#scenario-1) voor meer opmerkingen over proxy&#39;s, voorkeurscentra/abonnementsafhandeling en schijfruimtegebruik.
 
 ### Database
 
@@ -188,17 +189,17 @@ Deze plaatsing omvat ook de vraag van het Centrum van het Bericht, die van uw ei
 In dit scenario raadt Adobe aan Adobe Campaign als volgt op vier computers te installeren:
 
 * Toepassingsservers
-   **Twee systemen, 3GHz+ quad-core CPU, 8-GB RAM, RAID 1 of 10, 80-GB SSD**
+  **Twee systemen, 3GHz+ quad-core CPU, 8-GB RAM, RAID 1 of 10, 80-GB SSD**
 
 * Webservers
-   **Twee systemen, 3GHz+ quad-core CPU, 16-GB RAM, RAID 1 of 10, 80-GB SSD**
+  **Twee systemen, 3GHz+ quad-core CPU, 16-GB RAM, RAID 1 of 10, 80-GB SSD**
 
 
 De toepassingsservers ondersteunen rechtstreeks de gebruikers van de Campagne Console en de uitvoering van campagneworkflows. Deze functionaliteit wordt opgesteld op twee identieke servers voor hoge beschikbaarheid, delend een netwerk-Attached Storage (NAS) dossiersysteem om failover toe te laten.
 
 De servers van het Web ontvangen het Webtoepassingen van de Campagne die de 10 miljoen actieve ontvangers in het systeem steunen.
 
-Zie [Scenario 1: Moderne implementatie op grootte](#scenario-1) voor meer opmerkingen over proxy&#39;s, voorkeurscentra/abonnementsafhandeling en schijfruimtegebruik.
+Zie [Scenario 1: Moderne Plaatsing](#scenario-1) voor meer opmerkingen over proxy&#39;s, voorkeurscentra/abonnementsafhandeling en schijfruimtegebruik.
 
 ### Database
 
@@ -224,12 +225,12 @@ De frequentie van het lanceren van de campagne heeft een invloed op de vereisten
 De frequentie van directe mailings kan de vereisten van CPU van de gegevensbestandserver beïnvloeden. Gecombineerd met campagnelanceringen en andere werkschema&#39;s, zetten de segmenteringsverrichtingen voor directe post een significante lading op de gegevensbestandserver.
 
 * **SMS-berichtenvolume**
-Net als de grootte van de e-mailcampagne, plaatst het SMS-berichtenvolume geen grote ladingen op Campagne-servers die zich op locatie bevinden; de bestanden worden meestal geladen op Adobe Cloud Messaging-servers in de cloud. Segmentering voor SMS-campagnes, zoals e-mail en direct mail, kan een aanzienlijke belasting voor de marketingdatabase betekenen. Daarom zijn de frequentie van de lanceringen van de campagne van SMS en de ingewikkeldheid van segmentatie relevanter dan het volume van SMS berichten.
+Net als de grootte van de e-mailcampagne worden met SMS-berichten geen grote hoeveelheden geladen op Campagneservers die zich op locatie bevinden. De bestanden worden vooral geladen op Adobe Cloud Messaging-servers in de cloud. Segmentering voor SMS-campagnes, zoals e-mail en direct mail, kan een aanzienlijke belasting voor de marketingdatabase betekenen. Daarom zijn de frequentie van de lanceringen van de campagne van SMS en de ingewikkeldheid van segmentatie relevanter dan het volume van SMS berichten.
 
 * **Complexiteit databaseschema**
 De hoeveelheid gegevens voor elke actieve ontvanger vereist zowel opslagruimte als databasebufferruimte, zodat meer ontvangers over het algemeen meer geheugen en CPU op de databaseserver nodig hebben. De complexe schema&#39;s vereisen ook meer lijsten om voor segmentatie worden aangesloten, zodat kunnen de segmentatieverrichtingen veel langzamer lopen, en vereisen meer gegevensbestandcpu en geheugen wanneer het gegeven over veelvoudige lijsten wordt verspreid.
 
-   Het geheugen van de de serverserver van het gegevensbestand wordt geschat door ervoor te zorgen dat de pool van de gegevensbestandbuffer groot genoeg kan zijn om alle ontvankelijke gegevens, plus tijdelijke lijsten voor het runnen van werkschema&#39;s, plus een marge voor andere gegevensbestandverrichtingen te bevatten.
+  Het geheugen van de de serverserver van het gegevensbestand wordt geschat door ervoor te zorgen dat de pool van de gegevensbestandbuffer groot genoeg kan zijn om alle ontvankelijke gegevens, plus tijdelijke lijsten voor het runnen van werkschema&#39;s, plus een marge voor andere gegevensbestandverrichtingen te bevatten.
 
 * **Het uitgaande Gebruik van de Interactie**
 De regels voor Interactie op partijwijze worden geëvalueerd in werkschema&#39;s die alle berekeningsingewikkeldheid aan het gegevensbestand overdragen. De belangrijkste factor van inspanning voor de database is het totale aantal in aanmerking komende aanbiedingen dat tijdens één motoroproep is berekend (doelgrootte X gemiddeld aantal aanbiedingen per ontvanger voordat de beste N-aanbiedingen worden gehouden). De CPU-snelheid van de databaseserver is de eerste factor in prestaties.
@@ -237,10 +238,10 @@ De regels voor Interactie op partijwijze worden geëvalueerd in werkschema&#39;s
 * **Binnenkomende interacties of SOAP API-gebruik**
 De binnenkomende regels en de aanbiedingen van de Interactie worden geëvalueerd in het marketing gegevensbestand, die significante middelen van de gegevensbestandserver, vooral cpu vereisen. Het zware gebruik van binnenkomende Interacties of APIs van de ZEEP vereist afzonderlijke Webservers om het werklading van het runnen van de werkschema&#39;s van de Campagne te scheiden.
 
-* **Bewaarperiode gegevens bijhouden**
+* **Bewaarperiode van gegevens bijhouden**
 Het verhogen van het behoud van het volgen van gegevens na 90 dagen vereist meer gegevensbestandopslag, en kan het systeem vertragen omdat het opnemen van nieuwe het volgen gegevens in grote lijsten gaat. Het bijhouden van gegevens is niet nuttig voor campagnesegmentatie na 90 dagen, dus de kortere retentieperiode wordt aanbevolen.
 
-   Trackinggegevens moeten worden overgebracht naar Adobe Analytics of een ander analysesysteem als u een langetermijnanalyse van de marketingervaring van de geadresseerde nodig hebt.
+  Trackinggegevens moeten worden overgebracht naar Adobe Analytics of een ander analysesysteem als u een langetermijnanalyse van de marketingervaring van de geadresseerde nodig hebt.
 
 ## Virtualisatie
 

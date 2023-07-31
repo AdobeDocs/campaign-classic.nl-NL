@@ -2,14 +2,15 @@
 product: campaign
 title: Integratie via JavaScript (clientzijde)
 description: Integratie via JavaScript (clientzijde)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -183,7 +184,7 @@ Het volgende gebruiksgeval specificeert de configuraties om in Adobe Campaign ui
 
 1. **Het aanbiedingsschema uitbreiden om nieuwe velden toe te voegen**
 
-   Met dit schema worden de volgende velden gedefinieerd: Titel nummer 2 en prijs.
+   In dit schema worden de volgende velden gedefinieerd: Titel nummer 2 en prijs.
 
    De naam van het schema in het voorbeeld is **focus:aanbieding**
 

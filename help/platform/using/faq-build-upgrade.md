@@ -2,14 +2,15 @@
 product: campaign
 title: Veelgestelde vragen over buildupgrades
 description: Algemene vragen met betrekking tot upgrades van de Campagne-build
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -54,9 +55,9 @@ De verbeteringen van de versie aan de andere kant komen gewoonlijk met significa
 
 Bijvoorbeeld, gebruikend de serverinformatie van het het schermschot in de vorige sectie:
 
-* Een bouwstijlverbetering zou het bewegen van bouwstijl 9342 aan om het even welke bouw groter dan 9342 impliceren. Bijvoorbeeld v7.1 build 9342 to v7.1 build 9342
+* Een bouwstijlverbetering zou het bewegen van bouwstijl 9342 aan om het even welke bouwstijl groter dan 9342 impliceren. Bijvoorbeeld v7.1 build 9342 to v7.1 build 9342
 
-* Bij een versieupgrade moet u overstappen van versie 6 naar een recentere versie.  Bijvoorbeeld: v6.1.1 build 8666 to v7.1 build 9342.
+* Bij een versieupgrade moet u overstappen van versie 6 naar een recentere versie.  Bijvoorbeeld: build 8666 tot v7.1 (versie 6.1.1) 9342.
 
 ## Moet ik vóór deze updates back-ups maken van mijn gegevens?
 
@@ -75,7 +76,7 @@ De verbeteringen van de Bouwstijl kunnen van maandag tot Donderdag worden gedaan
 
 De tijd die wordt vereist om een bouwstijlverbetering uit te voeren is afhankelijk van verscheidene factoren:
 
-* De grootte van de database waarvan een back-up of herstelbewerking moet worden gemaakt (grotere databases hebben meer tijd nodig om een upgrade uit te voeren)
+* De grootte van de database waarvan een back-up of herstelbewerking moet worden gemaakt (grotere databases hebben meer tijd nodig om te upgraden)
 * De grootte van de omgevingen (veel van onze klanten hebben verschillende servers die elk specifieke functies verwerken, met grotere omgevingen die meer tijd nodig hebben om te upgraden)
 * De complexiteit van het systeem (sommige systemen hebben meer te controleren diensten en verbindingen, wat verificatie van de stabiliteit en prestaties van dergelijke systemen noodzakelijk maakt)
 
@@ -93,12 +94,12 @@ Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
 * Adobe Architect - Voor gehoste of cloud messaging/hybride architecturen moet de architect coördineren met de klantenservice.
 * Projectmanager - Gehost: het hostingteam zal samenwerken met het zorgteam van de klant en de klant om de tijdlijn van de upgrade voor alle gevallen te coördineren.
-* Adobe Campaign-beheerder - gehost: het hostingteam voert de upgrade uit.
+* Adobe Campaign Administrator - Gehost: het hostingteam voert de upgrade uit.
 * Adobe Campaign operator\marketing user - De operator voert tests uit op ontwikkelings-, test- en productieinstanties.
 
 ## Hoe kan ik voorbereidingen treffen voor de bouwstijlverbetering?
 
-Exporteer in uw ontwikkelings- en staging-systemen werk dat essentieel is en dat behouden moet blijven.
+Exporteer in uw ontwikkelings- en staging-systemen werk dat van essentieel belang is en dat behouden moet blijven.
 
 <!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
@@ -174,7 +175,7 @@ Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [
 
 Meer informatie in [Help- en ondersteuningsopties voor Campaign Classic](../../support.md)
 
-## Controlelijst voor upgrades samenstellen {#check-list}
+## Upgrade-checklist maken {#check-list}
 
 ### Checklist voor post-upgrade van de cloudberichtenserver
 

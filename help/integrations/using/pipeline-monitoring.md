@@ -2,14 +2,15 @@
 product: campaign
 title: Pijplijncontrole
 description: Pijplijncontrole
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -32,45 +33,45 @@ In deze sectie worden de indicatoren in de webservice voor status weergegeven.
 
 Aanbevolen indicatoren voor de bewaking worden gemarkeerd.
 
-* Consumenten: naam van de client die de triggers heeft opgehaald. Gevormd in de pijpleidingsoptie.
+* Consumenten: naam van de cliënt die de trekkers trekt. Gevormd in de pijpleidingsoptie.
 * http-request
-   * laatst levende ms-geleden: tijd in ms sinds een verbindingscontrole is uitgevoerd.
-   * last-failed-cnx-ms-ago: tijd in ms sinds de laatste keer dat de verbindingscontrole is mislukt.
+   * laatst levend-ms-geleden: tijd in ms sinds een verbindingscontrole is uitgevoerd.
+   * last-failed-cnx-ms-ago: tijd in ms sinds de laatste tijd de verbindingscontrole ontbrak.
    * pijpleiding-gastheer: naam van de gastheer waar de pijpleidingsgegevens van worden getrokken.
 * aanwijzer
-   * huidige verschuivingen: waarde van de wijzer in de pijpleiding, per kinddraad.
-   * last-flush-ms-ago: tijd in ms sinds een batch triggers is opgehaald.
-   * next-offsets-flush: tijd om tot de volgende partij te wachten, wanneer gebeëindigd.
-   * verwerkt-sinds-laatste-flush: aantal triggers verwerkt in de laatste batch.
+   * current-offsets: waarde van de wijzer in de pijpleiding, per kinddraad.
+   * last-flush-ms-ago: tijd in ms sinds een partij triggers werd teruggewonnen.
+   * next-offsets-flush: tijd om te wachten tot de volgende batch, als u klaar bent.
+   * processing-since-last-flush: aantal triggers verwerkt in de laatste batch.
 * verpletteren
-   * triggers: lijst met opgehaalde triggers. Gevormd in [!DNL pipelined] optie.
+   * triggers: lijst met opgehaalde triggers. Gevormd in [!DNL pipelined] -optie.
 * stats
-   * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één partij triggers.
-   * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
-   * gelezen door bytes: Het aantal bytes dat uit de wachtrij is gelezen sinds het proces is gestart.
-   * current-messages: Het huidige aantal berichten in behandeling die uit de wachtrij zijn gehaald en op verwerking wachten. **Deze indicator moet dicht bij nul liggen**.
-   * huidige-pogingen: Het huidige aantal berichten dat niet is verwerkt en dat nog moet worden geprobeerd.
+   * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één batch triggers.
+   * average-trigger-processing-time-ms: gemiddelde tijd besteed aan het ontleden van de triggergegevens.
+   * bytes-gelezen: aantal bytes gelezen uit de wachtrij sinds het proces is gestart.
+   * current-messages: huidige aantal berichten in behandeling die uit de wachtrij zijn opgehaald en in afwachting zijn van verwerking. **Deze indicator moet dicht bij nul liggen**.
+   * current-retry: huidige aantal berichten die de verwerking hebben mislukt en die op een nieuwe poging wachten.
    * piekberichten: maximumaantal berichten dat in behandeling is sinds het proces is gestart.
-   * aanwijzer-flushes: aantal batches berichten die sinds het begin zijn verwerkt.
-   * routing-JS-custom: aantal berichten die door douane JS werden verwerkt.
-   * trigger-disczoals genegeerd: aantal berichten die na teveel pogingen wegens verwerkingsfouten werden verworpen.
-   * triggerverwerking: aantal berichten die zonder een fout werden verwerkt.
-   * ontvangen trigger: aantal berichten die van de rij worden ontvangen.
+   * pointer-flushes: aantal batches van berichten die zijn verwerkt sinds het begin.
+   * routing-JS-custom: aantal berichten die zijn verwerkt door de aangepaste JS.
+   * trigger-discted: aantal berichten dat is verwijderd na te veel pogingen vanwege verwerkingsfouten.
+   * trigger-processing: aantal berichten dat zonder fout is verwerkt.
+   * trigger-Ontvangen: aantal berichten dat van de wachtrij is ontvangen.
 
 Deze stats worden weergegeven per verwerkingsthread.
 
-* gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
+* average-trigger-processing-time-ms: gemiddelde tijd besteed aan het ontleden van de triggergegevens.
 * is-JS-processor: waarde &quot;1&quot; als deze thread de aangepaste JS gebruikt.
-* trigger-disczoals genegeerd: aantal berichten die na teveel pogingen wegens verwerkingsfouten werden verworpen. **Deze indicator moet nul zijn**.
-* triggerfouten: aantal verwerkingsfouten in het JS. **Deze indicator moet nul zijn**.
-* ontvangen trigger: aantal berichten die van de rij worden ontvangen.
+* trigger-discted: aantal berichten dat is verwijderd na te veel pogingen vanwege verwerkingsfouten. **Deze indicator moet nul zijn**.
+* trigger-errors: aantal verwerkingsfouten in de JS. **Deze indicator moet nul zijn**.
+* trigger-Ontvangen: aantal berichten dat van de wachtrij is ontvangen.
 
-* Instellingen: ze worden ingesteld in de configuratiebestanden.
+* Instellingen: deze worden ingesteld in de configuratiebestanden.
    * flush-pointer-msg-count: aantal berichten in een batch.
-   * punt-ms met flush-pointer: tijd tussen twee batches, in milliseconden.
-   * processing-threads-JS: aantal verwerkingsdraden die de aangepaste JS uitvoeren.
-   * heruitzetperiode-ms: tijd tussen twee pogingen wanneer een verwerkingsfout voorkomt.
-   * hertry-validity-duration-ms: duur van de tijdverwerking wordt opnieuw geprobeerd tot het bericht wordt verworpen.
+   * flush-pointer-period-ms: tijd tussen twee batches, in milliseconden.
+   * processing-threads-JS: aantal verwerkingsthreads met de aangepaste JS.
+   * punt-ms &#39;retry-period-ms&#39;: tijd tussen twee pogingen wanneer een verwerkingsfout optreedt.
+   * hertry-validity-duration-ms: de duur vanaf de tijdverwerking wordt opnieuw geprobeerd tot het bericht wordt verworpen.
    * Rapport pijpleidingberichten
 
 ## Pijplijnberichten {#pipeline-report}

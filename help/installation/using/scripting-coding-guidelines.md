@@ -2,14 +2,15 @@
 product: campaign
 title: Richtlijnen voor scripting en versleuteling
 description: Meer informatie over de richtlijnen die moeten worden gevolgd bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -24,32 +25,32 @@ Raadpleeg voor meer informatie [JSAPI-documentatie voor campagne](https://experi
 
 Als u een script maakt met behulp van workflow, webtoepassingen of jssp, volgt u de volgende aanbevolen procedures:
 
-* Vermijd zoveel mogelijk het gebruik van SQL-instructies.
+* Probeer SQL-instructies zoveel mogelijk te vermijden.
 
 * Als dat nodig is, gebruikt u parameterized (prepare statement) functies in plaats van tekenreekssamenvoeging.
 
-   Slechte praktijk:
+  Slechte praktijk:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
+  ```
 
-   Goede praktijken:
+  Goede praktijken:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
+  ```
 
-   >[!IMPORTANT]
-   >
-   >sqlSelect biedt geen ondersteuning voor deze functie, dus u moet de queryfunctie van de klasse DBEngine gebruiken:
+  >[!IMPORTANT]
+  >
+  >sqlSelect biedt geen ondersteuning voor deze functie, dus u moet de queryfunctie van de klasse DBEngine gebruiken:
 
-   ```
-   var cnx = application.getConnection()
-   var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
-   for each(var row in stmt) logInfo(row[0] + " : " + row[1])
-   cnx.dispose()
-   ```
+  ```
+  var cnx = application.getConnection()
+  var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
+  for each(var row in stmt) logInfo(row[0] + " : " + row[1])
+  cnx.dispose()
+  ```
 
 Om SQL-injecties te voorkomen, moeten SQL-functies worden toegevoegd aan de lijst van gewenste personen die in Adobe Campaign moet worden gebruikt. Zodra zij aan de lijst van gewenste personen worden toegevoegd, worden zij zichtbaar aan uw exploitanten in de uitdrukkingsredacteur. Zie [deze pagina](../../configuration/using/adding-additional-sql-functions.md).
 
@@ -57,7 +58,7 @@ Om SQL-injecties te voorkomen, moeten SQL-functies worden toegevoegd aan de lijs
 >
 >Als u een build gebruikt die ouder is dan 8140, wordt **XtkPassUnknownSQLFunctionsToRDBMS** kan worden ingesteld op &#39;1&#39;. Als u uw database wilt beveiligen, verwijdert u deze optie (of stelt u deze in op &#39;0&#39;).
 
-Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - Gegevensbescherming: escapefuncties). Deze functies zijn:
+Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - gegevensbescherming: ontsnappingsfuncties). Deze functies zijn:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -66,7 +67,7 @@ Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouw
 
 ## Uw nieuwe gegevensmodel beveiligen
 
-### Basis van mappen
+### Basismap
 
 Raadpleeg de volgende pagina&#39;s:
 
@@ -79,23 +80,23 @@ Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruik
 
 * U kunt sommige systeemfilters (sysFilter) toevoegen om lezing/het schrijven aan uw gegevens te verhinderen (zie [deze pagina](../../configuration/using/filtering-schemas.md)).
 
-   ```
-   <sysFilter name="writeAccess">    
-       <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">    
+      <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
+  </sysFilter>
+  ```
 
 * U kunt ook bepaalde acties (SOAP-methode) beschermen die in schema&#39;s zijn gedefinieerd. Plaats enkel het toegangsattribuut met het overeenkomstige genoemde recht als waarde.
 
-   ```
-   <method name="grantVIPAccess" access="myNewRole">
-       <parameters>
-   ...
-       </parameters>
-   </method>
-   ```
+  ```
+  <method name="grantVIPAccess" access="myNewRole">
+      <parameters>
+  ...
+      </parameters>
+  </method>
+  ```
 
-   Raadpleeg [deze pagina](../../configuration/using/implementing-soap-methods.md) voor meer informatie.
+  Raadpleeg [deze pagina](../../configuration/using/implementing-soap-methods.md) voor meer informatie.
 
 >[!IMPORTANT]
 >
@@ -146,7 +147,8 @@ De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkings
    * Met regel 4 kunt u de grootte van het grijze vak (breedte/hoogte) en de lengte van het gegenereerde woord (minWordSize/maxWordSize) wijzigen.
    * Voordat u Google reCAPTCHA kunt gebruiken, moet u zich registreren bij Google en een nieuwe reCAPTCHA-site maken.
 
-      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+     `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+
    U zou de bevestigingsknoop moeten kunnen onbruikbaar maken, maar aangezien wij geen standaardknoop/verbinding hebben, is het beter om het in de HTML zelf te doen. Als u wilt weten hoe u dit kunt doen, raadpleegt u [deze pagina](https://developers.google.com/recaptcha/).
 
 ### De webtoepassing bijwerken
@@ -167,7 +169,7 @@ De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkings
 
 1. Bewerk de **[!UICONTROL Script]** activiteit. De inhoud is afhankelijk van de gekozen captcha-engine.
 
-1. Tot slot kunt u uw gepersonaliseerde blok op de pagina toevoegen: verwijzen naar [deze pagina](../../web/using/editing-content.md).
+1. Tot slot kunt u uw gepersonaliseerde blok in de pagina toevoegen: verwijs naar [deze pagina](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -195,7 +197,7 @@ else
   ctx.vars.captchaValid = true
 ```
 
-Regel 6: u kunt elk foutbericht plaatsen.
+Regel 6: u kunt om het even welk soort foutenmelding zetten.
 
 ### Google recaptcha
 

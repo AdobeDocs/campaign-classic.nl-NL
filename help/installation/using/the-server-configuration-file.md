@@ -2,14 +2,15 @@
 product: campaign
 title: Het serverconfiguratiebestand
 description: Het serverconfiguratiebestand
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '7955'
+source-wordcount: '7962'
 ht-degree: 5%
 
 ---
@@ -32,7 +33,7 @@ De eerste parameters bevinden zich in de **gedeeld** knooppunt. Deze zijn gerela
 * [dataStore](#datastore)
 * [dnsConfig](#dnsconfig)
 * [exec](#exec)
-* [htmlToPdf](#htmltopdf)
+* [htmlToPDF](#htmltopdf)
 * [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
@@ -51,7 +52,7 @@ De eerste parameters bevinden zich in de **gedeeld** knooppunt. Deze zijn gerela
 * [interactief](#interactiond)
 * [mta](#mta)
 * [nmac](#nmac)
-* [gelijnd](#pipelined)
+* [gepijld](#pipelined)
 * [repareren](#repair)
 * [securityZone](#securityzone)
 * [sms](#sms)
@@ -102,7 +103,7 @@ Hier zijn de verschillende parameters van **verificatie** knooppunt:
   </tr> 
   <tr> 
    <td> sessionCacheSec<br /> </td> 
-   <td> Cacheduur: cache van sessiegegevens in seconden.<br /> </td> 
+   <td> Cacheduur: cache met sessiegegevens in seconden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -137,7 +138,7 @@ Hier zijn de verschillende parameters van **verificatie > XTK** knooppunt:
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> Veilige zone interne rekening: zone met bevoegdheden voor de interne rekening.<br /> </td> 
+   <td> Beveiliging van de interne rekening: zone waarvoor toestemming is verleend voor de interne rekening.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
@@ -160,31 +161,31 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
  <tbody> 
   <tr> 
    <td> exportDirectory<br /> </td> 
-   <td> Exportmap: pad van doelmap voor de geëxporteerde gegevens.<br /> </td> 
+   <td> Exportmap: pad naar doelmap voor de geëxporteerde gegevens.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/export/' <br /> </td> 
   </tr> 
   <tr> 
    <td> extraSandboxDirectories<br /> </td> 
-   <td> Extra sandboxmappen: andere paden die in de sandbox moeten worden toegevoegd (gescheiden door coma's).<br /> </td> 
+   <td> Extra sandboxmappen: andere paden die in de sandbox moeten worden toegevoegd (gescheiden door komma's).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '/home/customer/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
-   <td> Vertraging bij verlopen van formuliercache: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. O betekent dat cachemarangen alleen worden vernieuwd op het moment van publicatie.<br /> </td> 
+   <td> Vertraging bij verlopen van formuliercache: time-out in seconden waarna een cachevermelding ongeldig wordt gemaakt. O betekent dat cachemarangen alleen worden vernieuwd op het moment van publicatie.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> gastheren<br /> </td> 
-   <td> DNS-maskers: lijst met DNS-maskers die in deze instantie worden gebruikt (gescheiden door komma's), kan * en ? patronen).<br /> </td> 
+   <td> DNS-maskers: lijst met DNS-maskers die in deze instantie worden gebruikt (gescheiden door komma's, kan * en ? patronen).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
-   <td> Vertraging bij JSSP-cache van interactie: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
+   <td> Vertraging bij JSSP-cache-vervaldatum van interactie: time-out in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -196,7 +197,7 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   </tr> 
   <tr> 
    <td> uploadDirectory<br /> </td> 
-   <td> Map uploaden: pad van doelmap voor de geüploade gegevens.<br /> </td> 
+   <td> Map uploaden: pad naar doelmap voor de geüploade gegevens.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> Bewaar geheimen in Vault: Gebruik Hashicorp Vault.<br /> </td> 
+   <td> Sla geheimen op in het Vault: gebruik Hashicorp Vault.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -232,7 +233,7 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   </tr> 
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
-   <td> Geldigheidsperiode van weergavecache: onderbreking in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
+   <td> Geldigheidsperiode van weergavecache: time-out in seconden waarna een cachevermelding ongeldig wordt gemaakt. Een negatieve waarde betekent dat de cache altijd ongeldig wordt gemaakt. '0', lege of ongeldige waarden worden beschouwd als 60.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -514,7 +515,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Gebruikt standaard de netwerkparameters van de eerste netwerkinterface die in Windows is gedeclareerd; of parseert de file/etc/resolv.conf onder Linux (domein of zoekingang). <br /> </td> 
+   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Door gebrek, gebruikt de netwerkparameters van de eerste netwerkinterface die in Vensters wordt verklaard; of ontleedt file/etc/resolv.conf onder Linux (domein of onderzoeksingang). <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -532,7 +533,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Time-out in milliseconden voor een DNS-query.<br /> </td> 
+   <td> Timeout in milliseconden voor een DNS vraag.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
@@ -541,13 +542,13 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
 
 >[!NOTE]
 >
->Opmerking over **nameSevers**: gebruikt standaard het netwerk
+>Opmerking over **nameSevers**: standaard wordt het netwerk gebruikt
 >parameters van de eerste netwerkinterface die in Windows is gedeclareerd
 >niet gedefinieerd in UNIX. Definieert de domeinnaamservers (DNS)
->gebruikt door MTA om de Uitwisseling van de Post te krijgen voor
+>gebruikt door MTA om de Uitwisseling van de Post te krijgen voor wordt verklaard
 >een domein.
 >
->Als deze waarde niet wordt bepaald, zoekt MTA deze informatie in de configuratie van het gastheernetwerk. Als verscheidene DNS mogelijk zijn, moeten de verschillende DNS adressen door een komma worden gescheiden (voorbeeld: 212.15.207.1.212.15.207.2). Als uw leveringsserver verscheidene netwerkinterfaces heeft, is de DNS lijst die door MTA wordt gebruikt eerste. In dit geval raden we u aan de **nameServer** om dubbelzinnigheid te voorkomen.
+>Als deze waarde niet wordt bepaald, zoekt MTA deze informatie in de configuratie van het gastheernetwerk. Als verscheidene DNS mogelijk zijn, moeten de verschillende DNS adressen door een komma worden gescheiden (voorbeeld: 212.155.207.1,212.155.207.2). Als uw leveringsserver verscheidene netwerkinterfaces heeft, is de DNS lijst die door MTA wordt gebruikt eerste. In dit geval raden we u aan de **nameServer** om dubbelzinnigheid te voorkomen.
 
 >[!CAUTION]
 >
@@ -575,15 +576,15 @@ Raadpleeg voor meer informatie [Toegestane externe opdrachten beperken](../../in
   </tr> 
   <tr> 
    <td> user<br /> </td> 
-   <td> Opdrachten uitvoeren als een andere gebruiker.<br /> </td> 
+   <td> Voer bevelen als verschillende gebruiker uit.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## htmlToPdf {#htmltopdf}
+## htmlToPDF {#htmltopdf}
 
-Hier zijn de verschillende parameters van **htmlToPdf** knooppunt. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
+Hier zijn de verschillende parameters van **htmlToPDF** knooppunt. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
 
 <table> 
  <thead> 
@@ -621,13 +622,13 @@ Hier zijn de verschillende parameters van **htmlToPdf** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> uitgebreid<br /> </td> 
-   <td> Modus Uitgebreid: begin in uitgebreide wijze om mogelijke fouten te diagnostiseren.<br /> </td> 
+   <td> Uitgebreide modus: start in uitgebreide modus om mogelijke fouten te diagnosticeren.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> waitTime<br /> </td> 
-   <td> Vertraging bij wachten op een proces: vertraging in seconden, wanneer alle processen tegelijkertijd worden gebruikt en wanneer het wachten op een proces om omhoog vrij te maken. Als deze vertraging wordt overschreden, wordt de omzetting tegengehouden en een fout wordt opgeheven. <br /> </td> 
+   <td> Vertraging bij het wachten op een proces: vertraging in seconden, wanneer alle processen tezelfdertijd worden gebruikt en wanneer het wachten op een proces om omhoog vrij te maken. Als deze vertraging wordt overschreden, wordt de omzetting tegengehouden en een fout wordt opgeheven. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
@@ -752,7 +753,7 @@ Hier zijn de verschillende parameters van **mailExchanger** knooppunt. Dit is de
  <tbody> 
   <tr> 
    <td> mxAddress<br /> </td> 
-   <td> SMTP-server: IP adres van server SMTP voor de overdracht van e-mails.<br /> </td> 
+   <td> SMTP-server: IP-adres van SMTP-server voor e-mailoverdracht.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -804,7 +805,7 @@ Hier zijn de verschillende parameters van **toezicht** knooppunt. Dit is de conf
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> Maximale bereidingstijd: duur in seconden waarna een leveringsactie niet langer moet worden voorbereid.<br /> </td> 
+   <td> Maximale voorbereidingstijd: duur in seconden waarna een afleveringsactie niet langer moet worden voorbereid.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -894,7 +895,7 @@ Raadpleeg voor meer informatie [Configuratie proxyverbinding](file-res-managemen
   </tr> 
   <tr> 
    <td> useSingleProxy<br /> </td> 
-   <td> Unieke proxyserver: gebruik de zelfde configuratie voor alle types van volmacht.<br /> </td> 
+   <td> Unieke proxyserver: gebruik dezelfde configuratie voor alle typen proxy.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -990,7 +991,7 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
   </tr> 
   <tr> 
    <td> debugTrace<br /> </td> 
-   <td> Foutopsporingsspoor van het URL-selectiemechanisme: geeft extra berichten tijdens het URL-verificatieproces uit.<br /> </td> 
+   <td> Foutopsporing in de tracering van het URL-selectiemechanisme: geeft tijdens het URL-verificatieproces extra berichten uit.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1014,12 +1015,12 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
  <tbody> 
   <tr> 
    <td> dnsSuffix<br /> </td> 
-   <td> Domeinnaam, of bovenliggende domein, waarop de URL betrekking heeft: het volledige of gedeeltelijke domein van URL te verifiëren, om de controle te versnellen. De URL wordt alleen geverifieerd met betrekking tot de reguliere expressie als het domein ervan dsnSuffix bevat.<br /> </td> 
+   <td> De domeinnaam, of het domeinouder, betrokken bij URL: geheel of een deel van het domein van URL om te verifiëren, om de controle te versnellen. De URL wordt alleen geverifieerd met betrekking tot de reguliere expressie als het domein ervan dsnSuffix bevat.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Gewone expressie voor het verfijnen van validatie van URL's die tot dit domein behoren: reguliere expressie die door de URL moet worden geverifieerd, voor het geval deze overeenkomt met dnsSuffix.<br /> </td> 
+   <td> Reguliere expressie voor het verfijnen van validatie van URL's die tot dit domein behoren: reguliere expressie die de URL moet verifiëren, indien deze overeenkomt met dnsSuffix.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -1027,7 +1028,7 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
 
 Indien een record voldoet **dnsSuffix** maar niet **urlRegEx**, wordt de volgende record onderzocht.
 
-Bijvoorbeeld, om toegang tot alle URLs van het domein business.com te verlenen, kunnen wij twee verslagen bepalen:
+Als u bijvoorbeeld toegang wilt verlenen tot alle URL&#39;s van het domein business.com, kunt u twee records definiëren:
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
@@ -1141,13 +1142,13 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1159,7 +1160,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1183,7 +1184,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   </tr> 
   <tr> 
    <td> smtpEnableTLS<br /> </td> 
-   <td> Ondersteuning voor SMTPS activeren: Hiermee activeert u de levering van e-mailberichten in de veilige modus (STARTTLS/SMTPS) wanneer deze worden ondersteund door de externe server.<br /> </td> 
+   <td> SMTPS-ondersteuning activeren: activeert de levering van e-mails in veilige modus (STARTTLS/SMTPS) wanneer deze worden ondersteund door de externe server.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1201,7 +1202,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   </tr> 
   <tr> 
    <td> smtpRelayPort<br /> </td> 
-   <td> IP-poort van SMTP-server.<br /> </td> 
+   <td> IP haven van server SMTP.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -1236,13 +1237,13 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Instantienaam controleren: Indien true, moet de naam van de Adobe Campaign-instantie in de Message-ID-headers gelijk zijn aan de huidige instantie. <br /> </td> 
+   <td> Verifieer instantienaam: als waar, moet de naam van de instantie van Adobe Campaign in de bericht-identiteitskaart- kopballen het zelfde als de huidige instantie zijn. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
-   <td> Adres doorsturen: standaard e-mailadres wordt niet verwerkt door een regel. <br /> </td> 
+   <td> Doorsturen van adres: standaard e-mailadres wordt niet door een regel verwerkt. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1254,13 +1255,13 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> Berichtgrootte negeren: wordt gebruikt om de grootte van een bericht te negeren dat door POP3 servers is teruggekeerd. In dit geval verwacht de module een '.' aan het einde van de berichten. <br /> </td> 
+   <td> Negeer berichtgrootte: wordt gebruikt om de grootte van een bericht te negeren dat door POP3 servers is teruggekeerd. In dit geval verwacht de module een '.' aan het einde van de berichten. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
-   <td> Leesperiode bericht: de stemfrequentie van de berichtrij.<br /> </td> 
+   <td> Bericht leesperiode: stemfrequentie berichtwachtrij.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -1272,7 +1273,7 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
-   <td> Maximumaantal bij te werken logboeken: bepaalt het maximumaantal logboekberichten in geheugen te houden alvorens het gegevensbestand bij te werken.<br /> </td> 
+   <td> Maximumaantal logbestanden dat moet worden bijgewerkt: hiermee definieert u het maximumaantal logberichten dat in het geheugen moet worden bewaard voordat de database wordt bijgewerkt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -1284,13 +1285,13 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1320,7 +1321,7 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1410,13 +1411,13 @@ Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1434,7 +1435,7 @@ Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1487,25 +1488,25 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
-   <td> Pad van verzonden e-mailberichten opslaan: als niet leeg, het pad waar alle bronbestanden van verzonden e-mails worden opgeslagen. <br /> </td> 
+   <td> Pad van verzonden e-mailberichten opslaan: als het pad niet leeg is, worden alle bronbestanden van verzonden e-mails opgeslagen. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> debugPath<br /> </td> 
-   <td> Map dumpen:iIf not empty, copy MIME envelopes of sent mail messages in this directory. Wordt gebruikt voor het oplossen van problemen. <br /> </td> 
+   <td> Map dumpen:iIf not empty, copy MIME envelopes of sent mail messages in this directory. Wordt gebruikt voor probleemoplossing. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> dnsRequestLogDelayMS<br /> </td> 
-   <td> DNS-vertraging voor querylogbestanden: tijd in milliseconden om de logbestanden weer te geven.<br /> </td> 
+   <td> DNS vertraging van querylogs: tijd in milliseconden om de logboeken weer te geven.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
-   <td> Frequentie foutstatistieken: tijd tussen de productie van statistieken en de opslag in de database. <br /> </td> 
+   <td> Frequentie van foutstatistieken: tijd tussen het genereren van statistieken en de opslag in de database. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -1535,13 +1536,13 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1553,7 +1554,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
-   <td> Foutdrempel waarmee rekening moet worden gehouden: Er worden geen foutstatistieken gegenereerd voor een bepaald pad als het totale aantal fouten voor de door errorPeriodSec opgegeven periode strikt onder de drempel ligt.<br /> </td> 
+   <td> Foutdrempel waarmee rekening moet worden gehouden: voor een bepaald pad worden geen foutstatistieken gegenereerd als het totale aantal fouten voor de door errorPeriodSec gespecificeerde periode strikt onder de drempel ligt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -1565,25 +1566,25 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Haven die aan relaisberichten wordt gebruikt.<br /> </td> 
+   <td> Het relais van het bericht: HostName:Haven die aan relaisberichten wordt gebruikt.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
-   <td> Vertraging voordat gearchiveerde e-mailberichten worden verwijderd: aantal dagen voordat gearchiveerde e-mailberichten in de map die in dataLogPath is opgegeven, worden gewist.<br /> </td> 
+   <td> Vertraging voordat gearchiveerde e-mailberichten worden verwijderd: aantal dagen voordat gearchiveerde e-mails in de map die in dataLogPath is opgegeven, worden gewist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
    <td> retryLostMessages<br /> </td> 
-   <td> Verloren berichten opnieuw proberen: delen van leveringen worden opnieuw geprobeerd als het onderliggende proces dood is.<br /> </td> 
+   <td> Verloren berichten opnieuw proberen: onderdelen van leveringen worden opnieuw geprobeerd als het onderliggende proces is voltooid.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1614,7 +1615,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> statServerTLSSupport<br /> </td> 
-   <td> TLS inschakelen op domein: laat TLS toe configureerbaar door MX (vereist een bijgewerkte statistiekserver).<br /> </td> 
+   <td> Schakel TLS per domein in: maakt het TLS configureerbaar door MX (vereist een bijgewerkte statistische server).<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
@@ -1632,7 +1633,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
-   <td> Verificatiemodus: activeert de controlemodus (geen fysieke transmissie van berichten); gebruikt voor simulatie en tests).<br /> </td> 
+   <td> Verificatiemodus: activeert de modus Verifiëren (geen fysieke transmissie van berichten; wordt gebruikt voor simulatie en tests).<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1644,7 +1645,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
-   <td> Veld X-Mailer: waarde van veld 'X-Mailer' in SMTP-mailheader.<br /> </td> 
+   <td> X-Mailer gebied: waarde van gebied "x-Mailer"in SMTP postkopbal.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
@@ -1667,7 +1668,7 @@ In de **cachegeheugen** knoop, vorm de volgende parameters. Dit is de lokale con
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> Gerecycled na: punt, uitgedrukt in seconden, waarna het bestand automatisch van de cache wordt verwijderd om de opslag terug te winnen.<br /> </td> 
+   <td> Gerecycled na: punt, uitgedrukt in seconden, waarna het bestand automatisch wordt verwijderd uit de cache om de opslag terug te winnen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
@@ -1679,7 +1680,7 @@ In de **cachegeheugen** knoop, vorm de volgende parameters. Dit is de lokale con
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
-   <td> Frequentie leegmaken: periode in seconden tussen de executies van het mechanisme voor het leegmaken van de cache.<br /> </td> 
+   <td> Wisfrequentie: periode in seconden tussen het uitvoeren van het mechanisme voor het leegmaken van de cache.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -1692,7 +1693,7 @@ In de **mta > relais** knoop, vorm de volgende parameters. Dit is de configurati
 
 De lijst zal op de zelfde manier worden behandeld zoals een lijst van MX door een MX DNS vraag is teruggekeerd, gewoonlijk eerste MX wordt gebruikt zolang het beschikbaar is, dan volgende wordt gebruikt, etc.
 
-Raadpleeg voor meer informatie [SMTP-relais](../../installation/using/configuring-campaign-server.md#smtp-relay).
+Raadpleeg voor meer informatie [SMTP-relay](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
 <table> 
  <thead> 
@@ -1712,7 +1713,7 @@ Raadpleeg voor meer informatie [SMTP-relais](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> poort<br /> </td> 
-   <td> IP-poort van SMTP-server.<br /> </td> 
+   <td> IP haven van server SMTP.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -1743,7 +1744,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> Wachten op periode na fout met databaseverbinding. Een fout in de databaseverbinding wordt meestal veroorzaakt door de databaseserver zelf. De server kan bijvoorbeeld ook voor onderhoudsdoeleinden worden gestopt. De parameter DataBaseRetryDelay bepaalt de duur tussen twee verbindingspogingen in het geval van een mislukking van de gegevensbestandverbinding.<br /> </td> 
+   <td> Wachten op periode na fout met databaseverbinding. Een fout van de gegevensbestandverbinding wordt gewoonlijk veroorzaakt door de gegevensbestandserver zelf. De server kan bijvoorbeeld ook voor onderhoudsdoeleinden worden gestopt. De parameter DataBaseRetryDelay bepaalt de duur tussen twee verbindingspogingen in het geval van een mislukking van de gegevensbestandverbinding.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -1767,14 +1768,14 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Aantal onderliggende server bij opstarten. Het aantal onderliggende servers wordt dynamisch gecontroleerd; wanneer MTA begint, leidt het tot zo vele kindservers zoals die door deze waarde worden vermeld. Onderliggende servers kunnen gewoonlijk niet sneller dan één server per seconde worden gestart om hostbronnen op te slaan. Nochtans, wanneer MTA begint, wordt deze beperking genegeerd zodat de kindservers beschikbaar zijn zo spoedig mogelijk.<br /> </td> 
+   <td> Aantal onderliggende server bij opstarten. Het aantal kindservers wordt dynamisch gecontroleerd; wanneer MTA begint, leidt het tot zo vele kindservers zoals die door deze waarde worden vermeld. Onderliggende servers kunnen normaal gesproken niet sneller dan één server per seconde worden gestart om hostbronnen op te slaan. Nochtans, wanneer MTA begint, wordt deze beperking genegeerd zodat de kindservers beschikbaar zijn zo spoedig mogelijk.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### onderliggend {#child}
+### kind {#child}
 
 In de **mta > child** knoop, vorm de volgende parameters. Dit is de configuratie van kindservers.
 
@@ -1822,7 +1823,7 @@ Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../instal
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
-   <td> In behandeling zijnde berichten: maximumaantal berichten dat in het geheugen wacht om te worden afgeleverd. <br /> </td> 
+   <td> Berichten in behandeling: maximumaantal berichten dat in het geheugen wacht dat moet worden geleverd. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
@@ -1840,7 +1841,7 @@ Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../instal
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
-   <td> Begin altijd met de hoogste prioriteit MX.<br /> </td> 
+   <td> Begin altijd met de hoogste prioriteit.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1907,7 +1908,7 @@ Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domeinnaam: lokale domeinnaam die aan het IP-adres is gekoppeld. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
+   <td> Domeinnaam: lokale domeinnaam gekoppeld aan het IP-adres. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
   <tr> 
@@ -1933,7 +1934,7 @@ Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt
  <tbody> 
   <tr> 
    <td> adres<br /> </td> 
-   <td> Gekoppeld fysiek adres. Voorbeeld: "192.168.0.1"<br /> </td> 
+   <td> Gekoppeld fysiek adres. Bijvoorbeeld: "192.168.0.1"<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
   <tr> 
@@ -2003,7 +2004,7 @@ Hier zijn de verschillende parameters van **nmac > relais** knooppunt. Dit vormt
  <tbody> 
   <tr> 
    <td> adres<br /> </td> 
-   <td> DNS-adres of naam van het relais dat moet worden gebruikt. <br /> </td> 
+   <td> DNS adres of naam van het relais aan gebruik. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> </td> 
   </tr> 
@@ -2022,9 +2023,9 @@ Hier zijn de verschillende parameters van **nmac > relais** knooppunt. Dit vormt
  </tbody> 
 </table>
 
-## gelijnd {#pipelined}
+## gepijld {#pipelined}
 
-Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de configuratie van de module van de gebeurtenisverwerking voor de Diensten van de Pijpleiding.
+Hier zijn de verschillende parameters van **gepijld** knooppunt. Dit is de configuratie van de module van de gebeurtenisverwerking voor de Diensten van de Pijpleiding.
 
 <table> 
  <thead> 
@@ -2068,7 +2069,7 @@ Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> disableAuth<br /> </td> 
-   <td> Verificatie uitschakelen: Verbind met de Diensten van de Pijpleiding zonder authentificatie. <br /> </td> 
+   <td> Schakel verificatie uit: maak verbinding met Pipeline Services zonder verificatie. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -2080,13 +2081,13 @@ Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> Opslagperiode status: frequentie waarmee de interne informatie van het proces in een bestand wordt opgeslagen. Inactief als 0. <br /> </td> 
+   <td> Opslagperiode status: frequentie waarmee de interne gegevens van het proces in een bestand worden opgeslagen. Inactief als 0. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> forcePipelineEndpoint<br /> </td> 
-   <td> URL luisteren: forceer het luisteren URL van de Diensten van de Pijpleiding. <br /> </td> 
+   <td> Luisteren naar URL: forceer de luisterende URL van de Diensten van de Pijpleiding. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2098,19 +2099,19 @@ Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
-   <td> Statusserverpoort: De serverhaven van HTTP die u toestaat om de status van het proces te vragen. Inactief als 0.<br /> </td> 
+   <td> Statusserverpoort: HTTP-serverpoort waarmee u de status van het proces kunt controleren. Inactief als 0.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 7781<br /> </td> 
   </tr> 
@@ -2128,7 +2129,7 @@ Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2146,13 +2147,13 @@ Hier zijn de verschillende parameters van **gelijnd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> retryPeriodSec<br /> </td> 
-   <td> Vertraging tussen de verwerking bij een fout.<br /> </td> 
+   <td> Vertraging tussen de verwerking als er een fout optreedt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> retryValiditySec<br /> </td> 
-   <td> Na deze periode vervalt: de gebeurtenis te beëindigen als de verwerking na deze periode nog steeds mislukt.<br /> </td> 
+   <td> Na deze periode afzien: de gebeurtenis laten vallen als de verwerking na deze periode nog steeds mislukt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2181,7 +2182,7 @@ Hier zijn de verschillende parameters van **repareren** knooppunt. Dit is de con
  <tbody> 
   <tr> 
    <td> RepareerActionDelayMin<br /> </td> 
-   <td> Herstellingsmodule voor leveringsacties: vertraging (in minuten) waarna de leveringsacties door de reparatiemodule kunnen worden verwerkt. <br /> </td> 
+   <td> Reparatiemodule voor leveringsacties: vertraging (in minuten) waarna de leveringsacties door de reparatiemodule kunnen worden verwerkt. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -2356,7 +2357,7 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> dataRetentionDays<br /> </td> 
+   <td> dataRetretentieDays<br /> </td> 
    <td> Maximumaantal dagen dat bestanden werkbestanden zijn die door de SMPP-connector worden bewaard.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
@@ -2381,31 +2382,31 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
-   <td> Zoekfrequentie: Periode voor opiniepeiling van SMS-accounts.<br /> </td> 
+   <td> Zoekfrequentie: opiniepeilingperiode van een SMS-account.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
-   <td> Frequentie voor opnieuw laden van account: opnieuw laden van de database van rekeningen die moeten worden gepolled.<br /> </td> 
+   <td> Rekeningfrequentie voor opnieuw laden: frequentie voor het opnieuw laden van de database van accounts die moeten worden gepolled.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2417,7 +2418,7 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> srReadDelay<br /> </td> 
-   <td> Aantal seconden vertraging bij SR-verwerking: alleen SRs met een terugwinningsdatum vroeger dan de huidige tijd minus de duur in seconden die door srReadDelay wordt gegeven. <br /> </td> 
+   <td> Aantal seconden te laat voor SR-verwerking: alleen SR's met een terugwinningsdatum eerder dan de huidige tijd minus de duur in seconden gegeven door srReadDelay. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2487,13 +2488,13 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2505,7 +2506,7 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2520,7 +2521,7 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
 
 ## syslogd {#syslogd}
 
-Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de configuratie van de het beheersmodule van het Logboek.
+Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de configuratie van de Logbeheermodule.
 
 <table> 
  <thead> 
@@ -2564,19 +2565,19 @@ Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de confi
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2629,13 +2630,13 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
-   <td> Deduplicatieopeningen: Verwijder dubbele open het volgen logboeken om de gevolgen van postvoorproeven in postlezers zoals Vooruitzichten te beperken.<br /> </td> 
+   <td> Deduplicate openings: verwijder dubbele open volgende logboeken om de gevolgen van postvoorproeven in postlezers zoals Vooruitzichten te beperken.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> errorIgnorePercent<br /> </td> 
-   <td> Tot X% fouten negeren: de volgindicatoren niet bijwerken zolang de verhouding van tijdschriften die nog niet in aanmerking zijn genomen deze waarde niet bereikt. <br /> </td> 
+   <td> Negeer tot X% van de fouten: werk geen traceerindicatoren bij zolang de verhouding van tijdschriften die nog niet in aanmerking zijn genomen deze waarde niet bereikt. <br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2647,7 +2648,7 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> indicatorDuration<br /> </td> 
-   <td> Indicatoren berekenen tijdens: duur na de geldigheidsdatum van een levering waarna de geconsolideerde indicatoren niet langer worden berekend.<br /> </td> 
+   <td> Berekening van indicatoren tijdens: duur na de geldigheidstermijn van een levering waarna de geconsolideerde indicatoren niet langer worden berekend.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
@@ -2665,19 +2666,19 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
-   <td> API sleutel voor de Integratie van het Eindpunt van de Dienst Phishbowl. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd. <br /> </td> 
+   <td> API-sleutel voor de Phishbowl Service Endpoint Integration. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2689,7 +2690,7 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2701,13 +2702,13 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> Tot X% van tekstspatiëring negeren: de volgindicatoren niet bijwerken zolang de verhouding van tijdschriften die nog niet in aanmerking zijn genomen deze waarde niet bereikt.<br /> </td> 
+   <td> Negeer tot X% van het volgen: werk volgindicatoren niet bij zolang de verhouding van dagboeken niet reeds in aanmerking wordt genomen niet deze waarde bereikt.<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingIgnorePeriod<br /> </td> 
-   <td> Trackingindicatoren bijwerken: maximumduur voordat de traceerindicatoren opnieuw worden berekend.<br /> </td> 
+   <td> Trackingindicatoren bijwerken: de maximumduur voordat trackingindicatoren opnieuw worden berekend.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -2754,25 +2755,25 @@ Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de 
   </tr> 
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
-   <td> Max. schrijfpogingen: maximumaantal bestanden dat kan worden gemaakt in geval van een schrijffout in logbestanden.<br /> </td> 
+   <td> Max. aantal schrijfpogingen: maximumaantal bestanden dat kan worden gemaakt in geval van schrijffout in logbestanden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
-   <td> Maximale loggrootte: maximale ruimte die wordt gebruikt door het aanmelden op de schijf (in MB). Mag niet minder dan 100 MB zijn. <br /> </td> 
+   <td> Maximale loggrootte: maximale ruimte die door het aanmelden op schijf wordt gebruikt (in MB). Mag niet minder dan 100 MB zijn. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2784,13 +2785,13 @@ Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
-   <td> Aantal stammen vóór zuivering: Het aantal logbestanden dat is ingevoegd voordat de logbestanden worden gewist. Mag niet lager zijn dan 50000.<br /> </td> 
+   <td> Aantal logbestanden voor leegmaken: aantal logbestanden ingevoegd voordat het leegmaken van logbestanden wordt gestart. Mag niet lager zijn dan 50000.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50000<br /> </td> 
   </tr> 
@@ -2857,13 +2858,13 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat-luistercontrolepoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
+   <td> Tomcat-luistercontrolepoort: zie <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-luisterpoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
+   <td> Tomcat HTTP-luisterpoort: verwijs naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -2875,31 +2876,31 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> Grootte van de rij voor Vraag SubmitDelivery: maximumaantal vraag van de ZEEP SubmitDelivery die een rij kan worden gevormd.<br /> </td> 
+   <td> Grootte van de rij voor vraag SubmitDelivery: maximumaantal vraag van de ZEEP SubmitDelivery die een rij kan worden gevormd.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB)<br /> </td> 
+   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Port die relais van berichten toelaat.<br /> </td> 
+   <td> Het relais van het bericht: HostName:Haven toelatend relais van berichten.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2934,7 +2935,7 @@ Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de con
  <tbody> 
   <tr> 
    <td> foutopsporing<br /> </td> 
-   <td> Uitvoering van JSP in foutopsporingsmodus of niet.<br /> </td> 
+   <td> Uitvoering van JSP in zuivert of niet wijze.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2952,7 +2953,7 @@ Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> URL van de router van de ZEEP (http://myserver/xxx, http://jni of mailto:xxx).<br /> </td> 
+   <td> URL van SOAP-router (http://myserver/xxx, http://jni of mailto:xxx).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
@@ -3058,19 +3059,19 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
-   <td> Verboden teken(s) (pad): lijst met verboden tekens in de sectie 'path' van een URI.<br /> </td> 
+   <td> Verboden teken(s) (pad): lijst met verboden tekens in de sectie 'pad' van een URI.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
-   <td> Waarde van de module 'mod_dir'-optie: lijst met bestanden die moeten worden gebruikt tijdens een query op een map.<br /> </td> 
+   <td> Waarde van de module 'mod_dir': lijst met bestanden die moeten worden gebruikt tijdens een query op een map.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
   <tr> 
    <td> startRelay<br /> </td> 
-   <td> Start de HTTP relay module.<br /> </td> 
+   <td> Start de HTTP relaismodule.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3105,7 +3106,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
  <tbody> 
   <tr> 
    <td> IPMask<br /> </td> 
-   <td> Erkende IP's: komma's gescheiden lijst van bronIP adressen toegestaan om het relais voor dit masker te gebruiken.<br /> </td> 
+   <td> Erkende IPs: komma gescheiden lijst van bronIP adressen toegestaan om het relais voor dit masker te gebruiken.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3117,7 +3118,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   </tr> 
   <tr> 
    <td> hostMask<br /> </td> 
-   <td> DNS-alias naar relais: door komma's gescheiden lijst met DNS-aliasmaskers die moeten worden doorgestuurd (bijv. "*.adobe.com").<br /> </td> 
+   <td> DNS-alias voor het doorgeven: door komma's gescheiden lijst met DNS-aliasmaskers die moeten worden doorgestuurd (bijvoorbeeld: '*.adobe.com').<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3129,13 +3130,13 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   </tr> 
   <tr> 
    <td> relaisHost<br /> </td> 
-   <td> Oorspronkelijke host toevoegen: gebruik de HTTP 'Host'-header van de oorspronkelijke aanvraag bij het opnieuw afspelen.<br /> </td> 
+   <td> Voeg oorspronkelijke host toe: gebruik de HTTP 'Host'-header van de oorspronkelijke aanvraag bij het opnieuw afspelen.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> relaisPath<br /> </td> 
-   <td> Eerste URL-pad toevoegen: voeg het volledige pad van de URL's toe om door te geven aan de URL van de doelpagina. <br /> </td> 
+   <td> Voeg het eerste URL-pad toe: voeg het volledige pad van de URL's toe dat moet worden doorgestuurd naar de URL van de doelpagina. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3147,7 +3148,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL van de doelpagina: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
+   <td> URL van de doelpagina: zie <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3305,13 +3306,13 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   </tr> 
   <tr> 
    <td> defLogCount<br /> </td> 
-   <td> Aantal logbestanden per aanroep: aantal logboeken die door gebrek op een vraag van methode GetTrackingLogs zijn teruggekeerd.<br /> </td> 
+   <td> De telling van het logboek door vraag: aantal logboeken die door gebrek op een vraag van methode GetTrackingLogs zijn teruggekeerd.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> expirationURL<br /> </td> 
-   <td> Pagina voor verlopen omleidingen: URL van Web-pagina die door gebrek door de redirection server wordt gebruikt wanneer redirection voor een leveringsactie is verlopen.<br /> </td> 
+   <td> Pagina voor verlopen omleiding: URL van Web-pagina die door gebrek door de omleidingsserver wordt gebruikt wanneer redirection voor een leveringsactie is verlopen.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3341,13 +3342,13 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   </tr> 
   <tr> 
    <td> trackWebVisitors<br /> </td> 
-   <td> Webspatiëring: het maken van logboeken voor de pagina's die door onbekende gebruikers worden bezocht. <br /> </td> 
+   <td> Webtracering: het maken van logboeken voor de pagina's die door onbekende gebruikers worden bezocht. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingPassword<br /> </td> 
-   <td> Wachtwoord dat wordt gebruikt door de omleidingsserver.<br /> </td> 
+   <td> Wachtwoord gebruikt door de omleidingsserver.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3370,7 +3371,7 @@ Raadpleeg voor meer informatie [Overbodige tekstspatiëring](../../installation/
  <tbody> 
   <tr> 
    <td> enabledIf<br /> </td> 
-   <td> Wordt in aanmerking genomen: de volgende server wordt in aanmerking genomen als de uitdrukking waar terugkeert. <br /> </td> 
+   <td> Hiermee wordt rekening gehouden als: de trackingserver wordt gebruikt als de expressie true retourneert. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3406,7 +3407,7 @@ Raadpleeg voor meer informatie [SpamAssassin configureren](../../installation/us
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Uit te voeren opdracht om de anti-spamscore van een e-mail te evalueren (bijvoorbeeld "perl spamcheck.pl").<br /> </td> 
+   <td> Opdracht die moet worden uitgevoerd om de anti-spamscore van een e-mail te evalueren (bijvoorbeeld 'perl spamcheck.pl').<br /> </td> 
    <td> Tekenreeks<br /> </td> 
   </tr> 
  </tbody> 
@@ -3430,7 +3431,7 @@ Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarhe
  <tbody> 
   <tr> 
    <td> affiniteit<br /> </td> 
-   <td> affiniteit<br /> </td> 
+   <td> Affiniteit<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3460,25 +3461,25 @@ Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarhe
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Geheugenverbruikswaarschuwing: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
+   <td> Waarschuwing bij geheugenverbruik: waarschuwing over de hoeveelheid RAM die tijdens een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Meldingsrelais: HostName:Port die relais van berichten toelaat.<br /> </td> 
+   <td> Het relais van het bericht: HostName:Haven toelatend relais van berichten.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch proces opnieuw opstarten</a>.<br /> </td> 
+   <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 

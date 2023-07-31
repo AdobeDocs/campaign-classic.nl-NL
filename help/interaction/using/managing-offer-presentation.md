@@ -2,16 +2,17 @@
 product: campaign
 title: Presentatie van aanbieding beheren
 description: Presentatie van aanbieding beheren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 0%
+source-wordcount: '1007'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +68,7 @@ De toepassingscriteria die beschikbaar zijn in de **[!UICONTROL General]** kunt 
 
 In de **[!UICONTROL Offer presentation]** , moet u dezelfde afmetingen voor de presentatieregel opgeven als de afmetingen die in de omgeving zijn geconfigureerd.
 
-De **[!UICONTROL Targeting dimension]** komt overeen met de tabel met ontvangers (standaard: nms:ontvangers) die de voorstellen ontvangen. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard:nms:propositionRcp).
+De **[!UICONTROL Targeting dimension]** komt overeen met de lijst met ontvangers (standaard: nms:ontvangers) die de voorstellen zullen ontvangen. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -79,7 +80,7 @@ De **[!UICONTROL Targeting dimension]** komt overeen met de tabel met ontvangers
 
 Dit is een verschuivende periode die begint op de presentatiedatum van de aanbieding. Er wordt een termijn vastgesteld voor de geldigheid van de voorstellen. De regel geldt niet voor voorstellen die na deze periode worden gedaan.
 
-De periode start **n** dagen vóór de datum en einddatum van het voorstel **n** dagen na **n** komt overeen met het nummer dat is ingevoerd in het **[!UICONTROL Period considered]** veld:
+De periode start **n** dagen vóór de datum en einddatum van het voorstel **n** dagen daarna, waarbij **n** komt overeen met het nummer dat is ingevoerd in het **[!UICONTROL Period considered]** veld:
 
 * Voor binnenkomende ruimten, is de voorstellingsdatum de datum van de aanbiedingspresentatie.
 * Voor uitgaande ruimten, is de voorstellingsdatum de datum van het leveringscontact (bijvoorbeeld de leveringsdatum ingegaan in een het richten werkschema).
@@ -110,45 +111,45 @@ Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. A
 
 * **Filter op het kanaal**
 
-   **[!UICONTROL On the same channel only]** : Hiermee kunt u voorstellen uitsluiten voor het kanaal dat is opgegeven in het dialoogvenster **[!UICONTROL General]** tab.
+  **[!UICONTROL On the same channel only]** : hiermee kunt u voorstellen uitsluiten voor het kanaal dat is opgegeven in het dialoogvenster **[!UICONTROL General]** tab.
 
-   Het kanaal dat bijvoorbeeld voor de regel is opgegeven in het dialoogvenster **[!UICONTROL General]** tab is e-mail. Als de aanbiedingen waarop de regel van toepassing is, tot dusverre alleen via het webkanaal worden aangeboden, kan de Interaction-engine de aanbiedingen in een e-maillevering presenteren. Als de aanbiedingen echter eenmaal per e-mail zijn verzonden, kiest de interactieengine een ander kanaal om de aanbiedingen weer te geven.
+  Het kanaal dat bijvoorbeeld voor de regel is opgegeven in de **[!UICONTROL General]** tab is e-mail. Als de aanbiedingen waarop de regel van toepassing is, tot dusverre alleen via het webkanaal worden aangeboden, kan de Interaction-engine de aanbiedingen in een e-maillevering presenteren. Als de aanbiedingen echter eenmaal per e-mail zijn verzonden, kiest de interactieengine een ander kanaal om de aanbiedingen weer te geven.
 
-   >[!NOTE]
-   >
-   >We hebben het over het kanaal en niet over de ruimte. Als de regel een aanbieding op het webkanaal moet uitsluiten, wordt het aanbod dat bestemd is om in twee ruimten op een website te worden aangeboden (bijvoorbeeld in een banner en in de tekst van de pagina), niet op de site weergegeven als het al eerder is gepresenteerd.
-   >
-   >Voor een werkschema dat aanbiedingspresentatie impliceert, worden de regels slechts correct in aanmerking genomen als zij worden gevormd **[!UICONTROL All channels]**.
+  >[!NOTE]
+  >
+  >We hebben het over het kanaal en niet over de ruimte. Als de regel een aanbieding op het webkanaal moet uitsluiten, wordt het aanbod dat bestemd is om in twee ruimten op een website te worden aangeboden (bijvoorbeeld in een banner en in de tekst van de pagina), niet op de site weergegeven als het al eerder is gepresenteerd.
+  >
+  >Voor een werkschema dat aanbiedingspresentatie impliceert, worden de regels slechts correct in aanmerking genomen als zij worden gevormd **[!UICONTROL All channels]**.
 
 * **Filter op de aanbieding**
 
-   Met dit filter kunt u de aanbiedingsvoorstellen beperken tot specifieke groepen aanbiedingen.
+  Met dit filter kunt u de aanbiedingsvoorstellen beperken tot specifieke groepen aanbiedingen.
 
-   **[!UICONTROL All offers]** : standaardwaarde. Er wordt geen filter toegepast op de aanbiedingen.
+  **[!UICONTROL All offers]** : standaardwaarde. Er wordt geen filter toegepast op de aanbiedingen.
 
-   **[!UICONTROL Offer being presented]** : het aanbod dat in het **[!UICONTROL General]** is uitgesloten als het al is weergegeven.
+  **[!UICONTROL Offer being presented]** : de aanbieding die in de **[!UICONTROL General]** is uitgesloten als het al is weergegeven.
 
-   **[!UICONTROL Offers from the same category]** : een aanbieding is uitgesloten indien reeds een voorstel van dezelfde categorie is ingediend.
+  **[!UICONTROL Offers from the same category]** : een aanbieding is uitgesloten indien reeds een aanbieding in dezelfde categorie is ingediend.
 
-   **[!UICONTROL The offers which the rule applies to]** : wanneer in het dialoogvenster **[!UICONTROL General]** tabs, wordt elk voorstel van deze reeks aanbiedingen in aanmerking genomen en eindigt de uitsluiting van alle aanbiedingen indien de propositiedrempel wordt bereikt.
+  **[!UICONTROL The offers which the rule applies to]** : wanneer meerdere aanbiedingen zijn gedefinieerd in het dialoogvenster **[!UICONTROL General]** tabs, wordt elk voorstel van deze reeks aanbiedingen in aanmerking genomen en eindigt de uitsluiting van alle aanbiedingen indien de propositiedrempel wordt bereikt.
 
-   Aanbiedingen 2, 3 en 5 worden bijvoorbeeld gedefinieerd in de **[!UICONTROL General]** tab. Het maximumaantal voorstellen wordt ingesteld op 2. Als aanbiedingen 2 en 5 elk één keer worden gepresenteerd, wordt het aantal voorstellen geteld op 2. Dit heeft tot gevolg dat aanbod 3 nooit zal worden gepresenteerd.
+  Aanbiedingen 2, 3 en 5 worden bijvoorbeeld gedefinieerd in de **[!UICONTROL General]** tab. Het maximumaantal voorstellen wordt ingesteld op 2. Als aanbiedingen 2 en 5 elk één keer worden gepresenteerd, wordt het aantal voorstellen geteld op 2. Dit heeft tot gevolg dat aanbod 3 nooit zal worden gepresenteerd.
 
 * **Filter op de status van het voorstel**
 
-   Met dit filter kunt u de meest frequente statussen kiezen voor voorstellen die in de voorpositiegeschiedenis in aanmerking moeten worden genomen.
+  Met dit filter kunt u de meest frequente statussen kiezen voor voorstellen die in de voorpositiegeschiedenis in aanmerking moeten worden genomen.
 
-   **[!UICONTROL Regardless of the proposition status]** : standaardwaarde. Er wordt geen filter toegepast op de status van het voorstel.
+  **[!UICONTROL Regardless of the proposition status]** : standaardwaarde. Er wordt geen filter toegepast op de status van het voorstel.
 
-   **[!UICONTROL Accepted or rejected propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn geaccepteerd of afgewezen.
+  **[!UICONTROL Accepted or rejected propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn geaccepteerd of afgewezen.
 
-   **[!UICONTROL Accepted propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn geaccepteerd.
+  **[!UICONTROL Accepted propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn geaccepteerd.
 
-   **[!UICONTROL Rejected propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn afgewezen.
+  **[!UICONTROL Rejected propositions]** Met : kunt u eerder ingediende voorstellen die zijn afgewezen uitsluiten.
 
 ### Ontvangers definiëren {#defining-recipients}
 
-Klik op de knop **[!UICONTROL Edit the query from the targeting dimension...]** en selecteer de ontvangers waarop de regel betrekking heeft.
+Als u de ontvangers wilt opgeven, klikt u op de knop **[!UICONTROL Edit the query from the targeting dimension...]** en selecteer de ontvangers waarop de regel betrekking heeft.
 
 ![](assets/offer_typology_012.png)
 
@@ -156,6 +157,6 @@ Klik op de knop **[!UICONTROL Edit the query from the targeting dimension...]** 
 
 Als u de voorstellen wilt opgeven die via een query moeten worden geteld, klikt u op de knop **[!UICONTROL Limit propositions...]** en de in aanmerking te nemen criteria specificeren.
 
-In het volgende voorbeeld zijn de voorstellen die na twee presentaties moeten worden geteld, de voorstellen in het dialoogvenster **Speciale aanbiedingen** categorie, voor de **Bellen** ruimte, met een gewicht onder **20**.
+In het volgende voorbeeld zijn de voorstellen die na twee presentaties moeten worden geteld, de voorstellen in het dialoogvenster **Speciale aanbiedingen** voor de **Bellen** ruimte, met een gewicht onder **20**.
 
 ![](assets/offer_typology_013.png)

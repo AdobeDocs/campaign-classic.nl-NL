@@ -2,11 +2,12 @@
 product: campaign
 title: Een gedeelde asset invoegen
 description: Een gedeelde asset invoegen
+feature: Asset Sharing
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: d399c4800fe6c5b128a6ccb5fec15262cbef5ee8
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -27,15 +28,15 @@ Middelen die door Adobe Experience Cloud worden gedeeld, kunnen als volgt op uw 
 
    * Als u het [standaardbewerkingsmodus](../../delivery/using/defining-the-email-content.md#adding-images), selecteert u **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_standard.png)
+     ![](assets/dam_insert_image_standard.png)
 
    * Als u het [geavanceerde bewerkingsmodus](../../web/using/about-campaign-html-editor.md) (DCE), ga naar een afbeeldingsblok en selecteer vervolgens via het contextmenu **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_dce.png)
+     ![](assets/dam_insert_image_dce.png)
 
-      >[!NOTE]
-      >
-      >U kunt geen gedeelde afbeeldingen vanuit Adobe Campaign invoegen in [webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) bij gebruik van de DCE.
+     >[!NOTE]
+     >
+     >U kunt geen gedeelde afbeeldingen vanuit Adobe Campaign invoegen in [webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) bij gebruik van de DCE.
 
 1. Selecteer in het selectievenster dat wordt geopend een afbeelding en bevestig deze vervolgens.
 

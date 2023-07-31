@@ -2,16 +2,17 @@
 product: campaign
 title: Een Linux-platform migreren naar Adobe Campaign v7
 description: Leer hoe u een Linux-platform kunt migreren naar Adobe Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De migratiestappen in Linux zijn als volgt:
 
 1. Stop alle services - [Meer informatie](#service-stop).
 1. De database opslaan - [Meer informatie](#back-up-the-database).
-1. Verwijder vorige Adobe Campaign-versiepakketten - [Meer informatie](#uninstalling-adobe-campaign-previous-version-packages).
+1. Oude Adobe Campaign-versiepakketten verwijderen - [Meer informatie](#uninstalling-adobe-campaign-previous-version-packages).
 1. Het platform migreren - [Meer informatie](#deploying-adobe-campaign-v7).
 1. Service opnieuw starten - [Meer informatie](#re-starting-services).
 
@@ -218,36 +219,36 @@ In deze sectie wordt getoond hoe u Adobe Campaign v6.1-pakketten kunt verwijdere
 
    * In **Debian**:
 
-      ```
-      dpkg -l | grep nl
-      ```
+     ```
+     dpkg -l | grep nl
+     ```
 
-      De lijst met geïnstalleerde pakketten wordt weergegeven:
+     De lijst met geïnstalleerde pakketten wordt weergegeven:
 
-      ```
-      ii  nlserver6                       XXXX                     nlserver6-XXXX
-      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
-      ```
+     ```
+     ii  nlserver6                       XXXX                     nlserver6-XXXX
+     ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
+     ```
 
    * In **Rode hoed**:
 
-      ```
-      rpm -qa | grep nl
-      ```
+     ```
+     rpm -qa | grep nl
+     ```
 
 1. Verwijder Adobe Campaign v6-pakketten.
 
    * In **Debian**:
 
-      ```
-      dpkg --purge nlserver6 nlthirdparty6
-      ```
+     ```
+     dpkg --purge nlserver6 nlthirdparty6
+     ```
 
    * In **Rode hoed**:
 
-      ```
-      rprm -ev nlserver6 nlthirdparty6
-      ```
+     ```
+     rprm -ev nlserver6 nlthirdparty6
+     ```
 
 ## Adobe Campaign v7 implementeren {#deploying-adobe-campaign-v7}
 
@@ -467,7 +468,7 @@ To deploy Adobe Campaign, apply the following steps:
 Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
 * Adobe Campaign v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
-* De postupgrade: deze opdracht moet voor elke instantie worden gestart.
+* De postupgrade: deze opdracht moet op elk exemplaar worden gestart.
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
@@ -475,15 +476,16 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    * In **Debian**:
 
-      ```
-      dpkg -i nlserver6-XXXX-amd64_debX.deb
-      ```
+     ```
+     dpkg -i nlserver6-XXXX-amd64_debX.deb
+     ```
 
    * In **Rode hoed**:
 
-      ```
-      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
-      ```
+     ```
+     rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
+     ```
+
    >[!IMPORTANT]
    >
    >U moet de pakketten met succes installeren alvorens aan de volgende stap te gaan.

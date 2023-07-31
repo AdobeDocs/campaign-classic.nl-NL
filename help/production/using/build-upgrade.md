@@ -2,16 +2,17 @@
 product: campaign
 title: Aan de slag met build-upgrades
 description: Leer belangrijke stappen om aan een nieuwe bouwstijl te bevorderen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 2%
+source-wordcount: '2380'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +45,7 @@ Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
 * een architect van Adobe - om de gegevensbestandstructuren (uit-van-de-doosschema&#39;s en om het even welke extra schema&#39;s te begrijpen die zijn toegevoegd, campagneontwerpen, en om het even welke kritieke wegfunctionaliteit die in een specifieke orde moet worden begonnen en worden getest).
 * een projectmanager - in het geval waar de bouwstijlverbetering vele verschillende instanties (productie, het opvoeren, het testen) en andere derdesservers en toepassingen (gegevensbestanden, de plaatsen van SFTP, overseinendienstverleners) impliceert, wordt het hebben van een projectmanager om alle het testen te coördineren beschouwd als beste praktijken.
-* een Adobe Campaign-beheerder - uw beheerder kent de configuratie van de server inclusief maar niet beperkt tot: vereisten voor beveiliging, maplay-out, rapportage en importeren\exporteren. Gelieve te voeren geen bouwstijlverbetering zonder uw beheerder uit.
+* een Adobe Campaign-beheerder - uw beheerder kent de configuratie van de server, inclusief maar niet beperkt tot: beveiliging, maplay-out, rapportage en import-\exportvereisten. Voer geen upgrade voor build uit zonder uw beheerder.
 * een Adobe Campaign-operator (marketinggebruiker) - een geslaagde upgrade is afhankelijk van het vermogen van de gebruiker om zijn dagelijkse taken met succes uit te voeren. Daarom moet u altijd ten minste een van uw dagelijkse operatoren opnemen in de tests van de bijgewerkte servers.
 
 ### Planning
@@ -54,27 +55,27 @@ Hier zijn de belangrijkste punten op hoe te om een bouwstijlverbetering te plann
 1. Reserveer minstens 2 uur voor de upgrade.
 1. Verdeel contactdetails voor Adobe en klantenpersoneel.
 1. Voor gehoste instanties: Adobe en het klantenpersoneel zullen de tijd voor de verbetering coördineren en wie zal uitvoeren.
-1. Voor instanties op locatie: het personeel van de klant beheert het gehele proces - als hulp bij het testen van aangepaste workflows en leveringslogica nodig is , moeten consultingservices worden ingevoerd .
+1. Voor on-premise gevallen: het personeel van de klant beheert het volledige proces - als hulp bij het testen van aangepaste workflows en leveringslogica nodig is, zouden de raadplegende diensten moeten worden geïntroduceerd.
 1. Bepaal en bevestig naar welke versie van Adobe Campaign u wilt upgraden - raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Bevestig bezit van verbeterings uitvoerbare voorwerpen.
 
-### Belangrijke mensen
+### Belangrijkste mensen
 
 Voor het upgradeproces voor build moeten de volgende personen worden betrokken:
 
-* Adobe architect: voor gehoste of hybride architecturen moet de architect coördineren met Adobe Campaign Client Care.
+* Adobe architect: voor gehoste of hybride architecturen moet de architect coördineren met de Adobe Campaign Client Care.
 
 * Projectmanager:
    * voor installaties op locatie: de interne projectleider van de klant leidt de upgrade en beheert de levenscyclustests.
 
-   * voor gehoste installatie: het hostingteam zal samenwerken met het Adobe Campaign Client Care-team en de klant om de upgradetijdlijn voor alle gevallen te coördineren.
+   * voor gehoste installatie: het hostingteam zal samenwerken met het Adobe Campaign Client Care-team en de klant om de tijdlijn van de upgrade voor alle instanties te coördineren.
 
 * Adobe Campaign-beheerder:
-   * voor installaties op locatie: de beheerder voert de verbetering uit.
+   * voor installaties op locatie: de beheerder voert de upgrade uit.
 
    * voor gehoste installaties: het hostingteam voert de upgrade uit.
 
-* Adobe Campaign-operator\marketinggebruiker: de exploitant voert tests uit op ontwikkelings-, test- en productieinstanties.
+* Adobe Campaign operator\marketing user: de operator voert tests uit op ontwikkelings-, test- en productieinstanties.
 
 ### De upgrade van de build voorbereiden
 
@@ -90,14 +91,14 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 U moet ook alle [nuttige opdrachtregels](../../installation/using/command-lines.md) voordat u een upgrade voor build start:
 
-* **nlserver pdump**: lijsten lopende processen
-* **nlserver pdump -who**: lijsten actieve cliëntzittingen
-* **nlserver monitor ontbreekt**: lijsten ontbrekende eigenschappen
+* **nlserver pdump**: maakt een lijst met actieve processen
+* **nlserver pdump -who**: geeft actieve clientsessies weer
+* **nlserver monitor ontbreekt**: in lijsten ontbreken eigenschappen
 * **nlserver start process@instance-name**: start een proces
 * **nlserver stop process@instance-name**: stopt een proces
 * **process@instance-name opnieuw starten op de server**: start een proces opnieuw
-* **Uitschakelen van server**: stopt alle Campagneprocessen
-* **nlserver waakhond - svc**: start de waakhond (alleen UNIX)
+* **Uitschakelen van server**: stopt alle Campagne-processen
+* **nlserver waakhond - svc**: start de controlehond (alleen UNIX)
 
 ## De upgrade uitvoeren
 
@@ -115,7 +116,7 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Herstel deze kopieën op alle exemplaren van de doelomgeving.
 
-1. Voer de **nms:vriesinstantie.js** het waarschuwings manuscript op het doelmilieu alvorens het op te starten. Hiermee wordt een einde gemaakt aan alle processen die op de buitenkant reageren: logboeken, tracering, leveringen, campagneworkflows, enz.
+1. Voer de **nms:vriesinstantie.js** het waarschuwings manuscript op het doelmilieu alvorens het op te starten. Hiermee wordt een einde gemaakt aan alle processen die met de buitenkant communiceren: logboeken, tracering, leveringen, workflows voor campagnes, enz.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -123,24 +124,24 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Controleer de opwarming als volgt:
 
-   * Controleren of het enige leveringsgedeelte de id is die is ingesteld op **0**:
+   * Controleren of het enige leveringsgedeelte de id is waarop de id is ingesteld **0**:
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * Controleer of de update van de leveringsstatus correct is:
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * Controleer of de update van de workflowstatus correct is:
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### Afsluiten van services
 
@@ -154,6 +155,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
    >[!NOTE]
    >
    >Controleer of de omleidingsserver (webmdl) is gestopt, zodat het bestand nlsrvmod.dll dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
+   >
 
 1. Valideren dat geen taken actief zijn door het **nlserver pdump** gebruiken. Als er geen taken zijn, dan zou de output op het volgende moeten lijken:
 
@@ -171,9 +173,9 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
 1. Klikken **Volgende**.
 
-1. Klikken **Voltooien**: de nieuwe bestanden worden gekopieerd in het installatieprogramma .
+1. Klikken **Voltooien**: de nieuwe bestanden worden gekopieerd in het installatieprogramma.
 
-1. Als de bewerking is voltooid, klikt u op **Voltooien**.
+1. Klik op **Voltooien**.
 
 ### Bronnen synchroniseren
 
@@ -188,8 +190,9 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
    >[!NOTE]
    >
    >Deze bewerking mag maar één keer worden uitgevoerd op een nlserverwebtoepassingsserver.
+   >
 
-   Voer de volgende opdracht uit om slechts één database te synchroniseren:
+   Als u slechts één database wilt synchroniseren, voert u de volgende opdracht uit:
 
    ```
    nlserver config -postupgrade -instance: <instance_name>
@@ -246,7 +249,7 @@ Wanneer het Transactionele Overseinen (het Centrum van het Bericht) op uw instan
 
 #### Midden-sourcing
 
-In de context van een omgeving voor midsourcing moet u de volgende aanvullende stappen uitvoeren om te upgraden:
+In de context van een omgeving voor midsourcing moet u de volgende aanvullende stappen uitvoeren om een upgrade uit te voeren:
 
 1. Contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronsserver te coördineren.
 1. Valideer of de versie is bijgewerkt door een testkoppeling uit te voeren. Bijvoorbeeld:
@@ -258,6 +261,7 @@ In de context van een omgeving voor midsourcing moet u de volgende aanvullende s
 >[!NOTE]
 >
 >De server voor middensegment moet altijd dezelfde versie (of recenter) gebruiken als voor de marketingservers.
+>
 
 ## In geval van conflicten
 
@@ -305,7 +309,7 @@ Als geen van beide voorwaarden van toepassing is, is dit een fout-positief. Als 
 
 **Is het object gewijzigd in de nieuwe build?**
 
-1. Zijn er &quot;gewone verdachten&quot;? Ingebouwde webtoepassingen of -rapporten (bijvoorbeeld: &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
+1. Zijn er &quot;gewone verdachten&quot;? Ingebouwde webtoepassingen of -rapporten (bijv. &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
 1. Onderzoek de veranderingslogboeken voor om het even welke updates.
 1. Vraag het Adobe Campaign-experts.
 1. Voer een &quot;diff&quot;op de code uit.
@@ -314,7 +318,7 @@ Als geen van beide voorwaarden van toepassing is, is dit een fout-positief. Als 
 
 Pas het volgende proces toe om conflicten op te lossen:
 
-1. Ga in de Adobe Campaign-verkenner naar **Beheer > Configuratie > Pakketbeheer > Conflicten bewerken**.
+1. Ga in de Adobe Campaign explorer naar **Beheer > Configuration > Package Management > Edit conflicts**.
 
 1. Selecteer het conflict dat u wilt oplossen in de lijst.
 Er zijn drie opties om conflicten op te lossen: **De nieuwe versie accepteren**, **Huidige versie behouden**, **De code samenvoegen (en declareren als opgelost)**, **Conflict negeren (niet aanbevolen)**.
@@ -341,19 +345,20 @@ Er zijn drie opties om conflicten op te lossen: **De nieuwe versie accepteren**,
 
 * Het conflict zal blijven
 * Het object wordt niet bijgewerkt
-* Effecten op lange termijn: de incompatibiliteiten van de versie, zal de klant niet van insectenmoeilijke situaties profiteren.
+* Gevolgen op lange termijn: de onverenigbaarheden van de versie, de klant zal niet van insectenmoeilijke situaties profiteren.
 
 >[!IMPORTANT]
 >Het wordt ten zeerste aanbevolen conflicten op te lossen.
+>
 
 ### Samenvoegen uitvoeren{#perform-a-merge}
 
 Er zijn verschillende soorten samenvoegingen:
 
-1. Eenvoudig samenvoegen: aangepaste en nieuwe elementen zijn klein en staan los van elkaar en er is geen codering vereist.
-1. Geen wijzigingen: accepteert nieuwe versie, alleen de laatste bijgewerkte datum wordt gewijzigd, alleen opmerkingen, tabs, spaties of nieuwe regels. Voorbeeld: opslaan per ongeluk.
-1. Tijdelijke veranderingen: er is slechts één regel gewijzigd. Voorbeeld: xpathToLoad
-1. Complexe samenvoeging: wanneer codering vereist is. Ontwikkeling is vereist. Zie [Complexe samenvoegingen](#complex-merges).
+1. Eenvoudig samenvoegen: aangepaste en nieuwe elementen zijn klein en niet gerelateerd en er is geen codering vereist.
+1. Geen wijzigingen: nieuwe versie accepteren, alleen laatste bijgewerkte datum wijzigen, alleen opmerkingen, tabs, spaties of nieuwe regels. Voorbeeld: opslaan als gevolg van een ongeluk.
+1. Tijdelijke wijzigingen: slechts één regel is gewijzigd. Voorbeeld: xpathToLoad
+1. Complexe samenvoeging: wanneer codering is vereist. Er zijn ontwikkelingsvaardigheden nodig. Zie [Complexe samenvoegingen](#complex-merges).
 
 #### Hoe samenvoegen?
 
@@ -367,7 +372,7 @@ Er zijn verschillende soorten samenvoegingen:
 1. De ingebouwde code wordt opgeslagen in de dossiers van XML in de datakit omslag. Zoek het XML-bestand dat overeenkomt met het conflicterende object. Voorbeeld: installationDirectory\datakit\nms\fra\form\recipient.xml
 1. De originele versie ophalen: via de [Downloadcentrum](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) of een andere installatie van het product zonder upgrade.
 1. De nieuwe versie ophalen: via de [Downloadcentrum](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) of de geïnstalleerde bestanden van de klant.
-1. De aangepaste versie ophalen: Haal de broncode van het object op vanuit de campagneclient.
+1. Haal de aangepaste versie op: haalt de broncode van het object op vanuit de campagneclient.
 
 ### Hoe maak je een diff?
 
@@ -388,13 +393,13 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 1. Zoek in de onderste sectie van het venster naar de **_conflict_string_** om de entiteiten met conflicten te zoeken. De entiteit die met de nieuwe versie is geïnstalleerd, bevat het nieuwe argument. De entiteit die met de vorige versie overeenkomt, bevat het aangepaste argument.
 1. Verwijder de versie die u niet wilt behouden. Verwijder de **_conflict_argument_** tekenreeks van de entiteit die u bewaart.
 1. Ga naar het conflict dat u hebt opgelost. Klik op de knop **Handelingen** pictogram en selecteer **Opgeven als opgelost**.
-1. Sla uw wijzigingen op: het conflict is nu opgelost .
+1. Sla uw wijzigingen op: het conflict is nu opgelost.
 
 #### Complexe samenvoegingen{#complex-merges}
 
-1. Begrijp wat de verandering doet: reverse-engineeren de wijzigingen, de wijzigingslogboeken bekijken, opvolgen met Adobe Campaign-experts.
+1. Begrijp wat de verandering doet: omgekeerd-ingenieer de veranderingen, onderzoek de veranderingslogboeken, follow-up met de deskundigen van Adobe Campaign.
 1. Bepaal wat u met de wijziging wilt doen.
-1. Begrijp wat de aanpassingen doen: reverse-engineeren van de wijzigingen
+1. Begrijp wat de aanpassingen doen: omgekeerde ingenieur de veranderingen
 
 Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 
@@ -408,6 +413,7 @@ Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 
 >[!IMPORTANT]
 >De ontwikkelingsvaardigheden worden vereist om complexe fusies uit te voeren.
+>
 
 **Verwante onderwerpen**
 

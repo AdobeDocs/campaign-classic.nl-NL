@@ -1,19 +1,20 @@
 ---
 product: campaign
-title: Schema
+title: Schema-referentie
 description: Schema-referentielijst
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 21%
+source-wordcount: '97'
+ht-degree: 20%
 
 ---
 
-# Schema {#schema-reference}
+# Schema-referentie {#schema-reference}
 
-Bij het bewerken van een schema is een goedkeuringssysteem op basis van het bronschema (xtk:srcSchema) beschikbaar. Sommige fouten kunnen ook worden ontdekt wanneer het bijwerken van het gegevensbestand gebruikend de &quot;update van de structuur van het Gegevensbestand...&quot; wizard.
+Bij het bewerken van een schema is een goedkeuringssysteem op basis van het bronschema (xtk:srcSchema) beschikbaar. Sommige fouten kunnen ook worden opgemerkt wanneer het bijwerken van het gegevensbestand gebruikend de &quot;de structuurupdate van het Gegevensbestand...&quot;tovenaar.
 
 Standaard zijn in Adobe Campaign-schema&#39;s alle Booleaanse tekstkenmerken &quot;false&quot;. Om hen te activeren, moet u de attributen in het schema specificeren en zijn waarde plaatsen aan &quot;waar&quot;.
 

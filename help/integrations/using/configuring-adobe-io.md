@@ -2,16 +2,17 @@
 product: campaign
 title: Adobe I/O configureren voor Adobe Experience Cloud Triggers
 description: Leer hoe u Adobe I/O voor Adobe Experience Cloud Triggers configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Triggers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: integrations
 content-type: reference
 index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '724'
 ht-degree: 4%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
+>Als u een oudere versie van de integratie van Trekkers door Authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
 >Let op: tijdens deze overgang naar [!DNL Adobe I/O]bepaalde inkomende triggers kunnen verloren gaan.
 >
 >De oude verificatiemodus Auth met Campagne is uitgeschakeld op **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot **25 mei 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot **mei 2022**. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md#step-optional) naar Adobe.
@@ -33,7 +34,7 @@ Deze integratie geldt alleen voor het starten **Campaign Classic 20.2.4 en hoger
 
 Controleer voordat u met deze implementatie begint of:
 
-* geldig **Organisatie-id**: de organisatie-id is de unieke id in de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de service VisitorID en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
+* een geldige **Organisatie-id**: de organisatie-id is de unieke id in de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de service VisitorID en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
 * a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
@@ -102,7 +103,7 @@ Controleer voordat u met deze implementatie begint of:
 >
 >Adobe I/O certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
 
-## Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
+## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign toe {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -110,7 +111,7 @@ Controleer voordat u met deze implementatie begint of:
 
 De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet u als volgt:
 
-1. Gebruik de persoonlijke sleutel die is gegenereerd in het dialoogvenster [Stap 1: Sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
+1. Gebruik de persoonlijke sleutel die in het dialoogvenster [Stap 1: sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
 
 1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
 
@@ -126,7 +127,7 @@ De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## Stap 3: Label voor pijplijnen bijwerken {#update-pipelined-tag}
+## Stap 3: De tag pipelined bijwerken {#update-pipelined-tag}
 
 >[!NOTE]
 >

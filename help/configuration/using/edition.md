@@ -2,11 +2,12 @@
 product: campaign
 title: Navigatiestructuur van Campagneverkenner bewerken
 description: Navigatiestructuur van Campagneverkenner bewerken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Het scherm voor het maken en configureren van de configuratiedocumenten voor de 
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
-De configuratie van de navigatiehiërarchie is verdeeld over verscheidene documenten van XML. Het werkt op een gelijkaardig beginsel zoals schemauitbreiding: alle documenten worden samengevoegd om één document te genereren dat de volledige configuratie bevat. Dit document kan niet worden bewerkt en wordt weergegeven via het tabblad Voorbeeld.
+De configuratie van de navigatiehiërarchie is verdeeld over verscheidene documenten van XML. Het werkt op een gelijkaardig principe aan schemaverlenging: alle documenten worden samengevoegd om één enkel document te produceren dat de volledige configuratie bevat. Dit document kan niet worden bewerkt en wordt weergegeven via het tabblad Voorbeeld.
 
 Het bewerkingsveld bevat de inhoud van het XML-document:
 

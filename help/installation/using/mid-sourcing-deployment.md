@@ -2,15 +2,16 @@
 product: campaign
 title: Midsourcingimplementatie
 description: Midsourcingimplementatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) con
 
 >[!NOTE]
 >
->Als u dit type implementatie wilt instellen, moet u de juiste optie kiezen. Controleer uw licentieovereenkomst.
+>Als u dit type implementatie wilt instellen, moet u de juiste optie aanschaffen. Controleer uw licentieovereenkomst.
 
 De algemene communicatie tussen servers en processen wordt uitgevoerd volgens het volgende schema:
 
@@ -35,10 +36,10 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 
 ### Voordelen {#advantages}
 
-* Vereenvoudigde serverconfiguratie: Het is niet noodzakelijk voor de klant om naar buiten gerichte modules (mta en inMail) te vormen.
-* Beperkt gebruik van bandbreedte: Aangezien de uitvoering wordt uitgevoerd door de server voor midsourcing, is alleen voldoende bandbreedte vereist om aanpassingsgegevens naar de server voor midsourcing te verzenden.
-* Hoge beschikbaarheid is niet langer een intern probleem: Het probleem wordt verplaatst naar de server voor midsourcing (omleiding, spiegel, uitvoeringsservers, enz.).
-* De database verlaat het bedrijf niet: Alleen de gegevens die nodig zijn voor het samenstellen van de berichten worden naar de server voor midsourcing verzonden (hiervoor kan HTTPS worden gebruikt).
+* Vereenvoudigde serverconfiguratie: de klant hoeft geen naar buiten gerichte modules (mta en inMail) te configureren.
+* Beperkt gebruik van bandbreedte: aangezien de uitvoering wordt uitgevoerd door de server voor midsourcing, is alleen voldoende bandbreedte vereist om aanpassingsgegevens naar de server voor midsourcing te verzenden.
+* Hoge beschikbaarheid is niet langer een intern probleem: het probleem wordt verschoven naar de server voor midsourcing (omleiding, spiegel, uitvoeringsservers, enz.).
+* De database verlaat het bedrijf niet: hiervoor kunnen alleen gegevens worden gebruikt die nodig zijn voor het samenstellen van de berichten naar de server voor midsourcing (HTTPS).
 * Dit type van plaatsing kan een oplossing voor hoge volumearchitectuur (vele ontvangers in het gegevensbestand), met een significante leveringsproductie zijn.
 
 ### Nadelen {#disadvantages}
@@ -49,7 +50,7 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 ### Aanbevolen apparatuur {#recommended-equipment}
 
 * Toepassingsserver: 2 GHz quad-core CPU, 4 GB RAM, software RAID 1 80 GB SATA harde schijf.
-* Databaseserver: 3 GHz bi-quad core CPU&#39;s, minimaal 4 GB RAM, hardware RAID 10 1.5.000 RPM SAS harde schijf, het aantal afhankelijk van de grootte en de verwachte prestaties van de database.
+* Databaseserver: 3 GHz bi-quad core CPU&#39;s, minimaal 4 GB RAM, hardware RAID 10 1.5000 RPM SAS harde schijf, het aantal afhankelijk van de grootte en de verwachte prestaties van de database.
 
 >[!NOTE]
 >
@@ -65,4 +66,4 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 
 ### Installeren en configureren (implementatie van midsourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Zie [Server voor midsourcing](../../installation/using/mid-sourcing-server.md).
+Zie [Midden-sourcingserver](../../installation/using/mid-sourcing-server.md).

@@ -2,14 +2,15 @@
 product: campaign
 title: Hooks
 description: Hooks
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -36,10 +37,10 @@ De verzamelde gegevens moeten in de knoop van vraaggegevens (de knoop van de Int
 
 **Invoerparameters:**
 
-* xmlInteraction (type xml): Interactieknooppunt
+* xmlInteraction (xml-type): Interactieknooppunt
 * aTargetId (tabeltype): doel-id
-* sUuid230 (tekenreekstype): waarde van de uuid230 permanente cookie
-* Nlid (tekenreekstype): waarde van het ongeldige sessiecookie
+* sUuid230 (type tekenreeks): waarde van de permanente uuid230-cookie
+* sNlid (tekenreekstype): waarde van de ongeldige sessiecookie
 
 **Parameters retourneren:**
 
@@ -71,22 +72,22 @@ De nabewerking wordt uitgevoerd na toepassing van de typologieregels en het in a
 
 **Invoerparameters:**
 
-* Voorstel: tabel van subsidiabele voorstellen. Hier is een voorbeeld van de structuur van een element in deze tabel
+* Voorstel: tabel van de in aanmerking komende voorstellen. Hier is een voorbeeld van de structuur van een element in deze tabel
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
-* dicOffer (xml-type): een woordenboek van alle kenmerken van de in aanmerking komende aanbiedingen (aanbiedingscode, categorie-id, volledige naam van de categorie, begindatum, einddatum, label, interne naam, aanbiedingsidentiteitskaart, velden voor aanvullende aanbiedingen). Bijvoorbeeld
+* dicOffer (xml type): woordenboek van alle kenmerken van in aanmerking komende aanbiedingen (aanbiedingscode, categorie-id, volledige naam van categorie, begindatum, einddatum, label, interne naam, aanbiedings-id, extra aanbiedingsvelden). Bijvoorbeeld
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
-* xmlTarget (type xml): profielgegevensknooppunt
-* xmlInteraction (type xml): aanroepgegevensknooppunt
+* xmlTarget (type xml): knooppunt met profielgegevens
+* xmlInteraction (xml-type): aanroepgegevensknooppunt
 * iPropNumber (type geheel getal): aantal verwachte aanbiedingen
 
 **Parameters retourneren:**
@@ -120,22 +121,22 @@ return aReturnedProps;
 
 Deze haak staat u toe om een vraag aan een externe motor te maken om een lijst van producten te selecteren verbonden aan een aanbieding. Het wordt gevormd in de aanbieding na toelatingsregels, en vóór de toepassing van de typologieregels.
 
-De integrator moet de voorstellen eerst uitbreiden **PropositionRcp** schema met extra informatie over het product. Als u wilt opgeven waar deze gegevens worden opgeslagen, voert u een **[!UICONTROL Proposition being processed]** de koppeling is beschikbaar in het dialoogvenster **[!UICONTROL Storage]** tabblad van de spatie
+De integrator moet de voorstellen eerst uitbreiden **PropositionRcp** schema met de extra informatie over het product. Als u wilt opgeven waar deze gegevens worden opgeslagen, voert u een **[!UICONTROL Proposition being processed]** de koppeling is beschikbaar in het dialoogvenster **[!UICONTROL Storage]** tabblad van de spatie
 
 ![](assets/interaction_hooks_3.png)
 
 **Invoerparameters:**
 
-* xmlOffer (type xml): aanbieding (aanbiedingscode, categorie-id, volledige naam van categorie, begindatum, einddatum, label, interne naam, aanbieding-id, velden voor extra aanbiedingen)
-* dDikte: contextgewicht (dubbel type)
-* xmlTarget (type xml): profielgegevensknooppunt
-* xmlInteraction (type xml): aanroepgegevensknooppunt
+* xmlOffer (xml-type): aanbieding (aanbiedingscode, categorie-id, volledige naam van categorie, begindatum, einddatum, label, interne naam, aanbieding-id, extra aanbiedingsvelden)
+* dWeight: contextgewicht (dubbel type)
+* xmlTarget (type xml): knooppunt met profielgegevens
+* xmlInteraction (xml-type): aanroepgegevensknooppunt
 
 **Parameters retourneren:**
 
 Er wordt een tabel met te genereren voorstellen geretourneerd. Elk element van deze tabel bestaat uit de volgende informatie:
 
-* aanbieding-id
+* aanbiedingsidentificatie
 * aanvullende productgegevens (bijvoorbeeld productcode)
 * gewicht
 

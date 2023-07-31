@@ -2,14 +2,15 @@
 product: campaign
 title: Zakelijke implementatie
 description: Zakelijke implementatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1220'
 ht-degree: 3%
 
 ---
@@ -33,8 +34,8 @@ Met dit type van configuratie, kan de verwachte productie 100.000 post per uur m
 
 ### Voordelen {#advantages}
 
-* Geoptimaliseerde beveiliging: Slechts die servers die aan de buitenkant moeten worden blootgesteld zijn geïnstalleerd op de computer in DMZ.
-* Hoge beschikbaarheid is gemakkelijker te garanderen: Alleen de computer die van buitenaf zichtbaar is, moet met het oog op hoge beschikbaarheid worden beheerd.
+* Geoptimaliseerde veiligheid: Slechts die servers die aan de buitenkant moeten worden blootgesteld zijn geïnstalleerd op de computer in DMZ.
+* Hoge beschikbaarheid is eenvoudiger te garanderen: alleen de computer die van buitenaf zichtbaar is, moet met het oog op hoge beschikbaarheid worden beheerd.
 
 ### Nadelen {#disadvantages}
 
@@ -62,7 +63,7 @@ Hogere hardware- en beheerkosten.
    * de eerste die aan het publiek wordt blootgesteld voor het volgen en aanwijzen van het taakverdelingsmechanisme op een virtueel IP adres (VIP) en die dan aan de twee frontale servers wordt verdeeld;
    * de tweede die aan de interne gebruikers voor toegang via de console wordt blootgesteld en aan een taakverdelingsmechanisme op een virtueel IP adres (VIP) richt en die dan aan de twee toepassingsservers wordt verdeeld.
 
-* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Zie voor meer informatie de sectie [Toegang tot database](../../installation/using/network-configuration.md#database-access).
+* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Zie voor meer informatie de sectie [Toegang tot database](../../installation/using/network-configuration.md#database-access).
 
 >[!CAUTION]
 >
@@ -77,7 +78,7 @@ Hogere hardware- en beheerkosten.
 In de volgende voorbeelden zijn de parameters van de instantie:
 
 * Naam van de instantie: demo
-* DNS-masker: tracking.campagne.net&#42;, console.campagne.net&#42; (De toepassingsserver verwerkt de URL&#39;s voor verbindingen en rapporten van de clientconsole en voor spiegel- en niet-abonnementspagina&#39;s)
+* DNS-masker: tracking.campaign.net&#42;, console.campaign.net&#42; (De toepassingsserver verwerkt de URL&#39;s voor verbindingen en rapporten van de clientconsole en voor spiegel- en niet-abonnementspagina&#39;s)
 * Taal: Engels
 * Database: campagne:demo@dbsrv
 
@@ -85,7 +86,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Volg de installatieprocedure voor de Adobe Campaign-server: **nlserver** pakket op Linux of **setup.exe** in Windows.
 
-   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor installatie van campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Raadpleeg voor meer informatie hierover [Vereisten voor installatie van campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [Vereisten voor de installatie van de Campagne in Vensters](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Zodra de Adobe Campaign-server is geïnstalleerd, start u de toepassingsserver (web) met de opdracht **nlserver web-tomcat** (de module van het Web laat u toe om Tomcat in standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
@@ -116,23 +117,23 @@ De stappen voor het installeren van de eerste server zijn:
 
    Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
-1. Maak de **demo** instantie met de DNS-maskers voor tracering (in dit geval, **tracking.campagne.net**) en de toegang tot clientconsoles (in dit geval, **console.campagne.net**). Er zijn twee manieren om dit te doen:
+1. Maak de **demo** instantie met de DNS-maskers voor tracering (in dit geval), **tracking.campaign.net**) en de toegang tot clientconsoles (in dit geval, **console.campaign.net**). Er zijn twee manieren om dit te doen:
 
    * Maak de instantie via de console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Raadpleeg voor meer informatie hierover [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      of
+     of
 
    * Maak de instantie met behulp van opdrachtregels:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
+     Raadpleeg voor meer informatie hierover [Een instantie maken](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Bewerk de **config-demo.xml** bestand (gemaakt via de vorige opdracht en bevindt zich naast de **config-default.xml** bestand), controleert u of de **mta** (levering), **wfserver** (workflow), **inMail** (rebound mails) en **stat** (statistiek) processen worden toegelaten, dan vorm het adres van **app** Statistische server:
 
@@ -200,7 +201,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 Voer de volgende stappen uit:
 
-1. Installeer de Adobe Campaign-server.
+1. De Adobe Campaign-server installeren.
 1. Kopieer de bestanden van de instantie die u hebt gemaakt naar toepassingsserver 1.
 
    Wij houden de zelfde instantienaam zoals toepassingsserver 1.
@@ -263,7 +264,7 @@ De stappen zijn als volgt:
    * Voor Linux: [Integratie in een webserver voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
    * Voor Windows: [Integratie in een webserver voor Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
-1. Kopieer de **config-demo.xml** en **serverConf.xml** bestanden die tijdens de installatie zijn gemaakt. In de **config-demo.xml** bestand, activeer het **trackinglogd** de **mta**, **inmail**, **wfserver** en **stat** processen.
+1. De **config-demo.xml** en **serverConf.xml** bestanden die tijdens de installatie zijn gemaakt. In de **config-demo.xml** bestand, activeer het **trackinglogd** het proces en deactiveert **mta**, **inmail**, **wfserver** en **stat** processen.
 1. Bewerk de **serverConf.xml** en vult de overtollige het volgen servers in de parameters van de omleiding:
 
    ```

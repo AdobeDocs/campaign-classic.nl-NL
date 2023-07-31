@@ -2,16 +2,17 @@
 product: campaign
 title: Herstel
 description: Herstel
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: ba4db1af-778c-4c34-9a3c-49f41faa49b5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 4%
+source-wordcount: '90'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 4%
 Op een schone server is de herstelprocedure als volgt:
 
 * op een geïnstalleerd en geconfigureerd besturingssysteem (netwerken),
-* toepassingen van andere leveranciers installeren: Webserver, JDK (indien nodig),
+* toepassingen van derden installeren: webserver, JDK (indien nodig),
 * Adobe Campaign-binaire bestanden installeren met dezelfde build als het bronsysteem,
 * configuratiebestanden kopiëren, logbestanden bijhouden en bestanden omleiden,
 * de database te creëren en opnieuw op te bouwen;

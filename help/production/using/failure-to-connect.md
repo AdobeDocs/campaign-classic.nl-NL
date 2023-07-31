@@ -2,16 +2,17 @@
 product: campaign
 title: Mislukte verbinding
 description: Mislukte verbinding
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 4%
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
@@ -60,7 +61,7 @@ Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van h
 </tr>
 <tr>
 <td>Controleer de algemene configuratie van de beveiligingszones.</td>
-<td>Voor meer bij het vormen van veiligheidsstreken, verwijs naar <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>deze afdeling.</a></td>
+<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>deze afdeling.</a></td>
 </tr>
 <tr>
 <td>De pdump van de bevelserver keert terug <b>Geen taken</b></td>

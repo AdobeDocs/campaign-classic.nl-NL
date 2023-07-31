@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot Hadoop configureren
 description: Leer hoe te om toegang tot Hadoop in FDA te vormen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -50,7 +51,7 @@ De [!DNL Hadoop] Met een externe account kunt u uw Campagne-instantie verbinden 
 
 1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
 
-1. Configureer de **[!UICONTROL Hadoop]** externe account, moet u opgeven:
+1. Vorm **[!UICONTROL Hadoop]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -58,9 +59,9 @@ De [!DNL Hadoop] Met een externe account kunt u uw Campagne-instantie verbinden 
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
-   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+   * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount
 
-   * **[!UICONTROL Database]**: Naam van de database als deze niet is opgegeven in DSN. Deze kan leeg worden gelaten, indien opgegeven in de DSN
+   * **[!UICONTROL Database]**: Naam van de database indien niet opgegeven in DSN. Deze kan leeg worden gelaten, indien opgegeven in de DSN
 
    * **[!UICONTROL Time zone]**: Tijdzone van server
 
@@ -89,7 +90,7 @@ Als u verbinding moet maken met Hadoop 2.1, voert u de hieronder beschreven stap
 
 ### Hadoop 2.1 voor Windows {#for-windows}
 
-1. ODBC installeren en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) stuurprogramma&#39;s voor Windows.
+1. ODBC installeren en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) drivers voor Windows.
 1. Creeer DSN (de Naam van de Gegevensbron) door het hulpmiddel van de Beheerder van de Gegevensbron in werking te stellen ODBC. Een steekproef van DSN van het Systeem voor Hive wordt verstrekt voor u om te wijzigen.
 
    ```
@@ -154,7 +155,7 @@ Als u verbinding moet maken met Hadoop 2.1, voert u de hieronder beschreven stap
 
    >[!NOTE]
    >
-   >De **UseNativeQuery** de parameter is hier zeer belangrijk . De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
+   >De **UseNativeQuery** de parameter is hier van groot belang . De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
    De authentificatieopstelling hangt van de configuratie van de Bieg/Hadoop af. Gebruik voor HD Insight bijvoorbeeld AuthMech=6 voor gebruikers-/wachtwoordverificatie, zoals beschreven [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 

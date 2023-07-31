@@ -2,15 +2,16 @@
 product: campaign
 title: De beste praktijken en beperkingen van de FDA bestrijden
 description: Leer beste praktijken en beperkingen wanneer het werken met een externe gegevensbestand (FDA)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 4%
+source-wordcount: '416'
+ht-degree: 5%
 
 ---
 
@@ -34,13 +35,13 @@ Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken di
 
 * **Subsets maken** - de [Splitsen](../../workflow/using/split.md) kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
 
-* **Externe database laden** - U kunt externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading--rdbms-.md) (RDBMS) activiteit. Meer informatie in [deze pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Externe database laden** - U kunt de externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading--rdbms-.md) (RDBMS) activiteit. Meer informatie in [deze pagina](../../workflow/using/data-loading--rdbms-.md).
 
 * **Informatie en koppelingen toevoegen** - de [Verrijking](../../workflow/using/enrichment.md) Met activiteit kunt u aanvullende gegevens toevoegen aan de werktabel van de werkstroom en koppelingen maken naar een externe tabel. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie in [deze pagina](../../workflow/using/enrichment.md).
 
 ## FDA-beperkingen {#limitations}
 
-De optie FDA is bedoeld om de gegevens in externe databases in batchmodus te manipuleren in workflows. Om prestatieproblemen te voorkomen, wordt het niet aanbevolen de FDA-module te gebruiken in het kader van eenheidsoperaties, zoals: personalisatie, interactie, real-time overseinen, enz.
+De optie FDA is bedoeld om de gegevens in externe databases in batchmodus te manipuleren in workflows. Om prestatieproblemen te voorkomen, wordt het niet aanbevolen de FDA-module te gebruiken in het kader van eenheidsbewerkingen, zoals personalisatie, interactie, realtime berichten, enz.
 
 Vermijd de bewerkingen die zowel de Adobe Campaign als de externe database zoveel mogelijk moeten gebruiken. Hiervoor kunt u:
 
@@ -50,4 +51,4 @@ Vermijd de bewerkingen die zowel de Adobe Campaign als de externe database zovee
 
 Als u personalisatie in uw leveringen wilt uitvoeren gebruikend gegevens van het externe gegevensbestand, verzamel de gegevens in een werkschema te gebruiken om het ter beschikking te stellen in een tijdelijke lijst. Dan gebruik de gegevens van de tijdelijke lijst om uw levering te personaliseren.
 
-Voor de optie FDA gelden de beperkingen van het externe databasesysteem dat u gebruikt.
+De optie FDA is afhankelijk van de beperkingen van het externe databasesysteem dat u gebruikt.

@@ -2,8 +2,9 @@
 product: campaign
 title: Simulatie van aanbiedingen
 description: Simulatie van aanbiedingen
+feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 De **Simulatie** kunt u de distributie testen van aanbiedingen die tot een categorie of een omgeving behoren voordat u uw voorstel naar ontvangers verzendt.
 
-Bij de simulatie wordt rekening gehouden met de context en de subsidiabiliteitsregels die eerder op aanbiedingen van toepassing waren (zie [Overzicht van de aanbiedingscatalogus](../../interaction/using/offer-catalog-overview.md)) en de regels voor de presentatie ervan (zie [Presentatie van aanbieding beheren](../../interaction/using/managing-offer-presentation.md)). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
+Bij de simulatie wordt rekening gehouden met de context en de subsidiabiliteitsregels die eerder op aanbiedingen van toepassing waren (zie [Overzicht van de aanbiedingscatalogus](../../interaction/using/offer-catalog-overview.md)), alsmede de regels voor de presentatie ervan (zie [Presentatie van aanbieding beheren](../../interaction/using/managing-offer-presentation.md)). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
 
 Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding.
 

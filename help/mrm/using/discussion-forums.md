@@ -2,14 +2,15 @@
 product: campaign
 title: Discussieforums
 description: Meer informatie over het gebruik van discussieforums voor campagnes
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 
 
-Adobe Campaign-operatoren kunnen discussieforums gebruiken om informatie te delen. De volgende elementen hebben elk hun eigen forum: plannen, programma&#39;s, campagnes, middelen, simulaties, bestanden. Elke exploitant heeft ook een persoonlijk forum. Alle discussies zijn openbaar, zelfs op persoonlijke forums.
+Adobe Campaign-operatoren kunnen discussieforums gebruiken om informatie te delen. De volgende elementen hebben elk hun eigen forum: plannen, programma&#39;s, campagnes, middelen, simulaties, voorraden. Elke exploitant heeft ook een persoonlijk forum. Alle discussies zijn openbaar, zelfs op persoonlijke forums.
 
 Operatoren kunnen zich op een forum abonneren om elke keer dat een bericht wordt gepost, een e-mailbericht te ontvangen.
 
@@ -61,7 +62,7 @@ In de **[!UICONTROL Discussion forum]** vak:
 1. Indien nodig:
 
    * Als u wilt dat iemand aan de discussie deelneemt die niet op het forum is geabonneerd, gebruikt u de opdracht **[!UICONTROL Operator to notify]** veld. De exploitant zal een kennisgevingsmail voor dit specifieke bericht ontvangen (zij zullen niet op het forum worden geabonneerd). Selecteer een groep operatoren als u meerdere operatoren wilt melden.
-   * Als u een bijlage aan het bericht wilt toevoegen, klikt u op **[!UICONTROL Browse]**. De bijlage wordt ook opgenomen in de e-mail met het bericht. Bijlagen mogen alleen afzonderlijk worden verzonden: als u meerdere bestanden wilt verzenden, moet u deze zip geven.
+   * Als u een bijlage aan het bericht wilt toevoegen, klikt u op **[!UICONTROL Browse]**. De bijlage wordt ook opgenomen in de e-mail met het bericht. Bijlagen kunnen alleen afzonderlijk worden verzonden: als u meerdere bestanden wilt verzenden, moet u deze zip uitvoeren.
 
 1. Klikken **[!UICONTROL Create the message]** het aan het forum te plaatsen .
 
@@ -84,23 +85,23 @@ Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een b
 
 * Als u zich wilt abonneren op een forum, klikt u op de knop **[!UICONTROL Follow discussions]** in de rechterbovensectie boven de lijst met berichten.
 
-   ![](assets/mrm_forum_subscribe.png)
+  ![](assets/mrm_forum_subscribe.png)
 
-   De sectie gaat blauw en toont aan dat u aan het forum wordt geabonneerd.
+  De sectie gaat blauw en toont aan dat u aan het forum wordt geabonneerd.
 
 * Als u uw abonnement op een forum wilt opzeggen, klikt u op de knop **[!UICONTROL Unsubscribe]** knop.
 
-   ![](assets/mrm_forum_unsubscribe.png)
+  ![](assets/mrm_forum_unsubscribe.png)
 
 * Het persoonlijke dashboard bevat de forums waarop u zich hebt geabonneerd. Klik op de knop **[!UICONTROL Subscription to discussion forums]** Klik vervolgens op het gewenste item om het forum te openen.
 
-   ![](assets/platform_dashboard_operator_subscr_forums.png)
+  ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Raadpleeg voor meer informatie over persoonlijke dashboards de [deze sectie](../../platform/using/access-management-operators.md).
+  Raadpleeg voor meer informatie over persoonlijke dashboards de [deze sectie](../../platform/using/access-management-operators.md).
 
-* Als u wilt zien wie op een forum is geabonneerd, klikt u op de knop **[!UICONTROL List of subscribers to this discussion forum]** koppeling boven de lijst met berichten.
+* Om te zien wie aan een forum wordt geabonneerd, klik **[!UICONTROL List of subscribers to this discussion forum]** koppeling boven de lijst met berichten.
 
-   ![](assets/mrm_forum_subscribers.png)
+  ![](assets/mrm_forum_subscribers.png)
 
 ## Melding verzenden {#checking-notification-delivery}
 
@@ -112,4 +113,5 @@ Als operatoren die zijn geabonneerd op een forum geen meldingen ontvangen zoals 
 
    * Ga op de homepage van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]** en open vervolgens de **[!UICONTROL Discussion forum notification]** levering.
    * Ga in de verkenner naar **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** en klik vervolgens op **[!UICONTROL Discussion forum notifications]**.
-   In de **[!UICONTROL Discussion forum notifications]** de leveringslogboeken vindt u in het dialoogvenster **[!UICONTROL Edit > Delivery]** tab. U kunt ook de **[!UICONTROL Tracking > Log]** en de **[!UICONTROL Exclusion causes]** tabs.
+
+  In de **[!UICONTROL Discussion forum notifications]** de leveringslogboeken vindt u in de **[!UICONTROL Edit > Delivery]** tab. U kunt ook de **[!UICONTROL Tracking > Log]** en de **[!UICONTROL Exclusion causes]** tabs.

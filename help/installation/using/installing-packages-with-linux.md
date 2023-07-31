@@ -2,15 +2,16 @@
 product: campaign
 title: Pakketten installeren met Linux
 description: Pakketten installeren met Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -49,7 +50,7 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
    >
    >Gebruik de juiste bestandsnaam voor uw versie van Adobe Campaign in de opdrachtvoorbeelden van deze sectie.
 
-1. Als u de toepassing wilt installeren, maakt u verbinding als **basis** en voert de volgende opdracht uit (waarbij **XXXX** is het Adobe Campaign-buildnummer):
+1. Maak verbinding als u het wilt installeren **basis** en voert de volgende opdracht uit (waarbij **XXXX** is het Adobe Campaign-buildnummer):
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
@@ -63,7 +64,7 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
 
 Het &quot;bc&quot;bevel, noodzakelijk voor het uitvoeren van netreport (verwijs naar [deze sectie](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) voor meer informatie), is niet standaard beschikbaar op alle distributies van Linux. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht &#39;which bc&#39; uit. Als dat niet het geval is, moet u het installeren.
 
-Met CentOS moet u het pakket bc.x86_64 installeren: verbinden als **basis** en voer de volgende opdracht uit:
+Met CentOS moet u het pakket bc.x86_64: connect as installeren **basis** en voer de volgende opdracht uit:
 
 ```
 yum install bc.x86_64
@@ -81,7 +82,7 @@ Voer de volgende stappen uit om Adobe Campaign 64-bits te installeren op een Deb
    >
    >Gebruik de juiste bestandsnaam voor uw versie van Adobe Campaign in de opdrachtvoorbeelden van deze sectie.
 
-1. Als u de toepassing wilt installeren, maakt u verbinding als **basis** en voert de volgende opdracht uit (waarbij **XXXX** is het Adobe Campaign-buildnummer):
+1. Maak verbinding als u het wilt installeren **basis** en voert de volgende opdracht uit (waarbij **XXXX** is het Adobe Campaign-buildnummer):
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -100,33 +101,33 @@ Houd rekening met het volgende wanneer u Adobe Campaign op een Debian 8/9-bestur
 * OpenSSL moet vooraf zijn geïnstalleerd.
 * Installeer libicu52 (Debian 8) of libicu57 (Debian 9), libprotobuf9 (Debian8) en libc-ares2 met de volgende opdrachten:
 
-   ```
-   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
-   ```
+  ```
+  aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
+  ```
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
-   ```
-   aptitude install libprotobuf9 (only Debian 8)
-   ```
+  ```
+  aptitude install libprotobuf9 (only Debian 8)
+  ```
 
 * Installeer JDK7 met de volgende opdracht:
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 8)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 8)
+  ```
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 9)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 9)
+  ```
 
 ## Parameters aanpassen {#personalizing-parameters}
 
 Sommige parameters kunnen via de **klant.sh** file
 
-Als u de installatie voor het eerst uitvoert, **klant.sh** bestand bestaat mogelijk nog niet op de server. Maak het bestand en zorg ervoor dat het uitvoeringsrechten heeft. Als dit niet het geval is, ga het volgende bevel in:
+Als u de installatie voor de eerste keer uitvoert, **klant.sh** bestand bestaat mogelijk nog niet op de server. Maak het bestand en zorg ervoor dat het uitvoeringsrechten heeft. Als dit niet het geval is, ga het volgende bevel in:
 
 ```
 chmod +x /usr/local/neolane/nl6/customer.sh
@@ -153,7 +154,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
 De installatie ondersteunt zowel Engels als Frans. Engels wordt standaard gebruikt.
 
-Voer de volgende opdrachten in om naar het Frans te schakelen:
+Als u naar het Frans wilt schakelen, voert u de volgende opdrachten in:
 
 ```
 su - neolane
@@ -174,59 +175,59 @@ De volgende omgevingsvariabelen moeten correct worden gedefinieerd.
 
 Bepaalde combinaties vereisen wijzigingen in de omgeving die wordt gebruikt voor het uitvoeren van Adobe Campaign. Een specifiek bestand (`/usr/local/neolane/nl6/customer.sh`) kan worden gemaakt en bewerkt om wijzigingen toe te voegen die specifiek zijn voor de Adobe Campaign-omgeving.
 
-Bewerk indien nodig de **klant.sh** bestand met de **vi customer.sh** en pas de configuratie aan of voeg ontbrekende lijnen toe:
+Bewerk indien nodig de **klant.sh** bestand gebruiken met de **vi customer.sh** en pas de configuratie aan of voeg ontbrekende lijnen toe:
 
 * Voor de client Oracle:
 
-   ```
-   export ORACLE_HOME=/usr/local/instantclient_10_2
-   export TNS_ADMIN=/etc/oracle
-   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
-   ```
+  ```
+  export ORACLE_HOME=/usr/local/instantclient_10_2
+  export TNS_ADMIN=/etc/oracle
+  export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
+  ```
 
-   De inhoud van de omgevingsvariabele ORACLE_HOME komt overeen met de installatiemap van het Oracle.
+  De inhoud van de omgevingsvariabele ORACLE_HOME komt overeen met de installatiemap van het Oracle.
 
-   De inhoud van de TNS_ADMIN-variabele moet overeenkomen met de locatie van de **tnsnames.ora** bestand.
+  De inhoud van de TNS_ADMIN-variabele moet overeenkomen met de locatie van de **tnsnames.ora** bestand.
 
 * Voor LibreOffice:
 
-   Voor het uitvoeren van Adobe Campaign op een bestaande versie van LibreOffice zijn aanvullende configuraties vereist: u moet de toegangspaden naar de installatiemap opgeven. Bijvoorbeeld:
+  Voor het uitvoeren van Adobe Campaign op een bestaande versie van LibreOffice zijn aanvullende configuraties vereist: u moet de toegangspaden naar de installatiemap opgeven. Bijvoorbeeld:
 
    * Debian
 
-      De standaardwaarden voor OO_INSTALL_DIR en OOO_BASIS_INSTALL_DIR worden verstrekt. U kunt deze overschrijven in **klant.sh** als uw lay-out van de installatie LibreOffice verschillend is:
+     De standaardwaarden voor OO_INSTALL_DIR en OOO_BASIS_INSTALL_DIR worden verstrekt. U kunt deze overschrijven in **klant.sh** als uw lay-out van de installatie LibreOffice verschillend is:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
-      export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
+     export OOO_INSTALL_DIR=/usr/lib/libreoffice/
+     ```
 
    * CentOs
 
-      Gebruik de volgende standaardwaarden:
+     Gebruik de volgende standaardwaarden:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
-      export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
+     export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
+     ```
 
 * Voor Java Development Kit (JDK):
 
-   Het configuratiescript van de Adobe Campaign-omgeving (`~/nl6/env.sh`) zoekt naar de JDK-installatiemap. Aangezien dit gedrag niet 100% betrouwbaar is, moet u opgeven welke JDK moet worden gebruikt. Om dit te doen, kunt u dwingen **JDK_HOME** omgevingsvariabele met de volgende opdracht:
+  Standaard wordt het configuratiescript van de Adobe Campaign-omgeving (`~/nl6/env.sh`) zoekt naar de JDK-installatiemap. Aangezien dit gedrag niet 100% betrouwbaar is, moet u opgeven welke JDK moet worden gebruikt. Om dit te doen, kunt u dwingen **JDK_HOME** omgevingsvariabele met de volgende opdracht:
 
-   ```
-   export JDK_HOME=/usr/java/jdk1.6.0_07
-   ```
+  ```
+  export JDK_HOME=/usr/java/jdk1.6.0_07
+  ```
 
-   >[!NOTE]
-   >
-   >Dit is een voorbeeld. Zorg ervoor dat de gebruikte JDK-versie overeenkomt met de mapnaam.
+  >[!NOTE]
+  >
+  >Dit is een voorbeeld. Zorg ervoor dat de gebruikte JDK-versie overeenkomt met de mapnaam.
 
-   Als u de JDK-configuratie wilt testen, meldt u zich aan als de Adobe Campaign-systeemgebruiker met de volgende opdracht:
+  Als u de JDK-configuratie wilt testen, meldt u zich aan als de Adobe Campaign-systeemgebruiker met de volgende opdracht:
 
-   ```
-   su - neolane
-   ```
+  ```
+  su - neolane
+  ```
 
 U moet de Adobe Campaign-service opnieuw starten om rekening te houden met de wijzigingen.
 
@@ -251,29 +252,29 @@ Als u Oracle gebruikt met Adobe Campaign, moet u de clientlagen van het Oracle c
 * De volledige client gebruiken
 * TNS-definitie
 
-   De TNS-definities moeten tijdens de installatiefase worden toegevoegd. Hiervoor gebruikt u de volgende opdrachten:
+  De TNS-definities moeten tijdens de installatiefase worden toegevoegd. Hiervoor gebruikt u de volgende opdrachten:
 
-   ```
-   cd /etc
-   mkdir oracle
-   cd oracle
-   vi tnsnames.ora
-   ```
+  ```
+  cd /etc
+  mkdir oracle
+  cd oracle
+  vi tnsnames.ora
+  ```
 
 * Omgevingsvariabelen
 
-   Zie [Omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+  Zie [Omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 * Configuratie voor Adobe Campaign
 
-   Als u de installatie van de client voor het Oracle voor Adobe Campaign wilt voltooien, moet u een symbolische koppeling maken voor de **.so** bestand gebruikt door Adobe Campaign.
+  Als u de Oracle-client voor Adobe Campaign wilt installeren, moet u een symbolische koppeling maken voor de **.so** bestand gebruikt door Adobe Campaign.
 
-   Hiervoor gebruikt u de volgende opdrachten:
+  Hiervoor gebruikt u de volgende opdrachten:
 
-   ```
-   cd /usr/lib/oracle/10.2.0.4/client/lib
-   ln -s libclntsh.so.10.1 libclntsh.so
-   ```
+  ```
+  cd /usr/lib/oracle/10.2.0.4/client/lib
+  ln -s libclntsh.so.10.1 libclntsh.so
+  ```
 
 Als er een probleem optreedt, controleert u of de pakketten in het dialoogvenster [Installatiedocumentatie oracle](https://docs.oracle.com/) correct zijn geïnstalleerd.
 
@@ -349,6 +350,6 @@ De volgende informatie wordt dan getoond:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** dat heeft in alle gevallen alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De Adobe Campaign-server definieert een technische aanmeldingsnaam **internal** dat heeft alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
 Meer informatie in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).

@@ -2,15 +2,16 @@
 product: campaign
 title: Een server voor midsourcing installeren in Campagne
 description: In deze sectie worden de installatie en configuratie van een medio-sourcingserver in Campagne beschreven
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 
 
-Deze sectie detailleert de installatie en de configuratie van een midsourcingserver, evenals de plaatsing van een instantie die derden toelaat om berichten in te sturen **midsourcing** in.
+Deze sectie detailleert de installatie en de configuratie van een midsourcingserver, evenals de plaatsing van een instantie die derde partijen toelaat om berichten in te verzenden **midsourcing** -modus.
 
 De &quot;mid-sourcing&quot;-architectuur wordt gepresenteerd in [Implementatie van midsourcing](../../installation/using/mid-sourcing-deployment.md).
 
@@ -27,7 +28,7 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 
 >[!CAUTION]
 >
->Zodra de medio-sourcingserver is ingesteld en de [synchronisatieworkflows](../../workflow/using/about-technical-workflows.md) die voor het eerst zijn gestart, moet u de interne naam van de externe accounts van de midsourcing niet bijwerken.
+>Zodra de server voor midsourcing is ingesteld en de [synchronisatieworkflows](../../workflow/using/about-technical-workflows.md) die voor het eerst zijn gestart, moet u de interne naam van de externe accounts van de midsourcing niet bijwerken.
 
 ## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 
@@ -37,7 +38,7 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 * Toegang tot een databaseserver op de toepassingsserver.
 * Firewall geconfigureerd voor het openen van HTTP- (80) of HTTPS-poorten (443) naar de server voor midsourcing.
 
-In de volgende procedure wordt een configuratie beschreven met één server voor midsourcing. Het is ook mogelijk meerdere servers te gebruiken. Het is ook mogelijk om bepaalde berichten (zoals workflowmeldingen) vanuit een interne configuratie te verzenden.
+In de volgende procedure wordt een configuratie beschreven met behulp van één server voor midsourcing. Het is ook mogelijk meerdere servers te gebruiken. Het is ook mogelijk om bepaalde berichten (zoals workflowmeldingen) vanuit een interne configuratie te verzenden.
 
 ### De toepassingsserver installeren en configureren voor implementatie van midsourcing {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
@@ -45,38 +46,38 @@ De installatieprocedure is identiek aan die van standalone instantie. Zie [Insta
 
 U moet echter het volgende toepassen:
 
-* In stap **5**, moet u de **mta** (levering) en **inMail** (stuiterende berichten) modules. De **wfserver** (workflow) moet echter geactiveerd blijven.
+* In stap **5**, moet u de optie **mta** (levering) en **inMail** (stuiterende berichten) modules. De **wfserver** (workflow) moet echter geactiveerd blijven.
 
-   ```
-   <?xml version='1.0'?>
-   <serverconf>  
-     <shared>    
-       <!-- add lang="eng" to dataStore to force English for the instance -->    
-       <dataStore hosts="console.campaign.net*">      
-         <mapping logical="*" physical="default"/>    
-       </dataStore>  </shared>  
-       <mta autoStart="false"/>  
-       <wfserver autoStart="true"/>  
-       <inMail autoStart="false"/>  
-       <sms autoStart="false"/>  
-       <listProtect autoStart="false"/>
-   </serverconf>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <serverconf>  
+    <shared>    
+      <!-- add lang="eng" to dataStore to force English for the instance -->    
+      <dataStore hosts="console.campaign.net*">      
+        <mapping logical="*" physical="default"/>    
+      </dataStore>  </shared>  
+      <mta autoStart="false"/>  
+      <wfserver autoStart="true"/>  
+      <inMail autoStart="false"/>  
+      <sms autoStart="false"/>  
+      <listProtect autoStart="false"/>
+  </serverconf>
+  ```
 
-   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
+  Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 * Stappen **6**, **9** en **10** zijn niet nodig.
 * Tijdens stappen **12** en **13**, moet u op de haven 8080 in verbindings URL wijzen (aangezien de console direct met Tomcat, niet via de server van het Web communiceert). De URL wordt `http://console.campaign.net:8080`. Tijdens stap **13**, selecteert u de **[!UICONTROL Issue towards Mid-sourcing]** te installeren.
 
-   ![](assets/s_ncs_install_midsourcing02.png)
+  ![](assets/s_ncs_install_midsourcing02.png)
 
-   >[!CAUTION]
-   >
-   >Het standaardverpletteren van technische leveringen wordt automatisch vervangen met e-mailverpletteren via Midden-sourcing.
+  >[!CAUTION]
+  >
+  >Het standaardverpletteren van technische leveringen wordt automatisch vervangen met e-mailverpletteren via Midden-sourcing.
 
 ### De server voor midsourcing installeren en configureren {#installing-and-configuring-the-mid-sourcing-server}
 
-Van de cliëntconsole, bepaal de plaats van **E-mailroutering via midsourcing** mid-sourcingrekening (in de **/Administratie/externe rekeningen/** map). Vul de **URL van server**, **account**, **password** en **URL van pagina spiegelen** instellingen met de informatie die wordt verschaft door de serverprovider die als host fungeert voor de server voor midsourcing. Test de verbinding.
+Zoek vanuit de clientconsole de **E-mailroutering via midsourcing** mid-sourcingrekening (in de **/Administratie/externe rekeningen/** map). Vul de **URL van server**, **account**, **password** en **URL van pagina spiegelen** instellingen met de informatie die wordt verschaft door de serverprovider die als host fungeert voor de server voor midsourcing. Test de verbinding.
 
 >[!NOTE]
 >
@@ -90,7 +91,7 @@ Van de cliëntconsole, bepaal de plaats van **E-mailroutering via midsourcing** 
    >
    >Als u de server voor midsourcing installeert en extra Adobe Campaign-modules wilt installeren, raden wij u aan de module Aflevering te gebruiken en niet de module Campagne.
 
-   Volg dezelfde procedure als voor de standaardplaatsing, die slechts selecteert **[!UICONTROL Mid-sourcing platform]** optie.
+   Volg dezelfde procedure als voor de standaardplaatsing, die slechts selecteert **[!UICONTROL Mid-sourcing platform]** -optie.
 
    ![](assets/s_ncs_install_midsourcing01.png)
 
@@ -121,7 +122,7 @@ Het is mogelijk dat een mid-sourcing-instantie wordt gedeeld door meerdere verze
 
    ![](assets/mid_recette_user_rights.png)
 
-1. Selecteer **[!UICONTROL Restrict to data in the sub-folders of]** en selecteert u de map met leveringen om deze operator te beperken tot de map met leveringen via de tussenliggende bron.
+1. Selecteer de **[!UICONTROL Restrict to data in the sub-folders of]** en selecteert u de map met leveringen om deze operator te beperken tot de map met leveringen via de tussenliggende bron.
 
    ![](assets/mid_recette_user_restrictions.png)
 
@@ -152,7 +153,7 @@ U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te
 1. Ga naar &#39;operatoren&#39; en selecteer de operator **[!UICONTROL mid]**.
 1. In de **[!UICONTROL Frontal servers]** voert u de parameters van de trackingserververbinding in.
 
-   Als u een instantie tracking wilt maken, voert u de URL van de tracingserver, het wachtwoord voor de interne account van de tracingserver en de naam van de instantie, het wachtwoord en de bijbehorende DNS-maskers in.
+   Als u een instantie tracking wilt maken, voert u de URL van de tracingserver, het interne accountwachtwoord van de tracingserver en de naam van de instantie, het wachtwoord en de bijbehorende DNS-maskers in.
 
    ![](assets/s_ncs_install_midsourcing_tracking02.png)
 
@@ -161,7 +162,7 @@ U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)
 
-   Als u **[!UICONTROL Tracking server(s)]** worden de afbeeldingen gekopieerd op de server voor midsourcing.
+   Als u **[!UICONTROL Tracking server(s)]** worden de afbeeldingen gekopieerd naar de server voor midsourcing.
 
 **Het klantplatform configureren**
 

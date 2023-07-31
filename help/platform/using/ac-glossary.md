@@ -2,10 +2,11 @@
 product: campaign
 title: Verklarende woordenlijst voor Adobe Campaign
 description: Verklarende woordenlijst voor Adobe Campaign
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 2%
@@ -20,7 +21,7 @@ Hieronder volgt de definitie van de belangrijkste termen en concepten in Adobe C
 
 +++**A/B-tests**
 
-A/B het testen is een capaciteit die de gebruiker twee tot drie e-mailvarianten laat bepalen: elke variant wordt naar bevolkingsmonsters gestuurd om te bepalen welk resultaat het beste is. Zodra dit is bepaald, wordt de winnende variant naar de resterende populatie verzonden.
+Een A/B-test is een mogelijkheid waarmee de gebruiker twee tot drie e-mailvarianten kan definiëren: elke variant wordt naar een bevolkingsmonster gestuurd om te bepalen wat het beste resultaat heeft. Zodra dit is bepaald, wordt de winnende variant naar de resterende populatie verzonden.
 
 Meer informatie over [A/B-tests](../../delivery/using/get-started-a-b-testing.md).
 +++
@@ -57,7 +58,7 @@ Meer informatie over [Actieve profielen](../../platform/using/about-profiles.md#
 
 +++**Activiteit goedkeuringswerkstroom**
 
-*Context: Gdistribueerde campagne*
+*Context: gedistribueerde campagne*
 
 De activiteit van de Lokale Goedkeuring is een werkschemaactiviteit die wordt gebruikt om een proces van de leveringsgoedkeuring op te zetten alvorens de berichten worden verzonden.
 
@@ -73,7 +74,7 @@ Meer informatie over [Soorten publiek](../../campaign/using/marketing-campaign-t
 
 +++**Audittrail**
 
-Met het audittrail wordt in real-time een uitgebreide lijst met acties en gebeurtenissen in uw Adobe Campaign-instantie vastgelegd. Het omvat een zelfbediende manier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat er met uw workflows is gebeurd en wie deze voor het laatst heeft bijgewerkt of wat uw gebruikers in dat geval hebben gedaan.
+Met het audittrail wordt in real-time een uitgebreide lijst met acties en gebeurtenissen in uw Adobe Campaign-instantie vastgelegd. Het omvat een zelf-servermanier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat met uw werkschema&#39;s gebeurde, en wie hen het laatst bijwerkte of wat uw gebruikers in de instantie deden.
 
 Meer informatie over [Audittrail](../../production/using/audit-trail.md).
 +++
@@ -90,7 +91,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 +++**Batchmodus**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 In de context van de Interactie van de Campagne, laat de partijwijze de Motor van het Aanbod de beste aanbieding (of aanbiedingen) voor een reeks contacten selecteren. De regels voor geschiktheid/prioritering worden toegepast op alle contactpersonen in de set.
 
@@ -153,9 +154,9 @@ Meer informatie over [Deelvenster Beheer](https://experienceleague.adobe.com/doc
 
 +++**Kubussen**
 
-*Context: Marketing Analytics*
+*Context: marketinganalyse*
 
-Kube is een intuïtief hulpprogramma voor gegevensverkenning van Adobe Campaign waarmee gebruikers dynamische rapporten kunnen maken en delen.
+Kube is een intuïtief Adobe Campaign-programma voor gegevensverkenning waarmee gebruikers dynamische rapporten kunnen maken en delen.
 
 Meer informatie over [Kubussen](../../reporting/using/ac-cubes.md).
 +++
@@ -195,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 +++**Aflevering**
 
-*Context: E-maillevering*
+*Context: e-maillevering*
 
 Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren of als spam te worden gemarkeerd. Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
@@ -237,7 +238,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 +++**Overzicht van levering**
 
-*Context: Direct mail*
+*Context: direct mail*
 
 Een leveringsoverzicht is een gestructureerde reeks elementen (documenten, winkels, promotionele coupons, enz.) door het bedrijf en voor een bepaalde campagne worden opgericht. Het wordt gebruikt in de context van direct-mailleveringen.
 
@@ -260,9 +261,9 @@ Meer informatie over [Beschrijvende analyse](../../reporting/using/about-descrip
 
 +++**Gedistribueerde marketing**
 
-*Context: Distributed Marketing*
+*Context: gedistribueerde marketing*
 
-De Distributed Marketing add-on biedt aan Campagneontwikkelaars een gezamenlijke werkruimte aan voor het uitvoeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **lijst met campagnepakketten**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
+De Distributed Marketing add-on biedt aan campagneoperators een samenwerkingswerkruimte aan voor het implementeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **lijst met campagnepakketten**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
 
 Meer informatie over [Distributed Marketing](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -294,7 +295,7 @@ E4X is de versie van Javascript die in Adobe Campaign Classic wordt gebruikt. So
 
 +++**Subsidiabiliteitsregels**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Subsidiabiliteitsregels zijn beperkingen die worden toegepast op een omgeving, categorie of aanbieding met betrekking tot de geldigheidsperiode, het doel en het gewicht. Zij laten de Exploitanten ervoor zorgen dat een aanbieding in overeenstemming met het gerichte contact is. In de aanbiedingsomgeving omvatten de subsidiabiliteitsregels presentatieregels die worden toegepast op de aanbiedingen en de ontvangers waarop de aanbieding betrekking heeft. In de categorie, laten de subsidiabiliteitsregels exploitanten de geldigheid van de categorie in tijd beperken, toepassingsthema&#39;s bepalen en de ontvangers bepalen om te richten. Zij kunnen ook een multipliergewicht voor een bepaalde periode bepalen. Hierdoor kunnen operatoren de regels voor aanbiedingen in andere categorieën delen en wordt hun beheer vereenvoudigd. In een aanbieding laten de subsidiabiliteitsregels exploitanten de geldigheid van aanbiedingen in de tijd beperken en bepalen welke ontvangers als doel hebben.
 
@@ -303,7 +304,7 @@ Meer informatie over [Subsidiabiliteitsregels](../../interaction/using/interacti
 
 +++**In aanmerking komende aanbieding**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een in aanmerking komende aanbieding is een aanbieding die voldoet aan de vooraf gedefinieerde beperkingen en die consistent aan een doel kan worden aangeboden.
 
@@ -335,7 +336,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 +++**Verrijkingsactiviteit**
 
-De verrijkingsactiviteit is een geavanceerde werkschemaactiviteit die Exploitanten toestaat om de geproduceerde werkbare gegevens te verrijken die in het werkschema zullen worden verwerkt. Deze activiteit wordt over het algemeen gebruikt na het richten van activiteiten of na het invoeren van een dossier en vóór activiteiten die gebruik van gerichte gegevens maken. De verbeteringen kunnen de binnenkomende overgangsgegevens omzetten en de activiteit vormen om de outputovergang met verbeterde gegevens te voltooien. Het staat de Exploitant toe om gegevens van veelvoudige gegevensreeksen te combineren, of verbindingen aan een tijdelijke middel tot stand te brengen.
+De verrijkingsactiviteit is een geavanceerde werkschemaactiviteit die Exploitanten toestaat om de geproduceerde werkbare gegevens te verrijken die in het werkschema zullen worden verwerkt. Deze activiteit wordt over het algemeen gebruikt na het richten van activiteiten of na het invoeren van een dossier en vóór activiteiten die het gebruik van gerichte gegevens gebruiken. De verbeteringen kunnen de binnenkomende overgangsgegevens omzetten en de activiteit vormen om de outputovergang met verbeterde gegevens te voltooien. Het staat de Exploitant toe om gegevens van veelvoudige gegevensreeksen te combineren, of verbindingen aan een tijdelijke middel tot stand te brengen.
 
 Meer informatie over [Verrijkingsactiviteit](../../workflow/using/enrichment.md).
 +++
@@ -363,7 +364,7 @@ Meer informatie over [Externe rekeningen](../../installation/using/external-acco
 
 +++**Vermoeidheidsbeheer**
 
-*Context: Campagne optimaliseren*
+*Context: optimalisatie campagne*
 
 Met vermoeidheidsbeheer kunt u de frequentie en de hoeveelheid berichten bepalen om overmatige opvraging van ontvangers te voorkomen. Deze wordt vaak toegepast met behulp van een typologieregel.
 
@@ -379,7 +380,7 @@ Meer informatie over [Federale gegevenstoegang](../../installation/using/about-f
 
 +++**Goedkeuring van bestandsuitwinning**
 
-*Context: Direct mail*
+*Context: direct mail*
 
 De goedkeuring van de winning van het Dossier is het proces om een afzonderlijke Exploitant of een groep van Exploitanten te hebben de inhoud en de configuratie van een gehaald dossier goedkeuren alvorens het naar een buitenverkoper, zoals voor een directe postlevering wordt verzonden.
 
@@ -444,13 +445,13 @@ Meer informatie over [Hybride implementatie](../../installation/using/hosting-mo
 <!-- added more details but maybe still not clear/useful here? -->
 +++**Identificatiemodus**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De identificatiemodus verwijst naar de status van een contactpersoon. Het kan expliciet, impliciet of anoniem zijn.
 
 * **expliciet**: het contact wordt geïdentificeerd na hun login op de kanaalinterface.
 * **impliciet**: de contactpersoon is geïdentificeerd door een cookie (permanent of sessie). Het kan als anoniem of geïdentificeerd contact worden verwerkt.
-* **anoniem**: het contact kan niet worden geïdentificeerd.
+* **anoniem**: de contactpersoon kan niet worden geïdentificeerd.
 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -467,7 +468,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**Binnenkomende interactie**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een binnenkomende interactie is een interactie na een inkomende vraag die door de actie van een contact in een kanaal, zoals Web, vraagcentrum of mobiel wordt geproduceerd. Dit type interactie wordt over het algemeen verwerkt in de eenheidsmodus (d.w.z. per ontvanger).
 
@@ -478,7 +479,7 @@ Meer informatie over [Binnenkomende interactie](../../interaction/using/about-in
 
 Inbox-rendering is het genereren van e-mailvoorvertoningen, zodat het bericht optimaal aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten. Adobe Campaign maakt gebruik van de Litmus, waarmee makers van e-mailinhoud hun berichtinhoud kunnen bekijken in meer dan 70 e-mailrenderers, zoals de Gmail inbox of de Apple Mail client.
 
-Meer informatie over [Inbox rendering](../../delivery/using/delivery-dashboard.md#delivery-rendering).
+Meer informatie over [Inbox-rendering](../../delivery/using/delivery-dashboard.md#delivery-rendering).
 +++
 
 +++**Versie-instellingen**
@@ -516,7 +517,7 @@ Meer informatie over [Lokale cache](../../platform/using/faq-campaign-config.md#
 
 *Context: Marketing Resource Management (MRM)*
 
-De **Marketing Resource Management (MRM)** in Adobe Campaign kunt u marketingacties in een samenwerkingsmodus beheren door een volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Adobe Campaign-operatoren kunnen hun acties coördineren en de voortgang ervan in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackinggereedschappen: rapportage, bijhouden van goedkeuringen, meldingen, discussieforums, enz.
+De **Marketing Resource Management (MRM)** in Adobe Campaign kunt u marketingacties in een samenwerkingsmodus beheren door een volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Adobe Campaign-operatoren kunnen hun acties coördineren en hun voortgang in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackingsinstrumenten: rapportage, tracering van goedkeuringen, meldingen, discussieforums, enz.
 
 Meer informatie over [MRM](../../mrm/using/about-marketing-resource-management.md).
 +++
@@ -571,7 +572,7 @@ Meer informatie over [Doelstellingen](../../mrm/using/creating-and-managing-task
 
 +++**Aanbiedingscatalogus**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingencatalogus is een reeks aanbiedingen die in Adobe Campaign zijn gedefinieerd en die tijdens een interactie kunnen worden geselecteerd. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
 
@@ -580,7 +581,7 @@ Meer informatie over [Aanbiedingscatalogus](../../interaction/using/offer-catalo
 
 +++**Contact aanbieden**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingscontact is een contact van een binnenkomende interactie. Tijdens de verwerking van de motorvraag, wordt het contact geassocieerd met een gericht afmeting. Niet-geïdentificeerde, anonieme contacten worden toegeschreven aan de bezoeker richtend dimensie. Er zijn twee soorten contacten, geïdentificeerd en anoniem:
 
@@ -592,25 +593,25 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 +++**Ontwerpomgeving van aanbieding**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
-Het voorstel **Ontwerpomgeving** is het milieu waarin de exploitanten aanbiedingen creëren, typologieregels bepalen, en het schema selecteren dat door de aanbiedingen zal worden gericht. De tabel voor het opslaan van gegenereerde aanbiedingsvoorstellen wordt ook door de omgeving gedefinieerd. Standaard wordt de invoegtoepassing Interactie geleverd met een **Ontwerp** milieu en **Live** omgeving. Beide milieu&#39;s worden pre-gevormd om de ingebouwde ontvankelijke lijst te richten.
+Het voorstel **Ontwerpomgeving** is het milieu waarin de exploitanten aanbiedingen creëren, typologieregels bepalen, en het schema selecteren dat door de aanbiedingen zal worden gericht. De tabel voor het opslaan van gegenereerde aanbiedingsvoorstellen wordt ook door de omgeving gedefinieerd. Standaard wordt de invoegtoepassing Interactie geleverd met een **Ontwerp** milieu en **Live** omgeving die eraan gekoppeld is. Beide milieu&#39;s worden pre-gevormd om de ingebouwde ontvankelijke lijst te richten.
 
 Meer informatie over [Ontwerpomgevingen aanbieden](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Bied motorarbitrage aan**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De aanbiedingsmotor selecteert de aanbiedingen die op een milieu (in aanmerking komende aanbiedingen) zullen worden getoond. Het arbitragebeginsel rangschikt de aanbiedingen naar prioriteit volgens de criteria die in de categorieën en aanbiedingen zijn vastgesteld.
 
 Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Pruning van engine aanbieden**
++++**Afdrukken van engine aanbieden**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De aanbiedingsengine wordt gewist door aanbiedingen die niet voor selectie in aanmerking komen, te verwijderen. Uitgevoerd voorafgaand aan de stap voor de arbitrage van de aanbiedingsmotor.
 
@@ -619,16 +620,16 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 +++**Aanbiedingsomgeving**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
-De aanbiedingsomgeving is de hoofdmap die een aanbiedingencatalogus, de beschikbare ruimten en de vooraf gedefinieerde filters van de omgeving definieert. De exploitanten moeten één milieu voor elke het richten dimensie tot stand brengen. Er zijn twee soorten omgevingen voor aanbiedingen: Ontwerp en live.
+De aanbiedingsomgeving is de hoofdmap die een aanbiedingencatalogus, de beschikbare ruimten en de vooraf gedefinieerde filters van de omgeving definieert. De exploitanten moeten één milieu voor elke het richten dimensie tot stand brengen. Er zijn twee typen omgevingen voor aanbiedingen: Ontwerpen en Live.
 
 Meer informatie over [Aanbiedingsomgevingen](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Live-omgeving aanbieden**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De omgeving Live aanbieden is gekoppeld aan een campagne **Ontwerpomgeving**. Het bevat alleen-lezen aanbiedingen waarvan de inhoud en geschiktheid zijn goedgekeurd via de **Ontwerpomgeving**. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
 
@@ -637,7 +638,7 @@ Meer informatie over [Live-omgevingen aanbieden](../../interaction/using/fundame
 
 +++**Presentatieregels aanbieden**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De de presentatieregels van de aanbieding zijn typologieregels die in het aanbiedingsmilieu van verwijzingen worden voorzien, die Exploitanten specifieke aanbiedingen laten door rekening te houden met de voorpositiegeschiedenis van de ontvanger.
 
@@ -646,7 +647,7 @@ Meer informatie over [Presentatieregels aanbieden](../../interaction/using/manag
 
 +++**Voorvertoning voorstel**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Dit is de voorvertoning van de aanbieding zoals deze in de bijbehorende map wordt weergegeven. Het is toegankelijk vanaf het tabblad Voorvertoning aanbieding of het contactprofiel.
 
@@ -655,7 +656,7 @@ Meer informatie over [Voorvertoning voorstel](../../interaction/using/creating-a
 
 +++**Voorstel**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingsvoorstel is het resultaat van de actie die bestaat uit het aanbieden van een aanbieding aan een contact in een bepaalde aanbiedingsruimte, bijvoorbeeld de banner op een website, een e-mail of sms-inhoud. Dit resultaat wordt opgeslagen in de lijst met aanbiedingsvoorstellen waarin de aanbieding, de ontvanger en de tijdstempel worden gedefinieerd, met een overzicht van alle aanbiedingen die een ontvanger heeft ontvangen.
 
@@ -664,7 +665,7 @@ Meer informatie over [Voorstellen aanbieden](../../interaction/using/creating-of
 
 +++**Voorstelling**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingsvertegenwoordiging is informatie die door het kanaal wordt gebruikt om de aanbieding te tonen. De aanbiedingsvertegenwoordiging kan van de teruggevende functie van de ruimte worden geconstrueerd waarop de aanbieding wordt vertegenwoordigd of direct in de interface (bijvoorbeeld, in het blok van HTML) ingegaan. Een aanbieding kan door een ruimte worden vertegenwoordigd.
 
@@ -673,7 +674,7 @@ Meer informatie over [Interactie](../../interaction/using/interaction-and-offer-
 
 +++**Aanbiedingssimulatie**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingssimulatie laat de exploitanten aanbiedingsdistributie over een bepaald werkingsgebied (leveringsdatum, doelsegment, aantal aanbiedingen, thema, enz.) testen voordat de aanbiedingen daadwerkelijk worden verzonden. Het kan worden gebruikt om de prioriteiten en de subsidiabiliteitsregels van de aanbiedingen aan te passen om de doeltreffendheid van de aanbieding te maximaliseren.
 
@@ -682,7 +683,7 @@ Meer informatie over [Aanbiedingssimulaties](../../interaction/using/about-offer
 
 +++**Ruimte voor aanbod**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een aanbiedingsruimte is een map waarin de locatie van de aanbieding wordt gedefinieerd. Als u een spatie definieert, kunt u het gebruikte kanaal opgeven, de inhoud van de aanbieding opbouwen en de aangeboden aanbiedingen opgeven. De aanbiedingsruimte is de interface tussen het kanaal en de aanbiedingsmotor.
 
@@ -691,7 +692,7 @@ Meer informatie over [Ruimte voor aanbod](../../interaction/using/creating-offer
 
 +++**Thema&#39;s aanbieden**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Aanbiedingsthema&#39;s zijn trefwoorden die in een categorie zijn gedefinieerd, waardoor operatoren aanbiedingen kunnen filteren wanneer ze worden weergegeven. Thema&#39;s maken het mogelijk aanbiedingen niet hiërarchisch te selecteren in de catalogusstructuur.
 
@@ -700,7 +701,7 @@ Meer informatie over [Thema&#39;s aanbieden](../../interaction/using/integrating
 
 +++**Aanbiedingsgewicht**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Het aanbiedingsgewicht is gebaseerd op formules die de relevantie van een aanbieding nauwkeurig definiëren, zodat de motor de meest relevante aanbieding kan selecteren. Het gewicht wordt gedefinieerd in de aanbiedingen en de vermenigvuldigingsfactoren worden in de categorieën gedefinieerd. In aanmerking komende aanbiedingen worden in afnemende gewichtsvolgorde in aanmerking genomen.
 
@@ -723,14 +724,14 @@ Meer informatie over [Exploitantgroepen](../../platform/using/access-management-
 
 +++**Opties**
 
-Opties zijn variabelen op het niveau van het Platform die worden gebruikt om instellingen van de instantie Campagne te bepalen. Met opties kunt u tijdframes definiëren (zoals voor een opschoonworkflow voor databases) of andere algemene definities op platformniveau.
+Opties zijn variabelen op het niveau van het Platform die worden gebruikt om instellingen van de instantie Campagne te bepalen. Met opties kunt u tijdframes definiëren (zoals voor een workflow voor het opschonen van databases) of andere algemene definities op platformniveau.
 
 Meer informatie over [Opties](../../installation/using/configuring-campaign-options.md).
 +++
 
 +++**Uitgaande interactie**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 Een uitgaande interactie is een aanroep van de interactie-engine vanuit een lijst met contactpersonen (die wordt gebruikt voor het verzenden van e-mails, e-mailberichten, enz.). De zelfde regels en de processen worden toegepast op elk contact. Dit type interactie wordt over het algemeen verwerkt in batchmodus.
 
@@ -765,7 +766,7 @@ Adobe Campaign biedt ingebouwde aanpassingsblokken die u in uw leveringen kunt i
 Meer informatie over [Aanpassingsblokken](../../delivery/using/personalization-blocks.md).
 +++
 
-+++**Veld voor aanpassen**
++++**Personalisatieveld**
 
 Een verpersoonlijkingsgebied is één enkele verwijzing van het gegevensgebied die wanneer het personaliseren van een levering voor een specifieke ontvanger wordt gebruikt. De werkelijke gegevenswaarde wordt ingevoegd tijdens de fase van de leveringsanalyse.
 
@@ -833,7 +834,7 @@ Meer informatie over [Overheidsmiddelen](../../installation/using/deploying-an-i
 
 +++**Push**
 
-*Context: Mobiel App-kanaal*
+*Context: Mobile App Channel*
 
 Pushberichten zijn berichten die door mobiele toepassingen worden ontvangen. Push-berichten zijn geconfigureerd om met Adobe Campaign te werken door de SDK-code van het Experience Platform in de mobiele toepassing op te nemen. Voor Push zijn twee leveringskanalen beschikbaar: iOS en Android.
 
@@ -844,14 +845,14 @@ Meer informatie over [Push](../../delivery/using/about-mobile-app-channel.md).
 
 +++**Ontvanger**
 
-In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, SMS, enz.) aan uw klanten. De ontvangende gegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren en verpersoonlijkingsgegevens toe te voegen. Dit is doorgaans persoonlijke, contact-, demografische en transactiegegevens, maar het kan elk type informatie zijn dat marketing en analyse ondersteunt.
+In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, SMS, enz.) aan uw klanten. De ontvangergegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren en verpersoonlijkingsgegevens toe te voegen. Dit is doorgaans persoonlijke, contact-, demografische en transactiegegevens, maar het kan elk type informatie zijn dat marketing en analyse ondersteunt.
 
 Meer informatie over [Ontvanger](../../configuration/using/about-data-model.md).
 +++
 
 +++**Renderfunctie**
 
-*Context: Campagne-interactie*
+*Context: interactie campagne*
 
 De renderfunctie wordt gedefinieerd in een aanbiedingsruimte. Het wordt gebruikt om zijn aanbiedingsvertegenwoordiging te construeren die op de attributen wordt gebaseerd in de aanbieding worden bepaald. Er zijn drie verschillende renderingfuncties: HTML, XML en tekst.
 
@@ -868,7 +869,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 
 +++**Schema**
 
-Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
+Een schema is een XML-document dat aan een databasetabel is gekoppeld. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
 
 Meer informatie over [Schemas](../../configuration/using/about-schema-reference.md).
 +++
@@ -920,7 +921,7 @@ Meer informatie over [Activiteit abonnementsdiensten](../../workflow/using/subsc
 
 +++**Doelgoedkeuring**
 
-*Context: Gdistribueerde campagne*
+*Context: gedistribueerde campagne*
 
 Doelgoedkeuring is het proces waarbij een afzonderlijke exploitant of groep exploitanten het uiteindelijke doel van een levering goedkeurt (nadat de analysefase het doel heeft gegenereerd) voordat de levering kan worden verzonden.
 
@@ -943,7 +944,7 @@ Meer informatie over [Doeltoewijzing](../../delivery/using/selecting-a-target-ma
 
 +++**Targetingactiviteiten**
 
-Doelactiviteiten zijn workflowactiviteiten die specifiek zijn voor doelgerichte, manipulerende bevolkingsgegevens en filteractiviteiten. Zij laten de Exploitanten één of meerdere doelstellingen bouwen door reeksen te bepalen en deze reeksen te verdelen of te combineren gebruikend doorsnede, verenigings of uitsluitingsverrichtingen.
+Doelactiviteiten zijn workflowactiviteiten die specifiek zijn voor doelgerichte activiteiten, het manipuleren van bevolkingsgegevens en filteractiviteiten. Zij laten de Exploitanten één of meerdere doelstellingen bouwen door reeksen te bepalen en deze reeksen te verdelen of te combineren gebruikend doorsnede, verenigings of uitsluitingsverrichtingen.
 
 Meer informatie over [Gerichte activiteiten](../../workflow/using/about-targeting-activities.md).
 +++
@@ -959,7 +960,7 @@ Meer informatie over [Doeldimensie](../../workflow/using/targeting-data.md).
 
 *Context: Marketing Resource Management (MRM)*
 
-De het werkschemaactiviteit van de Taak neemt menselijke actie in de logica van een werkschema op. U kunt twee scenario&#39;s specificeren: de eerste als de taak is voltooid en de tweede als de taak niet is voltooid. De typische gebruiksgevallen zijn voor het opnemen van off-line acties in een campagne, of voor douaneacties zoals goedkeuringen.
+De het werkschemaactiviteit van de Taak neemt menselijke actie in de logica van een werkschema op. U kunt twee scenario&#39;s specificeren: eerste als de taak wordt voltooid en tweede als de taak niet wordt voltooid. De typische gebruiksgevallen zijn voor het opnemen van off-line acties in een campagne, of voor douaneacties zoals goedkeuringen.
 
 Meer informatie over [Taakactiviteit](../../workflow/using/task.md).
 +++
@@ -1001,7 +1002,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 +++**Logboeken bijhouden**
 
-Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opgehaald nadat de levering is verzonden en de tekstspatiëring is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. U kunt informatie voor opent vinden en op een e-mail of andere interactie klikken met een bericht dat door de ontvanger wordt ontvangen.
+De technische workflow voor bijhouden haalt de gegevens voor het bijhouden van de gegevens op nadat de levering is verzonden en het bijhouden van de gegevens is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. U kunt informatie voor opent vinden en op een e-mail of andere interactie klikken met een bericht dat door de ontvanger wordt ontvangen.
 
 Meer informatie over [Logboeken bijhouden](../../delivery/using/accessing-the-tracking-logs.md).
 +++
@@ -1016,7 +1017,7 @@ Meer informatie over [Transactieberichten](../../message-center/using/about-tran
 &lt;!— NUTTIG HIER?—>
 +++**Gedetailleerde campagnes**
 
-Gegenereerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een workflow wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
+Gegenereerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een werkstroom wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
 
 Meer informatie over [Gegroepeerde componenten](../../workflow/using/external-signal.md).
 +++
@@ -1033,7 +1034,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 +++**Typologie**
 
-*Context: Campagne optimaliseren*
+*Context: optimalisatie campagne*
 
 Een typologie is een groepering van typologische regels die worden toegepast op de analysefase van een levering. Een campagneretypologie kan verschillende typologische regels bevatten, maar een levering kan slechts naar één typologie verwijzen.
 
@@ -1042,7 +1043,7 @@ Meer informatie over [Typologieën](../../campaign-opt/using/about-campaign-typo
 
 +++**Typologieregel**
 
-*Context: Campagne optimaliseren*
+*Context: optimalisatie campagne*
 
 Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (controleregels) of het doel van de levering (het filtreren regels) of andere logica (drukregels) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere typologieën kunnen worden omvat.
 
@@ -1053,7 +1054,7 @@ Meer informatie over [Typologieregels](../../campaign-opt/using/about-campaign-t
 
 +++**Eenvoudige modus**
 
-*Context: Campagne Interactie, Transactioneel Overseinen*
+*Context: campagneinteractie, transactief berichtenverkeer*
 
 In de eenheidswijze, wordt één enkel contact verwerkt door de motor van de Aanbieding bij runtime. Deze wijze wordt over het algemeen gebruikt voor binnenkomende interactie en transactieberichten.
 

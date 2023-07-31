@@ -2,12 +2,12 @@
 product: campaign
 title: Lijst met rapporten
 description: Lijst met rapporten
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
-feature: Reporting
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie](../../reporting/using/delivery-reports.md).
+Raadpleeg voor meer informatie over de inhoud van deze rapporten [deze sectie](../../reporting/using/delivery-reports.md).
 
 <table> 
  <tbody> 
@@ -40,7 +40,7 @@ Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie
    <td> nms:levering<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mislukt en fouten<br /> </td> 
+   <td> Fouten en stuitingen (fouten)<br /> </td> 
    <td> Bounces en niet-te leveren items per oorzaak en domein.<br /> </td> 
    <td> nms:levering<br /> </td> 
   </tr> 
@@ -91,12 +91,12 @@ Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie
   </tr> 
   <tr> 
    <td> Afleveringsoverzicht (leveringVerzenden)<br /> </td> 
-   <td> Samenvatting van de leveringsindicatoren: doel, uitsluiting en verzonden berichten.<br /> </td> 
+   <td> Samenvatting van leveringsindicatoren: doel, uitsluiting en verzonden berichten.<br /> </td> 
    <td> nms:levering<br /> </td> 
   </tr> 
   <tr> 
    <td> Overzicht van levering (deliveryStatistics)<br /> </td> 
-   <td> Samenvattingstabel voor geselecteerde leveringen: Doelen, uitsluitingen en verzonden berichten.<br /> </td> 
+   <td> Overzichtstabel voor geselecteerde leveringen: doelen, uitsluitingen en berichten verzonden.<br /> </td> 
    <td> nms:levering<br /> </td> 
   </tr> 
   <tr> 
@@ -123,7 +123,7 @@ De verslagen over campagnes hebben betrekking op de gegevens in het **nms:bewerk
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie](../../campaign/using/designing-marketing-campaigns.md).
+Raadpleeg voor meer informatie over de inhoud van deze rapporten [deze sectie](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -153,7 +153,7 @@ Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie
   </tr> 
   <tr> 
    <td> Trackingindicatoren (operationFeedback)<br /> </td> 
-   <td> Overzicht van belangrijke volgindicatoren: Opent, klikt en Transacties, is afhankelijk van campagne.<br /> </td> 
+   <td> Overzicht van belangrijke volgindicatoren: Opens, Kliks en Transacties, hangt van Campagne af.<br /> </td> 
   </tr> 
   <tr> 
    <td> Delen naar sociale netwerken (operationForward)<br /> </td> 
@@ -169,7 +169,7 @@ Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie
   </tr> 
   <tr> 
    <td> Overzicht van levering (operationStatistics)<br /> </td> 
-   <td> Samenvattend overzicht van de campagneleveringen: Doelen, uitsluitingen en verzonden berichten.<br /> </td> 
+   <td> Samenvattend overzicht van de campagneleveringen: doelstellingen, uitsluitingen en verzonden berichten.<br /> </td> 
   </tr> 
   <tr> 
    <td> URL's en klik op doorvoer (operationTopUrlDelivery)<br /> </td> 
@@ -219,7 +219,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie](../../campaign/using/designing-marketing-campaigns.md).
+Raadpleeg voor meer informatie over de inhoud van deze rapporten [deze sectie](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -314,7 +314,7 @@ Rapporten over de toepassingen van het Web betreffen de gegevens in **nms:WebApp
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie](../../web/using/about-web-applications.md).
+Raadpleeg voor meer informatie over de inhoud van deze rapporten [deze sectie](../../web/using/about-web-applications.md).
 
 <table> 
  <tbody> 
@@ -328,10 +328,10 @@ Voor meer informatie over de inhoud van deze rapporten raadpleegt u [deze sectie
   </tr> 
   <tr> 
    <td> Hoofd (surveyProperties)<br /> </td> 
-   <td> Eigenschappen van enquête<br /> </td> 
+   <td> Eigenschappen van enquêtes<br /> </td> 
   </tr> 
   <tr> 
-   <td> Uitsplitsing van antwoorden (surveyDistribution)<br /> </td> 
+   <td> Uitsplitsing van de antwoorden (surveyDistribution)<br /> </td> 
    <td> Uitsplitsing van antwoorden op vragen.<br /> </td> 
   </tr> 
  </tbody> 

@@ -2,12 +2,13 @@
 product: campaign
 title: Viral en social marketing
 description: Viral en social marketing
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Social Marketing
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 2%
 
 Met Adobe Campaign kunt u gereedschappen instellen om het op de markt brengen van virussen aan te moedigen.
 
-Hierdoor kunnen ontvangers van de levering of websitebezoekers gegevens delen met hun netwerk: van het toevoegen van een koppeling naar hun Facebook- of Twitter-profiel naar het verzenden van een bericht naar een vriend.
+Hierdoor kunnen ontvangers of websitebezoekers gegevens delen met hun netwerk: van het toevoegen van een koppeling naar hun Facebook- of Twitter-profiel tot het verzenden van een bericht naar een vriend.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
@@ -26,7 +27,7 @@ Hierdoor kunnen ontvangers van de levering of websitebezoekers gegevens delen me
 >
 >Voor het correct functioneren van toegevoegde verbindingen, moet de passende spiegelpagina beschikbaar zijn. Hiervoor neemt u de koppeling naar de spiegelpagina op in de levering.
 
-## Sociale netwerken: delen, koppeling {#social-networks--sharing-a-link}
+## Sociale netwerken: een koppeling delen {#social-networks--sharing-a-link}
 
 Om leveringsontvangers toe te laten om de inhoud van berichten met leden van hun netwerk te delen, moet u het passende verpersoonlijkingsblok omvatten.
 
@@ -50,7 +51,7 @@ Wanneer de ontvanger op het pictogram van een van de weergegeven sociale netwerk
 
 ## Virale marketing: doorsturen naar een vriend {#viral-marketing--forward-to-a-friend}
 
-Een virale dienst maakt verwijzingsacties mogelijk: met deze acties kunt u een bericht naar een vriend sturen . Het profiel van de referentie(s) wordt tijdelijk opgeslagen in de database (in een specifieke tabel). De doorgestuurde berichten bevatten een koppeling waarmee de scheidsrechter zich kan abonneren: als ze dat doen, worden ze toegevoegd aan de Adobe Campaign-database.
+Een virale dienst staat verwijzingsacties toe om worden uitgevoerd: deze acties laten u toe om een bericht aan een vriend door te sturen. Het profiel van de referentie(s) wordt tijdelijk opgeslagen in de database (in een specifieke tabel). De doorgestuurde berichten bevatten een koppeling waarmee de referentie zich kan abonneren: als deze berichten wel worden verzonden, worden ze toegevoegd aan de Adobe Campaign-database.
 
 Het doorsturen van berichten is gebaseerd op de zelfde principes zoals sociale netwerkverbindingen.
 
@@ -79,11 +80,11 @@ Pas de volgende stappen toe:
 
    >[!NOTE]
    >
-   >Deze configuratie kan worden aangepast. Om dit te doen, moet u wijzigen **Abonnement ontvangers** Webtoepassing opgeslagen in de **[!UICONTROL Resources > Online > Web applications]** knooppunt.
+   >Deze configuratie kan worden aangepast. Hiervoor moet u de **Abonnement ontvangers** Webtoepassing opgeslagen in de **[!UICONTROL Resources > Online > Web applications]** knooppunt.
    >
-   >Voor meer informatie over de toepassingen van het Web, verwijs naar [deze sectie](../../web/using/about-web-applications.md).
+   >Raadpleeg voor meer informatie over webtoepassingen [deze sectie](../../web/using/about-web-applications.md).
 
-   Nadat ze zijn gevalideerd, wordt een bevestigingsbericht naar hen verzonden: ze worden pas goed geregistreerd als ze de koppeling in het bevestigingsbericht activeren. Dit bericht wordt gemaakt op basis van de **[!UICONTROL Registration confirmation]** sjabloon, dat wordt opgeslagen in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** knooppunt.
+   Nadat ze zijn gevalideerd, wordt hun een bevestigingsbericht gestuurd: ze worden pas goed geregistreerd als ze de koppeling in het bevestigingsbericht activeren. Dit bericht wordt gemaakt op basis van de **[!UICONTROL Registration confirmation]** sjabloon, dat wordt opgeslagen in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** knooppunt.
 
    De referentie wordt toegevoegd aan de **Ontvangers** map van de database en is (standaard) geabonneerd op de **Nieuwsbrief** informatiedienst.
 
@@ -93,8 +94,8 @@ Het delen van en de toegang tot gedeelde informatie wordt gevolgd. Deze door Ado
 
 * in de **[!UICONTROL Tracking]** tabblad van de levering (of afzonderlijk voor elke ontvanger):
 
-   ![](assets/s_ncs_user_network_del_tracking_tab.png)
+  ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
 * in een specifieke **[!UICONTROL Sharing to social networks]** rapport:
 
-   ![](assets/s_ncs_user_viral_report.png)
+  ![](assets/s_ncs_user_viral_report.png)

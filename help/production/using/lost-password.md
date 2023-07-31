@@ -2,16 +2,17 @@
 product: campaign
 title: Wachtwoord verloren
 description: Wachtwoord verloren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Access Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 12%
 
 ---
 
@@ -67,7 +68,7 @@ Hiervoor volgt u de volgende procedure:
 
 1. Sla de wijzigingen op en sluit het bestand.
 
-1. Configureer het nieuwe wachtwoord. Voer hiertoe de volgende opdrachten in:
+1. Vorm het nieuwe wachtwoord. Voer hiertoe de volgende opdrachten in:
 
    ```
    nlserver config -internalpassword
@@ -79,4 +80,4 @@ Hiervoor volgt u de volgende procedure:
    Confirmation 
    ```
 
-1. U kunt nu uw nieuwe wachtwoord gebruiken om verbinding te maken met **Intern** in.
+1. U kunt nu uw nieuwe wachtwoord gebruiken om verbinding te maken met **Intern** -modus.

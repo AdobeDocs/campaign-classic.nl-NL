@@ -2,14 +2,14 @@
 product: campaign
 title: Cumulatieve rapporten
 description: Cumulatieve rapporten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 8%
+source-wordcount: '81'
+ht-degree: 9%
 
 ---
 
@@ -23,6 +23,6 @@ U kunt gecumuleerde rapporten weergeven bij leveringen. Selecteer hiertoe de te 
 
 Als u niet-aangrenzende leveringen in de lijst wilt selecteren, houdt u de CTRL-toets ingedrukt terwijl u een selectie maakt.
 
-Als u leveringen wilt selecteren die in een andere map zijn opgeslagen, klikt u op **[!UICONTROL Display sub-levels]** (toegankelijk via de werkbalk). Deze worden vervolgens in dezelfde lijst weergegeven.
+Als u in een andere map opgeslagen leveringen wilt selecteren, klikt u op **[!UICONTROL Display sub-levels]** (toegankelijk via de werkbalk). Deze worden vervolgens in dezelfde lijst weergegeven.
 
 ![](assets/s_ncs_user_display_children_icon.png)

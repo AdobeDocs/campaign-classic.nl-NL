@@ -2,15 +2,16 @@
 product: campaign
 title: Adobe Campaign Explorer gebruiken
 description: Meer informatie over het gebruik van Campagne Explorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,7 @@ De **[!UICONTROL Explorer]** De werkruimte bestaat uit drie zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg voor meer informatie hierover  [deze sectie](#about-navigation-hierarchy).).
+**1 - boom**: u kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg voor meer informatie hierover  [deze sectie](#about-navigation-hierarchy).).
 
 **2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer informatie](adobe-campaign-ui-lists.md).
 
@@ -50,24 +51,24 @@ Leer hoe u machtigingen voor mappen instelt [in deze sectie](access-management-f
 
 * **Ingebouwde mappen gebruiken**
 
-   Door de ingebouwde mappen te gebruiken, kunt u de toepassing eenvoudiger gebruiken, onderhouden en problemen oplossen voor personen die niet bij het project zijn betrokken. U moet geen aangepaste mapstructuren maken voor ontvangers, lijsten, leveringen, enzovoort, maar u moet wel de standaardmappen gebruiken, zoals Beheer, Profielen en doelen, Campagnebeheer.
+  Door de ingebouwde mappen te gebruiken, kunt u de toepassing eenvoudiger gebruiken, onderhouden en problemen oplossen voor personen die niet bij het project zijn betrokken. U moet geen aangepaste mapstructuren maken voor ontvangers, lijsten, leveringen, enzovoort, maar u moet wel de standaardmappen gebruiken, zoals Beheer, Profielen en doelen, Campagnebeheer.
 
 * **Submappen maken**
 
-   Plaats technische workflows in de standaardmap: Beheer / Productie / Technische workflows en maak submappen per workflowtype.
+  Plaats technische workflows onder de standaardmap: Beheer / Productie / Technische workflows en maak submappen per workflowtype.
 
 * **Een naamgevingsconventie instellen**
 
-   U kunt de werkstromen bijvoorbeeld in alfabetische volgorde benoemen, zodat ze in de volgorde van uitvoering gesorteerd worden weergegeven.
+  U kunt de werkstromen bijvoorbeeld in alfabetische volgorde benoemen, zodat ze in de volgorde van uitvoering gesorteerd worden weergegeven.
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
    * A1 - ontvangers van de invoer, begint om 10:00;
    * A2 - Importopdrachten beginnen om 11.00 uur.
 
 * **Sjablonen maken waarmee gebruikers kunnen beginnen**
 
-   Maak leveringssjablonen, workflowsjablonen, campagnemalplaatjes die specifiek zijn voor gebruikers. Deze structuur kan tijd besparen en ervoor zorgen dat de juiste leveringstoewijzing en typologieën voor elke gebruiker worden gebruikt.
+  Leveringssjablonen, workflowsjablonen en campagnemalplaatjes maken die specifiek zijn voor gebruikers. Deze structuur kan tijd besparen en ervoor zorgen dat de juiste leveringstoewijzing en typologieën voor elke gebruiker worden gebruikt.
 
 ## Schermresolutie {#screen-resolution}
 

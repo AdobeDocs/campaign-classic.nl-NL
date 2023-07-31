@@ -2,14 +2,15 @@
 product: campaign
 title: Een profiel bewerken
 description: Een profiel bewerken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 5%
 
 ---
@@ -42,7 +43,7 @@ Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het beva
 
 >[!NOTE]
 >
->Wanneer de **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van gewezen personen is, d.w.z. dat het profiel de wens heeft geuit om niet te worden gecontacteerd (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen op welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
+>Wanneer de **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van gewezen personen is, d.w.z. dat in het profiel de wens is geuit dat er geen contact met het profiel wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen op een kanaal (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
 
 ## Tabblad Contactgegevens {#contact-information-tab}
 
@@ -60,7 +61,7 @@ Dit scherm bevat door de gebruiker gedefinieerde velden die op basis van vereist
 
 >[!NOTE]
 >
->Voor meer informatie over veldeigenschappen en bij het toevoegen van gebieden, verwijs naar [deze pagina](../../configuration/using/new-field-wizard.md).
+>Zie voor meer informatie over veldeigenschappen en bij het toevoegen van velden: [deze pagina](../../configuration/using/new-field-wizard.md).
 
 ## Tabblad Lijsten {#lists-tab}
 
@@ -94,7 +95,7 @@ In dit scherm kunt u de trackinglogboeken voor het geselecteerde profiel weergev
 
 Dit tabblad geeft het cumulatieve totaal weer van alle URL&#39;s die in leveringen worden bijgehouden.
 
-De lijst is configureerbaar, en bevat gewoonlijk: klikte URL, datum en tijd van klik, en het document dat URL bevatte.
+De lijst is configureerbaar en bevat meestal: de URL waarop is geklikt, de datum en tijd waarop is geklikt en het document dat de URL bevat.
 
 >[!NOTE]
 >

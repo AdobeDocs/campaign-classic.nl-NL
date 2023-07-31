@@ -2,14 +2,15 @@
 product: campaign
 title: Adobe Campaign starten
 description: Adobe Campaign starten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Access Management, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 9%
 
 ---
@@ -22,7 +23,7 @@ De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om 
 
 >[!CAUTION]
 >
->Controleer de compatibiliteit van uw systeem en hulpprogramma&#39;s met de Adobe Campaign Client Console in het dialoogvenster [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+>Controleer de compatibiliteit van uw systeem en tools met de Adobe Campaign Client Console in het dialoogvenster [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Adobe Campaign starten {#starting-adobe-campaign}
 
@@ -51,8 +52,8 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 U hebt nu toegang tot [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
 
 Sommige sneltoetsen zijn beschikbaar op het tabblad **[!UICONTROL Sign in screen]**:
-* Alle activeerbare punten zijn selecteerbaar door **Tab** (van boven naar beneden) of de **Tab** + **Shift** (van beneden naar boven).
-* Als u de verbinding wilt starten, kunt u ook op de knop **Enter** toets.
+* Alle actiepunten kunnen worden geselecteerd via de **Tab** (van boven naar beneden) of de **Tab** + **Shift** (van beneden naar boven).
+* U kunt ook op de knop **Enter** toets.
 * U kunt de **Escape** toets om de **[!UICONTROL Login]** en **[!UICONTROL Password]** velden naar de laatst succesvolle verbindingswaarden.
 
 ## Verbindingen instellen {#setting-up-connections}
@@ -69,7 +70,7 @@ Vervolgens definieert u de verbindingsinstellingen. Dit doet u als volgt:
 
 1. Voeg het adres van de toepassingsserver toe in de **[!UICONTROL URL]** veld. Neem contact op met de beheerder als u de verbindings-URL niet kent.
 
-1. Controleren **[!UICONTROL Connect with an Adobe ID]** voor de operatoren om verbinding te maken met de console met behulp van hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
+1. Controleren **[!UICONTROL Connect with an Adobe ID]** voor de operatoren om verbinding te maken met de console via hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
 1. Klikken **[!UICONTROL OK]** om te valideren.
 
@@ -77,7 +78,7 @@ Vervolgens definieert u de verbindingsinstellingen. Dit doet u als volgt:
 
 De id&#39;s en wachtwoorden van operatoren die toegang hebben tot de software en hun respectievelijke machtigingen zijn gedefinieerd door de systeembeheerder van Adobe Campaign in het dialoogvenster **[!UICONTROL Administration > Access management > Operators]** knooppunt van de boomstructuur Adobe Campaign.
 
-Deze functionaliteit wordt gedetailleerd beschreven in de [Toegangsbeheer](../../platform/using/access-management.md) sectie.
+Deze functionaliteit wordt gedetailleerd beschreven in het dialoogvenster [Toegangsbeheer](../../platform/using/access-management.md) sectie.
 
 ## Verbinding met Adobe Campaign verbreken {#disconnecting-from-adobe-campaign}
 
@@ -95,12 +96,12 @@ De **[!UICONTROL Help > About...]** kunt u de volgende informatie gebruiken:
 
 * **versie** aantal voor de cliëntconsole van de Campagne en toepassingsserver
 * **build** aantal voor de cliëntconsole van de Campagne en toepassingsserver
-* een koppeling om contact op te nemen met de klantenservice van Adobe
+* een koppeling om contact op te nemen met de Adobe Klantenservice
 * koppelingen naar het privacybeleid van Adobe, de Gebruiksvoorwaarden en het Cookies-beleid
 
 ![](assets/about-acc.png)
 
-Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
+Telkens wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
 
 **Verwante onderwerpen**:
 

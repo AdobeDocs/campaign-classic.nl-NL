@@ -2,14 +2,15 @@
 product: campaign
 title: Aanvullende configuraties
 description: Leer hoe u aanvullende configuraties voor Transactieberichten in Adobe Campaign Classic instelt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '754'
 ht-degree: 7%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 7%
 
 ## Drempels controleren {#monitoring-thresholds}
 
-U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in verschijnen **Serviceniveau van Message Center** en **Verwerkingstijd van Message Center** rapporten (zie [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)).
+U kunt de waarschuwingsdrempels (oranje) en alarmdrempels (rood) van de indicatoren vormen die in verschijnen **Serviceniveau van Message Center** en **Verwerkingstijd van Message Center** rapporten (zie [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Volg de onderstaande stappen om dit te doen:
 
-1. Open de implementatiewizard op de **uitvoeringsinstantie**.
+1. Open de implementatiewizard op het tabblad **uitvoeringsinstantie**.
 
 1. Ga naar de **[!UICONTROL Message Center]** pagina.
 
@@ -34,7 +35,7 @@ Volg de onderstaande stappen om dit te doen:
 
 >[!NOTE]
 >
->Het aantal gebeurtenissen in wachtrij wordt weergegeven in het dialoogvenster [Systeemindicatoren](../../production/using/monitoring-processes.md#system-indicators) op de pagina voor procesbewaking van Adobe Campaign. Voor meer informatie over de plaatsingstovenaar, verwijs naar [deze sectie](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Het aantal gebeurtenissen in wachtrij wordt weergegeven in het dialoogvenster [Systeemindicatoren](../../production/using/monitoring-processes.md#system-indicators) op de pagina voor procesbewaking van Adobe Campaign. Raadpleeg voor meer informatie over de implementatiewizard [deze sectie](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Gebeurtenissen opschonen {#purging-events}
 
@@ -79,18 +80,18 @@ Once the control and execution modules are installed on the same instance, you m
 
 Op de uitvoeringsinstantie(s) kunnen de technische workflows voor transactiemeldingen worden geopend vanuit de **Beheer > Productie > Berichtencentrum** map. Je moet ze gewoon starten. De workflows in de lijst zijn:
 
-* **[!UICONTROL Processing batch events]** (interne naam: **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
-* **[!UICONTROL Processing real time events]** (interne naam: **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
-* **[!UICONTROL Update event status]** (interne naam: **[!UICONTROL updateEventStatus]** ): in deze workflow kunt u een status aan de gebeurtenis toewijzen.
+* **[!UICONTROL Processing batch events]** (interne naam: **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderbreken voordat deze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Processing real time events]** (interne naam: **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij opsplitsen voordat deze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Update event status]** (interne naam: **[!UICONTROL updateEventStatus]** ): met deze workflow kunt u een status aan de gebeurtenis toewijzen.
 
-   De volgende gebeurtenisstatussen zijn beschikbaar:
+  De volgende gebeurtenisstatussen zijn beschikbaar:
 
    * **[!UICONTROL Pending]** : de gebeurtenis bevindt zich in de wachtrij. Er is nog geen berichtsjabloon aan toegewezen.
-   * **[!UICONTROL Pending delivery]** : de gebeurtenis is in de rij, is een berichtmalplaatje toegewezen aan het en het wordt verwerkt door de levering.
+   * **[!UICONTROL Pending delivery]** : de gebeurtenis bevindt zich in de wachtrij, er is een berichtsjabloon toegewezen aan de gebeurtenis en deze wordt verwerkt door de levering.
    * **[!UICONTROL Sent]** : deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.
    * **[!UICONTROL Ignored by the delivery]** : deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.
    * **[!UICONTROL Delivery failed]** : deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.
-   * **[!UICONTROL Event not taken into account]** : de gebeurtenis kon niet aan een berichtmalplaatje worden verbonden. De gebeurtenis wordt niet verwerkt.
+   * **[!UICONTROL Event not taken into account]** : de gebeurtenis kan niet worden gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet verwerkt.
 
 ## Multibranding configureren {#configuring-multibranding}
 

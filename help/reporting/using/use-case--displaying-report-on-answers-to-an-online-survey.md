@@ -2,13 +2,13 @@
 product: campaign
 title: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
 description: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting, Surveys
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '487'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ Voordat u met dit gebruiksgeval begint, hebt u toegang nodig tot een enquête en
 
 >[!NOTE]
 >
->Dit gebruiksgeval mag alleen worden geïmplementeerd als u het **Beoordelingsmanager** optie. Controleer hiervoor uw licentieovereenkomst.
+>Dit gebruiksgeval mag alleen worden geïmplementeerd als u het **Beoordelingsmanager** -optie. Controleer hiervoor uw licentieovereenkomst.
 
 ## Stap 1 - Het creëren van de gegevensinzameling en de opslagwerkschema {#step-1---creating-the-data-collection-and-storage-workflow}
 
@@ -67,7 +67,7 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
 ## Stap 2 - De kubus, de maatregelen en de indicatoren ervan maken {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Voor meer bij het creëren van en het vormen van kubussen, verwijs naar [Kubussen](../../reporting/using/ac-cubes.md).
+U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren tot stand te brengen die in het rapport zullen worden getoond. Raadpleeg voor meer informatie over het maken en configureren van kubussen [Kubussen](../../reporting/using/ac-cubes.md).
 
 In dit voorbeeld is de kubus gebaseerd op de gegevens in de lijst die worden gevoed door de eerder gemaakte workflow.
 

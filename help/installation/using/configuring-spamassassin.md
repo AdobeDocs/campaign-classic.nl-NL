@@ -2,16 +2,17 @@
 product: campaign
 title: SpamAssassin configureren
 description: SpamAssassin configureren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 1%
+source-wordcount: '1008'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiervoor moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en een bepaald aantal aanvullende Perl-modules zijn vereist.
+SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiertoe moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een bepaald aantal aanvullende Perl-modules vereist om te kunnen werken.
 
 De plaatsing en de integratie van SpamAssassin zoals die in dit hoofdstuk wordt beschreven zijn gebaseerd op standaardsoftwareinstallatie, zoals filtreren en het scoren regels, die die door SpamAssassin zonder enige veranderingen of optimalisaties worden verstrekt. De attributie van de score en de berichtkwalificatie zijn uitsluitend gebaseerd op de configuratie van opties SpamAssassin en op het filtreren regels. De beheerders van het netwerk zijn verantwoordelijk voor het aanpassen van hen aan de behoeften van hun bedrijf.
 
@@ -62,15 +63,15 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
 
    Als een Vensters Shell verschijnt en blijft voor een paar seconden worden getoond, wacht tot de installatie en de update zijn gebeëindigd, dan klik **Enter**.
 
-   Als de Vensters Shell niet verschijnen of niet alvorens onmiddellijk verdwijnt getoond, deze stappen volgen, dubbelklik **portableShell.bat** dossier om Vensters Shell te tonen en te controleren dat de weg van Shell aan de omslag beantwoordt waarin **spammoordenaar.zip** bestand is uitgepakt. Als dit niet het geval is, toegang tot het gebruikend **cd** gebruiken.
+   Als de Vensters Shell niet verschijnen of niet alvorens onmiddellijk verdwijnt getoond, deze stappen volgen, dubbelklik **portableShell.bat** dossier om een Vensters Shell te tonen en te controleren dat de weg van Shell aan de omslag beantwoordt waarin **spammoordenaar.zip** bestand is uitgepakt. Als dit niet het geval is, toegang tot het gebruikend **cd** gebruiken.
 
    Enter **run_me.bat** klik vervolgens op **Enter** om het installatie- en updateproces te starten. De bewerking retourneert een van de volgende waarden om het resultaat van de update aan te geven.
 
-   * **0**: er is een bijwerking uitgevoerd.
+   * **0**: er is een update uitgevoerd.
    * **1**: Geen nieuwe update beschikbaar.
    * **2**: geen nieuwe update beschikbaar.
    * **3**: update is mislukt tijdens voorafgaande verificatie.
-   * **4** of meer: er heeft zich een fout voorgedaan.
+   * **4** of meer: er is een fout opgetreden.
 
 1. Om te controleren dat de installatie SpamAssassin succesvol was, gebruik de test GTUBE (Generische Test voor Ongevraagde Bulk E-mail) gebruikend de volgende procedure:
 
@@ -124,7 +125,7 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
 
    De inhoud van deze test-e-mail activeert 1.000 punten die door SpamAssassin zijn toegewezen. Dit betekent dat het als ongewenst is ontdekt en dat de integratie in Adobe Campaign succesvol was en volledig functioneert.
 
-1. Het filtreren en het scoren van SpamAssassin van de update
+1. Het filtreren en het scoring regels van SpamAssassin bijwerken
 
    Voor een eerste update van filteren en het scoren van regels, begin **portableShell.bat** en voer de volgende opdracht uit:
 
@@ -144,16 +145,16 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
 
 * Indien nodig, installeer Perl en SpamAssassin gebruikend het volgende bevel:
 
-   ```
-   apt-get install spamassassin libxml-writer-perl
-   ```
+  ```
+  apt-get install spamassassin libxml-writer-perl
+  ```
 
-* In de **serverConf.xml** bestand (beschikbaar in `/usr/local/[INSTALL]/nl6/conf/`), wijzigt u de **spamCheck** lijn als volgt:
+* In de **serverConf.xml** bestand (beschikbaar in `/usr/local/[INSTALL]/nl6/conf/`), wijzigt u **spamCheck** lijn als volgt:
 
-   ```
-   <spamCheck command="perl
-   /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
-   ```
+  ```
+  <spamCheck command="perl
+  /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
+  ```
 
 ### Installatiestappen in RHEL/CentOS {#installation-steps-in-rhel-centos}
 

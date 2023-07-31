@@ -2,16 +2,17 @@
 product: campaign
 title: De database maken en configureren
 description: De database maken en configureren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 2%
+source-wordcount: '1321'
+ht-degree: 3%
 
 ---
 
@@ -19,8 +20,8 @@ ht-degree: 2%
 
 Als u een database maakt, biedt Adobe Campaign twee verschillende opties:
 
-1. Een database maken of recyclen: Kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Zie [Zaak 1: Een database maken/recyclen](#case-1--creating-recycling-a-database).
-1. Een bestaande database gebruiken: Kies deze optie als de beheerder al een lege database heeft gemaakt en u deze wilt gebruiken. of om de structuur van een bestaande database uit te breiden. Zie [Zaak 2: Bestaande databases gebruiken](#case-2--using-an-existing-database).
+1. Een database maken of recyclen: kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Zie [Geval 1: Een database maken/recyclen](#case-1--creating-recycling-a-database).
+1. Gebruikend een bestaand gegevensbestand: kies deze optie als een leeg gegevensbestand reeds door uw beheerder is gecreeerd en u het wilt gebruiken; of de structuur van een bestaand gegevensbestand uitbreiden. Zie [Geval 2: Het gebruiken van een bestaande gegevensbestand](#case-2--using-an-existing-database).
 
 De configuratiestappen worden hieronder beschreven.
 
@@ -30,7 +31,7 @@ De configuratiestappen worden hieronder beschreven.
 >
 >Alleen de **internal** identificator kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
-## Zaak 1: Een database maken/recyclen {#case-1--creating-recycling-a-database}
+## Geval 1: Een database maken/recyclen {#case-1--creating-recycling-a-database}
 
 De stappen voor het creëren van een database of het recyclen van een bestaande basis worden hieronder beschreven. Sommige configuraties zijn afhankelijk van de gebruikte database-engine:
 
@@ -59,13 +60,13 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 
 * Voor een **Oracle** motor, bevolken **TNS-naam** gedefinieerd voor de toepassingsserver.
 * Voor een **PostgreSQL** of **DB2** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
-* Voor een **Microsoft SQL Server** engine, moet u definiëren: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
+* Voor een **Microsoft SQL Server** -engine, moet u definiëren: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
 
-   >[!CAUTION]
-   >
-   > Beginnend 20.3, wordt de authentificatie van NT van Vensters ontmanteld. **[!UICONTROL SQL Server authentication]** is nu de enige verificatiemodus beschikbaar voor Microsoft SQL Server. [Meer informatie](../../rn/using/deprecated-features.md)
+  >[!CAUTION]
+  >
+  > Beginnend 20.3, wordt de authentificatie van NT van Vensters ontmanteld. **[!UICONTROL SQL Server authentication]** is nu de enige verificatiemodus beschikbaar voor Microsoft SQL Server. [Meer informatie](../../rn/using/deprecated-features.md)
 
-   ![](assets/s_ncs_install_db_mssql_creation01.png)
+  ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Stap 2 - Verbinding maken met de server {#step-2---connecting-to-the-server}
 
@@ -90,24 +91,24 @@ U moet de volgende instellingen definiëren:
 
 * Geef de naam op van de database die u wilt maken.
 
-   >[!NOTE]
-   >
-   >Voor een DB2-database mag de naam van de database maximaal 8 tekens bevatten.
+  >[!NOTE]
+  >
+  >Voor een DB2-database mag de naam van de database niet langer zijn dan 8 tekens.
 
 * Voer het wachtwoord in van de account die aan deze database is gekoppeld.
 * Geef aan of de database zich in Unicode moet bevinden.
 
-   De **[!UICONTROL Unicode database]** Hiermee kunt u alle tekentypen opslaan in Unicode, ongeacht de taal.
+  De **[!UICONTROL Unicode database]** Hiermee kunt u alle tekentypen opslaan in Unicode, ongeacht de taal.
 
-   >[!NOTE]
-   >
-   >Met een gegevensbestand van het Oracle, **[!UICONTROL Unicode storage]** gebruiken **NCLOB** en **NVARCHAR** tekstvelden.
-   > 
-   >Als u deze optie niet selecteert, moet de tekenset (charset) van de database van het Oracle gegevensopslag in alle talen inschakelen (AL32UTF8 wordt aanbevolen).
+  >[!NOTE]
+  >
+  >Met een gegevensbestand van het Oracle, **[!UICONTROL Unicode storage]** optie kunt u gebruiken **NCLOB** en **NVARCHAR** tekstvelden.
+  > 
+  >Als u deze optie niet selecteert, moet de tekenset (charset) van de database van het Oracle gegevensopslag in alle talen inschakelen (AL32UTF8 wordt aanbevolen).
 
 * Kies een tijdzone voor de database en geef op of u deze in UTC wilt plaatsen (indien beschikbaar).
 
-   Raadpleeg voor meer informatie hierover [Tijdzonebeheer](../../installation/using/time-zone-management.md).
+  Raadpleeg voor meer informatie hierover [Tijdzonebeheer](../../installation/using/time-zone-management.md).
 
 ### Stap 4 - Te installeren pakketten {#step-4---packages-to-install}
 
@@ -123,19 +124,19 @@ De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de t
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Voor een Oracle, de Server van Microsoft SQL of het gegevensbestand PostgreSQL, kan de beheerder ook bepalen **opslagparameters** te gebruiken bij het maken van databaseobjecten.
+* Voor een Oracle, Microsoft SQL Server of PostSQL gegevensbestand, kan de beheerder ook bepalen **opslagparameters** te gebruiken bij het maken van databaseobjecten.
 
-   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Zij worden respectievelijk in de **[!UICONTROL Administration > Platform > Options]** knoop in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
+  Deze parameters krijgen de exacte tabelnamen (waarschuwing: hoofdlettergevoelig). Zij worden respectievelijk in de **[!UICONTROL Administration > Platform > Options]** knoop in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
 
-   * **WdbcOptions_TableSpaceUser**: gebruikerstabellen die op een schema worden gebaseerd
-   * **WdbcOptions_TableSpaceIndex**: index van gebruikerstabellen die op een schema worden gebaseerd
-   * **WdbcOptions_TableSpaceWork**: werktabellen zonder schema
+   * **WdbcOptions_TableSpaceUser**: gebruikerstabellen op basis van een schema
+   * **WdbcOptions_TableSpaceIndex**: index van gebruikerstabellen op basis van een schema
+   * **WdbcOptions_TableSpaceWork**: tijdelijke tabellen zonder schema
    * **WdbcOptions_TableSpaceWorkIndex**: index van werktabellen zonder schema
 
 * Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
 * De **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
-   We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
+  We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 6 - De database maken {#step-6---creating-the-database}
 
@@ -149,17 +150,17 @@ U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëi
 
 De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** gevonden in de installatiemap van Adobe Campaign.
 
-Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het gecodeerde wachtwoord:
+Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het bijbehorende gecodeerde wachtwoord:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## Zaak 2: Bestaande databases gebruiken {#case-2--using-an-existing-database}
+## Geval 2: Het gebruiken van een bestaande gegevensbestand {#case-2--using-an-existing-database}
 
 Het gegevensbestand, evenals de gebruiker, moet door de gegevensbestandbeheerder en de correct gevormde toegangsrechten zijn gecreeerd.
 
-Voor een database van Oracles zijn de minimaal vereiste rechten bijvoorbeeld: GRANT CONNECT, RESOURCE en UNLIMITED TABLESPACE.
+Bijvoorbeeld, voor een gegevensbestand van het Oracle, zijn de minimaal vereiste rechten: GRANT CONNECT, BRON en UNLIMITED TABLESPACE.
 
 Om een bestaand gegevensbestand te gebruiken, zijn de configuratiestappen als volgt:
 
@@ -198,13 +199,13 @@ In de **[!UICONTROL Database]** , definieert u de instellingen voor de databasev
 
 U moet de volgende instellingen definiëren:
 
-* Voer de naam in van de te gebruiken database;
+* Voer de naam in van de database die moet worden gebruikt,
 * Voer de naam en het wachtwoord in van de account die aan deze database is gekoppeld.
 
-   >[!NOTE]
-   >
-   >Zorg ervoor dat zowel de naam van het schema als de gebruikersnaam overeenkomen. De geadviseerde manier om gegevensbestand te creëren is door cliënt van de campagneconsole.
-   >Voor een database van een Oracle hoeft u de accountnaam niet in te voeren.
+  >[!NOTE]
+  >
+  >Zorg ervoor dat zowel de naam van het schema als de gebruikersnaam overeenkomen. De geadviseerde manier om gegevensbestand te creëren is door cliënt van de campagneconsole.
+  >Voor een database van een Oracle hoeft u de accountnaam niet in te voeren.
 
 * Geef aan of de database Unicode moet zijn of niet.
 
@@ -226,7 +227,7 @@ De **[!UICONTROL Creation steps]** kunt u het SQL-script dat is gebruikt om de t
 * Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
 * De **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
-   We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
+  We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 5 - De database maken {#step-5---creating-the-database}
 
@@ -240,7 +241,7 @@ U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëi
 
 De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** gevonden in de installatiemap van Adobe Campaign.
 
-Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het gecodeerde wachtwoord:
+Voorbeeld van een Microsoft SQL Server-configuratie in de base61-database die is gekoppeld aan de &#39;campagne&#39;-account met het bijbehorende gecodeerde wachtwoord:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>

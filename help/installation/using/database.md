@@ -2,16 +2,17 @@
 product: campaign
 title: Aanbevelingen voor Campaign Classic-database
 description: Aanbevelingen voor databases
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +48,7 @@ Toegang tot DLL&#39;s vindt u op de Microsoft-website.
 
 De **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** parameters moeten correct worden gevormd opdat het gegevensbestand in Unicode of ANSI werkt.
 
-Adobe Campaign gebruikt standaardcodering voor Oracles. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
+Adobe Campaign gebruikt standaardcodering voor Oracles. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning.
 
 Ga als volgt te werk om meer te weten te komen over uw codering **sqlplus** opdracht:
 
@@ -57,10 +58,10 @@ SELECT * FROM nls_database_parameters ;
 
 * Voor een Unicode-installatie worden de volgende coderingen ondersteund:
 
-   ```
-   NLS_NCHAR_CHARACTERSET         AL16UTF16
-   NLS_CHARACTERSET         AL32UTF8
-   ```
+  ```
+  NLS_NCHAR_CHARACTERSET         AL16UTF16
+  NLS_CHARACTERSET         AL32UTF8
+  ```
 
 * Voor een ANSI installatie (niet-unicode), slechts wordt de volgende het coderen gesteund:
 

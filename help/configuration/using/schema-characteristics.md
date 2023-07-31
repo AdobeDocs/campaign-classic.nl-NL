@@ -2,12 +2,13 @@
 product: campaign
 title: Schema-eigenschappen
 description: Schema-eigenschappen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
@@ -56,7 +57,7 @@ Wanneer tabellen worden gemaakt door de wizard voor tabelupdates, worden de name
 
 Als in dit voorbeeld de namen van de tabellen en kolommen niet expliciet waren opgegeven, zou de toepassing zijn gebruikt **CusIndividual** voor de tabel, **lastName** en **firstName** voor de kolommen.
 
-In een schema, is het mogelijk om slechts een deel van de kolommen van een bestaande lijst te bevolken. Niet-gevulde kolommen zijn niet toegankelijk voor de gebruiker.
+In een schema is het mogelijk slechts een deel van de kolommen van een bestaande tabel te vullen. Niet-gevulde kolommen zijn niet toegankelijk voor de gebruiker.
 
 ## Geïndexeerde velden {#indexed-fields}
 

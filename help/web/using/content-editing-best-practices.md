@@ -2,14 +2,14 @@
 product: campaign
 title: Best practices voor het bewerken van content
 description: Best practices voor het bewerken van content
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 6%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -23,35 +23,35 @@ Om de optimale werking van de redacteur te verzekeren, adviseren wij het naleven
 * Als de pagina HTML bevat **JavaScript-scripts** moeten worden uitgevoerd **zonder fouten** buiten de editor.
 * Bij het samenstellen van een sjabloon wordt aangeraden een **&#39;type’**-attribuut toe te voegen aan tags. `<input>` Deze informatie zal door de redacteur worden verwerkt en zal de gebruiker helpen om een gebied van het gegevensbestand aan het gebied van de vorm te verbinden wanneer het vormen van de toepassing van het Web.
 
-   Voorbeeld van HTML-code in de sjabloon:
+  Voorbeeld van HTML-code in de sjabloon:
 
-   ```
-   <input id="email" type="email" name="email"/>
-   ```
+  ```
+  <input id="email" type="email" name="email"/>
+  ```
 
-   De **&#39;type&#39;** Het kenmerk is zichtbaar in de interface in het volgende formulier:
+  De **&#39;type&#39;** Het kenmerk is zichtbaar in de interface in het volgende formulier:
 
-   ![](assets/dce_sidebar_inputtypechanges.png)
+  ![](assets/dce_sidebar_inputtypechanges.png)
 
-   De officiële lijst met &#39;type&#39;-kenmerken is beschikbaar [op deze website](https://www.w3schools.com/tags/att_input_type.asp).
+  De officiële lijst met &#39;type&#39;-kenmerken is beschikbaar [op deze website](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Stappen om een eindpagina met DCE te simuleren:
 
-   ![](assets/dce_enchainement.png)
+  ![](assets/dce_enchainement.png)
 
 * Zorg ervoor dat er slechts één is `<body> </body>` op de pagina.
 * Wanneer een CSS- of JS-bestand wordt geüpload, worden de afbeeldingen in het .zip-bestand niet geüpload. De verwijzingen naar deze afbeeldingen in de CSS worden daarom niet bijgewerkt.
 
 ## Ondersteunde indelingen voor de inhoudseditor {#content-editor-supported-formats}
 
-De Editor voor digitale inhoud ondersteunt de HTML-indeling: u kunt overschakelen op **bron** op elk gewenst moment.
+De Digital Content Editor ondersteunt de HTML-indeling: u kunt overschakelen op **bron** op elk gewenst moment.
 
 De functie voor importeren van Digital Content Editor werkt als volgt met de volgende ondersteunde indelingen:
 
 * CSS: de afbeeldingen in het ZIP-bestand worden niet geïmporteerd. De verwijzingen naar deze afbeeldingen in de CSS worden niet bijgewerkt.
 * JS: de afbeeldingen in het ZIP-bestand worden niet geïmporteerd. De verwijzingen naar deze afbeeldingen in het JS worden niet bijgewerkt.
-* iFrame: de gekoppelde pagina&#39;s worden niet geïmporteerd.
-* Openingspagina&#39;s en webapps: als **formulier** -tag ontbreekt. Er wordt een waarschuwing weergegeven. A `<form> </form>` moet altijd aanwezig zijn in de berichttekst.
+* InFrame: de gekoppelde pagina&#39;s worden niet geïmporteerd.
+* Openingspagina&#39;s en webapps: als een **formulier** -tag ontbreekt. Er wordt een waarschuwing weergegeven. A `<form> </form>` moet altijd aanwezig zijn in de berichttekst.
 
 De Editor voor digitale inhoud werkt ook met de volgende ondersteunde codepagina&#39;s:
 
@@ -71,13 +71,13 @@ De Editor voor digitale inhoud werkt ook met de volgende ondersteunde codepagina
 >
 >De pagina met de HTML-code moet worden gedefinieerd in een metatag (HTML 4 of HTML 5) of in de BOM. Als er geen codepagina beschikbaar is, opent u het bestand in latin1.
 
-## HTML-inhoudsstatus {#html-content-statuses}
+## HTML-inhoudsstatussen {#html-content-statuses}
 
 In het bovenste gedeelte van de editor worden berichten weergegeven die betrekking hebben op de status van de inhoud. De kleurcodes voor de berichten zijn als volgt:
 
 * **Grijsbericht**: informatiebericht, er hoeven geen acties in de redactie te worden uitgevoerd.
 * **Blauw bericht**: informatief bericht met betrekking tot de inhoud die wordt bewerkt.
-* **Geel bericht**: waarschuwing of foutbericht dat actie namens de gebruiker vereist.
+* **Geel bericht**: waarschuwing of foutbericht dat handeling namens de gebruiker vereist.
 
 ### Lijst met berichten tijdens het bewerken van een webtoepassing {#list-of-messages-when-editing-a-web-application}
 
@@ -90,7 +90,7 @@ In het bovenste gedeelte van de editor worden berichten weergegeven die betrekki
 
 ### Lijst met berichten tijdens het bewerken van een levering {#list-of-messages-when-editing-a-delivery}
 
-* De inhoud van de levering is functioneel
+* De leverinhoud is functioneel
 * Er zijn geen gebieden of verpersoonlijkingsblokken om te vormen.
 * De inhoud van de levering is klaar. Voer de analyse opnieuw uit om eventuele wijzigingen toe te passen.
 * De levering is klaar om te worden verzonden.

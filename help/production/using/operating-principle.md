@@ -2,16 +2,17 @@
 product: campaign
 title: Werkwijze
 description: Werkwijze
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +26,11 @@ Er zijn veel Adobe Campaign-modules. Sommige werken onophoudelijk, terwijl ander
 
 Er zijn drie typen Adobe Campaign-modules:
 
-* Modules met meerdere instanties: er wordt één proces voor alle instanties uitgevoerd. Dit geldt voor de volgende modules: **web**, **syslogd**, **trackinglogd** en **waakhond** (activiteiten van de **config-default.xml** bestand).
-* Monoinstantiemodules: één proces wordt per instantie uitgevoerd. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** (activiteiten van de **config-`<instance>`.xml** bestand).
-* Hulpprogrammamodules: Dit zijn modules die af en toe worden uitgevoerd om occasionele of terugkerende bewerkingen uit te voeren (**opruimen**, **config**, trackinglogboeken downloaden, enz.).
+* Modules met meerdere instanties: één proces wordt voor alle instanties uitgevoerd. Dit geldt voor de volgende modules: **web**, **syslogd**, **trackinglogd** en **waakhond** (activiteiten van de **config-default.xml** bestand).
+* Mono-instance modules: één proces wordt in werking gesteld per instantie. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** (activiteiten van de **config-`<instance>`.xml** bestand).
+* Hulpprogrammamodules: dit zijn modules die soms worden uitgevoerd om incidentele of terugkerende bewerkingen uit te voeren (**opruimen**, **config**, trackinglogboeken downloaden, enz.).
 
-Het beleid van de module wordt uitgevoerd gebruikend het hulpmiddel van de bevellijn **nlserver** in het **bin** directory van de installatiemap.
+Het beheer van de module wordt uitgevoerd met het opdrachtregelprogramma **nlserver** geïnstalleerd in de **bin** directory van de installatiemap.
 
 De algemene syntaxis van de **nlserver** is als volgt:
 
@@ -43,11 +44,11 @@ De beschikbare modules worden in de volgende tabel beschreven:
 |---|---|
 | aliasCleansing | Opsommingswaarden standaardiseren |
 | facturering | Het rapport over de systeemactiviteit verzenden naar billing@neolane.net |
-| opruimen | De database opschonen: verwijdert verouderde gegevens uit de database en voert een update uit van de statistieken die worden gebruikt door de optimalisator voor de database-engine. |
+| opruimen | Het ontruimen van het gegevensbestand: schrapt verouderde gegevens uit het gegevensbestand en stelt een update van de statistieken in werking die door de optimizer van de gegevensbestandmotor worden gebruikt. |
 | config | Serverconfiguratie wijzigen |
-| export | Exporteren naar opdrachtregel: Hiermee kunt u een exportmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden |
+| export | Exporteren naar opdrachtregel: hiermee kunt u een exportmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden |
 | fileconvert | Een bestand met een ingestelde grootte omzetten |
-| import | Importeren naar opdrachtregel: Hiermee kunt u een importmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden. |
+| import | Importeren naar opdrachtregel: hiermee kunt u een importmodel dat in de Adobe Campaign-clientconsole is gemaakt, naar de opdrachtregel verzenden. |
 | inMail | Binnenkomende analyse van e-mail |
 | installatieprogramma | Beschikbaarheid van het installatiebestand van de klant |
 | javascript | JavaScript-scripts uitvoeren, met toegang tot SOAP API&#39;s. |

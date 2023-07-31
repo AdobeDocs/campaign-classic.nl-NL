@@ -2,14 +2,15 @@
 product: campaign
 title: Gebeurtenisverwerking
 description: Leer hoe de transactieberichten worden verwerkt in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '698'
 ht-degree: 2%
 
 ---
@@ -47,7 +48,7 @@ Zodra alle stappen hierboven door de uitvoeringsinstantie worden uitgevoerd, ont
 
 Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee modi worden verzameld:
 
-* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: Met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u meerdere gebeurtenissen tegelijk verzenden. Zie voor meer informatie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
+* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: met de PushEvent-methode kunt u één gebeurtenis tegelijk verzenden. Met de PushEvents-methode kunt u verschillende gebeurtenissen tegelijk verzenden. Zie voor meer informatie [Beschrijving van gebeurtenis](../../message-center/using/event-description.md).
 
 * Als u een workflow maakt, kunt u gebeurtenissen herstellen door bestanden of via een SQL-gateway te importeren [Federale gegevenstoegang](../../installation/using/about-fda.md) ).
 
@@ -61,17 +62,17 @@ Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische we
 
 ## Routering naar een sjabloon {#routing-towards-a-template}
 
-Nadat de berichtsjabloon op de uitvoeringsinstantie(s) is gepubliceerd, worden automatisch twee sjablonen gegenereerd: Een gebeurtenis die moet worden gekoppeld aan een realtime-gebeurtenis en een gebeurtenis die moet worden gekoppeld aan een batchgebeurtenis.
+Nadat de berichtsjabloon op de uitvoeringsinstantie(s) is gepubliceerd, worden automatisch twee sjablonen gegenereerd: een sjabloon die aan een realtime-gebeurtenis moet worden gekoppeld en een sjabloon dat aan een batchgebeurtenis moet worden gekoppeld.
 
 De verpletterende stap bestaat uit het verbinden van een gebeurtenis aan het aangewezen berichtmalplaatje, dat op wordt gebaseerd:
 
 * Het gebeurtenistype dat is opgegeven in de eigenschappen van de gebeurtenis zelf:
 
-   ![](assets/messagecenter_event_type_001.png)
+  ![](assets/messagecenter_event_type_001.png)
 
 * Het gebeurtenistype dat in de eigenschappen van het berichtmalplaatje wordt gespecificeerd:
 
-   ![](assets/messagecenter_event_type_002.png)
+  ![](assets/messagecenter_event_type_002.png)
 
 Door gebrek, baseert het verpletteren zich op de volgende informatie:
 
@@ -85,8 +86,8 @@ De **Gebeurtenisgeschiedenis**, onder **[!UICONTROL Message Center]** > **[!UICO
 
 * **In behandeling**: De gebeurtenis kan zijn:
 
-   * Een gebeurtenis die zojuist is verzameld en nog niet is verwerkt. De **[!UICONTROL Number of errors]** geeft de waarde 0 aan in de kolom. De e-mailsjabloon is nog niet gekoppeld.
-   * Een gebeurtenis die is verwerkt, maar waarvan de bevestiging onjuist is. De **[!UICONTROL Number of errors]** in de kolom wordt een waarde weergegeven die niet 0 is. Als u wilt weten wanneer deze gebeurtenis opnieuw wordt verwerkt, raadpleegt u de **[!UICONTROL Process requested on]** kolom.
+   * Een gebeurtenis die zojuist is verzameld en nog niet is verwerkt. De **[!UICONTROL Number of errors]** wordt de waarde 0 weergegeven. De e-mailsjabloon is nog niet gekoppeld.
+   * Een gebeurtenis is verwerkt, maar de bevestiging is onjuist. De **[!UICONTROL Number of errors]** de kolom toont een waarde die niet 0 is. Als u wilt weten wanneer deze gebeurtenis opnieuw wordt verwerkt, raadpleegt u de **[!UICONTROL Process requested on]** kolom.
 
 * **In behandeling**: De gebeurtenis is verwerkt en de leveringssjabloon is gekoppeld. De e-mail is in afwachting van levering en het klassieke leveringsproces wordt toegepast. Voor meer informatie kunt u de levering openen.
 * **Verzonden**, **Genegeerd** en **Afleveringsfout**: Deze leveringsstatussen worden teruggevorderd via de **updateEventsStatus** workflow. Voor meer informatie kunt u de relevante levering openen.

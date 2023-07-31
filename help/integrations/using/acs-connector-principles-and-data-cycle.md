@@ -2,14 +2,14 @@
 product: campaign
 title: Aan de slag met ACS-connector
 description: ACS-verbindingsbeginselen en gegevenscyclus
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Dit document stelt de mogelijkheden ACS-Connector voor. In de volgende secties v
 * [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md): Instructies voor het repliceren van profielen en het maken van leveringen met deze profielen.
 * [Doelgroepen synchroniseren](../../integrations/using/synchronizing-audiences.md): Instructies over hoe te om een lijst van ontvangers in Campagne v7 te richten en dan de lijst aan Campaign Standard als publiek te herhalen.
 * [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md): Instructies voor het koppelen van Campagne v7-webtoepassingen aan Campaign Standard.
-* [Het oplossen van problemen de Schakelaar ACS](../../integrations/using/troubleshooting-the-acs-connector.md): Herzie antwoorden op gemeenschappelijke problemen.
+* [Het oplossen van problemen de Schakelaar ACS](../../integrations/using/troubleshooting-the-acs-connector.md): Bekijk de antwoorden op algemene problemen.
 
 >[!NOTE]
 >
@@ -60,11 +60,11 @@ De Schakelaar ACS herhaalt periodiek de volgende punten van Campagne v7 aan Camp
 
 Door gebrek, is de periodieke replicatie voor Schakelaar ACS eens om de 15 minuten. De periode van de periodieke replicatie kan aan uw behoeften worden aangepast. Neem contact op met uw consultant als er wijzigingen nodig zijn.
 
-Gegevensreplicatie voor ontvangers, abonnementen, services en bestemmingspagina&#39;s is incrementeel, wat betekent dat alleen nieuwe ontvangers en wijzigingen aan bestaande ontvangers worden gerepliceerd van Campagne v7 naar Campaign Standard. Nochtans, komt de replicatie voor een publiek in één enkele instantie voor. U kunt een publiek in Campagne v7 creëren en dan het één keer aan Campaign Standard herhalen. De replicatie is direct en kan niet voor regelmatige updates worden gevormd. Zie voor instructies [Synchroniseren van publiek](../../integrations/using/synchronizing-audiences.md).
+Gegevensreplicatie voor ontvangers, abonnementen, services en bestemmingspagina&#39;s is incrementeel, wat betekent dat alleen nieuwe ontvangers en wijzigingen aan bestaande ontvangers worden gerepliceerd van Campagne v7 naar Campaign Standard. Nochtans, komt de replicatie voor een publiek in één enkele instantie voor. U kunt een publiek in Campagne v7 creëren en dan het één keer aan Campaign Standard herhalen. De replicatie is direct en kan niet voor regelmatige updates worden gevormd. Zie voor instructies [Gesynchroniseerd publiek](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
->Wees geduldig met de eerste replicatie van een grote database, omdat dit enkele uren kan duren. De volgende replicaties zijn echter incrementeel en veel sneller.
+>Wees geduldig met de eerste replicatie van een grote database, omdat dit enkele uren kan duren. De volgende replicaties worden echter steeds sneller uitgevoerd.
 
 De Schakelaar ACS herhaalt periodiek de volgende punten van Campaign Standard aan Campagne v7:
 
@@ -88,7 +88,7 @@ Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bi
 
 ### Gepliceerde profielen gebruiken {#using-replicated-profiles}
 
-De gekopieerde profielen kunnen door Campaign Standard en Campagne v7 voor gerichte werkschema&#39;s in marketing campagnes worden gebruikt.
+Campaign Standard en Campagne v7 kunnen herhaalde profielen gebruiken voor het maken van doelgerichte workflows in marketingcampagnes.
 
 Voor instructies over hoe u een levering in Campaign Standard verzendt met behulp van gerepliceerde profielen raadpleegt u [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md). Er zijn aanvullende instructies beschikbaar voor het delen van de gegevens voor niet-abonnementen tussen Campagne v7 en Campaign Standard.
 
@@ -96,10 +96,10 @@ Voor instructies over hoe u een levering in Campaign Standard verzendt met behul
 
 Gedetailleerde profielen zijn gemakkelijk beschikbaar voor leveringen, maar hebben bepaalde beperkingen in Campaign Standard. Bekijk de onderstaande objecten voor meer informatie over hoe u ze het beste kunt beheren.
 
-* **Alleen-lezen profielen voor Campaign Standard**: Gepliceerde profielen zijn alleen-lezen in Campaign Standard. Nochtans, kunt u ontvangers in Campagne v7 uitgeven en de wijzigingen worden automatisch bijgewerkt in Campaign Standard door Schakelaar ACS.
-* **Profielen gemaakt in Campaign Standard**: De Schakelaar ACS herhaalt ontvankelijke gegevens in één richting, van Campagne v7 aan Campaign Standard. Daarom worden profielen die afkomstig zijn uit Campaign Standard niet gerepliceerd naar Campagne v7.
-* **Basisgegevens voor ontvangers voor Campaign Standard**: De Schakelaar ACS herhaalt ontvankelijke gegevens die voor Campaign Standard geschikt zijn. Hieronder vallen namen, adressen, e-mailadressen, mobiele telefoonnummers, thuistelefoonnummers en andere relevante contactgegevens van ontvangers. Neem contact op met uw consultant als extra ontvangende velden en aangepaste doeltabellen in Campagne v7 van essentieel belang zijn voor uw workflow.
-* **quarantineprofielen importeren**: Lijsten met profielen waarmee u geen contact wilt opnemen, kunnen worden geïmporteerd in Campagne v7 of Campaign Standard als quarantaineprofielen. De status voor de profielen wordt opgenomen in de quarantainesynchronisatie tussen de toepassingen en wordt niet gebruikt in leveringen.
+* **Alleen-lezen profielen voor Campaign Standard**: gerepliceerde profielen zijn alleen-lezen in Campaign Standard. Nochtans, kunt u ontvangers in Campagne v7 uitgeven en de wijzigingen worden automatisch bijgewerkt in Campaign Standard door Schakelaar ACS.
+* **Profielen gemaakt in Campaign Standard**: ACS Connector dupliceert ontvangende gegevens in één richting, van Campagne v7 tot Campaign Standard. Daarom worden profielen die afkomstig zijn uit Campaign Standard niet gerepliceerd naar Campagne v7.
+* **Basisgegevens voor ontvangers voor Campaign Standard**: ACS Connector dupliceert ontvangende gegevens die geschikt zijn voor Campaign Standard. Hieronder vallen namen, adressen, e-mailadressen, mobiele telefoonnummers, thuistelefoonnummers en andere relevante contactgegevens van ontvangers. Neem contact op met uw consultant als extra ontvangende velden en aangepaste doeltabellen in Campagne v7 van essentieel belang zijn voor uw workflow.
+* **quarantineprofielen importeren**: Lijsten met profielen die niet mogen worden benaderd, kunnen worden geïmporteerd in Campagne v7 of Campaign Standard als quarantaine-profielen. De status voor de profielen wordt opgenomen in de quarantainesynchronisatie tussen de toepassingen en wordt niet gebruikt in leveringen.
 * **Abonnement op een service in Campaign Standard opzeggen**: De keuze om het abonnement op een levering op te zeggen, wordt niet gesynchroniseerd van Campaign Standard naar Campagne v7. Nochtans, kunt u een levering van de Campaign Standard vormen om zijn unsubscription verbinding aan Campaign v7 te richten. Het profiel voor een ontvanger die op de koppeling voor het opzeggen van abonnementen klikt, wordt bijgewerkt in Campagne v7 en de gegevens worden gerepliceerd naar Campaign Standard. Zie [De koppeling voor het opzeggen van abonnementen wijzigen](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Alleen e-mailuitzendingen en trackinglogboeken worden vanuit Campaign Standard naar Campaign v7 gerepliceerd.
 
@@ -129,7 +129,7 @@ Alle technische elementen met betrekking tot de schakelaar ACS zijn beschikbaar 
 
 ### Technische en replicatieworkflows {#technical-and-replication-workflows}
 
-Na de installatie van het pakket zijn onder **[!UICONTROL Administration > ACS Connector > Process]**.
+Na de installatie van het pakket zijn twee technische workflows beschikbaar onder **[!UICONTROL Administration > ACS Connector > Process]**.
 
 >[!IMPORTANT]
 >
@@ -137,25 +137,25 @@ Na de installatie van het pakket zijn onder **[!UICONTROL Administration > ACS C
 
 ![](assets/acs_connect_implementation_3.png)
 
-* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantaineSync): in deze workflow worden alle quarantainegegevens gesynchroniseerd. Alle nieuwe quarantines in Campagne v7 worden herhaald in Campaign Standard. Alle nieuwe quarantines van Campaign Standard worden herhaald in Campaign v7. Dit waarborgt dat alle uitsluitingsregels tussen Campagne v7 en Campaign Standard worden gesynchroniseerd.
-* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): deze workflow wordt gebruikt voor het converteren van rechten. Zie [Omzetting van rechten](#rights-conversion).
+* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantaineSync): deze workflow synchroniseert alle quarantainegegevens. Alle nieuwe quarantines in Campagne v7 worden herhaald in Campaign Standard. Alle nieuwe quarantines van Campaign Standard worden herhaald in Campaign v7. Dit waarborgt dat alle uitsluitingsregels tussen Campagne v7 en Campaign Standard worden gesynchroniseerd.
+* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): deze workflow wordt gebruikt voor rechtenconversie. Zie [Omzetting van rechten](#rights-conversion).
 
 De volgende replicatiewerkschema&#39;s zijn beschikbaar als &quot;klaar om&quot;malplaatjes worden gebruikt. Ze moeten worden geïmplementeerd door uw Adobe Campaign-consultant.
 
 ![](assets/acs_connect_implementation_2.png)
 
-* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): in deze incrementele workflow worden ontvangers naar Campaign Standard gerepliceerd. Standaard worden alle ontvangende velden buiten het vak gerepliceerd. Zie [Standaardvelden voor ontvangers](#default-recipient-fields).
-* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): deze incrementele werkstroom repliceert de gekozen services naar Campaign Standard. Zie de kwestie use [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
-* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): deze incrementele workflow repliceert de gekozen webtoepassingen naar Campaign Standard. De Campagne v7-webtoepassingen worden weergegeven als bestemmingspagina&#39;s in Campaign Standard. Zie de kwestie use [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): deze incrementele workflow dupliceert ontvangers naar Campaign Standard. Standaard worden alle ontvangende velden buiten het vak gerepliceerd. Zie [Standaardvelden voor ontvangers](#default-recipient-fields).
+* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): deze incrementele workflow repliceert de gekozen services naar Campaign Standard. Zie de kwestie van het gebruik [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): deze incrementele workflow repliceert de gekozen webtoepassingen naar Campaign Standard. De Campagne v7-webtoepassingen worden weergegeven als bestemmingspagina&#39;s in Campaign Standard. Zie de kwestie van het gebruik [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): deze incrementele workflow is een voorbeeld dat kan worden gebruikt om een aangepaste tabel te repliceren. Zie [Geavanceerde implementatie](#advanced-implementation).
-* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): deze incrementele workflow repliceert leveringsberichten van Campaign Standard naar Campaign v7.
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die door Campaign Standard zijn verzonden naar profielen die onderdeel zijn van de tabel nms:ontvangers in Campagne v7.
+* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): deze incrementele workflow repliceert leveringsberichten van Campaign Standard naar Campagne v7.
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow repliceert bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard tot Campagne v7. Er wordt alleen rekening gehouden met leveringen die door Campaign Standard zijn verzonden naar profielen die onderdeel zijn van de tabel nms:ontvangers in Campagne v7.
 
-   >[!NOTE]
-   >
-   > Als zowel Campaign Classic- als Campaign Standard-instanties worden gebruikt om e-mails met bijgehouden URL&#39;s te verzenden, kan er tijdens de synchronisatie een probleem met dubbele URL-tagID&#39;s optreden. Als u dit wilt voorkomen, werkt u de **URL&#39;s voor bijhouden bijwerken** (writerTrackingUrls) in de workflow en voeg het voorvoegsel &quot;ACS&quot; toe aan de @tagId-bronexpressie.
+  >[!NOTE]
+  >
+  > Als zowel Campaign Classic- als Campaign Standard-instanties worden gebruikt om e-mails met bijgehouden URL&#39;s te verzenden, kan er tijdens de synchronisatie een probleem met dubbele URL-tagID&#39;s optreden. Als u dit wilt voorkomen, werkt u de **URL&#39;s voor bijhouden bijwerken** (writerTrackingUrls) in de workflow en voeg het voorvoegsel &quot;ACS&quot; toe aan de @tagId-bronexpressie.
 
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die door Campaign Standard zijn verzonden naar profielen die deel uitmaken van een specifieke tabel (om te definiëren, anders dan nms:ontvangers) van Campagne v7.
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow repliceert bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard tot Campagne v7. Er wordt alleen rekening gehouden met leveringen die van Campaign Standard naar profielen worden verzonden die deel uitmaken van een specifieke tabel (om te definiëren, anders dan nms:ontvangers) van Campagne v7.
 
 ### Standaardvelden voor ontvangers {#default-recipient-fields}
 
@@ -234,7 +234,7 @@ U vindt onder de lijst met ontvangende velden die worden gerepliceerd met de bas
    <td> @fax<br /> </td> 
   </tr> 
   <tr> 
-   <td> Adres 1 (appartement)<br /> </td> 
+   <td> Adres 1 (flat)<br /> </td> 
    <td> [locatie/@adres1]<br /> </td> 
   </tr> 
   <tr> 
@@ -276,7 +276,7 @@ De rechten worden verschillend behandeld in Campagne v7 en Campaign Standard. In
 
    ![](assets/acs_connect_implementation_4.png)
 
-1. Ga naar **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** en wijst elke vereiste map toe aan een beveiligingsgroep.
+1. Als uw rechtenbeheer een mappenbasis heeft, gaat u naar **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** en wijst elke vereiste map toe aan een beveiligingsgroep.
 
    ![](assets/acs_connect_implementation_5.png)
 
@@ -288,14 +288,14 @@ In dit gedeelte worden enkele mogelijkheden beschreven voor een geavanceerde imp
 
 >[!IMPORTANT]
 >
->Deze informatie kan alleen als algemene richtsnoeren worden gebruikt. Vraag uw Adobe Campaign-consultant om informatie over de implementatie.
+>Deze informatie kan alleen als algemene richtsnoeren worden gebruikt. Neem contact op met uw Adobe Campaign-consultant voor de implementatie.
 
 De geavanceerde implementatie voegt aangepaste replicatieworkflows toe, afhankelijk van de behoeften van de klant. Hier volgen enkele voorbeelden:
 
 * Leveringsreplicatie
 * Campagnereplicatie
 * Programmareplicatie
-* Replicatie zaadleden
+* Replicatie van zaadleden
 * Transactionele replicatie
 * enz.
 
@@ -311,7 +311,7 @@ Met de basisimplementatie, worden de uit-van-de-doos ontvankelijke gebieden herh
 
    ![](assets/acs_connect_implementation_7.png)
 
-1. Open de toepassingsworkflow voor de toegewezen profielreplicatie (niet de sjabloon, maar de werkstroominstantie zelf). De **[!UICONTROL Query]** en **[!UICONTROL Update data]** activiteiten om deze gebieden op te nemen. Zie [Technische en replicatieworkflows](#technical-and-replication-workflows).
+1. Open de toepassingsworkflow voor het toegewezen profiel (niet de sjabloon, maar de werkstroominstantie zelf). Wijzig de **[!UICONTROL Query]** en **[!UICONTROL Update data]** activiteiten om deze gebieden op te nemen. Zie [Technische en replicatieworkflows](#technical-and-replication-workflows).
 
    ![](assets/acs_connect_implementation_8.png)
 
@@ -325,9 +325,9 @@ Met de basisimplementatie, wordt de uit-van-de-doos ontvankelijke lijst herhaald
 
    ![](assets/acs_connect_implementation_10.png)
 
-1. Definieer de identificatiegegevens, -index, -koppelingen en -velden die u wilt repliceren.
+1. Definieer de identificatiegegevens, de index, koppelingen en velden die u wilt repliceren.
 
    ![](assets/acs_connect_implementation_10.png)
 
-1. Ga naar **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** en definieer een beveiligingsgroep voor de mappen die aan uw aangepaste tabellen zijn gekoppeld. Zie [Omzetting van rechten](#rights-conversion).
+1. Als uw rechtenbeheer is gebaseerd op mappen, gaat u naar **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** en definieer een beveiligingsgroep voor de mappen die aan uw aangepaste tabellen zijn gekoppeld. Zie [Omzetting van rechten](#rights-conversion).
 1. Gebruik de **[!UICONTROL New replication]** workflow (niet de sjabloon, maar de werkstroominstantie zelf) om de aangepaste tabel en de velden op te nemen die moeten worden gerepliceerd. Zie [Technische en replicatieworkflows](#technical-and-replication-workflows).

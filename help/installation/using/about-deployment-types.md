@@ -2,14 +2,15 @@
 product: campaign
 title: Implementatietypen
 description: Implementatietypen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '143'
 ht-degree: 6%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 6%
 
 Het modulaire ontwerp van Adobe Campaign maakt een breed scala aan implementatieconfiguraties mogelijk, van standalone configuraties (alle componenten op één computer) tot bedrijfsimplementaties met volledig redundante en gedistribueerde architectuur die meerdere servers gebruiken. Alles hangt af van het vereiste prestatieniveau en de vereiste beveiliging.
 
-In het geval van een configuratie op veelvoudige computers, moet u niet het zelfde werkende systeem door gebruiken: U kunt bijvoorbeeld een omleidingsserver gebruiken op Linux + Apache met leveringsservers op Windows.
+In het geval van een configuratie op meerdere computers, hoeft u niet overal hetzelfde besturingssysteem te gebruiken: bijvoorbeeld kunt u een omleidingsserver op Linux + Apache gebruiken met leveringsservers op Windows.
 
 >[!NOTE]
 >

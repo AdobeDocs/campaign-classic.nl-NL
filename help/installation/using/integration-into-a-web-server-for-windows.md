@@ -2,16 +2,17 @@
 product: campaign
 title: Integratie in een webserver voor Windows
 description: Integratie in een webserver voor Windows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 4%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -40,7 +41,7 @@ Eveneens, moet u een server van het Web gebruiken wanneer u wenst om de volgende
 
 ## Het vormen van de server van het Web IIS {#configuring-the-iis-web-server}
 
-De configuratieprocedure voor een server van het Web IIS is meestal grafisch. Het impliceert het gebruiken van een Website (reeds gecreeerd of in afwachting van verwezenlijking) om tot de middelen van de server van Adobe Campaign toegang te hebben: Java-bestanden (.jsp), opmaakmodellen (.css, .xsl), afbeeldingen (.png), de ISAPI DLL voor omleiding, enz.
+De configuratieprocedure voor een server van het Web IIS is meestal grafisch. Het impliceert het gebruiken van een Website (reeds gecreeerd of in afwachting van verwezenlijking) om tot de middelen van de server van Adobe Campaign toegang te hebben: dossiers Java (.jsp), stylesheets (.css, .xsl), beelden (.png), ISAPI DLL voor omleiding, enz.
 
 De volgende secties detailconfiguratie in IIS 7. De configuratie voor IIS8 is fundamenteel het zelfde.
 
@@ -67,7 +68,7 @@ Pas de volgende configuratiestappen toe:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** Met script kunt u automatisch de bronnen configureren die door de Adobe Campaign-server worden gebruikt in de virtuele directory die we zojuist hebben gemaakt. Dubbelklik op de knop **is_neolane_setup.vbs** bestand in het dialoogvenster `[INSTALL]\conf` map, waar `[INSTALL]` is het pad voor toegang tot de installatiemap van Adobe Campaign.
+1. A **VBS** Met script kunt u automatisch de bronnen configureren die door de Adobe Campaign-server worden gebruikt in de virtuele directory die we zojuist hebben gemaakt. Dubbelklik op de knop **iis_neolane_setup.vbs** bestand in het dialoogvenster `[INSTALL]\conf` map, waar `[INSTALL]` is het pad voor toegang tot de installatiemap van Adobe Campaign.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -77,7 +78,7 @@ Pas de volgende configuratiestappen toe:
 
    Klikken **[!UICONTROL OK]** als de server van het Web als het volgen omleidingsserver wordt gebruikt, anders klik **[!UICONTROL Cancel]**.
 
-   Wanneer de veelvoudige plaatsen reeds op de server van het Web worden gevormd, wordt een middenpagina getoond om te specificeren op welke Website de installatie van toepassing is: Voer het nummer in dat aan de site is gekoppeld en klik op **[!UICONTROL OK]**.
+   Wanneer de veelvoudige plaatsen reeds op de server van het Web worden gevormd, wordt een middenpagina getoond om te specificeren op welke Website de installatie van toepassing is: ga het aantal verbonden aan de plaats in en klik **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -97,7 +98,7 @@ Vervolgens moet u de beveiligingsinstellingen configureren voor de ISAPI DLL en 
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Selecteer **[!UICONTROL Features View]** en dubbelklikt u op de knop **Verificatie** koppeling.
+1. Selecteer de **[!UICONTROL Features View]** en dubbelklikt u op de knop **Verificatie** koppeling.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 

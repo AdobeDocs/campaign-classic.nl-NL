@@ -2,14 +2,15 @@
 product: campaign
 title: Transactieberichtsjablonen testen
 description: Leer hoe u zaadadressen in transactieberichten beheert om deze in Adobe Campaign Classic voor te vertonen en te testen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '567'
 ht-degree: 2%
 
 ---
@@ -60,7 +61,7 @@ Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking to
 
 ## Personalisatiegegevens {#personalization-data}
 
-Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Zie voor meer informatie [Inbox rendering](../../delivery/using/inbox-rendering.md).
+Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Zie voor meer informatie [Inbox-rendering](../../delivery/using/inbox-rendering.md).
 
 Het doel van deze gegevens is om uw berichten vóór hun definitieve levering te testen. Deze berichten komen niet overeen met de werkelijk te verwerken gegevens. De XML-structuur moet echter gelijk zijn aan die van de gebeurtenis die in de uitvoeringsinstantie is opgeslagen, zoals hieronder wordt getoond:
 
@@ -94,7 +95,7 @@ Zodra u één of meerdere zaadadressen en het berichtlichaam hebt gecreeerd, kun
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Zie voor meer informatie [Inbox rendering](../../delivery/using/inbox-rendering.md).
+Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Zie voor meer informatie [Inbox-rendering](../../delivery/using/inbox-rendering.md).
 
 ## Een proef verzenden {#sending-a-proof}
 

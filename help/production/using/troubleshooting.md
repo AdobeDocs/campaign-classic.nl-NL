@@ -2,14 +2,15 @@
 product: campaign
 title: Probleemoplossing voor productie
 description: Ontdek procedures voor het oplossen van problemen bij de productie met betrekking tot de configuratie, de controle, het verbeteringsproces, de gegevensverwerking, en de procedure van het gegevensbestandonderhoud van Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '226'
 ht-degree: 18%
 
 ---
@@ -33,7 +34,7 @@ Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
 * [Afbeelding ontbreekt](../../production/using/images-missing.md)
-* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) (*alleen on-premise hostingmodellen*)
+* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) (*alleen hostmodellen op locatie*)
 
 **Verwant onderwerp**:
 

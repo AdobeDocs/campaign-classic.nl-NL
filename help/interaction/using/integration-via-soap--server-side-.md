@@ -2,14 +2,15 @@
 product: campaign
 title: Integratie via SOAP (serverzijde)
 description: Integratie via SOAP (serverzijde)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
@@ -27,11 +28,11 @@ Voor een aanbiedingsvoorstel via ZEEP, voeg toe **nms:proposition#propose** gevo
 * **targetId**: primaire sleutel van de ontvanger (kan een samengestelde sleutel zijn).
 * **maxCount**: geeft het aantal voorstellen voor de contactpersoon aan.
 * **context**: Hiermee kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie**, **`<empty>`** worden toegevoegd.
-* **categorieën**: geeft de categorie(ën) aan waartoe de aanbiedingen moeten behoren.
+* **categorieën**: geeft aan tot welke categorie(ën) de aanbiedingen moeten behoren.
 * **thema&#39;s**: geeft het thema of de thema&#39;s aan waartoe de aanbieding(en) moeten behoren.
-* **uuid**: waarde van de permanente cookie van Adobe Campaign (&quot;uuid230&quot;).
+* **uuid**: waarde van het permanente cookie van Adobe Campaign (&quot;uuid230&quot;).
 * **nli**: waarde van het Adobe Campaign-sessiecookie (&quot;nlid&quot;).
-* **noProp**: Gebruik de waarde &quot;true&quot; om de invoeging van een voorstel te deactiveren.
+* **noProp**: gebruik de waarde &quot;true&quot; om de invoeging van een voorstel te deactiveren.
 
 >[!NOTE]
 >
@@ -39,16 +40,16 @@ Voor een aanbiedingsvoorstel via ZEEP, voeg toe **nms:proposition#propose** gevo
 
 In antwoord op de vraag, zal de dienst van de ZEEP de volgende parameters terugkeren:
 
-* **interactionId**: Id van de interactie.
+* **interactionId**: ID van de interactie.
 * **voorstellen**: XML-element, bevat de lijst met voorstellingen, elk met een eigen id en HTML-representatie.
 
 ## Aanbieding bijwerken {#offer-update}
 
 Voeg de **nms:interaction#UpdateStatus** naar de URL, gevolgd door de volgende parameters:
 
-* **voorstel**: Tekenreeks, bevat deze de voorstel-id die als uitvoer is opgegeven tijdens een aanbiedingsvoorstel. Zie [Voorstel](#offer-proposition).
-* **status**: tekenreekstype, geeft het de nieuwe status van de aanbieding aan. De mogelijke waarden worden vermeld in **propositionStatus** opsomming, in de **nms:algemeen** schema. Het getal 3 komt bijvoorbeeld overeen met het **Geaccepteerd** status.
-* **context**: Met XML-element kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie**, **`<empty>`** worden toegevoegd.
+* **voorstel**: tekenreeks met tekens, bevat deze de voorstel-id die als uitvoer is opgegeven tijdens een aanbiedingsvoorstel. Zie [Voorstel](#offer-proposition).
+* **status**: type tekenreeks, geeft de nieuwe status van de aanbieding aan. De mogelijke waarden worden vermeld in de **propositionStatus** opsomming, in de **nms:algemeen** schema. Bijvoorbeeld, out-of-the-box, beantwoordt aantal 3 aan **Geaccepteerd** status.
+* **context**: Met het XML-element kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie**, **`<empty>`** worden toegevoegd.
 
 ## Voorbeeld met een SOAP-aanroep {#example-using-a-soap-call}
 

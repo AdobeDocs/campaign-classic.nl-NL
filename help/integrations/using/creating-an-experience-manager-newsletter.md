@@ -2,15 +2,16 @@
 product: campaign
 title: Een nieuwsbrief voor Experience Managers maken
 description: Een nieuwsbrief voor Experience Managers maken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Experience Manager Integration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 1%
+source-wordcount: '287'
+ht-degree: 2%
 
 ---
 
@@ -22,16 +23,16 @@ Deze integratie kan bijvoorbeeld worden gebruikt voor het maken van een nieuwsbr
 
 **Uit Adobe Experience Manager:**
 
-1. Klik in de AEM instantie van de auteur op de knop **Adobe Experience** logo in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Sites]**.
+1. Klik in de AEM auteur op de knop **Adobe-ervaring** logo in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
 1. Selecteer **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
-1. Klik op de knop **[!UICONTROL Create]** in de rechterbovenhoek van de pagina en selecteer vervolgens **[!UICONTROL Page]**.
+1. Klik op de knop **[!UICONTROL Create]** in de rechterbovenhoek van de pagina en selecteert u vervolgens **[!UICONTROL Page]**.
 
    ![](assets/aem_uc_2.png)
 
-1. Selecteer **[!UICONTROL Adobe Campaign Email (AC 6.1)]** sjabloon en naam van nieuwsbrief.
+1. Selecteer de **[!UICONTROL Adobe Campaign Email (AC 6.1)]** sjabloon en naam van nieuwsbrief.
 1. Als uw pagina is gemaakt, opent u de **[!UICONTROL Page information]** menu en klik op **[!UICONTROL Open Properties]**.
 
    ![](assets/aem_uc_3.png)
@@ -77,7 +78,7 @@ Uw nieuwsbrief is nu klaar en gesynchroniseerd in Adobe Campaign.
 
    ![](assets/aem_uc_11.png)
 
-1. Selecteer de levering die eerder in Adobe Experience Manager is gemaakt en klik op **[!UICONTROL Ok]**.
+1. Selecteer de eerder in Adobe Experience Manager gemaakte levering en klik op **[!UICONTROL Ok]**.
 1. Klik op de knop **[!UICONTROL Refresh content]** zodra er wijzigingen in de AEM zijn aangebracht.
 
    ![](assets/aem_uc_12.png)

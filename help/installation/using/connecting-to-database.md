@@ -2,14 +2,15 @@
 product: campaign
 title: Verbinding maken met een externe database
 description: Leer hoe u verbinding maakt met een externe database
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '651'
 ht-degree: 2%
 
 ---
@@ -41,7 +42,7 @@ Als u een verbinding met een gedeelde externe database wilt inschakelen, zolang 
    ![](assets/wf-external-account-create.png)
 
 1. Schakel indien nodig de optie **[!UICONTROL Enabled]** optie om toegang tot dit gegevensbestand zonder zijn configuratie onbruikbaar te maken.
-1. Als u Adobe Campaign toegang wilt geven tot deze database, moet u de SQL-functies implementeren. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** knop.
+1. Als u Adobe Campaign toegang wilt geven tot deze database, moet u de SQL-functies implementeren. Klik op de knop **[!UICONTROL Parameters]** en vervolgens de **[!UICONTROL Deploy functions]** knop.
 
    ![](assets/wf-external-account-functions.png)
 
@@ -58,7 +59,7 @@ U kunt rechtstreeks vanuit workflowactiviteiten een verbinding met een externe d
 In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van een periodieke verbinding met een externe database:
 
 1. Klik op de knop **[!UICONTROL Add data...]** en selecteert u de **[!UICONTROL External data]** opties.
-1. Selecteer **[!UICONTROL Locally defining the data source]** optie.
+1. Selecteer de **[!UICONTROL Locally defining the data source]** -optie.
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -85,7 +86,7 @@ In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van
 
    ![](assets/wf_add_data_local_external_data_select.png)
 
-   Klikken **[!UICONTROL Finish]** om deze configuratie te bevestigen.
+   Klikken **[!UICONTROL Finish]** deze configuratie bevestigen.
 
 ## Beveiligde verbinding {#secure-connection}
 

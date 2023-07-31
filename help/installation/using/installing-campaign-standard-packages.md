@@ -2,12 +2,13 @@
 product: campaign
 title: Ingebouwde Campaign Classic-pakketten installeren
 description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1278'
 ht-degree: 5%
 
 ---
@@ -24,7 +25,7 @@ De ingebouwde pakketten bevatten een reeks eigenschappen die volgens uw behoefte
 >
 >U mag alleen pakketten installeren die overeenkomen met de opties die in uw licentieovereenkomst zijn vermeld.
 >
->Het installeren van een nieuw pakket kan al uw platform beïnvloeden: het moet worden getest en gevalideerd vóór de definitieve implementatie.
+>De installatie van een nieuw pakket kan invloed hebben op al uw platform: het moet worden getest en gevalideerd voor de definitieve implementatie.
 >
 >Nadat een pakket is geïnstalleerd, kunt u het niet verwijderen.
 >
@@ -107,7 +108,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) <br /> </td> 
-   <td> Zorgt voor hogere beschikbaarheid en beter beheer van de belasting. Optioneel. <a href="../../message-center/using/about-transactional-messaging.md">Meer informatie</a><br /> </td> 
+   <td> Zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Optioneel. <a href="../../message-center/using/about-transactional-messaging.md">Meer informatie</a><br /> </td> 
    <td> Uitvoering<br /> </td>
   </tr> 
   <tr> 
@@ -172,7 +173,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Couponbeheer<br /> </td> 
-   <td> Hiermee maakt u een set coupons die u kunt toevoegen aan toekomstige marketingaanbiedingen. Optioneel. <a href="../../delivery/using/personalized-coupons.md">Meer informatie</a> <br /> </td> 
+   <td> Hiermee maakt u een set coupons die u kunt toevoegen aan de volgende marketingaanbiedingen. Optioneel. <a href="../../delivery/using/personalized-coupons.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

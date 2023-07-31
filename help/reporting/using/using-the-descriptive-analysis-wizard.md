@@ -2,13 +2,13 @@
 product: campaign
 title: De wizard voor beschrijvende analyse gebruiken
 description: De wizard voor beschrijvende analyse gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ Als u een beschrijvend analyserapport wilt maken, gebruikt u de toegewezen wizar
 
 ## Gegevens in de database analyseren {#analyzing-data-in-the-database}
 
-De wizard voor beschrijvende analyse kan worden gestart via de **[!UICONTROL Tools > Descriptive analysis]** menu: in dit geval heeft de analyse betrekking op afnemers die standaard in dienst zijn (**nms:ontvanger**). Het is van toepassing op alle gegevens in de Adobe Campaign-database.
+De wizard voor beschrijvende analyse kan worden gestart via de **[!UICONTROL Tools > Descriptive analysis]** menu: in dit geval betreft de analyse ontvangers standaard (**nms:ontvanger**). Het is van toepassing op alle gegevens in de Adobe Campaign-database.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Een andere tabel dan de standaardontvangers analyseren (**nms:ontvanger**), klikt u op de knop **[!UICONTROL Advanced settings...]** in de laatste fase van de wizard en selecteer de tabel die overeenkomt met uw instellingen, in dit geval **focus:individueel**:
+Een andere tabel dan de standaardontvangers analyseren (**nms:ontvanger**), klikt u op **[!UICONTROL Advanced settings...]** in de laatste fase van de wizard en selecteer de tabel die overeenkomt met uw instellingen, in dit geval **focus:individueel**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -37,7 +37,7 @@ De analyse zal alleen betrekking hebben op ontvangers van databanken van 16 jaar
 
 ## Een set gegevens analyseren {#analyzing-a-set-of-data}
 
-U kunt de beschrijvende analysewizard gebruiken via een andere context: een lijst, een workflowovergang, een of meer leveringen, een selectie van ontvangers, enz.
+U kunt de beschrijvende analysewizard gebruiken via een andere context: een lijst, een workflowovergang, een of meer leveringen, een selectie van ontvangers, enzovoort.
 
 Het is toegankelijk via verscheidene knopen van de boom van Adobe Campaign die aan de ontvankelijke lijst richten.
 
@@ -47,17 +47,17 @@ Open de beschrijvende analysewizard door items te selecteren en met de rechtermu
 
 * Voor een set van **ontvangers** selecteert u de ontvangers die u wilt analyseren, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Actions > Explore...]**, zoals hierboven aangegeven. Als een filter wordt toegepast op de lijst met ontvangers, wordt alleen de inhoud geanalyseerd.
 
-   Als u alle ontvangers in de map of het huidige filter wilt selecteren, gebruikt u de sneltoets CTRL+A. Dit betekent dat zelfs ontvangers die niet worden weergegeven, worden geselecteerd.
+  Als u alle ontvangers in de map of het huidige filter wilt selecteren, gebruikt u de sneltoets CTRL+A. Dit betekent dat zelfs ontvangers die niet worden weergegeven, worden geselecteerd.
 
-   Een voorbeeld van de beschrijvende analyse van ontvangers vindt u in: [Kwalitatieve gegevensanalyse](../../reporting/using/use-cases.md#qualitative-data-analysis).
+  Een voorbeeld van de beschrijvende analyse van ontvangers vindt u in: [Kwalitatieve gegevensanalyse](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
 * In het kader van een **werkstroom** Plaats de cursor in een overgang die naar de tabel met ontvangers wijst, klik met de rechtermuisknop en selecteer **[!UICONTROL Analyze target]**. Raadpleeg het voorbeeld in [Een overgangsdoel analyseren in een workflow](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Voor **lijsten** selecteert u een of meer lijsten en past u hetzelfde proces toe als voor ontvangers.
-* In het kader van een **levering** selecteert u de leveringen waarvan u het doel wilt analyseren, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Actions > Explore the target]**, zoals hieronder weergegeven:
+* In het kader van een **bezorging** selecteert u de leveringen waarvan u het doel wilt analyseren, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Actions > Explore the target]**, zoals hieronder weergegeven:
 
-   ![](assets/reporting_descriptive_from_deliveries.png)
+  ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: [Een populatie analyseren](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [Logbestanden voor bijhouden ontvangers analyseren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+  Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: [Een populatie analyseren](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [Logbestanden voor bijhouden ontvangers analyseren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## De sjabloon voor kwalitatieve distributie configureren {#configuring-the-qualitative-distribution-template}
 
@@ -79,38 +79,38 @@ Wanneer u de variabelen selecteert die u wilt weergeven, kunt u gegevensbinding 
 
 De opties zijn afhankelijk van de inhoud van het veld:
 
-* **[!UICONTROL None]** : Met deze optie kunt u alle waarden weergeven die beschikbaar zijn voor de variabele, zonder dat u een binding hoeft te maken.
+* **[!UICONTROL None]** : met deze optie kunt u alle waarden weergeven die beschikbaar zijn voor de variabele, zonder dat u een binding hoeft te maken.
 
-   >[!CAUTION]
-   >
-   >Deze optie dient met voorzichtigheid te worden gebruikt: het kan een grote invloed hebben op het rapport en op de prestaties van de machine .
+  >[!CAUTION]
+  >
+  >Deze optie moet met de nodige voorzichtigheid worden gebruikt: zij kan een grote invloed hebben op het rapport en op de prestaties van de machine.
 
 * **[!UICONTROL Auto]** : met deze optie kunt u de meest gebruikte waarden weergeven. Ze worden automatisch berekend en elk vertegenwoordigen een percentage van de variabelen in verhouding tot het aantal vakken. Voor numerieke waarden genereert Adobe Campaign automatisch een klasse waarin de gegevens worden gesorteerd.
-* **[!UICONTROL Manual]** : deze optie werkt net als **[!UICONTROL Auto]** , behalve dat u deze waarden handmatig kunt instellen. Om dit te doen, klik **[!UICONTROL Add]** rechts van de waardetabel.
+* **[!UICONTROL Manual]** : deze optie werkt als de **[!UICONTROL Auto]** , behalve dat u deze waarden handmatig kunt instellen. Om dit te doen, klik **[!UICONTROL Add]** rechts van de waardetabel.
 
-   Waarden kunnen automatisch door Adobe Campaign worden geïnitialiseerd voordat ze worden aangepast: om dit te doen, ga het aantal banden in u wilt produceren en klik **[!UICONTROL Initialize with]** koppeling, zoals hieronder wordt getoond:
+  Waarden kunnen automatisch door Adobe Campaign worden geïnitialiseerd voordat de gebruiker ze kan personaliseren. Hiervoor voert u het aantal vakken in dat u wilt genereren en klikt u op de knop **[!UICONTROL Initialize with]** koppeling, zoals hieronder wordt getoond:
 
-   ![](assets/reporting_descriptive_initialize.png)
+  ![](assets/reporting_descriptive_initialize.png)
 
-   Pas vervolgens de inhoud aan uw wensen aan:
+  Pas vervolgens de inhoud aan uw wensen aan:
 
-   ![](assets/reporting_descriptive_initialize_perso.png)
+  ![](assets/reporting_descriptive_initialize_perso.png)
 
-   Afhankelijk van het gewenste precisieniveau kunnen velden met datums worden gegroepeerd op tijd, dag, maand, jaar, enzovoort.
+  Afhankelijk van het gewenste precisieniveau kunnen velden met datums worden gegroepeerd op tijd, dag, maand, jaar, enzovoort.
 
-   ![](assets/reporting_descriptive_group_by_year.png)
+  ![](assets/reporting_descriptive_group_by_year.png)
 
 * **[!UICONTROL Modulo]** : Hiermee kunt u groepen waarden maken in het geval van numerieke waarden. Met een modulo met een waarde van 10 kunt u bijvoorbeeld een interval maken van waarden die tien voor tien veranderen.
 
-   ![](assets/reporting_descriptive_initialize_modulo.png)
+  ![](assets/reporting_descriptive_initialize_modulo.png)
 
-   In dit voorbeeld kunt u de uitsplitsing van ontvangers per leeftijdsgroep bekijken.
+  In dit voorbeeld kunt u de uitsplitsing van ontvangers per leeftijdsgroep bekijken.
 
-   ![](assets/reporting_descriptive_initialize_modulo_result.png)
+  ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
 ### Gegevens in de tabel weergeven {#displaying-data-in-the-table}
 
-Gebruik de werkbalk om de weergave van variabelen in de tabel aan te passen: Verwijder een kolom, geef gegevens in lijnen eerder dan kolommen weer, verplaats een kolom naar links of rechts, bekijk of wijzig de waardeberekening.
+Gebruik de werkbalk om de weergave van variabelen in de tabel aan te passen: verwijder een kolom, geef gegevens weer in regels in plaats van kolommen, verplaats een kolom naar links of rechts, bekijk of wijzig de waardeberekening.
 
 ![](assets/s_ncs_user_report_wizard_toolbar.png)
 
@@ -120,7 +120,7 @@ U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de
 
 ### Gegevens weergeven in het diagram {#displaying-data-in-the-chart}
 
-In de eerste stap van de beschrijvende analysewizard kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
+In de eerste stap van de wizard voor beschrijvende analyse kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -158,23 +158,23 @@ De volgende bewerkingen zijn mogelijk:
 * **[!UICONTROL Column percentage distribution]** de verhouding tussen de waarde in een rij en de waarde in een kolom berekenen (alleen beschikbaar voor tabellen);
 * **[!UICONTROL Total percentage distribution]** de verdeling van de begunstigden waarop de waarden betrekking hebben, te berekenen;
 
-   ![](assets/s_ncs_user_report_wizard_026.png)
+  ![](assets/s_ncs_user_report_wizard_026.png)
 
 * **[!UICONTROL Calculated field]** om een gepersonaliseerde exploitant (beschikbaar voor lijsten slechts) tot stand te brengen. De **[!UICONTROL User function]** In dit veld kunt u de berekening invoeren die op de gegevens moet worden toegepast.
 
-   Voorbeeld: Berekening van het gemiddelde aankoopbedrag per klant op basis van land en herkomst
+  Voorbeeld: het gemiddelde aankoopbedrag per klant berekenen op basis van land en herkomst
 
-   ![](assets/report_compute_data_sample1.png)
+  ![](assets/report_compute_data_sample1.png)
 
-   Als u de bovenstaande gegevens in een tabel wilt weergeven, moet u een berekend veld maken voor het opslaan van het gemiddelde aankoopbedrag per klant.
+  Als u de bovenstaande gegevens in een tabel wilt weergeven, moet u een berekend veld maken voor het opslaan van het gemiddelde aankoopbedrag per klant.
 
-   Dit doet u als volgt:
+  Dit doet u als volgt:
 
    1. Bereken het aankooptotaal.
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Deze statistiek wordt niet weergegeven in de tabel. U moet de controle van **[!UICONTROL Display in the table]** de **[!UICONTROL Advanced]** tab.
+   1. Deze statistiek wordt niet weergegeven in de tabel. U moet de controle van **[!UICONTROL Display in the table]** van de **[!UICONTROL Advanced]** tab.
 
       ![](assets/report_compute_data_sample3.png)
 
@@ -194,7 +194,7 @@ Het is mogelijk om de indeling van de resultaten te wijzigen. Klik hiertoe met d
 
 ![](assets/s_ncs_user_report_wizard_029.png)
 
-Wanneer het rapport een grafiek omvat, laten de etiketten van de legenda u de getoonde informatie filtreren: Klik op een label om de weergave in het diagram in of uit te schakelen.
+Wanneer het rapport een grafiek omvat, laten de etiketten van de legenda u de getoonde informatie filtreren: klik een etiket om vertoning in de grafiek toe te laten/onbruikbaar te maken.
 
 ![](assets/report_display_data_in_graph.png)
 
@@ -226,12 +226,12 @@ De volgende bewerkingen zijn mogelijk:
 * **[!UICONTROL Decile distribution]** om de geretourneerde waarden zo te verdelen dat elke waarde een tiende van de waarden in een numeriek veld vertegenwoordigt.
 * **[!UICONTROL Custom distribution]** om de teruggekeerde waarden te verdelen die op user-defined drempels worden gebaseerd.
 
-   De **[!UICONTROL Detail...]** kunt u een statistiek bewerken en, indien nodig, de berekening of weergave aanpassen:
+  De **[!UICONTROL Detail...]** Met de knop kunt u een statistiek bewerken en, indien nodig, de berekening of weergave aanpassen:
 
-   ![](assets/s_ncs_user_report_wizard_030.png)
+  ![](assets/s_ncs_user_report_wizard_030.png)
 
-   De laatste stap van de tovenaar toont het kwantitatieve analyserapport.
+  De laatste stap van de tovenaar toont het kwantitatieve analyserapport.
 
-   ![](assets/reporting_descriptive_view_report.png)
+  ![](assets/reporting_descriptive_view_report.png)
 
-   Als u wijzigingen in het rapport wilt aanbrengen, raadpleegt u [Een rapport verwerken](../../reporting/using/processing-a-report.md).
+  Als u wijzigingen in het rapport wilt aanbrengen, raadpleegt u [Een rapport verwerken](../../reporting/using/processing-a-report.md).

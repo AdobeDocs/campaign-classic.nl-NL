@@ -2,14 +2,14 @@
 product: campaign
 title: Opties voor URL-tracking configureren
 description: Leer hoe u opties voor het bijhouden van URL's configureert
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Email Design
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Monitoring, Email Design, Personalization
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 10%
 
 ---
 
@@ -29,9 +29,9 @@ U kunt de volgende opties configureren:
 
 * URL-tracking voor alle berichten activeren/deactiveren.
 
-   >[!CAUTION]
-   >
-   >Wanneer &#39;tracking&#39; niet wordt geactiveerd bij een levering (d.w.z. **[!UICONTROL Activate tracking]** optie niet geselecteerd), zijn rapporten en gegevens met betrekking tot het bijhouden niet beschikbaar: Opent, houdt de Hete klik en volgt URLs- rapporten geen gegevens tonen, en **[!UICONTROL Tracking logs]** Er worden geen tabbladen weergegeven voor deze levering.
+  >[!CAUTION]
+  >
+  >Wanneer &#39;tracking&#39; niet wordt geactiveerd bij een levering (dat wil zeggen **[!UICONTROL Activate tracking]** (optie niet geselecteerd), zijn rapporten en gegevens met betrekking tot het bijhouden niet beschikbaar: opent, houdt de Hot click en houdt URLs rapporten zal geen gegevens tonen, en **[!UICONTROL Tracking logs]** Er worden geen tabbladen weergegeven voor deze levering.
 
 * Tracering activeren/deactiveren voor bericht wordt geopend.
 

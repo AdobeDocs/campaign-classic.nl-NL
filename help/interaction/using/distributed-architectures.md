@@ -2,14 +2,15 @@
 product: campaign
 title: Gedistribueerde architecturen
 description: Gedistribueerde architecturen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -51,7 +52,7 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 * Als u de valfunctie van een anonieme omgeving aan een geïdentificeerd milieu gebruikt, moeten deze twee milieu&#39;s op de zelfde uitvoeringsinstantie zijn.
 * De synchronisatie tussen verschillende uitvoeringsinstanties wordt niet in real-time uitgevoerd. Interacties van dezelfde contactpersoon moeten naar dezelfde instantie worden verzonden. De controleinstantie moet aan het uitgaande kanaal (geen echte tijd) worden gewijd.
-* De marketingdatabase wordt niet automatisch gesynchroniseerd. De marketinggegevens die in de wegingsregels en de subsidiabiliteitsregels worden gebruikt, moeten bij uitvoeringsgevallen worden gedupliceerd. Dit proces komt niet als standaard, u moet het ontwikkelen tijdens de integratieperiode.
+* De marketingdatabase wordt niet automatisch gesynchroniseerd. De marketinggegevens die in de wegingsregels en de subsidiabiliteitsregels worden gebruikt, moeten in geval van uitvoering worden gedupliceerd. Dit proces komt niet als standaard, u moet het ontwikkelen tijdens de integratieperiode.
 * De synchronisatie van voorstellen wordt uitsluitend uitgevoerd door een FDA-verbinding.
 * Als u Interaction en het Centrum van het Bericht op de zelfde instantie gebruikt, zal de synchronisatie via protocol FDA in beide gevallen voorkomen.
 
@@ -59,7 +60,7 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 Willekeurige schema-extensies die rechtstreeks zijn gekoppeld aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
 
-Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: één pakket dat op de controleinstanties moet worden geïnstalleerd, en een ander dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
+Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: een pakket dat op de besturingsinstanties moet worden geïnstalleerd en een ander pakket dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
 
 >[!NOTE]
 >
@@ -81,10 +82,11 @@ Op besturingsinstanties:
    * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, of beide.
    * Voer de gebruikte FDA-account in. Een exploitant moet op de uitvoeringsinstanties worden gecreeerd en moet de volgende lees- en schrijfrechten op het gegevensbestand van de betrokken instantie hebben:
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
    >Het IP adres van de controleinstantie moet op de uitvoeringsinstanties worden toegelaten.
@@ -96,11 +98,11 @@ Op besturingsinstanties:
    * Voeg de lijst met uitvoeringsinstanties toe.
    * Geef voor elke synchronisatie de synchronisatieperiode en filtercriteria op (bijvoorbeeld per land).
 
-      >[!NOTE]
-      >
-      >Als er een fout optreedt, kunt u de synchronisatieworkflows raadplegen en meldingen aanbieden. Deze zijn te vinden in de technische workflows van de toepassing.
+     >[!NOTE]
+     >
+     >Als er een fout optreedt, kunt u de synchronisatieworkflows raadplegen en meldingen aanbieden. Deze zijn te vinden in de technische workflows van de toepassing.
 
-Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal ( te beperken **[!UICONTROL Taken into account if]** veld).
+Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal (**[!UICONTROL Taken into account if]** veld).
 
 ![](assets/ita_filtering.png)
 
@@ -113,7 +115,7 @@ Hier is een lijst van onderhoudsopties beschikbaar op de controle instantie:
 >Deze opties mogen alleen voor specifieke onderhoudsbeurten worden gebruikt.
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: laatste datum waarop een omgeving is gesynchroniseerd op een bepaalde instantie.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: datum waarop de voorstellen van een bepaald schema in laatste instantie werden gesynchroniseerd.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: laatste datum waarop voorstellen uit een bepaald schema zijn gesynchroniseerd van de ene instantie naar de andere.
 * **`NmsInteraction_MapWorkflowId`**: een optie die de lijst bevat van alle gegenereerde synchronisatieworkflows.
 
 De volgende optie is beschikbaar bij uitvoeringsinstanties:
@@ -122,14 +124,14 @@ De volgende optie is beschikbaar bij uitvoeringsinstanties:
 
 ## Installatie van pakketten {#packages-installation}
 
-Als uw instantie eerder niet over het interactiepakket beschikte, is geen migratie nodig. Standaard wordt de tabel met voorstellen weergegeven in 64 bits nadat de pakketten zijn geïnstalleerd.
+Als uw instantie eerder niet over het interactiepakket beschikte, is er geen migratie nodig. Standaard wordt de tabel met voorstellen weergegeven in 64 bits nadat de pakketten zijn geïnstalleerd.
 
 >[!IMPORTANT]
 >
 >Afhankelijk van het volume van bestaande voorstellingen in uw instantie, kan deze bewerking even duren.
 
 * Als uw instantie weinig of geen voorstellingen heeft, is geen handmatige wijziging van de tabel met voorstellingen nodig. De wijziging wordt uitgevoerd wanneer pakketten worden geïnstalleerd.
-* Als uw instantie veel voorstellingen heeft, is het beter om de structuur van de lijst met voorstellingen te veranderen alvorens de controlepakketten te installeren en hen in werking te stellen. We raden u aan de query&#39;s uit te voeren tijdens een periode met weinig activiteit.
+* Als uw instantie veel voorstellingen heeft, is het beter om de structuur van de lijst met voorstellingen te wijzigen voordat u de controlepakketten installeert en uitvoert. We raden u aan de query&#39;s uit te voeren tijdens een periode met weinig activiteit.
 
 >[!NOTE]
 >

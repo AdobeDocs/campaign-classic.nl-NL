@@ -2,16 +2,17 @@
 product: campaign
 title: Netwerkconfiguratie
 description: Richtlijnen voor systeemcommunicatie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 2%
+source-wordcount: '691'
+ht-degree: 3%
 
 ---
 
@@ -102,11 +103,11 @@ Voor de toepassingsserver (**nlserver-web**), moeten de volgende havens open zij
  </tbody> 
 </table>
 
-Wanneer meerdere toepassingsservers van een Adobe Campaign-platform met elkaar moeten communiceren, raden we u aan de poort van de Apache Tomcat-server te gebruiken (standaard: 8080) eerder dan dat van de haven van HTTP van de server van het Web die de redirection moduleintegratie werd uitgevoerd met. Dit betekent dat de poort open moet zijn tussen deze servers.
+Wanneer verscheidene toepassingsservers van een platform van Adobe Campaign met elkaar moeten communiceren, adviseren wij gebruikend de haven van de server Apache Tomcat (door gebrek: 8080) eerder dan dat van de haven van HTTP van de server van het Web die redirection module integratie werd uitgevoerd met. Dit betekent dat de poort open moet zijn tussen deze servers.
 
 ### Status van SMS-verzending {#sms-delivery-status}
 
-SMS-leveringen volgen (**nlserver-sms**), moet de volgende poort open zijn:
+Om SMS-leveringen te volgen (**nlserver-sms**), moet de volgende poort open zijn:
 
 <table> 
  <tbody> 
@@ -151,7 +152,7 @@ De standaardhavens zijn het volgende:
 <table> 
  <tbody> 
   <tr> 
-   <td> Type database<br /> </td> 
+   <td> Databasetype<br /> </td> 
    <td> Poort (standaard)<br /> </td> 
    <td> Doel<br /> </td> 
   </tr> 
@@ -170,7 +171,7 @@ De standaardhavens zijn het volgende:
   </tr> 
   <tr> 
    <td> <strong>DB2</strong><br /> </td> 
-   <td> 50000/tcp<br /> </td> 
+   <td> 5000/tcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,15 +2,16 @@
 product: campaign
 title: Exporttaken configureren
 description: Leer hoe u exporttaken configureert en uitvoert in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+fearture: Overview
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -19,19 +20,19 @@ ht-degree: 1%
 
 
 
-Met de exporttaken hebt u toegang tot gegevens in de database en kunt u deze extraheren: contacten, cliënten, lijsten, segmenten, enz.
+Met de exporttaken hebt u toegang tot gegevens in de database en kunt u deze ophalen: contactpersonen, clients, lijsten, segmenten enzovoort.
 
 Het kan bijvoorbeeld handig zijn om gegevens voor het bijhouden van campagnes te gebruiken (geschiedenis bijhouden, enz.) in een spreadsheet. De uitvoergegevens kunnen de indeling TXT, CSV, TAB of XML hebben.
 
-Met de wizard Exporteren kunt u een exportbewerking configureren, de opties ervan definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type export (eenvoudig of meerdere) en de rechten van de operator.
+Met de wizard Exporteren kunt u een exportbewerking configureren, de opties ervan definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type export (eenvoudig of meervoudig) en de rechten van de operator.
 
-De wizard Exporteren wordt weergegeven nadat een nieuwe exporttaak is gemaakt (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
+De wizard Exporteren wordt weergegeven na het maken van een nieuwe exporttaak (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
 
 ## Stap 1 - Kies de exportsjabloon {#step-1---choosing-the-export-template}
 
 Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de uitvoer van ontvangers te vormen die onlangs registreerden, volg de stappen hieronder:
 
-1. Selecteer **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** map.
+1. Selecteer de **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** map.
 1. Klikken **Nieuw** en klik vervolgens op **Exporteren** om de exportsjabloon te maken.
 
    ![](assets/s_ncs_user_export_wizard01.png)
@@ -41,7 +42,7 @@ Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als 
    De native sjabloon is **[!UICONTROL New text export]**. Deze sjabloon moet niet worden gewijzigd, maar u kunt het dupliceren om een nieuwe sjabloon te configureren. Exportsjablonen worden standaard opgeslagen in de **[!UICONTROL Resources > Templates > Job templates]** knooppunt.
 
 1. Geef een naam op voor het exporteren in het dialoogvenster **[!UICONTROL Label]** veld. U kunt een beschrijving toevoegen.
-1. Selecteer het exporttype. Er zijn twee mogelijke exporttypen: **[!UICONTROL Simple export]** om slechts één bestand te exporteren, en **[!UICONTROL Multiple export]** om meerdere bestanden in één uitvoering te exporteren, van een of meer typen brondocument.
+1. Selecteer het exporttype. Er zijn twee mogelijke exporttypen: **[!UICONTROL Simple export]** slechts één bestand exporteren, en **[!UICONTROL Multiple export]** om meerdere bestanden in één uitvoering te exporteren, van een of meer typen brondocument.
 
 ## Stap 2 - Type bestand dat moet worden geëxporteerd {#step-2---type-of-file-to-export}
 
@@ -53,32 +54,32 @@ Wanneer het exporteren wordt gestart vanuit de **[!UICONTROL Jobs]** knoop de ge
 
 * Standaard worden de **[!UICONTROL Download the file generated on the server after the export]** is geselecteerd. In de **[!UICONTROL Local file]** , vult de naam en het pad van het te maken bestand in of blader door de lokale schijf door op de map rechts van het veld te klikken. U kunt deze optie deselecteren om het toegangspad en de naam van het uitvoerbestand van de server in te voeren.
 
-   >[!NOTE]
-   >
-   >Taken voor automatisch importeren en exporteren worden altijd op de server uitgevoerd.
-   >
-   >Als u slechts enkele gegevens wilt exporteren, klikt u op **[!UICONTROL Advanced parameters]** en voert u in het desbetreffende veld het aantal uit te voeren lijnen in.
+  >[!NOTE]
+  >
+  >Taken voor automatisch importeren en exporteren worden altijd op de server uitgevoerd.
+  >
+  >Als u slechts enkele gegevens wilt exporteren, klikt u op **[!UICONTROL Advanced parameters]** en voert u in het desbetreffende veld het aantal uit te voeren lijnen in.
 
 * U kunt een differentiële exportbewerking maken om alleen records te exporteren die sinds de laatste uitvoering zijn gewijzigd. Om dit te doen, klik **[!UICONTROL Advanced parameters]** klikt u op de koppeling **[!UICONTROL Differential export]** tab, dan selecteren **[!UICONTROL Activate differential export]**.
 
-   ![](assets/s_ncs_user_export_wizard02_b.png)
+  ![](assets/s_ncs_user_export_wizard02_b.png)
 
-   U moet de datum van de laatste wijziging invoeren. Deze kan worden opgehaald uit een veld of berekend.
+  U moet de datum van de laatste wijziging invoeren. Deze kan worden opgehaald uit een veld of berekend.
 
 ## Stap 3 - Bepaal de outputformaat {#step-3---defining-the-output-format}
 
-Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kunnen worden gebruikt: tekst, tekst in vaste kolommen, CSV en XML.
+Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kunnen worden gebruikt: tekst, tekst met een vaste kolom, CSV en XML.
 
 ![](assets/s_ncs_user_export_wizard03.png)
 
 * Voor **[!UICONTROL Text]** , selecteert u de scheidingstekens om de kolommen (tabs, komma&#39;s, puntkomma&#39;s of aangepaste tekens) en de tekenreeksen (enkele of dubbele aanhalingstekens of geen) van elkaar te scheiden.
 * Voor **[!UICONTROL text]** en **[!UICONTROL CSV]**, kunt u de optie selecteren **[!UICONTROL Use first lines as column titles]**.
 * Geef de datumnotatie en getalnotatie op. Om dit te doen, klik **[!UICONTROL Edit]** voor het betrokken gebied en gebruik de redacteur.
-* Voor velden met opsommingswaarden kunt u **[!UICONTROL Export labels instead of internal values of enumerations]**. De titel kan bijvoorbeeld in het formulier worden opgeslagen **1=Mr.**, **2=juffrouw**, **3=Mevrouw**. Als deze optie is geselecteerd, **Dhr.**, **juffrouw** en **Mevrouw** wordt geëxporteerd.
+* Voor velden met opsommingswaarden kunt u **[!UICONTROL Export labels instead of internal values of enumerations]**. De titel kan bijvoorbeeld in het formulier worden opgeslagen **1=Mr.**, **2=Miss**, **3=Mevrouw**. Als deze optie is geselecteerd, **Dhr.**, **Mevrouw** en **Mevrouw** wordt geëxporteerd.
 
 ## Stap 4 - Selectie van gegevens {#step-4---data-selection}
 
-Selecteer de velden die u wilt exporteren. Dit doet u als volgt:
+Selecteer de te exporteren velden. Dit doet u als volgt:
 
 1. Dubbelklik op de gewenste velden in het dialoogvenster **[!UICONTROL Available fields]** om deze aan de **[!UICONTROL Output columns]** sectie.
 1. Gebruik de pijlen rechts van de lijst om de volgorde van de velden in het uitvoerbestand te definiëren.
@@ -95,7 +96,7 @@ Selecteer de sorteervolgorde van de kolommen.
 
 ## Stap 6 - Filtervoorwaarden {#step-6---filter-conditions-}
 
-U kunt filtervoorwaarden toevoegen om te voorkomen dat alle gegevens worden geëxporteerd. De configuratie van dit het filtreren is het zelfde als ontvankelijke het richten in de leveringstovenaar. Zie [deze pagina](../../delivery/using/steps-defining-the-target-population.md).
+U kunt filtervoorwaarden toevoegen om het exporteren van alle gegevens te voorkomen. De configuratie van dit het filtreren is het zelfde als ontvankelijke het richten in de leveringstovenaar. Zie [deze pagina](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -111,7 +112,7 @@ U kunt de volgorde en het label van de velden voor het uitvoerbestand wijzigen e
    * Overschakelen naar hoofdletters
    * Eerste letter in hoofdletters
 
-   ![](assets/s_ncs_user_export_wizard06.png)
+  ![](assets/s_ncs_user_export_wizard06.png)
 
 * Klikken **[!UICONTROL Add a calculated field]** als u een nieuw berekend veld wilt maken (bijvoorbeeld een kolom met achternaam + voornaam). Raadpleeg voor meer informatie hierover [Berekende velden](../../platform/using/executing-import-jobs.md#calculated-fields).
 
@@ -119,9 +120,9 @@ Als u een verzameling elementen exporteert (bijvoorbeeld abonnementen van ontvan
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## Stap 8 - Voorvertoning van gegevens {#step-8---data-preview}
+## Stap 8 - Voorvertoning gegevens {#step-8---data-preview}
 
-Klikken **[!UICONTROL Start the preview of the data]** voor een voorvertoning van het exportresultaat. Standaard worden de eerste 200 regels weergegeven. Als u deze waarde wilt wijzigen, klikt u op de pijlen rechts van de knop **[!UICONTROL Lines to display]** veld.
+Klikken **[!UICONTROL Start the preview of the data]** voor een voorvertoning van het exportresultaat. Standaard worden de eerste 200 regels weergegeven. Als u deze waarde wilt wijzigen, klikt u op de pijlen rechts van het **[!UICONTROL Lines to display]** veld.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 

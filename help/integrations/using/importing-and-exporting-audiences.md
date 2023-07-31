@@ -2,15 +2,16 @@
 product: campaign
 title: Doelgroepen importeren en exporteren
 description: Doelgroepen importeren en exporteren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 4%
 
 ---
@@ -50,7 +51,7 @@ Het importproces duurt 24-36 uur om te synchroniseren, wanneer de segmenten dire
 >
 >Als u soorten publiek importeert van Adobe Analytics naar Adobe Campaign, moeten deze soorten publiek eerst worden gedeeld in People Core Service of Audience Manager. Dit proces duurt 12-24 uur en moet worden toegevoegd aan de synchronisatie van 24-36 uur met Campagne.
 >
->In dat specifieke geval kan de tijd voor het delen van het publiek maximaal 60 uur bedragen. Raadpleeg voor meer informatie over het delen van Adobe Analytics-publiek in de People Core-service en Audience Manager de [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
+>In dat specifieke geval kan de tijd voor het delen van het publiek maximaal 60 uur bedragen. Raadpleeg voor meer informatie over het delen van Adobe Analytics-publiek in People Core-service en Audience Manager de volgende bronnen: [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
 
 De publieksgegevens worden volledig vervangen telkens als het wordt gesynchroniseerd. Alleen segmenten kunnen worden geïmporteerd. De korrelige gegevens met inbegrip van zeer belangrijk-waardeparen, eigenschappen en regels worden niet gesteund.
 
@@ -64,21 +65,21 @@ U kunt een publiek van Adobe Campaign naar Audience Manager of de de kerndienst 
 
    ![](assets/aam_export_example.png)
 
-1. Bepaal het publiek dat u via wilt uitvoeren **[!UICONTROL Select a shared audience]** optie. In het venster dat wordt geopend, kunt u een bestaand publiek selecteren of een nieuw publiek maken.
+1. Bepaal het publiek dat u via wilt uitvoeren **[!UICONTROL Select a shared audience]** -optie. In het venster dat wordt geopend, kunt u een bestaand publiek selecteren of een nieuw publiek maken.
 
    Als u een bestaand publiek selecteert, worden alleen de nieuwe records aan het publiek toegevoegd.
 
-   Als u de lijst met ontvangers wilt exporteren naar een nieuw publiek, voltooit u de opdracht **[!UICONTROL Segment name]** veld en klik vervolgens op **[!UICONTROL Create]** voordat u het nieuwe publiek selecteert.
+   Als u de lijst met ontvangers wilt exporteren naar een nieuw publiek, voltooit u de opdracht **[!UICONTROL Segment name]** veld en klik op **[!UICONTROL Create]** voordat u het nieuwe publiek selecteert.
 
    Voltooi de bewerking door op het symbool boven in het venster te klikken en vervolgens op de knop **[!UICONTROL OK]** knop.
 
-1. Selecteer **[!UICONTROL AMC Data source]** om het verwachte gegevenstype op te geven. Het schema wordt automatisch bepaald.
+1. Selecteer de **[!UICONTROL AMC Data source]** om het verwachte gegevenstype op te geven. Het schema wordt automatisch bepaald.
 
    ![](assets/aam_export_audience_activity.png)
 
 1. Sla het publiek op.
 
-Het publiek wordt vervolgens geëxporteerd. Het sparen publieksactiviteit heeft twee uitgaande overgangen. De hoofdovergang bevat de ontvangers die zijn geëxporteerd. De aanvullende overgang bevat de ontvangers die niet met een bezoekersidentiteitskaart of gedeclareerde identiteitskaart konden in kaart worden gebracht.
+Het publiek wordt vervolgens geëxporteerd. De activiteit van het sparen publiek heeft twee uitgaande overgangen. De hoofdovergang bevat de ontvangers die zijn geëxporteerd. De aanvullende overgang bevat de ontvangers die niet met een bezoekersidentiteitskaart of gedeclareerde identiteitskaart konden in kaart worden gebracht.
 
 De synchronisatie tussen Adobe Campaign en de kerndienst van Mensen vergt 24-36 uur. Na deze periode, zult u uw nieuw publiek in de de kerndienst van Mensen kunnen vinden en het in andere oplossingen van Adobe Experience Cloud hergebruiken. Voor meer informatie over het gebruiken van een Adobe Campaign gedeeld publiek in de de kerndienst van de Mensen van de Adobe, verwijs naar dit [documentatie](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-audience-create.html).
 

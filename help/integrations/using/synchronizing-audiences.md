@@ -2,14 +2,14 @@
 product: campaign
 title: Doelgroepen synchroniseren
 description: Leer hoe te om publiek met Schakelaar ACS te synchroniseren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1140'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Hiervoor hebt u het volgende nodig:
 * Ontvangers die zijn opgeslagen in de Campagne v7-database en zijn gesynchroniseerd met Campaign Standard. Zie de [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md) sectie.
 * Aanvullende gegevens, zoals abonnementen of transacties die zijn opgeslagen in tabellen met betrekking tot namen:ontvangers in de Campagne v7-database. Deze gegevens kunnen uit de schema&#39;s OOB van de Campagne v7 of douanetabellen komen. Deze zijn standaard niet beschikbaar in Campaign Standard omdat ze niet zijn gesynchroniseerd.
 * Recht om werkschema&#39;s in zowel Campagne v7 als Campaign Standard uit te voeren.
-* Recht om een levering in Campaign Standard tot stand te brengen en uit te voeren.
+* Recht om een levering in Campaign Standard te creëren en uit te voeren.
 
 ## Een doelworkflow met aanvullende gegevens maken in Campagne v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
@@ -68,7 +68,7 @@ Zo krijgt u het uiteindelijke publiek en de aanvullende gegevens:
 
    ![](assets/acs_connect_query3.png)
 
-1. Kies **[!UICONTROL Data linked to the filtering dimension]** en selecteer vervolgens de **[!UICONTROL Recipient delivery logs]** knoop en klik **[!UICONTROL Next]**.
+1. Kies **[!UICONTROL Data linked to the filtering dimension]** en selecteert u vervolgens de **[!UICONTROL Recipient delivery logs]** knoop en klik **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_query4.png)
 
@@ -80,20 +80,20 @@ Zo krijgt u het uiteindelijke publiek en de aanvullende gegevens:
 
    ![](assets/acs_connect_query6.png)
 
-1. Definieer de uitvoerkolommen. Hier is de enige benodigde kolom die het aantal leveringen telt. Dat doet u als volgt:
+1. Geef de uitvoerkolommen op. Hier is de enige benodigde kolom die het aantal leveringen telt. Dat doet u als volgt:
 
    * Selecteren **[!UICONTROL Add]** rechts van het venster.
    * Van de **[!UICONTROL Select field]** venster, klikt u op **[!UICONTROL Advanced selection]**.
    * Selecteren **[!UICONTROL Aggregate]** vervolgens **[!UICONTROL Count]**. Controleer de **[!UICONTROL Distinct]** en klik op **[!UICONTROL Next]**.
    * Selecteer in de lijst met velden het veld dat wordt gebruikt voor de **Aantal** functie. Kies een veld dat altijd wordt gevuld, bijvoorbeeld het veld **[!UICONTROL Primary key]** en klik op **[!UICONTROL Finish]**.
-   * De expressie in het dialoogvenster **[!UICONTROL Alias]** kolom. Met deze alias kunt u de toegevoegde kolom in de uiteindelijke levering gemakkelijk ophalen. Bijvoorbeeld **NBleveries**.
+   * De expressie in het dialoogvenster **[!UICONTROL Alias]** kolom. Met deze alias kunt u de toegevoegde kolom in de uiteindelijke aflevering gemakkelijk ophalen. Bijvoorbeeld **NBleveries**.
    * Klikken **[!UICONTROL Finish]** en sla de **[!UICONTROL Query]** activiteitenconfiguratie.
 
    ![](assets/acs_connect_query7.png)
 
 1. Sla de workflow op. Het volgende gedeelte laat zien hoe u de populatie deelt met ACS.
 
-## Doel delen met Campaign Standard {#share-the-target-with-campaign-standard}
+## Het doel delen met Campaign Standard {#share-the-target-with-campaign-standard}
 
 Zodra de doelpopulatie wordt bepaald, kunt u het met ACS door delen **[!UICONTROL List update]** activiteit.
 
@@ -124,7 +124,7 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
    Deze activiteit wordt gebruikt om de gegevens van het geselecteerde publiek terug te winnen. U kunt ook een extra **[!UICONTROL Source Filtering]** indien nodig door het tabblad volgens van deze activiteit te gebruiken.
 
-1. Een **[!UICONTROL Email delivery]** activiteit en vorm het als om het even welke andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Een **[!UICONTROL Email delivery]** activiteit en vorm het als andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Open de leveringsinhoud.
 1. Een personalisatieveld toevoegen. Zoek vanuit de pop-up de **[!UICONTROL Additional data (targetData)]** knooppunt. Dit knooppunt bevat de aanvullende gegevens van het publiek die zijn berekend in de initiële doelworkflow. U kunt ze als elk ander verpersoonlijkingsveld gebruiken.
 
@@ -147,8 +147,8 @@ Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 1. Controleer de rapporten en logboeken van de levering:
 
    * **In Campaign Standard**: Toegang [rapporten](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) en [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) in verband met de levering, zoals voor elke levering.
-   * **in Campagne v7 en Campaign Standard**: Logbestanden voor levering-id&#39;s, e-mailbrede logboeken en e-mailtracking worden gesynchroniseerd met Campagne v7. U kunt dan tot 360° mening van uw marketing campagnes van Campaign v7 krijgen.
+   * **in Campagne v7 en Campaign Standard**: Logbestanden voor bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtracking worden gesynchroniseerd met Campagne v7. U kunt dan tot 360° mening van uw marketing campagnes van Campaign v7 krijgen.
 
-      Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
+     Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
-      Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+     Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

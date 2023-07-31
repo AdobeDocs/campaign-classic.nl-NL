@@ -2,14 +2,15 @@
 product: campaign
 title: Toegang tot Teradata configureren
 description: Leer hoe u toegang tot Teradata kunt configureren in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -36,30 +37,30 @@ U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken me
    * tdicu1510 (installeer het met setup_wrapper.sh)
    * tdodbc1510 (installeer het met setup_wrapper.sh)
 
-1. Configureer het ODBC-stuurprogramma. De configuratie kan in de standaarddossiers worden uitgevoerd: **/etc/odbc.ini** voor algemene parameters en /etc/odbcinst.ini voor het declareren van bestuurders:
+1. Vorm het ODBC bestuurder. De configuratie kan in de standaarddossiers worden uitgevoerd: **/etc/odbc.ini** voor algemene parameters en /etc/odbcinst.ini voor het declareren van bestuurders:
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; komt overeen met de locatie van de **odbcinst.ini** bestand.
+     &quot;InstallDir&quot; komt overeen met de locatie van de **odbcinst.ini** bestand.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      teradata=Installed
-      
-      [teradata]
-      Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
-      APILevel=CORE
-      ConnectFunctions=YYY
-      DriverODBCVer=3.51
-      SQLLevel=1
-      ```
+     ```
+     [ODBC DRIVERS]
+     teradata=Installed
+     
+     [teradata]
+     Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
+     APILevel=CORE
+     ConnectFunctions=YYY
+     DriverODBCVer=3.51
+     SQLLevel=1
+     ```
 
 1. Geef de omgevingsvariabelen van de Adobe Campaign-server op:
 
@@ -70,6 +71,7 @@ U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken me
 >[!NOTE]
 >
 >Als u verbinding maakt met een externe Teradata-database in FDA, hebt u aanvullende configuratiestappen nodig op de Adobe Campaign-server. [Meer informatie](#teradata-additional-configurations).
+>
 
 ## Externe rekening teradata{#teradata-external}
 
@@ -81,15 +83,15 @@ Met de externe account van Teradata kunt u uw Campagne-instantie verbinden met u
 
    ![](assets/ext_account_19.png)
 
-1. Om het **[!UICONTROL Teradata]** externe account, moet u opgeven:
+1. Om te vormen **[!UICONTROL Teradata]** externe account, moet u opgeven:
 
    * **[!UICONTROL Type]**: Kies de optie **[!UICONTROL Teradata]** type.
 
    * **[!UICONTROL Server]**: URL of naam van uw Teradata-server
 
-   * **[!UICONTROL Account]**: Naam van de account die wordt gebruikt voor toegang tot de database van Teradata
+   * **[!UICONTROL Account]**: Naam van de account die wordt gebruikt voor toegang tot de database Teradata
 
-   * **[!UICONTROL Password]**: Wachtwoord gebruikt om met het gegevensbestand van Teradata te verbinden
+   * **[!UICONTROL Password]**: Wachtwoord dat wordt gebruikt om verbinding te maken met de database Teradata
 
    * **[!UICONTROL Database]**: Naam van de database (optioneel)
 
@@ -102,7 +104,7 @@ De connector ondersteunt de volgende opties:
 | Option | Beschrijving |
 |---|---|
 | TD_MAX_SESSIONS | Specificeert het maximumaantal openings van een sessies dat de Parallelle Transporter van de Teradata voor een exploitantbaan kan verwerven. |
-| TimeZoneName | Naam van de tijdzone van de server. |
+| TimeZoneName | Naam van de servertijdzone. |
 | CharacterSet | Wordt gebruikt om de tekenset Teradata te configureren. <br>Raadpleeg [deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001) voor meer informatie. |
 | IANAppCodePage | Codepagina van ODBC-toepassing. <br>[Raadpleeg deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) voor meer informatie |
 
@@ -142,7 +144,7 @@ Voer de onderstaande stappen uit om querybanding te configureren:
 
 Als de volgende fout optreedt tijdens het testen van de verbinding **TIM-030008 Datum &#39;2&#39;: ontbrekend teken(s) (iRc=-53)** Controleer of het ODBC-stuurprogramma correct is geïnstalleerd en of LD_LIBRARY_PATH (Linux) / PATH (Windows) is ingesteld voor de campagneserver.
 
-De fout **ODB-240000 ODBC-fout: [Microsoft][ODBC Driver Manager] Naam gegevensbron niet gevonden en geen standaardstuurprogramma opgegeven.** treedt met Windows op als u een 16.X-stuurprogramma gebruikt. Adobe Campaign verwacht dat de teradata &#39;{teradata}&#39; in odbcinst.ini wordt genoemd.
+De fout **ODB-240000 ODBC-fout: [Microsoft][ODBC Driver Manager] Naam gegevensbron niet gevonden en geen standaardstuurprogramma opgegeven.** treedt met Windows op als u een 16.X-stuurprogramma gebruikt. Adobe Campaign verwacht dat de naam van de teradata &#39;{teradata}&quot; in odbcinst.ini.
 
 * Vanaf Campagne 18.10 kunt u ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot;in de opties van de externe rekening toevoegen. Het versienummer kan veranderen, de nauwkeurige naam kan worden gevonden door odbcad32.exe in werking te stellen en tot de Drivers tabel toegang te hebben.
 
@@ -177,7 +179,7 @@ De volgende rechten zijn vereist voor de externe database: aangepaste procedures
 
 Zorg ervoor om de correcte tijdzone te vormen. Deze moet overeenkomen met wat wordt ingesteld in de externe account die wordt gemaakt in de Adobe Campaign-instantie.
 
-Adobe Campaign stelt geen beveiligingsmodus (fallback) in voor de objecten die worden gemaakt in de database. Mogelijk moet u een standaard instellen voor de gebruiker die Adobe Campaign gebruikt om verbinding te maken met de Teradata-database via de volgende query:
+Adobe Campaign stelt geen beveiligingsmodus (fallback) in voor de objecten die worden gemaakt in de database. Mogelijk moet u een standaard instellen voor de gebruiker die Adobe Campaign gebruikt om verbinding te maken met de Teradata-database met behulp van de volgende query:
 
 | standaard fallback uitschakelen |
 | :-: |
@@ -259,7 +261,7 @@ Voor de installatie van het stuurprogramma is het volgende vereist:
 
 * Teradata ODBC-stuurprogramma, te vinden in dit [page](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
 
-* Gereedschappen en hulpprogramma&#39;s voor teradata (gebruikt voor bulkload), die in deze handleiding te vinden zijn [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* Gereedschappen en hulpprogramma&#39;s voor teradata (gebruikt voor bulkload), die in deze handleiding staan [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
 
 Bestandsnamen en sha1:
 
@@ -291,11 +293,11 @@ Gereedschappen installeren:
 
 1. Extraheer het bestand TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz.
 
-1. Ga naar de map TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tdicu.
+1. Ga naar de map TeradataToolsAndUtilitiesBase/Linux/i386-x864/tdicu.
 
 1. Voer setup_wrapper.sh uit.
 
-1. Ga naar de map TeradataToolsAndUtilitiesBase/Linux/i386-x8664/cliv2.
+1. Ga naar de map TeradataToolsAndUtilitiesBase/Linux/i386-x864/cliv2.
 
 1. Voer setup_wrapper.sh uit.
 
@@ -311,13 +313,13 @@ U moet eerst Teradata Tools en Hulpprogramma&#39;s voor Vensters downloaden. U k
 
 Zorg ervoor dat u het ODBC-stuurprogramma en de Teradata Parallel Transporter Base installeert. Het zal telapi.dll installeren die wordt gebruikt om bulklading op het gegevensbestand van Teradata te doen.
 
-Zorg ervoor dat het pad van het stuurprogramma en de hulpprogramma&#39;s zich in de PATH-variabele bevindt die de server tijdens de uitvoering zal hebben. Standaard is het pad C:\Program Files (x86)\Teradata\Client\15.10\bin on Windows 32 bits or C:\Program Files\Teradata\Client\15.10\bin on 64 bit).
+Zorg ervoor dat het pad van het stuurprogramma en de hulpprogramma&#39;s zich in de PATH-variabele bevindt die de server tijdens de uitvoering zal hebben. Standaard is het pad C:\Program Files (x86)\Teradata\Client\15.10\bin op Windows 32 bits of C:\Program Files\Teradata\Client\15.10\bin op 64 bits).
 
 ## Tijdzone {#timezone}
 
 Teradata gebruikt de naam van de tijdzone die niet standaard is, kunt u de lijst in de [Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign probeert de tijdzone die in de externe configuratie is opgegeven om te zetten in iets wat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
 
-De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory DataGrid moet bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
+De conversie is voltooid en er wordt een bestand met de naam teradata_timezones.txt gelezen dat zich in de volgende gegevensmap moet bevinden: /usr/local/neolane/nl6/datakit onder Linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
 
 De tijdzone die wordt gebruikt om te verbinden zal worden vermeld wanneer het runnen van nlserver met - verbose schakelaar, bijvoorbeeld:
 

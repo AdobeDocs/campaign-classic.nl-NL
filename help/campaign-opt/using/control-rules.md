@@ -2,13 +2,13 @@
 product: campaign
 title: Controleregels
 description: Controleregels
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 1%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 ## Regels inzake analyse en arbitrage {#analysis-and-arbitration-control-rules}
 
-Met de controleregels kunt u de geldigheid en kwaliteit van berichten vóór levering garanderen: tekenweergave, SMS-grootte, adresnotatie, enz.
+Met besturingsregels kunt u de geldigheid en kwaliteit van berichten vóór levering garanderen: weergave van tekens, grootte van SMS, adresindeling, enzovoort.
 
 Met een set regels voor verduistering kunt u gebruikelijke controles uitvoeren. Deze controles (die in vette letters in de interface worden getoond) zijn:
 
-* **[!UICONTROL Object approval]** (e-mail): controleert dat het afzendervoorwerp en het adres geen speciale karakters bevatten die problemen op bepaalde postagenten kunnen veroorzaken.
-* **[!UICONTROL URL label approval]** (e-mail): controleert of elke URL die het bijhouden van een URL uitvoert, een label heeft.
-* **[!UICONTROL URL approval]** (e-mail): Hiermee controleert u de URL&#39;s die worden gevolgd (aanwezigheid van het teken &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (mobiel): controleert de grootte van SMS-berichten.
+* **[!UICONTROL Object approval]** (e-mail): hiermee wordt gecontroleerd of het verzendingsobject en -adres geen speciale tekens bevatten die problemen kunnen veroorzaken bij bepaalde e-mailagents.
+* **[!UICONTROL URL label approval]** (e-mail): hiermee wordt gecontroleerd of elke URL die de gegevens bijhoudt een label heeft.
+* **[!UICONTROL URL approval]** (e-mail): hiermee controleert u de URL&#39;s die worden gevolgd (aanwezigheid van het teken &quot;&amp;&quot;).
+* **[!UICONTROL Message size approval]** (mobiel): hiermee wordt de grootte van SMS-berichten gecontroleerd.
 * **[!UICONTROL Validity period check]** (e-mail): controleert of de geldigheidsperiode van de levering lang genoeg is om alle berichten te verzenden.
 * **[!UICONTROL Proof size check]** (alle kanalen): genereert een foutbericht als de proefdoelpopulatie groter is dan 100 ontvangers.
-* **[!UICONTROL Wave scheduling check]** (e-mail): controleert of de laatste leveringsgolf volgens de planning vóór het einde van de geldigheidsperiode zal beginnen, als de levering in verschillende golven is opgesplitst.
-* **[!UICONTROL Unsubscription link approval]** (e-mail): controleert of er ten minste één niet-abonnements-URL (opt-out) in elke inhoud (HTML en Tekst) aanwezig is.
+* **[!UICONTROL Wave scheduling check]** (e-mail): hiermee wordt gecontroleerd of de laatste leveringsgolf moet beginnen vóór het einde van de geldigheidsperiode als de levering in verschillende golven is opgesplitst.
+* **[!UICONTROL Unsubscription link approval]** (e-mail): controleert of er ten minste één niet-abonnements-URL (opt-out) aanwezig is in elke inhoud (HTML en Tekst).
 
 ## Een besturingsregel maken {#creating-a-control-rule}
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit:
 
    ![](assets/campaign_opt_create_control_03.png)
 
-1. Tijdens leveringsanalyse, wordt de regel toegepast en een waarschuwing gecreeerd indien toepasselijk.
+1. Tijdens leveringsanalyse, wordt de regel toegepast en een waarschuwing gecreeerd indien van toepassing.
 
    ![](assets/campaign_opt_create_control_04.png)
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Migratie naar Public Cloud
 description: Meer informatie over Campaign Classic-migratie naar openbare cloud
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1540'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 ### Verklarende woordenlijst
 
-* **Upgrade maken** - Wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het nieuwste beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke&#39; en &#39;kleine&#39; build-niveau staan. Bijvoorbeeld: Campagne versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer informatie](../../platform/using/faq-build-upgrade.md).
+* **Upgrade maken** - Wanneer de Adobe Campaign Classic-software wordt bijgewerkt naar het nieuwste beveiligde buildnummer, blijft de software op hetzelfde niveau voor &#39;belangrijke&#39; en &#39;kleine&#39; build-niveau staan. Bijvoorbeeld: Campaign versie 7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Meer informatie](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Servers voor het uitvoeren van berichten die worden gehost op Adobe Cloud (MID voor batchcampagnes en RT voor realtime eenheidsberichten)
 * **Jaarlijks upgradeprogramma** - dit programma biedt betere veiligheid, betere ondersteuning, beter onderhoud en meer stabiliteit. Het maakt toekomstige verbeteringen gemakkelijker en verleent toegang tot nieuwe mogelijkheden in Campagne.  [Meer informatie](../../rn/using/rn-overview.md#yearly-upgrade).
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
@@ -38,7 +38,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 
 >[!NOTE]
->Campaign Classic v7-migratie naar openbare cloud is van invloed op klanten die **Beheerde services van Adobe** alleen.
+>De migratie van Campaign Classic v7 naar Public Cloud is van invloed op klanten die **Beheerde services van Adobe** alleen.
 
 
 ## Voordelen
@@ -121,7 +121,7 @@ Adobe handelt de meeste acties af. We hebben u nodig voor validatie en aftekenin
 
 **Database**
 
-De database wordt uit het oude datacenter verwijderd en hersteld in Public Cloud (AWS). Wanneer u de toepassing opnieuw start in het nieuwe datacenter, wordt deze hervat in de toestand die deze was voordat de toepassing werd afgesloten. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn.
+De database wordt uit het oude datacenter verwijderd en hersteld in Public Cloud (AWS). Wanneer u de toepassing opnieuw start in het nieuwe datacenter, wordt deze hervat in de toestand die deze was voordat de toepassing werd afgesloten. De gebruikers zullen geen verschil zien, behalve dat zullen sommige geplande taken vertraagd zijn geweest.
 
 **IP&#39;s verzenden via e-mail**
 
@@ -144,9 +144,9 @@ Bestaande campagnemeservers (containers in feite) worden verplaatst naar de Publ
 
 **Servernamen**
 
-Onder het subdomein of subdomeinen dat/die wordt/worden gebruikt voor marketingcommunicatie: blijft hetzelfde. Afhankelijk van de implementatie kunnen er echter acties aan de clientzijde nodig zijn:
+Onder het subdomein(en) dat (die) wordt (worden) gebruikt voor marketingcommunicatie: blijft hetzelfde. Afhankelijk van de implementatie kunnen er echter acties aan de clientzijde nodig zijn:
 
-* In het geval van subdomeindelegatie (normaal geval) zorgt Adobe voor alle wijzigingen en zorgt hij voor een naadloze overgang
+* In het geval van subdomeindelegatie (normaal geval) zorgt Adobe voor alle wijzigingen en voor een naadloze overgang
 * In het geval van opstelling CNAME (uitzondering), zal de cliënt worden gevraagd om veranderingen uit te voeren. Coördinatie met Adobe is nodig.
 
 Voor gebruikerstoegang en gegevensintegratie blijven de namen onder neolane.net ongewijzigd.
@@ -186,16 +186,16 @@ We raden u aan alle uitvoeringen te vertragen en idealiter te pauzeren vlak voor
 
 **Tijdens de migratie**
 
-Tijdens de migratie blijft slechts één service functioneel: e-mailkoppelingen worden omgeleid. Met andere woorden, ontvangers kunnen de bestemmingspagina bereiken wanneer ze in een e-mail klikken. Deze kliks worden echter niet opgenomen, dus klik voor de leveringen die kort voor de migratie zijn gestart op een lagere snelheid dan normaal.
+Tijdens de migratie blijft slechts één service actief: e-mailkoppelingen worden omgeleid. Met andere woorden, ontvangers kunnen de bestemmingspagina bereiken wanneer ze in een e-mail klikken. Deze kliks worden echter niet opgenomen, dus klik voor de leveringen die kort voor de migratie zijn gestart op een lagere snelheid dan normaal.
 
 **Opnieuw starten**
 
 Nadat de toepassing naar de nieuwe omgeving is gemigreerd, wordt de toepassing geleidelijk opnieuw gestart:
 
 * Eerste consoletoegang, zodat kunnen de gebruikers de status controleren zonder om het even wat actief nog loopt
-* Dan, werkschema&#39;s en leveranties
+* Vervolgens workflows en leveringen
 
-### Na migratie
+### Na de migratie
 
 **Verwijderen van instanties in het verouderde datacenter**
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Integratie met workflows voor Adobe Experience Cloud-oplossingen
 description: Meer informatie over workflows voor integratie met Adobe Experience Cloud-oplossingen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Workflows, Audiences, People Core Service Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 topic-tags: technical-workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '116'
 ht-degree: 8%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Integratie met de Adobe Experience Cloud** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
+De hieronder beschreven workflows worden geïnstalleerd met de **Integratie met de Adobe Experience Cloud** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 

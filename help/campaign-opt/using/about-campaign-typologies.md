@@ -2,12 +2,12 @@
 product: campaign
 title: Campagnetypologieën
 description: Campagnetypologieën
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '475'
 ht-degree: 18%
 
 ---
@@ -27,9 +27,9 @@ De Optimalisering van de campagne is de module van Adobe Campaign die u de verze
 Met Adobe Campaign kunt u vier typen typologische regels ontwerpen en toepassen:
 
 * **Filteren** regels waarmee u een deel van het doel kunt uitsluiten op basis van criteria. Raadpleeg voor meer informatie hierover [Filterregels](filtering-rules.md).
-* **Druk** regels die u in staat stellen om vermoeidheid bij het in de handel brengen te beheersen. Raadpleeg voor meer informatie hierover [Drukvoorschriften](pressure-rules.md).
+* **Druk** regels die u in staat stellen om vermoeidheid bij het in de handel brengen te beheersen. Raadpleeg voor meer informatie hierover [Regels voor druk](pressure-rules.md).
 * **Capaciteit** regels waarmee u de belasting kunt beperken om optimale verwerkingsomstandigheden te garanderen. Raadpleeg voor meer informatie hierover [Beheerscapaciteit](consistency-rules.md#controlling-capacity).
-* **Control** regels waarmee u de geldigheid van berichten kunt controleren voordat deze worden verzonden. Raadpleeg voor meer informatie hierover [Controlevoorschriften](control-rules.md).
+* **Besturing** regels waarmee u de geldigheid van berichten kunt controleren voordat deze worden verzonden. Raadpleeg voor meer informatie hierover [Controlevoorschriften](control-rules.md).
 
 Zodra zij zijn gecreeerd, worden de typologieregels gegroepeerd in campagnetypologieën die in leveringen van verwijzingen worden voorzien. Zie [Typologieën toepassen](#applying-typologies).
 
@@ -53,7 +53,7 @@ De stappen voor het maken en toepassen van een typologie voor uw leveringen word
 
 1. Maak een typologie en verwijs naar de regels die u erin hebt gemaakt.
 
-   Via de **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** knooppunt.
+   De typologieën zijn toegankelijk via **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** knooppunt.
 
 1. Vorm uw levering om de typologie te gebruiken u creeerde. Raadpleeg [deze sectie](applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
 1. Test en controleer het gedrag door campagnesimulaties. Raadpleeg voor meer informatie over campagnesimulaties [deze sectie](campaign-simulations.md).

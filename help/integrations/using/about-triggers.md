@@ -2,21 +2,22 @@
 product: campaign
 title: Informatie over Adobe Experience Cloud-triggers
 description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '269'
 ht-degree: 7%
 
 ---
 
 # Werken met campagne- en Experience Cloud-triggers{#about-adobe-experience-triggers}
 
-[!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics die de pijpleiding gebruikt. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
+[!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics door middel van de pijpleiding. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
 
 >[!CAUTION]
 >
@@ -37,4 +38,4 @@ De [!DNL pipelined] -proces wordt altijd uitgevoerd op de Adobe Campaign-marketi
 
 De [!DNL pipelined] proces meldt zich aan bij de Experience Cloud gebruikend de authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
 
-Voor meer informatie over authentificatie, verwijs naar dit [page](../../integrations/using/configuring-adobe-io.md).
+Raadpleeg deze voor meer informatie over verificatie [page](../../integrations/using/configuring-adobe-io.md).

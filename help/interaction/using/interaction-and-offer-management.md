@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Interaction- en aanbiedingenbeheer
-description: Leer hoe u de beste voorstellen naar uw contactpersonen kunt sturen op basis van subsidiabiliteitsregels
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Leer hoe u de beste voorstellen naar uw contactpersonen kunt sturen op basis van geschiktheidsregels
 feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
+source-wordcount: '296'
+ht-degree: 7%
 
 ---
 
@@ -34,4 +34,4 @@ Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de rege
 |---|---|
 | [Interactie-implementatiestappen](../../interaction/using/implementation-steps.md) | [Distributie van testaanbiedingen](../../interaction/using/about-offers-simulation.md) |
 | [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) | [Een voorstel toevoegen in een e-mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Aanbiedingsplaatsingen maken](../../interaction/using/creating-offer-spaces.md) | [Hoofdlettergebruik: een aanbieding toevoegen aan een website](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Aanbiedingsplaatsingen maken](../../interaction/using/creating-offer-spaces.md) | [Kwestie gebruiken: een voorstel toevoegen aan een website](../../interaction/using/offers-on-an-inbound-channel.md) |

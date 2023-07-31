@@ -2,14 +2,14 @@
 product: campaign
 title: Interface van de contenteditor
 description: Interface van de contenteditor
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -23,9 +23,9 @@ Het DCE-bewerkingsvenster is onderverdeeld in drie verschillende secties. Hierme
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. De **top** is een weergavegebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg voor meer informatie hierover [HTML-inhoudsstatus](content-editing-best-practices.md#html-content-statuses).
-1. De sectie naar de **left** van het venster is het gebied voor het bewerken van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. Zie voor meer informatie [Formulieren bewerken](editing-content.md#editing-forms).
-1. De sectie naar de **right** van het venster is het regelpaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: Voeg een rand toe, verbind een gegevensbestandgebied met een inputstreek, toegang Web-pagina eigenschappen, enz. Raadpleeg voor meer informatie de [Algemene opties](#global-options) en [Inhoud bewerken](editing-content.md) secties.
+1. De **top** is een weergavegebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg voor meer informatie hierover [HTML-inhoudsstatussen](content-editing-best-practices.md#html-content-statuses).
+1. De sectie naar de **left** van het venster is het gebied voor het bewerken van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks communiceren met de inhoud via de pop-upwerkbalk: een koppeling invoegen in een afbeelding, het lettertype wijzigen, een veld verwijderen, enzovoort. Zie voor meer informatie [Formulieren bewerken](editing-content.md#editing-forms).
+1. De sectie naar de **right** van het venster is het regelpaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: een rand toevoegen, een databaseveld koppelen aan een invoerzone, webpagina-eigenschappen voor toegang enzovoort. Raadpleeg voor meer informatie de [Algemene opties](#global-options) en [Inhoud bewerken](editing-content.md) secties.
 
 ## Algemene opties {#global-options}
 
@@ -41,33 +41,33 @@ Het heeft vier pictogrammen:
 
 * De **Een andere inhoud kiezen** kan de gebruiker nieuwe inhoud uit een sjabloon laden (bestaande sjabloon of een sjabloon die buiten het vak valt).
 
-   ![](assets/dce_popup_templatechoice.png)
+  ![](assets/dce_popup_templatechoice.png)
 
-   >[!CAUTION]
-   >
-   >De geselecteerde inhoud vervangt de huidige inhoud.
+  >[!CAUTION]
+  >
+  >De geselecteerde inhoud vervangt de huidige inhoud.
 
-* De **Opslaan als sjabloon** kunt u de huidige inhoud opslaan als een sjabloon. U moet het label en de interne naam voor de sjabloon invoeren. Sjablonen worden opgeslagen in de **[!UICONTROL Resources > Templates > Content templates]** knooppunt.
+* De **Opslaan als sjabloon** kunt u de huidige inhoud opslaan als een sjabloon. U moet het label en de interne naam voor de sjabloon invoeren. Sjablonen worden opgeslagen in het dialoogvenster **[!UICONTROL Resources > Templates > Content templates]** knooppunt.
 
-   ![](assets/dce_popup_savetemplate.png)
+  ![](assets/dce_popup_savetemplate.png)
 
-   Nadat de sjabloon is opgeslagen, is deze beschikbaar en kan deze worden geselecteerd bij het maken van nieuwe inhoud.
+  Nadat de sjabloon is opgeslagen, is deze beschikbaar en kan deze worden geselecteerd bij het maken van nieuwe inhoud.
 
-   ![](assets/dce_create_fromtemplate.png)
+  ![](assets/dce_create_fromtemplate.png)
 
 * De **Pagina-eigenschappen** kunt u inhoudsgegevens boven aan de pagina HTML selecteren.
 
-   ![](assets/dce_popup_headerhtml.png)
+  ![](assets/dce_popup_headerhtml.png)
 
-   >[!NOTE]
-   >
-   >Deze informatie komt overeen met de **`<title>`** en **`<meta>`** HTML-tags op de pagina.
-   >
-   >De sleutelwoorden moeten door komma&#39;s worden gescheiden.
+  >[!NOTE]
+  >
+  >Deze informatie komt overeen met de **`<title>`** en **`<meta>`** HTML-tags op de pagina.
+  >
+  >De sleutelwoorden moeten door komma&#39;s worden gescheiden.
 
 ## Blokopties {#block-options}
 
-In de sectie rechts van de editor worden de belangrijkste opties gegroepeerd waarmee u op de inhoud kunt reageren. Als u deze opties wilt weergeven, moet u een blok selecteren: de aard van deze opties is afhankelijk van het geselecteerde blok.
+In de sectie rechts van de editor worden de belangrijkste opties gegroepeerd waarmee u op de inhoud kunt reageren. Als u deze opties wilt weergeven, moet u een blok selecteren. De aard van deze opties is afhankelijk van het geselecteerde blok.
 
 ![](assets/dce_right_section.png)
 

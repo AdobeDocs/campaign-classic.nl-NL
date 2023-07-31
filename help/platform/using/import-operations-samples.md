@@ -2,15 +2,16 @@
 product: campaign
 title: Voorbeelden van algemene importactiviteiten
 description: Meer informatie over generieke importbewerkingen die u kunt uitvoeren met importtaken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -42,7 +43,7 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
 1. Het importeren starten
 
-   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om te beginnen met het importeren van de lijst.
+   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om de lijst te importeren.
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -53,7 +54,7 @@ Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvanger
 1. Een sjabloon kiezen
 
    * Klik op de startpagina van Adobe Campaign op de knop **[!UICONTROL Profiles and targets]** koppeling, dan **[!UICONTROL Jobs]**. Klik boven de lijst met taken op **[!UICONTROL New import]**.
-   * De **[!UICONTROL New text import]** sjabloon standaard geselecteerd.
+   * Houd de **[!UICONTROL New text import]** sjabloon standaard geselecteerd.
    * Wijzig het label en de beschrijving.
    * Selecteer **[!UICONTROL Simple import]**.
    * De standaardtaakmap behouden.
@@ -74,33 +75,33 @@ Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvanger
 1. Afstemming
 
    * Ga naar de **Ontvangers (nms:ontvanger)** tabel.
-   * Selecteer **[!UICONTROL Insertion]** en laat de standaardwaarden in de andere velden staan.
+   * Selecteer de **[!UICONTROL Insertion]** en laat de standaardwaarden in de andere velden staan.
 
-      ![](assets/s_ncs_user_import_example04_01.png)
+     ![](assets/s_ncs_user_import_example04_01.png)
 
 1. Ontvangers importeren
 
    * Geef indien nodig een map op waarin de records moeten worden geïmporteerd.
 
-      ![](assets/s_ncs_user_import_example05_01.png)
+     ![](assets/s_ncs_user_import_example05_01.png)
 
 1. Het importeren starten
 
    * Klik op **[!UICONTROL Start]**.
 
-      In het centrale gedeelte van de editor kunt u controleren of de importbewerking is voltooid en het aantal verwerkte records weergeven.
+     In het centrale gedeelte van de editor kunt u controleren of de importbewerking is voltooid en het aantal verwerkte records weergeven.
 
-      ![](assets/s_ncs_user_import_example06_01.png)
+     ![](assets/s_ncs_user_import_example06_01.png)
 
-      De **[!UICONTROL Tracking]** in de modus kunt u de details van de import bijhouden voor elke record in het bronbestand. Om dit te doen, van de homepage klik **[!UICONTROL Profiles and Targets]** dan **[!UICONTROL Processes]**, selecteert u de desbetreffende importbewerking en zoekt u de **[!UICONTROL General]**, **[!UICONTROL Journal]** en **[!UICONTROL Rejects]** tabs.
+     De **[!UICONTROL Tracking]** in de modus kunt u de details van de import bijhouden voor elke record in het bronbestand. Om dit te doen, van de homepage klik **[!UICONTROL Profiles and Targets]** dan **[!UICONTROL Processes]**, selecteert u de desbetreffende importbewerking en zoekt u de **[!UICONTROL General]**, **[!UICONTROL Journal]** en **[!UICONTROL Rejects]** tabs.
 
       * Voortgang van importeren controleren
 
-         ![](assets/s_ncs_user_import_example07_01.png)
+        ![](assets/s_ncs_user_import_example07_01.png)
 
       * Procesweergave voor elke record
 
-         ![](assets/s_ncs_user_import_example07_02.png)
+        ![](assets/s_ncs_user_import_example07_02.png)
 
 ## Ontvangers bijwerken en invoegen {#example--update-and-insert-recipients}
 
@@ -128,19 +129,19 @@ We willen bestaande records in de database bijwerken en nieuwe records maken van
    * De optie behouden **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** -modus, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
    * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL Name]** en **[!UICONTROL Company]** en een verzoeningssleutel aan hen toewijzen.
 
-      ![](assets/s_ncs_user_import_example04_02.png)
+     ![](assets/s_ncs_user_import_example04_02.png)
 
 1. Het importeren starten
 
    * Klik op **[!UICONTROL Start]**.
 
-      In het venster Tekstspatiëring kunt u controleren of het importeren is gelukt en het aantal verwerkte records weergeven.
+     In het venster Tekstspatiëring kunt u controleren of het importeren is gelukt en het aantal verwerkte records weergeven.
 
-      ![](assets/s_ncs_user_import_example06_02.png)
+     ![](assets/s_ncs_user_import_example06_02.png)
 
    * Kijk in de ontvankelijke lijst om te controleren dat de verslagen door deze verrichting zijn gewijzigd.
 
-      ![](assets/s_ncs_user_import_example06_03.png)
+     ![](assets/s_ncs_user_import_example06_03.png)
 
 ## De waarden uitbreiden met die van een extern bestand {#example--enrich-the-values-with-those-of-an-external-file}
 
@@ -148,13 +149,13 @@ Wij willen bepaalde gebieden in een gegevensbestandlijst van een tekstdossier wi
 
 In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een waarde hebben, terwijl de bijbehorende velden in de database leeg zijn. Andere velden bevatten een andere waarde dan de waarde in de database.
 
-* Inhoud van het tekstbestand dat moet worden geïmporteerd.
+* Inhoud van het te importeren tekstbestand.
 
-   ![](assets/s_ncs_user_import_example02_03.png)
+  ![](assets/s_ncs_user_import_example02_03.png)
 
 * Databasestatus voor importeren
 
-   ![](assets/s_ncs_user_import_example06_04.png)
+  ![](assets/s_ncs_user_import_example06_04.png)
 
 Voer de volgende stappen uit:
 
@@ -174,14 +175,14 @@ Voer de volgende stappen uit:
 
 1. Afstemming
 
-   * Ga naar de tabel en selecteer de **[!UICONTROL Update]** bewerking.
+   * Ga naar de tabel en selecteer de **[!UICONTROL Update]** -bewerking.
    * Selecteer de optie **[!UICONTROL Reject entity]** voor de **[!UICONTROL Management of doubles]** veld.
    * De optie behouden **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** -modus, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
-   * Plaats de cursor op de **[!UICONTROL Last name (@lastName)]** en selecteer de **[!UICONTROL Update only if destination is empty]** optie.
+   * Plaats de cursor op de **[!UICONTROL Last name (@lastName)]** en selecteer de **[!UICONTROL Update only if destination is empty]** -optie.
    * Deze bewerking herhalen voor de **[!UICONTROL Company (@company)]** knooppunt.
    * Een afstemmingssleutel toewijzen aan de velden **[!UICONTROL Birth date]**, **[!UICONTROL Email]** en **[!UICONTROL First name]**.
 
-      ![](assets/s_ncs_user_import_example04_03.png)
+     ![](assets/s_ncs_user_import_example04_03.png)
 
 1. Het importeren starten
 
@@ -199,13 +200,13 @@ We willen bepaalde velden in een databasetabel wijzigen vanuit een tekstbestand,
 
 In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde hebben, terwijl de bijbehorende velden in de database niet leeg zijn. Andere velden bevatten een andere waarde dan de velden in de database.
 
-* Inhoud van het tekstbestand dat moet worden geïmporteerd.
+* Inhoud van het te importeren tekstbestand.
 
-   ![](assets/s_ncs_user_import_example02_04.png)
+  ![](assets/s_ncs_user_import_example02_04.png)
 
 * Databasestatus voor importeren
 
-   ![](assets/s_ncs_user_import_example06_07.png)
+  ![](assets/s_ncs_user_import_example06_07.png)
 
 1. Een sjabloon kiezen
 
@@ -229,13 +230,13 @@ In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde 
    * Plaats de cursor op de **[!UICONTROL Account number (@account)]** en selecteer de optie **[!UICONTROL Take empty values into account]**.
    * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL Email]** en **[!UICONTROL First name]** en een verzoeningssleutel aan hen toewijzen.
 
-      ![](assets/s_ncs_user_import_example04_04.png)
+     ![](assets/s_ncs_user_import_example04_04.png)
 
 1. Het importeren starten
 
    * Klik op **[!UICONTROL Start]**.
    * Kijk in de ontvankelijke lijst om te controleren dat de verslagen door de verrichting zijn gewijzigd.
 
-      ![](assets/s_ncs_user_import_example06_06.png)
+     ![](assets/s_ncs_user_import_example06_06.png)
 
-      De waarden van het tekstbestand die leeg waren, hebben de waarden in de database overschreven. De bestaande waarden in de database zijn bijgewerkt met die in het importbestand overeenkomstig de **[!UICONTROL Update]** geselecteerd voor duplicaten in stap 4.
+     De waarden van het tekstbestand die leeg waren, hebben de waarden in de database overschreven. De bestaande waarden in de database zijn bijgewerkt met die in het importbestand overeenkomstig de **[!UICONTROL Update]** geselecteerd voor duplicaten in stap 4.

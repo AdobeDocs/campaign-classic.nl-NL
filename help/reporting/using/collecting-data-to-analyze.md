@@ -2,13 +2,13 @@
 product: campaign
 title: Gegevens verzamelen om te analyseren
 description: Gegevens verzamelen om te analyseren
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 4%
 
 ---
 
@@ -42,9 +42,9 @@ In het volgende voorbeeld kunt u het aantal ontvangers voor elk land verzamelen,
 
 ## Een geïmporteerde lijst gebruiken {#using-an-imported-list}
 
-Als u een rapport wilt maken, kunt u gegevens uit een lijst met geïmporteerde gegevens gebruiken.
+Om een rapport te creëren, kunt u gegevens van een lijst van ingevoerde gegevens gebruiken.
 
-Selecteer hiervoor de optie **[!UICONTROL Use an imported list]** in het vraagvakje en selecteer de betrokken lijst.
+Selecteer de optie **[!UICONTROL Use an imported list]** in het vraagvakje en selecteer de betrokken lijst.
 
 ![](assets/reporting_query_from_list.png)
 
@@ -56,7 +56,7 @@ Het is mogelijk om een kubus voor het bepalen van de vraag te selecteren.
 
 ![](assets/reporting_query_from_cube.png)
 
-Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en tegelijkertijd de configuratie van rapporten en tabellen voor eindgebruikers vereenvoudigen: Selecteer eenvoudig een bestaande, volledig gevormde kubus en gebruik zijn berekeningen, maatregelen en statistieken. Voor meer informatie over het maken van kubussen raadpleegt u [deze sectie](../../reporting/using/ac-cubes.md).
+Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en de configuratie van rapporten en tabellen voor eindgebruikers eenvoudiger maken: selecteer gewoon een bestaande, volledig geconfigureerde kubus en gebruik de berekeningen, maatregelen en statistieken ervan. Voor meer informatie over het maken van kubussen raadpleegt u [deze sectie](../../reporting/using/ac-cubes.md).
 
 Klik op de knop **[!UICONTROL Edit query...]** en selecteer de indicatoren die u in uw rapport wilt tonen of gebruiken.
 

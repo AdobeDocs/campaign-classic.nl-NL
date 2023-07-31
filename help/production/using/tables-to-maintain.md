@@ -2,16 +2,17 @@
 product: campaign
 title: Tabellen om te onderhouden
 description: Tabellen om te onderhouden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +49,7 @@ De volgende lijst bevat slechts de lijsten het meest onderworpen aan fragmentati
    <td> NmsDeliveryPart<br /> </td> 
    <td> Normaal<br /> </td> 
    <td> Invoegingen, updates, verwijderingen<br /> </td> 
-   <td> Werkentabel waarin records worden ingevoegd tijdens de voorbereiding van de levering. Deze worden vervolgens tijdens de levering bijgewerkt en worden definitief verwijderd zodra de levering is voltooid.<br /> Deze tabel lijkt snel te fragmenteren, ook al is de gemiddelde grootte tamelijk beperkt.<br /> </td> 
+   <td> Werkentabel waarin records worden ingevoegd tijdens de voorbereiding van de levering. Deze worden vervolgens tijdens de levering bijgewerkt en worden ten slotte verwijderd zodra de levering is voltooid.<br /> Deze tabel lijkt snel te fragmenteren, ook al is de gemiddelde grootte tamelijk beperkt.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
@@ -120,7 +121,7 @@ De volgende lijst bevat slechts de lijsten het meest onderworpen aan fragmentati
    <td> NmsBroadLogMid (op een mid-sourcing-instantie)<br /> </td> 
    <td> Groot<br /> </td> 
    <td> Invoegingen, updates, verwijderingen<br /> </td> 
-   <td> Alleen wanneer de 5.10-instantie (of hoger) wordt gebruikt als een mid-sourcing-instantie. Dit is een van de grootste tabellen in de database. Er is één verslag per verzonden bericht, en deze verslagen worden opgenomen, bijgewerkt om de leveringsstatus te volgen, en geschrapt wanneer de geschiedenis wordt gezuiverd. Als u gebruik maakt van mid-sourcing, wordt aanbevolen de geschiedenis te beperken (meestal minder dan twee maanden). Deze tabel blijft dus redelijk qua grootte (minder dan 30 Go voor 60 miljoen rijen, data+index), maar het is van tijd tot tijd belangrijk om de tabel opnieuw op te bouwen. <br /> </td> 
+   <td> Alleen wanneer de instantie 5.10 (of hoger) wordt gebruikt als een instantie voor midsourcing. Dit is een van de grootste tabellen in de database. Er is één verslag per verzonden bericht, en deze verslagen worden opgenomen, bijgewerkt om de leveringsstatus te volgen, en geschrapt wanneer de geschiedenis wordt gezuiverd. Als u gebruik maakt van mid-sourcing, wordt aanbevolen de geschiedenis te beperken (meestal minder dan twee maanden). Deze tabel blijft dus redelijk qua grootte (minder dan 30 Go voor 60 miljoen rijen, data+index), maar het is van tijd tot tijd belangrijk om de tabel opnieuw op te bouwen. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogRcp (wanneer de tabel NmsRecipient wordt gebruikt) <br /> </td> 

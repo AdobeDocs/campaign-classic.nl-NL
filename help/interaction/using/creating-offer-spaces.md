@@ -2,14 +2,15 @@
 product: campaign
 title: Aanbiedingsplaatsingen maken
 description: Aanbiedingsplaatsingen maken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
@@ -61,7 +62,7 @@ Pas het volgende proces toe om een nieuwe aanbiedingsruimte te maken:
 
 1. Klikken **[!UICONTROL Edit functions]** om een renderfunctie te maken.
 
-   Deze functies worden gebruikt om aanbiedingsvertegenwoordiging op een aanbiedingsruimte te produceren. Er zijn verschillende mogelijke indelingen: HTML of tekst voor uitgaande interacties en XML voor binnenkomende interacties.
+   Deze functies worden gebruikt om aanbiedingsvertegenwoordiging op een aanbiedingsruimte te produceren. Er zijn verschillende mogelijke indelingen: HTML of tekst voor uitgaande interactie en XML voor binnenkomende interactie.
 
    ![](assets/offer_space_create_006.png)
 
@@ -80,7 +81,7 @@ Een aanbiedingsvoorstel kan verschillende statussen hebben afhankelijk van de in
 >
 >De status van het voorstel wordt niet onmiddellijk bijgewerkt. Deze wordt uitgevoerd door de workflow voor het bijhouden van gegevens, die elk uur wordt geactiveerd.
 
-### Statuslijst {#status-list}
+### Status {#status-list}
 
 De interactie komt met de volgende waarden die kunnen worden gebruikt om de status van een aanbiedingsvoorstel te kwalificeren:
 
@@ -91,7 +92,7 @@ De interactie komt met de volgende waarden die kunnen worden gebruikt om de stat
 * **[!UICONTROL Presented]**.
 * **[!UICONTROL Rejected]**.
 
-Deze waarden worden niet standaard toegepast: zij moeten worden gevormd.
+Deze waarden worden niet standaard toegepast: ze moeten worden geconfigureerd.
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ Deze waarden worden niet standaard toegepast: zij moeten worden gevormd.
 
 ### De status configureren wanneer het voorstel wordt gemaakt {#configuring-the-status-when-the-proposition-is-created}
 
-Wanneer een aanbiedingsvoorstel door de interactiemotor wordt gecreeerd wordt zijn status veranderd, of het een binnenkomende of een uitgaande interactie is. De keuze tussen deze twee waarden is afhankelijk van de manier waarop de aanbiedingsruimten zijn geconfigureerd in het dialoogvenster **[!UICONTROL Design]** milieu
+Wanneer een aanbiedingsvoorstel door de interactiemotor wordt gecreeerd wordt zijn status veranderd, of het een binnenkomende of een uitgaande interactie is. De keuze tussen deze twee waarden hangt af van de manier waarop de aanbiedingsruimten in de **[!UICONTROL Design]** milieu
 
 Voor elke ruimte, kunt u de status vormen u wilt toepassen wanneer een voorstel wordt gecreeerd, afhankelijk van de informatie u in de aanbiedingsrapporten wilt tonen.
 
@@ -123,13 +124,13 @@ Hiervoor gebruikt u het volgende proces:
 
 **Binnenkomende interactie**
 
-De **[!UICONTROL Storage]** kunt u statussen definiëren voor **voorgesteld** en **aanvaard** alleen voorstellen. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld als een voorstel voor een aanbieding wordt afgewezen.
+De **[!UICONTROL Storage]** kunt u statussen definiëren voor **voorgesteld** en **aanvaard** alleen voorstellen. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld wanneer een voorstel voor een aanbieding wordt afgewezen.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-Bijvoorbeeld, het voorstel (herkenningsteken **40004**) die overeenkomt met de **Binnenlandse verzekering** voorstel weergegeven op de **Neobank** site bevat de volgende URL:
+Bijvoorbeeld, het voorstel (herkenningsteken **40004**) die overeenkomt met de **Thuisverzekering** voorstel weergegeven op de **Neobank** site bevat de volgende URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">

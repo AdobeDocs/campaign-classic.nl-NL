@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Extra SQL-functies toevoegen
-description: Meer informatie over het definiëren van extra SQL-functies
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Meer informatie over het definiëren van extra SQL-functie
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -27,11 +28,11 @@ Zodra deze functies zijn toegevoegd, zullen zij in de uitdrukkingsredacteur enke
 
 De functie(s) die moet worden toegevoegd, bevinden zich in een **&quot;package&quot;-bestand in XML-indeling**, waarvan de structuur in de volgende alinea nader wordt beschreven.
 
-Als u de toepassing vanuit de console wilt installeren, selecteert u de **Gereedschappen/Geavanceerd/Importeren** opties in het menu, en vervolgens **[!UICONTROL Install from file]** en volgt u de instructies in de wizard Importeren.
+Als u de toepassing vanuit de console wilt installeren, selecteert u de **Gereedschappen/Geavanceerd/Importeren** opties in het menu, en vervolgens de **[!UICONTROL Install from file]** en volgt u de instructies in de wizard Importeren.
 
 >[!IMPORTANT]
 >
->Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn ze pas bruikbaar als Adobe Campaign opnieuw is gestart.
+>Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn deze functies pas bruikbaar als Adobe Campaign opnieuw is gestart.
 
 ## Algemene structuur van het te importeren pakket {#general-structure-of-package-to-import}
 
@@ -66,20 +67,20 @@ De functie(s) die moet worden toegevoegd, vindt u in de **&quot;package&quot;-be
 * De **buildVersion** en **buildNumber** velden zijn verplicht. Ze moeten overeenkomen met het servernummer waarmee de console is verbonden. Deze informatie vindt u in het vak &quot;Help/Info&quot;.
 * de volgende blokken, **entiteiten** en **funclist** zijn verplicht. In funcList zijn de velden &quot;name&quot; en &quot;namespace&quot; verplicht, maar de gebruiker kan zelf beslissen welke naam hij of zij gebruikt en geven de functielijst op unieke wijze aan.
 
-   Dit betekent dat als een andere lijst met functies met dezelfde naamruimte/naamcombinatie (hier &quot;cus::myList&quot;) wordt geïmporteerd, de eerder geïmporteerde functies worden verwijderd. Omgekeerd geldt dat als u dit naamruimte-/naampaar wijzigt, de nieuwe reeks geïmporteerde functies wordt toegevoegd aan de vorige.
+  Dit betekent dat als een andere lijst met functies met dezelfde naamruimte/naamcombinatie (hier &quot;cus::myList&quot;) wordt geïmporteerd, de eerder geïmporteerde functies worden verwijderd. Omgekeerd geldt dat als u dit naamruimte-/naampaar wijzigt, de nieuwe reeks geïmporteerde functies wordt toegevoegd aan de vorige.
 
 * De **groep** Met een element kunt u de functiegroep opgeven waarin de geïmporteerde functie(s) worden weergegeven in de functie-editor. Het kenmerk @name kan een naam zijn die al bestaat (in welk geval de functies worden toegevoegd aan de desbetreffende groep) of een nieuwe naam (in welk geval de functie wordt weergegeven in een nieuwe groep).
 * Herinnering: mogelijke waarden voor het kenmerk @name in het dialoogvenster `<group>` element are:
 
-   ```
-     name="aggregate"      ( label="Aggregates"         )
-     name="string"             ( label="String"           )
-     name="date"               ( label="Date"             )
-     name="numeric"          ( label="Numeric"        )
-     name="geomarketing" ( label="Geomarketing"     )
-     name="other"              ( label="Others"           )
-     name="window"          ( label="Windowing functions" )
-   ```
+  ```
+    name="aggregate"      ( label="Aggregates"         )
+    name="string"             ( label="String"           )
+    name="date"               ( label="Date"             )
+    name="numeric"          ( label="Numeric"        )
+    name="geomarketing" ( label="Geomarketing"     )
+    name="other"              ( label="Others"           )
+    name="window"          ( label="Windowing functions" )
+  ```
 
 >[!IMPORTANT]
 >
@@ -108,24 +109,24 @@ De **@name** in het veld wordt de naam van de functie weergegeven en in het veld
 * **help** Dit is het veld dat onder aan het venster van de expressieeditor wordt weergegeven.
 * **@display** is een informatief bericht.
 
-   >[!NOTE]
-   >
-   >In de kenmerken @help en @display vertegenwoordigt de tekenreeks &quot;$1&quot; de naam die is gegeven in de eerste functieparameter (hier, &quot;Leeftijd&quot;). $2, $3... zou de volgende parameters vertegenwoordigen. In het @body-kenmerk dat hieronder wordt beschreven, geeft $1 de argumentwaarde aan die tijdens de aanroep aan de functie wordt doorgegeven.
+  >[!NOTE]
+  >
+  >In de kenmerken @help en @display vertegenwoordigt de tekenreeks &quot;$1&quot; de naam die is gegeven in de eerste functieparameter (hier, &quot;Leeftijd&quot;). $2, $3... zou de volgende parameters vertegenwoordigen. In het @body-kenmerk dat hieronder wordt beschreven, geeft $1 de argumentwaarde aan die tijdens de aanroep aan de functie wordt doorgegeven.
 
-   >[!NOTE]
-   >
-   >De beschrijving moet een tekenreeks zijn met geldige XML-tekens: Let op het gebruik van &#39;&lt;&#39; en &#39;>&#39; in plaats van &lt; en >.
+  >[!NOTE]
+  >
+  >De beschrijving moet een tekenreeks van geldige XML-tekens zijn. Let op het gebruik van &#39;&lt;&#39; en &#39;>&#39; in plaats van &lt; en >.
 
 * **@type** Dit is het type geretourneerde waarde van de functie en is een standaardwaarde (lang, tekenreeks, byte, datumtime..). Als het wordt weggelaten, bepaalt de server het beste type onder de beschikbare types binnen de uitdrukking die de functie uitvoert.
 * **@minArgs** en **maxArgs** Hiermee wordt het aantal parameters (minimum en maximum) voor een parameter opgegeven. Voor een functie met 2 parameters zijn minArgs en maxArgs bijvoorbeeld 2 en 2. Voor drie parameters, plus 1 optioneel, zijn deze respectievelijk 3 en 4.
-* Tot slot **providerPart** element verstrekt de functie implementatie.
+* Tot slot de **providerPart** element verstrekt de functie implementatie.
 
-   * De **provider** attribuut is mandatory, it specifies the database systems for which the implementation is provided. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
-   * De **@body** bevat de functie-implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (niet een codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
+   * De **provider** attribuut is mandatory, it specifies the database systems for the implementation. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
+   * De **@body** bevat de functie-implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (geen codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
 
-   >[!NOTE]
-   >
-   >Als slechts één of twee gegevensbestanden waarschijnlijk door de bepaalde functie worden gevraagd, kunnen wij altijd slechts de definities verstrekken die aan deze gegevensbestanden beantwoorden.
+  >[!NOTE]
+  >
+  >Als slechts één of twee gegevensbestanden waarschijnlijk door de bepaalde functie zullen worden gevraagd, kunnen wij altijd slechts de definities verstrekken die aan deze gegevensbestanden beantwoorden.
 
 ## Functiebeschrijving &#39;Pass-through&#39; {#pass-through--function-descriptor}
 

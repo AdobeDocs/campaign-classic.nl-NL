@@ -2,12 +2,13 @@
 product: campaign
 title: Toegang tot PostgreSQL configureren
 description: Leer hoe u toegang tot PostgreSQL configureert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 1%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +50,7 @@ U moet een [!DNL PostgreSQL] externe account om uw Campagne-instantie aan te slu
 
    ![](assets/postgresql_1.png)
 
-1. Configureer de **[!UICONTROL PostgreSQL]** externe accountverificatie:
+1. Vorm **[!UICONTROL PostgreSQL]** externe accountverificatie:
 
    * **[!UICONTROL Server]**: URL van de [!DNL PostgreSQL] server.
 
@@ -63,7 +64,7 @@ U moet een [!DNL PostgreSQL] externe account om uw Campagne-instantie aan te slu
 
    * **[!UICONTROL Timezone]**: Tijdzone ingesteld in [!DNL PostgreSQL]. [Meer informatie](https://www.postgresql.org/docs/7.2/timezones.html)
 
-1. Klik op de knop **[!UICONTROL Parameters]** dan de **[!UICONTROL Deploy functions]** om functies te maken.
+1. Klik op de knop **[!UICONTROL Parameters]** en vervolgens de **[!UICONTROL Deploy functions]** om functies te maken.
 
    >[!NOTE]
    >

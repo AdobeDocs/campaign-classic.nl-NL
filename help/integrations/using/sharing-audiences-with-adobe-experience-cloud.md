@@ -2,15 +2,16 @@
 product: campaign
 title: Soorten publiek delen met Adobe Experience Cloud
 description: Soorten publiek delen met Adobe Experience Cloud
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '314'
 ht-degree: 6%
 
 ---
@@ -27,7 +28,7 @@ Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experienc
 
 1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Als u deze integratie wilt implementeren, moet u een verbinding tot stand brengen tussen uw Real-time Customer Data Platform en Campagne (RTCDP). [Meer informatie in dit gedeelte](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
-1. Integreren **Adobe Campaign** with **Personenkern** (ook bekend als **Profielen en publiek kernservice**) of Adobe Audience Manager. Dan kunt u:
+1. Integreren **Adobe Campaign** with **Personenkern-service** (ook bekend als **Profielen en publiek kernservice**) of Adobe Audience Manager. Dan kunt u:
 
    * Importeer gedeelde soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen naar Adobe Campaign. Soorten publiek kan via lijsten in Adobe Campaign worden geïmporteerd.
 
@@ -35,11 +36,11 @@ Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experienc
 
 Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
-* **Bezoeker-id**: dit type id zorgt ervoor dat Adobe Experience Cloud-bezoekers zich kunnen verzoenen met Adobe Campaign-ontvangers.
+* **Bezoeker-id**: dit type id zorgt ervoor dat Adobe Experience Cloud-bezoekers overeenkomen met Adobe Campaign-ontvangers.
 * **Opgegeven id**: dit type id zorgt ervoor dat alle typen gegevens overeenkomen met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
 
-   >[!NOTE]
-   >
-   > De gegevensbron Declared ID kan nu ook worden gebruikt met de integratie van de People-kernservice.
-   >
-   >Als u de de dienstintegratie van de Kern van Mensen gebruikt en de integratie van de Audience Manager wilt toevoegen, zult u de hulp van een consultant van Adobe Audience Manager nodig hebben om te vermijden verlies van alle verzamelde syncs van identiteitskaart wanneer het overgaan aan het gebruiken van deze Gedeclareerde gegevensbron van identiteitskaart in een context van Adobe Audience Manager.
+  >[!NOTE]
+  >
+  > De gegevensbron Declared ID kan nu ook worden gebruikt met de integratie van de People-kernservice.
+  >
+  >Als u de de dienstintegratie van de Kern van Mensen gebruikt en de integratie van de Audience Manager wilt toevoegen, zult u de hulp van een consultant van Adobe Audience Manager nodig hebben om te vermijden verlies van alle verzamelde syncs van identiteitskaart wanneer het overgaan aan het gebruiken van deze Gedeclareerde gegevensbron van identiteitskaart in een context van Adobe Audience Manager.

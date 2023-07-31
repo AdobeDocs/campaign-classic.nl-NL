@@ -2,13 +2,13 @@
 product: campaign
 title: De context in uw rapporten gebruiken
 description: Meer informatie over het gebruik van de context in uw rapporten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 
 
-Wanneer u gegevens wilt weergeven in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]**, kan uit twee bronnen worden afgeleid: een nieuwe query (zie [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data)) of de rapportcontext (zie [Contextgegevens gebruiken](#using-context-data)).
+Wanneer u gegevens wilt weergeven in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]**, kan het uit twee bronnen worden gehaald: een nieuwe vraag (verwijs naar [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data)) of de context van het rapport (zie [Contextgegevens gebruiken](#using-context-data)).
 
 ## Een rechtstreeks filter op gegevens definiëren {#defining-a-direct-filter-on-data}
 
@@ -31,7 +31,7 @@ Om dit te doen, klik **[!UICONTROL Filter data...]** in de **[!UICONTROL Data]**
 
 ![](assets/reporting_filter_data_from_page.png)
 
-### Voorbeeld: gebruik een filter in een grafiek {#example--use-a-filter-in-a-chart}
+### Voorbeeld: gebruik een filter in een diagram {#example--use-a-filter-in-a-chart}
 
 In het volgende voorbeeld willen we dat in het diagram alleen de ontvangende profielen worden weergegeven die in Frankrijk wonen en die in het jaar een aankoop hebben gedaan.
 
@@ -47,7 +47,7 @@ De rendering ziet er als volgt uit:
 
 ![](assets/reporting_graph_with_2vars_preview.png)
 
-### Voorbeeld: een filter in een draaientabel gebruiken {#example--use-a-filter-in-a-pivot-table}
+### Voorbeeld: een filter gebruiken in een draaientabel {#example--use-a-filter-in-a-pivot-table}
 
 In dit voorbeeld kunt u met het filter alleen niet-Parisiaanse klanten in de draaitabel weergeven, zonder dat u daarvoor een andere query hoeft te gebruiken.
 
@@ -72,8 +72,8 @@ Op de pagina die de tabel of het diagram bevat, worden de **[!UICONTROL Data]** 
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* De **[!UICONTROL New query]** kunt u een query maken om gegevens te verzamelen. Raadpleeg voor meer informatie hierover [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data).
-* De **[!UICONTROL Context data]** Met deze optie kunt u de invoergegevens gebruiken: de context van het rapport valt samen met de informatie in de binnenkomende overgang van de pagina die de grafiek of de tabel bevat. Deze context kan bijvoorbeeld gegevens bevatten die via een **[!UICONTROL Query]** activiteit die vóór de **[!UICONTROL Page]** activiteit en waarvoor u de lijst en de gebieden moet specificeren die het rapport betrekking heeft.
+* De **[!UICONTROL New query]** kunt u een query samenstellen voor het verzamelen van gegevens. Raadpleeg voor meer informatie hierover [Een rechtstreeks filter op gegevens definiëren](#defining-a-direct-filter-on-data).
+* De **[!UICONTROL Context data]** kunt u de invoergegevens gebruiken: de context van het rapport valt samen met de informatie in de binnenkomende overgang van de pagina die de grafiek of de tabel bevat. Deze context kan bijvoorbeeld gegevens bevatten die via een **[!UICONTROL Query]** activiteit die vóór de **[!UICONTROL Page]** activiteit en waarvoor u de lijst en de gebieden moet specificeren die het rapport betrekking heeft.
 
 Bijvoorbeeld, in een vraagvakje, bouw de volgende vraag voor de ontvangers:
 

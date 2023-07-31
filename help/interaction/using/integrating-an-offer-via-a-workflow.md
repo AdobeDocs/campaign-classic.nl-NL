@@ -2,14 +2,15 @@
 product: campaign
 title: Een aanbieding integreren via een workflow
 description: Een aanbieding integreren via een workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1050'
 ht-degree: 3%
 
 ---
@@ -37,11 +38,12 @@ Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows 
 1. Vul de beschikbare velden in op basis van uw levering.
 1. Er zijn twee mogelijke gevallen:
 
-   * Als je de aanbiedingsengine wilt bellen, kun je de **[!UICONTROL Restrict the number of propositions selected]** doos. Geef de aanbiedingsruimte en het aantal voorstellen op dat in de levering wordt weergegeven.
+   * Als je de aanbiedingsengine wilt bellen, kun je het volgende controleren: **[!UICONTROL Restrict the number of propositions selected]** doos. Geef de aanbiedingsruimte en het aantal voorstellen op dat in de levering wordt weergegeven.
 
-      De aanbiedingsmotor zal rekening houden met het gewicht van de aanbieding en de subsidiabiliteitsregels.
+     De aanbiedingsmotor zal rekening houden met het gewicht van de aanbieding en de subsidiabiliteitsregels.
 
    * Als u niet de doos controleert, zullen alle aanbiedingen in het leveringsoverzicht worden voorgesteld zonder een vraag aan de aanbiedingsmotor te maken.
+
    >[!NOTE]
    >
    >In de voorvertoning wordt rekening gehouden met het aantal aanbiedingen dat in de levering is opgegeven. Bij het uitvoeren van een workflow wordt rekening gehouden met het nummer dat is opgegeven in het leveringsoverzicht.
@@ -62,7 +64,7 @@ Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een leverin
 
 Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 
-* Het specificeren van een aanbieding of een vraag van de aanbiedingsmotor.
+* Een aanbieding of een vraag van de aanbiedingsmotor specificeren.
 * Verwijzen naar een koppeling naar een aanbieding.
 
 ### Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine}
@@ -76,15 +78,15 @@ Na het vormen van uw vraag (verwijs naar [Handleiding voor workflows](../../work
    ![](assets/int_enrichment_offer2.png)
 
 1. Geef een id en een label op voor het voorstel dat wordt toegevoegd.
-1. Geef de selectie van de aanbieding op. Hiervoor zijn twee mogelijkheden:
+1. Geef de selectie van de aanbieding op. Hiervoor zijn twee opties mogelijk:
 
-   * **[!UICONTROL Search for the best offer in a category]** : controleert deze optie en specificeert de parameters van de vraagvraag van de aanbiedingsmotor (aanbiedingsruimte, categorie of thema(s), contactdatum, aantal aan te houden aanbiedingen). De motor berekent automatisch de aanbieding(en) die volgens deze parameters moet worden toegevoegd. We raden u aan om de **[!UICONTROL Category]** of de **[!UICONTROL Theme]** in plaats van beide.
+   * **[!UICONTROL Search for the best offer in a category]** : controleer deze optie en geef de parameters op voor de aanroep van de aanbiedingsengine (ruimte, categorie of thema(&#39;s), contactdatum, aantal aanbiedingen dat u wilt behouden). De motor berekent automatisch de aanbieding(en) die volgens deze parameters moet worden toegevoegd. We raden u aan om de **[!UICONTROL Category]** of de **[!UICONTROL Theme]** in plaats van beide.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]** : controleer deze optie en specificeer een aanbiedingsruimte, een specifieke aanbieding, en een contactdatum om de aanbieding direct te vormen die u, zonder de aanbiedingsmotor te roepen wilt toevoegen.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Raadpleeg voor meer informatie de [Een voorstel invoegen in een levering](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
 
@@ -120,12 +122,12 @@ Standaard, wanneer een **verrijking** de activiteit wordt gebruikt om aanbieding
 
 >[!NOTE]
 >
->Onthoud: De **[!UICONTROL Offer engine]** Deze informatie wordt standaard opgeslagen door de activiteit.
+>Herinner me: **[!UICONTROL Offer engine]** Deze informatie wordt standaard opgeslagen door de activiteit.
 
 U kunt deze gegevens echter als volgt opslaan:
 
 1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Zie de [Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) sectie.
-1. Selecteer in het hoofdvenster van de activiteit de optie **[!UICONTROL Edit additional data...]**.
+1. Selecteer in het hoofdvenster van de activiteit **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
@@ -152,7 +154,7 @@ Na het vormen van uw vraag (verwijs naar [Handleiding voor workflows](../../work
 
    >[!NOTE]
    >
-   >Waarschuwing: als je deze activiteit gebruikt, worden alleen de aanbiedingsvoorstellen opgeslagen die in de levering worden gebruikt.
+   >Waarschuwing: als u deze activiteit gebruikt, worden alleen de aanbiedingsvoorstellen opgeslagen die in de levering worden gebruikt.
 
    ![](assets/int_offerengine_activity1.png)
 
@@ -166,11 +168,11 @@ Hiervoor gebruikt u het volgende proces:
 
 1. Voeg de **[!UICONTROL Offers by cell]** activiteit zodra u de doelpopulatie hebt gespecificeerd, dan open het.
 1. In de **[!UICONTROL General]** selecteert u de aanbiedingsruimte waarop u de voorstellen wilt weergeven.
-1. In de **[!UICONTROL Cells]** , geeft u de verschillende subsets op met de **[!UICONTROL Add]** knop:
+1. In de **[!UICONTROL Cells]** -tabblad, geeft u de verschillende subsets op met de **[!UICONTROL Add]** knop:
 
    * Geef de subsetpopulatie op met behulp van de beschikbare regels voor filteren en beperken.
    * Selecteer vervolgens het voorstel dat u aan de subset wilt presenteren. De beschikbare aanbiedingen zijn die welke in aanmerking komen op het aanbiedingsmilieu dat in de vorige stap werd geselecteerd.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Raadpleeg voor meer informatie de [Een voorstel invoegen in een levering](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.

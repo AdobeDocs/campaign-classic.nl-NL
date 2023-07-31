@@ -2,14 +2,15 @@
 product: campaign
 title: Opsommingen beheren
 description: Opsommingen beheren
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
+feature: Data Management
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -33,15 +34,15 @@ De waarden voor dit type veld worden gedefinieerd en het algemene beheer van dez
 * De bovenste sectie bevat een lijst met velden waarvoor een gespecificeerde lijst is gedefinieerd.
 * In de onderste sectie worden de voorgestelde waarden weergegeven. Deze waarden worden herhaald in de editors die dit veld gebruiken.
 
-   ![](assets/s_ncs_user_itemized_list_values.png)
+  ![](assets/s_ncs_user_itemized_list_values.png)
 
-   Als u een nieuwe opsommingswaarde wilt maken, klikt u op **[!UICONTROL Add]**.
+  Als u een nieuwe opsommingswaarde wilt maken, klikt u op **[!UICONTROL Add]**.
 
-   ![](assets/s_ncs_user_itemized_list.png)
+  ![](assets/s_ncs_user_itemized_list.png)
 
-   Als de **[!UICONTROL Open]** is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
+  Als de **[!UICONTROL Open]** is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
 
-   ![](assets/s_ncs_user_itemized_list_new_value.png)
+  ![](assets/s_ncs_user_itemized_list_new_value.png)
 
 * Als de **[!UICONTROL Closed]** is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
 
@@ -58,12 +59,12 @@ In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ing
 De ingevoerde waarde is dan:
 
 * Toegevoegd aan de gespecificeerde lijstwaarden: in dit geval **[!UICONTROL Open]** moet worden geselecteerd,
-* of automatisch vervangen door de overeenkomstige alias: In dat geval moet dit geval worden gedefinieerd in het **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
-* of is opgeslagen in de lijst met aliassen: er wordt later een alias aan toegewezen.
+* of automatisch vervangen door de bijbehorende alias: In dit geval moet deze zaak dan worden gedefinieerd in het dialoogvenster **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
+* of wordt opgeslagen in de lijst met aliassen: er wordt later een alias aan toegewezen.
 
-   >[!NOTE]
-   >
-   >Als u mogelijkheden voor gegevenszuivering moet gebruiken, selecteert u de optie **[!UICONTROL Alias cleansing]** in de gespecificeerde lijst.
+  >[!NOTE]
+  >
+  >Als u mogelijkheden voor gegevenszuivering moet gebruiken, selecteert u de optie **[!UICONTROL Alias cleansing]** in de gespecificeerde lijst.
 
 ### Aliassen gebruiken {#using-aliases}
 
@@ -73,7 +74,7 @@ De optie **[!UICONTROL Alias cleansing]** maakt het mogelijk aliassen te gebruik
 
 #### Een alias maken {#creating-an-alias}
 
-Als u een alias wilt maken, klikt u op **[!UICONTROL Add]**.
+Klik op **[!UICONTROL Add]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
@@ -111,13 +112,13 @@ Zodra de uitvoering is voltooid, wordt de alias toegevoegd aan de lijst met alia
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Aliashits ophalen {#retrieving-alias-hits}
+#### Aliasresultaten ophalen {#retrieving-alias-hits}
 
 De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Wanneer de gebruiker een waarde invoert die niet in de gespecificeerde lijst is opgenomen, wordt de waarde opgeslagen in het dialoogvenster **[!UICONTROL Alias]** tab.
 
 De **Aliasreiniging** de technische workflow herstelt deze waarden elke nacht om de gespecificeerde lijst bij te werken. Zie [Gegevens wissen](#running-data-cleansing)
 
-Indien nodig **[!UICONTROL Hits]** kan het aantal keren weergeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg voor meer informatie hierover [Voorvallen van item berekenen](#calculating-entry-occurrences).
+Indien nodig **[!UICONTROL Hits]** Deze kolom kan het aantal keren weergeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg voor meer informatie hierover [Voorvallen van item berekenen](#calculating-entry-occurrences).
 
 ### Gegevens wissen {#running-data-cleansing}
 
@@ -145,8 +146,8 @@ U kunt de aanraakberekening handmatig uitvoeren via de **[!UICONTROL Cleanse val
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
-* **[!UICONTROL Update the number of alias hits]**: hiermee kunt u resultaten bijwerken die al zijn berekend op basis van de ingevoerde datum.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: Hiermee kunt u berekeningen uitvoeren op het hele Adobe Campaign-platform.
+* **[!UICONTROL Update the number of alias hits]**: hiermee kunt u treffers bijwerken die al zijn berekend op basis van de ingevoerde datum.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: hiermee kunt u berekeningen uitvoeren op het hele Adobe Campaign-platform.
 
 U kunt ook een specifieke workflow maken, zodat de berekening automatisch gedurende een bepaalde periode wordt uitgevoerd, bijvoorbeeld eenmaal per week.
 

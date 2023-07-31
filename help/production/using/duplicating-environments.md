@@ -2,16 +2,17 @@
 product: campaign
 title: Omgevingen dupliceren
 description: Omgevingen dupliceren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 1%
+source-wordcount: '1314'
+ht-degree: 2%
 
 ---
 
@@ -27,11 +28,11 @@ ht-degree: 1%
 >
 >Als u geen toegang hebt tot de server en de database (gehoste omgevingen), kunt u de hieronder beschreven procedures niet uitvoeren. Neem contact op met Adobe.
 
-Voor het gebruik van Adobe Campaign moeten een of meer omgevingen worden geïnstalleerd en geconfigureerd: ontwikkeling, test, preproductie, productie, enz.
+Voor het gebruik van Adobe Campaign moeten een of meer omgevingen worden geïnstalleerd en geconfigureerd: ontwikkeling, test, productie, enz.
 
-Elke omgeving bevat een Adobe Campaign-instantie en elke Adobe Campaign-instantie is gekoppeld aan een of meer databases. De toepassingsserver kan een of meer processen uitvoeren: bijna allemaal hebben directe toegang tot de instantiedatabase .
+Elke omgeving bevat een Adobe Campaign-instantie en elke Adobe Campaign-instantie is gekoppeld aan een of meer databases. De toepassingsserver kan een of meer processen uitvoeren: bijna al deze hebben directe toegang tot de instantiedatabase.
 
-In deze sectie worden de processen beschreven die moeten worden toegepast om een Adobe Campaign-omgeving te dupliceren, d.w.z. om een bronomgeving te herstellen naar een doelomgeving, wat resulteert in twee identieke werkomgevingen.
+In deze sectie worden de processen beschreven die moeten worden toegepast om een Adobe Campaign-omgeving te dupliceren, dat wil zeggen om een bronomgeving te herstellen naar een doelomgeving, wat resulteert in twee identieke werkomgevingen.
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -43,7 +44,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >In de context van Adobe Campaign **vermaning** combineert acties waarmee u alle processen die met de buitenkant in wisselwerking staan kunt tegenhouden: logboeken, tracering, leveringen, campagneworkflows, enz.\
+   >In de context van Adobe Campaign **vermaning** combineert acties waarmee u alle processen die met de buitenkant communiceren kunt stoppen: logbestanden, tracering, leveringen, workflows voor campagnes, enz.\
    >Deze stap is nodig om te voorkomen dat berichten meerdere keren worden verzonden (eenmaal vanuit de nominale omgeving en één vanuit de gedupliceerde omgeving).
 
    >[!IMPORTANT]
@@ -63,16 +64,15 @@ Dit proces werkt alleen als de bron- en doelomgevingen hetzelfde aantal instanti
 
 ### Overdrachtsprocedure {#transfer-procedure}
 
-Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen van een bronomgeving naar een doelomgeving via een casestudy: ons doel is het herstel van een productieomgeving (**prod** instantie) naar een ontwikkelomgeving (**dev** (bijvoorbeeld) te werken in een context die zo dicht mogelijk bij het &#39;live&#39;-platform ligt.
+Deze sectie zal u helpen de stappen begrijpen die worden vereist om een bronmilieu aan een doelmilieu via een gevallenanalyse over te brengen: ons doel is hier om een productiemilieu te herstellen (**prod** instantie) naar een ontwikkelomgeving (**dev** (bijvoorbeeld) te werken in een context die zo dicht mogelijk bij het &#39;live&#39;-platform ligt.
 
-De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen zijn mogelijk nog in uitvoering wanneer de gegevensbestanden van het bronmilieu worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
+De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen kunnen nog in uitvoering zijn wanneer de bronmilieugegevensbestanden worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
 
 >[!IMPORTANT]
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
 >* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod** instantie en een **dev** onder PostgreSQL.
 >
-
 
 ### Stap 1 - Maak een steun van de bronmilieu (prod) gegevens {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
@@ -88,9 +88,9 @@ pg_dump mydatabase > mydatabase.sql
 
 ### Stap 2 - de configuratie van het doelmilieu (dev) uitvoeren {#step-2---export-the-target-environment-configuration--dev-}
 
-De meeste configuratieelementen zijn verschillend voor elke milieu: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
+De meeste configuratieelementen zijn verschillend voor elke omgeving: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
-Alvorens het brongegevensbestand op het doelgegevensbestand te bewaren, moet u de configuratie van het doelmilieu (dev) uitvoeren. Hiertoe exporteert u de inhoud van deze twee tabellen: **xtkoption** en **nmsextaccount**.
+Alvorens het brongegevensbestand op het doelgegevensbestand op te slaan, moet u de configuratie van het doelmilieu (dev) uitvoeren. Hiertoe exporteert u de inhoud van deze twee tabellen: **xtkoption** en **nmsextaccount**.
 
 Met deze exportbewerking kunt u de configuratie van de ontwikkelaar behouden en alleen de gegevens van de ontwikkelaar vernieuwen (workflows, sjablonen, webtoepassingen, ontvangers, enzovoort).
 
@@ -121,15 +121,15 @@ Als u alle processen wilt stoppen, gebruikt u de volgende opdrachten:
 
 * In Windows:
 
-   ```
-   net stop nlserver6
-   ```
+  ```
+  net stop nlserver6
+  ```
 
 * In Linux:
 
-   ```
-   /etc/init.d/nlserver6 stop
-   ```
+  ```
+  /etc/init.d/nlserver6 stop
+  ```
 
 Gebruik het volgende bevel om te controleren dat alle processen zijn tegengehouden:
 
@@ -145,8 +145,8 @@ U kunt ook controleren of er nog geen systeemprocessen actief zijn.
 
 Hiervoor gebruikt u het volgende proces:
 
-* In Windows: open **Taakmanager** en controleert u of er geen **nlserver.exe** processen.
-* In Linux: uitvoeren **ps aux | grep nlserver** en controleer of er geen **nlserver** processen.
+* In Windows: open de **Taakmanager** en controleert u of er geen **nlserver.exe** processen.
+* In Linux: voer de **ps aux | grep nlserver** en controleer of er geen **nlserver** processen.
 
 ### Stap 4 - Herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -193,7 +193,7 @@ Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 
 >[!NOTE]
 >
->Voordat u Adobe Campaign opnieuw start op de **dev** milieu, kunt u een extra veiligheidsprocedure toepassen: start de **web** alleen.
+>Voordat u Adobe Campaign opnieuw start op de **dev** milieu, kunt u een extra veiligheidsprocedure toepassen: begin **web** alleen.
 >  
 >Hiervoor bewerkt u het configuratiebestand van uw instantie (**config-dev.xml**), voegt u het teken &quot;_&quot; toe vóór de opties autoStart=&quot;true&quot; voor elke module (mta, start, enz.).
 
@@ -217,9 +217,9 @@ Controleer of toegang tot de functies van de clientconsole mogelijk is.
 >
 >Alleen het webproces moet in deze stap worden gestart. Als dit niet het geval is, stop andere lopende processen alvorens verder te gaan
 
-Controleer vooral de waarden van verschillende regels met bestanden voordat u ze importeert (bijvoorbeeld: &#39;NmsTracking_Pointer&#39; voor de optietabel en de leverings- of mid-sourcingaccounts voor de tabel van de externe account)
+Controleer vooral de waarden van verschillende regels bestanden voordat u ze importeert (bijvoorbeeld: &#39;NmsTracking_Pointer&#39; voor de optietabel en de leverings- of mid-sourcingaccounts voor de tabel van de externe account)
 
-Om de configuratie van het gegevensbestand van het doelmilieu (dev) in te voeren:
+Om de configuratie van het doelmilieu gegevensbestand (dev) in te voeren:
 
 1. Open de beheerconsole van de database en wis de externe accounts (table nms:extAccount) waarvan de id niet 0 is (@id &lt;> 0).
 1. Importeer in de Adobe Campaign-console het pakket options_dev.xml dat eerder is gemaakt via de functionaliteit van het importpakket.
@@ -236,15 +236,15 @@ Gebruik de volgende opdrachten om de Adobe Campaign-processen te starten:
 
 * In Windows:
 
-   ```
-   net start nlserver6
-   ```
+  ```
+  net start nlserver6
+  ```
 
 * In Linux:
 
-   ```
-   /etc/init.d/nlserver6 start
-   ```
+  ```
+  /etc/init.d/nlserver6 start
+  ```
 
 Gebruik de volgende opdracht om te controleren of de processen zijn gestart:
 

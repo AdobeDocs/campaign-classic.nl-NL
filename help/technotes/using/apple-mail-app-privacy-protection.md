@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Privacy-beveiliging per post in Apple Mail-app
+feature: Technote, Privacy, Privacy Tools
 description: Meer informatie over de gevolgen van de functie Apple Mail Privacy Protection voor campagnes
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 0%
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ## Wat is er veranderd?
 
-In 2021 introduceerde Apple nieuwe mogelijkheden voor privacybescherming voor hun native Mail-app. Deze app bevat nu de functie Apple Mail Privacy Protection. Afzenders kunnen de functie voor het bijhouden van pixels niet meer gebruiken om informatie te verzamelen over ontvangers die ervoor hebben gekozen de functie voor de bescherming van e-mails van Apple in te schakelen.
+In 2021 introduceerde Apple nieuwe mogelijkheden voor privacybescherming voor hun native Mail-app. Deze app bevat nu de functie Apple Mail Privacy Protection. Afzenders kunnen de functie voor het bijhouden van pixels niet meer gebruiken om informatie te verzamelen over ontvangers die ervoor hebben gekozen de functie voor de bescherming van e-mailprivacy van Apple in te schakelen.
 
 ## Hoe worden mijn campagnes beïnvloed?
 
@@ -61,27 +62,27 @@ Om inzichten van de gegevens van Adobe Campaign te verzamelen, kunt u out-of-the
 
 * **[!UICONTROL Operating Systems]** verslag
 
-   Gebruik dit rapport om het aantal bezoekers per besturingssysteem en per versie te bepalen. [Meer informatie](../../reporting/using/global-reports.md#operating-systems).
+  Gebruik dit rapport om het aantal bezoekers per besturingssysteem en per versie te bepalen. [Meer informatie](../../reporting/using/global-reports.md#operating-systems).
 
-   U kunt de uitsplitsing van bezoekers per besturingssysteem bekijken in verhouding tot het totale aantal bezoekers.
+  U kunt de uitsplitsing van bezoekers per besturingssysteem bekijken in verhouding tot het totale aantal bezoekers.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report.png)
 
-   Voor elk besturingssysteem kunt u de uitsplitsing van bezoekers per versie van het besturingssysteem weergeven.
+  Voor elk besturingssysteem kunt u de uitsplitsing van bezoekers per versie van het besturingssysteem weergeven.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
 * **[!UICONTROL Breakdown of opens]** verslag
 
-   Gebruik dit rapport om te bepalen hoeveel e-mailberichten per besturingssysteem worden geopend. [Meer informatie](../../reporting/using/global-reports.md#breakdown-of-opens).
+  Gebruik dit rapport om te bepalen hoeveel e-mailberichten per besturingssysteem worden geopend. [Meer informatie](../../reporting/using/global-reports.md#breakdown-of-opens).
 
-   ![](../../reporting/using/assets/dlv_useragent_report.png)
+  ![](../../reporting/using/assets/dlv_useragent_report.png)
 
 ### Bepalen hoe e-mail open tracking wordt gebruikt {#find-email-open-tracking}
 
 U kunt de werkschema&#39;s identificeren waarin e-mail opent als criterium voor segmentatie, het richten, en het opnieuw richten worden gebruikt.
 
-Om dit te doen, kunt u gebruiken **[!UICONTROL type]** kenmerk van de URL van de bijgehouden koppeling (**[!UICONTROL url/@type]**). Voor het openen van e-mail wordt dit kenmerk ingesteld op **[!UICONTROL Open]**. Dit kenmerk is beschikbaar in de query-editor, de **[!UICONTROL Query]** en vooraf gedefinieerde filters. U kunt dit kenmerk gebruiken als een doelcriterium voor marketingcampagnes.
+Hiervoor kunt u de opdracht **[!UICONTROL type]** kenmerk van de URL van de bijgehouden koppeling (**[!UICONTROL url/@type]**). Voor het openen van e-mail wordt dit kenmerk ingesteld op **[!UICONTROL Open]**. Dit kenmerk is beschikbaar in de query-editor, de **[!UICONTROL Query]** en vooraf gedefinieerde filters. U kunt dit kenmerk gebruiken als een doelcriterium voor marketingcampagnes.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,21 +90,21 @@ In dit voorbeeld wil een marketeer een beloningsaanbod sturen naar de ontvangers
 
 * U kunt e-mail gebruiken opent als doelcriterium in een vraag.
 
-   U kunt, als het filtreren voorwaarde specificeren dat het type URL van het volgen logboeken van een specifieke levering moet worden geplaatst aan **[!UICONTROL Open]**.
+  U kunt, als het filtreren voorwaarde specificeren dat het type URL van het volgen logboeken van een specifieke levering moet worden geplaatst aan **[!UICONTROL Open]**.
 
-   ![](assets/identify-email-open-tracking-2.png)
+  ![](assets/identify-email-open-tracking-2.png)
 
 * U kunt een vooraf gedefinieerd filter gebruiken. [Meer informatie](../../workflow/using/creating-a-filter.md).
 
-   ![](assets/identify-email-open-tracking-3.png)
+  ![](assets/identify-email-open-tracking-3.png)
 
-   U kunt dit vooraf gedefinieerde filter in vraagactiviteiten in werkschema&#39;s gebruiken.
+  U kunt dit vooraf gedefinieerde filter in vraagactiviteiten in werkschema&#39;s gebruiken.
 
-   ![](assets/identify-email-open-tracking-4.png)
+  ![](assets/identify-email-open-tracking-4.png)
 
-   >[!NOTE]
-   >
-   >Vanuit een workflow kunt u de doelcriteria van een vooraf gedefinieerd filter niet bekijken.
+  >[!NOTE]
+  >
+  >Vanuit een workflow kunt u de doelcriteria van een vooraf gedefinieerd filter niet bekijken.
 
 Als u de lijst met workflows wilt ophalen waarin e-mail wordt geopend, wordt gebruikt als een doelcriterium, moet u de opdracht `xtk:workflow` schema. De inhoud van de workflow wordt opgeslagen in het dialoogvenster **[!UICONTROL XML memo (data)]** in XML-indeling.
 
@@ -144,13 +145,13 @@ Nadat u het pakket hebt geïnstalleerd, kunt u tot het werkschema van de omslag 
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-Kies in de gebruikersinterface de optie **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Kies in de gebruikersinterface **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
 De workflow bestaat uit de volgende hoofdstappen:
 
-1. Geef een lijst weer van de workflows waarin e-mail wordt geopend en die als een doelcriterium worden gebruikt.
+1. Geef een lijst weer van de workflows waarin e-mail wordt geopend en die als doelcriterium worden gebruikt.
 1. Geef een lijst weer van de vooraf gedefinieerde filters waarin e-mail wordt geopend en die als doelcriterium worden gebruikt.
 1. Geef een overzicht van de workflows waarin deze vooraf gedefinieerde filters worden gebruikt.
 1. Voeg de twee lijsten met workflows samen tot één lijst.
@@ -158,7 +159,7 @@ De workflow bestaat uit de volgende hoofdstappen:
 
 De workflow bestaat uit de volgende gedetailleerde stappen:
 
-1. De eerste activiteit is een query-activiteit in de `xtk:workflow` schema. Deze activiteit wordt gebruikt om, in de aangewezen instantie, de expliciete werkschemaquery&#39;s te vinden die e-mail omvatten opent als het richten criterium.
+1. De eerste activiteit is een query-activiteit in het dialoogvenster `xtk:workflow` schema. Deze activiteit wordt gebruikt om, in de aangewezen instantie, de expliciete werkschemaquery&#39;s te vinden die e-mail omvatten opent als het richten criterium.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -314,11 +315,11 @@ Profielgegevens worden verrijkt met trackinggegevens uit handelingen zoals het o
 
 In een notendop, verstrekt het volgen van Adobe Campaign gegevens deze informatie:
 
-* Het profiel dat is gekoppeld aan de persoon die een specifiek e-mailbericht heeft geopend of erop heeft geklikt
+* Het profiel dat is gekoppeld aan de persoon die een specifiek e-mailbericht heeft geopend of aangeklikt
 * De openingsdatum
 * Het apparaat dat is gebruikt, bijvoorbeeld iPhone of Mac
 * Het besturingssysteem en de versie, bijvoorbeeld iOS 15, macOS 12 of Windows 10
-* De toepassing, zoals een e-mailtoepassing of een webbrowser, en de versie, bijvoorbeeld Outlook 2019
+* De toepassing, zoals een mailtoepassing of een webbrowser, en de versie, bijvoorbeeld Outlook 2019
 
 #### Waarom moet ik gegevens bijhouden behouden?
 
@@ -326,7 +327,7 @@ We raden u ten zeerste aan deze gegevens te bewaren, en wel om meerdere redenen:
 
 * Deze gegevens worden door Adobe Campaign gedurende een beperkte periode bewaard. De bewaarperiode varieert, afhankelijk van de configuratie van uw instantie.
 
-   Controleer de instellingen van uw exemplaar. [Meer informatie](../../platform/using/privacy-management.md#data-retention).
+  Controleer de instellingen van uw exemplaar. [Meer informatie](../../platform/using/privacy-management.md#data-retention).
 
 * Naast de recente wijzigingen van Apple kunt u trackinggegevens gebruiken om een enorme waarde toe te voegen aan de betrokkenheid van uw publiek.
 * Apple brengt mogelijk verdere wijzigingen aan in de native e-mailtoepassing en de functie om e-mailprivacy te beschermen.
@@ -363,7 +364,7 @@ U kunt deze gegevens verrijken met nuttige informatie uit gekoppelde schema&#39;
 
 | Schema | Inhoud |
 | --- | --- |
-| nms:Ontvanger | Details die betrekking hebben op profielen |
+| nms:Ontvanger | Details over profielen |
 | nms:levering | Informatie over het bericht waarop de gebruiker heeft gereageerd |
 
 U kunt het resultaat exporteren naar een externe opslagoplossing die door Adobe Campaign wordt ondersteund:
@@ -389,7 +390,7 @@ Met een incrementele query kunt u alleen de records extraheren die u nog niet he
 
    ![](assets/export-tracking-data-3.png)
 
-   Kies de bestandsindeling, bijvoorbeeld TXT of CSV.
+   Kies de bestandsindeling TXT of CSV.
 
    ![](assets/export-tracking-data-4.png)
 
@@ -397,7 +398,7 @@ Met een incrementele query kunt u alleen de records extraheren die u nog niet he
 
 ![](assets/export-tracking-data-5.png)
 
-##### Geavanceerde implementatie: uitsplitsing naar iOS-apparaat
+##### Geavanceerde implementatie: indeling naar iOS-apparaat
 
 U kunt workflows gebruiken om te bepalen of een ontvanger de Apple Mail-app gebruikt. U kunt trackinglogboeken splitsen op apparaat. U kunt bijvoorbeeld queryfilters gebruiken om records op iOS-apparaat in te delen:
 
@@ -405,7 +406,7 @@ U kunt workflows gebruiken om te bepalen of een ontvanger de Apple Mail-app gebr
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
 | Apple Mail | iOS 14 of iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
-| Apple Mail | Mobiele iOS-apparaten: iPad, iPod en iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
+| Apple Mail | iOS mobiele apparaten: iPad, iPod en iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
 | Apple Mail | iPhone, iPad of iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
 | Apple Mail | Mac | `browser (Browser) equal to 'AppleWebKit' and operating System (Browser) contains 'Mac'` |
 | Safari | macOS | `browser (Browser) equal to 'Safari' and device (Browser) equal to PC and operating System (Browser) contains 'Mac'` |
@@ -433,9 +434,9 @@ In deze voorbeelden ziet u hoe u workflows kunt gebruiken om records op iOS-appa
 
    1. An **[!UICONTROL End]** activiteit volgt elke **[!UICONTROL Deduplication]** activiteit.
 
-   Dit type van werkschema is nuttig als u ontvangers slechts in de uit-van-de-doos lijst van ontvangers voor het richten opslaat.
+  Dit type van werkschema is nuttig als u ontvangers slechts in de uit-van-de-doos lijst van ontvangers voor het richten opslaat.
 
-   ![](assets/export-tracking-data-wkf-1.png)
+  ![](assets/export-tracking-data-wkf-1.png)
 
 * Het tweede voorbeeldwerkschema omvat deze activiteiten:
 
@@ -445,8 +446,9 @@ In deze voorbeelden ziet u hoe u workflows kunt gebruiken om records op iOS-appa
 
       * In één overgang **[!UICONTROL Change dimension]** activiteit wordt gebruikt om de ontvangers te vinden waarnaar het volgende logboek verwijst.
       * In de andere overgang **[!UICONTROL Split]** activiteit wordt gebruikt om de selectie door e-mailtoepassing, browser, werkend systeem, en apparaat te verdelen.
+
    1. An **[!UICONTROL End]** activiteit volgt elke overgang na **[!UICONTROL Split]** activiteit.
 
-   Dit type workflow is handig als u ontvangers opslaat in een andere tabel dan de tabel met out-of-the-box ontvangers.
+  Dit type workflow is handig als u ontvangers opslaat in een andere tabel dan de tabel met out-of-the-box ontvangers.
 
-   ![](assets/export-tracking-data-wkf-2.png)
+  ![](assets/export-tracking-data-wkf-2.png)

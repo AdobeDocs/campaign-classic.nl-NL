@@ -2,15 +2,16 @@
 product: campaign
 title: Gebruiksscenario
 description: Gebruiksscenario
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Subscriptions, Email, Data Management
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '269'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 Met deze gebruiksaanwijzing kunt u zien hoe u een filter maakt voor het sorteren van nieuwsbrieven-abonnementen op basis van de e-mailindeling van de ontvanger.
 
-Hiervoor moet een vooraf gedefinieerde filterfunctie worden gebruikt: deze filters zijn gekoppeld aan een documenttype en zijn toegankelijk via de **[!UICONTROL Administration > Configuration > Predefined filters]** knooppunt. Deze gegevensfilters kunnen worden gebruikt voor elk type editor (of document) in de toepassing.
+Hiervoor moet een vooraf gedefinieerd filter worden gebruikt: deze filters zijn gekoppeld aan een documenttype en zijn toegankelijk via de **[!UICONTROL Administration > Configuration > Predefined filters]** knooppunt. Deze gegevensfilters kunnen worden gebruikt voor elk type editor (of document) in de toepassing.
 
 Gegevensfilters worden op dezelfde manier gemaakt als vooraf gedefinieerde filters, maar er is een extra veld om het documenttype te selecteren waarop het filter wordt toegepast.
 
@@ -53,7 +54,7 @@ Voer de volgende stappen uit:
    ![](assets/s_ncs_user_filter_parameters.png)
 
 1. Klikken **[!UICONTROL Save]** om een filter aan de vooraf bepaalde filters voor dit type van lijst toe te voegen.
-1. U kunt dit filter nu gebruiken in het dialoogvenster **[!UICONTROL Subscriptions]** tabblad van het profiel van de ontvanger; u kunt het filter Onbekende e-mailindeling gebruiken door op de knop **[!UICONTROL Filters]** knop.
+1. U kunt dit filter nu gebruiken in het dialoogvenster **[!UICONTROL Subscriptions]** tabblad van het ontvangende profiel; u kunt het filter Onbekende e-mailindeling openen door op het tabblad **[!UICONTROL Filters]** knop.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 

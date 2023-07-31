@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: TechNote - Adobe Campaign-systeemupgrades
+title: Technote - Adobe Campaign-systeemupgrades
 description: Adobe Campaign-systeemupgrade
+feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: d04b672fe2049d83ba17d3d855e1b609e81cf8c9
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 9%
 
 ---
 
-# Adobe Campaign 2023-omgevingsupgrades {#ac-system-upgrade}
+# Adobe Campaign 2023-upgrades voor de omgeving {#ac-system-upgrade}
 
-De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig met de meest recente versies en correcties moeten worden bijgewerkt. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast is een Campagne-upgrade vereist om compatibiliteit met systeemwijzigingen van derden te garanderen.
+De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig met de meest recente versies en correcties moeten worden bijgewerkt. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast is een Campagne-upgrade vereist om te zorgen voor compatibiliteit met systeemwijzigingen van derden.
 
 Als **Ontvangen of Beheerde klant van Cloud Services** Adobe informeert u over deze upgrades wanneer deze nodig zijn. U moet uw omgevingen upgraden in overeenstemming met de aanbevelingen om naleving te garanderen.
 
@@ -23,6 +24,7 @@ Om veiligheidsredenen moet u [De nieuwste build voor campagne installeren](#ac-u
 >[!NOTE]
 >
 >Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md).
+>
 
 ## Verbetering van campagne-build {#ac-upgrade}
 

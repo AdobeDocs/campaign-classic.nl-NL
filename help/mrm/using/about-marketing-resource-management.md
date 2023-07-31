@@ -2,14 +2,15 @@
 product: campaign
 title: Aan de slag met het beheer van marketingbronnen
 description: Beheer van marketingmiddelen ontdekken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 1%
 
 De **Marketing Resource Management (MRM)** kunt u marketingacties beheren in een samenwerkingsmodus door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden.
 
-Adobe Campaign-operatoren kunnen hun acties coördineren en de voortgang ervan in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackinggereedschappen: rapportage, bijhouden van goedkeuringen, meldingen, discussieforums, enz. Ze worden gewaarschuwd in de gebeurtenis of fout of vertraging en in elke nieuwe fase van de validatiecyclus.
+Adobe Campaign-operatoren kunnen hun acties coördineren en hun voortgang in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackingsinstrumenten: rapportage, tracering van goedkeuringen, meldingen, discussieforums, enz. Ze worden gewaarschuwd in de gebeurtenis of fout of vertraging en in elke nieuwe fase van de validatiecyclus.
 
 In het kader van de programma&#39;s en subprogramma&#39;s van marketingplannen kunnen dus taken worden gecreëerd en toegewezen aan de betrokken marktdeelnemers en vervolgens in alle fasen worden beheerd.
 
-**MRM** kunt u ook marketingbronnen beheren waarbij meerdere deelnemers betrokken zijn: de integriteit van en het toezicht op middelen worden uitgevoerd via een speciaal dashboard .
+**MRM** kunt u ook marketingbronnen beheren waarbij meerdere deelnemers betrokken zijn: de integriteit en bewaking van bronnen wordt uitgevoerd via een speciaal dashboard.
 
 Tot slot wordt de capaciteit voor begrotingsbeheer uitgebreid tot het beheer van doelen en uitgavenlijnen en uitgebreide ingebouwde rapporten. U kunt dan de productiviteit en de prestaties van alle marketingactiviteiten controleren en meten.
 
@@ -34,15 +35,15 @@ In het kader van Adobe Campaign Marketing Resource Management zijn de volgende c
 
 * **Taak**
 
-   Een taak komt overeen met een actie in het kader van een campagne. Een taak wordt toegewezen aan een groep of persoon. Een kindtaak kan van een oudertaak afhankelijk zijn, betekenend dat de oudertaak niet zal worden uitgevoerd tot alle kindtaken volledig zijn. Voorbeelden van taken zijn: verwijzen naar een website, een begrotingsherziening, een samenvatting, enz.
+  Een taak komt overeen met een actie in het kader van een campagne. Een taak wordt toegewezen aan een groep of persoon. Een kindtaak kan van een oudertaak afhankelijk zijn, betekenend dat de oudertaak niet zal worden uitgevoerd tot alle kindtaken volledig zijn. Voorbeelden van taken zijn: verwijzen naar een website, een begrotingsherziening, een samenvatting, enz.
 
-   Raadpleeg voor meer informatie hierover [Taken maken en beheren](../../mrm/using/creating-and-managing-tasks.md).
+  Raadpleeg voor meer informatie hierover [Taken maken en beheren](../../mrm/using/creating-and-managing-tasks.md).
 
 * **Marketingbronnen**
 
-   Met Adobe Campaign kunt u de voortgang volgen van gezamenlijke marketingprojecten, zoals communicatiemedia, actieplannen, nieuwsbrieven, enz. De aanmaak- en goedkeuringscyclus van deze marketingbronnen kan vanaf het dashboard van de bron worden gevolgd tot de publicatie ervan.
+  Met Adobe Campaign kunt u de voortgang volgen van gezamenlijke marketingprojecten, zoals communicatiemedia, actieplannen, nieuwsbrieven, enz. De aanmaak- en goedkeuringscyclus van deze marketingbronnen kan vanaf het dashboard van de bron worden gevolgd tot de publicatie ervan.
 
-   Raadpleeg voor meer informatie hierover [Marketing-resources beheren](../../mrm/using/managing-marketing-resources.md).
+  Raadpleeg voor meer informatie hierover [Marketing-resources beheren](../../mrm/using/managing-marketing-resources.md).
 
 >[!NOTE]
 >

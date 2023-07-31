@@ -2,12 +2,13 @@
 product: campaign
 title: Schema’s filteren
 description: Schema’s filteren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +20,11 @@ U kunt de schematoegang tot specifieke gebruikers, afhankelijk van hun toestemmi
 
 >[!NOTE]
 >
->Deze beperking geldt alleen voor niet-technische gebruikers: een technische gebruiker met verwante machtigingen of met behulp van een workflow kan gegevens ophalen en bijwerken .
+>Deze beperking geldt alleen voor niet-technische gebruikers: een technische gebruiker met gerelateerde machtigingen of met behulp van een workflow kan gegevens ophalen en bijwerken.
 
 * **readAccess**: biedt alleen-lezen toegang tot schemagegevens.
 
-   **Waarschuwing** - Alle gekoppelde tabellen moeten met dezelfde beperking worden ingesteld. Deze configuratie kan van invloed zijn op prestaties.
+  **Waarschuwing** - Alle gekoppelde tabellen moeten met dezelfde beperking worden ingesteld. Deze configuratie kan van invloed zijn op prestaties.
 
 * **writeAccess**: biedt schrijftoegang tot schemagegevens.
 
@@ -31,29 +32,29 @@ Deze filters worden ingevoerd bij de hoofdmap **element** niveau van de regeling
 
 * SCHRIJFmachtigingen beperken
 
-   Hier, wordt de filter gebruikt om SCHRIJVEN toestemmingen op het schema voor exploitanten zonder de toestemming van het BEHEER toe te staan. Dit betekent dat alleen beheerders schrijfmachtigingen hebben voor entiteiten die in dit schema worden beschreven.
+  Hier, wordt de filter gebruikt om SCHRIJVEN toestemmingen op het schema voor exploitanten zonder de toestemming van het BEHEER toe te staan. Dit betekent dat alleen beheerders schrijfmachtigingen hebben voor entiteiten die in dit schema worden beschreven.
 
-   ```
-   <sysFilter name="writeAccess">      
-    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">      
+   <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
+  </sysFilter>
+  ```
 
 * Rechten voor LEZEN EN SCHRIJVEN beperken:
 
-   Hier, wordt de filter gebruikt om zowel LEZEN als SCHRIJVEN toestemmingen op het schema voor alle exploitanten toe te staan. Alleen de **internal** account, weergegeven door de expressie &quot;$(loginId)!=0&quot;, heeft deze toestemmingen.
+  Hier, wordt de filter gebruikt om zowel LEZEN als SCHRIJVEN toestemmingen op het schema voor alle exploitanten toe te staan. Alleen de **internal** account, weergegeven door de expressie &quot;$(loginId)!=0&quot;, heeft deze toestemmingen.
 
-   ```
-   <sysFilter name="readAccess"> 
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   
-   <sysFilter name="writeAccess">  
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="readAccess"> 
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  
+  <sysFilter name="writeAccess">  
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  ```
 
-   Mogelijk **expr** de kenmerkwaarden die worden gebruikt om de voorwaarde te definiëren, zijn TRUE of FALSE.
+  Mogelijk **expr** de kenmerkwaarden die worden gebruikt om de voorwaarde te definiëren, zijn TRUE of FALSE.
 
 >[!NOTE]
 >
