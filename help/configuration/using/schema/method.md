@@ -2,8 +2,9 @@
 product: campaign
 title: Schema-elementen en -kenmerken - methode-element
 description: methode-element
+feature: Schema Extension
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -51,7 +52,7 @@ De &quot;@bibliotheek&quot; is nodig voor het declareren van een nieuwe methode 
 
 ## Beschrijving van kenmerk {#attribute-description-10}
 
-* **access (tekenreeks)**: this attribute define access control for using the method. Als dit kenmerk ontbreekt, is identificatie verplicht. Beschikbare waarden zijn: &#39;anoniem&#39;, &#39;admin&#39; en &#39;sql&#39;.
+* **access (tekenreeks)**: dit kenmerk definieert toegangsbeheer voor het gebruik van de methode. Als dit kenmerk ontbreekt, is identificatie verplicht. Beschikbare waarden zijn: &#39;anoniem&#39;, &#39;admin&#39; en &#39;sql&#39;.
 * **const (Boolean)**: als deze eigenschap is geactiveerd, betekent dit dat de gedeclareerde methode de entiteit wijzigt
 * **label (tekenreeks)**: label van de methode.
 * **bibliotheek (tekenreeks)**: deze methode is niet native voor de toepassing. Dit kenmerk neemt de waarde van de methodebibliotheek waar de methodedefinitie is gevonden (nms:mylibrary.js).

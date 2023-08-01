@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelementen en -kenmerken - element join
 description: join-element
+feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -48,9 +49,9 @@ Als de `<join>` het element wordt niet gespecificeerd wanneer het element van he
 
 ## Beschrijving van kenmerk {#attribute-description-7}
 
-* **dstFilterExpr (tekenreeks)**: Met dit kenmerk kunt u het aantal waarden in de externe tabel beperken.
-* **xpath-dst (tekenreeks)**: this attribute receive an Xpath (@name attribute of the remote table).
-* **xpath-src (tekenreeks)**: this attribute receive an Xpath (@name attribute in the current schema).
+* **dstFilterExpr (tekenreeks)**: met dit kenmerk kunt u het aantal waarden beperken dat in aanmerking komt in de externe tabel.
+* **xpath-dst (tekenreeks)**: dit kenmerk ontvangt een Xpath (@name-kenmerk van de externe tabel).
+* **xpath-src (tekenreeks)**: dit kenmerk ontvangt een Xpath (@name-kenmerk in het huidige schema).
 
 ## Voorbeelden {#examples-6}
 

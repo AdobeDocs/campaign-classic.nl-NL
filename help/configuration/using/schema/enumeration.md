@@ -2,8 +2,9 @@
 product: campaign
 title: Schema-elementen en -kenmerken - opsommingselement
 description: opsommingselement
+feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 2%
@@ -48,7 +49,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
 
 * **basetype (string)**: type van de waarden die in de opsomming zijn opgeslagen.
 
-   Lijst met beschikbare typen:
+  Lijst met beschikbare typen:
 
    * ALLE
    * bin
@@ -72,7 +73,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
    * memo
    * MNTOKEN
    * procent
-   * primarykey
+   * primaire sleutel
    * kort
    * string
    * tijd
@@ -80,10 +81,10 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
    * uuid
 
 * **default (string)**: Standaardwaarde. De standaardwaarde kan ook een van de waarden zijn die in de opsomming worden gedefinieerd.
-* **desc (tekenreeks)**: opsommingsbeschrijving.
-* **label (tekenreeks)**: opsommingslabel.
+* **desc (tekenreeks)**: beschrijving van opsomming.
+* **label (tekenreeks)**: opsomlabel.
 * **name (string)**: interne naam van de opsomming.
-* **sjabloon (tekenreeks)**: this attribute define a reference to an `<enumeration>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
+* **sjabloon (tekenreeks)**: dit kenmerk definieert een verwijzing naar een `<enumeration>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
 
 ## Voorbeelden {#examples-4}
 

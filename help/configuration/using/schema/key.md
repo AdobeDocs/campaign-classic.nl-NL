@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelementen en -kenmerken - hoofdelement
 description: sleutelelement
+feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -54,8 +55,8 @@ De eerste 1000 id&#39;s zijn gereserveerd, dus als een reeks waarden moet worden
 ## Beschrijving van kenmerk {#attribute-description-8}
 
 * **allowEmptyPart (boolean)**: in het geval van een samengestelde sleutel, als dit attribuut wordt geactiveerd, wordt zij als geldig beschouwd als minstens één van zijn sleutels niet leeg is. Als dit het geval is, is de lege nodewaarde &quot;0&quot;(boolean of voor alle soorten numerieke gegevens). Standaard moeten alle toetsen waaruit een samengestelde sleutel bestaat, worden ingevoerd.
-* **applyIf (string)**: Met dit kenmerk kunt u de sleutel optioneel maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.
-* **internal (boolean)**: als het wordt geactiveerd, laat dit kenmerk Adobe Campaign weten dat de sleutel primair is.
+* **applyIf (string)**: met dit kenmerk kunt u de sleutel optioneel maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.
+* **internal (boolean)**: als dit kenmerk is geactiveerd, laat dit kenmerk Adobe Campaign weten dat de sleutel primair is.
 * **label (tekenreeks)**: label van de toets.
 * **naam (MNTOKEN)**: interne naam van de sleutel.
 * **noDbIndex (Boolean)**: als deze is geactiveerd (noDbIndex=&quot;true&quot;), wordt het veld dat overeenkomt met de sleutel niet geïndexeerd.

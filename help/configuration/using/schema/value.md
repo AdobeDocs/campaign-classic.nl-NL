@@ -2,11 +2,12 @@
 product: campaign
 title: Elementen en kenmerken - waardeelement
 description: Elementen en kenmerken
+feature: Schema Extension
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -45,7 +46,7 @@ Met dit element kunt u de waarden definiëren die in een opsomming zijn opgeslag
 
 ## Beschrijving van kenmerk {#attribute-description-16}
 
-* **applyIf (string)**: Met dit kenmerk kunt u een opsommingswaarde optioneel maken. Er wordt een XTK-expressie ontvangen.
+* **applyIf (string)**: met dit kenmerk kunt u een opsommingswaarde optioneel maken. Er wordt een XTK-expressie ontvangen.
 * **desc (tekenreeks)**: beschrijving van de opsommingswaarde.
 * **enabledIf (string)**: voorwaarde voor het activeren van de opsommingswaarde.
 * **img (tekenreeks)**: afbeelding die is gekoppeld aan de opsomming in het formulier &quot;namespace:image_name&quot;. De afbeelding moet op de toepassingsserver worden geïmporteerd.

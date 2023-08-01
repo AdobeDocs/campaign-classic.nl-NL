@@ -2,15 +2,16 @@
 product: campaign
 title: Hypotheses maken
 description: Leer hoe u hypothesen maakt in Campagne Response Manager
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 3%
 
 ---
@@ -29,7 +30,7 @@ Hypothesen kunnen pas worden berekend nadat de marketingcampagne is gestart en d
 
 ## Een hypothese maken tijdens een levering {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
-U kunt als volgt een hypothese over een bestaande levering maken:
+Als u een hypothese over een bestaande levering wilt maken, past u het volgende proces toe:
 
 >[!NOTE]
 >
@@ -80,7 +81,7 @@ U kunt als volgt een hypothese over een bestaande levering maken:
 
 ## Verwijzing naar een hypothese in een campagnelevering {#referencing-a-hypothesis-in-a-campaign-delivery}
 
-U kunt in een marketingcampagne naar een hypothese verwijzen voordat deze wordt gestart. In dit geval wordt de hypothese automatisch gestart zodra de levering is verzonden, op basis van de uitvoeringsinstellingen die in de hypothesesjabloon zijn gedefinieerd. U kunt als volgt een hypothese in een levering maken:
+U kunt in een marketingcampagne naar een hypothese verwijzen voordat deze wordt gestart. In dit geval wordt de hypothese automatisch gestart zodra de levering is verzonden, op basis van de uitvoeringsinstellingen die in de hypothesesjabloon zijn gedefinieerd. Als u een hypothese wilt maken in een levering, past u het volgende proces toe:
 
 1. Afhankelijk van uw behoeften kunt u een of meer **[!UICONTROL Delivery]** tekstsjablonen, zoals beschreven in [deze sectie](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Maak een marketingcampagne en maak doelgerichte workflows.
@@ -131,7 +132,7 @@ Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met
    ![](assets/response_hypothesis_instance_offer_004.png)
 
 1. Verfijn indien nodig de query.
-1. Klikken **[!UICONTROL Start]** om de hypothese te laten lopen.
+1. Klikken **[!UICONTROL Start]** om de hypothese te laten doorlopen.
 1. De resultaten van de hypothese kunnen in het **[!UICONTROL General]** en **[!UICONTROL Reactions]** tabs. [Meer informatie](hypothesis-tracking.md)
 
    In de **[!UICONTROL Measurement]** tab.
@@ -140,7 +141,7 @@ Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met
 
    Als de **[!UICONTROL Update offer proposition status]** in het hypothesesjabloon is de status van het voorstel automatisch gewijzigd, waardoor feedback wordt gegeven over de impact van de campagne (zie voor meer informatie [Transacties](hypothesis-templates.md#transactions)).
 
-## Voorbeeld: een hypothese te creëren die verband houdt met de levering {#example--creating-a-hypothesis-linked-to-a-delivery}
+## Voorbeeld: een hypothese maken die gekoppeld is aan een levering {#example--creating-a-hypothesis-linked-to-a-delivery}
 
 In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een levering. Deze hypothese zal gebaseerd zijn op het eerder gemaakte model. [Meer informatie](hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)
 
@@ -150,7 +151,7 @@ Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt ee
 
    In ons voorbeeld, zullen wij een directe posttype levering gebruiken.
 
-1. Vorm een zaadadres: het eerder gecreëerde hypothesemalplaatje werd gevormd om een controlegroep in de reactieresultaten in aanmerking te nemen.
+1. Vorm een zaadadres: het eerder gecreeerde hypothesemalplaatje werd gevormd om een controlegroep in de reactieresultaten rekening te houden.
 
    ![](assets/response_hypothesis_delivery_example_007.png)
 
