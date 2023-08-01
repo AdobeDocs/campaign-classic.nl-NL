@@ -2,13 +2,13 @@
 product: campaign
 title: S met de verbeterde MTA in Adobe Campaign Classic
 description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '1736'
 ht-degree: 3%
 
 ---
@@ -90,32 +90,9 @@ Nee. De bevordering vereist geen omschakeling aan nieuwe IPs, zodat kunt u blijv
 
 **Zal de upgrade naar de uitgebreide overeenkomst inzake commercieel vervoer gevolgen hebben voor campagnes of leveringen die momenteel worden uitgevoerd?**
 
-Alle leveringen die waren voorbereid voordat uw instantie werd geüpgraded om de verbeterde MTA te gebruiken, moeten opnieuw worden voorbereid om de nieuwe MTA correct te kunnen gebruiken.
-
 Voor klanten die de functionaliteit van het de transactieoverseinen van Adobe Campaign gebruiken, zullen om het even welke API vraag om een e-mail teweeg te brengen tijdens de zeer korte verbeteringsonderbreking in de rij worden geplaatst en zullen na voltooiing van de verbetering worden geprobeerd.
 
 ## Verbeterde specifieke kenmerken van MTA {#enhanced-mta-impacts}
-
-### Verbeterde MTA-headers
-
-De recentste instanties van de Campaign Classic omvatten code die de vereiste Verbeterde kopballen MTA aan elk bericht toevoegt. Als u Adobe Campaign 19.1 (build 9032) of hoger gebruikt en als dit niet het geval is, moet u [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de parameter &quot;useMomentum=true&quot; toe te voegen aan de configuratie van de uitvoeringsinstantie (in het gedeelte [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) bestand), wat uw marketingexemplaar kan zijn, [mid-sourcing-instantie](../../installation/using/mid-sourcing-server.md), of [instantie voor het uitvoeren van transactieberichten](../../message-center/using/configuring-instances.md#execution-instance), afhankelijk van uw configuratie.
-
-Als u echter een oudere instantie gebruikt die deze code niet bevat, wordt een nieuwe typologieregel met de naam **[!UICONTROL Typology Rule for Enhanced MTAs]** moet worden toegevoegd aan alle bestaande typologieën in uw instantie van de Campagne.
-Deze regel wordt toegevoegd door een **[!UICONTROL Typology]** pakket geïnstalleerd als deel van de verbetering aan Verbeterde MTA.
-
->[!IMPORTANT]
->
->Als u deze typologieregel in uw typologieën ziet, schrap of wijzig het op geen enkele manier. Anders kunnen de e-mailleveringen nadelig worden beïnvloed.
-
-Dit **[!UICONTROL Typology]** -pakket moet worden geïnstalleerd op het marketingexemplaar van Adobe Campaign.
-
-Als u een hybride client bent, geeft het Adobe Campaign-team u instructies over het installeren van de **[!UICONTROL Typology]** pakket op uw marketing instantie als deel van de verbetering aan Verbeterde MTA. Neem contact op met uw accountmanager voor de volledige instructies.
-
->[!IMPORTANT]
->
->Instructies van het Adobe Campaign-team over het installeren van de **[!UICONTROL Typology]** De verpakking dient zorgvuldig gevolgd te worden. Anders kunnen er grote problemen optreden met uw IP&#39;s die worden gebruikt om e-mails te verzenden.
-
-Voor meer over typologieën, zie [deze sectie](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Nieuwe MX-regels
 
@@ -147,7 +124,7 @@ Voor meer op de leveringsproductie, zie [deze sectie](../../reporting/using/glob
 
 De instellingen voor Opnieuw proberen in de levering worden niet meer gebruikt door de campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor meer informatie over pogingen raadpleegt u [deze sectie](steps-sending-the-delivery.md#configuring-retries).
+Zie voor meer informatie over pogingen [deze sectie](steps-sending-the-delivery.md#configuring-retries).
 
 ### Geldigheidsperiode
 
@@ -157,7 +134,7 @@ Bijvoorbeeld, als de geldigheidsperiode aan de standaardwaarde van 5 dagen in Ca
 
 Wanneer een bericht gedurende 3,5 dagen in de wachtrij van de Enhanced MTA heeft gestaan en niet is geleverd, treedt er een time-out op en zal de status van het bericht worden bijgewerkt van **[!UICONTROL Sent]** naar **[!UICONTROL Failed]** in de leveringslogboeken.
 
-Voor meer informatie over de geldigheidsperiode raadpleegt u [deze sectie](steps-sending-the-delivery.md#defining-validity-period).
+Zie voor meer informatie over de geldigheidsperiode [deze sectie](steps-sending-the-delivery.md#defining-validity-period).
 
 ### DKIM-ondertekening
 
@@ -168,11 +145,11 @@ Voor meer informatie over DKIM raadpleegt u de [Adobe Handleiding voor beste pra
 
 In de **[!UICONTROL Summary]** weergave van een e-maillevering [dashboard](delivery-dashboard.md)de **[!UICONTROL Success]** het percentage begint bij 100% en daalt geleidelijk gedurende de hele levering. [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period), terwijl de zachte en harde grenzen worden gemeld van de Enhanced MTA naar Campaign.
 
-Alle berichten worden zelfs als **[!UICONTROL Sent]** in de [verzenden, logbestanden](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campaign aan de Verbeterde MTA worden opnieuw aangeboden. Zij blijven deze status behouden, tenzij of totdat [stuiten](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campaign.
+Alle berichten worden zelfs als **[!UICONTROL Sent]** in de [verzenden, logbestanden](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campaign aan de Verbeterde MTA worden opnieuw aangeboden. Zij blijven deze status behouden, tenzij of totdat [stuiteren](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campaign.
 
 Wanneer hard-stuiterende berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** tot **[!UICONTROL Failed]** en de **[!UICONTROL Success]** het percentage wordt dienovereenkomstig verlaagd.
 
-Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, tonen zij nog **[!UICONTROL Sent]** en de **[!UICONTROL Success]** percentage is nog niet bijgewerkt. De zachte die berichten van het stuiteren zijn dan [opnieuw](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) gedurende de gehele geldigheidsduur van de levering:
+Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, tonen zij nog **[!UICONTROL Sent]** en de **[!UICONTROL Success]** percentage is nog niet bijgewerkt. De zachte die berichten van het stuiteren zijn dan [hervat](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) gedurende de gehele geldigheidsduur van de levering:
 
 * Als een nieuwe poging voor het eind van de geldigheidsperiode succesvol is, blijft de berichtstatus zoals **[!UICONTROL Sent]** en de **[!UICONTROL Success]** percentage blijft ongewijzigd.
 
@@ -204,7 +181,7 @@ Wanneer het bericht werkelijk aan de gerichte profielen wordt geleverd en zodra 
 
 Wanneer hard-bouncing berichten terug van Verbeterde MTA worden gemeld, verandert hun logboekstatus van **[!UICONTROL Taken into account by the service provider]** tot **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft hun logboekstatus onveranderd (**[!UICONTROL Taken into account by the service provider]**): alleen [oorzaak van fout](understanding-delivery-failures.md#delivery-failure-types-and-reasons) is bijgewerkt<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. De **[!UICONTROL Success]** percentage blijft ongewijzigd. De zachte die berichten bewegen worden dan opnieuw geprobeerd door de levering [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period):
+Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft hun logboekstatus onveranderd (**[!UICONTROL Taken into account by the service provider]**): alleen de [oorzaak van fout](understanding-delivery-failures.md#delivery-failure-types-and-reasons) is bijgewerkt<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. De **[!UICONTROL Success]** percentage blijft ongewijzigd. De zachte die berichten bewegen worden dan opnieuw geprobeerd door de levering [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period):
 
 * Als een nieuwe poging is gelukt vóór het einde van de geldigheidsperiode, verandert de berichtstatus in **[!UICONTROL Sent]** en de **[!UICONTROL Success]** het percentage wordt dienovereenkomstig verhoogd.
 
@@ -226,8 +203,8 @@ De lijsten hieronder tonen de veranderingen in KPIs en het verzenden van logboek
 | Het bericht wordt met succes afgelost van Campagne aan Verbeterde MTA | **[!UICONTROL Success]** percentage wordt niet weergegeven (begint bij 0%) | Door de dienstverlener in aanmerking genomen |
 | Fel-stuiterende berichten worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Mislukt |
 | De zachte die berichten bewegen worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Door de dienstverlener in aanmerking genomen |
-| Opnieuw proberen van zachte berichten is geslaagd | **[!UICONTROL Success]** percentage dienovereenkomstig verhoogd | Verzonden |
-| Opnieuw proberen van zachte berichten mislukt | Geen wijziging in **[!UICONTROL Success]** percentage | Mislukt |
+| Herhalingen van soft-bouncing berichten zijn succesvol | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd | Verzonden |
+| Herhalingen van soft-bouncing berichten mislukken | Geen wijziging in **[!UICONTROL Success]** percentage | Mislukt |
 
 **Zonder e-mailfeedbackservice**
 
@@ -236,5 +213,5 @@ De lijsten hieronder tonen de veranderingen in KPIs en het verzenden van logboek
 | Het bericht wordt met succes afgelost van Campagne aan Verbeterde MTA | **[!UICONTROL Success]** percentage begint bij 100% | Verzonden |
 | Fel-stuiterende berichten worden gemeld terug van Verbeterde MTA | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verlaagd | Mislukt |
 | De zachte die berichten bewegen worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden |
-| Opnieuw proberen van zachte berichten is geslaagd | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden | **[!UICONTROL Success]** percentage dienovereenkomstig verhoogd | Verzonden |
-| Opnieuw proberen van zachte berichten mislukt | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verlaagd | Mislukt |
+| Herhalingen van soft-bouncing berichten zijn succesvol | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd | Verzonden |
+| Herhalingen van soft-bouncing berichten mislukken | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verlaagd | Mislukt |
