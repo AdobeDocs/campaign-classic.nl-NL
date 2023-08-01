@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '2595'
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Alle categorieën feedback worden nu vastgelegd voor volledige en nauwkeurige rapportage.
 * De berekening van de Geleverd-indicator is nu gebaseerd op realtimefeedback van de Enhanced MTA voor verbeterde nauwkeurigheid en reactiviteit.
 * EFS lost het probleem van vertragingen bij het rapporteren van synchrone soft bounces op.
-
-Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sending-with-enhanced-mta.md#efs) voor meer informatie.
-Als u geïnteresseerd bent in deelname aan deze gesloten bèta, vult u dit [formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) in. We nemen dan contact met u op.
 
 **Overige wijzigingen**
 
