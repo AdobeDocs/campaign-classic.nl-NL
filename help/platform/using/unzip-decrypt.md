@@ -3,28 +3,31 @@ product: campaign
 title: Een bestand ontsleutelen of ontsleutelen
 description: Leer hoe u een bestand in Campagne decodeert of decodeert voordat u het verwerkt
 feature: Workflows
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '739'
 ht-degree: 11%
 
 ---
 
+
 # Een bestand decoderen of decoderen {#unzipping-or-decrypting-a-file-before-processing}
-
-
 
 Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
 
+>[!IMPORTANT]
+>
+>U kunt gecomprimeerde bestanden van meer dan 4 GB niet decomprimeren.
+
 Om dit te kunnen doen:
 
-1. Gebruik de [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbare/privé zeer belangrijke paar te produceren.
+1. Gebruik de [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbare/privé zeer belangrijke paar te produceren om dossierdecryptie toe te staan.
 
    >[!NOTE]
    >
@@ -32,8 +35,9 @@ Om dit te kunnen doen:
    >
    >Merk op dat uw exemplaar op AWS moet worden gehost en geüpgraded met de [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
-1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
 1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
+
+   Als uw installatie van Adobe Campaign wordt gehost op Adobe, neemt u contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
 
 Vervolgens kunt u de gewenste voorverwerkingsopdrachten in uw workflows gebruiken:
 
@@ -62,17 +66,17 @@ De volgende stappen voor dit gebruik zijn nodig:
 1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
-   * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
+   * De persoonlijke sleutel wordt door het Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
 
    ![](assets/gpg_generate.png)
 
-1. In het externe systeem gebruikt u de openbare sleutel die u van het Configuratiescherm hebt gedownload om de gegevens te coderen die u naar Campaign Classic wilt importeren.
+1. In het externe systeem gebruikt u de openbare sleutel die u van het Configuratiescherm hebt gedownload om de gegevens te coderen die u naar het Campaign Classic wilt importeren.
 
 1. In Campaign Classic, bouwt een werkschema om de gecodeerde gegevens in te voeren en het te decrypteren gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
    ![](assets/gpg_import_workflow.png)
 
-   * **[!UICONTROL File transfer]** activiteit: hiermee wordt het bestand van een externe bron naar Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
+   * **[!UICONTROL File transfer]** activiteit: hiermee wordt het bestand van een externe bron naar het Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
    * **[!UICONTROL Data loading (file)]** activiteit: laadt de gegevens van het dossier in het gegevensbestand en decrypteert het gebruikend de privé sleutel die in het Controlebord wordt geproduceerd.
 
 1. Open de **[!UICONTROL File transfer]** Geef vervolgens de externe account op waaruit u het gecodeerde .gpg-bestand wilt importeren.
@@ -107,4 +111,4 @@ In deze video wordt getoond hoe u een GPG-sleutel kunt gebruiken voor het decode
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
