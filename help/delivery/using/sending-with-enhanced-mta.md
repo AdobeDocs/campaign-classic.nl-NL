@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: S met de verbeterde MTA in Adobe Campaign Classic
+title: Verzenden met de verbeterde MTA in Adobe Campaign Classic
 description: Meer informatie over de reikwijdte en de specifieke kenmerken van het verzenden van e-mails met de Adobe Campaign Enhanced MTA
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
@@ -23,9 +23,9 @@ Het is geïmplementeerd om de schaalbaarheid te verbeteren, de doorvoer van de l
 
 >[!IMPORTANT]
 >
->De Adobe Campaign Enhanced MTA is alleen beschikbaar voor door Campaign Classic gehoste of hybride klanten. Campaign Classic-installaties op locatie kunnen niet worden bijgewerkt om de verbeterde MTA te gebruiken.
+>De Adobe Campaign Enhanced MTA is alleen beschikbaar voor klanten met een Campaign Classic of hybride. Campaign Classic-installaties op locatie kunnen niet worden geüpgraded om de verbeterde MTA te gebruiken.
 
-Als u een instantie van de Campaign Classic na September 2018 provisioned was, gebruikt u Verbeterde MTA. Voor alle andere klanten van Campaign Classic, zie [Veelgestelde vragen](#enhanced-mta-faq) hieronder.
+Als u een instantie van het Campaign Classic na September 2018 provisioned was, gebruikt u Verbeterde MTA. Voor alle andere klanten van het Campaign Classic, zie [Veelgestelde vragen](#enhanced-mta-faq) hieronder.
 
 De verbeterde implementatie MTA kan enkele bestaande functionaliteit van de Campagne beïnvloeden. Zie voor meer informatie de [Verbeterde specifieke kenmerken van MTA](#enhanced-mta-impacts).
 
@@ -68,7 +68,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **Wat wordt vereist om aan Verbeterde MTA te bevorderen?**
 
-Als u na september 2018 een instantie van Campaign Classic was voorzien, wordt geen actie vereist aangezien u reeds Uitgebreide MTA gebruikt.
+Als u een instantie van het Campaign Classic na September 2018 provisioned was, wordt geen actie vereist aangezien u reeds Uitgebreide MTA gebruikt.
 
 Voor alle andere gehoste of gedeeltelijk gehoste (hybride) klanten bereikt het Adobe Campaign-team een datum voor de migratie en geeft het details over de juiste stappen die nodig zijn voor de migratie.
 
@@ -78,9 +78,9 @@ Voor alle andere gehoste of gedeeltelijk gehoste (hybride) klanten bereikt het A
 
 **Wat is het proces om mijn instantie aan Verbeterde MTA te bevorderen?**
 
-Het gehele proces voor de gehoste exemplaren vereist een paar minuten downtime. Adobe controleert de e-maildoorvoer en de leveringscapaciteit tot 24 uur na de upgrade om de impact op uw e-mailleveringen te beoordelen.
+Het gehele proces voor de gehoste exemplaren vereist een paar minuten downtime. De Adobe zal de e-mailproductie en de leverbaarheid tot 24 uur na de upgrade controleren om de gevolgen voor uw e-mailleveringen te beoordelen.
 
-Als er problemen worden ontdekt, kan Adobe uw exemplaar snel en tijdelijk terugzetten naar de native Adobe Campaign MTA.
+Als er problemen worden ontdekt, kan de Adobe uw exemplaar snel en tijdelijk terugzetten naar de native Adobe Campaign MTA.
 
 Momenteel heeft de verbeterde MTA alleen invloed op het e-mailkanaal. Uw pushberichten en SMS-leveringen blijven gebruikmaken van de native Campagne MTA en worden op geen enkele wijze beïnvloed door de upgrade.
 
@@ -135,7 +135,7 @@ Zie voor meer informatie over de geldigheidsperiode [deze sectie](steps-sending-
 ### DKIM-ondertekening
 
 DKIM (DomainKeys Identified Mail) e-mailverificatie wordt ondertekend door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Voor meer informatie over DKIM raadpleegt u de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+Voor meer informatie over DKIM raadpleegt u de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Leveringssuccesrapportage
 
