@@ -2,20 +2,19 @@
 product: campaign
 title: Invoerformulieren
 description: Meer informatie over het gebruik van invoerformulieren in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Management
+role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
 
 # Invoerformulieren{#input-forms}
-
-
 
 Hieronder volgen enkele algemene beginselen voor het gebruik van inputformulieren in Adobe Campaign.
 
@@ -62,7 +61,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 Voorbeelden:
 
 * **@date**: selecteert het kenmerk met de naam &quot;date&quot;
-* **hoofdstuk/@titel**: selecteert het kenmerk &quot;title&quot; onder het tabblad `<chapter>` element
+* **hoofdstuk/@titel**: hiermee selecteert u het kenmerk &quot;title&quot; onder het tabblad `<chapter>` element
 * **../@date**: selecteert de datum uit het bovenliggende element van het huidige element
 
 Het bewerkingsbesturingselement past zich automatisch aan het overeenkomstige gegevenstype aan en gebruikt het label dat in het schema is gedefinieerd.
@@ -71,11 +70,11 @@ Elk veld wordt standaard op één regel weergegeven en neemt alle beschikbare ru
 
 >[!CAUTION]
 >
->Het invoerformulier moet verwijzen naar een **type=&quot;contentForm&quot;** kenmerk op de **`<form>`** -element om automatisch het frame toe te voegen dat vereist is voor de invoer van inhoud.
+>Het invoerformulier moet verwijzen naar een **type=&quot;contentForm&quot;** kenmerk op de **`<form>`** -element om automatisch het frame toe te voegen dat nodig is voor de invoer van inhoud.
 
 ## Opmaak {#formatting}
 
-De rangschikking van de besturingselementen ten opzichte van elkaar lijkt op de rangschikking die wordt gebruikt in HTML-tabellen, met de mogelijkheid om een besturingselement te verdelen in meerdere kolommen, interliniërende elementen of het gebruik van de beschikbare ruimte te specificeren. Houd er echter rekening mee dat de opmaak alleen de verdeling van de verhoudingen toestaat; u kunt geen vaste afmetingen opgeven voor een object.
+De rangschikking van de besturingselementen ten opzichte van elkaar lijkt op de rangschikking die wordt gebruikt in HTML-tabellen, met de mogelijkheid om een besturingselement te verdelen in meerdere kolommen, interliniërende elementen of het gebruik van de beschikbare ruimte te specificeren. Houd er echter rekening mee dat de opmaak alleen de verdeling van verhoudingen toestaat; u kunt geen vaste afmetingen voor een object opgeven.
 
 Raadpleeg [deze sectie](../../configuration/using/form-structure.md#formatting) voor meer informatie.
 
@@ -96,7 +95,7 @@ Met dit besturingselement wordt een bewerkbare kolomlijst weergegeven met een we
 </input>
 ```
 
-Het besturingselement voor de lijst moet worden ingevuld met de **type=&quot;list&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
+Het besturingselement voor de lijst moet worden ingevuld met de knop **type=&quot;list&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
 
 De kolommen worden gedeclareerd door het onderliggende object **`<input>`** elementen van de lijst.
 
@@ -115,7 +114,7 @@ Standaard worden de werkbalkknoppen verticaal uitgelijnd. Ze kunnen ook horizont
 </input>
 ```
 
-De **toolbarCaption** Met dit kenmerk dwingt u de horizontale uitlijning van de werkbalk af en vult u de titel boven de lijst in.
+De **toolbarCaption** Met dit kenmerk wordt de horizontale uitlijning van de werkbalk afgedwongen en wordt de titel boven de lijst gevuld.
 
 >[!NOTE]
 >
@@ -127,7 +126,7 @@ Het invoegen en bewerken van lijstgegevens kan in een afzonderlijk bewerkingsfor
 
 In de volgende gevallen worden formulieren in lijsten bewerken gebruikt:
 
-* Ter vergemakkelijking van de invoer van informatie,
+* Ter vereenvoudiging van de gegevensinvoer,
 * Aanwezigheid van een meerregelig besturingselement
 * De kolommen in de lijst bevatten alleen de hoofdvelden en in het formulier worden alle velden van het verzamelingselement weergegeven.
 
@@ -146,13 +145,13 @@ In de volgende gevallen worden formulieren in lijsten bewerken gebruikt:
 </input>
 ```
 
-De definitie van het bewerkingsformulier wordt opgegeven via de **`<form>`** -element onder het lijstelement. De structuur ervan is identiek aan de structuur van een invoerformulier.
+De definitie van het bewerkingsformulier wordt opgegeven via de **`<form>`** onder het lijstelement. De structuur ervan is identiek aan de structuur van een invoerformulier.
 
 A **[!UICONTROL Detail]** wordt automatisch toegevoegd wanneer de knop **zoom=&quot;true&quot;** wordt in de lijstdefinitie ingevoerd. Hiermee kunt u het bewerkingsformulier openen op de geselecteerde regel.
 
 >[!NOTE]
 >
->Het toevoegen van **zoomOnAdd=&quot;true&quot;** Met dit kenmerk wordt het bewerkingsformulier afgedwongen wanneer een element in de lijst wordt ingevoegd.
+>De **zoomOnAdd=&quot;true&quot;** Met dit kenmerk wordt het bewerkingsformulier afgedwongen wanneer een element in de lijst wordt ingevoegd.
 
 ### Tablijst {#tab-list}
 
@@ -170,7 +169,7 @@ In deze lijst wordt het bewerken van verzamelingselementen weergegeven in de vor
 </container>
 ```
 
-Het besturingselement voor de lijst moet worden ingevuld met de **type=&quot;notebooklist&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
+Het besturingselement voor de lijst moet worden ingevuld met de knop **type=&quot;notebooklist&quot;** en het pad van de lijst moet naar het verzamelingselement verwijzen.
 
 De titel van het tabblad bevat de waarde van de gegevens die zijn ingevoerd via het dialoogvenster **xpath-label** kenmerk.
 

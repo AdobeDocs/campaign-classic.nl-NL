@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Lidmaatschappen beheren
-description: Lidmaatschappen beheren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Meer informatie over het beheren van abonnementen in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Subscriptions
+role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1116'
 ht-degree: 2%
 
 ---
 
 # Lidmaatschappen beheren{#managing-subscriptions}
-
-
 
 ## Informatie over informatiediensten {#about-information-services}
 
@@ -26,9 +25,9 @@ Een informatiedienst omvat:
 * bevestigingsmechanismen voor abonnementen en abonnementen (eenvoudige mechanismen met bevestiging, dubbele aanmelding, enz.);
 * Het volgen van abonneegeschiedenis.
 
-Deze diensten omvatten standaard specifieke statistische rapporten: het volgen van abonnees, loyaliteitsniveau, uitstaptendensen, enz.
+Deze services omvatten standaard specifieke statistische rapporten: volgen van abonnees, niveau van loyaliteit, trends voor abonnementen, enz.
 
-Voor e-mails worden de verplichte abonnementskoppelingen automatisch gegenereerd. De volledige procedure voor het in- en uitschakelen van e-mail verloopt volledig geautomatiseerd, waarbij de historie wordt bijgehouden zodat de geldende regels volledig worden nageleefd.
+Voor e-mails worden de verplichte abonnementskoppelingen automatisch gegenereerd. De volledige procedure voor het in- en uitschakelen van e-mail verloopt volledig geautomatiseerd, waarbij de historie wordt bijgehouden om volledige naleving van de geldende regels te garanderen.
 
 Er zijn drie modi voor abonnementen/abonnementen op services:
 
@@ -48,21 +47,21 @@ Als u toegang wilt krijgen tot de kaart met informatieservices, opent u de **[!U
 
 ![](assets/s_ncs_user_services_new.png)
 
-Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Als u een service wilt maken, klikt u op de knop **[!UICONTROL Create]** boven de lijst.
+Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Om de dienst tot stand te brengen, klik **[!UICONTROL Create]** boven de lijst.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Voer de naam van de service in het dialoogvenster **[!UICONTROL Label]** en selecteer het leveringskanaal: e-mail-, mobiele, Facebook-, Twitter- of mobiele toepassingen.
+* Voer de naam van de service in het dialoogvenster **[!UICONTROL Label]** en selecteer het leveringskanaal: e-mail, mobiel, Facebook, Twitter of mobiele toepassingen.
 
-   >[!NOTE]
-   >
-   >Facebook- en Twitter-abonnementen worden beschreven in [deze sectie](../../social/using/about-social-marketing.md). Mobiele toepassingsabonnementen worden beschreven in [Mobiel toepassingskanaal](about-mobile-app-channel.md).
+  >[!NOTE]
+  >
+  >Facebook- en Twitter-abonnementen worden beschreven in [deze sectie](../../social/using/about-social-marketing.md). Mobiele toepassingsabonnementen worden beschreven in [Mobiel toepassingskanaal](about-mobile-app-channel.md).
 
 * Selecteer voor een E-mailtypeservice de optie **Leveringsmodus**. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]**.
 * U kunt **bevestigingsberichten** voor een abonnement of een abonnement. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de corresponderende leveringen te maken via de **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]** velden. Deze sjablonen moeten worden geconfigureerd met een **[!UICONTROL Subscription]** type target mapping, zonder een gedefinieerd doel. Zie sectie [E-mailkanaal](about-email-channel.md).
-* Abonnementen zijn standaard onbeperkt. U kunt de selectie van **[!UICONTROL Unlimited]** optie om een geldigheidstermijn voor de dienst te bepalen. De duur kan in dagen worden opgegeven (**[!UICONTROL d]** ) of maanden (**[!UICONTROL m]** ).
+* Abonnementen zijn standaard onbeperkt. U kunt de selectie van **[!UICONTROL Unlimited]** optie om een geldigheidstermijn voor de dienst te bepalen. De duur kan worden opgegeven in dagen (**[!UICONTROL d]** ) of maanden (**[!UICONTROL m]** ).
 
-Zodra de dienst is opgeslagen, wordt het toegevoegd aan de lijst van de Diensten en van Abonnementen: Klik op de naam van het bestand om het te bewerken. Er zijn verschillende tabbladen beschikbaar. De **[!UICONTROL Subscriptions]** kunt u de lijst met abonnees van de informatiedienst bekijken (**[!UICONTROL Active subscriptions]** tab) of de abonnementsgeschiedenis (**[!UICONTROL History]** ). U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [Abonnees toevoegen en verwijderen](#adding-and-deleting-subscribers).
+Nadat de service is opgeslagen, wordt deze toegevoegd aan de lijst Services en abonnementen. Klik op de naam van de service om deze te bewerken. Er zijn verschillende tabbladen beschikbaar. De **[!UICONTROL Subscriptions]** kunt u de lijst met abonnees van de informatiedienst bekijken (**[!UICONTROL Active subscriptions]** tab) of de abonnementsgeschiedenis (**[!UICONTROL History]** ). U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [Abonnees toevoegen en verwijderen](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -72,7 +71,7 @@ U kunt de abonnementseigenschappen voor een ontvanger wijzigen.
 
 ![](assets/s_ncs_user_services_modify.png)
 
-Klik op het dashboard op de knop **[!UICONTROL Reports]** tab om abonnementen bij te houden: wijzigingen in het abonnementsniveau, het totale aantal abonnees, enz. U kunt rapporten archiveren en historie bekijken van dit lusje.
+Klik op het dashboard op de knop **[!UICONTROL Reports]** tab om abonnementen bij te houden: wijzigingen in abonnementsniveaus, totaal aantal abonnees, enz. U kunt rapporten archiveren en historie bekijken van dit lusje.
 
 ## Abonnees toevoegen en verwijderen {#adding-and-deleting-subscribers}
 
@@ -100,7 +99,7 @@ Selecteer **[!UICONTROL Subscribers of an information service]** en klik op **[!
 
 ![](assets/s_ncs_user_wizard_target_is_a_service02.png)
 
-Selecteer de beoogde informatieservice en klik op **[!UICONTROL Finish]**.
+Selecteer de beoogde informatiedienst en klik op **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_wizard_target_is_a_service03.png)
 
@@ -123,24 +122,24 @@ U kunt abonnements- en uitstapmechanismen instellen om de processen en het abonn
 
 Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
-* Voeg de service handmatig toe: om dit te doen, van **[!UICONTROL Subscriptions]** tabblad van hun profiel, klikt u op **[!UICONTROL Add]** en selecteert u de betrokken inlichtingendienst.
+* Voeg handmatig de service toe: hiervoor gebruikt u de opdracht **[!UICONTROL Subscriptions]** tabblad van hun profiel, klikt u op **[!UICONTROL Add]** en selecteert u de betrokken inlichtingendienst.
 
-   Raadpleeg voor meer informatie de sectie over het bewerken van profielen in [deze sectie](../../platform/using/editing-a-profile.md).
+  Raadpleeg voor meer informatie de sectie over het bewerken van profielen in [deze sectie](../../platform/using/editing-a-profile.md).
 
 * Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteren **[!UICONTROL Actions > Subscribe selection to a service...]**, selecteert u de desbetreffende service en start de bewerking.
 * Importeer ontvangers en meld ze automatisch aan bij een informatieservice. Selecteer hiertoe de desbetreffende service in de laatste stap van de wizard Importeren.
 
-   Raadpleeg [deze sectie](../../platform/using/executing-import-jobs.md) voor meer informatie.
+  Raadpleeg [deze sectie](../../platform/using/executing-import-jobs.md) voor meer informatie.
 
 * Gebruik een webformulier zodat ontvangers zich op een service kunnen abonneren.
 
-   Raadpleeg [deze sectie](../../web/using/about-web-applications.md) voor meer informatie.
+  Raadpleeg [deze sectie](../../web/using/about-web-applications.md) voor meer informatie.
 
 * Een doelworkflow maken en een **[!UICONTROL Subscription service]** doos.
 
-   ![](assets/s_ncs_user_subscribe_from_wf.png)
+  ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   Workflows en hoe deze worden gebruikt worden beschreven in [deze sectie](../../workflow/using/about-workflows.md).
+  Workflows en hoe deze worden gebruikt worden beschreven in [deze sectie](../../workflow/using/about-workflows.md).
 
 ### Een ontvanger afmelden bij een service {#unsubscribing-a-recipient-from-a-service}
 
@@ -162,7 +161,7 @@ Een informatiedienst kan een beperkte duur hebben. Ontvangers worden automatisch
 
 ![](assets/s_ncs_user_services_delay.png)
 
-U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementswerkstroom, maar selecteert u de optie **[!UICONTROL Unsubscription]** optie. Zie [Een ontvanger aan de dienst abonneren](#subscribing-a-recipient-to-a-service).
+U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementswerkstroom, maar selecteert u de optie **[!UICONTROL Unsubscription]** -optie. Zie [Een ontvanger aan de dienst abonneren](#subscribing-a-recipient-to-a-service).
 
 ### Abonnementen bijhouden {#subscriber-tracking}
 

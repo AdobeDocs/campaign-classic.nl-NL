@@ -2,20 +2,19 @@
 product: campaign
 title: Inbox rendering in campagne
 description: Leer hoe u e-mailweergaven vastlegt en beschikbaar maakt in een speciaal rapport
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
+role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e011333411af79b985166a4e73592a1860749cf1
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 9%
 
 ---
 
 # Inboxrendering{#inbox-rendering}
-
-
 
 ## Inbox-rendering {#about-inbox-rendering}
 
@@ -25,10 +24,11 @@ Om dit mogelijk te maken, gebruikt Adobe Campaign de [Litmus](https://litmus.com
 
 >[!CAUTION]
 >Inbox-rendering is niet compatibel met [terugkerende leveringen](communication-channels.md#recurring-delivery).
+>
 
 Litmus is een functie-rijke e-mailbevestiging en previewing toepassing. Hiermee kunnen makers van e-mailinhoud hun berichtinhoud voorvertonen in meer dan 70 e-mailrenderers, zoals de Gmail inbox of de Apple Mail client.
 
-De mobiele clients, berichten en webmail zijn beschikbaar voor **Inbox rendering** in Adobe Campaign worden vermeld op de [Litmus-website](https://litmus.com/email-testing) (klik op **Alle e-mailclients weergeven**).
+De mobiele clients, berichten en webmail zijn beschikbaar voor **Inbox-rendering** in Adobe Campaign worden vermeld op de [Litmus-website](https://litmus.com/email-testing) (klik op **Alle e-mailclients weergeven**).
 
 >[!NOTE]
 >
@@ -38,14 +38,14 @@ De mobiele clients, berichten en webmail zijn beschikbaar voor **Inbox rendering
 
 [!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
-Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning van Adobe en consultants. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning en consultants van de Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
 Voor on-premise installaties, volg de stappen hieronder om Inbox teruggeven te vormen.
 
-1. Installeer de **[!UICONTROL Inbox rendering (IR)]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md).
+1. Installeer de **[!UICONTROL Inbox rendering (IR)]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Standaardpakketten voor Campaigns Classic installeren](../../installation/using/installing-campaign-standard-packages.md).
 1. Een externe account voor het HTTP-type configureren via de **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** knooppunt. Zie voor meer informatie [Een externe account maken](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Stel de parameters voor de externe account als volgt in:
-   * **[!UICONTROL Label]**: Informatie over de leveringsserver
+   * **[!UICONTROL Label]**: Gegevens van de server voor levering
    * **[!UICONTROL Internal name]**: DeliabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
@@ -87,10 +87,9 @@ Elke keer dat u de **[!UICONTROL Inbox rendering]** Bij elke gegenereerde render
 >
 >Tokens zijn voor elke afzonderlijke rendering en niet voor het hele Inbox-renderrapport, wat betekent dat:
 >
->* Telkens als het Inbox teruggevende rapport wordt geproduceerd, wordt één teken per overseinencliënt afgetrokken: één token voor de rendering van Outlook 2000, één token voor de rendering van Outlook 2010, één token voor de rendering van Apple Mail 9, enzovoort.
+>* Telkens als Inbox teruggevend rapport wordt geproduceerd, wordt één teken per overseinencliënt afgetrokken: één teken voor het teruggeven van Vooruitzichten 2000, voor het teruggeven van Vooruitzichten 2010, voor Apple Mail 9, etc.
 >* Als u voor dezelfde levering de rendering Inbox opnieuw genereert, wordt het aantal beschikbare tokens opnieuw verminderd met het aantal gegenereerde renderingen.
 >
-
 
 Het aantal resterende beschikbare tokens wordt weergegeven in het dialoogvenster **[!UICONTROL General summary]** van de [Inbox rendering report](#inbox-rendering-report).
 

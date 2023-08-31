@@ -2,20 +2,19 @@
 product: campaign
 title: Testen van berichten
 description: Leer hoe u berichttracering kunt testen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
+role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # Testen van berichten{#testing-tracking}
-
-
 
 U kunt het bijhouden van wijzigingen testen op spiegelpagina&#39;s, e-maillogboeken en koppelingen. Dit doet u als volgt:
 
@@ -30,7 +29,7 @@ U kunt het bijhouden van wijzigingen testen op spiegelpagina&#39;s, e-maillogboe
 
    Klikken **Vernieuwen** als er geen nieuwe logbestanden worden weergegeven.
 
-1. Ga naar de profielpagina van de ontvanger u voor de test gebruikte, en selecteer **Tekstspatiëring** tab. Sommige records moeten worden weergegeven bij de **Pagina spiegelen** in de **Type** kolom.
+1. Ga naar de profielpagina van de ontvanger u voor de test gebruikte, en selecteer **Tekstspatiëring** tab. Sommige records moeten worden weergegeven bij de **Pagina spiegelen** waarde in de **Type** kolom.
 
    >[!NOTE]
    >

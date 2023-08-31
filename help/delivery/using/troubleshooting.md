@@ -4,17 +4,16 @@ title: Push Troubleshooting
 description: Push Troubleshooting
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push, Troubleshooting
+role: User
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
 # Problemen oplossen{#troubleshooting}
-
-
 
 Als uw mobiele apparaat is verbonden met Wi-Fi en u ontvangt geen meldingen, controleert u of de FCM-/APN-poorten niet worden geblokkeerd door uw firewall.
 

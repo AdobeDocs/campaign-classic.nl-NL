@@ -2,32 +2,31 @@
 product: campaign
 title: E-mails verzenden naar Japanse mobiele telefoons met Adobe Campaign Classic
 description: Leer hoe u e-mailberichten configureert, ontwerpt en verzendt die op een Japanse mobiele telefoon worden gelezen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email, Email Design
+role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # E-mails verzenden naar Japanse mobiele telefoons {#sending-emails-on-japanese-mobiles}
 
-
-
 ## E-mailindelingen voor Japanse mobiele apparaten {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign beheert drie specifieke Japanse indelingen voor e-mail op mobiele apparaten: **Deco-mail** (DoCoMo mobiles), **E-mail negeren** (Softbank-mobieltjes) en **Decoration Mail** (KDDI AU-mobiles). Deze formaten leggen bijzondere coderings, structuur, en groottebeperkingen op. Meer informatie over beperkingen en aanbevelingen vindt u in [deze sectie](#limitations-and-recommendations).
+Adobe Campaign beheert drie specifieke Japanse indelingen voor e-mail op mobiele apparaten: **Deco-mail** (DoCoMo mobiles), **E-mail verwijderen** (Softbank-mobieltjes) en **Decoration Mail** (KDDI AU-mobiles). Deze formaten leggen bijzondere coderings, structuur, en groottebeperkingen op. Meer informatie over beperkingen en aanbevelingen vindt u in [deze sectie](#limitations-and-recommendations).
 
-Opdat de ontvanger berichten in één van deze formaten correct ontvangt, adviseren wij selecterend **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** in het corresponderende profiel:
+Opdat de ontvanger berichten in één van deze formaten correct ontvangt, adviseren wij selecterend **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** in het bijbehorende profiel:
 
 ![](assets/deco-mail_03.png)
 
 Als u echter de **[!UICONTROL Email format]** optie als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]** Adobe Campaign detecteert automatisch (bij het verzenden van het e-mailbericht) de Japanse indeling voor gebruik, zodat het bericht correct wordt weergegeven.
 
-Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die zijn gedefinieerd in het dialoogvenster **[!UICONTROL Management of Email Formats]** mailregel ingesteld. Raadpleeg voor meer informatie over het beheren van e-mailindelingen [deze pagina](../../installation/using/email-deliverability.md#managing-email-formats).
+Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die in het dialoogvenster **[!UICONTROL Management of Email Formats]** mailregel ingesteld. Raadpleeg voor meer informatie over het beheren van e-mailindelingen [deze pagina](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ## Beperkingen en aanbevelingen {#limitations-and-recommendations}
 
@@ -37,9 +36,9 @@ Daarom moet u:
 
 * Alleen afbeeldingen in JPEG- of GIF-indeling gebruiken
 * Creeer een levering met tekst en HTML secties die strikt lager zijn dan 10 000 bytes (voor KDDI AU en DoCoMo)
-* Afbeeldingen gebruiken waarvan de totale grootte (vóór codering) lager is dan 100 kB
+* Afbeeldingen met een totale grootte (vóór codering) van minder dan 100 kB gebruiken
 * Gebruik niet meer dan 20 afbeeldingen per bericht
-* Gebruik een indeling voor kleiner formaat HTML (er is een beperkt aantal tags beschikbaar voor elke-operator)
+* Gebruik een indeling voor kleiner formaat HTML (er is een beperkt aantal tags beschikbaar voor elke operator)
 
 >[!NOTE]
 >
@@ -60,11 +59,11 @@ In de **[!UICONTROL Preview]** tabblad van het venster Inhoud bewerken, klikken 
 * Controleer of het aantal afbeeldingen in het bericht de limiet van de indeling (20 afbeeldingen) niet overschrijdt
 * De totale berichtgrootte controleren (minder dan 100 kB)
 
-   ![](assets/deco-mail_06.png)
+  ![](assets/deco-mail_06.png)
 
 ### Typologieregel uitvoeren {#running-typology-rule}
 
-Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij de verzending van een bewijs of een levering: een specifieke typologieregel; **[!UICONTROL Deco-mail check]**, wordt tijdens de analyse gestart.
+Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij de verzending van een bewijs of een levering: een specifieke typologieregel, **[!UICONTROL Deco-mail check]**, wordt tijdens de analyse gestart.
 
 >[!IMPORTANT]
 >
@@ -84,12 +83,12 @@ U kunt bijvoorbeeld het adres van een profiel vervangen door test@softbank.ne.jp
 
 Voor het verzenden van een e-mailbericht naar ontvangers met Japanse e-mailindelingen via Campagne zijn twee opties mogelijk:
 
-* Twee leveringen maken: één voor Japanse ontvangers en een andere voor andere ontvangers - verwijs naar [deze sectie](#designing-a-specific-delivery-for-japanese-formats).
+* Twee leveringen maken: één alleen voor Japanse ontvangers en een ander voor andere ontvangers - verwijs naar [deze sectie](#designing-a-specific-delivery-for-japanese-formats).
 * Eén levering maken en Adobe Campaign detecteert automatisch de te gebruiken indeling - raadpleeg [deze sectie](#designing-a-delivery-for-all-formats).
 
 ### Een specifieke levering ontwerpen voor Japanse indelingen {#designing-a-specific-delivery-for-japanese-formats}
 
-U kunt een werkstroom maken die twee leveringen bevat: Een voor lezen op een Japans mobiel en een ander voor ontvangers met een standaard e-mailformaat.
+U kunt een werkstroom maken die twee leveringen bevat: een die op een Japans mobiel moet worden gelezen en een ander voor ontvangers met een standaard e-mailformaat.
 
 Om dit te doen, gebruik **[!UICONTROL Split]** activiteit in uw werkschema en bepaal de Japanse e-mailformaten (Deco-mail, Decoration Mail en Decore Mail) als het filtreren voorwaarden.
 

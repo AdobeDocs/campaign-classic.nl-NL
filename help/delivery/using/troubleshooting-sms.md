@@ -2,11 +2,12 @@
 product: campaign
 title: Problemen met sms oplossen
 description: Meer informatie over het oplossen van problemen met SMS-kanalen
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # SMS-probleemoplossing {#troubleshooting-sms}
-
-
 
 ## Conflict tussen verschillende externe rekeningen {#external-account-conflict}
 
@@ -41,11 +40,11 @@ Nadat u elk account afzonderlijk hebt gecontroleerd, zijn er twee mogelijke scen
 
   Er is een conflict tussen accounts. Zoals eerder vermeld, behandelt Adobe Campaign accounts afzonderlijk, maar kan de provider ze als één enkele account behandelen.
 
-   * U gebruikt verschillende aanmeldings-/wachtwoordcombinaties voor al uw accounts.
-U moet contact opnemen met de provider om mogelijke conflicten aan de zijkant vast te stellen.
+   * U gebruikt verschillende combinaties van aanmeldings-/wachtwoorden voor al uw accounts.
+U moet contact opnemen met de provider om mogelijke conflicten aan hun kant te onderzoeken.
 
-   * Sommige externe accounts hebben dezelfde combinatie van aanmelding/wachtwoord.
-De provider kan niet zien van welke externe account de `BIND PDU` komt van, zodat behandelen zij alle verbindingen van de veelvoudige rekeningen als één enkel. Ze hadden MO en SR mogelijk willekeurig rond de twee accounts gerouteerd, wat problemen veroorzaakte.
+   * Sommige externe accounts gebruiken dezelfde combinatie van aanmelding/wachtwoord.
+De provider kan niet zien van welk extern account de `BIND PDU` afkomstig is, dus behandelen ze alle verbindingen van de meerdere accounts als één enkel account. Ze hadden MO en SR mogelijk willekeurig rond de twee accounts gerouteerd, wat problemen veroorzaakte.
 Als de leverancier veelvoudige korte codes voor de zelfde login/wachtwoordcombinatie steunt, zult u hen moeten vragen waar te om die korte code in te zetten `BIND PDU`. Deze informatie moet in de `BIND PDU`, en niet in `SUBMIT_SM`, sinds de `BIND PDU` is de enige plaats die het verpletteren van MOs correct zal toestaan.
 Zie de [Informatie in elke soort PDU](sms-protocol.md#information-pdu) in de sectie hierboven om te weten welk veld beschikbaar is in het dialoogvenster `BIND PDU`, meestal voegt u de korte code toe in `address_range`, maar daarvoor is speciale steun van de leverancier nodig. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
 Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes op dezelfde externe account.
@@ -66,24 +65,24 @@ Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes o
   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
   ```
 
-* Onderzoek (in /postupgrade folder) of het systeem werd bevorderd en wanneer
-* Onderzoek of om het even welke pakketten die SMS beïnvloeden onlangs (/var/log/dpkg.log) zouden kunnen zijn bevorderd.
+* Onderzoeken (in /postupgrade directory) of het systeem is geüpgraded en wanneer
+* Onderzoek of pakketten die van invloed zijn op SMS mogelijk onlangs zijn geüpgraded (/var/log/dpkg.log).
 
-## Probleem met midsourcing (gehost){#issue-mid-sourcing}
+## Probleem met mid-sourcing (gehost){#issue-mid-sourcing}
 
 * Als het probleem zich voordoet in een omgeving voor midsourcing, moet u ervoor zorgen dat de bezorging en de brede logboeken op de server voor midsourcing correct worden gemaakt en bijgewerkt. Als dat niet het geval is, is dit geen kwestie van SMS.
 
 * Als alles werkt op de server halverwege en SMS correct worden verzonden, maar de marketinginstantie niet correct wordt bijgewerkt, hebt u mogelijk een probleem met betrekking tot de medio-synchronisatie.
 
-## Probleem bij verbinding met de provider {#issue-provider}
+## Probleem bij het maken van verbinding met de provider {#issue-provider}
 
-* Als de `BIND PDU` retourneert een andere waarde dan nul `command_status` Vraag de provider om meer informatie.
+* Als de `BIND PDU` code een niet-nulcode `command_status` retourneert, vraagt u de provider om meer informatie.
 
-* Controleer of het netwerk correct is geconfigureerd, zodat de TCP-verbinding tot stand kan worden gebracht met de provider.
+* Controleer of het netwerk correct is geconfigureerd, zodat er een TCP-verbinding met de provider kan worden gemaakt.
 
-* Vraag de leverancier om te controleren dat zij behoorlijk IPs aan de lijst van gewenste personen van de instantie van Adobe Campaign toevoegden.
+* Vraag de provider te controleren of hij de IP&#39;s correct heeft toegevoegd aan de allowlist van de Adobe Campaign-instantie.
 
-* Controleren **Externe rekening** instellingen. Vraag de provider de waarde van de velden.
+* Controleer **Externe accountinstellingen** . Vraag de provider naar de waarde van de velden.
 
 * Als de verbinding succesvol maar instabiel is, controleert u [Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie.
 
@@ -145,9 +144,9 @@ Duplicaten worden vaak veroorzaakt door nieuwe pogingen. Het is normaal om dupli
 
 Het verminderen van de hoeveelheid duplicaten wanneer er opnieuw wordt geprobeerd:
 
-* Verlaag het verzendende venster. Het verzendende venster moet groot genoeg zijn voor `SUBMIT_SM_RESP` latentie. De waarde ervan vertegenwoordigt het maximum aantal berichten dat kan worden gedupliceerd als een fout optreedt terwijl het venster vol is.
+* Laat het verzendvenster lager. De verzendvenster moet groot genoeg zijn om de latency `SUBMIT_SM_RESP` te dekken. De waarde is het maximale aantal berichten dat kan worden gedupliceerd als er een fout optreedt terwijl het venster vol is.
 
-## Uitgave bij verwerking van SR (ontvangstbewijzen) {#issue-process-SR}
+## Probleem bij de verwerking van SR (ontvangstbewijzen) {#issue-process-SR}
 
 * U hebt SMPP-sporen nodig die zijn ingeschakeld voor het uitvoeren van elk type SR-probleemoplossing.
 
@@ -157,9 +156,9 @@ Het verminderen van de hoeveelheid duplicaten wanneer er opnieuw wordt geprobeer
 
 Als de `DELIVER_SM PDU` wordt niet erkend, dan zou u het volgende moeten controleren:
 
-* Controleer regex met betrekking tot id-extractie en fout-verwerking in het dialoogvenster **Externe rekening**. Mogelijk moet u deze valideren aan de hand van de inhoud van het dialoogvenster `DELIVER_SM PDU`.
+* Controleer regex met betrekking tot id-extractie en fout-verwerking in het dialoogvenster **Externe rekening**. Mogelijk moet u deze valideren aan de slag met de inhoud van de `DELIVER_SM PDU`extensie .
 
-* Controleer of de fouten correct zijn ingesteld in het dialoogvenster `broadLogMsg` tabel.
+* Controleer of fouten correct zijn opgegeven in de `broadLogMsg` tabel.
 
 Als de `DELIVER_SM PDU` is erkend door de Adobe Campaign Classic extended SMPP-connector, maar het wideLog is niet correct bijgewerkt. Controleer het in de sectie beschreven proces voor het afstemmen van de id [Overeenkomende MT-, SR- en Broadlog-vermeldingen](sms-protocol.md#matching-mt).
 
@@ -167,7 +166,7 @@ Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffer
 
 ## Probleem bij verwerking MO (en zwarte lijst/automatisch antwoord){#issue-process-MO}
 
-* SMPP-sporen inschakelen tijdens tests. Als u TLS niet toelaat, zou u een netwerk moeten doen vangt wanneer het oplossen van problemenMO om te controleren dat PDUs de correcte informatie bevatten en behoorlijk geformatteerd zijn.
+* Schakel SMPP-sporen in tijdens tests. Als u TLS niet inschakelt, moet u bij het oplossen van MO-problemen vastleggen op het netwerk om te controleren of de PDF&#39;s de juiste informatie bevatten en correct zijn geformatteerd.
 
 * Wanneer het vangen van netwerkverkeer of het analyseren van sporen SMPP, ben zeker om het volledige gesprek met MO en zijn antwoord MT te vangen als een antwoord wordt gevormd.
 
@@ -203,7 +202,7 @@ Met hexadecimaal kunt u het verschil zien tussen vergelijkbare tekens. Een L in 
 
 Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals gebruiken [Unicode-codeconverter](https://r12a.github.io/app-conversion/) website. Typ in de tekst, controleer of er geen PII is zoals telefoonnummers en klik op **Omzetten**. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
 
-Bij het openen van tickets over coderingsproblemen, ongeacht of dit gebeurt bij de provider of [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Neem altijd een hexadecimale versie op van wat u typt en wat u ziet.
+Bij het openen van tickets over coderingsproblemen, ongeacht of dit gebeurt bij de provider of [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Neem altijd een hexadecimale versie op van wat u typt en wat u ziet.
 
 **Stap 3: weet wat u moet verzenden**
 
@@ -235,11 +234,11 @@ Wanneer u om hulp over een kwestie van SMS, of het een steunkaartje aan Adobe Ca
 
 * Als u berichten, PDUs of logboeken van verwijzingen voorziet, duidelijk hun timestamp verklaren om hen gemakkelijker te maken te vinden.
 
-* Probeer het probleem op een testomgeving te reproduceren. Als u niet zeker bent over een instelling, probeert u deze in de testomgeving en controleert u het resultaat met de SMPP-sporen. Meestal is het beter om problemen te rapporteren die in testomgevingen worden gerepliceerd dan problemen rechtstreeks te melden in productieomgevingen.
+* Probeer het probleem op een testomgeving te reproduceren. Als u niet zeker bent over een instelling, probeert u deze in de testomgeving en controleert u het resultaat met de SMPP-sporen. Het is doorgaans beter om problemen te melden die worden gerepliceerd in testomgevingen dan rechtstreeks problemen in productieomgevingen te melden.
 
-* Omvat om het even welke verandering of tweaks die op het platform worden aangebracht. Neem ook alle wijzigingen op die de provider aan hun zijde heeft aangebracht.
+* Neem alle wijzigingen of aanpassingen op die op het platform zijn aangebracht. Voeg ook alle wijzigingen toe die de provider mogelijk aan zijn kant heeft aangebracht.
 
-### Netwerkvastlegging {#network-capture}
+### Vastleggen via netwerk {#network-capture}
 
 Een netwerk vangt is niet altijd nodig, gewoonlijk zijn de uitgebreide SMPP- berichten genoeg. Hier zijn sommige richtlijnen die u zullen helpen bepalen als een netwerk vangt nodig is:
 
@@ -296,7 +295,7 @@ In de `config-instance.xml` , stelt u de volgende parameters in:
 Als u het aantal open verbindingen op een container wilt controleren, kunt u de volgende opdracht gebruiken:
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 Dit zal van het aantal verbindingen een lijst maken die voor een bepaalde haven worden geopend. Hier gebruiken we poort 3600.

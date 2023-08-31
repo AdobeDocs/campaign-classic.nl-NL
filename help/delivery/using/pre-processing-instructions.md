@@ -2,30 +2,29 @@
 product: campaign
 title: Voorverwerkingsinstructies voor bijgehouden URL's
 description: Meer informatie over voorbewerkingsinstructies die moeten worden gebruikt om de URL van een e-mailbericht te scripten en deze nog steeds te laten bijhouden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
+role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
 
 # Voorverwerkingsinstructies {#pre-processing-instructions}
 
-
-
-U kunt een specifieke syntaxis in de bezorginhoud gebruiken om instructies toe te voegen en de URL van het bijgehouden e-mailbericht te scripten. De &lt;%@-instructies zijn geen JavaScript: Deze syntaxis is specifiek voor Adobe Campaign.
+U kunt een specifieke syntaxis in de bezorginhoud gebruiken om instructies toe te voegen en de URL van het bijgehouden e-mailbericht te scripten. De &lt;%@-instructies zijn niet JavaScript: deze syntaxis is specifiek voor Adobe Campaign.
 
 Zij zijn alleen van toepassing in de context van leveringsinhoud. Dit is de enige manier om een script te maken voor de URL van een e-mail en deze nog steeds te laten bijhouden (behalve URL-parameters). Deze kunnen worden beschouwd als een automatische kopie/plakbewerking die tijdens de afleveringsanalyse is toegepast voordat de koppelingen naar de track worden gedetecteerd.
 
 Er zijn drie typen instructies:
 
-* **[!DNL include]**: vooral om sommige code in opties, verpersoonlijkingsblokken, externe dossiers, of pagina&#39;s te factoriseren. [Meer informatie](#include)
-* **[!DNL value]**: toegang te verlenen tot velden van levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
-* **[!DNL foreach]**: om een array te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
+* **[!DNL include]**: vooral om code in opties, verpersoonlijkingsblokken, externe dossiers, of pagina&#39;s te factoriseren. [Meer informatie](#include)
+* **[!DNL value]**: om toegang te geven tot velden voor levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
+* **[!DNL foreach]**: om een array uit te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
 
 Zij kunnen direct van de leveringstovenaar worden getest. Ze worden toegepast in de voorvertoning van de inhoud en wanneer u op de knop Tekstspatiëring klikt, wordt de lijst met URL&#39;s weergegeven.
 
@@ -35,31 +34,31 @@ De volgende voorbeelden worden het meest gebruikt:
 
 * De koppeling voor de spiegelpagina opnemen:
 
-   ```
-   <%@ include view="MirrorPage" %>  
-   ```
+  ```
+  <%@ include view="MirrorPage" %>  
+  ```
 
 * URL spiegel:
 
-   ```
-   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
-   ```
+  ```
+  View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+  ```
 
-* URL zonder abonnement:
+* URL zonder abonnement uit de doos:
 
-   ```
-   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
-   ```
+  ```
+  <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+  ```
 
 * Andere voorbeelden:
 
-   ```
-   <%@ include file='http://www.google.com' %>
-   <%@ include file='file:///X:/france/service/test.html' %>
-   <%@ include option='NmsServer_URL' %>
-   ```
+  ```
+  <%@ include file='http://www.google.com' %>
+  <%@ include file='file:///X:/france/service/test.html' %>
+  <%@ include option='NmsServer_URL' %>
+  ```
 
-   Gebruik de verpersoonlijkingsknoop in de leveringstovenaar om de correcte syntaxis te krijgen.
+  Gebruik de verpersoonlijkingsknoop in de leveringstovenaar om de correcte syntaxis te krijgen.
 
 ## [!DNL value] {#value}
 
@@ -71,16 +70,16 @@ Syntaxis:
 <%@ value object="myObject" xpath="@myField" index="1" %>
 ```
 
-Waar:
+Waarbij:
 
-* **[!DNL object]**: naam van het object (voorbeeld: levering, provider, enzovoort).
+* **[!DNL object]**: naam van het object (bijvoorbeeld: levering, provider, enzovoort).
 Object kan:
    * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
    * **[!DNL provider]**: voor de huidige leverancier/het verpletteren (nms:externalAccount).
-   * Een extra scriptobject: als een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
+   * Een extra scriptobject: wanneer een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
    * Item van de foreach-lus: zie [Foreach](#foreach) hieronder.
-* **[!DNL xpath]**: xpath of the field.
-* **[!DNL index]** (optioneel): indien **[!DNL object]** is een array (voor extra scriptobjecten), itemindex in de array (Begint bij 0).
+* **[!DNL xpath]**: xpath van het veld.
+* **[!DNL index]** (optioneel): if **[!DNL object]** is een array (voor extra scriptobjecten), itemindex in de array (Begint bij 0).
 
 ### [!DNL delivery] object {#delivery-object}
 
@@ -88,17 +87,17 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
 
 * JavaScript gebruiken:
 
-   ```
-   <%= delivery.myField %>`.
-   ```
+  ```
+  <%= delivery.myField %>`.
+  ```
 
-   In de levering van het JavaScript-object worden aangepaste velden niet ondersteund. Zij werken in de voorproef, maar niet in MTA omdat MTA tot het out-of-the-box leveringsschema kan slechts toegang hebben.
+  In de levering van het JavaScript-object worden aangepaste velden niet ondersteund. Zij werken in de voorproef, maar niet in MTA omdat MTA tot het out-of-the-box leveringsschema kan slechts toegang hebben.
 
 * Voorbewerking gebruiken:
 
-   ```
-   <%@ value object="delivery"
-   ```
+  ```
+  <%@ value object="delivery"
+  ```
 
 
 **Waarschuwing**
@@ -141,11 +140,11 @@ Syntaxis:
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
 ```
 
-Waar:
+Waarbij:
 
-* **[!DNL object]**: De naam van het object waarvan moet worden begonnen, is doorgaans een extra scriptobject, maar het kan een levering zijn.
+* **[!DNL object]**: de naam van het object waarvan moet worden begonnen, is doorgaans een extra scriptobject, maar het kan een levering zijn.
 * **[!DNL xpath]** (optioneel): xpath of the collection to loop on. De standaardwaarde is &quot;.&quot;, wat betekent dat het object de array is die moet worden doorlopen.
-* **[!DNL index]** (optioneel): als xpath niet &quot;.&quot; is en object is een array zelf, itemindex van object (begint bij 0).
+* **[!DNL index]** (optioneel): als xpath niet &quot;.&quot; en object is een array zelf, itemindex van object (begint bij 0).
 * **[!DNL item]** (optioneel): naam van een nieuw object dat toegankelijk is met &lt;%@-waarde in de foreach-lus. Standaard met de naam van de koppeling in het schema.
 
 Voorbeeld:

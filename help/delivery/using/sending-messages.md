@@ -2,29 +2,28 @@
 product: campaign
 title: Belangrijke stappen voor het verzenden van een e-mail
 description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
+role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 1%
 
 ---
 
 # Belangrijke stappen voor het verzenden van een e-mail {#key-steps-to-send-an-email}
-
-
 
 Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te controleren en te bevestigen.
 
 1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie voor meer informatie [E-mailparameters](email-parameters.md).
 1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie voor meer informatie [Een proefdruk verzenden](steps-validating-the-delivery.md#sending-a-proof).
 
-1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Klik op **[!UICONTROL Send]** selecteert u een handeling en klikt u op **[!UICONTROL Analyze]**. Zie voor meer informatie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Om dit te doen, klik **[!UICONTROL Send]** selecteert u een handeling en klikt u op **[!UICONTROL Analyze]**. Zie voor meer informatie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. Als de analyse is voltooid, klikt u op **[!UICONTROL Confirm delivery]** om de levering van berichten aan de beoogde ontvangers te starten. Zie voor meer informatie [Levering bevestigen](steps-sending-the-delivery.md#confirming-delivery).
+1. Klik op **[!UICONTROL Confirm delivery]** om de levering van berichten aan de beoogde ontvangers te starten. Zie voor meer informatie [Levering bevestigen](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 

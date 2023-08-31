@@ -2,20 +2,19 @@
 product: campaign
 title: SpamAssassin
 description: Leer hoe te opstelling e-mailspamopsporing met SpamAssassin
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email, Deliverability
+role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 6%
+source-wordcount: '267'
+ht-degree: 7%
 
 ---
 
 # SpamAssassin{#spamassassin}
-
-
 
 Adobe Campaign kan worden geconfigureerd om te werken met [SpamAssassin](https://spamassassin.apache.org), een service van derden die wordt gebruikt voor het filteren van e-mailspam. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
 
@@ -40,7 +39,7 @@ Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, vol
 Raadpleeg voor meer informatie over het maken en ontwerpen van een levering [deze sectie](about-email-channel.md).
 
 1. Ga naar het tabblad **[!UICONTROL Preview]**. 
-1. Selecteer een ontvanger om een voorvertoning van uw levering weer te geven.
+1. Selecteer een ontvanger om een voorbeeld van uw levering te bekijken.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
 

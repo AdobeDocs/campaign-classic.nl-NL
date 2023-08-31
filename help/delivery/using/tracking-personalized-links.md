@@ -2,20 +2,19 @@
 product: campaign
 title: Aan de slag met de tracking van gepersonaliseerde koppelingen
 description: Leer hoe u koppelingen schrijft in e-mailberichten die u kunt aanpassen en bijhouden ondersteunt in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization
+role: User
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '230'
 ht-degree: 7%
 
 ---
 
 # Aan de slag met de tracking van gepersonaliseerde koppelingen {#tracking-personalized-links}
-
-
 
 De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden.
 
@@ -30,7 +29,7 @@ Voor traceringsdetectie sluit Adobe Campaign in [Tidy](https://www.html-tidy.org
 
 Bijvoorbeeld in de eerste inhoud: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` wordt voor een bepaalde ontvanger vervangen door: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
-Waar:
+Waarbij:
 
 * &quot;h&quot; betekent HTML-inhoud (of &quot;t&quot; voor tekstinhoud).
 * 617791 is de bericht-id / wideLog-id (hexadecimaal).

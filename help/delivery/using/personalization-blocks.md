@@ -2,28 +2,27 @@
 product: campaign
 title: Personalisatieblokken
 description: Leer hoe u aanpassingsblokken kunt gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization
+role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
 
 # Personalisatieblokken{#personalization-blocks}
 
-
-
 De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Verpersoonlijkingsblokken invoegen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#personalization-blocks-video)
 
-Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign-verkenner. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
+Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
-U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Raadpleeg voor meer informatie hierover [Aangepaste aanpassingsblokken definiëren](#defining-custom-personalization-blocks).
+U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u de personalisatie van uw leveringen kunt optimaliseren. Raadpleeg voor meer informatie hierover [Aangepaste aanpassingsblokken definiëren](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen 
 Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een bericht:
 
 1. Klik in de inhoudseditor van de wizard voor levering op het pictogram van een gepersonaliseerd veld en selecteer het pictogram **[!UICONTROL Include]** -menu.
-1. Selecteer een verpersoonlijkingsblok in de lijst (in de lijst staan de tien laatst gebruikte blokken) of klik op de knop **[!UICONTROL Other...]** voor toegang tot de volledige lijst.
+1. Selecteer een verpersoonlijkingsblok in de lijst (in de lijst worden de tien laatst gebruikte blokken weergegeven) of klik op de knop **[!UICONTROL Other...]** voor toegang tot de volledige lijst.
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
@@ -46,7 +45,7 @@ Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een beri
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
-1. Klik op de knop **[!UICONTROL Preview]** en selecteert u een ontvanger om de personalisatie weer te geven.
+1. Klik op de knop **[!UICONTROL Preview]** en selecteer een ontvanger om de personalisatie te bekijken.
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
@@ -54,7 +53,7 @@ U kunt de broncode van een verpersoonlijkingsblok in de leveringsinhoud omvatten
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-De broncode van de HTML wordt opgenomen in de leveringsinhoud. De **[!UICONTROL Greetings]** de vertoningen van het verpersoonlijkingsblok zoals hieronder:
+De broncode van de HTML wordt opgenomen in de leveringsinhoud. Bijvoorbeeld de **[!UICONTROL Greetings]** de vertoningen van het verpersoonlijkingsblok zoals hieronder:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -95,25 +94,25 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** : voegt begroetingen met de naam van de ontvanger in. Voorbeeld: &quot;Hallo JanDoe,&quot;.
-* **[!UICONTROL Insert logo]** : neemt een uit-van-de-doos embleem op dat wanneer het vormen van de instantie is bepaald.
+* **[!UICONTROL Greetings]** : voegt begroetingen met de naam van de ontvanger in. Voorbeeld: &quot;Hello John Doe,&quot;.
+* **[!UICONTROL Insert logo]** : voegt een out-of-the-box logo in dat is gedefinieerd tijdens het configureren van de instantie.
 * **[!UICONTROL Powered by Adobe Campaign]** : voegt het logo &quot;Powered by Adobe Campaign&quot; in.
 * **[!UICONTROL Mirror page URL]** : voegt de URL van de spiegelpagina in, waardoor de leveringsontwerpers de koppeling kunnen controleren.
 
-   >[!NOTE]
-   >
-   >Raadpleeg voor meer informatie over het genereren van spiegelpagina&#39;s [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page).
+  >[!NOTE]
+  >
+  >Raadpleeg voor meer informatie over het genereren van spiegelpagina&#39;s [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page).
 
-* **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Klik hier als je dit bericht niet juist kunt weergeven.&quot;
+* **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Als u dit bericht niet correct kunt weergeven, klikt u hier&quot;.
 * **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (lijst van gewezen personen).
 * **[!UICONTROL Formatting function for proper nouns]** : genereert de **[!UICONTROL toSmartCase]** De functie Javascript, die de eerste letter van elk woord in hoofdletters verandert.
 * **[!UICONTROL Registration page URL]** : voegt een abonnement-URL in (zie [Informatie over services en abonnementen](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : voegt een abonnementkoppeling in. die is gedefinieerd tijdens het configureren van de instantie.
 * **[!UICONTROL Registration link (with referrer)]** : voegt een abonnementkoppeling in, waarmee de bezoeker en de levering kunnen worden geïdentificeerd. De koppeling is gedefinieerd tijdens het configureren van de instantie.
 
-   >[!NOTE]
-   >
-   >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
+  >[!NOTE]
+  >
+  >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee u het abonnement kunt bevestigen.
 * **[!UICONTROL Social network sharing links]** : voegt knoppen in waarmee de ontvanger een koppeling naar de inhoud van de spiegel kan delen met de e-mailclient, Facebook, Twitter en LinkedIn (zie [Virale marketing: doorsturen naar een vriend](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
@@ -136,9 +135,9 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
    * Selecteren **[!UICONTROL Visible in the customization menus]** om dit blok toegankelijk te maken vanaf het pictogram voor het invoegen van het aanpassingsveld.
    * Selecteer indien nodig **[!UICONTROL The content of the personalization block depends upon the format]** om twee aparte blokken voor e-mails in de indeling HTML en in de tekstindeling te definiëren.
 
-      Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (inhoud van HTML en tekst) om de bijbehorende inhoud te definiëren.
+     Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (inhoud van HTML en tekst) om de bijbehorende inhoud te definiëren.
 
-      ![](assets/s_ncs_user_personalized_block_b.png)
+     ![](assets/s_ncs_user_personalized_block_b.png)
 
    * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik op **[!UICONTROL Save]**.
 
@@ -148,4 +147,4 @@ Leer hoe u dynamische inhoudsblokken maakt en hoe u deze kunt gebruiken om de in
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

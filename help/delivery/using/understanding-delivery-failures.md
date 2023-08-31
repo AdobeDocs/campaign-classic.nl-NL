@@ -2,11 +2,12 @@
 product: campaign
 title: Leveringsfouten begrijpen
 description: Leer hoe u fouten met leveringen begrijpt
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 14%
@@ -14,8 +15,6 @@ ht-degree: 14%
 ---
 
 # Leveringsfouten begrijpen{#understanding-delivery-failures}
-
-
 
 ## Leveringsfouten {#about-delivery-failures}
 
@@ -315,7 +314,7 @@ Voor on-premisse installaties en ontvangen/hybride installaties die de erfenis M
 * U kunt kiezen of u bepaalde id- en coderingsstandaarden wilt activeren om de domeinnaam te controleren, bijvoorbeeld **Afzender-id**, **DomainKeys**, **DKIM**, en **S/MIME**.
 * De **SMTP-relay** De parameters laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
 
-Als uw berichten in Vooruitzichten met worden getoond **[!UICONTROL on behalf of]** in het verzendadres ervoor zorgen dat u uw e-mails niet ondertekent met **Afzender-id**, de verouderde standaard voor e-mailverificatie van Microsoft. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het betreffende vakje en de contactpersoon uit [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
+Als uw berichten in Vooruitzichten met worden getoond **[!UICONTROL on behalf of]** in het verzendadres ervoor zorgen dat u uw e-mails niet ondertekent met **Afzender-id**, de verouderde standaard voor e-mailverificatie van Microsoft. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het betreffende vakje en de contactpersoon uit [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
 
 #### MX-beheer {#mx-management}
 

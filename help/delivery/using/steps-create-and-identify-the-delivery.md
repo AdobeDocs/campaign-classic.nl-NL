@@ -2,20 +2,19 @@
 product: campaign
 title: De levering maken en identificeren
 description: De levering maken en identificeren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Channel Configuration
+role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 6%
+source-wordcount: '283'
+ht-degree: 7%
 
 ---
 
 # De levering maken en identificeren {#create-and-identify-the-delivery}
-
-
 
 ## De levering maken {#creating-the-delivery}
 
@@ -26,7 +25,7 @@ Als u een levering wilt maken, klikt u op **[!UICONTROL Create]** boven de lijst
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar: direct mail, e-mail, fax, telefoon, mobiel kanaal (SMS), Facebook, Twitter, enz.
+Er is een standaardsjabloon voor elk kanaal dat u hebt geïnstalleerd: direct mail, e-mail, fax, telefoon, mobiel kanaal (SMS), Facebook, Twitter, enzovoort.
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar:
 
 U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Voor meer informatie over sjablonen raadpleegt u [deze sectie](about-templates.md).
 
-## Identificeer de levering {#identifying-the-delivery}
+## De levering identificeren {#identifying-the-delivery}
 
 U moet parameters voltooien om de levering te identificeren. Dit doet u als volgt:
 
@@ -43,7 +42,7 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
    Een leveringscode kan ook aan de levering worden toegewezen. De naam van de levering en de bijbehorende code worden weergegeven in de lijst met leveringen, maar kunnen niet door de ontvangers worden gezien.
 
 1. Voeg een beschrijving toe in het dialoogvenster **[!UICONTROL Description]** veld.
-1. Selecteer de leveringsaard op het relevante gebied. Deze informatie is handig voor het bijhouden van de levering: u kunt filteren op basis van dit criterium in de leveringslijst of query&#39;s maken aan de hand van dit selectiecriterium.
+1. Selecteer de leveringsaard op het relevante gebied. Deze informatie is nuttig voor het volgen van de levering: u kunt filtreren gebaseerd op dit criterium in de leveringslijst of vragen bouwen gebruikend dit selectiecriterium.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 

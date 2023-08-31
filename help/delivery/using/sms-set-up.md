@@ -2,20 +2,19 @@
 product: campaign
 title: SMS-kanaal voor campagne configureren
 description: Leer hoe te om het kanaal van SMS in Campagne te vormen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS
+role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1734'
 ht-degree: 34%
 
 ---
 
 # Sms-kanaal configureren {#setting-up-sms-channel}
-
-
 
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
@@ -103,7 +102,7 @@ Tekentransliteratie kan worden ingesteld in een externe rekening voor levering v
 Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard.
 
 * Indien transliteratie **[!UICONTROL authorized]**, wordt elk teken dat niet in aanmerking wordt genomen, vervangen door een GSM-teken wanneer het bericht wordt verzonden. De letter ‘ë’ wordt bijvoorbeeld vervangen door ‘e’. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft hetzelfde.
-* Wanneer transliteratie **[!UICONTROL not authorized]**, wordt elk bericht dat tekens bevat waarmee geen rekening wordt gehouden, verzonden in binaire indeling (Unicode): alle tekens worden daarom naar behoren verzonden. De sms-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per sms voor berichten die in meerdere delen worden verzonden). Als het maximum aantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
+* Wanneer transliteratie **[!UICONTROL not authorized]**, wordt elk bericht dat tekens bevat waarmee geen rekening wordt gehouden, verzonden in binaire notatie (Unicode): alle tekens worden daarom verzonden zoals ze zijn. De sms-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per sms voor berichten die in meerdere delen worden verzonden). Als het maximum aantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
 
 >[!IMPORTANT]
 >
@@ -298,13 +297,13 @@ CR: Enter-teken
 
 Wanneer u een sms-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een sms-bericht past.
 
-Wanneer u een nieuwe externe account voor levering via SMPP mobile configureert, kunt u de **[!UICONTROL Mapping of encodings]** in de **[!UICONTROL Mobile]** tab: de **[!UICONTROL data_coding]** in het veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
+Wanneer u een nieuwe externe account voor levering via SMPP mobile configureert, kunt u de **[!UICONTROL Mapping of encodings]** in de **[!UICONTROL Mobile]** tab: the **[!UICONTROL data_coding]** in het veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
 
 >[!NOTE]
 >
->De toewijzing tussen de waarde **data_coding** en de werkelijk gebruikte codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval, uw **Adobe Campaign** de beheerder moet deze afbeelding verklaren. Neem contact op met uw provider om meer informatie te krijgen.
+>De toewijzing tussen de waarde **data_coding** en de werkelijk gebruikte codering wordt gestandaardiseerd. Niettemin hebben bepaalde SMSC hun eigen specifieke kaart: in dit geval uw **Adobe Campaign** de beheerder moet deze afbeelding verklaren. Neem contact op met uw provider om meer informatie te krijgen.
 
-U kunt declareren **data_codings** en zo nodig de codering forceren: Hiervoor geeft u één codering in de tabel op.
+U kunt declareren **data_codings** en forceer zo nodig de codering: hiervoor geeft u één codering in de tabel op.
 
 * Wanneer geen afbeelding van coderingen wordt bepaald, neemt de schakelaar een generisch gedrag over:
 
@@ -343,13 +342,13 @@ Ontvangers worden vermeld in het dialoogvenster **[!UICONTROL Non deliverables a
 * Als u hetzelfde antwoord wilt verzenden, ongeacht het trefwoord, laat u het **[!UICONTROL Keyword]** kolom leeg.
 * Als u een actie wilt uitvoeren zonder een antwoord te verzenden, laat u de **[!UICONTROL Response]** kolom leeg. Zo kunt u bijvoorbeeld een gebruiker die met een ander bericht dan &quot;STOP&quot; reageert, uit quarantaine verwijderen.
 
-Als u veelvoudige externe rekeningen gebruikend de Uitgebreide generische schakelaar SMPP met de zelfde leveranciersrekening hebt, kan de volgende kwestie gebeuren: wanneer u een antwoord op een korte code verzendt, kan dit antwoord op een van uw externe accountverbindingen worden ontvangen. Het automatische antwoord dat wordt verzonden, kan dan ook niet het verwachte bericht zijn.
+Als u veelvoudige externe rekeningen gebruikend de Uitgebreide generische schakelaar SMPP met de zelfde leveranciersrekening hebt, kan de volgende kwestie gebeuren: wanneer het verzenden van een antwoord naar een korte code, kan het op om het even welk van uw externe rekeningsverbindingen worden ontvangen. Het automatische antwoord dat wordt verzonden, kan dan ook niet het verwachte bericht zijn.
 U kunt dit voorkomen door een van de volgende oplossingen toe te passen, afhankelijk van de provider die u gebruikt:
 
 * Maak één leverancieraccount voor elke externe account.
-* Gebruik de **[!UICONTROL System type]** veld van **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** om elke korte code van elkaar te onderscheiden. Vraag uw provider om een andere waarde voor elke account.
+* Gebruik de **[!UICONTROL System type]** veld van de **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** om elke korte code van elkaar te onderscheiden. Vraag uw provider om een andere waarde voor elke account.
 
-   ![](assets/extended_smpp_system-type.png)
+  ![](assets/extended_smpp_system-type.png)
 
 De stappen voor het opzetten van een externe account met behulp van de Extended Generic SMPP-connector worden beschreven in de [Een SMPP-externe account maken](#creating-an-smpp-external-account) sectie.
 

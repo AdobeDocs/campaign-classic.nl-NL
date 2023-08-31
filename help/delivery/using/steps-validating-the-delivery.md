@@ -2,20 +2,19 @@
 product: campaign
 title: De levering valideren
 description: Leer hoe u een levering kunt valideren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability, Email Rendering, Proofs
+role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 4%
+source-wordcount: '1678'
+ht-degree: 5%
 
 ---
 
 # De levering valideren {#validating-the-delivery}
-
-
 
 Wanneer een levering is gecreeerd en gevormd, moet u het bevestigen alvorens het naar het belangrijkste doel te verzenden.
 
@@ -25,7 +24,7 @@ Dit doet u als volgt:
 
    De regels die tijdens de analyse worden toegepast, worden weergegeven in [deze sectie](#validation-process-with-typologies). De beschikbare validatiemodi worden gedetailleerd beschreven in de [De goedkeuringsmodus wijzigen](#changing-the-approval-mode) sectie.
 
-1. **Proefdrukken verzenden**: Met deze stap kunt u inhoud, URL&#39;s, personalisatie enzovoort beheren. Meer informatie in [Een proefdruk verzenden](steps-validating-the-delivery.md#sending-a-proof) en [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Proefdrukken verzenden**: met deze stap kunt u inhoud, URL&#39;s, personalisatie enzovoort beheren. Meer informatie in [Een proefdruk verzenden](steps-validating-the-delivery.md#sending-a-proof) en [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
@@ -91,13 +90,13 @@ De **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen kunt u een se
 
 Op dit tabblad hebt u toegang tot de volgende opties:
 
-* **[!UICONTROL Label and code of the delivery]** : de opties in deze sectie worden gebruikt om de waarden van deze velden tijdens de fase van de leveringsanalyse te berekenen. De **[!UICONTROL Compute the execution folder during the delivery analysis]** in het veld wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
+* **[!UICONTROL Label and code of the delivery]** : de opties in deze sectie worden gebruikt om de waarden van deze gebieden tijdens de fase van de leveringsanalyse te berekenen. De **[!UICONTROL Compute the execution folder during the delivery analysis]** in het veld wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
 * **[!UICONTROL Approval mode]** : in dit veld kunt u handmatig of automatisch afleveren definiëren wanneer de analyse is voltooid. De validatiemodi worden weergegeven in de [De goedkeuringsmodus wijzigen](#changing-the-approval-mode) sectie.
 * **[!UICONTROL Prepare the delivery parts in the database]** : met deze optie kunt u de prestaties van de leveringsanalyse verbeteren. Zie [deze sectie](#improving-delivery-analysis)voor meer informatie.
-* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow, waardoor u een aanzienlijke prestatieverhoging voor het uitvoeren van personalisatie kunt realiseren. Zie voor meer informatie [Aanpassing optimaliseren](personalization-fields.md#optimizing-personalization).
-* **[!UICONTROL Start job in a detached process]** : met deze optie kunt u de leveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het Adobe Campaign-toepassingsserverproces (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
+* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow. Hierdoor kunt u een aanzienlijke prestatieverbetering bereiken voor het uitvoeren van personalisatie. Zie voor meer informatie [Aanpassing optimaliseren](personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Start job in a detached process]** : met deze optie kunt u de afleveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het Adobe Campaign-toepassingsserverproces (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : deze optie voegt de SQL vraaglogboeken aan het leveringsdagboek tijdens de analysefase toe.
-* **[!UICONTROL Ignore personalization scripts during sending]** : Met deze optie kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze richtlijnen worden in het kader van de **&lt;%=** -tag).
+* **[!UICONTROL Ignore personalization scripts during sending]** : hiermee kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze richtlijnen worden ingevoerd met de **&lt;%=** -tag).
 
 ### De prestaties van de leveringsanalyse verbeteren {#improving-delivery-analysis}
 
@@ -108,8 +107,8 @@ Wanneer deze optie wordt toegelaten, wordt de levering voorbereiding uitgevoerd 
 Deze optie is momenteel alleen beschikbaar als aan de volgende voorwaarden is voldaan:
 
 * De levering moet een e-mail zijn. De andere kanalen worden momenteel niet ondersteund.
-* U moet niet midsourcing of extern verpletteren, slechts bulklevering gebruiken die type verplettert. U kunt het verpletteren controleren die in wordt gebruikt **[!UICONTROL General]** tabblad van het dialoogvenster **[!UICONTROL Delivery properties]**.
-* U kunt geen populatie richten die uit een extern dossier komt. Voor één levering klikt u op de knop **[!UICONTROL To]** koppeling van de **[!UICONTROL Email parameters]** en controleert of de **[!UICONTROL Defined in the database]** is geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers zijn **[!UICONTROL Specified by the inbound event(s)]** in de **[!UICONTROL Delivery]** tab.
+* U moet niet midsourcing of extern verpletteren, slechts bulklevering gebruiken die type verplettert. U kunt het verpletteren controleren die in wordt gebruikt **[!UICONTROL General]** tabblad van het **[!UICONTROL Delivery properties]**.
+* U kunt geen populatie richten die uit een extern dossier komt. Voor één levering klikt u op de knop **[!UICONTROL To]** koppeling van de **[!UICONTROL Email parameters]** en controleert u of de **[!UICONTROL Defined in the database]** is geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers zijn **[!UICONTROL Specified by the inbound event(s)]** in de **[!UICONTROL Delivery]** tab.
 * U moet een PostSQL-database gebruiken.
 
 ### De prioriteit van de analyse configureren {#analysis-priority-}
@@ -135,7 +134,7 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 >[!NOTE]
 >
 >* Beschikbare validatiemodi worden nader beschreven in [De goedkeuringsmodus wijzigen](steps-validating-the-delivery.md#changing-the-approval-mode).
->* Configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+>* De configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
 
 Volg onderstaande stappen om een proefdruk te verzenden:
@@ -211,7 +210,7 @@ De **[!UICONTROL Rule]** bevat een lijst met de typologische regels die moeten w
 
 ## De goedkeuringsmodus wijzigen {#changing-the-approval-mode}
 
-De **[!UICONTROL Analysis]** kunt u de validatiemodus selecteren. Als tijdens de analyse waarschuwingen worden gegenereerd (bijvoorbeeld als bepaalde tekens worden geaccentueerd in het onderwerp van de levering, enz.), kunt u de levering zodanig configureren dat wordt bepaald of deze nog moet worden uitgevoerd. Door gebrek, moet de gebruiker het verzenden van berichten aan het eind van de analysefase bevestigen: is **handmatig** validatie.
+De **[!UICONTROL Analysis]** kunt u de validatiemodus selecteren. Als tijdens de analyse waarschuwingen worden gegenereerd (bijvoorbeeld als bepaalde tekens worden geaccentueerd in het onderwerp van de levering, enz.), kunt u de levering zodanig configureren dat wordt bepaald of deze nog moet worden uitgevoerd. Door gebrek, moet de gebruiker het verzenden van berichten aan het eind van de analysefase bevestigen: dit is **handmatig** validatie.
 
 Selecteer een andere goedkeuringsmodus in de vervolgkeuzelijst in het desbetreffende veld.
 
@@ -219,6 +218,6 @@ Selecteer een andere goedkeuringsmodus in de vervolgkeuzelijst in het desbetreff
 
 De volgende goedkeuringsmodi zijn beschikbaar:
 
-* **[!UICONTROL Manual]**: Aan het einde van de analysefase moet de gebruiker de levering bevestigen om te beginnen met het verzenden. Om dit te doen, klik **[!UICONTROL Start]** om de levering te starten.
-* **[!UICONTROL Semi-automatic]**: Het verzenden begint automatisch als de analysefase geen waarschuwingsberichten produceert.
-* **[!UICONTROL Automatic]**: De verzending begint automatisch aan het einde van de analysefase, ongeacht het resultaat ervan.
+* **[!UICONTROL Manual]**: Aan het einde van de analysefase moet de gebruiker de levering bevestigen om te beginnen met verzenden. Om dit te doen, klik **[!UICONTROL Start]** om de levering te starten.
+* **[!UICONTROL Semi-automatic]**: Het verzenden begint automatisch als er tijdens de analysefase geen waarschuwingsberichten worden gegenereerd.
+* **[!UICONTROL Automatic]**: De verzending begint automatisch aan het einde van de analysefase, ongeacht het resultaat.

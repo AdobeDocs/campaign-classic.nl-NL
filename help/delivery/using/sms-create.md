@@ -2,20 +2,19 @@
 product: campaign
 title: SMS maken met campagne
 description: Meer informatie over het maken van SMS met campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS
+role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 3%
+source-wordcount: '444'
+ht-degree: 4%
 
 ---
 
 # Een sms-levering maken {#creating-a-sms-delivery}
-
-
 
 ## Het leveringskanaal selecteren {#selecting-the-delivery-channel}
 
@@ -47,7 +46,7 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
 
    ![](assets/s_ncs_user_wizard_sms01_139.png)
 
-   Je kunt het SMS-bericht goedkeuren. U kunt de inhoud van SMS ook bekijken op het scherm van de mobiele telefoon dat op het recht van de inhoudredacteur wordt getoond. Klik op het scherm en gebruik de muis om door de inhoud te schuiven.
+   Je kunt het SMS-bericht goedkeuren. U kunt de inhoud van SMS ook bekijken op het scherm van de mobiele telefoon dat op het recht van de inhoudredacteur wordt getoond. Klik op het scherm en schuif met de muis door de inhoud.
 
    ![](assets/s_ncs_user_wizard_sms01_140.png)
 
@@ -71,4 +70,4 @@ Het gedetailleerde proces bij de selectie van de doelpopulatie van een levering 
 
 Voor meer informatie over het gebruik van verpersoonlijkingsgebieden, verwijs naar [deze sectie](about-personalization.md).
 
-Voor meer informatie over het opnemen van een zaadlijst raadpleegt u [deze pagina](about-seed-addresses.md).
+Raadpleeg voor meer informatie over het opnemen van een zaadlijst [deze pagina](about-seed-addresses.md).

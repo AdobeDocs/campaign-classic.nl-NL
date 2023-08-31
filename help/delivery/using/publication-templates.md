@@ -2,24 +2,23 @@
 product: campaign
 title: Publicatiesjablonen
 description: Publicatiesjablonen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Templates
+role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 0%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
 # Publicatiesjablonen{#publication-templates}
 
-
-
 ## Publicatiesjablonen {#about-publication-templates}
 
-De publicatiesjabloon is de identiteitskaart van de te publiceren inhoud. Zij verwijst naar de middelen die in het publicatieproces worden gebruikt, d.w.z.:
+De publicatiesjabloon verwijst naar de middelen die in het publicatieproces worden gebruikt, namelijk:
 
 * het gegevensschema,
 * het invoerformulier,
@@ -29,7 +28,7 @@ De publicatiesjabloon is de identiteitskaart van de te publiceren inhoud. Zij ve
 
 Een publicatiesjabloon wordt aangeduid met de naam en naamruimte ervan.
 
-De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de naamruimte en de naam die door een dubbele punt wordt gescheiden. bijvoorbeeld: **focus:nieuwsbrief**.
+De identificatiecode van een stijlpagina is een tekenreeks die bestaat uit de naamruimte en de naam die door een dubbele punt wordt gescheiden, bijvoorbeeld: **focus:nieuwsbrief**.
 
 >[!NOTE]
 >
@@ -37,7 +36,7 @@ De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de
 
 ## De sjabloon maken en configureren {#creating-and-configuring-the-template}
 
-Publicatiesjablonen worden standaard opgeslagen in het dialoogvenster **[!UICONTROL Administration > Configuration > Publication templates]** knooppunt. Als u een nieuwe sjabloon wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met sjablonen.
+Publicatiesjablonen worden standaard opgeslagen in het dialoogvenster **[!UICONTROL Administration > Configuration > Publication templates]** knooppunt. Als u een nieuwe sjabloon wilt maken, klikt u op de **[!UICONTROL New]** boven de lijst met sjablonen.
 
 Als u de publicatiesjabloon wilt configureren, vult u de naam van de sjabloon (d.w.z. de identificatiecode die bestaat uit de naam en de naamruimte), het label, het gegevensschema en het invoerformulier waaraan de sjabloon is gekoppeld.
 
@@ -55,10 +54,10 @@ De **[!UICONTROL Name of template]** field is een gratis label dat het type rend
 
 ### Renderen {#rendering}
 
-De **[!UICONTROL Rendering]** kiest u:
+De **[!UICONTROL Rendering]** -tabblad kiest u:
 
-* het type rendering dat wordt gebruikt voor de projectie van het uitvoerdocument: XSL-opmaakmodel of JavaScript-sjabloon,
-* de indeling van het uitvoerdocument: HTML, Tekst, XML of RTF,
+* het type rendering dat wordt gebruikt voor projectie van het uitvoerdocument: XSL-stijlpagina of JavaScript-sjabloon;
+* de indeling van het uitvoerdocument: HTML, Tekst, XML of RTF;
 * de sjabloon die de constructiegegevens bevat, d.w.z. de te gebruiken stijlpagina of JavaScript-sjabloon.
 
 ### Publicatie {#publication}
@@ -69,25 +68,25 @@ Bij publicatie wordt het uitvoerdocument gegenereerd in de vorm van een bestand,
 
 De volgende publicatieopties zijn beschikbaar:
 
-* De tekenset voor het coderen van het uitvoerbestand kan worden geforceerd via de **[!UICONTROL Encoding]** veld. De tekenset Latin 1 (1252) wordt standaard gebruikt.
-* De **[!UICONTROL Multi-file generation]** Hiermee activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om mini-sites te genereren op basis van een inhoudsblok. zie voor meer informatie : [Meerdere bestanden genereren](#multi-file-generation).
+* De tekenset van het uitvoerbestand kan worden geforceerd via de **[!UICONTROL Encoding]** veld. De tekenset Latin 1 (1252) wordt standaard gebruikt.
+* De **[!UICONTROL Multi-file generation]** Hiermee activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om minisites te genereren op basis van een inhoudsblok. zie voor meer informatie : [Meerdere bestanden genereren](#multi-file-generation).
 * De **[!UICONTROL Location]** bevat de naam van het uitvoerbestand. De naam kan uit variabelen worden samengesteld om een automatische filename te produceren.
 
-   Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`**, waarbij **`<xpath>`** Dit is het pad van een veld in het gegevensschema van de publicatiesjabloon.
+  Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`**, waarbij **`<xpath>`** Dit is het pad van een veld in het gegevensschema van de publicatiesjabloon.
 
-   De naam van een bestand kan een datumveld zijn. Als u dit veld op de juiste wijze wilt opmaken, gebruikt u de opdracht **$date-format** gebruiken, waarbij het pad van het veld en de uitvoerindeling als parameters worden gebruikt.
+  De naam van een bestand kan een datumveld zijn. Als u dit veld correct wilt opmaken, gebruikt u de opdracht **$date-format** gebruiken, met het pad van het veld en de uitvoerindeling als parameters.
 
-   Standaard gebruikt de constructieindeling van de bestandsnaam de variabelen in de velden &quot;@name&quot; en &quot;@date&quot;:
+  Standaard gebruikt de constructieindeling van de bestandsnaam de variabelen in de velden &quot;@name&quot; en &quot;@date&quot;:
 
-   ```
-   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
-   ```
+  ```
+  ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
+  ```
 
-   De gegenereerde bestandsnaam ziet er als volgt uit: ct_news12_20110901.htm.
+  De gegenereerde bestandsnaam ziet er als volgt uit: ct_news12_20110901.htm.
 
-   >[!NOTE]
-   >
-   >Voor meer informatie over het genereren van inhoud raadpleegt u [Een inhoudsinstantie maken](using-a-content-template.md#creating-a-content-instance).
+  >[!NOTE]
+  >
+  >Voor meer informatie over het genereren van inhoud raadpleegt u [Een inhoudsinstantie maken](using-a-content-template.md#creating-a-content-instance).
 
 ### Levering {#delivery}
 
@@ -105,7 +104,7 @@ Door de gegevens uit een script of querylijst te bundelen, kunt u het XML-docume
 
 ### Meerdere bestanden genereren {#multi-file-generation}
 
-Als u meerdere bestanden wilt genereren, selecteert u de optie **[!UICONTROL Multi-file generation]** in het publicatiemodel. Met deze optie kunt u scheidingsmarkeringen opgeven in de stijlpagina voor het begin van elke pagina van het uitvoerdocument. Het genereren van de inhoud levert een bestand op voor elke partitioneringstag die wordt aangetroffen.
+Als u meerdere bestanden wilt genereren, selecteert u de **[!UICONTROL Multi-file generation]** in het publicatiemodel. Met deze optie kunt u scheidingsmarkeringen opgeven in de stijlpagina voor het begin van elke pagina van het uitvoerdocument. Het genereren van de inhoud levert een bestand op voor elke partitioneringstag die wordt aangetroffen.
 
 De partitioneringstag die in de stijlpagina moet worden geïntegreerd, ziet er als volgt uit:
 

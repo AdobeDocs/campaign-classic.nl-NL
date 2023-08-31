@@ -2,13 +2,14 @@
 product: campaign
 title: Regelleveringen maken
 description: Leer hoe u REGELS maakt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Line App
+role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1165'
 ht-degree: 2%
 
 ---
@@ -32,7 +33,7 @@ De stappen voor het gebruik van de [!DNL LINE] kanaal zijn:
 
 ## LINE-kanaal instellen {#setting-up-line-channel}
 
-Voordat u een [!DNL LINE] -account en externe account, moet u eerst het LINE-pakket op uw exemplaar installeren. Voor meer informatie hierover raadpleegt u [deze sectie](../../installation/using/installing-campaign-standard-packages.md#line-package).
+Voordat u een [!DNL LINE] -account en externe account, moet u eerst het LINE-pakket op uw exemplaar installeren. Raadpleeg voor meer informatie hierover [deze sectie](../../installation/using/installing-campaign-standard-packages.md#line-package).
 
 U moet eerst een [!DNL LINE] -account, zodat u deze aan Adobe Campaign kunt koppelen. Vervolgens kunt u [!DNL LINE] berichten aan de gebruikers die uw [!DNL LINE] in hun mobiele toepassing. Externe rekeningen en [!DNL LINE] -account kan alleen worden beheerd door de functionele beheerder van het platform.
 
@@ -40,7 +41,7 @@ Om een [!DNL LINE] account, zie [Documentatie voor lijnontwikkelaars](https://de
 
 ### Creeer en vorm de dienst van de LIJN {#configure-line-service}
 
-Om uw [!DNL LINE] service:
+Als u uw [!DNL LINE] service:
 
 1. Selecteer op de Adobe Campaign Classic-homepage de optie **[!UICONTROL Profiles and Targets]** tab.
 
@@ -56,7 +57,7 @@ Om uw [!DNL LINE] service:
 
 1. Klik op **[!UICONTROL Save]**.
 
-Voor meer informatie over abonnementen en de diensten, zie [Abonnementen beheren](managing-subscriptions.md).
+Zie voor meer informatie over abonnementen en services [Abonnementen beheren](managing-subscriptions.md).
 
 ### Externe LINE-account configureren {#configure-line-external}
 
@@ -72,11 +73,11 @@ Nadat u uw [!DNL LINE] de dienst, moet u vormen [!DNL LINE] externe rekening op 
 
    ![](assets/line_config_2.png)
 
-   * **[!UICONTROL Channel Alias]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** tab.
-   * **[!UICONTROL Channel ID]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
-   * **[!UICONTROL Channel secret key]**: wordt aangeboden via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
-   * **[!UICONTROL Access token]**: wordt aangeboden via uw [!DNL LINE] in de ontwikkelaarportal of door op de knop **[!UICONTROL Get access token]** knop.
-   * **[!UICONTROL Access token expiration date]**: staat u toe om de vervaldatum van het teken van de Toegang te specificeren.
+   * **[!UICONTROL Channel Alias]**: wordt geleverd via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** tab.
+   * **[!UICONTROL Channel ID]**: wordt geleverd via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
+   * **[!UICONTROL Channel secret key]**: wordt geleverd via uw [!DNL LINE] in de **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** tab.
+   * **[!UICONTROL Access token]**: wordt geleverd via uw [!DNL LINE] in de ontwikkelaarportal of door op de knop **[!UICONTROL Get access token]** knop.
+   * **[!UICONTROL Access token expiration date]**: hiermee kunt u de vervaldatum van het toegangstoken opgeven.
    * **[!UICONTROL LINE subscription service]**: staat u toe om de diensten te specificeren waarop de gebruikers zullen worden ingetekend.
 
 1. Zodra uw configuratie gereed is, klikt u op **[!UICONTROL Save]**.
@@ -91,7 +92,7 @@ De [!DNL LINE] is nu geconfigureerd in Adobe Campaign, kunt u beginnen met het m
 >
 >Wanneer u een [!DNL LINE] voor het eerst aan een nieuwe ontvanger leveren, moet u het officiële lijnbericht betreffende de gebruiksvoorwaarden en de toestemming in de levering toevoegen. Het officiële bericht is beschikbaar op het [volgende koppeling](https://terms.line.me/OA_privacy/).
 
-Als u een [!DNL LINE] levering u moet deze stappen volgen:
+Een [!DNL LINE] levering u moet deze stappen volgen:
 
 1. Van de **[!UICONTROL Campaigns]** tab, selecteert u **[!UICONTROL Deliveries]** Klik vervolgens op de knop **[!UICONTROL Create]** knop.
 
@@ -165,19 +166,19 @@ U kunt het volgende gebruiken:
 
 * a **[!UICONTROL Personalized image]**,
 
-   >[!NOTE]
-   >
-   >U kunt de **%SIZE%** variabele om de beeldweergave te optimaliseren volgens de schermgrootte van het mobiele apparaat van de ontvanger.
+  >[!NOTE]
+  >
+  >U kunt de **%SIZE%** variabele om de beeldweergave te optimaliseren volgens de schermgrootte van het mobiele apparaat van de ontvanger.
 
-   ![](assets/line_message_04.png)
+  ![](assets/line_message_04.png)
 
 * een **[!UICONTROL Image URL]** per apparaatschermgrootte,
 
-   ![](assets/line_message_03.png)
+  ![](assets/line_message_03.png)
 
-   De **[!UICONTROL Define images per device screen size]** kunt u verschillende afbeeldingsresoluties gebruiken om de zichtbaarheid van de levering op mobiele apparaten te optimaliseren. Alleen afbeeldingen met dezelfde hoogte en breedte worden ondersteund.
+  De **[!UICONTROL Define images per device screen size]** kunt u verschillende afbeeldingsresoluties gebruiken om de zichtbaarheid van de levering op mobiele apparaten te optimaliseren. Alleen afbeeldingen met dezelfde hoogte en breedte worden ondersteund.
 
-   Afbeeldingen kunnen worden gedefinieerd op basis van de schermgrootte:
+  Afbeeldingen kunnen worden gedefinieerd op basis van de schermgrootte:
 
    * 1040px
    * 700px
@@ -185,17 +186,17 @@ U kunt het volgende gebruiken:
    * 300px
    * 240px
 
-   >[!CAUTION]
-   >
-   >De grootte van 1040 x 1040 px is verplicht voor elke lijnafbeelding met koppeling.
+  >[!CAUTION]
+  >
+  >De grootte van 1040 x 1040 px is verplicht voor elke lijnafbeelding met koppeling.
 
-   Vervolgens moet u alternatieve tekst toevoegen die op het mobiele apparaat van de ontvanger verschijnt.
+  Vervolgens moet u alternatieve tekst toevoegen die op het mobiele apparaat van de ontvanger verschijnt.
 
 * en **[!UICONTROL Links]**.
 
-   De **[!UICONTROL Links]** kunt u kiezen tussen verschillende lay-outs die de afbeelding verdelen in meerdere klikbare gebieden. U kunt dan elk van hen toewijzen een specifiek **[!UICONTROL Link URL]**.
+  De **[!UICONTROL Links]** kunt u kiezen tussen verschillende lay-outs die de afbeelding verdelen in meerdere klikbare gebieden. U kunt dan elk van hen toewijzen een specifiek **[!UICONTROL Link URL]**.
 
-   ![](assets/line_message_05.png)
+  ![](assets/line_message_05.png)
 
 ### Een videoboodschap configureren {#configuring-a-video-message-delivery}
 
@@ -215,7 +216,7 @@ Nadat u de levering hebt verzonden, kunt u uw [!DNL LINE] rapporten via het menu
 
 >[!NOTE]
 >
->De volgende rapporten wijzen op het klikthrough tarief. [!DNL LINE] houdt geen rekening met de open rente.
+>De het volgen rapporten wijzen op het klikthrough tarief. [!DNL LINE] houdt geen rekening met de open rente.
 
 ![](assets/line_reports_01.png)
 
@@ -231,7 +232,7 @@ In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vo
 
    ![](assets/line_usecase.png)
 
-1. Selecteer **[!UICONTROL LINE V2 delivery]** leveringssjabloon en naam van levering.
+1. Selecteer de **[!UICONTROL LINE V2 delivery]** leveringssjabloon en naam van levering.
 
    ![](assets/line_usecase_01.png)
 
@@ -257,7 +258,7 @@ In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vo
 
    ![](assets/line_usecase_07.png)
 
-1. In de **[!UICONTROL Links]** selecteert u de lay-out waarin de afbeelding wordt verdeeld in meerdere klikbare gebieden.
+1. In de **[!UICONTROL Links]** selecteert u de lay-out waarin de afbeelding wordt verdeeld in meerdere gebieden waarop kan worden geklikt.
 
 1. Wijs een URL toe aan elk gebied van uw afbeelding.
 

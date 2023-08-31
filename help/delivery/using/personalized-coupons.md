@@ -2,20 +2,19 @@
 product: campaign
 title: Gepersonaliseerde coupons
 description: Leer hoe u gepersonaliseerde coupons maakt en invoegt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization
+role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
 
 # Gepersonaliseerde coupons{#personalized-coupons}
-
-
 
 Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde krijgen voor producten en services. Met de module Campagne-coupon kunt u een set coupons maken die u naar verwachting aan toekomstige marketingaanbiedingen wilt toevoegen. Als u klaar bent om een levering te maken, wijst u de toepasselijke coupons toe. Aangezien coupons geldig zijn voor een bepaalde periode, wordt een toegewezen coupon op unieke wijze gekoppeld aan het bijbehorende leveringsbericht. Bovendien bevestigt Campaign dat er voldoende coupons zijn voor het aantal berichten voordat de levering wordt verzonden.
 
@@ -75,7 +74,7 @@ Waarden voor **[!UICONTROL status]**, **[!UICONTROL channel]**, en **[!UICONTROL
 
 ## Een coupon invoegen in een e-maillevering {#inserting-a-coupon-into-an-email-delivery}
 
-In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor gedetailleerde instructies over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](about-email-channel.md). U kunt ook een coupon toevoegen aan een levering in een workflow.
+In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor gedetailleerde instructies over hoe te om een levering tot stand te brengen, raadpleeg [deze sectie](about-email-channel.md). U kunt ook een coupon toevoegen aan een levering in een workflow.
 
 1. Ga naar **[!UICONTROL Campaigns]** en kiest u **[!UICONTROL Deliveries]**.
 1. Klik op **[!UICONTROL Create]**.
@@ -83,8 +82,8 @@ In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor 
    ![](assets/deliv_coup_04.png)
 
 1. Geef een naam op in **[!UICONTROL Label]** en klik op **[!UICONTROL Continue]**.
-1. Klikken **[!UICONTROL To]** om ontvangers toe te voegen.
-1. Klikken **[!UICONTROL Add]** om ontvangers voor de levering te kiezen. Nadat u de ontvangers hebt geselecteerd, klikt u op **[!UICONTROL Ok]** om terug te keren naar de levering.
+1. Klikken **[!UICONTROL To]** om ontvangers toe te voegen
+1. Klikken **[!UICONTROL Add]** om ontvangers voor de levering te kiezen. Nadat u de ontvangers hebt geselecteerd, klikt u op **[!UICONTROL Ok]** terug naar de levering.
 
    ![](assets/deliv_coup_05.png)
 
@@ -109,13 +108,14 @@ In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor 
 
    * Anonieme coupon: **[!UICONTROL Coupon > Coupon code]**
 
-      ![](assets/deliv_coup_10.png)
+     ![](assets/deliv_coup_10.png)
 
    * Afzonderlijke coupon: **[!UICONTROL Coupon value > Coupon code]**
 
-      ![](assets/deliv_coup_11.png)
+     ![](assets/deliv_coup_11.png)
 
-      De coupon wordt in het bericht ingevoegd als code in plaats van de naam die u hebt toegewezen. De code wordt gebruikt binnen het de gegevensmodel van het Mob van de Campagne.
+     De coupon wordt in het bericht ingevoegd als code in plaats van de naam die u hebt toegewezen. De code wordt gebruikt binnen het de gegevensmodel van het Mob van de Campagne.
+
    ![](assets/deliv_coup_12.png)
 
 1. Voer een test uit om de naam te bevestigen die u aan de coupon hebt toegewezen. Ga naar de **[!UICONTROL Preview]** en klik op **[!UICONTROL Test personalization]**. Kies een ontvanger voor de test.
@@ -136,7 +136,7 @@ In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor 
 
 >[!NOTE]
 >
->Voor instructies over hoe u ontoereikende coupons voor een levering kunt beheren, raadpleegt u [Onvoldoende coupons beheren](#managing-insufficient-coupons)
+>Voor instructies over het beheren van ontoereikende coupons voor een levering raadpleegt u [Onvoldoende coupons beheren](#managing-insufficient-coupons)
 
 Bevestig dat de levering succesvol was:
 
