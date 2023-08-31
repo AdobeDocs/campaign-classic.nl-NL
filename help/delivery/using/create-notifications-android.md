@@ -2,19 +2,18 @@
 product: campaign
 title: Een pushmelding maken voor Android-apparaten
 description: Meer informatie over het maken van pushmeldingen voor Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 2%
 
 ---
 
 # Meldingen maken voor Android{#create-notificaations-android}
-
-
 
 Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. Algemene concepten voor het creëren van levering worden weergegeven in [deze sectie](steps-about-delivery-creation-steps.md).
 
@@ -25,10 +24,10 @@ Begin door een nieuwe levering te maken.
 Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 
 * **[!UICONTROL Data message]**, afgehandeld door de clienttoepassing.
-   <br>De berichten worden verzonden rechtstreeks naar de mobiele toepassing die het android bericht aan het apparaat zal produceren en tonen. Gegevensberichten bevatten alleen aangepaste toepassingsvariabelen.
+  <br>De berichten worden verzonden rechtstreeks naar de mobiele toepassing die het android bericht aan het apparaat zal produceren en tonen. Gegevensberichten bevatten alleen aangepaste toepassingsvariabelen.
 
 * **[!UICONTROL Notification message]**, automatisch afgehandeld door de FCM SDK.
-   <br> FCM geeft automatisch het bericht weer op de apparaten van uw gebruikers namens de client-app. Meldingsberichten bevatten een vooraf gedefinieerde set parameters en opties, maar kunnen nog steeds verder worden aangepast met aangepaste toepassingsvariabelen.
+  <br> FCM geeft automatisch het bericht weer op de apparaten van uw gebruikers namens de client-app. Meldingsberichten bevatten een vooraf gedefinieerde set parameters en opties, maar kunnen nog steeds verder worden aangepast met aangepaste toepassingsvariabelen.
 
 Raadpleeg voor meer informatie over berichten in Firebase Cloud [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
@@ -48,7 +47,7 @@ Raadpleeg voor meer informatie over berichten in Firebase Cloud [FCM-documentati
 
 1. In de **[!UICONTROL Target type]** venster, selecteert u **[!UICONTROL Subscribers of an Android mobile application]** en klik op **[!UICONTROL Next]**.
 
-1. In de **[!UICONTROL Service]** drop-down, selecteer uw eerder gecreeerde dienst dan toepassing en klik **[!UICONTROL Finish]**.
+1. In de **[!UICONTROL Service]** drop-down, selecteer uw eerder gecreeerde dienst toen toepassing en klik **[!UICONTROL Finish]**.
 De **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
 
    ![](assets/nmac_android_6.png)
@@ -89,7 +88,7 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 
 1. In de **[!UICONTROL Target type]** venster, selecteert u **[!UICONTROL Subscribers of an Android mobile application]** en klik op **[!UICONTROL Next]**.
 
-1. In de **[!UICONTROL Service]** drop-down, selecteer uw eerder gecreeerde dienst dan toepassing en klik **[!UICONTROL Finish]**.
+1. In de **[!UICONTROL Service]** drop-down, selecteer uw eerder gecreeerde dienst toen toepassing en klik **[!UICONTROL Finish]**.
 
    ![](assets/nmac_android_6.png)
 
@@ -99,12 +98,12 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 
    * **[!UICONTROL Channel ID]**: Stel de kanaal-id van uw melding in. De app moet een kanaal met deze kanaal-id maken voordat meldingen met deze kanaal-id worden ontvangen.
    * **[!UICONTROL Sound]**: Stel het geluid in dat moet worden afgespeeld wanneer het apparaat het bericht ontvangt.
-   * **[!UICONTROL Color]**: Stel de kleur van het pictogram van uw melding in.
+   * **[!UICONTROL Color]**: Stel de pictogramkleur van uw melding in.
    * **[!UICONTROL Icon]**: Stel het pictogram van het bericht in op weergave op de apparaten van uw profielen.
    * **[!UICONTROL Tag]**: Stel de id in die wordt gebruikt om bestaande meldingen in de meldingslade te vervangen.
    * **[!UICONTROL Click action]**: Stel de handeling in die aan een gebruiker is gekoppeld, en klik op het bericht.
 
-   Voor meer informatie over **[!UICONTROL Notification options]** en hoe u deze velden kunt vullen, raadpleegt u [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Voor meer informatie over de **[!UICONTROL Notification options]** en hoe u deze velden kunt vullen, raadpleegt u [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 
    ![](assets/nmac_android_8.png)
 
@@ -114,10 +113,10 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
    * **[!UICONTROL Image]**: Stel de URL van de afbeelding in die in uw melding moet worden weergegeven.
    * **[!UICONTROL Notification Count]**: Stel het aantal nieuwe ongelezen gegevens in dat u rechtstreeks op het toepassingspictogram wilt weergeven.
    * **[!UICONTROL Sticky]**: Ingesteld op true of false. Indien ingesteld op false, wordt het bericht automatisch genegeerd wanneer de gebruiker erop klikt. Indien ingesteld op true, wordt het bericht nog steeds weergegeven, zelfs wanneer de gebruiker erop klikt.
-   * **[!UICONTROL Notification Priority]**: Plaats de prioritaire niveaus van uw bericht aan gebrek, minimum, laag of hoog. Raadpleeg voor meer informatie hierover [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Notification Priority]**: Stel de prioriteitsniveaus van uw melding in op standaard, minimum, laag of hoog. Raadpleeg voor meer informatie hierover [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Visibility]**: Stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. Raadpleeg voor meer informatie hierover [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   Voor meer informatie over **[!UICONTROL HTTP v1 additional options]** en hoe u deze velden kunt vullen, raadpleegt u [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Voor meer informatie over de **[!UICONTROL HTTP v1 additional options]** en hoe u deze velden kunt vullen, raadpleegt u [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 
    ![](assets/nmac_android_9.png)
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Voorwaardelijke content
 description: Leer hoe u voorwaardelijke inhoud toevoegt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization, Multilingual Messages
+role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 7%
 
 ---
 
 # Voorwaardelijke content{#conditional-content}
-
-
 
 Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijking tot stand brengen die op het profiel van de ontvanger bijvoorbeeld wordt gebaseerd. Tekstblokken en/of afbeeldingen worden vervangen wanneer aan een bepaalde voorwaarde wordt voldaan.
 
@@ -26,7 +25,7 @@ Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijk
 
 In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamisch is gepersonaliseerd op basis van het geslacht en de belangen van de ontvanger.
 
-* Weergave met &quot;Mr&quot; of &quot;Mej.&quot; op basis van de waarde van de **[!UICONTROL Gender]** veld (M of F) in de gegevensbron,
+* Weergave met &quot;Mr&quot; of &quot;ms&quot; op basis van de waarde van **[!UICONTROL Gender]** veld (M of F) in de gegevensbron,
 * Persoonlijke vergadering van een nieuwsbrief of een promotieaanbod volgens de aangegeven of geconstateerde belangen:
 
    * Rente 1 — > Blok 1
@@ -36,7 +35,7 @@ In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamis
 
 Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de waarde van een veld:
 
-1. Klik op het verpersoonlijkingspictogram en selecteer **[!UICONTROL Conditional content > If]**.
+1. Klik op het pictogram voor aanpassen en selecteer **[!UICONTROL Conditional content > If]**.
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
@@ -46,24 +45,24 @@ Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de 
 
    Dit doet u als volgt:
 
-   * Selecteer het eerste element van de expressie. **`<field>`**, (dit element wordt standaard gemarkeerd tijdens het invoegen van het **indien** (expressie) en klik op het pictogram voor aanpassen om dit te vervangen door het testveld.
+   * Selecteer het eerste element van de expressie. **`<field>`**, (dit element wordt standaard gemarkeerd tijdens het invoegen van de opdracht **indien** (expressie) en klik op het pictogram voor aanpassen om dit te vervangen door het testveld.
 
-      ![](assets/s_ncs_user_conditional_content03.png)
+     ![](assets/s_ncs_user_conditional_content03.png)
 
    * Vervangen **`<value>`** met de waarde van het veld waarvoor aan de voorwaarde wordt voldaan. Deze waarde moet tussen aanhalingstekens staan.
    * Geef de inhoud op die moet worden ingevoegd wanneer aan de voorwaarde wordt voldaan. Dit kan tekst, een afbeelding, een formulier, een hypertekstkoppeling enzovoort zijn.
 
-      ![](assets/s_ncs_user_conditional_content04.png)
+     ![](assets/s_ncs_user_conditional_content04.png)
 
 1. Klik op de knop **[!UICONTROL Preview]** tabblad om de inhoud van het bericht weer te geven op basis van de ontvanger van de zending:
 
    * Een ontvanger selecteren waarvoor de voorwaarde waar is:
 
-      ![](assets/s_ncs_user_conditional_content05.png)
+     ![](assets/s_ncs_user_conditional_content05.png)
 
    * Een ontvanger selecteren waarvoor de voorwaarde niet waar is:
 
-      ![](assets/s_ncs_user_conditional_content06.png)
+     ![](assets/s_ncs_user_conditional_content06.png)
 
 U kunt andere gevallen toevoegen en verschillende inhoud definiëren op basis van de waarden van een of meer velden. Om dit te doen, gebruik **[!UICONTROL Conditional content > Else]** en **[!UICONTROL Conditional content > Else if]**. Deze expressies zijn op dezelfde manier geconfigureerd als de **indien** expressie.
 
@@ -115,4 +114,4 @@ Deze video laat zien hoe u voorwaardelijke content aan een levering kunt toevoeg
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

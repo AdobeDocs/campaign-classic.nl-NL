@@ -2,20 +2,19 @@
 product: campaign
 title: E-mailparameters
 description: Meer informatie over opties en instellingen die specifiek zijn voor e-maillevering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
+role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '912'
 ht-degree: 8%
 
 ---
 
 # E-mailparameters {#email-parameters}
-
-
 
 In deze sectie worden de opties en parameters beschreven die specifiek zijn voor e-maillevering.
 
@@ -43,7 +42,7 @@ Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjab
 1. Selecteer de levering van uw keuze of dupliceer de uit-van-de-doos **E-maillevering** selecteert u vervolgens de gedupliceerde sjabloon.
 1. Klik op de knop **Eigenschappen** knop.
 1. Selecteer het tabblad **[!UICONTROL Delivery]**. 
-1. Controleer de **BCC e-mailen** optie. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
+1. Controleer de **BCC e-mailen** -optie. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
@@ -65,7 +64,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-  Het bericht bevat beide indelingen: tekst en HTML. Het formaat dat op ontvangst wordt getoond hangt van de configuratie van de postsoftware van de ontvanger (multipart-alternatief) af.
+  Het bericht bevat beide indelingen: tekst en HTML. Het formaat dat op ontvangst wordt getoond hangt van de configuratie van de de postsoftware van de ontvanger (multipart-alternatief) af.
 
   >[!IMPORTANT]
   >
@@ -77,7 +76,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 >[!NOTE]
 >
->Voor meer informatie over het definiëren van de e-mailinhoud raadpleegt u [deze sectie](defining-the-email-content.md).
+>Zie voor meer informatie over het definiëren van de e-mailinhoud [deze sectie](defining-the-email-content.md).
 
 ## De spiegelpagina genereren {#generating-mirror-page}
 
@@ -85,7 +84,7 @@ De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowse
 
 Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsblokkeringen, verwijs naar [Aanpassingsblokken](personalization-blocks.md).
 
-In de leveringseigenschappen **[!UICONTROL Mode]** van het **[!UICONTROL Validity]** kunt u de generatiemodus voor deze pagina wijzigen.
+In de leveringseigenschappen, **[!UICONTROL Mode]** van het **[!UICONTROL Validity]** kunt u de generatiemodus voor deze pagina wijzigen.
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -95,9 +94,9 @@ In de leveringseigenschappen **[!UICONTROL Mode]** van het **[!UICONTROL Validit
 
 Naast de standaardmodus zijn ook de volgende opties beschikbaar:
 
-* **[!UICONTROL Force the generation of the mirror page]**: zelfs als geen verbinding aan de spiegelpagina in de levering wordt opgenomen, zal de spiegelpagina worden gecreeerd.
-* **[!UICONTROL Do not generate the mirror page]**: er wordt geen spiegelpagina gegenereerd, zelfs niet als de koppeling aanwezig is in de levering.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: deze optie laat u tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek toegang hebben. Als u dit wilt doen, klikt u na afloop van de levering op de knop **[!UICONTROL Delivery]** en selecteert u de regel van de ontvanger waarvan u de spiegelpagina wilt weergeven. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
+* **[!UICONTROL Force the generation of the mirror page]**: zelfs als er geen koppeling naar de spiegelpagina is ingevoegd in de levering, wordt de spiegelpagina gemaakt.
+* **[!UICONTROL Do not generate the mirror page]**: er wordt geen spiegelpagina gegenereerd, zelfs als de koppeling aanwezig is in de levering.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: deze optie laat u tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek toegang hebben. Als u dit wilt doen, klikt u op de knop **[!UICONTROL Delivery]** en selecteert u de regel van de ontvanger waarvan u de spiegelpagina wilt weergeven. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
 
   ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -109,7 +108,7 @@ De standaardcodering is UTF-8. Als sommige e-mailproviders van uw ontvangers de 
 
 U wilt bijvoorbeeld een e-mail verzenden met Japanse tekens. Om ervoor te zorgen dat alle tekens correct worden weergegeven aan ontvangers in Japan, kunt u een codering gebruiken die de Japanse tekens ondersteunt in plaats van de standaard UTF-8.
 
-Selecteer hiervoor de optie **[!UICONTROL Force the encoding used for messages]** in de **[!UICONTROL Character encoding]** en kiest u een codering in de vervolgkeuzelijst die wordt weergegeven.
+Selecteer de optie **[!UICONTROL Force the encoding used for messages]** in de **[!UICONTROL Character encoding]** en kiest u een codering in de vervolgkeuzelijst die wordt weergegeven.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 

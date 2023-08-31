@@ -2,12 +2,13 @@
 product: campaign
 title: Het goedkeuringsproces instellen en beheren
 description: Leer hoe u goedkeuringen van marketingcampagnes beheert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2445'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 # Het goedkeuringsproces instellen en beheren {#approving-marketing-campaigns}
 
 
-Elke leveringsstap kan worden goedgekeurd om volledige controle en controle op de verschillende processen van de campagne te waarborgen: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs.
+Elke leveringsstap kan worden goedgekeurd om te zorgen voor volledige controle en controle op de verschillende processen van de campagne: gericht, inhoudelijk, budgettair, extractie en het verzenden van een bewijs.
 
 De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleren of de revisoren beschikken over de **juiste machtigingen** voor goedkeuring, en dat hun veiligheidszone correct wordt bepaald. [Meer informatie](#selecting-reviewers).
 
@@ -50,7 +51,7 @@ De goedkeuringen kunnen voor het campagnemalplaatje, voor elke campagne individu
 
 Alle taken waarvoor goedkeuring vereist is, worden geselecteerd in het campagnemesjabloon ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** -tab), evenals de exploitanten die verantwoordelijk zijn voor de goedkeuring (zij ontvangen meldingen, tenzij deze optie niet is ingeschakeld). Raadpleeg [deze sectie](#approving-processes) voor meer informatie.
 
-Deze montages kunnen voor elke campagne met dit malplaatje worden gecreeerd, en individueel voor elke campagnelevering worden met voeten getreden: klik op **[!UICONTROL Properties]** dan de **[!UICONTROL Approvals]** tab.
+Deze instellingen kunnen worden overschreven voor elke campagne die met deze sjabloon wordt gemaakt en afzonderlijk voor elke campagnelevering: klik op de knop **[!UICONTROL Properties]** en vervolgens de **[!UICONTROL Approvals]** tab.
 
 In het volgende voorbeeld is voor de leveringsinhoud geen goedkeuring vereist:
 
@@ -58,7 +59,7 @@ In het volgende voorbeeld is voor de leveringsinhoud geen goedkeuring vereist:
 
 ## Revisoren selecteren {#selecting-reviewers}
 
-Voor elk type goedkeuring worden de voor de goedkeuring verantwoordelijke exploitanten of groepen van marktdeelnemers geselecteerd uit de vervolgkeuzelijst in de levering. Er kunnen meer operatoren worden toegevoegd met de opdracht **[!UICONTROL Edit...]** koppeling. In dit venster kunt u ook de deadline van de goedkeuring bewerken.
+Voor elk type goedkeuring worden de voor de goedkeuring verantwoordelijke exploitanten of groepen van marktdeelnemers geselecteerd uit de vervolgkeuzelijst in de levering. Er kunnen meer operatoren worden toegevoegd met de **[!UICONTROL Edit...]** koppeling. In dit venster kunt u ook de deadline van de goedkeuring bewerken.
 
 ![](assets/s_user_validation_add_operator.png)
 
@@ -79,7 +80,7 @@ Als u een taak wilt goedkeuren via de console of de webinterface, klikt u op de 
 
 ![](assets/s_user_validation_from_console.png)
 
-Controleer de informatie die u wilt goedkeuren, kies of u de goedkeuring wilt accepteren of afwijzen en voer zo nodig een opmerking in. Klikken **[!UICONTROL Ok]** om op te slaan.
+Controleer de informatie die u wilt goedkeuren, kies of u de goedkeuring wilt accepteren of afwijzen en voer zo nodig een opmerking in. Klikken **[!UICONTROL Ok]** opslaan.
 
 >[!NOTE]
 >
@@ -107,19 +108,19 @@ De informatie is op verschillende plaatsen beschikbaar:
 
 * In het campagnegoedkeuringslogboek: **[!UICONTROL Approvals]** subtabblad van het **[!UICONTROL Edit > Tracking]** tab:
 
-   ![](assets/s_user_validation_log_from_op.png)
+  ![](assets/s_user_validation_log_from_op.png)
 
 * In het logboek van de campagnelevering, **[!UICONTROL Deliveries]** subtabblad van het **[!UICONTROL Edit > Tracking]** tab:
 
-   ![](assets/s_user_validation_log_from_delivery_list.png)
+  ![](assets/s_user_validation_log_from_delivery_list.png)
 
-* U kunt de goedkeuringsstatus voor elke levering bekijken door op de knop **[!UICONTROL Hide/show log]** de **[!UICONTROL Summary]** tab.
+* U kunt de goedkeuringsstatus voor elke levering bekijken door op de knop **[!UICONTROL Hide/show log]** van de **[!UICONTROL Summary]** tab.
 
-   ![](assets/s_user_validation_log_delivery.png)
+  ![](assets/s_user_validation_log_delivery.png)
 
 * Deze informatie is ook toegankelijk via de **[!UICONTROL Tracking > Approvals]** tabblad van elke levering:
 
-   ![](assets/s_user_validation_log_from_exe_tab.png)
+  ![](assets/s_user_validation_log_from_exe_tab.png)
 
 >[!NOTE]
 >
@@ -182,6 +183,7 @@ Op dit moment is de stand van zaken van de campagne **[!UICONTROL To validate]**
 >[!NOTE]
 >
 >Om de processen te selecteren die een goedkeuring vereisen, wijzig het campagnemalplaatje. Raadpleeg voor meer informatie hierover [Campagnersjablonen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
@@ -195,41 +197,41 @@ Voor elke levering in de campagne, kunt u de volgende processen goedkeuren:
 
 * **Doelstelling, inhoud en begroting**
 
-   Wanneer de **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** of **[!UICONTROL Enable budget approval]** de opties worden geselecteerd in het venster met instellingen voor taakgoedkeuring. De relevante koppelingen worden weergegeven in het campagnemdashboard voor de desbetreffende leveringen.
+  Wanneer de **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** of **[!UICONTROL Enable budget approval]** de opties worden geselecteerd in het venster met instellingen voor taakgoedkeuring. De relevante koppelingen worden weergegeven in het campagnemdashboard voor de desbetreffende leveringen.
 
-   >[!NOTE]
-   >
-   >De goedkeuring van de begroting is slechts beschikbaar als gericht goedkeuring in het venster van goedkeuringsmontages wordt toegelaten. De koppeling voor goedkeuring van de begroting wordt pas weergegeven nadat het doel is geanalyseerd. Deze koppeling wordt ook samen met de koppeling voor doelgoedkeuring weergegeven.
+  >[!NOTE]
+  >
+  >De goedkeuring van de begroting is slechts beschikbaar als gericht goedkeuring in het venster van goedkeuringsmontages wordt toegelaten. De koppeling voor goedkeuring van de begroting wordt pas weergegeven nadat het doel is geanalyseerd. Deze koppeling wordt ook samen met de koppeling voor doelgoedkeuring weergegeven.
 
-   Als de **[!UICONTROL Assign content editing]** of **[!UICONTROL External content approval]** de opties worden geselecteerd in het venster met goedkeuringsinstellingen, wordt op het dashboard de knop **[!UICONTROL Available content]** en **[!UICONTROL External content approval]** koppelingen.
+  Als de **[!UICONTROL Assign content editing]** of **[!UICONTROL External content approval]** de opties worden geselecteerd in het venster met goedkeuringsinstellingen, wordt op het dashboard de knop **[!UICONTROL Available content]** en **[!UICONTROL External content approval]** koppelingen.
 
-   Met Goedkeuring van inhoud hebt u toegang tot de verzonden proefdrukken.
+  Met Goedkeuring van inhoud hebt u toegang tot de verzonden proefdrukken.
 
 * **Goedkeuring van uittreksels (direct-mailbezorging)**
 
-   Wanneer **[!UICONTROL Enable extraction approval]** wordt geselecteerd in het venster van goedkeuringsmontages, moet het gehaalde dossier worden goedgekeurd alvorens de router kan worden meegedeeld.
+  Wanneer **[!UICONTROL Enable extraction approval]** wordt geselecteerd in het venster van goedkeuringsmontages, moet het gehaalde dossier worden goedgekeurd alvorens de router kan worden meegedeeld.
 
-   An **[!UICONTROL Approve content]** de link is beschikbaar op het campagnedashboard , zoals hieronder wordt getoond :
+  An **[!UICONTROL Approve content]** de link is beschikbaar op het campagnedashboard , zoals hieronder wordt getoond :
 
-   ![](assets/s_ncs_user_edit_file_valid.png)
+  ![](assets/s_ncs_user_edit_file_valid.png)
 
-   U kunt een voorvertoning weergeven van de extractiebestanden via het goedkeuringsvak. U kunt de bestanden vervolgens accepteren of afwijzen.
+  U kunt een voorvertoning weergeven van de extractiebestanden via het goedkeuringsvak. U kunt de bestanden vervolgens accepteren of afwijzen.
 
-   ![](assets/s_ncs_user_edit_file_valid_preview_file.png)
+  ![](assets/s_ncs_user_edit_file_valid_preview_file.png)
 
-   >[!NOTE]
-   >
-   >De voorvertoning van het extractiebestand heeft alleen betrekking op een gegevensvoorbeeld. Het volledige uitvoerbestand wordt niet geladen.
+  >[!NOTE]
+  >
+  >De voorvertoning van het extractiebestand heeft alleen betrekking op een gegevensvoorbeeld. Het volledige uitvoerbestand wordt niet geladen.
 
 * **Bijbehorende leveringen goedkeuren**
 
-   De **[!UICONTROL Enable individual approval of each associated delivery]** optie wordt gebruikt voor één hoofdlevering verbonden aan secundaire leveringen. Deze optie is standaard niet geselecteerd, zodat een algemene goedkeuring van de hoofdlevering kan worden uitgevoerd. Als deze optie is geselecteerd, moet elke levering afzonderlijk worden goedgekeurd.
+  De **[!UICONTROL Enable individual approval of each associated delivery]** optie wordt gebruikt voor één hoofdlevering verbonden aan secundaire leveringen. Deze optie is standaard niet geselecteerd, zodat een algemene goedkeuring van de hoofdlevering kan worden uitgevoerd. Als deze optie is geselecteerd, moet elke levering afzonderlijk worden goedgekeurd.
 
-   ![](assets/s_ncs_user_task_valid_associate.png)
+  ![](assets/s_ncs_user_task_valid_associate.png)
 
 ### Goedkeuren van processen selecteren {#choosing-the-processes-to-be-approved}
 
-De goedkeuringsfasen worden bepaald met het malplaatje verbonden aan de campagne. U moet de goed te keuren onderdelen selecteren in het model en de Adobe Campaign-operatoren specificeren die verantwoordelijk zijn voor deze goedkeuringen. Raadpleeg voor meer informatie over campagnemasjablonen de [deze sectie](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+De goedkeuringsfasen worden bepaald met het malplaatje verbonden aan de campagne. U moet de goed te keuren onderdelen selecteren in het model en de Adobe Campaign-operatoren specificeren die verantwoordelijk zijn voor deze goedkeuringen. Raadpleeg voor meer informatie over campagnemasjablonen het onderwerp [deze sectie](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
@@ -241,17 +243,16 @@ Voor een campagne klikt u op de knop **[!UICONTROL Edit > Properties]** en vervo
 
 U kunt de processen selecteren en deselecteren om Adobe Campaign-operatoren die met de goedkeuring zijn belast, goed te keuren en aan te wijzen. Dit kunnen individuele operatoren, een groep operatoren of een lijst met operatoren zijn.
 
-Als u een lijst met operatoren wilt selecteren, klikt u op de knop **[!UICONTROL Edit...]** link rechts van het veld met de eerste controleur en voeg zo veel operatoren toe als nodig is, zoals hieronder wordt getoond:
+Als u een lijst met operatoren wilt selecteren, klikt u op **[!UICONTROL Edit...]** link rechts van het veld met de eerste controleur en voeg zo veel operatoren toe als nodig is, zoals hieronder wordt getoond:
 
 ![](assets/s_user_validation_add_operator.png)
 
 >[!NOTE]
 >
->* Als een lijst met revisoren is gedefinieerd, wordt een taak goedgekeurd wanneer één revisor deze heeft geaccepteerd. De desbetreffende goedkeuringslink wordt dan niet meer in het dashboard aangeboden. Wanneer het verzenden van meldingen is ingeschakeld en een andere controleur op de goedkeuringskoppeling in het meldingsbericht klikt, wordt hem meegedeeld dat een andere operator de taak al heeft goedgekeurd.
+>* Als een lijst met revisoren is gedefinieerd, wordt een taak goedgekeurd wanneer één revisor deze heeft geaccepteerd. De desbetreffende goedkeuringsverbinding wordt dan niet meer aangeboden in het dashboard. Wanneer het verzenden van meldingen is ingeschakeld en een andere controleur op de goedkeuringskoppeling in het meldingsbericht klikt, wordt hem meegedeeld dat een andere operator de taak al heeft goedgekeurd.
 >* U kunt een goedkeuringsschema voor de campagne definiëren in de onderste sectie van het revisiebewerkingsvenster. Standaard hebben revisoren drie dagen vanaf de verzenddatum om een proces goed te keuren. Het is mogelijk om een herinnering te vormen die automatisch naar de betrokken exploitanten vóór de goedkeuringstermijn wordt verzonden.
 >* U kunt vanuit deze sectie herinneringen toevoegen.
 >
-
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
@@ -271,7 +272,7 @@ Klik voor elke levering op de knop **[!UICONTROL Audit]** en de **[!UICONTROL Ap
 >
 >De hieronder beschreven functies voor inhoudsgoedkeuring hebben betrekking op de levering van het bewijs.
 
-Het is mogelijk om een cyclus van de inhoudsgoedkeuring te vormen. Selecteer hiervoor de optie **[!UICONTROL Enable content approval]** in het venster met goedkeuringsinstellingen. De belangrijkste stappen van de cyclus voor inhoudsgoedkeuring zijn:
+Het is mogelijk om een cyclus van de inhoudsgoedkeuring te vormen. Selecteer de optie **[!UICONTROL Enable content approval]** in het venster met goedkeuringsinstellingen. De belangrijkste stappen van de cyclus voor inhoudsgoedkeuring zijn:
 
 1. Na het creëren van een nieuwe levering, klikt de campagnemanager op **[!UICONTROL Submit content]** koppeling op het campagnedashboard om de goedkeuringcyclus voor inhoud te starten.
 
@@ -285,21 +286,21 @@ Het is mogelijk om een cyclus van de inhoudsgoedkeuring te vormen. Selecteer hie
 
    * via het e-mailbericht:
 
-      ![](assets/s_ncs_user_del_content_valid_bat_notif.png)
+     ![](assets/s_ncs_user_del_content_valid_bat_notif.png)
 
-      >[!NOTE]
-      >
-      >Het e-mailbericht bevat een koppeling naar de reeds verzonden proefdrukken en mogelijk naar een weergave van het bericht voor de verschillende webmails als de **Leverbaarheid** is ingeschakeld voor deze instantie.
+     >[!NOTE]
+     >
+     >Het e-mailbericht bevat een koppeling naar de reeds verzonden proefdrukken en mogelijk naar een weergave van het bericht voor de verschillende webmails als de **Leverbaarheid** is ingeschakeld voor deze instantie.
 
    * via de console of webinterface, het bijhouden van de levering, het bezorgdashboard of het campagnemdashboard:
 
-      ![](assets/s_ncs_user_validation_content_bat_op.png)
+     ![](assets/s_ncs_user_validation_content_bat_op.png)
 
-      >[!NOTE]
-      >
-      >Met dit campagnemdashboard kunt u de lijst met proefdrukken weergeven die zijn verzonden door op de knop **[!UICONTROL Inbox rendering...]** koppeling. Als u hun inhoud wilt weergeven, klikt u op de knop **[!UICONTROL Detail]** rechts van de lijst.
+     >[!NOTE]
+     >
+     >Met dit campagnemdashboard kunt u de lijst met proefdrukken weergeven die zijn verzonden door op de knop **[!UICONTROL Inbox rendering...]** koppeling. Als u hun inhoud wilt weergeven, klikt u op de knop **[!UICONTROL Detail]** rechts van de lijst.
 
-      ![](assets/s_ncs_user_validation_content_BAT_details.png)
+     ![](assets/s_ncs_user_validation_content_BAT_details.png)
 
 1. Aan de voor de campagne verantwoordelijke persoon wordt een meldingsbericht gezonden waarin deze wordt meegedeeld of de inhoud al dan niet is goedgekeurd.
 
@@ -335,19 +336,19 @@ Met deze optie kunt u iemand definiëren die verantwoordelijk is voor het bewerk
 
    * klik op **[!UICONTROL Available content]** via de Adobe Campaign-console.
 
-      ![](assets/s_ncs_user_validation_submit_content_available.png)
+     ![](assets/s_ncs_user_validation_submit_content_available.png)
 
    * Klik op de koppeling in het meldingsbericht en geef vervolgens de beschikbaarheid van de inhoud goed.
 
-      ![](assets/s_ncs_user_validation_submit_content_available2.png)
+     ![](assets/s_ncs_user_validation_submit_content_available2.png)
 
-      De exploitant kan een commentaar toevoegen alvorens de inhoud aan de persoon voor te leggen die de campagne leidt.
+     De exploitant kan een commentaar toevoegen alvorens de inhoud aan de persoon voor te leggen die de campagne leidt.
 
-      ![](assets/s_ncs_user_validation_submit_content_available3.png)
+     ![](assets/s_ncs_user_validation_submit_content_available3.png)
 
-      Met het meldingsbericht kan de revisor de inhoud goedkeuren of afwijzen.
+     Met het meldingsbericht kan de revisor de inhoud goedkeuren of afwijzen.
 
-      ![](assets/s_ncs_user_validation_submit_content_available4.png)
+     ![](assets/s_ncs_user_validation_submit_content_available4.png)
 
 #### Goedkeuring van externe inhoud {#external-content-approval}
 

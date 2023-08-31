@@ -3,10 +3,11 @@ product: campaign
 title: Filters maken
 description: Leer hoe u filters maakt voor een aangepaste tabel
 feature: Profiles, Custom Resources
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 5%
@@ -14,8 +15,6 @@ ht-degree: 5%
 ---
 
 # Filters maken{#creating-filters}
-
-
 
 Net als de ingebouwde tabel voor ontvangers die bij Adobe Campaign wordt geleverd, ontvangt de nieuwe tabel voor ontvangers mogelijk een batch vooraf gedefinieerde filters.
 

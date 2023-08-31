@@ -3,8 +3,9 @@ product: campaign
 title: Tracking-URL's detecteren
 description: Meer informatie over aanbevolen patronen voor het bijhouden van URL's
 feature: Monitoring
+role: User, Developer, Data Engineer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -29,13 +30,13 @@ Na verwerking `<%@` De URL die moet worden bijgehouden, heeft de volgende syntax
 
 >[!IMPORTANT]
 >
->Alle andere patronen worden niet ondersteund door Adobe en moeten worden vermeden om potentiële veiligheidshiaten te voorkomen.
+>Alle andere patronen worden niet ondersteund door Adobe en moeten worden vermeden om potentiële veiligheidstekortkomingen te voorkomen.
 
 ## Onbeveiligd patroon
 
-Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. Meer informatie in [deze pagina](../../installation/using/privacy.md#url-personalization).
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. Meer informatie in [deze pagina](../../installation/using/privacy.md#url-personalization).
 
-De `<a href="http://<%=myURL%>">` syntaxis is **niet beveiligd** en moeten worden vermeden.
+Bijvoorbeeld de `<a href="http://<%=myURL%>">` is **niet beveiligd** en moeten worden vermeden.
 
 * Het gebruik van deze syntaxis kan tot beveiligingsproblemen leiden als de koppeling die door Adobe Campaign wordt gegenereerd een of meer parameters bevat.
 * Tidy kan sommige koppelingen onjuist repareren, wat willekeurig kan gebeuren. Het typische symptoom is een stuk van HTML dat in de e-mailproefdrukken maar niet in de voorproef zichtbaar is.

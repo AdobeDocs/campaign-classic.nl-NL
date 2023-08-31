@@ -2,19 +2,18 @@
 product: campaign
 title: De mobiele Android-toepassing configureren in Adobe Campaign
 description: Leer hoe u uw mobiele toepassing instelt voor Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '966'
 ht-degree: 4%
 
 ---
 
 # Configuratiestappen voor Android
-
-
 
 Nadat het pakket is geïnstalleerd, kunt u de instellingen voor uw Android-app definiëren in Adobe Campaign Classic.
 
@@ -41,8 +40,8 @@ Voor Android zijn twee connectors beschikbaar:
 Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selecteer **[!UICONTROL Android routing]** externe rekening.
-1. In de **[!UICONTROL Connector]** tab, vult de **[!UICONTROL JavaScript used in the connector]** veld:
+1. Selecteer de **[!UICONTROL Android routing]** externe rekening.
+1. In de **[!UICONTROL Connector]** tabblad, vult de **[!UICONTROL JavaScript used in the connector]** veld:
 
    Voor Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
@@ -52,9 +51,9 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_connectors3.png)
 
-1. Voor Android V2 is er één aanvullende parameter beschikbaar in het configuratiebestand van de Adobe Server (serverConf.xml):
+1. Voor Android V2 is er één extra parameter beschikbaar in het configuratiebestand van de Adobe Server (serverConf.xml):
 
-   * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
+   * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden gestart (standaard 8).
 
 ## Een Android-service configureren {#configuring-android-service}
 
@@ -73,7 +72,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_ios.png)
 
-1. Klik vervolgens op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
+1. Klik vervolgens op de knop **[!UICONTROL Add]** Selecteer het toepassingstype.
 
    ![](assets/nmac_service_2.png)
 
@@ -83,7 +82,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
-1. Klik vanuit de nieuwe service op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
+1. Klik op de knop **[!UICONTROL Add]** Selecteer het toepassingstype.
 
    ![](assets/nmac_service_2.png)
 
@@ -97,11 +96,11 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
    >
    > De **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
 
-1. Selecteer **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties worden beschreven in [deze sectie](#select-api-version)
+1. Selecteer de **[!UICONTROL API version]**: HTTP v1 of HTTP (legacy). Deze configuraties worden beschreven in [deze sectie](#select-api-version)
 
 1. Vul de **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** velden.
 
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
 
 Standaard slaat Adobe Campaign een toets op in het dialoogvenster **[!UICONTROL User identifier]** (@userKey) in het veld **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
@@ -137,7 +136,7 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
 1. Als optie kunt u de inhoud van een pushbericht verrijken met wat **[!UICONTROL Application variables]** indien nodig. Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
 
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
 
 Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te passen:
 
@@ -163,7 +162,7 @@ Voer de volgende stappen uit om de HTTP-versie (verouderd) te configureren:
 
    ![](assets/nmac_android_2.png)
 
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
 
 Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te passen:
 
@@ -186,4 +185,4 @@ U moet het dialoogvenster **appsubscriptionRcp** om nieuwe extra gebieden te bep
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen in het dialoogvenster **[!UICONTROL Subscription parameters]** zijn dezelfde als de mobiele toepassingscode. Zie [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md).
+   >Zorg ervoor dat de configuratienamen in het dialoogvenster **[!UICONTROL Subscription parameters]** zijn dezelfde als die in de code van de mobiele toepassing. Zie [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md).

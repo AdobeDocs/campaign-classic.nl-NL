@@ -2,24 +2,23 @@
 product: campaign
 title: De uiteindelijke levering definiëren
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: A/B Testing
+role: User
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 9%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 
-# De uiteindelijke levering definiëren {#step-6--defining-the-final-delivery}
-
-
+# AB-tests: de uiteindelijke levering definiëren {#step-6--defining-the-final-delivery}
 
 Wanneer het script is gemaakt om de testwinnaar A/B te selecteren, kunt u de parameters van de uiteindelijke levering definiëren.
 
-1. Verbind de **[!UICONTROL JavaScript code]** de resterende **[!UICONTROL Delivery]** activiteit.
+1. Verbind de **[!UICONTROL JavaScript code]** activiteit aan de resterende **[!UICONTROL Delivery]** activiteit.
 1. Open de **[!UICONTROL Delivery]** activiteit.
 1. Schakel het selectievakje **[!UICONTROL Generate an outbound transition]** om de workflow met deze activiteit te voltooien.
 1. Laat de standaardwaarden van de andere opties ongewijzigd.

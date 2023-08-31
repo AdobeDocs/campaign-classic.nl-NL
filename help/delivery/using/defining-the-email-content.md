@@ -2,11 +2,12 @@
 product: campaign
 title: E-mailinhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign gebruikt
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
+role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -149,9 +150,9 @@ E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de wizard
 
 ### Guardrails {#img-guardrails}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter sterk aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
-Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+Meer informatie in [de lijst met opties voor Campaigns Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Afbeeldingstypen {#img-types}
 

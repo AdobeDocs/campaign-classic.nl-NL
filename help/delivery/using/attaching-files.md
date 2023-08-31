@@ -2,11 +2,12 @@
 product: campaign
 title: Bestanden bijvoegen
 description: Bestanden bijvoegen
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
+role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 1%
@@ -21,7 +22,7 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met opties voor Campaigns Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Er zijn twee mogelijke gevallen:
 
@@ -34,11 +35,11 @@ Er zijn twee mogelijke gevallen:
 
 ## Guardrails {#attachments-guardrails}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter ten zeerste aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter sterk aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
 Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` -optie.
 
-Meer informatie in [de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+Meer informatie in [de lijst met opties voor Campaigns Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 

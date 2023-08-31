@@ -2,12 +2,13 @@
 product: campaign
 title: Webserviceaanroepen
 description: Webserviceaanroepen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -154,7 +155,7 @@ De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verricht
 
 #### Binding {#binding}
 
-De `<binding>` part specificeert het SOAP communicatie protocol ( `<soap:binding>` ), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
+De `<binding>` part geeft het SOAP-communicatieprotocol aan ( `<soap:binding>` ), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -219,7 +220,7 @@ Het beveiligingstoken heeft de volgende kenmerken:
    * de pagina-URL&#39;s worden bijgewerkt om het beveiligingstoken bij te werken
    * de formulieren worden ook bijgewerkt via een verborgen veld dat de token bevat
 
-#### Beveiliging van tokens {#security-token-movement}
+#### Beveiliging van tokenverplaatsing {#security-token-movement}
 
 Wanneer deze via de console wordt benaderd, is de volgende code beschikbaar:
 

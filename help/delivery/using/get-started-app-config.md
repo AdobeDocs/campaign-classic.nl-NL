@@ -2,13 +2,14 @@
 product: campaign
 title: De mobiele toepassing configureren in Adobe Campaign
 description: Leer hoe u begint met de configuratie van de mobiele toepassing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 10%
+source-wordcount: '313'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 10%
 
 
 
-U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt gebaseerd dat online vakantiepakketten verkoopt. De mobiele toepassing (Neotrips) van Neotrips is in twee versies beschikbaar voor klanten: Neotrips voor Android en Neotrips voor iOS.
+U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt gebaseerd dat online vakantiepakketten verkoopt. De mobiele toepassing (Neotrips) van deze toepassing is in twee versies beschikbaar voor klanten: Neotrips voor Android en Neotrips voor iOS.
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
@@ -36,7 +37,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-Als hybride/gehoste klant neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) -team voor toegang tot het pushmeldingskanaal in Campagne.
+Als hybride/gehoste klant neemt u contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) -team voor toegang tot het pushmeldingskanaal in Campagne.
 
 Als klant op locatie moet u een ingebouwd pakket installeren.
 

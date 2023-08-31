@@ -2,20 +2,19 @@
 product: campaign
 title: Communicatiekanalen
 description: Maak leveringen om gepersonaliseerde berichten via verschillende kanalen te verzenden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
+role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1216'
 ht-degree: 12%
 
 ---
 
 # Communicatiekanalen{#communication-channels}
-
-
 
 Met Adobe Campaign kunt u kanaalcampagnes verzenden, waaronder e-mails, SMS, LIJN-berichten, pushmeldingen en directe mails, en de doeltreffendheid van deze campagnes meten met behulp van verschillende speciale [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
 
@@ -29,10 +28,10 @@ Het verzenden van leveringen kan worden geautomatiseerd door de levering voor te
 
 Adobe Campaign biedt de volgende leveringskanalen:
 
-1. **E-mailkanaal**: Met e-mailleveringen kunt u persoonlijke e-mails sturen naar de doelgroep. Zie [E-mailkanaal](about-email-channel.md).
-1. **Direct mailkanaal**: met direct mail kunt u een extractiebestand genereren dat gegevens over de doelpopulatie bevat. Zie [Over direct-mailkanaal](about-direct-mail-channel.md).
-1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke SMS- of LINE-berichten naar de doelgroep sturen. Zie [SMS-kanaal](sms-channel.md).
-1. **Mobiel toepassingskanaal**: Met levering voor mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Zie de [Mobiel toepassingskanaal](about-mobile-app-channel.md) hoofdstuk
+1. **Email channel**: Met e-mailleveringen kunt u persoonlijke e-mails sturen naar de doelgroep. Zie [E-mailkanaal](about-email-channel.md).
+1. **Direct mailkanaal**: Met direct mail kunt u een extractiebestand genereren dat gegevens over de doelpopulatie bevat. Zie [Over direct-mailkanaal](about-direct-mail-channel.md).
+1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke sms- of lijnberichten naar de doelgroep sturen. Zie [SMS-kanaal](sms-channel.md).
+1. **Mobiel toepassingskanaal**: met de levering van mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Zie de [Mobiel toepassingskanaal](about-mobile-app-channel.md) hoofdstuk.
 
    Andere kanalen worden beschreven op [deze pagina](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -51,13 +50,13 @@ Externe accounts worden geconfigureerd via de **[!UICONTROL Administration > Pla
 
 ## E-mailleveringen {#email-deliveries}
 
-De [E-mailkanaal](about-email-channel.md) is een van de kernkanalen in Adobe Campaign, zodat u persoonlijke e-mails kunt plannen en verzenden naar specifieke doelgroepen.
+De [Email channel](about-email-channel.md) is een van de kernkanalen in Adobe Campaign, zodat u persoonlijke e-mails kunt plannen en verzenden naar specifieke doelgroepen.
 
 U kunt verschillende typen e-mailberichten verzenden:
 
-* E-mails met één verzending: e-mails die u één keer naar een bepaald doel kunt verzenden. Deze worden gewoonlijk gebruikt om een specifieke inhoud te promoten die maar één keer wordt voorbereid en verzonden (nieuwsbrief, promotiemail, enz.).
-* E-mails terugsturen: in een campagne regelmatig dezelfde e-mail sturen en elk bericht en de bijbehorende verslagen samenvoegen. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. Raadpleeg voor meer informatie hierover [Terugkerende leveringen](../../workflow/using/recurring-delivery.md).
-* Transactiee-mails: Eenvoudige e-mailberichten die worden geactiveerd op basis van het gedrag van uw klanten. Zie [Transactieberichten](../../message-center/using/about-transactional-messaging.md).
+* E-mailberichten voor één verzending: e-mails die u één keer naar een bepaald doel kunt verzenden. Deze worden gewoonlijk gebruikt om een specifieke inhoud te promoten die maar één keer wordt voorbereid en verzonden (nieuwsbrief, promotiemail, enz.).
+* Herhalende e-mails: in een campagne verzendt u regelmatig dezelfde e-mail en aggregeert u elke verzending en de bijbehorende rapporten op gezette tijden. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. Raadpleeg voor meer informatie hierover [Terugkerende leveringen](../../workflow/using/recurring-delivery.md).
+* Transactiee-mails: eenheidse e-mails die worden geactiveerd op basis van het gedrag van uw klanten. Zie [Transactieberichten](../../message-center/using/about-transactional-messaging.md).
 
 Raadpleeg Campagne voor meer informatie over het gebruik en de aanbevelingen van de levering [Best practices voor levering](delivery-best-practices.md).
 
@@ -65,7 +64,7 @@ Raadpleeg voor meer informatie over de verschillende typen leveringen [deze sect
 
 ## Mobiele leveringen {#mobile-deliveries}
 
-Met Adobe Campaign kunt u [SMS](sms-channel.md) en [REGEL](line-channel.md) berichten op mobiele apparaten.
+Met Adobe Campaign kunt u leveren [SMS](sms-channel.md) en [REGEL](line-channel.md) berichten op mobiele apparaten.
 
 Voor SMS-berichten kunt u alleen in tekstindeling berichten maken, wijzigen en personaliseren. Je kunt ook een voorbeeld van je SMS-berichten bekijken voordat ze worden verzonden.
 
@@ -88,13 +87,13 @@ Met online kanalen kunt u uw berichten (e-mail, sms, levering van mobiele apps, 
 
 ## Andere kanalen {#other-channels}
 
-Adobe Campaign biedt een sjabloon voor telefonische levering, die wordt gebruikt om externe leveringen te maken. Als u dit kanaal gebruikt, moet u speciale methoden instellen voor het verwerken van uitvoerbestanden. De stappen van de configuratie zijn het zelfde als voor [Direct mailkanaal](about-direct-mail-channel.md).
+Adobe Campaign biedt een sjabloon voor telefonische levering, die wordt gebruikt om externe leveringen te maken. Als u dit kanaal gebruikt, moet u speciale methoden instellen voor het verwerken van uitvoerbestanden. Configuratiestappen zijn hetzelfde als voor [Direct mailkanaal](about-direct-mail-channel.md).
 
 >[!NOTE]
 >
->Het telefoonkanaal is niet beschikbaar buiten de doos. De implementatie ervan vereist dat Adobe Consulting of een Adobe-partner wordt ingeschakeld. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
+>Het telefoonkanaal is niet beschikbaar buiten de doos. Voor de implementatie ervan is overleg met de Adobe of betrokkenheid van een Adobe-partner vereist. Neem contact op met uw Adobe voor meer informatie.
 
-Bovendien gebruiken de &quot;Andere&quot;typeleveringen een specifiek technisch malplaatje dat geen proces uitvoert: hiermee kunnen ze marketingacties beheren die buiten het Adobe Campaign-platform worden uitgevoerd.
+Bovendien gebruiken de &quot;Andere&quot;typeleveringen een specifiek technisch malplaatje dat geen proces uitvoert: dit laat hen marketing acties beheren die buiten het platform van Adobe Campaign worden uitgevoerd.
 
 Dit kanaal heeft geen specifiek mechanisme. Het is een generisch kanaal dat zijn eigen externe rekening heeft die optie, het type van leveringsmalplaatje en activiteit van het campagnewerkschema verpletteren, enkel zoals een ander communicatiekanaal beschikbaar in Adobe Campaign.
 
@@ -106,7 +105,7 @@ Er zijn drie typen leveringsobjecten in campagne:
 
 ### Eén levering {#single-delivery}
 
-A **levering** is een zelfstandig leveringsobject dat één keer wordt uitgevoerd. Het kan worden gedupliceerd, opnieuw worden bereid, maar zolang het in zijn definitieve staat (geannuleerd, gestopt, gebeëindigd) is, kan het niet opnieuw worden gebruikt.
+A **bezorging** is een zelfstandig leveringsobject dat één keer wordt uitgevoerd. Het kan worden gedupliceerd, opnieuw worden bereid, maar zolang het in zijn definitieve staat (geannuleerd, gestopt, gebeëindigd) is, kan het niet opnieuw worden gebruikt.
 
 Leveringen kunnen worden gemaakt op basis van de lijst met leveringen of binnen een workflow via een [Aflevering](../../workflow/using/delivery.md) activiteit.
 

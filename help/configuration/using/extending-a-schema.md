@@ -2,13 +2,14 @@
 product: campaign
 title: Een schema uitbreiden
 description: Leer hoe u een schema kunt uitbreiden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid: voornamelijk die waarvoor de volgende instellingen zijn gedefinieerd:\
+>Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid, met name die waarvoor de volgende instellingen zijn gedefinieerd:\
 >**dataSource=&quot;file&quot;** en **mappingType=&quot;xmlFile&quot;**.\
 >De volgende schema&#39;s mogen niet worden uitgebreid: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publiceren**, **nl:controleren**, **nms:kalender**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:verbindingen**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusie**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:sessie**, **xtk:sqlSchema**, **xtk:tekenreeksen**.
 >Deze lijst is niet limitatief.
@@ -26,7 +27,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 1. Het bronschema rechtstreeks wijzigen.
 1. Een ander schema maken met dezelfde naam, maar met een andere naamruimte. Het voordeel is dat u een tabel kunt uitbreiden zonder het oorspronkelijke schema te hoeven wijzigen.
 
-   Het hoofdelement van het schema moet het volgende bevatten: **extendedSchema** kenmerk met de naam van het schema dat als waarde moet worden uitgebreid.
+   Het hoofdelement van het schema moet het volgende bevatten **extendedSchema** kenmerk met de naam van het schema dat als waarde moet worden uitgebreid.
 
    Een extensieschema heeft geen eigen schema: het schema dat met het bronschema wordt gegenereerd, wordt ingevuld met de velden van het extensieschema.
 
@@ -34,7 +35,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    >
    >U kunt de ingebouwde schema&#39;s van de toepassing niet wijzigen, maar eerder het mechanisme van de schemauitbreiding. Anders worden gewijzigde schema&#39;s niet bijgewerkt op het moment van toekomstige upgrades van de toepassing. Dit kan leiden tot storingen in het gebruik van Adobe Campaign.
 
-   **Voorbeeld**: verlenging van de **nms:ontvanger** schema.
+   **Voorbeeld**: uitbreiding van de **nms:ontvanger** schema.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">

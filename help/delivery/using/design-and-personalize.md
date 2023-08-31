@@ -2,20 +2,19 @@
 product: campaign
 title: Gepersonaliseerde content maken
 description: Leer hoe u persoonlijke inhoud kunt maken in Adobe Campaign-leveringen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design, Personalization
+role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 6%
+source-wordcount: '1300'
+ht-degree: 7%
 
 ---
 
 # Gepersonaliseerde content maken {#build-personalized-content}
-
-
 
 Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten betrekking op [personalisatie](about-personalization.md), [opmaken](defining-the-email-content.md#message-content) en [afbeeldingen](defining-the-email-content.md#adding-images).
 
@@ -28,7 +27,7 @@ De grondbeginselen van personalisatie worden weergegeven in [deze sectie](person
 
 Zorg ervoor dat de inhoud van uw bericht goed is ontworpen om fouten te voorkomen die over het algemeen te maken hebben met personalisatie.
 
-**Tips**: In verpersoonlijkingsgebieden die uit externe dossiers komen die door derdeverkopers worden verstrekt, kan de externe inhoud van HTML verkeerd zijn. Om dit te voorkomen, controleert u de syntaxis, het gebruik van tags, tekens, enzovoort. Een Adobe Campaign-personalisatie-tag heeft bijvoorbeeld altijd de volgende vorm: &lt;%=table.field%>. Zie [deze sectie](about-personalization.md)voor meer informatie.
+**Tips**: In verpersoonlijkingsgebieden die uit externe dossiers komen die door derdeverkopers worden verstrekt, kan de externe inhoud van HTML verkeerd zijn. Om dit te voorkomen, controleert u de syntaxis, het gebruik van tags, tekens, enzovoort. Een Adobe Campaign-personalisatietag heeft bijvoorbeeld altijd de volgende vorm: &lt;%=table.field%>. Zie [deze sectie](about-personalization.md)voor meer informatie.
 
 Het onjuiste gebruik van parameters in verpersoonlijkingsblokken kan een kwestie zijn. Variabelen in JavaScript moeten bijvoorbeeld als volgt worden gebruikt:
 
@@ -38,7 +37,7 @@ Het onjuiste gebruik van parameters in verpersoonlijkingsblokken kan een kwestie
     
     %>
 
-Voor meer op verpersoonlijkingsblokken, verwijs naar [deze sectie](personalization-blocks.md).
+Raadpleeg voor meer informatie over aanpassingsblokken de [deze sectie](personalization-blocks.md).
 
 U kunt aanpassingsgegevens voorbereiden in een workflow om de voorbereiding van de levering te verbeteren. Dit moet speciaal worden gebruikt als de personalisatiegegevens afkomstig zijn van een externe tabel via Federated Data Access (FDA). Deze optie wordt in deze [deze sectie](personalization-fields.md#optimizing-personalization)
 
@@ -50,7 +49,7 @@ Houd rekening met de onderstaande algemene tips bij het samenstellen van e-mails
 
 * Houd mobiele gebruikers in gedachten
 
-* Vermijd e-mails die volledig op afbeeldingen zijn gebaseerd
+* Vermijd volledig op afbeeldingen gebaseerde e-mails
 
 * E-mailveilige lettertypen gebruiken
 
@@ -101,7 +100,7 @@ Meer informatie [in deze sectie](sms-set-up.md#creating-an-smpp-external-account
 
 **Tips**:
 
-* Als u alle tekens in uw SMS-berichten ongewijzigd wilt laten, bijvoorbeeld eigennamen niet wilt wijzigen, moet u transliteratie niet inschakelen.
+* Als u alle tekens in uw SMS-berichten wilt behouden, bijvoorbeeld als u eigennamen niet wilt wijzigen, moet u transliteratie niet inschakelen.
 
 * Als uw SMS-berichten echter veel tekens bevatten waarmee de GSM-standaard geen rekening houdt, kunt u met transliteratie de verzendkosten van uw berichten beperken.
 
@@ -111,11 +110,11 @@ Meer informatie [in deze sectie](sms-set-up.md#about-character-transliteration).
 
 Controleer de volgende elementen om algemene opmaakfouten te voorkomen:
 
-* Juist **datumnotatie**: Adobe Campaign biedt functies voor datumopmaak voor de JavaScript-sjablonen en XSL-opmaakmodellen. [Meer informatie](formatting.md#date-display)
+* Juist **datumnotatie**: Adobe Campaign biedt functies voor datumnotatie voor de JavaScript-sjablonen en XSL-opmaakmodellen. [Meer informatie](formatting.md#date-display)
 
-* Gebruik van **geautoriseerde tekens** in e-mails: De lijst met geldige tekens voor e-mailadressen wordt gedefinieerd in de optie &quot;XtkEmail_Characters&quot;. Leer hoe u de opties voor campagnes kunt openen [in deze sectie](../../installation/using/configuring-campaign-options.md). Adobe Campaign moet in Unicode zijn geïnstalleerd om speciale tekens correct te kunnen verwerken.
+* Gebruik van **geautoriseerde tekens** in e-mailberichten: de lijst met geldige tekens voor e-mailadressen wordt gedefinieerd in de optie &quot;XtkEmail_Characters&quot;. Leer hoe u de opties voor campagnes kunt openen [in deze sectie](../../installation/using/configuring-campaign-options.md). Adobe Campaign moet in Unicode zijn geïnstalleerd om speciale tekens correct te kunnen verwerken.
 
-* Configuratie van **E-mailverificatie**: zorg ervoor dat de e-mailkopteksten de DKIM-handtekening bevatten. DKIM (Domeinsleutels Identified Mail) authentificatie staat de ontvangende e-mailserver toe om te verifiëren dat een bericht inderdaad werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt doorgaans het domein in de kop Van of Afzender. Raadpleeg voor meer informatie de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* Configuratie van **E-mailverificatie**: zorg ervoor dat de e-mailkopteksten de DKIM-handtekening bevatten. DKIM (Domeinsleutels Identified Mail) authentificatie staat de ontvangende e-mailserver toe om te verifiëren dat een bericht inderdaad werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt typisch het domein in van of de kopbal van de Afzender. Raadpleeg voor meer informatie de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Responsief e-mailontwerp
 
@@ -137,7 +136,7 @@ Sommige e-mailclients blokkeren afbeeldingen standaard en sommige gebruikers wij
 
 * Verdeel uw inhoud met afbeelding en tekst. Vermijd e-mails die volledig op afbeeldingen zijn gebaseerd.
 
-* Als er tekst in een afbeelding moet staan, gebruikt u alt- en titeltekst om ervoor te zorgen dat uw bericht overloopt. Maak de alt-/titeltekst op om de weergave te verbeteren.
+* Als er tekst in een afbeelding moet staan, gebruikt u de alt- en titeltekst om ervoor te zorgen dat uw bericht overloopt. Maak de alt-/titeltekst op om de weergave te verbeteren.
 
 * Vermijd het gebruik van achtergrondafbeeldingen, omdat deze niet door sommige e-mailclients worden ondersteund.
 
@@ -157,8 +156,8 @@ Om van buitenaf toegankelijk te zijn, moeten de beelden die in e-mail en openbar
 
 ## Een voorbeeld van uw bericht bekijken {#preview-msg}
 
-Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan wat de personalisatie is en hoe de ontvangers uw bericht zullen bekijken.
+Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan hoe de inhoud van het bericht wordt aangepast en hoe de ontvangers de levering zien.
 
-* In de leveringstovenaar, **[!UICONTROL Preview]** Met de subtab kunt u de rendering van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](defining-the-email-content.md#message-content)
+* In de bezorgwizard **[!UICONTROL Preview]** Met de subtab kunt u de rendering van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](defining-the-email-content.md#message-content)
 
 * Tijdens elke voorvertoning wordt een automatische controle op anti-spam uitgevoerd. In de **[!UICONTROL Preview]** subtabblad, controleren [SpamAssassin](spamassassin.md) spamscoring.  Klikken **[!UICONTROL More...]** voor meer informatie over de waarschuwing .  Controleer voordat u dit doet of SpamAssassin op de juiste wijze is geïnstalleerd en geconfigureerd op de Adobe Campaign-toepassingsserver. [Meer informatie](../../installation/using/configuring-spamassassin.md)

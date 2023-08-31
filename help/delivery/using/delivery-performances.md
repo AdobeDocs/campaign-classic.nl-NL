@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Best practices voor leveringen
-description: Meer informatie over leveringsprestaties en tips en trucs
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Meer informatie over leveringsprestaties en aanbevolen procedures
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
+role: User, Data Engineer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '470'
 ht-degree: 6%
 
 ---
 
 # Best practices voor leveringen {#delivery-performances}
-
-
 
 We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw leveringen goed functioneren en dat de prestaties worden gecontroleerd als er problemen met leveringen optreden.
 
@@ -27,7 +26,7 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 
 ## Aanbevolen werkwijzen voor prestaties {#best-practices-performance}
 
-* Bewaar de levering niet in mislukte staat op het geval, aangezien dit tijdelijke lijsten handhaaft en de prestaties beïnvloedt.
+* Bewaar de levering niet in mislukte staat, aangezien dit tijdelijke lijsten handhaaft en de prestaties beïnvloedt.
 
 * Leveringen verwijderen die niet meer nodig zijn.
 
@@ -52,7 +51,7 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 Als de leveringsprestaties slecht zijn, kunt u controleren:
 
 * **De omvang van de levering**: Het voltooien van grote leveringen kan langer duren. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
-* **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie hierover [deze sectie](about-deliverability.md) en de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+* **Het doel van de levering**: Het verbod op prestaties bij levering wordt beïnvloed door zachte stuiterfouten, die worden verwerkt volgens de configuratie voor opnieuw uitproberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
+* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie hierover [deze sectie](about-deliverability.md) en aan de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
-Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.
+Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.

@@ -2,24 +2,23 @@
 product: campaign
 title: Gegevensschema's gebruiken in campagne
 description: Leer hoe u gegevensschema's kunt gebruiken in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Model
+role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
 
 # Gegevensschema&#39;s gebruiken in campagne{#data-schemas}
 
-
-
 Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
-Voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign raadpleegt u [deze sectie](../../configuration/using/about-schema-edition.md).
+Raadpleeg voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign [deze sectie](../../configuration/using/about-schema-edition.md).
 
 ## Schemastructuur {#schema-structure}
 
@@ -80,8 +79,8 @@ De belangrijkste eigenschappen die in inhoudsbeheer worden gebruikt zijn als vol
 * **label**: korte beschrijving,
 * **desc**: lange beschrijving,
 * **default**: expressie die een standaardwaarde retourneert bij het maken van inhoud,
-* **userEnum**: gratis opsomming voor het opslaan en weergeven van de waarden die via dit veld worden ingevoerd;
-* **enum**: vaste opsomming die wordt gebruikt wanneer de lijst van mogelijke waarden vooraf bekend is.
+* **userEnum**: gratis opsomming voor het opslaan en weergeven van de waarden die via dit veld zijn ingevoerd;
+* **enum**: vaste opsomming die wordt gebruikt wanneer de lijst met mogelijke waarden vooraf bekend is.
 
 Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
@@ -130,7 +129,7 @@ Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Hiermee kunt u 
 
 De **ref** kenmerk op het element waarnaar moet worden verwezen, moet worden ingevuld met het pad (XPath) van het referentie-element.
 
-**Voorbeeld**: toevoeging van een **Aanhangsel** met dezelfde structuur als de **`<chapter>`** element van ons voorbeeldschema.
+**Voorbeeld**: toevoegen van een **Bijlage** met dezelfde structuur als de **`<chapter>`** element van ons voorbeeldschema.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +176,4 @@ Wanneer het bronschema wordt opgeslagen, wordt het uitgebreide schema automatisc
 
 >[!NOTE]
 >
->De **Naam** Met de besturingselementen voor bewerken kunt u de sleutel van het schema invoeren. Deze bestaat uit de naam en naamruimte. De **name** en **namespace** attributen van het element van de schemawortel worden automatisch bijgewerkt op XML uitgeeft gebied van het schema.
+>De **Naam** Met de besturingselementen voor bewerken kunt u de sleutel van het schema invoeren. Deze bestaat uit de naam en naamruimte. De **name** en **namespace** attributen van het element van de schemagrootte worden automatisch bijgewerkt op XML uitgeeft gebied van het schema.

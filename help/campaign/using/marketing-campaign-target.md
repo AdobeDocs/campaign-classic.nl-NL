@@ -2,12 +2,13 @@
 product: campaign
 title: Doelgroep van marketingcampagne
 description: Leer hoe u het publiek van uw marketingcampagnes definieert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1492'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ In een marketingcampagne kunt u voor elke levering het volgende definiëren:
 * Een controlegroep - Meer informatie in [deze sectie](#defining-a-control-group).
 * Zaadadressen - Meer informatie in [deze sectie](../../delivery/using/about-seed-addresses.md).
 
-Sommige van deze gegevens kunnen worden overgeërfd van de [campagnemalsjabloon](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Sommige van deze gegevens kunnen worden overgeërfd van [campagnemalsjabloon](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers in het gegevensbestand bepalen. Deze selectiemodus voor ontvangers wordt weergegeven in [deze sectie](../../delivery/using/steps-defining-the-target-population.md).
 
@@ -40,7 +41,7 @@ U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel i
 
 ## Het publiek samenstellen in een campagneworkflow {#building-the-main-target-in-a-workflow}
 
-Het hoofddoel van een levering kan ook in de campagnewerkstroom worden bepaald: in deze grafische omgeving kunt u een doel maken met behulp van query&#39;s, tests en operatoren: verenigen, dedupliceren, delen, enz.
+Het hoofddoel van een levering kan ook worden gedefinieerd in de campagneworkflow: met deze grafische omgeving kunt u een doel maken aan de hand van query&#39;s, tests en operatoren: union, deduplicatie, sharing, enzovoort.
 
 >[!IMPORTANT]
 >
@@ -48,7 +49,7 @@ Het hoofddoel van een levering kan ook in de campagnewerkstroom worden bepaald: 
 
 ### De workflow maken {#creating-a-targeting-workflow}
 
-Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Klik op de knop **[!UICONTROL Targeting and workflows]** in het campagnedashboard.
+Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Als u de werkstroomeditor wilt weergeven, klikt u op de knop **[!UICONTROL Targeting and workflows]** in het campagnedashboard.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
@@ -82,7 +83,7 @@ U kunt verschillende doelworkflows voor één campagne maken. Een workflow toevo
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
-1. Selecteer **[!UICONTROL New workflow]** sjabloon en noem deze workflow.
+1. Selecteer de **[!UICONTROL New workflow]** sjabloon en noem deze workflow.
 1. Klikken **[!UICONTROL OK]** om de creatie van het werkschema te bevestigen, en dan het diagram voor deze werkschema tot stand te brengen.
 
 ### De workflow uitvoeren {#executing-a-workflow}
@@ -99,76 +100,77 @@ Met de werkbalkpictogrammen kunt u actie ondernemen met betrekking tot de uitvoe
 
    * De **[!UICONTROL Start]** kunt u de doelworkflow starten. Wanneer u op dit pictogram klikt, worden alle activiteiten zonder een invoerovergang geactiveerd (behalve sprongen met eindpunten).
 
-      ![](assets/s_user_segmentation_start.png)
+     ![](assets/s_user_segmentation_start.png)
 
-      De server houdt rekening met het verzoek, zoals aangetoond door zijn status:
+     De server houdt rekening met het verzoek, zoals aangetoond door zijn status:
 
-      ![](assets/s_user_segmentation_start_status.png)
+     ![](assets/s_user_segmentation_start_status.png)
 
-      De processtatus verandert in **[!UICONTROL Started]**.
+     De processtatus verandert in **[!UICONTROL Started]**.
 
-   * U kunt de doelworkflow opnieuw starten via het juiste werkbalkpictogram. Deze opdracht is handig als de opdracht **[!UICONTROL Start]** pictogram is niet beschikbaar, bijvoorbeeld wanneer het activeren van werkstroom wordt uitgevoerd. Klik in dit geval op de knop **[!UICONTROL Restart]** om te anticiperen op het opnieuw opstarten. De server houdt rekening met het verzoek, aangezien zijn status toont:
+   * U kunt de doelworkflow opnieuw starten via het juiste werkbalkpictogram. Deze opdracht kan handig zijn als de opdracht **[!UICONTROL Start]** pictogram is niet beschikbaar, bijvoorbeeld wanneer het activeren van werkstroom wordt uitgevoerd. Klik in dit geval op de knop **[!UICONTROL Restart]** om te anticiperen op het opnieuw opstarten. De server houdt rekening met het verzoek, aangezien zijn status toont:
 
-      ![](assets/s_user_segmentation_restart_status.png)
+     ![](assets/s_user_segmentation_restart_status.png)
 
-      Het proces gaat dan binnen **[!UICONTROL Started]** status.
+     Het proces gaat dan binnen **[!UICONTROL Started]** status.
 
 * Stoppen of pauzeren
 
    * Met de werkbalkpictogrammen kunt u een actieve doelworkflow stoppen of pauzeren.
 
-      Wanneer u op **[!UICONTROL Pause]**, lopende bewerkingen **[!UICONTROL are not]** gepauzeerd, maar er wordt geen andere activiteit gestart tot de volgende herstart.
+     Wanneer u op **[!UICONTROL Pause]**, lopende bewerkingen **[!UICONTROL are not]** gepauzeerd, maar er wordt geen andere activiteit gestart tot de volgende herstart.
 
-      ![](assets/s_user_segmentation_pause.png)
+     ![](assets/s_user_segmentation_pause.png)
 
-      De server houdt rekening met het bevel, aangezien zijn status toont:
+     De server houdt rekening met het bevel, aangezien zijn status toont:
 
-      ![](assets/s_user_segmentation_pause_status.png)
+     ![](assets/s_user_segmentation_pause_status.png)
 
-      U kunt een doelworkflow ook automatisch pauzeren wanneer de uitvoering een bepaalde activiteit bereikt. Om dit te doen, klik de activiteit met de rechtermuisknop aan waarvan het richten werkschema moet worden gepauzeerd, en selecteer **[!UICONTROL Enable but do not execute]**.
+     U kunt een doelworkflow ook automatisch pauzeren wanneer de uitvoering een bepaalde activiteit bereikt. Klik hiertoe met de rechtermuisknop op de activiteit waarvan de doelworkflow moet worden gepauzeerd en selecteer **[!UICONTROL Enable but do not execute]**.
 
-      ![](assets/s_user_segmentation_donotexecute.png)
+     ![](assets/s_user_segmentation_donotexecute.png)
 
-      Deze configuratie wordt getoond door een speciaal pictogram.
+     Deze configuratie wordt getoond door een speciaal pictogram.
 
-      ![](assets/s_user_segmentation_pause_activity.png)
+     ![](assets/s_user_segmentation_pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Deze optie is handig tijdens het ontwerpen en testen van campagnes die u op geavanceerde wijze wilt richten.
+     >[!NOTE]
+     >
+     >Deze optie is handig tijdens het ontwerpen en testen van campagnes die u op geavanceerde wijze wilt richten.
 
-      Klikken **[!UICONTROL Start]** om de uitvoering te hervatten.
+     Klikken **[!UICONTROL Start]** om de uitvoering te hervatten.
 
    * Klik op de knop **[!UICONTROL Stop]** pictogram om de uitvoering in uitvoering te stoppen.
 
-      ![](assets/s_user_segmentation_stop.png)
+     ![](assets/s_user_segmentation_stop.png)
 
-      De server houdt rekening met het bevel, aangezien zijn status toont:
+     De server houdt rekening met het bevel, aangezien zijn status toont:
 
-      ![](assets/s_user_segmentation_stop_status.png)
-   U kunt een doelworkflow ook automatisch stoppen wanneer de uitvoering een activiteit bereikt. Om dit te doen, klik de activiteit met de rechtermuisknop aan waarvan het richten werkschema zal worden tegengehouden, en selecteer **[!UICONTROL Do not activate]**.
+     ![](assets/s_user_segmentation_stop_status.png)
 
-   ![](assets/s_user_segmentation_donotactivate.png)
+  U kunt een doelworkflow ook automatisch stoppen wanneer de uitvoering een activiteit bereikt. Om dit te doen, klik de activiteit met de rechtermuisknop aan waarvan het richten werkschema zal worden tegengehouden, en selecteer **[!UICONTROL Do not activate]**.
 
-   ![](assets/s_user_segmentation_unactivation.png)
+  ![](assets/s_user_segmentation_donotactivate.png)
 
-   Deze configuratie wordt getoond door een speciaal pictogram.
+  ![](assets/s_user_segmentation_unactivation.png)
 
-   >[!NOTE]
-   >
-   >Deze optie is handig tijdens het ontwerpen en testen van campagnes die u op geavanceerde wijze wilt richten.
+  Deze configuratie wordt getoond door een speciaal pictogram.
+
+  >[!NOTE]
+  >
+  >Deze optie is handig tijdens het ontwerpen en testen van campagnes die u op geavanceerde wijze wilt richten.
 
 * Onvoorwaardelijke stop
 
-   Selecteer in de Verkenner de optie **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** om toegang te krijgen tot en op elke campagneworkflows te handelen.
+  Selecteer in de Verkenner de optie **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** om toegang te krijgen tot en op elke campagneworkflows te handelen.
 
-   U kunt de workflow onvoorwaardelijk stoppen door op de knop **[!UICONTROL Actions]** pictogram en selecteren **[!UICONTROL Unconditional]** stoppen. Deze actie beëindigt uw campagnewerkschema.
+  U kunt de workflow onvoorwaardelijk stoppen door op de knop **[!UICONTROL Actions]** pictogram en selecteren **[!UICONTROL Unconditional]** stoppen. Deze actie beëindigt uw campagnewerkschema.
 
-   ![](assets/s_user_segmentation_stop_unconditional.png)
+  ![](assets/s_user_segmentation_stop_unconditional.png)
 
 ## Een controlegroep toevoegen {#defining-a-control-group}
 
-Een controlegroep is een populatie die de levering niet zal ontvangen; het wordt gebruikt om het gedrag en de impact van de campagne na de levering te volgen door een vergelijking te maken met het gedrag van de doelpopulatie, die de levering heeft ontvangen.
+Een controlegroep is een populatie die de levering niet zal ontvangen; het wordt gebruikt om het gedrag na de levering en het effect van de campagne te volgen door een vergelijking te maken met het gedrag van de doelpopulatie, die de levering heeft ontvangen.
 
 De controlegroep kan uit het belangrijkste doel worden gehaald en/of uit een specifieke groep of een vraag komen.
 
@@ -181,7 +183,7 @@ U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op 
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. Selecteer **[!UICONTROL Enable and edit control group configuration]** optie.
+1. Selecteer de **[!UICONTROL Enable and edit control group configuration]** -optie.
 1. Klikken **[!UICONTROL Edit...]** om de controlegroep te vormen.
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
@@ -202,7 +204,7 @@ Door gebrek, is de configuratie van de controlegroep die op het campagneniveau w
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
-1. Klik op de knop **[!UICONTROL Control group]** en selecteert u vervolgens **[!UICONTROL Enable and edit control group configuration]**.
+1. Klik op de knop **[!UICONTROL Control group]** en selecteert u **[!UICONTROL Enable and edit control group configuration]**.
 1. Klikken **[!UICONTROL Edit...]** om de controlegroep te vormen.
 
 De configuratieprocedure wordt weergegeven in [De besturingsgroep extraheren van het hoofddoel](#extracting-the-control-group-from-the-main-target) en [Een besturingsgroep toevoegen](#adding-a-population).
@@ -215,7 +217,7 @@ U kunt ontvangers extraheren uit het hoofddoel van de levering. In dit geval, zu
 
 Als u een controlegroep wilt extraheren, schakelt u de controlegroep voor de campagne of levering in en selecteert u een van de volgende opties: **[!UICONTROL Activate random sampling]** of **[!UICONTROL Keep only the first records after sorting]**.
 
-* **[!UICONTROL Activate random sampling]** : bij deze optie wordt steekproefsgewijze bemonstering toegepast op de ontvangers in de doelpopulatie. Als u vervolgens de drempel instelt op 100, bestaat de controlegroep uit 100 ontvangers die willekeurig uit de doelpopulatie zijn geselecteerd. De willekeurige bemonstering is afhankelijk van de database-engine.
+* **[!UICONTROL Activate random sampling]** : deze optie past willekeurige bemonstering toe op de ontvangers in de doelpopulatie. Als u vervolgens de drempel instelt op 100, bestaat de controlegroep uit 100 ontvangers die willekeurig uit de doelpopulatie zijn geselecteerd. De willekeurige bemonstering is afhankelijk van de database-engine.
 * **[!UICONTROL Keep only the first records after sorting]** : met deze optie kunt u een limiet definiëren op basis van een of meer sorteervolgorden. Als u **[!UICONTROL Age]** de controlegroep zal bestaan uit de 100 jongste ontvangers . Het zou bijvoorbeeld interessant kunnen zijn om een controlegroep te definiëren die ontvangers bevat die weinig aankopen doen, of ontvangers die vaak aankopen doen, en om hun gedrag te vergelijken met dat van de gecontacteerde ontvangers.
 
 Klikken **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) en de beperkingsmodus voor de ontvanger te selecteren.
@@ -226,7 +228,7 @@ Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het
 
 ### Een nieuwe populatie gebruiken als een controlegroep {#adding-a-population}
 
-U kunt een nieuwe bevolking bepalen die als controlegroep moet worden gebruikt. Deze populatie kan uit een groep ontvangers komen of u kunt het tot stand brengen via een specifieke vraag.
+U kunt een nieuwe populatie definiëren die als een controlegroep moet worden gebruikt. Deze populatie kan uit een groep ontvangers komen of u kunt het tot stand brengen via een specifieke vraag.
 
 ![](assets/s_ncs_user_add_to_target_population.png)
 

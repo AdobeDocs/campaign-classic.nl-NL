@@ -2,20 +2,19 @@
 product: campaign
 title: Een levering maken met een sjabloon
 description: Leer hoe u een levering maakt op basis van een sjabloon
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Delivery Templates
+role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '190'
 ht-degree: 7%
 
 ---
 
 # Een levering maken met een sjabloon{#creating-a-delivery-from-a-template}
-
-
 
 ## De sjabloon koppelen aan een levering {#linking-the-template-to-a-delivery}
 
@@ -41,7 +40,7 @@ U kunt ook **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 Voer de leveringsparameters in en klik op **[!UICONTROL Send]**.
 
-Met deze handeling wordt een levering gegenereerd in de map die aan de sjabloon is gekoppeld. De naam van deze levering is de naam van het leveringsmalplaatje waarvan het werd gecreeerd.
+Deze actie produceert een levering in de omslag verbonden aan het malplaatje. De naam van deze levering is de naam van het leveringsmalplaatje waarvan het werd gecreeerd.
 
 >[!NOTE]
 >

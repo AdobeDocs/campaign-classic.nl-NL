@@ -2,19 +2,19 @@
 product: campaign
 title: Aanbevolen werkwijzen voor het leveren van campagnes
 description: Leer de beste werkwijzen bij het ontwerpen en verzenden van een levering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
+role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 22%
+source-wordcount: '115'
+ht-degree: 21%
 
 ---
 
 # Best practices voor verzending {#delivery-best-practices}
-
 
 
 Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign. Gebruik de onderstaande koppelingen om door onderwerpen te navigeren en hulp te zoeken.
@@ -72,7 +72,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
     </a>
     </div>
     <p>
-    <em>Doelgerichte bevolking is essentieel</em>
+    <em>Gerichte populatie is essentieel</em>
     <p>
   </td>
    <td>
@@ -108,6 +108,6 @@ Zie ook:
 
 * [Aan de slag met de prestaties](about-deliverability.md)
 
-* [Stappen voor het maken van leveringen](steps-about-delivery-creation-steps.md)
+* [Stappen voor het maken van de levering](steps-about-delivery-creation-steps.md)
 
 * [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html)

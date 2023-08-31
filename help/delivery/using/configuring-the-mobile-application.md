@@ -2,13 +2,14 @@
 product: campaign
 title: De mobiele iOS-toepassing in Adobe Campaign configureren
 description: Meer informatie over het instellen van uw mobiele toepassing voor iOS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 7%
+source-wordcount: '658'
+ht-degree: 8%
 
 ---
 
@@ -38,8 +39,8 @@ Voor iOS verzendt de iOS HTTP/2-connector meldingen naar de HTTP/2 APNs.
 Om deze schakelaar te vormen, volg deze stappen:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selecteer **[!UICONTROL iOS routing]** externe rekening.
-1. In de **[!UICONTROL Connector]** tab, vult de **[!UICONTROL Access URL of the connector]** veld met de volgende URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+1. Selecteer de **[!UICONTROL iOS routing]** externe rekening.
+1. In de **[!UICONTROL Connector]** tabblad, vult de **[!UICONTROL Access URL of the connector]** veld met de volgende URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
 
    ![](assets/nmac_connectors.png)
 
@@ -47,7 +48,7 @@ Om deze schakelaar te vormen, volg deze stappen:
 
 Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 
-## iOS-service configureren {#configuring-ios-service}
+## IOS-service configureren {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -68,17 +69,17 @@ Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 
    ![](assets/nmac_ios.png)
 
-1. Klik vervolgens op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
+1. Klik vervolgens op de knop **[!UICONTROL Add]** Selecteer het toepassingstype.
 
    ![](assets/nmac_service_2.png)
 
 1. Maak uw iOS-ontwikkelings- en productietoepassingen. Raadpleeg deze [sectie](configuring-the-mobile-application.md#creating-ios-app) voor meer informatie.
 
-## iOS mobile-app maken {#creating-ios-app}
+## IOS mobile-app maken {#creating-ios-app}
 
 Nadat u de service hebt gemaakt, maakt u uw iOS-toepassing in Campagne. Volg de onderstaande stappen:
 
-1. Klik vanuit de nieuwe service op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
+1. Klik op de knop **[!UICONTROL Add]** Selecteer het toepassingstype.
 
    ![](assets/nmac_service_2.png)
 
@@ -99,7 +100,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** om uitgebreide 
 
 1. De **[!UICONTROL Sounds]** kunt u opgeven welk geluid moet worden afgespeeld. Klikken **[!UICONTROL Add]** en vullen **[!UICONTROL Internal name]** veld dat de naam moet bevatten van het bestand dat is ingesloten in de toepassing of de naam van het systeemgeluid.
 
-1. Klikken **[!UICONTROL Next]** om de ontwikkeltoepassing te configureren.
+1. Klikken **[!UICONTROL Next]** om de ontwikkelingstoepassing te configureren.
 
 1. Zorg ervoor dat **[!UICONTROL Integration key]** wordt gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. Raadpleeg [deze pagina](integrating-campaign-sdk-into-the-mobile-application.md) voor meer informatie. Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
 
@@ -111,7 +112,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** om uitgebreide 
 
 1. Selecteer het **[!UICONTROL Authentication mode]**. U kunt de verificatiemodus altijd later wijzigen in het dialoogvenster **[!UICONTROL Certificate]** van uw mobiele toepassing.
    * **[!UICONTROL Certificate-based authentication]**: Klikken **[!UICONTROL Enter the certificate...]**  Selecteer vervolgens de p12-toets en voer het wachtwoord in dat de ontwikkelaar van de mobiele toepassing heeft opgegeven.
-   * **[!UICONTROL Token-based authentication]**: Verbindingsinstellingen invullen **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** Selecteer vervolgens uw p8-certificaat door op **[!UICONTROL Enter the private key]**. Voor meer informatie **[!UICONTROL Token-based authentication]**, zie [Apple-documentatie](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
+   * **[!UICONTROL Token-based authentication]**: De verbindingsinstellingen invullen **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** Selecteer vervolgens uw p8-certificaat door op **[!UICONTROL Enter the private key]**. Voor meer informatie **[!UICONTROL Token-based authentication]**, zie [Apple-documentatie](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
@@ -127,4 +128,4 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** om uitgebreide 
 
 1. Klik op **[!UICONTROL Finish]**.
 
-Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
+Uw iOS-toepassing kan nu in Campaign Classic worden gebruikt.

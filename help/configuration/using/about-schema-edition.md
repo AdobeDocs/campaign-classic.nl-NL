@@ -2,12 +2,13 @@
 product: campaign
 title: De schema-editor
 description: Aan de slag met schema-editie
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1011'
 ht-degree: 7%
 
 ---
@@ -92,7 +93,7 @@ Raadpleeg voor meer informatie over indexen de [Geïndexeerde velden](../../conf
 
 Elke lijst moet minstens één sleutel hebben, en vaak wordt het automatisch gevestigd in het belangrijkste element van het schema door te gebruiken **@autopk=true** kenmerk ingesteld op &quot;true&quot;.
 
-De primaire sleutel kan ook worden gedefinieerd met behulp van de **internal** kenmerk.
+De primaire sleutel kan ook worden gedefinieerd met de **internal** kenmerk.
 
 Voorbeeld:
 
@@ -133,9 +134,9 @@ De volledige lijst met kenmerken is beschikbaar in de [`<attribute>` element](..
 * **@xml**
 * **@type**
 
-   Als u een tabel wilt weergeven met de toewijzingen voor de gegevenstypen die door Adobe Campaign zijn gegenereerd voor de verschillende databasebeheersystemen, raadpleegt u de [Toewijzing van de typen Adobe Campaign/DBMS-gegevens](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie.
+  Als u een tabel wilt weergeven met de toewijzingen voor de gegevenstypen die door Adobe Campaign zijn gegenereerd voor de verschillende databasebeheersystemen, raadpleegt u de [Toewijzing van de typen Adobe Campaign/DBMS-gegevens](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie.
 
-Voor meer informatie over elk attribuut, verwijs naar [Beschrijving van kenmerk](../../configuration/using/schema/attribute.md) sectie.
+Raadpleeg voor meer informatie over elk kenmerk de [Beschrijving van kenmerk](../../configuration/using/schema/attribute.md) sectie.
 
 ### Voorbeelden {#examples}
 
@@ -203,7 +204,7 @@ Hier komt &#39;xpath-dst&#39; overeen met de primaire sleutel in het doelschema 
 
 ## Audit trail {#audit-trail}
 
-Eén handig element dat u onder aan het schema wilt opnemen, is een element tracking (audittrail).
+Eén handig element dat u onder aan het schema wilt opnemen, is een trackingelement (audittrail).
 
 In het onderstaande voorbeeld kunt u velden opnemen die betrekking hebben op de aanmaakdatum, de gebruiker die de gegevens heeft gemaakt, de datum en de auteur van de laatste wijziging voor alle gegevens in de tabel:
 
@@ -221,4 +222,4 @@ Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/u
 
 >[!NOTE]
 >
->Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe het schema of de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.
+>Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.

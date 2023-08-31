@@ -2,33 +2,32 @@
 product: campaign
 title: Seedadressen
 description: Aan de slag met zaadadressen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
+role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 8%
+source-wordcount: '391'
+ht-degree: 9%
 
 ---
 
 # Seedadressen{#about-seed-addresses}
 
-
-
 Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger.
 
-De belangrijkste reden voor het gebruik is **beveiliging van je mailinglijst**. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw mailinglijst worden verzonden.
+Een van de belangrijkste redenen voor het gebruik is **beveiliging van je mailinglijst**. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw mailinglijst worden verzonden.
 
-Bovendien kunt u met zaadadressen **de personalisatie van de leveringen en rendering voorvertonen en testen** voordat zij worden verzonden, door hen proefstukken te sturen (zie [zaadadressen gebruiken als proefdruk](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Bovendien laten de zaadadressen u toe **de personalisatie van de leveringen en rendering voorvertonen en testen** voordat zij worden verzonden, door hen proefstukken te sturen (zie [zaadadressen gebruiken als proefdruk](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 De zaadadreseigenschap heeft de volgende voordelen:
 
-* Willekeurige vervanging van velden door gegevens uit ontvangende profielen: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie met het zaadadres, en de andere velden automatisch laten invullen met de campagne (zie [Hoofdlettergebruik: de veldvervanging configureren](use-case--configuring-the-field-substitution.md)).
-* Wanneer u een workflow met functies voor gegevensbeheer gebruikt, kunnen de aanvullende gegevens die in leveringen worden verwerkt, op zaadadresniveau worden ingevoerd om waarden af te dwingen: dit negeert de vervanging van willekeurige waarden .
+* Willekeurige vervanging van velden door gegevens uit ontvangende profielen: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie met het zaadadres, en Campagne automatisch de andere velden van het profiel laten invullen (zie [Hoofdlettergebruik: de veldvervanging configureren](use-case--configuring-the-field-substitution.md)).
+* Wanneer u een workflow met functies voor gegevensbeheer gebruikt, kunnen de aanvullende gegevens die in leveringen worden verwerkt, op het niveau van het zaadadres worden ingevoerd om waarden af te dwingen: dit verlaagt de vervanging van willekeurige waarden.
 * Zaadadressen worden automatisch uitgesloten van rapporten over de volgende leveringsstatistieken: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
 De zaadadressen worden toegevoegd aan het doel van leveringen door worden ingevoerd of door in de levering of de campagne direct worden gecreeerd.
@@ -37,7 +36,7 @@ De zaadadressen worden toegevoegd aan het doel van leveringen door worden ingevo
 >
 >De zaadadressen behoren niet tot de ontvangers lijst, zij worden gecreeerd in een afzonderlijke lijst. Als u de lijst van ontvangers met nieuwe gegevens uitbreidt, moet u de lijst van zaadadressen evenals met de zelfde gegevens uitbreiden. Anders, zullen zij uitgebreide gebieden niet in aanmerking worden genomen voor zaadadressen.
 >
->Een voorbeeld van hoe te om de zaadadreslijst uit te breiden wordt voorgesteld in deze sectie: [Hoofdlettergebruik: zaadadressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md).
+>Een voorbeeld van hoe te om de zaadadreslijst uit te breiden wordt voorgesteld in deze sectie: [Hoofdlettergebruik: zaadadressen op criteria selecteren](use-case--selecting-seed-addresses-on-criteria.md).
 
 Voor direct-mailleveringen worden de zaadadressen toegevoegd tijdens extractie en gemengd in het uitvoerdocument.
 
@@ -48,4 +47,3 @@ Voor direct-mailleveringen worden de zaadadressen toegevoegd tijdens extractie e
 >* De optie mag niet worden gebruikt **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Als elementverzamelingen worden geëxtraheerd, hebben deze velden een lege waarde voor de zaadadressen, tenzij de velden **[!UICONTROL Single row (expert user)]** is geselecteerd. Raadpleeg [deze sectie](../../platform/using/executing-export-jobs.md#step-7---data-formatting) voor meer informatie.
 >
-

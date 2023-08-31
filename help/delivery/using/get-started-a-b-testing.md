@@ -2,19 +2,19 @@
 product: campaign
 title: Aan de slag met A/B-tests
 description: Meer informatie over A/B-tests in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: A/B Testing
+role: User
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '361'
 ht-degree: 3%
 
 ---
 
 # Aan de slag met A/B-tests {#get-started-a-b-testing}
-
 
 
 Met A/B-tests kunt u meerdere versies van een levering vergelijken met elkaar om te bepalen welke versie de grootste invloed heeft op de doelpopulatie.
@@ -25,12 +25,12 @@ In het onderstaande voorbeeld is de leveringsdoelstelling opgesplitst in twee gr
 
 ![](assets/a-b-testing-schema.png)
 
-Met Campaign Classic, wordt A/B het testen uitgevoerd door werkschema&#39;s, waar u de te richten bevolking evenals de groepen specificeert die elke variant zullen ontvangen (zie [A/b-tests configureren](configuring-a-b-testing.md)).
+Met Campaign Classic, A/B wordt het testen uitgevoerd door werkschema&#39;s, waar u de bevolking specificeert om te richten evenals de groepen die elke variant zullen ontvangen (zie [A/b-tests configureren](configuring-a-b-testing.md)).
 
 De belangrijkste stappen zijn:
 
 1. **Doel** de gewenste bevolking.
-1. **De bevolking splitsen** in subsets waarop u de varianten van uw levering zult testen.
+1. **Gesplitst de bevolking** in subsets waarop u de varianten van uw levering zult testen.
 
    U kunt bijvoorbeeld een versie van een levering verzenden naar een klein deel van de doelpopulatie en een andere versie naar de resterende populatie. Dit staat u toe om een nieuwe versie van een levering in tegenstelling tot de levering te testen die gewoonlijk naar uw klanten wordt verzonden. U kunt de doelpopulatie ook opsplitsen in drie groepen om ze drie verschillende versies van een levering te sturen.
 

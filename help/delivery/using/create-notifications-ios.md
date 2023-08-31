@@ -2,19 +2,18 @@
 product: campaign
 title: Een pushmelding maken voor iOS-apparaten
 description: Meer informatie over het maken van pushmeldingen voor iOS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 6%
+source-wordcount: '972'
+ht-degree: 7%
 
 ---
 
 # Meldingen maken voor iOS{#create-notifications-ios}
-
-
 
 In deze sectie worden de specifieke elementen voor de levering van iOS-berichten beschreven. Algemene concepten voor het creëren van levering worden weergegeven in [deze sectie](steps-about-delivery-creation-steps.md).
 
@@ -24,7 +23,7 @@ Begin door een nieuwe levering te maken.
 
 Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
-1. Selecteer **[!UICONTROL Deliver on iOS]** leveringssjabloon.
+1. Selecteer de **[!UICONTROL Deliver on iOS]** leveringssjabloon.
 
    ![](assets/nmac_delivery_ios_1.png)
 
@@ -38,7 +37,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
    >
    >Voor meer informatie over het gebruik van verpersoonlijkingsgebieden, verwijs naar [deze sectie](about-personalization.md).
    >
-   >Voor meer informatie over het opnemen van een zaadlijst raadpleegt u [Informatie over zaadadressen](about-seed-addresses.md).
+   >Raadpleeg voor meer informatie over het opnemen van een zaadlijst [Informatie over zaadadressen](about-seed-addresses.md).
 
 1. Selecteren **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** Selecteer eerst de service die relevant is voor uw mobiele toepassing (in dit geval Neotrips) en selecteer vervolgens de iOS-versie van de toepassing.
 
@@ -66,15 +65,16 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
 1. Van de **[!UICONTROL Sound and Badge]** kunt u de volgende opties bewerken:
 
-   * **[!UICONTROL Clean Badge]**: Schakel deze optie in om de waarde van de badge te vernieuwen.
+   * **[!UICONTROL Clean Badge]**: schakel deze opties in om de waarde van de badge te vernieuwen.
 
-   * **[!UICONTROL Value]**: Stel een nummer in dat wordt gebruikt om het aantal nieuwe ongelezen gegevens direct op het toepassingspictogram weer te geven.
+   * **[!UICONTROL Value]**: stel een getal in dat wordt gebruikt om het aantal nieuwe ongelezen gegevens direct op het toepassingspictogram weer te geven.
 
-   * **[!UICONTROL Critical alert mode]**: Schakel deze optie in om geluid toe te voegen aan uw melding, zelfs als de telefoon van de gebruiker is ingesteld op de focusmodus of als de iPhone is gedempt.
+   * **[!UICONTROL Critical alert mode]**: schakel deze optie in om geluid toe te voegen aan uw melding, zelfs als de telefoon van de gebruiker is ingesteld op de focusmodus of als de iPhone is gedempt.
 
-   * **[!UICONTROL Name]**: Selecteer het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
+   * **[!UICONTROL Name]**: selecteer het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
 
    * **[!UICONTROL Volume]**: volume van uw geluid van 0 tot 100.
+
    >[!NOTE]
    >
    >Geluiden moeten in de toepassing worden opgenomen en worden gedefinieerd wanneer de service wordt gemaakt. Zie [deze sectie](configuring-the-mobile-application.md#configuring-external-account-ios).
@@ -87,30 +87,31 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
 1. Van de **[!UICONTROL Advanced]** kunt u de volgende algemene opties bewerken:
 
-   * **[!UICONTROL Mutable content]**: Schakel deze optie in als u wilt dat de mobiele toepassing media-inhoud kan downloaden.
+   * **[!UICONTROL Mutable content]**: schakel deze optie in zodat de mobiele toepassing media-inhoud kan downloaden.
 
-   * **[!UICONTROL Thread-id]**: identifier die wordt gebruikt om gerelateerde meldingen te groeperen.
+   * **[!UICONTROL Thread-id]**: ID die wordt gebruikt om gerelateerde meldingen te groeperen.
 
-   * **[!UICONTROL Category]**: naam van de rubriek-id die knoppen voor handelingen weergeeft. Met deze meldingen kan de gebruiker sneller verschillende taken uitvoeren als reactie op een melding zonder de applicatie te openen of erin te moeten navigeren.
+   * **[!UICONTROL Category]**: naam van de rubriek-id waarin de knoppen voor handelingen worden weergegeven. Met deze meldingen kan de gebruiker sneller verschillende taken uitvoeren als reactie op een melding zonder de applicatie te openen of erin te moeten navigeren.
 
    ![](assets/nmac_delivery_ios_7.png)
 
 1. Voor meldingen met tijdgevoeligheid kunt u de volgende opties opgeven:
 
-   * **[!UICONTROL Target content ID]**: identifier die wordt gebruikt om aan te geven welk toepassingsvenster moet worden verzonden wanneer de melding wordt geopend.
+   * **[!UICONTROL Target content ID]**: id die wordt gebruikt om aan te geven welk toepassingsvenster moet worden verzonden wanneer de melding wordt geopend.
 
    * **[!UICONTROL Launch image]**: naam van het startafbeeldingsbestand dat moet worden weergegeven. Als de gebruiker ervoor kiest de toepassing te starten, wordt de geselecteerde afbeelding weergegeven in plaats van het startscherm van de toepassing.
 
    * **[!UICONTROL Interruption level]**:
 
-      * **[!UICONTROL Active]**: Het systeem stelt de melding standaard in, licht het scherm aan en kan een geluid afspelen. Meldingen doorbreken niet door de focusmodi.
+      * **[!UICONTROL Active]**: Standaard ingesteld, geeft het systeem de melding direct weer, licht het scherm omhoog en kan een geluid worden afgespeeld. Meldingen doorbreken niet door de focusmodi.
 
       * **[!UICONTROL Passive]**: Het systeem voegt het bericht toe aan de meldingslijst zonder het scherm te belichten of een geluid af te spelen. Meldingen doorbreken niet door de focusmodi.
 
-      * **[!UICONTROL Time sensitive]**: Het systeem presenteert de melding onmiddellijk, licht het scherm op, kan een geluid afspelen en door de modus Focus breken. Voor dit niveau is geen speciale toestemming van Apple vereist.
+      * **[!UICONTROL Time sensitive]**: Het systeem presenteert de melding direct, licht het scherm op, kan een geluid afspelen en de modus Focus doorbreken. Voor dit niveau is geen speciale toestemming van Apple vereist.
 
-      * **[!UICONTROL Critical]**: Het systeem presenteert onmiddellijk het bericht, licht omhoog het scherm, en mijdt de demtschakelaar of nadrukwijzen. Voor dit niveau is een speciale machtiging van Apple vereist.
-   * **[!UICONTROL Relevance score]**: een relevantiescore instellen van 0 tot 100. Het systeem gebruikt dit om de berichten in het berichtoverzicht te sorteren.
+      * **[!UICONTROL Critical]**: Het systeem presenteert de melding direct, licht het scherm op en laat de modi voor demtschakelaar of focus over. Voor dit niveau is een speciale machtiging van Apple vereist.
+
+   * **[!UICONTROL Relevance score]**: stel een relevantiescore in van 0 tot 100. Het systeem gebruikt dit om de berichten in het berichtoverzicht te sorteren.
 
    ![](assets/nmac_delivery_ios_8.png)
 
@@ -122,7 +123,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
    >
    >De berichtstijl (banner of waarschuwing) wordt niet gedefinieerd in Adobe Campaign. Het hangt van de configuratie af die door de gebruiker in hun montages van iOS wordt geselecteerd. In Adobe Campaign kunt u echter elk type berichtstijl bekijken. Klik op de pijl rechtsonder om van de ene stijl naar de andere te gaan.
    >
-   >In de voorvertoning wordt het uiterlijk van iOS 10 gebruikt.
+   >In de voorvertoning wordt de iOS 10-look en -feel gebruikt.
 
 Als u een bewijs wilt verzenden en de uiteindelijke levering wilt verzenden, gebruikt u hetzelfde proces als voor e-mailleveringen. [Meer informatie](steps-validating-the-delivery.md)
 

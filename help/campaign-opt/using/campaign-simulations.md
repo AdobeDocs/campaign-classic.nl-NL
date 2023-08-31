@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: Campagnesimulaties
-description: Aan de slag met campagnesimulaties
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Aan de slag met Campagnesimulaties
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -16,14 +17,14 @@ ht-degree: 1%
 
 ## Informatie over simulaties {#about-simulations}
 
-Met Campagneoptimalisatie kunt u de efficiëntie van een campagneplan testen met behulp van simulaties. Zo kunt u het potentiële succes van een campagne meten: gegenereerde inkomsten, doelvolume op basis van de toegepaste typologische regels, enz.
+Met Campagneoptimalisatie kunt u de efficiëntie van een campagneplan testen met behulp van simulaties. Hiermee kunt u het potentiële succes van een campagne meten: gegenereerde inkomsten, doelvolume op basis van de toegepaste typologische regels, enz.
 
 Met simulatie kunt u het effect van leveringen controleren en vergelijken.
 
 >[!NOTE]
 >
 >Leveringen die in de testmodus worden voorbereid, hebben geen invloed op elkaar, bijvoorbeeld wanneer een campagne wordt beoordeeld in gedistribueerde marketing, of zolang de leveringen niet in de voorlopige kalender zijn gepland.\
->Dit betekent dat druk- en capaciteitsregels alleen worden toegepast op leveringen in **[!UICONTROL Target estimation and message personalization]** in. Leveringen in **[!UICONTROL Estimation and approval of the provisional target]** en in **[!UICONTROL Target evaluation]** geen rekening wordt gehouden met deze modus.\
+>Dit betekent dat druk- en capaciteitsregels alleen worden toegepast op leveringen in **[!UICONTROL Target estimation and message personalization]** -modus. Leveringen in **[!UICONTROL Estimation and approval of the provisional target]** en in **[!UICONTROL Target evaluation]** geen rekening wordt gehouden met deze modus.\
 >De leveringswijze wordt gekozen in **[!UICONTROL Typology]** subtabblad van de leveringseigenschappen.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
@@ -34,7 +35,7 @@ Met simulatie kunt u het effect van leveringen controleren en vergelijken.
 
 Voer de volgende stappen uit om een simulatie te maken:
 
-1. Open de **[!UICONTROL Campaigns]** klikt u op de knop **[!UICONTROL More]** koppeling binnen de **[!UICONTROL Create]** en selecteert u de **[!UICONTROL Simulation]** optie.
+1. Open de **[!UICONTROL Campaigns]** klikt u op de knop **[!UICONTROL More]** koppeling binnen de **[!UICONTROL Create]** en selecteert u de **[!UICONTROL Simulation]** -optie.
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -54,9 +55,9 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    >[!NOTE]
    >
-   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om hiermee rekening te houden wanneer een simulatie wordt gestart. Om dit te doen, controleer **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** optie.
+   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om hiermee rekening te houden wanneer een simulatie wordt gestart. Controleer de **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** -optie.
    >  
-   >Als u dit niet doet, zullen om het even welke leveringen die niet beschikbaar in het plan, het programma, of de campagne zijn wanneer de simulatie wordt gecreeerd niet in aanmerking worden genomen: leveringen die later worden toegevoegd, worden genegeerd.
+   >Als u dit niet doet, zullen om het even welke leveringen die niet beschikbaar in het plan, het programma, of de campagne zijn wanneer de simulatie wordt gecreeerd niet in aanmerking worden genomen: later toegevoegde leveringen zullen worden genegeerd.
 
    ![](assets/simu_campaign_opti_edit_scope_update.png)
 
@@ -100,7 +101,7 @@ De **[!UICONTROL General]** tabblad van de simulatie kunt u uitvoeringsinstellin
 
 Zodra het simulatiewerkingsgebied wordt bepaald, kunt u het uitvoeren.
 
-Open hiertoe het dashboard voor de simulatie en klik op **[!UICONTROL Start simulation]**.
+Open het dashboard voor simulatie en klik op **[!UICONTROL Start simulation]**.
 
 ![](assets/simu_campaign_opti_start.png)
 
@@ -108,14 +109,14 @@ Als de uitvoering is voltooid, opent u de simulatie en klikt u op de knop **[!UI
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. De **[!UICONTROL Deliveries]** subtabblad bevat een lijst met alle leveringen waarmee de simulatie rekening houdt. Er zijn twee punten:
+1. De **[!UICONTROL Deliveries]** subtabblad bevat een lijst met alle leveringen waarmee de simulatie rekening houdt. Het toont twee tellingen:
 
    * De **[!UICONTROL Initial count]** is het streefcijfer zoals dit werd berekend bij de raming van de levering.
    * De **[!UICONTROL Final count]** is het aantal ontvangers dat na simulatie wordt geteld.
 
-      Het verschil tussen aanvankelijke en definitieve tellingen wijst op de toepassing van de diverse regels of de filters die voorafgaand aan de simulatie worden gevormd.
+     Het verschil tussen aanvankelijke en definitieve tellingen wijst op de toepassing van de diverse regels of de filters die voorafgaand aan de simulatie worden gevormd.
 
-      Als u meer wilt weten over deze berekening, bewerkt u de **[!UICONTROL Exclusions]** subtab.
+     Als u meer wilt weten over deze berekening, bewerkt u de **[!UICONTROL Exclusions]** subtab.
 
 1. De **[!UICONTROL Exclusions]** Met de subtab kunt u de uitsplitsing naar uitsluiting weergeven.
 
@@ -138,7 +139,7 @@ De **[!UICONTROL Audit]** kunt u de uitvoering van de simulatie controleren. De 
 
 De **[!UICONTROL Exploration of the exclusions]** Met de subtab kunt u de gegevens analyseren die het resultaat zijn van een simulatie.
 
-De beschrijvende analyse wordt in [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+De beschrijvende analyse wordt nader beschreven in [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## Resultaten van een simulatie {#results-of-a-simulation}
 
@@ -146,13 +147,13 @@ De indicatoren in de **[!UICONTROL Log]** en **[!UICONTROL Results]** tabs biede
 
 ### Rapporten {#reports}
 
-Om het resultaat van een simulatie te analyseren, geef zijn rapporten uit: zij tonen uitsluitingen en oorzaken .
+Om het resultaat van een simulatie te analyseren, geef zijn rapporten uit: zij tonen uitsluitingen en oorzaken.
 
 De volgende rapporten worden standaard geleverd:
 
-* **[!UICONTROL Detail of simulation exclusions]** : dit verslag bevat een gedetailleerd overzicht van de oorzaken van uitsluiting voor alle betrokken leveringen .
-* **[!UICONTROL Simulation summary]** : in dit verslag wordt aangegeven welke bevolkingsgroepen gedurende de verschillende leveringen van de simulatie zijn uitgesloten .
-* **[!UICONTROL Summary of exclusions linked to the simulation]** : dit verslag bevat een overzicht van de uitsluitingen die door de simulatie worden veroorzaakt , samen met de toegepaste typologische regel en een grafiek met de uitsluitingsverhouding per regel .
+* **[!UICONTROL Detail of simulation exclusions]** : dit verslag bevat een gedetailleerd overzicht van de oorzaken van uitsluiting voor alle betrokken leveringen.
+* **[!UICONTROL Simulation summary]** : dit verslag toont aan welke bevolkingsgroepen gedurende de verschillende leveringen van de simulatie zijn uitgesloten.
+* **[!UICONTROL Summary of exclusions linked to the simulation]** : dit verslag bevat een overzicht van de uitsluitingen die door de simulatie worden veroorzaakt, samen met de toegepaste typologische regel en een grafiek met de uitsluitingsverhouding per regel.
 
 >[!NOTE]
 >
@@ -166,14 +167,14 @@ U kunt rapporten ook bewerken met de opdracht **[!UICONTROL Reports]** verbindin
 
 ### Simulaties vergelijken {#comparing-simulations-}
 
-Telkens wanneer een simulatie wordt uitgevoerd, vervangt het resultaat om het even welke vorige resultaten: u kunt de resultaten van de ene uitvoering niet weergeven en vergelijken.
+Telkens wanneer een simulatie wordt uitgevoerd, vervangt het resultaat om het even welke vorige resultaten: u kunt resultaten van één uitvoering aan een andere niet tonen en vergelijken.
 
-Om resultaten te vergelijken, moet u rapporten gebruiken. In Adobe Campaign kunt u zelfs een rapportgeschiedenis opslaan om deze later opnieuw te bekijken. Deze geschiedenis wordt gedurende de levenscyclus van de simulaties bewaard.
+Als u resultaten wilt vergelijken, moet u rapporten gebruiken. In Adobe Campaign kunt u zelfs een rapportgeschiedenis opslaan om deze later opnieuw te bekijken. Deze geschiedenis wordt gedurende de levenscyclus van de simulaties bewaard.
 
 **Voorbeeld:**
 
 1. Creeer een simulatie op een levering die typologie **A** wordt toegepast op.
-1. In de **[!UICONTROL Reports]** kunt u een van de beschikbare rapporten bewerken, zoals **[!UICONTROL Detail of simulation exclusions]** bijvoorbeeld.
+1. In de **[!UICONTROL Reports]** een van de beschikbare rapporten, zoals **[!UICONTROL Detail of simulation exclusions]** bijvoorbeeld.
 1. Klik in de rechterbovensectie van het rapport op het pictogram om een nieuwe geschiedenis te maken.
 
    ![](assets/campaign_opt_reporting_create_hist.png)
@@ -183,7 +184,7 @@ Om resultaten te vergelijken, moet u rapporten gebruiken. In Adobe Campaign kunt
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
 
-   U kunt zoveel rapporthistorie opslaan als nodig is.
+   U kunt zo veel rapporthistorie opslaan als nodig is.
 
 ### Assen rapporteren {#reporting-axes}
 
@@ -192,7 +193,7 @@ De **[!UICONTROL Calculations]** kunt u rapportassen op het doel definiëren. De
 >[!NOTE]
 >
 >Wij adviseren bepalende berekeningsassen in de simulatiesjablonen eerder dan individueel voor elke simulatie.\
->Simulatiesjablonen worden opgeslagen in de **[!UICONTROL Resources > Templates > Simulation templates]** knooppunt van de boomstructuur Adobe Campaign.
+>Simulatiesjablonen worden opgeslagen in het dialoogvenster **[!UICONTROL Resources > Templates > Simulation templates]** knooppunt van de boomstructuur Adobe Campaign.
 
 **Voorbeeld:**
 
@@ -207,15 +208,15 @@ In het onderstaande voorbeeld willen we een extra rapportas maken op basis van d
 
    * **[!UICONTROL Generate target overlap statistics]** laat u alle overlappende statistieken in het simulatierapport terugkrijgen. Overlappingen zijn ontvangers die zijn aangewezen in ten minste twee leveringen binnen één simulatie.
 
-      >[!IMPORTANT]
-      >
-      >Als u deze optie selecteert, neemt de uitvoeringstijd van de simulatie aanzienlijk toe.
+     >[!IMPORTANT]
+     >
+     >Als u deze optie selecteert, neemt de uitvoeringstijd van de simulatie aanzienlijk toe.
 
    * **[!UICONTROL Keep the simulation work table]** Hiermee kunt u simulatietraces behouden.
 
-      >[!IMPORTANT]
-      >
-      >Voor het automatisch opslaan van deze tabellen is een aanzienlijke opslagcapaciteit vereist: zorg ervoor dat de database groot genoeg is.
+     >[!IMPORTANT]
+     >
+     >Voor het automatisch opslaan van deze tabellen is een aanzienlijke opslagcapaciteit vereist. Zorg ervoor dat de database groot genoeg is.
 
 Wanneer de simulatieresultaten worden weergegeven, wordt de informatie over de geselecteerde expressie weergegeven in het dialoogvenster **[!UICONTROL Overlaps]** subtab.
 

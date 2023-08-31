@@ -2,20 +2,19 @@
 product: campaign
 title: A/B-tests configureren
 description: Leer hoe u A/B-tests configureert in Campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: A/B Testing
+role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 3%
+source-wordcount: '223'
+ht-degree: 4%
 
 ---
 
 # A/B-tests configureren {#configuring-a-b-testing}
-
-
 
 In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voeren.
 
@@ -29,7 +28,7 @@ In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voe
 
    ![](assets/ab-testing-split.png)
 
-1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Om dit te doen, activeer **[!UICONTROL Generate complement]** van de **[!UICONTROL General]** tab.
+1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Activeer de **[!UICONTROL Generate complement]** van de **[!UICONTROL General]** tab.
 
    ![](assets/ab-testing-complement.png)
 

@@ -2,13 +2,14 @@
 product: campaign
 title: Marketingscampagnes maken
 description: Meer informatie over het maken en uitvoeren van marketingcampagnes
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 2%
+source-wordcount: '1260'
+ht-degree: 3%
 
 ---
 
@@ -16,15 +17,15 @@ ht-degree: 2%
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
-![](assets/do-not-localize/how-to-video.png) Ontdek hoe u een marketingplan, -programma&#39;s en -campagnes kunt maken [in video](#video)
+![](assets/do-not-localize/how-to-video.png) Ontdek hoe u een marketingplan, programma&#39;s en campagnes kunt maken [in video](#video)
 
 Een marketingcampagne maken:
 
-1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer informatie](#creating-a-campaign).
+1. Maak een campagne: ontdek campagnes en hun kenmerken: label, type, begin- en einddatum, budget, bijbehorende middelen, manager(s) en deelnemers. [Meer informatie](#creating-a-campaign).
 
-1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Doelpopulatie(s) definiëren: een workflow maken met query&#39;s als doel. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Leveringen maken: selecteer een of meer kanalen en definieer de inhoud die u wilt verzenden. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
 1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
 
@@ -32,7 +33,7 @@ Een marketingcampagne maken:
 
 1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen te controleren en, indien nodig, de bijbehorende documenten te beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
+Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Plan- en programmahiërarchie maken {#creating-plan-and-program-hierarchy}
 
@@ -58,7 +59,7 @@ Om uw omslaghiërarchie voor marketing plannen en programma&#39;s te vormen:
 
 ### Een campagne toevoegen {#adding-a-campaign}
 
-U kunt een campagne maken via de lijst met campagnes. Selecteer de optie **[!UICONTROL Campaigns]** in het menu **[!UICONTROL Campaigns]** dashboard.
+U kunt een campagne maken via de lijst met campagnes. Als u deze weergave wilt weergeven, selecteert u de **[!UICONTROL Campaigns]** in het menu **[!UICONTROL Campaigns]** dashboard.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -74,13 +75,13 @@ Wanneer u een campagne maakt via de **[!UICONTROL Schedule]** van een programma 
 
 Selecteer in het venster Campagne maken de sjabloon voor de campagne en voeg een naam en een beschrijving van de campagne toe. U kunt ook de begin- en einddatum van de campagne opgeven.
 
-Klikken **[!UICONTROL OK]** om de campagne te maken. Deze wordt toegevoegd aan het programma.
+Klikken **[!UICONTROL OK]** om de campagne op te zetten. Deze wordt toegevoegd aan het programma.
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
 >[!NOTE]
 >
->Als u de weer te geven campagnes wilt filteren, klikt u op de knop **[!UICONTROL Filter]** en selecteer de status van de campagnes die u wilt weergeven.
+>Als u de weer te geven campagnes wilt filteren, klikt u op de knop **[!UICONTROL Filter]** koppelen en de status selecteren van de campagnes die u wilt weergeven.
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
@@ -152,8 +153,8 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
    Voor elke regel kunt u de volgende aanvullende opties toevoegen:
 
-   * **[!UICONTROL To be approved]** : Hiermee kunt u de goedkeuringsaanvragen voor levering afdwingen in de workflow.
-   * **[!UICONTROL To be started]** : Hiermee kunt u de workflow starten wanneer de begindatum is bereikt.
+   * **[!UICONTROL To be approved]** : hiermee kunt u de goedkeuringsaanvragen voor levering afdwingen in de workflow.
+   * **[!UICONTROL To be started]** : hiermee kunt u de workflow starten wanneer de begindatum is bereikt.
 
    De **[!UICONTROL Create in advance for]** in dit veld kunt u alle werkstromen maken die betrekking hebben op de ingevoerde periode.
 
@@ -182,7 +183,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
 Een periodieke campagne is een campagne die op een specifiek malplaatje wordt gebaseerd dat u campagneinstanties laat tot stand brengen die op een uitvoeringsprogramma worden gebaseerd. Campagneinstanties worden automatisch gemaakt op basis van een periodiek campagnemalplaatje, afhankelijk van de frequentie die in het sjabloonprogramma is gedefinieerd.
 
-#### De sjabloon voor de campagne maken {#creating-the-campaign-template-1}
+#### De campagnemalplaatje maken {#creating-the-campaign-template-1}
 
 1. Een **[!UICONTROL Periodic]** campagnemalplaatje, bij voorkeur door een bestaand campagnemalplaatje te dupliceren.
 
@@ -202,7 +203,7 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
    >
    >Deze workflow is een werkstroomsjabloon. Deze kan niet worden uitgevoerd vanuit de campagnemalplaatje.
 
-1. Voltooi zijn uitvoeringsprogramma zoals voor een terugkomende campagnemalplaatje: klik op **[!UICONTROL Add]** en definieert u de begin- en einddatum of vult u het uitvoeringsschema in via de koppeling.
+1. Voltooi zijn uitvoeringsprogramma zoals voor een terugkomende campagnemalplaatje: klik **[!UICONTROL Add]** en definieert u de begin- en einddatum of vult u het uitvoeringsschema in via de koppeling.
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 

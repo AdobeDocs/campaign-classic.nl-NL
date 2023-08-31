@@ -2,20 +2,19 @@
 product: campaign
 title: Content verrijken
 description: Content verrijken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Management
+role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
 # Content verrijken{#enriching-content}
-
-
 
 Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven komt uit generische vragen of verbonden lijsten.
 
@@ -37,7 +36,7 @@ Voorbeeld van het resultaat van een query op het ontvangende schema (**nms:ontva
 </book>
 ```
 
-De **`<collection-recipient>`** element vertegenwoordigt het inputelement van het document resulterend uit een vraag. De opgehaalde gegevens worden onder dit element geretourneerd. in ons voorbeeld, een ontvankelijke lijst.
+De **`<collection-recipient>`** element vertegenwoordigt het inputelement van het document resulterend uit een vraag. De opgehaalde gegevens worden onder dit element geretourneerd. In ons voorbeeld is dit een lijst met ontvangers.
 
 ### Een query toevoegen {#adding-a-query}
 
@@ -55,7 +54,7 @@ De queryparameters worden bewerkt met een wizard.
 
    ![](assets/d_ncs_content_query2.png)
 
-1. De volgende pagina bepaalt de filtervoorwaarde.
+1. De volgende pagina definieert de filtervoorwaarde.
 
    ![](assets/d_ncs_content_query3.png)
 
@@ -69,7 +68,7 @@ Met koppelingen kunt u externe gegevens ophalen die zijn gekoppeld aan de inhoud
 
 Er zijn twee typen gekoppelde gegevens:
 
-* Koppelingen naar inhoud: dit is de native modus voor inhoudsbeheer. De inhoud van de koppeling wordt automatisch in het XML-uitvoerdocument geïntegreerd.
+* Inhoudskoppelingen: dit is de native modus voor inhoudsbeheer. De inhoud van de koppeling wordt automatisch in het XML-uitvoerdocument geïntegreerd.
 * Koppelingen naar externe tabellen geven toegang tot alle andere tabellen in de database met als beperking het ophalen van de gegevens van de geselecteerde koppeling met een aggregator.
 
 ### Koppeling maken naar een inhoudsschema {#link-to-a-content-schema}
@@ -210,7 +209,7 @@ De inhoud van elke koppeling waarnaar wordt verwezen, is beperkt tot de interne 
 
 Een JavaScript-script wordt gebruikt om de inhoud van de koppelingen te verrijken via SOAP-query&#39;s.
 
-**Voorbeeld**: De naam van de ontvanger toevoegen aan de koppeling &quot;mainContact&quot; en de koppelingen voor de verzameling &quot;contact&quot;:
+**Voorbeeld**: Voeg de naam van de ontvanger toe aan de koppeling &quot;mainContact&quot; en de koppelingen voor de verzameling &quot;contact&quot;:
 
 ```
 // Update <mainContact> link

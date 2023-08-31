@@ -1,14 +1,15 @@
 ---
 product: campaign
-title: Aan de slag met het gegevensmodel Campaign Classic
+title: Aan de slag met het gegevensmodel van het Campaign Classic
 description: Leer hoe u het Campaign-datamodel kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Data Model, Configuration
+role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -108,7 +109,7 @@ De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
 Meer informatie over het gegevensmodel van campagne vindt u in de volgende secties:
 
-* **Beschrijving van de belangrijkste tabellen** - Raadpleeg voor meer informatie over het standaard Campaign Classic gegevensmodel de beschrijving [deze sectie](../../configuration/using/data-model-description.md).
+* **Beschrijving van de belangrijkste tabellen** - Raadpleeg voor meer informatie over het standaardgegevensmodel van het Campaign Classic de beschrijving [deze sectie](../../configuration/using/data-model-description.md).
 
 * **Volledige beschrijving van elke tabel** - Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** selecteert u een bron in de lijst en klikt u op de knop **[!UICONTROL Documentation]** tab.
 

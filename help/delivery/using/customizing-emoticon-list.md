@@ -2,20 +2,19 @@
 product: campaign
 title: De lijst met emoticons aanpassen
 description: Leer hoe u de emoticonlijst kunt aanpassen bij gebruik van Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email, Push
+role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 4%
 
 ---
 
 # De lijst met emoticons aanpassen {#customize-emoticons}
-
-
 
 De emoticonlijst die in pop-up wordt getoond wordt bepaald door een opsomming die u toestaat om waarden in een lijst te tonen om de keuzen te beperken die de gebruiker voor een bepaald gebied heeft.
 U kunt de volgorde van de emoticonlijst aanpassen en u kunt ook andere emoticons aan uw lijst toevoegen.
@@ -51,7 +50,7 @@ Om compatibiliteitsproblemen te voorkomen, raden we u aan emoticons te kiezen di
 1. Klikken **[!UICONTROL Ok]** dan **[!UICONTROL Save]** wanneer uw configuratie wordt gebeëindigd.
 Uw nieuwe emoticon wordt automatisch in de winkel geplaatst.
 
-1. Om het in te tonen in **[!UICONTROL Insert emoticon]** Selecteer het nieuwe emoticon door erop te dubbelklikken.
+1. Als u deze wilt weergeven in het dialoogvenster **[!UICONTROL Insert emoticon]** Selecteer het nieuwe emoticon door erop te dubbelklikken.
 
 1. Kies in het dialoogvenster **[!UICONTROL Display order]** vervolgkeuzelijst waarin de volgorde van het nieuwe emoticon wordt weergegeven. Door een reeds toegewezen weergavevolgorde te selecteren, wordt het bestaande emoticon automatisch naar de winkel verplaatst.
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Automatiseren via workflows
 description: Leer hoe u contentbeheer kunt automatiseren via workflows
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Workflows
+role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 # Automatiseren met workflows{#automating-via-workflows}
-
-
 
 ## Inhoudsbeheeractiviteiten {#content-management-activity}
 
@@ -25,9 +24,9 @@ De **Inhoudsbeheer** activiteit is toegankelijk via de **[!UICONTROL Tools]** we
 
 Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
-* **[!UICONTROL Content]** : kunt u bestaande inhoud invoeren of inhoud maken.
-* **[!UICONTROL Update content]** : Hiermee kunt u het onderwerp van de inhoud wijzigen of de inhoud bijwerken via een XML-gegevensstroom.
-* **[!UICONTROL Action to execute]** : Hiermee kunt u inhoud opslaan of genereren.
+* **[!UICONTROL Content]** : hiermee kunt u bestaande inhoud invoeren of inhoud maken.
+* **[!UICONTROL Update content]** : hiermee kunt u het onderwerp van de inhoud wijzigen of de inhoud bijwerken via een XML-gegevensstroom.
+* **[!UICONTROL Action to execute]** : hiermee kunt u inhoud opslaan of genereren.
 * **[!UICONTROL Transition]** : Hiermee kunt u kiezen of u een uitvoerovergang wilt genereren en er een naam voor wilt opgeven.
 
 ![](assets/d_ncs_content_wf.png)
@@ -36,41 +35,41 @@ Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
 * **Door de overgang opgegeven**
 
-   De te gebruiken inhoud is eerder gemaakt. Processen hebben betrekking op de inhoudinstantie die door de binnenkomende gebeurtenis wordt doorgegeven. De inhoud-id wordt benaderd via de variabele &quot;contentId&quot; van de gebeurtenis.
+  De te gebruiken inhoud is eerder gemaakt. Processen hebben betrekking op de inhoudinstantie die door de binnenkomende gebeurtenis wordt doorgegeven. De inhoud-id wordt benaderd via de variabele &quot;contentId&quot; van de gebeurtenis.
 
 * **Expliciet**
 
-   Hiermee kunt u eerder gemaakte inhoud kiezen.
+  Hiermee kunt u eerder gemaakte inhoud kiezen.
 
 * **Berekend door een script**
 
-   Hiermee selecteert u een inhoudsinstantie op basis van een JavaScript-sjabloon. Met de code die moet worden geëvalueerd, kunt u de inhoud-id ophalen.
+  Hiermee selecteert u een inhoudsinstantie op basis van een JavaScript-sjabloon. Met de code die moet worden geëvalueerd, kunt u de inhoud-id ophalen.
 
 * **Nieuw, gemaakt via een publicatiesjabloon**
 
-   Hiermee maakt u nieuwe inhoud via een publicatiesjabloon. De instantie content wordt opgeslagen in de gevulde map &quot;String&quot;.
+  Hiermee maakt u nieuwe inhoud via een publicatiesjabloon. De instantie content wordt opgeslagen in de gevulde map &quot;String&quot;.
 
 ### De inhoud bijwerken {#update-the-content}
 
 * **Onderwerp**
 
-   Hiermee kunt u het onderwerp van de leveringsactie tijdens het publiceren wijzigen.
+  Hiermee kunt u het onderwerp van de leveringsactie tijdens het publiceren wijzigen.
 
 * **Toegang tot de gegevens van een XML-feed**
 
-   De inhoud wordt bijgewerkt vanuit een XML-feed van een externe bron. Er moet een URL worden ingevoerd voordat gegevens kunnen worden gedownload.
+  De inhoud wordt bijgewerkt vanuit een XML-feed van een externe bron. Er moet een URL worden ingevoerd voordat gegevens kunnen worden gedownload.
 
-   Een XSL-opmaakmodel kan worden gebruikt om de inkomende XML-gegevens te transformeren.
+  Een XSL-opmaakmodel kan worden gebruikt om de inkomende XML-gegevens te transformeren.
 
 ### Uit te voeren handeling {#action-to-execute}
 
 * **Opslaan**
 
-   Hiermee slaat u de gemaakte of gewijzigde inhoud op. De id van de opgeslagen inhoud wordt doorgegeven in de variabele &quot;contentId&quot; van de uitgaande gebeurtenis.
+  Hiermee slaat u de gemaakte of gewijzigde inhoud op. De id van de opgeslagen inhoud wordt doorgegeven in de variabele &quot;contentId&quot; van de uitgaande gebeurtenis.
 
 * **Genereren**
 
-   Hiermee genereert u de uitvoerbestanden voor elk van de transformatiesjablonen met een publicatie van het type &quot;Bestand&quot;. De uitgaande overgang wordt geactiveerd voor elk geproduceerd dossier, met de volgende parameters: de id van de inhoud die is opgeslagen in de variabele &quot;contentId&quot; en de bestandsnaam in de variabele &quot;filename&quot;.
+  Hiermee genereert u de uitvoerbestanden voor elk van de transformatiesjablonen met een publicatie van het type &quot;Bestand&quot;. De uitgaande overgang wordt geactiveerd voor elk gegenereerd bestand, met de volgende parameters: de id van de inhoud die is opgeslagen in de variabele &quot;contentId&quot; en de bestandsnaam in de variabele &quot;filename&quot;.
 
 ### Transition {#transition}
 
@@ -140,7 +139,7 @@ Broncode van de gebruikte XSLT-stijlpagina:
 </xsl:stylesheet>
 ```
 
-De laatste actie van de activiteit is het opslaan van het inhoudsexemplaar en doorgaan naar de volgende taak.
+De laatste actie van de activiteit is het opslaan van de instantie van de inhoud en doorgaan naar de volgende taak.
 
 De gerichte acties worden uitgevoerd via de **Query** activiteit.
 
@@ -154,7 +153,7 @@ Er wordt een nieuwe leveringsactie gemaakt op basis van een sjabloon.
 
 De leveringssjabloon van de activiteit wordt gebruikt om de transformatiesjablonen van de publicatiesjabloon te selecteren. Bij het genereren van inhoud wordt rekening gehouden met alle HTML- en tekstsjablonen zonder leveringssjablonen of met sjablonen waarnaar wordt verwezen met dezelfde sjabloon als de activiteit.
 
-Het te leveren doel wordt ingevoerd via de binnenkomende gebeurtenis.
+Het doel dat moet worden geleverd, wordt ingevoerd via de binnenkomende gebeurtenis.
 
 De inhoud van de levering wordt via de binnenkomende gebeurtenis gevuld.
 
@@ -192,7 +191,7 @@ De **JavaScript-code** de activiteit wint de volledige naam van elk geproduceerd
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### De levering en de inhoud ervan maken {#creating-the-delivery-and-its-content}
+### De levering en inhoud maken {#creating-the-delivery-and-its-content}
 
 In dit voorbeeld wordt hetzelfde concept gebruikt als in het eerste voorbeeld, alleen wordt de actie voor levering in de eerste stap gemaakt.
 
@@ -208,7 +207,7 @@ Zodra de taken zijn uitgevoerd, activeert EN-toets doos **Aflevering** taak om d
 
 De te starten leveringsactie wordt via de overgang gevuld.
 
-Het te leveren doel wordt ingevoerd via de binnenkomende gebeurtenis.
+Het doel dat moet worden geleverd, wordt ingevoerd via de binnenkomende gebeurtenis.
 
 De inhoud van de levering wordt via de binnenkomende gebeurtenis gevuld.
 
@@ -232,7 +231,7 @@ Het doel is een **editBtn** type **`<input>`** in het formulier. Dit besturingse
 
 In de bewerkingszone kunt u variabele gegevens vullen die worden gebruikt om de URL van de XML-feed met gegevens te maken die moeten worden opgehaald.
 
-De knop voert het **GetAndTransform** SOAP-methode gevuld onder de map **`<input>`** tag.
+De knop voert de opdracht **GetAndTransform** SOAP-methode gevuld onder de map **`<input>`** -tag.
 
 De controleverklaring is als volgt:
 
@@ -248,7 +247,7 @@ De controleverklaring is als volgt:
 </input>
 ```
 
-De **GetAndTransform** methode moet worden gedeclareerd in het kader van de **`<enter>`** van het **`<input>`** tag. Deze tag gebruikt als parameters de URL voor het herstellen van XML-gegevens van een dynamisch geconstrueerde expressie. De tweede parameter van de functie is optioneel en verwijst naar een opmaakmodel dat wordt gebruikt voor een tussenliggende transformatie wanneer de inkomende XML-gegevens niet in dezelfde indeling staan als de inhoud.
+De **GetAndTransform** methode moet worden gedeclareerd onder de **`<enter>`** element van het **`<input>`** -tag. Deze tag gebruikt als parameters de URL voor het herstellen van XML-gegevens van een dynamisch geconstrueerde expressie. De tweede parameter van de functie is optioneel en verwijst naar een opmaakmodel dat wordt gebruikt voor een tussenliggende transformatie wanneer de inkomende XML-gegevens niet in dezelfde indeling staan als de inhoud.
 
 De uitvoer werkt de inhoud bij op basis van het pad dat in de laatste parameter is ingevoerd.
 
@@ -270,7 +269,7 @@ Er wordt een half-automatisch invoerformulier voor het bewerken van updates toeg
 </input>
 ```
 
-In de bewerkingszone kunt u de naam invoeren van het bestand dat moet worden opgehaald. De URL wordt samengesteld op basis van bijvoorbeeld deze naam: https://myserver.adobe.com/incomin/data.xml
+In de bewerkingszone kunt u de naam invoeren van het bestand dat moet worden opgehaald. De URL is gebaseerd op deze naam, bijvoorbeeld: https://myserver.adobe.com/incomin/data.xml
 
 De indeling van de gegevens die moeten worden opgehaald, is dezelfde als in voorbeeld 1 van workflowautomatisering. We gebruiken de stijlpagina &#39;cus:book-workflow.xsl&#39; die in dit voorbeeld wordt weergegeven.
 

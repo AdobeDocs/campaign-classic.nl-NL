@@ -2,11 +2,12 @@
 product: campaign
 title: Problemen met verzenden van levering
 description: Meer informatie over leveringsprestaties en hoe u problemen met betrekking tot leveringsbewaking kunt oplossen
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Deliverability, Troubleshooting
+role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 1%
@@ -14,8 +15,6 @@ ht-degree: 1%
 ---
 
 # Problemen met verzenden van levering {#delivery-troubleshooting}
-
-
 
 Deze sectie maakt een lijst van gemeenschappelijke kwesties u kunt ontmoeten wanneer het verzenden van leveringen, en hoe te om hen problemen op te lossen.
 

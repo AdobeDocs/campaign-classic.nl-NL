@@ -2,34 +2,33 @@
 product: campaign
 title: De juiste doelgroep definiëren
 description: Leer de beste praktijken bij het selecteren van uw publiek
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Audiences
+role: User
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 4%
 
 ---
 
 # De juiste doelgroep definiëren {#define-the-right-audience}
 
+De doelgroep is belangrijk: maak uw lijsten zorgvuldig, test uw e-mails op populaire e-mailclients en mobiele apparaten en controleer of uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
 
-
-Gerichte populatie is van essentieel belang: uw lijsten zorgvuldig samen te stellen, uw e-mailberichten te testen op populaire e-mailclients en mobiele apparaten en ervoor te zorgen dat uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
-
-Meer informatie over doelgroepen [in deze sectie](steps-defining-the-target-population.md)
+Meer informatie over doelpopulaties [in deze sectie](steps-defining-the-target-population.md)
 
 ## Doelgroep {#target-the-right-audience}
 
 Wanneer u uw inhoud klaar hebt, moet u zorgvuldig bepalen wie uw bericht zal ontvangen.
 
-Om uw levering succesvol te maken, wilt u de meest relevante gepersonaliseerde inhoud naar de juiste ontvangers verzenden. Met Adobe Campaign kunt u het meest nauwkeurige doel maken: u kunt ontvangers selecteren op basis van hun leeftijd, lokalisatie, wat ze hebben gekocht, als ze op een koppeling hebben geklikt in een vorige levering, enzovoort. Met Adobe Campaign kunt u ook testprofielen, controlegroepen en zaadadressen definiëren om te controleren of het doel correct is.
+Om uw levering succesvol te maken, wilt u de meest relevante gepersonaliseerde inhoud naar de juiste ontvangers verzenden. Met Adobe Campaign kunt u het meest nauwkeurige doel maken: u kunt ontvangers selecteren op basis van hun leeftijd, lokalisatie, wat ze hebben gekocht, als ze op een koppeling in een vorige levering klikken, enzovoort. Met Adobe Campaign kunt u ook testprofielen, controlegroepen en zaadadressen definiëren om te controleren of het doel correct is.
 
 ## Doeltoewijzingen {#target-mappings}
 
-In Campaign Classic, standaard, doel van leveringssjablonen **Ontvangers**. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen die u op basis van uw behoeften kunt wijzigen.
+In Campaign Classic, door gebrek, richt de leveringsmalplaatjes **Ontvangers**. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen die u op basis van uw behoeften kunt wijzigen.
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
@@ -67,7 +66,7 @@ Deduplicating adressen beschermt uw verzendende reputatie en verzekert goed quar
 **Verwante onderwerpen:**
 
 * [Deduplicatieactiviteit](../../workflow/using/deduplication.md).
-* [Hoofdlettergebruik: De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
+* [Hoofdlettergebruik: samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
 
 ## E-mailadressen indexeren {#index-addresses}
 

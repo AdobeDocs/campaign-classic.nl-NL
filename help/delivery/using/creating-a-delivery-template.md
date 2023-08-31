@@ -2,20 +2,19 @@
 product: campaign
 title: Een leveringssjabloon maken
 description: Een leveringssjabloon maken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Delivery Templates
+role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '395'
 ht-degree: 11%
 
 ---
 
 # Een leveringssjabloon maken{#creating-a-delivery-template}
-
-
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#delivery-template-video)
 
@@ -37,7 +36,7 @@ Voor meer informatie over de configuratiewijze, verwijs naar [De sjabloon koppel
 
 >[!NOTE]
 >
->Om configuratiefouten te voorkomen, raadt Adobe u aan een native sjabloon te dupliceren en de instellingen ervan aan te passen in plaats van een nieuwe sjabloon te maken.
+>Om configuratiefouten te voorkomen, raadt de Adobe u aan een native sjabloon te dupliceren en de instellingen ervan aan te passen in plaats van een nieuwe sjabloon te maken.
 
 Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
@@ -50,19 +49,19 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
    ![](assets/delivery_template_2.png)
 
-1. De **Label** en de **Interne naam** van de map.
+1. Wijzig de **Label** en de **Interne naam** van de map.
 1. Sla de sjabloon op en open deze opnieuw.
 1. Klik op de knop **Eigenschappen** en wijzigt u de waarden naar wens.
 
    ![](assets/delivery_template_3.png)
 
-1. In de **Algemeen** de locaties die zijn geselecteerd in het dialoogvenster **Uitvoermap**, **Map**, en **Routering** vervolgkeuzemenu&#39;s.
+1. In de **Algemeen** de locaties die in het dialoogvenster **Uitvoermap**, **Map**, en **Routering** vervolgkeuzemenu&#39;s
 
    ![](assets/delivery_template_4.png)
 
 1. Voltooi de **E-mailparameters** rubriek met je e-mailonderwerp en doelgroep.
 1. Voeg uw **HTML-inhoud** om uw sjabloon aan te passen, kunt u een koppeling naar een spiegel en een koppeling naar een abonnement weergeven.
-1. Selecteer **Voorvertoning** tab. In de **Aanpassing testen** vervolgkeuzelijst, selecteert u **Ontvanger** om een voorbeeld van de sjabloon weer te geven als het gekozen profiel.
+1. Selecteer de **Voorvertoning** tab. In de **Aanpassing testen** vervolgkeuzelijst, selecteert u **Ontvanger** om een voorbeeld van de sjabloon weer te geven als het gekozen profiel.
 
    ![](assets/delivery_template_5.png)
 
@@ -85,8 +84,8 @@ In de volgende video ziet u hoe u de eigenschappen van de leveringssjabloon inst
 
 ### Hoe te om een ad hoc leveringsmalplaatje op te stellen
 
-In deze video wordt uitgelegd hoe u een sjabloon voor ad-hoc e-maillevering kunt implementeren. In deze video wordt het verschil tussen een e-maillevering en een leveringsworkflow uitgelegd.
+In deze video wordt uitgelegd hoe u een sjabloon voor ad-hoce-maillevering kunt implementeren. In deze video wordt het verschil tussen een e-maillevering en een leveringsworkflow uitgelegd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

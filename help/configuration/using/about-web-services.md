@@ -2,13 +2,14 @@
 product: campaign
 title: Webservices
 description: Webservices
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '662'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 De Adobe Campaign-toepassingsserver is ontworpen voor openheid en eenvoudige integratie met steeds meer uiteenlopende en complexe bedrijfsinformatiesystemen.
 
-Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie voor meer informatie [SOAP-methoden implementeren](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van generieke functies die kunnen worden verrijkt. Zie voor meer informatie [SOAP-methoden implementeren](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -38,7 +39,7 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
 * Algemene API&#39;s voor gegevenstoegang voor het opvragen van gegevens in het datamodel. Zie [Gegevensgeoriënteerde API&#39;s](../../configuration/using/data-oriented-apis.md).
-* Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Zie [Bedrijfs-georiënteerde APIs](../../configuration/using/business-oriented-apis.md).
+* Bedrijfsspecifieke API&#39;s waarmee u op elk object kunt reageren: leveringen, workflows, abonnementen, enzovoort. Zie [Bedrijfs-georiënteerde APIs](../../configuration/using/business-oriented-apis.md).
 
 Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie [Beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
@@ -134,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 
 De `<soap-env:fault>` -element in de hoofdtekst van het SOAP-bericht wordt gebruikt om de foutsignalen over te brengen die optreden tijdens de verwerking van de webservice. Dit bestaat uit de volgende subelementen:
 
-* `<faultcode>` : Hiermee wordt het type fout aangegeven. De fouttypen zijn:
+* `<faultcode>` : geeft het type fout aan. De fouttypen zijn:
 
    * &quot;VersionMismatch&quot; in geval van incompatibiliteit met de gebruikte SOAP-versie,
    * &quot;MustUnderstanding&quot; in geval van een probleem in de berichtkopbal,

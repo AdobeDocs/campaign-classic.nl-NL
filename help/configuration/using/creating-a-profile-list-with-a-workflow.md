@@ -2,11 +2,12 @@
 product: campaign
 title: Een profiellijst maken met een workflow
 description: Leer hoe u een profiellijst maakt in een workflow
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Workflows, Profiles
+role: User
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 12%
@@ -14,7 +15,6 @@ ht-degree: 12%
 ---
 
 # Een profiellijst maken met een workflow{#creating-a-profile-list-with-a-workflow}
-
 
 
 Een **[!UICONTROL List]** typelijst die op de nieuwe ontvankelijke lijst wordt gebaseerd, moet u een het richten werkschema tot stand brengen dat de lijst zal produceren.

@@ -2,19 +2,19 @@
 product: campaign
 title: Het script maken
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: A/B Testing
+role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '344'
 ht-degree: 4%
 
 ---
 
-# Het script maken {#step-5--creating-the-script}
-
+# AB testen: het script maken {#step-5--creating-the-script}
 
 
 De keus van de leveringsinhoud die voor de resterende bevolking wordt bestemd wordt berekend door een manuscript. Met dit script wordt de informatie over de levering met de hoogste snelheid van het openen hersteld en wordt de inhoud naar de uiteindelijke levering gekopieerd.
@@ -84,79 +84,79 @@ Voor een gedetailleerde uitleg van het script raadpleegt u [deze sectie](#detail
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Sluit de **[!UICONTROL JavaScript code]** activiteit.
+1. Sluit het dialoogvenster **[!UICONTROL JavaScript code]** activiteit.
 1. Sla uw workflow op.
 
 ## Details van het script {#details-of-the-script}
 
 In deze sectie worden de verschillende delen van het script en de bijbehorende uitvoermodus beschreven.
 
-* Het eerste deel van het script is een query. De **queryDef** kunt u herstellen vanaf **NmsDelivery** de leveringen die worden gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van hun geschatte openingssnelheid, waarna de informatie uit de levering met de hoogste openingsfrequentie wordt hersteld.
+* Het eerste deel van het script is een query. De **queryDef** kunt u herstellen vanaf de **NmsDelivery** de leveringen die worden gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van hun geschatte openingssnelheid, waarna de informatie uit de levering met de hoogste openingsfrequentie wordt hersteld.
 
-   ```
-   // query the database to find the winner (best open rate)
-      var winner = xtk.queryDef.create(
-        <queryDef schema="nms:delivery" operation="get">
-          <select>
-            <node expr="@id"/>
-            <node expr="@label"/>
-            <node expr="[@operation-id]"/>
-          </select>
-          <where>
-            <condition expr={"@FCP=0 and [@workflow-id]= " + instance.id}/>
-          </where>
-          <orderBy>
-            <node expr="[indicators/@estimatedRecipientOpenRatio]" sortDesc="true"/>
-          </orderBy>
-        </queryDef>).ExecuteQuery()
-   ```
+  ```
+  // query the database to find the winner (best open rate)
+     var winner = xtk.queryDef.create(
+       <queryDef schema="nms:delivery" operation="get">
+         <select>
+           <node expr="@id"/>
+           <node expr="@label"/>
+           <node expr="[@operation-id]"/>
+         </select>
+         <where>
+           <condition expr={"@FCP=0 and [@workflow-id]= " + instance.id}/>
+         </where>
+         <orderBy>
+           <node expr="[indicators/@estimatedRecipientOpenRatio]" sortDesc="true"/>
+         </orderBy>
+       </queryDef>).ExecuteQuery()
+  ```
 
 * De levering met de hoogste snelheid van opent wordt gedupliceerd.
 
-   ```
-    // create a new delivery object and initialize it by doing a copy of
-    // the winner delivery
-   var delivery = nms.delivery.create()
-   delivery.Duplicate("nms:delivery|" + winner.@id)
-   ```
+  ```
+   // create a new delivery object and initialize it by doing a copy of
+   // the winner delivery
+  var delivery = nms.delivery.create()
+  delivery.Duplicate("nms:delivery|" + winner.@id)
+  ```
 
 * Het label van de gedupliceerde levering wordt gewijzigd en het woord **final** wordt toegevoegd.
 
-   ```
-   // append 'final' to the delivery label
-   delivery.label = winner.@label + " final"
-   ```
+  ```
+  // append 'final' to the delivery label
+  delivery.label = winner.@label + " final"
+  ```
 
 * De levering wordt gekopieerd naar het campagnedashboard.
 
-   ```
-   // link the delivery to the operation to make sure it will be displayed in
-   // the campaign dashboard. This attribute needs to be set manually here since 
-   // the Duplicate() method has reset it to its default value => 0
-   delivery.operation_id = winner.@["operation-id"]
-   delivery.workflow_id = winner.@["workflow-id"]
-   ```
+  ```
+  // link the delivery to the operation to make sure it will be displayed in
+  // the campaign dashboard. This attribute needs to be set manually here since 
+  // the Duplicate() method has reset it to its default value => 0
+  delivery.operation_id = winner.@["operation-id"]
+  delivery.workflow_id = winner.@["workflow-id"]
+  ```
 
-   ```
-   // adjust some delivery parameters to make it compatible with the 
-   // "Prepare and start" option selected in the Delivery tab of this activity
-   delivery.scheduling.validationMode = "manual"
-   delivery.scheduling.delayed = 0
-   ```
+  ```
+  // adjust some delivery parameters to make it compatible with the 
+  // "Prepare and start" option selected in the Delivery tab of this activity
+  delivery.scheduling.validationMode = "manual"
+  delivery.scheduling.delayed = 0
+  ```
 
 * De levering wordt opgeslagen in de database.
 
-   ```
-   // save the delivery in database
-   delivery.save()
-   ```
+  ```
+  // save the delivery in database
+  delivery.save()
+  ```
 
 * De unieke id van de gedupliceerde levering wordt opgeslagen in de workflowvariabele.
 
-   ```
-   // store the new delivery Id in event variables
-   vars.deliveryId = delivery.id
-   ```
+  ```
+  // store the new delivery Id in event variables
+  vars.deliveryId = delivery.id
+  ```
 
 ## Andere selectiecriteria {#other-selection-criteria}
 
@@ -165,7 +165,7 @@ In het bovenstaande voorbeeld kunt u de inhoud van een levering selecteren op ba
 * Best geklikt doorvoer: `[indicators/@recipientClickRatio]`,
 * Hoogste reactiviteitspercentage (e-mail geopend en klik in het bericht): `[indicators/@reactivity]`,
 * Laagste klachtenpercentage: `[indicators/@refusedRatio]` (gebruik de false-waarde voor het kenmerk sortDesc),
-* Hoogste conversiesnelheid: `[indicators/@transactionRatio]`,
+* Hoogste omrekeningskoers: `[indicators/@transactionRatio]`,
 * Aantal bezochte pagina&#39;s na ontvangst van een bericht: `[indicators/@totalWebPage]`,
 * Laagste abonnement: `[indicators/@optOutRatio]`,
 * Transactiebedrag: `[indicators/@amount]`.

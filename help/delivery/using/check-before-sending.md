@@ -2,20 +2,19 @@
 product: campaign
 title: Controleren vóór verzending
 description: Zodra uw bericht klaar is, voer alle controles uit alvorens te verzenden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
+role: User
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '904'
 ht-degree: 4%
 
 ---
 
 # Alle controles uitvoeren voordat ze worden verzonden {#perform-all-checks}
-
-
 
 Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wordt getoond, en bevat geen fouten zoals verkeerde verpersoonlijking of gebroken verbindingen.
 
@@ -35,7 +34,7 @@ Met Postvak-rendering kunt u uw berichten voorvertonen bij belangrijke e-mailcli
 
 **Tips**:
 
-* U kunt het verzonden bericht bekijken in de verschillende contexten waarin het kan worden ontvangen: webmail, berichtservice, mobiel, enz.
+* U kunt het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen: webmail, berichtservice, mobiel enzovoort.
 
 * Rendermogelijkheden in postvakken zijn van cruciaal belang om te bepalen of uw e-mailcampagnes erin slagen het voorbij de filters van belangrijke ISP&#39;s (Internet Service Providers) en webmailservices te maken. Dergelijke hulpmiddelen verzenden een pre-vlucht exemplaar van een e-mail naar een netwerk van testinboxes, zodat kunt u zien hoe het bericht, over deze diensten zal tonen of teruggeven. Ze kunnen ook rapporten en opties voor codecorrectie bevatten die u helpen snel oplossingen te vinden en te maken die de leesbaarheid verbeteren.
 
@@ -65,7 +64,7 @@ Als laatste stap maximaliseert u uw kansen en gebruikt u de kracht van Adobe Cam
 
 ### Een validatieproces doorlopen
 
-U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledige controle en controle op de verschillende processen van de campagne: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Meer informatie [in deze sectie](../../campaign/using/marketing-campaign-approval.md).
+U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledig toezicht en controle op de verschillende processen van de campagne: gericht op, inhoud, begroting, extractie en het verzenden van bewijzen. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Meer informatie [in deze sectie](../../campaign/using/marketing-campaign-approval.md).
 
 ### Golven gebruiken
 

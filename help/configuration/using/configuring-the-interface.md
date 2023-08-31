@@ -3,10 +3,11 @@ product: campaign
 title: De interface configureren
 description: Leer hoe u de interface Campagne configureert
 feature: Application Settings
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+role: Data Engineer, Developer
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # De interface configureren{#configuring-the-interface}
-
-
 
 Voer de volgende stappen uit om de nieuwe tabel met ontvangers in de Adobe Campaign-interface weer te geven en deze te openen:
 

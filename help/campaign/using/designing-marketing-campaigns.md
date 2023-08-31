@@ -2,13 +2,14 @@
 product: campaign
 title: Marketingcampagnes ontwerpen en uitvoeren
 description: Marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 9%
+source-wordcount: '450'
+ht-degree: 10%
 
 ---
 
@@ -32,35 +33,35 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
 * **Campaign**
 
-   Een campagne centraliseert alle elementen met betrekking tot een marketingcampagne: leveringen, doelgerichte regels, kosten, uitvoerbestanden, verwante documenten, enz. Elke campagne is aan een programma verbonden.
+  Een campagne centraliseert alle elementen die verband houden met een marketingcampagne: leveringen, doelgerichte regels, kosten, exportbestanden, verwante documenten, enz. Elke campagne is aan een programma verbonden.
 
-   Raadpleeg voor meer informatie hierover [Een campagne toevoegen](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+  Raadpleeg voor meer informatie hierover [Een campagne toevoegen](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programma**
 
-   Met een programma kunt u marketingacties voor een kalenderperiode definiëren: lancering, kanvassing, loyaliteit, enz. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemeen overzicht biedt.
+  Met een programma kunt u marketingacties definiëren voor een kalenderperiode: starten, scannen, loyaliteit enzovoort. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemeen overzicht biedt.
 
 * **Plan**
 
-   Het marketingplan kan meerdere programma&#39;s bevatten. Het is gekoppeld aan een kalenderperiode, heeft een toegewezen budget en kan ook worden gekoppeld aan documenten en doelstellingen.
+  Het marketingplan kan meerdere programma&#39;s bevatten. Het is gekoppeld aan een kalenderperiode, heeft een toegewezen budget en kan ook worden gekoppeld aan documenten en doelstellingen.
 
-   Raadpleeg voor meer informatie hierover [Campagnekalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+  Raadpleeg voor meer informatie hierover [Campagnekalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
-   Een campagneworkflow bevat dezelfde activiteiten als voor alle workflows, maar is specifiek voor de campagne. Het laat u toe om leveringen voor alle beschikbare kanalen tot stand te brengen en te vormen.
+  Een campagneworkflow bevat dezelfde activiteiten als voor alle workflows, maar is specifiek voor de campagne. Het laat u toe om leveringen voor alle beschikbare kanalen tot stand te brengen en te vormen.
 
-   Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor meer informatie.
+  Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor meer informatie.
 
 * **Doelstellingen**
 
-   In de campagne, het programma of het plan kunt u een lijst met doelstellingen opgeven. Dit zijn gekwantificeerde waarden die moeten worden bereikt. Aan het eind van de campagne, het programma of het plan, laat de module MRM u de doelstellingen en de resultaten in specifieke rapporten vergelijken.
+  In de campagne, het programma of het plan kunt u een lijst met doelstellingen opgeven. Dit zijn gekwantificeerde waarden die moeten worden bereikt. Aan het eind van de campagne, het programma of het plan, laat de module MRM u de doelstellingen en de resultaten in specifieke rapporten vergelijken.
 
 * **Overzicht van levering**
 
-   Een leveringsoverzicht is een gestructureerde beschrijving van een levering. Elke levering kan naar een leveringsoverzicht verwijzen dat, bijvoorbeeld, de verwante aanbiedingen bevat, documenten om, of een verbinding aan opslag in bijlage te zijn. Naar een aanbieding kan in de levering worden verwezen op basis van het geselecteerde leveringsoverzicht.
+  Een leveringsoverzicht is een gestructureerde beschrijving van een levering. Elke levering kan naar een leveringsoverzicht verwijzen dat, bijvoorbeeld, de verwante aanbiedingen bevat, documenten om, of een verbinding aan opslag in bijlage te zijn. Naar een aanbieding kan in de levering worden verwezen op basis van het geselecteerde leveringsoverzicht.
 
-   Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) voor meer informatie.
+  Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) voor meer informatie.
 
 ## Tutorial {#video}
 
@@ -68,4 +69,4 @@ In deze video worden de belangrijkste concepten van marketingcampagnes gepresent
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

@@ -2,13 +2,14 @@
 product: campaign
 title: Leveringen voor marketingcampagnes
 description: Meer informatie over marketingcampagneleveringen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 2%
+source-wordcount: '1494'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow
 
 Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
 
-![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Ontdek deze functie in video](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -38,9 +39,9 @@ Zodra alle goedkeuringsverzoeken zijn verleend, verandert de leveringsstatus in 
 
 >[!NOTE]
 >
->Als een specifieke exploitant of groep exploitanten voor het beginnen van een levering in de eigenschappen van de levering wordt aangewezen, kunt u de exploitant die voor de levering verantwoordelijk is ook toestaan om de verzending te bevestigen. Om dit te doen, activeer **NMS_ActivateOwnerConfirmation** optie door **1** als de waarde. De opties worden beheerd via de **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de Adobe Campaign Explorer.
+>Als een specifieke exploitant of groep exploitanten voor het beginnen van een levering in de eigenschappen van de levering wordt aangewezen, kunt u de exploitant die voor de levering verantwoordelijk is ook toestaan om de verzending te bevestigen. Activeer de **NMS_ActivateOwnerConfirmation** optie door **1** als de waarde. De opties worden beheerd via de **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de Adobe Campaign Explorer.
 >  
->Als u deze optie wilt deactiveren, voert u **0** als de waarde. Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren.
+>Als u deze optie wilt uitschakelen, voert u **0** als de waarde. Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
@@ -68,54 +69,54 @@ Raadpleeg voor meer informatie hierover [Een extractiebestand goedkeuren](../../
 
 * Zodra het extractiedossier wordt goedgekeurd, kunt u het bewijs van de e-mail van het routerbericht produceren. Dit e-mailbericht wordt samengesteld op basis van een leveringssjabloon. Het moet worden goedgekeurd.
 
-   >[!NOTE]
-   >
-   >Deze stap is alleen beschikbaar als het verzenden en goedkeuren van proefdrukken is ingeschakeld in het venster Goedkeuring.
+  >[!NOTE]
+  >
+  >Deze stap is alleen beschikbaar als het verzenden en goedkeuren van proefdrukken is ingeschakeld in het venster Goedkeuring.
 
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
 * Klik op de knop **[!UICONTROL Send a proof]** om de proefdrukken te maken.
 
-   Het proefdrukdoel moet vooraf worden gedefinieerd.
+  Het proefdrukdoel moet vooraf worden gedefinieerd.
 
-   U kunt zo veel proefdrukken maken als nodig is. Deze zijn toegankelijk via de **[!UICONTROL Direct mail...]** link van de leveringsgegevens.
+  U kunt zo veel proefdrukken maken als nodig is. Deze zijn toegankelijk via de **[!UICONTROL Direct mail...]** link van de leveringsgegevens.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
 * De leveringsstatus verandert in **[!UICONTROL To submit]**. Klik op de knop **[!UICONTROL Submit proofs]** om het goedkeuringsproces te starten.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
 * De leveringsstatus verandert in **[!UICONTROL Proof to validate]** en met een knop kunt u goedkeuring accepteren of afwijzen.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
-   U kunt deze goedkeuring accepteren of afwijzen of terugkeren naar de extractiestap.
+  U kunt deze goedkeuring accepteren of afwijzen of terugkeren naar de extractiestap.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
 
 * Het extractiedossier wordt verzonden naar de router en de levering wordt gebeëindigd.
 
 ### Berekening van de kosten en voorraden {#calculation-of-costs-and-stocks}
 
-Met de uitname van het bestand worden twee bewerkingen gestart: begrotingsberekening en voorraadberekening. De begrotingsonderdelen worden bijgewerkt.
+Bij het uitpakken van bestanden worden twee bewerkingen gestart: budgetberekening en voorraadberekening. De begrotingsonderdelen worden bijgewerkt.
 
 * De **[!UICONTROL Budget]** kunt u de budgetten voor de campagne beheren. Het totaal van de kostenposten wordt weergegeven in het **[!UICONTROL Calculates cost]** veld van het hoofdtabblad van de campagne en het programma waartoe deze behoort. De bedragen zijn ook terug te vinden in de campagnebegroting.
 
-   De echte kosten zullen uiteindelijk van informatie worden berekend die door de router wordt verstrekt. Alleen daadwerkelijk verzonden berichten worden gefactureerd.
+  De echte kosten zullen uiteindelijk van informatie worden berekend die door de router wordt verstrekt. Alleen daadwerkelijk verzonden berichten worden gefactureerd.
 
 * De voorraden worden gedefinieerd in de **[!UICONTROL Administration > Campaign management > Stocks]** knooppunt van de boomstructuur en kostenstructuren in de **[!UICONTROL Administration > Campaign management > Service providers]** knooppunt.
 
-   De voorraadlijnen zijn zichtbaar in de voorraadsectie. Als u de oorspronkelijke voorraad wilt definiëren, opent u een voorraadlijn. De voorraad wordt telkens verlaagd wanneer een levering plaatsvindt. U kunt een waarschuwingsniveau en meldingen definiëren.
+  De voorraadlijnen zijn zichtbaar in de voorraadsectie. Als u de oorspronkelijke voorraad wilt definiëren, opent u een voorraadlijn. De voorraad wordt telkens verlaagd wanneer een levering plaatsvindt. U kunt een waarschuwingsniveau en meldingen definiëren.
 
 >[!NOTE]
 >
->Voor meer informatie over kostenberekeningen en voorraadbeheer raadpleegt u [Leveranciers, voorraden en begrotingen](../../campaign/using/providers--stocks-and-budgets.md).
+>Zie voor meer informatie over kostenberekeningen en voorraadbeheer [Leveranciers, voorraden en begrotingen](../../campaign/using/providers--stocks-and-budgets.md).
 
 ## Gekoppelde documenten beheren {#managing-associated-documents}
 
-U kunt verschillende documenten aan een campagne koppelen: rapport, foto, webpagina, diagram, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enz.). Leer hoe u documenten kunt koppelen aan een campagne [in deze sectie](../../campaign/using/marketing-campaign-assets.md).
+U kunt verschillende documenten koppelen aan een campagne: rapport, foto, webpagina, diagram, enzovoort. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enz.). Leer hoe u documenten kunt koppelen aan een campagne [in deze sectie](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -131,7 +132,7 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 Documenten kunnen worden gekoppeld op campagneniveau (contextuele documenten) of op programmaniveau (algemene documenten).
 
-De **[!UICONTROL Documents]** bevat:
+De **[!UICONTROL Documents]** tab bevat:
 
 * De lijst met alle documenten die vereist zijn voor de inhoud (sjabloon, afbeeldingen, enz.) die door Adobe Campaign-operatoren met de juiste rechten lokaal kunnen worden gedownload,
 * Documenten die informatie voor de router bevatten, als om het even welk.
@@ -162,9 +163,9 @@ U kunt ze ook vanuit deze weergave bewerken en wijzigen.
 
 Een leveringsoverzicht geeft een gestructureerde reeks elementen aan (documenten, filialen/winkels, promotionele coupons, enz.) opgericht in het bedrijf en voor een bepaalde campagne.
 
-Deze elementen worden gegroepeerd in leveringsschema&#39;s, en een bepaald leveringsoverzicht zal met een levering worden geassocieerd; er wordt naar verwezen in het extractiebestand dat naar de **serviceprovider** om bij de levering te worden gevoegd. U kunt bijvoorbeeld een leveringsoverzicht maken dat verwijst naar een vertakking en de marketingbrochures die erin worden gebruikt.
+Deze elementen worden gegroepeerd in leveringsoverzichten, en een bepaald leveringsoverzicht zal met een levering worden geassocieerd; het zal in het extractiedossier worden van verwijzingen voorzien dat naar wordt verzonden **serviceprovider** om bij de levering te worden gevoegd. U kunt bijvoorbeeld een leveringsoverzicht maken dat verwijst naar een vertakking en de marketingbrochures die erin worden gebruikt.
 
-Voor een campagne, laten de leveringsoverzichten u externe elementen structureren die met de levering volgens bepaalde criteria moeten worden geassocieerd: verwante branche, aangeboden promotieaanbieding, uitnodiging voor een lokale evenement, enz.
+Voor een campagne, laten de leveringsoutlines u externe elementen structureren die met de levering volgens bepaalde criteria moeten worden geassocieerd: verwante tak, promotieaanbieding die, uitnodiging aan een lokale gebeurtenis, enz. wordt verleend.
 
 #### Een omtrek maken {#creating-an-outline}
 
@@ -190,19 +191,19 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 * Items kunnen bijvoorbeeld fysieke documenten zijn waarnaar hier wordt verwezen en die hier worden beschreven en die aan de levering worden gekoppeld.
 * Met velden voor personalisatie kunt u personalisatie-elementen maken die te maken hebben met leveringen in plaats van met ontvangers. Het is dus mogelijk waarden te creëren die in leveringen voor een specifiek doel moeten worden gebruikt (welkomstaanbod, korting, enz.) Ze zijn gemaakt in Adobe Campaign en geïmporteerd in de omtrek via de **[!UICONTROL Import personalization fields...]** koppeling.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Ze kunnen ook rechtstreeks in de omtrek worden gemaakt door op de knop **[!UICONTROL Add]** rechts van de lijstzone.
+  Ze kunnen ook rechtstreeks in de omtrek worden gemaakt door op de knop **[!UICONTROL Add]** rechts van de lijstzone.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * De middelen zijn marketing middelen die in het marketing middeldashboard worden geproduceerd dat via **[!UICONTROL Resources]** koppeling van de **[!UICONTROL Campaigns]** tab.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Voor meer informatie over marketingbronnen raadpleegt u [Marketing-bronnen beheren](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Voor meer informatie over marketingbronnen raadpleegt u [Marketing-bronnen beheren](../../mrm/using/managing-marketing-resources.md).
 
 #### Een omtrek selecteren {#selecting-an-outline}
 
@@ -218,7 +219,7 @@ De **[!UICONTROL Summary]** tabblad van de levering geeft ook deze informatie we
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
-#### Extractieresultaat {#extraction-result}
+#### Extractie-resultaat {#extraction-result}
 
 In het dossier dat wordt uitgepakt en aan de dienstverlener wordt toegezonden, de naam van de omtrek en, in voorkomend geval, de kenmerken ervan (kosten, beschrijving enz.) worden toegevoegd aan de inhoud volgens de informatie in het uitvoermalplaatje verbonden aan de dienstverlener.
 

@@ -2,13 +2,14 @@
 product: campaign
 title: Schema-verwijzing in Adobe Campaign Classic
 description: Leer hoe te om uitbreidingsschema's te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign Classic uit te breiden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 7%
+source-wordcount: '388'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 7%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Campaign Classic-gegevensmodel](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Gegevensmodel Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
 
 De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica specifiek voor Adobe Campaign, genoemd een **schema**.
 
@@ -71,9 +72,9 @@ De **`<element>`** -tags definiëren de namen van entiteitselementen. **`<attrib
 
 Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
-Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. De **cus** namespace wordt gebruikt voor klant-specifieke configuratie (**klanten**).
+Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld de **cus** namespace wordt gebruikt voor klant-specifieke configuratie (**klanten**).
 
-De identificatiesleutel van een schema is een tekenreeks die is opgebouwd met behulp van de naamruimte en de naam gescheiden door een dubbele punt. bijvoorbeeld: **focus:ontvanger**.
+De identificatiesleutel van een schema is een tekenreeks die is samengesteld met behulp van de naamruimte en de naam gescheiden door een dubbele punt, bijvoorbeeld: **focus:ontvanger**.
 
 >[!IMPORTANT]
 >

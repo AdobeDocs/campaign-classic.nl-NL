@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: Beschrijving van Adobe Campaign Classic-gegevensmodel
-description: In dit document wordt het Adobe Campaign-gegevensmodel beschreven
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Dit document beschrijft het Adobe Campaign-gegevensmodel
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Data Model
+role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2381'
 ht-degree: 1%
 
 ---
@@ -29,7 +30,7 @@ Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** selecteert u een b
 
 Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld.
 
-Het volgende diagram toont de verbindingen tussen de belangrijkste bedrijfslijsten van het de gegevensmodel van Adobe Campaign met de belangrijkste gebieden voor elk.
+Het volgende diagram toont de verbindingen tussen de belangrijkste bedrijfstabellen van het de gegevensmodel van Adobe Campaign met de belangrijkste gebieden voor elk.
 
 <!--![](assets/data-model_diagram.png)-->
 
@@ -41,10 +42,10 @@ Het vooraf gedefinieerde Adobe Campaign-gegevensmodel bevat de onderstaande hoof
 
 Deze tabel komt overeen met de **nms:ontvanger** schema.
 
-Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van leveringen**. Bijgevolg bevat het de informatie die nodig is voor leveringen via de verschillende kanalen:
+Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van de leveringen**. Bijgevolg bevat het de informatie die nodig is voor leveringen via de verschillende kanalen:
 
 * sEmail: e-mailadres.
-* iEmailFormat: voorkeursindeling voor e-mails (1 voor tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
+* iEmailFormat: voorkeursindeling voor e-mails (1 voor Tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity wordt gebruikt om het postadres te bouwen (in overeenstemming met de norm XPZ 10-011 AFNOR van Mei 1997).
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
 * iBlackList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, anders 0).
@@ -59,7 +60,7 @@ Voor meer informatie over de tabel Ontvanger raadpleegt u [deze sectie](../../co
 
 Deze tabel komt overeen met de **nms:groep** schema.
 
-Hiermee kunt u **statistische groepen ontvangers**. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Zie voor meer informatie [XtkFolder](#XtkFolder)).
+Hiermee kunt u **statistische groepen van ontvangers**. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Zie voor meer informatie [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -97,9 +98,9 @@ Er is een unieke index op het gebied die de interne naam van de levering sIntern
 
 ### XtkFolder {#XtkFolder}
 
-Bevat **alle mappen in de structuur** zichtbaar in het **Navigatie** tabblad van de console.
+Bevat **alle mappen in de structuur** zichtbaar zijn in de **Navigatie** tabblad van de console.
 
-De mappen worden getypt: De waarde van het veld sModel geeft het type gegevens aan dat in de map kan worden opgenomen. Met dit veld kan de clientconsole de gegevens ook correct weergeven met de bijbehorende formulieren. De mogelijke waarden voor dit veld worden gedefinieerd in de navTree.
+De mappen worden getypt: de waarde van het veld sModel geeft het type gegevens aan dat in de map kan worden opgenomen. Met dit veld kan de clientconsole de gegevens ook correct weergeven met de bijbehorende formulieren. De mogelijke waarden voor dit veld worden gedefinieerd in de navTree.
 
 De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFullName geeft het volledige pad van de map in de structuur. Tot slot is er een unieke index op het gebied die de interne naam van de sName omslag vertegenwoordigt.
 
@@ -129,7 +130,7 @@ Deze set tabellen is gekoppeld aan de **Marketingscampagnes** -module, waarmee c
 
 ## Communicatieconsistentie {#communication-consistency}
 
-Deze set tabellen is gekoppeld aan de **Campagne optimaliseren** -module, waarmee de verzending van leveringen kan worden gecontroleerd, gefilterd en gecontroleerd. Zie voor meer informatie [Informatie over campagetypologieën](../../campaign-opt/using/about-campaign-typologies.md).
+Deze set tabellen is gekoppeld aan de **Campagne optimaliseren** -module, die het mogelijk maakt de verzending van leveringen te controleren, te filteren en te controleren. Zie voor meer informatie [Informatie over campagetypepologieën](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -159,7 +160,7 @@ De uitvoeringscontext vult de tabellen en velden die in aanmerking moeten worden
 * Het vraagschema, dat u toelaat om de beginlijst van de hypothesevoorwaarden te bepalen.
 * De verbindingen met individuen, die u toelaten om het individu te identificeren dat op het het vragen schema wordt gebaseerd.
 * De transactiedatum. Dit veld is niet verplicht, maar u wordt aangeraden het te gebruiken om de omtrek van de berekening te beperken.
-* Het transactiebedrag: het is een facultatief veld voor de automatische berekening van inkomstenindicatoren .
+* Het transactiebedrag: het is een optioneel veld voor het automatisch berekenen van inkomstenindicatoren.
 
 **Hypothese-omtrek (informatie opgeslagen in XML)**
 
@@ -174,13 +175,13 @@ Het hypotheseoverbelastingsscript is een JavaScript-code waarmee u de inhoud van
 De volgende indicatoren worden automatisch bijgewerkt tijdens de uitvoering van de hypothese:
 
 * Aantal reacties: **iTransaction**. Aantal lijnen in de lijst van reactielogboeken.
-* Aantal gecontacteerde personen: **iContactRehandelde**. Afzonderlijk aantal gerichte contacten in de hypothese.
+* Aantal gecontacteerde personen: **iContactRehandelde**. Het aantal gerichte contacten in de hypothese.
 * Aantal controlegroepen: **iProofReactie**. Afzonderlijk aantal gerichte contacten tussen controlegroepen in de hypothese.
 * Behandelde responspercentage: **dContactRehandelingsnelheid**. Responspercentage van de gerichte contacten in de hypothese.
 * Responspercentage van de controlegroep: **dProofRehandelingsnelheid**. Responspercentage van de hypothesecontrolegroep.
 * Totale gecontacteerde inkomsten van de bevolking: **dContactRehandeldeTotalAmount**. Totale inkomsten van de gerichte contacten in de hypothese.
 * Gemiddelde inkomsten van de controlegroep: **dContactRehandeldeAvgAmount**. Gemiddelde inkomsten van de doelgroep contacten in de hypothese.
-* Totale ontvangsten van de controlegroep: **dProofReactieTotalAmount**. Totale inkomsten van de groep hypothesecontrole.
+* Totale ontvangsten van de controlegroep: **dProofRehandeldeTotalAmount**. Totale inkomsten van de groep hypothesecontrole.
 * Gemiddelde inkomsten van de controlegroep: **dProofReactieAvgAmount**. Gemiddelde inkomsten van de hypothesecontrolegroep.
 * Totale marge per contactpersoon: **dContactRehandeldeTotalMargin**. Totale marge per contact als bedoeld in de hypothese.
 * Gemiddelde marge per contact: **dContactRehandeldeAvgMargin**. Gemiddelde marge per contact als bedoeld in de hypothese.
@@ -201,7 +202,7 @@ Het bevat een overzicht van de reactie van een individu op een bepaalde hypothes
 
 ## Simulatie en levering {#simulation-and-delivery}
 
-Deze set tabellen is gekoppeld aan de **Simulatie** , waarmee u de distributie van aanbiedingen die tot een categorie of omgeving behoren, kunt testen voordat u uw voorstel naar ontvangers verzendt. Zie voor meer informatie [Informatie over simulatie van aanbiedingen](../../interaction/using/about-offers-simulation.md).
+Deze set tabellen is gekoppeld aan de **Simulatie** -module, waarmee u de distributie van aanbiedingen die tot een categorie of omgeving behoren, kunt testen voordat u uw voorstel naar ontvangers verzendt. Zie voor meer informatie [Informatie over simulatie van aanbiedingen](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
@@ -216,8 +217,8 @@ Deze set tabellen is gekoppeld aan de **Interactie** -module, die het mogelijk m
 * **NmsOffer**: Deze tabel komt overeen met de **nms:aanbieding** schema. Het bevat de definitie van elk marketingaanbod.
 * **NmsPropositionRcp**: Deze tabel komt overeen met de **nms:propositionRcp** schema. Het bevat het kanaallogboek van marketingvoorstellen die naar elk individu worden verzonden. De record wordt gemaakt wanneer een voorstel wordt voorbereid of daadwerkelijk aan een individu wordt gedaan.
 * **NmsOfferSpace**: Deze tabel komt overeen met de **nms:offerSpace** schema. Het bevat de definitie van locaties waarop voorstellen worden gedaan.
-* **NmsOfferContext**: Deze tabel komt overeen met de **nms:aanbiedingContext** schema. Het bevat aanvullende criteria betreffende de toepasselijkheid van het voorstel en de definitie van de formule voor gewichtsberekening.
-* **NmsOfferView**: Deze tabel komt overeen met de **nms:offerView**. Het bevat de aanbiedingsverklaringen.
+* **NmsOfferContext**: Deze tabel komt overeen met de **nms:aanbiedingContext** schema. Het bevat aanvullende criteria betreffende de toepasselijkheid van het voorstel en de definitie van de formule voor de berekening van het gewicht.
+* **NmsOfferView**: Deze tabel komt overeen met de **nms:offerView**. Het bevat de aanbiedingsvoorstellingen.
 * **NmsOfferCategory**: Deze tabel komt overeen met de **nms:aanbiedingenCategorie**. Het bevat de aanbiedingrubrieken.
 * **NmsOfferEnv**: Deze tabel komt overeen met de **nms:aanbiedingEnv**. Het bevat de aanbiedingsomgevingen.
 
@@ -260,12 +261,12 @@ Deze set tabellen is gekoppeld aan de **Mobiel App-kanaal**, waarmee gepersonali
 
 ## Module voor sociale marketing {#social-marketing-module}
 
-Deze set tabellen is gekoppeld aan de **Sociale netwerken beheren** -module, waarmee u via Facebook en Twitter met klanten en vooruitzichten kunt communiceren. Zie voor meer informatie [Sociale marketing](../../social/using/about-social-marketing.md).
+Deze set tabellen is gekoppeld aan de **Sociale netwerken beheren** -module, waarmee u via Facebook en Twitter kunt communiceren met klanten en vooruitzichten. Zie voor meer informatie [Sociale marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Deze tabel komt overeen met de **nms:bezoeker** schema. Het bevat informatie over bezoekers.
 * **NmsVisitorSub**: Deze tabel komt overeen met de **nms:bezoekerSub** schema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (Twitter of Facebook).
 * **NmsFriendShipRel**: Deze tabel komt overeen met de **nms:vriendshipRel** schema. Met deze service kunt u bezoekers in het kader van de Facebook-service koppelen aan hun vrienden.
-* **NmsVisitorInterestRel**: Deze tabel komt overeen met de **nms:bezoekerInterestRel** schema. U kunt bezoekers en hun belangen met elkaar verbinden.
+* **NmsVisitorInterestRel**: Deze tabel komt overeen met de **nms:bezoekerInterestRel** schema. Het stelt u in staat bezoekers en hun belangen met elkaar te verbinden.
 * **NmsInterest**: Deze tabel komt overeen met de **nms:interesse** schema. Het bevat de lijst met belangen voor elke bezoeker.

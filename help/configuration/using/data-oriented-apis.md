@@ -2,13 +2,14 @@
 product: campaign
 title: Gegevensgerichte API’s
 description: Gegevensgerichte API’s
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 0%
+source-wordcount: '1864'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +19,9 @@ Met gegevensgeoriënteerde API&#39;s kunt u het volledige datamodel beheren.
 
 ## Overzicht van het datamodel {#overview-of-the-datamodel}
 
-Adobe Campaign biedt geen specifieke lees-API per entiteit (geen getRecipient- of getDelivery-functie, enz.). Met de methoden QUERY &amp; WRITER voor het lezen en wijzigen van gegevens hebt u toegang tot de gegevens van het model.
+Adobe Campaign biedt geen specifieke lees-API per entiteit (geen functie getRecipient of getDelivery, enz.). Met de methoden QUERY &amp; WRITER-gegevens lezen en wijzigen hebt u toegang tot de gegevens van het model.
 
-Met Adobe Campaign kunt u verzamelingen beheren: de vragen laten u toe om een reeks informatie terug te krijgen die door de basis wordt verzameld. In tegenstelling tot toegang in SQL-modus, retourneren Adobe Campaign API&#39;s een XML-structuur in plaats van gegevenskolommen. Adobe Campaign maakt dus samengestelde documenten met alle verzamelde gegevens.
+Met Adobe Campaign kunt u verzamelingen beheren: met query&#39;s kunt u een set gegevens herstellen die in de gehele basis zijn verzameld. In tegenstelling tot toegang in SQL-modus, retourneren Adobe Campaign API&#39;s een XML-structuur in plaats van gegevenskolommen. Adobe Campaign maakt dus samengestelde documenten met alle verzamelde gegevens.
 
 Deze werkende wijze biedt geen één-op-één afbeelding tussen de attributen en de elementen van de documenten van XML en de kolommen van de lijsten in het gegevensbestand aan.
 
@@ -30,7 +31,7 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Voor een presentatie van het gegevensmodel raadpleegt u de [Beschrijving van Adobe Campaign-gegevensmodel](../../configuration/using/data-model-description.md).
+Voor een presentatie van het gegevensmodel raadpleegt u de [Beschrijving gegevensmodel Adobe Campaign](../../configuration/using/data-model-description.md).
 
 ## Query en schrijver {#query-and-writer}
 
@@ -52,7 +53,7 @@ De **ExecuteQuery** methode wordt weergegeven in [ExecuteQuery (xtk:queryDef)](#
 
 Met schrijfopdrachten kunt u eenvoudige of complexe documenten schrijven met items in een of meer tabellen van de basis.
 
-Met de Transactionele API&#39;s kunt u aansluitingen beheren via de **updateOrInsert** opdracht: Met één opdracht kunt u gegevens maken of bijwerken. U kunt ook samenvoeging van wijzigingen configureren (**samenvoegen**): in deze modus kunt u gedeeltelijke updates toestaan.
+Met de Transactionele API&#39;s kunt u aansluitingen beheren via de **updateOrInsert** opdracht: met één opdracht kunt u gegevens maken of bijwerken. U kunt ook samenvoeging van wijzigingen configureren (**samenvoegen**): in deze modus kunt u gedeeltelijke updates toestaan.
 
 De structuur van XML biedt een logische mening van de gegevens aan en laat u de fysieke structuur van de SQL lijst negeren.
 
@@ -132,14 +133,14 @@ Een query moet verwijzen naar een beginschema in het menu **schema** kenmerk.
 
 Het gewenste type bewerking wordt ingevoerd in het dialoogvenster **bewerking** en bevat een van de volgende waarden:
 
-* **get**: Hiermee wordt een record uit de tabel opgehaald en wordt een fout geretourneerd als de gegevens niet bestaan,
-* **getIfExists**: Hiermee wordt een record uit de tabel opgehaald en wordt een leeg document geretourneerd als de gegevens niet bestaan,
+* **get**: haalt een record uit de tabel op en retourneert een fout als de gegevens niet bestaan,
+* **getIfExists**: haalt een record uit de tabel op en retourneert een leeg document als de gegevens niet bestaan,
 * **selecteren**: maakt een cursor die meerdere records retourneert en een leeg document retourneert als er geen gegevens zijn,
 * **aantal**: retourneert een gegevenstelling.
 
 De **XPath** wordt syntaxis gebruikt om gegevens te vinden die op het inputschema worden gebaseerd. Raadpleeg voor meer informatie over XPails [Gegevensschema&#39;s](../../configuration/using/data-schemas.md).
 
-#### Voorbeeld met de bewerking &#39;get&#39; {#example-with-the--get--operation}
+#### Voorbeeld met de bewerking get {#example-with-the--get--operation}
 
 Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-schema) op met een filter in de e-mail.
 
@@ -260,26 +261,26 @@ Hier volgen twee voorbeelden van haakjes op dezelfde voorwaarde.
 
 * De eenvoudige versie in één expressie:
 
-   ```
-   <where>
-     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
+  </where>
+  ```
 
 * De gestructureerde versie met `<condition>` elementen:
 
-   ```
-   <where>
-     <condition bool-operator="AND">
-       <condition expr="@age > 15" bool-operator="OR"/>
-       <condition expr="@age <= 45"/>
-     </condition>
-     <condition>
-       <condition expr="@city = 'Newton'" bool-operator="OR"/>
-       <condition expr="@city = 'Culver City'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition bool-operator="AND">
+      <condition expr="@age > 15" bool-operator="OR"/>
+      <condition expr="@age <= 45"/>
+    </condition>
+    <condition>
+      <condition expr="@city = 'Newton'" bool-operator="OR"/>
+      <condition expr="@city = 'Culver City'"/>
+    </condition>
+  </where>
+  ```
 
 Het is mogelijk de operator &#39;OR&#39; te vervangen door de operator &#39;IN&#39; wanneer er verschillende voorwaarden gelden voor hetzelfde veld:
 
@@ -298,72 +299,72 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
 
 * Koppelingen 1-1 of N1: als de tabel de externe sleutel heeft (de koppeling begint in de tabel), kunnen de velden van de gekoppelde tabel worden gefilterd of rechtstreeks worden opgehaald.
 
-   Voorbeeld van een filter op het maplabel:
+  Voorbeeld van een filter op het maplabel:
 
-   ```
-   <where>
-     <condition expr="[folder/@label] like 'Segment%'"/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="[folder/@label] like 'Segment%'"/>
+  </where>
+  ```
 
-   U kunt als volgt de velden van de map ophalen uit het schema &quot;nms:ontvanger&quot;:
+  U kunt als volgt de velden van de map ophalen uit het schema &quot;nms:ontvanger&quot;:
 
-   ```
-   <select>
-     <!-- label of recipient folder -->
-     <node expr="[folder/@label]"/>
-     <!-- displays the string count of the folder -->
-     <node expr="partition"/>
-   </select>
-   ```
+  ```
+  <select>
+    <!-- label of recipient folder -->
+    <node expr="[folder/@label]"/>
+    <!-- displays the string count of the folder -->
+    <node expr="partition"/>
+  </select>
+  ```
 
-* Verzamelingskoppelingen (1N): het filtreren op de gebieden van een inzamelingstabel moet via worden uitgevoerd **BESTAAT** of **BESTAAT NIET** operator.
+* De verbindingen van de inzameling (1N): het filtreren op de gebieden van een inzamelingstabel moet via worden uitgevoerd **BESTAAT** of **BESTAAT NIET** operator.
 
-   Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
+  Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 
-   ```
-   <where>
-     <condition expr="subscription" setOperator="EXISTS">
-       <condition expr="@name = 'Newsletter'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="subscription" setOperator="EXISTS">
+      <condition expr="@name = 'Newsletter'"/>
+    </condition>
+  </where>
+  ```
 
-   Directe herwinning van de gebieden van een inzamelingsverbinding van `<select>` clausule wordt niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (voorbeeld `<node expr="">`).
+  Directe herwinning van de gebieden van een inzamelingsverbinding van `<select>` clausule wordt niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (voorbeeld `<node expr="">`).
 
-   Voorbeeld op de verzamelingskoppeling &quot;Abonnement&quot;:
+  Voorbeeld op de verzamelingskoppeling &quot;Abonnement&quot;:
 
-   ```
-   <select>
-     <node expr="subscription/@label"/>
-   </select>
-   ```
+  ```
+  <select>
+    <node expr="subscription/@label"/>
+  </select>
+  ```
 
-   Het is mogelijk om een sublijst op te halen die de elementen van een inzamelingsverbinding in bevat `<select>` clausule. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
+  Het is mogelijk om een sublijst op te halen die de elementen van een inzamelingsverbinding in bevat `<select>` clausule. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
 
-   Filteren ( `<orderby>`  ) en beperking (  `<where>`  )-elementen kunnen worden toegevoegd aan het verzamelingselement.
+  Het filteren ( `<orderby>`  ) en beperking (  `<where>`  ) kunnen worden toegevoegd aan het verzamelingselement.
 
-   In dit voorbeeld retourneert de query voor elke ontvanger de e-mail en de lijst met informatiediensten waarop de ontvanger zich abonneert:
+  In dit voorbeeld retourneert de query voor elke ontvanger de e-mail en de lijst met informatiediensten waarop de ontvanger zich abonneert:
 
-   ```
-   <queryDef schema="nms:recipient" operation="select">
-     <select>
-       <node expr="@email"/>
-   
-       <!-- collection table (unbound type) -->
-       <node expr="subscription">  
-         <node expr="[service/@label]"/>    
-         <!-- sub-condition on the collection table -->
-         <where>  
-           <condition expr="@expirationDate >= GetDate()"/>
-         </where>
-         <orderBy>
-           <node expr="@expirationDate"/> 
-         </orderBy>
-       </node>
-     </select> 
-   </queryDef>
-   ```
+  ```
+  <queryDef schema="nms:recipient" operation="select">
+    <select>
+      <node expr="@email"/>
+  
+      <!-- collection table (unbound type) -->
+      <node expr="subscription">  
+        <node expr="[service/@label]"/>    
+        <!-- sub-condition on the collection table -->
+        <where>  
+          <condition expr="@expirationDate >= GetDate()"/>
+        </where>
+        <orderBy>
+          <node expr="@expirationDate"/> 
+        </orderBy>
+      </node>
+    </select> 
+  </queryDef>
+  ```
 
 #### De parameters van de component &#39;where&#39; en &#39;select&#39; binden {#binding-the-parameters-of-the--where--and--select--clause}
 
@@ -461,43 +462,43 @@ In plaats van:
 
 * Query:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
-             <select>
-               <node expr="@email"/>
-               <node expr="@lastName"/>
-               <node expr="@firstName"/>
-             </select>
-             <where>
-               <condition expr="@id = 3599"/>
-             </where>
-           </queryDef>
-         </entity>
-       </ExecuteQuery>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
+            <select>
+              <node expr="@email"/>
+              <node expr="@lastName"/>
+              <node expr="@firstName"/>
+            </select>
+            <where>
+              <condition expr="@id = 3599"/>
+            </where>
+          </queryDef>
+        </entity>
+      </ExecuteQuery>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Reactie:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
-         </pdomOutput>
-       </ExecuteQueryResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
+        </pdomOutput>
+      </ExecuteQueryResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 ## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
@@ -534,15 +535,15 @@ De afstemming van gegevens werkt op basis van de definitie van de sleutels die z
 
 De sleutel van het schema van de te bijwerken entiteit wordt voltooid op basis van het **xtkschema** kenmerk.
 
-De verzoeningssleutel kan dus worden afgedwongen met de **_key** kenmerk met de lijst met XPath-elementen waaruit de sleutel bestaat (gescheiden door komma&#39;s).
+De verzoeningssleutel kan dus worden afgedwongen met de **_key** kenmerk met de lijst met XPails die de sleutel vormen (gescheiden door komma&#39;s).
 
 Het is mogelijk het type activiteit af te dwingen door de **_operation** kenmerk met de volgende waarden:
 
-* **insert**: de opname van de record forceert (de verzoeningssleutel wordt niet gebruikt);
-* **insertOrUpdate**: werkt de record bij of voegt deze in, afhankelijk van de reconciliatietoets (standaardmodus);
-* **update**: het register bijwerkt; niets doet als de gegevens niet bestaan,
-* **delete**: de records verwijdert;
-* **none**: alleen gebruikt voor het afstemmen van koppelingen, zonder update of invoeging.
+* **insert**: forceert de opname van de record (de verzoeningssleutel wordt niet gebruikt),
+* **insertOrUpdate**: werkt de record bij of voegt deze in, afhankelijk van de afstemmingssleutel (standaardmodus);
+* **update**: werkt de record bij; doet niets als de gegevens niet bestaan,
+* **delete**: verwijdert de records,
+* **none**: wordt alleen gebruikt voor het afstemmen van koppelingen, zonder update of invoeging.
 
 ### Voorbeeld met de methode &#39;Write&#39; {#example-with-the--write--method}
 
@@ -630,43 +631,43 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
 
 * Query:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
-         </domDoc>
-       </Write>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
+        </domDoc>
+      </Write>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Reactie:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-       </WriteResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+      </WriteResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
-   Retourneren met fout:
+  Retourneren met fout:
 
-   ```
-   <?xml version='1.0'?>
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <SOAP-ENV:Fault>
-         <faultcode>SOAP-ENV:Server</faultcode>
-         <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
-         <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
-       </SOAP-ENV:Fault>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <SOAP-ENV:Fault>
+        <faultcode>SOAP-ENV:Server</faultcode>
+        <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
+        <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
+      </SOAP-ENV:Fault>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```

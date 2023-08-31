@@ -2,30 +2,29 @@
 product: campaign
 title: Interactieve inhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren met AMP in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
+role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: ae7aa6989314677a839795e8caa8ba0f95009e09
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1511'
 ht-degree: 4%
 
 ---
 
 # Interactieve content definiëren{#defining-interactive-content}
 
-
-
 Met Adobe Campaign kunt u de interactieve [AMP voor e-mail](https://amp.dev/about/email/) -indeling, waarmee onder bepaalde omstandigheden dynamische e-mailberichten kunnen worden verzonden.
 
 Met AMP voor e-mail kunt u:
 * Test het leveren van AMP-e-mails naar specifieke adressen die correct zijn geconfigureerd.
-* E-mails met AMP naar Gmail- of Mail.ru-adressen verzenden nadat u zich hebt geregistreerd bij de betreffende providers.
+* Verzend AMP-e-mails naar Gmail- of Mail.ru-adressen nadat u zich hebt geregistreerd bij de betreffende providers.
 
 Ga voor meer informatie over het testen en verzenden van AMP-e-mails naar [deze sectie](#targeting-amp-email).
 
-Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Afhankelijk van uw machtigingen en uw implementatiemodel kunt u dit pakket installeren of contact opnemen met Adobe om het voor u te installeren.
+Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Afhankelijk van uw machtigingen en uw implementatiemodel kunt u dit pakket installeren of de Adobe bereiken om het voor u te installeren.
 
 >[!NOTE]
 >
@@ -73,7 +72,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    >[!NOTE]
    >
-   >Een specifieke AMP-sjabloon bevat een voorbeeld van de belangrijkste capaciteiten die u kunt gebruiken: productaanbieding, carrousel, dubbele opt-in, onderzoek, en geavanceerde serververzoek.
+   >Een specifieke AMP-sjabloon bevat een voorbeeld van de belangrijkste mogelijkheden die u kunt gebruiken: productvermelding, carrousel, dubbele aanmelding, enquête en geavanceerde serveraanvraag.
 
 1. Klik op de knop **[!UICONTROL AMP content]** tab.
 
@@ -123,7 +122,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
 1. Ga terug naar Adobe Campaign en kopieer uw gevalideerde inhoud naar de **[!UICONTROL AMP content]** tab.
 
-1. Naar de **[!UICONTROL HTML content]** of **[!UICONTROL Text content]** en definieert inhoud voor ten minste een van deze twee indelingen.
+1. Schakel over naar de **[!UICONTROL HTML content]** of **[!UICONTROL Text content]** en definieert inhoud voor ten minste een van deze twee indelingen.
 
    >[!IMPORTANT]
    >
@@ -170,7 +169,7 @@ Voor meer informatie raadpleegt u de [Gmail](https://developers.google.com/gmail
 
 ![](assets/amp_from_field.png)
 
-Volg de stappen van het dialoogvenster [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/#howto) (**Als u een gebruiker bent** ).
+Als u wilt testen of een AMP-e-mailadres naar een Mail.ru-adres wordt verzonden, voert u de stappen uit de [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/#howto) (**Als u een gebruiker bent** ).
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 

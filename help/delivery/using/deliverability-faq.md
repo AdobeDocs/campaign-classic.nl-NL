@@ -2,11 +2,12 @@
 product: campaign
 title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
 description: Belangrijke punten die u kunt controleren bij het beheren van de prestaties in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # Probleemoplossing voor levering{#deliverability-faq}
-
-
 
 Ondervindt u een probleem met de leesbaarheid? U kunt hier de oplossing vinden.
 
@@ -25,7 +24,7 @@ Ondervindt u een probleem met de leesbaarheid? U kunt hier de oplossing vinden.
 
 Dit bericht geeft aan dat u de quota voor een specifieke MX hebt bereikt en dat u moet wachten om nog een e-mail naar deze provider te kunnen verzenden.
 
-In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan worden verzonden. Deze configuratie moet met waakzaamheid worden gebruikt, aangezien het aantal in het geval wordt bepaald het aantal verbindingen die met ISP worden uitgevoerd en niet het aantal werkelijk verzonden e-mails betreft.
+In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan worden verzonden. Deze configuratie moet met waakzaamheid worden gebruikt, aangezien het aantal in het geval wordt bepaald het aantal verbindingen die met ISP worden uitgevoerd en niet het aantal daadwerkelijk verzonden e-mails betreft.
 
 Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail is verzonden. In dit geval, zal een configuratie met IP of een domein met een lage reputatie verscheidene verbindingen moeten proberen alvorens een e-mail te verzenden. Voor elke poging, zal een berichten per uurkrediet worden gebruikt. Als gevolg hiervan zullen de prestaties van de marketingcampagne aanzienlijk worden beïnvloed.
 
@@ -42,7 +41,7 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen te detecteren (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
-Als het probleem zich blijft voordoen, neemt u contact op met de commerciële of de te leveren services. [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Als het probleem zich blijft voordoen, neemt u contact op met de commerciële of de te leveren services. [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Lijst van gewezen personen versus quarantaine {#denylist-versus-quarantine}
 

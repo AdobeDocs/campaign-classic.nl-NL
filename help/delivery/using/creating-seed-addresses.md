@@ -2,20 +2,19 @@
 product: campaign
 title: Seedadressen maken
 description: Leer hoe u zaadadressen maakt en gebruikt
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
+role: User, Data Engineer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
 
 # Seedadressen maken{#creating-seed-addresses}
-
-
 
 Zaadadressen worden niet beheerd via standaardprofielen en -doelen, maar in een speciaal knooppunt van de Adobe Campaign-hiërarchie **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
@@ -28,7 +27,7 @@ Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd 
 Voer de volgende stappen uit om zaadadressen te maken:
 
 1. Klik op de knop **[!UICONTROL New]** knop boven de lijst met adressen.
-1. Voer in de overeenkomende velden de gegevens die zijn gekoppeld aan het adres in de **[!UICONTROL Recipient]** tab. De beschikbare velden komen overeen met de standaardvelden in de profielen van de ontvangers van de levering (nms:tabel van de ontvanger): naam, voornaam, e-mail, enz.
+1. Voer in de overeenkomende velden de gegevens die zijn gekoppeld aan het adres in de **[!UICONTROL Recipient]** tab. De beschikbare velden komen overeen met de standaardvelden in de profielen van de ontvangers (nms:tabel van de ontvanger): naam, voornaam, e-mail, enz.
 
    >[!NOTE]
    >
@@ -60,4 +59,4 @@ Als u een sjabloonmap wilt definiëren, past u het volgende proces toe:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Adressen die in deze map zijn opgeslagen, kunnen nu worden gebruikt als adressjablonen. U kunt ze importeren in leveringen of campagnes en ze aanpassen op basis van de specifieke behoeften van de betrokken leveringen en campagnes (zie [zaadadressen toevoegen](adding-seed-addresses.md)).
+   In deze map opgeslagen adressen kunnen nu worden gebruikt als adressjablonen. U kunt ze importeren in leveringen of campagnes en ze aanpassen op basis van de specifieke behoeften van de betrokken leveringen en campagnes (zie [zaadadressen toevoegen](adding-seed-addresses.md)).

@@ -3,12 +3,13 @@ product: campaign
 title: Schema’s filteren
 description: Schema’s filteren
 feature: Custom Resources
+role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -105,7 +106,7 @@ U kunt nog steeds de systeemfilters wijzigen van de out-of-the-box schema&#39;s 
 
 >[!NOTE]
 >
->Adobe raadt u echter aan de standaardparameters niet te wijzigen om optimale beveiliging te garanderen.
+>Nochtans, adviseert de Adobe u om de standaardparameters niet te wijzigen om optimale veiligheid te verzekeren.
 
 1. Maak een extensie voor het desbetreffende schema of open een bestaande extensie.
 1. Een onderliggend element toevoegen **`<sysfilter name="<filter name>" _operation="delete"/>`** in het hoofdelement om toepassing van het filter onder het zelfde in het oorsprongschema te schrappen.

@@ -2,13 +2,14 @@
 product: campaign
 title: Toegang tot marketingcampagnes
 description: Toegang tot marketingcampagnes
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 1%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +27,11 @@ Als u eenmaal verbinding hebt met Adobe Campaign, bladert u door de verschillend
 ![](assets/campaign_global_view.png)
 
 
-Campagne-elementen vindt u in het dialoogvenster **[!UICONTROL Campaigns]** tab: Hier ziet u een overzicht van de marketingprogramma&#39;s, campagnes en hun subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes worden de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes gevonden.
+Campagne-elementen vindt u in het dialoogvenster **[!UICONTROL Campaigns]** tab: hier ziet u een overzicht van de marketingprogramma&#39;s, campagnes en hun subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes worden de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes gevonden.
 
 De **[!UICONTROL Browsing]** van de **[!UICONTROL Campaigns]** biedt verschillende ingangen aan, afhankelijk van modules die op de instantie worden geïnstalleerd. U hebt bijvoorbeeld toegang tot:
 
-* **Campagnekalender**: kalender met plannen, marketingprogramma&#39;s, leveringen en campagnes. Zie [Campagnekalender](#campaign-calendar).
+* **Campagnekalender**: kalender van plannen, marketingprogramma&#39;s, leveringen en campagnes. Zie [Campagnekalender](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes in alle marketingprogramma&#39;s.
 * **Leveringen**: toegang tot de met de campagnes verband houdende leveringen.
 * **Webtoepassingen**: toegang tot webtoepassingen (formulieren, bestemmingspagina&#39;s, enz.).
@@ -49,7 +50,7 @@ Als u een abonnement, programma, campagne of levering wilt bewerken, klikt u op 
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-U kunt de informatie filteren die in de campagnemalender wordt weergegeven: klik op **[!UICONTROL Filter]** en selecteer de filtercriteria.
+U kunt de informatie filteren die in de campagnecalender wordt weergegeven: klik op de knop **[!UICONTROL Filter]** en selecteer de filtercriteria.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -59,7 +60,7 @@ U kunt de informatie filteren die in de campagnemalender wordt weergegeven: klik
 
 U kunt ook de opdracht **[!UICONTROL Search]** veld om de weergegeven items te filteren.
 
-Met de pictogrammen die aan elk item zijn gekoppeld, kunt u de status ervan bekijken: voltooid, bezig, bewerkt, enz.
+Met de pictogrammen die aan elk item zijn gekoppeld, kunt u de status van het item weergeven: voltooid, bezig, bewerkt, enzovoort.
 
 ### Bladeren in een marketingprogramma {#browsing-in-a-marketing-program}
 
@@ -71,17 +72,17 @@ Wanneer u een programma bewerkt, gebruikt u de onderstaande tabbladen om door he
 
 * De **Schema** wordt de agenda van de programma&#39;s weergegeven voor een maand, week of dag, afhankelijk van het tabblad waarop u in de kalenderkoptekst klikt.
 
-   Indien nodig, kunt u een campagne, een programma, of een taak door deze pagina tot stand brengen.
+  Indien nodig kunt u een campagne, programma of een taak maken via deze pagina.
 
-   ![](assets/s_ncs_user_interface_campaign02.png)
+  ![](assets/s_ncs_user_interface_campaign02.png)
 
-* De **Bewerken** kunt u het programma aanpassen: naam, begin- en einddatum, begroting, bijbehorende documenten, enz.
+* De **Bewerken** kunt u het programma aanpassen: naam, begin- en einddatum, budget, gekoppelde documenten, enz.
 
-   ![](assets/s_ncs_user_interface_campaign05.png)
+  ![](assets/s_ncs_user_interface_campaign05.png)
 
 #### Browsercampagnes {#browsing-campaigns}
 
-Campagnes zijn toegankelijk via de campagnemalender, de **[!UICONTROL Schedule]** of de lijst met campagnes.
+Campagnes zijn toegankelijk via de campagnemalender, de **[!UICONTROL Schedule]** van het programma of de lijst van campagnes.
 
 1. Selecteer via de campagnemalender de campagne die u wilt weergeven en klik op de knop **[!UICONTROL Open]** koppeling.
 
@@ -102,11 +103,11 @@ Campagnes zijn toegankelijk via de campagnemalender, de **[!UICONTROL Schedule]*
 
 Voor elke campagne worden taken, bronnen en leveringen gecentraliseerd in één scherm, het dashboard, waarmee u marketingacties kunt beheren in samenwerking met anderen.
 
-Het dashboard van een campagne wordt gebruikt als controleinterface. De belangrijkste fasen van het opzetten en het beheer van de campagne zijn rechtstreeks toegankelijk: leveringen, extractiebestanden, meldingen, budgetten, enz.
+Het dashboard van een campagne wordt gebruikt als controleinterface. De belangrijkste fasen van het maken en het beheer van de campagne worden rechtstreeks door het programma geopend: leveringen, extractiebestanden, meldingen, budgetten, enz.
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
-Met Adobe Campaign kunt u samenwerkingsprocessen instellen voor het maken en goedkeuren van de verschillende stadia van marketing- en communicatiecampagnes: goedkeuring van de begroting, het doel, de inhoud, enz.
+Met Adobe Campaign kunt u samenwerkingsprocessen opzetten voor het opzetten en goedkeuren van de verschillende stadia van marketing- en communicatiecampagnes: goedkeuring van de begroting, het doel, de inhoud, enz.
 
 ![](assets/s_ncs_user_op_board_validate.png)
 
@@ -116,7 +117,7 @@ Met Adobe Campaign kunt u samenwerkingsprocessen instellen voor het maken en goe
 
 #### Schema {#schedule}
 
-Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het programma een globaal overzicht van alle componenten: u kunt de taken en leveringen weergeven en deze gemakkelijk openen.
+Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het programma een globale mening van alle componenten aan: u kunt de taken en de leveringen tonen, en tot hen gemakkelijk toegang hebben.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -140,11 +141,11 @@ De **[!UICONTROL Reports]** via de koppeling hebt u toegang tot de campagnerappo
 
 Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen configureren waarvoor sommige opties zijn geselecteerd en andere instellingen al zijn opgeslagen. Voor elke campagne wordt de volgende functionaliteit aangeboden:
 
-* Verwijzing van [documenten en middelen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten aan de campagne associëren (kort, rapport, beelden, enz.). Alle documentindelingen worden ondersteund.
-* Vastlegkosten: voor elke campagne kunt u met Adobe Campaign definiëren [kostenposten en kostenberekeningsstructuren](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een extern agentschap, huur van ruimten.
-* Definitie van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
+* Verwijzing van [documenten en middelen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten aan de campagne koppelen (korte beschrijving, rapport, afbeeldingen, enz.). Alle documentindelingen worden ondersteund.
+* Kosten definiëren: voor elke campagne kunt u met Adobe Campaign definiëren [kostenposten en kostenberekeningsstructuren](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een externe instantie, huur van ruimte.
+* Vaststellen van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
 * Beheer [zaadadressen](../../delivery/using/about-seed-addresses.md) en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
-* Goedkeuringen beheren: u kunt kiezen welke behandelingen moeten worden goedgekeurd en, indien nodig, de revisieoperatoren of groepen operatoren selecteren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
+* Goedkeuringen beheren: u kunt de behandelingen selecteren die u wilt goedkeuren en, indien nodig, de revisieoperatoren of -groepen selecteren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >
@@ -163,7 +164,7 @@ Naast het navigeren over campagnes en het bekijken van hen, kunt u deze soorten 
 
 * De activiteit van de monitor op een geval
 * Deelnemen aan validatieprocessen, bijvoorbeeld een leveringsinhoud goedkeuren of afwijzen
-* Andere snelle handelingen uitvoeren, bijvoorbeeld een werkstroom onderbreken
+* Andere snelle handelingen uitvoeren, bijvoorbeeld een werkstroom pauzeren
 * Alle rapportfuncties openen
 * Deelnemen aan forumdiscussies
 
@@ -173,7 +174,7 @@ In deze tabel worden de acties samengevat die u kunt uitvoeren op campagnes vanu
 | --- | --- |
 | Lijst met campagnes, leveringen, aanbiedingen, enz. | Een lijstitem verwijderen |
 | Campaign | Een campagne annuleren |
-| Levering | Inhoud en doel van levering goedkeuren<br/>De leveringsinhoud verzenden<br/>Levering bevestigen<br/>Een levering onderbreken en stoppen |
+| Levering | De inhoud en het doel van de levering goedkeuren<br/>De leveringsinhoud verzenden<br/>Levering bevestigen<br/>Een levering onderbreken en stoppen |
 | Webtoepassing | Een webtoepassing maken<br/>De inhoud en eigenschappen van de toepassing bewerken<br/>De toepassingsinhoud opslaan als een sjabloon<br/>De toepassing publiceren |
 | Voorstel | Inhoud en geschiktheid van aanbieding goedkeuren<br/>Een online aanbieding uitschakelen |
 | Taak | Een taak voltooien<br/>Een taak annuleren |

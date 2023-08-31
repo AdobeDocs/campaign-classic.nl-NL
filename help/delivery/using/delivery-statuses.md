@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Leveringsstatussen
-description: Meer informatie over de statussen die beschikbaar zijn op het dashboard voor levering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Meer informatie over de statussen op het dashboard voor levering
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '644'
 ht-degree: 4%
 
 ---
@@ -53,7 +54,7 @@ Voor meer details over de verschillende leveringsmislukkingen kunt u ontmoeten, 
   </tr> 
   <tr> 
    <td> Mislukt<br /> </td> 
-   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="understanding-delivery-failures.md" target="_blank">Leveringsfouten begrijpen</a><br /> </td> 
+   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="understanding-delivery-failures.md" target="_blank">Uitvoerfouten</a><br /> </td> 
   </tr>
   <tr> 
    <td> In behandeling<br /> </td> 
@@ -69,7 +70,7 @@ Voor meer details over de verschillende leveringsmislukkingen kunt u ontmoeten, 
   </tr> 
   <tr> 
    <td> Door de dienstverlener in aanmerking genomen<br /> </td> 
-   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor gehoste of hybride installaties, als u hebt geüpgraded naar de <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
+   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
   </tr> 
   <tr> 
    <td> Ontvangen op mobiel<br /> </td> 
@@ -87,11 +88,11 @@ Voor meer details over de verschillende leveringsmislukkingen kunt u ontmoeten, 
  </tbody> 
 </table>
 
-Ga voor meer informatie over het optimaliseren van de leverbaarheid van Adobe Campaign-e-mails naar [deze sectie](about-deliverability.md). Raadpleeg voor een diepgaandere analyse van de leverbaarbaarheid de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Ga voor meer informatie over het optimaliseren van de leverbaarheid van Adobe Campaign-e-mails naar [deze sectie](about-deliverability.md). Raadpleeg voor een diepgaandere analyse van de leverbaarbaarheid de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Status in behandeling {#pending-status}
 
-Na bevestiging van uw levering, kunt u zien dat de status van uw levering is **[!UICONTROL Pending]**. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
+Na bevestiging van uw levering, kunt u zien dat de status van uw levering **[!UICONTROL Pending]**. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
 
 De **[!UICONTROL Pending]** de status kan eerst betekenen dat de levering gepland is en in behandeling is tot de opgegeven datum. Raadpleeg voor meer informatie de [Leveringsplanning](steps-sending-the-delivery.md#scheduling-the-delivery-sending) sectie.
 
@@ -99,11 +100,11 @@ Als de levering niet wordt verzonden en de status van de levering blijft **[!UIC
 
 * MTA (de Agent van de Overdracht van het Bericht), die modules en processen op de leveringsserver in werking stelt en die e-mail het verzenden beheert, kan niet zijn begonnen, of kan moeten opnieuw worden begonnen.
 
-   Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
+  Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
 
-   >[!NOTE]
-   >
-   >Deze bewerking kan worden uitgevoerd met een **op locatie** of **hybride** het ontvangen model met toegang tot de server van de Campagne (zie [hostmodellen](../../installation/using/hosting-models.md)).
+  >[!NOTE]
+  >
+  >Deze bewerking kan worden uitgevoerd met een **op locatie** of **hybride** hostmodel met toegang tot de campagneserver (zie [hostmodellen](../../installation/using/hosting-models.md)).
 
    1. Controleer of uw `mta@<instance>` modules worden gelanceerd op uw servers MTA.
 
@@ -127,13 +128,13 @@ Als de levering niet wordt verzonden en de status van de levering blijft **[!UIC
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd.
 
-   In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** veld voor koppeling van leveringen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten raadpleegt u [deze sectie](../../installation/using/configure-delivery-settings.md).
+  In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** veld voor koppeling van leveringen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten raadpleegt u [deze sectie](../../installation/using/configure-delivery-settings.md).
 
-* Als er te veel campagnes worden uitgevoerd, blijft de status &quot;In behandeling&quot; behouden.
+* Wanneer te veel campagnes lopen, blijft de leveringsstatus in &quot;Hangende&quot;status.
 
-   De limiet van gelijktijdige campagnes wordt bepaald in het gedeelte **[!UICONTROL NmsOperation_LimitConcurrency]** optie. De standaardwaarde is 10.
+  De limiet van gelijktijdige campagnes wordt bepaald in het gedeelte **[!UICONTROL NmsOperation_LimitConcurrency]** -optie. De standaardwaarde is 10.
 
-   Meer informatie over opties in [deze pagina](../../installation/using/configuring-campaign-options.md).
+  Meer informatie over opties in [deze pagina](../../installation/using/configuring-campaign-options.md).
 
 
 **Verwante onderwerpen:**

@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Aan de slag met bijhouden
-description: Meer informatie over de algemene richtlijnen voor tekstspatiëring in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Meer informatie over de algemene richtlijnen voor bijhouden in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Email
+role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '695'
 ht-degree: 9%
 
 ---
@@ -17,9 +18,9 @@ ht-degree: 9%
 
 
 
-Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bijhouden en het gedrag van de ontvangers controleren: openen, klikken op koppelingen, geen abonnement nemen, enz.
+Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bijhouden en het gedrag van ontvangers controleren: openen, klikken op koppelingen, Abonnement opzeggen, enzovoort.
 
-Deze informatie wordt opgehaald in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: de URL waarop is geklikt, de datum en tijd van de klik en het document waarin de URL is gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
+Deze informatie wordt opgehaald in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: URL klikte, de datum en de tijd van de klik, en het document waarin URL werd gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
 
 De **bezorgdashboard** is ook van essentieel belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie voor meer informatie [deze sectie](delivery-dashboard.md).
 
@@ -57,7 +58,7 @@ Traceringsopties kunnen worden geconfigureerd door bijgehouden URL&#39;s te acti
 
 **Aanpassing van koppelingen**
 
-Met de mogelijkheden voor het bijhouden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](tracking-personalized-links.md)
+Met de mogelijkheden voor het bijhouden van Campaigns Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](tracking-personalized-links.md)
 
 **Logboeken bijhouden**
 
@@ -111,12 +112,12 @@ De volgende tips voor het oplossen van problemen helpen u de meest voorkomende p
 
 * Controleren of het trackinglogproces wordt uitgevoerd
 
-   Dit proces leest van het gedeelde geheugen IIS/de Server van het Web en schrijft de redirection logboeken.
+  Dit proces leest van het gedeelde geheugen IIS/de Server van het Web en schrijft de redirection logboeken.
 
-   U kunt het van de Homepage tot toegang hebben door het lusje van de Controle in uw geval te selecteren. U kunt ook de volgende opdracht op de instantie uitvoeren: `<user>@<instance>:~$ nlserver pdump`
+  U kunt het van de Homepage tot toegang hebben door het lusje van de Controle in uw geval te selecteren. U kunt ook de volgende opdracht op de instantie uitvoeren: `<user>@<instance>:~$ nlserver pdump`
 
-   Als het trackinglogproces niet in de lijst wordt weergegeven, start u het proces met de volgende opdracht op het exemplaar: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Als het gevolgde logproces niet in de lijst verschijnt, lanceer het met het volgende bevel op de instantie: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Controleer of de technische workflow voor bijhouden de laatste tijd is uitgevoerd.
 
-   U vindt de technische workflow voor bijhouden in de mappen Beheer > Productie > Technische workflows.
+  U vindt de technische workflow voor bijhouden in de mappen Beheer > Productie > Technische workflows.

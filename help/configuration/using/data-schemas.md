@@ -2,13 +2,14 @@
 product: campaign
 title: Gegevensschema’s
 description: Aan de slag met schema's voor campagnegegevens
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 3%
 
 ---
 
@@ -40,9 +41,9 @@ In de voorvertoning wordt het uitgebreide schema automatisch gegenereerd:
 >
 >Wanneer het bronschema wordt opgeslagen, wordt het genereren van het uitgebreide schema automatisch gestart.
 
-Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.
+Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie geldt alleen voor gegenereerde schema&#39;s. Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.
 
-## Voorbeeld: het creëren van een contractlijst {#example--creating-a-contract-table}
+## Voorbeeld: een tabel met contracten maken {#example--creating-a-contract-table}
 
 In het volgende voorbeeld willen we een nieuwe tabel maken voor **contracten** in het databasemodel van de Adobe Campaign-database. In deze tabel kunt u voor elk contract de voor- en achternaam en het e-mailadres van de houder en de medehouder opslaan.
 

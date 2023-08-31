@@ -2,14 +2,15 @@
 product: campaign
 title: Seedadressen
 description: Seedadressen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: Data Engineer, Developer
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 6%
+source-wordcount: '334'
+ht-degree: 7%
 
 ---
 
@@ -79,10 +80,11 @@ Voer de volgende stappen uit:
    >    
    >    * Tijdens de extensie moet u een **SQL-naam (@sqlname)** voor het veld E-mail. De SQL-naam moet afwijken van de &#39;sEmail&#39;-naam die is gereserveerd voor het ontvangende schema.
    >    * U moet de databasestructuur bijwerken met het gemaakte schema wanneer u het uitbreidt **nms:zaadMember**.
-   >    * In de **nms:zaadMember** extensie, moet het veld dat het e-mailadres bevat **name=&quot;email&quot;** als een kenmerk. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk worden gedeclareerd onder het **`<element name="custom_cus_person" />`** element.
+   >    * In de **nms:zaadMember** extensie, moet het veld dat het e-mailadres bevat **name=&quot;email&quot;** als een kenmerk. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk onder het **`<element name="custom_cus_person" />`** element.
+   >    
+   >
 
-
-1. De **[!UICONTROL seedMember]** formulier dienovereenkomstig een nieuw tabblad &quot;Interne ontvanger&quot; definiëren in het dialoogvenster **[!UICONTROL Seed addresses]** venster. Raadpleeg [deze pagina](../../configuration/using/form-structure.md) voor meer informatie.
+1. Wijzig de **[!UICONTROL seedMember]** formulier dienovereenkomstig een nieuw tabblad &quot;Interne ontvanger&quot; definiëren in het dialoogvenster **[!UICONTROL Seed addresses]** venster. Raadpleeg [deze pagina](../../configuration/using/form-structure.md) voor meer informatie.
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -97,4 +99,4 @@ Voer de volgende stappen uit:
      </container>
    ```
 
-Als niet alle attributen van het zaadadres zijn ingegaan, vervangt Adobe Campaign automatisch de profielen: deze gegevens worden automatisch ingevoerd tijdens de personalisatie met behulp van gegevens uit een bestaand profiel.
+Als niet alle attributen van het zaadadres zijn ingegaan, vervangt Adobe Campaign automatisch de profielen: zij zullen automatisch tijdens verpersoonlijking gebruikend gegevens van een bestaand profiel worden ingegaan.

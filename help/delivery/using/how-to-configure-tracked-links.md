@@ -2,13 +2,14 @@
 product: campaign
 title: Bijgehouden koppelingen configureren
 description: Bijgehouden koppelingen configureren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
+role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '594'
 ht-degree: 10%
 
 ---
@@ -37,7 +38,7 @@ In dit voorbeeld wordt de URL https://www.adobe.com gevolgd door een puntkomma. 
 
 Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de manier waarop URL&#39;s worden bijgehouden aan te passen:
 
-1. Selecteer **[!UICONTROL Display URLs]** in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
+1. Selecteer de **[!UICONTROL Display URLs]** in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -68,7 +69,7 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    * **[!UICONTROL Enabled]** : activeert tracking op deze URL.
    * **[!UICONTROL Not tracked]** : activeert tracering op deze URL niet.
    * **[!UICONTROL Always enabled]** : activeert het bijhouden van deze URL altijd. Deze informatie wordt opgeslagen zodat de volgende keer, als de URL opnieuw wordt weergegeven in een toekomstige berichtinhoud, de tekstspatiëring automatisch wordt geactiveerd.
-   * **[!UICONTROL Never tracked]** : activeert het bijhouden van deze URL nooit. Deze informatie wordt opgeslagen zodat de volgende keer dat de URL opnieuw wordt weergegeven in een toekomstig bericht, de URL automatisch wordt gedeactiveerd.
+   * **[!UICONTROL Never tracked]** : activeert nooit het bijhouden van deze URL. Deze informatie wordt opgeslagen zodat de volgende keer dat de URL opnieuw wordt weergegeven in een toekomstig bericht, de URL automatisch wordt gedeactiveerd.
    * **[!UICONTROL Opt-out]** : beschouwt deze URL als een opt-out- of niet-abonnements-URL.
    * **[!UICONTROL Mirror page]** : beschouwt deze URL als een URL van een spiegelpagina.
 

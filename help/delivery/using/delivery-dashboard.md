@@ -2,19 +2,19 @@
 product: campaign
 title: Leveringsdashboard
 description: Meer informatie over hoe u het dashboard voor levering kunt gebruiken om uw leveringen te controleren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
+role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1186'
 ht-degree: 4%
 
 ---
 
 # Leveringsdashboard {#delivery-dashboard}
-
 
 
 De **bezorgdashboard** is de sleutel om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden.
@@ -41,17 +41,17 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 
 ## Leveringsoverzicht {#delivery-summary}
 
-De **[!UICONTROL Summary]** tab bevat de kenmerken van de levering: leveringsstatus, gebruikt kanaal, informatie over de afzender, onderwerp, informatie over uitvoering.
+De **[!UICONTROL Summary]** tab bevat de kenmerken van de levering: leveringsstatus, gebruikt kanaal, informatie over de afzender, onderwerp, informatie over de uitvoering.
 
 ## Leveringsrapporten {#delivery-reports}
 
-De **[!UICONTROL Reports]** , die toegankelijk is via de **[!UICONTROL Summary]** kunt u een set rapporten bekijken die betrekking hebben op de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, verspreiding van mislukte berichten, openingsfrequentie, klikken en transacties, enz.
+De **[!UICONTROL Reports]** koppeling, die toegankelijk is via de **[!UICONTROL Summary]** tabblad kunt u een set rapporten bekijken die betrekking hebben op de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, distributie van mislukte berichten, openingsfrequentie, klikken en transacties, enz.
 
-De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Voor meer informatie over leveringsrapporten raadpleegt u [deze sectie](../../reporting/using/delivery-reports.md).
+De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Raadpleeg voor meer informatie over leveringsrapporten [deze sectie](../../reporting/using/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
-## Afleveringsregisters, geschiedenis en uitsluitingen {#delivery-logs-and-history}
+## Leveringslogboeken, geschiedenis en uitsluitingen {#delivery-logs-and-history}
 
 De **[!UICONTROL Delivery]** tabblad geeft een overzicht van de gebeurtenissen in deze levering. Het bevat de leveringslogboeken, d.w.z. de lijst van verzonden berichten en hun status en de bijbehorende berichten.
 
@@ -59,7 +59,7 @@ Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte lever
 
 >[!NOTE]
 >
->De lijst met de leveringslogboeken kan worden aangepast, net als elke lijst in Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Raadpleeg voor meer informatie het gebruiksgeval in [deze sectie](#use-case).
+>De lijst met de leveringslogboeken kan worden aangepast, net als elke lijst in het Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Raadpleeg voor meer informatie het gebruiksgeval in [deze sectie](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -71,7 +71,7 @@ De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is g
 
 ## Logbestanden en geschiedenis voor het bijhouden van leveringen {#tracking-logs}
 
-De **[!UICONTROL Tracking]** wordt de volggeschiedenis voor deze levering weergegeven. Op dit tabblad worden volggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
+De **[!UICONTROL Tracking]** wordt de volggeschiedenis voor deze levering weergegeven. Op dit tabblad worden trackinggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
 
 >[!NOTE]
 >
@@ -117,13 +117,13 @@ Sommige indicatoren of status kunnen onjuist of niet bijgewerkt zijn, dit kan me
 
 * Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer **[!UICONTROL Mid-sourcing (delivery counters)]** technische workflow. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en vervolgens **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Raadpleeg voor meer informatie over trackingindicatoren deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg voor meer informatie over trackingindicatoren deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** opnieuw synchroniseren. Raadpleeg voor meer informatie over trackingindicatoren deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 * Als uw leveringsteller niet up-to-date is voor mid-sourcing plaatsingen, controleer dat **[!UICONTROL Mid-Sourcing (Delivery counters)]** de technische workflow wordt uitgevoerd. Raadpleeg [deze pagina](../../installation/using/mid-sourcing-deployment.md) voor meer informatie.
 
 U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md) voor meer informatie.
 
-## Hoofdlettergebruik: IP-adressen van afzenders toevoegen aan de logboeken {#use-case}
+## Hoofdlettergebruik: IP-adressen van afzenders toevoegen aan de logbestanden {#use-case}
 
 In deze sectie leert u hoe u informatie over de leveringslogs toevoegt aan het IP-adres dat elke e-mail in een levering heeft verzonden.
 
@@ -164,7 +164,7 @@ Toevoegen **publicID** in uw leveringslogboeken moet u het schema eerst uitbreid
 
    ![](assets/edit-schema.png)
 
-### Stap 2: Databasestructuur bijwerken
+### Stap 2: De databasestructuur bijwerken
 
 Zodra de wijzigingen worden gedaan, moet u gegevensbestandstructuur bijwerken zodat het met zijn logische beschrijving gericht is.
 
@@ -174,7 +174,7 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/update-database-structure.png)
 
-1. In de **[!UICONTROL Edit tables]** venster, **[!UICONTROL NmsBroadLogRcp]** tabel is ingeschakeld (of de **[!UICONTROL broadLogMid]** tabel als uw computer zich in een omgeving voor midsourcing bevindt), zoals hieronder:
+1. In de **[!UICONTROL Edit tables]** venster, het **[!UICONTROL NmsBroadLogRcp]** tabel is ingeschakeld (of de **[!UICONTROL broadLogMid]** tabel als uw computer zich in een omgeving voor midsourcing bevindt), zoals hieronder:
 
    ![](assets/edit-tables.png)
 
@@ -186,7 +186,7 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/update-script.png)
 
-1. Klikken **[!UICONTROL Next]** vervolgens **[!UICONTROL Start]** om de databasestructuur bij te werken. Indexopbouw begint. Deze stap kan lang zijn, afhankelijk van het aantal rijen in de **[!UICONTROL NmsBroadLogRcp]** tabel.
+1. Klikken **[!UICONTROL Next]** vervolgens **[!UICONTROL Start]** om de databasestructuur bij te werken. Het samenstellen van indexen begint. Deze stap kan lang zijn, afhankelijk van het aantal rijen in de **[!UICONTROL NmsBroadLogRcp]** tabel.
 
    ![](assets/start-database-update.png)
 
@@ -204,8 +204,8 @@ Om dit te doen, heb toegang tot de leveringslogboeken en voeg de &quot;IP herken
 
 >[!NOTE]
 >
->Leren hoe te om lijsten in de interface van Campaign Classic te vormen, verwijs naar [deze pagina](../../platform/using/adobe-campaign-workspace.md).
+>Leren hoe te om lijsten in de interface van het Campaign Classic te vormen, verwijs naar [deze pagina](../../platform/using/adobe-campaign-workspace.md).
 
-Hieronder ziet u wat u moet zien in het dialoogvenster **[!UICONTROL Delivery]** tabblad na wijzigingen:
+Hieronder ziet u wat u moet zien in de **[!UICONTROL Delivery]** tabblad na wijzigingen:
 
 ![](assets/logs-with-ip.png)

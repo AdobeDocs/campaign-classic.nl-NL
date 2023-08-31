@@ -2,20 +2,19 @@
 product: campaign
 title: Opmaak
 description: Opmaak
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
+role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
 # Opmaak{#formatting}
-
-
 
 ## JavaScript-sjablonen {#javascript-templates}
 
@@ -23,7 +22,7 @@ Een JavaScript-sjabloon is een HTML- of tekstdocument dat JavaScript-code bevat.
 
 ### Identificatie van een JavaScript-sjabloon {#identification-of-a-javascript-template}
 
-Een JavaScript-sjabloon wordt net als schema&#39;s en formulieren aangeduid met de naam en naamruimte ervan. Aanbevolen wordt echter om de **.js** aan de sjabloonnaam.
+Een JavaScript-sjabloon wordt net als schema&#39;s en formulieren aangeduid met de naam en naamruimte ervan. Het is echter raadzaam de **.js** aan de sjabloonnaam.
 
 ### Structuur van een JavaScript-sjabloon {#structure-of-a-javascript-template}
 
@@ -68,10 +67,10 @@ De kenmerken en elementen van de inhoud worden weergegeven als JavaScript-object
 
 **Voorbeeld**:
 
-* **inhoud.@name**: Hiermee wordt de waarde van het kenmerk &quot;name&quot; van het hoofdelement opgehaald
-* **inhoud.@`['name']`**: gelijk aan **inhoud.@name** syntaxis
+* **inhoud.@name**: haalt de waarde van het kenmerk &quot;name&quot; van het hoofdelement op
+* **inhoud.@`['name']`**: identiek aan de **inhoud.@name** syntaxis
 * **content.chapter.length**: retourneert het aantal elementen op het tabblad `<chapter` verzamelingselement
-* **content.chapter`[0]`.@name**: wint de naam van eerste terug `<chapter>` element
+* **content.chapter`[0]`.@name**: haalt de naam van de eerste op `<chapter>` element
 * **hoofdstuk.name()**: retourneert de naam van de `<chapter>` element
 * **chapter.parent().name()**: retourneert de naam van het bovenliggende element van `<chapter>`
 
@@ -87,81 +86,81 @@ Voorbeelden:
 
 * Voorwaardelijke test:
 
-   ```
-   <% if (content.@number == 1 || content.@language == 'en') { %>
-   <!-- Content to be displayed if test is true--> 
-   <% } %>
-   ```
+  ```
+  <% if (content.@number == 1 || content.@language == 'en') { %>
+  <!-- Content to be displayed if test is true--> 
+  <% } %>
+  ```
 
 * Functieaanroep:
 
-   ```
-   <!-- Displays a horizontal bar -->
-   ;<% function DisplayHorizontalBar() { %>
-     <hr/>
-   <% } %> 
-   
-   <!-- The same function in a block  -->
-   <% 
-   function DisplayHorizontalBar2()
-   {
-     document.write('<hr/>');
-   }
-   %> 
-   
-   <!-- Returns the value in uppercase -->
-   <% 
-   function formatName(value)
-   { 
-     return value.toUpperCase(); 
-   }
-   %>
-   
-   <!-- Call functions -->
-   <%= DisplayHorizontalBar1() %>
-   <%= DisplayHorizontalBar2() %>
-   <%= formatName(content.@name) %>
-   ```
+  ```
+  <!-- Displays a horizontal bar -->
+  ;<% function DisplayHorizontalBar() { %>
+    <hr/>
+  <% } %> 
+  
+  <!-- The same function in a block  -->
+  <% 
+  function DisplayHorizontalBar2()
+  {
+    document.write('<hr/>');
+  }
+  %> 
+  
+  <!-- Returns the value in uppercase -->
+  <% 
+  function formatName(value)
+  { 
+    return value.toUpperCase(); 
+  }
+  %>
+  
+  <!-- Call functions -->
+  <%= DisplayHorizontalBar1() %>
+  <%= DisplayHorizontalBar2() %>
+  <%= formatName(content.@name) %>
+  ```
 
 * Declaraties en variabele call:
 
-   ```
-   <%  var counter = 0; %>
-   
-   <%= counter += 10 %>
-   ```
+  ```
+  <%  var counter = 0; %>
+  
+  <%= counter += 10 %>
+  ```
 
-* Ophalen en weergeven van een naam van een ontvanger met statische methoden:
+* Een naam van een ontvanger ophalen en weergeven met statische methoden:
 
-   ```
-   <% var recipient = nms.recipient.get(1246); %>
-   <%= recipient.lastName %>
-   ```
+  ```
+  <% var recipient = nms.recipient.get(1246); %>
+  <%= recipient.lastName %>
+  ```
 
 * Terugwinning en vertoning van een ontvankelijke naam met niet statische methodes:
 
-   ```
-   <% var query = xtk.queryDef.create(
-     <queryDef schema="nms:recipient" operation="get">
-       <select>
-         <node expr="@lastName"/>
-       </select>
-       <where>
-         <condition expr="@id=1246"/>
-       </where>
-     </queryDef>);
-   
-     var recipient = query.ExecuteQuery();
-   %>
-   
-   <%= recipient.@lastName %>
-   ```
+  ```
+  <% var query = xtk.queryDef.create(
+    <queryDef schema="nms:recipient" operation="get">
+      <select>
+        <node expr="@lastName"/>
+      </select>
+      <where>
+        <condition expr="@id=1246"/>
+      </where>
+    </queryDef>);
+  
+    var recipient = query.ExecuteQuery();
+  %>
+  
+  <%= recipient.@lastName %>
+  ```
 
 ### Een JavaScript-sjabloon opnemen {#including-a-javascript-template}
 
 U kunt een bibliotheek van functies of variabelen voor later gebruik vormen. Hiertoe importeert u de JavaScript-sjabloon met de **eval** functie. Hiermee kunt u contexten verrijken met extra functies die zijn gedeclareerd in andere JavaScript-sjablonen.
 
-**Voorbeeld**: het importeren van **common.jsp** sjabloon.
+**Voorbeeld**: het importeren van de **common.jsp** sjabloon.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -268,101 +267,101 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
    * In ons voorbeeld geldt voor HTML:
 
-      ```
-      <html>     
-        <head>         
-          <title>Newsletter</title>
-           <style type="text/css">
-            .body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#514c48; margin-left: auto; margin-right: auto;}
-            .body table {width:748; border: solid 1px; cellpadding:0; cellspacing:0"}
-           </style>
-        </head>     
-        <body>
-          <p><center><%= mirrorPage %></center></p>
-          <center>
-            <table>      
-             <tr>
-              <td>                                                         
-                <img src="[LOGO]"/>                                   
-              </td>
-              <td>
-                <h1><%= content.@title %></h1>
-              </td>
-             </tr>
-             <tr>
-      
+     ```
+     <html>     
+       <head>         
+         <title>Newsletter</title>
+          <style type="text/css">
+           .body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#514c48; margin-left: auto; margin-right: auto;}
+           .body table {width:748; border: solid 1px; cellpadding:0; cellspacing:0"}
+          </style>
+       </head>     
+       <body>
+         <p><center><%= mirrorPage %></center></p>
+         <center>
+           <table>      
+            <tr>
+             <td>                                                         
+               <img src="[LOGO]"/>                                   
+             </td>
              <td>
-              <div >                                    
-                <h0><%= hello,</h0>                              
-                <p><%= content.presentation %></p>                                          
-      
-                <h0>Useful information</h0>                              
-                <p>                                  
-                  <img src="[IMAGE 1]"/>When? <br/><%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.</p><br/>                                       
-                <p>                                  
-                  <img src="[IMAGE 2]"/>Who? <br>Meet our favorite authors and illustrators and get a signed copy of their book.</p><br/>                                                         
-                <p>                                  
-                  <img src="[IMAGE 3]"/>Attendance is free but there is a limited number of seats: sign up now!</p>
-            </div>
-            </td>
-      
-              <td>                                                    
-               <div style="text-align:left; width:210; height:400px; background:url([IMAGE DE FOND])">
-      
-                  <h0><%= participant %></h0>
-                  <%
-                  var i
-                  var iLength = content.attendeesList.length()
-                  for (i=0; i<iLength; i++)
-                  { %>
-                  <p>
-                    <%= generateImgTag(content.attendeesList[i].@["image-id"]) %>  <%= content.attendeesList[i].@description %>
-                  </p>  
-                  <% }  
-                  %>                              
-               </div2>
-              </td>
-          </tr>
-        </table>
-      </center>
-      </body>    
-      </html>
-      ```
+               <h1><%= content.@title %></h1>
+             </td>
+            </tr>
+            <tr>
+     
+            <td>
+             <div >                                    
+               <h0><%= hello,</h0>                              
+               <p><%= content.presentation %></p>                                          
+     
+               <h0>Useful information</h0>                              
+               <p>                                  
+                 <img src="[IMAGE 1]"/>When? <br/><%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.</p><br/>                                       
+               <p>                                  
+                 <img src="[IMAGE 2]"/>Who? <br>Meet our favorite authors and illustrators and get a signed copy of their book.</p><br/>                                                         
+               <p>                                  
+                 <img src="[IMAGE 3]"/>Attendance is free but there is a limited number of seats: sign up now!</p>
+           </div>
+           </td>
+     
+             <td>                                                    
+              <div style="text-align:left; width:210; height:400px; background:url([IMAGE DE FOND])">
+     
+                 <h0><%= participant %></h0>
+                 <%
+                 var i
+                 var iLength = content.attendeesList.length()
+                 for (i=0; i<iLength; i++)
+                 { %>
+                 <p>
+                   <%= generateImgTag(content.attendeesList[i].@["image-id"]) %>  <%= content.attendeesList[i].@description %>
+                 </p>  
+                 <% }  
+                 %>                              
+              </div2>
+             </td>
+         </tr>
+       </table>
+     </center>
+     </body>    
+     </html>
+     ```
 
    * Voor de tekst:
 
-      ```
-      <%= content.@title %>
-      <%= content.presentation %>
-      
-      *** When? On <%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.
-      
-      *** Who? Come and meet our favorite authors and illustrators and get a signed copy of their books. 
-      
-      *** Attendance is free but there is a limited number of seats: sign up now!
-      
-      Guests:
-      ******************
-      <%
-      var i
-      var iLength = content.attendeesList.length()
-      //for (i=(iLength-1); i>-1; i--)
-      for( i=0 ; i<iLength ; i++ )
-        { %>
-        Description <%= i %> : <%= content.attendeesList[i].@description %>
-        <% }  
-      %>
-      ```
+     ```
+     <%= content.@title %>
+     <%= content.presentation %>
+     
+     *** When? On <%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.
+     
+     *** Who? Come and meet our favorite authors and illustrators and get a signed copy of their books. 
+     
+     *** Attendance is free but there is a limited number of seats: sign up now!
+     
+     Guests:
+     ******************
+     <%
+     var i
+     var iLength = content.attendeesList.length()
+     //for (i=(iLength-1); i>-1; i--)
+     for( i=0 ; i<iLength ; i++ )
+       { %>
+       Description <%= i %> : <%= content.attendeesList[i].@description %>
+       <% }  
+     %>
+     ```
 
 1. Maak nu de publicatiesjabloon die voor beide indelingen wordt gebruikt:
 
    * Voor HTML:
 
-      ![](assets/d_ncs_content_sample_2.png)
+     ![](assets/d_ncs_content_sample_2.png)
 
    * Voor tekst:
 
-      ![](assets/d_ncs_content_sample_3.png)
+     ![](assets/d_ncs_content_sample_3.png)
 
 1. U kunt deze inhoudssjabloon dan gebruiken in uw leveringen.
 
@@ -370,7 +369,7 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
 ## XSL Stylesheets {#xsl-stylesheets}
 
-Met de XSLT-taal kunt u een XML-document wijzigen in een uitvoerdocument. Afhankelijk van de uitvoermethode van de stijlpagina kan het resulterende document worden gegenereerd in HTML, platte tekst of een andere XML-structuur.
+Met XSLT kunt u een XML-document wijzigen in een uitvoerdocument. Afhankelijk van de uitvoermethode van de stijlpagina kan het resulterende document worden gegenereerd in HTML, platte tekst of een andere XML-structuur.
 
 Deze transformatie wordt op zijn beurt in XML in een document gedetaillerd dat als stylesheet wordt bekend.
 
@@ -378,7 +377,7 @@ Deze transformatie wordt op zijn beurt in XML in een document gedetaillerd dat a
 
 Een stijlpagina wordt geïdentificeerd door zijn naam en namespace, enkel als schema&#39;s en vormen. U wordt echter aangeraden het **.xsl** de naam van de stijlpagina uitbreiden.
 
-De identificatiecode van een stijlpagina is een tekenreeks die wordt gevormd door de naamruimte en de naam die wordt gescheiden door een dubbele punt. bijvoorbeeld: **focus:boek.xsl**.
+De identificatiecode van een stijlpagina is een tekenreeks die wordt gevormd door de naamruimte en de naam die wordt gescheiden door een dubbele punt, bijvoorbeeld: **focus:boek.xsl**.
 
 ### Structuur van een stijlblad {#structure-of-a-stylesheet}
 
@@ -462,21 +461,21 @@ Voorbeelden:
 
 * De inhoud van een veld van het type &quot;html&quot; weergeven:
 
-   ```
-   <xsl:value-of select="summary" disable-output-escaping="yes"/>
-   ```
+  ```
+  <xsl:value-of select="summary" disable-output-escaping="yes"/>
+  ```
 
 * Het aanpassingsveld invoegen **&lt;%= ontvanger.email %>**:
 
-   ```
-   <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
-   ```
+  ```
+  <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
+  ```
 
 * De voorwaardelijke test toevoegen **&lt;% if (receiving.language == &#39;en&#39;) `{` %>**:
 
-   ```
-   <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
-   ```
+  ```
+  <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
+  ```
 
 ### Inclusief stijlbladen {#including-stylesheets}
 
@@ -578,28 +577,28 @@ Voorbeelden:
 
 * De datum weergeven in het dialoogvenster **10-31-2018** indeling:
 
-   ```
-    <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
-   ```
+  ```
+   <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
+  ```
 
 * De datum weergeven in het dialoogvenster **juli 2018** indeling:
 
-   ```
-   <%
-    function displayDate(date)
-     {
-       var aMonth = 
-       [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
-   
-       var month = formatDate(content.@date, "%2M")
-       var year = formatDate(content.@date, "%4Y")
-   
-       return aMonth[month-1]+" "+year;
-     }
-   %>
-   
-   <%= displayDate(content.@date) %>
-   ```
+  ```
+  <%
+   function displayDate(date)
+    {
+      var aMonth = 
+      [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+  
+      var month = formatDate(content.@date, "%2M")
+      var year = formatDate(content.@date, "%4Y")
+  
+      return aMonth[month-1]+" "+year;
+    }
+  %>
+  
+  <%= displayDate(content.@date) %>
+  ```
 
 ### XSL-datumopmaak {#xsl-date-formatting}
 
@@ -609,38 +608,38 @@ Voorbeelden:
 
 * De datum weergeven in het dialoogvenster **10-01-2018** indeling:
 
-   ```
-   <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
-   ```
+  ```
+  <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
+  ```
 
 * De datum weergeven in het dialoogvenster **juli 2018** indeling:
 
-   ```
-   <!-- Returns the month in the form of a string with the month number as input -->
-   <xsl:template name="longMonth">
-     <xsl:param name="monthNumber"/>
-   
-     <xsl:choose>
-       <xsl:when test="$monthNumber = 1">January</xsl:when>
-       <xsl:when test="$monthNumber = 2">February</xsl:when>
-       <xsl:when test="$monthNumber = 3">March</xsl:when>
-       <xsl:when test="$monthNumber = 4">April</xsl:when>
-       <xsl:when test="$monthNumber = 5">May</xsl:when>
-       <xsl:when test="$monthNumber = 6">June</xsl:when>
-       <xsl:when test="$monthNumber = 7">July</xsl:when>
-       <xsl:when test="$monthNumber = 8">August</xsl:when>
-       <xsl:when test="$monthNumber = 9">September</xsl:when>
-       <xsl:when test="$monthNumber = 10">October</xsl:when>
-       <xsl:when test="$monthNumber = 11">November</xsl:when>
-       <xsl:when test="$monthNumber = 12">December</xsl:when>
-     </xsl:choose>
-   </xsl:template> 
-   
-   <!-- Display date -->
-   <xsl:call-template name="longMonth">
-     <xsl:with-param name="monthNumber">
-       <xsl:value-of select="external:date-format(@date, '%2M')"/>
-     </xsl:with-param>
-   </xsl:call-template>
-    <xsl:value-of select="external:date-format(@date, '%4y')"/>
-   ```
+  ```
+  <!-- Returns the month in the form of a string with the month number as input -->
+  <xsl:template name="longMonth">
+    <xsl:param name="monthNumber"/>
+  
+    <xsl:choose>
+      <xsl:when test="$monthNumber = 1">January</xsl:when>
+      <xsl:when test="$monthNumber = 2">February</xsl:when>
+      <xsl:when test="$monthNumber = 3">March</xsl:when>
+      <xsl:when test="$monthNumber = 4">April</xsl:when>
+      <xsl:when test="$monthNumber = 5">May</xsl:when>
+      <xsl:when test="$monthNumber = 6">June</xsl:when>
+      <xsl:when test="$monthNumber = 7">July</xsl:when>
+      <xsl:when test="$monthNumber = 8">August</xsl:when>
+      <xsl:when test="$monthNumber = 9">September</xsl:when>
+      <xsl:when test="$monthNumber = 10">October</xsl:when>
+      <xsl:when test="$monthNumber = 11">November</xsl:when>
+      <xsl:when test="$monthNumber = 12">December</xsl:when>
+    </xsl:choose>
+  </xsl:template> 
+  
+  <!-- Display date -->
+  <xsl:call-template name="longMonth">
+    <xsl:with-param name="monthNumber">
+      <xsl:value-of select="external:date-format(@date, '%2M')"/>
+    </xsl:with-param>
+  </xsl:call-template>
+   <xsl:value-of select="external:date-format(@date, '%4y')"/>
+  ```
