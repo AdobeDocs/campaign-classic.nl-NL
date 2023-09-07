@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1866e7483d68c1d44f7d069d48d277110a5caa81
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1869'
 ht-degree: 57%
 
 ---
@@ -28,7 +28,7 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 >
 > Als u [Campagne - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md), moet u zowel uw marketing als uw midsourcingservers met deze nieuwe build upgraden.
 
-_september_ 7.2023_
+_7 september 2023_
 
 **Beveiligingsverbetering**
 
@@ -88,7 +88,7 @@ _september_ 7.2023_
 
 ## Release 7.3.3 - build 9359 {#release-7-3-3}
 
-[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
+[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 >[!CAUTION]
 >
@@ -116,7 +116,7 @@ _20 maart 2023_
 
 ## Release 7.3.2 - build 9356 {#release-7-3-2}
 
-[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
+[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 _21 november 2022_
 
