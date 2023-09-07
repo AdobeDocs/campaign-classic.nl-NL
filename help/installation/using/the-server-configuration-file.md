@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
+source-wordcount: '8056'
 ht-degree: 5%
 
 ---
@@ -43,6 +43,7 @@ De eerste parameters bevinden zich in de **gedeeld** knooppunt. Deze zijn gerela
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **Andere parameters**
@@ -998,6 +999,29 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
  </tbody> 
 </table>
 
+## cusHeaders {#cusheaders}
+
+Met dit knooppunt kunt u specifieke koppen toevoegen aan aanvragen die worden uitgevoerd wanneer een bestand van een externe server wordt geüpload. De Netwerken van de Levering van de inhoud (CND) kunnen om een specifieke kopbal vragen om de aanvrager te vertrouwen. Deze kopballen kunnen worden gebruikt om het vertrouwen op de verzoeken van de Campagne te verbeteren, vooral wanneer het downloaden van gepersonaliseerde documenten voor elke ontvanger bij de stap van de leveringsuitvoering. Een hoog aantal verzoeken van de middeldownload kan als een aanval van Dos worden geïnterpreteerd. dnsPattern staat u toe om specifieke kopbalnamen en waarden voor verschillende CDNs te plaatsen die op hun domeinnaam worden gebaseerd.
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
+
 ### url {#url}
 
 Voeg voor elke URL een **url** knooppunt met de volgende parameters:
@@ -1506,7 +1530,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
-   <td> Frequentie van foutstatistieken: tijd tussen het genereren van statistieken en de opslag in de database. <br /> </td> 
+   <td> Frequentie van foutstatistieken: tijd tussen het genereren van statistieken en het opslaan in de database. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -1720,7 +1744,7 @@ Raadpleeg voor meer informatie [SMTP-relay](../../installation/using/configuring
  </tbody> 
 </table>
 
-### master {#master}
+### meester {#master}
 
 In de **mta > master** knoop, vorm de volgende parameters. Dit is de configuratie van de hoofdserver.
 

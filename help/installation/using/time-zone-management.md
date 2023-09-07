@@ -9,9 +9,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '978'
 ht-degree: 2%
 
 ---
@@ -102,3 +102,7 @@ Voorbeeld van mogelijke waarden:
 * Amerika/New_York, enz.
 
   Deze waarden zijn afkomstig uit de tz-database (Olson). Raadpleeg voor meer informatie [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+## Tijdzone van database en server oracles
+
+Voor de hoofddatabase gebruikt Campagne de tijdzone van de server om de tijdzone van de sessie in te stellen op de databaseverbinding. De optie &quot;WdbcTimeZone&quot; heeft geen invloed. De tijdzone van de server moet dus overeenkomen met de tijdzone van de hoofddatabase die door Campagne wordt gebruikt. Als u niet de server timezone kunt veranderen, kan de timezone die door Campagne wordt gebruikt worden met voeten getreden door de de omgevingsvariabele van TZ in customer.sh te plaatsen.

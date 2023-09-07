@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <td>
 <p>7.x</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
-<p>8.x</br><strong>Belangrijk:</strong> CentOS Linux 8 bereikt op 31 december 2021 het einde van de levensduur (EOL). Raadpleeg voor meer informatie de pagina <a href="../../rn/using/deprecated-features.md">Verouderde functies</a>.</p>
 </td>
 </tr>
 <tr>
@@ -51,7 +50,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <td>
 <p>11 (vanaf Campaign v7.3)</p>
 <p>10</p>
-<p>9</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +141,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 <p><strong>Opmerking:</strong> u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.</p>
 </td>
 </tr>
@@ -217,7 +214,6 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 </td>
 <td>v7.0 minimaal 19.1.4</td>
 </tr>
@@ -306,11 +302,8 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 <tr>
 <td>Teradata</td>
 <td>
-<p>17</p>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
+<p>17.x</p>
+<p>16.x (laatste versie)</p>
 </td>
 <td>Minimaal V7.0</td>
 </tr>

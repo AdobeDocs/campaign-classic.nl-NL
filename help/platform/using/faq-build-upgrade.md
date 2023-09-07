@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 2%
+source-wordcount: '1998'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md)U weet waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en correcties elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
-Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
+Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval dat u kwesties - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
 Als gehoste gebruiker profiteert u automatisch van de jaarlijkse upgrade van Campagne met de nieuwste stabiele versie zonder actie. Ook on-premise en Hybrid-klanten kunnen van deze release profiteren. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/rn-overview.md).
 
@@ -33,7 +33,7 @@ Meer informatie [in deze sectie](../../rn/using/rn-overview.md).
 
 ## Wat is de nieuwste versie van Adobe Campaign Classic?
 
-De nieuwste versie van Campaign Classic, inclusief nieuwe functies en documentatie, wordt beschreven in de meest recente [Opmerkingen bij de release](../../rn/using/latest-release.md).
+De meest recente versie van het Campaign Classic, inclusief nieuwe functies en documentatie, is te vinden in de meest recente [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
 ## Hoe weet ik welke versie ik heb?
 
@@ -57,11 +57,11 @@ Bijvoorbeeld, gebruikend de serverinformatie van het het schermschot in de vorig
 
 * Een bouwstijlverbetering zou het bewegen van bouwstijl 9342 aan om het even welke bouwstijl groter dan 9342 impliceren. Bijvoorbeeld v7.1 build 9342 to v7.1 build 9342
 
-* Bij een versieupgrade moet u overstappen van versie 6 naar een recentere versie.  Bijvoorbeeld: build 8666 tot v7.1 (versie 6.1.1) 9342.
+* Een versieverbetering zou het bewegen van een vorige belangrijkste versie aan om het even welke recentere versie impliceren.
 
 ## Moet ik vóór deze updates back-ups maken van mijn gegevens?
 
-Adobe zal een steun van uw systeem alvorens om het even welke veranderingen nemen. Nochtans, als er kritiek aanpassingswerk is dat in uw niet productiesysteem (ontwikkeling of het opvoeren servers) is, wordt het HIGH AANBEVOLEN u dat werk als pakket voorafgaand aan om het even welke verbetering uitvoert.
+Adobe maakt een back-up van uw systeem voordat er wijzigingen worden aangebracht. Nochtans, als er kritiek aanpassingswerk is dat in uw niet productiesysteem (ontwikkeling of het opvoeren servers) is, wordt het HIGH AANBEVOLEN u dat werk als pakket voorafgaand aan om het even welke verbetering uitvoert.
 
 <!--
 ![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
@@ -92,7 +92,7 @@ Voor meer informatie, [verwijzen naar dit document](https://helpx.adobe.com/nl/c
 
 Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
-* Adobe Architect - Voor gehoste of cloud messaging/hybride architecturen moet de architect coördineren met de klantenservice.
+* Adobe architect - Voor gehoste of cloud messaging/hybride architecturen moet de architect coördineren met de klantenservice.
 * Projectmanager - Gehost: het hostingteam zal samenwerken met het zorgteam van de klant en de klant om de tijdlijn van de upgrade voor alle gevallen te coördineren.
 * Adobe Campaign Administrator - Gehost: het hostingteam voert de upgrade uit.
 * Adobe Campaign operator\marketing user - De operator voert tests uit op ontwikkelings-, test- en productieinstanties.
@@ -129,7 +129,7 @@ Wanneer de upgrade voor Berichtencentrum (RT) plaatsvindt, worden geen e-mails v
 
 ## Zullen de workflows blijven uitvoeren en de leveringen verzenden?
 
-Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei tegengehouden. Dit betekent dat werkstromen niet worden uitgevoerd en dat er geen leveringen worden verzonden. Ze worden hervat zodra het systeem opnieuw wordt opgestart. Adobe raadt echter ten zeerste aan dat alle workflows met kritieke paden na een upgrade worden gecontroleerd om ervoor te zorgen dat deze actief en gezond zijn.
+Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei tegengehouden. Dit betekent dat werkstromen niet worden uitgevoerd en dat er geen leveringen worden verzonden. Ze worden hervat zodra het systeem opnieuw wordt opgestart. Adobe raadt echter sterk aan dat alle workflows voor belangrijke paden na een upgrade worden gecontroleerd om ervoor te zorgen dat deze actief en gezond zijn.
 
 ## Werken mijn trackingkoppelingen nog tijdens de upgrade?
 
@@ -137,7 +137,7 @@ Het bijhouden van koppelingen op e-mailberichten die al zijn verzonden, werkt ni
 
 ## Moet ik tijdens het proces van de bouwstijlverbetering beschikbaar zijn?
 
-Ja. Klanten dienen Adobe een contactpunt te bieden dat beschikbaar is tijdens of onmiddellijk na de upgrade van hun productieapparaat.  Adobe zal via e-mail contact opnemen met deze persoon, tenzij er andere afspraken zijn gemaakt. Dit zorgt voor een soepele overgang en onmiddellijke validatie van kritieke taken. Adobe zal contact opnemen met de klant zodra de upgrade voor het samenstellen is voltooid.
+Ja. Klanten dienen de Adobe een contactpunt te bieden dat beschikbaar is tijdens of onmiddellijk na de upgrade van hun productieapparaat.  De Adobe zal via e-mail contact opnemen met deze persoon, tenzij er andere regelingen worden getroffen. Dit zorgt voor een soepele overgang en onmiddellijke validatie van kritieke taken. Adobe zal contact opnemen met de klant zodra de upgrade voor het maken van het image is voltooid.
 
 ## Moet ik de clientconsole bijwerken?
 
@@ -163,7 +163,7 @@ Zie lijst [upgrade-checklist hieronder samenstellen](#check-list). Klanten moete
 
 ## Hoe vaak moet ik een upgrade uitvoeren?
 
-Om optimale prestaties, beschikbaarheid en veiligheid van het systeem te garanderen, zal Adobe samenwerken met Klanten om ervoor te zorgen dat systemen minstens één keer per jaar worden bijgewerkt.
+Om optimale prestaties, beschikbaarheid en beveiliging van het systeem te garanderen, zal Adobe samenwerken met klanten om ervoor te zorgen dat systemen ten minste eenmaal per jaar worden bijgewerkt.
 
 ## Zal er een sluiting voor met een bouwstijlverbetering zijn?
 
@@ -171,7 +171,7 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 ## Wie zou ik moeten contacteren om het bouwstijlverbeteringskaartje te openen?
 
-Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
+Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
 Meer informatie in [Help- en ondersteuningsopties voor Campaign Classic](../../support.md)
 

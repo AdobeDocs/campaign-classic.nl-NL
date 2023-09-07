@@ -9,9 +9,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1475'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ De exploitanten worden verbonden met een veiligheidsstreek van zijn profiel in d
 >
 >Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
+>Overige **hybride/gehost** de klanten moeten uit bereiken aan het team van de steun van de Adobe om IP aan de lijst van gewenste personen toe te voegen.
 >
 
 ## Beveiligingszones maken {#creating-security-zones}
@@ -252,7 +252,7 @@ Zodra de zones zijn gedefinieerd en de **[!UICONTROL Security zone]** de opsommi
      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
      ```
 
-* Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
+* Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true.
 
    * **allowEmptyPassword** Laat exploitanten een leeg wachtwoord hebben. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
 
