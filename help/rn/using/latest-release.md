@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 1866e7483d68c1d44f7d069d48d277110a5caa81
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1865'
+ht-degree: 57%
 
 ---
 
@@ -18,9 +18,77 @@ ht-degree: 100%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## Release 7.3.3 - build 9359 {#release-7-3-3}
+## Release 7.3.4 - build 9364 {#release-7-3-4}
 
 [!BADGE Algemene beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
+
+>[!CAUTION]
+>
+>De upgrade van Client Console is verplicht. Lees op deze [pagina](../../installation/using/installing-the-client-console.md) hoe u uw Client Console kunt upgraden.
+>
+> Als u [Campagne - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md), moet u zowel uw marketing als uw midsourcingservers met deze nieuwe build upgraden.
+
+_september_ 7.2023_
+
+**Beveiligingsverbetering**
+
+* De beveiliging in IMS API&#39;s is verbeterd. Client-sensitive informatie (d.w.z. toegangstokens) is verwijderd uit URL parameters. Deze gegevens worden nu verzonden in de koptekst voor postgegevens of autorisaties, zodat een veiliger communicatieproces mogelijk is. (NEO-63045)
+* De beveiliging in webapps is verbeterd om DDOS-aanvallen te voorkomen. (NEO-50757)
+* De beveiliging is verbeterd om te voorkomen dat PII-gegevens worden weergegeven in weblogfouten. (NEO-46827)
+* De beveiliging is geoptimaliseerd om te voorkomen dat het beveiligingstoken wordt opgenomen in de URL van de startpagina van de campagne. (NEO-38519)
+
+**Compatibiliteitsupdates**
+
+* Tomcat is bijgewerkt naar versie 8.5.91
+* De bibliotheek libexpat is bijgewerkt naar 2.5.0 om de beveiliging te verbeteren. (NEO-51023)
+
+**Verbeteringen**
+
+* De parameter MaxWorkingSetMb in het dossier van de serverconfiguratie (serverConf.xml) is gewijzigd om geheugentoewijzing voor leveringen te optimaliseren. (NEO-49204)
+* De externe BigQuery-account is uitgebreid met nieuwe opties die worden gebruikt voor het instellen van de GCloud SDK. (NEO-63879) [Meer informatie](../../installation/using/configure-fda-google-big-query.md#google-external)
+* Een nieuwe `cusHeader` is toegevoegd aan het configuratiebestand van de server (serverConf.xml). Hiermee kunt u aangepaste koppen toevoegen wanneer u een bestand van een externe server uploadt. (NEO-58339) [Meer informatie](../../installation/using/the-server-configuration-file.md#cusheaders).
+* Het beheer van het trackinglogbestand is verbeterd en voorkomt negatieve id&#39;s voor lastMsgId. Het is veranderd van int32 in int64. (NEO-52290)
+* De workflow voor het leveren van statistieken (mid-sourcing) is toegevoegd. Deze nieuwe werkstroom synchroniseert de gegevens van de leveringsstatistiek (nms:deliveryStatus) van het midden aan de marketing instantie. (NEO-36802)
+
+**Patches**
+
+* Probleem verholpen die kon voorkomen wanneer een de dienstverzoek voorafgaand aan login IMS werd gemaakt, als de de vraagauthentificatie van het de dienstverzoek een de dienstteken gebruikte. (NEO-64903)
+* Oplossing voor een probleem met regressie dat bij gebruik van de Digital Content Editor tot schuifproblemen kan leiden. (NEO-64671, NEO-59256)
+* Probleem met regressie verholpen bij het plakken van inhoud van Excel naar de Digital Content Editor. (NEO-63287)
+* Probleem verholpen waardoor webapps niet correct konden worden weergegeven in de v5-compatibiliteitsmodus. (NEO-63174)
+* Probleem verholpen waarbij niet-beheerders webAnalytics-leveringen niet konden verzenden. (NEO-62750)
+* Probleem verholpen waarbij browsers geen extra spaties konden toevoegen wanneer voorwaardelijke inhoud in een levering werd gebruikt. (NEO-62132)
+* Oplossing voor een regressieprobleem dat ervoor zorgde dat de berekening van de actieve contactpersoon niet correct werkte in de factureringsworkflow bij het gebruik van doelschema&#39;s gekoppeld aan meerdere logschema&#39;s. (NEO-61468)
+* Probleem verholpen dat tot een fout kon leiden en ertoe kon leiden dat u niet kon schuiven wanneer u de inhoud van een levering bewerkt. (NEO-61364)
+* Probleem verholpen waarbij een pop-upvenster werd geopend wanneer werd geklikt op een afbeelding in de e-mailinhoudeditor. (NEO-60752)
+* Probleem verholpen waarbij speciale tekens in de HTML-inhoud van een levering onjuist werden gecodeerd in verschillende browsers. (NEO-60081)
+* Oplossing voor een synchronisatieprobleem dat kon optreden bij gebruik van de inSMS-workflowactiviteit. (NEO-59544)
+* Probleem verholpen bij gebruik van de Big Query-connector met tijdstempel- of datetime-velden. (NEO-59502, NEO-49768)
+* Probleem verholpen waarbij cumulatieve leveringsrapporten niet konden worden gebruikt. (NEO-59211)
+* Probleem verholpen dat tot fouten kon leiden bij het delen van publiek met de People Core Service. (NEO-58637)
+* Probleem verholpen bij het weergeven van de spiegelpagina van een levering. (NEO-58325)
+* Probleem opgelost waarbij de xtk-expressie XtkLibrary.Right() niet werkte. (NEO-57870)
+* Probleem opgelost waarbij het stijlkenmerk van de body-tag werd gewijzigd tijdens het uploaden van een afbeelding in de Digital Content Editor. (NEO-57697)
+* Probleem verholpen met speciale tekens tijdens het uitvoeren van batchexport met de CRM-connectoractiviteit. (NEO-54300)
+* Probleem verholpen waarbij het laden van grote hoeveelheden niet kon werken met gegevenstypen &quot;tekenreeks&quot; bij het gebruik van een activiteit voor het laden van gegevens en de Big Query-connector. (NEO-53748)
+* Probleem met cachesleutel verholpen waarbij renderingproblemen konden optreden. (NEO-51516, NEO-49995)
+* Probleem verholpen dat tot een validatiefout kon leiden bij het verzenden van een directe-maillevering met targetMapping met goedkeuringen. (NEO-50758)
+* Probleem met querybeheer opgelost, wat van invloed zou kunnen zijn op de prestaties van de levering. (NEO-49991)
+* Probleem verholpen waarbij bij het gebruik van externe accounts in workflowleveringsactiviteiten voor campagnes problemen met de configuratie van externe accounts konden ontstaan. (NEO-49959)
+* Probleem met prestaties verholpen bij het verzenden van pushberichten. (NEO-49953) Het volgende probleem is opgelost: Japanse tekens kunnen bij het exporteren van rapporten onjuist worden weergegeven (NEO-49308).
+* Probleem opgelost waarbij in het Tomcat-foutrapport te veel foutgegevens werden weergegeven. (NEO-49029)
+* Probleem verholpen dat tot een leveringsfout kan leiden bij het gebruik van een groot aantal voorstellen. (NEO-48807)
+* Probleem verholpen waardoor de **Gegevens bijwerken** de workflowactiviteit werkt niet correct. (NEO-48140)
+* Probleem verholpen waarbij klik op het bijhouden van gegevens niet kon worden gesynchroniseerd voor leveringen met een andere externe account dan e-mail.(NEO-47277)
+* Probleem verholpen waardoor traceringslogboeken in real time niet konden worden gesynchroniseerd op de marketinginstantie van Message Center. (NEO-42540)
+* Probleem verholpen waardoor het voorvoegsel van de werkruimte niet kon worden weergegeven in het detectievenster van een schema, voor databasetabellen van de Snowflake. (NEO-40297)
+* Probleem verholpen dat was voorkomen `<img-amp>` -tags van werken in e-mailinhoud. (NEO-38685)
+* Probleem verholpen waarbij de archiveringsworkflow van het Message Center zou kunnen mislukken bij gebruik van een HTTP-relais. (NEO-33783)
+* Probleem verholpen waarbij lettertypenaam en -grootte zouden kunnen resulteren in fouten in de e-mailinhoudseditor. (NEO-61342)
+
+## Release 7.3.3 - build 9359 {#release-7-3-3}
+
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 >[!CAUTION]
 >
@@ -48,7 +116,7 @@ _20 maart 2023_
 
 ## Release 7.3.2 - build 9356 {#release-7-3-2}
 
-[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Afgeschaft]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Afgeschaft"}
 
 _21 november 2022_
 
