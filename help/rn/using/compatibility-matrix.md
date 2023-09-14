@@ -10,7 +10,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -211,7 +211,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <p>12.x</p>
 <p>11.x</p>
 </td>
-<td>v7.0 minimaal 19.1.4</td>
+<td>Minimaal v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Snowflake</td>
