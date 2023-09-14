@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1869'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -26,65 +26,66 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 >
 >De upgrade van Client Console is verplicht. Lees op deze [pagina](../../installation/using/installing-the-client-console.md) hoe u uw Client Console kunt upgraden.
 >
-> Als u [Campagne - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md), moet u zowel uw marketing als uw midsourcingservers met deze nieuwe build upgraden.
+> Als u [Campaign - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md) gebruikt, moet u zowel uw marketing als uw mid-sourcingservers upgraden met deze nieuwe build.
 
 _7 september 2023_
 
 **Beveiligingsverbetering**
 
-* De beveiliging in IMS API&#39;s is verbeterd. Client-sensitive informatie (d.w.z. toegangstokens) is verwijderd uit URL parameters. Deze gegevens worden nu verzonden in de koptekst voor postgegevens of autorisaties, zodat een veiliger communicatieproces mogelijk is. (NEO-63045)
+* De beveiliging in IMS API&#39;s is verbeterd. Clientgevoelige informatie (d.w.z. toegangstokens) is verwijderd uit URL-parameters. Deze gegevens worden nu verzonden in de header voor publicatiegegevens of autorisaties, zodat een veiliger communicatieproces mogelijk is. (NEO-63045)
 * De beveiliging in webapps is verbeterd om DDOS-aanvallen te voorkomen. (NEO-50757)
 * De beveiliging is verbeterd om te voorkomen dat PII-gegevens worden weergegeven in weblogfouten. (NEO-46827)
-* De beveiliging is geoptimaliseerd om te voorkomen dat het beveiligingstoken wordt opgenomen in de URL van de startpagina van de campagne. (NEO-38519)
+* De beveiliging is geoptimaliseerd om te voorkomen dat het beveiligingstoken wordt opgenomen in de URL van de Campaign-startpagina. (NEO-38519)
 
 **Compatibiliteitsupdates**
 
-* Tomcat is bijgewerkt naar versie 8.5.91
+* Tomcat is bijgewerkt naar Versie 8.5.91
 * De bibliotheek libexpat is bijgewerkt naar 2.5.0 om de beveiliging te verbeteren. (NEO-51023)
 
 **Verbeteringen**
 
-* De parameter MaxWorkingSetMb in het dossier van de serverconfiguratie (serverConf.xml) is gewijzigd om geheugentoewijzing voor leveringen te optimaliseren. (NEO-49204)
+* De parameter MaxWorkingSetMb in het bestand van de serverconfiguratie (serverConf.xml) is gewijzigd om geheugentoewijzing voor leveringen te optimaliseren. (NEO-49204)
 * De externe BigQuery-account is uitgebreid met nieuwe opties die worden gebruikt voor het instellen van de GCloud SDK. (NEO-63879) [Meer informatie](../../installation/using/configure-fda-google-big-query.md#google-external)
-* Een nieuwe `cusHeader` is toegevoegd aan het configuratiebestand van de server (serverConf.xml). Hiermee kunt u aangepaste koppen toevoegen wanneer u een bestand van een externe server uploadt. (NEO-58339) [Meer informatie](../../installation/using/the-server-configuration-file.md#cusheaders).
-* Het beheer van het trackinglogbestand is verbeterd en voorkomt negatieve id&#39;s voor lastMsgId. Het is veranderd van int32 in int64. (NEO-52290)
-* De workflow voor het leveren van statistieken (mid-sourcing) is toegevoegd. Deze nieuwe werkstroom synchroniseert de gegevens van de leveringsstatistiek (nms:deliveryStatus) van het midden aan de marketing instantie. (NEO-36802)
+* Er is een nieuwe sectie `cusHeader` toegevoegd aan het configuratiebestand van de server (serverConf.xml). Hiermee kunt u aangepaste headers toevoegen wanneer u een bestand van een externe server uploadt. (NEO-58339) [Meer informatie](../../installation/using/the-server-configuration-file.md#cusheaders).
+* Het beheer van het trackinglog is verbeterd en voorkomt negatieve ID&#39;s voor lastMsgId. Het is veranderd van int32 in int64. (NEO-52290)
+* De workflow voor het leveren van statistieken (mid-sourcing) is kant-en-klaar toegevoegd. Deze nieuwe workflow synchroniseert de gegevens van de leveringsstatistiek (nms:deliveryStat) van het midden aan de marketinginstantie. (NEO-36802)
 
 **Patches**
 
-* Probleem verholpen die kon voorkomen wanneer een de dienstverzoek voorafgaand aan login IMS werd gemaakt, als de de vraagauthentificatie van het de dienstverzoek een de dienstteken gebruikte. (NEO-64903)
-* Oplossing voor een probleem met regressie dat bij gebruik van de Digital Content Editor tot schuifproblemen kan leiden. (NEO-64671, NEO-59256)
-* Probleem met regressie verholpen bij het plakken van inhoud van Excel naar de Digital Content Editor. (NEO-63287)
-* Probleem verholpen waardoor webapps niet correct konden worden weergegeven in de v5-compatibiliteitsmodus. (NEO-63174)
-* Probleem verholpen waarbij niet-beheerders webAnalytics-leveringen niet konden verzenden. (NEO-62750)
-* Probleem verholpen waarbij browsers geen extra spaties konden toevoegen wanneer voorwaardelijke inhoud in een levering werd gebruikt. (NEO-62132)
-* Oplossing voor een regressieprobleem dat ervoor zorgde dat de berekening van de actieve contactpersoon niet correct werkte in de factureringsworkflow bij het gebruik van doelschema&#39;s gekoppeld aan meerdere logschema&#39;s. (NEO-61468)
-* Probleem verholpen dat tot een fout kon leiden en ertoe kon leiden dat u niet kon schuiven wanneer u de inhoud van een levering bewerkt. (NEO-61364)
-* Probleem verholpen waarbij een pop-upvenster werd geopend wanneer werd geklikt op een afbeelding in de e-mailinhoudeditor. (NEO-60752)
-* Probleem verholpen waarbij speciale tekens in de HTML-inhoud van een levering onjuist werden gecodeerd in verschillende browsers. (NEO-60081)
-* Oplossing voor een synchronisatieprobleem dat kon optreden bij gebruik van de inSMS-workflowactiviteit. (NEO-59544)
-* Probleem verholpen bij gebruik van de Big Query-connector met tijdstempel- of datetime-velden. (NEO-59502, NEO-49768)
-* Probleem verholpen waarbij cumulatieve leveringsrapporten niet konden worden gebruikt. (NEO-59211)
-* Probleem verholpen dat tot fouten kon leiden bij het delen van publiek met de People Core Service. (NEO-58637)
-* Probleem verholpen bij het weergeven van de spiegelpagina van een levering. (NEO-58325)
-* Probleem opgelost waarbij de xtk-expressie XtkLibrary.Right() niet werkte. (NEO-57870)
-* Probleem opgelost waarbij het stijlkenmerk van de body-tag werd gewijzigd tijdens het uploaden van een afbeelding in de Digital Content Editor. (NEO-57697)
-* Probleem verholpen met speciale tekens tijdens het uitvoeren van batchexport met de CRM-connectoractiviteit. (NEO-54300)
-* Probleem verholpen waarbij het laden van grote hoeveelheden niet kon werken met gegevenstypen &quot;tekenreeks&quot; bij het gebruik van een activiteit voor het laden van gegevens en de Big Query-connector. (NEO-53748)
-* Probleem met cachesleutel verholpen waarbij renderingproblemen konden optreden. (NEO-51516, NEO-49995)
-* Probleem verholpen dat tot een validatiefout kon leiden bij het verzenden van een directe-maillevering met targetMapping met goedkeuringen. (NEO-50758)
-* Probleem met querybeheer opgelost, wat van invloed zou kunnen zijn op de prestaties van de levering. (NEO-49991)
-* Probleem verholpen waarbij bij het gebruik van externe accounts in workflowleveringsactiviteiten voor campagnes problemen met de configuratie van externe accounts konden ontstaan. (NEO-49959)
-* Probleem met prestaties verholpen bij het verzenden van pushberichten. (NEO-49953) Het volgende probleem is opgelost: Japanse tekens kunnen bij het exporteren van rapporten onjuist worden weergegeven (NEO-49308).
-* Probleem opgelost waarbij in het Tomcat-foutrapport te veel foutgegevens werden weergegeven. (NEO-49029)
-* Probleem verholpen dat tot een leveringsfout kan leiden bij het gebruik van een groot aantal voorstellen. (NEO-48807)
-* Probleem verholpen waardoor de **Gegevens bijwerken** de workflowactiviteit werkt niet correct. (NEO-48140)
-* Probleem verholpen waarbij klik op het bijhouden van gegevens niet kon worden gesynchroniseerd voor leveringen met een andere externe account dan e-mail.(NEO-47277)
-* Probleem verholpen waardoor traceringslogboeken in real time niet konden worden gesynchroniseerd op de marketinginstantie van Message Center. (NEO-42540)
-* Probleem verholpen waardoor het voorvoegsel van de werkruimte niet kon worden weergegeven in het detectievenster van een schema, voor databasetabellen van de Snowflake. (NEO-40297)
-* Probleem verholpen dat was voorkomen `<img-amp>` -tags van werken in e-mailinhoud. (NEO-38685)
-* Probleem verholpen waarbij de archiveringsworkflow van het Message Center zou kunnen mislukken bij gebruik van een HTTP-relais. (NEO-33783)
-* Probleem verholpen waarbij lettertypenaam en -grootte zouden kunnen resulteren in fouten in de e-mailinhoudseditor. (NEO-61342)
+* Er is een probleem verholpen waarbij soms een dienstverzoek voorafgaand aan IMS-login werd gemaakt als de oproepverificatie van de serviceaanvraag een servicetoken gebruikte. (NEO-64903)
+* Er is een probleem met regressie verholpen dat bij gebruik van de Digital Content Editor tot scrolproblemen kon leiden. (NEO-64671, NEO-59256)
+* Er is een probleem verholpen met regressie bij het plakken van content van Excel naar de Digital Content Editor. (NEO-63287)
+* Er is een probleem verholpen waardoor webapps soms niet correct werden weergegeven in de v5-compatibiliteitsmodus. (NEO-63174)
+* Er is een probleem verholpen waarbij niet-beheerders geen webAnalytics-leveringen konden verzenden. (NEO-62750)
+* Er is een probleem verholpen waarbij browsers geen extra spaties konden toevoegen bij gebruik van voorwaardelijke content in een levering. (NEO-62132)
+* Er is een regressieprobleem verholpen waardoor de berekening van de actieve contactpersoon niet correct werkte in de factureringsworkflow bij het gebruik van doelschema&#39;s gekoppeld aan meerdere logschema&#39;s. (NEO-61468)
+* Er is een probleem verholpen dat soms een fout veroorzaakte en waardoor scrollen soms niet mogelijk was bij het bewerken van de content van een levering. (NEO-61364)
+* Er is een probleem verholpen waarbij een pop-upvenster werd geopend wanneer werd geklikt op een afbeelding in de editor van de e-mailcontent. (NEO-60752)
+* Er is een probleem verholpen waardoor speciale tekens in de HTML-content van een levering in verschillende browsers soms niet goed werden gecodeerd. (NEO-60081)
+* Er is een synchronisatieprobleem opgelost dat soms optrad bij het gebruik van de inSMS-workflowactiviteit. (NEO-59544)
+* Er is een probleem opgelost bij het gebruik van de Big Query-connector met tijdstempel- of datum/tijd-velden. (NEO-59502, NEO-49768)
+* Er is een probleem opgelost waardoor u geen cumulatieve leveringsrapporten kon gebruiken. (NEO-59211)
+* Er is een probleem opgelost dat tot fouten kon leiden bij het delen van doelgroepen met de People Core-service. (NEO-58637)
+* Er is een probleem opgelost bij het weergeven van de spiegelpagina van een levering. (NEO-58325)
+* Er is een probleem opgelost waardoor de xtk-expressie XtkLibrary.Right() niet werkte. (NEO-57870)
+* Er is een probleem opgelost waarbij het stijlkenmerk van de body-tag werd gewijzigd bij het uploaden van een afbeelding in de Digital Content Editor. (NEO-57697)
+* Er is een probleem opgelost met speciale tekens bij het uitvoeren van batchexports met de CRM-connectoractiviteit. (NEO-54300)
+* Er is een probleem opgelost waardoor het laden van grote hoeveelheden niet werkte met het gegevenstype &#39;tekenreeks&#39; bij gebruik van een activiteit voor het laden van gegevens en de Big Query-connector. (NEO-53748)
+* Er is een probleem met de cachesleutel opgelost dat tot renderingproblemen voor aanbiedingen kon leiden. (NEO-51516, NEO-49995)
+* Er is een probleem opgelost dat tot een validatiefout kon leiden bij het verzenden van een direct mail-levering met behulp van targetMapping met goedkeuringen. (NEO-50758)
+* Er is een probleem opgelost met het beheer van query&#39;s dat van invloed kon zijn op de leveringsprestaties. (NEO-49991)
+* Er is een probleem opgelost bij het gebruik van externe accounts voor de leveringsactiviteiten van de campagneworkflow, wat kon leiden tot problemen met de configuratie van externe accounts. (NEO-49959)
+* Er is een prestatieprobleem opgelost met het verzenden van pushmeldingen. (NEO-49953)
+Er is een probleem opgelost waardoor Japanse tekens soms onjuist werden weergegeven bij het exporteren van rapporten (NEO-49308).
+* Er is een probleem opgelost waarbij in het Tomcat-foutrapport te veel foutgegevens werden weergegeven. (NEO-49029)
+* Er is een probleem opgelost dat tot een leveringsfout kon leiden bij het gebruik van een groot aantal aanbiedingen. (NEO-48807)
+* Er is een probleem opgelost waardoor de workflowactiviteit **Gegevens bijwerken** niet correct werkte. (NEO-48140)
+* Er is een probleem opgelost waardoor de kliktraceringsgegevens niet konden worden gesynchroniseerd voor leveringen met een ander extern account dan e-mail.(NEO-47277)
+* Er is een probleem opgelost waardoor realtimeraceringslogboeken niet konden worden gesynchroniseerd in de marketinginstantie van het Berichtencentrum. (NEO-42540)
+* Er is een probleem opgelost waardoor het voorvoegsel van de werkruimte niet kon worden weergegeven in het detectievenster van een schema, voor databasetabellen van Snowflake. (NEO-40297)
+* Er is een probleem opgelost waardoor `<img-amp>`-tags niet werkten in e-mailcontent. (NEO-38685)
+* Er is een probleem opgelost waardoor de archiveringsworkflow van het Berichtencentrum mislukte bij gebruik van een HTTP-relay. (NEO-33783)
+* Er is een probleem opgelost dat fouten in de lettertypenaam en -grootte kon veroorzaken in de editor voor e-mailcontent. (NEO-61342)
 
 ## Release 7.3.3 - build 9359 {#release-7-3-3}
 
