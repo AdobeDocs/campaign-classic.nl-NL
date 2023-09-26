@@ -2,13 +2,13 @@
 product: campaign
 title: Terugkerende levering
 description: Meer informatie over de activiteit van de workflow Terugkerende levering
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 17%
+source-wordcount: '277'
+ht-degree: 19%
 
 ---
 
@@ -34,24 +34,24 @@ Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het cre�
 
 Raadpleeg dit voor een voorbeeld van deze activiteit die wordt gebruikt [sectie](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Hoe te opstelling terugkomende levering
+## Hoe te opstelling terugkomende levering {#set-up-recurring-delivery}
 
 A **terugkerende levering** wordt elke keer dat het wordt uitgevoerd, een nieuwe leveringsinstantie gemaakt. Als de workflow bijvoorbeeld eenmaal per week wordt uitgevoerd, levert dat na één jaar 52 leveringen op. Dit betekent ook dat het brede logboek en het volgen logboeken door elke leveringsinstantie zullen worden gescheiden.
 
 ![Terugkerende levering](assets/delivery_recurring.jpg)
 
-Als u een terugkerende levering wilt tegenhouden van het lopen, zou u de campagne volledig moeten annuleren of de werkschema ophouden uitvoerend het. Als u de levering stopt vanaf het Campagne-dashboard, wordt alleen de levering gestopt: de volgende exemplaren van de terugkerende levering zullen bij elke werkschemauitvoering verder worden gecreeerd.
+Als u een terugkerende levering wilt tegenhouden van het lopen, zou u de campagne volledig moeten annuleren of de werkschema ophouden uitvoerend het. Als de levering vanaf het campagnemdashboard wordt gestopt, wordt de levering alleen gestopt: de volgende exemplaren van de terugkerende levering blijven bij elke workflowuitvoering worden gemaakt.
 
 >[!NOTE]
 >
 >Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** type activiteit.
 > 
->Om een levering via een campagnewerkschema direct tot stand te brengen, gebruik de kanaal specifieke activiteiten die (b.v. **[!UICONTROL Email delivery]**).
+>Om een levering via een campagnewerkschema direct tot stand te brengen, gebruik de kanaal specifieke activiteiten die (b.v. **[!UICONTROL Recurring delivery]**).
 
-## Tutorial video (#repeat-delivery-video)
+## Video over zelfstudie {#recurring-delivery-video}
 
 Deze video verklaart hoe te om een terugkomende levering en een planneractiviteit te vormen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
