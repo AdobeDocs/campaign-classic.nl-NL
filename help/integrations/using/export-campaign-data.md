@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Gegevens exporteren van Campaign naar Adobe Experience Platform
-description: Leer hoe u gegevens exporteert van Campaign Classic naar Adobe Experience Platform
-feature: Platform Integration
+description: Leer hoe u gegevens van Campaign Classic naar Adobe Experience Platform exporteert
+feature: Experience Platform Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Als u Campaign Classic-gegevens wilt exporteren naar Adobe Real-time Customer Data Platform (RTCDP), moet u eerst een workflow in Campaign Classic maken om de gegevens die u wilt delen naar de opslaglocatie van uw S3- of Azure-blok te exporteren.
 
-Nadat de workflow is geconfigureerd en de gegevens naar de opslaglocatie zijn verzonden, moet u de opslaglocatie van uw S3- of Azure-blob als een verbinding maken **Bron** Adobe ervaren Platform.
+Nadat de workflow is geconfigureerd en de gegevens naar de opslaglocatie zijn verzonden, moet u de opslaglocatie van uw S3- of Azure-blob als een verbinding maken **Bron** in Adobe Experience Platform.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Nadat de workflow is geconfigureerd en de gegevens naar de opslaglocatie zijn ve
 
 ## Een exportworkflow maken in Campaign Classic
 
-Als u gegevens van Campaign Classic naar uw opslaglocatie van S3 of Azure Blob wilt exporteren, moet u een workflow maken om de gegevens die u wilt exporteren als doel in te stellen en deze naar uw opslaglocatie te verzenden.
+Om gegevens van Campaign Classic naar uw opslagplaats van S3 of Azure Blob uit te voeren, moet u een werkschema bouwen om de gegevens te richten u wilt uitvoeren en het verzenden naar uw opslagplaats.
 
 Hiervoor kunt u toevoegen en configureren:
 
@@ -46,9 +46,9 @@ In de onderstaande workflow worden logbestanden regelmatig uitgepakt in een CSV-
 
 ## De opslaglocatie aansluiten als bron
 
-De belangrijkste stappen om uw opslaglocatie van de S3- of Azure-blob als een **Bron** in Adobe experience wordt het Platform hieronder weergegeven. Gedetailleerde informatie over elk van deze stappen is beschikbaar in het dialoogvenster [Documentatie van bronconnectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
+De belangrijkste stappen om uw opslaglocatie van de S3- of Azure-blob als een **Bron** in Adobe Experience Platform worden hieronder vermeld. Gedetailleerde informatie over elk van deze stappen is beschikbaar in het dialoogvenster [Documentatie van bronconnectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
 
-1. In het Adobe Experience-platform **[!UICONTROL Sources]** een verbinding maken met uw opslaglocatie:
+1. In Adobe Experience Platform **[!UICONTROL Sources]** een verbinding maken met uw opslaglocatie:
 
    * [Een Amazon S3-bronverbinding maken](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob-connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
