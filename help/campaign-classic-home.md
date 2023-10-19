@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: baa1cfe3b8e65daee7902c85c0ca3ef293b44657
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 60%
+source-wordcount: '171'
+ht-degree: 64%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 60%
 
 ## Nieuwe functies
 
-* **[Release maart is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en oplossingen in de Opmerkingen bij de release
-
-* **[Release-programma 2022](technotes/using/dc-migration.md)**<br/> Upgrade uw omgeving en verbeter de beveiliging, infrastructuur en prestaties
+* **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en oplossingen in de Opmerkingen bij de release
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[De Adobe Experience Cloud Triggers-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren
+* **[De Adobe Experience Cloud-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren
 
 [Meer updates](rn/using/documentation-updates.md)
 
