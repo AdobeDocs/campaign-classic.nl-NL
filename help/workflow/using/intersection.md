@@ -2,13 +2,13 @@
 product: campaign
 title: Doorsnede
 description: Doorsnede
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 1%
+source-wordcount: '443'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 An **Intersectie**-type activiteit leidt tot een doel van de doorsnede van de ontvangen doelstellingen.
 
-Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten daarom worden beëindigd voordat de doorsnede kan worden uitgevoerd. Om deze activiteit te vormen, moet u een etiket voor het evenals de opties betreffende het resultaat ingaan.
+Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit. Het doel wordt gecreëerd met alle ontvangen resultaten: alle eerdere activiteiten moeten daarom worden voltooid voordat de doorsnede kan worden uitgevoerd. Om deze activiteit te vormen, moet u een etiket voor het evenals de opties betreffende het resultaat ingaan.
 
 ![](assets/s_user_segmentation_inter.png)
 
@@ -35,15 +35,15 @@ Controleer de **[!UICONTROL Generate complement]** als u de resterende populatie
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
-## Voorbeeld van intersectie {#intersection-example}
+## Voorbeeld van doorsnede {#intersection-example}
 
-In het volgende voorbeeld is het doel van de doorsnede het berekenen van de ontvangers gemeenschappelijk aan drie eenvoudige vragen om een lijst te creëren.
+In het volgende voorbeeld is het doel van de doorsnede het berekenen van de ontvangers gemeenschappelijk aan drie eenvoudige vragen om een lijst tot stand te brengen.
 
 1. Na drie eenvoudige vragen, neem een **[!UICONTROL Intersection]** -type activiteit.
 
-   In dit voorbeeld; de vragen betreffen respectievelijk mannen, ontvangers die in Parijs wonen en ontvangers tussen 18 en 30 jaar oud.
+   In dit voorbeeld zijn de vragen gericht op mannen, ontvangers in Parijs en ontvangers tussen de 18 en 30 jaar oud.
 
-1. Configureer de doorsnede. Selecteer hiervoor de optie **[!UICONTROL Keys only]** afstemmingsmethode, aangezien de populaties die uit de vragen voortvloeien consistente gegevens bevatten.
+1. Vorm de doorsnede. Selecteer de optie **[!UICONTROL Keys only]** afstemmingsmethode, aangezien de populaties die uit de vragen voortvloeien consistente gegevens bevatten.
 1. Als u aanvullende gegevens voor de query&#39;s hebt ingevoerd, kunt u ervoor kiezen alleen die gegevens te behouden die door ontvangers worden gedeeld door het desbetreffende vakje in te schakelen.
 1. Als u de rest van de gegevens wilt gebruiken (met betrekking tot de vragen maar niet hun doorsnede), controleer **[!UICONTROL Generate complement]** doos.
 1. Voeg een activiteit van de lijstupdate na het intersectieresultaat toe. U kunt ook een update van de lijst toevoegen aan het complement als u dit wilt gebruiken.
