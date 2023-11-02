@@ -5,17 +5,14 @@ description: Meer informatie over best practices op het gebied van beveiliging v
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Personalisatie en privacy {#privacy}
-
-
-
 
 ## URL aanpassen {#url-personalization}
 
@@ -58,7 +55,7 @@ Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in v
 
 Als u werkt op de build 19.1.4, kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
-Als ontvangen Campagne, Beheerde Cloud Services of hybride klant, moet u uit reiken aan [Klantenservice](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om URL-ondertekening uit te schakelen.
+Als ontvangen Campagne, Beheerde Cloud Servicen of hybride klant, moet u uit reiken aan [Klantenservice](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om URL-ondertekening uit te schakelen.
 
 Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
 
