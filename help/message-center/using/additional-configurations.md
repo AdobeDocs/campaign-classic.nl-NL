@@ -8,9 +8,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -92,6 +92,12 @@ Op de uitvoeringsinstantie(s) kunnen de technische workflows voor transactiemeld
    * **[!UICONTROL Ignored by the delivery]** : deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.
    * **[!UICONTROL Delivery failed]** : deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.
    * **[!UICONTROL Event not taken into account]** : de gebeurtenis kan niet worden gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet verwerkt.
+
+### Workflowschema voor archivering
+
+Wijzig de **archiveringsworkflow** programma dat op de controleinstantie loopt. Anders kunnen sommige gegevens die worden opgehaald uit de uitvoeringsinstantie, verloren gaan.
+
+Als u wel het schema van de archiveringsworkflow wijzigt, moet u ook de **traceringsworkflow** programma op de uitvoeringsinstantie om het archiveringswerkschema op de controleinstantie aan te passen.
 
 ## Multibranding configureren {#configuring-multibranding}
 
