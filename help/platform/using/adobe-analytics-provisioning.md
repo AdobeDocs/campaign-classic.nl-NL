@@ -7,22 +7,20 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 3%
+source-wordcount: '673'
+ht-degree: 4%
 
 ---
 
 # Adobe Analytics-connector provisioning {#adobe-analytics-connector-provisioning}
 
-
-
 >[!IMPORTANT]
 >
 > Deze stappen mogen alleen worden uitgevoerd door Hybride en On-Premise implementaties.
 >
->Neem voor gehoste implementaties contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+>Neem voor gehoste implementaties contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie ondersteunt Adobe Identity Management Service (IMS):
 
@@ -31,6 +29,12 @@ De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie onder
 * Als u een nieuwe aansluiting implementeert, is de implementatie van Adobe IMS optioneel. Zonder Adobe ID-gebruiker gebruikt Adobe Campaign een technische gebruiker voor synchronisatie met Adobe Analytics.
 
 Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat uitsluitend voor de Analytics-connector wordt gebruikt. Vervolgens moet u een Adobe I/O-project maken.
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## Een Adobe Analytics-productprofiel maken {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Raadpleeg voor meer informatie over productprofielen de [Documentatie voor behee
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Voor de **[!UICONTROL Dimensions]** mogelijkheden, voegt de **[!UICONTROL Dimensions]** u zult later moeten vormen.
+1. Voor de **[!UICONTROL Dimensions]** mogelijkheden, voegt de **[!UICONTROL Dimensions]** nodig voor toekomstige configuratie.
+
+   Zorg ervoor dat de gekozen Dimensionen overeenkomen met de apparaten die moeten worden geconfigureerd in de [Externe account](adobe-analytics-connector.md#external-account-classic) en uitlijnen met het corresponderende eVars-nummer van [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. Voor de **[!UICONTROL Report Suite Tools]** kunt u de volgende machtigingen toevoegen:
 
