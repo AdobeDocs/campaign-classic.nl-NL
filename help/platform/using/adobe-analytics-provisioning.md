@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -30,11 +30,9 @@ De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie onder
 
 Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat uitsluitend voor de Analytics-connector wordt gebruikt. Vervolgens moet u een Adobe I/O-project maken.
 
-<!--
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
--->
+> JWT (JSON Web Tokens) is momenteel bezig met afschrijvingen en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campagne en de documentatie zal worden aangepast aan deze updates.
 
 ## Een Adobe Analytics-productprofiel maken {#analytics-product-profile}
 

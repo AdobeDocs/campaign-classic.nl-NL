@@ -10,23 +10,21 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 5%
 
 ---
 
 # Adobe I/O configureren voor Adobe Experience Cloud Triggers {#configuring-adobe-io}
-
-
 
 >[!CAUTION]
 >
 >Als u een oudere versie van de integratie van Trekkers door Authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
 >Let op: tijdens deze overgang naar [!DNL Adobe I/O]bepaalde inkomende triggers kunnen verloren gaan.
 >
->De oude verificatiemodus Auth met Campagne is uitgeschakeld op **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot **25 mei 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot **mei 2022**. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md#step-optional) naar Adobe.
+>De oude verificatiemodus Auth met Campagne is uitgeschakeld op **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot **25 mei 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van de Adobe om de support uit te breiden tot **mei 2022**. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md#step-optional) aan de Adobe.
 
 ## Vereisten {#adobe-io-prerequisites}
 
@@ -39,11 +37,11 @@ Controleer voordat u met deze implementatie begint of:
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
-1. Toegang [!DNL Adobe I/O] en meld u aan bij de toegang tot ontwikkelaars van uw organisatie.
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is momenteel bezig met afschrijvingen en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campagne en de documentatie zal worden aangepast aan deze updates.
 
-   >[!NOTE]
-   >
-   > Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
+1. Toegang [!DNL Adobe I/O] en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
 1. Extraheer de bestaande id van de integratieclient (Cliënt ID) van het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet-bestaand of leeg kenmerk geeft aan dat de id van de client niet is geconfigureerd.
 
