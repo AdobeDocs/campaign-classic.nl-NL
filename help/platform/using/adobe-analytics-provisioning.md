@@ -3,24 +3,25 @@ product: campaign
 title: Adobe Analytics-connector
 description: Meer informatie over Adobe Analytics-connectorprovisioning
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Adobe Analytics-connector provisioning {#adobe-analytics-connector-provisioning}
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 > Deze stappen mogen alleen worden uitgevoerd door Hybride en On-Premise implementaties.
 >
->Neem voor gehoste implementaties contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+>Neem voor de gehoste en Campagne Managed Services-implementaties contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie ondersteunt Adobe Identity Management Service (IMS):
 
