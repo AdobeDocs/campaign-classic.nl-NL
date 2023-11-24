@@ -3,16 +3,16 @@ product: campaign
 title: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
 description: Leer hoe u integratie met gedeelde soorten publiek configureert
 feature: Audiences, People Core Service Integration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '582'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 
 
-Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie voor u te werk gaan en u contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
+Zodra u dit verzoek hebt voorgelegd, zal de Adobe aan de levering van de integratie voor u te werk gaan en u te contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
 
 1. [Stap 1: De externe accounts in Adobe Campaign configureren of controleren](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Stap 2: Vorm de Gegevensbron](#step-2--configure-the-data-source)
@@ -31,12 +31,16 @@ Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie
 >
 >Als u het demdex-domein gebruikt en de syntaxis volgt **ftp-out.demdex.com** voor de externe rekening van de invoer en **ftp-in.demdex.com** voor de externe exportaccount moet u uw implementatie dienovereenkomstig aanpassen en overschakelen naar de Amazon Simple Storage Service (S3)-connector om gegevens te importeren of te exporteren. Raadpleeg voor meer informatie over het configureren van externe accounts met Amazon S3 [sectie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
+In het volgende diagram wordt beschreven hoe deze integratie werkt. Hier staat AAM voor Adobe Audience Manager en AC voor Adobe Campaign.
+
+![](assets/aam_diagram.png){align="center"}
+
 ## Stap 1: De externe accounts in Adobe Campaign configureren of controleren {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configureren of controleren:
 
 1. Klik op de knop **[!UICONTROL Explorer]** pictogram.
-1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**. De vermelde SFTP-rekeningen hadden door Adobe moeten zijn geconfigureerd en de benodigde informatie had aan u moeten worden meegedeeld.
+1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**. De vermelde SFTP-rekeningen hadden door Adobe moeten worden geconfigureerd en de benodigde informatie had aan u moeten worden meegedeeld.
 
    * **[!UICONTROL importSharedAudience]**: account gewijd aan het importeren van publiek.
    * **[!UICONTROL exportSharedAudience]**: account gewijd aan het exporteren van soorten publiek.
@@ -87,10 +91,16 @@ Om te vormen **[!UICONTROL Recipient - Visitor ID]** gegevensbron:
 
 Voor de configuratie van de integratie met de dienst van de Kern van Mensen of de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
 
-U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl).
+Als u wilt dat een gedeeld publiek kan functioneren met de bezoeker-id, moet het trackingserverdomein een subdomein zijn van de aangeklikte URL of de hoofdwebsite.
+
+>[!IMPORTANT]
+>
+>U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl).
 
 ## Stap 4: Vorm de Dienst van identiteitskaart van de Bezoeker {#step-4--configure-the-visitor-id-service}
 
 Raadpleeg het volgende als uw bezoekersidentiteitsservice nog nooit is geconfigureerd op uw webeigenschappen of websites [document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) leren hoe te om uw dienst of het volgende te vormen [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+
+De klant-id&#39;s synchroniseren met de opgegeven id `setCustomerID` functie in de dienst van identiteitskaart van het Experience Cloud met de integratiecode: `AdobeCampaignID`. De `AdobeCampaignID` moet overeenkomen met de waarde van de Reconcilation-sleutel die is ingesteld in de ontvangergegevensbron die is geconfigureerd in [Stap 2: Vorm de Gegevensbronnen](#step-2--configure-the-data-sources).
 
 Uw configuratie en levering worden voltooid, kan de integratie nu worden gebruikt om publiek of segmenten in te voeren en uit te voeren.
