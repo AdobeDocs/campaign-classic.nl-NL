@@ -8,10 +8,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
+source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,11 @@ ht-degree: 4%
 
 De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie ondersteunt Adobe Identity Management Service (IMS):
 
-* Als u een gemigreerde externe account beheert, moet u Adobe IMS implementeren en verbinding maken met Adobe Campaign via een Adobe ID. De gebruiker die via Adobe ID IMS is aangemeld, moet de eigenaar zijn van de **Gegevensconnector** in Adobe Analytics en beschikken over een set machtigingen voor de **Productprofiel** hieronder vermeld.
+* Als u een gemigreerde externe account beheert, moet u Adobe IMS implementeren en verbinding maken met Adobe Campaign via een Adobe ID.
+
+  Houd er rekening mee dat de gebruiker die via Adobe ID IMS is aangemeld, eigenaar moet zijn van de **Gegevensconnector** -account in Adobe Analytics en beschikken over de juiste machtigingen voor de **Productprofiel** genoemd [onder](#analytics-product-profile).
+
+Het probleem was dat de eigenaar van de gegevensconnector een andere gebruiker was dan de gebruiker die was aangemeld bij Campagne en die de integratie met Analytics probeerde uit te voeren.
 
 * Als u een nieuwe aansluiting implementeert, is de implementatie van Adobe IMS optioneel. Zonder Adobe ID-gebruiker gebruikt Adobe Campaign een technische gebruiker voor synchronisatie met Adobe Analytics.
 
@@ -33,7 +37,7 @@ Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat 
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) is momenteel bezig met afschrijvingen en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campagne en de documentatie zal worden aangepast aan deze updates.
+> JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campaign en de documentatie zal worden aangepast aan deze updates.
 
 ## Een Adobe Analytics-productprofiel maken {#analytics-product-profile}
 
