@@ -9,9 +9,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1256'
 ht-degree: 2%
 
 ---
@@ -83,6 +83,10 @@ Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een ov
 
 ### Eenvoudig onderhoud {#simple-maintenance}
 
+>[!IMPORTANT]
+>
+>De Adobe adviseert sterk om VACUUM niet VOLLEDIG op de Adobe-ontvangen gegevensbestandmontages van de Campagne in werking te stellen.Het voorgestelde onderhoud is een gids voor slechts installaties ON-PREMISE. Voor de implementaties en de schema&#39;s van de douanetabel, gebruik VACUUM VOLLEDIG bij uw eigen risico aangezien VACUUM - zonder controle - lijsten exclusief kan sluiten die gestagelde vragen veroorzaken - en in sommige gevallen, omhoog het volledige gegevensbestand blokkeren.
+
 In PostgreSQL, kunt u deze typische sleutelwoorden gebruiken:
 
 * VACUUM (VOLLEDIG, ANALYSEREN, VERBODEN)
@@ -138,10 +142,10 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe raadt aan om te beginnen met kleinere tabellen: als het proces op grote tabellen mislukt (waar het risico op mislukking het grootst is), is ten minste een deel van het onderhoud voltooid.
+>* Adobe beveelt aan om te beginnen met kleinere tabellen: als het proces op grote tabellen mislukt (waar het risico op mislukking het grootst is), is ten minste een deel van het onderhoud voltooid.
 >* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval zijn voor **NmsRecipient** als u grote dagelijkse gegevensreplicatiestromen hebt.
 >* De instructie VACUUM vergrendelt de tabel, die sommige processen onderbreekt terwijl onderhoud wordt uitgevoerd.
->* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze functie te gebruiken voor de **YyyNmsBroadLogXxx** tabel.
+>* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze optie te gebruiken voor de **YyyNmsBroadLogXxx** tabel.
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow, met behulp van een **[!UICONTROL SQL]** activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 >
 
