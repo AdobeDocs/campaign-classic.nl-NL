@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3645'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### November 2023
 
-JWT (JSON Web Tokens) is momenteel bezig met afschrijvingen en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campagne en de documentatie zal worden aangepast aan deze updates.
+JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campaign en de documentatie zal worden aangepast aan deze updates.
 
 ### Augustus 2023
 
@@ -185,7 +185,7 @@ Nieuwe Vertica Analytics FDA-connector - [Meer informatie](../../installation/us
 
 Nieuwe Google BigQuery FDA-connector - [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
 
-De technische werkstroombeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk zijn uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+De technische beschrijving van de workflow Facturering (billing) bevat nu de taken die oorspronkelijk werden uitgevoerd door Aantal actieve factureringsprofielen (billingActiveContactCount). [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
 ## Mei 2021 {#may-2021}
 
