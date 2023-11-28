@@ -6,10 +6,10 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 5%
+source-wordcount: '1282'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ De ingebouwde pakketten bevatten een reeks eigenschappen die volgens uw behoefte
 >
 >Nadat een pakket is geïnstalleerd, kunt u het niet verwijderen.
 >
->Neem als gehoste of hybride klant contact op met Adobe om een nieuw ingebouwd pakket te implementeren.
+>Neem als gehoste of hybride klant contact op met de Adobe om een nieuw ingebouwd pakket te implementeren.
 
 Een ingebouwd pakket installeren:
 
@@ -98,7 +98,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr--> 
   <tr> 
    <td> Sociale netwerken (sociale marketing) <br /> </td> 
-   <td> Hiermee synchroniseert u Adobe Campaign met Twitter en Facebook. <a href="../../social/using/about-social-marketing.md">Meer informatie</a> <br /> </td> 
+   <td> Hiermee synchroniseert u Adobe Campaign met X (voorheen bekend als Twitter) en Facebook. <a href="../../social/using/about-social-marketing.md">Meer informatie</a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 
@@ -213,7 +213,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Verordening inzake bescherming van privacydata<br /> </td> 
-   <td> Bevat extra functionaliteit om met uw naleving van de Privacy in Campaign Classic te helpen. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a> <br /> </td> 
+   <td> Bevat extra functionaliteit om u te helpen met uw naleving van de Privacy in Campaign Classic. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 7%
+source-wordcount: '1841'
+ht-degree: 8%
 
 ---
 
@@ -119,7 +119,7 @@ De volgende kanalen kunnen worden gevormd:
 * [Telefoon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X (voorheen bekend als Twitter)](../../social/using/about-social-marketing.md)
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -242,7 +242,7 @@ De instellingen voor externe accountconfiguratie zijn afhankelijk van de databas
 * Toegang configureren tot [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
-## Adobe Oplossing integratie externe accounts
+## Integratie externe accounts van oplossing voor Adobe
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Algemene rapporten
 description: Algemene rapporten
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 3%
+source-wordcount: '2308'
+ht-degree: 4%
 
 ---
 
@@ -28,19 +28,19 @@ Klik op de naam van de rapporten om deze weer te geven. De volgende rapporten zi
 >
 >In deze sectie worden alleen de rapporten weergegeven die betrekking hebben op leveringen.
 
-* **[!UICONTROL Delivery throughput]** : verwijzen naar [Leveringsdoorvoer](#delivery-throughput).
-* **[!UICONTROL Browsers]** : verwijzen naar [Browsers](#browsers).
-* **[!UICONTROL Sharing to social networks]** : verwijzen naar [Delen naar sociale netwerken](#sharing-to-social-networks).
-* **[!UICONTROL Statistics on sharing activities]** : verwijzen naar [Statistieken over de activiteiten voor het delen van diensten](#statistics-on-sharing-activities).
-* **[!UICONTROL Operating systems]** : verwijzen naar [Besturingssystemen](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : verwijzen naar [URL&#39;s en klik op streams](../../reporting/using/delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : verwijzen naar [Traceringsindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar [Niet-te leveren producten en bedragen](#non-deliverables-and-bounces).
-* **[!UICONTROL User activities]** : verwijzen naar [Gebruikersactiviteiten](#user-activities).
-* **[!UICONTROL Subscription tracking]** : verwijzen naar [Abonnement bijhouden](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : verwijzen naar [Overzicht van levering](../../reporting/using/delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** : verwijzen naar [Leveringsstatistieken](#delivery-statistics).
-* **[!UICONTROL Breakdown of opens]** : verwijzen naar [Indeling van openen](#breakdown-of-opens).
+* **[!UICONTROL Delivery throughput]** : verwijs naar [Leveringsdoorvoer](#delivery-throughput).
+* **[!UICONTROL Browsers]** : verwijs naar [Browsers](#browsers).
+* **[!UICONTROL Sharing to social networks]** : verwijs naar [Delen naar sociale netwerken](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]** : verwijs naar [Statistieken over de activiteiten voor het delen van diensten](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]** : verwijs naar [Besturingssystemen](#operating-systems).
+* **[!UICONTROL URLs and click streams]** : verwijs naar [URL&#39;s en klik op streams](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : verwijs naar [Traceringsindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]** : verwijs naar [Niet-te leveren producten en bedragen](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]** : verwijs naar [Gebruikersactiviteiten](#user-activities).
+* **[!UICONTROL Subscription tracking]** : verwijs naar [Abonnement bijhouden](#subscription-tracking).
+* **[!UICONTROL Delivery summary]** : verwijs naar [Overzicht van levering](../../reporting/using/delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** : verwijs naar [Leveringsstatistieken](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]** : verwijs naar [Indeling van openen](#breakdown-of-opens).
 
 ## Leveringsdoorvoer {#delivery-throughput}
 
@@ -48,11 +48,11 @@ Dit verslag bevat informatie over de leveringsproductie van het gehele platform 
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: Weergave van 1 uur, weergave van 3 uur, weergave van 24 uur, enz. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: een weergave van 1 uur, een weergave van 3 uur, een weergave van 24 uur, enzovoort. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 >[!NOTE]
 >
->Als uw exemplaar op AWS wordt gehost, kunt u ook het aantal verzonden leveringen per uur controleren met de Campaign Classic [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Als uw exemplaar op AWS wordt gehost, kunt u ook het aantal verzonden leveringen per uur controleren met het Campaign Classic [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
@@ -66,9 +66,9 @@ Dit rapport toont de uitsplitsing van opent, klikt en transacties per half uur, 
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Opens]** : Het totale aantal geopende berichten. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent opent, verwijs naar [Tekstspatiëring wordt geopend](../../reporting/using/indicator-calculation.md#tracking-opens-).
+* **[!UICONTROL Opens]** : Totaal aantal geopende berichten. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent opent, verwijs naar [Tekstspatiëring wordt geopend](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Het totale aantal klikken op koppelingen in leveringen. Er wordt geen rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
-* **[!UICONTROL Transactions]** : Het totale aantal transacties nadat een bericht is ontvangen. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]** : Totaal aantal transacties nadat een bericht is ontvangen. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
 ## Niet-leverbare items en niet-bezorgingen {#non-deliverables-and-bounces}
 
@@ -96,19 +96,19 @@ De volgende indicatoren worden gebruikt:
 
 * **[!UICONTROL User unknown]** : Fouttype dat tijdens de levering wordt gegenereerd om aan te geven dat het e-mailadres ongeldig is.
 * **[!UICONTROL Invalid domain]** : Fouttype dat wordt gegenereerd bij het verzenden van een levering om aan te geven dat het domein van het e-mailadres onjuist is of niet bestaat.
-* **[!UICONTROL Inbox full]** : Het type van fout na vijf leveringspogingen wordt geproduceerd om erop te wijzen dat de ontvangers inbox teveel berichten bevat.
+* **[!UICONTROL Inbox full]** : Fouttype dat wordt gegenereerd na vijf leveringspogingen om aan te geven dat het postvak van de ontvanger te veel berichten bevat.
 * **[!UICONTROL Account disabled]** : Fouttype dat wordt gegenereerd bij het verzenden van een levering om aan te geven dat het adres niet langer bestaat.
-* **[!UICONTROL Rejected]** : Het type van fout produceerde wanneer een adres door IAP (Internet Access Provider) wordt verworpen, bijvoorbeeld na de toepassing van een veiligheidsregel (anti-spamsoftware).
-* **[!UICONTROL Unreachable]** : Fouttype dat optreedt in de tekenreeks voor berichtdistributie: incident op het SMTP relais, tijdelijk onbereikbaar domein, enz.
+* **[!UICONTROL Rejected]** : Fouttype dat wordt gegenereerd wanneer een adres wordt afgewezen door de IAP (Internet Access Provider), bijvoorbeeld na toepassing van een beveiligingsregel (anti-spamsoftware).
+* **[!UICONTROL Unreachable]** : Het type van fout dat in het koord van de berichtdistributie voorkomt: incident op het relais SMTP, domein tijdelijk onbereikbaar etc.
 * **[!UICONTROL Not connected]** : Fouttype om aan te geven dat de mobiele telefoon van de ontvanger op het moment van verzending wordt uitgeschakeld of losgekoppeld van het netwerk.
 
-   >[!NOTE]
-   >
-   >Deze indicator heeft alleen betrekking op leveringen op mobiele kanalen. Raadpleeg [deze sectie](../../delivery/using/sms-channel.md) voor meer informatie.
+  >[!NOTE]
+  >
+  >Deze indicator heeft alleen betrekking op leveringen op mobiele kanalen. Raadpleeg [deze sectie](../../delivery/using/sms-channel.md) voor meer informatie.
 
-   U kunt elke regel van de waardetabel openen door op de knop `[+]` symbool. Voor elk fouttype kunt u de indeling van foutberichten per domein weergeven.
+  U kunt elke regel van de waardetabel openen door op de knop `[+]` symbool. Voor elk fouttype kunt u de indeling van foutberichten per domein weergeven.
 
-   ![](assets/s_ncs_user_errors_report_detail.png)
+  ![](assets/s_ncs_user_errors_report_detail.png)
 
 **[!UICONTROL Breakdown of errors per domain]**
 
@@ -126,7 +126,7 @@ U kunt elke regel van de waardetabel openen door op de knop [+] symbool. Voor el
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/ac-cubes.md) voor meer informatie. De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/ac-cubes.md) voor meer informatie. De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
 
 ## Browsers {#browsers}
 
@@ -134,7 +134,7 @@ Dit verslag geeft een overzicht van de internetbrowsers die door de ontvangers v
 
 >[!NOTE]
 >
->De waarden in dit rapport zijn schattingen: alleen ontvangers die op een levering hebben geklikt , worden in aanmerking genomen .
+>De waarden in dit rapport zijn schattingen: alleen ontvangers die op een levering hebben geklikt, worden in aanmerking genomen.
 
 **Algemene statistieken**
 
@@ -146,7 +146,7 @@ De volgende indicatoren worden gebruikt:
 
 * **[!UICONTROL Visitors]** : Het totale aantal beoogde ontvangers (per internetbrowser) dat minstens één keer op een levering heeft geklikt.
 * **[!UICONTROL Pages viewed]** : Het totale aantal klikken op koppelingen in een levering (per internetbrowser) voor alle leveringen.
-* **[!UICONTROL Usage rate]** : Dit percentage is de uitsplitsing van bezoekers (per internetbrowser) in verhouding tot het totale aantal bezoekers.
+* **[!UICONTROL Usage rate]** : Dit percentage geeft de uitsplitsing weer van bezoekers (per internetbrowser) in verhouding tot het totale aantal bezoekers.
 
 **Statistieken per browser**
 
@@ -162,14 +162,14 @@ De **[!UICONTROL Breakdown per version]** De grafiek geeft de uitsplitsing van b
 
 In de waardetabel worden de volgende indicatoren gebruikt:
 
-* **[!UICONTROL Global rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer ten opzichte van het totale aantal bezoekers (in alle browsers).
-* **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in deze browser).
+* **[!UICONTROL Global rate]** : Deze frequentie geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in alle browsers).
+* **[!UICONTROL Relative rate]** : Deze frequentie geeft de uitsplitsing van bezoekers per versie weer ten opzichte van het totale aantal bezoekers (in deze browser).
 
 ### Delen naar sociale netwerken {#sharing-to-social-networks}
 
-Met virale marketing kunnen ontvangers gegevens delen met hun contactnetwerk: ze kunnen een koppeling naar hun profiel toevoegen (Facebook, Twitter, enz.) of stuur een bericht naar een vriend. Elk aandeel en elke toegang tot gedeelde informatie wordt gevolgd binnen de levering. Raadpleeg voor meer informatie over het op de markt brengen van virale middelen [deze sectie](../../delivery/using/viral-and-social-marketing.md).
+Met virale marketing kunnen ontvangers informatie delen met hun contactnetwerk: ze kunnen een koppeling toevoegen aan hun profiel (Facebook, X - voorheen bekend als Twitter, enz.) of stuur een bericht naar een vriend. Elk aandeel en elke toegang tot gedeelde informatie wordt gevolgd binnen de levering. Raadpleeg voor meer informatie over het op de markt brengen van virale middelen [deze sectie](../../delivery/using/viral-and-social-marketing.md).
 
-Dit rapport toont de uitsplitsing van gedeelde en geopende berichten per sociaal netwerk (Facebook, Twitter, enz.) en/of per e-mail.
+Dit rapport geeft de uitsplitsing weer van gedeelde en geopende berichten per sociaal netwerk (Facebook, X, enz.) en/of per e-mail.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -177,7 +177,7 @@ Dit rapport toont de uitsplitsing van gedeelde en geopende berichten per sociaal
 
 In de statistieken van de e-maillevering, worden twee waarden getoond:
 
-* **[!UICONTROL Number of messages to be delivered]** : Het totale aantal berichten dat tijdens leveringsanalyse wordt verwerkt.
+* **[!UICONTROL Number of messages to be delivered]** : Totaal aantal berichten dat tijdens leveringsanalyse wordt verwerkt.
 * **[!UICONTROL Number of successful deliveries]** : Aantal berichten dat is verwerkt.
 
 **[!UICONTROL Sharing activities and mail open statistics]**
@@ -187,13 +187,13 @@ De centrale tabel toont de statistieken over e-mailaandelen en wordt geopend.
 In de **[!UICONTROL Shares]** kolom, hebben wij de volgende indicatoren:
 
 * **[!UICONTROL No. of sharing activities]** : Het totale aantal berichten dat op elk sociaal netwerk wordt gedeeld. Deze waarde is gelijk aan het totale aantal klikken op het pictogram van de overeenkomst **[!UICONTROL Links for sharing to social networks]** verpersoonlijkingsblok.
-* **[!UICONTROL Breakdown]** : Dit percentage is de uitsplitsing van de aandelen per sociaal netwerk in verhouding tot het totale aantal aandelen.
-* **[!UICONTROL Sharing rate]** : Dit percentage is de uitsplitsing van de aandelen per sociaal netwerk in verhouding tot het aantal te leveren berichten.
+* **[!UICONTROL Breakdown]** : Dit percentage vertegenwoordigt de uitsplitsing van de aandelen per sociaal netwerk in verhouding tot het totale aantal aandelen.
+* **[!UICONTROL Sharing rate]** : Dit percentage geeft de uitsplitsing weer van de aandelen per sociaal netwerk in verhouding tot het aantal te leveren berichten.
 
 In de **[!UICONTROL Opens]** kolom, hebben wij de volgende indicatoren:
 
 * **[!UICONTROL No. of opens]** : Het totale aantal berichten dat is geopend door mensen aan wie het bericht is doorgestuurd (via de **[!UICONTROL Links for sharing to social networks]** verpersoonlijkingsblok). Deze waarde is gelijk aan het aantal keren dat de spiegelpagina is weergegeven. Opens door ontvangers van de levering worden niet in aanmerking genomen.
-* **[!UICONTROL Breakdown]** : Dit percentage geeft de verdeling van de openingen per sociaal netwerk weer, in verhouding tot het totale aantal openingen.
+* **[!UICONTROL Breakdown]** : Dit percentage geeft de verdeling weer van de openingen per sociaal netwerk, in verhouding tot het totale aantal openingen.
 * **[!UICONTROL Rate of opens]** : Dit percentage geeft de uitsplitsing weer van de beurzen per sociaal netwerk, in verhouding tot het totale aantal aandelen.
 
 **[!UICONTROL Breakdown of sharing activities and opens]**
@@ -202,7 +202,7 @@ Deze sectie omvat twee grafieken die de indeling van de deelactiviteiten vertege
 
 ## Statistieken over de activiteiten voor het delen van diensten {#statistics-on-sharing-activities}
 
-Dit verslag laat de ontwikkeling zien van aandelen in sociale netwerken (Facebook, Twitter, e-mail, enz.) op tijd.
+Dit rapport toont de evolutie van aandelen aan sociale netwerken (Facebook, X - voorheen bekend als Twitter, e-mail, enz.) op tijd.
 
 Raadpleeg voor meer informatie over het op de markt brengen van virale middelen [deze sectie](../../delivery/using/viral-and-social-marketing.md).
 
@@ -213,7 +213,7 @@ Statistieken worden gepresenteerd in de vorm van een tabel met waarden en een gr
 De volgende indicatoren worden gebruikt:
 
 * **[!UICONTROL New contacts]** : Aantal nieuwe abonnementen na ontvangst van een bericht dat via e-mail wordt gedeeld. Deze waarde komt overeen met het aantal personen dat een bericht heeft ontvangen dat via e-mail is gedeeld en op de knop **[!UICONTROL Subscription link]** en vult het abonnementsformulier in.
-* **[!UICONTROL Opens]** : Het totale aantal berichten dat is geopend door de personen aan wie het bericht is overgedragen (via de **[!UICONTROL Link for sharing to social networks]** verpersoonlijkingsblok). Deze waarde is gelijk aan het aantal keren dat de spiegelpagina is weergegeven. Opens door ontvangers van de levering worden niet in aanmerking genomen.
+* **[!UICONTROL Opens]** : Het totale aantal berichten dat is geopend door personen aan wie het bericht is overgedragen (via de **[!UICONTROL Link for sharing to social networks]** verpersoonlijkingsblok). Deze waarde is gelijk aan het aantal keren dat de spiegelpagina is weergegeven. Opens door ontvangers van de levering worden niet in aanmerking genomen.
 * **[!UICONTROL Sharing activities]** : Het totale aantal berichten dat via sociale netwerken wordt gedeeld. Deze waarde komt overeen met het totale aantal klikken op het pictogram van het dialoogvenster **[!UICONTROL Links for sharing to social networks]** verpersoonlijkingsblok.
 
 ## Besturingssystemen {#operating-systems}
@@ -222,7 +222,7 @@ Dit verslag geeft een overzicht van de exploitatiesystemen die door de ontvanger
 
 >[!NOTE]
 >
->De waarden in dit rapport zijn schattingen: alleen ontvangers die op een levering hebben geklikt , worden in aanmerking genomen .
+>De waarden in dit rapport zijn schattingen: alleen ontvangers die op een levering hebben geklikt, worden in aanmerking genomen.
 
 **Algemene statistieken**
 
@@ -232,8 +232,8 @@ De algemene gebruiksstatistieken van besturingssystemen worden gepresenteerd in 
 
 De volgende indicatoren worden gebruikt:
 
-* **[!UICONTROL Visitors]** : Daggemiddelde van het totale aantal beoogde ontvangers (per besturingssysteem) die ten minste één keer op een levering hebben geklikt.
-* **[!UICONTROL Pages viewed]** : Het dagelijkse gemiddelde van het totale aantal klikken op leveringsverbindingen (per werkend systeem) voor alle leveringen.
+* **[!UICONTROL Visitors]** : Daggemiddelde van het totale aantal beoogde ontvangers (per besturingssysteem) die ten minste eenmaal op een levering hebben geklikt.
+* **[!UICONTROL Pages viewed]** : Daggemiddelde van het totale aantal klikken op leveringskoppelingen (per besturingssysteem) voor alle leveringen.
 * **[!UICONTROL Rate of use]** : Dit percentage is de uitsplitsing van bezoekers (per besturingssysteem) in verhouding tot het totale aantal bezoekers.
 
 **Statistieken per besturingssysteem**
@@ -251,7 +251,7 @@ De **[!UICONTROL Breakdown by version]** De grafiek geeft de uitsplitsing van be
 In de waardetabel worden de volgende indicatoren gebruikt:
 
 * **[!UICONTROL Global rate]** : Dit percentage geeft de uitsplitsing van bezoekers (per versie) weer in verhouding tot het totale aantal bezoekers in de besturingssystemen.
-* **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers (per versie) weer in verhouding tot het totale aantal bezoekers voor dit besturingssysteem.
+* **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers (per versie) weer ten opzichte van het totale aantal bezoekers voor dit besturingssysteem.
 
 ## Abonnement bijhouden {#subscription-tracking}
 
@@ -272,12 +272,12 @@ In de waardetabel worden de volgende indicatoren gebruikt:
 * **[!UICONTROL Subscribers]** : Totaal aantal abonnees voor de betrokken periode.
 * **[!UICONTROL Subscriptions]** : Aantal abonnementen voor de betrokken periode.
 * **[!UICONTROL Unsubscriptions]** : Aantal aflossingen voor de betrokken periode.
-* **[!UICONTROL Evolution]** : Aantal aflossingen min het aantal abonnementen. Het tarief wordt berekend op basis van het totale aantal abonnees.
-* **[!UICONTROL Loyalty]** : Loyalty van abonnees voor de betrokken periode.
+* **[!UICONTROL Evolution]** : Aantal afmeldingen min het aantal abonnementen. Het tarief wordt berekend op basis van het totale aantal abonnees.
+* **[!UICONTROL Loyalty]** : Loyalty voor abonnees voor de betrokken periode.
 
 **[!UICONTROL Subscription evolution curves]**
 
-In deze grafiek wordt de ontwikkeling van de abonnementen en afboekingen voor de betrokken periode weergegeven.
+Deze grafiek toont de ontwikkeling van de abonnementen en afboekingen voor de betrokken periode.
 
 ## Leveringsstatistieken {#delivery-statistics}
 
@@ -289,16 +289,16 @@ De volgende indicatoren worden gebruikt:
 
 * **[!UICONTROL Emails processed]** : Het totale aantal berichten dat door de leveringsserver wordt verwerkt.
 * **[!UICONTROL Delivered]** : percentage van het aantal met succes verwerkte berichten in verhouding tot het totale aantal verwerkte berichten.
-* **[!UICONTROL Hard bounces]** : percentage van het aantal &quot;harde&quot; grenzen in vergelijking met het totale aantal verwerkte berichten.
+* **[!UICONTROL Hard bounces]** : percentage van het aantal &quot;harde&quot; bellen in vergelijking met het totale aantal verwerkte berichten.
 * **[!UICONTROL Soft bounces]** : percentage van het aantal &quot;zachte&quot; grenzen in vergelijking met het totale aantal verwerkte berichten.
 
-   >[!NOTE]
-   >
-   >Raadpleeg voor meer informatie over harde en zachte golven [Quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
+  >[!NOTE]
+  >
+  >Raadpleeg voor meer informatie over harde en zachte golven [Quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
 
 * **[!UICONTROL Opens]** : percentage van het aantal beoogde ontvangers die een bericht ten minste eenmaal hebben geopend in vergelijking met het aantal berichten dat met succes is verwerkt.
-* **[!UICONTROL Clicks]** : percentage van het aantal mensen die in een levering ten minste eenmaal klikte in vergelijking met het aantal berichten dat met succes is verwerkt.
-* **[!UICONTROL Unsubscription]** : percentage van het aantal klikken op een koppeling voor het opzeggen van een abonnement in verhouding tot het aantal berichten dat met succes is verwerkt.
+* **[!UICONTROL Clicks]** : percentage van het aantal mensen die in een levering minstens eens in vergelijking met het aantal met succes verwerkte berichten klikte.
+* **[!UICONTROL Unsubscription]** : percentage van het aantal klikken op een koppeling zonder abonnement in verhouding tot het aantal berichten dat met succes is verwerkt.
 
 ## Indeling van openen {#breakdown-of-opens}
 

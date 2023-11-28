@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '1515'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
 <tr>
  <td>Social marketing met Facebook</td>
- <td>Social marketing met Facebook is nu afgeschaft. U kunt Twitter-integratie gebruiken om te posten op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
+ <td>Social marketing met Facebook is nu afgeschaft. U kunt X-integratie (voorheen bekend als Twitter) gebruiken om op sociale media te plaatsen of met Adobe werken om een aangepast kanaal te maken.
  <p></p>
   <p>Verwachte verwijdering: eind 2023</p>
   </td>

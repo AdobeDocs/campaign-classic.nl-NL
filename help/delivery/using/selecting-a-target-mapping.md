@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '196'
 ht-degree: 10%
 
 ---
@@ -25,10 +25,10 @@ Deze toewijzingen zijn als volgt:
 | Naam | Gebruiken | Standaardschema |
 |---|---|---|
 | Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:ontvanger |
-| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, Twitter) bijvoorbeeld zijn verzameld. | mns:bezoeker |
+| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, X - voorheen bekend als Twitter) zijn verzameld. | mns:bezoeker |
 | Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
 | Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
-| Service | Publiceren naar een Twitter-account of een Facebook-pagina | nms:service |
+| Service | Publiceren naar een X-account of een Facebook-pagina | nms:service |
 | Operatoren | Leveren aan Adobe Campaign-operatoren | nms:operator |
 | Extern bestand | Afleveren via een bestand dat alle benodigde informatie voor levering bevat | Geen gekoppeld schema, geen doel ingevoerd |
 

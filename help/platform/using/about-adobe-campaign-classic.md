@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 92%
+source-wordcount: '934'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!AVAILABILITY]
 >
->* Help-materialen in deze verzameling zijn van toepassing op Campaign Classic v7 in de [nieuwste build](../../rn/using/latest-release.md). Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
+>* Help-materialen in deze verzameling zijn van toepassing op Campaign Classic v7 in het [nieuwste build](../../rn/using/latest-release.md). Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
 >
 >* Adobe Campaign v8-documentatie is beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=nl).
 
@@ -77,7 +77,7 @@ De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenko
 * [MRM](../../mrm/using/about-marketing-resource-management.md) - beheren van marketingresources en -budgetten,
 * [Interactie](../../interaction/using/interaction-and-offer-management.md) - beheren van aanbiedingen met Campaign,
 * [Berichtencentrum](../../message-center/using/about-transactional-messaging.md) - verzenden van transactionele berichten via e-mail, sms of mobiele app,
-* [Social marketing](../../social/using/about-social-marketing.md) - communiceren op sociale media: Facebook, Twitter,
+* [Sociale marketing](../../social/using/about-social-marketing.md) - communiceren via sociale media: Facebook, X (voorheen bekend als Twitter),
 * [Workflow](../../workflow/using/about-workflows.md)/data management - automatiseren van processen en beheren van data met workflows,
 * [Webapplicaties](../../web/using/about-web-applications.md) - maken van webpagina’s en formulieren,
 * [Enquêtebeheer](../../surveys/using/about-surveys.md) - maken van online enquêtes en opiniepeilingen,
@@ -90,8 +90,8 @@ De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenko
 
 ## Video over zelfstudie {#video}
 
-In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Classic.
+In deze video ziet u de belangrijkste functies en mogelijkheden van het Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

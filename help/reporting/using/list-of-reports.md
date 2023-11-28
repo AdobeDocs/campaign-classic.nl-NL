@@ -5,10 +5,10 @@ description: Lijst met rapporten
 badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 1%
+source-wordcount: '1018'
+ht-degree: 2%
 
 ---
 
@@ -360,7 +360,7 @@ De volgende rapporten worden ook ingebouwd verstrekt. Raadpleeg voor meer inform
   </tr> 
   <tr> 
    <td> Geschiedenis van sociale vooruitzichten (socialVisitorStatistics)<br /> </td> 
-   <td> De geschiedenis van de perspectiefovernames van Twitter en Facebook is afhankelijk van de sociale marketingadd-on.<br /> </td> 
+   <td> De geschiedenis van X (vroeger genoemd geworden Twitter) en de perspectiefverwervingen van Facebook, hangt van de sociale marketing toe:voegen-op af.<br /> </td> 
    <td> nms:bezoeker<br /> </td> 
   </tr> 
   <tr> 

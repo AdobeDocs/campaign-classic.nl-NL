@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van de levering
 
 Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Zie voor meer informatie [XtkFolder](#XtkFolder).
 
-Het veld sCountryCode is de ISO-code 3166-1 Alpha 2 (2 tekens) van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
+Het veld sCountryCode is de ISO-code (2 tekens) van 3166-1 Alpha 2 van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
 
 Voor meer informatie over de tabel Ontvanger raadpleegt u [deze sectie](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -261,12 +261,12 @@ Deze set tabellen is gekoppeld aan de **Mobiel App-kanaal**, waarmee gepersonali
 
 ## Module voor sociale marketing {#social-marketing-module}
 
-Deze set tabellen is gekoppeld aan de **Sociale netwerken beheren** -module, waarmee u via Facebook en Twitter kunt communiceren met klanten en vooruitzichten. Zie voor meer informatie [Sociale marketing](../../social/using/about-social-marketing.md).
+Deze set tabellen is gekoppeld aan de **Sociale netwerken beheren** -module, die interactie met klanten en vooruitzichten mogelijk maakt via Facebook en X (voorheen bekend als Twitter). Zie voor meer informatie [Sociale marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Deze tabel komt overeen met de **nms:bezoeker** schema. Het bevat informatie over bezoekers.
-* **NmsVisitorSub**: Deze tabel komt overeen met de **nms:bezoekerSub** schema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (Twitter of Facebook).
+* **NmsVisitorSub**: Deze tabel komt overeen met de **nms:bezoekerSub** schema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (X of Facebook).
 * **NmsFriendShipRel**: Deze tabel komt overeen met de **nms:vriendshipRel** schema. Met deze service kunt u bezoekers in het kader van de Facebook-service koppelen aan hun vrienden.
 * **NmsVisitorInterestRel**: Deze tabel komt overeen met de **nms:bezoekerInterestRel** schema. Het stelt u in staat bezoekers en hun belangen met elkaar te verbinden.
 * **NmsInterest**: Deze tabel komt overeen met de **nms:interesse** schema. Het bevat de lijst met belangen voor elke bezoeker.

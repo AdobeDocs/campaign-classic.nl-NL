@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -141,7 +141,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 
 **Afgeschafte functies**
 
-* Social marketing met Facebook is nu afgeschaft. U kunt Twitter-integratie gebruiken om te posten op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
+* Social marketing met Facebook is nu afgeschaft. U kunt X-integratie (voorheen bekend als Twitter) gebruiken om op sociale media te plaatsen of met Adobe werken om een aangepast kanaal te maken.
 * ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.
 
 Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](deprecated-features.md).

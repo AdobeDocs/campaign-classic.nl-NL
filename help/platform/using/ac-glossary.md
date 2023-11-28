@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
+source-wordcount: '5978'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Kanaal**
 
-Een kanaal is een middel waardoor een mededeling wordt verzonden. Ingebouwde kanalen in Adobe Campaign zijn e-mail, SMS, direct mail, Push berichten, LINE, en Twitter. Aangepaste kanalen kunnen worden geïmplementeerd voor niet-standaard kanaalvereisten.
+Een kanaal is een middel waardoor een mededeling wordt verzonden. Ingebouwde kanalen in Adobe Campaign zijn e-mail, SMS, direct mail, Push berichten, LINE, en X (vroeger genoemd geworden Twitter). Aangepaste kanalen kunnen worden geïmplementeerd voor niet-standaard kanaalvereisten.
 
 Meer informatie over [Kanalen](../../delivery/using/communication-channels.md).
 +++
@@ -278,7 +278,7 @@ Meer informatie over [Verdeling van waarden](../../platform/using/defining-filte
 +++**Domeindelegatie**
 
 De configuratie van subdomain staat u toe om een onderafdeling van uw domein (technisch een &quot;DNS streek&quot;) voor gebruik met Adobe Campaign te vormen.
-De delegatie van het domein laat Adobe controle en handhaaft alle aspecten van DNS die voor het leveren, het teruggeven en het volgen van e-mailcampagnes worden vereist.
+De delegatie van het domein laat Adobe alle aspecten van DNS controleren en handhaven die voor het leveren, het teruggeven en het volgen van e-mailcampagnes worden vereist.
 
 Meer informatie over [Domeindelegatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl)
 +++
@@ -343,7 +343,7 @@ Meer informatie over [Verrijkingsactiviteit](../../workflow/using/enrichment.md)
 
 +++**Opsommingen**
 
-Een opsomming is een gegevenstype dat in schema&#39;s of op het niveau van het Platform wordt bepaald die de geldige inputwaarden voor een gebied bepalen. Opsommingen worden in de gebruikersinterface en in querybuilders weergegeven als een keuzelijst.
+Een opsomming is een gegevenstype dat in schema&#39;s of op het niveau van het Platform wordt bepaald dat de geldige inputwaarden voor een gebied bepaalt. Opsommingen worden in de gebruikersinterface en in querybuilders weergegeven als een keuzelijst.
 
 Meer informatie over [Opsommingen](../../platform/using/managing-enumerations.md).
 +++
@@ -724,7 +724,7 @@ Meer informatie over [Exploitantgroepen](../../platform/using/access-management-
 
 +++**Opties**
 
-Opties zijn variabelen op het niveau van het Platform die worden gebruikt om instellingen van de instantie Campagne te bepalen. Met opties kunt u tijdframes definiëren (zoals voor een workflow voor het opschonen van databases) of andere algemene definities op platformniveau.
+Opties zijn variabelen op platformniveau die worden gebruikt om instellingen van de instantie Campagne te definiëren. Met opties kunt u tijdframes definiëren (zoals voor een workflow voor het opschonen van databases) of andere algemene definities op platformniveau.
 
 Meer informatie over [Opties](../../installation/using/configuring-campaign-options.md).
 +++
@@ -869,7 +869,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 
 +++**Schema**
 
-Een schema is een XML-document dat aan een databasetabel is gekoppeld. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
+Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel. De exploitanten manipuleren schema&#39;s in Campagne en het product vertaalt hun acties in vereiste SQL die dan tegen het gegevensbestand wordt uitgevoerd.
 
 Meer informatie over [Schemas](../../configuration/using/about-schema-reference.md).
 +++
@@ -1002,7 +1002,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 +++**Logboeken bijhouden**
 
-De technische workflow voor bijhouden haalt de gegevens voor het bijhouden van de gegevens op nadat de levering is verzonden en het bijhouden van de gegevens is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. U kunt informatie voor opent vinden en op een e-mail of andere interactie klikken met een bericht dat door de ontvanger wordt ontvangen.
+Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opgehaald nadat de levering is verzonden en de tekstspatiëring is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. U kunt informatie voor opent vinden en op een e-mail of andere interactie klikken met een bericht dat door de ontvanger wordt ontvangen.
 
 Meer informatie over [Logboeken bijhouden](../../delivery/using/accessing-the-tracking-logs.md).
 +++

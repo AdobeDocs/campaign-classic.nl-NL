@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Om
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Voer de naam van de service in het dialoogvenster **[!UICONTROL Label]** en selecteer het leveringskanaal: e-mail, mobiel, Facebook, Twitter of mobiele toepassingen.
+* Voer de naam van de service in het dialoogvenster **[!UICONTROL Label]** en selecteer het leveringskanaal: e-mail, mobiel, Facebook, X (voorheen bekend als Twitter) of mobiele toepassingen.
 
   >[!NOTE]
   >
-  >Facebook- en Twitter-abonnementen worden beschreven in [deze sectie](../../social/using/about-social-marketing.md). Mobiele toepassingsabonnementen worden beschreven in [Mobiel toepassingskanaal](about-mobile-app-channel.md).
+  >Facebook- en X-abonnementen worden beschreven in [deze sectie](../../social/using/about-social-marketing.md). Mobiele toepassingsabonnementen worden beschreven in [Mobiel toepassingskanaal](about-mobile-app-channel.md).
 
 * Selecteer voor een E-mailtypeservice de optie **Leveringsmodus**. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]**.
 * U kunt **bevestigingsberichten** voor een abonnement of een abonnement. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de corresponderende leveringen te maken via de **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]** velden. Deze sjablonen moeten worden geconfigureerd met een **[!UICONTROL Subscription]** type target mapping, zonder een gedefinieerd doel. Zie sectie [E-mailkanaal](about-email-channel.md).

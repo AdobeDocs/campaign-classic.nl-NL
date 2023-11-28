@@ -3,23 +3,21 @@ product: campaign
 title: Viral en social marketing
 description: Viral en social marketing
 feature: Social Marketing
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '577'
 ht-degree: 2%
 
 ---
 
 # Viral en social marketing{#viral-and-social-marketing}
 
-
-
 Met Adobe Campaign kunt u gereedschappen instellen om het op de markt brengen van virussen aan te moedigen.
 
-Hierdoor kunnen ontvangers of websitebezoekers gegevens delen met hun netwerk: van het toevoegen van een koppeling naar hun Facebook- of Twitter-profiel tot het verzenden van een bericht naar een vriend.
+Hierdoor kunnen ontvangers of websitebezoekers gegevens delen met hun netwerk: van het toevoegen van een koppeling naar hun Facebook- of X-profiel (voorheen bekend als Twitter) tot het verzenden van een bericht naar een vriend.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
