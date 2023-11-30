@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2573'
 ht-degree: 14%
 
 ---
@@ -287,11 +287,13 @@ De standaardregels zijn als volgt.
 
 #### Binnenkomende e-mail {#inbound-email}
 
->[!IMPORTANT]
->
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md)en als uw instantie **Webhaken** de **[!UICONTROL Inbound email]** de regels worden niet meer gebruikt voor synchrone foutberichten van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-Voor on-premisse installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, bevatten deze regels de lijst van karakterkoorden die door verre servers kunnen zijn teruggekeerd en die u de fout laten kwalificeren (**Hard**, **Zacht** of **Genegeerd**).
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+De **[!UICONTROL Inbound email]** De regels bevatten de lijst van karakterkoorden die door verre servers kunnen zijn teruggekeerd en die u de fout laten kwalificeren (**Hard**, **Zacht** of **Genegeerd**).
 
 Wanneer een e-mailbericht mislukt, geeft de externe server een stuiterend bericht weer naar het adres dat is opgegeven in het dialoogvenster [platformparameters](../../installation/using/deploying-an-instance.md). Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan toe één van de drie [fouttypen](#delivery-failure-types-and-reasons).
 
