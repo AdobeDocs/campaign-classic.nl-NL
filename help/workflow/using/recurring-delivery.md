@@ -5,10 +5,10 @@ description: Meer informatie over de activiteit van de workflow Terugkerende lev
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 12%
+source-wordcount: '292'
+ht-degree: 11%
 
 ---
 
@@ -32,7 +32,7 @@ Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het creÃ
 
 >[!CAUTION]
 >
->Terugkerende leveringen ondersteunen het verzenden van proefdrukken, waaronder [doelgegevens](../../workflow/using/data-life-cycle.md#target-data) personalisatie-elementen.
+>Terugkerende leveringen ondersteunen geen voorvertoning van inhoud of het verzenden van proefdrukken, zoals [doelgegevens](../../workflow/using/data-life-cycle.md#target-data) personalisatie-elementen.
 
 Raadpleeg dit voor een voorbeeld van deze activiteit die wordt gebruikt [sectie](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

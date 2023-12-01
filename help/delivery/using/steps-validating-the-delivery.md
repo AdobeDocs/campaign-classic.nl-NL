@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1665'
 ht-degree: 5%
 
 ---
@@ -138,10 +138,6 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 Volg onderstaande stappen om een proefdruk te verzenden:
 
 1. Controleer of het proefdrukdoel is geconfigureerd zoals wordt beschreven in [Een specifiek proefdrukdoel definiëren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
-   >[!CAUTION]
-   >
-   >[Terugkerende leveringen](../../workflow/using/recurring-delivery.md) geen ondersteuning bieden voor het verzenden van proefdrukken, waaronder [doelgegevens](../../workflow/using/data-life-cycle.md#target-data) personalisatie-elementen.
 
 1. Klikken **[!UICONTROL Send a proof]** op de bovenste balk van de wizard voor levering.
 
