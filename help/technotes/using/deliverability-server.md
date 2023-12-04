@@ -4,10 +4,10 @@ title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 2%
+source-wordcount: '1252'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe ontmantelt oudere gegevenscentra wegens veiligheidsnalevingsredenen. Adobe
 
 Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt veilige en geverifieerde eindpunten om campagnemeservers in staat te stellen de vereiste gegevens op te halen: in plaats van verbinding te maken met de database voor elk verzoek, slaat de nieuwe leverbaarbaarheidsserver de gegevens in cache om de aanvragen waar mogelijk te bedienen. Dit mechanisme verbetert de responstijd. &#x200B;
 
-## Heeft dit gevolgen voor u?{#acc-deliverability-impacts}
+## Heb je invloed op?{#acc-deliverability-impacts}
 
 Alle klanten worden beïnvloed en moeten bevorderen aan [Campagne v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (of meer) en implementeer hun omgeving om te profiteren van de nieuwe leverbaarbaarheidsserver.
 
@@ -48,7 +48,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) is momenteel bezig met afschrijvingen en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campagne en de documentatie zal worden aangepast aan deze updates.
+> JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen komende releases van Campaign en de documentatie zal worden aangepast voor deze updates.
 
 ### Vereisten{#prerequisites}
 
@@ -145,15 +145,7 @@ Dit doet u als volgt:
 
 1. U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden. U kunt ook een `config -reload` gebruiken.
 
-### Stap 3: De nieuwe, te leveren server inschakelen
-
-U kunt nu de nieuwe releaseserver inschakelen. Dit doet u als volgt:
-
-1. Open de clientconsole en meld u als beheerder aan bij Adobe Campaign.
-1. Bladeren naar **Beheer > Platform > Opties**.
-1. Toegang krijgen tot de `NewDeliverabilityServer_FeatureFlag` en de waarde instellen op `1`. Deze configuratie zou op al uw instanties van de Campagne (MKT, MID, RT, EXEC) moeten worden uitgevoerd. Als hybride klant, bereik uit aan Adobe om de optie te hebben die op uw instanties MID, RT en EXEC wordt geplaatst.
-
-### Stap 4: Valideer uw configuratie
+### Stap 3: Valideer uw configuratie
 
 Volg onderstaande stappen om te controleren of de integratie is gelukt:
 
