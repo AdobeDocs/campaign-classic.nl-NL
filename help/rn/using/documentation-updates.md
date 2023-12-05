@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 99%
@@ -22,21 +22,21 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ## 2023
 
-### December 2023
+### December 2023 {#dec-2023}
 
 JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen komende releases van Campaign en de documentatie zal worden aangepast voor deze updates.
 
 Configuratie externe FDA-account toegevoegd voor Amazon Redshift. [Meer informatie](../../installation/using/configure-fda-redshift.md)
 
-### Augustus 2023
+### Augustus 2023 {#aug-2023}
 
 Er is een beperking toegevoegd om aan te geven dat u Adobe Campaign niet kunt gebruiken voor het decomprimeren van gecomprimeerde bestanden groter dan 4 GB. [Meer informatie](../../platform/using/unzip-decrypt.md)
 
-### April 2023
+### April 2023 {#apr-2023}
 
 Er is een technische opmerking toegevoegd voor het inschakelen van Microsoft Edge Chromium in on-premise/hybride omgevingen. [Meer informatie](../../technotes/using/edge-chromium.md)
 
-### Maart 2023
+### Maart 2023 {#mar-2023}
 
 Sectie 7.3.3 van de aanvullende informatie is bijgewerkt met verbeteringen en patches. [Meer informatie](latest-release.md)
 
