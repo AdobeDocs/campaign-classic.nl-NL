@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: ht
-source-wordcount: '3645'
-ht-degree: 100%
+source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+workflow-type: tm+mt
+source-wordcount: '3648'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,11 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ## 2023
 
-### November 2023
+### December 2023
 
-JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen de komende releases van Campaign en de documentatie zal worden aangepast aan deze updates.
+JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen komende releases van Campaign en de documentatie zal worden aangepast voor deze updates.
+
+Configuratie externe FDA-account toegevoegd voor Amazon Redshift. [Meer informatie](../../installation/using/configure-fda-redshift.md)
 
 ### Augustus 2023
 
