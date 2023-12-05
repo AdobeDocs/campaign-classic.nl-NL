@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 93d6ffc4ac3047ab6a9a41859bed48f6ffac605b
+source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '314'
 ht-degree: 3%
 
 ---
@@ -20,17 +20,24 @@ Bekijk een glimp van de nieuwste verbeteringen in Adobe Campaign Classic v7 prod
 
 >[!BEGINTABS]
 
->[!TAB De Adobe Experience Cloud-integratie bijwerken]
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren
+>[!TAB Release december is live!]
 
-[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
-
->[!TAB Release september is live!]
-
-Ontdek de beveiligings- en compatibiliteitsupdates, verbeteringen en patches die deze nieuwe versie met zich meebrengt.
+Ontdek updates, verbeteringen en patches die bij Campaign Classic v7.3.5 worden geleverd.
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!TAB Ga naar Adobe Identity Management Service]
+
+Om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign u ten zeerste aan de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+
+>[!TAB De Adobe Experience Cloud-integratie bijwerken]
+
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
