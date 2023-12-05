@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 5fe07c7955b529cd7f1a481167dd4139aa886bb0
+source-git-commit: 4917efbe0ac119875029305b3f8c3303056cfcc8
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Ontdek updates, verbeteringen en patches die bij Campaign Classic v7.3.5 worden 
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB Ga naar Adobe Identity Management Service]
+>[!TAB Verplaatsen naar Adobe Identity Management-systeem]
 
 Om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign u ten zeerste aan de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe.
 
