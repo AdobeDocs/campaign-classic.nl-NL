@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '2221'
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,35 @@ ht-degree: 98%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## Release 7.3.4 - build 9364 {#release-7-3-4}
+## Release 7.3.5 - build 9368 {#release-7-3-5}
 
 [!BADGE Algemene beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
+
+
+_woensdag 5 december 2023_
+
+
+**Verbeterde beveiliging**
+
+
+* Met Campaign Classic v7.3.5 is het verificatieproces verbeterd en beveiligd. Technische operatoren moeten nu Adobe Identity Management System (IMS) gebruiken om verbinding te maken met Campagne. Leer hoe u uw bestaande technische account(s) kunt migreren in [dit technote](../../technotes/using/ims-migration.md).
+
+* Daarnaast raadt Adobe Campaign in het kader van de inspanningen om het beveiligings- en verificatieproces te versterken ten zeerste aan om de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe. Leer hoe u uw operatoren kunt migreren in [dit technote](../../technotes/using/migrate-users-to-ims.md).
+
+**Patches**
+
+* Probleem verholpen bij het gebruik van gegevens uit een Google Big Query-database en het bijwerken van gegevens in een Oracle-database: alle sleutels zijn ingesteld op `0` in de tijdelijke tabel met werkstromen. (NEO-65091)
+* Probleem verholpen waarbij de uitvoering van een workflow mislukte wanneer twee query&#39;s in een Google Big Query-database werden gecombineerd in een **Unie** workflowactiviteit. (NEO-63705)
+* Probleem verholpen waarbij de gebruiker werd gevraagd opnieuw te verifiëren wanneer op de knop `Back` in een campagnerapport. (NEO-65087)
+* Oplossing voor een fout in de workflow Database opschonen die zich voordeed toen een levering werd verwijderd vóór de proefdrukken van de levering. (NEO-48114)
+* Probleem opgelost tijdens verbinding maken met de clientconsole: recente updates van de TLS-verificatie leidden tot een verbindingsfout. (NEO-50488)
+* Probleem verholpen met de HTTP Proxy-verificatie na de campagne na de upgrade naar 7.3.1. HTTP-aanvragen in Campagne-workflows mislukten `error 407 – proxy auth required is returned`. (NEO-49624)
+* Correctie van een periodiek defect met GPG-decodering in **Script** workflowactiviteiten. Het bijbehorende foutbericht was: `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+## Release 7.3.4 - build 9364 {#release-7-3-4}
+
+[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 >[!CAUTION]
 >

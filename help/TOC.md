@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: ht
-source-wordcount: '2532'
-ht-degree: 100%
+source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
+workflow-type: tm+mt
+source-wordcount: '2544'
+ht-degree: 99%
 
 ---
 
@@ -640,7 +640,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -820,6 +820,9 @@ ht-degree: 100%
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
+   + Upgrade uitvoeren naar IMS{#ims}
+      + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
+      + [Technische operatoren migreren naar de Developer Console](technotes/using/ims-migration.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Microsoft Edge Chromium inschakelen](technotes/using/edge-chromium.md)
