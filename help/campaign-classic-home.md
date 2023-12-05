@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 038239cf15dc49e6e84ca31a94ef61029c66c4b7
+source-git-commit: b280a75c7bd34d81657d6c7f1a859890c963352b
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 64%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
@@ -17,67 +17,92 @@ ht-degree: 64%
 
 ## Nieuwe functies
 
-* **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en oplossingen in de Opmerkingen bij de release
+Bekijk een glimp van de nieuwste verbeteringen in Adobe Campaign Classic v7 product en documentatie! Voor een uitgebreide lijst met functies, verbeteringen en oplossingen raadpleegt u de gedetailleerde [Opmerkingen bij de release](rn/using/latest-release.md).  Blijf up-to-date met de nieuwste wijzigingen in onze documentatie door de [pagina met documentupdates](rn/using/documentation-updates.md).
 
-<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
+>[!BEGINTABS]
 
-* **[De Adobe Experience Cloud-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren
+>[!TAB De Adobe Experience Cloud-integratie bijwerken]
 
-[Meer updates](rn/using/documentation-updates.md)
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet aan Adobe I/O migreren
 
-## Bovenste pagina’s
+[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
+
+>[!TAB Release september is live!]
+
+Ontdek de beveiligings- en compatibiliteitsupdates, verbeteringen en patches die deze nieuwe versie met zich meebrengt.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!ENDTABS]
+
+## Beginnen met de basisbeginselen
 
 <table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="platform/using/common-questions.md">
-      <img alt="Veelgestelde vragen" src="platform/using/assets/FAQ.png"/>
-    </a>
-    <div>
-      <a href="platform/using/common-questions.md">
-    <strong>Veelgestelde vragen</strong>
-    </a>
-    </div>
-    <p>
-    <em>Vind antwoorden op veelgestelde vragen bij het gebruik van Campaign Classic</em>
-    <p>
-  </td>
-   <td>
-    <a href="production/using/build-upgrade.md">
-      <img alt="Buildupgrade" src="platform/using/assets/upgrade.png" />
-    </a>
-    <div>
-      <a href="production/using/build-upgrade.md">
-    <strong>Upgrade naar de nieuwste build</strong>
-    </a>
-    </div>
-    <p>
-    <em>Ontdek de belangrijkste stappen en best practices om een buildupgrade uit te voeren</em>
-    <p>
-  </td>
-  <td>
-    <a href="delivery/using/create-notifications-ios.md">
-       <img alt="Pushmeldingen" src="platform/using/assets/push.png" />
-    </a>
-    <div>
-       <a href="delivery/using/create-notifications-ios.md">
-    <strong>Pushmeldingen verzenden</strong>
-    </a>
-    </div>
-    <p>
-    <em>Ontwerp en verzend gepersonaliseerde pushmeldingen op mobiele apparaten</em>
-    <p>
-  </td>
-</tr>
+  <tr style="border: 0;">
+    <td>
+    <a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/start-launch.png"></a></a>
+    <div><strong>Adobe Campaign starten</strong><br/>Leer hoe u de Campagne Client Console kunt starten en verbinding kunt maken met uw Campagne Application Server(s).</div>
+    </td>
+    <td>
+    <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
+    <div><strong>Profielen toevoegen en beheren</strong><br/>Ontdek eenvoudig het profielbeheer in de Adobe Campaign v7-database. Voeg profielen handmatig of via import toe, verbeter klantgegevens en maak campagnes eenvoudig aan te passen.</div>
+    </td>
+    <td>
+    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <div><strong>Automatiseren met workflows</strong><br/>Leer hoe u workflows kunt gebruiken om processen te ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, participatie van mensen.
+    </div></td>
+    <td>
+    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <div><strong>Leveringen maken</strong><br/>Leer hoe u berichten verzendt via verschillende kanalen, zoals e-mail, SMS, pushberichten, enzovoort.</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    </tr>
 </table>
 
-## Aanvullende resources
+## Documentatie verkennen
 
-| Nuttige pagina’s | Resources voor ontwikkelaars |
-|---|---|
-| [Release-opmerkingen](rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
-| [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
-| [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [Aan de slag met upgrades](rn/using/rn-overview.md) | [Handleiding voor tracking](delivery/using/about-message-tracking.md) |
-| [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
-| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
+      <strong>Aan de slag</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Gebruikersinterface</a> - <a href="platform/using/ac-glossary.md">Verklarende woordenlijst</a> - <a href="platform/using/launching-adobe-campaign.md">Verbinding maken met campagne</a> - <a href="platform/using/get-started-data-import-export.md">Gegevens importeren en exporteren</a> - <a href="platform/using/access-management.md">Machtigingen</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>Ervaring van de klant</strong><br/><a href="workflow/using/about-workflows.md">Automatiseren met workflows</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Marketingcampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interactie- en aanbiedingsbeheer</a> - <a href="delivery/using/about-personalization.md">Personalisatie</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportage</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
+      <strong>Berichten verzenden</strong><br/><a href="delivery/using/communication-channels.md">Communicatiekanalen</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Proefdrukken verzenden</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B-tests</a> - <a href="delivery/using/about-message-tracking.md">Berichten bijhouden</a> - <a href="delivery/using/about-deliverability.md">Leverbaarheid</a> - <a href="message-center/using/about-transactional-messaging.md">Transactieberichten</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+      <br/>
+      <strong>Profielen en publiek</strong><br/><a href="platform/using/adding-profiles.md">Profielen toevoegen</a> - <a href="platform/using/creating-and-managing-lists.md">Lijsten maken</a> - <a href="delivery/using/about-services-and-subscriptions.md">Services en abonnementen</a> - <a href="platform/using/privacy-management.md">Privacy en toestemming</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>Architectuur en configuratie</strong><br/><a href="production/using/general-architecture.md">Architectuurbeginselen</a> - <a href="production/using/build-upgrade.md">Een build-upgrade uitvoeren</a> - <a href="production/using/configuration.md">Campagne configureren</a> - <a href="installation/using/external-accounts.md">Verbinding maken met externe systemen</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+      <br/>
+      <strong>Bronnen voor ontwikkelaars</strong><br/><a href="configuration/using/about-data-model.md">Beschrijving van gegevensmodel</a> - <a href="configuration/using/about-schema-reference.md">Schema-structuur</a> - <a href="configuration/using/editing-forms.md">Schema-structuur</a> - <a href="configuration/using/about-web-services.md">API's</a> - <a href="configuration/using/about-custom-recipient-table.md">Aangepaste tabel voor ontvangers</a>
+    </td>
+  </tr>
+</table>
+
+## Aanvullende bronnen
+
+[Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) - [Adobe Campaign-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
