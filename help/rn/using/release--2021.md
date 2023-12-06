@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -291,7 +291,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost waarbij het geheugengebruik op de server werd verminderd tijdens het uitvoeren van de verzendingsanalyse.
 * Er is een probleem opgelost waardoor de instantie mogelijk niet werkte wanneer specifieke complexe query&#39;s werden uitgevoerd.
 * Er is een probleem opgelost waarbij de technische workflow **Synchronizing Twitter pages** mogelijk niet werd uitgevoerd. (NEO-28634)
-* Probleem verholpen waarbij een foutbericht kon worden weergegeven met betrekking tot de functie decryptPassword tijdens een poging om op X (voorheen bekend als Twitter) te publiceren met de functie **Tweet (twitter)** leveringssjabloon. (NEO-28216)
+* Er is een probleem opgelost waarbij soms een foutbericht werd weergegeven voor de functie decryptPassword tijdens een poging om op X (voorheen Twitter) te publiceren met de verzendingssjabloon **Tweet (twitter)**. (NEO-28216)
 * Er is een probleem opgelost dat optrad bij het gebruik van een **Javascript**-activiteit om een HTTP-aanvraag in een workflow uit te voeren. De aanroep mislukte met de volgende fout (NEO-29146) na het bepalen van het poortnummer in de hostnaam:
 
 ```
