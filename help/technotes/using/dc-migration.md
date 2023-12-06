@@ -1,13 +1,15 @@
 ---
 product: campaign
 title: Migratie naar Public Cloud
-description: Meer informatie over Campaign Classic-migratie naar openbare cloud
+description: Meer informatie over Campaigns Classic migreren naar Public Cloud
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -26,7 +28,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 * Oplossing van geïdentificeerde beveiligingskwetsbaarheden door de infrastructuur te verplaatsen naar een beveiligde en moderne omgeving (AWS).
 * Elimineer mogelijk omslachtige schaalprocessen en verstrek toegang tot onze [Verbeterde MTA&#39;s](../../delivery/using//sending-with-enhanced-mta.md) en alle serviceniveaus voor onderhoud te verbeteren.
-* Bereid uw exemplaar voor voor de toekomst van Adobe Campaign Classic, inclusief meer geautomatiseerde, regelmatige upgrades waarvoor niet zoveel bronnen en niet zoveel tijd nodig zijn.
+* Bereid uw exemplaar voor voor de toekomst van Adobe Campaign Classic, met inbegrip van meer geautomatiseerde, regelmatige upgrades die niet zo veel middelen, noch zoveel tijd zullen vereisen.
 
 ### Verklarende woordenlijst
 
@@ -38,7 +40,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 
 >[!NOTE]
->De migratie van Campaign Classic v7 naar Public Cloud is van invloed op klanten die **Beheerde services van Adobe** alleen.
+>Migratie van Campaign Classic v7 naar Public Cloud is van invloed op klanten die **Adobe Managed Services** alleen.
 
 
 ## Voordelen
@@ -85,7 +87,7 @@ Een migratie kan worden geïnitieerd door [het openen van een nieuw ondersteunin
 
 Deze migratie naar de cloud is **eerste stap naar de [jaarlijks upgradeprogramma](../../rn/using/rn-overview.md#yearly-upgrade)** van uw Adobe Campaign-instanties. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
 
-De Adobe Managed Services-cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [Meer informatie over AWS](https://aws.amazon.com/application-hosting/benefits/).
+De Adobe Managed Services cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [Meer informatie over AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe is van plan het oude datacenter uit te schakelen, Adobe Campaign-instanties die daar actief zijn, moeten worden overgebracht naar het nieuwe referentiecentrum in AWS.
 
@@ -93,7 +95,7 @@ Dit is een kritiek pad voorwaarts, aangezien uw huidige locatie kan worden bloot
 
 Bovendien is deze migratie nu een **vereiste voor elke toekomstige upgrade van Build** van je Adobe Campaign. Upgrade bouwen is niet meer mogelijk in het oude datacenter.
 
-Adobe heeft alles in het werk gesteld om uw gegevens te beveiligen en u op koers te brengen voor de toekomst van Adobe Campaign. We hebben uw partnerschap nodig om het tot een gezamenlijk succes te maken!
+De Adobe heeft er alles aan gedaan om uw gegevens te beveiligen en u op koers te brengen voor de toekomst van Adobe Campaign. We hebben uw partnerschap nodig om het tot een gezamenlijk succes te maken!
 
 
 **We hebben een team georganiseerd** van specifieke Customer Care Reps, Customer Success Managers, Product Managers, Engineers, TechOps Specialisten en Product Consultants om u te helpen en ervoor te zorgen dat de ervaring soepel en naadloos is. We doen er alles aan om u te voorzien van alle relevante project- en contactinformatie.
@@ -111,7 +113,7 @@ Meer informatie over de migratie van campagnes naar [Veelgestelde vragen over op
 
 ## Migratiepad naar openbare cloud
 
-Adobe handelt de meeste acties af. We hebben u nodig voor validatie en aftekening.
+De meeste handelingen worden door de Adobe afgehandeld. We hebben u nodig voor validatie en aftekening.
 
 ![](assets/MigrationPath.png)
 
@@ -125,7 +127,7 @@ De database wordt uit het oude datacenter verwijderd en hersteld in Public Cloud
 
 **IP&#39;s verzenden via e-mail**
 
-Wanneer de migratie volledig is, zal de instantie van de Campagne volledig verschillend het verzenden IPs hebben. Als kwestie van het verzekeren van een vlotte overgang, zal Adobe een oprijving van nieuwe verzendende IPs door progressief omschakelingsverkeer van oude aan nieuwe IPs uitvoeren.
+Wanneer de migratie volledig is, zal de instantie van de Campagne volledig verschillend het verzenden IPs hebben. Als kwestie van het verzekeren van een vlotte overgang, zal de Adobe een oprijving van nieuwe verzendende IPs door progressief overschakelingsverkeer van oude aan nieuwe IPs uitvoeren.
 
 **IP&#39;s voor gegevensintegratie**
 
@@ -146,7 +148,7 @@ Bestaande campagnemeservers (containers in feite) worden verplaatst naar de Publ
 
 Onder het subdomein(en) dat (die) wordt (worden) gebruikt voor marketingcommunicatie: blijft hetzelfde. Afhankelijk van de implementatie kunnen er echter acties aan de clientzijde nodig zijn:
 
-* In het geval van subdomeindelegatie (normaal geval) zorgt Adobe voor alle wijzigingen en voor een naadloze overgang
+* In het geval van subdomeindelegatie (normaal geval) zorgt de Adobe voor alle wijzigingen en zorgt zij voor een naadloze overgang
 * In het geval van opstelling CNAME (uitzondering), zal de cliënt worden gevraagd om veranderingen uit te voeren. Coördinatie met Adobe is nodig.
 
 Voor gebruikerstoegang en gegevensintegratie blijven de namen onder neolane.net ongewijzigd.
@@ -157,7 +159,7 @@ Dat betekent de verandering voor gebruikers, en de implementaties van de gegeven
 
 **IP&#39;s verzenden via e-mail**
 
-Eerst, zal de Leverbaarheid van de Adobe de leveringsstatus van het platform beoordelen en zal een plan voor de schakelaar aan nieuwe IPs adviseren.
+Eerst, zal de Leverbaarheid van de Adobe de leveringsstatus van het platform beoordelen en een plan voor de omschakeling aan nieuwe IPs adviseren.
 
 Adobe zal het zelfde aantal IPs op het nieuwe gegevenscentrum verstrekken.
 
@@ -208,6 +210,6 @@ Normaal, is het domein dat voor het verzenden van e-mail (deel op het recht van 
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
-* [Migratie naar veelgestelde vragen over Adobe Managed Services (Public Cloud)](dc-migration-faq.md)
+* [Veelgestelde vragen over migratie naar Adobe Managed Services (Public Cloud)](dc-migration-faq.md)
 * [Jaarlijkse upgrades campagne](../../rn/using/rn-overview.md)
 * [Veelgestelde vragen over upgrade maken](../../platform/using/faq-build-upgrade.md)
