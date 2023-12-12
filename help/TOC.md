@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
-      + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+      + Privacyverzoeken {#privacy-requests}
          + [Privacyverzoeken](platform/using/privacy-requests.md)
          + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
          + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
@@ -640,7 +640,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -820,9 +820,9 @@ ht-degree: 99%
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
-   + Upgrade uitvoeren naar IMS{#ims}
+   + Upgraden naar IMS{#ims}
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
-      + [Technische operatoren migreren naar de Developer Console](technotes/using/ims-migration.md)
+      + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Microsoft Edge Chromium inschakelen](technotes/using/edge-chromium.md)
