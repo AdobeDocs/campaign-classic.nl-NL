@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 JWT (JSON Web Tokens) wordt momenteel uitgefaseerd en wordt vervangen door OAuth. De overgang wordt geleidelijk uitgevoerd binnen komende releases van Campaign en de documentatie zal worden aangepast voor deze updates.
 
-Configuratie externe FDA-account toegevoegd voor Amazon Redshift. [Meer informatie](../../installation/using/configure-fda-redshift.md)
+Externe FDA-accountconfiguratie toegevoegd voor Amazon Redshift. [Meer informatie](../../installation/using/configure-fda-redshift.md)
 
 ### Augustus 2023 {#aug-2023}
 
