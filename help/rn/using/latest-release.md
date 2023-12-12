@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 [!BADGE Algemene beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
 
 
-_woensdag 5 december 2023_
+_Woensdag 5 december 2023_
 
 
 **Verbeterde beveiliging**
 
 
-* Met Campaign Classic v7.3.5 is het verificatieproces verbeterd en beveiligd. Technische operatoren moeten nu Adobe Identity Management System (IMS) gebruiken om verbinding te maken met Campagne. Leer hoe u uw bestaande technische account(s) kunt migreren in [dit technote](../../technotes/using/ims-migration.md).
+* Met Campaign Classic v7.3.5 is het verificatieproces verbeterd en beveiligd. Technische operatoren moeten nu Adobe Identity Management System (IMS) gebruiken om verbinding te maken met Campaign. Ontdek in [deze technische opmerking](../../technotes/using/ims-migration.md) hoe u uw bestaande technische account(s) kunt migreren.
 
-* Daarnaast raadt Adobe Campaign in het kader van de inspanningen om het beveiligings- en verificatieproces te versterken ten zeerste aan om de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe. Leer hoe u uw operatoren kunt migreren in [dit technote](../../technotes/using/migrate-users-to-ims.md).
+* Daarnaast raadt Adobe Campaign bij het versterken van het beveiligings- en verificatieproces sterk aan om de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe. Ontdek in [deze technische opmerking](../../technotes/using/migrate-users-to-ims.md) hoe u uw operators kunt migreren.
 
 **Patches**
 
-* Probleem verholpen bij het gebruik van gegevens uit een Google Big Query-database en het bijwerken van gegevens in een Oracle-database: alle sleutels zijn ingesteld op `0` in de tijdelijke tabel met werkstromen. (NEO-65091)
-* Probleem verholpen waarbij de uitvoering van een workflow mislukte wanneer twee query&#39;s in een Google Big Query-database werden gecombineerd in een **Unie** workflowactiviteit. (NEO-63705)
-* Probleem verholpen waarbij de gebruiker werd gevraagd opnieuw te verifiëren wanneer op de knop `Back` in een campagnerapport. (NEO-65087)
-* Oplossing voor een fout in de workflow Database opschonen die zich voordeed toen een levering werd verwijderd vóór de proefdrukken van de levering. (NEO-48114)
-* Probleem opgelost tijdens verbinding maken met de clientconsole: recente updates van de TLS-verificatie leidden tot een verbindingsfout. (NEO-50488)
-* Probleem verholpen met de HTTP Proxy-verificatie na de campagne na de upgrade naar 7.3.1. HTTP-aanvragen in Campagne-workflows mislukten `error 407 – proxy auth required is returned`. (NEO-49624)
-* Correctie van een periodiek defect met GPG-decodering in **Script** workflowactiviteiten. Het bijbehorende foutbericht was: `gpg: decryption failed: No secret key`. (NEO-50257)
+* Probleem verholpen bij het gebruik van gegevens uit een Google Big Query-database en het bijwerken van gegevens in een Oracle-database: alle sleutels in de tijdelijke tabel met workflows zijn ingesteld op `0`. (NEO-65091)
+* Probleem verholpen waarbij de uitvoering van een workflow mislukte wanneer twee query&#39;s in een Google Big Query-database werden gecombineerd in een **Samenvoeging**-workflowactiviteit. (NEO-63705)
+* Probleem verholpen waarbij de gebruiker werd gevraagd opnieuw te verifiëren wanneer in een Campaign-rapport op de knop `Back` werd geklikt. (NEO-65087)
+* Probleem verholpen in de workflow Database opschonen die optrad als een levering werd verwijderd vóór de leveringsbewijzen werden afgeleverd. (NEO-48114)
+* Probleem verholpen tijdens verbinden met de clientconsole: recente updates van de TLS-verificatie leidden tot een verbindingsfout. (NEO-50488)
+* Probleem verholpen met de HTTP-proxyverificatie na de upgrade van de Campaign naar 7.3.1., waarbij HTTP-verzoeken in Campaign-workflows mislukten met `error 407 – proxy auth required is returned`. (NEO-49624)
+* Er is een intermitterende fout opgelost bij GPG-ontsleuteling in workflowactiviteiten van **Script**. Het bijbehorende foutbericht was: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 ## Release 7.3.4 - build 9364 {#release-7-3-4}
@@ -167,7 +167,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 
 **Afgeschafte functies**
 
-* Social marketing met Facebook is nu afgeschaft. U kunt X-integratie (voorheen bekend als Twitter) gebruiken om op sociale media te plaatsen of met Adobe werken om een aangepast kanaal te maken.
+* Social marketing met Facebook is nu afgeschaft. U kunt integratie met X (voorheen Twitter) gebruiken om berichten te plaatsen op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
 * ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.
 
 Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](deprecated-features.md).
