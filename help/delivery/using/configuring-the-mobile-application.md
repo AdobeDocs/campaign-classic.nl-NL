@@ -6,22 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 8%
+source-wordcount: '621'
+ht-degree: 4%
 
 ---
 
 # Configuratiestappen voor iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-
-
 Nadat het pakket is geïnstalleerd, kunt u de iOS-toepassingsinstellingen in Adobe Campaign Classic definiëren.
-
->[!NOTE]
->
->Als u wilt weten hoe u uw app voor Android kunt configureren en hoe u een levering voor Android kunt maken, raadpleegt u deze [sectie](configuring-the-mobile-application-android.md).
 
 De belangrijkste stappen zijn:
 
@@ -30,7 +24,6 @@ De belangrijkste stappen zijn:
 1. [De mobiele iOS-app integreren in de campagne](#creating-ios-app)
 
 Dan kunt u [een pushmelding maken voor iOS-apparaten](create-notifications-ios.md).
-
 
 ## Externe iOS-account configureren {#configuring-external-account-ios}
 
@@ -102,7 +95,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** om uitgebreide 
 
 1. Klikken **[!UICONTROL Next]** om de ontwikkelingstoepassing te configureren.
 
-1. Zorg ervoor dat **[!UICONTROL Integration key]** wordt gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. Raadpleeg [deze pagina](integrating-campaign-sdk-into-the-mobile-application.md) voor meer informatie. Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
+1. Zorg ervoor dat **[!UICONTROL Integration key]** wordt gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. Raadpleeg voor meer informatie hierover [deze pagina](integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
 
    >[!NOTE]
    >

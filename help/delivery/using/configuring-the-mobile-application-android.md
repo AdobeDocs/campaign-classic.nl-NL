@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '856'
 ht-degree: 4%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 4%
 # Configuratiestappen voor Android
 
 Nadat het pakket is geïnstalleerd, kunt u de instellingen voor uw Android-app definiëren in Adobe Campaign Classic.
-
->[!NOTE]
->
->Als u wilt weten hoe u uw app voor iOS kunt configureren en hoe u een levering voor iOS kunt maken, raadpleegt u deze [sectie](configuring-the-mobile-application.md).
 
 De belangrijkste stappen zijn:
 
@@ -29,6 +25,11 @@ De belangrijkste stappen zijn:
 1. [Het app-schema uitbreiden met aanvullende gegevens](#extend-subscription-schema)
 
 Dan kunt u [een Android-rijk bericht maken](create-notifications-android.md).
+
+>[!IMPORTANT]
+>
+>Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van Android worden in 2024 gepubliceerd en kunnen van invloed zijn op uw Adobe Campaign-implementatie. Mogelijk moet de configuratie van uw abonnementsservices voor Android-pushberichten worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Meer informatie in deze [Adobe Campaign v8-technologie](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
 
 ## Externe Android-account configureren {#configuring-external-account-android}
 
@@ -57,7 +58,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 ## Een Android-service configureren {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-service configureert in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
+![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-service configureert in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Ga naar de **[!UICONTROL Profiles and Targets > Services and subscriptions]** knoop en klik **[!UICONTROL New]**.
 
@@ -100,18 +101,17 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
 1. Vul de **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** velden.
 
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
+1. Klikken **[!UICONTROL Finish]** dan **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
 
 Standaard slaat Adobe Campaign een toets op in het dialoogvenster **[!UICONTROL User identifier]** (@userKey) in het veld **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
-### Selecteer de API-versie{#select-api-version}
+### De API-versie configureren{#select-api-version}
 
-Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u de mobiele toepassing configureren, afhankelijk van de gekozen API-versie.
+>[!IMPORTANT]
+>
+>Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van Android worden in 2024 gepubliceerd en kunnen van invloed zijn op uw Adobe Campaign-implementatie. Als onderdeel van de voortdurende inspanningen van Google om haar diensten te verbeteren, zullen de bestaande FCM API&#39;s worden stopgezet op **20 juni 2024**. Meer informatie in deze [Adobe Campaign v8-technologie](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
-* **HTTP v1** de configuratie wordt gedetailleerd in [deze sectie](configuring-the-mobile-application-android.md#android-service-httpv1).
-* **HTTP (verouderd)** de configuratie wordt gedetailleerd in [deze sectie](configuring-the-mobile-application-android.md#android-service-http).
-
-#### HTTP v1-API configureren{#android-service-httpv1}
+Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u uw mobiele toepassing configureren. De **HTTP (verouderd)** API mag niet worden geselecteerd omdat deze is vervangen door Google.
 
 Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
@@ -136,7 +136,7 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
 1. Als optie kunt u de inhoud van een pushbericht verrijken met wat **[!UICONTROL Application variables]** indien nodig. Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
 
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
+1. Klikken **[!UICONTROL Finish]** dan **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
 
 Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te passen:
 
@@ -144,34 +144,6 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 |:-:|:-:|:-:|
 | gegevensbericht | N.v.t. | validate_only |
 | meldingsbericht | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
-
-<br>
-<br>
-
-#### HTTP-API (verouderd) configureren{#android-service-http}
-
-Voer de volgende stappen uit om de HTTP-versie (verouderd) te configureren:
-
-1. In uw **[!UICONTROL Mobile application creation wizard]** venster, selecteert u **[!UICONTROL HTTP (legacy)]** in de **[!UICONTROL API version]** vervolgkeuzelijst.
-
-1. Voer de **[!UICONTROL Project key]** die door de ontwikkelaar van de mobiele toepassing werd verstrekt.
-
-1. Als optie kunt u de inhoud van een pushbericht verrijken met wat **[!UICONTROL Application variables]** indien nodig. Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
-
-   In het volgende voorbeeld voegen we **titel**, **imageURL** en **iconURL** om uitgebreide pushmeldingen te maken en de toepassing de afbeelding, titel en het pictogram te geven die binnen het bericht moeten worden weergegeven.
-
-   ![](assets/nmac_android_2.png)
-
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in het Campaign Classic.
-
-Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te passen:
-
-| Berichttype | Configureerbaar berichtelement (FCM-ladenaam) | Configureerbare opties (FCM-ladenaam) |
-|:-:|:-:|:-:|
-| gegevensbericht | N.v.t. | dryRun |
-| meldingsbericht | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
-
-<br>
 
 ## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 

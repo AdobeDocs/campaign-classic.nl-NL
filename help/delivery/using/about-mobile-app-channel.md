@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 2%
 # Aan de slag met het kanaal voor mobiele apps{#about-mobile-app-channel}
 
 De **Mobiel App-kanaal** Hiermee kunt u het Adobe Campaign-platform gebruiken om persoonlijke pushmeldingen naar iOS- en Android-terminals te verzenden via apps.
-
->[!CAUTION]
->
->In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële Apple voor nadere informatie hierover [documentatie](https://developer.apple.com/) en Android [documentatie](https://developer.android.com/index.html).
 
 Er zijn twee leveringskanalen beschikbaar:
 
@@ -32,14 +28,14 @@ Er zijn twee leveringskanalen beschikbaar:
 
   ![](assets/nmac_intro_1.png)
 
-Voor deze twee kanalen zijn er twee leveringsactiviteiten in de campagneworkflows:
+  >[!IMPORTANT]
+  >
+  >Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van Android worden in 2024 gepubliceerd en kunnen van invloed zijn op uw Adobe Campaign-implementatie. Mogelijk moet de configuratie van uw abonnementsservices voor Android-pushberichten worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Meer informatie in deze [Adobe Campaign v8-technologie](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+Voor deze twee kanalen zijn er twee leveringsactiviteiten in de campagneworkflows. Twee transactionele berichtmalplaatjes zijn ook beschikbaar voor transactieoverseinen.
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->Twee transactionele berichtmalplaatjes zijn ook beschikbaar voor transactieoverseinen.
 
 U kunt het gedrag van de toepassing bepalen wanneer de gebruiker het bericht activeert om het scherm te tonen dat de toepassingscontext aanpast. Bijvoorbeeld:
 
