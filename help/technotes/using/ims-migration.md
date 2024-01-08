@@ -4,9 +4,9 @@ description: Leer hoe u technische operatoren van campagnes kunt migreren naar e
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Een technische operator is een Campagnegebruikersprofiel dat expliciet is gemaak
 
 Als u API vraag van een systeem buiten Campagne in of uw instantie van de Marketing van de Campagne of de instantie van het Centrum van het Bericht in real time maakt, adviseert de Adobe u hoogst om de technische exploitant(en) aan technische rekening(en) door de Console van Adobe Developer te migreren zoals hieronder gedetailleerd.
 
-Deze wijziging is van toepassing vanaf Campaign Classic 7.3.5 en is **verplicht** naar Adobe Campaign v8 verplaatsen.
+Deze wijziging is van toepassing vanaf Campaign Classic v7.3.5 (en de nieuwste [Met IMS compatibele versies voor migratie](#ims-versions-tech)) en is **verplicht** naar Adobe Campaign v8 verplaatsen.
 
 ## Migratieproces {#ims-migration-procedure}
 
@@ -36,13 +36,24 @@ Een overzicht van de stappen is:
 * De API&#39;s bijwerken en de nieuwe gegevens van de technische account gebruiken
 * Verwijder de verouderde technische operatoren uit uw Campagne-instantie
 
+
+### Met IMS compatibele versies voor migratie {#ims-versions-tech}
+
+Een eerste vereiste voor deze migratie is het upgraden van uw omgeving naar een van de volgende productversies:
+
+* Campagne v7.3.5 (aanbevolen)
+* Campagne v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de release](../../rn/using/latest-release.md).
+
 ### Voorwaarden voor migratie{#ims-migration-prerequisites}
 
 <!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 * Campagne-gehost en Managed Services-klanten
 
-  Voor API-aanroepen in de Message Center-instantie(s) had een productprofiel moeten worden gemaakt tijdens de upgrade naar Campagne v7.3.5 of tijdens de provisioning van de instantie. Dit productprofiel heeft de volgende naam:
+  Voor API-aanroepen in de Message Center-instantie(s) had een productprofiel moeten worden gemaakt tijdens de upgrade naar Campagne v7.3.5 (of een ander profiel) [Compatibele versie van IMS-migratie](#ims-versions-tech)), of tijdens levering van de instantie. Dit productprofiel heeft de volgende naam:
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -227,7 +238,7 @@ De gebruiker van de Technische Rekening zal NIET in Adobe Campaign bestaan tot m
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   Blader in het scherm Credentials omlaag om de **Technical Account Email **te zoeken en klik op de knop **Kopiëren** knop.
+   In de **Credentials details** tabblad, omlaag schuiven om de **E-mail technische account** en klik op de knop **Kopiëren** knop.
 
    ![](assets/do-not-translate/ims-updates-08.png)
 
