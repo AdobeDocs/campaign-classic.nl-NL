@@ -3,33 +3,30 @@ product: campaign
 title: IMS configureren
 description: Leer hoe u verbinding maakt via een Adobe ID
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 5%
+source-wordcount: '334'
+ht-degree: 2%
 
 ---
 
 # IMS configureren{#configuring-ims}
 
-
-
 >[!IMPORTANT]
 >
->De implementatie van Adobe IMS is uitsluitend voorbehouden aan de technische beheerders van de Adobe. Neem contact op met de Adobe-manager om het implementatieproces te starten.
+>Als op Campagne gehoste of beheerde de dienstengebruiker, is uw implementatie van Adobe IMS eigendom van Adobe. De hieronder beschreven stappen zijn alleen van toepassing op klanten op locatie en op hybride klanten.
+> Adobe IMS-implementatie mag alleen worden uitgevoerd door technische beheerders van Adoben. Neem contact op met uw Adobe om het implementatieproces te starten.
 
 ## Vereisten {#prerequisites}
 
-De integratie met de IMS gebruiken:
-
 * U moet een Adobe Experience Cloud-naam en -id hebben. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
-* U moet gebruikers toevoegen in de Experience Cloud. Raadpleeg voor meer informatie hierover [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* U moet gebruikers toevoegen in het Experience Cloud. Raadpleeg voor meer informatie hierover [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
@@ -37,7 +34,7 @@ De integratie met de IMS gebruiken:
 
 ## De console bijwerken {#updating-the-console}
 
-Om deze functionaliteit te gebruiken, is het noodzakelijk dat u de recentste versie van de console installeert.
+Om deze functionaliteit te gebruiken, is het noodzakelijk dat u de recentste versie van de console van de Cliënt installeert.
 
 ## Het pakket installeren {#installing-the-package}
 
@@ -49,23 +46,16 @@ U moet de ingebouwde **[!UICONTROL Integration with the Adobe Experience Cloud]*
 
 Vorm **Adobe Experience Cloud** externe rekening in **[!UICONTROL Administration > Platform > External accounts]**.
 
->[!CAUTION]
->
->Deze configuratie is gereserveerd voor de technische beheerder.
-
 ![](assets/ims_5.png)
 
 Voer de volgende gegevens in:
 
-* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door de steun van Adobe. Raadpleeg voor meer informatie de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door het team van de Zorg van de Adobe. Raadpleeg voor meer informatie de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
   De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 
 * Organisatie-id: raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
+
 * Associatiemasker: in dit veld kunt u de syntaxis definiëren waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign. Als u de syntaxis &quot;Campagne - huurder_id - ( gebruikt.&#42;)&quot;, wordt de in Adobe Campaign gemaakte beveiligingsgroep gekoppeld aan de configuratienaam &quot;Campaign - huurder_id - internal_name&quot; in het Enterprise-dashboard.
 
-  >[!CAUTION]
-  >
-  >Het associatiemasker is essentieel voor de verbinding via Adobe ID om correct te werken.
-
-* Adobe Experience Cloud-verbindingsgegevens, met name de naam van de Adobe Experience Cloud Tenant.
+* Adobe Experience Cloud connection information, which is the name of the Adobe Experience Cloud Tenant.

@@ -3,35 +3,29 @@ product: campaign
 title: IMS implementeren
 description: IMS implementeren
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '78'
+ht-degree: 2%
 
 ---
 
 # IMS implementeren{#implementing-ims}
 
+Eenmaal [IMS-configuratie](configuring-ims.md) is voltooid, kunt u de verbinding inschakelen.
 
+Voer de volgende stappen uit om de IMS-verificatiemodus in Adobe Campaign in te schakelen:
 
-## De IMS-verbinding inschakelen {#enabling-the-ims-connection}
-
-1. Als u verbinding wilt maken via de IMS, schakelt u **[!UICONTROL Connect with an Adobe ID]** in het de verbindingsvenster van de console.
+1. Open het verbindingsscherm van de Clientconsole.
+1. Selecteer de omgeving waarvoor u de verbinding wilt inschakelen.
+1. Controleer de **[!UICONTROL Connect with an Adobe ID]** en sla uw wijzigingen op.
 
    ![](assets/ims_1.png)
 
-1. Voer uw Adobe ID en wachtwoord in. Het startscherm van Adobe Campaign wordt dan weergegeven.
-
-   ![](assets/ims_2.png)
-
-## De IMS-verbinding uitschakelen {#disabling-the-ims-connection}
-
-Als u de verbinding via de Adobe ID wilt uitschakelen, klikt u op **[!UICONTROL File > Connections]** en uitschakelen **[!UICONTROL Connect with an Adobe ID]**.
-
-![](assets/ims_4.png)
+1. Wanneer u verbinding maakt met deze omgeving, gebruikt u uw Adobe ID en wachtwoord.

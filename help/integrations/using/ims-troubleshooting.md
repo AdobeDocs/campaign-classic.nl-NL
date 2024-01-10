@@ -3,24 +3,23 @@ product: campaign
 title: Problemen met IMS oplossen
 description: Problemen met IMS oplossen
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 2%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 # Problemen met IMS oplossen{#ims-troubleshooting}
 
 
-
-De volgende tips voor het oplossen van problemen helpen **op locatie** klanten lossen de gemeenschappelijkste problemen op die wanneer het gebruiken van de integratie IMS gebeuren. Voor **gehost** Neem contact op met Adobe.
+De volgende tips voor het oplossen van problemen helpen **op locatie** en **hybride** klanten lossen de gemeenschappelijkste problemen op die wanneer het gebruiken van de integratie IMS gebeuren. Voor **gehost** klanten, gelieve Adobe te contacteren.
 
 **Externe account**
 
@@ -35,7 +34,7 @@ Verwijder gedupliceerde externe accounts die dezelfde instellingen hebben.
 
 Als de externe account een **Productcontext** veld, controleer of de waarde ervan is ingesteld op: **dma_campagne_classic**
 
-Zorg ervoor dat de productcontext hetzelfde is voor Campagne en Experience Cloud.
+Zorg ervoor dat de productcontext voor Campagne en Experience Cloud hetzelfde is.
 
 Als de **Productcontext** niet wordt weergegeven, moet de standaardproductcontext **dma_campagne** in zowel Campagne als Experience Cloud. Als de **Productcontext** wordt weergegeven, moet de standaardproductcontext **dma_campagne_classic** in zowel Campagne als Experience Cloud.
 

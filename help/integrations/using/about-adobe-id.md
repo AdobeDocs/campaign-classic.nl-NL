@@ -1,49 +1,48 @@
 ---
 product: campaign
-title: Adobe ID gebruiken in Campagne
-description: Meer informatie over de integratie met Adobe IMS
+title: Maak verbinding met Adobe Campaign via Adobe ID
+description: Meer informatie over de implementatie van Adobe IMS in Adobe Campaign
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 23%
+source-wordcount: '143'
+ht-degree: 18%
 
 ---
 
-# Informatie over Adobe ID{#about-adobe-id}
+# Informatie over Adobe ID {#about-adobe-id}
 
 Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg voor meer informatie over de verschillende typen Adobe-id&#39;s [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
-Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaign-console. Deze integratie biedt de volgende voordelen:
+Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console met hun Adobe ID in plaats van met de [native verificatie van gebruikers/wachtwoorden](../../platform/using/access-management-operators.md). Deze implementatie biedt de volgende voordelen:
 
 * Dezelfde id kan voor alle Experience Cloud-oplossingen worden gebruikt.
-* De verbinding wordt onthouden bij het gebruik van Adobe Campaign met verschillende integraties.
-* Veiliger beleid voor wachtwoordbeheer.
+* De verbinding wordt bewaard wanneer het gebruiken van Adobe Campaign met verschillende integraties.
+* Beveiligd beleid voor wachtwoordbeheer dan native aanmelding/wachtwoord.
 * Gebruik van Federated ID-accounts (externe id-provider).
 
-
+<!--
 >[!IMPORTANT]
 >
->Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan recentste bouwstijl bevorderen om met Campagne na te kunnen verbinden **30 juni 2021**. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole.
+>If you are connecting to Campaign through Adobe Identity Service (IMS), you need to upgrade to the latest build to be able to connect to Campaign after **June 30, 2021**. This upgrade is mandatory for both Campaign server and client console. 
 >
->Afhankelijk van uw huidige versie, moet u aan één van de volgende versies bevorderen:
+>Depending on your current version, you must upgrade to one of the following releases: 
 >
-> * [Campagne [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
-> * [Campagne 21.1.4](../../rn/using/latest-release.md)
+> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
+> * [Campaign 21.1.4](../../rn/using/latest-release.md)
 >
->[Meer informatie over IMS-updates](../../technotes/using/ims-updates.md)
-
+>[Learn more about IMS updates](../../technotes/using/ims-updates.md)
+-->
 
 ## Meer bronnen
 
 | Nuttige pagina’s | Aanvullende bronnen |
 |---|---|
-| [IMS configureren](../../integrations/using/configuring-ims.md) | [Experience Cloud Veelgestelde vragen](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS configureren](../../integrations/using/configuring-ims.md) | [Veelgestelde vragen over Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [IMS implementeren](../../integrations/using/implementing-ims.md) | [Toegangscontrole](../../platform/using/access-management.md) |
 | [IMS-probleemoplossing](../../integrations/using/ims-troubleshooting.md) | [Campagnepakketten installeren](../../installation/using/installing-campaign-standard-packages.md) |
