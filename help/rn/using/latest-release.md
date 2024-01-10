@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 _Woensdag 5 december 2023_
 
 
-### Verbeterde beveiliging {#release-7-3-5-security}
+### Beveiligingsverbeteringen {#release-7-3-5-security}
 
 
 * Met Campaign Classic v7.3.5 is het verificatieproces verbeterd en beveiligd. Technische operatoren moeten nu Adobe Identity Management System (IMS) gebruiken om verbinding te maken met Campaign. Ontdek in [deze technische opmerking](../../technotes/using/ims-migration.md) hoe u uw bestaande technische account(s) kunt migreren.
@@ -57,7 +57,7 @@ _Woensdag 5 december 2023_
 
 _7 september 2023_
 
-### Verbeterde beveiliging {#release-7-3-4-security}
+### Beveiligingsverbeteringen {#release-7-3-4-security}
 
 * De beveiliging in IMS API&#39;s is verbeterd. Clientgevoelige informatie (d.w.z. toegangstokens) is verwijderd uit URL-parameters. Deze gegevens worden nu verzonden in de header voor publicatiegegevens of autorisaties, zodat een veiliger communicatieproces mogelijk is. (NEO-63045)
 * De beveiliging in webapps is verbeterd om DDOS-aanvallen te voorkomen. (NEO-50757)
@@ -120,13 +120,13 @@ Er is een probleem opgelost waardoor Japanse tekens soms onjuist werden weergege
 
 >[!AVAILABILITY]
 >
->Er is een specifieke upgrade voor de patch versie 7.3.3.IMS beschikbaar voor deze versie - als er geen andere patch op uw omgeving is toegepast. Het brengt [Adobe Identity Management System (IMS) beveiligingsupdates die worden geleverd bij versie 7.3.5](#release-7-3-5-security) naar bestaande v7.3.3-omgevingen.
+>Er is een specifieke upgrade beschikbaar voor de patch v7.3.3.IMS voor deze versie, als er geen andere patch op uw omgeving is toegepast. Deze biedt [beveiligingsupdates van Adobe Identity Management System (IMS) die worden geleverd bij v7.3.5](#release-7-3-5-security) aan bestaande v7.3.3-omgevingen.
 
 
 _20 maart 2023_
 
 
-### Verbeterde beveiliging {#release-7-3-3-security}
+### Beveiligingsverbetering {#release-7-3-3-security}
 
 * Tomcat is bijgewerkt van versie 8.5.81 naar 8.5.85 om de beveiliging te optimaliseren. (NEO-56936)
 
