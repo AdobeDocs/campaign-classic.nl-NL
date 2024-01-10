@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8448'
 ht-degree: 0%
 
 ---
@@ -412,7 +412,7 @@ De Adobe Campaign Classic Extended SMPP-connector kan het aantal verbindingen pe
 
 Voor Adobe Campaign Classic kan het aantal ontvangers- en transmissieverbindingen verschillen:
 
-* **Transmitterverbindingen = Aantal MTA kindverbindingen * aantal MTA kindprocessen * aantal MTA aantal MTAs </br> (als auto-antwoord wordt geplaatst) + Aantal MTA kindverbindingen**
+* **Transmitterverbindingen = Aantal MTA kindverbindingen * aantal MTA kindprocessen * aantal MTAs (als auto-antwoord wordt geplaatst) * aantal MTA kindverbindingen**
 
 Zoals hierboven gesuggereerd, opent het proces van Adobe Campaign Classic SMS meer transmissieverbindingen als het auto-antwoord wordt toegelaten. Deze extra verbindingen worden gebruikt om de automatische antwoorden te verzenden.
 
@@ -716,7 +716,7 @@ Hiermee kunt u een aangepaste TLV toevoegen. In dit veld wordt het taggedeelte i
 
 Met deze instelling kunt u slechts één TLV-optie per bericht toevoegen.
 
-### Automatisch antwoord verzonden naar het MO-bericht {#automatic-reply}
+### Automatisch antwoord verzonden aan de MO {#automatic-reply}
 
 >[!IMPORTANT]
 >
@@ -748,7 +748,7 @@ Dit veld is optioneel. Het staat met voeten treedt afzenderadres (oADC) toe. De 
 
 Het veld is door de SMPP-specificatie beperkt tot 21 tekens, maar sommige providers staan mogelijk langere waarden toe. Houd er rekening mee dat in sommige landen zeer strikte beperkingen kunnen worden toegepast, zoals lengte, inhoud en toegestane tekens.
 
-### Bezorgingsparameters {#delivery-parameters}
+### Leveringsparameters {#delivery-parameters}
 
 #### Maximum aantal SMS per bericht {#maximum-sms}
 
