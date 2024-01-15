@@ -2,9 +2,9 @@
 title: Campagnebeheerders migreren naar Adobe Identity Management System (IMS)
 description: Leer hoe u campagneoperatoren kunt migreren naar Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
+source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Een eerste vereiste voor deze migratie is het upgraden van uw omgeving naar een 
 
 * Campagne v7.3.5 (aanbevolen)
 * Campagne v7.3.3.IMS
-  <!--* Campaign v7.3.2.IMS-->
+* Campagne v7.3.2.IMS
 
 Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
