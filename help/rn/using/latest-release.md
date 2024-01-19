@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2295'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ _20 maart 2023_
 
 >[!AVAILABILITY]
 >
->Er is een specifieke upgrade voor de patch versie 7.3.2.IMS beschikbaar voor deze versie - als er geen andere patch op uw omgeving is toegepast. Deze biedt [beveiligingsupdates van Adobe Identity Management System (IMS) die worden geleverd bij v7.3.5](#release-7-3-5-security) aan bestaande v7.3.3-omgevingen.
+>Er is een specifieke Campaign v7.3.2.IMS-patchupgrade beschikbaar voor deze versie - als er geen andere patch op uw omgeving is toegepast. Deze biedt [beveiligingsupdates van Adobe Identity Management System (IMS) die worden geleverd bij v7.3.5](#release-7-3-5-security) aan bestaande v7.3.3-omgevingen.
 
 _21 november 2022_
 
