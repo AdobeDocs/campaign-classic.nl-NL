@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Direct Mail
 role: User
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: ba542c0811141e707589568706d44c73c280c0d3
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 9%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,8 @@ Met Adobe Campaign kunt u bestanden maken die op grote schaal persoonlijke lette
 
 >[!NOTE]
 >
->Postadressen zijn berekende velden. Een adres kan standaard maximaal zes regels bevatten: de eerste regel bevat de voornaam en achternaam, de volgende regels bevatten het postadres (weg enz.) en de laatste regel bevat de postcode en de stad of stad.\
->Een adres wordt als volledig beschouwd als de naam, het gebied van de code van ZIP/Postal, en stad/stad gebieden niet leeg zijn.
+>Postadressen zijn berekende velden. Een adres kan standaard maximaal zes regels bevatten: de eerste regel bevat de voornaam en achternaam, de volgende regels bevatten het postadres (weg enz.) en de laatste regel bevat de postcode en de stad of stad. De definitie van het standaard berekende postadresgebied kan in nms worden herzien:ontvangend schema.
+>
+>Een adres wordt als volledig beschouwd als de naam, het gebied van de code van ZIP/Postal, en stad/stad gebieden niet leeg zijn. Ontvangers met onvolledige adressen worden uitgesloten van directe mailleveringen.
 
 In de onderstaande secties vindt u informatie die specifiek is voor het directe-mailkanaal. Voor algemene informatie over het maken en verzenden van een levering raadpleegt u [deze sectie](steps-about-delivery-creation-steps.md).
