@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 34%
+source-wordcount: '1751'
+ht-degree: 26%
 
 ---
 
-# Sms-kanaal configureren {#setting-up-sms-channel}
+# SMS-kanaal configureren op een zelfstandige instantie {#setting-up-sms-channel}
 
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
@@ -37,7 +37,7 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
 Voor meer informatie over het protocol en de montages van SMS, verwijs naar dit [page](sms-protocol.md).
 
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. In de **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** knoop van de boom, klik **[!UICONTROL New]** pictogram.
 1. Het accounttype definiëren als **Routering**, het kanaal als **Mobiel (SMS)** en de leveringsmodus als **Bulklevering**.
@@ -67,7 +67,7 @@ Volg de onderstaande stappen om dit te doen:
 
    >[!NOTE]
    >
-   >Bepaalde tekens tellen als twee tekens: accolades, vierkante haakjes, het euroteken, enzovoort. 
+   >Bepaalde tekens tellen als twee tekens (accolades, vierkante haken, het euroteken, enz.).
    >
    >De lijst met beschikbare GSM-tekens wordt hieronder weergegeven.
 
@@ -106,13 +106,13 @@ Transliteratie houdt in dat een teken van een sms door een ander teken wordt ver
 
 >[!IMPORTANT]
 >
->Als u personalisatievelden invoegt in de content van uw sms-bericht, worden mogelijk tekens ingevoegd die niet in aanmerking worden genomen door de gsm-codering.
+>Als u personalisatievelden invoegt in de inhoud van uw SMS-bericht, worden mogelijk tekens ingevoegd waarmee de GSM-codering geen rekening houdt.
 
 Standaard is transliteratie van tekens uitgeschakeld. Als u alle tekens in uw sms-berichten wilt behouden zoals ze zijn, bijvoorbeeld om geen eigennamen te wijzigen, wordt u aangeraden deze optie niet in te schakelen.
 
 Als uw sms-berichten echter veel tekens bevatten die Unicode-berichten genereren, kunt u deze optie inschakelen om de kosten voor het verzenden van uw berichten te beperken.
 
-In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard rekening houdt. Alle tekens die in de hoofdtekst van het bericht worden ingevoegd, met uitzondering van de onderstaande tekens, converteren het volledige bericht naar de binaire indeling (Unicode) en beperken het tot 70 tekens.
+In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard rekening houdt. Alle karakters die in het berichtlichaam worden opgenomen, buiten die hieronder vermeld, zetten het volledige bericht in binair formaat (Unicode) om en beperken daarom het tot 70 karakters.
 
 **Standaardtekens**
 
@@ -123,9 +123,9 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ¡ </td> 
+   <td> TP </td> 
    <td> P </td> 
-   <td> ¿ </td> 
+   <td> voor </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -151,7 +151,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
   <tr> 
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
-   <td> # </td> 
+   <td> Aantal </td> 
    <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
@@ -209,7 +209,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> Ç </td> 
+   <td> Functie </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
@@ -240,11 +240,11 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> Æ </td> 
+   <td> AE </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
-   <td> Ö </td> 
+   <td> Ö Ö </td> 
    <td> l </td> 
    <td> ö </td> 
   </tr> 
@@ -254,7 +254,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> Ñ </td> 
+   <td> - </td> 
    <td> m </td> 
    <td> ñ </td> 
   </tr> 

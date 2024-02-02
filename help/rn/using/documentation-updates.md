@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: ht
-source-wordcount: '3680'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '3699'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,8 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 ### Januari 2024 {#jan-2024}
 
 Er is informatie toegevoegd over de manier waarop het standaardveld postalAddress voor Direct Mail is gedefinieerd en waarom het belangrijk is dat de adressen volledig zijn. [Meer informatie](../../delivery/using/about-direct-mail-channel.md)
+
+Er is een nieuwe pagina toegevoegd over het configureren van het SMS-kanaal in Campagne op een infrastructuur voor midsourcing. [Meer informatie](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
