@@ -7,9 +7,9 @@ user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,9 +141,9 @@ ht-degree: 99%
       + [Bestanden bijvoegen](delivery/using/attaching-files.md)
    + Sms verzenden {#sending-messages-on-mobiles}
       + [Aan de slag met sms](delivery/using/sms-channel.md)
-      + SMS-kanaal configureren {#sms-set-up}
-         + [SMS configureren op een zelfstandige instantie](delivery/using/sms-set-up.md)
-         + [SMS configureren op een infrastructuur voor midsourcing](delivery/using/sms-set-up-mid.md)
+      + Sms-kanaal configureren{#sms-set-up}
+         + [Sms configureren op een zelfstandig exemplaar](delivery/using/sms-set-up.md)
+         + [Sms configureren op een infrastructuur voor midsourcing](delivery/using/sms-set-up-mid.md)
       + [Een sms maken](delivery/using/sms-create.md)
       + [Een sms verzenden en volgen](delivery/using/sms-send.md)
       + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
@@ -642,7 +642,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
