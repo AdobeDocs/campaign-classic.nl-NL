@@ -2,9 +2,9 @@
 title: Campagnebeheerders migreren naar Adobe Identity Management System (IMS)
 description: Leer hoe u campagneoperatoren kunt migreren naar Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,24 @@ Adobe raadt alle gebruikers sterk aan zich af te melden tijdens het migratievens
 Deze migratie kent twee aspecten: migratie van eindgebruikers (plus productprofielen) en migratie van technische gebruikers (gebruikt in API&#39;s in uw aangepaste code).
 
 Als al uw gebruikers (campagneexploitanten) op IMS zijn, zult u nog steeds uw Vertegenwoordiger/Klantenondersteuning van de Adobe moeten contacteren om de Migratie van de Profielen van het Product te plannen. U zult ook Technische gebruikers moeten migreren u in douanecode zou kunnen gebruikt. Meer informatie in [deze pagina](ims-migration.md).
+
+### Hoe te om het de authentificatietype van uw Operatoren te bekijken?
+
+Leer hoe te om het authentificatietype van uw Exploitanten in Campagne te bekijken:
+
+1. Van de **Verkenner**, toegang **Administratie** `>` **Toegangsbeheer** `>` **Operatoren**.
+
+1. Klik met de rechtermuisknop op de koptekstrij en selecteer de **Lijst configureren** -menu.
+
+   ![](assets/ims_2.png)
+
+1. Toevoegen **Account uitgeschakeld** en **Type verificatie** als **Uitvoerkolommen**.
+
+   ![](assets/ims_1.png)
+
+U kunt nu de lijst met uw **Operatoren** en hun **Type verificatie**.
+
+![](assets/ims_3.png)
 
 ## Nuttige koppelingen {#ims-useful-links}
 
