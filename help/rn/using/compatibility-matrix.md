@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x (alleen voor hybride omgevingen)</p>
 <p>7.x</p>
 <p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
@@ -353,7 +354,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 
 ### Microsoft WebView2-runtime
 
-Microsoft Edge WebView2-runtime de nieuwste versie is verplicht voor de Campaign-clientconsole.
+De nieuwste versie van de Microsoft Edge WebView2-runtime is verplicht voor de Campagne-clientconsole.
 
 Download Microsoft Edge WebView2 van [Microsoft Developer-site](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
