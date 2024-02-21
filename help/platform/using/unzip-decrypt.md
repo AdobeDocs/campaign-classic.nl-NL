@@ -9,17 +9,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 11%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
 
 # Een bestand decoderen of decoderen {#unzipping-or-decrypting-a-file-before-processing}
 
-Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
+Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [Gegevens laden (bestand)](../../workflow/using/data-loading-file.md) -activiteit, kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 **Verwante onderwerpen:**
 
-* [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md).
+* [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading-file.md).
 * [Een bestand comprimeren of versleutelen](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## Hoofdlettergebruik: gegevens importeren die zijn versleuteld met een toets die is gegenereerd door Configuratiescherm {#use-case-gpg-decrypt}
@@ -85,7 +85,7 @@ De volgende stappen voor dit gebruik zijn nodig:
 
    Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/file-transfer.md).
 
-1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading--file-.md).
+1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading-file.md).
 
    Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer de optie **[!UICONTROL Pre-process the file]** en kopieert en plakt u deze decoderingsopdracht in het dialoogvenster **[!UICONTROL Command]** field:
 

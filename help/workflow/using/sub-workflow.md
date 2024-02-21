@@ -2,13 +2,13 @@
 product: campaign
 title: Subworkflow
 description: Meer informatie over de subworkflowactiviteit
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ De **[!UICONTROL Sub-workflow]** Met activiteit kunt u de uitvoering van een and
 
 U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden synchroon uitgevoerd.
 
-In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Zie voor meer informatie over grafische objecten van het type springen [deze sectie](jump--start-point-and-end-point-.md).
+In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Zie voor meer informatie over grafische objecten van het type springen [deze sectie](jump-start-point-and-end-point.md).
 
 1. Maak een workflow die u als een subworkflow in een andere workflow wilt gebruiken.
 1. Een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van de werkstroom. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campaign de sprongen &quot;eindpunt&quot; met het laagste getal.
@@ -48,13 +48,13 @@ In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan me
 
 1. Voer de workflow uit.
 
-Na uitvoering blijft de workflow die als een subworkflow is aangeroepen, in **[!UICONTROL Being edited]** status, dat wil zeggen:
+Wanneer de workflow eenmaal is uitgevoerd, blijft de workflow die als een subworkflow is aangeroepen in **[!UICONTROL Being edited]** status, dat wil zeggen:
 
 * U kunt niet met de rechtermuisknop op de overgangen klikken om het doel weer te geven.
 * Het aantal intermediaire populaties kan niet worden weergegeven.
 * De logboeken van de subworkflow worden weergegeven in de primaire workflow.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >
@@ -75,4 +75,4 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 
 Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.
 
-* targetSchema: Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor alle overgangen met **[!UICONTROL tableName]** en **[!UICONTROL schema]**.
+* targetSchema: deze waarde is het schema van de werktabel. Deze parameter is geldig voor alle overgangen met **[!UICONTROL tableName]** en **[!UICONTROL schema]**.

@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 3%
+source-wordcount: '1255'
+ht-degree: 2%
 
 ---
 
@@ -29,9 +29,9 @@ Een marketingcampagne maken:
 
 1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
 
-1. Verzendingen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
+1. Leveringen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
 

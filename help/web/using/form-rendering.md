@@ -2,13 +2,13 @@
 product: campaign
 title: Formulierweergave
 description: Formulierweergave
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -72,27 +72,27 @@ Om dit te doen, gebruik **[!UICONTROL Advanced]** tab.
 Hiermee kunt u de volgende eigenschappen definiëren:
 
 * **[!UICONTROL Label position]**: zie [De positie van labels definiëren](defining-web-forms-layout.md#defining-the-position-of-labels),
-* **[!UICONTROL Label format]**: Tekstomloop of Geen tekstomloop
+* **[!UICONTROL Label format]**: Tekstomloop of Geen tekstomloop,
 * **[!UICONTROL Number of cells]** : zie [De velden op de pagina plaatsen](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
-* **[!UICONTROL Horizontal alignment]** (Links, Rechts, Gecentreerd) en **[!UICONTROL Vertical alignment]** (Hoog, Laag, Midden),
-* **[!UICONTROL Width]** van het gebied: dit kan worden uitgedrukt als een percentage of in ems, punten of pixels (standaardwaarde);
-* Maximum **[!UICONTROL Length]**: Maximum aantal tekens toegestaan (voor besturingselementen voor tekst, aantal en wachtwoordtype),
+* **[!UICONTROL Horizontal alignment]** (Links, Rechts, Centered) en **[!UICONTROL Vertical alignment]** (Hoog, Laag, Midden),
+* **[!UICONTROL Width]** van de zone: dit kan worden uitgedrukt als een percentage of in ems, punten of pixels (standaardwaarde);
+* Maximum **[!UICONTROL Length]**: Maximaal aantal tekens toegestaan (voor besturingselementen voor tekst, aantal en wachtwoordtype),
 * **[!UICONTROL Lines]**: aantal regels voor een **[!UICONTROL Multi-line text]** typezone,
-* **[!UICONTROL Style inline]**: kunt u de CSS-stijlpagina overladen met extra instellingen. Deze worden gescheiden met **;** tekens zoals in het onderstaande voorbeeld wordt getoond:
+* **[!UICONTROL Style inline]**: hiermee kunt u de CSS-stijlpagina overladen met extra instellingen. Deze worden gescheiden met **;** tekens zoals in het onderstaande voorbeeld wordt getoond:
 
-   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Kop- en voetteksten definiëren {#defining-headers-and-footers}
 
 Velden worden gerangschikt in een boomstructuur waarvan het basisniveau dezelfde naam heeft als de pagina. Selecteer het om de naam te wijzigen.
 
-De titel van het venster moet worden ingevoerd in het **[!UICONTROL Page]** tabblad van het venster met formuliereigenschappen. U kunt ook een setinhoud toevoegen aan de kop- en voettekst van de pagina (deze informatie wordt op elke pagina weergegeven). Deze inhoud wordt ingevoerd in de overeenkomende gedeelten van het dialoogvenster **[!UICONTROL Texts]** tab, zoals hieronder wordt getoond:
+De titel van het venster moet in **[!UICONTROL Page]** tabblad van het venster met formuliereigenschappen. U kunt ook een setinhoud toevoegen aan de kop- en voettekst van de pagina (deze informatie wordt op elke pagina weergegeven). Deze inhoud wordt ingevoerd in de overeenkomende gedeelten van het dialoogvenster **[!UICONTROL Texts]** tab, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Elementen toevoegen aan HTML header {#adding-elements-to-html-header}
 
-U kunt aanvullende elementen invoeren die moeten worden ingevoegd in de koptekst HTML van een formulierpagina. Om dit te doen, ga de elementen in in **[!UICONTROL Header]** tabblad van de desbetreffende pagina.
+U kunt aanvullende elementen invoeren die moeten worden ingevoegd in de koptekst HTML van een formulierpagina. Om dit te doen, ga de elementen in **[!UICONTROL Header]** tabblad van de desbetreffende pagina.
 
 Zo kunt u verwijzen naar een pictogram dat bijvoorbeeld op de titelbalk van de pagina wordt weergegeven.
 
@@ -140,7 +140,7 @@ Voor elk element van de pagina geldt het **[!UICONTROL Visibility]** kunt u de w
 
 ![](assets/s_ncs_admin_survey_condition_edit.png)
 
-Voorwaarden kunnen betrekking hebben op de waarde van databasevelden of -variabelen.
+De voorwaarden kunnen de waarde van gegevensbestandgebieden of variabelen betreffen.
 
 In het venster van de gebiedsselectie, kunt u van de volgende gegevens kiezen:
 
@@ -148,15 +148,15 @@ In het venster van de gebiedsselectie, kunt u van de volgende gegevens kiezen:
 
 * De hoofdstructuur bevat de parameters van de formuliercontext. De standaardparameters zijn de id (die overeenkomt met de gecodeerde id van de ontvanger), de taal en de oorsprong.
 
-   Raadpleeg [deze pagina](defining-web-forms-properties.md#form-url-parameters) voor meer informatie.
+  Raadpleeg [deze pagina](defining-web-forms-properties.md#form-url-parameters) voor meer informatie.
 
 * De **[!UICONTROL Recipients]** De substructuur bevat de invoervelden die in het formulier zijn ingevoegd en in de database zijn opgeslagen.
 
-   Raadpleeg voor meer informatie hierover [Gegevens opslaan in de database](web-forms-answers.md#storing-data-in-the-database).
+  Raadpleeg voor meer informatie hierover [Gegevens opslaan in de database](web-forms-answers.md#storing-data-in-the-database).
 
 * De **[!UICONTROL Variables]** De substructuur bevat de beschikbare variabelen voor dit formulier. Raadpleeg voor meer informatie hierover [Gegevens opslaan in een lokale variabele](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: [Verschillende opties weergeven, afhankelijk van de geselecteerde waarden](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: [Verschillende opties weergeven, afhankelijk van de geselecteerde waarden](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
 U kunt ook de weergave van formulierpagina&#39;s bepalen met de opdracht **[!UICONTROL Test]** object. Raadpleeg [deze pagina](defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 

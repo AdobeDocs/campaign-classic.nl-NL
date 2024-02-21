@@ -3,10 +3,10 @@ product: campaign
 title: Aan de slag met de Campagne HTML Editor
 description: Aan de slag met campagne-DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -50,11 +50,11 @@ Een eenvoudig **webtoepassing**, moet u:
 
 Om een **e-maillevering**, moet u:
 
-1. Een levering maken op basis van een DCE-sjabloon - [Meer informatie](use-case--creating-an-email-delivery.md)
+1. Een levering maken op basis van een DCE-sjabloon - [Meer informatie](use-case-creating-an-email-delivery.md)
 1. Bestaande inhoud selecteren of inhoud maken op basis van een [standaardsjabloon](template-management.md)
 1. Online-inhoud bewerken en configureren
 1. De levering verzenden - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Er is een volledige implementatiemonster beschikbaar in de context van een e-maillevering in [dit geval gebruiken](use-case--creating-an-email-delivery.md).
+>Er is een volledige implementatiemonster beschikbaar in de context van een e-maillevering in [dit geval gebruiken](use-case-creating-an-email-delivery.md).

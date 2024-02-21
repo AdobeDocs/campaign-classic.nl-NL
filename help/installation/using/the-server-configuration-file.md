@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '8056'
-ht-degree: 5%
+source-wordcount: '8075'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Hier zijn de verschillende parameters van **verificatie** knooppunt:
   <tr> 
    <td> defaultMode<br /> </td> 
    <td> Standaardidentificatiemodus.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
@@ -134,13 +134,13 @@ Hier zijn de verschillende parameters van **verificatie > XTK** knooppunt:
   <tr> 
    <td> internalPassword<br /> </td> 
    <td> Wachtwoord voor interne account.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
    <td> Beveiliging van de interne rekening: zone waarvoor toestemming is verleend voor de interne rekening.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
  </tbody> 
@@ -163,13 +163,13 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   <tr> 
    <td> exportDirectory<br /> </td> 
    <td> Exportmap: pad naar doelmap voor de geëxporteerde gegevens.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/export/' <br /> </td> 
   </tr> 
   <tr> 
    <td> extraSandboxDirectories<br /> </td> 
    <td> Extra sandboxmappen: andere paden die in de sandbox moeten worden toegevoegd (gescheiden door komma's).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '/home/customer/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
@@ -181,7 +181,7 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   <tr> 
    <td> gastheren<br /> </td> 
    <td> DNS-maskers: lijst met DNS-maskers die in deze instantie worden gebruikt (gescheiden door komma's, kan * en ? patronen).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
   <tr> 
@@ -193,19 +193,19 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   <tr> 
    <td> lang<br /> </td> 
    <td> Instantietaal (opsomming). Mogelijke waarden zijn 'fr_FR' (Français), 'en_GB' (English (UK)), 'en_US' (English (US)), 'de_DE' (Deutsch) en 'ja_JP' (Japans).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'nl_NL'<br /> </td> 
   </tr> 
   <tr> 
    <td> uploadDirectory<br /> </td> 
    <td> Map uploaden: pad naar doelmap voor de geüploade gegevens.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
    <td> Geautoriseerde bestanden die moeten worden gedownload, gescheiden door ','. De tekenreeks moet een geldige, reguliere Java-expressie zijn. Zie <a href="file-res-management.md" target="_blank">Uploadbare bestanden beperken</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
@@ -217,19 +217,19 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   <tr> 
    <td> vaultSecretPath<br /> </td> 
    <td> Secret path in Vault<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '/v1/geheime/campagne/'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultTokenPath<br /> </td> 
    <td> Het lokale pad van het bestand dat de vault-token bevat. $(HOME) kan in dit pad worden gebruikt (maar niet andere env-variabelen).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(HOME)/.vaulttoken'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
    <td> Hashicorp Vault URL <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -241,7 +241,7 @@ Hier zijn de verschillende parameters van **dataStore** knooppunt. Hier worden d
   <tr> 
    <td> workingDirectory<br /> </td> 
    <td> XPath van de werkmap.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> workingDirectory : XPath van de werkmap. Standaard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
  </tbody> 
@@ -263,12 +263,12 @@ Hier zijn de verschillende parameters van **dataStore > proxyAdjust** knooppunt.
   <tr> 
    <td> urlBase<br /> </td> 
    <td> Gebaseerd op gebruik bij het genereren van externe URL's. Voorbeeld: https://server.domain.com<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Gewone expressie die overeenkomt met URL's. Voorbeeld: http://server\.lan\.net.*<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -290,7 +290,7 @@ Hier zijn de verschillende parameters van **dataStore > dataSource** knooppunt.
   <tr> 
    <td> name<br /> </td> 
    <td> Naam gegevensbron<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> default<br /> </td> 
   </tr> 
  </tbody> 
@@ -317,7 +317,7 @@ In de **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
   <tr> 
    <td> dbSchema<br /> </td> 
    <td> Werkruimte<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -329,31 +329,31 @@ In de **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
   <tr> 
    <td> aanmelden<br /> </td> 
    <td> Account<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> password<br /> </td> 
    <td> Wachtwoord<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
    <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE, Sybase IQ)), 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> 'Oracle'<br /> </td> 
+   <td> String<br /> </td> 
+   <td> "Oracle"<br /> </td> 
   </tr> 
   <tr> 
    <td> server<br /> </td> 
    <td> Server<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> tijdzone<br /> </td> 
    <td> Tijdzone: zie <a href="../../installation/using/time-zone-management.md" target="_blank">Tijdzonebeheer</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -385,7 +385,7 @@ In de **dataStore > dataSource > sqlParams** knoop, vorm de SQL parameters:
   <tr> 
    <td> funcPrefix<br /> </td> 
    <td> Functievoorvoegsel<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -442,12 +442,12 @@ Raadpleeg voor meer informatie [Openbare middelen beheren](file-res-management.m
   <tr> 
    <td> name<br /> </td> 
    <td> Naam van de virtuele map <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> pad<br /> </td> 
    <td> Volledig pad van de feitelijke map<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -476,17 +476,17 @@ Hier zijn de verschillende parameters van **dataStore > preprocessCommand** knoo
   <tr> 
    <td> command<br /> </td> 
    <td> Opdrachtregel <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> label<br /> </td> 
    <td> Label van opdrachtregel<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Naam opdrachtregel<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -517,13 +517,13 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/configurin
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Door gebrek, gebruikt de netwerkparameters van de eerste netwerkinterface die in Vensters wordt verklaard; of ontleedt file/etc/resolv.conf onder Linux (domein of onderzoeksingang). <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> nameServers<br /> </td> 
    <td> DNS-server: door komma's gescheiden lijst met domeinnaamservers (DNS). Zie de onderstaande opmerking.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -573,12 +573,12 @@ Raadpleeg voor meer informatie [Toegestane externe opdrachten beperken](../../in
   <tr> 
    <td> blacklistFile<br /> </td> 
    <td> Pad naar het bestand met de opdrachten die aan de lijst van gewenste personen moeten worden toegevoegd. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> user<br /> </td> 
    <td> Voer bevelen als verschillende gebruiker uit.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -600,7 +600,7 @@ Hier zijn de verschillende parameters van **htmlToPDF** knooppunt. Dit is de con
   <tr> 
    <td> command<br /> </td> 
    <td> Opdrachtregel voor het uitvoeren van de conversie (in de modus 'Andere').<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -612,7 +612,7 @@ Hier zijn de verschillende parameters van **htmlToPDF** knooppunt. Dit is de con
   <tr> 
    <td> mode<br /> </td> 
    <td> Gereedschap voor conversie. Mogelijke waarden zijn: phantomjs, wkhtmltopdf, andere, uitgeschakeld<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'phantomjs' <br /> </td> 
   </tr> 
   <tr> 
@@ -659,49 +659,49 @@ Hier zijn de verschillende parameters van **ims** knooppunt. Dit is de configura
   <tr> 
    <td> authIMSClientId<br /> </td> 
    <td> Client-id<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSClientSecret<br /> </td> 
    <td> Geheime sleutel (gecodeerd in AES)<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSCode<br /> </td> 
    <td> Autorisatiecode (gecodeerd in AES)<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSEndpoint<br /> </td> 
    <td> URL IMS-server<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAClientId<br /> </td> 
    <td> Client-id voor technische account<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAClientSecret<br /> </td> 
    <td> Key technisch-accountgeheim (gecodeerd in AES)<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAId<br /> </td> 
    <td> Technisch account-id<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAPrivateKey<br /> </td> 
    <td> Persoonlijke sleutel technische account (gecodeerd in AES)<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -755,13 +755,13 @@ Hier zijn de verschillende parameters van **mailExchanger** knooppunt. Dit is de
   <tr> 
    <td> mxAddress<br /> </td> 
    <td> SMTP-server: IP-adres van SMTP-server voor e-mailoverdracht.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
    <td> De haven van TCP van server SMTP die voor de E-mailoverdracht wordt gebruikt.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -784,7 +784,7 @@ Hier zijn de verschillende parameters van **module** knooppunt. Dit is de config
   <tr> 
    <td> defaultNameSpace<br /> </td> 
    <td> Standaardnaamruimte die wordt gebruikt bij het maken van een nieuwe entiteit.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'cus'<br /> </td> 
   </tr> 
  </tbody> 
@@ -813,13 +813,13 @@ Hier zijn de verschillende parameters van **toezicht** knooppunt. Dit is de conf
   <tr> 
    <td> unixScript<br /> </td> 
    <td> Unix script uitgevoerd door de bewakingsservice.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> winScript<br /> </td> 
    <td> Het manuscript van vensters dat door de controledienst moet worden uitgevoerd.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -854,13 +854,13 @@ Hier zijn de verschillende parameters van **ooconv** knooppunt. Dit is de config
   <tr> 
    <td> portRange<br /> </td> 
    <td> Het interval van havens waarop de servers OpenOffice luisteren.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> URL van de documentconversieserver.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'http://localhost:8080/nl/jsp/ooconv.jsp'<br /> </td> 
   </tr> 
  </tbody> 
@@ -891,7 +891,7 @@ Raadpleeg voor meer informatie [Configuratie proxyverbinding](file-res-managemen
   <tr> 
    <td> override<br /> </td> 
    <td> Uitzonderingen: lijst van adressen waarvoor proxyparameters worden genegeerd.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
   <tr> 
@@ -921,17 +921,17 @@ Raadpleeg voor meer informatie [Configuratie proxyverbinding](file-res-managemen
   <tr> 
    <td> adres<br /> </td> 
    <td> Adres van proxyserver<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> aanmelden<br /> </td> 
    <td> Aanmelden voor verbinding met proxyserver<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> password<br /> </td> 
    <td> Wachtwoord voor verbinding met proxyserver<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> poort<br /> </td> 
@@ -987,7 +987,7 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
   <tr> 
    <td> action<br /> </td> 
    <td> Standaardactie als de URL niet in de geoorloofde lijst (opsomming) staat. Mogelijke waarden zijn 'ignore' (autoriseren zonder waarschuwingsbericht, dit vereist het uitschakelen van de beveiliging), 'warn' (autoriseer en geef een waarschuwingsbericht op) en 'deny' (belemmert toegang tot de URL).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> ontkennen<br /> </td> 
   </tr> 
   <tr> 
@@ -1040,12 +1040,12 @@ Raadpleeg voor meer informatie [Uitgaande verbindingsbeveiliging](../../installa
   <tr> 
    <td> dnsSuffix<br /> </td> 
    <td> De domeinnaam, of het domeinouder, betrokken bij URL: geheel of een deel van het domein van URL om te verifiëren, om de controle te versnellen. De URL wordt alleen geverifieerd met betrekking tot de reguliere expressie als het domein ervan dsnSuffix bevat.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Reguliere expressie voor het verfijnen van validatie van URL's die tot dit domein behoren: reguliere expressie die de URL moet verifiëren, indien deze overeenkomt met dnsSuffix.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1131,7 +1131,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1161,7 +1161,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1185,8 +1185,8 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1203,7 +1203,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   <tr> 
    <td> smtpBccAddress<br /> </td> 
    <td> Doel archiveren<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1221,7 +1221,7 @@ Raadpleeg voor meer informatie [E-mailarchivering activeren (op locatie)](../../
   <tr> 
    <td> smtpRelayAddress<br /> </td> 
    <td> Lijst met door komma's gescheiden DNS-namen of IP-adressen van te gebruiken SMTP-relais. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1250,7 +1250,7 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1268,13 +1268,13 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
    <td> Doorsturen van adres: standaard e-mailadres wordt niet door een regel verwerkt. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
    <td> Adres voor fouten: standaardadres dat wordt gebruikt om ongeldige e-mails over te brengen (onjuiste MIME-codering). <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1292,7 +1292,7 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1346,8 +1346,8 @@ Hier zijn de verschillende parameters van **inMail** knooppunt. Dit is de config
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1387,7 +1387,7 @@ In de **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configu
   <tr> 
    <td> msgPath<br /> </td> 
    <td> Berichtstortpad.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
  </tbody> 
@@ -1397,7 +1397,7 @@ In de **inMail > msgDump** knoop, vorm de volgende parameters. Dit is de configu
 
 Hier zijn de verschillende parameters van **interactief** knooppunt. Dit is de configuratie van schrijven daemon voor binnenkomende gebeurtenissen van de Interactie.
 
-Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/using/interaction---data-buffer.md).
+Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/using/interaction-data-buffer.md).
 
 <table> 
  <thead> 
@@ -1412,7 +1412,7 @@ Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1430,7 +1430,7 @@ Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1460,8 +1460,8 @@ Raadpleeg voor meer informatie [Interactie - Gegevensbuffer](../../installation/
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1501,7 +1501,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
   <tr> 
@@ -1513,13 +1513,13 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   <tr> 
    <td> dataLogPath<br /> </td> 
    <td> Pad van verzonden e-mailberichten opslaan: als het pad niet leeg is, worden alle bronbestanden van verzonden e-mails opgeslagen. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> debugPath<br /> </td> 
    <td> Map dumpen:iIf not empty, copy MIME envelopes of sent mail messages in this directory. Wordt gebruikt voor probleemoplossing. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1537,7 +1537,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1591,14 +1591,14 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Het relais van het bericht: HostName:Haven die aan relaisberichten wordt gebruikt.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -1634,7 +1634,7 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coördinaten van de statistiekserver</a>. 
       <br /> 
      </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> Indien niet gedefinieerd, is de standaardpoort 7777.<br /> </td> 
   </tr> 
   <tr> 
@@ -1664,13 +1664,13 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
   <tr> 
    <td> workingPath<br /> </td> 
    <td> Werkmap: locatie van tijdelijke bestanden die door de MTA worden gebruikt om te communiceren met onderliggende processen.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
    <td> X-Mailer gebied: waarde van gebied "x-Mailer"in SMTP postkopbal.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
  </tbody> 
@@ -1732,7 +1732,7 @@ Raadpleeg voor meer informatie [SMTP-relay](../../installation/using/configuring
   <tr> 
    <td> adres<br /> </td> 
    <td> Lijst met door komma's gescheiden DNS-namen of IP-adressen van te gebruiken SMTP-relais. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1818,7 +1818,7 @@ Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../instal
   <tr> 
    <td> extraArgs<br /> </td> 
    <td> Optionele opdrachtregelargumenten <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1843,7 +1843,7 @@ Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../instal
    <td> maxMsgPerChild<br /> </td> 
    <td> Maximum aantal berichten per kindserver. Elk kind MTA verwerkt dit aantal berichten en sterft. Het is belangrijk om een aantal te specificeren zodat geheugen of middellekken in MTA (typisch een paar duizenden) onschadelijk zijn. Zelfs als er geen bekende geheugenlekken in de MTA-code zijn, zijn de ingesloten JavaScript- en XSL-engines niet volledig betrouwbaar.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 5000000<br /> </td> 
+   <td> 500000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
@@ -1933,12 +1933,12 @@ Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domeinnaam: lokale domeinnaam gekoppeld aan het IP-adres. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Logische naam: namen die door gebruikers zijn gekoppeld aan de affiniteit. Namen worden met puntkomma's van elkaar gescheiden;<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1959,7 +1959,7 @@ Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt
   <tr> 
    <td> adres<br /> </td> 
    <td> Gekoppeld fysiek adres. Bijvoorbeeld: "192.168.0.1"<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
@@ -1974,17 +1974,17 @@ Raadpleeg voor meer informatie [Lijst met IP-adressen die moeten worden gebruikt
   <tr> 
    <td> includeDomains<br /> </td> 
    <td> Door komma's gescheiden lijst met domeinmaskers die moeten worden opgenomen.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
    <td> Door komma's gescheiden lijst met domeinmaskers die moeten worden uitgesloten.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
    <td> De naam van de computer verbonden aan het IP adres. Wordt gebruikt wanneer een SMTP-opdracht HELO wordt uitgegeven.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2029,7 +2029,7 @@ Hier zijn de verschillende parameters van **nmac > relais** knooppunt. Dit vormt
   <tr> 
    <td> adres<br /> </td> 
    <td> DNS adres of naam van het relais aan gebruik. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -2041,7 +2041,7 @@ Hier zijn de verschillende parameters van **nmac > relais** knooppunt. Dit vormt
   <tr> 
    <td> trustedCertsChain<br /> </td> 
    <td> Certificaatketen (PEM-bestand). Nuttig bij gebruik van een modelserver.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -2064,25 +2064,25 @@ Hier zijn de verschillende parameters van **gepijld** knooppunt. Dit is de confi
   <tr> 
    <td> appName<br /> </td> 
    <td> Naam van de toepassing die in de verbinding van de Ontwikkelaar wordt geproduceerd wanneer de openbare sleutel wordt bewaard. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
    <td> URL om een gatewaytoken te verkrijgen.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
    <td> Persoonlijke sleutel voor het verkrijgen van tokens (gecodeerd in AES met de optie XtkKey).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2100,7 +2100,7 @@ Hier zijn de verschillende parameters van **gepijld** knooppunt. Dit is de confi
   <tr> 
    <td> findPipelineEndpoint<br /> </td> 
    <td> URL om de URL van de Diensten van de Pijpleiding te ontdekken.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
   <tr> 
@@ -2112,13 +2112,13 @@ Hier zijn de verschillende parameters van **gepijld** knooppunt. Dit is de confi
   <tr> 
    <td> forcePipelineEndpoint<br /> </td> 
    <td> Luisteren naar URL: forceer de luisterende URL van de Diensten van de Pijpleiding. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2154,8 +2154,8 @@ Hier zijn de verschillende parameters van **gepijld** knooppunt. Dit is de confi
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2262,13 +2262,13 @@ Raadpleeg voor meer informatie [Beveiligingszones definiëren](../../installatio
   <tr> 
    <td> label<br /> </td> 
    <td> Label<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Interne naam<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
@@ -2330,25 +2330,25 @@ Raadpleeg voor meer informatie [Beveiligingszones definiëren](../../installatio
   <tr> 
    <td> label<br /> </td> 
    <td> Label<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> masker<br /> </td> 
    <td> Masker of adres<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Interne naam<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> proxy<br /> </td> 
    <td> Masker of adres van (omgekeerde) volmacht die door dit subnetwerk wordt gebruikt om tot de instantie toegang te hebben. In dit geval wordt de header 'X-Forwarded-For' getest in plaats van deze proxy.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 127.0.0.1 <br /> </td> 
   </tr> 
  </tbody> 
@@ -2371,7 +2371,7 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2395,7 +2395,7 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2425,8 +2425,8 @@ Hier zijn de verschillende parameters van **sms** knooppunt. Dit is de configura
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2495,7 +2495,7 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2507,7 +2507,7 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2531,8 +2531,8 @@ Hier zijn de verschillende parameters van **stat** knooppunt. Dit is de configur
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2560,7 +2560,7 @@ Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de confi
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2572,7 +2572,7 @@ Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de confi
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2602,8 +2602,8 @@ Hier zijn de verschillende parameters van **syslogd** knooppunt. Dit is de confi
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2631,7 +2631,7 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2679,7 +2679,7 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2715,8 +2715,8 @@ Hier zijn de verschillende parameters van **bijhouden** knooppunt. Dit is de con
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2762,7 +2762,7 @@ Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de 
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2774,7 +2774,7 @@ Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de 
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript dat moet worden uitgevoerd wanneer het proces wordt gestart <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2810,8 +2810,8 @@ Hier zijn de verschillende parameters van **trackinglogd** knooppunt. Dit is de 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2853,7 +2853,7 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   <tr> 
    <td> JVMOptions<br /> </td> 
    <td> Opties van de JVM worden doorgegeven als een tekenreeks.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2871,7 +2871,7 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2895,7 +2895,7 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2919,14 +2919,14 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Het relais van het bericht: HostName:Haven toelatend relais van berichten.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2966,19 +2966,19 @@ Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de con
   <tr> 
    <td> downloadPath<br /> </td> 
    <td> Downloadmap: downloadpad van installatieprogramma's voor de clientconsoles.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
   <tr> 
    <td> foFileName<br /> </td> 
    <td> Pad van .fo-bestand.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
    <td> URL van SOAP-router (http://myserver/xxx, http://jni of mailto:xxx).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
  </tbody> 
@@ -3078,19 +3078,19 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
    <td> Verboden teken(s) (domein): lijst met verboden tekens in de sectie 'gezag' van een URI.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
    <td> Verboden teken(s) (pad): lijst met verboden tekens in de sectie 'pad' van een URI.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
    <td> Waarde van de module 'mod_dir': lijst met bestanden die moeten worden gebruikt tijdens een query op een map.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
   <tr> 
@@ -3108,8 +3108,8 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   <tr> 
    <td> timeout<br /> </td> 
    <td> Wacht even voordat u de verboden URL verwijdert.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '60'<br /> </td> 
+   <td> String<br /> </td> 
+   <td> "60"<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3131,7 +3131,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   <tr> 
    <td> IPMask<br /> </td> 
    <td> Erkende IPs: komma gescheiden lijst van bronIP adressen toegestaan om het relais voor dit masker te gebruiken.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3143,7 +3143,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   <tr> 
    <td> hostMask<br /> </td> 
    <td> DNS-alias voor het doorgeven: door komma's gescheiden lijst met DNS-aliasmaskers die moeten worden doorgestuurd (bijvoorbeeld: '*.adobe.com').<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3167,13 +3167,13 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   <tr> 
    <td> status<br /> </td> 
    <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blacklist' (url added to lijst van gewezen personen in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> normaal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
    <td> URL van de doelpagina: zie <a href="configure-tomcat.md" target="_blank">Tomcat configureren</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3185,7 +3185,7 @@ Raadpleeg voor meer informatie [Dynamische paginabeveiliging en -bedekkingen](..
   <tr> 
    <td> urlPath<br /> </td> 
    <td> Masker van URL's die moeten worden doorgestuurd (bijvoorbeeld: '/nl*', '*.jsp').<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3272,12 +3272,12 @@ Raadpleeg voor meer informatie [HTTP-headers beheren](../../installation/using/c
   <tr> 
    <td> name<br /> </td> 
    <td> Naam koptekst<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> value<br /> </td> 
    <td> Waarde koptekst <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3307,25 +3307,25 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   <tr> 
    <td> IMSOrgId<br /> </td> 
    <td> Organisatie-id: unieke organisatie-id binnen de Adobe Experience Cloud, met name gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> P3PCompactPolicy<br /> </td> 
    <td> Waarde die het beleid beschrijft dat voor permanente koekjes wordt gebruikt (volgzaam met het PP3P Compacte formaat van het Beleid). <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> "CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
    <td> Door komma's gescheiden lijst met domeinen die moeten worden geconfigureerd om expliciet aan te geven welk domein moet worden ingesteld. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> databaseId<br /> </td> 
    <td> Database-id die is gekoppeld aan de volgende instantie.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3337,7 +3337,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   <tr> 
    <td> expirationURL<br /> </td> 
    <td> Pagina voor verlopen omleiding: URL van Web-pagina die door gebrek door de omleidingsserver wordt gebruikt wanneer redirection voor een leveringsactie is verlopen.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3373,7 +3373,7 @@ Raadpleeg voor meer informatie deze [sectie](../../installation/using/deploying-
   <tr> 
    <td> trackingPassword<br /> </td> 
    <td> Wachtwoord gebruikt door de omleidingsserver.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3396,19 +3396,19 @@ Raadpleeg voor meer informatie [Overbodige tekstspatiëring](../../installation/
   <tr> 
    <td> enabledIf<br /> </td> 
    <td> Hiermee wordt rekening gehouden als: de trackingserver wordt gebruikt als de expressie true retourneert. <br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> id<br /> </td> 
    <td> Naam<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> URL van extra omleidingsserver<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3432,7 +3432,7 @@ Raadpleeg voor meer informatie [SpamAssassin configureren](../../installation/us
   <tr> 
    <td> command<br /> </td> 
    <td> Opdracht die moet worden uitgevoerd om de anti-spamscore van een e-mail te evalueren (bijvoorbeeld 'perl spamcheck.pl').<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3456,13 +3456,13 @@ Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarhe
   <tr> 
    <td> affiniteit<br /> </td> 
    <td> Affiniteit<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Opstartparameters<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3480,7 +3480,7 @@ Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarhe
   <tr> 
    <td> initScript<br /> </td> 
    <td> Id van JavaScript die moet worden uitgevoerd wanneer het proces wordt gestart.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3498,14 +3498,14 @@ Raadpleeg voor meer informatie [Workflows en affiniteiten met hoge beschikbaarhe
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Het relais van het bericht: HostName:Haven toelatend relais van berichten.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw opstarten van proces</a>.<br /> </td> 
-   <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> String<br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

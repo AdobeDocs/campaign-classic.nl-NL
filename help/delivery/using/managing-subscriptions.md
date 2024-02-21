@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Er zijn drie modi voor abonnementen/abonnementen op services:
 
 >[!NOTE]
 >
->Een voorbeeld voor het maken van een abonnementsformulier met dubbele aanmelding vindt u in [deze sectie](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+>Een voorbeeld voor het maken van een abonnementsformulier met dubbele aanmelding vindt u in [deze sectie](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 ## Een informatiedienst maken {#creating-an-information-service}
 

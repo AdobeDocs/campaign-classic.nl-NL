@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 7%
+source-wordcount: '736'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Om levering te optimaliseren wanneer het behandelen van e-mails in grote volumes
 
 **Tip**: Gebruik een transparant adres van de afzender dat overeenkomt met de website van uw merk. Het bedrijf TravelAgency beheert bijvoorbeeld de hotelketen Valentino. Zijn bezit het valentino.com domein voor zijn website. Om het hotel Valentino in Parijs te promoten, gebruikt het subdomein paris.valentino.com. Daarom kan een relevant afzenderadres hotel@paris.valentino.com zijn.
 
-## Afleverbaarheidsbeheer {#deliverability-management}
+## Leverbaarheidsbeheer {#deliverability-management}
 
 Om uw ontvangers&#39; te bereiken inbox zonder te stuiteren of als spam worden gemerkt, moet u het leverbaarheidstarief van uw berichten verbeteren.
 
@@ -64,7 +64,7 @@ Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst
 
 * Als u een lijst met ongeldige adressen hebt, raadt de Adobe u aan deze te importeren in de quarantainetabel, via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
-* De ontvangers de waarvan adressen in quarantined zijn uitgesloten door gebrek tijdens de leveringsanalyse: zij worden niet gericht. Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid. Een e-mailadres kan in quarantaine worden geplaatst bijvoorbeeld wanneer inbox volledig is of als het adres niet bestaat. [Meer informatie](#identifying-quarantined-addresses-for-a-delivery)
+* De ontvangers de waarvan adressen in quarantined zijn uitgesloten door gebrek tijdens de leveringsanalyse: zij worden niet gericht. Dit zal leveranties versnellen, aangezien het foutenpercentage een significant effect op leveringssnelheid heeft. Een e-mailadres kan in quarantaine worden geplaatst bijvoorbeeld wanneer inbox volledig is of als het adres niet bestaat. [Meer informatie](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign beheert onjuiste adressen op basis van het type geretourneerde fout. Raadpleeg [deze sectie](understanding-quarantine-management.md) voor meer informatie.
 
@@ -77,4 +77,4 @@ Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst
 
 Om te voorkomen dat berichten naar ongeldige adressen worden verzonden, onjuiste communicatie wordt beperkt en de reputatie van de afzender wordt verbeterd, raadt de Adobe aan een dubbele opt-in-mechanisme in te voeren voor bevestiging na abonnementen. Zo weet u zeker dat een ontvanger met opzet is geabonneerd.
 
-Nadere bijzonderheden over de toepassing van dit mechanisme worden uiteengezet in [deze sectie](../../web/using/use-cases--web-forms.md).
+Nadere bijzonderheden over de toepassing van dit mechanisme worden uiteengezet in [deze sectie](../../web/using/use-cases-web-forms.md).

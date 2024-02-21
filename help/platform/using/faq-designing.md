@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 98%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 Ontdek de belangrijkste stappen voor het ontwerpen van berichten voor meerdere kanalen met Adobe Campaign.
 
-## Zijn er specifieke richtlijnen bij het ontwerpen van e-mails met Campaign? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
+## Zijn er specifieke richtlijnen bij het ontwerpen van e-mails met campagne? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
 Leer voordat u begint met het ontwerpen van e-mails de concepten en best practices met betrekking tot het ontwerpen en verzenden van leveringen met Adobe Campaign.
 
@@ -33,17 +33,17 @@ De configuratie en parameters van de levering kunnen in een leveringssjabloon wo
 
 [Klik hier voor meer informatie](../../delivery/using/about-templates.md).
 
-## Kan ik eenvoudig een bestaande HTML importeren om een e-mail te maken in Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## Kan ik eenvoudig een bestaande HTML importeren om een e-mailbericht te maken in Campagne? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Ontdek hoe u met één klik een bestaande HTML importeert om een e-mailbericht te maken en te verzenden in Adobe Campaign.
 
 [Klik hier voor meer informatie](../../delivery/using/defining-the-email-content.md#message-content).
 
-## Hoe maakt u e-mailcontent met Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
+## Hoe maakt u een e-mailinhoud met Campagne DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Ontwerp een e-mail met de digitale content-editor van Campaign](../../web/using/use-case--creating-an-email-delivery.md): ontdek hoe u Campaign DCE kunt gebruiken om een e-mail te ontwerpen aan de hand van een voorbeeld.
+[Ontwerp een e-mail met de digitale content-editor van Campaign](../../web/using/use-case-creating-an-email-delivery.md): ontdek hoe u Campaign DCE kunt gebruiken om een e-mail te ontwerpen aan de hand van een voorbeeld.
 
-## Hoe kan ik een nieuwsbrief op lidmaatschapsbasis maken in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
+## Hoe kan ik een nieuwsbrief op abonnementsbasis in Campaign tot stand brengen? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
 [Maak een nieuwsbrief](../../delivery/using/managing-subscriptions.md): ontdek de belangrijkste stappen om een nieuwsbrief te maken en lidmaatschappen te beheren.
 

@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 5%
@@ -37,7 +37,7 @@ U kunt dan bevelen of code in gebruiken **[!UICONTROL Script]** tabblad van de a
 **Verwante onderwerpen:**
 
 * [Een bestand uitpakken of ontsleutelen vóór verwerking](../../platform/using/unzip-decrypt.md)
-* [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction--file-.md).
+* [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction-file.md).
 
 ## Hoofdlettergebruik: gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ De volgende stappen voor dit gebruik zijn nodig:
 
 1. Vorm **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie.
 
-1. Open de **[!UICONTROL Data extraction (file)]** activiteit vormt dan het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/extraction--file-.md).
+1. Open de **[!UICONTROL Data extraction (file)]** activiteit vormt dan het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

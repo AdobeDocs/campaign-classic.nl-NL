@@ -2,13 +2,13 @@
 product: campaign
 title: Een contentsjabloon gebruiken
 description: Een contentsjabloon gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ De lay-out wordt automatisch toegepast op basis van de geselecteerde instellinge
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de wizard voor levering](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de wizard voor levering](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Inhoudsinstanties maken {#creating-a-content-instance}
 
@@ -41,7 +41,7 @@ U kunt inhoud direct in de boom van Adobe Campaign tot stand brengen die in werk
 
 Voer de volgende stappen uit:
 
-1. Selecteer **[!UICONTROL Resources > Contents]** knoop van de boom, klik met de rechtermuisknop aan en kies **[!UICONTROL Properties]**.
+1. Selecteer de **[!UICONTROL Resources > Contents]** knoop van de boom, klik met de rechtermuisknop aan en kies **[!UICONTROL Properties]**.
 
    ![](assets/s_ncs_content_folder_properties.png)
 
@@ -73,7 +73,7 @@ Voer de volgende stappen uit:
    >
    >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Raadpleeg voor meer informatie hierover [De sjabloon maken en configureren](publication-templates.md#creating-and-configuring-the-template).
 
-   De inhoud van HTML en Tekst wordt standaard gegenereerd in het dialoogvenster **publiceren** map van het Adobe Campaign-exemplaar. U kunt de publicatiemap wijzigen met de opdracht **NcmPublishingDir** optie.
+   De inhoud van HTML en Tekst wordt standaard gegenereerd in het dialoogvenster **publiceren** map van het Adobe Campaign-exemplaar. U kunt de publicatiemap wijzigen met de opdracht **NcmPublishingDir** -optie.
 
 ## Inhoudsinstantie leveren {#delivering-a-content-instance}
 

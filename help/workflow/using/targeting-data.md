@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Targetingdata
+title: Doelgegevens
 description: Meer informatie over doelgegevens in een workflow
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 4%
 
 ---
@@ -178,9 +178,9 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-   ![](assets/do-not-localize/v7.jpeg)[Documentatie voor Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Campagne v7-documentatie](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 Vervolgens moeten nieuwe subsets worden toegevoegd:
 
@@ -198,7 +198,7 @@ Vervolgens moeten nieuwe subsets worden toegevoegd:
 
    >[!NOTE]
    >
-   >Als u de **Federale gegevenstoegang** kunt u subsets maken op basis van de informatie in een externe basis. Om dit te doen, selecteer het schema van de externe lijst in **[!UICONTROL Targeting dimension]** veld. Raadpleeg voor meer informatie hierover [Toegang tot een externe database (FDA)](accessing-an-external-database--fda-.md).
+   >Als u de **Federale gegevenstoegang** kunt u subsets maken op basis van de informatie in een externe basis. Om dit te doen, selecteer het schema van de externe lijst in **[!UICONTROL Targeting dimension]** veld. Raadpleeg voor meer informatie hierover [Toegang tot een externe database (FDA)](accessing-an-external-database-fda.md).
 
 Nadat subsets zijn gemaakt, toont de splitsingsactiviteit standaard evenveel uitvoerovergangen als er subsets zijn:
 
@@ -240,7 +240,7 @@ In Adobe Campaign combineert het gegevensbeheer een reeks activiteiten om comple
 
 Voor de uitvoering van deze transacties biedt Adobe Campaign:
 
-* Gegevensverzameling: [Bestandsoverdracht](file-transfer.md), [Gegevens laden (bestand)](data-loading--file-.md), [Gegevens laden (RDBMS)](data-loading--rdbms-.md), [Gegevens bijwerken](update-data.md). In deze eerste stap voor het verzamelen van gegevens worden de gegevens voorbereid, zodat ze in andere activiteiten kunnen worden verwerkt. Verschillende parameters moeten worden gecontroleerd om ervoor te zorgen dat de workflow correct wordt uitgevoerd en de verwachte resultaten oplevert. Wanneer u bijvoorbeeld gegevens importeert, moet de primaire sleutel (sleutel) voor deze gegevens uniek zijn voor elke record.
+* Gegevensverzameling: [Bestandsoverdracht](file-transfer.md), [Gegevens laden (bestand)](data-loading-file.md), [Gegevens laden (RDBMS)](data-loading-rdbms.md), [Gegevens bijwerken](update-data.md). In deze eerste stap voor het verzamelen van gegevens worden de gegevens voorbereid, zodat ze in andere activiteiten kunnen worden verwerkt. Verschillende parameters moeten worden gecontroleerd om ervoor te zorgen dat de workflow correct wordt uitgevoerd en de verwachte resultaten oplevert. Wanneer u bijvoorbeeld gegevens importeert, moet de primaire sleutel (sleutel) voor deze gegevens uniek zijn voor elke record.
 * Doelactiviteiten zijn verrijkt met opties voor gegevensbeheer: [Query](query.md), [Unie](union.md), [Intersectie](intersection.md), [Splitsen](split.md). Zo kunt u een samenvoeging of een doorsnede configureren tussen gegevens van verschillende doeldimensies, zolang de gegevens met elkaar in overeenstemming kunnen worden gebracht.
 * Transformatie van gegevens: [Verrijking](enrichment.md), [Dimensie wijzigen](change-dimension.md).
 

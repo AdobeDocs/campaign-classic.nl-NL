@@ -6,8 +6,8 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ ht-degree: 100%
    + [Nieuwste release](rn/using/latest-release.md)
    + Eerdere releases {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021](rn/using/release--2021.md)
-      + [2022](rn/using/release--2022.md)
+      + [2021](rn/using/release-2021.md)
+      + [2022](rn/using/release-2022.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
@@ -184,8 +184,8 @@ ht-degree: 100%
       + [Seedadressen maken](delivery/using/creating-seed-addresses.md)
       + [Seedadressen toevoegen](delivery/using/adding-seed-addresses.md)
       + [Een externe tabel voor ontvangers gebruiken](delivery/using/using-an-external-recipient-table.md)
-      + [Gebruiksscenario: seedadressen selecteren op criteria](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [Gebruiksscenario: de veldvervanging configureren](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [Gebruiksscenario: seedadressen selecteren op criteria](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+      + [Gebruiksscenario: de veldvervanging configureren](delivery/using/use-case-configuring-the-field-substitution.md)
    + A/B-tests {#a-b-testing}
       + [Aan de slag met A/B-tests](delivery/using/get-started-a-b-testing.md)
       + [A/B-tests configureren](delivery/using/configuring-a-b-testing.md)
@@ -233,7 +233,7 @@ ht-degree: 100%
    + Module voor contentmanagement {#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
       + [Bronnen en beginselen voor contentmanagement](delivery/using/content-manager-resources-and-principles.md)
-      + [Gebruiksscenario: contentmanagement maken](delivery/using/use-case--creating-content-management.md)
+      + [Gebruiksscenario: contentmanagement maken](delivery/using/use-case-creating-content-management.md)
       + [Gegevensschema’s](delivery/using/data-schemas.md)
       + [Invoerformulieren](delivery/using/input-forms.md)
       + [Opmaak](delivery/using/formatting.md)
@@ -253,7 +253,7 @@ ht-degree: 100%
       + [Documenten en assets beheren](campaign/using/marketing-campaign-assets.md)
       + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
       + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
-      + [Providers, voorraden en budgetten](campaign/using/providers--stocks-and-budgets.md)
+      + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
    + Campagneoptimalisatie {#campaign-optimization}
       + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
       + [Drukregels](campaign-opt/using/pressure-rules.md)
@@ -320,7 +320,7 @@ ht-degree: 100%
       + [Aan de slag met webapplicaties](web/using/about-web-applications.md)
       + [Een nieuwe webapplicatie maken](web/using/creating-a-new-web-application.md)
       + [Een webapplicatie ontwerpen](web/using/designing-a-web-application.md)
-      + [Gebruiksscenario’s: overzichten maken](web/using/use-cases--creating-overviews.md)
+      + [Gebruiksscenario’s: overzichten maken](web/using/use-cases-creating-overviews.md)
       + [Een webapplicatie vertalen](web/using/translating-a-web-application.md)
       + [Bezoeken aan een webapplicatie bijhouden](web/using/tracking-a-web-application.md)
       + [Opt-out voor tracking van een webapplicatie](web/using/web-application-tracking-opt-out.md)
@@ -331,7 +331,7 @@ ht-degree: 100%
       + [Content bewerken](web/using/editing-content.md)
       + [Best practices voor het bewerken van content](web/using/content-editing-best-practices.md)
       + [Een landingspagina maken](web/using/creating-a-landing-page.md)
-      + [Gebruiksscenario: een e-maillevering maken](web/using/use-case--creating-an-email-delivery.md)
+      + [Gebruiksscenario: een e-maillevering maken](web/using/use-case-creating-an-email-delivery.md)
    + Webformulieren {#web-forms}
       + [Aan de slag met webformulieren](web/using/about-web-forms.md)
       + [Een webformuliersjabloon gebruiken](web/using/using-a-web-form-template.md)
@@ -344,16 +344,16 @@ ht-degree: 100%
       + [Een webformulier publiceren](web/using/publishing-a-web-form.md)
       + [Eigenschappen voor webformulieren definiëren](web/using/defining-web-forms-properties.md)
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
-      + [Gebruiksscenario: webformulieren](web/using/use-cases--web-forms.md)
+      + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
    + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
-   + [Verzamelde data gegevens publiceren, bijhouden en gebruiken](surveys/using/publish--track-and-use-collected-data.md)
+   + [Verzamelde data gegevens publiceren, bijhouden en gebruiken](surveys/using/publish-track-and-use-collected-data.md)
    + [Enquêtes configureren](surveys/using/configuring-surveys.md)
-   + [Gebruiksscenario: een referralformulier maken](surveys/using/use-case--creating-a-refer-a-friend-form.md)
-   + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+   + [Gebruiksscenario: een referralformulier maken](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+   + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integreren met Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Campaign-integraties](integrations/using/about-campaign-integrations.md)
    + Doelgroepen delen {#audience-sharing}
@@ -437,7 +437,7 @@ ht-degree: 100%
       + [Wachten](workflow/using/wait.md)
       + [Tijdsbeperking](workflow/using/time-constraint.md)
       + [Subworkflow](workflow/using/sub-workflow.md)
-      + [Springen (begin- en eindpunt)](workflow/using/jump--start-point-and-end-point-.md)
+      + [Springen (begin- en eindpunt)](workflow/using/jump-start-point-and-end-point.md)
       + [Extern signaal](workflow/using/external-signal.md)
       + [Goedkeuring](workflow/using/approval.md)
       + [Melding](workflow/using/alert.md)
@@ -450,11 +450,11 @@ ht-degree: 100%
       + [Terugkerende levering](workflow/using/recurring-delivery.md)
       + [Cross-channel leveringen](workflow/using/cross-channel-deliveries.md)
       + [Lokale goedkeuring](workflow/using/local-approval.md)
-      + [Gegevens laden (RDBMS)](workflow/using/data-loading--rdbms-.md)
-      + [Laden (SOAP)](workflow/using/loading--soap-.md)
-      + [Gegevens laden (bestand)](workflow/using/data-loading--file-.md)
+      + [Gegevens laden (RDBMS)](workflow/using/data-loading-rdbms.md)
+      + [Laden (SOAP)](workflow/using/loading-soap.md)
+      + [Gegevens laden (bestand)](workflow/using/data-loading-file.md)
       + [Contentmanagement](workflow/using/content-management.md)
-      + [Gegevensextractie (bestand)](workflow/using/extraction--file-.md)
+      + [Gegevensextractie (bestand)](workflow/using/extraction-file.md)
       + [SQL-code en JavaScript-code](workflow/using/sql-code-and-javascript-code.md)
       + [SQL Data Management](workflow/using/sql-data-management.md)
       + [Nlserver-module](workflow/using/nlserver-module.md)
@@ -505,7 +505,7 @@ ht-degree: 100%
       + [Geavanceerde parameters](workflow/using/advanced-parameters.md)
       + [JavaScript-scripts en -sjablonen](workflow/using/javascript-scripts-and-templates.md)
       + [Voorbeelden van JavaScript-code in workflows](workflow/using/javascript-in-workflows.md)
-      + [Een externe database openen](workflow/using/accessing-an-external-database--fda-.md)
+      + [Een externe database openen](workflow/using/accessing-an-external-database-fda.md)
       + [Machtigingen beheren](workflow/using/managing-rights.md)
       + [Activiteitsafbeeldingen wijzigen](workflow/using/managing-activity-images.md)
       + [Tijdzones beheren](workflow/using/managing-time-zones.md)
@@ -543,8 +543,8 @@ ht-degree: 100%
       + [Een aanbieding integreren via een workflow](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Unitaire interacties {#unitary-interactions}
       + [Inbound-kanalen](interaction/using/about-inbound-channels.md)
-      + [Integratie via JavaScript (clientzijde)](interaction/using/integration-via-javascript--client-side-.md)
-      + [Integratie via SOAP (serverzijde)](interaction/using/integration-via-soap--server-side-.md)
+      + [Integratie via JavaScript (clientzijde)](interaction/using/integration-via-javascript-client-side.md)
+      + [Integratie via SOAP (serverzijde)](interaction/using/integration-via-soap-server-side.md)
       + [Anonieme interacties](interaction/using/anonymous-interactions.md)
    + Aanbiedingen bijhouden {#tracking-offers}
       + [Geschiedenis van aanbiedingsvoorstellen](interaction/using/offer-proposition-history.md)
@@ -556,7 +556,7 @@ ht-degree: 100%
       + [Een testomgeving maken](interaction/using/creating-a-test-environment.md)
       + [Het standaardgedrag van de engine wijzigen](interaction/using/hooks.md)
       + [Gedistribueerde architecturen](interaction/using/distributed-architectures.md)
-      + [Configuratie van gegevensbuffers](installation/using/interaction---data-buffer.md)
+      + [Configuratie van gegevensbuffers](installation/using/interaction-data-buffer.md)
    + Gebruiksscenario {#case-study}
       + [Presentatieregels](interaction/using/presentation-rules.md)
       + [Aanbiedingen op een inbound-kanaal](interaction/using/offers-on-an-inbound-channel.md)
@@ -590,7 +590,7 @@ ht-degree: 100%
       + Hostmodellen{#hosting-models-lp}
          + [Modellen voor campagnehosting](installation/using/hosting-models.md)
          + [Capaciteitsmatrix](installation/using/capability-matrix.md)
-   + Implementatietypen {#deployment-types-}
+   + Implementatietypen {#deployment-types}
       + [Implementatietypen](installation/using/about-deployment-types.md)
       + [Zelfstandige implementatie](installation/using/standalone-deployment.md)
       + [Standaardimplementatie](installation/using/standard-deployment.md)
@@ -611,12 +611,12 @@ ht-degree: 100%
          + [Applicatieserver](installation/using/application-server.md)
          + [Berichtenserver](installation/using/messaging-server.md)
          + [Netwerkconfiguratie](installation/using/network-configuration.md)
-      + Campaign in Windows {#installing-campaign-in-windows-}
+      + Campaign in Windows {#installing-campaign-in-windows}
          + [Aan de slag](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [De server installeren](installation/using/installing-the-server.md)
          + [Integreren in een webserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
-      + Campaign in Linux {#installing-campaign-in-linux-}
+      + Campaign in Linux {#installing-campaign-in-linux}
          + [Vereisten](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [Pakketten installeren](installation/using/installing-packages-with-linux.md)
          + [Integreren in een webserver](installation/using/integration-into-a-web-server-for-linux.md)
@@ -642,7 +642,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -803,7 +803,7 @@ ht-degree: 100%
    + Webtracking instellen {#setting-up-web-tracking}
       + [Webtracking](configuration/using/about-web-tracking.md)
       + [Webtrackingmodus](configuration/using/web-tracking-mode.md)
-      + [Tag voor webtracking: definitie](configuration/using/web-tracking-tag--definition.md)
+      + [Tag voor webtracking: definitie](configuration/using/web-tracking-tag-definition.md)
       + [Stappen voor instellen](configuration/using/setup-stages.md)
       + [Aanvullende parameters](configuration/using/additional-parameters.md)
       + [Tags voor webtracking maken](configuration/using/creating-web-tracking-tags.md)

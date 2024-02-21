@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3750'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Een externe dienstverlener kan bij het beheer van een taak worden betrokken.
 
 Hiervoor bewerkt u de taakeigenschappen en selecteert u de betreffende serviceprovider. De kostencategorieën verbonden aan de dienstverlener worden automatisch vermeld in de centrale sectie van het venster.
 
-Raadpleeg voor meer informatie hierover [Een serviceprovider en de bijbehorende kostencategorieën maken](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Raadpleeg voor meer informatie hierover [Een serviceprovider en de bijbehorende kostencategorieën maken](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Selecteer de kostencategorieën met betrekking tot de uitvoering van de taak. Hiervoor selecteert u het type kosten en voegt u, indien nodig, een toeslag toe.
 
@@ -429,13 +429,13 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 * Wanneer een taak wordt gemaakt, wordt deze **[!UICONTROL Scheduled]** als de begindatum in de toekomst ligt. Deze status blijft behouden totdat de begindatum is bereikt.
 * Zodra het is begonnen, is de taak **[!UICONTROL In progress]**. Wanneer de verantwoordelijke persoon de taak sluit, verandert het in **[!UICONTROL Finished]**.
 * Als er een controleur is gedefinieerd, wordt de taak **[!UICONTROL Pending approval]** zodra de verantwoordelijke persoon het sluit en totdat de controleur het goedkeurt. Als de controleur het afwijst, wordt de taak **[!UICONTROL Rejected]**.
-* Een taak kan door de verantwoordelijke persoon via het dashboard of via het **[!UICONTROL Task map]** door op de knop **[!UICONTROL Cancel]** knop.
+* Een taak kan worden geannuleerd door de verantwoordelijke persoon via het dashboard of het **[!UICONTROL Task map]** door op de knop **[!UICONTROL Cancel]** knop.
 * Als u een taak wilt plannen, voert u in de toekomst een begindatum in. Vervolgens kunt u een eerste melding verzenden aan de Adobe Campaign-operatoren die bij de uitvoering van de taak zijn betrokken. Zie [Volledige levenscyclus van taken](#complete-task-life-cycle).
 
 >[!NOTE]
 >
 >* De taakstatus wordt automatisch bijgewerkt.
->* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met lopende taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+>* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
 >
 
 ### Voortgangsstatus van een taak {#progress-status-of-a-task}

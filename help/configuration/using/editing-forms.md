@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ U kunt verschillende typen invoerformulieren maken. Het formuliertype bepaalt ho
 
 * Contentmanagement
 
-  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [use case](../../delivery/using/use-case--creating-content-management.md).
+  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [use case](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -223,7 +223,7 @@ Voer de volgende stappen uit om een formulier te maken:
 
 1. Als het formulier is gebaseerd op een specifiek schematype, kunt u de velden voor dit schema opzoeken:
 
-   1. Klik op **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+   1. Klikken **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
       ![](assets/input-form-create-4.png)
 

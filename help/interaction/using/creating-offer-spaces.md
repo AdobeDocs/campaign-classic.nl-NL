@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Aanbiedingsplaatsingen maken
-description: Aanbiedingsplaatsingen maken
+title: Aanbiedingsruimten maken
+description: Aanbiedingsruimten maken
 feature: Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
 
-# Aanbiedingsplaatsingen maken{#creating-offer-spaces}
+# Aanbiedingsruimten maken{#creating-offer-spaces}
 
 
 
@@ -23,7 +23,7 @@ Ruimtevaartaanbod mag alleen worden gedaan door een **technisch beheerder** met 
 
 De inhoud van de catalogusaanbiedingen wordt gevormd in de aanbiedingsruimten. Standaard kan de inhoud de volgende velden bevatten: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** en **[!UICONTROL Text content]**. De gebiedsopeenvolging wordt gevormd in de aanbiedingsruimte.
 
-Met geavanceerde parameters kunt u een contactidentificatietoets opgeven (die kan bestaan uit verschillende elementen, zoals de naam en het e-mailveld). Raadpleeg voor meer informatie de [Een geïdentificeerd aanbod presenteren](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) sectie.
+Met geavanceerde parameters kunt u een contactidentificatietoets opgeven (die kan bestaan uit verschillende elementen, zoals de naam en het e-mailveld). Raadpleeg voor meer informatie de [Een geïdentificeerd aanbod presenteren](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) sectie.
 
 De rendering HTML of XML wordt gemaakt via een renderfunctie. De volgorde van de velden die in de renderfunctie zijn gedefinieerd, moet gelijk zijn aan de volgorde die in de inhoud is geconfigureerd.
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Data importeren en exporteren met behulp van workflows
+title: Gegevens importeren en exporteren met behulp van workflows
 description: Leer hoe u gegevens importeert en exporteert met workflows in Campagne
 feature: Data Management, Workflows
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Raadpleeg voor meer informatie over het gebruik van de activiteit in een leeslij
 
 De gegevens die in een werkstroom worden verwerkt, kunnen uit een gestructureerd bestand worden geëxtraheerd, zodat het bestand in Adobe Campaign kan worden geïmporteerd.
 
-Een beschrijving van de activiteit van de ladingsgegevens is te vinden in [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md) sectie.
+Een beschrijving van de activiteit van de ladingsgegevens is te vinden in [Gegevens laden (bestand)](../../workflow/using/data-loading-file.md) sectie.
 
 Voorbeeld van gestructureerd bestand dat moet worden geïmporteerd:
 
@@ -54,4 +54,4 @@ Nadat gegevens zijn verzameld, kunt u deze gebruiken in uw workflows, bijvoorbee
 
 Workflows kunnen een handige manier zijn om een aantal van uw exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
 
-Exportbewerkingen worden uitgevoerd met een **[!UICONTROL Data extraction (file) activity]**. Voor meer op om de activiteit te vormen en te gebruiken, verwijs naar [deze pagina](../../workflow/using/extraction--file-.md).
+Exportbewerkingen worden uitgevoerd met een **[!UICONTROL Data extraction (file) activity]**. Voor meer op om de activiteit te vormen en te gebruiken, verwijs naar [deze pagina](../../workflow/using/extraction-file.md).

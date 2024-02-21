@@ -6,10 +6,10 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 6%
+source-wordcount: '1271'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +61,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
  </thead> 
  <tbody> 
   <tr> 
-   <td> Levering<br /> </td> 
+   <td> Aflevering<br /> </td> 
    <td> Controleert leveringen en uiteindelijke problemen die worden aangetroffen wanneer berichten worden verzonden. <a href="../../delivery/using/about-delivery-monitoring.md">Meer informatie</a><br /> </td> 
    <td> Alles</td> 
   </tr> 
@@ -132,7 +132,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
-   <td> Kanaal voor mobiele apps<br /> </td> 
+   <td> Mobiel App-kanaal<br /> </td> 
    <td> Gebruikt het Adobe Campaign-platform om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Optioneel. <a href="../../delivery/using/about-mobile-app-channel.md">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
@@ -158,11 +158,11 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Toegang tot externe gegevens (Federated Data Access)<br /> </td> 
-   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Meer informatie</a> <br /> </td> 
+   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="../../workflow/using/accessing-an-external-database-fda.md">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
-   <td> Campagnes optimaliseren<br /> </td> 
+   <td> Campagne optimaliseren<br /> </td> 
    <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="../../campaign-opt/using/about-campaign-typologies.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -212,7 +212,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Verordening inzake bescherming van privacydata<br /> </td> 
+   <td> Privacygegevensbeschermingsverordening<br /> </td> 
    <td> Bevat extra functionaliteit om u te helpen met uw naleving van de Privacy in Campaign Classic. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
@@ -222,7 +222,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Midsourcingplatform<br /> </td> 
+   <td> Middelsourcingsplatform<br /> </td> 
    <td> Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een "mid-sourcing"-server die wordt gehost op Adobe Campaign. Optioneel. <a href="../../installation/using/mid-sourcing-server.md">Meer informatie</a> <br /> </td> 
    <td> Midden-sourcing </td> 
   </tr> 

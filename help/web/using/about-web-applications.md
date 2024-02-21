@@ -2,14 +2,14 @@
 product: campaign
 title: Aan de slag met webapplicaties
 description: Dynamische webtoepassingen, bestemmingspagina's en enquêtes maken en delen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 20%
+source-wordcount: '697'
+ht-degree: 19%
 
 ---
 
@@ -50,12 +50,12 @@ Webtoepassingen in Adobe Campaign bieden toegang tot de volgende mogelijkheden:
 * Uitnodigingen of meldingen via e-mail verzenden. Raadpleeg [deze pagina](publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
 * Aanpassing van fout- en eindberichten. Raadpleeg [deze pagina](defining-web-forms-properties.md#setting-up-an-error-page) voor meer informatie.
 * Gebruik van afbeeldingen, video&#39;s, hypertextkoppelingen, captcha, enzovoort. Raadpleeg [deze pagina](editing-content.md) voor meer informatie.
-* Monitoring van reacties in real time. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking) voor meer informatie.
+* Monitoring van reacties in real time. Raadpleeg [deze pagina](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking) voor meer informatie.
 
 De optionele **Enquête** de aanmaakmodule biedt de volgende aanvullende functies:
 
-* Dynamische extensie van de database: het maken van reacties die niet in de oorspronkelijke gegevenssjabloon zijn opgenomen. Raadpleeg [deze pagina](../../surveys/using/managing-answers.md#storing-collected-answers) voor meer informatie.
-* Speciale rapporten genereren. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
+* Dynamische extensie van de database: het maken van reacties die niet zijn opgenomen in de oorspronkelijke gegevenssjabloon. Raadpleeg [deze pagina](../../surveys/using/managing-answers.md#storing-collected-answers) voor meer informatie.
+* Speciale rapporten genereren. Raadpleeg [deze pagina](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
 
 Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoudigde grafische interface met een verminderd aantal het uitgeven controles.
 
@@ -67,11 +67,11 @@ Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoud
 
 ## Implementatie van webtoepassingen {#web-application-implementation}
 
-Om een toepassing van het Web tot stand te brengen en te posten, moet u:
+Als u een webtoepassing wilt maken en posten, moet u:
 
 1. Maak de inhoud (velden, lijsten, tabellen, grafieken, enz.).
 
-   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze gebieden zijn ook beschikbaar voor de toepassingen van het Web. Deze informatie is beschikbaar in [deze pagina](adding-fields-to-a-web-form.md).
+   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze velden zijn ook beschikbaar voor webtoepassingen. Deze informatie is beschikbaar in [deze pagina](adding-fields-to-a-web-form.md).
 
 1. Zoals vereist, kunt u het vooraf laden toevoegen, testen, en besparingsstappen, en het toegangsbeheersysteem (hoofdzakelijk binnen het kader van een Extranetpublicatie) vormen.
 1. Het publiceren van de toepassing van het Web om het op een Extranet of in Adobe Campaign ter beschikking te stellen.
@@ -91,7 +91,7 @@ Adobe Campaign biedt standaard één sjabloon per beschikbare webtoepassing.
 
 >[!NOTE]
 >
->U kunt een bestaande toepassing van het Web in een malplaatje omzetten. Selecteer hiertoe het formulier en klik met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Save as template...]**.
+>U kunt een bestaande toepassing van het Web in een malplaatje omzetten. Selecteer het formulier en klik met de rechtermuisknop om dit te doen. Selecteer **[!UICONTROL Actions > Save as template...]**.
 
 U kunt nieuwe sjablonen maken via het dialoogvenster **[!UICONTROL Resources > Templates > Web Application templates]** knooppunt van de boomstructuur Adobe Campaign.
 

@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 3%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow
 
 Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
 
-![](assets/do-not-localize/how-to-video.png)[Ontdek deze functie in video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Deze functie in video detecteren](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -112,7 +112,7 @@ Bij het uitpakken van bestanden worden twee bewerkingen gestart: budgetberekenin
 
 >[!NOTE]
 >
->Zie voor meer informatie over kostenberekeningen en voorraadbeheer [Leveranciers, voorraden en begrotingen](../../campaign/using/providers--stocks-and-budgets.md).
+>Zie voor meer informatie over kostenberekeningen en voorraadbeheer [Leveranciers, voorraden en begrotingen](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## Gekoppelde documenten beheren {#managing-associated-documents}
 
@@ -227,7 +227,7 @@ In het volgende voorbeeld worden het label, de geschatte kosten en de beschrijvi
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [Dienstverleners en hun kostenstructuren creëren](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [Dienstverleners en hun kostenstructuren creëren](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokke
 
 #### Video over zelfstudie {#create-email-video}
 
-In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign.
+In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 

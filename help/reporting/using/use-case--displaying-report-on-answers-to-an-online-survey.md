@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
-description: "Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+title: "Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête"
+description: "Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 5%
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Voordat u met dit gebruiksgeval begint, hebt u toegang nodig tot een enquête en
 
 Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
-1. Een workflow maken en een **[!UICONTROL Answers to a survey]** activiteit. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Een workflow maken en een **[!UICONTROL Answers to a survey]** activiteit. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Bewerk de activiteit en selecteer de enquête waarvan u de antwoorden wilt analyseren.
 1. De optie **[!UICONTROL Select all the answer data]** om alle informatie te verzamelen.
 

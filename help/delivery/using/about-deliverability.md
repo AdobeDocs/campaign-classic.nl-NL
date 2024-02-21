@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -61,13 +61,13 @@ Wanneer het vormen van, het ontwerpen van, en het testen van uw bericht, zorg er
 * [Best practices voor verzending](delivery-best-practices.md)
 * [De e-mailinhoud beheren](control-message-content.md)
 * [Inboxrendering](inbox-rendering.md)
-* [Een proef verzenden](steps-validating-the-delivery.md#sending-a-proof)
+* [Een proefafdruk verzenden](steps-validating-the-delivery.md#sending-a-proof)
 
 ### Verifieer toestemming door dubbele opt-in {#double-opt-in}
 
 Om het verzenden van berichten naar ongeldige adressen te vermijden, onjuiste mededelingen te beperken en afzenderreputatie te verbeteren, adviseert de Adobe om een dubbel opt-in mechanisme in te voeren. Met deze methode kunt u ervoor zorgen dat de ontvangers zich bewust hebben geabonneerd.
 
-Zie [Een lidmaatschapsformulier maken met dubbele opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
+Zie [Een lidmaatschapsformulier maken met dubbele opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
 
 Raadpleeg voor meer informatie over aanbevolen procedures bij het verzamelen van gegevens van uw klanten de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 
@@ -94,5 +94,5 @@ Met Adobe Campaign kunt u controleren hoe uw leveringen presteren aan de hand va
 Raadpleeg de volgende secties voor meer informatie hierover:
 
 * [Te leveren items bewaken](monitoring-deliverability.md)
-* [Aan de slag met verzendingscontrole](about-delivery-monitoring.md)
+* [Aan de slag met leveringscontrole](about-delivery-monitoring.md)
 * [Ga aan de slag met ingebouwde campagnerapporten](../../reporting/using/about-campaign-built-in-reports.md)

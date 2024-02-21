@@ -3,13 +3,13 @@ product: campaign
 title: Extensievoorbeeld
 description: Extensievoorbeeld
 feature: Interaction, Offers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -34,4 +34,4 @@ In het geval van een binnenkomend contact (callcenter of website) worden de mees
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Wanneer het vormen roept van de ZEEP, neem **context** XML-element voor verwijzing naar contextinformatie die is toegevoegd in het interactieschema. Zie voor meer informatie [Integratie via SOAP (serverzijde)](../../interaction/using/integration-via-soap--server-side-.md).
+* Wanneer het vormen roept van de ZEEP, neem **context** XML-element voor verwijzing naar contextinformatie die is toegevoegd in het interactieschema. Zie voor meer informatie [Integratie via SOAP (serverzijde)](../../interaction/using/integration-via-soap-server-side.md).

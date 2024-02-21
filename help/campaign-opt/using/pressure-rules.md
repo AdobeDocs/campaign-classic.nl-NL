@@ -6,9 +6,9 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3274'
+source-wordcount: '3343'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,7 @@ U kunt het aantal geoorloofde berichten volgens het segment indexeren waartot de
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Als u de drempel wilt definiëren, kunt u een dimensie gebruiken die is gekoppeld aan de doeldimensie: bijvoorbeeld om berichten op te nemen die worden geleverd aan de ontvangende profielen die zijn opgeslagen in de tabel met bezoekers (voor meer informatie over de bezoekerslijst raadpleegt u [deze sectie](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) of om te voorkomen dat meer dan één bericht per week naar hetzelfde huishouden wordt verzonden (dat naar meerdere e-mailadressen kan verwijzen) die in een dimensie zijn geïdentificeerd die verband houdt met die van de ontvangers.
+Als u de drempel wilt definiëren, kunt u een dimensie gebruiken die is gekoppeld aan de doeldimensie: bijvoorbeeld om berichten op te nemen die worden geleverd aan de ontvangende profielen die zijn opgeslagen in de tabel met bezoekers (voor meer informatie over de bezoekerslijst raadpleegt u [deze sectie](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) of om te voorkomen dat meer dan één bericht per week naar hetzelfde huishouden wordt verzonden (dat naar meerdere e-mailadressen kan verwijzen) die in een dimensie zijn geïdentificeerd die verband houdt met die van de ontvangers.
 
 Selecteer hiertoe de optie **[!UICONTROL Count messages on a linked dimension]** selecteert u vervolgens de bezoeker of de tabel met contactpersonen.
 
@@ -337,7 +337,7 @@ Eerst, vorm de drukregel.
 
 Maak en configureer nu een workflow voor elke levering waarop u de drukregel wilt toepassen.
 
-1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
+1. Maak een campagne. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
 1. In de **[!UICONTROL Targeting and workflows]** tabblad van uw campagne, voegt u een **Query** activiteit aan uw werkschema. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../workflow/using/query.md).
 1. Een **[!UICONTROL Email delivery]** aan de werkstroom en open het. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../workflow/using/delivery.md).
 1. Ga naar de **[!UICONTROL Approvals]** tabblad van het **[!UICONTROL Delivery properties]** en alle goedkeuringen uitschakelen.
@@ -367,7 +367,7 @@ Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers
 <table> 
  <thead> 
   <tr> 
-   <th> Levering<br /> </th> 
+   <th> Aflevering<br /> </th> 
    <th> Goedkeuringen<br /> </th> 
    <th> Dikte<br /> </th> 
    <th> Extractiedatum/-tijd<br /> </th> 
@@ -383,9 +383,9 @@ Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers
    <td> Aflevering 1<br /> </td> 
    <td> Uitgeschakeld<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 13:00<br /> </td> 
    <td> 8 uur (volgende dag)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 2 pm<br /> </td> 
    <td> Night<br /> </td> 
    <td> Uitgesloten<br /> </td> 
    <td> Uitgesloten<br /> </td> 
@@ -394,9 +394,9 @@ Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers
    <td> Aflevering 2<br /> </td> 
    <td> Uitgeschakeld<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 16:00<br /> </td> 
    <td> 9u (volgende dag)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 2 pm<br /> </td> 
    <td> Night<br /> </td> 
    <td> Verzonden<br /> </td> 
    <td> 9u (volgende dag)<br /> </td> 

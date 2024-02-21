@@ -2,13 +2,13 @@
 product: campaign
 title: Antwoorden beheren
 description: Leer hoe u antwoorden op enquêtes beheert
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,11 @@ Naast de standaard opslagwijzen die voor alle vormen van het Web in Adobe Campai
 
 >[!CAUTION]
 >
->Deze optie is beschikbaar voor **Enquête** Typ alleen webtoepassingen. Het wordt niet aangeboden voor andere soorten de vormen van het Web.
+>Deze optie is beschikbaar voor **Enquête** type alleen Web-toepassingen. Het wordt niet aangeboden voor andere soorten de vormen van het Web.
 
 ### Opslaan in een gearchiveerd veld {#storing-in-an-archived-field}
 
-Het is gemakkelijk om het gegevensmalplaatje uit te breiden door nieuwe opslagruimten toe te voegen om de reacties te bewaren die in onderzoeken worden verstrekt. Selecteer hiervoor de optie **[!UICONTROL Store answers to a question]** als u het invoerveld maakt. Klik op de knop **[!UICONTROL New field...]** koppelen en eigenschappen geven:
+Het is gemakkelijk om het gegevensmalplaatje uit te breiden door nieuwe opslagruimten toe te voegen om de reacties te bewaren die in onderzoeken worden verstrekt. Selecteer de optie **[!UICONTROL Store answers to a question]** als u het invoerveld maakt. Klik op de knop **[!UICONTROL New field...]** koppelen en eigenschappen geven:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
@@ -37,7 +37,7 @@ Het geselecteerde veldtype bevat een besturingselement voor de gegevens wanneer 
 
 Als u een restrictie wilt toevoegen, selecteert u deze in de vervolgkeuzelijst. Er zijn twee soorten beperkingen:
 
-1. Teken
+1. Hoofdlettergebruik
 
    De ingevoerde informatie kan in de volgende notaties in het veld worden opgeslagen: in hoofdletters, in kleine letters of in hoofdletters. Deze beperking vereist niet dat de gebruiker de gegevens in de geselecteerde indeling invoert, maar de inhoud die in het veld wordt ingevoerd, wordt geconverteerd wanneer deze wordt opgeslagen.
 
@@ -59,9 +59,9 @@ In de **[!UICONTROL General]** tabblad van het veld, **[!UICONTROL Initialize th
 
 **Voorbeeld**: de contracten van een ontvanger in één veld opslaan
 
-Als u verschillende typen contracten in één veld wilt opslaan, maakt u een **[!UICONTROL Text]** invoerveld en selecteer de **[!UICONTROL Store answers to a question]** optie.
+Als u verschillende typen contracten in één veld wilt opslaan, maakt u een **[!UICONTROL Text]** invoerveld en selecteer de **[!UICONTROL Store answers to a question]** -optie.
 
-Klik op de knop **[!UICONTROL New field...]** koppelen en de veldeigenschappen invoeren. Selecteer **[!UICONTROL Multiple values]** om meerdere waarden op te slaan.
+Klik op de knop **[!UICONTROL New field...]** koppelen en de veldeigenschappen invoeren. Selecteer de **[!UICONTROL Multiple values]** om meerdere waarden op te slaan.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -101,7 +101,7 @@ Voor elk formulier kunnen de antwoorden worden gebruikt in velden of labels. Geb
 
 ### Opslaginstellingen {#storage-settings}
 
-U kunt antwoorden op enquêtes archiveren in XML-indeling. Hiermee kunt u een onbewerkte kopie van de verzamelde antwoorden opslaan. Dit kan handig zijn als de gegevens in een gespecificeerde lijst te veel gestandaardiseerd zijn. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+U kunt antwoorden op enquêtes archiveren in XML-indeling. Hiermee kunt u een onbewerkte kopie van de verzamelde antwoorden opslaan. Dit kan handig zijn als de gegevens in een gespecificeerde lijst te veel gestandaardiseerd zijn. [Meer informatie](../../surveys/using/publish-track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
@@ -110,17 +110,17 @@ U kunt antwoorden op enquêtes archiveren in XML-indeling. Hiermee kunt u een on
 Dit doet u als volgt:
 
 * De enquêteeigenschappen bewerken via het dialoogvenster **[!UICONTROL Properties]** van de **[!UICONTROL Edit]** tab.
-* Klik op de knop **[!UICONTROL Advanced parameters]** en controleer de **[!UICONTROL Save a copy of raw answers]** optie.
+* Klik op de knop **[!UICONTROL Advanced parameters]** de koppeling en de **[!UICONTROL Save a copy of raw answers]** -optie.
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-U kunt deze optie standaard inschakelen voor alle enquêtes (deze optie wordt toegepast wanneer de enquête wordt gepubliceerd). Om dit te doen, creeer **[!UICONTROL NmsWebApp_XmlBackup]** optie en waarde toewijzen **[!UICONTROL 1]** op de lijst, zoals hieronder weergegeven:
+U kunt deze optie standaard inschakelen voor alle enquêtes (deze optie wordt toegepast wanneer de enquête wordt gepubliceerd). Hiertoe maakt u de **[!UICONTROL NmsWebApp_XmlBackup]** optie en waarde toewijzen **[!UICONTROL 1]** op de lijst, zoals hieronder weergegeven:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## Score-beheer {#score-management}
 
-U kunt een score toewijzen aan de opties op de pagina&#39;s van het formulier. Scores kunnen alleen worden gekoppeld aan gesloten vragen: selectievakje, waarde uit een vervolgkeuzelijst, abonnement, enz.
+U kunt een score toewijzen aan de opties op de pagina&#39;s van het formulier. Scores kunnen alleen worden gekoppeld aan gesloten vragen: selectievakje, waarde uit een vervolgkeuzelijst, abonnement, enzovoort.
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
@@ -138,26 +138,26 @@ Scores kunnen worden gebruikt in tests of scripts.
 
 * Als u scores wilt gebruiken in tests, gebruikt u de opdracht **[!UICONTROL Score]** veld in de formule voor de berekening van de test, zoals hieronder aangegeven:
 
-   ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * U kunt de score in een script gebruiken.
 
-**Voorbeeld**: Bereken een score en gebruik deze als voorwaarde voor de weergave van de volgende pagina:
+**Voorbeeld**: bereken een score en gebruik deze als voorwaarde voor het weergeven van de volgende pagina:
 
 * In een enquête kunt u op de volgende pagina verschillende scores toewijzen aan gebruikers, afhankelijk van de waarde die is geselecteerd in de vervolgkeuzelijst:
 
-   ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![](assets/s_ncs_admin_survey_score_exa.png)
 
 * U kunt deze score combineren met een tweede waarde, afhankelijk van de geselecteerde optie:
 
-   ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![](assets/s_ncs_admin_survey_score_exb.png)
 
 * Wanneer de gebruiker op de knop **[!UICONTROL Next]** worden de twee waarden opgeteld.
 
-   ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![](assets/s_ncs_admin_survey_score_exe.png)
 
-* De voorwaarden kunnen worden toegepast voor de pagina die volgens de score moet worden getoond. Dit is als volgt geconfigureerd:
+* Er kunnen voorwaarden worden toegepast op de pagina die op basis van de score moet worden weergegeven. Dit is als volgt geconfigureerd:
 
-   ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![](assets/s_ncs_admin_survey_score_exd.png)
 
-   ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![](assets/s_ncs_admin_survey_score_exg.png)

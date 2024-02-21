@@ -3,16 +3,16 @@ product: campaign
 title: Best practices voor importeren en exporteren
 description: Meer informatie over de aanbevolen procedures bij het importeren of exporteren van gegevens
 feature: Data Management
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -61,8 +61,8 @@ Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. 
 
 **Verwante onderwerpen:**
 
-* [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md)
-* [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction--file-.md)
+* [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading-file.md)
+* [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction-file.md)
 
 ## Importeren in de Delta-modus {#importing-in-delta-mode}
 

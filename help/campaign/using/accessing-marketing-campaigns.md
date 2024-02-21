@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Met Adobe Campaign kunt u marketingcampagnes maken, configureren, uitvoeren en a
 
 ## Beginselen van de werkruimte {#workspace-basics}
 
-### Startpagina {#home-page}
+### Homepage {#home-page}
 
 Als u eenmaal verbinding hebt met Adobe Campaign, bladert u door de verschillende mogelijkheden via koppelingen in de navigatiebalk.
 
@@ -142,7 +142,7 @@ De **[!UICONTROL Reports]** via de koppeling hebt u toegang tot de campagnerappo
 Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen configureren waarvoor sommige opties zijn geselecteerd en andere instellingen al zijn opgeslagen. Voor elke campagne wordt de volgende functionaliteit aangeboden:
 
 * Verwijzing van [documenten en middelen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten aan de campagne koppelen (korte beschrijving, rapport, afbeeldingen, enz.). Alle documentindelingen worden ondersteund.
-* Kosten definiëren: voor elke campagne kunt u met Adobe Campaign definiëren [kostenposten en kostenberekeningsstructuren](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een externe instantie, huur van ruimte.
+* Kosten definiëren: voor elke campagne kunt u met Adobe Campaign definiëren [kostenposten en kostenberekeningsstructuren](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een externe instantie, huur van ruimte.
 * Vaststellen van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
 * Beheer [zaadadressen](../../delivery/using/about-seed-addresses.md) en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Goedkeuringen beheren: u kunt de behandelingen selecteren die u wilt goedkeuren en, indien nodig, de revisieoperatoren of -groepen selecteren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
@@ -184,7 +184,7 @@ In deze tabel worden de acties samengevat die u kunt uitvoeren op campagnes vanu
 | Voorraad | Een voorraadlijn verwijderen |
 | Aanbiedingssimulatie | Een simulatie starten en stoppen |
 | Doelworkflow | Een workflow starten, pauzeren en stoppen |
-| Rapporteren | De huidige gegevens opslaan in de rapportgeschiedenis |
+| Rapport | De huidige gegevens opslaan in de rapportgeschiedenis |
 | Forum | Een discussie toevoegen<br/>Reageren op een boodschap in een gesprek<br/>Een discussie volgen en het abonnement opzeggen |
 
 ### Goedkeuringen

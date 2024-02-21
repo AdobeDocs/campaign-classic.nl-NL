@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -226,7 +226,7 @@ Zie ook:
 
 * [Proofingdoel selecteren](#selecting-the-proof-target)
 * [Seedadressen](about-seed-addresses.md)
-* [Gebruiksscenario: seedadressen selecteren op criteria](use-case--selecting-seed-addresses-on-criteria.md)
+* [Gebruiksscenario: seedadressen selecteren op criteria](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## Video over zelfstudie {#seeds-and-proofs-video}
 

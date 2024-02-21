@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Als u de naam en het adres wilt definiëren van de afzender die wordt weergegeve
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-In dit venster kunt u alle gegevens invoeren die nodig zijn om de e-mailberichtkoppen te maken. Deze informatie kan worden aangepast. Hiervoor gebruikt u de knoppen rechts van de invoervelden om aanpassingsvelden in te voegen.
+In dit venster kunt u alle gegevens invoeren die nodig zijn om de e-mailberichtkoppen te maken. Deze informatie kan worden gepersonaliseerd. Hiervoor gebruikt u de knoppen rechts van de invoervelden om aanpassingsvelden in te voegen.
 
 Als u wilt weten hoe u verpersoonlijkingsvelden invoegt en gebruikt, raadpleegt u [Over personalisatie](about-personalization.md) sectie.
 
@@ -69,7 +69,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
 * Als u inhoud van een HTML wilt importeren, gebruikt u de **[!UICONTROL Open]** knop. U kunt de broncode ook rechtstreeks in het dialoogvenster **[!UICONTROL Source]** subtab.
 
-  Als u het [Editor voor digitale inhoud](../../web/using/about-campaign-html-editor.md) (DCE), zie [Een inhoudssjabloon selecteren](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Als u het [Editor voor digitale inhoud](../../web/using/about-campaign-html-editor.md) (DCE), zie [Een inhoudssjabloon selecteren](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >

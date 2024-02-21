@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken di
 
 * **Subsets maken** - de [Splitsen](../../workflow/using/split.md) kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
 
-* **Externe database laden** - U kunt de externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading--rdbms-.md) (RDBMS) activiteit. Meer informatie in [deze pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Externe database laden** - U kunt de externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading-rdbms.md) (RDBMS) activiteit. Meer informatie in [deze pagina](../../workflow/using/data-loading-rdbms.md).
 
 * **Informatie en koppelingen toevoegen** - de [Verrijking](../../workflow/using/enrichment.md) Met activiteit kunt u aanvullende gegevens toevoegen aan de werktabel van de werkstroom en koppelingen maken naar een externe tabel. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie in [deze pagina](../../workflow/using/enrichment.md).
 

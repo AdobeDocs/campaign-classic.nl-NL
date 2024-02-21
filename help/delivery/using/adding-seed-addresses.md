@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Er zijn drie mogelijke invoegmodi:
 
    Om dit te doen, klik **[!UICONTROL Edit the dynamic condition...]** en voer vervolgens de selectieparameters voor het zaadadres in. Bijvoorbeeld, kon u alle zaadadressen omvatten in een specifieke omslag, of zaadadressen die tot een specifieke afdeling van uw organisatie behoren.
 
-   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: zaadadressen op criteria selecteren](use-case--selecting-seed-addresses-on-criteria.md).
+   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: zaadadressen op criteria selecteren](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

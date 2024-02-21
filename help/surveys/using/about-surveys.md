@@ -2,14 +2,14 @@
 product: campaign
 title: Aan de slag met enquêtes
 description: Aan de slag met campagneenquêtes
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 4%
+source-wordcount: '534'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,6 @@ Leer hoe u uw eerste enquête maakt in [deze pagina](getting-started-with-survey
 >
 >* Webtoepassingsbeheer is gedetailleerd in [dit document](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
 
-
 ## Functiebereik {#campaign-surveys-scope}
 
 In Adobe Campaign: gebruiken [Webtoepassingen](../../web/using/about-web-forms.md) tot:
@@ -39,7 +38,7 @@ In Adobe Campaign: gebruiken [Webtoepassingen](../../web/using/about-web-forms.m
 * Formulieren met meerdere pagina&#39;s maken,
 * Meertalige formulieren beheren met een geïntegreerd vertaalhulpprogramma
 * Grafische interface, paginalay-out met meerdere kolommen beheren,
-* Aanpassing toevoegen en veldpositie definiëren
+* personalisatie toevoegen en veldpositie definiëren;
 * Voorwaardelijke weergave van enquêtevelden volgens antwoorden,
 * Weergave voorwaardepagina,
 * Gegevens controleren vóór goedkeuring, afhankelijk van het type gegevens dat wordt verwacht (nummer, e-mailadres, datums, enz.) en verplichte velden,
@@ -49,11 +48,11 @@ In Adobe Campaign: gebruiken [Webtoepassingen](../../web/using/about-web-forms.m
 
 De optionele module voor het maken van enquêtes biedt een gebruikersvriendelijke gebruikersinterface en de volgende aanvullende functies:
 
-* Dynamische extensie van de database: het creëren van antwoorden die geen deel van het aanvankelijke gegevensmodel uitmaken. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
+* Dynamische extensie van de database: het maken van antwoorden die geen deel uitmaken van het oorspronkelijke gegevensmodel. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Score-beheer. [Meer informatie](../../surveys/using/managing-answers.md#score-management).
 * Willekeurige weergave van vragen. [Meer informatie](../../surveys/using/building-a-survey.md#adding-questions).
-* Real time tracking van antwoorden. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Speciale rapporten genereren. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Real time tracking van antwoorden. [Meer informatie](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Speciale rapporten genereren. [Meer informatie](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Implementatiestappen {#surveys-implementation-steps}
@@ -77,7 +76,7 @@ Standaard zijn enquêtes beschikbaar in het dialoogvenster **[!UICONTROL Resourc
 
 Instellingen worden opgeslagen in de volgende mappen:
 
-* **[!UICONTROL Administration > Configuration > Form rendering]**: Bevat de teruggevende malplaatjes voor de vormpresentatie van het Web (toepassingen en onderzoeken).
+* **[!UICONTROL Administration > Configuration > Form rendering]**: bevat de renderingsjablonen voor de webformulierpresentatie (toepassingen en enquêtes).
 * **[!UICONTROL Resources > Templates > Web application templates]**: bevat de formuliersjablonen. Als u een formulier wilt maken, moet u beginnen met een sjabloon.
 
 >[!NOTE]

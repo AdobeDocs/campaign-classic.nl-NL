@@ -8,7 +8,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 1%
@@ -195,7 +195,7 @@ U kunt een marketingbron koppelen aan een of meer voorraden om uw voorraad te be
 
 >[!NOTE]
 >
->Voor meer informatie over voorraadbeheer in Adobe Campaign raadpleegt u [Voorraadbeheer](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Voor meer informatie over voorraadbeheer in Adobe Campaign raadpleegt u [Voorraadbeheer](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Als u een marketingbron aan een voorraad wilt koppelen, bewerkt u de aandelenkaart en bewerkt of maakt u een voorraad. Voeg een voorraadlijn toe en selecteer de overeenkomstige marketing middel.
 
