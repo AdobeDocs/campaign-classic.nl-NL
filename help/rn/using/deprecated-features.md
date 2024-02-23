@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1519'
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
+source-wordcount: '1558'
 ht-degree: 100%
 
 ---
@@ -48,13 +48,13 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
  <td>Social marketing met Facebook</td>
  <td>Social marketing met Facebook is nu afgeschaft. U kunt integratie met X (voorheen Twitter) gebruiken om berichten te plaatsen op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
  <p></p>
-  <p>Verwachte verwijdering: eind 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
  <td>ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.<p></p>
-  <p>Verwachte verwijdering: eind 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
  </tbody> 
