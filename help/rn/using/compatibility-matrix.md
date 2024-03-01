@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 96%
+source-wordcount: '764'
+ht-degree: 92%
 
 ---
 
@@ -41,9 +41,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (alleen voor hybride omgevingen)</p>
 <p>7.x</p>
-<p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +56,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
 </tr>
 <tr>
@@ -70,6 +67,10 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </tr>
 </tbody>
 </table>
+
+>[!NOTE]
+>
+>Als u RHEL gebruikt, moet u bereid zijn om SELinux onbruikbaar te maken of uw architecten te hebben aangepaste SELinux regels schrijven om te controleren dat toegelaten SELinux geen kwesties met de verrichtingen van de Campagne veroorzaakt.
 
 ## Webservers{#WebServers}
 
