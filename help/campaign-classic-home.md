@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '354'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Nieuwe functies
 
-Bekijk een glimp van de nieuwste verbeteringen in Adobe Campaign Classic v7 product en documentatie! Voor een uitgebreide lijst met functies, verbeteringen en oplossingen raadpleegt u de gedetailleerde [Opmerkingen bij de release](rn/using/latest-release.md).  Blijf up-to-date met de nieuwste wijzigingen in onze documentatie door de [pagina met documentupdates](rn/using/documentation-updates.md).
+Bekijk een glimp van de nieuwste verbeteringen in Adobe Campaign Classic v7 product en documentatie! Voor een uitgebreide lijst met functies, verbeteringen en oplossingen raadpleegt u de gedetailleerde [Opmerkingen bij de release](rn/using/latest-release.md).  Blijf op de hoogte van de nieuwste wijzigingen in onze documentatie door de [pagina met documentupdates](rn/using/documentation-updates.md) te bekijken.
 
 >[!BEGINTABS]
 
@@ -25,13 +25,13 @@ Bekijk een glimp van de nieuwste verbeteringen in Adobe Campaign Classic v7 prod
 
 Ontdek updates, verbeteringen en patches die bij Campaign Classic v7.3.5 worden geleverd.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+[![afbeelding](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
 >[!TAB Verplaatsen naar Adobe IMS]
 
 Om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign u ten zeerste aan de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+[![afbeelding](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
 >[!TAB Wijzigingen in één kanaal]
@@ -43,7 +43,7 @@ Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van 
 
 >[!ENDTABS]
 
-## Beginnen met de basisbeginselen
+## Starten met de basisprincipes
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -72,7 +72,7 @@ Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van 
     </tr>
 </table>
 
-## Documentatie verkennen
+## De documentatie verkennen
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
@@ -106,11 +106,11 @@ Enkele belangrijke wijzigingen in de FCM-service (Firebase Cloud Messaging) van 
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Bronnen voor ontwikkelaars</strong><br/><a href="configuration/using/about-data-model.md">Beschrijving van gegevensmodel</a> - <a href="configuration/using/about-schema-reference.md">Schema-structuur</a> - <a href="configuration/using/editing-forms.md">Schema-structuur</a> - <a href="configuration/using/about-web-services.md">API's</a> - <a href="configuration/using/about-custom-recipient-table.md">Aangepaste tabel voor ontvangers</a>
+      <strong>Bronnen voor ontwikkelaars</strong><br/><a href="configuration/using/about-data-model.md">Beschrijving van gegevensmodel</a> - <a href="configuration/using/about-schema-reference.md">Schema-structuur</a> - <a href="configuration/using/editing-forms.md">Schema-structuur</a> - <a href="configuration/using/about-web-services.md">API's</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html&gt;JSAPI-referentiedocumentatie&lt;/a&gt; - &lt;a href=&quot;&quot;&gt;" configuration/using/about-custom-recipient-table.md">Aangepaste tabel voor ontvangers</a>
     </td>
   </tr>
 </table>
 
-## Aanvullende bronnen
+## Verdere bronnen
 
 [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) - [Adobe Campaign-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
