@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1984'
 ht-degree: 0%
 
 ---
 
 # Databasetoewijzing{#database-mapping}
 
-De SQL-toewijzing van ons voorbeeldschema geeft het volgende XML-document:
+De SQL-toewijzing van het voorbeeldschema dat wordt beschreven [op deze pagina](schema-structure.md) genereert het volgende XML-document:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ De SQL-toewijzing van ons voorbeeldschema geeft het volgende XML-document:
 
 ## Beschrijving {#description}
 
-Het hoofdelement van het schema is niet langer **`<srcschema>`**, maar **`<schema>`**.
+Het hoofdelement van het schema is gewijzigd in **`<srcschema>`** tot **`<schema>`**.
 
-Dit neemt ons aan een ander type van document, dat automatisch van het bronschema wordt geproduceerd, eenvoudig die als schema wordt bedoeld. Dit schema wordt gebruikt door de Adobe Campaign-toepassing.
+Dit andere type van document wordt geproduceerd automatisch van het bronschema, en eenvoudig bedoeld als schema.
 
 De SQL-namen worden automatisch bepaald op basis van de naam en het type van het element.
 
 De SQL-naamgevingsregels zijn als volgt:
 
-* tabel: samenvoeging van de naamruimte en naam van het schema
+* **table**: samenvoeging van de naamruimte en naam van het schema
 
   In ons voorbeeld wordt de naam van de tabel ingevoerd via het hoofdelement van het schema in het dialoogvenster **sqltable** kenmerk:
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* field: naam van het element voorafgegaan door een voorvoegsel gedefinieerd volgens type (&#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.)
+* **field**: naam van het element, voorafgegaan door een voorvoegsel dat is gedefinieerd op basis van het type: &#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.
 
   De veldnaam wordt ingevoerd via het dialoogvenster **sqlname** kenmerk voor elk type **`<attribute>`** en **`<element>`**:
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ De SQL-naamgevingsregels zijn als volgt:
 
 Het SQL-script voor het maken van de tabel die wordt gegenereerd op basis van het uitgebreide schema ziet er als volgt uit:
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 De beperkingen voor het SQL-veld zijn als volgt:
 
-* geen null-waarden in numerieke velden en datumvelden,
-* numerieke velden worden geïnitialiseerd naar 0.
+* geen null-waarden in numerieke velden en datumvelden
+* numerieke velden worden geïnitialiseerd naar 0
 
 ## XML-velden {#xml-fields}
 
-Standaard wordt elk type **`<attribute>`** en **`<element>`** element wordt in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
+Standaard worden alle  **`<attribute>`** en **`<element>`** -typed element wordt in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
 
 Als u een veld in XML wilt vullen, voegt u de opdracht **xml** kenmerk met de waarde &quot;true&quot; aan het betrokken element.
 
@@ -91,21 +91,19 @@ Als u een veld in XML wilt vullen, voegt u de opdracht **xml** kenmerk met de wa
 
 * Veld voor opmerkingen met meerdere regels:
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * Beschrijving van de gegevens in HTML-formaat:
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale controle voor het bewerken van HTML weergeven in de Adobe Campaign-clientinterface.
 
-Met XML-velden kunt u velden toevoegen zonder dat u de fysieke structuur van de database hoeft te wijzigen. Een ander voordeel is dat u minder bronnen gebruikt (grootte die is toegewezen aan SQL-velden, beperking van het aantal velden per tabel, enzovoort).
-
-Het belangrijkste nadeel is dat het onmogelijk is om een XML-veld te indexeren of te filteren.
+Gebruik XML-velden om nieuwe velden toe te voegen zonder de fysieke structuur van de database te wijzigen. Een ander voordeel is dat u minder bronnen gebruikt (grootte die is toegewezen aan SQL-velden, beperking van het aantal velden per tabel, enzovoort). U kunt een XML-veld echter niet indexeren of filteren.
 
 ## Geïndexeerde velden {#indexed-fields}
 
@@ -113,7 +111,7 @@ Met indexen kunt u de prestaties optimaliseren van de SQL-query&#39;s die in de 
 
 Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
 
 Indexen houden zich aan de volgende regels:
 
-* Een index kan verwijzen naar een of meer velden in de tabel.
-* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als de **uniek** bevat de waarde &quot;true&quot;.
-* De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index.
+* Een index kan verwijzen naar een of meer velden in de tabel
+* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als de **uniek** attribute contains the value &quot;true&quot;
+* De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index
 
 >[!NOTE]
 >
->Standaard zijn indexen de eerste elementen die zijn gedeclareerd vanuit het hoofdelement van het schema.
-
->[!NOTE]
+>* Standaard zijn indexen de eerste elementen die zijn gedeclareerd vanuit het hoofdelement van het schema.
 >
->De indexen worden automatisch gecreeerd tijdens lijstafbeelding (norm of FDA).
+>* De indexen worden automatisch gecreeerd tijdens lijstafbeelding (norm of FDA).
 
 **Voorbeeld**:
 
 * Een index toevoegen aan het e-mailadres en de plaats:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ Indexen houden zich aan de volgende regels:
 
 * Een unieke index toevoegen aan het naamveld &quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -174,13 +170,13 @@ Indexen houden zich aan de volgende regels:
   </srcSchema>
   ```
 
-## Beheer van sleutels {#management-of-keys}
+## Sleutelbeheer {#management-of-keys}
 
 Een tabel moet ten minste één sleutel bevatten voor het identificeren van een record in de tabel.
 
 Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema.
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema
 </key>
 ```
 
-Toetsen houden zich aan de volgende regels:
+De volgende regels zijn van toepassing op sleutels:
 
-* Een toets kan naar een of meer velden in de tabel verwijzen.
-* Een sleutel wordt &#39;primair&#39; (of &#39;prioriteit&#39;) genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld of wanneer deze de **internal** kenmerk met de waarde &quot;true&quot;.
-* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het toevoegen van de **noDbIndex** kenmerk met de waarde &quot;true&quot;.
-
->[!NOTE]
->
->Standaard zijn toetsen de elementen die worden gedeclareerd vanuit het hoofdelement van het schema nadat indexen zijn gedefinieerd.
+* Een toets kan verwijzen naar een of meer velden in de tabel
+* Een sleutel wordt &#39;primair&#39; (of &#39;prioriteit&#39;) genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld of wanneer deze de **internal** kenmerk met de waarde &quot;true&quot;
+* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het toevoegen van de **noDbIndex** kenmerk met de waarde &quot;true&quot;
 
 >[!NOTE]
 >
->Toetsen worden gemaakt tijdens het toewijzen van tabellen (standaard of FDA), Adobe Campaign zoekt naar unieke indexen.
+>* Standaard zijn toetsen de elementen die worden gedeclareerd vanuit het hoofdelement van het schema nadat indexen zijn gedefinieerd.
+>
+>* Toetsen worden gemaakt tijdens het toewijzen van tabellen (standaard of FDA), Adobe Campaign zoekt naar unieke indexen.
 
 **Voorbeeld**:
 
 * Een sleutel toevoegen aan het e-mailadres en de plaats:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ Toetsen houden zich aan de volgende regels:
 
   Het gegenereerde schema:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ Toetsen houden zich aan de volgende regels:
 
 * Een primaire of interne sleutel toevoegen aan het naamveld &quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ Toetsen houden zich aan de volgende regels:
 
   Het gegenereerde schema:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -311,7 +305,7 @@ Als u een unieke sleutel wilt declareren, vult u de **automatische** kenmerk (me
 
 Een incrementele sleutel in het bronschema declareren:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ Een incrementele sleutel in het bronschema declareren:
 
 Het gegenereerde schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ Raadpleeg voor meer informatie over FDA-tabellen [Een externe database openen](.
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -412,7 +406,7 @@ Koppelingen voldoen aan de volgende regels:
 
 1-N met betrekking tot de &quot;cus:company&quot;schemalijst:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ Koppelingen voldoen aan de volgende regels:
 
 Het gegenereerde schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ De buitenlandse sleutel wordt automatisch toegevoegd in een element dat de zelfd
 
 Uitgebreid schema van het doel (&quot;cus:company&quot;):
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -475,7 +469,7 @@ Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoeg
 
 In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een outer join en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -490,7 +484,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 
 1-1 met betrekking tot de tabel in het schema &quot;cus:extension&quot;:
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
@@ -498,7 +492,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
@@ -508,7 +502,7 @@ De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-
 
 In dit voorbeeld willen we een sleutel maken op een koppeling (&quot;bedrijf&quot; naar het schema &quot;cus:bedrijf&quot;) met het **xlink** -kenmerk en een veld in de tabel (&quot;email&quot;):
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ In dit voorbeeld willen we een sleutel maken op een koppeling (&quot;bedrijf&quo
 
 Het gegenereerde schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      

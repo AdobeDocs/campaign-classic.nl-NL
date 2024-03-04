@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Schema-verwijzing in Adobe Campaign Classic
-description: Leer hoe te om uitbreidingsschema's te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign Classic uit te breiden
+title: Aan de slag met schema's in Adobe Campaign
+description: Leer hoe u met schema's werkt en breid het conceptuele gegevensmodel van de Adobe Campaign-database uit
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 9%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
-# Schemaverwijzing{#about-schema-reference}
+# Aan de slag met schema&#39;s {#about-schema-reference}
+
+## Wat is een schema {#what-is-a-schema}
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Gegevensmodel Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Gegevensmodel Campaign Classic](about-data-model.md).
 
-De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica specifiek voor Adobe Campaign, genoemd een **schema**.
-
-Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
+In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 
 * De naam van de tabel
 * Velden

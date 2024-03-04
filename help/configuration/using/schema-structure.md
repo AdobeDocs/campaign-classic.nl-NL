@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemastructuur
+title: Schema-structuur begrijpen in Adobe Campaign
 description: Schemastructuur
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
-# Schemastructuur{#schema-structure}
+# Schema-structuur begrijpen {#schema-structure}
 
-De basisstructuur van een `<srcschema>` is als volgt:
+De basisstructuur van een schema wordt hieronder beschreven.
 
-```
+## Gegevensschema’s  {#data-schema}
+
+Voor een `<srcschema>`De structuur is als volgt:
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ De basisstructuur van een `<srcschema>` is als volgt:
 
 Het XML-document van een gegevensschema moet het **`<srcschema>`** hoofdelement met de **name** en **namespace** attributen om de schemanaam en zijn namespace te bevolken.
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ Het XML-document van een gegevensschema moet het **`<srcschema>`** hoofdelement 
 
 Laten we de volgende XML-inhoud gebruiken om de structuur van een gegevensschema te illustreren:
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ Laten we de volgende XML-inhoud gebruiken om de structuur van een gegevensschema
 
 Met het bijbehorende gegevensschema:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -94,7 +98,7 @@ Met het bijbehorende gegevensschema:
 
 ## Beschrijving {#description}
 
-Het punt van ingang van het schema is zijn belangrijkste element. Het is gemakkelijk te identificeren omdat het de zelfde naam zoals het schema heeft, en het zou het kind van het wortelelement moeten zijn. De beschrijving van de inhoud begint met dit element.
+Het ingangspunt van het schema is zijn belangrijkste element. Het is gemakkelijk te identificeren omdat het de zelfde naam zoals het schema heeft, en het zou het kind van het wortelelement moeten zijn. De beschrijving van de inhoud begint met dit element.
 
 In ons voorbeeld wordt het hoofdelement vertegenwoordigd door de volgende regel:
 
@@ -102,11 +106,11 @@ In ons voorbeeld wordt het hoofdelement vertegenwoordigd door de volgende regel:
 <element name="recipient">
 ```
 
-De elementen **`<attribute>`** en **`<element>`** die volgen op het hoofdelement, kunt u de locaties en namen van de gegevensitems in de XML-structuur definiëren.
+De **`<attribute>`** en **`<element>`** elementen die volgen op het hoofdelement worden gebruikt om de locaties en namen van de gegevensitems in de XML-structuur te definiëren.
 
 In ons voorbeeldschema zijn de volgende:
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ In ons voorbeeldschema zijn de volgende:
 </element>
 ```
 
-De volgende regels moeten in acht worden genomen:
+De volgende regels zijn van toepassing:
 
 * Elk **`<element>`** en **`<attribute>`** moet met naam worden geïdentificeerd via de **name** kenmerk.
 
   >[!IMPORTANT]
   >
-  >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen geoorloofde tekens bevatten in overeenstemming met de XML-naamgevingsregels.
+  >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen tekens bevatten die zijn toegestaan in XML-naamgevingsregels.
 
 * Alleen **`<element>`** elementen kunnen bevatten **`<attribute>`** elementen en **`<element>`** elementen in de XML-structuur.
 * An **`<attribute>`** element moet een unieke naam binnen een **`<element>`**.
@@ -131,7 +135,7 @@ De volgende regels moeten in acht worden genomen:
 
 Het gegevenstype is ingevoerd via het dialoogvenster **type** in het dialoogvenster **`<attribute>`** en **`<element>`** elementen.
 
-Een gedetailleerde lijst is beschikbaar in de beschrijving van [`<attribute>` element](../../configuration/using/schema/attribute.md) en de [`<element>` element](../../configuration/using/schema/element.md)).
+Een gedetailleerde lijst is beschikbaar in de beschrijving van [`<attribute>` element](../../configuration/using/schema/attribute.md) en de [`<element>` element](../../configuration/using/schema/element.md).
 
 Wanneer dit kenmerk niet is gevuld, **string** is het standaardgegevenstype, tenzij het element onderliggende elementen bevat. Als dit het geval is, wordt het alleen gebruikt om de elementen hiërarchisch te structureren (**`<location>`** -element in ons voorbeeld).
 
@@ -152,11 +156,11 @@ De volgende gegevenstypen worden ondersteund in schema&#39;s:
 
   >[!NOTE]
   >
-  >Een **uuid** in andere engines dan Microsoft SQL Server moet de functie &quot;newuid()&quot; worden toegevoegd en aangevuld met de standaardwaarde.
+  >Een **uuid** veld in andere RDBMS dan Microsoft SQL Server, `the newuuid()` functie moet worden toegevoegd en aangevuld met de standaardwaarde ervan.
 
 Hier is ons voorbeeldschema met de ingevoerde types:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -179,91 +183,76 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Tekenreeks<br /> </td> 
+   <td> String<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 als unicode)<br /> </td> 
-   <td> VARCHAR (NVARCHAR indien unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Kort<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
    <td> DUBBELE PRECISIE<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Tijd<br /> </td> 
    <td> TIJD<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datumtijd<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Timespan<br /> </td> 
    <td> DUBBELE PRECISIE<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB als Unicode)<br /> </td> 
-   <td> TEXT (NTEXT als Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Klodder<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> AFBEELDING<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,17 +271,17 @@ De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunne
 
   **Voorbeeld**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Het label kan worden weergegeven op het invoerformulier voor de Adobe Campaign-clientconsole:
+  Het label wordt weergegeven in het invoerformulier voor de Adobe Campaign-clientconsole:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * De **desc** kunt u een lange beschrijving invoeren.
 
-  De beschrijving is te zien vanaf het invoerformulier in de statusbalk van het hoofdvenster van de Adobe Campaign-clientconsole.
+  De beschrijving wordt weergegeven in het invoerformulier in de statusbalk van het hoofdvenster van de Adobe Campaign-clientconsole.
 
   >[!NOTE]
   >
@@ -300,13 +289,13 @@ De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunne
 
   **Voorbeeld**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### Standaardwaarden {#default-values}
 
-De **default** Met deze eigenschap kunt u een expressie definiëren die een standaardwaarde retourneert bij het maken van inhoud.
+Gebruik de **default** eigenschap om een expressie te definiëren die een standaardwaarde retourneert bij het maken van inhoud.
 
 De waarde moet een expressie zijn die compatibel is met XPath-taal. Raadpleeg voor meer informatie hierover [Verwijzen naar XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -319,9 +308,9 @@ De waarde moet een expressie zijn die compatibel is met XPath-taal. Raadpleeg vo
 
   >[!NOTE]
   >
-  >In de Adobe Campaign-clientconsole **[!UICONTROL Administration>Counters]** de knoop wordt gebruikt om tellers te beheren.
+  >Blader in de Adobe Campaign-clientconsole naar de **[!UICONTROL Administration > Counters]** map van de Verkenner om tellers te beheren.
 
-Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<default>`  of  `<sqldefault>`   veld.
 
 `<default>` : hiermee kunt u het veld vooraf invullen met een standaardwaarde wanneer u entiteiten maakt. De waarde wordt geen standaard SQL-waarde.
 
@@ -329,13 +318,13 @@ Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<defau
 
 ### Opsommingen {#enumerations}
 
-#### Vrije opsomming {#free-enumeration}
+#### Opsomming openen {#free-enumeration}
 
-De **userEnum** Met deze eigenschap kunt u een gratis opsomming definiëren voor het onthouden en weergeven van de waarden die via dit veld worden ingevoerd. De syntaxis is als volgt:
+De **userEnum** Met deze eigenschap kunt u een open opsomming definiëren voor het opslaan en weergeven van de waarden die via dit veld worden ingevoerd.
 
-**userEnum=&quot;naam van opsomming&quot;**
+De syntaxis is als volgt:
 
-De naam die aan de opsomming wordt gegeven kan vrij worden gekozen en met andere gebieden worden gedeeld.
+`userEnum="name of enumeration"`
 
 Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier:
 
@@ -343,7 +332,7 @@ Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier
 
 >[!NOTE]
 >
->In de Adobe Campaign-clientconsole **[!UICONTROL Administration > Enumerations]** node wordt gebruikt om opsommingen te beheren.
+>Blader in de Adobe Campaign-clientconsole naar de **[!UICONTROL Administration > Enumerations]** map van de Verkenner voor het beheren van opsommingen.
 
 #### Opsomming instellen {#set-enumeration}
 
@@ -357,7 +346,7 @@ Met opsommingen kan de gebruiker een waarde in een vervolgkeuzelijst selecteren 
 
 Voorbeeld van een opsommingsdeclaratie in het gegevensschema:
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ Een opsomming wordt buiten het hoofdelement gedeclareerd via de **`<enumeration>
 
 De opsommingseigenschappen zijn als volgt:
 
-* **baseType**: type gegevens dat aan de waarden is gekoppeld,
-* **label**: beschrijving van de opsomming,
-* **name**: naam van de opsomming,
-* **default**: standaardwaarde van de opsomming.
+* **baseType**: type gegevens dat is gekoppeld aan de waarden
+* **label**: beschrijving van de opsomming
+* **name**: naam van de opsomming
+* **default**: standaardwaarde van de opsomming
 
 De opsommingswaarden worden gedeclareerd in de **`<value>`** element met de volgende kenmerken:
 
-* **name**: naam van de waarde die intern is opgeslagen,
-* **label**: label dat wordt weergegeven via de grafische interface.
+* **name**: naam van de waarde die intern is opgeslagen
+* **label**: label weergegeven in de grafische interface
 
 #### dbenum-opsomming {#dbenum-enumeration}
 
-* De **dbenum** Met eigenschap kunt u een opsomming definiëren waarvan de eigenschappen overeenkomen met die van de **enum** eigenschap.
+*The **dbenum** Met eigenschap kunt u een opsomming definiëren waarvan de eigenschappen overeenkomen met die van de **enum** eigenschap.
 
-  De **name** het attribuut slaat intern niet de waarde op, het slaat een code op die u de betrokken lijsten laat uitbreiden zonder hun schema te wijzigen.
+De **name** het attribuut slaat intern niet de waarde op, het slaat een code op die u de betrokken lijsten laat uitbreiden zonder hun schema te wijzigen.
 
-  De waarden worden gedefinieerd via de **[!UICONTROL Administration>Enumerations]** knooppunt.
+Deze opsomming wordt bijvoorbeeld gebruikt om de aard van campagnes op te geven.
 
-  Deze opsomming wordt bijvoorbeeld gebruikt om de aard van campagnes op te geven.
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Voorbeeld {#example}
 
 Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ De **ongebonden** Met kenmerk met de waarde &quot;true&quot; kunt u een verzamel
 
 **Voorbeeld**: definitie van de **`<group>`** verzamelingselement in het schema.
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ De **ongebonden** Met kenmerk met de waarde &quot;true&quot; kunt u een verzamel
 
 Met projectie van de XML-inhoud:
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -473,8 +460,8 @@ U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in
 **Voorbeeld**:
 
 * **GetDate()**: retourneert de huidige datum
-* **Jaar (@gemaakt)**: retourneert het jaar van de datum in het kenmerk &quot;created&quot;.
-* **GetEmailDomain(@email)**: retourneert het domein van het e-mailadres.
+* **Jaar (@gemaakt)**: retourneert het jaar van de datum in het kenmerk &quot;created&quot;
+* **GetEmailDomain(@email)**: retourneert het domein van het e-mailadres
 
 ## Een tekenreeks samenstellen via de compute string {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ De **Rekenreeks** wordt gedefinieerd via de **`<compute-string>`** element onder
 
 **Voorbeeld**: compute string van de ontvangende tabel.
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>
