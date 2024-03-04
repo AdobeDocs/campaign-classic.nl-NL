@@ -5,10 +5,10 @@ description: Databasetoewijzing
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 2%
 
 ---
 
@@ -222,3 +222,13 @@ Het gegenereerde schema:
 ```
 
 De definitie van de naamsleutel &quot;companyEmail&quot; is uitgebreid met de buitenlandse sleutel van de koppeling &quot;bedrijf&quot;. Met deze sleutel wordt een unieke index voor beide velden gegenereerd.
+
+## Meer informatie
+
+Klik op de volgende koppelingen voor meer informatie:
+
+* [Aan de slag met schema&#39;s](about-schema-reference.md)
+* [Schemastructuur](schema-structure.md)
+* [Databasetoewijzing](database-mapping.md)
+* [Sleutelbeheer](database-keys.md)
+* [Campaign datamodel](about-data-model.md)

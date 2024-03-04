@@ -5,10 +5,10 @@ description: Belangrijk beheer in gegevensschema's begrijpen
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -180,3 +180,13 @@ Naast de definitie van de sleutel en zijn index, is een numeriek gebied genoemd 
 >
 >Bij het maken van de tabel wordt automatisch een record met de primaire sleutel ingesteld op 0 ingevoegd. Deze record wordt gebruikt om buitenste verbindingen te voorkomen, die niet effectief zijn op volumetabellen. Door gebrek, worden alle buitenlandse sleutels geïnitialiseerd met waarde 0 zodat een resultaat altijd kan zijn teruggekeerd op de verbinding wanneer het gegevenspunt niet bevolkt is.
 
+
+## Meer informatie
+
+Klik op de volgende koppelingen voor meer informatie:
+
+* [Aan de slag met schema&#39;s](about-schema-reference.md)
+* [Schemastructuur](schema-structure.md)
+* [Databasetoewijzing](database-mapping.md)
+* [Koppelingsbeheer](database-links.md)
+* [Campaign datamodel](about-data-model.md)

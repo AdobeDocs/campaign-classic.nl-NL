@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
@@ -485,3 +485,14 @@ Resultaat van de berekende tekenreeks voor een ontvanger: **Doe John (john.doe@a
 >[!NOTE]
 >
 >Als het schema geen Compute koord bevat, wordt een Compute koord bevolkt door gebrek met de waarden van de primaire sleutel van het schema.
+
+
+## Meer informatie
+
+Klik op de volgende koppelingen voor meer informatie:
+
+* [Aan de slag met schema&#39;s](about-schema-reference.md)
+* [Databasetoewijzing](database-mapping.md)
+* [Koppelingsbeheer](database-links.md)
+* [Sleutelbeheer](database-keys.md)
+* [Campaign datamodel](about-data-model.md)
