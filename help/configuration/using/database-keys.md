@@ -5,7 +5,7 @@ description: Belangrijk beheer in gegevensschema's begrijpen
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -28,7 +28,6 @@ Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema
 ```
 
 Een sleutel wordt een &#39;primaire sleutel&#39; genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld, of als deze de `internal` kenmerk ingesteld op &quot;true&quot;.
-
 
 De volgende regels zijn van toepassing op sleutels:
 
