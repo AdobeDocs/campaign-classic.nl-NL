@@ -5,181 +5,25 @@ description: Databasetoewijzing
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 0%
+source-wordcount: '918'
+ht-degree: 1%
 
 ---
 
-# Databasetoewijzing{#database-mapping}
 
-De SQL-toewijzing van het voorbeeldschema dat wordt beschreven [op deze pagina](schema-structure.md) genereert het volgende XML-document:
-
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
-
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-Het hoofdelement van het schema is gewijzigd in **`<srcschema>`** tot **`<schema>`**.
-
-Dit andere type van document wordt geproduceerd automatisch van het bronschema, en eenvoudig bedoeld als schema.
-
-De SQL-namen worden automatisch bepaald op basis van de naam en het type van het element.
-
-De SQL-naamgevingsregels zijn als volgt:
-
-* **table**: samenvoeging van de naamruimte en naam van het schema
-
-  In ons voorbeeld wordt de naam van de tabel ingevoerd via het hoofdelement van het schema in het dialoogvenster **sqltable** kenmerk:
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **field**: naam van het element, voorafgegaan door een voorvoegsel dat is gedefinieerd op basis van het type: &#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.
-
-  De veldnaam wordt ingevoerd via het dialoogvenster **sqlname** kenmerk voor elk type **`<attribute>`** en **`<element>`**:
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->SQL-namen kunnen worden overgeladen uit het bronschema. Hiertoe vult u de kenmerken &quot;sqltable&quot; of &quot;sqlname&quot; op het desbetreffende element in.
-
-Het SQL-script voor het maken van de tabel die wordt gegenereerd op basis van het uitgebreide schema ziet er als volgt uit:
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-De beperkingen voor het SQL-veld zijn als volgt:
-
-* geen null-waarden in numerieke velden en datumvelden
-* numerieke velden worden geïnitialiseerd naar 0
-
-## XML-velden {#xml-fields}
-
-Standaard worden alle  **`<attribute>`** en **`<element>`** -typed element wordt in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
-
-Als u een veld in XML wilt vullen, voegt u de opdracht **xml** kenmerk met de waarde &quot;true&quot; aan het betrokken element.
-
-**Voorbeeld**: Hier volgen twee voorbeelden van het gebruik van XML-velden.
-
-* Veld voor opmerkingen met meerdere regels:
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* Beschrijving van de gegevens in HTML-formaat:
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale controle voor het bewerken van HTML weergeven in de Adobe Campaign-clientinterface.
-
-Gebruik XML-velden om nieuwe velden toe te voegen zonder de fysieke structuur van de database te wijzigen. Een ander voordeel is dat u minder bronnen gebruikt (grootte die is toegewezen aan SQL-velden, beperking van het aantal velden per tabel, enzovoort). U kunt een XML-veld echter niet indexeren of filteren.
-
-## Geïndexeerde velden {#indexed-fields}
-
-Met indexen kunt u de prestaties optimaliseren van de SQL-query&#39;s die in de toepassing worden gebruikt.
-
-Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
-
-```sql
-<dbindex name="name_of_index" unique="true/false">
-  <keyfield xpath="xpath_of_field1"/>
-  <keyfield xpath="xpath_of_field2"/>
-  ...
-</key>
-```
-
-Indexen houden zich aan de volgende regels:
-
-* Een index kan verwijzen naar een of meer velden in de tabel
-* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als de **uniek** attribute contains the value &quot;true&quot;
-* De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index
-
->[!NOTE]
->
->* Standaard zijn indexen de eerste elementen die zijn gedeclareerd vanuit het hoofdelement van het schema.
->
->* De indexen worden automatisch gecreeerd tijdens lijstafbeelding (norm of FDA).
-
-**Voorbeeld**:
-
-* Een index toevoegen aan het e-mailadres en de plaats:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-        <keyfield xpath="location/@city"/> 
-      </dbindex>
-  
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-      <element name="location" label="Location">
-        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-      </element>
-    </element>
-  </srcSchema>
-  ```
-
-* Een unieke index toevoegen aan het naamveld &quot;id&quot;:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="id" unique="true">
-        <keyfield xpath="@id"/> 
-      </dbindex>
-  
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-      </dbindex>
-  
-      <attribute name="id" type="long" label="Identifier"/>
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-    </element>
-  </srcSchema>
-  ```
-
-
-## Koppelingsbeheer {#links--relation-between-tables}
+# Koppelingsbeheer {#links--relation-between-tables}
 
 Een koppeling beschrijft de koppeling tussen de ene tabel en de andere.
 
-De verschillende soorten verenigingen (zogenaamde &quot;kardinaliteiten&quot;) zijn als volgt:
+Hieronder worden ook de soorten verenigingen genoemd, die ook kardinaliteiten worden genoemd.
 
 * Kardinaliteit 1-1: één instantie van de brontabel kan maximaal één overeenkomende instantie van de doeltabel hebben.
 * Kardinaliteit 1-N: één voorkomen van de bronlijst kan verscheidene overeenkomstige voorkomen van de doellijst hebben, maar één voorkomen van de doellijst kan hoogstens één overeenkomstige voorkomen van de bronlijst hebben.
 * Kardinaliteit N-N: één instantie van de brontabel kan meerdere corresponderende instanties van de doeltabel hebben, en omgekeerd.
 
-In de interface kunt u de verschillende soorten relaties gemakkelijk onderscheiden dankzij hun pictogrammen.
+In de gebruikersinterface worden kardinaliteiten weergegeven met een specifiek pictogram.
 
 Voor het samenvoegen van relaties met een tabel/database voor campagnes:
 
@@ -187,7 +31,7 @@ Voor het samenvoegen van relaties met een tabel/database voor campagnes:
 * ![](assets/externaljoin11.png) : Kardinaliteit 1-1, externe verbinding. Bijvoorbeeld tussen een ontvanger en hun land. Een ontvanger kan slechts aan één voorkomen van het lijstland worden verwant. De inhoud van de landentabel wordt niet opgeslagen.
 * ![](assets/join_with_campaign1n.png) : Kardinaliteit 1-N. Bijvoorbeeld tussen een ontvanger en de abonnementstabel. Een ontvanger kan zijn verwant aan verscheidene voorkomen op de abonnementstabel.
 
-Voor join-relaties met gebruik van Federated Database Access:
+Voor join-relaties met FDA (Federated Database Access):
 
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
@@ -208,20 +52,21 @@ Koppelingen voldoen aan de volgende regels:
 
 * De definitie van een koppeling wordt ingevoerd op een **link**-type **`<element>`** met de volgende kenmerken:
 
-   * **name**: naam van koppeling uit de brontabel,
-   * **target**: naam van doelschema,
-   * **label**: label van koppeling,
-   * **revLink** (optioneel): naam van de reverse link van het doelschema (standaard automatisch afgetrokken);
-   * **integriteit** (facultatief): referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst. Mogelijke waarden zijn:
+   * **name**: naam van koppeling in de brontabel
+   * **target**: naam van doelschema
+   * **label**: label van koppeling
+   * **revLink** (optioneel): naam van de omgekeerde koppeling in het doelschema (standaard automatisch afgetrokken)
+   * **integriteit** (facultatief): referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst.
+Mogelijke waarden zijn:
 
-      * **definiëren**: het is mogelijk om de bron-instantie te verwijderen als er niet langer naar wordt verwezen door een doelinstantie,
-      * **normaal**: als u de broninstantie verwijdert, worden de toetsen van de koppeling naar de doelinstantie (de standaardmodus) geïnitialiseerd. Bij dit type integriteit worden alle externe toetsen geïnitialiseerd.
-      * **eigen**: het verwijderen van de broninstantie leidt tot het verwijderen van de doelinstantie,
-      * **owncopy**: gelijk aan **eigen** (in geval van verwijdering) of dupliceert de voorvallen (in geval van duplicatie),
-      * **neutraal**: doet niets.
+      * **definiëren**: het is mogelijk om de broninstantie te verwijderen als er niet langer naar wordt verwezen door een doelinstantie
+      * **normaal**: als u de broninstantie verwijdert, worden de toetsen van de koppeling naar de doelinstantie (standaardmodus) geïnitialiseerd. Bij dit type integriteit worden alle externe toetsen geïnitialiseerd
+      * **eigen**: als u de broninstantie verwijdert, wordt de doelinstantie verwijderd
+      * **owncopy**: gelijk aan **eigen** (in geval van verwijdering) of dupliceert de voorvallen (in geval van duplicatie)
+      * **neutraal**: geen specifiek gedrag
 
-   * **revIntegrity** (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;);
-   * **revCardinality** (optioneel): met de waarde &quot;single&quot; wordt de kardinaliteit gevuld met type 1-1 (standaard 1-N).
+   * **revIntegrity** (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;)
+   * **revCardinality** (optioneel): met de waarde &quot;single&quot; wordt de kardinaliteit gevuld met type 1-1 (standaard 1-N)
    * **externalJoin** (optioneel): forceert de buitenste verbinding
    * **revExternalJoin** (optioneel): hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
 
@@ -234,9 +79,9 @@ Koppelingen voldoen aan de volgende regels:
 >
 >Standaard zijn koppelingen de elementen die aan het einde van het schema worden gedeclareerd.
 
-### Voorbeeld 1 {#example-1}
+## Voorbeeld: omgekeerde koppeling {#example-1}
 
-1-N met betrekking tot de &quot;cus:company&quot;schemalijst:
+In het onderstaande voorbeeld declareren we een 1-N relatie tot de schematabel &quot;cus:company&quot;:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -297,9 +142,9 @@ Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoeg
 * **ongebonden**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
 * **integriteit**: &quot;define&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
-### Voorbeeld 2 {#example-2}
+## Voorbeeld: eenvoudige koppeling {#example-2}
 
-In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een outer join en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
+In dit voorbeeld, verklaren wij een verbinding aan de &quot;nms:adres&quot;schemalijst. De join is een outer join en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -312,17 +157,17 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 </srcSchema>
 ```
 
-### Voorbeeld 3 {#example-3}
+## Voorbeeld: unieke kardinaliteit {#example-3}
 
-1-1 met betrekking tot de tabel in het schema &quot;cus:extension&quot;:
+In dit voorbeeld maken we een 1-1 relatie met de schematabel &quot;cus:extension&quot;:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Voorbeeld 4 {#example-4}
+## Voorbeeld: koppelen naar een map {#example-4}
 
-Koppeling naar een map (&quot;xtk:folder&quot;-schema):
+In dit voorbeeld wordt een koppeling naar een map gedeclareerd (&quot;xtk:folder&quot;-schema):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -330,9 +175,9 @@ Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
 De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-bestand dat is ingevoerd in de functie &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Voorbeeld 5 {#example-5}
+## Voorbeeld: een sleutel maken op een koppeling {#example-5}
 
-In dit voorbeeld willen we een sleutel maken op een koppeling (&quot;bedrijf&quot; naar het schema &quot;cus:bedrijf&quot;) met het **xlink** -kenmerk en een veld in de tabel (&quot;email&quot;):
+In dit voorbeeld maken we een sleutel op een koppeling (&quot;bedrijf&quot; naar het schema &quot;cus:bedrijf&quot;) met het **xlink** -kenmerk en een veld in de tabel (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
