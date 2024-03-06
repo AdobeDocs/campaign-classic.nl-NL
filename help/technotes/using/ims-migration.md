@@ -4,9 +4,9 @@ description: Leer hoe u technische operatoren van campagnes kunt migreren naar e
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 In het kader van de inspanningen om het beveiligings- en verificatieproces te versterken, te beginnen met Campaign Classic v7.3.5, wordt het verificatieproces naar Campaign Classic verbeterd. De technische exploitanten moeten nu de [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
 
 Een technische operator is een Campagnegebruikersprofiel dat expliciet is gemaakt voor API-integratie. In dit artikel worden de stappen beschreven die nodig zijn om een technische operator via de Adobe Developer-console naar een technische account te migreren.
-
 
 ## Heb je invloed op?{#ims-impacts}
 
@@ -53,7 +52,7 @@ Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de r
 
 * Campagne-gehost en Managed Services-klanten
 
-  Voor API-aanroepen in de Message Center-instantie(s) had een productprofiel moeten worden gemaakt tijdens de upgrade naar Campagne v7.3.5 (of een ander profiel) [Compatibele versie van IMS-migratie](#ims-versions-tech)), of tijdens levering van de instantie. Dit productprofiel heeft de volgende naam:
+  Voor API-aanroepen naar de Message Center-instantie(s) moet het productprofiel (hieronder vermeld) worden gemaakt tijdens de upgrade naar Campagne v7.3.5 (of een ander profiel) [Compatibele versie van IMS-migratie](#ims-versions-tech)), of tijdens levering van de instantie. Neem contact op met uw Overgangsmanager of Klantenondersteuning als u het productprofiel niet ziet voordat u de IMS-migratie start. Dit productprofiel heeft de volgende naam:
 
   `campaign - <your campaign instance> - messagecenter`
 
