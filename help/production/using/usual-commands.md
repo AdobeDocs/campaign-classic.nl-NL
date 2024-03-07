@@ -9,9 +9,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '421'
 ht-degree: 5%
 
 ---
@@ -164,5 +164,5 @@ Als u het dialoogvenster **internal** wachtwoord: **nlserver config - intern wac
 >* Als u de lijst met parameters wilt ophalen, gebruikt u de opdracht **-?** parameter: **nlserver config -?**
 >* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >

@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 9%
+source-wordcount: '2990'
+ht-degree: 7%
 
 ---
 
 # Quarantainebeheer begrijpen{#understanding-quarantine-management}
 
-Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer het postvak vol is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
+Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer de brievenbus volledig is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Voor elk adres is de volgende informatie beschikbaar:
 >
 >Einde van jaar 1: (1&#42;0,33)/(1+0,5)=22%.
 >
->Einde van jaar 2: (1.22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+Einde van jaar 2: (1.22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificeer quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -97,7 +97,7 @@ U kunt de status van het e-mailadres van elke ontvanger opzoeken. Selecteer hier
 ![](assets/tech_quarant_recipients_filter.png)
 
 
-## Voorwaarden voor het in quarantaine plaatsen van een adres {#conditions-for-sending-an-address-to-quarantine}
+## Voorwaarden voor verzending van een adres naar quarantaine {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign beheert quarantaine volgens het type van leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen wordt toegewezen (zie [Bounce mail-kwalificatie](understanding-delivery-failures.md#bounce-mail-qualification) en [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons)).
 
@@ -109,7 +109,7 @@ Als een gebruiker een e-mailbericht kwalificeert als spam ([feedbacklus](https:/
 
 >[!NOTE]
 >
->Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
+Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
 
 In de lijst van quarantined adressen (zie [Het identificeren van quarantined adressen voor het volledige platform](#identifying-quarantined-addresses-for-the-entire-platform)), **[!UICONTROL Error reason]** geeft aan waarom het geselecteerde adres in quarantaine is geplaatst.
 
@@ -145,7 +145,7 @@ Hun status verandert vervolgens in **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
->Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** de status wordt nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
 ### Handmatige updates {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-maildomein (@domein)** gelijk aan domain1.com OR **E-maildomein (@domein)** gelijk aan domain2.com OR **E-maildomein (@domein)** is gelijk aan domain3.com
-   * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
-   * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
+   * **Status bijwerken (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
+   * **Status bijwerken (@lastModified)** op of voor `MM/DD/YYYY HH:MM:SS PM`
 
 * Voor Campaign Classic v7 instanties met SMTP stuitert reactieinformatie in **[!UICONTROL Error text]** veld van de quarantainelijst:
 
@@ -174,8 +174,8 @@ Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
 
   waar &quot;support.ISP.com&quot; kan zijn: bijvoorbeeld &quot;support.apple.com&quot; of &quot;support.google.com&quot;
 
-   * **Status bijwerken (@lastModified)** op of na MM/DD/YYYY HH:MM:SS AM
-   * **Status bijwerken (@lastModified)** op of vóór MM/DD/YYYY HH:MM:SS PM
+   * **Status bijwerken (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
+   * **Status bijwerken (@lastModified)** op of voor  `MM/DD/YYYY HH:MM:SS PM`
 
 Als u de lijst met betrokken ontvangers hebt, voegt u een **[!UICONTROL Update data]** activiteit om hun e-mailadresstatus in te stellen op **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** workflow. U kunt ze ook gewoon uit de quarantainetabel verwijderen.
 
@@ -292,13 +292,13 @@ Tijdens de leveringsanalyse, worden alle apparaten die van het doel worden uitge
 
 >[!NOTE]
 >
->Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
+Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
 >
->* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden van fout **[!UICONTROL Unreachable]**, wordt opnieuw geprobeerd.
->* Verbinding verloren tijdens levering: zachte fout, reden van mislukking **[!UICONTROL Refused]**, wordt opnieuw geprobeerd.
->* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, oorzaak van fout **[!UICONTROL Refused]**, wordt het opnieuw proberen niet uitgevoerd.
+* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden van fout **[!UICONTROL Unreachable]**, wordt opnieuw geprobeerd.
+* Verbinding verloren tijdens levering: zachte fout, reden van mislukking **[!UICONTROL Refused]**, wordt opnieuw geprobeerd.
+* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, oorzaak van fout **[!UICONTROL Refused]**, wordt het opnieuw proberen niet uitgevoerd.
 >
->Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
+Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
 **Voor Android V2**
 
@@ -517,7 +517,7 @@ Het quarantainemechanisme voor SMS-berichten is over het algemeen hetzelfde als 
 
 >[!NOTE]
 >
->De **[!UICONTROL Delivery log qualification]** de tabel is niet van toepassing op **Uitgebreide algemene SMPP** -aansluiting.
+De **[!UICONTROL Delivery log qualification]** de tabel is niet van toepassing op **Uitgebreide algemene SMPP** -aansluiting.
 
 <table> 
  <tbody> 
@@ -576,9 +576,9 @@ Voordat een nieuw type fout wordt gekwalificeerd, is de reden van de fout altijd
 
 >[!NOTE]
 >
->De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
+Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
 

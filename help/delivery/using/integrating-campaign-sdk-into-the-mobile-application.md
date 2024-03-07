@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 1%
+source-wordcount: '993'
+ht-degree: 0%
 
 ---
 
@@ -297,7 +297,7 @@ Met de registratiefunctie kunt u:
 
   >[!NOTE]
   >
-  >Vanaf versie 7.0 **toepassing:didReceiveRemoteNotification:fetchCompletionHandler** -functie wordt geïmplementeerd, roept het besturingssysteem alleen deze functie aan. De **application:didReceiveRemoteNotification** functie wordt daarom niet aangeroepen.
+  >Vanaf versie 7.0 **`application:didReceiveRemoteNotification:fetchCompletionHandler`** -functie wordt geïmplementeerd, roept het besturingssysteem alleen deze functie aan. De **`application:didReceiveRemoteNotification`** functie wordt daarom niet aangeroepen.
 
 +++
 

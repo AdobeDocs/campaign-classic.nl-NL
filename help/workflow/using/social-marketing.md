@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Social marketing
+title: Sociale marketing
 description: Meer informatie over technische workflows voor sociale marketing
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
 
-# Social marketing{#social-marketing}
+# Sociale marketing{#social-marketing}
 
 
 
 >[!AVAILABILITY]
 >
->:warning: Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../social/using/about-social-marketing.md)
+>`:warning:` Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../social/using/about-social-marketing.md)
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Sociale marketing** module standaard.
 

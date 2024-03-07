@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -565,7 +565,7 @@ In het formulier wordt het veld voor het selecteren van de afbeelding toegevoegd
 
 ## Datumweergave {#date-display}
 
-In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling: **YYYY/MM/DD HH:MM:SS** (voorbeeld 2018/10/01 12):23:30).
+In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling: **`YYYY/MM/DD HH:MM:SS`** (voorbeeld `2018/10/01 12:23:30`).
 
 Adobe Campaign biedt functies voor datumnotatie voor de JavaScript-sjablonen en XSL-opmaakmodellen die hieronder worden beschreven.
 

@@ -9,9 +9,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, de vraag van de ZEEP, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
-Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic-instantie op locatie** om problemen op te lossen.
+Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic on-premise instantie** om problemen op te lossen.
 
 ## Tomcat gebruikt in Adobe Campaign
 
@@ -52,11 +52,11 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 Als voorbeeld *ServerInfo.properties* Het bestand voor Adobe Campaign bevat de volgende informatie, met vermelding van Tomcat v8.5.X:
 
-*server.info=Apache Tomcat/8.5.X*
+*`server.info=Apache Tomcat/8.5.X`*
 
-*server.number=8.5.X.Y*
+*`server.number=8.5.X.Y`*
 
-*server.built=MM DD YYY HH:MM:SS*
+*`server.built=MM DD YYY HH:MM:SS`*
 
 Zodra u de nauwkeurige versie van Tomcat kunt bepalen die in een bepaald geval wordt gebruikt, kan het u in het oplossen van problemen met betrekking tot Tomcat helpen.
 

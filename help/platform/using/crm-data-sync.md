@@ -5,10 +5,10 @@ description: Gegevens beheren tussen Campagne en uw CRM
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 0%
+source-wordcount: '1536'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,7 @@ De datum van de laatste synchronisatie wordt opgeslagen in een optie die in het 
 >
 >Deze opmerking is alleen van toepassing op het generieke **[!UICONTROL CRM Connector]** activiteit. Voor andere CRM-activiteiten is het proces automatisch.
 >
->Deze optie moet handmatig worden gemaakt en ingevuld onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Dit moet een tekstoptie zijn en de waarde ervan moet overeenkomen met de volgende indeling: **yyyy/MM/dd hh:mm:ss**.
+>Deze optie moet handmatig worden gemaakt en ingevuld onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Dit moet een tekstoptie zijn en de waarde ervan moet overeenkomen met de volgende indeling: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >U moet deze optie handmatig bijwerken als u wilt doorgaan met importeren.
 
@@ -112,7 +112,7 @@ De **[!UICONTROL Automatic index]** Deze optie genereert drie variabelen die in 
 
   >[!NOTE]
   >
-  >Deze datums worden weergegeven in de volgende notatie: **yyyy/MM/dd hh:mm:ss**.
+  >Deze datums worden weergegeven in de volgende notatie: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Gegevens filteren {#filtering-data}
 

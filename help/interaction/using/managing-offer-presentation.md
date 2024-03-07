@@ -3,16 +3,16 @@ product: campaign
 title: Presentatie van aanbieding beheren
 description: Presentatie van aanbieding beheren
 feature: Interaction, Offers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 1%
+source-wordcount: '1013'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ De toepassingscriteria die beschikbaar zijn in de **[!UICONTROL General]** kunt 
 
 In de **[!UICONTROL Offer presentation]** , moet u dezelfde afmetingen voor de presentatieregel opgeven als de afmetingen die in de omgeving zijn geconfigureerd.
 
-De **[!UICONTROL Targeting dimension]** komt overeen met de lijst met ontvangers (standaard: nms:ontvangers) die de voorstellen zullen ontvangen. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard:nms:propositionRcp).
+De **[!UICONTROL Targeting dimension]** komt overeen met de tabel met ontvangers (standaard: `nms:recipients`) die de voorstellen ontvangt. De **[!UICONTROL Storage dimension]** valt samen met de tabel die de voorpositiegeschiedenis bevat die is gekoppeld aan de doeldimensie (standaard: `nms:propositionRcp`).
 
 ![](assets/offer_typology_009.png)
 

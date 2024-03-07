@@ -5,9 +5,9 @@ description: In deze sectie worden de Adobe Campaign Classic-structuur voor tran
 feature: Transactional Messaging, Message Center, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Transactioneel overseinen baseert zich op een specifieke architectuur, die uit v
 
 ## Instanties installeren {#installing-instances}
 
-Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u de productie start. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u in productie gaat nemen. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met het accountmanager van de Adobe.
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren
 
 ## Control-instantie {#control-instance}
 
-Selecteer de optie **[!UICONTROL Transactional message control]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md).
+Selecteer de optie **[!UICONTROL Transactional message control]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Standaardpakketten voor Campaigns Classic installeren](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -62,7 +62,7 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 ## Uitvoeringsinstantie {#execution-instance}
 
-Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u de optie **[!UICONTROL Transactional message execution]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md).
+Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u de optie **[!UICONTROL Transactional message execution]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Standaardpakketten voor Campaigns Classic installeren](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -157,7 +157,7 @@ Hier volgt een voorbeeld van een gebeurtenis die deze informatie bevat:
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -222,7 +222,7 @@ Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTRO
    * **[!UICONTROL Server]** : voer de server-URL van de uitvoeringsinstantie van uw campagne in.
    * **[!UICONTROL Account]** : voer de account in die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
    * **[!UICONTROL Password]** : voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
-   * **[!UICONTROL Data Source]** : voer de volgende syntaxis in **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** : voer de volgende syntaxis in **`nms:extAccount:ID`** van uw externe databaseaccount in de uitvoeringsinstantie.
 
 1. Een **[!UICONTROL Execution instance]** externe account in uw **marketing** instantie die de volgende configuratie gebruikt om het werkschema van de gegevenssynchronisatie tot stand te brengen:
 

@@ -10,9 +10,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * Tekstspatiëring werkt niet meer als het wachtwoord leeg is. Als dit het geval is, zal een foutenmelding u op de hoogte brengen en u vragen om het aan te passen.
 * Gebruikerswachtwoorden worden niet meer opgeslagen in het dialoogvenster **xtk:sessionInfo** schema.
-* Beheerdersmachtigingen zijn nu nodig om de **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** functies.
+* Beheerdersmachtigingen zijn nu nodig om de **`xtk:builder:EvaluateJavaScript`** en **`xtk:builder:EvaluateJavaScriptTemplate`** functies.
 
 Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de **admin** machtiging:
 
@@ -461,7 +461,7 @@ Er zijn drie manieren om een conflict op te lossen:
 
   >[!IMPORTANT]
   >
-  >Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
+  Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
@@ -490,7 +490,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
 $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 ```
 
-## Interaction {#interaction}
+## Interactie {#interaction}
 
 ### Vereisten {#prerequisites}
 
@@ -508,13 +508,13 @@ In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in 
 
 >[!IMPORTANT]
 >
->Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
+Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
 Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in het dialoogvenster **Migratie** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** velden). De inhoud in het dialoogvenster **NmsEmailOfferView** tabel is verplaatst naar de aanbiedingstabel.
 
 >[!NOTE]
 >
->Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
+Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 
    >[!NOTE]
    >
-   >De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
+   De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
 
 ## Rapporten {#reports}
 
@@ -630,7 +630,7 @@ Alle standaardrapporten gebruiken momenteel de renderingengine v6.x. Als u JavaS
 -->
 Als u van de nieuwe rapportfuncties wilt profiteren, moet u rapporten opnieuw publiceren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Wat de uitvoer van PDF betreft, als u specifiek manuscript voor Open Office had toegevoegd, zal dit niet meer met de nieuwe de uitvoermotor van de PDF (PhantomJS) werken.
 
-## Webapplicaties {#web-applications}
+## Webtoepassingen {#web-applications}
 
 Er zijn twee families voor webtoepassingen:
 

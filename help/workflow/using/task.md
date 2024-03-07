@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Taak
-description: Meer informatie over de activiteit van de taakwerkstroom
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Meer informatie over de taakwerkstroomactiviteit
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '110'
+ht-degree: 10%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->:warning: Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../mrm/using/creating-and-managing-tasks.md)
+>`:warning:` Deze mogelijkheid is alleen beschikbaar in Campaign Classic v7. [Meer informatie](../../mrm/using/creating-and-managing-tasks.md)
 
-In een campagnewerkstroom, **[!UICONTROL Task]** Met activiteit kunt u twee scenario&#39;s opgeven: de eerste als de taak is voltooid en een tweede als de taak niet is voltooid (als deze handmatig als onvolledig is gemarkeerd of als deze vervalt).
+In een campagnewerkstroom, **[!UICONTROL Task]** Met activiteit kunt u twee scenario&#39;s opgeven: de eerste als de taak is voltooid en de tweede als de taak niet is voltooid (als de taak handmatig als onvolledig is gemarkeerd of als deze verloopt).
 
 ![](assets/mrm_task_in_workflow.png)
 
