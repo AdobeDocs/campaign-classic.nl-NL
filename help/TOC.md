@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2549'
 ht-degree: 99%
 
 ---
@@ -824,6 +824,7 @@ ht-degree: 99%
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
+   + [Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing](technotes/using/inbound-sms.md)
    + Upgraden naar IMS{#ims}
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
       + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)
