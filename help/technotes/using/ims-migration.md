@@ -4,9 +4,9 @@ description: Leer hoe u technische operatoren van campagnes kunt migreren naar e
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
+source-git-commit: c63fea4d400440005ecf3733413c346bd4a2fd18
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1744'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de r
 
   Voor API-aanroepen naar de Message Center-instantie(s) moet het productprofiel (hieronder vermeld) worden gemaakt tijdens de upgrade naar Campagne v7.3.5 (of een ander profiel) [Compatibele versie van IMS-migratie](#ims-versions-tech)), of tijdens levering van de instantie. Neem contact op met uw Overgangsmanager of Klantenondersteuning als u het productprofiel niet ziet voordat u de IMS-migratie start. Dit productprofiel heeft de volgende naam:
 
-  `campaign - <your campaign instance> - messagecenter`
+  `campaign - <your campaign marketing instance> - messagecenter`
 
   Als u reeds op IMS gebaseerde authentificatie voor gebruikerstoegang tot Campagne gebruikt, dan zouden de productprofielen nodig voor de API vraag reeds binnen de Admin Console moeten bestaan. Als u een groep van de douaneexploitant binnen Campagne voor de API vraag aan de instantie van de Marketing gebruikt, moet u dat productprofiel binnen de Admin Console tot stand brengen.
 
@@ -116,9 +116,9 @@ When the API has been successfully connected, you can access the newly generated
 
 Zoals beschreven in de sectie Voorwaarden moet u de juiste productprofielen toewijzen die door het project worden gebruikt. In deze stap moet u het productprofiel of de profielen selecteren die moeten worden gebruikt door de technische account die wordt gemaakt.
 
-Als dit technische account wordt gebruikt om API-aanroepen uit te voeren naar de Message Center-instantie, moet u de Adobe selecteren om een productprofiel te maken dat eindigt met `messagecenter`.
+Als deze technische rekening wordt gebruikt om API vraag aan de instantie van het Centrum van het Bericht te maken, zorg ervoor om het het productprofiel van de Adobe te selecteren, beëindigend met berichtcentrum, voor de Instantie van de Marketing verbonden aan het Centrum van het Bericht.
 
-Voor API-aanroepen naar de marketinginstantie(s) selecteert u het productprofiel dat overeenkomt met de instantie en de Operator Group.
+Voor API-aanroepen naar de marketinginstantie(s) selecteert u het productprofiel dat overeenkomt met de instantie en de exploitantgroep, bijvoorbeeld `campaign - <your campaign marketing instance> - Admin`.
 
 Klik op **geconfigureerde API opslaan** onder aan het scherm.
 
@@ -170,232 +170,232 @@ U moet nu een update uitvoeren van de API-integraties, zodat u aanroepen naar Ad
 
 Raadpleeg de onderstaande codevoorbeelden voor meer informatie over de integratiestappen van de API.
 
-* +++ SOAP-aanroep
+>[!BEGINTABS]
 
-  ```
-  curl --location --request POST 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp' \
-  --header 'Content-Type: text/xml; charset=utf-8' \
-  --header 'SOAPAction: xtk:queryDef#ExecuteQuery' \
-  --header 'Authorization: Bearer eyJhw' \
-  --data-raw '<?xml version="1.0" encoding="utf-8"?>
-  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-      <soap:Body>
-          <ExecuteQuery xmlns="urn:xtk:queryDef">
-              <sessiontoken></sessiontoken>
-              <entity>
-                  <queryDef schema="nms:recipient" operation="select">
-                      <!-- fields to retrieve -->
-                          <select>
-                              <node expr="@lastName"/>
-                              <node expr="@email"/>
-                              <node expr="@firstName"/>
-                          </select>
-                          <!-- condition on email -->
-                          <!-- <where><condition expr="@email= '\''joh@com.com'\''"/>
-                      </where> -->
-                  </queryDef>
-              </entity>
-          </ExecuteQuery>
-      </soap:Body>
-  </soap:Envelope>
-  '
-  ```
+>[!TAB SOAP-aanroep]
 
-+++
-
-* +++ SampleCode Java
-
-  ```
-  import java.io.BufferedReader;
-  import java.io.InputStreamReader;
-  import java.io.IOException;
-  import com.google.gson.Gson;
-  import com.google.gson.JsonObject;
-  
-  import com.google.gson.JsonSyntaxException;
-  import org.apache.hc.client5.http.classic.methods.HttpPost;
-  import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
-  import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
-  import org.apache.hc.client5.http.impl.classic.HttpClients;
-  import org.apache.hc.core5.http.HttpEntity;
-  import org.apache.hc.core5.http.io.entity.StringEntity;
-  
-  
-  public class TAAccessToken {
-  public static void main(String[] args) throws IOException {
-      String accessToken = null;
-      CloseableHttpClient httpClient = HttpClients.createDefault();
-      try {
-          HttpPost httpPost = new HttpPost("https://ims-na1.adobelogin.com/ims/token/v3");
-  
-          // Request headers
-          httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
-  
-          String clientId = "<client_id>";
-          String clientSecret = "<client_secret>";
-          String scopes = "<scopes>";
-  
-          // Define the request body
-          String requestBody = "client_id="+clientId+"&client_secret="+clientSecret+"&grant_type=client_credentials&scope="+scopes+"";
-          StringEntity requestEntity = new StringEntity(requestBody);
-          httpPost.setEntity(requestEntity);
-  
-          // Execute the request
-          CloseableHttpResponse response = httpClient.execute(httpPost);
-          try {
-              // Get the response entity
-              HttpEntity entity = response.getEntity();
-              int responseCode = response.getCode();
-  
-              // Print the response
-              if (entity != null) {
-                  BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
-                  String lineImsToken;
-                  StringBuilder responseImsToken = new StringBuilder();
-                  while ((lineImsToken = bufferedReader.readLine()) != null) {
-                      responseImsToken.append(lineImsToken);
-                  }
-  
-                  String jsonString = responseImsToken.toString();
-  
-                  try {
-                      Gson gson = new Gson();
-                      JsonObject jsonObject = gson.fromJson(jsonString, JsonObject.class);
-  
-                      // Get the value of a specific key
-                      accessToken = jsonObject.get("access_token").getAsString();
-                  }
-                  catch (JsonSyntaxException | NullPointerException e) {
-                      System.err.println("Error parsing JSON: " + e.getMessage());
-                      e.printStackTrace();
-                  }
-                  System.out.println("Response Code: " + responseCode);
-                  System.out.println("Response Body: " + accessToken);
-              }
-          } catch (IOException e) {
-              e.printStackTrace();
-          } finally {
-              response.close();
-          }
-      } finally {
-          httpClient.close();
-      }
-  
-      CloseableHttpClient httpClientSoap = HttpClients.createDefault();
-      try {
-          HttpPost httpPostSoap = new HttpPost("https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp");
-  
-          // Request headers
-          httpPostSoap.addHeader("Content-Type", "text/xml; charset=utf-8");
-          httpPostSoap.addHeader("SOAPAction", "xtk:queryDef#ExecuteQuery");
-          httpPostSoap.addHeader("Authorization", "Bearer "+accessToken);
-  
-          // Request body
-          String xmlData = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
-                  "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" +
-                  "  <soap:Body>\n" +
-                  "    <ExecuteQuery xmlns=\"urn:xtk:queryDef\">\n" +
-                  "            <sessiontoken></sessiontoken>\n" +
-                  "            <entity>\n" +
-                  "                <queryDef schema=\"nms:recipient\" operation=\"select\">\n" +
-                  "                    <!-- fields to retrieve -->\n" +
-                  "                    <select>\n" +
-                  "                        <node expr=\"@lastName\"/>\n" +
-                  "                        <node expr=\"@email\"/>\n" +
-                  "                        <node expr=\"@firstName\"/>\n" +
-                  "                    </select>\n" +
-                  "                    <!-- condition on email -->\n" +
-                  "                    <!-- <where><condition expr=\"@email= '\''joh@com.com'\''\"/>\n" +
-                  "                </where> -->\n" +
-                  "                </queryDef>\n" +
-                  "            </entity>\n" +
-                  "        </ExecuteQuery>\n" +
-                  "  </soap:Body>\n" +
-                  "</soap:Envelope>";
-          StringEntity requestEntity = new StringEntity(xmlData);
-          httpPostSoap.setEntity(requestEntity);
-  
-          // Execute the request
-          CloseableHttpResponse response = httpClientSoap.execute(httpPostSoap);
-          try {
-              // Get the response entity
-              HttpEntity entity = response.getEntity();
-  
-              // Print the response
-              if (entity != null) {
-                  BufferedReader bufferedReader = new BufferedReader(new InputStreamReader        (entity.getContent()));
-                      String line;
-                      while ((line = bufferedReader.readLine()) != null) {
-                          System.out.println(line);
-                      }
-                  }
-              } catch (IOException e) {
-                  e.printStackTrace();
-              } finally {
-                  response.close();
-              }
-          } finally {
-              httpClientSoap.close();
-          }
-      }
-  }
-  ```
-
-+++
-
-* +++ SampleCodePython
-
-  ```
-  import requests
-  
-  oauth_url = 'https://ims-na1.adobelogin.com/ims/token/v3'
-  data = {
-      'grant_type': 'client_credentials',
-      'scope': '<scopes>',
-      'client_id': '<client_id>',
-      'client_secret': '<client_secret>'
-  }
-  
-  headers = {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Accept': 'application/json'
-  }
-  response = requests.post(oauth_url, data=data, headers=headers)
-  response = response.json()
-  access_token = response['access_token']
-  
-  url = 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp'
-  headers = {
-      'Content-Type': 'text/xml; charset=utf-8',
-      'SOAPAction': 'xtk:queryDef#ExecuteQuery',
-      'Authorization': 'Bearer '+access_token
-  }
-  xml_data = '''<?xml version="1.0" encoding="utf-8"?>
-  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+```
+curl --location --request POST 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp' \
+--header 'Content-Type: text/xml; charset=utf-8' \
+--header 'SOAPAction: xtk:queryDef#ExecuteQuery' \
+--header 'Authorization: Bearer eyJhw' \
+--data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-      <ExecuteQuery xmlns="urn:xtk:queryDef">
-          <sessiontoken></sessiontoken>
-          <entity>
-              <queryDef schema="nms:recipient" operation="select">
-                  <!-- fields to retrieve -->
-                  <select>
-                      <node expr="@lastName"/>
-                      <node expr="@email"/>
-                      <node expr="@firstName"/>
-                  </select>
-                  <!-- condition on email -->
-                  <!-- <where><condition expr="@email= '\''joh@com.com'\''"/>
-              </where> -->
-              </queryDef>
-          </entity>
-      </ExecuteQuery>
+    <ExecuteQuery xmlns="urn:xtk:queryDef">
+            <sessiontoken></sessiontoken>
+            <entity>
+                <queryDef schema="nms:recipient" operation="select">
+                    <!-- fields to retrieve -->
+                    <select>
+                        <node expr="@lastName"/>
+                        <node expr="@email"/>
+                        <node expr="@firstName"/>
+                    </select>
+                    <!-- condition on email -->
+                    <!-- <where><condition expr="@email= '\''joh@com.com'\''"/>
+                </where> -->
+                </queryDef>
+            </entity>
+        </ExecuteQuery>
   </soap:Body>
-  </soap:Envelope>
-  '''
-  response = requests.post(url, headers=headers, data=xml_data)
-  ```
+</soap:Envelope>
+'
+```
 
-+++
+>[!TAB  SampleCode Java]
+
+```javascript
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+ 
+import com.google.gson.JsonSyntaxException;
+import org.apache.hc.client5.http.classic.methods.HttpPost;
+import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
+import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
+import org.apache.hc.client5.http.impl.classic.HttpClients;
+import org.apache.hc.core5.http.HttpEntity;
+import org.apache.hc.core5.http.io.entity.StringEntity;
+ 
+ 
+public class TAAccessToken {
+    public static void main(String[] args) throws IOException {
+        String accessToken = null;
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        try {
+            HttpPost httpPost = new HttpPost("https://ims-na1.adobelogin.com/ims/token/v3");
+ 
+            // Request headers
+            httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
+ 
+            String clientId = "<client_id>";
+            String clientSecret = "<client_secret>";
+            String scopes = "<scopes>";
+ 
+            // Define the request body
+            String requestBody = "client_id="+clientId+"&client_secret="+clientSecret+"&grant_type=client_credentials&scope="+scopes+"";
+            StringEntity requestEntity = new StringEntity(requestBody);
+            httpPost.setEntity(requestEntity);
+ 
+            // Execute the request
+            CloseableHttpResponse response = httpClient.execute(httpPost);
+            try {
+                // Get the response entity
+                HttpEntity entity = response.getEntity();
+                int responseCode = response.getCode();
+ 
+                // Print the response
+                if (entity != null) {
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
+                    String lineImsToken;
+                    StringBuilder responseImsToken = new StringBuilder();
+                    while ((lineImsToken = bufferedReader.readLine()) != null) {
+                        responseImsToken.append(lineImsToken);
+                    }
+ 
+                    String jsonString = responseImsToken.toString();
+ 
+                    try {
+                        Gson gson = new Gson();
+                        JsonObject jsonObject = gson.fromJson(jsonString, JsonObject.class);
+ 
+                        // Get the value of a specific key
+                        accessToken = jsonObject.get("access_token").getAsString();
+                    }
+                    catch (JsonSyntaxException | NullPointerException e) {
+                        System.err.println("Error parsing JSON: " + e.getMessage());
+                        e.printStackTrace();
+                    }
+                    System.out.println("Response Code: " + responseCode);
+                    System.out.println("Response Body: " + accessToken);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                response.close();
+            }
+        } finally {
+            httpClient.close();
+        }
+ 
+        CloseableHttpClient httpClientSoap = HttpClients.createDefault();
+        try {
+            HttpPost httpPostSoap = new HttpPost("https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp");
+ 
+            // Request headers
+            httpPostSoap.addHeader("Content-Type", "text/xml; charset=utf-8");
+            httpPostSoap.addHeader("SOAPAction", "xtk:queryDef#ExecuteQuery");
+            httpPostSoap.addHeader("Authorization", "Bearer "+accessToken);
+ 
+            // Request body
+            String xmlData = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+                    "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" +
+                    "  <soap:Body>\n" +
+                    "    <ExecuteQuery xmlns=\"urn:xtk:queryDef\">\n" +
+                    "            <sessiontoken></sessiontoken>\n" +
+                    "            <entity>\n" +
+                    "                <queryDef schema=\"nms:recipient\" operation=\"select\">\n" +
+                    "                    <!-- fields to retrieve -->\n" +
+                    "                    <select>\n" +
+                    "                        <node expr=\"@lastName\"/>\n" +
+                    "                        <node expr=\"@email\"/>\n" +
+                    "                        <node expr=\"@firstName\"/>\n" +
+                    "                    </select>\n" +
+                    "                    <!-- condition on email -->\n" +
+                    "                    <!-- <where><condition expr=\"@email= '\''joh@com.com'\''\"/>\n" +
+                    "                </where> -->\n" +
+                    "                </queryDef>\n" +
+                    "            </entity>\n" +
+                    "        </ExecuteQuery>\n" +
+                    "  </soap:Body>\n" +
+                    "</soap:Envelope>";
+            StringEntity requestEntity = new StringEntity(xmlData);
+            httpPostSoap.setEntity(requestEntity);
+ 
+            // Execute the request
+            CloseableHttpResponse response = httpClientSoap.execute(httpPostSoap);
+            try {
+                // Get the response entity
+                HttpEntity entity = response.getEntity();
+ 
+                // Print the response
+                if (entity != null) {
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
+                    String line;
+                    while ((line = bufferedReader.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                response.close();
+            }
+        } finally {
+            httpClientSoap.close();
+        }
+ 
+    }
+}
+```
+
+>[!TAB SampleCodePython]
+
+```python
+import requests
+ 
+oauth_url = 'https://ims-na1.adobelogin.com/ims/token/v3'
+data = {
+    'grant_type': 'client_credentials',
+    'scope': '<scopes>',
+    'client_id': '<client_id>',
+    'client_secret': '<client_secret>'
+}
+ 
+headers = {
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Accept': 'application/json'
+}
+response = requests.post(oauth_url, data=data, headers=headers)
+response = response.json()
+access_token = response['access_token']
+ 
+ 
+url = 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp'
+headers = {
+    'Content-Type': 'text/xml; charset=utf-8',
+    'SOAPAction': 'xtk:queryDef#ExecuteQuery',
+    'Authorization': 'Bearer '+access_token
+}
+xml_data = '''<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ExecuteQuery xmlns="urn:xtk:queryDef">
+            <sessiontoken></sessiontoken>
+            <entity>
+                <queryDef schema="nms:recipient" operation="select">
+                    <!-- fields to retrieve -->
+                    <select>
+                        <node expr="@lastName"/>
+                        <node expr="@email"/>
+                        <node expr="@firstName"/>
+                    </select>
+                    <!-- condition on email -->
+                    <!-- <where><condition expr="@email= '\''joh@com.com'\''"/>
+                </where> -->
+                </queryDef>
+            </entity>
+        </ExecuteQuery>
+  </soap:Body>
+</soap:Envelope>
+'''
+response = requests.post(url, headers=headers, data=xml_data)
+```
+
+>[!ENDTABS]
 
 Raadpleeg voor meer informatie [Adobe Developer Console-verificatiedocumentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
