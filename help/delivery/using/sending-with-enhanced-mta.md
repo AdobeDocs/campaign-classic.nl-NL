@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 3%
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
-# Verzenden met de Enhanced MTA {#sending-with-enhanced-mta}
+# Verzenden met de verbeterde MTA {#sending-with-enhanced-mta}
 
 De **Adobe Campaign Enhanced MTA** (De Agent van de Overdracht van de Post) verstrekt een bevorderde verzendende infrastructuur die voor betere levering, reputatie, productie, rapportering, stuitbehandeling, IP oprijplaat en verbinding het plaatsen beheer toestaat.
 
@@ -109,13 +109,17 @@ De stuitende kwalificaties in de campagne **[!UICONTROL Delivery log qualificati
 
 Zie voor meer informatie over stuiteren [deze sectie](understanding-delivery-failures.md#bounce-mail-qualification).
 
+### Levering
+
+Een levering kan niet worden gestopt zodra het is overgebracht naar Verbeterde MTA - alhoewel het met wordt getoond **[!UICONTROL Stopped]** status in Campagne.
+
 ### Leveringsdoorvoer
 
 De grafiek van de productie van de Levering van de Campagne zal niet meer de productie aan uw e-mailontvangers tonen. Die grafiek zal nu de productiesnelheid voor het relais van uw berichten van Campaign over aan Verbeterde MTA tonen.
 
 Voor meer op de leveringsproductie, zie [deze sectie](../../reporting/using/global-reports.md#delivery-throughput).
 
-### Hernieuwde pogingen
+### Opnieuw
 
 De instellingen voor Opnieuw proberen in de levering worden niet meer gebruikt door de campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
@@ -127,7 +131,7 @@ De geldigheidsperiode die in uw campagneleveringen wordt ingesteld, wordt alleen
 
 Bijvoorbeeld, als de geldigheidsperiode aan de standaardwaarde van 5 dagen in Campagne wordt geplaatst, zullen de zachte-stuiterende berichten in de Verbeterde MTA hertry rij gaan en slechts 3.5 dagen worden opnieuw geprobeerd vanaf toen dat bericht Verbeterde MTA bereikte. In dat geval wordt de waarde die is ingesteld in Campaign niet gebruikt.
 
-Wanneer een bericht gedurende 3,5 dagen in de wachtrij van de Enhanced MTA heeft gestaan en niet is geleverd, treedt er een time-out op en zal de status van het bericht worden bijgewerkt van **[!UICONTROL Sent]** naar **[!UICONTROL Failed]** in de leveringslogboeken.
+Zodra een bericht 3.5 dagen in de Verbeterde MTA rij is geweest en niet heeft geleverd, zal het uit uit tijd en zijn status zal bijgewerkt van **[!UICONTROL Sent]** tot **[!UICONTROL Failed]** in de leveringslogboeken.
 
 Zie voor meer informatie over de geldigheidsperiode [deze sectie](steps-sending-the-delivery.md#defining-validity-period).
 
