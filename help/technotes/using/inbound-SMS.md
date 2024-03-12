@@ -4,7 +4,7 @@ title: Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing
 description: Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Een extensie toevoegen aan de `nms:inSMS` schema op uw exemplaar van de Marketing. De extensie voegt een nieuw kenmerk toe aan de `nms:inSMS` schema en registreer de primaire sleutel van het inSMS- verslag die uit de Midden-sourcing instantie komt bij.
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    Vervang het onderstaande blok. Dit script kan variëren als u deze code eerder hebt aangepast.
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    Met het volgende nieuwe douanescript om inSMS gegevens bij te werken die op een samengestelde sleutel worden gebaseerd, die de primaire sleutel van het middelsourcingsverslag en externe rekening identiteitskaart van het Verkoop SMS combineren die verplettert.
-Volg de onderstaande voorwaarden:
+
+   Volg de onderstaande voorwaarden:
 
    * Voer de werkelijke waarde in voor `<EXTERNAL_ACCOUNT_ID>`, bijvoorbeeld `var iExtAccountId=72733155`.
    * Zorg ervoor dat u de volgende elementen in het aangepaste script opneemt:
@@ -111,7 +112,7 @@ Volg de onderstaande voorwaarden:
 
    Het script stelt de aanwijzer van de primaire sleutel opnieuw in op 24 uur eerder. De workflow probeert alle InSMS-gegevens van de instantie Midden-sourcing binnen de voorafgaande 24 uur opnieuw te verwerken en eventuele ontbrekende gegevens aan de instantie Marketing toe te voegen.
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
