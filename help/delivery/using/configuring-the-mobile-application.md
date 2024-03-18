@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -103,21 +103,24 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** om uitgebreide 
 
 1. Selecteer een van de pictogrammen voor de uit-van-de-doos in het menu **[!UICONTROL Application icon]** om de mobiele toepassing in uw service aan te passen.
 
-1. Selecteer het **[!UICONTROL Authentication mode]**. U kunt de verificatiemodus altijd later wijzigen in het dialoogvenster **[!UICONTROL Certificate]** van uw mobiele toepassing.
+1. Selecteer **[!UICONTROL Authentication mode]**.
+
+   ![](assets/nmac_ios_5.png)
+
+   Er zijn twee modi beschikbaar:
+
+   * (Aanbevolen) **[!UICONTROL Token-based authentication]**: Vul de verbindingsinstellingen van APNs in **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** en **[!UICONTROL Bundle Id]** Selecteer vervolgens uw p8-certificaat door op **[!UICONTROL Enter the private key...]**. Voor meer informatie **[!UICONTROL Token-based authentication]**, zie [Apple-documentatie](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
    * **[!UICONTROL Certificate-based authentication]**: Klikken **[!UICONTROL Enter the certificate...]**  Selecteer vervolgens de p12-toets en voer het wachtwoord in dat de ontwikkelaar van de mobiele toepassing heeft opgegeven.
-   * **[!UICONTROL Token-based authentication]**: De verbindingsinstellingen invullen **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** Selecteer vervolgens uw p8-certificaat door op **[!UICONTROL Enter the private key]**. Voor meer informatie **[!UICONTROL Token-based authentication]**, zie [Apple-documentatie](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
-   > Adobe raadt u aan **[!UICONTROL Token-based authentication]** voor uw iOS-configuratie omdat deze verificatiemodus beter is beveiligd en niet aan certificaatvervaldatum is gebonden.
+   > Adobe raadt u aan **[!UICONTROL Token-based authentication]** voor uw iOS-configuratie aangezien de P8-verificatietoetsen nieuwer en veiliger zijn.
 
-   ![](assets/nmac_ios_4.png)
-
-1. U kunt op **[!UICONTROL Test the connection]** om er zeker van te zijn dat het een succes is.
+1. Gebruik de **[!UICONTROL Test the connection]** knoop om uw configuratie te bevestigen.
 
 1. Klikken **[!UICONTROL Next]** om de productietoepassing te configureren en dezelfde stappen uit te voeren als hierboven beschreven.
 
-   ![](assets/nmac_ios_5.png)
 
 1. Klik op **[!UICONTROL Finish]**.
 
