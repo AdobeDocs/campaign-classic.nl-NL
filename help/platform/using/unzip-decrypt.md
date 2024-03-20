@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Vervolgens kunt u de gewenste voorverwerkingsopdrachten in uw workflows gebruike
 1. Een **[!UICONTROL File transfer]** activiteit in uw werkstroom.
 1. Voeg een **[!UICONTROL Data loading (file)]** en definieert u de bestandsindeling.
 1. Schakel de optie **[!UICONTROL Pre-process the file]** in.
-1. Geef de voorverwerkingsopdracht op die u wilt toepassen.
+1. Selecteer de voorverwerkingsopdracht die u wilt toepassen.
 1. Voeg andere activiteiten toe om gegevens die uit het bestand komen te beheren.
 1. Sla de workflow op en voer deze uit.
 
@@ -87,17 +87,15 @@ De volgende stappen voor dit gebruik zijn nodig:
 
 1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. Globale concepten over hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading-file.md).
 
-   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer de optie **[!UICONTROL Pre-process the file]** en kopieert en plakt u deze decoderingsopdracht in het dialoogvenster **[!UICONTROL Command]** field:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer de optie **[!UICONTROL Pre-process the file]** en selecteert u vervolgens **[!UICONTROL Decrypt]** van de **[!UICONTROL Command]** vervolgkeuzelijst:
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >In dit voorbeeld, gebruiken wij passphrase die door gebrek door Controlebord wordt gebruikt, dat &quot;passphrase&quot;is.
+   >Als de beschikbare opdrachten moeten worden gewijzigd, kunt u [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de preProcessCommand-instellingen aan te passen.
    >
-   >Als u in het verleden al GPG-sleutels op uw exemplaar hebt geïnstalleerd via een verzoek van de klantenservice, is de passphrase mogelijk gewijzigd en is deze standaard anders.
+   >Als u met een hybride plaatsing werkt, kunt u deze bevelen direct van het dossier van de serverconfiguratie (serverConf.xml) vormen. [Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Klikken **[!UICONTROL OK]** om de activiteitenconfiguratie te bevestigen.
 
