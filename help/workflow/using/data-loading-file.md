@@ -5,10 +5,10 @@ description: Meer informatie over de activiteiten in de workflow voor het laden 
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 15%
+source-wordcount: '1147'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,17 @@ In het bovenste gedeelte van het configuratievenster voor deze activiteit kunt u
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. Selecteer de **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg)
+## Voorverwerkingsstadium toepassen {#pre-processing}
+
+U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. [Leer hoe u een bestand decodeert of decodeert voordat u het verwerkt](../../platform/using/unzip-decrypt.md).
+
+Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg)
 
 ![](assets/preprocessing-dataloading.png)
 
-Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>Als u met een hybride of op-gebouw plaatsing werkt, kunnen de pre-verwerkingsbevelen niet uit-van-de-doos werken, aangezien hun standaardconfiguratie &quot;zcat&quot;gebruikt, die niet beschikbaar op Vensters is. In dat geval moet u de **preProcessCommand** in het serverconfiguratiebestand (serverConf.xml) aan uw wensen te voldoen. [Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## De bestandsindeling definiëren {#defining-the-file-format}
 
