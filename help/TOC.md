@@ -7,9 +7,9 @@ user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Nieuwste release](rn/using/latest-release.md)
    + Eerdere releases {#previous-releases}
-      + [2022 introducties](rn/using/release-2022.md)
+      + [Releases van 2022](rn/using/release-2022.md)
       + [Releases van 2021](rn/using/release-2021.md)
       + [[!DNL Gold Standard]-releases ](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -642,7 +642,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -745,7 +745,7 @@ ht-degree: 99%
       + [Schemastructuur](configuration/using/schema-structure.md)
       + [Databasetoewijzing](configuration/using/database-mapping.md)
       + [Sleutelbeheer](configuration/using/database-keys.md)
-      + [Koppelingsbeheer](configuration/using/database-links.md)
+      + [Beheer van koppeling](configuration/using/database-links.md)
       + Elementen en kenmerken {#elements-attributes}
          + [Inleiding](configuration/using/schema-introduction.md)
          + [Kenmerk](configuration/using/schema/attribute.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
-   + [Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing](technotes/using/inbound-SMS.md)
+   + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-SMS.md)
    + Upgraden naar IMS{#ims}
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
       + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)

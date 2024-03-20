@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _Woensdag 5 december 2023_
 
 * Daarnaast raadt Adobe Campaign bij het versterken van het beveiligings- en verificatieproces sterk aan om de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe. Ontdek in [deze technische opmerking](../../technotes/using/migrate-users-to-ims.md) hoe u uw operators kunt migreren.
 
-* Wanneer een webformulier de **Publicatie in behandeling** status, wordt het niet automatisch live. Om veiligheidskwesties te verhinderen, moet het worden gepubliceerd alvorens het wordt **Online** en is toegankelijk via de URL van het webformulier in een webbrowser. [Meer informatie](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* Als een webformulier de status **Publicatie in behandeling** heeft, wordt het niet automatisch live. Om beveiligingsproblemen te voorkomen, moet het worden gepubliceerd voordat het **Online** wordt en toegankelijk is via de webformulier-URL in een webbrowser. [Meer informatie](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Patches {#release-7-3-5-patches}
 
