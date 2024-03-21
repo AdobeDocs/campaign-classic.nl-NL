@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: a6113868f5e22583c8017b1134f69d66b92e92f1
 workflow-type: tm+mt
-source-wordcount: '3699'
-ht-degree: 100%
+source-wordcount: '3716'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,10 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## 2024
+
+### Maart 2024 {#mar-2024}
+
+De sectie over de configuratie van mobiele apps is bijgewerkt voor een op iOS-tokens gebaseerde verbinding met APN&#39;s. [Meer informatie](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### Januari 2024 {#jan-2024}
 
