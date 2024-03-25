@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 18%
+source-wordcount: '176'
+ht-degree: 14%
 
 ---
 
@@ -25,6 +25,11 @@ Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console met hun
 * De verbinding wordt bewaard wanneer het gebruiken van Adobe Campaign met verschillende integraties.
 * Beveiligd beleid voor wachtwoordbeheer dan native aanmelding/wachtwoord.
 * Gebruik van Federated ID-accounts (externe id-provider).
+
+>[!IMPORTANT]
+>
+> In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd). **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
+
 
 <!--
 >[!IMPORTANT]

@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Web Analytics
+title: Webanalyse
 description: Meer informatie over het pakket Webanalyse
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 3%
+source-wordcount: '185'
+ht-degree: 4%
 
 ---
 
 
-# Web Analytics{#web-analytics}
+# Webanalyse{#web-analytics}
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Webanalytische connectors** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../platform/using/adobe-analytics-connector.md).
+De hieronder beschreven workflows worden geïnstalleerd met de **Webanalytische connectors** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../platform/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -28,12 +28,12 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Webanalytische 
   <tr> 
    <td> <span class="uicontrol">Verzending van indicatoren en campagnerekenmerken</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de Adobe® Analytics-connector. De betrokken indicatoren zijn als volgt: <strong>Verzonden</strong> (Verzonden), <strong>Totaal aantal openingen</strong> (iTotalRecipientOpen), <strong>Totaal aantal ontvangers waarop is geklikt</strong> (iTotalRecipientClick), <strong>Fouten</strong> (iError), <strong>Uitschakelen</strong> (opt-out) (iOptOut).<br /> </td> 
+   <td> Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de connector voor Adobe® Analytics. De betrokken indicatoren zijn als volgt: <strong>Verzonden</strong> (Verzonden), <strong>Totaal aantal openingen</strong> (iTotalRecipientOpen), <strong>Totaal aantal ontvangers waarop is geklikt</strong> (iTotalRecipientClick), <strong>Fouten</strong> (iError), <strong>Uitschakelen</strong> (opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identificatie van omgezette contactpersonen</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Deze workflow indexeert bezoekers van de site die hun aankoop hebben voltooid na een campagne voor het opnieuw op de markt brengen van producten. De gegevens die door deze workflow worden hersteld, zijn toegankelijk in het dialoogvenster <span class="uicontrol">Verslag over de hermarketing van efficiëntie</span> (Zie deze <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> page</a>). <br /> </td> 
+   <td> Deze workflow indexeert bezoekers van de site die hun aankoop hebben voltooid na een campagne voor het opnieuw op de markt brengen van producten. De gegevens die door deze workflow worden hersteld, zijn toegankelijk in het dialoogvenster <span class="uicontrol">Verslag over de hermarketing van efficiëntie</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Gebeurtenis leegmaken</span> <br /> </td> 

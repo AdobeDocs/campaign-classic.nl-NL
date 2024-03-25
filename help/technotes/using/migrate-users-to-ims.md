@@ -2,10 +2,10 @@
 title: Campagnebeheerders migreren naar Adobe Identity Management System (IMS)
 description: Leer hoe u campagneoperatoren kunt migreren naar Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 1879fe179381be654bad876de2423d25049db43c
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 0%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 0%
 
 Als onderdeel van de inspanning om veiligheid en authentificatieproces te versterken, adviseert Adobe Campaign hoogst om de wijze van de eindgebruikerauthentificatie van login/wachtwoord inheemse authentificatie aan het Systeem van AdobeIdentity Management (IMS) te migreren. Alle exploitanten moeten [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} om verbinding te maken met Campagne.
 
-In Campagne v8 is het niet langer toegestaan verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd). **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
-
-
+In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd). **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
 
 ## Wat is er veranderd?{#move-to-ims-changes}
 
@@ -131,7 +129,7 @@ Adobe raadt alle gebruikers sterk aan zich af te melden tijdens het migratievens
 
 Deze migratie kent twee aspecten: migratie van eindgebruikers (plus productprofielen) en migratie van technische gebruikers (gebruikt in API&#39;s in uw aangepaste code).
 
-Als al uw gebruikers (campagneexploitanten) op IMS zijn, zult u nog steeds uw Vertegenwoordiger/Klantenondersteuning van de Adobe moeten contacteren om de Migratie van de Profielen van het Product te plannen. U zult ook Technische gebruikers moeten migreren u in douanecode zou kunnen gebruikt. Meer informatie in [deze pagina](ims-migration.md).
+Als al uw gebruikers (campagneexploitanten) op IMS zijn, zult u nog steeds uw Vertegenwoordiger/Klantenondersteuning van de Adobe moeten contacteren om de Migratie van de Profielen van het Product te plannen. U zult ook Technische gebruikers moeten migreren u in douanecode zou kunnen gebruikt. Meer informatie vindt u [op deze pagina](ims-migration.md).
 
 ### Hoe te om het de authentificatietype van uw Operatoren te bekijken?
 

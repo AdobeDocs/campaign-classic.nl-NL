@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Bij privacybeheer is het belangrijk om te bepalen welke gegevens met zorg moeten
 * **Persoonsgegevens** omvatten informatie aan de hand waarvan een levende persoon direct of indirect kan worden geïdentificeerd.
 * **Gevoelige persoonsgegevens** zijn gegevens over etnische afkomst, politieke opvattingen, godsdienstige overtuiging, criminele achtergrond, genetische informatie, gezondheidsgegevens, seksuele voorkeur, biometrische informatie en lidmaatschap van een vakbond.
 
-Bij de integratie van Campaign met andere Experience Cloud-oplossingen waarbij doelgroepen kunnen worden overgezet van het ene systeem naar het andere zoals [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), [Audience Manager of de People-kernservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) of met andere oplossingen via [CRM-connectoren](../../platform/using/crm-connectors.md), moet u extra aandacht besteden aan de bescherming van persoonsgegevens.
+Bij de integratie van Campaign met andere Experience Cloud-oplossingen waarbij doelgroepen kunnen worden overgezet van het ene systeem naar het andere zoals [Adobe Analytics](../../platform/using/gs-aa.md), [Audience Manager of de People-kernservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) of met andere oplossingen via [CRM-connectoren](../../platform/using/crm-connectors.md), moet u extra aandacht besteden aan de bescherming van persoonsgegevens.
 
 De [belangrijkste verordeningen](#privacy-regulations) betreffen de verschillende entiteiten die gegevens als volgt beheren:
 * Een **gegevenscontroller** is de instantie die de middelen en het doel van het verzamelen, gebruiken en delen van persoonsgegevens bepaalt.
@@ -100,7 +100,7 @@ Dit zijn de verschillende persona’s die in dit voorbeeld worden gebruikt:
 
 * **Laura** is de **Betrokkene**. Zij is de ontvanger die berichten van de luchtvaartmaatschappij krijgt. Laura vliegt misschien wel vaak (Frequent Flyer), maar ze zou op een gegeven moment kunnen besluiten dat ze geen gepersonaliseerde reclame- of marketingberichten van de luchtvaartmaatschappij meer wil. Ze zal de luchtvaartmaatschappij (volgens hun procedure) vragen haar Frequent-Flyernummer te verwijderen.
 
-* **Anne** is **Gegevenscontroller** bij de luchtvaartmaatschappij. Ze ontvangt het verzoek van Laura, haalt handige ID’s op die zijn aangevraagd om de betrokkene te identificeren en verzendt het verzoek in Adobe Campaign.
+* **Anne** is **Gegevenscontroller** bij de luchtvaartmaatschappij. Ze ontvangt het verzoek van Laura, haalt nuttige id&#39;s op die gevraagd zijn om het onderwerp te identificeren en verzendt het verzoek in Adobe Campaign.
 
 * **Adobe Campaign** is de **Gegevensprocessor**.
 

@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '2558'
+ht-degree: 99%
 
 ---
 
@@ -107,8 +107,9 @@ ht-degree: 100%
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics-connector{#analytics-connector}
-         + [Adobe Analytics-connector provisioning](platform/using/adobe-analytics-provisioning.md)
+         + [Aan de slag met Adobe Analytics Connector](platform/using/gs-aa.md)
          + [De integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Adobe Analytics-connector provisioning](platform/using/adobe-analytics-provisioning.md)
          + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
@@ -642,7 +643,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

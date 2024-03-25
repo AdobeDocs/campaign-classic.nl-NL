@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 8%
+source-wordcount: '1794'
+ht-degree: 7%
 
 ---
 
@@ -48,7 +48,7 @@ De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts
 
 ## Campagne-specifieke externe rekeningen
 
-### Niet bezorgde mails {#bounce-mails-external-account}
+### Stuitberichten {#bounce-mails-external-account}
 
 De **Stuitberichten** externe account geeft de externe POP3-account aan die moet worden gebruikt voor verbinding met de e-mailservice. Voor meer informatie over deze externe account raadpleegt u deze [page](../../workflow/using/inbound-emails.md).
 
@@ -288,13 +288,13 @@ Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet
 
 Raadpleeg voor meer informatie over deze configuratie [deze pagina](../../integrations/using/configuring-ims.md).
 
-## Web Analytics {#web-analytics-external-account}
+## Webanalyse {#web-analytics-external-account}
 
 De **[!UICONTROL Web Analytics]** Met een externe account kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics-connector worden geleverd.
 
 ![](assets/ext_account_10.png)
 
-Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/adobe-analytics-connector.md#external-account-classic) voor meer informatie.
+Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/gs-aa.md) voor meer informatie.
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
