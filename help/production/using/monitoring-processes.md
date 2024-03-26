@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Processen opvolgen
+title: Monitoringprocessen
 description: Leer hoe u Campagne-processen kunt controleren
 feature: Monitoring
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
@@ -11,12 +11,12 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3623'
+source-wordcount: '3649'
 ht-degree: 0%
 
 ---
 
-# Processen opvolgen{#monitoring-processes}
+# Monitoringprocessen{#monitoring-processes}
 
 
 De toepassingsserver en de omleidingsserver (**bijhouden**) kan handmatig of automatisch worden gecontroleerd.
@@ -436,7 +436,7 @@ Adobe Campaign maakt verschillende implementatieconfiguraties mogelijk (voor mee
  <thead> 
   <tr> 
    <th> Type implementatie </th> 
-   <th> Controleren </th> 
+   <th> Toezicht </th> 
   </tr> 
  </thead> 
  <tbody> 

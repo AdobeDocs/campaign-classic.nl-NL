@@ -2,13 +2,13 @@
 product: campaign
 title: Workflowuitvoering controleren
 description: Workflowuitvoering controleren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 0%
+source-wordcount: '2025'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ Deze sectie geeft informatie over hoe te om de uitvoering van uw werkschema&#39;
 
 Er is ook een gebruiksscenario beschikbaar voor het maken van een workflow waarmee u de status kunt controleren van een set werkstromen die worden gepauzeerd, gestopt of met fouten. [deze sectie](supervising-workflows.md#supervising-workflows).
 
-Daarnaast kunnen beheerders van de instantie de opdracht **Audittrail** om activiteiten en laatste wijzigingen te controleren die aan werkschema&#39;s worden gedaan, de staat van uw werkschema&#39;s. Raadpleeg voor meer informatie hierover [Campaign Classic v7-productiehandleiding](../../production/using/audit-trail.md).
+Daarnaast kunnen beheerders van de instantie de opdracht **Audittrail** om activiteiten en laatste wijzigingen te controleren aan werkschema&#39;s, de staat van uw werkschema&#39;s. Raadpleeg voor meer informatie hierover [Campaign Classic v7-productiegids](../../production/using/audit-trail.md).
 
-Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [Campaign Classic v7-productiehandleiding](../../production/using/monitoring-guidelines.md).
+Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [Campaign Classic v7-productiegids](../../production/using/monitoring-guidelines.md).
 
 ## Voortgang weergeven {#displaying-progress}
 
@@ -40,25 +40,25 @@ Als deze optie is geselecteerd, worden uitgevoerde activiteiten in blauw weergeg
 
 Het logbestand bevat de geschiedenis of audittrail van de workflow. Hiermee worden alle gebruikersacties, alle uitgevoerde bewerkingen en aangetroffen fouten geregistreerd. U kunt:
 
-* Selecteer **[!UICONTROL Tracking]** in het detail. Deze lijst bevat alle workflowberichten.
+* Selecteer de **[!UICONTROL Tracking]** in het detail. Deze lijst bevat alle workflowberichten.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
-* Filter de logboekberichten door activiteit. Klik op **[!UICONTROL Display the tasks and the log]** op de werkbalk boven het diagram om het **[!UICONTROL Log]** en **[!UICONTROL Tasks]** tabs onder het diagram. Selecteer een activiteit om alle verwante berichten te bekijken. Deze lijst bevat alle berichten als er geen activiteit is geselecteerd.
+* Filter de logboekberichten door activiteit. Om dit te doen, klik **[!UICONTROL Display the tasks and the log]** op de werkbalk boven het diagram om het **[!UICONTROL Log]** en **[!UICONTROL Tasks]** tabs onder het diagram. Selecteer een activiteit om alle verwante berichten te bekijken. Deze lijst bevat alle berichten als er geen activiteit is geselecteerd.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Klik op de achtergrond van het diagram om de selectie van alle elementen op te heffen.
+  >[!NOTE]
+  >
+  >Klik op de achtergrond van het diagram om de selectie van alle elementen op te heffen.
 
-* Alleen die berichten weergeven die zijn gekoppeld aan een bepaalde taak. Selecteer hiervoor de optie **[!UICONTROL Tasks]** en selecteert u vervolgens een activiteit in het diagram om de lijst te beperken. Dubbelklik op een taak om de informatie weer te geven; het laatste tabblad in het venster bevat het logboek.
+* Alleen die berichten weergeven die zijn gekoppeld aan een bepaalde taak. Selecteer de optie **[!UICONTROL Tasks]** en selecteert u vervolgens een activiteit in het diagram om de lijst te beperken. Dubbelklik op een taak om de informatie weer te geven. Het laatste tabblad in het venster bevat het logboek.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   De **[!UICONTROL Details...]** kunt u alle aanvullende informatie over de uitvoering van de activiteit weergeven. U kunt bijvoorbeeld de validatieoperator weergeven en, indien van toepassing, de opmerking die ze tijdens de goedkeuring hebben ingevoerd, zoals in het volgende voorbeeld:
+  De **[!UICONTROL Details...]** kunt u alle aanvullende informatie over de uitvoering van de activiteit weergeven. U kunt bijvoorbeeld de validatieoperator weergeven en, indien van toepassing, de opmerking die ze tijdens de goedkeuring hebben ingevoerd, zoals in het volgende voorbeeld:
 
-   ![](assets/new-workflow-display-tasks-activity-details.png)
+  ![](assets/new-workflow-display-tasks-activity-details.png)
 
 >[!NOTE]
 >
@@ -68,21 +68,21 @@ Het logboek toont de chronologische lijst van uitvoeringsberichten met betrekkin
 
 * Logboek van een doelgerichte campagne
 
-   Als een doelcampagne is uitgevoerd, klikt u op de knop **[!UICONTROL Tracking]** om het uitvoeringstraject weer te geven.
+  Als een doelcampagne is uitgevoerd, klikt u op de knop **[!UICONTROL Tracking]** om het uitvoerspoor weer te geven.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Alle campagneberichten worden getoond: uitgevoerde campagnes en waarschuwingen of fouten.
+  Alle campagneberichten worden getoond: campagnes worden uitgevoerd evenals waarschuwingen of fouten.
 
 * Logboek van een activiteit
 
-   U kunt het uitvoeringslogboek en de details van elke activiteit ook bekijken. Er zijn twee manieren om dit te doen:
+  U kunt het uitvoeringslogboek en de details van elke activiteit ook bekijken. Er zijn twee manieren om dit te doen:
 
    1. Selecteer de doelactiviteit en klik op de knop **[!UICONTROL Display the tasks and the log]** pictogram.
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      In de onderste sectie van het diagram ziet u twee tabbladen: Logboek en taken.
+      De onderste sectie van het diagram toont twee lusjes: Logboek en Taken.
 
       De activiteiten die binnen het diagram worden geselecteerd handelen als filters op het logboek en de taaklijst.
 
@@ -96,13 +96,13 @@ Het logboek toont de chronologische lijst van uitvoeringsberichten met betrekkin
 
 ## De logbestanden leegmaken {#purging-the-logs}
 
-Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via **[!UICONTROL File > Actions]** of door op de knop **[!UICONTROL Actions]** in de werkbalk boven de lijst. Selecteer **[!UICONTROL Purge history]**. De opties in het dialoogvenster **[!UICONTROL Actions]** wordt gedetailleerd in het dialoogvenster [Werkbalk Handelingen](starting-a-workflow.md) sectie.
+De historie van de workflow wordt niet automatisch gewist: alle berichten worden standaard bijgehouden. De geschiedenis kan worden gewist via **[!UICONTROL File > Actions]** of door op de knop **[!UICONTROL Actions]** in de werkbalk boven de lijst. Selecteer **[!UICONTROL Purge history]**. De opties in het dialoogvenster **[!UICONTROL Actions]** wordt gedetailleerd in het dialoogvenster [Werkbalk Handelingen](starting-a-workflow.md) sectie.
 
 ![](assets/purge_historique.png)
 
 ## Worktables and workflow schema {#worktables-and-workflow-schema}
 
-De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden gemanipuleerd. Met Adobe Campaign kunt u via gegevensbeheeractiviteiten de kolommen van workflows aanpassen, hernoemen en verrijken, bijvoorbeeld om ze aan te passen aan de nomenclatuur afhankelijk van de behoeften van de klant, om aanvullende informatie te verzamelen over de co-begunstigde van een contract, enz.
+De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden bewerkt. Met Adobe Campaign kunt u via gegevensbeheeractiviteiten de kolommen van workflows aanpassen, hernoemen en verrijken, bijvoorbeeld om ze aan te passen aan de nomenclatuur afhankelijk van de behoeften van de klant, om aanvullende informatie te verzamelen over de co-begunstigde van een contract, enz.
 
 Het is ook mogelijk om verbindingen tussen diverse het werkdimensies tot stand te brengen en afmetingsveranderingen te bepalen. Voor elk contract dat bijvoorbeeld in de database is opgenomen, richt u zich tot de hoofdhouder en gebruikt u de gegevens van de medehouder in de aanvullende informatie.
 
@@ -122,7 +122,7 @@ Wanneer een workflow een fout bevat, worden de operatoren die tot de groep voor 
 
 ![](assets/wf-properties_select-supervisors.png)
 
-De berichtinhoud wordt gevormd in **[!UICONTROL Workflow manager notification]** standaardsjabloon: Deze sjabloon is geselecteerd in het dialoogvenster **[!UICONTROL Execution]** tabblad van de workfloweigenschappen. Het bericht bevat de naam van de foutworkflow en de betreffende taak.
+De berichtinhoud wordt gevormd in **[!UICONTROL Workflow manager notification]** standaardsjabloon: deze sjabloon is geselecteerd in het dialoogvenster **[!UICONTROL Execution]** tabblad van de workfloweigenschappen. In het bericht wordt de naam van de foutworkflow en de betreffende taak weergegeven.
 
 Voorbeeld van melding:
 
@@ -132,7 +132,7 @@ Met de koppeling hebt u toegang tot de Adobe Campaign-console in de webmodus en 
 
 ![](assets/wf-notification_error-console.png)
 
-U kunt de werkstroom zodanig configureren dat deze niet wordt gepauzeerd en verder wordt uitgevoerd in het geval van fouten. Hiervoor kunt u de workflow bewerken **[!UICONTROL Properties]** en in de **[!UICONTROL Error management]** selecteert u de **[!UICONTROL Ignore]** in de **[!UICONTROL In case of error]** veld. Vervolgens kunt u opgeven hoeveel opeenvolgende fouten kunnen worden genegeerd voordat het proces wordt gepauzeerd.
+U kunt de workflow zodanig configureren dat deze niet wordt onderbroken en verder wordt uitgevoerd in het geval van fouten. Hiervoor kunt u de workflow bewerken **[!UICONTROL Properties]** en in de **[!UICONTROL Error management]** selecteert u de **[!UICONTROL Ignore]** in de **[!UICONTROL In case of error]** veld. Vervolgens kunt u opgeven hoeveel opeenvolgende fouten kunnen worden genegeerd voordat het proces wordt gepauzeerd.
 
 In dit geval wordt de fouttaak afgebroken. Deze modus is vooral geschikt voor workflows die zijn ontworpen om de campagne later weer te geven (periodieke acties).
 
@@ -142,7 +142,7 @@ In dit geval wordt de fouttaak afgebroken. Deze modus is vooral geschikt voor wo
 >
 >U kunt deze configuratie afzonderlijk toepassen voor elke activiteit. Hiervoor bewerkt u de eigenschappen van de activiteit en selecteert u de modus voor foutbeheer in het dialoogvenster **[!UICONTROL Advanced]** tab.
 
-Raadpleeg voor meer informatie over het oplossen van problemen bij uitvoering van workflows de [Campaign Classic v7-productiehandleiding](../../production/using/workflow-execution.md).
+Raadpleeg voor meer informatie over het oplossen van problemen bij uitvoering van workflows de [Campaign Classic v7-productiegids](../../production/using/workflow-execution.md).
 
 ## Verwerkingsfouten {#processing-errors}
 
@@ -152,7 +152,7 @@ Fouten waarmee rekening wordt gehouden, zijn fouten in het bestandssysteem (het 
 
 Deze optie verwerkt geen fouten met betrekking tot activiteitsconfiguratie, d.w.z. ongeldige waarden. Fouten met betrekking tot een onjuiste configuratie maken deze overgang niet mogelijk (map bestaat niet, enz.).
 
-Als een werkstroom wordt gepauzeerd (handmatig of automatisch na een fout), **[!UICONTROL Start]** start de uitvoering van de workflow opnieuw op het punt waar deze is gestopt. De foutieve activiteit (of gepauzeerde activiteit) wordt opnieuw uitgevoerd. De vorige activiteiten worden niet opnieuw uitgevoerd.
+Als een werkstroom wordt gepauzeerd (handmatig of automatisch na een fout), **[!UICONTROL Start]** start de uitvoering van de workflow opnieuw op de plaats waar deze is gestopt. De foutieve activiteit (of gepauzeerde activiteit) wordt opnieuw uitgevoerd. De vorige activiteiten worden niet opnieuw uitgevoerd.
 
 Als u alle workflowactiviteiten opnieuw wilt uitvoeren, gebruikt u de opdracht **[!UICONTROL Restart]** knop.
 
@@ -182,7 +182,7 @@ Klik op de koppeling in een workflow met fouten om deze te openen en het bijbeho
 
 ## Meerdere uitvoeringen voorkomen {#preventing-simultaneous-multiple-executions}
 
-In één workflow kunnen meerdere uitvoeringen tegelijkertijd worden uitgevoerd. In sommige gevallen moet u dit voorkomen.
+Eén workflow kan meerdere uitvoeringen tegelijk uitvoeren. In sommige gevallen moet u dit voorkomen.
 
 Bijvoorbeeld, kunt u een planner hebben die de werkschemauitvoering elk uur teweegbrengt, maar soms neemt de uitvoering van het volledige werkschema meer dan een uur. U kunt de uitvoering overslaan als de workflow al wordt uitgevoerd.
 
@@ -223,21 +223,21 @@ Let op:
 * U kunt de huidige waarde van de instantievariabele controleren via **Variabelen** tabblad in de workflow **Eigenschappen**.
 * Instantievariabelen worden opnieuw ingesteld wanneer u een workflow opnieuw start.
 * In JavaScript is een ongedefinieerde waarde in een test false, zodat de instantievariabele ook kan worden getest voordat deze is geïnitialiseerd.
-* U kunt de activiteiten controleren die niet wegens dit mechanisme door een registrereninstructie aan het initialisatiescript van &quot;geen&quot;beëindigend worden verwerkt toe te voegen.
+* U kunt de activiteiten controleren die niet wegens dit mechanisme door een registrereninstructie aan het initialiseringsmanuscript van &quot;geen&quot;beëindigend worden verwerkt toe te voegen.
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 In deze rubriek wordt een gebruiksgeval weergegeven: [Gegevensupdates coördineren](coordinating-data-updates.md).
 
-## Databaseonderhoud {#database-maintenance}
+## Database-onderhoud {#database-maintenance}
 
 Workflows gebruiken veel werktabellen die ruimte verbruiken en het hele platform vertragen als het niet wordt onderhouden. Voor meer over gegevensbestandonderhoud, verwijs naar dit [sectie](../../production/using/tables-to-maintain.md) .
 
-De **Database opschonen** via de **Beheer > Productie > Technische workflows** knoop, laat u verouderde gegevens schrappen om exponentiële groei van het gegevensbestand te vermijden. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Zie [Campaign Classic v7-productiehandleiding](../../production/using/database-cleanup-workflow.md).
+De **Database opschonen** via de **Beheer > Productie > Technische workflows** knoop, laat u verouderde gegevens schrappen om exponentiële groei van het gegevensbestand te vermijden. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Zie [Campaign Classic v7-productiegids](../../production/using/database-cleanup-workflow.md).
 
-U kunt ook specifieke technische workflows maken om overbodige gegevensverbruikende ruimte te wissen. Zie [Campaign Classic v7-productiehandleiding](../../production/using/application-objects.md) en [sectie](#purging-the-logs).
+U kunt ook specifieke technische workflows maken om overbodige gegevensverbruikende ruimte te wissen. Zie [Campaign Classic v7-productiegids](../../production/using/application-objects.md) en dit [sectie](#purging-the-logs).
 
 ## Afhandeling van gepauzeerde workflows {#handling-of-paused-workflows}
 
@@ -253,7 +253,7 @@ Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruik
 
 ## Workflows filteren op basis van hun status {#filtering-workflows-status}
 
-Met de Campaign Classic-interface kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **views**. Als u deze weergaven wilt openen, opent u het dialoogvenster **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** knooppunt.
+Met de interface van het Campaign Classic kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **views**. Als u deze weergaven wilt openen, opent u het dialoogvenster **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** knooppunt.
 
 De volgende weergaven zijn beschikbaar:
 
@@ -274,8 +274,8 @@ Dit doet u als volgt:
 
 Naast deze weergaven kunt u ook mappen met filters instellen waarmee u de lijst met workflows kunt filteren op basis van hun uitvoeringsstatus. Dit doet u als volgt:
 
-1. Open een werkstroommap en selecteer vervolgens de **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]** -menu.
-1. Het filter configureren zodat de workflow **[!UICONTROL @status]** is gelijk aan de status van uw keuze.
+1. Open een map van het type workflow en selecteer vervolgens de **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]** -menu.
+1. Configureer het filter zodat de workflow **[!UICONTROL @status]** is gelijk aan de status van uw keuze.
 1. Sla het filter op en geef het een naam. Deze functie is dan rechtstreeks beschikbaar in de lijst met filters.
 
 ![](assets/workflow-monitoring-filter.png)

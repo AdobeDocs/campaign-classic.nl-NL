@@ -11,7 +11,7 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1317'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Als u geen toegang hebt tot de server en de database (gehoste omgevingen), kunt u de hieronder beschreven procedures niet uitvoeren. Neem contact op met Adobe.
+>Als u geen toegang hebt tot de server en de database (gehoste omgevingen), kunt u de hieronder beschreven procedures niet uitvoeren. Neem contact op met de Adobe.
 
 Voor het gebruik van Adobe Campaign moeten een of meer omgevingen worden geïnstalleerd en geconfigureerd: ontwikkeling, test, productie, enz.
 
@@ -90,7 +90,7 @@ pg_dump mydatabase > mydatabase.sql
 
 De meeste configuratieelementen zijn verschillend voor elke omgeving: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
-Alvorens het brongegevensbestand op het doelgegevensbestand op te slaan, moet u de configuratie van het doelmilieu (dev) uitvoeren. Hiertoe exporteert u de inhoud van deze twee tabellen: **xtkoption** en **nmsextaccount**.
+Alvorens het brongegevensbestand op het doelgegevensbestand te bewaren, moet u de configuratie van het doelmilieu (dev) uitvoeren. Hiertoe exporteert u de inhoud van deze twee tabellen: **xtkoption** en **nmsextaccount**.
 
 Met deze exportbewerking kunt u de configuratie van de ontwikkelaar behouden en alleen de gegevens van de ontwikkelaar vernieuwen (workflows, sjablonen, webtoepassingen, ontvangers, enzovoort).
 

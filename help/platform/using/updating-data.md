@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Data bijwerken
-description: Data bijwerken
+title: Gegevens bijwerken
+description: Gegevens bijwerken
 feature: Data Management
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform

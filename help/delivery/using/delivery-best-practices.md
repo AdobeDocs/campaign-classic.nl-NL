@@ -9,8 +9,8 @@ role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 21%
+source-wordcount: '111'
+ht-degree: 5%
 
 ---
 
@@ -68,7 +68,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>De juiste doelgroep definiëren</strong>
+    <strong>Het juiste publiek definiëren</strong>
     </a>
     </div>
     <p>
@@ -94,7 +94,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Bijhouden en bewaken</strong>
+    <strong>Track en monitor</strong>
     </a>
     </div>
     <p>

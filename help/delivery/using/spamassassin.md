@@ -9,8 +9,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '266'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, vol
 
 Raadpleeg voor meer informatie over het maken en ontwerpen van een levering [deze sectie](about-email-channel.md).
 
-1. Ga naar het tabblad **[!UICONTROL Preview]**. 
+1. Ga naar de **[!UICONTROL Preview]** tab.
 1. Selecteer een ontvanger om een voorbeeld van uw levering te bekijken.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

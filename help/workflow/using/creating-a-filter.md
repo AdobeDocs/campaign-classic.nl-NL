@@ -2,13 +2,13 @@
 product: campaign
 title: Een filter maken
 description: Leer hoe u een filter maakt bij het uitvoeren van query's
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 2%
+source-wordcount: '220'
+ht-degree: 5%
 
 ---
 
@@ -50,7 +50,7 @@ Om de filtervoorwaarden aan te passen, moet de exploitantrekening één van de v
 >
 >De **[!UICONTROL Upper]** kunt u de hoofdlettergevoelige functie deactiveren.
 
-De **[!UICONTROL Taken into account if]** in de kolom kunt u de toepassingscriteria voor deze filtervoorwaarden definiëren. Hier, de **$(/tmp/@text)** De tekens vertegenwoordigen de inhoud van het invoerveld dat aan het filter is gekoppeld:
+De **[!UICONTROL Taken into account if]** in de kolom kunt u de toepassingscriteria voor deze filtervoorwaarden definiëren. Hier, **$(/tmp/@text)** De tekens vertegenwoordigen de inhoud van het invoerveld dat aan het filter is gekoppeld:
 
 ![](assets/query_editor_filter_sample_5.png)
 

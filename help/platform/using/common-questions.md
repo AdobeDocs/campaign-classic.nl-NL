@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 97%
+source-wordcount: '500'
+ht-degree: 80%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 97%
 Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 meest gestelde vragen hieronder en andere veelgestelde vragen op die pagina. U kunt ook het volgende doen:
 
 * [Tutorialvideo’s bekijken](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl)
-* [Door zelfhulpopties bladeren ](../../platform/using/tutorials.md#how-to-videos)
-* [De secties Aan de slag en Gebruiksscenario’s laten voorlezen](../../platform/using/tutorials.md#step-by-step-guides)
+* [Bladeren door opties voor zelfhulp](../../platform/using/tutorials.md#how-to-videos)
+* [Lees uit begin en gebruik casesectie](../../platform/using/tutorials.md#step-by-step-guides)
 * Kunt u het antwoord niet vinden? [Vraag het de expert](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 * Hebt u ondersteuning nodig? [Raadpleeg de opties voor Campaign Help en ondersteuning](../../support.md)
 
-## 1. Hoe kan ik Campaign upgraden naar de nieuwste versie? {#how-can-i-upgrade-campaign-to-the-latest-version-}
+## 1. Hoe kan ik campagne upgraden naar de nieuwste versie? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
@@ -62,11 +62,11 @@ Als u verbinding wilt maken met Adobe Campaign Classic, moet u de Adobe Campaign
 
 [Klik hier voor meer informatie](../../platform/using/launching-adobe-campaign.md).
 
-## 7. Met welke systemen en onderdelen is Campaign Classic compatibel? {#which-systems-and-components-campaign-classic-is-compatible-with-}
+## 7. Met welke systemen en onderdelen is het Campaign Classic compatibel? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
 U vindt de lijst met alle systemen en onderdelen die voor de recentste build van Campaign worden ondersteund in de [Adobe Campaign Classic-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
-## 8. Waar vind ik de Campaign Classic-release-opmerkingen? {#where-are-campaign-classic-release-notes-}
+## 8. Waar zijn opmerkingen over de release van Campaigns Classic? {#where-are-campaign-classic-release-notes-}
 
 U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](../../rn/using/latest-release.md).
 

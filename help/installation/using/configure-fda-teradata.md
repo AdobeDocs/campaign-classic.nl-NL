@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 1%
+source-wordcount: '1636'
+ht-degree: 0%
 
 ---
 
@@ -101,12 +101,12 @@ Met de externe account van Teradata kunt u uw Campagne-instantie verbinden met u
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | TD_MAX_SESSIONS | Specificeert het maximumaantal openings van een sessies dat de Parallelle Transporter van de Teradata voor een exploitantbaan kan verwerven. |
 | TimeZoneName | Naam van de servertijdzone. |
-| CharacterSet | Wordt gebruikt om de tekenset Teradata te configureren. <br>Raadpleeg [deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001) voor meer informatie. |
-| IANAppCodePage | Codepagina van ODBC-toepassing. <br>[Raadpleeg deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) voor meer informatie |
+| CharacterSet | Wordt gebruikt om de tekenset Teradata te configureren. <br>Raadpleeg voor meer informatie hierover [deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAppCodePage | Codepagina van ODBC-toepassing. <br>Raadpleeg voor meer informatie hierover [deze pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Extra externe ODBC-accounts toevoegen {#add-external}
 
@@ -116,7 +116,7 @@ De connector ondersteunt de volgende opties:
 
 Het stuurprogramma voor Teradata biedt een eigen ODBC-bibliotheek, maar deze bibliotheek is mogelijk niet compatibel met andere externe ODBC-accounts.
 
-Als u een andere externe account wilt configureren die ook ODBC gebruikt, bijvoorbeeld Snowflake, moet u een ODBCLib-optie toevoegen die is ingesteld op het pad van de standaard ODBC-bibliotheek (`/usr/lib/x86_64-linux-gnu/libodbc.so` over Debian en `/usr/lib64/libodbc.so` op RHEL/CentOS).
+Als u een andere externe rekening wilt vormen die ODBC, bijvoorbeeld Snowflake ook gebruikt, zult u een optie ODBCLib moeten toevoegen die aan de weg van de standaardODBC bibliotheek wordt geplaatst (`/usr/lib/x86_64-linux-gnu/libodbc.so` over Debian en `/usr/lib64/libodbc.so` op RHEL/CentOS).
 
 ![](assets/ext_account_24.png)
 
@@ -261,7 +261,7 @@ Voor de installatie van het stuurprogramma is het volgende vereist:
 
 * Teradata ODBC-stuurprogramma, te vinden in dit [page](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
 
-* Gereedschappen en hulpprogramma&#39;s voor teradata (gebruikt voor bulkload), die in deze handleiding staan [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* Teradata Tools and Utilities (gebruikt voor bulkload), te vinden in deze [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
 
 Bestandsnamen en sha1:
 

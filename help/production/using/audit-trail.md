@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Audittrail bestaat uit drie onderdelen:
    * Pauzeren
    * Stoppen
    * Opnieuw starten
-   * Opschonen die gelijk is aan de handeling Historie leegmaken
+   * Opschonen wat overeenkomt met de handeling Historie leegmaken
    * Simuleer wat aan de actieBegin op simulatiemodus evenaart
    * Wakeup die gelijk is aan de handeling Voer taken uit die in behandeling zijn.
    * Onvoorwaardelijk stoppen
@@ -105,4 +105,4 @@ Dit doet u als volgt:
 
    ![](assets/audit_trail_6.png)
 
-1. Klik op **[!UICONTROL Save]** .
+1. Klikken **[!UICONTROL Save]** .

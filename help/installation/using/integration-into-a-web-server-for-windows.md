@@ -11,8 +11,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,7 @@ Als u bijvoorbeeld een **Gegevens laden (bestand)** Typ activiteit in een werkst
 In dit geval moet u deze limiet verhogen:
 
 1. Open IIS via **[!UICONTROL Start > (Control panel) > Administration tools]** -menu.
-1. In de **Verbindingen** selecteert u de site die u voor uw Adobe-installatie hebt gemaakt en dubbelklikt u op **Verzoek filteren** in het hoofdvenster.
+1. In de **Verbindingen** selecteert u de site die u voor de Adobe hebt gemaakt en dubbelklikt u op **Verzoek filteren** in het hoofdvenster.
 1. In de **Handelingen** deelvenster, selecteert u **Functie-instellingen bewerken** om de waarde in het dialoogvenster **Maximale toegestane inhoudsgrootte (bytes)** veld.
 
    Als u bijvoorbeeld toestemming wilt geven voor het uploaden van bestanden van 50 MB, moet u een waarde opgeven van meer dan &quot;52428800&quot; bytes.

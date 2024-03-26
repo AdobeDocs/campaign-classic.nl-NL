@@ -11,7 +11,7 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -35,8 +35,8 @@ De algemene communicatie tussen de processen wordt uitgevoerd volgens het volgen
 Dit type van configuratie kan worden in werking gesteld wanneer het beheren van lijsten van minder dan 100.000 ontvangers en met, bijvoorbeeld, de volgende softwarelagen:
 
 * Linux
-* Apache,
-* PostgreSQL,
+* Apache
+* PostSQL,
 * Qmail.
 
 Naarmate het volume toeneemt, verplaatst een variant van deze architectuur de databaseserver naar een andere computer voor betere prestaties.

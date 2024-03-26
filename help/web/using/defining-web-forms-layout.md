@@ -2,13 +2,13 @@
 product: campaign
 title: De lay-out van webformulieren definiëren
 description: De lay-out van webformulieren definiëren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '536'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Containers maken {#creating-containers}
 
-Met containers kunt u de velden van een pagina combineren en de lay-out ervan configureren. om de elementen op de pagina in te delen.
+Met containers kunt u de velden van een pagina combineren en de lay-out ervan configureren. Zo kunt u de elementen op de pagina ordenen.
 
 Voor elke pagina van het formulier worden containers gemaakt via de **[!UICONTROL Containers]** van de werkbalk.
 
@@ -41,7 +41,7 @@ In het bovenstaande voorbeeld ziet de rendering er als volgt uit:
 
 De indeling van het webformulier wordt per pagina gedefinieerd in elke container en kan zo nodig worden overgeladen.
 
-Pagina&#39;s worden opgesplitst in kolommen: elke pagina bevat een bepaald aantal kolommen . Elk veld van de pagina beslaat **n** cellen. Containers nemen ook een bepaald aantal kolommen in en de velden die deze bevatten, bezetten een bepaald aantal cellen.
+Pagina&#39;s worden opgesplitst in kolommen: elke pagina bevat een bepaald aantal kolommen. Elk veld van de pagina beslaat **n** cellen. Containers nemen ook een bepaald aantal kolommen in en de velden die deze bevatten, bezetten een bepaald aantal cellen.
 
 Pagina&#39;s worden standaard op één kolom gebouwd en elk element neemt één cel in beslag. Dit betekent dat velden onder elkaar worden weergegeven, waarbij elke regel een hele regel beslaat, zoals hieronder wordt getoond:
 
@@ -87,7 +87,7 @@ Deze positie kan voor elke pagina, elke container, en elk gebied, via **[!UICONT
 
 De volgende uitlijningen worden ondersteund:
 
-* Overgenomen: de uitlijning wordt overgeërfd van het bovenliggende element (standaardwaarde), d.w.z. de bovenliggende container indien aanwezig, of anders de pagina.
-* Links/rechts: het label rechts of links van het veld wordt geplaatst;
-* Boven/onder: het etiket boven of onder het veld wordt geplaatst;
-* Verborgen: wordt het label niet weergegeven.
+* Overgenomen: de uitlijning wordt overgenomen van het bovenliggende element (standaardwaarde), d.w.z. de bovenliggende container indien aanwezig, of anders de pagina.
+* Links/rechts: het label wordt rechts of links van het veld geplaatst,
+* Boven/onder: het etiket wordt boven of onder het veld geplaatst,
+* Verborgen: het label wordt niet weergegeven.

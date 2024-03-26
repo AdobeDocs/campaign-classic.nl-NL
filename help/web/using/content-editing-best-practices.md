@@ -2,14 +2,14 @@
 product: campaign
 title: Best practices voor het bewerken van content
 description: Best practices voor het bewerken van content
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Om de optimale werking van de redacteur te verzekeren, adviseren wij het naleven
 
 * Voor **een HTML-paginasjabloon importeren** in Adobe Campaign moet u ervoor zorgen dat de sjabloon wordt geopend en correct wordt weergegeven in de verschillende browsers.
 * Als de pagina HTML bevat **JavaScript-scripts** moeten worden uitgevoerd **zonder fouten** buiten de editor.
-* Bij het samenstellen van een sjabloon wordt aangeraden een **&#39;type’**-attribuut toe te voegen aan tags. `<input>` Deze informatie zal door de redacteur worden verwerkt en zal de gebruiker helpen om een gebied van het gegevensbestand aan het gebied van de vorm te verbinden wanneer het vormen van de toepassing van het Web.
+* Bij het samenstellen van een sjabloon raden we u aan een **&#39;type&#39;** kenmerk naar `<input>` -tags. Deze informatie zal door de redacteur worden verwerkt en zal de gebruiker helpen om een gebied van het gegevensbestand aan het gebied van de vorm te verbinden wanneer het vormen van de toepassing van het Web.
 
   Voorbeeld van HTML-code in de sjabloon:
 

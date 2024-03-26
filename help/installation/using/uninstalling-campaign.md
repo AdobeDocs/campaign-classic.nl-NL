@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Installatie van Campaign verwijderen
+title: Campagne verwijderen
 description: Leer hoe u campagne kunt verwijderen
 feature: Installation
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 ---
 
-# Installatie van Campaign verwijderen{#uninstalling-campaign}
+# Campagne verwijderen{#uninstalling-campaign}
 
 
 

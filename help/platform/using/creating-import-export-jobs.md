@@ -3,7 +3,7 @@ product: campaign
 title: Import- en exporttaken maken
 description: Leer hoe u import- en exporttaken kunt maken in Campagne
 feature: Templates
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 

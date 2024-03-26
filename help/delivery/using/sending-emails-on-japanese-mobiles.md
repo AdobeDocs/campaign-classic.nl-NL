@@ -9,7 +9,7 @@ role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij 
 
 Met deze typologieregel kunt u ervoor zorgen dat de levering voldoet aan de [indelingsbeperkingen](#limitations-and-recommendations) door de Japanse operatoren worden gedefinieerd, met name ten opzichte van de totale grootte van de e-mail, de grootte van de HTML- en tekstsecties, het aantal afbeeldingen in de berichten en de tags in de inhoud van de HTML.
 
-### Verzend proeven {#sending-proofs}
+### Proefdrukken verzenden {#sending-proofs}
 
 U kunt proefdrukken verzenden om de levering te testen. Als u de proefdruk verzendt en vervangende adressen gebruikt, voert u adressen in die overeenkomen met de e-mailindeling van het gebruikte profiel.
 

@@ -2,17 +2,17 @@
 product: campaign
 title: Workflows controleren
 description: Leer hoe u toezicht houdt op de workflows voor campagnes
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
-# Hoofdlettergebruik: toezicht houden op uw workflows{#supervising-workflows}
+# Hoofdlettergebruik: toezicht op uw workflows{#supervising-workflows}
 
 
 
@@ -32,9 +32,9 @@ Als u de status van een set workflows wilt controleren, moet u de volgende stapp
 
 >[!NOTE]
 >
->Naast de workflow, **Workflow Heatmap** Hiermee kunt u de werkstromen die momenteel worden uitgevoerd, in detail analyseren. Raadpleeg voor meer informatie de [speciale sectie](heatmap.md).
+>Naast de workflow, campagne **Workflow Heatmap** Hiermee kunt u de werkstromen die momenteel worden uitgevoerd, in detail analyseren. Raadpleeg voor meer informatie de [speciale sectie](heatmap.md).
 >
->Voor meer informatie over hoe **de uitvoering van uw workflows controleren**, zie [deze sectie](monitoring-workflow-execution.md).
+>Voor meer informatie over hoe u **de uitvoering van uw workflows controleren**, zie [deze sectie](monitoring-workflow-execution.md).
 
 ## Stap 1: De controleworkflow maken {#step-1--creating-the-monitoring-workflow}
 
@@ -49,12 +49,12 @@ Het volgende schema toont de opeenvolging van activiteiten:
 Deze workflow bestaat uit:
 
 * a **&quot;Start&quot;** activiteit.
-* a **&quot;JavaScript-code&quot;** activiteit verantwoordelijk voor het analyseren van de omslag van bedrijfswerkschema&#39;s.
+* a **JavaScript-code** activiteit verantwoordelijk voor het analyseren van de omslag van bedrijfsworkflows.
 * a **&quot;Testen&quot;** activiteit om een levering naar de supervisor te verzenden of het werkschema opnieuw te beginnen.
 * a **&quot;Levering&quot;** activiteit verantwoordelijk voor berichtlay-out.
 * a **&quot;Wacht&quot;** activiteit die de doorlooptijden tussen werkschemariteraties controleert.
 
-## Stap 2: JavaScript schrijven {#step-2--writing-the-javascript}
+## Stap 2: het schrijven van JavaScript {#step-2--writing-the-javascript}
 
 Het eerste deel van de JavaScript-code valt samen met een **query (queryDef)** waarmee u de workflows kunt identificeren met de status &quot;pause&quot; (@state == 13), &quot;error&quot; (@failed == 1) of &quot;stopped&quot; (@state == 20).
 
@@ -116,7 +116,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Stap 3: De &#39;Test&#39;-activiteit maken {#step-3--creating-the--test--activity}
+## Stap 3: De &#39;test&#39;-activiteit maken {#step-3--creating-the--test--activity}
 
 De &quot;Test&quot;activiteit laat u bepalen of een levering moet worden verzonden of of het controlewerkschema een andere die cyclus moet in werking stellen op de &quot;Wacht&quot;activiteit wordt gebaseerd.
 
@@ -137,17 +137,17 @@ Deze sjabloon moet het volgende bevatten:
 * **het e-mailadres van de toezichthouder**.
 * **HTML-inhoud** voor het invoegen van gepersonaliseerde tekst.
 
-   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   De drie gedeclareerde variabelen (WF_Stop, WF_Paused, WF_Error) komen overeen met de drie workflowgebeurtenisvariabelen.
+  De drie gedeclareerde variabelen (WF_Stop, WF_Paused, WF_Error) komen overeen met de drie workflowgebeurtenisvariabelen.
 
-   Deze variabelen moeten in de **Variabelen** tabblad van de eigenschappen van de leveringssjabloon.
+  Deze variabelen moeten in de **Variabelen** tabblad van de eigenschappen van de leveringssjabloon.
 
-   Herstellen **de inhoud van de workflowgebeurtenisvariabelen** moet u de variabelen declareren die specifiek zijn voor de levering en die worden geïnitialiseerd met waarden die door de JavaScript-code worden geretourneerd.
+  Herstellen **de inhoud van de workflowgebeurtenisvariabelen** moet u de variabelen declareren die specifiek zijn voor de levering en die worden geïnitialiseerd met waarden die door de JavaScript-code worden geretourneerd.
 
-   De leveringssjabloon heeft de volgende inhoud:
+  De leveringssjabloon heeft de volgende inhoud:
 
-   ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Zodra het malplaatje is gecreeerd en goedgekeurd, moet u vormen **Aflevering** activiteit naar:
 
@@ -159,23 +159,23 @@ Dubbelklik op de knop **Aflevering** en selecteer de volgende opties:
 * Aflevering: selecteren **Nieuw, gemaakt op basis van een sjabloon** en selecteer de eerder gemaakte leveringssjabloon.
 * Voor de **Ontvangers en inhoud** velden, selecteren **Opgegeven in de levering**.
 * Uit te voeren handeling: selecteren **Voorbereiden en starten**.
-* Schakel het selectievakje **Procesfouten** optie.
+* Schakel het selectievakje **Procesfouten** -optie.
 
-   ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* Ga naar de **Script** tabblad van het dialoogvenster **Aflevering** activiteit, drie toevoegen **tekenreeks** typevariabelen via het menu van het verpersoonlijkingsgebied.
+* Ga naar de **Script** tabblad van het **Aflevering** activiteit, drie toevoegen **tekenreeks** typevariabelen via het menu van het verpersoonlijkingsgebied.
 
-   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-   ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   De drie gedeclareerde variabelen zijn:
+  De drie gedeclareerde variabelen zijn:
 
-   ```
-   delivery.variables._var[0].stringValue = vars.strWorkflowError;
-   delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
-   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
-   ```
+  ```
+  delivery.variables._var[0].stringValue = vars.strWorkflowError;
+  delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
+  delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
+  ```
 
 Zodra deze controlewerkstroom wordt gelanceerd, verzendt het het volgende overzicht naar de ontvanger:
 

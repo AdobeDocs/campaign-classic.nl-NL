@@ -2,12 +2,12 @@
 product: campaign
 title: Leveringen
 description: Meer informatie over standaardleveringsworkflows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '331'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Leveringen** mo
   <tr> 
    <td> <span class="uicontrol">Rapportageaggregaten</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Het wordt teweeggebracht elke dag om 2 uur door gebrek.<br /> </td> 
+   <td> Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Deze wordt standaard elke dag om 2 uur geactiveerd.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Facturering</span> <br /> </td> 
@@ -48,7 +48,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Leveringen** mo
   <tr> 
    <td> <span class="uicontrol">Database opschonen</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Deze workflow is de workflow voor databaseonderhoud: het maakt verschillende berekeningen van de statistieken en de processen, en schrapt verouderde gegevens van het gegevensbestand volgens de bepaalde configuratie in de plaatsingsmedewerker. Het wordt teweeggebracht elke dag om 4am door gebrek.</p> <p>Raadpleeg deze voor meer informatie <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
+   <td> <p>Dit werkschema is het werkschema van het gegevensbestandonderhoud: het maakt verschillende berekeningen van de statistieken en de processen, en schrapt verouderde gegevens uit het gegevensbestand volgens de bepaalde configuratie in de plaatsingsmedewerker. Het wordt teweeggebracht elke dag om 4.00 uur door gebrek.</p> <p>Raadpleeg deze voor meer informatie <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Opschonen van gepauzeerde workflows</span> <br /> </td> 
@@ -66,7 +66,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Leveringen** mo
    <td> Deze workflow analyseert leveringen die zijn opgeslagen in de voorlopige kalender (maakt voorlopige logbestanden). Het wordt teweeggebracht elke dag bij 1am door gebrek.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Tracking</span> <br /> </td> 
+   <td> <span class="uicontrol">Tekstspatiëring</span> <br /> </td> 
    <td> <span class="uicontrol">bijhouden</span> <br /> </td> 
    <td> Deze workflow voert het herstel en de consolidatie van trackinggegevens uit. Het verzekert ook de herberekening van het volgen en leveringsstatistieken, vooral die gebruikt door het archiveren van het Centrum van het Bericht werkschema. Deze wordt standaard één keer per uur geactiveerd. <br /> </td> 
   </tr> 

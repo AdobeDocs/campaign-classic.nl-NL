@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: Hypotheses maken
+title: hypothesen maken
 description: Leer hoe u hypothesen maakt in Campagne Response Manager
 feature: Campaigns
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: campaign
 content-type: reference

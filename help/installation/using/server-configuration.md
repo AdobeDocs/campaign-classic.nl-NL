@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 5%
 
 ---
 
@@ -28,9 +28,9 @@ Controleer met operationele gebruikers welk type bestanden zij naar de server up
 * ETL (txt, csv, tab, ...)
 * enz.
 
-Voeg alle tags toe in serverConf/shared/datastore/@uploadAllowlist (geldige reguliere Java-expressie). Meer informatie in [deze pagina](../../installation/using/file-res-management.md).
+Voeg alle tags toe in serverConf/shared/datastore/@uploadAllowlist (geldige reguliere Java-expressie). Meer informatie vindt u [op deze pagina](../../installation/using/file-res-management.md).
 
-Adobe Campaign beperkt de bestandsgrootte niet. Maar u kunt het doen door IIS/Apache te vormen. Meer informatie in [deze sectie](../../installation/using/web-server-configuration.md).
+Adobe Campaign beperkt de bestandsgrootte niet. Maar u kunt het doen door IIS/Apache te vormen. Lees meer in [deze sectie](../../installation/using/web-server-configuration.md).
 
 ## Betaling
 

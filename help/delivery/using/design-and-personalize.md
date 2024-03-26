@@ -9,8 +9,8 @@ role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 7%
+source-wordcount: '1296'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +59,7 @@ Houd rekening met de onderstaande algemene tips bij het samenstellen van e-mails
 
 Werken met de [onderwerpregel](defining-the-email-content.md#message-content) verbetering van de open tarieven :
 
-* Vermijd personen die te lang zijn. Gebruik maximaal 50 tekens
+* Vermijd personen die te lang zijn. Maximaal 50 tekens gebruiken
 
 * Vermijd het gebruik van herhalende woorden zoals &quot;gratis&quot; of &quot;aanbieding&quot;, die als spam kunnen worden beschouwd
 
@@ -69,7 +69,7 @@ Werken met de [onderwerpregel](defining-the-email-content.md#message-content) ve
 
 Neem altijd een koppeling naar een spiegelpagina op. De voorkeurspositie boven aan het e-mailbericht. [Meer informatie](sending-messages.md#generating-the-mirror-page)
 
-### Unsubscription link
+### Koppeling met abonnement opheffen
 
 De koppeling om uw abonnement op te zeggen is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn. Wanneer het bericht wordt geanalyseerd, wordt standaard een [typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) Hiermee wordt gecontroleerd of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt.
 
@@ -93,9 +93,9 @@ Zorg ervoor dat u wijzigingen test voordat u de definitieve verzending uitvoert
 
 ### Sms-lengte
 
-Standaard voldoet het aantal tekens in een sms aan de gsm-standaarden (Global System for Mobile Communications). Sms-berichten met gsm-codering mogen maximaal 160 tekens bevatten of 153 tekens per sms voor berichten die in meerdere delen worden verzonden.
+Standaard voldoet het aantal tekens in een SMS aan de GSM-standaarden (Global System for Mobile Communications). Sms-berichten met gsm-codering mogen maximaal 160 tekens bevatten of 153 tekens per sms voor berichten die in meerdere delen worden verzonden.
 
-Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard. Als u personalisatievelden in de inhoud van uw SMS-bericht invoegt, kunnen er tekens worden ingevoerd waarmee de GSM-codering geen rekening houdt. U kunt tekenomzetting autoriseren door het corresponderende vak te selecteren op het tabblad met SMPP-kanaalinstellingen van het corresponderende **[!UICONTROL External account]**.
+Vertaling bestaat erin een teken van een SMS door een ander te vervangen wanneer dat teken niet in aanmerking wordt genomen door de GSM-standaard. Als u personalisatievelden in de inhoud van uw SMS-bericht invoegt, kunnen er tekens worden ingevoerd waarmee de GSM-codering geen rekening houdt. U kunt tekenomzetting autoriseren door het corresponderende vak te selecteren op het tabblad met SMPP-kanaalinstellingen van het corresponderende **[!UICONTROL External account]**.
 Meer informatie [in deze sectie](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:

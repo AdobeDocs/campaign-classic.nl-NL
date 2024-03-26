@@ -12,7 +12,7 @@ exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -36,7 +36,7 @@ Met workflows kunnen import- en exportbewerkingen automatisch volgens een schema
 
 Raadpleeg [deze sectie](../../platform/using/import-export-workflows.md) voor meer informatie.
 
-## Algemene import- en exportbewerkingen {#generic-import-export}
+## Algemene invoer en uitvoer {#generic-import-export}
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
@@ -62,7 +62,7 @@ Raadpleeg deze secties voor meer informatie hierover:
 * [Een bestand decoderen of decoderen](../../platform/using/unzip-decrypt.md)
 * [Een bestand comprimeren of versleutelen](../../platform/using/zip-encrypt.md)
 
-## Best practices en probleemoplossing {#best-practices-troubleshooting}
+## Aanbevolen werkwijzen en problemen oplossen {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 

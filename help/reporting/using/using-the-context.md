@@ -2,7 +2,7 @@
 product: campaign
 title: De context in uw rapporten gebruiken
 description: Meer informatie over het gebruik van de context in uw rapporten
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
@@ -56,7 +56,7 @@ Voer de volgende stappen uit:
 1. Plaats een pagina in het diagram en bewerk deze.
 1. Maak een draaitabel.
 1. Ga naar de **[!UICONTROL Data]** en selecteert u de kubus die u wilt gebruiken.
-1. Klik op de knop **[!UICONTROL Filter data...]** koppeling en definieer de volgende query om Adobe uit de lijst met bedrijven te verwijderen.
+1. Klik op de knop **[!UICONTROL Filter data...]** De verbinding en bepaalt de volgende vraag om Adobe uit de lijst van bedrijven te verwijderen.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 

@@ -3,7 +3,7 @@ product: campaign
 title: Voorbeelden van algemene importactiviteiten
 description: Meer informatie over generieke importbewerkingen die u kunt uitvoeren met importtaken
 feature: Data Management
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---

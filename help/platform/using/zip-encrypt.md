@@ -26,7 +26,7 @@ Om dit te kunnen doen:
 
    >[!NOTE]
    >
-   >Het Configuratiescherm is beperkt tot Admin-gebruikers en is alleen beschikbaar voor bepaalde campagneversies. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >Het Configuratiescherm is beperkt tot Admin-gebruikers en is alleen beschikbaar voor bepaalde campagneversies. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl)
    >
 
 1. Als uw installatie van Adobe Campaign wordt gehost op Adobe, neemt u contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.

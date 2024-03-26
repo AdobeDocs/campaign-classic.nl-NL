@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Voor verbinding met een externe database van een Oracle in FDA zijn hieronder aa
      yum install libaio1
      ```
 
-1. In Campaign Classic, kunt u dan uw vormen [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
+1. In Campaign Classic, kunt u uw [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
 
 ## Oracle in Windows {#oracle-windows}
 
@@ -76,7 +76,7 @@ Voor verbinding met een externe database van een Oracle in FDA zijn hieronder aa
 
 1. Voeg een omgevingsvariabele TNS_ADMIN toe met C:Oracle als waarde en start de computer opnieuw op.
 
-1. In Campaign Classic, kunt u dan uw vormen [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
+1. In Campaign Classic, kunt u uw [!DNL Oracle] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#oracle-external).
 
 ## Externe rekening van oracle {#oracle-external}
 
@@ -90,7 +90,7 @@ De [!DNL Oracle] Met een externe account kunt u uw Campagne-instantie verbinden 
 
 1. Vorm **[!UICONTROL Oracle]** externe account, moet u opgeven:
 
-   * **[!UICONTROL Type]**: Oracle
+   * **[!UICONTROL Type]**: ORACLE
 
    * **[!UICONTROL Server]**: Naam van de DNS
 

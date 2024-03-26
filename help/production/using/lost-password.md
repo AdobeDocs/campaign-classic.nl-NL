@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 12%
+source-wordcount: '188'
+ht-degree: 7%
 
 ---
 
@@ -29,11 +29,11 @@ Er zijn twee mogelijke scenario&#39;s:
 ## Wachtwoord verloren door een Campagneoperator {#password-lost-by-campaign-operator}
 
 Als een Adobe Campaign-operator zijn wachtwoord verliest, kunt u het wijzigen.
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. Verbind via een exploitant met beheerderrechten.
 1. Klik met de rechtermuisknop op een operator.
-1. Selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
+1. Selecteren **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 

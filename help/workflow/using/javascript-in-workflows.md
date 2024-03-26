@@ -2,12 +2,12 @@
 product: campaign
 title: Voorbeelden van JavaScript-code in workflows
 description: Deze voorbeelden laten zien hoe u JavaScript-code kunt gebruiken in een workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1702'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,12 @@ Voer de volgende stappen uit om deze voorbeelden uit te proberen:
    1. JavaScript-codeactiviteit
    1. Eindactiviteit
 
-   [Meer informatie](building-a-workflow.md) over het bouwen van workflows.
+   [Meer informatie](building-a-workflow.md) over workflows maken.
 
 1. Voeg de JavaScript-code toe aan een activiteit. [Meer informatie](advanced-parameters.md).
 1. Sla de workflow op.
 1. Test de voorbeelden:
-   1. De workflow starten. [Meer informatie](starting-a-workflow.md).
+   1. Start de workflow. [Meer informatie](starting-a-workflow.md).
    1. Open het dagboek. [Meer informatie](monitoring-workflow-execution.md#displaying-logs).
 
 ## Voorbeeld 1: schrijven naar de database{#write-example}
@@ -53,17 +53,17 @@ Als u naar de database wilt schrijven, kunt u de statische `Write` op de `xtk:se
    1. Roep de `Write` op de `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een tabel met Snowflaken. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Geef de XML-code door als een argument voor de schrijfaanvraag.
 
-### Stap 1: een schrijfverzoek samenstellen
+### Stap 1: stel een schrijfverzoek samen
 
 U kunt records toevoegen, bijwerken en verwijderen.
 
 #### Een record invoegen
 
-Omdat `insert` bewerking is de standaardbewerking, u hoeft deze niet op te geven.
+Omdat de `insert` bewerking is de standaardbewerking, u hoeft deze niet op te geven.
 
 Geef deze informatie op als XML-kenmerken:
 
@@ -81,7 +81,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Een record bijwerken
 
-Gebruik de `_update` bewerking. [Meer informatie](../../configuration/using/data-oriented-apis.md).
+Gebruik de `_update` -bewerking. [Meer informatie](../../configuration/using/data-oriented-apis.md).
 
 Geef deze informatie op als XML-kenmerken:
 
@@ -144,7 +144,7 @@ xtk.session.Write(myXML)
 In deze video wordt getoond hoe u naar de database kunt schrijven:
 >[!VIDEO](https://video.tv.adobe.com/v/18472/?learn=on)
 
-## Voorbeeld 2: query uitvoeren op de database{#read-example}
+## Voorbeeld 2: de database opvragen{#read-example}
 
 Als u een query op de database wilt uitvoeren, kunt u de `xtk:queryDef` instantiemethode:
 
@@ -152,7 +152,7 @@ Als u een query op de database wilt uitvoeren, kunt u de `xtk:queryDef` instanti
 1. Maak een queryobject.
 1. Voer de query uit.
 
-### Stap 1: een query samenstellen
+### Stap 1: stel een query samen
 
 De XML-code voor een `queryDef` entiteit.
 
@@ -185,47 +185,47 @@ Schrijf de `select`, `where`, en `orderBy` clausules als XML-elementen:
 
 * `select` clausule
 
-   Geef op welke kolommen moeten worden geretourneerd. Als u bijvoorbeeld de voornaam en achternaam van de persoon wilt selecteren, schrijft u de volgende code:
+  Geef op welke kolommen moeten worden geretourneerd. Als u bijvoorbeeld de voornaam en achternaam van de persoon wilt selecteren, schrijft u de volgende code:
 
-   ```xml
-   <select>
-       <node expr="@firstName"/>
-       <node expr="@lastName"/>
-   </select>
-   ```
+  ```xml
+  <select>
+      <node expr="@firstName"/>
+      <node expr="@lastName"/>
+  </select>
+  ```
 
-   Met de `nms:recipient` schema, worden de elementen in de volgende vorm geretourneerd:
+  Met de `nms:recipient` schema, worden de elementen in de volgende vorm geretourneerd:
 
-   ```xml
-   <recipient firstName="Bo" lastName="Didley"/>
-   ```
+  ```xml
+  <recipient firstName="Bo" lastName="Didley"/>
+  ```
 
 * `where` clausule
 
-   Als u voorwaarden wilt opgeven, gebruikt u een `where` clausule. Als u bijvoorbeeld de records wilt selecteren die zich in het dialoogvenster **Training** map, kunt u deze code schrijven:
+  Als u voorwaarden wilt opgeven, gebruikt u een `where` clausule. Als u bijvoorbeeld de records wilt selecteren die zich in het dialoogvenster **Training** map, kunt u deze code schrijven:
 
-   ```xml
-   <where>
-       <condition expr="[folder/@label]='Training'"/>
-   </where>
-   ```
+  ```xml
+  <where>
+      <condition expr="[folder/@label]='Training'"/>
+  </where>
+  ```
 
-   Wanneer u meerdere expressies combineert, gebruikt u de Booleaanse operator in de eerste expressie. Als u bijvoorbeeld alle personen wilt selecteren met de naam Isabel Garcia, kunt u de volgende code schrijven:
+  Wanneer u meerdere expressies combineert, gebruikt u de Booleaanse operator in de eerste expressie. Als u bijvoorbeeld alle personen wilt selecteren met de naam Isabel Garcia, kunt u de volgende code schrijven:
 
-   ```xml
-   <condition boolOperator="AND" expr="@firstName='Isabel'"/>
-   <condition expr="@lastName='Garcia'"/>
-   ```
+  ```xml
+  <condition boolOperator="AND" expr="@firstName='Isabel'"/>
+  <condition expr="@lastName='Garcia'"/>
+  ```
 
 * `orderBy` clausule
 
-   Als u de resultaatset wilt sorteren, geeft u de opdracht `orderBy` clausule als element van XML met `sortDesc` kenmerk. Als u bijvoorbeeld de achternamen in oplopende volgorde wilt sorteren, kunt u de volgende code schrijven:
+  Als u de resultaatset wilt sorteren, geeft u de opdracht `orderBy` clausule als element van XML met `sortDesc` kenmerk. Als u bijvoorbeeld de achternamen in oplopende volgorde wilt sorteren, kunt u de volgende code schrijven:
 
-   ```xml
-   <orderBy>
-       <node expr="@lastName> sortDesc="false"/>
-   </orderBy>
-   ```
+  ```xml
+  <orderBy>
+      <node expr="@lastName> sortDesc="false"/>
+  </orderBy>
+  ```
 
 ### Stap 2: een queryobject maken
 
@@ -242,7 +242,7 @@ Voorvoegsel `create(`*`content`*`)` methode met het schema van de te creëren en
 
 De *`content`* argument is een string argument en is optioneel. Dit argument bevat de XML-code die de entiteit beschrijft.
 
-### Stap 3: de query uitvoeren
+### Stap 3: voer de query uit
 
 Voer de volgende stappen uit:
 
@@ -254,8 +254,8 @@ Voer de volgende stappen uit:
 
 1. De resultaten verwerken:
    1. De resultaten van de `select` bewerking, met behulp van een lusconstructie.
-   1. Test de resultaten met de `getIfExists` bewerking.
-   1. Telling de resultaten met de opdracht `count` bewerking.
+   1. Test de resultaten met de `getIfExists` -bewerking.
+   1. Telling de resultaten met de opdracht `count` -bewerking.
 
 #### Resultaten van een `select` bewerking
 
@@ -300,7 +300,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### Resultaat van een `get` bewerking
+#### Resultaat van `get` bewerking
 
 Eén overeenkomst wordt geretourneerd als een element:
 
@@ -312,9 +312,9 @@ Als er geen overeenkomst is, wordt een fout geretourneerd.
 
 >[!TIP]
 >
->Als u weet dat er een overeenkomst is, gebruikt u de `get` bewerking. Gebruik anders de `getIfExists` bewerking. Als u deze beste praktijken gebruikt, dan tonen de fouten onverwachte problemen. Als u het `get` bewerking, gebruik de opdracht `try…catch` instructie. Het probleem wordt afgehandeld door het foutafhandelingsproces van de workflow.
+>Als u weet dat er een overeenkomst is, gebruikt u de `get` -bewerking. Gebruik anders de opdracht `getIfExists` -bewerking. Als u deze beste praktijken gebruikt, dan tonen de fouten onverwachte problemen. Als u het `get` bewerking, gebruik de opdracht `try…catch` instructie. Het probleem wordt afgehandeld door het foutafhandelingsproces van de workflow.
 
-#### Resultaat van een `count` bewerking
+#### Resultaat van `count` bewerking
 
 Een element met de `count` attribute is returned:
 
@@ -322,7 +322,7 @@ Een element met de `count` attribute is returned:
 <recipient count="200">
 ```
 
-Als u het resultaat wilt gebruiken, raadpleegt u de `@count` kenmerk:
+Raadpleeg de `@count` kenmerk:
 
 ```javascript
 if (res.@count > 0)
@@ -350,7 +350,7 @@ for each (var rcp in res.recipient)
     logInfo(rcp.@firstName + " " + rcp.@lastName)
 ```
 
-Omdat `select` bewerking is de standaardbewerking, u hoeft deze niet op te geven.
+Omdat de `select` bewerking is de standaardbewerking, u hoeft deze niet op te geven.
 
 In deze video wordt getoond hoe u van de database kunt lezen:
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
@@ -362,7 +362,7 @@ U kunt werkstromen programmatically, bijvoorbeeld, in technische werkschema&#39;
 Workflowactivering werkt door het gebruik van gebeurtenissen. U kunt deze functies voor gebeurtenissen gebruiken:
 
 * Als u een gebeurtenis wilt posten, kunt u de statische `PostEvent` methode. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
-* Als u een gebeurtenis wilt ontvangen, kunt u de opdracht **[!UICONTROL External signal]** activiteit. [Meer informatie](external-signal.md).
+* Als u een gebeurtenis wilt ontvangen, kunt u de **[!UICONTROL External signal]** activiteit. [Meer informatie](external-signal.md).
 
 U kunt workflows op verschillende manieren activeren:
 
@@ -371,11 +371,11 @@ U kunt workflows op verschillende manieren activeren:
    * Voeg een initialisatiescript aan toe **[!UICONTROL End]** activiteit van de initiële workflow.
    * Voeg de **[!UICONTROL External signal]** activiteit aan het begin van de doelworkflow.
 
-      Na voltooiing van de initiële workflow wordt een gebeurtenis gepost. De uitgaande overgang wordt geactiveerd en de gebeurtenisvariabelen worden gevuld. De gebeurtenis wordt vervolgens ontvangen door de doelworkflow.
+     Na voltooiing van de initiële workflow wordt een gebeurtenis gepost. De uitgaande overgang wordt geactiveerd en de gebeurtenisvariabelen worden gevuld. De gebeurtenis wordt vervolgens ontvangen door de doelworkflow.
 
-      >[!TIP]
-      >
-      >Als beste praktijk, wanneer u een manuscript aan een activiteit toevoegt, neem de activiteitennaam in dubbele koppeltekens op, bijvoorbeeld `-- end --`. [Meer informatie](workflow-best-practices.md) over best practices voor workflows.
+     >[!TIP]
+     >
+     >Als beste praktijk, wanneer u een manuscript aan een activiteit toevoegt, neem de activiteitennaam in dubbele koppeltekens op, bijvoorbeeld `-- end --`. [Meer informatie](workflow-best-practices.md) over best practices voor workflows.
 
 Syntaxis van de `PostEvent` methode:
 
@@ -464,7 +464,7 @@ Voer de volgende stappen uit:
 
 ### `Create` methode
 
-#### Voorbeeld 1: records selecteren en naar het journaal schrijven
+#### Voorbeeld 1: selecteer records en schrijf naar het journaal
 
 De interne namen van de workflows die zich in de **wfExamples** is geselecteerd. De resultaten worden gesorteerd op interne naam, in oplopende volgorde, en naar het dagboek geschreven.
 
@@ -490,7 +490,7 @@ for each (var w in res.workflow)
 
 #### Voorbeeld 2: records verwijderen
 
-De voornaam, de achternaam, het e-mailbericht en de id van alle ontvangers met de naam Chris Smith worden geselecteerd. De resultaten worden gesorteerd per e-mail, in oplopende volgorde, en geschreven aan het dagboek. A `delete` wordt gebruikt om de geselecteerde records te verwijderen.
+De voornaam, de achternaam, het e-mailbericht en de id van alle ontvangers met de naam Chris Smith worden geselecteerd. De resultaten worden gesorteerd per e-mail, in oplopende volgorde, en geschreven aan het dagboek. A `delete` Deze bewerking wordt gebruikt om de geselecteerde records te verwijderen.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -524,9 +524,9 @@ for each (var rec in res.recipient)
     }
 ```
 
-#### Voorbeeld 3: records selecteren en naar het journaal schrijven
+#### Voorbeeld 3: selecteer records en schrijf naar het tijdschrift
 
-In dit voorbeeld wordt een niet-statische methode gebruikt. Het e-mail- en geboortejaar van alle ontvangers waarvan de gegevens in het **1234** en de map waarin de naam van het e-maildomein begint met &quot;adobe&quot; zijn geselecteerd. De resultaten worden gesorteerd op geboortedatum in aflopende volgorde. De e-mail van de ontvangers wordt geschreven aan het dagboek.
+In dit voorbeeld wordt een niet-statische methode gebruikt. Het e-mail- en geboortejaar van alle ontvangers waarvan de gegevens in het **1234** en de map waarvan de e-maildomeinnaam begint met &quot;adobe&quot; zijn geselecteerd. De resultaten worden gesorteerd op geboortedatum in aflopende volgorde. De e-mail van de ontvangers wordt geschreven aan het dagboek.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -558,12 +558,12 @@ U kunt records invoegen, bijwerken en verwijderen. U kunt de `Write` in Adobe Ca
 * De `update` bewerking
 * De `insertOrUpdate` met de `_key` argument om de bij te werken record te identificeren
 
-   Als u geen **Ontvangers** als er een overeenkomst bestaat, wordt de record in elke submap bijgewerkt. Anders wordt de record in de hoofdmap gemaakt **Ontvangers** map.
+  Als u geen **Ontvangers** als er een overeenkomst bestaat, wordt de record in elke submap bijgewerkt. Anders wordt de record in de hoofdmap gemaakt **Ontvangers** map.
 
 * De `delete` bewerking
 
 >[!IMPORTANT]
-> Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een Snowflake-tabel. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> Als u Adobe Campaign v8 gebruikt, raden we u aan om het faseringsmechanisme te gebruiken met het **Inname** en **Gegevens bijwerken/verwijderen** API&#39;s voor de `Write` in een tabel met Snowflaken. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Voorbeeld 1: een record invoegen of bijwerken
 

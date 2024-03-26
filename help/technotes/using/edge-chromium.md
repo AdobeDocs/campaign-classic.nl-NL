@@ -7,8 +7,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '249'
+ht-degree: 8%
 
 ---
 
@@ -23,13 +23,13 @@ Na het einde van de levensduur van Microsoft Internet Explorer 11 gebruikt de HT
 
 Naast de installatie van de Microsoft Edge Webview 2-runtime, die nu [vereist voor elke installatie van de clientconsole](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium moet zijn ingeschakeld voor uw exemplaar(s).
 
-## Heeft dit gevolgen voor u?
+## Heb je invloed op?
 
 Als uw omgeving is bijgewerkt naar Campaign Classic v7.3 (of hoger), heeft dit gevolgen voor u.
 
 ## Hoe kan ik bijwerken?
 
-* Als **gehost** Adobe heeft Microsoft Edge Chromium al ingeschakeld voor uw exemplaar(s). Er is geen aanvullende actie vereist.
+* Als **gehost** -klant, heeft de Adobe Microsoft Edge Chromium al ingeschakeld voor uw exemplaar(s). Er is geen aanvullende actie vereist.
 
 * Als **op locatie/hybride** moet u Microsoft Edge Chromium inschakelen voor uw exemplaar(s).
 

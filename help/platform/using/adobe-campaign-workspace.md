@@ -2,15 +2,15 @@
 product: campaign
 title: Adobe Campaign-werkruimte
 description: Leer de werkruimte Campagne gebruiken en aanpassen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 3%
+source-wordcount: '923'
+ht-degree: 2%
 
 ---
 
@@ -20,19 +20,19 @@ ht-degree: 3%
 
 ## De Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
 
-Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van Adobe Campaign toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties kunnen toegang hebben.
+Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van Adobe Campaign toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties laten toegang hebben.
 
 Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toegang te krijgen tot het online documentatieportaal, -forum en de ondersteuningswebsite van Campagne.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Campaign-werkruimte ontdekken in video](#video)
+![](assets/do-not-localize/how-to-video.png) Campagne ontdekken in [video](#video)
 
 >[!NOTE]
 >
 >De Adobe Campaign-mogelijkheden die voor uw instantie beschikbaar zijn, zijn afhankelijk van de geïnstalleerde modules en invoegtoepassingen. Sommige zijn mogelijk ook niet beschikbaar, afhankelijk van uw machtigingen en specifieke configuraties.
 >
->Voordat u een module of invoegtoepassing kunt installeren, moet u de licentieovereenkomst controleren of contact opnemen met de Adobe-accountmanager.
+>Voordat u een module of add-on installeert, moet u de licentieovereenkomst controleren of contact opnemen met de manager van de Adobe-account.
 
 ### Console en webtoegang {#console-and-web-access}
 
@@ -90,19 +90,19 @@ De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** in het linkergedeelte 
 
 * Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Als u terug wilt gaan naar de vorige pagina, klikt u op de knop **[!UICONTROL Back]** op de werkbalk. Als u wilt terugkeren naar de startpagina, klikt u op de knop **[!UICONTROL Home]** knop.
 
-   ![](assets/d_ncs_user_interface_back_home_buttons.png)
+  ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
 * In het geval van een menu of een snelkoppeling naar een scherm (zoals een webtoepassing, programma, levering, rapport, enz.), wordt de bijbehorende pagina weergegeven op een ander tabblad. Op deze manier kunt u van de ene pagina naar de andere bladeren met de tabbladen.
 
-   ![](assets/d_ncs_user_interface_tabs.png)
+  ![](assets/d_ncs_user_interface_tabs.png)
 
 ### Een element maken {#creating-an-element}
 
 In elke sectie met kernmogelijkheden kunt u bladeren door de beschikbare elementen. Hiervoor gebruikt u de sneltoetsen in het dialoogvenster **[!UICONTROL Browsing]** sectie. De **[!UICONTROL Other choices]** Met de koppeling hebt u toegang tot alle andere pagina&#39;s, ongeacht de omgeving.
 
-U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in het dialoogvenster **[!UICONTROL Create]** aan de linkerkant van het scherm. Gebruik de **[!UICONTROL Create]** boven de lijst om nieuwe elementen aan de lijst toe te voegen.
+U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in het dialoogvenster **[!UICONTROL Create]** links van het scherm. Gebruik de **[!UICONTROL Create]** boven de lijst om nieuwe elementen aan de lijst toe te voegen.
 
-Gebruik bijvoorbeeld op de leveringspagina de **[!UICONTROL Create]** om een nieuwe levering te maken.
+Gebruik bijvoorbeeld op de leveringspagina de optie **[!UICONTROL Create]** om een nieuwe levering te maken.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -134,12 +134,12 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
   <tr> 
    <td> Korte datum<br /> </td> 
    <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 25-09-2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 09-25-2018</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25-09-2018</strong></p> </td> 
   </tr> 
   <tr> 
    <td> Korte datum met tijd<br /> </td> 
    <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25-09-2018 10:47:25:00</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 09-25-2018 22:47:25</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,7 +158,7 @@ Als u op **[!UICONTROL Yes]** Deze waarde is beschikbaar in de keuzelijst met in
 
 ### Standaardeenheden {#default-units}
 
-Op de gebieden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van een levering, goedkeuringstermijn voor een taak, enz.), kan de waarde in het volgende worden uitgedrukt **eenheden**:
+Op de gebieden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van een levering, goedkeuringstermijn voor een taak enz.), kan de waarde als volgt worden uitgedrukt **eenheden**:
 
 * **[!UICONTROL s]** gedurende seconden,
 * **[!UICONTROL mn]** gedurende minuten,
@@ -169,8 +169,8 @@ Op de gebieden die een duur uitdrukken (bv. geldigheidsperiode van de middelen v
 
 ## Video over zelfstudie {#video}
 
-In deze video wordt de werkruimte Campaign Classic weergegeven.
+In deze video wordt de werkruimte van het Campaign Classic weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

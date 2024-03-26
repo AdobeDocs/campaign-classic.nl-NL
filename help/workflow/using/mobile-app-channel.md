@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Kanaal voor mobiele apps
-description: Kanaal voor mobiele apps
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Mobiel App-kanaal
+description: Mobiel App-kanaal
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 18%
+source-wordcount: '72'
+ht-degree: 13%
 
 ---
 
 
-# Kanaal voor mobiele apps{#mobile-app-channel}
+# Mobiel App-kanaal{#mobile-app-channel}
 
 
 
-De hieronder beschreven workflow wordt geïnstalleerd met de **Mobiel App-kanaal** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../delivery/using/about-mobile-app-channel.md).
+De hieronder beschreven workflow wordt geïnstalleerd met de **Mobiel App-kanaal** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 

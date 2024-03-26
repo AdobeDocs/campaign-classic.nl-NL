@@ -2,13 +2,13 @@
 product: campaign
 title: Eigenschappen voor webformulieren definiëren
 description: Eigenschappen voor webformulieren definiëren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1223'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Deze elementen worden onder aan elke pagina weergegeven. Hun standpunten kunnen 
 
 >[!NOTE]
 >
->Het is mogelijk om de **[!UICONTROL Previous]** op sommige pagina&#39;s. Ga hiertoe naar de desbetreffende pagina en controleer de **[!UICONTROL Disallow returning to the previous page]** optie. Deze optie is toegankelijk wanneer de hoofdmap van de paginastructuur is geselecteerd.
+>Het is mogelijk om de **[!UICONTROL Previous]** op sommige pagina&#39;s. Ga hiertoe naar de desbetreffende pagina en controleer de **[!UICONTROL Disallow returning to the previous page]** -optie. Deze optie is toegankelijk wanneer de hoofdmap van de paginastructuur is geselecteerd.
 
 De **[!UICONTROL Template]** van het **[!UICONTROL Rendering]** kunt u een thema selecteren uit de beschikbare thema&#39;s.
 
@@ -105,9 +105,9 @@ De geldigheidsperiode loopt vanaf **[!UICONTROL Start]** aan de **[!UICONTROL En
 
 ## Toegangsbeheer voor formulieren {#form-access-control}
 
-Standaard wordt toegang tot webformulieren uitgevoerd in anonieme modus: aan alle operatoren die toegang krijgen tot het formulier, worden de rechten van de WebApp-operator toegewezen.
+Standaard wordt toegang tot de webformulieren uitgevoerd in anonieme modus: aan alle operatoren die toegang krijgen tot het formulier, worden de rechten van de WebApp-operator toegewezen.
 
-U kunt toegangsbeheer inschakelen voor de weergave van het formulier, bijvoorbeeld wanneer u een formulier op een intranetsite levert, om gebruikers te verifiëren. Om dit te doen, toon **[!UICONTROL Properties]** en klik op het **[!UICONTROL Enable access control]** zoals hieronder weergegeven:
+U kunt toegangsbeheer inschakelen voor de weergave van het formulier, bijvoorbeeld wanneer u een formulier op een intranetsite levert, om gebruikers te verifiëren. Om dit te doen, toon **[!UICONTROL Properties]** en klikt u op het **[!UICONTROL Enable access control]** zoals hieronder weergegeven:
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -134,21 +134,21 @@ De volgende parameters zijn standaard beschikbaar:
 * **id** om de gecodeerde id aan te geven.
 * **lang** om de weergavetaal te wijzigen.
 * **oorsprong** om de oorsprong van de geënquêteerde te specificeren.
-* **_uuid** schakelt weergave van formulieren vóór publicatie en foutcontrole in. Deze parameter is bestemd voor intern gebruik (maken en fouten opsporen): wanneer u tot het formulier van het Web via dit URL toegang hebt, worden de gecreeerde verslagen niet in het volgen (rapporten) in aanmerking genomen. De oorsprong wordt gedwongen naar de **[!UICONTROL Adobe Campaign]** waarde.
+* **_uuid** schakelt weergave van formulieren vóór publicatie en foutcontrole in. Deze parameter is voor intern gebruik (creatie en zuivert): wanneer u tot het formulier van het Web via dit URL toegang hebt, worden de gecreeerde verslagen niet in het volgen (rapporten) in aanmerking genomen. De oorsprong wordt gedwongen naar de **[!UICONTROL Adobe Campaign]** waarde.
 
-   Het wordt gebruikt met de **_voorvertoning** parameters en/of **_debug**:
+  Het wordt gebruikt met de **_voorvertoning** parameters en/of **_debug**:
 
-   **_voorvertoning** om de laatst opgeslagen versie weer te geven. Deze parameter mag alleen in de testfase worden gebruikt.
+  **_voorvertoning** om de laatst opgeslagen versie weer te geven. Deze parameter mag alleen in de testfase worden gebruikt.
 
-   **_debug** om de tracering van de gegevensinvoer weer te geven of te berekenen op de pagina&#39;s van het formulier. Hiermee wordt meer informatie over fouten opgehaald, ook als het formulier eenmaal is gepubliceerd.
+  **_debug** om de tracering van de gegevensinvoer weer te geven of te berekenen op de pagina&#39;s van het formulier. Hiermee wordt meer informatie over fouten opgehaald, ook als het formulier eenmaal is gepubliceerd.
 
-   >[!CAUTION]
-   >
-   >Wanneer het formulier via een URL wordt weergegeven met de opdracht **_uuid** de waarde van de **[!UICONTROL origin]** parameter is gedwongen om **Adobe Campaign**.
+  >[!CAUTION]
+  >
+  >Wanneer het formulier via een URL wordt weergegeven met de opdracht **_uuid** de waarde van de **[!UICONTROL origin]** parameter is gedwongen om **Adobe Campaign**.
 
 ## Parameters toevoegen {#adding-parameters}
 
-Parameters kunnen via de **[!UICONTROL Parameters...]** in het venster Eigenschappen van het formulier. Zij kunnen verplicht worden gesteld, zoals hieronder wordt getoond:
+Parameters kunnen worden toegevoegd via de **[!UICONTROL Parameters...]** in het venster Eigenschappen van het formulier. Zij kunnen verplicht worden gesteld, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 

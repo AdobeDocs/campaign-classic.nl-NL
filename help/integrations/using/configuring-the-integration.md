@@ -3,15 +3,15 @@ product: campaign
 title: Adobe Experience Manager-integratie configureren
 description: Leer hoe te om campagne-AEM integratie te vormen
 feature: Experience Manager Integration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ U moet een beveiligingszone configureren voor deze operator om verbinding te mak
 >
 >We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de installatie voor meer informatie [hulplijn](../../installation/using/security-zones.md).
 
-Neem contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
+Als uw instantie Campagne door Adobe wordt ontvangen, contacteer [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
 
 1. Open de **serverConf.xml** configuratiebestand.
 1. Toegang krijgen tot de **allowUserPassword** kenmerk van de geselecteerde beveiligingszone en stel deze in op **true**.
@@ -124,7 +124,7 @@ Voer de onderstaande stappen uit om de configuratie in Adobe Experience Manager 
 
 1. Adobe Experience Manager verbinden met Adobe Campaign door een speciale toepassing te configureren **Cloud Service**.
 
-   Raadpleeg Adobe Experience Manager voor meer informatie over het verbinden van beide oplossingen via Cloud Services [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   Raadpleeg Adobe Experience Manager voor meer informatie over het verbinden van beide oplossingen via Cloud Servicen [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Vorm **ExternalAlizer-service**.
 

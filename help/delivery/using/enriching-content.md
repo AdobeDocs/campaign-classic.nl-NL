@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Content verrijken
-description: Content verrijken
+title: Inhoud verrijken
+description: Inhoud verrijken
 badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Management
@@ -10,11 +10,11 @@ exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Content verrijken{#enriching-content}
+# Inhoud verrijken{#enriching-content}
 
 Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven komt uit generische vragen of verbonden lijsten.
 

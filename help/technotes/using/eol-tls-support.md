@@ -10,8 +10,8 @@ topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 3%
+source-wordcount: '867'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 
 
-Adobe steunt niet meer gebruikerssystemen en cliëntsystemen die niet volgzaam met het Protocol van de Veiligheid van de Laag van het Vervoer (TLS) 1.2 zijn. Als u oudere versies van TLS blijft gebruiken, kan de toegang tot alle Adobe-producten en -services verloren gaan.
+De Adobe steunt niet meer gebruikerssystemen en cliëntsystemen die niet volgzaam met het Protocol van de Veiligheid van de Laag van het Vervoer (TLS) 1.2 zijn. Als u oudere versies van TLS blijft gebruiken, kan de toegang tot alle producten en services van de Adobe verloren gaan.
 
 ## Waarom zie ik deze pagina?
 
@@ -52,7 +52,7 @@ Het besturingssysteem en de toepassingsframeworks moeten ook ondersteuning biede
 
 * **Wat is de impact?**
 
-  Voor de naleving van de beveiligingsnormen is vanaf mei 2018 de veroudering van oudere protocollen vereist en wordt het gebruik van TLS 1.2 als de actuele versie verplicht gesteld. Als uw systeem niet compatibel is met TLS 1.2, is de toegang tot bepaalde Adobe-apps en -services beperkt.
+  De veiligheidsnalevingsnormen van de Adobe vereisen dat oudere protocollen met ingang van mei 2018 worden afgeschaft en verplicht het gebruik van TLS 1.2 als de bijgewerkte versie. Als uw systeem niet compatibel is met TLS 1.2, is de toegang tot bepaalde Adobe-apps en -services beperkt.
 
 * **Hoe beïnvloedt TLS u?**
 
@@ -68,21 +68,21 @@ Het besturingssysteem en de toepassingsframeworks moeten ook ondersteuning biede
 
   Er zijn gedocumenteerde aanvallen tegen TLS 1.0 geweest die een oudere encryptiemethode gebruiken en de oudere versies zijn kwetsbaarder dan TLS 1.2. Zie Aanvallen tegen TLS/SSL voor meer informatie.
 
-* **Waarom schakelt Adobe ondersteuning voor TLS 1.0 en 1.1 uit?**
+* **Waarom schakelt de Adobe steun voor TLS 1.0 en 1.1 uit?**
 
-  Adobe heeft de normen van de veiligheidsCompatibiliteit die het onbruikbaar maken steun voor oudere protocollen vereisen. Eén van deze standaarden zorgt voor compatibiliteit met de betaalkaartindustrie (PCI). De de aanpassingsserver van PCI is een reeks veiligheidsnormen vereist organisaties die, creditcardinformatie goedkeuren verwerken, opslaan of overbrengen om een veilige milieu te handhaven.
+  De Adobe heeft normen van de veiligheids naleving die het onbruikbaar maken steun voor oudere protocollen vereisen. Eén van deze standaarden zorgt voor compatibiliteit met de betaalkaartindustrie (PCI). De de aanpassingsserver van PCI is een reeks veiligheidsnormen vereist organisaties die, creditcardinformatie goedkeuren verwerken, opslaan of overbrengen om een veilige milieu te handhaven.
 
   PGB-compatibiliteit verplicht het gebruik van TLS 1.1 of hoger vanaf mei 2018.
 
-* **Waarom stelt Adobe het gebruik van TLS 1.2 verplicht in plaats van TLS 1.1 of TLS 1.0 toe te staan?**
+* **Waarom verplicht de Adobe het gebruik van TLS 1.2 in plaats van TLS 1.1 of TLS 1.0 toe te staan?**
 
   De meeste aanvragen voor Adobe-apps en webservices zijn afkomstig van TLS 1.2-compatibele gebruikerssystemen, met weinig verkeer van TLS 1.1-systemen.
 
-  Adobe is gemigreerd naar TLS 1.2, zodat toepassingen en webservices van dit programma veiliger worden benaderd.
+  De Adobe is gemigreerd naar TLS 1.2, zodat de toepassingen en webservices van de toepassing veiliger worden benaderd.
 
 * **Wat is de laatste datum waarop ik een oudere versie van TLS kan gebruiken?**
 
-  Adobe raadt gebruikers aan om snel af te zien van de oudere versies, zodat ze niet worden blootgesteld aan beveiligingsrisico&#39;s. Neem voor meer informatie contact op met de klantenservice van de Adobe of met de succesmanager van de klant.
+  Adobe moedigt gebruikers aan om snel af te zien van de oudere versies om blootstelling aan veiligheidskwetsbaarheden te voorkomen. Neem voor meer informatie contact op met de klantenservice van de Adobe of met de succesmanager van de klant.
 
 * **Welk foutenbericht verschijnt als ik browser gebruik die niet voor TLS 1.2 wordt gevormd?**
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Inhoudsmodel {#content-model-10}
 
-methode:==( help: | Parameters)
+methode:==( help: | parameters)
 
 ## Attributen {#attributes-10}
 

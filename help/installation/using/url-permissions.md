@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 29%
+source-wordcount: '339'
+ht-degree: 25%
 
 ---
 
@@ -30,7 +30,7 @@ Instanties mogen standaard geen verbinding maken met externe URL’s. Het is ech
 >
 >Als **gehost** klant, als u toegang hebt tot [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl), kunt u de interface van de URL toestemmingen zelf gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 >
->Overige **hybride/gehost** de klanten moeten uit bereiken aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
+>Overige **hybride/gehost** de klanten moeten uit bereiken aan het team van de steun van de Adobe om IP aan de lijst van gewenste personen toe te voegen.
 >
 
 Voor **Hybride** en **Op locatie** implementaties, moet de beheerder naar een nieuwe **urlPermission** in de **serverConf.xml** bestand.

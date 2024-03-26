@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 5%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    Als het werkschema nog ontbreekt, controleer het controlelogboek voor specifieke fout, los dienovereenkomstig problemen op, dan opnieuw begin het werkschema opnieuw.
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van het Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
 
    Een beheerder kan ook controleren of de **wfserver@`<instance>`** wordt op de hoofdtoepassingsserver gestart met de onderstaande opdracht.
 
@@ -57,7 +57,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
    [...]
    ```
 
-   Als de module niet actief is, neemt u contact op met de klantenservice van Adobe. Als u een installatie op locatie hebt, moet een beheerder de service opnieuw starten met de onderstaande opdracht.
+   Als de module niet actief is, neemt u contact op met de klantenservice van de Adobe. Als u een installatie op locatie hebt, moet een beheerder de service opnieuw starten met de onderstaande opdracht.
 
    ```
    nlserver start wfserver@<instance-name>
@@ -88,7 +88,7 @@ Als werkstromen niet worden uitgevoerd en hun status is **Beginnen in uitvoering
 
 Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)).
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van het Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)).
 
    Een beheerder kan ook controleren of de **wfserver@`<instance>`** wordt op de hoofdtoepassingsserver gestart met de onderstaande opdracht.
 
@@ -102,7 +102,7 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 
    Raadpleeg voor meer informatie over het controleren van modules [deze sectie](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Als de module niet actief is, neemt u contact op met de klantenservice van Adobe. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
+1. Als de module niet actief is, neemt u contact op met de klantenservice van de Adobe. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
 
    ```
    nlserver start wfserver@<instance-name>

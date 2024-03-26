@@ -2,7 +2,7 @@
 product: campaign
 title: Gebruiksscenario’s
 description: Gebruiksgevallen melden
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
@@ -231,7 +231,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Schrap de standaardtelling en creeer drie statistieken om de statistieken te vormen die in de lijst moeten worden getoond.
 
-   Hier wordt voor elke nieuwsbrief in de tabel het volgende weergegeven: het aantal keren dat wordt geopend, het aantal klikken, het percentage waarmee wordt geklikt (als een percentage).
+   Hier wordt voor elke nieuwsbrief in de tabel het volgende weergegeven: het aantal keren dat wordt geopend, het aantal klikken, het percentage waarmee wordt gereactiveerd (als een percentage).
 
 1. Voeg een statistiek toe voor het tellen van het aantal klikken: definieer het relevante filter in de **[!UICONTROL Filter]** tab.
 

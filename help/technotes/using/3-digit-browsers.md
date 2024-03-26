@@ -6,7 +6,7 @@ feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ De compatibiliteit van belangrijke websites is van tevoren getest. Als er proble
 
 Mogelijke problemen of verlies van functionaliteit op de website komen voort uit de userAgent-tekenreeks die browsers verzenden naar websites die u bezoekt: de userAgent is een tekenreeks die door de browser naar de website wordt verzonden om de site te laten weten welke browser en versie u gebruikt, en de bijbehorende technologie. Wanneer uw browser een verzoek naar een website verzendt, identificeert het zich met het koord van de gebruikersagent alvorens het de gevraagde inhoud terugwint. De gegevens in de tekenreeks van de gebruikersagent helpen de website de inhoud te leveren in een indeling die geschikt is voor uw browser. De versie van de gebruikersagent wordt verhoogd zodat deze overeenkomt met het versienummer van de browser. Het verplaatsen van 2 naar 3 cijfers kan problemen veroorzaken.
 
-## Heeft dit gevolgen voor u?{#version-100-impact}
+## Heb je invloed op?{#version-100-impact}
 
-Adobe raadt u aan uw Campagne-webtoepassingen, waaronder webformulieren en enquêtes, te testen om te controleren of deze nog steeds goed werken met deze nieuwe browserversies.
+Adobe raadt u aan uw Campagne-webtoepassingen, waaronder webformulieren en enquêtes, te testen om ervoor te zorgen dat deze nog steeds goed werken met deze nieuwe browserversies.
 
 Deze aanbeveling is van toepassing op alle webtoepassingen, en vooral als u JavaScript-code hebt opgenomen.
 

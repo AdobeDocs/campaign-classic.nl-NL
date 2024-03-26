@@ -2,12 +2,12 @@
 product: campaign
 title: Lijsten beheren en aanpassen
 description: Leer om lijsten te doorbladeren en te vormen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Als u alle records wilt laden, klikt u met de rechtermuisknop op de lijst en sel
 
 ### Standaardaantal records wijzigen {#change-default-number-of-records}
 
-Als u het standaardaantal geladen records wilt wijzigen, klikt u op **[!UICONTROL Configure list]** in de rechterbenedenhoek van de lijst.
+Om het standaardaantal geladen verslagen te veranderen, klik **[!UICONTROL Configure list]** in de rechterbenedenhoek van de lijst.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -83,12 +83,12 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
    >
    >Gebruik de **Zoeken** veld om een zoekopdracht uit te voeren in de beschikbare velden. Zie voor meer informatie [deze sectie](#sorting-a-list).
    >
-   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer informatie](#configuring-lists).
+   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer informatie](#configuring-lists).
    >
    >U kunt gegevens ook sorteren en filteren. Zie [deze sectie](../../platform/using/filtering-options.md).
 
 1. Herhaal deze bewerking voor elke kolom die u wilt weergeven.
-1. De pijlen gebruiken om de **weergavevolgorde**. De hoogste kolom zal op de linkerzijde in de lijst van verslagen zijn.
+1. Gebruik de pijlen om de **weergavevolgorde**. De hoogste kolom zal op de linkerzijde in de lijst van verslagen zijn.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
@@ -103,7 +103,7 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
 U kunt nieuwe kolommen maken om extra velden in de lijst weer te geven. Dit doet u als volgt:
 
 1. Klikken **[!UICONTROL Configure the list]** rechts van de lijst.
-1. Klikken **[!UICONTROL Add]** om een nieuw veld in de lijst weer te geven.
+1. Klikken **[!UICONTROL Add]** een nieuw veld in de lijst weergeven.
 
 ### Een kolom verwijderen {#remove-a-column}
 
@@ -174,11 +174,11 @@ Het gebruik van de invoer- en uitvoerfuncties wordt uitgelegd in [Algemene invoe
 
 ## Een lijst sorteren {#sorting-a-list}
 
-Lijsten kunnen een grote hoeveelheid gegevens bevatten. U kunt deze gegevens sorteren of eenvoudige of geavanceerde filters toepassen. Door te sorteren kunt u gegevens in oplopende of aflopende volgorde weergeven. Met filters kunt u alleen geselecteerde gegevens definiëren en combineren.
+Lijsten kunnen veel gegevens bevatten. U kunt deze gegevens sorteren of eenvoudige of geavanceerde filters toepassen. Door te sorteren kunt u gegevens in oplopende of aflopende volgorde weergeven. Met filters kunt u alleen geselecteerde gegevens definiëren en combineren.
 
-Klik op de kolomkop om een oplopende of aflopende sortering toe te passen of om het sorteren van gegevens te annuleren. De actieve sorteerstatus en sorteervolgorde worden aangegeven met een blauwe pijl vóór het kolomlabel. Een rood streepje vóór het kolomlabel betekent dat de sortering wordt toegepast op gegevens die uit de database zijn geïndexeerd. Deze sorteermethode wordt gebruikt om sorteertaken te optimaliseren.
+Klik op de kolomkop om oplopende of aflopende sortering toe te passen of om gegevenssortering te annuleren. De actieve sorteerstatus en sorteervolgorde worden aangegeven met een blauwe pijl vóór het kolomlabel. Een rood streepje vóór het kolomlabel betekent dat de sortering wordt toegepast op gegevens die uit de database zijn geïndexeerd. Deze sorteermethode wordt gebruikt om sorteertaken te optimaliseren.
 
-U kunt ook sorteren configureren of sorteercriteria combineren. Volg de onderstaande stappen om dit te doen:
+U kunt ook sorteren configureren of sorteercriteria combineren. Hiervoor voert u de volgende stappen uit:
 
 1. **[!UICONTROL Configure list]** en rechts van de lijst.
 

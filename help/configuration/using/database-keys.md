@@ -5,13 +5,13 @@ description: Belangrijk beheer in gegevensschema's begrijpen
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
+exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Sleutelbeheer in schema&#39;s {#management-of-keys}
 
@@ -187,5 +187,5 @@ Klik op de volgende koppelingen voor meer informatie:
 * [Aan de slag met schema&#39;s](about-schema-reference.md)
 * [Schemastructuur](schema-structure.md)
 * [Databasetoewijzing](database-mapping.md)
-* [Koppelingsbeheer](database-links.md)
+* [Beheer van koppeling](database-links.md)
 * [Campaign datamodel](about-data-model.md)

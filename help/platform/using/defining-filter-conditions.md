@@ -3,7 +3,7 @@ product: campaign
 title: Filtervoorwaarden definiëren
 description: Filtervoorwaarden definiëren
 feature: Query Editor
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 37%
+source-wordcount: '3307'
+ht-degree: 34%
 
 ---
 
@@ -94,7 +94,7 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> Heeft overeenkomsten met <span class="uicontrol">Like</span> . Hiermee kunt u de ingevoerde waarde niet herstellen. Ook hier moet de ingevoerde waarde het jokerteken <span class="uicontrol">%</span> bevatten.<br /> </td> 
+   <td> Is gelijkaardig aan <span class="uicontrol">leuk</span> . Hiermee kunt u de ingevoerde waarde niet herstellen. Ook hier moet de ingevoerde waarde het jokerteken <span class="uicontrol">%</span> bevatten.<br /> </td> 
    <td> <strong>Achternaam (@lastName) is niet zoals 'Smi%h'</strong>. Hier worden de ontvangers met de achternaam 'Smi%h' niet geretourneerd.<br /> </td> 
   </tr> 
   <tr> 
@@ -320,7 +320,7 @@ Voer de volgende stappen uit:
 
    Er zijn verschillende typen beschikbare formules: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Selecteren **[!UICONTROL Process on an aggregate function]**, en **[!UICONTROL Count]**. Klikken **[!UICONTROL Next]**.
+   Selecteren **[!UICONTROL Process on an aggregate function]**, en **[!UICONTROL Count]**. Klik op **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -371,12 +371,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Avg</strong><br /> </td> 
    <td> Hiermee wordt het gemiddelde van een kolom met het getaltype geretourneerd<br /> </td> 
-   <td> Avg(&lt;waarde&gt;)<br /></td> 
+   <td> Avg(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Aantal</strong><br /> </td> 
    <td> Telt de niet-null waarden van een kolom<br /> </td> 
-   <td> Count(&lt;waarde&gt;)<br /></td>  
+   <td> Count()&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>CountAll</strong><br /> </td> 
@@ -386,17 +386,17 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Aftelbaar</strong><br /> </td> 
    <td> Telt de verschillende niet-null-waarden van een kolom<br /> </td> 
-   <td> Countdistinct(&lt;waarde&gt;)<br /></td> 
+   <td> Countdifferent()&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
    <td> Retourneert de maximumwaarde van een getal, tekenreeks of datumtekstkolom<br /> </td> 
-   <td> Max(&lt;waarde&gt;)<br /></td>  
+   <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
    <td> Hiermee wordt de minimumwaarde van een kolom met een getal, tekenreeks of datumtype geretourneerd<br /> </td> 
-   <td> Min(&lt;waarde&gt;)<br /></td> 
+   <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
@@ -406,12 +406,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Som</strong><br /> </td> 
    <td> Hiermee wordt de som van de waarden van een getal, tekenreeks of kolom met het gegevenstype geretourneerd<br /> </td> 
-   <td> Sum(&lt;waarde&gt;)<br /></td> 
+   <td> Sum()&lt;value&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
 
-**Tekenreeks**
+**String**
 
 <table> 
  <tbody> 
@@ -423,37 +423,37 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> Geeft aan of alle parameters niet null en niet leeg zijn<br /> </td> 
-   <td> AllNonNull2(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> Geeft aan of alle parameters niet null en niet leeg zijn<br /> </td> 
-   <td> AllNonNull3(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> Hiermee wordt de ASCII-waarde van het eerste teken in de tekenreeks geretourneerd.<br /> </td> 
-   <td> Ascii(&lt;tekenreeks&gt;)<br /></td> 
+   <td> Retourneert de ASCII-waarde van het eerste teken in de tekenreeks.<br /> </td> 
+   <td> Ascii(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
    <td> Hiermee wordt het teken geretourneerd dat overeenkomt met de ASCII-code ‘n’<br /> </td> 
-   <td> Char(&lt;nummer&gt;)<br /></td>  
+   <td> Char()&lt;number&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
    <td> Retourneert de positie van tekenreeks 2 in tekenreeks 1.<br /> </td> 
-   <td> Charindex(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> Charindex()&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
    <td> Retourneert de n-de (van 1 tot en met n) regel van de tekenreeks<br /> </td> 
-   <td> GetLine(&lt;tekenreeks&gt;)<br /></td> 
+   <td> GetLine()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
    <td> Retourneert de derde parameter als de eerste twee parameters gelijk zijn. Indien niet, wordt de laatste parameter geretourneerd<br /> </td> 
-   <td> IfEquals(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
@@ -463,12 +463,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
    <td> Voegt de doorgegeven tekenreeksen samen als parameters. Voegt indien nodig spaties tussen de tekenreeksen toe.<br /> </td> 
-   <td> JuxtWords(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
    <td> Voegt de doorgegeven tekenreeksen samen als parameters. Voegt indien nodig spaties tussen de tekenreeksen toe<br /> </td> 
-   <td> JuxtWords3(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td>  
+   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -478,37 +478,37 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
    <td> Retourneert de eerste n tekens van de tekenreeks<br /> </td> 
-   <td> Left(&lt;tekenreeks&gt;, &lt;nummer&gt;)<br /></td> 
+   <td> Left(&lt;string&gt;, &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
    <td> Retourneert de lengte van de tekenreeks<br /> </td> 
-   <td> Length(&lt;tekenreeks&gt;)<br /></td> 
+   <td> Length()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Lower</strong><br /> </td> 
    <td> Hiermee wordt de tekenreeks in kleine letters geretourneerd<br /> </td> 
-   <td> Lower(&lt;tekenreeks&gt;)<br /></td> 
+   <td> Lower()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
    <td> Hiermee worden spaties links van de tekenreeks verwijderd<br /> </td> 
-   <td> Ltrim(&lt;tekenreeks&gt;)<br /></td> 
+   <td> Ltrim()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
    <td> Retourneert een hexadecimale representatie van de MD5-toets van een tekenreeks<br /> </td> 
-   <td> Md5Digest(&lt;tekenreeks&gt;)<br /></td> 
+   <td> Md5Digest()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>MemoContains</strong><br /> </td> 
    <td> Hiermee wordt opgegeven of het memo de tekenreeks bevat die als parameter is doorgegeven<br /> </td> 
-   <td> MemoContains(&lt;memo&gt;, &lt;tekenreeks&gt;)<br /></td> 
+   <td> MemoContains()&lt;memo&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> Hiermee wordt de voltooide tekenreeks aan de rechterkant geretourneerd<br /> </td> 
-   <td> RPad(&lt;tekenreeks&gt;, &lt;nummer&gt;, &lt;teken&gt;)<br /></td> 
+   <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
@@ -599,7 +599,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>DateOnly</strong><br /> </td> 
-   <td> Retourneert alleen de datum (met de tijd 00:00)*<br /> </td> 
+   <td> Retourneert alleen de datum (met tijd om 00:00)*<br /> </td> 
    <td> DateOnly(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -789,7 +789,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
 >
 >Let erop dat de **Alleen datum** De functie houdt rekening met de tijdzone van de server, niet de exploitant.
 
-**Numerieke waarden**
+**Numeriek**
 
 <table> 
  <tbody> 

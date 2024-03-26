@@ -11,12 +11,12 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
 
-# Midsourcingserver{#mid-sourcing-server}
+# Midden-sourcingserver{#mid-sourcing-server}
 
 
 
@@ -89,7 +89,7 @@ Zoek vanuit de clientconsole de **E-mailroutering via midsourcing** mid-sourcing
 
    >[!CAUTION]
    >
-   >Als u de server voor midsourcing installeert en extra Adobe Campaign-modules wilt installeren, raden wij u aan de module Aflevering te gebruiken en niet de module Campagne.
+   >Als u de server voor midsourcing installeert en extra Adobe Campaign-modules wilt installeren, raden we u aan de module Aflevering te gebruiken en niet de module Campagne.
 
    Volg dezelfde procedure als voor de standaardplaatsing, die slechts selecteert **[!UICONTROL Mid-sourcing platform]** -optie.
 

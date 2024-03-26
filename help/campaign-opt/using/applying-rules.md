@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 9%
+source-wordcount: '994'
+ht-degree: 8%
 
 ---
 
@@ -81,10 +81,10 @@ In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepas
    * Filterregels die door de gebruiker zijn gedefinieerd.
    * Deduplicatieregel op het adres of de id (indien nodig toegepast).
 
-1. Drukregels.
+1. Drukvoorschriften.
 1. Capaciteitsregels.
 1. Controleregels, indien toegepast aan het einde van targeting.
-1. Controleregels, indien toegepast aan het begin van personalisatie. Als de gebruikersregels (filtreren/druk/capacitief) zijn verlopen en opnieuw moeten worden berekend, zullen zij tijdens deze stap worden toegepast.
+1. Regels van de controle, als zij bij het begin van verpersoonlijking worden toegepast. Als de gebruikersregels (filtreren/druk/capacitief) zijn verlopen en opnieuw moeten worden berekend, zullen zij tijdens deze stap worden toegepast.
 1. Controlevoorschriften, als zij aan het eind van verpersoonlijking van toepassing zijn.
 
 >[!NOTE]

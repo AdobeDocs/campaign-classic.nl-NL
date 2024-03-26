@@ -2,14 +2,14 @@
 product: campaign
 title: Opeenvolging webformulierpagina's definiëren
 description: Opeenvolging webformulierpagina's definiëren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '714'
+ht-degree: 1%
 
 ---
 
@@ -35,33 +35,33 @@ De bestemming kan zijn:
 
 * Een andere pagina van het formulier. Selecteer **[!UICONTROL Internal activity]** en geef vervolgens de gewenste pagina op, zoals hieronder:
 
-   ![](assets/s_ncs_admin_jump_param1.png)
+  ![](assets/s_ncs_admin_jump_param1.png)
 
-* Een ander formulier. Selecteer hiervoor de optie **[!UICONTROL Explicit]** en geeft u het doelformulier op.
+* Een ander formulier. Selecteer de optie **[!UICONTROL Explicit]** en geeft u het doelformulier op.
 
-   ![](assets/s_ncs_admin_jump_param2.png)
+  ![](assets/s_ncs_admin_jump_param2.png)
 
 * De bestemming kan in een variabele worden opgeslagen. Selecteer deze optie in dit geval in de vervolgkeuzelijst, zoals hieronder wordt weergegeven:
 
-   ![](assets/s_ncs_admin_jump_param3.png)
+  ![](assets/s_ncs_admin_jump_param3.png)
 
 * De **[!UICONTROL Comment]** kunt u informatie invoeren die door de operator zichtbaar wordt wanneer deze op het object in het diagram klikt.
 
-   ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## Voorbeeld: toegang krijgen tot een ander formulier volgens een parameter van de URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
+## Voorbeeld: een ander formulier benaderen volgens een parameter van de URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 In het volgende voorbeeld, willen wij een vorm van het Web vormen die, wanneer goedgekeurd, een andere vorm zal tonen die door een parameter van URL wordt aangewezen. Hiervoor voert u de volgende stappen uit:
 
-1. Een sprong invoegen aan het einde van een formulier: dit vervangt de **[!UICONTROL End]** doos.
+1. Voeg een sprong in aan het einde van een formulier: dit vervangt de **[!UICONTROL End]** doos.
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Voeg in de formuliereigenschappen een parameter toe (**next**) opgeslagen in een lokale variabele (**next**). De lokale variabelen worden gedetailleerd in [Gegevens opslaan in een lokale variabele](web-forms-answers.md#storing-data-in-a-local-variable).
+1. Voeg een parameter (**next**) opgeslagen in een lokale variabele (**next**). Lokale variabelen worden in detail beschreven in [Gegevens opslaan in een lokale variabele](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. Bewerk de **[!UICONTROL Jump]** object, selecteert u de **[!UICONTROL Stored in a variable]** en selecteert u de optie **next** in de keuzelijst.
+1. Bewerk de **[!UICONTROL Jump]** object, selecteert u de **[!UICONTROL Stored in a variable]** en selecteert u de **next** in het keuzemenu.
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
@@ -101,7 +101,7 @@ Voeg in het diagram van het formulier een testvak in om de voorwaarden te defini
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Selecteer **[!UICONTROL Activate the default branching]** optie om een overgang toe te voegen voor gevallen waarin geen van de voorwaarden waar is. Deze optie is niet nodig als elk mogelijk geval onder de vastgestelde voorwaarden valt.
+Selecteer de **[!UICONTROL Activate the default branching]** optie om een overgang toe te voegen voor gevallen waarin geen van de voorwaarden waar is. Deze optie is niet nodig als elk mogelijk geval onder de vastgestelde voorwaarden valt.
 
 Definieer vervolgens de volgorde van de pagina wanneer een van de voorwaarden waar is, bijvoorbeeld:
 
@@ -123,5 +123,5 @@ Als u deze pagina wilt aanpassen, dubbelklikt u op **[!UICONTROL End]** en voert
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* U kunt bestaande HTML-inhoud kopiëren en plakken. Klik op **[!UICONTROL Display source code]** en voeg de HTML-code in.
-* U kunt een externe URL gebruiken; Hiervoor selecteert u de desbetreffende optie en voert u de URL in van de pagina die u wilt weergeven.
+* U kunt bestaande HTML-inhoud kopiëren en plakken. Om dit te doen, klik **[!UICONTROL Display source code]** en voeg de HTML-code in.
+* U kunt een externe URL gebruiken; hiervoor selecteert u de bijbehorende optie en voert u de URL in van de pagina die u wilt weergeven.

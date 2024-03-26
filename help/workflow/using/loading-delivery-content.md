@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Leveringscontent laden
-description: Leveringscontent laden
+description: Inhoud van levering laden
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
@@ -26,7 +26,7 @@ Dit doet u als volgt:
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. Een nieuwe workflow maken, bijvoorbeeld op basis van **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+1. Een nieuwe workflow maken, bijvoorbeeld van **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 1. Voeg een **[!UICONTROL File transfer]** activiteit in uw werkschema, en vorm het door te specificeren
 
    * De externe account die moet worden gebruikt om verbinding te maken met de S3- of (S)FTP-server.
@@ -36,14 +36,14 @@ Dit doet u als volgt:
 
 1. Voeg een **[!UICONTROL Delivery]** activiteit en verbind het met de uitgaande overgang van **[!UICONTROL File transfer]** activiteit. Configureer dit als volgt:
 
-   * Aflevering: Afhankelijk van uw behoeften, kan het een specifieke levering zijn die reeds in het systeem, of een nieuwe levering wordt gecreeerd die op een bestaand malplaatje wordt gebaseerd.
+   * Levering: Afhankelijk van uw behoeften, kan het een specifieke levering zijn die reeds in het systeem, of een nieuwe levering wordt gecreeerd die op een bestaand malplaatje wordt gebaseerd.
    * Ontvangers: In dit voorbeeld wordt ervan uitgegaan dat het doel is opgegeven in de levering zelf.
    * Inhoud: Zelfs als de inhoud in de vorige activiteit wordt geïmporteerd, selecteert u **[!UICONTROL Specified in the delivery]**. Aangezien de inhoud rechtstreeks wordt geïmporteerd uit een bestand op een externe server, heeft de inhoud geen id wanneer deze wordt verwerkt door de workflow en kan niet worden geïdentificeerd als afkomstig van de binnenkomende gebeurtenis.
-   * Uit te voeren handeling: Selecteren **[!UICONTROL Save]** om de levering op te slaan en deze vanuit **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** zodra de workflow is uitgevoerd.
+   * Uit te voeren actie: Selecteren **[!UICONTROL Save]** om de levering op te slaan en deze vanuit **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** zodra de workflow is uitgevoerd.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. In de **[!UICONTROL Script]** tabblad van het dialoogvenster **[!UICONTROL Delivery]** activiteit, voeg het volgende bevel toe om de inhoud van het ingevoerde dossier in de levering te laden:
+1. In de **[!UICONTROL Script]** tabblad van het **[!UICONTROL Delivery]** activiteit, voeg het volgende bevel toe om de inhoud van het ingevoerde dossier in de levering te laden:
 
    ```
    delivery.content.html.source=loadFile(vars.filename)

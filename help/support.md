@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 63%
+source-wordcount: '657'
+ht-degree: 60%
 
 ---
 
@@ -54,7 +54,7 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
         <li><a href="production/using/performance-and-throughput-issues.md">Problemen met prestaties en doorvoer</a></li>
         <li><a href="delivery/using/delivery-performances.md">Leveringsprestaties</a></li>
         <li><a href="workflow/using/workflow-best-practices.md">Workflowprestaties optimaliseren</a></li>
-        <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering oplossen</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Leveringsfouten begrijpen</a></li>
         </ul>
@@ -93,8 +93,8 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
 
 ### Wat is het configuratiescherm?
 
-Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerder van Campaign Classic verhogen, doordat u de instellingen kunt beheren en het gebruik voor elk van uw instanties kunt bijhouden.
-[Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) voor meer informatie.
+Met het Configuratiescherm kunt u efficiënter werken als productbeheerder van Campaign Classic, doordat u de instellingen kunt beheren en het gebruik voor elk van uw instanties kunt bijhouden.
+[Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl) voor meer informatie.
 
 >[!NOTE]
 >
@@ -121,9 +121,9 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 * [Een nieuw subdomein instellen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl)
 * [SSL-certificaten controleren](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=nl)
 
-### Versie-instellingen
+### Instantie-instellingen
 
-Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel beheert. Meer informatie vindt u op de volgende pagina&#39;s:
+Leer hoe u de instellingen voor Campaigns Classic in het regelpaneel kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
 * [Voeg IPs op de lijst van gewenste personen toe](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) om toegang te krijgen tot uw Campagne-instantie(s)
 * [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 * [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
@@ -141,7 +141,7 @@ Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vr
 
 ### Downloadcentrum voor campagne openen
 
-Blader als Campagnebeheerder naar [deze pagina](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van de Experience Cloud toegang te hebben.
+Blader als Campagnebeheerder naar [deze pagina](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) toegang tot de Distributie van de Software van het Experience Cloud.
 
 ### Een ticket maken of een chat starten
 

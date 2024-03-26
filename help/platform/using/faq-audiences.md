@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 90%
+source-wordcount: '261'
+ht-degree: 76%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 90%
 
 Ontdek hoe u een populatie doelgericht kunt benaderen en hoe u doelgroepen kunt beheren in Adobe Campaign.
 
-## Hoe kan ik ontvangers maken? {#how-to-create-recipients-}
+## Hoe te om ontvangers tot stand te brengen? {#how-to-create-recipients-}
 
 U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole. Lees [deze sectie](../../platform/using/about-profiles.md) en ontdek hoe u profielen maakt en beheert in Campaign.
 
-## Profielen importeren? {#how-to-import-profiles-}
+## Hoe kan ik profielen importeren? {#how-to-import-profiles-}
 
 Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/import-operations-samples.md) in uw database.
 
@@ -44,16 +44,16 @@ Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd 
 
 ![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
-## Hoe kan ik een populatie dedupliceren voordat ik een bericht verzend? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
+## Hoe kan ik een populatie dedupliceren voordat ik een bericht verstuurt? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 U kunt een workflow gebruiken om dubbele data uit te sluiten van het doel van een levering, om te voorkomen dat hetzelfde bericht meerdere keren naar een ontvanger wordt verzonden.
 
 [Klik hier voor meer informatie](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) via een voorbeeld.
 
-## Hoe kan ik leden voor een nieuwsbrief identificeren doelgericht benaderen? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
+## Hoe te om abonnees aan een nieuwsbrief te identificeren en te richten? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
 Ontdek lidmaatschapsbeheer in Campaign en leer hoe u [een bericht naar leden kunt verzenden](../../delivery/using/managing-subscriptions.md).
 
-## Wat is de best practice om profielen uit te sluiten van een doelpopulatie? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
+## Wat is de beste praktijk om profielen uit te sluiten van een doelpopulatie? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
 Lees [deze pagina](../../workflow/using/read-list.md) om te leren hoe u een lijst met profielen kunt uitsluiten van de doelpopulatie.

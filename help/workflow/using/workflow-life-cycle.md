@@ -2,13 +2,13 @@
 product: campaign
 title: Levenscyclus van workflow
 description: Meer informatie over de levenscyclus van een workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 4%
 
 ---
 
@@ -20,21 +20,21 @@ De workflowcyclus bestaat uit drie hoofdstappen.
 
 * **Wordt bewerkt**
 
-   Dit is de eerste ontwerpfase: Als er een nieuwe workflow wordt gemaakt, wordt de status ervan bewerkt. De workflow wordt nog niet door de server afgehandeld en kan zonder risico worden gewijzigd.
+  Dit is de eerste ontwerpfase: als er een nieuwe workflow wordt gemaakt, wordt de status ervan bewerkt. De workflow wordt nog niet door de server afgehandeld en kan zonder risico worden gewijzigd.
 
 * **Gestart**
 
-   Zodra de eerste ontwerpfase is voltooid, kan de workflow worden gestart. In deze fase, wordt de instantie behandeld door de server en de individuele taken worden uitgevoerd. De workflow kan nog steeds met bepaalde voorzorgen worden aangepast.
+  Zodra de eerste ontwerpfase is voltooid, kan de workflow worden gestart. In deze fase, wordt de instantie behandeld door de server en de individuele taken worden uitgevoerd. De workflow kan nog steeds met bepaalde voorzorgen worden aangepast.
 
 * **Voltooid**
 
-   Een workflow is &#39;voltooid&#39; wanneer er geen taken meer worden uitgevoerd of wanneer een operator de instantie expliciet heeft gestopt.
+  Een werkstroom is &#39;voltooid&#39; wanneer er geen taken meer worden uitgevoerd of wanneer een operator de instantie expliciet heeft gestopt.
 
-De **Start** en **Aflevering** activiteiten worden beschreven terwijl de **Goedkeuring** activiteit knippert in de onderstaande workflow.
+Bijvoorbeeld de **Start** en **Aflevering** activiteiten worden beschreven terwijl de **Goedkeuring** activiteit knippert in de onderstaande workflow.
 
 ![](assets/new-workflow-6.png)
 
-Dit betekent dat de eerste twee activiteiten met succes zijn uitgevoerd en dat de goedkeuring bezig is, d.w.z. dat zij is gecreëerd maar nog niet is voltooid.
+Dit betekent dat de eerste twee activiteiten met succes zijn uitgevoerd en dat de goedkeuring in uitvoering is, d.w.z. dat zij is gecreëerd maar nog niet is voltooid.
 
 De tekens **574 - OK** weergegeven boven de overgang na de overgang **Aflevering** de activiteit houdt in dat de voorbereiding van de levering gericht is op 574 ontvangers en dat de bewerking met succes is voltooid. Deze informatie, die aan de overgangen wordt toegevoegd wanneer zij worden uitgevoerd, wordt berekend door de activiteiten die gegevens verwerken.
 

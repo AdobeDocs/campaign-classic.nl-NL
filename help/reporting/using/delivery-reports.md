@@ -2,14 +2,14 @@
 product: campaign
 title: Leveringsrapporten
 description: Leveringsrapporten
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 2%
+source-wordcount: '1464'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt waarden en aliassen. Raadpleeg [deze sectie](../../platform/using/managing-enumerations.md) voor meer informatie. De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt waarden en aliassen. Raadpleeg voor meer informatie hierover [deze sectie](../../platform/using/managing-enumerations.md). De **[!UICONTROL Others]** de categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -124,7 +124,7 @@ Dit rapport bevat de lijst met bezochte pagina&#39;s na een levering.
 
 ![](assets/s_ncs_user_url_report.png)
 
-U kunt de inhoud van dit rapport configureren door het volgende te selecteren: het scorediagram dat moet worden weergegeven, het tijdfilter (sinds het starten van de actie, gedurende de eerste 6 uur na het starten, enz.) en de weergavemodus voor gegevens (op label, op URL, op categorie). Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de inhoud van dit rapport configureren door het volgende te selecteren: het scorediagram dat moet worden weergegeven, het tijdfilter (sinds het starten van de actie, gedurende de eerste 6 uur na het starten, enz.) en de weergavemodus voor gegevens (op label, op URL, op categorie). Klikken **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 De volgende tarieven worden getoond in de hogere sectie van het rapport:
 
@@ -190,7 +190,7 @@ Dit rapport bevat statistieken over openen, klikken en transacties.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren hoe waarden worden weergegeven door de tijdschaal te wijzigen (1 uur, 3 uur of 24 uur, enz.). Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren hoe waarden worden weergegeven door de tijdschaal te wijzigen (1 uur, 3 uur of 24 uur, enz.). Klikken **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 Dit rapport bevat een tabel met waarden en een Pareto-grafiek met de tijd die nodig is voor de levering om de maximale efficiëntie te bereiken. De volgende indicatoren worden gebruikt:
 

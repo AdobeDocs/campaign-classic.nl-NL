@@ -166,7 +166,7 @@ Hier is ons voorbeeldschema met zijn **Rekenreeks**:
 </srcSchema>
 ```
 
-## Schema’s bewerken {#editing-schemas}
+## Schema&#39;s bewerken {#editing-schemas}
 
 In het bewerkingsveld kunt u de XML-inhoud van het bronschema invoeren:
 

@@ -3,7 +3,7 @@ product: campaign
 title: Importtaken configureren
 description: Leer hoe u importtaken configureert en uitvoert in Campagne
 feature: Overview
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---

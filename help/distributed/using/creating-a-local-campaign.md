@@ -2,12 +2,12 @@
 product: campaign
 title: Een lokale campagne maken
 description: Een lokale campagne maken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wo
 
 **Voor de centrale entiteit**
 
-1. Een lokale campagnemalplaatje maken.
+1. Een lokale campagnemplate maken.
 1. Campagnepakket maken op basis van een sjabloon.
 1. Een campagnepakket publiceren.
 1. Bevestigingsopdrachten.
@@ -28,7 +28,7 @@ Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wo
 **Voor de lokale entiteit**
 
 1. De campagne bestellen.
-1. Bezig met uitvoeren van campagnes.
+1. Campagnes uitvoeren.
 
 ## Een lokale campagnemalplaatje maken {#creating-a-local-campaign-template}
 
@@ -58,33 +58,33 @@ Selecteer het type webinterface dat moet worden toegepast op de campagnes die op
 
 Er zijn vier typen webinterfaces beschikbaar:
 
-* **[!UICONTROL By brief]** : de lokale entiteit moet een beschrijving verstrekken waarmee zij de campagneconfiguraties beschrijft. Zodra de orde is goedgekeurd, vormt de centrale entiteit en voert de campagne als geheel uit.
+* **[!UICONTROL By brief]** : de lokale entiteit moet een beschrijving geven waarmee de campagneconfiguraties worden beschreven. Zodra de orde is goedgekeurd, vormt de centrale entiteit en voert de campagne als geheel uit.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : lokale entiteit heeft toegang tot een webformulier waar ze, afhankelijk van de gebruikte sjabloon, de inhoud, het doel, de maximale grootte en de datum waarop ze zijn gemaakt en opgehaald, kunnen bewerken met verpersoonlijkingsvelden. Lokale entiteit kan het doel evalueren en de inhoud van dit webformulier voorvertonen.
+* **[!UICONTROL By form]** : lokale entiteit heeft toegang tot een webformulier waarin ze, afhankelijk van de gebruikte sjabloon, de inhoud, het doel, de maximale grootte en de datum waarop ze zijn gemaakt en opgehaald, kunnen bewerken met verpersoonlijkingsvelden. Lokale entiteit kan het doel evalueren en de inhoud van dit webformulier voorvertonen.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het menu **[!UICONTROL web Interface]** in de sjabloon **[!UICONTROL Advanced campaign settings...]** koppeling. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
+  Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het menu **[!UICONTROL web Interface]** veld in de sjabloon **[!UICONTROL Advanced campaign settings...]** koppeling. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >De webtoepassing die in dit voorbeeld wordt gebruikt, is een voorbeeld. U moet een specifieke web-app maken om een formulier te kunnen gebruiken. Zie [API](../../configuration/using/about-web-services.md).
+  >[!NOTE]
+  >
+  >De webtoepassing die in dit voorbeeld wordt gebruikt, is een voorbeeld. U moet een specifieke web-app maken om een formulier te kunnen gebruiken. Zie [API](../../configuration/using/about-web-services.md).
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
 * **[!UICONTROL By external form]** : de lokale entiteit heeft toegang tot campagneparameters in zijn Extranet (niet Adobe Campaign). Deze parameters zijn identiek aan die van a **lokale campagne (per formulier)**.
-* **[!UICONTROL Pre-set]** : de lokale entiteit geeft opdracht tot campagne gebruikend het standaardformulier, zonder het te lokaliseren.
+* **[!UICONTROL Pre-set]** : lokale entiteit bestelt campagne met het standaardformulier zonder het te lokaliseren.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Standaardwaarden {#default-values}
 
-Selecteer **[!UICONTROL Default values]** in te vullen door lokale entiteiten. Bijvoorbeeld:
+Selecteer de **[!UICONTROL Default values]** in te vullen door lokale entiteiten. Bijvoorbeeld:
 
 * de datum van contact en extractie;
-* doelkenmerken (leeftijdssegment enz.).
+* doelkenmerken (leeftijdssegment, enz.).
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
@@ -164,7 +164,7 @@ Het campagnemalplaatje kan alleen beschikbaar worden voor lokale entiteiten als 
 
 Voer de volgende stappen uit:
 
-1. In de **[!UICONTROL Navigation]** de **Campagnes** pagina, klikt u op de knop **[!UICONTROL Campaign packages]** koppeling.
+1. In de **[!UICONTROL Navigation]** de **Campagnes** pagina, klikt u op de **[!UICONTROL Campaign packages]** koppeling.
 1. Klik op de knop **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
@@ -269,7 +269,7 @@ Een campagne bestellen:
 
    Raadpleeg voor meer informatie de [Goedkeuringsproces](#approval-process) sectie.
 
-1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst met campagnepakketten in het gedeelte **Campagnes** tab. De campagne kan dan worden gebruikt. Raadpleeg voor meer informatie hierover [Toegang tot campagnes](accessing-campaigns.md).
+1. De lokale exploitant wordt dan op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst met campagnepakketten in het **Campagnes** tab. De campagne kan dan worden gebruikt. Raadpleeg voor meer informatie hierover [Toegang tot campagnes](accessing-campaigns.md).
 
    De **[!UICONTROL Start targeting with order approval]** met deze optie kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
 
@@ -323,7 +323,7 @@ De met de goedkeuring belaste exploitant kan een bestelling of een campagnepakke
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-Indien de controleur een bestelling afwijst, wordt de desbetreffende kennisgeving automatisch naar de betrokken lokale entiteiten gezonden: het bevat de opmerking die is ingevoerd door de exploitant die de goedkeuring heeft geweigerd.
+Indien de controleur een bestelling afwijst, wordt de desbetreffende kennisgeving automatisch naar de betrokken lokale entiteiten verzonden: daarin wordt de opmerking weergegeven die is ingevoerd door de exploitant die de goedkeuring heeft geweigerd.
 
 De informatie wordt getoond op de lijst van campagnepakketpagina of op de pagina van de campagneorde. Als ze toegang hebben tot de Adobe Campaign-console, worden lokale entiteiten op de hoogte gesteld van deze afwijzing.
 

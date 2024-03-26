@@ -10,8 +10,8 @@ topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 18%
+source-wordcount: '147'
+ht-degree: 14%
 
 ---
 
@@ -42,4 +42,4 @@ In deze video wordt uitgelegd hoe u profielen in Adobe Campaign kunt importeren,
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

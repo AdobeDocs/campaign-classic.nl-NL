@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 3%
+source-wordcount: '2003'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 
 
-Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md)U weet waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en correcties elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
+Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md)U weet waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en correcties elk jaar worden uitgebracht. Bovendien brengen wij periodiek bouwt met cumulatieve moeilijke situaties slechts vrij. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval dat u kwesties - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-Als gehoste gebruiker profiteert u automatisch van de jaarlijkse upgrade van Campagne met de nieuwste stabiele versie zonder actie. Ook on-premise en Hybrid-klanten kunnen van deze release profiteren. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/rn-overview.md).
+Als gehoste gebruiker profiteert u automatisch van de jaarlijkse upgrade van Campagne met de nieuwste stabiele versie zonder actie. Ook on-premise en Hybrid-klanten kunnen van deze release profiteren. Als u van een oude bouwstijl migreert, adviseren wij dat u aan deze versie eerst bevordert. [Meer informatie](../../rn/using/rn-overview.md).
 
 ## Wat is een bouwstijlverbetering?
 

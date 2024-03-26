@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 In dit geval, zullen wij een mededeling, gebruikend Campaign Standard, verzenden die een verbinding aan een Webtoepassing van de Campagne v7 omvat. Wanneer de ontvanger op de koppeling in de e-mail klikt, geeft de webtoepassing een formulier weer dat verschillende velden bevat die zijn voorgeladen met de gegevens van de ontvanger en een abonnementkoppeling naar een nieuwsbrief. De ontvanger kan zijn gegevens bijwerken evenals aan de dienst intekenen. Zijn profiel zal in Campaign v7 worden bijgewerkt en de informatie zal in Campaign Standard worden herhaald.
 
-Als u veel services en webtoepassingen hebt in Campagne v7, kunt u deze mogelijk niet allemaal opnieuw maken in Campaign Standard. De Schakelaar ACS staat u toe om al uw bestaande het Webtoepassingen en de diensten van de Campagne v7 te gebruiken en hen te verbinden aan een levering die door Campaign Standard wordt verzonden.
+Als u veel services en webtoepassingen hebt in Campaign v7, kunt u ervoor kiezen deze niet allemaal opnieuw te maken in Campaign Standard. De Schakelaar ACS staat u toe om al uw bestaande het Webtoepassingen en de diensten van de Campagne v7 te gebruiken en hen te verbinden aan een levering die door Campaign Standard wordt verzonden.
 
 ## Vereisten {#prerequisites}
 
@@ -32,7 +32,7 @@ Hiervoor hebt u het volgende nodig:
 
 ## Webtoepassing en -service maken {#creating-the-web-application-and-service}
 
-In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Raadpleeg voor meer informatie over webtoepassingen in Campagne v7 [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
+In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en webservice zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via communicatie via een Campaign Standard. Raadpleeg voor meer informatie over webtoepassingen in Campagne v7 [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
 In Campaign v7 zijn de volgende objecten gemaakt:
 
@@ -51,7 +51,7 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Ga naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en opent u de **[!UICONTROL Newsletter]** service. Dit is de dienst die van de mededeling van de Campaign Standard zal worden bijgewerkt. U kunt zien dat geen ontvanger zich op deze service heeft geabonneerd.
+1. Ga naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en opent u de **[!UICONTROL Newsletter]** service. Dit is de dienst die van de mededeling van het Campaign Standard zal worden bijgewerkt. U kunt zien dat geen ontvanger zich op deze service heeft geabonneerd.
 
    ![](assets/acs_connect_lp_5.png)
 
@@ -61,11 +61,11 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
 ## De gegevens repliceren {#replicating-the-data}
 
-Om de benodigde gegevens tussen Campagne v7 en Campaign Standard te repliceren, zijn er verschillende sjablonen voor replicatiewerkstromen beschikbaar. De **[!UICONTROL Profiles replication]** worden alle Campagne v7-ontvangers automatisch naar Campaign Standard gedupliceerd. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). De **[!UICONTROL Landing pages replication]** de workflow maakt de replicatie mogelijk van de webtoepassingen die we in Campaign Standard willen gebruiken.
+Voor het repliceren van de benodigde gegevens tussen Campagne v7 en Campaign Standard zijn er verschillende sjablonen voor de replicatiewerkstroom beschikbaar. De **[!UICONTROL Profiles replication]** worden alle Campagne v7-ontvangers automatisch naar het Campaign Standard gerepliceerd. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). De **[!UICONTROL Landing pages replication]** de workflow maakt de replicatie mogelijk van de webtoepassingen die we in Campaign Standard willen gebruiken.
 
 ![](assets/acs_connect_lp_1.png)
 
-Voer de volgende stappen uit in Campaign Standard om te controleren of de gegevens correct zijn gerepliceerd:
+Ga als volgt te werk om te controleren of de gegevens correct zijn gerepliceerd:
 
 1. Klik in het beginscherm op **[!UICONTROL Customer profiles]**.
 
@@ -85,7 +85,7 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
 ## E-mail ontwerpen en verzenden {#designing-and-sending-the-email}
 
-In dit deel, zullen wij zien hoe te om een verbinding, in een e-mail van de Campaign Standard, aan de landingspagina te omvatten die van een de Webtoepassing van de Campagne v7 wordt herhaald.
+In dit deel, zullen wij zien hoe te om een verbinding, in een Campaign Standard e-mail, aan de landingspagina te omvatten die van een de Webtoepassing van de Campagne v7 wordt herhaald.
 
 De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde als voor een klassieke e-mail. Zie de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=nl) documentatie.
 
@@ -109,7 +109,7 @@ De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde al
 
 ## De bijgewerkte gegevens ophalen {#retrieving-the-updated-information}
 
-Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Campaign v7 synchroon de bijgewerkte informatie op. Het wordt vervolgens gerepliceerd van Campaign v7 naar Campaign Standard.
+Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Campaign v7 synchroon de bijgewerkte informatie op. Het wordt dan herhaald van Campaign v7 aan Campaign Standard.
 
 1. Ga in Campagne v7 naar **[!UICONTROL Profiles and Target > Services and subscriptions]** en opent u de **[!UICONTROL Newsletter]** service. U ziet dat de ontvanger nu in de lijst met abonnees wordt weergegeven.
 

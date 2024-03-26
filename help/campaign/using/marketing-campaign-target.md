@@ -9,7 +9,7 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers
 
 ## Naar een groep verzenden
 
-U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel instellen in leveringen. Volg de onderstaande stappen om dit te doen:
+U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel instellen in leveringen. Hiervoor voert u de volgende stappen uit:
 
 1. Bewerk de desbetreffende levering en klik op de knop **[!UICONTROL To]** koppeling om de doelgroep te veranderen.
 
@@ -218,7 +218,7 @@ U kunt ontvangers extraheren uit het hoofddoel van de levering. In dit geval, zu
 Als u een controlegroep wilt extraheren, schakelt u de controlegroep voor de campagne of levering in en selecteert u een van de volgende opties: **[!UICONTROL Activate random sampling]** of **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : deze optie past willekeurige bemonstering toe op de ontvangers in de doelpopulatie. Als u vervolgens de drempel instelt op 100, bestaat de controlegroep uit 100 ontvangers die willekeurig uit de doelpopulatie zijn geselecteerd. De willekeurige bemonstering is afhankelijk van de database-engine.
-* **[!UICONTROL Keep only the first records after sorting]** : met deze optie kunt u een limiet definiëren op basis van een of meer sorteervolgorden. Als u **[!UICONTROL Age]** de controlegroep zal bestaan uit de 100 jongste ontvangers . Het zou bijvoorbeeld interessant kunnen zijn om een controlegroep te definiëren die ontvangers bevat die weinig aankopen doen, of ontvangers die vaak aankopen doen, en om hun gedrag te vergelijken met dat van de gecontacteerde ontvangers.
+* **[!UICONTROL Keep only the first records after sorting]** : met deze optie kunt u een beperking definiëren op basis van een of meer sorteervolgorden. Als u **[!UICONTROL Age]** de controlegroep zal bestaan uit de 100 jongste ontvangers . Het zou bijvoorbeeld interessant kunnen zijn om een controlegroep te definiëren die ontvangers bevat die weinig aankopen doen, of ontvangers die vaak aankopen doen, en om hun gedrag te vergelijken met dat van de gecontacteerde ontvangers.
 
 Klikken **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) en de beperkingsmodus voor de ontvanger te selecteren.
 
@@ -239,7 +239,7 @@ U kunt een nieuwe populatie definiëren die als een controlegroep moet worden ge
 
 #### Video over zelfstudie {#create-email-video}
 
-In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign.
+In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 

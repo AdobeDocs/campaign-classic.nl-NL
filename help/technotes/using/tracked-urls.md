@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 34%
+source-wordcount: '394'
+ht-degree: 31%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 34%
 
 Na recente wijzigingen kunnen bijgehouden URL&#39;s mislukken wanneer een URL-handtekening actief is in de campagne. De impact van het probleem verschilt per e-mailaccount. Sommige bedrijven hebben namelijk specifieke beveiligingstools die verbindingen kunnen beïnvloeden en het URL-handtekeningmechanisme kunnen veranderen.
 
-Daarom raadt Adobe u aan het handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. Deze procedure verhelpt oude het volgen verbindingen behalve degenen die met een dubbele ontsnaping worden ontvangen.
+Daarom wordt u door de Adobe aangeraden het handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. Deze procedure verhelpt oude het volgen verbindingen behalve degenen die met een dubbele ontsnaping worden ontvangen.
 
 Afmeldkoppelingen kunnen net als andere koppelingen mislukken. De frequentie verschilt van host tot host, maar is minder dan 1%.
 
@@ -43,7 +43,7 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 **Hoe kan ik bijwerken?**
 
-Als **gehoste klant**, werkt Adobe binnenkort samen met u om uw configuratie bij te werken.
+Als **gehoste klant**, werkt Adobe samen met u om uw configuratie binnenkort bij te werken.
 
 Als **on-premise/hybride klant**, moet u uw configuratie bijwerken.
 

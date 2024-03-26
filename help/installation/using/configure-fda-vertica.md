@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit
 
 1. Download de [ODBC-stuurprogramma voor Windows](https://www.vertica.com/download/vertica/client-drivers/). Om de bestuurder voor Vensters te installeren, zult u .NET Kader 3.5 moeten toelaten of de installatietovenaar zal proberen om het automatisch toe te laten en te downloaden.
 
-1. Configureer het ODBC-stuurprogramma in Windows. Raadpleeg [deze pagina](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm) voor meer informatie
+1. Configureer het ODBC-stuurprogramma in Windows. Raadpleeg voor meer informatie hierover [deze pagina](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
 1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#vertical-external).
 
@@ -168,7 +168,7 @@ U moet een [!DNL Vertica Analytics] externe account om uw Campagne-instantie aan
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
-| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-toepassingsserver wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. |
+| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-app-server wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. |
 

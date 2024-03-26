@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Berichtencentrum (uitvoering)
-description: Berichtencentrum (uitvoering)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Berichtcentrum (uitvoering)
+description: Berichtcentrum (uitvoering)
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 9%
+source-wordcount: '230'
+ht-degree: 5%
 
 ---
 
 
-# Berichtencentrum (uitvoering){#message-center-execution}
+# Berichtcentrum (uitvoering){#message-center-execution}
 
 
 
@@ -20,9 +20,9 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Berichtcentrum 
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Campagne v7-documentatie](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagnev
    <td> Met deze workflow kunt u een status aan een gebeurtenis toewijzen. Gebeurtenisstatussen zijn als volgt:<br /> 
     <ul> 
      <li> <p><strong>In behandeling</strong>: de gebeurtenis bevindt zich in een wachtrij. Er is nog geen berichtsjabloon aan gekoppeld.</p> </li> 
-     <li> <p><strong>In behandeling</strong>: Als de gebeurtenis zich in een wachtrij bevindt, is er een berichtsjabloon aan gekoppeld en wordt deze momenteel verwerkt door de levering.</p> </li> 
+     <li> <p><strong>In behandeling</strong>: de gebeurtenis bevindt zich in een wachtrij, een berichtsjabloon is eraan gekoppeld en wordt momenteel verwerkt door de levering.</p> </li> 
      <li> <p><strong>Verzonden</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.</p> </li> 
      <li> <p><strong>Genegeerd door levering</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</p> </li> 
      <li> <p><strong>Afleveringsfout</strong>: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.</p> </li> 

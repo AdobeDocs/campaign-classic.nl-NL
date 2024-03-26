@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 3%
+source-wordcount: '1131'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Voordat u de clientconsole gaat installeren, moet u:
 * Controleer de compatibiliteit van uw systeem en gereedschappen met Adobe Campaign in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * URL van campagneserver ophalen
 * Je gebruikersgegevens ophalen
-* Microsoft Edge Webview2-runtime op uw systeem laten installeren (vanaf versie Campaign Classic 7.3). [Meer informatie](#webview)
+* Microsoft Edge Webview2-runtime op uw systeem laten installeren (vanaf versie 7.3 van Campaign Classic). [Meer informatie](#webview)
 
 Het proces voor het installeren of bijwerken van de clientconsole is afhankelijk van uw implementatie van Adobe Campaign Classic.
 Controleer de onderstaande details om te begrijpen wat nodig is voor uw implementatie.
@@ -41,15 +41,15 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 
 ## Installatie van de Microsoft Edge Webview2-runtime {#webview}
 
-Vanuit de Campaign Classic 7.3-build-versie is de installatie van de Microsoft Edge Webview 2-runtime vereist voor elke consoleinstallatie.
+Vanuit Campaign Classic 7.3 is de installatie van Microsoft Edge Webview 2 runtime vereist voor elke consoleinstallatie.
 
-De webweergave wordt standaard geïnstalleerd als onderdeel van het besturingssysteem Windows 11. Als dit nog niet het geval is op uw systeem, wordt u gevraagd het te downloaden via het Campaign Classic Console-installatieprogramma [Microsoft Developer-website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). De downloadkoppeling werkt niet in Internet Explorer 11, omdat Microsoft de ondersteuning heeft vervangen. Zorg ervoor dat u een andere browser gebruikt om de koppeling te openen.
+De webweergave wordt standaard geïnstalleerd als onderdeel van het besturingssysteem Windows 11. Als dit nog niet het geval is op uw systeem, wordt u via het installatieprogramma van de Campaign Classic Console gevraagd het te downloaden van [Microsoft Developer-website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). De downloadkoppeling werkt niet in Internet Explorer 11, omdat Microsoft de ondersteuning heeft vervangen. Zorg ervoor dat u een andere browser gebruikt om de koppeling te openen.
 
-## Adobe Gehoste implementaties {#hosted-customers}
+## Op Adobe gehoste implementaties {#hosted-customers}
 
 Als gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bij te werken:
 
-1. Adobe kan direct implementeren. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
+1. Adobe kan direct worden geïmplementeerd. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
 1. U kunt downloaden naar uw clientconsole(s) van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 
@@ -76,7 +76,7 @@ Hiervoor moet u:
 
 ### Deze vraagoptie niet langer instellen
 
-Adobe raadt u aan deze optie te laten **[!UICONTROL No longer ask this question]** niet geselecteerd om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.  Als deze optie is geselecteerd, wordt de gebruiker niet op de hoogte gesteld van nieuwe beschikbare versies.
+Adobe beveelt aan deze optie te laten **[!UICONTROL No longer ask this question]** niet geselecteerd om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.  Als deze optie is geselecteerd, wordt de gebruiker niet op de hoogte gesteld van nieuwe beschikbare versies.
 
 Indien **[!UICONTROL No longer ask this question]**  is geselecteerd, kunt u deze herinnering opnieuw instellen. Alleen systeembeheerders die vertrouwd zijn met het bewerken van het Windows-register, moeten deze wijzigingen aanbrengen:
 
@@ -157,7 +157,7 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
 1. Selecteer de instantie Campagne waaraan u zich moet aanmelden.
 
-1. Klik op **[!UICONTROL Ok]**
+1. Klikken **[!UICONTROL Ok]**
 
 1. Voer uw aanmeldingsgegevens voor de gebruiker in en klik op **[!UICONTROL Log in]**
 
@@ -176,4 +176,4 @@ In deze video ziet u hoe u de Adobe Campaign-client installeert en instelt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

@@ -3,7 +3,7 @@ product: campaign
 title: Een dynamische afbeelding invoegen
 description: Een dynamische afbeelding invoegen
 feature: Target Integration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---

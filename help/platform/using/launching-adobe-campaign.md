@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 9%
+source-wordcount: '508'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
    De eerste keer u tot het gegevensbestand toegang hebt, is uw wachtwoord dat aan u door de beheerder wordt gegeven. Wanneer u verbinding hebt, kunt u uw wachtwoord wijzigen via het dialoogvenster **[!UICONTROL Tools > Change password...]** -menu. Details over operatoren en aansluitingen zijn beschikbaar in [Toegangsbeheer](../../platform/using/access-management.md).
 
-1. Klik op **[!UICONTROL LOG IN]** om te bevestigen.<!--You can also press the **Enter** key to launch connection.-->
+1. Klikken **[!UICONTROL LOG IN]** ter bevestiging.<!--You can also press the **Enter** key to launch connection.-->
 
 U hebt nu toegang tot [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
 
@@ -97,11 +97,11 @@ De **[!UICONTROL Help > About...]** kunt u de volgende informatie gebruiken:
 * **versie** aantal voor de cliëntconsole van de Campagne en toepassingsserver
 * **build** aantal voor de cliëntconsole van de Campagne en toepassingsserver
 * een koppeling om contact op te nemen met de Adobe Klantenservice
-* koppelingen naar het privacybeleid van Adobe, de Gebruiksvoorwaarden en het Cookies-beleid
+* koppelingen naar het privacybeleid, de Gebruiksvoorwaarden en het Cookies-beleid van de Adobe
 
 ![](assets/about-acc.png)
 
-Telkens wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
+Telkens wanneer u het team van de Zorg van de Adobe bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
 
 **Verwante onderwerpen**:
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Een landingspagina maken
 description: Een landingspagina maken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 3%
+source-wordcount: '739'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Het hoofddoel van dit gebruiksgeval is om de formuliervelden van de landingspagi
 Als u een nieuwe webtoepassing van het type Landing Page wilt maken, gaat u als volgt te werk:
 
 1. Ga naar de **[!UICONTROL Campaigns]** en klik op de knop **[!UICONTROL Web application]** klikt u op de koppeling **[!UICONTROL Create]** knop.
-1. Selecteer **[!UICONTROL New landing page]** en voer een label in. Klik vervolgens op **[!UICONTROL Save]**.
+1. Selecteer de **[!UICONTROL New landing page]** en voer een label in. Klik vervolgens op **[!UICONTROL Save]**.
 
    ![](assets/dce_uc1_newlandingpage.png)
 
@@ -49,11 +49,11 @@ U krijgt dan de volgende opeenvolging:
 
 >[!NOTE]
 >
->Voor meer bij het creëren van een toepassing van het Web, verwijs naar [deze sectie](creating-a-new-web-application.md).
+>Raadpleeg voor meer informatie over het maken van een webtoepassing [deze sectie](creating-a-new-web-application.md).
 
 ## Stap 1 - Sjablonen selecteren en laden {#step-1---selecting-and-loading-templates}
 
-In deze sectie gaan we bekijken hoe **HTML-inhoud importeren** voor elke pagina van de toepassing van het Web.
+In deze sectie gaan we bekijken hoe **HTML-inhoud importeren** voor elke pagina van de webtoepassing.
 
 Een sjabloon moet bevatten:
 
@@ -63,12 +63,12 @@ Een sjabloon moet bevatten:
 
 Voer de volgende stappen uit om de sjabloon op de eerste pagina te laden:
 
-1. Eerste openen **[!UICONTROL Page]** activiteit van de toepassing van het Web.
+1. Eerste openen **[!UICONTROL Page]** activiteit van de webtoepassing.
 1. Selecteren **[!UICONTROL From a file]** om uw inhoudssjabloon op te halen.
 
    ![](assets/dce_uc1_selectmodel.png)
 
-1. Selecteer het HTML-bestand dat u wilt gebruiken.
+1. Selecteer het te gebruiken HTML-bestand.
 1. Klikken **Openen** om het importeren te starten.
 
    Tijdens het laden wordt de lijst met gedeelde bestanden weergegeven. Het importsysteem controleert of alle bestanden die aan de geselecteerde HTML zijn gekoppeld (CSS, afbeeldingen, enz.) aanwezig zijn.
@@ -82,7 +82,7 @@ Voer de volgende stappen uit om de sjabloon op de eerste pagina te laden:
    >U moet wachten tot u het volgende bericht krijgt alvorens te sluiten: **[!UICONTROL The external resources have been successfully published]** .
 
 1. Klik op de knop **[!UICONTROL Properties]** tab.
-1. Voer een **label** voor elke pagina (bijvoorbeeld: Pagina 1= Verzamelen, pagina 2=Bedankt).
+1. Voer een **label** voor elke pagina (bijvoorbeeld: Pagina 1= Verzamelen, Pagina 2=Bedankt).
 
    ![](assets/dce_uc1_pagelabel.png)
 
@@ -126,21 +126,21 @@ We gaan de velden op de pagina koppelen aan de velden in de database om de verst
 
 1. Herhaal dit proces voor elk veld op de pagina.
 
-U kunt een veld verplicht maken: Klik bijvoorbeeld op de knop **[!UICONTROL Email]** veld en schakel vervolgens de **Verplicht** optie.
+U kunt een veld verplicht maken: klik bijvoorbeeld op de knop **[!UICONTROL Email]** veld en schakel vervolgens de **Verplicht** -optie.
 
 ![](assets/dce_uc1_fieldmandatory.png)
 
 ### Koppelingen naar de volgende pagina maken {#creating-a-link-to-the-next-page}
 
-Deze stap is verplicht omdat het de toepassing van het Web zal toestaan om de opeenvolging van de volgende stappen te bepalen: De verzamelde gegevens opslaan in de database en vervolgens de volgende pagina weergeven (**Bedankt** pagina).
+Deze stap is verplicht omdat het de toepassing van het Web zal toestaan om de opeenvolging van de volgende stappen te bepalen: Het bewaren van de verzamelde gegevens in het gegevensbestand dan het tonen van de volgende pagina (**Bedankt** pagina).
 
-1. Selecteer **[!UICONTROL Send it!]** van de **[!UICONTROL Collection]** pagina.
-1. Klik op de knop **[!UICONTROL Action]** vervolgkeuzemenu.
-1. Selecteer **[!UICONTROL Next page]** handeling.
+1. Selecteer de **[!UICONTROL Send it!]** van de **[!UICONTROL Collection]** pagina.
+1. Klik op de knop **[!UICONTROL Action]** vervolgkeuzelijst.
+1. Selecteer de **[!UICONTROL Next page]** handeling.
 
    ![](assets/dce_uc1_actionbouton.png)
 
-### Een personalisatieveld invoegen {#inserting-a-personalization-field}
+### Een aanpassingsveld invoegen {#inserting-a-personalization-field}
 
 Met deze stap kunt u de pagina Bedankt personaliseren. Dit doet u als volgt:
 
@@ -169,4 +169,4 @@ Tijdens publicatie wordt een logboek weergegeven. Het publicatiesysteem analysee
 >
 >In het publicatielogboek worden waarschuwingen en fouten gesorteerd op activiteit.
 
-Het formulier is nu beschikbaar: de URL ervan is toegankelijk in het toepassingsdashboard en kan naar ontvangers worden verzonden.
+Het formulier is nu beschikbaar: de URL is toegankelijk in het toepassingsdashboard en kan naar ontvangers worden verzonden.

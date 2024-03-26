@@ -2,13 +2,13 @@
 product: campaign
 title: Valideren
 description: Valideren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ U kunt de terugwinningswijze van leveringslogboeken van vormen **[!UICONTROL Ana
 
 Er zijn twee modi:
 
-* **[!UICONTROL Messages are considered sent after validation]** (standaardmodus): in deze functiemodus, worden alle uitzendingen bijgewerkt wanneer de exploitant verzendt bevestigt (hun status gaat van &quot;Hangende levering&quot;aan &quot;Verzonden&quot; over) en de levering wordt automatisch geplaatst aan **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : in deze modus kunt u de uitzendingen bijwerken via een extern bestand dat door het prepress-bureau wordt verzonden. In dit geval moet een workflow voor het verwerken van deze informatie worden gebruikt om de status van de broadlog bij te werken.
+* **[!UICONTROL Messages are considered sent after validation]** (standaardwijze): op deze functiemodus, worden alle uitzendingen bijgewerkt wanneer de exploitant verzendt bevestigt (hun statuspassen van &quot;In afwachting van levering&quot;aan &quot;Verzonden&quot;) en de levering wordt automatisch geplaatst aan **[!UICONTROL Finished]**.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : in deze modus kunt u de broadlogs bijwerken via een extern bestand dat door het servicebureau wordt verzonden. In dit geval moet een workflow voor het verwerken van deze informatie worden gebruikt om de status van de broadlog bij te werken.
 
-   >[!NOTE]
-   >
-   >In dit geval moet ook de status van de levering worden gewijzigd in **[!UICONTROL Finished]** door de gebruiker zodra de uitzendingen worden bijgewerkt.
+  >[!NOTE]
+  >
+  >In dit geval moet ook de status van de levering worden gewijzigd in **[!UICONTROL Finished]** door de gebruiker zodra de uitzendingen worden bijgewerkt.

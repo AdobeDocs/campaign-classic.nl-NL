@@ -2,14 +2,14 @@
 product: campaign
 title: Een enquête ontwerpen
 description: Belangrijke stappen leren om een enquête te ontwerpen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 2%
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 
 
-## Nieuwe enquête maken {#creating-a-new-survey}
+## Een nieuwe enquête maken {#creating-a-new-survey}
 
 In dit hoofdstuk wordt het ontwerpen van een **Enquête** typt u het formulier met Adobe Campaign en met de beschikbare opties en configuraties. Met Adobe Campaign kunt u deze enquête beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
 
-Webformulieren zijn toegankelijk via de **[!UICONTROL Resources > Online > Web applications]** knooppunt van de structuur. Als u een enquête wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met toepassingen of klik met de rechtermuisknop op de lijst en kies **[!UICONTROL New]**.
+Webformulieren zijn toegankelijk via de **[!UICONTROL Resources > Online > Web applications]** knooppunt van de structuur. Klik op de knop **[!UICONTROL New]** boven de lijst met toepassingen of klik met de rechtermuisknop op de lijst en kies **[!UICONTROL New]**.
 
 Selecteer het enquêtemalplaatje (**[!UICONTROL newSurvey]** standaard).
 
@@ -47,22 +47,22 @@ Met de velden in een formulier kunnen gebruikers gegevens invoeren en opties sel
 
 Wanneer u een veld aan een enquête toevoegt, moet u het type van het veld selecteren. De volgende opties zijn beschikbaar:
 
-1. **[!UICONTROL Answer a question]**: Met deze optie kunt u een nieuw veld (gearchiveerd veld) declareren waarin antwoorden kunnen worden opgeslagen. In dit geval worden alle verzamelde waarden opgeslagen, zelfs wanneer een deelnemer het formulier meerdere keren invult. Deze opslagmodus is alleen beschikbaar in **Enquêtes**. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Answer a question]**: met deze optie kunt u een nieuw veld (gearchiveerd veld) declareren waarin antwoorden kunnen worden opgeslagen. In dit geval worden alle verzamelde waarden opgeslagen, zelfs wanneer een deelnemer het formulier meerdere keren invult. Deze opslagmodus is alleen beschikbaar in **Enquêtes**. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Edit a recipient]**: met deze optie kunt u een veld in de database selecteren. In dit geval worden de gebruikersantwoorden in dit veld opgeslagen. Voor elke deelnemer wordt alleen de laatste opgeslagen waarde behouden en toegevoegd aan de profielgegevens.
-1. **[!UICONTROL Add a variable]**: Met deze optie kunt u een instelling maken die ervoor zorgt dat informatie niet in de database wordt opgeslagen. Lokale variabelen kunnen upstream worden gedeclareerd. U kunt de knoppen ook rechtstreeks toevoegen wanneer u het veld maakt.
+1. **[!UICONTROL Add a variable]**: met deze optie kunt u een instelling maken zodat de gegevens niet in de database worden opgeslagen. Lokale variabelen kunnen upstream worden gedeclareerd. U kunt de knoppen ook rechtstreeks toevoegen wanneer u het veld maakt.
 1. **[!UICONTROL Import an existing question]**: met deze optie kunt u bestaande vragen importeren die in andere enquêtes zijn gemaakt.
 
    >[!NOTE]
    >
    >Opslagmodi en invoer in het veld worden nader beschreven in [deze sectie](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-De aard van het veld dat moet worden toegevoegd (vervolgkeuzelijst, tekstveld, selectievakjes, enz.) wordt aangepast aan de geselecteerde opslagmodus. U kunt dit wijzigen met de opdracht **[!UICONTROL Type]** van het **[!UICONTROL General]** , maar zorg ervoor dat u consistent blijft met het gegevenstype.
+De aard van het veld dat moet worden toegevoegd (vervolgkeuzelijst, tekstveld, selectievakjes, enz.) past zich aan de geselecteerde opslagmodus aan. U kunt dit wijzigen met de opdracht **[!UICONTROL Type]** van het **[!UICONTROL General]** , maar zorg ervoor dat u consistent blijft met het gegevenstype.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
 De verschillende typen beschikbare velden worden beschreven in [deze sectie](../../web/using/about-web-forms.md).
 
-## Specifieke elementen {#survey-specific-elements}
+## Specifieke elementen voor enquêtes {#survey-specific-elements}
 
 De online onderzoeken zijn gebaseerd op de toepassingsmogelijkheden van het Web. De specifieke mogelijkheden voor enquêtes worden hieronder beschreven.
 
@@ -90,13 +90,12 @@ Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple v
 
 >[!CAUTION]
 >
->* Deze functionaliteit is alleen beschikbaar voor **Enquête** typt u formulieren.
+>* Deze functionaliteit is alleen beschikbaar voor **Enquête** typen formulieren.
 >* Deze optie is niet compatibel met willekeurige vraagweergave. [Meer informatie](#adding-questions).
-
 
 ### Vragen toevoegen {#adding-questions}
 
-Er zijn twee typen containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer informatie](../../web/using/about-web-forms.md).
+Er zijn twee soorten containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer informatie](../../web/using/about-web-forms.md).
 
 Een **Vraag** container om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
 
@@ -106,7 +105,7 @@ Een **Vraag** container om een vraag aan de pagina toe te voegen en de mogelijke
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Het label van de vraag wordt ingevoerd in het labelveld. In dit geval wordt de stijl uit het stijlblad van het formulier toegepast. Selecteer **[!UICONTROL Enter the title in HTML format]** aanpassen. Hierdoor hebt u toegang tot de HTML-editor.
+Het label van de vraag wordt ingevoerd in het labelveld. In dit geval wordt de stijl uit het stijlblad van het formulier toegepast. Selecteer de **[!UICONTROL Enter the title in HTML format]** aanpassen. Hierdoor hebt u toegang tot de HTML-editor.
 
 >[!NOTE]
 >

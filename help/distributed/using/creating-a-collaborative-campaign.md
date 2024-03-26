@@ -2,12 +2,12 @@
 product: campaign
 title: Een collaboratieve campagne maken
 description: Leer hoe u een samenwerkingscampagne kunt maken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '922'
 ht-degree: 3%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 
 
-De centrale entiteit maakt samenwerkingscampagnes op basis van **Distributed Marketing** campagnesjablonen. Zie [deze pagina](about-distributed-marketing.md#collaborative-campaign).
+De centrale entiteit maakt samenwerkingscampagnes op basis van **Distributed Marketing** campagnemalplaatjes. Zie [deze pagina](about-distributed-marketing.md#collaborative-campaign).
 
 ## Een collaboratieve campagne maken {#creating-a-collaborative-campaign}
 
-Als u een samenwerkingscampagne wilt configureren, klikt u op de knop **[!UICONTROL Campaign management > Campaigns]** knoop, dan de **[!UICONTROL New]** pictogram.
+Om een samenwerkingscampagne te vormen, klik **[!UICONTROL Campaign management > Campaigns]** knoop, dan de **[!UICONTROL New]** pictogram.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Als u een samenwerkingscampagne wilt maken (op formulier), **[!UICONTROL Collabo
 
 In de **[!UICONTROL Edit]** klikt u op de knop **[!UICONTROL Advanced campaign settings...]** koppeling om toegang te krijgen tot **Distributed Marketing** tab.
 
-Selecteer **Op formulier** webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
+Selecteer de **Op formulier** webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Zie [Een lokale campagne maken (op formulier)](examples.md#creating-a-local-campaign--by-form-).
 
 Sla uw campagne op. U kunt het nu gebruiken vanuit het dialoogvenster **Campagnepakketten** in de **Campagne** door op de knop **[!UICONTROL Create]** knop.
 
@@ -46,7 +46,7 @@ De **[!UICONTROL Campaign Package]** kunt u lokale campagnemalplaatjes (out-of-t
 
 ### Op campagne {#by-campaign}
 
-Als u een samenwerkingscampagne wilt maken (per campagne), kunt u de **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** sjabloon moet zijn geselecteerd.
+Als u een samenwerkingscampagne wilt maken (via een campagne), kunt u de **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** sjabloon moet zijn geselecteerd.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
@@ -84,7 +84,7 @@ De campagneworkflow moet **Lokale goedkeuring** type activiteit. De activiteitsp
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Selecteer **Doeldimensie** en de **[!UICONTROL Distribution field]**. Voor de **[!UICONTROL Assignment type]**, selecteert u **Lokale entiteit**.
+Selecteer de **Doeldimensie** en de **[!UICONTROL Distribution field]**. Voor de **[!UICONTROL Assignment type]**, selecteert u **Lokale entiteit**.
 
 In de **[!UICONTROL Distribution]** , voegt u een veld toe voor elke lokale entiteit en geeft u de waarde op.
 
@@ -100,7 +100,7 @@ De lokale entiteit kan bepaalde contacten schrappen die op de campagneinhoud wor
 
 ![](assets/mkg_dist_mutual_op_by_valid2.png)
 
-### Eenvoudig {#simple}
+### eenvoudig {#simple}
 
 Als u een eenvoudige samenwerkingscampagne wilt maken, **[!UICONTROL Collaborative campaign (simple)]** sjabloon moet zijn geselecteerd.
 
@@ -110,7 +110,7 @@ Om een campagne ter beschikking te stellen van lokale entiteiten moet de central
 
 Voer de volgende stappen uit:
 
-1. In de **[!UICONTROL Navigation]** de **Campagnes** pagina, klikt u op de knop **[!UICONTROL Campaign packages]** koppeling.
+1. In de **[!UICONTROL Navigation]** de **Campagnes** pagina, klikt u op de **[!UICONTROL Campaign packages]** koppeling.
 1. Klik op de knop **[!UICONTROL Create]**.
 1. In de sectie boven in het venster kunt u de optie **[!UICONTROL New collaborative package (mutualizedEmpty)]** sjabloon.
 1. Selecteer de referentiecampagne.
@@ -120,7 +120,7 @@ Voer de volgende stappen uit:
 
 De begin- en einddatum bepalen de zichtbaarheidsperiode van de campagne in de lijst met campagnepakketten.
 
-Voor **samenwerkingscampagnes** moet de centrale entiteit de uiterste datum voor registratie en personalisatie specificeren.
+Voor **samenwerkingscampagnes**, moet de centrale entiteit de registratie- en personalisatietermijn specificeren.
 
 >[!NOTE]
 >

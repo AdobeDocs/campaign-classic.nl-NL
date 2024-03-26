@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Gedistribueerde marketing
+title: Distributed Marketing
 description: Meer informatie over het gedistribueerde marketingpakket
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 8%
+source-wordcount: '76'
+ht-degree: 11%
 
 ---
 
 
-# Gedistribueerde marketing{#distributed-marketing}
+# Distributed Marketing{#distributed-marketing}
 
 
 
-De hieronder beschreven workflow wordt geïnstalleerd met de **Distributed Marketing** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../distributed/using/about-distributed-marketing.md).
+De hieronder beschreven workflow wordt geïnstalleerd met de **Distributed Marketing** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Migratie naar veelgestelde vragen over Adobe Managed Services (Public Cloud)
-description: Veelgestelde vragen over Campaign Classic-migratie naar openbare cloud
+title: Veelgestelde vragen over migratie naar Adobe Managed Services (Public Cloud)
+description: Veelgestelde vragen over migratie van Campaigns Classic naar openbare cloud
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
@@ -9,7 +9,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 
 
-Adobe ontmantelt het oude datacenter: Campaign Classic-exemplaren moeten worden overgebracht naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
+Adobe ontmantelt het oude datacenter: instanties van Campaigns Classic moeten worden overgedragen naar de Public Cloud Amazon Web Services (AWS). [Meer informatie over dit initiatief](dc-migration.md).
 
 Hieronder vindt u een aantal veelgestelde vragen over dit project, de invloed op uw campagneomgeving en andere nuttige bronnen.
 
-Voor elke andere vraag kunt u zich tot [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Voor elke andere vraag kunt u zich tot [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Infrastructuureffecten
 
@@ -34,7 +34,7 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
   Adobe behoudt zich het recht voor om de meest geschikte database-beheerengine te kiezen en te implementeren om Adobe Campaign Service onder optimale omstandigheden te bedienen.
 
-  Bovendien zal Adobe, om het beste veiligheidsniveau te handhaven, geen gedetailleerde informatie over de infrastructuur verstrekken.
+  Bovendien zal de Adobe, om het optimale veiligheidsniveau te handhaven, geen gedetailleerde informatie over de infrastructuur verstrekken.
 
 * **Is er een risico op gegevensverlies?**
 
@@ -46,13 +46,13 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
 * **Zal het bouwstijlaantal of de versie van de Campagne veranderen?**
 
-  Als eerste stap zullen we dezelfde Campaign Classic opbouwen met migratie.
+  Als eerste stap zullen we hetzelfde Campaign Classic blijven bouwen met migratie.
 
   In een volgende stap zullen we doorgaan met de upgrade naar de nieuwste Campaign Classic GA-build. Raadpleeg [deze pagina](../../rn/using/rn-overview.md) voor meer informatie.
 
 * **Wat is het plan om eventuele problemen na migratie aan te pakken?**
 
-  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. In het geval van eventuele problemen [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support) blijft het belangrijkste contactpunt. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
+  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. In het geval van eventuele problemen [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support) blijft het belangrijkste contactpunt. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
 
 ## Afzetbaarheidseffecten
 
@@ -62,7 +62,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
 * **Hoe zal IP op de lijst van gewenste personen worden behandeld? Zullen de klanten nieuwe IP adressen aan de lijst van gewenste personen voor inkomend verkeer van Campagne moeten toevoegen?**
 
-  Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen in de lijst van gewenste personen in hun systeem moeten toevoegen.
+  Het IP adres van de servers van de Adobe zal veranderen. Zo kunnen de klanten die nieuwe IP adressen in de lijst van gewenste personen in hun systeem moeten toevoegen.
 
   [Meer informatie](#config) over IP op de lijst van gewenste personen.
 
@@ -72,15 +72,15 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
 * **Worden IPs veranderd?**
 
-  Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
+  Het IP adres van de servers van de Adobe zal veranderen. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
   [Meer informatie](#config) over IP op de lijst van gewenste personen.
 
 * **Hoe zal subdomeindelegatie worden behandeld?**
 
-  Bestaande subdomeinen worden verplaatst van het oude datacenter naar de openbare cloud (AWS). Dit onderdeel wordt door het Adobe-leveringsteam afgehandeld als onderdeel van het migratieproces.
+  Bestaande subdomeinen worden verplaatst van het oude datacenter naar de openbare cloud (AWS). Dit onderdeel wordt als onderdeel van het migratieproces afgehandeld door het leveringsteam van de Adobe.
 
-  Adobe begeleidt de klant door de vereiste tests om te controleren of de configuratie na de migratie op nieuwe servers van de Public Cloud (AWS) wordt uitgevoerd.
+  De Adobe begeleidt de klant door de vereiste tests om ervoor te zorgen dat de configuratie na de migratie wordt uitgevoerd op nieuwe servers van de Public Cloud (AWS).
 
 * **Zal de migratie nieuwe URL&#39;s produceren voor tracering, bronnen en webtoepassingen?**
 
@@ -92,13 +92,13 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
 * **Wat is het plan voor IP Warm?**
 
-  Allereerst zal de Leverbaarheid van Adobe de status van de leverbaarheid van het platform beoordelen en een plan voor de omschakeling aan nieuwe IPs aanbevelen
+  Allereerst zal de Leverbaarheid van de Adobe de leveringsstatus van het platform beoordelen en een plan voor de omschakeling aan nieuwe IPs aanbevelen
 
-  Na de migratie is geen opwarmen vereist. Het zou een uitzondering kunnen zijn en in dat geval [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal zich tot klanten richten.
+  Na de migratie is geen opwarmen vereist. Het zou een uitzondering kunnen zijn en in dat geval [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal zich tot klanten richten.
 
   Het is echter de bedoeling om deze operatie transparant te maken voor het bedrijf, in tegenstelling tot de eerste oprijplaat die tijdens het liveproces wordt uitgevoerd.
 
-  Wanneer de migratie volledig is, zal de instantie van de Campagne volledig verschillend het verzenden IPs hebben. Om een vlotte overgang te verzekeren, zal Adobe een oprijving van nieuwe verzendende IPs door verkeer van oude aan nieuwe IPs geleidelijk te schakelen uitvoeren.
+  Wanneer de migratie volledig is, zal de instantie van de Campagne volledig verschillend het verzenden IPs hebben. Om een vlotte overgang te verzekeren, zal de Adobe een opvoeren van nieuwe verzendende IPs door verkeer van oude aan nieuwe IPs geleidelijk te schakelen uitvoeren.
 
 * **Bewegen wij over URL op de lijst van gewenste personen?**
 
@@ -107,7 +107,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 * **Wat zou het effect moeten zijn met ons gedelegeerde subdomein dat we gebruiken om onze communicatie onder de aandacht te brengen?**
 
   De subdomeinen die worden gebruikt voor marketingcommunicatie blijven hetzelfde. Afhankelijk van de implementatie zijn echter acties aan de clientzijde nodig:
-   * In het geval van subdomein delegatie aan Adobe (gebrek), zorgt Adobe voor alle veranderingen en verzekert een naadloze overgang.
+   * In het geval van subdomein delegatie aan Adobe (gebrek), zorgt de Adobe voor alle veranderingen en verzekert een naadloze overgang.
    * In het geval van opstelling CNAME (uitzondering), wordt de cliënt gevraagd om veranderingen, in coördinatie met Adobe uit te voeren.
 
 ## Effecten van configuratie en connectiviteit
@@ -116,13 +116,13 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
 ### Nota over IP op de lijst van gewenste personen{#config}
 
-Migratie naar openbare cloud wordt geleverd met nieuwe IP&#39;s voor Adobe Campaign-toepassingsservers, zodat het wijzigen van IP-adressen invloed kan hebben op de connectiviteit tussen Adobe-servers en uw informatiesystemen.
+Migratie naar openbare cloud wordt geleverd met nieuwe IP&#39;s voor Adobe Campaign-toepassingsservers, zodat het wijzigen van IP-adressen invloed kan hebben op de connectiviteit tussen Adobe servers en uw informatiesystemen.
 
 ![](assets/migration.png)
 
 Laten we de twee gevallen in overweging nemen:
 
-* Binnenkomend verkeer: alle netwerkactiviteit die van uw systemen of een andere derde aan de servers van Adobe Campaign in werking wordt gesteld. De configuratie wordt tijdens de migratie door Adobe afgehandeld en vervolgens van de oudere naar de openbare cloud gekopieerd. Dan zal de connectiviteit voor binnenkomend verkeer worden bewaard zoals is na de migratie en geen actie van de kant van de Klant wordt verwacht
+* Binnenkomend verkeer: alle netwerkactiviteit die van uw systemen of een andere derde aan de servers van Adobe Campaign in werking wordt gesteld. De configuratie wordt tijdens de migratie door de Adobe afgehandeld en vervolgens van de oudere naar de openbare cloud gekopieerd. Dan zal de connectiviteit voor binnenkomend verkeer worden bewaard zoals is na de migratie en geen actie van de kant van de Klant wordt verwacht
 
 * Uitgaand verkeer: Alle netwerkactiviteit die door de servers van Adobe Campaign aan uw Systeem van de Informatie of een andere derde (zoals de leverancier van SMS) in werking wordt gesteld. Afhankelijk van veiligheidsbeleid op zijn plaats in uw organisatie, kan IPs die de verrichting van de lijst van gewenste personen van uw Systeem van het Informatie of een andere derde veranderen vereisen
 
@@ -134,13 +134,13 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
   Ja. Integraties van derden, zoals SMS-providers, moeten nieuwe IP-adressen van Adobe Campaign-toepassingsservers toevoegen aan de lijst van gewenste personen.
 
-* **Zal de migratie invloed hebben op de verbinding met Adobe Analytics via de Genesis-connector? Wat over het toevoegen van de IP van de Campagne adressen aan de lijst van gewenste personen op de kant van Adobe Analytics?**
+* **Zal de migratie invloed hebben op de verbinding met Adobe Analytics via de Genesis-aansluiting? Wat over het toevoegen van de IP van de Campagne adressen aan de lijst van gewenste personen op de kant van Adobe Analytics?**
 
-  IP-adressen van Adobe Campaign-toepassingsservers worden gewijzigd. Deze stap wordt na de migratie afgehandeld door de klantenservice van Adobe.
+  IP-adressen van Adobe Campaign-toepassingsservers worden gewijzigd. Deze stap wordt na de Adobe afgehandeld door de klantenservice.
 
-* **Zal de migratie connectiviteit met andere Adobe oplossingen (AEM, Doel, enz.) beïnvloeden?**
+* **Zal de migratie invloed hebben op de connectiviteit met andere Adobe oplossingen (AEM, Doel, enz.)?**
 
-  De integraties zijn een combinatie IP adressen die op de lijst van gewenste personen en de configuratie van de de rekeningsrekening van de Webdienst worden verklaard. Dit wordt geboekt en eigendom van de klantenservice van Adobe.
+  De integraties zijn een combinatie IP adressen die op de lijst van gewenste personen en de configuratie van de de rekeningsrekening van de Webdienst worden verklaard. Dit wordt geboekt en eigendom van de Adobe Klantenservice.
 
   Er zullen IP adressen op de lijst van gewenste personen zijn die in de externe oplossing zullen worden vereist aangezien de servers IP van de Toepassing zal veranderen. Deze informatie wordt verstrekt. Andere onderdelen van de integratie zijn gebaseerd op IMS en zouden ongewijzigd moeten werken.
 
@@ -154,7 +154,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
 * **Heeft de migratie invloed op de API-connectiviteit?**
 
-  Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
+  Het IP adres van de servers van de Adobe zal veranderen. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
   [Meer informatie](#config) over IP op lijst van gewenste personen.
 
@@ -246,7 +246,7 @@ De wereldwijde effecten tijdens de migratie worden hieronder vermeld.
 
 * **Wat met berichten die van de erfenisserver worden verzonden. Zijn koppelingen altijd toegankelijk?**
 
-  Tijdens het uitvoeren van de migratie blijft slechts één service actief: e-mailkoppelingen worden omgeleid. Alle ontvangers kunnen de bestemmingspagina bereiken wanneer ze in een e-mail klikken. Deze klikken worden echter niet bijgehouden, dus klik voor de leveringen die kort voor de migratie zijn gestart op een lagere snelheid dan gewoonlijk.
+  Tijdens het uitvoeren van de migratie blijft slechts één service actief: e-mailkoppelingen worden omgeleid. Alle ontvangers kunnen de bestemmingspagina bereiken wanneer ze in een e-mail klikken. Deze kliks worden echter niet bijgehouden, dus klik de tarieven voor de leveringen die kort voor de migratie zijn begonnen lager dan normaal.
 
 * **Hoe zit het met midsoucing-/RT-omgevingen?**
 
@@ -276,10 +276,10 @@ De wereldwijde effecten tijdens de migratie worden hieronder vermeld.
 
 * **Wie zal het toevoegen van nieuwe IPs aan de lijst van gewenste personen behandelen?**
 
-  Het team van de Zorg van de Adobe Klant zal ervoor zorgen dat de klant en om het even welke derde tot het nieuwe systeem kunnen toegang hebben door nieuwe IPs aan de lijst van gewenste personen toe te voegen.
+  Het team van de Zorg van de Klant van de Adobe zal ervoor zorgen dat de klant en om het even welke derden tot het nieuwe systeem kunnen toegang hebben door nieuwe IPs aan de lijst van gewenste personen toe te voegen.
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
-* [Migratie naar door Adobe beheerde services (Public Cloud)](dc-migration.md)
+* [Migratie naar Adobe Managed Services (Public Cloud)](dc-migration.md)
 * [Jaarlijkse upgrade van campagne](../../rn/using/rn-overview.md#yeary-upgrade)
 * [Veelgestelde vragen over upgrade maken](../../platform/using/faq-build-upgrade.md)

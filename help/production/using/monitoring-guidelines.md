@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 22%
+source-wordcount: '750'
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-De **[!UICONTROL Monitoring]** tab, dat vanaf de homepage van Campaign Classic toegankelijk is, is het belangrijkste ingangspunt om u te helpen uw instantie controleren.
+De **[!UICONTROL Monitoring]** tab, dat toegankelijk is vanaf de startpagina van het Campaign Classic, is het belangrijkste ingangspunt waarmee u uw instantie kunt controleren.
 
 Het verstrekt een dashboard van wat op uw instantie voorkomt: zijn status (bouwstijlversie, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, werkschema&#39;s die momenteel lopen, staat van laatste verzonden leveringen, enz.
 
@@ -26,12 +26,12 @@ Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Bewaking van Campaign Classic-processen {#monitoring-campaign-classic-processes}
+## Bewaking van Campaigns Classic {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Uw instantie controleren</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Workflows bewaken</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Verzendingen controleren</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Leveringen controleren</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">De database controleren</a></p></td></tr>
 </table>
 
@@ -85,7 +85,7 @@ De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema
 * [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
 * [Workflowuitvoering controleren](../../workflow/using/monitoring-workflow-execution.md)
 
-### Leveringen controleren {#monitoring-deliveries}
+### Bewaking van leveringen {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -126,11 +126,11 @@ Wij adviseren dat u gegevensbestandonderhoud op een regelmatige basis uitvoert o
 
 *alleen op locatie en hybride hostingmodellen*
 
-Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [Klik hier](../../production/using/backup.md) voor meer informatie. De herstelprocedure wordt beschreven in [deze sectie](../../production/using/restoration.md).
+Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [Klik hier](../../production/using/backup.md) voor meer informatie . De herstelprocedure wordt beschreven in [deze sectie](../../production/using/restoration.md).
 
 ## Technische beginselen van Campaign Classic {#campaign-classic-technical-principles}
 
-De technische middelen zijn beschikbaar in de documentatie van Campaign Classic. Wij adviseren u vertrouwd met deze onderwerpen alvorens om het even welke technische verrichting op uw instantie uit te voeren.
+De technische middelen zijn beschikbaar in de documentatie van het Campaign Classic. Wij adviseren u vertrouwd met deze onderwerpen alvorens om het even welke technische verrichting op uw instantie uit te voeren.
 
 **Modellen en mogelijkheden hosten**
 
@@ -148,9 +148,9 @@ De technische middelen zijn beschikbaar in de documentatie van Campaign Classic.
 
 **Algemene beginselen**
 
-* [Campaign Classic-architectuur](../../production/using/general-architecture.md)
-* [Campaign Classic-modules](../../production/using/operating-principle.md)
-* [Campaign Classic-opties](../../installation/using/configuring-campaign-options.md)
+* [Campaign Classic architectuur](../../production/using/general-architecture.md)
+* [Campaigns Classic](../../production/using/operating-principle.md)
+* [Opties voor Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Het automatisch opstarten van modules instellen](../../production/using/administration.md)
 * [Configuratiebeginsel voor campagne](../../production/using/configuration-principle.md)
 * [Problemen oplossen](../../production/using/performance-and-throughput-issues.md)

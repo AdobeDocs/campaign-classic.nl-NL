@@ -10,7 +10,7 @@ exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -51,6 +51,6 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
 De leveringsinhoud is klaar om te worden gevormd. De definitie van de inhoud van de levering is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
 * [De e-mailcontent opgeven](defining-the-email-content.md)
-* [Definieer de content van de sms](sms-create.md#defining-the-sms-content)
+* [De SMS-inhoud definiëren](sms-create.md#defining-the-sms-content)
 * [Content van direct mail definiëren](defining-the-direct-mail-content.md)
 * [Pushmeldingen](about-mobile-app-channel.md)

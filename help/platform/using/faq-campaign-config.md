@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 92%
+source-wordcount: '759'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 Ontdek de belangrijkste configuraties om uw instantie van Campaign aan uw behoeften aan te passen.
 
-## Kan ik de taal van de Campaign-interface wijzigen? {#can-i-change-the-language-of-campaign-interface-}
+## Kan ik de taal van de interface van de Campagne veranderen? {#can-i-change-the-language-of-campaign-interface-}
 
 De taal van Campaign wordt geselecteerd wanneer u de instantie maakt. U kunt deze naderhand niet wijzigen. Raadpleeg [deze sectie](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie.
 
@@ -29,37 +29,37 @@ De Adobe Campaign-gebruikersinterface is beschikbaar in vier talen: Engels, Fran
 
 Voor het Engels kunt u bij de installatie van Campaign Engels voor de VS of Engels voor het VK selecteren, die verschillende datumnotaties en tijdnotaties hebben. Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie over deze verschillen.
 
-## Kan ik Campaign Classic gebruiken met andere Adobe-oplossingen? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## Kan ik Campaign Classic met andere Adobe oplossingen gebruiken? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 U kunt de leveringsfuncties en de functies voor geavanceerd campagnebeheer van Adobe Campaign combineren met een reeks oplossingen die u helpen uw gebruikerservaring aan te passen.
 
 Klik hier om te leren [hoe u met andere Adobe-oplossingen werkt](../../integrations/using/about-campaign-integrations.md) en [hoe u IMS instelt in Campaign](../../integrations/using/about-adobe-id.md).
 
-## Hoe kan ik trackingmogelijkheden op mijn instantie van Campaign instellen? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## Hoe kan ik het volgen mogelijkheden op mijn instantie van de Campagne plaatsen? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
 Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie van Campaign.
 
 [Klik hier voor meer informatie](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Hoe kan ik e-mailleverbaarheid configureren? {#how-to-configure-email-deliverability-}
+## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl)Lees de technische aanbevelingen voor de leverbaarheid voor meer informatie over het configureren van uw exemplaar om de capaciteit van de campagne te maximaliseren.
+Naast de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl)Lees de technische aanbevelingen voor de leverbaarheid voor meer informatie over het configureren van uw exemplaar om de capaciteit van de campagne te maximaliseren.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
-## Hoe kan ik contentgoedkeuring implementeren? {#how-can-i-implement-content-approval-}
+## Hoe kan ik inhoudsgoedkeuring implementeren? {#how-can-i-implement-content-approval-}
 
 Met Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste stappen van de marketingcampagne in de collaboratieve modus. Voor elke campagne kunt u het leveringsdoel, de content en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen.
 
 [Klik hier voor meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) en ontdek de stappen om goedkeuring van de leveringscontent in Campaign uit te voeren.
 
-## Hoe kan ik toegang krijgen tot data die in een externe database zijn opgeslagen? {#how-can-i-access-data-stored-in-an-external-database-}
+## Hoe kan ik tot gegevens toegang hebben die in een extern gegevensbestand worden opgeslagen? {#how-can-i-access-data-stored-in-an-external-database-}
 
 Adobe Campaign biedt de FDA-optie (Federated Data Access) om informatie die is opgeslagen in een of meer externe databases te verwerken: u hebt toegang tot externe data zonder de structuur van Adobe Campaign-data te wijzigen.
 
 [Klik hier voor meer informatie](../../installation/using/connecting-to-database.md).
 
-## Met welke externe databases kan ik Campaign verbinden? {#which-external-databases-can-i-connect-campaign-to-}
+## Met welke externe databases kan ik een campagne verbinden? {#which-external-databases-can-i-connect-campaign-to-}
 
 De externe databases die compatibel zijn met Campaign via FDA (Federated Data Access) worden vermeld in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -69,17 +69,17 @@ Als on-premise/hybride klant kunt u Campaign Classic integreren met uw LDAP-dire
 
 [Klik hier voor meer informatie](../../installation/using/connecting-through-ldap.md).
 
-## Hoe kan ik CRM-connectoren instellen in Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
+## Hoe kan ik schakelaars van opstellingsCRM in Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
 
 Adobe Campaign biedt verschillende CRM-connectoren waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze CRM-connectoren laten u toe om contactpersonen, accounts, aankopen, enzovoort, te synchroniseren. Ze zorgen ervoor dat uw applicatie eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke applicaties.
 
 Deze connectoren maken snelle en eenvoudige data-integratie mogelijk: Adobe Campaign verstrekt een specifieke wizard voor het verzamelen en selecteren van data uit de lijsten die beschikbaar zijn in het CRM-systeem. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
 
-Lees [CRM-connectoren configureren](../../platform/using/crm-connectors.md) om te ontdekken hoe u uw CRM-tool met Adobe Campaign kunt synchroniseren.
+Uitlezen [CRM-connectors configureren](../../platform/using/crm-connectors.md) om te leren hoe u uw CRM-tool synchroniseert met Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) Bekijk deze video met gebruiksscenario’s over [de integratie van Adobe Campaign en Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) Bekijk deze video over hoofdletters/kleine letters [Integratie van Adobe Campaign en Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-## Hoe kan ik de soft cache wissen wanneer de problemen machinespecifiek of gebruikerspecifiek zijn? {#perform-soft-cache-clear}
+## Hoe te om Zacht Geheime voorgeheugen Duidelijk uit te voeren wanneer de kwesties machine-specifiek of gebruiker-specifiek zijn? {#perform-soft-cache-clear}
 
 Als u problemen hebt met bijvoorbeeld de correcte weergave van de nieuwe logo’s of het exporteren van data die machinespecifiek of gebruikerspecifiek zijn, moet u mogelijk de soft cache wissen met Windows (Windows 7, Windows XP, Windows 10).
 
@@ -89,7 +89,7 @@ Nadat u zich hebt aangemeld, gaat u naar **[!UICONTROL File]** > **[!UICONTROL C
 
 Als dit nog steeds niet helpt, probeert u de hard cache te wissen door de onderstaande stappen uit te voeren.
 
-## Hoe kan ik de hard cache wissen wanneer de problemen machinespecifiek of gebruikerspecifiek zijn? {#perform-hard-cache-clear}
+## Hoe te om het Geheime voorgeheugen Duidelijk uit te voeren wanneer de kwesties machine-specifiek of gebruiker-specifiek zijn? {#perform-hard-cache-clear}
 
 Als u problemen hebt met bijvoorbeeld de correcte weergave van de nieuwe logo’s of het exporteren van data die machinespecifiek of gebruikerspecifiek zijn, moet u mogelijk de hard cache wissen met Windows (Windows 7, Windows XP, Windows 10).
 

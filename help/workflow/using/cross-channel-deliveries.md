@@ -8,7 +8,7 @@ exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ U kunt een doel voor uw levering vóór het werkschema specificeren gebruikend d
 
 In het onderstaande voorbeeld maken we een workflow voor het verzenden van een e-mail of een SMS voor gebruikers met pushberichten en een week later een pushmelding. Dit doet u als volgt:
 
-1. Een campagne maken.
+1. Maak een campagne.
 1. In de **[!UICONTROL Targeting and workflows]** tabblad van uw campagne, voegt u een **[!UICONTROL Query]** naar uw workflow.
 1. Configureer uw query. Hier selecteren we bijvoorbeeld de ontvangers die zijn geabonneerd op pushberichten als doeldimensie.
 

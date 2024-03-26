@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 3%
+source-wordcount: '1711'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ De technische werkschema&#39;s kunnen slechts door exploitanten met het recht va
 
 Raadpleeg voor meer informatie over het controleren van technische workflows de [speciale sectie](monitoring-technical-workflows.md).
 
-## Lijst met technische workflows {#list-technical-workflows}
+## Lijst van technische werkstromen {#list-technical-workflows}
 
 | Technische workflow | Pakket | Beschrijving |
 |------|--------|-----------|
@@ -39,12 +39,12 @@ Raadpleeg voor meer informatie over het controleren van technische workflows de 
 | **Berekening van de Twitter** (statsTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze werkstroom berekent statistieken met betrekking tot retweets en bezoeken op X (voorheen bekend als Twitter). |
 | **Campagnebanen** (operationMgt) | Marketingcampagnes (Campagne) | In deze workflow worden de taken voor marketingcampagnes beheerd (starttaken, bestanden uitpakken, enz.). Het leidt ook tot werkschema&#39;s met betrekking tot terugkomende en periodieke campagnes. |
 | **Gegevens verzamelen voor de service HeatMap** (collectDataHeatMapService) | Standaard geïnstalleerd | Deze werkstroom wint gegevens terug die door de dienst HeatMap worden vereist. |
-| **Verzoeken om privacy verzamelen** (collectPrivacyRequests) | Verordening inzake bescherming van privacydata | Met deze workflow worden de gegevens van de ontvanger gegenereerd die in Adobe Campaign zijn opgeslagen en kunnen deze worden gedownload op het scherm van de privacyaanvraag. |
+| **Verzoeken om privacy verzamelen** (collectPrivacyRequests) | Privacygegevensbeschermingsverordening | Met deze workflow worden de gegevens van de ontvanger gegenereerd die in Adobe Campaign zijn opgeslagen en kunnen deze worden gedownload op het scherm van de privacyaanvraag. |
 | **Kostprijsberekening** (begrotingsbeheer) | Marketingcampagnes (Campagne) | Deze workflow start de berekening van kosten en kostenposten voor de begrotingen, plannen, programma&#39;s, campagnes, leveringen en taken. |
 | **Database opschonen** (opruimen) | Levering | Dit werkschema is het werkschema van het gegevensbestandonderhoud: het maakt verschillende berekeningen van de statistieken en de processen, en schrapt verouderde gegevens uit het gegevensbestand volgens de bepaalde configuratie in de plaatsingsmedewerker. Het wordt teweeggebracht elke dag om 4.00 uur door gebrek. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic) voor meer informatie. |
 | **Geblokkeerde lijngebruikers verwijderen** (deleteBlockedLineUsersV2) | LINE-kanaal | Deze workflow zorgt ervoor dat de gegevens van de gebruikers van de LIJN V2 worden verwijderd nadat ze de officiële account van de LIJN gedurende 180 dagen hebben geblokkeerd. |
-| **Gegevens over privacyverzoeken verwijderen** (deletePrivacyRequestsData) | Verordening inzake bescherming van privacydata | Deze workflow verwijdert de gegevens die de ontvanger in Adobe Campaign heeft opgeslagen. |
-| **Leveringsindicatoren** (leveringsindicatoren) | Midsourcingplatform | Deze werkstroom werkt leveringsvolgindicatoren voor een levering bij. Deze workflow wordt standaard elke uur geactiveerd. |
+| **Gegevens over privacyverzoeken verwijderen** (deletePrivacyRequestsData) | Privacygegevensbeschermingsverordening | Deze workflow verwijdert de gegevens die de ontvanger in Adobe Campaign heeft opgeslagen. |
+| **Leveringsindicatoren** (leveringsindicatoren) | Middelsourcingsplatform | Deze werkstroom werkt leveringsvolgindicatoren voor een levering bij. Deze workflow wordt standaard elke uur geactiveerd. |
 | **Discussieformeprocessen** (newsgroupMgt) | Marketing resources (MRM) | Deze workflow beheert de levering van meldingen van discussieforums. Deze gebeurtenis wordt geactiveerd wanneer een goedkeuringssignaal wordt ontvangen |
 | **Verspreide marketingprocessen** (centralLocalMgt) | Centrale/lokale Marketing (Distributed Marketing) | Deze workflow begint met het verwerken van de gedistribueerde marketingmodule. Het lanceert de verwezenlijking van lokale campagnes en beheert berichten met betrekking tot orden en campagnepakketbeschikbaarheid. |
 | **Gebeurtenis leegmaken** (webAnalyticsPurgeWebEvents) | Webanalytische connectors | Met deze workflow kunt u elke gebeurtenis uit het databaseveld verwijderen op basis van de periode die is geconfigureerd in het veld Lifespan. |
@@ -60,12 +60,12 @@ Raadpleeg voor meer informatie over het controleren van technische workflows de 
 | **Meldingen over marketingbronnen** (assetManagement) | Marketing resources (MRM) | Deze workflow beheert meldingen die verband houden met de goedkeuring en publicatie van marketingbronnen. |
 | **Berichtencentrum &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Transactionaal berichtenbeheer (Berichtcentrum - Controle) | Deze workflow: <ul><li>Hiermee wordt de lijst met gebeurtenissen hersteld die door de bewerking(en) zijn verwerkt.</li><li>synchroniseert met de tabel NmsBroadLogMsg om de kwalificaties van de leveringsberichten te herstellen.</li><li>Hiermee worden de logbestanden voor gebeurtenislevering hersteld zodra de synchronisatie met de tabel NmsBroadLogMsg is voltooid.</li><li>synchroniseert met de tabel NmsTrackingUrl om de tracking voor bezorgings-URL&#39;s te herstellen.</li><li>Hiermee worden URL&#39;s voor het bijhouden van gebeurtenissen hersteld zodra de synchronisatie met de tabel NmsTrackingUrl is voltooid.</li><li>Hiermee kunt u alle e-mailadressen herstellen die elke drie uur nadat een levering is verzonden, in quarantaine zijn geplaatst.</li></ul> |
 | **MessageCenter volledige geaggregeerde berekening** (agg_messageCenter_full) | Transactionaal berichtenbeheer (Berichtcentrum - Controle) | Deze werkstroom werkt het Volledige aggregaat voor de kubus van het Centrum van het Bericht bij. Deze wordt standaard elke dag om 3 uur geactiveerd. In dit aggregaat worden de volgende afmetingen vastgelegd: Kanaal, Datum, Status en gebeurtenistype. De kubus van het centrum van het Bericht wordt dan gebruikt om rapporten te produceren die op gebeurtenissen worden gebaseerd. Meer informatie over kubussen vindt u in [deze sectie](../../reporting/using/ac-cubes.md) |
-| **Midden-sourcing (leveringstellers)** (defaultMidSourcingDlv) | Overdracht naar midsourcing | Deze workflow verzamelt tellingsinformatie voor leveringen op de server voor midsourcing. De telgegevens omvatten algemene leveringsindicatoren zoals het aantal verzonden leveringen, enz. Trackinggegevens zoals die worden geopend, worden niet opgenomen. Deze wordt standaard om de tien minuten geactiveerd. |
-| **Midden-sourcing (leveringslogboeken)** (defaultMidSourcingLog) | Overdracht naar midsourcing | Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd. |
-| **NMAC-opt-out-beheer** (mobileAppOptOutMgt) | Kanaal voor mobiele apps | Met deze workflow worden afmeldingsopties op mobiele apparaten bijgewerkt. Het wordt teweeggebracht om de 6 uur tussen 1am en middernacht. Raadpleeg voor meer informatie [deze sectie](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
+| **Midden-sourcing (leveringstellers)** (defaultMidSourcingDlv) | Overschakelen naar middelmatige sourcing | Deze workflow verzamelt tellingsinformatie voor leveringen op de server voor midsourcing. De telgegevens omvatten algemene leveringsindicatoren zoals het aantal verzonden leveringen, enz. Trackinggegevens zoals die worden geopend, worden niet opgenomen. Deze wordt standaard om de tien minuten geactiveerd. |
+| **Midden-sourcing (leveringslogboeken)** (defaultMidSourcingLog) | Overschakelen naar middelmatige sourcing | Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd. |
+| **NMAC-opt-out-beheer** (mobileAppOptOutMgt) | Mobiel App-kanaal | Met deze workflow worden afmeldingsopties op mobiele apparaten bijgewerkt. Het wordt teweeggebracht om de 6 uur tussen 1am en middernacht. Raadpleeg voor meer informatie [deze sectie](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
 | **Melding voorstel** (aanbiedingsbeheer) | Levering | Deze workflow implementeert goedgekeurde aanbiedingen in de onlineomgeving en in elke categorie in de aanbiedingencatalogus. |
 | **Opschonen van gepauzeerde workflows** (CleupPausedWorkflows) | Levering | In deze workflow worden gepauzeerde workflows geanalyseerd waarvoor de ernst is ingesteld op Normaal en worden waarschuwingen en meldingen geactiveerd wanneer deze al te lang zijn gepauzeerd. Na een maand worden gepauzeerde technische workflows onvoorwaardelijk gestopt. Standaard wordt de activering elke maandag om 17.00 uur gestart. Raadpleeg voor meer informatie [Afhandeling van gepauzeerde workflows](monitoring-workflow-execution.md#handling-of-paused-workflows). |
-| **Opmaak van privacyverzoek** (CleupPrivacyRequests) | Verordening inzake bescherming van privacydata | Deze workflow wist de bestanden met toegangsverzoeken die ouder zijn dan 90 dagen. |
+| **Opmaak van privacyverzoek** (CleupPrivacyRequests) | Privacygegevensbeschermingsverordening | Deze workflow wist de bestanden met toegangsverzoeken die ouder zijn dan 90 dagen. |
 | **Batchgebeurtenissen verwerken** (batchEventsProcessing) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Met deze workflow kunt u batchgebeurtenissen in een wachtrij plaatsen voordat u ze aan een berichtsjabloon koppelt. |
 | **Real-time gebeurtenissen verwerken** (rtEventsProcessing) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Dit werkschema laat u gebeurtenissen in real time in een rij zetten alvorens hen met een berichtmalplaatje te associëren. |
 | **Propositiesynchronisatie** (propositionSynch) | Besturing van de aanbiedingsengine met uitvoeringsinstantie | Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die voor interacties wordt gebruikt. |

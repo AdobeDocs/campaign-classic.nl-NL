@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Adobe Campaign Classic
-description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen
+description: Ontdek belangrijke mogelijkheden, gebruikersinterface en globale richtlijnen
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Overview
 role: User
@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 91%
+source-wordcount: '920'
+ht-degree: 89%
 
 ---
 
@@ -44,17 +44,17 @@ In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van l
 
 De basisbeginselen van profielbeheer worden uitgelegd in [Profielen](../../platform/using/about-profiles.md).
 
-### Doelgerichte segmentatie {#targeted-segmentation}
+### Gerichte segmentatie {#targeted-segmentation}
 
 Adobe Campaign beschikt over krachtige, gebruiksvriendelijke segmentatie- en targetingfuncties waarmee u heel doelgerichte, gedifferentieerde aanbiedingen kunt maken. Met de functionaliteit voor beschrijvende analyse kunt u informatie upstream en downstream van uw marketingcampagnes analyseren, en met de functionaliteit voor filterbeheer en de [grafische query-editor](../../platform/using/about-queries-in-campaign.md) kunt u uw ledenpopulatie filteren en doelgroepen testen en maken op basis van een onbeperkt aantal criteria. De analyse- en targetingfuncties worden beschreven op [deze pagina](../../reporting/using/about-descriptive-analysis.md) en in de sectie [Filters maken](../../platform/using/creating-filters.md).
 
 De geavanceerde functionaliteit voor data management breidt de mogelijkheden voor dataverwerking uit. Het vereenvoudigt en optimaliseert het targetingproces door data op te nemen die niet in de datamart worden gemodelleerd. Deze functionaliteit wordt gedetailleerd beschreven op [deze pagina](../../workflow/using/targeting-data.md#data-management).
 
-### Kanaaloverschrijdende orkestrering van campagnes {#cross-channel-campaign-orchestration}
+### Kanaaloverschrijdende campagneorchestratie {#cross-channel-campaign-orchestration}
 
 Met Adobe Campaign kunt u doelgerichte en gepersonaliseerde campagnes ontwerpen en organiseren op meerdere kanalen: e-mail, direct mail, sms, pushmelding. Eén enkele interface voorziet u van alle functies die vereist zijn om al uw campagnes en communicatie te plannen, te organiseren, te configureren, te personaliseren, te automatiseren, uit te voeren en te meten. Raadpleeg [deze pagina](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie over het plannen en uitvoeren van campagnes.
 
-### Personalisatie en realtime-interactie {#personalization-and-real-time-interaction}
+### Personalisatie en realtime interactie {#personalization-and-real-time-interaction}
 
 Trek de aandacht van uw klanten en verbeter responspercentages dankzij de geavanceerde personalisatie van berichtcontent en kopteksten op basis van klantprofielen en -voorkeuren. Raadpleeg [deze pagina](../../delivery/using/about-personalization.md) voor meer informatie over beheer en personalisatie van berichtcontent. Het collaboratieve beheer van content, meldingen en goedkeuringscircuits wordt gedetailleerd in [deze sectie](../../mrm/using/about-marketing-resource-management.md).
 
@@ -62,7 +62,7 @@ Trek de aandacht van uw klanten en verbeter responspercentages dankzij de geavan
 
 Met Adobe Campaign kunt u het gedrag van uw klanten volgen en interpreteren door hun data en profielen geleidelijk te verrijken. Met de rapportage- en analysetools kunt u profiteren van elke nieuwe campagne, uw marketinginitiatieven beter richten en hun impact en rendement op investeringen optimaliseren. Raadpleeg [deze pagina](../../reporting/using/delivery-reports.md) voor meer informatie.
 
-### Adobe Experience Cloud-integraties {#adobe-experience-cloud-integrations}
+### Adobe Experience Cloud-integratie {#adobe-experience-cloud-integrations}
 
 U kunt de leveringsfuncties en functies voor geavanceerd campagnebeheer van Adobe Campaign combineren met een reeks oplossingen die u helpen uw gebruikerservaring te personaliseren: bijvoorbeeld Adobe Experience Manager-, Adobe Analytics-, Adobe Target- of Adobe Experience Cloud-triggers. U kunt ook integreren met Adobe IMS en u aanmelden bij Campaign met uw Adobe ID. Raadpleeg [deze sectie](../../integrations/using/about-adobe-id.md) voor meer informatie over integraties tussen oplossingen en verificatie.
 

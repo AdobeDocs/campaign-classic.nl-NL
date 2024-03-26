@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Query’s uitvoeren op leveringsgegevens
+title: Leveringsgegevens opvragen
 description: Leer hoe u leveringsinformatie kunt opvragen
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1259'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ De volgende stappen tonen u hoe te om **[!UICONTROL Split]** door twee verschill
 
    ![](assets/query_editor_ex_08.png)
 
-1. De tweede vertakking definiëren. Deze vertakking bevat de e-mail met follow-up met dezelfde inhoud als voor de eerste levering. Ga naar de **[!UICONTROL Subsets]** en klik op **[!UICONTROL Add]** om het te maken.
+1. De tweede vertakking definiëren. Deze vertakking bevat het e-mailbericht met dezelfde inhoud als voor de eerste levering. Ga naar de **[!UICONTROL Subsets]** en klik op **[!UICONTROL Add]** om het te maken.
 
    ![](assets/query_editor_ex_06.png)
 

@@ -10,8 +10,8 @@ topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
 
@@ -102,4 +102,4 @@ Hiertoe moet u een workflow configureren die alle gebeurtenissen opnieuw maakt m
 
 >[!CAUTION]
 >
->Deze stap kan alleen worden uitgevoerd met behulp van een workflow en is daarom voorbehouden aan professionele gebruikers. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+>Deze stap kan alleen worden uitgevoerd met behulp van een workflow en is daarom voorbehouden aan professionele gebruikers. Neem voor meer informatie contact op met het accountmanager van de Adobe.

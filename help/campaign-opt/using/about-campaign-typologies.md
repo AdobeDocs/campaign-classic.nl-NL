@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 19%
+source-wordcount: '470'
+ht-degree: 14%
 
 ---
 
@@ -59,11 +59,11 @@ De stappen voor het maken en toepassen van een typologie voor uw leveringen word
 1. Vorm uw levering om de typologie te gebruiken u creeerde. Raadpleeg [deze sectie](applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
 1. Test en controleer het gedrag door campagnesimulaties. Raadpleeg voor meer informatie over campagnesimulaties [deze sectie](campaign-simulations.md).
 
-Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om toezicht te houden op uitsluitingen. Er zijn gevallen van monstergebruik voor de druktypologische regels beschikbaar in: [deze pagina](pressure-rules.md#use-cases-on-pressure-rules).
+Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om uitsluitingen te controleren. Er zijn gevallen van monstergebruik voor de druktypologische regels beschikbaar in: [deze pagina](pressure-rules.md#use-cases-on-pressure-rules).
 
-## Tutorialvideo’s {#typologies-video}
+## Zelfstudievideo&#39;s {#typologies-video}
 
-### Vermoeidheidsbeheer instellen met behulp van typologische regels
+### Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels
 
 In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign kunt implementeren door gebruik te maken van typologische regels.
 
@@ -77,7 +77,7 @@ Moeheidsbeheer bepaalt de frequentie en de hoeveelheid van de berichten om de on
 
 Er zijn aanvullende instructievideo&#39;s beschikbaar voor campagnes [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
 
-**Verwant onderwerp**
+**Verwante onderwerpen**
 
 * [Aan de slag met typologieën en moeheidsbeheer](pressure-rules.md)
 

@@ -8,7 +8,7 @@ hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Adobe Campaign werkt met hulpprogramma&#39;s van derden en de compatibiliteit wo
 
 Adobe Campaign bevat Apache Tomcat, die via HTTP als ingangspunt fungeert in de toepassingsserver, en die is geïntegreerd met Apache Web-server. De Apache Software Foundation heeft Apache HTTP Server 2.4.53 uitgebracht. Deze versie verhelpt kwetsbaarheden die een externe aanvaller in staat kunnen stellen de controle over een beïnvloed systeem te verkrijgen. Meer informatie in [Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
-Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit door **15 juni 2022** om deze Apache-kwetsbaarheid te beperken en uw instantieomgeving veiliger te maken. Deze upgrade is van toepassing op alle Campaign Classic v7 Managed Services-klanten, Campaign v8 en Campaign Standard-klanten die op een kwetsbare versie van Apache HTTP Server werken. Als dit gevolgen heeft, heeft Adobe al contact met u opgenomen om u op de hoogte te stellen van deze upgrade.
+Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit door **15 juni 2022** om deze Apache-kwetsbaarheid te beperken en uw instantieomgeving veiliger te maken. Deze upgrade is van toepassing op alle Campaign Classic v7 Managed Services-klanten, Campaign v8 en klanten van het Campaign Standard die op een kwetsbare versie van Apache HTTP Server werken. Als dit gevolgen heeft, heeft de Adobe al contact met u opgenomen om u op de hoogte te stellen van deze upgrade.
 
 Van deze upgrade wordt verwacht dat deze automatisch buiten de normale kantooruren wordt uitgevoerd, zodat u de Campagneservice zonder onderbreking kunt blijven gebruiken.
 
-De niet-productie-instantie(s) worden eerst door Adobe bijgewerkt, waarna de productie-instantie(s) worden bijgewerkt. Aangezien dit een automatisch upgradeproces is dat eigendom is van Adobe, hoeft u niets te doen. Als u echter problemen ondervindt, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+De niet-productie-instantie(s) worden eerst door de Adobe bijgewerkt, waarna de productie-instantie(s) worden bijgewerkt. Aangezien dit een automatisch upgradeproces is dat eigendom is van de Adobe, is er geen actie van uw kant vereist. Als u echter problemen ondervindt, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ De niet-productie-instantie(s) worden eerst door Adobe bijgewerkt, waarna de pro
 
 * **Welke bevestigingen moeten door de klanten worden in werking gesteld?**
 
-  Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kan ik om een verandering in Datum/Tijd in de geplande groef van de veiligheidsverbetering verzoeken?**
@@ -65,4 +65,4 @@ De niet-productie-instantie(s) worden eerst door Adobe bijgewerkt, waarna de pro
   Aangezien dit een veiligheidsmoeilijke situatie is, adviseren wij u sterk aan het bestaande programma aan te passen.
 
 
-Voor elke andere vraag kunt u zich tot [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Voor elke andere vraag kunt u zich tot [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).

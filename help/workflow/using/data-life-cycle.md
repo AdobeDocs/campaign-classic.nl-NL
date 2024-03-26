@@ -2,13 +2,13 @@
 product: campaign
 title: Levenscyclus van gegevens
 description: Meer informatie over de levenscyclus van gegevens in workflows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 4%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 
@@ -28,19 +28,19 @@ Selecteer hiertoe het relevante menu:
 
 * Het doel weergeven
 
-   Dit menu toont de beschikbare gegevens over de doelpopulatie evenals de structuur van de het werklijst (**[!UICONTROL Schema]** ).
+  Dit menu toont de beschikbare gegevens over de doelpopulatie evenals de structuur van de het werklijst (**[!UICONTROL Schema]** ).
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Raadpleeg voor meer informatie hierover [Worktables and workflow schema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  Raadpleeg voor meer informatie hierover [Worktables and workflow schema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Het doel analyseren
 
-   In dit menu hebt u toegang tot de wizard voor beschrijvende analyse, waarmee u statistieken en rapporten over de overgangsgegevens kunt produceren.
+  In dit menu hebt u toegang tot de wizard voor beschrijvende analyse, waarmee u statistieken en rapporten over de overgangsgegevens kunt produceren.
 
-   Raadpleeg deze [sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md) voor meer informatie.
+  Raadpleeg deze [sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md) voor meer informatie.
 
-De doelgegevens worden gewist terwijl de workflow wordt uitgevoerd. Alleen de laatste werktabel is toegankelijk. U kunt het werkschema vormen zodat alle het werklijsten toegankelijk blijven: controleren **[!UICONTROL Keep the result of interim populations between two executions]** in de workfloweigenschappen.
+De doelgegevens worden gewist terwijl de workflow wordt uitgevoerd. Alleen de laatste werktabel is toegankelijk. U kunt de workflow zo configureren dat alle werktabellen toegankelijk blijven: controleer de **[!UICONTROL Keep the result of interim populations between two executions]** in de workfloweigenschappen.
 
 Wij raden u echter aan deze optie niet te activeren als er grote hoeveelheden gegevens zijn.
 
@@ -84,13 +84,13 @@ Voer de volgende stappen uit:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configureer de **[!UICONTROL Enrichment]** Typ activiteit om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campaign-database staan.
+1. Vorm **[!UICONTROL Enrichment]** Typ activiteit om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campaign-database staan.
 
    Hier is de afstemmingssleutel het rekeningnummer:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Dan vorm **[!UICONTROL Delivery]**: het wordt gecreeerd gebaseerd op een malplaatje, en de ontvangers worden gespecificeerd door de binnenkomende overgang.
+1. Dan vorm **[!UICONTROL Delivery]**: deze wordt gemaakt op basis van een sjabloon en de ontvangers worden opgegeven door de binnenkomende overgang.
 
    ![](assets/wf-targetdata-sample-4.png)
 
@@ -100,13 +100,13 @@ Voer de volgende stappen uit:
 
 1. In het leveringsmalplaatje, gebruik de gebieden die in het werkschema worden verzameld.
 
-   Om dit te doen, voeg **[!UICONTROL Target extension]** type verpersoonlijkingsgebieden.
+   Voeg **[!UICONTROL Target extension]** type verpersoonlijkingsgebieden.
 
    ![](assets/wf-targetdata-sample-5.png)
 
    Hier willen we het favoriete muziekgenre en mediatype (CD of DVD) van de klant invoegen, zoals vermeld in het bestand dat tijdens de workflow wordt verzameld.
 
-   Als plus gaan we een coupon toevoegen voor houders van een loyaliteitskaart, dat wil zeggen ontvangers voor wie de waarde van de &#39;Kaart&#39; gelijk is aan 1.
+   Als plus gaan we een coupon toevoegen voor houders van een getrouwde kaart, dat wil zeggen ontvangers voor wie de waarde van de &#39;Kaart&#39; gelijk is aan 1.
 
    ![](assets/wf-targetdata-sample-6.png)
 

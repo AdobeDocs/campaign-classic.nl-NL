@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 2%
+source-wordcount: '475'
+ht-degree: 3%
 
 ---
 
@@ -85,7 +85,7 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
   Het aanpassingsblok van de pagina Mirror is gewijzigd met v6.x. Deze nieuwe versie verbetert de beveiliging bij het openen van deze pagina&#39;s.
 
-  Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
+  Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. De Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
 
   Als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog steeds actief zijn) kunt u echter terugkeren naar het oude aanpassingsblok om dit probleem te voorkomen door de optie te wijzigen **[!UICONTROL XtkAcceptOldPasswords]** en stel deze in op **[!UICONTROL 1]**. Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
 
@@ -136,7 +136,7 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
 -->
 
-* Interaction
+* Interactie
 
   Als u **Interactie**, moet u parameters aanpassen na de migratie.
 

@@ -1,28 +1,28 @@
 ---
 product: campaign
-title: Vereisten voor installatie van Campaign in Linux
-description: Vereisten voor installatie van Campaign in Linux
+title: Vereisten voor installatie van campagne in Linux
+description: Vereisten voor installatie van campagne in Linux
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
+badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premises en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
-# Vereisten om Campagne op Linux te installeren{#prerequisites-of-campaign-installation-in-linux}
+# Voorwaarden om Campaign op Linux te installeren{#prerequisites-of-campaign-installation-in-linux}
 
 
 
-## Softwarevereisten {#software-prerequisites}
+## Vereiste software {#software-prerequisites}
 
-In dit gedeelte worden de voorbereidende stappen beschreven die zijn vereist voor de installatie van Adobe Campaign.
+In deze sectie worden de eerste configuratiestappen besproken die nodig zijn voordat Adobe Campaign kan worden geïnstalleerd.
 
 De technische en softwareconfiguratie die nodig is voor de installatie van Adobe Campaign wordt beschreven in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct
 
 Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken hebben.
 
-* Bibliotheek C moet de TLS-modus (Thread Local Storage) kunnen ondersteunen. Deze modus is in de meeste gevallen actief, behalve bij sommige kernels waarvoor Xen-ondersteuning is uitgeschakeld.
+* Bibliotheek C moet ondersteuning bieden voor de tls-modus (Thread Local Storage). Deze modus is in de meeste gevallen actief, behalve bij sommige kernels waarvoor Xen-ondersteuning is uitgeschakeld.
 
-  Om dit te controleren, kunt u gebruiken **uname -a | groene xen** bijvoorbeeld.
+  U kunt dit controleren door bijvoorbeeld de **opdracht uname -a | grep xen te** gebruiken.
 
   Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
 
@@ -53,7 +53,7 @@ Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken 
 
   Voor RHEL 7/8-distributies is versie 1.0 van OpenSSL vereist.
 
-* Als je Adobe Campaign wilt gebruiken, moet je beschikken over de **libicu** geïnstalleerde bibliotheek.
+* Als je Adobe Campaign wilt gebruiken, moet je de **libicu-bibliotheek** hebben geïnstalleerd.
 
   De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
 
@@ -61,7 +61,7 @@ Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken 
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
+  Als u Adobe Campaign wilt gebruiken, moet de libc-ares-bibliotheek zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### Lettertypen voor MTA-statistieken {#fonts-for-mta-statistics}
 
-Om rapporten over MTA statistieken (nms/fra/jsp/stat.jsp) correct te tonen, voeg doopvonten toe.
+Voeg lettertypen toe om te zorgen dat rapporten over MTA-statistieken (nms/fra/jsp/stat.jsp) correct worden weergegeven.
 
 Voeg in Debian de opdracht toe:
 
@@ -167,7 +167,7 @@ Voor Debian zijn de volgende configuraties vereist:
 
 ### LibreOffice voor CentOS installeren {#installing-libreoffice-for-centos}
 
-De volgende configuraties zijn nodig met CentOS:
+De volgende configuraties zijn nodig voor CentOS:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ Controleer ook het algemene [Database](../../installation/using/database.md) sec
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign biedt ondersteuning voor alle versies van de PostgreSQL-clientbibliotheken uit versie 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** en **libpq.so.3.1**).
+Adobe Campaign ondersteunt alle versies van de clientbibliotheken van PostgreSQL vanaf versie 7.2: (libpq.so.5 **,** libpq.so.4 **,** libpq.so.3.2 **en** libpq.so.3.1 ****).
 
-Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto** bibliotheken.
+Voor het gebruik van PostgreSQL met Adobe Campaign moeten ook de bijbehorende **pgcrypto-bibliotheken** worden geïnstalleerd.
 
 ### Oracle {#oracle}
 
-Haal de bibliotheekversie op voor 64-bits Debian, dat wil zeggen: **libclntsh.so**, **libclntsh.so.11.1** en **libclntsh.so.10.1**.
+Haal de bibliotheekversie op voor 64-bits Debian, oftewel: **libclntsh.so**, **libclntsh.so.11.1** en **libclntsh.so.10.1**.
 
-U kunt een Linux RPM pakket van het Netwerk van de Technologie van het Oracle verkrijgen.
+U kunt een Linux RPM-pakket verkrijgen van Oracle Technology Network.
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Adobe Campaign-installaties voor Linux moeten in de volgende volgorde worden uit
 
 Het installatieproces wordt in dit hoofdstuk beschreven. De installatiestappen zijn als volgt:
 
-* Stap 1: De toepassingsserver installeren, verwijs naar [Pakketten installeren met Linux](../../installation/using/installing-packages-with-linux.md).
-* Stap 2: Het integreren met een server van het Web (facultatief, afhankelijk van de opgestelde componenten).
+* Stap 1: Installeer de toepassingsserver, raadpleeg [Pakketten installeren met Linux](../../installation/using/installing-packages-with-linux.md).
+* Stap 2: Integreren met een webserver (optioneel, afhankelijk van de gedistribueerde componenten).
 
-Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbestand en de server vormen. Raadpleeg voor meer informatie hierover [Informatie over initiële configuratie](../../installation/using/about-initial-configuration.md).
+Zodra de installatiestappen zijn voltooid, moet u de instanties, de database en de server configureren. Zie Informatie over aanvankelijke configuratie](../../installation/using/about-initial-configuration.md) voor meer informatie hierover[.

@@ -2,13 +2,13 @@
 product: campaign
 title: Het campagnepakket publiceren
 description: Het campagnepakket publiceren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 2%
+source-wordcount: '466'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ Voordat ze in de lijst met campagnepakketten kunnen worden gepubliceerd, moeten 
 
 ## Een revisor toewijzen {#assigning-a-reviewer}
 
-Als u de controleur wilt selecteren, klikt u op de knop **[!UICONTROL Approval parameters]** in het campagnepakket en kiest u de relevante revisor in de vervolgkeuzelijst.
+Klik op de knop **[!UICONTROL Approval parameters]** in het campagnepakket en kiest u de relevante revisor in de vervolgkeuzelijst.
 
 ![](assets/s_advuser_mkg_dist_define_valid.png)
 
@@ -44,11 +44,11 @@ U kunt andere revisoren toevoegen van de **[!UICONTROL Edit...]** link in het ca
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## Erkenningsperioden {#approval-periods}
+## Erkenningsperiodes {#approval-periods}
 
 Standaard krijgen revisoren drie dagen vanaf de verzenddatum de tijd om de goedkeuring te verwerken.
 
-In het venster Revisoren bewerken kunt u ook herinneringen instellen voor het verzenden van een of meerdere berichten als er geen campagnepakket is goedgekeurd. Om dit te doen, klik **[!UICONTROL Add reminder]** dan de koppeling **[!UICONTROL Add]** knop.
+In het venster Revisoren bewerken kunt u ook herinneringen instellen voor het verzenden van een of meerdere berichten als er geen campagnepakket is goedgekeurd. Om dit te doen, klik **[!UICONTROL Add reminder]** koppeling, dan de **[!UICONTROL Add]** knop.
 
 Herinneringen kunnen op een bepaalde datum worden verzonden en/of **x** dagen na de verzenddatum. Het type herinnering kan in de eerste kolom van de lijst van herinneringen worden gevormd. In het onderstaande voorbeeld ontvangen de controleurs een herinneringsbericht op de website op 29/01/2014, d.w.z. twee dagen voor de datum die is geselecteerd in het **[!UICONTROL Date]** kolom en een tweede herinnering één dag vóór het einde van de goedkeuringsperiode, d.w.z. twee dagen na de datum van indiening voor goedkeuring.
 

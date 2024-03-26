@@ -3,7 +3,7 @@ product: campaign
 title: Kubussen
 description: Aan de slag met kubussen
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ De specifieke termijnen wanneer het werken met kubussen worden hieronder vermeld
 
 * **Feitentabel/schema** - De tabel met feiten (of het feitelijke schema) bevat de onbewerkte of elementaire gegevens waarop analyses worden gebaseerd. Dit zijn hoofdzakelijk grote volumelijsten (misschien met verbonden lijsten) met potentieel lange berekeningen. Een tabel met feiten kan bijvoorbeeld de volgende zijn: de tabel voor het uitzenden, de tabel voor aankopen, enzovoort.
 
-* **Dimension** - Met Dimension kunt u gegevens segmenteren in groepen: zodra ze zijn gemaakt, dienen ze als analysegassen. In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
+* **Dimension** - Met Dimensionen kunt u gegevens segmenteren in groepen: zodra ze zijn gemaakt, dienen ze als analysegassen. In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
 
 * **Binding** - Voor sommige velden kunt u binden aan groepswaarden definiëren en het gemakkelijker maken om informatie te lezen. Binding wordt toegepast op niveaus. Wij adviseren dat u het binden bepaalt wanneer er een mogelijkheid van vele verschillende waarden is.
 

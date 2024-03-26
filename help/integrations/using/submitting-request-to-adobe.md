@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: Aanvraag indienen bij Adobe
-description: Aanvraag indienen bij Adobe
+title: Verzoek tot Adobe indienen
+description: Verzoek tot Adobe indienen
 feature: Audiences, People Core Service Integration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
@@ -11,12 +11,12 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 16%
+source-wordcount: '152'
+ht-degree: 2%
 
 ---
 
-# Aanvraag indienen bij Adobe{#submitting-request-to-adobe}
+# Verzoek tot Adobe indienen{#submitting-request-to-adobe}
 
 
 
@@ -37,7 +37,7 @@ Zodra IMS voor uw organisatie wordt toegelaten, kunt u levering van de de kerndi
    <td> Uw organisatienaam </td> 
   </tr> 
   <tr> 
-   <td> <strong>Organisatie-ID</strong><br /> </td> 
+   <td> <strong>Organisatie-id</strong><br /> </td> 
    <td> Uw organisatie-id. <br> Raadpleeg voor meer informatie over uw organisatie-id <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl">deze pagina</a></td> 
   </tr> 
   <tr> 

@@ -2,12 +2,12 @@
 product: campaign
 title: JavaScript-scripts en -sjablonen
 description: JavaScript-scripts en -sjablonen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Scripts zijn alomtegenwoordig in een workflowdiagram:
 * De activiteit van de &quot;Test&quot;evalueert uitdrukkingen JavaScript om de aangewezen overgang te activeren.
 * De meeste tekstvelden zijn JavaScript-sjablonen: JavaScript-expressies kunnen worden opgenomen tussen &lt;%= en %>. Deze velden bevatten een knop waarmee een vervolgkeuzelijst wordt geopend waarmee u expressies kunt invoeren.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Objecten blootgesteld {#objects-exposed}
 
@@ -33,7 +33,7 @@ JavaScripts die in de context van een werkstroom worden uitgevoerd, hebben toega
 
 * **instance**: Vertegenwoordigt de workflow die wordt uitgevoerd. Het schema van dit object is **xtk:workflow**.
 * **taak**: Vertegenwoordigt de taken die worden uitgevoerd. Het schema van dit object is **xtk:workflowTask**.
-* **event**: Vertegenwoordigt de gebeurtenissen die de uit te voeren taak activeerden. Het schema van dit object is **xtk:workflowEvent**. Dit object is niet geïnitialiseerd voor **AND-join** type activiteiten die zijn geactiveerd via meerdere overgangen.
+* **event**: Vertegenwoordigt de gebeurtenissen die de uit te voeren taak hebben geactiveerd. Het schema van dit object is **xtk:workflowEvent**. Dit object is niet geïnitialiseerd voor **AND-join** type activiteiten die zijn geactiveerd via meerdere overgangen.
 * **gebeurtenissen**: Vertegenwoordigt de lijst met gebeurtenissen die de huidige taak hebben geactiveerd. Het schema van dit object is **xtk:workflowEvent**. Deze tabel bevat gewoonlijk één element maar kan meerdere elementen bevatten voor **AND-join** type activiteiten die op basis van verschillende overgangen zijn geactiveerd.
 * **activiteit**: Vertegenwoordigt het model van de taak die wordt uitgevoerd. Het schema van dit object is afhankelijk van het type activiteit. Dit object kan worden gewijzigd door het initialisatiescript, in andere scripts kunnen wijzigingen met onbepaalbare effecten worden toegepast.
 
@@ -60,7 +60,7 @@ logInfo("Start date: " + task.creationDate)
 
 De **[!UICONTROL logInfo(message)]** de functie neemt een bericht in het logboek op.
 
-Klikken **[!UICONTROL OK]** als u de wizard Maken wilt sluiten, start u de workflow met de actieknoppen rechtsboven in de lijst met workflows. Raadpleeg het logbestand aan het einde van de uitvoering. Er moeten twee berichten worden weergegeven die overeenkomen met het script: de ene geeft het label van de workflow weer, de andere geeft de datum weer waarop het script is geactiveerd.
+Klikken **[!UICONTROL OK]** als u de wizard Maken wilt sluiten, start u de workflow met de actieknoppen in de rechterbovenhoek van de lijst met workflows. Raadpleeg het logbestand aan het einde van de uitvoering. Er moeten twee berichten worden weergegeven die overeenkomen met het script: de ene bevat het label van de workflow en de andere de datum waarop het script is geactiveerd.
 
 ## Variabelen {#variables}
 
@@ -106,7 +106,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Voeg een activiteit van de Vraag en doelontvangers volgens uw behoeften toe.
 
-1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld op 50% ingesteld.
+1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld ingesteld op 50%.
 
    Dit percentage wordt dynamisch bijgewerkt dankzij de eerder gedefinieerde instantievariabele.
 

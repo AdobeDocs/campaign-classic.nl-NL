@@ -493,6 +493,6 @@ Klik op de volgende koppelingen voor meer informatie:
 
 * [Aan de slag met schema&#39;s](about-schema-reference.md)
 * [Databasetoewijzing](database-mapping.md)
-* [Koppelingsbeheer](database-links.md)
+* [Beheer van koppeling](database-links.md)
 * [Sleutelbeheer](database-keys.md)
 * [Campaign datamodel](about-data-model.md)

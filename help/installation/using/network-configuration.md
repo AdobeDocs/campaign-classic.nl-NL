@@ -11,8 +11,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 3%
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -137,7 +137,7 @@ Voor de rijke Adobe Campaign-client (**nlclient**), moeten de volgende havens op
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Applicatieserver<br /> </td> 
+   <td> Toepassingsserver<br /> </td> 
    <td> SOAP-verkeer (HTTP).<br /> </td> 
   </tr> 
  </tbody> 

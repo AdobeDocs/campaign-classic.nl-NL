@@ -9,8 +9,8 @@ role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 4%
+source-wordcount: '1189'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 * [Werken met quarantainebeheer](understanding-quarantine-management.md)
 * [Best practices voor verzending](delivery-best-practices.md)
-* [Leverbaarheid beheren](about-deliverability.md)
+* [Te leveren items beheren](about-deliverability.md)
 
 ## Leveringsoverzicht {#delivery-summary}
 
@@ -168,7 +168,7 @@ Toevoegen **publicID** in uw leveringslogboeken moet u het schema eerst uitbreid
 
 Zodra de wijzigingen worden gedaan, moet u gegevensbestandstructuur bijwerken zodat het met zijn logische beschrijving gericht is.
 
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. Klik op de knop **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** -menu.
 

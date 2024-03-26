@@ -2,13 +2,13 @@
 product: campaign
 title: Vertakking
 description: Meer informatie over de workflowactiviteit van Fork
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '424'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ U kunt de **[!UICONTROL Fork]** activiteit om veelvoudige uitgaande overgangen t
 >
 >De uitgaande overgangen die u na een **[!UICONTROL Fork]** activiteit wordt niet gelijktijdig uitgevoerd. Dit gedrag kan van invloed zijn op de workflowprestaties. Gebruik de **[!UICONTROL Fork]** activiteit als u verscheidene activiteiten onafhankelijk moet uitvoeren. Naar keuze, kunt u zich bij de uitgaande activiteiten vóór het verdere deel van het werkschema aansluiten.
 
-Om een **[!UICONTROL Fork]** de activiteit en de daarmee samenhangende activiteiten volgen de volgende stappen :
+Om een **[!UICONTROL Fork]** de activiteit en de daarmee verband houdende activiteiten volgen de volgende stappen :
 
 1. Open de **[!UICONTROL Fork]** en definieert u de naam en het label van de uitgaande overgangen.
 
@@ -40,13 +40,13 @@ In dit voorbeeld worden verschillende e-mails verzonden naar verschillende bevol
 * Het queryresultaat opslaan
 * Segmenteer het resultaat om meerdere leveringen te verzenden
 
-   ![De vorkactiviteit volgt de doorsnede van twee vragen en voorafgaat een activiteit van de lijstupdate en een gespleten activiteit.](assets/wkf_fork_example.png)
+  ![De vorkactiviteit volgt de doorsnede van twee vragen en voorafgaat een activiteit van de lijstupdate en een gespleten activiteit.](assets/wkf_fork_example.png)
 
 De workflow omvat de volgende activiteiten:
 
 1. **[!UICONTROL Query]** activiteit
 
-   Er worden twee populatiegroepen geselecteerd: Vrouwen en Parisiërs.
+   Er zijn twee bevolkingsgroepen geselecteerd: vrouwen en Parisiërs.
 
 1. **[!UICONTROL Intersection]** activiteit
 
@@ -63,7 +63,7 @@ De workflow omvat de volgende activiteiten:
 
    Er wordt een ander e-mailbericht verzonden naar elke bevolkingsgroep.
 
-## Hoofdlettergebruik: een verjaardagsbericht verzenden
+## Kwestie gebruiken: een e-mail voor een geboortedatum verzenden
 
 Een terugkerende e-mail wordt verzonden naar een lijst met ontvangers op hun verjaardag. A **[!UICONTROL Fork]** Deze activiteit wordt gebruikt om ontvangers op te nemen die op 29 februari op een schrikkeljaar geboren zijn. [Meer informatie](sending-a-birthday-email.md) over dit gebruiksgeval.
 
@@ -80,5 +80,5 @@ U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een 
 ## Verwante onderwerpen
 
 * [AND-join-activiteit](and-join.md)
-* [Hoofdlettergebruik: verjaardagsbericht](sending-a-birthday-email.md)
+* [Kwestie gebruiken: verjaardagsbericht](sending-a-birthday-email.md)
 * [Hoofdlettergebruik: inhoud maken en leveren](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

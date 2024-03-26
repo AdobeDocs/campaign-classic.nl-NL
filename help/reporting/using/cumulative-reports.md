@@ -2,14 +2,14 @@
 product: campaign
 title: Cumulatieve rapporten
 description: Cumulatieve rapporten
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 

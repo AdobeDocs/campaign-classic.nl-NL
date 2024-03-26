@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 5%
+source-wordcount: '702'
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ Zie de [Opmerkingen bij de release](../../rn/using/latest-release.md) voor meer 
 
 ## Hardware en infrastructuur {#hardware-and-infrastructure}
 
-Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden in dit hoofdstuk nader beschreven [page](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
+Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden in dit [page](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
 
-Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) als u dit hulpmiddel nodig hebt uitgevoerd. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
+Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Contact [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) als u dit hulpmiddel nodig hebt uitgevoerd. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
 
 * Als de indexgrootte groter is dan de tabelgrootte, is een vacuüm vereist.
 * Controleer de tabellen die het maximale bloat hebben. Als deze tabellen vaak worden gebruikt, moeten ze worden opgevuld.
@@ -70,4 +70,4 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 
 >[!NOTE]
 >
->Zie ook de [Leverbaarheid](../../delivery/using/about-deliverability.md) sectie. Raadpleeg voor een diepgaandere analyse van de leverbaarbaarheid de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+>Zie ook de [Leverbaarheid](../../delivery/using/about-deliverability.md) sectie. Raadpleeg voor een diepgaandere analyse van de leverbaarbaarheid de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).

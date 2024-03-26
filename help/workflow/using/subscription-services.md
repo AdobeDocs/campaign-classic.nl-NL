@@ -2,13 +2,13 @@
 product: campaign
 title: Lidmaatschapsservices
 description: Meer informatie over de workflowactiviteiten van Subscription Services
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ Om het te vormen, geef de activiteit uit en ga zijn etiket in, dan selecteer de 
 
    De inhoud van dit bericht wordt gespecificeerd in een leveringsmalplaatje met betrekking tot de informatiedienst. Raadpleeg deze [sectie](../../delivery/using/managing-subscriptions.md) voor meer informatie.
 
-## Voorbeeld: Een lijst met ontvangers abonneren op een nieuwsbrief {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Voorbeeld: abonneer een lijst met ontvangers op een nieuwsbrief {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
 In één enkele operatie is de volgende workflow bedoeld om een lijst op te stellen van ontvangers die in aanmerking komen voor een nieuwsbrief, gericht op werkende mensen die in Parijs wonen, om hen te laten inschrijven.
 

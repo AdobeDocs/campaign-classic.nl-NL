@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 3%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Afhankelijk van uw configuratie zijn er verschillende manieren om migratietests uit te voeren.
 
-U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voeren. Adobe Campaign-omgevingen zijn onderworpen aan licentie: controleer uw licentieovereenkomst of neem contact op met uw Adobe-vertegenwoordiger.
+U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voeren. Adobe Campaign-omgevingen zijn onderworpen aan licentie: controleer uw licentieovereenkomst of neem contact op met uw Adobe.
 
 1. Stop alle ontwikkelingen in uitvoering en zorg ervoor dat ze in de productieomgeving terechtkomen.
 1. Maak een steun van het gegevensbestand van de ontwikkelomgeving.
@@ -157,7 +157,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM de schakelaarplaatsingstype zijn nu afgekeurd. 
+   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM connectorimplementatietype zijn nu afgekeurd. 
    </br>Als u een van deze verouderde implementatietypen gebruikt in een externe account, moet deze externe account worden verwijderd en moet u vervolgens het volgende uitvoeren <b>postupgrade</b> gebruiken. 
    </br>Als u wilt overschakelen op de webAPI-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
   </tr> 
@@ -165,7 +165,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Actieactiviteiten van Microsoft CRM, Salesforce en Oracle CRM On Demand zijn niet langer beschikbaar. Om de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM te vormen, moet u gebruiken <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-connector</a> gericht op activiteiten.<br /> </td>
+   <td> Microsoft CRM, Salesforce en Oracle CRM On Demand Action zijn niet meer beschikbaar. Om de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM te vormen, moet u gebruiken <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-connector</a> gericht op activiteiten.<br /> </td>
   </tr> 
  </tbody> 
 </table>

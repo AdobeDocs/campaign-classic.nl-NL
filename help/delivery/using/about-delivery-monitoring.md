@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Aan de slag met verzendingscontrole
+title: Aan de slag met leveringscontrole
 description: Meer informatie over de mogelijkheden voor bewaking van de levering van Campaigns Classic
 badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
@@ -10,11 +10,11 @@ exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 16%
+ht-degree: 5%
 
 ---
 
-# Aan de slag met verzendingscontrole {#about-delivery-monitoring}
+# Aan de slag met leveringscontrole {#about-delivery-monitoring}
 
 Het controleren van uw leveringen nadat deze zijn verzonden, is een belangrijke stap om ervoor te zorgen dat uw marketingcampagnes efficiënt zijn en uw klanten bereiken.
 
@@ -28,7 +28,7 @@ Met de lijst met leveringen kunt u alle gemaakte leveringen op één locatie bek
 
 Voor elke levering is een speciaal dashboard beschikbaar. Hiermee kunt u de uiteindelijke problemen tijdens het verzenden controleren en verschillende typen informatie over de levering bekijken: rapporten, spiegelpagina&#39;s, uitsluitingen, logboeken bijhouden, renderen, enz.
 
-* [De lijst met leveringen openen](list-of-deliveries.md)
+* [Toegang tot de lijst met leveringen](list-of-deliveries.md)
 * [Leveringsdashboard](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
@@ -52,6 +52,6 @@ Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de exte
 
 **Quarantainebeheer begrijpen**
 
-Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd.
+Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie adres in quarantaine is geplaatst worden door gebrek tijdens leveringsanalyse uitgesloten, en zullen niet worden gericht.
 
 In [deze sectie](understanding-quarantine-management.md), zult u informatie over vinden om quarantined adressen te identificeren en te beheren, en meer over de voorwaarden te leren om een adres naar quarantaine te verzenden.

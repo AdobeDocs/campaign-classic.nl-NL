@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Campaign-server configureren
-description: Campaign-server configureren
+title: Campagneserver configureren
+description: Campagneserver configureren
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 2%
+source-wordcount: '1575'
+ht-degree: 1%
 
 ---
 
@@ -26,17 +26,17 @@ In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen w
 
 Deze procedures zijn beperkt tot **op locatie**/**hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **gehost** implementaties, server-side instellingen kunnen alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld binnen [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Voor **gehost** implementaties, server-side instellingen kunnen alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld binnen [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Raadpleeg de volgende secties voor meer informatie:
 
 * [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 * [Hostmodellen](../../installation/using/hosting-models.md)
-* [Campaign Classic On-premisse en gehoste capaciteitmatrix](../../installation/using/capability-matrix.md)
+* [Campaign Classic On-premise &amp; Hosted Capability matrix](../../installation/using/capability-matrix.md)
 
 ## Configuratiebestanden
 
-Campaign Classic-configuratiebestanden worden opgeslagen in het dialoogvenster **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+Campaign Classic configuratiebestanden worden opgeslagen in het dialoogvenster **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. Dit bestand combineert de technische parameters van de Adobe Campaign-server: deze worden door alle instanties gedeeld. Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters die in dit [sectie](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** waarbij **instance** is de naam van de instantie): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.

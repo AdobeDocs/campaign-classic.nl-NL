@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: CRM-connectoren
+title: CRM-connectors
 description: Ga aan de slag met CRM-connectors in Campagne
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
@@ -11,11 +11,11 @@ exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
-# CRM-connectoren{#crm-connectors}
+# CRM-connectors{#crm-connectors}
 
 
 

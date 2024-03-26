@@ -2,13 +2,13 @@
 product: campaign
 title: Gepersonaliseerde waarschuwingen verzenden naar operatoren
 description: Leer hoe u persoonlijke waarschuwingen naar operatoren kunt sturen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 4%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 In dit voorbeeld willen wij een alarm naar een exploitant verzenden die de naam van profielen zal bevatten die een nieuwsbrief opende maar niet de verbinding klikte het bevat.
 
-De velden voor de voornaam en achternaam van de profielen zijn gekoppeld aan de **[!UICONTROL Recipients]** de doelgerichtheid van **[!UICONTROL Alert]** activiteit is gekoppeld aan de **[!UICONTROL Operator]** doelgerichtheid. Als gevolg hiervan is er geen veld beschikbaar tussen de twee doeldimensies om een afstemming uit te voeren en de velden voor de voornaam en achternaam op te halen en deze weer te geven in de activiteit Waarschuwing.
+De velden voor de voornaam en achternaam van de profielen zijn gekoppeld aan de **[!UICONTROL Recipients]** de doelgerichtheid van de **[!UICONTROL Alert]** activiteit is gekoppeld aan de **[!UICONTROL Operator]** doelgerichtheid. Als gevolg hiervan is er geen veld beschikbaar tussen de twee doeldimensies om een afstemming uit te voeren en de velden voor de voornaam en achternaam op te halen en deze weer te geven in de activiteit Waarschuwing.
 
-Het proces bestaat uit het ontwikkelen van een workflow zoals hieronder:
+Het proces bestaat uit het samenstellen van een workflow zoals hieronder beschreven:
 
 1. Een **[!UICONTROL Query]** activiteit aan doelgegevens.
 1. Voeg een **[!UICONTROL JavaScript code]** activiteit in het werkschema om de bevolking te bewaren van de vraag aan de instantievariabele.
@@ -80,7 +80,7 @@ var.recCount>0
 
 Nu de populatie is toegevoegd aan de instantievariabele met de gewenste gebieden, kunt u deze informatie in toevoegen **[!UICONTROL Alert]** activiteit.
 
-Om dit te doen, voeg in toe **[!UICONTROL Source]** tabblad de onderstaande code:
+Voeg hiertoe de **[!UICONTROL Source]** tabblad de onderstaande code:
 
 ```
 <ul>

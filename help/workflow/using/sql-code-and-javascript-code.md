@@ -2,13 +2,13 @@
 product: campaign
 title: SQL-code en JavaScript-code
 description: Meer informatie over workflowactiviteiten voor SQL- en JavaScript-codes
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
@@ -24,11 +24,11 @@ An **[!UICONTROL SQL code]** activiteit voert een SQL manuscript uit. Het script
 
 * **[!UICONTROL Script]**
 
-   Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd. Dit script is een JST-sjabloon en kan daarom worden geconfigureerd volgens de workflowcontext.
+  Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd. Dit script is een JST-sjabloon en kan daarom worden geconfigureerd volgens de workflowcontext.
 
 * **[!UICONTROL Processing errors]**
 
-   Zie [Verwerkingsfouten](monitoring-workflow-execution.md#processing-errors).
+  Zie [Verwerkingsfouten](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-code en geavanceerde JavaScript-code {#javascript-code}
 
@@ -57,7 +57,7 @@ Als u deze limiet wilt negeren, moet u de waarde instellen op **0**.
 
 ![](assets/advanced_javascript_code.png)
 
-* **[!UICONTROL First call]**: De eerste streek van de redacteur bevat het manuscript om tijdens de eerste vraag uit te voeren.
+* **[!UICONTROL First call]**: De eerste zone van de editor bevat het script dat tijdens de eerste aanroep moet worden uitgevoerd.
 * **[!UICONTROL Next calls]**: De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
 * **[!UICONTROL Transitions]**: U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
 * **[!UICONTROL Schedule]**: De **[!UICONTROL Schedule]** kunt u plannen wanneer de activiteit wordt geactiveerd.

@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 2%
+source-wordcount: '3395'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Om de plaatsingstovenaar te beginnen, selecteer **Gereedschappen > Geavanceerd >
 De configuratiestappen zijn als volgt:
 
 1. [Algemene parameters](#general-parameters)
-1. [Parameters voor e-mailkanaal](#email-channel-parameters)
+1. [Parameters e-mailkanaal](#email-channel-parameters)
 1. [Beknopte e-mails beheren](#managing-bounced-emails)
 1. [Configuratie bijhouden](#tracking-configuration)
 1. [Parameters van mobiele kanalen](#mobile-channel-parameters)
@@ -67,7 +67,7 @@ De volgende opties zijn beschikbaar:
 * **[!UICONTROL Managing bounced emails]** : Hiermee definieert u het POP-account dat wordt gebruikt om binnenkomende e-mail op te halen. Zie [Beknopte e-mails beheren](#managing-bounced-emails).
 * **[!UICONTROL LDAP integration]** : Gebruikersverificatie configureren via een LDAP-directory. Zie [Verbinding maken via LDAP](../../installation/using/connecting-through-ldap.md).
 
-## Parameters voor e-mailkanaal {#email-channel-parameters}
+## Parameters e-mailkanaal {#email-channel-parameters}
 
 In de volgende stap kunt u de informatie definiëren die in berichtkoppen moet worden weergegeven.
 
@@ -108,7 +108,7 @@ Hier kunt u de geoorloofde tekens (&#39;gegevensbeleid&#39;) definiëren in het 
 
 Er zijn twee lijsten beschikbaar: **Alleen Europees** of **Alleen VS**. Indien nodig kunnen andere tekens worden toegevoegd.
 
-### Bezorgingsparameters {#delivery-parameters}
+### Leveringsparameters {#delivery-parameters}
 
 De **Geavanceerde parameters...** de verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
 
@@ -177,7 +177,7 @@ Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij 
 
 >[!IMPORTANT]
 >
->Als u onverwerkte e-mails met bounce wilt doorsturen, raadt Adobe u aan alleen de **[!UICONTROL Address for errors]** veld. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
+>Om onverwerkte stuiterende e-mails door te sturen, raadt de Adobe alleen aan de **[!UICONTROL Address for errors]** veld. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
 ## Configuratie bijhouden {#tracking-configuration}
 
@@ -278,7 +278,7 @@ Terug in het vorige venster, bevestigt een bericht de registratie op het volgend
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-De parameters die zijn gekoppeld aan URL-zoekopdrachten **mag niet worden gewijzigd** voor een standaardinstallatie. Neem voor alle andere parameters contact op met Adobe.
+De parameters die zijn gekoppeld aan URL-zoekopdrachten **mag niet worden gewijzigd** voor een standaardinstallatie. Neem voor alle andere parameters contact op met de Adobe.
 
 ## Parameters van mobiele kanalen {#mobile-channel-parameters}
 
@@ -442,7 +442,7 @@ De volgende publicatiemodi zijn beschikbaar:
 
    * Controleer in Unix of het script uitvoerbaar is.
 
-Voor afbeeldingen moeten deze worden gekopieerd uit de map &quot;images&quot; die via het dialoogvenster **NmsDelivery_ImageSubDirectory** aan een of meer frontale servers. Deze servers slaan de afbeeldingen op zodat ze toegankelijk zijn via de nieuwe geconfigureerde URL.
+Voor afbeeldingen moet het bestand deze kopiëren uit de map &quot;images&quot; die via het dialoogvenster **NmsDelivery_ImageSubDirectory** aan een of meer frontale servers. Deze servers slaan de afbeeldingen op zodat ze toegankelijk zijn via de nieuwe geconfigureerde URL.
 
 In het geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in de `$(XTK_INSTALL_DIR)/var/res/img/ directory`. De bijbehorende URL is: **`https://server/res/img`**.
 

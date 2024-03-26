@@ -2,13 +2,13 @@
 product: campaign
 title: Workflowmachtigingen beheren
 description: Leer hoe u workflowmachtigingen beheert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Raadpleeg deze voor meer informatie over het beheren van operatoren en machtigin
 
 De volgende groepen operatoren zijn gekoppeld aan de workflow:
 
-* De **[!UICONTROL Workflow execution]** Met de groep kunt u de uitvoering en goedkeuring van workflows voor doelwitten beheren: De WORKFLOW met de naam right wordt toegewezen aan de operatoren van deze groep. Dit is vereist voor alle handelingen met betrekking tot workflows, naast toegangsrechten tot de gegevensbestanden. Standaard worden de **[!UICONTROL Workflow execution]** Deze groep heeft alleen-lezen toegang tot standaard doelworkflowbestanden en werkstroomsjablonen. Operatoren in deze groep hebben ook lees- en schrijftoegang tot het goedkeuringsbestand dat in behandeling is.
+* De **[!UICONTROL Workflow execution]** Met deze groep kunt u de uitvoering en goedkeuring van doelworkflows beheren: de WORKFLOW met de naam right wordt toegewezen aan de operatoren van deze groep. Dit is vereist voor alle handelingen met betrekking tot workflows, naast toegangsrechten tot de gegevensbestanden. Standaard worden de **[!UICONTROL Workflow execution]** Deze groep heeft alleen-lezen toegang tot standaard doelworkflowbestanden en werkstroomsjablonen. Operatoren in deze groep hebben ook lees- en schrijftoegang tot het goedkeuringsbestand dat in behandeling is.
 * De **[!UICONTROL Workflow supervisors]** in groep kunnen operatoren workflowgoedkeuringen beheren.
 * De **[!UICONTROL Operation Managers]** groeperen voor toegang tot workflows voor campagnes.
 

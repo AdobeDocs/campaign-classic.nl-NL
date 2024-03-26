@@ -10,8 +10,8 @@ topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 7%
+source-wordcount: '811'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 U kunt de waarschuwingsdrempels (oranje) en alarmdrempels (rood) van de indicatoren vormen die in verschijnen **Serviceniveau van Message Center** en **Verwerkingstijd van Message Center** rapporten (zie [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)).
 
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. Open de implementatiewizard op het tabblad **uitvoeringsinstantie**.
 
@@ -166,7 +166,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
 Voor de controleinstantie, moet u leveringsmalplaatjes en externe rekeningen verbinden.
 
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. Eén extern account maken per merk met dezelfde interne naam als op het tabblad [uitvoeringsinstantie](#execution-instance) (stap 1).
 

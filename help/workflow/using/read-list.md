@@ -2,13 +2,13 @@
 product: campaign
 title: Lijst lezen
 description: Meer informatie over de activiteit van de workflow in de Leeslijst
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of bestandsupload).
+Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of het uploaden van bestanden).
 
 De **[!UICONTROL Read list]** Met activiteit kunt u de gegevens kopiëren uit een lijst in de werkstroom, zoals gegevens uit een query. Het is dan toegankelijk door het werkschema.
 
@@ -38,7 +38,7 @@ Als de lijstselectie is geconfigureerd, kunt u een filter toevoegen met de opdra
 
 De lijsten kunnen rechtstreeks in Adobe Campaign worden gemaakt via de **[!UICONTROL Profiles and Targets > Lists]** koppeling van de startpagina. Ze kunnen ook in een workflow worden gemaakt met de opdracht **[!UICONTROL List update]** activiteit.
 
-**Voorbeeld: Een lijst met verzendadressen uitsluiten**
+**Voorbeeld: sluit een lijst met verzendadressen uit**
 
 In het volgende voorbeeld kunt u een lijst met e-mailadressen gebruiken om gegevens uit te sluiten van het doel voor e-maillevering.
 
@@ -60,11 +60,11 @@ De profielen in de **Nieuwe contactpersonen** de map moet worden geactiveerd doo
 
    De uitsluitingsregels worden geconfigureerd in de centrale sectie van het bewerkingsgereedschap. Klik op de knop **[!UICONTROL Add]** om het type uitsluiting te definiëren dat moet worden toegepast.
 
-   U kunt verschillende uitsluitingen definiëren afhankelijk van het aantal inkomende overgangen van de activiteit.
+   U kunt verschillende uitsluitingen definiëren op basis van het aantal binnenkomende overgangen van de activiteit.
 
-1. In de **[!UICONTROL Exclusion set]** veld selecteert u de **[!UICONTROL Read list]** activiteit: de gegevens in deze activiteit moeten van de hoofdreeks worden uitgesloten .
+1. In de **[!UICONTROL Exclusion set]** veld selecteert u de **[!UICONTROL Read list]** activiteit: de gegevens in deze activiteit moeten van de hoofdreeks worden uitgesloten.
 
-   In ons voorbeeld hebben we een uitzondering op joins: de gegevens in de lijst worden in overeenstemming gebracht met de gegevens van de hoofdset via het veld met het e-mailadres . Om te vormen verbind, selecteer **[!UICONTROL Joins]** in de **[!UICONTROL Change dimension]** veld.
+   In ons voorbeeld geldt een uitzondering voor verbindingen: de gegevens in de lijst worden afgestemd op de gegevens van de hoofdset via het veld met het e-mailadres. Om te vormen verbind, selecteer **[!UICONTROL Joins]** in de **[!UICONTROL Change dimension]** veld.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Opt-out voor tracking van een webapplicatie
 description: Opt-out voor tracking van een webapplicatie
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 2%
+source-wordcount: '679'
+ht-degree: 3%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 2%
 
 
 
-Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
+Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; u kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 
 Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van gedrag uitschakelt, wordt die informatie met JavaScript-API&#39;s naar de Adobe Campaign-traceringsserver verzonden. Houd er rekening mee dat sommige rechtsgebieden vereisen dat de klant eindgebruikers een opt-in biedt voordat een opt-out kan worden aangeboden (of andere wettelijke vereisten heeft) en dat de klant verantwoordelijk is voor het naleven van de toepasselijke wetgeving.
 
 >[!NOTE]
 >
->Volg bij het schrijven van scripts altijd de richtlijnen die worden beschreven in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Volg bij het schrijven van scripts altijd de richtlijnen die in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 
 Om binnen de toepassingen van het Web of het Landing pagina&#39;s te worden getoond, moet de banner worden gevormd.
 
-Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een aanpassingsblok in de map van het inhoudsmodel. Zie [deze pagina](../../delivery/using/personalization-blocks.md).
+Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. Zie [deze pagina](../../delivery/using/personalization-blocks.md).
 
 >[!IMPORTANT]
 >
@@ -37,20 +37,20 @@ Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moe
 
 Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Zie de [Een webtoepassing ontwerpen](designing-a-web-application.md) sectie.
 
-Als Web het volgen wordt geactiveerd, kunt u of hebben:
+Als het Web het volgen wordt geactiveerd, kunt u of hebben:
 
 * Geen banner.
-* Configureer de banner handmatig op elke pagina: Schakel deze optie in en selecteer de banner op elke pagina in de pagina-eigenschappen.
+* Configureer de banner handmatig op elke pagina: controleer deze optie en selecteer de banner op elke pagina in de pagina-eigenschappen.
 
-   ![](assets/pageproperties.png)
+  ![](assets/pageproperties.png)
 
-* Voeg automatisch de banner toe aan alle pagina&#39;s: Selecteer de banner direct in de de toepassingseigenschappen van het Web.
+* Voeg automatisch de banner aan alle pagina&#39;s toe: selecteer de banner rechtstreeks in de de toepassingseigenschappen van het Web.
 
-   ![](assets/optoutconfig.png)
+  ![](assets/optoutconfig.png)
 
 >[!NOTE]
 >
->Voor de v5 Web-toepassing met hetzelfde gedrag is een compatibiliteitsmodus beschikbaar.
+>Er is een compatibiliteitsmodus beschikbaar voor de v5 Web-toepassing met hetzelfde gedrag.
 
 De standaardbanner heeft de volgende structuur:
 
@@ -74,42 +74,42 @@ Adobe Campaign wordt geleverd met API&#39;s waarmee u de cookiewaarde kunt beher
 
 De cookienaam is **acoptout**. De gemeenschappelijke waarden zijn:
 
-* 0: gebruiker heeft Web tracking toegestaan (standaardwaarde)
+* 0: gebruiker heeft webspatiëring toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
-* null: de gebruiker heeft niet gekozen maar Web het volgen wordt toegestaan aangezien het de standaardwaarde is
+* null: gebruiker heeft niet gekozen, maar webtracking is toegestaan omdat dit de standaardwaarde is
 
 De beschikbare client-side API&#39;s om de banner aan te passen zijn:
 
-* **NL.ClientWebTracking.allow()**: Hiermee stelt u de waarde van het uitschakelcookie in om webtracking toe te staan. Webspatiëring is standaard toegestaan.
-* **NL.ClientWebTracking.forbid()**: Hiermee stelt u de waarde voor uitschakelcookies in om webtracking te verbieden. Webtracering vereist dat gebruikersinvoer wordt verboden.
+* **NL.ClientWebTracking.allow()**: Stelt de waarde van het uitschakelcookie in om webtracking toe te staan. Webspatiëring is standaard toegestaan.
+* **NL.ClientWebTracking.forbid()**: Hiermee stelt u de waarde van de uitschakelcookie in om webtracking te verbieden. Webtracering vereist dat gebruikersinvoer wordt verboden.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Sluit de uitschakelcookie-banner nadat de gebruiker op de knop Accepteren of Weigeren heeft geklikt. (tijdens de terugkoppelfase van de klikgebeurtenis)
 
-   bannerDomElt {DOMElement} het hoofd-DOM-element van de cookiebanner die moet worden verwijderd
+  bannerDomElt {DOMElement} het basis-DOM-element van de cookiebanner die moet worden verwijderd
 
 * **NL.ClientWebTracking.hasUserPrefs()**: Retourneert true als de gebruiker zijn voorkeuren voor webspatiëring heeft gekozen.
-* **NL.ClientWebTracking.getUserPrefs()**: Retourneert de uitschakelcookie-waarde die de voorkeuren van de gebruiker definieert.
+* **NL.ClientWebTracking.getUserPrefs()**: Geeft de uitschakelcookie-waarde die de voorkeuren van de gebruiker definieert.
 
 Als u een JSSP moet schrijven, zijn de server-zij APIs beschikbaar:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Genereert de opmaak voor de uitschakelbanner die in de JSSP-pagina moet worden ingevoegd
 
-   **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd om in JavaScript te kunnen worden gebruikt.
+  **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd om in JavaScript te kunnen worden gebruikt.
 
-   Deze geeft de HTML van de opmaakcode voor de uitschakelbanner die op de pagina moet worden afgedrukt.
+  Deze geeft de HTML van de opmaakcode voor de uitschakelbanner die op de pagina moet worden afgedrukt.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Retourneert &quot;true&quot; als de uitschakelbanner moet worden weergegeven nadat de beheerder een uitschakelbanner heeft geselecteerd
+  Retourneert &quot;true&quot; als de uitschakelbanner moet worden weergegeven nadat de beheerder een uitschakelbanner heeft geselecteerd
 
-   Deze code wordt geroepen wanneer de beheerder reeds heeft gekozen om de Web het volgen opt-out banner te gebruiken.
+  Deze code wordt geroepen wanneer de beheerder reeds heeft gekozen om de Web het volgen opt-out banner te gebruiken.
 
-   De banner moet worden weergegeven als de gebruiker er nog niet voor heeft gekozen om te worden bijgehouden.
+  De banner moet worden weergegeven als de gebruiker er nog niet voor heeft gekozen om te worden bijgehouden of niet.
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   Geeft de prijsverhoging voor de opt-out banner door het in te voegen in de JSSP pagina terug. Wordt aangeroepen als in JPEG tussen &lt;% %>
+  Geeft de prijsverhoging voor de opt-out banner door het in te voegen in de JSSP pagina terug. Wordt aangeroepen als in JPEG tussen &lt;% %>
 
-   **escapeJs {Boolean}**: waar (true) wanneer de gegenereerde markering moet worden beschermd voor gebruik in JavaScript
+  **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd voor gebruik in JavaScript
 
 JSSP-voorbeeld:
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Doorlopende levering
 description: Doorlopende levering
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 10%
+source-wordcount: '366'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 
 
-A **Doorlopende levering** Met een tekstactie kunt u nieuwe ontvangers toevoegen aan een bestaande levering. Met dit leveringstype hoeft u niet telkens een nieuwe levering te maken: Deze modus is vaak efficiënter, met name voor kleine waarschuwingen of meldingen die zo nodig worden verzonden.
+A **Doorlopende levering** Met een tekstactie kunt u nieuwe ontvangers toevoegen aan een bestaande levering. Met dit type levering hoeft u niet telkens een nieuwe levering te maken. Deze modus is vaak efficiënter, met name voor waarschuwingen met een laag volume of meldingen die worden verzonden wanneer dat nodig is.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#continuous-delivery-video)
 
@@ -65,4 +65,4 @@ Deze video laat zien hoe u een doorlopende levering configureert met een stapsge
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Er zijn aanvullende Campaign Classic-hoe-kan-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

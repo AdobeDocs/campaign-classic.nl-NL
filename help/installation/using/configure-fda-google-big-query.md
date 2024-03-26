@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
@@ -203,7 +203,7 @@ U moet een [!DNL Google BigQuery] externe account om uw Adobe Campaign Classic-e
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |:-:|:-:|
 | ProxyType | Het type proxy dat wordt gebruikt om verbinding te maken met BigQuery via ODBC- en SDK-connectors. </br>HTTP (standaard), http_no_tunnel, socks4 en socks5 worden momenteel ondersteund. |
 | ProxyHost | Hostnaam of IP-adres waar de proxy kan worden bereikt. |

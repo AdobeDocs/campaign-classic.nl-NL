@@ -2,13 +2,13 @@
 product: campaign
 title: Een verjaardags-e-mail verzenden
 description: Leer hoe u een e-mailbericht over een verjaardag verzendt met een workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 2%
+source-wordcount: '885'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +59,7 @@ Hiervoor voert u de volgende stappen uit:
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Selecteren **[!UICONTROL Edit the formula using an expression]** en klik op **[!UICONTROL Next]** om de expressie-editor weer te geven.
-1. Dubbelklik in de lijst met functies op **[!UICONTROL Day]**, die toegankelijk is via de **[!UICONTROL Date]** knooppunt. Deze functie retourneert het getal dat de dag vertegenwoordigt die overeenkomt met de datum die als parameter is doorgegeven.
+1. Dubbelklik op **[!UICONTROL Day]**, die toegankelijk is via de **[!UICONTROL Date]** knooppunt. Deze functie retourneert het getal dat de dag vertegenwoordigt die overeenkomt met de datum die als parameter is doorgegeven.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
@@ -76,7 +76,7 @@ Hiervoor voert u de volgende stappen uit:
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
 1. Klik vervolgens op de eerste cel van de tweede kolom (**[!UICONTROL Value]**) en klik op **[!UICONTROL Edit expression]** om de expressie-editor te openen.
-1. Dubbelklik in de lijst met functies op **[!UICONTROL Day]**, die toegankelijk is via de **[!UICONTROL Date]** knooppunt.
+1. Dubbelklik op **[!UICONTROL Day]**, die toegankelijk is via de **[!UICONTROL Date]** knooppunt.
 1. Dubbelklik op de knop **[!UICONTROL GetDate]** om de huidige datum op te halen.
 
    ![](assets/s_ncs_user_create_exp_exple04.png)
@@ -125,11 +125,11 @@ Nadat u de **[!UICONTROL Scheduler]** activiteit zodat de werkstroom elke dag be
 
 Ontvangers selecteren waarvan de verjaardag overeenkomt met de huidige datum wordt weergegeven in het dialoogvenster [Ontvangers identificeren van wie de verjaardag het is](#identifying-recipients-whose-birthday-it-is) sectie.
 
-### Stap 2: Selecteer of het een schrikkeljaar is {#step-2--select-whether-or-not-it-is-a-leap-year}
+### Stap 2: Geef aan of het een schrikkeljaar is {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 De **[!UICONTROL Test]** Met deze activiteit kunt u controleren of het een schrikkeljaar is en of de huidige datum 1 maart is.
 
-Als de test wordt geverifieerd (het jaar is geen schrikkeljaar - er is geen 29 februari - en de huidige datum is inderdaad 1 maart), **[!UICONTROL True]** de overgang is ingeschakeld en de op 29 februari geboren ontvangers worden toegevoegd aan de levering van 1 maart. Anders wordt **[!UICONTROL False]** de overgang wordt toegelaten en slechts zullen de ontvangers die op de huidige datum worden geboren de levering ontvangen.
+Als de test wordt geverifieerd (het jaar is geen schrikkeljaar - er is geen 29 februari - en de huidige datum is inderdaad 1 maart), **[!UICONTROL True]** de overgang is ingeschakeld en de op 29 februari geboren ontvangers worden toegevoegd aan de levering van 1 maart. Anders wordt de **[!UICONTROL False]** de overgang wordt toegelaten en slechts zullen de ontvangers die op de huidige datum worden geboren de levering ontvangen.
 
 Kopieer en plak de onderstaande code in de **[!UICONTROL Initialization script]** van de **[!UICONTROL Advanced]** tab.
 

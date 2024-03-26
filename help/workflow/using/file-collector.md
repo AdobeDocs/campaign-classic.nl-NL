@@ -2,13 +2,13 @@
 product: campaign
 title: Bestandsophaler
 description: Meer informatie over de workflowactiviteit van de bestandscollector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
 source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '531'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Het eerste tabblad van het dialoogvenster **[!UICONTROL File collector]** Met ac
 
    * **[!UICONTROL Directory]**
 
-     Map met de bestanden die moeten worden gedownload. Deze map moet vooraf op de server worden gemaakt: als het niet bestaat , zal een fout worden opgeheven .
+     Map met de bestanden die moeten worden gedownload. Deze map moet vooraf op de server worden gemaakt: als deze niet bestaat, wordt een fout gegenereerd.
 
    * **[!UICONTROL Filter]**
 
@@ -40,7 +40,7 @@ Het eerste tabblad van het dialoogvenster **[!UICONTROL File collector]** Met ac
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-     Als deze optie is ingeschakeld, wordt de taak beëindigd na ontvangst van het eerste bestand. Als de map meerdere bestanden bevat die overeenkomen met het filter, wordt er slechts één bestand in aanmerking genomen. Deze optie garandeert dat slechts één gebeurtenis wordt verzonden. Het in aanmerking genomen bestand is het eerste in de lijst in alfabetische volgorde.
+     Als deze optie is ingeschakeld, wordt de taak beëindigd na ontvangst van het eerste bestand. Als de map meerdere bestanden bevat die overeenkomen met het filter, wordt er slechts één bestand gebruikt. Deze optie garandeert dat slechts één gebeurtenis wordt verzonden. Het in aanmerking genomen bestand is het eerste in de lijst in alfabetische volgorde.
 
      Voor een niet-geplande activiteit, als er geen bestand is gevonden dat overeenkomt met het filter in de opgegeven map en als de **[!UICONTROL Process file nonexistence]** Deze optie is niet ingeschakeld. Er wordt een fout weergegeven.
 
@@ -76,4 +76,4 @@ De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bes
 
 ## Uitvoerparameters {#output-parameters}
 
-* bestandsnaam: Volledige bestandsnaam. Dit is de bestandsnaam nadat deze naar de historiemap is verplaatst. Het pad is dus anders, maar de naam is ook anders als er al een ander bestand met dezelfde naam in de map staat. De extensie blijft behouden.
+* bestandsnaam: volledige bestandsnaam. Dit is de bestandsnaam nadat deze naar de historiemap is verplaatst. Het pad is dus anders, maar de naam is ook anders als er al een ander bestand met dezelfde naam in de map staat. De extensie blijft behouden.

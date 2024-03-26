@@ -2,13 +2,13 @@
 product: campaign
 title: Distributed Marketing samples
 description: Distributed Marketing samples
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 0%
+source-wordcount: '1303'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ De **Op formulier** type-webinterface gebruikt een **webtoepassing**. Afhankelij
 >
 >De toepassing van het Web die in dit voorbeeld wordt gebruikt is geen app van het Web die uit-van-de-doos met Adobe Campaign komt. Als u een formulier in een campagne wilt gebruiken, moet u de toegewijde webtoepassing maken.
 
-Klik tijdens het maken van de campagnemalplaatje op de knop **[!UICONTROL Zoom]** pictogram in de **[!UICONTROL Web interface]** de **[!UICONTROL Advanced campaign settings...]** koppeling naar toegang tot details van de webtoepassing.
+Klik tijdens het maken van de campagnemalplaatje op de knop **[!UICONTROL Zoom]** pictogram in het deelvenster **[!UICONTROL Web interface]** van de **[!UICONTROL Advanced campaign settings...]** koppeling naar toegang tot details van de webtoepassing.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -42,35 +42,35 @@ In dit voorbeeld wordt **Campagnevolgorde** de activiteit omvat :
 
 * velden die de lokale entiteit tijdens de bestelling moet invoeren;
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
 * koppelingen die de lokale entiteit in staat stellen de campagne te evalueren (bijvoorbeeld het doel, het budget, de inhoud, enz.);
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * scripts waarmee u het resultaat van deze evaluaties kunt berekenen en weergeven.
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 In dit voorbeeld worden de volgende API&#39;s gebruikt:
 
 * Voor de doelevaluatie:
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * Voor de begrotingsevaluatie
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * Voor de evaluatie van de inhoud
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## Een samenwerkingscampagne maken (door goedkeuring als doel) {#creating-a-collaborative-campaign--by-target-approval-}
 
@@ -127,9 +127,9 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
    * de **[!UICONTROL Targeting dimension]**. Hier **Gegevensverspreiding** wordt uitgevoerd op **Ontvangers**.
    * de **[!UICONTROL Distribution type]**. U kunt een **Vaste grootte** of **Grootte als percentage**.
-   * de **[!UICONTROL Assignment type]**. Selecteer **Lokale entiteit** optie.
+   * de **[!UICONTROL Assignment type]**. Selecteer de **Lokale entiteit** -optie.
    * de **[!UICONTROL Distribution type]**. Hier is het **[!UICONTROL Origin (@origin)]** veld aanwezig in de tabel Ontvanger waarmee u de relatie tussen de contactpersoon en de lokale entiteit kunt identificeren.
-   * De **[!UICONTROL Approval storage]** veld. Selecteer **Lokale erkenning van de ontvanger** optie.
+   * De **[!UICONTROL Approval storage]** veld. Selecteer de **Lokale erkenning van de ontvanger** -optie.
 
 1. In de **[!UICONTROL Breakdown]** -tab, geeft u op:
 
@@ -173,7 +173,7 @@ U kunt nu een **campagnepakket** van de **[!UICONTROL Campaigns]** tab.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en ter beschikking te stellen van alle lokale entiteiten in een lijst met pakketten.
+1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en beschikbaar te maken voor alle lokale entiteiten in een lijst met pakketten.
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
@@ -181,7 +181,7 @@ U kunt nu een **campagnepakket** van de **[!UICONTROL Campaigns]** tab.
 
 ### Inleiding {#introduction-1}
 
-U bent de marketingmanager voor een groot make-upmerk met een online winkel en verschillende boutiques in de hele VS. Als u uw wintervoorraad wilt verwijderen en ruimte wilt maken voor uw nieuwe voorraad, kiest u voor een speciale aanbieding die betrekking heeft op twee categorieën klanten: de ouder dan 30 jaar, aan wie je leeftijdsgevoelige huidverzorgingsproducten zult aanbieden, en de jonger dan 30 jaar, aan wie je de meest elementaire huidverzorgingsproducten zult aanbieden.
+U bent de marketingmanager voor een groot make-upmerk met een online winkel en verschillende boutiques in de hele VS. Om je wintervoorraad te ontladen en ruimte te maken voor je nieuwe voorraad, besluit je een speciale aanbieding te maken die gericht is op twee categorieën klanten: de ouder dan 30, aan wie je leeftijdsgevoelige huidverzorgingsproducten aanbiedt, en de jonger dan 30, aan wie je de meest elementaire huidverzorgingsproducten aanbiedt.
 
 Daarom besluit u om Distributed Marketing te gebruiken om een samenwerkingscampagne (per formulier) te maken waarmee u clients van uw verschillende winkels kunt selecteren op basis van het leeftijdsbereik. Deze klanten ontvangen een e-maillevering met een speciaal voorstel dat op basis van hun leeftijdsbereik is aangepast.
 
@@ -202,7 +202,7 @@ De stappen zijn als volgt:
 **Voor de centrale entiteit:**
 
 1. Maak de samenwerkingscampagne.
-1. Configureer de **[!UICONTROL Advanced campaign settings...]** zoals u zou doen voor een lokale campagne .
+1. Vorm **[!UICONTROL Advanced campaign settings...]** zoals u zou doen voor een lokale campagne .
 1. Configureer de campagneworkflow en de levering op dezelfde manier als voor een lokale campagne.
 1. Het webformulier bijwerken.
 1. Maak het campagnepakket en publiceer het.
@@ -219,7 +219,7 @@ De stappen zijn als volgt:
    * een voorvertoning van de inhoud van de levering;
    * hun deelname goedkeuren.
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. De exploitant die belast is met het valideren van orders, keurt hun deelname goed.
 
@@ -248,6 +248,6 @@ De stappen zijn als volgt:
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
-1. Goedkeuren van het pakket om het te publiceren.
+1. Het pakket goedkeuren om het te publiceren.
 
    ![](assets/mkg_dist_use_case_form_6.png)

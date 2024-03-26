@@ -3,7 +3,7 @@ product: campaign
 title: Traceerhypothese
 description: Leer hoe u hypothesen kunt bijhouden in Campagne Response Manager
 feature: Campaigns, Monitoring, Reporting
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: campaign
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 1%
+source-wordcount: '469'
+ht-degree: 0%
 
 ---
 

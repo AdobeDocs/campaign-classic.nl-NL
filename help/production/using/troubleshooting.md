@@ -11,7 +11,7 @@ exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 18%
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
-## Veelvoorkomende en algemene problemen {#common-and-general-issues}
+## Algemene kwesties {#common-and-general-issues}
 
 * Dit [page](../../production/using/modules-and-frequent-issues.md) geeft een overzicht van de meest voorkomende problemen die voor de vermelde modules worden ondervonden.
 * Dit [page](../../production/using/workflow-execution.md) geeft een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het ontmoeten van kwesties met werkschemauitvoering.
@@ -40,7 +40,7 @@ Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 
 [Leveringsprestaties](../../delivery/using/delivery-performances.md)
 
-## Werken met logboekbestanden {#working-with-logs}
+## Werken met logbestanden {#working-with-logs}
 
 Hier volgen enkele tips voor het verbeteren van uw ervaring met logboeken:
 
@@ -54,14 +54,14 @@ Ontdek hoe u prestatieproblemen kunt oplossen door de volgende secties uit te le
 * [Databaseprestaties](../../production/using/database-performances.md)
 * [Codering van de Oracle-database](../../production/using/encoding-of-the-oracle-database.md)
 
-## De verbinding verbeteren {#connection-improvements}
+## Verbindingsverbeteringen {#connection-improvements}
 
 Als u verbindingsproblemen tegenkomt, kunt u deze op een aantal manieren verhelpen:
 
 * [Mislukte verbinding](../../production/using/failure-to-connect.md)
 * [Drempelwaarden voor verbinding](../../production/using/connection-thresholds.md)
 
-## Technische problemen oplossen {#technical-troubleshooting}
+## Technische problemen {#technical-troubleshooting}
 
 Ga naar de volgende secties voor meer informatie over specifieke problemen:
 

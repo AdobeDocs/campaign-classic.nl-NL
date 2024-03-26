@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Workflowdata gebruiken
+title: Werkstroomgegevens gebruiken
 description: Leer hoe u workflowgegevens gebruikt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# Workflowdata gebruiken{#how-to-use-workflow-data}
+# Werkstroomgegevens gebruiken{#how-to-use-workflow-data}
 
 
 
@@ -26,15 +26,15 @@ De gegevens van de Adobe Campaign-databank en de bestaande lijsten kunnen worden
 
 * De **[!UICONTROL List update]** Met activiteit kunt u werktabellen opslaan in een database.
 
-   U kunt een bestaande lijst selecteren of maken. In dit geval worden de naam en mogelijk de recordmap berekend.
+  U kunt een bestaande lijst selecteren of maken. In dit geval worden de naam en mogelijk de recordmap berekend.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Zie [Lijstupdate](list-update.md).
+  Zie [Lijstupdate](list-update.md).
 
 * De **[!UICONTROL Update data]** de activiteit voert een massa update van de gebieden in het gegevensbestand uit.
 
-   Raadpleeg voor meer informatie hierover [Gegevens bijwerken](update-data.md).
+  Raadpleeg voor meer informatie hierover [Gegevens bijwerken](update-data.md).
 
 ### Abonnementsbeheer/Abonnementsbeheer {#subscription-unsubscription-management}
 
@@ -58,12 +58,12 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de workflowtabel worden aangeduid met de naam: het bestaat altijd uit **targetData** koppeling. Raadpleeg voor meer informatie hierover [Doelgegevens](data-life-cycle.md#target-data).
+De gegevens in de tabel met workflows worden aangeduid met de naam ervan: deze bestaat altijd uit de **targetData** koppeling. Raadpleeg voor meer informatie hierover [Doelgegevens](data-life-cycle.md#target-data).
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Klik op de knop **[!UICONTROL Target extension > Other...]** verbinding toegankelijk via de verpersoonlijkingsknoop.
+Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Als u alle verpersoonlijkingsvelden wilt weergeven, klikt u op de knop **[!UICONTROL Target extension > Other...]** verbinding toegankelijk via de verpersoonlijkingsknoop.
 
 ![](assets/s_advuser_segment_code_select.png)

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Rapporten over leveringen
-description: Rapporten over leveringen
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+title: Verslagen over leveringen
+description: Verslagen over leveringen
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 

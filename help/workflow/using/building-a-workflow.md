@@ -2,13 +2,13 @@
 product: campaign
 title: Een workflow maken
 description: Leer hoe u een workflow kunt maken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 3%
+source-wordcount: '1631'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 In deze sectie worden de belangrijkste beginselen en aanbevolen procedures beschreven voor het maken van een workflow in Campagne.
 
 * Een workflow maken, zie [Een nieuwe workflow maken](#creating-a-new-workflow)
-* Ontwerp het werkschemadiagram, zie [Toevoegen en koppelen van activiteiten](#adding-and-linking-activities)
+* Ontwerp het werkschemadiagram, zie [Toevoeging en koppeling van activiteiten](#adding-and-linking-activities)
 * De parameters en eigenschappen van de toegang tot activiteiten, zie [Activiteiten configureren](#configuring-activities)
 * Ontwerpen voor workflows, zie [Workflows voorbereiden](#targeting-workflows)
 * Workflows gebruiken om een campagne uit te voeren, zie [Workflows voor campagnes](#campaign-workflows)
@@ -34,7 +34,7 @@ Klik op de knop **[!UICONTROL New]** boven de lijst met workflows.
 
 ![](assets/create_a_wf_icon.png)
 
-U kunt ook de opdracht **[!UICONTROL Create]** in het werkstroomoverzicht (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** koppeling).
+U kunt ook de opdracht **[!UICONTROL Create]** knop in het werkstroomoverzicht (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** koppeling).
 
 ![](assets/create_a_wf.png)
 
@@ -87,28 +87,28 @@ U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen
 
 * **De werkbalk gebruiken**
 
-   Met de werkbalk voor diagrambewerking hebt u toegang tot de functies voor lay-out en uitvoering van de workflow.
+  Met de werkbalk voor diagrambewerking hebt u toegang tot de functies voor lay-out en uitvoering van de workflow.
 
-   ![](assets/s_user_segmentation_wizard_10.png)
+  ![](assets/s_user_segmentation_wizard_10.png)
 
-   Zo kunt u de layout van het bewerkgereedschap aanpassen: de weergave van het palet en het overzicht, de grootte en de uitlijning van grafische objecten.
+  Zo kunt u de lay-out van het bewerkgereedschap aanpassen: de weergave van het palet en het overzicht, de grootte en de uitlijning van grafische objecten.
 
-   ![](assets/s_user_segmentation_toolbar.png)
+  ![](assets/s_user_segmentation_toolbar.png)
 
-   Pictogrammen die betrekking hebben op de voortgangsweergave en de logboekweergave worden in de volgende secties beschreven:
+  Pictogrammen die betrekking hebben op de voortgangsweergave en de logboekweergave worden in de volgende secties beschreven:
 
    * [Voortgang weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
    * [Logboeken weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objectuitlijning**
 
-   Als u pictogrammen wilt uitlijnen, selecteert u de pictogrammen en klikt u op de knop **[!UICONTROL Align vertically]** of **[!UICONTROL Align horizontally]** pictogram.
+  Als u pictogrammen wilt uitlijnen, selecteert u deze en klikt u op de knop **[!UICONTROL Align vertically]** of **[!UICONTROL Align horizontally]** pictogram.
 
-   Gebruik de **CTRL** sleutel voor het selecteren van meerdere verspreide activiteiten of voor het deselecteren van een of meer activiteiten. Klik op de achtergrond van het diagram om alles te deselecteren.
+  Gebruik de **CTRL** sleutel voor het selecteren van meerdere verspreide activiteiten of voor het deselecteren van een of meer activiteiten. Klik op de achtergrond van het diagram om alles te deselecteren.
 
 * **Afbeeldingsbeheer**
 
-   U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen wijzigen](managing-activity-images.md).
+  U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen wijzigen](managing-activity-images.md).
 
 ## Activiteiten configureren {#configuring-activities}
 
@@ -120,11 +120,11 @@ Dubbelklik op een activiteit om deze te configureren of klik met de rechtermuisk
 
 Het eerste lusje bevat de basisconfiguratie. De **[!UICONTROL Advanced]** bevat de extra parameters, die met name worden gebruikt voor het definiëren van gedrag wanneer een fout optreedt, het opgeven van de uitvoeringstermijn voor een activiteit en het invoeren van een initialisatiescript.
 
-Voor een beter begrip van de activiteiten en een betere leesbaarheid van de workflow kunt u opmerkingen invoeren in de activiteiten: deze worden automatisch weergegeven wanneer de operatoren over de activiteit schuiven.
+Voor een beter begrip van de activiteiten en om werkschemaleesbaarheid te verbeteren, kunt u commentaren in de activiteiten ingaan: deze zullen automatisch worden getoond wanneer de exploitanten over de activiteit scrollen.
 
 ![](assets/example1-comment.png)
 
-## Targetingworkflows {#targeting-workflows}
+## Workflows voorbereiden {#targeting-workflows}
 
 Met doelgerichte workflows kunt u verschillende leveringsdoelen maken. U kunt query&#39;s maken, samenvoegingen of uitsluitingen definiëren op basis van specifieke criteria, planning toevoegen dankzij workflowactiviteiten. Het resultaat van deze gerichte actie kan automatisch worden overgedragen naar een lijst die als doel van leveringsacties kan dienen
 
@@ -147,14 +147,14 @@ Het richten van werkschema&#39;s binnen het kader van een campagne wordt opgesla
 De stappen voor het maken van een doelworkflow worden in de volgende secties beschreven:
 
 1. **Identificeren** gegevens in de database - Zie [Query&#39;s maken](targeting-data.md#creating-queries)
-1. **Voorbereiden** gegevens die voldoen aan de behoeften voor levering - Zie [Gegevens verrijken en wijzigen](targeting-data.md#enriching-and-modifying-data)
+1. **Voorbereiden** gegevens om aan de leveringsbehoeften te voldoen - Zie [Gegevens verrijken en wijzigen](targeting-data.md#enriching-and-modifying-data)
 1. **Gebruiken** gegevens om updates of levering uit te voeren - Zie [De database bijwerken](how-to-use-workflow-data.md#updating-the-database)
 
 De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Raadpleeg voor meer informatie hierover [Doelgegevens](data-life-cycle.md#target-data)
 
 ### Afmetingen gericht en filteren {#targeting-and-filtering-dimensions}
 
-Tijdens de verrichtingen van de gegevenssegmentatie, wordt de het richten sleutel in kaart gebracht aan een het filtreren dimensie. Met de doeldimensie kunt u de doelgroep voor de bewerking definiëren: ontvangers, begunstigden van contracten, exploitanten, abonnees, enz. Met de filterdimensie kunt u de populatie selecteren op basis van bepaalde criteria: contractanten, abonnees van nieuwsbrieven enz.
+Tijdens de verrichtingen van de gegevenssegmentatie, wordt de het richten sleutel in kaart gebracht aan een het filtreren dimensie. Met de doeldimensie kunt u de doelgroep van de actie definiëren: ontvangers, begunstigden van contracten, exploitant, abonnees, enz. Met de filterdimensie kunt u de populatie selecteren op basis van bepaalde criteria: contractanten, abonnees van nieuwsbrieven, enz.
 
 Als u bijvoorbeeld klanten wilt selecteren die al meer dan vijf jaar een levensverzekeringspolis hebben, selecteert u de volgende dimensie: **Clients** en de volgende filterdimensie: **Contracthouder**. U kunt de het filtreren voorwaarden binnen de vraagactiviteit dan bepalen
 
@@ -162,7 +162,7 @@ Tijdens het gericht afmetingsselectiefase, slechts worden de compatibele het fil
 
 Deze twee dimensies moeten met elkaar verband houden. De inhoud van de **[!UICONTROL Filtering dimension]** de lijst is afhankelijk van de doeldimensie die in het eerste veld is opgegeven.
 
-Bijvoorbeeld voor ontvangers (**ontvanger**), zijn de volgende filterafmetingen beschikbaar:
+Voor ontvangers (**ontvanger**), zijn de volgende filterafmetingen beschikbaar:
 
 ![](assets/query_filter_target_dimensions_1.png)
 
@@ -194,7 +194,7 @@ Technische workflows worden geleverd buiten de box met Adobe Campaign. Het zijn 
 
 Native sjablonen zijn beschikbaar voor het maken van technische workflows. Zij kunnen worden gevormd om aan uw behoeften te passen.
 
-De **[!UICONTROL Campaign process]** subfolder centraliseert de werkschema&#39;s die voor het uitvoeren van processen binnen de campagnes worden vereist: taakomschrijving, voorraadbeheer, kostenberekening, enz.
+De **[!UICONTROL Campaign process]** subfolder centraliseert de werkschema&#39;s die voor de uitvoering van processen binnen de campagnes worden vereist: taakbericht, voorraadbeheer, kostenberekening, enz.
 
 >[!NOTE]
 >
@@ -220,7 +220,7 @@ Naast de gebruikelijke workfloweigenschappen kunt u met de sjablooneigenschappen
 
 ## Workflows dupliceren {#duplicating-workflows}
 
-U kunt verschillende typen workflows dupliceren. Als de workflow eenmaal is gedupliceerd, worden wijzigingen van de workflow niet overgebracht naar de kopie van de workflow.
+U kunt verschillende typen workflows dupliceren. Als de workflow eenmaal is gedupliceerd, worden wijzigingen van de workflow niet doorgevoerd in de kopie van de workflow.
 
 >[!CAUTION]
 >

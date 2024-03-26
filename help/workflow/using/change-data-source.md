@@ -6,7 +6,7 @@ exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Wanneer u de opdracht **[!UICONTROL Change Data Source]** is, moet u terugschake
 
 Als u de opdracht **[!UICONTROL Change Data Source]** activiteit:
 
-1. Een workflow maken.
+1. Maak een workflow.
 
 1. Vraag uw beoogde ontvangers om een query met een **[!UICONTROL Query]** activiteit.
 

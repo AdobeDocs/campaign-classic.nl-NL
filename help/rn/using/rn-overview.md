@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -29,9 +29,9 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 |---|---|
 | [!BADGE Algemene beschikbaarheid]{type=Positive} | Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe. |
 | [!BADGE Beperkte beschikbaarheid]{type=Neutral} | alleen on-demand implementatie. |
-| [!BADGE Releasekandidaat]{type=Informative} | Nieuwste build met nieuwe mogelijkheden. |
+| [!BADGE Release-kandidaat]{type=Informative} | Nieuwste build met nieuwe mogelijkheden. |
 | [!BADGE Niet meer beschikbaar]{type=Caution} | Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen. |
-| [!BADGE Afgeschaft]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
+| [!BADGE Vervangen]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
 
 <!--
 ![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 

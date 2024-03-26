@@ -8,8 +8,8 @@ feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 1%
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -58,4 +58,4 @@ Als u de lijst met betrokken ontvangers hebt, kunt u deze instellen op de status
 
 **Verwante onderwerpen:**
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
-* [Kwalificatie van niet-bezorgde e-mails](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Bounce mail-kwalificatie](understanding-delivery-failures.md#bounce-mail-qualification)

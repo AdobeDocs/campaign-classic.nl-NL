@@ -3,7 +3,7 @@ product: campaign
 title: Filteropties
 description: Filteropties
 feature: Overview
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Filteren {#about-filtering}
 
-Standaard geeft Adobe Campaign alle gegevens weer in de database waarvoor de betrokken operator leesrechten heeft.
+Standaard geeft Adobe Campaign alle gegevens weer in de database waarvoor de betrokken operator leestrechten heeft.
 
 Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van het browservenster.
 

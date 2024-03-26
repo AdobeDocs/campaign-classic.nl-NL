@@ -16,7 +16,7 @@ ht-degree: 2%
 
 
 
-## Rapporten over leveringen {#reports-on-deliveries}
+## Verslagen over leveringen {#reports-on-deliveries}
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 

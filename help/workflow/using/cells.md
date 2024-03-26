@@ -2,13 +2,13 @@
 product: campaign
 title: Cellen
 description: Cellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 8%
+source-wordcount: '134'
+ht-degree: 13%
 
 ---
 
@@ -20,7 +20,7 @@ De **[!UICONTROL Cells]** de activiteit verstrekt een mening van de diverse onde
 
 ![](assets/wf_split_cells.png)
 
-Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard worden de details van elke subset in een speciaal venster beschreven via de **[!UICONTROL Selection]** en **[!UICONTROL Advanced]** tabs. In het onderstaande voorbeeld is het formulier gewijzigd: a **[!UICONTROL Data]** tab is toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
+Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard worden de details van elke subset in een speciaal venster beschreven via de **[!UICONTROL Selection]** en **[!UICONTROL Advanced]** tabs. In het onderstaande voorbeeld is het formulier gewijzigd: **[!UICONTROL Data]** tab is toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
 
 ![](assets/wf_split_cells_with_customization.png)
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Driemaandelijkse lijstupdate met een incrementele query
 description: In dit geval wordt een incrementele query gebruikt om automatisch een lijst met ontvangers bij te werken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 5%
+source-wordcount: '284'
+ht-degree: 7%
 
 ---
 
@@ -23,8 +23,8 @@ Aangezien deze campagnes aan het begin van elk seizoen worden gestart om relevan
 ![](assets/incremental_query_example.png)
 
 1. Voeg een stijgende vraag evenals een activiteit van de lijstupdate in een nieuw werkschema toe.
-1. Configureer de **[!UICONTROL Incremental query]** tabblad van de activiteit zoals opgegeven in [Een query maken](query.md#creating-a-query).
-1. Selecteer **[!UICONTROL Scheduling & History]** en geeft u vervolgens een historie van 270 dagen op. Een ontvanger die reeds als doelwit is aangemerkt, zal niet langer voor een periode van 270 dagen, of ruwweg 9 maanden, worden aangewezen.
+1. Vorm **[!UICONTROL Incremental query]** tabblad van de activiteit zoals opgegeven in [Een query maken](query.md#creating-a-query).
+1. Selecteer de **[!UICONTROL Scheduling & History]** en geeft u vervolgens een historie van 270 dagen op. Een ontvanger die reeds als doelwit is aangemerkt, zal niet langer voor een periode van 270 dagen, of ruwweg 9 maanden, worden aangewezen.
 
    Klik vervolgens op de knop **[!UICONTROL Change...]** knop.
 

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ In Microsoft Dynamics CRM:
 1. Een App-gebruiker maken
 1. De persoonlijke sleutel coderen
 
-[Meer informatie in dit gedeelte](#config-crm-microsoft)
+[Meer informatie in deze sectie](#config-crm-microsoft)
 
 In Campaign Classic:
 1. Een nieuwe externe account maken
@@ -41,7 +41,7 @@ In Campaign Classic:
 1. Gebruik de configuratietovenaar om lijsten in kaart te brengen en opsommingen te synchroniseren
 1. De synchronisatieworkflow maken
 
-[Meer informatie in dit gedeelte](#configure-acc-for-microsoft)
+[Meer informatie in deze sectie](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
@@ -64,7 +64,7 @@ Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve F
 
 Wanneer u het bestand hebt opgeslagen, krijgt u een **Toepassings-id** Dit is de client-id voor campagne.
 
-Meer informatie in [deze pagina](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Meer informatie vindt u [op deze pagina](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Sleutel-id voor Microsoft Dynamics Certificate en Key ID genereren {#config-certificate-key-id}
 
@@ -150,7 +150,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 1. Wijs het **Toepassings-id** for [de toepassing die u eerder hebt gemaakt](#get-client-id-microsoft).
 1. Klikken op **Rollen beheren** en kiest u **Systeembeheerder** rol voor de gebruiker.
 
-## Campaign configureren {#configure-acc-for-microsoft}
+## Campagne configureren {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 
 Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u tot stand brengen en een specifieke vorm vormen **[!UICONTROL External Account]** in Campaign.
 
-1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
+1. Navigeren naar **[!UICONTROL Administration > Platform > External accounts]**.
 
 1. Selecteer de **[!UICONTROL Microsoft Dynamics CRM]** externe rekening. Schakel de optie **[!UICONTROL Enabled]** in.
 
@@ -170,7 +170,7 @@ Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u tot stand bren
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Klik op de koppeling **[!UICONTROL Microsoft CRM configuration wizard...]**. Adobe Campaign detecteert automatisch de tabellen in de gegevenssjabloon voor Microsoft Dynamics.
+1. Klik op de knop **[!UICONTROL Microsoft CRM configuration wizard...]** koppeling. Adobe Campaign detecteert automatisch de tabellen in de gegevenssjabloon voor Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

@@ -2,13 +2,13 @@
 product: campaign
 title: De wizard voor beschrijvende analyse gebruiken
 description: De wizard voor beschrijvende analyse gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: De lijst met leveringen openen
+title: Toegang tot de lijst met leveringen
 description: Leer hoe u toegang krijgt tot de lijst met gemaakte items
 badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
@@ -10,11 +10,11 @@ exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 10%
+ht-degree: 4%
 
 ---
 
-# De lijst met leveringen openen {#list-of-deliveries}
+# Toegang tot de lijst met leveringen {#list-of-deliveries}
 
 
 

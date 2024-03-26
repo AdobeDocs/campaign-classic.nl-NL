@@ -25,7 +25,7 @@ Voor elke levering kunt u verschillende typen doelpopulaties definiëren:
 
 ## Selecteer de belangrijkste ontvangers van de levering {#selecting-the-main-target}
 
-In de meeste gevallen wordt het hoofddoel opgehaald uit de Adobe Campaign-database (standaardmodus). Ontvangers kunnen echter ook in een extern bestand worden opgeslagen. Meer informatie in [deze sectie](steps-defining-the-target-population.md#selecting-external-recipients).
+In de meeste gevallen wordt het hoofddoel opgehaald uit de Adobe Campaign-database (standaardmodus). Ontvangers kunnen echter ook in een extern bestand worden opgeslagen. Lees meer in [deze sectie](steps-defining-the-target-population.md#selecting-external-recipients).
 
 Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 

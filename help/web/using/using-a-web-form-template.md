@@ -2,13 +2,13 @@
 product: campaign
 title: Een webformuliersjabloon gebruiken
 description: Een webformuliersjabloon gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '223'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 
 
-Formuliersjablonen zijn herbruikbare configuraties waarmee u nieuwe formulieren kunt maken. Door gebrek, worden de vormmalplaatjes opgeslagen met de toepassingsmalplaatjes van het Web in **[!UICONTROL Resources > Templates > Web application templates]** knooppunt.
+Formuliersjablonen zijn herbruikbare configuraties waarmee u nieuwe formulieren kunt maken. Standaard worden formuliersjablonen opgeslagen met webtoepassingssjablonen in de **[!UICONTROL Resources > Templates > Web application templates]** knooppunt.
 
 Hier kunt u nieuwe sjablonen maken of een bestaand formulier converteren naar een sjabloon.
 

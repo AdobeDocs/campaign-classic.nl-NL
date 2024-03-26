@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Inhoudsmodel {#content-model-5}
 
-opsomming:==(help| value)
+opsomming:==(help| waarde)
 
 ## Attributen {#attributes-5}
 

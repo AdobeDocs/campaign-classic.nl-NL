@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 7%
+source-wordcount: '569'
+ht-degree: 5%
 
 ---
 
@@ -22,19 +22,19 @@ Op 30 juni zijn wijzigingen aangebracht in 2021 [Adobe Identity Management-syste
 
 Adobe Identity Management Service (IMS) biedt geen ondersteuning voor oude Internet Explorer-versies op **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
+Adobe wil IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
 Om deze functionaliteit te behouden, moeten klanten de clientconsole op de computer van elke gebruiker bijwerken en zorgen voor de nieuwste update van uw [Windows-versie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **Internet Explorer 11** ingebouwd, wordt geïnstalleerd op de computer van elke gebruiker.
 
-## Heeft dit gevolgen voor u?
+## Heb je invloed op?
 
-Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) en het uitvoeren van een oudere versie van Campagne dan de hieronder vermelde, is dit van invloed op u.
+Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) en het uitvoeren van een oudere versie van Campagne dan de hieronder vermelde, heeft dit gevolgen.
 
 Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet Explorer gebruikt, moet u een upgrade uitvoeren naar Internet Explorer 11.
 
 ## Hoe kan ik bijwerken?
 
-* Als gehoste klant heeft Adobe uw exemplaar(s) al bijgewerkt naar de nieuwere versie.
+* Als gehoste klant heeft de Adobe uw exemplaar(s) al bijgewerkt naar de nieuwere versie.
 
 * Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies die hierboven zijn vermeld om te profiteren van de nieuwe clientconsole en een naadloze overgang te garanderen **vóór 30 juni 2021**.
 
@@ -73,7 +73,7 @@ of
 
 **Verbindingswaarschuwing**
 
-De volgende waarschuwing is zichtbaar voor gebruikers als ze hun clientconsole moeten bijwerken of een oude versie van Microsoft Internet Explorer moeten gebruiken: **U moet de meest recente update installeren naar Windows en/of uw Adobe-apps.**
+De volgende waarschuwing is zichtbaar voor gebruikers als ze hun clientconsole moeten bijwerken of een oude versie van Microsoft Internet Explorer moeten gebruiken: **U moet de meest recente update installeren naar Windows en/of de Adobe-apps.**
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
@@ -94,5 +94,5 @@ Als u de Internet Explorer-versie niet hebt bijgewerkt, wordt het volgende beric
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)
 * [Campagne-clientconsole installeren](../../installation/using/installing-the-client-console.md)
-* [Toegang tot Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Toegang tot softwaredistributie Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+* [Build Campaign Classic downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

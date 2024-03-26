@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-U kunt een geavanceerde lijst maken met de geavanceerde functies van Campagne v7 en deze lijst direct en in real time delen met Campaign Standard (inclusief extra gegevens), zonder problemen. Uw gebruiker van de Campaign Standard kan dan het publiek in Adobe Campaign Standard verbruiken.
+U kunt een geavanceerde lijst maken met de geavanceerde functies van Campagne v7 en deze lijst direct en in real time delen met Campaign Standard (inclusief extra gegevens), zonder problemen. Uw gebruiker van het Campaign Standard kan dan het publiek in Adobe Campaign Standard verbruiken.
 
 Complexe gericht gebruiken van extra gegevens die niet in Campaign Standard worden herhaald kan slechts worden bereikt gebruikend Campagne v7.
 
@@ -35,9 +35,9 @@ In dit geval ziet u hoe u het doel van uw levering in Campagne v7 voorbereidt en
 Hiervoor hebt u het volgende nodig:
 
 * Ontvangers die zijn opgeslagen in de Campagne v7-database en zijn gesynchroniseerd met Campaign Standard. Zie de [Profielen synchroniseren](../../integrations/using/synchronizing-profiles.md) sectie.
-* Aanvullende gegevens, zoals abonnementen of transacties die zijn opgeslagen in tabellen met betrekking tot namen:ontvangers in de Campagne v7-database. Deze gegevens kunnen uit de schema&#39;s OOB van de Campagne v7 of douanetabellen komen. Deze zijn standaard niet beschikbaar in Campaign Standard omdat ze niet zijn gesynchroniseerd.
+* Aanvullende gegevens, zoals abonnementen of transacties die zijn opgeslagen in tabellen met betrekking tot namen:ontvangers in de Campagne v7-database. Deze gegevens kunnen uit de schema&#39;s OOB van de Campagne v7 of douanetabellen komen. Deze zijn standaard niet beschikbaar in het Campaign Standard omdat ze niet zijn gesynchroniseerd.
 * Recht om werkschema&#39;s in zowel Campagne v7 als Campaign Standard uit te voeren.
-* Recht om een levering in Campaign Standard te creëren en uit te voeren.
+* Recht om een levering in Campaign Standard tot stand te brengen en uit te voeren.
 
 ## Een doelworkflow met aanvullende gegevens maken in Campagne v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
@@ -93,13 +93,13 @@ Zo krijgt u het uiteindelijke publiek en de aanvullende gegevens:
 
 1. Sla de workflow op. Het volgende gedeelte laat zien hoe u de populatie deelt met ACS.
 
-## Het doel delen met Campaign Standard {#share-the-target-with-campaign-standard}
+## Doel delen met Campaign Standard {#share-the-target-with-campaign-standard}
 
 Zodra de doelpopulatie wordt bepaald, kunt u het met ACS door delen **[!UICONTROL List update]** activiteit.
 
 1. Voeg in de eerder gemaakte workflow een **[!UICONTROL List update]** en geeft u de lijst op die u wilt bijwerken of maken.
 
-   Geef de map op waarin u de lijst wilt opslaan in Campagne v7. Lijsten zijn onderworpen aan de omslagafbeelding die tijdens de implementatie wordt bepaald, die hun zicht kan beïnvloeden wanneer gedeeld in Campaign Standard. Zie de [Omzetting van rechten](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) sectie.
+   Geef de map op waarin u de lijst wilt opslaan in Campagne v7. Lijsten zijn onderworpen aan de omslagafbeelding die tijdens de implementatie wordt bepaald, die hun zichtbaarheid kan beïnvloeden zodra zij in Campaign Standard worden gedeeld. Zie de [Omzetting van rechten](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) sectie.
 
 1. Zorg ervoor dat de **[!UICONTROL Share with ACS]** is ingeschakeld. Deze optie is standaard ingeschakeld.
 
@@ -107,11 +107,11 @@ Zodra de doelpopulatie wordt bepaald, kunt u het met ACS door delen **[!UICONTRO
 
 1. Sla de workflow op en voer deze uit.
 
-   Het doel en de aanvullende gegevens worden opgeslagen in een lijst in Campagne v7 en worden direct gedeeld als een publiek in de lijst in Campaign Standard. Alleen de profielen die zijn gerepliceerd, worden gedeeld met ACS.
+   Het doel en de bijbehorende aanvullende gegevens worden opgeslagen in een lijst in Campagne v7 en worden direct gedeeld als een lijstpubliek in Campaign Standard. Alleen de profielen die zijn gerepliceerd, worden gedeeld met ACS.
 
 Als er een fout optreedt op het tabblad **[!UICONTROL List update]** activiteit, betekent het dat de synchronisatie met Campaign Standard kan ontbroken hebben. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Deze map bevat synchronisatieworkflows die worden geactiveerd door de **[!UICONTROL List update]** activiteit uitvoeren. Zie de [Het oplossen van problemen de Schakelaar ACS](../../integrations/using/troubleshooting-the-acs-connector.md) sectie.
 
-## Haal de gegevens op in Campaign Standard en gebruik deze bij levering {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## Haal de gegevens op in het Campaign Standard en gebruik deze bij levering {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 Wanneer de doelworkflow in Campagne v7 is uitgevoerd, kunt u het publiek van de lijst in de modus Alleen-lezen vinden in het menu **[!UICONTROL Audiences]** menu van Campaign Standard.
 
@@ -151,4 +151,4 @@ Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 
      Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
-     Meer informatie over quarantainebeheer vindt u in Campaign Standard [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+     Meer informatie over quarantainebeheer vindt u in Campaign Standard in [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

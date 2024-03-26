@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Categorieën voor aanbiedingen maken
-description: Categorieën voor aanbiedingen maken
+title: Categorieën voorstellen maken
+description: Categorieën voorstellen maken
 feature: Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: interaction
@@ -11,11 +11,11 @@ exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
-# Categorieën voor aanbiedingen maken{#creating-offer-categories}
+# Categorieën voorstellen maken{#creating-offer-categories}
 
 
 

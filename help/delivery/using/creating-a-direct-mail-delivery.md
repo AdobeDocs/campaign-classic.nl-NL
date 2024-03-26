@@ -10,7 +10,7 @@ exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 20%
+ht-degree: 11%
 
 ---
 
@@ -27,5 +27,5 @@ Voer de volgende stappen uit om een nieuwe levering via e-mail te maken:
 
    ![](assets/direct_mail.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie
+1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg voor meer informatie hierover [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. Klikken **Doorgaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.

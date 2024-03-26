@@ -3,15 +3,15 @@ product: campaign
 title: Problemen met de pijplijn oplossen
 description: Problemen met de pijplijn oplossen
 feature: Triggers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 
@@ -105,6 +105,6 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 
 **Werkgebiedinstanties upgraden van verouderde verificatie naar Adobe-IO-verificatie**
 
-Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om uw werkgebiedinstantie te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor uw werkgebiedinstantie te testen.
+Het wijzigen van de integratieverificatie in de werkgebiedinstantie heeft geen invloed op de configuratie van de productieinstantie. U kunt ervoor kiezen om de instantie van het werkgebied te upgraden en vervolgens de verificatie bij te werken naar Adobe-IO en de triggers voor de instantie van het werkgebied te testen.
 
 Uw productie-instantie zal de oudere verificatie blijven gebruiken en deze wijziging heeft geen invloed op deze instantie.

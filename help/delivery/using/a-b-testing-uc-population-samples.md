@@ -9,8 +9,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
@@ -68,7 +68,7 @@ Deze activiteit laat u verscheidene populaties tot stand brengen: die die leveri
 
 1. Creëren van de resterende populatie:
 
-   * Ga naar het tabblad **[!UICONTROL General]**. 
+   * Ga naar de **[!UICONTROL General]** tab.
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

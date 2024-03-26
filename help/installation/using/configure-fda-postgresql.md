@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ U moet een [!DNL PostgreSQL] externe account om uw Campagne-instantie aan te slu
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |:-:|:-:|
 | PGSQL_CONNECT_TIMEOUT | Maximale wachttijd op verbinding, in seconden. <br>Raadpleeg voor meer informatie hierover [PostSQL-documentatie](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
 | PGSQL_KEEPALIVES_IDLE | Aantal seconden van inactiviteit waarna TCP een keeplive bericht naar de server zou moeten verzenden. <br>Raadpleeg voor meer informatie hierover [PostSQL-documentatie](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |

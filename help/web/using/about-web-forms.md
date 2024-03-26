@@ -2,14 +2,14 @@
 product: campaign
 title: Aan de slag met webformulieren
 description: Aan de slag met webformulieren in campagne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 5%
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ In dit hoofdstuk worden de stappen beschreven die zijn vereist voor het ontwerpe
 
 >[!CAUTION]
 >
->Wanneer u webtoepassingen en webformulieren configureert, hebt u een minimale verticale resolutie van 900 pixels nodig (bijv. 1600x900).
+>Wanneer u webtoepassingen en webformulieren configureert, hebt u minimaal een verticale resolutie van 900 pixels nodig (bijv. 1600 x 900).
 
 Webformulieren zijn toegankelijk via het menu Webtoepassingen van het dialoogvenster **Campagnes** tab. In de Adobe Campaign-structuur worden ze gegroepeerd onder de **[!UICONTROL Resources > Online > Web Applications]** knooppunt.
 
@@ -53,17 +53,17 @@ De **[!UICONTROL Edit]** kunt u uw inhoud maken.
 
 Om de configuratie en de inhoud van de vorm van het Web te bepalen, pas de volgende stappen toe:
 
-* Begin door de vereiste pagina&#39;s en controles te creëren: invoervelden, vervolgkeuzelijsten, HTML-inhoud, enz.
+* Begin door de vereiste pagina&#39;s en controles te creëren: inputgebieden, drop-down lijsten, HTML inhoud, enz.
 
-   Deze stap wordt hieronder beschreven.
+  Deze stap wordt hieronder beschreven.
 
 * Hiermee definieert u de volgorde van pagina&#39;s en bepaalt u de weergave.
 
-   Deze stap wordt beschreven in [Opeenvolging van webformulierpagina&#39;s definiëren](defining-web-forms-page-sequencing.md).
+  Deze stap wordt beschreven in [Opeenvolging van webformulierpagina&#39;s definiëren](defining-web-forms-page-sequencing.md).
 
 * Vertaal indien nodig de inhoud.
 
-   Deze stap wordt beschreven in [Een webformulier vertalen](translating-a-web-form.md).
+  Deze stap wordt beschreven in [Een webformulier vertalen](translating-a-web-form.md).
 
 ## Webformulieren ontwerpen {#about-web-forms-designing}
 
@@ -74,14 +74,13 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 * [Velden toevoegen aan een webformulier](adding-fields-to-a-web-form.md),
 * [HTML-inhoud invoegen](static-elements-in-a-web-form.md#inserting-html-content),
 * [Statische elementen in een webformulier](static-elements-in-a-web-form.md),
-* [De opmaak van webformulieren definiëren](defining-web-forms-layout.md).
+* [Opmaak van webformulieren definiëren](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven in het dialoogvenster **[!UICONTROL Preview]** tab. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven in het dialoogvenster **[!UICONTROL Log]** tab.
->* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Ga om dit te doen naar de **[!UICONTROL Preview]** subtab en controleer de **[!UICONTROL Enable debug mode]** vak: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
+>* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Ga om dit te doen naar de **[!UICONTROL Preview]** subtab en controleer de **[!UICONTROL Enable debug mode]** vak: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven.
 >
-
 
 ### De pictogrammen in de werkbalk gebruiken {#using-the-icons-in-the-toolbar}
 

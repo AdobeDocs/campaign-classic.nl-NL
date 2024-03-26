@@ -3,14 +3,14 @@ product: campaign
 title: Gebeurtenissen configureren
 description: Leer hoe u gebeurtenissen configureert voor een aangepaste implementatie
 feature: Triggers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Voor foutopsporing en bewaking worden de volledige triggergegevens in XML-indeli
 
 ### De gegevens parseren {#data-parsing}
 
-Deze voorbeeldcode voor JavaScript parseert de eVar01 in de verrijkingen.
+Deze voorbeeldcode Javascript parseert de eVar01 in de verrijkingen.
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -183,7 +183,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### Restricties {#constraints}
 
-De prestaties voor deze code moeten optimaal zijn, omdat deze op hoge frequenties wordt uitgevoerd en mogelijke negatieve effecten voor andere marketingactiviteiten kan hebben. Vooral als het verwerken van meer dan één miljoen triggergebeurtenissen per uur op de marketingserver of als het niet correct wordt ingesteld.
+De prestaties voor deze code moeten optimaal zijn, omdat deze op hoge frequenties wordt uitgevoerd en mogelijke negatieve effecten voor andere marketingactiviteiten kan hebben. Vooral als het verwerken van meer dan één miljoen triggergebeurtenissen per uur op de Marketing-server of als het niet correct is ingesteld.
 
 De context van dit JavaScript is beperkt. Niet alle functies van de API zijn beschikbaar. getOption() of getCurrentdate() werkt bijvoorbeeld niet.
 
@@ -211,7 +211,7 @@ Hier volgt een voorbeeldschemacode voor deze tabel:
 | shopper_id | String 32 | shopper_id | De interne id van de klant. Wordt ingesteld door de afstemmingsworkflow. Als nul, betekent het dat de klant in Campaign onbekend is. |
 | shopper_key | Lang | shopper_key | De externe id van de klant, zoals vastgelegd door Analytics. |
 | gemaakt | Datumtijd | Gemaakt | De tijd waarop de gebeurtenis in Campagne werd gecreeerd. |
-| lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis werd gewijzigd in Adobe. |
+| lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis in de Adobe is gewijzigd. |
 | timeGMT | Datumtijd | Tijdstempel | De tijd waarop de gebeurtenis in Analytics is gegenereerd. |
 
 ### Gebeurtenissen weergeven {#display-events}

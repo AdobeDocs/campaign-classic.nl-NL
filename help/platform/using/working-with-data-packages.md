@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: Werken met datapakketten
-description: Werken met datapakketten
+title: Werken met gegevenspakketten
+description: Werken met gegevenspakketten
 feature: Data Management, Package Export/Import
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 3%
+source-wordcount: '2477'
+ht-degree: 2%
 
 ---
 
@@ -258,7 +258,7 @@ In de **[!UICONTROL Content]** klikt u op de knop **[!UICONTROL Add]** om de ent
 
 ![](assets/packagedefinition_addentities.png)
 
-Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketdefinitie worden toegevoegd. Volg de onderstaande stappen om dit te doen:
+Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketdefinitie worden toegevoegd. Hiervoor voert u de volgende stappen uit:
 
 1. Klik met de rechtermuisknop op de gewenste entiteit en selecteer vervolgens **[!UICONTROL Actions > Export in a package]**.
 
@@ -354,7 +354,7 @@ Importeer altijd binnen dezelfde versie van het platform. U moet controleren dat
 
 >[!IMPORTANT]
 >
->Het importeren tussen verschillende versies wordt niet ondersteund door Adobe.
+>Importeren tussen verschillende versies wordt niet ondersteund door de Adobe.
 <!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
 
 Let op het schema en de databasestructuur. De invoer van pakket met schema moet door schemageneratie worden gevolgd.

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 7%
+source-wordcount: '647'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ Transactionele berichtenmogelijkheden worden ontworpen om scalability te steunen
 
 <!--Before starting with transactional messaging, make sure you read the corresponding [best practices and limitations]().-->
 
-## Werkingsprincipe voor transactieberichten {#transactional-messaging-operating-principle}
+## Operationeel beginsel van het transactieverkeer {#transactional-messaging-operating-principle}
 
 De module van het Overseinen van Adobe Campaign Transactional integreert in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
 
@@ -45,7 +45,7 @@ Deze functie is afhankelijk van een specifieke architectuur, waarbij de **uitvoe
 
 >[!NOTE]
 >
->Als u nieuwe gebruikers wilt maken voor instanties die worden gehost op de Adobe Cloud voor uitvoering in Message Center, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om toegang te hebben **[!UICONTROL Real time events (nmsRtEvent)]** mappen.
+>Als u nieuwe gebruikers wilt maken voor instanties die worden gehost op de Adobe Cloud in Message Center, moet u contact opnemen met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om toegang te hebben **[!UICONTROL Real time events (nmsRtEvent)]** mappen.
 
 Het algemene proces van het transactieoverseinen kan als volgt worden beschreven:
 
@@ -72,7 +72,7 @@ Op de **besturingsinstantie** moet u de volgende handelingen uitvoeren:
 1. [Een gebeurtenistype maken](../../message-center/using/creating-event-types.md).
 1. [De berichtsjabloon maken en ontwerpen](../../message-center/using/creating-the-message-template.md). Tijdens deze stap moet u een gebeurtenis koppelen aan uw bericht.
 1. [Het bericht testen](../../message-center/using/testing-message-templates.md).
-1. [Publiceer de berichtsjabloon](../../message-center/using/publishing-message-templates.md).
+1. [De berichtsjabloon publiceren](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >

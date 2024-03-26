@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3100'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 Raadpleeg voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid met Adobe Campaign het volgende [sectie](../../delivery/using/about-deliverability.md).
 
-Voor een diepgaandere analyse van de leverbaarbaarheid, met inbegrip van alle technische aanbevelingen betreffende het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform, raadpleegt u de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Voor een diepgaandere analyse van de leverbaarbaarheid, met inbegrip van alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform, raadpleegt u de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Werkwijze {#operating-principle}
 

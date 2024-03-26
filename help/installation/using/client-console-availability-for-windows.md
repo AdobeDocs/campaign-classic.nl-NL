@@ -11,8 +11,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 7%
+source-wordcount: '345'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ Leer hoe u de console installeert [in deze sectie](../../installation/using/inst
 
 ## Voorstellen eindgebruikers om hun clientconsole bij te werken
 
-Zodra de console in de serveromslag van de Campagne beschikbaar is, worden de gebruikers uitgenodigd om de recentste versie van de cliëntconsole in specifiek het vraagvenster te downloaden. Adobe raadt u aan deze optie te laten **[!UICONTROL No longer ask this question]** niet geselecteerd om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.
+Zodra de console in de serveromslag van de Campagne beschikbaar is, worden de gebruikers uitgenodigd om de recentste versie van de cliëntconsole in specifiek het vraagvenster te downloaden. Adobe beveelt aan deze optie te laten **[!UICONTROL No longer ask this question]** niet geselecteerd om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.
 
 Als u deze optie selecteert en ervoor kiest de nieuwste versie niet te downloaden, wordt geen andere gebruiker op de hoogte gesteld van nieuwe beschikbare versies.
 

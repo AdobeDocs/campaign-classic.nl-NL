@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5978'
-ht-degree: 2%
+source-wordcount: '5959'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Meer informatie over [Workflowactiviteiten](../../workflow/using/about-activitie
 
 +++**Actief profiel**
 
-Profielen worden als actief beschouwd als ze de afgelopen twaalf maanden via een kanaal zijn getarget of gecommuniceerd. Volgens uw contract wordt elk van uw campagneexemplaren voorzien van een specifiek aantal actieve profielen die voor factureringsdoeleinden worden geteld.
+Profielen worden als actief beschouwd als ze de afgelopen twaalf maanden via een kanaal zijn aangewezen of gebruikt. Volgens uw contract wordt elk van uw campagneexemplaren voorzien van een specifiek aantal actieve profielen die voor factureringsdoeleinden worden geteld.
 
 Meer informatie over [Actieve profielen](../../platform/using/about-profiles.md#active-profiles).
 +++
@@ -149,7 +149,7 @@ Meer informatie over [Controlegroepen](../../campaign/using/marketing-campaign-t
 
 Met het Configuratiescherm kunnen productbeheerders van Adobe Campaign hun werk efficiënter maken, door ze in staat te stellen instellingen te beheren en het gebruik voor elk van hun instanties bij te houden. Zijn intuïtieve interface laat hen gemakkelijk het gebruik van zeer belangrijke activa controleren, evenals beheerstaken zoals IP adressen toevoeging van de lijst van gewenste personen, SFTP opslagcontrole, zeer belangrijk beheer, en meer uitvoeren.
 
-Meer informatie over [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Meer informatie over [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl).
 +++
 
 +++**Kubussen**
@@ -168,7 +168,7 @@ Adobe Campaign wordt geleverd met een vooraf gedefinieerd gegevensmodel, waarbij
 Meer informatie over [Aangepaste bronnen](../../configuration/using/about-schema-edition.md).
 +++
 
-+++**Datamodel**
++++**Gegevensmodel**
 
 Het de gegevensmodel van de campagne is een reeks schema&#39;s die de gegevenstypes en hun verhoudingen (verbindingen) bepalen. Het gegevensmodel is een abstracte definitie die fysisch met een gegevensbestand wordt uitgevoerd dat de daadwerkelijke gegevens bevat.
 
@@ -362,7 +362,7 @@ Externe accounts zijn entry- en exitpunten voor het product om verbinding te mak
 Meer informatie over [Externe rekeningen](../../installation/using/external-accounts.md).
 +++
 
-+++**Vermoeidheidsbeheer**
++++**Vermogensbeheer**
 
 *Context: optimalisatie campagne*
 
@@ -482,7 +482,7 @@ Inbox-rendering is het genereren van e-mailvoorvertoningen, zodat het bericht op
 Meer informatie over [Inbox-rendering](../../delivery/using/delivery-dashboard.md#delivery-rendering).
 +++
 
-+++**Versie-instellingen**
++++**Instantie-instellingen**
 
 Instantie-instellingen zijn configuratiedetails van een Adobe Campaign-instantie. Deze instellingen worden gedefinieerd in de wizard Implementatie (Extra>Geavanceerd>Implementatiewizard) of in de server- en/of instantieconfiguratiebestanden.
 
@@ -942,7 +942,7 @@ De afbeelding van het doel is de afbeelding van leveringskanalen aan een specifi
 Meer informatie over [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
-+++**Targetingactiviteiten**
++++**Gerichte activiteiten**
 
 Doelactiviteiten zijn workflowactiviteiten die specifiek zijn voor doelgerichte activiteiten, het manipuleren van bevolkingsgegevens en filteractiviteiten. Zij laten de Exploitanten één of meerdere doelstellingen bouwen door reeksen te bepalen en deze reeksen te verdelen of te combineren gebruikend doorsnede, verenigings of uitsluitingsverrichtingen.
 
@@ -1007,7 +1007,7 @@ Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opge
 Meer informatie over [Logboeken bijhouden](../../delivery/using/accessing-the-tracking-logs.md).
 +++
 
-+++**Transactionele berichten**
++++**Transactieberichten**
 
 Het transactieoverseinen is een module van de Campagne die voor het beheren van de berichten van de douanetrekker wordt ontworpen die van gebeurtenissen worden geproduceerd die door een extern informatiesysteem worden verzonden. Een transactiebericht is een individuele en unieke communicatie die in real time door een leverancier zoals een website wordt verzonden. Dit wordt vooral verwacht, omdat het belangrijke informatie bevat die de ontvanger wil controleren of bevestigen.
 
@@ -1061,7 +1061,7 @@ In de eenheidswijze, wordt één enkel contact verwerkt door de motor van de Aan
 Meer informatie over [Eenvoudige modus](../../interaction/using/about-inbound-channels.md).
 +++
 
-+++**Webapplicaties**
++++**Webtoepassingen**
 
 Webtoepassingen zijn dynamische en interactieve toepassingspagina&#39;s die worden gehost door de instantie Campagne. Zij bevatten gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker. U kunt bijvoorbeeld een bewerkingsformulier maken op een extranet, of berichtformulieren met gegevens uit de database met tabellen, grafieken, invoerformulieren, enzovoort. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
 

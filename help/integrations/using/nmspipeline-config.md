@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Pipelineoptie NmsPipeline_Config
-description: Pipelineoptie NmsPipeline_Config
+title: Pipeline, optie NmsPipeline_Config
+description: Pipeline, optie NmsPipeline_Config
 feature: Triggers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 3%
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
 
-# Pipelineoptie NmsPipeline_Config {#nmspipeline_config}
+# Pipeline, optie NmsPipeline_Config {#nmspipeline_config}
 
 
 
@@ -79,7 +79,7 @@ De parameter &quot;consument&quot; identificeert het geval als een van deze cons
 
 ## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
-Voeg Experience Cloud-triggers toe of bewerk deze onder de &quot;triggers&quot;-array. Bewerk de rest niet.
+Voeg of geef Experience Cloud trekkers onder de &quot;trekkers&quot;serie toe uit; geef niet de rest uit.
 Ervoor zorgen dat de JSON geldig is met behulp van deze [website](https://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.

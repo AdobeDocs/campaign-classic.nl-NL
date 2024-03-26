@@ -29,7 +29,7 @@ Als u wilt weten hoe u verpersoonlijkingsvelden invoegt en gebruikt, raadpleegt 
 >[!NOTE]
 >
 >* Het adres van de afzender wordt gebruikt voor antwoorden door gebrek.
->* De headerparameters mogen niet leeg zijn. Door gebrek, bevatten zij de waardeninput wanneer het vormen van de plaatsingstovenaar. Meer informatie in [deze sectie](../../installation/using/deploying-an-instance.md).
+>* De headerparameters mogen niet leeg zijn. Door gebrek, bevatten zij de waardeninput wanneer het vormen van de plaatsingstovenaar. Lees meer in [deze sectie](../../installation/using/deploying-an-instance.md).
 >* Het adres van de afzender is verplicht om een e-mailbericht toe te staan (norm RFC).
 >* Adobe Campaign controleert de syntaxis van de ingevoerde e-mailadressen.
 

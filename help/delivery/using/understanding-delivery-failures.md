@@ -9,8 +9,8 @@ role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 14%
+source-wordcount: '2570'
+ht-degree: 10%
 
 ---
 
@@ -118,7 +118,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Ongeldig domein </td> 
    <td> Zacht </td> 
    <td> 2 </td> 
-   <td> Het domein van het e-mailadres is onjuist of bestaat niet meer. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Hierna wordt de record ingesteld op de status Quarantaine en wordt de levering niet opnieuw geprobeerd.<br /> </td> 
+   <td> Het domein van het e-mailadres is onjuist of bestaat niet meer. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Hierna wordt de record ingesteld op Quarantine-status en wordt het niet opnieuw geprobeerd.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postbus vol </td> 
@@ -136,7 +136,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Niet gedefinieerd </td> 
    <td> Niet gedefinieerd </td> 
    <td> 0 </td> 
-   <td> Het adres is in kwalificatie omdat de fout nog niet is verhoogd. Dit type fout treedt op wanneer een nieuw foutbericht wordt verzonden door de server: het kan een geïsoleerde fout zijn, maar als deze opnieuw voorkomt, zal de foutenteller stijgen en worden de technische teams gewaarschuwd. Zij kunnen dan berichtanalyse uitvoeren en deze fout kwalificeren, via <span class="uicontrol">Administratie</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Beheer van niet-te leveren items</span> knooppunt in de boomstructuur.<br /> </td> 
+   <td> Het adres is in kwalificatie omdat de fout nog niet is verhoogd. Dit type van fout komt voor wanneer een nieuw foutenbericht door de server wordt verzonden: het kan een geïsoleerde fout zijn, maar als het opnieuw voorkomt, stijgt de foutenteller, die de technische teams zal waarschuwen. Zij kunnen dan berichtanalyse uitvoeren en deze fout kwalificeren, via <span class="uicontrol">Administratie</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Beheer van niet-te leveren items</span> knooppunt in de boomstructuur.<br /> </td> 
   </tr> 
   <tr> 
    <td> Niet in aanmerking komend voor de voorstellen </td> 
@@ -177,7 +177,7 @@ De mogelijke redenen van een leveringsfout zijn:
  </tbody> 
 </table>
 
-## Nieuwe pogingen na een tijdelijke leveringsfout {#retries-after-a-delivery-temporary-failure}
+## Retourneert na een tijdelijke leverfout {#retries-after-a-delivery-temporary-failure}
 
 Als een bericht mislukt door een **Zacht** of **Genegeerd** De fout die tijdelijk is, zal het opnieuw proberen tijdens de leveringsduur worden uitgevoerd.
 
@@ -198,7 +198,7 @@ De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uu
 Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het is verzonden (asynchrone fout).
 
 * Synchrone fout: de externe mailserver waarmee contact is opgenomen door de Adobe Campaign-bezorgingsserver heeft onmiddellijk een foutbericht geretourneerd. De levering mag niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Kwalificatie van niet-bezorgde e-mails](#bounce-mail-qualification).
-* Asynchrone fout: Een niet-bezorgde e-mail of een SR is later opnieuw verzonden door de ontvangende server. Deze post wordt geladen in een technische brievenbus de toepassing gebruikt om berichten met een fout te etiketteren. Asynchrone fouten kunnen optreden tot een week nadat een levering is verzonden.
+* Asynchrone fout: een stuiterende post of een SR werd opnieuw verzonden later door de ontvangende server. Deze post wordt geladen in een technische brievenbus de toepassing gebruikt om berichten met een fout te etiketteren. Asynchrone fouten kunnen optreden tot een week nadat een levering is verzonden.
 
   >[!NOTE]
   >
@@ -222,7 +222,7 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 >
 >Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md), worden de meeste regels voor e-mailbeheer niet meer gebruikt. Zie [deze sectie](#email-management-rules)voor meer informatie.
 
-### Kwalificatie van niet-bezorgde e-mails {#bounce-mail-qualification}
+### Bounce mail-kwalificatie {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
@@ -230,7 +230,7 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 >
 >* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** tabel wordt niet meer gebruikt voor **synchroon** foutberichten over leveringsfout. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
 >
->* **** Asynchrone niet-bezorgingen worden nog steeds gekwalificeerd door het inMail-proces aan de hand van de regels voor **[!UICONTROL Inbound email]**. Zie voor meer informatie [E-mailbeheerregels](#email-management-rules).
+>* **Asynchroon** De grenzen worden nog gekwalificeerd door het inMail proces door **[!UICONTROL Inbound email]** regels. Zie voor meer informatie [E-mailbeheerregels](#email-management-rules).
 >
 >* Voor instanties die gebruikmaken van de verbeterde MTA **zonder webhaken** de **[!UICONTROL Inbound email]** De regels zullen ook worden gebruikt om de synchrone stuiterende e-mails die uit Verbeterde MTA komen te verwerken, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
 

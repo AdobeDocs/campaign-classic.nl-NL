@@ -9,8 +9,8 @@ level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
@@ -22,11 +22,11 @@ Adobe Campaign biedt een keuze uit drie hostingmodellen, die flexibiliteit en vr
 
 >[!NOTE]
 >
->Voor op Adobe gehoste omgevingen kunnen de hoofdinstallatie- en configuratiestappen alleen worden uitgevoerd door Adobe, zoals het configureren van de server en het aanpassen van configuratiebestanden voor instanties. Meer over de belangrijkste verschillen tussen plaatsingswijzen leren, verwijs naar [deze pagina](../../installation/using/capability-matrix.md).
+>Voor Adobe ontvangen milieu&#39;s, kunnen de belangrijkste installatie en configuratiestappen slechts door Adobe worden uitgevoerd, zoals het vormen van de server en het aanpassen van de dossiers van de instantieconfiguratie. Meer over de belangrijkste verschillen tussen plaatsingswijzen leren, verwijs naar [deze pagina](../../installation/using/capability-matrix.md).
 
 ## Managed Services / Gehost
 
-Adobe Campaign kan as a Managed Service worden geïmplementeerd: alle componenten van Adobe Campaign, inclusief de gebruikersinterface, de uitvoeringsbeheerengine en de Campagne-database van de klant, worden volledig gehost door Adobe, inclusief e-mailuitvoering, spiegelpagina&#39;s, trackingserver en naar buiten wijzende webcomponenten, zoals het afmelden van pagina&#39;s/voorkeurscentrum en bestemmingspagina&#39;s.
+Adobe Campaign kan as a Managed Service worden geïmplementeerd: alle componenten van Adobe Campaign, inclusief de gebruikersinterface, de uitvoeringsbeheerengine en de Campagne-database van de klant, worden volledig gehost door Adobe, waaronder het uitvoeren van e-mail, het spiegelen van pagina&#39;s, het bijhouden van de server en naar buiten wijzende webcomponenten, zoals het afmelden van pagina-/voorkeurscentrum en het landen van pagina&#39;s.
 
 ![](assets/deployment_hosted.png)
 
@@ -44,7 +44,7 @@ Adobe Campaign kan op locatie worden geïmplementeerd: alle onderdelen van Adobe
 
 ![](assets/deployment_onpremise.png)
 
-Als klant op locatie, alvorens te beginnen met het implementeren van Campaign Classic, zorg dan voor de volgende voorwaarden en aanbevelingen:
+Als klant op locatie, alvorens met het opstellen van Campaign Classic te beginnen, zorg voor de volgende eerste vereisten en aanbevelingen:
 
 * Lees de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) die alle versies bevat van de systemen en componenten die worden ondersteund voor Adobe Campaign.
 * Lees de [voorwaarden voor Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) en [voorwaarden voor Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
@@ -56,7 +56,7 @@ Als klant op locatie, alvorens te beginnen met het implementeren van Campaign Cl
 
 ## Hybride
 
-Wanneer de Adobe Campaign-oplossingssoftware als hybride model wordt geïmplementeerd, bevindt deze zich op locatie op de locatie van de klant en wordt het uitvoeringsbeheer als cloudservice geleverd door Adobe. Het Adobe Campaign-marketingexemplaar wordt geïnstalleerd in de firewall van een klant. Persoonlijke identificeerbare informatie (PII) blijft dus intern en alleen gegevens die nodig zijn om e-mails aan uw persoonlijke wensen aan te passen worden naar de cloud verzonden voor e-mailuitvoering. De uitvoeringsinstantie, gehost in de cloud, ontvangt de verzoeken van de instantie Op locatie om e-mails te verzenden. Dit exemplaar personaliseert alle e-mails en levert hen. Geen enkel gegeven wordt permanent opgeslagen in de cloud.
+Wanneer de Adobe Campaign-oplossingssoftware als hybride model wordt geïmplementeerd, bevindt deze zich op locatie op de locatie van de klant en wordt het uitvoeringsbeheer door Adobe als cloudservice geleverd. Het Adobe Campaign-marketingexemplaar wordt geïnstalleerd in de firewall van een klant. Persoonlijke identificeerbare informatie (PII) blijft dus intern en alleen gegevens die nodig zijn om e-mails aan uw persoonlijke wensen aan te passen worden naar de cloud verzonden voor e-mailuitvoering. De uitvoeringsinstantie, gehost in de cloud, ontvangt de verzoeken van de instantie Op locatie om e-mails te verzenden. Dit exemplaar personaliseert alle e-mails en levert hen. Geen enkel gegeven wordt permanent opgeslagen in de cloud.
 
 ![](assets/deployment_hybrid.png)
 

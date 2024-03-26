@@ -2,13 +2,13 @@
 product: campaign
 title: Aan de slag met machtigingen
 description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 4%
+source-wordcount: '256'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 * Toegang tot bepaalde registers,
 * Opstellen, wijzigen en/of verwijderen van registers (acties, contacten, campagnes, groepen, enz.).
 
-De machtigingen zijn van toepassing op operatorprofielen of groepen operatoren.
+De machtigingen gelden voor operatorprofielen of groepen operatoren.
 
 Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Voor meer informatie over beveiligingszones in [deze pagina](../../installation/using/security-zones.md).
 
@@ -34,7 +34,7 @@ Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
 >[!NOTE]
 >
->Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [Controlelijst voor beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
+>Voordat u begint met het definiëren van machtigingen, raadt de Adobe u aan de [Controlelijst voor beveiligingsconfiguratie](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
 
 Leer hoe te om toegang en opstellingstoestemmingen in deze secties te verlenen:
 

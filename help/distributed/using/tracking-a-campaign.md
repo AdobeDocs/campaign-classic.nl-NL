@@ -2,13 +2,13 @@
 product: campaign
 title: Een campagne bijhouden
 description: Leer hoe u een campagne kunt bijhouden met campagne Distributed Marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Hierdoor kunnen ze:
 
 ## Filterpakketten {#filter-packages}
 
-Van de **[!UICONTROL Campaigns]** kunt u de lijst weergeven met **[!UICONTROL Campaign packages]** die alle bestaande Distributed Marketing campagnes groepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** en selecteer de status van het campagnepakket die u wilt weergeven.
+Van de **[!UICONTROL Campaigns]** tabblad, kunt u de lijst weergeven met **[!UICONTROL Campaign packages]** die alle bestaande Distributed Marketing campagnes groepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** en selecteer de status van het campagnepakket die u wilt weergeven.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -35,7 +35,7 @@ Van de **[!UICONTROL Campaigns]** kunt u de lijst weergeven met **[!UICONTROL Ca
 
 De **[!UICONTROL Campaign packages]** kunt u de samenvatting van elk pakket weergeven.
 
-Deze samenvatting bevat de volgende informatie: label, type campagne, alsmede de naam van de campagne waaruit deze is gemaakt en de map.
+Deze samenvatting bevat de volgende informatie: label, type campagne en de naam van de campagne waaruit deze is gemaakt, en de map.
 
 Klik op de pakketnaam om deze te bewerken. U kunt ook bestellingen bekijken door de lokale entiteiten en door hun status.
 
@@ -45,7 +45,7 @@ Deze informatie wordt ook aangeboden in het **[!UICONTROL Campaign orders]** bek
 
 De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te doen:
 
-1. De exploitant kan de ordenaam klikken om het uit te geven: hier worden de gegevens van de bestelling weergegeven .
+1. De exploitant kan de ordenaam klikken om het uit te geven: dit toont de orddetails.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 

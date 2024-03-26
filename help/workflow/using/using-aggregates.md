@@ -2,13 +2,13 @@
 product: campaign
 title: Aggregaten gebruiken
 description: Meer informatie over het gebruik van aggregaten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ In dit geval wordt beschreven hoe de laatste ontvangers die aan de database zijn
 
 Met behulp van het volgende proces wordt de aanmaakdatum van ontvangers in de database vergeleken met de laatst bekende datum waarop een ontvanger is gemaakt met een aggregaat. Alle ontvangers die op dezelfde dag zijn gemaakt, worden ook geselecteerd.
 
-Om een **Aanmaakdatum = max (aanmaakdatum)** Als u een filter op de ontvangers typt, moet u een workflow uitvoeren om de volgende stappen uit te voeren:
+Om een **Aanmaakdatum = max (aanmaakdatum)** Als u een filter op de ontvangers typt, moet u een workflow uitvoeren om de volgende stappen te volgen:
 
 1. Haal de ontvangers van een database op met behulp van een standaardquery. Voor meer informatie over deze stap raadpleegt u [Een query maken](query.md#creating-a-query).
 1. Bereken de laatst bekende datum een ontvanger werd gecreeerd gebruikend het resultaat dat van wordt geproduceerd **max (aanmaakdatum)** aggregatiefunctie.
@@ -38,13 +38,13 @@ Om een **Aanmaakdatum = max (aanmaakdatum)** Als u een filter op de ontvangers t
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klik op **[!UICONTROL Edit additional data]** en vervolgens op **[!UICONTROL Advanced parameters...]**. Schakel de optie **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** in.
+1. Klikken **[!UICONTROL Edit additional data]** dan **[!UICONTROL Advanced parameters...]**. Schakel de optie **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** in.
 
    Met deze optie zorgt u ervoor dat niet alle ontvangers als resultaat worden weergegeven en dat gegevens die expliciet worden toegevoegd, niet worden bewaard. In dit geval verwijst het naar de laatste datum waarop een ontvanger is gemaakt.
 
    Laat de optie **[!UICONTROL Remove duplicate rows (DISTINCT)]** ingeschakeld.
 
-## Stap 2: De ontvangers koppelen en het resultaat van de aggregatiefunctie {#step-2--linking-the-recipients-and-the-aggregation-function-result}
+## Stap 2: De ontvangers en het resultaat van de aggregatiefunctie koppelen {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
 Om de vraag te verbinden die ontvangers behandelt aan de vraag die de berekening van de samenvoegingsfunctie uitvoert, moet u schema gebruiken uitgeeft activiteit.
 

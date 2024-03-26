@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: HeatMap van de Campagne Workflow
+title: HeatMap van de Campagne-workflow
 description: Uw workflows controleren met Workflow HeatMap
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 3%
+source-wordcount: '1145'
+ht-degree: 4%
 
 ---
 
@@ -76,7 +76,7 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volge
 
 1. U kunt ook filteren op het tabblad **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** : Alleen [out-of-the-box-technische workflows](building-a-workflow.md#technical-workflows) en [workflows voor gegevensbeheer](targeting-data.md#data-management) worden weergegeven.
+   * **[!UICONTROL Technical]** Alleen : [out-of-the-box-technische workflows](building-a-workflow.md#technical-workflows) en [workflows voor gegevensbeheer](targeting-data.md#data-management) worden weergegeven.
    * **[!UICONTROL Marketing]** : Alleen workflows die zijn gekoppeld aan een marketingcampagne, beter bekend als [campagneworkflows](building-a-workflow.md#campaign-workflows), worden weergegeven.
 
 1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook de opdracht **[!UICONTROL Workflow name filter]** veld.
@@ -111,13 +111,13 @@ In het onderstaande voorbeeld worden tussen 8.00 uur en 8.05 uur drie workflows 
 1. Klik op de werkstroom-id of naam om een werkstroom rechtstreeks te openen.
 1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** klik op de knop **[!UICONTROL Home]** knop.
 
-## Gebruik hoofdletters/kleine letters: HeatMap gebruiken om handelingen uit te voeren {#use-cases--using-the-heatmap-to-take-actions}
+## Gebruik gevallen: gebruik de HeatMap om handelingen uit te voeren {#use-cases--using-the-heatmap-to-take-actions}
 
 Er zijn twee belangrijke gevallen waar het de werkschema HeatMap van de Campagne nuttig kan zijn.
 
 ### Het aantal gelijktijdige workflows verminderen {#reducing-the-number-of-concurrent-workflows}
 
-Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen om de lading op de instantie te begrijpen en bestaande of nieuwe werkschema&#39;s op aangewezen tijden te plannen.
+Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen de lading op de instantie begrijpen en bestaande of nieuwe werkschema&#39;s op aangewezen tijden plannen.
 
 1. Van de **[!UICONTROL Campaign Workflow HeatMap]** klik op de knop **[!UICONTROL Filters]** knop.
 1. Stel de duur in op een paar seconden of een paar minuten.
@@ -148,7 +148,7 @@ Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#
 
 ## Met HeatMap kunt u de planning van de workflow verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
 
-In het onderstaande voorbeeld ziet u hoe planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
+In het onderstaande voorbeeld ziet u hoe de planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
 
 In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren wat de activiteit vertraagt en hoe te om het probleem op te lossen.
 
@@ -164,8 +164,8 @@ In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren 
    * De werkstromen in behandeling moeten elke dag handmatig opnieuw worden gestart.
    * De prestaties zijn laag.
 
-1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkelijk over de rest van de dag.
-1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** en klik op de knop **[!UICONTROL Reload data]** knop.
+1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkmatig over de rest van de dag.
+1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** pagina en klik op de knop **[!UICONTROL Reload data]** knop.
 1. Neem nu het volgende in acht:
 
    ![](assets/wkf_monitoring_with.png)

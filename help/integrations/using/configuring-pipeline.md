@@ -3,19 +3,19 @@ product: campaign
 title: De pijplijn configureren
 description: Leer hoe te om de pijpleiding te vormen
 feature: Triggers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
-# Pipeline configureren {#configuring-pipeline}
+# Gasleiding configureren {#configuring-pipeline}
 
 
 
@@ -31,7 +31,7 @@ Voordat u deze configuratie start, moet u controleren of u deze configuratie geb
    * 19.1.8.9039
    * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
-   * 20.3.1
+   * 20.3.1.
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:
@@ -128,7 +128,7 @@ U kunt enkele interne parameters wijzigen op basis van de vereisten voor de bela
 
 De lijst met optionele parameters is hieronder te vinden:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |:-:|:-:|
 | appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg deze [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) voor meer informatie |
 | authGatewayEndpoint(Legacy) | URL om gatewaytokens te krijgen. Standaard: ```https://api.omniture.com``` |

@@ -2,13 +2,13 @@
 product: campaign
 title: Een webformulier vertalen
 description: Een webformulier vertalen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ U kunt vertalingen rechtstreeks uitvoeren in de Adobe Campaign-console (raadplee
 
 De lijst met talen die standaard beschikbaar zijn, wordt weergegeven in [Weergavetaal van formulieren wijzigen](#changing-forms-display-language).
 
-De toepassing van het Web wordt ontworpen in een het uitgeven taal: dit is de referentietaal die wordt gebruikt om labels en andere te vertalen inhoud in te voeren.
+De toepassing van het Web wordt ontworpen in een het uitgeven taal: dit is de verwijzingstaal die wordt gebruikt om etiketten en andere te vertalen inhoud in te gaan.
 
 De standaardtaal is de taal waarin de toepassing van het Web zal worden getoond als geen taal het plaatsen aan zijn toegang URL wordt toegevoegd.
 
@@ -53,7 +53,7 @@ De **[!UICONTROL Translations]** kunt u vertalingen invoeren voor de tekenreekse
 
 De eerste keer dat u dit tabblad opent, bevat dit tabblad geen gegevens. Klik op de knop **[!UICONTROL Collect the strings to translate]** koppeling om de tekenreeksen in de webtoepassing bij te werken.
 
-Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd in het dialoogvenster **[!UICONTROL Texts]** tabs van alle statische elementen: HTML-blokken, JavaScript, enz. Statische elementen worden nader beschreven in [Statische elementen in een webformulier](static-elements-in-a-web-form.md).
+Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd in het dialoogvenster **[!UICONTROL Texts]** tabbladen van alle statische elementen: HTML-blokken, JavaScript, enz. Statische elementen worden nader beschreven in [Statische elementen in een webformulier](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -75,9 +75,9 @@ Door gebrek, wordt elke vertaaltaal van de toepassing van het Web getoond. Er zi
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-Ga naar de **[!UICONTROL Language]** keuzelijst om de vertaaltaal te selecteren.
+Ga naar de **[!UICONTROL Language]** vervolgkeuzelijst om de vertaaltaal te selecteren.
 
-Selecteer **[!UICONTROL To translate]** in de **[!UICONTROL Status]** vervolgkeuzelijst. U kunt ook alleen vertaalde of goedgekeurde tekenreeksen weergeven.
+Als u alleen onvertaalde tekenreeksen wilt weergeven, selecteert u **[!UICONTROL To translate]** in de **[!UICONTROL Status]** vervolgkeuzelijst. U kunt ook alleen vertaalde of goedgekeurde tekenreeksen weergeven.
 
 ### Tekenreeksen omzetten {#translating-strings}
 
@@ -87,7 +87,7 @@ Selecteer **[!UICONTROL To translate]** in de **[!UICONTROL Status]** vervolgkeu
 
    De brontekenreeks wordt weergegeven in de bovenste sectie van het venster.
 
-1. Voer de vertaling in de onderste sectie in. Als u het wilt goedkeuren, controleert u de **[!UICONTROL Translation approved]** optie.
+1. Voer de vertaling in de onderste sectie in. Als u het wilt goedkeuren, controleert u de **[!UICONTROL Translation approved]** -optie.
 
    >[!NOTE]
    >
@@ -111,21 +111,21 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 
 1. Selecteer een **[!UICONTROL Export strategy]** :
 
-   * **[!UICONTROL One file per language]**: bij de export wordt één bestand per vertaaltaal gegenereerd . Elk dossier zal voor alle geselecteerde toepassingen van het Web gemeenschappelijk zijn.
-   * **[!UICONTROL One file per Web application]**: bij het exporteren één bestand per geselecteerde webtoepassing wordt gegenereerd. Elk bestand bevat alle vertaaltalen.
+   * **[!UICONTROL One file per language]**: bij het exporteren wordt één bestand per vertaaltaal gegenereerd. Elk dossier zal voor alle geselecteerde toepassingen van het Web gemeenschappelijk zijn.
+   * **[!UICONTROL One file per Web application]**: de exportbewerking genereert één bestand per geselecteerde webtoepassing. Elk bestand bevat alle vertaaltalen.
 
-      >[!NOTE]
-      >
-      >Dit type export is niet beschikbaar voor XLIFF-export.
+     >[!NOTE]
+     >
+     >Dit type export is niet beschikbaar voor XLIFF-export.
 
    * **[!UICONTROL One file per language and per Web application]**: bij het exporteren worden verschillende bestanden gegenereerd. Elk dossier zal één vertaaltaal per toepassing van het Web bevatten.
-   * **[!UICONTROL One file for all]**: bij het exporteren wordt één meertalig bestand voor alle webtoepassingen gegenereerd. Het zal alle vertaaltalen voor alle geselecteerde toepassingen van het Web bevatten.
+   * **[!UICONTROL One file for all]**: de exportbewerking genereert één meertalig bestand voor alle webtoepassingen. Het zal alle vertaaltalen voor alle geselecteerde toepassingen van het Web bevatten.
 
-      >[!NOTE]
-      >
-      >Dit type export is niet beschikbaar voor XLIFF-export.
+     >[!NOTE]
+     >
+     >Dit type export is niet beschikbaar voor XLIFF-export.
 
-1. Kies vervolgens de optie **[!UICONTROL Target folder]** waarin bestanden worden opgenomen.
+1. Kies vervolgens de optie **[!UICONTROL Target folder]** waarin de bestanden worden opgenomen.
 1. Selecteer de bestandsindeling ( **[!UICONTROL CSV]** of **[!UICONTROL XLIFF]** ) en klik op **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
@@ -174,9 +174,9 @@ als er andere parameters zijn vóór de taal in de URL. Bijvoorbeeld: **https://
 
 De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hieronder weergegeven.
 
-**Standaardsysteemwoordenboek**: sommige talen bevatten een standaardwoordenboek dat de vertaling van de systeemtekenreeksen bevat. Raadpleeg voor meer informatie hierover [De systeemtekenreeksen omzetten](#translating-the-system-strings).
+**Standaardsysteemwoordenboek**: in sommige talen is een standaardwoordenboek opgenomen dat de vertaling van de systeemtekenreeksen bevat. Raadpleeg voor meer informatie hierover [De systeemtekenreeksen omzetten](#translating-the-system-strings).
 
-**Kalenderbeheer**: de pagina&#39;s van een toepassing van het Web kunnen een kalender voor het ingaan van data omvatten. Deze kalender is standaard beschikbaar in verschillende talen (vertaling van dagen, datumnotatie).
+**Kalenderbeheer**: de pagina&#39;s van een webtoepassing kunnen een kalender bevatten voor het invoeren van datums. Deze kalender is standaard beschikbaar in verschillende talen (vertaling van dagen, datumnotatie).
 
 <table> 
  <tbody> 
@@ -206,7 +206,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Arabisch (ar)<br /> </td> 
+   <td> Arabisch<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -221,7 +221,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Deens (d bis)<br /> </td> 
+   <td> Deens (da)<br /> </td> 
    <td> ja<br /> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -276,7 +276,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Iers (g bis)<br /> </td> 
+   <td> Iers (ga)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -371,7 +371,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Zweeds (sv)<br /> </td> 
+   <td> Zweeds<br /> </td> 
    <td> ja<br /> </td> 
    <td> ja<br /> </td> 
   </tr> 
@@ -410,9 +410,9 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
 
 >[!NOTE]
 >
->Als u andere talen wilt toevoegen dan die welke standaard worden aangeboden, raadpleegt u [Een vertaaltaal toevoegen](#adding-a-translation-language)
+>Als u andere talen wilt toevoegen dan de standaardtalen, raadpleegt u [Een vertaaltaal toevoegen](#adding-a-translation-language)
 
-## Voorbeeld: het tonen van een toepassing van het Web in verscheidene talen {#example--displaying-a-web-application-in-several-languages}
+## Voorbeeld: een webtoepassing weergeven in verschillende talen {#example--displaying-a-web-application-in-several-languages}
 
 Het volgende webformulier is beschikbaar in vier talen: Engels, Frans, Duits en Spaans. De tekenreeksen zijn allemaal omgezet via de **[!UICONTROL Translation]** tabblad van het webformulier. Omdat de standaardtaal Engels is, gebruikt u bij het publiceren van de enquête de standaard-URL om deze in het Engels weer te geven.
 
@@ -426,7 +426,7 @@ Toevoegen **?lang=fr** tot het einde van de URL om deze in het Frans weer te gev
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-U kunt **?lang=es** of **?lang=de** om het in het Spaans of Duits weer te geven.
+U kunt **?lang=es** of **?lang=de** in het Spaans of Duits.
 
 >[!NOTE]
 >
@@ -441,7 +441,7 @@ U kunt **?lang=es** of **?lang=de** om het in het Spaans of Duits weer te geven.
 
 ### De systeemtekenreeksen omzetten {#translating-the-system-strings}
 
-De koorden van het systeem zijn uit-van-de-doos karakterkoorden die door alle toepassingen van het Web worden gebruikt. Bijvoorbeeld: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knoppen, **[!UICONTROL Loading]** berichten, enz. Standaard bevatten sommige talen een woordenboek met vertalingen voor deze tekenreeksen. De lijst met talen wordt in [Weergavetaal van formulieren wijzigen](#changing-forms-display-language).
+De koorden van het systeem zijn uit-van-de-doos karakterkoorden die door alle toepassingen van het Web worden gebruikt. Bijvoorbeeld: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knoppen, **[!UICONTROL Loading]** berichten, enz. Standaard bevatten sommige talen een woordenboek met vertalingen voor deze tekenreeksen. De lijst met talen wordt in detail beschreven in [Weergavetaal van formulieren wijzigen](#changing-forms-display-language).
 
 Als u uw toepassing van het Web in een taal vertaalt waarvoor het systeemwoordenboek niet wordt vertaald, zal een waarschuwingsbericht schijnen om u te laten weten dat sommige vertalingen ontbreken.
 
@@ -454,7 +454,7 @@ Voer de volgende stappen uit om een taal toe te voegen:
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Selecteer de vertaaltaal en voer een vertaling voor de tekenreeks in. U kunt de vertaling goedkeuren door **[!UICONTROL Translation approved]** optie.
+1. Selecteer de vertaaltaal en voer een vertaling voor de tekenreeks in. U kunt de vertaling goedkeuren door **[!UICONTROL Translation approved]** -optie.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -474,6 +474,6 @@ Om de toepassingen van het Web in andere talen dan de standaardtalen te vertalen
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. Klik op de knop **[!UICONTROL Add]** en voert u vervolgens de **[!UICONTROL Internal name]**, **[!UICONTROL Label]** en id van de afbeelding (markering). Neem contact op met de beheerder als u een nieuwe afbeelding wilt toevoegen.
+1. Klik op de knop **[!UICONTROL Add]** en voert u vervolgens de knop **[!UICONTROL Internal name]**, **[!UICONTROL Label]** en id van de afbeelding (markering). Neem contact op met de beheerder als u een nieuwe afbeelding wilt toevoegen.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

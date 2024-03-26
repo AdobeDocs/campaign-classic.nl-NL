@@ -2,12 +2,12 @@
 product: campaign
 title: Een overzichtslijst maken
 description: Een overzichtslijst maken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '985'
 ht-degree: 2%
 
 ---
@@ -34,11 +34,11 @@ Voer de volgende stappen uit om een overzichtslijst te maken:
 
 1. Een &quot;Aankopen&quot;-bestand verzamelen en laden in de tabel met werkzaamheden van de workflow
 1. De geïmporteerde gegevens verrijken door een koppeling naar een referentietabel te maken
-1. De tabel &quot;Aankopen&quot; bijwerken met de verrijkte gegevens
-1. Verrijking van de &quot;Contactpersonen&quot;-gegevens met een geaggregeerde berekening uit de tabel &quot;Aankopen&quot;
+1. De tabel Aankopen bijwerken met de verrijkte gegevens
+1. Verrijking van de &quot;Contactgegevens&quot; met een geaggregeerde berekening uit de tabel &quot;Aankopen&quot;
 1. Een overzichtslijst maken
 
-## Stap 1: Het bestand laden en de geïmporteerde gegevens afstemmen {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Stap 1: Laad het bestand en combineer de geïmporteerde gegevens {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 De te laden gegevens zijn &quot;Aankoop&quot; gerelateerde gegevens met de volgende indeling:
 
@@ -62,13 +62,13 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
    Raadpleeg voor meer informatie over deze activiteit [Gegevens uit een bestand laden](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configureer de **Bestandsverzamelaar** activiteit om tekst te verzamelen (&#42;.txt) typt bestanden uit de geselecteerde map.
+1. Vorm **Bestandsverzamelaar** activiteit om tekst te verzamelen (&#42;.txt) typt bestanden uit de geselecteerde map.
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   De **Bestandsverzamelaar** Met activiteit kunt u de afwezigheid van een bestand in de bronmap beheren. Om dit te doen, controleer **[!UICONTROL Process file nonexistence]** optie. In deze workflow kunt u een **Wachten** activiteit is toegevoegd om een andere dossierinzameling te proberen als het van de folder op het tijdstip van inzameling mist.
+   De **Bestandsverzamelaar** Met activiteit kunt u de afwezigheid van een bestand in de bronmap beheren. Controleer de **[!UICONTROL Process file nonexistence]** -optie. In deze workflow kunt u **Wachten** activiteit is toegevoegd om een andere dossierinzameling te proberen als het van de folder op het tijdstip van inzameling mist.
 
-1. Configureer de **Gegevens laden (bestand)** activiteit die een steekproefdossier met het zelfde formaat zoals de te importeren gegevens gebruikt.
+1. Vorm **Gegevens laden (bestand)** activiteit die een steekproefdossier met het zelfde formaat zoals de te importeren gegevens gebruikt.
 
    ![](assets/uc2_enrich_chargement1.png)
 
@@ -80,15 +80,15 @@ Zodra de gegevens zijn ingevoerd, wordt de verrijking uitgevoerd door een verbin
 
 Voeg de verrijkingsactiviteit toe en configureer deze als volgt:
 
-1. Selecteer de hoofdset die bestaat uit de gegevens in het menu **Gegevens laden (bestand)** activiteit.
+1. Selecteer de hoofdset die uit de gegevens in het menu **Gegevens laden (bestand)** activiteit.
 
    ![](assets/uc2_enrich_enrich1.png)
 
-1. Klikken **[!UICONTROL Add data]** Selecteer vervolgens de **[!UICONTROL A link]** optie.
+1. Klikken **[!UICONTROL Add data]** en selecteert u vervolgens de **[!UICONTROL A link]** -optie.
 
    ![](assets/uc2_enrich_enrich2.png)
 
-1. Selecteer **[!UICONTROL Define a collection]** optie.
+1. Selecteer de **[!UICONTROL Define a collection]** -optie.
 1. Selecteer het schema &quot;Wines&quot; als doel.
 
    ![](assets/uc2_enrich_enrich3.png)
@@ -99,7 +99,7 @@ In het volgende venster, moet u tot stand brengen zich aansluit bij voorwaarde d
 
 ![](assets/uc2_enrich_enrich4.png)
 
-Nu wordt de verbinding gecreeerd, gaan wij een kolom aan de het werklijst van het werkschema van het &quot;Schema van Opslag&quot;toevoegen: het veld &quot;ZipCode Reference&quot;.
+Nu wordt de verbinding gecreeerd, gaan wij een kolom aan de het werklijst van het werkschema van het &quot;Schema van Opslag&quot;toevoegen: het gebied van de Verwijzing ZipCode.
 
 1. Open de verrijkingsactiviteit.
 1. Klik op **[!UICONTROL Edit additional data]**.
@@ -113,7 +113,7 @@ De gegevens in de werktabel na deze verrijking zijn als volgt:
 
 ## Stap 2: Verrijkte gegevens naar de tabel &#39;Aankopen&#39; schrijven {#step-2--writing-enriched-data-to-the--purchases--table}
 
-In deze stap wordt beschreven hoe u de geïmporteerde en verrijkte gegevens naar de tabel &quot;Aankopen&quot; schrijft. Om dit te doen, moeten we een **Gegevens bijwerken** activiteit.
+In deze stap wordt beschreven hoe u de geïmporteerde en verrijkte gegevens naar de tabel &quot;Aankopen&quot; schrijft. Hiervoor moeten we een **Gegevens bijwerken** activiteit.
 
 Een afstemming tussen de gegevens in de werktabel en de **Aankopen** de doelgerichte dimensie moet worden uitgevoerd voordat de gegevens in de **Aankopen** tabel is bijgewerkt.
 
@@ -127,30 +127,30 @@ Een afstemming tussen de gegevens in de werktabel en de **Aankopen** de doelgeri
 
 In de **Gegevens bijwerken** activiteit, is de volgende configuratie nodig:
 
-1. Selecteer **[!UICONTROL Insert or update]** in de **[!UICONTROL Operation type]** om te voorkomen dat telkens wanneer het bestand wordt verzameld, nieuwe records worden gemaakt.
-1. Selecteer **[!UICONTROL By directly using the targeting dimension]** waarde voor de **[!UICONTROL Record identification]** optie.
+1. Selecteer de **[!UICONTROL Insert or update]** in de **[!UICONTROL Operation type]** om te voorkomen dat telkens wanneer het bestand wordt verzameld, nieuwe records worden gemaakt.
+1. Selecteer de **[!UICONTROL By directly using the targeting dimension]** waarde voor de **[!UICONTROL Record identification]** -optie.
 1. Selecteer het schema &quot;Aankopen&quot; als een **[!UICONTROL Document type]**.
 1. Geef de lijst op met velden die moeten worden bijgewerkt. De **[!UICONTROL Destination]** in de kolom kunt u de velden van het schema &quot;Aankopen&quot; definiëren. De **[!UICONTROL Expression]** in de kolom kunt u de velden in de werktabel selecteren om een toewijzing uit te voeren.
-1. Klik op de knop **[!UICONTROL Generate an outbound transition]** optie.
+1. Klik op de knop **[!UICONTROL Generate an outbound transition]** -optie.
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Stap 3: &#39;Contactgegevens&#39; vergroten {#step-3--enriching--contact--data-}
+## Stap 3: Verrijken van contactgegevens {#step-3--enriching--contact--data-}
 
-Het schema &quot;Contacten&quot; is fysiek gekoppeld aan het schema &quot;Aankopen&quot;. Dit betekent dat u een andere optie van de optie &quot;Verrijking&quot;kunt gebruiken: gegevens toevoegen die zijn gekoppeld aan de filterdimensie.
+Het schema &quot;Contacten&quot; is fysiek gekoppeld aan het schema &quot;Aankopen&quot;. Dit betekent dat u een andere optie van de optie &quot;Verrijking&quot;kunt gebruiken: het toevoegen van gegevens verbonden aan de het filtreren afmeting.
 
 Het doel van deze tweede verrijking is een aggregaat te maken op het aankoopschema om het totale bedrag aan aankopen voor elke geïdentificeerde contactpersoon te berekenen.
 
 1. Voeg een **query** type activiteit die u allen laat terugkrijgen **Contactpersonen** opgeslagen.
 1. Een **Verrijking** Selecteer vervolgens de hoofdset die het resultaat is van de vorige query.
 1. Klik op Toevoegen **[!UICONTROL Data]**.
-1. Klik op de knop **[!UICONTROL Data linked to the targeting dimension]** optie.
+1. Klik op de knop **[!UICONTROL Data linked to the targeting dimension]** -optie.
 1. Klik op de knop **[!UICONTROL Data linked to the filtering dimension]** in de **[!UICONTROL Select fields to add]** venster.
-1. Selecteer **[!UICONTROL Purchases]** knooppunt en klik vervolgens op **[!UICONTROL Next]**.
+1. Selecteer de **[!UICONTROL Purchases]** knoop dan klik **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
-1. Wijzig de **[!UICONTROL Collected data]** veld door de **[!UICONTROL Aggregates]** optie.
+1. Wijzig de **[!UICONTROL Collected data]** veld door de **[!UICONTROL Aggregates]** -optie.
 
    ![](assets/uc2_enrich_enrich10.png)
 
@@ -159,7 +159,7 @@ Het doel van deze tweede verrijking is een aggregaat te maken op het aankoopsche
 
    ![](assets/uc2_enrich_enrich6.png)
 
-Voor het opstellen van de overzichtslijst moet u velden toevoegen uit de velden Aankopen en uit de eerste verrijking: het veld &quot;ZipCode Reference&quot;.
+Als u de overzichtslijst wilt voorbereiden, moet u velden toevoegen uit de velden Aankopen en uit de eerste verrijking: het veld ZipCode Reference.
 
 1. Klik op de knop **[!UICONTROL Edit additional data...]** koppeling in de verrijkingsactiviteit.
 1. Voeg de velden Winkelnaam en Aankopen / Postcodeverwijzing toe.
@@ -171,12 +171,12 @@ Voor het opstellen van de overzichtslijst moet u velden toevoegen uit de velden 
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Stap 4: Een samenvattingslijst maken en toevoegen {#step-4--creating-and-adding-to-a-summary-list}
+## Stap 4: Een overzichtslijst maken en toevoegen {#step-4--creating-and-adding-to-a-summary-list}
 
 De laatste stap bestaat uit het schrijven van alle verrijkte gegevens naar een lijst.
 
 1. Voeg een **Lijstupdate** activiteit aan de werkstroom. Deze activiteit moet verband houden met de uitgaande overgang van de tweede verrijkingsactiviteit.
-1. Selecteer **[!UICONTROL Create the list if necessary (Calculated name)]** optie.
+1. Selecteer de **[!UICONTROL Create the list if necessary (Calculated name)]** -optie.
 1. Selecteer een waarde voor de berekende naam. Het label dat voor de lijst wordt gekozen, is de huidige datum: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
 
 Als de workflow eenmaal is uitgevoerd, bevat de lijst:

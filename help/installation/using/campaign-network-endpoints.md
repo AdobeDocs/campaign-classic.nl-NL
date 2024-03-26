@@ -8,7 +8,7 @@ exl-id: 027ed2b6-365f-434f-9a18-2140512168e9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '55'
-ht-degree: 21%
+ht-degree: 30%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 21%
 
 
 
-Hier volgen de verschillende eindpunten die worden gebruikt in Campaign Classic.
+Hier zijn de verschillende eindpunten die in Campaign Classic worden gebruikt.
 
 | Context | URL |
 |--- |--- |
-| Eindpunten browser | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campagne-instantie)<br>`https://adobeid-na1.services.adobe.com` (aanmelding bij Adobe) |
+| Eindpunten browser | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campagne-instantie)<br>`https://adobeid-na1.services.adobe.com` (Aanmelden bij Adobe) |
 | Inbox rendering (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | Branding URL, spiegelpagina&#39;s, tekstspatiëring, fileref (implementatietovenaar) | Controleer de URL&#39;s die voor u zijn geconfigureerd. |

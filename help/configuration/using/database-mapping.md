@@ -9,7 +9,7 @@ exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -175,5 +175,5 @@ Klik op de volgende koppelingen voor meer informatie:
 * [Aan de slag met schema&#39;s](about-schema-reference.md)
 * [Schemastructuur](schema-structure.md)
 * [Sleutelbeheer](database-keys.md)
-* [Koppelingsbeheer](database-links.md)
+* [Beheer van koppeling](database-links.md)
 * [Campaign datamodel](about-data-model.md)

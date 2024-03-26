@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 4%
+source-wordcount: '2292'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Dit verslag bevat informatie over de leveringsproductie van het gehele platform 
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: een weergave van 1 uur, een weergave van 3 uur, een weergave van 24 uur, enzovoort. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: een weergave van 1 uur, een weergave van 3 uur, een weergave van 24 uur, enzovoort. Klikken **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: een w
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie met recentste moet worden bevorderd [Gouden standaard](../../rn/using/gold-standard.md) of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Merk op dat uw instantie met recentste moet worden bevorderd [Gouden standaard](../../rn/using/gold-standard.md) of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Gebruikersactiviteiten {#user-activities}
 
@@ -126,7 +126,7 @@ U kunt elke regel van de waardetabel openen door op de knop [+] symbool. Voor el
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/ac-cubes.md) voor meer informatie. De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg voor meer informatie hierover [deze sectie](../../reporting/using/ac-cubes.md). De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot een specifieke klasse behoren.
 
 ## Browsers {#browsers}
 

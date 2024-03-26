@@ -11,7 +11,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Er zijn twee soorten exploitanten die Interactie gebruiken: aanbiedingsmanagers 
 * **[!UICONTROL Offer manager]** : maakt en onderhoudt aanbiedingen. Als aanbiedingen worden gebruikt in de workflow, moet de operator zich in de **[!UICONTROL Administrator]** of **[!UICONTROL Offer managers]** groep met operatoren om de workflow uit te voeren.
 * **[!UICONTROL Delivery manager]** : keurt en gebruikt voorstellen goed
 
-De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg [deze sectie](../../platform/using/access-management.md) voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
+De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg voor meer informatie hierover [deze sectie](../../platform/using/access-management.md). De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
 
 ## Aanbiedingsmanager {#offer-manager}
 
@@ -109,7 +109,7 @@ De aan de leveringsmanagers toegekende rechten stellen hen in staat de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Typologische regels<br /> </td> 
+   <td> Typologieregels<br /> </td> 
    <td> Lezen/Schrijven<br /> </td> 
    <td> Lezen<br /> </td> 
   </tr> 
@@ -169,7 +169,7 @@ De aan de leveringsmanagers toegekende rechten stellen hen in staat de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Typologische regels<br /> </td> 
+   <td> Typologieregels<br /> </td> 
    <td> </td> 
    <td> Lezen<br /> </td> 
   </tr> 

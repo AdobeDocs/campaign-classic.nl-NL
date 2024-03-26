@@ -2,13 +2,13 @@
 product: campaign
 title: Incrementele query
 description: Meer informatie over de activiteit van de Incrementele queryworkflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ De vraag wordt bepaald op de zelfde manier zoals voor standaardvragen, maar zijn
 
 **Verwante onderwerpen:**
 
-* [Hoofdlettergebruik: Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](quarterly-list-update.md)
+* [Hoofdlettergebruik: driemaandelijkse lijst bijwerken met een incrementele query](quarterly-list-update.md)
 * [Een query maken](query.md#creating-a-query)
 
 >[!CAUTION]
@@ -33,7 +33,7 @@ De vraag wordt bepaald op de zelfde manier zoals voor standaardvragen, maar zijn
 
 Dit doet u als volgt:
 
-1. In de **[!UICONTROL Scheduling & History]** selecteert u de **[!UICONTROL Schedule execution]** optie. De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Als de optie echter is uitgeschakeld, wordt de query direct uitgevoerd **en in één keer**.
+1. In de **[!UICONTROL Scheduling & History]** selecteert u de **[!UICONTROL Schedule execution]** -optie. De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Als de optie echter is uitgeschakeld, wordt de query direct uitgevoerd **en in één keer**.
 1. Klik op de knop **[!UICONTROL Change]**.
 
    In de **[!UICONTROL Schedule editing wizard]** kunt u het type frequentie, de terugkerende gebeurtenis en de geldigheidsperiode van de gebeurtenis configureren.
@@ -50,15 +50,15 @@ Dit doet u als volgt:
 
    * **[!UICONTROL History in days]**
 
-      Reeds beoogde ontvangers kunnen worden geregistreerd gedurende een maximumaantal dagen vanaf de dag waarop zij als doelgroep zijn aangemeld. Als deze waarde nul is, worden de ontvangers nooit gezuiverd van het logboek.
+     Reeds beoogde ontvangers kunnen worden geregistreerd gedurende een maximumaantal dagen vanaf de dag waarop zij als doelgroep zijn aangemeld. Als deze waarde nul is, worden de ontvangers nooit gezuiverd van het logboek.
 
    * **[!UICONTROL Keep history when starting]**
 
-      Met deze optie kunt u het logbestand niet leegmaken wanneer de activiteit is ingeschakeld.
+     Met deze optie kunt u het logbestand niet leegmaken wanneer de activiteit is ingeschakeld.
 
    * **[!UICONTROL SQL table name]**
 
-      Met deze parameter kunt u de standaard SQL-tabel met de historiegegevens overladen.
+     Met deze parameter kunt u de standaard SQL-tabel met de historiegegevens overladen.
 
 ## Uitvoerparameters {#output-parameters}
 

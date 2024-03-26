@@ -10,7 +10,7 @@ exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 7%
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ De belangrijkste stappen om SMS te verzenden zijn als volgt:
 * [Het SMS-kanaal configureren](sms-set-up.md)
 * [Een sms-levering maken](sms-create.md)
 * [De doelgroep definiëren](sms-create.md#selecting-the-target-population)
-* [Definieer de content van de sms](sms-create.md#defining-the-sms-content)
+* [De SMS-inhoud definiëren](sms-create.md#defining-the-sms-content)
 * [SMS verzenden, controleren en volgen](sms-send.md)
 * [Problemen oplossen](troubleshooting-sms.md)
 

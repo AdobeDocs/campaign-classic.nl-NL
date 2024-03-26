@@ -3,7 +3,7 @@ product: campaign
 title: Aanbiedingssjablonen beheren
 description: Aanbiedingssjablonen beheren
 feature: Interaction, Offers, Templates
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 

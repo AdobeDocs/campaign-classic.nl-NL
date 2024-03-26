@@ -2,15 +2,15 @@
 product: campaign
 title: Operatorgroepen maken en beheren
 description: Leer hoe u toegang verleent aan groepen operatoren
-badge: label="v7" type="Informatief" tooltip="Alleen van toepassing op Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-Operatorgroepen worden gecreëerd via de **[!UICONTROL Administration > Access management > Operator groups]** knooppunt in de structuur.
+Operatorgroepen worden gecreëerd via de **[!UICONTROL Administration > Access management > Operator groups]** knooppunt in de boomstructuur.
 
 ## Nieuwe operatorgroep maken {#creating-a-new-operator-group}
 
@@ -50,25 +50,26 @@ De standaardgroepen met operatoren zijn:
 
    Deze groep bevat het volgende benoemde recht:
 
-   * **[!UICONTROL ADMINISTRATION]**: het recht om objecten zoals workflow, levering, scripts, enz. uit te voeren, te maken, te bewerken/te verwijderen.
+   * **[!UICONTROL ADMINISTRATION]**: recht om objecten zoals workflow, levering, scripts, enz. uit te voeren, te maken, te bewerken/te verwijderen.
 
 1. **[!UICONTROL Delivery operators]**
 
-   De exploitanten in deze groep zijn verantwoordelijk voor het beheer van de leveringen: zij verlenen toegang tot de belangrijkste middelen die voor het creëren van en het voorbereiden van levering worden vereist (campagnetypologieën, leveringsafbeeldingen, standaardmalplaatjes, verpersoonlijkingsblokken, enz.).
+   De operatoren in deze groep zijn verantwoordelijk voor het beheer van de leveringen: zij bieden toegang tot de belangrijkste bronnen die nodig zijn voor het maken en voorbereiden van de leveringen (campagneretypologieën, leveringstoewijzingen, standaardsjablonen, aanpassingsblokken, enz.).
 
    Deze groep bevat de volgende benoemde rechten:
 
-   * **[!UICONTROL PREPARE DELIVERIES]**: het recht om de leveringsanalyse te maken, te bewerken en te starten;
-   * **[!UICONTROL START DELIVERIES]**: het recht om eerder geanalyseerde leveringen goed te keuren.
+   * **[!UICONTROL PREPARE DELIVERIES]**: recht om de leveringsanalyse te maken, te bewerken en te starten,
+   * **[!UICONTROL START DELIVERIES]**: recht om eerder geanalyseerde leveringen goed te keuren.
 
 1. **[!UICONTROL Campaign managers]**
 
-   De exploitanten in deze groep kunnen marketingcampagnes beheren: hiermee hebt u toegang tot de objecten die aan campagnes zijn gekoppeld (plannen, programma&#39;s, workflows, budgetten, enz.) in het kader van **[!UICONTROL Campaign]** (optionele Adobe Campaign-module).
+   De exploitanten in deze groep kunnen marketing campagnes beheren: het laat u tot de voorwerpen toegang hebben verbonden aan campagnes (plannen, programma&#39;s, werkschema&#39;s, begrotingen, etc.) in het kader van **[!UICONTROL Campaign]** (optionele Adobe Campaign-module).
 
    Deze groep bevat de volgende benoemde rechten:
 
-   * **[!UICONTROL INSERT FOLDERS]**: het recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen);
-   * **[!UICONTROL WORKFLOW]**: recht om werkstromen te gebruiken.
+   * **[!UICONTROL INSERT FOLDERS]**: recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen),
+   * **[!UICONTROL WORKFLOW]**: recht om workflows te gebruiken.
+
    >[!NOTE]
    >
    >Met deze groep kunnen operatoren geen leveringen starten.
@@ -98,5 +99,5 @@ De standaardgroepen met operatoren zijn:
    De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Raadpleeg voor meer informatie hierover [page](../../interaction/using/operator-profiles.md).
 Deze groep bevat de volgende benoemde rechten:
 
-   * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen).
-   * **[!UICONTROL EDIT FOLDERS]**: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
+   * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
+   * **[!UICONTROL EDIT FOLDERS]**: Recht om mapeigenschappen zoals interne naam, label, gekoppelde afbeelding, volgorde van submappen, enz. te wijzigen.

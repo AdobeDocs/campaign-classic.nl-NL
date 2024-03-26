@@ -352,4 +352,4 @@ De volgende informatie wordt dan getoond:
 
 De Adobe Campaign-server definieert een technische aanmeldingsnaam **internal** dat heeft alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
-Meer informatie in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
+Lees meer in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).

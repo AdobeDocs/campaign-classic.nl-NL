@@ -2,14 +2,14 @@
 product: campaign
 title: Leveringssjablonen gebruiken
 description: Leveringssjablonen gebruiken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Delivery Templates
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 1%
+source-wordcount: '593'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,9 @@ Meer informatie over leveringssjablonen vindt u in [deze sectie](creating-a-deli
 
 A [leveringssjabloon](creating-a-delivery-template.md) kunt u een reeks technische en functionele eigenschappen definiëren die aan uw behoeften voldoen en die opnieuw kunnen worden gebruikt voor toekomstige leveringen. U kunt dan tijd besparen en leveringen standaardiseren wanneer dat nodig is.
 
-Als u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein per merk te hebben. Een bank kan bijvoorbeeld verschillende subdomeinen hebben die overeenkomen met elk van haar regionale agentschappen. Als een bank eigenaar is van het domein bluebank.com, kunnen de subdomeinen @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, enz. zijn. Als u één leveringssjabloon per subdomein hebt, kunt u altijd de juiste vooraf geconfigureerde parameters voor elk merk gebruiken. Hierdoor worden fouten voorkomen en bespaart u tijd.
+Wanneer u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein per merk te hebben. Een bank kan bijvoorbeeld verschillende subdomeinen hebben die overeenkomen met elk van haar regionale agentschappen. Als een bank eigenaar is van het bluebank.com-domein, kunnen de subdomeinen @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com enzovoort zijn. Als u één leveringssjabloon per subdomein hebt, kunt u altijd de juiste vooraf geconfigureerde parameters voor elk merk gebruiken. Hierdoor worden fouten voorkomen en bespaart u tijd.
 
-**Tip**: Om configuratiefouten te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen veranderen eerder dan een nieuw malplaatje tot stand te brengen.
+**Tip**: Om configuratiefouten te voorkomen, raden we u aan een native sjabloon te dupliceren en de eigenschappen ervan te wijzigen in plaats van een nieuwe sjabloon te maken.
 
 ## Adressen configureren
 
@@ -47,7 +47,7 @@ Voer de onderstaande stappen uit om adressen in de Campagne-interface te configu
 
    ![](assets/d_best_practices_email_header.png)
 
-1. In de **[!UICONTROL Sender address]** , zorgt u ervoor dat het adresdomein hetzelfde is als het subdomein dat u aan Adobe hebt gedelegeerd. U kunt het deel vóór &#39;@&#39; maar niet het domeinadres wijzigen.
+1. In de **[!UICONTROL Sender address]** , zorgt u ervoor dat het adresdomein hetzelfde is als het subdomein dat u aan de Adobe hebt gedelegeerd. U kunt het deel vóór &#39;@&#39; maar niet het domeinadres wijzigen.
 
 1. In de **[!UICONTROL From]** gebruiken, een naam die gemakkelijk door de ontvangers, zoals de naam van uw merk, kan worden geïdentificeerd om het openingstarief van uw leveringen te verhogen. Om de ervaring van de ontvanger verder te verbeteren, kunt u de naam van een persoon toevoegen, bijvoorbeeld &quot;Emma van Megastore&quot;.
 

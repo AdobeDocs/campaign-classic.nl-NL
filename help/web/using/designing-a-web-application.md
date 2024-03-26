@@ -2,13 +2,13 @@
 product: campaign
 title: Een webapplicatie ontwerpen
 description: Een webapplicatie ontwerpen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '289'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ U kunt grafieken in de toepassingen van het Web omvatten. Hiervoor selecteert u 
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-U kunt ook de **[!UICONTROL Add a chart]** -menu.
+U kunt ook de optie **[!UICONTROL Add a chart]** -menu.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -49,7 +49,7 @@ De interface van Adobe Campaign gebruikt vele toepassingen van het Web om, tot o
 
 Deze worden in de interface weergegeven in de vorm van dashboards met slechts één pagina.
 
-De uit-van-de-doos toepassingen van het Web worden opgeslagen in **[!UICONTROL Administration > Configuration > Web applications]** knooppunt.
+De toepassingen van het out-of-box Web worden opgeslagen in **[!UICONTROL Administration > Configuration > Web applications]** knooppunt.
 
 ## Formuliertype webtoepassingen bewerken {#edit-forms-type-web-applications}
 
@@ -57,10 +57,10 @@ De toepassingen van het formulierWeb voor een extranet bewerken worden gekenmerk
 
 * Een voorlaadvenster
 
-   In de meeste gevallen moeten de gegevens die worden weergegeven, vooraf worden geladen. Omdat de gebruikers die tot deze vormen toegang hebben (via een toegangscontrole) worden geïdentificeerd, wordt het vooraf laden niet noodzakelijk gecodeerd.
+  In de meeste gevallen moeten de gegevens die worden weergegeven, vooraf worden geladen. Omdat de gebruikers die tot deze vormen toegang hebben (via een toegangscontrole) worden geïdentificeerd, wordt het vooraf laden niet noodzakelijk gecodeerd.
 
-* Een opslagvak
+* Een vak voor opslaan
 * Pagina&#39;s toevoegen
 
-   Terwijl de &quot;overzicht&quot;-typeToepassingen van het Web allen één enkele pagina hebben, geef vormen een opeenvolging van pagina&#39;s uit die op specifieke criteria (tests, selecties, profiel van verbonden exploitant, enz.) worden gebaseerd.
+  Terwijl de &quot;overzicht&quot;-typeToepassingen van het Web allen één enkele pagina hebben, geef vormen een opeenvolging van pagina&#39;s uit die op specifieke criteria (tests, selecties, profiel van verbonden exploitant, enz.) worden gebaseerd.
 

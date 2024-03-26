@@ -13,7 +13,7 @@ ht-degree: 8%
 ---
 
 
-# Integraties met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
+# Integratie met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
 
 
 

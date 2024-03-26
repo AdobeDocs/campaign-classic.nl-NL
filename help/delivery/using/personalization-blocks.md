@@ -9,8 +9,8 @@ role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 2%
+source-wordcount: '873'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Verpersoonlijkingsblokken invoegen](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Deze functie ontdekken [in video](#personalization-blocks-video)
 
 Personaliseringsblokken zijn toegankelijk via de **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verschillende blokken zijn standaard beschikbaar (zie [Buiten-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 

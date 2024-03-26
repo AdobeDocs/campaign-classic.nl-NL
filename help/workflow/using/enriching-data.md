@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Gegevens verrijken
+title: Gegevens vergroten
 description: Meer informatie over de activiteit van de verrijkingsworkflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '759'
 ht-degree: 1%
 
 ---
 
-# Gegevens verrijken{#enriching-data}
+# Gegevens vergroten{#enriching-data}
 
 
 
@@ -47,7 +47,7 @@ Voer de volgende stappen uit om de workflow te maken:
 1. De **[!UICONTROL Split]** type activity stelt ons in staat ontvangende subsets te maken op basis van scores .
 1. Voor elke subset geldt een **[!UICONTROL Delivery]** tekstactiviteit wordt toegevoegd.
 
-## Stap 1: Doelstelling {#step-1--targeting}
+## Stap 1: Doel {#step-1--targeting}
 
 De eerste vraag laat ons toe om ontvangers te richten die aan het gegevensbestand binnen de laatste zes maanden werden toegevoegd.
 
@@ -61,13 +61,13 @@ An **[!UICONTROL Intersection]** typeactiviteit wordt dan toegevoegd aan de doel
 
 ## Stap 2: Verrijking {#step-2--enrichment}
 
-In dit voorbeeld willen we leveringen personaliseren volgens de **[!UICONTROL Score]** veld opgeslagen in **[!UICONTROL Competition results]** tabel. Deze lijst heeft een 1-n typeverhouding met de lijst van ontvangers. De **[!UICONTROL Enrichment]** de activiteit laat ons toe om gegevens van een lijst toe te voegen verbonden aan de het filtreren dimensie aan de het werklijst van het werkschema.
+In dit voorbeeld willen we leveringen personaliseren op basis van de **[!UICONTROL Score]** veld opgeslagen in **[!UICONTROL Competition results]** tabel. Deze lijst heeft een 1-n typeverhouding met de lijst van ontvangers. De **[!UICONTROL Enrichment]** de activiteit laat ons toe om gegevens van een lijst toe te voegen verbonden aan de het filtreren dimensie aan de het werklijst van het werkschema.
 
-1. Selecteer in het bewerkingsscherm van de verrijkingsactiviteit de optie **[!UICONTROL Add data]** vervolgens **[!UICONTROL Data linked to the filtering dimension]** en klik op **[!UICONTROL Next]**.
+1. Selecteer in het bewerkingsscherm van de verrijkingsactiviteit **[!UICONTROL Add data]** vervolgens **[!UICONTROL Data linked to the filtering dimension]** en klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_6.png)
 
-1. Selecteer vervolgens de **[!UICONTROL Data linked to the filtering dimension]** selecteert u de optie **[!UICONTROL Competition results]** tabel en klik op **[!UICONTROL Next]**.
+1. Selecteer vervolgens de optie **[!UICONTROL Data linked to the filtering dimension]** selecteert u de optie **[!UICONTROL Competition results]** tabel en klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
@@ -79,7 +79,7 @@ In dit voorbeeld willen we leveringen personaliseren volgens de **[!UICONTROL Sc
 
    ![](assets/uc1_enrich_9.png)
 
-1. Ga naar de **[!UICONTROL Sort]** en klik op de knop **[!UICONTROL Add]** selecteert u de **[!UICONTROL Score]** en schakel het selectievakje in **[!UICONTROL descending]** kolom voor het sorteren van items van het dialoogvenster **[!UICONTROL Score]** velden in aflopende volgorde. Voor elke ontvanger voegt de verrijkingsactiviteit een regel toe die overeenkomt met de hoogste score voor de laatste game. Klik op **[!UICONTROL Next]**.
+1. Ga naar de **[!UICONTROL Sort]** en klik op de knop **[!UICONTROL Add]** selecteert u de **[!UICONTROL Score]** en schakel het selectievakje in **[!UICONTROL descending]** kolom voor het sorteren van items van de **[!UICONTROL Score]** velden in aflopende volgorde. Voor elke ontvanger voegt de verrijkingsactiviteit een regel toe die overeenkomt met de hoogste score voor de laatste game. Klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
@@ -95,7 +95,7 @@ Het gekoppelde schema is:
 
 ![](assets/uc1_enrich_15.png)
 
-Verleng deze bewerking bij de uitgaande overgang van de verrijkingsactiviteit. We kunnen zien dat de gegevens met betrekking tot de scores van de ontvangers zijn toegevoegd. De hoogste score van elke ontvanger is hersteld.
+Verleng deze bewerking bij de uitgaande overgang van de verrijkingsactiviteit. We kunnen zien dat de gegevens met betrekking tot de scores van de ontvangers zijn toegevoegd. De hoogste score van elke ontvanger is teruggekregen.
 
 ![](assets/uc1_enrich_12.png)
 
@@ -105,7 +105,7 @@ Het overeenkomende schema is ook verrijkt.
 
 ## Stap 3: Splitsen en leveren {#step-3--split-and-delivery}
 
-Als u de ontvangers wilt sorteren op basis van hun scores, voert u een **[!UICONTROL Split]** activiteit wordt toegevoegd na de verrijking.
+Als u de ontvangers wilt sorteren op hun scores, voert u een **[!UICONTROL Split]** activiteit wordt toegevoegd na de verrijking.
 
 ![](assets/uc1_enrich_18.png)
 

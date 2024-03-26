@@ -2,13 +2,13 @@
 product: campaign
 title: Campaign
 description: Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Campagne** module standaard. Voor meer informatie over deze module, verwijs naar dit [sectie](../../campaign/using/designing-marketing-campaigns.md).
+De hieronder beschreven workflows worden geïnstalleerd met de **Campagne** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Campagne** modu
    <td> Deze workflow start de berekening van kosten en kostenposten voor de begrotingen, plannen, programma's, campagnes, leveringen en taken.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Voorraad: Orders en waarschuwingen</span> <br /> </td> 
+   <td> <span class="uicontrol">Voorraad: bestellingen en waarschuwingen</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
    <td> Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen.<br /> </td> 
   </tr> 
@@ -52,7 +52,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Campagne** modu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Banen voor dienstverleners</span> <br /> </td> 
-   <td> <span class="uicontrol">providerbeheer</span> <br /> </td> 
+   <td> <span class="uicontrol">providerMgt</span> <br /> </td> 
    <td> Dit werkschema begint de leverancier (e-mail aan de router en post-verwerking) te verwerken zodra de leveringen zijn goedgekeurd. <br /> </td> 
   </tr> 
  </tbody> 

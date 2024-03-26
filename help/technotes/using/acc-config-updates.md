@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 10%
+source-wordcount: '1110'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 Infrastructuur en instellingen moeten regelmatig worden bijgewerkt met de nieuwste builds en productcorrecties. Deze fixes zijn noodzakelijk om continuïteit van de dienst en veiligheid te verzekeren. Daarnaast zijn upgrades vereist om deze uit te lijnen met wijzigingen van derden.
 
-Als **Gehoste of Managed Services-klant**, stelt Adobe u regelmatig op de hoogte van het maken van upgrades. U moet een upgrade uitvoeren overeenkomstig de aanbevelingen om naleving te garanderen.
+Als **Gehoste of Managed Services-klant**, zal de Adobe u van bouwstijlverbeteringen op regelmatige intervallen op de hoogte brengen. U moet een upgrade uitvoeren overeenkomstig de aanbevelingen om naleving te garanderen.
 
 Als **Op locatie of hybride klant** dient u uw implementatie regelmatig bij te werken in overeenstemming met de meest recente versies van builds.
 
@@ -52,18 +52,18 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worden vermeld.
 
-* Als hybride klant, zal Adobe u van de geplande verbeteringsdata voor uw midsourcing instanties op de hoogte brengen. Adobe raadt u ten zeerste aan om ook een upgrade uit te voeren voor uw marketingexemplaar.
+* Als hybride klant, zal de Adobe u van de geplande verbeteringsdata voor uw midsourcing instanties op de hoogte brengen. Adobe raadt u ten zeerste aan ook uw marketingexemplaar te upgraden.
 
-  De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade aan voor alle instanties om beveiligingsproblemen te verhelpen
+  De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade van alle instanties sterk aan om beveiligingskwetsbaarheden te verhelpen
 
 * Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar de nieuwste build.
 
 >[!CAUTION]
 >
->Als u niet binnen de aanbevolen periode kunt upgraden **u dient contact op te nemen met het Adobe Customer Care-team om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw instanties**.
+>Als u niet binnen de aanbevolen periode kunt upgraden **u dient contact op te nemen met het klantenzorgteam van de Adobe om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw instanties**.
 >
 
-## Campaign Classic Client Console-update  {#acc-cc-updates}
+## Update voor Campaign Classic-clientconsole  {#acc-cc-updates}
 
 De **nu beschikbaar** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Consoleupgrade** is verplicht.
 
@@ -74,13 +74,13 @@ De **nu beschikbaar** consoleversies hieronder zouden moeten worden geïnstallee
 
 ## Adobe Identity Management System (IMS)-update
 
-Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies van **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+De Dienst van de Identiteit van de Adobe (IMS) zal ophouden ondersteunend oude versies Internet Explorer van **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
 **Heeft dit gevolgen voor u?**
 
-Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md)via Adobe Identity Management Service (IMS) is een upgrade naar een van de onderstaande nieuwe versies verplicht:
+Als u verbinding maakt met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md)Via Adobe Identity Management Service (IMS) is een upgrade naar een van de onderstaande nieuwe versies verplicht:
 
 * Gold Standard 11. [Meer informatie](../../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../../rn/using/latest-release.md)
@@ -95,19 +95,19 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 **Hoe kan ik bijwerken?**
 
-Als gehoste klant werkt Adobe binnenkort samen met u om uw exemplaar(s) bij te werken naar de nieuwere versie.
+Als gehoste klant werkt Adobe samen met u om uw exemplaar(s) binnenkort te upgraden naar de nieuwere versie.
 
 Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies om te profiteren van de nieuwe clientconsole en een naadloze overgang te garanderen **vóór 30 juni 2021**.
 
 Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan deze versie worden bevorderd.
 
-* Meer informatie over toegang [Adobe-softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+* Meer informatie over toegang [Softwaredistributie Adoben](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 * [Meer informatie over het installeren van Campagne Client Console](../../installation/using/installing-the-client-console.md).
 
 ## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Verouderde verificatiemodus voor auteur met campagne [is met pensioen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md#step-optional) aan Adobe verstrekken.
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Verouderde verificatiemodus voor auteur met campagne [is met pensioen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van de Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md#step-optional) aan Adobe verstrekken.
 
 **Heeft dit gevolgen voor u?**
 
@@ -144,7 +144,7 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 **Hoe kan ik bijwerken?**
 
-Als gehoste klant, als u aan de nieuwe bouwstijl hebt bevorderd, heeft Adobe reeds uw instantie(s) aan op HTTP/2-Gebaseerde API bijgewerkt.
+Als gehoste klant, als u aan de nieuwe bouwstijl hebt bevorderd, heeft de Adobe reeds uw instantie(s) aan op HTTP/2-Gebaseerde API bijgewerkt.
 
 Als klant op locatie/hybride klant moet u de configuratie bijwerken.
 
@@ -170,5 +170,5 @@ Als klant op locatie/hybride klant moet u uw configuratie bijwerken om een naadl
 
 * [Upgrade uw omgeving](../../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
-* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Build Campaign Classic downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)

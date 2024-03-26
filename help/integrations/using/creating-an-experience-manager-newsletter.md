@@ -3,7 +3,7 @@ product: campaign
 title: Een nieuwsbrief voor Experience Managers maken
 description: Een nieuwsbrief voor Experience Managers maken
 feature: Experience Manager Integration
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
@@ -11,7 +11,7 @@ exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Deze integratie kan bijvoorbeeld worden gebruikt voor het maken van een nieuwsbr
 
 **Uit Adobe Experience Manager:**
 
-1. Klik in de AEM auteur op de knop **Adobe-ervaring** logo in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Sites]**.
+1. Klik in de AEM auteur op de knop **Ervaring met Adobe** logo in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 

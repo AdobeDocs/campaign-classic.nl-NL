@@ -2,12 +2,12 @@
 product: campaign
 title: SQL Data Management
 description: Meer informatie over de workflowactiviteit van SQL Data Management
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 4%
 
 ---
@@ -24,11 +24,11 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 
 * De activiteit is beschikbaar voor verre slechts gegevensbronnen. De **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd. [Meer informatie](../../installation/using/about-fda.md).
 
-   Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+  Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campagne v7-documentatie](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+  ![](assets/do-not-localize/v8.png)[Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden.
 * De exploitant die het werkschema uitvoert moet hebben **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd recht. [Meer informatie](../../platform/using/access-management-named-rights.md).
@@ -36,7 +36,7 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 ## De SQL-gegevensbeheeractiviteit configureren {#configuring-the-sql-data-management-activity}
 
 1. De activiteit opgeven **[!UICONTROL Label]**.
-1. Selecteer **[!UICONTROL External account]** om te gebruiken, dan selecteren **[!UICONTROL Outbound schema]** aan deze externe rekening gekoppeld.
+1. Selecteer de **[!UICONTROL External account]** om te gebruiken, dan selecteren **[!UICONTROL Outbound schema]** aan deze externe rekening gekoppeld.
 
    >[!CAUTION]
    >
@@ -48,7 +48,7 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
    >
    >Het is de verantwoordelijkheid van de SQL-scripteigenaar om ervoor te zorgen dat het SQL-script functioneel is en dat de referenties ervan (veldnamen, enz.) zijn in overeenstemming met het Uitgaande schema.
 
-   Als u een bestaande SQL-code wilt laden, selecteert u de optie **[!UICONTROL The SQL script is contained in an entity stored in the database]** optie. SQL-scripts moeten worden gemaakt en opgeslagen in het dialoogvenster **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** -menu.
+   Als u een bestaande SQL-code wilt laden, selecteert u de **[!UICONTROL The SQL script is contained in an entity stored in the database]** -optie. SQL-scripts moeten worden gemaakt en opgeslagen in de **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** -menu.
 
    Anders typt of kopieert u het SQL-script in het daarvoor bestemde gebied.
 
@@ -57,16 +57,16 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
    Met deze activiteit kunt u de volgende variabelen in het script gebruiken:
 
    * **activity.tableName**: SQL-naam van de uitgaande werktabel.
-   * **task.innerTransitionByName(&quot;name&quot;).tableName**: SQL naam van de het werklijst die door de inkomende overgang wordt gedragen te gebruiken (de overgang wordt geïdentificeerd door zijn naam).
+   * **task.innerTransitionByName(&quot;name&quot;).tableName**: SQL-naam van de werktabel die wordt gedragen door de inkomende overgang die moet worden gebruikt (de overgang wordt aangeduid met de naam ervan).
 
-      >[!NOTE]
-      >
-      >De waarde (&#39;name&#39;) komt overeen met de waarde **[!UICONTROL Name]** van de overgangseigenschappen.
+     >[!NOTE]
+     >
+     >De waarde (&#39;name&#39;) komt overeen met de **[!UICONTROL Name]** van de overgangseigenschappen.
 
-1. Als het SQL-script al opdrachten bevat om een uitgaande werktabel te maken, schakelt u de optie **[!UICONTROL Automatically create work table]** optie. Anders wordt automatisch een werktabel gemaakt zodra de workflow wordt uitgevoerd.
+1. Als het SQL-script al opdrachten bevat om een uitgaande werktabel te maken, schakelt u de optie **[!UICONTROL Automatically create work table]** -optie. Anders wordt automatisch een werktabel gemaakt zodra de workflow wordt uitgevoerd.
 1. Klikken **[!UICONTROL Ok]** om de activiteitenconfiguratie te bevestigen.
 
-De activiteit wordt nu gevormd. Het is klaar om in het werkschema te worden uitgevoerd.
+De activiteit wordt nu gevormd. Het kan worden uitgevoerd in de workflow.
 
 >[!CAUTION]
 >

@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Dit artikel is alleen bedoeld als algemene voorbeeldgids. U moet contact opnemen met uw Adobe Campaign Customer Success Manager om de exacte grootte van uw implementatie te meten voordat u uw Campagne-project start. **Niet gebruiken** infrastructuur of hardware aanschaffen of implementeren totdat dit gebeurt.
+>Dit artikel is alleen beschikbaar als algemene voorbeeldgids. U moet contact opnemen met uw Adobe Campaign Customer Success Manager om de exacte grootte van uw implementatie te meten voordat u uw Campagne-project start. **Niet gebruiken** infrastructuur of hardware aanschaffen of implementeren totdat dit gebeurt.
 
-Dit document bevat algemene aanbevelingen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort inzet, waarnaar wordt verwezen als **hybride** of **midsourcing**, plaatst u de marketinginstantie en de marketingdatabase van Campagne onder uw controle en gebruikt u de services van Adobe Cloud Messaging om e-mails, SMS- of SMPP-berichten te verzenden en e-mail te verzamelen die is geopend, stuit en klik op volggegevens.
+Dit document bevat algemene aanbevelingen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort inzet, waarnaar wordt verwezen als **hybride** of **midsourcing**, plaatst de marketinginstantie en de marketingdatabase van Campagne onder uw controle en gebruikt u de services van Cloud Messaging van Adobe om e-mails, SMS- of SMPP-berichten te verzenden en e-mail te verzamelen, open te stuiteren en te klikken op trackinggegevens.
 
 De marketinginstantie is het deel van de Adobe Campaign-architectuur dat alle marketingactiviteiten stuurt en alle gegevens van de ontvanger en de analytische gegevens opslaat die door campagnes worden geretourneerd. De marketinginstantie is een set on-premise servers waarop Adobe Campaign-services worden uitgevoerd, en een relationele database.
 
 >[!CAUTION]
 >
->De informatie in dit document is niet van toepassing als u een volledig gehoste Adobe Campaign-instantie gebruikt (geïmplementeerd in Adobe-Cloud Services).
+>De informatie in dit document is niet van toepassing als u een volledig gehoste Adobe Campaign-instantie gebruikt (geïmplementeerd in Adobe Cloud Servicen).
 
 Softwarecompatibiliteit wordt nader beschreven in het gedeelte [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -60,19 +60,19 @@ De toepassingsservers in uw marketinginstantie vereisen voldoende CPU en geheuge
 
 Campagne-webtoepassingen kunnen ook worden geïmplementeerd op de App-servers voor marketinginstanties of op afzonderlijke webserversystemen. Omdat werklasten van webtoepassingen conflicteren met kritieke workflows en Campagnegebruikers, kunnen webtoepassingen en binnenkomende interacties worden geïmplementeerd op afzonderlijke servers om ervoor te zorgen dat de functionaliteit van de kerncampagne betrouwbaar werkt met goede prestaties.
 
-Voor veiligheid en beschikbaarheid, adviseert Adobe het scheiden van het verkeer van Internet van het verkeer dat door de bedrijfsgebruikers wordt geproduceerd. Om die reden, bevatten de diagrammen twee groepen servers: de server van het Web (Internet die Web1 en Web2 onder ogen ziet), en de servers van de App (bedrijfsprocessen App1 en App2).
+Voor veiligheid en beschikbaarheid, adviseert de Adobe scheidend het verkeer van Internet van het verkeer dat door de bedrijfsgebruikers wordt geproduceerd. Om die reden, bevatten de diagrammen twee groepen servers: de server van het Web (Internet die Web1 en Web2 onder ogen ziet), en de servers van de App (bedrijfsprocessen App1 en App2).
 
-Het is een wettelijke vereiste voor commerciële e-mailzenders om een functionele opt-out-webpagina te hebben. Adobe raadt u aan om voor failover-scenario&#39;s in elke groepsserver een redundante computer op te nemen. Dit geldt vooral als Adobe Campaign de pagina&#39;s voor niet-deelname host.
+Het is een wettelijke vereiste voor commerciële e-mailzenders om een functionele opt-out-webpagina te hebben. De Adobe adviseert hebbend overtollige machine in elke groepsserver voor failover scenario&#39;s. Dit geldt vooral als Adobe Campaign de pagina&#39;s voor niet-deelname host.
 
 ### Proxy&#39;s omkeren
 
-De architectuur van de Campagne dwingt hoge veiligheid af door SSL over HTTP (HTTPS) te gebruiken om tussen uw marketing instantie en het Overseinen van de Wolk van Adobe te communiceren. De veiligheid, de betrouwbaarheid, en de beschikbaarheid worden afgedwongen door omgekeerde volmachten in &quot;gedemilitariseerde streek&quot;(DMZ) subnet te gebruiken om de marketing instantieservers en het gegevensbestand te isoleren en te beveiligen.
+De architectuur van de Campagne dwingt hoge veiligheid af door SSL over HTTP (HTTPS) te gebruiken om tussen uw marketing instantie en het Overseinen van de Wolk van de Adobe te communiceren. De veiligheid, de betrouwbaarheid, en de beschikbaarheid worden afgedwongen door omgekeerde volmachten in &quot;gedemilitariseerde streek&quot;(DMZ) subnet te gebruiken om de marketing instantieservers en het gegevensbestand te isoleren en te beveiligen.
 
 ### Load balancer
 
 Het taakverdelingsmechanisme voor de servers App wordt opstelling in een actieve/passieve configuratie, met HTTPS geëindigd bij de volmacht. Het taakverdelingsmechanisme voor de servers van het Web wordt opstelling in een actieve/actieve configuratie, met HTTPS geëindigd bij de volmacht.
 
-Adobe biedt u de exclusieve lijst met URL-paden die u kunt afspelen op de Adobe Campaign-server in uw implementatieomgeving.
+De Adobe voorziet u van de exclusieve lijst van wegen URL die aan de server van Adobe Campaign in uw plaatsingsmilieu kunnen worden afgelost.
 
 ### Architectuur
 
@@ -124,7 +124,7 @@ Er wordt geschat dat de schijfruimte die nodig is voor de database voor het opsl
 >
 >In deze schatting zijn geen aanvullende klantgegevens opgenomen. Als u van plan bent om extra kolommen of lijsten van klantengegevens in het gegevensbestand van Adobe Campaign te herhalen, dan moet u de extra behoefte van de schijfruimte voor het schatten. Geüploade segmenten/lijsten vereisen ook meer opslag, afhankelijk van hun grootte, frequentie en retentieperiode.
 
-Houd er ook rekening mee dat vanwege het dagelijks verwerkte gegevensvolume de IOPS van de databaseserver van essentieel belang is. Bijvoorbeeld, op een piekdag, kunt u campagnes opstellen die in totaal 500.000 ontvangers richten. Om elke campagne uit te voeren, neemt Adobe Campaign 500.000 verslagen in een lijst op die ruwweg 12 miljoen verslagen (de lijst van het leveringslogboek) bevatten. Om acceptabele prestaties tijdens de campagnemplementatie te bieden, adviseert Adobe een minimum van 60.000 4-KB Willekeurige lees-schrijfIOPS voor dit scenario.
+Houd er ook rekening mee dat vanwege het dagelijks verwerkte gegevensvolume de IOPS van de databaseserver van essentieel belang is. Bijvoorbeeld, op een piekdag, kunt u campagnes opstellen die in totaal 500.000 ontvangers richten. Om elke campagne uit te voeren, neemt Adobe Campaign 500.000 verslagen in een lijst op die ruwweg 12 miljoen verslagen (de lijst van het leveringslogboek) bevatten. Om acceptabele prestaties tijdens de campagnemplementatie te bieden, adviseert de Adobe minimaal 60.000 4-KB Willekeurige lees-schrijfIOPS voor dit scenario.
 
 
 ## Scenario 2: grootschalige implementatie{#scenario-2}
@@ -139,7 +139,7 @@ Geraamd volume:
 | Email | 42 miljoen per maand |
 | Direct mail | 10 miljoen/maand |
 | Mobiele SMS | 1.000.000/maand |
-| Maximale dagelijkse e-mailvolume | 5,000,000 |
+| Maximale dagelijkse e-mailvolume | 5.000.000 |
 
 ### Web- en toepassingsservers
 
@@ -186,7 +186,7 @@ Deze plaatsing omvat ook de vraag van het Centrum van het Bericht, die van uw ei
 
 ### Web- en toepassingsservers
 
-In dit scenario raadt Adobe aan Adobe Campaign als volgt op vier computers te installeren:
+In dit scenario raadt Adobe aan Adobe Campaign op vier computers te installeren, zoals hieronder wordt beschreven:
 
 * Toepassingsservers
   **Twee systemen, 3GHz+ quad-core CPU, 8-GB RAM, RAID 1 of 10, 80-GB SSD**

@@ -1,13 +1,13 @@
 ---
 title: De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken
 description: Leer hoe u de samenvoegfunctionaliteit van de deduplicatieactiviteit gebruikt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 5%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -25,9 +25,9 @@ De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 22-07-2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 03-10-2020 | Bob |  | bob@mycompany.com | | 888-888-888 |
 
 Met de deduplicatieactiviteit **[!UICONTROL Merge]** Als lettertypen kunt u een set regels voor deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
@@ -36,7 +36,7 @@ Met de deduplicatieactiviteit **[!UICONTROL Merge]** Als lettertypen kunt u een 
 
 Om de samenvoegfunctionaliteit toe te laten, moet u eerst vormen **[!UICONTROL Deduplication]** activiteit. Ga als volgt te werk om dit te doen:
 
-1. Open de activiteit en klik op de knop **[Configuratie bewerken]** koppeling.
+1. Open de activiteit en klik vervolgens op de knop **[Configuratie bewerken]** koppeling.
 
 1. Selecteer het afstemmingsveld dat u wilt gebruiken voor de deduplicatie en klik op **[!UICONTROL Next]**. In dit voorbeeld willen we dedupliceren op basis van het e-mailveld.
 
@@ -57,7 +57,7 @@ Hier volgen de regels die we willen gebruiken om de gegevens samen te voegen tot
 * Behoud het oudste telefoonaantal,
 * Alle velden in een groep moeten een andere waarde hebben dan null om in aanmerking te komen voor de uiteindelijke record.
 
-Om deze regels te vormen, volg deze stappen:
+Voer de volgende stappen uit om deze regels te configureren:
 
 1. Open de **[!UICONTROL Merge]** en klikt u op de knop **[!UICONTROL Add]** knop.
 
@@ -93,15 +93,15 @@ Na het vormen van deze regels, worden de volgende gegevens ontvangen aan het ein
 
 | Wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 22-07-2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 03-10-2020 | Bob |  | bob@mycompany.com | | 888-888-888 |
 
 Het resultaat wordt samengevoegd van de drie verslagen volgens de eerder gevormde regels. Na vergelijking wordt geconcludeerd dat de meest recente naam en mobiele telefoon samen met het originele telefoonnummer worden gebruikt.
 
 | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |------------|-----------|-------|--------------|------|
-| Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
 
 >[!NOTE]
 >

@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Deze sectie zal u van een diepgaande analyse op het verbeteringsproces en de stappen voorzien om conflicten te identificeren en op te lossen.
 
-De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact te houden met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
+De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact te houden met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
 
 De volgende voorwaarden zijn vereist:
 
@@ -32,7 +32,7 @@ De volgende voorwaarden zijn vereist:
 
 Meer informatie vindt u in de volgende secties: [Adobe Campaign bijwerken](../../production/using/upgrading.md), [Migreren naar een nieuwe versie](../../migration/using/about-migration.md).
 
-Voor ontvangen en hybride instanties, moet u om de bouwstijlverbetering aan het team van de Technische Verrichtingen van Adobe verzoeken. Raadpleeg voor meer informatie de sectie Veelgestelde vragen onderaan op deze pagina. Raadpleeg ook de [Veelgestelde vragen over upgrades maken](../../platform/using/faq-build-upgrade.md).
+Voor ontvangen en hybride instanties, moet u om de bouwstijlverbetering aan het team van de Technische Verrichtingen van de Adobe verzoeken. Raadpleeg voor meer informatie de sectie Veelgestelde vragen onderaan op deze pagina. Raadpleeg ook de [Veelgestelde vragen over upgrades maken](../../platform/using/faq-build-upgrade.md).
 
 ## De upgrade voorbereiden
 
@@ -43,7 +43,7 @@ Zodra het systeem klaar is om te worden bevorderd, neemt een bouwstijlverbeterin
 
 Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
-* een architect van Adobe - om de gegevensbestandstructuren (uit-van-de-doosschema&#39;s en om het even welke extra schema&#39;s te begrijpen die zijn toegevoegd, campagneontwerpen, en om het even welke kritieke wegfunctionaliteit die in een specifieke orde moet worden begonnen en worden getest).
+* een architect van de Adobe - om de gegevensbestandstructuren (out-of-the-box schema&#39;s en om het even welke extra schema&#39;s te begrijpen die zijn toegevoegd, campagneontwerpen, en om het even welke kritieke wegfunctionaliteit die in een specifieke orde moet worden begonnen en worden getest).
 * een projectmanager - in het geval waar de bouwstijlverbetering vele verschillende instanties (productie, het opvoeren, het testen) en andere derdesservers en toepassingen (gegevensbestanden, de plaatsen van SFTP, overseinendienstverleners) impliceert, wordt het hebben van een projectmanager om alle het testen te coördineren beschouwd als beste praktijken.
 * een Adobe Campaign-beheerder - uw beheerder kent de configuratie van de server, inclusief maar niet beperkt tot: beveiliging, maplay-out, rapportage en import-\exportvereisten. Voer geen upgrade voor build uit zonder uw beheerder.
 * een Adobe Campaign-operator (marketinggebruiker) - een geslaagde upgrade is afhankelijk van het vermogen van de gebruiker om zijn dagelijkse taken met succes uit te voeren. Daarom moet u altijd ten minste een van uw dagelijkse operatoren opnemen in de tests van de bijgewerkte servers.
@@ -63,7 +63,7 @@ Hier zijn de belangrijkste punten op hoe te om een bouwstijlverbetering te plann
 
 Voor het upgradeproces voor build moeten de volgende personen worden betrokken:
 
-* Adobe architect: voor gehoste of hybride architecturen moet de architect coördineren met de Adobe Campaign Client Care.
+* Adobe architect: voor gehoste of hybride architecturen moet de architect coördineren met Adobe Campaign Client Care.
 
 * Projectmanager:
    * voor installaties op locatie: de interne projectleider van de klant leidt de upgrade en beheert de levenscyclustests.
@@ -110,7 +110,7 @@ De onderstaande procedures worden alleen uitgevoerd door **op locatie** klanten.
 
 Hieronder wordt beschreven hoe u een Adobe Campaign-omgeving dupliceert om een bronomgeving te herstellen naar een doelomgeving, wat resulteert in twee identieke werkomgevingen.
 
-Volg de onderstaande stappen om dit te doen:
+Hiervoor voert u de volgende stappen uit:
 
 1. Maak een kopie van de databases op alle instanties in de bronomgeving.
 
@@ -223,7 +223,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 Sommige configuraties vereisen specifieke extra taken om aan een nieuwe bouwstijl bij te werken.
 
-#### Transactionele berichten
+#### Transactieberichten
 
 Wanneer het Transactionele Overseinen (het Centrum van het Bericht) op uw instantie van de Campagne wordt toegelaten, moet u deze extra stappen uitvoeren om te bevorderen:
 
@@ -251,7 +251,7 @@ Wanneer het Transactionele Overseinen (het Centrum van het Bericht) op uw instan
 
 In de context van een omgeving voor midsourcing moet u de volgende aanvullende stappen uitvoeren om een upgrade uit te voeren:
 
-1. Contact [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronsserver te coördineren.
+1. Contact [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronsserver te coördineren.
 1. Valideer of de versie is bijgewerkt door een testkoppeling uit te voeren. Bijvoorbeeld:
 
    ```

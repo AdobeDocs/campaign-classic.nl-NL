@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '742'
+ht-degree: 2%
 
 ---
 
@@ -125,7 +125,7 @@ Azure synapse in Windows configureren:
 
 1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. Raadpleeg [deze pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) voor meer informatie.
 
-1. In Campaign Classic, kunt u dan uw vormen [!DNL Azure Synapse] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#azure-external).
+1. In Campaign Classic, kunt u uw [!DNL Azure Synapse] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#azure-external).
 
 1. Aangezien de Analytics van de Azure synapse door de haven van TCP 1433 meedeelt, moet u deze haven op de Firewall van de Verdediger van Vensters openen. Raadpleeg voor meer informatie hierover [Windows-documentatie](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
@@ -238,6 +238,6 @@ Als u uw [!DNL Azure Synapse] de externe account volgt de onderstaande stappen :
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | Verificatie | Type van authentificatie die door de schakelaar wordt gesteund. Huidige ondersteunde waarde: ActiveDirectoryMSI. </br>Raadpleeg voor meer informatie [SQL-document](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Voorbeeld van verbindingstekenreeksen n°8). |

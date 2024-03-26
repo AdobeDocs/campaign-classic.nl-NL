@@ -2,7 +2,7 @@
 product: campaign
 title: Lay-out van element
 description: Lay-out van element
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
@@ -33,7 +33,7 @@ De **[!UICONTROL General]** kunt u de titel van de pagina veranderen, evenals le
 
 De **[!UICONTROL Title]** In dit veld kunt u het label aanpassen in de koptekst van de rapportpagina. De titel van het venster kan via **[!UICONTROL Properties]** venster van het rapport. Raadpleeg voor meer informatie hierover [Een kop- en voettekst toevoegen](#adding-a-header-and-a-footer).
 
-De **[!UICONTROL Display settings]** Met opties kunt u de positie van het bijschrift van het besturingselement binnen een rapportpagina selecteren en het aantal kolommen op de pagina definiëren. Raadpleeg voor meer informatie over de paginalay-out de **Itemlay-out** deel van [deze sectie](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+De **[!UICONTROL Display settings]** Met opties kunt u de positie van het bijschrift van het besturingselement in een rapportpagina selecteren en het aantal kolommen op de pagina definiëren. Raadpleeg voor meer informatie over de paginalay-out de **Itemlay-out** deel van [deze sectie](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
 Selecteer de verschillende opties in het dialoogvenster **[!UICONTROL Browse]** sectie gebruiken om het bladeren van de ene rapportpagina naar een andere toe te staan. Als de **[!UICONTROL Disable next page]** of de **[!UICONTROL Disable previous page]** is geselecteerd, wordt de **[!UICONTROL Next]** en **[!UICONTROL Previous]** de knoppen verdwijnen uit de rapportpagina.
 

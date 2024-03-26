@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Als u een rapport wilt maken met deze opsomming, maakt u een kubus met de opdrac
 
 Maak vervolgens een rapport op basis van deze kubus om de waarden weer te geven.
 
-U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Maak bijvoorbeeld de **Adobe** en voeg de **adobe.com** alias en het rapport wordt automatisch bijgewerkt met de waarde van Adobe op het opsommingsniveau.
+U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Maak bijvoorbeeld de **Adobe** en voeg de **adobe.com** alias en het rapport wordt automatisch bijgewerkt met de waarde van de Adobe op het opsommingsniveau.
 
 ![](assets/nmx_add_alias.png)
 

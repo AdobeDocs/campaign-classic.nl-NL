@@ -11,7 +11,7 @@ exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> Neem als gehoste of hybride klant contact op met uw Adobe-medewerker om deze integratie te configureren. De onderstaande stappen zijn alleen van toepassing op on-premise klanten.
+> Neem als gehoste of hybride klant contact op met uw Adobe om deze integratie te configureren. De onderstaande stappen zijn alleen van toepassing op on-premise klanten.
 
 Deze integratie vereist:
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Een gedeelde asset invoegen
-description: Een gedeelde asset invoegen
+title: Gedeeld element invoegen
+description: Gedeeld element invoegen
 feature: Asset Sharing
 audience: integrations
 content-type: reference
@@ -10,11 +10,11 @@ exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 7%
+ht-degree: 1%
 
 ---
 
-# Een gedeelde asset invoegen{#inserting-a-shared-asset}
+# Gedeeld element invoegen{#inserting-a-shared-asset}
 
 Middelen die door Adobe Experience Cloud worden gedeeld, kunnen als volgt op uw e-mails en landingspagina&#39;s worden gebruikt:
 

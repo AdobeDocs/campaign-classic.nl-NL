@@ -2,13 +2,13 @@
 product: campaign
 title: Campagne - Salesforce CRM-connector
 description: Leer hoe u campagne en Salesforce met elkaar kunt verbinden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Op deze pagina leert u hoe u Campaign Classic kunt verbinden met **Salesforce**.
 
-Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
+Gegevenssynchronisatie wordt uitgevoerd via een toegewijde werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
 
 
 Met de externe account kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
@@ -46,7 +46,7 @@ Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [page](htt
 
    * **[!UICONTROL API version]**
 Selecteer de versie van de API.
-1. Stel de configuratietovenaar in werking om de beschikbare lijst van CRM te produceren: Met de configuratietovenaar kunt u tabellen verzamelen en het bijbehorende schema maken.
+1. Stel de configuratietovenaar in werking om de beschikbare lijst van CRM te produceren: de configuratietovenaar laat u lijsten verzamelen en het passende schema tot stand brengen.
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
@@ -70,10 +70,10 @@ Selecteer de versie van de API.
 
    >[!NOTE]
    >
-   >U kunt alle waarden van een opsomming van Adobe Campaign door die van CRM vervangen: Selecteer **[!UICONTROL Yes]** in de **[!UICONTROL Replace]** kolom.
+   >U kunt alle waarden van een Adobe Campaign-opsomming vervangen door die van de CRM: hiervoor selecteert u **[!UICONTROL Yes]** in de **[!UICONTROL Replace]** kolom.
 
 
-   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om te beginnen met het importeren van de lijst.
+   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om de lijst te importeren.
 
 1. Controleer de geïmporteerde waarden in het dialoogvenster **[!UICONTROL Administration > Platform > Enumerations]** -menu.
 

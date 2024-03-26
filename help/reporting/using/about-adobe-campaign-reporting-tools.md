@@ -3,17 +3,17 @@ product: campaign
 title: Over Adobe Campaign-rapportagegereedschappen
 description: Analyseer het succes van uw campagnes in geïntegreerde of aangepaste rapporten
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 16%
+source-wordcount: '347'
+ht-degree: 14%
 
 ---
 
-# Aan de slag met rapportages {#about-adobe-campaign-reporting-tools}
+# Aan de slag met rapportage {#about-adobe-campaign-reporting-tools}
 
 
 

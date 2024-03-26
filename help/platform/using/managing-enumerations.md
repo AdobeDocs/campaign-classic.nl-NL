@@ -59,7 +59,7 @@ In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ing
 De ingevoerde waarde is dan:
 
 * Toegevoegd aan de gespecificeerde lijstwaarden: in dit geval **[!UICONTROL Open]** moet worden geselecteerd,
-* of automatisch vervangen door de bijbehorende alias: In dit geval moet deze zaak dan worden gedefinieerd in het dialoogvenster **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
+* of wordt automatisch vervangen door de bijbehorende alias: In dit geval moet dit geval worden gedefinieerd in het **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
 * of wordt opgeslagen in de lijst met aliassen: er wordt later een alias aan toegewezen.
 
   >[!NOTE]

@@ -2,14 +2,14 @@
 product: campaign
 title: Statische elementen in een webformulier
 description: Statische elementen in een webformulier
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 3%
+source-wordcount: '1039'
+ht-degree: 1%
 
 ---
 
@@ -26,17 +26,17 @@ De volgende veldtypen zijn beschikbaar:
 * Waarde gebaseerd op eerder gegeven antwoorden (in de context van het formulier) of op de database.
 * Hypertext link, HTML, horizontale balk. Zie [HTML-inhoud invoegen](#inserting-html-content).
 * Afbeelding opgeslagen in de bronbibliotheek of op een server die toegankelijk is voor gebruikers. Zie [Afbeeldingen invoegen](#inserting-images).
-* Script wordt uitgevoerd aan de clientzijde en/of serverzijde. Deze moet in JavaScript zijn geschreven en compatibel zijn met de meeste browsers om een correcte uitvoering op de client te garanderen.
+* Script wordt uitgevoerd aan client- en/of serverzijde. Deze moet in JavaScript zijn geschreven en compatibel zijn met de meeste browsers om een correcte uitvoering op de client te garanderen.
 
-   >[!NOTE]
-   >
-   >Aan de serverzijde kan het script de functies gebruiken die zijn gedefinieerd in [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+  >[!NOTE]
+  >
+  >Aan de serverzijde kan het script de in [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 ## HTML-inhoud invoegen {#inserting-html-content}
 
-U kunt HTML-inhoud opnemen in een formulierpagina: hypertextkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video&#39;s, enzovoort.
+U kunt HTML-inhoud in een formulierpagina opnemen: hypertekstkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video&#39;s, enzovoort.
 
-Met de HTML-editor kunt u de inhoud invoeren die u in de formulierpagina wilt invoegen. Als u de editor wilt openen, klikt u op **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
+Met de HTML-editor kunt u de inhoud invoeren die u in de formulierpagina wilt invoegen. Klik op **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 U kunt de inhoud rechtstreeks invoeren en opmaken of het venster met de broncode weergeven om deze in externe inhoud te plakken. Als u wilt overschakelen naar de modus &quot;broncode&quot;, klikt u op het eerste pictogram op de werkbalk:
 
@@ -63,7 +63,7 @@ Ga naar **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 * De **[!UICONTROL Window]** kunt u in het geval van een site de weergavemodus voor de koppeling selecteren. U kunt de koppeling openen in een nieuw venster, in het huidige venster of in een ander venster.
 * U kunt een ToolTip toevoegen, zoals hieronder getoond:
 
-   ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![](assets/s_ncs_admin_survey_send_an_email.png)
 
 * U kunt de koppeling weergeven als een knop of als een afbeelding. Selecteer hiertoe het weergavetype in het dialoogvenster **[!UICONTROL Type]** veld.
 
@@ -77,39 +77,39 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
 * De pagina vernieuwen
 
-   Selecteer hiervoor de optie **[!UICONTROL Refresh page]** in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Action]** veld.
+  Selecteer de optie **[!UICONTROL Refresh page]** in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Action]** veld.
 
-   ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![](assets/s_ncs_admin_survey_link_refresh.png)
 
-* Volgende/vorige pagina weergeven
+* De volgende/vorige pagina weergeven
 
-   Selecteer hiervoor de optie **[!UICONTROL Next page]** of **[!UICONTROL Previous page]** in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Action]** veld.
+  Selecteer de optie **[!UICONTROL Next page]** of **[!UICONTROL Previous page]** in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Action]** veld.
 
-   ![](assets/s_ncs_admin_survey_link_next.png)
+  ![](assets/s_ncs_admin_survey_link_next.png)
 
-   U kunt de **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knoppen als deze moeten worden vervangen door een koppeling. Zie dit [page](defining-web-forms-page-sequencing.md).
+  U kunt de **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knoppen als deze moeten worden vervangen door een koppeling. Zie dit [page](defining-web-forms-page-sequencing.md).
 
-   De koppeling vervangt de koppeling **[!UICONTROL Next]** die standaard wordt gebruikt.
+  De koppeling vervangt de koppeling **[!UICONTROL Next]** die standaard wordt gebruikt.
 
-   ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Een andere pagina weergeven
 
-   De **[!UICONTROL Enable a transition]** Hiermee kunt u een specifieke pagina weergeven die is gekoppeld aan de uitgaande overgang die is geselecteerd in het dialoogvenster **[!UICONTROL Transition]** veld.
+  De **[!UICONTROL Enable a transition]** Hiermee kunt u een specifieke pagina weergeven die is gekoppeld aan de uitgaande overgang die is geselecteerd in het dialoogvenster **[!UICONTROL Transition]** veld.
 
-   ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![](assets/s_ncs_admin_survey_link_viral.png)
 
-   Een pagina heeft standaard maar één uitvoerovergang. Als u nieuwe overgangen wilt maken, selecteert u de pagina en klikt u op de knop **[!UICONTROL Add]** in de **[!UICONTROL Output transitions]** , zoals hieronder weergegeven:
+  Een pagina heeft standaard maar één uitvoerovergang. Als u nieuwe overgangen wilt maken, selecteert u de pagina en klikt u op de knop **[!UICONTROL Add]** in de **[!UICONTROL Output transitions]** , zoals hieronder weergegeven:
 
-   ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![](assets/s_ncs_admin_survey_add_transition.png)
 
-   In het diagram ziet deze toevoeging er als volgt uit:
+  In het diagram ziet deze toevoeging er als volgt uit:
 
-   ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
 
-   >[!NOTE]
-   >
-   >Voor meer op pagina die in een vorm van het Web opeenvolgen, verwijs naar [Opeenvolging van webformulierpagina&#39;s definiëren](defining-web-forms-page-sequencing.md).
+  >[!NOTE]
+  >
+  >Voor meer op pagina die in een vorm van het Web opeenvolgen, verwijs naar [Opeenvolging van webformulierpagina&#39;s definiëren](defining-web-forms-page-sequencing.md).
 
 ### HTML-inhoud aanpassen {#personalizing-html-content}
 
@@ -142,7 +142,7 @@ De **[!UICONTROL Text]** kunt u met de volgende syntaxis variabele velden maken 
 
 Gebruik deze methode om uw tekenreeksen eenvoudig te lokaliseren. Zie [Een webformulier vertalen](translating-a-web-form.md)
 
-U kunt bijvoorbeeld een **Contact** veld waarmee u de tekenreeks &quot;Date of last contact:&quot; kunt weergeven voor de inhoud van de HTML. Volg de onderstaande stappen om dit te doen:
+U kunt bijvoorbeeld een **Contact** veld waarmee u de tekenreeks &quot;Date of last contact:&quot; kunt weergeven voor de inhoud van de HTML. Hiervoor voert u de volgende stappen uit:
 
 1. Klik op de knop **[!UICONTROL Text]** van de tekst HTML.
 1. Klik op de knop **[!UICONTROL Add]** pictogram.
@@ -169,12 +169,12 @@ In deze modus kunt u de tekst van webformulieren slechts eenmaal definiëren en 
 
 Afbeeldingen die u in formulieren wilt opnemen, moeten worden opgeslagen op een server die van buitenaf toegankelijk is.
 
-Selecteer **[!UICONTROL Static elements]** > **[!UICONTROL Image]** -menu.
+Selecteer de **[!UICONTROL Static elements]** > **[!UICONTROL Image]** -menu.
 
-Selecteer de bron van de afbeelding die u wilt invoegen: het kan uit de openbare middelbibliotheek komen of op een externe server worden opgeslagen die van buiten toegankelijk is.
+Selecteer de bron van de afbeelding die u wilt invoegen: deze kan afkomstig zijn uit de openbare bronbibliotheek of worden opgeslagen op een externe server die van buiten toegankelijk is.
 
 ![](assets/s_ncs_admin_survey_add_img.png)
 
-Als dit een afbeelding uit de bibliotheek is, selecteert u deze in de keuzelijst met invoervak van het veld. Als het in een extern dossier wordt gevestigd, ga de toegangspad in. Het label wordt weergegeven door de cursor boven de afbeelding te plaatsen (valt samen met een ALT-veld in HTML) of wanneer de afbeelding niet wordt weergegeven.
+Als dit een afbeelding uit de bibliotheek is, selecteert u deze in de keuzelijst met invoervak van het veld. Als de afbeelding zich in een extern bestand bevindt, voert u het toegangspad in. Het label wordt weergegeven door de cursor boven de afbeelding te plaatsen (valt samen met een ALT-veld in HTML) of wanneer de afbeelding niet wordt weergegeven.
 
 De afbeelding kan worden weergegeven in het centrale gedeelte van de editor.

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '381'
+ht-degree: 10%
 
 ---
 
@@ -30,7 +30,7 @@ De webApp-operator is een beheerder. Om de veiligheid te verbeteren, volg deze r
 
    1. Voer een naam in voor elk duplicaat. Bijvoorbeeld: webapp_brand, webapp_brand2, enz.
 
-   1. Dupliceer een sjabloon van een webtoepassing om één sjabloon per merk te hebben en bewerk de eigenschappen om de operator te wijzigen door Een specifiek account gebruiken te selecteren.  Meer informatie in [deze pagina](../../web/using/defining-web-forms-properties.md).
+   1. Dupliceer een sjabloon van een webtoepassing om één sjabloon per merk te hebben en bewerk de eigenschappen om de operator te wijzigen door Een specifiek account gebruiken te selecteren.  Meer informatie vindt u [op deze pagina](../../web/using/defining-web-forms-properties.md).
 
 ## Beveiligingsgroepen en beheerders
 
@@ -46,6 +46,6 @@ Adobe Campaign biedt drie privileges op hoog niveau via [benoemde rechten](../..
 
 * **UITVOERING VAN PROGRAMMA** (createProcess): hiermee kunnen externe programma&#39;s worden uitgevoerd (op de server)
 
-* **SQL**: staat het runnen van SQL manuscripten op het gegevensbestand toe (zodat kan het veiligheidsmodel overslaan). Nota: als u complexe berekeningen (het filtreren, bijvoorbeeld) moet uitvoeren, kunt u uw gegevensbestandbeheerder vragen om een SQL functie tot stand te brengen en hen toe te voegen aan de lijst van gewenste personen. Meer informatie in [deze pagina](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: staat het runnen van SQL manuscripten op het gegevensbestand toe (zodat kan het veiligheidsmodel overslaan). Nota: als u complexe berekeningen (het filtreren, bijvoorbeeld) moet uitvoeren, kunt u uw gegevensbestandbeheerder vragen om een SQL functie tot stand te brengen en hen toe te voegen aan de lijst van gewenste personen. Meer informatie vindt u [op deze pagina](../../installation/using/scripting-coding-guidelines.md).
 
 * **Geef ze door aan zeer weinig (en vertrouwde) operatoren**

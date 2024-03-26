@@ -9,8 +9,8 @@ role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 10%
+source-wordcount: '894'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ De gebieden van de verpersoonlijking kunnen uit twee types van gegevensbron, vol
 >
 >Een Adobe Campaign-personalisatietag heeft altijd het volgende formulier: **&lt;%=table.field%>**.
 
-## Een personalisatieveld invoegen {#inserting-a-personalization-field}
+## Een aanpassingsveld invoegen {#inserting-a-personalization-field}
 
 Als u verpersoonlijkingsvelden wilt invoegen, klikt u op het vervolgkeuzepictogram dat toegankelijk is vanuit een bewerkveld voor koptekst, onderwerp of berichttekst.
 
@@ -86,7 +86,7 @@ Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal o
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
-1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
+1. Maak een campagne. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
 1. In de **[!UICONTROL Targeting and workflows]** tabblad van uw campagne, voegt u een **Query** activiteit aan uw werkschema. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../workflow/using/query.md).
 1. Een **[!UICONTROL Email delivery]** aan de werkstroom en open het. Raadpleeg voor meer informatie over het gebruik van deze activiteit [deze sectie](../../workflow/using/delivery.md).
 1. Ga naar de **[!UICONTROL Analysis]** tabblad van het **[!UICONTROL Delivery properties]** en selecteert u de **[!UICONTROL Prepare the personalization data with a workflow]** -optie.

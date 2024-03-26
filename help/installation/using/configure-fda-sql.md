@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op C
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
@@ -111,7 +111,7 @@ U moet een [!DNL Microsoft SQL Server] externe account om uw Campagne-instantie 
 
 De connector ondersteunt de volgende opties:
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | Verificatie | Type van authentificatie die door de schakelaar wordt gesteund. Huidige ondersteunde waarde: ActiveDirectoryMSI. <br> Zie voorbeeld 8 van [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Coderen | Geeft aan of verbindingen de TLS-codering via het netwerk gebruiken. Mogelijke waarden zijn **ja/verplicht (18.0 en hoger)**, **neen/optioneel (18.0 en hoger)**, en **strikt (18.0 en hoger)**. De standaardwaarde is **ja** in versie 18.0 en hoger en **nee** in eerdere versies. <br>Raadpleeg voor meer informatie hierover [Microsoft-documentatie](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |

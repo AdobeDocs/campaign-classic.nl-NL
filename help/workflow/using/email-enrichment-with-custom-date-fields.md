@@ -2,13 +2,13 @@
 product: campaign
 title: E-mailverrijking met aangepaste datumvelden
 description: Leer hoe u e-mailberichten verrijkt met aangepaste datumvelden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 In dit voorbeeld willen we een e-mail met aangepaste gegevensvelden verzenden aan ontvangers die deze maand hun verjaardagen vieren. Het e-mailbericht bevat een coupon die een week voor en na hun verjaardagen geldig is.
 
-We moeten ontvangers van een lijst aanspreken die hun verjaardagen deze maand vieren met een **[!UICONTROL Split]** activiteit. Gebruik vervolgens de **[!UICONTROL Enrichment]** activiteit, zal het gebied van douanegegevens als geldigheidsdata in e-mail voor de speciale aanbieding van de klant dienst doen.
+We moeten ontvangers van een lijst aanspreken die hun verjaardagen deze maand vieren met een **[!UICONTROL Split]** activiteit. Vervolgens gebruikt u de **[!UICONTROL Enrichment]** activiteit, zal het gebied van douanegegevens als geldigheidsdata in e-mail voor de speciale aanbieding van de klant dienst doen.
 
 ![](assets/uc_enrichment.png)
 
@@ -38,9 +38,9 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/uc_enrichment_3.png)
 
-1. Klikken **[!UICONTROL Advanced Selection]** dan **[!UICONTROL Edit the formula using an expression]** en voeg de volgende expressie toe: Maand (@geboorteDate).
+1. Klikken **[!UICONTROL Advanced Selection]** dan **[!UICONTROL Edit the formula using an expression]** en voeg de volgende expressie toe: Month(@geboortedatum).
 1. In de **[!UICONTROL Operator]** kolom, selecteert u de **[!UICONTROL equal to]**.
-1. Filter de voorwaarde verder door de **[!UICONTROL Value]** maand van de huidige datum: Month(GetDate()).
+1. Filter de voorwaarde verder door de **[!UICONTROL Value]** maand van de huidige datum: Maand(GetDate()).
 
    Hierdoor worden ontvangers gevraagd van wie de geboortemaand overeenkomt met de huidige maand.
 
@@ -67,7 +67,7 @@ U moet nu uw **[!UICONTROL Enrichment]** activiteit:
 
    ![](assets/uc_enrichment_9.png)
 
-1. Voeg een **[!UICONTROL Label]**. Dan, in **[!UICONTROL Expression]** kolom, klikt u op **[!UICONTROL Edit expression]**.
+1. Voeg een **[!UICONTROL Label]**. Dan, in **[!UICONTROL Expression]** kolom, klik **[!UICONTROL Edit expression]**.
 
    ![](assets/uc_enrichment_10.png)
 
@@ -92,7 +92,7 @@ Na uw **[!UICONTROL Enrichment]** activiteit, kunt u een levering toevoegen. In 
 1. Dubbelklik op de knop **[!UICONTROL Email delivery]** activiteiten om uw levering aan te passen.
 1. Voeg een **[!UICONTROL Label]** aan uw levering en klik op **[!UICONTROL Continue]**.
 1. Klikken **[!UICONTROL Save]** om uw e-maillevering te maken.
-1. Inchecken in het dialoogvenster **[!UICONTROL Approval]** tabblad van de e-maillevering **[!UICONTROL Properties]** de **[!UICONTROL Confirm delivery before sending option]** is ingeschakeld.
+1. Inchecken **[!UICONTROL Approval]** tabblad van de e-maillevering **[!UICONTROL Properties]** dat de **[!UICONTROL Confirm delivery before sending option]** is ingeschakeld.
 
    Start vervolgens de workflow om de uitgaande overgang te verrijken met de doelgegevens.
 
@@ -108,7 +108,7 @@ U kunt nu uw e-maillevering ontwerpen met de aangepaste datumvelden die zijn gem
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klik op ![](assets/uc_enrichment_16.png) . Selecteren **[!UICONTROL Target extension]** de eerder gemaakte aangepaste geldigheidsdatums met de **[!UICONTROL Enrichment]** activiteit om uw uitbreiding aan de formatDate uitdrukking toe te voegen.
+1. Klikken ![](assets/uc_enrichment_16.png) . Selecteren **[!UICONTROL Target extension]** de eerder gemaakte aangepaste geldigheidsdatums met de **[!UICONTROL Enrichment]** activiteit om uw uitbreiding aan de formatDate uitdrukking toe te voegen.
 
    ![](assets/uc_enrichment_19.png)
 

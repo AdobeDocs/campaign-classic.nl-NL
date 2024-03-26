@@ -3,7 +3,7 @@ product: campaign
 title: Toegang tot elementen configureren
 description: Toegang tot elementen configureren
 feature: Asset Sharing
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '506'
 ht-degree: 1%
 
 ---
@@ -26,14 +26,14 @@ In deze sectie worden de benodigde configuratiestappen in Adobe Campaign beschre
 >
 >Deze integraties zijn gelijktijdig. Lees de volgende informatie zorgvuldig door voordat u een configuratie maakt.
 
-* Integratie met **Experience Cloud-middelen**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Cloud-bibliotheek invoegen. Deze integratie moet worden ingesteld door de installatie van de **[!UICONTROL Integration with the Adobe Experience Cloud]** ingebouwd pakket in Adobe Campaign.
+* Integratie met **Experience Cloud-elementen**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Cloud-bibliotheek invoegen. Deze integratie moet worden ingesteld door de installatie van de **[!UICONTROL Integration with the Adobe Experience Cloud]** ingebouwd pakket in Adobe Campaign.
 * Integratie met **AEM Assets**: Dankzij deze integratie kunt u afbeeldingen uit uw Adobe Experience Manager Assets-bibliotheek invoegen. Deze integratie moet worden ingesteld door de installatie van de **[!UICONTROL AEM Integration]** ingebouwd pakket in Adobe Campaign. Deze integratie is vanaf Adobe Experience Manager 6.4 niet meer beschikbaar.
 
 >[!NOTE]
 >
 >Indien de twee pakketten (**[!UICONTROL AEM Integration]** en **[!UICONTROL Integration with the Adobe Experience Cloud]** ) zijn geïnstalleerd, kunnen alleen de elementen die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek worden gebruikt.
 
-## Integreren met Experience Cloud Assets {#integrating-with-experience-cloud-assets}
+## Integreren met Experiencen Cloud {#integrating-with-experience-cloud-assets}
 
 Als u de integratie tussen Adobe Campaign en Experience Cloud Assets wilt gebruiken, moet u beschikken over:
 
@@ -63,7 +63,7 @@ Als u AEM Assets wilt integreren met Adobe Campaign, moet u eerst de integratie 
 
 Leer hoe u Adobe Campaign en Adobe Experience Manager kunt integreren in de [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md).
 
-Zodra deze integratie is ingesteld, kunt u een nieuwe leveringssjabloon in Adobe Campaign configureren voor het gebruik van de AEM Assets-bibliotheek. Volg de onderstaande stappen om dit te doen:
+Zodra deze integratie is ingesteld, kunt u een nieuwe leveringssjabloon in Adobe Campaign configureren voor het gebruik van de AEM Assets-bibliotheek. Hiervoor voert u de volgende stappen uit:
 
 1. Een nieuwe leveringssjabloon maken - of een bestaande sjabloon dupliceren. Voor meer informatie over leveringssjablonen raadpleegt u [deze pagina](../../delivery/using/about-templates.md).
 1. Bewerk de **Eigenschappen** van deze template.
@@ -72,7 +72,7 @@ Zodra deze integratie is ingesteld, kunt u een nieuwe leveringssjabloon in Adobe
 
    ![](assets/dam_aem_assets1.png)
 
-Wanneer u afbeeldingen invoegt in de inhoud van een levering die op deze sjabloon is gebaseerd, wordt de **[!UICONTROL Select a shared asset]** kunt u vervolgens door afbeeldingen bladeren in de AEM Assets-bibliotheek. Meer informatie in [deze sectie](../../integrations/using/inserting-a-shared-asset.md).
+Wanneer u afbeeldingen invoegt in de inhoud van een levering die op deze sjabloon is gebaseerd, wordt de **[!UICONTROL Select a shared asset]** kunt u vervolgens door afbeeldingen bladeren in de AEM Assets-bibliotheek. Lees meer in [deze sectie](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >

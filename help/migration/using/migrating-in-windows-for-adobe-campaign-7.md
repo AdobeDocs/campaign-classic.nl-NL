@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 Start IIS- en Adobe Campaign-services op elk van de volgende servers:
 
 1. Tracking and redirection server.
-1. Midsourcingserver.
+1. Midden-sourcingserver.
 1. Marketingsserver.
 
 Voordat u verdergaat met de volgende stap, voert u een volledige test van de nieuwe installatie uit, controleert u of er geen regressies zijn en of alles werkt.

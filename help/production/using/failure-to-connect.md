@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 6%
+source-wordcount: '377'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 De redenen voor een verbindingsprobleem kunnen meerdere zijn en zijn afhankelijk van verschillende contexten.
 
-U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, gelieve te contacteren [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, gelieve te contacteren [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 

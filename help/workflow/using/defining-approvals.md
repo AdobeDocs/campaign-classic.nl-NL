@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Goedkeuringen definiëren
-description: Met goedkeuringen kunnen operators beslissingen nemen over een workflow of de voortzetting van de uitvoering bevestigen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Met goedkeuringen kunnen operatoren beslissingen nemen over een workflow of de voortzetting van de uitvoering ervan bevestigen
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 4%
+source-wordcount: '849'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Bij vluchtuitvoeringen zijn alle stadia die goedkeuring vereisen, gebaseerd op h
 
 Goedkeuringsvoorbeelden vindt u in [deze sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
-Een operator kan op twee manieren reageren: valideren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
+Een exploitant kan op één van twee manieren antwoorden: het bevestigen gebruikend de Web-pagina verbonden in het e-mailbericht, of via de console.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Het is mogelijk om een goedkeuringsbericht te ontvangen die een verbinding met e
 
 Het beheer van de exploitant wordt gedetailleerd in dit [sectie](../../platform/using/access-management.md).
 
-Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]**: Het bestand wordt opgeslagen in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** map. Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
+Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]**: Het bestand wordt opgeslagen in het dialoogvenster **[!UICONTROL Administration > Campaign management > Technical delivery templates]** map. Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
 
 Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** map.
 
@@ -65,13 +65,13 @@ De groepen van marktdeelnemers voor goedkeuringen moeten worden aangewezen als r
 
 ## Verlopen {#expirations}
 
-Verlopen zijn specifieke overgangen die worden gebruikt in verschillende soorten activiteiten, en met name in goedkeuringen. U kunt een vervaldatum gebruiken om een actie na een bepaalde tijd zonder reactie teweeg te brengen. Het kan bijvoorbeeld ook worden gebruikt om de workflow voort te zetten en een goedkeuring toe te wijzen aan een andere groep.
+Verlopen zijn specifieke overgangen die worden gebruikt in verschillende soorten activiteiten, en met name in goedkeuringen. U kunt een vervaldatum gebruiken om een actie na een bepaalde tijd zonder reactie teweeg te brengen. Het kan ook worden gebruikt, bijvoorbeeld om de werkstroom voort te zetten en een goedkeuring aan een verschillende groep toe te wijzen.
 
 Op het tweede tabblad in de eigenschappen voor activiteitengoedkeuring kunt u een of meer vervaldatums definiëren. In feite kunt u meerdere vervaltypen definiëren.
 
 ![](assets/expiration.png)
 
-Als u een nieuwe vervaldatum wilt toevoegen, klikt u op **[!UICONTROL Add]**. Er wordt een overgang toegevoegd aan elk van de gemaakte vervaldatums. U kunt:
+Als u een nieuwe vervaldatum wilt toevoegen, klikt u **[!UICONTROL Add]**. Er wordt een overgang toegevoegd aan elk van de gemaakte verlopen. U kunt:
 
 * de typische parameters rechtstreeks wijzigen door op een cel in de lijst te klikken (of door op F2 te drukken);
 * of bewerk de expressie door op de knop **[!UICONTROL Detail...]** knop.
@@ -87,17 +87,17 @@ U kunt vier typen vervaldatums maken:
 * **Vertraging na taakstart**: De vervaldatum wordt berekend door een bepaalde tijdsduur toe te voegen aan de datum waarop de goedkeuring wordt geactiveerd.
 * **Vertraging na een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur toe te voegen aan een datum die u opgeeft.
 * **Vertraging vóór een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur af te trekken van een datum die u opgeeft.
-* **Vervaldatum berekend door script**: De vervaldatum wordt berekend met behulp van JavaScript.
+* **Vervaldatum berekend door script**: De vervaldatum wordt berekend met JavaScript.
 
-   In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (geïdentificeerd door **vars.deliveryId**):
+  In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (geïdentificeerd door **vars.deliveryId**):
 
-   ```
-   var delivery = nms.delivery.get(vars.deliveryId)
-   var expiration = delivery.scheduling.contactDate
-   var oneDay = 1000*60*60*24
-   expiration.setTime(expiration.getTime() - oneDay)
-   return expiration
-   ```
+  ```
+  var delivery = nms.delivery.get(vars.deliveryId)
+  var expiration = delivery.scheduling.contactDate
+  var oneDay = 1000*60*60*24
+  expiration.setTime(expiration.getTime() - oneDay)
+  return expiration
+  ```
 
 ## Meerdere goedkeuringen {#multiple-approval}
 

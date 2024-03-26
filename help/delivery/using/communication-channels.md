@@ -9,8 +9,8 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 12%
+source-wordcount: '1217'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +22,7 @@ De kernfuncties omvatten het richten, het bepalen en het personaliseren van beri
 
 >[!NOTE]
 >
->Adobe Campaign beschikt over een set gereedschappen om de prestaties te controleren en het verzenden van e-mail te optimaliseren. Meer informatie in [deze sectie](about-deliverability.md).
+>Adobe Campaign beschikt over een set gereedschappen om de prestaties te controleren en het verzenden van e-mail te optimaliseren. Lees meer in [deze sectie](about-deliverability.md).
 
 Het verzenden van leveringen kan worden geautomatiseerd door de levering voor te bereiden en/of te verzenden tijdens een workflow. Raadpleeg voor meer informatie over activiteiten van het type levering in workflows de [deze sectie](../../workflow/using/about-action-activities.md).
 
@@ -81,7 +81,7 @@ Met Adobe Campaign kunt u gepersonaliseerde en gesegmenteerde [pushmeldingen](ab
 
 ## Direct mail {#direct-mail}
 
-[Direct mail is een offline kanaal waarmee u het bestand dat wordt vereist door direct-mailproviders kunt personaliseren en genereren. ](about-direct-mail-channel.md) Het biedt u de mogelijkheid om online en offline kanalen in uw klanttrajecten te combineren.
+[Directe post](about-direct-mail-channel.md) is een offlinekanaal waarmee u het bestand dat door directe-mailproviders wordt vereist, kunt aanpassen en genereren. Het biedt u de mogelijkheid om online en offline kanalen in uw klanttrajecten te combineren.
 
 Met online kanalen kunt u uw berichten (e-mail, sms, levering van mobiele apps, enzovoort) maken en ze vanuit Adobe Campaign direct naar uw doelgroep verzenden. Bij offline kanalen is dit anders. Wanneer u een direct-maillevering voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactinformatie (bijvoorbeeld postadres). U kunt dit bestand dan naar uw direct-mailprovider sturen, die voor de werkelijke verzending zorgt.
 
@@ -99,7 +99,7 @@ Dit kanaal heeft geen specifiek mechanisme. Het is een generisch kanaal dat zijn
 
 Dit kanaal is alleen bedoeld voor beschrijvende doeleinden, bijvoorbeeld om leveringen te definiëren waarvoor u het doel van een campagne die is uitgevoerd in een ander programma dan Adobe Campaign, wilt bijhouden.
 
-## Typen leveringen{#types-of-deliveries}
+## Soorten leveringen{#types-of-deliveries}
 
 Er zijn drie typen leveringsobjecten in campagne:
 

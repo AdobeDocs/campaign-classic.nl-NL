@@ -10,7 +10,7 @@ exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 38%
+ht-degree: 35%
 
 ---
 
@@ -20,7 +20,7 @@ Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manie
 
 * Het berichtformaat aanpassen. Zie [Berichtinhoud](defining-the-email-content.md#message-content).
 * Dynamische personalisatievelden invoegen. Zie [Velden aanpassen](personalization-fields.md).
-* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Aanpassingsblokken](personalization-blocks.md).
+* Vooraf gedefinieerde aanpassingsblokken invoegen. Zie [Aanpassingsblokken](personalization-blocks.md).
 * Voorwaardelijke content maken. Zie de [Voorwaardelijke inhoud](conditional-content.md) sectie.
 
 >[!CAUTION]

@@ -11,8 +11,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '288'
+ht-degree: 3%
 
 ---
 
@@ -83,6 +83,6 @@ U kunt ook verwijzen naar [Oracle Client in Linux](../../installation/using/inst
 
 Wij adviseren dat u UTF-8 steun wanneer het installeren van de gegevensbestandmotor installeert. Op deze manier kunt u Unicode-databases maken.
 
-**Verwant onderwerp**
+**Verwante onderwerpen**
 
 * [Niet-geregistreerde optie in Adobe Campaign Classic-tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

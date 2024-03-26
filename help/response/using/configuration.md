@@ -3,7 +3,7 @@ product: campaign
 title: Campagne-responsbeheer configureren
 description: Leer hoe te om de Manager van de Reactie van de Campagne te vormen
 feature: Campaigns
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: campaign
 content-type: reference

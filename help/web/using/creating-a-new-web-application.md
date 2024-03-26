@@ -2,13 +2,13 @@
 product: campaign
 title: Een nieuwe webapplicatie maken
 description: Een nieuwe webapplicatie maken
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '368'
 ht-degree: 19%
 
 ---
@@ -27,15 +27,15 @@ Ga naar de **Campagnes** en selecteert u de **[!UICONTROL Web Applications]** -m
 >
 >Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Zie de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
-Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
+Deze sjabloon bepaalt het type webtoepassing. U kunt:
 
 1. Webformulieren (+ profielwijziging)
 
-   Met webformulieren kunt u webpagina&#39;s met invoer- of selectievelden aanbieden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. Raadpleeg voor meer informatie hierover [Webformulieren](about-web-forms.md).
+   Met webformulieren kunt u webpagina&#39;s voorzien van invoer- of selectievelden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. Raadpleeg voor meer informatie hierover [Webformulieren](about-web-forms.md).
 
-1. Webapplicaties
+1. Webtoepassingen
 
-   Adobe Campaign laat u de toepassingen van het Web tot stand brengen om op een platform van het Web of een Extranet bijvoorbeeld worden blootgesteld. Hierdoor kunt u gegevens bewerken en gegevens opnemen in Adobe Campaign. In dit geval kunt u hun toegang beperken tot geverifieerde gebruikers (via toegangsbeheer) en gegevens vooraf laden instellen op basis van verschillende criteria. Raadpleeg [deze sectie](about-web-applications.md) voor meer informatie.
+   Adobe Campaign laat u de toepassingen van het Web tot stand brengen om op een platform van het Web of een Extranet bijvoorbeeld worden blootgesteld. Op deze manier kunt u gegevens bewerken en gegevens opnemen in Adobe Campaign. In dit geval kunt u hun toegang beperken tot geverifieerde gebruikers (via toegangsbeheer) en gegevens vooraf laden instellen op basis van verschillende criteria. Raadpleeg [deze sectie](about-web-applications.md) voor meer informatie.
 
 1. Landingspagina&#39;s
 
@@ -43,7 +43,7 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Enquêtes
 
-   Met Adobe Campaign kunt u via de **Beoordelingsmanager** om online enquêtes te ontwerpen en te beheren en de resultaten ervan te verwerken: dynamische het gebiedsverwezenlijking, scorebeheer, de uitvoer van antwoorden en specifieke rapporten. Raadpleeg [deze sectie](../../surveys/using/about-surveys.md) voor meer informatie.
+   Met Adobe Campaign kunt u via de **Beoordelingsmanager** om online enquêtes te ontwerpen en te beheren en de resultaten ervan te verwerken: dynamisch maken van velden, scorebeheer, exporteren van antwoorden en speciale rapporten. Raadpleeg [deze sectie](../../surveys/using/about-surveys.md) voor meer informatie.
 
    >[!CAUTION]
    >
@@ -51,7 +51,7 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Facebook-toepassingen
 
-   Dankzij de **Sociale marketing** in Adobe Campaign kunt u gepersonaliseerde inhoud publiceren in een Facebook-toepassing. Raadpleeg [deze sectie](../../social/using/about-social-marketing.md) voor meer informatie.
+   Dankzij de **Sociale marketing** in Adobe Campaign kunt u persoonlijke inhoud publiceren in een Facebook-toepassing. Raadpleeg [deze sectie](../../social/using/about-social-marketing.md) voor meer informatie.
 
    >[!CAUTION]
    >

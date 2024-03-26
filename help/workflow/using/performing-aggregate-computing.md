@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Berekening van samenvoegingen uitvoeren
+title: Complexe computerverwerking uitvoeren
 description: Leer hoe u geaggregeerde computertaken kunt uitvoeren in query's
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '238'
 ht-degree: 2%
 
 ---
 
-# Berekening van samenvoegingen uitvoeren {#performing-aggregate-computing}
+# Complexe computerverwerking uitvoeren {#performing-aggregate-computing}
 
 
 
@@ -20,15 +20,15 @@ In dit voorbeeld willen we het aantal ontvangers dat in Londen woont, op basis v
 
 * Welke tabel moet worden geselecteerd?
 
-   De tabel met ontvangers (**nms:ontvanger**)
+  De tabel met ontvangers (**nms:ontvanger**)
 
 * Welke gebieden in de outputkolom zouden moeten worden geselecteerd?
 
-   Primaire sleutel (met telling) en Geslacht
+  Primaire sleutel (met telling) en Geslacht
 
 * Op welke voorwaarden is de informatie gefilterd?
 
-   Gebaseerd op de ontvangers die in Londen wonen
+  Gebaseerd op de ontvangers die in Londen wonen
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
@@ -36,7 +36,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_nveau_27.png)
 
-1. In de **[!UICONTROL Sorting]** venster, klikt u op **[!UICONTROL Next]**: hier is geen sortering nodig .
+1. In de **[!UICONTROL Sorting]** venster, klikt u op **[!UICONTROL Next]**: hier hoeft niet gesorteerd te worden.
 1. Gegevensfiltering configureren. Hier wilt u de selectie beperken tot contacten die in Londen wonen.
 
    ![](assets/query_editor_22.png)

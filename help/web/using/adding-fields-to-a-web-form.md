@@ -2,14 +2,14 @@
 product: campaign
 title: Velden toevoegen aan een webformulier
 description: Velden toevoegen aan een webformulier
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 1%
+source-wordcount: '2376'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In een webformulier kunnen gebruikers in velden informatie invoeren en opties selecteren. Webformulieren kunnen invoervelden, selectievelden, statische en geavanceerde inhoud (bijschriften, abonnementen, enz.) bieden.
 
-Wanneer u velden toevoegt met de wizard, wordt het veldtype automatisch gedetecteerd op basis van het geselecteerde veld of de opslagvariabele. U kunt het bewerken met de opdracht **[!UICONTROL Type]** vervolgkeuzelijst in het dialoogvenster **[!UICONTROL General]** tab.
+Wanneer u de wizard gebruikt om velden toe te voegen, wordt het veldtype automatisch gedetecteerd op basis van het geselecteerde veld of de opslagvariabele. U kunt het bewerken met de opdracht **[!UICONTROL Type]** vervolgkeuzelijst in de **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -32,13 +32,13 @@ De volgende veldtypen zijn beschikbaar:
 * Meerdere keuzen via selectievakjes. Zie [Selectievakjes toevoegen](#adding-checkboxes).
 * Exclusieve selectie via keuzerondjes. Zie [Keuzerondjes toevoegen](#adding-radio-buttons).
 * Stem in een optieraster. Zie [Rasters toevoegen](#adding-grids).
-* Getallen en datums. Zie [Datums en nummers toevoegen](#adding-dates-and-numbers).
-* Abonnement/abonnement op een informatieservice. Zie [Selectievakjes voor abonnement](#subscription-checkboxes).
+* Getallen en datums. Zie [Datums en getallen toevoegen](#adding-dates-and-numbers).
+* Abonnement/abonnement op een voorlichtingsservice. Zie [Selectievakjes voor abonnement](#subscription-checkboxes).
 * Captcha-validatie. Zie [Een captcha invoegen](#inserting-a-captcha).
 * Knop Downloaden. [Een bestand uploaden](#uploading-a-file).
 * De constante Verborgen. Zie [Een verborgen constante invoegen](#inserting-a-hidden-constant).
 
-Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen de laatst opgeslagen waarde wordt opgeslagen) of in een variabele opslaan (het antwoord wordt niet opgeslagen). Raadpleeg voor meer informatie hierover [Responsopslagvelden](web-forms-answers.md#response-storage-fields).
+Geef de opslagmodus voor reacties op: werk een veld in de database bij (sla alleen de laatste opgeslagen waarde op) of sla het veld op in een variabele (het antwoord wordt niet opgeslagen). Raadpleeg voor meer informatie hierover [Responsopslagvelden](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Voor elke pagina van het formulier kunt u een veld toevoegen met de eerste knop 
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-Selecteer het type veld dat u wilt maken: U kunt een veld toevoegen aan de database of een variabele of een groep velden importeren die in een ander formulier zijn gemaakt en in een container zijn verzameld.
+Selecteer het type veld dat u wilt maken: u kunt een veld toevoegen aan de database, een variabele of een groep velden importeren die in een ander formulier zijn gemaakt en in een container zijn verzameld.
 
 Klikken **[!UICONTROL Next]** en selecteert u het opslagveld of de variabele of de container die u wilt importeren.
 
@@ -62,7 +62,7 @@ Klikken **[!UICONTROL Finish]** om het geselecteerde veld in te voegen op de pag
 
 ## Invoervelden toevoegen {#adding-input-fields}
 
-Als u een invoerveld wilt toevoegen, klikt u op de knop **[!UICONTROL Input control]** en kiest u het type veld dat u wilt toevoegen.
+Klik op de knop **[!UICONTROL Input control]** en kiest u het type veld dat u wilt toevoegen.
 
 ![](assets/s_ncs_admin_webform_select_field.png)
 
@@ -70,41 +70,42 @@ Als u een invoerveld wilt toevoegen, klikt u op de knop **[!UICONTROL Input cont
 
 U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
-* **Tekst**: Hiermee kan de gebruiker een tekst op één regel invoeren.
+* **Tekst**: laat de gebruiker een tekst op één regel invoeren.
 
-   ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. zie voor meer informatie : [Getallen toevoegen](#adding-numbers).
+* **Getal**: laat de gebruiker een aantal op één lijn ingaan. zie voor meer informatie : [Getallen toevoegen](#adding-numbers).
 
-   Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg voor meer informatie hierover [Besturingsinstellingen definiëren](form-rendering.md#defining-control-settings).
+  Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg voor meer informatie hierover [Besturingsinstellingen definiëren](form-rendering.md#defining-control-settings).
 
-* **Wachtwoord**: Hiermee kan de gebruiker tekst op één regel invoeren. Tijdens tekstinvoer worden de tekens vervangen door punten:
+* **Wachtwoord**: laat de gebruiker tekst op één regel invoeren. Tijdens tekstinvoer worden de tekens vervangen door punten:
 
-   ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
-   >[!CAUTION]
-   >
-   >Wachtwoorden worden niet-gecodeerd opgeslagen in de database.
+  >[!CAUTION]
+  >
+  >Wachtwoorden worden niet-gecodeerd opgeslagen in de database.
 
-* **Tekst met meerdere regels**: Hiermee kan de gebruiker tekst op meerdere regels invoeren.
+* **Tekst met meerdere regels**: hiermee kan de gebruiker tekst op meerdere regels invoeren.
 
-   ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
-   >[!CAUTION]
-   >
-   >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk.
+  >[!CAUTION]
+  >
+  >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk.
+  >   
 
-* **Verrijkte tekst met meerdere regels**: Hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in de indeling HTML.
+* **Verrijkte tekst met meerdere regels**: hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in de indeling HTML.
 
-   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   U kunt het type editor selecteren dat gebruikers wordt aangeboden. Hiervoor gebruikt u de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL HTML editor]** in het **[!UICONTROL Advanced]** tab.
+  U kunt het type editor selecteren dat gebruikers wordt aangeboden. Hiervoor gebruikt u de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL HTML editor]** in het veld **[!UICONTROL Advanced]** tab.
 
-   ![](assets/webapp_enrich_text_type.png)
+  ![](assets/webapp_enrich_text_type.png)
 
-   Het aantal weergegeven pictogrammen is afhankelijk van het type editor. Voor een **[!UICONTROL Advanced]** editor is de rendering als volgt:
+  Het aantal weergegeven pictogrammen is afhankelijk van het type editor. Voor een **[!UICONTROL Advanced]** editor is de rendering als volgt:
 
-   ![](assets/webapp_enrich_text_max.png)
+  ![](assets/webapp_enrich_text_max.png)
 
 ### Invoervelden configureren {#configure-input-fields}
 
@@ -114,7 +115,7 @@ Invoervelden worden allemaal geconfigureerd op basis van dezelfde modus, waarbij
 
 De **[!UICONTROL General]** kunt u de naam van het veld invoeren en er indien nodig een standaardwaarde aan toewijzen.
 
-De antwoordopslagmodus kan worden gewijzigd via de **[!UICONTROL Edit storage...]** koppeling. Waarden kunnen worden opgeslagen in een bestaand veld van de database; of u kunt ervoor kiezen geen informatie in de database op te slaan (gebruik een lokale variabele).
+De antwoordopslagmodus kan worden gewijzigd via de **[!UICONTROL Edit storage...]** koppeling. U kunt waarden opslaan in een bestaand veld van de database of u kunt ervoor kiezen geen informatie op te slaan in de database (gebruik een lokale variabele).
 
 >[!NOTE]
 >
@@ -152,7 +153,7 @@ Klik op de knop **[!UICONTROL Load]** koppeling om de waarden op te halen:
 
 >[!CAUTION]
 >
->Herhaal deze bewerking telkens wanneer de lijst wordt bijgewerkt om de aangeboden waarden te vernieuwen.
+>Herhaal deze bewerking wanneer de lijst wordt bijgewerkt en vernieuw de aangeboden waarden.
 
 ## Selectievakjes toevoegen {#adding-checkboxes}
 
@@ -174,7 +175,7 @@ Als het opslagveld (of de variabele) Booleaans is, wordt de waarde die moet word
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Voorbeeld: Een waarde toewijzen aan een veld als een vak is ingeschakeld {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Voorbeeld: een waarde aan een veld toewijzen als een selectievakje is ingeschakeld {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 We willen een selectievakje in een formulier invoegen om een onderhoudsaanvraag te verzenden, zoals hieronder wordt weergegeven:
 
@@ -241,7 +242,7 @@ Per rasterlijn kan slechts één optie worden geselecteerd.
 >
 >In ons voorbeeld is het label van het raster verborgen. Ga om dit te doen naar de **[!UICONTROL Advanced]** de **[!UICONTROL Label position]** display wordt gedefinieerd als **[!UICONTROL Hidden]** . Zie [De positie van labels definiëren](defining-web-forms-layout.md#defining-the-position-of-labels).
 
-## Datums en nummers toevoegen {#adding-dates-and-numbers}
+## Datums en getallen toevoegen {#adding-dates-and-numbers}
 
 De inhoud van de formuliervelden kan worden opgemaakt op basis van de gegevens die in de database zijn opgeslagen of om aan een bepaalde eis te voldoen. U kunt geschikte velden maken voor het invoeren van getallen en datums.
 
@@ -351,7 +352,7 @@ Wanneer de pagina wordt bevestigd, wordt het invoerveld rood weergegeven als de 
 
 ![](assets/s_ncs_admin_survey_captcha_error.png)
 
-U kunt een foutbericht maken om weer te geven. Om dat te doen, gebruik **[!UICONTROL Personalize the message]** in de **[!UICONTROL General]** tab.
+U kunt een foutbericht maken om weer te geven. Gebruik hiervoor de opdracht **[!UICONTROL Personalize the message]** in de **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
@@ -374,11 +375,10 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 >[!CAUTION]
 >
 >* Dit type bestand moet worden gereserveerd voor formulieren met beveiligde toegang (met referenties).
->* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor veilige de plaatsen van het typeIntranet slechts.
+>* Adobe Campaign bestuurt niet de grootte of het type van middel geupload: wij adviseren daarom hoogst gebruikend upload gebieden voor veilige typeIntranetplaatsen slechts.
 >* Als verscheidene servers met de instantie (lading het in evenwicht brengen architectuur) worden verbonden, moet u ervoor zorgen vraag aan de vorm van het Web op de zelfde server aankomt.
 >* Deze implementaties vereisen de hulp van het Adobe Campaign Consulting-team.
 >
-
 
 ## Een verborgen constante invoegen {#inserting-a-hidden-constant}
 
@@ -386,7 +386,7 @@ Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u
 
 Dit veld is niet zichtbaar voor de gebruiker, maar kan worden gebruikt om de gegevens in het gebruikersprofiel te verrijken.
 
-Om dit te doen, plaats a **constante** op de pagina en geef de waarde en opslaglocatie op.
+Om dit te doen, plaats **constante** op de pagina en geef de waarde en opslaglocatie op.
 
 In het volgende voorbeeld wordt **oorsprong** wordt automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
 

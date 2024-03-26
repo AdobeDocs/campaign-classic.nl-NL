@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Controle van de aanbiedingsengine
-description: Controle van de aanbiedingsengine
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Controle van de aanbiedingsmotor
+description: Controle van de aanbiedingsmotor
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Offers
 topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 26%
+source-wordcount: '59'
+ht-degree: 15%
 
 ---
 
 
-# Controle van de aanbiedingsengine{#control-of-offer-engine}
+# Controle van de aanbiedingsmotor{#control-of-offer-engine}
 
 
 

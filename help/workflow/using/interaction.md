@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Interaction
-description: Interaction
+title: Interactie
+description: Interactie
 feature: Workflows, Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 6%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
 
-# Interaction{#interaction}
+# Interactie{#interaction}
 
 
 
@@ -20,9 +20,9 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Aanbiedingsengi
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-![](assets/do-not-localize/v7.jpeg)[Documentatie voor Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Campagne v7-documentatie](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

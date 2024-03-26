@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Workflows voor privacygegevensbeschermingsverordening
-description: Meer informatie over de workflows van de privacygegevensbeschermingsverordening
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Workflows voor de privacygegevensbeschermingsverordening
+description: Meer informatie over de workflows van de privacyverordening
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Privacy
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 10%
+source-wordcount: '111'
+ht-degree: 9%
 
 ---
 
 
-# Verordening inzake bescherming van privacydata{#general-data-protection-regulation-gdpr}
+# Privacygegevensbeschermingsverordening{#general-data-protection-regulation-gdpr}
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Privacy Data Protection-verordening** module standaard. Voor meer informatie over deze module, verwijs naar dit [artikel](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
+De hieronder beschreven workflows worden geïnstalleerd met de **Privacygegevensbeschermingsverordening** module standaard. Raadpleeg deze voor meer informatie over deze module [artikel](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 

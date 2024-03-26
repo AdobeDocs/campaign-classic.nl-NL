@@ -2,13 +2,13 @@
 product: campaign
 title: Een webapplicatie vertalen
 description: Een webapplicatie vertalen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '376'
 ht-degree: 5%
 
 ---
@@ -45,11 +45,11 @@ De tekenreeksen markeren die moeten worden vertaald:
    * Wanneer het geselecteerde blok verschillende tekenreeksen/blokken bevat, wordt het gemarkeerd als één tekenreeks die moet worden vertaald. De tekenreeks bevat vervolgens de HTML-code van de elementen in dit blok.
    * Wanneer u een blok wilt markeren dat meerdere tekenreeksen bevat en wanneer ten minste een van deze tekenreeksen al is gemarkeerd, wordt een waarschuwing weergegeven. Vervolgens kunt u de markering verwijderen uit de geïsoleerde tekenreeks en het volledige blok toevoegen.
 
-      ![](assets/dce_translation_4.png)
+     ![](assets/dce_translation_4.png)
 
    * Wanneer u de markering wilt verwijderen uit een tekenreeks die zich in een blok bevindt dat al is gemarkeerd, kunt u de optie voor het omzetten van de tekenreeks niet rechtstreeks wijzigen. U kunt echter wel toegang krijgen tot het blok met de tekenreeks om deze te wijzigen.
 
-      ![](assets/dce_translation_2.png)
+     ![](assets/dce_translation_2.png)
 
 1. Als u de tekenreeksen hebt gemarkeerd, gaat u terug naar de webtoepassing en selecteert u de optie **[!UICONTROL Translations]** tab.
 1. Selecteer **[!UICONTROL Collect the strings to translate]**. De tekenreeksen die in DCE worden gemarkeerd, worden toegevoegd aan de tekenreeksen van de webtoepassing.

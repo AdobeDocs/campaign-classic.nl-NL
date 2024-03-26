@@ -2,13 +2,13 @@
 product: campaign
 title: Activiteitsafbeeldingen wijzigen
 description: Leer hoe u de activiteitenafbeelding kunt wijzigen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 3%
+source-wordcount: '165'
+ht-degree: 7%
 
 ---
 
@@ -20,27 +20,27 @@ U kunt de afbeeldingen wijzigen die worden gebruikt in de diagrammen van de vers
 
 * Als u de achtergrondafbeelding wilt wijzigen, selecteert u de gewenste doelworkflow en klikt u op de knop **[!UICONTROL Properties]** tab.
 
-   ![](assets/s_user_segmentation_properties_tab.png)
+  ![](assets/s_user_segmentation_properties_tab.png)
 
-   Klik op de knop **[!UICONTROL Select link]** pictogram rechts van **[!UICONTROL Background image]** veld.
+  Als u de afbeelding wilt selecteren, klikt u op de knop **[!UICONTROL Select link]** pictogram rechts van **[!UICONTROL Background image]** veld.
 
-   >[!NOTE]
-   >
-   >De breedte in pixels van de achtergrondafbeelding moet een veelvoud van 4 zijn.
+  >[!NOTE]
+  >
+  >De breedte in pixels van de achtergrondafbeelding moet een veelvoud van 4 zijn.
 
-   ![](assets/s_user_segmentation_background_select.png)
+  ![](assets/s_user_segmentation_background_select.png)
 
-   De **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
+  De **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
 
 * Als u de afbeelding wilt wijzigen die aan een activiteit is gekoppeld, dubbelklikt u op het object en klikt u vervolgens op de knop **[!UICONTROL Advanced]** tab.
 
-   Klik op de knop **[!UICONTROL Select link]** pictogram rechts van **[!UICONTROL Image]** veld.
+  Als u de afbeelding wilt selecteren, klikt u op de knop **[!UICONTROL Select link]** pictogram rechts van **[!UICONTROL Image]** veld.
 
-   ![](assets/s_user_segmentation_activity_image.png)
+  ![](assets/s_user_segmentation_activity_image.png)
 
-   De **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
+  De **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
 
-   ![](assets/s_user_segmentation_activity_image_select.png)
+  ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

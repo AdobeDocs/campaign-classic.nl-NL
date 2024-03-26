@@ -11,7 +11,7 @@ exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -23,8 +23,8 @@ In deze sectie wordt de procedure beschreven die moet worden toegepast om Adobe 
 
 >[!NOTE]
 >
->Voor ontvangen/beheerde de diensteninstanties, moet u met uw Beheerder van Adobe coördineren.\
->Voor on-premise gevallen, kunt u hulp van Adobe Consultants krijgen.
+>Voor ontvangen/beheerde de diensteninstanties, moet u met uw Beheerder van de Adobe coördineren.\
+>Voor on-premise gevallen, kunt u hulp van de Consultants van de Adobe krijgen.
 
 De upgrade moet worden toegepast op alle servers waarop Adobe Campaign is geïnstalleerd.
 

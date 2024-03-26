@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Migratie naar Campaign Classic
-description: Leer hoe u van een vorige campagneversie naar Campaign Classic migreert
+description: Leer hoe u kunt migreren naar een Campaign Classic van een vorige campagneversie
 feature: Upgrade
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: migration
@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 In dit document worden de voorwaarden voor een migratie beschreven, de stappen voor een migratie naar Adobe Campaign Classic v7. De stappen en de facultatieve montages hangen van uw configuratie af.
 
-Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u aan contact op te nemen met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat een migratieprocedure wordt gestart.
+Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u aan contact op te nemen met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat een migratieprocedure wordt gestart.
 
 De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorgen dat de migratie soepel en zonder fouten functioneert. Het migreren van de productieomgeving mag alleen worden uitgevoerd als de gemigreerde testomgeving volledig is gevalideerd.
 

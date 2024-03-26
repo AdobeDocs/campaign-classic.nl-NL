@@ -1,18 +1,18 @@
 ---
 product: campaign
 title: Gebruiksscenario’s voor workflows
-description: Meer informatie over gebruiksgevallen die u kunt uitvoeren met Campaign Classic-workflows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Meer informatie over gebruiksgevallen die u kunt uitvoeren met workflows van Campaigns Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 67%
+source-wordcount: '213'
+ht-degree: 27%
 
 ---
 
-# Gebruiksscenario&#39;s voor workflows {#about-workflow-use-cases}
+# Gebruiksscenario&#39;s voor workflowgebruik {#about-workflow-use-cases}
 
 
 
@@ -26,44 +26,44 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 
 * [De lokale goedkeuringsactiviteit gebruiken](using-the-local-approval-activity.md)
 * [A/B-tests](../../delivery/using/a-b-testing-use-case.md)
-* [Een verjaardags-e-mail verzenden](sending-a-birthday-email.md)
-* [Leveringscontent laden](loading-delivery-content.md)
+* [Een verjaardagsbericht verzenden](sending-a-birthday-email.md)
+* [Inhoud van levering laden](loading-delivery-content.md)
 * [Cross-channel leveringsworkflow](cross-channel-delivery-workflow.md)
 * [E-mailverrijking met aangepaste datumvelden](email-enrichment-with-custom-date-fields.md)
 * [Het maken, bewerken en publiceren van content automatiseren](../../delivery/using/automating-via-workflows.md#examples)
 
-## Controleren {#monitoring}
+## Toezicht {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Een rapport naar een lijst verzenden](sending-a-report-to-a-list.md)
 * [Workflows controleren](supervising-workflows.md)
-* [Gepersonaliseerde waarschuwingen verzenden naar operatoren](sending-personalized-alerts-to-operators.md)
+* [Persoonlijke waarschuwingen verzenden aan operatoren](sending-personalized-alerts-to-operators.md)
 * [Een goedkeuringsproces voor ontvangers instellen voordat een levering wordt verzonden](using-the-local-approval-activity.md)
 
-## Data management {#management}
+## Gegevensbeheer {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
-* [Data-updates coördineren](coordinating-data-updates.md)
+* [Gegevensupdates coördineren](coordinating-data-updates.md)
 * [Een overzichtslijst maken](creating-a-summary-list.md)
-* [Data verrijken](enriching-data.md)
-* [Werken met samenvoegingen](using-aggregates.md)
+* [Gegevens worden verrijkt](enriching-data.md)
+* [Werken met aggregaten](using-aggregates.md)
 * [Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm](../../platform/using/unzip-decrypt.md)
 * [Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Driemaandelijkse lijstupdate met een incrementele query](quarterly-list-update.md)
 * [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](deduplication-merge.md)
-* [Een workflow instellen voor terugkerende importactiviteiten](recurring-import-workflow.md)
+* [Een terugkerende importworkflow instellen](recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Query’s uitvoeren op de tabel met ontvangers](querying-recipient-table.md)
-* [Query’s uitvoeren op leveringsgegevens](querying-delivery-information.md)
-* [Berekening van samenvoegingen uitvoeren](performing-aggregate-computing.md)
-* [Query’s uitvoeren met behulp van groeperingsbeheer](querying-using-grouping-management.md)
-* [Query’s uitvoeren met behulp van een veel-op-veel-relatie](querying-using-many-to-many-relationship.md)
+* [De tabel met ontvangers opvragen](querying-recipient-table.md)
+* [Leveringsgegevens opvragen](querying-delivery-information.md)
+* [Complexe computerverwerking uitvoeren](performing-aggregate-computing.md)
+* [Vragen met behulp van groeperingsbeheer](querying-using-grouping-management.md)
+* [Het vragen gebruikend een vele-aan-vele-verhouding](querying-using-many-to-many-relationship.md)
 * [Een berekend veld voor een opsommingstype toevoegen](adding-enumeration-type-calculated-field.md)
 * [Een filter maken](creating-a-filter.md)
 * [Gedupliceerde ontvangers filteren](filtering-duplicated-recipients.md)

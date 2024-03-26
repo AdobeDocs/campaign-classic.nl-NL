@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 2%
 
 ---
 
@@ -32,14 +32,14 @@ Voor het verbinden met een externe database van een Hadoop in FDA zijn de volgen
 
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s installeren en een DSN maken voor uw Hive-verbinding. Instructies vindt u in [deze pagina](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
-1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
+1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u het Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
 
    ```
    systemctl stop nlserver.service
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic, kunt u dan uw vormen [!DNL Hadoop] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#hadoop-external).
+1. In Campaign Classic, kunt u uw [!DNL Hadoop] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#hadoop-external).
 
 ## Externe rekening van hadoop {#hadoop-external}
 
@@ -72,7 +72,7 @@ De schakelaar steunt de volgende opties ODBC:
 | Naam | Waarde |
 |---|---|
 | ODBCMgr | iODBC |
-| entrepot | 1/2/4 |
+| entrepot | 02-01-4 |
 
 De aansluiting ondersteunt ook de volgende opties voor Hive:
 

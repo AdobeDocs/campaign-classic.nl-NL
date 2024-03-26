@@ -11,7 +11,7 @@ exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ Ontdek hoe u processen en taken kunt organiseren met Adobe Campaign-workflows.
 
 [Klik hier voor meer informatie over het maken van uw eerste workflow](../../workflow/using/building-a-workflow.md): leer concepten en best practices om workflows in Campaign te bouwen.
 
-## Hoe kan ik data importeren in Campaign? {#how-can-i-import-data-in-campaign-}
+## Hoe kan ik gegevens importeren in Campagne? {#how-can-i-import-data-in-campaign-}
 
 Leer de beste werkwijzen voor het importeren van gegevens in [deze sectie](../../platform/using/import-export-best-practices.md).
 
@@ -33,13 +33,13 @@ Leer de beste werkwijzen voor het importeren van gegevens in [deze sectie](../..
 
 Ontdek hoe u de uitvoering van een Campaign-workflow kunt controleren [op deze pagina](../../workflow/using/starting-a-workflow.md).
 
-## Hoe kan ik Campaign-data bijwerken met een workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
+## Hoe kan ik Campagnegegevens bijwerken met een workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
 
 U kunt de data in de database op grote schaal bijwerken, samenvoegen en invoegen.
 
 [Klik hier voor meer informatie](../../workflow/using/update-data.md).
 
-## Hoe kan ik mogelijkheden voor data management benutten? {#how-can-i-leverage-data-management-capabilities-}
+## Hoe kan ik mogelijkheden voor gegevensbeheer benutten? {#how-can-i-leverage-data-management-capabilities-}
 
 In Adobe Campaign kunt u een reeks activiteiten gebruiken om complexe targetingproblemen op te lossen door efficiëntere en flexibelere tools aan te bieden. Met activiteiten voor data management kunt u een consistent beheer van alle communicaties met een contactpersoon implementeren met behulp van informatie over hun contracten, lidmaatschappen, reactiviteit op leveringen, enzovoort. Met data management kunt u de levenscyclus van data bijhouden tijdens segmentatiebewerkingen, met name:
 
@@ -49,20 +49,20 @@ In Adobe Campaign kunt u een reeks activiteiten gebruiken om complexe targetingp
 
 [Klik hier voor meer informatie](../../workflow/using/targeting-data.md#data-management) en om een complex doel te ontwerpen en aan uw data te werken waarin workflowactiviteiten voor data management worden gecombineerd.
 
-## Kan ik het verzenden van gepersonaliseerde berichten automatiseren? {#can-i-automate-personalized-messages-sending-}
+## Kan ik het verzenden van persoonlijke berichten automatiseren? {#can-i-automate-personalized-messages-sending-}
 
 Lees [dit gebruiksscenario](../../workflow/using/enriching-data.md) om gepersonaliseerde berichten naar mensen te sturen afhankelijk van hun hoogste scores in een wedstrijd.
 
-## Hoe kan ik een doelgroep in subsets splitsen met een workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
+## Hoe kan ik een publiek in subsets splitsen met een workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
 Ontdek [in deze sectie](../../workflow/using/split.md) hoe u een doel kunt splitsen in verschillende subsets.
 
-## Hoe kan ik ontvangerdata bijwerken vanuit een extern bestand? {#how-can-i-update-recipient-data-from-an-external-file-}
+## Hoe kan ik ontvangergegevens bijwerken uit een extern bestand? {#how-can-i-update-recipient-data-from-an-external-file-}
 
 U kunt bepaalde velden in een Campaign-tabel wijzigen met waarden uit een extern tekstbestand.
 
 [Klik hier voor meer informatie](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
-## Hoe kan ik nieuwe ontvangers identificeren en doelgericht benaderen? {#how-can-i-identify-and-target-new-recipients-}
+## Hoe kan ik nieuwe ontvangers identificeren en richten? {#how-can-i-identify-and-target-new-recipients-}
 
 In [dit gebruiksscenario](../../workflow/using/using-aggregates.md) ontdekt u hoe u samenvoegingen kunt gebruiken om automatisch de laatste ontvangers die in de database zijn toegevoegd, te identificeren en hen een welkomstbericht te verzenden.

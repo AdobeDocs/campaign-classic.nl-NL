@@ -9,8 +9,8 @@ role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 8%
+source-wordcount: '915'
+ht-degree: 7%
 
 ---
 
@@ -134,6 +134,6 @@ Waarden worden indien nodig automatisch gecodeerd.
 
 >[!IMPORTANT]
 >
->Het toevoegen van een script voor het opnemen van extra SMTP-kopteksten is gereserveerd voor gevorderde gebruikers.
+>Het toevoegen van een manuscript voor het opnemen van extra kopballen SMTP is gereserveerd voor gevorderde gebruikers.
 >
 >De syntaxis van dit script moet voldoen aan de vereisten van dit type content: geen ongebruikte ruimte, geen lege regel, enz.

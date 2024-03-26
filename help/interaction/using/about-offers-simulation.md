@@ -6,8 +6,8 @@ feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 5%
+source-wordcount: '237'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Bij de simulatie wordt rekening gehouden met de context en de subsidiabiliteitsr
 
 Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding.
 
-![](assets/do-not-localize/how-to-video.png)[ U kunt ook deze video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) bekijken.
+![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
 

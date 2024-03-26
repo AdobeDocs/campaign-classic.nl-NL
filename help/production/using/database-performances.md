@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 10%
+source-wordcount: '494'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ De meeste prestatieproblemen houden verband met databaseonderhoud. Hier volgen v
 
 * Configuratie
 * Installatie en configuratie van het Adobe Campaign-platform
-* Databaseonderhoud
+* Database-onderhoud
 * Realtime diagnose
 
 ## Configuratie {#configuration}
@@ -35,11 +35,11 @@ Controleer of de eerste configuratie van het Adobe Campaign-platform nog geldig 
 >
 >U kunt verwijzen naar [Handleiding voor Adobe Campaign Hardware Sizing](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html) voor inzichten.
 
-## Configuratie van Platform {#platform-configuration}
+## Platformconfiguratie {#platform-configuration}
 
 Onjuiste configuratie kan de prestaties van het platform beïnvloeden. Wij adviseren dat u netwerkconfiguratie, de opties van de platformleverbaarheid evenals configuratie MTA in **serverConf.xml** bestand.
 
-## Databaseonderhoud {#database-maintenance}
+## Database-onderhoud {#database-maintenance}
 
 **Database opschonen, taak**
 

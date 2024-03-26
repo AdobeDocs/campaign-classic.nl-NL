@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Tracking-URL's detecteren
+title: URL's bijhouden detecteren
 description: Meer informatie over aanbevolen patronen voor het bijhouden van URL's
 feature: Monitoring
 role: User, Developer, Data Engineer
@@ -34,7 +34,7 @@ Na verwerking `<%@` De URL die moet worden bijgehouden, heeft de volgende syntax
 
 ## Onbeveiligd patroon
 
-Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. Meer informatie in [deze pagina](../../installation/using/privacy.md#url-personalization).
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. Meer informatie vindt u [op deze pagina](../../installation/using/privacy.md#url-personalization).
 
 Bijvoorbeeld de `<a href="http://<%=myURL%>">` is **niet beveiligd** en moeten worden vermeden.
 

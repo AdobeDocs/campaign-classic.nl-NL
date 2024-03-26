@@ -48,7 +48,7 @@ Klik op de knop **[!UICONTROL Filter the source data...]** koppeling om de berek
 
 ## Afmetingen definiëren {#defining-dimensions}
 
-Dimension vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitenschema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
+Dimensionen vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitenschema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
 
 Deze analysesassen worden gedefinieerd in de **[!UICONTROL Dimension]** van de kubus.
 

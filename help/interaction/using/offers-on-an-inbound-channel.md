@@ -3,7 +3,7 @@ product: campaign
 title: Aanbiedingen op een inbound-kanaal
 description: Aanbiedingen op een inbound-kanaal
 feature: Interaction, Offers
-badge-v7: label="v7" type="Informative" tooltip="Van toepassing op Campaign Classic v7"
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference

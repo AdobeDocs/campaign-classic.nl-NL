@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 2%
+source-wordcount: '454'
+ht-degree: 3%
 
 ---
 
@@ -72,7 +72,7 @@ Leer hoe u machtigingen voor mappen instelt [in deze sectie](access-management-f
 
 ## Schermresolutie {#screen-resolution}
 
-Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
+Voor optimale navigatie en bruikbaarheid raadt de Adobe aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
 
 >[!CAUTION]
 >

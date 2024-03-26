@@ -2,12 +2,12 @@
 product: campaign
 title: Gegevens bijwerken
 description: Meer informatie over de activiteiten in de workflow Gegevens bijwerken
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '859'
 ht-degree: 2%
 
 ---
@@ -22,10 +22,10 @@ An **Gegevens bijwerken**-type activiteit voert een massa-update van de gebieden
 
 De **[!UICONTROL Operation type]** kunt u het proces kiezen dat op de gegevens in de database moet worden uitgevoerd:
 
-* **[!UICONTROL Insert or update]**: gegevens toevoegen of bijwerken als deze al zijn toegevoegd.
+* **[!UICONTROL Insert or update]**: voeg gegevens toe of werk deze bij als deze al zijn toegevoegd.
 * **[!UICONTROL Insert]**: alleen gegevens toevoegen.
-* **[!UICONTROL Update]**: alleen gegevens bijwerken.
-* **[!UICONTROL Update and merge collections]**: gegevens bijwerken en een primaire record kiezen, en vervolgens elementen koppelen die zijn gekoppeld aan de duplicaten in deze primaire record. Duplicaten kunnen vervolgens worden verwijderd zonder weeselementen in bijlage te maken.
+* **[!UICONTROL Update]**: alleen updategegevens.
+* **[!UICONTROL Update and merge collections]**: werk gegevens bij en kies een primaire record en koppel vervolgens elementen die zijn gekoppeld aan de duplicaten in deze primaire record. Duplicaten kunnen vervolgens worden verwijderd zonder weeselementen in bijlage te maken.
 * **[!UICONTROL Delete]**: Data verwijderen.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -38,7 +38,7 @@ Geef op hoe de records in de database moeten worden geïdentificeerd:
 
 * Als gegevensinvoer betrekking heeft op een bestaande doeldimensie, selecteert u de optie **[!UICONTROL By directly using the targeting dimension]** en selecteert u deze in het dialoogvenster **[!UICONTROL Updated dimension]** veld.
 
-   U kunt de velden voor de geselecteerde dimensie weergeven met de opdracht **[!UICONTROL Edit this link]** vergrootglasknop.
+  U kunt de velden voor de geselecteerde dimensie weergeven met de opdracht **[!UICONTROL Edit this link]** vergrootglasknop.
 
 * Geef anders een of meer koppelingen op die het mogelijk maken de gegevens in de database te identificeren of de afstemmingssleutels rechtstreeks te gebruiken.
 
@@ -81,7 +81,7 @@ Creeert een uitgaande overgang die aan het eind van uitvoering zal worden geacti
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-Hiermee maakt u een uitgaande overgang met records die na de update niet correct zijn verwerkt (bijvoorbeeld als er een duplicaat is). De update markeert doorgaans het einde van een doelworkflow en daarom wordt de optie niet standaard geactiveerd.
+Hiermee maakt u een uitgaande overgang die records bevat die na de update niet correct zijn verwerkt (bijvoorbeeld als er een duplicaat is). De update markeert doorgaans het einde van een doelworkflow en daarom wordt de optie niet standaard geactiveerd.
 
 ## Verzamelingen bijwerken en samenvoegen {#updating-and-merging-collections}
 
@@ -91,7 +91,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 >
 >Met deze optie kunt u ook verwijzingen naar secundaire records uit werkstroomwerktabellen (targetWorkflow), leveringen (targetDelivery) en lijsten (targetList) verwerken. Indien nodig worden deze koppelingen weergegeven in de lijst waarin u velden en verzamelingen selecteert.
 
-1. Selecteer **[!UICONTROL Update and merge collections]** bewerking.
+1. Selecteer de **[!UICONTROL Update and merge collections]** -bewerking.
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -101,13 +101,13 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 1. Selecteer de verzamelingen die u wilt verplaatsen naar de primaire record en de velden die u wilt bijwerken.
 
-   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Raadpleeg deze [sectie](../../platform/using/defining-filter-conditions.md#building-expressions) voor meer informatie. Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
+   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Raadpleeg voor meer informatie deze [sectie](../../platform/using/defining-filter-conditions.md#building-expressions). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
 
    Dan ga de voorwaarden in om met de regel rekening te houden.
 
    Geef ten slotte het type update op dat moet worden uitgevoerd. U kunt er bijvoorbeeld voor kiezen om de secundaire records te verwijderen nadat u de gegevens hebt bijgewerkt.
 
-   U kunt bijvoorbeeld de samenvoeging configureren van verzamelingen met heterogene gegevens, zoals de abonnementenlijst voor een ontvanger. Gebruikend regels, kunt u nieuwe abonnementsgeschiedenissen van secundaire verslagabonnementen ook tot stand brengen, of zelfs de lijst van abonnementen van een secundair verslag verplaatsen naar een primair verslag.
+   U kunt bijvoorbeeld de samenvoeging configureren van verzamelingen die heterogene gegevens bevatten, zoals de abonnementenlijst voor een ontvanger. Gebruikend regels, kunt u nieuwe abonnementsgeschiedenissen van secundaire verslagabonnementen ook tot stand brengen, of zelfs de lijst van abonnementen van een secundair verslag verplaatsen naar een primair verslag.
 
 1. Geef de volgorde op waarin u de secundaire records wilt verwerken door **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
@@ -115,7 +115,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 Gegevens voor secundaire records worden gekoppeld aan het hoofdrecord als de gedefinieerde regels van toepassing zijn. Afhankelijk van het geselecteerde type update kunnen de secundaire records worden verwijderd.
 
-## Voorbeeld: Gegevens bijwerken na verrijking {#example--update-data-following-an-enrichment}
+## Voorbeeld: Gegevens bijwerken na een verrijking {#example--update-data-following-an-enrichment}
 
 De [Stap 2: Verrijkte gegevens naar de tabel &#39;Aankopen&#39; schrijven](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) een gedeelte van het gebruiksgeval waarin details over het maken van een lijst met terugwinningsobjecten een voorbeeld zijn van een gegevensupdate na een verrijkingsactiviteit.
 

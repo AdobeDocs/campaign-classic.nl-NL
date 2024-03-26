@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing
-description: Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing
+title: Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur
+description: Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Binnenkomende SMS-workflowactiviteit voor infrastructuur voor midsourcing {#inbound-sms}
+# Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur {#inbound-sms}
 
 ## Beperkingen {#limitations}
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * Als er meerdere InSMS-workflows per instantie van de tussenbron zijn, kan gegevensduplicatie optreden omdat de SMS-id van de tussenbron constant blijft terwijl de externe account-id&#39;s variëren.
 
 1. Sla de workflow op en start deze opnieuw.
-
-

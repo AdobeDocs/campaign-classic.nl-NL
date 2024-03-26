@@ -11,7 +11,7 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -51,8 +51,8 @@ Adobe Campaign kan werken met twee logniveaus:
    >[!NOTE]
    >
    >Als u **trekfilter:&#42;**, worden alle logboektypes geactiveerd: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   >De nuttigste logboektypes zijn: **wdbc** (geeft alle SQL-query&#39;s weer), **zeep** (geeft alle SOAP-aanroepen weer), **ldap** (geeft alle LDAP-query&#39;s weer na verificatie), **xtkquery** (toont de lijst van al querydef).\
-   >U kunt ze afzonderlijk gebruiken (**tracefilter:zeep,wdbc** bijvoorbeeld). U kunt ze ook allemaal activeren en ervoor kiezen bepaalde andere opties uit te sluiten: **-tracefilter:&#42;,!soap**
+   De nuttigste logboektypes zijn: **wdbc** (geeft alle SQL-query&#39;s weer), **zeep** (geeft alle SOAP-aanroepen weer), **ldap** (geeft alle LDAP-query&#39;s weer na verificatie), **xtkquery** (toont de lijst van al querydef).\
+   U kunt ze afzonderlijk gebruiken (**tracefilter:zeep,wdbc** bijvoorbeeld). U kunt ze ook allemaal activeren en ervoor kiezen bepaalde andere opties uit te sluiten: **-tracefilter:&#42;,!soap**
 
    Controleer of de fout daadwerkelijk is opgetreden en start het proces op de normale manier opnieuw:
 
@@ -62,7 +62,7 @@ Adobe Campaign kan werken met twee logniveaus:
 
 >[!IMPORTANT]
 >
->De logboeken van deze bevelen worden opgeslagen in het logboekdossier van de module.
+De logboeken van deze bevelen worden opgeslagen in het logboekdossier van de module.
 
 Hier is een voorbeeld specifiek voor de module van het Web. De overige modules werken zoals hierboven aangegeven.
 
@@ -86,12 +86,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
->De **Tracefile** in de modus kunt u de logbestanden opslaan. In de bovenstaande voorbeelden worden de logbestanden opgeslagen in het dialoogvenster **var/`<instance-name>`/mta_debug.log** en **var/default/web_debug.log** bestanden.
+De **Tracefile** in de modus kunt u de logbestanden opslaan. In de bovenstaande voorbeelden worden de logbestanden opgeslagen in het dialoogvenster **var/`<instance-name>`/mta_debug.log** en **var/default/web_debug.log** bestanden.
 
 >[!IMPORTANT]
 >
->Voeg in Windows de optie LD_PRELOAD niet toe. De volgende opdracht volstaat:\
->nlserver web -tomcat -verbose -tracefilter:&#42;
+Voeg in Windows de optie LD_PRELOAD niet toe. De volgende opdracht volstaat:\
+nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Controleer of het probleem zich opnieuw voordoet en start de module opnieuw:
 

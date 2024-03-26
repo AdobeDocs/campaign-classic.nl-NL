@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 3%
+source-wordcount: '1133'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 
 >[!IMPORTANT]
 >
->* Adobe raadt u ten zeerste aan een databaseback-up te maken voor elke instantie voordat u deze bijwerkt. Raadpleeg [deze sectie](../../production/using/backup.md) voor meer informatie.
+>* Adobe raadt u ten zeerste aan een databaseback-up te maken voordat u de database bijwerkt. Raadpleeg [deze sectie](../../production/using/backup.md) voor meer informatie.
 >* Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
 >* Uitlezen [deze sectie](../../installation/using/general-architecture.md) en de [upgrade voor build](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk voordat u begint.
 >
@@ -75,8 +75,8 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
    Maak verbinding met de [Software-distributieportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met uw gebruikersgegevens. Meer informatie over softwaredistributie in [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 1. Selecteer de installatiemodus: kies **[!UICONTROL Update or repair]**
-1. Klik op **[!UICONTROL Next]** .
-1. Klik op **[!UICONTROL Finish]** .
+1. Klikken **[!UICONTROL Next]** .
+1. Klikken **[!UICONTROL Finish]** .
 
    Het installatieprogramma kopieert vervolgens de nieuwe bestanden.
 

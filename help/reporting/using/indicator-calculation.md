@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 2%
+source-wordcount: '3049'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Geopende items<br /> </td> 
+   <td> Openen<br /> </td> 
    <td> @open<br /> </td> 
    <td> De som van alle @totalClick met een primaire URL-sleutel gelijk aan 1.<br /> </td> 
    <td> sum(IF([@url-id]=1, @totalClicks, 0)<br /> </td> 
@@ -362,7 +362,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery]** (nms:levering), **[!UIC
    <td> Formule: count(@id)<br /> Filter: @receiving-id != 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> Geopende items<br /> </td> 
+   <td> Openen<br /> </td> 
    <td> @opened<br /> </td> 
    <td> Aantal van alle @ids met een type URL gelijk aan "Open".<br /> </td> 
    <td> count (Iif([url/@type] = 2, @id, 0)<br /> </td> 
@@ -467,13 +467,13 @@ Dit verslag is gebaseerd op de **[!UICONTROL Services]** table (nms:service).
    <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Lidmaatschappen<br /> </td> 
+   <td> Abonnementen<br /> </td> 
    <td> @_abonnement<br /> </td> 
    <td> Aantal abonnementen (@action = 1) op de vorige dag.<br /> </td> 
    <td> sum(Iif(@action = 1 en @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Uitschrijvingen<br /> </td> 
+   <td> Abonnementen<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> aantal aflossingen (actie = 0) op de vorige dag.<br /> </td> 
    <td> sum(Iif(@action = 0 en @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -562,14 +562,14 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
    <td> Count(@status=2 en msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Geopende items<br /> </td> 
-   <td> @recipientOpen<br /> </td> 
+   <td> Openen<br /> </td> 
+   <td> @receivingOpen<br /> </td> 
    <td> Aantal alle @wideLog-ids in alle volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klikken<br /> </td> 
-   <td> @recipientClick<br /> </td> 
+   <td> @receivingClick<br /> </td> 
    <td> Afzonderlijke telling van @wideLog-ids met een type URL gelijk aan "E-mail klik". <br /> </td> 
    <td> Countdifferent(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
   </tr> 
@@ -593,7 +593,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Ontvanger klikt<br /> </td> 
-   <td> @recipientClick<br /> </td> 
+   <td> @receivingClick<br /> </td> 
    <td> Afzonderlijke telling van de @wideLog-ids met een type URL dat "E-mail klikt"evenaart.<br /> </td> 
    <td> Countdifferent(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
   </tr> 
@@ -660,7 +660,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> De som van alle @totalClick met een categorie URL die "twitter" evenaart.<br /> </td> 
+   <td> De som van alle @totalClick met een categorie URL die "twitter"evenaart.<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -823,7 +823,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:levering).
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Open<br /> </td> 
+   <td> Openen<br /> </td> 
    <td> @open<br /> </td> 
    <td> De som van alle @totalClick met een primaire URL-sleutel die gelijk is aan 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0)<br /> </td> 
@@ -870,8 +870,8 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
    <td> @unbereikable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @deny<br /> </td> 
   </tr> 
   <tr> 
-   <td> Geopende items<br /> </td> 
-   <td> @recipientOpen<br /> </td> 
+   <td> Openen<br /> </td> 
+   <td> @receivingOpen<br /> </td> 
    <td> Het totale aantal @wideLog-ids in de volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
   </tr> 
@@ -882,7 +882,7 @@ Dit verslag is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
    <td> Countdifferent(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Uitschrijvingen<br /> </td> 
+   <td> Abonnementen<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Het totale aantal @ids waarvoor de categorie URL staat voor "Uitschakelen".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0)<br /> </td> 
@@ -905,7 +905,7 @@ Dit verslag is gebaseerd op **Leveringen** (nms:levering) en **Logboeken bijhoud
  </thead> 
  <tbody> 
   <tr> 
-   <td> Geopende items<br /> </td> 
+   <td> Openen<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
    <td> De som van alle @id met een primaire URL-sleutel gelijk aan 1 (open). <br /> </td> 
    <td> count(IF([@url-id] = 1, @id, 0)<br /> </td> 

@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Antwoorden op webformulieren
-description: Antwoorden op webformulieren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+title: Antwoorden webformulieren
+description: Antwoorden webformulieren
+badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 1%
+source-wordcount: '872'
+ht-degree: 0%
 
 ---
 
-# Antwoorden op webformulieren{#web-forms-answers}
+# Antwoorden webformulieren{#web-forms-answers}
 
 
 ## Responsopslagvelden {#response-storage-fields}
@@ -26,11 +26,11 @@ Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
 * **[!UICONTROL Edit a recipient]**
 
-   U kunt een veld van de database selecteren: de antwoorden van de gebruikers zullen op dit gebied worden opgeslagen. Voor elke gebruiker wordt alleen de laatste ingevoerde waarde opgeslagen: het wordt toegevoegd aan hun profiel: Zie [Gegevens opslaan in de database](#storing-data-in-the-database).
+  U kunt een veld van de database selecteren: de antwoorden van gebruikers worden in dit veld opgeslagen. Voor elke gebruiker wordt alleen de laatste ingevoerde waarde opgeslagen: deze wordt toegevoegd aan het profiel: Zie voor [Gegevens opslaan in de database](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Zie [Gegevens opslaan in een lokale variabele](#storing-data-in-a-local-variable).
+  Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Zie [Gegevens opslaan in een lokale variabele](#storing-data-in-a-local-variable).
 
 ### Gegevens opslaan in de database {#storing-data-in-the-database}
 
@@ -88,25 +88,25 @@ Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de ve
 
 * Voor inhoud die is opgeslagen in een veld van de database:
 
-   ```
-   <%=ctx.recipient.@field name%
-   ```
+  ```
+  <%=ctx.recipient.@field name%
+  ```
 
 * Voor inhoud die is opgeslagen in een lokale variabele:
 
-   ```
-   <%= ctx.vars.variable name %
-   ```
+  ```
+  <%= ctx.vars.variable name %
+  ```
 
 * Voor inhoud die is opgeslagen in een tekstveld HTML:
 
-   ```
-   <%== HTML field name %
-   ```
+  ```
+  <%== HTML field name %
+  ```
 
-   >[!NOTE]
-   >
-   >In tegenstelling tot andere velden waarvoor `<%=` tekens worden vervangen door escape-tekens; de HTML-inhoud wordt opgeslagen als &#39;is&#39; door de `<%==` syntaxis.
+  >[!NOTE]
+  >
+  >In tegenstelling tot andere velden waarvoor `<%=` tekens worden vervangen door escape-tekens; de HTML-inhoud wordt opgeslagen als &#39;is&#39; door de `<%==` syntaxis.
 
 ## Webformulieren opslaan {#saving-web-forms-answers}
 
@@ -116,17 +116,17 @@ Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt 
 
 U kunt dit vak op twee manieren gebruiken:
 
-* Als het webformulier wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die de toepassing opent al in de database aanwezig is, kunt u het volgende controleren: **[!UICONTROL Update the preloaded record]** optie. Raadpleeg voor meer informatie hierover [Een formulier via e-mail verzenden](publishing-a-web-form.md#delivering-a-form-via-email).
+* Als het webformulier wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die de toepassing opent al in de database aanwezig is, kunt u de optie **[!UICONTROL Update the preloaded record]** -optie. Raadpleeg voor meer informatie hierover [Een formulier via e-mail verzenden](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Raadpleeg voor meer informatie hierover [De formuliergegevens vooraf laden](publishing-a-web-form.md#pre-loading-the-form-data).
+  In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Raadpleeg voor meer informatie hierover [De formuliergegevens vooraf laden](publishing-a-web-form.md#pre-loading-the-form-data).
 
-   >[!CAUTION]
-   >
-   >Met deze optie worden de gebruikersgegevens genegeerd, inclusief het e-mailadres als er een veld is waarin de gegevens moeten worden ingevoerd. Het kan niet worden gebruikt om nieuwe profielen te maken en vereist het gebruik van een voorlaadvenster in het formulier.
+  >[!CAUTION]
+  >
+  >Met deze optie worden de gebruikersgegevens genegeerd, inclusief het e-mailadres als er een veld is waarin de gegevens moeten worden ingevoerd. Het kan niet worden gebruikt om nieuwe profielen te maken en vereist het gebruik van een voorlaadvenster in het formulier.
 
 * Als u de gegevens van ontvangers in de database wilt verrijken, bewerkt u het opslagvak en selecteert u de afstemmingssleutel. Voor intern gebruik (meestal een intranetsysteem) of voor een formulier dat wordt gebruikt om nieuwe profielen te maken, kunt u bijvoorbeeld het (de) afstemmingsveld(en) selecteren. De doos biedt alle gebieden van het gegevensbestand aan die in de diverse pagina&#39;s van de toepassing van het Web worden gebruikt:
 
-   ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Standaard worden de gegevens in de database geïmporteerd via een **[!UICONTROL Update or insertion]** bewerking: als het element in de database aanwezig is, wordt het element bijgewerkt (bijvoorbeeld de geselecteerde nieuwsbrief of het ingevoerde e-mailadres). Als deze niet bestaat, wordt de informatie toegevoegd.
 
