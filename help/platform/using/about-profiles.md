@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 13%
+source-wordcount: '912'
+ht-degree: 15%
 
 ---
 
@@ -90,21 +90,19 @@ De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in [deze 
 
 ## Actieve profielen {#active-profiles}
 
-Actieve profielen zijn de profielen die voor factureringsdoeleinden worden geteld.
+Een actief profiel is een profiel waarmee de klant de afgelopen twaalf maanden via een willekeurig kanaal heeft geprobeerd te communiceren.
 
-Facturering heeft alleen betrekking op profielen die **actief**. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
+Volgens uw contract worden al uw Campaign-instanties ingericht met een specifieke hoeveelheid actieve profielen die voor factureringsdoeleinden worden geteld. Raadpleeg het meest recente contract voor informatie over het aantal aangeschafte actieve profielen. Meer informatie in [Adobe Campaign-productbeschrijving](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Een profiel dat voor meerdere leveringen is bedoeld, wordt slechts eenmaal geteld.
+U kunt het aantal actieve profielen op uw instantie direct van het Controlebord van de Campagne controleren. Raadpleeg voor meer informatie de [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!NOTE]
->
->Er wordt geen rekening gehouden met de kanalen facebook en X (voorheen bekend als Twitter).
+De volgende instructies en beperkingen zijn van toepassing:
 
-Aantal actieve profielen is beschikbaar voor **Marketinginstanties** alleen. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
+* Een profiel dat voor meerdere leveringen is bedoeld, wordt slechts eenmaal geteld.
+* Profielen die zijn gericht in het kader van sociale marketing op X (Twitter) of Facebook, worden niet in aanmerking genomen als actieve profielen.
+* Het aantal actieve profielen is beschikbaar voor **Marketinginstanties** alleen. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
+* De telling is gebaseerd op de ontvankelijke primaire sleutel. Als een profiel aanwezig is in twee verschillende tabellen voor ontvangers, kan het daarom twee keer worden geteld als een actief profiel.
 
->[!NOTE]
->
->U kunt het aantal actieve profielen op uw instantie ook controleren direct van het Controlebord van de Campagne. Raadpleeg voor meer informatie de [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Video over zelfstudie {#create-profiles-video}
 
