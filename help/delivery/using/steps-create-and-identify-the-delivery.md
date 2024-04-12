@@ -2,15 +2,14 @@
 product: campaign
 title: De levering maken en identificeren
 description: De levering maken en identificeren
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 5%
+source-wordcount: '284'
+ht-degree: 4%
 
 ---
 

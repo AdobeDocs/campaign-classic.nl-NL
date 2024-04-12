@@ -2,15 +2,14 @@
 product: campaign
 title: Aanbevolen werkwijzen voor het leveren van campagnes
 description: Leer de beste werkwijzen bij het ontwerpen en verzenden van een levering
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 5%
+source-wordcount: '108'
+ht-degree: 4%
 
 ---
 

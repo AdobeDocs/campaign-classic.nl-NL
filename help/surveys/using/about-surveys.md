@@ -2,13 +2,12 @@
 product: campaign
 title: Aan de slag met enquêtes
 description: Aan de slag met campagneenquêtes
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 3%
 
 ---

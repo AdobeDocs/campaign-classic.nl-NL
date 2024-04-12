@@ -2,14 +2,13 @@
 product: campaign
 title: Testen van berichten
 description: Leer hoe u berichttracering kunt testen
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
 role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---

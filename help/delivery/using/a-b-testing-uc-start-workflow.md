@@ -2,15 +2,14 @@
 product: campaign
 title: De workflow starten
 description: Leer hoe u A/B-tests kunt uitvoeren met een speciale praktijkcase
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: A/B Testing
 role: User
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 6%
+source-wordcount: '96'
+ht-degree: 5%
 
 ---
 

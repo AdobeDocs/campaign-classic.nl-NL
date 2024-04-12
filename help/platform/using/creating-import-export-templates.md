@@ -3,16 +3,15 @@ product: campaign
 title: Importeren- en exportsjablonen maken
 description: Leer hoe u import- en exportsjablonen maakt in Campagne
 feature: Templates
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 4%
+source-wordcount: '136'
+ht-degree: 3%
 
 ---
 

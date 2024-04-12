@@ -2,14 +2,13 @@
 product: campaign
 title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
 description: Belangrijke punten die u kunt controleren bij het beheren van de prestaties in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---

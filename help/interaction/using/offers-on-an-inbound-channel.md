@@ -3,16 +3,15 @@ product: campaign
 title: Aanbiedingen op een inbound-kanaal
 description: Aanbiedingen op een inbound-kanaal
 feature: Interaction, Offers
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
 

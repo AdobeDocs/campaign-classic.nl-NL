@@ -2,14 +2,13 @@
 product: campaign
 title: Eigenschappen van het rapport
 description: Meer informatie over de instellingen van de rapporten
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 2%
+source-wordcount: '438'
+ht-degree: 1%
 
 ---
 

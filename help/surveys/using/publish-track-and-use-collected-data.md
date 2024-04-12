@@ -2,13 +2,12 @@
 product: campaign
 title: Verzamelde data gegevens publiceren, bijhouden en gebruiken
 description: Leer hoe u in een enquête verzamelde gegevens publiceert, bijhoudt en gebruikt
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---

@@ -2,14 +2,13 @@
 product: campaign
 title: Informatie over leverbaarbaarheid in Adobe Campaign Classic
 description: Meer informatie over het beheren van de leverbaarheid in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '766'
 ht-degree: 5%
 
 ---

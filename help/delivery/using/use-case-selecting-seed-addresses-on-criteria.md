@@ -2,13 +2,12 @@
 product: campaign
 title: "Hoofdlettergebruik: selecteer adressen op criteria"
 description: "Hoofdlettergebruik: selecteer adressen op criteria"
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '851'
 ht-degree: 2%
 
 ---

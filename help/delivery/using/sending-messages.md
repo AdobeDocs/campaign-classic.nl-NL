@@ -2,15 +2,14 @@
 product: campaign
 title: Belangrijke stappen voor het verzenden van een e-mail
 description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken
-badge-v7: label="v7" type="Informative" tooltip="Is van toepassing op Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
+badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 1%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 
