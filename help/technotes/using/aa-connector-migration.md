@@ -3,11 +3,11 @@ product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 feature: Technote, Analytics Integration
-badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Is alleen van toepassing op v7 on-premise en hybride implementaties"
+badge-v7-prem: label="Alleen op locatie/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Is alleen van toepassing op v7 on-premise en hybride implementaties"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Vanaf de release van Campaign Classic v7 21.1.3 is de Adobe Analytics Data Conne
 
 Op 1 augustus 2021 is Adobe Campaign Classic verwijderd van de oude interface van Data Connectors, maar de bestaande integratie van de Campagne zal tot 17 augustus 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
 
-U **moeten** de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van de Adobe die de erfenis van de Integratie van Data Connectors vervangt. Voor meer informatie over Adobe Analytics Connector raadpleegt u [deze pagina](../../platform/using/gs-aa.md).
+U **moeten** de nieuwe integratie van de Adobe Analytics Connector op Adobe Exchange die de verouderde integratie van Data Connectors vervangt. Voor meer informatie over Adobe Analytics Connector raadpleegt u [deze pagina](../../platform/using/gs-aa.md).
 
 Voor alle vragen over deze wijzigingen leest u de [Veelgestelde vragen](#faq-aa). Neem voor meer informatie contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 

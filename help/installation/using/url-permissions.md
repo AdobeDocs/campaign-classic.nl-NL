@@ -3,14 +3,14 @@ product: campaign
 title: URL-machtigingen configureren
 description: Leer hoe u URL-machtigingen configureert
 feature: Installation, Instance Settings, Permissions
-badge-v7-prem: label="op locatie en hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
+badge-v7-prem: label="Alleen op locatie/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '333'
 ht-degree: 24%
 
 ---
