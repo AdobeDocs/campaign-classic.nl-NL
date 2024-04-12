@@ -3,15 +3,14 @@ product: campaign
 title: De beste praktijken en beperkingen van de FDA bestrijden
 description: Leer beste praktijken en beperkingen wanneer het werken met een externe gegevensbestand (FDA)
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 8%
+source-wordcount: '409'
+ht-degree: 7%
 
 ---
 

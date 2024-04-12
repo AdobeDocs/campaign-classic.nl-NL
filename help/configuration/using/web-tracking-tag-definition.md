@@ -4,12 +4,11 @@ title: Tag voor webspatiëring definiëren
 description: Tag voor webspatiëring definiëren
 feature: Application Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 

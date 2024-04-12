@@ -2,13 +2,12 @@
 product: campaign
 title: Een workflow starten
 description: Leer hoe u een workflow start en werkstroomhandelingen ontdekt op de werkbalk en met de rechtermuisknop op het menu klikt
-badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1109'
+ht-degree: 1%
 
 ---
 

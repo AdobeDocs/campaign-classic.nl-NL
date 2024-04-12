@@ -2,14 +2,13 @@
 product: campaign
 title: Bedrijfsgerichte API’s
 description: Bedrijfsgerichte API’s
-badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: API
 role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
 

@@ -3,12 +3,11 @@ product: campaign
 title: Interaction- en aanbiedingenbeheer
 description: Leer hoe u de beste voorstellen naar uw contactpersonen kunt sturen op basis van geschiktheidsregels
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 9%
+source-wordcount: '268'
+ht-degree: 6%
 
 ---
 
