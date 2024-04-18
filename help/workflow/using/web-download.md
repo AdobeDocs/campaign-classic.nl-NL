@@ -4,9 +4,9 @@ title: Webdownload
 description: Meer informatie over de activiteiten van de webdownloadworkflow
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ De **Webdownload** activiteit start het downloaden van een bestand op een explic
 1. **Geavanceerde parameters**
 
    De **[!UICONTROL Advanced parameters...]** met de koppeling kunt u de hieronder weergegeven aanvullende opties opgeven:
+
+   * **[!UICONTROL Follow redirections]**: Met Bestandsomleiding kunt u overschrijvingen gebruiken voor het rechtstreeks invoeren of uitvoeren van gegevens naar een apparaat van een ander type.
+   * **[!UICONTROL Add the HTTP headers to the file]**: In sommige gevallen kunt u extra HTTP-headers aan een bestand toevoegen. Meestal, zullen deze kopballen worden gebruikt om extra informatie voor het oplossen van problemendoeleinden te verstrekken, voor [Delen van bronnen tussen verschillende bronnen (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)of om specifieke richtlijnen voor het in cache plaatsen vast te stellen.
+   * **[!UICONTROL Ignore the HTTP return code]**: HTTP-retourcodes, ook wel HTTP-statuscodes genoemd, geven het resultaat van een HTTP-aanvraag aan.
 
    ![](assets/download_web_edit_advanced.png)
 
