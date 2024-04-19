@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,10 +27,10 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 | Status | Beschrijving |
 |---|---|
 | [!BADGE Algemene beschikbaarheid]{type=Positive} | Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe. |
-| [!BADGE Beperkte beschikbaarheid]{type=Neutral} | alleen on-demand implementatie. |
-| [!BADGE Release-kandidaat]{type=Informative} | Nieuwste build met nieuwe mogelijkheden. |
-| [!BADGE Niet meer beschikbaar]{type=Caution} | Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen. |
-| [!BADGE Vervangen]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
+| [!BADGE Beperkte beschikbaarheid]{type=Neutral} | Alleen on-demand implementatie. |
+| [!BADGE Releasekandidaat]{type=Informative} | Nieuwste build met nieuwe mogelijkheden. |
+| [!BADGE Niet langer beschikbaar]{type=Caution} | Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen. |
+| [!BADGE Afgeschaft]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
 
 <!--
 ![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
