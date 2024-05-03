@@ -4,7 +4,7 @@ description: Leer hoe u technische operatoren van campagnes kunt migreren naar e
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c63fea4d400440005ecf3733413c346bd4a2fd18
+source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Voer de stappen in het dialoogvenster [Handleiding voor Adobe Developer Consol
 
 ### Stap 8 - De integratie van de externe API bijwerken {#ims-migration-step-8}
 
-U moet nu een update uitvoeren van de API-integraties, zodat u aanroepen naar Adobe Campaign kunt uitvoeren om de zojuist gemaakte technische account te kunnen gebruiken.
+U moet nu alle API-integraties bijwerken en aanroepen naar Adobe Campaign uitvoeren om het zojuist gemaakte technische account te kunnen gebruiken.
 
 Raadpleeg de onderstaande codevoorbeelden voor meer informatie over de integratiestappen van de API.
 
