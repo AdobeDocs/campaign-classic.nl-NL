@@ -5,15 +5,23 @@ description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
 badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 6%
+source-wordcount: '342'
+ht-degree: 4%
 
 ---
 
 # Aan de slag met machtigingen{#access-management}
 
+
+>[!CAUTION]
+>
+>Vanaf Campaign Classic v7.3.1 moeten alle operatoren [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} om verbinding te maken met Campagne.
+>
+>Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign ten zeerste aan om alle bestaande verificatiemodus voor operatoren te migreren van de native verificatie van aanmelding/wachtwoord naar Adobe Identity Management System (IMS). Leer hoe u uw operatoren kunt migreren in [deze pagina](../../technotes/using/migrate-users-to-ims.md).
+> 
+>Na deze migratie is de volgende sectie niet meer van toepassing.  Meer informatie over het instellen van machtigingen met Adobe IMS in [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschillende operatoren zijn toegewezen. Dit zijn een reeks rechten en beperkingen die autoriseren of weigeren:
