@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '3709'
-ht-degree: 100%
+source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
+workflow-type: tm+mt
+source-wordcount: '3764'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,14 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## 2024
+
+### April 2024 {#apr-2024}
+
+Er is een waarschuwing toegevoegd over het maken van gebruikers met Adobe Identity Management System (IMS). [Meer informatie](../../platform/using/access-management.md)
+
+Er zijn ontbrekende opties toegevoegd voor de workflowactiviteit Web Download. [Meer informatie](../../workflow/using/web-download.md)
+
+Er is een waarschuwing toegevoegd aan de **Dimensie wijzigen** en **Gegevensbron wijzigen** activiteiten over hun gebruik in een werkstroom. [Meer informatie](../../workflow/using/change-data-source.md)
 
 ### Maart 2024 {#mar-2024}
 
