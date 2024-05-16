@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,17 @@ ht-degree: 1%
 
 Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde krijgen voor producten en services. Met de module Campagne-coupon kunt u een set coupons maken die u naar verwachting aan toekomstige marketingaanbiedingen wilt toevoegen. Als u klaar bent om een levering te maken, wijst u de toepasselijke coupons toe. Aangezien coupons geldig zijn voor een bepaalde periode, wordt een toegewezen coupon op unieke wijze gekoppeld aan het bijbehorende leveringsbericht. Bovendien bevestigt Campaign dat er voldoende coupons zijn voor het aantal berichten voordat de levering wordt verzonden.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Couponbeheer is een pakket dat moet worden geïnstalleerd. Als u wilt bevestigen dat u Coupon-beheer hebt, controleert u **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->Coupongegevens kunnen worden geïmporteerd en geëxporteerd in CSV- en XML-indeling. Voor meer informatie over importeren en exporteren raadpleegt u [deze sectie](../../platform/using/get-started-data-import-export.md).
+>Couponbeheer is niet beschikbaar in Campaign v8 in de context van een implementatie voor bedrijven (FFDA). Meer informatie in [Campagne v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+Couponbeheer is afhankelijk van een pakket dat moet worden geïnstalleerd. Als u wilt bevestigen dat u Coupon-beheer hebt, controleert u **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+Coupongegevens kunnen worden geïmporteerd en geëxporteerd in CSV- en XML-indeling. [Meer informatie](../../platform/using/get-started-data-import-export.md).
 
 ## Een coupon maken {#creating-a-coupon}
 
-In de module coupon kunt u twee opties instellen voor het maken van coupons:
+In de module Coupon Management hebt u twee opties voor het maken van coupons:
 
 * **Anoniem**: Een algemene coupon voor geselecteerde ontvangers of lijsten met ontvangers.
 * **Individueel**: Een gepersonaliseerde coupon voor geselecteerde ontvangers.
