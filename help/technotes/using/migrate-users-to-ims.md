@@ -2,9 +2,9 @@
 title: Campagnebeheerders migreren naar Adobe Identity Management System (IMS)
 description: Leer hoe u campagneoperatoren kunt migreren naar Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1279'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ De belangrijkste stappen voor deze migratie worden hieronder weergegeven:
 1. Adobe IMS implementeren voor uw verbinding zoals beschreven in [deze pagina](../../integrations/using/implementing-ims.md).
 
 U kunt uw technische operator(s) ook migreren naar Adobe Developer Console, zoals beschreven in [dit technote](ims-migration.md).
+
 
 
 ## Veelgestelde vragen {#ims-migration-faq}
@@ -152,5 +153,5 @@ U kunt nu de lijst met uw **Operatoren** en hun **Type verificatie**.
 ## Nuttige koppelingen {#ims-useful-links}
 
 * [Migratie van technische gebruikers naar Adobe Developer-console](ims-migration.md)
-* [Opmerkingen bij de release van Adobe Campaign v8](../../rn/using/latest-release.md)
+* [Opmerkingen bij de release Adobe Campaign Classic v7](../../rn/using/latest-release.md)
 * [Wat is Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
