@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 Er is een waarschuwing toegevoegd over het maken van gebruikers met Adobe Identity Management System (IMS). [Meer informatie](../../platform/using/access-management.md)
 
-Er zijn ontbrekende opties toegevoegd voor de workflowactiviteit Web Download. [Meer informatie](../../workflow/using/web-download.md)
+Er zijn ontbrekende opties toegevoegd voor de workflowactiviteit Webdownload. [Meer informatie](../../workflow/using/web-download.md)
 
-Er is een waarschuwing toegevoegd aan de **Dimensie wijzigen** en **Gegevensbron wijzigen** activiteiten over hun gebruik in een werkstroom. [Meer informatie](../../workflow/using/change-data-source.md)
+Er is een waarschuwing toegevoegd aan de activiteiten **Dimensie wijzigen** en **Databron wijzigen** over het gebruik in een workflow. [Meer informatie](../../workflow/using/change-data-source.md)
 
 ### Maart 2024 {#mar-2024}
 
