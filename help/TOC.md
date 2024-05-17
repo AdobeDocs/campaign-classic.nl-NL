@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
 source-wordcount: '2550'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 99%
          + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics-connector{#analytics-connector}
          + [Aan de slag met Adobe Analytics Connector](platform/using/gs-aa.md)
-         + [Adobe Analytics-connector provisioning](platform/using/adobe-analytics-provisioning.md)
+         + [Adobe Analytics-connector-provisioning](platform/using/adobe-analytics-provisioning.md)
          + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
