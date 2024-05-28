@@ -5,7 +5,7 @@ description: Leer hoe u de campagne-SDK kunt integreren in uw mobiele app
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -38,7 +38,7 @@ U vindt onder de integratiestappen voor Campagne SDK.
   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/");
   ```
 
-  Met de volgende machtiging kunt u de unieke id van een telefoon herstellen:
+  Met de volgende machtiging kunt u de unieke id van een mobiel herstellen:
 
   ```
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
