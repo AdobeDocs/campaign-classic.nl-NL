@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 10%
@@ -32,7 +32,7 @@ Adobe Campaign biedt de volgende leveringskanalen:
 1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke sms- of lijnberichten naar de doelgroep sturen. Zie [SMS-kanaal](sms-channel.md).
 1. **Mobiel toepassingskanaal**: met de levering van mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Zie de [Mobiel toepassingskanaal](about-mobile-app-channel.md) hoofdstuk.
 
-   Andere kanalen worden beschreven op [deze pagina](steps-about-delivery-creation-steps.md#other-channels).
+   Andere kanalen worden beschreven op [deze sectie](#other-channels).
 
    >[!NOTE]
    >
