@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '408'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ De parameter **`<command>`** komt overeen met de module.
 
 U kunt de parameter toevoegen **-who** om een lijst weer te geven van de lopende verbindingen (database en toepassing).
 
-```
+```sql
 nlserver pdump -who
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 web@default (9984) - 50.1 Mo
@@ -65,7 +65,7 @@ Een andere handige opdracht is **nlserver-monitor**. Het bevat een lijst met XML
 
 U kunt de parameter toevoegen **-missing** om de ontbrekende modules (fout in modules, modules gesloten, enz.) op te nemen
 
-```
+```sql
 nlserver monitor -missing
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 inMail@test
@@ -79,11 +79,11 @@ Dit komt overeen met de modules met automatisch opstarten, maar die nog niet zij
 
 De syntaxis voor opstartmodules heeft nog steeds de volgende indeling:
 
-```
+```sql
 nlserver start <module>@<INSTANCE>
 ```
 
-```
+```sql
 nlserver stop <module>@<INSTANCE>
 ```
 
@@ -99,7 +99,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
 
    * In Linux:
 
-     ```
+     ```sql
      /etc/init.d/nlserver6 stop
      ```
 
@@ -109,13 +109,13 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
 
    * In Windows:
 
-     ```
+     ```sql
      net stop nlserver6
      ```
 
 * Zo niet, dan op de Adobe Campaign-account:
 
-  ```
+  ```sql
   nlserver shutdown 
   ```
 
@@ -125,13 +125,13 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
 * Als u toegang hebt tot de hoofdmap of beheerder:
 
-   * In Linux: /etc/init.d/nlserver6 start
+   * In Linux: `/etc/init.d/nlserver6 start`
 
      >[!NOTE]
      >
      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
-   * In Windows: Net start Nlserver6
+   * In Windows: `net start nlserver6`
 
 * Anders, in de rekening van Adobe Campaign: **nlserver watchdog -svc -noconsole**
 
@@ -141,11 +141,11 @@ De **config** Met deze opdracht kunt u de serverconfiguratie beheren, inclusief 
 
 Gebruik de **config** de **nlserver** uitvoerbaar bestand met de **-setdblogin** parameter.
 
-```
+```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
 ```
 
-```
+```sql
 nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 ```
 

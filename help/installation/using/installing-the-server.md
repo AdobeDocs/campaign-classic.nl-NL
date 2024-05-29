@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 ---
 
 # De server installeren{#installing-the-server}
-
-
 
 ## Het installatieprogramma uitvoeren {#executing-the-installation-program}
 
@@ -70,13 +68,13 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
 U kunt de eerste installatie testen met de volgende opdracht:
 
-```
+```sql
 nlserver pdump
 ```
 
 Als Adobe Campaign niet wordt gestart, is het antwoord:
 
-```
+```sql
 No task
 ```
 
@@ -84,7 +82,7 @@ No task
 
 Zodra de installatietest volledig is, open een bevelherinnering via **[!UICONTROL Start > Programs > Adobe Campaign]** en voert u de volgende opdracht in:
 
-```
+```sql
 nlserver web
 ```
 
@@ -104,13 +102,13 @@ De volgende informatie wordt weergegeven:
 
 Druk **Ctrl+C** om het proces tegen te houden, dan ga het volgende bevel in:
 
-```
+```sql
 nlserver start web
 ```
 
 De volgende informatie wordt weergegeven:
 
-```
+```sql
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:17:21 >   Start of the 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair') task in a new process 
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +120,13 @@ De volgende informatie wordt weergegeven:
 
 Als u het wilt stoppen, voert u in:
 
-```
+```sql
 nlserver stop web
 ```
 
 De volgende informatie wordt weergegeven:
 
-```
+```sql
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:18:31 >   Stop requested for 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair', pid=29188, tid=-1224824320)...
 12:18:31 >   Stop requested (pid=29188)
@@ -145,13 +143,13 @@ Lees meer in [deze sectie](../../installation/using/configuring-campaign-server.
 
 Om de diensten van Adobe Campaign te beginnen, kunt u de de dienstmanager gebruiken of het volgende bij de bevellijn (met de aangewezen rechten) ingaan:
 
-```
+```sql
 net start nlserver6
 ```
 
 Als u de processen van Adobe Campaign later moet tegenhouden, gebruik het bevel:
 
-```
+```sql
 net stop nlserver6
 ```
 
@@ -161,6 +159,6 @@ Download LibreOffice en volg de gebruikelijke installatiestappen.
 
 Voeg de volgende omgevingsvariabele toe:
 
-```
+```sql
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```
