@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,12 @@ Er zijn twee mogelijke scenario&#39;s:
 ## Wachtwoord verloren door een Campagneoperator {#password-lost-by-campaign-operator}
 
 Als een Adobe Campaign-operator zijn wachtwoord verliest, kunt u het wijzigen.
-Hiervoor voert u de volgende stappen uit:
+
+>[!NOTE]
+>
+>Deze procedure is alleen van toepassing op operatoren die verbinding maken met Campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+
+Voer de onderstaande stappen uit om een camerawachtwoord opnieuw in te stellen:
 
 1. Verbind via een exploitant met beheerderrechten.
 1. Klik met de rechtermuisknop op een operator.
@@ -45,31 +50,32 @@ Hiervoor voert u de volgende stappen uit:
 >Deze sectie is alleen van toepassing op on-premise klanten.
 
 Als het interne wachtwoord verloren gaat, moet u het opnieuw initialiseren.
+
 Hiervoor volgt u de volgende procedure:
 
 1. Bewerk de **/usr/local/neolane/nl6/conf/serverConf.xml** bestand.
 
 1. Ga naar de **internalPassword** lijn.
 
-   ```
+   ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Verwijder de tekenreeks tussen aanhalingstekens, in dit geval: **myPassword**
+1. Verwijder de tekenreeks tussen aanhalingstekens, in dit geval: `myPassword`. U krijgt de volgende lijn:
 
-   U krijgt dus de volgende regel:
-
-   ```
-   !-- XTK authentication mode internalPassword : Password of internal account -->
-   <xtk internalPassword=""/
+   ```xml
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/>
    ```
 
 1. Sla de wijzigingen op en sluit het bestand.
 
+1. Stop de `nlserver` proces
+
 1. Vorm het nieuwe wachtwoord. Voer hiertoe de volgende opdrachten in:
 
-   ```
+   ```javascript
    nlserver config -internalpassword
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    Enter current password.
@@ -78,5 +84,7 @@ Hiervoor volgt u de volgende procedure:
    Password: 
    Confirmation 
    ```
+
+1. Start de `nlserver` proces
 
 1. U kunt nu uw nieuwe wachtwoord gebruiken om verbinding te maken met **Intern** -modus.
