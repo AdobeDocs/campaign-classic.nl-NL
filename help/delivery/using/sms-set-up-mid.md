@@ -2,13 +2,12 @@
 product: campaign
 title: Vorm het kanaal van SMS van de Campagne op een midsourcinginfrastructuur
 description: Leer hoe te om het kanaal van SMS in Campaign op een midsourcinginfrastructuur te vormen
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b7339512d85a7bd0c5aae24af46739daafb1ba51
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '981'
 ht-degree: 8%
 
 ---
