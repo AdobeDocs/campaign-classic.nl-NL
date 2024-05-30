@@ -8,20 +8,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 98%
+source-wordcount: '905'
+ht-degree: 80%
 
 ---
 
 # Privacybeheer {#privacy-management}
 
 
-
 Adobe Campaign biedt een reeks tools om u te helpen voldoen aan de [privacyverordeningen](#privacy-management-regulations) (zoals AVG, CCPA, PDPA, LGPD).
 
-Hier volgen de vijf voornaamste mogelijkheden die Adobe Campaign biedt om u gereed te maken voor de AVG en andere privacyregels:
+Hier volgen de vijf belangrijkste mogelijkheden die Adobe Campaign biedt om de gereedheid voor privacyregels te garanderen:
+
 * **Recht op toegang**
 * **Recht op verwijdering**
 * **Toestemmingsbeheer**
@@ -40,12 +40,14 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Met de opties van Adobe Campaign kunt u voldoen aan de volgende regels:
 
-* **De AVG** ([Algemene Verordening Gegevensbescherming](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)) is de privacyverordening van de Europese Unie (EU) die de vereisten inzake gegevensbescherming voor Europese landen harmoniseert en moderniseert.
-* **De CCPA** ([California Consumer Privacy Act](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) biedt inwoners van Californië nieuwe rechten met betrekking tot hun persoonsgegevens en legt verantwoordelijkheden op het gebied van gegevensbescherming op aan bepaalde entiteiten die zaken doen in Californië.
-* **De PDPA** ([Thaise wet inzake de bescherming van persoonsgegevens](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)) is de nieuwe privacywet die de vereisten inzake gegevensbescherming voor Thailand harmoniseert en moderniseert.
-* **De LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) wordt begin 2021 van kracht voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.
+* **GDPR** (Algemene verordening inzake gegevensbescherming) is de privacywetgeving van de Europese Unie (EU) die de vereisten inzake gegevensbescherming voor de landen van de EU harmoniseert en moderniseert.
+* **CCPA** (California Consumer Privacy Act) biedt inwoners van Californië nieuwe rechten met betrekking tot hun persoonlijke gegevens en legt verantwoordelijkheden op het gebied van gegevensbescherming op aan bepaalde entiteiten die zaken doen in Californië.
+* **PDPA** (Personal Data Protection Act) is de privacywet die de vereisten inzake gegevensbescherming voor Thailand harmoniseert en moderniseert.
+* **LGPD** (Lei Geral de Proteção de Dados) is van toepassing op alle ondernemingen die in Brazilië persoonsgegevens verzamelen of verwerken.
+* **CASL** (Canadese anti-spamwet) geldt voor alle berichten die naar of vanuit Canada worden verzonden, maar niet voor berichten die via Canada worden verzonden;
+* **VCDPA** (Virginia Consumer Data Protection Act) en **CPA** (Colorado Privacy Act) is van toepassing op alle bedrijven die zaken doen of ingezetenen binnen die staten als doelwit hebben.
 
-Al deze voorschriften zijn van toepassing op Adobe Campaign-klanten die beschikken over gegevens van betrokkenen die in de bovengenoemde regio’s of landen wonen (EU, Californië, Thailand en Brazilië).
+Al deze voorschriften zijn van toepassing op Adobe Campaign-klanten die beschikken over gegevens voor gegevenssubjecten die in de bovengenoemde regio&#39;s of landen verblijven.
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 

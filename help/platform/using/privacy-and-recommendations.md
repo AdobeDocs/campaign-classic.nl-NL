@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '1977'
-ht-degree: 98%
+source-wordcount: '1910'
+ht-degree: 97%
 
 ---
 
 # Privacy en toestemming{#privacy-and-recommendations}
-
 
 
 ## Algemene aanbevelingen {#general-recommendations}
@@ -31,18 +30,7 @@ Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installatio
 
 ### Privacywetgeving {#privacy-regulations}
 
-Werk binnen de wetgeving die geldt voor de regio(’s) waar u actief bent om privacy en persoonsgegevens correct te behandelen en te beheren. Het gaat bijvoorbeeld om de volgende wetgevingen:
-* [AVG](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) (Algemene verordening gegevensbescherming)
-* [DPA](https://www.gov.uk/data-protection) (Britse implementatie van de AVG)
-* [Europese richtlijn betreffende privacy en elektronische communicatie](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219)
-* [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (Amerikaanse wetgeving over regels en vereisten voor commerciële e-mail)
-* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
-* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thaise wet inzake de bescherming van persoonsgegevens)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Braziliaanse algemene wet inzake gegevensbescherming)
-
->[!NOTE]
->
->Zie [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations) voor meer informatie over hoe de AVG, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
+Werk binnen de wetgeving die geldt voor de regio(’s) waar u actief bent om privacy en persoonsgegevens correct te behandelen en te beheren. Met Adobe Campaign-mogelijkheden kunt u voldoen aan de voorschriften van [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Adobe Experience Cloud-privacy {#experience-cloud-privacy}
 
