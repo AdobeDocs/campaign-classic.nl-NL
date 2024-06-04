@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -122,13 +122,17 @@ Er zijn geen kosten om de build-upgrade voor gehoste klanten te installeren. Als
 
 Nee. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de gegevensintegriteit behouden blijft terwijl het product wordt bijgewerkt. Zodra voltooid, wordt het opnieuw begonnen, en alle diensten hervatten.
 
+## Kan ik mijn instantie van de Campagne tijdens het verbeteringsproces nog gebruiken?
+
+Nee. Adobe raadt aan alle bewerkingen in de campagne tijdens de onderhoudsperiode uit te schakelen om te voorkomen dat gegevens ontbreken of verloren gaan. Tijdens de upgrade moet u geen campagne, query&#39;s, workflows of leveringen maken of implementeren.
+
 ## Zullen de e-mails tijdens het upgradeproces van het Message Center blijven worden verzonden?
 
 Wanneer de upgrade voor Berichtencentrum (RT) plaatsvindt, worden geen e-mails van de instantie verzonden. Merk op, om het even welke processen die worden tegengehouden wanneer een systeem van de Campagne wordt gesloten automatisch hervat wanneer het systeem opnieuw wordt begonnen. Dit omvat actieve of geplande leveringen, het volgen, en metriekberekeningen voor eerder verzonden leveringen.
 
 ## Zullen de workflows blijven uitvoeren en de leveringen verzenden?
 
-Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei tegengehouden. Dit betekent dat werkstromen niet worden uitgevoerd en dat er geen leveringen worden verzonden. Ze worden hervat zodra het systeem opnieuw wordt opgestart. Adobe raadt echter sterk aan dat alle workflows voor belangrijke paden na een upgrade worden gecontroleerd om ervoor te zorgen dat deze actief en gezond zijn.
+Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei tegengehouden. Dit betekent dat werkstromen niet worden uitgevoerd en dat er geen leveringen worden verzonden. Ze worden hervat zodra het systeem opnieuw wordt opgestart. Nochtans, adviseert de Adobe sterk dat alle kritieke wegwerkschema&#39;s na een verbetering worden gecontroleerd om ervoor te zorgen dat zij lopen en gezond zijn.
 
 ## Werken mijn trackingkoppelingen nog tijdens de upgrade?
 
