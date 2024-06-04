@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
+source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -32,28 +32,28 @@ De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is
 De ondersteunde versies worden gedetailleerd weergegeven in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 
-
 ### Aanbevelingen
 
-Java Development Kit kan worden geïnstalleerd met de JDK-versie die hiervoor geschikt is en die al door andere toepassingen op de computer wordt gebruikt.
+Pas de volgende aanbevelingen toe wanneer u uw Java Development Kit installeert en bijwerkt:
 
-Wanneer het installeren van JDK, wordt de integratie met browsers van het Web niet vereist.
+* Java Development Kit kan worden geïnstalleerd met de JDK-versie die hiervoor geschikt is en die al door andere toepassingen op de computer wordt gebruikt.
 
-Op een machine die alleen leveringsagenten uitvoert (**nlserver-mta** proces) of de workflowserver (**nlserver wfserver** -proces), is het installeren van een JDK niet vereist.
+* Wanneer het installeren van JDK, wordt de integratie met browsers van het Web niet vereist.
 
+* Op een machine die alleen leveringsagenten uitvoert (**nlserver-mta** proces) of de workflowserver (**nlserver wfserver** -proces), is het installeren van een JDK niet vereist.
 
->[!CAUTION]
->
-> Als u de prestaties van het platform wilt behouden en compatibiliteit met de geïnstalleerde versie wilt garanderen, moet u de automatische JDK-updatefuncties in Windows en Linux uitschakelen.
->
-> Wanneer u uw Java-versie upgradet, moet u eerst de vorige versie verwijderen. Beide versies van Java die op dezelfde computer zijn geïnstalleerd, kunnen conflicten veroorzaken.
+* Als u de prestaties van het platform wilt behouden en compatibiliteit met de geïnstalleerde versie wilt garanderen, moet u de automatische JDK-updatefuncties in Windows en Linux uitschakelen.
+
+* Wanneer u uw Java-versie upgradet, moet u eerst de vorige versie verwijderen. Beide versies van Java die op dezelfde computer zijn geïnstalleerd, kunnen conflicten veroorzaken.
+
+  Als klant op locatie kunt u de `LD_LIBRARY_PATH` [omgevingsvariabele](installing-packages-with-linux.md#environment-variables) wordt ingesteld op de meest recente versie (bijvoorbeeld java11). Als deze op een vorige versie is ingesteld (bijvoorbeeld Java8), dan moet het worden bijgewerkt. Voor JDK 11 is het pad naar JDK-bibliotheken: `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### Installatiestappen
 
 Java Development Kit is platformspecifiek: voor elk besturingssysteem zijn afzonderlijke installatieprogramma&#39;s nodig.
 
-Als u Java JDK wilt downloaden, maakt u verbinding met [Oracle-website](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+Als u JDK wilt downloaden, maakt u verbinding met [Oracle-website](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -73,6 +73,7 @@ Gebruik voor RHEL de volgende opdracht:
 ```sql
 yum install java-1.8.0-openjdk
 ```
+
 
 ## OpenSSL {#openssl}
 
