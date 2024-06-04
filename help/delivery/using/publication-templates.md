@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -77,7 +77,7 @@ De volgende publicatieopties zijn beschikbaar:
 
   Standaard gebruikt de constructieindeling van de bestandsnaam de variabelen in de velden &quot;@name&quot; en &quot;@date&quot;:
 
-  ```
+  ```xml
   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
   ```
 
@@ -117,7 +117,7 @@ Het beginsel is dat een hoofdpagina met een lijst van de hoofdstukken wordt gema
 
 De bijbehorende stijlpagina (&quot;cus:book.xsl&quot;) ziet er als volgt uit:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -140,7 +140,7 @@ De bijbehorende stijlpagina (&quot;cus:book.xsl&quot;) ziet er als volgt uit:
 
 Een tweede stijlblad (&quot;cus:chapter.xsl&quot;) is vereist om de details van de hoofdstukken te produceren:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -167,7 +167,7 @@ Een tweede stijlblad (&quot;cus:chapter.xsl&quot;) is vereist om de details van 
 
 De partitioneringstag wordt gevuld aan het begin van de pagina die moet worden opgenomen in het te genereren bestand.
 
-```
+```xml
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
