@@ -1,60 +1,50 @@
 ---
 product: campaign
 title: De pijplijn configureren
-description: Leer hoe te om de pijpleiding te vormen
+description: Leer hoe te om de pijpleiding voor Campagne te vormen - de integratie van Triggers
 feature: Triggers
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
-# Gasleiding configureren {#configuring-pipeline}
-
-
+# De pijplijn configureren {#configuring-pipeline}
 
 De parameters van de authentificatie zoals klantenidentiteitskaart, de privé sleutel, en het authentificatieeindpunt worden gevormd in de dossiers van de instantieconfiguratie.
+
 De lijst met triggers die moeten worden verwerkt, is geconfigureerd in een optie in JSON-indeling.
+
 De triggers worden gebruikt voor het activeren van een campagneworkflow die e-mails verzendt. De campagne is opgezet zodat een klant die beide triggergebeurtenissen heeft een e-mail ontvangt.
 
 ## Vereisten {#prerequisites}
 
-Voordat u deze configuratie start, moet u controleren of u deze configuratie gebruikt:
+Controleer voordat u deze configuratie start of:
 
-* Minimaal een van de volgende Adobe Campaign-builds:
-   * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
-   * 20.2.4.9187
-   * 20.3.1.
-* Adobe Analytics Standard-versie
-
-U hebt ook het volgende nodig:
-
-* Adobe I/O-projectverificatie
-* een geldige organisatie-id - Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}
+* Een Adobe Developer-project
+* Een geldige organisatie-id - Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Een ontwikkelaar heeft toegang tot uw organisatie
-* triggerconfiguratie uitgevoerd in Adobe Analytics
+* Een geldige triggerconfiguratie in Adobe Analytics
 
 ## Verificatie- en configuratiebestanden {#authentication-configuration}
 
-De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen.
-Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger.
-Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
+De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen. Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger. Verificatie wordt ondersteund voor de Marketing Cloud via Adobe Developer Project.
 
-## Stap 1: het creëren van/het bijwerken van Adobe I/O Project {#creating-adobe-io-project}
+## Stap 1: uw Adobe Developer-project maken/bijwerken {#creating-adobe-io-project}
 
-Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
+Voor gehoste klanten werkt u samen met uw Adobe-medewerker/klantenservice om uw organisatie met Adobe Developer-accounttokens in te schakelen voor de integratie met Triggers.
 
-Voor klanten op locatie raadpleegt u de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) pagina. Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** tijdens het toevoegen van API aan de Adobe I/O-referentie.
+Voor on-premise/Hybrid klanten, verwijs naar [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) pagina. Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl u API toevoegt aan de Adobe Developer-referentie.
 
-## Stap 2: Het vormen NmsPipeline_Config pijpleidingsoptie {#configuring-nmspipeline}
+## Stap 2: Vorm de pijpleidingsoptie {#configuring-nmspipeline}
 
 Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
+
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
 
 1. Open in Adobe Campaign het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** in de **[!UICONTROL Explorer]**.
@@ -63,7 +53,7 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
 
 1. In de **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
 
-   ```
+   ```json
    {
    "topics": [ // list of "topics" that the pipelined is listening to.
       {
@@ -85,7 +75,7 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
 
 1. U kunt ook de volgende JSON-code plakken waarmee alle triggers worden afgevangen.
 
-   ```
+   ```json
    {
    "topics": [
      {
@@ -102,7 +92,7 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
    }
    ```
 
-### De parameter Consumenten {#consumer-parameter}
+### De parameter Consumenten instellen {#consumer-parameter}
 
 De pijpleiding werkt als een leverancier- en consumentenmodel. Berichten worden alleen voor een individuele consument verbruikt: elke consument krijgt zijn eigen exemplaar van de berichten.
 
@@ -114,18 +104,18 @@ De pijpleidingsdienst houdt spoor van de berichten die door elke consument worde
 
 Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 
-* Triggers toevoegen of bewerken onder **[!UICONTROL Triggers]**, moet u de rest niet bewerken.
-* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg deze [website](https://jsonlint.com/) bijvoorbeeld.
-* &quot;name&quot; komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
-* &quot;Consumenten&quot; komt overeen met de naam van de oproepende instantie of toepassing.
-* Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.
-* Nadat u wijzigingen hebt aangebracht, moet u de pipet altijd opnieuw starten.
+* Triggers toevoegen of bewerken onder **[!UICONTROL Triggers]**.
+* Controleer of de JSON geldig is.
+* De **Naam** parameter komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
+* De **Consumenten** parameter komt overeen met de naam van de aanroepende instantie of toepassing.
+* de `pipelined`het proces steunt ook het &quot;aliassen&quot;onderwerp.
+* U moet altijd opnieuw beginnen `pipelined`na het aanbrengen van wijzigingen.
 
 ## Stap 3: Optionele configuratie {#step-optional}
 
-U kunt enkele interne parameters wijzigen op basis van de vereisten voor de belasting, maar zorg dat u deze test voordat u ze in productie neemt.
+U kunt enkele interne parameters wijzigen op basis van de vereisten voor de belasting, maar zorg dat u deze test voordat u ze toepast op de productieomgeving.
 
-De lijst met optionele parameters is hieronder te vinden:
+De lijst met optionele parameters is:
 
 | Optie | Beschrijving |
 |:-:|:-:|
@@ -146,11 +136,11 @@ De lijst met optionele parameters is hieronder te vinden:
 
 ### Automatische start van het pijplijnproces {#pipelined-process-autostart}
 
-Het pijplijnproces moet automatisch worden gestart.
+De `pipelined` het proces moet automatisch worden gestart .
 
-Voor dit, plaats het &lt; pijpleiding > element in het config dossier aan autostart= &quot;waar&quot;:
+Stel hiervoor de optie `<`gepijld`>` element in het config-bestand to autostart=&quot;true&quot;:
 
-```
+```sql
  <pipelined autoStart="true" ... "/>
 ```
 
@@ -158,7 +148,7 @@ Voor dit, plaats het &lt; pijpleiding > element in het config dossier aan autost
 
 De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 
-```
+```sql
 nlserver restart pipelined@instance
 ```
 
@@ -166,6 +156,6 @@ nlserver restart pipelined@instance
 
 Volg onderstaande stappen om de installatie van de pijplijn voor provisioning te valideren:
 
-* Zorg ervoor dat de [!DNL pipelined] -proces wordt uitgevoerd.
-* Controleer pipelined.log voor de logboeken van de pijpleidingsverbinding.
+* Zorg ervoor dat de `pipelined` -proces wordt uitgevoerd.
+* Controleer de `pipelined.log` voor de logboeken van de pijpleidingsverbinding.
 * Verifieer de verbinding en als pingelt worden ontvangen. Gehoste klanten kunnen de Controle van de Console van de Cliënt gebruiken.
