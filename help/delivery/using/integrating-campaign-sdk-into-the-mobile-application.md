@@ -5,9 +5,9 @@ description: Leer hoe u de campagne-SDK kunt integreren in uw mobiele app
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
+source-git-commit: 00d46a7508def4d472e6bb8940a4d40a23c4fb07
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -542,7 +542,7 @@ Om **registerDeviceStatus** afgevaardigde, volg deze stappen:
 
 +++**Variabelen**
 
-Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de mobiele toepassingscode en in de Adobe Campaign-console, in het **[!UICONTROL Variables]** in de toegewijde mobiele toepassingsservice (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
+Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de mobiele toepassingscode en in de Adobe Campaign-console, in het **[!UICONTROL Variables]** in de toegewezen mobiele toepassing (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
 * **In Android**:
 
