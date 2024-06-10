@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Controleer voordat u met deze implementatie begint of:
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in deze documentatie wordt beschreven. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken. Bovendien is het niet langer mogelijk om vanaf 3 juni 2024 nieuwe JWT-gegevens (Service Account) te maken in de Developer Console. Een nieuwe referentie van de Rekening van de Dienst (JWT) kan niet aan een project na deze datum worden gecreeerd of worden toegevoegd. </br>
+> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken. Bovendien is het niet langer mogelijk om vanaf 3 juni 2024 nieuwe JWT-gegevens (Service Account) te maken in de Developer Console. Een nieuwe referentie van de Rekening van de Dienst (JWT) kan niet aan een project na deze datum worden gecreeerd of worden toegevoegd. </br>
 >
 > * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth. Aangezien het maken van nieuwe JWT-referenties (Service Account) in de Developer Console vanaf 3 juni 2024 niet meer mogelijk is, kunt u na deze datum geen nieuwe uitgaande integratie maken die afhankelijk is van JWT
 
