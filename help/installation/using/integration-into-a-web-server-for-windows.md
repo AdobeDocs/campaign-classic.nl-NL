@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '722'
 ht-degree: 2%
 
 ---
 
-# Integratie in een webserver voor Windows{#integration-into-a-web-server-for-windows}
-
-
+# Integratie in een webserver voor Windows {#integration-into-a-web-server-for-windows}
 
 Adobe Campaign bevat Apache Tomcat die via HTTP (en SOAP) fungeert als ingangspunt in de toepassingsserver.
 
@@ -34,30 +32,17 @@ Een server van het Web laat u ook gegevensvertrouwelijkheid met het protocol van
 
 Eveneens, moet u een server van het Web gebruiken wanneer u wenst om de volgende functionaliteit te gebruiken, die slechts als de module van de de serveruitbreiding van het Web beschikbaar is.
 
->[!NOTE]
->
->Als u de trackingfunctionaliteit niet gebruikt, kunt u een standaardinstallatie van Apache of IIS uitvoeren met een omleiding naar Campagne. De volgende de serveruitbreidingsmodule van het Web wordt niet vereist.
-
 ## Het vormen van de server van het Web IIS {#configuring-the-iis-web-server}
 
-De configuratieprocedure voor een server van het Web IIS is meestal grafisch. Het impliceert het gebruiken van een Website (reeds gecreeerd of in afwachting van verwezenlijking) om tot de middelen van de server van Adobe Campaign toegang te hebben: dossiers Java (.jsp), stylesheets (.css, .xsl), beelden (.png), ISAPI DLL voor omleiding, enz.
+De configuratieprocedure voor een server van het Web van Microsoft IIS is meestal grafisch. Het impliceert het gebruiken van een Website om tot de middelen van de server van Adobe Campaign toegang te hebben: dossiers Java (.jsp), stylesheets (.css, .xsl), beelden (.png), ISAPI DLL voor redirection, enz.
 
-De volgende secties detailconfiguratie in IIS 7. De configuratie voor IIS8 is fundamenteel het zelfde.
-
-Als de Web IIS-server nog niet op uw computer is geïnstalleerd, kunt u deze installeren via de **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** -menu.
-
-In IIS 7, naast de standaarddiensten, moet u de Extensies ISAPI en filters installeren ISAPI.
-
-![](assets/s_ncs_install_iis7_isapi.png)
 
 ### Configuratiestappen {#configuration-steps}
 
-Pas de volgende configuratiestappen toe:
+Ga als volgt te werk om Adobe Campaign te integreren met de Microsoft IIS-webserver:
 
-1. Open IIS via **[!UICONTROL Control panel > Administrative tools > Services]** -menu.
+1. Open Microsoft IIS.
 1. Maak en configureer de site (bijvoorbeeld Adobe Campaign) afhankelijk van de parameters van uw netwerk (TCP-verbindingshaven, DNS-host, IP-adres).
-
-   ![](assets/s_ncs_install_iis7_add_site.png)
 
    U moet ten minste de naam van de site en het toegangspad naar de virtuele map opgeven. Aangezien het pad voor toegang tot de map Website niet wordt gebruikt, kunt u de volgende map gebruiken.
 
@@ -69,27 +54,17 @@ Pas de volgende configuratiestappen toe:
 
 1. A **VBS** Met script kunt u automatisch de bronnen configureren die door de Adobe Campaign-server worden gebruikt in de virtuele directory die we zojuist hebben gemaakt. Dubbelklik op de knop **iis_neolane_setup.vbs** bestand in het dialoogvenster `[INSTALL]\conf` map, waar `[INSTALL]` is het pad voor toegang tot de installatiemap van Adobe Campaign.
 
-   ![](assets/s_ncs_install_iis7_parameters_step2.png)
-
    >[!NOTE]
    >
-   >In het geval van een server 2008/IIS7 van Vensters installatie, moet u als beheerder worden aangemeld om het manuscript in werking te stellen VBS of het manuscript uit te voeren als beheerder.
+   >U moet als beheerder worden aangemeld om het manuscript in werking te stellen VBS of het manuscript uit te voeren als beheerder.
 
    Klikken **[!UICONTROL OK]** als de server van het Web als het volgen omleidingsserver wordt gebruikt, anders klik **[!UICONTROL Cancel]**.
 
    Wanneer de veelvoudige plaatsen reeds op de server van het Web worden gevormd, wordt een middenpagina getoond om te specificeren op welke Website de installatie van toepassing is: ga het aantal verbonden aan de plaats in en klik **[!UICONTROL OK]**.
 
-   ![](assets/s_ncs_install_iis7_parameters_step3.png)
-
-   Er moet een bevestigingsbericht worden weergegeven:
-
-   ![](assets/s_ncs_install_iis7_parameters_step7.png)
-
 1. In de **[!UICONTROL Content View]** tabblad, zorgt u ervoor dat de website correct is geconfigureerd met de Adobe Campaign-bronnen:
 
-   ![](assets/s_ncs_install_iis7_parameters_step6.png)
-
-   Als de boom niet wordt getoond, begin IIS opnieuw.
+   Start Microsoft IIS opnieuw als de structuur niet wordt weergegeven.
 
 ### Rechten beheren {#managing-rights}
 
@@ -111,7 +86,7 @@ U moet nu testen of de configuratie correct is.
 
 Hiervoor volgt u de volgende procedure:
 
-1. Start de IIS-server opnieuw met de **iisreset** opdrachtregel.
+1. Start de Microsoft IIS-server opnieuw met de **iisreset** opdrachtregel.
 
 1. Start de Adobe Campaign-service en controleer of deze actief is.
 
@@ -136,7 +111,7 @@ nlserver pdump
 Zij moet de volgende informatie teruggeven:
 
 ```
-12:00:33 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+HH:MM:SS >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 webmdl@default (1644) - 18.2 Mo
 ```
 
@@ -145,13 +120,10 @@ U kunt ook ervoor zorgen ISAPI DLL correct wordt geladen.
 Hiervoor voert u de volgende stappen uit:
 
 1. Bewerk de ISAPI-filters voor de Adobe Campaign-site door op de knop **[!UICONTROL Driver mapping]** pictogram.
-1. Controleer de inhoud van het ISAPI-filter:
+1. Controleer de inhoud van het ISAPI-filter.
 
-   ![](assets/s_ncs_install_iis7_parameters_step11.png)
 
-## Aanvullende configuraties {#additional-configurations}
-
-### De maximale bestandsgrootte voor uploaden wijzigen {#changing-the-upload-file-size-limit}
+## De maximale bestandsgrootte voor uploaden wijzigen {#changing-the-upload-file-size-limit}
 
 Wanneer het vormen van de server van het Web IIS, is een grens van ongeveer 28 MB automatisch voor vastgestelde dossiers die aan de server worden geupload.
 
@@ -159,15 +131,7 @@ Dit kan van invloed zijn op Adobe Campaign, vooral als u bestanden wilt uploaden
 
 Als u bijvoorbeeld een **Gegevens laden (bestand)** Typ activiteit in een werkstroom om een 50 MB dossier in te voeren, zal een fout de werkschema tegenhouden correct te presteren.
 
-In dit geval moet u deze limiet verhogen:
+In dit geval moet u deze limiet verhogen.
 
-1. Open IIS via **[!UICONTROL Start > (Control panel) > Administration tools]** -menu.
-1. In de **Verbindingen** selecteert u de site die u voor de Adobe hebt gemaakt en dubbelklikt u op **Verzoek filteren** in het hoofdvenster.
-1. In de **Handelingen** deelvenster, selecteert u **Functie-instellingen bewerken** om de waarde in het dialoogvenster **Maximale toegestane inhoudsgrootte (bytes)** veld.
-
-   Als u bijvoorbeeld toestemming wilt geven voor het uploaden van bestanden van 50 MB, moet u een waarde opgeven van meer dan &quot;52428800&quot; bytes.
-
->[!NOTE]
->
->Voor meer informatie over deze optie IIS, verwijs naar de &quot;hoe te&quot;sectie van [officiële documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
+Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;Hoe kan&quot;sectie van [Microsoft-documentatie](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
 

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 98%
+source-wordcount: '856'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,10 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 >
 >Deze matrix wordt regelmatig bijgewerkt door toevoeging van nieuwe ondersteunde items en verwijdering van verouderde items.
 
-## Besturingssystemen{#OperatingSystems}
+## Besturingssystemen {#OperatingSystems}
+
+Als klant op locatie/hybride dient u Adobe Campaign te installeren in een van de hieronder vermelde besturingssystemen. Meer informatie over de installatiestappen voor Campaign Classic v7 in [deze pagina](../../installation/using/application-server.md).
+
 
 <table> 
 <tbody> 
@@ -71,7 +74,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 >
 >Als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.
 
-## Webservers{#WebServers}
+## Webservers {#WebServers}
+
+Afhankelijk van uw besturingssysteem moet u Campagne als klant op locatie/hybride klant integreren in een van de onderstaande webservers. Meer informatie over configuratiestappen voor webservers vindt u in [deze pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (voor Windows) en [deze pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (voor Linux) .
 
 <table>
 <tbody>
@@ -90,7 +95,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </tbody>
 </table>
 
-## Tools{#Tools}
+## Tools {#Tools}
+
+Als klant op locatie/hybride klant moet u de hieronder vermelde tools installeren en configureren. [Meer informatie](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -119,6 +126,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </table>
 
 ## Relation Database Management Systems (RDBMS){#RDBMSservers}
+
+Als klant op locatie/hybride klant moet u een van de onderstaande databases installeren en configureren. [Meer informatie](../../installation/using/database.md).
+
 
 <table>
 <tbody>
@@ -158,7 +168,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 >
 >* Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 >
->* PostgreSQL is de RDBMS voor gehoste omgevingen.
+>* PostgreSQL is RDBMS voor Gehoste/Beheerde milieu&#39;s van Cloud Servicen.
 
 ## CRM-connectoren{#CRMconnectors}
 
@@ -394,7 +404,7 @@ De volgende browsers, in hun meest recente versie, zijn compatibel met Campaign 
 
 
 
-## Wellicht ook interessant{#Morelikethis}
+## Wellicht ook interessant {#Morelikethis}
 
 * [Aanvullende informatie voor Campaign Classic](../../rn/using/latest-release.md)
 * [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
