@@ -5,9 +5,9 @@ description: Eigenschappen voor webformulieren definiëren
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -83,6 +83,32 @@ Thema&#39;s worden opgeslagen in de **[!UICONTROL Administration>Configuration>F
 In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van rendering weergegeven. De **[!UICONTROL Edit link]** kunt u de configuratie voor het geselecteerde thema weergeven.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## Logo in het formulier {#logo-in-the-form}
+
+U kunt het logo dat in het formulier wordt gebruikt, wijzigen met uw eigen logo.
+
+In de **[!UICONTROL Rendering]** in de **[!UICONTROL Properties]** Klik op het glaspictogram van uw sjabloon in uw webapp:
+
+![](assets/logo_glass.png)
+
+Klik in het nieuwe venster op de knop **[!UICONTROL Page layout]** link :
+
+![](assets/logo_pagelayout.png)
+
+U kunt het pad van de logoafbeelding hier wijzigen:
+
+![](assets/logo_path.png)
+
+De beschikbare afbeeldingen zijn lager dan **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. U kunt hier uw logo toevoegen.
+
+Deze afbeeldingen worden in de achterste map van de instantie geplaatst *datakit\nms\fra\img\activities* of *datakit\nms\eng\img\activities* (eng of fra, afhankelijk van de taal van de instantie).
+
+Als er een nieuwe afbeelding beschikbaar is in deze map (en in Afbeeldingen), neemt u contact op met de ondersteuning van de Adobe om wijzigingen aan te brengen in de achterste mappen.
+
+Voor instanties op locatie kunt u zelf afbeeldingen aan de database toevoegen.
+
+De geüploade afbeelding hoeft niet zichtbaar te zijn vanuit de Campagneclient. Het juiste pad is voldoende om te gebruiken als een nieuw logo.
 
 ## Teksten in de vorm {#texts-in-the-form}
 
