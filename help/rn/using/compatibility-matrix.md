@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Besturingssystemen {#OperatingSystems}
 
-Als klant op locatie/hybride dient u Adobe Campaign te installeren in een van de hieronder vermelde besturingssystemen. Meer informatie over de installatiestappen voor Campaign Classic v7 in [deze pagina](../../installation/using/application-server.md).
+Als On-Premise/hybride klant moet u Adobe Campaign in een van de hieronder vermelde besturingssystemen installeren. Meer informatie over de installatiestappen van Campaign Classic v7 vindt u op [deze pagina](../../installation/using/application-server.md).
 
 
 <table> 
@@ -76,7 +76,7 @@ Als klant op locatie/hybride dient u Adobe Campaign te installeren in een van de
 
 ## Webservers {#WebServers}
 
-Afhankelijk van uw besturingssysteem moet u Campagne als klant op locatie/hybride klant integreren in een van de onderstaande webservers. Meer informatie over configuratiestappen voor webservers vindt u in [deze pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (voor Windows) en [deze pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (voor Linux) .
+Afhankelijk van uw besturingssysteem moet u als On-Premise/hybride klant Campaign in een van de onderstaande webservers integreren. Meer informatie over configuratiestappen voor webservers vindt u op [deze pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (voor Windows) en [deze pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (voor Linux).
 
 <table>
 <tbody>
@@ -97,7 +97,7 @@ Afhankelijk van uw besturingssysteem moet u Campagne als klant op locatie/hybrid
 
 ## Tools {#Tools}
 
-Als klant op locatie/hybride klant moet u de hieronder vermelde tools installeren en configureren. [Meer informatie](../../installation/using/application-server.md).
+Als On-Premise/hybride klant moet u de hieronder vermelde tools installeren en configureren. [Meer informatie](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -107,7 +107,7 @@ Als klant op locatie/hybride klant moet u de hieronder vermelde tools installere
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Meer informatie over JDK en Campagne in <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">deze pagina</a>.</p>
+<p>Meer informatie over JDK en Campaign op <a href="https://experienceleague.adobe.com/nl/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">deze pagina</a>.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ Als klant op locatie/hybride klant moet u de hieronder vermelde tools installere
 
 ## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
-Als klant op locatie/hybride klant moet u een van de onderstaande databases installeren en configureren. [Meer informatie](../../installation/using/creating-and-configuring-the-database.md).
+Als On-Premise/hybride klant moet u een van de onderstaande databases installeren en configureren. [Meer informatie](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
@@ -168,7 +168,7 @@ Als klant op locatie/hybride klant moet u een van de onderstaande databases inst
 >
 >* Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 >
->* PostgreSQL is RDBMS voor Gehoste/Beheerde milieu&#39;s van Cloud Servicen.
+>* PostgreSQL is de RDBMS voor Hosted/Managed Cloud Services-omgevingen.
 
 ## CRM-connectoren{#CRMconnectors}
 

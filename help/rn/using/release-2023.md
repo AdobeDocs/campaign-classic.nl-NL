@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Releases van Campaign Classic 2023
-description: Meer informatie over de release van Campaign Classic 2023
+description: Meer informatie over releases van Campaign Classic 2023
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 8fec4d038eddaa3c5a2aade1b619f2543453d4de
-workflow-type: tm+mt
+exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
+source-git-commit: ac086604b17df96355563308c3dec3096b407542
+workflow-type: ht
 source-wordcount: '1973'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
