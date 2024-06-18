@@ -4,10 +4,10 @@ title: Een workflow starten
 description: Leer hoe u een workflow start en werkstroomhandelingen ontdekt op de werkbalk en met de rechtermuisknop op het menu klikt
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +64,16 @@ De werkbalkknoppen worden in dit [sectie](../../campaign/using/marketing-campaig
   Deze actie stopt en start de workflow opnieuw. Doorgaans kunt u sneller opnieuw opstarten. Het is ook handig om opnieuw starten te automatiseren wanneer het stoppen enige tijd in beslag neemt. Dit komt omdat de opdracht Stoppen niet beschikbaar is wanneer de workflow wordt gestopt.
 
   De **[!UICONTROL Start / Pause / Stop / Restart]** acties zijn ook beschikbaar via de uitvoeringspictogrammen op de werkbalk. Raadpleeg deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow) voor meer informatie.
+
+  Let erop dat de **Opnieuw starten** handeling wist de variabelen van de werkstroominstantie niet in vergelijking met **Uitvoering**, **Stoppen**, en **Start** handelingen (de instantievariabelen wissen vindt plaats na de handeling Start). Wanneer u een werkstroom opnieuw start, zijn instantievariabelen nog steeds beschikbaar voor gebruik met opgeslagen waarden. U kunt deze wissen door:
+   * Uitvoeren **Stoppen** en **Start** handelingen.
+   * Voeg onder javascript-code toe aan het einde van de workflowuitvoering:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 

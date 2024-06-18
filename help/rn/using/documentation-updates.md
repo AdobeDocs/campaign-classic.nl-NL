@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: ht
-source-wordcount: '3764'
-ht-degree: 100%
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+workflow-type: tm+mt
+source-wordcount: '3783'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,10 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## 2024
+
+### Juni 2024 {#june-2024}
+
+Er is een opmerking toegevoegd om op te geven hoe instantievariabelen moeten worden gewist wanneer werkstromen opnieuw worden gestart. [Meer informatie](../../workflow/using/starting-a-workflow.md)
 
 ### April 2024 {#apr-2024}
 
