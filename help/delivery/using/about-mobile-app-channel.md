@@ -6,10 +6,10 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 8%
+source-wordcount: '772'
+ht-degree: 7%
 
 ---
 
@@ -51,6 +51,12 @@ De **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflowupdates
 Adobe Campaign is compatibel met HTTP/2 APNs. Raadpleeg voor meer informatie over de configuratiestappen de [deze sectie](configuring-the-mobile-application.md) sectie.
 
 Raadpleeg voor algemene informatie over het maken van een levering de [deze sectie](steps-about-delivery-creation-steps.md).
+
+
+## Pushmeldingskanaal configureren {#push-notification-configuration}
+
+Als u pushmeldingen wilt verzenden met Adobe Campaign, moet u eerst uw omgeving en app configureren. Voordat u pushberichten met Adobe Campaign gaat verzenden, moet u ervoor zorgen dat er configuraties en integratie zijn in de mobiele app en voor tags in Adobe Experience Platform. Adobe Experience Platform Mobile SDK biedt client-side integratie-API&#39;s voor uw mobiele apparaten via met Android en iOS compatibele SDK&#39;s. De configuratie SDKs wordt beheerd door de Inzameling UI van Gegevens voor flexibele configuratie en verlengbare, op regels-gebaseerde integratie. Meer informatie in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+
 
 ## Gegevenspad {#data-path}
 

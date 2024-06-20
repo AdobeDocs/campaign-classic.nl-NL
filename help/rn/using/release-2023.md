@@ -6,14 +6,46 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: ac086604b17df96355563308c3dec3096b407542
-workflow-type: ht
-source-wordcount: '1973'
-ht-degree: 100%
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+workflow-type: tm+mt
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
 # Releases van 2023{#release-2023}
+
+## Release 7.3.5 - build 9368 {#release-7-3-5}
+
+[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+
+_Woensdag 5 december 2023_
+
+### Beveiligingsverbeteringen {#release-7-3-5-security}
+
+
+* Met Campaign Classic v7.3.5 is het verificatieproces verbeterd en beveiligd. Technische operatoren moeten nu Adobe Identity Management System (IMS) gebruiken om verbinding te maken met Campaign. Ontdek in [deze technische opmerking](../../technotes/using/ims-migration.md) hoe u uw bestaande technische account(s) kunt migreren.
+
+* Daarnaast raadt Adobe Campaign bij het versterken van het beveiligings- en verificatieproces sterk aan om de modus voor verificatie van eindgebruikers te migreren van de native verificatie van aanmelding/wachtwoord naar Identity Management System (IMS) van Adobe. Ontdek in [deze technische opmerking](../../technotes/using/migrate-users-to-ims.md) hoe u uw operators kunt migreren.
+
+* Als een webformulier de status **Publicatie in behandeling** heeft, wordt het niet automatisch live. Om beveiligingsproblemen te voorkomen, moet het worden gepubliceerd voordat het **Online** wordt en toegankelijk is via de webformulier-URL in een webbrowser. [Meer informatie](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+
+### Andere verbeteringen {#release-7-3-5-other}
+
+Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
+
+### Patches {#release-7-3-5-patches}
+
+* Probleem verholpen bij het gebruik van gegevens uit een Google Big Query-database en het bijwerken van gegevens in een Oracle-database: alle sleutels in de tijdelijke tabel met workflows zijn ingesteld op `0`. (NEO-65091)
+* Probleem verholpen waarbij de uitvoering van een workflow mislukte wanneer twee query&#39;s in een Google Big Query-database werden gecombineerd in een **Samenvoeging**-workflowactiviteit. (NEO-63705)
+* Probleem verholpen waarbij de gebruiker werd gevraagd opnieuw te verifiëren wanneer in een Campaign-rapport op de knop `Back` werd geklikt. (NEO-65087)
+* Probleem verholpen in de workflow Database opschonen die optrad als een levering werd verwijderd vóór de leveringsbewijzen werden afgeleverd. (NEO-48114)
+* Probleem verholpen tijdens verbinden met de clientconsole: recente updates van de TLS-verificatie leidden tot een verbindingsfout. (NEO-50488)
+* Probleem verholpen met de HTTP-proxyverificatie na de upgrade van de Campaign naar 7.3.1., waarbij HTTP-verzoeken in Campaign-workflows mislukten met `error 407 – proxy auth required is returned`. (NEO-49624)
+* Er is een intermitterende fout opgelost bij GPG-ontsleuteling in workflowactiviteiten van **Script**. Het bijbehorende foutbericht was: `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+
 
 
 ## Release 7.3.4 - build 9364 {#release-7-3-4}
@@ -103,12 +135,12 @@ _20 maart 2023_
 * Tomcat is bijgewerkt van versie 8.5.81 naar 8.5.85 om de beveiliging te optimaliseren. (NEO-56936)
 
 
-
 ### Verbeteringen {#release-7-3-3-improvements}
 
 * De factureringsworkflow is verbeterd om de prestaties te optimaliseren. (NEO-47658)
 * De trackingworkflow is verbeterd om de prestaties bij grote leveringen te optimaliseren. (NEO-45064)
 * Trackingbeheer is verbeterd om mogelijke problemen met dynamische parameters in URL&#39;s op te lossen. Trackingbeheer v3 verwerkt nu URL&#39;s van het ajax-type (met parameters na een &#39;#&#39;) af en voorkomt dat tools van derden tracking-URL&#39;s kunnen wijzigen. Neem contact op met Adobe om deze wijziging toe te passen. (NEO-46535)
+* Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -150,6 +182,8 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 * De Google BigQuery-connector biedt nu volledige ondersteuning voor booleaanse velden. (NEO-49181)
 * U kunt nu de geldigheidsduur van de IMS-cookies configureren in de `Configuration for the redirection service`-sectie van het bestand serverConf.xml. Dit geldt voor de volgende cookies: `uuid230`, `nllastdelid` en `AMCV_` (NEO-42541)
 * Het IP-adres kan nu worden verborgen in het /r/test-verzoek door `showSourceIP` in te stellen op false in de omleidingsnode van het bestand serverConf.xml. [Meer informatie](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
+
 
 ### Afgeschafte functies  {#release-7-3-2-deprecated}
 

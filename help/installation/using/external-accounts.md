@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ef6a864c76c04ac94383c1c2ad74095dd5ef63a1
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 7%
@@ -292,7 +292,7 @@ De **[!UICONTROL Web Analytics]** Met een externe account kunt u gegevens van Ad
 
 ![](assets/ext_account_10.png)
 
-Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/gs-aa.md) voor meer informatie.
+Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../integrations/using/gs-aa.md) voor meer informatie.
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 

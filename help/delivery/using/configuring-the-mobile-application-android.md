@@ -5,10 +5,10 @@ description: Leer hoe u uw mobiele toepassing instelt voor Android
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 11%
+source-wordcount: '837'
+ht-degree: 9%
 
 ---
 
@@ -90,7 +90,7 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
    ![](assets/nmac_android.png)
 
-1. Zorg ervoor dat **[!UICONTROL Integration key]** wordt gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. Raadpleeg [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md) voor meer informatie.
+1. Zorg ervoor dat **[!UICONTROL Integration key]** wordt gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -156,4 +156,4 @@ U moet het dialoogvenster **appsubscriptionRcp** om nieuwe extra gebieden te bep
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen in het dialoogvenster **[!UICONTROL Subscription parameters]** zijn dezelfde als die in de code van de mobiele toepassing. Zie [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md).
+   >Zorg ervoor dat de configuratienamen in het dialoogvenster **[!UICONTROL Subscription parameters]** zijn dezelfde als die in de code van de mobiele toepassing. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

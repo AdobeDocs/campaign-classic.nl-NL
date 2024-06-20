@@ -8,30 +8,28 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 # Elementen delen met Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-
-
-De Middelen van het Experience Cloud verstrekken één enkele, gecentraliseerde bewaarplaats van marketing-klaar activa die u over oplossingen kunt delen. Middelen zijn digitale documenten, afbeeldingen, video- of audiobestanden.
+[Experience Cloud-elementen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} één gecentraliseerde opslagplaats van marketing-klaar activa verstrekken die u over oplossingen kunt delen. Middelen zijn digitale documenten, afbeeldingen, video- of audiobestanden.
 
 De diensten van activa omvatten:
 
 * Asset storage, management interface, embedded selection interface (toegankelijk via oplossingen).
 * Integratie met Creative Cloud- en Experience Cloud-oplossingen.
 
-Wanneer u een e-maillevering of een bestemmingspagina in Adobe Campaign bewerkt, kunt u elementen uit uw Adobe Experience Cloud-bibliotheken plaatsen. Afhankelijk van de oplossingen die u gebruikt, kunnen deze activa in de kerndienst van Activa of Adobe Experience Manager Assets worden opgeslagen.
+Wanneer u een e-maillevering of een bestemmingspagina in Adobe Campaign bewerkt, kunt u elementen uit uw Adobe Experience Cloud-bibliotheken plaatsen. Afhankelijk van de oplossingen die u gebruikt, kunnen deze elementen worden opgeslagen in Middelen of Adobe Experience Manager Assets.
 
-De verschillende beschikbare bibliotheken worden in detail beschreven in [dit document](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
+De verschillende beschikbare bibliotheken worden in detail beschreven in [dit document](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
 
 Raadpleeg de [Toegang tot elementen configureren](../../integrations/using/configuring-access-to-assets.md) voor meer informatie over de specifieke eigenschappen die aan elke bibliotheek zijn gekoppeld.
 
 >[!NOTE]
 >
->In de context van een Adobe Campaign On-Premise-omgeving is integratie met de Assets Core-service niet beschikbaar, tenzij AEM Assets ook op locatie is.
+>In de context van een Adobe Campaign On-premise omgeving is integratie met Middelen niet beschikbaar, tenzij AEM Assets ook On-premise is.

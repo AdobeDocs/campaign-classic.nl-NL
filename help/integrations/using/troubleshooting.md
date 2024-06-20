@@ -7,10 +7,12 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
+hide: true
+hidefromtoc: true
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '136'
 ht-degree: 3%
 
 ---
@@ -32,4 +34,4 @@ In het geval van fout, zorg ervoor dat de volgende elementen correct worden gevo
 
   In **[!UICONTROL Administration > Platform > AMC Data sources]**, controleert u of de AMC-gegevensbron juist is ingesteld.
 
-Het kan voorkomen dat sommige gegevens ontbreken wanneer het delen van een publiek via de de kerndienst van Mensen of wanneer het invoeren van een publiek. Alleen records waarvan de id (&#39;Bezoeker-id&#39; of &#39;Opgegeven ID&#39;) in overeenstemming kan worden gebracht met de profieldimensie, worden overgedragen. IDs van de de kernde dienstsegmenten van Mensen die niet door Adobe Campaign worden erkend worden niet ingevoerd.
+Het kan voorkomen dat sommige gegevens ontbreken wanneer het delen van een publiek via het Publiek van het Experience Cloud of wanneer het invoeren van een publiek. Alleen records waarvan de id (&#39;Bezoeker-id&#39; of &#39;Opgegeven ID&#39;) in overeenstemming kan worden gebracht met de profieldimensie, worden overgedragen. Id&#39;s uit de segmenten die niet door Adobe Campaign worden herkend, worden niet geïmporteerd.

@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -123,11 +123,11 @@ Leer hoe u uw versie kunt controleren [in deze sectie](../../platform/using/laun
 
 **Hoe kan ik bijwerken?**
 
-Zodra de instanties aan een nieuwere versie worden bevorderd, moeten alle klanten volgen [de procedure gaat naar de nieuwe authentificatiemodus](../../integrations/using/configuring-adobe-io.md). Hiervoor moet u het nieuwe Adobe I/O-token genereren en gebruiken in de implementatie.  
+Zodra de instanties aan een nieuwere versie worden bevorderd, moeten alle klanten volgen [de procedure gaat naar de nieuwe authentificatiemodus](../../integrations/using/about-triggers.md#implement). Hiervoor moet u het nieuwe Adobe I/O-token genereren en gebruiken in de implementatie.  
 
 Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../../integrations/using/configuring-pipeline.md).
 
-[Meer informatie over migreren naar Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[Meer informatie over migreren naar Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## APNs-updates {#acc-apns-updates}
 

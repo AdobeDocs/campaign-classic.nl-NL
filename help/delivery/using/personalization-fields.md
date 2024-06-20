@@ -6,10 +6,10 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 9%
+source-wordcount: '1024'
+ht-degree: 8%
 
 ---
 
@@ -115,6 +115,26 @@ Als tijdens de voorvertoning of het verzenden de maximale tijd die u in dit veld
 De standaardwaarde is 5 seconden.
 
 Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkingsfase.
+
+## Tabblad Aanpassing {#personalization-tab}
+
+In de Eigenschappen van de Levering, hebt u een lusje van de Aanpassing.
+
+U kunt daar de mogelijkheid vinden om gegevens aan de profielvraag toe te voegen van de het richten dimensie door op te klikken op **&quot;De laadquery voor het ontvangende profiel bewerken&quot;**. U kunt de gegevens die u rechtstreeks in een expressie hebt geëxtraheerd, gebruiken om te extraheren wat u echt nodig hebt. Deze gegevens worden aan de context toegevoegd.
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+Als de gegevens die u wilt toevoegen zich niet in de doeldimensie bevinden, kunt u klikken op **&quot;Objecten toevoegen in de uitvoeringscontext van de scripts&quot;**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+U kunt daar het objecten schema selecteren dat u nodig hebt, dan kunt u die gegevens binnen uw code gebruiken JavaScript, die tijdens de leveringsvoorbereiding zal worden uitgevoerd.
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+Door het objectschema toe te voegen, kunt u de velden selecteren die u aan de context wilt toevoegen:
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## Video over zelfstudie {#personalization-fields-video}
 

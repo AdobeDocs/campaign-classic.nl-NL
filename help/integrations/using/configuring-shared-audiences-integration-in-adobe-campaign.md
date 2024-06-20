@@ -2,21 +2,20 @@
 product: campaign
 title: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
 description: Leer hoe u integratie met gedeelde soorten publiek configureert
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
 # Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 Zodra u dit verzoek hebt voorgelegd, zal de Adobe aan de levering van de integratie voor u te werk gaan en u te contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
@@ -88,7 +87,7 @@ Om te vormen **[!UICONTROL Recipient - Visitor ID]** gegevensbron:
 
 ## Stap 3: De server voor bijhouden van campagnes configureren {#step-3--configure-campaign-tracking-server}
 
-Voor de configuratie van de integratie met de dienst van de Kern van Mensen of de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
+Voor de configuratie van de integratie met de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
 
 Als u wilt dat een gedeeld publiek kan functioneren met de bezoeker-id, moet het trackingserverdomein een subdomein zijn van de aangeklikte URL of de hoofdwebsite.
 

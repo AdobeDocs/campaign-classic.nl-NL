@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '8068'
+source-wordcount: '8067'
 ht-degree: 1%
 
 ---
@@ -337,7 +337,7 @@ In de **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE, Sybase IQ)), 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
+   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE, Sybase IQ)), 'Relay " (HTTP relay aan verre gegevensbestand).<br /> </td> 
    <td> String<br /> </td> 
    <td> "Oracle"<br /> </td> 
   </tr> 
@@ -1856,7 +1856,7 @@ Raadpleeg voor meer informatie [Optimalisatie van e-mailverzending](../../instal
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> Timeout (in seconden) waarna een verbinding van de ZEEP voor een leveringsschakelaar wordt verlaten.<br /> </td> 
+   <td> Timeout (in seconden) waarna een SOAP verbinding voor een leveringsschakelaar wordt verlaten.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2897,7 +2897,7 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> Grootte van de rij voor vraag SubmitDelivery: maximumaantal vraag van de ZEEP SubmitDelivery die een rij kan worden gevormd.<br /> </td> 
+   <td> Grootte van de rij voor Vraag SubmitDelivery: maximumaantal vraag SubmitDelivery SOAP die een rij kan worden gevormd.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
@@ -2933,7 +2933,7 @@ Raadpleeg voor meer informatie deze [sectie](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
-   <td> Begin de router van de ZEEP op modulewijze.<br /> </td> 
+   <td> Begin de SOAP router op modulewijze.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2974,7 +2974,7 @@ Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de con
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> URL van SOAP-router (http://myserver/xxx, http://jni of mailto:xxx).<br /> </td> 
+   <td> URL van SOAP router (http://myserver/xxx, http://jni of mailto:xxx).<br /> </td> 
    <td> String<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
@@ -2984,18 +2984,18 @@ Hier zijn de verschillende parameters van **web > jsp** knooppunt. Dit is de con
 De **web > jsp > classpath** knooppunt bevat de lijst met alle klassenpaden die moeten worden gebruikt bij het starten van JVM. Hier is de standaardconfiguratie:
 
 ```
-'$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/bin/tomcat-juli.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-coyote.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-util.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/annotations-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/catalina.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/websocket-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat7-websocket.jar
+'$(XTK_INSTALL_DIR)/tomcat-X/bin/bootstrap.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/bin/tomcat-juli.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-coyote.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-util.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/servlet-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/jsp-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/annotations-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/catalina.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/websocket-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat7-websocket.jar
           $(XTK_INSTALL_DIR)/java/lib/pdfbox-2.0.4.jar
           $(XTK_INSTALL_DIR)/java/lib/FontBox-0.1.0.jar
           $(XTK_INSTALL_DIR)/java/lib/AGJavaEndpoint.22.jar

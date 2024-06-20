@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Adobe I/O configureren voor Adobe Experience Cloud Triggers
-description: Leer hoe u Adobe I/O voor Adobe Experience Cloud Triggers configureert
+title: Ontwikkelaarsconsole voor Adobe Experience Cloud Triggers configureren
+description: Meer informatie over het configureren van Developer Console Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
@@ -9,132 +9,58 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
+hide: true
+hidefromtoc: true
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 1%
 
 ---
 
-# Adobe I/O configureren voor Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Ontwikkelaarsconsole voor Adobe Experience Cloud Triggers configureren {#configuring-adobe-io}
 
+<!--
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Trekkers door Authentificatie Auth gebruikt, **u moet naar Adobe I/O gaan zoals hieronder beschreven**.
->Let op: tijdens deze overgang naar [!DNL Adobe I/O]bepaalde inkomende triggers kunnen verloren gaan.
+>If you are using an older version of Triggers integration through oAuth authentication, **you need to move to Adobe I/O as described below**. 
+>Note that during this move to [!DNL Adobe I/O], some incoming triggers may be lost.
 >
->De oude verificatiemodus Auth met Campagne is uitgeschakeld op **20 oktober 2021**. Gehoste omgevingen profiteren van een verlenging tot **25 mei 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van de Adobe om de support uit te breiden tot **mei 2022**. U moet [Geef de appID van de OAuth-toepassing op](../../integrations/using/configuring-pipeline.md#step-optional) aan de Adobe.
+>Legacy oAuth authentication mode with Campaign has been retired on **October 20, 2021**. Hosted environments benefit from an extension until **May 25, 2022**. As an on-premise or hybrid customer, contact Adobe Customer Care to extend support to **May 2022**. You must [provide the AppID of the OAuth application](../../integrations/using/configuring-pipeline.md#step-optional) to Adobe.
+-->
 
 ## Vereisten {#adobe-io-prerequisites}
 
-Deze integratie geldt alleen voor het starten **Campaign Classic 20.2.4 en hoger, 19.1.8 en Gold Standard 11-releases**.
+<!--
+This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1.8 and Gold Standard 11 releases**.
+-->
 
 Controleer voordat u met deze implementatie begint of:
 
 * een geldige **Organisatie-id**: de organisatie-id is de unieke id in de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de service VisitorID en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
 * a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
 
-## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
+## Stap 1: Een OAuth-project maken/bijwerken {#creating-adobe-io-project}
 
 >[!AVAILABILITY]
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken. Bovendien is het niet langer mogelijk om vanaf 3 juni 2024 nieuwe JWT-gegevens (Service Account) te maken in de Developer Console. Een nieuwe referentie van de Rekening van de Dienst (JWT) kan niet aan een project na deze datum worden gecreeerd of worden toegevoegd. </br>
+> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken.</br>
 >
-> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth. Aangezien het maken van nieuwe JWT-referenties (Service Account) in de Developer Console vanaf 3 juni 2024 niet meer mogelijk is, kunt u na deze datum geen nieuwe uitgaande integratie maken die afhankelijk is van JWT
+> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth.
 
-1. Toegang [!DNL Adobe I/O] en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
+Als u verder wilt gaan met het configureren van uw Adobe Analytics-connector, opent u de Adobe Developer-console en maakt u uw OAuth Server-to-Server-project.
 
-1. Extraheer de bestaande id van de integratieclient (Cliënt ID) van het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet-bestaand of leeg kenmerk geeft aan dat de id van de client niet is geconfigureerd.
-
-   >[!NOTE]
-   >
-   >Als uw client-id leeg is, kunt u rechtstreeks **[!UICONTROL Create a New project]** in Adobe I/O.
-
-1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde herkenningsteken van de Cliënt zoals die in vorige stap wordt gehaald.
-
-   ![](assets/do-not-localize/adobe_io_8.png)
-
-1. Selecteren **[!UICONTROL + Add to Project]** en kiest u **[!UICONTROL API]**.
-
-   ![](assets/do-not-localize/adobe_io_1.png)
-
-1. In de **[!UICONTROL Add an API]** venster, selecteert u **[!UICONTROL Adobe Analytics]**.
-
-   ![](assets/do-not-localize/adobe_io_2.png)
-
-1. Kies **[!UICONTROL Service Account (JWT)]** als het verificatietype.
-
-   ![](assets/do-not-localize/adobe_io_3.png)
-
-1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbare en privé zeer belangrijke paar tot stand te brengen.
-
-   De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met de optie 2 kunt u handmatig uw **[!UICONTROL Public key]** met een langere vervaldatum.
-
-   Voor een geleidelijke gids over hoe te om het verlopen sleutelparen van het certificaat te vervangen, verwijs naar [deze pagina](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs).
-
-
-   >[!CAUTION]
-   >
-   >Sla het bestand config.zip op wanneer de downloadprompt verschijnt, omdat u deze niet opnieuw kunt downloaden.
-
-   ![](assets/do-not-localize/adobe_io_4.png)
-
-1. Klik op **[!UICONTROL Next]**.
-
-   ![](assets/do-not-localize/adobe_io_5.png)
-
-1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**, zie [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
-
-   Klik vervolgens op **[!UICONTROL Save configured API]**.
-
-   ![](assets/do-not-localize/adobe_io_6.png)
-
-1. Van uw project, selecteer **[!UICONTROL Adobe Analytics]** en kopieert u de volgende informatie onder **[!UICONTROL Service Account (JWT)]**:
-
-   * **[!UICONTROL Client ID]**
-   * **[!UICONTROL Client Secret]**
-   * **[!UICONTROL Technical account ID]**
-   * **[!UICONTROL Organization ID]**
-
-   ![](assets/do-not-localize/adobe_io_7.png)
-
->[!CAUTION]
->
->Adobe I/O certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
+Zie [deze pagina](oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
 
 ## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign toe {#add-credentials-campaign}
 
->[!NOTE]
->
->Deze stap is niet vereist als uw client-id niet leeg was in [Stap 1: Adobe I/O-project maken/bijwerken](#creating-adobe-io-project).
-
-De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet u als volgt:
-
-1. Gebruik de persoonlijke sleutel die in het dialoogvenster [Stap 1: sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
-
-1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
-
-   >[!NOTE]
-   >
-   >Soms kunnen extra regels automatisch worden toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
-
-1. De inhoud van het bestand kopiëren `private.key.base64`.
-
-1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens toe in Adobe Campaign door de volgende opdracht uit te voeren als `neolane` gebruiker. Hiermee voegt u de **[!UICONTROL Technical Account]** referenties in het configuratiebestand van de instantie.
-
-   ```
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
+Voer de in [deze pagina](oauth-technical-account.md#add-credentials) om uw OAuth projectgeloofsbrieven in Adobe Campaign toe te voegen.
 
 ## Stap 3: De tag pipelined bijwerken {#update-pipelined-tag}
 
->[!NOTE]
->
->Deze stap is niet vereist als uw client-id niet leeg was in [Stap 1: Adobe I/O-project maken/bijwerken](#creating-adobe-io-project).
-
-Bijwerken [!DNL pipelined] -tag, moet u het verificatietype bijwerken naar een Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
+Bijwerken [!DNL pipelined] tag, moet u het verificatietype bijwerken naar het project Developer Console in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />

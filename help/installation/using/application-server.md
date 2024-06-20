@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 De vereiste databasetoegangslagen moeten op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account.
 
-## Java Development Kit - JDK {#java-development-kit---jdk}
+## Java Development Kit - JDK {#jdk}
 
 Java Development Kit (JDK) is een software-ontwikkelingskit. Het is de basiscomponent die de ontwikkeling van Java-toepassingen en Java-applets mogelijk maakt.
 
-De dynamische generator van de Web-pagina gebruikt JSP 1.2 technologie. Hiervoor wordt een Tomcat-engine (van Apache) in de toepassing opgenomen. Hiervoor is een JDK (Java Development Kit) vereist die is geïnstalleerd op alle servers waarop de Adobe Campaign-toepassing is geïnstalleerd.
+De dynamische generator van de Web-pagina gebruikt technologie JSP. Hiervoor wordt een Tomcat-engine (van Apache) in de toepassing opgenomen. Hiervoor is een JDK (Java Development Kit) vereist die is geïnstalleerd op alle servers waarop de Adobe Campaign-toepassing is geïnstalleerd.
 
 U moet eerst een JDK installeren op de computers waarop u de Adobe Campaign-toepassingsserver wilt uitvoeren (**nlserver-web** proces) omdat het een servletcontainer, Apache Tomcat, opneemt die wordt gebruikt om dynamische Web-pagina&#39;s (rapporten, de vormen van het Web, enz.) te produceren.
 
@@ -31,6 +31,13 @@ De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is
 
 De ondersteunde versies worden gedetailleerd weergegeven in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
+
+>[!AVAILABILITY]
+>
+>* Vanaf v7.4.1 vereist campagne ten minste Java JDK 11. Als uw Campagneserver in een milieu van Vensters geïnstalleerd is, moet u JRE produceren aangezien het niet meer door gebrek wordt verstrekt.
+>
+>* Vanaf v7.4.1 is Tomcat 10.1 de standaardversie.
+>
 
 ### Aanbevelingen
 
@@ -41,8 +48,6 @@ Pas de volgende aanbevelingen toe wanneer u uw Java Development Kit installeert 
 * Wanneer het installeren van JDK, wordt de integratie met browsers van het Web niet vereist.
 
 * Op een machine die alleen leveringsagenten uitvoert (**nlserver-mta** proces) of de workflowserver (**nlserver wfserver** -proces), is het installeren van een JDK niet vereist.
-
-* Als u de prestaties van het platform wilt behouden en compatibiliteit met de geïnstalleerde versie wilt garanderen, moet u de automatische JDK-updatefuncties in Windows en Linux uitschakelen.
 
 * Wanneer u uw Java-versie upgradet, moet u eerst de vorige versie verwijderen. Beide versies van Java die op dezelfde computer zijn geïnstalleerd, kunnen conflicten veroorzaken.
 
@@ -65,19 +70,16 @@ Om JDSL in een milieu van Linux te installeren, adviseert de Adobe om een pakket
 Gebruik voor Debian de volgende opdracht:
 
 ```sql
-aptitude install openjdk-8-jdk
+apt install openjdk-11-jdk-headless
 ```
 
 Gebruik voor RHEL de volgende opdracht:
 
 ```sql
-yum install java-1.8.0-openjdk
+dnf install java-11-openjdk-headless
 ```
 
 
-## OpenSSL {#openssl}
-
-In Linux moet OpenSSL zijn geïnstalleerd. Adobe Campaign ondersteunt OpenSSL versie 1.0.2 of hoger.
 
 ## Rapporten exporteren {#exporting-reports}
 

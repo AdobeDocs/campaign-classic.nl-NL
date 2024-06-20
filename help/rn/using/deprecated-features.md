@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1551'
-ht-degree: 100%
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 
@@ -43,16 +43,21 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Functie</strong></td>
    <td><strong>Details</strong></td>
   </tr>
+  <tr>
+ <td>Campagne (Neolane) verouderde SDK</td>
+ <td><p>De Campagne (Neolane) SDK voor mobiele toepassingen is nu afgekeurd. Gebruik in plaats daarvan de Adobe Experience Platform Mobile SDK door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile SDK helpt de oplossingen en services van de Adobe voor Experiencen Cloud in uw mobiele apps te ondersteunen. De configuratie SDKs wordt beheerd door de Inzameling UI van Gegevens voor flexibele configuratie en verlengbare, op regels-gebaseerde integratie. Leer hoe u het kanaal voor de mobiele app configureert in <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campagne v8-documentatie</a>.</p>
+<p>Verwachte verwijdering: eind 2024 </p>
+</td>
+</tr>
 <tr>
  <td>Social marketing met Facebook</td>
- <td>Social marketing met Facebook is nu afgeschaft. U kunt integratie met X (voorheen Twitter) gebruiken om berichten te plaatsen op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.
- <p></p>
+ <td><p>Social marketing met Facebook is nu afgeschaft. U kunt integratie met X (voorheen Twitter) gebruiken om berichten te plaatsen op sociale media. U kunt ook met Adobe werken om een aangepast kanaal te maken.</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
- <td>ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.<p></p>
+ <td><p>ACS Connector (primeaanbieding) is nu afgeschaft. U kunt de export-/importcapaciteiten van Campaign gebruiken voor het extraheren en injecteren van gegevens in beide producten.</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
@@ -72,7 +77,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
       <tr>
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>De Adobe Analytics Data Connector is verwijderd op 17 augustus 2022. Deze is vervangen door de release van Campaign 21.1.3.</p>
-   <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/gs-aa.md">Meer informatie</a></p>
+   <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/gs-aa.md">Meer informatie</a></p>
   </td>
  </tr>
     <tr>
@@ -83,8 +88,8 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
  </tr>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
-  <td><p> Activeert integratieverificatie die oorspronkelijk was gebaseerd op oAUTH-verificatie-instellingen om toegang te krijgen tot de pijplijn, is nu gewijzigd en verplaatst naar Adobe I/O. Deze verificatiemodus was beëindigd met de release van Campaign 20.3.<p>
-  <p>Als u Triggers-integratie hebt gebruikt, leest u <a href="../../integrations/using/configuring-adobe-io.md">op deze pagina</a> hoe u uw implementatie kunt aanpassen.</p> 
+  <td><p> De de integratieauthentificatie van trekkers oorspronkelijk gebaseerd op OAuth authentificatieconfiguratie aan toegangspijpleiding is nu veranderd en verplaatst naar Adobe I/O. Deze authentificatiemodus was verouderd met de versie van Campagne 20.3.<p>
+  <p>Als u Triggers-integratie hebt gebruikt, leest u <a href="../../integrations/using/about-triggers.md#implement">op deze pagina</a> hoe u uw implementatie kunt aanpassen.</p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>

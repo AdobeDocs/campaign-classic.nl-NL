@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '3643'
 ht-degree: 0%
@@ -373,7 +373,7 @@ Er wordt uitvoer gegenereerd in een gemakkelijk verwerkte XML-indeling.
 
 Deze opdracht kan ook worden uitgevoerd met de opdracht **-missing** parameter, die van de processen een lijst maakt die van deze instantie missen wanneer de configuratiedossiers zeggen dat zij zouden moeten uitvoeren.
 
-```
+```sql
 nlserver monitor -missing
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 mta@prod

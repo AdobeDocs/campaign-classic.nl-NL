@@ -7,9 +7,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '398'
 ht-degree: 7%
 
 ---
@@ -37,4 +37,26 @@ De [!DNL pipelined] -proces wordt altijd uitgevoerd op de Adobe Campaign-marketi
 
 De [!DNL pipelined] proces het programma opent aan het Experience Cloud gebruikend de authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
 
-Raadpleeg deze voor meer informatie over verificatie [page](../../integrations/using/configuring-adobe-io.md).
+## Vereisten {#adobe-io-prerequisites}
+
+Controleer voordat u met deze implementatie begint of:
+
+* een geldige **Organisatie-id**: de organisatie-id is de unieke id in de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de service VisitorID en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
+* a **Toegang voor ontwikkelaars** aan uw organisatie. De systeembeheerder van de organisatie moet de **Ontwikkelaars toevoegen aan één productprofiel** procedure [op deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) om ontwikkelaarstoegang voor `Analytics - {tenantID}` Productprofiel van het Adobe Analytics-product dat is gekoppeld aan Triggers.
+
+## Implementatiestappen {#implement}
+
+Voer de volgende stappen uit om campagne- en Experience Cloud-triggers te implementeren:
+
+1. Maak een OAuth-project. [Meer informatie](oauth-technical-account.md#oauth-service)
+
+1. Voeg uw OAuth projectgeloofsbrieven in Adobe Campaign toe. [Meer informatie](oauth-technical-account.md#add-credentials)
+
+1. Werk het authentificatietype aan het de consoleproject van de Ontwikkelaar in het configuratiedossier bij **config-&lt; instance-name >.xml** als volgt:
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   Voer vervolgens een `config -reload` en het opnieuw opstarten van de [!DNL pipelined] voor de in aanmerking te nemen wijzigingen.
+

@@ -7,9 +7,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -31,19 +31,17 @@ Controleer voordat u deze configuratie start of:
 * Een ontwikkelaar heeft toegang tot uw organisatie
 * Een geldige triggerconfiguratie in Adobe Analytics
 
-## Verificatie- en configuratiebestanden {#authentication-configuration}
-
-De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen. Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger. Verificatie wordt ondersteund voor de Marketing Cloud via Adobe Developer Project.
+De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen. Het gebruikt een authentificatie die voor via een Project van Adobe Developer wordt gesteund.
 
 ## Stap 1: uw Adobe Developer-project maken/bijwerken {#creating-adobe-io-project}
 
-Voor gehoste klanten werkt u samen met uw Adobe-medewerker/klantenservice om uw organisatie met Adobe Developer-accounttokens in te schakelen voor de integratie met Triggers.
+Voor de integratie met Triggers moet u uw organisatie inschakelen met Adobe Developer-accounttokens.
 
-Voor on-premise/Hybrid klanten, verwijs naar [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) pagina. Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl u API toevoegt aan de Adobe Developer-referentie.
+Leer hoe u uw technische Adobe maakt in [deze pagina](../../integrations/using/oauth-technical-account.md). Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl u API toevoegt aan de Adobe Developer-referentie.
 
 ## Stap 2: Vorm de pijpleidingsoptie {#configuring-nmspipeline}
 
-Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
+Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
 
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
 
@@ -51,7 +49,7 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
 
 1. Selecteer de **[!UICONTROL NmsPipeline_Config]** -optie.
 
-1. In de **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
+1. In de **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. Verwijder opmerkingen.
 
    ```json
    {
@@ -111,7 +109,7 @@ Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 * de `pipelined`het proces steunt ook het &quot;aliassen&quot;onderwerp.
 * U moet altijd opnieuw beginnen `pipelined`na het aanbrengen van wijzigingen.
 
-## Stap 3: Optionele configuratie {#step-optional}
+## (facultatief) Stap 3: Aanvullende configuratie {#step-optional}
 
 U kunt enkele interne parameters wijzigen op basis van de vereisten voor de belasting, maar zorg dat u deze test voordat u ze toepast op de productieomgeving.
 

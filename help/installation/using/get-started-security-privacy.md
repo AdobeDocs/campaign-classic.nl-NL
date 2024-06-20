@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '445'
 ht-degree: 7%
 
 ---
@@ -69,9 +69,6 @@ Het is ook noodzakelijk dat u de beveiliging van de database-engine volgt.
 
 [Meer informatie](../../installation/using/network-database.md)
 
->[!CAUTION]
->
->Vanaf 14 juli 2021 verliezen alle clientsystemen die het TLS 1.2-protocol niet ondersteunen, de toegang tot alle producten en services van de Adobe. Zorg ervoor dat alle gebruikers- en clientsystemen vóór deze datum compatibel zijn met TLS 1.2. [Meer informatie](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Serverconfiguratie
 

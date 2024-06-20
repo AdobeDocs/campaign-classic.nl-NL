@@ -1,23 +1,21 @@
 ---
 product: campaign
 title: Vereisten voor installatie van campagne in Linux
-description: Vereisten voor installatie van campagne in Linux
+description: Voorwaarden voor de Campaign-installatie in Linux
 feature: Installation, Instance Settings
-badge-v7-prem: label="Alleen op locatie/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
+badge-v7-prem: label="Alleen on-premise/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premises en hybride implementaties"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # Vereisten om Campagne op Linux te installeren{#prerequisites-of-campaign-installation-in-linux}
-
-
 
 ## Softwarevereisten {#software-prerequisites}
 
@@ -27,16 +25,13 @@ De technische en softwareconfiguratie die nodig is voor de installatie van Adobe
 
 Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct worden gevormd:
 
-* Apache, raadpleeg de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md),
-* Java JDK en OpenJDK, raadpleeg [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
-* Bibliotheken, raadpleeg [Bibliotheken](#libraries),
+* Apache, zie [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md),
+* Java JDK en OpenJDK, zie [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
+* Bibliotheken, zie [Bibliotheken](#libraries),
 * De de toegangslagen van het gegevensbestand, verwijzen naar [Databasetoegangslagen](#database-access-layers),
 * LibreOffice, zie [LibreOffice voor Debian installeren](#installing-libreoffice-for-debian) en [LibreOffice voor CentOS installeren](#installing-libreoffice-for-centos),
 * Lettertypen, zie [Lettertypen voor MTA-statistieken](#fonts-for-mta-statistics) en [Lettertypen voor Japanse instanties](#fonts-for-japanese-instances).
 
->[!NOTE]
->
->Als u een build lager of gelijk aan 8709 wilt installeren op de platforms CentOS 7 en Debian 8, moet de module apache access_compat zijn ingeschakeld.
 
 ### Bibliotheken {#libraries}
 
@@ -46,33 +41,15 @@ Zorg ervoor dat u de vereiste bibliotheken hebt om Adobe Campaign in Linux te in
 
   U kunt dit controleren door bijvoorbeeld de **opdracht uname -a | grep xen te** gebruiken.
 
-  Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
+  Als het bevel geen lege lijn terugkeert, betekent het configuratie correct is.
 
 * U moet OpenSSL-versie hebben **1.0.2.** of hoger.
 
-  Voor RHEL 7/8-distributies is versie 1.0 van OpenSSL vereist.
+  Voor RHEL-distributies is versie 1.0 van OpenSSL vereist.
 
 * Als je Adobe Campaign wilt gebruiken, moet je beschikken over de **libicu** geïnstalleerde bibliotheek.
 
-  De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
-
-   * RHEL 7/8, CentOS 7: libicu50
-   * Debian 8: libicu52
-   * Debian 9: libicu57
-
-  Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
-
-  ```
-  yum install c-ares
-  ```
-
-  In Debian:
-
-  ```
-  aptitude install libc-ares2
-  ```
-
-### Selinux {#selinux}
+### SELinux {#selinux}
 
 Indien gebruikt, moet de SELinux module correct geconfigureerd zijn.
 
@@ -94,7 +71,7 @@ In RHEL en CentOS werden compatibiliteitsproblemen met de clientlagen van databa
 
 * Het bestand bewerken **/etc/selinux/config**
 
-* Wijzig de SELINUX-lijn als volgt:
+* Wijzig de regel SELINUX als volgt:
 
 ```
 SELINUX=disabled
@@ -102,51 +79,36 @@ SELINUX=disabled
 
 ### Lettertypen voor MTA-statistieken {#fonts-for-mta-statistics}
 
-Voeg lettertypen toe om te zorgen dat rapporten over MTA-statistieken (nms/fra/jsp/stat.jsp) correct worden weergegeven.
-
-In Debian voegt u de opdracht toe:
-
-```
-aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
-```
-
-Gebruik in Redhat de volgende opdracht:
-
-* Voor CentOS/RHEL 7:
-
-  ```
-  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-  ```
-
-* Voor RHEL 8:
-
-  ```
-  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-  ```
-
-### Lettertypen voor Japanse instanties {#fonts-for-japanese-instances}
-
-Voor Japanse exemplaren zijn lettertypen van specifieke tekens nodig om de rapporten naar de indeling PDF te kunnen exporteren.
+Om rapporten over MTA statistieken (nms/fra/jsp/stat.jsp) correct te tonen, voeg doopvonten toe.
 
 Voeg in Debian de opdracht toe:
 
 ```
-aptitude install fonts-ipafont
+apt install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 ```
 
-Voeg in Rode hoed de opdracht toe:
+Gebruik de volgende opdracht voor RHEL:
 
-* Voor RHEL 7:
+```
+dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+```
 
-  ```
-  yum install ipa-gothic-fonts ipa-mincho-fonts
-  ```
+### Lettertypen voor Japanse instanties {#fonts-for-japanese-instances}
 
-* Voor RHEL 8:
+Lettertypen met specifieke tekens zijn nodig voor de Japanse instanties om de rapporten naar de PDF-indeling te exporteren.
 
-  ```
-  dnf install vlgothic-fonts
-  ```
+In Debian voegt u de opdracht toe:
+
+```
+apt install fonts-ipafont
+```
+
+Voeg voor RHEL de volgende opdracht toe:
+
+```
+dnf install epel-release # if required
+dnf install vlgothic-fonts
+```
 
 ### LibreOffice voor Debian installeren {#installing-libreoffice-for-debian}
 
@@ -158,7 +120,7 @@ Voor Debian zijn de volgende configuraties vereist:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installeer de volgende lettertypen (optioneel, maar hoogst aanbevolen voor Japanse instanties):
+1. Installeer de volgende lettertypen (optioneel, maar wordt sterk aanbevolen voor Japanse instanties):
 
    ```
    apt-get install fonts-ipafont
@@ -174,7 +136,7 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## Lagen voor databasetoegang {#database-access-layers}
 
-De toegangslagen voor de database-engine die u gebruikt, moeten op de server zijn geïnstalleerd en toegankelijk zijn via de Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
+De toegangslagen voor de database-engine die u gebruikt, moeten op uw server zijn geïnstalleerd en toegankelijk zijn via het Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
 
 De ondersteunde proefversie wordt beschreven in het gedeelte [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -182,41 +144,37 @@ Controleer ook het algemene [Database](../../installation/using/database.md) sec
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign biedt ondersteuning voor alle versies van de PostgreSQL-clientbibliotheken uit versie 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** en **libpq.so.3.1**).
+Adobe Campaign biedt ondersteuning voor alle versies van de PostgreSQL-clientbibliotheken uit versie 9.6: **libpq.so.5**.
 
 Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto** bibliotheken.
 
 ### Oracle {#oracle}
 
-Haal de bibliotheekversie op voor 64-bits Debian, dat wil zeggen: **libclntsh.so**, **libclntsh.so.11.1** en **libclntsh.so.10.1**.
+Haal de bibliotheekversie op voor 64-bits Debian, dat wil doen: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 of **** libclntsh.so.10.1.********
 
-U kunt een Linux RPM pakket van het Netwerk van de Technologie van het Oracle verkrijgen.
+U kunt een Linux RPM-pakket verkrijgen van Oracle Technology Network.
 
 >[!NOTE]
 >
->Als u de client voor het Oracle al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet correct is geconfigureerd, kunt u ontbrekende informatie toevoegen aan de **nl6/customer.sh** script Raadpleeg voor meer informatie hierover [Omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Als u de Oracle client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet goed is geconfigureerd, kunt u ontbrekende informatie toevoegen aan het **nl6/customer.sh** script Raadpleeg omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables) voor meer informatie [hierover.
 
-**Problemen oplossen en best practices**
+**Probleemoplossing en aanbevolen procedures**
 
-Problemen kunnen optreden na een Oracle-client of een serverupdate, een wijziging van versie of bij de eerste installatie van de instantie.
+Problemen kunnen optreden na een Oracle-client of een serverupdate, een versiewijziging of bij de eerste installatie van de instantie.
 
-Als u in de clientconsole merkt dat er onverwachte vertragingen (één of meer uren) zijn in de logbestanden, laatste verwerking van de workflow, de volgende verwerking enzovoort, is er mogelijk een probleem tussen de bibliotheek van de Oracle-client en de Oracle Server. Dergelijke problemen voorkomen
+Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of meerdere uren) in logboeken, werkschemalaatste verwerking, volgende verwerking, etc. zijn, zou er een probleem tussen de bibliotheek van de cliënt van het Oracle en de Server van het Oracle kunnen zijn. Dergelijke problemen voorkomen
 
 1. Zorg ervoor dat u de **volledige client**.
 
-   Er zijn verschillende problemen geïdentificeerd bij het gebruik van de Oracle Instant Client-versie. Bovendien is het onmogelijk om het dossier van de Tijdzone op onmiddellijke cliënt te veranderen.
+   Er zijn verschillende problemen geïdentificeerd bij het gebruik van de Oracle Instant Client-versie. Bovendien is het onmogelijk om het tijdzone-bestand op de Instant-client te wijzigen.
 
-1. Zorg ervoor dat de **clientversie** en de **databaseserverversie** zijn **zelfde**.
+1. Controleer of de **clientversie** en de versie **van de** databaseserver gelijk **zijn**.
 
-   Het is bekend dat het mengen van versies ondanks de compatibiliteitsmatrix van Oracle en het advies om client- en serverversies uit te lijnen problemen kan veroorzaken.
+   Het mengen van versies ondanks de verenigbaarheidsmatrijs en aanbeveling van het Oracle om cliënt en serverversies te richten is gekend om problemen te veroorzaken.
 
-   Controleer ook ORACLE_HOME waarde om te controleren of deze naar de verwachte clientversie wijst (als er meerdere versies op de computer zijn geïnstalleerd).
+   Controleer ook ORACLE_HOME-waarde om te controleren of deze naar de verwachte clientversie verwijst (als er meerdere versies op de computer zijn geïnstalleerd).
 
-1. Zorg ervoor dat de client en de server hetzelfde **tijdzonebestand** gebruiken.
-
-### DB2 {#db2}
-
-De ondersteunde bibliotheekversie is **libdb2.so**.
+1. Zorg ervoor dat de client en de server hetzelfde gebruiken **tijdzonebestand**.
 
 ## Implementatiestappen {#implementation-steps}
 

@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3746'
 ht-degree: 99%
 
 ---
@@ -82,7 +82,7 @@ De migratiegids is bijgewerkt. Verwijzingen naar niet-ondersteunde versies van A
 
 ## Juli 2022 {#july-2022}
 
-De overgang naar de nieuwe bezorgingsserver wordt in een nieuwe technische opmerking gedetailleerd beschreven. [Meer informatie](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **Documentatie-updates bij release 7.3.1**
 
@@ -155,11 +155,9 @@ Er is een beperking toegevoegd voor inkomende SMS (MO). [Meer informatie](../../
 
 De logboekgegevens van het migratieproces voor de implementatie van de CRM-connector zijn bijgewerkt. [Meer informatie](../../migration/using/testing-the-migration.md#verification-process)
 
-Er zijn vereisten toegevoegd voor IMS-machtigingen om de Adobe Campaign/Adobe Analytics-integratie te implementeren. [Meer informatie](../../platform/using/adobe-analytics-provisioning.md)
+Er zijn vereisten toegevoegd voor IMS-machtigingen om de Adobe Campaign/Adobe Analytics-integratie te implementeren. [Meer informatie](../../integrations/using/adobe-analytics-provisioning.md)
 
 Einde levensduur van Adobe Analytics-gegevensconnector is bijgewerkt van 1 maart 2022 naar 17 augustus 2022. [Meer informatie](deprecated-features.md)
-
-Er is een koppeling toegevoegd naar de documentatie van de mobiele SDK van Adobe Experience Platform voor informatie over het configureren van de Campaign-extensie in Adobe Launch. [Meer informatie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 Er is een sectie toegevoegd over het gebruik van JavaScript voor het berekenen van waarden, het uitwisselen van gegevens en het uitvoeren van specifieke bewerkingen met SOAP-calls.[Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -350,7 +348,7 @@ De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie
 Aanvullende informatie en de compatibiliteitsmatrix voor de [!DNL Gold Standard]-release zijn nu beschikbaar op een speciale pagina.
 [Meer informatie](../../rn/using/gold-standard.md).
 
-De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
+De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/about-triggers.md#implement)
 
 **Overige updates**
 

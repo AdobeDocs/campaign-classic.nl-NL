@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 14%
+source-wordcount: '180'
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,10 @@ Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console met hun
 
 >[!IMPORTANT]
 >
-> In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd). **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
+> In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd). **Adobe raadt aan om deze migratie uit te voeren vanaf Campagne v7.3.5, zodat u probleemloos kunt migreren naar Campagne v8.**
+>
+>Leer hoe u naar Adobe IMS kunt migreren in [deze sectie](../../technotes/using/ac-ims.md).
+>
 
 
 <!--

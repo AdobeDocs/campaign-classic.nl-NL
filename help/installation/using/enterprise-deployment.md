@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Hogere hardware- en beheerkosten.
 >  
 >Als uw toepassingsservers naar één database-instantie wijzen, wordt het schema na het wijzigen van het schema in één instantie niet in de andere instantie geladen.
 >
->Als u deze problemen wilt herstellen, moet u het proces &quot;web@default&quot; opnieuw opstarten in de tweede instantie waar de fout is opgetreden.
+>Als u deze problemen wilt herstellen, moet u het proces &#39;web@default&#39; opnieuw opstarten in de tweede instantie waar de fout is opgetreden.
 
 ### De toepassingsserver installeren en configureren 1 {#installing-and-configuring-the-application-server-1}
 
@@ -89,7 +89,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Zodra de Adobe Campaign-server is geïnstalleerd, start u de toepassingsserver (web) met de opdracht **nlserver web-tomcat** (de module van het Web laat u toe om Tomcat in standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Bewerk de **config-demo.xml** bestand (gemaakt via de vorige opdracht en bevindt zich naast de **config-default.xml** bestand), controleert u of de **mta** (levering), **wfserver** (workflow), **inMail** (rebound mails) en **stat** (statistiek) processen worden toegelaten, dan vorm het adres van **app** Statistische server:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Bewerk de **serverConf.xml** en specificeer het leveringsdomein, dan specificeer IP (of gastheer) adressen van de DNS servers die door de module MTA worden gebruikt om MX type DNS vragen te beantwoorden.
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ De stappen voor het installeren van de eerste server zijn:
    >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ Voer de volgende stappen uit:
 
 1. Bewerk de **config-demo.xml** bestand (gemaakt via de vorige opdracht en bevindt zich naast de **config-default.xml** bestand), controleert u of de **mta** (levering), **wfserver** (workflow), **inMail** (rebound mails) en **stat** (statistiek) processen worden toegelaten, dan vorm het adres van **app** Statistische server:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ Voer de volgende stappen uit:
 
 1. Bewerk de **serverConf.xml** dossier en bevolk de DNS configuratie van de module MTA:
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ De stappen zijn als volgt:
 1. De **config-demo.xml** en **serverConf.xml** bestanden die tijdens de installatie zijn gemaakt. In de **config-demo.xml** bestand, activeer het **trackinglogd** het proces en deactiveert **mta**, **inmail**, **wfserver** en **stat** processen.
 1. Bewerk de **serverConf.xml** en vult de overtollige het volgen servers in de parameters van de omleiding:
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ De stappen zijn als volgt:
 
    De browser moet de volgende berichten weergeven (afhankelijk van de URL die door het taakverdelingsmechanisme is omgeleid):
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    of
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

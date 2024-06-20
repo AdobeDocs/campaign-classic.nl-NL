@@ -7,7 +7,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -69,7 +69,7 @@ De logboeken moeten als volgt zijn:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Dit foutbericht geeft aan dat de verificatie is geconfigureerd met de Omniture base OAuth. Zie de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) documentatie om uw authentificatie te bevorderen.
+Dit foutbericht geeft aan dat de verificatie is geconfigureerd met de Omniture base OAuth. Zie de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/about-triggers.md#implement) documentatie om uw authentificatie te bevorderen.
 
 **Er worden geen triggers opgehaald**
 

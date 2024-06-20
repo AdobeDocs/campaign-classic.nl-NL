@@ -7,15 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
 
 # Veelgestelde vragen over upgrade maken {#build-upgrade-faq}
-
 
 
 Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md)U weet waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en correcties elk jaar worden uitgebracht. Bovendien brengen wij periodiek bouwt met cumulatieve moeilijke situaties slechts vrij. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
@@ -136,7 +135,7 @@ Nee. Tijdens bouwstijlverbetering, werkschema en de postdiensten worden allebei 
 
 ## Werken mijn trackingkoppelingen nog tijdens de upgrade?
 
-Het bijhouden van koppelingen op e-mailberichten die al zijn verzonden, werkt niet tijdens de upgrade omdat alle servers zijn gestopt. Ze zijn weer operationeel als de upgrade is voltooid en de servers opnieuw zijn opgestart.
+Campaign Classic v7.3.5 starten, koppelingen bijhouden naar e-mailberichten die al zijn verzonden, werken nog tijdens de upgrade.
 
 ## Moet ik tijdens het proces van de bouwstijlverbetering beschikbaar zijn?
 

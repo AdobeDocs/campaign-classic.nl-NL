@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '704'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Voor de rijke Adobe Campaign-client (**nlclient**), moeten de volgende havens op
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
    <td> Toepassingsserver<br /> </td> 
-   <td> SOAP-verkeer (HTTP).<br /> </td> 
+   <td> SOAP verkeer (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -167,10 +167,6 @@ De standaardhavens zijn het volgende:
   <tr> 
    <td> <strong>Microsoft SQL Server</strong><br /> </td> 
    <td> 1433/tcp<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>DB2</strong><br /> </td> 
-   <td> 5000/tcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>

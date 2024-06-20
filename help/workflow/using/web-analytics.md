@@ -3,7 +3,7 @@ product: campaign
 title: Webanalyse
 description: Meer informatie over het pakket Webanalyse
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Webanalytische connectors** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../platform/using/gs-aa.md).
+De hieronder beschreven workflows worden geïnstalleerd met de **Webanalytische connectors** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: fa089574b028193b6da346482d6ea42b1d19f0aa
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -69,13 +69,13 @@ Operatoren die verbinding hebben met deze aanmelding, hebben alle rechten in all
 
 Gebruik de volgende opdracht:
 
-```
+```sql
 nlserver config -internalpassword
 ```
 
 De volgende informatie wordt dan getoond. Voer het wachtwoord in en bevestig het:
 
-```
+```sql
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 Enter the current password.
 Password:
@@ -257,7 +257,7 @@ Deze gebruiker moet worden toegevoegd aan de sudoerlijst van de &#39;neolane&#39
 
 ## Overbodige tekstspatiëring {#redundant-tracking}
 
-Wanneer de veelvoudige servers voor redirection worden gebruikt, moeten zij met elkaar via de vraag van de ZEEP kunnen communiceren om informatie van URLs te delen om worden omgeleid. Op het moment dat de levering wordt opgestart, is het mogelijk dat niet alle omleidingsservers beschikbaar zijn; daarom hebben ze mogelijk niet hetzelfde niveau van informatie.
+Wanneer de veelvoudige servers voor omleiding worden gebruikt, moeten zij met elkaar via SOAP vraag kunnen communiceren om informatie van URLs te delen om worden omgeleid. Op het moment dat de levering wordt opgestart, is het mogelijk dat niet alle omleidingsservers beschikbaar zijn; daarom hebben ze mogelijk niet hetzelfde niveau van informatie.
 
 >[!NOTE]
 >

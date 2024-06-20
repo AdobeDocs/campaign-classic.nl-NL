@@ -3,10 +3,12 @@ product: campaign
 title: Bijwerken naar de nieuwe releaseserver
 description: Leer hoe u een update kunt uitvoeren naar de nieuwe server voor campagneresultaten
 feature: Technote, Deliverability
+hide: true
+hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,9 +52,9 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken. Bovendien is het niet langer mogelijk om vanaf 3 juni 2024 nieuwe JWT-gegevens (Service Account) te maken in de Developer Console. Een nieuwe referentie van de Rekening van de Dienst (JWT) kan niet aan een project na deze datum worden gecreeerd of worden toegevoegd. </br>
+> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken. </br>
 >
-> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth. Aangezien het maken van nieuwe JWT-referenties (Service Account) in de Developer Console vanaf 3 juni 2024 niet meer mogelijk is, kunt u na deze datum geen nieuwe uitgaande integratie maken die afhankelijk is van JWT
+> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth.
 
 ### Vereisten{#prerequisites}
 
@@ -85,69 +87,13 @@ Als u niet ziet **Adobe Campaign** contact [Klantenservice Adoben](https://helpx
 
 ### Stap 1: uw Adobe Developer-project maken/bijwerken {#adobe-io-project}
 
-1. Toegang [Adobe Developer Console](https://developer.adobe.com/console/home) en meld u aan bij de toegang tot ontwikkelaars van uw organisatie. Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
-   **Waarschuwing**: Als u meerdere organisaties hebt, moet u de juiste selecteren. Meer informatie over organisaties [op deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-1. Selecteer **[!UICONTROL Create new project]**.
-   ![](assets/New-Project.png)
+Als u verder wilt gaan met het configureren van uw Adobe Analytics-connector, opent u de Adobe Developer-console en maakt u uw OAuth Server-to-Server-project.
 
-   >[!CAUTION]
-   >
-   >Als u reeds Adobe IO JWT authentificatiefunctionaliteit voor een andere integratie, zoals de schakelaar van de Analyse, of de Trekkers van de Adobe gebruikt, dan moet u uw project bijwerken door toe te voegen **Campagne-API** voor dat project.
-
-1. Kies **[!UICONTROL Add API]**.
-   ![](assets/Add-API.png)
-1. In de **[!UICONTROL Add an API]** venster, selecteert u **[!UICONTROL Adobe Campaign]**.
-   ![](assets/AC-API.png)
-1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbare en privé zeer belangrijke paar tot stand te brengen.
-   ![](assets/Generate-a-key-pair.png)
-
-   De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met de optie 2 kunt u handmatig uw **[!UICONTROL Public key]** met een langere vervaldatum.
-   ![](assets/New-key-pair.png)
-
-   >[!CAUTION]
-   >
-   >U moet de `config.zip` bestand wanneer de downloadprompt verschijnt omdat u deze niet opnieuw kunt downloaden.
-
-1. Klik op **[!UICONTROL Next]**.
-1. Bestaande kiezen **[!UICONTROL Product profile]** of maak indien nodig een nieuwe versie. Hiervoor is geen toestemming vereist **[!UICONTROL Product profile]**. Voor meer informatie over **[!UICONTROL Product Profiles]**, zie [deze pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
-   ![](assets/Product-Profile-API.png)
-
-   Klik vervolgens op **[!UICONTROL Save configured API]**.
-
-1. Van uw project, selecteer **[!UICONTROL Adobe Campaign]** en kopieert u de volgende informatie onder **[!UICONTROL Service Account (JWT)]**
-
-   ![](assets/Config-API.png)
-
-   * **[!UICONTROL Client ID]**
-   * **[!UICONTROL Client Secret]**
-   * **[!UICONTROL Technical account ID]**
-   * **[!UICONTROL Organization ID]**
-
->[!CAUTION]
->
->Adobe Developer-certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
+Zie [deze pagina](../../integrations/using/oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
 
 ### Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign toe {#add-credentials-campaign}
 
-De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd.
-
-Dit doet u als volgt:
-
-1. Gebruik de persoonlijke sleutel die in de bovenstaande stappen is gegenereerd.
-1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
-
-   >[!NOTE]
-   >
-   >Soms kunnen extra regels automatisch worden toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
-
-1. De inhoud van het bestand kopiëren `private.key.base64`.
-1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens toe in Adobe Campaign door de volgende opdracht uit te voeren als `neolane` gebruiker. Hiermee voegt u de **[!UICONTROL Technical Account]** referenties in het configuratiebestand van de instantie.
-
-   ```sql
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
-
-1. U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden. U kunt ook een `config -reload` gebruiken.
+Voer de in [deze pagina](../../integrations/using/oauth-technical-account.md#add-credentials) om uw OAuth projectgeloofsbrieven in Adobe Campaign toe te voegen.
 
 ### Stap 3: Valideer uw configuratie
 

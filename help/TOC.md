@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Nieuwste release](rn/using/latest-release.md)
    + Eerdere releases {#previous-releases}
+      + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022](rn/using/release-2022.md)
       + [2021](rn/using/release-2021.md)
@@ -36,6 +37,7 @@ ht-degree: 100%
          + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
          + [Campaign Explorer gebruiken](platform/using/adobe-campaign-explorer.md)
          + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
+      + [Campagne-connectors](platform/using/about-connectors.md)
       + Veelgestelde vragen {#faq}
          + [Populaire vragen](platform/using/common-questions.md)
          + [Algemene concepten](platform/using/faq-key-concepts.md)
@@ -100,17 +102,11 @@ ht-degree: 100%
    + Gegevenspakketten en opsommingen {#administration-basics}
       + [Gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen](platform/using/managing-enumerations.md)
-   + Connectoren {#connectors}
-      + [Connectoren](platform/using/about-connectors.md)
-      + CRM-connectoren{#crm-connectors}
-         + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
-         + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
-         + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
-      + Adobe Analytics-connector{#analytics-connector}
-         + [Aan de slag met Adobe Analytics Connector](platform/using/gs-aa.md)
-         + [Adobe Analytics-connector-provisioning](platform/using/adobe-analytics-provisioning.md)
-         + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
+   + CRM-connectors {#connectors}
+      + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
+      + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+      + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
+      + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
@@ -355,7 +351,21 @@ ht-degree: 100%
    + [Gebruiksscenario: een referralformulier maken](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integreren met Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-   + [Campaign-integraties](integrations/using/about-campaign-integrations.md)
+   + [Aan de slag met Campaign-integraties](integrations/using/about-campaign-integrations.md)
+   + [Een technische account voor Adobe maken](integrations/using/oauth-technical-account.md)
+   + Adobe Experience Cloud-triggers {#experience-triggers}
+      + [Werken met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Pijplijn configureren](integrations/using/configuring-pipeline.md)
+      + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
+      + [Pijplijncontrole](integrations/using/pipeline-monitoring.md)
+      + [Problemen met de pijplijn oplossen](integrations/using/pipeline-troubleshooting.md)
+   + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
+      + [Werken met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
+      + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
+      + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Adobe Analytics-connector{#analytics-connector}
+      + [Aan de slag met Adobe Analytics Connector](integrations/using/gs-aa.md)
+      + [Adobe Analytics-connector-provisioning](integrations/using/adobe-analytics-provisioning.md)
    + Doelgroepen delen {#audience-sharing}
       + [Doelgroepen delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Verzoek indienen bij Adobe](integrations/using/submitting-request-to-adobe.md)
@@ -380,17 +390,6 @@ ht-degree: 100%
       + [Doelgroepen synchroniseren](integrations/using/synchronizing-audiences.md)
       + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
       + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud-triggers {#experience-triggers}
-      + [Werken met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Pijplijn configureren](integrations/using/configuring-pipeline.md)
-      + [Adobe I/O configureren voor [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
-      + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
-      + [Pijplijncontrole](integrations/using/pipeline-monitoring.md)
-      + [Problemen met de pijplijn oplossen](integrations/using/pipeline-troubleshooting.md)
-   + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
-      + [Werken met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
-      + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
-      + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Aan de slag met workflows {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
@@ -642,7 +641,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -824,10 +823,12 @@ ht-degree: 100%
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
-   + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-SMS.md)
+   + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-sms-wf.md)
    + Upgraden naar IMS{#ims}
+      + [Overgang naar Adobe IMS](technotes/using/ac-ims.md)
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
       + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)
+      + [Interfaceinvloed na IMS-migratie](technotes/using/impact-ims-migration.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Microsoft Edge Chromium inschakelen](technotes/using/edge-chromium.md)

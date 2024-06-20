@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Identificeer de server en kies het type van verrichting om uit te voeren. In dit
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
 * Voor een **Oracle** motor, bevolken **TNS-naam** gedefinieerd voor de toepassingsserver.
-* Voor een **PostgreSQL** of **DB2** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
+* Voor een **PostgreSQL** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
 * Voor een **Microsoft SQL Server** -engine, moet u definiëren: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Voer hiertoe de naam en het wachtwoord van een **Systeemaccount voor beheerders*
 * **systeem** voor een database van Oracles,
 * **sa** voor een Microsoft SQL Server-database,
 * **postzegels** voor een PostgreSQL-database,
-* **db2inst1** voor een DB2-database.
 
 ### Stap 3 - Verbinding en kenmerken van de database {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ In de volgende stap kunt u de instellingen configureren voor het aanmelden bij d
 U moet de volgende instellingen definiëren:
 
 * Geef de naam op van de database die u wilt maken.
-
-  >[!NOTE]
-  >
-  >Voor een DB2-database mag de naam van de database niet langer zijn dan 8 tekens.
-
 * Voer het wachtwoord in van de account die aan deze database is gekoppeld.
 * Geef aan of de database zich in Unicode moet bevinden.
 
@@ -182,7 +176,7 @@ Identificeer de server en kies het type van verrichting u wilt uitvoeren. In dit
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
 * Voor een **Oracle** motor, bevolken **TNS-naam** gedefinieerd voor de toepassingsserver.
-* Voor een **PostgreSQL** of **DB2** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
+* Voor een **PostgreSQL** -engine, moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
 * Voor een **Microsoft SQL Server** engine, moet u definiëren:
 
    1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver;

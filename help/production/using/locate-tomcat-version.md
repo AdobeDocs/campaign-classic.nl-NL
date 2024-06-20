@@ -8,18 +8,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # Tomcat-versie zoeken{#locate-tomcat-version}
 
-
-
-Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, de vraag van de ZEEP, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
+Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
 Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic on-premise instantie** om problemen op te lossen.
 
@@ -31,6 +29,12 @@ De Tomcat die in Adobe Campaign wordt gebruikt, is een aangepaste ingesloten ver
 
 Nieuwe of bijgewerkte versies van de ingesloten versies van Tomcat worden alleen vrijgegeven met nieuwe builds van Adobe Campaign zelf en niet als afzonderlijke patches buiten de Adobe Campaign-builds.
 
+>[!AVAILABILITY]
+>
+>
+> Vanaf Campagne v7.4.1 is Tomcat 10.1 de standaardversie.
+>
+
 ## Hoe te om van de versie van ingebedde Tomcat de plaats te bepalen
 
 Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemplaar van Adobe Campaign te zoeken.
@@ -39,7 +43,7 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 >
 >U moet toegang hebben tot de bestanden op de Adobe Campaign-server die u moet controleren. De hieronder beschreven procedure is alleen van toepassing op **hostingmodellen op locatie**.
 
-1. Ga naar de *\tomcat-7\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Bestanden\ [Installatiemap]* in Windows, of */usr/local/neolane/nl6* in Linux).
+1. Ga naar de *\tomcat-11\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Bestanden\ [Installatiemap]* in Windows, of */usr/local/neolane/nl6* in Linux).
 
 1. Het bestand kopiëren *catalina.jar* naar een externe tijdelijke map (bijvoorbeeld uw bureaublad) en wijzig de naam van de extensie van .jar in .zip.
 
@@ -49,11 +53,11 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 1. Als het bestand zich op een servercomputer bevindt, verwijdert u de tijdelijke bestanden die u hebt gemaakt.
 
-Als voorbeeld *ServerInfo.properties* Het bestand voor Adobe Campaign bevat de volgende informatie, met vermelding van Tomcat v8.5.X:
+Als voorbeeld *ServerInfo.properties* Het bestand voor Adobe Campaign bevat de volgende informatie die Tomcat v11.X aangeeft:
 
-*`server.info=Apache Tomcat/8.5.X`*
+*`server.info=Apache Tomcat/11.X`*
 
-*`server.number=8.5.X.Y`*
+*`server.number=A.B.X.Y`*
 
 *`server.built=MM DD YYY HH:MM:SS`*
 
