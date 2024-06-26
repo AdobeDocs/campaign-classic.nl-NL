@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,8 +44,8 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Details</strong></td>
   </tr>
   <tr>
- <td>Campagne (Neolane) verouderde SDK</td>
- <td><p>De Campagne (Neolane) SDK voor mobiele toepassingen is nu afgekeurd. Gebruik in plaats daarvan de Adobe Experience Platform Mobile SDK door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile SDK helpt de oplossingen en services van de Adobe voor Experiencen Cloud in uw mobiele apps te ondersteunen. De configuratie SDKs wordt beheerd door de Inzameling UI van Gegevens voor flexibele configuratie en verlengbare, op regels-gebaseerde integratie. Leer hoe u het kanaal voor de mobiele app configureert in <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campagne v8-documentatie</a>.</p>
+ <td>Verouderde SDK van Campaign (Neolane)</td>
+ <td><p>De Campaign-SDK voor mobiele applicaties (Neolane) is nu afgeschaft. Gebruik in plaats daarvan de Adobe Experience Platform Mobile-SDK door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor dataverzameling.  De Adobe Experience Platform Mobile-SDK maakt de Experience Cloud-oplossingen en -services van Adobe in uw mobiele apps mogelijk. De configuratie van SDK's wordt beheerd via de gebruikersinterface voor dataverzameling voor een flexibele configuratie en uitbreidbare integraties op basis van regels. Ontdek in <a href="https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8-documentatie</a> hoe u het kanaal voor de mobiele app configureert.</p>
 <p>Doeldatum verwijdering: zomer 2025 </p>
 </td>
 </tr>
@@ -88,7 +88,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
  </tr>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
-  <td><p> De de integratieauthentificatie van trekkers oorspronkelijk gebaseerd op OAuth authentificatieconfiguratie aan toegangspijpleiding is nu veranderd en verplaatst naar Adobe I/O. Deze authentificatiemodus was verouderd met de versie van Campagne 20.3.<p>
+  <td><p> De verificatie van triggers-integratie die oorspronkelijk was gebaseerd op OAuth-verificatie-instellingen om toegang te krijgen tot de pijplijn, is nu gewijzigd en verplaatst naar Adobe I/O. Deze verificatiemodus was beëindigd met de release van Campaign 20.3.<p>
   <p>Als u Triggers-integratie hebt gebruikt, leest u <a href="../../integrations/using/about-triggers.md#implement">op deze pagina</a> hoe u uw implementatie kunt aanpassen.</p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
