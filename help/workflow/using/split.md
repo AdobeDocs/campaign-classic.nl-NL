@@ -4,26 +4,26 @@ title: Splitsen
 description: Meer informatie over de activiteit van de gesplitste workflow
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 # Splitsen{#split}
 
-
-
 A **Splitsen** Met activiteit van het type -kunt u een doel in verscheidene subsets splitsen. Het doel is samengesteld met alle ontvangen resultaten: alle eerdere activiteiten moeten dus zijn voltooid om deze activiteit te kunnen uitvoeren.
 
 Deze activiteit leidt niet tot een unie van binnenkomende populaties. Als meerdere overgangen in één gesplitste activiteit worden geland, raden we u aan een **[!UICONTROL Union]** activiteiten die voor hem liggen.
 
-Voor een voorbeeld van de splitsingsactiviteit die wordt gebruikt, verwijs naar [Subsets maken met de splitsingsactiviteit](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Splitsen kan niet worden uitgevoerd voor tabellen met verschillende bronnen. Hiertoe moet u een **Verrijking** vóór de **Splitsen** activiteit.
 
-Een voorbeeld dat illustreert hoe te om de Gesplitste activiteit te gebruiken om het doel in verschillende populaties te segmenteren gebruikend het filtreren voorwaarden wordt beschreven in [deze sectie](cross-channel-delivery-workflow.md).
-
-Er is een voorbeeld beschikbaar van het gebruik van een instantievariabele in een gesplitste activiteit in [deze sectie](javascript-scripts-and-templates.md).
+* Voor een voorbeeld van de splitsingsactiviteit die wordt gebruikt, verwijs naar [Subsets maken met de splitsingsactiviteit](targeting-data.md#creating-subsets-using-the-split-activity).
+* Een voorbeeld dat illustreert hoe te om de Gesplitste activiteit te gebruiken om het doel in verschillende populaties te segmenteren gebruikend het filtreren voorwaarden wordt beschreven in [deze sectie](cross-channel-delivery-workflow.md).
+* Er is een voorbeeld beschikbaar van het gebruik van een instantievariabele in een gesplitste activiteit in [deze sectie](javascript-scripts-and-templates.md).
 
 Om deze activiteit te vormen, bepaal de inhoud en het etiket van de ondergroep in **[!UICONTROL Subsets]** en kiest u vervolgens de doeldimensie in het dialoogvenster **[!UICONTROL General]** tab.
 

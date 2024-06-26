@@ -4,16 +4,16 @@ description: Leer hoe u technische operatoren van campagnes kunt migreren naar e
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
+source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
 
 # Migratie van technische operatoren van campagnes naar Adobe Developer Console {#migrate-tech-users-to-ims}
 
-In het kader van de inspanningen om het beveiligings- en verificatieproces te versterken, te beginnen met Campaign Classic v7.3.5, wordt het verificatieproces naar Campaign Classic verbeterd. De technische exploitanten moeten nu de [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe raadt aan deze migratie uit te voeren in Campagne v7.3.5 om probleemloos te kunnen migreren naar Campagne v8.**
+In het kader van de inspanningen om het beveiligings- en verificatieproces te versterken, te beginnen met Campaign Classic v7.3.5, wordt het verificatieproces naar Campaign Classic verbeterd. De technische exploitanten moeten nu de [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} om verbinding te maken met Campagne. Meer informatie over het verificatieproces van de nieuwe server naar de server vindt u in [Adobe Developer Console-documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe raadt aan deze migratie uit te voeren in v7 om probleemloos te kunnen migreren naar Campaign v8.**
 
 Een technische operator is een Campagnegebruikersprofiel dat expliciet is gemaakt voor API-integratie. In dit artikel worden de stappen beschreven die nodig zijn om een technische operator via de Adobe Developer-console naar een technische account te migreren.
 
@@ -21,7 +21,7 @@ Een technische operator is een Campagnegebruikersprofiel dat expliciet is gemaak
 
 Als u API vraag van een systeem buiten Campagne in of uw instantie van de Marketing van de Campagne of de instantie van het Centrum van het Bericht in real time maakt, adviseert de Adobe u hoogst om de technische exploitant(en) aan technische rekening(en) door de Console van Adobe Developer te migreren zoals hieronder gedetailleerd.
 
-Deze wijziging is van toepassing vanaf Campaign Classic v7.3.5 (en de nieuwste [Met IMS compatibele versies voor migratie](#ims-versions-tech)) en is **verplicht** naar Adobe Campaign v8 verplaatsen.
+Deze wijziging is van toepassing vanaf Campaign Classic v7.3.5 (en de nieuwste [Met IMS compatibele versies voor migratie](ac-ims.md#ims-versions)) en is **verplicht** naar Adobe Campaign v8 verplaatsen.
 
 ## Migratieproces {#ims-migration-procedure}
 
@@ -30,21 +30,11 @@ Voer de onderstaande stappen uit om een of meer technische accounts te maken in 
 Een overzicht van de stappen is:
 
 * Een project maken in de Adobe Developer-console
-* De juiste API&#39;s toewijzen aan het nieuwe project
-* De vereiste profielen van het Product van de Campagne aan het project verlenen
-* De API&#39;s bijwerken en de nieuwe gegevens van de technische account gebruiken
+* Wijs de aangewezen API&#39;s aan het nieuwe project toe
+* De benodigde profielen van campagneproducten aan het project toekennen
+* Werk uw API&#39;s bij om de nieuwe gegevens van de technische account te gebruiken
 * Verwijder de verouderde technische operatoren uit uw Campagne-instantie
 
-
-### Met IMS compatibele versies voor migratie {#ims-versions-tech}
-
-Een eerste vereiste voor deze migratie is het upgraden van uw omgeving naar een van de volgende productversies:
-
-* Campagne v7.3.5 (aanbevolen)
-* Campagne v7.3.3.IMS
-* Campagne v7.3.2.IMS
-
-Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
 ### Voorwaarden voor migratie{#ims-migration-prerequisites}
 
@@ -52,7 +42,7 @@ Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de r
 
 * Campagne-gehost en Managed Services-klanten
 
-  Voor API-aanroepen naar de Message Center-instantie(s) moet het productprofiel (hieronder vermeld) worden gemaakt tijdens de upgrade naar Campagne v7.3.5 (of een ander profiel) [Compatibele versie van IMS-migratie](#ims-versions-tech)), of tijdens levering van de instantie. Neem contact op met uw Overgangsmanager of Klantenondersteuning als u het productprofiel niet ziet voordat u de IMS-migratie start. Dit productprofiel heeft de volgende naam:
+  Voor API-aanroepen naar de Message Center-instantie(s) moet het productprofiel (hieronder vermeld) worden gemaakt tijdens de upgrade naar Campagne v7.4.1 (of een ander profiel) [Compatibele versie van IMS-migratie](ac-ims.md#ims-versions)), of tijdens levering van de instantie. Neem contact op met uw Overgangsmanager of Klantenondersteuning als u het productprofiel niet ziet voordat u de IMS-migratie start. Dit productprofiel heeft de volgende naam:
 
   `campaign - <your campaign marketing instance> - messagecenter`
 
@@ -60,7 +50,7 @@ Deze campagneversies worden gedetailleerd beschreven in de [Opmerkingen bij de r
 
   In andere gevallen moet u contact opnemen met de Adobe Overgangsmanager (voor Managed Services-gebruikers) of de klantenservice Adoben (voor andere gehoste gebruikers), zodat technische teams van Adoben uw bestaande groepen van beheerders en benoemde rechten op de productprofielen in de Admin Console kunnen migreren.
 
-* Campagne op locatie en hybride klanten
+* Campagne-on-premise en Hybride klanten
 
   Voor API-aanroepen naar de Message Center-instantie(s) moet u een productprofiel maken met de naam:
 
@@ -133,7 +123,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 1. Assign all the relevant Product Profiles to the API, for example 'messagecenter', and save your changes.
 1. Browse to the **Credential details** tab of your project, and copy the **Technical Account Email** value.-->
 
-### Stap 5 - voeg toe I/O beheer API aan uw project {#ims-migration-step-5}
+### Stap 5 - voeg toe I/O Beheer API aan uw project {#ims-migration-step-5}
 
 
 Van het projectscherm, klik **[!UICONTROL + Add to Project]** en kiest u **[!UICONTROL API]** linksboven in het scherm om de API voor I/O-beheer aan dit project toe te voegen.
@@ -170,9 +160,15 @@ U moet nu alle API-integraties bijwerken en aanroepen naar Adobe Campaign uitvoe
 
 Raadpleeg de onderstaande codevoorbeelden voor meer informatie over de integratiestappen van de API.
 
+Wanneer u Adobe Identity Management System (IMS)-verificatie gebruikt om een WSDL-bestand te genereren, moet u de Autorisatie toevoegen: Drager &lt;ims_technical_token_token> in de postbode :
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
+
 >[!BEGINTABS]
 
->[!TAB SOAP-aanroep]
+>[!TAB SOAP]
 
 ```
 curl --location --request POST 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp' \
@@ -399,7 +395,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 Raadpleeg voor meer informatie [Adobe Developer Console-verificatiedocumentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Hieronder zijn de vraag van de steekproefZEEP die vóór en na migratievraag voor de derdesystemen toont.
+Hieronder zijn steekproef SOAP vraag die vóór en na migratievraag naar de derdesystemen toont.
 
 Zodra het migratieproces wordt bereikt en bevestigd, worden de Vraag van Soap als volgt bijgewerkt:
 
@@ -489,3 +485,12 @@ De gebruiker van de Technische Rekening zal NIET in Adobe Campaign bestaan tot m
 Nadat u alle systemen van derden hebt gemigreerd om de nieuwe technische account met IMS-verificatie te gebruiken, kunt u de oude technische operator verwijderen uit de Campagne Client Console.
 
 U doet dit door u aan te melden bij de Console van de Cliënt van de Campagne, navigerend aan **Beheer > Toegangsbeheer > Operatoren** en de oude technische gebruikers zoeken en verwijderen.
+
+
+>[!MORELIKETHIS]
+>
+>* [Migratie van eindgebruikers naar IMS](migrate-users-to-ims.md)
+>* [Campagne-interface bijwerken na IMS-migratie](impact-ims-migration.md)
+>* [Opmerkingen bij de nieuwste release van Adobe Campaign Classic v7](../../rn/using/latest-release.md)
+>* [Wat is Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+
