@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _Woensdag 5 december 2023_
 
 ### Andere verbeteringen {#release-7-3-5-other}
 
-Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
+Als u deze release start, werkt het bijhouden van koppelingen in e-mails die al zijn verzonden, nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
 ### Patches {#release-7-3-5-patches}
 
@@ -140,7 +140,7 @@ _20 maart 2023_
 * De factureringsworkflow is verbeterd om de prestaties te optimaliseren. (NEO-47658)
 * De trackingworkflow is verbeterd om de prestaties bij grote leveringen te optimaliseren. (NEO-45064)
 * Trackingbeheer is verbeterd om mogelijke problemen met dynamische parameters in URL&#39;s op te lossen. Trackingbeheer v3 verwerkt nu URL&#39;s van het ajax-type (met parameters na een &#39;#&#39;) af en voorkomt dat tools van derden tracking-URL&#39;s kunnen wijzigen. Neem contact op met Adobe om deze wijziging toe te passen. (NEO-46535)
-* Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
+* Als u deze release start, werkt het bijhouden van koppelingen in e-mails die al zijn verzonden, nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -182,7 +182,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 * De Google BigQuery-connector biedt nu volledige ondersteuning voor booleaanse velden. (NEO-49181)
 * U kunt nu de geldigheidsduur van de IMS-cookies configureren in de `Configuration for the redirection service`-sectie van het bestand serverConf.xml. Dit geldt voor de volgende cookies: `uuid230`, `nllastdelid` en `AMCV_` (NEO-42541)
 * Het IP-adres kan nu worden verborgen in het /r/test-verzoek door `showSourceIP` in te stellen op false in de omleidingsnode van het bestand serverConf.xml. [Meer informatie](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
-* Als u deze release start, werken koppelingen naar e-mailberichten die al zijn verzonden nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
+* Als u deze release start, werkt het bijhouden van koppelingen in e-mails die al zijn verzonden, nog tijdens de upgrade. [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
 
 ### Afgeschafte functies  {#release-7-3-2-deprecated}

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ### Juni 2024 {#june-2024}
 
-Er is een opmerking toegevoegd om op te geven hoe instantievariabelen moeten worden gewist wanneer werkstromen opnieuw worden gestart. [Meer informatie](../../workflow/using/starting-a-workflow.md)
+Er is een opmerking toegevoegd waarin wordt aangegeven hoe instantievariabelen moeten worden gewist bij het opnieuw opstarten van workflows. [Meer informatie](../../workflow/using/starting-a-workflow.md)
 
 ### April 2024 {#apr-2024}
 

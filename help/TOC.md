@@ -7,9 +7,9 @@ user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
          + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
          + [Campaign Explorer gebruiken](platform/using/adobe-campaign-explorer.md)
          + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
-      + [Campagne-connectors](platform/using/about-connectors.md)
+      + [Campaign-connectoren](platform/using/about-connectors.md)
       + Veelgestelde vragen {#faq}
          + [Populaire vragen](platform/using/common-questions.md)
          + [Algemene concepten](platform/using/faq-key-concepts.md)
@@ -102,7 +102,7 @@ ht-degree: 99%
    + Gegevenspakketten en opsommingen {#administration-basics}
       + [Gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen](platform/using/managing-enumerations.md)
-   + CRM-connectors {#connectors}
+   + CRM-connectoren {#connectors}
       + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
       + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
    + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integreren met Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Aan de slag met Campaign-integraties](integrations/using/about-campaign-integrations.md)
-   + [Een technische account voor Adobe maken](integrations/using/oauth-technical-account.md)
+   + [Uw technische account voor Adobe maken](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud-triggers {#experience-triggers}
       + [Werken met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pijplijn configureren](integrations/using/configuring-pipeline.md)
@@ -641,7 +641,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -825,10 +825,10 @@ ht-degree: 99%
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
    + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-sms-wf.md)
    + Upgraden naar IMS{#ims}
-      + [Overgang naar Adobe IMS](technotes/using/ac-ims.md)
+      + [Overstappen naar Adobe IMS](technotes/using/ac-ims.md)
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
       + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)
-      + [Interfaceinvloed na IMS-migratie](technotes/using/impact-ims-migration.md)
+      + [Impact interface na IMS-migratie](technotes/using/impact-ims-migration.md)
    + Upgrades en compatibiliteit{#technote-migration}
       + [Technische opmerkingen](technotes/using/technote.md)
       + [Microsoft Edge Chromium inschakelen](technotes/using/edge-chromium.md)

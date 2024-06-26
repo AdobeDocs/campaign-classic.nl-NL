@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Compatibiliteitsmatrix {#compatibility-matrix}
 
-In haar [nieuwste build](../../rn/using/latest-release.md), Adobe Campaign Classic v7 is compatibel met alle systemen en gereedschappen die op deze pagina worden vermeld. Wanneer specifieke versies van deze externe systemen en tools het einde van de levensduur bereiken bij hun respectieve makers, is Adobe Campaign niet meer compatibel met deze versies. Ze worden dan in de volgende productrelease uit onze compatibiliteitsmatrix verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in deze compatibiliteitsmatrix gebruikt om problemen te voorkomen. Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informatie over verouderde items.
+De [nieuwste build](../../rn/using/latest-release.md) van Adobe Campaign Classic v7 is compatibel met alle systemen en tools die op deze pagina worden vermeld.  Wanneer specifieke versies van deze externe systemen en tools bij hun respectieve makers het einde van de levensduur bereiken, is Adobe Campaign niet meer compatibel met deze versies. Ze worden dan in de volgende productrelease uit onze compatibiliteitsmatrix verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in deze compatibiliteitsmatrix gebruikt om problemen te voorkomen.  Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informatie over verouderde items.
 
 Tenzij anders vermeld worden alle kleine releases ondersteund.
 
 >[!CAUTION]
 >
->Deze matrix wordt regelmatig bijgewerkt met nieuwe ondersteunde systemen en gereedschappen die worden toegevoegd en vervangen en die worden verwijderd.
+>Deze matrix wordt regelmatig bijgewerkt door toevoeging van nieuwe ondersteunde systemen en tools en verwijdering van verouderde systemen en tools.
 
 ## Besturingssystemen {#OperatingSystems}
 
@@ -31,7 +31,7 @@ Als On-Premise/hybride klant moet u Adobe Campaign in een van de hieronder verme
 <tbody> 
 <td><strong>Besturingssysteem</strong></td>
 <td><strong>Versie besturingssysteem</strong></td>
-<td><strong>Minimale campagneversie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
@@ -83,7 +83,7 @@ Als On-Premise/hybride klant moet u Adobe Campaign in een van de hieronder verme
 
 >[!IMPORTANT]
 >
->Als u RHEL gebruikt, moet u bereid zijn onbruikbaar te maken [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) of om uw architecten aangepaste SELinux-regels te laten schrijven om te controleren dat een toegelaten SELinux geen kwesties met de verrichtingen van de Campagne veroorzaakt.
+>Als u RHEL gebruikt, moet u bereid zijn om [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.
 
 ## Webservers {#WebServers}
 
@@ -94,13 +94,13 @@ Afhankelijk van uw besturingssysteem moet u als On-Premise/hybride klant Campaig
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 op Windows Server</p>
+<p>10.0 in Windows Server</p>
 </td>
 </tr>
 <tr>
 <td>Apache</td>
 <td>
-<p>2,4</p>
+<p>2.4</p>
 </td>
 </tr>
 </tbody>
@@ -112,9 +112,9 @@ Als On-Premise/hybride klant moet u de hieronder vermelde tools installeren en c
 
 <table>
 <tbody>
-<td><strong>Gereedschap</strong></td>
+<td><strong>Tool</strong></td>
 <td><strong>Versie</strong></td>
-<td><strong>Minium Campaign-versie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr>
 <td><p>Java Development Kit (JDK)</p>
 <p>Meer informatie vindt u <a href="../../installation/using/application-server.md#jdk" target="_blank">op deze pagina</a>.</p>
@@ -159,11 +159,11 @@ Als On-Premise/hybride klant moet u een van de onderstaande databases installere
 <tbody>
 <td><strong>Databasesysteem</strong></td>
 <td><strong>Databaseversie</strong></td>
-<td><strong>Minimale campagneversie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr>
 <td>Oracle</td>
 <td>
-<p>23 quater</p>
+<p>23c</p>
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
@@ -216,9 +216,9 @@ Als On-Premise/hybride klant moet u een van de onderstaande databases installere
 >
 >* Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 >
->* Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
+>* Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server in Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 >
->* U kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven gespecificeerde versies.
+>* U kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.
 >
 >* PostgreSQL is de RDBMS voor Hosted/Managed Cloud Services-omgevingen.
 
@@ -254,7 +254,7 @@ Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Fede
 <tbody>
 <td><strong>Databasesysteem</strong></td>
 <td><strong>Databaseversie</strong></td>
-<td><strong>Minimale campagneversie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
@@ -295,7 +295,7 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 <tbody>
 <td><strong>Databasesysteem</strong></td>
 <td><strong>Databaseversie</strong></td>
-<td><strong>Minimale campagneversie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -321,7 +321,7 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 <tr>
 <td>Oracle</td>
 <td>
-<p>23 quater</p>
+<p>23c</p>
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
@@ -344,7 +344,7 @@ Daarnaast kunnen **Hybride**- en **On-Premise**-omgevingen Campaign ook verbindi
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2022 (startcampagne v7.4)</p>
+<p>2022 (vanaf Campaign v7.4)</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -391,7 +391,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clie
 <tbody>
 <td><strong>Systeem</strong></td>
 <td><strong>Besturingssysteemversie</strong></td>
-<td><strong>Minium Campaign-versie</strong></td>
+<td><strong>Minimale Campaign-versie</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -426,9 +426,9 @@ Download Microsoft Edge WebView2 van [Microsoft Developer-site](https://www.adob
 
 ## Mobiele SDK {#MobileSDK}
 
-U kunt Campagne gebruiken aan [pushmeldingen verzenden](../../delivery/using/about-mobile-app-channel.md), via de Adobe Experience Platform Mobile SDK door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling.
+U kunt via de Adobe Experience Platform Mobile SDK Campaign gebruiken om [pushmeldingen te verzenden](../../delivery/using/about-mobile-app-channel.md) door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor dataverzameling.
 
-De campagne-SDK is [verouderd](deprecated-features.md) startende campagne v7.4. Voor een soepele overgang naar de AEP Mobile SDK kunt u deze nog steeds gebruiken op de hieronder vermelde besturingssystemen<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+De Campaign SDK is [verouderd](deprecated-features.md) vanaf Campaign v7.4. Om een soepele overgang voor bestaande implementatie naar de AEP Mobile SDK te waarborgen kunt u deze nog steeds gebruiken in de hieronder vermelde besturingssystemen<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>
@@ -438,8 +438,8 @@ De campagne-SDK is [verouderd](deprecated-features.md) startende campagne v7.4. 
 <td>
 <p>7 - 14</p>
 <p>met mobiele SDK-build 1.1.1.</p>
-<p>Android 13 en 14 worden ondersteund vanaf Campagne v7.4.</p>
-<p>Android 12 wordt ondersteund vanaf Campagne v7.3.</p>
+<p>Android 13 en 14 worden ondersteund vanaf Campaign v7.4.</p>
+<p>Android 12 wordt ondersteund vanaf Campaign v7.3.</p>
 </td>
 </tr>
 <tr>
@@ -447,8 +447,8 @@ De campagne-SDK is [verouderd](deprecated-features.md) startende campagne v7.4. 
 <td>
 <p>iOS 9 - 17</p>
 <p>met mobiele SDK-build 1.0.26.</p>
-<p>Apple iOS 15 wordt ondersteund vanaf Campagne v7.3. </p>
-<p>Apple iOS 16 en 17 worden ondersteund vanaf campagne v7.4.</p>
+<p>Apple iOS 15 wordt ondersteund vanaf Campaign v7.3. </p>
+<p>Apple iOS 16 en 17 worden ondersteund vanaf Campaign v7.4.</p>
 </td>
 </tr>
 </tbody>
@@ -468,7 +468,7 @@ De volgende browsers, in hun meest recente versie, zijn compatibel met Campaign 
 >[!MORELIKETHIS]
 >
 >* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
->* [Campagne-algemene architectuur](../../installation/using/general-architecture.md)
+>* [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
 >* [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 >* [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 >* [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)
