@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,10 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
   Bestaande subdomeinen worden verplaatst van het oude datacenter naar de openbare cloud (AWS). Dit onderdeel wordt als onderdeel van het migratieproces afgehandeld door het leveringsteam van de Adobe.
 
+  >[!NOTE]
+  >
+  >De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten dienen contact op te nemen met hun Adobe voor informatie over de leveringsservice.
+
   De Adobe begeleidt de klant door de vereiste tests om ervoor te zorgen dat de configuratie na de migratie wordt uitgevoerd op nieuwe servers van de Public Cloud (AWS).
 
 * **Zal de migratie nieuwe URL&#39;s produceren voor tracering, bronnen en webtoepassingen?**
@@ -119,7 +123,7 @@ Migratie naar openbare cloud wordt geleverd met nieuwe IP&#39;s voor Adobe Campa
 
 ![](assets/migration.png)
 
-Laten we de twee gevallen in overweging nemen:
+Laten we eens kijken naar de twee gevallen:
 
 * Binnenkomend verkeer: alle netwerkactiviteit die van uw systemen of een andere derde aan de servers van Adobe Campaign in werking wordt gesteld. De configuratie wordt tijdens de migratie door de Adobe afgehandeld en vervolgens van de oudere naar de openbare cloud gekopieerd. Dan zal de connectiviteit voor binnenkomend verkeer worden bewaard zoals is na de migratie en geen actie van de kant van de Klant wordt verwacht
 
@@ -145,7 +149,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
 * **Hoe zit het met de klant die niet gekoppeld is aan de organisatie-id voor IMS-integratie?**
 
-  Klanten die geen IMS hebben, krijgen een IMS-id: een organisatie-id wordt aan hun exemplaar gekoppeld.
+  Klanten die geen IMS hebben, krijgen er een: een organisatie-id wordt aan hun exemplaar gekoppeld.
 
 * **Heeft de migratie gevolgen voor configuraties met meerdere merken?**
 
@@ -157,7 +161,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
   [Meer informatie](#config) over IP op lijst van gewenste personen.
 
-* **Zorgen we ervoor dat alle JavaScript-parameters voor geheugenconfiguratie na de migratie correct zijn ingesteld?**
+* **Zorgen we ervoor dat alle JavaScript-parameters voor geheugenconfiguratie correct worden ingesteld na de migratie?**
 
   Instantieconfiguratie wordt gekopieerd van het oude datacenter naar de openbare cloud (AWS). Deze waarden blijven dus behouden na de migratie.
 
@@ -241,7 +245,7 @@ De wereldwijde effecten tijdens de migratie worden hieronder vermeld.
 
 * **Wat is de geschatte downtime voor het migreren van een instantie?**
 
-  De downtime is volledig afhankelijk van de grootte van de database en SFTP-bestandsopslag van de klant. Neem contact op met de klantenservice om een geschatte duur te krijgen.
+  De downtime is volledig afhankelijk van de grootte van de database- en SFTP-bestandsopslag van de klant. Neem contact op met de klantenservice om een geschatte duur te krijgen.
 
 * **Wat met berichten die van de erfenisserver worden verzonden. Zijn koppelingen altijd toegankelijk?**
 

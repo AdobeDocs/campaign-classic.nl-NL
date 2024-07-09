@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '8445'
+source-wordcount: '8466'
 ht-degree: 0%
 
 ---
@@ -383,6 +383,10 @@ Als u het aantal verbindingen, b.v. leveranciersvereiste moet nauwkeurig control
 
 Hier geeft u de naam van de SMSC-implementatie op. Deze moet op de naam van uw provider worden ingesteld. Neem contact op met de beheerder of het leveringsteam om te weten wat u in dit veld wilt toevoegen. De rol van dit veld wordt beschreven in het gedeelte [SR-foutbeheer](sms-protocol.md#sr-error-management) sectie.
 
+>[!NOTE]
+>
+>De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten dienen contact op te nemen met hun Adobe voor informatie over de leveringsservice.
+
 #### Server {#server}
 
 De DNS naam of IP adres van de server om met te verbinden.
@@ -469,7 +473,7 @@ Het nadeel kan lage prestaties wegens het gegevensbestandgeschil zijn het produc
 
 Adobe Campaign Classic heeft een geheel ander mechanisme voor KPI&#39;s, dus deze optie is niet beschikbaar.
 
-#### Bronnummer {#source-number}
+#### Source-nummer {#source-number}
 
 Bepaalt het standaardbronadres voor berichten. Deze instelling is alleen van toepassing als het bronnummer leeg is gelaten in de levering.
 
@@ -487,7 +491,7 @@ Het opgeven van korte code is handig voor twee functies:
 
 * De lijst van gewezen personen die van de auto antwoordeigenschap plaatst verzendt slechts naar quarantaine de gebruiker voor een specifieke korte code.
 
-#### TON/NPI-bron, TON/NPI bestemming {#ton-npi}
+#### Source TON/NPI, TON/NPI bestemming {#ton-npi}
 
 TON (type nummer) en NPI (indicator nummerplan) worden beschreven in punt 5.2.5 van het [SMPP 3.4-specificatie](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (bladzijde 117). Deze waarden moeten op de behoeften van de leverancier worden ingesteld.
 

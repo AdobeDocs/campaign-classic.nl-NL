@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
 
 # Problemen met prestaties en doorvoer{#performance-and-throughput-issues}
-
-
 
 Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt.
 
@@ -54,6 +52,11 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
 
 * MTA en MTAChild processen en geheugen: het **mta** module verspreidt berichten aan zijn **mtachild** onderliggende modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Zie dit [page](../../installation/using/email-deliverability.md) voor meer informatie .
 * TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Zie dit [page](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie .
+
+  >[!NOTE]
+  >
+  >De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten dienen contact op te nemen met hun Adobe voor informatie over de leveringsservice.
+
 * DKIM: om het beveiligingsniveau van de DKIM te garanderen, is 1024b de aanbevolen aanbevolen versleutelingsgrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Leverbaarheidsproblemen {#deliverability-issues}
@@ -62,10 +65,15 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 
 * IP reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie dit [page](../../delivery/using/monitoring-deliverability.md).
 * IP opwarmen: IP opwarmen wordt uitgevoerd door het leverbaarheidsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
+
+  >[!NOTE]
+  >
+  >De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten dienen contact op te nemen met hun Adobe voor informatie over de leveringsservice.
+
 * IP affiniteitopstelling: een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie dit [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-mailformaat: e-mailgrootte speelt een belangrijke rol bij de doorvoer. De aanbevolen maximale e-mailgrootte is 60 kB. Zie dit [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). In de [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) rapport, controleer het aantal bytes dat door uur wordt overgebracht.
 * Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan dit van invloed zijn op de doorvoer. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
-* Hoeveelheid personalisatie: als een levering in &quot;Personalisatie in uitvoering&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
+* Hoeveelheid personalisatie: als een levering in &quot;Personalization in uitvoering&quot; blijft, controleert u de JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 
 >[!NOTE]
 >
