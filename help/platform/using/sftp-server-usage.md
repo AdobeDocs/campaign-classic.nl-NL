@@ -8,16 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 11%
+source-wordcount: '1060'
+ht-degree: 8%
 
 ---
 
 # Best practices en probleemoplossing voor SFTP-servers {#sftp-server-usage}
-
-
 
 ## Algemene aanbevelingen voor SFTP-server {#global-recommendations}
 
@@ -25,7 +23,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
-  De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via moeten verstrekken [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om het op de server van de Campagne te uploaden.
+  De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Het hulpmiddel om SSH sleutels voor Vensters te produceren is PuTTYgen, en ssh-keygen voor Linux. U kunt openbare sleutels van SSH via het Controlebord van de Campagne uploaden. [Meer informatie](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Gebruik batchverwerking in SFTP-uploads en in workflows.
 
@@ -33,9 +31,9 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
 
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan worden gevraagd via [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. De openbare IPs kan via het Controlebord worden toegevoegd. [Meer informatie](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
-## Aanbevolen werkwijzen voor databasegebruik {#sftp-server-best-practices}
+## Aanbevolen werkwijzen voor gebruik van SFTP-opslag {#sftp-server-best-practices}
 
 SFTP-servers zijn ontworpen als tijdelijke opslagruimten waarop u het bewaren en verwijderen van bestanden kunt beheren.
 
@@ -45,11 +43,11 @@ Om dergelijke problemen te voorkomen, beveelt de Adobe aan de onderstaande beste
 
 >[!NOTE]
 >
->Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met het Campaign Classic [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>U kunt uw SFTP-serveropslag controleren met het Campaign Classic [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
+>Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om Admin toegang tot een gebruiker te verlenen worden gedetailleerd in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel){target="_blank"}.
 >
->Merk op dat uw instantie met moet worden bevorderd [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Merk op dat uw instantie met moet worden bevorderd [nieuwste GA-build](../../rn/using/rn-overview.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * De mogelijkheden voor de servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 
@@ -70,7 +68,7 @@ Wanneer u bovendien in Campaign Classic een pad naar een externe SFTP-server opg
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
-In de onderstaande sectie wordt de informatie weergegeven die u via [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
+In de onderstaande sectie wordt de informatie weergegeven die u via [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
 
 1. Controleer of de instantie actief is. Om dit te doen, open uw browser, dan maak **[!UICONTROL GET]** aanroepen van de instantie **[!UICONTROL /r/test]** eindpunt:
 
@@ -97,10 +95,6 @@ In de onderstaande sectie wordt de informatie weergegeven die u via [Klantenserv
    bash-3.2$ nc -vz myCompagny-stage-sftp.neolane.net 22
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
-
-   >[!NOTE]
-   >
-   >Met het gereedschap Netcat kunt u eenvoudig netwerkverbindingen beheren op verschillende besturingssystemen (zie [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
    Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
