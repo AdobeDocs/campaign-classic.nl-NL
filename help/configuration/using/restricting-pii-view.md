@@ -5,9 +5,9 @@ description: Leer hoe u de weergave PI beperkt
 feature: PI
 role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Sommige klanten hebben marketinggebruikers nodig om toegang te krijgen tot gegev
 
 ## Implementatie {#implementation}
 
-Een nieuw attribuut dat op om het even welk element of attribuut kan worden toegepast is toegevoegd aan de schema&#39;s, vult het de bestaande attributen aan **[!UICONTROL visibleIf]** . Dit kenmerk is: **[!UICONTROL accessibleIf]** . Wanneer een XTK-expressie wordt opgenomen die gerelateerd is aan de huidige gebruikerscontext, kan deze gebruikmaken van **[!UICONTROL HasNamedRight]** of **[!UICONTROL $(login)]** , bijvoorbeeld.
+Een nieuw kenmerk dat op elk element of kenmerk kan worden toegepast, is toegevoegd aan de schema&#39;s en vormt een aanvulling op het bestaande kenmerk **[!UICONTROL visibleIf]** . Dit kenmerk is: **[!UICONTROL accessibleIf]** . Als een XTK-expressie wordt opgenomen die gerelateerd is aan de huidige gebruikerscontext, kan deze bijvoorbeeld gebruikmaken van **[!UICONTROL HasNamedRight]** of **[!UICONTROL $(login)]** .
 
 U kunt een voorbeeld van een ontvankelijke schemauitbreiding vinden die dit gebruik hieronder toont:
 
@@ -53,9 +53,13 @@ Hier volgen de gevolgen van het gebruik van dit kenmerk in Campagne:
 * Wanneer de doelpopulatie in een groep (lijst) wordt opgeslagen, zijn de kenmerken van de opgeslagen velden gelijk aan de gegevensbron.
 * Gegevens zijn standaard niet toegankelijk voor JS-code.
 
+>[!IMPORTANT]
+>
+>Het gebruiken van **accessibleIf** attributen op kritieke parameters (zoals die in samengestelde sleutels) kan in fouten voor gebruikers resulteren die niet worden toegestaan om de gegevens te lezen toe te schrijven aan verborgen gegevens. Dit kan tot vraagmislukkingen of onverwacht gedrag leiden. Ervoor zorgen dat essentiële parameters toegankelijk zijn om verstoringen te voorkomen.
+
 ## Aanbevelingen {#recommendations}
 
-Bij elke levering worden e-mailadressen gekopieerd naar de **[!UICONTROL broadLog]** en de **[!UICONTROL forecastLog]** tabellen : bijgevolg moeten deze velden ook worden beschermd .
+Bij elke levering worden e-mailadressen naar de tabellen **[!UICONTROL broadLog]** en **[!UICONTROL forecastLog]** gekopieerd. Daarom moeten deze velden ook worden beveiligd.
 
 Hieronder ziet u een voorbeeld van de extensie van een logtabel voor het implementeren van deze extensie:
 
