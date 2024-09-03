@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 79%
 
 ---
 
 # Privacybeheer {#privacy-management}
-
 
 Adobe Campaign biedt een reeks tools om u te helpen voldoen aan de [privacyverordeningen](#privacy-management-regulations) (zoals AVG, CCPA, PDPA, LGPD).
 
@@ -40,12 +39,12 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Met de opties van Adobe Campaign kunt u voldoen aan de volgende regels:
 
-* **GDPR** (Algemene verordening inzake gegevensbescherming) is de privacywetgeving van de Europese Unie (EU) die de vereisten inzake gegevensbescherming voor de landen van de EU harmoniseert en moderniseert.
-* **CCPA** (California Consumer Privacy Act) biedt inwoners van Californië nieuwe rechten met betrekking tot hun persoonlijke gegevens en legt verantwoordelijkheden op het gebied van gegevensbescherming op aan bepaalde entiteiten die zaken doen in Californië.
-* **PDPA** (Personal Data Protection Act) is de privacywet die de vereisten inzake gegevensbescherming voor Thailand harmoniseert en moderniseert.
-* **LGPD** (Lei Geral de Proteção de Dados) is van toepassing op alle ondernemingen die in Brazilië persoonsgegevens verzamelen of verwerken.
-* **CASL** (Canadese anti-spamwet) geldt voor alle berichten die naar of vanuit Canada worden verzonden, maar niet voor berichten die via Canada worden verzonden;
-* **VCDPA** (Virginia Consumer Data Protection Act) en **CPA** (Colorado Privacy Act) is van toepassing op alle bedrijven die zaken doen of ingezetenen binnen die staten als doelwit hebben.
+* **GDPR** (de Algemene Verordening van de Bescherming van Gegevens) is de (EU) privacywet van de Europese Unie die de vereisten van de gegevensbescherming voor de landen van de EU harmoniseert en moderniseert.
+* **CCPA** (de Wet van de Privacy van de Consumentenbescherming van Californië) verstrekt de ingezetenen van Californië nieuwe rechten met betrekking tot hun persoonlijke informatie en legt verantwoordelijkheden voor gegevensbescherming aan bepaalde entiteiten op die zaken in Californië leiden.
+* **PDPA** (de Wet van de Bescherming van Persoonlijke Gegevens) is de privacywet die de vereisten van de gegevensbescherming voor Thailand harmoniseert en moderniseert.
+* **LGPD** (Lei Geral de Proteção de Dados) is van toepassing op alle bedrijven die persoonsgegevens in Brazilië verzamelen of verwerken.
+* **CASL** (Canadese anti-Spam Wet) behandelt alle berichten die naar of uit Canada worden verzonden maar omvat geen berichten die door Canada worden verpletterd;
+* **VCDPA** (de Wet van de Bescherming van de Consumentengegevens van Virginia) en **CPA** (de Wet van de Privacy van Colorado) is van toepassing op alle bedrijven die zaken of doelingezetenen binnen die staten leiden.
 
 Al deze voorschriften zijn van toepassing op Adobe Campaign-klanten die beschikken over gegevens voor gegevenssubjecten die in de bovengenoemde regio&#39;s of landen verblijven.
 
@@ -105,6 +104,7 @@ Hieronder volgen de standaardwaarden voor retentie in de ingebouwde tabellen. Ho
 * **Statistieken van gebeurtenisverwerking**: 1 jaar
 * **Gearchiveerde gebeurtenissen**: 1 jaar
 * **Genegeerde pijplijngebeurtenissen**: 1 maand
+* **Dynamische rapportering**: 13 maanden
 
 Net als bij verwijderen is het met de functionaliteit van de standaardworkflow mogelijk om retentieperioden in te stellen voor elke aangepaste tabel.
 
