@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 7%
+source-wordcount: '456'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 ## E-mailpersonalisatie optimaliseren met externe gegevens {#optimizing-email-personalization-with-external-data}
 
-U kunt berichtpersonalisatie vooraf verwerken in een specifieke workflow. Om dit uit te voeren, gebruik **[!UICONTROL Prepare the personalization data with a workflow]** beschikbaar in het dialoogvenster **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen.
+U kunt berichtpersonalisatie vooraf verwerken in een specifieke workflow. Gebruik hiervoor de optie **[!UICONTROL Prepare the personalization data with a workflow]** op het tabblad **[!UICONTROL Analysis]** van de leveringseigenschappen.
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in een extern gegevensbestand opslaat.
 
@@ -30,19 +30,21 @@ Met deze optie worden de prestaties aanzienlijk verbeterd wanneer de stap voor p
 
 Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken die in een externe database zijn opgeslagen.
 
-* **Filter op externe gegevens** - de [Query](../../workflow/using/targeting-data.md#selecting-data) Met activiteit kunt u externe gegevens toevoegen en gebruiken in de gedefinieerde filterconfiguraties. Raadpleeg [deze pagina](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
+* **Filter op externe gegevens** - de [ activiteit van de Vraag ](../../workflow/using/targeting-data.md#selecting-data) staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken. Raadpleeg [deze pagina](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
 
-* **Subsets maken** - de [Splitsen](../../workflow/using/split.md) kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
+* **creeer ondergroepen** - de [ Gesplitste ](../../workflow/using/split.md) activiteit staat u toe om ondergroepen tot stand te brengen. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
 
-* **Externe database laden** - U kunt de externe gegevens gebruiken in het dialoogvenster [Gegevens laden](../../workflow/using/data-loading-rdbms.md) (RDBMS) activiteit. Meer informatie vindt u [op deze pagina](../../workflow/using/data-loading-rdbms.md).
+* **Laad externe gegevensbestand** - u kunt de externe gegevens in de [ Lading van Gegevens ](../../workflow/using/data-loading-rdbms.md) (RDBMS) activiteit gebruiken. Meer informatie vindt u [op deze pagina](../../workflow/using/data-loading-rdbms.md).
 
-* **Informatie en koppelingen toevoegen** - de [Verrijking](../../workflow/using/enrichment.md) Met activiteit kunt u aanvullende gegevens toevoegen aan de werktabel van de werkstroom en koppelingen maken naar een externe tabel. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie vindt u [op deze pagina](../../workflow/using/enrichment.md).
+* **Toevoegend informatie en verbindingen** - de [ Verrijking ](../../workflow/using/enrichment.md) activiteit laat u om extra gegevens aan de werklijst van het werkschema, en verbindingen aan een externe lijst toe te voegen. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie vindt u [op deze pagina](../../workflow/using/enrichment.md).
 
-## FDA-beperkingen {#limitations}
+## Afvoerkanalen en beperkingen {#fda-limitations}
 
 De optie FDA is bedoeld om de gegevens in externe databases in batchmodus te manipuleren in workflows. Om prestatieproblemen te voorkomen, wordt het niet aanbevolen de FDA-module te gebruiken in het kader van eenheidsbewerkingen, zoals personalisatie, interactie, realtime berichten, enz.
 
-Vermijd de bewerkingen die zowel de Adobe Campaign als de externe database zoveel mogelijk moeten gebruiken. Hiervoor kunt u:
+Het richten van gegevens van één gegevensbestand en het fileren van de resultaten gebruikend een het filtreren dimensie die tot een ander gegevensbestand behoort wordt niet gesteund. U kunt zich niet bij lijsten aansluiten die op verschillende gegevensbronnen in één vraag zijn. U kunt deze beperking overwinnen met andere workflowactiviteiten, zoals de dimensie Wijzigen.
+
+Vermijd de bewerkingen die zowel de Adobe Campaign als de externe database zoveel mogelijk moeten gebruiken. De beste manier is om:
 
 * Exporteer de Adobe Campaign-database naar de externe database en voer de bewerkingen alleen uit vanuit de externe database voordat u de resultaten opnieuw importeert in Adobe Campaign.
 
