@@ -5,7 +5,7 @@ description: Een tabel maken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -22,11 +22,11 @@ U kunt een lijst aan een rapport toevoegen om gegevens te tonen. Dit kan een dra
 
 ## Een lijst met groepen maken {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** Met een typetabel kunt u gegevens in de tabel groeperen en er statistieken over produceren. U kunt bijvoorbeeld totalen en subtotalen maken voor de gegevens. Elke groep heeft zijn eigen kop-, detail- en voettekstregel.
+Met een **[!UICONTROL List with group]** -typetabel kunt u gegevens in de tabel groeperen en er statistieken over produceren. U kunt bijvoorbeeld totalen en subtotalen maken voor de gegevens. Elke groep heeft zijn eigen kop-, detail- en voettekstregel.
 
 >[!CAUTION]
 >
->De **[!UICONTROL Page]** activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** of **[!UICONTROL Script]** activiteit om de in het verslag te analyseren gegevens te verzamelen. Raadpleeg voor meer informatie over deze activiteiten [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md) en [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity).
+>De **[!UICONTROL Page]** -activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** - of **[!UICONTROL Script]** -activiteit om de gegevens te verzamelen die in het rapport moeten worden geanalyseerd. Voor meer op deze activiteiten, verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) en [ activiteit van het Manuscript ](../../reporting/using/advanced-functionalities.md#script-activity) te analyseren.
 
 ### Werkwijze {#operating-principle}
 
@@ -34,42 +34,42 @@ Het kan gebeuren dat u verschillende gegevenscategorieën tegelijk moet analyser
 
 In het volgende voorbeeld toont de groep alle campagnes in het gegevensbestand, de leveringen, en het aantal berichten die per levering en per campagne worden verzonden.
 
-Hiermee kunt u de campagnes weergeven (**[!UICONTROL Label (Campaign)]**, de lijst van leveringen (**[!UICONTROL Label]** ) gekoppeld aan de campagne en kunt u het aantal verzonden berichten per levering tellen (**[!UICONTROL Processed)]**, voordat u deze optelt voor elke campagne (**[!UICONTROL Sum(@processed)]** ).
+Het laat u een lijst maken van de campagnes (**[!UICONTROL Label (Campaign)]**, de lijst van leveringen (**[!UICONTROL Label]**) verbonden aan de campagne, en laat u het aantal berichten tellen die per levering (**[!UICONTROL Processed)]** worden verzonden, alvorens hen voor elke campagne (**[!UICONTROL Sum(@processed)]**) op te tellen.
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### Implementatiestappen {#implementation-steps}
 
-Hier vindt u een volledig voorbeeld van implementatie: [Hoofdlettergebruik: een rapport maken met een groepslijst](#use-case--create-a-report-with-a-group-list).
+Een volledig implementatievoorbeeld wordt hier verstrekt: [ het geval van het Gebruik: Creeer een rapport met een groepslijst ](#use-case--create-a-report-with-a-group-list).
 
 Houd rekening met de volgende stappen om een tabel van het type &#39;Lijst met groep&#39; te maken:
 
-1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Zie [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md).
+1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) te analyseren.
 1. Vul de brontabel in en selecteer de velden van de tabel die de statistieken betreffen.
-1. Een **[!UICONTROL Page]** activiteit in de grafiek. Raadpleeg voor meer informatie hierover [Statische elementen](../../reporting/using/creating-a-new-report.md#static-elements).
-1. Een **[!UICONTROL List with group]** typt u tabel in de pagina.
+1. Plaats een **[!UICONTROL Page]** -activiteit in het diagram. Voor meer op dit, verwijs naar [ Statische elementen ](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Voeg een **[!UICONTROL List with group]** typetabel op de pagina in.
 1. Geef het gegevenspad op of de tabel die als gegevensbron in de query is geselecteerd.
 
    Deze stap is verplicht als u de velden in de brontabel later wilt herstellen en deze wilt invoegen in de cellen van de tabel.
 
 1. De tabel en de inhoud ervan maken.
-1. Het voltooide rapport weergeven in het dialoogvenster **[!UICONTROL Preview]** tab. Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Raadpleeg voor meer informatie hierover [Een rapport exporteren](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Geef het voltooide rapport weer op het tabblad **[!UICONTROL Preview]** . Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar [ Uitvoer een rapport ](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Lijnen en kolommen toevoegen {#adding-lines-and-columns}
 
-Standaard wordt een **[!UICONTROL List with group]** teksttabel bevat een koptekst, een detailregel en een voettekstregel.
+Een **[!UICONTROL List with group]** -tabel bevat standaard een koptekst, een detailregel en een voettekstregel.
 
 De groep zelf bevat kop-, detail- en voettekstregel.
 
-* **Koptekstregel**: met deze regel kunt u een titel aan de kolommen van de tabel geven.
+* **lijn van de Kopbal**: deze lijn laat u een titel aan de kolommen van de lijst geven.
 
   ![](assets/s_advuser_ergo_listgroup_003a.png)
 
-* **Detaillijn**: deze regel bevat statistische waarden.
+* **de lijn van het Detail**: deze lijn bevat statistische waarden.
 
   ![](assets/s_advuser_ergo_listgroup_004.png)
 
-* **Voettekstregel**: op deze regel kunt u de totale waarden weergeven.
+* **Voettekstregel**: deze lijn laat u de totale waarden tonen.
 
   ![](assets/s_advuser_ergo_listgroup_003.png)
 
@@ -79,17 +79,17 @@ De groep kan op om het even welke lijn van de lijst worden geplaatst en omvat zi
 
 ![](assets/s_advuser_ergo_listgroup_019.png)
 
-**Lijn en kolom**: als u een regel of kolom wilt toevoegen of verwijderen, gaat u naar een bestaande regel of kolom en gebruikt u het snelmenu.
+**Lijn en kolom**: om een lijn of een kolom toe te voegen of te schrappen, naar een bestaande lijn of een kolom te gaan en het met de rechtermuisknop aanklikken menu te gebruiken.
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-De aard van de lijn die u toevoegt, is afhankelijk van de locatie van de cursor. Als u bijvoorbeeld een koptekstregel wilt toevoegen, plaatst u de cursors op een koptekst en klikt u op **[!UICONTROL Add > A line above/below]**.
+De aard van de lijn die u toevoegt, is afhankelijk van de locatie van de cursor. Als u bijvoorbeeld een koptekstregel wilt toevoegen, plaatst u de cursors op een koptekst en klikt u op **[!UICONTROL Add > A line above/below]** .
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-De breedte van de kolommen kan worden gewijzigd via de **[!UICONTROL Column format]** item.
+De breedte van de kolommen kan worden gewijzigd via het item **[!UICONTROL Column format]** .
 
-**Groep**: als u een groep wilt toevoegen, gaat u naar een regel en selecteert u het overeenkomende item in het keuzemenu.
+**Groep**: om een groep toe te voegen, ga naar een lijn en selecteer het passende punt in het drop-down menu.
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
@@ -97,7 +97,7 @@ De breedte van de kolommen kan worden gewijzigd via de **[!UICONTROL Column form
 
 Als u een cel van de tabel wilt bewerken en de inhoud en indeling ervan wilt definiëren, gaat u naar de cel en gebruikt u het snelmenu.
 
-Gebruik de **[!UICONTROL Expression]** menu-item om de waarden te selecteren die moeten worden weergegeven.
+Gebruik het menu-item **[!UICONTROL Expression]** om de waarden te selecteren die u wilt weergeven.
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
@@ -109,11 +109,11 @@ Gebruik de **[!UICONTROL Expression]** menu-item om de waarden te selecteren die
 
 * Voer een label in voor een cel, bijvoorbeeld de koptekst.
 
-  Hiervoor gebruikt u hetzelfde proces als voor het invoegen van een veld in de database, maar selecteert u geen expressie. Voer het label in het dialoogvenster **[!UICONTROL Label]** veld. Het zal worden getoond zoals is.
+  Hiervoor gebruikt u hetzelfde proces als voor het invoegen van een veld in de database, maar selecteert u geen expressie. Voer het label in het veld **[!UICONTROL Label]** in. Het zal worden getoond zoals is.
 
 * Een aggregaat berekenen (gemiddelde waarde, som enz.) en in de cel weergeven.
 
-  Om dit te doen, gebruik **[!UICONTROL Aggregates]** en selecteer de gewenste campagne.
+  Hiervoor gebruikt u de menuvermelding **[!UICONTROL Aggregates]** en selecteert u de gewenste campagne.
 
   ![](assets/s_advuser_ergo_listgroup_008.png)
 
@@ -121,24 +121,24 @@ Gebruik de **[!UICONTROL Expression]** menu-item om de waarden te selecteren die
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-Als u de celindeling wilt definiëren, **[!UICONTROL Cell format...]** Hiermee hebt u toegang tot alle opmaakopties die beschikbaar zijn voor de geselecteerde cel.
+Als u de celindeling wilt definiëren, opent u met het menu **[!UICONTROL Cell format...]** alle opmaakopties die beschikbaar zijn voor de geselecteerde cel.
 
 Met deze opties kunt u de uiteindelijke rendering van het rapport aanpassen en het lezen van informatie vereenvoudigen.
 
-Gebruik de **[!UICONTROL Carriage return]** veld bij het exporteren van gegevens naar Excel: selecteer de optie **[!UICONTROL Yes]** waarde om de harde return te forceren. Deze waarde blijft behouden bij het exporteren. Raadpleeg voor meer informatie hierover [Een rapport exporteren](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Gebruik het veld **[!UICONTROL Carriage return]** wanneer u gegevens exporteert naar Excel: selecteer de waarde **[!UICONTROL Yes]** om de regelterugloop te forceren. Deze waarde blijft behouden bij het exporteren. Voor meer op dit, verwijs naar [ Uitvoer een rapport ](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-De **[!UICONTROL Cell format]** het venster laat u tot het volgende lusje toegang hebben:
+In het venster **[!UICONTROL Cell format]** hebt u toegang tot het volgende tabblad:
 
-* De **[!UICONTROL Value]** tab
-* De **[!UICONTROL Borders]** tab
-* De **[!UICONTROL Click]** tab
-* De **[!UICONTROL Extra]** tab
+* Het tabblad **[!UICONTROL Value]**
+* Het tabblad **[!UICONTROL Borders]**
+* Het tabblad **[!UICONTROL Click]**
+* Het tabblad **[!UICONTROL Extra]**
 
-De **[!UICONTROL Value]** kunt u het lettertype en de verschillende waardetekenmerken wijzigen of een opmaak definiëren op basis van de aard ervan.
+Op het tabblad **[!UICONTROL Value]** kunt u het lettertype en de verschillende waardetekenmerken wijzigen of een opmaak definiëren op basis van de aard ervan.
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-De indeling wijzigt de weergave van gegevens: bijvoorbeeld de **[!UICONTROL Number]**, **[!UICONTROL Monetary]** en **[!UICONTROL Percentage]** Met indelingen kunt u de cijfers rechts uitlijnen en decimalen weergeven.
+De indeling wijzigt de weergave van gegevens: met de indelingen **[!UICONTROL Number]** , **[!UICONTROL Monetary]** en **[!UICONTROL Percentage]** kunt u bijvoorbeeld de cijfers rechts uitlijnen en decimalen weergeven.
 
 Voorbeeld van hoe u een valutanotatie configureert: u kunt de valuta opgeven waarin de waarden worden uitgedrukt, kiezen of u duizenden wilt scheiden en negatieve waarden in rood wilt weergeven. De positie van het valutasymbool hangt af van de taal van de operator die in zijn profiel is gedefinieerd.
 
@@ -148,7 +148,7 @@ Voorbeeld van configuratie voor datums: u kunt kiezen of u de tijd wilt weergeve
 
 ![](assets/s_advuser_ergo_listgroup_013.png)
 
-De **Randen** kunt u randen toevoegen aan de lijnen en kolommen in de tabel. Als u randen toevoegt aan de cellen, kunnen er prestatieproblemen optreden wanneer u grote rapporten exporteert naar Excel.
+Het **lusje van Grenzen** laat u grenzen aan de lijnen en de kolommen in de lijst toevoegen. Als u randen toevoegt aan de cellen, kunnen er prestatieproblemen optreden wanneer u grote rapporten exporteert naar Excel.
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
@@ -186,13 +186,13 @@ Op het tabblad Excel:
  </style> 
 ```
 
-De **[!UICONTROL Click]** kunt u een actie definiëren wanneer de gebruiker op de inhoud van een cel of van de tabel klikt.
+Met het tabblad **[!UICONTROL Click]** kunt u een actie definiëren wanneer de gebruiker op de inhoud van een cel of van de tabel klikt.
 
 In het onderstaande voorbeeld kunt u de tweede pagina van het rapport weergeven door op de waarde in de cel te klikken. Deze pagina bevat informatie over de levering in de cel.
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-De **Extra** kunt u visueel koppelen aan uw gegevens, zoals een gekleurd teken of een waardebalk. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Raadpleeg het voorbeeld van de implementatie voor meer informatie hierover: [Stap 5 - Maak de tweede pagina](#step-5---create-the-second-page)
+Het **Extra** lusje laat u visueel met uw gegevens, zoals een gekleurd teken of een waardebar verbinden. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Voor meer op dit, verwijs naar het implementatievoorbeeld: [ Stap 5 - creeer de tweede pagina ](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -204,11 +204,11 @@ In dit voorbeeld gaan we een rapport van twee pagina&#39;s maken: de eerste pagi
 
 ### Stap 1 - Een rapport maken {#step-1---create-a-report}
 
-Een nieuw rapport maken dat betrekking heeft op het campagneschema, **[!UICONTROL Campaigns (nms)]**.
+Maak een nieuw rapport over het campagneschema **[!UICONTROL Campaigns (nms)]** .
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-Klikken **[!UICONTROL Save]** om het rapport te maken.
+Klik op **[!UICONTROL Save]** om het rapport te maken.
 
 Ga naar de grafiek en voeg de eerste componenten toe die voor het ontwerpen van de rapportinhoud moeten worden gebruikt: een eerste vraag en een eerste pagina.
 
@@ -220,8 +220,8 @@ Met de eerste query kunt u leveringen verzamelen die aan elke campagne zijn geko
 
 Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende stappen toe om deze te configureren:
 
-1. Begin door het schema te veranderen waarop de bron van de vraag wordt toegepast: selecteer **[!UICONTROL Deliveries (nms)]** schema.
-1. Klik op de knop **[!UICONTROL Edit query]** De geavanceerde velden koppelen en weergeven.
+1. Begin door het schema te veranderen waarop de bron van de vraag wordt toegepast: selecteer het **[!UICONTROL Deliveries (nms)]** schema.
+1. Klik op de koppeling **[!UICONTROL Edit query]** en geef de geavanceerde velden weer.
 
    ![](assets/reporting_quick_start_query-1.png)
 
@@ -243,11 +243,11 @@ Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende 
    * Label: **@label**
    * Primaire sleutel: **@deliveryId**
    * Label (campagne): **@label1**
-   * Verwerkt: **@processed**
+   * Verwerkt: **@processing**
    * Externe sleutel van de koppeling &#39;Campaign&#39; (&#39;id&#39;): **@operationId**
    * Foutfrequentie: **@errorRatio**
 
-1. Klik op de knop **[!UICONTROL Next]** twee keer om naar de **[!UICONTROL Data filtering]** stap.
+1. Klik tweemaal op de knop **[!UICONTROL Next]** om de stap **[!UICONTROL Data filtering]** te doorlopen.
 
    Voeg een filtervoorwaarde toe om slechts de leveringen te verzamelen verbonden aan een campagne.
 
@@ -255,13 +255,13 @@ Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende 
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. Klikken **[!UICONTROL Finish]** als u deze voorwaarden wilt opslaan, klikt u op **[!UICONTROL Ok]** om de vraagredacteur te sluiten.
+1. Klik op **[!UICONTROL Finish]** om deze voorwaarden op te slaan en klik vervolgens op **[!UICONTROL Ok]** om de query-editor te sluiten.
 
 ### Stap 3: De eerste pagina maken {#step-3--create-the-first-page}
 
 In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende stappen uit om het te configureren:
 
-1. Open de **[!UICONTROL Page]** activiteit en voer de titel ervan in, bijvoorbeeld **Leveringen** in dit geval.
+1. Open de **[!UICONTROL Page]** activiteit en ga zijn titel, bijvoorbeeld **Leveringen** in dit geval in.
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
@@ -269,11 +269,11 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. Klik op de knop **[!UICONTROL Table data XPath...]** en selecteer de leveringskoppeling, d.w.z. `[query/delivery]`.
+1. Klik op de koppeling **[!UICONTROL Table data XPath...]** en selecteer de leveringskoppeling, d.w.z. `[query/delivery]` .
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. Klik op de knop **[!UICONTROL Data]** tab en layout van de tabel wijzigen: voeg drie kolommen aan de rechterkant toe.
+1. Klik op de tab **[!UICONTROL Data]** en wijzig de indeling van de tabel: voeg drie kolommen aan de rechterkant toe.
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
@@ -283,35 +283,35 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
 
    Met deze groep kunt u campagnes en de bijbehorende leveringen groeperen.
 
-1. Verwijs in het groepsvenster naar de **Buitenlandse sleutel van de koppeling &#39;Campaign&#39;** en sluit het venster.
+1. In het groepsvenster, verwijs de **Buitenlandse sleutel van de verbinding van de &quot;Campagne&quot;** en sluit het venster.
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. Bewerk de eerste cel van de groepsheader en voeg de **[!UICONTROL Label]** veld van de campagnes als expressie.
+1. Bewerk de eerste cel van de groepsheader en voeg het veld **[!UICONTROL Label]** van de campagnes in als een expressie.
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. De tweede cel van de detailregel bewerken en de leveringen selecteren **[!UICONTROL Label]**.
+1. Bewerk de tweede cel van de detailregel en selecteer de leveringen **[!UICONTROL Label]** .
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. De opmaak van deze cel bewerken en het dialoogvenster **[!UICONTROL Click]** tab. Configureer de juiste opties zodat wanneer de gebruikers op de naam van een levering klikken, deze in hetzelfde venster wordt geopend.
+1. Bewerk de opmaak van deze cel en open het tabblad **[!UICONTROL Click]** . Configureer de juiste opties zodat wanneer de gebruikers op de naam van een levering klikken, deze in hetzelfde venster wordt geopend.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   Selecteer een **[!UICONTROL Next page]** tekstactie en selecteer **[!UICONTROL In the same window]** als een open optie.
+   Selecteer hiertoe een **[!UICONTROL Next page]** -tekstactie en selecteer **[!UICONTROL In the same window]** als een open optie.
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. Klik in de onderste sectie van het venster op **[!UICONTROL Add]** en geeft de **`/vars/selectedDelivery`** en de **[!UICONTROL @deliveryId]** expressie die overeenkomt met de alias van de primaire sleutel van de levering, zoals gedefinieerd in de eerder gemaakte query. Met deze formule hebt u toegang tot de geselecteerde levering.
+1. Klik in de onderste sectie van het venster op **[!UICONTROL Add]** en geef het **`/vars/selectedDelivery`** path en de **[!UICONTROL @deliveryId]** -expressie op die overeenkomen met de alias van de primaire sleutel van de levering, zoals gedefinieerd in de eerder gemaakte query. Met deze formule hebt u toegang tot de geselecteerde levering.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. De tweede cel van de voettekstregel van de groep bewerken en invoeren **[!UICONTROL Total per campaign]** als label.
+1. Bewerk de tweede cel van de voettekstregel van de groep en voer **[!UICONTROL Total per campaign]** in als een label.
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. Bewerk de derde cel van de koptekstregel van de groep en typ **[!UICONTROL Number of messages sent]** als label.
+1. Bewerk de derde cel van de koptekstregel van de groep en voer **[!UICONTROL Number of messages sent]** in als een label.
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
@@ -321,31 +321,31 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. Bewerk de derde cel van de voettekstregel van de groep, selecteer de verwerkte leveringsindicator en pas de **[!UICONTROL Sum]** samenvoegen.
+1. Bewerk de derde cel van de voettekstregel van de groep, selecteer de verwerkte leveringsindicator en pas het aggregaat **[!UICONTROL Sum]** erop toe.
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
-1. Bewerk de vierde cel van de detailregel en selecteer de **foutfrequentie bij levering** als een expressie.
+1. Bewerk de vierde cel van de detaillijn en selecteer het **foutentarief van de foutenlevering** als uitdrukking.
 
    ![](assets/s_advuser_report_listgroup_016.png)
 
 1. Selecteer deze cel om een waardebalk weer te geven die de frequentie van de leveringsfout weergeeft.
 
-   Ga hiertoe naar de **[!UICONTROL More]** tab. Selecteer de **[!UICONTROL Value bar]** in de vervolgkeuzelijst en selecteert u de **[!UICONTROL Hide the cell value]** -optie.
+   Hiervoor opent u de celindeling en gaat u naar het tabblad **[!UICONTROL More]** . Selecteer de vermelding **[!UICONTROL Value bar]** in de vervolgkeuzelijst en selecteer de optie **[!UICONTROL Hide the cell value]** .
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   U kunt nu een rendering van het rapport weergeven. Klik op de knop **[!UICONTROL Preview]** en selecteert u de **[!UICONTROL Global]** optie: hier ziet u de lijst met alle leveringen in de Adobe Campaign-database die aan een campagne zijn gekoppeld.
+   U kunt nu een rendering van het rapport weergeven. Klik op het tabblad **[!UICONTROL Preview]** en selecteer de optie **[!UICONTROL Global]** : hier ziet u de lijst met alle leveringen in de Adobe Campaign-database die aan een campagne zijn gekoppeld.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   We raden u aan de **[!UICONTROL Preview]** om ervoor te zorgen dat de gegevens in uw tabel correct zijn geselecteerd en geconfigureerd. Zodra dit wordt gedaan, kunt u aan het formatteren van uw lijst verdergaan.
+   We raden u aan het tabblad **[!UICONTROL Preview]** te gebruiken om ervoor te zorgen dat de gegevens in uw tabel correct zijn geselecteerd en geconfigureerd. Zodra dit wordt gedaan, kunt u aan het formatteren van uw lijst verdergaan.
 
-1. Pas de **[!UICONTROL Bold]** stijl aan de cellen die het totaal per campagne en het totale aantal verwerkte berichten tonen.
+1. Pas de stijl **[!UICONTROL Bold]** toe op de cellen die het totaal per campagne en het totale aantal verwerkte berichten tonen.
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. Klik op de eerste cel van de groepsheader, de cel die de naam van de campagne weergeeft, en selecteer **[!UICONTROL Edit > Merge to right]**.
+1. Klik op de eerste cel van de groepsheader lijn, die de campagnenaam toont, en selecteer **[!UICONTROL Edit > Merge to right]**.
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
@@ -361,7 +361,7 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
 
 Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een levering te tonen wanneer de gebruiker van het rapport op het klikt. Alvorens de vraag toe te voegen, geef de pagina uit u hebt gecreeerd en laat de uitgaande overgang toe zodat het aan de vraag kan worden verbonden.
 
-1. Een nieuwe query toevoegen na de opdracht **[!UICONTROL Page]** activiteit en geef zijn schema uit: selecteer **[!UICONTROL Recipient delivery logs]** schema.
+1. Voeg een nieuwe query toe na de **[!UICONTROL Page]** -activiteit en bewerk het schema: selecteer het **[!UICONTROL Recipient delivery logs]** -schema.
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -371,18 +371,18 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
      ![](assets/reporting_quick_start_query-2_count.png)
 
-   * verzamel de e-maildomeinen van de ontvanger en groepeer informatie over dit gebied: om dit te doen, selecteer **[!UICONTROL Group]** in de kolom met domeinnamen.
+   * e-maildomeinen van ontvangers en groepsinformatie over dit veld verzamelen: hiervoor selecteert u de optie **[!UICONTROL Group]** in de kolom met domeinnamen.
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Koppel de volgende aliassen aan de velden:
 
    * count(primaire sleutel): **@count**
-   * E-maildomein (ontvanger): **@domain**
+   * E-maildomein (ontvanger): **@domein**
 
      ![](assets/reporting_quick_start_query-2_alias.png)
 
-1. Klik op de knop **[!UICONTROL Next]** knop twee keer: hiermee gaat u naar de **[!UICONTROL Data filtering]** stap.
+1. Klik tweemaal op de knop **[!UICONTROL Next]** : hiermee gaat u naar de stap **[!UICONTROL Data filtering]** .
 
    Voeg een filtervoorwaarde toe om slechts de informatie te verzamelen verbonden aan de geselecteerde levering.
 
@@ -394,37 +394,37 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
 ### Stap 5 - Maak de tweede pagina {#step-5---create-the-second-page}
 
-1. Bewerk de pagina en voer het label ervan in: **E-maildomeinen**.
-1. Schakel het selectievakje **[!UICONTROL Enable output transitions]** optie: dit is de laatste pagina van het rapport en zal niet door een andere activiteit worden gevolgd.
+1. Bewerk de pagina en ga zijn etiket in: **E-maildomeinen**.
+1. Schakel de optie **[!UICONTROL Enable output transitions]** uit: dit is de laatste pagina van het rapport en wordt niet gevolgd door een andere activiteit.
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
-1. Een nieuwe lijst met een groep toevoegen met behulp van het snelmenu en deze aanroepen **E-maildomeinen per ontvanger**.
-1. Klik op de knop **[!UICONTROL Table data XPath...]** en selecteert u de **[!UICONTROL Recipient delivery logs]** koppeling.
+1. Voeg een nieuwe lijst met een groep toe gebruikend het met de rechtermuisknop-klik menu en roep het **E-maildomeinen per ontvanger**.
+1. Klik op **[!UICONTROL Table data XPath...]** en selecteer de koppeling **[!UICONTROL Recipient delivery logs]** .
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. In de **[!UICONTROL Data]** kunt u de tabel als volgt aanpassen:
+1. Pas de tabel op het tabblad **[!UICONTROL Data]** als volgt aan:
 
    * Voeg twee kolommen aan de rechterkant toe.
-   * Voeg in de eerste cel van de detailregel de opdracht **[!UICONTROL rowNum()-1]** expressie om het aantal regels te tellen. Wijzig vervolgens de indeling van de cel: in de **[!UICONTROL Extra]** tab, selecteert u **[!UICONTROL Color tab]** en klik op **[!UICONTROL Ok]**.
+   * Voeg in de eerste cel van de detailregel de expressie **[!UICONTROL rowNum()-1]** toe om het aantal regels te tellen. Wijzig vervolgens de indeling van de cel: selecteer **[!UICONTROL Color tab]** op het tabblad **[!UICONTROL Extra]** en klik op **[!UICONTROL Ok]** .
 
      ![](assets/s_advuser_report_listgroup_018.png)
 
      Deze configuratie zal u toelaten om de lijst als titel voor de grafiek te gebruiken.
 
-   * Voeg in de tweede cel van de detailregel de opdracht **[!UICONTROL Email domain(Recipient)]** expressie.
-   * Voeg in de derde cel van de detailregel de knop **[!UICONTROL count(primary key)]** expressie.
+   * Voeg in de tweede cel van de detailregel de expressie **[!UICONTROL Email domain(Recipient)]** toe.
+   * Voeg in de derde cel van de detailregel de expressie **[!UICONTROL count(primary key)]** toe.
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Voeg een cirkeldiagram aan de pagina toe gebruikend het met de rechtermuisknop aanklikken menu en wijs toe **E-maildomeinen** eraan te koppelen. Raadpleeg voor meer informatie [Grafiektypen en -varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
-1. Klik op de knop **[!UICONTROL Variants]** en deselecteer de **[!UICONTROL Display label]** en de **[!UICONTROL Display caption]** opties.
+1. Voeg een cirkeldiagram aan de pagina toe gebruikend het met de rechtermuisknop-klik menu en wijs het **E-mail domeinen** etiket aan het toe. Voor meer informatie, verwijs naar [ types en varianten van de Grafiek ](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Klik op de koppeling **[!UICONTROL Variants]** en schakel de opties **[!UICONTROL Display label]** en **[!UICONTROL Display caption]** uit.
 1. Controleer of er geen waarde sortering is geconfigureerd. Raadpleeg [deze sectie](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report) voor meer informatie.
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. In de **[!UICONTROL Data]** tab, wijzig de gegevensbron: select **[!UICONTROL Context data]** in de vervolgkeuzelijst.
+1. Wijzig op het tabblad **[!UICONTROL Data]** de gegevensbron: selecteer **[!UICONTROL Context data]** in de vervolgkeuzelijst.
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
@@ -432,12 +432,12 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. In de **[!UICONTROL Chart type]** selecteert u de **[!UICONTROL Email domain]** variabele.
+1. Selecteer in de sectie **[!UICONTROL Chart type]** de variabele **[!UICONTROL Email domain]** .
 1. Voeg vervolgens de uit te voeren berekening toe: selecteer de som als een operator.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
-1. Klik op de knop **[!UICONTROL Detail]** om het gebied te selecteren dat de telling zal betreffen, dan sluit het configuratievenster.
+1. Klik op de knop **[!UICONTROL Detail]** om het veld te selecteren waarop het aantal betrekking heeft en sluit vervolgens het configuratievenster.
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
@@ -447,7 +447,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
 ### Stap 6 - Bekijk het rapport {#step-6---viewing-the-report}
 
-Als u het resultaat van deze configuratie wilt weergeven, klikt u op de knop **[!UICONTROL Preview]** en selecteert u de **[!UICONTROL Global]** -optie.
+Als u het resultaat van deze configuratie wilt weergeven, klikt u op de tab **[!UICONTROL Preview]** en selecteert u de optie **[!UICONTROL Global]** .
 
 De eerste pagina van uw rapport bevat de lijst met alle leveringen die in de database zijn opgenomen.
 
@@ -461,6 +461,6 @@ Als u op de koppeling van een van deze leveringen klikt, wordt in het diagram de
 
 Dit type van lijst laat u statistieken tonen die op de gegevens in het gegevensbestand worden berekend.
 
-De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysetovenaar. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) voor meer informatie.
+De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysemedewerker. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) voor meer informatie.
 
-Raadpleeg voor meer informatie over het maken van een draaitabel [deze sectie](../../reporting/using/ac-cubes.md).
+Voor meer bij het creëren van een spillijst, verwijs naar [ deze sectie ](../../reporting/using/ac-cubes.md).
