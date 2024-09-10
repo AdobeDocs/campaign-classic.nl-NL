@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 3%
@@ -20,21 +20,21 @@ ht-degree: 3%
 
 Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij.
 
-Dit rapport, dat gericht is op technische beheerders, is ook toegankelijk via de **[!UICONTROL Monitoring]** op de besturingsinstantie.
+Dit rapport, dat op technische beheerders is gericht, kan ook via het **[!UICONTROL Monitoring]** lusje op de controleinstantie worden betreden.
 
 ![](assets/mc_reports_2.png)
 
-Net als voor de **[!UICONTROL Message Center service level]** rapport, kunt u verkiezen om de algemene statistieken of die met betrekking tot een bepaalde uitvoeringsinstantie te tonen. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
+Net als voor het **[!UICONTROL Message Center service level]** -rapport kunt u desgewenst de algemene statistieken of de statistieken ten opzichte van een bepaalde uitvoeringsinstantie weergeven. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
 
-De indicatoren die worden weergegeven in het **[!UICONTROL Indicators over the period]** de sectie wordt berekend over de geselecteerde periode:
+De indicatoren die in de sectie **[!UICONTROL Indicators over the period]** worden weergegeven, worden berekend over de geselecteerde periode:
 
-* **[!UICONTROL Average queuing time]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de verwerkingstijd wordt in aanmerking genomen.
-* **[!UICONTROL Average message sending time (s)]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de levertijd van de mta wordt in aanmerking genomen.
-* **[!UICONTROL Average processing time (s)]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. De berekening neemt de verwerkingstijd in aanmerking en de tijd die de gegevens verzenden.
-* **[!UICONTROL Maximum number of queued events]** : maximumaantal gebeurtenissen aanwezig in de rij van het Centrum van het Bericht op om het even welk bepaald ogenblik.
-* **[!UICONTROL Minimum number of queued events]** : minimumaantal gebeurtenissen aanwezig in de rij van het Centrum van het Bericht op om het even welk bepaald ogenblik.
-* **[!UICONTROL Average number of queued events]** : gemiddeld aantal gebeurtenissen aanwezig in de rij van het Centrum van het Bericht op om het even welk bepaald ogenblik.
+* **[!UICONTROL Average queuing time]** : de gemiddelde tijd die met succes in het Centrum van het Bericht doorgebrachte gebeurtenissen verwerkte. Alleen de verwerkingstijd wordt in aanmerking genomen.
+* **[!UICONTROL Average message sending time (s)]** : de gemiddelde tijd die met succes in het Centrum van het Bericht doorgebrachte gebeurtenissen verwerkte. Alleen de levertijd van de mta wordt in aanmerking genomen.
+* **[!UICONTROL Average processing time (s)]** : de gemiddelde tijd die met succes in het Centrum van het Bericht doorgebrachte gebeurtenissen verwerkte. De berekening neemt de verwerkingstijd in aanmerking en de tijd die de gegevens verzenden.
+* **[!UICONTROL Maximum number of queued events]** : maximumaantal gebeurtenissen aanwezig in de wachtrij van het Berichtencentrum op een bepaald moment.
+* **[!UICONTROL Minimum number of queued events]** : minimumaantal gebeurtenissen dat zich op een bepaald moment in de wachtrij van het Message Center bevindt.
+* **[!UICONTROL Average number of queued events]** : het gemiddelde aantal gebeurtenissen dat op een bepaald moment in de wachtrij van het Berichtencentrum aanwezig is.
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Verwijs naar [ drempels van de Monitor ](../../message-center/using/additional-configurations.md#monitoring-thresholds).

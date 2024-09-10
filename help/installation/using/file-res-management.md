@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -21,27 +21,27 @@ ht-degree: 1%
 
 ## Bestandsindeling voor uploaden beperken {#limiting-uploadable-files}
 
-Gebruik de **uploadWhiteList** om de bestandstypen te beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
+Gebruik het **uploadWhiteList** attribuut om de dossiertypes te beperken beschikbaar voor upload op de server van Adobe Campaign.
 
-Dit kenmerk is beschikbaar in het dialoogvenster **dataStore** element van het **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Dit attribuut is beschikbaar binnen het **element 0} dataStore {van het** serverConf.xml **dossier.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
-De standaardwaarde van dit kenmerk is **.+** en kunt u elk bestandstype uploaden.
+De standaardwaarde van dit kenmerk is **.+** en laat u om het even welk dossiertype uploaden.
 
 Als u de mogelijke indelingen wilt beperken, vervangt u de kenmerkwaarde door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
-Bijvoorbeeld: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** Hiermee kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
+Bijvoorbeeld: **uploadWhiteList=&quot;.&#42; .png,.&#42; .jpg&quot;** zal u PNG en JPG formaten op de server laten uploaden. Er worden geen andere indelingen geaccepteerd.
 
 U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van het Web te vormen. [Meer informatie](web-server-configuration.md)
 
 >[!NOTE]
 >
->De **uploadWhiteList** -kenmerk beperkt de bestandstypen die beschikbaar zijn voor uploaden op de Adobe Campaign-server. Wanneer de publicatiemodus echter **Volgserver(s)** of **Andere Adobe Campaign-server(s)** de **uploadWhitelist** kenmerken moeten ook op die servers worden bijgewerkt.
+>Het **uploadWhiteList** attribuut beperkt de dossiertypes beschikbaar voor upload op de server van Adobe Campaign. Nochtans, wanneer de publicatiemodus **het Volgen server(s)** of **Andere server(s) van Adobe Campaign** is, moet het **uploadWhitelist** attribuut ook op die servers worden bijgewerkt.
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 
-U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend **Bestandsoverdracht** workflowactiviteit, bijvoorbeeld. Om dit te bereiken, moet u vormen **proxyConfig** van de **serverConf.xml** een specifieke opdracht gebruiken. Alle parameters beschikbaar in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+U kunt de server van de Campagne met een extern systeem door een volmacht verbinden, gebruikend de het werkschemaactiviteit van de Overdracht van het a **Dossier** bijvoorbeeld. Om dit te bereiken, moet u de **proxyConfig** sectie van het **serverConf.xml** dossier door een specifiek bevel vormen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
-De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat vanaf 20.2 de campagneversie de parameters HTTP en HTTPS protocol **niet meer beschikbaar**. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
+De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Gelieve te merken op dat de beginnende versie van de Campagne 20.2, de HTTP en HTTPS protocolparameters **niet meer beschikbaar** zijn. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
 
 >[!CAUTION]
 >
@@ -112,23 +112,23 @@ Als u de iOS HTTP/2-connector via een proxy moet gebruiken, worden de volgende H
 * HTTP zonder verificatie
 * HTTP-basisverificatie
 
-Als u de proxymodus wilt activeren, moet de volgende wijziging worden uitgevoerd in het dialoogvenster `serverconf.xml` bestand:
+Als u de proxymodus wilt activeren, moet de volgende wijziging worden uitgevoerd in het `serverconf.xml` -bestand:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Voor meer informatie over deze iOS HTTP/2-connector raadpleegt u deze [page](../../delivery/using/about-mobile-app-channel.md).
+Voor meer informatie over deze schakelaar van iOS HTTP/2, verwijs naar deze [ pagina ](../../delivery/using/about-mobile-app-channel.md).
 
 ## Overheidsmiddelen beheren {#managing-public-resources}
 
 Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-De openbare middelen worden opgeslagen in **/var/res/instance** directory van de installatiemap van Adobe Campaign.
+De openbare middelen worden opgeslagen in de **/var/res/instance** folder van de de installatiemap van Adobe Campaign.
 
-De overeenkomende URL is: **http://server/res/instance** waar **instance** is de naam van de instantie tracking.
+De passende URL is: **http://server/res/instance** waar **instantie** de naam van de volgende instantie is.
 
-U kunt een andere map opgeven door een knooppunt toe te voegen aan de **conf-`<instance>`.xml** bestand om opslag op de server te configureren. Dit betekent dat de volgende regels moeten worden toegevoegd:
+U kunt een andere folder specificeren door een knoop aan het **conf- `<instance>` .xml** dossier toe te voegen om opslag op de server te vormen. Dit betekent dat de volgende regels moeten worden toegevoegd:
 
 ```
 <serverconf>

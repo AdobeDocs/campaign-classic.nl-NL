@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## Leveringsfouten {#about-delivery-failures}
 
-Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden verzonden, verstuurt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgepakt en gekwalificeerd is om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst. Zie [Bounce mail management](#bounce-mail-management).
+Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden verzonden, verstuurt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgepakt en gekwalificeerd is om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst. Zie [ stuiteren postbeheer ](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als
 
 ## Typen leveringsfouten en redenen {#delivery-failure-types-and-reasons}
 
-Er zijn drie typen fouten wanneer een bericht mislukt. Elk fouttype bepaalt of een adres naar quarantines wordt verzonden. Raadpleeg voor meer informatie hierover [Voorwaarden voor verzending van een adres naar quarantaine](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+Er zijn drie typen fouten wanneer een bericht mislukt. Elk fouttype bepaalt of een adres naar quarantines wordt verzonden. Voor meer op dit, verwijs naar [ Voorwaarden om een adres naar quarantaine ](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine) te verzenden
 
 * **Hard**: Een ‘harde’ of permanente fout wijst op een ongeldig adres. Dit omvat een foutbericht waarin expliciet wordt aangegeven dat het adres ongeldig is, zoals een onbekende gebruiker.
 * **Soft**: Dit kan een tijdelijke fout zijn of een fout die niet kan worden gecategoriseerd, zoals een ongeldig domein of een vol postvak.
@@ -57,19 +57,19 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Account uitgeschakeld </td> 
    <td> Zacht/Hard </td> 
    <td> 4 </td> 
-   <td> De account die aan het adres is gekoppeld, is niet meer actief. Wanneer de Internet Access Provider (IAP) een lange periode van inactiviteit detecteert, kan deze de account van de gebruiker sluiten. Leveringen aan het adres van de gebruiker zijn dan onmogelijk. Als de account tijdelijk is uitgeschakeld vanwege een inactiviteit van zes maanden en nog steeds kan worden geactiveerd, wordt de status Met fouten toegewezen en wordt de account opnieuw geprobeerd tot de foutenteller 5 bereikt. Als de fout aangeeft dat de account permanent is gedeactiveerd, wordt deze rechtstreeks ingesteld op Quarantine.<br /> </td> 
+   <td> De account die aan het adres is gekoppeld, is niet meer actief. Wanneer de Internet Access Provider (IAP) een lange periode van inactiviteit detecteert, kan deze de account van de gebruiker sluiten. Leveringen aan het adres van de gebruiker zijn dan onmogelijk. Als de account tijdelijk is uitgeschakeld vanwege een inactiviteit van zes maanden en nog steeds kan worden geactiveerd, wordt de status Met fouten toegewezen en wordt de account opnieuw geprobeerd tot de foutenteller 5 bereikt. Als de foutensignalen dat de rekening permanent wordt gedeactiveerd, zal het direct aan Quarantine worden geplaatst.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adres in quarantaine </td> 
    <td> Hard </td> 
    <td> 9 </td> 
-   <td> Het adres is in quarantaine geplaatst.<br /> </td> 
+   <td> Het adres werd geplaatst in quarantaine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adres niet opgegeven </td> 
    <td> Hard </td> 
    <td> 7 </td> 
-   <td> Er wordt geen adres voor de ontvanger opgegeven.<br /> </td> 
+   <td> Geen adres wordt gegeven voor de ontvanger.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adres van slechte kwaliteit </td> 
@@ -81,7 +81,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Op de lijst met ongewenste personen staan adres </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Het adres werd toegevoegd aan de lijst van gewezen personen op het tijdstip van verzending. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en systemen naar de Adobe Campaign Quarantine-lijst.<br /> </td> 
+   <td> Het adres werd toegevoegd aan de lijst van gewezen personen op het tijdstip van verzending. Deze status wordt gebruikt voor het invoeren van gegevens van externe lijsten en externe systemen in de lijst van de Quarantaine van Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Besturingsadres </td> 
@@ -105,43 +105,43 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Uitgesloten na arbitrage </td> 
    <td> Genegeerd </td> 
    <td> 12 </td> 
-   <td> De ontvanger werd uitgesloten door een typologische regel van het type "arbitrage".<br /> </td> 
+   <td> De ontvanger werd uitgesloten door een "arbitrage"type campagnetypologieregel.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uitgesloten door een SQL-regel </td> 
    <td> Genegeerd </td> 
    <td> 11 </td> 
-   <td> De ontvanger werd uitgesloten door een "SQL"regel van de campagnetypologie.<br /> </td> 
+   <td> De ontvanger werd uitgesloten door een "SQL"regel van het type campagnetypologie.<br /> </td> 
   </tr> 
   <tr> 
    <td> Ongeldig domein </td> 
    <td> Zacht </td> 
    <td> 2 </td> 
-   <td> Het domein van het e-mailadres is onjuist of bestaat niet meer. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Hierna wordt de record ingesteld op Quarantine-status en wordt het niet opnieuw geprobeerd.<br /> </td> 
+   <td> Het domein van het e-mailadres is onjuist of bestaat niet meer. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Na dit, zal het verslag aan de status van de Quarantaine worden geplaatst en zal geen retry volgen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postbus vol </td> 
    <td> Zacht </td> 
    <td> 5 </td> 
-   <td> De brievenbus van deze gebruiker is volledig en kan niet meer berichten goedkeuren. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Hierna wordt de record ingesteld op de status Quarantaine en wordt de levering niet opnieuw geprobeerd.<br /> Dit type fout wordt beheerd door een schoonmaakproces, het adres wordt geplaatst aan een geldige status na 30 dagen.<br /> Waarschuwing: als het adres automatisch uit de lijst van quarantined adressen moet worden verwijderd, moet de technische workflow voor het opschonen van databases zijn gestart.<br /> </td> 
+   <td> De brievenbus van deze gebruiker is volledig en kan niet meer berichten goedkeuren. Dit profiel wordt opnieuw geactiveerd tot het aantal fouten 5 is. Hierna wordt de record ingesteld op de status Quarantaine en wordt de levering niet opnieuw geprobeerd.<br /> Dit type fout wordt beheerd door een opschoonproces. Het adres wordt na 30 dagen ingesteld op een geldige status.<br /> Waarschuwing: als u wilt dat het adres automatisch wordt verwijderd uit de lijst met in quarantaine geplaatste adressen, moet de technische workflow voor het opschonen van databases worden gestart.<br /> </td> 
   </tr> 
   <tr> 
    <td> Niet verbonden </td> 
    <td> Genegeerd </td> 
    <td> 6 </td> 
-   <td> De mobiele telefoon van de ontvanger is uitgeschakeld of is niet verbonden met het netwerk wanneer het bericht wordt verzonden.<br /> </td> 
+   <td> De mobiele telefoon van de ontvanger wordt uitgezet of niet verbonden met het netwerk wanneer het bericht wordt verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Niet gedefinieerd </td> 
    <td> Niet gedefinieerd </td> 
    <td> 0 </td> 
-   <td> Het adres is in kwalificatie omdat de fout nog niet is verhoogd. Dit type van fout komt voor wanneer een nieuw foutenbericht door de server wordt verzonden: het kan een geïsoleerde fout zijn, maar als het opnieuw voorkomt, stijgt de foutenteller, die de technische teams zal waarschuwen. Zij kunnen dan berichtanalyse uitvoeren en deze fout kwalificeren, via <span class="uicontrol">Administratie</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Beheer van niet-te leveren items</span> knooppunt in de boomstructuur.<br /> </td> 
+   <td> Het adres is in kwalificatie omdat de fout nog niet is verhoogd. Dit type van fout komt voor wanneer een nieuw foutenbericht door de server wordt verzonden: het kan een geïsoleerde fout zijn, maar als het opnieuw voorkomt, stijgt de foutenteller, die de technische teams zal waarschuwen. Zij kunnen berichtanalyse dan uitvoeren en deze fout kwalificeren, via het <span class="uicontrol"> Beleid </span> / <span class="uicontrol"> Campaign Management </span> / <span class="uicontrol"> niet te leveren de knoop van het Beheer </span> in de boomstructuur.<br /> </td> 
   </tr> 
   <tr> 
    <td> Niet in aanmerking komend voor de voorstellen </td> 
    <td> Genegeerd </td> 
    <td> 16 </td> 
-   <td> De begunstigde kwam bij de levering niet in aanmerking voor de aanbiedingen.<br /> </td> 
+   <td> De ontvanger kwam niet in aanmerking voor de aanbiedingen in de levering.<br /> </td> 
   </tr> 
   <tr> 
    <td> Geweigerd </td> 
@@ -153,7 +153,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Beperkte doelgrootte </td> 
    <td> Genegeerd </td> 
    <td> 17 </td> 
-   <td> De maximale leveringsgrootte is bereikt voor de ontvanger.<br /> </td> 
+   <td> De maximumleveringsgrootte werd bereikt voor de ontvanger.<br /> </td> 
   </tr> 
   <tr> 
    <td> Onbevoegd adres </td> 
@@ -171,26 +171,26 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Gebruiker onbekend </td> 
    <td> Hard </td> 
    <td> 1 </td> 
-   <td> Het adres bestaat niet. Voor dit profiel worden geen verdere leveringen uitgevoerd.<br /> </td> 
+   <td> Het adres bestaat niet. Er worden geen verdere leveringen uitgevoerd voor dit profiel.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Retourneert na een tijdelijke leverfout {#retries-after-a-delivery-temporary-failure}
 
-Als een bericht mislukt door een **Zacht** of **Genegeerd** De fout die tijdelijk is, zal het opnieuw proberen tijdens de leveringsduur worden uitgevoerd.
+Als een bericht wegens a **Zacht** of **genegeerde** fout ontbreekt die tijdelijk is, zullen de pogingen tijdens de leveringsduur worden uitgevoerd.
 
 >[!NOTE]
 >
->Tijdelijk niet-geleverde berichten kunnen alleen worden gerelateerd aan een **Zacht** of **Genegeerd** fout, maar niet **Hard** fout (zie [Typen leveringsfouten en redenen](#delivery-failure-types-and-reasons)).
+>Tijdelijk kunnen de ongeleverde berichten slechts met a **Zacht** of **worden verwant genegeerde** fout, maar niet a **Vaste** fout (zie [ de mislukkingstypes en redenen van de Levering ](#delivery-failure-types-and-reasons)).
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md), worden de instellingen voor opnieuw proberen in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor ontvangen of hybride installaties, als u aan [ Uitgebreide MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor installaties op locatie en gehoste/hybride installaties die de oude Campagne MTA gebruiken, om de duur van een levering te wijzigen, ga naar de geavanceerde parameters van het leveringsmalplaatje en specificeer de gewenste duur op het overeenkomstige gebied. Zie [Geldigheidsduur definiëren](steps-sending-the-delivery.md#defining-validity-period).
+Voor installaties op locatie en gehoste/hybride installaties die de oude Campagne MTA gebruiken, om de duur van een levering te wijzigen, ga naar de geavanceerde parameters van het leveringsmalplaatje en specificeer de gewenste duur op het overeenkomstige gebied. Zie [ Definiërend geldigheidsperiode ](steps-sending-the-delivery.md#defining-validity-period).
 
-De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje. Zie [Opnieuw proberen configureren](steps-sending-the-delivery.md#configuring-retries).
+De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje. Zie [ vormen opnieuw probeert ](steps-sending-the-delivery.md#configuring-retries).
 
 ## Synchrone en asynchrone fouten {#synchronous-and-asynchronous-errors}
 
@@ -201,13 +201,13 @@ Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het 
 
   >[!NOTE]
   >
-  >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
+  >De configuratie van de stuiterende brievenbus is gedetailleerd in [ deze sectie ](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-  De [feedbacklus](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) werkt als stuiterende e-mails. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van gewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van gewezen personen in (**NmsAddress**) quarantainetabel en niet in de (**NmsRecipient**) tabel met ontvangers.
+  De [ terugkoppelt lijn ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) werkt als stuitende e-mails. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van gewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van gewezen personen in de (**NmsAddress**) quarantainelijst en niet in de (**NmsRecipient**) ontvankelijke lijst.
 
   >[!NOTE]
   >
-  >Het klachtenbeheer wordt nader beschreven in het [Leverbaarheidsbeheer](about-deliverability.md) sectie.
+  >Het beheer van de klacht is gedetailleerd in de [ het beheerssectie van de Levering ](about-deliverability.md).
 
 ## Bounce mail management {#bounce-mail-management}
 
@@ -219,43 +219,43 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md), worden de meeste regels voor e-mailbeheer niet meer gebruikt. Zie [deze sectie](#email-management-rules)voor meer informatie.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie [deze sectie](#email-management-rules)voor meer informatie.
 
 ### Bounce mail-kwalificatie {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md):
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd:
 >
->* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** tabel wordt niet meer gebruikt voor **synchroon** foutberichten over leveringsfout. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
+>* De stuitkwalificaties in de **[!UICONTROL Delivery log qualification]** lijst worden niet meer gebruikt voor **synchrone** de foutenmeldingen van de leveringsmislukking. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
 >
->* **Asynchroon** De grenzen worden nog gekwalificeerd door het inMail proces door **[!UICONTROL Inbound email]** regels. Zie voor meer informatie [E-mailbeheerregels](#email-management-rules).
+>* **Asynchrone** stuitingen worden nog gekwalificeerd door het inMail proces door de **[!UICONTROL Inbound email]** regels. Voor meer op dit, zie [ E-mailbeheersregels ](#email-management-rules).
 >
->* Voor instanties die gebruikmaken van de verbeterde MTA **zonder webhaken** de **[!UICONTROL Inbound email]** De regels zullen ook worden gebruikt om de synchrone stuiterende e-mails die uit Verbeterde MTA komen te verwerken, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
+>* Voor instanties die Uitgebreide MTA **zonder Webhooks** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
 
 Voor installaties op locatie en de gehoste/hybride installaties die de oude Campagne MTA gebruiken, wanneer de levering van een e-mail ontbreekt, ontvangt de de leveringsserver van Adobe Campaign een foutenmelding van de overseinenserver of de verre DNS server. De lijst met fouten bestaat uit tekenreeksen in het bericht dat door de externe server wordt geretourneerd. De types en de redenen van mislukkingen worden toegewezen aan elk foutenbericht.
 
-Deze lijst is beschikbaar via de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** knooppunt. Het bevat alle regels die Adobe Campaign gebruikt om leveringsfouten te kwalificeren. Het is niet-limitatief en wordt regelmatig door Adobe Campaign bijgewerkt en kan ook door de gebruiker worden beheerd.
+Deze lijst is beschikbaar via het knooppunt **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** . Het bevat alle regels die Adobe Campaign gebruikt om leveringsfouten te kwalificeren. Het is niet-limitatief en wordt regelmatig door Adobe Campaign bijgewerkt en kan ook door de gebruiker worden beheerd.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-Het bericht dat door de externe server wordt geretourneerd bij de eerste instantie van dit fouttype, wordt weergegeven in het dialoogvenster **[!UICONTROL First text]** kolom van de **[!UICONTROL Delivery log qualification]** tabel. Als deze kolom niet wordt getoond, klik **[!UICONTROL Configure list]** rechts onder aan de lijst om deze te selecteren.
+Het bericht dat door de externe server wordt geretourneerd bij de eerste instantie van dit fouttype, wordt weergegeven in de kolom **[!UICONTROL First text]** van de tabel **[!UICONTROL Delivery log qualification]** . Als deze kolom niet wordt weergegeven, klikt u op de knop **[!UICONTROL Configure list]** rechts onder aan de lijst om deze te selecteren.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert dit bericht om de variabele inhoud (zoals id&#39;s, datums, e-mailadressen, telefoonnummers, enz.) te verwijderen. en geeft het gefilterde resultaat weer in de **[!UICONTROL Text]** kolom. De variabelen worden vervangen door **`#xxx#`**, behalve adressen die worden vervangen door **`*`**.
+Adobe Campaign filtert dit bericht om de variabele inhoud (zoals id&#39;s, datums, e-mailadressen, telefoonnummers, enz.) te verwijderen. en geeft het gefilterde resultaat weer in de kolom **[!UICONTROL Text]** . De variabelen worden vervangen door **`#xxx#`** , behalve adressen die worden vervangen door **`*`** .
 
 Dit proces staat toe om alle mislukkingen van het zelfde type samen te brengen en veelvoudige ingangen voor gelijkaardige fouten in de de kwalificatielijst van het Logboek van de Levering te vermijden.
 
 >[!NOTE]
 >
->De **[!UICONTROL Number of occurrences]** wordt het aantal exemplaren van het bericht in de lijst weergegeven. Het is beperkt tot 100 000 voorvallen. U kunt het veld bewerken als u het bijvoorbeeld opnieuw wilt instellen.
+>In het veld **[!UICONTROL Number of occurrences]** wordt het aantal exemplaren van het bericht in de lijst weergegeven. Het is beperkt tot 100 000 voorvallen. U kunt het veld bewerken als u het bijvoorbeeld opnieuw wilt instellen.
 
 Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 
 * **[!UICONTROL To qualify]** : de stuiterende post kan niet worden gekwalificeerd. De kwalificatie moet aan het leveringsteam worden toegewezen om efficiënte platformleverantie te waarborgen. Zolang het niet gekwalificeerd is, wordt de stuiterende post niet gebruikt om de lijst van e-mailbeheerregels te verrijken.
-* **[!UICONTROL Keep]** : de stuiterende post werd gekwalificeerd en zal door worden gebruikt **Vernieuwen voor leverbaarheid** te vergelijken met de bestaande regels voor e-mailbeheer en de lijst te verrijken.
-* **[!UICONTROL Ignore]** : de stuiterende post wordt genegeerd door de Campagne MTA, betekenend dat deze stuit nooit het adres van de ontvanger zal veroorzaken om in quarantined te zijn. Het wordt niet gebruikt door de **Vernieuwen voor leverbaarheid** en wordt niet naar clientinstanties verzonden.
+* **[!UICONTROL Keep]** : de stuiterende post werd gekwalificeerd en zal door **worden gebruikt verfrissen zich voor leverability** werkschema om aan bestaande e-mailbeheerregels worden vergeleken en de lijst verrijken.
+* **[!UICONTROL Ignore]** : de stuiterende post wordt genegeerd door de Campagne MTA, betekenend dat deze stuit nooit het adres van de ontvanger zal veroorzaken om in quarantined te zijn. Het zal niet door **worden gebruikt verfrissen zich voor leverability** werkschema en het zal niet naar cliëntinstanties worden verzonden.
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -267,15 +267,15 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md), worden de meeste regels voor e-mailbeheer niet meer gebruikt. Zie de volgende secties voor meer informatie.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie de volgende secties voor meer informatie.
 
-De regels van de post worden betreden via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** knooppunt. De regels voor e-mailbeheer worden weergegeven in het onderste gedeelte van het venster.
+E-mailregels zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** . De regels voor e-mailbeheer worden weergegeven in het onderste gedeelte van het venster.
 
 ![](assets/tech_quarant_rules.png)
 
 >[!NOTE]
 >
->De standaardparameters van het platform worden gevormd in de plaatsingstovenaar. Zie voor meer informatie [deze sectie](../../installation/using/deploying-an-instance.md).
+>De standaardparameters van het platform worden gevormd in de plaatsingstovenaar. Voor verdere informatie, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md).
 
 De standaardregels zijn als volgt.
 
@@ -292,36 +292,36 @@ For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](s
 
 For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
 
-De **[!UICONTROL Inbound email]** De regels bevatten de lijst van karakterkoorden die door verre servers kunnen zijn teruggekeerd en die u de fout laten kwalificeren (**Hard**, **Zacht** of **Genegeerd**).
+De **[!UICONTROL Inbound email]** regels bevatten de lijst van karakterkoorden die door verre servers kunnen zijn teruggekeerd en die u de fout (**Vast** laten kwalificeren, **Zacht** of **Genevend**).
 
-Wanneer een e-mailbericht mislukt, geeft de externe server een stuiterend bericht weer naar het adres dat is opgegeven in het dialoogvenster [platformparameters](../../installation/using/deploying-an-instance.md). Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan toe één van de drie [fouttypen](#delivery-failure-types-and-reasons).
+Wanneer een e-mail ontbreekt, keert de verre server een stuitbericht aan het adres terug dat in de [ platformparameters ](../../installation/using/deploying-an-instance.md) wordt gespecificeerd. Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan één van de drie [ foutentypes ](#delivery-failure-types-and-reasons) toe.
 
 >[!NOTE]
 >
->De gebruiker kan zijn eigen regels tot stand brengen. Wanneer u een pakket importeert en gegevens bijwerkt via het dialoogvenster **Vernieuwen voor leverbaarheid** worden de door de gebruiker gemaakte regels overschreven.
+>De gebruiker kan zijn eigen regels tot stand brengen. Wanneer het invoeren van een pakket en wanneer het bijwerken van gegevens via **verfrissen zich voor leverability** werkschema, worden de user-created regels beschreven.
 
-Zie voor meer informatie over stuiterende mailkwalificatie [deze sectie](#bounce-mail-qualification).
+Voor meer bij stuiterende postkwalificatie, zie [ deze sectie ](#bounce-mail-qualification).
 
 #### Domeinbeheer {#domain-management}
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md)de **[!UICONTROL Domain management]** regels worden niet meer gebruikt. **DKIM (DomainKeys Identified Mail)**-e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Deze ondertekent niet met **Afzender-id**, **DomainKeys** of **S/MIME**, tenzij anderszins opgegeven op Enhanced MTA-niveau.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)**-e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Deze ondertekent niet met **Afzender-id**, **DomainKeys** of **S/MIME**, tenzij anderszins opgegeven op Enhanced MTA-niveau.
 
-Voor on-premisse installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, past de het overseinenserver van Adobe Campaign één enkele toepassing toe **Domeinbeheer** op alle domeinen.
+Voor op-gebouw installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, past de het overseinenserver van Adobe Campaign één enkele **regel van het beheer van 0} Domein op alle domeinen toe.**
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
-* U kunt kiezen of u bepaalde id- en coderingsstandaarden wilt activeren om de domeinnaam te controleren, bijvoorbeeld **Afzender-id**, **DomainKeys**, **DKIM**, en **S/MIME**.
-* De **SMTP-relay** De parameters laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
+* U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals **identiteitskaart van de Afzender**, **DomainKeys**, **DKIM**, en **S/MIME** te controleren.
+* De **SMTP relais** parameters laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
 
-Als uw berichten in Vooruitzichten met worden getoond **[!UICONTROL on behalf of]** in het verzendadres ervoor zorgen dat u uw e-mails niet ondertekent met **Afzender-id**, de verouderde standaard voor e-mailverificatie van Microsoft. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het betreffende vakje en de contactpersoon uit [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
+Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u uw e-mails met **identiteitskaart van de Afzender** niet ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie wordt toegelaten, uncheck de overeenkomstige doos en contacteer [ de Zorg van de Klant van de Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
 
 #### MX-beheer {#mx-management}
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](sending-with-enhanced-mta.md)de **[!UICONTROL MX management]** de leveringsproductieregels worden niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** regels van de leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
 Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA:
 
@@ -331,4 +331,4 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 
 * Om MX beheersregels te vormen, plaats eenvoudig een drempel en selecteer bepaalde parameters SMTP. A **drempel** is een grens die als foutenpercentage wordt berekend waarvoorbij alle berichten naar een specifiek domein worden geblokkeerd. In het algemeen geldt dat het verzenden van e-mails voor minimaal 300 berichten drie uur wordt geblokkeerd als het foutenpercentage 90% bereikt.
 
-Raadpleeg voor meer informatie over MX-beheer [deze sectie](../../installation/using/email-deliverability.md#mx-configuration).
+Voor meer op MX beheer, verwijs naar [ deze sectie ](../../installation/using/email-deliverability.md#mx-configuration).

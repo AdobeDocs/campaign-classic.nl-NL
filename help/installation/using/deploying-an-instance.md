@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Voor meer informatie over de verschillende implementaties raadpleegt u de [Hostmodellen](../../installation/using/hosting-models.md) van [deze pagina](../../installation/using/capability-matrix.md).
+>Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
 
-## Implementatiewizard {#deployment-wizard}
+## implementatiewizard {#deployment-assistant}
 
 Adobe Campaign biedt een grafische assistent, beschikbaar in de Adobe Campaign-clientconsole, om de parameters van de instantie te definiëren waarmee u verbinding gaat maken.
 
-Om de plaatsingstovenaar te beginnen, selecteer **Gereedschappen > Geavanceerd > Implementatiewizard**.
+Om de plaatsingstovenaar te beginnen, selecteer **Hulpmiddelen > Geavanceerd > plaatsingstovenaar**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -52,8 +52,8 @@ De eerste stap van de plaatsingstovenaar laat u algemene informatie over de inst
 In de onderste sectie van het venster kunt u de opties selecteren die moeten worden geactiveerd.
 
 * **[!UICONTROL Customer identifier used in billing]** : dit kan de naam van de instantie en het versienummer zijn.
-* **[!UICONTROL Common name of the customer]** : Voer een tekenreeks in met de naam van uw bedrijf. Deze informatie kan in de unsubscription verbindingen worden gebruikt.
-* **[!UICONTROL Namespace]** : Voer een korte id in kleine letters in. Het doel is om bij een upgrade onderscheid te maken tussen uw specifieke configuratie en de fabrieksconfiguratie. De standaardnaamruimte is **cus** - voor de klant.
+* **[!UICONTROL Common name of the customer]** : voer een tekenreeks in met de naam van uw bedrijf. Deze informatie kan in de unsubscription verbindingen worden gebruikt.
+* **[!UICONTROL Namespace]** : voer een korte id in kleine letters in. Het doel is om bij een upgrade onderscheid te maken tussen uw specifieke configuratie en de fabrieksconfiguratie. Standaard namespace is **concentreert** - voor klant.
 
 ### Technische opties {#technical-options}
 
@@ -61,10 +61,10 @@ In de onderste sectie van het venster kunt u de opties selecteren die moeten wor
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Email channel]** : om e-maillevering te activeren. Zie [Parameters e-mailkanaal](#email-channel-parameters).
-* **[!UICONTROL Tracking]** : Om het volgen van de doelbevolking (opent en klikt) toe te laten. Zie [Configuratie bijhouden](#tracking-configuration).
-* **[!UICONTROL Managing bounced emails]** : Hiermee definieert u het POP-account dat wordt gebruikt om binnenkomende e-mail op te halen. Zie [Beknopte e-mails beheren](#managing-bounced-emails).
-* **[!UICONTROL LDAP integration]** : Gebruikersverificatie configureren via een LDAP-directory. Zie [Verbinding maken via LDAP](../../installation/using/connecting-through-ldap.md).
+* **[!UICONTROL Email channel]** : voor het activeren van de e-maillevering. Verwijs naar [ parameters van het E-mailkanaal ](#email-channel-parameters).
+* **[!UICONTROL Tracking]** : Als u het bijhouden van de doelpopulatie wilt inschakelen (opent en klikt). Verwijs naar [ het Volgen configuratie ](#tracking-configuration).
+* **[!UICONTROL Managing bounced emails]** : Als u het POP-account wilt definiëren waarmee inkomende e-mail wordt opgehaald. Verwijs naar [ het Leiden van bweere-mails ](#managing-bounced-emails).
+* **[!UICONTROL LDAP integration]** : gebruikersverificatie configureren via een LDAP-directory. Verwijs naar [ het Verbinden door LDAP ](../../installation/using/connecting-through-ldap.md).
 
 ## Parameters e-mailkanaal {#email-channel-parameters}
 
@@ -78,16 +78,16 @@ Deze parameters kunnen in leveringsmalplaatjes, en individueel voor elke leverin
 
 Geef de volgende parameters op:
 
-* **[!UICONTROL Sender name]** : Voer de naam van de afzender in.
-* **[!UICONTROL Sender address]** : Voer het e-mailadres van de afzender in. Wanneer u e-mailberichten verzendt vanuit Adobe Campaign, worden de **Adres van afzender** de brievenbus wordt niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Meer informatie over aanbevolen werkwijzen voor levering [in deze documentatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
+* **[!UICONTROL Sender name]** : voer de naam van de afzender in.
+* **[!UICONTROL Sender address]** : voer het e-mailadres van de afzender in. Wanneer het verzenden van e-mails van Adobe Campaign, wordt de **brievenbus van het Adres van de afzender** niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Leer meer over de beste praktijken van de Leverbaarheid [ in deze documentatie ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html) {_blank}.
 
-* **[!UICONTROL Reply address text]** : Voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** knop.
-* **[!UICONTROL Reply address]** : Voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** in hun e-mailclientsoftware. Het doel van de **Reactieadres** het veld is wanneer de ontvanger op een ander adres moet antwoorden dan het veld **Adres van afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Het zou bijvoorbeeld een steunbrievenbus kunnen zijn, `customer-care@customer.com`, waar e-mails worden gelezen en waarop wordt gereageerd.
+* **[!UICONTROL Reply address text]** : voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt.
+* **[!UICONTROL Reply address]** : voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt in de software van zijn e-mailclient. Het doel van het **gebied van het Adres van de Reactie** is wanneer u de ontvanger aan een verschillend adres wilt antwoorden dan het **Adres van de Afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Dit kan bijvoorbeeld een ondersteuningsmailbox zijn, `customer-care@customer.com` , waar e-mails worden gelezen en waarop wordt gereageerd.
 
-* **[!UICONTROL Error address]** : Voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het zou bijvoorbeeld een stuiterende brievenbus kunnen zijn, `errors@customer.com`. Dit adres kan voor levering of in de leveringsmalplaatjes, van worden veranderd **SMTP** tabblad van de eigenschappen van de leverings-/leveringssjabloon. [Meer informatie](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
+* **[!UICONTROL Error address]** : voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het kan bijvoorbeeld een stuiterende postbus zijn, `errors@customer.com` . Dit adres kan voor een levering of in de leveringsmalplaatjes, van het **SMTP** lusje van de levering/leveringsmalplaatjeeigenschappen worden veranderd. [Meer informatie](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
 
 
-Daarnaast kunt u de opdracht **maskers** geoorloofd voor het afzenderadres en het foutenadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
+Naast dit, kunt u de **maskers** specificeren die voor het afzenderadres en het foutenadres worden gemachtigd. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
 
 >[!NOTE]
 >
@@ -101,15 +101,15 @@ Daarnaast kunt u de opdracht **maskers** geoorloofd voor het afzenderadres en he
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-In de Adobe Campaign-database moeten alle e-mailadressen als volgt worden gemaakt: `x@y.z`. De **x**, **y** en **z** tekens mogen niet leeg zijn en mogen geen niet-geautoriseerde tekens bevatten.
+In de Adobe Campaign-database moeten alle e-mailadressen als volgt worden gemaakt: `x@y.z` . **x**, **y** en **z** karakters moeten niet leeg zijn en moeten niet geoorloofde karakters omvatten.
 
 Hier kunt u de geoorloofde tekens (&#39;gegevensbeleid&#39;) definiëren in het e-mailveld van de database. Tekens die niet in de lijst staan, worden verboden en daarom geweigerd wanneer gegevens in de database worden ingevoerd via de interface, via een webformulier en ook wanneer gegevens worden geïmporteerd.
 
-Er zijn twee lijsten beschikbaar: **Alleen Europees** of **Alleen VS**. Indien nodig kunnen andere tekens worden toegevoegd.
+Twee lijsten zijn beschikbaar: **slechts Europees** of **slechts US**. Indien nodig kunnen andere tekens worden toegevoegd.
 
 ### Leveringsparameters {#delivery-parameters}
 
-De **Geavanceerde parameters...** de verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
+De **Geavanceerde parameters...** verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -118,34 +118,34 @@ In dit venster kunt u voor alle e-mailcampagnes de opties voor levering en behee
 De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Delivery duration of messages]** : Na deze tijd wordt de levering gestopt (standaard 5 dagen).
-* **[!UICONTROL Online resources validity duration]** : Tijd waarvoor informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te produceren.
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt geen contact opgenomen met de ontvangers van de lijst van gewezen personen.
+* **[!UICONTROL Online resources validity duration]** : tijd waarvoor de informatie van het ontvankelijke profiel wordt gehouden om spiegelpagina&#39;s te produceren.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt geen contact opgenomen met ontvangers van lijsten van gewezen personen.
 * **[!UICONTROL Automatically ignore doubles]** : Wanneer deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
 >[!NOTE]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)de **[!UICONTROL Delivery duration of the messages]** wordt alleen gebruikt als ingesteld op **3,5 dagen of minder**. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, zal **[!UICONTROL Delivery duration of the messages]** slechts als reeks aan **3.5 dagen of minder** worden gebruikt. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 
 ### Parameters opnieuw proberen {#retry-parameters}
 
-De informatie over terugvorderingen is te vinden in het **Herstelperioden** en **Aantal terugvorderingen** velden: wanneer een ontvanger onbereikbaar is, bijvoorbeeld wanneer hun inbox vol is, probeert het programma standaard vijf keer contact met hen te maken, met een interval van één uur tussen elke poging (tijdens de maximale leveringstijd). U kunt deze waarden naar wens wijzigen.
+De informatie over terugvorderingen wordt verstrekt in de **periodes van de Terugwinning** en **Aantal teruggekregen** gebieden: wanneer een ontvanger onbereikbaar is, bijvoorbeeld als hun inbox volledig is, door gebrek zal het programma proberen contacterend hen 5 keer, met een interval van één uur tussen elke poging (tijdens de maximumleveringstijd). U kunt deze waarden naar wens wijzigen.
 
 >[!NOTE]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), worden de parameters voor het opnieuw proberen van de campagne niet meer gebruikt. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de het opnieuw proberen van de Campagne parameters niet meer gebruikt. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
 ### Quarantaine-parameters {#quarantine-parameters}
 
 De configuratieopties voor quarantines zijn als volgt:
 
 * **[!UICONTROL Duration between two significant errors]** : voer een waarde in (&quot;1d&quot; standaard: 1 dag) om de tijd te definiëren die de toepassing wacht voordat de foutenteller bij een fout wordt verhoogd,
-* **[!UICONTROL Maximum number of errors before quarantine]** : zodra deze waarde is bereikt, wordt het e-mailadres in quarantaine geplaatst (standaard &quot;5&quot;: het adres wordt in quarantined weergegeven op de zesde fout). Dit betekent dat het contact automatisch van volgende bezorgingen wordt uitgesloten.
+* **[!UICONTROL Maximum number of errors before quarantine]** : zodra deze waarde is bereikt, wordt het e-mailadres in quarantaine geplaatst (standaard &quot;5&quot;: het adres wordt in quarantaine geplaatst bij de zesde fout). Dit betekent dat het contact automatisch van volgende bezorgingen wordt uitgesloten.
 
 ## Beknopte e-mails beheren {#managing-bounced-emails}
 
 Bounce mail is uiterst belangrijk om leveringsfouten te kwalificeren. Deze fouten worden gecategoriseerd in NP@I zodra de regels hun oorzaak hebben bepaald.
 
-Deze stap is alleen beschikbaar als de **Email channel** en **Bounce mail** beheeropties worden geselecteerd in de eerste fase van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
+Deze stap is slechts beschikbaar als het **E-mailkanaal** en **Bounce post** beheersopties in het eerste stadium van de plaatsingstovenaar worden geselecteerd. Verwijs naar [ Algemene parameters ](#general-parameters).
 
 In dit werkgebied kunt u instellingen definiëren voor het beheer van stuiterende berichten.
 
@@ -155,36 +155,36 @@ In dit werkgebied kunt u instellingen definiëren voor het beheer van stuiterend
 
 Geef de parameters op waarmee u verbinding wilt maken met de account voor het ophalen van inkomende e-mails.
 
-* **[!UICONTROL Label]** : Naam die alle hieronder vermelde parameters bevat,
-* **[!UICONTROL Server]** : Server gebruikt om stuiterende post (inkomende post) terug te winnen,
+* **[!UICONTROL Label]** : naam die alle onderstaande parameters bevat,
+* **[!UICONTROL Server]** : server die wordt gebruikt om stuiterende post (inkomende post) op te halen,
 * **[!UICONTROL Security]** : Selecteer indien nodig **[!UICONTROL SSL]** in de vervolgkeuzelijst,
 * **[!UICONTROL Port]** : serverpoort (doorgaans 110),
-* **[!UICONTROL Account]** : Naam van de rekening die voor stuiterende post wordt gebruikt,
-* **[!UICONTROL Password]** : Het wachtwoord dat aan het account is gekoppeld.
+* **[!UICONTROL Account]** : naam van de account die wordt gebruikt voor stuiterende berichten,
+* **[!UICONTROL Password]** : wachtwoord dat aan het account is gekoppeld.
 
-Als de POP-instellingen zijn opgegeven, klikt u op **Testen** om ervoor te zorgen dat zij correct zijn.
+Zodra de montages van POP worden gespecificeerd, klik **Test** om ervoor te zorgen zij correct zijn.
 
 ### Onverwerkte stuitberichten {#unprocessed-bounce-mails}
 
-Bounces worden automatisch afgehandeld door Adobe Campaign, waarbij de regels worden toegepast die in de **Beheer > Campaign Management > Beheer van niet-te leveren items > Kwalificatie van leveringslogboek** knooppunt. Raadpleeg voor meer informatie hierover [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+De grenzen worden behandeld automatisch door Adobe Campaign, die de regels toepassen in het **Beleid > Campaign Management > het Beheer van Niet te leveren stoffen > de kwalificatieknooppunt van het Logboek van de Levering** worden vermeld. Voor meer op dit, verwijs naar [ Stuiteren postbeheer ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
 
-* **[!UICONTROL Forwarding address]** : Vul dit veld in om alle foutberichten (verwerkt of onverwerkt) die door het Adobe Campaign-platform zijn verzameld, over te brengen naar een derde.
-* **[!UICONTROL Address for errors]** : Vul dit veld in om alleen de foutberichten die tijdens het inMail-proces niet in aanmerking kwamen, naar een ander adres over te brengen.
-* **[!UICONTROL SMTP server]** : Server wordt gebruikt om onverwerkte e-mails over stuiterende berichten te verzenden.
+* **[!UICONTROL Forwarding address]** : vul dit veld in om alle foutberichten (verwerkt of onverwerkt) die door het Adobe Campaign-platform zijn verzameld, over te brengen naar een derde.
+* **[!UICONTROL Address for errors]** : vul dit veld in om naar een adres van een derde alleen de foutberichten te verzenden die tijdens het InMail-proces niet in aanmerking kwamen.
+* **[!UICONTROL SMTP server]** : de server die wordt gebruikt voor het verzenden van onverwerkte e-mails met bounce.
 
 >[!IMPORTANT]
 >
->Om onverwerkte stuiterende e-mails door te sturen, raadt de Adobe alleen aan de **[!UICONTROL Address for errors]** veld. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
+>Als u onverwerkte e-mails met bounce wilt doorsturen, wordt u door de Adobe aangeraden het veld **[!UICONTROL Address for errors]** alleen in te vullen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
 ## Configuratie bijhouden {#tracking-configuration}
 
 In de volgende stap kunt u tracering voor de instantie configureren. De instantie moet worden gedeclareerd en geregistreerd bij de volgende server(s).
 
-Deze stap wordt alleen aangeboden als de **Email channel** en **Tekstspatiëring** de opties worden geselecteerd in de eerste pagina van de plaatsingstovenaar. Zie [Algemene parameters](#general-parameters).
+Deze stap wordt slechts aangeboden wanneer het **E-mailkanaal** en **het Volgen** opties in de eerste pagina van de plaatsingstovenaar worden geselecteerd. Verwijs naar [ Algemene parameters ](#general-parameters).
 
-Voor meer gedetailleerde informatie over webtracking (tracingsmodus, tags maken en invoegen...) raadpleegt u [dit document](../../configuration/using/about-web-tracking.md).
+Voor meer gedetailleerde informatie over Web het volgen (het volgen wijze, het creëren van en het opnemen van markeringen..), verwijs naar [ dit document ](../../configuration/using/about-web-tracking.md).
 
 ### Werkwijze {#operating-principle}
 
@@ -196,11 +196,11 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
   Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
 
-  Raadpleeg voor meer informatie hierover [Trackingserver](#tracking-server).
+  Voor meer op dit, verwijs naar [ het Volgen server ](#tracking-server).
 
 * Zodra URLs wordt gevormd, moet u het volgen toelaten. Hiervoor moet de instantie zijn geregistreerd op de volgende server(s).
 
-  Raadpleeg voor meer informatie hierover [Tekstspatiëring opslaan](#saving-tracking).
+  Voor meer op dit, verwijs naar [ het Opslaan het volgen ](#saving-tracking).
 
 ### Trackingserver {#tracking-server}
 
@@ -209,19 +209,19 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 Om de efficiëntie van het bijhouden van wijzigingen op dit exemplaar te garanderen, moet de volgende informatie worden weergegeven:
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
-* **[!UICONTROL External URL]** en/of **[!UICONTROL Secure external URL]** : Voer de URL voor omleiding in die moet worden gebruikt in de e-mail die moet worden verzonden.
+* **[!UICONTROL External URL]** en/of **[!UICONTROL Secure external URL]** : voer de URL voor omleiding in die moet worden gebruikt in de e-mail die moet worden verzonden.
 * **[!UICONTROL Internal URL(s)]** : URL&#39;s die alleen door de Adobe Campaign-server worden gebruikt om contact op te nemen met de trackingserver(s) voor het verzamelen van logbestanden en het uploaden van de URL&#39;s. Het is niet nodig deze aan de instantie te koppelen.
 
   Als u geen URL opgeeft, wordt standaard de URL voor bijhouden gebruikt.
 
 Met de architectuur van de middelste-sourcing, kunt u het volgen beheer externaliseren. Dit doet u als volgt:
 
-1. Selecteer de optie **[!UICONTROL Externalize tracking management]** : hiermee kunt u een server voor midsourcing gebruiken als een trackingserver.
-1. Vul de **[!UICONTROL External account]** en **[!UICONTROL Instance name]** velden die verbinding kunnen maken met de server voor midsourcing.
+1. Selecteer de optie **[!UICONTROL Externalize tracking management]** : hiermee kunt u een mid-sourcingserver gebruiken als trackingserver.
+1. Vul de velden **[!UICONTROL External account]** en **[!UICONTROL Instance name]** in om verbinding te kunnen maken met de server voor midsourcing.
 
-   Raadpleeg voor meer informatie [Midden-sourcingserver](../../installation/using/mid-sourcing-server.md).
+   Voor meer informatie, verwijs naar [ Midden-sourcende server ](../../installation/using/mid-sourcing-server.md).
 
-1. Klik op de knop **[!UICONTROL Enable the tracking instance]** om verbinding met de server goed te keuren.
+1. Klik op de knop **[!UICONTROL Enable the tracking instance]** om de verbinding met de server goed te keuren.
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
@@ -229,19 +229,19 @@ Met de architectuur van de middelste-sourcing, kunt u het volgen beheer external
 
 Wanneer de URL&#39;s zijn gevuld, moet u de trackingserver registreren.
 
-Klik op de koppeling **Registratie op de trackingserver(s)** en selecteer vervolgens een van de beschikbare opties.
+Klik de verbinding **Registratie op de volgende server(s)** en selecteer dan één van de beschikbare opties.
 
 ![](assets/s_ncs_install_deployment_wiz_09.png)
 
 Er zijn drie mogelijke soorten architectuur voor het uitvoeren van het volgen:
 
-1. **Ondersteuning voor tekstspatiëring toevoegen in een bestaande instantie**
+1. **voegt steun voor het volgen in een bestaande instantie** toe
 
    Deze keuze is van toepassing als de instantie al voor andere behoeften is gemaakt (MTA-server, enz.) op servers die als volgende servers worden gebruikt.
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
-   Voer het wachtwoord voor de **internal** account op de omleidingsserver(s) om de trackinginstantie te configureren.
+   Ga het wachtwoord voor de **interne** rekening op redirection server(s) in om de volgende instantie te vormen.
 
    >[!NOTE]
    >
@@ -249,35 +249,35 @@ Er zijn drie mogelijke soorten architectuur voor het uitvoeren van het volgen:
 
    Geef de naam van de instantie en het wachtwoord op.
 
-1. **Een nieuwe instantie maken die is gewijd aan bijhouden**
+1. **creeer een nieuwe instantie specifiek aan het volgen**
 
    Deze optie is handig wanneer trackingsinstanties zijn gereserveerd voor tracering en geen andere toepassingsmodules hebben.
 
    ![](assets/s_ncs_install_deployment_wiz_10.png)
 
-   Voer het wachtwoord voor de **internal** account op de omleidingsserver(s) om de trackinginstantie te configureren.
+   Ga het wachtwoord voor de **interne** rekening op redirection server(s) in om de volgende instantie te vormen.
 
    >[!NOTE]
    >
    >Als er meerdere trackingservers zijn geconfigureerd, moeten ze allemaal hetzelfde wachtwoord gebruiken.
 
-   Geef de naam van de instantie, het wachtwoord en eventuele bijbehorende DNS-maskers op, zoals **[!UICONTROL Campaign*]**.
+   Geef de naam van de instantie, het wachtwoord en eventuele bijbehorende DNS-maskers op, zoals **[!UICONTROL Campaign*]** .
 
-1. **Valideer een volgende instantie reeds pre-gevormd voor u**
+1. **bevestigt reeds een volgende instantie pre-gevormd voor u**
 
-   Deze optie wordt gebruikt wanneer u niet het wachtwoord voor **internal** account; in dit geval is een account voor bijhouden vooraf geconfigureerd op de volgende server(s). Voer het wachtwoord in van de traceringsaccount van de omleidingsserver(s) om de volgende instantie te valideren.
+   Deze optie wordt gebruikt wanneer u niet het wachtwoord voor de **interne** rekening hebt; In dit geval, wordt een volgende rekening preconfigured voor u op de volgende server(s). Voer het wachtwoord in van de traceringsaccount van de omleidingsserver(s) om de volgende instantie te valideren.
 
    ![](assets/s_ncs_install_deployment_wiz_17.png)
 
    Geef de naam op van de instantie die moet worden gevalideerd.
 
-Klikken **Goedkeuren** om het opnameproces met de volgende server te beginnen.
+Klik **goedkeuren** om het opnameproces met de volgende server te beginnen.
 
 Terug in het vorige venster, bevestigt een bericht de registratie op het volgende serverniveau:
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-De parameters die zijn gekoppeld aan URL-zoekopdrachten **mag niet worden gewijzigd** voor een standaardinstallatie. Neem voor alle andere parameters contact op met de Adobe.
+De parameters verbonden aan URL onderzoeken **moeten niet** voor een standaardinstallatie worden gewijzigd. Neem voor alle andere parameters contact op met de Adobe.
 
 ## Parameters van mobiele kanalen {#mobile-channel-parameters}
 
@@ -293,25 +293,25 @@ In de volgende stap kunt u de standaardinstellingen definiëren voor leveringen 
 
 Voer de volgende gegevens in:
 
-* **[!UICONTROL Label]** : Voer een naam in voor dit SMS/Wap Push-account. Bijvoorbeeld, kunt u wensen om de naam van uw router te gebruiken.
-* Voor de **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** velden: neem contact op met het prepress-bureau voor de vereiste instellingen.
+* **[!UICONTROL Label]** : voer een naam in voor dit SMS/Wap Push-account. Bijvoorbeeld, kunt u wensen om de naam van uw router te gebruiken.
+* Voor de velden **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]** en **[!UICONTROL Notification Endpoint]** neemt u contact op met het prepress-bureau voor de vereiste instellingen.
 
 ### Parameters van verzonden SMS {#parameters-of-sms-sent}
 
-In de **Prioriteit** vervolgkeuzelijst: selecteer &quot;Normaal&quot;, &quot;Hoog&quot; of &quot;Dringend&quot; om de lijst toe te passen op de berichten die moeten worden verzonden.
+In de **Prioriteit** drop-down lijst: Selecteer &quot;Normaal&quot;, &quot;Hoog&quot;of &quot;Dringend&quot;om het op de te verzenden berichten toe te passen.
 
 ### Geavanceerde parameters {#advanced-parameters}
 
-De **Geavanceerde parameters...** Via de koppeling hebt u toegang tot de opties voor opnieuw proberen en quarantaine.
+De **Geavanceerde parameters...** verbinding laat u toe om tot de herprobeer en quarantaineopties toegang te hebben.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
-Informatie over pogingen is beschikbaar in het dialoogvenster **Herhalingsperiode** en **Aantal pogingen** velden: Wanneer een mobiel niet bereikbaar is, probeert het programma standaard vijf keer opnieuw met intervallen van ten minste 15 minuten (voor de maximale leveringsperiode). Deze waarden kunnen aan uw behoeften worden aangepast.
+De informatie over herpogingen is beschikbaar in de **Periode van herpogingen** en **Aantal herpogingen** gebieden: Wanneer een mobiel onbereikbaar is, door gebrek, zal het programma opnieuw 5 keer met intervallen van minstens 15 minuten (voor de maximumleveringsperiode) proberen. Deze waarden kunnen aan uw behoeften worden aangepast.
 
 De configuratieopties voor quarantines zijn als volgt:
 
-* **[!UICONTROL Time between two significant errors]** : Voer een standaardwaarde (standaard &quot;1d&quot;: dag) in om de tijd te definiëren die de toepassing wacht voordat de foutenteller voor een fout wordt verhoogd.
-* **[!UICONTROL Maximum number of errors before quarantine]** : Zodra deze waarde is bereikt, wordt het mobiele nummer in quarantaine geplaatst (standaard &quot;5&quot;: het getal wordt bij de zesde fout in quarantaine geplaatst). Dit betekent dat het contact automatisch van toekomstige leveringen zal worden uitgesloten.
+* **[!UICONTROL Time between two significant errors]** : voer een standaardwaarde (standaard &quot;1d&quot;: dag) in om de tijd te definiëren die de toepassing wacht voordat de foutenteller voor een fout wordt verhoogd.
+* **[!UICONTROL Maximum number of errors before quarantine]** : Zodra deze waarde is bereikt, wordt het mobiele nummer in quarantaine geplaatst (standaard &quot;5&quot;: het nummer wordt in quarantaine geplaatst bij de zesde fout). Dit betekent dat het contact automatisch van toekomstige leveringen zal worden uitgesloten.
 
 ## Regionale instellingen {#regional-settings}
 
@@ -319,8 +319,8 @@ In dit stadium kunt u voorkeuren voor gegevensbeleid opnemen.
 
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
-* **[!UICONTROL Consider all phone numbers as international ones]** : Als deze optie is geselecteerd, past de toepassing de internationale indeling toe op telefoonnummers (het voorvoegsel van het land is dan verplicht omdat het aantal cijfers niet wordt gecontroleerd voordat de opmaak wordt toegepast). Als deze optie niet is geselecteerd, moet u het internationale telefoonnummer zelf voorvoegsel &quot;+&quot; of &quot;00&quot; geven.
-* **[!UICONTROL Store all phone numbers using the international format]** : Deze optie heeft alleen betrekking op **binnenland** telefoonaantallen die worden ingevoerd of uitgegeven. Bepaal of u een binnenlands formaat (zoals 425 555 0150) of het internationale formaat (bijvoorbeeld +1 425 555 0150) wilt gebruiken
+* **[!UICONTROL Consider all phone numbers as international ones]** : Wanneer deze optie is geselecteerd, past de toepassing de internationale indeling toe op telefoonnummers (het landvoorvoegsel is dan verplicht omdat het aantal cijfers niet wordt gecontroleerd voordat de opmaak wordt toegepast). Als deze optie niet is geselecteerd, moet u het internationale telefoonnummer zelf voorvoegsel &quot;+&quot; of &quot;00&quot; geven.
+* **[!UICONTROL Store all phone numbers using the international format]**: Deze optie heeft slechts betrekking op **binnenlandse** telefoonaantallen die worden ingevoerd of uitgegeven. Bepaal of u een binnenlands formaat (zoals 425 555 0150) of het internationale formaat (bijvoorbeeld +1 425 555 0150) wilt gebruiken
 
 ## Toegang vanaf internet {#access-from-the-internet}
 
@@ -365,11 +365,11 @@ Om van buitenaf gezien te kunnen worden, moeten de afbeeldingen die worden gebru
 
 Voor deze stap, moet u ingaan:
 
-1. De nieuwe URL voor de openbare bron. Zie voor meer informatie de [URL van openbare bronnen](#public-resources-url) sectie.
-1. De modus voor beelddetectie in een levering. Raadpleeg voor meer informatie de [Afbeeldingsdetectie leveren](#delivery-image-detection) sectie.
-1. Publicatieopties Raadpleeg voor meer informatie de [Publicatiemodi](#publication-modes) sectie.
+1. De nieuwe URL voor de openbare bron. Voor meer informatie verwijs naar de [ Openbare middelen URL ](#public-resources-url) sectie.
+1. De modus voor beelddetectie in een levering. Voor meer informatie, verwijs naar de [ sectie van de het beeldopsporing van de Levering ](#delivery-image-detection).
+1. Publicatieopties Voor meer informatie, verwijs naar de [ wijzen van de Publicatie ](#publication-modes) sectie.
 
-Openbare middelen zijn toegankelijk via **Beheer > Bronnen > Online > Openbare bronnen** knooppunt van de boomstructuur Adobe Campaign. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
+De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > Openbare middelen** knoop van de boom van Adobe Campaign. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -379,34 +379,34 @@ In het eerste veld kunt u het begin opgeven van de URL die wordt gebruikt voor d
 
 In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek of een ander lokaal beeld of beeld worden opgeslagen op een server worden opgeslagen.
 
-* Voor e-mailafbeeldingen **https://** server **/res/img** URL.
+* Voor e-mailbeelden, **https://** server **/res/img** URL.
 
   Deze waarde kan voor elke levering worden overschreven.
 
-* Voor openbare middelen, URL **https://** server **/res/** instance ****waar **instance**is de naam van de instantie tracking.
+* Voor openbare middelen, is URL **https://** server **/res/** instantie ****waar **instantie**de naam van de volgende instantie is.
 
 ### Afbeeldingsdetectie leveren {#delivery-image-detection}
 
 In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek of een ander lokaal beeld of beeld worden opgeslagen op een server worden opgeslagen.
 
-Het veld **URL-maskers** Hiermee kunt u een lijst opgeven met URL-maskers die moeten worden overgeslagen wanneer afbeeldingen automatisch worden geüpload. Als u bijvoorbeeld afbeeldingen gebruikt die zijn opgeslagen op een site die van buitenaf toegankelijk is, met name op een website, kunt u de site-URL in dit veld invoeren.
+Het gebied **maskers URL** laat u de lijst van te slaan maskers URL specificeren wanneer het uploaden van beelden automatisch. Als u bijvoorbeeld afbeeldingen gebruikt die zijn opgeslagen op een site die van buitenaf toegankelijk is, met name op een website, kunt u de site-URL in dit veld invoeren.
 
 ![](assets/s_ncs_install_deployment_wiz_img_mask.png)
 
 U kunt meerdere URL-maskers opgeven door een komma te gebruiken om ze van elkaar te scheiden.
 
-* Voor informatie over het gebruik en het beheer van afbeeldingen in e-mails raadpleegt u [deze sectie](../../delivery/using/defining-the-email-content.md#adding-images).
-* In de leveringstovenaar, zullen de beelden die van deze URLs worden geroepen de status &quot;Genegeerd&quot;hebben.
+* Voor informatie bij het gebruiken van en het beheren van beelden in e-mail, verwijs naar [ deze sectie ](../../delivery/using/defining-the-email-content.md#adding-images).
+* In de leveringsassistent hebben de afbeeldingen die vanuit deze URL&#39;s worden aangeroepen de status &quot;Genegeerd&quot;.
 
 ### Publicatiemodi {#publication-modes}
 
-In het onderste gedeelte van de wizard kunt u de publicatieopties van openbare bronnen en afbeeldingen selecteren.
+In het onderste gedeelte van de assistent kunt u de publicatieopties van openbare bronnen en afbeeldingen selecteren.
 
 De volgende publicatiemodi zijn beschikbaar:
 
 * Volgserver(s)
 
-  De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [Configuratie bijhouden](#tracking-configuration).
+  De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [ het Volgen configuratie ](#tracking-configuration).
 
 * Andere Adobe Campaign-servers
 
@@ -420,7 +420,7 @@ De volgende publicatiemodi zijn beschikbaar:
 
   Voer vervolgens het wachtwoord in.
 
-  De parameters van de toegewijde server(s) worden gegeven in de **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** en **[!UICONTROL Instance name]** velden.
+  De parameters van de toegewezen server(s) worden gegeven in de velden **[!UICONTROL Media URL(s)]** , **[!UICONTROL Password]** en **[!UICONTROL Instance name]** .
 
   ![](assets/s_ncs_install_images_upload_b.png)
 
@@ -437,27 +437,27 @@ De volgende publicatiemodi zijn beschikbaar:
      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
      ```
 
-     waar `[INSTALL]` is het toegangspad naar de installatiemap van Adobe Campaign.
+     waarbij `[INSTALL]` het toegangspad naar de installatiemap van Adobe Campaign is.
 
    * Controleer in Unix of het script uitvoerbaar is.
 
-Voor afbeeldingen moet het bestand deze kopiëren uit de map &quot;images&quot; die via het dialoogvenster **NmsDelivery_ImageSubDirectory** aan een of meer frontale servers. Deze servers slaan de afbeeldingen op zodat ze toegankelijk zijn via de nieuwe geconfigureerde URL.
+Voor beelden, moet het hen van de &quot;beelden&quot;omslag kopiëren die via de **wordt gespecificeerd NmsDelivery_ImageSubDirectory** optie aan één of meerdere frontale servers. Deze servers slaan de afbeeldingen op zodat ze toegankelijk zijn via de nieuwe geconfigureerde URL.
 
-In het geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in de `$(XTK_INSTALL_DIR)/var/res/img/ directory`. De bijbehorende URL is: **`https://server/res/img`**.
+In het geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in de `$(XTK_INSTALL_DIR)/var/res/img/ directory` . De overeenkomende URL is de volgende: **`https://server/res/img`** .
 
-`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. De bijbehorende URL is als volgt: **`https://server/res/instance`** waarbij instantie de naam van de instantie tracking is.
+`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. De bijbehorende URL is als volgt: **`https://server/res/instance`** waarbij instance de naam van de volgende instantie is.
 
 >[!NOTE]
 >
->Het is mogelijk om de openbare folder van de middelopslag te veranderen. Raadpleeg voor meer informatie hierover [Openbare middelen beheren](#managing-public-resources).
+>Het is mogelijk om de openbare folder van de middelopslag te veranderen. Voor meer op dit, verwijs naar [ het Leiden openbare middelen ](#managing-public-resources).
 
 ### Openbare bronnen synchroniseren {#synchronizing-public-resources}
 
-Met deze functionaliteit kunt u **openbare middelen synchroniseren** op meerdere reserveservers.
+Deze functionaliteit staat u toe om openbare middelen **op veelvoudige reserve-servers te synchroniseren**.
 
 Als een openbaar middel niet aanwezig op de volgende server is of als het middel een 404 fout terugkeert, zal de volgende server proberen om het middel op één van reserve-servers te vinden.
 
-Het verklaren en het vormen reserve-servers moeten in de server van de Marketing worden gedaan **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Het verklaren en het vormen reserve-servers moeten in het dossier van Server van de Marketing **serverConf.xml** worden gedaan. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
 **Verklaring**
 
@@ -469,7 +469,7 @@ Het verklaren en het vormen reserve-servers moeten in de server van de Marketing
 
 **Configuratie**
 
-Voor elk openbaar middel dat moet worden gesynchroniseerd, moet u een statusattribuut aan toevoegen `<url>` in het `<relay>` deel:
+Voor elke openbare bron die moet worden gesynchroniseerd, moet u een statuskenmerk toevoegen aan het element `<url>` in het `<relay>` -deel:
 
 Het kenmerk status kan een van de volgende drie waarden hebben:
 
@@ -477,7 +477,7 @@ Het kenmerk status kan een van de volgende drie waarden hebben:
 
 * normal: Existing behavior (without synchronization)
 
-* zwarte lijst: de URL wordt toegevoegd aan de lijst van gewezen personen als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de URL die zich in de lijst van gewezen personen bevindt, wordt gedefinieerd door een **timeout** kenmerk waarvan de standaardwaarde 60 seconden is.
+* zwarte lijst: de URL wordt toegevoegd aan de lijst van gewezen personen als er een fout van 404 wordt geretourneerd. De duur (in seconden) van URL die in de lijst van gewezen personen is wordt bepaald door a **onderbrekings** attribuut de waarvan standaardwaarde 60s is.
 
 De uit-van-de-doos configuratie van de synchronisatie is:
 
@@ -519,4 +519,4 @@ Het laatste stadium van de plaatsingstovenaar laat u het automatische zuiveren v
 
 ![](assets/s_ncs_install_deployment_wiz_16.png)
 
-Gegevens worden automatisch verwijderd via de workflow voor het opschonen van databases. Raadpleeg voor meer informatie over het configureren en gebruiken van deze workflow en informatie over de verwijderde items [document](../../production/using/database-cleanup-workflow.md).
+Gegevens worden automatisch verwijderd via de workflow voor het opschonen van databases. Voor meer op om dit werkschema en details op de geschrapte punten te vormen en in werking te stellen, verwijs naar dit [ document ](../../production/using/database-cleanup-workflow.md).

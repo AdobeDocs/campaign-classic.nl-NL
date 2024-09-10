@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 4%
@@ -20,13 +20,13 @@ ht-degree: 4%
 
 ## Drempels controleren {#monitoring-thresholds}
 
-U kunt de waarschuwingsdrempels (oranje) en alarmdrempels (rood) van de indicatoren vormen die in verschijnen **Serviceniveau van Message Center** en **Verwerkingstijd van Message Center** rapporten (zie [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)).
+U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in het **de dienstniveau van het Centrum van het Bericht** en **de verwerkingstijd van het Centrum van het Bericht** rapporten verschijnen (verwijs naar [ de transactionele overseinenrapporten van de Toegang ](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Open de implementatiewizard op het tabblad **uitvoeringsinstantie**.
+1. Open de plaatsingstovenaar op de **uitvoeringsinstantie**.
 
-1. Ga naar de **[!UICONTROL Message Center]** pagina.
+1. Ga naar de pagina **[!UICONTROL Message Center]** .
 
 1. Gebruik de pijlen om de drempels te veranderen.
 
@@ -34,13 +34,13 @@ Hiervoor voert u de volgende stappen uit:
 
 >[!NOTE]
 >
->Het aantal gebeurtenissen in wachtrij wordt weergegeven in het dialoogvenster [Systeemindicatoren](../../production/using/monitoring-processes.md#system-indicators) op de pagina voor procesbewaking van Adobe Campaign. Raadpleeg voor meer informatie over de implementatiewizard [deze sectie](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Het aantal gebeurtenissen die in rij in behandeling zijn wordt getoond in de [ sectie van de indicatoren van het Systeem ](../../production/using/monitoring-processes.md#system-indicators) van de het procescontrole pagina van Adobe Campaign. Voor meer informatie over de plaatsingstovenaar, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 ## Gebeurtenissen opschonen {#purging-events}
 
-U kunt de [implementatiewizard](../../production/using/database-cleanup-workflow.md#deployment-wizard) om te vormen hoe lang de gegevens in het gegevensbestand moeten worden opgeslagen.
+U kunt de [ plaatsingstovenaar ](../../production/using/database-cleanup-workflow.md#deployment-assistant) gebruiken om te vormen hoe lang het gegeven in het gegevensbestand moet worden opgeslagen.
 
-Gebeurtenissen worden automatisch door de [Workflow voor opschonen van databases](../../production/using/database-cleanup-workflow.md). Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
+De ontruiming van de gebeurtenis wordt uitgevoerd automatisch door het [ opschoonwerkschema van het Gegevensbestand ](../../production/using/database-cleanup-workflow.md). Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
 
 Gebruik de pijlen naar wens om de instellingen voor leegmaken te wijzigen.
 
@@ -52,7 +52,7 @@ Instellingen voor het opschonen van gebeurtenissen op een uitvoeringsinstantie:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Voor meer informatie over de workflow voor het opschonen van databases raadpleegt u [deze sectie](../../production/using/database-cleanup-workflow.md).
+Voor meer op het werkschema van de gegevensbestandschoonmaak, zie [ deze sectie ](../../production/using/database-cleanup-workflow.md).
 
 
 ## Technische workflows {#technical-workflows}
@@ -63,11 +63,11 @@ De diverse technische werkschema&#39;s met betrekking tot transactioneel oversei
 
 ### Workflows voor besturingsinstanties {#control-instance-workflows}
 
-Voor de controleinstantie, of u één of verscheidene uitvoeringsinstanties hebt geregistreerd, moet u één archiveringswerkschema voor elke **[!UICONTROL Message Center execution instance]** externe rekening. Klik op de knop **[!UICONTROL Create the archiving workflow]** om de workflow te maken en te starten.
+In de besturingsinstantie moet u één archiveringsworkflow maken voor elke **[!UICONTROL Message Center execution instance]** externe account, ongeacht of u een of meerdere uitvoeringsinstanties hebt geregistreerd. Klik op de knop **[!UICONTROL Create the archiving workflow]** om de workflow te maken en te starten.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Deze workflows zijn vervolgens toegankelijk via de **Beheer > Productie > Berichtencentrum** map. Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
+Deze werkschema&#39;s kunnen dan van het **Beleid > de Productie > het Centrum van het Bericht** omslag worden betreden. Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
 
 <!--**Minimal architecture**
 
@@ -77,10 +77,10 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### Workflows voor uitvoeringsinstanties {#execution-instance-workflows}
 
-Op de uitvoeringsinstantie(s) kunnen de technische workflows voor transactiemeldingen worden geopend vanuit de **Beheer > Productie > Berichtencentrum** map. Je moet ze gewoon starten. De workflows in de lijst zijn:
+Op de uitvoeringsinstantie(s), kunnen de technische werkschema&#39;s voor transactioneel overseinen van het **Beleid > de Productie > het Centrum van het Bericht** omslag worden betreden. Je moet ze gewoon starten. De workflows in de lijst zijn:
 
-* **[!UICONTROL Processing batch events]** (interne naam: **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderbreken voordat deze aan een berichtsjabloon zijn gekoppeld.
-* **[!UICONTROL Processing real time events]** (interne naam: **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij opsplitsen voordat deze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Processing batch events]** (interne naam: **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderbreken voordat ze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Processing real time events]** (interne naam: **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij onderbreken voordat deze aan een berichtsjabloon worden gekoppeld.
 * **[!UICONTROL Update event status]** (interne naam: **[!UICONTROL updateEventStatus]** ): met deze workflow kunt u een status aan de gebeurtenis toewijzen.
 
   De volgende gebeurtenisstatussen zijn beschikbaar:
@@ -94,9 +94,9 @@ Op de uitvoeringsinstantie(s) kunnen de technische workflows voor transactiemeld
 
 ### Workflowschema voor archivering
 
-Wijzig de **archiveringsworkflow** programma dat op de controleinstantie loopt. Anders kunnen sommige gegevens die worden opgehaald uit de uitvoeringsinstantie, verloren gaan.
+Vermijd het wijzigen van het **archiverende werkschema** dat op de controleinstantie loopt. Anders kunnen sommige gegevens die worden opgehaald uit de uitvoeringsinstantie, verloren gaan.
 
-Als u wel het schema van de archiveringsworkflow wijzigt, moet u ook de **traceringsworkflow** programma op de uitvoeringsinstantie om het archiveringswerkschema op de controleinstantie aan te passen.
+Als u het het archiveren werkschema wijzigt, moet u het **volgen werkschema** programma op de uitvoeringsinstantie ook veranderen om het archiveringswerkschemaprogramma op de controleinstantie aan te passen.
 
 ## Multibranding configureren {#configuring-multibranding}
 
@@ -104,7 +104,7 @@ In deze sectie wordt één oplossing beschreven voor het configureren van URL&#3
 
 ### Vereisten {#prerequisites}
 
-* Alle gastheren moeten aan het configuratiedossier van de instantie worden toegevoegd (`config-<instance>.xml`).
+* Alle gastheren moeten aan het configuratiedossier van de instantie (`config-<instance>.xml`) worden toegevoegd.
 * Aan elk merk moet een subdomein worden toegewezen.
 * U moet een HTTPS-certificaat voor alle merken hebben als de webtracering wordt uitgevoerd op HTTPS-pagina&#39;s.
 
@@ -118,7 +118,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >Leer hoe u een type externe account voor uitvoeringsinstanties kunt maken in [deze sectie](../../message-center/using/configuring-instances.md#control-instance).
+   >Leer hoe te om een uitvoerinstantie tot stand te brengen externe rekening in [ deze sectie ](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Breid het schema nms:extAccount uit om het volgen URL toe te voegen:
 
@@ -129,7 +129,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >Leer hoe u een bestaand schema kunt uitbreiden in het dialoogvenster [Een schema uitbreiden](../../configuration/using/extending-a-schema.md) sectie.
+   >Leer hoe te om een bestaand schema in [ uit te breiden Uitbreidend een schema ](../../configuration/using/extending-a-schema.md) sectie.
 
 1. Wijzig de vorm nms:extAccount:
 
@@ -167,12 +167,12 @@ Voor de controleinstantie, moet u leveringsmalplaatjes en externe rekeningen ver
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Eén extern account maken per merk met dezelfde interne naam als op het tabblad [uitvoeringsinstantie](#execution-instance) (stap 1).
+1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [ uitvoeringsinstantie ](#execution-instance) wordt bepaald (stap 1).
 
 1. Eén standaardleveringssjabloon per merk maken.
 
    >[!NOTE]
    >
-   >    Leer hoe u een leveringssjabloon maakt in [deze sectie](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+   >    Leer hoe te om een leveringsmalplaatje in [ tot stand te brengen deze sectie ](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
 
-1. In de leveringstemplate **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.
+1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.

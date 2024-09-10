@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 1%
@@ -22,18 +22,18 @@ ht-degree: 1%
 
 Bepaalde belangrijke wijzigingen in Adobe Campaign v7 vereisen een specifieke configuratie. Deze configuraties kunnen nodig zijn voor of na het migreren.
 
-Tijdens de migratie **NmsRecipient** tabel wordt opnieuw samengesteld op basis van de schemadefinitie. Eventuele wijzigingen die buiten Adobe Campaign in de SQL-structuur van deze tabel zijn aangebracht, gaan verloren.
+Tijdens de migratie, wordt de **NmsRecipient** lijst herbouwd van de schemadefinitie. Eventuele wijzigingen die buiten Adobe Campaign in de SQL-structuur van deze tabel zijn aangebracht, gaan verloren.
 
 Voorbeeld van te controleren elementen:
 
-* Als u een kolom (of een index) hebt toegevoegd aan de **NmsRecipient** tabel maar u hebt deze niet in het schema gedetailleerd, deze wordt niet opgeslagen.
-* De **tabelruimte** Het attribuut neemt zijn waarden door gebrek terug, met andere woorden die die in de plaatsingstovenaar worden bepaald.
-* Als u een verwijzingsweergave hebt toegevoegd aan de **NmsRecipient** voor het migreren.
+* Als u een kolom (of een index) in de **NmsRecipient** lijst hebt toegevoegd maar u hebt het niet in het schema gedetailleerd, zal dit niet worden bewaard.
+* Het **tabelruimte** attribuut neemt zijn waarden door gebrek terug, met andere woorden die die in de plaatsingstovenaar worden bepaald.
+* Als u een verwijzingsmening aan de **NmsRecipient** lijst hebt toegevoegd, moet u het vóór het migreren schrappen.
 
 
 ## Voor de migratie {#before-the-migration}
 
-Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geconfigureerd. Deze elementen moeten worden aangepakt voordat met de **postupgrade**.
+Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geconfigureerd. Deze elementen moeten worden gericht alvorens **postupgrade** te beginnen.
 
 <!--
 
@@ -59,7 +59,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
 * Wachtwoorden
 
-  U moet de **Beheerder** en **Intern** wachtwoorden. [Meer informatie](../../migration/using/before-starting-migration.md#user-passwords)
+  U moet **Admin** vormen en **Interne** wachtwoorden. [Meer informatie](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,7 +78,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
 ## Na de migratie {#after-the-migration}
 
-Na uitvoering **postupgrade**, de volgende elementen controleren en configureren:
+Na het runnen van **postupgrade**, controleer en vorm de volgende elementen:
 
 * Pagina&#39;s spiegelen
 
@@ -86,11 +86,11 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
   Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. De Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
 
-  Als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog steeds actief zijn) kunt u echter terugkeren naar het oude aanpassingsblok om dit probleem te voorkomen door de optie te wijzigen **[!UICONTROL XtkAcceptOldPasswords]** en stel deze in op **[!UICONTROL 1]**. Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
+  Als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog steeds actief zijn) kunt u echter terugkeren naar het oude aanpassingsblok om dit probleem te voorkomen door de optie **[!UICONTROL XtkAcceptOldPasswords]** te wijzigen en deze in te stellen op **[!UICONTROL 1]** . Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
 
 * Syntaxis
 
-  Als er fouten optreden met betrekking tot de syntaxis, moet u de functie **allowSQLInjection** in de **serverConf.xml** bestand, omdat u dan tijd hebt om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren.
+  Als u om het even welke fouten met betrekking tot de syntaxis, tijdens postupgrade ontmoet, moet u tijdelijk de **allowSQLInjection** optie in het **serverConf.xml** dossier activeren, aangezien dit u tijd geeft om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren.
 
 * Conflicten
 
@@ -102,11 +102,11 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
 * Rapporten
 
-  Alle out-of-box-rapporten gebruiken momenteel de v6.x-renderingengine. Als u JavaScript-code aan de rapporten hebt toegevoegd, kan dit invloed hebben op bepaalde elementen.
+  Alle out-of-box-rapporten gebruiken momenteel de v6.x-renderingengine. Als u JavaScript-code aan de rapporten hebt toegevoegd, kan dit gevolgen hebben voor bepaalde elementen.
 
 * Webtoepassingen
 
-  Na postupgrade, als u om het even welke problemen hebt die met uw geïdentificeerde toepassingen van het Web verbinden, moet u activeren **allowUserPassword** en **sessionTokenOnly** in de **serverConf.xml** bestand. Om veiligheidskwesties te vermijden, moeten deze twee opties opnieuw geactiveerd worden nadat het probleem is opgelost.
+  Na postupgrade, als u om het even welke problemen hebt die met uw geïdentificeerde toepassingen van het Web verbinden, moet u **allowUserPassword** en **sessionTokenOnly** opties in het **serverConf.xml** dossier activeren. Om veiligheidskwesties te vermijden, moeten deze twee opties opnieuw geactiveerd worden nadat het probleem is opgelost.
 
   Afhankelijk van het type van de toepassingen van het Web en hun configuratie, moet u extra manipulaties uitvoeren om ervoor te zorgen zij correct werken.
 
@@ -137,7 +137,7 @@ Na uitvoering **postupgrade**, de volgende elementen controleren en configureren
 
 * Interactie
 
-  Als u **Interactie**, moet u parameters aanpassen na de migratie.
+  Als u **Interactie** gebruikt, moet u om het even welke parameters na de migratie aanpassen.
 
 <!--
 

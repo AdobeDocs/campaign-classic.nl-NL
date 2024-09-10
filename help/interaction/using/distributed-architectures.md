@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -41,7 +41,7 @@ De synchronisatie van aanbiedingen wordt uitgevoerd via pakketten. Bij uitvoerin
 
 Aanbiedingen worden automatisch geïmplementeerd en vervolgens gepubliceerd op uitvoerings- en besturingsinstanties.
 
-Aanbiedingen die zijn verwijderd in de ontwerpomgeving, worden in alle online exemplaren uitgeschakeld. De verouderde voorstellen en de aanbiedingen worden automatisch geschrapt op alle instanties na de purge periode (die in de plaatsingsmedewerker van elke instantie wordt gespecificeerd) en het glijden periode (die in de de typologieregels van inkomende voorstellen wordt gespecificeerd).
+Aanbiedingen die zijn verwijderd in de ontwerpomgeving, worden in alle online exemplaren uitgeschakeld. Verouderde voorstellen en aanbiedingen worden automatisch verwijderd in alle gevallen na de verwijderingsperiode (opgegeven in de implementatiewizard van elke instantie) en de verschuivingsperiode (opgegeven in de typologische regels van de binnenkomende voorstellen).
 
 ![](assets/interaction_powerbooster_schema2.png)
 
@@ -57,15 +57,15 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 ## Pakketconfiguratie {#packages-configuration}
 
-Willekeurige schema-extensies die rechtstreeks zijn gekoppeld aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
+Om het even welke schemauitbreidingen direct verbonden aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
 
 Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: een pakket dat op de besturingsinstanties moet worden geïnstalleerd en een ander pakket dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
 
 >[!NOTE]
 >
->Wanneer u het pakket installeert, **lang** tekstvelden van het dialoogvenster **nms:voorstel** tabel, zoals de propositie-id, wordt **int64** tekstvelden. Dit type gegevens wordt in het dialoogvenster [deze sectie](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wanneer het installeren van het pakket, worden de **lange** typegebieden van **nms:proposition** lijst zoals proposition identiteitskaart, **int64** typegebieden. Dit type van gegevens wordt gedetailleerd in [ deze sectie ](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-De duur van het gegevensbehoud moet op elke instantie (via **[!UICONTROL Data purge]** in de implementatiewizard). Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
+De duur van het gegevensbehoud moet op elke instantie (via het **[!UICONTROL Data purge]** venster in de plaatsingstovenaar) worden gevormd. Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
 
 Op besturingsinstanties:
 
@@ -77,8 +77,8 @@ Op besturingsinstanties:
    * Selecteer **[!UICONTROL Execution instance]**.
    * Schakel de optie **[!UICONTROL Enabled]** in.
    * Voltooi de verbindingsparameters voor de uitvoeringsinstantie.
-   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op het tabblad **[!UICONTROL Initialize connection]** knop.
-   * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, of beide.
+   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op de knop **[!UICONTROL Initialize connection]** klikt.
+   * Controleer het type toepassing dat wordt gebruikt: **[!UICONTROL Message Center]** , **[!UICONTROL Interaction]** of beide.
    * Voer de gebruikte FDA-account in. Een exploitant moet op de uitvoeringsinstanties worden gecreeerd en moet de volgende lees- en schrijfrechten op het gegevensbestand van de betrokken instantie hebben:
 
      ```
@@ -101,7 +101,7 @@ Op besturingsinstanties:
      >
      >Als er een fout optreedt, kunt u de synchronisatieworkflows raadplegen en meldingen aanbieden. Deze zijn te vinden in de technische workflows van de toepassing.
 
-Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal (**[!UICONTROL Taken into account if]** veld).
+Als voor optimalisatie slechts een deel van de marketingdatabase wordt gedupliceerd op de uitvoeringsinstanties, kunt u een beperkt schema opgeven dat is gekoppeld aan de omgeving, zodat gebruikers alleen gegevens kunnen gebruiken die beschikbaar zijn op de uitvoeringsinstanties. U kunt een aanbieding maken met gegevens die niet beschikbaar zijn op uitvoeringsinstanties. Om dit te doen, moet u de regel op de andere kanalen deactiveren door deze regel op het uitgaande kanaal (**[!UICONTROL Taken into account if]** gebied) te beperken.
 
 ![](assets/ita_filtering.png)
 
@@ -113,13 +113,13 @@ Hier is een lijst van onderhoudsopties beschikbaar op de controle instantie:
 >
 >Deze opties mogen alleen voor specifieke onderhoudsbeurten worden gebruikt.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: laatste datum waarop een omgeving is gesynchroniseerd op een bepaalde instantie.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: laatste datum waarop voorstellen uit een bepaald schema zijn gesynchroniseerd van de ene instantie naar de andere.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: de laatste datum waarop een omgeving is gesynchroniseerd op een bepaalde instantie.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: de laatste datum waarop de voorstellen van een bepaald schema van de ene instantie naar de andere zijn gesynchroniseerd.
 * **`NmsInteraction_MapWorkflowId`**: een optie die de lijst bevat van alle gegenereerde synchronisatieworkflows.
 
 De volgende optie is beschikbaar bij uitvoeringsinstanties:
 
-**NmsExecutionInstanceId**: optie met de instantie-id.
+**NmsExecutionInstanceId**: optie die instantiidentiteitskaart bevatten
 
 ## Installatie van pakketten {#packages-installation}
 
@@ -140,7 +140,7 @@ Als uw instantie eerder niet over het interactiepakket beschikte, is er geen mig
 
 Er zijn twee methoden. De eerste (met een werktabel) is iets sneller.
 
-**Werktabel**
+**lijst van het Werk**
 
 ```
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
@@ -158,7 +158,7 @@ CREATE INDEX nmspropositionrcp_recipientidid ON NmsPropositionRcp (irecipientid)
 ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 ```
 
-**Tabel wijzigen**
+**Veranderende Lijst**
 
 ```
 ALTER TABLE nmspropositionrcp
@@ -168,7 +168,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-De grootte van een **Getal** type leidt niet tot waarden of de index wordt opnieuw geschreven. Het is dus onmiddellijk.
+Het uitgeven van de grootte van het type van a **Aantal** leidt niet tot waarden of de index die worden herschreven. Het is dus onmiddellijk.
 
 De uit te voeren query is als volgt:
 

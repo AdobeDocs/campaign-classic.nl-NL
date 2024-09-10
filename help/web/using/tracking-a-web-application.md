@@ -5,7 +5,7 @@ description: Bezoeken aan een webapplicatie bijhouden
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 4%
@@ -33,11 +33,11 @@ De belangrijkste verbeteringen in deze versie zijn:
 
   De belangrijkste indicatoren zijn:
 
-   * **Omrekeningskoers**: aantal personen dat alle stappen van een navigatiepad heeft weergegeven.
-   * **Stuitpercentage**: aantal personen dat alleen de eerste stap heeft getoond
-   * **Conversietrechter**: verliespercentage tussen elke stap.
+   * **het tarief van de Omzetting**: aantal personen die alle stappen van een navigatiepad getoond hebben.
+   * **Stuiteren tarief**: aantal personen die de eerste slechts stap vertoonde
+   * **Trechter van de Omzetting**: verliestarief tussen elke stap.
 
-  Bovendien **Sector** de typegrafiek geeft de populatie weer volgens de bron .
+  Bovendien toont het het type van de a **Sector** grafiek de bevolking volgens zijn bron.
 
 ## Identificerend de verkeersbron {#identifying-the-traffic-source}
 
@@ -60,7 +60,7 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe C
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wanneer een toepassing van het Web gebruikend de inhoudsredacteur van HTML wordt gecreeerd - **Digital Content Editor (DCE)** - tags voor bijhouden worden ingevoegd vanuit het **[!UICONTROL Properties]** tabblad van de editor. Raadpleeg voor meer informatie over de Digital Content Editor (DCE) [deze sectie](about-campaign-html-editor.md).
+Wanneer een toepassing van het Web gebruikend de de inhoudsredacteur van de HTML wordt gecreeerd - **de Digitale Redacteur van de Inhoud (DCE)** - volgende markeringen worden opgenomen van het **[!UICONTROL Properties]** lusje van de redacteur. Voor meer informatie over de Digitale Redacteur van de Inhoud (DCE), verwijs naar [ deze sectie ](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -68,6 +68,6 @@ Wanneer het gebruiken van de interface van het Web, moet het volgen markeringen 
 
 ![](assets/trackers_3.png)
 
-De **[!UICONTROL Display blocks]** Met dit pictogram kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
+Met het pictogram **[!UICONTROL Display blocks]** kunt u het aantal trackingtags weergeven dat voor de pagina is gedefinieerd.
 
 ![](assets/trackers_4.png)
