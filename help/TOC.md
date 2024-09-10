@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: ht
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [Persoon/personen en ontvangers](reporting/using/person-people-recipients.md)
    + Populaties analyseren {#analyzing-populations}
       + [Beschrijvende analyse](reporting/using/about-descriptive-analysis.md)
-      + [De wizard voor beschrijvende analyse gebruiken](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [De beschrijvende analyseassistent gebruiken](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Rapportinstellingen](reporting/using/processing-a-report.md)
       + [Gebruiksscenario’s](reporting/using/use-cases.md)
    + Nieuwe rapporten maken {#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [Simulatietracking](interaction/using/simulation-tracking.md)
    + Een aanbieding verzenden {#delivering-an-offer}
       + [Outbound-kanalen](interaction/using/about-outbound-channels.md)
-      + [Een aanbieding integreren via de wizard](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Integreer een aanbieding via de medewerker](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Een aanbieding integreren via een workflow](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Unitaire interacties {#unitary-interactions}
       + [Inbound-kanalen](interaction/using/about-inbound-channels.md)
@@ -641,7 +641,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -772,7 +772,7 @@ ht-degree: 100%
       + [Schema’s filteren](configuration/using/filtering-schemas.md)
       + [PII-weergave beperken](configuration/using/restricting-pii-view.md)
       + [De databasestructuur bijwerken](configuration/using/updating-the-database-structure.md)
-      + [Wizard Nieuw veld](configuration/using/new-field-wizard.md)
+      + [Nieuwe veldassistent](configuration/using/new-field-wizard.md)
       + [Structuur van een gegevensschema](configuration/using/structure-of-a-data-schema.md)
       + [Schema’s opnieuw genereren](configuration/using/regenerating-schemas.md)
       + [Voorbeelden van schemabewerking](configuration/using/examples-of-schemas-edition.md)
