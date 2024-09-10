@@ -6,7 +6,7 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 1%
@@ -25,7 +25,7 @@ U kunt invoerformulieren maken en wijzigen:
 * U kunt de fabrieksinvoerformulieren wijzigen die standaard worden geleverd. De fabrieksinvoerformulieren zijn gebaseerd op de fabrieksgegevensschema&#39;s.
 * U kunt aangepaste invoerformulieren maken op basis van gegevensschema&#39;s die u definieert.
 
-Forms zijn entiteiten van `xtk:form` type. U kunt de invoerformulierstructuur bekijken in het dialoogvenster `xtk:form` schema. Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** in het menu. Meer informatie over [formulierstructuur](form-structure.md).
+Forms zijn entiteiten van het type `xtk:form` . U kunt de structuur van het invoerformulier weergeven in het `xtk:form` -schema. Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** in het menu om dit schema weer te geven. Lees meer over [ vormstructuur ](form-structure.md).
 
 Als u invoerformulieren wilt openen, kiest u **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** in het menu:
 
@@ -37,7 +37,7 @@ Als u formulieren wilt ontwerpen, bewerkt u de XML-inhoud in de XML-editor:
 
 [Meer informatie](form-structure.md#formatting).
 
-Als u een voorbeeld van een formulier wilt bekijken, klikt u op de knop **[!UICONTROL Preview]** tab:
+Klik op het tabblad **[!UICONTROL Preview]** als u een voorbeeld van een formulier wilt bekijken:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
@@ -53,11 +53,11 @@ U kunt verschillende typen invoerformulieren maken. Het formuliertype bepaalt ho
 
 * Contentmanagement
 
-  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [use case](../../delivery/using/use-case-creating-content-management.md).
+  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [ gebruiksgeval ](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
-* Wizard
+* Assistent
 
   Dit formulier bestaat uit meerdere zwevende schermen die in een bepaalde reeks zijn geordend. Gebruikers navigeren van het ene scherm naar het andere. [Meer informatie](form-structure.md#wizards).
 
@@ -98,17 +98,17 @@ Gebruik containers om inhoud in formulieren te ordenen:
 * U kunt velden groeperen in secties.
 * U kunt pagina&#39;s toevoegen aan formulieren met meerdere pagina&#39;s.
 
-Als u een container wilt invoegen, gebruikt u de `<container>` element. [Meer informatie](form-structure.md#containers).
+Als u een container wilt invoegen, gebruikt u het element `<container>` . [Meer informatie](form-structure.md#containers).
 
 #### Velden groeperen
 
 Gebruik containers om invoervelden te groeperen in georganiseerde secties.
 
-Gebruik dit element om een sectie in een formulier in te voegen: `<container type="frame">`. Als u een sectietitel wilt toevoegen, kunt u desgewenst de opdracht `label` kenmerk.
+Als u een sectie in een formulier wilt invoegen, gebruikt u het volgende element: `<container type="frame">` . Als u een sectietitel wilt toevoegen, gebruikt u het attribuut `label` .
 
 Syntaxis: `<container type="frame" label="`*section_title*`"> […] </container>`
 
-In dit voorbeeld definieert een container de **Maken** , die de **[!UICONTROL Created by]** en **[!UICONTROL Name]** invoervelden:
+In dit voorbeeld, bepaalt een container de **sectie van de Aanmaak**, die uit **[!UICONTROL Created by]** en **[!UICONTROL Name]** inputgebieden bestaat:
 
 ```xml
 <form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
@@ -128,7 +128,7 @@ In dit voorbeeld definieert een container de **Maken** , die de **[!UICONTROL Cr
 
 Voor formulieren met meerdere pagina&#39;s gebruikt u een container om een formulierpagina te maken.
 
-In dit voorbeeld worden containers voor de **Algemeen** en **Details** pagina&#39;s van een formulier:
+Dit voorbeeld toont containers voor **Algemene** en **Details** pagina&#39;s van een vorm:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -149,13 +149,13 @@ Gebruik containers om formulieren in andere formulieren te nesten. [Meer informa
 
 ## Verwijzingen naar afbeeldingen
 
-Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** in het menu.
+Als u afbeeldingen wilt zoeken, kiest u **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** in het menu.
 
-Als u een afbeelding wilt koppelen aan een element in het formulier, bijvoorbeeld een pictogram, kunt u een verwijzing naar een afbeelding toevoegen. Gebruik de `img` in het dialoogvenster `<container>` element.
+Als u een afbeelding wilt koppelen aan een element in het formulier, bijvoorbeeld een pictogram, kunt u een verwijzing naar een afbeelding toevoegen. Gebruik bijvoorbeeld het kenmerk `img` in het element `<container>` .
 
 Syntaxis: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-In dit voorbeeld worden verwijzingen naar de `book.png` en `detail.png` afbeeldingen van de `ncm` naamruimte:
+In dit voorbeeld worden verwijzingen naar de `book.png` - en `detail.png` -afbeeldingen van de naamruimte `ncm` getoond:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -175,8 +175,8 @@ Deze afbeeldingen worden gebruikt voor pictogrammen waarop gebruikers klikken om
 
 Voer de volgende stappen uit om een formulier te maken:
 
-1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-1. Klik op de knop **[!UICONTROL New]** boven aan de lijst.
+1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** .
+1. Klik op de knop **[!UICONTROL New]** rechtsboven in de lijst.
 
    ![](assets/input-form-create-1.png)
 
@@ -184,7 +184,7 @@ Voer de volgende stappen uit om een formulier te maken:
 
    * Geef de naam van het formulier en de naamruimte op.
 
-     De formuliernaam en de naamruimte kunnen overeenkomen met het gerelateerde gegevensschema.  In dit voorbeeld wordt een formulier getoond voor de `cus:order` gegevensschema:
+     De formuliernaam en de naamruimte kunnen overeenkomen met het gerelateerde gegevensschema.  In dit voorbeeld ziet u een formulier voor het `cus:order` -gegevensschema:
 
      ```xml
      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -192,7 +192,7 @@ Voer de volgende stappen uit om een formulier te maken:
      </form>
      ```
 
-     U kunt het gegevensschema ook expliciet opgeven in het dialoogvenster `entity-schema` kenmerk.
+     U kunt het gegevensschema ook expliciet opgeven in het kenmerk `entity-schema` .
 
      ```xml
      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
@@ -205,15 +205,15 @@ Voer de volgende stappen uit om een formulier te maken:
 
      ![](assets/input-form-create-2.png)
 
-     Als u een formulier met meerdere pagina&#39;s ontwerpt, kunt u het formuliertype weglaten in het dialoogvenster `<form>` en geeft u het type op in een container.
+     Als u een formulier met meerdere pagina&#39;s ontwerpt, kunt u het formuliertype weglaten in het element `<form>` en het type opgeven in een container.
 
 1. Klik op **[!UICONTROL Save]**.
 
 1. Voeg de formulierelementen in.
 
-   Als u bijvoorbeeld een invoerveld wilt invoegen, gebruikt u de opdracht `<input>` element. Stel de `xpath` kenmerk aan de veldverwijzing als een XPath-expressie. [Meer informatie](schema-structure.md#referencing-with-xpath).
+   Als u bijvoorbeeld een invoerveld wilt invoegen, gebruikt u het element `<input>` . Stel het kenmerk `xpath` in op de veldverwijzing als een XPath-expressie. [Meer informatie](schema-structure.md#referencing-with-xpath).
 
-   In dit voorbeeld worden invoervelden weergegeven op basis van de `nms:recipient` schema.
+   In dit voorbeeld worden invoervelden weergegeven op basis van het schema `nms:recipient` .
 
    ```xml
    <input xpath="@firstName"/>
@@ -222,11 +222,11 @@ Voer de volgende stappen uit om een formulier te maken:
 
 1. Als het formulier is gebaseerd op een specifiek schematype, kunt u de velden voor dit schema opzoeken:
 
-   1. Klikken **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+   1. Klik op **[!UICONTROL Insert]** > **[!UICONTROL Document fields]** .
 
       ![](assets/input-form-create-4.png)
 
-   1. Selecteer het veld en klik op **[!UICONTROL OK]**.
+   1. Selecteer het veld en klik op **[!UICONTROL OK]** .
 
       ![](assets/input-form-create-5.png)
 
@@ -244,15 +244,15 @@ Voer de volgende stappen uit om een formulier te maken:
    | Selectievakje | `type="checkbox"` |
    | Boomstructuur bewerken | `type="tree"` |
 
-   Meer informatie over [besturingselementen voor geheugenlijsten](form-structure.md#memory-list-controls).
+   Lees meer over [ controles van de geheugenlijst ](form-structure.md#memory-list-controls).
 
 1. U kunt ook toegang tot de velden definiëren:
 
    | Element | Kenmerk | Beschrijving |
    | --- | --- | --- |
    | `<input>` | `read-only="true"` | Biedt alleen-lezen toegang tot een veld |
-   | `<container>` | `type="visibleGroup" visibleIf="`*bewerken-expr*`"` | Hiermee geeft u een groep velden voorwaardelijk weer |
-   | `<container>` | `type="enabledGroup" enabledIf="`*bewerken-expr*`"` | Hiermee wordt een groep velden voorwaardelijk ingeschakeld |
+   | `<container>` | `type="visibleGroup" visibleIf="`*uitgeven-expr*`"` | Hiermee geeft u een groep velden voorwaardelijk weer |
+   | `<container>` | `type="enabledGroup" enabledIf="`*uitgeven-expr*`"` | Hiermee wordt een groep velden voorwaardelijk ingeschakeld |
 
    Voorbeeld:
 
@@ -284,15 +284,15 @@ Voer de volgende stappen uit om een formulier te maken:
 
 U kunt formulieren met meerdere pagina&#39;s maken. U kunt formulieren ook nesten binnen andere formulieren.
 
-### Een `iconbox` formulier
+### Een `iconbox` -formulier maken
 
-Gebruik de `iconbox` formuliertype om pictogrammen links van het formulier weer te geven. Hiermee gaan gebruikers naar verschillende pagina&#39;s in het formulier.
+Met het `iconbox` -formuliertype geeft u pictogrammen weer links van het formulier. Hiermee gaan gebruikers naar verschillende pagina&#39;s in het formulier.
 
 ![](assets/iconbox_form_preview.png)
 
-Het type van een bestaand formulier wijzigen in `iconbox`Voer de volgende stappen uit:
+Ga als volgt te werk als u het type van een bestaand formulier wilt wijzigen in `iconbox` :
 
-1. Wijzig de `type` kenmerk van de `<form>` element naar `iconbox`:
+1. Wijzig het kenmerk `type` van het element `<form>` in `iconbox` :
 
    ```xml
    <form […] type="iconbox">
@@ -300,8 +300,8 @@ Het type van een bestaand formulier wijzigen in `iconbox`Voer de volgende stappe
 
 1. Stel een container in voor elke formulierpagina:
 
-   1. Voeg een `<container>` element as a child of the `<form>` element.
-   1. Als u een label en een afbeelding voor het pictogram wilt definiëren, gebruikt u de opdracht `label` en `img` kenmerken.
+   1. Voeg een element `<container>` toe als een onderliggend element van het element `<form>` .
+   1. Als u een label en een afbeelding voor het pictogram wilt definiëren, gebruikt u de kenmerken `label` en `img` .
 
       ```xml
       <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
@@ -320,17 +320,17 @@ Het type van een bestaand formulier wijzigen in `iconbox`Voer de volgende stappe
       </form>
       ```
 
-   U kunt ook de knop `type="frame"` kenmerk van het bestaande `<container>` elementen.
+   U kunt ook het kenmerk `type="frame"` verwijderen uit de bestaande `<container>` -elementen.
 
 ### Een laptopformulier maken
 
-Gebruik de `notebook` formuliertype om tabbladen boven aan het formulier weer te geven. Hiermee gaan gebruikers naar verschillende pagina&#39;s.
+Gebruik het `notebook` -formuliertype om tabbladen boven aan het formulier weer te geven. Hiermee gaan gebruikers naar verschillende pagina&#39;s.
 
 ![](assets/notebook_form_preview.png)
 
-Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stappen uit:
+Ga als volgt te werk als u het type van een bestaand formulier wilt wijzigen in `notebook` :
 
-1. Wijzig de `type` kenmerk van de `<form>` element naar `notebook`:
+1. Wijzig het kenmerk `type` van het element `<form>` in `notebook` :
 
    ```xml
    <form […] type="notebook">
@@ -338,8 +338,8 @@ Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stapp
 
 1. Voeg een container toe voor elke formulierpagina:
 
-   1. Voeg een `<container>` element as a child of the `<form>` element.
-   1. Als u het label en de afbeelding voor het pictogram wilt definiëren, gebruikt u de opdracht `label` en `img` kenmerken.
+   1. Voeg een element `<container>` toe als een onderliggend element van het element `<form>` .
+   1. Gebruik de kenmerken `label` en `img` om het label en de afbeelding voor het pictogram te definiëren.
 
    ```xml
      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
@@ -358,7 +358,7 @@ Het type van een bestaand formulier wijzigen in `notebook`Voer de volgende stapp
      </form>
    ```
 
-   U kunt ook de knop `type="frame"` kenmerk van het bestaande `<container>` elementen.
+   U kunt ook het kenmerk `type="frame"` verwijderen uit de bestaande `<container>` -elementen.
 
 ### Formulieren nesten
 
@@ -366,17 +366,17 @@ U kunt formulieren nesten binnen andere formulieren. U kunt bijvoorbeeld laptopf
 
 Het niveau van het nesten controleert navigatie. Gebruikers kunnen naar subformulieren gaan.
 
-Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` en stel de `type` aan het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het dialoogvenster `<form>` element.
+Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` -element in en stelt u het `type` -kenmerk in op het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het element `<form>` .
 
 ### Voorbeeld
 
 In dit voorbeeld wordt een complex formulier getoond:
 
-* De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
+* De vorm op hoofdniveau is een iconbox-vorm. Deze vorm bestaat uit twee containers geëtiketteerd **Algemeen** en **Details**.
 
-  Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+  Dientengevolge, toont de buitenvorm de **Algemene** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
 
-* Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
+* Het subform is een notitieboekjevorm die binnen de **Algemene** container wordt genest. Het subform bestaat uit twee containers die **Naam** en **Contact** worden geëtiketteerd.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -399,21 +399,21 @@ In dit voorbeeld wordt een complex formulier getoond:
 </form>
 ```
 
-Dientengevolge, **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+Dientengevolge, toont de **Algemene** pagina van de buitenvorm de **Naam** en **de lusjes van het Contact**.
 
 ![](assets/nested_forms_preview.png)
 
-Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` en stel de `type` aan het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het dialoogvenster `<form>` element.
+Als u een formulier in een ander formulier wilt nesten, voegt u een `<container>` -element in en stelt u het `type` -kenmerk in op het formuliertype. Voor het formulier op het hoogste niveau kunt u het formuliertype instellen in een buitencontainer of in het element `<form>` .
 
 ### Voorbeeld
 
 In dit voorbeeld wordt een complex formulier getoond:
 
-* De vorm op hoofdniveau is een iconbox-vorm. Dit formulier bestaat uit twee containers met het label **Algemeen** en **Details**.
+* De vorm op hoofdniveau is een iconbox-vorm. Deze vorm bestaat uit twee containers geëtiketteerd **Algemeen** en **Details**.
 
-  Het resultaat is dat op het buitenste formulier de **Algemeen** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
+  Dientengevolge, toont de buitenvorm de **Algemene** en **Details** pagina&#39;s op het hoogste niveau. Gebruikers kunnen deze pagina&#39;s openen door op de pictogrammen links van het formulier te klikken.
 
-* Het subformulier is een laptopformulier dat is genest in het **Algemeen** container. Het subformulier bestaat uit twee containers met een label **Naam** en **Contact**.
+* Het subform is een notitieboekjevorm die binnen de **Algemene** container wordt genest. Het subform bestaat uit twee containers die **Naam** en **Contact** worden geëtiketteerd.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -436,7 +436,7 @@ In dit voorbeeld wordt een complex formulier getoond:
 </form>
 ```
 
-Dientengevolge, **Algemeen** op de buitenste pagina van het formulier wordt de **Naam** en **Contact** tabs.
+Dientengevolge, toont de **Algemene** pagina van de buitenvorm de **Naam** en **de lusjes van het Contact**.
 
 ![](assets/nested_forms_preview.png)
 
@@ -448,7 +448,7 @@ Voer de volgende stappen uit om een fabrieksformulier te wijzigen:
 
 1. Het fabrieksinvoerformulier wijzigen:
 
-   1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Kies in het menu **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** .
    1. Selecteer een invoerformulier en wijzig dit.
 
    U kunt schema&#39;s met fabrieksgegevens uitbreiden, maar u kunt geen formulieren met fabrieksinvoer uitbreiden. We raden u aan fabrieksinvoerformulieren rechtstreeks te wijzigen zonder ze opnieuw te maken. Tijdens software-upgrades worden uw wijzigingen in de fabrieksinvoerformulieren samengevoegd met de upgrades. Als het automatisch samenvoegen mislukt, kunt u de conflicten oplossen. [Meer informatie](../../production/using/upgrading.md#resolving-conflicts).
@@ -461,9 +461,9 @@ U kunt validatiecontroles opnemen in formulieren.
 
 ### Alleen-lezen toegang verlenen tot velden
 
-Als u alleen-lezen toegang wilt verlenen tot een veld, gebruikt u de opdracht `readOnly="true"` kenmerk. U kunt bijvoorbeeld de primaire sleutel van een record weergeven, maar dan met alleen-lezen toegang. [Meer informatie](form-structure.md#non-editable-fields).
+Gebruik het attribuut `readOnly="true"` om alleen-lezen toegang tot een veld te verlenen. U kunt bijvoorbeeld de primaire sleutel van een record weergeven, maar dan met alleen-lezen toegang. [Meer informatie](form-structure.md#non-editable-fields).
 
-In dit voorbeeld wordt de primaire toets (`iRecipientId`) van de `nms:recipient` schema wordt getoond in read-only toegang:
+In dit voorbeeld wordt de primaire sleutel (`iRecipientId`) van het `nms:recipient` -schema weergegeven in alleen-lezen toegang:
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -473,8 +473,8 @@ In dit voorbeeld wordt de primaire toets (`iRecipientId`) van de `nms:recipient`
 
 U kunt verplichte gegevens controleren:
 
-* Gebruik de `required="true"` voor de vereiste velden.
-* Gebruik de `<leave>` knoop om deze gebieden te controleren en foutenmeldingen te tonen.
+* Gebruik het kenmerk `required="true"` voor de vereiste velden.
+* Gebruik het knooppunt `<leave>` om deze velden te controleren en foutberichten weer te geven.
 
 In dit voorbeeld is het e-mailadres vereist en wordt een foutbericht weergegeven als de gebruiker deze informatie niet heeft opgegeven:
 
@@ -487,11 +487,11 @@ In dit voorbeeld is het e-mailadres vereist en wordt een foutbericht weergegeven
 </leave>
 ```
 
-Meer informatie over [expressievelden](form-structure.md#expression-field) en [formuliercontext](form-structure.md#context-of-forms).
+Lees meer over [ uitdrukkingsgebieden ](form-structure.md#expression-field) en [ vormcontext ](form-structure.md#context-of-forms).
 
 ### Waarden valideren
 
-U kunt SOAP-aanroepen van JavaScript gebruiken om formuliergegevens vanuit de console te valideren. Gebruik deze aanroepen voor complexe validatie, bijvoorbeeld om een waarde te controleren op basis van een lijst met toegestane waarden. [Meer informatie](form-structure.md#soap-methods).
+U kunt JavaScript-SOAP gebruiken om formuliergegevens te valideren vanuit de Console. Gebruik deze aanroepen voor complexe validatie, bijvoorbeeld om een waarde te controleren op basis van een lijst met toegestane waarden. [Meer informatie](form-structure.md#soap-methods).
 
 1. Maak een validatiefunctie in een JS-bestand.
 
@@ -509,13 +509,13 @@ U kunt SOAP-aanroepen van JavaScript gebruiken om formuliergegevens vanuit de co
    }
    ```
 
-   In dit voorbeeld wordt de functie benoemd `checkValue`. Deze functie wordt gebruikt om de `recipient` gegevenstype in het dialoogvenster `nms` naamruimte. De waarde die wordt gecontroleerd wordt geregistreerd. Als de waarde niet geldig is, wordt een foutbericht geregistreerd. Als de waarde geldig is, wordt de waarde 1 geretourneerd.
+   In dit voorbeeld heeft de functie de naam `checkValue` . Deze functie wordt gebruikt om het gegevenstype `recipient` in de naamruimte `nms` te controleren. De waarde die wordt gecontroleerd wordt geregistreerd. Als de waarde niet geldig is, wordt een foutbericht geregistreerd. Als de waarde geldig is, wordt de waarde 1 geretourneerd.
 
    U kunt de geretourneerde waarde gebruiken om het formulier te wijzigen.
 
-1. Voeg in het formulier de `<soapCall>` aan de `<leave>` element.
+1. Voeg in het formulier het element `<soapCall>` toe aan het element `<leave>` .
 
-   In dit voorbeeld wordt een SOAP-aanroep gebruikt om de `@valueToCheck` tekenreeks:
+   In dit voorbeeld wordt een SOAP aanroep gebruikt om de tekenreeks `@valueToCheck` te valideren:
 
    ```xml
    <form name="recipient" (…)>
@@ -528,14 +528,14 @@ U kunt SOAP-aanroepen van JavaScript gebruiken om formuliergegevens vanuit de co
    </form>
    ```
 
-   In dit voorbeeld wordt `checkValue` en de `nms:recipient` de dienst wordt gebruikt:
+   In dit voorbeeld worden de methode `checkValue` en de service `nms:recipient` gebruikt:
 
    * De dienst is namespace en het gegevenstype.
    * De methode is de functienaam. De naam is hoofdlettergevoelig.
 
    De vraag wordt uitgevoerd synchroon.
 
-   Alle uitzonderingen worden weergegeven. Als u het `<leave>` , kunnen gebruikers het formulier pas opslaan nadat de ingevoerde gegevens zijn gevalideerd.
+   Alle uitzonderingen worden weergegeven. Als u het element `<leave>` gebruikt, kunnen gebruikers het formulier pas opslaan nadat de ingevoerde gegevens zijn gevalideerd.
 
 In dit voorbeeld wordt getoond hoe u serviceaanroepen kunt uitvoeren vanuit formulieren:
 
@@ -548,4 +548,4 @@ In dit voorbeeld wordt getoond hoe u serviceaanroepen kunt uitvoeren vanuit form
 </enter>
 ```
 
-In dit voorbeeld is de invoer een id, die een primaire sleutel is. Wanneer gebruikers het formulier voor deze id invullen, wordt een SOAP-aanroep met deze id gemaakt als invoerparameter. De uitvoer is een Booleaanse waarde die naar dit veld wordt geschreven: `/tmp/@count`. U kunt deze Booleaanse waarde in het formulier gebruiken. Meer informatie over [formuliercontext](form-structure.md#context-of-forms).
+In dit voorbeeld is de invoer een id, die een primaire sleutel is. Wanneer gebruikers het formulier voor deze id invullen, wordt een SOAP aanroep met deze id uitgevoerd als invoerparameter. De uitvoer is een Booleaanse waarde die naar dit veld wordt geschreven: `/tmp/@count` . U kunt deze Booleaanse waarde in het formulier gebruiken. Lees meer over [ vormcontext ](form-structure.md#context-of-forms).

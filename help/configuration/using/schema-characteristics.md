@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -29,15 +29,15 @@ De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 
 ## Het weergavekenmerk {#the-view-attribute}
 
-Bronschema&#39;s accepteren de **weergave** kenmerk voor de **srcSchema** hoofdelement. Deze moet worden gebruikt wanneer Adobe Campaign wordt gemanipuleerd in aangepaste tabellen. De **view=&quot;true&quot;** dit kenmerk vertelt de updatewizard voor de databasestructuur om dit schema te negeren. Het is daarom niet toegestaan dat de toepassing de tabel, de kolommen en de indexen synchroniseert met het corresponderende schema.
+De schema&#39;s van Source keuren het **mening** attribuut voor het **srcSchema** wortelelement goed. Deze moet worden gebruikt wanneer Adobe Campaign wordt gemanipuleerd in aangepaste tabellen. Het **view= &quot;waar&quot;** attribuut vertelt de updateassistent van de gegevensbestandstructuur om dit schema te negeren. Het is daarom niet toegestaan dat de toepassing de tabel, de kolommen en de indexen synchroniseert met het corresponderende schema.
 
-Wanneer dit kenmerk is ingesteld op **true**, wordt het schema gebruikt slechts om SQL vragen te produceren om tot de gegevens van deze lijst toegang te hebben.
+Wanneer dit attribuut aan **waar** wordt geplaatst, wordt het schema gebruikt slechts om SQL vragen te produceren om tot de gegevens van deze lijst toegang te hebben.
 
 ## Namen van tabellen en kolommen {#names-of-tables-and-columns}
 
-Wanneer tabellen worden gemaakt door de wizard voor tabelupdates, worden de namen van tabellen en kolommen automatisch gegenereerd op basis van de namen van de respectievelijke schema&#39;s en kenmerken. Het is echter mogelijk om de SQL-namen te forceren die moeten worden gebruikt door de volgende kenmerken in te voeren:
+Wanneer de lijsten door de hulp van de lijstupdate worden gecreeerd, worden de namen van lijsten en kolommen automatisch geproduceerd gebaseerd op de namen van de respectieve schema&#39;s en de attributen. Het is echter mogelijk om de SQL-namen te forceren die moeten worden gebruikt door de volgende kenmerken in te voeren:
 
-* **sqltable** binnen het hoofdelement van het schema om de tabel op te geven;
+* **sqltable** binnen het belangrijkste element van het schema, om de lijst te specificeren,
 * **sqlname** binnen elk attribuut, om de kolommen te specificeren.
 
 **Voorbeeld**:
@@ -55,7 +55,7 @@ Wanneer tabellen worden gemaakt door de wizard voor tabelupdates, worden de name
 </element>
 ```
 
-Als in dit voorbeeld de namen van de tabellen en kolommen niet expliciet waren opgegeven, zou de toepassing zijn gebruikt **CusIndividual** voor de tabel, **lastName** en **firstName** voor de kolommen.
+In dit voorbeeld, als de namen van de lijsten en de kolommen niet uitdrukkelijk waren gespecificeerd, zou de toepassing **CusIndividual** voor de lijst, **lastName** en **firstName** voor de kolommen hebben gebruikt.
 
 In een schema is het mogelijk slechts een deel van de kolommen van een bestaande tabel te vullen. Niet-gevulde kolommen zijn niet toegankelijk voor de gebruiker.
 
@@ -77,7 +77,7 @@ In een schema wordt een index als volgt gedefinieerd:
 
 Daarom is het belangrijk om bestaande indexen van de douanetabel in het passende schema te verklaren.
 
-Een index wordt impliciet gedeclareerd voor elke sleutel- en koppelingsdeclaratie van het bronschema. Indexdeclaratie kan worden voorkomen door de **noDbIndex=&quot;true&quot;** kenmerk:
+Een index wordt impliciet gedeclareerd voor elke sleutel- en koppelingsdeclaratie van het bronschema. De verklaring van de index kan worden verhinderd door **te specificeren noDbIndex= &quot;waar&quot;** attributen:
 
 **Voorbeeld**:
 

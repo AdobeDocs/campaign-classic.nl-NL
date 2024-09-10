@@ -9,7 +9,7 @@ topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -22,24 +22,24 @@ ht-degree: 0%
 
 Voor een Microsoft Windows-omgeving zijn de migratiestappen als volgt:
 
-1. Stop alle services - [Meer informatie](#service-stop).
-1. Maak een back-up van uw database - [Meer informatie](#back-up-the-database).
-1. Het platform migreren - [Meer informatie](#deploying-adobe-campaign-v7).
-1. De omleidingsserver (IIS) migreren - [Meer informatie](#migrating-the-redirection-server--iis-).
-1. Service opnieuw starten - [Meer informatie](#re-starting-the-services).
-1. Vorige Adobe Campaign-versie verwijderen en opschonen - [Meer informatie](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. Stop alle diensten - [ leer meer ](#service-stop).
+1. Maak een back-up van uw database - [ Leer meer ](#back-up-the-database) .
+1. Migreer het platform - [ leer meer ](#deploying-adobe-campaign-v7).
+1. Migreer de omleidingsserver (IIS) - [ Leer meer ](#migrating-the-redirection-server--iis-).
+1. De dienst van de herstart - [ Leer meer ](#re-starting-the-services).
+1. Schrap en schoon vorige versie van Adobe Campaign - [ Leer meer ](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## Servicestop {#service-stop}
 
 In de eerste plaats moeten alle processen met toegang tot de database op alle betrokken machines worden stopgezet.
 
-1. Alle servers die de omleidingsmodule gebruiken (**webmdl** service) moet worden gestopt. Voer voor IIS de volgende opdracht uit:
+1. Alle servers die de omleidingsmodule gebruiken (**webmdl** dienst) moet worden tegengehouden. Voer voor IIS de volgende opdracht uit:
 
    ```
    iisreset /stop
    ```
 
-1. De **mta** de module en zijn kindmodules (**mtachild**) moet worden gestopt met behulp van de volgende opdrachten:
+1. De **mta** module en zijn kindmodules (**mtachild**) moeten worden tegengehouden gebruikend de volgende bevelen:
 
    ```
    nlserver stop mta@<instance name>
@@ -180,7 +180,7 @@ Hier volgt de procedure voor het maken van back-ups van Adobe Campaign v6.1.
 -->
 
 1. Maak een back-up van de Adobe Campaign-database.
-1. Maak een back-up van de **Adobe Campaign v6** map met de volgende opdracht:
+1. Maak een steun van de **folder van Adobe Campaign v6** gebruikend het volgende bevel:
 
    ```
    ren "Adobe Campaign v6" "Adobe Campaign v6.back"
@@ -188,7 +188,7 @@ Hier volgt de procedure voor het maken van back-ups van Adobe Campaign v6.1.
 
    >[!IMPORTANT]
    >
-   >Als voorzorgsmaatregel raden we u aan het **Adobe Campaign v6.back** en sla deze elders op een andere veilige locatie dan de server op.
+   >Als voorzorgsmaatregel, adviseren wij dat u **Adobe Campaign v6.back** omslag zip en het elders in een veilige plaats buiten de server opslaat.
 
 1. Schakel in de beheerconsole voor Windows-services het automatisch opstarten van de 6.11-service van de toepassingsserver uit. U kunt ook de volgende opdracht gebruiken:
 
@@ -205,19 +205,19 @@ Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
-1. Installeer de meest recente Adobe Campaign v7-build met behulp van de **setup.exe** installatiebestand. Raadpleeg voor meer informatie over het installeren van de Adobe Campaign-server in Windows [deze sectie](../../installation/using/installing-the-server.md).
+1. Installeer de meest recente Adobe Campaign v7 bouwt door het **setup.exe** installatiedossier in werking te stellen. Voor meer bij het installeren van de server van Adobe Campaign in Vensters, verwijs naar [ deze sectie ](../../installation/using/installing-the-server.md).
 
    ![](assets/migration_wizard_1_7.png)
 
    >[!NOTE]
    >
-   >Adobe Campaign v7 wordt standaard geïnstalleerd in het dialoogvenster **C:\Program Files\Adobe\Adobe Campagne v7** directory.
+   >Adobe Campaign v7 wordt geïnstalleerd door gebrek in **C:\Program Files\Adobe\Adobe de folder van de Campagne v7**.
 
-1. Als u het installatieprogramma van de clientconsole beschikbaar wilt maken, kopieert u de **setup-client-7.0.XXXX.exe** bestand in de installatiemap van Adobe Campaign: **C:\Program Files\Adobe\Adobe Campagne v7\datakit\nl\eng\jsp**.
+1. Om het de installatieprogramma van de cliëntconsole beschikbaar te maken, kopieer het **opstelling-cliënt-7.0.XXXX.exe** dossier in de de installatiemap van Adobe Campaign: **C:\Program Files\Adobe\Adobe Campagne v7\datakit\nl\eng\jsp**.
 
    >[!NOTE]
    >
-   >Voor meer informatie over het installeren van Adobe Campaign in Windows raadpleegt u [deze sectie](../../installation/using/installing-the-server.md).
+   >Voor meer bij het installeren van Adobe Campaign in Vensters, verwijs naar [ deze sectie ](../../installation/using/installing-the-server.md).
 
 1. Start de instantie voor het eerste gebruik met de volgende opdrachten:
 
@@ -228,9 +228,9 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Met deze opdrachten kunt u het interne bestandssysteem van Adobe Campaign v7 maken: **conf** directory (met de **config-default.xml** en **serverConf.xml** bestanden), **var** map, enz.
+   >Deze bevelen laten u het interne het dossiersysteem van Adobe Campaign v7 creëren: **conf** folder (met **config-default.xml** en **serverConf.xml** dossiers), **var** folder, enz.
 
-1. Kopieer en plak (overschrijf) de configuratiebestanden en submappen van elke instantie via de **Neolane v5.back**, **Neolane v6.back** of **Adobe Campaign v6.back** back-upbestand (afhankelijk van de versie waaruit u migreert - zie [deze sectie](#back-up-the-database-and-the-current-installation)).
+1. Kopieer en deeg (beschrijven) de configuratiedossiers en subfolders van elke instantie via **Neolane v5.back**, **Neolane v6.back** of **Adobe Campaign v6.back** reservedossier (afhankelijk van de versie u van - zie [ deze sectie ](#back-up-the-database-and-the-current-installation) migreert).
 1. Afhankelijk van de versie waaruit u migreert, voert u de volgende opdrachten uit:
 
    ```
@@ -253,9 +253,9 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!IMPORTANT]
    >
-   >Voor de eerste bovenstaande opdracht kopieert u de opdracht **config-default.xml** bestand.
+   >Voor het eerste bevel hierboven, kopieer niet het {**dossier 0} config-default.xml.**
 
-1. In de **serverConf.xml** en **config-default.xml** bestanden van Adobe Campaign v7, past u de specifieke configuraties toe die u in de vorige versie van Adobe Campaign had. Voor de **serverConf.xml** bestand gebruiken **v5/conf/serverConf.xml.diff**, **v6/conf/serverConf.xml.diff** of **Adobe Campaign v6/conf/serverConf.xml.diff** bestand.
+1. In **serverConf.xml** en **config-default.xml** dossiers van Adobe Campaign v7, pas de specifieke configuraties toe die u in de vorige versie van Adobe Campaign had. Voor het {**dossier 0} serverConf.xml, gebruik** Neolane v5/conf/serverConf.xml.diff **,** Neolane v6/conf/serverConf.xml.diff **of** Adobe Campaign v6/conf/serverConf.xml.diff **dossier.**
 
    >[!NOTE]
    >
@@ -279,13 +279,13 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 ## De omleidingsserver migreren {#migrating-the-redirection-server--iis-}
 
-In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#service-stop).
+In dit stadium, moet de server IIS worden tegengehouden. Verwijs naar [ het einde van de Dienst ](#service-stop).
 
-1. Open de **Internet Information Services (IIS) Manager** console.
+1. Open de **console van de Manager van de Informatie van 0} Internet van de Diensten (IIS).**
 1. Wijzig de bindingen (listen ports) van de site die voor de vorige versie van Adobe Campaign wordt gebruikt:
 
-   * Klik met de rechtermuisknop op de site die wordt gebruikt voor de vorige versie van Adobe Campaign en selecteer **[!UICONTROL Edit bindings]**.
-   * Voor elk type van luisterhaven (**[!UICONTROL http]** en/of **[!UICONTROL https]**), selecteert u de gewenste regel en klikt u op **[!UICONTROL Edit]**.
+   * Klik met de rechtermuisknop op de site die wordt gebruikt voor de vorige versie van Adobe Campaign en selecteer **[!UICONTROL Edit bindings]** .
+   * Voor elk type van luisterhaven (**[!UICONTROL http]** en/of **[!UICONTROL https]**), selecteer de aangewezen lijn en klik **[!UICONTROL Edit]**.
    * Voer een andere poort in. Standaard is de listen-poort 80 voor http en 443 voor https. Controleer of de nieuwe poort beschikbaar is.
 
      ![](assets/_migration_iis_3_611.png)
@@ -296,32 +296,32 @@ In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#serv
 
 1. Een nieuwe website maken voor Adobe Campaign v7:
 
-   * Klik met de rechtermuisknop op de knop **[!UICONTROL Sites]** map en selecteer **[!UICONTROL Add Web Site...]**.
+   * Klik met de rechtermuisknop op de map **[!UICONTROL Sites]** en selecteer **[!UICONTROL Add Web Site...]** .
 
      ![](assets/_migration_iis_4.png)
 
-   * Voer de naam van de site in, **Adobe Campaign v7** bijvoorbeeld.
-   * Het toegangspad naar de basismap van de website wordt niet gebruikt, maar wel **[!UICONTROL Physical access path]** veld moet worden ingevoerd. Voer het standaard IIS-toegangspad in: **C:\inetpub\wwwroot**.
-   * Klik op de knop **[!UICONTROL Connect as...]** als en zorg ervoor **[!UICONTROL Application user]** is geselecteerd.
-   * U kunt de standaardwaarden in de **[!UICONTROL IP address]** en **[!UICONTROL Port]** velden. Als u andere waarden wilt gebruiken, zorg ervoor het IP adres en/of de haven beschikbaar zijn.
-   * Controleer de **[!UICONTROL Start Web site immediately]** doos.
+   * Ga de naam van de plaats in, **Adobe Campaign v7** bijvoorbeeld.
+   * Het toegangspad naar de basismap van de website wordt niet gebruikt, maar het veld **[!UICONTROL Physical access path]** moet worden ingevoerd. Ga het standaard IIS toegangspad in: **C:\inetpub\wwwroot**.
+   * Klik op de knop **[!UICONTROL Connect as...]** als en controleer of de optie **[!UICONTROL Application user]** is geselecteerd.
+   * U kunt de standaardwaarden in de velden **[!UICONTROL IP address]** en **[!UICONTROL Port]** behouden. Als u andere waarden wilt gebruiken, zorg ervoor het IP adres en/of de haven beschikbaar zijn.
+   * Schakel het selectievakje **[!UICONTROL Start Web site immediately]** in.
 
      ![](assets/_migration_iis_5_7.png)
 
-1. Voer de **iis_neolane_setup.vbs** om automatisch de bronnen te configureren die door de Adobe Campaign-server worden gebruikt in de eerder gemaakte virtuele map.
+1. Voer het {**manuscript uit 0} is_neolane_setup.vbs om de middelen automatisch te vormen die door de server van Adobe Campaign op de eerder gemaakte virtuele folder worden gebruikt.**
 
-   * Dit bestand is gevonden in het dialoogvenster **`[Adobe Campaign v7]`\conf** map, waarin **`[Adobe Campaign v7]`** is het toegangspad naar de installatiemap van Adobe Campaign. De opdracht voor het uitvoeren van het script is als volgt (voor beheerders):
+   * Dit bestand staat in de map **`[Adobe Campaign v7]`\conf** , waar **`[Adobe Campaign v7]`** het toegangspad naar de Adobe Campaign-installatiemap is. De opdracht voor het uitvoeren van het script is als volgt (voor beheerders):
 
      ```
      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
      cscript iis_neolane_setup.vbs
      ```
 
-   * Klikken **[!UICONTROL OK]** om de uitvoering van het script te bevestigen.
+   * Klik op **[!UICONTROL OK]** om de uitvoering van het script te bevestigen.
 
      ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 
-   * Voer het nummer in van de website die u eerder voor Adobe Campaign v7 hebt gemaakt en klik op **[!UICONTROL OK]**.
+   * Voer het nummer in van de website die u eerder voor Adobe Campaign v7 hebt gemaakt en klik op **[!UICONTROL OK]** .
 
      ![](assets/s_ncs_install_iis7_parameters_step3_7.png)
 
@@ -329,7 +329,7 @@ In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#serv
 
      ![](assets/s_ncs_install_iis7_parameters_step7_7.png)
 
-   * In de **[!UICONTROL Content view]** zorgt u ervoor dat de configuratie van de website correct is geconfigureerd met Adobe Campaign-bronnen:
+   * Controleer in het tabblad **[!UICONTROL Content view]** of de configuratie van de website correct is geconfigureerd met Adobe Campaign-bronnen:
 
      ![](assets/s_ncs_install_iis7_parameters_step6_7.png)
 
@@ -337,7 +337,7 @@ In dit stadium, moet de server IIS worden tegengehouden. Zie [Servicestop](#serv
      >
      >Als de boomstructuur niet wordt getoond, begin IIS opnieuw.
      >
-     >De volgende IIS configuratiestappen zijn gedetailleerd in [deze sectie](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >De volgende IIS configuratiestappen zijn gedetailleerd in [ deze sectie ](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 <!--
 ## Security zones {#security-zones}
@@ -370,7 +370,7 @@ Before you delete and cleanse the Adobe Campaign v5 installation, you must apply
 
 1. In IIS, delete the **Neolane v5** website, then the **Neolane v5** application pool. 
 1. Rename the **Neolane v5.back** folder as **Neolane v5**.
-1. Uninstall Adobe Campaign v5 using the Add/remove components wizard. 
+1. Uninstall Adobe Campaign v5 using the Add/remove components assistant. 
 
    ![](assets/migration_wizard_2.png)
 
@@ -391,7 +391,7 @@ Before you delete and cleanse the Adobe Campaign v6.02 installation, you must ap
 
 1. In IIS, delete the **Neolane v6** website, then the **Neolane v6** application pool. 
 1. Rename the **Neolane v6.back** folder as **Neolane v6**.
-1. Uninstall Adobe Campaign v6.02 using the Add/remove components wizard. 
+1. Uninstall Adobe Campaign v6.02 using the Add/remove components assistant. 
 
    ![](assets/migration_wizard_2.png)
 
@@ -404,9 +404,9 @@ Voordat u de Adobe Campaign v6-installatie verwijdert en wist, moet u de volgend
 * Krijg de functionele teams om een volledige controle van de nieuwe installatie in werking te stellen.
 * Verwijder Adobe Campaign v6 alleen als u er zeker van bent dat terugdraaien niet nodig is.
 
-1. Verwijder in IIS de **Adobe Campaign v6** website, dan de **Adobe Campaign v6** toepassingspool.
-1. De naam van de **Adobe Campaign v6.back** map als **Adobe Campaign v6**.
-1. Verwijder Adobe Campaign v6 met de wizard Componenten toevoegen/verwijderen.
+1. In IIS, schrap de **Adobe Campaign v6** website, toen de **Adobe Campaign v6** toepassingspool.
+1. Wijzig de naam van **Adobe Campaign v6.back** omslag als **Adobe Campaign v6**.
+1. Verwijder Adobe Campaign v6 met de Add/remove components Assistant.
 
    ![](assets/migration_wizard_2.png)
 

@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -23,45 +23,45 @@ Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TA
 
 >[!NOTE]
 >
->U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de **[!UICONTROL Import a list]** functie. De gegevens kunnen vervolgens uitsluitend in workflows worden gebruikt via de **[!UICONTROL Read list]** object. Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie.
+>U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de functie **[!UICONTROL Import a list]** . De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** -object worden gebruikt. Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie.
 
-Met de wizard Importeren kunt u een importbewerking configureren, de opties ervan (zoals gegevenstransformatie) definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type import (enkelvoudig of meervoudig) en de rechten van de operator.
+Met de importassistent kunt u een importbewerking configureren, opties ervan definiëren (zoals gegevenstransformatie) en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type import (enkelvoudig of meervoudig) en de rechten van de operator.
 
-De wizard Importeren wordt weergegeven nadat een nieuwe importtaak is gemaakt (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
+De vertoningen van de invoerassistent na het creëren van een nieuwe de invoerbaan (zie [ invoer en de uitvoerbanen ](../../platform/using/creating-import-export-jobs.md) creëren.
 
 >[!NOTE]
 >
 >Als u een server van het Web IIS gebruikt, kan een configuratie noodzakelijk zijn om het uploaden van grote dossiers (>28 MB) toe te staan. Raadpleeg [deze sectie](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit) voor meer informatie.
 
-## Bronbestand {#source-file}
+## Source-bestand {#source-file}
 
 In het bronbestand valt elke regel samen met een record. De gegevens in records worden gescheiden door scheidingstekens (spatie, tab, teken, enz.). Dit betekent dat de gegevens in de vorm van kolommen worden teruggewonnen, en elke kolom wordt geassocieerd met een gebied van het gegevensbestand.
 
 ## Stap 1 - Kies de importsjabloon {#step-1---choosing-the-import-template}
 
-Wanneer u de wizard Importeren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de invoer van ontvangers te vormen die een nieuwsbrief ontvingen, volg de stappen hieronder:
+Wanneer u de importassistent start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de invoer van ontvangers te vormen die een nieuwsbrief ontvingen, volg de stappen hieronder:
 
-1. Selecteer de **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** map.
-1. Klikken **Nieuw** en klik vervolgens op **Importeren** om de importsjabloon te maken.
+1. Selecteer de map **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** .
+1. Klik **Nieuw** en klik dan **Invoer** om het de invoermalplaatje tot stand te brengen.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
-1. Klik op de pijl rechts van de knop **[!UICONTROL Import template]** te selecteren of klik op **[!UICONTROL Select link]** om door de boomstructuur te bladeren.
+1. Klik op de pijl rechts van het veld **[!UICONTROL Import template]** om de sjabloon te selecteren of klik op **[!UICONTROL Select link]** om door de structuur te bladeren.
 
-   De native sjabloon is **[!UICONTROL New text import]**. Deze sjabloon moet niet worden gewijzigd, maar u kunt het dupliceren om een nieuwe sjabloon te configureren, afhankelijk van uw vereisten. Importsjablonen worden standaard opgeslagen in de **[!UICONTROL Profiles and targets > Templates > Job templates]** knooppunt.
+   De native sjabloon is **[!UICONTROL New text import]** . Deze sjabloon moet niet worden gewijzigd, maar u kunt het dupliceren om een nieuwe sjabloon te configureren, afhankelijk van uw vereisten. Importeersjablonen worden standaard opgeslagen in het knooppunt **[!UICONTROL Profiles and targets > Templates > Job templates]** .
 
-1. Voer een naam in voor deze importbewerking in het dialoogvenster **[!UICONTROL Label]** veld. U kunt een beschrijving toevoegen.
-1. Selecteer het type import in het desbetreffende veld. Er zijn twee mogelijke typen importbewerkingen: **[!UICONTROL Simple import]** om slechts één bestand te importeren, en **[!UICONTROL Multiple import]** om meerdere bestanden in één uitvoering te importeren.
+1. Voer in het veld **[!UICONTROL Label]** een naam in voor deze importbewerking. U kunt een beschrijving toevoegen.
+1. Selecteer het type import in het desbetreffende veld. Er zijn twee mogelijke typen importeren: **[!UICONTROL Simple import]** als u slechts één bestand wilt importeren, en **[!UICONTROL Multiple import]** als u meerdere bestanden tegelijk wilt importeren.
 
-   Selecteer bij een meervoudige importbewerking **[!UICONTROL Multiple import]** van de **[!UICONTROL Import type]** vervolgkeuzelijst in het eerste scherm van de importwizard.
+   Selecteer voor een meervoudige importbewerking **[!UICONTROL Multiple import]** in de vervolgkeuzelijst **[!UICONTROL Import type]** in het eerste scherm van de importassistent.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
-1. Geef de velden op die u wilt importeren door op **[!UICONTROL Add]**.
+1. Geef de velden op die u wilt importeren door op **[!UICONTROL Add]** te klikken.
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Telkens wanneer een bestand wordt toegevoegd, wordt het scherm van de **[!UICONTROL File to import]** wordt weergegeven. Zie sectie [Stap 2 - Bronbestandsselectie](#step-2---source-file-selection) en voert u de stappen in de wizard uit om de importopties te definiëren als voor een eenvoudige importbewerking.
+   Telkens wanneer een bestand wordt toegevoegd, wordt het scherm van de **[!UICONTROL File to import]** assistent weergegeven. Zie sectie [ Stap 2 - het dossierselectie van Source ](#step-2---source-file-selection) en volg de stappen in de medewerker om de invoeropties zoals voor een eenvoudige invoer te bepalen.
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ Wanneer u de wizard Importeren start, moet u eerst een sjabloon selecteren. Als 
 
 ### Geavanceerde parameters {#advanced-parameters}
 
-De **[!UICONTROL Advanced parameters]** Via de koppeling hebt u toegang tot de volgende opties:
+Met de koppeling **[!UICONTROL Advanced parameters]** hebt u toegang tot de volgende opties:
 
 * **[!UICONTROL General]** tab
 
@@ -87,39 +87,39 @@ De **[!UICONTROL Advanced parameters]** Via de koppeling hebt u toegang tot de v
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Zie [Opsommingen beheren](../../platform/using/managing-enumerations.md).
+     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Zie [ opsommingen beheren ](../../platform/using/managing-enumerations.md).
 
 * **[!UICONTROL Variables]** tab
 
-  U kunt variabelen definiëren die aan de taak zijn gekoppeld en die toegankelijk zijn in de query-editors en berekende velden. Klik op **[!UICONTROL Add]** en gebruikt u de variabele editor.
+  U kunt variabelen definiëren die aan de taak zijn gekoppeld en die toegankelijk zijn in de query-editors en berekende velden. Als u een variabele wilt maken, klikt u op **[!UICONTROL Add]** en gebruikt u de variabele-editor.
 
   >[!IMPORTANT]
   >
-  >De **[!UICONTROL Variables]** tab is alleen bedoeld voor workflowtype programmering en moet alleen worden geconfigureerd door deskundige gebruikers.
+  >Het tabblad **[!UICONTROL Variables]** is alleen bedoeld voor gebruik bij workflowprogrammering en moet alleen door deskundige gebruikers worden geconfigureerd.
 
-## Stap 2 - Bronbestandsselectie {#step-2---source-file-selection}
+## Stap 2 - Source-bestandsselectie {#step-2---source-file-selection}
 
 Het bronbestand kan de tekstindeling (txt, csv, tab, vaste kolommen) of xml hebben.
 
-Standaard, **[!UICONTROL Upload file on the server]** is geselecteerd. Klik op de map rechts van het dialoogvenster **[!UICONTROL Local file]** om op de lokale schijf te bladeren en het te importeren bestand te selecteren. U kunt deze optie deselecteren om het toegangspad en de naam in te voeren van het bestand als dit zich op de server bevindt.
+Standaard is **[!UICONTROL Upload file on the server]** geselecteerd. Klik op de map rechts van het veld **[!UICONTROL Local file]** om naar de lokale schijf te bladeren en selecteer het bestand dat u wilt importeren. U kunt deze optie deselecteren om het toegangspad en de naam in te voeren van het bestand als dit zich op de server bevindt.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
-Wanneer het bestand is opgegeven, kunt u de gegevens in het onderste gedeelte van het venster bekijken door op **[!UICONTROL Auto-detect format]**. In deze voorvertoning worden de eerste 200 regels van het bronbestand weergegeven.
+Wanneer het bestand is opgegeven, kunt u de gegevens ervan weergeven in de onderste sectie van het venster door op **[!UICONTROL Auto-detect format]** te klikken. In deze voorvertoning worden de eerste 200 regels van het bronbestand weergegeven.
 
 ![](assets/s_ncs_user_import_wizard02_2.png)
 
 Gebruik de opties boven deze weergave om het importeren te configureren. De parameters die via deze opties worden gedefinieerd, worden overgebracht naar de voorvertoning. De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Click here to change the file format...]** Hiermee kunt u de bestandsindeling controleren en de configuratie perfectioneren.
-* **[!UICONTROL Update on server...]** Hiermee kunt u het lokale bestand overbrengen naar de server. Deze optie is alleen beschikbaar als **[!UICONTROL Upload file on the server]** is geselecteerd.
+* Met **[!UICONTROL Click here to change the file format...]** kunt u de bestandsindeling controleren en de configuratie perfectioneren.
+* Met **[!UICONTROL Update on server...]** kunt u het lokale bestand overbrengen naar de server. Deze optie is alleen beschikbaar als **[!UICONTROL Upload file on the server]** is geselecteerd.
 * **[!UICONTROL Download]** is alleen beschikbaar als het bestand op de server is geüpload.
-* **[!UICONTROL Auto-detect format]** wordt gebruikt om het formaat van de gegevensbron opnieuw te initialiseren. Met deze optie kunt u de oorspronkelijke indelingen opnieuw toepassen op gegevens die zijn opgemaakt via het dialoogvenster **[!UICONTROL Click here to change the file format...]** -optie.
-* De **[!UICONTROL Advanced parameters]** Met de koppeling kunt u de brongegevens filteren en geavanceerde opties gebruiken. Vanuit dit scherm kunt u ervoor kiezen om slechts een deel van het bestand te importeren. U kunt ook een filter definiëren, bijvoorbeeld om alleen gebruikers van het type Prospect of Klant te importeren, op basis van de waarde van de corresponderende regel. Deze opties mogen alleen worden gebruikt door deskundige JavaScript-gebruikers.
+* **[!UICONTROL Auto-detect format]** wordt gebruikt om de indeling van de gegevensbron opnieuw te initialiseren. Met deze optie kunt u de oorspronkelijke indelingen opnieuw toepassen op gegevens die zijn opgemaakt via de optie **[!UICONTROL Click here to change the file format...]** .
+* Met de koppeling **[!UICONTROL Advanced parameters]** kunt u de brongegevens filteren en geavanceerde opties gebruiken. Vanuit dit scherm kunt u ervoor kiezen om slechts een deel van het bestand te importeren. U kunt ook een filter definiëren, bijvoorbeeld om alleen gebruikers van het type Prospect of Klant te importeren, op basis van de waarde van de corresponderende regel. Deze opties mogen alleen worden gebruikt door deskundige JavaScript-gebruikers.
 
 ### De bestandsindeling wijzigen {#changing-the-file-format}
 
-De **[!UICONTROL Click here to change the file format...]** Met deze optie kunt u de gegevens van het bronbestand opmaken, en met name het kolomscheidingsteken en het type gegevens voor elk veld opgeven. Deze configuratie wordt uitgevoerd via het volgende venster:
+Met de optie **[!UICONTROL Click here to change the file format...]** kunt u de gegevens van het bronbestand opmaken, en met name het kolomscheidingsteken en het type gegevens voor elk veld opgeven. Deze configuratie wordt uitgevoerd via het volgende venster:
 
 ![](assets/s_ncs_user_import_wizard02_3.png)
 
@@ -127,7 +127,7 @@ In deze stap kunt u beschrijven hoe de waarden van de bestandsvelden moeten word
 
 U kunt het resultaat van de configuratie weergeven in de voorvertoningszone in het onderste gedeelte van het venster.
 
-Klikken **[!UICONTROL OK]** om de opmaak op te slaan, klikt u vervolgens op **[!UICONTROL Next]** de volgende stap weergeven.
+Klik op **[!UICONTROL OK]** om de opmaak op te slaan en klik vervolgens op **[!UICONTROL Next]** om de volgende stap weer te geven.
 
 ## Stap 3 - Toewijzing van velden {#step-3---field-mapping}
 
@@ -135,18 +135,18 @@ U moet dan het bestemmingsschema selecteren en de gegevens van elke kolom op geb
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* De **[!UICONTROL Destination schema]** kunt u het schema selecteren waarin de gegevens worden geïmporteerd. Deze informatie is verplicht. Klik op de knop **[!UICONTROL Select link]** om een van de bestaande schema&#39;s te selecteren. Klikken **[!UICONTROL Edit link]** om de inhoud van de geselecteerde tabel weer te geven.
+* In het veld **[!UICONTROL Destination schema]** kunt u het schema selecteren waarin de gegevens worden geïmporteerd. Deze informatie is verplicht. Klik op het pictogram **[!UICONTROL Select link]** om een van de bestaande schema&#39;s te selecteren. Klik op **[!UICONTROL Edit link]** om de inhoud van de geselecteerde tabel weer te geven.
 * In de centrale tabel staan alle velden die in het bronbestand zijn gedefinieerd. Selecteer de velden die u wilt importeren om er een doelbestand aan te koppelen. Deze velden kunnen handmatig of automatisch worden toegewezen.
 
-  Als u een veld handmatig wilt toewijzen, klikt u op het selectievakje om het bronveld te selecteren en klikt u op de tweede kolom om de cel te activeren die overeenkomt met het geselecteerde veld. Klik op de knop **[!UICONTROL Edit expression]** om alle velden van de huidige tabel weer te geven. Selecteer het doelveld en klik op **[!UICONTROL OK]** om de toewijzing te valideren.
+  Als u een veld handmatig wilt toewijzen, klikt u op het selectievakje om het bronveld te selecteren en klikt u op de tweede kolom om de cel te activeren die overeenkomt met het geselecteerde veld. Klik vervolgens op het pictogram **[!UICONTROL Edit expression]** om alle velden van de huidige tabel weer te geven. Selecteer het doelveld en klik op **[!UICONTROL OK]** om de toewijzing te valideren.
 
-  Als u de bronvelden en doelvelden automatisch wilt koppelen, klikt u op de knop **[!UICONTROL Guess the destination fields]** rechts van de lijst met velden. De voorgestelde velden kunnen indien nodig worden gewijzigd.
+  Als u de bronvelden en doelvelden automatisch wilt koppelen, klikt u op het pictogram **[!UICONTROL Guess the destination fields]** rechts van de lijst met velden. De voorgestelde velden kunnen indien nodig worden gewijzigd.
 
   >[!IMPORTANT]
   >
   >Het resultaat van deze bewerking moet altijd worden gevalideerd voordat u verdergaat met de volgende stap.
 
-* U kunt een transformatie toepassen op de geïmporteerde velden. Klik hiertoe in de cel van het dialoogvenster **[!UICONTROL Transformation]** kolom die betrekking heeft op het betrokken veld, en selecteer de toe te passen transformatie.
+* U kunt een transformatie toepassen op de geïmporteerde velden. Klik hiertoe in de cel van de kolom **[!UICONTROL Transformation]** die betrekking heeft op het desbetreffende veld en selecteer de transformatie die u wilt toepassen.
 
   ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -162,26 +162,26 @@ Berekende velden zijn nieuwe kolommen die aan het bronbestand worden toegevoegd 
 
 Er zijn vier typen berekende velden:
 
-* **[!UICONTROL Fixed string]**: de waarde van het berekende veld is gelijk voor alle regels van het bronbestand. Hiermee kunt u de waarde instellen van een veld met records die zijn ingevoegd of bijgewerkt. U kunt bijvoorbeeld voor alle geïmporteerde records een markering instellen op &quot;ja&quot;.
+* **[!UICONTROL Fixed string]** : de waarde van het berekende veld is gelijk voor alle regels van het bronbestand. Hiermee kunt u de waarde instellen van een veld met records die zijn ingevoegd of bijgewerkt. U kunt bijvoorbeeld voor alle geïmporteerde records een markering instellen op &quot;ja&quot;.
 * **[!UICONTROL String with JavaScript tags]**: de waarde van het berekende veld is een tekenreeks met JavaScript-opdrachten.
 * **[!UICONTROL JavaScript expression]**: de waarde van het berekende veld is het resultaat van de evaluatie van een JavaScript-functie. De geretourneerde waarde kan een getal, een datum enzovoort zijn.
-* **[!UICONTROL Enumeration]**: de waarde van het veld wordt toegewezen aan de waarde in het bronbestand. De redacteur laat u de bronkolom specificeren en de lijst van opsommingswaarden ingaan, zoals in het volgende voorbeeld:
+* **[!UICONTROL Enumeration]** : de waarde van het veld wordt toegewezen op basis van een waarde in het bronbestand. De redacteur laat u de bronkolom specificeren en de lijst van opsommingswaarden ingaan, zoals in het volgende voorbeeld:
 
   ![](assets/s_ncs_user_import_wizard03_3.png)
 
-  De **[!UICONTROL Preview]** kunt u het resultaat van de gedefinieerde configuratie weergeven. Hier, **[!UICONTROL Subscription]** kolom is toegevoegd. De waarde wordt berekend op basis van de **Status** veld.
+  Op het tabblad **[!UICONTROL Preview]** kunt u het resultaat van de gedefinieerde configuratie weergeven. Hier is de kolom **[!UICONTROL Subscription]** toegevoegd. De waarde wordt berekend van het **gebied van de Status**.
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
 ## Stap 4 - Verzoening {#step-4---reconciliation}
 
-Met de afstemmingsstap van de importwizard kunt u de modus definiëren waarmee de gegevens uit het bestand worden afgestemd op de bestaande gegevens in de database en kunt u de prioriteitsregels instellen tussen de bestandsgegevens en de databasegegevens. Het configuratievenster ziet er als volgt uit:
+Met de afstemmingsstap van de importassistent kunt u de modus definiëren waarmee de gegevens uit het bestand worden afgestemd op de bestaande gegevens in de database en kunt u de prioriteitsregels instellen tussen de bestandsgegevens en de databasegegevens. Het configuratievenster ziet er als volgt uit:
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
 Het centrale gedeelte van het scherm bevat een structuur met de velden en tabellen van de Adobe Campaign-database waarnaar de gegevens worden geïmporteerd.
 
-Er zijn speciale opties beschikbaar voor elk knooppunt (tabel of veld). Wanneer u op het betrokken knooppunt klikt in de lijst, worden de parameters en een korte beschrijving ervan hieronder weergegeven. Het gedrag dat voor elk element wordt gedefinieerd, wordt weergegeven in het corresponderende **[!UICONTROL Behavior]** kolom.
+Er zijn speciale opties beschikbaar voor elk knooppunt (tabel of veld). Wanneer u op het betrokken knooppunt klikt in de lijst, worden de parameters en een korte beschrijving ervan hieronder weergegeven. Het gedrag dat voor elk element wordt gedefinieerd, wordt weergegeven in de corresponderende **[!UICONTROL Behavior]** -kolom.
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
@@ -189,7 +189,7 @@ Er zijn speciale opties beschikbaar voor elk knooppunt (tabel of veld). Wanneer 
 
 Voor elke tabel waarop de invoer betrekking heeft, moet u het type bewerking definiëren. De volgende bewerkingen zijn beschikbaar voor het hoofdelement van de database:
 
-* **[!UICONTROL Update or insertion]**: werkt de record bij als deze in de database bestaat en maakt deze zo niet.
+* **[!UICONTROL Update or insertion]** : werkt de record bij als deze in de database bestaat en maakt deze zo niet.
 * **[!UICONTROL Insertion]**: voegt records in de database in.
 * **[!UICONTROL Update]**: werkt alleen bestaande records bij (negeert andere records).
 * **[!UICONTROL Reconciliation only]**: zoekt naar de record in de database, maar voert geen update uit. Hiermee kunt u bijvoorbeeld de map met ontvangers koppelen om te importeren volgens een kolom van het bestand zonder de gegevens in de mappen bij te werken.
@@ -198,12 +198,12 @@ Voor elke tabel waarop de invoer betrekking heeft, moet u het type bewerking def
 De volgende opties zijn beschikbaar voor elk veld in de tabel waarop de invoer betrekking heeft:
 
 * **[!UICONTROL Update (empty) if source value is empty]**: in het geval van een update verwijdert de waarde in het veld de databasewaarde als het veld leeg is in het bronbestand. Anders wordt het databaseveld bewaard.
-* **[!UICONTROL Update only if destination is empty]**: de waarde van het bronbestand overschrijft de waarde in het databaseveld niet, tenzij het databaseveld leeg is. In dat geval wordt de waarde van het bronbestand gebruikt.
+* **[!UICONTROL Update only if destination is empty]**: de waarde van het bronbestand overschrijft de waarde in het databaseveld alleen als het databaseveld leeg is. In dat geval wordt de waarde van het bronbestand gebruikt.
 * **[!UICONTROL Update the field only when the record is inserted]**: tijdens een update- of invoegbewerking worden alleen nieuwe bronbestandsrecords geïmporteerd.
 
 >[!NOTE]
 >
->De definitie van een verzoeningssleutel is altijd **verplicht**, behalve in geval van invoeging zonder deduplicatie.
+>De definitie van een verzoeningssleutel is altijd **verplicht**, behalve in het geval van toevoeging zonder deduplicatie.
 
 ### Afstemmingssleutels {#reconciliation-keys}
 
@@ -231,18 +231,18 @@ Kies geen veld dat tijdens het importeren kan worden gewijzigd. Als dit gebeurt,
 >
 >Een &#39;duplicaat&#39; is een item dat aanwezig is in het bestand dat moet worden geïmporteerd en in de database.
 
-De **[!UICONTROL Management of doubles]** kunt u de deduplicatie van gegevens configureren. Deduplicatie betreft records die meerdere keren worden weergegeven **in het bronbestand** (of bronbestanden in geval van een import van meerdere bestanden), d.w.z. regels waarvoor de velden van de afstemmingssleutel identiek zijn.
+In het veld **[!UICONTROL Management of doubles]** kunt u de deduplicatie van gegevens configureren. De deduplicatie heeft betrekking op verslagen die verscheidene tijden **in het brondossier** (of brondossiers in het geval van een veelvoudig-dossierinvoer) verschijnen, d.w.z. lijnen waarvoor de gebieden van de verzoeningssleutel identiek zijn.
 
-* Dubbel beheer in **[!UICONTROL Update]** in de modus (de standaardmodus) wordt geen deduplicatie uitgevoerd. De laatste record heeft daarom prioriteit (omdat deze de gegevens van de voorgaande records bijwerkt). Het tellen van duplicaten wordt niet uitgevoerd in deze modus.
-* Dubbel beheer in **[!UICONTROL Ignore]** modus of **[!UICONTROL Reject entity]** Hiermee worden duplicaten van de import uitgesloten. In dit geval wordt geen record geïmporteerd.
-* In **[!UICONTROL Reject entity]** in de modus, wordt het element niet geïmporteerd en wordt een fout gegenereerd in de importlogboeken.
-* In **[!UICONTROL Ignore]** in de modus, wordt het element niet geïmporteerd, maar wordt geen spoor van de fout behouden. In deze modus kunt u de prestaties optimaliseren.
+* Duplicaatbeheer in de modus **[!UICONTROL Update]** (de standaardmodus) voert geen deduplicatie uit. De laatste record heeft daarom prioriteit (omdat deze de gegevens van de voorgaande records bijwerkt). Het tellen van duplicaten wordt niet uitgevoerd in deze modus.
+* Bij gedupliceerd beheer in de modus **[!UICONTROL Ignore]** of **[!UICONTROL Reject entity]** worden duplicaten van het importeren uitgesloten. In dit geval wordt geen record geïmporteerd.
+* In de modus **[!UICONTROL Reject entity]** wordt het element niet geïmporteerd en wordt een fout gegenereerd in de importlogboeken.
+* In de modus **[!UICONTROL Ignore]** wordt het element niet geïmporteerd, maar wordt geen spoor van de fout behouden. In deze modus kunt u de prestaties optimaliseren.
 
 >[!IMPORTANT]
 >
 >Deduplicatie wordt alleen in het geheugen uitgevoerd. De omvang van een invoer met deduplicatie is daarom beperkt. De limiet is afhankelijk van verschillende parameters (capaciteit van de toepassingsserver, activiteit, aantal velden in de sleutel, enz.). De maximale grootte voor een deduplicatie is ongeveer 1.000.000 regels.
 
-Deduplicatie heeft betrekking op een record die zowel in het bronbestand als in de database aanwezig is. Het betreft bewerkingen met alleen updates (d.w.z. **[!UICONTROL Update and insertion]** of **[!UICONTROL Update]**). De **[!UICONTROL Duplicate management]** Met deze optie kunt u de record bijwerken of negeren als deze zich in zowel het bronbestand als de database bevindt. De **[!UICONTROL Update or insert based on origin]** Deze optie behoort tot de optionele module en kan niet worden gebruikt in een standaardcontext.
+Deduplicatie heeft betrekking op een record die zowel in het bronbestand als in de database aanwezig is. Het betreft bewerkingen met alleen update (d.w.z. **[!UICONTROL Update and insertion]** of **[!UICONTROL Update]** ). Met de optie **[!UICONTROL Duplicate management]** kunt u de record bijwerken of negeren als deze zich in zowel het bronbestand als de database bevindt. De optie **[!UICONTROL Update or insert based on origin]** behoort tot de optionele module en kan niet worden gebruikt in een standaardcontext.
 
 De opties **[!UICONTROL Reject]** en **[!UICONTROL Ignore]** werken zoals hierboven beschreven.
 
@@ -252,11 +252,11 @@ De meeste gegevensoverdrachtsbewerkingen genereren verschillende soorten fouten 
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
-Details van deze afwijzingen kunnen worden bekeken via de **[!UICONTROL Rejects]** tab.
+De details van deze afwijzing&#39;s kunnen worden weergegeven via het tabblad **[!UICONTROL Rejects]** .
 
 ![](assets/s_ncs_user_import_rejets_tab.png)
 
-Er zijn twee typen afwijzing (het type wordt weergegeven in het dialoogvenster **[!UICONTROL Connector]** kolom):
+Er zijn twee typen afwijzing (het type wordt weergegeven in de kolom **[!UICONTROL Connector]** ):
 
 * Afwijzingen van de tekstconnector hebben betrekking op fouten die optreden tijdens het verwerken van de bestandsregel (berekend veld, gegevensanalyse, enz.). In dit geval wordt bij een fout de hele regel altijd geweigerd.
 * Afkeuringen van databaseverbindingen hebben betrekking op fouten die optreden tijdens het afstemmen van gegevens of het schrijven naar de database. In het geval van een import naar meerdere tabellen kan de afwijzing alleen betrekking hebben op een deel van de record (bijvoorbeeld bij het importeren van ontvangers en bijbehorende gebeurtenissen kan een fout het bijwerken van een gebeurtenis voorkomen zonder de ontvanger te negeren).
@@ -264,38 +264,38 @@ Er zijn twee typen afwijzing (het type wordt weergegeven in het dialoogvenster *
 Op de pagina voor het afstemmen van gegevens kunt u het gewenste veld voor het type foutbeheer per veld en tabel per tabel definiëren.
 
 * **[!UICONTROL Ignore and log a warning]**: alle velden worden geïmporteerd in de database, behalve de velden die een fout hebben gegenereerd.
-* **[!UICONTROL Reject parent element]**: de gehele regel van de record wordt afgewezen, niet alleen het veld dat een fout heeft veroorzaakt.
-* **[!UICONTROL Reject all elements]**: de importstop en alle elementen van de record worden geweigerd.
+* **[!UICONTROL Reject parent element]** : de volledige regel van de record wordt geweigerd, niet alleen het veld dat een fout heeft veroorzaakt.
+* **[!UICONTROL Reject all elements]** : het importeren wordt gestopt en alle elementen van de record worden geweigerd.
 
   ![](assets/s_ncs_user_import_wizard04_4.png)
 
 De structuur in het afstotingsscherm van een importinstantie geeft aan welke velden zijn geweigerd en waar de fouten zijn opgetreden.
 
-U kunt een bestand met deze records genereren via het dialoogvenster **[!UICONTROL Export rejects]** pictogram:
+U kunt een bestand met deze records genereren via het pictogram **[!UICONTROL Export rejects]** :
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
 ## Stap 5 - Extra stap bij het importeren van ontvangers {#step-5---additional-step-when-importing-recipients}
 
-In de volgende stap van de wizard Importeren kunt u de map selecteren of maken waarin gegevens worden geïmporteerd, geïmporteerde ontvangers automatisch toewijzen met een (nieuwe of bestaande) lijst en ontvangers abonneren op een service.
+In de volgende stap van de importassistent kunt u de map selecteren of maken waarin gegevens worden geïmporteerd, kunt u geïmporteerde ontvangers automatisch toewijzen aan een (nieuwe of bestaande) lijst en kunt u ontvangers aan een service toewijzen.
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
 >[!NOTE]
 >
->Deze stap wordt alleen weergegeven wanneer u ontvangers importeert en wanneer u de standaardtabel voor Adobe Campaign-ontvangers gebruikt (**nms:ontvanger**).
+>Deze stap verschijnt wanneer het invoeren slechts ontvangers en wanneer het gebruiken van de standaardAdobe Campaign ontvangerslijst (**nms:ontvanger**).
 
-* Klik op de knop **[!UICONTROL Edit]** koppelingen maken om de map, de lijst of de service te selecteren waaraan u de ontvangers wilt koppelen of zich erop wilt abonneren.
+* Klik op de koppelingen in **[!UICONTROL Edit]** om de map, de lijst of de service te selecteren waaraan u de ontvangers wilt koppelen of zich erop wilt abonneren.
 
    1. Importeren in een map
 
-      De **[!UICONTROL Edit...]** koppeling van de **[!UICONTROL Import into a folder]** kunt u de map selecteren of maken waarin de ontvangers worden geïmporteerd. Als standaard geen partitie is gedefinieerd, worden de gegevens geïmporteerd in de standaardmap van de operator.
+      Met de koppeling **[!UICONTROL Edit...]** in de sectie **[!UICONTROL Import into a folder]** kunt u de map selecteren of maken waarin de ontvangers worden geïmporteerd. Als standaard geen partitie is gedefinieerd, worden de gegevens geïmporteerd in de standaardmap van de operator.
 
       >[!NOTE]
       >
-      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Meer informatie in [Toegangsbeheer voor mappen](../../platform/using/access-management-folders.md).
+      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Leer meer in [ toegangsbeheer van de Omslag ](../../platform/using/access-management-folders.md).
 
-      Als u de importmap wilt selecteren, klikt u op de pijl rechts van de knop **[!UICONTROL Folder]** en selecteer de desbetreffende map. U kunt ook de opdracht **[!UICONTROL Select link]** om de structuur weer te geven in een nieuw venster of een nieuwe map te maken.
+      Als u de importmap wilt selecteren, klikt u op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteert u de desbetreffende map. U kunt het pictogram **[!UICONTROL Select link]** ook gebruiken om de structuur in een nieuw venster weer te geven of een nieuwe map te maken.
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
@@ -303,17 +303,17 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      De map wordt toegevoegd onder het huidige knooppunt. Voer de naam van de nieuwe map in, klik op Enter om te bevestigen en klik vervolgens op **[!UICONTROL OK]**.
+      De map wordt toegevoegd onder het huidige knooppunt. Voer de naam van de nieuwe map in, klik op Enter om te bevestigen en klik op **[!UICONTROL OK]** .
 
       ![](assets/s_ncs_user_import_wizard05_4.png)
 
    1. Koppelen aan een lijst
 
-      De **[!UICONTROL Edit...]** in de **[!UICONTROL Add recipients to a list]** kunt u een lijst selecteren of maken waarin de ontvangers worden geïmporteerd.
+      Met de koppeling **[!UICONTROL Edit...]** in de sectie **[!UICONTROL Add recipients to a list]** kunt u een lijst selecteren of maken waarin de ontvangers worden geïmporteerd.
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      U kunt een nieuwe lijst voor deze ontvangers maken door op **[!UICONTROL Select link]** vervolgens **[!UICONTROL Create]**. De opstelling en het beheer van lijsten worden weergegeven in [deze sectie](../../platform/using/creating-and-managing-lists.md).
+      U kunt een nieuwe lijst voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op **[!UICONTROL Create]** te klikken. De verwezenlijking en het beheer van lijsten worden voorgesteld in [ deze sectie ](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -321,20 +321,20 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
    1. Abonneren op een service
 
-      Als u alle geïmporteerde ontvangers wilt abonneren op een inlichtingenservice, klikt u op de knop **[!UICONTROL Edit...]** koppeling van de **[!UICONTROL Subscribe recipients to a service]** om de informatiedienst te selecteren of te creëren waarop de ontvangers zullen worden geabonneerd. U kunt de **[!UICONTROL Send a confirmation message]** optie: De inhoud van dit bericht wordt bepaald in het leveringsmalplaatje verbonden aan de abonnementsdienst.
+      Als u alle geïmporteerde ontvangers wilt abonneren op een informatieservice, klikt u op de koppeling **[!UICONTROL Edit...]** in de sectie **[!UICONTROL Subscribe recipients to a service]** om de informatieservice te selecteren of te maken waarop de ontvangers zich moeten abonneren. U kunt de optie **[!UICONTROL Send a confirmation message]** selecteren: de inhoud van dit bericht wordt gedefinieerd in de leveringssjabloon die is gekoppeld aan de abonnementenservice.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      U kunt een nieuwe service voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens de **[!UICONTROL Create]** pictogram. Het beheer van de informatiediensten is te vinden in [deze sectie](../../delivery/using/managing-subscriptions.md).
+      U kunt een nieuwe service voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op het pictogram **[!UICONTROL Create]** te klikken. Het beheer van de informatiediensten wordt voorgesteld in [ deze sectie ](../../delivery/using/managing-subscriptions.md).
 
-* Gebruik de **[!UICONTROL Origin]** veld voor het toevoegen van informatie over de oorsprong van ontvangers aan hun profielen. Deze informatie is met name nuttig in het kader van een meervoudige import.
+* Gebruik het veld **[!UICONTROL Origin]** om informatie over de oorsprong van ontvangers toe te voegen aan hun profielen. Deze informatie is met name nuttig in het kader van een meervoudige import.
 
-Klikken **[!UICONTROL Next]** om deze stap te valideren en de volgende stap weer te geven.
+Klik op **[!UICONTROL Next]** om deze stap te valideren en de volgende stap weer te geven.
 
 ## Stap 6 - Het importeren starten {#step-6---launching-the-import}
 
-In de laatste stap van de wizard kunt u gegevensimport starten. Om dit te doen, klik **[!UICONTROL Start]** knop.
+In de laatste stap van de assistent kunt u gegevensimport starten. Klik hiertoe op de knop **[!UICONTROL Start]** .
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-U kunt vervolgens de uitvoering van de importtaak controleren (zie [Uitvoering van taken controleren](../../platform/using/monitoring-jobs-execution.md).
+U kunt de uitvoering van de de invoerbaan dan controleren (zie [ de baanuitvoering van de Monitor ](../../platform/using/monitoring-jobs-execution.md).

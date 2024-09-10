@@ -4,7 +4,7 @@ title: Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur
 description: Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 5%
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Implementatie {#implementation}
 
-1. Een extensie toevoegen aan de `nms:inSMS` schema op uw exemplaar van de Marketing. De extensie voegt een nieuw kenmerk toe aan de `nms:inSMS` schema en registreer de primaire sleutel van het inSMS- verslag die uit de Midden-sourcing instantie komt bij.
+1. Voeg een extensie toe aan het schema `nms:inSMS` op uw marketingexemplaar. De extensie voegt een nieuw kenmerk toe aan het `nms:inSMS` -schema en houdt de primaire sleutel van de inSMS-record die afkomstig is van de instantie Midden-sourcing bij.
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. Als u de wijzigingen die zijn aangebracht in de schema&#39;s wilt toepassen, start u de wizard voor databaseupdates. Deze wizard is toegankelijk via **Gereedschappen** > **Geavanceerd** > **Databasestructuur bijwerken**. Het controleert of de fysieke structuur van het gegevensbestand zijn logische beschrijving aanpast en de SQL updatescripts uitvoert. [Meer informatie](../../configuration/using/updating-the-database-structure.md)
+1. Om de wijzigingen toe te passen die aan de schema&#39;s worden aangebracht, lanceer de medewerker van de gegevensbestandupdate. Deze medewerker is toegankelijk via **Hulpmiddelen** > **Geavanceerd** > **de gegevensbestandstructuur van de Update**. Het controleert of de fysieke structuur van het gegevensbestand zijn logische beschrijving aanpast en de SQL updatescripts uitvoert. [Meer informatie](../../configuration/using/updating-the-database-structure.md)
 
-1. Een back-up maken van uw workflow met de **Binnenkomende SMS-activiteit**.
+1. Het einde en steun uw werkschema dat de **Binnenkomende activiteit van SMS** bevat.
 
-   Maak een back-up van de overeenkomende optieaanwijzer met de volgende notatie `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   Maak een back-up van de overeenkomende aanwijzer van de optie met de volgende notatie `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}` .
 
 [Meer informatie over back-ups](../../production/using/backup.md)
 
-1. (**OPTIONEEL**) als u reeds een activiteit van de Planner gebruikt, open het werkschema en herconfigureer het als volgt:
+1. (**OPTIONEEL**) als u reeds een activiteit van de Planner gebruikt, open het werkschema en hervorm het als volgt:
 
-   1. Herhaal de huidige instellingen van het dialoogvenster **Schema** tabblad van uw **Binnenkomende SMS** activiteit in uw externe **Planner** activiteit.
+   1. Herhaal de huidige montages van het **Programma** lusje van uw **Binnenkomende activiteit van SMS** in uw externe **planner** activiteit.
 
-   1. De huidige instelling uitschakelen in het dialoogvenster **Schema** tabblad van **Binnenkomende SMS** activiteit.
+   1. Maak het huidige plaatsen in het **Programma** lusje van **Binnenkomende activiteit van SMS** onbruikbaar.
 
       ![](assets/inbound_sms_1.png)
 
-1. Werk de **Binnenkomende SMS** aangepast script.
+1. Werk **Binnenkomend SMS** douanescript bij.
 
    Vervang het onderstaande blok. Dit script kan variëren als u deze code eerder hebt aangepast.
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
    Volg de onderstaande voorwaarden:
 
-   * Voer de werkelijke waarde in voor `<EXTERNAL_ACCOUNT_ID>`, bijvoorbeeld `var iExtAccountId=72733155`.
+   * Voer de werkelijke waarde in voor `<EXTERNAL_ACCOUNT_ID>` , bijvoorbeeld `var iExtAccountId=72733155` .
    * Zorg ervoor dat u de volgende elementen in het aangepaste script opneemt:
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`

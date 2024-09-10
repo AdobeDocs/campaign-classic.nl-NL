@@ -5,7 +5,7 @@ description: Meer informatie over het definiëren van extra SQL-functie
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aanvullende SQL-functies definiëren{#adding-additional-sql-functions}
 
-Met Adobe Campaign kan de gebruiker definiëren **hun eigen functies** die tot SQL functies kunnen toegang hebben, zowel die aangeboden door het gegevensbestand als die die niet reeds beschikbaar in de console zijn. Dit is nuttig voor geaggregeerde functies (gemiddelde, maximum, som) bijvoorbeeld, die alleen op de server kunnen worden berekend of wanneer de database een eenvoudigere manier biedt om bepaalde functies te implementeren, in plaats van &quot;handmatig&quot; de expressie in de console te schrijven (bijvoorbeeld datumbeheer).
+Adobe Campaign staat de gebruiker toe om **hun eigen functies** te bepalen die tot SQL functies kunnen toegang hebben, zowel die aangeboden door het gegevensbestand als die die niet reeds beschikbaar in de console zijn. Dit is nuttig voor geaggregeerde functies (gemiddelde, maximum, som) bijvoorbeeld, die alleen op de server kunnen worden berekend of wanneer de database een eenvoudigere manier biedt om bepaalde functies te implementeren, in plaats van &quot;handmatig&quot; de expressie in de console te schrijven (bijvoorbeeld datumbeheer).
 
 Dit mechanisme kan ook worden gebruikt als u een recente of ongewone SQL-functie van de database-engine wilt gebruiken, die nog niet door de Adobe Campaign-console wordt aangeboden.
 
@@ -22,13 +22,13 @@ Zodra deze functies zijn toegevoegd, zullen zij in de uitdrukkingsredacteur enke
 
 >[!IMPORTANT]
 >
->SQL de functievraag in de console wordt niet meer van nature verzonden naar de server. Daarom wordt het hier beschreven mechanisme **de enige manier om te roepen** op de ongeplande SQL functieserver.
+>SQL de functievraag in de console wordt niet meer van nature verzonden naar de server. Het hier beschreven mechanisme wordt daarom **de enige manier om** op de ongeplande SQL functieserver te roepen.
 
 ## Installatie {#installation}
 
-De functie(s) die moet worden toegevoegd, bevinden zich in een **&quot;package&quot;-bestand in XML-indeling**, waarvan de structuur in de volgende alinea nader wordt beschreven.
+De toe te voegen functie(s) bevindt (bevinden) zich in een **&quot;package&quot;-bestand in XML-indeling** , waarvan de structuur in de volgende alinea wordt beschreven.
 
-Als u de toepassing vanuit de console wilt installeren, selecteert u de **Gereedschappen/Geavanceerd/Importeren** opties in het menu, en vervolgens de **[!UICONTROL Install from file]** en volgt u de instructies in de wizard Importeren.
+Om het van de console te installeren, selecteer **Hulpmiddelen/Geavanceerde/het pakket van de Invoer** opties van het menu, toen **[!UICONTROL Install from file]**, en volg de instructies in de invoermedewerker.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Als u de toepassing vanuit de console wilt installeren, selecteert u de **Gereed
 
 ## Algemene structuur van het te importeren pakket {#general-structure-of-package-to-import}
 
-De functie(s) die moet worden toegevoegd, vindt u in de **&quot;package&quot;-bestand** in XML-indeling. Hier volgt een voorbeeld:
+De toe te voegen functie(s) kan in het **&quot;pakket&quot;dossier** in het formaat van XML worden gevonden. Hier volgt een voorbeeld:
 
 ```
 <?xml version="1.0" encoding='ISO-8859-1' ?>
@@ -63,14 +63,14 @@ De functie(s) die moet worden toegevoegd, vindt u in de **&quot;package&quot;-be
 </package>
 ```
 
-* De **name**, **namespace** en **label** uitsluitend ter informatie. Zij laten u een samenvatting van het pakket in de geïnstalleerde pakketlijst (Ontdekkingsreiziger/Beleid/het beheer van het Pakket/Geïnstalleerde pakketten) bekijken.
-* De **buildVersion** en **buildNumber** velden zijn verplicht. Ze moeten overeenkomen met het servernummer waarmee de console is verbonden. Deze informatie vindt u in het vak &quot;Help/Info&quot;.
-* de volgende blokken, **entiteiten** en **funclist** zijn verplicht. In funcList zijn de velden &quot;name&quot; en &quot;namespace&quot; verplicht, maar de gebruiker kan zelf beslissen welke naam hij of zij gebruikt en geven de functielijst op unieke wijze aan.
+* De **naam**, **namespace** en **etiket** zijn slechts voor informatiedoeleinden. Zij laten u een samenvatting van het pakket in de geïnstalleerde pakketlijst (Ontdekkingsreiziger/Beleid/het beheer van het Pakket/Geïnstalleerde pakketten) bekijken.
+* De **buildVersion** en **buildNumber** gebieden zijn verplicht. Ze moeten overeenkomen met het servernummer waarmee de console is verbonden. Deze informatie vindt u in het vak &quot;Help/Info&quot;.
+* De volgende blokken, **entiteiten** en **funclist** zijn verplicht. In funcList zijn de velden &quot;name&quot; en &quot;namespace&quot; verplicht, maar de gebruiker kan zelf beslissen welke naam hij of zij gebruikt en geven de functielijst op unieke wijze aan.
 
   Dit betekent dat als een andere lijst met functies met dezelfde naamruimte/naamcombinatie (hier &quot;cus::myList&quot;) wordt geïmporteerd, de eerder geïmporteerde functies worden verwijderd. Omgekeerd geldt dat als u dit naamruimte-/naampaar wijzigt, de nieuwe reeks geïmporteerde functies wordt toegevoegd aan de vorige.
 
-* De **groep** Met een element kunt u de functiegroep opgeven waarin de geïmporteerde functie(s) worden weergegeven in de functie-editor. Het kenmerk @name kan een naam zijn die al bestaat (in welk geval de functies worden toegevoegd aan de desbetreffende groep) of een nieuwe naam (in welk geval de functie wordt weergegeven in een nieuwe groep).
-* Herinnering: mogelijke waarden voor het kenmerk @name in het dialoogvenster `<group>` element are:
+* Het **groep** element laat u de functiegroep specificeren waarin de ingevoerde functie(s) in de functieredacteur zullen verschijnen. Het kenmerk @name kan een naam zijn die al bestaat (in welk geval de functies worden toegevoegd aan de desbetreffende groep) of een nieuwe naam (in welk geval de functie wordt weergegeven in een nieuwe groep).
+* Herinnering: mogelijke waarden voor het kenmerk @name in het element `<group>` zijn:
 
   ```
     name="aggregate"      ( label="Aggregates"         )
@@ -86,13 +86,13 @@ De functie(s) die moet worden toegevoegd, vindt u in de **&quot;package&quot;-be
 >
 >Zorg ervoor dat u het kenmerk @label invult: dit is de naam die wordt weergegeven in de lijst met beschikbare functies. Als u niets invoert, heeft de groep geen naam. Als u echter een andere naam invoert dan de bestaande naam, verandert de naam van de hele groep.
 
-Als u functies wilt toevoegen aan verschillende groepen, kunt u verschillende `<group>`  elementen worden in dezelfde lijst bijgehouden.
+Als u functies wilt toevoegen aan verschillende groepen, kunt u verschillende `<group>` -elementen in dezelfde lijst laten bijhouden.
 
-Tot slot `<group>` -element kan de definitie van een of meer functies bevatten, dat is het doel van het pakketbestand. De  `<function>`   het element wordt in de volgende alinea nader beschreven.
+Tot slot kan een `<group>` -element de definitie van een of meer functies bevatten, dat is het doel van het pakketbestand. De `<function>`   het element wordt in de volgende alinea nader beschreven.
 
 ## Functiebeschrijving &lt;function>&lt;/function> {#function-descriptor--function-}
 
-Het onderhavige geval is een algemeen geval waarin wij de **functie-implementatie**.
+Het hier voorgestelde geval is een algemeen geval waarbij wij de **functietoevoer** willen verstrekken.
 
 Hieronder ziet u een voorbeeld van een functie van &quot;relatieve rijpheid&quot; die, op basis van een leeftijd, aangeeft hoeveel jaren de persoon als volwassen wordt beschouwd.
 
@@ -104,9 +104,9 @@ Hieronder ziet u een voorbeeld van een functie van &quot;relatieve rijpheid&quot
     </function>
 ```
 
-De **@name** in het veld wordt de naam van de functie weergegeven en in het veld args wordt de lijst met parameters weergegeven die in de beschrijving wordt weergegeven. In dit geval wordt de functie weergegeven als &quot;relativeMaturity&quot; ( `<age>` )&quot; in het venster Functie selecteren.
+Het veld **@name** verwijst naar de naam van de functie en &quot;args&quot; is de lijst met parameters die in de beschrijving wordt weergegeven. In dit geval wordt de functie weergegeven als &quot;relativeMaturity ( `<age>` )&quot; in het venster van de functieselectie.
 
-* **help** Dit is het veld dat onder aan het venster van de expressieeditor wordt weergegeven.
+* **hulp** is het gebied dat bij de bodem van het venster van de uitdrukkingsredacteur wordt getoond.
 * **@display** is een informatief bericht.
 
   >[!NOTE]
@@ -117,12 +117,12 @@ De **@name** in het veld wordt de naam van de functie weergegeven en in het veld
   >
   >De beschrijving moet een tekenreeks van geldige XML-tekens zijn. Let op het gebruik van &#39;&lt;&#39; en &#39;>&#39; in plaats van &lt; en >.
 
-* **@type** Dit is het type geretourneerde waarde van de functie en is een standaardwaarde (lang, tekenreeks, byte, datumtime..). Als het wordt weggelaten, bepaalt de server het beste type onder de beschikbare types binnen de uitdrukking die de functie uitvoert.
-* **@minArgs** en **maxArgs** Hiermee wordt het aantal parameters (minimum en maximum) voor een parameter opgegeven. Voor een functie met 2 parameters zijn minArgs en maxArgs bijvoorbeeld 2 en 2. Voor drie parameters, plus 1 optioneel, zijn deze respectievelijk 3 en 4.
-* Tot slot de **providerPart** element verstrekt de functie implementatie.
+* **@type** is het type van de functieretratie en is een standaardwaarde (lang, koord, byte, datetime..). Als het wordt weggelaten, bepaalt de server het beste type onder de beschikbare types binnen de uitdrukking die de functie uitvoert.
+* **@minArgs** en **maxArgs** wijst het aantal parameters (minimum en maximum) voor een parameter aan. Voor een functie met 2 parameters zijn minArgs en maxArgs bijvoorbeeld 2 en 2. Voor drie parameters, plus 1 optioneel, zijn deze respectievelijk 3 en 4.
+* Tot slot verstrekt het **providerPart** element de functie implementatie.
 
-   * De **provider** attribuut is mandatory, it specifies the database systems for the implementation. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
-   * De **@body** bevat de functie-implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (geen codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
+   * Het **leverancier** attribuut is verplicht, specificeert het de gegevensbestandsystemen waarvoor de implementatie wordt verstrekt. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
+   * Het **@body** attribuut bevat de functie implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (geen codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
 
   >[!NOTE]
   >
@@ -130,7 +130,7 @@ De **@name** in het veld wordt de naam van de functie weergegeven en in het veld
 
 ## Functiebeschrijving &#39;Pass-through&#39; {#pass-through--function-descriptor}
 
-Een speciale functiebeschrijving is de **&quot;pass-through&quot;** blok, met een niet gespecificeerd &quot;leverancier&quot;gegevensbestandsysteem. In dit geval kan de implementatie van de &#39;body&#39; slechts één functieaanroep bevatten met een syntaxis die niet afhankelijk is van de gebruikte database. Ondertussen is het blok &quot;ProviderPart&quot; uniek.
+Een speciale functiebeschrijver is het **&quot;pass-through&quot;** blok, met een niet gespecificeerd &quot;leverancier&quot;gegevensbestandsysteem. In dit geval kan de implementatie van de &#39;body&#39; slechts één functieaanroep bevatten met een syntaxis die niet afhankelijk is van de gebruikte database. Ondertussen is het blok &quot;ProviderPart&quot; uniek.
 
 ```
     <function name="CountAll" args="()" help="Counts the values returned (all fields together)"

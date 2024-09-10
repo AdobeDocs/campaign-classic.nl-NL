@@ -5,7 +5,7 @@ description: Leer belangrijke stappen om een rapport te creëren
 feature: Reporting, Monitoring
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Om statistieken over de gegevens in uw gegevensbestand van de Campagne te produc
 
 Voer de volgende stappen uit om een analyserapport over uw gegevens te maken, te publiceren en te leveren:
 
-1. Een nieuw rapport maken: zie [Een nieuw rapport maken](../../reporting/using/creating-a-new-report.md),
-1. Verzamel de gegevens die u wilt analyseren: zie [Gegevens verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md) en [De context gebruiken](../../reporting/using/using-the-context.md),
-1. De inhoud van het rapport definiëren met de activiteiten en de bijbehorende containers: zie [Een tabel maken](../../reporting/using/creating-a-table.md), [Een diagram maken](../../reporting/using/creating-a-chart.md) en [Element-indeling](../../reporting/using/element-layout.md),
-1. Configureer de weergaveopties: weergavetype, gedeelde rapporten: zie [Weergavecontext rapporteren](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Een voorwaardelijke inhoud definiëren](../../reporting/using/defining-a-conditional-content.md) en [Toegang tot het rapport configureren](../../reporting/using/configuring-access-to-the-report.md),
-1. Rapport publiceren (publicatietovenaar): verwijs naar [Het rapport publiceren](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. Converteer het rapport: export, history, display in a browser: verwijs naar [Acties inzake rapporten](../../reporting/using/actions-on-reports.md).
+1. Creeer een nieuw rapport: verwijs naar [ creeer een nieuw rapport ](../../reporting/using/creating-a-new-report.md),
+1. Verzamel de gegevens om te analyseren: verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) te analyseren en [ de context ](../../reporting/using/using-the-context.md) gebruiken,
+1. Bepaal de inhoud van het rapport met de activiteiten en hun containers: verwijs naar [ creeer een lijst ](../../reporting/using/creating-a-table.md), [ Creërend een grafiek ](../../reporting/using/creating-a-chart.md) en [ lay-out van het Element ](../../reporting/using/element-layout.md),
+1. Vorm de vertoningsopties: vertoningstype, gedeelde rapporten: verwijs naar [ de vertoningscontext van het Rapport ](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [ bepalen een voorwaardelijke inhoud ](../../reporting/using/defining-a-conditional-content.md) en [ vormen toegang tot het rapport ](../../reporting/using/configuring-access-to-the-report.md),
+1. Publish het rapport (publicatieassistent): verwijs naar [ Publish het rapport ](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Zet het rapport om: de uitvoer, de geschiedenis, de vertoning in browser: verwijs naar [ Acties op rapporten ](../../reporting/using/actions-on-reports.md).

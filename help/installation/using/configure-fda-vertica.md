@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Toegang tot [!DNL Vertica Analytics] configureren
-description: Leer hoe te om toegang te vormen tot [!DNL Vertica Analytics] in FDA
+description: Leer hoe te om toegang tot  [!DNL Vertica Analytics]  in FDA te vormen
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: fcc42e84817277ad46218165b5acef370747c1ca
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 
 
-Campagne gebruiken **Federale gegevenstoegang** (FDA) om informatie te verwerken die in een externe database is opgeslagen. Voer de onderstaande stappen uit om toegang te configureren voor [!DNL Vertica Analytics].
+De optie van de Toegang van Gegevens van de Campagne van het gebruik **Federated** (FDA) om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Vertica Analytics] te configureren.
 
-1. Configureren [!DNL Vertica Analytics] op [CentOS](#vertica-centos), [Windows](#vertica-windows) of [Debian](#vertica-debian)
-1. Vorm [!DNL Vertica Analytics] [externe rekening](#vertica-external) in Campagne
+1. Vorm [!DNL Vertica Analytics] op [ CentOS ](#vertica-centos), [ Vensters ](#vertica-windows) of [ Debian ](#vertica-debian)
+1. Vorm de [!DNL Vertica Analytics] [ externe rekening ](#vertica-external) in Campagne
 
 ![](assets/snowflake_3.png)
 
 ## [!DNL Vertica Analytics] op CentOS {#vertica-centos}
 
-Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit:
+Voer de onderstaande stappen uit om [!DNL Vertica Analytics] op CentOS te configureren:
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Vertica Analytics]. [Klik hier](https://www.vertica.com/download/vertica/client-drivers/) en download de nieuwste Linux RPM.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Vertica Analytics] . [ klik hier ](https://www.vertica.com/download/vertica/client-drivers/) en download recentste Linux RPM.
 
 1. U moet dan unixODBC met het volgende bevel installeren:
 
@@ -38,7 +38,7 @@ Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit
    yum install unixODBC.x86_64
    ```
 
-1. Als u eerder de [!DNL Vertica Analytics] Server, wordt al een ODBC-stuurprogramma geïnstalleerd. Werk in dit geval het station als volgt bij:
+1. Als u de [!DNL Vertica Analytics] Server eerder hebt geïnstalleerd, wordt al een ODBC-stuurprogramma geïnstalleerd. Werk in dit geval het station als volgt bij:
 
    ```
    #Switch to root
@@ -77,19 +77,19 @@ Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#vertica-external).
+1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe account configureren. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [ deze sectie ](#vertica-external).
 
 ## [!DNL Vertica Analytics] in Windows {#vertica-windows}
 
-1. Download de [ODBC-stuurprogramma voor Windows](https://www.vertica.com/download/vertica/client-drivers/). Om de bestuurder voor Vensters te installeren, zult u .NET Kader 3.5 moeten toelaten of de installatietovenaar zal proberen om het automatisch toe te laten en te downloaden.
+1. Download de [ bestuurder ODBC voor Vensters ](https://www.vertica.com/download/vertica/client-drivers/). Om de bestuurder voor Vensters te installeren, zult u .NET Kader 3.5 moeten toelaten of de installatiemedewerker zal proberen om het automatisch toe te laten en te downloaden.
 
-1. Configureer het ODBC-stuurprogramma in Windows. Raadpleeg voor meer informatie hierover [deze pagina](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. Configureer het ODBC-stuurprogramma in Windows. Voor meer op dit, verwijs naar [ deze pagina ](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#vertical-external).
+1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe account configureren. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [ deze sectie ](#vertical-external).
 
 ## [!DNL Vertica Analytics] op Debian {#vertica-debian}
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Vertica Analytics]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) beginnen met downloaden.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Vertica Analytics] . [ klik hier ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) begin het downloaden.
 
 1. U moet dan unixODBC met het volgende bevel installeren:
 
@@ -97,7 +97,7 @@ Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit
    apt-get install unixODBC
    ```
 
-1. Als u eerder de [!DNL Vertica Analytics] Server, wordt al een ODBC-stuurprogramma geïnstalleerd. Werk in dit geval het station als volgt bij:
+1. Als u de [!DNL Vertica Analytics] Server eerder hebt geïnstalleerd, wordt al een ODBC-stuurprogramma geïnstalleerd. Werk in dit geval het station als volgt bij:
 
    ```
    #Switch to root
@@ -139,29 +139,29 @@ Om te vormen [!DNL Vertica Analytics] Voer in CentOS de onderstaande stappen uit
    Port = 5433
    ```
 
-1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe rekening. Voor meer informatie over het configureren van uw externe account raadpleegt u [deze sectie](#vertica-external).
+1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica Analytics] externe account configureren. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [ deze sectie ](#vertica-external).
 
-## [!DNL Vertica Analytics] externe rekening {#vertica-external}
+## [!DNL Vertica Analytics] externe account {#vertica-external}
 
-U moet een [!DNL Vertica Analytics] externe account om uw Campagne-instantie aan te sluiten op uw [!DNL Vertica Analytics] externe database.
+U moet een [!DNL Vertica Analytics] externe account maken om uw Campagne-instantie te verbinden met uw [!DNL Vertica Analytics] externe database.
 
-1. Van campagne **[!UICONTROL Explorer]**, klikt u op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]** .
 
 1. Klik op **[!UICONTROL New]**.
 
-1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
+1. Selecteer **[!UICONTROL External database]** als de externe account van uw account **[!UICONTROL Type]** .
 
-1. Vorm **[!UICONTROL Vertica Analytics]** externe account, moet u opgeven:
+1. Configureer de externe account van **[!UICONTROL Vertica Analytics]** , u moet het volgende opgeven:
 
    * **[!UICONTROL Type]**: [!DNL Vertica Analytics]
 
-   * **[!UICONTROL Server]**: URL van de [!DNL Vertica Analytics] server
+   * **[!UICONTROL Server]**: URL van de [!DNL Vertica Analytics] -server
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
-   * **[!UICONTROL Password]**: Wachtwoord voor gebruikersaccount
+   * **[!UICONTROL Password]**: wachtwoord gebruikersaccount
 
-   * **[!UICONTROL Database]**: Naam van de database
+   * **[!UICONTROL Database]**: naam van de database
 
    ![](assets/vertica.png)
 

@@ -5,7 +5,7 @@ description: Voorbeelden van schemabewerking
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 2%
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## Een tabel uitbreiden {#extending-a-table}
 
-Om het **nms:ontvanger** schema ontvanger lijst, pas de volgende procedure toe:
+Om **nms uit te breiden:ontvankelijke** schema ontvankelijke lijst, pas de volgende procedure toe:
 
-1. Het extensieschema maken (**focus:extensie**) met behulp van de volgende gegevens:
+1. Creeer het extensieschema (**focus:uitbreiding**) gebruikend de volgende gegevens:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ Om het **nms:ontvanger** schema ontvanger lijst, pas de volgende procedure toe:
    </srcSchema>
    ```
 
-   In dit voorbeeld wordt een geïndexeerd veld (**getrouwheid**) wordt toegevoegd en **locatie** element (dat al in het **nms:ontvanger** schema) wordt aangevuld met een opgesomd veld (**gebied**).
+   In dit voorbeeld, wordt een geïndexeerd gebied (**getrouwheid**) toegevoegd, en het **plaats** element (dat reeds in **nms bestond:ontvankelijk** schema) wordt aangevuld met een opgesomd gebied (**gebied**).
 
    >[!IMPORTANT]
    >
-   >Vergeet niet de **extendedSchema** kenmerk voor verwijzing naar het extensieschema.
+   >Herinner me om de **extendedSchema** attributen toe te voegen om het uitbreidingsschema van verwijzingen te voorzien.
 
-1. Controleer of het uitgebreide schema het **nms:ontvanger** schema en dat de aanvullende gegevens aanwezig zijn:
+1. Controle dat het uitgebreide schema **nms is:ontvangend** schema en dat de extra gegevens aanwezig zijn:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -72,7 +72,7 @@ Om het **nms:ontvanger** schema ontvanger lijst, pas de volgende procedure toe:
    </schema>
    ```
 
-   Het SQL-script dat is gegenereerd op basis van de wizard Database bijwerken ziet er als volgt uit:
+   Het SQL manuscript dat van de medewerker van de gegevensbestandupdate wordt geproduceerd is als volgt:
 
    ```
    ALTER TABLE NmsRecipient ADD iFidelity INTEGER;
@@ -101,7 +101,7 @@ Bronschema van tabel bestellen:
 </srcSchema>
 ```
 
-Het tabeltype is **automatische** om een automatisch gegenereerde primaire sleutel te maken die moet worden gebruikt door de samenvoeging van de koppeling met de ontvangende tabel.
+Het lijsttype is **automatische controle** om een auto-geproduceerde primaire sleutel tot stand te brengen die door zich van de verbinding aan de ontvankelijke lijst moet worden gebruikt.
 
 Gegenereerd schema:
 
@@ -153,7 +153,7 @@ Met een extensietabel kunt u de inhoud van een bestaande tabel in een gekoppelde
 
 Het doel van een extensietabel is het voorkomen van beperkingen op het aantal velden dat in een tabel wordt ondersteund, of het optimaliseren van de ruimte die wordt ingenomen door de gegevens, die op verzoek worden gebruikt.
 
-Het maken van het extensietabelschema (**focus:functie**):
+Creërend het schema van de uitbreidingslijst (**focus:eigenschap**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ Een overlooplijst is een uitbreidingslijst (kardinaliteit 1-1), maar de verklari
 
 De overlooptabel bevat de vreemde sleutel voor de uit te breiden tabel. De uit te breiden tabel wordt derhalve niet gewijzigd. De relatie tussen de twee tabellen is de waarde van de primaire sleutel van de uit te breiden tabel.
 
-Het overlooptabelschema maken (**focus:overloop**):
+Creërend het overlooplijstschema (**concentreert:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -237,7 +237,7 @@ Met een relatietabel kunt u twee tabellen koppelen aan de kardinaliteit N-N. Dez
 
 Voorbeeld van een relatietabel tussen groepen (**nms:groep**) en ontvangers (**nms:ontvanger**).
 
-Bronschema van de relatietabel:
+Source-schema van de relatietabel:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -301,7 +301,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Dit gebruiksgeval toont aan hoe u een bestaande verwijzingstabel als alternatief aan ingebouwde de opsingsmechanismen van Adobe Campaign (enum, userEnum, of dbEnum) kunt gebruiken.
 
-U kunt een bestaande verwijzingstabel als opsomming in uw schema&#39;s ook gebruiken. Dit kan door een verbinding tussen een lijst en de verwijzingstabel te creëren, en door de attributen toe te voegen **displayAsField=&quot;true&quot;**.
+U kunt een bestaande verwijzingstabel als opsomming in uw schema&#39;s ook gebruiken. Dit kan worden bereikt door een verband tussen een lijst en de verwijzingslijst te creëren, en door de attributen **displayAsField= &quot;waar&quot;** toe te voegen.
 
 In dit voorbeeld bevat de referentietabel een lijst met namen en identificatiecodes van banken:
 
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In om het even welke lijst die deze verwijzingstabel gebruikt, bepaal een verbinding en voeg toe **displayAsField=&quot;true&quot;** kenmerk.
+In om het even welke lijst die deze verwijzingslijst gebruiken, bepaal een verbinding en voeg **displayAsField= &quot;waar&quot;** toe attribuut.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wannee
 
 * Als de instructie automatisch moet worden voltooid, moet u een compute-string definiëren in de referentietabel.
 
-* Voeg de **noDbIndex=&quot;true&quot;** in de koppelingsdefinitie om te voorkomen dat Adobe Campaign een index maakt voor de waarden in de brontabel van de koppeling.
+* Voeg **toe noDbIndex= &quot;waar&quot;** attributen in de verbindingsdefinitie om Adobe Campaign te verhinderen een index op de waarden te creëren die in de bronlijst van de verbinding worden opgeslagen.
 
 ## Verwante onderwerpen
 

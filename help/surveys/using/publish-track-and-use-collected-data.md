@@ -5,7 +5,7 @@ description: Leer hoe u in een enquête verzamelde gegevens publiceert, bijhoudt
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppel
 
 >[!NOTE]
 >
->De levenscyclus van een enquête in Adobe Campaign en de publicatie- en leveringsmodi zijn vergelijkbaar met die van webformulieren: deze worden in detail beschreven in [deze sectie](../../web/using/about-web-forms.md).
+>De levenscyclus van een onderzoek in Adobe Campaign evenals zijn het publiceren en leveringswijzen zijn gelijkaardig aan die van de vormen van het Web: deze zijn gedetailleerd in [ deze sectie ](../../web/using/about-web-forms.md).
 
 ## Beoordelingsdashboard {#survey-dashboard}
 
@@ -36,11 +36,11 @@ U kunt de antwoorden op de enquête bijhouden in logboeken en rapporten.
 
 ### Beoordelingslogboeken {#survey-logs}
 
-Voor elke geleverde enquête kunt u de antwoorden bijhouden in het dialoogvenster **[!UICONTROL Logs]** tab. Op dit tabblad ziet u de lijst met gebruikers die de enquête hebben voltooid en de oorsprong van de enquête:
+Voor elke geleverde enquête kunt u de antwoorden bijhouden op het tabblad **[!UICONTROL Logs]** . Op dit tabblad ziet u de lijst met gebruikers die de enquête hebben voltooid en de oorsprong van de enquête:
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. Raadpleeg voor meer informatie hierover [Antwoorden exporteren](#exporting-answers).
+Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. Voor meer op dit, verwijs naar [ het Uitvoeren antwoorden ](#exporting-answers).
 
 De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens toe te voegen:
 
@@ -48,9 +48,9 @@ De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens 
 ?origin=xxx
 ```
 
-terwijl de enquête wordt bewerkt, bevat de URL de parameter **[!UICONTROL __uuid]**, hetgeen aangeeft dat het in een testfase is en nog niet online is. Wanneer u de enquête opent via deze URL, wordt er geen rekening gehouden met de gemaakte records in de tracering (rapporten). De oorsprong wordt gedwongen tot de waarde **[!UICONTROL Adobe Campaign]**.
+terwijl de enquête wordt bewerkt, bevat de URL de parameter **[!UICONTROL __uuid]** , die aangeeft dat de enquête zich in een testfase bevindt en nog niet online is. Wanneer u de enquête opent via deze URL, wordt er geen rekening gehouden met de gemaakte records in de tracering (rapporten). De oorsprong wordt geforceerd naar de waarde **[!UICONTROL Adobe Campaign]** .
 
-Raadpleeg voor meer informatie over URL-parameters [deze pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Voor meer op parameters URL, verwijs naar [ deze pagina ](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Verslagen over enquêtes {#reports-on-surveys}
 
@@ -58,9 +58,9 @@ Op het tabblad dashboard hebt u toegang tot enquêterapporten. Klik op een rappo
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-De structuur van de enquête is zichtbaar in de **[!UICONTROL Documentation]** verslag.
+De structuur van de enquête wordt weergegeven in het **[!UICONTROL Documentation]** -rapport.
 
-Twee andere rapporten over de enquêtes van het Web zijn beschikbaar in **[!UICONTROL Reports]** tabblad enquêtes: **[!UICONTROL General]** en **[!UICONTROL Breakdown of responses]**.
+Er zijn nog twee andere rapporten over webenquêtes beschikbaar op het tabblad **[!UICONTROL Reports]** van de enquêtes: **[!UICONTROL General]** en **[!UICONTROL Breakdown of responses]** .
 
 * Algemeen
 
@@ -72,7 +72,7 @@ Twee andere rapporten over de enquêtes van het Web zijn beschikbaar in **[!UICO
 
 * Uitsplitsing van reacties
 
-  In dit verslag worden de antwoorden voor elke vraag uitgesplitst. Deze uitsplitsing is alleen beschikbaar voor antwoorden op velden die zijn opgeslagen in **[!UICONTROL Question]** tekstcontainers. Deze is alleen geldig voor selectiecontroles (bijvoorbeeld geen uitsplitsing op tekstvelden).
+  In dit verslag worden de antwoorden voor elke vraag uitgesplitst. Deze indeling is alleen beschikbaar voor antwoorden op velden die zijn opgeslagen in **[!UICONTROL Question]** -tekstcontainers. Deze is alleen geldig voor selectiecontroles (bijvoorbeeld geen uitsplitsing op tekstvelden).
 
   ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -84,17 +84,17 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
    Als u rapportgegevens wilt exporteren, klikt u op de knop **[!UICONTROL Export]** en kiest u de exportindeling.
 
-   Raadpleeg voor meer informatie over het exporteren van rapportgegevens [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md).
+   Voor meer bij het uitvoeren van rapportgegevens, verwijs naar [ deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Antwoorden exporteren
 
-   Als u antwoorden wilt exporteren, klikt u op de knop **[!UICONTROL Responses]** en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Export...]**.
+   Als u antwoorden wilt exporteren, klikt u op het tabblad **[!UICONTROL Responses]** van de enquête en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
    Voer vervolgens de gegevens in die u wilt exporteren en het opslagbestand.
 
-   U kunt de inhoud en indeling van het uitvoerbestand configureren in de wizard Exporteren.
+   U kunt de inhoud en de indeling van het uitvoerbestand configureren in de exportassistent.
 
    Hiermee kunt u:
 
@@ -102,31 +102,31 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
    * de indeling van de geëxporteerde gegevens;
    * Selecteer de coderingsindeling voor de gegevens in het bestand.
 
-   Als het onderzoek u wilt uitvoeren verscheidene bevat **[!UICONTROL Multi-line text]** of **[!UICONTROL HTML text]** velden, moet het worden geëxporteerd in **[!UICONTROL XML]** gebruiken. Selecteer hiertoe deze indeling in de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL Output format]** veld, zoals hieronder weergegeven:
+   Als de enquête die u wilt exporteren meerdere **[!UICONTROL Multi-line text]** - of **[!UICONTROL HTML text]** -velden bevat, moet deze worden geëxporteerd in de **[!UICONTROL XML]** -indeling. U doet dit door deze indeling te selecteren in de vervolgkeuzelijst van het veld **[!UICONTROL Output format]** , zoals hieronder wordt weergegeven:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   Klikken **[!UICONTROL Start]** om het exporteren uit te voeren.
+   Klik op **[!UICONTROL Start]** om het exporteren uit te voeren.
 
    >[!NOTE]
    >
-   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [deze sectie](../../platform/using/about-generic-imports-exports.md).
+   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [ deze sectie ](../../platform/using/about-generic-imports-exports.md).
 
 ## De verzamelde gegevens gebruiken {#using-the-collected-data}
 
-De informatie die via online enquêtes wordt verzameld, kan worden teruggevonden in het kader van een doelgerichte werkstroom. Om dit te doen, gebruik **[!UICONTROL Survey responses]** doos.
+De informatie die via online enquêtes wordt verzameld, kan worden teruggevonden in het kader van een doelgerichte werkstroom. Gebruik hiervoor het vak **[!UICONTROL Survey responses]** .
 
 In het volgende voorbeeld, willen wij een aanbieding van het Web speciaal voor de vijf ontvangers met minstens twee kinderen en met de hoogste scores bij een online onderzoek maken. De antwoorden op deze enquête zijn:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-In de doelworkflow worden de **[!UICONTROL Survey responses]** wordt als volgt geconfigureerd:
+In de doelworkflow wordt **[!UICONTROL Survey responses]** als volgt geconfigureerd:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Selecteer eerst de desbetreffende enquête en vervolgens de gegevens die u wilt extraheren in het centrale gedeelte van het venster. In dit geval moeten we ten minste de kolom met de score extraheren, aangezien deze in het gesplitste vak wordt gebruikt om de vijf hoogste scores te herstellen.
 
-Wijs op de het filtreren voorwaarden voor antwoorden door te klikken **[!UICONTROL Edit query...]** koppeling.
+Geef de filtervoorwaarden voor antwoorden aan door op de koppeling **[!UICONTROL Edit query...]** te klikken.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -142,23 +142,23 @@ Plaats vervolgens een gesplitst vak in de workflow om de 5 ontvangers met de hoo
 
 Bewerk het gesplitste vak om het te configureren:
 
-* Begin door het aangewezen schema in te selecteren **[!UICONTROL General]** en configureert u vervolgens de subset:
+* Selecteer eerst het juiste schema op het tabblad **[!UICONTROL General]** en configureer vervolgens de subset:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* Ga naar de **[!UICONTROL Sub-sets]** en selecteert u de **[!UICONTROL Limit the selected records]** en klikt u op de knop **[!UICONTROL Edit...]** koppeling.
+* Ga naar de tab **[!UICONTROL Sub-sets]** en selecteer de optie **[!UICONTROL Limit the selected records]** en klik vervolgens op de koppeling **[!UICONTROL Edit...]** .
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Selecteer de **[!UICONTROL Keep only the first records after sorting]** en selecteert u de sorteerkolom. Schakel de optie **[!UICONTROL Descending sort]** in.
+* Selecteer de optie **[!UICONTROL Keep only the first records after sorting]** en selecteer de sorteerkolom. Schakel de optie **[!UICONTROL Descending sort]** in.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* Klik op de knop **[!UICONTROL Next]** en beperkt u het aantal records tot 5.
+* Klik op de knop **[!UICONTROL Next]** en beperkt het aantal records tot 5.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Klikken **[!UICONTROL Finish]** start vervolgens de workflow opnieuw om de doelversie goed te keuren.
+* Klik op **[!UICONTROL Finish]** en start de workflow opnieuw om het kiezen van doelen goed te keuren.
 
 ## Gegevens standaardiseren {#standardizing-data}
 

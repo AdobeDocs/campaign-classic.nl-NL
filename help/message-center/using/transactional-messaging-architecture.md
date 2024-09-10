@@ -4,7 +4,7 @@ title: Architectuur van transactionele berichten
 description: In deze sectie worden de Adobe Campaign Classic-structuur voor transactiemeldingen en de beschikbare kanalen voor het leveren van transactiemeldingen beschreven
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Transactioneel overseinen baseert zich op een specifieke architectuur, die uit verscheidene gevallen bestaat:
 
-* A **besturingsinstantie**, waarop de berichtsjablonen worden gemaakt.
+* A **controleinstantie**, waarop de berichtmalplaatjes worden gecreeerd.
 
-* Een of meer **uitvoeringsinstanties**, die gebeurtenissen ontvangen en berichten leveren.
+* Één of meerdere **uitvoeringsinstanties**, die gebeurtenissen ontvangen en berichten leveren.
 
 ![](assets/messagecenter_diagram.png)
 
@@ -35,15 +35,15 @@ Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren va
 >
 >De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
 
-Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Zie voor meer informatie [Een leveringskanaal toevoegen](#adding-a-delivery-channel).
+Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Voor meer op dit, zie [ een leveringskanaal ](#adding-a-delivery-channel) toevoegen.
 
 ## Control-instantie {#control-instance}
 
-Selecteer de optie **[!UICONTROL Transactional message control]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Standaardpakketten voor Campaigns Classic installeren](../../installation/using/installing-campaign-standard-packages.md).
+Selecteer het **[!UICONTROL Transactional message control]** -pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** om de besturingsinstantie op uw computer te installeren. Voor meer op dit, zie [ Installerend Campaign Classic standaardpakketten ](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
-De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [deze sectie](../../message-center/using/configuring-instances.md#control-instance).
+De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [ deze sectie ](../../message-center/using/configuring-instances.md#control-instance).
 
 ### Verschillende besturingsinstanties ondersteunen {#supporting-several-control-instances}
 
@@ -57,15 +57,15 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 >[!NOTE]
 >
->Raadpleeg voor meer informatie over de benodigde configuratie [Verschillende besturingsinstanties gebruiken](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Voor meer op de noodzakelijke configuratie, verwijs naar [ Gebruik verscheidene controleinstanties ](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Uitvoeringsinstantie {#execution-instance}
 
-Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u de optie **[!UICONTROL Transactional message execution]** pakket via de **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menu. Zie voor meer informatie [Standaardpakketten voor Campaigns Classic installeren](../../installation/using/installing-campaign-standard-packages.md).
+Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u het pakket **[!UICONTROL Transactional message execution]** via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Voor meer op dit, zie [ Installerend Campaign Classic standaardpakketten ](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
-De gedetailleerde stappen om een uitvoeringsinstantie te vormen worden voorgesteld in [deze sectie](../../message-center/using/configuring-instances.md#execution-instance).
+De gedetailleerde stappen om een uitvoeringsinstantie te vormen worden voorgesteld in [ deze sectie ](../../message-center/using/configuring-instances.md#execution-instance).
 
 ## Beschikbare leveringskanalen
 
@@ -77,7 +77,7 @@ Het e-mailkanaal is standaard beschikbaar. Als u uw transactieberichten op meerd
 
 ### Een leveringskanaal toevoegen {#adding-a-delivery-channel}
 
-Adobe raadt u aan **Voeg altijd het pakket van het leveringskanaal toe alvorens het Transactieberichtpakket te installeren**.
+De Adobe adviseert u **altijd het pakket van het leveringskanaal alvorens het Transactionele berichtpakket** te installeren toevoegt.
 
 Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonnen, dan besluit tijdens het project om een nieuw kanaal toe te voegen, kunt u de hieronder stappen volgen.
 
@@ -85,9 +85,9 @@ Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonn
 >
 >Deze procedure is alleen van toepassing op klanten die een Windows NLServer gebruiken die op dezelfde computer is geïnstalleerd als waarop zij werken.
 
-1. Installeer het kanaal dat u nodig hebt, bijvoorbeeld de **Mobiel kanaal**, met de wizard Pakket importeren (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Een bestand importeren (**[!UICONTROL Tools > Advanced > Import package... > File]**) en selecteert u de **datakitnms **`[Your language]`**packageManagementCenter.xml** bestand.
-1. In de **[!UICONTROL XML content of the data to import]**, slechts het leveringsmalplaatje houden dat aan het toegevoegde kanaal beantwoordt. Als u bijvoorbeeld de opdracht **Mobiel kanaal**, alleen de **entiteiten** element dat overeenkomt met het **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Als u de **Mobiel App-kanaal**, alleen de **Transactiebericht van iOS** (iosTriggerMessage) en de **Transactiebericht van Android** (androidTriggerMessage).
+1. Installeer het kanaal u, bijvoorbeeld het **Mobiele kanaal** nodig hebt, gebruikend de medewerker van de pakketinvoer (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
+1. Voer een dossierinvoer (**[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer het **datakitnms **`[Your language]`**pakketmanagementCenter.xml** dossier.
+1. Bewaar in de **[!UICONTROL XML content of the data to import]** alleen de leveringssjabloon die overeenkomt met het toegevoegde kanaal. Bijvoorbeeld, als u het **Mobiele kanaal** hebt toegevoegd, houd slechts het **entiteiten** element dat aan **[!UICONTROL Mobile transactional message]** beantwoordt (smsTriggerMessage). Als u het **Mobiele Kanaal van de App** hebt toegevoegd, houd slechts het **transactiebericht van iOS** (iosTriggerMessage) en het **de transactionele bericht van Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -132,18 +132,18 @@ In combinatie met de Mobile App Channel-module kunt u met een transactiebericht 
 
 >[!NOTE]
 >
->Het Mobile App-kanaal wordt gedetailleerd in [deze sectie](../../delivery/using/about-mobile-app-channel.md).
+>Het mobiele kanaal van de App is gedetailleerd in [ deze sectie ](../../delivery/using/about-mobile-app-channel.md).
 
 Als u transactiemodules voor berichten wilt gebruiken met Mobile App Channel, moet u de volgende configuraties toepassen:
 
-1. Installeer de **Mobiel App-kanaal** verpakken op de controle en uitvoeringsinstanties.
-1. Repliceer de **Mobiele toepassing** Typ de Adobe Campaign-service en de mobiele toepassingen die deze bevat op de uitvoeringsinstanties.
+1. Installeer het **Mobiele pakket van het Kanaal van de App** op de controle en uitvoeringsinstanties.
+1. Repliceer de **het typeAdobe Campaign dienst van 0} Mobiele toepassing {evenals de mobiele toepassingen die het op de uitvoeringsinstanties bevat.**
 
 De gebeurtenis moet de volgende elementen bevatten:
 
-* De mobiele apparaat-id (**registrationId** voor Android en **deviceToken** voor iOS). Deze ID vertegenwoordigt het &quot;adres&quot;dat het bericht zal worden verzonden naar.
-* De koppeling naar de mobiele toepassing of integratietoets (**uuid**) waarmee u verbindingsgegevens kunt herstellen die specifiek zijn voor de toepassing.
-* Het kanaal waarnaar de melding wordt verzonden (**wishedChannel**): 41 voor iOS en 42 voor Android
+* Mobiele apparatenidentiteitskaart (**registrationId** voor Android en **deviceToken** voor iOS). Deze ID vertegenwoordigt het &quot;adres&quot;dat het bericht zal worden verzonden naar.
+* De verbinding aan de mobiele toepassing of de integratiesleutel (**uuid**) die u verbindingsinformatie specifiek voor de toepassing laat terugkrijgen.
+* Het kanaal waarnaar het bericht zal worden verzonden (**wishedChannel**): 41 voor iOS en 42 voor Android
 * Alle gegevens die nuttig zijn voor personalisatie
 
 Hier volgt een voorbeeld van een gebeurtenis die deze informatie bevat:
@@ -177,23 +177,23 @@ Hier volgt een voorbeeld van een gebeurtenis die deze informatie bevat:
 
 In combinatie met het lijnkanaal kunt u met transactiemeldingen realtime berichten verzenden naar de LINE-app die is geïnstalleerd in mobiele apparaten voor consumenten. Hiermee wordt het welkomstbericht verzonden wanneer een lijngebruiker de pagina van het merk toevoegt.
 
-Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elementen nodig voor de configuratie op uw **marketing** -instantie en uw **executie** -instantie:
+Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elementen nodig voor de configuratie op uw **marketing** instantie en uw **uitvoerings** instantie:
 
-* Installeer de **[!UICONTROL LINE Connect]** verpakken op beide instanties.
-* Installeer de **[!UICONTROL Transactional message control]** pakket op uw marketingexemplaar, en **[!UICONTROL Transactional message execution]** in de uitvoeringsinstantie.
-* Een LIJN maken **externe rekening** en **service** op beide instanties met identieke naamgeving, zodat deze kunnen worden gesynchroniseerd. Voor meer informatie over hoe te om een externe rekening en de dienst van de LIJN tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Installeer het **[!UICONTROL LINE Connect]** -pakket op beide instanties.
+* Installeer het pakket **[!UICONTROL Transactional message control]** op de marketinginstantie en het pakket **[!UICONTROL Transactional message execution]** op de uitvoeringsinstantie.
+* Creeer de externe rekening van de LIJN **** en **dienst** op beide instanties met het identieke noemen voor hen om worden gesynchroniseerd. Voor meer informatie over hoe te om tot een externe rekening en de dienst van de LIJN te leiden, verwijs naar [ deze sectie ](../../delivery/using/line-channel.md#setting-up-line-channel).
 
-Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , moet u verschillende externe rekeningen op beide instanties vormen:
+Vervolgens moet u in **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , verschillende externe accounts configureren voor beide instanties:
 
-1. Een **[!UICONTROL External database]** externe account in uw **executie** instantie met de volgende configuratie:
+1. Creeer een **[!UICONTROL External database]** externe rekening in uw **uitvoerings** instantie met de volgende configuratie:
 
    ![](assets/line_config_mc.png)
 
    * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : geef uw externe account de naam die u nodig hebt.
    * **[!UICONTROL Type]** : select **[!UICONTROL External database]** .
-   * **[!UICONTROL Enabled]** moet worden ingeschakeld.
+   * **[!UICONTROL Enabled]** moet zijn ingeschakeld.
 
-   Van de **[!UICONTROL Connection]** categorie:
+   Van de categorie **[!UICONTROL Connection]** :
 
    * **[!UICONTROL Type]** : selecteer uw databaseserver, bijvoorbeeld PostgresSQL.
    * **[!UICONTROL Server]** : voer de URL van de databaseserver in.
@@ -205,9 +205,9 @@ Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTRO
 
    * **[!UICONTROL Password]** : voer het wachtwoord voor uw databaseaccount in.
    * **[!UICONTROL Database]** : voer de databasenaam van de uitvoeringsinstantie in.
-   * **[!UICONTROL Target of an HTTP relay to remote database's account]** moet worden ingeschakeld.
+   * **[!UICONTROL Target of an HTTP relay to remote database's account]** moet zijn ingeschakeld.
 
-1. Een **[!UICONTROL External Database]** account in uw **marketing** instantie met de volgende configuratie.
+1. Creeer een **[!UICONTROL External Database]** rekening in uw **marketing** instantie met de volgende configuratie.
 
    ![](assets/line_config_mc_1.png)
 
@@ -215,15 +215,15 @@ Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTRO
    * **[!UICONTROL Type]** : select **[!UICONTROL External database]** .
    * Ingeschakelde doos moet worden gecontroleerd.
 
-   Van de **[!UICONTROL Connection]** categorie:
+   Van de categorie **[!UICONTROL Connection]** :
 
    * **[!UICONTROL Type]** : select **[!UICONTROL HTTP relay to remote Database]** .
    * **[!UICONTROL Server]** : voer de server-URL van de uitvoeringsinstantie van uw campagne in.
-   * **[!UICONTROL Account]** : voer de account in die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
+   * **[!UICONTROL Account]** : voer het account in dat wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
    * **[!UICONTROL Password]** : voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
-   * **[!UICONTROL Data Source]** : voer de volgende syntaxis in **`nms:extAccount:ID`** van uw externe databaseaccount in de uitvoeringsinstantie.
+   * **[!UICONTROL Data Source]** : voer de volgende syntaxis **`nms:extAccount:ID`** van uw externe databaseaccount in de uitvoeringsinstantie in.
 
-1. Een **[!UICONTROL Execution instance]** externe account in uw **marketing** instantie die de volgende configuratie gebruikt om het werkschema van de gegevenssynchronisatie tot stand te brengen:
+1. Creeer een **[!UICONTROL Execution instance]** externe rekening in uw **marketing** instantie gebruikend de volgende configuratie om het werkschema van de gegevenssynchronisatie tot stand te brengen:
 
    ![](assets/line_config_mc_2.png)
 
@@ -231,17 +231,17 @@ Dan, van **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTRO
    * **[!UICONTROL Type]** : select **[!UICONTROL Execution instance]** .
    * Ingeschakelde doos moet worden gecontroleerd.
 
-   Van de **[!UICONTROL Connection]** categorie:
+   Van de categorie **[!UICONTROL Connection]** :
 
    * **[!UICONTROL URL]** : voer de URL van de uitvoeringsinstantie in.
    * **[!UICONTROL Account]** : voer uw account in die u gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
    * **[!UICONTROL Password]** : voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsinstantie.
 
-   Van de **[!UICONTROL Account connection method]** categorie:
+   Van de categorie **[!UICONTROL Account connection method]** :
 
    * **[!UICONTROL Method]** : select **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : selecteer uw FDA-account in de vervolgkeuzelijst.
    * Klik op de knop **[!UICONTROL Create the archiving workflow]**.
-   * Klik op de knop **[!UICONTROL Create data synchronization workflow]** om de workflow voor het synchroniseren van LINE-gegevens te maken.
+   * Klik op de knop **[!UICONTROL Create data synchronization workflow]** om de workflow voor het synchroniseren van lijngegevens te maken.
 
-1. U kunt nu beginnen [transactieberichten maken](../../message-center/using/creating-the-message-template.md).
+1. U kunt [ nu beginnen creërend transactionele berichten ](../../message-center/using/creating-the-message-template.md).

@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Een aanbieding integreren via de wizard
-description: Een aanbieding integreren via de wizard
+title: Integreer een aanbieding via de assistent
+description: Integreer een aanbieding via de assistent
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
 
 ---
 
-# Een aanbieding integreren via de wizard{#integrating-an-offer-via-the-wizard}
+# Integreer een aanbieding via de assistent{#integrating-an-offer-via-the-assistant}
 
 
 
@@ -25,11 +25,11 @@ Wanneer het creëren van een levering, zijn er twee mogelijke methodes om aanbie
 
 ## Het leveren met een vraag aan de aanbiedingsmotor {#delivering-with-a-call-to-the-offer-engine}
 
-Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gewoon een klassieke leveringsactie op basis van het gekozen kanaal. De aanbiedingsengine wordt aangeroepen wanneer de inhoud van de aanbieding wordt gedefinieerd, door op de knop **[!UICONTROL Offers]** beschikbaar in de werkbalk.
+Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gewoon een klassieke leveringsactie op basis van het gekozen kanaal. De aanbiedingsengine wordt aangeroepen wanneer de leveringsinhoud wordt gedefinieerd door op het pictogram **[!UICONTROL Offers]** op de werkbalk te klikken.
 
 ![](assets/offer_delivery_009.png)
 
-Meer informatie over directe mailleveringen [in deze sectie](../../delivery/using/about-direct-mail-channel.md). Meer informatie over marketingcampagnes [in deze sectie](../../campaign/using/setting-up-marketing-campaigns.md).
+Leer meer over directe postleveringen [ in deze sectie ](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes [ in deze sectie ](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Belangrijkste stappen voor het invoegen van een aanbieding in een levering {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ Voer de volgende stappen uit om voorstellen voor aanbiedingen in te voegen in ee
 
    ![](assets/offer_delivery_005.png)
 
-1. Selecteer de **[!UICONTROL Exclude non-eligible recipients]** indien nodig. Raadpleeg voor meer informatie hierover [Parameters voor het aanroepen van de aanbiedingsengine](#parameters-for-calling-offer-engine).
+1. Selecteer indien nodig de optie **[!UICONTROL Exclude non-eligible recipients]** . Voor meer op dit, verwijs naar [ Parameters voor het roepen van aanbiedingsmotor ](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Selecteer indien nodig de **[!UICONTROL Do not display anything if no offers are selected]** -optie. Raadpleeg voor meer informatie hierover [Parameters voor het aanroepen van de aanbiedingsengine](#parameters-for-calling-offer-engine).
+1. Selecteer indien nodig de optie **[!UICONTROL Do not display anything if no offers are selected]** . Voor meer op dit, verwijs naar [ Parameters voor het roepen van aanbiedingsmotor ](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -73,9 +73,9 @@ Voer de volgende stappen uit om voorstellen voor aanbiedingen in te voegen in ee
 
 * **[!UICONTROL Space]** : ruimte van de aanbiedingsomgeving die moet worden geselecteerd om de aanbiedingsengine te activeren.
 * **[!UICONTROL Category]** : specifieke map waarin aanbiedingen worden gesorteerd. Als er geen categorie is opgegeven, zal de aanbiedingsengine rekening houden met alle aanbiedingen in de omgeving, tenzij een thema wordt geselecteerd.
-* **[!UICONTROL Themes]** : sleutelwoorden die stroomopwaarts in de categorieën worden gedefinieerd. Deze fungeren als een filter en u kunt het aantal aanbiedingen dat moet worden weergegeven, verfijnen door ze in een set categorieën te selecteren.
-* **[!UICONTROL Number of propositions]** : het aantal aanbiedingen dat door de motor wordt geretourneerd en dat in de leveringsinstantie kan worden ingevoegd. Als zij niet in het bericht worden opgenomen, zullen de aanbiedingen nog worden geproduceerd, maar niet voorgesteld.
-* **[!UICONTROL Exclude non-eligible recipients]** : Met deze optie kunt u de uitsluiting activeren of deactiveren van ontvangers voor wie onvoldoende geschikte voorstellen zijn. Het aantal in aanmerking komende voorstellen kan lager zijn dan het gevraagde aantal voorstellen. Als deze doos wordt gecontroleerd, zullen de ontvangers die niet genoeg voorstellen hebben van de levering worden uitgesloten. Als u deze optie niet selecteert, worden deze ontvangers niet uitgesloten, maar hebben ze niet het gewenste aantal voorstellen.
+* **[!UICONTROL Themes]** : sleutelwoorden die stroomopwaarts zijn gedefinieerd in de categorieën. Deze fungeren als een filter en u kunt het aantal aanbiedingen dat moet worden weergegeven, verfijnen door ze in een set categorieën te selecteren.
+* **[!UICONTROL Number of propositions]** : het aantal aanbiedingen dat door de engine wordt geretourneerd en dat in de hoofdtekst van de levering kan worden ingevoegd. Als zij niet in het bericht worden opgenomen, zullen de aanbiedingen nog worden geproduceerd, maar niet voorgesteld.
+* **[!UICONTROL Exclude non-eligible recipients]** : met deze optie kunt u de uitsluiting activeren of deactiveren van ontvangers voor wie er onvoldoende geschikte voorstellen zijn. Het aantal in aanmerking komende voorstellen kan lager zijn dan het gevraagde aantal voorstellen. Als deze doos wordt gecontroleerd, zullen de ontvangers die niet genoeg voorstellen hebben van de levering worden uitgesloten. Als u deze optie niet selecteert, worden deze ontvangers niet uitgesloten, maar hebben ze niet het gewenste aantal voorstellen.
 * **[!UICONTROL Do not display anything if no offer is selected]** : met deze optie kunt u kiezen hoe het bericht wordt verwerkt als een van de voorstellen niet bestaat. Als dit selectievakje is ingeschakeld, wordt de representatie van het ontbrekende voorstel niet weergegeven en wordt er geen inhoud weergegeven in het bericht voor dit voorstel. Als de doos niet wordt gecontroleerd, wordt het bericht zelf geannuleerd tijdens het verzenden en de ontvangers zullen geen berichten meer ontvangen.
 
 ### Een voorstel invoegen in een levering {#inserting-an-offer-proposition-into-a-delivery}
@@ -90,28 +90,28 @@ De levering kan worden gepersonaliseerd met de velden van de aanbieding of, in h
 
 Je kunt ook voorstellen in een levering presenteren met een leveringsoverzicht.
 
-Raadpleeg voor meer informatie over de leveringscontouren de [Campagne - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) hulplijn.
+Voor meer informatie over leveringsoverzichten, verwijs naar de [ Campagne - MRM ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) gids.
 
 1. Maak een nieuwe campagne of open een bestaande campagne.
-1. Open de leveringsoverzichten via de campagne **[!UICONTROL Edit]** > **[!UICONTROL Documents]** tab.
-1. Voeg een omtrek toe en voeg dan zoveel aanbiedingen in als u in het wilt door met de rechtermuisknop op het overzicht te klikken en te selecteren **[!UICONTROL New]** > **[!UICONTROL Offer]** en sla de campagne vervolgens op.
+1. Open de leveringscontouren via het tabblad **[!UICONTROL Edit]** > **[!UICONTROL Documents]** van de campagne.
+1. Voeg een omtrek toe en voeg zoveel aanbiedingen in als u wilt door met de rechtermuisknop op de omtrek te klikken en **[!UICONTROL New]** > **[!UICONTROL Offer]** te selecteren en vervolgens de campagne op te slaan.
 
    ![](assets/int_compo_offre1.png)
 
 1. Maak een levering waarvan u de leveringscontouren kunt bekijken (bijvoorbeeld een direct-maillevering).
-1. Klik tijdens het bewerken van de levering op **[!UICONTROL Select a delivery outline]**.
+1. Klik op **[!UICONTROL Select a delivery outline]** wanneer u de levering bewerkt.
 
    >[!NOTE]
    >
-   >Afhankelijk van het type levering, kunt u deze optie vinden in het dialoogvenster **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** menu (bijvoorbeeld voor e-mailleveringen).
+   >Afhankelijk van het type levering vindt u deze optie in het menu **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (bijvoorbeeld voor e-mailleveringen).
 
    ![](assets/int_compo_offre2.png)
 
-1. Met de **[!UICONTROL Offers]** knoop, kunt u de aanbiedingsruimte evenals het aantal aanbiedingen dan vormen om in de levering voor te stellen.
+1. Met de knop **[!UICONTROL Offers]** kunt u vervolgens de aanbiedingsruimte en het aantal aanbiedingen voor de levering configureren.
 
    ![](assets/int_compo_offre3.png)
 
-1. Voeg de voorstellen in het leveringslichaam toe gebruikend de verpersoonlijkingsgebieden (voor meer op dit, verwijs naar [Een voorstel invoegen in een levering](#inserting-an-offer-proposition-into-a-delivery) ), of in het geval van een direct mail levering, door het formaat van het extractiedossier uit te geven.
+1. Voeg de voorstellen in het leveringslichaam toe gebruikend de verpersoonlijkingsgebieden (voor meer op dit, verwijs naar het [ Opnemen van een aanbiedingsvoorstel in een levering ](#inserting-an-offer-proposition-into-a-delivery) sectie), of in het geval van een directe postlevering, door het formaat van het extractiedossier uit te geven.
 
    De voorstellen zullen van de aanbiedingen worden geselecteerd waarnaar in het leveringsoverzicht wordt verwezen.
 

@@ -4,7 +4,7 @@ title: Personalisatie en privacy
 description: Meer informatie over best practices op het gebied van beveiliging voor privacy en personalisatie
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Personalisatie en privacy {#privacy}
 
-## URL aanpassen {#url-personalization}
+## URL PERSONALIZATION {#url-personalization}
 
-Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. De volgende voorbeelden mogen nooit in alle URL-kenmerken worden gebruikt &lt;`a href="">` of `<img src="">`:
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke beveiligingsproblemen te voorkomen. De volgende voorbeelden mogen nooit in alle URL-kenmerken &lt;`a href="">` of `<img src="">` worden gebruikt:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -25,13 +25,13 @@ Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen pe
 
 ### Aanbeveling
 
-Voer een query uit voor het bijhouden van een URL-tabel via [Editor algemene query voor campagne](../../platform/using/steps-to-create-a-query.md) of maak een workflow met filtercriteria in het dialoogvenster [queryactiviteit](../../workflow/using/query.md).
+Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [ de Algemene Redacteur van de Vraag van de Campagne ](../../platform/using/steps-to-create-a-query.md) in werking of creeer een werkschema met filtercriteria in de [ vraagactiviteit ](../../workflow/using/query.md).
 
 Voorbeeld:
 
-1. Een workflow maken en een **Query** activiteit. [Meer informatie](../../workflow/using/query.md).
+1. Creeer een werkschema en voeg de activiteit van de a **Vraag** toe. [Meer informatie](../../workflow/using/query.md).
 
-1. Open de **Query** activiteit en creeer een filter op `nmsTrackingUrl` tabel als volgt:
+1. Open de **activiteit van de Vraag** en creeer een filter op de `nmsTrackingUrl` lijst als volgt:
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -50,11 +50,11 @@ Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd vo
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt deze fout geretourneerd: `Requested URL '…' was not found.`
 
-Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt uitreiken tot [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om deze functie in te schakelen.
+Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt uit aan [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze eigenschap toe te laten.
 
 Als u werkt op de build 19.1.4, kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
-Als ontvangen Campagne, Beheerde Cloud Servicen of hybride klant, moet u uit reiken aan [Klantenservice](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om URL-ondertekening uit te schakelen.
+Als Ontvangen Campagne, Beheerde Cloud Servicen of hybride klant, moet u uit [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) bereiken om de handtekening te hebben URL gehandicapt.
 
 Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
 
@@ -68,15 +68,15 @@ Anders kunnen enkele van deze problemen optreden:
 
 Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert u de volgende stappen uit op alle Campagneservers tegelijk:
 
-1. In het serverconfiguratiebestand (`serverConf.xml`), wijzigt u **blockRedirectForUnsignedTrackingLink** optie voor **true**.
-1. De opdracht opnieuw starten `nlserver` service.
-1. Op de `tracking` server, start de `web` server (apache2 op Debian, httpd op CentOS/RedHat, IIS in Windows).
+1. In het dossier van de serverconfiguratie (`serverConf.xml`), verander **blockRedirectForUnsignedTrackingLink** optie in **waar**.
+1. Start de service `nlserver` opnieuw.
+1. Start de `web` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `tracking` -server.
 
 Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
-1. In het serverconfiguratiebestand (`serverConf.xml`), wijzigen **signEmailLinks** optie, naar **true**.
-1. De opdracht opnieuw starten **nlserver** service.
-1. Op de `tracking` server, start de `web` server (apache2 op Debian, httpd op CentOS/RedHat, IIS in Windows).
+1. In het dossier van de serverconfiguratie (`serverConf.xml`), verandering **signEmailLinks** optie, **waar**.
+1. Begin de **nlserver** dienst opnieuw.
+1. Start de `web` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `tracking` -server.
 
 ## Gegevensbeperking
 
@@ -86,17 +86,17 @@ Met deze beperking kunt u wachtwoordvelden verwijderen, maar de externe account 
 
 Volg onderstaande stappen om dit te doen:
 
-1. Bladeren naar de **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** map van Campaign Explorer.
+1. Blader naar de map **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** van de Campagneverkenner.
 
-1. Een gegevensschema maken als een **[!UICONTROL Extension of a schema]**.
+1. Maak als **[!UICONTROL Extension of a schema]** een gegevensschema.
 
    ![](assets/privacy-data-restriction.png)
 
 1. Kies **[!UICONTROL External Account]** (extAccount).
 
-1. In het laatste tovenaar scherm, geef uw nieuw &quot;srcSchema&quot;uit om toegang tot alle wachtwoordgebieden te beperken:
+1. In het laatste hulpscherm, geef uw nieuw &quot;srcSchema&quot;uit om toegang tot alle wachtwoordgebieden te beperken:
 
-   U kunt het hoofdelement (`<element name="extAccount" ... >`) door:
+   U kunt het hoofdelement (`<element name="extAccount" ... >`) vervangen door:
 
    ```sql
    <element name="extAccount">
@@ -149,7 +149,7 @@ Volg onderstaande stappen om dit te doen:
 
    >[!NOTE]
    >
-   >U kunt `$(loginId) = 0 or $(login) = 'admin'` with `hasNamedRight('admin')` om alle gebruikers met beheerdersrechten toe te staan deze wachtwoorden te zien.
+   >U kunt `$(loginId) = 0 or $(login) = 'admin'` vervangen door `hasNamedRight('admin')` zodat alle gebruikers met beheerdersrechten deze wachtwoorden kunnen zien.
 
 ## Protect-pagina&#39;s met PI
 
@@ -157,12 +157,12 @@ We raden klanten op locatie ten zeerste aan de pagina&#39;s te beschermen die pe
 
 Het doel van deze procedure is te voorkomen dat deze pagina&#39;s worden geïndexeerd, waardoor een mogelijk beveiligingsrisico wordt vermeden. Hier volgen enkele handige artikelen:
 
-* [https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
-* [https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
+* [ https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
+* [ https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
 
 Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
 
-1. Voeg een `robots.txt` in de hoofdmap van uw webserver (Apache of IIS). Hier volgt de inhoud van het bestand:
+1. Voeg een `robots.txt` -bestand toe aan de hoofdmap van uw webserver (Apache of IIS). Hier volgt de inhoud van het bestand:
 
    ```sql
    # Make changes for all web spiders
@@ -170,17 +170,17 @@ Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
    *Disallow: /
    ```
 
-   Voor IIS raadpleegt u [deze pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Voor IIS, verwijs naar [ deze pagina ](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
-   Voor Apache kunt u het bestand plaatsen in **/var/www/robots.txt** (Debian).
+   Voor Apache, kunt u het dossier in **plaatsen /var/www/robots.txt** (Debian).
 
-1. Soms wordt een **robots.txt** bestand is onvoldoende voor de beveiliging. Als een andere website bijvoorbeeld een koppeling naar uw pagina bevat, wordt deze mogelijk weergegeven in een zoekresultaat.
+1. Soms is het toevoegen van a **robots.txt** dossier niet voldoende in termen van veiligheid. Als een andere website bijvoorbeeld een koppeling naar uw pagina bevat, wordt deze mogelijk weergegeven in een zoekresultaat.
 
-   Naast de **robots.txt** bestand, wordt aangeraden een **X-robots-tag** header. U kunt het in Apache of IIS en in **serverConf.xml** configuratiebestand.
+   Naast het {**dossier 0} robots.txt, wordt het geadviseerd om a** x-robots-markering **kopbal toe te voegen.** U kunt het in Apache of IIS en in het **serverConf.xml** configuratiedossier doen.
 
-   Raadpleeg voor meer informatie [dit artikel](https://developers.google.com/search/reference/robots_meta_tag).
+   Voor meer informatie, verwijs naar [ dit artikel ](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Privacyverzoeken
 
-Zie [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
+Verwijs naar [ deze pagina ](../../platform/using/privacy-management.md) voor algemene informatie over wat het Beheer van de Privacy en de implementatiestappen in Adobe Campaign is. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.

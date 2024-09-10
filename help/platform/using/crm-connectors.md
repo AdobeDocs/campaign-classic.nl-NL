@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 53%
+ht-degree: 37%
 
 ---
 
@@ -22,16 +22,16 @@ ht-degree: 53%
 
 Adobe Campaign biedt verschillende CRM-connectoren waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze CRM-connectoren laten u toe om contactpersonen, accounts, aankopen, enzovoort, te synchroniseren. Ze zorgen ervoor dat uw applicatie eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke applicaties.
 
-Deze connectoren maken snelle en eenvoudige data-integratie mogelijk: Adobe Campaign verstrekt een specifieke wizard voor het verzamelen en selecteren van data uit de lijsten die beschikbaar zijn in het CRM-systeem. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
+Deze schakelaars laten snelle en gemakkelijke gegevensintegratie toe: Adobe Campaign verstrekt een specifieke medewerker voor het verzamelen van en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
 
 >[!NOTE]
 >
->Deze functie is beschikbaar in Adobe Campaign via de **CRM-connectors** toegewezen pakket.
+>Deze eigenschap is beschikbaar in Adobe Campaign door het **specifieke pakket 1} van de schakelaars van CRM**.
 
 
 ### Compatibele systemen {#compatible-crm-systems-and-limitations}
 
-Ondersteunde CRM&#39;s en versies worden in de campagne gedetailleerd weergegeven [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+De gesteunde CRM en de versies zijn gedetailleerd in de matrijs van de Verenigbaarheid van de Campagne [ ](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Ondersteunde CRM&#39;s en versies worden in de campagne gedetailleerd weergegeve
 
 ### Implementatiestappen {#crm-implementation-steps}
 
-Leer geleidelijke procedure om Campagne en de Dynamica van Microsoft te verbinden [in deze sectie](../../platform/using/crm-ms-dynamics.md)
+Leer geleidelijke procedure om Campagne en Microsoft Dynamics [ in deze sectie ](../../platform/using/crm-ms-dynamics.md) aan te sluiten
 
 
-Leer geleidelijke procedure om Campagne en Salesforce aan te sluiten [in deze sectie](../../platform/using/crm-sfdc.md)
+Leer geleidelijke procedure om Campagne en Salesforce [ in deze sectie ](../../platform/using/crm-sfdc.md) aan te sluiten

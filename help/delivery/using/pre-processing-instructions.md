@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -21,11 +21,11 @@ Zij zijn alleen van toepassing in de context van leveringsinhoud. Dit is de enig
 
 Er zijn drie typen instructies:
 
-* **[!DNL include]**: vooral om code in opties, verpersoonlijkingsblokken, externe dossiers, of pagina&#39;s te factoriseren. [Meer informatie](#include)
-* **[!DNL value]**: om toegang te geven tot velden voor levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
-* **[!DNL foreach]**: om een array uit te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
+* **[!DNL include]**: vooral om code in opties, verpersoonlijkingsblokken, externe bestanden of pagina&#39;s te factoriseren. [Meer informatie](#include)
+* **[!DNL value]** : toegang geven tot velden van de levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
+* **[!DNL foreach]** : om een array te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
 
-Zij kunnen direct van de leveringstovenaar worden getest. Ze worden toegepast in de voorvertoning van de inhoud en wanneer u op de knop Tekstspatiëring klikt, wordt de lijst met URL&#39;s weergegeven.
+Zij kunnen direct van de leveringsmedewerker worden getest. Ze worden toegepast in de voorvertoning van de inhoud en wanneer u op de knop Tekstspatiëring klikt, wordt de lijst met URL&#39;s weergegeven.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ De volgende voorbeelden worden het meest gebruikt:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Gebruik de verpersoonlijkingsknoop in de leveringstovenaar om de correcte syntaxis te krijgen.
+  Gebruik de verpersoonlijkingsknoop in de leveringsmedewerker om de correcte syntaxis te krijgen.
 
 ## [!DNL value] {#value}
 
@@ -74,13 +74,13 @@ Waarbij:
 * **[!DNL object]**: naam van het object (bijvoorbeeld: levering, provider, enzovoort).
 Object kan:
    * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
-   * **[!DNL provider]**: voor de huidige leverancier/het verpletteren (nms:externalAccount).
-   * Een extra scriptobject: wanneer een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
-   * Item van de foreach-lus: zie [Foreach](#foreach) hieronder.
-* **[!DNL xpath]**: xpath van het veld.
-* **[!DNL index]** (optioneel): if **[!DNL object]** is een array (voor extra scriptobjecten), itemindex in de array (Begint bij 0).
+   * **[!DNL provider]**: voor de huidige leveringsprovider/routering (nms:externalAccount).
+   * Een extra manuscriptobject: als een voorwerp in de context door wordt geladen: **Eigenschappen** > **Personalization** > **voegt voorwerpen in de uitvoeringscontext** toe.
+   * Punt van de foreach lijn: zie [ Foreach ](#foreach) hieronder sectie.
+* **[!DNL xpath]** : xpath of the field.
+* **[!DNL index]** (optioneel): als **[!DNL object]** een array is (voor extra scriptobjecten), wordt de itemindex in de array (Begint bij 0) weergegeven.
 
-### [!DNL delivery] object {#delivery-object}
+### [!DNL delivery] -object {#delivery-object}
 
 Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegankelijk:
 
@@ -90,7 +90,7 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
   <%= delivery.myField %>`.
   ```
 
-  In de levering van het JavaScript-object worden aangepaste velden niet ondersteund. Zij werken in de voorproef, maar niet in MTA omdat MTA tot het out-of-the-box leveringsschema kan slechts toegang hebben.
+  In de levering van JavaScript-objecten worden aangepaste velden niet ondersteund. Zij werken in de voorproef, maar niet in MTA omdat MTA tot het out-of-the-box leveringsschema kan slechts toegang hebben.
 
 * Voorbewerking gebruiken:
 
@@ -99,9 +99,9 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
   ```
 
 
-**Waarschuwing**
+**Voorzichtigheid**
 
-Als u de volgende instructies gebruikt voor leveringen die via mid-sourcing worden verzonden, wordt het aangepaste veld **@myCustomField** moet aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingplatforms:
+Als u de volgende instructie gebruikt voor leveringen die via mid-sourcing worden verzonden, moet het aangepaste veld **@myCustomField** aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingsplatforms:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -165,7 +165,7 @@ Met deze oplossing worden de koppelingen naar alle artikelen zonder onderscheid 
 
 De oplossing is:
 
-1. Laad alle mogelijke artikelen vooraf in een extra scriptarray van de levering - articleList[] - wat betekent dat er een eindig aantal mogelijke artikelen moet zijn.
+1. Laad vooraf alle mogelijke artikelen in een extra manuscriptserie van levering - articleList [] - zo betekent er een eindig aantal mogelijke artikelen moet zijn.
 1. Schrijf een JavaScript-functie aan het begin van de inhoud.
 
    ```

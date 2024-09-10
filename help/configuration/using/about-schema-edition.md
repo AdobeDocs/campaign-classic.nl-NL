@@ -5,7 +5,7 @@ description: Aan de slag met schema-editie
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 6%
@@ -20,13 +20,13 @@ Adobe Campaign past gegevensschema&#39;s toe op:
 * Definiëren van koppelingen tussen de verschillende dataobjecten in de Campaign-applicatie.
 * Definiëren en beschrijven van de afzonderlijke velden die in elk object zijn opgenomen.
 
-Voor een beter inzicht in ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [deze sectie](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [ deze sectie ](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
 
 ## Schema&#39;s uitbreiden of maken {#extending-or-creating-schemas}
 
-Als u een veld, index of ander element wilt toevoegen aan een van de schema&#39;s met kerngegevens in Campagne, zoals de ontvangende tabel (nms:ontvanger), moet u dat schema uitbreiden. Raadpleeg voor meer informatie de [Een schema uitbreiden](../../configuration/using/extending-a-schema.md) sectie.
+Als u een veld, index of ander element wilt toevoegen aan een van de schema&#39;s met kerngegevens in Campagne, zoals de ontvangende tabel (nms:ontvanger), moet u dat schema uitbreiden. Voor meer op dit, verwijs naar [ Uitbreidend een schema ](../../configuration/using/extending-a-schema.md) sectie.
 
-Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campaign buiten het vak bestaat (bijvoorbeeld een contracttabel), kunt u rechtstreeks een aangepast schema maken. Raadpleeg voor meer informatie de [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) sectie.
+Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campaign buiten het vak bestaat (bijvoorbeeld een contracttabel), kunt u rechtstreeks een aangepast schema maken. Voor meer op dit, verwijs naar de [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md) sectie.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -55,9 +55,9 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->U kunt gebruiker-beheerde opsommingen (gewoonlijk onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) om de waarden voor een bepaald veld op te geven. Dit zijn in feite globale opsommingen, en een betere keus als uw opsomming buiten het specifieke schema kan worden gebruikt u binnen werkt.
+>U kunt door de gebruiker beheerde opsommingen ook gebruiken (meestal onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) om de waarden voor een bepaald veld op te geven. Dit zijn in feite globale opsommingen, en een betere keus als uw opsomming buiten het specifieke schema kan worden gebruikt u binnen werkt.
 
-Als u meer wilt weten over opsommingen, raadpleegt u de [Opsommingen](../../configuration/using/schema-structure.md#enumerations) en [`<enumeration>` element](../../configuration/using/schema/enumeration.md) secties.
+Om meer over opsommingen te weten te komen, verwijs naar [ Opsommingen ](../../configuration/using/schema-structure.md#enumerations) en [`<enumeration>` element ](../../configuration/using/schema/enumeration.md) secties.
 
 ## Index {#index}
 
@@ -80,19 +80,19 @@ Voorbeelden:
 </dbindex>
 ```
 
-De **xpath** kenmerk verwijst naar het veld in het schema dat u wilt indexeren.
+Het **xpath** attribuut richt aan het gebied in uw schema dat u wenst om te indexeren.
 
 >[!IMPORTANT]
 >
 >Het is belangrijk om te herinneren dat de SQL de prestatiewinst van de vraaglees die door indexen wordt verstrekt ook met een prestatieshit bij het schrijven van verslagen komt. De indexen moeten daarom met voorzichtigheid worden gebruikt.
 
-Raadpleeg voor meer informatie over indexen de [Geïndexeerde velden](../../configuration/using/database-mapping.md#indexed-fields) sectie.
+Voor meer op indexen, verwijs naar de [ Geïndexeerde gebieden ](../../configuration/using/database-mapping.md#indexed-fields) sectie.
 
 ## Toetsen {#keys}
 
-Elke lijst moet minstens één sleutel hebben, en vaak wordt het automatisch gevestigd in het belangrijkste element van het schema door te gebruiken **@autopk=true** kenmerk ingesteld op &quot;true&quot;.
+Elke lijst moet minstens één sleutel hebben, en vaak wordt het automatisch gevestigd in het belangrijkste element van het schema door het **te gebruiken @autopk=true** attribuut dat aan &quot;waar&quot;wordt geplaatst.
 
-De primaire sleutel kan ook worden gedefinieerd met de **internal** kenmerk.
+De primaire sleutel kan ook worden bepaald gebruikend het **interne** attribuut.
 
 Voorbeeld:
 
@@ -102,21 +102,21 @@ Voorbeeld:
 </key>
 ```
 
-In dit voorbeeld wordt in plaats van het **@automatische** het attribuut leidt tot een standaard primaire sleutel genoemd &quot;id&quot;wij specificeren onze eigen &quot;huishoudenId&quot;primaire sleutel.
+In dit voorbeeld, in plaats van het laten **@automatische** attribuut een standaard primaire sleutel tot stand brengen genoemd &quot;id&quot;wij specificeren onze eigen &quot;homeId&quot;primaire sleutel.
 
 >[!IMPORTANT]
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
-Raadpleeg voor meer informatie over toetsen de [Beheer van sleutels](../../configuration/using/database-mapping.md#management-of-keys) sectie.
+Om meer over sleutels te weten te komen, verwijs naar het [ Beheer van sleutels ](../../configuration/using/database-mapping.md#management-of-keys) sectie.
 
 ## Attributen (velden) {#attributes--fields-}
 
-Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** in de werkbalk van de schemaeditie om lege kenmerksjablonen naar uw XML te verplaatsen waar de cursor zich bevindt. Raadpleeg voor meer informatie de [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) sectie.
+Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** knoop in de toolbar van de schemageditie gebruiken om lege attributenmalplaatjes in uw XML te laten vallen waar uw curseur is. Voor meer op dit, verwijs naar de [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md) sectie.
 
 ![](assets/schemaextension_getting_started_2.png)
 
-De volledige lijst met kenmerken is beschikbaar in de [`<attribute>` element](../../configuration/using/schema/attribute.md) sectie. Hier volgen enkele van de meer gebruikte kenmerken:
+De volledige lijst van attributen is beschikbaar in de [`<attribute>` element ](../../configuration/using/schema/attribute.md) sectie. Hier volgen enkele van de meer gebruikte kenmerken:
 
 * **@advanced**
 * **@dataPolicy**
@@ -133,9 +133,9 @@ De volledige lijst met kenmerken is beschikbaar in de [`<attribute>` element](..
 * **@xml**
 * **@type**
 
-  Als u een tabel wilt weergeven met de toewijzingen voor de gegevenstypen die door Adobe Campaign zijn gegenereerd voor de verschillende databasebeheersystemen, raadpleegt u de [Toewijzing van de typen Adobe Campaign/DBMS-gegevens](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie.
+  Om een lijst te bekijken die van de afbeeldingen voor de gegevenstypes een lijst maakt door Adobe Campaign voor de verschillende systemen van het gegevensbestandbeheer worden geproduceerd, verwijs naar [ Toewijzing de types van Adobe Campaign/DBMS gegevens ](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie die.
 
-Raadpleeg voor meer informatie over elk kenmerk de [Beschrijving van kenmerk](../../configuration/using/schema/attribute.md) sectie.
+Voor meer informatie over elk attribuut, verwijs naar de [ beschrijving van Attributen ](../../configuration/using/schema/attribute.md) sectie.
 
 ### Voorbeelden {#examples}
 
@@ -151,13 +151,13 @@ Voorbeeld van het gebruik van een gemeenschappelijk kenmerk als een sjabloon voo
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Voorbeeld van een berekend veld dat is verborgen met het gereedschap **@advanced** kenmerk:
+Voorbeeld van een berekend veld dat verborgen is met het attribuut **@advanced** :
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-Voorbeeld van een XML-veld dat ook is opgeslagen in een SQL-veld en dat een **@dataPolicy** kenmerk.
+Voorbeeld van een gebied van XML dat ook op een SQL gebied wordt opgeslagen en **@dataPolicy** attributen heeft.
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -173,7 +173,7 @@ Voorbeeld van een XML-veld dat ook is opgeslagen in een SQL-veld en dat een **@d
 
 De verbindingen zijn enkele laatste elementen in het belangrijkste element van uw schema. Ze definiëren hoe alle verschillende schema&#39;s in uw instantie op elkaar betrekking hebben.
 
-Koppelingen worden gedeclareerd in het schema dat de **buitenlandse sleutel** van de tabel waaraan het is gekoppeld.
+De verbindingen worden verklaard in het schema dat de **buitenlandse sleutel** van de lijst bevat waaraan het wordt verbonden.
 
 Er zijn drie soorten kardinaliteit: 1-1, 1-N, en N-N. Het is het type 1-N dat door gebrek wordt gebruikt.
 
@@ -213,7 +213,7 @@ In het onderstaande voorbeeld kunt u velden opnemen die betrekking hebben op de 
 
 ## De databasestructuur bijwerken {#updating-the-database-structure}
 
-Nadat de wijzigingen zijn voltooid en opgeslagen, moeten alle wijzigingen die van invloed kunnen zijn op de SQL-structuur worden toegepast op de database. Hiervoor gebruikt u de wizard Database bijwerken.
+Nadat de wijzigingen zijn voltooid en opgeslagen, moeten alle wijzigingen die van invloed kunnen zijn op de SQL-structuur worden toegepast op de database. Om dit te doen, gebruik de medewerker van de gegevensbestandupdate.
 
 ![](assets/schemaextension_getting_started_3.png)
 
@@ -221,4 +221,4 @@ Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/u
 
 >[!NOTE]
 >
->Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Raadpleeg voor meer informatie de [Regeneratieschema&#39;s](../../configuration/using/regenerating-schemas.md) sectie.
+>Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Voor meer op dit, verwijs naar [ Regenererende schema&#39;s ](../../configuration/using/regenerating-schemas.md) sectie.

@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -21,24 +21,24 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd vanuit [de lijst met opties voor Campaigns Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [ de lijst van de opties van het Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 Er zijn twee mogelijke gevallen:
 
 * Selecteer een bestand en koppel het op dezelfde manier aan de levering.
-* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval moet u een **berekende bijlage**: de naam van de gehechtheid wordt berekend op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook worden gepersonaliseerd en in de indeling PDF worden omgezet op het moment van levering, als u beschikt over de **Variabel digitaal afdrukken** -optie.
+* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval, moet u a **berekende gehechtheid** tot stand brengen: de naam van de gehechtheid wordt gegevens verwerkt op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook worden gepersonaliseerd en in formaat van PDF op het tijdstip van levering worden omgezet, als u de **Variabele Digitale Druk** optie hebt.
 
 >[!NOTE]
 >
->Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Raadpleeg voor meer informatie hierover [Over sjablonen](about-templates.md).
+>Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Voor meer op dit, verwijs naar [ Ongeveer malplaatjes ](about-templates.md).
 
 ## Guardrails {#attachments-guardrails}
 
-Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd in `NmsDelivery_MaxDownloadedImageSize` -optie. Adobe raadt echter sterk aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
+Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd met de optie `NmsDelivery_MaxDownloadedImageSize` . Adobe raadt echter sterk aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
-Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan vanaf de `NmsDelivery_MaxRecommendedAttachments` -optie.
+Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan worden geconfigureerd via de optie `NmsDelivery_MaxRecommendedAttachments` .
 
-Meer informatie in [de lijst met opties voor Campaigns Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Leer meer in [ de lijst van Campaign Classic opties ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 
@@ -50,15 +50,15 @@ Volg onderstaande stappen om een lokaal bestand aan een levering te koppelen.
 
 1. Klik op de koppeling **[!UICONTROL Attachments]**.
 1. Klik op de knop **[!UICONTROL Add]**.
-1. Klikken **[!UICONTROL File...]** om het bestand te selecteren dat aan de levering moet worden gekoppeld.
+1. Klik op **[!UICONTROL File...]** om het bestand te selecteren dat aan de levering moet worden gekoppeld.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-U kunt het bestand ook rechtstreeks slepen en neerzetten in de levering **[!UICONTROL Attachments]** of gebruik de **[!UICONTROL Attach]** pictogram op de werkbalk van de wizard voor levering,
+U kunt het bestand ook rechtstreeks slepen en neerzetten in het bezorgveld **[!UICONTROL Attachments]** of het pictogram **[!UICONTROL Attach]** gebruiken op de werkbalk van de assistent voor levering.
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-Als het bestand is geselecteerd, wordt het direct naar de server geüpload om beschikbaar te zijn op het moment van levering. Het wordt vermeld in **[!UICONTROL Attachments]** veld.
+Als het bestand is geselecteerd, wordt het direct naar de server geüpload om beschikbaar te zijn op het moment van levering. De naam wordt weergegeven in het veld **[!UICONTROL Attachments]** .
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -71,23 +71,23 @@ Wanneer u een berekende gehechtheid creeert, kan de naam van de gehechtheid tijd
 Voer de volgende stappen uit om een gepersonaliseerde bijlage te maken:
 
 1. Klik op de koppeling **[!UICONTROL Attachments]**.
-1. Klik op de knop **[!UICONTROL Add]** en vervolgens selecteert u **[!UICONTROL Calculated attachment]**.
-1. Selecteer het type berekening in het menu **[!UICONTROL Type]** vervolgkeuzelijst:
+1. Klik op de knop **[!UICONTROL Add]** en selecteer vervolgens **[!UICONTROL Calculated attachment]** .
+1. Selecteer het type berekening in de vervolgkeuzelijst **[!UICONTROL Type]** :
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
 
 De volgende opties zijn beschikbaar:
 
-* **Bestandsnaam wordt opgegeven bij het maken van de leveringssjabloon**
-* **De inhoud van het bestand wordt gepersonaliseerd en omgezet in PDF tijdens het verzenden van elk bericht**
-* **De bestandsnaam wordt berekend tijdens de leveringsanalyse (deze kan niet afhankelijk zijn van het ontvangende profiel)**
-* **De bestandsnaam wordt berekend op het moment van levering voor elke ontvanger (deze kan afhankelijk zijn van de ontvanger)**
+* **de naam van het Dossier wordt gespecificeerd wanneer het creëren van het leveringsmalplaatje**
+* **de inhoud van het dossier wordt gepersonaliseerd en in PDF omgezet tijdens de levering van elk bericht**
+* **het dossier - de naam wordt gegevens verwerkt tijdens leveringsanalyse (het kan niet van het ontvankelijke profiel afhangen)**
+* **de naam van het Dossier wordt gegevens verwerkt op het tijdstip van levering voor elke ontvanger (het kan van de ontvanger afhangen)**
 
 ### Een lokaal bestand bijvoegen {#attach-a-local-file}
 
-Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File name is specified when creating the delivery template]**. Het bestand wordt lokaal geselecteerd en geüpload naar de server. Volg de onderstaande stappen:
+Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File name is specified when creating the delivery template]** . Het bestand wordt lokaal geselecteerd en geüpload naar de server. Volg de onderstaande stappen:
 
-1. Selecteer het bestand dat u wilt uploaden in het dialoogvenster **[!UICONTROL Local file]** veld.
+1. Selecteer in het veld **[!UICONTROL Local file]** het bestand dat u wilt uploaden.
 1. Geef zo nodig het label op. Het label vervangt de bestandsnaam bij weergave in een berichtensysteem. Als er niets is opgegeven, wordt standaard de bestandsnaam gebruikt.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
@@ -100,7 +100,7 @@ Het bestand is vervolgens beschikbaar op de server die moet worden gekoppeld aan
 
 ### Een gepersonaliseerd bericht bijvoegen {#attach-a-personalized-message}
 
-De optie **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** Hiermee kunt u een bestand met verpersoonlijkingsvelden selecteren, zoals de achternaam en voornaam van de beoogde ontvanger.
+Met de optie **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kunt u een bestand met verpersoonlijkingsvelden selecteren, zoals de achternaam en voornaam van de bedoelde ontvanger.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -108,7 +108,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 1. Selecteer het bestand dat u wilt uploaden.
 1. Geef zo nodig het label op.
-1. Selecteren **[!UICONTROL Upload file on the server]** en klik vervolgens op **[!UICONTROL Update on server]** om de overdracht te starten.
+1. Selecteer **[!UICONTROL Upload file on the server]** en klik op **[!UICONTROL Update on server]** om de overdracht te starten.
 1. U kunt een voorvertoning weergeven. Selecteer een ontvanger om dit te doen.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
@@ -123,7 +123,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 ### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
-U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]** om dit te doen.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering
 
 ### Een gepersonaliseerd bestand bijvoegen {#attach-a-personalized-file}
 
-Als u de bijlage selecteert, kunt u de optie **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**. Vervolgens kunt u persoonlijke gegevens van ontvangers toewijzen met de naam van het bestand dat u wilt verzenden.
+Als u de bijlage selecteert, kunt u de optie **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]** kiezen. Vervolgens kunt u persoonlijke gegevens van ontvangers toewijzen met de naam van het bestand dat u wilt verzenden.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Als u de bijlage selecteert, kunt u de optie **[!UICONTROL The file name is calc
 
 ### Bijlageinstellingen {#attachment-settings}
 
-Voor de eerste twee opties kunt u **[!UICONTROL Upload file on the server]** door de gewenste optie te selecteren. De **[!UICONTROL Update the file on the server]** Met deze koppeling kunt u beginnen met uploaden.
+Voor de eerste twee opties kunt u **[!UICONTROL Upload file on the server]** kiezen door de juiste optie te selecteren. Met de koppeling **[!UICONTROL Update the file on the server]** kunt u beginnen met uploaden.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -181,9 +181,9 @@ Voor een wijziging van het bestand wordt een waarschuwingsbericht weergegeven:
 
 ![](assets/s_ncs_user_wizard_email01_1372.png)
 
-De **[!UICONTROL Advanced]** kunt u geavanceerde opties definiëren voor bijgevoegde bestanden:
+Op het tabblad **[!UICONTROL Advanced]** kunt u geavanceerde opties definiëren voor bijgevoegde bestanden:
 
-* U kunt filteropties definiëren om te voorkomen dat het bijgevoegde bestand naar alle ontvangers wordt verzonden. De optie **[!UICONTROL Enable filtering of recipients who will receive the attachment]** Hiermee activeert u een invoerveld dat wordt gebruikt om een ontvankelijk selectiescript te definiëren. Dit veld moet in JavaScript worden ingevoerd.
+* U kunt filteropties definiëren om te voorkomen dat het bijgevoegde bestand naar alle ontvangers wordt verzonden. Met de optie **[!UICONTROL Enable filtering of recipients who will receive the attachment]** activeert u een invoerveld dat wordt gebruikt voor het definiëren van een script voor de selectie van ontvangers, dat moet worden ingevoerd in JavaScript.
 * U kunt de naam van het bestand in een script opnemen om het bestand aan te passen.
 
   Voer uw tekst in het venster in en gebruik de velden voor personalisatie die beschikbaar zijn in de vervolgkeuzelijst. In het volgende voorbeeld, wordt filename gepersonaliseerd om de datum van vandaag en de naam van de ontvanger te bevatten.

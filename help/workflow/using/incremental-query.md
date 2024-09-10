@@ -4,7 +4,7 @@ title: Incrementele query
 description: Meer informatie over de activiteit van de Incrementele queryworkflow
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
@@ -28,22 +28,22 @@ De vraag wordt bepaald op de zelfde manier zoals voor standaardvragen, maar zijn
 
 >[!CAUTION]
 >
->Als het resultaat van een incrementele query gelijk is aan **0** tijdens één van zijn uitvoeringen, wordt het werkschema gepauzeerd tot de volgende geprogrammeerde uitvoering van de vraag. De overgangen en de activiteiten die volgen op de stijgende vraag worden daarom niet verwerkt vóór de volgende uitvoering.
+>Als het resultaat van een stijgende vraag aan **0** tijdens één van zijn uitvoeringen gelijk is, wordt het werkschema gepauzeerd tot de volgende geprogrammeerde uitvoering van de vraag. De overgangen en de activiteiten die volgen op de stijgende vraag worden daarom niet verwerkt vóór de volgende uitvoering.
 
 Dit doet u als volgt:
 
-1. In de **[!UICONTROL Scheduling & History]** selecteert u de **[!UICONTROL Schedule execution]** -optie. De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Als de optie echter is uitgeschakeld, wordt de query direct uitgevoerd **en in één keer**.
+1. Selecteer op het tabblad **[!UICONTROL Scheduling & History]** de optie **[!UICONTROL Schedule execution]** . De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Nochtans, als de optie gehandicapt is, wordt de vraag uitgevoerd onmiddellijk **en in één gaat**.
 1. Klik op de knop **[!UICONTROL Change]**.
 
-   In de **[!UICONTROL Schedule editing wizard]** kunt u het type frequentie, de terugkerende gebeurtenis en de geldigheidsperiode van de gebeurtenis configureren.
+   In het venster **[!UICONTROL Schedule editing assistant]** kunt u het type frequentie, terugkerende gebeurtenis en geldigheidsperiode van de gebeurtenis configureren.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Klikken **[!UICONTROL Finish]** om het programma op te slaan.
+1. Klik op **[!UICONTROL Finish]** om het schema op te slaan.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. De onderste sectie van de **[!UICONTROL Scheduling & History]** kunt u het aantal dagen selecteren waarmee u rekening wilt houden in de geschiedenis.
+1. In de onderste sectie van het tabblad **[!UICONTROL Scheduling & History]** kunt u het aantal dagen selecteren waarmee u rekening wilt houden in de geschiedenis.
 
    ![](assets/edit_request_inc.png)
 
@@ -65,4 +65,4 @@ Dit doet u als volgt:
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.
+Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de tabel waarin de doel-id&#39;s worden vastgelegd. **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.

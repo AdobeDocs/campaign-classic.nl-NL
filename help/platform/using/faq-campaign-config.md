@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 75%
+ht-degree: 72%
 
 ---
 
@@ -42,7 +42,7 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl)Lees de technische aanbevelingen voor de leverbaarheid voor meer informatie over het configureren van uw exemplaar om de capaciteit van de campagne te maximaliseren.
+Naast de [ Gids van de Beste praktijken van de Levering van de Adobe de Beste van de Praktijk van de Levering ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
@@ -72,11 +72,11 @@ Als on-premise/hybride klant kunt u Campaign Classic integreren met uw LDAP-dire
 
 Adobe Campaign biedt verschillende CRM-connectoren waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze CRM-connectoren laten u toe om contactpersonen, accounts, aankopen, enzovoort, te synchroniseren. Ze zorgen ervoor dat uw applicatie eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke applicaties.
 
-Deze connectoren maken snelle en eenvoudige data-integratie mogelijk: Adobe Campaign verstrekt een specifieke wizard voor het verzamelen en selecteren van data uit de lijsten die beschikbaar zijn in het CRM-systeem. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
+Deze schakelaars laten snelle en gemakkelijke gegevensintegratie toe: Adobe Campaign verstrekt een specifieke medewerker voor het verzamelen van en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
 
-Uitlezen [CRM-connectors configureren](../../platform/using/crm-connectors.md) om te leren hoe u uw CRM-tool synchroniseert met Adobe Campaign.
+Lees uit [ vorm de schakelaars van CRM ](../../platform/using/crm-connectors.md) om te leren hoe te om uw hulpmiddel van CRM met Adobe Campaign te synchroniseren.
 
-![](assets/do-not-localize/how-to-video.png) Bekijk deze video over hoofdletters/kleine letters [Integratie van Adobe Campaign en Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) bekijk dit gebruiksgeval video op [ Adobe Campaign en Microsoft Dynamics 365 integratie ](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
 ## Hoe te om Zacht Geheime voorgeheugen Duidelijk uit te voeren wanneer de kwesties machine-specifiek of gebruiker-specifiek zijn? {#perform-soft-cache-clear}
 

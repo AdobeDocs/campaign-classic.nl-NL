@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven kom
 
 ## Algemene vragen {#generic-queries}
 
-De vragen worden gevormd via het publicatiesjabloon in **[!UICONTROL Aggregator]** tab.
+De vragen worden gevormd via het publicatiesjabloon in **[!UICONTROL Aggregator]** tabel.
 
 De opgehaalde gegevens verrijken het XML-uitvoerdocument via het hoofdelement.
 
-Voorbeeld van het resultaat van een query op het ontvangende schema (**nms:ontvanger**):
+Voorbeeld van terugkeer van een vraag op het ontvankelijke schema (**nms:ontvanger**):
 
 ```
 <book name="Content Management">
@@ -35,11 +35,11 @@ Voorbeeld van het resultaat van een query op het ontvangende schema (**nms:ontva
 </book>
 ```
 
-De **`<collection-recipient>`** element vertegenwoordigt het inputelement van het document resulterend uit een vraag. De opgehaalde gegevens worden onder dit element geretourneerd. In ons voorbeeld is dit een lijst met ontvangers.
+Het element **`<collection-recipient>`** vertegenwoordigt het invoerelement van het document dat het resultaat is van een query. De opgehaalde gegevens worden onder dit element geretourneerd. In ons voorbeeld is dit een lijst met ontvangers.
 
 ### Een query toevoegen {#adding-a-query}
 
-De queryparameters worden bewerkt met een wizard.
+De vraagparameters worden uitgegeven gebruikend een medewerker.
 
 1. Geef op de eerste pagina het label en het schema op met de gegevens die moeten worden opgehaald.
 
@@ -47,7 +47,7 @@ De queryparameters worden bewerkt met een wizard.
 
    >[!NOTE]
    >
-   >Het bewerkingsveld **Pad** wordt gebruikt om het element van de vraagoutput anders te noemen.
+   >Het uitgeeft gebied **Weg** wordt gebruikt om het element van de vraagoutput anders te noemen.
 
 1. Op de volgende pagina kunt u de gegevens selecteren die u wilt ophalen.
 
@@ -78,9 +78,9 @@ Een inhoudskoppeling wordt als volgt gedeclareerd in het gegevensschema:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-De definitie van de koppeling wordt ingevuld op een **string**-type **`<element>`** en de **expandSchemaTarget** kenmerkverwijzingen het doelschema (&quot;focus:hoofdstuk&quot; in ons voorbeeld). Het schema waarnaar wordt verwezen, moet een inhoudsschema zijn.
+De definitie van de verbinding wordt bevolkt op a **koord** - type **`<element>`**, en **expandSchemaTarget** kenmerkverwijzingen het doelschema (&quot;focus:hoofdstuk&quot;in ons voorbeeld). Het schema waarnaar wordt verwezen, moet een inhoudsschema zijn.
 
-De inhoud van het doelelement verrijkt het koppelingselement, dat wil zeggen de **`<chapter>`** element in ons voorbeeldschema:
+De inhoud van het doelelement verrijkt het koppelingselement, dat wil zeggen het element **`<chapter>`** in ons voorbeeldschema:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -90,7 +90,7 @@ De inhoud van het doelelement verrijkt het koppelingselement, dat wil zeggen de 
 
 >[!NOTE]
 >
->De **Rekenreeks** van de link wordt weergegeven vanuit de **computeString** kenmerk.
+>Het **verwerkt koord** van de verbinding wordt voorgesteld van **computeString** attributen.
 
 In het invoerformulier wordt het bewerkingsbeheer van de koppeling als volgt gedeclareerd:
 
@@ -100,11 +100,11 @@ In het invoerformulier wordt het bewerkingsbeheer van de koppeling als volgt ged
 
 ![](assets/d_ncs_content_link.png)
 
-De **[!UICONTROL Magnifier]** kunt u het bewerkingsformulier van het gekoppelde element openen.
+Met het pictogram **[!UICONTROL Magnifier]** kunt u het bewerkingsformulier van het gekoppelde element openen.
 
 #### Verzameling koppelen {#link-collection}
 
-Als u een verzameling koppelingen wilt vullen, voegt u de opdracht **unbound=&quot;true&quot;** attribuut aan de definitie van het verbindingselement in het gegevensschema:
+Om een inzameling van verbindingen te bevolken, voeg **toe unbound= &quot;waar&quot;** attributen aan de definitie van het verbindingselement in het gegevensschema:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -126,7 +126,7 @@ In het invoerformulier wordt het besturingselement voor de lijst als volgt gedec
 
 ![](assets/d_ncs_content_link2.png)
 
-Er wordt een standaardkolom weergegeven om de **Rekenreeks** van de beoogde elementen.
+Een standaardkolom wordt getoond om **te bekijken rekent koord** van de gerichte elementen.
 
 ### Koppelingen naar externe tabellen {#links-to-external-tables}
 
@@ -136,11 +136,11 @@ Een koppeling naar een externe tabel wordt als volgt gedeclareerd in het gegeven
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-De definitie van de koppeling wordt ingevuld op een **link**-type **`<element>`** en de **target** kenmerkverwijzingen het doelschema (&quot;nms:ontvanger&quot; in ons voorbeeld).
+De definitie van de verbinding wordt bevolkt op a **verbinding** - type **`<element>`**, en de **doel** kenmerkverwijzingen het doelschema (&quot;nms:ontvanger&quot;in ons voorbeeld).
 
 Door overeenkomst, moeten de verbindingen van het belangrijkste element van het gegevensschema worden verklaard.
 
-De **Rekenreeks** en de sleutel van het doelelement verrijkt het **`<name>-id`** en **`<name>-cs`** kenmerken op het hoofdelement.
+Het **verwerkt koord** en de sleutel van het gerichte element verrijken de **`<name>-id`** en **`<name>-cs`** attributen op het belangrijkste element.
 
 In ons voorbeeld wordt de koppeling gevuld in het schema &quot;cus:book&quot;. De inhoud van de koppelingsgegevens bevindt zich in de kenmerken &quot;mainContact-id&quot; en &quot;mainContact-cs&quot;:
 
@@ -156,7 +156,7 @@ Besturingselement voor bewerken van koppeling wordt als volgt gedeclareerd:
 
 ![](assets/d_ncs_content_link3.png)
 
-U kunt de keuze van doelelementen beperken door de optie **`<sysfilter>`** element via de koppelingsdefinitie in het invoerformulier:
+U kunt de keuze van doelelementen beperken door het element **`<sysfilter>`** toe te voegen via de koppelingsdefinitie in het invoerformulier:
 
 ```
 <input xpath="mainContact">
@@ -204,11 +204,11 @@ De inhoud van het doelelement verrijkt elk verzamelingselement in het uitvoerdoc
 
 #### Linkaggregatie {#link-aggregation}
 
-De inhoud van elke koppeling waarnaar wordt verwezen, is beperkt tot de interne sleutel en de **Rekenreeks** van het doelelement.
+De inhoud van elke verbinding waarnaar wordt verwezen is beperkt tot de interne sleutel en **verwerkt koord** van het gerichte element.
 
-Een JavaScript-script wordt gebruikt om de inhoud van de koppelingen te verrijken via SOAP-query&#39;s.
+Een JavaScript-script wordt gebruikt om de inhoud van de koppelingen te verrijken via SOAP query&#39;s.
 
-**Voorbeeld**: Voeg de naam van de ontvanger toe aan de koppeling &quot;mainContact&quot; en de koppelingen voor de verzameling &quot;contact&quot;:
+**Voorbeeld**: Het toevoegen van de ontvankelijke naam aan de &quot;mainContact&quot;verbinding en de &quot;contact&quot;inzamelingsverbindingen:
 
 ```
 // Update <mainContact> link
@@ -255,6 +255,6 @@ Het resultaat dat na de uitvoering van het script wordt bereikt:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-De inhoud van de JavaScript-code wordt toegevoegd via de **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** en moet voor elke transformatie worden ingevuld in de publicatiesjabloon.
+De inhoud van de JavaScript-code wordt toegevoegd via de map **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** en moet voor elke transformatie worden ingevuld in de publicatiesjabloon.
 
 ![](assets/d_ncs_content_link5.png)

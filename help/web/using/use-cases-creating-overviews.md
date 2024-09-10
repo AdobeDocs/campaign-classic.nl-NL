@@ -5,7 +5,7 @@ description: "Gebruik hoofdletters/kleine letters: overzichten maken"
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web tot stand brengen om alle toepassingen van het Web in uw gegevensbestand te tonen. Configureer de volgende elementen:
 
-* een filter in de map (raadpleeg [Een filter toevoegen aan een map](#adding-a-filter-on-a-folder)),
-* een knop voor het maken van een nieuwe webtoepassing (zie [Een knop toevoegen om een nieuwe webtoepassing te configureren](#adding-a-button-to-configure-a-new-web-application)),
-* detailweergave voor elk item in de lijst (zie [Details toevoegen aan een lijst](#adding-detail-to-a-list)),
-* één filter per gereedschap voor het bewerken van koppelingen (zie [Een filter maken met een koppelingseditor](#creating-a-filter-using-a-link-editor)),
-* een koppeling Vernieuwen (raadpleeg [Een koppeling voor vernieuwen maken](#creating-a-refresh-link)).
+* een filter op de omslag (verwijs naar [ Toevoegend een filter op een omslag ](#adding-a-filter-on-a-folder)),
+* een knoop voor het creëren van een nieuwe toepassing van het Web (verwijs naar [ Toevoegend een knoop om een nieuwe toepassing van het Web ](#adding-a-button-to-configure-a-new-web-application) te vormen),
+* detailvertoning voor elke ingang in de lijst (verwijs naar [ Toevoegend detail aan een lijst ](#adding-detail-to-a-list)),
+* één filter per verbinding het uitgeven hulpmiddel (verwijs naar [ Creërend een filter gebruikend een verbindingsredacteur ](#creating-a-filter-using-a-link-editor)),
+* Vernieuw verbinding (verwijs naar [ Creërend een verfrist verbinding ](#creating-a-refresh-link)).
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
 ## Een webtoepassing van één pagina maken {#creating-a-single-page-web-application}
 
-1. Eén maken **[!UICONTROL Page]** De toepassing van het Web en maakt uitgaande overgangen en overgangen aan de volgende pagina onbruikbaar.
+1. Maak één **[!UICONTROL Page]** webtoepassing en schakel uitgaande overgangen en overgangen naar de volgende pagina uit.
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
@@ -36,17 +36,17 @@ In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web
 
    Deze titel zal in de overzichtskopbal en in het de toepassingsoverzicht van het Web verschijnen.
 
-1. In de de toepassingseigenschappen van het Web, wijzig het teruggeven van uw toepassing door te selecteren **[!UICONTROL Single-page Web application]** sjabloon.
+1. Wijzig in de eigenschappen van de webtoepassing de rendering van uw toepassing door de **[!UICONTROL Single-page Web application]** -sjabloon te selecteren.
 
    ![](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. Open de **[!UICONTROL Page]** activiteit van uw toepassing van het Web en open een lijst (**[!UICONTROL Static element > List]**).
-1. In de **[!UICONTROL Data]** selecteert u het type **[!UICONTROL Web applications]** en de **[!UICONTROL Label]** , **[!UICONTROL Creation date]** en **[!UICONTROL Type of application]** uitvoerkolommen.
-1. In de **[!UICONTROL Filter]** subtab, creeer de volgende filter zoals hieronder getoond om de toepassingen van het Web slechts te tonen en malplaatjes van uw mening uit te sluiten.
+1. Selecteer op het tabblad **[!UICONTROL Data]** van de lijst het type **[!UICONTROL Web applications]** document en de kolommen **[!UICONTROL Label]** , **[!UICONTROL Creation date]** en **[!UICONTROL Type of application]** uitvoer.
+1. Maak in het subtabblad **[!UICONTROL Filter]** het volgende filter, zoals hieronder wordt weergegeven, om alleen webtoepassingen weer te geven en sjablonen uit te sluiten van uw weergave.
 
    ![](assets/s_ncs_configuration_webapp_filter.png)
 
-1. Sluit het configuratievenster van uw pagina en klik **[!UICONTROL Preview]**.
+1. Sluit het configuratievenster van de pagina en klik op **[!UICONTROL Preview]** .
 
    De lijst van de toepassingen van het Web beschikbaar in uw gegevensbestand wordt getoond.
 
@@ -56,24 +56,24 @@ In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web
 
 In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van de locatie in de Adobe Campaign-structuur. Dit is een filter op een map. Pas het volgende proces toe om het aan uw overzicht toe te voegen.
 
-1. Plaats de cursor op de knop **[!UICONTROL Page]** knoop van uw toepassing van het Web en voeg een **[!UICONTROL Select folder]** element (**[!UICONTROL Advanced controls > Select folder]**).
-1. In de **[!UICONTROL Storage]** venster dat verschijnt, klikt u op **[!UICONTROL Edit variables]** koppeling.
+1. Plaats uw curseur op de **[!UICONTROL Page]** knoop van uw toepassing van het Web en voeg een **[!UICONTROL Select folder]** element (**[!UICONTROL Advanced controls > Select folder]**) toe.
+1. Klik in het **[!UICONTROL Storage]** -venster dat verschijnt op de koppeling **[!UICONTROL Edit variables]** .
 1. Wijzig het label van de variabele naar wens.
-1. Wijzig de naam van de variabele met de **map** waarde.
+1. Verander de veranderlijke naam met de **omslag** waarde.
 
    >[!NOTE]
    >
-   >De naam van de variabele moet overeenkomen met de naam van het element dat is gekoppeld aan de map (gedefinieerd in het schema), dat wil zeggen **map** in dit geval. U moet deze naam opnieuw gebruiken wanneer u naar de tabel verwijst.
+   >De naam van de variabele moet de naam van het element aanpassen verbonden aan de omslag (die in het schema wordt bepaald), d.w.z. **omslag** in dit geval. U moet deze naam opnieuw gebruiken wanneer u naar de tabel verwijst.
 
-1. Pas de **[!UICONTROL XML]** type aan de variabele.
+1. Pas het **[!UICONTROL XML]** type op de variabele toe.
 
    ![](assets/s_ncs_configuration_webapp_variable_xml.png)
 
-1. Selecteer de **[!UICONTROL Refresh page]** interactie.
+1. Selecteer de interactie **[!UICONTROL Refresh page]** .
 
    ![](assets/s_ncs_configuration_webapp_variable.png)
 
-1. Plaats de cursor in de lijst en in het dialoogvenster **[!UICONTROL Advanced]** tabblad, verwijst u naar de variabele die eerder in het dialoogvenster **[!UICONTROL Folder filter XPath]** van de lijst. U moet de naam gebruiken van het element waarop de mapkoppeling betrekking heeft, dat wil zeggen: **map**.
+1. Plaats de cursor in de lijst en verwijs op het tabblad **[!UICONTROL Advanced]** naar de variabele die u eerder op het tabblad **[!UICONTROL Folder filter XPath]** van de lijst hebt gemaakt. U moet de naam van het element gebruiken betrokken bij de omslagverbinding, d.w.z. **omslag**.
 
    ![](assets/s_ncs_configuration_webapp_variable002.png)
 
@@ -83,27 +83,27 @@ In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van
 
 ## Een knop toevoegen om een nieuwe webtoepassing te configureren {#adding-a-button-to-configure-a-new-web-application}
 
-1. Plaats de cursor op de knop **[!UICONTROL Page]** -element en een koppeling toevoegen (**[!UICONTROL Static elements > Link]**).
+1. Plaats de cursor op het element **[!UICONTROL Page]** en voeg een koppeling toe (**[!UICONTROL Static elements > Link]** ).
 1. Wijzig het koppelingsetiket aangezien het op de knoop in het overzicht zal verschijnen.
 
-   In ons voorbeeld is het label **Nieuw**.
+   In ons voorbeeld, is het etiket **Nieuw**.
 
-1. Voeg de volgende URL in het URL-veld in: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
+1. Neem volgende URL op het gebied URL op: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
 
    >[!NOTE]
    >
-   >**nms:webApp** valt samen met het webtoepassingsschema.
+   >**nms:webApp** valt met het de toepassingsschema van het Web samen.
    >
-   >**nms:newWebApp** valt samen met de nieuwe wizard voor het maken van webtoepassingen.
+   >**nms:newWebApp** valt met de nieuwe de toepassingsverwezenlijking van het Web medewerker samen.
 
 1. Kies of u de URL in hetzelfde venster wilt weergeven.
-1. Voeg het webtoepassingspictogram toe aan het afbeeldingsveld: **/nms/img/webApp.png**.
+1. Voeg het toepassingspictogram van het Web op het beeldgebied toe: **/nms/img/webApp.png**.
 
-   Dit pictogram wordt weergegeven op het tabblad **[!UICONTROL New]** knop.
+   Dit pictogram wordt weergegeven op de knop **[!UICONTROL New]** .
 
-1. Enter **knop** in de **[!UICONTROL Style]** veld.
+1. Ga **knoop** op het **[!UICONTROL Style]** gebied in.
 
-   Naar deze stijl wordt verwezen in het dialoogvenster **[!UICONTROL Single-page Web application]** eerder geselecteerde sjabloon.
+   Naar deze stijl wordt verwezen in de eerder geselecteerde **[!UICONTROL Single-page Web application]** sjabloon.
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 
@@ -112,17 +112,17 @@ In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van
 Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voor elke ingang in uw lijst te tonen.
 
 1. Plaats de cursor op het eerder gemaakte lijstelement.
-1. In de **[!UICONTROL General]** selecteert u de **[!UICONTROL Columns and additional detail]** in de vervolgkeuzelijst.
+1. Selecteer op het tabblad **[!UICONTROL General]** de weergavemodus **[!UICONTROL Columns and additional detail]** in de vervolgkeuzelijst.
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. In de **[!UICONTROL Data]** tabblad, voegt u de **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** en **[!UICONTROL Description]** en selecteert u de **[!UICONTROL Hidden field]** voor elke optie.
+1. Voeg op het tabblad **[!UICONTROL Data]** de kolommen **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** en **[!UICONTROL Description]** toe en selecteer de optie **[!UICONTROL Hidden field]** voor elke kolom.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 
    Op die manier is deze informatie alleen zichtbaar in de details van elke vermelding.
 
-1. In de **[!UICONTROL Additional detail]** toevoegen:
+1. Voeg de volgende code toe op het tabblad **[!UICONTROL Additional detail]** :
 
    ```
    <div class="detailBox">
@@ -157,7 +157,7 @@ Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voo
 
 >[!NOTE]
 >
->JavaScript-bibliotheken vernieuwen zich vijf minuten op de server. U kunt de server opnieuw starten om te voorkomen dat wordt gewacht tot deze vertraging optreedt.
+>Het vernieuwen van JavaScript-bibliotheken op de server duurt vijf minuten. U kunt de server opnieuw starten om te voorkomen dat wordt gewacht tot deze vertraging optreedt.
 
 ## De lijst filteren en bijwerken {#filtering-and-updating-the-list}
 
@@ -165,40 +165,40 @@ In deze sectie, zult u een filter voor het tonen van het overzicht van de toepas
 
 Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht grafisch te worden gegroepeerd.
 
-1. Plaats de cursor op de knop **[!UICONTROL Page]** element en selecteer **[!UICONTROL Container > Standard]**.
-1. Aantal kolommen instellen op **2**, zodat de koppelingseditor en de koppeling naast elkaar staan.
+1. Plaats de cursor op het element **[!UICONTROL Page]** en selecteer **[!UICONTROL Container > Standard]** .
+1. Plaats het aantal kolommen aan **2**, zodat de verbindingsredacteur en de verbinding naast elkaar zijn.
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Voor informatie over de indeling van elementen raadpleegt u [deze sectie](about-web-forms.md).
+   Voor informatie over elementenlay-out, verwijs naar [ deze sectie ](about-web-forms.md).
 
-1. Toepassen **dottedFilter**.
+1. Pas **dottedFilter** toe.
 
-   Naar deze stijl wordt verwezen in het dialoogvenster **[!UICONTROL Single-page Web application]** eerder geselecteerde sjabloon.
+   Naar deze stijl wordt verwezen in de eerder geselecteerde **[!UICONTROL Single-page Web application]** sjabloon.
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 
 ### Een filter maken met een koppelingseditor {#creating-a-filter-using-a-link-editor}
 
-1. Plaats de cursor op de container die u tijdens het vorige werkgebied hebt gemaakt en voeg een koppelingseditor in via de **[!UICONTROL Advanced controls]** -menu.
-1. Selecteer in het opslagvenster dat automatisch wordt geopend de optie **[!UICONTROL Variables]** en klikt u op de knop **[!UICONTROL Edit variables]** koppelen en een XML-variabele maken voor het filteren van gegevens.
+1. Plaats de cursor op de container die u in het vorige werkgebied hebt gemaakt en voeg een koppelingseditor in via het menu **[!UICONTROL Advanced controls]** .
+1. Selecteer in het opslagvenster dat automatisch wordt geopend de optie **[!UICONTROL Variables]** en klik vervolgens op de koppeling **[!UICONTROL Edit variables]** en maak een XML-variabele voor het filteren van gegevens.
 
    ![](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. Wijzig het label.
 
-   Het verschijnt naast **[!UICONTROL Filter]** in het overzicht.
+   Deze wordt naast het veld **[!UICONTROL Filter]** in het overzicht weergegeven.
 
 1. Kies de lijst van Exploitant als toepassingsschema.
 
    ![](assets/s_ncs_configuration_webapp_linkeditor.png)
 
-1. Plaats de cursor op het lijstelement en maak een filter via de knop **[!UICONTROL Data > Filter]** tab:
+1. Plaats de cursor op het lijstelement en maak een filter via het tabblad **[!UICONTROL Data > Filter]** :
 
-   * **Uitdrukking:** Externe sleutel van de koppeling Gemaakt door
-   * **Operator:** is gelijk aan
+   * **Uitdrukking:** Buitenlandse sleutel van de &quot;Gemaakt door&quot;verbinding
+   * **Exploitant:** evenaart aan
    * **Waarde:** Variabelen (variabelen)
-   * **Wordt in aanmerking genomen:** &#39;$(var2/@id)&#39;!=&#39;
+   * **waarmee rekening wordt gehouden als:** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
@@ -208,18 +208,18 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
 ### Een koppeling voor vernieuwen maken {#creating-a-refresh-link}
 
-1. Plaats de cursor op de container en voeg een **[!UICONTROL Link]** via de **[!UICONTROL Static elements]** -menu.
+1. Plaats de cursor op de container en voeg een **[!UICONTROL Link]** in via het menu **[!UICONTROL Static elements]** .
 1. Wijzig het label.
 1. Selecteer **[!UICONTROL Refresh data in a list]**.
 1. Voeg de eerder gemaakte lijst toe.
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. Het pictogram Vernieuwen toevoegen op het tabblad **[!UICONTROL Image]** veld: **/xtk/img/refresh.png**.
+1. Voeg toe verfrist pictogram op het **[!UICONTROL Image]** gebied: **/xtk/img/refresh.png**.
 1. Gebruikend de soort-orde pijlen, reorganiseer de diverse elementen van uw toepassing van het Web zoals hieronder getoond.
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
 
-De toepassing van het Web wordt nu gevormd. U kunt op de knop **[!UICONTROL Preview]** gebruiken om een voorvertoning weer te geven.
+De toepassing van het Web wordt nu gevormd. U kunt op de tab **[!UICONTROL Preview]** klikken om er een voorvertoning van weer te geven.
 
 ![](assets/s_ncs_configuration_webapp_result.png)

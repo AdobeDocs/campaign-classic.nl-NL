@@ -5,7 +5,7 @@ description: Een webformulier publiceren
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -26,13 +26,13 @@ De volgende identificatiemethoden zijn mogelijk:
 
   Deze coderingsmethode gebruikt de gecodeerde Adobe Campaign-id (ID). Deze methode is alleen van toepassing op een Adobe Campaign-object en de gecodeerde id mag alleen worden gegenereerd door het Adobe Campaign-platform.
 
-  Als u deze methode gebruikt, moet u de URL van het formulier aanpassen voor levering aan het e-mailadres door het volgende toe te voegen **`<%=escapeUrl(recipient.cryptedId) %>`** parameter. Raadpleeg voor meer informatie hierover [Een formulier via e-mail verzenden](#delivering-a-form-via-email).
+  Wanneer u deze methode gebruikt, moet u de URL van het formulier aanpassen om het e-mailadres te verzenden door de parameter **`<%=escapeUrl(recipient.cryptedId) %>`** toe te voegen. Voor meer op dit, verwijs naar [ Leverend een vorm via e-mail ](#delivering-a-form-via-email).
 
 * **[!UICONTROL DES encryption]**
 
   ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-  Deze encryptiemethode gebruikt een herkenningsteken (identiteitskaart) die extern wordt verstrekt, verbonden met een sleutel die door Adobe Campaign en de externe leverancier wordt gedeeld. De **[!UICONTROL Des key]** kunt u deze coderingssleutel invoeren.
+  Deze encryptiemethode gebruikt een herkenningsteken (identiteitskaart) die extern wordt verstrekt, verbonden met een sleutel die door Adobe Campaign en de externe leverancier wordt gedeeld. In het veld **[!UICONTROL Des key]** kunt u deze coderingssleutel invoeren.
 
 * **[!UICONTROL List of fields]**
 
@@ -40,11 +40,11 @@ De volgende identificatiemethoden zijn mogelijk:
 
   ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-  U kunt velden toevoegen aan de formuliereigenschappen via het dialoogvenster **[!UICONTROL Parameters]** tab (verwijzing naar [Parameters toevoegen](defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
+  De gebieden kunnen aan de vormeigenschappen via het **[!UICONTROL Parameters]** lusje worden toegevoegd (verwijs naar [ Toevoegende parameters ](defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
 
   >[!CAUTION]
   >
-  >De gegevens in de geselecteerde velden worden niet versleuteld. Het mag niet in een gecodeerde vorm worden verstrekt omdat Adobe Campaign het niet kan decoderen als het **[!UICONTROL Field list]** is geselecteerd.
+  >De gegevens in de geselecteerde velden worden niet versleuteld. Deze mag niet in een versleuteld formulier worden aangeboden, omdat Adobe Campaign deze niet kan decoderen als de optie **[!UICONTROL Field list]** is geselecteerd.
 
   In het volgende voorbeeld wordt het vooraf laden van profielen gebaseerd op het e-mailadres.
 
@@ -58,15 +58,15 @@ De volgende identificatiemethoden zijn mogelijk:
 
   >[!CAUTION]
   >
-  >Als in de lijst meerdere velden zijn opgegeven, worden de gegevens van **ALLE VELDEN** Het profiel kan alleen worden bijgewerkt als het overeenkomt met de gegevens die in de database zijn opgeslagen. Anders wordt een nieuw profiel gemaakt.
+  >Als verscheidene gebieden in de lijst worden gespecificeerd, moeten de gegevens van **ALLE GEBIEDEN** de gegevens aanpassen die in het gegevensbestand worden opgeslagen opdat het profiel wordt bijgewerkt. Anders wordt een nieuw profiel gemaakt.
   > 
   >Deze functie is vooral nuttig voor de toepassingen van het Web maar niet geadviseerd voor openbare vormen. De geselecteerde toegangsbeheeroptie moet &quot;toegangsbeheer&quot;toelaten zijn.
 
-De **[!UICONTROL Skip preloading if no ID]** Selecteer deze optie als u geen profielen wilt bijwerken. In dat geval wordt elk ingevoerde profiel na goedkeuring van het formulier toegevoegd aan de database. Deze optie wordt bijvoorbeeld gebruikt wanneer het formulier op een website wordt geplaatst.
+U moet de optie **[!UICONTROL Skip preloading if no ID]** selecteren als u geen profielen wilt bijwerken. In dat geval wordt elk ingevoerde profiel na goedkeuring van het formulier toegevoegd aan de database. Deze optie wordt bijvoorbeeld gebruikt wanneer het formulier op een website wordt geplaatst.
 
-De **[!UICONTROL Auto-load data referenced in the form]** Met deze optie kunt u automatisch de gegevens laden die overeenkomen met de invoer- en samenvoegvelden in het formulier. Gegevens waarnaar echter wordt verwezen in **[!UICONTROL Script]** en **[!UICONTROL Test]** de activiteiten betreffen niet. Als deze optie niet is geselecteerd, moet u de velden definiëren met de **[!UICONTROL Load additional data]** -optie.
+Met de optie **[!UICONTROL Auto-load data referenced in the form]** kunt u automatisch de gegevens laden die overeenkomen met de invoer- en samenvoegvelden in het formulier. De gegevens waarnaar wordt verwezen in **[!UICONTROL Script]** - en **[!UICONTROL Test]** -activiteiten hebben echter geen betrekking. Als deze optie niet is geselecteerd, moet u de velden definiëren met de optie **[!UICONTROL Load additional data]** .
 
-De **[!UICONTROL Load additional data]** Met deze optie kunt u informatie toevoegen die niet wordt gebruikt op de pagina&#39;s van het formulier, maar die wel vooraf wordt geladen.
+Met de optie **[!UICONTROL Load additional data]** kunt u informatie toevoegen die niet wordt gebruikt op de pagina&#39;s van het formulier, maar die wel vooraf wordt geladen.
 
 U kunt bijvoorbeeld het geslacht van de ontvanger vooraf laden en deze automatisch via een testvak naar de juiste pagina sturen.
 
@@ -80,41 +80,41 @@ Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u het verze
 
 Er zijn drie fasen in de levenscyclus van een formulier:
 
-1. **Wordt bewerkt**
+1. **wordt uitgegeven**
 
-   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier is alleen voor testdoeleinden vereist, en vervolgens is de parameter vereist **[!UICONTROL __uuid]** te gebruiken in zijn URL. Deze URL is toegankelijk in het dialoogvenster **[!UICONTROL Preview]** subtab. Zie [URL-parameters van formulier](defining-web-forms-properties.md#form-url-parameters).
+   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier alleen voor testdoeleinden vereist dat de parameter **[!UICONTROL __uuid]** in de URL wordt gebruikt. Deze URL is toegankelijk op het subtabblad **[!UICONTROL Preview]** . Zie {de parameters van 0} Vorm URL ](defining-web-forms-properties.md#form-url-parameters).[
 
    >[!CAUTION]
    >
    >Zolang het formulier wordt bewerkt, is de toegangs-URL een speciale URL.
 
-1. **Publicatie in behandeling**
+1. **Hangende publicatie**
 
-   In sommige gevallen, bijvoorbeeld wanneer [een formulier importeren via een pakket](#import-web-packages)), kan een webformulier de **[!UICONTROL Pending publication]** status tot hij live is.
+   In sommige gevallen (zoals wanneer [ een vorm door een pakket ](#import-web-packages) invoert), kan een Webvorm de **[!UICONTROL Pending publication]** status hebben tot het levend is.
 
    >[!NOTE]
    >
-   >Voor technische webtoepassingen (beschikbaar via de **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** menu), een formulier met de **[!UICONTROL Pending publication]** status wordt automatisch [gepubliceerd](#publishing-a-form) en krijgt de **[!UICONTROL Online]** status.
+   >Voor technische Webtoepassingen (beschikbaar door **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** menu), is een vorm met de **[!UICONTROL Pending publication]** status automatisch [ gepubliceerd ](#publishing-a-form) en krijgt de **[!UICONTROL Online]** status.
 
 1. **Online**
 
    Nadat de ontwerpfase is voltooid, kan het formulier worden afgeleverd.
 
-   Wanneer een formulier de **[!UICONTROL Being edited]** of **[!UICONTROL Pending publication]** status, moet [gepubliceerd](#publishing-a-form) om online en toegankelijk te zijn via de URL van het webformulier in een browser.
+   Wanneer een vorm **[!UICONTROL Being edited]** of **[!UICONTROL Pending publication]** status heeft, moet het [ worden gepubliceerd ](#publishing-a-form) om online en toegankelijk door Webvorm URL in browser te zijn.
 
    Nadat het formulier is gepubliceerd, blijft het actief tot het vervalt.
 
-   Het formulier wordt **[!UICONTROL Live]** tot het vervalt.
+   Het formulier is **[!UICONTROL Live]** totdat het vervalt.
 
    >[!CAUTION]
    >
-   >De URL van het formulier mag niet het volgende bevatten: **[!UICONTROL __uuid]** parameter.
+   >De URL van het formulier mag de parameter **[!UICONTROL __uuid]** niet bevatten om te worden verzonden.
 
 1. **Gesloten**
 
    Nadat het formulier is gesloten, is de leveringsfase voorbij en is het formulier niet meer beschikbaar: het is niet meer toegankelijk voor gebruikers.
 
-   De vervaldatum kan worden gedefinieerd in het venster met formuliereigenschappen. Raadpleeg voor meer informatie hierover [Een formulier online beschikbaar maken](#making-a-form-available-online).
+   De vervaldatum kan worden gedefinieerd in het venster met formuliereigenschappen. Voor meer op dit, verwijs naar [ Making een vorm online ](#making-a-form-available-online) beschikbaar.
 
 De publicatiestatus van een formulier wordt weergegeven in de lijst met formulieren.
 
@@ -122,47 +122,47 @@ De publicatiestatus van een formulier wordt weergegeven in de lijst met formulie
 
 ### Een formulier publiceren {#publishing-a-form}
 
-Als u de status van een formulier wilt wijzigen, moet u het publiceren. Om dit te doen, klik **[!UICONTROL Publication]** boven de lijst met webformulieren en selecteer de status in de vervolgkeuzelijst.
+Als u de status van een formulier wilt wijzigen, moet u het publiceren. Klik hiertoe op de knop **[!UICONTROL Publication]** boven de lijst met webformulieren en selecteer de status in de vervolgkeuzelijst.
 
 ![](assets/webapp_publish_webform.png)
 
 ### Een formulier online beschikbaar maken {#making-a-form-available-online}
 
-Om door gebruikers te kunnen worden geraadpleegd, moet het formulier in productie zijn en worden gestart, d.w.z. binnen de geldigheidsperiode. De geldigheidsdata worden ingevoerd via de **[!UICONTROL Properties]** koppeling van het formulier.
+Om door gebruikers te kunnen worden geraadpleegd, moet het formulier in productie zijn en worden gestart, d.w.z. binnen de geldigheidsperiode. De geldigheidsdatums worden ingevoerd via de koppeling **[!UICONTROL Properties]** van het formulier.
 
-* Gebruik de velden in het dialoogvenster **[!UICONTROL Project]** in om begin- en einddatums voor het formulier in te voeren.
+* Gebruik de velden in de sectie **[!UICONTROL Project]** om begin- en einddatums voor het formulier in te voeren.
 
   ![](assets/webapp_availability_date.png)
 
-* Klik op de knop **[!UICONTROL Personalize the message displayed if the form is closed...]** Hiermee definieert u het foutbericht dat wordt weergegeven als de gebruiker toegang probeert te krijgen tot het formulier terwijl het niet geldig is.
+* Klik op de koppeling **[!UICONTROL Personalize the message displayed if the form is closed...]** om het foutbericht te definiëren dat moet worden weergegeven als de gebruiker toegang probeert te krijgen tot het formulier terwijl het niet geldig is.
 
-  Zie [Toegankelijkheid van het formulier](defining-web-forms-properties.md#accessibility-of-the-form).
+  Zie [ Toegankelijkheid van de vorm ](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Een formulier via e-mail verzenden {#delivering-a-form-via-email}
 
-Als u een uitnodiging via e-mail verzendt, kunt u de opdracht **[!UICONTROL Adobe Campaign Encryption]** optie voor afstemming van gegevens. Hiervoor gaat u naar de wizard voor levering en past u de koppeling naar het formulier aan door de volgende parameter toe te voegen:
+Wanneer u een uitnodiging via e-mail verzendt, kunt u de optie **[!UICONTROL Adobe Campaign Encryption]** gebruiken voor het afstemmen van gegevens. Om dit te doen, ga naar de leveringsmedewerker en pas de verbinding aan de vorm aan door de volgende parameter toe te voegen:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-In dit geval moet de compatibiliteitssleutel voor gegevensopslag de gecodeerde id van de ontvanger zijn. Raadpleeg voor meer informatie hierover [De formuliergegevens vooraf laden](#pre-loading-the-form-data).
+In dit geval moet de compatibiliteitssleutel voor gegevensopslag de gecodeerde id van de ontvanger zijn. Voor meer op dit, verwijs naar [ pre-ladend de vormgegevens ](#pre-loading-the-form-data).
 
-In dit geval moet u de opdracht **[!UICONTROL Update the preloaded record]** in het recordvak. Raadpleeg voor meer informatie hierover [Webformulieren opslaan](web-forms-answers.md#saving-web-forms-answers).
+In dit geval moet u de optie **[!UICONTROL Update the preloaded record]** in het recordvak inschakelen. Voor meer op dit, verwijs naar [ het Opslaan van de vormen van het Web antwoorden ](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Antwoorden in logboek {#log-responses}
 
-Het volgen van de reactie kan in een specifiek lusje worden geactiveerd om het effect van uw vorm van het Web te controleren. Om dit te doen, klik **[!UICONTROL Advanced parameters...]** in het venster met formuliereigenschappen en selecteer de optie **[!UICONTROL Log responses]** -optie.
+Het volgen van de reactie kan in een specifiek lusje worden geactiveerd om het effect van uw vorm van het Web te controleren. Klik hiertoe op de koppeling **[!UICONTROL Advanced parameters...]** in het venster met formuliereigenschappen en selecteer de optie **[!UICONTROL Log responses]** .
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
-De **[!UICONTROL Responses]** weergegeven, kunt u de identiteit van de geënquêteerden weergeven.
+Op het tabblad **[!UICONTROL Responses]** kunt u de identiteit van de geënquêteerden weergeven.
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Selecteer een ontvanger en klik op de knop **[!UICONTROL Detail...]** om de antwoorden te bekijken die worden verstrekt.
+Selecteer een ontvanger en klik op de knop **[!UICONTROL Detail...]** om de antwoorden weer te geven.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
@@ -172,29 +172,29 @@ U kunt de antwoordlogboeken verwerken die in vragen worden verstrekt, bijvoorbee
 
 Bij het exporteren en importeren van een pakket met een webformulier van een exemplaar naar een ander exemplaar (bijvoorbeeld van werkgebied naar productie), kan de status van het webformulier op het nieuwe exemplaar afhankelijk van verschillende omstandigheden variëren. De verschillende gevallen worden hieronder vermeld.
 
-Meer informatie over de verschillende statussen van een webformulier in [deze sectie](#life-cycle-of-a-form).
+Leer meer op de verschillende statussen van een Webvorm in [ deze sectie ](#life-cycle-of-a-form).
 
 >[!NOTE]
 >
 >Wanneer u een webformulier exporteert via een pakket, is de formulierstatus zichtbaar in de inhoud van het resulterende pakket.
 
-* Als de status van het webformulier **[!UICONTROL Pending publication]** of **[!UICONTROL Online]** bij export uit eerste instantie:
+* Als de status van het webformulier **[!UICONTROL Pending publication]** of **[!UICONTROL Online]** was bij het exporteren uit de eerste instantie:
 
-   * Het webformulier haalt het **[!UICONTROL Pending publication]** status indien geïmporteerd op het nieuwe exemplaar.
+   * Het webformulier krijgt de status **[!UICONTROL Pending publication]** wanneer het wordt geïmporteerd in het nieuwe exemplaar.
 
-   * Als het webformulier al bestaat op het nieuwe exemplaar, wordt het vervangen door de nieuwe versie van het formulier en wordt het **[!UICONTROL Pending publication]** status, zelfs als de oude versie van het formulier **[!UICONTROL Online]**.
+   * Als het webformulier al bestaat op het nieuwe exemplaar, wordt het vervangen door de nieuwe versie van het formulier en krijgt het de status **[!UICONTROL Pending publication]** , zelfs als de oude versie van het formulier **[!UICONTROL Online]** was.
 
-   * Of het formulier nu bestaat of niet, het formulier moet [gepubliceerd](#publishing-a-form) worden **[!UICONTROL Online]** op het nieuwe exemplaar en toegankelijk via het Webvorm URL in browser.
+   * Of de vorm al dan niet bestond, moet de vorm [ worden gepubliceerd ](#publishing-a-form) om **[!UICONTROL Online]** op de nieuwe instantie te worden en toegankelijk door Webvorm URL in browser.
 
-* Als de status van het webformulier **[!UICONTROL Being edited]** bij export:
+* Als de status van het webformulier tijdens het exporteren **[!UICONTROL Being edited]** was:
 
-   * Als het webformulier nieuw is op het exemplaar waar het pakket wordt geïmporteerd, wordt het webformulier **[!UICONTROL Being edited]** status.
+   * Als het webformulier nieuw is op het exemplaar waar het pakket wordt geïmporteerd, krijgt het webformulier de status **[!UICONTROL Being edited]** .
 
-   * Als het webformulier al bestaat op het nieuwe exemplaar, is dit een wijziging op een bestaand formulier. Als de oude versie van het formulier **[!UICONTROL Online]**, blijft de oude versie online totdat de nieuwe versie van het formulier wordt weergegeven [gepubliceerd](#publishing-a-form) nogmaals op de nieuwe instantie.
+   * Als het webformulier al bestaat op het nieuwe exemplaar, is dit een wijziging op een bestaand formulier. Als de oude versie van de vorm **[!UICONTROL Online]** was, blijft de oude versie online tot de nieuwe versie van de vorm [ ](#publishing-a-form) opnieuw op de nieuwe instantie wordt gepubliceerd.
 
   >[!NOTE]
   >
-  >U kunt de meest recente versie van uw webformulier controleren met de opdracht **[!UICONTROL Preview]** tab.
+  >U kunt de meest recente versie van uw webformulier controleren via het tabblad **[!UICONTROL Preview]** .
 
 <!--For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)

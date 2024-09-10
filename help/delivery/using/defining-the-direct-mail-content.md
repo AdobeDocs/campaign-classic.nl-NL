@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
@@ -17,17 +17,17 @@ ht-degree: 10%
 
 ## Extractiebestand {#extraction-file}
 
-De naam van het bestand met de geëxtraheerde gegevens wordt gedefinieerd in het dialoogvenster **[!UICONTROL File]** veld. Met de knop rechts van het veld kunt u aanpassingsvelden gebruiken om de bestandsnaam te maken.
+De naam van het bestand met de geëxtraheerde gegevens wordt gedefinieerd in het veld **[!UICONTROL File]** . Met de knop rechts van het veld kunt u aanpassingsvelden gebruiken om de bestandsnaam te maken.
 
-Standaard wordt het extractiebestand gemaakt en opgeslagen op de server. U kunt het opslaan op uw computer. Controleer de **[!UICONTROL Download the generated file after the analysis of the delivery]**. In dit geval moet u het toegangspad naar de lokale opslagmap en de bestandsnaam aangeven.
+Standaard wordt het extractiebestand gemaakt en opgeslagen op de server. U kunt het opslaan op uw computer. Controleer **[!UICONTROL Download the generated file after the analysis of the delivery]** om dit te doen. In dit geval moet u het toegangspad naar de lokale opslagmap en de bestandsnaam aangeven.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Voor direct-maillevering wordt de inhoud van de extractie gedefinieerd in **[!UICONTROL Edit the extraction file format...]** koppeling.
+Voor direct mail levering, wordt de inhoud van de extractie bepaald in **[!UICONTROL Edit the extraction file format...]** verbinding.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-Met deze koppeling hebt u toegang tot de wizard Exporteren en kunt u de gegevens (kolommen) definiëren die naar het uitvoerbestand moeten worden geëxporteerd.
+Met deze koppeling hebt u toegang tot de extractieassistent en definieert u de informatie (kolommen) die u wilt exporteren naar het uitvoerbestand.
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voege
 
 >[!NOTE]
 >
->Deze wizard bevat de stappen van de wizard Exporteren die in het dialoogvenster [Aan de slag](../../platform/using/executing-export-jobs.md) sectie.
+>Deze assistent omvat de stappen van de uitvoermedewerker die in [ worden gedetailleerd Begonnen ](../../platform/using/executing-export-jobs.md) sectie.

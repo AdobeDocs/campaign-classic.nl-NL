@@ -5,7 +5,7 @@ description: Aan de slag met een beschrijvende analyse
 feature: Reporting, Monitoring
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-Als u statistieken over de gegevens in de database wilt maken, maakt u beschrijvende analyserapporten met de toegewezen wizard en past u de inhoud en presentatie aan uw wensen aan.
+Om statistieken over de gegevens in het gegevensbestand te produceren, creeer beschrijvende analyserapporten gebruikend de specifieke medewerker en pas hun inhoud en presentatie aan uw behoeften aan.
 
 Deze verslagen hebben betrekking op populaties en mogen alleen worden gebruikt voor de analyse van kleine gegevensvolumes.
 
@@ -38,7 +38,7 @@ Kwantitatieve analyses leveren algemene statistieken op over de numerieke gegeve
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-Deze rapporten worden gecreeerd via de beschrijvende analysetovenaar, die op diverse stappen gebaseerd is, laat u het type van rapport kiezen u evenals de gegevens en de lay-out wilt tot stand brengen. Het rapport wordt weergegeven in de laatste stap. Indien nodig, kan het rapport worden gepubliceerd en met andere exploitanten worden gedeeld, gedrukt, uitgevoerd in Excel, PDF of formaat OpenDocument.
+Deze rapporten worden gecreeerd via de beschrijvende analysemedewerker, die op diverse stappen gebaseerd is, laat u het type van rapport kiezen u evenals de gegevens en de lay-out wilt tot stand brengen. Het rapport wordt weergegeven in de laatste stap. Indien nodig, kan het rapport worden gepubliceerd en met andere exploitanten worden gedeeld, gedrukt, uitgevoerd in Excel, PDF of formaat OpenDocument.
 
 De beschrijvende analysetovenaars zijn niet zo krachtig zoals de rapporten van Adobe Campaign maar zij verstrekken een snel overzicht van de gegevensbestandinhoud of een selectie van gegevens.
 

@@ -4,7 +4,7 @@ title: Audit trail
 description: Leer hoe u uw exemplaar kunt controleren met het Campagne Audit Trail
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 2%
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 
 
-In Adobe Campaign **[!UICONTROL Audit trail]** geeft u toegang tot de volledige geschiedenis van veranderingen die binnen uw instantie worden aangebracht.
+In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 
-**[!UICONTROL Audit trail]** legt in real-time een uitgebreide lijst vast met acties en gebeurtenissen die plaatsvinden in uw Adobe Campaign-instantie. Het omvat een zelf-servermanier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat met uw werkschema&#39;s gebeurde, en wie hen het laatst bijwerkte of wat uw gebruikers in de instantie deden.
+**[!UICONTROL Audit trail]** legt in real-time een uitgebreide lijst met acties en gebeurtenissen vast die in uw Adobe Campaign-instantie plaatsvinden. Het omvat een zelf-servermanier om tot een geschiedenis van gegevens toegang te hebben helpen vragen zoals beantwoorden: wat met uw werkschema&#39;s gebeurde, en wie hen het laatst bijwerkte of wat uw gebruikers in de instantie deden.
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ In Adobe Campaign **[!UICONTROL Audit trail]** geeft u toegang tot de volledige 
 
 Audittrail bestaat uit drie onderdelen:
 
-* **Schema audit trail**: Controleer de activiteiten en de laatste wijzigingen die u in uw schema&#39;s hebt aangebracht.
+* **de auditspoor van het Schema**: Controleer de activiteiten en de laatste wijzigingen die aan uw schema&#39;s worden gedaan.
 
-  Voor meer informatie over schema&#39;s, verwijs naar dit [page](../../configuration/using/data-schemas.md).
+  Voor meer informatie over schema&#39;s, verwijs naar deze [ pagina ](../../configuration/using/data-schemas.md).
 
-* **Workflowaudittrail**: Controleer activiteiten en laatste wijzigingen die zijn aangebracht aan workflows, en daarnaast de status van uw workflows, zoals:
+* **het auditspoor van het Werkschema**: De activiteiten van de controle en laatste wijzigingen die aan werkschema&#39;s worden gedaan, en daarnaast, de staat van uw werkschema&#39;s zoals:
 
    * Starten
    * Pauzeren
@@ -41,34 +41,34 @@ Audittrail bestaat uit drie onderdelen:
    * Wakeup die gelijk is aan de handeling Voer taken uit die in behandeling zijn.
    * Onvoorwaardelijk stoppen
 
-  Raadpleeg deze voor meer informatie over workflows [page](../../workflow/using/about-workflows.md).
+  Voor meer informatie over werkschema&#39;s, verwijs naar deze [ pagina ](../../workflow/using/about-workflows.md).
 
-  Raadpleeg voor meer informatie over het controleren van workflows de [speciale sectie](../../workflow/using/monitoring-workflow-execution.md).
+  Voor meer op hoe te om werkschema&#39;s te controleren, verwijs naar de [ specifieke sectie ](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Optie audittrail**: Controleer de activiteiten en laatste wijzigingen die u hebt aangebracht in uw opties.
+* **de controlespoor van de Optie**: Controleer de activiteiten en de laatste wijzigingen die aan uw opties worden gedaan.
 
-  Raadpleeg deze voor meer informatie over opties [page](../../installation/using/configuring-campaign-options.md).
+  Voor meer informatie over opties, verwijs naar deze [ pagina ](../../installation/using/configuring-campaign-options.md).
 
 ## Audittrail openen {#accessing-audit-trail}
 
-Toegang krijgen tot de **[!UICONTROL Audit trail]** :
+Ga als volgt te werk om de instantie **[!UICONTROL Audit trail]** te openen:
 
-1. Toegang krijgen tot de **[!UICONTROL Explorer]** van uw instantie.
-1. Onder de **[!UICONTROL Administration]** menu, selecteert u **[!UICONTROL Audit]** .
+1. Open het menu **[!UICONTROL Explorer]** van uw instantie.
+1. Selecteer **[!UICONTROL Audit]** onder het menu **[!UICONTROL Administration]** .
 
    ![](assets/audit_trail_1.png)
 
-1. De **[!UICONTROL Audit trail]** wordt geopend met de lijst van uw entiteiten. Adobe Campaign controleert het maken, bewerken en verwijderen van acties voor workflows, opties en schema&#39;s.
+1. Het venster **[!UICONTROL Audit trail]** wordt geopend met de lijst met entiteiten. Adobe Campaign controleert het maken, bewerken en verwijderen van acties voor workflows, opties en schema&#39;s.
 
    Selecteer een van de entiteiten voor meer informatie over de laatste wijzigingen.
 
    ![](assets/audit_trail_2.png)
 
-1. De **[!UICONTROL Audit entity]** het venster geeft u meer gedetailleerde informatie over de gekozen entiteit zoals:
+1. In het venster **[!UICONTROL Audit entity]** vindt u gedetailleerdere informatie over de gekozen entiteit, zoals:
 
-   * **[!UICONTROL Type]** : Workflow, opties of schema&#39;s.
-   * **[!UICONTROL Entity]** : Interne naam van uw activiteiten.
-   * **[!UICONTROL Modified by]** : Gebruikersnaam van de laatste persoon die deze entiteit als laatste heeft gewijzigd.
+   * **[!UICONTROL Type]** : workflow, opties of schema&#39;s.
+   * **[!UICONTROL Entity]** : interne naam van uw activiteiten.
+   * **[!UICONTROL Modified by]** : gebruikersnaam van de laatste persoon die deze entiteit als laatste heeft gewijzigd.
    * **[!UICONTROL Action]** : De laatste actie die op deze entiteit is uitgevoerd, is gemaakt, bewerkt of verwijderd.
    * **[!UICONTROL Modification date]** : Datum van de laatste actie die op deze entiteit is uitgevoerd.
 
@@ -78,7 +78,7 @@ Toegang krijgen tot de **[!UICONTROL Audit trail]** :
 
 >[!NOTE]
 >
->De bewaarperiode is standaard ingesteld op 180 dagen voor **[!UICONTROL Audit logs]** . Raadpleeg de volgende secties voor meer informatie over het wijzigen van de retentieperiode [page](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>De retentieperiode is standaard ingesteld op 180 dagen voor **[!UICONTROL Audit logs]** . Meer leren op hoe te om de behoudperiode te veranderen, verwijs naar deze [ pagina ](../../production/using/database-cleanup-workflow.md#deployment-assistant).
 
 ## Audittrail in-/uitschakelen {#enable-disable-audit-trail}
 
@@ -86,8 +86,8 @@ Het audittrail kan gemakkelijk voor een specifieke activiteit worden geactiveerd
 
 Dit doet u als volgt:
 
-1. Toegang krijgen tot de **[!UICONTROL Explorer]** van uw instantie.
-1. Onder de **[!UICONTROL Administration]** menu, selecteert u **[!UICONTROL Platform]** dan **[!UICONTROL Options]** .
+1. Open het menu **[!UICONTROL Explorer]** van uw instantie.
+1. Selecteer **[!UICONTROL Platform]** then **[!UICONTROL Options]** onder het menu **[!UICONTROL Administration]** .
 
    ![](assets/audit_trail_4.png)
 
@@ -100,8 +100,8 @@ Dit doet u als volgt:
 
    ![](assets/audit_trail_5.png)
 
-1. Wijzig de **[!UICONTROL Value]** tot 1 als u de entiteit wilt toelaten of aan 0 als u het wilt onbruikbaar maken.
+1. Wijzig **[!UICONTROL Value]** in 1 als u de entiteit wilt inschakelen of in 0 als u deze wilt uitschakelen.
 
    ![](assets/audit_trail_6.png)
 
-1. Klikken **[!UICONTROL Save]** .
+1. Klik op **[!UICONTROL Save]** .
