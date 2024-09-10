@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,9 @@ ht-degree: 1%
 
 ## Het installatieprogramma uitvoeren {#executing-the-installation-program}
 
-Installeer Adobe Campaign 32-bits voor een Windows 32-bits platform. Installeer Adobe Campaign 64-bits voor een Windows 64-bits platform.
-
 De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
-1. Het bestand uitvoeren **setup.exe**.
+1. Voer het dossier **setup.exe** uit.
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -34,11 +32,11 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    Er zijn verschillende installatietypen beschikbaar:
 
    * **[!UICONTROL Installation of an application server]** : Installeer de Adobe Campaign-toepassingsserver en de clientconsole.
-   * **[!UICONTROL Minimal installation (Network)]** : Installatie van de clientcomputer vanaf het netwerk. Slechts zal een beperkt aantal DLLs op de computer, indien nodig worden geïnstalleerd, en alle andere componenten zullen van een netwerkaandrijving worden gebruikt.
-   * **[!UICONTROL Installation of a client]** : Installatie van de vereiste componenten voor de Adobe Campaign-client.
-   * **[!UICONTROL Custom installation]** : De gebruiker kiest de te installeren elementen.
+   * **[!UICONTROL Minimal installation (Network)]** : installatie van de clientcomputer vanaf het netwerk. Slechts zal een beperkt aantal DLLs op de computer, indien nodig worden geïnstalleerd, en alle andere componenten zullen van een netwerkaandrijving worden gebruikt.
+   * **[!UICONTROL Installation of a client]** : installatie van de vereiste componenten voor de Adobe Campaign-client.
+   * **[!UICONTROL Custom installation]** : de gebruiker kiest de te installeren elementen.
 
-   Selecteren **Installatie van een toepassingsserver** en doorloop de verschillende stappen zoals hieronder aangegeven:
+   Selecteer **Installatie van een toepassingsserver**, en ga door de verschillende hieronder getoonde stappen:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +44,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Klikken **[!UICONTROL Finish]** de installatie starten:
+1. Klik op **[!UICONTROL Finish]** om de installatie te starten:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +60,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    >
    >Wanneer de serverinstallatie is voltooid, moet de server opnieuw worden opgestart om mogelijke netwerkproblemen te voorkomen.
 
-   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start van de server](#first-start-up-of-the-server).
+   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Verwijs naar [ Eerste begin-up van de server ](#first-start-up-of-the-server).
 
 ## Samenvattende installatietests {#summary-installation-testing}
 
@@ -80,7 +78,7 @@ No task
 
 ## Eerste start van de server {#first-start-up-of-the-server}
 
-Zodra de installatietest volledig is, open een bevelherinnering via **[!UICONTROL Start > Programs > Adobe Campaign]** en voert u de volgende opdracht in:
+Nadat de installatietest is voltooid, opent u een opdrachtregel via het menu **[!UICONTROL Start > Programs > Adobe Campaign]** en voert u de volgende opdracht in:
 
 ```sql
 nlserver web
@@ -100,7 +98,7 @@ De volgende informatie wordt weergegeven:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Druk **Ctrl+C** om het proces tegen te houden, dan ga het volgende bevel in:
+Pers **Ctrl+C** om het proces tegen te houden, dan het volgende bevel in te gaan:
 
 ```sql
 nlserver start web
@@ -135,7 +133,7 @@ De volgende informatie wordt weergegeven:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmeldingsnaam **internal** dat heeft alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De server van Adobe Campaign bepaalt technische login genoemd **intern** die alle rechten op alle instanties heeft. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
 Lees meer in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
 

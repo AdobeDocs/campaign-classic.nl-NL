@@ -9,7 +9,7 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: afbec7b3df810c8c1818a4fb93c5f7e30f7a753b
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -18,14 +18,12 @@ ht-degree: 0%
 
 # Algemene configuraties{#general-configurations}
 
-
-
 In dit gedeelte wordt de configuratie beschreven die in Adobe Campaign v7 moet worden uitgevoerd wanneer wordt gemigreerd van versie 5.11 of v6.02.
 
 Daarnaast:
 
-* Als u migreert vanaf v5.11, moet u ook de configuratie voltooien die in [deze sectie](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Als u migreert vanaf v6.02, moet u ook de configuratie voltooien die in [deze sectie](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Als u van v5.11 migreert, moet u ook de configuratie voltooien die in [ wordt gedetailleerd deze sectie ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Als u van v6.02 migreert, moet u ook de configuratie voltooien die in [ wordt gedetailleerd deze sectie ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Tijdzones {#time-zones}
 
@@ -33,21 +31,21 @@ Daarnaast:
 
 In v6.02 was de modus &quot;multi-time zone&quot; alleen beschikbaar voor PostgreSQL-databasemotoren. Er wordt nu aangeboden welk type database-engine wordt gebruikt. Wij adviseren sterk dat u uw basis in een &quot;multi timezone&quot;basis omzet.
 
-Als u de TIMESTAMP met de modus TIMEZONE wilt gebruiken, moet u ook de opdracht **-userTimestamptz:1** optie aan de postupgrade bevellijn.
+Om TIMESTAMP MET wijze TIMEZONE te gebruiken, moet u ook **- userTimestamptz:1** optie aan de post-verbeteringsbevellijn toevoegen.
 
 >[!IMPORTANT]
 >
->Als de **-usetimestamptz:1** wordt gebruikt met een incompatibele database-engine, is uw database beschadigd en moet u een back-up van uw database herstellen en de bovenstaande opdracht opnieuw uitvoeren.
+>Als de parameter **-usetimestamptz:1** met een incompatibele gegevensbestandmotor wordt gebruikt, zal uw gegevensbestand worden bedorven en u zult een steun van uw gegevensbestand moeten herstellen en het bevel hierboven opnieuw uitvoeren.
 
 >[!NOTE]
 >
->Het is mogelijk de tijdzone na migratie via de console te wijzigen (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** knooppunt).
+>Het is mogelijk om timezone na migratie via de console (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** knoop) te veranderen.
 >
->Raadpleeg voor meer informatie over tijdzonebeheer [deze sectie](../../installation/using/time-zone-management.md).
+>Voor meer op tijdzonebeheer, verwijs naar [ deze sectie ](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
-Als u een **ORA 01805** fout tijdens postupgrade, betekent dit dat de tijdzonebestanden van het Oracle tussen de toepassingsserver en de databaseserver niet gesynchroniseerd zijn. Voer de volgende stappen uit om ze opnieuw te synchroniseren:
+Als u een **ORA 01805** fout tijdens postupgrade krijgt, betekent dit dat de dossiers van de Oracle timezone tussen de toepassingsserver en de gegevensbestandserver uit synchronisatie zijn. Voer de volgende stappen uit om ze opnieuw te synchroniseren:
 
 1. Voer de volgende opdracht uit om het gebruikte tijdzonebestand te identificeren:
 
@@ -55,11 +53,11 @@ Als u een **ORA 01805** fout tijdens postupgrade, betekent dit dat de tijdzonebe
    select * from v$timezone_file
    ```
 
-   Tijdzonebestanden worden meestal gevonden in het dialoogvenster **ORACLE_HOME/oracore/zoneinfo/** map.
+   De dossiers van de tijdzone worden gewoonlijk gevonden in **ORACLE_HOME/oracore/zoneinfo/** omslag.
 
 1. Zorg ervoor dat de tijdzonebestanden op beide servers identiek zijn.
 
-Ga voor meer informatie naar: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
+Voor meer informatie, bezoek: [ https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004 ](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 Een onjuiste uitlijning van de tijdzone tussen client en server kan ook enige vertraging veroorzaken. Daarom adviseren wij het gebruiken van de zelfde versie van de bibliotheek van het Oracle op de cliënt en serverkanten, moeten beide tijdstreken het zelfde zijn.
 
@@ -71,7 +69,7 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
    genezi -v
    ```
 
-   genezi is binair aangetroffen in **$ORACLE_HOME/bin** opslagplaats.
+   genezi is een binair die in **$ORACLE_HOME/bin** bewaarplaats wordt gevonden.
 
 1. Controleer de versie van het dossier van de tijdzone op de server door het volgende bevel in werking te stellen:
 
@@ -79,7 +77,7 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
    select * from v$timezone_file
    ```
 
-1. Als u het bestand met de tijdzone aan de clientzijde wilt wijzigen, gebruikt u de optie **ORA_TZFILE** omgevingsvariabele.
+1. Om het dossier van de tijdzone op de cliëntkant te veranderen, gebruik **ORA_TZFILE** milieuvariabele.
 
 ## Beveiliging {#security}
 
@@ -89,17 +87,17 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
 >
 >Om veiligheidsredenen, is het platform van Adobe Campaign niet meer toegankelijk door gebrek: u moet de veiligheidsstreken vormen, en daarom exploitant IP adressen verzamelen.
 
-In Adobe Campaign v7 wordt het concept van **beveiligingszones**. Elke gebruiker moet met een streek worden geassocieerd om aan login aan een instantie en het IP van de gebruiker adres moet in de adressen of adreswaaiers worden omvat die in de veiligheidsstreek worden bepaald. U kunt de beveiligingszones configureren in het configuratiebestand van de Adobe Campaign-server. De veiligheidsstreek waaraan een gebruiker wordt geassocieerd moet in de console worden bepaald (**[!UICONTROL Administration > Access management > Operators]**).
+Adobe Campaign v7 impliceert het concept **veiligheidsstreken**. Elke gebruiker moet met een streek worden geassocieerd om aan login aan een instantie en het IP van de gebruiker adres moet in de adressen of adreswaaiers worden omvat die in de veiligheidsstreek worden bepaald. U kunt de beveiligingszones configureren in het configuratiebestand van de Adobe Campaign-server. De veiligheidsstreek waaraan een gebruiker wordt geassocieerd moet in de console (**[!UICONTROL Administration > Access management > Operators]**) worden bepaald.
 
-**Voor de migratie**, vraag uw netwerkbeheerder om u te helpen de veiligheidsstreken bepalen die na de migratie moeten worden geactiveerd.
+**vóór de migratie**, vraag uw netwerkbeheerder om u te helpen de veiligheidsstreken bepalen die na de migratie moeten worden geactiveerd.
 
-**Na de postupgrade** (voordat de server opnieuw wordt opgestart), moet u de beveiligingszones configureren.
+**na postupgrade** (vóór het servernieuwe begin), moet u de veiligheidsstreken vormen.
 
-Configuratie van beveiligingszone is gevonden in [deze sectie](../../installation/using/security-zones.md).
+De configuratie van de veiligheidsstreek wordt gevonden in [ deze sectie ](../../installation/using/security-zones.md).
 
 ### Gebruikerswachtwoorden {#user-passwords}
 
-In v7: **internal** en **admin** De verbinding van de exploitant moet door een wachtwoord worden beveiligd. Wij adviseren sterk wachtwoorden aan deze rekeningen en alle exploitantrekeningen toe te wijzen, **voor migratie**. Als u geen wachtwoord hebt opgegeven voor **internal**, kunt u geen verbinding maken. Een wachtwoord toewijzen aan **internal** voert u de volgende opdracht in:
+In v7, **interne** en **admin** de exploitantverbinding moet door een wachtwoord worden beveiligd. Wij adviseren sterk toewijzend wachtwoorden aan deze rekeningen en alle exploitantrekeningen, **vóór migratie**. Als u geen wachtwoord voor **intern** hebt gespecificeerd, zult u niet kunnen verbinden. Om een wachtwoord aan **intern** toe te wijzen, ga het volgende bevel in:
 
 ```
 nlserver config -internalpassword
@@ -107,19 +105,19 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->De **internal** wachtwoord moet identiek zijn voor alle volgende servers. Raadpleeg voor meer informatie [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md).
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Voor meer informatie, verwijs naar [ deze sectie ](../../installation/using/configuring-campaign-server.md#internal-identifier) en [ deze sectie ](../../platform/using/access-management.md).
 
 ### Nieuwe functies in v7 {#new-features-in-v7}
 
-* Gebruikers zonder machtigingen kunnen niet langer verbinding maken met Adobe Campaign. Hun toestemmingen moeten manueel worden toegevoegd, bijvoorbeeld door een toestemming te creëren genoemd **verbinden**.
+* Gebruikers zonder machtigingen kunnen niet langer verbinding maken met Adobe Campaign. Hun toestemmingen moeten manueel worden toegevoegd, bijvoorbeeld, door een toestemming te creëren genoemd **verbind**.
 
   De gebruikers die door deze wijziging worden beïnvloed worden geïdentificeerd en worden vermeld tijdens postupgrade.
 
 * Tekstspatiëring werkt niet meer als het wachtwoord leeg is. Als dit het geval is, zal een foutenmelding u op de hoogte brengen en u vragen om het aan te passen.
-* Gebruikerswachtwoorden worden niet meer opgeslagen in het dialoogvenster **xtk:sessionInfo** schema.
-* Beheerdersmachtigingen zijn nu nodig om de **`xtk:builder:EvaluateJavaScript`** en **`xtk:builder:EvaluateJavaScriptTemplate`** functies.
+* De wachtwoorden van de gebruiker worden niet meer opgeslagen in **xtk:sessionInfo** schema.
+* Beheermachtigingen zijn nu nodig om de functies **`xtk:builder:EvaluateJavaScript`** en **`xtk:builder:EvaluateJavaScriptTemplate`** te kunnen gebruiken.
 
-Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de **admin** machtiging:
+Bepaalde out-of-box schema&#39;s zijn gewijzigd en zijn nu door gebrek slechts toegankelijk met schrijftoegang voor exploitanten met **admin** toestemming:
 
 * ncm:publiceren
 * nl:controleren
@@ -154,7 +152,7 @@ Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen 
 
 ### Sessiontoken, parameter {#sessiontoken-parameter}
 
-In v5 **sessiontoken** parameter werkte aan beide cliëntkant (lijst van overzichtstypesschermen, verbindingsredacteur, enz.) en server (webtoepassingen, rapporten, jsp, jssp, enz.). In versie 7 werkt deze alleen aan de serverzijde. Als u wilt terugkeren naar de volledige functionaliteit zoals in versie 5, moet u de koppelingen wijzigen met deze parameter en via de verbindingspagina doorgeven:
+In v5, werkte de **zittingsontoken** parameter aan beide cliëntkant (lijst van overzichtstype schermen, verbindingsredacteur, enz.) en server (webtoepassingen, rapporten, jsp, jssp, enz.). In versie 7 werkt deze alleen aan de serverzijde. Als u wilt terugkeren naar de volledige functionaliteit zoals in versie 5, moet u de koppelingen wijzigen met deze parameter en via de verbindingspagina doorgeven:
 
 Voorbeeld van koppeling:
 
@@ -170,11 +168,11 @@ Nieuwe koppeling met de verbindingspagina:
 
 >[!IMPORTANT]
 >
->Als u een exploitant gebruikt verbonden aan een vertrouwd op IP masker, controleer dat het de minimumrechten heeft en dat het in een veiligheidsstreek binnen is **sessionTokenOnly** -modus.
+>Als u een exploitant gebruikt met een vertrouwd op IP masker wordt verbonden, controleer dat het de minimumrechten heeft en dat het in een veiligheidsstreek op **sessionTokenOnly** wijze is.
 
 ### SQL-functies {#sql-functions}
 
-Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzonden. Momenteel moeten alle SQL-functies worden toegevoegd aan de **xtk:funcList** schema (voor meer informatie hierover raadpleegt u [deze sectie](../../configuration/using/adding-additional-sql-functions.md)). Tijdens het migreren wordt tijdens de postupgrade een optie toegevoegd waarmee u compatibiliteit met oude niet-gedeclareerde SQL-functies kunt behouden. Als u deze functies wilt blijven gebruiken, controleert u of de functie **XtkPassUnknownSQLFunctionsToRDBMS** de optie is inderdaad gedefinieerd in de **[!UICONTROL Administration > Platform > Options]** knooppuntniveau.
+Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzonden. Momenteel, moeten alle SQL functies aan **xtk worden toegevoegd:funcList** schema (voor meer op dit, verwijs naar [ deze sectie ](../../configuration/using/adding-additional-sql-functions.md)). Tijdens het migreren wordt tijdens de postupgrade een optie toegevoegd waarmee u compatibiliteit met oude niet-gedeclareerde SQL-functies kunt behouden. Als u deze functies zou willen blijven gebruiken, controleer dat **XtkPassUnknownSQLFunctionsToRDBMS** optie inderdaad op het **[!UICONTROL Administration > Platform > Options]** knooppuntniveau wordt bepaald.
 
 >[!IMPORTANT]
 >
@@ -182,9 +180,9 @@ Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzo
 
 ### JSSP {#jssp}
 
-Als u toegang tot bepaalde pagina&#39;s via het HTTP-protocol (niet HTTPS) wilt toestaan, bijvoorbeeld in uw Web-apps, ongeacht de configuratie die in de beveiligingszones wordt uitgevoerd, moet u de **httpAllowed=&quot;true&quot;** parameter in de overeenkomstige relaisregel.
+Als u toegang tot bepaalde pagina&#39;s via het protocol van HTTP (niet HTTPS), in uw Web zou willen toestaan apps bijvoorbeeld, ongeacht de configuratie die in de veiligheidsstreken wordt uitgevoerd, moet u **httpAllowed= &quot; waar&quot;** parameter in de overeenkomstige relaisregel specificeren.
 
-Als u anonieme JSSPs gebruikt, moet u toevoegen **httpAllowed=&quot;true&quot;** parameter in een relaisregel voor uw JSSP (**[!UICONTROL serverConf.xml]** bestand):
+Als u anonieme JSSPs gebruikt, moet u **httpAllowed= &quot;waar&quot;** parameter in een relaisregel voor uw JSSP (**[!UICONTROL serverConf.xml]** dossier) toevoegen:
 
 Bijvoorbeeld:
 
@@ -197,11 +195,11 @@ Bijvoorbeeld:
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7 integreert een recentere tolk JavaScript. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
+Adobe Campaign v7 integreert een recentere tolk van JavaScript. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
 
-De **[!UICONTROL myObject.@attribute]** is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis gebruikt voor een niet-XML-object, werken de verpersoonlijkingsfuncties niet meer.
+De syntaxis van **[!UICONTROL myObject.@attribute]** is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis gebruikt voor een niet-XML-object, werken de verpersoonlijkingsfuncties niet meer.
 
-Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt: **[!UICONTROL employee.@sn]** moet nu de volgende syntaxis gebruiken: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Voor alle andere objecten types, is de syntaxis nu **[!UICONTROL myObject`[`&quot;attribuut&quot;`]`]**. Bijvoorbeeld, moet een niet-voorwerp van XML dat de volgende syntaxis gebruikte: **[!UICONTROL employee.@sn]**, nu de volgende syntaxis gebruiken: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Voormalige syntaxis:
 
@@ -251,21 +249,21 @@ U kunt een XML-kenmerk niet meer gebruiken als een tabelsleutel.
 
 Om de instantieveiligheid te versterken, is een nieuwe syntaxis geïntroduceerd in Adobe Campaign v7 om de syntaxis te vervangen die op SQLData wordt gebaseerd. Als u deze code-elementen met deze syntaxis gebruikt, moet u deze wijzigen. De belangrijkste elementen zijn:
 
-* Filteren op subquery: de nieuwe syntaxis is gebaseerd op de `<subQuery>`  element om een subquery te definiëren
+* Filteren op subquery: de nieuwe syntaxis is gebaseerd op het element `<subQuery>` om een subquery te definiëren
 * Samengevoegde gegevens: de nieuwe syntaxis is &quot;statistische functie(verzameling)&quot;
 * Filteren op samenvoeging: de nieuwe syntaxis is `[schemaName:alias:xPath]`
 
 Het schema queryDef (xtk:queryDef) is gewijzigd:
 
-* een nieuwe `<subQuery>`  -element is beschikbaar om de SELECT in SQLData te vervangen
+* er is een nieuw `<subQuery>` -element beschikbaar om de SELECT in SQLData te vervangen
 * Er zijn twee nieuwe waarden &quot;IN&quot; en &quot;NOT IN&quot; geïntroduceerd voor het @setOperator-kenmerk
-* een nieuwe `<where>`  element, dat een onderliggend element is van het `<node>` element: hiermee kunt u subselecties maken in SELECT
+* een nieuw `<where>` -element, dat een onderliggend element is van het `<node>` -element: hiermee kunt u subselecties maken in SELECT
 
 Wanneer een &quot;@expr&quot;attribuut wordt gebruikt, kan SQLData aanwezig zijn. U kunt de volgende termen zoeken: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campaign v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsgebieden in **[!UICONTROL serverConf.xml]** bestand: het **allowSQLInjection** beheert de SQL-syntaxisbeveiliging.
+Adobe Campaign v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsstreken in het **[!UICONTROL serverConf.xml]** dossier: het **allowSQLInjection** attribuut beheert de SQL syntaxisveiligheid.
 
-Als een SQLData-fout optreedt tijdens de uitvoering na de upgrade, moet u dit kenmerk wijzigen om het gebruik van op SQLData gebaseerde syntaxis tijdelijk toe te staan, zodat u de code kunt herschrijven. Hiervoor moet u de volgende optie wijzigen in het dialoogvenster **serverConf.xml** bestand:
+Als een SQLData-fout optreedt tijdens de uitvoering na de upgrade, moet u dit kenmerk wijzigen om het gebruik van op SQLData gebaseerde syntaxis tijdelijk toe te staan, zodat u de code kunt herschrijven. Om dit te doen, moet de volgende optie in het **serverConf.xml** dossier worden veranderd:
 
 ```
 allowSQLInjection="true"
@@ -277,7 +275,7 @@ Daarom lanceer de postupgrade met het volgende bevel:
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-U moet de veiligheidsstreken vormen (verwijs naar [Beveiliging](#security)) en activeer vervolgens de beveiliging door de optie te wijzigen:
+U moet de veiligheidsstreken vormen (verwijs naar [ Veiligheid ](#security)), dan de veiligheid opnieuw activeren door de optie te veranderen:
 
 ```
 allowSQLInjection="false"
@@ -285,7 +283,7 @@ allowSQLInjection="false"
 
 Hieronder vindt u vergelijkende voorbeelden tussen de oude en de nieuwe syntaxis.
 
-**Filteren op subquery&#39;s**
+**Filtrerend door sub-query&#39;s**
 
 * Voormalige syntaxis:
 
@@ -337,7 +335,7 @@ Hieronder vindt u vergelijkende voorbeelden tussen de oude en de nieuwe syntaxis
     </queryFilter>
   ```
 
-**Het aggregaat**
+**het aggregaat**
 
 Samengevoegde functie (verzameling)
 
@@ -357,7 +355,7 @@ Samengevoegde functie (verzameling)
   >
   >De verbindingen worden automatisch uitgevoerd voor de gezamenlijke functies. Het is niet meer noodzakelijk om de voorwaarde WHERE O0.iOperationId=iOperationId te specificeren.
   >
-  >Het is niet meer mogelijk om &quot;count()&#42;)&quot;. Je moet &quot;countall()&quot; gebruiken.
+  >Het is niet meer mogelijk om de functie &quot;count(&#42;)&quot; te gebruiken. Je moet &quot;countall()&quot; gebruiken.
 
 * Voormalige syntaxis:
 
@@ -372,7 +370,7 @@ Samengevoegde functie (verzameling)
                     <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
   ```
 
-**Filters op verbindingen**
+**Filters door zich** aansluit
 
 `[schemaName:alias:xPath]`
 
@@ -391,9 +389,9 @@ De alias is optioneel
   <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
   ```
 
-**Tips en trucs**
+**Uiteinden en trucs**
 
-In een `<subQuery>` -element, naar een veld &quot;veld&quot; in het hoofdveld verwijzen `<queryDef>`   -element, gebruikt u de volgende syntaxis: `[../@field]`
+In een element `<subQuery>` verwijst u naar een veld &quot;veld&quot; van het hoofdveld `<queryDef>`   -element, gebruikt u de volgende syntaxis: `[../@field]`
 
 Voorbeeld:
 
@@ -422,13 +420,13 @@ Voorbeeld:
 
 De migratie wordt uitgevoerd via een postupgrade en conflicten kunnen optreden in rapporten, formulieren of webtoepassingen. Deze conflicten kunnen vanaf de console worden opgelost.
 
-Na de resourcesynchronisatie **postupgrade** kunt u nagaan of de synchronisatie fouten of waarschuwingen genereert.
+Na de middelsynchronisatie, laat het **postupgrade** bevel u ontdekken als de synchronisatie fouten of waarschuwingen produceert.
 
 ### Het synchronisatieresultaat weergeven {#view-the-synchronization-result}
 
 Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
-* In de bevel-lijn interface, worden de fouten geconcretiseerd door een drievoudig chevron **>>>** en synchronisatie wordt automatisch gestopt. Waarschuwingen worden geconcretiseerd door een dubbele chevron **>>** en moet worden opgelost zodra de synchronisatie is voltooid. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Bijvoorbeeld:
+* In de bevel-lijn interface, worden de fouten materialized door een drievoudig chevron **>>>** en de synchronisatie wordt automatisch tegengehouden. De waarschuwingen worden materialized door een dubbel chevron **>>** en moeten worden opgelost zodra de synchronisatie volledig is. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Bijvoorbeeld:
 
   ```
   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -441,7 +439,7 @@ Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
   Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de exploitant vereist om het op te lossen.
 
-* De **postupgrade_`<server version number>`_tijd na upgrade`>`.log** bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installatiemap/var/`<instance>`postupgrade**. Fouten en waarschuwingen worden aangegeven door de **fout** en **waarschuwing** kenmerken.
+* Het **postupgrade_ `<server version number>`_time van postupgrade `>` .log** dossier bevat het synchronisatieresultaat. Het is beschikbaar door gebrek in de volgende folder: **installatiemap/var/`<instance>` postupgrade**. De fouten en de waarschuwingen worden vermeld door de **fout** en **waarschuwings** attributen.
 
 ### Een conflict oplossen {#resolve-a-conflict}
 
@@ -449,14 +447,14 @@ Conflicten oplossen moet alleen worden uitgevoerd door gevorderde operatoren en 
 
 U lost een conflict op door het volgende proces toe te passen:
 
-1. Plaats de cursor in de Adobe Campaign-boomstructuur boven **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. Plaats de cursor in de Adobe Campaign-boomstructuur boven **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
 1. Selecteer in de lijst het conflict dat u wilt oplossen.
 
 Er zijn drie manieren om een conflict op te lossen:
 
-* **[!UICONTROL Declared as resolved]**: vereist vooraf ingrijpen van de exploitant.
+* **[!UICONTROL Declared as resolved]**: vereist vooraf ingrijpen door de operator.
 * **[!UICONTROL Accept the new version]**: aanbevolen als de bronnen die bij Adobe Campaign worden geleverd, niet door de gebruiker zijn gewijzigd.
-* **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
+* **[!UICONTROL Keep the current version]** : betekent dat de update wordt afgewezen.
 
   >[!IMPORTANT]
   >
@@ -464,15 +462,15 @@ Er zijn drie manieren om een conflict op te lossen:
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
-1. Zoek in de onderste sectie van het venster naar de **`_conflict_ string`** om de entiteiten met conflicten te zoeken. De entiteit die met de nieuwe versie is geïnstalleerd, bevat de **new** argument, de entiteit die overeenkomt met de vorige versie bevat de **cus** argument.
+1. Zoek in de onderste sectie van het venster naar de **`_conflict_ string`** om de entiteiten met conflicten te zoeken. De entiteit die met de nieuwe versie wordt geïnstalleerd bevat het **nieuwe** argument, de entiteit die de vorige versie aanpast bevat het **focus** argument.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Verwijder de versie die u niet wilt behouden. Verwijder de **`_conflict_argument_ string`** van de entiteit die u bijhoudt.
+1. Verwijder de versie die u niet wilt behouden. Verwijder **`_conflict_argument_ string`** van de entiteit die u bewaart.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Ga naar het conflict dat u had opgelost. Klik op de knop **[!UICONTROL Actions]** pictogram en selecteer **[!UICONTROL Declare as resolved]**.
+1. Ga naar het conflict dat u had opgelost. Klik op het pictogram **[!UICONTROL Actions]** en selecteer **[!UICONTROL Declare as resolved]** .
 1. Sla uw wijzigingen op: het conflict is nu opgelost.
 
 <!--
@@ -495,7 +493,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Vereisten {#prerequisites}
 
-**Voor de postupgrade**, moet u alle schemaverwijzingen van 6.02 schrappen die niet meer in v7 zullen bestaan.
+**vóór postupgrade**, moet u alle schemaverwijzingen van 6.02 schrappen die niet meer in v7 zullen bestaan.
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -505,13 +503,13 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Inhoud aanbieden {#offer-content}
 
-In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in elk representatieschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
+In v7 is de inhoud van het aanbod verplaatst. In v6.02 was de inhoud in elk vertegenwoordigingsschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
 
 >[!IMPORTANT]
 >
 Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
-Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in het dialoogvenster **Migratie** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** velden). De inhoud in het dialoogvenster **NmsEmailOfferView** tabel is verplaatst naar de aanbiedingstabel.
+Een voorbeeld van een bewegingsmanuscript (**interactionTo610_full_XX.js**) is beschikbaar in de **omslag van de Migratie** binnen de omslag van Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de velden **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]** ). De inhoud die in de **NmsEmailOfferView** lijst was is verplaatst naar de aanbiedingslijst.
 
 >[!NOTE]
 >
@@ -589,11 +587,11 @@ logInfo("Done");
 
 Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u slechts één omgeving hebt. Laten we in dit geval &quot;ENV&quot; als voorbeeld nemen.
 
-1. Werk in alle &quot;ENV&quot;-omgevingen de lijst met gebruikte velden bij. Bijvoorbeeld voor een aanbiedingsruimte die alleen de **[!UICONTROL htmlSource]**, moet u de opdracht **[!UICONTROL view/htmlSource]**.
+1. Werk in alle &quot;ENV&quot;-omgevingen de lijst met gebruikte velden bij. Voor een aanbiedingsruimte die alleen de **[!UICONTROL htmlSource]** gebruikt, moet u bijvoorbeeld de lus **[!UICONTROL view/htmlSource]** toevoegen.
 
    ![](assets/migration_interaction_2.png)
 
-1. In de **[!UICONTROL Type of Environment]** in het veld **[!UICONTROL General]** tab, selecteert u **[!UICONTROL Live]**.
+1. Selecteer **[!UICONTROL Live]** in het veld **[!UICONTROL Type of Environment]** op de tab **[!UICONTROL General]** .
 
    ![](assets/migration_interaction_3.png)
 
@@ -601,13 +599,13 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 
    ![](assets/migration_interaction_4.png)
 
-1. Alle &quot;ENV&quot;-omgevingen implementeren biedt spaties (klik met de rechtermuisknop > **[!UICONTROL Actions > Deploy]**) en selecteert u de omgeving ENV_DESIGN.
+1. Implementeer alle &quot;ENV&quot;-omgeving met spaties (klik met de rechtermuisknop > **[!UICONTROL Actions > Deploy]** ) en selecteer de omgeving &quot;ENV_DESIGN&quot;.
 
    ![](assets/migration_interaction_5.png)
 
 1. Doe hetzelfde voor alle &quot;ENV&quot;-omgevingsfuncties.
 1. Activeer alle omgevingsfuncties &quot;ENV_DESIGN&quot; op de relevante kanalen.
-1. Test of een aanbieding live gaat. Als u geen problemen ondervindt, voert u lopende taken uit op de meest recente workflowtaak **[!UICONTROL Offer notification]** (biedGgt) om alle aanbiedingen live te laten gaan.
+1. Test of een aanbieding live gaat. Als u geen problemen ondervindt, voert u lopende taken uit op de meest recente workflowtaak **[!UICONTROL Offer notification]** (offerMgt) om alle aanbiedingen live te laten gaan.
 
    ![](assets/migration_interaction_6.png)
 
@@ -621,7 +619,7 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 
 ### Standaardrapporten {#standard-reports}
 
-Alle standaardrapporten gebruiken momenteel de renderingengine v6.x. Als u JavaScript in deze rapporten had toegevoegd, zouden bepaalde elementen niet meer kunnen werken. De oude versie van JavaScript is namelijk niet compatibel met de v6.x-renderingengine. U moet daarom de JavaScript-code controleren en deze later aanpassen. U moet elk rapport testen, met name de exportfunctie.
+Alle standaardrapporten gebruiken momenteel de renderingengine v6.x. Als u JavaScript in deze rapporten had toegevoegd, werken bepaalde elementen mogelijk niet meer. De oude versie van JavaScript is namelijk niet compatibel met de v6.x-renderingengine. U moet daarom de JavaScript-code controleren en deze later aanpassen. U moet elk rapport testen, met name de exportfunctie.
 
 ### Persoonlijke rapporten {#personalized-reports}
 
@@ -640,9 +638,9 @@ Er zijn twee families voor webtoepassingen:
 
 ### Geïdentificeerde webtoepassingen {#identified-web-applications}
 
-Net als voor rapporten ([Meer informatie](#reports)), als u JavaScript hebt toegevoegd, moet u controleren en indien nodig aanpassen. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
+Enkel zoals voor rapporten ([ leert meer ](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
 
-Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u verbindingsproblemen ondervindt in uw geïdentificeerde webtoepassingen, moet u tijdelijk het dialoogvenster **allowUserPassword** en **sessionTokenOnly** in de **serverConf.xml** bestand. Na de postupgrade wijzigt u de volgende waarden voor opties:
+Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u om het even welke verbindingsproblemen in uw geïdentificeerde Webtoepassingen ontmoet, moet u **allowUserPassword** en **sessionTokenOnly** opties in het **serverConf.xml** dossier tijdelijk activeren. Na de postupgrade wijzigt u de volgende waarden voor opties:
 
 ```
 allowUserPassword="true"
