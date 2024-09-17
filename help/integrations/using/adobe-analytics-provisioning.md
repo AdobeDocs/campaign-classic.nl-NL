@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 1%
 >
 > Deze stappen mogen alleen worden uitgevoerd door Hybride en On-premise implementaties.
 >
->Neem voor de gehoste en Campagne Managed Services-implementaties contact op met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+>Voor Gehoste en de implementaties van Managed Services van de Campagne, gelieve te contacteren ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team van de Zorg van de Klant van 0} Adobe.[
 
 De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie ondersteunt Adobe Identity Management Service (IMS):
 
 * Als u een gemigreerde externe account beheert, moet u Adobe IMS implementeren en verbinding maken met Adobe Campaign via een Adobe ID.
 
-  Houd er rekening mee dat de gebruiker die via Adobe ID IMS is aangemeld, eigenaar moet zijn van de **Gegevensconnector** -account in Adobe Analytics en beschikken over de juiste machtigingen voor de **Productprofiel** genoemd [onder](#analytics-product-profile).
+  Gelieve te merken op dat de gebruiker die via Adobe ID IMS het programma wordt geopend de eigenaar van de **schakelaar van Gegevens** rekening in Adobe Analytics moet zijn en toestemmingen voor het **genoemde profiel van het Product** [ hieronder ](#analytics-product-profile) heeft.
 
 Het probleem was dat de eigenaar van de gegevensconnector een andere gebruiker was dan de gebruiker die was aangemeld bij Campagne en die de integratie met Analytics probeerde uit te voeren.
 
@@ -38,7 +38,7 @@ Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat 
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u ingebouwde integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening migreren zoals die in [deze documentatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot 27 Januari, 2025 blijven werken.</br>
+> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken.</br>
 >
 > * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan OAuth.
 
@@ -48,9 +48,9 @@ Het Profiel van het product bepaalt het niveau van toegang een gebruiker op uw v
 
 Als u al een productprofiel voor Analytics hebt, moet u nog steeds een nieuw Adobe Analytics-productprofiel maken dat uitsluitend wordt gebruikt voor de Analytics-connector. Zo zorgt u ervoor dat uw productprofiel is ingesteld met de juiste machtigingen voor deze integratie.
 
-Raadpleeg voor meer informatie over productprofielen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Voor meer informatie over de profielen van het Product, verwijs naar de [ documentatie van de Admin console ](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. Van de [Admin Console](https://adminconsole.adobe.com/), selecteer je Adobe Analytics **[!UICONTROL Product]**.
+1. Van de [ console Admin ](https://adminconsole.adobe.com/), selecteer uw Adobe Analytics **[!UICONTROL Product]**.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -58,35 +58,35 @@ Raadpleeg voor meer informatie over productprofielen de [Documentatie voor behee
 
    ![](assets/do-not-localize/triggers_2.png)
 
-1. Voeg een **[!UICONTROL Product profile name]** We raden u aan de volgende syntaxis te gebruiken: `reserved_campaign_classic_<Company Name>`. Klik vervolgens op **[!UICONTROL Next]**.
+1. Voeg een **[!UICONTROL Product profile name]** toe en raden we u aan de volgende syntaxis te gebruiken: `reserved_campaign_classic_<Company Name>` . Klik vervolgens op **[!UICONTROL Next]** .
 
-   Dit **[!UICONTROL Product profile]** uitsluitend gebruiken voor de Analytics Connector om fouten in de configuratie te voorkomen.
+   Dit **[!UICONTROL Product profile]** zou exclusief voor de Schakelaar van Analytics moeten worden gebruikt om misconfiguratiefouten te verhinderen.
 
-1. Open uw nieuw gemaakte **[!UICONTROL Product profile]** en selecteert u de **[!UICONTROL Permissions]** tab.
+1. Open de nieuwe versie van **[!UICONTROL Product profile]** en selecteer de tab **[!UICONTROL Permissions]** .
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. De verschillende mogelijkheden configureren door te klikken **[!UICONTROL Edit]** en selecteer de machtigingen die aan uw **[!UICONTROL Product profile]** door op de plusknop (+) te klikken.
+1. Configureer de verschillende mogelijkheden door op **[!UICONTROL Edit]** te klikken en de machtigingen die aan de **[!UICONTROL Product profile]** -functie moeten worden toegewezen te selecteren door op de plusknop (+) te klikken.
 
-   Raadpleeg voor meer informatie over het beheren van machtigingen de [Documentatie voor beheerconsole](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Voor meer informatie over hoe te om toestemmingen te beheren, verwijs naar de [ documentatie van de Admin console ](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
-1. Voor de **[!UICONTROL Report Suites]** mogelijkheden, voegt de **[!UICONTROL Report Suites]** moet u later gebruiken.
+1. Voor de **[!UICONTROL Report Suites]** mogelijkheid voegt u **[!UICONTROL Report Suites]** toe die u later moet gebruiken.
 
-   Als u geen rapportsuites hebt, kunt u het volgende creëren [deze stappen](../../integrations/using/gs-aa.md).
+   Als u geen rapportsuites hebt, kunt u het na [ tot stand brengen deze stappen ](../../integrations/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. Voor de **[!UICONTROL Metrics]** mogelijkheden, voegt de **[!UICONTROL Metrics]** u zult later moeten vormen.
+1. Voor de **[!UICONTROL Metrics]** mogelijkheid voegt u de **[!UICONTROL Metrics]** toe die u later moet configureren.
 
    Indien nodig, kunt u de auto-omvat optie inschakelen die elk toestemmingenpunt in de inbegrepen lijst zal toevoegen en automatisch nieuwe toestemmingspunten zal toevoegen.
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Voor de **[!UICONTROL Dimensions]** mogelijkheden, voegt de **[!UICONTROL Dimensions]** nodig voor toekomstige configuratie.
+1. Voor de **[!UICONTROL Dimensions]** mogelijkheid voegt u de **[!UICONTROL Dimensions]** toe die nodig is voor toekomstige configuratie.
 
    Zorg ervoor dat de gekozen Dimensionen overeenkomen met de instellingen die in de externe account moeten worden geconfigureerd en lijn deze uit met het corresponderende eVars-nummer van Adobe Analytics.
 
-1. Voor de **[!UICONTROL Report Suite Tools]** kunt u de volgende machtigingen toevoegen:
+1. Voeg voor de functie **[!UICONTROL Report Suite Tools]** de volgende machtigingen toe:
 
    * **[!UICONTROL Report suite Mgmt]**
    * **[!UICONTROL Conversion variables]**
@@ -95,7 +95,7 @@ Raadpleeg voor meer informatie over productprofielen de [Documentatie voor behee
    * **[!UICONTROL Data sources manager]**
    * **[!UICONTROL Classifications]**
 
-1. Voor de **[!UICONTROL Analytics Tools]** kunt u de volgende machtigingen toevoegen:
+1. Voeg voor de functie **[!UICONTROL Analytics Tools]** de volgende machtigingen toe:
 
    * **[!UICONTROL Code Manager - Web services]**
    * **[!UICONTROL Logs - Web services]**
@@ -110,8 +110,8 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het OAuth-project make
 
 Als u verder wilt gaan met het configureren van uw Adobe Analytics-connector, opent u de Adobe Developer-console en maakt u uw OAuth Server-to-Server-project.
 
-Zie [deze pagina](oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
+Verwijs naar [ deze pagina ](oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Leer hoe u met Adobe Campaign en Adobe Analytics werkt in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa) {target="_blank"} te werken.
