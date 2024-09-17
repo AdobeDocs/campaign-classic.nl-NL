@@ -5,9 +5,9 @@ description: Gegevensgerichte API’s
 feature: API
 role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Voor een presentatie van het gegevensmodel raadpleegt u de [Beschrijving gegevensmodel Adobe Campaign](../../configuration/using/data-model-description.md).
+Voor een presentatie van het gegevensmodel, verwijs naar de [ het modelbeschrijving van Gegevens van Adobe Campaign ](../../configuration/using/data-model-description.md).
 
 ## Query en schrijver {#query-and-writer}
 
@@ -44,19 +44,19 @@ Voor kolommen en voorwaarden kunt u Query&#39;s gebruiken.
 
 Hierdoor kunt u de onderliggende SQL isoleren. De querytaal is niet afhankelijk van de onderliggende engine: sommige functies worden opnieuw toegewezen, waardoor meerdere SELECT SQL-orders kunnen worden gegenereerd.
 
-Raadpleeg voor meer informatie hierover [Voorbeeld van de methode &#39;ExecuteQuery&#39; van schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Voor meer op dit, verwijs naar [ Voorbeeld op de methode &quot;ExecuteQuery&quot;van schema &quot;xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-De **ExecuteQuery** methode wordt weergegeven in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
+De **ExecuteQuery** methode wordt voorgesteld in [ ExecuteQuery (xtk:queryDef) ](#executequery--xtk-querydef-).
 
 ### Schrijven {#write}
 
 Met schrijfopdrachten kunt u eenvoudige of complexe documenten schrijven met items in een of meer tabellen van de basis.
 
-Met de Transactionele API&#39;s kunt u aansluitingen beheren via de **updateOrInsert** opdracht: met één opdracht kunt u gegevens maken of bijwerken. U kunt ook samenvoeging van wijzigingen configureren (**samenvoegen**): in deze modus kunt u gedeeltelijke updates toestaan.
+Transactionele APIs laat u aansluitingen via het **updateOrInsert** bevel beheren: één bevel laat u gegevens tot stand brengen of bijwerken. U kunt wijziging het samenvoegen (**ook vormen samenvoegt**): deze werkende wijze laat u gedeeltelijke updates machtigen.
 
 De structuur van XML biedt een logische mening van de gegevens aan en laat u de fysieke structuur van de SQL lijst negeren.
 
-De methode Write wordt voorgesteld in [Write/WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
+De schrijfmethode wordt voorgesteld in [ Write/WriteCollection (xtk:zitting) ](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -64,7 +64,7 @@ Deze methode laat u vragen van gegevens uitvoeren verbonden aan een schema. Het 
 
 Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
 
-```
+```xml
 <method name="ExecuteQuery" const="true">
   <parameters>
     <param desc="Output XML document" name="output" type="DOMDocument" inout="out"/>
@@ -80,7 +80,7 @@ Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryD
 
 De structuur van het XML-document van de query wordt beschreven in het schema &quot;xtk:queryDef&quot;. In dit document worden de clausules van een SQL-query beschreven: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;have&quot;.
 
-```
+```xml
 <queryDef schema="schema_key" operation="operation_type">
   <select>
     <node expr="expression1">
@@ -110,11 +110,11 @@ De structuur van het XML-document van de query wordt beschreven in het schema &q
 </queryDef>
 ```
 
-Een subquery ( `<subquery>`  ) kan worden gedefinieerd in een  `<condition> `  element. De syntaxis voor een   `<subquery> `   element is gebaseerd op de syntaxis van een    `<querydef>`.
+Een subquery ( `<subquery>` ) kan worden gedefinieerd in een `<condition> ` -element. De syntaxis voor een   `<subquery> `   element is gebaseerd op de syntaxis van een    `<querydef>` .
 
 Voorbeeld van een `<subquery>  : </subquery>`
 
-```
+```xml
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
   <subQuery schema="xtk:operatorGroup">
      <select>
@@ -128,22 +128,22 @@ Voorbeeld van een `<subquery>  : </subquery>`
   
 ```
 
-Een query moet verwijzen naar een beginschema in het menu **schema** kenmerk.
+Een vraag moet een beginschema van het **schema** attribuut van verwijzingen voorzien.
 
-Het gewenste type bewerking wordt ingevoerd in het dialoogvenster **bewerking** en bevat een van de volgende waarden:
+Het gewenste type van verrichting is ingegaan in het **verrichting** attribuut en bevat één van de volgende waarden:
 
-* **get**: haalt een record uit de tabel op en retourneert een fout als de gegevens niet bestaan,
-* **getIfExists**: haalt een record uit de tabel op en retourneert een leeg document als de gegevens niet bestaan,
-* **selecteren**: maakt een cursor die meerdere records retourneert en een leeg document retourneert als er geen gegevens zijn,
-* **aantal**: retourneert een gegevenstelling.
+* **krijgt**: wint een verslag van de lijst terug en keert een fout terug als het gegeven niet bestaat,
+* **getIfExists**: wint een verslag van de lijst terug en keert een leeg document terug als het gegeven niet bestaat,
+* **uitgezocht**: creeert een curseur om verscheidene verslagen terug te keren en een leeg document terug te keren als er geen gegevens zijn,
+* **telling**: keert een gegevenstelling terug.
 
-De **XPath** wordt syntaxis gebruikt om gegevens te vinden die op het inputschema worden gebaseerd. Raadpleeg voor meer informatie over XPails [Gegevensschema&#39;s](../../configuration/using/data-schemas.md).
+De **XPath** syntaxis wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Voor verdere informatie over XPparagraphs, verwijs naar [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md).
 
 #### Voorbeeld met de bewerking get {#example-with-the--get--operation}
 
 Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-schema) op met een filter in de e-mail.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <!-- fields to retrieve -->
   <select>
@@ -162,7 +162,7 @@ Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-sch
 
 Retourneert de lijst met ontvangers die zijn gefilterd op een map en het e-maildomein met een sortering in aflopende volgorde op de geboortedatum.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -185,18 +185,18 @@ Retourneert de lijst met ontvangers die zijn gefilterd op een map en het e-maild
 
 Expressies kunnen eenvoudige velden of complexe expressies zijn, zoals rekenkundige bewerkingen of het samenvoegen van tekenreeksen.
 
-Als u het aantal records dat moet worden geretourneerd wilt beperken, voegt u de opdracht **lineCount** aan de `<querydef>` element.
+Om het aantal terug te keren verslagen te beperken, voeg **lineCount** attributen aan het `<querydef>` element toe.
 
 Om het aantal verslagen te beperken die door de vraag aan 100 zijn teruggekeerd:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
 ...
 ```
 
-Om de volgende 100 verslagen terug te winnen, stel de zelfde vraag opnieuw in werking, toevoegend **startLine** kenmerk.
+Om volgende 100 verslagen terug te winnen, stel de zelfde vraag opnieuw in werking, toevoegend het **startLine** attribuut.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
@@ -205,7 +205,7 @@ Om de volgende 100 verslagen terug te winnen, stel de zelfde vraag opnieuw in we
 
 Om het aantal verslagen op een vraag te tellen:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="count"">
   <!-- condition on the folder and domain of the email -->
   <where>  
@@ -216,13 +216,13 @@ Om het aantal verslagen op een vraag te tellen:
 
 >[!NOTE]
 >
->Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De `<select>` en worden geen clausules gebruikt. `</select>`
+>Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en  worden niet gebruikt. `</select>`
 
 #### Gegevensgroepering {#data-grouping}
 
 U kunt als volgt e-mailadressen ophalen waarnaar meerdere keren wordt verwezen:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -242,9 +242,9 @@ U kunt als volgt e-mailadressen ophalen waarnaar meerdere keren wordt verwezen:
 </queryDef>
 ```
 
-De query kan worden vereenvoudigd door de **groupBy** rechtstreeks kenmerk aan het veld dat moet worden gegroepeerd:
+De vraag kan worden vereenvoudigd door het **groupBy** attribuut aan het te groeperen gebied direct toe te voegen:
 
-```
+```xml
 <select>
   <node expr="@email" groupBy="true"/>
 </select>
@@ -252,7 +252,7 @@ De query kan worden vereenvoudigd door de **groupBy** rechtstreeks kenmerk aan h
 
 >[!NOTE]
 >
->Het is niet langer nodig de `<groupby>` element.
+>U hoeft het element `<groupby>` niet meer te vullen.
 
 #### Bracketing in omstandigheden {#bracketing-in-conditions}
 
@@ -260,15 +260,15 @@ Hier volgen twee voorbeelden van haakjes op dezelfde voorwaarde.
 
 * De eenvoudige versie in één expressie:
 
-  ```
+  ```xml
   <where>
     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
   </where>
   ```
 
-* De gestructureerde versie met `<condition>` elementen:
+* De gestructureerde versie met `<condition>` -elementen:
 
-  ```
+  ```xml
   <where>
     <condition bool-operator="AND">
       <condition expr="@age > 15" bool-operator="OR"/>
@@ -283,7 +283,7 @@ Hier volgen twee voorbeelden van haakjes op dezelfde voorwaarde.
 
 Het is mogelijk de operator &#39;OR&#39; te vervangen door de operator &#39;IN&#39; wanneer er verschillende voorwaarden gelden voor hetzelfde veld:
 
-```
+```xml
 <where>
   <condition>
     <condition expr="@age IN (15, 45)"/>
@@ -300,7 +300,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
 
   Voorbeeld van een filter op het maplabel:
 
-  ```
+  ```xml
   <where>
     <condition expr="[folder/@label] like 'Segment%'"/>
   </where>
@@ -308,7 +308,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
 
   U kunt als volgt de velden van de map ophalen uit het schema &quot;nms:ontvanger&quot;:
 
-  ```
+  ```xml
   <select>
     <!-- label of recipient folder -->
     <node expr="[folder/@label]"/>
@@ -317,11 +317,11 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </select>
   ```
 
-* De verbindingen van de inzameling (1N): het filtreren op de gebieden van een inzamelingstabel moet via worden uitgevoerd **BESTAAT** of **BESTAAT NIET** operator.
+* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **** exploitant NIET BESTAAT.
 
   Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 
-  ```
+  ```xml
   <where>
     <condition expr="subscription" setOperator="EXISTS">
       <condition expr="@name = 'Newsletter'"/>
@@ -329,23 +329,23 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </where>
   ```
 
-  Directe herwinning van de gebieden van een inzamelingsverbinding van `<select>` clausule wordt niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (voorbeeld `<node expr="">`).
+  Directe herwinning van de gebieden van een inzamelingsverbinding van de `<select>` clausule wordt niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (bijvoorbeeld `<node expr="">` ).
 
   Voorbeeld op de verzamelingskoppeling &quot;Abonnement&quot;:
 
-  ```
+  ```xml
   <select>
     <node expr="subscription/@label"/>
   </select>
   ```
 
-  Het is mogelijk om een sublijst op te halen die de elementen van een inzamelingsverbinding in bevat `<select>` clausule. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
+  Het is mogelijk om een sublijst op te halen met de elementen van een verzamelingskoppeling in de `<select>` -component. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
 
-  Het filteren ( `<orderby>`  ) en beperking (  `<where>`  ) kunnen worden toegevoegd aan het verzamelingselement.
+  De filterelementen ( `<orderby>` ) en de beperkingselementen ( `<where>` ) kunnen aan het inzamelingselement worden toegevoegd.
 
   In dit voorbeeld retourneert de query voor elke ontvanger de e-mail en de lijst met informatiediensten waarop de ontvanger zich abonneert:
 
-  ```
+  ```xml
   <queryDef schema="nms:recipient" operation="select">
     <select>
       <node expr="@email"/>
@@ -371,7 +371,7 @@ Door de binding van parameters kan de engine de waarden instellen van de paramet
 
 Wanneer een vraag wordt geconstrueerd, worden de &quot;gebonden&quot;waarden vervangen door een karakter (? in ODBC, `#[index]#` in postgres...) in de tekst van de SQL-query.
 
-```
+```xml
 <select>
   <!--the value will be bound by the engine -->
   <node expr="@startDate = #2002/02/01#"/>                   
@@ -386,21 +386,6 @@ Als u wilt voorkomen dat een parameter wordt gebonden, moet het kenmerk &quot;no
 >
 >Als de vraag &quot;orde-door&quot;of &quot;groep-door&quot;instructies omvat, zullen de gegevensbestandmotoren niet waarden kunnen &quot;binden&quot;. U moet het @noSqlBind= &quot;waar&quot;attribuut op &quot;selecteren&quot;en/of &quot;waar&quot;instructies van de vraag plaatsen.
 
-#### Tip voor het samenstellen van query&#39;s: {#query-building-tip-}
-
-Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend de generische vraagredacteur in de de cliëntconsole van Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** ). Dit doet u als volgt:
-
-1. Selecteer de gegevens die u wilt ophalen:
-
-   ![](assets/s_ncs_integration_webservices_queyr1.png)
-
-1. Definieer de filtervoorwaarde:
-
-   ![](assets/s_ncs_integration_webservices_queyr2.png)
-
-1. Voer de vraag uit en druk CTRL+F4 om de code van de vraagbron te bekijken.
-
-   ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### Documentindeling uitvoeren {#output-document-format}
 
@@ -414,7 +399,7 @@ Voorbeeld van een terugkeer van het &quot;nms:ontvanger&quot;schema op &quot;kri
 
 Bij een &quot;select&quot;-bewerking is het geretourneerde document een opsomming van elementen:
 
-```
+```xml
 <!-- the name of the first element does not matter -->
 <recipient-collection>   
   <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -425,15 +410,15 @@ Bij een &quot;select&quot;-bewerking is het geretourneerde document een opsommin
 
 Voorbeeld van een document dat wordt geretourneerd voor bewerking van het type &quot;count&quot;:
 
-```
+```xml
 <recipient count="3"/>
 ```
 
 #### Alias {#alias}
 
-Met een alias kunt u de locatie van gegevens in het uitvoerdocument wijzigen. De **alias** moet een XPath op het overeenkomstige gebied specificeren.
+Met een alias kunt u de locatie van gegevens in het uitvoerdocument wijzigen. Het **alias** attribuut moet een XPath op het overeenkomstige gebied specificeren.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <select>
     <node expr="@firstName" alias="@firstName"/>
@@ -445,23 +430,23 @@ Met een alias kunt u de locatie van gegevens in het uitvoerdocument wijzigen. De
 
 Retourneert:
 
-```
+```xml
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
 In plaats van:
 
-```
+```xml
 <recipient firstName="John" lastName="Doe">
   <folder label="Recipients"/>
 </recipient>
 ```
 
-### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
+### Voorbeeld van SOAP berichten {#example-of-soap-messages}
 
 * Query:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -486,7 +471,7 @@ In plaats van:
 
 * Reactie:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -511,7 +496,7 @@ De aanroep retourneert geen gegevens, behalve fouten.
 
 Definitie van de methoden &quot;Write&quot; en &quot;WriteCollection&quot; in het schema &quot;xtk:session&quot;:
 
-```
+```xml
 <method name="Write" static="true">
   <parameters>
     <param name="doc" type="DOMDocument" desc="Difference document"/>
@@ -532,23 +517,23 @@ Definitie van de methoden &quot;Write&quot; en &quot;WriteCollection&quot; in he
 
 De afstemming van gegevens werkt op basis van de definitie van de sleutels die zijn ingevoerd in het bijbehorende schema. De schrijfprocedure zoekt naar de eerste in aanmerking komende sleutel op basis van de gegevens die in het invoerdocument zijn ingevoerd. De entiteit wordt ingevoegd of bijgewerkt op basis van haar bestaan in de database.
 
-De sleutel van het schema van de te bijwerken entiteit wordt voltooid op basis van het **xtkschema** kenmerk.
+De sleutel van het schema van de te bijwerken entiteit wordt voltooid gebaseerd op het **xtkschema** attribuut.
 
-De verzoeningssleutel kan dus worden afgedwongen met de **_key** kenmerk met de lijst met XPails die de sleutel vormen (gescheiden door komma&#39;s).
+De verzoeningssleutel kan daarom met het **_key** attribuut worden gedwongen die de lijst van XPails bevatten die omhoog de sleutel (door komma&#39;s worden gescheiden) maken.
 
-Het is mogelijk het type activiteit af te dwingen door de **_operation** kenmerk met de volgende waarden:
+Het is mogelijk om het type van verrichting te dwingen door het **_operation** attribuut met de volgende waarden te bevolken:
 
-* **insert**: forceert de opname van de record (de verzoeningssleutel wordt niet gebruikt),
-* **insertOrUpdate**: werkt de record bij of voegt deze in, afhankelijk van de afstemmingssleutel (standaardmodus);
-* **update**: werkt de record bij; doet niets als de gegevens niet bestaan,
-* **delete**: verwijdert de records,
-* **none**: wordt alleen gebruikt voor het afstemmen van koppelingen, zonder update of invoeging.
+* **tussenvoegsel**: krachten de toevoeging van het verslag (de verzoeningssleutel wordt niet gebruikt),
+* **insertOrUpdate**: werkt of neemt het verslag afhankelijk van de verzoeningssleutel (standaardwijze) bij,
+* **update**: werkt het verslag bij; doet niets als het gegeven niet bestaat,
+* **schrapping**: schrapt de verslagen,
+* **niets**: gebruikt slechts voor verbindingsverzoening, zonder update of toevoeging.
 
 ### Voorbeeld met de methode &#39;Write&#39; {#example-with-the--write--method}
 
 Een ontvanger bijwerken of invoegen (impliciete bewerking &quot;insertOrUpdate&quot;) met e-mailadres, geboortedatum en plaats:
 
-```
+```xml
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
   <location city="Newton"/>
 </recipient>
@@ -556,7 +541,7 @@ Een ontvanger bijwerken of invoegen (impliciete bewerking &quot;insertOrUpdate&q
 
 Een ontvanger verwijderen:
 
-```
+```xml
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
 ```
 
@@ -568,7 +553,7 @@ Een ontvanger verwijderen:
 
 Bijwerken of invoegen voor verschillende ontvangers:
 
-```
+```xml
 <recipient-collection xtkschema="nms:recipient">    
   <recipient email="john.doe@adobe.com" firstName="John" lastName="Doe" _key="@email"/>
   <recipient email="peter.martinez@adobe.com" firstName="Peter" lastName="Martinez" _key="@email"/>
@@ -582,7 +567,7 @@ Bijwerken of invoegen voor verschillende ontvangers:
 
 De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <folder name="Folder2" _operation="none"/>
 </recipient>
@@ -590,7 +575,7 @@ De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
 De kenmerken &quot;_key&quot; en &quot;_operation&quot; kunnen worden ingevoerd op een gekoppeld element. Het gedrag op dit element is hetzelfde als op het hoofdelement van het invoerschema.
 
-De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bestaat uit een veld van een gekoppelde tabel (element `<folder>`  schema &quot;xtk:folder&quot;) en e-mail.
+De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bestaat uit een veld van een gekoppelde tabel (element `<folder>` schema &quot;xtk:folder&quot;) en de e-mail.
 
 >[!NOTE]
 >
@@ -600,7 +585,7 @@ De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bes
 
 Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema) van een ontvanger:
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <company name="adobe" code="ERT12T" _key="@name" _operation="update"/>
 </recipient>
@@ -610,7 +595,7 @@ Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema)
 
 Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrpRel&quot;):
 
-```
+```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
   <rcpGrpRel _key="[rcpGroup/@name]">
     <rcpGroup name="GRP1"/>
@@ -620,17 +605,17 @@ Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrp
 
 >[!NOTE]
 >
->De definitie van de sleutel is niet ingevoerd in het dialoogvenster `<rcpgroup>` element omdat een impliciete sleutel die op de groepsnaam wordt gebaseerd in het &quot;nms:group&quot;schema wordt bepaald.
+>De definitie van de sleutel wordt niet ingevoerd in het element `<rcpgroup>` omdat een impliciete sleutel die op de groepsnaam wordt gebaseerd, in het schema &quot;nms:group&quot; wordt gedefinieerd.
 
 ### XML-verzamelingselementen {#xml-collection-elements}
 
 Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzamelingselementen van XML bij te werken. Gegevens uit de database worden vervangen door gegevens uit het invoerdocument. Als het document alleen de elementen bevat die moeten worden bijgewerkt, moet u het kenmerk &quot;_operation&quot; invullen voor alle verzamelingselementen die moeten worden bijgewerkt om een samenvoeging met de XML-gegevens van de database te forceren.
 
-### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
+### Voorbeeld van SOAP berichten {#example-of-soap-messages-1}
 
 * Query:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -646,7 +631,7 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
 
 * Reactie:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -658,7 +643,7 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
 
   Retourneren met fout:
 
-  ```
+  ```xml
   <?xml version='1.0'?>
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
