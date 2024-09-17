@@ -8,42 +8,49 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Pakketten installeren met Linux{#installing-packages-with-linux}
 
-Adobe Campaign wordt geleverd met **nlserver** pakket dat de binaire bestanden en configuratiebestanden voor een bepaalde versie bevat.
+Adobe Campaign komt met het **pakket 0} nlserver {dat de binaire getallen en configuratiedossiers voor een bepaalde versie bevat.**
+
+
 
 Met de installatieopdrachten kunt u:
 
-* Bestanden kopiëren naar **/usr/local/neolane**
-* Een Adobe Campaign Linux-account maken (en de bijbehorende groep) die is gemaakt met **/usr/local/neolane** als thuismap
-* Een automatisch script maken **/etc/init.d/nlserver6** voor gebruik bij het opstarten, of een systeemeenheid creëren
+* De bestanden kopiëren naar **/usr/local/neolane**
+* Maak een Adobe Campaign Linux-account (en de bijbehorende groep), die wordt gemaakt met **/usr/local/neolane** als de thuismap
+* Creeer een automatisch manuscript **/etc/init.d/nlserver6** voor gebruik bij opstarten, of creeer een systeemeenheid
 
 >[!NOTE]
 >
->De **neolane** systeemgebruiker moet niet gecreeerd zijn alvorens het bevel in werking werd gesteld. De **neolane** de gebruiker automatisch tijdens de installatie wordt gemaakt.
+>De **neolane** systeemgebruiker moet niet gecreeerd zijn alvorens het bevel werd in werking gesteld. De **neolane** gebruiker wordt gecreeerd automatisch tijdens installatie.
 >
->De **thuis** aan de **neolane** gebruiker wordt ook automatisch gemaakt in **[!UICONTROL /usr/local/neolane]**. Zorg ervoor dat er voldoende ruimte is op de knop **[!UICONTROL /usr/local]** schijf.
+>De **huis** folder verbonden aan de **neolane** gebruiker wordt ook gecreeerd automatisch in **[!UICONTROL /usr/local/neolane]**. Controleer of er voldoende ruimte beschikbaar is op de **[!UICONTROL /usr/local]** -schijf.
 
-U kunt de **pingelen`hostname`** om ervoor te zorgen dat de server zichzelf kan bereiken.
+U kunt **in werking stellen pingelen`hostname`** bevel om ervoor te zorgen de server zich kan bereiken.
 
 ## Distributie op basis van RPM-pakketten {#distribution-based-on-rpm--packages}
 
+>[!AVAILABILITY]
+>
+>Vanaf versie 7.4.1 worden bibliotheken voor RPM Linux-pakketten niet meer opgenomen in de campagne. U moet deze bibliotheken installeren.
+> 
+
 Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHEL, CentOS) te installeren:
 
-1. Get the Adobe Campaign package. De bestandsnaam is **nlserver6-v7-XXXX-0.x86_64.rpm**, waarbij **XXXX** is het Adobe Campaign-buildnummer.
+1. Get the Adobe Campaign package. De naam van het dossier is **nlserver6-v7-XXXX-0.x86_64.rpm**, waar **XXXX** het Adobe Campaign bouwstijlaantal is.
 
    >[!CAUTION]
    >
    >Gebruik de juiste bestandsnaam voor uw versie van Adobe Campaign in de opdrachtvoorbeelden van deze sectie.
 
-1. Maak verbinding als u het wilt installeren **basis** en voert de volgende opdracht uit, waarbij **XXXX** is het Adobe Campaign-buildnummer:
+1. Om het te installeren, verbind als **wortel** en voer het volgende bevel uit, waar **XXXX** het Adobe Campaign bouwstijlaantal is:
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
@@ -55,9 +62,9 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-De `bc` opdracht, verplicht voor het uitvoeren van de [netreport](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), is niet standaard beschikbaar op alle Linux-distributies. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht `which bc` gebruiken. Als dat niet het geval is, moet u het installeren.
+Het `bc` bevel, verplicht voor het uitvoeren van [ netreport ](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), is niet beschikbaar door gebrek op alle distributies van Linux. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht `which bc` uit. Als dat niet het geval is, moet u het installeren.
 
-Met CentOS moet u het pakket bc.x86_64: connect as installeren **basis** en voer de volgende opdracht uit:
+Met CentOS, moet u het pakket installeren bc.x86_64: verbind als **wortel** en stel het volgende bevel in werking:
 
 ```
 yum install bc.x86_64
@@ -67,13 +74,13 @@ yum install bc.x86_64
 
 Voer de volgende stappen uit om Adobe Campaign op een Debian 64-bits besturingssysteem te installeren:
 
-1. Get the Adobe Campaign package. De bestandsnaam is **nlserver6-v7-XXXX-linux-2.6-amd64.deb**, waarbij **XXXX** is het Adobe Campaign-buildnummer.
+1. Get the Adobe Campaign package. De naam van het dossier is **nlserver6-v7-XXXX-linux-2.6-amd64.deb**, waar **** het Adobe Campaign bouwstijlaantal is.
 
    >[!CAUTION]
    >
    >Gebruik de juiste bestandsnaam voor uw versie van Adobe Campaign in de opdrachtvoorbeelden van deze sectie.
 
-1. Maak verbinding als u het wilt installeren **basis** en voert de volgende opdracht uit, waarbij **XXXX** is het Adobe Campaign-buildnummer:
+1. Om het te installeren, verbind als **wortel** en voer het volgende bevel uit, waar **XXXX** het Adobe Campaign bouwstijlaantal is:
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -105,9 +112,9 @@ Voer de volgende stappen uit om Adobe Campaign op een Debian 64-bits besturingss
 
 ## Parameters aanpassen {#personalizing-parameters}
 
-Sommige parameters kunnen via de **klant.sh** file
+Sommige parameters kunnen via het {**dossier worden gepersonaliseerd 0} customer.sh**
 
-Als u de installatie voor de eerste keer uitvoert, **klant.sh** bestand bestaat mogelijk nog niet op de server.
+Als u de installatie voor het eerst uitvoert, zou het {**dossier 0} customer.sh nog niet op de server kunnen bestaan.**
 
 Maak het bestand en zorg ervoor dat het uitvoeringsrechten heeft. Als dit niet het geval is, ga het volgende bevel in:
 
@@ -123,7 +130,7 @@ Standaard wordt de server gestart in een iso8859-15-omgeving. De server kan echt
 >
 >Deze wijziging is van invloed op de interactie met het bestandssysteem (bestanden die via een workflow of een JavaScript-script zijn geladen) en op de bestandscodering. Daarom raden we u aan de standaardomgeving te gebruiken.
 
-Een **Japanse instantie**, moet u een UTF-8-omgeving gebruiken.
+Om a **Japanse instantie** tot stand te brengen, moet u een milieu UTF-8 gebruiken.
 
 Gebruik de volgende opdracht om de UTF-8-omgeving in te schakelen:
 
@@ -136,9 +143,9 @@ touch /usr/local/neolane/nl6/unicodeenv
 
 De volgende omgevingsvariabelen moeten correct worden gedefinieerd.
 
-Bepaalde combinaties vereisen wijzigingen in de omgeving die wordt gebruikt voor het uitvoeren van Adobe Campaign. Een specifiek bestand (`/usr/local/neolane/nl6/customer.sh`) kan worden gemaakt en bewerkt om wijzigingen toe te voegen die specifiek zijn voor de Adobe Campaign-omgeving.
+Bepaalde combinaties vereisen wijzigingen in de omgeving die wordt gebruikt voor het uitvoeren van Adobe Campaign. Een specifiek dossier (`/usr/local/neolane/nl6/customer.sh`) kan worden gecreeerd en worden uitgegeven om wijzigingen toe te voegen specifiek voor de milieu van Adobe Campaign.
 
-Bewerk indien nodig de **klant.sh** bestand gebruiken met de **vi customer.sh** en pas de configuratie aan of voeg ontbrekende lijnen toe:
+Indien noodzakelijk, geef het {**dossier 0} customer.sh uit gebruikend het {** bevel 2} vi customer.sh en pas de configuratie aan of voeg ontbrekende lijnen toe:****
 
 * Voor de client Oracle:
 
@@ -150,7 +157,7 @@ Bewerk indien nodig de **klant.sh** bestand gebruiken met de **vi customer.sh** 
 
   De inhoud van de omgevingsvariabele ORACLE_HOME komt overeen met de installatiemap van het Oracle.
 
-  De inhoud van de TNS_ADMIN-variabele moet overeenkomen met de locatie van de **tnsnames.ora** bestand.
+  De inhoud van de variabele TNS_ADMIN moet de plaats van het {**dossier aanpassen 0} tnsnames.ora.**
 
 * Voor LibreOffice:
 
@@ -158,7 +165,7 @@ Bewerk indien nodig de **klant.sh** bestand gebruiken met de **vi customer.sh** 
 
    * Debian
 
-     De standaardwaarden voor OO_INSTALL_DIR en OOO_BASIS_INSTALL_DIR worden verstrekt. U kunt deze overschrijven in **klant.sh** als uw lay-out van de installatie LibreOffice verschillend is:
+     De standaardwaarden voor OO_INSTALL_DIR en OOO_BASIS_INSTALL_DIR worden verstrekt. U kunt hen in **met voeten treden customer.sh** als uw lay-out van de installatie LibreOffice verschillend is:
 
      ```
      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
@@ -176,7 +183,7 @@ Bewerk indien nodig de **klant.sh** bestand gebruiken met de **vi customer.sh** 
 
 * Voor Java Development Kit (JDK):
 
-  Standaard wordt het configuratiescript van de Adobe Campaign-omgeving (`~/nl6/env.sh`) zoekt naar de JDK-installatiemap. Het wordt echter aanbevolen aan te geven welke JDK moet worden gebruikt. Om dit te doen, kunt u dwingen **JDK_HOME** omgevingsvariabele met de volgende opdracht:
+  Door gebrek, zoekt het configuratiescript van het milieu van Adobe Campaign (`~/nl6/env.sh`) naar de JDK installatiemap. Het wordt echter aanbevolen aan te geven welke JDK moet worden gebruikt. Om dit te doen, kunt u **JDK_HOME** milieuvariabele dwingen gebruikend het volgende bevel:
 
   ```
   export JDK_HOME=/usr/java/jdkX.Y.Z
@@ -219,11 +226,11 @@ Als u Oracle gebruikt met Adobe Campaign, moet u de clientlagen van het Oracle c
 
 * Omgevingsvariabelen
 
-  Zie [Omgevingsvariabelen](#environment-variables).
+  Verwijs naar [ variabelen van het Milieu ](#environment-variables).
 
 * Configuratie voor Adobe Campaign
 
-  Als u de Oracle-client voor Adobe Campaign wilt installeren, moet u een symbolische koppeling maken voor de **.so** bestand gebruikt door Adobe Campaign.
+  Om de installatie van de cliënt van het Oracle voor Adobe Campaign te voltooien, moet u een symbolische verbinding voor het **.so** dossier tot stand brengen dat door Adobe Campaign wordt gebruikt.
 
   Hiervoor gebruikt u de volgende opdrachten:
 
@@ -269,9 +276,9 @@ De volgende informatie wordt dan getoond:
 17:11:08 >   Web server stop(pid=17546, tid=-151316352)...
 ```
 
-Met deze opdrachten kunt u **config-default.xml** en **serverConf.xml** configuratiebestanden. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Deze bevelen laten u **config-default.xml** en **serverConf.xml** configuratiedossiers tot stand brengen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
-Druk **Ctrl+C** om het proces tegen te houden, dan ga het volgende bevel in:
+Pers **Ctrl+C** om het proces tegen te houden, dan het volgende bevel in te gaan:
 
 ```
 nlserver start web
@@ -306,6 +313,6 @@ De volgende informatie wordt dan getoond:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmeldingsnaam **internal** dat heeft alle rechten . Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De server van Adobe Campaign bepaalt technische login genoemd **intern** die alle rechten op alle instanties heeft. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
 Lees meer in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
