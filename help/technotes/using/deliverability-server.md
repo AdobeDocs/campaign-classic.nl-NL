@@ -6,7 +6,7 @@ feature: Technote, Deliverability
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken. </br>
+> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](../../integrations/using/oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken. </br>
 >
 > * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth.
 
