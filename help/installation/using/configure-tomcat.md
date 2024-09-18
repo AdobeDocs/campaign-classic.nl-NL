@@ -8,23 +8,27 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
 
 # Apache Tomcat configureren {#configuring-tomcat}
 
-Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
+Adobe Campaign gebruikt een **ingebedde Webserver genoemd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
-Meer informatie over Tomcat in Campaign en hoe u uw Tomcat-versie kunt vinden in [deze pagina](../../production/using/locate-tomcat-version.md).
+Leer meer over Tomcat in Campaign en hoe te om van uw versie van Tomcat in [ de plaats te bepalen deze pagina ](../../production/using/locate-tomcat-version.md).
 
 >[!AVAILABILITY]
 >
-> Vanaf v7.4.1 is Tomcat 10.1 de standaardversie.
 >
+>* Vanaf Campagne v7.4.1 is Tomcat 10.1 de standaardversie.
+>
+>* Adobe Campaign Classic maakt geen gebruik van WebSocket- en HTTP2-protocollen.
+>
+
 
 
 ## Standaardpoort voor Apache Tomcat {#default-port-for-tomcat}
@@ -32,12 +36,12 @@ Meer informatie over Tomcat in Campaign en hoe u uw Tomcat-versie kunt vinden in
 
 >[!NOTE]
 >
->Deze procedure is beperkt tot **op locatie** implementaties.
+>Deze procedure wordt beperkt tot **op-gebouw** plaatsingen.
 >
 
-Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u het bestand wilt wijzigen, bewerkt u het **server.xml** bestand opgeslagen in **/tomcat-X/conf** directory van de installatiemap van Adobe Campaign.
+Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Om het te veranderen, geef het {**dossier 0} server.xml uit dat in de** wordt opgeslagen/tomcat-X/conf **folder van de de installatiemap van Adobe Campaign.**
 
-Pas dan de haven van de JSP relaispagina&#39;s aan. Om dit te doen, verander **serverConf.xml** bestand opgeslagen in **/conf** directory van de installatiemap van Adobe Campaign.
+Pas dan de haven van de JSP relaispagina&#39;s aan. Om dit te doen, verander het {**dossier 0} serverConf.xml dat in de** wordt opgeslagen/conf **folder van de de installatiemap van Adobe Campaign.**
 
 ```xml
 <serverConf>
@@ -51,10 +55,10 @@ Pas dan de haven van de JSP relaispagina&#39;s aan. Om dit te doen, verander **s
 
 >[!NOTE]
 >
->Deze procedure is beperkt tot **op locatie** implementaties.
+>Deze procedure wordt beperkt tot **op-gebouw** plaatsingen.
 >
 
-Als u klantspecifieke instellingen wilt definiëren, kunt u een **user_context.xml** in het **/tomcat-X/conf** map die ook de **context.xml** bestand.
+Om klant specifieke montages te bepalen, kunt u a **user_contextxml** dossier in de **/tomcat-X/conf** omslag tot stand brengen, die ook het {**dossier 4} context.xml bevat.**
 
 Dit bestand bevat het volgende type informatie:
 
@@ -69,14 +73,14 @@ Deze bewerking kan zo nodig op de server worden gereproduceerd.
 
 >[!NOTE]
 >
->Deze procedure is beperkt tot **op locatie** implementaties.
+>Deze procedure wordt beperkt tot **op-gebouw** plaatsingen.
 >
 >Deze wijziging is niet meer nodig vanaf Campagne v7.4.1.
 >
 
 Om veiligheidsredenen raden we u aan het Tomcat-foutrapport te verbergen. Voer de volgende stappen uit:
 
-1. Open de **server.xml** bestand in het dialoogvenster **/tomcat-X/conf** directory van de installatiemap van Adobe Campaign:  `/usr/local/neolane/nl6/tomcat-X/conf`
+1. Open het {**dossier 0} server.xml dat in** wordt gevestigd/tomcat-X/conf **folder van de de installatiemap van Adobe Campaign: `/usr/local/neolane/nl6/tomcat-X/conf`**
 1. Voeg het volgende element bij de bodem na alle bestaande contextelementen toe:
 
    ```xml

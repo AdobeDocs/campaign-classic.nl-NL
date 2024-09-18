@@ -8,22 +8,22 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
+source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Tomcat-versie zoeken{#locate-tomcat-version}
 
-Adobe Campaign gebruikt een **ingesloten webservlet genaamd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
+Adobe Campaign gebruikt een **ingebedde Webserver genoemd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
-Volg de onderstaande procedure om de exacte versie van Tomcat te achterhalen die in een **Campaign Classic on-premise instantie** om problemen op te lossen.
+Volg hieronder de procedure om de nauwkeurige versie van Tomcat te weten te komen die in a **wordt gebruikt Campaign Classic op-gebouw instantie** om te helpen kwesties problemen oplossen.
 
 ## Tomcat gebruikt in Adobe Campaign
 
-Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Zie voor meer informatie Java Development Kit (JDK) in het dialoogvenster [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md) sectie.
+Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Voor meer informatie, zie de Uitrusting van de Ontwikkeling van Java (JDK) in de [ Matrijs van de Verenigbaarheid van de Campagne ](../../rn/using/compatibility-matrix.md) sectie.
 
 De Tomcat die in Adobe Campaign wordt gebruikt, is een aangepaste ingesloten versie die niet alle functies van de volledige algemeen beschikbare versie van Tomcat gebruikt en die mogelijk niet alle kwetsbaarheden van de volledige versie ondervindt. De Tomcat mag ook niet worden blootgesteld aan het externe internet, en Adobe Campaign-instanties die worden weergegeven, moeten een externe webserver hebben (IIS, Apache, enz.) voor de Tomcat om hem te beschermen.
 
@@ -32,8 +32,11 @@ Nieuwe of bijgewerkte versies van de ingesloten versies van Tomcat worden alleen
 >[!AVAILABILITY]
 >
 >
-> Vanaf Campagne v7.4.1 is Tomcat 10.1 de standaardversie.
+>* Vanaf Campagne v7.4.1 is Tomcat 10.1 de standaardversie.
 >
+>* Adobe Campaign Classic maakt geen gebruik van WebSocket- en HTTP2-protocollen.
+>
+
 
 ## Hoe te om van de versie van ingebedde Tomcat de plaats te bepalen
 
@@ -41,19 +44,19 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 >[!NOTE]
 >
->U moet toegang hebben tot de bestanden op de Adobe Campaign-server die u moet controleren. De hieronder beschreven procedure is alleen van toepassing op **hostingmodellen op locatie**.
+>U moet toegang hebben tot de bestanden op de Adobe Campaign-server die u moet controleren. De hieronder beschreven procedure is slechts op **op-gebouw het ontvangen modellen** van toepassing.
 
-1. Ga naar de *\tomcat-11\lib* submap in de installatiemap van Adobe Campaign (bijvoorbeeld *C:\Program Bestanden\ [Installatiemap]* in Windows, of */usr/local/neolane/nl6* in Linux).
+1. Navigeer aan *\ tomcat-11 \ lib* subfolder binnen de de installatiemap van Adobe Campaign (bijvoorbeeld, *C:\Program [ Installation_folder]* in Vensters, of */usr/local/neolane/nl6* in Linux).
 
-1. Het bestand kopiëren *catalina.jar* naar een externe tijdelijke map (bijvoorbeeld uw bureaublad) en wijzig de naam van de extensie van .jar in .zip.
+1. Kopieer het dossier *catalina.jar* aan een buiten tijdelijke omslag (bijvoorbeeld, uw Desktop) en noem de uitbreiding van .jar aan .zip anders.
 
 1. Pak het gekopieerde bestand uit. Dit resulteert in veel submappen en bestanden.
 
-1. Open of lees in de uitgegane bestanden/mappen het volgende ingesloten bestand met een teksteditor: *org/apache/catalina/util/ServerInfo.properties*. Mogelijk moet u de extensie .txt toevoegen om het openen met een teksteditor te vergemakkelijken.
+1. Binnen de niet gezipte dossiers/de omslagen, open of lees het volgende bevatte dossier gebruikend een tekstredacteur: *org/apache/catalina/util/ServerInfo.properties*. Mogelijk moet u de extensie .txt toevoegen om het openen met een teksteditor te vergemakkelijken.
 
 1. Als het bestand zich op een servercomputer bevindt, verwijdert u de tijdelijke bestanden die u hebt gemaakt.
 
-Als voorbeeld *ServerInfo.properties* Het bestand voor Adobe Campaign bevat de volgende informatie die Tomcat v11.X aangeeft:
+Als voorbeeld, bevat het *dossier 0} ServerInfo.properties voor Adobe Campaign de volgende informatie, die op Tomcat v11.X wijst:*
 
 *`server.info=Apache Tomcat/11.X`*
 
