@@ -5,9 +5,9 @@ description: Databasetoewijzing
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Voor join-relaties met FDA (Federated Database Access):
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Raadpleeg voor meer informatie over FDA-tabellen [Een externe database openen](../../installation/using/about-fda.md).
+Voor meer informatie over lijsten FDA, verwijs naar [ Toegang hebbend tot een extern gegevensbestand ](../../installation/using/about-fda.md).
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
@@ -49,30 +49,30 @@ Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van 
 
 Koppelingen voldoen aan de volgende regels:
 
-* De definitie van een koppeling wordt ingevoerd op een **link**-type **`<element>`** met de volgende kenmerken:
+* De definitie van een verbinding is ingegaan op a **verbinding** - type **`<element>`** met de volgende attributen:
 
-   * **name**: naam van koppeling in de brontabel
-   * **target**: naam van doelschema
-   * **label**: label van koppeling
-   * **revLink** (optioneel): naam van de omgekeerde koppeling in het doelschema (standaard automatisch afgetrokken)
+   * **naam**: naam van verbinding van de bronlijst
+   * **doel**: naam van doelschema
+   * **etiket**: etiket van verbinding
+   * **revLink** (facultatief): naam van omgekeerde verbinding van het doelschema (die automatisch door gebrek wordt afgetrokken)
    * **integriteit** (facultatief): referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst.
 Mogelijke waarden zijn:
 
-      * **definiëren**: het is mogelijk om de broninstantie te verwijderen als er niet langer naar wordt verwezen door een doelinstantie
-      * **normaal**: als u de broninstantie verwijdert, worden de toetsen van de koppeling naar de doelinstantie (standaardmodus) geïnitialiseerd. Bij dit type integriteit worden alle externe toetsen geïnitialiseerd
-      * **eigen**: als u de broninstantie verwijdert, wordt de doelinstantie verwijderd
-      * **owncopy**: gelijk aan **eigen** (in geval van verwijdering) of dupliceert de voorvallen (in geval van duplicatie)
+      * **bepaalt**: het is mogelijk om het bronvoorkomen te schrappen als het niet meer door een doelvoorkomen van verwijzingen wordt voorzien
+      * **normaal**: het schrappen van de broninstantie initialiseert de sleutels van de verbinding aan het doelvoorkomen (standaardwijze), initialiseert dit type van integriteit alle buitenlandse sleutels
+      * **eigen**: het schrappen van de broninstantie leidt tot de schrapping van het doelvoorkomen
+      * **eigen exemplaar**: het zelfde als **** (in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
       * **neutraal**: geen specifiek gedrag
 
-   * **revIntegrity** (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;)
-   * **revCardinality** (optioneel): met de waarde &quot;single&quot; wordt de kardinaliteit gevuld met type 1-1 (standaard 1-N)
-   * **externalJoin** (optioneel): forceert de buitenste verbinding
-   * **revExternalJoin** (optioneel): hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
+   * **revIntegrity** (facultatief): integriteit op het doelschema (facultatief, &quot;normaal&quot;door gebrek)
+   * **revCardinality** (facultatief): met waarde &quot;enkel&quot;bevolkt kardinaliteit met type 1-1 (1-N door gebrek)
+   * **externalJoin** (facultatief): forceert buitenste zich aansluit
+   * **revExternalJoin** (facultatief): krachten buitensluit zich op de omgekeerde verbinding aan
 
-* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de verbinding bestaat ( `<join>`  -element) hoeft niet te worden gevuld omdat deze automatisch worden afgetrokken met de interne sleutel van het doelschema.
+* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de samenvoeging bestaat ( `<join>` -element) hoeven niet te worden gevuld, omdat ze standaard automatisch worden afgetrokken met de interne sleutel van het doelschema.
 * Er wordt automatisch een index toegevoegd aan de externe sleutel van de koppeling in het uitgebreide schema.
 * Een verbinding bestaat uit twee half-verbindingen, waar het eerste van het bronschema wordt verklaard en het tweede automatisch in het uitgebreide schema van het doelschema wordt gecreeerd.
-* Een samenvoeging kan een buitenste samenvoeging zijn als **externalJoin** wordt toegevoegd, met de waarde &quot;true&quot; (wordt ondersteund in PostSQL).
+* Verbinden kan buiten zijn toetreden als **externalJoin** attribuut wordt toegevoegd, met de waarde &quot;waar&quot;(gesteund in PostgreSQL).
 
 >[!NOTE]
 >
@@ -135,11 +135,11 @@ Uitgebreid schema van het doel (&quot;cus:company&quot;):
 
 Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoegd met de volgende parameters:
 
-* **name**: wordt automatisch afgetrokken van de naam van het bronschema (kan worden afgedwongen met het kenmerk &quot;revLink&quot; in de koppelingsdefinitie in het bronschema)
-* **revLink**: naam van omgekeerde koppeling
-* **target**: sleutel van gekoppeld schema (&quot;focus:ontvanger&quot;-schema)
-* **ongebonden**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
-* **integriteit**: &quot;define&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
+* **naam**: automatisch afgetrokken van de naam van het bronschema (kan met het &quot;revLink&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen)
+* **revLink**: naam van omgekeerde verbinding
+* **doel**: sleutel van verbonden schema (&quot;focus:ontvankelijk&quot;schema)
+* **niet geconsolideerd**: de verbinding wordt verklaard als inzamelingselement voor een kardinaliteit 1-N (door gebrek)
+* **integriteit**: &quot;bepaal&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
 ## Voorbeeld: eenvoudige koppeling {#example-2}
 
@@ -176,7 +176,7 @@ De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-
 
 ## Voorbeeld: een sleutel maken op een koppeling {#example-5}
 
-In dit voorbeeld maken we een sleutel op een koppeling (&quot;bedrijf&quot; naar het schema &quot;cus:bedrijf&quot;) met het **xlink** -kenmerk en een veld in de tabel (&quot;email&quot;):
+In dit voorbeeld, creëren wij een sleutel op een verbinding (&quot;bedrijf&quot;aan &quot;focus:bedrijf&quot;schema) met het **xlink** attribuut en een gebied van de (&quot;e-mail&quot;) lijst:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -230,4 +230,4 @@ Klik op de volgende koppelingen voor meer informatie:
 * [Schemastructuur](schema-structure.md)
 * [Databasetoewijzing](database-mapping.md)
 * [Sleutelbeheer](database-keys.md)
-* [Campaign datamodel](about-data-model.md)
+* [Campagne gegevensmodel](about-data-model.md)

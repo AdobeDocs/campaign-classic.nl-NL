@@ -5,9 +5,9 @@ description: Belangrijk beheer in gegevensschema's begrijpen
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -26,12 +26,12 @@ Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema
 </key>
 ```
 
-Een sleutel wordt een &#39;primaire sleutel&#39; genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld, of als deze de `internal` kenmerk ingesteld op &quot;true&quot;.
+Een sleutel wordt een &#39;primaire sleutel&#39; genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld, of als deze het kenmerk `internal` bevat dat op &#39;true&#39; is ingesteld.
 
 De volgende regels zijn van toepassing op sleutels:
 
 * Een toets kan verwijzen naar een of meer velden in de tabel
-* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het instellen van de `noDbIndex` kenmerk naar &quot;true&quot;.
+* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het kenmerk `noDbIndex` in te stellen op &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ De volgende regels zijn van toepassing op sleutels:
 
 ## Automatische incrementele toets {#auto-incremental-key}
 
-De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, af **XtkNewId** SQL functie) die een aantal produceren dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de zeer belangrijke waarde hangt van een opeenvolging (door gebrek, de **SQL functie 0} XtkNewId {af) die een aantal produceert dat in het volledige gegevensbestand uniek is.** De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 
-U kunt in het bronschema de naam opgeven van de reeks die moet worden gebruikt voor de **pkSequence** kenmerk. Als dit kenmerk niet wordt opgegeven in het bronschema, wordt het **XtkNewId** de standaardreeks wordt gebruikt. De toepassing gebruikt specifieke reeksen voor de **nms:wideLog** en **nms:trackingLog** schema&#39;s (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat dit de lijsten zijn die de meeste verslagen bevatten.
+U kunt in het bronschema de naam van de opeenvolging specificeren die met het **pkSequence** attribuut moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal de **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke opeenvolgingen voor **nms:wideLog** en **nms:trackingLog** schema&#39;s (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat dit de lijsten zijn die de meeste verslagen bevatten.
 
-Vanaf ACC 18.10 **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
+Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
 
 >[!IMPORTANT]
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
-Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (**NmsTrackingLogId** moet bijvoorbeeld) worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet worden opgeroepen **GetNew** XXX **ID**, waarbij **XXX** is de naam van de reeks (**GetNewNmsTrackingLogIds** bijvoorbeeld). De weergave **postgres-nms.sql**, **mssql-nms.sql** of **oracle-nms.sql** bestanden die bij de toepassing worden geleverd in het dialoogvenster **datakit/nms/eng/sql/** directory om het voorbeeld van het maken van een &#39;NmsTrackingLogId&#39;-reeks voor elke database-engine te herstellen.
+Een opeenvolging die in een schema van Adobe Campaign wordt van verwijzingen voorzien (**NmsTrackingLogId** bijvoorbeeld) moet met een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **worden geroepen GetNew** Ids **, waar** XXX **de naam van de opeenvolging is (** GetNewNmsTrackingLogIds **bijvoorbeeld).** Bekijk **postgres-nms.sql**, **mssql-nms.sql** of **oracle-nms.sql** dossiers die van de toepassing in **worden voorzien datakit/nms/eng/sql/** folder om het voorbeeld van een opeenvolging NmsTrackingLogId&quot;voor elk terug te krijgen database-engine.
 
-Als u een unieke sleutel wilt declareren, vult u de **automatische** kenmerk (met waarde &quot;true&quot;) op het hoofdelement van het gegevensschema.
+Om een unieke sleutel te verklaren, bevolk het **automatische** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
 
 **Voorbeeld**:
 
@@ -187,4 +187,4 @@ Klik op de volgende koppelingen voor meer informatie:
 * [Schemastructuur](schema-structure.md)
 * [Databasetoewijzing](database-mapping.md)
 * [Beheer van koppeling](database-links.md)
-* [Campaign datamodel](about-data-model.md)
+* [Campagne gegevensmodel](about-data-model.md)

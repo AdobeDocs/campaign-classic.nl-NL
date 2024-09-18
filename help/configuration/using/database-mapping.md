@@ -5,16 +5,16 @@ description: Databasetoewijzing
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 3%
 
 ---
 
 # Databasetoewijzing{#database-mapping}
 
-De SQL-toewijzing van het voorbeeldschema dat wordt beschreven [op deze pagina](schema-structure.md) genereert het volgende XML-document:
+De SQL afbeelding van het steekproefschema dat [ in deze pagina ](schema-structure.md) wordt beschreven produceert het volgende document van XML:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ De SQL-toewijzing van het voorbeeldschema dat wordt beschreven [op deze pagina](
 </schema>
 ```
 
-Het hoofdelement van het schema is gewijzigd in **`<srcschema>`** tot **`<schema>`**.
+Het hoofdelement van het schema is veranderd in **`<srcschema>`** in **`<schema>`** .
 
 Dit andere type van document wordt geproduceerd automatisch van het bronschema, en eenvoudig bedoeld als schema.
 
@@ -43,17 +43,17 @@ De SQL-namen worden automatisch bepaald op basis van de naam en het type van het
 
 De SQL-naamgevingsregels zijn als volgt:
 
-* **table**: samenvoeging van de naamruimte en naam van het schema
+* **lijst**: aaneenschakeling van schema namespace en naam
 
-  In ons voorbeeld wordt de naam van de tabel ingevoerd via het hoofdelement van het schema in het dialoogvenster **sqltable** kenmerk:
+  In ons voorbeeld, is de naam van de lijst ingegaan via het belangrijkste element van het schema in het **sqltable** attribuut:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **field**: naam van het element, voorafgegaan door een voorvoegsel dat is gedefinieerd op basis van het type: &#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.
+* **gebied**: naam van het element dat door een prefix wordt voorafgegaan die volgens type wordt bepaald: &quot;i&quot;voor geheel, &quot;d&quot;voor dubbel, &quot;s&quot;voor koord, &quot;ts&quot;voor data, enz.
 
-  De veldnaam wordt ingevoerd via het dialoogvenster **sqlname** kenmerk voor elk type **`<attribute>`** en **`<element>`**:
+  De gebiedsnaam is ingegaan via het **sqlname** attribuut voor elk getypt **`<attribute>`** en **`<element>`**:
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,11 +80,11 @@ De beperkingen voor het SQL-veld zijn als volgt:
 
 ## XML-velden {#xml-fields}
 
-Standaard worden alle  **`<attribute>`** en **`<element>`** -typed element wordt in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
+Standaard worden alle elementen met het type **`<attribute>`** en **`<element>`** toegewezen aan een SQL-veld in de tabel met het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
 
-Als u een veld in XML wilt vullen, voegt u de opdracht **xml** kenmerk met de waarde &quot;true&quot; aan het betrokken element.
+Om een gebied in XML te bevolken, moet u **xml** attributen met de waarde &quot;waar&quot;aan het betrokken element toevoegen.
 
-**Voorbeeld**: Hier volgen twee voorbeelden van het gebruik van XML-velden.
+**Voorbeeld**: hier zijn twee voorbeelden van het gebiedsgebruik van XML.
 
 * Veld voor opmerkingen met meerdere regels:
 
@@ -119,7 +119,7 @@ Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
 Indexen houden zich aan de volgende regels:
 
 * Een index kan verwijzen naar een of meer velden in de tabel
-* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als de **uniek** attribute contains the value &quot;true&quot;
+* Een index kan (om duplicaten te vermijden) op alle gebieden uniek zijn als het **unieke** attribuut de waarde &quot;waar&quot;bevat
 * De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index
 
 >[!NOTE]
@@ -175,4 +175,4 @@ Klik op de volgende koppelingen voor meer informatie:
 * [Schemastructuur](schema-structure.md)
 * [Sleutelbeheer](database-keys.md)
 * [Beheer van koppeling](database-links.md)
-* [Campaign datamodel](about-data-model.md)
+* [Campagne gegevensmodel](about-data-model.md)

@@ -5,9 +5,9 @@ description: Campagne die beste praktijken meldt
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Met de bovenstaande aanbevelingen kunt u de berekening van rapporten optimaliser
 
 Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
-* Werk aan uw datamodel: de geïndexeerde gebieden moeten hoofdzakelijk worden gebruikt om berekeningsformules te verbeteren.
+* Werk aan uw gegevensmodel: de geïndexeerde gebieden moeten hoofdzakelijk worden gebruikt om berekeningsformules te verbeteren.
 
   Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
