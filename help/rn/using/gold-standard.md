@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ _13 augustus 2019_
 
 De eerste 19.1.4-build bevat de volgende oplossingen:
 
-* Oplossing een kwestie met de planneractiviteit die ongewenste foutenmeldingen tijdens hulpconfiguratie produceerde. Update van NEO-11662 is teruggedraaid. (NEO-17097)
+* Er is een probleem opgelost waarbij de planneractiviteit ongewenste foutmeldingen genereerde tijdens de configuratie van de assistent. Update van NEO-11662 is teruggedraaid. (NEO-17097)
 * Er is een regressie verholpen die werd veroorzaakt door NEO-12727 en die kon leiden tot het stoppen van workflows als een Test-activiteit tweemaal werd uitgevoerd. (NEO-16835)
 * Er is een probleem verholpen waardoor een onjuiste HTTP-code werd geretourneerd (HTTP 200 OK in plaats van HTTP 403 Verboden) wanneer een ongeldig of verlopen sessietoken werd gebruikt in API-aanroepen. (NEO-16826)
 * Er is een probleem verholpen met de DKIM-sleutel die niet meer in e-mails werd ingesloten, waardoor leveringsproblemen ontstonden. (NEO-16804)
