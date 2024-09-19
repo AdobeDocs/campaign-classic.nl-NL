@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
-workflow-type: ht
-source-wordcount: '357'
-ht-degree: 100%
+source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,6 @@ _Woensdag 18 juni 2024_
 * Nadat u [uw technische operatoren van Campaign hebt gemigreerd naar Developer Console](../../technotes/using/ims-migration.md) en [bent overgestapt naar IMS voor de verificatie van eindgebruikers](../../technotes/using/migrate-users-to-ims.md), kunt u de gebruikersinterface- en API-beperkingen inschakelen om opties en functies te verwijderen die specifiek zijn voor native verificatie. [Meer informatie](../../technotes/using/impact-ims-migration.md)
 
 
-
 ### Compatibiliteitsupdates {#release-7-4-1-compat}
 
 De [compatibiliteitsmatrix voor Adobe Campaign](compatibility-matrix.md) is bijgewerkt met de wijzigingen die bij deze nieuwe release worden geleverd en hieronder worden vermeld.
@@ -48,6 +47,9 @@ De [compatibiliteitsmatrix voor Adobe Campaign](compatibility-matrix.md) is bijg
    * een nieuwe Campaign SDK 1.0.27 voor iOS, compatibel met iOS 16 en 17, en de recentste [eisen aan Apple iOS-privacyverzoeken](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
    * een nieuwe Campaign-SDK voor Android 14.
 
+### Andere wijzigingen {#release-7-4-1-other}
+
+Vanaf v7.4.1 worden XML-bibliotheken voor RPM Linux-pakketten niet meer opgenomen in de campagne. Als klant op locatie of hybride klant moet uw beheerder deze bibliotheken installeren.
 
 ### Patches {#release-7-4-1-patches}
 
