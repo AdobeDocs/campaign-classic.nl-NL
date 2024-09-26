@@ -8,14 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-# Pakketten installeren met Linux{#installing-packages-with-linux}
+# Pakketten installeren met Linux {#installing-packages-with-linux}
 
 Adobe Campaign komt met het **pakket 0} nlserver {dat de binaire getallen en configuratiedossiers voor een bepaalde versie bevat.**
 
@@ -60,6 +60,8 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
+De meeste vermelde afhankelijkheden zijn verplicht en `nlserver` kan niet starten als ze niet zijn geïnstalleerd (de uitzondering is open; een andere JDK kan worden geïnstalleerd).
+
 Het `bc` bevel, verplicht voor het uitvoeren van [ netreport ](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), is niet beschikbaar door gebrek op alle distributies van Linux. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht `which bc` uit. Als dat niet het geval is, moet u het installeren.
 
 Met CentOS, moet u het pakket installeren bc.x86_64: verbind als **wortel** en stel het volgende bevel in werking:
@@ -81,32 +83,9 @@ Voer de volgende stappen uit om Adobe Campaign op een Debian 64-bits besturingss
 1. Om het te installeren, verbind als **wortel** en voer het volgende bevel uit, waar **XXXX** het Adobe Campaign bouwstijlaantal is:
 
    ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
+   apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   Als er ontbrekende gebiedsdelen zijn, stel het volgende bevel in werking:
-
-   ```
-   apt-get install -f
-   ```
-
-
-1. Houd rekening met het volgende wanneer u Adobe Campaign op een Debian-besturingssysteem installeert:
-
-* OpenSSL moet vooraf zijn geïnstalleerd.
-* Installeer libicu en libc-aresYY, waarbij XX de versie is, met de volgende opdrachten:
-
-  ```
-  apt install libicuXX
-  ```
-
-  ```
-  apt install libc-aresXX
-  ```
-
-  ```
-  apt install openjdk-XX-jdk
-  ```
 
 ## Parameters aanpassen {#personalizing-parameters}
 
