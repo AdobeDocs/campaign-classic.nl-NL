@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
-workflow-type: ht
-source-wordcount: '3746'
-ht-degree: 100%
+source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
+workflow-type: tm+mt
+source-wordcount: '3782'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,15 @@ Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using
 
 ## 2024
 
+### sep. 2024 {#sept-2024}
+
+De status van de release is verminderd en vereenvoudigd. [Meer informatie](rn-overview.md)
+
+De pakketinstallatie van Linux is bijgewerkt voor v7.4.1. [ las meer ](../../installation/using/installing-packages-with-linux.md)
+
 ### Juni 2024 {#june-2024}
+
+De bijgewerkte sectie van de Nota&#39;s van de Versie met 7.4.1 verbeteringen, verenigbaarheidsupdates, en flarden. [Meer informatie](latest-release.md)
 
 Er is een opmerking toegevoegd waarin wordt aangegeven hoe instantievariabelen moeten worden gewist bij het opnieuw opstarten van workflows. [Meer informatie](../../workflow/using/starting-a-workflow.md)
 
