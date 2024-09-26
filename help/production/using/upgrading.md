@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1171'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bi
 
 [ Leer meer over de beschikbaarheid van de Console van de Cliënt ](../../installation/using/client-console-availability-for-windows.md).
 
-### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
+### Bijgewerkte pakketten installeren {#obtain-updated-packages}
 
 Begin door beide bijgewerkte pakketten van Adobe Campaign terug te winnen: verbind met het [ de distributieportaal van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Leer meer over de distributie van de Software in [ deze pagina ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
@@ -128,15 +128,14 @@ Het dossier is **nlserver6-v7-XXX.rpm**
 >Vanaf v7.4.1 worden XML-bibliotheken voor RPM Linux-pakketten niet meer opgenomen in de campagne. U moet deze bibliotheken installeren.
 > 
 
-
-### Een update uitvoeren {#perform-an-update}
+Vervolgens kunt u de vereiste pakketten installeren, zoals hieronder wordt beschreven:
 
 * RPM-gebaseerde distributie (RedHat, SuSe)
 
   Als u deze wilt installeren, voert u uit als hoofdmap:
 
   ```
-  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  yum install ./nlserver6-v7-XXXX.rpm
   ```
 
   Hierbij is XXX de versie van het bestand.
@@ -147,17 +146,20 @@ Het dossier is **nlserver6-v7-XXX.rpm**
   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
   ```
 
+  De meeste afhankelijkheden zijn verplicht en `nlserver` kan niet starten als er geen afhankelijkheden zijn geïnstalleerd. De enige uitzondering is openjdk, kunt u een andere JDK installeren indien nodig.
+
+
 * DEB-distributie (Debian)
 
   Als u deze wilt installeren, voert u uit als hoofdmap:
 
   ```
-  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  apt install ./nlserver6-v7-XXXX-amd64_debX.deb
   ```
 
 >[!NOTE]
 >
->De volledige installatieprocedures zijn gedetailleerd in [ deze sectie ](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [ los verbeteringsconflicten ](#resolving-upgrade-conflicts) op.
+>De volledige installatieprocedures zijn gedetailleerd in [ deze sectie ](../../installation/using/installing-packages-with-linux.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [ los verbeteringsconflicten ](#resolving-upgrade-conflicts) op.
 
 ### De webserver opnieuw opstarten {#reboot-the-web-server}
 

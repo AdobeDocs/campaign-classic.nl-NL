@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -36,17 +36,17 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 ## Beschrijving {#description}
 
-`<attribute>` Met elementen kunt u een veld in de database definiëren.
+Met `<attribute>` -elementen kunt u een veld in de database definiëren.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use}
 
-`<attribute>` elementen moeten in een `<element>` element.
+`<attribute>` -elementen moeten in een `<element>` -element worden gedeclareerd.
 
-De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschema>` heeft geen invloed op de volgorde waarin het veld wordt gemaakt in de database. De aanmaakvolgorde is alfabetisch.
+De volgorde waarin `<attribute>` -elementen in een `<srcschema>` worden gedefinieerd, heeft geen invloed op de volgorde waarin velden worden gemaakt in de database. De aanmaakvolgorde is alfabetisch.
 
 ## Beschrijving van kenmerk {#attribute-description}
 
-* **_operation (string)**: definieert het type schrijven in de database.
+* **_operation (koord)**: bepaalt het type van het schrijven in het gegevensbestand.
 
   Dit kenmerk wordt vooral gebruikt bij het uitbreiden van out-of-box schema&#39;s.
 
@@ -58,11 +58,11 @@ De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschem
    * &quot;update&quot;: update. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
    * &quot;delete&quot;: schrapping. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
-* **geavanceerd (Boolean)**: als deze optie is geactiveerd (@advanced=&quot;true&quot;), kunt u het kenmerk verbergen in de lijst met beschikbare velden die toegankelijk zijn voor het configureren van een lijst in een formulier.
-* **applyIf (string)**: met dit kenmerk kunt u velden optioneel maken. De `<attribute>` bij het bijwerken van de gegevensbank wordt rekening gehouden met het element wanneer de beperking wordt nageleefd. &quot;applyIf&quot; ontvangt een XTK-expressie.
-* **autoIncrement (Boolean)**: als deze optie is geactiveerd, wordt het veld een teller. Hierdoor kunt u een waarde verhogen (meestal id&#39;s). (extern gebruik)
-* **behoortTo (tekenreeks)**: neemt de naam en de naamruimte van de tabel die het veld deelt en vult het schema in waarin het kenmerk wordt gedeclareerd. (alleen gebruikt in een `<schema>`).
-* **dataPolicy (string)**: hiermee kunt u goedkeuringsbeperkingen opgeven voor waarden die zijn toegestaan in het veld SQL of XML. De waarden voor dit kenmerk zijn:
+* **geavanceerd (boolean)**: wanneer deze optie (@advanced= &quot;waar&quot;) wordt geactiveerd, laat het u de attributen op de lijst van beschikbare gebieden verbergen toegankelijk voor het vormen van een lijst in een vorm.
+* **applyIf (koord)**: dit attribuut laat u gebieden facultatief maken. Het element `<attribute>` wordt in aanmerking genomen bij het bijwerken van de database wanneer aan de beperking wordt voldaan. &quot;applyIf&quot; ontvangt een XTK-expressie.
+* **autoIncrement (boolean)**: als deze optie wordt geactiveerd, wordt het gebied een teller. Hierdoor kunt u een waarde verhogen (meestal id&#39;s). (extern gebruik)
+* **behoortTo (koord)**: neemt de naam en namespace van de lijst die het gebied deelt, en bevolkt het schema waar de attributen worden verklaard. (Wordt alleen gebruikt in een `<schema>` ).
+* **dataPolicy (koord)**: laat u toe om goedkeuringsbeperkingen op waarden te specificeren die op het SQL of gebied van XML worden toegestaan. De waarden voor dit kenmerk zijn:
 
    * &quot;none&quot;: geen waarde
    * &quot;smartCase&quot;: hoofdletters van eerste letters
@@ -73,14 +73,14 @@ De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschem
    * &quot;id&quot;: id-naam
    * &quot;resIdentifier&quot;: bestandsnaam
 
-* **dbEnum (tekenreeks)**: ontvangt de interne naam van een &quot;gesloten&quot; opsomming. De opsommingswaarden moeten worden gedefinieerd in de `<srcschema>`.
-* **defOnDuplicate (Boolean)**: als dit kenmerk wordt geactiveerd, wordt de standaardwaarde (gedefinieerd in @default) automatisch opnieuw toegepast op de record wanneer een record wordt gedupliceerd.
-* **default (string)**: hiermee kunt u de waarde van het standaardveld definiëren (aanroepen van een functie, standaardwaarde). Dit kenmerk ontvangt een XTK-expressie.
-* **desc (tekenreeks)**: hiermee kunt u een beschrijving van het kenmerk invoegen. Deze beschrijving wordt getoond in de statusbar van de interface.
-* **bewerken (tekenreeks)**: dit kenmerk geeft het type invoer aan dat wordt gebruikt in het formulier dat is gekoppeld aan het schema.
-* **enum (tekenreeks)**: ontvangt de naam van de opsomming die aan het veld is gekoppeld. De opsomming kan in het zelfde schema of in een ver schema worden opgenomen.
-* **expr (tekenreeks)**: definieert een expressie voor veldprecalculatie. Dit kenmerk ontvangt een Xpath- of een XTK-expressie.
-* **feature (tekenreeks)**: definieert een kenmerkveld: deze velden worden gebruikt voor het uitbreiden van de gegevens in een bestaande tabel, maar met opslag in een bijlage-tabel. Accepteerde waarden zijn:
+* **dbEnum (koord)**: ontvangt de interne naam van een &quot;gesloten&quot;opsomming. De opsommingswaarden moeten in `<srcschema>` worden gedefinieerd.
+* **defOnDuplicate (boolean)**: als dit attribuut wordt geactiveerd, wanneer een verslag wordt gedupliceerd wordt de standaardwaarde (die in @default wordt bepaald) automatisch opnieuw toegepast op het verslag.
+* **gebrek (koord)**: laat u de waarde van het standaardgebied (vraag aan een functie, standaardwaarde) bepalen. Dit kenmerk ontvangt een XTK-expressie.
+* **desc (koord)**: laat u een beschrijving van de attributen opnemen. Deze beschrijving wordt gebruikt om te begrijpen wat het element is en waarvoor het wordt gebruikt. U kunt het in het formulier weergeven.
+* **geef (koord) uit**: dit attribuut specificeert het type van input die in de vorm verbonden aan het schema zal worden gebruikt.
+* **opsomming (koord)**: ontvangt de naam van de opsomming verbonden aan het gebied. De opsomming kan in het zelfde schema of in een ver schema worden opgenomen.
+* **expr (koord)**: bepaalt een uitdrukking van de gebiedsuitrekking. Dit kenmerk ontvangt een Xpath- of een XTK-expressie.
+* **eigenschap (koord)**: bepaalt een kenmerkengebied: Deze gebieden worden gebruikt voor het uitbreiden van de gegevens in een bestaande lijst, maar met opslag in een bijlage lijst. Accepteerde waarden zijn:
 
    * &quot;shared&quot;: de inhoud wordt opgeslagen in een gedeelde tabel per gegevenstype
    * &quot;toegewezen&quot;: de inhoud wordt opgeslagen in een speciale tabel
@@ -88,18 +88,18 @@ De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschem
   SQL-kenmerktabellen worden automatisch gebaseerd op het kenmerktype:
 
    * toegewezen: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * gedeeld: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  Er zijn twee typen kenmerkvelden: eenvoudige oà¹-velden waar één enkele waarde is toegestaan op het kenmerk, en oà¹ multiple choice-velden, waar het kenmerk is gekoppeld aan een collectie-element dat meerdere waarden kan bevatten.
+  Er zijn twee types van eigenschapgebieden: eenvoudige à <sup> 1 </sup> gebieden waar één enkele waarde op het kenmerk wordt toegelaten, en o <sup> 1 </sup> veelvoudige keuzevelden, waar het kenmerk met een inzamelingselement verbonden is dat verscheidene waarden kan bevatten.
 
   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
-* **featureDate (boolean)**: kenmerk gekoppeld aan het eigenschapveld &quot;@feature&quot;. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
-* **img (tekenreeks)**: hiermee kunt u een pad definiëren voor een afbeelding die is gekoppeld aan een veld (naamruimte + naam van afbeelding) (bijvoorbeeld: img=&quot;cus:mypicture.jpg&quot;). De afbeelding moet fysiek naar de toepassingsserver worden geïmporteerd.
-* **label (tekenreeks)**: label gekoppeld aan het veld, meestal bestemd voor de gebruiker in de interface. Hiermee voorkomt u naamgevingsbeperkingen.
-* **length (tekenreeks)**: max. aantal tekens voor een waarde van het SQL-veld &quot;tekenreeks&quot;. Als het kenmerk &quot;@length&quot; niet is opgegeven, maakt Adobe Campaign automatisch een veld voor 255 tekens.
-* **localizable (boolean)**: als dit kenmerk is geactiveerd, geeft dit kenmerk het gereedschap Verzameling de waarde van het kenmerk &quot;@label&quot; voor vertaling (intern gebruik) weer.
-* **naam (MNTOKEN)**: naam van het kenmerk dat overeenkomt met de naam van het veld in de tabel. De waarde van het kenmerk &quot;@name&quot; moet kort zijn, bij voorkeur in het Engels, en voldoen aan XML-naamgevingsbeperkingen.
+* **featureDate (boolean)**: attribuut verbonden aan het &quot;@feature&quot;eigenschapgebied. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
+* **img (koord)**: laat u een weg voor een beeld bepalen verbonden aan een gebied (namespace + beeldnaam) (voorbeeld: img=&quot;cus:mypicture.jpg&quot;). De afbeelding moet fysiek naar de toepassingsserver worden geïmporteerd.
+* **etiket (koord)**: etiket verbonden aan het gebied, meestal bestemd aan de gebruiker in de interface. Hiermee voorkomt u naamgevingsbeperkingen.
+* **lengte (koord)**: max. aantal tekens voor een waarde van het SQL-veld &quot;tekenreeks&quot;. Als het kenmerk &quot;@length&quot; niet is opgegeven, maakt Adobe Campaign automatisch een veld voor 255 tekens.
+* **localizable (boolean)**: als het wordt geactiveerd, vertelt dit attribuut het inzamelingshulpmiddel om de waarde van het &quot;@label&quot;attribuut voor vertaling (intern gebruik) terug te krijgen.
+* **naam (MNTOKEN)**: naam van de attributen die de naam van het gebied in de lijst zullen aanpassen. De waarde van het kenmerk &quot;@name&quot; moet kort zijn, bij voorkeur in het Engels, en voldoen aan XML-naamgevingsbeperkingen.
 
   Als het schema naar de database wordt geschreven, worden automatisch voorvoegsels aan de veldnaam toegevoegd door Adobe Campaign:
 
@@ -110,22 +110,22 @@ De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschem
 
   Als u de naam van het veld in de tabel volledig wilt definiëren, gebruikt u de optie &quot;@sqlname&quot; bij het definiëren van een kenmerk.
 
-* **notNull (boolean)**: Hiermee kunt u het Adobe Campaign-gedrag voor het beheer van NULL-records in de database opnieuw definiëren. Numerieke velden zijn standaard niet null en tekenreeks- en datumtekstvelden kunnen null zijn.
-* **pkgStatus (tekenreeks)**: tijdens het exporteren van pakketten worden waarden in aanmerking genomen, afhankelijk van de waarde van &quot;@pkgStatus&quot;:
+* **notNull (boolean)**: laat u het gedrag van Adobe Campaign betreffende het beheer van ONGELDIGE verslagen in het gegevensbestand opnieuw bepalen. Numerieke velden zijn standaard niet null en tekenreeks- en datumtekstvelden kunnen null zijn.
+* **pkgStatus (koord)**: tijdens pakketuitvoer, worden de waarden in aanmerking genomen afhankelijk van de waarde &quot;@pkgStatus&quot;:
 
    * &quot;always&quot;: always present
    * &quot;never&quot;: nooit aanwezig
    * &quot;default (or none)&quot;: de waarde wordt geëxporteerd, behalve als dit de standaardwaarde is of als het geen intern veld is dat niet compatibel zou zijn met andere instanties.
 
-* **ref (tekenreeks)**: dit kenmerk definieert een verwijzing naar een `<attribute>` element gedeeld door verscheidene schema&#39;s (definitiefactoring). De definitie wordt niet gekopieerd naar het huidige schema.
-* **vereist (Boolean)**: als dit kenmerk is geactiveerd (@required=&quot;true&quot;), wordt het veld gemarkeerd in de interface. Het label van het veld wordt rood in formulieren.
-* **sql (Boolean)**: als dit kenmerk is geactiveerd (@sql=&quot;true&quot;), dwingt het de opslag van het SQL-kenmerk af, zelfs als het element dat het kenmerk bevat de eigenschap xml=&quot;true&quot; heeft.
-* **sqlDefault (tekenreeks)**: met dit kenmerk kunt u de standaardwaarde definiëren waarmee rekening wordt gehouden bij het bijwerken van de database als het kenmerk @notNull is geactiveerd. Als dit attribuut na de attributenverwezenlijking wordt toegevoegd, zal het schemagedrag niet veranderen zelfs voor de nieuwe verslagen. Als u het schema wilt wijzigen en de waarde voor nieuwe records wilt bijwerken, moet u het kenmerk verwijderen en opnieuw maken.
-* **sqlname (tekenreeks)**: van het veld tijdens het maken van de tabel. Als @sqlname niet wordt gespecificeerd, wordt de waarde van het &quot;@name&quot;attribuut gebruikt door gebrek. Wanneer het schema in het gegevensbestand wordt geschreven, worden de prefixen automatisch toegevoegd afhankelijk van het type van gebied.
-* **sjabloon (tekenreeks)**: dit kenmerk definieert een verwijzing naar een `<attribute>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
-* **translateDefault (tekenreeks)**: als een &quot;@default&quot;-kenmerk wordt gevonden, kunt u met &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die in @default is gedefinieerd, en die worden verzameld met het vertaalgereedschap (intern gebruik).
-* **translateExpr (tekenreeks)**: als er een kenmerk &quot;@expr&quot; aanwezig is, kunt u met het kenmerk &quot;@translateExpr&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in @expr, die moet worden verzameld met het gereedschap Vertalen (intern gebruik).
-* **type (MNTOKEN)**: veldtype.
+* **ref (koord)**: dit attribuut bepaalt een verwijzing naar een `<attribute>` element dat door verscheidene schema&#39;s wordt gedeeld (definitie factoring). De definitie wordt niet gekopieerd naar het huidige schema.
+* **vereist (boolean)**: als dit attribuut (@required= &quot;waar&quot;) wordt geactiveerd, wordt het gebied benadrukt in de interface. Het label van het veld wordt rood in formulieren.
+* **sql (boolean)**: als dit attribuut (@sql= &quot;waar&quot;) wordt geactiveerd, dwingt het opslag van de SQL attributen, zelfs wanneer het element dat de attributen bevat het xml= &quot;waar&quot;bezit heeft.
+* **sqlDefault (koord)**: dit attribuut laat u toe om de standaardwaarde te bepalen die in rekening wordt gebracht voor het bijwerken van het gegevensbestand als het @notNull attribuut wordt geactiveerd. Als dit attribuut na de attributenverwezenlijking wordt toegevoegd, zal het schemagedrag niet veranderen zelfs voor de nieuwe verslagen. Als u het schema wilt wijzigen en de waarde voor nieuwe records wilt bijwerken, moet u het kenmerk verwijderen en opnieuw maken.
+* **sqlname (koord)**: van het gebied tijdens lijstverwezenlijking. Als @sqlname niet wordt gespecificeerd, wordt de waarde van het &quot;@name&quot;attribuut gebruikt door gebrek. Wanneer het schema in het gegevensbestand wordt geschreven, worden de prefixen automatisch toegevoegd afhankelijk van het type van gebied.
+* **malplaatje (koord)**: dit attribuut bepaalt een verwijzing naar een `<attribute>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
+* **translateDefault (koord)**: als een &quot;@default&quot;attribuut wordt gevonden, zal &quot;@translateDefault&quot;u toelaten om een uitdrukking opnieuw te bepalen die in @default wordt bepaald, die door het vertaalhulpmiddel (intern gebruik) moet worden verzameld.
+* **translatedExpr (koord)**: als een &quot;@expr&quot;attribuut aanwezig is, laat het &quot;@translateExpr&quot;attribuut u toe om een uitdrukking opnieuw te bepalen die in @expr wordt bepaald, die door het vertaalhulpmiddel (intern gebruik) moet worden verzameld.
+* **type (MNTOKEN)**: gebiedstype.
 
   Veldtypen zijn algemeen. Afhankelijk van het type database dat is geïnstalleerd, wijzigt Adobe Campaign het gedefinieerde type in een waarde die specifiek is voor de database die tijdens de structuurupdate is geïnstalleerd.
 
@@ -162,14 +162,14 @@ De volgorde waarin `<attribute>` elementen worden gedefinieerd in een `<srcschem
 
   Als het veld van het type STRING is en de naam van het veld niet wordt opgegeven door de aanwezigheid van het kenmerk &quot;@sqlname&quot;, wordt de naam van het veld in de database automatisch voorafgegaan door een &#39;s&#39;. Deze werkmodus is vergelijkbaar met velden van het type INTEGER (i), DUBBELE (d) en DATES (ts).
 
-* **userEnum (tekenreeks)**: ontvangt de interne naam van een &quot;open&quot; opsomming. De waarden van de opsomming kunnen door de gebruiker in de interface worden bepaald.
-* **visibleIf (string)**: definieert een voorwaarde in de vorm van een XTK-expressie die het kenmerk moet tonen of verbergen.
+* **userEnum (koord)**: ontvangt de interne naam van een &quot;open&quot;opsomming. De waarden van de opsomming kunnen door de gebruiker in de interface worden bepaald.
+* **visibleIf (koord)**: bepaalt een voorwaarde in de vorm van een uitdrukking van XTK om de attributen te tonen of te verbergen.
 
   >[!IMPORTANT]
   >
   >Het kenmerk is verborgen, maar de gegevens ervan zijn toegankelijk.
 
-* **xml (Boolean)**: als deze optie is geactiveerd, hebben de waarden van het veld geen gekoppeld SQL-veld. Adobe Campaign maakt een tekstveld &#39;mData&#39; voor het opslaan van records. Dit betekent dat er op deze velden geen filters of sortering plaatsvindt.
+* **xml (boolean)**: als deze optie wordt geactiveerd, hebben de waarden van het gebied geen verbonden SQL gebied. Adobe Campaign maakt een tekstveld &#39;mData&#39; voor het opslaan van records. Dit betekent dat er op deze velden geen filters of sortering plaatsvindt.
 
 ### Voorbeelden {#examples}
 

@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: ht
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Release 7.3.5 - build 9368 {#release-7-3-5}
 
-[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 _Woensdag 5 december 2023_
 
@@ -50,7 +50,7 @@ Als u deze release start, werkt het bijhouden van koppelingen in e-mails die al 
 
 ## Release 7.3.4 - build 9364 {#release-7-3-4}
 
-[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 
 >[!CAUTION]
@@ -120,7 +120,7 @@ Er is een probleem opgelost waardoor Japanse tekens soms onjuist werden weergege
 
 ## Release 7.3.3 - build 9359 {#release-7-3-3}
 
-[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 >[!AVAILABILITY]
 >
@@ -156,7 +156,7 @@ _20 maart 2023_
 
 ## Release 7.3.2 - build 9356 {#release-7-3-2}
 
-[!BADGE Beperkte beschikbaarheid]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
 
 >[!AVAILABILITY]
