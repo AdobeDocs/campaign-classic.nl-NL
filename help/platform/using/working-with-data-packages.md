@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -169,10 +169,10 @@ Inhoud pakket:
 <package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
 label="" name="" namespace="" vendor="">
  <desc></desc>
- <version buildDate="2013-01-09 10:30:18.954Z"/>
+ <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
  <entities schema="nms:operation">
-  <operation duration="432000" end="2013-01-14" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="2013-01-09">
+  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
+  modelName="opEmpty" start="AAAA-MM-DD">
    <controlGroup>
     <where filteringSchema=""/>
    </controlGroup>
@@ -188,7 +188,7 @@ label="" name="" namespace="" vendor="">
    </fcpSeed>
    <owner _operation="none" name="admin" type="0"/>
    <program _operation="none" name="nmsOperations"/>
-   <task end="2013-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2013-01-16 10:07:51.000Z"
+   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
    status="1">
     <owner _operation="none" name="admin" type="0"/>
     <operation _operation="none" internalName="OP1"/>
@@ -354,7 +354,7 @@ Importeer altijd binnen dezelfde versie van het platform. U moet controleren dat
 >[!IMPORTANT]
 >
 >Importeren tussen verschillende versies wordt niet ondersteund door de Adobe.
-<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
 
 Let op het schema en de databasestructuur. De invoer van pakket met schema moet door schemageneratie worden gevolgd.
 
@@ -369,7 +369,7 @@ Begin door verschillende typen pakketten te definiëren. Er worden slechts vier 
 * U kunt een entiteit beschouwen als zowel een element &quot;admin&quot; als een element &quot;platform&quot;.
 * U mag niet meer dan één entiteit in een pakket opnemen wanneer u het pakket uploadt naar een Campagne-instantie.
 
-<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
 
 Als u uw configuratie op een nieuw geval moet opstellen, kunt u al uw entiteitpakketten invoeren.
 
@@ -390,7 +390,7 @@ Zodra gevormd, kan een eigenschap in een ander milieu worden uitgevoerd. Het pak
 
 De eerste oplossing zou zijn om de hele functie opnieuw te exporteren. Maar om elk risico te vermijden (het bijwerken van ongewenste elementen) is het veiliger om een pakket te hebben dat alleen de correctie bevat.
 
-Daarom raden we u aan een updatepakket te maken dat slechts één eenheidstype van de functie bevat.
+Daarom raden we u aan een updatepakket te maken dat slechts één entiteitstype van de functie bevat.
 
 Een update kan niet alleen een oplossing zijn, maar ook een nieuw element van uw entiteit/functie/campagnemakket. Als u wilt voorkomen dat het hele pakket wordt geïmplementeerd, kunt u een updatepakket exporteren.
 
