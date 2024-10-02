@@ -4,7 +4,7 @@ title: Een query uitvoeren op de tabel met ontvangers
 description: Leer hoe u een query uitvoert op de tabel met ontvangers
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: d6bed05e083b2e349db331e6016cbb8f91f00eaf
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -31,12 +31,12 @@ In dit voorbeeld willen we de namen en e-mails herstellen van ontvangers wier e-
 
 * Is een soort gevormd?
 
-  Ja, gebaseerd op **[!UICONTROL Account number]** en **[!UICONTROL Last name]**
+  Ja, op basis van **[!UICONTROL Account number]** en **[!UICONTROL Last name]**
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
-1. Klikken **[!UICONTROL Tools > Generic query editor...]** en kiest u **Ontvangers** (**nms:ontvanger**) tabel. Klik vervolgens op **[!UICONTROL Next]**.
-1. Kies: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** en **[!UICONTROL Account number]**. Deze velden worden toegevoegd aan **[!UICONTROL Output columns]**. Klik vervolgens op **[!UICONTROL Next]**.
+1. Klik **[!UICONTROL Tools > Generic query editor...]** en kies de **Ontvangers** (**nms:ontvanger**) lijst. Klik vervolgens op **[!UICONTROL Next]**.
+1. Kies: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** en **[!UICONTROL Account number]** . Deze velden worden toegevoegd aan **[!UICONTROL Output columns]** . Klik vervolgens op **[!UICONTROL Next]**.
 
    ![](assets/query_editor_03.png)
 
@@ -44,45 +44,45 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_04.png)
 
-1. In de **[!UICONTROL Data filtering]** venster, verfijnen uw zoekopdracht: kies **[!UICONTROL Filtering conditions]** en klik op **[!UICONTROL Next]**.
-1. De **[!UICONTROL Target element]** kunt u de filterinstellingen invoeren.
+1. Verfijn de zoekopdracht in het venster **[!UICONTROL Data filtering]** : kies **[!UICONTROL Filtering conditions]** en klik op **[!UICONTROL Next]** .
+1. In het venster **[!UICONTROL Target element]** kunt u de filterinstellingen invoeren.
 
-   Definieer de volgende filtervoorwaarde: ontvangers met een e-maildomein dat gelijk is aan &quot;orange.co.uk&quot;. Kies **E-maildomein (@email)** in de **[!UICONTROL Expression]** kolom, kies **gelijk aan** in de **[!UICONTROL Operator]** kolom en voer &quot;orange.co.uk&quot; in in het dialoogvenster **[!UICONTROL Value]** kolom.
+   Definieer de volgende filtervoorwaarde: ontvangers met een e-maildomein dat gelijk is aan &quot;orange.co.uk&quot;. Om dit te doen, verkies **E-maildomein (@email)** in de **[!UICONTROL Expression]** kolom, kies **gelijk aan** in de **[!UICONTROL Operator]** kolom en ga &quot;orange.co.uk&quot;in de **[!UICONTROL Value]** kolom in.
 
    ![](assets/query_editor_05.png)
 
-1. Klik indien nodig op de knop **[!UICONTROL Distribution of values]** om een distributie te bekijken die op het e-maildomein van vooruitzichten wordt gebaseerd. Voor elk e-maildomein in de database is een percentage beschikbaar. Andere domeinen dan &quot;orange.co.uk&quot; worden weergegeven totdat het filter wordt toegepast.
+1. Klik zo nodig op de knop **[!UICONTROL Distribution of values]** om een distributie weer te geven op basis van het e-maildomein met perspectieven. Voor elk e-maildomein in de database is een percentage beschikbaar. Andere domeinen dan &quot;orange.co.uk&quot; worden weergegeven totdat het filter wordt toegepast.
 
-   Een samenvatting van de vraag wordt getoond bij de bodem van het venster: **E-maildomein is gelijk aan &#39;orange.co.uk&#39;**.
+   Een samenvatting van de vraag wordt getoond bij de bodem van het venster: **E-maildomein gelijk aan &quot;orange.co.uk&quot;**.
 
-1. Klik op de knop **[!UICONTROL Preview]** om een idee van het vraagresultaat te krijgen: slechts &quot;orange.co.uk&quot;e-maildomeinen worden getoond.
+1. Klik op **[!UICONTROL Preview]** om een idee te krijgen van het resultaat van de query: alleen de e-maildomeinen &quot;orange.co.uk&quot; worden weergegeven.
 
    ![](assets/query_editor_nveau_17.png)
 
 1. Wij zullen nu de vraag veranderen om contacten te vinden die niet in Londen wonen.
 
-   Selecteren **[!UICONTROL City (location/@city)]** in de **[!UICONTROL Expression]** kolom, **[!UICONTROL different from]** als een operator en **[!UICONTROL London]** in de **[!UICONTROL Value]** kolom.
+   Selecteer **[!UICONTROL City (location/@city)]** in de **[!UICONTROL Expression]** kolom, **[!UICONTROL different from]** als een operator en voer **[!UICONTROL London]** in de **[!UICONTROL Value]** kolom in.
 
    ![](assets/query_editor_08.png)
 
-1. Hiermee gaat u naar de **[!UICONTROL Data formatting]** venster. Controleer de kolomvolgorde. Verplaats de kolom &quot;Plaats&quot; omhoog onder de kolom &quot;Rekeningnummer&quot;.
+1. Hiermee gaat u naar het venster van **[!UICONTROL Data formatting]** . Controleer de kolomvolgorde. Verplaats de kolom &quot;Plaats&quot; omhoog onder de kolom &quot;Rekeningnummer&quot;.
 
    Schakel de kolom Voornaam uit om deze uit de lijst te verwijderen.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. In de **[!UICONTROL Data preview]** venster, klikt u op **[!UICONTROL Start the preview of the data]**. Deze functie berekent het resultaat van de query.
+1. Klik in het **[!UICONTROL Data preview]** -venster op **[!UICONTROL Start the preview of the data]** . Deze functie berekent het resultaat van de query.
 
-   De **[!UICONTROL Column results]** toont het vraagresultaat in kolommen.
+   Op het tabblad **[!UICONTROL Column results]** wordt het queryresultaat in kolommen weergegeven.
 
    Het resultaat toont alle ontvangers met een &quot;orange.co.uk&quot;e-maildomein die niet in Londen wonen. De kolom Voornaam wordt niet weergegeven omdat deze tijdens het vorige werkgebied niet is ingeschakeld. Accountnummers worden in aflopende volgorde gesorteerd.
 
    ![](assets/query_editor_nveau_12.png)
 
-   De **[!UICONTROL XML result]** geeft het resultaat weer in XML-indeling.
+   Op het tabblad **[!UICONTROL XML result]** wordt het resultaat weergegeven in XML-indeling.
 
    ![](assets/query_editor_nveau_13.png)
 
-   De **[!UICONTROL Generated QSL queries]** toont het vraagresultaat in SQL formaat.
+   Het tabblad **[!UICONTROL Generated SQL queries]** geeft het queryresultaat weer in SQL-indeling.
 
    ![](assets/query_editor_nveau_14.png)
