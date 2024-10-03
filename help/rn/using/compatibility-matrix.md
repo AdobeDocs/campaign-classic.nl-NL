@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Tenzij anders vermeld worden alle kleine releases ondersteund.
 
 >[!CAUTION]
 >
->Deze matrix wordt regelmatig bijgewerkt met nieuwe ondersteunde systemen en gereedschappen die worden toegevoegd en vervangen en die worden verwijderd.
+>Deze matrix wordt regelmatig bijgewerkt door toevoeging van nieuwe ondersteunde systemen en tools en verwijdering van verouderde systemen en tools.
 
 ## Besturingssystemen {#OperatingSystems}
 
@@ -83,7 +83,7 @@ Als On-Premise/hybride klant moet u Adobe Campaign in een van de hieronder verme
 
 >[!IMPORTANT]
 >
->Met RHEL, moet u bereid zijn [ SELinux ](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) onbruikbaar te maken of uw architecten te hebben douaneSELinux regels schrijven om te controleren dat toegelaten SELinux geen kwesties met de verrichtingen van de Campagne veroorzaakt.
+>Met RHEL moet u bereid zijn om [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux geen problemen veroorzaakt met Campaign-bewerkingen.
 
 ## Webservers {#WebServers}
 
@@ -96,7 +96,7 @@ Afhankelijk van uw besturingssysteem moet u als On-Premise/hybride klant Campaig
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10,0</p>
+<p>10.0</p>
 </td>
 </tr>
 <tr>

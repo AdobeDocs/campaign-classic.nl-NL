@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ De [compatibiliteitsmatrix voor Adobe Campaign](compatibility-matrix.md) is bijg
 
 ### Andere wijzigingen {#release-7-4-1-other}
 
-Vanaf v7.4.1 worden XML-bibliotheken voor RPM Linux-pakketten niet meer opgenomen in Campaign. Als klant op locatie of hybride klant moet uw beheerder deze bibliotheken installeren. [Meer informatie](../../installation/using/installing-packages-with-linux.md)
+Vanaf v7.4.1 worden XML-bibliotheken voor RPM Linux-pakketten niet meer opgenomen in Campaign. Als on-premise of hybride klant moet uw beheerder deze bibliotheken installeren. [Meer informatie](../../installation/using/installing-packages-with-linux.md)
 
 ### Patches {#release-7-4-1-patches}
 
