@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 2%
 
 ---
@@ -132,22 +132,6 @@ Vervolgens kunt u de vereiste pakketten installeren, zoals hieronder wordt besch
 
 * RPM-gebaseerde distributie (RedHat, SuSe)
 
-  Als u deze wilt installeren, voert u uit als hoofdmap:
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  Hierbij is XXX de versie van het bestand.
-
-  Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken, kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  De meeste afhankelijkheden zijn verplicht en `nlserver` kan niet starten als er geen afhankelijkheden zijn geïnstalleerd. De enige uitzondering is openjdk, kunt u een andere JDK installeren indien nodig.
-
   Als het `epel-release` -pakket niet is geïnstalleerd, installeert u het. Voer hiervoor de volgende opdracht als basis in:
 
   ```
@@ -173,6 +157,14 @@ Vervolgens kunt u de vereiste pakketten installeren, zoals hieronder wordt besch
   >[!IMPORTANT]
   >
   >Als u `Removing:` in plaats van `Upgrading:` leest, annuleert u de opdracht. Er zijn waarschijnlijk enkele fouten (hierboven vermeld) die de verwijdering verklaren. Corrigeer deze fouten in dat geval door de vermelde ontbrekende afhankelijkheden bij te werken/te installeren en voer de opdracht vervolgens opnieuw uit.
+
+  Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken, kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  De meeste afhankelijkheden zijn verplicht en `nlserver` kan niet starten als er geen afhankelijkheden zijn geïnstalleerd. De enige uitzondering is openjdk, kunt u een andere JDK installeren indien nodig.
 
 * DEB-distributie (Debian)
 
