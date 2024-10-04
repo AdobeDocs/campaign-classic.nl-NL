@@ -6,14 +6,14 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: ht
+source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
 
-# Release-updates{#rn-overview}
+# Release-updates {#rn-overview}
 
 Adobe Campaign Classic brengt regelmatig productupdates uit die nieuwe mogelijkheden, foutoplossingen, en betere prestaties, veiligheid, en bruikbaarheid brengen. Deze updates worden uitgebracht als **productbuilds**. Gedetailleerde informatie over elke nieuwe build is beschikbaar in het dialoogvenster [Aanvullende informatie](latest-release.md).
 
@@ -34,10 +34,9 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## Releasestatussen{#rn-statuses}
+## Releasestatussen {#rn-statuses}
 
 Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur in het dialoogvenster [Aanvullende informatie](latest-release.md).
-
 
 | Status | Beschrijving |
 |---|---|
@@ -45,7 +44,7 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 | [!BADGE Beperkte beschikbaarheid]{type=Informative} | Alleen on-demand implementatie. |
 | [!BADGE Afgeschaft]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
 
-## Releasecyclus{#rn-cycle}
+## Releasecyclus {#rn-cycle}
 
 Adobe Campaign wordt regelmatig bijgewerkt. Deze regelmatige frequentie van updates is bedoeld om u het nieuwste en beste in handen te geven, uw omgeving veilig te houden en uw ervaring met ons product te verbeteren.
 
@@ -53,7 +52,7 @@ Dit is de reden waarom het essentieel is dat u **de meest recente stabiele build
 
 Als gehoste klant profiteert u automatisch van de upgrade met de nieuwste stabiele build zonder enige actie. Lees meer in het [gedeelte Jaarlijkse upgrade](#yearly-upgrade). Als u migreert van een oude build, raadt Adobe u aan eerst naar deze build te upgraden.
 
-## Aanbevelingen{#recommendations}
+## Aanbevelingen {#rn-recommendations}
 
 Voor een stabiele configuratie raadt Adobe aan om **dezelfde build** te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
