@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Aan de slag met een beschrijvende analyse
-description: Aan de slag met een beschrijvende analyse
+title: Wat is een beschrijvende analyse?
+description: Populaties analyseren met beschrijvende analyserapporten
 feature: Reporting, Monitoring
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met een beschrijvende analyse{#about-descriptive-analysis}
-
-
+# Wat is een beschrijvende analyse? {#about-descriptive-analysis}
 
 Om statistieken over de gegevens in het gegevensbestand te produceren, creeer beschrijvende analyserapporten gebruikend de specifieke medewerker en pas hun inhoud en presentatie aan uw behoeften aan.
 

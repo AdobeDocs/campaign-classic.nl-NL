@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: De beschrijvende analyseassistent gebruiken
-description: De beschrijvende analyseassistent gebruiken
+title: Uw eerste beschrijvende analyserapport maken
+description: Leer hoe u de assistent gebruikt om uw eerste beschrijvende analyserapport te maken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
 
-# De beschrijvende analyseassistent gebruiken{#using-the-descriptive-analysis-wizard}
-
-
+# Uw eerste beschrijvende analyserapport maken {#using-the-descriptive-analysis-wizard}
 
 Om een beschrijvend analyserapport tot stand te brengen, gebruik de specifieke medewerker. De configuratie is afhankelijk van de te analyseren gegevens en van de gewenste rendering.
 

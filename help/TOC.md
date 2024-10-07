@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '2560'
+ht-degree: 99%
 
 ---
 
@@ -293,10 +293,10 @@ ht-degree: 100%
       + [Indicatoren berekenen](reporting/using/indicator-calculation.md)
       + [Persoon/personen en ontvangers](reporting/using/person-people-recipients.md)
    + Populaties analyseren {#analyzing-populations}
-      + [Beschrijvende analyse](reporting/using/about-descriptive-analysis.md)
-      + [De assistent voor beschrijvende analyse gebruiken](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [Rapportinstellingen](reporting/using/processing-a-report.md)
-      + [Gebruiksscenario’s](reporting/using/use-cases.md)
+      + [Wat is een beschrijvende analyse?](reporting/using/about-descriptive-analysis.md)
+      + [Uw eerste beschrijvende analyserapport maken](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Uw analyserapport beheren en configureren](reporting/using/processing-a-report.md)
+      + [Gebruiksscenario&#39;s voor rapportage van analyses](reporting/using/use-cases.md)
    + Nieuwe rapporten maken {#creating-new-reports}
       + [Belangrijke stappen bij het ontwerpen van een rapport](reporting/using/about-reports-creation-in-campaign.md)
       + [Een nieuw rapport maken](reporting/using/creating-a-new-report.md)
@@ -641,7 +641,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

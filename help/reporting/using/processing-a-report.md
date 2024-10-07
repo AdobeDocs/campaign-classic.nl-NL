@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Een analyserapport gebruiken
-description: Een analyserapport gebruiken
+title: Uw analyserapport beheren en configureren
+description: Uw analyserapport beheren en configureren
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
 
-# Een analyserapport gebruiken{#processing-a-report}
-
-
+# Uw analyserapport beheren en configureren {#processing-a-report}
 
 ## Een analyserapport opslaan {#saving-an-analysis-report}
 

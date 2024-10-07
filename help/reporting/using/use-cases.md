@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Gebruiksscenario’s
-description: Gebruiksgevallen melden
+title: Gebruiksscenario's voor rapportage van analyses
+description: Gebruiksscenario's voor rapportage van analyses
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
 
-# Gebruiksscenario’s{#use-cases}
-
-
+# Gebruiksscenario&#39;s voor rapportage van analyses {#use-cases}
 
 ## Een populatie analyseren {#analyzing-a-population}
 
