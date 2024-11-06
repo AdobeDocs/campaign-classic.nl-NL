@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 9c13556fb1a822f27aeb37a3812736976a20cea6
+source-git-commit: 4525651445b729b44f05dec69650584271675cef
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
@@ -84,13 +84,17 @@ Afhankelijk van uw besturingssysteem moet u als On-Premise/hybride klant Campaig
 <td><strong>Webserver</strong></td>
 <td><strong>Webserverversie</strong></td>
 <tr>
-<td>Microsoft IIS</td>
+<td>
+<p>Microsoft IIS</p>
+</td>
 <td>
 <p>10.0</p>
 </td>
 </tr>
 <tr>
-<td>Apache</td>
+<td>
+<p>Apache</p>
+</td>
 <td>
 <p>2.4</p>
 </td>
@@ -153,7 +157,9 @@ Als On-Premise/hybride klant moet u een van de onderstaande databases installere
 <td><strong>Databaseversie</strong></td>
 <td><strong>Minimale Campaign-versie</strong></td>
 <tr>
-<td>Oracle</td>
+<td>
+<p>Oracle</p>
+</td>
 <td>
 <p>23c</p>
 <p>19c</p>
@@ -170,7 +176,9 @@ Als On-Premise/hybride klant moet u een van de onderstaande databases installere
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+</td>
 <td>
 <p>14.x</p>
 <p>13.x</p>
@@ -185,7 +193,9 @@ Als On-Premise/hybride klant moet u een van de onderstaande databases installere
 </td>
 </tr>
 <tr>
-<td>Microsoft SQL Server</td>
+<td>
+<p>Microsoft SQL Server</p>
+</td>
 <td>
 <p>2022</p>
 <p>2019</p>
@@ -222,13 +232,17 @@ Hieronder vindt u de Customer Relationship Management-systemen (CRM) die compati
 <table>
 <tbody>
 <tr>
-<td>Salesforce-connector-API</td>
+<td>
+<p>Salesforce-connector-API</p>
+</td>
 <td>
 <p>API-versie 49</p>
 </td>
 </tr>
 <tr>
-<td>Microsoft Dynamics-connector</td>
+<td>
+<p>Microsoft Dynamics-connector</p>
+</td>
 <td>
 <p>Web-API</p>
 </td>
