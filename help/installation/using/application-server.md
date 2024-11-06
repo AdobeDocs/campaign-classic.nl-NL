@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
+source-git-commit: 387bcf39c13cc1f9544433b9441769f4b16b52ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '649'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ De gesteunde versies zijn gedetailleerd in de matrijs van de Verenigbaarheid van
 
 >[!AVAILABILITY]
 >
->* Vanaf v7.4.1 vereist campagne ten minste Java JDK 11. Als uw Campagneserver in een milieu van Vensters geïnstalleerd is, moet u JRE produceren aangezien het niet meer door gebrek wordt verstrekt. De JRE_HOME-omgevingsvariabele is vereist om de Java-runtime DLL (jvm.dll) te vinden.
+>* Beginnend v7.4.1, vereist de Campagne minstens **Java JDK 11**. Als uw campagnemeserver in een Windows-omgeving is geïnstalleerd, wordt Java Runtime (JRE) niet meer automatisch gedetecteerd. De JRE_HOME-omgevingsvariabele moet worden ingesteld op de map waarin Campagne het `bin/server/jvm.dll` -bestand kan vinden. Als uw JDK 11 bijvoorbeeld is geïnstalleerd onder de map `C:\Program Files\Java\jdk-11` , moet uw JRE_HOME `C:\Program Files\Java\jdk-11` zijn.
 >
 >* Vanaf v7.4.1 is Tomcat 10.1 de standaardversie.
 >
