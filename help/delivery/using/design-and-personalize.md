@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1287'
 ht-degree: 3%
 
 ---
@@ -123,7 +123,7 @@ Het responsieve ontwerp zorgt ervoor dat een e-mail optimaal wordt weergegeven v
 
 * Gebruik de voorvertoningsmodus en verzend proefdrukken om de rendering op zoveel mogelijk apparaten te testen
 
-* De module Adobe Campaign Classic Digital Content Editor (DCE) bevat een aantal responsieve ontwerpsjablonen voor mobiele apparaten die beschikbaar zijn via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]** . Leer meer [ in dit artikel ](https://theblog.adobe.com/responsive-email-design-101/)
+* De module Adobe Campaign Classic Digital Content Editor (DCE) bevat een aantal responsieve ontwerpsjablonen voor mobiele apparaten die beschikbaar zijn via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]** .
 
 ## Afbeeldingen beheren {#manage-images}
 
