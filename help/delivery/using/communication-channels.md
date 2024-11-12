@@ -2,14 +2,13 @@
 product: campaign
 title: Communicatiekanalen
 description: Maak leveringen om gepersonaliseerde berichten via verschillende kanalen te verzenden
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 10%
+source-wordcount: '1205'
+ht-degree: 8%
 
 ---
 
@@ -82,7 +81,7 @@ Adobe Campaign staat u toe om gepersonaliseerde en gesegmenteerde [ dupberichten
 
 [ Directe post ](about-direct-mail-channel.md) is een off-line kanaal dat u toestaat om het dossier te personaliseren en te produceren dat door directe postleveranciers wordt vereist. Het biedt u de mogelijkheid om online en offline kanalen in uw klanttrajecten te combineren.
 
-Met online kanalen kunt u uw berichten (e-mail, sms, levering van mobiele apps, enzovoort) maken en ze vanuit Adobe Campaign direct naar uw doelgroep verzenden. Bij offline kanalen is dit anders. Wanneer u een direct-maillevering voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactinformatie (bijvoorbeeld postadres). U kunt dit bestand dan naar uw direct-mailprovider sturen, die voor de werkelijke verzending zorgt.
+Met onlinekanalen kunt u berichten maken (e-mail, SMS, levering van mobiele apps, enz.) en deze rechtstreeks vanuit Adobe Campaign naar uw publiek verzenden. Bij offline kanalen is dit anders. Wanneer u een direct-maillevering voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactinformatie (bijvoorbeeld postadres). U kunt dit bestand dan naar uw direct-mailprovider sturen, die voor de werkelijke verzending zorgt.
 
 ## Andere kanalen {#other-channels}
 
