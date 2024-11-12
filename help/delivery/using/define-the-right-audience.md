@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 3%
@@ -33,7 +33,7 @@ In Campaign Classic, door gebrek, richten de leveringsmalplaatjes **Ontvangers**
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
-Deze afbeeldingen worden voorgesteld [ in deze sectie ](selecting-a-target-mapping.md).
+Deze afbeeldingen worden voorgesteld [ in deze sectie ](steps-defining-the-target-population.md#select-a-target-mapping).
 
 U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.
 

@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 1%
@@ -188,7 +188,7 @@ Leer meer over [ opschoonwerkschema van het Gegevensbestand ](../../production/u
 
 *Context: Transactional Messaging*
 
-Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The "Per-Dedicated Server" designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
 Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
@@ -198,7 +198,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Context: E-mailLeverbaarheid*
 
-Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren of als spam te worden gemarkeerd. Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
+Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren, of als spam worden gemerkt. Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
 Leer meer over [ Leverbaarheid ](../../delivery/using/about-deliverability.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Context: Directe Post*
 
-Een leveringsoverzicht is een gestructureerde reeks elementen (documenten, winkels, promotionele coupons, enz.) door het bedrijf en voor een bepaalde campagne worden opgericht. Het wordt gebruikt in de context van direct-mailleveringen.
+Een leveringsoverzicht is een gestructureerde reeks elementen (documenten, winkels, promotionele coupons, enz.) die door het bedrijf en voor een bepaalde campagne zijn gemaakt. Het wordt gebruikt in de context van direct-mailleveringen.
 
 Leer meer over [ Directe Post ](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -263,7 +263,7 @@ Leer meer over [ Beschrijvende Analyse ](../../reporting/using/about-descriptive
 
 *Context: Verdeelde Marketing*
 
-De Distributed Marketing add-on biedt aan campagneoperators een samenwerkingswerkruimte aan voor het implementeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die als **lijst van de pakketten van de Campagne** wordt bekend, waar de centraal gecreeerde campagnemalplaatjes en de instanties aan lokale entiteiten worden aangeboden.
+De add-on voor gedistribueerde marketing biedt aan campagnebeheerders een gezamenlijke werkruimte aan voor het uitvoeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die als **lijst van de pakketten van de Campagne** wordt bekend, waar de centraal gecreeerde campagnemalplaatjes en de instanties aan lokale entiteiten worden aangeboden.
 
 Leer meer over [ Verdeelde Marketing ](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -460,7 +460,7 @@ Leer meer over [ Interactie ](../../interaction/using/interaction-and-offer-mana
 ----NOT USEFUL HERE?----
 +++**Image serving**
 
-The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
+The functionality that supplies the images embedded in emails to the delivery's recipients. The insertion of the images based on an emails system's "download images" functionality is what generates an "open" entry in Campaign's tracking logs.
 
 Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
@@ -539,7 +539,7 @@ Leer meer over [ Genoemde rechten ](../../platform/using/access-management-named
 
 +++**Namespace**
 
-De naamruimte is een partitie die de gegevenstypen van de klant scheidt van de native datatypen van Adobe Campaign in het gegevensmodel. Wordt ook gebruikt om de migratie van definities van de ene instantie naar de andere te vergemakkelijken, zoals het verplaatsen van een schema of sjabloon van de instantie Development naar de instantie Production.
+De naamruimte is een partitie die gegevenstypen van klanten scheidt van native datatypen van Adobe Campaign in het gegevensmodel. Wordt ook gebruikt om de migratie van definities van de ene instantie naar de andere te vergemakkelijken, zoals het verplaatsen van een schema of sjabloon van de instantie Development naar de instantie Production.
 
 Leer meer over [ Namespace ](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
@@ -640,7 +640,7 @@ Leer meer over [ Levende milieu&#39;s van de Aanbieding ](../../interaction/usin
 
 *context: De Interactie van de Campagne*
 
-De de presentatieregels van de aanbieding zijn typologieregels die in het aanbiedingsmilieu van verwijzingen worden voorzien, die Exploitanten specifieke aanbiedingen laten door rekening te houden met de voorpositiegeschiedenis van de ontvanger.
+De de presentatieregels van de aanbieding zijn typologieregels die in het aanbiedingsmilieu van verwijzingen worden voorzien, die Exploitanten specifieke aanbiedingen laten door de voorstellingshistorie van de ontvanger rekening te houden met.
 
 Leer meer over [ de presentatieregels van de Aanbieding ](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
 +++
@@ -676,7 +676,7 @@ Leer meer over [ Interactie ](../../interaction/using/interaction-and-offer-mana
 
 *context: De Interactie van de Campagne*
 
-Een aanbiedingssimulatie laat de exploitanten aanbiedingsdistributie over een bepaald werkingsgebied (leveringsdatum, doelsegment, aantal aanbiedingen, thema, enz.) testen voordat de aanbiedingen daadwerkelijk worden verzonden. Het kan worden gebruikt om de prioriteiten en de subsidiabiliteitsregels van de aanbiedingen aan te passen om de doeltreffendheid van de aanbieding te maximaliseren.
+Met een aanbiedingssimulatie kunnen operatoren de distributie van aanbiedingen testen binnen een bepaald bereik (leveringsdatum, doelsegment, aantal aanbiedingen, thema, enz.) voordat ze de aanbiedingen daadwerkelijk verzenden. Het kan worden gebruikt om de prioriteiten en de subsidiabiliteitsregels van de aanbiedingen aan te passen om de doeltreffendheid van de aanbieding te maximaliseren.
 
 Leer meer over [ simulaties van het Aanbod ](../../interaction/using/about-offers-simulation.md).
 +++
@@ -845,7 +845,7 @@ Leer meer over [ Duw ](../../delivery/using/about-mobile-app-channel.md).
 
 +++**Ontvanger**
 
-In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, SMS, enz.) aan uw klanten. De ontvangergegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren en verpersoonlijkingsgegevens toe te voegen. Dit is doorgaans persoonlijke, contact-, demografische en transactiegegevens, maar het kan elk type informatie zijn dat marketing en analyse ondersteunt.
+In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, SMS, enz.) naar uw klanten. De ontvangergegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren en verpersoonlijkingsgegevens toe te voegen. Dit is doorgaans persoonlijke, contact-, demografische en transactiegegevens, maar het kan elk type informatie zijn dat marketing en analyse ondersteunt.
 
 Leer meer over [ Ontvanger ](../../configuration/using/about-data-model.md).
 +++
@@ -939,7 +939,7 @@ Leer meer over [ gegevens van het Doel ](../../workflow/using/data-life-cycle.md
 
 De afbeelding van het doel is de afbeelding van leveringskanalen aan een specifiek gegevenstype. De afbeeldingen van het doel bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
 
-Leer meer over [ afbeelding van het Doel ](../../delivery/using/selecting-a-target-mapping.md).
+Leer meer over [ afbeelding van het Doel ](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping).
 +++
 
 +++**het richten activiteiten**
@@ -984,7 +984,7 @@ Een sjabloon is een ontwerpelement dat wordt gebruikt om een object te maken. De
 -----ACS -> SEEDS IN ACC-----
 +++**Test profiles**
 
-Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message's audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
 
 Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 +++

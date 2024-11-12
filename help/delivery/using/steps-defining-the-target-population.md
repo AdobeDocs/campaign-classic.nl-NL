@@ -5,9 +5,9 @@ description: Leer hoe u de doelpopulatie definieert
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
 1. Selecteer de doeltoewijzing in de vervolgkeuzelijst **[!UICONTROL Target mapping]** . Adobe Campaign standaarddoelafbeelding is **[!UICONTROL Recipients]**, gebaseerd op **nms:ontvangend** schema.
 
-   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Voor meer op doelafbeeldingen, verwijs naar [ Uitgezochte een doelafbeelding ](selecting-a-target-mapping.md).
+   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn.[Meer informatie](#select-a-target-mapping).
 
 1. Klik op de knop **[!UICONTROL Add]** om beperkingsfilters te definiëren.
 
@@ -93,7 +93,7 @@ Dit doet u als volgt:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Ontvangers worden standaard in de database geïmporteerd. U moet **[!UICONTROL Target mapping]** selecteren. Voor meer op doelafbeeldingen, verwijs naar [ Uitgezochte een doelafbeelding ](selecting-a-target-mapping.md)
+1. Ontvangers worden standaard in de database geïmporteerd. U moet **[!UICONTROL Target mapping]** selecteren. [Meer informatie](#select-a-target-mapping)
 
    U kunt ook **[!UICONTROL Do not import the recipients into the database]** kiezen.
 
@@ -225,6 +225,25 @@ Zie ook:
 * [Proofingdoel selecteren](#selecting-the-proof-target)
 * [Seedadressen](about-seed-addresses.md)
 * [Gebruiksscenario: seedadressen selecteren op criteria](use-case-selecting-seed-addresses-on-criteria.md)
+
+## Een targettoewijzing selecteren {#select-a-target-mapping}
+
+Aanleveringssjablonen zijn standaard gericht op **[!UICONTROL Recipients]** . Hun doelafbeelding gebruikt daarom de gebieden van **nms:ontvankelijke** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
+
+![](assets/delivery_select_mapping.png)
+
+Deze toewijzingen zijn als volgt:
+
+| Naam | Gebruiken | Standaardschema |
+|---|---|---|
+| Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:ontvanger |
+| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, X - voorheen bekend als Twitter) zijn verzameld. | mns:bezoeker |
+| Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
+| Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
+| Service | Publish naar een X-account of een Facebook-pagina | nms:service |
+| Operatoren | Leveren aan Adobe Campaign-operatoren | nms:operator |
+| Extern bestand | Afleveren via een bestand dat alle benodigde informatie voor levering bevat | Geen gekoppeld schema, geen doel ingevoerd |
+
 
 ## Video over zelfstudie {#seeds-and-proofs-video}
 
