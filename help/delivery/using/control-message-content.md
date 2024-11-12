@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '748'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van
 
 >[!NOTE]
 >
->Voor meer informatie bij het uitgeven van e-mailinhoud, zie [ de e-mailinhoud ](defining-the-email-content.md) bepalen en [ gepersonaliseerde inhoud ](design-and-personalize.md) bouwen.
+>Voor meer informatie bij het uitgeven van e-mailinhoud, zie [ de e-mailinhoud ](defining-the-email-content.md) bepalen.
 
 ## Adres van afzender {#sender-address}
 
@@ -44,8 +44,6 @@ Ga voor meer informatie naar [deze pagina](defining-the-email-content.md).
 Om de ervaring van ontvangers te verbeteren en ze uw e-mail te laten openen, kunt u in Adobe Campaign uw berichten personaliseren.
 
 Voor meer bij het gebruiken van verpersoonlijkingsgebieden in Adobe Campaign, zie [ deze sectie ](personalization-fields.md).
-
-Sommige uiteinden om verpersoonlijking te optimaliseren wanneer het bouwen van uw inhoud wordt voorgesteld in [ deze sectie ](design-and-personalize.md#optimize-personalization).
 
 ## Koppeling en formulier uitschakelen {#opt-out}
 

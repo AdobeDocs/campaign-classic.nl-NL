@@ -5,8 +5,10 @@ description: Zodra uw bericht klaar is, voer alle controles uit alvorens te verz
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -25,37 +27,37 @@ Alvorens een levering te verzenden, moet u ervoor zorgen dat uw ontvangers het b
 
 Met deze stap kunt u mogelijke fouten detecteren en corrigeren voordat u deze aan uw hoofddoel kunt leveren.
 
-De stappen voor het valideren van een levering worden weergegeven [in deze sectie](steps-validating-the-delivery.md).
+De stappen voor het bevestigen van een levering worden voorgesteld [ in deze sectie ](steps-validating-the-delivery.md).
 
 ## Inboxrendering {#inbox-and-email-rendering}
 
 Met Postvak-rendering kunt u uw berichten voorvertonen bij belangrijke e-mailclients, inhoud en reputatie scannen en ontdekken hoe ontvangers berichten lezen.
 
-**Tips**:
+**Uiteinden**:
 
 * U kunt het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen: webmail, berichtservice, mobiel enzovoort.
 
 * Rendermogelijkheden in postvakken zijn van cruciaal belang om te bepalen of uw e-mailcampagnes erin slagen het voorbij de filters van belangrijke ISP&#39;s (Internet Service Providers) en webmailservices te maken. Dergelijke hulpmiddelen verzenden een pre-vlucht exemplaar van een e-mail naar een netwerk van testinboxes, zodat kunt u zien hoe het bericht, over deze diensten zal tonen of teruggeven. Ze kunnen ook rapporten en opties voor codecorrectie bevatten die u helpen snel oplossingen te vinden en te maken die de leesbaarheid verbeteren.
 
-Meer informatie [in deze sectie](inbox-rendering.md).
+Leer meer [ in deze sectie ](inbox-rendering.md).
 
 ## Proefberichten {#proof-messages}
 
 Door proefdrukken te verzenden, kunt u de koppeling om te weigeren controleren, de pagina spiegelen en andere koppelingen controleren, het bericht valideren, controleren of afbeeldingen worden weergegeven, mogelijke fouten opsporen, enz. Mogelijk wilt u ook uw ontwerp en rendering op verschillende apparaten controleren.
 
-Meer informatie [in deze sectie](steps-validating-the-delivery.md#sending-a-proof).
+Leer meer [ in deze sectie ](steps-validating-the-delivery.md#sending-a-proof).
 
 ## A/B-testleveringen instellen {#a-b-testing-deliveries}
 
 Als u meerdere inhoud voor een e-maillevering hebt, kunt u A/B-tests gebruiken om na te gaan welke versie de grootste invloed heeft op de doelpopulatie.
 
-**Tips**:
+**Uiteinden**:
 
 * Verschillende versies naar sommige ontvangers verzenden
 
 * Selecteer het bestand met de hoogste successnelheid en stuur het naar de rest van het doel
 
-Meer informatie [in deze sectie](get-started-a-b-testing.md).
+Leer meer [ in deze sectie ](get-started-a-b-testing.md).
 
 ## Controleer of je bericht is bezorgd {#make-sure-your-message-is-delivered}
 
@@ -63,19 +65,19 @@ Als laatste stap maximaliseert u uw kansen en gebruikt u de kracht van Adobe Cam
 
 ### Een validatieproces doorlopen
 
-U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledig toezicht en controle op de verschillende processen van de campagne: gericht op, inhoud, begroting, extractie en het verzenden van bewijzen. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Meer informatie [in deze sectie](../../campaign/using/marketing-campaign-approval.md).
+U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledig toezicht en controle op de verschillende processen van de campagne: gericht op, inhoud, begroting, extractie en het verzenden van bewijzen. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Leer meer [ in deze sectie ](../../campaign/using/marketing-campaign-approval.md).
 
 ### Golven gebruiken
 
-U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt u dat uw berichten als spam worden gemarkeerd of dat u het aantal berichten per dag wilt beperken. Met golven kunt u leveringen in verschillende batches verdelen in plaats van tegelijkertijd grote volumes berichten te verzenden. Meer informatie [in deze sectie](steps-sending-the-delivery.md#sending-using-multiple-waves).
+U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt u dat uw berichten als spam worden gemarkeerd of dat u het aantal berichten per dag wilt beperken. Met golven kunt u leveringen in verschillende batches verdelen in plaats van tegelijkertijd grote volumes berichten te verzenden. Leer meer [ in deze sectie ](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Prioriteitsberichten
 
 U kunt de verzendende orde voor uw leveringen plaatsen door het prioritaire niveau te verklaren. Dit doet u als volgt:
 
-1. Bewerk de leveringseigenschappen en selecteer de **[!UICONTROL Delivery]** tab.
+1. Bewerk de leveringseigenschappen en selecteer de tab **[!UICONTROL Delivery]** .
 
-1. Het prioriteitsniveau voor levering op schaal bepalen van **[!UICONTROL Very low]** tot **[!UICONTROL Very high]**.
+1. Definieer het prioriteitsniveau voor de levering op een schaal van **[!UICONTROL Very low]** tot **[!UICONTROL Very high]** .
 
 >[!NOTE]
 >
@@ -91,11 +93,11 @@ U kunt:
 
 * Voor elk element IPAffinity, verklaar de IP adressen die kunnen worden gebruikt. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In de [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keuze gebruikt u de **[!UICONTROL Managing affinities with IP addresses]** veld voor het koppelen van leveringen aan de bezorgserver (MTA) die de opgegeven affiniteit beheert. [Meer informatie](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In de [ typologie ](../../campaign-opt/using/about-campaign-typologies.md) van uw keus, gebruik het **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die genoemde affiniteit beheert. [Meer informatie](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Zodra e-mail wordt verzonden, controleer de kopbal om te verifiëren welk IP adres de levering van werd verzonden. De e-mailbeheerder moet u helpen de koptekstgegevens op te halen.
 
-* Voor SMS-leveringen moet u ervoor zorgen dat het SMS-kanaal een specifieke affiniteit heeft die beperkt is tot **één** toepassingsservercontainer. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Voor de leveringen van SMS, zorg ervoor dat het kanaal van SMS een specifieke affiniteit heeft die tot **wordt beperkt één** container van de toepassingsserver. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
@@ -103,7 +105,7 @@ U kunt:
 
 ### Typologieën gebruiken
 
-U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer informatie [in dit voorbeeld](../../campaign-opt/using/filtering-rules.md).
+U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Leer meer [ in dit voorbeeld ](../../campaign-opt/using/filtering-rules.md).
 
 ### Bijlagen voorkomen
 
