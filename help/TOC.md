@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 100%
+source-wordcount: '2562'
+ht-degree: 99%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
       + [Content van direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
    + Leveringssjablonen gebruiken {#using-delivery-templates}
-      + [Sjablonen](delivery/using/about-templates.md)
+      + [Werken met leveringssjablonen](delivery/using/about-templates.md)
       + [Een leveringssjabloon maken](delivery/using/creating-a-delivery-template.md)
       + [Een targettoewijzing selecteren](delivery/using/selecting-a-target-mapping.md)
       + [Een levering maken met een sjabloon](delivery/using/creating-a-delivery-from-a-template.md)
@@ -641,7 +641,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
