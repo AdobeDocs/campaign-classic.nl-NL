@@ -4,9 +4,9 @@ title: Audit trail
 description: Leer hoe u uw exemplaar kunt controleren met het Campagne Audit Trail
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
+source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Meer informatie over de functionaliteit van het audittrail vindt u in de Adobe Campaign v8-documentatie.
+>Ontdek meer over de functionaliteit van het spoor van de Controle in de [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 
