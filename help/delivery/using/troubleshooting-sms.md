@@ -5,9 +5,9 @@ description: Meer informatie over het oplossen van problemen met SMS-kanalen
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '3044'
 ht-degree: 0%
 
 ---
@@ -310,3 +310,30 @@ Het resultaat moet als volgt zijn:
 ```
 
 4 open verbindingen voor het sms proces en 2 per mta kind met 5 kinderen.
+
+## Verschil tussen leveringsstatussen van SMS
+
+Om de verschillen tussen de **Verzonden** te verduidelijken, **Verzonden naar de Leverancier** en **Ontvangen op Mobiele** statussen, verwijs naar de gedetailleerde hieronder definities:
+
+* **die op Mobiel** wordt ontvangen:
+Het bericht is met succes geleverd aan het apparaat van de gebruiker, met bevestiging die door zowel de Mobiele Beëindigde (MT) levering als een Rapport van de Status (SR) wordt verstrekt.
+
+* **Verzonden**:
+Het bericht is verwerkt via de stap Mobile Terminated (MT), maar er is nog geen statusrapport (SR) ontvangen dat de levering aan het mobiele apparaat bevestigt.
+
+* **Verzonden naar de Leverancier**:
+Het bericht is naar de provider verzonden via `SUBMIT_SM command` , maar er is geen `SUBMIT_SM_RESP` bevestiging ontvangen van de provider.
+
+De berichten kunnen in de **Verzonden** status blijven omdat de overgang aan **Ontvangen** van een Rapport van de Status (SR) van het apparaat van de gebruiker afhangt. Als de gebruiker slechte celontvangst of andere connectiviteitskwesties heeft, kunnen zij niet het bericht onmiddellijk ontvangen. In dergelijke gevallen is het de verantwoordelijkheid van de leverancier om de levering opnieuw te proberen of uit te leggen waarom er geen SR is gegenereerd. Als de leverancier om het even welke discrepanties identificeert, moeten zij ervoor zorgen het gedrag van Campaign met verwachtingen verenigbaar was.
+
+Hier volgen de standaardleveringsstatussen van SMS:
+
+* **Hangende**: Het bericht is nog niet verzonden naar de aggregator.
+
+* **in overweging genomen door Leverancier**: Het bericht is verzonden naar de aggregator, en de aggregator heeft ontvangstbewijs bevestigd.
+
+* **Verzonden**: De aggregator heeft bevestigd dat het bericht met succes aan het mobiele netwerk van de gebruiker zonder enige directe fout is geduwd.
+
+* **Ontvangen op Mobiel**: Het mobiele apparaat van de gebruiker heeft ontvangstbewijs erkend, en dit is geverifieerd door de aggregator.
+
+* **Ontbroken**: Het bericht werd verzonden naar de aggregator, die probeerde levering aan het mobiele apparaat van de gebruiker voor een bepaalde periode (b.v., verscheidene uren). De levering is uiteindelijk mislukt als gevolg van netwerkproblemen, de onbeschikbaarheid van het gebruikersapparaat of andere oorzaken.
