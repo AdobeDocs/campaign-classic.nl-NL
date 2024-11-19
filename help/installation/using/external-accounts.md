@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 8180f77c2824f9b54ae3c924b1cc45532675cf85
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1784'
 ht-degree: 7%
 
 ---
@@ -100,6 +100,8 @@ Om POP3 extern te vormen gebruikend **Microsoft OAuth 2.0**, controleer de **[!U
 * **[!UICONTROL Azure Redirect URL]**
 
   Redirect URL kan in het **menu van de Authentificatie** van uw toepassing in het Azure portaal worden gevonden. Deze moet eindigen met de volgende syntaxis `nl/jsp/oauth.jsp`, bijvoorbeeld `https://redirect.adobe.net/nl/jsp/oauth.jsp` .
+
+Internettoegang is nodig om de knop **[!UICONTROL Test Connection]** in de clientconsole in te stellen en te gebruiken. Na installatie kan het InMail-proces zonder internet communiceren met Microsoft-servers.
 
 Nadat u de verschillende referenties hebt ingevoerd, kunt u op **[!UICONTROL Setup the connection]** klikken om de configuratie van uw externe account te voltooien.
 
