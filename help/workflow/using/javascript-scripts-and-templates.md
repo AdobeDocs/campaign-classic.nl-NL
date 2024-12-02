@@ -4,7 +4,7 @@ title: JavaScript-scripts en -sjablonen
 description: JavaScript-scripts en -sjablonen
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 1%
@@ -159,7 +159,7 @@ Dit voorbeeld toont aan dat de activiteit na **Code van JavaScript** tot de inst
 
 Nadat u een instantievariabele hebt opgegeven in een activiteit, kunt u deze opnieuw gebruiken in een workflowquery.
 
-Aldus, om een veranderlijke **instance.vars.xxx te roepen = &quot;yyy&quot;** in een filter, ga **$ (instantie/vars/xxx)** in.
+Aldus, om een veranderlijke **instance.vars.xxx te roepen = &quot;yyy&quot;** in een filter, ga **$ (instantie/vars/@xxx)** in.
 
 Bijvoorbeeld:
 
