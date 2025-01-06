@@ -5,7 +5,7 @@ description: Leer hoe u met schema's werkt en breid het conceptuele gegevensmode
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Gegevensmodel Campaign Classic](about-data-model.md).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [ model van de gegevens van het Campaign Classic ](about-data-model.md).
 
-In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
+In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een document van XML verbonden aan een gegevensbestandlijst. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 
 * De naam van de tabel
 * Velden
@@ -43,9 +43,9 @@ In de volgende afbeelding ziet u de locatie van schema&#39;s in het Adobe Campai
 
 ## Syntaxis van schema&#39;s {#syntax-of-schemas}
 
-Het hoofdelement van het schema is **`<srcschema>`**. Het bevat de **`<element>`** en **`<attribute>`** subelementen.
+Het hoofdelement van het schema is **`<srcschema>`** . Het bevat de subelementen **`<element>`** en **`<attribute>`** .
 
-De eerste **`<element>`** het subelement samenvalt met de hoofdmap van de entiteit.
+Het eerste subelement **`<element>`** valt samen met de hoofdmap van de entiteit.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -65,21 +65,21 @@ De eerste **`<element>`** het subelement samenvalt met de hoofdmap van de entite
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-De **`<element>`** -tags definiëren de namen van entiteitselementen. **`<attribute>`** de labels van het schema definiëren de namen van de kenmerken in het **`<element>`** tags waaraan zij zijn gekoppeld.
+Met de tags **`<element>`** worden de namen van entiteitelementen gedefinieerd. **`<attribute>`** -tags van het schema definiëren de namen van de kenmerken in de **`<element>`** -tags waaraan ze zijn gekoppeld.
 
 ## Identificatie van een schema {#identification-of-a-schema}
 
 Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
-Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld de **cus** namespace wordt gebruikt voor klant-specifieke configuratie (**klanten**).
+Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld, wordt **focus** namespace gebruikt voor klant-specifieke configuratie (**klanten**).
 
-De identificatiesleutel van een schema is een tekenreeks die is samengesteld met behulp van de naamruimte en de naam gescheiden door een dubbele punt, bijvoorbeeld: **focus:ontvanger**.
+De identificatiesleutel van een schema is een koord dat wordt gebouwd gebruikend namespace en de naam die door een dubbelpunt wordt gescheiden; bijvoorbeeld: **concentreert:ontvanger**.
 
 >[!IMPORTANT]
 >
->De naam van de naamruimte moet beknopt zijn en mag alleen toegestane tekens bevatten in overeenstemming met de XML-naamgevingsregels.
+>* De naam van de naamruimte moet beknopt zijn en mag alleen toegestane tekens bevatten in overeenstemming met de XML-naamgevingsregels.
 >
->Id&#39;s mogen niet beginnen met numerieke tekens.
+>* Id&#39;s mogen niet beginnen met numerieke tekens.
 >
->De volgende naamruimten zijn gereserveerd voor beschrijvingen van de systeementiteiten die vereist zijn voor de werking van de Adobe Campaign-toepassing en mogen niet worden gebruikt: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
-
+>* De volgende namespaces zijn gereserveerd voor beschrijvingen van de systeementiteiten die voor de verrichting van de toepassing van Adobe Campaign worden vereist en moeten niet worden gebruikt: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>
