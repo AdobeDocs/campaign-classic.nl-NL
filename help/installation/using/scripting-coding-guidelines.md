@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Scripts
 
-Raadpleeg voor meer informatie [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+Voor meer details, verwijs naar [ documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 Als u een script maakt met behulp van workflow, webtoepassingen of jssp, volgt u de volgende aanbevolen procedures:
 
@@ -55,9 +55,9 @@ Om SQL-injecties te voorkomen, moeten SQL-functies worden toegevoegd aan de lijs
 
 >[!IMPORTANT]
 >
->Als u een build gebruikt die ouder is dan 8140, wordt **XtkPassUnknownSQLFunctionsToRDBMS** kan worden ingesteld op &#39;1&#39;. Als u uw database wilt beveiligen, verwijdert u deze optie (of stelt u deze in op &#39;0&#39;).
+>Als u een bouwstijl gebruikt die ouder is dan 8140, zou de **optie XtkPassUnknownSQLFunctionsToRDBMS** aan &quot;1&quot;kunnen worden geplaatst. Als u uw database wilt beveiligen, verwijdert u deze optie (of stelt u deze in op &#39;0&#39;).
 
-Als u gebruikersinvoer gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - gegevensbescherming: ontsnappingsfuncties). Deze functies zijn:
+Als u gebruikersinput gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - de bescherming van Gegevens: het ontsnappen van functies). Deze functies zijn:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -77,7 +77,7 @@ Raadpleeg de volgende pagina&#39;s:
 
 Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruiken om de acties van de operator te beperken:
 
-* U kunt sommige systeemfilters (sysFilter) toevoegen om lezing/het schrijven aan uw gegevens te verhinderen (zie [deze pagina](../../configuration/using/filtering-schemas.md)).
+* U kunt sommige systeemfilters (sysFilter) toevoegen om het lezen/het schrijven aan uw gegevens (zie [ te verhinderen deze pagina ](../../configuration/using/filtering-schemas.md)).
 
   ```
   <sysFilter name="writeAccess">    
@@ -85,7 +85,7 @@ Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruik
   </sysFilter>
   ```
 
-* U kunt ook bepaalde acties (SOAP-methode) beschermen die in schema&#39;s zijn gedefinieerd. Plaats enkel het toegangsattribuut met het overeenkomstige genoemde recht als waarde.
+* U kunt ook bepaalde acties (SOAP methode) beschermen die in schema&#39;s zijn gedefinieerd. Plaats enkel het toegangsattribuut met het overeenkomstige genoemde recht als waarde.
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -105,23 +105,23 @@ Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruik
 
 Als u vertrouwelijke gegevens (deel van een schema) afhankelijk van het niveau van de exploitanttoegang moet beschermen, verberg hen niet in de vormdefinitie (enabledIf/visibleIf voorwaarden).
 
-De volledige entiteit wordt geladen door het scherm, kunt u hen in kolomdefinitie ook tonen. Hiervoor moet u een overlooptabel maken. Vernieuwen [deze pagina](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+De volledige entiteit wordt geladen door het scherm, kunt u hen in kolomdefinitie ook tonen. Hiervoor moet u een overlooptabel maken. Verwijs [ deze pagina ](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Bijschriften toevoegen in webtoepassingen
 
 Het is aan te raden een Captcha toe te voegen op openbare aanlandingspagina&#39;s/abonnementspagina&#39;s. Helaas is het niet eenvoudig om een captcha toe te voegen aan DCE-pagina&#39;s (Digital Content Editor). We tonen u hoe u een v5-captcha of een Google reCAPTCHA toevoegt.
 
-De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U moet een **Script** en **Testen**.
+De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U zult a **activiteit 0} van het Manuscript {en a** Test **moeten toevoegen.**
 
-### Personalisatieblok
+### Personalization-blok
 
-1. Ga naar **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** en een nieuwe te maken.
+1. Ga naar **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** en maak een nieuwe.
 
-1. Gebruik de **[!UICONTROL Web application]** inhoudstype en controle **[!UICONTROL Visible in the customization menus]**.
+1. Gebruik het inhoudstype **[!UICONTROL Web application]** en controleer **[!UICONTROL Visible in the customization menus]** .
 
    Raadpleeg [deze sectie](../../delivery/using/personalization-blocks.md) voor meer informatie.
 
-   Hier is een voorbeeld van een **Campagne captcha**:
+   Hier is een voorbeeld van a **Campagne captcha**:
 
    ```javascript
    <%
@@ -148,27 +148,27 @@ De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkings
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   U zou de bevestigingsknoop moeten kunnen onbruikbaar maken, maar aangezien wij geen standaardknoop/verbinding hebben, is het beter om het in de HTML zelf te doen. Als u wilt weten hoe u dit kunt doen, raadpleegt u [deze pagina](https://developers.google.com/recaptcha/).
+   U zou de bevestigingsknoop moeten kunnen onbruikbaar maken, maar aangezien wij geen standaardknoop/verbinding hebben, is het beter om het in de HTML zelf te doen. Leren hoe te om het te doen, verwijs naar [ deze pagina ](https://developers.google.com/recaptcha/).
 
 ### De webtoepassing bijwerken
 
-1. Open de eigenschappen van uw webtoepassing om een Booleaanse variabele met de naam **captchaValid**.
+1. Heb toegang tot de eigenschappen van uw Webtoepassing om een booleaanse variabele toe te voegen genoemd **captchaValid**.
 
    ![](assets/scripting-captcha.png)
 
-1. Tussen de laatste pagina en de **[!UICONTROL Storage]** activiteit, voeg een **[!UICONTROL Script]** en **[!UICONTROL Test]**.
+1. Voeg tussen de laatste pagina en de **[!UICONTROL Storage]** -activiteit een **[!UICONTROL Script]** en een **[!UICONTROL Test]** toe.
 
-   Sluit de vertakking aan **[!UICONTROL True]** aan de **[!UICONTROL Storage]** en de andere pagina die het captcha zal hebben.
+   Sluit de vertakking **[!UICONTROL True]** aan op de **[!UICONTROL Storage]** en de andere op de pagina die de captcha zal hebben.
 
    ![](assets/scripting-captcha2.png)
 
-1. Bewerk de voorwaarde van de vertakking Waar met `"[vars/captchaValid]"` is True.
+1. Bewerk de voorwaarde van de vertakking Waar met `"[vars/captchaValid]"` is gelijk aan Waar.
 
    ![](assets/scripting-captcha3.png)
 
-1. Bewerk de **[!UICONTROL Script]** activiteit. De inhoud is afhankelijk van de gekozen captcha-engine.
+1. Bewerk de **[!UICONTROL Script]** -activiteit. De inhoud is afhankelijk van de gekozen captcha-engine.
 
-1. Tot slot kunt u uw gepersonaliseerde blok in de pagina toevoegen: verwijs naar [deze pagina](../../web/using/editing-content.md).
+1. Tot slot kunt u uw gepersonaliseerd blok in de pagina toevoegen: verwijs naar [ deze pagina ](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -200,7 +200,7 @@ Regel 6: u kunt om het even welk soort foutenmelding zetten.
 
 ### Google recaptcha
 
-Raadpleeg de [officiële documentatie](https://developers.google.com/recaptcha/docs/verify).
+Gelieve te verwijzen naar de [ officiële documentatie ](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

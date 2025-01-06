@@ -3,7 +3,7 @@ title: De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken
 description: Leer hoe u de samenvoegfunctionaliteit van de deduplicatieactiviteit gebruikt
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 2%
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 ## Over dit gebruiksscenario {#about-this-use-case}
 
-In dit gebruiksgeval wordt beschreven hoe u het **[!UICONTROL Merge]** in de **[!UICONTROL Deduplication]** activiteit.
+In dit geval wordt beschreven hoe u de functie **[!UICONTROL Merge]** in de **[!UICONTROL Deduplication]** -activiteit kunt gebruiken.
 
-Raadpleeg voor meer informatie over deze functionaliteit [deze sectie](deduplication.md#merging-fields-into-single-record).
+Voor meer informatie over deze functionaliteit, verwijs naar [ deze sectie ](deduplication.md#merging-fields-into-single-record).
 
-De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensreeks. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
+De **[!UICONTROL Deduplication]** -activiteit wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensset. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|
@@ -28,24 +28,24 @@ De **[!UICONTROL Deduplication]** activiteit wordt gebruikt voor het verwijderen
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
 | 03-10-2020 | Bob |  | bob@mycompany.com | | 888-888-888 |
 
-Met de deduplicatieactiviteit **[!UICONTROL Merge]** Als lettertypen kunt u een set regels voor deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
+Met de **[!UICONTROL Merge]** -fonctionaliteit van de deduplicatieactiviteit kunt u een set regels voor de deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één resulterend gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
 ## De functie Samenvoegen activeren {#activating-merge}
 
 
-Om de samenvoegfunctionaliteit toe te laten, moet u eerst vormen **[!UICONTROL Deduplication]** activiteit. Ga als volgt te werk om dit te doen:
+Als u de samenvoegfunctionaliteit wilt inschakelen, moet u eerst de **[!UICONTROL Deduplication]** -activiteit configureren. Ga als volgt te werk om dit te doen:
 
-1. Open de activiteit en klik vervolgens op de knop **[Configuratie bewerken]** koppeling.
+1. Open de activiteit, dan klik **[geef configuratie]** verbinding uit.
 
-1. Selecteer het afstemmingsveld dat u wilt gebruiken voor de deduplicatie en klik op **[!UICONTROL Next]**. In dit voorbeeld willen we dedupliceren op basis van het e-mailveld.
+1. Selecteer het afstemmingsveld dat u voor de deduplicatie wilt gebruiken en klik op **[!UICONTROL Next]** . In dit voorbeeld willen we dedupliceren op basis van het e-mailveld.
 
    ![](assets/uc_merge_edit.png)
 
-1. Klik op de knop **[!UICONTROL Advanced parameters]** koppeling, activeer vervolgens de koppeling **[!UICONTROL Merge records]** en **[!UICONTROL Use several record merging criteria]** opties.
+1. Klik op de koppeling **[!UICONTROL Advanced parameters]** en activeer vervolgens de opties **[!UICONTROL Merge records]** en **[!UICONTROL Use several record merging criteria]** .
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. De **[!UICONTROL Merge]** wordt toegevoegd aan de **[!UICONTROL Deduplication]** configuratiescherm. Dit tabblad wordt gebruikt om de gegevens op te geven die moeten worden samengevoegd bij het uitvoeren van deduplicatie.
+1. Het tabblad **[!UICONTROL Merge]** wordt toegevoegd aan het configuratiescherm van **[!UICONTROL Deduplication]** . Dit tabblad wordt gebruikt om de gegevens op te geven die moeten worden samengevoegd bij het uitvoeren van deduplicatie.
 
 ## Samenvoegen van velden configureren {#configuring-rules}
 
@@ -58,7 +58,7 @@ Hier volgen de regels die we willen gebruiken om de gegevens samen te voegen tot
 
 Voer de volgende stappen uit om deze regels te configureren:
 
-1. Open de **[!UICONTROL Merge]** en klikt u op de knop **[!UICONTROL Add]** knop.
+1. Open het tabblad **[!UICONTROL Merge]** en klik op de knop **[!UICONTROL Add]** .
 
    ![](assets/uc_merge_add.png)
 
@@ -88,7 +88,7 @@ Voer de volgende stappen uit om deze regels te configureren:
 
 ## Resultaten {#results}
 
-Na het vormen van deze regels, worden de volgende gegevens ontvangen aan het eind van **[!UICONTROL Deduplication]** activiteit.
+Nadat u deze regels hebt geconfigureerd, worden de volgende gegevens ontvangen aan het einde van de **[!UICONTROL Deduplication]** -activiteit.
 
 | Wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
 |-----|------------|-----------|-------|--------------|------|

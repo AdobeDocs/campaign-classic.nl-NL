@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 10%
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 
 
-U kunt [workflows gebruiken](#use-workflows) om ontvangersprofielen te importeren of te exporteren naar de Adobe Campaign-database of om deze in te stellen [generieke import - exportbanen](#create-jobs).
+U kunt [ werkschema&#39;s ](#use-workflows) gebruiken om ontvangende profielen in het gegevensbestand van Adobe Campaign in te voeren of uit te voeren, of opstelling [ generische invoer of de uitvoerbanen ](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#import-profiles-video)
 
@@ -26,11 +26,11 @@ U kunt [workflows gebruiken](#use-workflows) om ontvangersprofielen te importere
 
 Exporteren en importeren worden geconfigureerd in speciale sjablonen die via workflows via import- en exportactiviteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. [Meer informatie](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-Indien nodig kunt u een incidentele import- of exporttaak maken via de **[!UICONTROL Generic imports and exports]** hieronder beschreven functie.
+Indien nodig kunt u een incidentele import- of exporttaak maken via de hieronder beschreven functie **[!UICONTROL Generic imports and exports]** .
 
 ## Taken maken{#create-jobs}
 
-Ga naar de **[!UICONTROL Profiles and targets]** en klik op de knop **[!UICONTROL Jobs]** koppeling. [Meer informatie](../../platform/using/about-generic-imports-exports.md)
+Als u taken voor het importeren en exporteren van gegevens wilt configureren en uitvoeren, gaat u naar het tabblad **[!UICONTROL Profiles and targets]** en klikt u op de koppeling **[!UICONTROL Jobs]** . [Meer informatie](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -41,4 +41,4 @@ In deze video wordt uitgelegd hoe u profielen in Adobe Campaign kunt importeren,
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

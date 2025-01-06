@@ -4,7 +4,7 @@ title: Een workflow starten
 description: Leer hoe u een workflow start en werkstroomhandelingen ontdekt op de werkbalk en met de rechtermuisknop op het menu klikt
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Een workflow wordt altijd handmatig gestart. Wanneer begonnen, kan het echter inactief afhankelijk van de informatie blijven die via een planner wordt gespecificeerd (zie [ Planner ](scheduler.md)) of activiteit die plannen.
 
-Acties die betrekking hebben op het uitvoeren van de workflow (starten, stoppen, pauzeren, enz.) zijn **asynchrone** processen: de orde wordt geregistreerd en zal van kracht zijn zodra de server beschikbaar is om het toe te passen.
+De acties met betrekking tot het richten van werkschemauitvoering (lancering, einde, pauze, enz.) zijn **asynchrone** processen: de orde wordt geregistreerd en zal van kracht zijn zodra de server beschikbaar is om het toe te passen.
 
 Met de werkbalk kunt u de uitvoering van de workflow starten en volgen.
 
@@ -81,7 +81,7 @@ De toolbarknopen zijn gedetailleerd in deze [ sectie ](../../campaign/using/mark
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Met deze optie kunt u de workflow starten in de simulatiemodus in plaats van in de echte modus. Dit betekent dat wanneer u deze modus inschakelt, alleen activiteiten worden uitgevoerd die geen invloed hebben op de database of het bestandssysteem (bijvoorbeeld **[!UICONTROL Query]** , **[!UICONTROL Union]** , **[!UICONTROL Intersection]** , enz.). Activiteiten die wel van invloed zijn (bijvoorbeeld **[!UICONTROL Export]** , **[!UICONTROL Import]** , enz.) en de volgende opdrachten (in dezelfde vertakking) niet worden uitgevoerd.
+  Met deze optie kunt u de workflow starten in de simulatiemodus in plaats van in de echte modus. Dit betekent dat wanneer u deze modus inschakelt, alleen activiteiten worden uitgevoerd die geen invloed hebben op de database of het bestandssysteem (bijvoorbeeld **[!UICONTROL Query]** , **[!UICONTROL Union]** , **[!UICONTROL Intersection]** , enz.). Activiteiten die wel van invloed zijn (bijvoorbeeld **[!UICONTROL Export]** , **[!UICONTROL Import]** , enz.), en activiteiten die erna plaatsvinden (in dezelfde vertakking), worden niet uitgevoerd.
 
 * **[!UICONTROL Execute pending tasks now]**
 

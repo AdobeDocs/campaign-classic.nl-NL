@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2987'
 ht-degree: 7%
@@ -241,7 +241,7 @@ Synchroon, als APNs een &quot;unregistered&quot;status voor een bericht terugkee
    <td> Nee<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certificaatafgifte (wachtwoord, beschadiging, enz.) en testverbinding met APNs kwestie <br /> </td> 
+   <td> Certificaatprobleem (wachtwoord, beschadiging, enz.) en testverbinding met APNs-uitgave <br /> </td> 
    <td> Fout <br /> </td> 
    <td> Diverse foutenmeldingen volgens de fout <br /> </td> 
    <td> Zacht <br /> </td> 

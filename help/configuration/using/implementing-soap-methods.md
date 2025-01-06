@@ -5,37 +5,37 @@ description: SOAP-methoden implementeren
 feature: Configuration
 role: Data Engineer, Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 2%
 
 ---
 
-# SOAP-methoden implementeren{#implementing-soap-methods}
+# SOAP implementeren{#implementing-soap-methods}
 
 
 
 ## Inleiding {#introduction}
 
-U kunt SOAP-methoden maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
+Het is mogelijk SOAP methoden te maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
 
-Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen-toets en const.
+Deze SOAP werken op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen-toets en const.
 
 ## Een methodebibliotheek definiëren {#defining-a-method-library}
 
 Het maken van een methodebibliotheek bestaat uit twee fasen:
 
-* de SOAP-methodedeclaratie,
+* de declaratie van de SOAP methode;
 * Definitie (of implementatie) in JavaScript.
 
 ### Verklaring {#declaration}
 
-Begin door de methodes in de schema&#39;s te verklaren (voor meer op om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [deze sectie](../../configuration/using/about-schema-edition.md)).
+Begin door de methodes in de schema&#39;s (voor meer op te verklaren om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [ deze sectie ](../../configuration/using/about-schema-edition.md)).
 
 Hun verklaring is gelijkaardig aan die van inheemse methodes, behalve dat moet u het attribuut &quot;bibliotheek&quot;toevoegen die de naam van de methodebibliotheek specificeren waar de definitie wordt gevestigd.
 
-Deze naam valt samen met de naam (met de naamruimte) van de entiteit van het type &#39;JavaScript Code&#39;.
+Deze naam valt samen met de naam (met de naamruimte) van het type &#39;JavaScript Code&#39;.
 
 Voorbeeld:
 
@@ -55,7 +55,7 @@ De methode testLog(msg) wordt gedeclareerd in een extensie nms:ontvanger
 
 ### Definitie {#definition}
 
-SOAP-methoden worden geïmplementeerd in de vorm van een JavaScript-functie gegroepeerd in een script dat een bibliotheek vertegenwoordigt.
+SOAP methoden worden geïmplementeerd in de vorm van een JavaScript-functie gegroepeerd in een script dat een bibliotheek vertegenwoordigt.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ De naam van de functie moet de volgende indeling hebben:
 
 Voorbeeld:
 
-De volgende JavaScript-functie is de implementatie van de hierboven beschreven methode. Deze wordt gedefinieerd in de entiteit van het type JavaScript Code met de naam &#39;cus:test&#39;.
+De volgende JavaScript-functie is de implementatie van de hierboven beschreven methode. Zij wordt in de entiteit van het type &quot;JavaScript Code&quot; gedefinieerd met de naam &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)
@@ -88,8 +88,8 @@ De handtekening van de functie moet een argument bevatten voor elke parameter &#
 
 Specifieke gevallen:
 
-* **niet-statische methoden**: de functie moet eerst een extra argument bevatten, dat samenvalt met de XML-entiteit die wordt doorgegeven in de vorm van een object van het type &#39;xml&#39; (E4X).
-* **Methoden van het type &quot;key only&quot;**: de functie moet eerst een aanvullend argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
+* **niet-statische methodes**: de functie moet een extra argument eerst omvatten, samenvallend met de entiteit van XML die in de vorm van een &quot;xml&quot;(E4X) typevoorwerp wordt overgegaan.
+* **&quot;sleutel slechts&quot;typemethodes**: de functie moet een extra argument eerst omvatten, die met de sleutel samenvalt die in de vorm van karakterkoorden wordt overgegaan.
 
 **3. Geretourneerde waarden**
 

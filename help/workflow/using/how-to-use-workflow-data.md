@@ -4,7 +4,7 @@ title: Werkstroomgegevens gebruiken
 description: Leer hoe u workflowgegevens gebruikt
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## De database bijwerken {#updating-the-database}
 
-Alle verzamelde gegevens kunnen worden gebruikt om de database bij te werken, of in leveringen. U kunt bijvoorbeeld de personalisatiemogelijkheden voor berichtinhoud verrijken (het aantal contracten in het bericht opnemen, het gemiddelde winkelwagentje van het afgelopen jaar opgeven, enzovoort) of een gedetailleerde bevolkingsgerichtheid (verzend een bericht aan contractmedehouders, richt de 1.000 beste abonnees aan online diensten, enz.). Deze gegevens kunnen ook worden geëxporteerd of gearchiveerd in een lijst.
+Alle verzamelde gegevens kunnen worden gebruikt om de database bij te werken, of in leveringen. U kunt bijvoorbeeld de personalisatiemogelijkheden voor berichtinhoud verruimen (bijvoorbeeld het aantal contracten in het bericht, het gemiddelde winkelwagentje in het afgelopen jaar specificeren, enz.) of de doelgroep specificeren (een bericht sturen naar contractdeelnemers, richten de 1.000 beste abonnees aan online diensten, enz.). Deze gegevens kunnen ook worden geëxporteerd of gearchiveerd in een lijst.
 
 ### Lijsten en directe updates {#lists-and-direct-updates}
 

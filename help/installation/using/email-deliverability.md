@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3094'
 ht-degree: 0%
@@ -25,34 +25,34 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Voor meer informatie over de verschillende implementaties raadpleegt u de [Hostmodellen](../../installation/using/hosting-models.md) van [deze pagina](../../installation/using/capability-matrix.md).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
 
-Raadpleeg voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid met Adobe Campaign het volgende [sectie](../../delivery/using/about-deliverability.md).
+Voor meer op de concepten en de beste praktijken met betrekking tot leverbaarheid met Adobe Campaign, verwijs naar dit [ sectie ](../../delivery/using/about-deliverability.md).
 
-Voor een diepgaandere analyse van de leverbaarbaarheid, met inbegrip van alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform, raadpleegt u de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Voor een diepere duik op welke leverbaarheid is, met inbegrip van alle technische aanbevelingen betreffende het efficiënte verzenden van en het ontvangen van e-mails door een platform van de Adobe, verwijs naar de [ Gids van de Beste praktijken van de Levering van de Adobe van de Levering van de Beste ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Werkwijze {#operating-principle}
 
-Het is mogelijk om de uitvoer van een of meer Adobe Campaign-instanties te beheren om het aantal verzonden e-mails te beperken, afhankelijk van een domein. U kunt de uitvoer bijvoorbeeld beperken tot 20.000 per uur voor **yahoo.com** adressen, terwijl het vormen van 100.000 berichten per uur voor alle andere domeinen.
+Het is mogelijk om de uitvoer van een of meer Adobe Campaign-instanties te beheren om het aantal verzonden e-mails te beperken, afhankelijk van een domein. Bijvoorbeeld, kunt u de output tot 20.000 per uur voor **yahoo.com** adressen beperken, terwijl het vormen van 100.000 berichten per uur voor alle andere domeinen.
 
-De output van het bericht moet voor elk IP adres worden gecontroleerd dat door de leveringsservers wordt gebruikt (**mta**). Meerdere **mta** Onderverdeeld over verscheidene machines en die tot verschillende instanties van Adobe Campaign behoren kunnen het zelfde IP adres voor e-maillevering delen: een proces moet opstelling zijn om het gebruik van deze IP adressen te coördineren.
+De output van het bericht moet voor elk IP adres worden gecontroleerd dat door de leveringsservers (**wordt gebruikt mta**). Verscheidene **mta** verdeeld over verscheidene machines en die tot diverse instanties behoren van Adobe Campaign kunnen het zelfde IP adres voor e-maillevering delen: een proces moet opstelling zijn om het gebruik van deze IP adressen te coördineren.
 
-Dit is wat **stat** doet het: het door:sturen alle verbindingsverzoeken en berichten die naar de postservers voor een reeks IP adressen moeten worden verzonden. De statistiekserver houdt leveringen bij en kan verzending op basis van ingestelde quota in- of uitschakelen.
+Dit is wat de **staat** module doet: het door:sturen alle verbindingsverzoeken en berichten die naar de postservers voor een reeks IP adressen moeten worden verzonden. De statistiekserver houdt leveringen bij en kan verzending op basis van ingestelde quota in- of uitschakelen.
 
 ![](assets/s_ncs_install_mta.png)
 
-* De statistische server (**stat**) is gekoppeld aan een Adobe Campaign-basis om de configuratie te laden.
-* De leveringsservers (**mta**) gebruikt u een UDP om contact op te nemen met een statistische server die niet altijd bij hun eigen instantie hoort.
+* De statistiekserver (**staat**) is verbonden met een basis van Adobe Campaign om zijn configuratie te laden.
+* De leveringsservers (**mta**) gebruiken UDP om een statistiekserver te contacteren die niet altijd tot hun eigen instantie behoort.
 
 ### Leveringsservers {#delivery-servers}
 
-De **mta** module verspreidt berichten aan zijn **mtachild** onderliggende modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden.
+De **mta** module verdeelt berichten aan zijn **mtachild** kindmodules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden.
 
 De stappen zijn als volgt:
 
-1. De **mta** selecteert in aanmerking komende berichten en wijst deze toe aan een beschikbare **mtachild**.
-1. De **mtachild** laadt alle informatie die nodig is voor het samenstellen van het bericht (inhoud, personalisatie-elementen, bijlagen, afbeeldingen, enz.) en stuurt het bericht door naar de **E-mailverkeer schalen**.
-1. Zodra de vormgever van het e-mailverkeer de vergunning van de statistiekserver (**smtp-status**), wordt het bericht verzonden naar de ontvanger.
+1. **mta** selecteert in aanmerking komende berichten en wijst hen een beschikbaar **mtachild** toe.
+1. **mtachild** laadt alle informatie die voor de bouw van het bericht (inhoud, verpersoonlijkingselementen, gehechtheid, beelden, enz.) wordt vereist en door:sturen het bericht aan de **Verkeer E-mailShaper**.
+1. Zodra de vormer van het e-mailverkeer de vergunning van de statistiekserver (**smtp staat**) ontvangt, wordt het bericht verzonden naar de ontvanger.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
@@ -77,35 +77,35 @@ De statistiekserver kan verscheidene instanties of verscheidene machines met het
 
 De statistieken van de levering worden gehouden voor elke doel MX en voor elke bronIP. Als het doeldomein bijvoorbeeld 5 MX heeft en het platform 3 verschillende IP-adressen kan gebruiken, kan de server maximaal 15 reeksen indicatoren voor dit domein beheren.
 
-Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door de verre e-mailserver wordt gezien. Dit IP adres kan van het adres van de machine verschillend zijn die gastheren **mta**, als een NATIONAAL router wordt verstrekt. Dit is waarom de statistiekserver een herkenningsteken gebruikt dat openbare IP (**publicId**). De koppeling tussen het lokale adres en deze id wordt gedeclareerd in het dialoogvenster **serverConf.xml** configuratiebestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door de verre e-mailserver wordt gezien. Dit IP adres kan van het adres van de machine verschillend zijn die gastheren **mta**, als een NATIONAAL router wordt verstrekt. Dit is waarom de statistiekserver een herkenningsteken gebruikt dat openbare IP (**publicId**) aanpast. De vereniging tussen het lokale adres en dit herkenningsteken wordt verklaard in het **serverConf.xml** configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
 ## Uitvoercontrole van levering {#delivery-output-controlling}
 
-Om berichten aan e-mailservers te leveren, **E-mailverkeer schalen** de component verzoekt om een verbinding van de statistiekenserver. Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
+Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0} E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
 
 Voordat de berichten worden verzonden, vraagt de module &#39;tokens&#39; van de server. Dit zijn over het algemeen reeksen van minstens 10 tokens, die het aantal vragen aan de server verminderen.
 
 De server slaat alle statistieken op met betrekking tot verbindingen en leveringen. In geval van het opnieuw opstarten, wordt de informatie tijdelijk verloren: elke cliënt houdt een lokaal exemplaar van hun verzendende statistieken bij en keert hen aan de server op regelmatige basis (om de 2 minuten) terug. De server kan de gegevens vervolgens opnieuw samenvoegen.
 
-In de volgende secties wordt de verwerking van een bericht door de **E-mailverkeer schalen** component.
+De volgende secties beschrijven de verwerking van een bericht door de **component van de Shapier van het Verkeer E-mail**.
 
 ### Berichtlevering {#message-delivery}
 
 Wanneer een bericht wordt verzonden, zijn er 3 mogelijke resultaten:
 
-1. **Succes**: het bericht is verzonden. Het bericht wordt bijgewerkt.
-1. **Bericht mislukt**: de gecontacteerde server verwierp het bericht voor de gekozen ontvanger. Dit resultaat komt overeen met de retourcodes 550 tot en met 599, maar er kunnen uitzonderingen worden gedefinieerd.
-1. **Sessie mislukt** (voor 5.11 naar boven): als de **mta** ontvangt een antwoord voor dit bericht, wordt het bericht verlaten (verwijs naar [Berichten verlaten](#message-abandonment)). Het bericht wordt naar een ander pad verzonden of ingesteld op In behandeling als er geen andere paden beschikbaar zijn (zie [Bericht in behandeling](#message-pending)).
+1. **Succes**: het bericht werd met succes verzonden. Het bericht wordt bijgewerkt.
+1. **Ontbroken Bericht**: De gecontacteerde server verwierp het bericht voor de gekozen ontvanger. Dit resultaat komt overeen met de retourcodes 550 tot en met 599, maar er kunnen uitzonderingen worden gedefinieerd.
+1. **Ontbroken Zitting** (voor 5.11): als **mta** een antwoord voor dit bericht ontvangt, wordt het bericht verlaten (verwijs naar [ Verlaten van het Bericht ](#message-abandonment)). Het bericht wordt verzonden naar een andere weg of geplaatst aan hangend als geen andere wegen beschikbaar zijn (verwijs naar [ Bestaand Bericht ](#message-pending)).
 
    >[!NOTE]
    >
-   >A **pad** is een verbinding tussen de Adobe Campaign **mta** en het doel **mta**. De Adobe Campaign **mta** kan van verscheidene beginIPs en verscheidene doeldomeinIPs kiezen.
+   >A **weg** is een verbinding tussen Adobe Campaign **mta** en het doel **mta**. De Adobe Campaign **mta** kan van verscheidene beginIPs en verscheidene doelIPs kiezen.
 
 ### Berichten verlaten {#message-abandonment}
 
-Verlaten berichten zijn teruggekeerd aan **mta** en niet meer door de **mtachild**.
+Verlaten berichten zijn teruggekeerd aan **mta** en niet meer door **mtachild** beheerd.
 
-De **mta** beslist over de procedure voor dit bericht (terugwinning, stopzetting, quarantaine, enz.) afhankelijk van de antwoordcode en de regels.
+**mta** beslist over de procedure voor dit bericht (terugwinning, beëindiging, quarantaine, enz.) afhankelijk van de reactiecode en de regels.
 
 ### Bericht in behandeling {#message-pending}
 
@@ -121,11 +121,11 @@ Begin door het gegevensbestand te bepalen van Adobe Campaign dat de configuratie
 
 ### Configuratie starten {#start-configuration}
 
-Standaard worden de **stat** wordt voor elke instantie gestart. Wanneer de instanties op de zelfde machine worden samengevoegd, of wanneer de instanties het zelfde IP adres delen, wordt één enkele statistiekserver gebruikt: de anderen moeten worden onbruikbaar gemaakt.
+Door gebrek, is de **staat** module begonnen voor elke instantie. Wanneer de instanties op de zelfde machine worden samengevoegd, of wanneer de instanties het zelfde IP adres delen, wordt één enkele statistiekserver gebruikt: de anderen moeten worden onbruikbaar gemaakt.
 
 ### Definitie van de serverpoort {#definition-of-the-server-port}
 
-Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden gewijzigd in het dialoogvenster **serverConf.xml** bestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Door gebrek, luistert de statistiekserver op haven 7777. Deze haven kan in het **serverConf.xml** dossier worden gewijzigd. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
 ```
 <stat port="1234"/>
@@ -135,7 +135,7 @@ Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden g
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)de **[!UICONTROL MX management]** de leveringsproductieregels worden niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** regels van de leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
 ### Informatie over MX-regels {#about-mx-rules}
 
@@ -214,34 +214,34 @@ Deze berichten worden zo snel mogelijk verzonden.
 
 ### MX-beheer configureren {#configuring-mx-management}
 
-De voor MX in acht te nemen regels zijn vastgelegd in de **[!UICONTROL MX management]** document van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** knooppunt van de structuur.
+De regels die voor MX moeten worden nageleefd, worden gedefinieerd in het **[!UICONTROL MX management]** -document van het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** -knooppunt van de boomstructuur.
 
-Als de **[!UICONTROL MX management]** Het document bestaat niet in het knooppunt. U kunt het handmatig maken. Dit doet u als volgt:
+Als het **[!UICONTROL MX management]** -document niet bestaat in het knooppunt, kunt u het handmatig maken. Dit doet u als volgt:
 
 1. Maak een nieuwe set regels voor e-mail.
-1. Kies de optie **[!UICONTROL MX management]** -modus.
+1. Kies de modus **[!UICONTROL MX management]** .
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
-1. Enter **defaultMXRules** in de **[!UICONTROL Internal name]** veld.
+1. Ga **defaultMXRules** op het **[!UICONTROL Internal name]** gebied in.
 
 Als u rekening wilt houden met wijzigingen, moet u de statistische server opnieuw starten.
 
-Om de configuratie opnieuw te laden zonder de statistiekenserver opnieuw te beginnen, gebruik het volgende bevel op de machine die gastheren de server: `nlserver stat -reload`
+Als u de configuratie opnieuw wilt laden zonder de statistische server opnieuw te starten, gebruikt u de volgende opdracht op de computer die de server host: `nlserver stat -reload`
 
 >[!NOTE]
 >
->Deze opdrachtregel heeft de voorkeur boven **opnieuw starten van server**. Zo wordt voorkomen dat statistische gegevens die zijn verzameld voordat het opnieuw opstarten verloren gaat en worden pieken in gebruik voorkomen die in strijd kunnen zijn met de quota die in de MX-regels zijn vastgelegd.
+>Deze bevellijn wordt verkiest aan **nlserver opnieuw beginnen**. Zo wordt voorkomen dat statistische gegevens die zijn verzameld voordat het opnieuw opstarten verloren gaat en worden pieken in gebruik voorkomen die in strijd kunnen zijn met de quota die in de MX-regels zijn vastgelegd.
 
 ### MX-regels configureren {#configuring-mx-rules}
 
-De **[!UICONTROL MX management]** In dit document worden alle domeinen weergegeven die aan een MX-regel zijn gekoppeld.
+In het **[!UICONTROL MX management]** -document worden alle domeinen weergegeven die aan een MX-regel zijn gekoppeld.
 
 Deze regels worden op volgorde toegepast: de eerste regel waarvan het MX-masker compatibel is met de beoogde MX wordt toegepast.
 
 De volgende parameters beschikbaar voor elke regel zijn:
 
-* **[!UICONTROL MX mask]**: domein waarop de regel wordt toegepast. Elke regel bepaalt een adresmasker voor MX. Elke MX waarvan de naam overeenkomt met dit masker is daarom in aanmerking. Het masker kan &quot;&#42;&quot; en &quot;?&quot; algemene tekens.
+* **[!UICONTROL MX mask]** : domein waarop de regel wordt toegepast. Elke regel bepaalt een adresmasker voor MX. Elke MX waarvan de naam overeenkomt met dit masker is daarom in aanmerking. Het masker kan &quot;&#42;&quot;en &quot; bevatten?&quot; algemene tekens.
 
   De volgende adressen zijn bijvoorbeeld:
 
@@ -251,7 +251,7 @@ De volgende parameters beschikbaar voor elke regel zijn:
 
   zijn compatibel met de volgende maskers:
 
-   * &#42;.yahoo.com
+   * &#42; .yahoo.com
    * ?.mx.yahoo.com
 
   Voor het e-mailadres foobar@gmail.com is het domein bijvoorbeeld gmail.com en de MX-record is:
@@ -264,43 +264,43 @@ De volgende parameters beschikbaar voor elke regel zijn:
   gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
   ```
 
-  In dit geval geldt de MX-regel `*.google.com` wordt gebruikt. Zoals u kunt zien, past het MX-regelmasker niet noodzakelijk het domein in de e-mail aan. De MX-regels die worden toegepast voor gmail.com-e-mailadressen zijn de regels met het masker `*.google.com`.
+  In dit geval wordt de MX-regel `*.google.com` gebruikt. Zoals u kunt zien, past het MX-regelmasker niet noodzakelijk het domein in de e-mail aan. De MX-regels die worden toegepast voor gmail.com-e-mailadressen zijn de regels met het masker `*.google.com` .
 
-* **[!UICONTROL Range of identifiers]**: met deze optie kunt u de bereiken van id&#39;s (publicID) aangeven waarvoor de regel geldt. U kunt het volgende opgeven:
+* **[!UICONTROL Range of identifiers]**: met deze optie kunt u de bereiken van id&#39;s (publicID) aangeven waarop de regel van toepassing is. U kunt het volgende opgeven:
 
    * Een getal: de regel is alleen van toepassing op deze publicId.
-   * Een reeks getallen (**number1-number2**): de regel geldt voor alle publicIds tussen deze twee getallen.
+   * Een waaier van aantallen (**number1-number2**): de regel zal op alle publicIds tussen deze twee aantallen van toepassing zijn.
 
   >[!NOTE]
   >
   >Als het veld leeg is, geldt de regel voor alle id&#39;s.
 
-  Een openbare identiteitskaart is een intern herkenningsteken van Openbare IP die door één of verscheidene MTAs wordt gebruikt. Deze id&#39;s worden gedefinieerd in de MTA-servers in de **config-instance.xml** bestand.
+  Een openbare identiteitskaart is een intern herkenningsteken van Openbare IP die door één of verscheidene MTAs wordt gebruikt. Deze IDs wordt bepaald in de servers MTA in het {**dossier 0} config-instance.xml.**
 
   ![](assets/s_ncs_install_mta_ips.png)
 
 * **[!UICONTROL Shared]**: definieert het bereik van de eigenschappen voor deze MX-regel. Wanneer gecontroleerd, worden alle parameters gedeeld op alle IPs beschikbaar op de instantie. Als deze optie uitgeschakeld is, worden de MX-regels voor elk IP gedefinieerd. Het maximumaantal berichten wordt vermenigvuldigd met het aantal beschikbare IPs.
 * **[!UICONTROL Maximum number of connections]**: maximumaantal gelijktijdige verbindingen met het domein van de afzender.
-* **[!UICONTROL Maximum number of messages]**: maximumaantal berichten dat via een verbinding kan worden verzonden. Wanneer de berichten dit aantal overschrijden, wordt de verbinding gesloten en nieuw geopend.
-* **[!UICONTROL Messages per hour]**: maximumaantal berichten dat in één uur naar het domein van de afzender kan worden verzonden.
-* **[!UICONTROL Connection time out]**: tijddrempel voor verbinding maken met een domein.
+* **[!UICONTROL Maximum number of messages]** : maximum aantal berichten dat via een verbinding kan worden verzonden. Wanneer de berichten dit aantal overschrijden, wordt de verbinding gesloten en nieuw geopend.
+* **[!UICONTROL Messages per hour]** : maximum aantal berichten dat in één uur naar het domein van de afzender kan worden verzonden.
+* **[!UICONTROL Connection time out]** : tijddrempel voor verbinding met een domein.
 
   >[!NOTE]
   >
-  >Windows kan een **timeout** vóór deze drempel, die afhankelijk is van uw versie van Windows.
+  >De vensters kunnen a **onderbreking** vóór deze drempel uitgeven, die van uw versie van Vensters afhangt.
 
-* **[!UICONTROL Timeout Data]**: maximumwachttijd na het verzenden van berichtinhoud (sectie DATA van het SMTP-protocol).
-* **[!UICONTROL Timeout]**: maximumwachttijd voor andere uitwisselingen met de server SMTP.
-* **[!UICONTROL TLS]**: Het TLS-protocol, waarmee u e-mailleveringen kunt coderen, kan selectief worden ingeschakeld. Voor elk MX-masker zijn de volgende opties beschikbaar:
+* **[!UICONTROL Timeout Data]**: maximale wachttijd na het verzenden van berichtinhoud (sectie DATA van het SMTP-protocol).
+* **[!UICONTROL Timeout]**: maximale wachttijd voor andere uitwisselingen met de SMTP-server.
+* **[!UICONTROL TLS]**: Het TLS-protocol, waarmee u e-mailleveringen kunt versleutelen, kan selectief worden ingeschakeld. Voor elk MX-masker zijn de volgende opties beschikbaar:
 
-   * **[!UICONTROL Default configuration]**: Dit is de algemene configuratie die is opgegeven in het configuratiebestand serverConf.xml dat wordt toegepast.
+   * **[!UICONTROL Default configuration]**: dit is de algemene configuratie die is opgegeven in het configuratiebestand serverConf.xml dat wordt toegepast.
 
      >[!IMPORTANT]
      >
      >Het wordt niet aanbevolen de standaardconfiguratie te wijzigen.
 
-   * **[!UICONTROL Disabled]** : De berichten worden systematisch zonder versleuteling verzonden.
-   * **[!UICONTROL Opportunistic]** : De levering van berichten wordt gecodeerd als de ontvangende server (SMTP) het TLS-protocol kan genereren.
+   * **[!UICONTROL Disabled]** : de berichten worden systematisch zonder versleuteling verzonden.
+   * **[!UICONTROL Opportunistic]** : de levering van berichten wordt gecodeerd als de ontvangende server (SMTP) het TLS-protocol kan genereren.
 
 Voorbeeld van configuratie:
 
@@ -308,30 +308,30 @@ Voorbeeld van configuratie:
 
 >[!NOTE]
 >
->Ga voor meer informatie over het gebruik van MX-servers met Adobe Campaign naar [deze sectie](../../installation/using/using-mx-servers.md).
+>Voor meer bij het gebruiken van MX servers met Adobe Campaign, zie [ deze sectie ](../../installation/using/using-mx-servers.md).
 
 ### E-mailindelingen beheren {#managing-email-formats}
 
 U kunt de indeling van verzonden berichten definiëren, zodat de weergegeven inhoud automatisch wordt aangepast aan het domein van het adres van elke ontvanger.
 
-Ga om dit te doen naar de **[!UICONTROL Management of email formats]** document, dat zich bevindt in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
+Hiervoor gaat u naar het **[!UICONTROL Management of email formats]** -document, dat zich bevindt in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]** .
 
-Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Raadpleeg voor meer informatie [dit document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Voor meer informatie, verwijs naar [ dit document ](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
-De **MIME-structuur** (Multipurpose Internet Mail Extensions) kunt u de berichtstructuur definiëren die naar de verschillende e-mailclients wordt verzonden. Er zijn drie opties beschikbaar:
+De **MIME structuur** (Multipurpose Internet Mail Extensions) parameter staat u toe om de berichtstructuur te bepalen die naar de verschillende postcliënten zal worden verzonden. Er zijn drie opties beschikbaar:
 
-* **Multipart**: Het bericht wordt verzonden in tekst of HTML formaat. Als de indeling HTML niet wordt geaccepteerd, kan het bericht nog steeds worden weergegeven in de tekstindeling.
+* **Multipart**: Het bericht wordt verzonden in tekst of formaat HTML. Als de indeling HTML niet wordt geaccepteerd, kan het bericht nog steeds worden weergegeven in de tekstindeling.
 
-  Standaard is de meerdelige structuur **multipart/alternatief**, maar het wordt automatisch **multipart/gerelateerd** wanneer een afbeelding aan het bericht wordt toegevoegd. Bepaalde leveranciers verwachten **multipart/gerelateerd** standaard de **[!UICONTROL Force multipart/related]** wordt deze indeling ook verplicht als er geen afbeelding is gekoppeld.
+  Door gebrek, is de multipart structuur **multipart/alternatief**, maar het wordt automatisch **multipart/related** wanneer een beeld aan het bericht wordt toegevoegd. Bepaalde leveranciers verwachten het **multipart/verwante** formaat door gebrek, legt de **[!UICONTROL Force multipart/related]** optie dit formaat voor zelfs als geen beeld in bijlage is.
 
-* **HTML**: Er wordt alleen een bericht met de naam HTML verzonden. Als de indeling HTML niet wordt geaccepteerd, wordt het bericht niet weergegeven.
-* **Tekst**: Er wordt een bericht in de indeling Alleen tekst verzonden. Het voordeel van tekstformaatberichten is hun zeer kleine grootte.
+* **HTML**: Een HTML slechts bericht wordt verzonden. Als de indeling HTML niet wordt geaccepteerd, wordt het bericht niet weergegeven.
+* **Tekst**: Een bericht in tekst slechts formaat wordt verzonden. Het voordeel van tekstformaatberichten is hun zeer kleine grootte.
 
-Als de **[!UICONTROL Image inclusion]** is ingeschakeld, worden deze rechtstreeks in de tekst van de e-mail weergegeven. De afbeeldingen worden vervolgens geüpload en de URL-koppelingen worden vervangen door de inhoud ervan.
+Als de optie **[!UICONTROL Image inclusion]** is ingeschakeld, worden deze rechtstreeks in de tekst van de e-mail weergegeven. De afbeeldingen worden vervolgens geüpload en de URL-koppelingen worden vervangen door de inhoud ervan.
 
-Deze optie wordt vooral gebruikt door de Japanse markt voor **Deco-mail**, **E-mail verwijderen** of **Decoration Mail**. Raadpleeg voor meer informatie [dit document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg [ dit document ](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 >[!IMPORTANT]
 >
@@ -345,9 +345,9 @@ De klokken van alle servers die het Adobe Campaign-platform (inclusief de databa
 
 ### Coördinaten van de statistiekserver {#coordinates-of-the-statistics-server}
 
-Het adres van de statistische server moet worden vermeld in het **mta**.
+Het adres van de statistiekserver moet in **worden verstrekt mta**.
 
-De **statServerAddress** eigendom van de **mta** het element van de configuratie laat u het adres en het aantal van de te gebruiken haven specificeren.
+Het **statServerAddress** bezit van het **mta** element van de configuratie laat u het adres en het aantal van de te gebruiken haven specificeren.
 
 ```
 <mta statServerAddress="emailStatServer:7777">
@@ -355,7 +355,7 @@ De **statServerAddress** eigendom van de **mta** het element van de configuratie
  </mta>
 ```
 
-Als u de statistische server op dezelfde computer wilt gebruiken, moet u ten minste de naam van de computer invoeren met de **localhost** waarde:
+Om de statistiekenserver op de zelfde machine te gebruiken, moet u minstens de naam van de machine met de **localhost** waarde ingaan:
 
 ```
  <mta statServerAddress="localhost">
@@ -363,13 +363,13 @@ Als u de statistische server op dezelfde computer wilt gebruiken, moet u ten min
 
 >[!IMPORTANT]
 >
->Als dit veld niet is gevuld, wordt de instelling **mta** wordt niet gestart.
+>Als dit gebied niet bevolkt is, zal **mta** niet beginnen.
 
 ### Lijst met IP-adressen die moeten worden gebruikt {#list-of-ip-addresses-to-use}
 
-De configuratie betreffende verkeersbeheer bevindt zich in de **mta/child/smtp** -element van het configuratiebestand.
+De configuratie betreffende verkeersbeheer wordt gevestigd in het **mta/child/smtp** element van het configuratiedossier.
 
-Voor elke **IPAffinity** element, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
+Voor elk **** element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
 
 Voorbeeld:
 
@@ -386,8 +386,8 @@ De parameters zijn als volgt:
 * **adres**: dit is het IP adres van de MTA gastheermachine die moet worden gebruikt.
 * **heloHost**: dit herkenningsteken vertegenwoordigt het IP adres aangezien het door de server SMTP zal worden gezien.
 
-* **publicId**: deze informatie is nuttig wanneer een IP-adres wordt gedeeld door verschillende Adobe Campaign **mtas** achter een NATIONAAL router. De statistiekserver gebruikt deze id om verbinding te onthouden en statistieken tussen dit uitgangspunt en de doelserver te verzenden.
-* **gewicht**: Hiermee kunt u de relatieve gebruiksfrequentie van het adres definiëren. Standaard hebben alle adressen een dikte gelijk aan 1.
+* **publicId**: deze informatie is nuttig wanneer een IP adres door verscheidene Adobe Campaign **mtas** achter een NATIONAAL router wordt gedeeld. De statistiekserver gebruikt deze id om verbinding te onthouden en statistieken tussen dit uitgangspunt en de doelserver te verzenden.
+* **gewicht**: laat u de relatieve frequentie van gebruik van het adres bepalen. Standaard hebben alle adressen een dikte gelijk aan 1.
 
 >[!NOTE]
 >
@@ -401,31 +401,31 @@ In het vorige voorbeeld, met normale voorwaarden, zullen de adressen als volgt w
 
 Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruikt, zullen de berichten als volgt worden verzonden:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;2&quot;: 5 / (5+1) = 83% 
+    * &quot;3&quot;: 1 / (5+1) = 17% 
 
-* **includeDomains**: Hiermee kunt u dit IP-adres reserveren voor e-mailberichten die tot een bepaald domein behoren. Dit is een lijst met maskers die een of meer jokertekens kunnen bevatten (&#39;&#42;&quot;). Als het attribuut niet wordt gespecificeerd, kunnen alle domeinen dit IP adres gebruiken.
+* **includeDomains**: laat u dit IP adres voor e-mails reserveren die tot een specifiek domein behoren. Dit is een lijst van maskers die één of meerdere vervangingen (&#39;&#42;&#39;) kunnen bevatten. Als het attribuut niet wordt gespecificeerd, kunnen alle domeinen dit IP adres gebruiken.
 
-  Voorbeeld: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
+  Voorbeeld: **includeDomains= &quot;wanadoo.com, orange.com, yahoo.&#42;&quot;**
 
-* **excludeDomains**: sluit een lijst met domeinen voor dit IP-adres uit. Dit filter wordt toegepast na de **includeDomains** filter.
+* **excludeDomains**: sluit een lijst van domeinen voor dit IP adres uit. Dit filter wordt toegepast na de **includeDomains** filter.
 
   ![](assets/s_ncs_install_mta_ips.png)
 
 ## Optimalisatie van e-mailverzending {#email-sending-optimization}
 
-De interne architectuur van de Adobe Campaign **mta** heeft een invloed op de configuratie voor het optimaliseren van de e-maillevering. Hier volgen enkele tips voor het verbeteren van uw leveringen.
+De interne architectuur van Adobe Campaign **mta** heeft een effect op de configuratie voor het optimaliseren van e-maillevering. Hier volgen enkele tips voor het verbeteren van uw leveringen.
 
 ### De parameter maxWaitingMessages aanpassen {#adjust-the-maxwaitingmessages-parameter}
 
-De **maxWaitingMessages** parameter geeft het hoogste aantal berichten aan die vooraf zijn voorbereid door de **mtachild**. Berichten worden pas uit deze lijst verwijderd nadat ze zijn verzonden of verlaten.
+De **maxWaitingMessages** parameter wijst op het hoogste aantal berichten die vooraf door **worden voorbereid mtachild**. Berichten worden pas uit deze lijst verwijderd nadat ze zijn verzonden of verlaten.
 
 Deze parameter is zeer belangrijk en vooral kritiek als de berichten niet door domein worden gesorteerd.
 
-Wanneer de **maxWorkingSetMb** (256) de drempel wordt bereikt, houdt de leveringsserver op verzendend berichten. De prestaties zullen aanzienlijk afnemen tot de **mtachild** wordt weer opgestart. Als u dit probleem wilt verhelpen, kunt u de drempelwaarde voor het **maxWorkingSetMb** of de drempelwaarde van de **maxWaitingMessages** parameter.
+Zodra de **maxWorkingSetMb** (256) drempel wordt bereikt, houdt de leveringsserver op verzendend berichten. De prestaties zullen beduidend verminderen tot **mtachild** opnieuw begint. Om deze kwestie te negeren, kunt u of de drempel van de **maxWorkingSetMb** parameter verhogen, of de drempel van de **maxWaitingMessages** parameter verminderen.
 
-De **maxWorkingSetMb** parameter wordt empirisch berekend door het maximumaantal berichten met de gemiddelde berichtgrootte te vermenigvuldigen en het resultaat met 2.5 te vermenigvuldigen. Als een bericht bijvoorbeeld een gemiddelde grootte heeft van 50 kB en de **maxWaitingMessages** parameter gelijk aan 1.000, zal het gebruikte geheugen gemiddeld 125 MB.
+De **maxWorkingSetMb** parameter wordt berekend empirisch door het maximumaantal berichten door de gemiddelde berichtgrootte te vermenigvuldigen en het resultaat door 2.5 te vermenigvuldigen. Bijvoorbeeld, als een bericht een gemiddelde grootte van 50 kB heeft en de **maxWaitingMessages** parameter 1.000 evenaart, zal het gebruikte geheugen 125 MB gemiddelde.
 
 ### Het aantal onderliggende items aanpassen {#adjust-the-number-of-mtachild}
 
-Het aantal kinderen mag niet groter zijn dan het aantal processoren in de machine (ongeveer 1000 sessies). We raden u aan niet meer dan 8 te gebruiken **mtachild**. Vervolgens kunt u het aantal berichten per **kind** (**maxMsgPerChild**) om een voldoende lange levensduur te bereiken.
+Het aantal kinderen mag niet groter zijn dan het aantal processoren in de machine (ongeveer 1000 sessies). Wij adviseren dat u 8 **mtachild** niet overschrijdt. U kunt het aantal berichten per **kind** (**dan verhogen maxMsgPerChild**) om voldoende leven-spanwijdte te bereiken.

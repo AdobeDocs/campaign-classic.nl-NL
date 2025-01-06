@@ -4,7 +4,7 @@ title: Workflows
 description: Automatiseer processen met workflows, beheer gegevens en doelgroepen, verzend berichten, en meer
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 25%
@@ -28,7 +28,7 @@ Workflows vinden plaats in verschillende contexten en fasen van het campagnemana
 Adobe Campaign gebruikt workflows om:
 
 * Voer gerichte campagnes uit. [Meer informatie](building-a-workflow.md#implementation-steps-)
-* Bouw campagnes: voor elke campagne, **[!UICONTROL Workflow]** kunt u het doel maken en de leveringen maken. [Meer informatie](building-a-workflow.md#campaign-workflows)
+* Campagnes opbouwen: voor elke campagne kunt u met het tabblad **[!UICONTROL Workflow]** het doel opbouwen en de leveringen maken. [Meer informatie](building-a-workflow.md#campaign-workflows)
 * Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen uitvoeren. [Meer informatie](building-a-workflow.md#technical-workflows)
 
 Een werkstroom kan zowel een procesdefinitie (het werkschemamodel, dat een vertegenwoordiging van is wat verondersteld om is te gebeuren) als een geval van dit proces (een werkschemainstantie, die een vertegenwoordiging van is wat eigenlijk gebeurt) betekenen.
@@ -41,11 +41,11 @@ Elke werkstroom bevat:
 
 * **[!UICONTROL Activities]**
 
-  Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, worden alleen de **[!UICONTROL Approval]** activiteit heeft een toewijzing.
+  Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, heeft alleen de **[!UICONTROL Approval]** -activiteit een toewijzing.
 
   In een workflowdiagram kan een bepaalde activiteit meerdere taken produceren, met name wanneer er een lus of terugkerende (periodieke) handelingen zijn.
 
-  Alle workflowactiviteiten worden vermeld in [deze sectie](about-activities.md), met inbegrip van gebruiksgevallen en monsters.
+  Alle werkschemaactiviteiten worden vermeld in [ deze sectie ](about-activities.md), met inbegrip van gebruiksgevallen en steekproeven.
 
 * **[!UICONTROL Transitions]**
 
@@ -57,22 +57,22 @@ Elke werkstroom bevat:
   >
   >Er kan nog steeds een workflow met niet-afgesloten overgangen worden uitgevoerd: er wordt een waarschuwingsbericht gegenereerd en de workflow wordt gepauzeerd zodra de overgang is bereikt, maar er wordt geen fout gegenereerd. Het is dus mogelijk om een werkstroom te starten zonder dat deze is voltooid en om deze tijdens het proces toe te voegen.
 
-  Voor meer informatie over hoe u een workflow kunt maken, raadpleegt u [deze sectie](building-a-workflow.md).
+  Voor meer informatie over hoe te om een werkschema te bouwen, verwijs naar [ deze sectie ](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
   De werktabel bevat alle informatie die door de overgang wordt overgedragen. Voor elke workflow worden meerdere werktabellen gebruikt. De gegevens in deze tabellen kunnen gedurende de gehele levenscyclus van de werkstroom worden versneld en gebruikt, zolang deze niet worden gewist. Onbenodigde tabellen worden immers gewist wanneer de workflow wordt gepassiveerd en mogelijk tijdens de uitvoering van de grootste workflows om overbelasting van de server te voorkomen.
 
-  Meer informatie over workflowgegevens en tabellen in [deze sectie](how-to-use-workflow-data.md).
+  Leer meer over werkschemagegevens en lijsten in [ deze sectie ](how-to-use-workflow-data.md).
 
 ## Belangrijkste beginselen en beste praktijken{#principles-workflows}
 
 Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automatiseren met workflows:
 
-* Meer informatie over workflowactiviteiten in [deze pagina](how-to-use-workflow-data.md).
-* Leer hoe u een workflow maakt in [deze sectie](building-a-workflow.md).
-* Ontdek hoe u workflows kunt gebruiken om gegevens te importeren in Campagne in [deze sectie](../../platform/using/import-export-workflows.md).
-* Best practices voor workflows worden beschreven in [deze pagina](workflow-best-practices.md).
-* Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](starting-a-workflow.md).
-* Leer hoe u workflows kunt controleren in [deze pagina](monitoring-workflow-execution.md).
-* Leer hoe u gebruikers toegang biedt om workflows te gebruiken in [deze pagina](managing-rights.md).
+* Leer meer over werkschemaactiviteiten in [ deze pagina ](how-to-use-workflow-data.md).
+* Leer hoe te om een werkschema in [ te bouwen deze sectie ](building-a-workflow.md).
+* Ontdek hoe te om werkschema&#39;s te gebruiken om gegevens in Campagne in [ in te voeren deze sectie ](../../platform/using/import-export-workflows.md).
+* De beste praktijken van het werkschema zijn gedetailleerd in [ deze pagina ](workflow-best-practices.md).
+* Vind begeleiding over werkschemauitvoering in [ deze sectie ](starting-a-workflow.md).
+* Leer hoe te om werkschema&#39;s in [ te controleren deze pagina ](monitoring-workflow-execution.md).
+* Leer hoe te om toegang tot gebruikers te verlenen om werkschema&#39;s in [ te gebruiken deze pagina ](managing-rights.md).

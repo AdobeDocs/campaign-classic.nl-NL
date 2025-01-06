@@ -4,7 +4,7 @@ title: Toegangsbeheer
 description: Meer informatie over best practices voor toegangsbeheer
 feature: Installation, Access Management, Permissions
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 8%
@@ -35,16 +35,16 @@ De webApp-operator is een beheerder. Om de veiligheid te verbeteren, volg deze r
 
 Maak genoeg beveiligingsgroepen om uw operatoren de juiste rechten te geven, zodat ze kunnen doen wat ze nodig hebben, en niet meer.
 
-Gebruik de beheeroperator niet (of deel deze niet). Creeer één exploitant per fysieke gebruiker (om een nauwkeurige controle/registreren te hebben). Voeg de nieuwe beheerders toe aan de beheerdersgroep. Als u de beheerder niet gebruikt, verwijder het niet, en maak het niet onbruikbaar: deze exploitant wordt intern gebruikt om verwerking uit te voeren. Maar je kunt het verbieden [toegang tot de clientconsole](../../platform/using/access-management.md) en de beveiligingszone beperken (tot localhost).
+Gebruik de beheeroperator niet (of deel deze niet). Creeer één exploitant per fysieke gebruiker (om een nauwkeurige controle/registreren te hebben). Voeg de nieuwe beheerders toe aan de beheerdersgroep. Als u de beheerder niet gebruikt, verwijder het niet, en maak het niet onbruikbaar: deze exploitant wordt intern gebruikt om verwerking uit te voeren. Maar u kunt zijn [ toegang tot de cliëntconsole ](../../platform/using/access-management.md) verbieden en zijn veiligheidsstreek (aan localhost) beperken.
 
 Voeg niet te veel operatoren toe aan de beheergroep (of met benoemde beheerdersrechten). Het zijn zeer krachtige operatoren (ze kunnen alle SQL-instructies uitvoeren, opdrachten op de server uitvoeren, enz.).
 
-Adobe Campaign biedt drie privileges op hoog niveau via [benoemde rechten](../../platform/using/access-management.md#named-rights):
+Adobe Campaign verstrekt drie voorrechten op hoog niveau door [ genoemde rechten ](../../platform/using/access-management.md#named-rights):
 
-* **ADMINISTRATIE** (admin): geeft toegang tot alles en staat toe om alles te doen, die alle genoemde juiste controles omzeilt, zodat omvat het de UITVOERING VAN HET PROGRAMMA (createProcess) en SQL genoemde rechten
+* **BEHEER** (admin): geeft toegang tot alles en staat toe om alles te doen, die alle genoemde juiste controles omzeilt, zodat omvat het de UITVOERING VAN HET PROGRAMMA (createProcess) en SQL genoemde rechten
 
-* **UITVOERING VAN PROGRAMMA** (createProcess): hiermee kunnen externe programma&#39;s worden uitgevoerd (op de server)
+* **UITVOERING VAN HET PROGRAMMA** (createProcess): staat het uitvoeren van externe programma&#39;s (op de server) toe
 
-* **SQL**: staat het runnen van SQL manuscripten op het gegevensbestand toe (zodat kan het veiligheidsmodel overslaan). Nota: als u complexe berekeningen (het filtreren, bijvoorbeeld) moet uitvoeren, kunt u uw gegevensbestandbeheerder vragen om een SQL functie tot stand te brengen en hen toe te voegen aan de lijst van gewenste personen. Meer informatie vindt u [op deze pagina](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: staat het runnen van SQL manuscripten op het gegevensbestand (zodat kan het veiligheidsmodel overslaan). Nota: als u complexe berekeningen (het filtreren, bijvoorbeeld) moet uitvoeren, kunt u uw gegevensbestandbeheerder vragen om een SQL functie tot stand te brengen en hen toe te voegen aan de lijst van gewenste personen. Meer informatie vindt u [op deze pagina](../../installation/using/scripting-coding-guidelines.md).
 
-* **Geef ze door aan zeer weinig (en vertrouwde) operatoren**
+* **Verleen hen aan zeer weinig (en vertrouwde op) exploitanten**

@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -29,7 +29,7 @@ De interactie in Adobe Campaign vereist zorgvuldig beheer om efficiënt te werke
 Hieronder staan belangrijke elementen waarmee u rekening moet houden bij het implementeren en configureren van interacties.
 
 * Voor partijmotor (typisch gebruikt in uitgaande mededelingen zoals e-mail), is de productie de belangrijkste zorg, aangezien de veelvoudige contacten tezelfdertijd kunnen worden behandeld. Het typische knelpunt is gegevensbestandprestaties.
-* De belangrijkste beperking voor eenheidsmotor (typisch gebruikt in binnenkomende mededelingen zoals een banner op een website) is latentie, aangezien iemand een antwoord verwacht. Het typische knelpunt is de prestaties van de CPU.
+* De belangrijkste beperking voor eenheidsmotor (typisch gebruikt in binnenkomende mededelingen zoals een banner op een website) is latentie, aangezien iemand een antwoord verwacht. Het typische knelpunt is CPU-prestaties.
 * Het ontwerp van de aanbiedingencatalogus heeft een enorme invloed op de Adobe Campaign Classic-prestaties.
 * Als er veel aanbiedingen zijn, splitst u deze in verschillende aanbiedingcatalogi.
 
@@ -67,7 +67,7 @@ Wanneer aanbiedingen in leveringen worden opgenomen, worden de aanbiedingen door
 
 Als u aanbiedingen in een verrijkingsactiviteit selecteert, kunt u kiezen welke ruimte u wilt gebruiken. Ongeacht de geselecteerde aanbiedingsruimte, hangt het menu voor de aanpassing van de levering echter af van de aanbiedingsruimte die in de levering is ingesteld.
 
-In het onderstaande voorbeeld is de ruimte voor het aanbieden geselecteerd in de levering **[!UICONTROL Email (Environment - Recipient)]**:
+In het onderstaande voorbeeld is de aanbiedingsruimte die in de levering is geselecteerd, **[!UICONTROL Email (Environment - Recipient)]** :
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -77,9 +77,9 @@ In het onderstaande voorbeeld is de renderfunctie HTML beschikbaar in de vervolg
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-Deze functie voegt code in zoals: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+Deze functie voegt code in zoals: `<%@ include proposition="targetData.proposition" view="rendering/html" %>` .
 
-Wanneer u het voorstel selecteert, wordt de waarde van de optie **[!UICONTROL view]** Het kenmerk is als volgt:
+Wanneer u het voorstel selecteert, is de waarde van het kenmerk **[!UICONTROL view]** als volgt:
 * &quot;rendering/html&quot;: html rendering. De renderfunctie HTML wordt gebruikt.
 * &quot;aanbieding/view/html&quot;: HTML-inhoud. De renderfunctie HTML wordt niet gebruikt. Het bevat alleen het veld HTML.
 
@@ -109,7 +109,7 @@ U kunt extra velden toevoegen, zoals een veld @rank:
 
 Omdat er een veld in de tabel met voorstellen staat met de naam @rank, wordt de waarde in de tabel met werkstroomsjablonen gekopieerd.
 
-Zie voor meer informatie over het opslaan van extra velden in de tabel met profielen [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Voor meer bij het opslaan van extra gebieden in de propositielijst, zie [ Integrerend een aanbieding via een werkschema ](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Voor uitgaande aanbiedingen met interactie is dit handig wanneer er meerdere aanbiedingen zijn geselecteerd en u wilt opnemen in welke volgorde deze in een e-mail worden weergegeven.
 
@@ -124,7 +124,7 @@ Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan
 ### NMS uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
 
 Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-doosstructuur reeds opstelling volgt:
-* Een nieuw veld definiëren voor de opslag van inhoud onder `<element name="view">`.
+* Definieer een nieuw veld voor de opslag van inhoud onder `<element name="view">` .
 * Elk nieuw veld moet tweemaal worden gedefinieerd. Eenmaal als een normaal XML-veld en eenmaal als een CDATA XML-veld met &quot;_jst&quot; toegevoegd aan de naam. Bijvoorbeeld:
 
   ```
@@ -132,4 +132,4 @@ Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-do
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
 
-* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten onder `<element name="trackedUrls">` die u vindt onder `<element name="view" >`.
+* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten onder `<element name="trackedUrls">` worden geplaatst, dat zich onder `<element name="view" >` bevindt.

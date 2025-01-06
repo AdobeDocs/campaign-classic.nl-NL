@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 ## Pakketconfiguratie {#packages-configuration}
 
-Om het even welke schemauitbreidingen direct verbonden aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
+Om het even welke schemauitbreidingen direct verbonden aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten op de uitvoeringsinstanties worden opgesteld.
 
 Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: een pakket dat op de besturingsinstanties moet worden geïnstalleerd en een ander pakket dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
 

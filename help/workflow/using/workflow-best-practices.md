@@ -4,7 +4,7 @@ title: Best practices voor workflows
 description: Meer informatie over best practices voor de campagnereschemap
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 5%
@@ -19,30 +19,30 @@ ht-degree: 5%
 
 Hieronder vindt u algemene richtlijnen voor het optimaliseren van de campagneprestaties, waaronder tips en trucs voor het toepassen op uw workflows.
 
-Richtlijnen voor het oplossen van problemen met betrekking tot de uitvoering van workflows zijn ook beschikbaar in [Campaign Classic v7-productiegids](../../production/using/workflow-execution.md).
+De richtlijnen van het oplossen van problemen met betrekking tot werkstroomuitvoering zijn ook beschikbaar in [ Campaign Classic v7 de Gids van de Productie ](../../production/using/workflow-execution.md).
 
 ### Logboeken {#logs}
 
-De JavaScript-methode **[!UICONTROL logInfo()]** is een grote oplossing voor het zuiveren van een werkschema. Het is nuttig maar het moet zorgvuldig worden gebruikt, vooral voor activiteiten die vaak in werking worden gesteld: het kan de logboeken overladen en beduidend de grootte van de logboeklijst verhogen. Maar misschien hebt u ook meer nodig dan **[!UICONTROL logInfo()]**.
+De JavaScript-methode **[!UICONTROL logInfo()]** is een ideale oplossing voor foutopsporing in een workflow. Het is nuttig maar het moet zorgvuldig worden gebruikt, vooral voor activiteiten die vaak in werking worden gesteld: het kan de logboeken overladen en beduidend de grootte van de logboeklijst verhogen. Maar misschien hebt u ook meer nodig dan **[!UICONTROL logInfo()]** .
 
 Er zijn twee aanvullende oplossingen beschikbaar om u te helpen:
 
-* **Behoud het resultaat van tussentijdse populaties tussen twee executies**
+* **houd het resultaat van tussentijdse populaties tussen twee uitvoeringen**
 
-  Met deze optie blijven tijdelijke tabellen tussen twee uitvoeringen van een workflow staan. Het is beschikbaar in de eigenschappen van de workflow. **[!UICONTROL General]** en kan worden gebruikt voor ontwikkelings- en testdoeleinden om gegevens te controleren en de resultaten te controleren. U kunt deze optie in ontwikkelomgevingen gebruiken, maar nooit in productieomgevingen. Het houden van tijdelijke lijsten zou in de grootte van het gegevensbestand kunnen resulteren die beduidend en uiteindelijk de groottegrens wordt bereikt. Bovendien zal het de back-up vertragen.
+  Met deze optie blijven tijdelijke tabellen tussen twee uitvoeringen van een workflow staan. Deze vindt u op het tabblad **[!UICONTROL General]** van de eigenschappen van de workflow en kan worden gebruikt voor ontwikkeling en testdoeleinden om gegevens te controleren en de resultaten te controleren. U kunt deze optie in ontwikkelomgevingen gebruiken, maar nooit in productieomgevingen. Het houden van tijdelijke lijsten zou in de grootte van het gegevensbestand kunnen resulteren die beduidend en uiteindelijk de groottegrens wordt bereikt. Bovendien zal het de back-up vertragen.
 
-  Alleen de werktabellen van de laatste uitvoering van de workflow worden bewaard. Werktabellen van eerdere uitvoeringen worden door de **[!UICONTROL cleanup]** werkschema, dat dagelijks loopt.
+  Alleen de werktabellen van de laatste uitvoering van de workflow worden bewaard. Werktabellen van vorige uitvoeringen worden leeggemaakt door de **[!UICONTROL cleanup]** -workflow, die dagelijks wordt uitgevoerd.
 
   >[!CAUTION]
   >
   >Deze optie mag nooit worden ingeschakeld in een productieworkflow. Deze optie wordt gebruikt om de resultaten te analyseren en is alleen ontworpen voor testdoeleinden en moet daarom alleen worden gebruikt in ontwikkelings- of testomgevingen.
 
-* **SQL-query&#39;s vastleggen in het journaal**
+* **SQL van het Logboek vragen in het dagboek**
 
-  Beschikbaar in het dialoogvenster **[!UICONTROL Execution]** tabblad met workfloweigenschappen, registreert deze optie alle SQL-query&#39;s die door het gereedschap worden gegenereerd op basis van de verschillende activiteiten. Het is een goede manier om te zien wat er daadwerkelijk door het platform wordt uitgevoerd. Deze optie mag echter alleen tijdelijk tijdens de ontwikkeling worden gebruikt en niet tijdens de productie worden geactiveerd.
+  Deze optie is beschikbaar op het tabblad **[!UICONTROL Execution]** met workfloweigenschappen en registreert alle SQL-query&#39;s die door het gereedschap worden gegenereerd op basis van de verschillende activiteiten. Het is een goede manier om te zien wat er daadwerkelijk door het platform wordt uitgevoerd. Deze optie mag echter alleen tijdelijk tijdens de ontwikkeling worden gebruikt en niet tijdens de productie worden geactiveerd.
 
-Leeg de logboeken als ze niet meer nodig zijn. De historie van de workflow wordt niet automatisch gewist: alle berichten worden standaard bijgehouden. De geschiedenis kan worden gewist via **[!UICONTROL File > Actions]** of door op de knop Handelingen op de werkbalk boven de lijst te klikken. Selecteer Geschiedenis leegmaken.
-Als u wilt weten hoe u uw logbestanden kunt leegmaken, raadpleegt u deze [documentatie](starting-a-workflow.md).
+Leeg de logboeken als ze niet meer nodig zijn. De historie van de workflow wordt niet automatisch gewist: alle berichten worden standaard bijgehouden. De geschiedenis kan worden gewist via het menu **[!UICONTROL File > Actions]** of door op de knop Handelingen in de werkbalk boven de lijst te klikken. Selecteer Geschiedenis leegmaken.
+Leren hoe te om uw logboeken te zuiveren, verwijs naar deze [ documentatie ](starting-a-workflow.md).
 
 ### Workflowplanning {#workflow-planning}
 
@@ -50,12 +50,12 @@ Als u wilt weten hoe u uw logbestanden kunt leegmaken, raadpleegt u deze [docume
 * Plan de gegevensbelasting &#39;s nachts om de bronconflict te verminderen.
 * De lange werkschema&#39;s kunnen potentieel een effect op de server en gegevensbestandmiddelen hebben. Splits de langste workflows om de verwerkingstijd te verkorten.
 * Om de totale uitvoeringstijd te verkorten, vervang tijdrovende activiteiten door vereenvoudigde en snellere activiteiten.
-* Gebruik niet meer dan 20 workflows tegelijk. Wanneer te veel werkstromen tegelijkertijd worden uitgevoerd, kan het systeem zonder middelen en instabiel worden. Raadpleeg voor meer informatie over waarom de workflow mogelijk niet wordt gestart deze [artikel](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
+* Gebruik niet meer dan 20 workflows tegelijk. Wanneer te veel werkstromen tegelijkertijd worden uitgevoerd, kan het systeem zonder middelen en instabiel worden. Voor meer informatie over waarom uw werkschema niet kan beginnen, verwijs naar dit [ artikel ](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
 
 ### Uitvoeren in de motoroptie {#execute-in-the-engine-option}
 
-In de **[!UICONTROL Workflow properties]** venster, nooit de **[!UICONTROL Execute in the engine]** -optie. Als deze optie is ingeschakeld, heeft de workflow prioriteit en worden alle andere workflows gestopt door de workflow-engine totdat deze is voltooid.
+Controleer in het **[!UICONTROL Workflow properties]** -venster nooit de optie **[!UICONTROL Execute in the engine]** . Als deze optie is ingeschakeld, heeft de workflow prioriteit en worden alle andere workflows gestopt door de workflow-engine totdat deze is voltooid.
 
 ![](assets/wf-execute-in-engine.png)
 
@@ -65,7 +65,7 @@ In de **[!UICONTROL Workflow properties]** venster, nooit de **[!UICONTROL Execu
 
 Adobe raadt u aan uw workflows in een specifieke map te maken.
 
-Als de workflow het hele platform beïnvloedt (bijvoorbeeld reinigingsprocessen), kunt u overwegen een submap toe te voegen aan de ingebouwde **[!UICONTROL Technical Workflows]** map.
+Als de workflow van invloed is op het hele platform (bijvoorbeeld op het opschonen van processen), kunt u overwegen een submap toe te voegen in de ingebouwde **[!UICONTROL Technical Workflows]** -map.
 
 ### Workflownaamgeving {#workflow-naming}
 
@@ -83,7 +83,7 @@ Bijvoorbeeld:
 
 ### Ernst van werkstroom {#workflow-severity}
 
-U kunt de ernst van een werkstroom in de werkschemaeigenschappen, in vormen **[!UICONTROL Execution]** tab:
+U kunt de ernst van een workflow configureren in de workfloweigenschappen op het tabblad **[!UICONTROL Execution]** :
 
 * Normaal
 * Productie
@@ -99,44 +99,44 @@ Workflows voor campagnes (workflows die zijn gemaakt als onderdeel van een campa
 
 Alle geplande workflows die op productieomgevingen worden uitgevoerd, moeten worden gecontroleerd om te worden gewaarschuwd als er een fout optreedt.
 
-In de werkschemaeigenschappen, selecteer een groep van de Supervisor, of het gebrek **[!UICONTROL Workflow supervisors]** of een aangepaste groep. Zorg ervoor dat ten minste één operator tot deze groep behoort, met een e-mailinstelling.
+In de werkschemaeigenschappen, selecteer een groep van de Supervisor, of het gebrek **[!UICONTROL Workflow supervisors]** of een douanegroep. Zorg ervoor dat ten minste één operator tot deze groep behoort, met een e-mailinstelling.
 
-Voordat u een workflow gaat maken, moet u workflowsupervisors definiëren. Zij zullen per e-mail op de hoogte worden gesteld in het geval van fouten. Raadpleeg voor meer informatie hierover [Fouten beheren](monitoring-workflow-execution.md#managing-errors).
+Voordat u een workflow gaat maken, moet u workflowsupervisors definiëren. Zij zullen per e-mail op de hoogte worden gesteld in het geval van fouten. Voor meer op dit, verwijs naar [ het Leiden fouten ](monitoring-workflow-execution.md#managing-errors).
 
-De **[!UICONTROL Monitoring]** om de algemene status van de actieve workflows weer te geven. Raadpleeg voor meer informatie hierover [Instantie controleren](monitoring-workflow-execution.md#instance-supervision).
+Controleer regelmatig het tabblad **[!UICONTROL Monitoring]** om de algemene status van de actieve workflows weer te geven. Voor meer op dit, verwijs naar [ toezicht van de Instantie ](monitoring-workflow-execution.md#instance-supervision).
 
-Met de Workflow HeatMap kunnen beheerders van het Adobe Campaign-platform de belasting op de instantie controleren en workflows dienovereenkomstig plannen. Raadpleeg voor meer informatie hierover [Workflowbewaking](heatmap.md).
+Met de Workflow HeatMap kunnen beheerders van het Adobe Campaign-platform de belasting op de instantie controleren en workflows dienovereenkomstig plannen. Voor meer op dit, verwijs naar [ Controle van het Werkschema ](heatmap.md).
 
 ## Werken met activiteiten {#using-activities}
 
 >[!CAUTION]
 >
->U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. We raden u aan  **Dupliceren** workflows. Zie voor meer informatie [Workflows dupliceren](building-a-workflow.md#duplicating-workflows).
+>U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **** werkschema&#39;s dupliceren. Voor meer informatie, zie [ het Dupliceren werkschema&#39;s ](building-a-workflow.md#duplicating-workflows).
 
 ### Naam van de activiteit {#name-of-the-activity}
 
 Tijdens het ontwikkelen van uw workflow hebben alle activiteiten een naam, net als alle Adobe Campaign-objecten. Terwijl de naam door het hulpmiddel wordt geproduceerd, adviseren wij u het met een expliciete naam anders te noemen wanneer het vormen van het. Het risico dat het later gebeurt, is dat het de werkstroom kan onderbreken met activiteiten die de naam van een andere voorgaande activiteit gebruiken. Het zou dus moeilijk zijn om de namen achteraf bij te werken.
 
-De naam van de activiteit is te vinden in de **[!UICONTROL Advanced]** tab. Laat ze geen naam geven **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, maar geef ze expliciete namen, zoals **[!UICONTROL querySubscribedRecipients]**. Deze naam zal in het dagboek, en indien van toepassing in de SQL logboeken verschijnen, en dit zal helpen om het werkschema te zuiveren wanneer het vormen van het.
+U vindt de naam van de activiteit op het tabblad **[!UICONTROL Advanced]** . Laat ze niet met de naam **[!UICONTROL query]** , **[!UICONTROL query1]** , **[!UICONTROL query11]** , maar geef ze expliciete namen, zoals **[!UICONTROL querySubscribedRecipients]** . Deze naam zal in het dagboek, en indien van toepassing in de SQL logboeken verschijnen, en dit zal helpen om het werkschema te zuiveren wanneer het vormen van het.
 
 ### Eerste en laatste activiteiten {#first-and-last-activities}
 
-* Start altijd uw workflow met een **[!UICONTROL Start]** of een **[!UICONTROL Scheduler]** activiteit. Indien relevant kunt u ook een **[!UICONTROL External signal]** activiteit.
-* Gebruik bij het samenstellen van uw workflow slechts één **[!UICONTROL Scheduler]** activiteit per bijkantoor. Als de zelfde tak van een werkschema verscheidene planners (verbonden aan elkaar) heeft, zal het aantal uit te voeren taken exponentieel worden vermenigvuldigd, die het gegevensbestand aanzienlijk zou overbelasten. Deze regel geldt ook voor alle activiteiten met een **[!UICONTROL Scheduling & History]** tab. Meer informatie over [Planning](scheduler.md).
+* Start de workflow altijd met een **[!UICONTROL Start]** activiteit of een **[!UICONTROL Scheduler]** activiteit. Indien relevant, kunt u ook een **[!UICONTROL External signal]** activiteit gebruiken.
+* Gebruik bij het samenstellen van uw workflow slechts één **[!UICONTROL Scheduler]** activiteit per vertakking. Als de zelfde tak van een werkschema verscheidene planners (verbonden aan elkaar) heeft, zal het aantal uit te voeren taken exponentieel worden vermenigvuldigd, die het gegevensbestand aanzienlijk zou overbelasten. Deze regel is ook van toepassing op alle activiteiten met een tab **[!UICONTROL Scheduling & History]** . Leer meer op [ Plannend ](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 
-* Gebruiken **[!UICONTROL End]** activiteiten voor elke workflow. Hierdoor kan Adobe Campaign tijdelijke ruimte vrijmaken die wordt gebruikt voor berekeningen binnen workflows. Raadpleeg voor meer informatie: [Begin en einde](start-and-end.md).
+* Gebruik **[!UICONTROL End]** -activiteiten voor elke workflow. Hierdoor kan Adobe Campaign tijdelijke ruimte vrijmaken die wordt gebruikt voor berekeningen binnen workflows. Voor meer op dit, verwijs naar: [ Begin en eind ](start-and-end.md).
 
 ### JavaScript binnen een activiteit {#javascript-within-an-activity}
 
-U kunt JavaScript toevoegen bij het initialiseren van een workflowactiviteit. Dit kan worden gedaan in een activiteit **[!UICONTROL Advanced]** tabblad van de activiteit.
+U kunt JavaScript toevoegen bij het initialiseren van een workflowactiviteit. Dit kan op het tabblad **[!UICONTROL Advanced]** van een activiteit van de activiteit worden gedaan.
 
 Om het spotting van het werkschema gemakkelijker te maken, adviseren wij gebruikend dubbele streepjes aan het begin en eind van het activiteitenetiket als volgt: — Mijn etiket —.
 
 ### Signaal {#signal}
 
-Meestal zult u niet weten waar het signaal vandaan komt. Om dit probleem te voorkomen, gebruikt u de **[!UICONTROL Comment]** in het veld **[!UICONTROL Advanced]** tabblad van de signaalactiviteit om de verwachte oorsprong van een signaal voor deze activiteit te documenteren.
+Meestal zult u niet weten waar het signaal vandaan komt. Om dit probleem te voorkomen, gebruikt u het veld **[!UICONTROL Comment]** op het tabblad **[!UICONTROL Advanced]** van de signaalactiviteit om de verwachte oorsprong van een signaal voor deze activiteit te documenteren.
 
 ![](assets/workflow-signal-bp.png)
 

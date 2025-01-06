@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 1%
@@ -30,11 +30,11 @@ De meeste gegevens bevinden zich in de database. Dit is 99% van de informatie wa
 
 Bestanden zijn verdeeld in verschillende categorieën:
 
-* Configuratiebestanden, opgeslagen in **nl6/conf** kunt u Adobe Campaign zeer snel opnieuw configureren.
+* De dossiers van de configuratie, die in **nl6/conf** worden opgeslagen, laten u toe om Adobe Campaign zeer snel aan te passen.
 
-* Bestanden omleiden, opgeslagen in  **nl6/var/`<instance-name>`/redir**, op de trackingservers (vaak &quot;frontal&quot; genoemd) staan en alle eerdere instructies voor de campagne bevatten. Ze worden nog steeds gebruikt door vorige campagnes.
+* De dossiers van de omleiding, die in **worden opgeslagen nl6/var/`<instance-name>`/redir**, zijn op het volgen (vaak genoemd &quot;frontal&quot;) servers, en omvatten alle vorige campagneomleiding. Ze worden nog steeds gebruikt door vorige campagnes.
 
-* Logbestanden, opgeslagen in **nl6/var/`<instance-name>`/log** kan worden gebruikt om problemen op te sporen.
+* De dossiers van het logboek, die in **worden opgeslagen nl6/var/`<instance-name>`/log**, kunnen worden gebruikt om problemen te vinden.
 
 De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
@@ -44,7 +44,7 @@ De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
 * nl6/var/`<instance-name>`/log (optioneel)
 
-* nl6/var/`<instance-name>`/relay (facultatief)
+* nl6/var/`<instance-name>`/relais (optioneel)
 
 
 ## Database {#database}

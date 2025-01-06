@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 1%
@@ -37,13 +37,13 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Maak een kopie van de databases op alle instanties in de bronomgeving.
 1. Herstel deze kopieën in alle gevallen van de doelomgeving.
-1. Voer de **nms:vriesinstantie.js** het waarschuwings manuscript op het doelmilieu alvorens het op te starten.
+1. Stel **nms:freeseInstance.js in werking** voorzichtigheidsmanuscript op het doelmilieu alvorens het op te starten.
 
    Dit proces heeft geen invloed op de servers en hun configuratie.
 
    >[!NOTE]
    >
-   >In de context van Adobe Campaign **vermaning** combineert acties waarmee u alle processen die met de buitenkant communiceren kunt stoppen: logbestanden, tracering, leveringen, workflows voor campagnes, enz.\
+   >In de context van Adobe Campaign, combineert a **voorzichtigheid** acties die u alle processen laten tegenhouden die met de buitenkant in wisselwerking staan: logboeken, het volgen, leveringen, campagnewerkschema&#39;s, enz.\
    >Deze stap is nodig om te voorkomen dat berichten meerdere keren worden verzonden (eenmaal vanuit de nominale omgeving en één vanuit de gedupliceerde omgeving).
 
    >[!IMPORTANT]
@@ -63,14 +63,14 @@ Dit proces werkt alleen als de bron- en doelomgevingen hetzelfde aantal instanti
 
 ### Overdrachtsprocedure {#transfer-procedure}
 
-Deze sectie zal u helpen de stappen begrijpen die worden vereist om een bronmilieu aan een doelmilieu via een gevallenanalyse over te brengen: ons doel is hier om een productiemilieu te herstellen (**prod** instantie) naar een ontwikkelomgeving (**dev** (bijvoorbeeld) te werken in een context die zo dicht mogelijk bij het &#39;live&#39;-platform ligt.
+Deze sectie zal u helpen de stappen begrijpen die voor het overbrengen van een bronmilieu aan een doelmilieu via een gevalsstudie worden vereist: ons doel hier is een productiemilieu (**prod** instantie) aan een ontwikkelomgeving (**dev** instantie) te herstellen om in een context te werken die zo dicht mogelijk aan het &quot;levende&quot;platform is.
 
 De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen kunnen nog in uitvoering zijn wanneer de bronmilieugegevensbestanden worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
 
 >[!IMPORTANT]
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
->* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod** instantie en een **dev** onder PostgreSQL.
+>* De bevelen hieronder zijn binnen de context van a **prod** instantie en a **dev** instantie onder PostgreSQL van toepassing.
 >
 
 ### Stap 1 - Maak een steun van de bronmilieu (prod) gegevens {#step-1---make-a-backup-of-the-source-environment--prod--data}
@@ -89,14 +89,14 @@ pg_dump mydatabase > mydatabase.sql
 
 De meeste configuratieelementen zijn verschillend voor elke omgeving: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
-Alvorens het brongegevensbestand op het doelgegevensbestand te bewaren, moet u de configuratie van het doelmilieu (dev) uitvoeren. Hiertoe exporteert u de inhoud van deze twee tabellen: **xtkoption** en **nmsextaccount**.
+Alvorens het brongegevensbestand op het doelgegevensbestand te bewaren, moet u de configuratie van het doelmilieu (dev) uitvoeren. Om dit te doen, voer de inhoud van deze twee lijsten uit: **xtkoption** en **nmsextaccount**.
 
 Met deze exportbewerking kunt u de configuratie van de ontwikkelaar behouden en alleen de gegevens van de ontwikkelaar vernieuwen (workflows, sjablonen, webtoepassingen, ontvangers, enzovoort).
 
 Hiervoor voert u een pakketexport uit voor de volgende twee elementen:
 
-* Exporteer de **xtk:option** tabel in een bestand &#39;options_dev.xml&#39;, zonder de records met de volgende interne namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; en &#39;NmsBroadcast_RegexRules&#39;.
-* Exporteer in een bestand &#39;extaccount_dev.xml&#39; het bestand **nms:extAccount** tabel voor alle records waarvan de id niet 0 is (@id &lt;> 0).
+* Exporteer de **xtk:option** lijst in een &quot;options_dev.xml&quot;dossier, zonder de verslagen met de volgende interne namen: &quot;WdbcTimeZone&quot;, &quot;NmsServer_LastPostUpgrade&quot;en &quot;NmsBroadcast_RegexRules&quot;.
+* In een &quot;extaccount_dev.xml&quot;dossier, voer **nms:extAccount** lijst voor alle verslagen uit waarvan identiteitskaart niet 0 (@id &lt;> 0) is.
 
 Controleer of het aantal geëxporteerde opties/accounts gelijk is aan het aantal regels dat in elk bestand moet worden geëxporteerd.
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->In Windows **webmdl** Het proces kan nog actief zijn zonder andere bewerkingen te beïnvloeden.
+>In Vensters, kan het **webmdl** proces nog actief zijn zonder andere verrichtingen te beïnvloeden.
 
 U kunt ook controleren of er nog geen systeemprocessen actief zijn.
 
 Hiervoor gebruikt u het volgende proces:
 
-* In Windows: open de **Taakmanager** en controleert u of er geen **nlserver.exe** processen.
-* In Linux: voer de **ps aux | grep nlserver** en controleer of er geen **nlserver** processen.
+* In Vensters: open de **manager van de Taak** en controleer dat er geen **nlserver.exe** processen zijn.
+* In Linux: voer de **ps aux | grep nlserver** bevel en controle dat er geen **nlserver** processen zijn.
 
 ### Stap 4 - Herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +192,9 @@ Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 
 >[!NOTE]
 >
->Voordat u Adobe Campaign opnieuw start op de **dev** milieu, kunt u een extra veiligheidsprocedure toepassen: begin **web** alleen.
+>Alvorens Adobe Campaign op het **dev** milieu opnieuw te beginnen, kunt u een extra veiligheidsprocedure toepassen: begin slechts de **Web** module.
 >  
->Hiervoor bewerkt u het configuratiebestand van uw instantie (**config-dev.xml**), voegt u het teken &quot;_&quot; toe vóór de opties autoStart=&quot;true&quot; voor elke module (mta, start, enz.).
+>Om dit te doen, geef het de configuratiedossier van uw instantie uit (**config-dev.xml**), dan voeg &quot;_&quot;karakter vóór autoStart= &quot;waar&quot;opties voor elke module (mta, staat, enz.) toe.
 
 Voer het volgende bevel in werking om het proces van het Web te beginnen:
 
@@ -223,11 +223,11 @@ Om de configuratie van het doelmilieu gegevensbestand (dev) in te voeren:
 1. Open de beheerconsole van de database en wis de externe accounts (table nms:extAccount) waarvan de id niet 0 is (@id &lt;> 0).
 1. Importeer in de Adobe Campaign-console het pakket options_dev.xml dat eerder is gemaakt via de functionaliteit van het importpakket.
 
-   Controleer of de opties inderdaad zijn bijgewerkt in het gedeelte **[!UICONTROL Administration > Platform > Options]** knooppunt.
+   Controleer of de opties inderdaad zijn bijgewerkt in het knooppunt **[!UICONTROL Administration > Platform > Options]** .
 
 1. Importeer in de Adobe Campaign-console het bestand extaccount_dev.xml dat eerder is gemaakt via de functionaliteit voor het importeren van pakketten
 
-   Controleer of er inderdaad externe databases zijn geïmporteerd in de **[!UICONTROL Administration > Platform > External accounts]** .
+   Controleer of externe databases inderdaad zijn geïmporteerd in de **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Stap 9 - Start alle processen opnieuw en wijzig gebruikers (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

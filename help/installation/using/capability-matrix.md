@@ -4,7 +4,7 @@ title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 17%
@@ -19,7 +19,7 @@ Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschi
 
 Deze pagina toont de belangrijkste verschillen tussen gehoste (Managed Services) en on-premise implementaties. De specifieke eigenschappen van hybride plaatsingen hangen van de elementen af die door Adobe worden ontvangen en in uw gebouwen worden ontvangen.
 
-De verschillende hostingmodellen zijn geïntroduceerd [in deze sectie](../../installation/using/hosting-models.md).
+De verschillende ontvangende modellen worden geïntroduceerd [ in deze sectie ](../../installation/using/hosting-models.md).
 
 ## Beschikbaarheid per implementatiemodel {#capability-matrix}
 
@@ -41,14 +41,14 @@ De verschillende hostingmodellen zijn geïntroduceerd [in deze sectie](../../ins
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign biedt de **Federale gegevenstoegang** (FDA) om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
+Adobe Campaign verstrekt de **Federated optie van de Toegang van Gegevens** (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen: u kunt tot externe gegevens toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen. [Meer informatie](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Meer informatie in [Matrix voor cameracompatibiliteit](../../rn/using/compatibility-matrix.md).
+>Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Leer meer in [ de Matrijs van de Verenigbaarheid van de Campagne ](../../rn/using/compatibility-matrix.md).
 >
 
-**Zie ook**
+**zie ook**
 
 * [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
 * [Aanvullende informatie ](../../rn/using/latest-release.md)

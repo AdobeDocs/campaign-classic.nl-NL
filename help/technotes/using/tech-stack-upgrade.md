@@ -4,7 +4,7 @@ title: Technote - Adobe Campaign-systeemupgrades
 description: Adobe Campaign-systeemupgrade
 feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 4%
@@ -15,22 +15,22 @@ ht-degree: 4%
 
 De campagneinfrastructuur is afhankelijk van systemen van derden die regelmatig met de meest recente versies en correcties moeten worden bijgewerkt. Deze updates zijn verplicht om de continuïteit van de service en veilige Campagneomgevingen tegen beveiligingsrisico&#39;s te garanderen. Daarnaast is een Campagne-upgrade vereist om te zorgen voor compatibiliteit met systeemwijzigingen van derden.
 
-Als **Klant voor gehoste of beheerde Cloud Servicen**, informeert de Adobe u over deze upgrades wanneer deze nodig zijn. U moet uw omgevingen upgraden in overeenstemming met de aanbevelingen om naleving te garanderen.
+Als a **Gehoste of Beheerde klant van Cloud Servicen**, informeert de Adobe u over deze verbeteringen wanneer zij nodig zijn. U moet uw omgevingen upgraden in overeenstemming met de aanbevelingen om naleving te garanderen.
 
-Als **Op locatie of hybride klant**, raadt de Adobe u ten zeerste aan om uw systeem- en campagneversies volgens dezelfde kalender te upgraden.
+Als **op-gebouw of Hybride klant**, adviseert de Adobe hoogst dat u uw systeem en de versies van de Campagne volgens de zelfde kalender bevordert.
 
-Om veiligheidsredenen moet u [De nieuwste build voor campagne installeren](#ac-upgrade)en upgrade vervolgens uw [besturingssysteem](#os-upgrade) en/of uw [Relation Database Management System (RDBMS)](#pg-upgrade).
+Voor veiligheidsredenen, moet u [ de recentste Bouwstijl van de Campagne ](#ac-upgrade) installeren, en dan uw [ werkend systeem ](#os-upgrade) en/of uw [ Systeem van het Beheer van het Gegevensbestand van de Verhouding (RDBMS) ](#pg-upgrade) bevorderen.
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen kunt u contact opnemen met [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md).
+>Voor om het even welke vragen over deze veranderingen, de Zorg van de Klant van de Adobe [ ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [ verbetering FAQ van de Bouwstijl ](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Verbetering van campagne-build {#ac-upgrade}
 
 **Heeft dit gevolgen voor u?**
 
-Als de [besturingssysteemupgrade](#os-upgrade) en/of de [upgrade van databasesysteem](#pg-upgrade) hieronder gedetailleerd, moet u uw Campagneomgevingen upgraden naar [de nieuwste versie 7.3.2](../../rn/using/latest-release.md#release-7-3-2), die compatibel is met deze systemen.
+Als u door de [ werkend systeemverbetering ](#os-upgrade) en/of de [ hieronder gedetailleerde verbetering van het gegevensbestandsysteem ](#pg-upgrade) wordt beïnvloed, moet u uw milieu&#39;s van de Campagne aan [ recentste versie 7.3.2 ](../../rn/using/latest-release.md#release-7-3-2) bevorderen, die met deze systemen compatibel is.
 
 **Hoe kan ik bijwerken?**
 
@@ -43,7 +43,7 @@ Als de [besturingssysteemupgrade](#os-upgrade) en/of de [upgrade van databasesys
 
 **Heeft dit gevolgen voor u?**
 
-Als u Campagne op een Debian werkend systeem in werking stelt, om van de recentste beveiligingsupdates van Debian te profiteren, moet u uw infrastructuur van de Campagne verplaatsen naar **Debian 11**. De beveiligingsondersteuning voor Debian 9 is beschikbaar tot 30 juni 2023.
+Als u Campagne op een Debian werkend systeem in werking stelt, om van recentste Debian veiligheidsupdates te profiteren, moet u uw infrastructuur van de Campagne aan **Debian 11** bewegen. De beveiligingsondersteuning voor Debian 9 is beschikbaar tot 30 juni 2023.
 
 **Hoe kan ik bijwerken?**
 
@@ -55,7 +55,7 @@ Als u Campagne op een Debian werkend systeem in werking stelt, om van de recents
 
 **Heeft dit gevolgen voor u?**
 
-Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u bevorderen om **PostgreSQL 14**. Merk op dat PostgreSQL 11 eind van het Leven op 9 November 2023 zal bereiken.
+Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovaties en veiligheidsupdates te profiteren PostgreSQL, moet u aan **PostgreSQL 14** bevorderen. Merk op dat PostgreSQL 11 eind van het Leven op 9 November 2023 zal bereiken.
 
 **Hoe kan ik bijwerken?**
 
@@ -68,5 +68,5 @@ Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovat
 
 * [Upgrade uw omgeving](../../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
-* [Download de nieuwste build van het Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [ Download het recentste Campaign Classic bouwt ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)

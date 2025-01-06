@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 2%
@@ -17,14 +17,14 @@ ht-degree: 2%
 
 # Integratie in een webserver voor Windows {#integration-into-a-web-server-for-windows}
 
-Adobe Campaign bevat Apache Tomcat die via HTTP (en SOAP) fungeert als ingangspunt in de toepassingsserver.
+Adobe Campaign bevat Apache Tomcat, die via HTTP (en SOAP) fungeert als ingangspunt in de toepassingsserver.
 
 U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen.
 
 In dit geval:
 
-* de standaard luisterpoort is 8080. Als u deze wilt wijzigen, raadpleegt u [deze sectie](../../installation/using/configure-tomcat.md).
-* De clientconsoles maken vervolgens verbinding met een URL, zoals ```https:// `<computer>`:8080```.
+* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [ deze sectie ](../../installation/using/configure-tomcat.md).
+* De client consoles maken vervolgens verbinding met een URL zoals ```https:// `<computer>`:8080``` .
 
 Nochtans, voor veiligheid en beleidsredenen, adviseren wij gebruikend een specifieke server van het Web als belangrijkste ingangspunt voor het verkeer van HTTP wanneer de computer die Adobe Campaign in werking stelt op Internet wordt blootgesteld en u wenst om toegang tot de console buiten uw netwerk te openen.
 
@@ -52,17 +52,17 @@ Ga als volgt te werk om Adobe Campaign te integreren met de Microsoft IIS-webser
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** Met script kunt u automatisch de bronnen configureren die door de Adobe Campaign-server worden gebruikt in de virtuele directory die we zojuist hebben gemaakt. Dubbelklik op de knop **iis_neolane_setup.vbs** bestand in het dialoogvenster `[INSTALL]\conf` map, waar `[INSTALL]` is het pad voor toegang tot de installatiemap van Adobe Campaign.
+1. A **VBS** manuscript laat u toe om de middelen automatisch te vormen die door de server van Adobe Campaign op de virtuele folder worden gebruikt die wij net hebben gecreeerd. Om het te lanceren, klik het {**dossier 0} is_neolane_setup.vbs dat in de `[INSTALL]\conf` omslag wordt gevestigd, waar `[INSTALL]` de weg voor de toegang tot van de de installatiemap van Adobe Campaign is.**
 
    >[!NOTE]
    >
    >U moet als beheerder worden aangemeld om het manuscript in werking te stellen VBS of het manuscript uit te voeren als beheerder.
 
-   Klikken **[!UICONTROL OK]** als de server van het Web als het volgen omleidingsserver wordt gebruikt, anders klik **[!UICONTROL Cancel]**.
+   Klik op **[!UICONTROL OK]** als de webserver wordt gebruikt als een omleidingsserver voor tekstspatiëring. Klik anders op **[!UICONTROL Cancel]** .
 
    Wanneer de veelvoudige plaatsen reeds op de server van het Web worden gevormd, wordt een middenpagina getoond om te specificeren op welke Website de installatie van toepassing is: ga het aantal verbonden aan de plaats in en klik **[!UICONTROL OK]**.
 
-1. In de **[!UICONTROL Content View]** tabblad, zorgt u ervoor dat de website correct is geconfigureerd met de Adobe Campaign-bronnen:
+1. Controleer in het tabblad **[!UICONTROL Content View]** of de website correct is geconfigureerd met de Adobe Campaign-bronnen:
 
    Start Microsoft IIS opnieuw als de structuur niet wordt weergegeven.
 
@@ -72,11 +72,11 @@ Vervolgens moet u de beveiligingsinstellingen configureren voor de ISAPI DLL en 
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Selecteer de **[!UICONTROL Features View]** en dubbelklikt u op de knop **Verificatie** koppeling.
+1. Selecteer het **[!UICONTROL Features View]** lusje en klik de **Authentificatie** verbinding tweemaal.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. In de **Directorybeveiliging** van de Website, zorg ervoor dat de anonieme toegang wordt toegelaten. Klik indien nodig op de knop **[!UICONTROL Edit]** koppelen om de instellingen te wijzigen.
+1. In het **lusje van de Veiligheid van de Folder** van de Website, zorg ervoor dat de anonieme toegang wordt toegelaten. Klik zo nodig op de koppeling **[!UICONTROL Edit]** om de instellingen te wijzigen.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ U moet nu testen of de configuratie correct is.
 
 Hiervoor volgt u de volgende procedure:
 
-1. Start de Microsoft IIS-server opnieuw met de **iisreset** opdrachtregel.
+1. Start de Microsoft IIS-server opnieuw met behulp van de **iisreset** -opdrachtregel.
 
 1. Start de Adobe Campaign-service en controleer of deze actief is.
 
@@ -119,7 +119,7 @@ U kunt ook ervoor zorgen ISAPI DLL correct wordt geladen.
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Bewerk de ISAPI-filters voor de Adobe Campaign-site door op de knop **[!UICONTROL Driver mapping]** pictogram.
+1. Bewerk de ISAPI-filters voor de Adobe Campaign-site door op het pictogram **[!UICONTROL Driver mapping]** te klikken.
 1. Controleer de inhoud van het ISAPI-filter.
 
 
@@ -129,9 +129,9 @@ Wanneer het vormen van de server van het Web IIS, is een grens van ongeveer 28 M
 
 Dit kan van invloed zijn op Adobe Campaign, vooral als u bestanden wilt uploaden die groter zijn dan deze limiet.
 
-Als u bijvoorbeeld een **Gegevens laden (bestand)** Typ activiteit in een werkstroom om een 50 MB dossier in te voeren, zal een fout de werkschema tegenhouden correct te presteren.
+Bijvoorbeeld, als u het laden van a **Gegevens (dossier)** typeactiviteit in een werkschema gebruikt om een 50 MB dossier in te voeren, zal een fout het werkschema van correct het uitvoeren tegenhouden.
 
 In dit geval moet u deze limiet verhogen.
 
-Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;Hoe kan&quot;sectie van [Microsoft-documentatie](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;HowTo&quot;sectie van de [ documentatie van Microsoft ](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/) {target="_blank"}.
 

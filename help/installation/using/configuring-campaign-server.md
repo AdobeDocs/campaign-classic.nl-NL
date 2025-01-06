@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -23,9 +23,9 @@ In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen w
 
 ## Beperkingen
 
-Deze procedures zijn beperkt tot **op locatie**/**hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
+Deze procedures zijn beperkt tot **op-gebouw**/ **hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **gehost** implementaties, server-side instellingen kunnen alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld binnen [Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Voor **ontvangen** plaatsingen, server-zijmontages kunnen door Adobe slechts worden gevormd. Nochtans, kunnen sommige montages opstelling binnen [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Raadpleeg de volgende secties voor meer informatie:
 
@@ -35,26 +35,26 @@ Raadpleeg de volgende secties voor meer informatie:
 
 ## Configuratiebestanden
 
-Campaign Classic configuratiebestanden worden opgeslagen in het dialoogvenster **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+De configuratiedossiers van het Campaign Classic worden opgeslagen in de **conf** omslag van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
-* **serverConf.xml**: algemene configuratie voor alle instanties. Dit bestand combineert de technische parameters van de Adobe Campaign-server: deze worden door alle instanties gedeeld. Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters die in dit [sectie](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** waarbij **instance** is de naam van de instantie): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
+* **serverConf.xml**: algemene configuratie voor alle instanties. Dit bestand combineert de technische parameters van de Adobe Campaign-server: deze worden door alle instanties gedeeld. Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knopen en de parameters en vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+* **config- `<instance>` .xml** (waar **instantie** de naam van de instantie) is: specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 
 ## Configuratiebereik
 
 Vorm of pas de server van de Campagne afhankelijk van uw behoeften en configuratie aan. U kunt:
 
-* Beveilig de [Interne id](#internal-identifier)
-* Inschakelen [Campagneprocessen](#enabling-processes)
-* Configureren [URL-machtigingen](url-permissions.md)
-* Definiëren [Beveiligingszones](security-zones.md)
-* Configureren [Tomcat-instellingen](configure-tomcat.md)
-* Aanpassen [Leveringsparameters](configure-delivery-settings.md)
-* Definiëren [Dynamische paginabeveiliging en -bedekkingen](#dynamic-page-security-and-relays)
-* De lijst met [Externe opdrachten toegestaan](#restricting-authorized-external-commands)
-* Instellen [Overbodige tekstspatiëring](#redundant-tracking)
-* Beheren [Hoge beschikbaarheid en workflowaffiniteit](#high-availability-workflows-and-affinities)
-* Bestandsbeheer configureren - [Meer informatie](file-res-management.md)
+* Beveilig het [ Interne herkenningsteken ](#internal-identifier)
+* Laat [ processen van de Campagne ](#enabling-processes) toe
+* Vorm [ Toestemmingen URL ](url-permissions.md)
+* Bepaal [ Gebieden van de Veiligheid ](security-zones.md)
+* Vorm [ Tomcat montages ](configure-tomcat.md)
+* Pas [ parameters van de Levering ](configure-delivery-settings.md) aan
+* Bepaal [ Dynamische paginaveiligheid en relais ](#dynamic-page-security-and-relays)
+* Beperk de lijst van [ Toegestane externe bevelen ](#restricting-authorized-external-commands)
+* Opstelling [ Overbodige het volgen ](#redundant-tracking)
+* Beheer [ Hoge beschikbaarheid en werkschemaaffiniteiten ](#high-availability-workflows-and-affinities)
+* Vorm dossierbeheer - [ Leer meer ](file-res-management.md)
    * Uploadbestandsindeling beperken
    * Toegang tot openbare middelen toestaan
    * Proxyverbinding configureren
@@ -63,7 +63,7 @@ Vorm of pas de server van de Campagne afhankelijk van uw behoeften en configurat
 
 ## Interne id {#internal-identifier}
 
-De **internal** identifier is een technische aanmelding die voor installatie-, beheer- en onderhoudsdoeleinden moet worden gebruikt. Deze aanmelding is niet gekoppeld aan een instantie.
+Het **interne** herkenningsteken is technische login die voor installatie, beleid en onderhoudsdoeleinden moet worden gebruikt. Deze aanmelding is niet gekoppeld aan een instantie.
 
 Operatoren die verbinding hebben met deze aanmelding, hebben alle rechten in alle gevallen. Deze aanmelding heeft geen wachtwoord in het geval van een nieuwe installatie. U moet dit wachtwoord handmatig definiëren.
 
@@ -87,15 +87,15 @@ Confirmation: XXXX
 
 ## Processen inschakelen {#enabling-processes}
 
-Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via de **config-default.xml** en **`config-<instance>.xml`** bestanden.
+De processen van Adobe Campaign op de server worden toegelaten (en onbruikbaar gemaakt) via **config-default.xml** en **`config-<instance>.xml`** dossiers.
 
-Als u de wijzigingen op deze bestanden wilt toepassen en de Adobe Campaign-service is gestart, moet u de opdracht **nlserver config-reload** gebruiken.
+Om de veranderingen in deze dossiers toe te passen, als de dienst van Adobe Campaign is begonnen, moet u **in werking stellen nlserver config - herlaadt** bevel.
 
 Er zijn twee typen processen: meerdere instanties en één instantie.
 
-* **meerdere instanties**: er is één proces gestart voor alle instanties. Dit is het geval voor **web**, **syslogd** en **trackinglogd** processen.
+* **multi-instantie**: één enkel proces is begonnen voor alle instanties. Dit is het geval voor **Web**, **syslogd** en **volglogd** processen.
 
-  Enablement kan van worden gevormd **config-default.xml** bestand.
+  Enablement kan van het {**dossier worden gevormd 0} config-default.xml.**
 
   Adobe Campaign-server declareren voor toegang tot clientconsoles en voor omleiding (tracking):
 
@@ -106,9 +106,9 @@ Er zijn twee typen processen: meerdere instanties en één instantie.
   <trackinglogd autoStart="true"/>
   ```
 
-  In dit voorbeeld wordt het bestand bewerkt met een **vi** in Linux. Het kan worden bewerkt met elke willekeurige **.txt** of **.xml** editor.
+  In dit voorbeeld, wordt het dossier uitgegeven gebruikend a **vi** bevel in Linux. Het kan worden uitgegeven gebruikend om het even welke **.txt** of **.xml** redacteur.
 
-* **mono-instantie**: er wordt één proces gestart voor elke instantie (modules: **mta**, **wfserver**, **inMail**, **sms** en **stat**).
+* **mono-instantie**: één proces is begonnen voor elke instantie (modules: **mta**, **wfserver**, **inMail**, **sms** en **staat**).
 
   Enablement kan worden gevormd gebruikend het configuratiedossier van de instantie:
 
@@ -125,28 +125,28 @@ Er zijn twee typen processen: meerdere instanties en één instantie.
   <stat autoStart="true"/>
   ```
 
-**Campagne voor gegevensopslag**
+**de gegevensopslag van de Campagne**
 
-U kunt de opslagmap configureren (**var** directory) van Adobe Campaign-gegevens (logbestanden, downloads, omleidingen, enz.). Om dit te doen, gebruik **XTK_VAR_DIR** systeemvariabele:
+U kunt de opslagfolder (**var** folder) van de gegevens van Adobe Campaign (logboeken, downloads, redirection, enz.) vormen. Om dit te doen, gebruik **XTK_VAR_DIR** systeemvariabele:
 
-* Geef in Windows de volgende waarde op in het dialoogvenster **XTK_VAR_DIR** systeemvariabele
+* In Vensters, wijs op de volgende waardewaarde in **XTK_VAR_DIR** systeemvariabele
 
   ```
   D:\log\AdobeCampaign
   ```
 
-* Ga in Linux naar de **klant.sh** en vermelden: **XTK_VAR_DIR=/app/log/AdobeCampaign exporteren**.
+* In Linux, ga naar het {**dossier 0} customer.sh en wijs aan:** uitvoer XTK_VAR_DIR=/app/log/AdobeCampaign **.**
 
-  Raadpleeg voor meer informatie hierover [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Voor meer op dit, verwijs naar [ Persoonlijk parameters ](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
 
-Standaard worden alle dynamische pagina&#39;s automatisch gekoppeld aan de **lokaal** Tomcat-server van de computer waarvan de webmodule is gestart. Deze configuratie is ingegaan in **`<url>`** sectie van de vraag relaisconfiguratie voor **ServerConf.xml** bestand.
+Door gebrek, zijn alle dynamische pagina&#39;s automatisch verwant met de **lokale** server van Tomcat van de machine de waarvan module van het Web is begonnen. Deze configuratie is ingegaan in de **`<url>`** sectie van de configuratie van het vraagrelais voor het **ServerConf.xml** dossier.
 
-U kunt uitvoering van de dynamische pagina op een **extern** server; als de module Web niet op de computer wordt geactiveerd. Om dit te doen, moet u vervangen **localhost** met de naam van de verre computer voor JSP en JSSP, de toepassingen van het Web, rapporten en koorden.
+U kunt uitvoering van de dynamische pagina op a **verre** server aflossen; als de module van het Web niet op de computer wordt geactiveerd. Om dit te doen, moet u **localhost** met de naam van de verre computer voor JSP en JSSP, de toepassingen van het Web, rapporten en koorden vervangen.
 
-Raadpleeg voor meer informatie over de verschillende beschikbare parameters de **serverConf.xml** configuratiebestand.
+Voor meer op de diverse beschikbare parameters, verwijs naar het **serverConf.xml** configuratiedossier.
 
 Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
@@ -156,10 +156,10 @@ Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
 Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
-* /nl/jsp/**soaprouter.jsp**: verbinding met clientconsole en webservices (SOAP API&#39;s),
-* /nl/jsp/**m.jsp**: pagina&#39;s spiegelen,
+* /nl/jsp/**soaprouter.jsp**: de de dienstenverbindingen van de cliëntconsole en van het Web (SOAP APIs),
+* /nl/jsp/**m.jsp**: spiegel pagina&#39;s,
 * /nl/jsp/**opening van een sessie.jsp**: Web-based toegang tot rapporten en aan plaatsing van de cliëntconsole,
-* /nl/jsp/**s.jsp** : Virtuele marketing gebruiken (sponsoring en sociale netwerken).
+* /nl/jsp/**s.jsp** : Het gebruiken van virale marketing (het sponsoren en sociale netwerken).
 
 De JSSPs die voor het Mobiele Kanaal van de App wordt gebruikt zijn als volgt:
 
@@ -168,7 +168,7 @@ De JSSPs die voor het Mobiele Kanaal van de App wordt gebruikt zijn als volgt:
 
 **Voorbeeld:**
 
-Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. Om dit te doen, beperkt eenvoudig de uitvoering van **soaprouter.jsp** en alleen toestaan dat spiegelpagina&#39;s, virale links, webformulieren en publieke middelen worden uitgevoerd.
+Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. Om dit te doen, eenvoudig de uitvoering van **soaprouter.jsp** beperken en slechts de uitvoering van spiegelpagina&#39;s, virale verbindingen, Webvormen en openbare middelen toestaan.
 
 De parameters zijn als volgt:
 
@@ -186,7 +186,7 @@ De parameters zijn als volgt:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In dit voorbeeld wordt **`<IP_addresses>`** De waarde valt samen met de lijst van IP adressen (die door koma&#39;s worden gescheiden) die worden gemachtigd om de relaismodule voor dit masker te gebruiken.
+In dit voorbeeld valt de waarde **`<IP_addresses>`** samen met de lijst met IP-adressen (gescheiden door komma&#39;s) die zijn geautoriseerd voor het gebruik van de relaismodule voor dit masker.
 
 >[!NOTE]
 >
@@ -196,12 +196,12 @@ In dit voorbeeld wordt **`<IP_addresses>`** De waarde valt samen met de lijst va
 
 Standaard worden niet alle HTTP-headers weergegeven. U kunt specifieke kopballen in de antwoorden toevoegen die door relais worden verzonden. Dit doet u als volgt:
 
-1. Ga naar de **serverConf.xml** bestand.
-1. In de **`<relay>`** , ga naar de lijst met afgeloste HTTP-headers.
-1. Voeg een **`<responseheader>`** element met de volgende kenmerken:
+1. Ga naar het {**dossier 0} serverConf.xml.**
+1. Ga in het knooppunt **`<relay>`** naar de lijst met afgeloste HTTP-headers.
+1. Voeg een **`<responseheader>`** -element met de volgende kenmerken toe:
 
-   * **name**: naam koptekst
-   * **value**: naam van waarde.
+   * **naam**: kopbalnaam
+   * **waarde**: waardenaam.
 
    Bijvoorbeeld:
 
@@ -232,9 +232,9 @@ sh
 >
 >Deze lijst is niet limitatief.
 
-In de **exec** knooppunt van het serverconfiguratiebestand, moet u verwijzen naar het eerder gemaakte bestand in het dialoogvenster **blacklistFile** kenmerk.
+In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerde dossier in het **blacklistFile** attribuut van verwijzingen voorzien.
 
-**Alleen voor Linux**: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt ingesteld in het dialoogvenster **exec** knooppunt van het configuratiebestand. Alle parameters die beschikbaar zijn in het dialoogvenster **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+**slechts voor Linux**: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specifiek aan het uitvoeren van externe bevelen specificeert om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ Wanneer de veelvoudige servers voor omleiding worden gebruikt, moeten zij met el
 >
 >Wanneer u de standaard- of bedrijfsarchitectuur gebruikt, moet de hoofdtoepassingsserver zijn geautoriseerd om trackinggegevens te uploaden naar elke computer.
 
-De URL&#39;s van de redundante servers moeten worden opgegeven in de omleidingsconfiguratie via de **serverConf.xml** bestand.
+URLs van de overtollige servers moet in de omleidingsconfiguratie, via het **serverConf.xml** dossier worden gespecificeerd.
 
 **Voorbeeld:**
 
@@ -272,9 +272,9 @@ De URL&#39;s van de redundante servers moeten worden opgegeven in de omleidingsc
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-De **enableIf** Deze eigenschap is optioneel (standaard leeg) en u kunt de verbinding alleen inschakelen als het resultaat true is. Dit laat u een identieke configuratie op alle omleidingsservers verkrijgen.
+Het **enableIf** bezit is facultatief (leeg door gebrek) en staat u toe om de verbinding toe te laten slechts als het resultaat waar is. Dit laat u een identieke configuratie op alle omleidingsservers verkrijgen.
 
-Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **hostnaam -s**.
+Om hostname van de computer te verkrijgen, stel het volgende bevel in werking: **hostname - s**.
 
 
 
@@ -282,13 +282,13 @@ Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **host
 
 U kunt verschillende workflowservers (wfserver) configureren en deze op twee of meer computers distribueren. Als u dit type architectuur kiest, configureert u de verbindingsmodus van de taakverdelingsmechanisme op basis van de Adobe Campaign-toegang.
 
-Selecteer de optie **taakverdelingsmechanisme** om de verbindingstijden te beperken.
+Voor toegang van het Web, selecteer de **wijze van het taakverdelingsmechanisme** om verbindingstijden te beperken.
 
-Kies bij toegang via de Adobe Campaign-console de optie **hash** of **kleverige ip** -modus. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
+Als de toegang tot via de console van Adobe Campaign, **knoeiboel** of **kleverige ip** wijze kiezen. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
 
 U kunt ervoor kiezen om de uitvoering van een workflow of een workflowactiviteit op een bepaalde computer af te dwingen. Hiervoor moet u een of meer affiniteiten definiëren voor de betreffende workflow of activiteit.
 
-1. Maak de affiniteit van de workflow of activiteit door deze in te voeren in het dialoogvenster **[!UICONTROL Affinity]** veld.
+1. Maak de affiniteiten van de workflow of activiteit door deze in te voeren in het veld **[!UICONTROL Affinity]** .
 
    U kunt elke affiniteitsnaam kiezen, maar gebruik geen spaties of leestekens. Geef verschillende namen op als u verschillende servers gebruikt.
 
@@ -298,8 +298,8 @@ U kunt ervoor kiezen om de uitvoering van een workflow of een workflowactiviteit
 
    De vervolgkeuzelijst bevat eerder gebruikte affiniteiten. Het wordt voltooid in tijd met de verschillende ingegaan waarden.
 
-1. Open de **nl6/conf/config-`<instance>.xml`** bestand.
-1. Wijzig de lijn die met de **[!UICONTROL wfserver]** als volgt:
+1. Open het **nl6/conf/config-`<instance>.xml`** dossier.
+1. Wijzig de lijn die overeenkomt met de module **[!UICONTROL wfserver]** als volgt:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -325,9 +325,9 @@ Standaard worden de verschillende Adobe Campaign-processen elke dag om zes uur (
 
 U kunt deze configuratie echter wijzigen.
 
-Ga om dit te doen naar de **serverConf.xml** bestand, bevindt zich in het **conf** opslagplaats van uw installatie.
+Om dit te doen, ga naar het **serverConf.xml** dossier, dat in de **wordt gevestigd conf** bewaarplaats van uw installatie.
 
-Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** kenmerk. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
+Elk die proces in dit dossier wordt gevormd heeft a **processRestartTime** attributen. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
 
 >[!IMPORTANT]
 >

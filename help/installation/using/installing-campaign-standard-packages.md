@@ -5,7 +5,7 @@ description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 feature: Installation, Application Settings
 badge-v7-prem: label="Alleen op locatie/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 1%
@@ -240,7 +240,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
 
 ### Message Center-pakket {#message-center-package}
 
-U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, LINE, enz.) voordat u het Transactiebericht installeert (Message Center-pakket). Als u een project van het Centrum van het Bericht van het e-mail-enige bent begonnen, en een nieuw kanaal daarna moet toevoegen, moet u deze stappen volgen:
+U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App kanaal, LIJN, enz.) alvorens Transactieberichten (het pakket van het Centrum van het Bericht) te installeren. Als u een project van het Centrum van het Bericht van het e-mail-enige bent begonnen, en een nieuw kanaal daarna moet toevoegen, moet u deze stappen volgen:
 
 1. Installeer het nieuwe kanaal, bijvoorbeeld het **Mobiele kanaal**, gebruikend de medewerker van de pakketinvoer ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importeer het bestand ( **[!UICONTROL Tools > Advanced > Import package > File]** ) en selecteer:

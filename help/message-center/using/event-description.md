@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Beschrijving van een gebeurtenis
-description: Leer hoe de transactie overseinengebeurtenissen in Adobe Campaign Classic gebruikend de methodes van de ZEEP worden beheerd
+description: Leer hoe de transactie overseinengebeurtenissen in Adobe Campaign Classic gebruikend de SOAP methodes worden beheerd
 feature: Transactional Messaging, Message Center
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -20,25 +20,25 @@ ht-degree: 0%
 
 ## Transactioneel berichtengegevensmodel {#about-transactional-messaging-datamodel}
 
-Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en kunt u gebeurtenissen in real time aan de ene kant beheren, en gebeurtenissen in batch aan de andere kant.
+Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [ lijsten ](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten de zelfde gebieden en laten u gebeurtenissen in real time aan de ene kant, en partijgebeurtenissen aan de andere kant beheren.
 
-## SOAP-methoden {#soap-methods}
+## SOAP {#soap-methods}
 
-Deze sectie detailleert de methodes van de ZEEP verbonden aan de schema&#39;s van de transactionele berichtmodule.
+Deze sectie detailleert de SOAP methodes verbonden aan de schema&#39;s van de transactionele berichtmodule.
 
-Twee **PushEvent** of **PushEvents** SOAP-methoden zijn gekoppeld aan de twee **nms:rtEvent** en **nms:BatchEvent** dataschema&#39;s. Het is het informatiesysteem dat bepaalt of een gebeurtenis een &quot;partij&quot;of &quot;real time&quot;type is.
+Twee **PushEvent** of **PushEvents** SOAP methodes zijn verbonden met twee **nms:rtEvent** en **nms:BatchEvent** dataschemas. Het is het informatiesysteem dat bepaalt of een gebeurtenis een &quot;partij&quot;of &quot;real time&quot;type is.
 
 * **PushEvent** laat u één enkele gebeurtenis in het bericht opnemen,
-* **PushEvents** Hiermee kunt u een reeks gebeurtenissen in het bericht invoegen.
+* **PushEvents** laat u een reeks gebeurtenissen in het bericht opnemen.
 
 Het WSDL-pad voor toegang tot beide methoden is:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** om tot het typeschema in real time toegang te hebben.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** om het batchtypeschema te openen.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** om tot het batchtypeschema toegang te hebben.
 
-Zie voor meer informatie over het genereren van een WSDL-bestand [deze sectie](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+Voor meer bij het produceren van een dossier van WSDL, zie [ deze sectie ](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-Beide methoden bevatten een **`<urn:sessiontoken>`** element voor het het programma openen aan de transactionele overseinenmodule. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
+Beide methoden bevatten een **`<urn:sessiontoken>`** -element voor het aanmelden bij de module voor transactieberichten. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een opening van een sessie SOAP vraag uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
 
 Als u een taakgebalanceerde server gebruikt, kunt u de gebruiker/Wachtwoord authentificatie (op het niveau van het bericht van RT) gebruiken. Voorbeeld:
 
@@ -54,9 +54,9 @@ Als u een taakgebalanceerde server gebruikt, kunt u de gebruiker/Wachtwoord auth
 </PushEvent>
 ```
 
-De **PushEvent** methode bestaat uit een **`<urn:domevent>`** parameter die de gebeurtenis bevat.
+De **methode PushEvent** wordt samengesteld uit een **`<urn:domevent>`** parameter die de gebeurtenis bevat.
 
-De **PushEvents** methode bestaat uit een **`<urn:domeventcollection>`** parameter die gebeurtenissen bevat.
+De **methode PushEvents** wordt samengesteld uit een **`<urn:domeventcollection>`** parameter die gebeurtenissen bevat.
 
 Voorbeeld met PushEvent:
 
@@ -80,7 +80,7 @@ Voorbeeld met PushEvent:
 
 >[!NOTE]
 >
->Bij een oproep aan de **PushEvents** -methode, moeten we een bovenliggend XML-element toevoegen om te voldoen aan de standaard-XML. In dit XML-element worden de verschillende **`<rtevent>`** elementen in de gebeurtenis.
+>In het geval van een vraag aan de **methode PushEvents**, moeten wij een element van ouderXML toevoegen om standaardXML na te leven. In dit XML-element worden de verschillende **`<rtevent>`** -elementen in de gebeurtenis in een kader geplaatst.
 
 Voorbeeld met PushEvents:
 
@@ -106,13 +106,13 @@ Voorbeeld met PushEvents:
 </urn:PushEvents>
 ```
 
-De **`<rtevent>`** en **`<batchevent>`** elementen hebben een set kenmerken en een verplicht onderliggend element: **`<ctx>`** voor het integreren van berichtgegevens.
+De elementen **`<rtevent>`** en **`<batchevent>`** hebben een set kenmerken en een verplicht onderliggend element: **`<ctx>`** voor het integreren van berichtgegevens.
 
 >[!NOTE]
 >
->De **`<batchevent>`** Met een element kunt u de gebeurtenis toevoegen aan de wachtrij met de naam &quot;batch&quot;. De **`<rtevent>`** voegt de gebeurtenis toe aan de &quot;real time&quot; wachtrij.
+>Met het element **`<batchevent>`** kunt u de gebeurtenis toevoegen aan de wachtrij met &#39;batch&#39;. De **`<rtevent>`** voegt de gebeurtenis toe aan de &quot;real-time&quot; wachtrij.
 
-De verplichte eigenschappen van de **`<rtevent>`** en **`<batchevent>`** elementen zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
+De verplichte kenmerken van de elementen **`<rtevent>`** en **`<batchevent>`** zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
 
 `<rtevent> configuration example:`
 
@@ -120,17 +120,17 @@ De verplichte eigenschappen van de **`<rtevent>`** en **`<batchevent>`** element
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In dit voorbeeld worden twee kanalen opgegeven: het e-mailadres en het mobiele telefoonnummer. De **wishedChannel** Hiermee kunt u het kanaal selecteren dat u wilt gebruiken wanneer u de gebeurtenis omzet in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
+In dit voorbeeld worden twee kanalen opgegeven: het e-mailadres en het mobiele telefoonnummer. **wishedChannel** laat u het kanaal selecteren u wenst om te gebruiken wanneer het omzetten van de gebeurtenis in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
 
-Als u de levering van een gebeurtenis wilt uitstellen, voegt u de opdracht **[!UICONTROL scheduled]** gevolgd door de datum van voorkeur. De gebeurtenis wordt op deze datum omgezet in een bericht.
+Als u de levering van een gebeurtenis wilt uitstellen, voegt u het veld **[!UICONTROL scheduled]** toe, gevolgd door de datum van voorkeur. De gebeurtenis wordt op deze datum omgezet in een bericht.
 
 We raden u aan de kenmerken @wishedChannel en @emailFormat in te vullen met numerieke waarden. De functietabel die numerieke waarden en labels koppelt, vindt u in de beschrijving van het gegevensschema.
 
 >[!NOTE]
 >
->In de beschrijving van de **nms:rtEvent** en **nms:BatchEvent** dataschema.
+>Een gedetailleerde beschrijving van alle erkende attributen evenals hun waarden is beschikbaar in de beschrijving van **nms:rtEvent** en **nms:BatchEvent** dataschema.
 
-De **`<ctx>`** -element bevat de berichtgegevens. De XML-inhoud is open, wat betekent dat deze kan worden geconfigureerd op basis van de inhoud die moet worden geleverd.
+Het element **`<ctx>`** bevat de berichtgegevens. De XML-inhoud is open, wat betekent dat deze kan worden geconfigureerd op basis van de inhoud die moet worden geleverd.
 
 >[!NOTE]
 >
@@ -157,13 +157,13 @@ Gegevensvoorbeeld:
     </ctx>
 ```
 
-## Informatie die wordt geretourneerd door de SOAP-aanroep {#information-returned-by-the-soap-call}
+## Informatie die door de SOAP wordt geretourneerd {#information-returned-by-the-soap-call}
 
 Wanneer Adobe Campaign een gebeurtenis ontvangt, genereert het een unieke retour-id. Dit is de id van de gearchiveerde versie van de gebeurtenis.
 
 >[!IMPORTANT]
 >
->Bij het ontvangen van SOAP-aanroepen verifieert Adobe Campaign de indeling van het e-mailadres. Als een e-mailadres onjuist is opgemaakt, wordt een fout geretourneerd.
+>Bij ontvangst van SOAP vraag, verifieert Adobe Campaign het formaat van het e-mailadres. Als een e-mailadres onjuist is opgemaakt, wordt een fout geretourneerd.
 
 * Voorbeeld van een id die door de methode wordt geretourneerd wanneer de gebeurtenisverwerking is geslaagd:
 

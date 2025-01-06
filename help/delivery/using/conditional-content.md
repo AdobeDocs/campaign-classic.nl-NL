@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Personalization, Multilingual Messages
 role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 5%
@@ -24,7 +24,7 @@ Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijk
 
 In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamisch is gepersonaliseerd op basis van het geslacht en de belangen van de ontvanger.
 
-* Weergave met &quot;Mr&quot; of &quot;ms&quot; op basis van de waarde van **[!UICONTROL Gender]** veld (M of F) in de gegevensbron,
+* Weergave met &quot;Mr&quot; of &quot;ms&quot; volgens de waarde van het veld **[!UICONTROL Gender]** (M of F) in de gegevensbron,
 * Persoonlijke vergadering van een nieuwsbrief of een promotieaanbod volgens de aangegeven of geconstateerde belangen:
 
    * Rente 1 — > Blok 1
@@ -34,26 +34,26 @@ In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamis
 
 Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de waarde van een veld:
 
-1. Klik op het pictogram voor aanpassen en selecteer **[!UICONTROL Conditional content > If]**.
+1. Klik op het verpersoonlijkingspictogram en selecteer **[!UICONTROL Conditional content > If]** .
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
    De verpersoonlijkingselementen worden opgenomen in het berichtlichaam. U moet hen nu vormen.
 
-1. Vul vervolgens de parameters van het dialoogvenster **indien** expressie.
+1. Daarna, vul de parameters van **in als** uitdrukking.
 
    Dit doet u als volgt:
 
-   * Selecteer het eerste element van de expressie. **`<field>`**, (dit element wordt standaard gemarkeerd tijdens het invoegen van de opdracht **indien** (expressie) en klik op het pictogram voor aanpassen om dit te vervangen door het testveld.
+   * Selecteer het eerste element van de uitdrukking, **`<field>`**, (door gebrek, wordt dit element benadrukt tijdens toevoeging van **als** uitdrukking) en klik het verpersoonlijkingspictogram om het met het testgebied te vervangen.
 
      ![](assets/s_ncs_user_conditional_content03.png)
 
-   * Vervangen **`<value>`** met de waarde van het veld waarvoor aan de voorwaarde wordt voldaan. Deze waarde moet tussen aanhalingstekens staan.
+   * Vervang **`<value>`** door de waarde van het veld waaraan aan de voorwaarde wordt voldaan. Deze waarde moet tussen aanhalingstekens staan.
    * Geef de inhoud op die moet worden ingevoegd wanneer aan de voorwaarde wordt voldaan. Dit kan tekst, een afbeelding, een formulier, een hypertekstkoppeling enzovoort zijn.
 
      ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Klik op de knop **[!UICONTROL Preview]** tabblad om de inhoud van het bericht weer te geven op basis van de ontvanger van de zending:
+1. Klik op het tabblad **[!UICONTROL Preview]** om de inhoud van het bericht weer te geven op basis van de ontvanger van de zending:
 
    * Een ontvanger selecteren waarvoor de voorwaarde waar is:
 
@@ -63,15 +63,15 @@ Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de 
 
      ![](assets/s_ncs_user_conditional_content06.png)
 
-U kunt andere gevallen toevoegen en verschillende inhoud definiëren op basis van de waarden van een of meer velden. Om dit te doen, gebruik **[!UICONTROL Conditional content > Else]** en **[!UICONTROL Conditional content > Else if]**. Deze expressies zijn op dezelfde manier geconfigureerd als de **indien** expressie.
+U kunt andere gevallen toevoegen en verschillende inhoud definiëren op basis van de waarden van een of meer velden. Gebruik **[!UICONTROL Conditional content > Else]** en **[!UICONTROL Conditional content > Else if]** om dit te doen. Deze uitdrukkingen worden gevormd op de zelfde manier zoals **als** uitdrukking.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->Als u de JavaScript-syntaxis wilt respecteren, **%> &lt;%** tekens moeten worden verwijderd nadat ze zijn toegevoegd **Else** en **Anders indien** voorwaarden.
+>Om de syntaxis van JavaScript te respecteren, moeten **%> &lt;%** karakters na het toevoegen van **anders** en **anders worden geschrapt als** voorwaarden.
 
-Klikken **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijke inhoud weer te geven.
+Klik op **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijke inhoud weer te geven.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
@@ -79,8 +79,8 @@ Klikken **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijk
 
 In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De inhoud wordt in de ene of de andere taal weergegeven, afhankelijk van de voorkeurstaal van de ontvanger.
 
-1. Maak een e-mail en selecteer de doelpopulatie. In dit voorbeeld wordt de voorwaarde voor het weergeven van de ene versie of de andere gebaseerd op de **Taal** waarde van het profiel van de ontvanger. In dit voorbeeld worden deze waarden ingesteld op **NL**, **FR**, **ES**.
-1. Klik in de HTML-inhoud van de e-mail op de knop **[!UICONTROL Source]** kunt u de volgende code plakken en op Tab drukken:
+1. Maak een e-mail en selecteer de doelpopulatie. In dit voorbeeld, zal de voorwaarde om één versie of andere te tonen op de **Taal** waarde van het profiel van de ontvanger worden gebaseerd. In dit voorbeeld, worden deze waarden geplaatst aan **EN**, **FR**, **ES**.
+1. Klik in de inhoud van de HTML-e-mail op de tab **[!UICONTROL Source]** en plak de volgende code:
 
    ```
    <% if (language == "EN" ) { %>
@@ -101,7 +101,7 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
    <% } %>
    ```
 
-1. E-mailinhoud testen in het dialoogvenster **[!UICONTROL Preview]** door ontvangers met verschillende voorkeurstalen te selecteren.
+1. Test e-mailinhoud op het tabblad **[!UICONTROL Preview]** door ontvangers met verschillende voorkeurstalen te selecteren.
 
    >[!NOTE]
    >
@@ -113,4 +113,4 @@ Deze video laat zien hoe u voorwaardelijke content aan een levering kunt toevoeg
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Er zijn aanvullende Campaign Classic-to-video&#39;s beschikbaar [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

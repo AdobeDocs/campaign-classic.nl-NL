@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Toepassingsonderhoud {#application-maintenance}
 
-Adobe Campaign biedt een ingebouwde workflow waarmee u bepaalde onderhoudstaken voor databases kunt plannen: de **workflow voor het opschonen van databases**. Deze workflow voert de volgende taken uit:
+Adobe Campaign verstrekt een ingebouwd werkschema dat u bepaalde taken van het gegevensbestandonderhoud laat plannen: het **werkschema van de gegevensbestandschoonmaak**. Deze workflow voert de volgende taken uit:
 
 * verwijdering van verlopen records;
 * verwijdering van zwevende records en herinitialisatie van status voor verlopen objecten;
@@ -66,21 +66,21 @@ Er zijn verschillende strategieën beschikbaar:
  </thead> 
  <tbody> 
   <tr> 
-   <td> Onlinedefragmentatie<br /> </td> 
-   <td> De meeste gegevensbestandmotoren verstrekken defragmentatiemethodes.<br /> </td> 
+   <td> Online defragmentation <br /> </td> 
+   <td> De meeste gegevensbestandmotoren verstrekken defragmentation methodes.<br /> </td> 
    <td> Gebruik eenvoudig de database defragmentation methode. Deze methodes behandelen typisch integriteitskwesties door de gegevens tijdens defragmentation te sluiten.<br /> </td> 
    <td> Afhankelijk van het gegevensbestand, kunnen deze defragmentation methodes als optie RDBMS (Oracle) worden verstrekt en zijn niet altijd de meest efficiënte manier om grotere lijsten te behandelen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Reliëf en herstel<br /> </td> 
-   <td> Zet de lijst aan een dossier, schrapt de lijst in het gegevensbestand en herstelt van de stortplaats.<br /> </td> 
+   <td> Reliëf en herstel <br /> </td> 
+   <td> Zet de lijst aan een dossier neer, schrap de lijst in het gegevensbestand en herstel van de stortplaats.<br /> </td> 
    <td> Dit is de eenvoudigste manier om een tabel te defragmenteren. Ook de enige oplossing wanneer het gegevensbestand bijna volledig is.<br /> </td> 
-   <td> Aangezien de tabel wordt verwijderd en opnieuw gemaakt, kan de toepassing niet online worden gelaten, zelfs niet in de modus Alleen-lezen (de tabel is niet beschikbaar tijdens de terugzetfase).<br /> </td> 
+   <td> Aangezien de lijst wordt geschrapt en ontspannen, kan de toepassing niet online worden verlaten, zelfs op read only wijze (de lijst is niet beschikbaar tijdens de herstelt fase).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Dupliceren, naam wijzigen en neerzetten<br /> </td> 
-   <td> Hierdoor wordt een kopie van een tabel en de bijbehorende indexen gemaakt, wordt de bestaande tabel verwijderd en wordt de naam van de kopie gewijzigd zodat deze in de plaats komt.<br /> </td> 
-   <td> Deze methode is sneller dan de eerste methode, omdat er minder IO's worden gegenereerd (geen kopie als bestand en lezen van dit bestand).<br /> </td> 
+   <td> Dupliceren, naam wijzigen en neerzetten <br /> </td> 
+   <td> Dit leidt tot een exemplaar van een lijst en zijn indexen, dan laat vallen bestaande en noemt het exemplaar anders om zijn plaats te nemen.<br /> </td> 
+   <td> Deze methode is sneller dan de eerste benadering aangezien het minder IOs (geen exemplaar als dossier en gelezen van dit dossier) produceert.<br /> </td> 
    <td> Vereist tweemaal de hoeveelheid ruimte.<br /> Alle actieve processen die tijdens het proces naar de tabel worden geschreven, moeten worden gestopt. Dit heeft echter geen invloed op het leesproces, aangezien de tabel op het laatste moment na de heropbouw wordt omgewisseld. <br /> </td> 
   </tr> 
  </tbody> 

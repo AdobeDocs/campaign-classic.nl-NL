@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 3%
@@ -46,7 +46,7 @@ De verdeling van modules over verschillende machines biedt grote flexibiliteit b
 
 >[!NOTE]
 >
->Raadpleeg voor meer informatie over de verschillende architecturen de [deze sectie](../../installation/using/general-architecture.md).
+>Voor meer op de diverse architectuur, verwijs naar [ deze sectie ](../../installation/using/general-architecture.md).
 
 ## Lijst met open poorten {#list-of-open-ports}
 

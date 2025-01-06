@@ -6,7 +6,7 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 985cf088-7546-4875-8e11-cafe5bd3e323
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 13%
@@ -27,12 +27,12 @@ Overweeg de volgende instructies en voorwaarden voordat u begint met het werken 
 
 * De de schakelaartoe:voegen-op van de Analyse van het Web moet op uw milieu, door het specifieke pakket worden geïnstalleerd.
 
-   * Voor Hybride en On-premise implementaties, zorg ervoor om de leveringsstappen te volgen die in dit worden gedetailleerd [page](adobe-analytics-provisioning.md).
+   * Voor Hybride en op-gebouw implementaties, zorg ervoor om de leveringsstappen te volgen die in deze [ worden gedetailleerd pagina ](adobe-analytics-provisioning.md).
    * Als Hoster of Beheerde gebruiker van Cloud Servicen, contacteer Adobe om Campagne met de diensten en de oplossingen van Adobe Experience Cloud te verbinden.
 
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Om deze integratie mogelijk te maken, moet u uw technische account voor de Adobe maken, zoals beschreven in [deze pagina](oauth-technical-account.md).
+Om deze integratie toe te laten, moet u uw Adobe technische rekening zoals die in [ wordt gedetailleerd deze pagina ](oauth-technical-account.md) tot stand brengen.
 
-Leer hoe u met Adobe Campaign en Adobe Analytics werkt in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa) {target="_blank"} te werken.

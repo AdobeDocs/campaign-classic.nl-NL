@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 7%
@@ -51,11 +51,11 @@ Toegangsbeheer is een belangrijk onderdeel van de beveiliging. Hier volgen enkel
 
 Volg bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.) altijd de volgende richtlijnen:
 
-* **Scripts**: probeer om SQL verklaringen te vermijden, gebruik geparameterized functies in plaats van koordaaneenschakeling, vermijd SQL injectie door de SQL functies toe te voegen aan de lijst van gewenste personen te gebruiken.
+* **Scripting**: probeer om SQL verklaringen te vermijden, gebruik geparameterized functies in plaats van koordaaneenschakeling, vermijd SQL injectie door de SQL functies toe te voegen aan de lijst van gewenste personen te gebruiken.
 
-* **Het gegevensmodel beveiligen**: gebruik genoemde rechten om operatoracties te beperken, systeemfilters toe te voegen (sysFilter)
+* **beveilig het gegevensmodel**: gebruik genoemde rechten om exploitantacties te beperken, systeemfilters (sysFilter) toe te voegen
 
-* **Hoofdletters toevoegen aan webtoepassingen**: leer hoe u hoofdletters kunt toevoegen aan uw openbare bestemmingspagina&#39;s en abonnementspagina&#39;s.
+* **voegt kapitalen in Webtoepassingen** toe: leer hoe te om kapitalen in uw openbare het landen pagina&#39;s en abonnementspagina&#39;s toe te voegen.
 
 [Meer informatie](../../installation/using/scripting-coding-guidelines.md)
 
@@ -74,17 +74,17 @@ Het is ook noodzakelijk dat u de beveiliging van de database-engine volgt.
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-De configuratie moet op alle servers worden uitgevoerd. De configuratiebestanden zijn van het type **serverConf.xml** en **`config-<instance>.xml`**. Hier volgen de belangrijkste elementen die moeten worden gecontroleerd:
+De configuratie moet op alle servers worden uitgevoerd. De configuratiedossiers zijn van het type **serverConf.xml** en **`config-<instance>.xml`**. Hier volgen de belangrijkste elementen die moeten worden gecontroleerd:
 
-* **Beveiligingszones**: Vorm veiligheidsstreken zodat zij met de IP adressen van cliënten van een volmacht direct rekening houden.
+* **de streken van de Veiligheid**: Vorm veiligheidsstreken zodat zij direct met de IP adressen van cliënten van een volmacht rekening houden.
 
-* **Beveiliging bestandsupload**: beperkt de typen bestanden die naar de Adobe Campaign-server kunnen worden geüpload met een nieuw kenmerk uploadAllowList. Dit kan in het dossier van de serverconfiguratie worden gebruikt.
+* **het uploadt van het Dossier bescherming**: beperkt de types van dossiers die aan de server van Adobe Campaign kunnen worden geupload gebruikend een nieuw uploadAllowList attribuut. Dit kan in het dossier van de serverconfiguratie worden gebruikt.
 
-* **Betaling**: verbeter de relaisconfiguratie door de relaisregels voor ongebruikte modules/toepassingen te deactiveren.
+* **Verhouding**: verbeter de relaisconfiguratie door de relaisregels voor ongebruikte modules/toepassingen te deactiveren.
 
-* **Uitgaande verbindingsbeveiliging** en **Opdrachtbeperking** (server-kant)
+* **Uitgaande verbindingsbescherming** en **beperking van het Bevel** (server-kant)
 
-* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Zie de [Documentatie over de configuratie van de Campagneserver](../../installation/using/configuring-campaign-server.md) en de [Beschrijving van serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md) voor meer informatie .
+* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Verwijs naar de [ documentatie van de de serverconfiguratie van de Campagne ](../../installation/using/configuring-campaign-server.md) en de [ beschrijving van het de configuratiedossier van de Server ](../../installation/using/the-server-configuration-file.md) voor meer informatie.
 
 [Meer informatie](../../installation/using/server-configuration.md)
 
