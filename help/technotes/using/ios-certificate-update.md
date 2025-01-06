@@ -4,9 +4,9 @@ title: TechNote - Apple Push Notification service server certificate update
 description: Apple Push Notification service server certificate update
 feature: Technote, Push
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0143e0d6ebcdbd96d183ddd0c7f07beb149a9670
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 
 
-Op 29 maart 2021 heeft een infrastructuurupdate van de Apple Push Notification Service (APNs) gevolgen voor het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
+Op 17 oktober 2024 had een infrastructuurupdate van de Apple Push Notification Service (APNs) gevolgen voor Adobe Campaign Classic iOS-kanaal. Een OS configuratieverandering is **verplicht** om de stroomonderbreking van het de duwkanaal van iOS te vermijden.
 
-Meer informatie over APNs-wijzigingen [op deze pagina](https://developer.apple.com/news/?id=7gx0a2lp).
+Leer meer over APNs verandert [ in deze pagina ](https://developer.apple.com/news/?id=09za8wzy).
 
 Als gehoste klant is geen actie nodig: Adobe heeft het nieuwe basiscertificaat al in uw omgeving opgenomen.
 
-Als klant op locatie/hybride klant moet u uw configuratie bijwerken om een naadloze overgang te garanderen **vóór 29 maart 2021**.
+Als klant op-gebouw/hybride, moet u uw configuratie bijwerken om een naadloze overgang **vóór 24 februari, 2025** te verzekeren.
 
 Voer de volgende stappen uit om het nieuwe certificaat op te nemen:
 
-1. Download de **AAACCertificateServices 5/12/2020** basiscertificaat [van deze pagina](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
+1. Download **SHA-2 Woot: Het certificaat van de CertificatieAutoriteit van USERTrust RSA** wortelcertificaat [ van deze pagina ](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO).
 
 1. Controleer of het AAA-certificaat aanwezig is in zowel uw OS- als JAVA-betrouwbaarheid. Zo niet, voegt u deze toe.
 
