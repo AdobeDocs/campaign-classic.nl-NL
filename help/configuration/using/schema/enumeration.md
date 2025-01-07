@@ -4,7 +4,7 @@ title: Schema-elementen en -kenmerken - opsommingselement
 description: opsommingselement
 feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 2%
@@ -13,7 +13,6 @@ ht-degree: 2%
 
 # opsommingselement {#enumeration--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-5}
 
@@ -47,7 +46,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
 
 ## Beschrijving van kenmerk {#attribute-description-5}
 
-* **basetype (string)**: type van de waarden die in de opsomming zijn opgeslagen.
+* **basetype (koord)**: type van de waarden die in de opsomming worden opgeslagen.
 
   Lijst met beschikbare typen:
 
@@ -80,11 +79,11 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
    * timespan
    * uuid
 
-* **default (string)**: Standaardwaarde. De standaardwaarde kan ook een van de waarden zijn die in de opsomming worden gedefinieerd.
-* **desc (tekenreeks)**: beschrijving van opsomming.
-* **label (tekenreeks)**: opsomlabel.
-* **name (string)**: interne naam van de opsomming.
-* **sjabloon (tekenreeks)**: dit kenmerk definieert een verwijzing naar een `<enumeration>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
+* **gebrek (koord)**: Standaardwaarde. De standaardwaarde kan ook een van de waarden zijn die in de opsomming worden gedefinieerd.
+* **desc (koord)**: opsommingsbeschrijving.
+* **etiket (koord)**: opsommingsetiket.
+* **naam (koord)**: interne naam van de opsomming.
+* **malplaatje (koord)**: dit attribuut bepaalt een verwijzing naar een `<enumeration>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
 
 ## Voorbeelden {#examples-4}
 

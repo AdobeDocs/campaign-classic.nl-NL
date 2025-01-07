@@ -4,7 +4,7 @@ title: Schemaelementen en -kenmerken - voorwaardelement
 description: voorwaarde-element
 feature: Schema Extension
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 2%
@@ -13,7 +13,6 @@ ht-degree: 2%
 
 # voorwaarde-element {#condition--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-2}
 
@@ -39,13 +38,13 @@ Met dit element kunt u een filtervoorwaarde definiëren.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-2}
 
-Eén `<sysfiler>`  Het element kan verschillende filtervoorwaarden bevatten.
+Eén `<sysfiler>` -element kan verschillende filtervoorwaarden bevatten.
 
 ## Beschrijving van kenmerk {#attribute-description-2}
 
-* **boolOperator (tekenreeks)**: als er meerdere `<conditions>` worden gedefinieerd binnen dezelfde  `<sysfilter>` -element, kunt u deze kenmerken combineren. Standaard is de logische koppeling tussen `<condition>` elementen is &quot;AND&quot;. Met het kenmerk &quot;@boolOperator&quot; kunt u koppelingen van het type &quot;OR&quot; en &quot;AND&quot; combineren.
-* **enabledIf (string)**: activeringstest voorwaarde.
-* **expr (tekenreeks)**: een XTK-expressie.
+* **boolOperator (koord)**: als verscheidene `<conditions>` binnen het zelfde `<sysfilter>` element worden bepaald, laat dit attribuut u hen combineren. Standaard is de logische koppeling tussen `<condition>` -elementen &quot;AND&quot;. Met het kenmerk &quot;@boolOperator&quot; kunt u koppelingen van het type &quot;OR&quot; en &quot;AND&quot; combineren.
+* **enabledIf (koord)**: De test van de voorwaardenactivering.
+* **expr (koord)**: een uitdrukking van XTK.
 
 ## Voorbeelden {#examples-2}
 

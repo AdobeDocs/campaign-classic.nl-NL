@@ -4,7 +4,7 @@ title: Elementen en kenmerken - indexelement
 description: element dbindex
 feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # element dbindex {#dbindex--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-3}
 
@@ -43,13 +42,13 @@ Met dit element kunt u een index definiëren die is gekoppeld aan een tabel.
 
 Het is mogelijk om verscheidene indexen te bepalen. Een index kan verwijzen naar een of meer velden in de tabel. De indexverklaring volgt gewoonlijk de definitie van het belangrijkste schemaelement.
 
-De volgorde van de `<keyfield>` elementen die zijn gedefinieerd in een `<dbindex>` is zeer belangrijk. De eerste `<keyfield>` moet het indexeringscriterium zijn waarop de vragen hoofdzakelijk zijn gebaseerd.
+De volgorde van de `<keyfield>` -elementen die in een `<dbindex>` zijn gedefinieerd, is erg belangrijk. De eerste `<keyfield>` moet het indexeringscriterium zijn waarop de query&#39;s voornamelijk zijn gebaseerd.
 
 De naam van de index in de database wordt berekend door de naam van de tabel en de naam van de index samen te voegen. Bijvoorbeeld: Tabelnaam &quot;Voorbeeld&quot;, Namespace &quot;Cus&quot;, indexnaam &quot;MyIndex&quot;-> naam van het indexveld tijdens het maken van de index met de vraag &quot;CusSample_myIndex&quot;.
 
 ## Beschrijving van kenmerk {#attribute-description-3}
 
-* **_operation (string)**: definieert het type schrijven in de database.
+* **_operation (koord)**: bepaalt het type van het schrijven in het gegevensbestand.
 
   Dit kenmerk wordt vooral gebruikt bij het uitbreiden van out-of-box schema&#39;s.
 
@@ -61,14 +60,14 @@ De naam van de index in de database wordt berekend door de naam van de tabel en 
    * &quot;update&quot;: update. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
    * &quot;delete&quot;: schrapping. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
-* **applyIf (string)**: voorwaarde voor het in aanmerking nemen van de index - ontvangt een XTK-expressie.
-* **label (tekenreeks)**: indexlabel.
+* **applyIf (koord)**: voorwaarde voor het nemen van de index in rekening - ontvangt een uitdrukking XTK.
+* **etiket (koord)**: indexetiket.
 * **naam (MNTOKEN)**: unieke indexnaam.
-* **unique (boolean)**: als deze optie is geactiveerd (@unique=&quot;true&quot;), garandeert het kenmerk de uniciteit van de index in alle velden.
+* **uniek (boolean)**: als deze optie (@unique= &quot;waar&quot;) wordt geactiveerd, waarborgt de attributen de uniciteit van de index door zijn gebieden.
 
 ## Voorbeelden {#examples-3}
 
-Creation of an index on the &quot;id&quot; field. (het kenmerk &quot;@unique&quot; op het tabblad `<dbindex>` element brengt het toevoegen van het sleutelwoord &quot;UNIQUE&quot;SQL teweeg wanneer de index in het gegevensbestand (vraag) wordt gecreeerd.
+Creation of an index on the &quot;id&quot; field. (Het kenmerk &quot;@unique&quot; op het element `<dbindex>` activeert het toevoegen van het trefwoord &quot;UNIQUE&quot; SQL wanneer de index in de database wordt gemaakt (query).
 
 ```
 <element label="Sample" name="Sample">

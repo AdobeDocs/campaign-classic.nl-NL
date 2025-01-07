@@ -4,7 +4,7 @@ title: Elementen en kenmerken - element compute-string
 description: compute-string element
 feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
@@ -13,7 +13,6 @@ ht-degree: 2%
 
 # compute-string element {#compute-string--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-1}
 
@@ -33,15 +32,15 @@ Geen
 
 ## Beschrijving {#description-1}
 
-De `<compute-string>` het element laat u toe om een koord te produceren dat op een uitdrukking XTK wordt gebaseerd om een &quot;gebouwd&quot;etiket in de interface te tonen die op verscheidene waarden wordt gebaseerd.
+Met het element `<compute-string>` kunt u een tekenreeks genereren op basis van een XTK-expressie en zo een &#39;gebouwd&#39; label weergeven in de interface op basis van verschillende waarden.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-1}
 
-Wanneer `<compute-string>` wordt gedefinieerd, a `<compute-string>` het element is door gebrek ingegaan met de waarden van de primaire sleutel in het schema.
+Wanneer er geen `<compute-string>` is gedefinieerd, wordt standaard een `<compute-string>` -element ingevoerd met de waarden van de primaire sleutel in het schema.
 
 ## Beschrijving van kenmerk {#attribute-description-1}
 
-* **expr (tekenreeks)**: XTK en/of Xpath-expressie
+* **expr (koord)**: XTK en/of de uitdrukking van Xpath
 
 ## Voorbeelden {#examples-1}
 

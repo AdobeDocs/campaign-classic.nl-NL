@@ -4,7 +4,7 @@ title: Schemaelementen en -kenmerken - hoofdelement
 description: sleutelelement
 feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # sleutelelement {#key--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-8}
 
@@ -46,7 +45,7 @@ Een tabel moet minstens één sleutel hebben.
 
 Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen.
 
-Een sleutel wordt een samengestelde sleutel genoemd als het verscheidene gebieden omvat (d.w.z. verscheidene `<keyfield>` kinderen). Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
+Een sleutel wordt een samengestelde sleutel genoemd als deze meerdere velden bevat (bijvoorbeeld meerdere `<keyfield>` onderliggende items). Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
 
 Als het hoofdelement van het schema het kenmerk &quot;@autopk=true&quot; bevat, is de primaire sleutel uniek. We kunnen slechts één primaire sleutel per schema hebben.
 
@@ -55,11 +54,11 @@ De eerste 1000 id&#39;s zijn gereserveerd, dus als een reeks waarden moet worden
 ## Beschrijving van kenmerk {#attribute-description-8}
 
 * **allowEmptyPart (boolean)**: in het geval van een samengestelde sleutel, als dit attribuut wordt geactiveerd, wordt zij als geldig beschouwd als minstens één van zijn sleutels niet leeg is. Als dit het geval is, is de lege nodewaarde &quot;0&quot;(boolean of voor alle soorten numerieke gegevens). Standaard moeten alle toetsen waaruit een samengestelde sleutel bestaat, worden ingevoerd.
-* **applyIf (string)**: met dit kenmerk kunt u de sleutel optioneel maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.
-* **internal (boolean)**: als dit kenmerk is geactiveerd, laat dit kenmerk Adobe Campaign weten dat de sleutel primair is.
-* **label (tekenreeks)**: label van de toets.
+* **applyIf (koord)**: dit attribuut laat u de sleutel facultatief maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.
+* **intern (boolean)**: als het wordt geactiveerd, laat dit attribuut Adobe Campaign weten dat de sleutel primair is.
+* **etiket (koord)**: etiket van de sleutel.
 * **naam (MNTOKEN)**: interne naam van de sleutel.
-* **noDbIndex (Boolean)**: als deze is geactiveerd (noDbIndex=&quot;true&quot;), wordt het veld dat overeenkomt met de sleutel niet geïndexeerd.
+* **noDbIndex (boolean)**: als het wordt geactiveerd (noDbIndex= &quot;waar&quot;), zal het gebied dat de sleutel aanpast niet worden geïndexeerd.
 
 ## Voorbeelden {#examples-------}
 
@@ -72,7 +71,7 @@ Verklaring van een samengestelde sleutel die het veld &quot;@expr&quot; of &quot
  </key>
 ```
 
-Verklaring van een primaire sleutel op het gebied van de &quot;Naam&quot;van type STRING in een `<srcschema>`  en de overeenkomstige SQL-query:
+Declaratie van een primaire sleutel in het veld Naam van het type STRING in een `<srcschema>` en de bijbehorende SQL-query:
 
 ```
  

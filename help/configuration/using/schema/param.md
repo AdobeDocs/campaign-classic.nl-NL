@@ -4,7 +4,7 @@ title: Schemaelementen en -kenmerken - paramelement
 description: param, element
 feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 2%
@@ -13,7 +13,6 @@ ht-degree: 2%
 
 # param, element {#param--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-12}
 
@@ -41,16 +40,16 @@ param:==help
 
 ## Beschrijving {#description-12}
 
-Met dit element kunt u een parameter definiëren voor het aanroepen van een SOAP-methode.
+Met dit element kunt u een parameter definiëren voor het aanroepen van een SOAP.
 
 ## Beschrijving van kenmerk {#attribute-description-12}
 
-* **desc (tekenreeks)**: beschrijving die betrekking heeft op de `<param>` element.
-* **inout (tekenreeks)**: dit kenmerk definieert of de parameter zich bij de invoer (in) of uitvoer (uit) van de SOAP-aanroep bevindt. Als dit kenmerk niet wordt opgegeven, wordt de standaardparameter invoer (&quot;@inout=in&quot;).
-* **label (tekenreeks)**: `<param>` label
-* **localizable (tekenreeks)**: als dit kenmerk is geactiveerd, geeft dit kenmerk het gereedschap Verzameling de waarde van het kenmerk &quot;@label&quot; voor vertaling (intern gebruik) weer.
-* **naam (MNTOKEN)**: interne naam van de `<param>`
-* **type (tekenreeks)**: dit kenmerk definieert het type van `<param>` element
+* **desc (koord)**: beschrijving die het `<param>` element aangaat.
+* **inout (koord)**: dit attribuut bepaalt al dan niet de parameter bij de input (in) of output (uit) van de SOAP vraag is. Als dit kenmerk niet wordt opgegeven, wordt de standaardparameter invoer (&quot;@inout=in&quot;).
+* **etiket (koord)**: `<param>` etiket
+* **localizable (koord)**: als het wordt geactiveerd, vertelt dit attribuut het inzamelingshulpmiddel om de waarde van het &quot;@label&quot;attribuut voor vertaling (intern gebruik) terug te krijgen.
+* **naam (MNTOKEN)**: interne naam van `<param>`
+* **type (koord)**: dit attribuut bepaalt het type van `<param>` element
 
   Lijst met beschikbare typen:
 
