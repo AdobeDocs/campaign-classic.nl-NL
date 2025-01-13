@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,13 @@ _Woensdag 18 juni 2024_
 
 De [compatibiliteitsmatrix voor Adobe Campaign](compatibility-matrix.md) is bijgewerkt met de wijzigingen die bij deze nieuwe release worden geleverd en hieronder worden vermeld.
 
-* Adobe Campaign is nu compatibel met **Microsoft Server 2022** en **RHEL 9** als besturingssystemen.
+* Adobe Campaign is nu compatibel met **Server 2022 van Microsoft** als werkend systeem.
+* Adobe Campaign is nu compatibel met **RHEL 9** als werkend systeem.
+
+  >[!CAUTION]
+  >
+  >Als klant op-gebouw die RHEL 9 gebruikt, als u de sleutels van DKIM/van het Domein wilt gebruiken, moet u uw systeemmontages zoals die in [ worden gedetailleerd deze sectie ](../../installation/using/installing-packages-with-linux.md#rhel-9-update) bijwerken.
+
 
 * Adobe Campaign is nu compatibel met **Microsoft SQL Server 2022** en **Oracle 23c** als relationele databasemanagementsystemen en in Federated Data Access (FDA).
 
