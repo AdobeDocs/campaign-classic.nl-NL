@@ -7,9 +7,9 @@ user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ ht-degree: 99%
       + [De doelgroep definiëren](delivery/using/steps-defining-the-target-population.md)
       + [De levering valideren](delivery/using/steps-validating-the-delivery.md)
       + [De levering verzenden](delivery/using/steps-sending-the-delivery.md)
-      + [Best practices voor verzending](delivery/using/delivery-best-practices.md)
+      + [Best practices voor leveringen](delivery/using/delivery-best-practices.md)
       + Best practices voor leveringen {#delivery-bestpractices}
          + [Levering optimaliseren](delivery/using/optimize-delivery.md)
          + [Sjablonen gebruiken](delivery/using/use-templates.md)
@@ -641,7 +641,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

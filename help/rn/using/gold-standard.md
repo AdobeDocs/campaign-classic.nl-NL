@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ _27 augustus 2021_
 
 Versie 9032@99a3894 bevat de volgende oplossingen:
 
-* De functie Handtekening bijhouden is verbeterd en voorkomt fouten die samenhangen met de manier waarop hulpmiddelen van derden (e-mailclients, internetbrowsers, enz.) speciale tekens verwerken. URL-parameters zijn nu gecodeerd.
+* De functie voor het bijhouden van handtekeningen is verbeterd om fouten te voorkomen met de manier waarop tools van derden (klant-e-mail, internetbrowsers, enz.) speciale tekens verwerken. URL-parameters zijn nu gecodeerd.
 * Probleem verholpen met datumpickers waardoor een console een foutbericht over een blokkering weergaf. (NEO-36345)
 
 ### [!DNL Gold Standard] Release 11{#gs-11}
