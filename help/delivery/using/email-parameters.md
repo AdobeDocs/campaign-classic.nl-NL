@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: f7da066d32391341e449397d64853fcbae639a59
+source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 7%
@@ -33,7 +33,7 @@ Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet
 
 >[!NOTE]
 >
->Als u E-mail BCC met [ Verbeterde MTA ](ending-with-enhanced-mta.md) gebruikt, wordt deze optie automatisch toegelaten voor alle leveringen.
+>Als u E-mail BCC met [ Verbeterde MTA ](sending-with-enhanced-mta.md) gebruikt, wordt deze optie automatisch toegelaten voor alle leveringen.
 
 Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
 
