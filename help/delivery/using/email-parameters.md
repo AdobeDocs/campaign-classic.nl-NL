@@ -6,7 +6,7 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f7da066d32391341e449397d64853fcbae639a59
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 7%
@@ -23,7 +23,7 @@ Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC 
 
 Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
 
-Raadpleeg voor meer informatie over de BCC-configuratie en aanbevolen procedures voor e-mail de volgende bronnen: [deze sectie](../../installation/using/email-archiving.md).
+Voor meer informatie over de configuratie en beste praktijken van BCC E-mail, verwijs naar [ deze sectie ](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
@@ -33,25 +33,25 @@ Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet
 
 >[!NOTE]
 >
->Als u BCC via e-mail gebruikt met Enhanced MTA, wordt deze optie automatisch ingeschakeld voor alle leveringen.
+>Als u E-mail BCC met [ Verbeterde MTA ](ending-with-enhanced-mta.md) gebruikt, wordt deze optie automatisch toegelaten voor alle leveringen.
 
 Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
 
-1. Ga naar **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** of **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Selecteer de levering van uw keuze of dupliceer de uit-van-de-doos **E-maillevering** selecteert u vervolgens de gedupliceerde sjabloon.
-1. Klik op de knop **Eigenschappen** knop.
+1. Ga naar **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** of **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** .
+1. Selecteer de levering van uw keus of dupliceer uit-van-de-doos **E-mail bezorging** malplaatje, dan selecteer het gedupliceerde malplaatje.
+1. Klik de **knoop van Eigenschappen**.
 1. Selecteer het tabblad **[!UICONTROL Delivery]**. 
-1. Controleer de **BCC e-mailen** -optie. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
+1. Controleer de **E-mailBCC** optie. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
 >[!NOTE]
 >
->Als de e-mails die naar het BCC-adres worden verzonden worden geopend en als hierop wordt geklikt, wordt hiermee rekening gehouden in het dialoogvenster **[!UICONTROL Total opens]** en **[!UICONTROL Clicks]** van de send analyse, die sommige misberekeningen zou kunnen veroorzaken.
+>Als de e-mails die naar het BCC-adres worden verzonden, worden geopend en doorgeklikt, wordt hiermee rekening gehouden in de **[!UICONTROL Total opens]** - en **[!UICONTROL Clicks]** -analyse, wat tot onjuiste berekeningen kan leiden.
 
 ## Berichtindelingen selecteren {#selecting-message-formats}
 
-U kunt de indeling van verzonden e-mailberichten wijzigen. Hiervoor bewerkt u de leveringseigenschappen en klikt u op de knop **[!UICONTROL Delivery]** tab.
+U kunt de indeling van verzonden e-mailberichten wijzigen. Hiervoor bewerkt u de leveringseigenschappen en klikt u op het tabblad **[!UICONTROL Delivery]** .
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
@@ -59,7 +59,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 * **[!UICONTROL Use recipient preferences]** (standaardmodus)
 
-  De berichtindeling wordt gedefinieerd op basis van de gegevens die zijn opgeslagen in het ontvangende profiel en wordt standaard opgeslagen in het dialoogvenster **[!UICONTROL email format]** veld (@emailFormat). Als een ontvanger berichten in een bepaalde indeling wenst te ontvangen, wordt deze indeling gebruikt. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
+  De berichtindeling wordt gedefinieerd op basis van de gegevens die zijn opgeslagen in het ontvangende profiel en wordt standaard opgeslagen in het veld **[!UICONTROL email format]** (@emailFormat). Als een ontvanger berichten in een bepaalde indeling wenst te ontvangen, wordt deze indeling gebruikt. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -75,15 +75,15 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 >[!NOTE]
 >
->Zie voor meer informatie over het definiëren van de e-mailinhoud [deze sectie](defining-the-email-content.md).
+>Voor meer bij het bepalen van de e-mailinhoud, zie [ deze sectie ](defining-the-email-content.md).
 
 ## De spiegelpagina genereren {#generating-mirror-page}
 
 De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowser. De inhoud is identiek aan de e-mail.
 
-Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsblokkeringen, verwijs naar [Aanpassingsblokken](personalization-blocks.md).
+Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsbloktoevoeging, verwijs naar [ blokken van de Aanpassing ](personalization-blocks.md).
 
-In de leveringseigenschappen, **[!UICONTROL Mode]** van het **[!UICONTROL Validity]** kunt u de generatiemodus voor deze pagina wijzigen.
+In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van het **[!UICONTROL Validity]** lusje u de generatiemodus voor deze pagina wijzigen.
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -95,39 +95,39 @@ Naast de standaardmodus zijn ook de volgende opties beschikbaar:
 
 * **[!UICONTROL Force the generation of the mirror page]**: zelfs als er geen koppeling naar de spiegelpagina is ingevoegd in de levering, wordt de spiegelpagina gemaakt.
 * **[!UICONTROL Do not generate the mirror page]**: er wordt geen spiegelpagina gegenereerd, zelfs als de koppeling aanwezig is in de levering.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: deze optie laat u tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek toegang hebben. Als u dit wilt doen, klikt u op de knop **[!UICONTROL Delivery]** en selecteert u de regel van de ontvanger waarvan u de spiegelpagina wilt weergeven. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: met deze optie hebt u toegang tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek. Als u dit wilt doen, klikt u na afloop van de levering op de tab **[!UICONTROL Delivery]** en selecteert u de regel van de ontvanger waarvan u de spiegelpagina wilt weergeven. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
 
   ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Tekencodering {#character-encoding}
 
-In de **[!UICONTROL SMTP]** tabblad van de leveringsparameters, **[!UICONTROL Character encoding]** kunt u een specifieke codering instellen.
+Op het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u in de sectie **[!UICONTROL Character encoding]** een specifieke codering instellen.
 
 De standaardcodering is UTF-8. Als sommige e-mailproviders van uw ontvangers de standaardcodering UTF-8 niet ondersteunen, kunt u een specifieke codering instellen om de speciale tekens correct weer te geven aan de ontvangers van uw e-mail.
 
 U wilt bijvoorbeeld een e-mail verzenden met Japanse tekens. Om ervoor te zorgen dat alle tekens correct worden weergegeven aan ontvangers in Japan, kunt u een codering gebruiken die de Japanse tekens ondersteunt in plaats van de standaard UTF-8.
 
-Selecteer de optie **[!UICONTROL Force the encoding used for messages]** in de **[!UICONTROL Character encoding]** en kiest u een codering in de vervolgkeuzelijst die wordt weergegeven.
+Hiervoor selecteert u de optie **[!UICONTROL Force the encoding used for messages]** in de sectie **[!UICONTROL Character encoding]** en kiest u een codering in de vervolgkeuzelijst die wordt weergegeven.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
 ## Bounce-e-mails beheren {#managing-bounce-emails}
 
-De **[!UICONTROL SMTP]** tabblad van de leveringsparameters kunt u het beheer van stuiterende berichten configureren.
+Met het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u het beheer van stuiterende mails configureren.
 
-Standaard worden teruggestuurde e-mails ontvangen in de [standaardfoutvak van het platform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), maar u kunt een specifiek foutadres voor een levering definiëren.
+Door gebrek, worden de teruggestuurde e-mails ontvangen in de [ standaardfoutendoos van het platform ](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), maar u kunt een specifiek foutenadres voor een levering bepalen.
 
-U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor stuiterende berichten te onderzoeken wanneer deze niet automatisch door de toepassing kunnen worden gekwalificeerd. Voor elk van deze velden wordt **Aangepaste velden toevoegen** kunt u personalisatieparameters toevoegen.
+U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor stuiterende berichten te onderzoeken wanneer deze niet automatisch door de toepassing kunnen worden gekwalificeerd. Voor elk van deze gebieden, **voeg gepersonaliseerde gebieden** pictogram toe laat u verpersoonlijkingsparameters toevoegen.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Zie voor meer informatie over stuiterend mailbeheer [deze sectie](understanding-delivery-failures.md#bounce-mail-management).
+Voor meer bij stuiteren postbeheer, zie [ deze sectie ](understanding-delivery-failures.md#bounce-mail-management).
 
 ## SMTP-koppen toevoegen {#adding-smtp-headers}
 
-Het is mogelijk om kopballen SMTP aan uw leveringen toe te voegen. Hiervoor gebruikt u de desbetreffende sectie van de **[!UICONTROL SMTP]** in de levering.
+Het is mogelijk om kopballen SMTP aan uw leveringen toe te voegen. Hiervoor gebruikt u de desbetreffende sectie van het tabblad **[!UICONTROL SMTP]** in de levering.
 
-Het script dat in dit venster wordt ingevoerd, moet in het volgende formulier verwijzen naar één koptekst per regel: **name:value**.
+Het manuscript ingegaan in dit venster moet één kopbal per lijn in de volgende vorm van verwijzingen voorzien: **naam:waarde**.
 
 Waarden worden indien nodig automatisch gecodeerd.
 
