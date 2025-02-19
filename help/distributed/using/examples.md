@@ -3,8 +3,10 @@ product: campaign
 title: Distributed Marketing samples
 description: Distributed Marketing samples
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -96,7 +98,7 @@ De stappen zijn als volgt:
 
 1. Maak een **[!UICONTROL Data distribution]** -activiteit.
 1. Maak de samenwerkingscampagne.
-1. Publish de campagne.
+1. Publiceer de campagne.
 
 ### Lokale entiteit {#local-entity-side}
 
@@ -157,7 +159,7 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 1. Sla uw record op.
 
-#### Publish de campagne {#publishing-the-campaign}
+#### De campagne publiceren {#publishing-the-campaign}
 
 U kunt het pakket van de a **campagne** van het **[!UICONTROL Campaigns]** lusje nu toevoegen.
 

@@ -4,10 +4,10 @@ title: Aan de slag met gedistribueerde marketing
 description: Aan de slag met gedistribueerde marketing
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 3%
 
 ---
 
@@ -15,149 +15,154 @@ ht-degree: 0%
 
 
 
-Adobe Campaign biedt een **Distributed Marketing** aanvraag tot uitvoering van samenwerkingscampagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte, die bekend staat als de **[!UICONTROL list of campaign packages]**, waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
+Adobe Campaign biedt de toepassing van de a **Verdeelde Marketing** voor het uitvoeren van coöperatieve campagnes tussen centrale entiteiten (hoofdkwartier, marketing afdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.) aan. Deze samenwerking is gebaseerd op een gedeelde werkruimte, de zogenaamde **[!UICONTROL list of campaign packages]** , waar centraal gemaakte campagnemalplaatjes en -instanties worden aangeboden aan lokale entiteiten.
 
 De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken. Campagnes worden geconcretiseerd door pakketten die lokale of samenwerkingscampagnes vertegenwoordigen. Om een campagne te kunnen voeren, moet de lokale entiteit deze opdracht geven en moet de bestelling worden goedgekeurd.
 
 >[!CAUTION]
 >
->De module Distributed Marketing is een **Campagne** -optie. Controleer hiervoor uw licentieovereenkomst.
-
-## Terminologie {#terminology}
-
-* **Centrale entiteiten**
-
-  De centrale entiteiten bestaan uit marketingexploitanten die verantwoordelijk zijn voor het specificeren van de communicatie en die lokale entiteiten bijstaan bij het uitvoeren van hun marketingcampagne.
-
-  De verdeelde marketing module staat de centrale entiteit toe om:
-
-   * het opzetten van marketingcampagnes voor lokale entiteiten;
-   * de mate van autonomie van lokale entiteiten ten aanzien van hun keuze in klant/vooruitzicht communicatie, het richten, inhoud, enz. te vergroten.
-   * beheer- en controlekosten;
-   * een netwerk van agentschappen te beheren.
-
-* **Lokale entiteiten**
-
-  Lokale entiteiten kunnen agentschappen, winkels of groepen van specifieke lokale exploitanten zijn (landelijke of regionale managers, merkbeheerders, enz.).
-
-  Met Distributed Marketing kunnen lokale entiteiten meer autonomie hebben en tegelijk de uitvoeringskosten optimaliseren.
-
-* **Lokalisatie**
-
-  Lokalisatie is de capaciteit van een lokale entiteit om het doel en de inhoud van een campagne te wijzigen. Het mogelijke niveau van localisatie hangt van het type van campagne en zijn implementatie af.
-
-* **Lijst met campagnepakketten**
-
-  De lijst met campagnepakketten bevat de campagnes die beschikbaar zijn voor lokale entiteiten.
-
-* **Campagne**
-
-  Sjabloon (of campagneexemplaar) dat door een centrale entiteit is gemaakt en ter beschikking is gesteld van een set lokale entiteiten.
-
-* **Lokale campagne**
-
-  Een lokale campagne is een instantie die is gemaakt van een sjabloon waarnaar wordt verwezen in de lijst met **[!UICONTROL campaign packages]** met een **specifieke uitvoeringsschema**. Zijn doel is om aan een lokale communicatie behoefte te voldoen gebruikend een campagnemalplaatje dat opstelling en gevormd door de centrale entiteit was.
-
-  De mate van autonomie van de lokale entiteit hangt af van de gebruikte implementatie.
-
-  Zie [Een lokale campagne maken](creating-a-local-campaign.md).
-
-* **Gezamenlijke campagne**
-
-  Een samenwerkingscampagne is een campagne waarvan **uitvoeringsschema is gedefinieerd** door de centrale entiteit, die de lokale entiteit mag gebruiken. De inhoud blijft voor elke lokale entiteit hetzelfde, maar de kosten worden gedeeld. Om deel te nemen, onderschrijven lokale entiteiten de samenwerkingscampagne.
-
-   * **[!UICONTROL Collaborative campaign (by form)]**: aanbevolen voor campagnes waarbij maximaal 300 lokale entiteiten zijn betrokken. De lokale entiteit kan vooraf gedefinieerde parameters invoeren voor het toewijzen van doelen en inhoud aan de persoonlijke voorkeur in een webformulier. Het formulier kan een Adobe Campaign-formulier of een extern formulier (extranetclient) zijn. Een functionele beheerder kan het formulier definiëren en configureren op basis van een formuliersjabloon dat door de integrator is gedefinieerd. Om de campagne te bestellen, heeft de lokale entiteit enkel Webtoegang nodig.
-   * **[!UICONTROL Collaborative campaign (by campaign)]**: aanbevolen voor campagnes gericht op tientallen lokale entiteiten. Dit type campagne leidt tot kindcampagnes voor elke lokale entiteit. Wanneer de **[!UICONTROL collaborative campaign (by campaign)]** wordt goedgekeurd door de centrale entiteit, wordt de campagne ter beschikking gesteld van de lokale entiteit, die deze kan wijzigen. Uitvoering wordt automatisch gesynchroniseerd tussen bovenliggende en onderliggende campagnes. De lokale entiteit moet toegang hebben tot een instantie om een campagne te bestellen en er deel van te nemen.
-   * **[!UICONTROL Collaborative campaign (by target approval)]**: aanbevolen voor campagnes gericht op duizenden lokale entiteiten. De lokale entiteit ontvangt een lijst van contacten die door de centrale entiteit vooraf is bepaald. De lokale entiteit beslist of bepaalde contacten op basis van de inhoud van de campagne al dan niet via een webformulier worden onderhouden. Lokale entiteiten worden afgeleid van de lijst met geselecteerde contactpersonen. Om aan de campagne deel te nemen, heeft de lokale entiteit enkel Webtoegang nodig.
-   * **[!UICONTROL Collaborative campaign (simple)]**: deze modus zorgt voor compatibiliteit met de specifieke uitvoeringsprocessen van eerdere versies.
-
-  Zie [Een samenwerkingscampagne maken](creating-a-collaborative-campaign.md).
-
-**Campagnepakketten ordenen**
-
-Als een lokale entiteit zich voor een campagne registreert, wordt dit in een orde gemaakt die alle informatie met betrekking tot de campagnemelocalisatie groepeert.
-
-## Werkruimte {#workspace}
-
-De lijst met campagnepakketten is toegankelijk via de **Campagnes** tab: klik op de knop **[!UICONTROL Campaign packages]** koppeling.
-
-![](assets/mkg_dist_home_local_op.png)
-
-Met dit venster kunnen alle lokale operatoren de campagnes bekijken die beschikbaar zijn voor hun lokale agentschap.
-
-In het geval van centrale agentschappen, toont dit venster alle pakketten beschikbaar in de lijst van campagnepakketten en biedt extra verbindingen voor het uitgeven van de lijst.
-
-## Exploitanten en entiteiten {#operators-and-entities}
-
-Begin met het opgeven van de centrale en lokale entiteitsoperatoren via de **[!UICONTROL Access management]** map.
-
-![](assets/s_advuser_mkg_dist_tree.png)
-
-### Operatoren {#operators}
-
-U moet centrale en lokale operatoren maken.
-
-Centrale operatoren moeten tot de **[!UICONTROL Central management]** de groep van de exploitant of hebben **[!UICONTROL CENTRAL]** genoemd recht.
-
-Lokale operatoren moeten behoren tot de **[!UICONTROL Local management]** de groep van de exploitant of hebben **[!UICONTROL LOCAL]** genoemd recht. Zij moeten ook gekoppeld zijn aan hun lokale entiteit.
-
-![](assets/s_advuser_mkg_dist_local_create.png)
-
-### Organisatorische entiteiten {#organizational-entities}
-
-Als u een organisatie-entiteit wilt maken, klikt u op de knop **[!UICONTROL Administration > Access management > Organizational entities]** en klik op **[!UICONTROL New]** pictogram boven de lijst met entiteiten.
-
-![](assets/s_advuser_mkg_dist_local_list.png)
-
-Elke organisatie bevat identificatiegegevens (label, interne naam, contactgegevens enz.) en groepen die betrokken zijn bij het goedkeuringsproces voor orders. Deze worden gedefinieerd in het dialoogvenster **[!UICONTROL Notifications and approvals]** sectie gevonden in het dialoogvenster **[!UICONTROL General]** tab.
-
-* Definieer een groep met pakketmeldingen: operatoren in deze groep ontvangen elke keer dat een nieuw pakket aan de lijst met campagnepakketten wordt toegevoegd en elke keer dat een campagne beschikbaar wordt.
-* Selecteer de groep van controleurs die belast is met de goedkeuring van orders, d.w.z. de controleurs die verantwoordelijk zijn voor de goedkeuring van door de lokale entiteit bestelde campagnes.
-* Tot slot selecteert u de groep van controleurs die verantwoordelijk is voor de goedkeuring van de lokale campagne (doel, inhoud, budget, enz.). Afhankelijk van de sjabloon kan deze groep worden toegevoegd aan het bestellen van een campagne.
+>De verdeelde module van de Marketing is de optie van de a **Campagne**. Controleer hiervoor uw licentieovereenkomst.
 
 >[!NOTE]
 >
->Het goedkeuringsproces wordt weergegeven in het [Goedkeuringsproces](creating-a-local-campaign.md#approval-process) sectie.
+>Om meer over het Verdeelde Markeren voor Adobe Campaign te weten te komen en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing) {target=_blank}.
 
-## Implementatie {#implementation}
+<!--
+## Terminology {#terminology}
 
-De verdeelde campagnes van de Marketing worden gecreeerd en door de centrale entiteit gepubliceerd. Zij kunnen door zowel lokale als centrale entiteiten worden gebruikt wanneer dat nodig is.
+* **Central entities**
 
-De procedure voor de tenuitvoerlegging hangt af van het type campagnemakket dat wordt gebruikt en het niveau van de delegaties van de lokale entiteit.
+   Central entities are made up of marketing operators in charge of specifying communications and assisting local entities in executing their marketing campaign.
 
-### Integratietaken {#integrator-side}
+   The distributed marketing module allows the central entity to:
 
-1. Lokale entiteiten maken.
-1. Verbind ontvangers met de exploitanten die lokale entiteiten beheren.
+   * set up marketing campaign packages for local entities,
+   * increase local entities' degree of autonomy regarding their choice in customer/prospect communication, targeting, content, etc.
+   * manage and control costs, 
+   * handle a network of agencies.
+
+* **Local entities**
+
+   Local entities can be agencies, stores or groups of specific local operators (country or regional managers, brand managers, etc.).
+
+   Distributed Marketing allows local entities to have more autonomy while optimizing execution costs.
+
+* **Localization**
+
+   Localization is the capacity for a local entity to modify the target and content of a campaign. The possible level of localization depends on the type of campaign and its implementation.
+
+* **List of campaign packages**
+
+   The list of campaign packages contains the campaigns available to local entities.
+
+* **Campaign package**
+
+   Template (or campaign instance) created by a central entity and made available to a set of local entities.
+
+* **Local campaign**
+
+   A local campaign is an instance created from a template referenced in the list of **[!UICONTROL campaign packages]** with a **specific execution schedule**. Its aim is to meet a local communication need using a campaign template that was set up and configured by the central entity.
+
+   The local entity's degree of autonomy depends on the implementation used.
+
+   Refer to [Creating a local campaign](creating-a-local-campaign.md).
+
+* **Collaborative campaign**
+
+   A collaborative campaign is a campaign whose **execution schedule is defined** by the central entity, which the local entity may use. The content remains the same for each local entity but costs are shared. To take part, local entities subscribe to the collaborative campaign.
+
+   * **[!UICONTROL Collaborative campaign (by form)]**: recommended for campaigns involving up to 300 local entities. The local entity can enter predefined parameters for targeting and content personalization in a web form. The form can be an Adobe Campaign form or an external form (extranet client). A functional administrator can define and configure the form based on a form template defined by the integrator. To order the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (by campaign)]**: recommended for campaigns aimed at dozens of local entities. This type of campaign creates child campaigns for each local entity. Once the **[!UICONTROL collaborative campaign (by campaign)]** is approved by the central entity, the campaign is made available to the local entity, who can modify it. Execution is automatically synched between parent and child campaigns. The local entity must have access to an instance to order a campaign and participate in it.
+   * **[!UICONTROL Collaborative campaign (by target approval)]**: recommended for campaigns aimed at several thousand local entities. Local entity receives a contact list that has been predefined by the central entity. The local entity decides whether or not to keep certain contacts based on the campaign content, via a web form. Local entities are deduced from the list of selected contacts. To participate in the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (simple)]**: this mode ensures compatibility with the specific execution processes of previous versions.
+
+   Refer to [Creating a collaborative campaign](creating-a-collaborative-campaign.md).
+
+**Ordering campaign packages**
+
+   If a local entity registers for a campaign this is made into an order which regroups all information relative to the campaign localization.
+
+## Workspace {#workspace}
+
+The list of campaign packages can be accessed from the **Campaigns** tab: click the **[!UICONTROL Campaign packages]** link.
+
+![](assets/mkg_dist_home_local_op.png)
+
+This window allows all local operators to view the campaigns available for their local agency.
+
+In the case of central agencies, this window displays all packages available in the list of campaign packages and offers additional links for editing the list.
+
+## Operators and entities {#operators-and-entities}
+
+Start by specifying the central and local entity operators via the **[!UICONTROL Access management]** folder.
+
+![](assets/s_advuser_mkg_dist_tree.png)
+
+### Operators {#operators}
+
+You need to create central and local operators.
+
+Central operators must belong to the **[!UICONTROL Central management]** operator group or have the **[!UICONTROL CENTRAL]** named right.
+
+Local operators must belong to the **[!UICONTROL Local management]** operator group or have the **[!UICONTROL LOCAL]** named right. They must also be linked to their local entity.
+
+![](assets/s_advuser_mkg_dist_local_create.png)
+
+### Organizational entities {#organizational-entities}
+
+To create an organizational entity, click the **[!UICONTROL Administration > Access management > Organizational entities]** node and click the **[!UICONTROL New]** icon above the list of entities.
+
+![](assets/s_advuser_mkg_dist_local_list.png)
+
+Each organizational entity contains identification information (label, internal name, contact information, etc.) and groups involved in the order approval process. These are defined in the **[!UICONTROL Notifications and approvals]** section found in the **[!UICONTROL General]** tab.
+
+* Define a package notification group: operators in this group will receive a notification each time a new package is added to the list of campaign packages and each time a campaign becomes available.
+* Select the group of reviewers in charge of approving orders, i.e. those in charge of approving campaigns ordered by the local entity.
+* Finally, select the group of reviewers in charge of approving the local campaign (target, content, budget, etc.). This group may be added to when ordering a campaign, depending on the template.
+
+>[!NOTE]
+>
+>The approval process is presented in the [Approval process](creating-a-local-campaign.md#approval-process) section.
+
+## Implementation {#implementation}
+
+Distributed Marketing campaigns are created and published by the central entity. They may be used by both local and central entities as needed.
+
+The implementation procedure depends on the type of campaign package used and the local entity delegation levels.
+
+### Integrator tasks {#integrator-side}
+
+1. Create local entities.
+1. Link recipients with the operators that manage local entities.
 
    ![](assets/mkg_dist_local_entity_association.png)
 
-1. Rechten en bladerregels voor lokale entiteiten opgeven
-1. Geef de set velden op die nodig zijn voor de lokalisatie van de campagne:
+1. Specify rights and browsing rules for local entities
+1. Specify the set of fields necessary for campaign localization:
 
-   * definitie van het doel en maximumgrootte;
-   * inhoudsdefinitie,
-   * uitvoeringsschema (datum van contact en datum van extractie); **alleen voor lokale operatoren**,
-   * uitbreiding van het bestelschema met alle noodzakelijke extra gebieden.
+    * target definition and maximum size,
+    * content definition,
+    * execution schedule (contact date and extraction date), **for local operators only**,
+    * extension of order schema with all necessary additional fields.
 
-1. Maak een webformulier (Adobe of extranet) waarmee u lokalisatieparameters kunt weergeven, het doel en het budget kunt evalueren en een voorvertoning van de inhoud kunt weergeven en de volgorde kunt goedkeuren.
+1. Create a web form (Adobe or extranet) that allows you to display localization parameters, evaluate the target and budget, as well as preview the content and approve the order.
 
-   Voor **samenwerkingscampagnes ( door goedkeuring van het doel )** maakt u de tabel waarin de goedkeuringen voor elke lokale entiteit worden opgeslagen.
+   For **collaborative campaigns (by target approval)**, create the table where the approvals for each local entity will be saved.
 
-### Functionele beheerderstaken {#functional-administrator-side}
+### Functional administrator tasks {#functional-administrator-side}
 
-Deze stappen moeten worden uitgevoerd bij het opzetten van elke campagne.
+These steps must be carried out when creating each campaign.
 
-1. Werk het formulier bij met de velden die worden gebruikt voor de lokalisatie van de campagne.
-1. Maak een instantie van een geschikt campagnemalplaatje (samenwerkingscampagne) of dupliceer de campagnemalplaatje (lokale campagne).
-1. Configureer de campagne met de lokalisatievelden en de formulierverwijzing.
-1. Publiceer de campagne.
+1. Update the form with the fields used for campaign localization.
+1. Create an instance from an appropriate campaign template (collaborative campaign) or duplicate the campaign template (local campaign).
+1. Configure the campaign with the localization fields and the form reference.
+1. Publish the campaign.
 
-### Lokale operatortaken {#local-operator-side}
+### Local operator tasks {#local-operator-side}
 
-Deze stappen moeten voor elke campagne worden uitgevoerd.
+These steps must be carried out for each campaign.
 
-1. Nadat u een melding hebt ontvangen over de beschikbaarheid van het campagnepakket, geeft u de locatie van de campagne op (optioneel).
-1. Evalueer het doel, de begroting, enz.
-1. Voorbeeld van inhoud campagne.
-1. De campagne bestellen.
+1. Once you receive notification of the campaign package's availability, specify the campaign's location (optional).
+1. Evaluate the target, the budget, etc.
+1. Preview campaign content.
+1. Order the campaign. --!>

@@ -3,8 +3,10 @@ product: campaign
 title: Een campagne bijhouden
 description: Leer hoe u een campagne kunt bijhouden met campagne Distributed Marketing
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -19,26 +21,26 @@ De centrale entiteitexploitanten kunnen campagneorden in de lijst van campagnepa
 
 Hierdoor kunnen ze:
 
-* [Filterpakketten](#filter-packages),
-* [Pakketten bewerken](#edit-packages),
-* [Een pakket annuleren](#cancel-a-package),
-* [Een pakket opnieuw initialiseren](#reinitializing-a-package).
+* [ de pakketten van de Filter ](#filter-packages),
+* [ geef pakketten ](#edit-packages) uit,
+* [ annuleert een pakket ](#cancel-a-package),
+* [ herinitialiseer een pakket ](#reinitializing-a-package).
 
 ## Filterpakketten {#filter-packages}
 
-Van de **[!UICONTROL Campaigns]** tabblad, kunt u de lijst weergeven met **[!UICONTROL Campaign packages]** die alle bestaande Distributed Marketing campagnes groepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** en selecteer de status van het campagnepakket die u wilt weergeven.
+Vanuit het tabblad **[!UICONTROL Campaigns]** kunt u de lijst weergeven van **[!UICONTROL Campaign packages]** die alle bestaande campagnes voor gedistribueerde marketing groepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Klik hiertoe op de koppelingen in de bovenste sectie van deze weergave of gebruik de koppeling **[!UICONTROL Filter list]** en selecteer de status van het campagnepakket die u wilt weergeven.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Pakketten bewerken {#edit-packages}
 
-De **[!UICONTROL Campaign packages]** kunt u de samenvatting van elk pakket weergeven.
+Op de pagina **[!UICONTROL Campaign packages]** kunt u de samenvatting van elk pakket weergeven.
 
 Deze samenvatting bevat de volgende informatie: label, type campagne en de naam van de campagne waaruit deze is gemaakt, en de map.
 
 Klik op de pakketnaam om deze te bewerken. U kunt ook bestellingen bekijken door de lokale entiteiten en door hun status.
 
-Deze informatie wordt ook aangeboden in het **[!UICONTROL Campaign orders]** bekijken welke van alle orden een lijst maakt.
+Deze informatie wordt ook aangeboden in de **[!UICONTROL Campaign orders]** -weergave waarin alle bestellingen worden vermeld.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -48,7 +50,7 @@ De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te d
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   De **[!UICONTROL Edit > General]** kunt u informatie bekijken die door de lokale entiteit is ingevoerd toen deze de campagne bestelde.
+   Op het tabblad **[!UICONTROL Edit > General]** kunt u informatie weergeven die door de lokale entiteit is ingevoerd toen deze de campagne heeft besteld.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -60,15 +62,15 @@ De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te d
 
 De centrale entiteit kan een campagnepakket op elk ogenblik annuleren.
 
-Klikken **[!UICONTROL Cancel]** in het campagnepakket **[!UICONTROL Dashboard]**.
+Klik op **[!UICONTROL Cancel]** in het campagnepakket **[!UICONTROL Dashboard]** .
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-De **[!UICONTROL Comment]** kunt u de annulering uitvullen.
+In het veld **[!UICONTROL Comment]** kunt u de annulering uitvullen.
 
-Voor **lokale campagnes** Als u een pakket annuleert, wordt dit verwijderd uit de lijst met beschikbare marketingcampagnes.
+Voor **lokale campagnes**, verwijdert het annuleren van een pakket het uit de lijst van beschikbare marketing campagnes.
 
-Voor **samenwerkingscampagnes** Wanneer u een pakket annuleert, worden talloze acties geactiveerd:
+Voor **samenwerkings campagnes**, die een pakket annuleert brengt talrijke acties teweeg:
 
 1. Alle bestellingen met betrekking tot dit pakket worden geannuleerd.
 
@@ -89,7 +91,7 @@ Geannuleerde pakketten kunnen desgewenst nog steeds door de centrale entiteit wo
 Campagnepakketten die al zijn gepubliceerd, kunnen opnieuw worden geïnitialiseerd, gewijzigd en ter beschikking van lokale entiteiten worden gesteld.
 
 1. Selecteer het betreffende pakket.
-1. Klik op de knop **[!UICONTROL Reinitialize the package to reuse it]** koppeling en klik op **[!UICONTROL OK]**.
+1. Klik op de koppeling **[!UICONTROL Reinitialize the package to reuse it]** en klik op **[!UICONTROL OK]** .
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
@@ -97,7 +99,7 @@ Campagnepakketten die al zijn gepubliceerd, kunnen opnieuw worden geïnitialisee
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. De pakketstatus verandert in **[!UICONTROL Being edited]**. Wijzig, keur en publiceer het opnieuw om het in de lijst van campagnepakket te herstellen goed te keuren.
+1. De pakketstatus verandert in **[!UICONTROL Being edited]** . Wijzig, keur en publiceer het opnieuw om het in de lijst van campagnepakket te herstellen goed te keuren.
 
 >[!NOTE]
 >
