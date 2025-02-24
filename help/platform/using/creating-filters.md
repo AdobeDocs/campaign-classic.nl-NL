@@ -8,16 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
 workflow-type: tm+mt
-source-wordcount: '1979'
-ht-degree: 0%
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
 # Filters maken{#creating-filters}
 
 
+Het filtreren van gegevens is het proces om een kleiner deel van uw gegevensreeks, slechts die verslagen te selecteren die bepaalde criteria aanpassen, en die ondergroep voor specifieke acties (updates, publieksverwezenlijking) of analyse te gebruiken.
 
 Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met filterconfiguratie kunt u gegevens in een lijst selecteren **[!UICONTROL dynamically]** . Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
@@ -25,216 +26,223 @@ Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer
 >
 >De de configuratiemontages van de gebruikersinterface worden plaatselijk bepaald op het apparatenniveau. Soms kan het nodig zijn deze gegevens op te schonen, vooral als zich problemen voordoen bij het vernieuwen van gegevens. Gebruik hiervoor het menu **[!UICONTROL File > Clear the local cache]** .
 
-## Typologie van beschikbare filters {#typology-of-available-filters}
+>[!NOTE]
+>
+>Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters) {target=_blank}.
 
-Met Adobe Campaign kunt u filters toepassen op gegevenslijsten.
 
-Deze filters kunnen eenmaal worden gebruikt of u kunt ze opslaan voor toekomstig gebruik. U kunt meerdere filters tegelijk toepassen.
+<!--
 
-De volgende filtertypen zijn beschikbaar in Adobe Campaign:
+## Typology of available filters {#typology-of-available-filters}
 
-* **Standaardfilters**
+Adobe Campaign lets you apply filters to data lists.
 
-  Het **standaardfilter** is toegankelijk via de gebieden die boven de lijsten worden gevestigd. Hiermee kunt u filteren op vooraf gedefinieerde velden (dit zijn standaard de naam en het e-mailadres voor ontvangerprofielen). U kunt de velden gebruiken om de tekens in te voeren waarop u wilt filteren of om de filtervoorwaarden in een vervolgkeuzelijst te selecteren.
+These filters can be used once, or you can save them for future use. You can apply several filters at the same time.
+
+The following filter types are available in Adobe Campaign:
+
+* **Default filters**
+
+  The **default filter** is accessible via the fields located above the lists. It lets you filter on predefined fields (for recipient profiles, these are the name and email address by default). You can use the fields to enter the characters to filter on or to selection the filter conditions from a drop-down list.
 
   ![](assets/filters_recipient_default_filter.png)
 <!--
   >[!NOTE]
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an email address in the domain "yahoo.com".
--->
-U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs naar [ Verandering de standaardfilter ](#altering-the-default-filter).
 
-* **Eenvoudige filters**
+  You can change the default filter of a list. For more on this, refer to [Change the default filter](#altering-the-default-filter).
 
-  **de Eenvoudige filters** zijn éénmalige filters op de kolommen. Ze worden gedefinieerd met een of meer eenvoudige zoekcriteria op de weergegeven kolommen.
+* **Simple filters**
 
-  U kunt verschillende eenvoudige filters op dezelfde gegevenslijst combineren om de zoekopdracht te verfijnen. De filtervelden worden onder elkaar weergegeven. Ze kunnen onafhankelijk van elkaar worden verwijderd.
+  **Simple filters** are one-off filters on the columns. They are defined with one or more simple search criteria on the displayed columns.
+
+  You can combine several simple filters on the same data list to refine your search. The filter fields are displayed one beneath the other. They can be deleted independently of each other.
 
   ![](assets/filters_recipient_simple_filter.png)
 
-  De eenvoudige filters worden gedetailleerd in [ creeer een eenvoudige filter ](#creating-a-simple-filter).
+  Simple filters are detailed in [Create a simple filter](#creating-a-simple-filter).
 
-* **Geavanceerde filters**
+* **Advanced filters**
 
-  **Geavanceerde filters** worden gecreeerd gebruikend een vraag of een combinatie vragen over de gegevens.
+  **Advanced filters** are created using a query or a combination of queries on the data.
 
-  Voor meer bij het creëren van een geavanceerd filter, verwijs naar [ creeer een geavanceerd filter ](#creating-an-advanced-filter).
+  For more on creating an advanced filter, refer to [Create an advanced filter](#creating-an-advanced-filter).
 
-  U kunt functies gebruiken om de inhoud van het filter te bepalen. Voor meer op dit, verwijs naar [ creeer een geavanceerd filter met functies ](#creating-an-advanced-filter-with-functions).
+  You can use functions to define the content of the filter. For more on this, refer to [Create an advanced filter with functions](#creating-an-advanced-filter-with-functions).
 
   >[!NOTE]
   >
-  >Voor meer bij het bouwen van vragen in Adobe Campaign, verwijs naar [ deze sectie ](../../platform/using/about-queries-in-campaign.md).
+  >For more on building queries in Adobe Campaign, refer to [this section](../../platform/using/about-queries-in-campaign.md).
 
-* **filters van de Gebruiker**
+* **User filters**
 
-  Een **toepassingsfilter** is een geavanceerd filter dat is bewaard, om zijn configuratie met de andere exploitanten te gebruiken en te delen.
+  An **application filter** is an advanced filter that has been saved, to use and share its configuration with the other operators.
 
-  De knop **[!UICONTROL Filters]** boven de lijsten bevat een set toepassingsfilters die kunnen worden gecombineerd om het filteren te verfijnen. De methode om deze filters tot stand te brengen wordt voorgesteld in [ sparen een filter ](#saving-a-filter).
+  The **[!UICONTROL Filters]** button located above the lists offers a set of application filters that can be combined to refine the filtering. The method for creating these filters is presented in [Save a filter](#saving-a-filter).
 
-## Het standaardfilter wijzigen {#altering-the-default-filter}
+## Change the default filter {#altering-the-default-filter}
 
-Als u het standaardfilter voor een lijst met ontvangers wilt wijzigen, klikt u op het knooppunt **[!UICONTROL Profiles and Targets > Pre-defined filters]** van de structuur.
+To change the default filter for a recipient list, click the **[!UICONTROL Profiles and Targets > Pre-defined filters]** node of the tree.
 
-Voor alle andere gegevenstypen configureert u het standaardfilter via het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** .
+For all other types of data, configure the default filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
 
-Voer de volgende stappen uit:
+Apply the following steps:
 
-1. Selecteer het filter dat u standaard wilt gebruiken.
-1. Klik op de tab **[!UICONTROL Parameters]** en selecteer **[!UICONTROL Default filter for the associated document type]** .
+1. Select the filter you want to be used by default.
+1. Click the **[!UICONTROL Parameters]** tab and select **[!UICONTROL Default filter for the associated document type]**.
 
    ![](assets/s_ncs_user_default_filter.png)
 
    >[!CAUTION]
    >
-   >Als er al een standaardfilter op de lijst is toegepast, moet u dit uitschakelen voordat u een nieuw filter toepast. Klik hiertoe op het rode kruis rechts van de filtervelden.
+   >If a default filter is already applied to the list, you need to disable it before applying a new filter. To do this, click the red cross to the right of the filtering fields.
 
-1. Klik op **[!UICONTROL Save]** om het filter toe te passen.
+1. Click **[!UICONTROL Save]** to apply the filter.
 
    >[!NOTE]
    >
-   >Het venster van de filterdefinitie is gedetailleerd in [ creeer een geavanceerd filter ](#creating-an-advanced-filter) en [ sparen een filter ](#saving-a-filter).
+   >The filter definition window is detailed in [Create an advanced filter](#creating-an-advanced-filter) and [Save a filter](#saving-a-filter).
 
-## Een eenvoudig filter maken {#creating-a-simple-filter}
+## Create a simple filter {#creating-a-simple-filter}
 
-Om a **eenvoudige filter** tot stand te brengen, pas de volgende stappen toe:
+To create a **simple filter**, apply the following steps:
 
-1. Klik met de rechtermuisknop op het veld waarop u wilt filteren en selecteer **[!UICONTROL Filter on this field]** .
+1. Right-click the field you want to filter and select **[!UICONTROL Filter on this field]**.
 
    ![](assets/s_ncs_user_sort_this_field.png)
 
-   De standaardfiltervelden worden boven de lijst weergegeven.
+   The default filter fields are displayed above the list.
 
-1. Selecteer de filteroptie in de vervolgkeuzelijst of voer de filtercriteria in die u wilt toepassen (de methode voor het selecteren of invoeren van criteria is afhankelijk van het veldtype: tekst, opgesomd, enz.).
+1. Select the filter option from the drop-down list, or enter the filter criteria to apply (the method for selecting or entering criteria depends on the type of field: text, enumerated, etc.).
 
    ![](assets/s_ncs_user_sort_fields.png)
 
-1. Als u het filter wilt activeren, drukt u op Enter op het toetsenbord of klikt u op de groene pijl rechts van de filtervelden.
+1. To activate the filter, press Enter on the keyboard, or click the green arrow to the right of the filter fields.
 
-Als het veld waarop u de gegevens wilt filteren niet in de vorm van het profiel wordt weergegeven, kunt u het veld toevoegen in de weergegeven kolommen en vervolgens op die kolom filteren. Om dit te doen,
+If the field on which you want to filter the data is not displayed in the form of the profile, you can add it in the columns displayed, then filter on that column. To do this,
 
-1. Klik op het pictogram **[!UICONTROL Configure the list]** .
+1. Click the **[!UICONTROL Configure the list]** icon.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Selecteer de kolom die moet worden weergegeven, bijvoorbeeld de leeftijd van de ontvangers.
+1. Select the column to be displayed, for example the age of the recipients.
 
    ![](assets/s_ncs_user_select_fields_to_display.png)
 
-1. Klik met de rechtermuisknop op de **pagina** -kolom in de lijst met ontvangers en selecteer **[!UICONTROL Filter on this column]** .
+1. Right-click the **Age** column in the recipient list, and select **[!UICONTROL Filter on this column]**.
 
    ![](assets/s_ncs_user_sort_this_column.png)
 
-   Vervolgens kunt u de filteropties voor leeftijd selecteren.
+   You can then select the age filtering options.
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## Een geavanceerd filter maken {#creating-an-advanced-filter}
+## Create an advanced filter {#creating-an-advanced-filter}
 
-Om een **geavanceerde filter** tot stand te brengen, pas de volgende stappen toe:
+To create an **advanced filter**, apply the following steps:
 
-1. Klik op **[!UICONTROL Filters]** en selecteer **[!UICONTROL Advanced filter...]** .
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**. 
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
-   U kunt ook met de rechtermuisknop op de lijst met gegevens klikken die u wilt filteren en **[!UICONTROL Advanced filter...]** selecteren.
+   You can also right-click the list of data to filter and select **[!UICONTROL Advanced filter...]**.
 
-   Het venster voor filtervoorwaardendefinitie wordt weergegeven.
+   The filtering condition definition window is displayed.
 
-1. Klik op de kolom **[!UICONTROL Expression]** om de invoerwaarde te definiëren.
-1. Klik op **[!UICONTROL Edit expression]** om het veld te selecteren waarop het filter wordt toegepast.
+1. Click the **[!UICONTROL Expression]** column to define the input value.
+1. Click **[!UICONTROL Edit expression]** to select the field to which the filter will be applied.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. Selecteer in de lijst het veld waarop de gegevens worden gefilterd. Klik op **[!UICONTROL Finish]** om te bevestigen.
-1. Klik op de kolom **[!UICONTROL Operator]** en selecteer de operator die u wilt toepassen in de vervolgkeuzelijst.
-1. Selecteer een verwachte waarde in de kolom **[!UICONTROL Value]** . U kunt verschillende filters combineren om de query te verfijnen. Klik op **[!UICONTROL Add]** om een filtervoorwaarde toe te voegen.
+1. From the list, select the field on which data will be filtered. Click **[!UICONTROL Finish]** to confirm.
+1. Click the **[!UICONTROL Operator]** column and select the operator to be applied from the drop-down list.
+1. Select an expected value from the **[!UICONTROL Value]** column. You can combine several filters to refine your query. To add a filter condition, click **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
-1. U kunt een hiërarchie aan de uitdrukkingen toewijzen of de orde van de vraaguitdrukkingen veranderen gebruikend de toolbarpijlen.
-1. De standaardexploitant tussen uitdrukkingen is **EN**, maar u kunt dit veranderen door het gebied te klikken. U kunt een **of** exploitant selecteren.
+1. You can assign a hierarchy to the expressions or change the order of the query expressions using the toolbar arrows.
+1. The default operator between expressions is **And**, but you can change this by clicking the field. You can select an **Or** operator.
 
    ![](assets/s_ncs_user_filter_operator.png)
 
-1. Klik op **[!UICONTROL OK]** om het maken van filters te bevestigen en deze toe te passen op de lijst.
+1. Click **[!UICONTROL OK]** to confirm filter creation and apply it to the list.
 
-Het toegepaste filter wordt boven de lijst weergegeven.
+The filter applied is displayed above the list.
 
 ![](assets/s_ncs_user_filter_adv_edit.png)
 
-Als u dit filter wilt bewerken of wijzigen, klikt u op het label ervan.
+To edit or modify this filter, click its label.
 
-Als u dit filter wilt annuleren, klikt u op het pictogram **[!UICONTROL Remove this filter]** rechts van het filter.
+To cancel this filter, click the **[!UICONTROL Remove this filter]** icon to the right of the filter.
 
 ![](assets/s_ncs_user_filter_adv_remove.png)
 
-U kunt een geavanceerd filter opslaan om het voor toekomstig gebruik te houden. Voor verdere informatie over dit type van filter, zie [ sparen een filter ](#saving-a-filter).
+You can save an advanced filter to keep it for future use. For further information about this type of filter, see [Save a filter](#saving-a-filter).
 
-### Een geavanceerd filter met functies maken {#creating-an-advanced-filter-with-functions}
+### Create an advanced filter with functions {#creating-an-advanced-filter-with-functions}
 
-De geavanceerde filters kunnen functies gebruiken; **filters met functies** worden gecreeerd via een uitdrukkingsredacteur die u formules laat tot stand brengen gebruikend de gegevensbestandgegevens en geavanceerde functies. Als u een filter met functies wilt maken, herhaalt u de stappen 1, 2 en 3 voor het maken van geavanceerde filters en gaat u als volgt te werk:
+Advanced filters can use functions; **filters with functions** are created via an expression editor that lets you create formulas using the database data and advanced functions. To create a filter with functions, repeat advanced filter creation steps 1, 2 and 3, then proceed as follows:
 
-1. Klik op **[!UICONTROL Advanced selection]** in het venster Veldselectie.
-1. Selecteer het type formule dat moet worden gebruikt: aggregaat, bestaand gebruikersfilter of bestaande expressie.
+1. In the field selection window, click **[!UICONTROL Advanced selection]**.
+1. Select the type of formula to be used: aggregate, existing user filter or expression.
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
-   De volgende opties zijn beschikbaar:
+   The following options are available:
 
-   * **[!UICONTROL Field only]** om een veld te selecteren. Dit is de standaardmodus.
-   * **[!UICONTROL Aggregate]** om de te gebruiken samengestelde formule te selecteren (tellingen, som, gemiddelde, maximum, minimum).
-   * **[!UICONTROL User filter]** om een van de bestaande gebruikersfilters te selecteren. De filters van de gebruiker zijn gedetailleerd in [ sparen een filter ](#saving-a-filter).
-   * **[!UICONTROL Expression]** voor toegang tot de expressies-editor.
+    * **[!UICONTROL Field only]** to select a field. This is the default mode. 
+    * **[!UICONTROL Aggregate]** to select the aggregate formula to be used (counts, sum, average, maximum, minimum).
+    * **[!UICONTROL User filter]** to select one of the existing user filters. User filters are detailed in [Save a filter](#saving-a-filter).
+    * **[!UICONTROL Expression]** to access the expressions editor.
 
-     Met de expressieeditor kunt u een geavanceerd filter definiëren. Het ziet er zo uit:
+      The expression editor lets you define an advanced filter. It looks like this:
+    
+      ![](assets/s_ncs_user_create_exp_exple01.png)
 
-     ![](assets/s_ncs_user_create_exp_exple01.png)
+      It lets you select fields in the database tables and attach advanced functions to them: Select the function to use in the **[!UICONTROL List of functions]**. The functions available are detailed in [List of functions](../../platform/using/defining-filter-conditions.md#list-of-functions). Next, select the field or fields concerned by the functions and click **[!UICONTROL OK]** to approve the expression.
 
-     Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde functies aan koppelen: selecteer de functie die u wilt gebruiken in de **[!UICONTROL List of functions]** . De beschikbare functies zijn gedetailleerd in [ Lijst van functies ](../../platform/using/defining-filter-conditions.md#list-of-functions). Selecteer vervolgens het veld of de velden waarop de functies betrekking hebben en klik op **[!UICONTROL OK]** om de expressie goed te keuren.
+      >[!NOTE]
+      >
+      >For an example of filter creation based on an expression, refer to [this section](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
-     >[!NOTE]
-     >
-     >Voor een voorbeeld van filterverwezenlijking die op een uitdrukking wordt gebaseerd, verwijs naar [ deze sectie ](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+## Save a filter {#saving-a-filter}
 
-## Een filter opslaan {#saving-a-filter}
+Filters are specific to each operator and are re-initialized each time the operator clears the cache of their client console.
 
-Filters zijn specifiek voor elke operator en worden telkens opnieuw geïnitialiseerd wanneer de operator de cache van de clientconsole wist.
+You can create an **application filter** by saving an advanced filter: it can be re-used by right-clicking in any list or via the **[!UICONTROL Filters]** button located above the lists.
 
-U kunt een **toepassingsfilter** tot stand brengen door een geavanceerd filter op te slaan: het kan door in om het even welke lijst met de rechtermuisknop aan te klikken of via de **[!UICONTROL Filters]** knoop worden opnieuw gebruikt die boven de lijsten wordt gevestigd.
+These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](../../delivery/using/creating-an-email-delivery.md) for more on creating deliveries). To create the application filter, you can:
 
-Deze filters kunnen ook direct via de leveringsmedewerker, in het stadium van de doelselectie worden betreden (verwijs naar [ deze sectie ](../../delivery/using/creating-an-email-delivery.md) voor meer bij het creëren van leveringen). Als u het toepassingsfilter wilt maken, kunt u:
-
-* Zet een geavanceerd filter in een toepassingsfilter om. Klik hiertoe op **[!UICONTROL Save]** voordat u de geavanceerde filtereditor sluit.
+* Convert an advanced filter to an application filter. To do this, click **[!UICONTROL Save]** before closing the advanced filter editor.
 
   ![](assets/s_ncs_user_filter_save.png)
 
-* Maak dit toepassingsfilter via het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** (of **[!UICONTROL Profiles and targets > Predefined filters]** voor ontvangers) van de structuur. Klik hiertoe met de rechtermuisknop op de lijst met filters en selecteer **[!UICONTROL New...]** . De procedure is hetzelfde als voor het maken van geavanceerde filters.
+* Create this application filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** (or **[!UICONTROL Profiles and targets > Predefined filters]** for recipients) node of the tree. To do this, right-click the list of filters, and select **[!UICONTROL New...]**. The procedure is the same as for creating advanced filters.
 
-  In het veld **[!UICONTROL Label]** kunt u dit filter een naam geven. Deze naam wordt weergegeven in het keuzemenu met invoervak van de knop **[!UICONTROL Filters...]** .
+  The **[!UICONTROL Label]** field enables you to name this filter. This name will appear in the combo box of the **[!UICONTROL Filters...]** button. 
 
   ![](assets/user_filter_apply.png)
 
-U kunt alle filters in de huidige lijst verwijderen door met de rechtermuisknop te klikken en **[!UICONTROL No filter]** te selecteren of door via het pictogram **[!UICONTROL Filters]** boven de lijst te klikken.
+You can delete all filters on the current list by right-clicking and selecting **[!UICONTROL No filter]** or via the **[!UICONTROL Filters]** icon located above the list.  
 
-U kunt filters combineren door op de knop **[!UICONTROL Filters]** te klikken en het menu **[!UICONTROL And...]** te gebruiken.
+You can combine filters by clicking the **[!UICONTROL Filters]** button and using the **[!UICONTROL And...]** menu.
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filterontvangers {#filtering-recipients}
+## Filter recipients {#filtering-recipients}
 
-De vooraf bepaalde filters (zie [ sparen een filter ](#saving-a-filter)) laten u toe om de profielen van ontvangers in het gegevensbestand te filtreren. U kunt filters uit het knooppunt **[!UICONTROL Profiles and Targets > Predefined filters]** van de boomstructuur bewerken. De filters worden weergegeven in de bovenste sectie van de werkruimte via de knop **[!UICONTROL Filters]** .
+Predefined filters (see [Save a filter](#saving-a-filter)) enable you to filter the profiles of recipients contained in the database. You can edit filters from the **[!UICONTROL Profiles and Targets > Predefined filters]** node of the tree. The filters are listed in the upper section of the workspace, via the **[!UICONTROL Filters]** button.
 
-Selecteer een filter om de definitie ervan weer te geven en een voorvertoning van de gefilterde gegevens te openen.
+Select a filter to display its definition and to access a preview of the filtered data.
 
 ![](assets/s_ncs_user_segment_edit.png)
 
 >[!NOTE]
 >
->Voor een gedetailleerd voorbeeld van vooraf bepaalde filterverwezenlijking, verwijs naar [ geval van het Gebruik ](../../platform/using/use-case.md).
+>For a detailed example of predefined filter creation, refer to [Use case](../../platform/using/use-case.md).
 
-De vooraf gedefinieerde filters zijn:
+The predefined filters are:
 
 <table> 
  <tbody> 
@@ -243,139 +251,140 @@ De vooraf gedefinieerde filters zijn:
    <td> <strong>Query</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Geopend <br /> </td> 
-   <td> Selecteert ontvangers die een levering hebben geopend.<br /> </td> 
+   <td> Opened<br /> </td> 
+   <td> Selects recipients who have opened a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Geopend maar niet geklikt <br /> </td> 
-   <td> Selecteert ontvangers die een levering hebben geopend maar niet op een verbinding geklikt.<br /> </td> 
+   <td> Opened but not clicked<br /> </td> 
+   <td> Selects recipients who have opened a delivery but have not clicked on a link.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Inactieve ontvangers <br /> </td> 
-   <td> Selecteert ontvangers die geen levering in X maanden hebben geopend.<br /> </td> 
+   <td> Inactive recipients<br /> </td> 
+   <td> Selects recipients who have not opened a delivery in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Laatste activiteit door apparatentype <br /> </td> 
-   <td> Selecteert ontvangers die of levering Y gebruikend apparaat X in de laatste dagen van Z hebben geklikt geopend.<br /> </td> 
+   <td> Last activity by device type<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Laatste activiteit door apparatentype (het Volgen) <br /> </td> 
-   <td> Selecteert ontvangers die of levering Y gebruikend apparaat X in de laatste dagen van Z hebben geklikt geopend.<br /> </td> 
+   <td> Last activity by device type (Tracking)<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Niet-doelontvangers <br /> </td> 
-   <td> Selecteert ontvangers die nooit via kanaal Y in X maanden zijn gericht.<br /> </td> 
+   <td> Untargeted recipients<br /> </td> 
+   <td> Selects recipients who have never been targeted via channel Y in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zeer actieve ontvangers <br /> </td> 
-   <td> Selecteert ontvangers die in een levering minstens x keer in de laatste maanden van Y hebben geklikt.<br /> </td> 
+   <td> Very active recipients<br /> </td> 
+   <td> Selects recipients who have clicked in a delivery at least X times in the last Y months.<br /> </td> 
   </tr> 
   <tr> 
- <td> Op de lijst met ongewenste personen staan e-mailadres <br /> </td> 
-    <td> Selecteert ontvangers de waarvan e-mailadres op de lijst van gewezen personen is.<br/> </td>
+ <td> Denylisted email address<br /> </td> 
+    <td> Selects recipients whose email address is on the denylist.<br/> </td>
   </tr> 
   <tr> 
-   <td> Gegarandeerd e-mailadres <br /> </td> 
-   <td> Hiermee selecteert u ontvangers waarvan het e-mailadres in quarantaine is geplaatst.<br /> </td> 
+   <td> Quarantined email address<br /> </td> 
+   <td> Selects recipients whose email address is quarantined.<br /> </td> 
   </tr> 
   <tr> 
-   <td> E-mailadressen gedupliceerd in de map <br /> </td> 
-   <td> Hiermee selecteert u ontvangers waarvan het e-mailadres in de map wordt gedupliceerd.<br /> </td> 
+   <td> Email addresses duplicated in the folder<br /> </td> 
+   <td> Selects recipients whose email address is duplicated in the folder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Niet geopend en niet geklikt <br /> </td> 
-   <td> Selecteert ontvangers die geen levering hebben geopend, of in een levering geklikt.<br /> </td> 
+   <td> Neither opened nor clicked<br /> </td> 
+   <td> Selects recipients who have not opened a delivery, or clicked in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nieuwe ontvangers (dagen) <br /> </td> 
-   <td> Selecteert ontvangers die in de laatste dagen van X werden gecreeerd.<br /> </td> 
+   <td> New recipients (days)<br /> </td> 
+   <td> Selects recipients that were created in the last X days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nieuwe ontvangers (minuten) <br /> </td> 
-   <td> Selecteert ontvangers die in de laatste notulen van X werden gecreeerd.<br /> </td> 
+   <td> New recipients (minutes)<br /> </td> 
+   <td> Selects recipients that were created in the last X minutes.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nieuwe ontvangers (maanden) <br /> </td> 
-   <td> Selecteert ontvangers die in de laatste maanden van X werden gecreeerd.<br /> </td> 
+   <td> New recipients (months)<br /> </td> 
+   <td> Selects recipients that were created in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Op abonnement <br /> </td> 
-   <td> Selecteert ontvangers door abonnement.<br /> </td> 
+   <td> By subscription<br /> </td> 
+   <td> Selects recipients by subscription.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Door op een specifieke verbinding <br /> te klikken </td> 
-   <td> Selecteert ontvangers die op bepaalde URL in een levering klikte.<br /> </td> 
+   <td> By clicking on a specific link<br /> </td> 
+   <td> Selects recipients who clicked on a particular URL in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Per postbezorgingsgedrag <br /> </td> 
-   <td> Selecteert ontvangers volgens hun gedrag na het ontvangen van een levering.<br /> </td> 
+   <td> By post delivery behavior<br /> </td> 
+   <td> Selects recipients according to their behavior after receiving a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Op aanmaakdatum <br /> </td> 
-   <td> Hiermee selecteert u ontvangers op aanmaakdatum, over een periode van X maanden (huidige datum min n maanden) tot Y maanden (huidige datum min n maanden).<br /> </td> 
+   <td> By creation date<br /> </td> 
+   <td> Selects recipients by creation date, over a period ranging from X months (current date minus n months) to Y months (current date minus n months).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Op lijst <br /> </td> 
-   <td> Hiermee selecteert u ontvangers op lijst.<br /> </td> 
+   <td> By list<br /> </td> 
+   <td> Selects recipients by list.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Door aantal kliks <br /> </td> 
-   <td> Selecteert ontvangers die in een levering in de laatste maanden van X klikte.<br /> </td> 
+   <td> By number of clicks<br /> </td> 
+   <td> Selects recipients who clicked in a delivery in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Door aantal ontvangen berichten <br /> </td> 
-   <td> Selecteert ontvangers op het aantal berichten dat zij ontvingen.<br /> </td> 
+   <td> By number of messages received<br /> </td> 
+   <td> Selects recipients according to the number of messages that they received.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Door aantal van opent <br /> </td> 
-   <td> Selecteert ontvangers die tussen de levering van X en van Y over de hoeveelheid tijd van Z opende.<br /> </td> 
+   <td> By number of opens<br /> </td> 
+   <td> Selects recipients who opened between X and Y deliveries over Z amount of time.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Op naam of e-mail <br /> </td> 
-   <td> Hiermee selecteert u ontvangers op basis van hun naam of e-mail.<br /> </td> 
+   <td> By name or email<br /> </td> 
+   <td> Selects recipients according to their name or email.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Op leeftijdsbereik <br /> </td> 
-   <td> Hiermee selecteert u ontvangers op basis van hun leeftijd.<br /> </td> 
+   <td> By age range<br /> </td> 
+   <td> Selects recipients according to their age.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Alle vergelijkingen met betrekking tot tellingen en termijnen moeten in bredere zin worden geïnterpreteerd (ontvangers die overeenkomen met de querylimieten worden in de vergelijking opgenomen).
+>All comparisons concerning counting and periods are to be understood in the broader sense (recipients that correspond to the query limits are included in the comparison).
 
-Voorbeelden van de wijze waarop de gegevens worden berekend:
+Examples of how the data is calculated:
 
-* Selecteert ontvangers jonger dan 30 jaar:
+* Selects recipients who are less than 30 years old: 
 
   ![](assets/predefined_filters_01.png)
 
-* Selecteert ontvangers die 18 jaar of ouder zijn:
+* Selects recipients who are 18 years of age or older:
 
   ![](assets/predefined_filters_03.png)
 
-* Selecteert ontvangers tussen 18 en 30 jaar:
+* Selects recipients aged between 18 and 30:
 
   ![](assets/predefined_filters_02.png)
 
-## Geavanceerde instellingen voor gegevensfilters {#advanced-settings-for-data-filters}
+## Advanced settings for data filters {#advanced-settings-for-data-filters}
 
-Klik op het tabblad **[!UICONTROL Settings]** voor toegang tot de volgende opties:
+Click the **[!UICONTROL Settings]** tab to access the following options:
 
-* **[!UICONTROL Default filter for the associated document type]** : met deze optie kunt u dit filter standaard voorstellen in de editor van de lijsten waarop de sortering betrekking heeft.
+* **[!UICONTROL Default filter for the associated document type]**: this option lets you suggest this filter by default in the editor of the lists concerned by the sort.
 
-  Het filter **[!UICONTROL By name or login]** wordt bijvoorbeeld toegepast op operatoren. Deze optie is geselecteerd en het filter wordt daarom altijd aangeboden in alle operatorlijsten.
+  For example, the **[!UICONTROL By name or login]** filter is applied to operators. This option is selected, and so the filter is always offered on all operator lists.
 
-* **[!UICONTROL Filter shared with other operators]** : met deze optie kunt u het filter beschikbaar maken voor alle andere operatoren in de huidige database.
-* **[!UICONTROL Use parameter entry form]** : met deze optie kunt u de filtervelden definiëren die boven de lijst worden weergegeven wanneer dit filter wordt geselecteerd. Met deze velden kunt u de filterinstellingen definiëren. Dit formulier moet worden ingevoerd in XML-indeling via de knop **[!UICONTROL Form]** . Het vooraf geconfigureerde filter **[!UICONTROL Recipients who have opened]**, dat bijvoorbeeld beschikbaar is in de lijst met ontvangers, geeft een filterveld weer waarmee u de levering kunt selecteren waarop het filter is gericht.
+* **[!UICONTROL Filter shared with other operators]**: this option lets you make the filter available to all the other operators on the current database.
+* **[!UICONTROL Use parameter entry form]**: this option lets you define the filter field(s) to be displayed above the list when this filter is selected. These fields let you define the filter settings. This form must be entered in XML format via the **[!UICONTROL Form]** button. For example, the preconfigured filter **[!UICONTROL Recipients who have opened]**, available from the recipients list, displays a filter field that lets you select the delivery at which the filter is aimed.
 
-  De knop **[!UICONTROL Preview]** geeft het resultaat van het geselecteerde filter weer.
+  The **[!UICONTROL Preview]** button displays the result of the selected filter.
 
-* Met de koppeling **[!UICONTROL Advanced parameters]** kunt u aanvullende instellingen definiëren. Met name kunt u een SQL-tabel aan het filter koppelen om deze te gebruiken voor alle editors die de tabel delen.
+* The **[!UICONTROL Advanced parameters]** link lets you define additional settings. In particular, you can associate a SQL table with the filter to make it common to all editors that share the table.
 
-  Selecteer de optie **[!UICONTROL Do not restrict the filter]** als u wilt voorkomen dat de gebruiker dit filter overschrijft.
+  Select the **[!UICONTROL Do not restrict the filter]** option if you want to stop the user from overriding this filter.
 
-  Deze optie is ingeschakeld voor de filters &quot;Ontvangers van een levering&quot; en &quot;Ontvangers van leveringen die tot een map behoren&quot; die in de leveringsassistent worden aangeboden en die niet kunnen worden overgeladen.
+  This option is enabled for "Recipients of a delivery" and "Recipients of deliveries belonging to a folder" filters offered in the delivery assistant that cannot be overloaded.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)
+-->
