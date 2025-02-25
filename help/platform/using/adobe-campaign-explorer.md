@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '87'
+ht-degree: 0%
 
 ---
 
@@ -20,67 +20,74 @@ ht-degree: 1%
 
 De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
-De **[!UICONTROL Explorer]** De werkruimte bestaat uit drie zones:
+>[!NOTE]
+>
+>Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de Campagne v8 documentatie: meer [ over het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui) {target=_blank} leren, zijn [ montages ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings) {target=_blank} of [ hoe te om omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views) te beheren {target=_blank}.
+
+
+<!--
+The **[!UICONTROL Explorer]** workspace is divided into three zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - boom**: u kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg voor meer informatie hierover  [deze sectie](#about-navigation-hierarchy).).
+**1 - Tree**: you can personalize the content of the tree (add, move, or delete nodes). This procedure is intended for expert users only. For more on this, refer to  [this section](#about-navigation-hierarchy).).
 
-**2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer informatie](adobe-campaign-ui-lists.md).
+**2 - List**: you can filter this list, run searches, add information, or sort data. [Learn more](adobe-campaign-ui-lists.md).
 
-**3 - Details**: u kunt de details van het geselecteerde element weergeven. Met het pictogram in de rechterbovensectie kunt u deze informatie op volledig scherm weergeven.
+**3 - Details**: you can display the details of the selected element. The icon in the upper right-hand section lets you display this information in full-screen format.
 
-## Mappen en navigatiestructuur{#about-navigation-hierarchy}
+## Folders and navigation tree{#about-navigation-hierarchy}
 
-De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt.
+The navigation tree works like a file browser (e.g. Windows Explorer). Folders may contain sub-folders. Selecting a node displays the view corresponding to the node.
 
-De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invoerformulier voor het bewerken van de geselecteerde regel.
+The view displayed is a list associated with a schema and an input form to edit the selected line.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]** . Selecteer in het snelmenu het type bestand dat u wilt maken.
+To add a new folder to the tree, right-click the folder in the branch where you wish to insert a folder, and select **[!UICONTROL Add new folder]** . In the shortcut menu, select the type of file to be created.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-Leer hoe u de boomstructuur voor cameranavigatie configureert [in deze sectie](../../configuration/using/configuration.md).
+Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-Leer hoe u machtigingen voor mappen instelt [in deze sectie](access-management-folders.md).
+Learn how to set permissions on folders [in this section](access-management-folders.md).
 
-## Aanbevolen werkwijzen voor mapconfiguratie
+## Folder configuration best practices
 
-* **Ingebouwde mappen gebruiken**
+* **Use built-in folders**
 
-  Door de ingebouwde mappen te gebruiken, kunt u de toepassing eenvoudiger gebruiken, onderhouden en problemen oplossen voor personen die niet bij het project zijn betrokken. U moet geen aangepaste mapstructuren maken voor ontvangers, lijsten, leveringen, enzovoort, maar u moet wel de standaardmappen gebruiken, zoals Beheer, Profielen en doelen, Campagnebeheer.
+  Using the built-in folders makes it easier for people not involved in the project to use, maintain and troubleshoot the application. You should not create custom folder structures for recipients, lists, deliveries, etc., but use the standard folders such as Administration, Profiles & Targets, Campaign management.
 
-* **Submappen maken**
+* **Create sub-folders**
 
-  Plaats technische workflows onder de standaardmap: Beheer / Productie / Technische workflows en maak submappen per workflowtype.
+  Place technical workflows under the standard folder: Administration / Production / Technical Workflows, and create subdirectories per workflow type.
+  
+* **Set a naming convention**
 
-* **Een naamgevingsconventie instellen**
+  For example you can name the workflows in alphabetical order, so that they appear sorted in the order of execution.
+  
+  For example:
+  
+  * A1 – import recipients, starts at 10:00;
+  * A2 – import tickets, starts at 11:00.
 
-  U kunt de werkstromen bijvoorbeeld in alfabetische volgorde benoemen, zodat ze in de volgorde van uitvoering gesorteerd worden weergegeven.
+* **Create templates for users to start with**
 
-  Bijvoorbeeld:
+  Create delivery templates, workflow templates, campaign templates specific to users. This structure can save time and make sure that the right delivery mapping and typologies are used for each user.
 
-   * A1 - ontvangers van de invoer, begint om 10:00;
-   * A2 - Importopdrachten beginnen om 11.00 uur.
+## Screen resolution {#screen-resolution}
 
-* **Sjablonen maken waarmee gebruikers kunnen beginnen**
-
-  Leveringssjablonen, workflowsjablonen en campagnemalplaatjes maken die specifiek zijn voor gebruikers. Deze structuur kan tijd besparen en ervoor zorgen dat de juiste leveringstoewijzing en typologieën voor elke gebruiker worden gebruikt.
-
-## Schermresolutie {#screen-resolution}
-
-Voor optimale navigatie en bruikbaarheid raadt de Adobe aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
+For optimal navigation and usability, Adobe recommends using a minimum screen resolution of 1600x900 pixels.
 
 >[!CAUTION]
 >
->Resoluties van minder dan 1600 x 900 pixels worden niet ondersteund door Adobe Campaign.
+>Resolutions under 1600x900 pixels are not supported by Adobe Campaign.
 
-In de **[!UICONTROL Explorer]** werkruimte, als sommige delen van de **[!UICONTROL Details]** zone lijkt te zijn afgekapt, uitgevouwen met de pijl boven de zone of klik op de knop **[!UICONTROL Enlarge]** knop.
+In the **[!UICONTROL Explorer]** workspace, if some parts of the **[!UICONTROL Details]** zone appear to be truncated, expand it using the arrow on top of the zone or click the **[!UICONTROL Enlarge]** button.
 
 ![](assets/s_ncs_user_resolution.png)
 
-## Lijsten verkennen en aanpassen {#browsing-lists}
+## Browse and customize lists {#browsing-lists}
 
-Leer hoe u lijsten kunt bladeren, beheren en aanpassen [in deze sectie](adobe-campaign-ui-lists.md).
+Learn how to browse, manage and customize lists [in this section](adobe-campaign-ui-lists.md).
+-->
