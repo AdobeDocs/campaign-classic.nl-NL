@@ -4,8 +4,10 @@ title: Doelgroep van marketingcampagne
 description: Leer hoe u het publiek van uw marketingcampagnes definieert
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 0%
@@ -91,7 +93,7 @@ Doelworkflows kunnen handmatig worden gestart via de knop **[!UICONTROL Start]**
 
 Het richten kan voor automatische uitvoering volgens een programma (planner) of een gebeurtenis (extern signaal, dossierinvoer, enz.) worden geprogrammeerd.
 
-De acties met betrekking tot het uitvoeren van de doelworkflow (starten, stoppen, pauzeren, enz.) zijn **asynchrone** processen: het bevel wordt bewaard en zal van kracht worden zodra de server beschikbaar is om het toe te passen.
+De acties met betrekking tot het uitvoeren van het richten werkschema (lancering, einde, pauze, enz.) zijn **asynchrone** processen: het bevel wordt bewaard en zal van kracht worden zodra de server beschikbaar is om het toe te passen.
 
 Met de werkbalkpictogrammen kunt u actie ondernemen met betrekking tot de uitvoering van de doelworkflow.
 

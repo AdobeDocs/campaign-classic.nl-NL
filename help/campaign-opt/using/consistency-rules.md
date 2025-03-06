@@ -4,8 +4,10 @@ title: Consistentieregels
 description: Leer hoe u met consistentieregels werkt in Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 3%
@@ -18,35 +20,35 @@ ht-degree: 3%
 
 Adobe Campaign garandeert consistente communicatie dankzij een set regels die zijn opgenomen in campagnetypologieën. Zij hebben tot doel de leveringen die aan de ontvangers worden verzonden, te controleren, zoals volume, aard, relevantie, enz.
 
-**Capaciteit** regels kunnen bijvoorbeeld voorkomen dat het platform waarop de levering van berichten betrekking heeft , wordt overbelast . Bijvoorbeeld, moeten de speciale aanbiedingen die een downloadverbinding bevatten niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Raadpleeg voor meer informatie hierover [Besturingscapaciteit](#controlling-capacity).
+**de regels van de Capaciteit**, bijvoorbeeld kunnen vermijden overladend het platform betrokken door de levering van berichten. Bijvoorbeeld, moeten de speciale aanbiedingen die een downloadverbinding bevatten niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Voor meer op dit, verwijs naar [ capaciteit van de Controle ](#controlling-capacity).
 
 ## Besturingscapaciteit {#controlling-capacity}
 
 Alvorens berichten te leveren, moet u ervoor zorgen uw organisatie de capaciteit heeft om de levering (fysieke infrastructuur) te verwerken, de reacties die de levering (binnenkomende berichten) kan produceren, en het aantal vraag die aan contactabonnees (de verwerkingscapaciteit van het vraagcentrum) moet worden gemaakt, bijvoorbeeld.
 
-Hiervoor moet u **[!UICONTROL Capacity]** typologische regels.
+Hiervoor moet u **[!UICONTROL Capacity]** typologieregels maken.
 
 In het volgende voorbeeld, creëren wij een typologieregel voor een campagne van de telefoonloyaliteit. Wij beperken het aantal berichten tot 20 per dag, d.w.z. de dagelijkse verwerkingscapaciteit van een callcenter. Zodra de regel op twee leveringen van toepassing was, kunnen wij consumptie door logboeken controleren.
 
 Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
 
-1. Onder de **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** knooppunt, klikken **[!UICONTROL New]**.
+1. Klik onder het knooppunt **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** op **[!UICONTROL New]** .
 1. Selecteer een **[!UICONTROL Capacity]** regeltype.
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. In de **[!UICONTROL Capacity]** tab, creeer de beschikbaarheidslijnen: in ons voorbeeld, zijn dit tijdsperiodes waarin de vraag kan worden gemaakt. Selecteer een periode van 24 uur en ga 150 in het aanvankelijke aantal in, wat betekent dat het vraagcentrum 150 vraag per dag kan behandelen.
+1. Maak op het tabblad **[!UICONTROL Capacity]** de beschikbaarheidsregels: in ons voorbeeld zijn dit tijdsperioden waarin aanroepen kunnen worden uitgevoerd. Selecteer een periode van 24 uur en ga 150 in het aanvankelijke aantal in, wat betekent dat het vraagcentrum 150 vraag per dag kan behandelen.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
    >[!NOTE]
    >
-   >Beschikbaarheidsregels dienen alleen ter informatie. Als u berichten moet uitsluiten wanneer de capaciteitslimiet is bereikt, raadpleegt u [deze sectie](#exclude-messages-when-capacity-limit-reached).
+   >Beschikbaarheidsregels dienen alleen ter informatie. Als u berichten moet uitsluiten wanneer de capaciteitsgrens wordt bereikt, verwijs naar [ deze sectie ](#exclude-messages-when-capacity-limit-reached).
 
 1. Koppel deze regel aan een typologie en verwijs de typologie in uw levering om deze capaciteitsregel toe te passen. Raadpleeg [deze sectie](applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
-1. U kunt de consumptie controleren op basis van de regel **[!UICONTROL Consumptions]** en **[!UICONTROL Capacity]** tabs.
+1. U kunt het verbruik controleren met de tabbladen **[!UICONTROL Consumptions]** en **[!UICONTROL Capacity]** .
 
-   Wanneer een regel in een levering wordt gebruikt, **[!UICONTROL Consumed]** en **[!UICONTROL Remaining]** kolommen bevatten informatie over de lading, zoals hieronder wordt getoond:
+   Wanneer een regel wordt gebruikt in een levering, bieden de kolommen **[!UICONTROL Consumed]** en **[!UICONTROL Remaining]** informatie over de lading, zoals hieronder wordt getoond:
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
@@ -54,11 +56,11 @@ Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
 
 ## De maximale belasting definiëren {#defining-the-maximum-load}
 
-Om de maximumlading te bepalen, moet u beschikbaarheidslijnen bepalen. Hiervoor zijn twee opties beschikbaar: u kunt handmatig een of meer beschikbaarheidsregels maken (zie [Beschikbaarheidsregels een voor een toevoegen](#adding-availability-lines-one-by-one)) of maak beschikbaarheidsbereiken. De frequentie van deze tijdsperiodes kan worden geautomatiseerd (zie [Een set beschikbaarheidsregels toevoegen](#add-a-set-of-availability-lines)).
+Om de maximumlading te bepalen, moet u beschikbaarheidslijnen bepalen. Om dit te doen, zijn twee opties beschikbaar: u kunt één of meerdere beschikbaarheidslijnen manueel tot stand brengen (verwijs naar [ beschikbaarheidslijnen één voor één toevoegen ](#adding-availability-lines-one-by-one)) of beschikbaarheidswaaiers creëren. De frequentie van deze tijdsperioden kan worden geautomatiseerd (verwijs naar [ voegt een reeks beschikbaarheidslijnen ](#add-a-set-of-availability-lines) toe).
 
 ### Beschikbaarheidsregels een voor een toevoegen {#adding-availability-lines-one-by-one}
 
-Om een beschikbaarheidslijn tot stand te brengen, klik **[!UICONTROL Add]** en selecteert u **[!UICONTROL Add an availability line]**. Voer de beschikbaarheidsperiode en de beschikbare laadtijd in.
+Als u een beschikbaarheidsregel wilt maken, klikt u op de knop **[!UICONTROL Add]** en selecteert u **[!UICONTROL Add an availability line]** . Voer de beschikbaarheidsperiode en de beschikbare laadtijd in.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -66,9 +68,9 @@ Voeg zoveel regels toe als nodig zijn voor uw verwerkingscapaciteit.
 
 ### Een set beschikbaarheidsregels toevoegen {#add-a-set-of-availability-lines}
 
-Om beschikbaarheidsperioden voor een bepaalde tijd te bepalen, klik **[!UICONTROL Add]** en selecteert u de **[!UICONTROL Add a set of availability lines]** -optie. Geef een tijdsduur voor elke tijdsperiode op en het aantal periodes dat u wilt maken.
+Als u beschikbaarheidsperioden voor een bepaalde tijd wilt definiëren, klikt u op de knop **[!UICONTROL Add]** en selecteert u de optie **[!UICONTROL Add a set of availability lines]** . Geef een tijdsduur voor elke tijdsperiode op en het aantal periodes dat u wilt maken.
 
-Klik op de knop **[!UICONTROL Change]** en definieert tijdsperiode die gepland is.
+Als u de frequentie waarmee pagina&#39;s worden gemaakt wilt automatiseren, klikt u op de knop **[!UICONTROL Change]** en definieert u de tijdsperiode die u wilt plannen.
 
 ![](assets/campaign_opt_create_capacity_07.png)
 
@@ -86,7 +88,7 @@ Bijvoorbeeld, bepalen wij een programma om beschikbaarheidsperioden voor alle he
 
    ![](assets/campaign_opt_create_capacity_10.png)
 
-De **[!UICONTROL Forecasting]** worden automatisch alle overeenkomende regels gemaakt.
+De **[!UICONTROL Forecasting]** -workflow maakt automatisch alle overeenkomende regels.
 
 ![](assets/campaign_opt_create_capacity_12.png)
 
@@ -96,11 +98,11 @@ De **[!UICONTROL Forecasting]** worden automatisch alle overeenkomende regels ge
 
 ## Berichten uitsluiten wanneer capaciteitslimiet is bereikt {#exclude-messages-when-capacity-limit-reached}
 
-Beschikbaarheidsregels dienen uitsluitend ter informatie. Om overtollige berichten uit te sluiten, controleer **[!UICONTROL Exclude from the target messages in excess of capacity]** -optie. Dit voorkomt dat de capaciteit wordt overschreden. Voor dezelfde populatie als in het vorige voorbeeld mogen het verbruik en de resterende capaciteit de initiële hoeveelheid niet overschrijden:
+Beschikbaarheidsregels dienen uitsluitend ter informatie. Als u overtollige berichten wilt uitsluiten, schakelt u de optie **[!UICONTROL Exclude from the target messages in excess of capacity]** in. Dit voorkomt dat de capaciteit wordt overschreden. Voor dezelfde populatie als in het vorige voorbeeld mogen het verbruik en de resterende capaciteit de initiële hoeveelheid niet overschrijden:
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Het maximumaantal berichten dat kan worden verwerkt wordt verdeeld gelijkmatig over de bepaalde beschikbaarheidswaaier. Dit is met name relevant voor callcenters, aangezien hun maximumaantal gesprekken per dag beperkt is. In het geval van e-mailbezorgingen, de **[!UICONTROL Do not limit instantaneous delivery capacity]** kunt u dit beschikbaarheidsbereik negeren en tegelijkertijd uw e-mails verzenden.
+Het maximumaantal berichten dat kan worden verwerkt wordt verdeeld gelijkmatig over de bepaalde beschikbaarheidswaaier. Dit is met name relevant voor callcenters, aangezien hun maximumaantal gesprekken per dag beperkt is. In het geval van e-mailleveringen kunt u met de optie **[!UICONTROL Do not limit instantaneous delivery capacity]** dit beschikbaarheidsbereik negeren en tegelijkertijd uw e-mails verzenden.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
@@ -112,10 +114,10 @@ Het maximumaantal berichten dat kan worden verwerkt wordt verdeeld gelijkmatig o
 
 ## Monitorverbruik {#monitoring-consumption}
 
-Capaciteitsregels zijn standaard alleen ter indicatie. Selecteer de **[!UICONTROL Exclude messages in excess of capacity from the target]** om te voorkomen dat de gedefinieerde belasting wordt overschreden. In dit geval worden overtollige berichten automatisch uitgesloten van de leveringen die gebruikmaken van deze typologieregel.
+Capaciteitsregels zijn standaard alleen ter indicatie. Selecteer de optie **[!UICONTROL Exclude messages in excess of capacity from the target]** om te voorkomen dat de gedefinieerde belasting wordt overschreden. In dit geval worden overtollige berichten automatisch uitgesloten van de leveringen die gebruikmaken van deze typologieregel.
 
-Als u het verbruik wilt controleren, bekijkt u de waarden in het dialoogvenster **[!UICONTROL Consumed]** kolom van de **[!UICONTROL Capacity]** in de typologieregel.
+Als u het verbruik wilt controleren, bekijkt u de waarden die worden weergegeven in de kolom **[!UICONTROL Consumed]** van het tabblad **[!UICONTROL Capacity]** in de typologieregel.
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Als u consumptielijnen wilt weergeven, klikt u op de knop **[!UICONTROL Consumptions]** in de regel.
+Als u consumptielijnen wilt weergeven, klikt u op de tab **[!UICONTROL Consumptions]** in de regel.

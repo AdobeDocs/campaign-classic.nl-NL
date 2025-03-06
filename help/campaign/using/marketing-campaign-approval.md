@@ -4,8 +4,10 @@ title: Het goedkeuringsproces instellen en beheren
 description: Leer hoe u goedkeuringen van marketingcampagnes beheert
 role: User
 feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 1%
@@ -321,7 +323,7 @@ Met deze optie kunt u iemand definiëren die verantwoordelijk is voor het bewerk
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Zij kunnen dan login aan de console, de levering openen en het uitgeven gebruikend een vereenvoudigde medewerker om het onderwerp, de HTML en de tekstinhoud te veranderen, en proefdrukken te verzenden.
+1. Vervolgens kunnen zij zich aanmelden bij de console, de levering openen en deze bewerken met een vereenvoudigde assistent om het onderwerp, de HTML en de tekstinhoud te wijzigen en proefdrukken te verzenden.
 
    ![](assets/s_user_validation_content_edition.png)
 

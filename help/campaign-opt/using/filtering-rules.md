@@ -4,8 +4,10 @@ title: Filterregels
 description: Leer hoe u filterregels kunt gebruiken in Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -16,7 +18,7 @@ ht-degree: 2%
 
 Met filterregels kunt u de berichten definiëren die u wilt uitsluiten op basis van criteria die in een query zijn gedefinieerd. Deze regels zijn gekoppeld aan een doelgerichte dimensie.
 
-Filterregels kunnen worden gekoppeld aan andere soorten regels (controle, druk, enz.) in typologieën, of gegroepeerd in een specifieke **Filtrerend** typologie. Voor meer op dit, verwijs naar [ Creërend en gebruikend een het filtreren typologie ](#creating-and-using-a-filtering-typology).
+Het filtreren van regels kan met andere soorten regels (controle, druk, enz.) in typologieën worden verbonden, of in een specifieke **het Filtreren** typologie worden gegroepeerd. Voor meer op dit, verwijs naar [ Creërend en gebruikend een het filtreren typologie ](#creating-and-using-a-filtering-typology).
 
 ## Een filterregel maken {#creating-a-filtering-rule}
 
