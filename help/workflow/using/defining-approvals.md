@@ -3,8 +3,10 @@ product: campaign
 title: Goedkeuringen definiëren
 description: Met goedkeuringen kunnen operatoren beslissingen nemen over een workflow of de voortzetting van de uitvoering ervan bevestigen
 feature: Approvals
+hide: true
+hidefromtoc: true
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 2%
@@ -27,7 +29,7 @@ Bij vluchtuitvoeringen zijn alle stadia die goedkeuring vereisen, gebaseerd op h
 
 ![](assets/validation-1-in-op.png)
 
-Goedkeuringsvoorbeelden vindt u in [deze sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+De voorbeelden van de goedkeuring kunnen in [ worden gevonden deze sectie ](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Een exploitant kan op één van twee manieren antwoorden: het bevestigen gebruikend de Web-pagina verbonden in het e-mailbericht, of via de console.
 
@@ -39,17 +41,17 @@ Een exploitant kan op één van twee manieren antwoorden: het bevestigen gebruik
 
 Het is mogelijk om een goedkeuringsbericht te ontvangen die een verbinding met een Web-pagina bevat waarmee het mogelijk is te antwoorden. Voor de beoogde exploitant om een goedkeuringse-mail te ontvangen, moet het exploitant e-mailadres volledig zijn. Als dit niet het geval is, moet de exploitant de console gebruiken om te antwoorden
 
-Het beheer van de exploitant wordt gedetailleerd in dit [sectie](../../platform/using/access-management.md).
+Het beheer van de exploitant wordt gedetailleerd in deze [ sectie ](../../platform/using/access-management.md).
 
-Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]**: Het bestand wordt opgeslagen in het dialoogvenster **[!UICONTROL Administration > Campaign management > Technical delivery templates]** map. Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
+Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]** : deze wordt opgeslagen in de map **[!UICONTROL Administration > Campaign management > Technical delivery templates]** . Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
 
-Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** map.
+Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de map **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** .
 
 ## Goedkeuringen via de console {#approval-via-the-console}
 
 Bij bewerkingen worden elementen die moeten worden goedgekeurd, weergegeven op het campagnemdashboard.
 
-Voor technische workflows zijn de taken die de gebruiker kan goedkeuren toegankelijk vanuit de boomstructuur in de **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** map.
+Voor technische workflows kunt u de taken die de gebruiker kan goedkeuren, openen vanuit de boomstructuur in de map **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** .
 
 ![](assets/validation-node.png)
 
@@ -58,7 +60,7 @@ Voor technische workflows zijn de taken die de gebruiker kan goedkeuren toeganke
 Een goedkeuring wordt toegekend aan een groep operatoren, één exploitant of een reeks operatoren die via een filtervoorwaarde zijn geselecteerd.
 
 1. Voor de eenvoudigste vorm van goedkeuring, wordt de taak gebeëindigd zodra een exploitant antwoordt. Elke andere exploitant die probeert te reageren, wordt op de hoogte gebracht dat iemand het al heeft gedaan.
-1. Voor meerdere goedkeuringen raadpleegt u [Meerdere goedkeuringen](#multiple-approval).
+1. Voor veelvoudige goedkeuringen, verwijs naar [ Veelvoudige goedkeuring ](#multiple-approval).
 
 De groepen van marktdeelnemers voor goedkeuringen moeten worden aangewezen als rollen of functies in plaats van als benoemde personen. Een groep ‘Campagne budget’ verdient bijvoorbeeld de voorkeur boven &#39;Harry&#39;s group&#39;. We raden aan ten minste twee personen in een groep te hebben die een taak kunnen goedkeuren. Op deze manier, als één afwezig is, kan de andere antwoorden.
 
@@ -70,25 +72,25 @@ Op het tweede tabblad in de eigenschappen voor activiteitengoedkeuring kunt u ee
 
 ![](assets/expiration.png)
 
-Als u een nieuwe vervaldatum wilt toevoegen, klikt u **[!UICONTROL Add]**. Er wordt een overgang toegevoegd aan elk van de gemaakte verlopen. U kunt:
+Als u een nieuwe vervaldatum wilt toevoegen, klikt u op **[!UICONTROL Add]** . Er wordt een overgang toegevoegd aan elk van de gemaakte verlopen. U kunt:
 
 * de typische parameters rechtstreeks wijzigen door op een cel in de lijst te klikken (of door op F2 te drukken);
-* of bewerk de expressie door op de knop **[!UICONTROL Detail...]** knop.
+* U kunt de expressie ook bewerken door op de knop **[!UICONTROL Detail...]** te klikken.
 
 >[!NOTE]
 >
 >Het is niet nodig een volgorde voor de vervaldata vast te stellen, aangezien deze in chronologische volgorde worden verwerkt.
 
-De **[!UICONTROL Do not terminate the task]** de goedkeuring actief blijft wanneer de vertraging wordt overschreden. In deze modus kunt u herinneringen beheren terwijl de goedkeuring actief blijft: operatoren kunnen nog steeds reageren. Deze optie is standaard uitgeschakeld. Dit betekent dat de taak bij het verlopen als voltooid wordt beschouwd en dat de operatoren niet langer mogen reageren.
+De optie **[!UICONTROL Do not terminate the task]** laat de goedkeuring actief wanneer de vertraging wordt overschreden. In deze modus kunt u herinneringen beheren terwijl de goedkeuring actief blijft: operatoren kunnen nog steeds reageren. Deze optie is standaard uitgeschakeld. Dit betekent dat de taak bij het verlopen als voltooid wordt beschouwd en dat de operatoren niet langer mogen reageren.
 
 U kunt vier typen vervaldatums maken:
 
-* **Vertraging na taakstart**: De vervaldatum wordt berekend door een bepaalde tijdsduur toe te voegen aan de datum waarop de goedkeuring wordt geactiveerd.
-* **Vertraging na een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur toe te voegen aan een datum die u opgeeft.
-* **Vertraging vóór een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur af te trekken van een datum die u opgeeft.
-* **Vervaldatum berekend door script**: De vervaldatum wordt berekend met JavaScript.
+* **Vertraging na taakbegin**: De vervaldatum wordt berekend door een gespecificeerde tijdsduur aan de datum toe te voegen waarop de goedkeuring wordt geactiveerd.
+* **Vertraging na een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur aan een datum toe te voegen die u specificeert.
+* **Vertraging vóór een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur van een datum af te trekken die u specificeert.
+* **Vervaldatum die door manuscript** wordt berekend: De vervaldatum wordt berekend gebruikend JavaScript.
 
-  In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (geïdentificeerd door **vars.deliveryId**):
+  Het volgende voorbeeld berekent een vervaldatum 24 uren alvorens de datum een levering is begonnen (die door **wordt geïdentificeerd vars.deliveryId**):
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

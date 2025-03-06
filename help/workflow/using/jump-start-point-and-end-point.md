@@ -3,8 +3,10 @@ product: campaign
 title: Springen (begin- en eindpunt)
 description: Springen (begin- en eindpunt)
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -15,7 +17,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** Grafische objecten van het type -type worden gebruikt om de leesbaarheid van een complex diagram te verbeteren, met name een diagram met overgangen.
+Grafische objecten van het type **[!UICONTROL Jump]** worden gebruikt om de leesbaarheid van een complex diagram te verbeteren, met name een diagram met overgangen.
 
 Sprongen zijn overgangen zonder pijlen.
 
@@ -29,4 +31,4 @@ U kunt verschillende begin- en eindpunten invoegen in dezelfde workflow. Zij wor
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Om de leesbaarheid van het diagram te verbeteren, kunt u het beeld veranderen verbonden aan sprongen om het verwante aantal te tonen. Zie [Activiteitenafbeeldingen wijzigen](managing-activity-images.md).
+Om de leesbaarheid van het diagram te verbeteren, kunt u het beeld veranderen verbonden aan sprongen om het verwante aantal te tonen. Zie [ activiteitenbeelden van de Verandering ](managing-activity-images.md).

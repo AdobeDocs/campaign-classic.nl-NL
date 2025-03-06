@@ -3,8 +3,10 @@ product: campaign
 title: Workflowactiviteiten
 description: Activiteiten
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -19,7 +21,7 @@ In deze sectie worden alle beschikbare activiteiten beschreven. Afhankelijk van 
 
 Workflowactiviteiten worden gegroepeerd op categorie. Er zijn vier tabbladen tegelijk beschikbaar.
 
-In de campagneworkflows worden de **[!UICONTROL Events]** tab wordt vervangen door de **[!UICONTROL Deliveries]** tab. De activiteiten op dit tabblad worden beschreven in het dialoogvenster [Acties](about-action-activities.md) sectie.
+In de campagneworkflows wordt het tabblad **[!UICONTROL Events]** vervangen door het tabblad **[!UICONTROL Deliveries]** . De activiteiten op dit lusje zijn gedetailleerd in de [ activiteiten van de Actie ](about-action-activities.md) sectie.
 
 ![](assets/wf-activity-tabs.png)
 

@@ -2,8 +2,10 @@
 product: campaign
 title: Berichtcentrum (controle)
 description: Berichtcentrum (controle)
+hide: true
+hidefromtoc: true
 feature: Workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 1%
@@ -15,26 +17,26 @@ ht-degree: 1%
 
 
 
-De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met de **Berichtencentrum - Besturing** module standaard.
+De hieronder beschreven workflow wordt elk uur uitgevoerd. Het is geïnstalleerd met het **Centrum van het Bericht - de module van de Controle** door gebrek.
 
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-![](assets/do-not-localize/v7.jpeg)[Campagne v7-documentatie](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[ de documentatie van de Campagne v7 ](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Label</strong><br /> </td> 
-   <td> <strong>Interne naam</strong><br /> </td> 
+   <td> <strong> Interne naam </strong><br /> </td> 
    <td> <strong>Beschrijving</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Berichtencentrum &lt;external_account_name&gt;<br /> </td> 
-   <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
+   <td> Het Centrum van het bericht &lt;external_account_name&gt; <br /> </td> 
+   <td> mcSynch_&lt;external_account_name&gt; <br /> </td> 
    <td> Deze workflow:<br /> 
     <ul> 
      <li> <p>Hiermee wordt de lijst met gebeurtenissen hersteld die door de bewerking(en) zijn verwerkt.</p> </li> 

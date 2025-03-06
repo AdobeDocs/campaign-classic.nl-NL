@@ -3,8 +3,10 @@ product: campaign
 title: Binnenkomende e-mails
 description: Meer informatie over de workflowactiviteiten voor inkomende e-mails
 feature: Workflows, Channels Activity
+hide: true
+hidefromtoc: true
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%
@@ -15,17 +17,17 @@ ht-degree: 1%
 
 
 
-De **Binnenkomende e-mails** Met activiteit kunt u e-mailberichten downloaden en verwerken vanaf een POP3-mailserver.
+De **Binnenkomende e-mail** activiteit laat u e-mailberichten van een POP3 postserver downloaden en verwerken.
 
 ![](assets/email_rec_edit_1.png)
 
-Het eerste tabblad van het dialoogvenster **Binnenkomende e-mails** De activiteit laat u de parameters van de POP3 server ingaan en het manuscript ingaan dat bij ontvangstbewijs van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de voorwaarden van de activiteitenvervaldatum.
+Het eerste lusje van de **Binnenkomende E-mail** activiteit laat u de parameters van de POP3 server ingaan en het manuscript ingaan dat op ontvangstbewijs van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de voorwaarden van de activiteitenvervaldatum.
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-     Wanneer deze optie is geactiveerd, kunt u een externe POP3-account selecteren in plaats van de verbindingsparameters in te voeren. De **[!UICONTROL External account]** in het veld wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Dit veld is alleen zichtbaar als de optie Een externe account gebruiken is ingeschakeld.
+     Wanneer deze optie is geactiveerd, kunt u een externe POP3-account selecteren in plaats van de verbindingsparameters in te voeren. In het veld **[!UICONTROL External account]** wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Dit veld is alleen zichtbaar als de optie Een externe account gebruiken is ingeschakeld.
 
      Als deze optie niet is geselecteerd, moet u de volgende parameters opgeven:
 
@@ -62,18 +64,18 @@ Het eerste tabblad van het dialoogvenster **Binnenkomende e-mails** De activitei
    * 3 - Hiermee verwijdert u het bericht van de server.
    * 4 - Laat het bericht op de server achter.
 
-   De inhoud van het bericht is toegankelijk vanuit de globale **[!UICONTROL mailMessage]** variabele.
+   De inhoud van het bericht is toegankelijk via de algemene variabele **[!UICONTROL mailMessage]** .
 
 1. **[!UICONTROL Schedule]**
 
-   Als u een schema voor de activiteit wilt definiëren, klikt u op de knop **[!UICONTROL Scheduling]** tab en check **[!UICONTROL Plan execution]**. Klik op de knop **[!UICONTROL Change]** knoop om het programma te vormen.
+   Als u een schema voor de activiteit wilt definiëren, klikt u op de tab **[!UICONTROL Scheduling]** en schakelt u **[!UICONTROL Plan execution]** in. Klik op de knop **[!UICONTROL Change]** om het schema te configureren.
 
-   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Zie [Planner](scheduler.md).
+   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Verwijs naar [ Planner ](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   U kunt vervalvertragingen bepalen via **[!UICONTROL Expiration]** tab.
+   U kunt verloopvertragingen definiëren via het tabblad **[!UICONTROL Expiration]** .
 
    ![](assets/email_rec_edit_3.png)
 
-   De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](defining-approvals.md).
+   De configuratie is het zelfde als voor de het plannen activiteit. Verwijs naar [ Verlopen ](defining-approvals.md).

@@ -3,8 +3,10 @@ product: campaign
 title: Workflows controleren
 description: Leer hoe u toezicht houdt op de workflows voor campagnes
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -25,21 +27,21 @@ Het doel van de verordening is:
 Als u de status van een set workflows wilt controleren, moet u de volgende stappen uitvoeren:
 
 1. Maak de controleworkflow.
-1. Schrijf JavaScript om te bepalen of werkstromen worden gepauzeerd, tegengehouden of met fouten.
-1. Maak de **[!UICONTROL Test]** activiteit.
+1. Schrijf de JavaScript om te bepalen of workflows worden gepauzeerd, gestopt of met fouten.
+1. Maak de **[!UICONTROL Test]** -activiteit.
 1. Bereid het leveringsmalplaatje voor.
 
 >[!NOTE]
 >
->Naast de workflow, campagne **Workflow Heatmap** Hiermee kunt u de werkstromen die momenteel worden uitgevoerd, in detail analyseren. Raadpleeg voor meer informatie de [speciale sectie](heatmap.md).
+>Naast het werkschema, staat de Heatmap van het Werkschema van de Campagne **** u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Voor meer op dit, verwijs naar de [ specifieke sectie ](heatmap.md).
 >
->Voor meer informatie over hoe u **de uitvoering van uw workflows controleren**, zie [deze sectie](monitoring-workflow-execution.md).
+>Voor meer op hoe te **om de uitvoering van uw werkschema&#39;s** te controleren, verwijs naar [ deze sectie ](monitoring-workflow-execution.md).
 
 ## Stap 1: De controleworkflow maken {#step-1--creating-the-monitoring-workflow}
 
-De werkschemamap die wij gaan controleren is **&quot;CustomWorkflows&quot;** in de **Beheer > Productie > Technische workflows** knooppunt. Deze map bevat een set bedrijfsworkflows.
+De werkschemamap die wij gaan controleren is **&quot;CustomWorkflows&quot;** omslag die in het **Beleid > Productie > Technische werkschema&#39;s** knoop wordt opgeslagen. Deze map bevat een set bedrijfsworkflows.
 
-De **Monitoringworkflow** wordt opgeslagen in de hoofdmap van de map Technical Workflows. Het gebruikte label is **&quot;Monitoring&quot;**.
+Het **werkschema van de Controle** wordt opgeslagen bij de wortel van de omslag van Technische Werkschema&#39;s. Het gebruikte etiket is **&quot;Controle&quot;**.
 
 Het volgende schema toont de opeenvolging van activiteiten:
 
@@ -47,17 +49,17 @@ Het volgende schema toont de opeenvolging van activiteiten:
 
 Deze workflow bestaat uit:
 
-* a **&quot;Start&quot;** activiteit.
-* a **JavaScript-code** activiteit verantwoordelijk voor het analyseren van de omslag van bedrijfsworkflows.
-* a **&quot;Testen&quot;** activiteit om een levering naar de supervisor te verzenden of het werkschema opnieuw te beginnen.
+* a **&quot;Begin&quot;** activiteit.
+* a **&quot;JavaScript code&quot;** activiteit verantwoordelijk voor het analyseren van de omslag van bedrijfswerkschema&#39;s.
+* a **&quot;Test&quot;** activiteit om een levering naar de supervisor te verzenden of het werkschema opnieuw te beginnen.
 * a **&quot;Levering&quot;** activiteit verantwoordelijk voor berichtlay-out.
-* a **&quot;Wacht&quot;** activiteit die de doorlooptijden tussen werkschemariteraties controleert.
+* a **&quot;wacht&quot;** activiteit die de loodtijden tussen werkschemariteraties controleert.
 
-## Stap 2: het schrijven van JavaScript {#step-2--writing-the-javascript}
+## Stap 2: De JavaScript schrijven {#step-2--writing-the-javascript}
 
-Het eerste deel van de JavaScript-code valt samen met een **query (queryDef)** waarmee u de workflows kunt identificeren met de status &quot;pause&quot; (@state == 13), &quot;error&quot; (@failed == 1) of &quot;stopped&quot; (@state == 20).
+Het eerste deel van de code van JavaScript valt met a **vraag (queryDef)** samen die u de werkschema&#39;s met een &quot;pauze&quot;laat identificeren (@state == 13), &quot;fout&quot; (@failed == 1) of &quot;tegengehouden&quot; (@state == 20) status.
 
-De **interne naam** van de werkstroommap die moet worden gecontroleerd, wordt in de volgende voorwaarde weergegeven:
+De **interne naam** van de werkschemamap aan controle wordt gegeven in de volgende voorwaarde:
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -89,7 +91,7 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-In het tweede deel van de JavaScript-code kunt u **een bericht weergeven voor elke workflow** op basis van de status die tijdens de query is hersteld.
+Het tweede deel van de code van JavaScript laat u **een bericht voor elk werkschema** tonen dat op de status wordt gebaseerd die tijdens de vraag wordt teruggekregen.
 
 >[!NOTE]
 >
@@ -119,50 +121,50 @@ vars.strWorkflowStop = strStop;
 
 De &quot;Test&quot;activiteit laat u bepalen of een levering moet worden verzonden of of het controlewerkschema een andere die cyclus moet in werking stellen op de &quot;Wacht&quot;activiteit wordt gebaseerd.
 
-Een levering wordt verzonden naar de supervisor **als ten minste een van de drie gebeurtenisvariabelen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; of &quot;vars.strWorkflowStop&quot; niet-void is.**
+Een levering wordt verzonden naar de supervisor **als minstens één van de drie gebeurtenisvariabelen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, of &quot;vars.strWorkflowStop&quot;niet-void is.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-De activiteit &quot;wacht&quot;kan worden gevormd om het controlewerkschema met regelmatige intervallen opnieuw te beginnen. Voor dit gebruik: **de wachttijd is ingesteld op één uur**.
+De activiteit &quot;wacht&quot;kan worden gevormd om het controlewerkschema met regelmatige intervallen opnieuw te beginnen. Voor dit gebruiksgeval, **de wachttijdtijd wordt geplaatst aan één uur**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
 ## Stap 4: De levering voorbereiden {#step-4--preparing-the-delivery}
 
-De activiteit &quot;Aflevering&quot; is gebaseerd op een **leveringssjabloon** opgeslagen in het **Bronnen > Sjablonen > Leveringssjablonen** knooppunt.
+De &quot;activiteit van de Levering&quot;is gebaseerd op a **leveringsmalplaatje** opgeslagen in de **Middelen > Malplaatjes > de malplaatjes van de Levering** knoop.
 
 Deze sjabloon moet het volgende bevatten:
 
-* **het e-mailadres van de toezichthouder**.
-* **HTML-inhoud** voor het invoegen van gepersonaliseerde tekst.
+* **het e-mailadres van de supervisor**.
+* **inhoud van HTML** voor het opnemen van gepersonaliseerde tekst.
 
   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
   De drie gedeclareerde variabelen (WF_Stop, WF_Paused, WF_Error) komen overeen met de drie workflowgebeurtenisvariabelen.
 
-  Deze variabelen moeten in de **Variabelen** tabblad van de eigenschappen van de leveringssjabloon.
+  Deze variabelen moeten in het **lusje van Variabelen** van de eigenschappen van het leveringsmalplaatje worden verklaard.
 
-  Herstellen **de inhoud van de workflowgebeurtenisvariabelen** moet u de variabelen declareren die specifiek zijn voor de levering en die worden geïnitialiseerd met waarden die door de JavaScript-code worden geretourneerd.
+  Om **de inhoud van de variabelen van de werkschemagebeurtenis** terug te krijgen, moet u de variabelen verklaren specifiek voor de levering die met waarden zullen worden geïnitialiseerd die door de code van JavaScript zijn teruggekeerd.
 
   De leveringssjabloon heeft de volgende inhoud:
 
   ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-Zodra het malplaatje is gecreeerd en goedgekeurd, moet u vormen **Aflevering** activiteit naar:
+Zodra het malplaatje is gecreeerd en goedgekeurd, moet u de **activiteit van de Levering** vormen aan:
 
 * Koppel de activiteit van de &quot;Levering&quot;aan eerder gecreeerd leveringsmalplaatje.
 * Koppel de de gebeurtenisvariabelen van het werkschema aan die specifiek voor het leveringsmalplaatje.
 
-Dubbelklik op de knop **Aflevering** en selecteer de volgende opties:
+Dubbelklik de **activiteit van de Levering** en selecteer de volgende opties:
 
-* Aflevering: selecteren **Nieuw, gemaakt op basis van een sjabloon** en selecteer de eerder gemaakte leveringssjabloon.
-* Voor de **Ontvangers en inhoud** velden, selecteren **Opgegeven in de levering**.
-* Uit te voeren handeling: selecteren **Voorbereiden en starten**.
-* Schakel het selectievakje **Procesfouten** -optie.
+* Levering: selecteer **Nieuw, die van een malplaatje** wordt gecreeerd, en selecteer het eerder gecreeerde leveringsmalplaatje.
+* Voor de **Ontvangers en de gebieden van de Inhoud**, uitgezocht **die in de levering** wordt gespecificeerd.
+* Uit te voeren actie: selecteer **voorbereidingen treffen en beginnen**.
+* Uncheck de **optie van de Fouten van het Proces**.
 
   ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* Ga naar de **Script** tabblad van het **Aflevering** activiteit, drie toevoegen **tekenreeks** typevariabelen via het menu van het verpersoonlijkingsgebied.
+* Ga naar het **lusje van het Manuscript** van de **Levering** activiteit, voeg drie **karakterkoord** typevariabelen via het menu van het verpersoonlijkingsgebied toe.
 
   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 

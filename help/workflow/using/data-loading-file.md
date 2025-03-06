@@ -3,8 +3,10 @@ product: campaign
 title: Gegevens laden (bestand)
 description: Meer informatie over de activiteiten in de workflow voor het laden van gegevens (bestanden)
 feature: Workflows, Data Management Activity
+hide: true
+hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -15,7 +17,7 @@ ht-degree: 14%
 
 ## Gebruiken {#use}
 
-De **[!UICONTROL Data loading (File)]** Met deze activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: ze kunnen beschikbaar worden gesteld in externe bestanden.
+Met de activiteit **[!UICONTROL Data loading (File)]** hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: ze kunnen beschikbaar worden gesteld in externe bestanden.
 
 Het bestand dat moet worden geladen, kan worden opgegeven door de overgang of worden berekend tijdens de uitvoering van deze activiteit. Bijvoorbeeld, kan het de lijst van 10 favoriete producten van een cliënt zijn de waarvan aankopen in een extern gegevensbestand worden beheerd.
 
@@ -29,21 +31,21 @@ In het bovenste gedeelte van het configuratievenster voor deze activiteit kunt u
 
 ## Voorverwerkingsstadium toepassen {#pre-processing}
 
-U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. [Leer hoe u een bestand decodeert of decodeert voordat u het verwerkt](../../platform/using/unzip-decrypt.md).
+U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. [ Leer hoe te om een dossier uit te pakken of te decrypteren alvorens ](../../platform/using/unzip-decrypt.md) te verwerken.
 
-Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg)
+Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]** , **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
 >[!CAUTION]
 >
->Als u met een hybride of op-gebouw plaatsing werkt, kunnen de pre-verwerkingsbevelen niet uit-van-de-doos werken, aangezien hun standaardconfiguratie &quot;zcat&quot;gebruikt, die niet beschikbaar op Vensters is. In dat geval moet u de **preProcessCommand** in het serverconfiguratiebestand (serverConf.xml) aan uw wensen te voldoen. [Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen](../../installation/using/the-server-configuration-file.md#preprocesscommand)
+>Als u met een hybride of op-gebouw plaatsing werkt, kunnen de pre-verwerkingsbevelen niet uit-van-de-doos werken, aangezien hun standaardconfiguratie &quot;zcat&quot;gebruikt, die niet beschikbaar op Vensters is. In dat geval, moet u de **preProcessCommand** knoop in het dossier van de serverconfiguratie (serverConf.xml) aanpassen om uw behoeften aan te passen. [ Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen ](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## De bestandsindeling definiëren {#defining-the-file-format}
 
 Wanneer u een bestand laadt, wordt de kolomindeling automatisch gedetecteerd met de standaardparameters voor elk gegevenstype. U kunt deze standaardparameters wijzigen om de specifieke processen op te geven die op uw data moeten worden toegepast, in het bijzonder wanneer er een fout of een lege waarde is.
 
-Selecteer **[!UICONTROL Click here to change the file format...]** in het hoofdvenster van het **[!UICONTROL Data loading (file)]** activiteit. Het venster met de indelingsdetails wordt dan geopend.
+Selecteer hiervoor **[!UICONTROL Click here to change the file format...]** in het hoofdvenster van de **[!UICONTROL Data loading (file)]** -activiteit. Het venster met de indelingsdetails wordt dan geopend.
 
 ![](assets/file_loading_columns_format.png)
 
@@ -65,26 +67,26 @@ Met de kolomopmaak kunt u de waardeverwerking van elke kolom definiëren:
    * **[!UICONTROL Empty value allowed]**: Dit autoriseert lege waarden. De waarde NULL wordt daarom ingevoegd.
    * **[!UICONTROL Always populated]**: Dit genereert een fout als een waarde leeg is.
 
-* **[!UICONTROL Length]**: geeft het maximum aantal tekens voor de **string** gegevenstype.
-* **[!UICONTROL Format]**: definieert de notatie voor tijd en datum.
-* **[!UICONTROL Data transformation]**: hiermee wordt gedefinieerd of een proces voor een hoofdlettergebruik moet worden toegepast op een **string**.
+* **[!UICONTROL Length]**: specificeert het maximumaantal karakters voor het **koord** gegevenstype.
+* **[!UICONTROL Format]** : definieert de notatie voor tijd en datum.
+* **[!UICONTROL Data transformation]**: bepaalt of een proces van het karaktergeval op a **koord** moet worden toegepast.
 
-   * **[!UICONTROL None]**: de geïmporteerde tekenreeks wordt niet gewijzigd.
-   * **[!UICONTROL First letter in upper case]**: de eerste letter van elk woord van de tekenreeks begint met een hoofdletter.
-   * **[!UICONTROL Upper case]**: alle tekens in de tekenreeks worden in hoofdletters weergegeven.
-   * **[!UICONTROL Lower case]**: alle tekens in de tekenreeks zijn in kleine letters.
+   * **[!UICONTROL None]** : de geïmporteerde tekenreeks wordt niet gewijzigd.
+   * **[!UICONTROL First letter in upper case]** : de eerste letter van elk woord van de tekenreeks begint met een hoofdletter.
+   * **[!UICONTROL Upper case]** : alle tekens in de tekenreeks worden in hoofdletters weergegeven.
+   * **[!UICONTROL Lower case]** : alle tekens in de tekenreeks zijn in kleine letters.
 
-* **[!UICONTROL White space management]**: geeft aan of bepaalde spaties moeten worden genegeerd in een tekenreeks. De **[!UICONTROL Ignore spaces]** Met een waarde kunnen spaties alleen aan het begin en het einde van een tekenreeks worden genegeerd.
+* **[!UICONTROL White space management]**: geeft aan of bepaalde spaties in een tekenreeks moeten worden genegeerd. Met de waarde **[!UICONTROL Ignore spaces]** kunnen alleen spaties aan het begin en het einde van een tekenreeks worden genegeerd.
 * **[!UICONTROL Error processings]**: Dit definieert het gedrag als een fout optreedt.
 
    * **[!UICONTROL Ignore the value]**: De waarde wordt genegeerd. Er wordt een waarschuwing gegenereerd in het logboek voor workflowuitvoering.
    * **[!UICONTROL Reject line]**: De volledige regel wordt niet verwerkt.
    * **[!UICONTROL Use a default value in case of error]**: Dit vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het veld **[!UICONTROL Default value]** is gedefinieerd.
-   * **[!UICONTROL Reject the line when there is no remapping value]**: de gehele lijn wordt alleen verwerkt als een toewijzing voor de onjuiste waarde is gedefinieerd (zie de **[!UICONTROL Mapping]** hieronder).
-   * **[!UICONTROL Use a default value in case the value is not remapped]**: vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het dialoogvenster **[!UICONTROL Default value]** veld, tenzij een toewijzing voor de onjuiste waarde is gedefinieerd (zie de **[!UICONTROL Mapping]** hieronder).
+   * **[!UICONTROL Reject the line when there is no remapping value]**: de hele regel wordt alleen verwerkt als er een toewijzing voor de onjuiste waarde is gedefinieerd (zie de optie **[!UICONTROL Mapping]** hieronder).
+   * **[!UICONTROL Use a default value in case the value is not remapped]** : vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het veld **[!UICONTROL Default value]** is gedefinieerd, tenzij een toewijzing voor de onjuiste waarde is gedefinieerd (zie de optie **[!UICONTROL Mapping]** hieronder).
 
 * **[!UICONTROL Default value]**: Hiermee geeft u de standaardwaarde op op basis van de gekozen foutverwerking.
-* **[!UICONTROL Mapping]**: dit veld is alleen beschikbaar in de configuratie van de kolomdetails (geopend via een dubbelklik of via de opties rechts van de kolomlijst). Hiermee worden bepaalde waarden getransformeerd wanneer ze worden geïmporteerd. U kunt bijvoorbeeld ‘three’ omzetten in ‘3’.
+* **[!UICONTROL Mapping]**: dit veld is alleen beschikbaar in de configuratie van de kolomdetails (toegankelijk via een dubbelklik of via de opties rechts van de kolomlijst). Hiermee worden bepaalde waarden getransformeerd wanneer ze worden geïmporteerd. U kunt bijvoorbeeld ‘three’ omzetten in ‘3’.
 
 ## Voorbeeld: Gegevens verzamelen en in de database laden {#example--collecting-data-and-loading-it-in-the-database}
 
@@ -94,21 +96,21 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
 1. Met de bestandscollector kunt u bestanden herstellen die in een map zijn opgeslagen, afhankelijk van de opgegeven frequentie.
 
-   De **[!UICONTROL Directory]** bevat informatie over de terug te winnen bestanden. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
+   Het tabblad **[!UICONTROL Directory]** bevat informatie over de bestanden die moeten worden hersteld. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
-   Met de **[!UICONTROL File collector]** wordt in het [Bestandsverzamelaar](file-collector.md) sectie.
+   Het gebruiken van **[!UICONTROL File collector]** is gedetailleerd in de [ 2} sectie van de inzamelaar van het Dossier {.](file-collector.md)
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
-   De **[!UICONTROL Schedule]** kunt u de uitvoering van de verzamelaar plannen, zodat u kunt opgeven met welke frequentie de aanwezigheid van deze bestanden wordt gecontroleerd.
+   Op het tabblad **[!UICONTROL Schedule]** kunt u de uitvoering van de verzamelaar plannen, zodat u kunt opgeven met welke frequentie de aanwezigheid van deze bestanden wordt gecontroleerd.
 
    Hier, willen wij de inzamelaar elke werkdag teweegbrengen om 9PM.
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   Om dit te doen, klik **[!UICONTROL Change...]** in de lagere rechtersectie van het het uitgeven hulpmiddel wordt gevestigd en vorm het programma dat.
+   Klik hiertoe op de knop **[!UICONTROL Change...]** in de rechterbenedensectie van het bewerkgereedschap en configureer het schema.
 
-   Raadpleeg voor meer informatie hierover [Planner](scheduler.md).
+   Voor meer op dit, verwijs naar [ Planner ](scheduler.md).
 
 1. Configureer vervolgens de activiteit voor het laden van gegevens (bestand) om aan te geven hoe de verzamelde bestanden moeten worden gelezen. Selecteer hiertoe een voorbeeldbestand met dezelfde structuur als de bestanden die u wilt laden.
 
@@ -121,20 +123,20 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md#step-2---source-file-selection) voor meer informatie.
 
-1. Geef bij de splitsingsactiviteit de subsets op die u wilt maken, volgens de **Gebeurtenis** kolomwaarde.
+1. In de gespleten activiteit, specificeer de subsets om, volgens de **kolomwaarde van de Gebeurtenis** te creëren {.
 
    De activiteit Splitsen wordt gedetailleerd beschreven in de sectie.
 
    ![](assets/s_advuser_load_file_sample_4.png)
 
-   Geef voor elke subset een van de waarden op in het dialoogvenster **Gebeurtenis** kolom.
+   Voor elke ondergroep, specificeer één van de waarden in de **kolom van de Gebeurtenis**.
 
    ![](assets/s_advuser_load_file_sample_5.png)
 
-   De **[!UICONTROL Split]** de activiteit zal derhalve de volgende informatie bevatten :
+   De **[!UICONTROL Split]** -activiteit bevat daarom de volgende informatie:
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we **[!UICONTROL Update the data]** in de database. Om dit te doen, plaats **[!UICONTROL Update data]** activiteit aan het eind van elke uitgaande overgang van de splitsingsactiviteit.
+1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we naar **[!UICONTROL Update the data]** in de database. Hiervoor plaatst u een **[!UICONTROL Update data]** -activiteit aan het einde van elke uitgaande overgang van de gesplitste activiteit.
 
-   De **[!UICONTROL Update data]** de activiteit wordt in de [Gegevens bijwerken](update-data.md) sectie.
+   De **[!UICONTROL Update data]** activiteit is gedetailleerd in de [ gegevens van de Update ](update-data.md) sectie.

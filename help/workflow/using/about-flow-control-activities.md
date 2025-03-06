@@ -3,8 +3,10 @@ product: campaign
 title: Flowbeheeractiviteiten
 description: Flowbeheeractiviteiten
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -17,16 +19,16 @@ ht-degree: 5%
 
 De volgende activiteiten zijn databaseactiviteiten: hun voornaamste taak is de coördinatie van de andere activiteiten.
 
-* **Begin en einde**: hiermee kunt u de begin- en eindpunten van een workflow weergeven. Zie [Begin en einde](start-and-end.md).
-* **Vork**: hiermee kunt u alle uitgaande overgangen activeren. Zie de [Vork](fork.md) sectie.
-* **Aanstelling**: hiermee kunt u wachten tot verschillende taken die tegelijkertijd zijn gestart, zijn voltooid voordat u verdergaat. Zie de [Vork](fork.md) sectie.
-* **Planner**: hiermee kunt u een schema voor de workflowuitvoering definiëren. Zie [Planner](scheduler.md).
-* **Testen**: schakelt een overgang in op basis van een testresultaat. Zie [Testen](test.md).
-* **Wachten**: laat de uitgaande overgang na een bepaalde tijdslimiet toe. Zie [Wachten](wait.md).
-* **Tijdbeperking**: hiermee kunt u een taak pauzeren voor een ingestelde periode. Zie [Tijdbeperking](time-constraint.md).
-* **Subworkflow**: hiermee kunt u een andere workflow uitvoeren. Zie [Subworkflow](sub-workflow.md).
-* **Springen**: Hiermee kunt u overgangen zonder koppelingen implementeren. Zie [Springen (beginpunt en eindpunt)](jump-start-point-and-end-point.md).
+* **Begin en Eind**: sta u toe om de begin en eindpunten van een werkschema te tonen. Verwijs naar [ Begin en eind ](start-and-end.md).
+* **Fork**: sta u toe om alle uitgaande overgangen te activeren. Verwijs naar de [ 1} sectie van het Fork {.](fork.md)
+* **Benoeming**: laat u op verscheidene die taken wachten tezelfdertijd worden begonnen te worden voltooid alvorens te werk te gaan. Verwijs naar de [ 1} sectie van het Fork {.](fork.md)
+* **Planner**: laat u een programma van de werkschemauitvoering bepalen. Verwijs naar [ Planner ](scheduler.md).
+* **Test**: laat een overgang toe die op een testresultaat wordt gebaseerd. Verwijs naar [ Test ](test.md).
+* **wacht**: laat de uitgaande overgang na een bepaalde tijdgrens toe. Verwijs naar [ wachten ](wait.md).
+* **beperking van de Tijd**: laat u een taak voor een vastgestelde periode pauzeren. Verwijs naar [ beperking van de Tijd ](time-constraint.md).
+* **Subworkflow**: laat u een ander werkschema uitvoeren. Verwijs naar [ subworkflow ](sub-workflow.md).
+* **Sprongen**: laat u overgangen zonder verbindingen uitvoeren. Verwijs naar [ Jump (beginpunt en eindpunt) ](jump-start-point-and-end-point.md).
 * **Extern signaal**: laat u de uitgaande overgang na het ontvangen van een extern signaal toelaten. Raadpleeg de sectie [Extern signaal](external-signal.md).
-* **Goedkeuring**: Hiermee kunt u een e-mail naar een operator of groep operatoren verzenden en wachten tot de goedkeuring is voltooid. Zie de [Goedkeuring](approval.md) sectie.
-* **Waarschuwing**: hiermee kunt u een waarschuwing naar een operator of groep operatoren sturen. Zie de [Waarschuwing](alert.md) sectie.
-* **Taak**: hiermee kunt u de uitvoering van taken configureren. Zie de [Taak](task.md) sectie.
+* **Goedkeuring**: laat u een e-mail naar een exploitant of een groep exploitanten verzenden en op goedkeuring wachten om met de uitvoering verder te gaan. Verwijs naar de [ sectie van de Goedkeuring ](approval.md).
+* **Alarm**: laat u een waarschuwing naar een exploitant of een groep exploitanten verzenden. Verwijs naar de [ Waakzame ](alert.md) sectie.
+* **Taak**: laat u taakuitvoering vormen. Verwijs naar de [ sectie van de Taak ](task.md).

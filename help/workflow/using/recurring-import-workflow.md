@@ -3,8 +3,10 @@ product: campaign
 title: Herhalende importbewerkingen instellen
 description: Leer hoe u een workflowsjabloon voor terugkerende import configureert
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
@@ -17,20 +19,20 @@ ht-degree: 0%
 
 Het gebruik van een werkstroomsjabloon is de beste manier als u regelmatig bestanden met dezelfde structuur moet importeren.
 
-In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebruikt voor het importeren van profielen die afkomstig zijn van een CRM in de Adobe Campaign-database. Raadpleeg deze voor meer informatie over alle mogelijke instellingen voor elke activiteit [sectie](about-activities.md).
+In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebruikt voor het importeren van profielen die afkomstig zijn van een CRM in de Adobe Campaign-database. Voor meer informatie over alle mogelijke montages voor elke activiteit, verwijs naar deze [ sectie ](about-activities.md).
 
-1. Een nieuw werkstroomsjabloon maken op basis van **[!UICONTROL Resources > Templates > Workflow templates]**.
+1. Maak een nieuw werkstroomsjabloon vanuit **[!UICONTROL Resources > Templates > Workflow templates]** .
 1. Voeg de volgende activiteiten toe:
 
-   * **[!UICONTROL Data loading (file)]**: Definieer de verwachte structuur van het bestand met de gegevens die u wilt importeren.
-   * **[!UICONTROL Enrichment]**: De geïmporteerde gegevens worden in overeenstemming gebracht met de databasegegevens.
-   * **[!UICONTROL Split]**: Maak filters om records op een andere manier te verwerken, afhankelijk van de vraag of ze met elkaar in overeenstemming kunnen worden gebracht.
-   * **[!UICONTROL Deduplication]**: Publiceer de gegevens uit het binnenkomende bestand voordat het in de database wordt ingevoegd.
+   * **[!UICONTROL Data loading (file)]**: hiermee definieert u de verwachte structuur van het bestand met de gegevens die u wilt importeren.
+   * **[!UICONTROL Enrichment]**: combineer de geïmporteerde gegevens met databasegegevens.
+   * **[!UICONTROL Split]**: maak filters om records te verwerken die anders zijn, afhankelijk van de vraag of ze met elkaar in overeenstemming kunnen worden gebracht.
+   * **[!UICONTROL Deduplication]**: dupliceer de gegevens uit het binnenkomende bestand voordat deze in de database worden ingevoegd.
    * **[!UICONTROL Update data]**: Werk de database bij met de geïmporteerde profielen.
 
    ![](assets/import_template_example0.png)
 
-1. Vorm **[!UICONTROL Data Loading (file)]** activiteit:
+1. Configureer de **[!UICONTROL Data Loading (file)]** -activiteit:
 
    * Geef de verwachte structuur op door een voorbeeldbestand te uploaden. Het voorbeeldbestand mag slechts een paar regels bevatten, maar alle kolommen die nodig zijn voor het importeren. Controleer en bewerk de bestandsindeling om ervoor te zorgen dat het type van elke kolom correct is ingesteld: tekst, datum, geheel getal, enz. Bijvoorbeeld:
 
@@ -39,30 +41,30 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
      Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
      ```
 
-   * In de **[!UICONTROL Name of the file to load]** sectie, selecteert u **[!UICONTROL Upload a file from the local machine]** en laat het veld leeg. Telkens wanneer een nieuwe werkstroom van dit malplaatje wordt gecreeerd, kunt u hier het dossier specificeren u wilt, zolang het aan de bepaalde structuur beantwoordt.
+   * Selecteer **[!UICONTROL Upload a file from the local machine]** in de sectie **[!UICONTROL Name of the file to load]** en laat het veld leeg. Telkens wanneer een nieuwe werkstroom van dit malplaatje wordt gecreeerd, kunt u hier het dossier specificeren u wilt, zolang het aan de bepaalde structuur beantwoordt.
 
-     U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld **[!UICONTROL Specified in the transition]** kunt u een **[!UICONTROL File Transfer]** activiteit voor het ophalen van het bestand dat moet worden geïmporteerd van een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met de Adobe Real-time Customer Data Platform. Raadpleeg voor meer informatie deze [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+     U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld **[!UICONTROL Specified in the transition]** selecteert, kunt u een **[!UICONTROL File Transfer]** -activiteit toevoegen voordat u het bestand ophaalt dat u wilt importeren van een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met Adobe Real-time Customer Data-platform. Voor meer op dit, verwijs naar deze [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
      ![](assets/import_template_example1.png)
 
-1. Vorm **[!UICONTROL Enrichment]** activiteit. Het doel van deze activiteit in dit verband is de identificatie van de binnenkomende gegevens.
+1. Configureer de **[!UICONTROL Enrichment]** -activiteit. Het doel van deze activiteit in dit verband is de identificatie van de binnenkomende gegevens.
 
-   * In de **[!UICONTROL Enrichment]** tab, selecteert u **[!UICONTROL Add data]** en definieert u een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld wordt **CRM-id** Het aangepaste gebied wordt gebruikt om tot de te verbinden voorwaarde te leiden. Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
-   * In de **[!UICONTROL Reconciliation]** -tab, laat de **[!UICONTROL Identify the document from the working data]** optie uitgeschakeld.
+   * Selecteer **[!UICONTROL Add data]** op het tabblad **[!UICONTROL Enrichment]** en definieer een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0} CRM {gebruikt om te creëren zich bij voorwaarde aansluit.** Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
+   * Laat op het tabblad **[!UICONTROL Reconciliation]** de optie **[!UICONTROL Identify the document from the working data]** uitgeschakeld.
 
    ![](assets/import_template_example2.png)
 
-1. Vorm **[!UICONTROL Split]** activiteit om verenigde ontvangers in één overgang en ontvangers terug te winnen die niet in overeenstemming konden worden gebracht maar die genoeg gegevens in een tweede overgang hebben.
+1. Configureer de **[!UICONTROL Split]** -activiteit om onderling afgestemde ontvangers in één overgang en ontvangers op te halen die niet in overeenstemming konden worden gebracht maar die voldoende gegevens in een tweede overgang hebben.
 
    De overgang met onderling verzochte ontvangers kan dan worden gebruikt om het gegevensbestand bij te werken. De overgang met onbekende ontvangers kan dan worden gebruikt om nieuwe ontvankelijke ingangen in het gegevensbestand tot stand te brengen als een minimumreeks informatie in het dossier beschikbaar is.
 
    Ontvangers die niet in overeenstemming kunnen worden gebracht en niet genoeg gegevens hebben, worden in een complementaire uitgaande overgang geselecteerd en kunnen in een afzonderlijk bestand worden geëxporteerd of eenvoudig worden genegeerd.
 
-   * In de **[!UICONTROL General]** tabblad van de activiteit, selecteert u **[!UICONTROL Use the additional data only]** als het filtreren plaatsen en zorg ervoor dat **[!UICONTROL Targeting dimension]** wordt automatisch ingesteld op **[!UICONTROL Enrichment]**.
+   * Selecteer op het tabblad **[!UICONTROL General]** van de activiteit de optie **[!UICONTROL Use the additional data only]** voor filteren en zorg ervoor dat de instelling **[!UICONTROL Targeting dimension]** automatisch wordt ingesteld op **[!UICONTROL Enrichment]** .
 
-     Controleer de **[!UICONTROL Generate complement]** om te kunnen zien of kan om het even welk verslag niet in het gegevensbestand worden opgenomen. Indien nodig kunt u de aanvullende gegevens verder verwerken: bestanden exporteren, lijst bijwerken, enz.
+     Controleer de optie **[!UICONTROL Generate complement]** om te kunnen zien of een record niet in de database kan worden ingevoegd. Indien nodig kunt u de aanvullende gegevens verder verwerken: bestanden exporteren, lijst bijwerken, enz.
 
-   * In de eerste subset van het dialoogvenster **[!UICONTROL Subsets]** tab, voeg een het filtreren voorwaarde op de binnenkomende bevolking toe om slechts verslagen te selecteren waarvoor de ontvankelijke primaire sleutel niet gelijk aan 0 is. Op deze manier worden gegevens uit het bestand die in overeenstemming zijn met ontvangers uit de database, geselecteerd in die subset.
+   * In de eerste subset van het tabblad **[!UICONTROL Subsets]** voegt u een filtervoorwaarde toe aan de binnenkomende populatie om alleen records te selecteren waarvoor de primaire sleutel van de ontvanger niet gelijk is aan 0. Op deze manier worden gegevens uit het bestand die in overeenstemming zijn met ontvangers uit de database, geselecteerd in die subset.
 
      ![](assets/import_template_example3.png)
 
@@ -72,38 +74,38 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
      ![](assets/import_template_example3_2.png)
 
-   * Alle records die niet in de eerste twee subsets zijn geselecteerd, worden geselecteerd in het dialoogvenster **[!UICONTROL Complement]**.
+   * Alle records die niet in de eerste twee subsets zijn geselecteerd, worden in de **[!UICONTROL Complement]** geselecteerd.
 
-1. Vorm **[!UICONTROL Update data]** activiteit die na de eerste uitgaande overgang van wordt gevestigd **[!UICONTROL Split]** eerder geconfigureerde activiteit.
+1. Configureer de **[!UICONTROL Update data]** -activiteit die zich na de eerste uitgaande overgang van de eerder geconfigureerde **[!UICONTROL Split]** -activiteit bevindt.
 
-   * Selecteren **[!UICONTROL Update]** als **[!UICONTROL Operation type]** aangezien de binnenkomende overgang slechts ontvangers bevat reeds in het gegevensbestand.
-   * In de **[!UICONTROL Record identification]** sectie, selecteert u **[!UICONTROL Using reconciliation keys]** en definieert u een sleutel tussen de doeldimensie en de koppeling die in het dialoogvenster **[!UICONTROL Enrichment]**. In dit voorbeeld wordt **CRM-id** aangepast veld wordt gebruikt.
-   * In de **[!UICONTROL Fields to update]** , geeft u de velden in de dimensie Ontvangers aan die moeten worden bijgewerkt met de waarde van de bijbehorende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
+   * Selecteer **[!UICONTROL Update]** als **[!UICONTROL Operation type]** omdat de inkomende overgang alleen ontvangers bevat die al in de database aanwezig zijn.
+   * Selecteer **[!UICONTROL Using reconciliation keys]** in de sectie **[!UICONTROL Record identification]** en definieer een sleutel tussen de doeldimensie en de koppeling die in de sectie **[!UICONTROL Enrichment]** wordt gemaakt. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0} CRM {gebruikt.**
+   * Geef in de sectie **[!UICONTROL Fields to update]** de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
 
      ![](assets/import_template_example6.png)
 
-1. Vorm **[!UICONTROL Deduplication]** activiteit die zich na de overgang bevindt en die niet-verzochte ontvangers bevat:
+1. Configureer de **[!UICONTROL Deduplication]** -activiteit die zich na de overgang bevindt en die niet-compatibele ontvangers bevat:
 
-   * Selecteren **[!UICONTROL Edit configuration]** en stelt de doeldimensie in op het tijdelijke schema dat wordt gegenereerd op basis van het **[!UICONTROL Enrichment]** activiteit van de workflow.
+   * Selecteer **[!UICONTROL Edit configuration]** en stel de doeldimensie in op het tijdelijke schema dat is gegenereerd op basis van de **[!UICONTROL Enrichment]** -activiteit van de workflow.
 
      ![](assets/import_template_example4.png)
 
    * In dit voorbeeld wordt het e-mailveld gebruikt om unieke profielen te zoeken. U kunt elk veld gebruiken waarvan u zeker weet dat het is ingevuld en deel uitmaakt van een unieke combinatie.
-   * In de **[!UICONTROL Deduplication method]** scherm, selecteren **[!UICONTROL Advanced parameters]** en de **[!UICONTROL Disable automatic filtering of 0 ID records]** optie om ervoor te zorgen dat records met een primaire sleutel gelijk aan 0 (die alle records van deze overgang moeten zijn) niet worden uitgesloten.
+   * Selecteer in het **[!UICONTROL Deduplication method]** -scherm **[!UICONTROL Advanced parameters]** en schakel de optie **[!UICONTROL Disable automatic filtering of 0 ID records]** in om ervoor te zorgen dat records met een primaire sleutel gelijk aan 0 (die alle records van deze overgang moeten zijn) niet worden uitgesloten.
 
    ![](assets/import_template_example7.png)
 
-1. Vorm **[!UICONTROL Update data]** activiteit die zich na de **[!UICONTROL Deduplication]** eerder geconfigureerde activiteit.
+1. Configureer de **[!UICONTROL Update data]** -activiteit die zich bevindt na de **[!UICONTROL Deduplication]** -activiteit die eerder is geconfigureerd.
 
-   * Selecteren **[!UICONTROL Insert]** als **[!UICONTROL Operation type]** aangezien de binnenkomende overgang slechts ontvangers bevat die niet in het gegevensbestand aanwezig zijn.
-   * In de **[!UICONTROL Record identification]** sectie, selecteert u **[!UICONTROL Directly using the targeting dimension]** en kiest u **[!UICONTROL Recipients]** dimensie.
-   * In de **[!UICONTROL Fields to update]** , geeft u de velden in de dimensie Ontvangers aan die moeten worden bijgewerkt met de waarde van de bijbehorende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
+   * Selecteer **[!UICONTROL Insert]** as **[!UICONTROL Operation type]** omdat de inkomende overgang alleen ontvangers bevat die niet in de database aanwezig zijn.
+   * Selecteer **[!UICONTROL Directly using the targeting dimension]** in de sectie **[!UICONTROL Record identification]** en kies de **[!UICONTROL Recipients]** -dimensie.
+   * Geef in de sectie **[!UICONTROL Fields to update]** de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
 
      ![](assets/import_template_example8.png)
 
-1. Na de derde overgang van **[!UICONTROL Split]** activiteit, voeg een **[!UICONTROL Data extraction (file)]** en **[!UICONTROL File transfer]** activiteit als u spoor van gegevens wilt houden die niet in het gegevensbestand worden opgenomen. Configureer die activiteiten om de kolom die u nodig hebt te exporteren en om het bestand over te brengen naar een FTP- of SFTP-server waar u het bestand kunt ophalen.
-1. Een **[!UICONTROL End]** en sla het werkstroomsjabloon op.
+1. Voeg na de derde overgang van de **[!UICONTROL Split]** -activiteit een **[!UICONTROL Data extraction (file)]** activiteit en een **[!UICONTROL File transfer]** activiteit toe als u wilt bijhouden welke gegevens niet in de database zijn ingevoegd. Configureer die activiteiten om de kolom die u nodig hebt te exporteren en om het bestand over te brengen naar een FTP- of SFTP-server waar u het bestand kunt ophalen.
+1. Voeg een **[!UICONTROL End]** -activiteit toe en sla de werkstroomsjabloon op.
 
-De sjabloon kan nu worden gebruikt en is beschikbaar voor elke nieuwe workflow. Het bestand met de gegevens die u wilt importeren in het dialoogvenster **[!UICONTROL Data loading (file)]** activiteit.
+De sjabloon kan nu worden gebruikt en is beschikbaar voor elke nieuwe workflow. U hoeft alleen het bestand op te geven dat de gegevens bevat die u wilt importeren in de **[!UICONTROL Data loading (file)]** -activiteit.
 
 ![](assets/import_template_example9.png)

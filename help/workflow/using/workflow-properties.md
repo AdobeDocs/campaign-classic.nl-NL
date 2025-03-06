@@ -3,8 +3,10 @@ product: campaign
 title: Workfloweigenschappen
 description: Meer informatie over de eigenschappen van de Campagneworkflow
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -39,7 +41,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
   Als uw installatie meerdere workflowservers bevat, gebruikt u dit veld om de computer te kiezen waarop de workflow wordt uitgevoerd. Als de waarde die in dit veld wordt gedefinieerd, op geen enkele server bestaat, blijft de workflow in behandeling.
 
-  Verwijs naar deze [ Campaign Classic v7 installatiegids ](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+  Verwijs naar deze [ de installatiegids van Campaign Classic v7 ](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

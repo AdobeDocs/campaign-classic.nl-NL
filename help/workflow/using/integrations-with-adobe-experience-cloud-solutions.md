@@ -3,8 +3,10 @@ product: campaign
 title: Integratie met workflows voor Adobe Experience Cloud-oplossingen
 description: Meer informatie over workflows voor integratie met Adobe Experience Cloud-oplossingen
 feature: Workflows, Audiences
+hide: true
+hidefromtoc: true
 topic-tags: technical-workflows
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 2%
@@ -16,24 +18,24 @@ ht-degree: 2%
 
 
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Integratie met de Adobe Experience Cloud** module standaard. Raadpleeg deze voor meer informatie over deze module [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
+De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Integratie met de Adobe Experience Cloud** module door gebrek. Voor meer op deze module, verwijs naar deze [ sectie ](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Label</strong><br /> </td> 
-   <td> <strong>Interne naam</strong><br /> </td> 
+   <td> <strong> Interne naam </strong><br /> </td> 
    <td> <strong>Beschrijving</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Publiek importeren uit de Adobe Experience Cloud</span> <br /> </td> 
+   <td> <span class="uicontrol"> het publiek van de Invoer van Adobe Experience Cloud </span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
-   <td> Met deze workflow kunt u soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen importeren in Adobe Campaign.<br /> </td> 
+   <td> Dit werkschema staat u toe om publiek/segmenten van verschillende oplossingen van Adobe Experience Cloud in Adobe Campaign in te voeren.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Soorten publiek exporteren naar de Adobe Experience Cloud</span> <br /> </td> 
-   <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Deze workflow exporteert soorten publiek als gedeeld publiek/segmenten. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt.<br /> </td> 
+   <td> <span class="uicontrol"> het publiek van de Uitvoer aan Adobe Experience Cloud </span> <br /> </td> 
+   <td> <span class="uicontrol"> exportSharedAudience </span> <br /> </td> 
+   <td> Deze workflow exporteert soorten publiek als gedeeld publiek/segmenten. Dit publiek kan in de verschillende oplossingen van Adobe Experience Cloud worden gebruikt die u gebruikt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,8 +3,10 @@ product: campaign
 title: Best practices voor workflows
 description: Meer informatie over best practices voor de campagnereschemap
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 5%
@@ -19,7 +21,7 @@ ht-degree: 5%
 
 Hieronder vindt u algemene richtlijnen voor het optimaliseren van de campagneprestaties, waaronder tips en trucs voor het toepassen op uw workflows.
 
-De richtlijnen van het oplossen van problemen met betrekking tot werkstroomuitvoering zijn ook beschikbaar in [ Campaign Classic v7 de Gids van de Productie ](../../production/using/workflow-execution.md).
+De richtlijnen van het oplossen van problemen met betrekking tot werkstroomuitvoering zijn ook beschikbaar in [ de Gids van de Productie van Campaign Classic v7 ](../../production/using/workflow-execution.md).
 
 ### Logboeken {#logs}
 
@@ -63,7 +65,7 @@ Controleer in het **[!UICONTROL Workflow properties]** -venster nooit de optie *
 
 ### Workflowmappen {#workflow-folders}
 
-Adobe raadt u aan uw workflows in een specifieke map te maken.
+Adobe raadt u aan uw workflows te maken in een specifieke map.
 
 Als de workflow van invloed is op het hele platform (bijvoorbeeld op het opschonen van processen), kunt u overwegen een submap toe te voegen in de ingebouwde **[!UICONTROL Technical Workflows]** -map.
 

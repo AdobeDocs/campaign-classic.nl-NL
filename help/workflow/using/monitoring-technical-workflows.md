@@ -3,8 +3,10 @@ product: campaign
 title: Technische workflows controleren
 description: Technische workflows controleren
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 5%
@@ -17,11 +19,11 @@ ht-degree: 5%
 
 De technische werkstromen moeten worden bewaakt en er moeten maatregelen worden genomen wanneer ze mislukken.
 
-Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [deze pagina](../../production/using/monitoring-guidelines.md).
+De extra manieren om de verschillende processen van de Campagne te controleren worden voorgesteld in [ deze pagina ](../../production/using/monitoring-guidelines.md).
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-Het dashboard voor instance-controle is toegankelijk via de **[!UICONTROL Monitoring]** tab.
+Het dashboard voor instance-controle is toegankelijk via het tabblad **[!UICONTROL Monitoring]** .
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -33,15 +35,15 @@ Controleer onder Systeemindicatoren en kernbestanden of er geen rode indicatoren
 
 ## Technische workflows {#technical-workflows}
 
-Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** .
 
 Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
 
-Om beter te begrijpen wat elke technische werkstroom wordt verondersteld te doen, verwijs naar dit [sectie](about-technical-workflows.md).
+Om beter te begrijpen wat elk technisch werkschema zou moeten doen, verwijs naar dit [ sectie ](about-technical-workflows.md).
 
 Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Controleer of de **[!UICONTROL Database Cleanup]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg voor meer informatie deze [page](../../production/using/database-cleanup-workflow.md)..
+1. Controleer of de **[!UICONTROL Database Cleanup]** -workflow elke dag wordt uitgevoerd en voltooid. Voor meer op dit, verwijs naar deze [ pagina ](../../production/using/database-cleanup-workflow.md).
 1. Bekijk het dagboek om te verifiëren dat de verstreken tijd in tijd vrij constant is en zich niet in andere werkschema&#39;s mengt.
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
@@ -50,17 +52,17 @@ Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standa
 
 Voor **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Controleer of de **[!UICONTROL Refresh for Deliverability]** de workflow wordt elke dag uitgevoerd en voltooid.
+1. Controleer of de **[!UICONTROL Refresh for Deliverability]** -workflow elke dag wordt uitgevoerd en voltooid.
 1. Verifieer in het dagboek dat de regels regelmatig worden bijgewerkt.
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Bekijk alle workflows onder de **[!UICONTROL Campaign process]** map. Raadpleeg [deze pagina](about-technical-workflows.md) voor meer informatie.
+1. Kijk naar alle workflows onder de map **[!UICONTROL Campaign process]** . Raadpleeg [deze pagina](about-technical-workflows.md) voor meer informatie.
 1. Controleer of de workflows worden uitgevoerd zoals gepland en of het dagboek geen terugkerende fouten markeert.
 
 ## Workflowcontrole {#workflow-supervision}
 
-De **[!UICONTROL Workflow supervisors]** de groep moet exploitanten omvatten die op de hoogte moeten worden gehouden van tekortkomingen en die tijdig kunnen optreden.
+De **[!UICONTROL Workflow supervisors]** -groep moet operatoren bevatten die op de hoogte moeten worden gehouden van fouten en die tijdig actie kunnen ondernemen.
 
 ![](assets/monitoring_technical_workflows3.png)
 

@@ -3,8 +3,10 @@ product: campaign
 title: Laden (SOAP)
 description: Laden (SOAP)
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -17,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->De **Laden (SOAP)** activiteit is alleen beschikbaar als u beschikt over **FDA (FDA)** geïnstalleerde module. Controleer hiervoor uw licentieovereenkomst.
+>De **Lading (SOAP)** activiteit is slechts beschikbaar als u **FDA (Federated Data Access)** geïnstalleerde module hebt. Controleer hiervoor uw licentieovereenkomst.
 
-De **Laden (SOAP)** naast de **gegevens laden (RDBMS)** activiteit wanneer het niet mogelijk is om gegevens rechtstreeks via de FDA in een externe databank te verzamelen.
+De **Lading (SOAP)** activiteit wordt gebruikt naast de **gegevens ladende (RDBMS)** activiteit wanneer het niet mogelijk is om gegevens direct via FDA in een extern gegevensbestand te verzamelen.
 
 De bewerking is als volgt:
 
@@ -35,20 +37,20 @@ De bewerking is als volgt:
 
    ![](assets/soap_load_003.png)
 
-1. Selecteren **[!UICONTROL Click here to view and edit analysis results]** om elke geïdentificeerde kolom te specificeren.
+1. Selecteer **[!UICONTROL Click here to view and edit analysis results]** om elke geïdentificeerde kolom op te geven.
 
    ![](assets/soap_load_001.png)
 
-   Als u het voorbeeld wilt bijwerken, selecteert u **[!UICONTROL Re-analyze the example]**.
+   Selecteer **[!UICONTROL Re-analyze the example]** als u het voorbeeld wilt bijwerken.
 
-   U kunt de indeling van kolomgegevens ook aanpassen via het dialoogvenster **[!UICONTROL Advanced parameters]** koppeling. Raadpleeg deze voor meer informatie over het opmaken van geïmporteerde gegevens [sectie](../../platform/using/executing-import-jobs.md).
+   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]** . Voor meer bij het formatteren van ingevoerde gegevens, verwijs naar deze [ sectie ](../../platform/using/executing-import-jobs.md).
 
-1. U kunt het regelnummer als id gebruiken en/of opgeven dat de SOAP-aanroep meerdere elementen retourneert.
+1. U kunt het regelnummer als een identifier gebruiken en/of opgeven dat de SOAP-aanroep meerdere elementen retourneert.
 1. Voer de volgende tabscripts in op basis van hun functie:
 
-   * **[!UICONTROL Initialization]**: maakt een SOAP-verbinding.
-   * **[!UICONTROL Iteration]**: Voert de vraag aan de dienst van de ZEEP uit. De return voor deze functie moet een XML-object zijn dat compatibel is met de beschrijving van het voorbeeld of de WSDL.
+   * **[!UICONTROL Initialization]** : maakt een SOAP-verbinding.
+   * **[!UICONTROL Iteration]**: voert de aanroep naar de SOAP-service uit. De return voor deze functie moet een XML-object zijn dat compatibel is met de beschrijving van het voorbeeld of de WSDL.
 
      De code van dit tabblad wordt aangeroepen in een lus door Adobe Campaign totdat een null XML-object wordt geretourneerd.
 
-   * **[!UICONTROL Finalization]**: sluit verbinding en/of bevrijdt andere middelen die tijdens verwerking worden gecreeerd.
+   * **[!UICONTROL Finalization]**: hiermee wordt de verbinding gesloten en/of worden andere bronnen vrijgemaakt die tijdens de verwerking zijn gemaakt.

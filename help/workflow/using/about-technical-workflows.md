@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: Technische workflows
-description: Meer informatie over de technische workflows die beschikbaar zijn bij Campaigns Classic
+description: Meer informatie over de technische workflows die beschikbaar zijn bij Campaign Classic-pakketten
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -35,7 +37,7 @@ Voor meer op hoe te om technische werkschema&#39;s te controleren, verwijs naar 
 |------|--------|-----------|
 | **Alias het zuiveren** (aliasCleansing) | Levering | Deze werkstroom normaliseert opsommingswaarden. Deze wordt standaard elke dag om 3 uur geactiveerd. |
 | **Facturering** (het factureren) | Levering | Deze workflow stuurt het systeemactiviteitenrapport per e-mail naar de &#39;factureringsoperator&#39;. Het wordt teweeggebracht 25e van elke maand op de instantie van de Marketing. |
-| **Berekening van de statistieken van de Twitter** (statsTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze werkstroom berekent statistieken met betrekking tot retweets en bezoeken op X (voorheen bekend als Twitter). |
+| **Berekening van Twitter- statistieken** (statsTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow berekent statistieken over retweets en bezoeken op X (voorheen bekend als Twitter). |
 | **de banen van de Campagne** (operationMgt) | Marketingcampagnes (Campagne) | In deze workflow worden de taken voor marketingcampagnes beheerd (starttaken, bestanden uitpakken, enz.). Het leidt ook tot werkschema&#39;s met betrekking tot terugkomende en periodieke campagnes. |
 | **verzamel gegevens voor de dienst HeatMap** (collectDataHeatMapService) | Standaard geïnstalleerd | Deze werkstroom wint gegevens terug die door de dienst HeatMap worden vereist. |
 | **verzamel privacyverzoeken** (collectPrivacyRequests) | Privacygegevensbeschermingsverordening | Met deze workflow worden de gegevens van de ontvanger gegenereerd die in Adobe Campaign zijn opgeslagen en kunnen deze worden gedownload op het scherm van de privacyaanvraag. |
@@ -70,11 +72,11 @@ Voor meer op hoe te om technische werkschema&#39;s te controleren, verwijs naar 
 | **synchronisatie van de Positie** (propositionSynch) | Besturing van de aanbiedingsengine met uitvoeringsinstantie | Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die voor interacties wordt gebruikt. |
 | **Terugwinning van Webgebeurtenissen** (webAnalyticsGetWebEvents) | Webanalytische connectors | Elk uur downloadt deze workflow segmenten op het gedrag van internetgebruikers op een bepaalde site, plaatst deze in de Adobe Campaign-database en start de workflow voor het opnieuw in de handel brengen. |
 | **het Melden van aggregaten** (reportingAggregates) | Levering | Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Deze wordt standaard elke dag om 2 uur geactiveerd. |
-| **het verzenden van indicatoren en campagnerekenmerken** (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de connector voor Adobe® Analytics. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
+| **het verzenden van indicatoren en campagnerekenmerken** (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de Adobe® Analytics-connector. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
 | **Beeld: Orders en alarm** (stockMgt) | Marketingcampagnes (Campagne) | Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen. |
-| **Synchronizing Facebook fans** (syncFacebookFans) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
-| **Synchronizing Facebook pagina&#39;s** (syncFacebook) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
-| **synchroniserend de pagina&#39;s van de Twitter** (syncTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow importeert elke dag om 7.00 uur X-volgers naar Adobe Campaign. |
+| **synchroniserend de fans van Facebook** (syncFacebookFans) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
+| **synchroniserend Facebook pagina&#39;s** (syncFacebook) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
+| **het Synchroniseren Twitter pagina&#39;s** (syncTwitter) | Sociale netwerken (sociale marketing) - Alleen campagne v7 | Deze workflow importeert elke dag om 7.00 uur X-volgers naar Adobe Campaign. |
 | **Bericht van de Taak** (taskMgt) | Marketingbronnen (MRM) - alleen campagne v7 | Met deze workflow kunt u meldingen verzenden met betrekking tot taken in marketingcampagnes. |
 | **het Volgen** (het volgen) | Levering | Deze workflow voert het herstel en de consolidatie van trackinggegevens uit. Het verzekert ook de herberekening van het volgen en leveringsstatistieken, vooral die gebruikt door het archiveren van het Centrum van het Bericht werkschema. Deze wordt standaard één keer per uur geactiveerd. |
 | **de gebeurtenisstatus van de Update** (updateEventsStatus) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Met deze workflow kunt u een status aan een gebeurtenis toewijzen. Gebeurtenisstatussen zijn als volgt:<ul><li>In behandeling: de gebeurtenis bevindt zich in een wachtrij. Er is nog geen berichtsjabloon aan gekoppeld.</li><li>In afwachting van levering: de gebeurtenis bevindt zich in een wachtrij, is een berichtsjabloon eraan gekoppeld en wordt momenteel verwerkt door de levering.</li><li>Verzonden: deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.</li><li>Genegeerd door de levering: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</li><li>Leveringsfout: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.</li><li>Gebeurtenis niet gedekt: de gebeurtenis is niet gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet opnieuw verwerkt.</li></ul> |

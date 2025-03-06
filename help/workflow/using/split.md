@@ -3,8 +3,10 @@ product: campaign
 title: Splitsen
 description: Meer informatie over de activiteit van de gesplitste workflow
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 0%
@@ -212,7 +214,7 @@ Schakel de optie **[!UICONTROL Generate complement]** in als u de resterende pop
 
 Deze optie werkt alleen correct als de binnenkomende gegevens een primaire sleutel hebben.
 
-Als de gegevens bijvoorbeeld rechtstreeks worden gelezen vanuit een externe database, zoals Netezza (die het idee van een index niet ondersteunt) via een **[!UICONTROL Data loading (RDBMS)]** -activiteit, is de aanvulling die wordt gegenereerd door de **[!UICONTROL Split]** -activiteit onjuist.
+Als de gegevens bijvoorbeeld rechtstreeks worden gelezen vanuit een externe database, zoals Netezza (die het begrip index niet ondersteunt) via een **[!UICONTROL Data loading (RDBMS)]** -activiteit, is de aanvulling die wordt gegenereerd door de **[!UICONTROL Split]** -activiteit onjuist.
 
 U kunt dit voorkomen door een **[!UICONTROL Enrichment]** -activiteit net voor de **[!UICONTROL Split]** -activiteit te slepen en neer te zetten. Controleer in de **[!UICONTROL Enrichment]** -activiteit de **[!UICONTROL Keep all additional data from the main set]** en geef in de aanvullende gegevens de kolommen op die u wilt gebruiken voor het configureren van de filters van de **[!UICONTROL Split]** -activiteit. De gegevens van de binnenkomende overgang van de **[!UICONTROL Split]** activiteit worden dan plaatselijk opgeslagen in een tijdelijke lijst op de server van Adobe Campaign en de aanvulling kan correct worden geproduceerd.
 

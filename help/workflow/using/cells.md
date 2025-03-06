@@ -3,8 +3,10 @@ product: campaign
 title: Cellen
 description: Cellen
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -15,15 +17,15 @@ ht-degree: 8%
 
 
 
-De **[!UICONTROL Cells]** de activiteit verstrekt een mening van de diverse ondergroepen in de vorm van gegevenskolommen. Het vergemakkelijkt manipulatie van subsets en is ook ontworpen om personalisatiemogelijkheden aan te moedigen.
+De activiteit **[!UICONTROL Cells]** verstrekt een mening van de diverse subsets in de vorm van gegevenskolommen. Het vergemakkelijkt manipulatie van subsets en is ook ontworpen om personalisatiemogelijkheden aan te moedigen.
 
 ![](assets/wf_split_cells.png)
 
-Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard worden de details van elke subset in een speciaal venster beschreven via de **[!UICONTROL Selection]** en **[!UICONTROL Advanced]** tabs. In het onderstaande voorbeeld is het formulier gewijzigd: **[!UICONTROL Data]** tab is toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
+Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard worden de details van elke subset in een speciaal venster via de tabbladen **[!UICONTROL Selection]** en **[!UICONTROL Advanced]** weergegeven. In het onderstaande voorbeeld is het formulier gewijzigd: er is een tab **[!UICONTROL Data]** toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Voor deze configuratie is de volgende informatie toegevoegd aan het werkstroomformulier (in het gedeelte **[!UICONTROL Administration > Configurations > Input forms]** knooppunt van de Adobe Campaign-structuur):
+Voor deze configuratie is de volgende informatie toegevoegd aan het werkstroomformulier (in het knooppunt **[!UICONTROL Administration > Configurations > Input forms]** van de Adobe Campaign-structuur):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

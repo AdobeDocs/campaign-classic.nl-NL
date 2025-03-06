@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -238,8 +238,10 @@ ht-degree: 100%
       + [Content verrijken](delivery/using/enriching-content.md)
       + [Automatiseren via workflows](delivery/using/automating-via-workflows.md)
 + Marketingcampagnes orkestreren {#orchestrating-campaigns}
+   + [Informatie over marketingcampagnes](campaign/using/about-marketing-campaigns.md)
+   + [Informatie over Campagne optimaliseren](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
-      + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
+      + [Marketing-campagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
       + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
       + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
       + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
-   + Campagneoptimalisatie {#campaign-optimization}
-      + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
-      + [Drukregels](campaign-opt/using/pressure-rules.md)
-      + [Consistentieregels](campaign-opt/using/consistency-rules.md)
-      + [Controleregels](campaign-opt/using/control-rules.md)
-      + [Filterregels](campaign-opt/using/filtering-rules.md)
-      + [Regels toepassen](campaign-opt/using/applying-rules.md)
-      + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
+      + Campagneoptimalisatie {#campaign-optimization}
+         + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
+         + [Drukregels](campaign-opt/using/pressure-rules.md)
+         + [Consistentieregels](campaign-opt/using/consistency-rules.md)
+         + [Controleregels](campaign-opt/using/control-rules.md)
+         + [Filterregels](campaign-opt/using/filtering-rules.md)
+         + [Regels toepassen](campaign-opt/using/applying-rules.md)
+         + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
 + Marketing Resource Management {#mrm}
    + [Marketingbronnen beheren](mrm/using/about-marketing-resource-management.md)
    + [Taken maken en beheren](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
       + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatiseren met workflows {#automating-with-workflows}
+   + [Over workflowautomatisering](workflow/using/about-workflow-automation.md)
    + Aan de slag met workflows {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
       + [Activiteiten](workflow/using/about-activities.md)
@@ -641,7 +644,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
