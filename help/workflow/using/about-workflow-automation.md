@@ -3,18 +3,15 @@ product: campaign
 title: Workflows
 description: Automatiseer processen met workflows, beheer gegevens en doelgroepen, verzend berichten, en meer
 feature: Workflows, Data Management
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 89%
+source-wordcount: '274'
+ht-degree: 57%
 
 ---
 
-# Aan de slag met workflows{#gs-workflows}
-
-
-
-## Workflows{#about-workflows}
+# Automatiseren met workflows {#gs-workflows}
 
 Adobe Campaign bevat een workflowmodule om het volledige scala aan processen en taken in de verschillende modules van de applicatieserver te organiseren. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enzovoort. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
 
@@ -24,9 +21,21 @@ Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten wor
 
 Workflows vinden plaats in verschillende contexten en fasen van het campagnemanagementproces.
 
->[!NOTE]
->
->Meer over werkstroombeheer leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html) {target=_blank}.
+Meer over werkstroombeheer leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html) {target=_blank}.
+
+![](assets/do-not-localize/workflow.jpg){width="40%"}
+
+Leer de belangrijkste stappen met betrekking tot workflowbeheer:
+
+* [ de activiteiten van het Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html) {target=_blank}: Een activiteit beschrijft een taakmalplaatje. De werkstromen omvatten het richten, debietcontrole, actie en gebeurtenisactiviteiten.
+
+* [ bouwt een werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html) {target=_blank}: Leer hoe te om het richten, campagne en technische werkschema&#39;s tot stand te brengen en in werking te stellen.
+
+* [ Beste praktijken ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html) {target=_blank}: Leer over de richtlijnen om het werkschemaprestaties van de Campagne te optimaliseren, uw werkschemaontwerp te verbeteren en de correcte montages te selecteren.
+
+* [ werkschema&#39;s van de Monitor ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html) {target=_blank}: Leer hoe te werkschemauitvoering te controleren om ervoor te zorgen dat alles correct loopt.
+
+* {het gebruiksgevallen van het 0} Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html) {target=_blank}: Leer verschillende contexten waarin de werkschema&#39;s kunnen worden gebruikt en hoe te om hen door gebruiksgevallen van begin tot eind uit te voeren.[
 
 <!--
 

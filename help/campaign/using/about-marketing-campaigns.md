@@ -4,23 +4,41 @@ title: Informatie over marketingcampagnes
 description: Marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren
 role: User
 feature: Campaigns
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 6%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
-# Informatie over marketingcampagnes{#designing-marketing-campaigns}
+# Marketingcampagnes ordenen{#designing-marketing-campaigns}
 
 Adobe Campaign biedt een reeks oplossingen die u helpen campagnes op al uw online en offline kanalen aan te passen en te leveren. U kunt marketingcampagnes maken, configureren, uitvoeren en analyseren. Alle marketing campagnes kunnen van een verenigd controlecentrum worden beheerd.
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
->[!NOTE]
->
->Meer over campagnebeheer leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html) {target=_blank}.
+Meer over campagnebeheer leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html) {target=_blank}.
 
+![](assets/do-not-localize/campaign.jpg){width="40%"}
+
+Leer de belangrijkste stappen met betrekking tot campagnebeheer:
+
+* [ worden begonnen ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html) {target=_blank}: Detecteer, geleidelijke, hoe te om een marketing campagne in Adobe Campaign tot stand te brengen en uit te voeren.
+
+* [ creeer uw eerste campagne ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html) {target=_blank}: Leer hoe te en opstelling de logica om uw campagnes te ordenen. Een campagne centraliseert alle elementen die verband houden met een marketingcampagne: leveringen, doelgerichte regels, kosten, exportbestanden, verwante documenten, enz.
+
+* [ verzendt berichten in een campagne ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html) {target=_blank}: Orchestreer uw dwars-kanaalleveringen in uw campagnes: stroomlijnt uw mededelingen met Adobe Campaign door gepersonaliseerde e-mail, SMS, dupberichten en in-app berichten.
+
+![](assets/do-not-localize/add-on.jpg){width="40%"}
+
+Er zijn drie invoegtoepassingen beschikbaar voor campagnebeheer:
+
+* [ Optimalisering van de Campagne ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html) {target=_blank}: Deze module laat u controleren, filtreren en het verzenden van leveringen controleren. Dit garandeert dat de verzonden berichten voldoen aan de behoeften en verwachtingen van klanten en het communicatiebeleid van het bedrijf.
+
+* [ het Beheer van het Middel van de Marketing ](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html) {target=_blank}: Deze module laat u marketing acties op een samenwerkingswijze controleren door volledig beheer en het volgen in real time van de betrokken taken, begrotingen en marketing middelen te verstrekken.
+
+* [ Verdeelde Marketing ](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html) {target=_blank}: Deze module laat u marketing acties op een samenwerkingswijze controleren door volledig beheer en het volgen in real time van de taken, de begrotingen en de marketing betrokken middelen te verstrekken.
 
 <!--
 
