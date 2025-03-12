@@ -239,9 +239,9 @@ ht-degree: 99%
       + [Automatiseren via workflows](delivery/using/automating-via-workflows.md)
 + [Marketingcampagnes ordenen](campaign/using/about-marketing-campaigns.md)
 + Marketingcampagnes orkestreren {#orchestrating-campaigns}
-   + [Informatie over Campagne optimaliseren](campaign-opt/using/about-campaign-optimization.md)
+   + [Campagneoptimalisatie](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
-      + [Marketing-campagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
+      + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
       + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
