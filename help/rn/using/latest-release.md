@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a92e49e1ac8b0e8f619e06fadba73090a693bc4a
+source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 31%
+source-wordcount: '251'
+ht-degree: 24%
 
 ---
 
@@ -47,9 +47,19 @@ De verbinding met Adobe-oplossingen en -toepassingen via de externe account van 
 
 Deze release bevat de volgende hoofdoplossingen:
 
-* Oplossingen voor TLS-/SMPP-verbinding
-* Oplossingen voor Google BigQuery
-* MTA-correcties
+* TLS-/SMPP-verbinding - Vaste problemen met SMPP-stabiliteit
+
+* Google BigQuery corrigeert:
+
+   * Vaste regressies op BOOLEAN-gegevenstypen
+   * Vaste proxyinstellingen
+   * Vaste regressies op gegevenstypen DATETIME
+   * Vaste stabiliteit van bulklading
+   * Verbeterde interne tests op ODBC-versies
+   * Probleem verholpen met speciale tekens in verbindingstekenreeks
+   * Standaardtime-out (5 minuten) voor Google BigQuery-query-query verwijderd
+
+* Mail Transfer Agent (MTA) - Fixed orphan MTA child to be plakt on **[!UICONTROL Start pending]** status.
 
 De volgende problemen zijn ook opgelost in deze release:
 
