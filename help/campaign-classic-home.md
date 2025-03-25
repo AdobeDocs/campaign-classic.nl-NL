@@ -3,10 +3,10 @@ keywords: Campaign Classic; startpagina; populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ Bekijk alvast de nieuwste verbeteringen in Adobe Campaign Standard v7-producten 
 >[!BEGINTABS]
 
 
->[!TAB Release van juni is live!]
+>[!TAB  Maart 2025 versie is levend!]
 
-Ontdek de updates, verbeteringen en patches voor Campaign Classic v7.4.1.
+Ontdek updates, verbeteringen en oplossingen die bij de release van Campaign Classic v7.4.2 - maart &#39;25 worden geleverd.
 
 [![afbeelding](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
