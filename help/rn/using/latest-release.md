@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 [!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
-_zaterdag 21 maart 2025_
+_21 maart 2025_
 
 >[!AVAILABILITY]
 >
->Deze versie is in **Beperkte Beschikbaarheid** (LA). Het is beperkt tot Gehoste/Beheerde de dienstengebruikers slechts. Deze release is binnenkort beschikbaar voor klanten met hybride en on-premise.
+>Deze versie is in **beperkte beschikbaarheid** (Limited Availability, ofwel LA). Deze release is uitsluitend bedoeld voor gebruikers van gehoste/beheerde services. Deze release is binnenkort beschikbaar voor hybride en on-premise klanten.
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
@@ -39,29 +39,29 @@ This release comes with the following compatibility updates:
 
 ### Beveiligingsverbeteringen {#security-7-4-2}
 
-Deze release wordt geleverd met verschillende beveiligingsoplossingen.
+Deze release bevat verschillende beveiligingsoplossingen.
 
-De verbinding met Adobe-oplossingen en -toepassingen via de externe account van **[!UICONTROL Adobe Experience Cloud]** is bijgewerkt om de beveiliging te verbeteren.
+De verbinding met Adobe-oplossingen en -toepassingen via het **[!UICONTROL Adobe Experience Cloud]** externe account is bijgewerkt om de beveiliging te verbeteren.
 
 ### Oplossingen {#release-7-4-2-fixes}
 
-Deze release bevat de volgende hoofdoplossingen:
+Deze release bevat de volgende belangrijkste oplossingen:
 
-* TLS-/SMPP-verbinding - Vaste problemen met SMPP-stabiliteit
+* TLS-/SMPP-verbinding - Problemen opgelost met SMPP-stabiliteit
 
-* Google BigQuery corrigeert:
+* Oplossingen voor Google BigQuery:
 
-   * Vaste regressies op BOOLEAN-gegevenstypen
-   * Vaste proxyinstellingen
-   * Vaste regressies op gegevenstypen DATETIME
-   * Vaste stabiliteit van bulklading
+   * Problemen met regressies van BOOLEAN-gegevenstypen opgelost
+   * Problemen met proxy-instellingen opgelost
+   * Problemen met regressies van het gegevenstype DATETIME opgelost
+   * Problemen met de stabiliteit van bulksgewijs laden opgelost
    * Verbeterde interne tests op ODBC-versies
    * Probleem verholpen met speciale tekens in verbindingstekenreeks
-   * Standaardtime-out (5 minuten) voor Google BigQuery-query-query verwijderd
+   * Standaardtime-out (5 minuten) voor Google BigQuery-query&#39;s verwijderd
 
-* Mail Transfer Agent (MTA) - Fixed orphan MTA child to be plakt on **[!UICONTROL Start pending]** status.
+* Mail Transfer Agent (MTA) - Probleem opgelost met een verweesde onderliggende MTA die vast bleef zitten op de status **[!UICONTROL Start pending]**.
 
 De volgende problemen zijn ook opgelost in deze release:
 
-NEO-47269, NEO-59059, NEO-62455, NEO-65774, NEO-66462, NEO-66989, NEO-77898, NEO-788 43, NEO-79373, NEO-79598, NEO-80145, NEO-80245, NEO-80434, NEO-80683, NEO-8122, NEO-8 1433, NEO-81864, NEO-82351, NEO-82781, NEO-82838, NEO-82923, NEO-83252, NEO-83809, O-83826, NEO-84024, NEO-84553, NEO-85150
+NEO-47269, NEO-59059, NEO-62455, NEO-65774, NEO-66462, NEO-66989, NEO-77898, NEO-78843, NEO-79373, NEO-79598, NEO-80145, NEO-80245, NEO-80434, NEO-80683, NEO-81222, NEO-81433, NEO-81864, NEO-82351, NEO-82781, NEO-82838, NEO-82923, NEO-83252, NEO-83809, NEO-83826, NEO-84024, NEO-84553, NEO-85150
 
