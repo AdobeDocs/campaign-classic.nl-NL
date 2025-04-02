@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cd0de82ba743fa04e59a4fa6f560a80cd5c8e940
+source-git-commit: 492115471325533e913739d27e0a461edf98b723
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -22,10 +22,6 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 [!BADGE Algemene beschikbaarheid]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
 
 _donderdag 2 april 2025_
-
->[!AVAILABILITY]
->
->Deze versie is in **beperkte beschikbaarheid** (Limited Availability, ofwel LA). Deze release is uitsluitend bedoeld voor gebruikers van gehoste/beheerde services. Deze release is binnenkort beschikbaar voor hybride en on-premise klanten.
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
