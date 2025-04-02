@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: ht
+source-git-commit: c5aa626c166f513084d5fa141f307aba8bd57d36
+workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
 
@@ -19,9 +19,9 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 ## Release 7.4.2 - build 9390 {#release-7-4-2}
 
-[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+[!BADGE Algemene beschikbaarheid]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
 
-_21 maart 2025_
+_donderdag 2 april 2025_
 
 >[!AVAILABILITY]
 >
