@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: ht
-source-wordcount: '2571'
+source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+workflow-type: tm+mt
+source-wordcount: '2568'
 ht-degree: 100%
 
 ---
@@ -238,20 +238,19 @@ ht-degree: 100%
       + [Content verrijken](delivery/using/enriching-content.md)
       + [Automatiseren via workflows](delivery/using/automating-via-workflows.md)
 + [Marketingcampagnes orkestreren](campaign/using/about-marketing-campaigns.md)
-+ Marketingcampagnes orkestreren {#orchestrating-campaigns}
    + [Campagneoptimalisatie](campaign-opt/using/about-campaign-optimization.md)
-   + Marketingcampagnes {#about-marketing-campaigns}
-      + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
-      + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
-   + Campagnes orkestreren {#orchestrate-campaigns}
-      + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
-      + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
-      + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
-      + [De doelgroep selecteren](campaign/using/marketing-campaign-target.md)
-      + [Documenten en assets beheren](campaign/using/marketing-campaign-assets.md)
-      + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
-      + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
-      + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
+      + Marketingcampagnes {#about-marketing-campaigns}
+         + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
+         + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
+      + Campagnes orkestreren {#orchestrate-campaigns}
+         + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
+         + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
+         + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
+         + [De doelgroep selecteren](campaign/using/marketing-campaign-target.md)
+         + [Documenten en assets beheren](campaign/using/marketing-campaign-assets.md)
+         + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
+         + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
+         + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
       + Campagneoptimalisatie {#campaign-optimization}
          + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
          + [Drukregels](campaign-opt/using/pressure-rules.md)
