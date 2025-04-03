@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98bc76dce83abcd3ce39648d554ee92841fd7327
+source-git-commit: efeb6c7d0969c66ec9bd63f4bf424224c8ca222b
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -239,7 +239,6 @@ ht-degree: 100%
       + [Automatiseren via workflows](delivery/using/automating-via-workflows.md)
 + [Marketingcampagnes orkestreren](campaign/using/about-marketing-campaigns.md)
 + Marketingcampagnes orkestreren {#orchestrating-campaigns}
-   + [Marketingcampagnes orkestreren](campaign/using/about-marketing-campaigns.md)
    + [Campagneoptimalisatie](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
       + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
