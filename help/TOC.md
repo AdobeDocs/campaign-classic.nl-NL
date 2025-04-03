@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+source-git-commit: 1a23e55190ae26edd7193838600a803137f13201
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -237,28 +237,29 @@ ht-degree: 100%
       + [Een contentsjabloon gebruiken](delivery/using/using-a-content-template.md)
       + [Content verrijken](delivery/using/enriching-content.md)
       + [Automatiseren via workflows](delivery/using/automating-via-workflows.md)
-+ [Marketingcampagnes orkestreren](campaign/using/about-marketing-campaigns.md)
++ Marketingcampagnes orkestreren {#orchestrating-campaigns}
+   + [Marketingcampagnes orkestreren](campaign/using/about-marketing-campaigns.md)
    + [Campagneoptimalisatie](campaign-opt/using/about-campaign-optimization.md)
-      + Marketingcampagnes {#about-marketing-campaigns}
-         + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
-         + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
-      + Campagnes orkestreren {#orchestrate-campaigns}
-         + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
-         + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
-         + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
-         + [De doelgroep selecteren](campaign/using/marketing-campaign-target.md)
-         + [Documenten en assets beheren](campaign/using/marketing-campaign-assets.md)
-         + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
-         + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
-         + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
-      + Campagneoptimalisatie {#campaign-optimization}
-         + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
-         + [Drukregels](campaign-opt/using/pressure-rules.md)
-         + [Consistentieregels](campaign-opt/using/consistency-rules.md)
-         + [Controleregels](campaign-opt/using/control-rules.md)
-         + [Filterregels](campaign-opt/using/filtering-rules.md)
-         + [Regels toepassen](campaign-opt/using/applying-rules.md)
-         + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
+   + Marketingcampagnes {#about-marketing-campaigns}
+      + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
+      + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
+   + Campagnes orkestreren {#orchestrate-campaigns}
+      + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
+      + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
+      + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
+      + [De doelgroep selecteren](campaign/using/marketing-campaign-target.md)
+      + [Documenten en assets beheren](campaign/using/marketing-campaign-assets.md)
+      + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
+      + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
+      + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
+   + Campagneoptimalisatie {#campaign-optimization}
+      + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
+      + [Drukregels](campaign-opt/using/pressure-rules.md)
+      + [Consistentieregels](campaign-opt/using/consistency-rules.md)
+      + [Controleregels](campaign-opt/using/control-rules.md)
+      + [Filterregels](campaign-opt/using/filtering-rules.md)
+      + [Regels toepassen](campaign-opt/using/applying-rules.md)
+      + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
 + Marketing Resource Management {#mrm}
    + [Marketingbronnen beheren](mrm/using/about-marketing-resource-management.md)
    + [Taken maken en beheren](mrm/using/creating-and-managing-tasks.md)
