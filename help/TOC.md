@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efeb6c7d0969c66ec9bd63f4bf424224c8ca222b
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 100%
+source-wordcount: '2574'
+ht-degree: 99%
 
 ---
 
@@ -644,7 +644,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -849,4 +849,5 @@ ht-degree: 100%
    + Migratie naar Adobe Managed Services{#dc-migration}
       + [Migratie naar Public Cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)
+   + [Op GCM gebaseerde functies](technotes/using/gcm-functions.md)
 + [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)

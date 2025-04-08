@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '439'
 ht-degree: 3%
 
 ---
@@ -21,25 +21,25 @@ ht-degree: 3%
 
 In deze sectie worden de gebruikelijke opdrachten in Adobe Campaign weergegeven.
 
-De opdracht **nlserver** is de invoeropdracht voor de hele Adobe Campaign-toepassing.
+Het bevel **nlserver** is het inputbevel voor de volledige toepassing van Adobe Campaign.
 
-Deze opdracht heeft de volgende syntaxis: **nlserver **`<command>`****`<arguments>`****
+Deze opdracht heeft de volgende syntaxis: **nullServer **`<command>`****`<arguments>`****
 
 De parameter **`<command>`** komt overeen met de module.
 
 >[!NOTE]
 >
->* In elk geval kunt u de opdracht **-noconsole** argument om opmerkingen te verwijderen die worden weergegeven wanneer de modules zijn gestart.
->* U kunt het argument daarentegen toevoegen **-verbose** voor meer informatie.
+>* In elk geval, kunt u **- noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
+>* Omgekeerd, kunt u het argument **- verbose** toevoegen om meer informatie te tonen.
 >
 
 ## Bewaking, opdrachten {#monitoring-commands-}
 
 >[!NOTE]
 >
->Om van alle modules een lijst te maken, moet u gebruiken **nlserver pdump** gebruiken.
+>Om van alle modules een lijst te maken, moet u het **bevel gebruiken 0} nlserver van de pomp {.**
 
-U kunt de parameter toevoegen **-who** om een lijst weer te geven van de lopende verbindingen (database en toepassing).
+U kunt de parameter **- toevoegen wie** om van de lopende verbindingen (gegevensbestand en toepassing) een lijst te maken.
 
 ```sql
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Een andere handige opdracht is **nlserver-monitor**. Het bevat een lijst met XML-controlebestanden (verkregen in de Adobe Campaign-client of via de **monitor.jsp** webpagina).
+Een ander nuttig bevel is **nlserver monitor**. Het maakt een lijst van het dossier van controleXML (dat in de cliënt van Adobe Campaign of via **wordt verkregen monitor.jsp** Web-pagina).
 
-U kunt de parameter toevoegen **-missing** om de ontbrekende modules (fout in modules, modules gesloten, enz.) op te nemen
+U kunt de parameter **-missing** toevoegen om van de afwezige modules (fout in modules, modules sluiten, enz.) een lijst te maken
 
 ```sql
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** overeenkomt met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden, of **default** voor mono-instance modules.
+>**`<instance>`** beantwoordt aan de naam van de instantie zoals ingegaan in de configuratiedossiers, of **gebrek** voor mono-instantie modules.
 
 ## Afsluiten van services {#shut-down-services}
 
@@ -105,7 +105,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
 
      >[!NOTE]
      >
-     >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+     >Beginnend 20.1, adviseren wij het gebruiken van het volgende bevel in plaats daarvan (voor Linux): **systemctl stop nlserver**
 
    * In Windows:
 
@@ -129,17 +129,17 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
      >[!NOTE]
      >
-     >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+     >Beginnend 20.1, adviseren wij het gebruiken van het volgende bevel in plaats daarvan (voor Linux): **systeemctl begin nlserver**
 
    * In Windows: `net start nlserver6`
 
-* Anders, in de rekening van Adobe Campaign: **nlserver watchdog -svc -noconsole**
+* Anders, in de rekening van Adobe Campaign: **nlserver waakhond - svc - noconsole**
 
 ## Het configuratiebevel {#the-config-command}
 
-De **config** Met deze opdracht kunt u de serverconfiguratie beheren, inclusief de herconfiguratie van de databaseverbinding.
+Het **config** bevel laat u serverconfiguratie, met inbegrip van de herconfiguratie van de gegevensbestandverbinding beheren.
 
-Gebruik de **config** de **nlserver** uitvoerbaar bestand met de **-setdblogin** parameter.
+Gebruik het **config** bevel van het **nlserver** uitvoerbare dossier met de **-setdblogin** parameter.
 
 ```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,17 +151,27 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Voer het wachtwoord in.
 
-Als u het dialoogvenster **internal** wachtwoord: **nlserver config - intern wachtwoord**
+Om het **interne** wachtwoord te veranderen: **nlserver config - intern wachtwoord**
 
 >[!IMPORTANT]
 >
->Als u zich wilt aanmelden met de **Intern** id, moet u vooraf een wachtwoord hebben bepaald. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
+>Om met het **Interne** herkenningsteken het programma te openen, moet u een wachtwoord vooraf bepaald hebben. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 >[!NOTE]
 >
->* In het algemeen kunt u in plaats van de configuratiebestanden handmatig te wijzigen de opdracht **config** command
->* Als u de lijst met parameters wilt ophalen, gebruikt u de opdracht **-?** parameter: **nlserver config -?**
->* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
+>* In het algemeen, in plaats van de configuratiedossiers door hand te wijzigen, kunt u het **config** bevel gebruiken
+>* Als u de lijst met parameters wilt ophalen, gebruikt u de lus **-?** parameter: **nlserver config -?**
+>* In het geval van een Oracle-database mag u het account niet opgeven. De syntaxis ziet er als volgt uit:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >
+
+Hier volgt een voorbeeld voor MSSQL:
+
+```sql
+nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
+```
+
+* login (b.v. account:user), en de server kan in de dataSource knoop van config-&lt;instance_name>.xml- dossier worden gevonden.
+* Wachtwoord moet tussen aanhalingstekens &quot;&quot; staan.
+

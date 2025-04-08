@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,17 @@ ht-degree: 100%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Aanvullende informatie voor Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+
+## 2025
+
+### Maart 2025 {#march-2025}
+
+In het kader van een promotieinitiatief voor Campagne v8 zijn we begonnen met het reorganiseren van de documentatieset van Campaign Classic. In paragraaf 7.4.2 geven we de eerste mijlpaal vrij. De volgende hulplijnen zijn vervangen door bestemmingspagina&#39;s, inclusief koppelingen naar v8-documentatie:
+
+* Orchestrate marketing campagnes: deze gids is vervangen met a [ landende pagina ](../../campaign/using/about-marketing-campaigns.md).
+* Marketing Resource Management: deze handleiding is verwijderd.
+* Distributed Marketing: deze handleiding is verwijderd.
+* Automatiseer met werkschema&#39;s: deze gids is vervangen met a [ het landen pagina ](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
