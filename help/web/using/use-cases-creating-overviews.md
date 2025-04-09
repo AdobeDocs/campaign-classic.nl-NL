@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: "Gebruik hoofdletters/kleine letters: overzichten maken"
-description: "Gebruik hoofdletters/kleine letters: overzichten maken"
+title: 'Gebruiksscenario’s: overzichten maken'
+description: 'Gebruiksscenario’s: overzichten maken'
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
+level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -34,7 +35,7 @@ In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web
 
 1. De paginatitel wijzigen.
 
-   Deze titel zal in de overzichtskopbal en in het de toepassingsoverzicht van het Web verschijnen.
+   Deze titel verschijnt in de overzichtskop en in het overzicht van de webapplicatie.
 
 1. Wijzig in de eigenschappen van de webtoepassing de rendering van uw toepassing door de **[!UICONTROL Single-page Web application]** -sjabloon te selecteren.
 
@@ -83,8 +84,8 @@ In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van
 
 ## Een knop toevoegen om een nieuwe webtoepassing te configureren {#adding-a-button-to-configure-a-new-web-application}
 
-1. Plaats de cursor op het element **[!UICONTROL Page]** en voeg een koppeling toe (**[!UICONTROL Static elements > Link]** ).
-1. Wijzig het koppelingsetiket aangezien het op de knoop in het overzicht zal verschijnen.
+1. Plaats de cursor op het **[!UICONTROL Page]** element en voeg een link (**[!UICONTROL Static elements > Link]**) toe.
+1. Wijzig het linklabel omdat het op de knop in het overzicht verschijnt.
 
    In ons voorbeeld, is het etiket **Nieuw**.
 
@@ -116,13 +117,13 @@ Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voo
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. Voeg op het tabblad **[!UICONTROL Data]** de kolommen **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** en **[!UICONTROL Description]** toe en selecteer de optie **[!UICONTROL Hidden field]** voor elke kolom.
+1. Voeg op het **[!UICONTROL Data]** tabblad de **[!UICONTROL Primary key]** kolom en **[!UICONTROL Internal name]** **[!UICONTROL Description]** toe en selecteer de **[!UICONTROL Hidden field]** optie voor elke kolom.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 
-   Op die manier is deze informatie alleen zichtbaar in de details van elke vermelding.
+   Op deze manier is deze informatie alleen zichtbaar in de details van elke invoer.
 
-1. Voeg de volgende code toe op het tabblad **[!UICONTROL Additional detail]** :
+1. Voeg op het **[!UICONTROL Additional detail]** tabblad de volgende code toe:
 
    ```
    <div class="detailBox">
@@ -157,7 +158,7 @@ Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voo
 
 >[!NOTE]
 >
->Het vernieuwen van JavaScript-bibliotheken op de server duurt vijf minuten. U kunt de server opnieuw starten om te voorkomen dat wordt gewacht tot deze vertraging optreedt.
+>JavaScript-bibliotheken hebben vijf minuten nodig om te worden vernieuwd op de server. U kunt de server opnieuw starten om te voorkomen dat wordt gewacht tot deze vertraging optreedt.
 
 ## De lijst filteren en bijwerken {#filtering-and-updating-the-list}
 
@@ -198,13 +199,13 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
    * **Uitdrukking:** Buitenlandse sleutel van de &quot;Gemaakt door&quot;verbinding
    * **Exploitant:** evenaart aan
    * **Waarde:** Variabelen (variabelen)
-   * **waarmee rekening wordt gehouden als:** &#39;$(var2/@id)&#39;!=&#39;&#39;
+   * **In aanmerking genomen indien:** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
->De gebruiker van de toepassing van het Web moet een geïdentificeerde exploitant met de aangewezen rechten van Adobe Campaign zijn om tot de informatie toegang te hebben. Dit type van configuratie zal niet voor de anonieme toepassingen van het Web werken.
+>De gebruiker van de webtoepassing moet een geïdentificeerde operator zijn met de juiste Adobe Campaign-rechten om toegang te krijgen tot de informatie. Dit type configuratie werkt niet voor anonieme webtoepassingen.
 
 ### Een koppeling voor vernieuwen maken {#creating-a-refresh-link}
 

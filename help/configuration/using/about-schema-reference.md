@@ -4,8 +4,9 @@ title: Aan de slag met schema's in Adobe Campaign
 description: Leer hoe u met schema's werkt en breid het conceptuele gegevensmodel van de Adobe Campaign-database uit
 feature: Schema Extension
 role: Data Engineer, Developer
+level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [ model van de gegevens van het Campaign Classic ](about-data-model.md).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [ de gegevensmodel van Campaign Classic ](about-data-model.md).
 
 In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een document van XML verbonden aan een gegevensbestandlijst. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 

@@ -5,9 +5,10 @@ description: Veelgestelde vragen over ontwikkelaars
 feature: Troubleshooting, Configuration
 audience: platform
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 84%
@@ -64,6 +65,6 @@ Het principe van datapakketten is een dataconfiguratie te exporteren en deze in 
 
 [Klik hier](../../platform/using/working-with-data-packages.md) om te leren hoe u met datapakketten kunt werken om Campaign-configuraties te importeren en exporteren.
 
-## Waar kan ik de lijst van Campaign Classic APIs vinden? {#where-can-i-find-the-list-of-campaign-classic-apis}
+## Waar vind ik de lijst met Campaign Classic API&#39;s? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 Alle Campaign-API’s, inclusief de volledige beschrijving, zijn beschikbaar in deze [specifieke documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).

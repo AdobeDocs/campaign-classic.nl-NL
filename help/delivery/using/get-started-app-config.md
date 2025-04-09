@@ -4,8 +4,9 @@ title: De mobiele toepassing configureren in Adobe Campaign
 description: Leer hoe u begint met de configuratie van de mobiele toepassing
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -36,7 +37,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 ![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om het mobiele app pakket in video te installeren ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-Als hybride/ontvangen klant, contacteer ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team van de Zorg van de Klant van de Adobe [ om tot het kanaal van het pushbericht in Campagne toegang te hebben.
+Als hybride/ontvangen klant, contacteer ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team van de Zorg van de Klant van 0} Adobe om tot het kanaal van het pushbericht in Campagne toegang te hebben.[
 
 Als klant op locatie moet u een ingebouwd pakket installeren.
 

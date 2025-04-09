@@ -4,8 +4,9 @@ title: SMS-kanaal voor campagne configureren
 description: Leer hoe te om het kanaal van SMS in Campagne te vormen
 feature: SMS
 role: User, Developer, Admin
+level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 26%
@@ -16,7 +17,7 @@ ht-degree: 26%
 
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
-1. Een externe account die een connector en type bericht opgeeft.
+1. Een extern account met een connector en type bericht.
 
    Merk op dat de erfenisschakelaars nu verouderd zijn. Afgeschafte mogelijkheden zijn nog steeds beschikbaar, maar ze zullen niet verder worden verbeterd of ondersteund. Meer informatie vindt u [op deze pagina](../../rn/using/deprecated-features.md).
 
@@ -26,7 +27,7 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 >
 > Voor de leveringen van SMS, zou de typologie een specifieke affiniteit van SMS moeten gebruiken die in **wordt gecreeerd één** specifieke container van de toepassingsserver. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
-## Een SMPP-externe account maken {#creating-an-smpp-external-account}
+## Maak een extern SMPP-account aan {#creating-an-smpp-external-account}
 
 >[!IMPORTANT]
 >
@@ -38,11 +39,11 @@ Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze
 Hiervoor voert u de volgende stappen uit:
 
 1. Klik in het knooppunt **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** van de structuur op het pictogram **[!UICONTROL New]** .
-1. Bepaal het accounttype als **Verpletterend**, het kanaal als **Mobiel (SMS)**, en de leveringswijze als **bulklevering**.
+1. Definieer het accounttype als **Routing**, het kanaal als **mobiel (sms)** en de bezorgingsmodus als **bulklevering**.
 
    ![](assets/extended_smpp_create_account.png)
 
-1. Schakel het selectievakje **[!UICONTROL Enabled]** in.
+1. Vink het **[!UICONTROL Enabled]** vakje aan.
 1. Selecteer op het tabblad **[!UICONTROL Mobile]** **[!UICONTROL Extended generic SMPP]** in de vervolgkeuzelijst **[!UICONTROL Connector]** .
 
    ![](assets/extended_smpp_connector.png)
@@ -211,9 +212,9 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
-   <td> I </td> 
+   <td> Ik </td> 
    <td> Y </td> 
-   <td> i </td> 
+   <td> Ik </td> 
    <td> y </td> 
   </tr> 
   <tr> 
@@ -303,7 +304,7 @@ Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparat
 
 U kunt **data_codings** verklaren en het coderen dwingen indien nodig: om dit te doen, één enkele het coderen in de lijst specificeren.
 
-* Wanneer geen afbeelding van coderingen wordt bepaald, neemt de schakelaar een generisch gedrag over:
+* Wanneer er geen toewijzing van coderingen is gedefinieerd, neemt de connector een algemeen gedrag aan:
 
    * Er wordt geprobeerd gsm-codering te gebruiken waaraan de waarde **data_coding = 0** wordt toegewezen.
    * Als gsm-codering mislukt, wordt **UCS2** -codering gebruikt waaraan de waarde **data_coding = 8** wordt toegewezen.
@@ -328,11 +329,11 @@ Wanneer een abonnee op een SMS-bericht reageert dat via Adobe Campaign naar hem 
 
 Voor elk sleutelwoord, specificeer een korte code, die een aantal is dat gewoonlijk wordt gebruikt om leveringen te verzenden en als afzendernaam zal dienen, dan ga het bericht in dat naar de abonnee zal worden verzonden.
 
-U kunt ook een handeling koppelen aan uw automatische reactie: **[!UICONTROL Send to quarantine]** of **[!UICONTROL Remove from quarantine]** . Bijvoorbeeld, als een ontvanger het sleutelwoord &quot;STOP&quot;verzendt, zullen zij automatisch een unsubscription bevestiging ontvangen en naar quarantaine verzonden.
+Je kunt ook een actie koppelen aan je automatische reactie: **[!UICONTROL Send to quarantine]** of **[!UICONTROL Remove from quarantine]**. Als een ontvanger bijvoorbeeld het trefwoord &quot;STOP&quot; verzendt, ontvangt hij automatisch een bevestiging van de uitschrijving en wordt hij in quarantaine geplaatst.
 
 ![](assets/extended_smpp_reply.png)
 
-Als u de handeling **[!UICONTROL Remove from quarantine]** koppelt aan een automatische reactie, worden de ontvangers die het overeenkomstige trefwoord verzenden automatisch uit quarantaine verwijderd.
+Als u de **[!UICONTROL Remove from quarantine]** actie koppelt aan een automatisch antwoord, worden de ontvangers die het bijbehorende trefwoord verzenden, automatisch uit quarantaine verwijderd.
 
 Ontvangers worden vermeld in de tabel **[!UICONTROL Non deliverables and addresses]** die beschikbaar is via het menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** .
 
@@ -358,9 +359,9 @@ Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen wa
 
 Om het inheemse leveringsmalplaatje te houden, adviseren wij dat u het dupliceert en dan het vormt.
 
-In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van berichten via de SMPP-account die eerder is ingeschakeld. Dit doet u als volgt:
+In het onderstaande voorbeeld maken we een sjabloon om berichten af te leveren via het SMPP-account dat eerder is ingeschakeld. Dit doet u als volgt:
 
-1. Ga naar het knooppunt **[!UICONTROL Delivery templates]** .
+1. Ga naar het **[!UICONTROL Delivery templates]** knooppunt.
 1. Klik met de rechtermuisknop op de sjabloon **[!UICONTROL Send to mobiles]** en selecteer **[!UICONTROL Duplicate]** .
 
    ![](assets/s_user_mobile_template_change_01.png)

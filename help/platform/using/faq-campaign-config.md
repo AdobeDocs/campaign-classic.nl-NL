@@ -5,12 +5,13 @@ description: Veelgestelde vragen over Campaign Classic
 feature: Troubleshooting, Application Settings
 audience: platform
 content-type: reference
+level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 72%
+ht-degree: 70%
 
 ---
 
@@ -28,7 +29,7 @@ De Adobe Campaign-gebruikersinterface is beschikbaar in vier talen: Engels, Fran
 
 Voor het Engels kunt u bij de installatie van Campaign Engels voor de VS of Engels voor het VK selecteren, die verschillende datumnotaties en tijdnotaties hebben. Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie over deze verschillen.
 
-## Kan ik Campaign Classic met andere Adobe oplossingen gebruiken? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## Kan ik Campaign Classic gebruiken met andere Adobe-oplossingen? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 U kunt de leveringsfuncties en de functies voor geavanceerd campagnebeheer van Adobe Campaign combineren met een reeks oplossingen die u helpen uw gebruikerservaring aan te passen.
 
@@ -42,7 +43,7 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de [ Gids van de Beste praktijken van de Levering van de Adobe de Beste van de Praktijk van de Levering ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
+Naast de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
@@ -86,7 +87,7 @@ Nadat u zich hebt aangemeld, gaat u naar **[!UICONTROL File]** > **[!UICONTROL C
 
 ![](assets/faq_soft_cache.png)
 
-Als dit nog steeds niet helpt, probeert u de hard cache te wissen door de onderstaande stappen uit te voeren.
+Als dit nog steeds niet helpt, probeert u de Harde cache te wissen door de onderstaande stappen uit te voeren.
 
 ## Hoe te om het Geheime voorgeheugen Duidelijk uit te voeren wanneer de kwesties machine-specifiek of gebruiker-specifiek zijn? {#perform-hard-cache-clear}
 
