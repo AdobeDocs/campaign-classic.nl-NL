@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -36,11 +36,11 @@ Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat 
 
 >[!AVAILABILITY]
 >
-> De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
+> De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, moeten de integratie van de Campagne met de oplossingen en apps van Adobe nu op de referentie van Server-aan-Server van OAuth vertrouwen. </br>
 >
-> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken.</br>
+> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](oauth-technical-account.md) zullen tot 30 juni, 2025 blijven werken.</br>
 >
-> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan OAuth.
+> * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of integratie met Experience Cloud Triggers, zullen ze tot 30 juni 2025 blijven werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan OAuth.
 
 ## Een Adobe Analytics-productprofiel maken {#analytics-product-profile}
 
@@ -84,7 +84,7 @@ Voor meer informatie over de profielen van het Product, verwijs naar de [ docume
 
 1. Voor de **[!UICONTROL Dimensions]** mogelijkheid voegt u de **[!UICONTROL Dimensions]** toe die nodig is voor toekomstige configuratie.
 
-   Zorg ervoor dat de gekozen Dimensionen overeenkomen met de instellingen die in de externe account moeten worden geconfigureerd en lijn deze uit met het corresponderende eVars-nummer van Adobe Analytics.
+   Zorg ervoor dat de gekozen afmetingen overeenkomen met de afmetingen die in de externe account moeten worden geconfigureerd en lijn uit met het corresponderende eVars-nummer van Adobe Analytics.
 
 1. Voeg voor de functie **[!UICONTROL Report Suite Tools]** de volgende machtigingen toe:
 
@@ -114,4 +114,4 @@ Verwijs naar [ deze pagina ](oauth-technical-account.md#oauth-service) voor de g
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa) {target="_blank"} te werken.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} te werken.
