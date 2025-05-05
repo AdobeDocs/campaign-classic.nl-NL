@@ -24,7 +24,7 @@ Afhankelijk van uw aanbieding kan de optimalisatie van de campagne worden opgeno
 
 >[!NOTE]
 >
->Meer over de Optimalisering van de Campagne voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html) {target=_blank}.
+>Meer over de Optimalisering van de Campagne voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target=_blank} .
 
 <!--
 

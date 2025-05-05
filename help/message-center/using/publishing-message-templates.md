@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Sjabloonpublicatie {#template-publication}
 
-Wanneer het [ berichtmalplaatje ](../../message-center/using/creating-the-message-template.md) op de controleinstantie wordt gecreeerd volledig is en zodra u [ ](../../message-center/using/testing-message-templates.md) het hebt getest, kunt u het publiceren. Dit proces zal het op alle uitvoeringsinstanties ook publiceren.
+Wanneer het [ berichtmalplaatje ](../../message-center/using/creating-the-message-template.md) op de controleinstantie wordt gecreeerd volledig is en zodra u [&#128279;](../../message-center/using/testing-message-templates.md) het hebt getest, kunt u het publiceren. Dit proces zal het op alle uitvoeringsinstanties ook publiceren.
 
 De publicatie laat u automatisch **twee berichtmalplaatjes** op de uitvoeringsinstanties creëren, die u zullen toestaan om berichten te verzenden verbonden aan **gebeurtenissen in real time** en **partijgebeurtenissen**.
 

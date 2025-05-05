@@ -157,7 +157,7 @@ PostgreSQL biedt geen eenvoudige manier om een online tabel opnieuw samen te ste
 
 Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. De volgende SQL laat u twee nieuwe functies creëren: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kunnen worden gebruikt om noodzakelijke DDL te produceren om een lijst te ontspannen.
 
-* Met de eerste functie kunt u (** _tmp** hier) een werktabel maken die een kopie is van de oorspronkelijke tabel.
+* Met de eerste functie kunt u (**&#x200B; _tmp** hier) een werktabel maken die een kopie is van de oorspronkelijke tabel.
 * De tweede functie verwijdert vervolgens de oorspronkelijke tabel en wijzigt de naam van de werktabel en de bijbehorende indexen.
 * Het gebruik van twee functies in plaats van één betekent dat als de eerste functie mislukt, u niet het risico loopt de oorspronkelijke tabel te verwijderen.
 

@@ -25,7 +25,7 @@ In deze sectie worden de belangrijkste beginselen en aanbevolen procedures besch
 * Ontwerp richtend werkschema&#39;s, zie [ richtend werkschema&#39;s ](#targeting-workflows)
 * De werkschema&#39;s van het gebruik om een campagne uit te voeren, zie [ werkschema&#39;s van de Campagne ](#campaign-workflows)
 * Toegang en creeer technische werkschema&#39;s, zie [ Technische werkschema&#39;s ](#technical-workflows)
-* Gebruik malplaatjes om werkschema&#39;s tot stand te brengen, zie {de malplaatjes van het 0} Werkschema ](#workflow-templates)[
+* Gebruik malplaatjes om werkschema&#39;s tot stand te brengen, zie {de malplaatjes van het 0} Werkschema [&#128279;](#workflow-templates)
 
 ## Een nieuwe workflow maken {#creating-a-new-workflow}
 
@@ -82,7 +82,7 @@ Het diagram maken
 
 >[!CAUTION]
 >
->U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **** werkschema&#39;s dupliceren. Voor meer informatie, zie [ werkschema&#39;s ](#duplicating-workflows) dupliceren.
+>U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **&#x200B;**&#x200B;werkschema&#39;s dupliceren. Voor meer informatie, zie [ werkschema&#39;s ](#duplicating-workflows) dupliceren.
 
 U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen:
 

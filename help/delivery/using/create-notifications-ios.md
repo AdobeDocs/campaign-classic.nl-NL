@@ -48,7 +48,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    >[!NOTE]
    >
-   >De **wijze van de Duw van 0} Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
+   >De **wijze van de Duw van 0&rbrace; Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
 1. Voer in het veld **[!UICONTROL Title]** het label in van de titel die u wilt weergeven in de lijst met meldingen die beschikbaar is in het meldingscentrum.
 

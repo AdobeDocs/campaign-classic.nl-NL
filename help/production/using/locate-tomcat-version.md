@@ -56,7 +56,7 @@ Voer de onderstaande stappen uit om de versie van ingesloten Tomcat in een exemp
 
 1. Als het bestand zich op een servercomputer bevindt, verwijdert u de tijdelijke bestanden die u hebt gemaakt.
 
-Als voorbeeld, bevat het *dossier 0} ServerInfo.properties voor Adobe Campaign de volgende informatie, die op Tomcat v11.X wijst:*
+Als voorbeeld, bevat het *dossier 0&rbrace; ServerInfo.properties voor Adobe Campaign de volgende informatie, die op Tomcat v11.X wijst:*
 
 *`server.info=Apache Tomcat/11.X`*
 

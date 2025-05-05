@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Pakketten installeren met Linux {#installing-packages-with-linux}
 
-Adobe Campaign komt met het **pakket 0} nlserver {dat de binaire getallen en configuratiedossiers voor een bepaalde versie bevat.**
+Adobe Campaign komt met het **pakket 0&rbrace; nlserver &lbrace;dat de binaire getallen en configuratiedossiers voor een bepaalde versie bevat.**
 
 Met de installatieopdrachten kunt u:
 
@@ -93,7 +93,7 @@ nlserver restart mta@<instance-name>
 
 Voer de volgende stappen uit om Adobe Campaign op een Debian 64-bits besturingssysteem te installeren:
 
-1. Get the Adobe Campaign package. De naam van het dossier is **nlserver6-v7-XXXX-linux-2.6-amd64.deb**, waar **** het Adobe Campaign bouwstijlaantal is.
+1. Get the Adobe Campaign package. De naam van het dossier is **nlserver6-v7-XXXX-linux-2.6-amd64.deb**, waar **&#x200B;**&#x200B;het Adobe Campaign bouwstijlaantal is.
 
    >[!CAUTION]
    >
@@ -141,7 +141,7 @@ De volgende omgevingsvariabelen moeten correct worden gedefinieerd.
 
 Bepaalde combinaties vereisen wijzigingen in de omgeving die wordt gebruikt voor het uitvoeren van Adobe Campaign. Een specifiek dossier (`/usr/local/neolane/nl6/customer.sh`) kan worden gecreeerd en worden uitgegeven om wijzigingen toe te voegen specifiek voor de milieu van Adobe Campaign.
 
-Indien noodzakelijk, geef het {**dossier 0} customer.sh uit gebruikend het {** bevel 2} vi customer.sh en pas de configuratie aan of voeg ontbrekende lijnen toe:****
+Indien noodzakelijk, geef het {**dossier 0} customer.sh uit gebruikend het {** bevel 2} vi customer.sh en pas de configuratie aan of voeg ontbrekende lijnen toe:**&#x200B;**
 
 * Voor de client Oracle:
 

@@ -49,7 +49,7 @@ Selecteer de database-engine in de vervolgkeuzelijst.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-De gesteunde gegevensbestanden zijn vermeld in de matrijs van de Verenigbaarheid van de Campagne [ ](../../rn/using/compatibility-matrix.md).
+De gesteunde gegevensbestanden zijn vermeld in de matrijs van de Verenigbaarheid van de Campagne [&#128279;](../../rn/using/compatibility-matrix.md).
 
 Identificeer de server en kies het type van verrichting om uit te voeren. In dit geval, **[!UICONTROL Create or recycle a database]**.
 

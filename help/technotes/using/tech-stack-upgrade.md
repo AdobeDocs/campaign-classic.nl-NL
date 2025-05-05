@@ -23,7 +23,7 @@ Voor veiligheidsredenen, moet u [ de recentste Bouwstijl van de Campagne ](#ac-u
 
 >[!NOTE]
 >
->Voor om het even welke vragen over deze veranderingen, de Zorg van de Klant van de Adobe [ ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [ verbetering FAQ van de Bouwstijl ](../../platform/using/faq-build-upgrade.md).
+>Voor om het even welke vragen over deze veranderingen, de Zorg van de Klant van de Adobe [&#128279;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [ verbetering FAQ van de Bouwstijl ](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Verbetering van campagne-build {#ac-upgrade}

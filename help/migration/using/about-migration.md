@@ -36,7 +36,7 @@ De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorg
 * Het migratieproces moet door deskundige gebruikers worden uitgevoerd. U moet door minstens een gegevensbestanddeskundige, een systeembeheerder en een toepassingsontwikkelaar van Adobe Campaign worden bijgestaan.
 * Controleer voordat u de migratie start of de systemen en systeemonderdelen die u gebruikt compatibel zijn met versie 7. [Meer informatie](../../rn/using/compatibility-matrix.md).
 * Als u Adobe Campaign Cloud Messaging (mid-sourcing implementatie) gebruikt, neemt u contact op met de klantenservice van de Adobe voordat u begint.
-* Alvorens een migratieproces te beginnen, moet u **** file uw gegevens.
+* Alvorens een migratieproces te beginnen, moet u **&#x200B;**&#x200B;file uw gegevens.
 * Het migratieproces kan enkele dagen duren.
 * Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en gegevensintegriteit in de database te behouden. Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
 

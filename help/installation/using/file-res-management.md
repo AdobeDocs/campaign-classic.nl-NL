@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Gebruik het **uploadWhiteList** attribuut om de dossiertypes te beperken beschikbaar voor upload op de server van Adobe Campaign.
 
-Dit attribuut is beschikbaar binnen het **element 0} dataStore {van het** serverConf.xml **dossier.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Dit attribuut is beschikbaar binnen het **element 0&rbrace; dataStore &lbrace;van het** serverConf.xml **dossier.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
 De standaardwaarde van dit kenmerk is **.+** en laat u om het even welk dossiertype uploaden.
 

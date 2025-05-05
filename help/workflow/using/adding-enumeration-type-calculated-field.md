@@ -57,7 +57,7 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Bepaal de **Source** en **3} waarden van de Bestemming: de bestemmingswaarde maakt het vraagresultaat gemakkelijker te lezen.** Deze vraag zou ontvankelijk geslacht moeten terugkeren en het resultaat zal of 0, 1, of 2 zijn.
+   Bepaal de **Source** en **3&rbrace; waarden van de Bestemming: de bestemmingswaarde maakt het vraagresultaat gemakkelijker te lezen.** Deze vraag zou ontvankelijk geslacht moeten terugkeren en het resultaat zal of 0, 1, of 2 zijn.
 
    Voor elke &quot;bron-bestemming&quot;lijn die moet worden ingegaan, klik **[!UICONTROL Add]** in **[!UICONTROL List of enumeration values]**:
 

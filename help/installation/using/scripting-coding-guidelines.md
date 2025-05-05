@@ -111,7 +111,7 @@ De volledige entiteit wordt geladen door het scherm, kunt u hen in kolomdefiniti
 
 Het is aan te raden een Captcha toe te voegen op openbare aanlandingspagina&#39;s/abonnementspagina&#39;s. Helaas is het niet eenvoudig om een captcha toe te voegen aan DCE-pagina&#39;s (Digital Content Editor). We tonen u hoe u een v5-captcha of een Google reCAPTCHA toevoegt.
 
-De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U zult a **activiteit 0} van het Manuscript {en a** Test **moeten toevoegen.**
+De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U zult a **activiteit 0&rbrace; van het Manuscript &lbrace;en a** Test **moeten toevoegen.**
 
 ### Personalization-blok
 

@@ -40,7 +40,7 @@ U kunt een ontvanger in dezelfde map kopiëren door met de rechtermuisknop op de
 
 ## Ontvangers verwijderen {#deleting-recipients}
 
-Als u ontvangers wilt verwijderen, verplaatst u ze naar een specifieke map en wist u de inhoud van deze map. Het wordt sterk geadviseerd **niet de **[!UICONTROL Delete]**optie in dit geval te gebruiken.**
+Als u ontvangers wilt verwijderen, verplaatst u ze naar een specifieke map en wist u de inhoud van deze map. Het wordt sterk geadviseerd **niet de &#x200B;** [!UICONTROL Delete]&#x200B;**optie in dit geval te gebruiken.**
 
 Als u een map wilt leegmaken, gebruikt u het menu **[!UICONTROL Actions > Purge folder]** . Dit menu wordt geopend door met de rechtermuisknop op de gewenste map te klikken.
 

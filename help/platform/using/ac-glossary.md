@@ -631,7 +631,7 @@ Leer meer over [ milieu&#39;s van de Aanbieding ](../../interaction/using/fundam
 
 *context: De Interactie van de Campagne*
 
-Het Levende milieu van de Aanbieding is verbonden met een milieu van het Ontwerp van de Campagne ****. Het bevat read-only aanbiedingen de waarvan inhoud en geschiktheid via het **milieu van het Ontwerp** zijn goedgekeurd. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
+Het Levende milieu van de Aanbieding is verbonden met een milieu van het Ontwerp van de Campagne **&#x200B;**. Het bevat read-only aanbiedingen de waarvan inhoud en geschiktheid via het **milieu van het Ontwerp** zijn goedgekeurd. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
 
 Leer meer over [ Levende milieu&#39;s van de Aanbieding ](../../interaction/using/fundamental-principles.md).
 +++
@@ -912,7 +912,7 @@ In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn
 Leer meer over [ Beheer SFTP ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
-+++**de dienstenactiviteit van het Abonnement van 0}**
++++**de dienstenactiviteit van het Abonnement van 0&rbrace;**
 
 Met de workflowactiviteit Subscription Services kunt u een abonnement op een informatieservice maken of verwijderen voor de bevolking die in de overgang is opgegeven.
 

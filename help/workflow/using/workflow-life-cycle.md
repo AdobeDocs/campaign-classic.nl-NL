@@ -31,7 +31,7 @@ De workflowcyclus bestaat uit drie hoofdstappen.
 
   Een werkstroom is &#39;voltooid&#39; wanneer er geen taken meer worden uitgevoerd of wanneer een operator de instantie expliciet heeft gestopt.
 
-Bijvoorbeeld, worden het **Begin** en **Levering** activiteiten geschetst terwijl de **5} activiteit van de Goedkeuring {in het werkschema hieronder knippert.**
+Bijvoorbeeld, worden het **Begin** en **Levering** activiteiten geschetst terwijl de **5&rbrace; activiteit van de Goedkeuring &lbrace;in het werkschema hieronder knippert.**
 
 ![](assets/new-workflow-6.png)
 

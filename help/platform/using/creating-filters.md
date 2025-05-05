@@ -28,7 +28,7 @@ Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer
 
 >[!NOTE]
 >
->Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters) {target=_blank}.
+>Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank} .
 
 
 <!--

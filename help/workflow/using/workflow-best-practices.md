@@ -113,7 +113,7 @@ Met de Workflow HeatMap kunnen beheerders van het Adobe Campaign-platform de bel
 
 >[!CAUTION]
 >
->U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **** werkschema&#39;s dupliceren. Voor meer informatie, zie [ het Dupliceren werkschema&#39;s ](building-a-workflow.md#duplicating-workflows).
+>U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **&#x200B;**&#x200B;werkschema&#39;s dupliceren. Voor meer informatie, zie [ het Dupliceren werkschema&#39;s ](building-a-workflow.md#duplicating-workflows).
 
 ### Naam van de activiteit {#name-of-the-activity}
 

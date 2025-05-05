@@ -165,12 +165,12 @@ Het campagnemalplaatje kan alleen beschikbaar worden voor lokale entiteiten als 
 
 Voer de volgende stappen uit:
 
-1. In de **[!UICONTROL Navigation]** sectie op de **2} pagina van Campagnes {, klik de **[!UICONTROL Campaign packages]**verbinding.**
+1. In de **[!UICONTROL Navigation]** sectie op de **2&rbrace; pagina van Campagnes &lbrace;, klik de &#x200B;** [!UICONTROL Campaign packages]&#x200B;**verbinding.**
 1. Klik op de knop **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. De sectie boven het venster laat u het [ ](#creating-a-local-campaign-template) eerder gespecificeerde malplaatje van het campagnepakket selecteren.
+1. De sectie boven het venster laat u het [&#128279;](#creating-a-local-campaign-template) eerder gespecificeerde malplaatje van het campagnepakket selecteren.
 
    Standaard wordt de sjabloon **[!UICONTROL New local campaign package (localEmpty)]** gebruikt voor lokale campagnes.
 

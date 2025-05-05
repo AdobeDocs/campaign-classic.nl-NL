@@ -28,7 +28,7 @@ Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 * **[!UICONTROL Notification message]**, automatisch afgehandeld door de FCM SDK.
   <br> FCM geeft automatisch het bericht weer op de apparaten van uw gebruikers namens de client-app. Meldingsberichten bevatten een vooraf gedefinieerde set parameters en opties, maar kunnen nog steeds verder worden aangepast met aangepaste toepassingsvariabelen.
 
-Voor meer informatie over de berichttypes van het Overseinen van de Wolk van de Wolk van de Vuurbasis, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages) {target="_blank"}.
+Voor meer informatie over de berichttypes van het Overseinen van de Wolk van de Wolk van de Vuurbasis, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"} .
 
 
 ## Een gegevensbericht maken {#creating-data-message}
@@ -68,7 +68,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
 
 ## Een meldingsbericht maken {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om een de duwbericht van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources) tot stand te brengen {target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om een de duwbericht van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"} tot stand te brengen .
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** .
 
@@ -99,7 +99,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
    * **[!UICONTROL Tag]**: stel de id in die wordt gebruikt om bestaande meldingen in de meldingslade te vervangen.
    * **[!UICONTROL Click action]**: Stel de actie in die aan een gebruiker is gekoppeld, en klik op het bericht.
 
-   Voor meer op **[!UICONTROL Notification options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification) {target="_blank"}.
+   Voor meer op **[!UICONTROL Notification options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"} .
 
    ![](assets/nmac_android_8.png)
 
@@ -112,7 +112,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
    * **[!UICONTROL Notification Priority]**: stel de prioriteitsniveaus van uw melding in op de standaardwaarde, minimum, laag of hoog. Voor meer op dit, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Visibility]**: stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. Voor meer op dit, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   Voor meer op **[!UICONTROL HTTP v1 additional options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification) {target="_blank"}.
+   Voor meer op **[!UICONTROL HTTP v1 additional options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"} .
 
    ![](assets/nmac_android_9.png)
 

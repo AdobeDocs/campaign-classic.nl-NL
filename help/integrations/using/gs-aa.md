@@ -35,4 +35,4 @@ Overweeg de volgende instructies en voorwaarden voordat u begint met het werken 
 
 Om deze integratie toe te laten, moet u uw Adobe technische rekening zoals die in [ wordt gedetailleerd deze pagina ](oauth-technical-account.md) tot stand brengen.
 
-Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa) {target="_blank"} te werken.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}  te werken.

@@ -23,7 +23,7 @@ De belangrijkste stappen zijn:
 1. [De iOS-service configureren](#configuring-ios-service)
 1. [De mobiele iOS-app integreren in de campagne](#creating-ios-app)
 
-U zult dan een duw bericht voor de apparaten van iOS ](create-notifications-ios.md) kunnen tot stand brengen.[
+U zult dan een duw bericht voor de apparaten van iOS [&#128279;](create-notifications-ios.md) kunnen tot stand brengen.
 
 ## Externe iOS-account configureren {#configuring-external-account-ios}
 

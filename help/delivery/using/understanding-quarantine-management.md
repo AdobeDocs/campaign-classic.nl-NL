@@ -73,7 +73,7 @@ Voor elk adres is de volgende informatie beschikbaar:
 >
 >Eind van Jaar 1: (1 &#42; 0.33)/(1+0.5)=22%.
 >
-Eind van Jaar 2: (1.22 &#42; 0.33) + 0.33)/(1.5+0.75)=32.5%.
+>Eind van Jaar 2: (1.22 &#42; 0.33) + 0.33)/(1.5+0.75)=32.5%.
 
 ### Identificeer quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -108,7 +108,7 @@ Als een gebruiker een e-mail als spam ([ kwalificeert koppelt lijn ](https://exp
 
 >[!NOTE]
 >
-Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
+>Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
 
 In de lijst van quarantined adressen (zie [ het identificeren van quarantined adressen voor het volledige platform ](#identifying-quarantined-addresses-for-the-entire-platform)), wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst.
 
@@ -144,7 +144,7 @@ De status verandert vervolgens in **[!UICONTROL Valid]** .
 
 >[!IMPORTANT]
 >
-Ontvangers met een adres in de status **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+>Ontvangers met een adres in de status **[!UICONTROL Quarantine]** of **[!UICONTROL Denylisted]** worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
 ### Handmatige updates {#unquarantine-manual}
 
@@ -291,13 +291,13 @@ Tijdens de leveringsanalyse, worden alle apparaten die van het doel worden uitge
 
 >[!NOTE]
 >
-Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
+>Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
 >
-* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden mislukt **[!UICONTROL Unreachable]** , wordt opnieuw geprobeerd.
-* Verbinding die tijdens een levering verloren gaat: zachte fout, reden van mislukking **[!UICONTROL Refused]**, wordt opnieuw geprobeerd wordt uitgevoerd.
-* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, reden van mislukking **[!UICONTROL Refused]**; opnieuw proberen wordt niet uitgevoerd.
+>* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden mislukt **[!UICONTROL Unreachable]** , wordt opnieuw geprobeerd.
+>* Verbinding die tijdens een levering verloren gaat: zachte fout, reden van mislukking **[!UICONTROL Refused]**, wordt opnieuw geprobeerd wordt uitgevoerd.
+>* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, reden van mislukking **[!UICONTROL Refused]**; opnieuw proberen wordt niet uitgevoerd.
 >
-Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt de status van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]** .
+>Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt de status van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]** .
 
 **voor Android V2**
 
@@ -516,7 +516,7 @@ Het quarantainemechanisme voor SMS-berichten is over het algemeen hetzelfde als 
 
 >[!NOTE]
 >
-De **[!UICONTROL Delivery log qualification]** lijst is niet op de **Uitgebreide generische schakelaar SMPP** van toepassing.
+>De **[!UICONTROL Delivery log qualification]** lijst is niet op de **Uitgebreide generische schakelaar SMPP** van toepassing.
 
 <table> 
  <tbody> 
@@ -575,9 +575,9 @@ Alvorens een nieuw type van fout wordt gekwalificeerd, wordt de mislukkingsreden
 
 >[!NOTE]
 >
-De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [ de mislukkingstypes en redenen van de Levering ](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [ de mislukkingstypes en redenen van de Levering ](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
-Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
+>Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
 
@@ -602,7 +602,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-  Door gebrek, haalt regex **err:** gebied zoals die door de **wordt bepaald Bijlage B** sectie van de **4} SMPP 3.4 specificatie**.
+  Door gebrek, haalt regex **err:** gebied zoals die door de **wordt bepaald Bijlage B** sectie van de **4&rbrace; SMPP 3.4 specificatie**.
 
 * Alles wat na het buissymbool (|) komt wordt slechts getoond in de **[!UICONTROL First text]** kolom van de **[!UICONTROL Delivery log qualification]** lijst. Deze inhoud wordt altijd vervangen door **#MESSAGE#** nadat het bericht is genormaliseerd. Dit proces voorkomt het hebben van veelvoudige ingangen voor gelijkaardige fouten en is het zelfde als voor e-mail. Voor meer op dit, zie [ de postkwalificatie van de Stuiteren ](understanding-delivery-failures.md#bounce-mail-qualification).
 

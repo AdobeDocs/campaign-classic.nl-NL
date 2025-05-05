@@ -282,7 +282,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Met het veld **[!UICONTROL Height]** kunt u de hoogte van de streepjescode configureren zonder de breedte te wijzigen door de hoeveelheid ruimte tussen de streepjes te wijzigen.
 
-   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **** wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
+   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **&#x200B;**&#x200B;wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
 
    >[!NOTE]
    >

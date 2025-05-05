@@ -20,8 +20,8 @@ ht-degree: 5%
 De volgende activiteiten zijn databaseactiviteiten: hun voornaamste taak is de coördinatie van de andere activiteiten.
 
 * **Begin en Eind**: sta u toe om de begin en eindpunten van een werkschema te tonen. Verwijs naar [ Begin en eind ](start-and-end.md).
-* **Fork**: sta u toe om alle uitgaande overgangen te activeren. Verwijs naar de [ 1} sectie van het Fork {.](fork.md)
-* **Benoeming**: laat u op verscheidene die taken wachten tezelfdertijd worden begonnen te worden voltooid alvorens te werk te gaan. Verwijs naar de [ 1} sectie van het Fork {.](fork.md)
+* **Fork**: sta u toe om alle uitgaande overgangen te activeren. Verwijs naar de [ 1&rbrace; sectie van het Fork &lbrace;.](fork.md)
+* **Benoeming**: laat u op verscheidene die taken wachten tezelfdertijd worden begonnen te worden voltooid alvorens te werk te gaan. Verwijs naar de [ 1&rbrace; sectie van het Fork &lbrace;.](fork.md)
 * **Planner**: laat u een programma van de werkschemauitvoering bepalen. Verwijs naar [ Planner ](scheduler.md).
 * **Test**: laat een overgang toe die op een testresultaat wordt gebaseerd. Verwijs naar [ Test ](test.md).
 * **wacht**: laat de uitgaande overgang na een bepaalde tijdgrens toe. Verwijs naar [ wachten ](wait.md).

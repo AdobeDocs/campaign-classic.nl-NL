@@ -383,7 +383,7 @@ In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek o
 
   Deze waarde kan voor elke levering worden overschreven.
 
-* Voor openbare middelen, is URL **https://** server **/res/** instantie ****waar **instantie**de naam van de volgende instantie is.
+* Voor openbare middelen, is URL **https://** server **/res/** instantie **&#x200B;**&#x200B;waar **instantie**&#x200B;de naam van de volgende instantie is.
 
 ### Afbeeldingsdetectie leveren {#delivery-image-detection}
 

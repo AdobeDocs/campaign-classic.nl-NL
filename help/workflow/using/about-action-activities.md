@@ -21,7 +21,7 @@ ht-degree: 2%
 * **de controle van de Levering**: laat u beginnen, pauzeren of een levering tegenhouden. Verwijs naar de [ controle van de Levering ](delivery-control.md) sectie.
 * **Ononderbroken levering**: laat u een levering van het scenario beginnen dat in de activiteit wordt gespecificeerd. Verwijs naar de [ Ononderbroken levering ](continuous-delivery.md) sectie.
 * **Terugkomende levering**: laat u een voorkomen van het leveringsmalplaatje binnen een campagne vormen. Verwijs naar [ Terugkomende levering ](recurring-delivery.md).
-* **de leveringen van het Kanaal van het Kanaal**: laat u een levering op het overeenkomstige kanaal vormen. Verwijs naar de [ leveringen van het Kanaal 1} sectie van het Kanaal.](cross-channel-deliveries.md)
+* **de leveringen van het Kanaal van het Kanaal**: laat u een levering op het overeenkomstige kanaal vormen. Verwijs naar de [ leveringen van het Kanaal 1&rbrace; sectie van het Kanaal.](cross-channel-deliveries.md)
 * **Lokale goedkeuring**: laat u goedkeuringen en het richten van berichten binnen een verdeelde marketing context (facultatieve module) uitvoeren. Verwijs naar [ Lokale goedkeuring ](local-approval.md).
 * **het laden van Gegevens (RDBMS)**: laat u tot een extern gegevensbestand toegang hebben om gegevens te krijgen. Verwijs naar de [ ladende Gegevens (RDBMS) ](data-loading-rdbms.md) sectie.
 * **Lading (SOAP)**: staat u toe om gegevens via een vraag van SOAP te verzamelen. Verwijs naar [ Lading (SOAP) ](loading-soap.md).

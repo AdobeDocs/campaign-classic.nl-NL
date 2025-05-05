@@ -25,4 +25,4 @@ Er zijn twee typen sjablonen:
 1. Vooraf gedefinieerde leveringssjablonen - De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruikers tot levering leiden gebruikend dit malplaatje, moeten zij eenvoudig de tekst of de inhoud van de HTML ingaan en dan het leveren; de andere keuzen zijn reeds bepaald door de beheerder.
 
 
-Leer hoe te om leveringsmalplaatjes in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates) tot stand te brengen en te gebruiken {target="_blank"}.
+Leer hoe te om leveringsmalplaatjes in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates){target="_blank"} tot stand te brengen en te gebruiken .

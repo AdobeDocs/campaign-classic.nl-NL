@@ -62,7 +62,7 @@ Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms:subscr
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via de _**key** kenmerk op de `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via de _&#x200B;**key** kenmerk op de `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 

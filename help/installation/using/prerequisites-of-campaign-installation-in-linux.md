@@ -150,13 +150,13 @@ Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto
 
 ### Oracle {#oracle}
 
-Haal de bibliotheekversie op voor 64-bits Debian, dat wil doen: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 of **** libclntsh.so.10.1.********
+Haal de bibliotheekversie op voor 64-bits Debian, dat wil doen: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 of **&#x200B;**&#x200B;libclntsh.so.10.1.**&#x200B;**&#x200B;**&#x200B;**
 
 U kunt een Linux RPM-pakket verkrijgen van Oracle Technology Network.
 
 >[!NOTE]
 >
->Als u de Oracle client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet goed is geconfigureerd, kunt u ontbrekende informatie toevoegen aan het **nl6/customer.sh** script Raadpleeg omgevingsvariabelen](../../installation/using/installing-packages-with-linux.md#environment-variables) voor meer informatie [hierover.
+>Als u de Oracle client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet goed is geconfigureerd, kunt u ontbrekende informatie toevoegen aan het **nl6/customer.sh** script Raadpleeg omgevingsvariabelen[&#128279;](../../installation/using/installing-packages-with-linux.md#environment-variables) voor meer informatie hierover.
 
 **Probleemoplossing en aanbevolen procedures**
 

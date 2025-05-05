@@ -33,7 +33,7 @@ Verschillende factoren kunnen de serverprestaties rechtstreeks beïnvloeden en h
 
 * De workflowuitvoering: het controleren van uw workflows is essentieel om problemen met de prestaties van het platform te voorkomen. Volg de vermelde richtlijnen [ in dit document ](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Als u verkiesbaar bent, kunt u hefboomwerking {de mogelijkheden van het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl) om uw platform te controleren, gebruikend [ prestaties controlerende ](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=nl) functies.[
+* Als u verkiesbaar bent, kunt u hefboomwerking &lbrace;de mogelijkheden van het Controlebord van de Campagne [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl) om uw platform te controleren, gebruikend [ prestaties controlerende ](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=nl) functies.
 
 ## Netwerkconfiguratie controleren {#network-config}
 

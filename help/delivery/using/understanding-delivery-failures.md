@@ -308,7 +308,7 @@ Voor meer bij stuiterende postkwalificatie, zie [ deze sectie ](#bounce-mail-qua
 >
 >Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)**-e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Deze ondertekent niet met **Afzender-id**, **DomainKeys** of **S/MIME**, tenzij anderszins opgegeven op Enhanced MTA-niveau.
 
-Voor op-gebouw installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, past de het overseinenserver van Adobe Campaign één enkele **regel van het beheer van 0} Domein op alle domeinen toe.**
+Voor op-gebouw installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, past de het overseinenserver van Adobe Campaign één enkele **regel van het beheer van 0&rbrace; Domein op alle domeinen toe.**
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 

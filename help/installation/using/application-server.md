@@ -25,11 +25,11 @@ Java Development Kit (JDK) is een software-ontwikkelingskit. Het is de basiscomp
 
 De dynamische generator van de Web-pagina gebruikt technologie JSP. Hiervoor wordt een Tomcat-engine (van Apache) in de toepassing opgenomen. Hiervoor is een JDK (Java Development Kit) vereist die is geïnstalleerd op alle servers waarop de Adobe Campaign-toepassing is geïnstalleerd.
 
-U moet eerst een JDK op de computers installeren waarop u wenst om de de toepassingsserver van Adobe Campaign in werking te stellen (**proces van het 0} nlserverWeb {) omdat het een servletcontainer, Apache Tomcat opneemt, die wordt gebruikt om dynamische Web-pagina&#39;s (rapporten, de vormen van het Web, enz.) te produceren.**
+U moet eerst een JDK op de computers installeren waarop u wenst om de de toepassingsserver van Adobe Campaign in werking te stellen (**proces van het 0&rbrace; nlserverWeb &lbrace;) omdat het een servletcontainer, Apache Tomcat opneemt, die wordt gebruikt om dynamische Web-pagina&#39;s (rapporten, de vormen van het Web, enz.) te produceren.**
 
 De toepassing is goedgekeurd voor de Uitrusting van de Ontwikkeling van Java (JDK) die door Oracle evenals voor **wordt ontwikkeld OpenJDK**.
 
-De gesteunde versies zijn gedetailleerd in de matrijs van de Verenigbaarheid van de Campagne [ ](../../rn/using/compatibility-matrix.md).
+De gesteunde versies zijn gedetailleerd in de matrijs van de Verenigbaarheid van de Campagne [&#128279;](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
@@ -58,7 +58,7 @@ Pas de volgende aanbevelingen toe wanneer u uw Java Development Kit installeert 
 
 Java Development Kit is platformspecifiek: voor elk besturingssysteem zijn afzonderlijke installatieprogramma&#39;s nodig.
 
-Om JDK te downloaden, verbind met [ website van het Oracle ](https://www.oracle.com/technetwork/java/javase/downloads/index.html) {target="_blank"}.
+Om JDK te downloaden, verbind met [ website van het Oracle ](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"} .
 
 >[!CAUTION]
 >

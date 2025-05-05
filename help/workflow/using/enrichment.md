@@ -178,7 +178,7 @@ Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1}.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
 
    Het aantal voorstellen dat beschikbaar is voor de voorvertoning is afhankelijk van de configuratie die wordt uitgevoerd in de verrijkingsactiviteit in plaats van een mogelijke configuratie die rechtstreeks in de levering wordt uitgevoerd.
 
@@ -200,7 +200,7 @@ Dit doet u als volgt:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1}.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
 
    >[!NOTE]
    >

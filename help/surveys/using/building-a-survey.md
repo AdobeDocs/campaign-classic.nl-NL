@@ -96,7 +96,7 @@ Bovendien moet de opslagplaats voor dit inputgebied a **[!UICONTROL Multiple val
 
 Er zijn twee soorten containers: standaard en vraag. De standaardcontainers worden gebruikt om paginalay-out en voorwaardelijke vertoning in een pagina te vormen. [Meer informatie](../../web/using/about-web-forms.md).
 
-Gebruik de container van de Vraag van de a **** om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
+Gebruik de container van de Vraag van de a **&#x200B;**&#x200B;om een vraag aan de pagina toe te voegen en de mogelijke antwoorden hieronder in de hiërarchie op te nemen. Antwoorden van gebruikers op vragen in dit type container kunnen worden geanalyseerd in rapporten.
 
 >[!CAUTION]
 >

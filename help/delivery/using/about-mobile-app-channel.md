@@ -29,7 +29,7 @@ Er zijn twee leveringskanalen beschikbaar:
 
   >[!IMPORTANT]
   >
-  >In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. De configuratie van uw lidmaatschapsservices voor Android-pushberichten moet mogelijk worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Leer meer in dit [ Adobe Campaign v8 technote ](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl) {target="_blank"}.
+  >In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. De configuratie van uw lidmaatschapsservices voor Android-pushberichten moet mogelijk worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Leer meer in dit [ Adobe Campaign v8 technote ](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"} .
 
 Voor deze twee kanalen zijn er twee leveringsactiviteiten in de campagneworkflows. Twee transactionele berichtmalplaatjes zijn ook beschikbaar voor transactieoverseinen.
 

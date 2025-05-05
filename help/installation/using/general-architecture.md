@@ -43,7 +43,7 @@ Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat
 
 >[!CAUTION]
 >
->Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het uitvoeren van de eerste vereisten voor de toepassingen van Adobe Campaign evenals het voldoen aan de matrijs van de Verenigbaarheid van de Campagne [ ](../../rn/using/compatibility-matrix.md) tussen componenten.
+>Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het uitvoeren van de eerste vereisten voor de toepassingen van Adobe Campaign evenals het voldoen aan de matrijs van de Verenigbaarheid van de Campagne [&#128279;](../../rn/using/compatibility-matrix.md) tussen componenten.
 
 ## Presentatielaag {#presentation-layer}
 

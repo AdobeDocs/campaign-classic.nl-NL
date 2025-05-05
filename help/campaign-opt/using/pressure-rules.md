@@ -300,7 +300,7 @@ Pas de volgende configuratiestappen toe:
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3} gebied van de Eigenschap.**
+1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3&rbrace; gebied van de Eigenschap.**
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 

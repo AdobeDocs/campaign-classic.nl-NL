@@ -1625,9 +1625,9 @@ Hier zijn de verschillende parameters van **mta** knooppunt. Dit is de configura
    <td> statServerAddress<br /> </td> 
    <td> Adres van de server van de leveringsstatistiek, die als wordt gegeven 
     &lt;dns or="" ip=""&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;port&gt; 
-       <code>]</code>. Zie 
+       <code>&rbrack;</code>. Zie 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coördinaten van de statistiekserver</a>. 
       <br /> 
      </td> 

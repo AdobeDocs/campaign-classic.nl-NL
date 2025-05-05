@@ -266,7 +266,7 @@ Zoals hierboven vermeld, zijn er twee verschillende soorten fouten:
 * synchrone antwoorden in de `SUBMIT_SM_RESP` die onmiddellijk plaatsvinden nadat het bericht naar het SMSC is verzonden
 * ontvangstbewijzen die veel later kunnen komen wanneer de mobiele telefoon het bericht ontving of wanneer uit het bericht timed. In dat geval wordt de fout gevonden in een SR.
 
-Wanneer een SR wordt ontvangen, kunnen de status en de fout in zijn `short_message` gebied (voorbeeld voor Bijlage B conformerende implementaties) worden gevonden. Het `short_message` gebied van PDU wordt vaak genoemd het **tekstgebied** aangezien het tekst in MT bevat. In geval van SR, bevat het technische informatie plus een subgebied genoemd **Tekst**. Deze 2 gebieden zijn verschillend en `short_message` bevat eigenlijk het **2} gebied van de Tekst {en andere informatie.**
+Wanneer een SR wordt ontvangen, kunnen de status en de fout in zijn `short_message` gebied (voorbeeld voor Bijlage B conformerende implementaties) worden gevonden. Het `short_message` gebied van PDU wordt vaak genoemd het **tekstgebied** aangezien het tekst in MT bevat. In geval van SR, bevat het technische informatie plus een subgebied genoemd **Tekst**. Deze 2 gebieden zijn verschillend en `short_message` bevat eigenlijk het **2&rbrace; gebied van de Tekst &lbrace;en andere informatie.**
 
 Adobe Campaign Classic-connectors (met uitzondering van Extended SMPP) gebruiken een gehard gedrag dat afhankelijk is van de geselecteerde provider. Algemene SMPP maakt alleen onderscheid tussen succes en fout, zonder detail. Het leveringslogboek kan bepaalde informatie bevatten die niet gegarandeerd is.
 
@@ -727,7 +727,7 @@ Met deze instelling kunt u slechts één TLV-optie per bericht toevoegen.
 
 Met deze functie kunt u snel tekst op de MO beantwoorden en per korte code naar de lijst van gewezen personen verzenden.
 
-Het **Sleutelwoord** en **Korte code** kolommen bepalen voorwaarden om het autoantwoord teweeg te brengen. Als beide velden overeenkomen, wordt de MO verzonden en wordt de aanvullende actie geactiveerd. Als u een jokerteken wilt opgeven, laat u het veld leeg. Trefwoorden komen overeen met het eerste alfanumerieke woord in de MO-tekst, waarbij leestekens en voorloopruimten worden genegeerd. Het betekent dat het **1} gebied van het Sleutelwoord {geen ruimten kan bevatten en één enkel woord moet zijn.**
+Het **Sleutelwoord** en **Korte code** kolommen bepalen voorwaarden om het autoantwoord teweeg te brengen. Als beide velden overeenkomen, wordt de MO verzonden en wordt de aanvullende actie geactiveerd. Als u een jokerteken wilt opgeven, laat u het veld leeg. Trefwoorden komen overeen met het eerste alfanumerieke woord in de MO-tekst, waarbij leestekens en voorloopruimten worden genegeerd. Het betekent dat het **1&rbrace; gebied van het Sleutelwoord &lbrace;geen ruimten kan bevatten en één enkel woord moet zijn.**
 
 Het **Trefwoord** plaatsen is een prefix. Als u bijvoorbeeld &quot;AD&quot; opgeeft, komt deze overeen met &quot;AD&quot;, &quot;ADAPT&quot; en &quot;ADOBE&quot;. Als u meerdere trefwoorden met een algemeen voorvoegsel hebt, moet u rekening houden met de volgorde, aangezien de trefwoorden van boven naar beneden worden verwerkt.
 

@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Als v7-gebruiker moet u ervoor zorgen dat Adobe Identity Management System (IMS) op uw systeem is ingeschakeld om verder te kunnen gaan. [Meer informatie](../../integrations/using/about-adobe-id.md).
 
-Zodra de Dienst van Identity Management van de Adobe (IMS) voor uw organisatie wordt toegelaten, kunt u levering van het ](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) verzoeken van het publiek van het Experience Cloud {target="_blank"} integratie met Campagne. [ Daartoe neemt u contact op met uw Adobe en verstrekt u de volgende informatie:
+Zodra de Dienst van Identity Management van de Adobe (IMS) voor uw organisatie wordt toegelaten, kunt u levering van het [&#128279;](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} verzoeken van het publiek van het Experience Cloud  integratie met Campagne.  Daartoe neemt u contact op met uw Adobe en verstrekt u de volgende informatie:
 
 <table> 
  <tbody> 

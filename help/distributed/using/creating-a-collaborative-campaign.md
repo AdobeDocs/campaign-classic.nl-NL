@@ -111,7 +111,7 @@ Om een campagne ter beschikking te stellen van lokale entiteiten moet de central
 
 Voer de volgende stappen uit:
 
-1. In de **[!UICONTROL Navigation]** sectie op de **2} pagina van Campagnes {, klik de **[!UICONTROL Campaign packages]**verbinding.**
+1. In de **[!UICONTROL Navigation]** sectie op de **2&rbrace; pagina van Campagnes &lbrace;, klik de &#x200B;** [!UICONTROL Campaign packages]&#x200B;**verbinding.**
 1. Klik op de knop **[!UICONTROL Create]**.
 1. In het gedeelte boven in het venster kunt u de sjabloon **[!UICONTROL New collaborative package (mutualizedEmpty)]** selecteren.
 1. Selecteer de referentiecampagne.

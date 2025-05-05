@@ -26,7 +26,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_recipients_1.png)
 
-1. Bepaal de volgende filtervoorwaarde aan doelontvanger die in het leveringslogboek bestaat. Kies **Ontvankelijke leveringslogboek (uitzending)** in de **3} kolom van de Uitdrukking {, kies** bestaan zoals **in de** 7} kolom van de Exploitant.****
+1. Bepaal de volgende filtervoorwaarde aan doelontvanger die in het leveringslogboek bestaat. Kies **Ontvankelijke leveringslogboek (uitzending)** in de **3&rbrace; kolom van de Uitdrukking {, kies** bestaan zoals **in de** 7} kolom van de Exploitant.**&#x200B;**
 
    ![](assets/query_recipients_2.png)
 

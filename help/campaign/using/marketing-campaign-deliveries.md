@@ -20,7 +20,7 @@ Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow
 
 Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
 
-![](assets/do-not-localize/how-to-video.png)[ ontdekt deze eigenschap in video ](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [ ontdekt deze eigenschap in video ](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 

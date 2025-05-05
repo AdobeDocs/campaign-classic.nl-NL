@@ -98,7 +98,7 @@ Van de cliëntconsole, bepaal de plaats van **E-mail die het gebruiken van mid-s
 
    Plaats het wachtwoord van de voorleggingsrekening: In **/Midden-sourcing/Access Management/Operators/** omslag, wordt de **middenti** exploitant gebruikt door de verre instantie voor voorlegging op midsourcingwijze. U moet een wachtwoord instellen voor deze operator en dit aan de beheerder van het verzendingsexemplaar geven.
 
-   De **optie van het 0} Midden-sourcingsplatform {leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
+   De **optie van het 0&rbrace; Midden-sourcingsplatform &lbrace;leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
 
 ## Multiplexing van de server voor midsourcing {#multiplexing-the-mid-sourcing-server}
 
@@ -125,7 +125,7 @@ Het is mogelijk dat een mid-sourcing-instantie wordt gedeeld door meerdere verze
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Start de module Web opnieuw met de volgende opdracht: ** web**.
+1. Start de module Web opnieuw met de volgende opdracht: **&#x200B; web**.
 
 U moet de instelling voor de server voor midsourcing wijzigen in het bestand serverConf.xml. De volgende lijn moet aan de &quot;Beheer van affiniteiten met IP adressen&quot;sectie, onder de bestaande lijn worden toegevoegd:
 
@@ -139,9 +139,9 @@ Het kenmerk &#39;@name&#39; moet de volgende regels in acht nemen:
 
 &#39;marketing_account_operator_name&#39; heeft betrekking op de interne naam van de mid-sourcingrekening die in het mid-sourcingexemplaar is gedeclareerd.
 
-&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
+&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
 
-&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` .
+&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` .
 
 U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden.
 

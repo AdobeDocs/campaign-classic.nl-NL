@@ -43,7 +43,7 @@ De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Camp
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> Banen op leveringen in campagnes </span> <br /> </td> 
-   <td> </span> <br /> 0} deliveryMgt<span class="uicontrol"> </td> 
+   <td> </span> <br /> 0&rbrace; deliveryMgt<span class="uicontrol"> </td> 
    <td> Deze workflow activeert de goedgekeurde leveringen en start de naverwerking van de serviceprovider voor een externe levering. Het verzendt ook goedkeuringsberichten en herinneringen.<br /> </td> 
   </tr> 
   <tr> 

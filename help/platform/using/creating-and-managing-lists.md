@@ -27,7 +27,7 @@ Lijsten worden gemaakt en beheerd via de koppeling **[!UICONTROL Lists]** op het
 
 >[!NOTE]
 >
->Meer over lijsten leren en hoe te om hen tot stand te brengen en te leiden, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences) {target=_blank}.
+>Meer over lijsten leren en hoe te om hen tot stand te brengen en te leiden, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank} .
 
 <!--
 Two types of lists are available in Adobe Campaign:

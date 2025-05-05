@@ -98,7 +98,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Het tabblad **[!UICONTROL Directory]** bevat informatie over de bestanden die moeten worden hersteld. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
-   Het gebruiken van **[!UICONTROL File collector]** is gedetailleerd in de [ 2} sectie van de inzamelaar van het Dossier {.](file-collector.md)
+   Het gebruiken van **[!UICONTROL File collector]** is gedetailleerd in de [ 2&rbrace; sectie van de inzamelaar van het Dossier &lbrace;.](file-collector.md)
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -123,7 +123,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md#step-2---source-file-selection) voor meer informatie.
 
-1. In de gespleten activiteit, specificeer de subsets om, volgens de **kolomwaarde van de Gebeurtenis** te creëren {.
+1. In de gespleten activiteit, specificeer de subsets om, volgens de **kolomwaarde van de Gebeurtenis** te creëren &lbrace;.
 
    De activiteit Splitsen wordt gedetailleerd beschreven in de sectie.
 

@@ -21,9 +21,9 @@ De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met het **Cen
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-![](assets/do-not-localize/v7.jpeg)[ de documentatie van de Campagne v7 ](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg) [ de documentatie van de Campagne v7 ](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

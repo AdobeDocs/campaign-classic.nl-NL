@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 > Deze stappen mogen alleen worden uitgevoerd door Hybride en On-premise implementaties.
 >
->Voor Gehoste en de implementaties van Managed Services van de Campagne, gelieve te contacteren ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team van de Zorg van de Klant van 0} Adobe.[
+>Voor Gehoste en de implementaties van Managed Services van de Campagne, gelieve te contacteren [&#128279;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team van de Zorg van de Klant van 0&rbrace; Adobe.
 
 De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie ondersteunt Adobe Identity Management Service (IMS):
 

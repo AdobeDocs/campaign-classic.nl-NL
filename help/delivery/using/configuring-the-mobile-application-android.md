@@ -58,7 +58,7 @@ Volg deze stappen om te kiezen welke connector u wilt gebruiken:
 
 ## Een Android-service configureren {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png)[Leer in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} hoe u een Android-service configureert.
+![](assets/do-not-localize/how-to-video.png) [Leer in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} hoe u een Android-service configureert.
 
 1. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Services and subscriptions]** en klik op **[!UICONTROL New]** .
 
@@ -69,7 +69,7 @@ Volg deze stappen om te kiezen welke connector u wilt gebruiken:
 
    >[!NOTE]
    >
-   >De standaarddoeltoewijzing **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** is gekoppeld aan de tabel met ontvangers. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Raadpleeg deze sectie](../../configuration/using/about-custom-recipient-table.md) voor meer informatie over het [maken van doeltoewijzing.
+   >De standaarddoeltoewijzing **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** is gekoppeld aan de tabel met ontvangers. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Raadpleeg deze sectie[&#128279;](../../configuration/using/about-custom-recipient-table.md) voor meer informatie over het maken van doeltoewijzing.
 
    ![](assets/nmac_ios.png)
 

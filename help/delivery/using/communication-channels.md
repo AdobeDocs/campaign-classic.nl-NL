@@ -56,7 +56,7 @@ U kunt verschillende typen e-mailberichten verzenden:
 * Herhalende e-mails: in een campagne verzendt u regelmatig dezelfde e-mail en aggregeert u elke verzending en de bijbehorende rapporten op gezette tijden. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. Voor meer op dit, verwijs naar [ Terugkomende leveringen ](../../workflow/using/recurring-delivery.md).
 * Transactiee-mails: eenheidse e-mails die worden geactiveerd op basis van het gedrag van uw klanten. Verwijs naar [ Transactioneel overseinen ](../../message-center/using/about-transactional-messaging.md).
 
-Om over leveringsgebruik en aanbevelingen te leren, raadpleeg de beste praktijken van de Lading van de Campagne [ ](delivery-best-practices.md).
+Om over leveringsgebruik en aanbevelingen te leren, raadpleeg de beste praktijken van de Lading van de Campagne [&#128279;](delivery-best-practices.md).
 
 Voor meer op de verschillende types van leveringen, verwijs naar [ deze sectie ](#types-of-deliveries).
 

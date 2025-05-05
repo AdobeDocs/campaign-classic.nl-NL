@@ -35,7 +35,7 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 * **motor van de Aanbieding**: laat u de motor van de Interactie in een werkschema roepen. Verwijs naar de [ motor van de Aanbieding ](../../workflow/using/offer-engine.md) sectie.
 * **Deduplicatie**: laat u duplicaten uit binnenkomende activiteiten verwijderen. Verwijs naar de [ sectie van de Deduplicatie ](../../workflow/using/deduplication.md).
 * **dimensie van de Verandering**: laat u de het richten dimensie tijdens de cyclus van de werkschemabouw veranderen. Verwijs naar de [ dimensie van de Verandering ](../../workflow/using/change-dimension.md) sectie.
-* **de diensten van het Abonnement**: laat doelabonnementen en abonnementen aan de informatiedienst beheren. Verwijs naar de ](../../workflow/using/subscription-services.md) sectie van de Diensten van het Abonnement 0}.[
+* **de diensten van het Abonnement**: laat doelabonnementen en abonnementen aan de informatiedienst beheren. Verwijs naar de [&#128279;](../../workflow/using/subscription-services.md) sectie van de Diensten van het Abonnement 0&rbrace;.
 * **update van de Lijst**: registreert het resultaat van binnenkomende activiteiten in een lijst. Verwijs naar de [ update van de Lijst ](../../workflow/using/list-update.md) sectie.
 * **gegevens van de Update**: laat u de gegevens in het gegevensbestand massief bijwerken. Verwijs naar de [ gegevens van de Update ](../../workflow/using/update-data.md) sectie.
 * **schakelaar van CRM**: laat u de synchronisatie tussen Adobe Campaign en CRM vormen. Verwijs naar de [ Schakelaar van CRM ](../../workflow/using/crm-connector.md) sectie.

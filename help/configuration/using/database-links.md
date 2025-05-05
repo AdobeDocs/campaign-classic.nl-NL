@@ -61,7 +61,7 @@ Mogelijke waarden zijn:
       * **bepaalt**: het is mogelijk om het bronvoorkomen te schrappen als het niet meer door een doelvoorkomen van verwijzingen wordt voorzien
       * **normaal**: het schrappen van de broninstantie initialiseert de sleutels van de verbinding aan het doelvoorkomen (standaardwijze), initialiseert dit type van integriteit alle buitenlandse sleutels
       * **eigen**: het schrappen van de broninstantie leidt tot de schrapping van het doelvoorkomen
-      * **eigen exemplaar**: het zelfde als **** (in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
+      * **eigen exemplaar**: het zelfde als **&#x200B;**&#x200B;(in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
       * **neutraal**: geen specifiek gedrag
 
    * **revIntegrity** (facultatief): integriteit op het doelschema (facultatief, &quot;normaal&quot;door gebrek)

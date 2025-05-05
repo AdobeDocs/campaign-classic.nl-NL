@@ -208,7 +208,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_DeliveryPreparationWindow </span> <br /> </td> 
-   <td><p>Deze optie wordt gebruikt door het </a></span> technische werkschema 0} operationMgt {wanneer het tellen van het aantal lopende leveringen.<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md"></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
+   <td><p>Deze optie wordt gebruikt door het </a></span> technische werkschema 0&rbrace; operationMgt &lbrace;wanneer het tellen van het aantal lopende leveringen.<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md"></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol"> NmsPaper_SenderLine1 </span> <br /> </td> 
@@ -364,7 +364,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_OperationMgtDebug </span> <br /> </td> 
-   <td> Staat u toe om de </a> technische werkschemauitvoering te controleren 0} operationMgt. <a href="../../workflow/using/about-technical-workflows.md"> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
+   <td> Staat u toe om de </a> technische werkschemauitvoering te controleren 0&rbrace; operationMgt. <a href="../../workflow/using/about-technical-workflows.md"> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_TimeRange </span> <br /> </td> 
@@ -735,7 +735,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
    <td> Deze optie wordt gebruikt wanneer het invoeren van gegevens van een derdesysteem door een schakelaar van CRM. Als u de optie inschakelt, kunt u alleen objecten verzamelen die zijn gewijzigd sinds de laatste importbewerking. Deze optie moet handmatig worden gemaakt en als volgt worden ingevuld: 
     <ul> 
      <li> <p> <span class="uicontrol"> Interne naam </span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol"> Waarde (gebied) </span> : datum van de laatste invoer, met het 2} s formaat van yyyy/MM/dd hh.:mm: </p> </li> 
+     <li> <p> <span class="uicontrol"> Waarde (gebied) </span> : datum van de laatste invoer, met het 2&rbrace; s formaat van yyyy/MM/dd hh.:mm: </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 

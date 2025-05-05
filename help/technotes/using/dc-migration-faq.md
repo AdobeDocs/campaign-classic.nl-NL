@@ -51,7 +51,7 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
 * **wat is het plan om om het even welke post migratiekwesties te behandelen?**
 
-  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. Nochtans in het geval van om het even welke kwesties, ](https://experienceleague.adobe.com/?support-solution=Campaign#support) de Zorg van de Klant van de Adobe zal het belangrijkste punt van contact blijven. [ Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
+  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. Nochtans in het geval van om het even welke kwesties, [&#128279;](https://experienceleague.adobe.com/?support-solution=Campaign#support) de Zorg van de Klant van de Adobe zal het belangrijkste punt van contact blijven.  Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
 
 ## Afzetbaarheidseffecten
 
@@ -97,7 +97,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
   Allereerst zal de Leverbaarheid van de Adobe de leveringsstatus van het platform beoordelen en een plan voor de omschakeling aan nieuwe IPs aanbevelen
 
-  Na de migratie is geen opwarmen vereist. Het zou één of andere uitzondering kunnen zijn en, in zulk geval, zal de ](https://experienceleague.adobe.com/?support-solution=Campaign#support) Zorg van de Klant van de Adobe aan klanten bereiken.[
+  Na de migratie is geen opwarmen vereist. Het zou één of andere uitzondering kunnen zijn en, in zulk geval, zal de [&#128279;](https://experienceleague.adobe.com/?support-solution=Campaign#support) Zorg van de Klant van de Adobe aan klanten bereiken.
 
   Het is echter de bedoeling om deze operatie transparant te maken voor het bedrijf, in tegenstelling tot de eerste oprijplaat die tijdens het liveproces wordt uitgevoerd.
 

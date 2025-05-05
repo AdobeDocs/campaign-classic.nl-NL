@@ -18,10 +18,10 @@ Adobe Campaign bevat een grafische module voor het definiëren en publiceren van
 
 >[!AVAILABILITY]
 >
->Het beheer van enquêtes is niet beschikbaar in Campaign v8 in de context van een implementatie van een Enterprise (FFDA). Leer meer in [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment) {target="_blank"}.
+>Het beheer van enquêtes is niet beschikbaar in Campaign v8 in de context van een implementatie van een Enterprise (FFDA). Leer meer in [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"} .
 
 
-De facultatieve **toe:voegen-op van het 0} Onderzoek {laat u een nieuw type van de toepassing van het Web tot stand brengen en leiden online vragenlijsten, zoals vormen om profielinformatie toe te voegen of te wijzigen, om aan of te ondertekenen van een informatiedienst, of een vorm van de mededingingsingang in te tekenen.** Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
+De facultatieve **toe:voegen-op van het 0&rbrace; Onderzoek &lbrace;laat u een nieuw type van de toepassing van het Web tot stand brengen en leiden online vragenlijsten, zoals vormen om profielinformatie toe te voegen of te wijzigen, om aan of te ondertekenen van een informatiedienst, of een vorm van de mededingingsingang in te tekenen.** Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
 
 Dit hoofdstuk specificeert om **Enquêtes**, gebied en paginabeheer, opslagwijzen en verslagen tot stand te brengen en te beheren.
 
@@ -35,7 +35,7 @@ Leer hoe te om uw eerste onderzoek in [ tot stand te brengen deze pagina ](getti
 
 ## Functiebereik {#campaign-surveys-scope}
 
-In Adobe Campaign, gebruik ](../../web/using/about-web-forms.md) de toepassingen van het 0} Web aan:[
+In Adobe Campaign, gebruik [&#128279;](../../web/using/about-web-forms.md) de toepassingen van het 0&rbrace; Web aan:
 
 * Formulieren met meerdere pagina&#39;s maken,
 * Meertalige formulieren beheren met een geïntegreerd vertaalhulpprogramma

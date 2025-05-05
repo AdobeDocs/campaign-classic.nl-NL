@@ -86,7 +86,7 @@ Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonn
 >Deze procedure is alleen van toepassing op klanten die een Windows NLServer gebruiken die op dezelfde computer is geïnstalleerd als waarop zij werken.
 
 1. Installeer het kanaal u, bijvoorbeeld het **Mobiele kanaal** nodig hebt, gebruikend de medewerker van de pakketinvoer (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Voer een dossierinvoer (**[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer het **datakitnms **`[Your language]`**pakketmanagementCenter.xml** dossier.
+1. Voer een dossierinvoer (**[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer het **datakitnms &#x200B;**`[Your language]`**pakketmanagementCenter.xml** dossier.
 1. Bewaar in de **[!UICONTROL XML content of the data to import]** alleen de leveringssjabloon die overeenkomt met het toegevoegde kanaal. Bijvoorbeeld, als u het **Mobiele kanaal** hebt toegevoegd, houd slechts het **entiteiten** element dat aan **[!UICONTROL Mobile transactional message]** beantwoordt (smsTriggerMessage). Als u het **Mobiele Kanaal van de App** hebt toegevoegd, houd slechts het **transactiebericht van iOS** (iosTriggerMessage) en het **de transactionele bericht van Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
@@ -137,7 +137,7 @@ In combinatie met de Mobile App Channel-module kunt u met een transactiebericht 
 Als u transactiemodules voor berichten wilt gebruiken met Mobile App Channel, moet u de volgende configuraties toepassen:
 
 1. Installeer het **Mobiele pakket van het Kanaal van de App** op de controle en uitvoeringsinstanties.
-1. Repliceer de **het typeAdobe Campaign dienst van 0} Mobiele toepassing {evenals de mobiele toepassingen die het op de uitvoeringsinstanties bevat.**
+1. Repliceer de **het typeAdobe Campaign dienst van 0&rbrace; Mobiele toepassing &lbrace;evenals de mobiele toepassingen die het op de uitvoeringsinstanties bevat.**
 
 De gebeurtenis moet de volgende elementen bevatten:
 
@@ -181,7 +181,7 @@ Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elemente
 
 * Installeer het **[!UICONTROL LINE Connect]** -pakket op beide instanties.
 * Installeer het pakket **[!UICONTROL Transactional message control]** op de marketinginstantie en het pakket **[!UICONTROL Transactional message execution]** op de uitvoeringsinstantie.
-* Creeer de externe rekening van de LIJN **** en **dienst** op beide instanties met het identieke noemen voor hen om worden gesynchroniseerd. Voor meer informatie over hoe te om tot een externe rekening en de dienst van de LIJN te leiden, verwijs naar [ deze sectie ](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Creeer de externe rekening van de LIJN **&#x200B;**&#x200B;en **dienst** op beide instanties met het identieke noemen voor hen om worden gesynchroniseerd. Voor meer informatie over hoe te om tot een externe rekening en de dienst van de LIJN te leiden, verwijs naar [ deze sectie ](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Vervolgens moet u in **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , verschillende externe accounts configureren voor beide instanties:
 

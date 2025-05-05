@@ -49,7 +49,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
 1. Configureer de **[!UICONTROL Enrichment]** -activiteit. Het doel van deze activiteit in dit verband is de identificatie van de binnenkomende gegevens.
 
-   * Selecteer **[!UICONTROL Add data]** op het tabblad **[!UICONTROL Enrichment]** en definieer een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0} CRM {gebruikt om te creëren zich bij voorwaarde aansluit.** Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
+   * Selecteer **[!UICONTROL Add data]** op het tabblad **[!UICONTROL Enrichment]** en definieer een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0&rbrace; CRM &lbrace;gebruikt om te creëren zich bij voorwaarde aansluit.** Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
    * Laat op het tabblad **[!UICONTROL Reconciliation]** de optie **[!UICONTROL Identify the document from the working data]** uitgeschakeld.
 
    ![](assets/import_template_example2.png)
@@ -79,7 +79,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 1. Configureer de **[!UICONTROL Update data]** -activiteit die zich na de eerste uitgaande overgang van de eerder geconfigureerde **[!UICONTROL Split]** -activiteit bevindt.
 
    * Selecteer **[!UICONTROL Update]** als **[!UICONTROL Operation type]** omdat de inkomende overgang alleen ontvangers bevat die al in de database aanwezig zijn.
-   * Selecteer **[!UICONTROL Using reconciliation keys]** in de sectie **[!UICONTROL Record identification]** en definieer een sleutel tussen de doeldimensie en de koppeling die in de sectie **[!UICONTROL Enrichment]** wordt gemaakt. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0} CRM {gebruikt.**
+   * Selecteer **[!UICONTROL Using reconciliation keys]** in de sectie **[!UICONTROL Record identification]** en definieer een sleutel tussen de doeldimensie en de koppeling die in de sectie **[!UICONTROL Enrichment]** wordt gemaakt. In dit voorbeeld, wordt het **douanegebied van identiteitskaart van 0&rbrace; CRM &lbrace;gebruikt.**
    * Geef in de sectie **[!UICONTROL Fields to update]** de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
 
      ![](assets/import_template_example6.png)

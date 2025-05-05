@@ -164,7 +164,7 @@ Dit doet u als volgt:
 1. Controleer of de optie voor het inschakelen van dynamische e-mail is ingeschakeld bij de desbetreffende e-mailprovider(s).
 1. Kopieer het adres van de afzender dat in het gebied van de levering **[!UICONTROL From]** wordt getoond en kleef het in de aangewezen sectie van de de rekeningsmontages van uw e-mailprovider.
 
-Voor verdere details, raadpleeg de ](https://developers.google.com/gmail/ampemail/testing-dynamic-email) ontwikkelaarsdocumentatie 0} Gmail {.[
+Voor verdere details, raadpleeg de [&#128279;](https://developers.google.com/gmail/ampemail/testing-dynamic-email) ontwikkelaarsdocumentatie 0&rbrace; Gmail &lbrace;.
 
 ![](assets/amp_from_field.png)
 

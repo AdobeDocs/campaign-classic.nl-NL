@@ -83,7 +83,7 @@ Om een SMS te versturen naar een mobiele telefoon met Mid-servers, moet je eerst
 
 >[!IMPORTANT]
 >
->Het gebruik van hetzelfde account en wachtwoord voor meerdere externe sms-accounts kan leiden tot conflicten en overlapping tussen de accounts. Raadpleeg de pagina](troubleshooting-sms.md#external-account-conflict) voor het [oplossen van problemen met sms.
+>Het gebruik van hetzelfde account en wachtwoord voor meerdere externe sms-accounts kan leiden tot conflicten en overlapping tussen de accounts. Raadpleeg de pagina[&#128279;](troubleshooting-sms.md#external-account-conflict) voor het oplossen van problemen met sms.
 
 Zodra u met succes uw externe rekening van SMS op de server van de Marketing hebt opgezet, is de volgende stap uw externe rekening SMPP op de middentserver te vestigen.
 

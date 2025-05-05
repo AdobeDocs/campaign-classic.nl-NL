@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Migreren naar Adobe Identity Management System (IMS) {#migrate-to-ims}
 
-Als deel van de inspanning om veiligheid en authentificatieproces te versterken, adviseert Adobe Campaign hoogst om de wijze van de eindgebruikersauthentificatie van login/wachtwoord inheemse authentificatie aan [ Adobe Identity Management Systeem (IMS) te migreren ](https://helpx.adobe.com/enterprise/using/identity.html) {target="_blank"}.
+Als deel van de inspanning om veiligheid en authentificatieproces te versterken, adviseert Adobe Campaign hoogst om de wijze van de eindgebruikersauthentificatie van login/wachtwoord inheemse authentificatie aan [ Adobe Identity Management Systeem (IMS) te migreren ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} .
 
 Bovendien roept de Adobe Campaign-clienttoepassing nu de campagne-API&#39;s rechtstreeks aan met behulp van het technische IMS-accounttoken. U moet uw technische operatoren migreren naar Adobe Developer Console.
 
@@ -22,7 +22,7 @@ Bovendien roept de Adobe Campaign-clienttoepassing nu de campagne-API&#39;s rech
 
 ## Migratiestappen {#ims-steps}
 
-De migratie aan [ Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html) {target="_blank"} is een veiligheidsvereiste om uw milieu&#39;s veilig en gestandaardiseerd te maken, aangezien de meeste andere oplossingen en apps van Adobe Experience Cloud reeds op IMS zijn.
+De migratie aan [ Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}  is een veiligheidsvereiste om uw milieu&#39;s veilig en gestandaardiseerd te maken, aangezien de meeste andere oplossingen en apps van Adobe Experience Cloud reeds op IMS zijn.
 
 Adobe ondersteunt u bij deze migratieinspanning. In de volgende artikelen vindt u gedetailleerde context- en stapsgewijze richtlijnen:
 
@@ -46,13 +46,13 @@ Deze versies van de Campagne zijn gedetailleerd in de [ Nota&#39;s van de Versie
 
 ### Wanneer kan ik de migratie starten? {#ims-migration-start}
 
-Een aanbeveling voor de migratie aan [ het Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html) {target="_blank"} moet uw milieu aan Campaign Classic v7.4.1 (of een [ IMS migratie compatibele versie ](#ims-versions) bevorderen).
+Een aanbeveling voor de migratie aan [ het Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}  moet uw milieu aan Campaign Classic v7.4.1 (of een [ IMS migratie compatibele versie ](#ims-versions) bevorderen).
 
 U kunt IMS-migratie starten in uw werkgebiedomgeving, zodra deze is bijgewerkt naar de nieuwste versie, en dienovereenkomstig plannen voor de productieomgeving.
 
 ### Wat gebeurt er na de upgrade van de build naar Campaign Classic v7.4.1? {#ims-migration-after-upgrade}
 
-Nadat uw milieu&#39;s aan Campaign Classic v7.4.1 (of een [ IMS migratie compatibele versie ](#ims-versions)) zijn bevorderd, kunt u uw overgang aan [ in werking stellen Identity Management Systeem van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html) {target="_blank"}.
+Nadat uw milieu&#39;s aan Campaign Classic v7.4.1 (of een [ IMS migratie compatibele versie ](#ims-versions)) zijn bevorderd, kunt u uw overgang aan [ in werking stellen Identity Management Systeem van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} .
 
 ### Wanneer is de migratie voltooid? {#ims-migration-end}
 
@@ -65,4 +65,4 @@ Wanneer de migratie van eindgebruikers en de migratie van technische operatoren 
 * [Migratie van eindgebruikers naar IMS](migrate-users-to-ims.md)
 * [Migratie van technische operatoren naar Adobe Developer-console](ims-migration.md)
 * [Opmerkingen bij de nieuwste release van Adobe Campaign Classic v7](../../rn/using/latest-release.md)
-* [ wat is het Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html) {target="_blank"}
+* [ wat is het Systeem van Identity Management van de Adobe (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} 

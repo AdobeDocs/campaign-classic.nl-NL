@@ -48,7 +48,7 @@ Tijdens deduplicatie worden inkomende stromen afzonderlijk verwerkt. Als bijvoor
 
 Deze kwestie moet als volgt worden aangepakt:
 
-* Creeer a **activiteit 0} van de Unie {om elke binnenkomende stroom te verenigen.**
+* Creeer a **activiteit 0&rbrace; van de Unie &lbrace;om elke binnenkomende stroom te verenigen.**
 * Creeer a **Deduplicatie** activiteit na de **Vereniging** activiteit.
 
 ![](assets/dedup_bonnepratique.png)

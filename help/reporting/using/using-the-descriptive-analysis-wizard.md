@@ -201,7 +201,7 @@ Om een beschrijvende analyse zelf te produceren, selecteer de **Nieuwe beschrijv
 
 De sjabloon **[!UICONTROL Quantitative distribution]** waarmee u statistieken kunt genereren over gegevens die kunnen worden gemeten of geteld (bijvoorbeeld factuurbedrag, leeftijd van ontvangers).
 
-De configuratiewijze van een analyserapport dat via het **[!UICONTROL Quantitative distribution]** malplaatje wordt gecreeerd is gedetailleerd in een 1} Kwantitatieve gegevensanalyse van een implementatievoorbeeld ](../../reporting/using/use-cases.md#quantitative-data-analysis).[
+De configuratiewijze van een analyserapport dat via het **[!UICONTROL Quantitative distribution]** malplaatje wordt gecreeerd is gedetailleerd in een 1&rbrace; Kwantitatieve gegevensanalyse van een implementatievoorbeeld [&#128279;](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
 De opties die beschikbaar zijn wanneer u de beschrijvende analyseassistent gebruikt om een kwantitatief rapport te maken, worden hieronder beschreven.
 

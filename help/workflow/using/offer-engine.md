@@ -34,4 +34,4 @@ Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1}.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)

@@ -281,7 +281,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 In dit stadium, moet de server IIS worden tegengehouden. Verwijs naar [ het einde van de Dienst ](#service-stop).
 
-1. Open de **console van de Manager van de Informatie van 0} Internet van de Diensten (IIS).**
+1. Open de **console van de Manager van de Informatie van 0&rbrace; Internet van de Diensten (IIS).**
 1. Wijzig de bindingen (listen ports) van de site die voor de vorige versie van Adobe Campaign wordt gebruikt:
 
    * Klik met de rechtermuisknop op de site die wordt gebruikt voor de vorige versie van Adobe Campaign en selecteer **[!UICONTROL Edit bindings]** .

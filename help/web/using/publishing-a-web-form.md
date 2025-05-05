@@ -82,7 +82,7 @@ Er zijn drie fasen in de levenscyclus van een formulier:
 
 1. **wordt uitgegeven**
 
-   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier alleen voor testdoeleinden vereist dat de parameter **[!UICONTROL __uuid]** in de URL wordt gebruikt. Deze URL is toegankelijk op het subtabblad **[!UICONTROL Preview]** . Zie {de parameters van 0} Vorm URL ](defining-web-forms-properties.md#form-url-parameters).[
+   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier alleen voor testdoeleinden vereist dat de parameter **[!UICONTROL __uuid]** in de URL wordt gebruikt. Deze URL is toegankelijk op het subtabblad **[!UICONTROL Preview]** . Zie {de parameters van 0} Vorm URL [&#128279;](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -190,7 +190,7 @@ Leer meer op de verschillende statussen van een Webvorm in [ deze sectie ](#life
 
    * Als het webformulier nieuw is op het exemplaar waar het pakket wordt geïmporteerd, krijgt het webformulier de status **[!UICONTROL Being edited]** .
 
-   * Als het webformulier al bestaat op het nieuwe exemplaar, is dit een wijziging op een bestaand formulier. Als de oude versie van de vorm **[!UICONTROL Online]** was, blijft de oude versie online tot de nieuwe versie van de vorm [ ](#publishing-a-form) opnieuw op de nieuwe instantie wordt gepubliceerd.
+   * Als het webformulier al bestaat op het nieuwe exemplaar, is dit een wijziging op een bestaand formulier. Als de oude versie van de vorm **[!UICONTROL Online]** was, blijft de oude versie online tot de nieuwe versie van de vorm [&#128279;](#publishing-a-form) opnieuw op de nieuwe instantie wordt gepubliceerd.
 
   >[!NOTE]
   >

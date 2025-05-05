@@ -44,7 +44,7 @@ Deze eigenschap baseert zich op een specifieke architectuur, waar de **uitvoerin
 
 >[!NOTE]
 >
->Om nieuwe gebruikers voor de uitvoeringsinstanties tot stand te brengen van het Centrum van het Bericht die op de Wolk van de Adobe worden ontvangen, moet u ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de Zorg van de Klant van 0} Adobe contacteren {. [ Gebruikers van Message Center zijn specifieke operatoren waarvoor speciale machtigingen voor toegang tot **[!UICONTROL Real time events (nmsRtEvent)]** -mappen vereist zijn.
+>Om nieuwe gebruikers voor de uitvoeringsinstanties tot stand te brengen van het Centrum van het Bericht die op de Wolk van de Adobe worden ontvangen, moet u [&#128279;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de Zorg van de Klant van 0&rbrace; Adobe contacteren &lbrace;.  Gebruikers van Message Center zijn specifieke operatoren waarvoor speciale machtigingen voor toegang tot **[!UICONTROL Real time events (nmsRtEvent)]** -mappen vereist zijn.
 
 Het algemene proces van het transactieoverseinen kan als volgt worden beschreven:
 
@@ -81,7 +81,7 @@ Op de **controleinstantie**, moet u de volgende acties uitvoeren:
 
 Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een overeenkomstige gebeurtenis wordt teweeggebracht, worden de belangrijkste hieronder stappen uitgevoerd op de **uitvoeringsinstantie**:
 
-1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie {de inzameling van 0} Gebeurtenis ](../../message-center/using/about-event-processing.md#event-collection).[
+1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie {de inzameling van 0} Gebeurtenis [&#128279;](../../message-center/using/about-event-processing.md#event-collection).
 1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [ Verpletterend naar een malplaatje ](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. Zodra het verrijkingsstadium volledig is, wordt de levering verzonden. Zie [ uitvoering van de Levering ](../../message-center/using/delivery-execution.md). Elke beoogde ontvanger ontvangt een gepersonaliseerd bericht.
 

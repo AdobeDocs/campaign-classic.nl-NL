@@ -25,7 +25,7 @@ Volg de onderstaande principes bij het ontwerpen van uw berichtinhoud:
 * [ verbinding Unsubscription ](#opt-out) en landende pagina: de unsubscription verbinding is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn.
 * Voorproef: gebruik de hulpmiddelen die door Adobe Campaign worden aangeboden om de inhoud van uw e-mail te controleren en te optimaliseren ([ Inbox teruggevend ](#message-responsiveness), [ SpamAssassin ](#spamassassin)).
 
-Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html) Gids van de Beste praktijken van de Levering van de Adobe van 0}.[
+Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de [&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html) Gids van de Beste praktijken van de Levering van de Adobe van 0&rbrace;.
 
 >[!NOTE]
 >

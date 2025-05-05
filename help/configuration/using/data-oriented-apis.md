@@ -317,7 +317,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </select>
   ```
 
-* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **** exploitant NIET BESTAAT.
+* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **&#x200B;**&#x200B;exploitant NIET BESTAAT.
 
   Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 

@@ -23,7 +23,7 @@ In deze sectie worden de gebruikelijke opdrachten in Adobe Campaign weergegeven.
 
 Het bevel **nlserver** is het inputbevel voor de volledige toepassing van Adobe Campaign.
 
-Deze opdracht heeft de volgende syntaxis: **nullServer **`<command>`****`<arguments>`****
+Deze opdracht heeft de volgende syntaxis: **nullServer &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
 
 De parameter **`<command>`** komt overeen met de module.
 
@@ -37,7 +37,7 @@ De parameter **`<command>`** komt overeen met de module.
 
 >[!NOTE]
 >
->Om van alle modules een lijst te maken, moet u het **bevel gebruiken 0} nlserver van de pomp {.**
+>Om van alle modules een lijst te maken, moet u het **bevel gebruiken 0&rbrace; nlserver van de pomp &lbrace;.**
 
 U kunt de parameter **- toevoegen wie** om van de lopende verbindingen (gegevensbestand en toepassing) een lijst te maken.
 

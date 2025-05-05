@@ -70,7 +70,7 @@ Het XML-document moet beginnen en eindigen met het element **`<package>`** . All
 
 Een **`<entities>`** element bevat de gegevens van het pakket in het formaat van het gegevensschema ingegaan in het **schema** attribuut.
 
-De gegevens in een pakket moeten geen interne sleutels bevatten die niet compatibel tussen bases, zoals auto-geproduceerde sleutels (**automatische 1} optie) zijn.**
+De gegevens in een pakket moeten geen interne sleutels bevatten die niet compatibel tussen bases, zoals auto-geproduceerde sleutels (**automatische 1&rbrace; optie) zijn.**
 
 In ons voorbeeld zijn de verbindingen op de &quot;omslag&quot;en &quot;bedrijf&quot;verbindingen vervangen door zogenaamde &quot;high level&quot;sleutels op de bestemmingstabellen:
 
@@ -442,6 +442,7 @@ Het updatepakket mag slechts één specifieke entiteit bevatten, zodat het gemak
    * Externe account wordt gemaakt.
    * Het nieuwe pakket is: 5101 - 2 - Externe account voor sociale toepassingen (socialApplication_extAccount).
    * Parallel hieraan wordt het 101-pakket bijgewerkt en toegevoegd aan de externe account, maar het wordt niet geïmplementeerd.
+
      ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Pakketdocumentatie {#package-documentation}

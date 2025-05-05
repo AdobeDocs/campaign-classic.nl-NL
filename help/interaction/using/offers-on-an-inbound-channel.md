@@ -91,7 +91,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
    Noem de nieuwe categorie, **Financiële producten** bijvoorbeeld.
 
-1. Ga naar het 0} lusje van de categorie {en ga **financiering** als thema in, dan sparen veranderingen.**[!UICONTROL Eligibility]**
+1. Ga naar het 0&rbrace; lusje van de categorie &lbrace;en ga **financiering** als thema in, dan sparen veranderingen.**[!UICONTROL Eligibility]**
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
@@ -323,7 +323,7 @@ In dit voorbeeld vindt de identificatie van de contactpersoon plaats via het e-m
 
 ### Aanbiedingscategorieën maken in een geïdentificeerde omgeving {#creating-offer-categories-in-an-identified-environment}
 
-Wij gaan twee afzonderlijke categorieën tot stand brengen: de **categorie van het Beste voorstel van 0} {en de** Partner **categorie, elk met twee gepersonaliseerde aanbiedingen.**
+Wij gaan twee afzonderlijke categorieën tot stand brengen: de **categorie van het Beste voorstel van 0&rbrace; &lbrace;en de** Partner **categorie, elk met twee gepersonaliseerde aanbiedingen.**
 
 1. Ga naar het knooppunt **[!UICONTROL Offer catalogs]** in de opgegeven omgeving.
 1. Zoals in het anonieme milieu, voeg twee **[!UICONTROL Offer category]** omslagen met **Beste Voorstel** en **Partner** als etiketten toe.
@@ -367,7 +367,7 @@ We willen voor elke categorie twee persoonlijke aanbiedingen maken, dat wil zegg
 
 ### Aanbiedingsruimten op de webpagina configureren {#configuring-offer-spaces-on-the-web-page}
 
-De website van het Neobank bedrijf heeft drie ruimten voor aanbiedingen: twee voor bank betrekking hebbende aanbiedingen van de **1} categorie van het Beste Voorstel {, en één voor aanbiedingen van de** 3} categorie van de Partner.****
+De website van het Neobank bedrijf heeft drie ruimten voor aanbiedingen: twee voor bank betrekking hebbende aanbiedingen van de **1&rbrace; categorie van het Beste Voorstel {, en één voor aanbiedingen van de** 3} categorie van de Partner.**&#x200B;**
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -383,11 +383,11 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   In dit voorbeeld, **ContBO1** en **ContBO2** ontvangen de waarde **OsWebBestOfferIdentified**, d.w.z. de interne naam van de **Beste Aanbiedingsruimte van de Aanbieding** die eerder in het geïdentificeerde milieu wordt gecreeerd. De **CatBestOffer** en **CatBestOfferAnonym** waarden passen de interne naam van de **** categorieën van de Beste aanbieding voor anonieme en geïdentificeerde milieu&#39;s aan.
+   In dit voorbeeld, **ContBO1** en **ContBO2** ontvangen de waarde **OsWebBestOfferIdentified**, d.w.z. de interne naam van de **Beste Aanbiedingsruimte van de Aanbieding** die eerder in het geïdentificeerde milieu wordt gecreeerd. De **CatBestOffer** en **CatBestOfferAnonym** waarden passen de interne naam van de **&#x200B;**&#x200B;categorieën van de Beste aanbieding voor anonieme en geïdentificeerde milieu&#39;s aan.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
-   Eveneens, **ContPtn** ontvangt de **** waarde OSWebPartnerIdentified, die de interne naam van de **Partner** aanbiedingsruimte aanpast die in het geïdentificeerde milieu wordt gecreeerd. **CatPartner** en **CatPartnerAnonym** passen de interne naam van de **Partner** categorieën voor anonieme en geïdentificeerde milieu&#39;s aan.
+   Eveneens, **ContPtn** ontvangt de **&#x200B;**&#x200B;waarde OSWebPartnerIdentified, die de interne naam van de **Partner** aanbiedingsruimte aanpast die in het geïdentificeerde milieu wordt gecreeerd. **CatPartner** en **CatPartnerAnonym** passen de interne naam van de **Partner** categorieën voor anonieme en geïdentificeerde milieu&#39;s aan.
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
@@ -405,6 +405,6 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
 Wanneer u de webpagina opent, kunt u met het script de Interactie-engine oproepen om de inhoud van aanbiedingen in de relevante ruimten van de webpagina weer te geven. Bij één aanroep naar de Adobe Campaign-server bepaalt de engine de omgeving, de aanbiedingsruimte en de categorieën die moeten worden geselecteerd.
 
-In dit voorbeeld, erkent de motor het geïdentificeerde milieu (**EnvNeobankIdnRecip**). Het identificeert de aanbiedingsruimte (**OSWebBestOfferIdentified**) en de **Beste 3} categorie van de Aanbieding (** CatBestOffer **) voor de eerste en tweede aanbiedingsruimten op de Web-pagina, evenals (** OSWebPartnerIdentified **) aanbiedingsruimte en de** categorie **(** CatPartner **) voor de derde aanbiedingsruimte op de plaats.**
+In dit voorbeeld, erkent de motor het geïdentificeerde milieu (**EnvNeobankIdnRecip**). Het identificeert de aanbiedingsruimte (**OSWebBestOfferIdentified**) en de **Beste 3&rbrace; categorie van de Aanbieding (** CatBestOffer **) voor de eerste en tweede aanbiedingsruimten op de Web-pagina, evenals (** OSWebPartnerIdentified **) aanbiedingsruimte en de** categorie **(** CatPartner **) voor de derde aanbiedingsruimte op de plaats.**
 
 Als de motor niet de ontvanger kan identificeren, schakelt het aan de anonieme aanbiedingsruimten van verwijzingen voorzien in de geïdentificeerde aanbiedingsruimten en naar de anonieme categorieën (**CatPartner** en **CatPartnerAnonym**) zoals die in het manuscript worden gespecificeerd.

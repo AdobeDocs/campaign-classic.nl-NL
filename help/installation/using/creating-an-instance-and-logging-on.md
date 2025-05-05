@@ -46,7 +46,7 @@ Als u een nieuwe instantie wilt maken, voert u de onderstaande stappen uit:
 
    >[!CAUTION]
    >
-   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]``[0-9]` en streepjes (-) of volledige stops.
+   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]` `[0-9]` en streepjes (-) of volledige stops.
 
 1. Klik **[!UICONTROL Ok]** om de instellingen te bevestigen: u kunt nu beginnen met het proces voor het maken van instanties.
 1. Voer in het **[!UICONTROL Connection settings]** venster de interne **aanmeldingsnaam en het** bijbehorende wachtwoord in om verbinding te maken met de toepassingsserver van Adobe Campaign. Nadat de verbinding is gemaakt, opent u de assistent voor het maken van instanties om een nieuwe instantie aan te geven
@@ -82,4 +82,4 @@ Als u een nieuwe instantie wilt maken, voert u de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >De instantie kan vanaf de opdrachtregel worden gemaakt. Zie Opdrachtregels](../../installation/using/command-lines.md) voor [meer informatie hierover.
+   >De instantie kan vanaf de opdrachtregel worden gemaakt. Zie Opdrachtregels[&#128279;](../../installation/using/command-lines.md) voor meer informatie hierover.

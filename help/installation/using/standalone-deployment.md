@@ -98,7 +98,7 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de {**en** serverConf.xml **dossiers in de** conf **folder onder de installatiemap.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de &lbrace;**en** serverConf.xml **dossiers in de** conf **folder onder de installatiemap.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
 
    Pers **Ctrl+C** om de server tegen te houden.
 
@@ -204,7 +204,7 @@ Voer de volgende stappen uit:
 
    Met deze opdracht weet u ook de versie en het buildnummer van de Adobe Campaign-server die op de computer is geïnstalleerd.
 
-1. Test de **module van het 0} nlserverWeb {die URL gebruikt: https://console.campaign.net/nl/jsp/logon.jsp**
+1. Test de **module van het 0&rbrace; nlserverWeb &lbrace;die URL gebruikt: https://console.campaign.net/nl/jsp/logon.jsp**
 
    Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client.
 

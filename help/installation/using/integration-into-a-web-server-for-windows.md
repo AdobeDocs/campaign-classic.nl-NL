@@ -133,5 +133,5 @@ Bijvoorbeeld, als u het laden van a **Gegevens (dossier)** typeactiviteit in een
 
 In dit geval moet u deze limiet verhogen.
 
-Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;HowTo&quot;sectie van de [ documentatie van Microsoft ](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/) {target="_blank"}.
+Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;HowTo&quot;sectie van de [ documentatie van Microsoft ](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"} .
 

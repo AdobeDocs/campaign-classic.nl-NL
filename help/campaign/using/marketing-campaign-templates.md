@@ -56,7 +56,7 @@ Volg onderstaande stappen om een campagnemalplaatje te maken:
 1. Maak uw workflow naar wens.
 1. Klik **sparen**. Uw sjabloon is nu klaar om in een campagne te worden gebruikt.
 
-U kunt **** het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
+U kunt **&#x200B;**&#x200B;het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
 
 De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn montages toegang te hebben, die in [ Algemene configuratie ](#general-configuration) worden beschreven.
 

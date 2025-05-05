@@ -81,7 +81,7 @@ Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door
 
 ## Uitvoercontrole van levering {#delivery-output-controlling}
 
-Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0} E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
+Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0&rbrace; E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
 
 Voordat de berichten worden verzonden, vraagt de module &#39;tokens&#39; van de server. Dit zijn over het algemeen reeksen van minstens 10 tokens, die het aantal vragen aan de server verminderen.
 
@@ -369,7 +369,7 @@ Om de statistiekenserver op de zelfde machine te gebruiken, moet u minstens de n
 
 De configuratie betreffende verkeersbeheer wordt gevestigd in het **mta/child/smtp** element van het configuratiedossier.
 
-Voor elk **** element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
+Voor elk **&#x200B;**&#x200B;element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
 
 Voorbeeld:
 

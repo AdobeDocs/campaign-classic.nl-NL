@@ -33,7 +33,7 @@ Het beheer van de module wordt uitgevoerd met het opdrachtregelprogramma **nlser
 
 De algemene syntaxis van de **nlserver** is als volgt:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>` `<command arguments>`**
 
 Voor de lijst van beschikbare modules, gebruik **nlserver** gebruiken.
 

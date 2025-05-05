@@ -50,7 +50,7 @@ Een subset maken:
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. Als u wenst, kunt u andere subsets **toevoegen gebruikend de **[!UICONTROL Add]**knoop.**
+1. Als u wenst, kunt u andere subsets **toevoegen gebruikend de &#x200B;** [!UICONTROL Add]&#x200B;**knoop.**
 
    ![](assets/s_user_segmentation_partage_add.png)
 

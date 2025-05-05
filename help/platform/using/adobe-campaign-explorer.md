@@ -22,7 +22,7 @@ De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee h
 
 >[!NOTE]
 >
->Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de Campagne v8 documentatie: meer [ over het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui) {target=_blank} leren, zijn [ montages ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings) {target=_blank} of [ hoe te om omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views) te beheren {target=_blank}.
+>Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de Campagne v8 documentatie: meer [ over het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}  leren, zijn [ montages ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}  of [ hoe te om omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank} te beheren .
 
 
 <!--

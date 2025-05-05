@@ -19,7 +19,7 @@ ht-degree: 7%
 
 Alvorens **te raken verzend** knoop, zorg ervoor dat uw bericht aan de ontvangers op een optimale manier op een verscheidenheid van Webcliënten, Webpost en apparaten zal worden getoond.
 
-Om dit toe te staan, gebruikt Adobe Campaign de ](https://litmus.com/email-testing) web-based e-mailtestende oplossing 0} Litmus {om de teruggaven te vangen en hen beschikbaar te maken in een specifiek rapport. [ Hierdoor kunt u een voorvertoning van het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
+Om dit toe te staan, gebruikt Adobe Campaign de [&#128279;](https://litmus.com/email-testing) web-based e-mailtestende oplossing 0&rbrace; Litmus &lbrace;om de teruggaven te vangen en hen beschikbaar te maken in een specifiek rapport.  Hierdoor kunt u een voorvertoning van het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
 
 >[!CAUTION]
 >Inbox het teruggeven is niet compatibel met [ terugkomende leveringen ](communication-channels.md#recurring-delivery).
@@ -35,7 +35,7 @@ De mobiele, overseinen en webmail cliënten beschikbaar voor **Inbox teruggevend
 
 ## Inbox-rendering activeren {#activating-inbox-rendering}
 
-[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE &#x200B; Op-gebouw &amp; Hybrid &#x200B;]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning en consultants van Adobe. Neem voor meer informatie contact op met de Adobe-accountmanager.
 

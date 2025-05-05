@@ -41,7 +41,7 @@ Merk op dat als u het **permanente Web** of **anonieme** het volgen wijze gebrui
 </dbindex>
 ```
 
-**Permanent {en** Anonieme **het volgen van het Web wijzen omvatten twee opties:** Geforceerde levering **en** Laatste levering **.**
+**Permanent &lbrace;en** Anonieme **het volgen van het Web wijzen omvatten twee opties:** Geforceerde levering **en** Laatste levering **.**
 
 De **Geforceerde levering** optie laat u toe om het herkenningsteken van de levering (@jobid) tijdens het volgen te specificeren.
 

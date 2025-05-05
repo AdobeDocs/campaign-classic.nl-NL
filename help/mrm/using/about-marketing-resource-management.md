@@ -32,4 +32,4 @@ Tot slot wordt de capaciteit voor begrotingsbeheer uitgebreid tot het beheer van
 
 >[!NOTE]
 >
->Meer over MRM voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management) {target=_blank}.
+>Meer over MRM voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank} .
