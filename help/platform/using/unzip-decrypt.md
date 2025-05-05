@@ -26,7 +26,7 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voo
 
 Om dit te kunnen doen:
 
-1. Gebruik de [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbare/privé zeer belangrijke paar te produceren om dossierdecryptie toe te staan.
+1. Gebruik de [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#decrypting-data) om een openbare/privé zeer belangrijke paar te produceren om dossierdecryptie toe te staan.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in e
 
 De volgende stappen voor dit gebruik zijn nodig:
 
-1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door het Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.

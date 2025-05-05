@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Adobe Experience Cloud is een uitgebreide reeks van best-in-klasse, geïntegreerde oplossingen die op een gemeenschappelijk gegevensplatform met een gemeenschappelijke reeks krachtige oplossingen en apps worden voortgebouwd.
 
-Leer meer over functionele integratie beschikbaar tussen de oplossingen van Adobe Campaign en van Adobe Experience Cloud in [ deze pagina ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}.
+Leer meer over functionele integratie beschikbaar tussen de oplossingen van Adobe Campaign en van Adobe Experience Cloud in [ deze pagina ](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/integrations){_blank}.
 
 De volledige lijst van de oplossingen en de apps van Adobe diensten die met Adobe Campaign, evenals bijbehorende documentatie kunnen worden geïntegreerd, is beschikbaar in [ deze sectie ](#experience-cloud-integrations).
 
@@ -33,17 +33,17 @@ De volledige lijst van de oplossingen en de apps van Adobe diensten die met Adob
 
 U kunt meerdere oplossingen koppelen aan Adobe Experience Cloud. De **organisatie** is de klantenentiteit die een beheerder toelaat om groepen en gebruikers te vormen, en enig teken-binnen (SSO) in Adobe Experience Cloud te controleren. De organisatie handelt als een login bedrijf dat alle producten en oplossingen van Experience Cloud overspant. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter veel organisaties hebben.
 
-Het beheer van de organisatie en het verbinden van de rekeningen van Adobe Experience Cloud zijn gedetailleerd in het [ de hulpportaal van Adobe Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}.
+Het beheer van de organisatie en het verbinden van de rekeningen van Adobe Experience Cloud zijn gedetailleerd in het [ de hulpportaal van Adobe Experience Cloud ](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Identiteitsbeheer en cookie {#id-and-cookies}
 
-Wanneer het installeren van Adobe Campaign of het integreren van een bestaande installatie met Adobe Experience Cloud, wordt de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank} toegelaten. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
+Wanneer het installeren van Adobe Campaign of het integreren van een bestaande installatie met Adobe Experience Cloud, wordt de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/nl/docs/id-service/using/home){_blank} toegelaten. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
 
 De Adobe Experience Cloud Identity Service (ID-service) biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud.
 
 Aan ontvangers die trackinglogboeken genereren, wordt een unieke bezoeker-id toegewezen. Deze id wordt opgeslagen in het veld **[!UICONTROL Requester UUID (@sourceID)]** van de tabel **[!UICONTROL nms:trackingLogRcp]** . **de volgende gegevens van ontvangers die vóór de dienst van bezoekersidentiteitskaart werden uitgevoerd zullen daarom niet meer bruikbaar** zijn.
 
-De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde CNAME. [Meer informatie](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde CNAME. [Meer informatie](https://experienceleague.adobe.com/nl/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
 ## Experience Cloud-integraties {#experience-cloud-integrations}
 

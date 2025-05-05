@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Ontdek meer over de functionaliteit van het spoor van de Controle in de [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Ontdek meer over de functionaliteit van het spoor van de Controle in de [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 

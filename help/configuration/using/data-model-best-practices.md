@@ -146,7 +146,7 @@ Wanneer in Adobe Campaign een aangepaste tabel wordt gemaakt met een primaire sl
 
 Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit zou met zorg moeten worden gebruikt en één identiteitskaart zal wanneer het oversteken van negatieve aan positieve aantallen verloren gaan: het verslag 0 wordt typisch genegeerd door Adobe Campaign in geproduceerde SQL vragen.
 
-Voor meer op opeenvolgingen uitputting, bekijk [ deze video ](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Voor meer op opeenvolgingen uitputting, bekijk [ deze video ](https://helpx.adobe.com/nl/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indexen {#indexes}
 

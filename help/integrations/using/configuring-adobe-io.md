@@ -38,7 +38,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 Controleer voordat u met deze implementatie begint of:
 
 * a geldig **herkenningsteken van de Organisatie**: identiteitskaart van de Organisatie is het unieke herkenningsteken binnen Adobe Experience Cloud, dat bijvoorbeeld voor de dienst VisitorID en IMS wordt gebruikt Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
-* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [ in deze pagina ](https://helpx.adobe.com/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
+* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [ in deze pagina ](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
 
 ## Stap 1: Een OAuth-project maken/bijwerken {#creating-adobe-io-project}
 

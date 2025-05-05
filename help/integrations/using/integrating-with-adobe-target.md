@@ -23,7 +23,7 @@ Gebruik Adobe Campaign met Adobe Target om e-mailinhoud te optimaliseren.
 
 Als u uw e-mailinhoud wilt optimaliseren, kunt u een omleidingsvoorstel in Adobe Target maken en vervolgens Adobe Campaign gebruiken om de e-mailaanbiedingen te beheren. U kunt bijvoorbeeld verschillende aanbiedingen voor mannelijke en vrouwelijke ontvangers weergeven.
 
-De integratie vindt plaats wanneer de e-mail wordt geopend. Wanneer de klant de e-mail opent, wordt een vraag gemaakt aan Target en een dynamische versie van de inhoud verschijnt. De inhoud bestaat uit een statische afbeelding die door alle browsers wordt ondersteund. Het doel volgt de reactie op de aanbieding op het publiek of zittingsniveau en dat de gegevens in de rapporten van het Doel beschikbaar zijn. [Meer informatie in de documentatie van Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
+De integratie vindt plaats wanneer de e-mail wordt geopend. Wanneer de klant de e-mail opent, wordt een vraag gemaakt aan Target en een dynamische versie van de inhoud verschijnt. De inhoud bestaat uit een statische afbeelding die door alle browsers wordt ondersteund. Het doel volgt de reactie op de aanbieding op het publiek of zittingsniveau en dat de gegevens in de rapporten van het Doel beschikbaar zijn. [Meer informatie in de documentatie van Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=nl-NL).
 
 
 >[!NOTE]

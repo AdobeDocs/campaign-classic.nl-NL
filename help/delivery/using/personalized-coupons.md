@@ -19,7 +19,7 @@ Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde kr
 
 >[!AVAILABILITY]
 >
->Couponbeheer is niet beschikbaar in Campaign v8 in de context van een implementatie voor bedrijven (FFDA). Meer informatie in [Campagne v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>Couponbeheer is niet beschikbaar in Campaign v8 in de context van een implementatie voor bedrijven (FFDA). Meer informatie in [Campagne v8-documentatie](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 Couponbeheer is afhankelijk van een pakket dat moet worden geïnstalleerd. Als u wilt bevestigen dat u Coupon-beheer hebt, controleert u **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 

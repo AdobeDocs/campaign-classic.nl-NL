@@ -21,7 +21,7 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wan
 
 Om dit te kunnen doen:
 
-1. Installeer een sleutelpaar GPG voor uw instantie gebruikend [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installeer een sleutelpaar GPG voor uw instantie gebruikend [Deelvenster Beheer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#encrypting-data).
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te 
 
 De volgende stappen voor dit gebruik zijn nodig:
 
-1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in [Documentatie van het regelpaneel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#encrypting-data).
 
 1. In Campaign Classic, bouwt een werkschema om de gegevens uit te voeren en het te coderen gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 

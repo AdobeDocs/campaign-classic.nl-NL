@@ -19,7 +19,7 @@ In de de cliëntconsole van de Campagne, worden de gegevens getoond in lijsten. 
 
 >[!NOTE]
 >
->Leren om lijsten in Adobe Campaign te beheren en aan te passen, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank} .
+>Leren om lijsten in Adobe Campaign te beheren en aan te passen, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank} .
 
 <!--
 ## Count records {#counting-records}

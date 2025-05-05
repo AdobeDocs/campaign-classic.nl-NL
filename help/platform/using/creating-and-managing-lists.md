@@ -27,7 +27,7 @@ Lijsten worden gemaakt en beheerd via de koppeling **[!UICONTROL Lists]** op het
 
 >[!NOTE]
 >
->Meer over lijsten leren en hoe te om hen tot stand te brengen en te leiden, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank} .
+>Meer over lijsten leren en hoe te om hen tot stand te brengen en te leiden, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank} .
 
 <!--
 Two types of lists are available in Adobe Campaign:
@@ -147,6 +147,6 @@ Learn how create a workflow in order to target recipients and how to make it rec
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl-NL).
 
 -->

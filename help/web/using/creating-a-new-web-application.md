@@ -24,7 +24,7 @@ Ga naar de **Campagnes** en selecteert u de **[!UICONTROL Web Applications]** -m
 
 >[!NOTE]
 >
->Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Zie de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Zie de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#privacy).
 
 Deze sjabloon bepaalt het type webtoepassing. U kunt:
 

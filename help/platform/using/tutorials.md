@@ -24,7 +24,7 @@ ht-degree: 2%
 Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleidingen te raadplegen.
 
 * [Privacybeheer](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen bij het naleven van uw privacy wanneer u onze service gebruikt.
-* [Dynamische inhoud in een e-mail integreren](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): ontdek de grondbeginselen om aan de slag te gaan met de integratie tussen Campaign Classic en de Standaard van het Doel.
+* [Dynamische inhoud in een e-mail integreren](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=nl-NL): ontdek de grondbeginselen om aan de slag te gaan met de integratie tussen Campaign Classic en de Standaard van het Doel.
 * [Te leveren items beheren](../../delivery/using/about-deliverability.md): leer meer over de concepten en beste praktijken met betrekking tot leverbaarheid en de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
 * [Best practices voor levering](../../delivery/using/delivery-best-practices.md): leer over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
 * [Een build-upgrade uitvoeren](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html): deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
@@ -52,4 +52,4 @@ Naast deze korte en gedetailleerde video&#39;s, kunt u vinden [cursussen](https:
 
 ### Cursussen Experience League
 
-U kunt ook de [Aanbevolen cursussen](https://experienceleague.adobe.com/#dashboard/learning) voor Adobe Campaign Classic: cursussen zijn op ervaring gebaseerde verzamelingen van lessen die u helpen snel vaardigheden en kennis te verwerven.
+U kunt ook de [Aanbevolen cursussen](https://experienceleague.adobe.com/nl#dashboard/learning) voor Adobe Campaign Classic: cursussen zijn op ervaring gebaseerde verzamelingen van lessen die u helpen snel vaardigheden en kennis te verwerven.

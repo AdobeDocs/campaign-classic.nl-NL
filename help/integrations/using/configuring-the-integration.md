@@ -28,7 +28,7 @@ Voer de onderstaande stappen uit om de configuratie in Adobe Campaign te starten
 1. [De externe account configureren](#configure-the-external-account)
 1. [Filteren van AEM configureren](#configure-aem-resources-filtering)
 
-Voor geavanceerde configuraties zoals het beheren van verpersoonlijkingsgebieden en blokken. Zie Adobe Experience Manager [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
+Voor geavanceerde configuraties zoals het beheren van verpersoonlijkingsgebieden en blokken. Zie Adobe Experience Manager [documentatie](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
 ### Installeer het AEM integratiepakket in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -119,12 +119,12 @@ Voer de onderstaande stappen uit om de configuratie in Adobe Experience Manager 
 
 1. Vorm **replicatie** om van de AEM authoring instantie te herhalen naar de AEM publishing-instantie.
 
-   Raadpleeg Adobe Experience Manager voor meer informatie over het configureren van replicatie [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
+   Raadpleeg Adobe Experience Manager voor meer informatie over het configureren van replicatie [documentatie](https://helpx.adobe.com/nl/experience-manager/6-5/sites/deploying/using/replication.html).
 
 1. Adobe Experience Manager verbinden met Adobe Campaign door een speciale toepassing te configureren **Cloud Service**.
 
-   Raadpleeg Adobe Experience Manager voor meer informatie over het verbinden van beide oplossingen via Cloud Servicen [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   Raadpleeg Adobe Experience Manager voor meer informatie over het verbinden van beide oplossingen via Cloud Servicen [documentatie](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Vorm **ExternalAlizer-service**.
 
-   Raadpleeg Adobe Experience Manager voor meer informatie over het configureren ervan [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
+   Raadpleeg Adobe Experience Manager voor meer informatie over het configureren ervan [documentatie](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/externalizer.html).

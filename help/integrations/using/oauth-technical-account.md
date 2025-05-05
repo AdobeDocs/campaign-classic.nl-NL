@@ -30,7 +30,7 @@ Ga als volgt te werk om uw technische OAuth-account voor nieuwe integraties te m
 
 1. De console van Adobe Developer van de toegang en login als **Beheerder van het Systeem** van uw Organisatie.
 
-   Voor meer informatie over rollen Admin, verwijs naar deze [ pagina ](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   Voor meer informatie over rollen Admin, verwijs naar deze [ pagina ](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html).
 
 1. Klik op **[!UICONTROL Create a new project]**.
 
@@ -48,7 +48,7 @@ Ga als volgt te werk om uw technische OAuth-account voor nieuwe integraties te m
 
 1. Selecteer de koppeling **[!UICONTROL Product profile]** naar uw project.
 
-   U kunt desgewenst een nieuwe sjabloon maken. [Meer informatie](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   U kunt desgewenst een nieuwe sjabloon maken. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html)
 
 1. Klik vervolgens op **[!UICONTROL Save Configured API]** .
 

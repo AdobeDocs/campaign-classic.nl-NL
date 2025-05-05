@@ -32,4 +32,4 @@ U moet de volgende elementen hebben:
 * An Adobe Experience Manager **publiceren** -instantie.
 * Een Adobe Campaign-instantie.
 
-Raadpleeg voor meer informatie [Adobe Experience Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Raadpleeg voor meer informatie [Adobe Experience Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=nl-NL)

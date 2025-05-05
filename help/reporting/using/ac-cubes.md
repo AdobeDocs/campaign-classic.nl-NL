@@ -45,4 +45,4 @@ Met de module Campagne Marketing Analytics kunt u:
 1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.
 1. Identificeer populaties en verwijs hen in lijsten.
 
-Leer hoe u kubussen kunt maken en gebruiken in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.
+Leer hoe u kubussen kunt maken en gebruiken in [Adobe Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=nl-NL){target="_blank"}.

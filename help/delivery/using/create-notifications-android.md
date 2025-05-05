@@ -68,7 +68,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
 
 ## Een meldingsbericht maken {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om een de duwbericht van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"} tot stand te brengen .
+![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om een de duwbericht van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=nl-NL#additional-resources){target="_blank"} tot stand te brengen .
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** .
 

@@ -83,7 +83,7 @@ Dankzij replicatie van bezorgings-id&#39;s en e-maillogboeken hebt u toegang tot
 
 De Schakelaar ACS synchroniseert quarantines tussen Campagne v7 en Campaign Standard.
 
-Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bijvoorbeeld een e-mailadres. Als het e-mailadres door Campaign Standard in quarantined is, worden de gegevens overgegaan tot Campagne v7 tijdens de volgende synchronisatie. Voor meer informatie over quarantines, zie [Quarantainebeheer](../../delivery/using/understanding-quarantine-management.md) en [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bijvoorbeeld een e-mailadres. Als het e-mailadres door Campaign Standard in quarantined is, worden de gegevens overgegaan tot Campagne v7 tijdens de volgende synchronisatie. Voor meer informatie over quarantines, zie [Quarantainebeheer](../../delivery/using/understanding-quarantine-management.md) en [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=nl-NL).
 
 ### Gepliceerde profielen gebruiken {#using-replicated-profiles}
 

@@ -75,7 +75,7 @@ Als klant op locatie moet u ook controleren of er een campagne **[!UICONTROL Pro
 1. Heb toegang tot het **Product en de sectie van de Diensten** en controle **Adobe Campaign** is vermeld.
 Als u niet **contact [ de Zorg van de Klant van de Adobe van 0&rbrace; Adobe Campaign ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) {_blank} kunt zien om het toegevoegde te krijgen.**
 1. Klik **Adobe Campaign** en selecteer uw Organisatie.
-   **Voorzichtigheid**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Leer meer over Organisaties [ in deze pagina ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id) {_blank}.
+   **Voorzichtigheid**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Leer meer over Organisaties [ in deze pagina ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl-NL#ims-org-id) {_blank}.
 
 1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Voor deze **[!UICONTROL Product profile]** is geen toestemming vereist.
 

@@ -78,7 +78,7 @@ Dit programma heeft drie hoofddoelstellingen:
 
 Om deze inspanning op gang te brengen, zullen de rekeningen die deze migratie vereisen een e-mailmededeling van Adobe ontvangen die een chronologie en toegang tot documentatie verstrekken. Dit is uw melding dat uw account is gepland voor migratie.
 
-Een migratie kan worden in werking gesteld door [ een nieuw de steunkaartje van de Zorg van de Klant te openen ](https://experienceleague.adobe.com/?support-solution=Campaign#support). Gebruik de onderwerpregel &#39;Migreren naar AWS&#39;.
+Een migratie kan worden in werking gesteld door [ een nieuw de steunkaartje van de Zorg van de Klant te openen ](https://experienceleague.adobe.com/nl?support-solution=Campaign#support). Gebruik de onderwerpregel &#39;Migreren naar AWS&#39;.
 
 ### Is deze migratie verplicht?
 

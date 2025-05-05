@@ -28,7 +28,7 @@ ht-degree: 7%
 Het staat voor meer flexibele integratie toe aangezien de configuratie minimaal is en een derde niet betrokken is.
 Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is op de prestaties van marketingactiviteiten. De integratie kan bijvoorbeeld een miljoen triggers per uur verwerken.
 
-![](assets/do-not-localize/book.png) ontdekt hoe te om [ een trekker van Experience Cloud ](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) tot stand te brengen en, kritiek consumentengedrag te identificeren te bepalen en te controleren.
+![](assets/do-not-localize/book.png) ontdekt hoe te om [ een trekker van Experience Cloud ](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=nl-NL) tot stand te brengen en, kritiek consumentengedrag te identificeren te bepalen en te controleren.
 
 ## [!DNL Triggers] architectuur {#triggers-architecture}
 
@@ -43,7 +43,7 @@ Het [!DNL pipelined] -proces meldt zich aan bij de Experience Cloud met behulp v
 Controleer voordat u met deze implementatie begint of:
 
 * a geldig **herkenningsteken van de Organisatie**: identiteitskaart van de Organisatie is het unieke herkenningsteken binnen Adobe Experience Cloud, dat bijvoorbeeld voor de dienst VisitorID en IMS wordt gebruikt Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
-* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [ in deze pagina ](https://helpx.adobe.com/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
+* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [ in deze pagina ](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
 
 ## Implementatiestappen {#implement}
 

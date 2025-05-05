@@ -60,7 +60,7 @@ Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van h
 </tr>
 <tr>
 <td>Controleer de algemene configuratie van de beveiligingszones.</td>
-<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>deze afdeling.</a></td>
+<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=nl-NL#configuring-campaign-server"/>deze afdeling.</a></td>
 </tr>
 <tr>
 <td>De pdump van de bevelserver keert terug <b>Geen taken</b></td>

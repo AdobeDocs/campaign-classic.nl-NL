@@ -18,7 +18,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Deze pagina is alleen van toepassing op operatoren die verbinding maken met Campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
+>Deze pagina is alleen van toepassing op operatoren die verbinding maken met Campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/nl/enterprise/using/manage-permissions-and-roles.html).
 
 Adobe Campaign stelt standaard een reeks benoemde rechten voor waarmee u de machtigingen kunt definiëren die aan operatoren en groepen operatoren zijn toegewezen. Deze rechten kunnen worden bewerkt via de **[!UICONTROL Administration > Access management > Named rights]** knooppunt van de structuur.
 
@@ -76,4 +76,4 @@ Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde 
 
 Adobe Campaign-matrix voor toegangsrechten is beschikbaar [hier](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=nl-NL)

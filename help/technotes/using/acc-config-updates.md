@@ -73,7 +73,7 @@ De **nu beschikbaar** consoleversies hieronder zouden moeten worden geïnstallee
 
 ## Adobe Identity Management System (IMS)-update
 
-De Dienst van de Identiteit van de Adobe (IMS) zal ophouden ondersteunend oude versies Internet Explorer van **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+De Dienst van de Identiteit van de Adobe (IMS) zal ophouden ondersteunend oude versies Internet Explorer van **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/nl/x-productkb/global/update-operating-system-and-browser.html).
 
 Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
@@ -100,7 +100,7 @@ Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de 
 
 Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan deze versie worden bevorderd.
 
-* Meer informatie over toegang [Softwaredistributie Adoben](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+* Meer informatie over toegang [Softwaredistributie Adoben](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
 
 * [Meer informatie over het installeren van Campagne Client Console](../../installation/using/installing-the-client-console.md).
 

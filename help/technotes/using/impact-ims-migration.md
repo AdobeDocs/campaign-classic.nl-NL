@@ -93,7 +93,7 @@ U kunt vanaf de clientconsole geen operatoren met native verificatie meer maken,
 
 Als gevolg hiervan zijn deze handelingen uitgeschakeld in de clientconsole.
 
-Het beheer van operatoren is gecentraliseerd in de Adobe Admin Console en de volgende taken worden nu uitsluitend via deze console beheerd. Leer hoe u gebruikers kunt maken en machtigingen kunt toewijzen in [Campagne v8-documentatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+Het beheer van operatoren is gecentraliseerd in de Adobe Admin Console en de volgende taken worden nu uitsluitend via deze console beheerd. Leer hoe u gebruikers kunt maken en machtigingen kunt toewijzen in [Campagne v8-documentatie](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Niet-beschikbare opties {#unavailable-migration}
 
@@ -119,5 +119,5 @@ Na de migratie zijn de volgende taken niet meer beschikbaar in de clientconsole:
 >* [Migratie van eindgebruikers naar IMS](migrate-users-to-ims.md)
 >* [Migratie van technische operatoren naar Adobe Developer-console](ims-migration.md)
 >* [Opmerkingen bij de nieuwste release van Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Wat is Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+>* [Wat is Adobe Identity Management System (IMS)](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"}
 

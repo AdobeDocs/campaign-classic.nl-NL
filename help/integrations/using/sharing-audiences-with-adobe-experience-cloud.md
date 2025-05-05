@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experience Cloud-services. Er zijn twee opties beschikbaar:
 
-1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Als u deze integratie wilt implementeren, moet u een verbinding tot stand brengen tussen uw Real-time Customer Data Platform en Campagne (RTCDP). [Meer informatie in deze sectie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
+1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Als u deze integratie wilt implementeren, moet u een verbinding tot stand brengen tussen uw Real-time Customer Data Platform en Campagne (RTCDP). [Meer informatie in deze sectie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=nl-NL){target="_blank"}.
 
 1. Integreren **Adobe Campaign** with  **Soorten publiek Experience Cloud** of **Adobe Audience Manager**. Dan kunt u:
 

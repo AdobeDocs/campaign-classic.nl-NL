@@ -91,4 +91,4 @@ De modus Aangepast is voor geavanceerde clients die hun eigen MX-regels willen i
 * [MX-configuratie](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische e-mailconfiguratie](../../installation/using/email-deliverability.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Technische Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic - Technische Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=nl-NL)

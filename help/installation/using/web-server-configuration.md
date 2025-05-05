@@ -81,5 +81,5 @@ Hieronder vindt u een aantal van de belangrijkste aanbevolen werkwijzen voor Apa
 
 Verwante onderwerpen:
 
-* [Adobe Marketing Cloud-compatibiliteitsoverzicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Overzicht van Adobe Campaign Security](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud-compatibiliteitsoverzicht](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Overzicht van Adobe Campaign Security](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/governance-privacy-security/overview#security)

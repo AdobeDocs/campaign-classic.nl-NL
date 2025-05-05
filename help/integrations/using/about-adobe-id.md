@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # Informatie over Adobe ID {#about-adobe-id}
 
-Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg voor meer informatie over de verschillende typen Adobe-id&#39;s [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html).
+Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg voor meer informatie over de verschillende typen Adobe-id&#39;s [deze pagina](https://helpx.adobe.com/nl/enterprise/using/identity.html).
 
 Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console met hun Adobe ID in plaats van met de [native verificatie van gebruikers/wachtwoorden](../../platform/using/access-management-operators.md). Deze implementatie biedt de volgende voordelen:
 
@@ -50,6 +50,6 @@ Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console met hun
 
 | Nuttige pagina’s | Aanvullende bronnen |
 |---|---|
-| [IMS configureren](../../integrations/using/configuring-ims.md) | [Veelgestelde vragen over Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS configureren](../../integrations/using/configuring-ims.md) | [Veelgestelde vragen over Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=nl-NL) |
 | [IMS implementeren](../../integrations/using/implementing-ims.md) | [Toegangscontrole](../../platform/using/access-management.md) |
 | [IMS-probleemoplossing](../../integrations/using/ims-troubleshooting.md) | [Campagnepakketten installeren](../../installation/using/installing-campaign-standard-packages.md) |

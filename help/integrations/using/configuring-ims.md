@@ -25,7 +25,7 @@ ht-degree: 1%
 ## Vereisten {#prerequisites}
 
 * U moet een Adobe Experience Cloud-naam en -id hebben. Raadpleeg voor meer informatie over uw organisatie-id [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
-* U moet gebruikers toevoegen in het Experience Cloud. Raadpleeg voor meer informatie hierover [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* U moet gebruikers toevoegen in het Experience Cloud. Raadpleeg voor meer informatie hierover [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=nl-NL){_blank}.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Vorm **Adobe Experience Cloud** externe rekening in **[!UICONTROL Administration
 
 Voer de volgende gegevens in:
 
-* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door het team van de Zorg van de Adobe. Raadpleeg voor meer informatie de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door het team van de Zorg van de Adobe. Raadpleeg voor meer informatie de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=nl-NL).
 
   De **[!UICONTROL Callback server]** adres moet worden opgegeven in **https**. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 

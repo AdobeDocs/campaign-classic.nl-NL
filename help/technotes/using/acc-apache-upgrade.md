@@ -26,7 +26,7 @@ Het Adobe Campaign-team voert de upgradeactiviteiten voor de Apache-versie uit d
 
 Van deze upgrade wordt verwacht dat deze automatisch buiten de normale kantooruren wordt uitgevoerd, zodat u de Campagneservice zonder onderbreking kunt blijven gebruiken.
 
-De niet-productie-instantie(s) worden eerst door de Adobe bijgewerkt, waarna de productie-instantie(s) worden bijgewerkt. Aangezien dit een automatisch upgradeproces is dat eigendom is van de Adobe, is er geen actie van uw kant vereist. Als u echter problemen ondervindt, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+De niet-productie-instantie(s) worden eerst door de Adobe bijgewerkt, waarna de productie-instantie(s) worden bijgewerkt. Aangezien dit een automatisch upgradeproces is dat eigendom is van de Adobe, is er geen actie van uw kant vereist. Als u echter problemen ondervindt, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/nl?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ De niet-productie-instantie(s) worden eerst door de Adobe bijgewerkt, waarna de 
 
 * **Welke bevestigingen moeten door de klanten worden in werking gesteld?**
 
-  Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Er is geen specifieke test nodig voor deze beveiligingsupgrade. Indien een probleem wordt vastgesteld, kunt u contact opnemen met [Klantenservice Adoben](https://experienceleague.adobe.com/nl?support-solution=Campaign#support).
 
 
 * **Kan ik om een verandering in Datum/Tijd in de geplande groef van de veiligheidsverbetering verzoeken?**
@@ -65,4 +65,4 @@ De niet-productie-instantie(s) worden eerst door de Adobe bijgewerkt, waarna de 
   Aangezien dit een veiligheidsmoeilijke situatie is, adviseren wij u sterk aan het bestaande programma aan te passen.
 
 
-Voor elke andere vraag kunt u zich tot [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Voor elke andere vraag kunt u zich tot [Klantenservice Adoben](https://experienceleague.adobe.com/nl?support-solution=Campaign#support).

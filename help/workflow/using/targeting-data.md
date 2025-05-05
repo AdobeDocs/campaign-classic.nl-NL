@@ -181,7 +181,7 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    ![](assets/do-not-localize/v7.jpeg) [ de documentatie van de Campagne v7 ](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=nl-NL)
 
 Vervolgens moeten nieuwe subsets worden toegevoegd:
 

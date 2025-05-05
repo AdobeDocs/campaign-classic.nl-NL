@@ -909,7 +909,7 @@ Leer meer over [ Diensten ](../../delivery/using/about-services-and-subscription
 
 In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. Met het regelpaneel kunt u handelingen uitvoeren op uw SFTP-servers, zoals de opslagcapaciteit controleren, IP-adressen beheren voor aanbiedingen en het beheren van openbare SSH-sleutels.
 
-Leer meer over [ Beheer SFTP ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Leer meer over [ Beheer SFTP ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL).
 +++
 
 +++**de dienstenactiviteit van het Abonnement van 0&rbrace;**

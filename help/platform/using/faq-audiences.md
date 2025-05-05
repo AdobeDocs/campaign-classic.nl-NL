@@ -28,7 +28,7 @@ U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole
 
 Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/import-operations-samples.md) in uw database.
 
-![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=nl-NL)
 
 ## Hoe kan ik de doelpopulatie van een marketingcampagne definiëren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -41,7 +41,7 @@ Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd 
 
 [Klik hier voor meer informatie](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=nl-NL) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=nl-NL)
 
 ## Hoe kan ik een populatie dedupliceren voordat ik een bericht verstuurt? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 

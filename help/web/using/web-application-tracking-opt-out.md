@@ -22,7 +22,7 @@ Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van
 
 >[!NOTE]
 >
->Volg bij het schrijven van scripts altijd de richtlijnen die in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Volg bij het schrijven van scripts altijd de richtlijnen die in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 

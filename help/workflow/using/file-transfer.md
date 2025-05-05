@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 De **overdracht van het Dossier** activiteit laat u dossiers ontvangen of verzenden, test voor dossieraanwezigheid, of lijstdossiers op een server. Het gebruikte protocol is Azure Blob Storage, Amazon Simple Storage Service (S3), FTP of SFTP.
-Met S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met Adobe Real-time Customer Data-platform. Voor meer op dit, verwijs naar deze [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+Met S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met Adobe Real-time Customer Data-platform. Voor meer op dit, verwijs naar deze [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=nl-NL).
 
 >[!NOTE]
 >

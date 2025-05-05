@@ -27,7 +27,7 @@ De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken.
 
 >[!NOTE]
 >
->Om meer over het Verdeelde Markeren voor Adobe Campaign te weten te komen en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank} .
+>Om meer over het Verdeelde Markeren voor Adobe Campaign te weten te komen en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank} .
 
 <!--
 ## Terminology {#terminology}

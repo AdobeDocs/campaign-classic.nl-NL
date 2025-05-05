@@ -23,7 +23,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
-  De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Het hulpmiddel om SSH sleutels voor Vensters te produceren is PuTTYgen, en ssh-keygen voor Linux. U kunt openbare sleutels van SSH via het Controlebord van de Campagne uploaden. [ leer meer ](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"} 
+  De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Het hulpmiddel om SSH sleutels voor Vensters te produceren is PuTTYgen, en ssh-keygen voor Linux. U kunt openbare sleutels van SSH via het Controlebord van de Campagne uploaden. [ leer meer ](https://experienceleague.adobe.com/nl/docs/control-panel/using/sftp-management/key-management){target="_blank"} 
 
 * Gebruik batchverwerking in SFTP-uploads en in workflows.
 
@@ -31,7 +31,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
 
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. De openbare IPs kan via het Controlebord worden toegevoegd. [ leer meer ](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"} 
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. De openbare IPs kan via het Controlebord worden toegevoegd. [ leer meer ](https://experienceleague.adobe.com/nl/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"} 
 
 ## Aanbevolen werkwijzen voor gebruik van SFTP-opslag {#sftp-server-best-practices}
 
@@ -43,7 +43,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 >[!NOTE]
 >
->* U kunt uw de serveropslag van SFTP met het Campaign Classic [ Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"} controleren .
+>* U kunt uw de serveropslag van SFTP met het Campaign Classic [ Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=nl-NL){target="_blank"} controleren .
 >
 >* Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerdertoegang tot een gebruiker te verlenen zijn gedetailleerd in [ deze pagina ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel){target="_blank"} .
 >

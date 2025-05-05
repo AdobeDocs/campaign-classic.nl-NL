@@ -86,7 +86,7 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 1. De nieuwste versie van uw [serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md).
 
-1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
 
 U moet ook alle [nuttige opdrachtregels](../../installation/using/command-lines.md) voordat u een upgrade voor build start:
 

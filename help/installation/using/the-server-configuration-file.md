@@ -410,7 +410,7 @@ In de **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehoren
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximum aantal toegestane verbindingen voordat een nieuwe verbinding wordt geweigerd. Zie dit <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
+   <td> Maximum aantal toegestane verbindingen voordat een nieuwe verbinding wordt geweigerd. Zie dit <a href="https://helpx.adobe.com/nl/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 

@@ -25,7 +25,7 @@ In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen w
 
 Deze procedures zijn beperkt tot **op-gebouw**/ **hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **ontvangen** plaatsingen, server-zijmontages kunnen door Adobe slechts worden gevormd. Nochtans, kunnen sommige montages opstelling binnen [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Voor **ontvangen** plaatsingen, server-zijmontages kunnen door Adobe slechts worden gevormd. Nochtans, kunnen sommige montages opstelling binnen [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL).
 
 Raadpleeg de volgende secties voor meer informatie:
 

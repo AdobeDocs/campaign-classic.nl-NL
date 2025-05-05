@@ -123,7 +123,7 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
    Deze activiteit wordt gebruikt om de gegevens van het geselecteerde publiek terug te winnen. U kunt ook een extra **[!UICONTROL Source Filtering]** indien nodig door het tabblad volgens van deze activiteit te gebruiken.
 
-1. Een **[!UICONTROL Email delivery]** activiteit en vorm het als andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Een **[!UICONTROL Email delivery]** activiteit en vorm het als andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=nl-NL).
 1. Open de leveringsinhoud.
 1. Een personalisatieveld toevoegen. Zoek vanuit de pop-up de **[!UICONTROL Additional data (targetData)]** knooppunt. Dit knooppunt bevat de aanvullende gegevens van het publiek die zijn berekend in de initiële doelworkflow. U kunt ze als elk ander verpersoonlijkingsveld gebruiken.
 
@@ -145,9 +145,9 @@ Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 1. Van het leveringsdashboard, bevestig manueel dat de levering kan worden verzonden.
 1. Controleer de rapporten en logboeken van de levering:
 
-   * **In Campaign Standard**: Toegang [rapporten](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) en [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) in verband met de levering, zoals voor elke levering.
+   * **In Campaign Standard**: Toegang [rapporten](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=nl-NL) en [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=nl-NL) in verband met de levering, zoals voor elke levering.
    * **in Campagne v7 en Campaign Standard**: Logbestanden voor bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtracking worden gesynchroniseerd met Campagne v7. U kunt dan tot 360° mening van uw marketing campagnes van Campaign v7 krijgen.
 
      Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
-     Meer informatie over quarantainebeheer vindt u in Campaign Standard in [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+     Meer informatie over quarantainebeheer vindt u in Campaign Standard in [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=nl-NL).

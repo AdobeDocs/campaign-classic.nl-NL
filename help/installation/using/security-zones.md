@@ -27,7 +27,7 @@ Operatoren zijn vanuit hun profiel in de console gekoppeld aan een beveiligingsz
 >
 >Deze procedure wordt beperkt tot **op-gebouw** plaatsingen.
 >
->Als a **ontvangen** klant, als u tot [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>Als a **ontvangen** klant, als u tot [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL)
 >
 >Andere **hybride/ontvangen** klanten moeten uit bereiken aan het team van de steun van de Adobe om IP aan de lijst van gewenste personen toe te voegen.
 >

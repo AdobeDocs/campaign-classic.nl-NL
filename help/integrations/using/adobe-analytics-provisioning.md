@@ -114,4 +114,4 @@ Verwijs naar [ deze pagina ](oauth-technical-account.md#oauth-service) voor de g
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} te werken.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} te werken.

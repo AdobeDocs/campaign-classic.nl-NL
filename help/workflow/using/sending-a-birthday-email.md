@@ -27,7 +27,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-![](assets/do-not-localize/how-to-video.png) U vindt dit gebruik ook in de vorm van een video. Voor meer op dit, verwijs naar [ Creërend een werkschema ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) U vindt dit gebruik ook in de vorm van een video. Voor meer op dit, verwijs naar [ Creërend een werkschema ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=nl-NL) video.
 
 Hiertoe maakt u een campagne en klikt u op de tab **[!UICONTROL Targeting and workflows]** . Voor meer op dit, verwijs naar [ Bouwend het belangrijkste doel in een werkschema ](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) sectie.
 

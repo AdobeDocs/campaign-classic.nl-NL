@@ -63,7 +63,7 @@ Raadpleeg [dit document](privacy-and-recommendations.md) voor meer informatie ov
 
 Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte.
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=nl-NL)
 
 ## Hoe kan ik het publiek van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -85,7 +85,7 @@ Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten wor
 
 [Klik hier voor meer informatie](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Dit ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Dit ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=nl-NL)
 
 ## Hoe je SMS-berichten verzendt? {#how-to-send-sms-messages-}
 
@@ -131,6 +131,6 @@ Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in
 
 ## Zijn er nieuwe documentatie updates en hulpmaterialen vrijgegeven? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
+De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=nl-NL).
 
 U kunt ook de meest recente technische opmerkingen [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/article-list.html) raadplegen.

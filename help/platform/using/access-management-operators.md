@@ -18,18 +18,18 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Vanaf Campaign Classic v7.3.1 moeten alle operatoren [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} om verbinding te maken met Campagne.
+>Vanaf Campaign Classic v7.3.1 moeten alle operatoren [Adobe Identity Management System (IMS)](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} om verbinding te maken met Campagne.
 >
 >Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign ten zeerste aan om alle bestaande verificatiemodus voor operatoren te migreren van de native verificatie van aanmelding/wachtwoord naar Adobe Identity Management System (IMS). Leer hoe u uw operatoren kunt migreren in [deze pagina](../../technotes/using/migrate-users-to-ims.md).
 > 
->Na deze migratie is de volgende sectie niet meer van toepassing.  Meer informatie over het instellen van machtigingen met Adobe IMS in [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Na deze migratie is de volgende sectie niet meer van toepassing.  Meer informatie over het instellen van machtigingen met Adobe IMS in [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
 
 
 ## Aan de slag met campagneoperatoren {#about-operators}
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/nl/enterprise/using/manage-users-individually.html#_blank).
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 

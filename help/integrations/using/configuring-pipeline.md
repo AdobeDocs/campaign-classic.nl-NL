@@ -28,7 +28,7 @@ De triggers worden gebruikt voor targeting door een campagneworkflow die e-mails
 Controleer voordat u deze configuratie start of:
 
 * Een Adobe Developer-project
-* Een geldige identiteitskaart van de Organisatie - om uw identiteitskaart van de Organisatie te vinden, verwijs naar [ deze pagina ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Een geldige identiteitskaart van de Organisatie - om uw identiteitskaart van de Organisatie te vinden, verwijs naar [ deze pagina ](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Een ontwikkelaar heeft toegang tot uw organisatie
 * Een geldige triggerconfiguratie in Adobe Analytics
 

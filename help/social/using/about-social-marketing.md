@@ -18,7 +18,7 @@ ht-degree: 6%
 
 De **Sociale netwerken beheren** (Sociale Marketing) toepassing die voor het beheren van sociale netwerken wordt ontworpen laat u met klanten en vooruitzichten via X (vroeger gekend als Twitter) interactie aangaan.
 
-Leer de belangrijkste stappen om Campagne en X in te integreren [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html){target="_blank"}.
+Leer de belangrijkste stappen om Campagne en X in te integreren [Campagne v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=nl-NL){target="_blank"}.
 
 Als klant op locatie of hybride, moet uw externe X-account zijn geconfigureerd en ingeschakeld. Voor hybride configuraties: **Midden-sourcing** moet ook worden ingesteld met een actieve verbinding met het platform voor midsourcing.
 

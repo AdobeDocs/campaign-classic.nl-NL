@@ -50,7 +50,7 @@ Het importeren duurt 24-36 uur voordat u het document kunt synchroniseren als de
 >
 >Als u soorten publiek importeert van Adobe Analytics naar Adobe Campaign, moeten deze soorten publiek eerst in de Audience Manager worden gedeeld. Dit proces duurt 12-24 uur en moet worden toegevoegd aan de synchronisatie van 24-36 uur met Campagne.
 >
->In dat specifieke geval kan de tijd voor het delen van het publiek maximaal 60 uur bedragen. Voor meer informatie over het delen van Adobe Analytics-publiek in Audience Manager raadpleegt u [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}.
+>In dat specifieke geval kan de tijd voor het delen van het publiek maximaal 60 uur bedragen. Voor meer informatie over het delen van Adobe Analytics-publiek in Audience Manager raadpleegt u [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=nl-NL){target="_blank"}.
 
 De publieksgegevens worden volledig vervangen telkens als het wordt gesynchroniseerd. Alleen segmenten kunnen worden geïmporteerd. De korrelige gegevens met inbegrip van zeer belangrijk-waardeparen, eigenschappen en regels worden niet gesteund.
 
@@ -80,7 +80,7 @@ U kunt een publiek van Adobe Campaign naar Audience Manager uitvoeren gebruikend
 
 Het publiek wordt vervolgens geëxporteerd. De activiteit van het sparen publiek heeft twee uitgaande overgangen. De hoofdovergang bevat de ontvangers die zijn geëxporteerd. De aanvullende overgang bevat de ontvangers die niet met een bezoekersidentiteitskaart of gedeclareerde identiteitskaart konden in kaart worden gebracht.
 
-Synchronisatie tussen oplossingen duurt 24-36 uur. Na deze periode kunt u uw nieuwe publiek vinden en opnieuw gebruiken in andere Adobe Experience Cloud-oplossingen. Raadpleeg voor meer informatie over het gebruik van een gedeeld Adobe Campaign-publiek dit [documentatie](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
+Synchronisatie tussen oplossingen duurt 24-36 uur. Na deze periode kunt u uw nieuwe publiek vinden en opnieuw gebruiken in andere Adobe Experience Cloud-oplossingen. Raadpleeg voor meer informatie over het gebruik van een gedeeld Adobe Campaign-publiek dit [documentatie](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >

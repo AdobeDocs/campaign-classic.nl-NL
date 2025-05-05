@@ -112,7 +112,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -124,9 +124,9 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaigns Classic in het regelpaneel kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [Voeg IPs op de lijst van gewenste personen toe](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) om toegang te krijgen tot uw Campagne-instantie(s)
+* [Voeg IPs op de lijst van gewenste personen toe](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL) om toegang te krijgen tot uw Campagne-instantie(s)
 * [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=nl-NL)
 * [De GPG-sleutels voor gegevenscodering beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
