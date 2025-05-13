@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 458821770c6233ec1893d4efe60169516b311bdd
+source-git-commit: be7412f2ccf050a44eb32ebe8280c695349faac8
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 26%
+source-wordcount: '903'
+ht-degree: 25%
 
 ---
 
@@ -17,7 +17,20 @@ ht-degree: 26%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic v7**. Elke nieuwe build heeft een status die wordt aangegeven door een kleur. Meer informatie over de build-statussen van Campaign Classic v7 vindt u op [deze pagina](rn-overview.md).
 
-## Release 7.4.2 - build 9390 {#release-7-4-2}
+## Release 7.4.2  {#release-7-4-2}
+
+### Versie 9391 {#build-9391}
+
+[!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
+
+_Mei 12, 2025_
+
+Deze build bevat de volgende oplossingen:
+
+* Probleem verholpen dat zich na de upgrade voordeed bij niet-Oracle-instellingen. (NEO-87012)
+* Oplossing voor een TLS-/HTTPS-backendprobleem dat zowel de clientconsole als de server betrof. (NEO-87432)
+
+### Versie 9390 {#build-9390}
 
 [!BADGE Algemene beschikbaarheid]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Algemene beschikbaarheid"}
 
@@ -33,13 +46,13 @@ This release comes with the following compatibility updates:
 
 -->
 
-### Beveiligingsverbeteringen {#security-7-4-2}
+**Beveiligingsverbeteringen**
 
 Deze release bevat verschillende beveiligingsoplossingen.
 
 De verbinding met Adobe-oplossingen en -toepassingen via het **[!UICONTROL Adobe Experience Cloud]** externe account is bijgewerkt om de beveiliging te verbeteren.
 
-### Belangrijkste correcties {#release-7-4-2-fixes}
+**Belangrijke moeilijke situaties**
 
 Deze release bevat de volgende belangrijkste oplossingen:
 
@@ -58,7 +71,7 @@ Deze release bevat de volgende belangrijkste oplossingen:
 * Mail Transfer Agent (MTA) - Probleem opgelost met een verweesde onderliggende MTA die vast bleef zitten op de status **[!UICONTROL Start pending]**.
 
 
-### Andere oplossingen {#release-7-4-2-other-fixes}
+**Andere moeilijke situaties**
 
 De volgende problemen zijn ook opgelost in deze release:
 
