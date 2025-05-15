@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 25%
+ht-degree: 95%
 
 ---
 
@@ -75,61 +75,61 @@ Deze release bevat de volgende belangrijkste oplossingen:
 
 De volgende problemen zijn ook opgelost in deze release:
 
-* Oplossing voor een kwestie waar de **Gegevens die (dossier) laden** activiteit er niet in slaagde om dossiers aan de server <!--after an upgrade to version 8.3.8--> te uploaden. Gebruikers kunnen nu bestanden uploaden zonder vastgelopen voortgang of consolefouten. (NEO-47269)
+* Probleem verholpen waarbij de activiteit **Gegevens laden (bestand)** er niet in slaagde bestanden naar de server te uploaden<!--after an upgrade to version 8.3.8-->. Gebruikers kunnen nu bestanden uploaden zonder vastgelopen voortgang of consolefouten. (NEO-47269)
 
-* Fouten in segmentatiefouten in Apache opgelost <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349-->. Met deze oplossing wordt het genereren van kernbestanden voorkomen en wordt een stabiele serverbewerking gegarandeerd. (NEO-59059)
+* Fouten met segmentatie in Apache opgelost <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349-->. Deze oplossing voorkomt het genereren van kernbestanden en zorgt voor een stabiele werking van de server. (NEO-59059)
 
-* Een connectiviteitsprobleem opgelost met de Google BigQuery-database <!--after upgrading to version 7.3.3 build 9359--> . Gebruikers kunnen nu verbindingen testen met succes via de externe GCP-account. (NEO-62455)
+* Een connectiviteitsprobleem opgelost met de Google BigQuery-database <!--after upgrading to version 7.3.3 build 9359-->. Gebruikers kunnen nu verbindingen testen via het externe GCP-account. (NEO-62455)
 
-* Verbeterde compatibiliteit voor kolomupdates van Boolean en Datetime in Google BigQuery-tabellen met FDA (Federated Data Access). Deze correctie zorgt voor een correcte verwerking van gegevenstypen tijdens invoegen/bijwerken-bewerkingen. (NEO-65774)
+* Verbeterde compatibiliteit voor kolomupdates van Boolean en Datetime in Google BigQuery-tabellen met FDA (Federated Data Access). Deze oplossing zorgt voor een correcte verwerking van gegevenstypen tijdens het invoegen/bijwerken. (NEO-65774)
 
-* Oplossing voor een kwetsbaarheid bij de injectie van bronnen waardoor aanvallers HTML-elementen in e-maileindpunten konden injecteren. Deze beveiligingsverbetering voorkomt ongeoorloofde toegang en phishingpogingen. (NEO-66462)
+* Een kwetsbaarheid voor resource-injectie verholpen, waardoor aanvallers HTML-elementen in e-maileindpunten konden injecteren. Deze beveiligingsverbetering voorkomt ongeoorloofde toegang en phishing-pogingen. (NEO-66462)
 
-* Oplossing voor periodiek optredende fouten bij het invoegen van gegevens in Google BigQuery-tabellen vanwege problemen met HTTP-inhoud of overdrachtcodering. Deze oplossing zorgt voor stabiele workflows voor het laden van gegevens. (NEO-66989)
+* Oplossing voor periodiek optredende fouten bij het invoegen van gegevens in Google BigQuery-tabellen als gevolg van problemen met HTTP-content of overdrachtscodering. Deze oplossing zorgt voor stabiele workflows voor het laden van gegevens. (NEO-66989)
 
-* Oplossing voor een kwetsbaarheid met betrekking tot padtraversal in de methode `File.list()` in workflows. Deze beveiligingsverbetering voorkomt ongeoorloofde toegang tot mappen en beschermt vertrouwelijke bestanden. (NEO-77898)
+* Kwetsbaarheid voor path traversal in de `File.list()`-methode binnen workflows verholpen. Deze beveiligingsverbetering voorkomt ongeoorloofde toegang tot mappen en beschermt vertrouwelijke bestanden. (NEO-77898)
 
-* Probleem verholpen waarbij de SMS-leveringslogboeken niet correct werden bijgewerkt naar de status &#39;Ontvangen op mobiel&#39;. Deze verbetering zorgt voor nauwkeurige leveringsrapportage. (NEO-78843)
+* Probleem verholpen waarbij SMS-leveringslogboeken niet correct werden bijgewerkt naar de status &#39;Ontvangen op mobiel&#39;. Deze verbetering zorgt voor een nauwkeurige leveringsrapportage. (NEO-78843)
 
-* Oplossing voor aanmeldingsfouten in Adobe Campaign Classic bij gebruik van Azure Federated Data Access (FDA). Gebruikers kunnen zich nu met succes aanmelden via de clientconsole. (NEO-79373)
+* Aanmeldingsfouten opgelost in Adobe Campaign Classic bij gebruik van Azure Federated Data Access (FDA). Gebruikers kunnen nu inloggen via de clientconsole. (NEO-79373)
 
-* Probleem verholpen waarbij een crash optrad in workflows die door de methode `CCurlAzureBlobStorage::UploadStream()` werden veroorzaakt. Deze verbetering verzekert stabiele werkschemauitvoering. (NEO-79598)
+* Een crash verholpen in workflows die werd veroorzaakt door de `CCurlAzureBlobStorage::UploadStream()`-methode. Deze verbetering zorgt voor een stabiele uitvoering van de workflow. (NEO-79598)
 
-* Activeerde twee kritieke compilatiemarkeringen (`ControlFlowGuard` en `StackProtection`) op Vensters om productveiligheid te verbeteren en exploitatierisico&#39;s te verlichten. (NEO-80145)
+* Twee kritieke compilatievlaggen (`ControlFlowGuard` en `StackProtection`) in Windows geactiveerd om de beveiliging van het product te verbeteren en exploitatierisico&#39;s te beperken. (NEO-80145)
 
-* Probleem verholpen waarbij gebeurtenisstatussen onjuist werden verzonden terwijl de broadlog in een mislukte status verkeerde. Deze verbetering zorgt voor nauwkeurige gebeurtenisrapportage. (NEO-80245)
+* Probleem verholpen waarbij gebeurtenisstatussen onjuist werden verzonden terwijl de broadlog zich in een mislukte status bevond. Deze verbetering zorgt voor nauwkeurige gebeurtenisrapportage. (NEO-80245)
 
-* POP3 OAuth vernieuwt en toegangstoken wordt nu opgeslagen in de database en de fout `Authentication failure: unknown user name or bad password` wordt niet meer weergegeven nadat het token voor vernieuwen is verlopen. (NEO-80683)
+* POP3 OAuth vernieuwen en toegangstoken worden nu opgeslagen in de database en de fout `Authentication failure: unknown user name or bad password` wordt niet meer weergegeven nadat de vernieuwingstoken is verlopen. (NEO-80683)
 
-* Een optie `XApiKey` wordt nu gebruikt als een waarde voor de client-id om verbinding te maken met Adobe Analytics in plaats van de client-id van de externe account van Marketing Cloud (MAC) te gebruiken. (NEO-80434)
+* Een optie `XApiKey` wordt nu gebruikt als waarde voor de client-id om verbinding te maken met Adobe Analytics in plaats van de client-id van de externe account van Marketing Cloud (MAC). (NEO-80434)
 
-* Oplossing voor een probleem waarbij inMail-gebruikers verificatiefouten ondervonden als gevolg van een verlopen token. Gebruikers kunnen nu de verbinding testen en de server opnieuw starten om vergelijkbare problemen op te lossen. (NEO-80683)
+* Probleem opgelost waarbij authenticatiefouten optraden bij inMail-gebruikers als gevolg van het verlopen van een token. Gebruikers kunnen nu de verbinding testen en de server opnieuw opstarten om vergelijkbare problemen op te lossen. (NEO-80683)
 
-* Verbeterde functionaliteit van de analyse API door ervoor te zorgen dat alle analytische aanroepen een consistente API-sleutel (Campaign1) voor verificatie gebruiken, zelfs wanneer wordt overgeschakeld naar een willekeurige client-id. Dit zorgt voor naadloze analysetracering. (NEO-80434)
+* Verbeterde analytische API-functionaliteit door ervoor te zorgen dat alle analytische oproepen een consistente API-sleutel (Campaign1) voor verificatie gebruiken, zelfs wanneer wordt overgeschakeld naar een willekeurige client-id. Dit zorgt voor naadloze analysetracering. (NEO-80434)
 
-* Verbeterde de BigQuery Federated Data Access-connector (FDA) door gebruikers de time-outperiode voor query&#39;s te laten aanpassen. Deze verbetering verhindert onderbrekingsfouten tijdens langlopende vragen. (NEO-81222)
+* BigQuery Federated Data Access-connector (FDA) verbeterd door gebruikers de time-outperiode voor query&#39;s te laten aanpassen. Deze verbetering verhindert time-outfouten tijdens langlopende query&#39;s. (NEO-81222)
 
-* Het upgradeproces van de release Campagne <!--7.4.1--> is bijgewerkt en bevat de vereiste afhankelijkheden. Deze verbetering vereenvoudigt het verbeteringsproces voor gebruikers. (NEO-81433)
+* Het upgradeproces voor de release van Campaign <!--7.4.1--> is bijgewerkt en bevat de vereiste afhankelijkheden. Deze verbetering vereenvoudigt het upgradeproces voor gebruikers. (NEO-81433)
 
-* Probleem verholpen waarbij de console vastliep wanneer een subworkflow werd gebruikt in combinatie met een `enum` -veld. Deze verbetering verzekert stabiele werkschemauitvoering. (NEO-81864)
+* Probleem verholpen waarbij de console vastliep wanneer een subworkflow werd gebruikt in combinatie met een `enum`-veld. Deze verbetering zorgt voor een stabiele uitvoering van de workflow. (NEO-81864)
 
-* Oplossing voor een probleem waarbij MTA-onderliggende processen vastzaten en leveringssleuven blokkeerden. Deze moeilijke situatie verzekert vlotte leveringsverrichtingen voor de mededelingen van de Push en WhatsApp. (NEO-82351)
+* Oplossing voor een probleem waarbij onderliggende MTA-processen vastliepen, waardoor leveringsslots werden geblokkeerd. Deze oplossing zorgt voor een soepele levering van Push- en WhatsApp-communicatie. (NEO-82351)
 
-* Probleem verholpen waarbij leveringen in afwachting van pauze in personalisatie vastzaten. Deze verbetering zorgt voor een geslaagde uitvoering van de levering. (NEO-82781)
+* Probleem verholpen waarbij leveringen bleven hangen in personalisatie in behandeling door onderbroken leveringsactiviteiten. Deze verbetering zorgt voor een succesvolle uitvoering van de levering. (NEO-82781)
 
-* Verbeterde IMS login functionaliteit door het eindpunt CampaignIO voor authentificatie leveraging. Deze verbetering stroomlijnt het login proces. (NEO-82838)
+* Verbeterde aanmeldingsfunctionaliteit voor IMS door gebruik te maken van het CampaignIO-eindpunt voor authenticatie. Deze verbetering stroomlijnt het inlogproces. (NEO-82838)
 
-* Aangepaste time-outfouten in FDA (Google BigQuery Federated Data Access) voor een stabiele implementatie van de query na hotfix. (NEO-82923)
+* Time-outfouten in Google BigQuery Federated Data Access (FDA) verholpen om een stabiele query-uitvoering te garanderen na de implementatie van een hotfix. (NEO-82923)
 
-* Oplossing voor een ruimteprobleem bij het laden van grote gegevensvolumes in Teradata-tabellen. Deze verbetering zorgt voor stabiele bewerkingen voor het laden van gegevens. (NEO-83252)
+* Oplossing voor een ruimteprobleem bij het laden van grote gegevensvolumes in Teradata-tabellen. Deze verbetering zorgt voor het stabiel laden van gegevens. (NEO-83252)
 
-* Probleem verholpen waarbij GCP-query&#39;s mislukten vanwege onjuiste datum- en tijdstempelvergelijkingen <!--after upgrading to version 9383--> . Deze verbetering verzekert vraagverenigbaarheid. (NEO-83826)
+* Probleem verholpen waarbij GCP-query&#39;s mislukten vanwege onjuiste datum- en tijdstempelvergelijkingen <!--after upgrading to version 9383-->. Deze verbetering zorgt voor compatibiliteit met query&#39;s. (NEO-83826)
 
-* Oplossing voor mislukte aflevering die werd veroorzaakt door hervatting van onderbroken afleveringsactiviteiten. Deze oplossing zorgt voor een geslaagde uitvoering van de levering. (NEO-83809)
+* Oplossing voor mislukte leveringen die werden veroorzaakt door het hervatten van onderbroken leveringsactiviteiten. Deze oplossing zorgt voor een succesvolle uitvoering van de levering. (NEO-83809)
 
-* Oplossing voor verificatiefouten met de FDA-connector (Snowflake Federated Data Access) bij gebruik van Private Key Authentication. Deze verbetering zorgt voor geslaagde databaseverbindingen. (NEO-84024)
+* Oplossing voor authenticatiefouten met de FDA-connector (Snowflake Federated Data Access) bij gebruik van Private Key Authentication. Deze verbetering zorgt voor succesvolle databaseverbindingen. (NEO-84024)
 
-* Geïmplementeerde waakhond verandert om MTA kindgroefblokkering aan te pakken die door vastgezette processen wordt veroorzaakt. Deze verbetering zorgt voor vloeiende leveringsbewerkingen. (NEO-84553)
+* Watchdog-wijzigingen geïmplementeerd om onderliggende MTA-sleufblokkade door vastzittende processen aan te pakken. Deze verbetering zorgt voor een soepele levering. (NEO-84553)
 
-* Uitgebreide JavaScript wacht controles om MTA kindgroefblokkering aan te pakken die door processen in een werkende staat wordt veroorzaakt. Deze moeilijke situatie verzekert stabiele leveringsverrichtingen. (NEO-85150)
+* Verbeterde JavaScript-wachtcontroles om onderliggende MTA-sleufblokkade aan te pakken die door processen in een werkende staat wordt veroorzaakt. Deze oplossing zorgt voor een stabiele levering. (NEO-85150)
 
