@@ -3,7 +3,8 @@ product: campaign
 title: Nieuwe op GCM gebaseerde functies
 description: Nieuwe op GCM gebaseerde functies
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Codeert de tekenreeks met de instantietoets met het AES-algoritme met de GCM-mod
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -85,7 +86,7 @@ Codeert de tekenreeks van het teken met de serversleutel met behulp van het AES-
 Codeert een tekenreeks met tekens met de sleutel van de instantie of een andere sleutel.
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -126,7 +127,7 @@ Beschikbaar in:
 
 ### decryptString() {#decryptString-javascript}
 
-Codeert een tekenreeks met tekens met de sleutel van de instantie of een andere sleutel. Deze oudere functie kan met GCM worden gebruikt. Het is afgekeurd voor decodering van scripttekst die is versleuteld met de modus AES-CBC.
+Decrypteert een koord van karakters met de sleutel van de instantie of een andere sleutel. Deze oudere functie kan met GCM worden gebruikt. Het is afgekeurd voor decodering van scripttekst die is versleuteld met de modus AES-CBC.
 
 ```
             decryptString (str [, key
