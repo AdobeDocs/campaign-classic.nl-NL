@@ -4,9 +4,9 @@ product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Bekijk alvast de nieuwste verbeteringen in Adobe Campaign Standard v7-producten 
 >[!BEGINTABS]
 
 
->[!TAB  April 2025 versie is levend!]
+>[!TAB De release van april 2025 is live!]
 
-Ontdek updates, verbeteringen en oplossingen die bij de release van Campaign Classic v7.4.2 - april &#39;25 worden geleverd.
+Ontdek updates, verbeteringen en oplossingen die bij de release van Campaign Classic v7.4.2 - april 2025 worden geleverd.
 
 [![afbeelding](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -38,7 +38,7 @@ Daarnaast raadt Adobe Campaign bij het versterken van het beveiligings- en verif
 
 In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. De configuratie van uw lidmaatschapsservices voor Android-pushberichten moet mogelijk worden bijgewerkt om deze wijziging te ondersteunen. U kunt het nu al controleren en actie ondernemen.
 
-[![ beeld ](assets/do-not-localize/learn-more-button.svg) ](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}
+[![afbeelding](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}
 
 
 >[!ENDTABS]
@@ -113,4 +113,4 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
 
 ## Verdere bronnen
 
-[ Lijst van foutenmeldingen ](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) - [ Beschrijving van het Product van Adobe Campaign ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [ de matrijs van de Verenigbaarheid ](rn/using/compatibility-matrix.md) - [ Leerprogramma&#39;s ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - [ Controlebord voor Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl){target="_blank"}
+[Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) - [Adobe Campaign-productbeschrijving](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - [Configuratiescherm voor Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl){target="_blank"}
