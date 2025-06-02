@@ -25,7 +25,7 @@ Workflows kunnen handig zijn om een aantal importprocessen te automatiseren. Of 
 
 >[!NOTE]
 >
->Meer over het invoeren van en het uitvoeren van gegevens die werkschema&#39;s gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
+>Meer over het invoeren van en het uitvoeren van gegevens die werkschema&#39;s gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
 
 <!--
