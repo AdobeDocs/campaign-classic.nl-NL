@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Afleveringsinstellingen {#about-delivery-settings}
 
-De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
+De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=nl-NL){target="_blank"}.
 
 ## Leveringsanalyse {#delivery-analysis}
 

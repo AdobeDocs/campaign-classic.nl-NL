@@ -20,12 +20,12 @@ De kernfuncties omvatten het richten, het bepalen en het personaliseren van beri
 
 Leer de belangrijkste stappen met betrekking tot het maken van de levering in de documentatie van Campagne v8:
 
-* [ creeer de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: Leer hoe te om één-schot enige levering tot stand te brengen.
-* [ bepaal de inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Vorm de leveringsinhoud specifiek voor elk kanaal.
-* [ specificeer het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Bepaal verscheidene types van doel: belangrijkste publiek, proefdoel, zaadadressen en controlegroepen.
-* [ bevestigt de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: Leer hoe te om de levering te bevestigen alvorens het naar het belangrijkste doel te verzenden.
-* [ verzend de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Vorm de leveringsmontages en bepaal hoe te om uw berichten te verzenden.
-* [ beste praktijken van de Levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: Raadpleeg de beste praktijken met betrekking tot de leveringsmogelijkheden van de Campagne.
+* [ creeer de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#create-the-delivery){target="_blank"}: Leer hoe te om één-schot enige levering tot stand te brengen.
+* [ bepaal de inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#content-of-the-delivery){target="_blank"}: Vorm de leveringsinhoud specifiek voor elk kanaal.
+* [ specificeer het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#target-population){target="_blank"}: Bepaal verscheidene types van doel: belangrijkste publiek, proefdoel, zaadadressen en controlegroepen.
+* [ bevestigt de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#validate-the-delivery){target="_blank"}: Leer hoe te om de levering te bevestigen alvorens het naar het belangrijkste doel te verzenden.
+* [ verzend de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#configuring-and-sending-the-delivery){target="_blank"}: Vorm de leveringsmontages en bepaal hoe te om uw berichten te verzenden.
+* [ beste praktijken van de Levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL){target="_blank"}: Raadpleeg de beste praktijken met betrekking tot de leveringsmogelijkheden van de Campagne.
 
 Ook verwijs naar deze [ pagina ](delivery-settings.md) om over specifieke de leveringsmontages van Campaign Classic te leren.
 
@@ -33,7 +33,7 @@ Ook verwijs naar deze [ pagina ](delivery-settings.md) om over specifieke de lev
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}. 
 
 >[!NOTE]
 >

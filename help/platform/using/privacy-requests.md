@@ -38,7 +38,7 @@ Adobe Campaign biedt gegevenscontrollers twee manieren om verzoeken voor toegang
 >[!NOTE]
 >
 >* Voor meer informatie over persoonsgegevens en over de verschillende entiteiten die gegevens beheren (gegevenscontroller, gegevensprocessor en betrokkene) raadpleegt u [Persoonsgegevens en persona&#39;s](privacy-and-recommendations.md#personal-data).
->* Meer over privacyverzoeken leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
+>* Meer over privacyverzoeken leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
 
 <!--
 ## Prerequisites {#prerequesites}

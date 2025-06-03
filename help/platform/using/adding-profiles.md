@@ -23,7 +23,7 @@ In de meeste gevallen, worden de profielen ingevoerd [ aan Campagne door een wer
 
 >[!NOTE]
 >
->Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

@@ -26,7 +26,7 @@ De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om 
 
 >[!NOTE]
 >
-> Leren om te installeren en login aan Adobe Campaign, gelieve te verwijzen naar de gedetailleerde analyse op de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
+> Leren om te installeren en login aan Adobe Campaign, gelieve te verwijzen naar de gedetailleerde analyse op de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 <!--
 ## Start Adobe Campaign {#starting-adobe-campaign}
@@ -111,6 +111,6 @@ Whenever you reach out to Adobe Customer Care team, you need to provide the vers
 
 * [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 -->

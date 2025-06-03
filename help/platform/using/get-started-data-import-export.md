@@ -27,7 +27,7 @@ Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegeven
 
 >[!NOTE]
 >
->Meer leren op hoe te om gegevens in te voeren en uit te voeren naar Campagne, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}.
+>Meer leren op hoe te om gegevens in te voeren en uit te voeren naar Campagne, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/import){target=_blank}.
 
 
 <!--

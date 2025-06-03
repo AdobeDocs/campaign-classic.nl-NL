@@ -27,7 +27,7 @@ In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van l
 
 >[!NOTE]
 >
->Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
+>Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
 <!--
 ## Profile types {#profile-types}
@@ -96,9 +96,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=nl-NL){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -116,11 +116,11 @@ This video also explains the compliance of Adobe Campaign Classic with General D
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl-NL).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 

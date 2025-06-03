@@ -36,7 +36,7 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 
 >[!NOTE]
 >
->Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

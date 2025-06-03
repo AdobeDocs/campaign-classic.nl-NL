@@ -18,13 +18,13 @@ Gebruik Adobe Campaign om tekstberichten naar uw klanten op hun mobiele apparate
 
 Leer de belangrijkste stappen met betrekking tot de verwezenlijking van SMS-levering in de documentatie van Campagne v8:
 
-* [ het kanaaloverzicht van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}: Leer hoe u tekstberichten naar uw klanten op hun mobiele apparaten kunt verzenden.
-* [ creeer een levering van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}: Ontdek de verschillende stappen nodig om een nieuwe levering van SMS tot stand te brengen.
-* [ bepaal de inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}: Leer hoe te om de inhoud van uw berichten van SMS te personaliseren.
-* [ selecteer het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}: Het belangrijkste doel wordt gehaald uit het gegevensbestand van Adobe Campaign of kan ook in een extern dossier worden opgeslagen.
-* [ verzend de proef van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html): De vestiging van een cyclus van de leveringsbevestiging is essentieel. Zorg ervoor dat de inhoud is goedgekeurd voordat u deze naar het publiek stuurt.
-* [ verzendt naar het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html): Wanneer uw SMS wordt bevestigd, kunt u het nu naar zijn publiek verzenden.
-* [ Monitor en spoor een SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html): Controleer uw levering van SMS om ervoor te zorgen dat uw marketing campagnes efficiënt zijn.
+* [ het kanaaloverzicht van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=nl-NL){target="_blank"}: Leer hoe u tekstberichten naar uw klanten op hun mobiele apparaten kunt verzenden.
+* [ creeer een levering van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=nl-NL){target="_blank"}: Ontdek de verschillende stappen nodig om een nieuwe levering van SMS tot stand te brengen.
+* [ bepaal de inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=nl-NL){target="_blank"}: Leer hoe te om de inhoud van uw berichten van SMS te personaliseren.
+* [ selecteer het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=nl-NL){target="_blank"}: Het belangrijkste doel wordt gehaald uit het gegevensbestand van Adobe Campaign of kan ook in een extern dossier worden opgeslagen.
+* [ verzend de proef van SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=nl-NL): De vestiging van een cyclus van de leveringsbevestiging is essentieel. Zorg ervoor dat de inhoud is goedgekeurd voordat u deze naar het publiek stuurt.
+* [ verzendt naar het publiek ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=nl-NL): Wanneer uw SMS wordt bevestigd, kunt u het nu naar zijn publiek verzenden.
+* [ Monitor en spoor een SMS ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=nl-NL): Controleer uw levering van SMS om ervoor te zorgen dat uw marketing campagnes efficiënt zijn.
 
 Raadpleeg de volgende pagina&#39;s voor meer informatie over configuratie:
 

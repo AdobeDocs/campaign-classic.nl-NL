@@ -16,4 +16,4 @@ ht-degree: 8%
 
 # Best practices voor leveringen {#delivery-best-practices}
 
-De beste praktijken met betrekking tot leveringsontwerp en het verzenden met Adobe Campaign worden gedetailleerd in [ de documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
+De beste praktijken met betrekking tot leveringsontwerp en het verzenden met Adobe Campaign worden gedetailleerd in [ de documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.

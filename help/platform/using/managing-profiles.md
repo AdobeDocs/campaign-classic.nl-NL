@@ -29,7 +29,7 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 >[!NOTE]
 >
 > * Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Leer meer in [ Omslagen en meningen ](../../platform/using/access-management-folders.md).
-> * Meer leren op hoe te om uw profielen te beheren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Meer leren op hoe te om uw profielen te beheren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

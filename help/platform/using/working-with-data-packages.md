@@ -29,7 +29,7 @@ Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie uitvoeren e
 
 >[!NOTE]
 >
->Meer over gegevenspakketten leren, gelieve te verwijzen naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Meer over gegevenspakketten leren, gelieve te verwijzen naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
