@@ -26,7 +26,7 @@ Deze schakelaars laten snelle en gemakkelijke gegevensintegratie toe: Adobe Camp
 
 >[!NOTE]
 >
->* Deze eigenschap is beschikbaar in Adobe Campaign door het **specifieke pakket 1} van de schakelaars van CRM**.
+>* Deze eigenschap is beschikbaar in Adobe Campaign door het **specifieke pakket 1&rbrace; van de schakelaars van CRM**.
 >* Meer over de schakelaars van CRM leren, en hoe te om met Microsoft Dynamics en Salesforce te verbinden, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
 <!--

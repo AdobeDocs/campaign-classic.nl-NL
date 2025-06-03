@@ -98,7 +98,7 @@ Het **belangrijkste herkenningsteken van het Certificaat (customKeyIdentifier)**
 
 1. Navigeer aan **Azure Actieve Folder > de Registraties van de App** en selecteer de Toepassing die vroeger werd gecreeerd.
 1. Klik **Montages** op de hoogste linkerzijde.
-1. Op **Vereiste Toestemmingen**, klik **** toevoegen en **selecteer online API > Dynamische CRM**.
+1. Op **Vereiste Toestemmingen**, klik **&#x200B;**&#x200B;toevoegen en **selecteer online API > Dynamische CRM**.
 1. Klik **Uitgezochte**, laat **Dynamica 365 van de Toegang als organisatiegebruikers** checkbox toe en klik **Uitgezochte**.
 1. Dan, van uw app, selecteer **Manifest** onder **leidt** menu.
 
