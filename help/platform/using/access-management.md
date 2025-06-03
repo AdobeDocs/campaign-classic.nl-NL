@@ -5,10 +5,10 @@ description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
 badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '309'
+ht-degree: 5%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"}  moeten gebruiken om met Campagne te verbinden.
+>Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden.
 >
 >Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign ten zeerste aan om alle bestaande verificatiemodus voor operatoren te migreren van de native verificatie van aanmelding/wachtwoord naar Adobe Identity Management System (IMS). Leer hoe te om uw exploitanten in [ te migreren deze pagina ](../../technotes/using/migrate-users-to-ims.md).
 > 
->Na deze migratie is de volgende sectie niet meer van toepassing.  Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"} .
+>Na deze migratie is de volgende sectie niet meer van toepassing.  Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschillende operatoren zijn toegewezen. Dit zijn een reeks rechten en beperkingen die autoriseren of weigeren:
@@ -42,25 +42,29 @@ Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
 >[!NOTE]
 >
->Alvorens te beginnen bepalend toestemmingen, adviseert Adobe u om de [ controlelijst van de Configuratie van de Veiligheid ](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) te lezen.
+> * Alvorens te beginnen bepalend toestemmingen, adviseert Adobe u om de [ controlelijst van de Configuratie van de Veiligheid ](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) te lezen.
+> * Om meer over toestemmingen te leren, te verwijzen gelieve naar de gedetailleerde verklaring over de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
-Leer hoe te om toegang en opstellingstoestemmingen in deze secties te verlenen:
+<!--
 
-* [Operatoren maken](access-management-operators.md)
+Learn how to grant access and set up permissions in these sections:
 
-* [Groepen definiëren](access-management-groups.md)
+* [Create operators](access-management-operators.md)
 
-* [Benoemde rechten toevoegen](access-management-named-rights.md)
+* [Define groups](access-management-groups.md)
 
-* [Toegang tot de map Campagne beheren](access-management-folders.md)
+* [Add Named rights](access-management-named-rights.md)
 
-* [Matrix toegangsrechten](access-management-named-rights.md#access-rights-matrix)
+* [Manage Campaign folder access](access-management-folders.md)
+
+* [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
 
-Zie ook:
+See also:
 
-* [Machtigingen voor workflows beheren](../../workflow/using/managing-rights.md)
-* [Rechten voor gedistribueerde marketing beheren](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
-* [Rechten voor de interactiemodule beheren](../../interaction/using/operator-profiles.md)
-* [Toegang tot schema&#39;s filteren](../../configuration/using/filtering-schemas.md)
-* [Weergave PI beperken](../../configuration/using/restricting-pii-view.md)
+* [Manage permissions for workflows](../../workflow/using/managing-rights.md)
+* [Manage permissions for distributed marketing](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
+* [Manage permissions for the interaction module](../../interaction/using/operator-profiles.md)
+* [Filter access to schemas](../../configuration/using/filtering-schemas.md)
+* [Restricting PI view](../../configuration/using/restricting-pii-view.md)
+-->

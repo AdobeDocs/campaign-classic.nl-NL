@@ -5,8 +5,10 @@ description: Meer informatie over opties en instellingen die specifiek zijn voor
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 7%
@@ -71,7 +73,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 * **[!UICONTROL Send all messages in text format]**
 
-  Het bericht wordt verzonden in tekstformaat. De indeling HTML wordt niet verzonden, maar wordt alleen voor de spiegelpagina gebruikt wanneer de ontvanger op het bericht klikt.
+  Het bericht wordt verzonden in tekstformaat. De HTML-indeling wordt niet verzonden, maar wordt alleen voor de spiegel gebruikt wanneer de ontvanger op het bericht klikt.
 
 >[!NOTE]
 >
@@ -89,7 +91,7 @@ In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van het **[!
 
 >[!IMPORTANT]
 >
->Een inhoud van HTML moet voor de levering voor de spiegelpagina worden bepaald om te creëren.
+>Er moet een HTML-inhoud zijn gedefinieerd voor de levering van de spiegelpagina die moet worden gemaakt.
 
 Naast de standaardmodus zijn ook de volgende opties beschikbaar:
 

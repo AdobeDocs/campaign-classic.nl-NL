@@ -4,8 +4,10 @@ title: SMS maken met campagne
 description: Meer informatie over het maken van SMS met campagne
 feature: SMS
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 2%
@@ -23,7 +25,7 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 >De globale concepten op leveringsverwezenlijking worden voorgesteld in [ deze sectie ](steps-about-delivery-creation-steps.md).
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [ Verandering de 1&rbrace; sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
+1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [ Verandering de 1} sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
 
    ![](assets/s_user_mobile_wizard.png)
 

@@ -4,8 +4,10 @@ title: Doelpopulatie definiëren
 description: Leer hoe u de doelpopulatie definieert
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 2%
@@ -240,7 +242,7 @@ Deze toewijzingen zijn als volgt:
 | Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, X - voorheen bekend als Twitter) zijn verzameld. | mns:bezoeker |
 | Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
 | Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
-| Service | Publish naar een X-account of een Facebook-pagina | nms:service |
+| Service | Publiceren naar een X-account of een Facebook-pagina | nms:service |
 | Operatoren | Leveren aan Adobe Campaign-operatoren | nms:operator |
 | Extern bestand | Afleveren via een bestand dat alle benodigde informatie voor levering bevat | Geen gekoppeld schema, geen doel ingevoerd |
 
@@ -251,4 +253,4 @@ In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

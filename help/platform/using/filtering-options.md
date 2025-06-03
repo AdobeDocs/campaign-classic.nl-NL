@@ -8,7 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 2%
@@ -29,14 +31,14 @@ Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van he
 
 Er zijn verschillende manieren om de gegevens te filteren die moeten worden weergegeven. Indien nodig kunnen deze samen worden gebruikt:
 
-* Filteren op mappen, zie [Filteren op map](#filter-by-folder),
-* Filteren op status, verwijs naar [Filteren op status](#filter-by-status),
-* Gegevenssortering, verwijs naar [Volgorde van](#order-by),
-* Zoeken, verwijzen naar [Snel zoeken](#quick-search).
+* Filter op omslagen, verwijs naar [ Filter door omslag ](#filter-by-folder),
+* Filter door status, verwijs naar [ Filter door status ](#filter-by-status),
+* Het sorteren van gegevens, verwijs naar [ Orde door ](#order-by),
+* Onderzoek, verwijs naar [ Snel onderzoek ](#quick-search).
 
 ## Filteren op map {#filter-by-folder}
 
-Klik op de knop **[!UICONTROL Folder]** om de map te selecteren die de gegevens bevat die moeten worden weergegeven.
+Klik op het pictogram **[!UICONTROL Folder]** om de map te selecteren die de gegevens bevat die u wilt weergeven.
 
 ![](assets/filter_web_select_folder.png)
 

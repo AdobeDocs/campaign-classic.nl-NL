@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '2574'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 100%
 # Documentatie voor Adobe Campaign Classic v7 {#using}
 
 + [Documentatie voor Campaign v7](campaign-classic-home.md)
-+ Release-opmerkingen {#release-notes}
++ Aanvullende informatie  {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Nieuwste release](rn/using/latest-release.md)
-   + Eerdere releases {#previous-releases}
+   + Eerdere versies {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022](rn/using/release-2022.md)
@@ -55,12 +55,12 @@ ht-degree: 100%
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
-      + Privacyverzoeken {#privacy-requests}
+      + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
          + [Privacyverzoeken](platform/using/privacy-requests.md)
          + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
          + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
          + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
-   + Profielmanagement {#profile-management}
+   + Profielbeheer {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
       + [Profielen toevoegen](platform/using/adding-profiles.md)
@@ -71,7 +71,7 @@ ht-degree: 100%
    + Gegevens importeren en exporteren {#importing-and-exporting-data}
       + [Aan de slag met gegevens importeren en exporteren](platform/using/get-started-data-import-export.md)
       + [Workflows gebruiken om gegevens te importeren en exporteren](platform/using/import-export-workflows.md)
-      + Algemene import- en exportactiviteiten maken {#generic-imports-exports}
+      + Algemene import en export maken {#generic-imports-exports}
          + [Aan de slag met algemene import- en exportactiviteiten](platform/using/about-generic-imports-exports.md)
          + [Import- en exportsjablonen maken](platform/using/creating-import-export-templates.md)
          + [Import- en exporttaken maken](platform/using/creating-import-export-jobs.md)
@@ -82,7 +82,7 @@ ht-degree: 100%
       + Gegevensversleuteling en -compressie beheren {#managing-data-encryption-compression}
          + [Een bestand uitpakken of ontsleutelen vóór verwerking](platform/using/unzip-decrypt.md)
          + [Een bestand zippen of versleutelen vóór verwerking](platform/using/zip-encrypt.md)
-      + Best practices en probleemoplossing {#best-practices}
+      + Aanbevolen werkwijzen en problemen oplossen {#best-practices}
          + [Best practices voor importeren en exporteren](platform/using/import-export-best-practices.md)
          + [Best practices en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Gegevens filteren {#filtering-data}
@@ -102,7 +102,7 @@ ht-degree: 100%
    + Gegevenspakketten en opsommingen {#administration-basics}
       + [Gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen](platform/using/managing-enumerations.md)
-   + CRM-connectoren {#connectors}
+   + CRM-connectoren  {#connectors}
       + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
       + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
@@ -110,6 +110,7 @@ ht-degree: 100%
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
+   + [Afleveringsinstellingen](delivery/using/delivery-settings.md)
    + Belangrijke stappen bij het maken van een levering {#key-steps-when-creating-a-delivery}
       + [Aan de slag met leveringen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Een levering maken en identificeren](delivery/using/steps-create-and-identify-the-delivery.md)
@@ -129,27 +130,27 @@ ht-degree: 100%
       + [Een e-maillevering maken](delivery/using/creating-an-email-delivery.md)
       + [De e-mailcontent opgeven](delivery/using/defining-the-email-content.md)
       + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
-      + De e-maillevering verzenden {#sending-an-email}
+      + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
+      + E-maillevering verzenden {#sending-an-email}
          + [De belangrijkste stappen om een e-mail te verzenden](delivery/using/sending-messages.md)
          + [E-mailparameters](delivery/using/email-parameters.md)
-         + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
          + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bestanden bijvoegen](delivery/using/attaching-files.md)
-   + Sms verzenden {#sending-messages-on-mobiles}
+   + SMS verzenden {#sending-messages-on-mobiles}
       + [Aan de slag met sms](delivery/using/sms-channel.md)
-      + Sms-kanaal configureren{#sms-set-up}
+      + Sms-kanaal configureren {#sms-set-up}
          + [Sms configureren op een zelfstandig exemplaar](delivery/using/sms-set-up.md)
          + [Sms configureren op een infrastructuur voor midsourcing](delivery/using/sms-set-up-mid.md)
+         + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
+         + [Aanvullende configuratie](delivery/using/sms-send.md)
+         + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
       + [Een sms maken](delivery/using/sms-create.md)
-      + [Een sms verzenden en volgen](delivery/using/sms-send.md)
-      + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
-      + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
       + [Migreren naar de Extended Generic SMPP-connector](delivery/using/unsupported-connector-migration.md)
    + [LINE-berichten verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Aan de slag met het kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + De mobiele applicatie configureren{#configure-the-mobile-app}
+      + De mobiele toepassing configureren{#configure-the-mobile-app}
          + [Aan de slag met de appconfiguratie](delivery/using/get-started-app-config.md)
          + [Configuratiestappen voor iOS](delivery/using/configuring-the-mobile-application.md)
          + [Configuratiestappen voor Android](delivery/using/configuring-the-mobile-application-android.md)
@@ -175,7 +176,7 @@ ht-degree: 100%
       + [Gepersonaliseerde coupons](delivery/using/personalized-coupons.md)
       + [Gepersonaliseerde PDF-documenten genereren](delivery/using/generating-personalized-pdf-documents.md)
       + [De lijst met emoticons aanpassen](delivery/using/customizing-emoticon-list.md)
-   + Seedadressen gebruiken {#using-seed-addresses}
+   + zaadadressen gebruiken {#using-seed-addresses}
       + [Seedadressen](delivery/using/about-seed-addresses.md)
       + [Seedadressen maken](delivery/using/creating-seed-addresses.md)
       + [Seedadressen toevoegen](delivery/using/adding-seed-addresses.md)
@@ -195,11 +196,11 @@ ht-degree: 100%
          + [De uiteindelijke levering definiëren](delivery/using/a-b-testing-uc-final-delivery.md)
          + [De workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Het resultaat analyseren](delivery/using/a-b-testing-uc-analyzing.md)
-   + Services en lidmaatschappen {#subscriptions-and-referrals}
+   + Services en abonnementen {#subscriptions-and-referrals}
       + [Services en lidmaatschappen](delivery/using/about-services-and-subscriptions.md)
       + [Lidmaatschappen beheren](delivery/using/managing-subscriptions.md)
       + [Viral en social marketing](delivery/using/viral-and-social-marketing.md)
-   + Verzendingen controleren {#monitoring-deliveries}
+   + Leveringen controleren {#monitoring-deliveries}
       + [Aan de slag met verzendingscontrole](delivery/using/about-delivery-monitoring.md)
       + [De lijst met verzendingen openen](delivery/using/list-of-deliveries.md)
       + [Leveringsdashboard](delivery/using/delivery-dashboard.md)
@@ -211,7 +212,7 @@ ht-degree: 100%
    + Berichten bijhouden {#tracking-messages}
       + [Berichttracking](delivery/using/about-message-tracking.md)
       + [Bijgehouden koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
-      + Gepersonaliseerde koppelingen bijhouden {#tracking-personalized-links}
+      + Aangepaste koppelingen bijhouden {#tracking-personalized-links}
          + [Aan de slag met de tracking van gepersonaliseerde koppelingen](delivery/using/tracking-personalized-links.md)
          + [Tracking-URL&#39;s detecteren](delivery/using/detecting-tracking-urls.md)
          + [Voorverwerkingsinstructies voor tracking](delivery/using/pre-processing-instructions.md)
@@ -219,14 +220,14 @@ ht-degree: 100%
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking testen](delivery/using/testing-tracking.md)
       + [Problemen met tracking oplossen](delivery/using/tracking-troubleshooting.md)
-   + Afleverbaarheidsbeheer {#deliverability-management}
+   + Leverbaarheidsbeheer {#deliverability-management}
       + [Wat is afleverbaarheid?](delivery/using/about-deliverability.md)
       + [Content van controleberichten](delivery/using/control-message-content.md)
       + [Afleverbaarheid controleren](delivery/using/monitoring-deliverability.md)
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
-   + Module voor contentmanagement {#content-management}
+   + Module voor inhoudsbeheer {#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
       + [Bronnen en beginselen voor contentmanagement](delivery/using/content-manager-resources-and-principles.md)
       + [Gebruiksscenario: contentmanagement maken](delivery/using/use-case-creating-content-management.md)
@@ -243,7 +244,7 @@ ht-degree: 100%
    + Marketingcampagnes {#about-marketing-campaigns}
       + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
       + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
-   + Campagnes orkestreren {#orchestrate-campaigns}
+   + Orchestratiecampagnes {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
       + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
       + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
@@ -252,7 +253,7 @@ ht-degree: 100%
       + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
       + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
       + [Providers, voorraden en budgetten](campaign/using/providers-stocks-and-budgets.md)
-   + Campagneoptimalisatie {#campaign-optimization}
+   + Campagne optimaliseren {#campaign-optimization}
       + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
       + [Drukregels](campaign-opt/using/pressure-rules.md)
       + [Consistentieregels](campaign-opt/using/consistency-rules.md)
@@ -260,13 +261,13 @@ ht-degree: 100%
       + [Filterregels](campaign-opt/using/filtering-rules.md)
       + [Regels toepassen](campaign-opt/using/applying-rules.md)
       + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
-+ Marketing Resource Management {#mrm}
++ Beheer van marketingbronnen {#mrm}
    + [Marketingbronnen beheren](mrm/using/about-marketing-resource-management.md)
    + [Taken maken en beheren](mrm/using/creating-and-managing-tasks.md)
    + [Kosten beheersen](mrm/using/controlling-costs.md)
    + [Marketingbronnen beheren](mrm/using/managing-marketing-resources.md)
    + [Discussieforums](mrm/using/discussion-forums.md)
-+ Gedistribueerde marketing {#distributed-marketing}
++ Distributed Marketing {#distributed-marketing}
    + [Gedistribueerde marketing](distributed/using/about-distributed-marketing.md)
    + [Een lokale campagne maken](distributed/using/creating-a-local-campaign.md)
    + [Een collaboratieve campagne maken](distributed/using/creating-a-collaborative-campaign.md)
@@ -274,20 +275,20 @@ ht-degree: 100%
    + [Campagnes openen](distributed/using/accessing-campaigns.md)
    + [Een campagne bijhouden](distributed/using/tracking-a-campaign.md)
    + [Gebruiksscenario’s](distributed/using/examples.md)
-+ Response Manager {#response-manager}
++ Responsmanager {#response-manager}
    + [Aan de slag met Response Manager](response/using/about-response-manager.md)
    + [Configuratie](response/using/configuration.md)
    + [Hypothesesjablonen](response/using/hypothesis-templates.md)
    + [Hypothesen maken](response/using/creating-hypotheses.md)
    + [Tracking van hypothesen](response/using/hypothesis-tracking.md)
 + Rapporten ontwerpen en delen {#reporting}
-   + Aan de slag met rapportages {#reporting-in-adobe-campaign}
+   + Aan de slag met rapportage {#reporting-in-adobe-campaign}
       + [Rapportagetools](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Best practices voor rapportage](reporting/using/best-practices.md)
    + Ingebouwde rapporten openen {#accessing-built-in-reports}
       + [Ingebouwde rapporten](reporting/using/about-campaign-built-in-reports.md)
       + [Lijst met rapporten](reporting/using/list-of-reports.md)
-   + Rapporten over leveringen{#reports-on-deliveries}
+   + Verslagen over leveringen{#reports-on-deliveries}
       + [Rapporten over leveringen](reporting/using/reports-on-deliveries.md)
       + [Algemene rapporten](reporting/using/global-reports.md)
       + [Leveringsrapporten](reporting/using/delivery-reports.md)
@@ -313,8 +314,8 @@ ht-degree: 100%
       + [Toegang tot het rapport configureren](reporting/using/configuring-access-to-the-report.md)
       + [Acties voor rapporten](reporting/using/actions-on-reports.md)
    + [Rapporten met kubussen ontwerpen](reporting/using/ac-cubes.md)
-+ Webcontent ontwerpen {#designing-content}
-   + Webapplicaties {#web-applications}
++ Webinhoud ontwerpen {#designing-content}
+   + Webtoepassingen {#web-applications}
       + [Aan de slag met webapplicaties](web/using/about-web-applications.md)
       + [Een nieuwe webapplicatie maken](web/using/creating-a-new-web-application.md)
       + [Een webapplicatie ontwerpen](web/using/designing-a-web-application.md)
@@ -322,7 +323,7 @@ ht-degree: 100%
       + [Een webapplicatie vertalen](web/using/translating-a-web-application.md)
       + [Bezoeken aan een webapplicatie bijhouden](web/using/tracking-a-web-application.md)
       + [Opt-out voor tracking van een webapplicatie](web/using/web-application-tracking-opt-out.md)
-   + HTML-content bewerken {#editing-html-content}
+   + HTML-inhoud bewerken {#editing-html-content}
       + [Aan de slag met de HTML-editor](web/using/about-campaign-html-editor.md)
       + [Sjabloonbeheer](web/using/template-management.md)
       + [Interface van de contenteditor](web/using/content-editor-interface.md)
@@ -361,20 +362,20 @@ ht-degree: 100%
       + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pijplijncontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met de pijplijn oplossen](integrations/using/pipeline-troubleshooting.md)
-   + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
+   + Adobe Experience Platform-bronnen en -doelen {#aep-sources-destinations}
       + [Werken met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
       + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
       + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
-   + Adobe Analytics-connector{#analytics-connector}
+   + Adobe Analytics Connector{#analytics-connector}
       + [Aan de slag met Adobe Analytics Connector](integrations/using/gs-aa.md)
       + [Adobe Analytics-connector-provisioning](integrations/using/adobe-analytics-provisioning.md)
-   + Doelgroepen delen {#audience-sharing}
+   + Delen van publiek {#audience-sharing}
       + [Doelgroepen delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Verzoek indienen bij Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Integratie van gedeelde doelgroepen configureren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Problemen oplossen](integrations/using/troubleshooting.md)
       + [Doelgroepen importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
-   + Assets delen {#asset-sharing}
+   + Elementen delen {#asset-sharing}
       + [Assets delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
@@ -407,7 +408,7 @@ ht-degree: 100%
       + [Levenscyclus van gegevens](workflow/using/data-life-cycle.md)
       + [Goedkeuringen definiëren](workflow/using/defining-approvals.md)
       + [Architectuur](workflow/using/architecture.md)
-   + Targetingactiviteiten {#targeting-activities}
+   + Gerichte activiteiten {#targeting-activities}
       + [Targetingactiviteiten](workflow/using/about-targeting-activities.md)
       + [Query](workflow/using/query.md)
       + [Incrementele query](workflow/using/incremental-query.md)
@@ -444,7 +445,7 @@ ht-degree: 100%
       + [Goedkeuring](workflow/using/approval.md)
       + [Melding](workflow/using/alert.md)
       + [Taak](workflow/using/task.md)
-   + Actieactiviteiten {#action-activities}
+   + Acties {#action-activities}
       + [Actieactiviteiten](workflow/using/about-action-activities.md)
       + [Levering](workflow/using/delivery.md)
       + [Leveringscontrole](workflow/using/delivery-control.md)
@@ -476,20 +477,20 @@ ht-degree: 100%
          + [Leveringscontent laden](workflow/using/loading-delivery-content.md)
          + [Cross-channel leveringsworkflow](workflow/using/cross-channel-delivery-workflow.md)
          + [E-mailverrijking met aangepaste datumvelden](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Controle {#monitoring}
+      + Toezicht {#monitoring}
          + [Een rapport naar een lijst verzenden](workflow/using/sending-a-report-to-a-list.md)
          + [Uw workflows controleren](workflow/using/supervising-workflows.md)
          + [Gepersonaliseerde waarschuwingen verzenden naar operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
-      + Data management {#data-management}
+      + Gegevensbeheer {#data-management}
          + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
          + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
          + [Gegevens verrijken](workflow/using/enriching-data.md)
          + [Aggregaten gebruiken](workflow/using/using-aggregates.md)
          + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
          + [Een workflow instellen voor terugkerende importactiviteiten](workflow/using/recurring-import-workflow.md)
-      + Query&#39;s ontwerpen {#designing-queries}
+      + Ontwerpquery&#39;s {#designing-queries}
          + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
-      + Query&#39;s uitvoeren en filteren {#designing-queries}
+      + Query en filter {#designing-queries}
          + [Een query uitvoeren op de tabel met ontvangers](workflow/using/querying-recipient-table.md)
          + [Een query uitvoeren op de leveringssinformatie](workflow/using/querying-delivery-information.md)
          + [Samengevoegde berekeningen uitvoeren](workflow/using/performing-aggregate-computing.md)
@@ -498,7 +499,7 @@ ht-degree: 100%
          + [Een berekend veld voor een opsommingstype toevoegen](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Een filter maken](workflow/using/creating-a-filter.md)
          + [Gedupliceerde ontvangers filteren](workflow/using/filtering-duplicated-recipients.md)
-   + Workflows controleren {#monitoring-workflows}
+   + Workflows bewaken {#monitoring-workflows}
       + [Workflowuitvoering controleren](workflow/using/monitoring-workflow-execution.md)
       + [Technische workflows controleren](workflow/using/monitoring-technical-workflows.md)
       + [Workflowheatmap](workflow/using/heatmap.md)
@@ -513,7 +514,7 @@ ht-degree: 100%
       + [Tijdzones beheren](workflow/using/managing-time-zones.md)
       + [Technische workflows](workflow/using/about-technical-workflows.md)
 + Aanbiedingen beheren {#managing-offers}
-   + Aan de slag met Interaction {#interaction-overview}
+   + Aan de slag met interactie {#interaction-overview}
       + [Interaction- en aanbiedingenbeheer](interaction/using/interaction-and-offer-management.md)
       + [Verklarende woordenlijst](interaction/using/i-glossary.md)
       + [Best practices voor Interaction](interaction/using/interaction-best-practices.md)
@@ -526,7 +527,7 @@ ht-degree: 100%
       + [Live/Design-omgevingen](interaction/using/live-design-environments.md)
       + [Plaatsingen voor aanbiedingen maken](interaction/using/creating-offer-spaces.md)
       + [Vooraf gedefinieerde filters maken](interaction/using/creating-predefined-filters.md)
-   + Een aanbiedingscatalogus beheren {#managing-an-offer-catalog}
+   + Een aanbiedingencatalogus beheren {#managing-an-offer-catalog}
       + [Overzicht van de aanbiedingscatalogus](interaction/using/offer-catalog-overview.md)
       + [Aanbiedingscategorieën maken](interaction/using/creating-offer-categories.md)
       + [Een categorie aanbevelen](interaction/using/recommending-a-category.md)
@@ -534,21 +535,21 @@ ht-degree: 100%
       + [Een aanbieding goedkeuren en activeren](interaction/using/approving-and-activating-an-offer.md)
       + [Aanbiedingssjablonen beheren](interaction/using/managing-offer-templates.md)
       + [Presentatie van aanbieding beheren](interaction/using/managing-offer-presentation.md)
-   + Simulatie van aanbiedingen{#simulating-offers}
+   + De simulatie van aanbiedingen{#simulating-offers}
       + [Simulatie van aanbiedingen](interaction/using/about-offers-simulation.md)
       + [Instellingen voor uitvoering](interaction/using/execution-settings.md)
       + [Simulatiebereik](interaction/using/simulation-scope.md)
       + [Simulatietracking](interaction/using/simulation-tracking.md)
-   + Een aanbieding verzenden {#delivering-an-offer}
+   + Een voorstel leveren {#delivering-an-offer}
       + [Outbound-kanalen](interaction/using/about-outbound-channels.md)
       + [Een aanbod integreren via de assistent](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Een aanbieding integreren via een workflow](interaction/using/integrating-an-offer-via-a-workflow.md)
-   + Unitaire interacties {#unitary-interactions}
+   + Eenheid {#unitary-interactions}
       + [Inbound-kanalen](interaction/using/about-inbound-channels.md)
       + [Integratie via JavaScript (clientzijde)](interaction/using/integration-via-javascript-client-side.md)
       + [Integratie via SOAP (serverzijde)](interaction/using/integration-via-soap-server-side.md)
       + [Anonieme interacties](interaction/using/anonymous-interactions.md)
-   + Aanbiedingen bijhouden {#tracking-offers}
+   + Aanbiedingen volgen {#tracking-offers}
       + [Geschiedenis van aanbiedingsvoorstellen](interaction/using/offer-proposition-history.md)
       + [Analyserapport van aanbiedingen](interaction/using/offer-analysis-report.md)
    + Geavanceerde parameters {#advanced-parameters}
@@ -563,13 +564,13 @@ ht-degree: 100%
       + [Presentatieregels](interaction/using/presentation-rules.md)
       + [Aanbiedingen op een inbound-kanaal](interaction/using/offers-on-an-inbound-channel.md)
       + [Aanbiedingen op een outbound-kanaal](interaction/using/offers-on-an-outbound-channel.md)
-+ Transactional Messaging {#transactional-messaging}
++ Transactioneel overseinen {#transactional-messaging}
    + [Aan de slag met transactionele berichten](message-center/using/about-transactional-messaging.md)
-   + Transactionele berichten {#configure-transactional-messaging} configureren
+   + Transactieberichten configureren {#configure-transactional-messaging}
       + [Architectuur van transactionele berichten](message-center/using/transactional-messaging-architecture.md)
       + [Instanties configureren](message-center/using/configuring-instances.md)
       + [Aanvullende configuraties](message-center/using/additional-configurations.md)
-   + Berichtensjablonen {#message-templates}
+   + Berichttemplates {#message-templates}
       + [Gebeurtenistypen maken](message-center/using/creating-event-types.md)
       + [Berichtsjablonen ontwerpen](message-center/using/creating-the-message-template.md)
       + [Berichtsjablonen testen](message-center/using/testing-message-templates.md)
@@ -584,10 +585,10 @@ ht-degree: 100%
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
    + [Gebruiksscenario](message-center/using/transactional-email-with-attachments.md)
-+ Integreren met social media {#integrating-with-social-media}
++ Integreren met sociale media {#integrating-with-social-media}
    + [Social marketing](social/using/about-social-marketing.md)
 + Installatie- en configuratiehandleiding {#installing-campaign-classic}
-   + Architectuurprincipes {#architecture-and-hosting-models}
+   + Architectuurbeginselen {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
       + Hostmodellen{#hosting-models-lp}
          + [Modellen voor campagnehosting](installation/using/hosting-models.md)
@@ -599,7 +600,7 @@ ht-degree: 100%
       + [Zakelijke implementatie](installation/using/enterprise-deployment.md)
       + [Midsourcingimplementatie](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Beveiligings- en privacyinstellingen {#security-privacy}
+   + Instellingen voor beveiliging en privacy {#security-privacy}
       + [Controlelijst voor beveiliging en privacy](installation/using/get-started-security-privacy.md)
       + [Personalisatie en privacy](installation/using/privacy.md)
       + [Veilige-toegangscontrole](installation/using/access-management.md)
@@ -607,30 +608,30 @@ ht-degree: 100%
       + [Netwerk, database en SSL/TLS](installation/using/network-database.md)
       + [Beveiligingsinstellingen van server](installation/using/server-configuration.md)
       + [Beveiligingsinstellingen van webserver](installation/using/web-server-configuration.md)
-   + Campaign installeren (op locatie){#install-campaign-on-prem}
-      + Richtlijnen voor implementatie {#deployment-guidelines}
+   + Campagne installeren (op locatie){#install-campaign-on-prem}
+      + Implementatierichtlijnen {#deployment-guidelines}
          + [Databaseserver](installation/using/database.md)
          + [Applicatieserver](installation/using/application-server.md)
          + [Berichtenserver](installation/using/messaging-server.md)
          + [Netwerkconfiguratie](installation/using/network-configuration.md)
-      + Campaign in Windows {#installing-campaign-in-windows}
+      + Campagne in Windows {#installing-campaign-in-windows}
          + [Aan de slag](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [De server installeren](installation/using/installing-the-server.md)
          + [Integreren in een webserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
-      + Campaign in Linux {#installing-campaign-in-linux}
+      + Campagne op Linux {#installing-campaign-in-linux}
          + [Vereisten](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [Pakketten installeren](installation/using/installing-packages-with-linux.md)
          + [Integreren in een webserver](installation/using/integration-into-a-web-server-for-linux.md)
       + [Tijdzonebeheer](installation/using/time-zone-management.md)
       + [Een server voor mid-sourcing installeren](installation/using/mid-sourcing-server.md)
-   + Campaign implementeren (op locatie) {#initial-configuration}
+   + Campagne implementeren (op locatie) {#initial-configuration}
       + [Belangrijkste stappen](installation/using/about-initial-configuration.md)
       + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
       + [Ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
-   + Campaign configureren {#additional-configurations}
+   + Campagne configureren {#additional-configurations}
       + [Configuratie van de Campaign-server](installation/using/configuring-campaign-server.md)
       + [Beveiligingszones definiëren](installation/using/security-zones.md)
       + [URL-machtigingen instellen](installation/using/url-permissions.md)
@@ -641,17 +642,17 @@ ht-degree: 100%
       + [MX-servers gebruiken met Campaign](installation/using/using-mx-servers.md)
       + [Bcc van e-mail configureren](installation/using/email-archiving.md)
       + [SpamAssassin configureren](installation/using/configuring-spamassassin.md)
-   + Verbinding maken met Campaign{#connect-to-campaign}
+   + Verbinding maken met campagne{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
       + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
-   + Campaign verbinden met externe systemen {#accessing-external-database}
+   + Campagne aansluiten op externe systemen {#accessing-external-database}
       + [Externe accounts configureren](installation/using/external-accounts.md)
-      + Federated Data Access configureren{#configure-fda}
+      + Federale gegevenstoegang configureren{#configure-fda}
          + [Aan de slag met Federated Data Access](installation/using/about-fda.md)
          + [Best practices en beperkingen](installation/using/fda-best-practices.md)
          + Configuratierichtlijnen {#config-databases}
@@ -681,7 +682,7 @@ ht-degree: 100%
       + [Lijst met Campaign-opties](installation/using/configuring-campaign-options.md)
       + [Campaign verwijderen](installation/using/uninstalling-campaign.md)
       + [Nieuwe lettertypen installeren](installation/using/install-fonts.md)
-+ Bewakingshandleiding{#monitoring-campaign-classic}
++ Monitoringgids {#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
@@ -706,39 +707,39 @@ ht-degree: 100%
       + [Upgradeprocedure (op locatie)](production/using/upgrading.md)
       + [Overschakelen naar Unicode](production/using/switching-to-unicode.md)
       + [Migratieprocedures](production/using/migration-procedures.md)
-   + Databaseonderhoud {#database-maintenance}
+   + Database-onderhoud {#database-maintenance}
       + [Aanbevelingen](production/using/recommendations.md)
       + [Tabellen om te onderhouden](production/using/tables-to-maintain.md)
       + [Typen onderhoud](production/using/types-of-maintenance.md)
       + [RDBMS - Specifieke aanbevelingen](production/using/rdbms-specific-recommendations.md)
       + [Applicatieobjecten](production/using/application-objects.md)
-   + Probleemoplossing {#troubleshooting-toc}
+   + Problemen oplossen {#troubleshooting-toc}
       + [Overzicht van het oplossen van productieproblemen](production/using/troubleshooting.md)
-      + Veelvoorkomende en algemene problemen {#common-general-issues-toc}
+      + Algemene kwesties {#common-general-issues-toc}
          + [Modules en frequente problemen](production/using/modules-and-frequent-issues.md)
          + [Workflowuitvoering](production/using/workflow-execution.md)
          + [Wachtwoord verloren](production/using/lost-password.md)
          + [Console-update](production/using/console-update.md)
-      + Problemen met levering oplossen {#delivery-troubleshooting-toc}
+      + Problemen met een levering oplossen {#delivery-troubleshooting-toc}
          + [Problemen met prestaties en doorvoer](production/using/performance-and-throughput-issues.md)
          + [Problemen met weergave van afbeeldingen](production/using/image-display-issues.md)
          + [Ontbrekende afbeeldingen](production/using/images-missing.md)
          + [Tijdelijke bestanden](production/using/temporary-files.md)
-      + Werken met logboekbestanden {#working-with-log-toc}
+      + Werken met logbestanden {#working-with-log-toc}
          + [Logboekprecisie](production/using/log-precision.md)
          + [Problemen met het bijhouden van logboeken](production/using/tracking-logs-issues.md)
       + Databaseproblemen {#database-issues-toc}
          + [Databaseprestaties](production/using/database-performances.md)
          + [Codering van de Oracle-database](production/using/encoding-of-the-oracle-database.md)
-      + De verbinding verbeteren {#connection-improvements-toc}
+      + Verbindingsverbeteringen {#connection-improvements-toc}
          + [Mislukte verbinding](production/using/failure-to-connect.md)
          + [Drempelwaarden voor verbinding](production/using/connection-thresholds.md)
-      + Technische problemen oplossen {#technical-troubleshooting-toc}
+      + Technische problemen {#technical-troubleshooting-toc}
          + [Stacktracering in Linux](production/using/stack-trace-in-linux.md)
          + [JSP-gedrag](production/using/jsp-behavior.md)
          + [Tomcat-versie zoeken](production/using/locate-tomcat-version.md)
 + Handleiding voor ontwikkelaars {#configuring-campaign-classic}
-   + Datamodel {#data-model}
+   + Gegevensmodel {#data-model}
       + [Het datamodel](configuration/using/about-data-model.md)
       + [Beschrijving van het datamodel](configuration/using/data-model-description.md)
       + [Best practices](configuration/using/data-model-best-practices.md)
@@ -767,7 +768,7 @@ ht-degree: 100%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [Waarde](configuration/using/schema/value.md)
-   + Schema’s bewerken {#editing-schemas}
+   + Schema&#39;s bewerken {#editing-schemas}
       + [De schema-editor](configuration/using/about-schema-edition.md)
       + [Gegevensschema’s](configuration/using/data-schemas.md)
       + [Schema van een bestaande tabel](configuration/using/schema-of-an-existing-table.md)
@@ -804,7 +805,7 @@ ht-degree: 100%
       + [Een profiellijst maken met een workflow](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [Workflows beheren](configuration/using/managing-workflows.md)
       + [Rapporten beheren](configuration/using/managing-reports.md)
-   + Webtracking instellen {#setting-up-web-tracking}
+   + Webtracering instellen {#setting-up-web-tracking}
       + [Webtracking](configuration/using/about-web-tracking.md)
       + [Webtrackingmodus](configuration/using/web-tracking-mode.md)
       + [Tag voor webtracking: definitie](configuration/using/web-tracking-tag-definition.md)
@@ -814,7 +815,7 @@ ht-degree: 100%
       + [Tags op uw site invoegen](configuration/using/inserting-tags-in-your-site.md)
       + [Alle bezoeken verzamelen](configuration/using/collecting-all-visits.md)
       + [Anonieme tracking](configuration/using/anonymous-tracking.md)
-+ Migratiehandboek {#migrating-to-a-new-version}
++ Migratiehandleiding {#migrating-to-a-new-version}
    + [Migreren naar Adobe Campaign v7](migration/using/about-migration.md)
    + Migratieprocedure {#migration-procedure}
       + [Vereisten](migration/using/before-starting-migration.md)
@@ -827,7 +828,7 @@ ht-degree: 100%
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
    + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-sms-wf.md)
-   + Upgraden naar IMS{#ims}
+   + Upgrade uitvoeren naar IMS{#ims}
       + [Overstappen naar Adobe IMS](technotes/using/ac-ims.md)
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)
       + [Technische operatoren migreren naar Developer Console](technotes/using/ims-migration.md)

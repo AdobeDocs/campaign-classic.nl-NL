@@ -5,8 +5,10 @@ description: Bestanden bijvoegen
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 role: User
+hide: true
+hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -21,12 +23,12 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [ de lijst van de opties van het Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 Er zijn twee mogelijke gevallen:
 
 * Selecteer een bestand en koppel het op dezelfde manier aan de levering.
-* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval, moet u a **berekende gehechtheid** tot stand brengen: de naam van de gehechtheid wordt gegevens verwerkt op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook worden gepersonaliseerd en in formaat van PDF op het tijdstip van levering worden omgezet, als u de **Variabele Digitale Druk** optie hebt.
+* Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval, moet u a **berekende gehechtheid** tot stand brengen: de naam van de gehechtheid wordt gegevens verwerkt op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. De inhoud kan ook in formaat van PDF op het tijdstip van levering worden gepersonaliseerd en worden omgezet, als u de **Variabele Digitale Drukkerij** optie hebt.
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet g
 
 Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan worden geconfigureerd via de optie `NmsDelivery_MaxRecommendedAttachments` .
 
-Leer meer in [ de lijst van Campaign Classic opties ](../../installation/using/configuring-campaign-options.md#delivery).
+Leer meer in [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 
@@ -115,7 +117,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 1. Analyseer uw levering en begin het.
 
-   Elke ontvanger ontvangt een gepersonaliseerde PDF in bijlage aan de levering.
+   Elke ontvanger ontvangt een gepersonaliseerde PDF die aan de levering is gekoppeld.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 

@@ -4,8 +4,10 @@ title: De levering maken en identificeren
 description: De levering maken en identificeren
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 5%
@@ -23,7 +25,7 @@ Als u een levering wilt maken, klikt u op **[!UICONTROL Create]** boven de lijst
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar: direct mail, e-mail, fax, telefoon, mobiel kanaal (SMS), Facebook, X (voorheen bekend als Twitter) enz.
+Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar: direct mail, e-mail, fax, telefoon, mobiel kanaal (SMS), Facebook, X (voorheen bekend als Twitter), enz.
 
 >[!NOTE]
 >

@@ -4,7 +4,9 @@ title: Campagne - Microsoft Dynamics CRM-connector
 description: Leer hoe u campagne en Microsoft Dynamics kunt verbinden
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 
 
-In deze pagina, zult u leren hoe te om Campaign Classic met **te verbinden Microsoft Dynamics CRM 365**.
+In deze pagina, zult u leren hoe te om Campaign Classic met **te verbinden CRM 365 van Microsoft Dynamics**.
 
 De mogelijke plaatsing is via **Web API** (geadviseerd). Verwijs naar [ de sectie hieronder ](#microsoft-dynamics-implementation-step) om stappen te leren aan opstelling de verbinding met Microsoft Dynamics.
 
@@ -27,7 +29,7 @@ Om Microsoft Dynamics 365 aan het werk met Adobe Campaign via **Web API** te ver
 
 In Microsoft Dynamics CRM:
 1. Microsoft Dynamics-client-id ophalen
-1. Sleutel-id voor certificaat en sleutel-id voor Microsoft Dynamics genereren
+1. Id van Microsoft Dynamics-certificaatsleutel en sleutel-id genereren
 1. Machtigingen configureren
 1. Een App-gebruiker maken
 1. De persoonlijke sleutel coderen
@@ -65,7 +67,7 @@ Zodra u sparen, krijgt u een **identiteitskaart van de Toepassing** die het Herk
 
 Meer informatie vindt u [op deze pagina](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
-### Sleutel-id voor certificaat en sleutel-id voor Microsoft Dynamics genereren {#config-certificate-key-id}
+### Id van Microsoft Dynamics-certificaatsleutel en sleutel-id genereren {#config-certificate-key-id}
 
 Om het **belangrijkste herkenningsteken van het Certificaat (customKeyIdentifier)** en **Zeer belangrijke identiteitskaart (keyId)** te krijgen, volg hieronder de stappen:
 
@@ -96,7 +98,7 @@ Het **belangrijkste herkenningsteken van het Certificaat (customKeyIdentifier)**
 
 1. Navigeer aan **Azure Actieve Folder > de Registraties van de App** en selecteer de Toepassing die vroeger werd gecreeerd.
 1. Klik **Montages** op de hoogste linkerzijde.
-1. Op **Vereiste Toestemmingen**, klik **&#x200B;**&#x200B;toevoegen en **selecteer online API > Dynamische CRM**.
+1. Op **Vereiste Toestemmingen**, klik **** toevoegen en **selecteer online API > Dynamische CRM**.
 1. Klik **Uitgezochte**, laat **Dynamica 365 van de Toegang als organisatiegebruikers** checkbox toe en klik **Uitgezochte**.
 1. Dan, van uw app, selecteer **Manifest** onder **leidt** menu.
 
@@ -120,7 +122,7 @@ Voor meer informatie over dit, verwijs naar [ Azure documentatie ](https://docs.
 >
 > Deze stap is optioneel met **[!UICONTROL Password credentials]** -verificatie.
 
-De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassing zal gebruiken. Alle wijzigingen die met de hierboven geregistreerde toepassing zijn aangebracht in Microsoft Dynamics worden doorgevoerd via deze gebruiker.
+De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassing zal gebruiken. Wijzigingen die u met de bovenstaande app hebt aangebracht in Microsoft Dynamics, worden via deze gebruiker doorgevoerd.
 
 **Stap 1**: Creeer een niet-interactieve gebruiker op azure actieve folder
 
@@ -201,7 +203,7 @@ Campagne en Microsoft Dynamics zijn nu verbonden. U kunt gegevenssynchronisatie 
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 
-Voor Microsoft Dynamics 365 worden de ondersteunde/niet-ondersteunde kenmerktypen hieronder vermeld:
+Voor Microsoft Dynamics 365 worden de ondersteunde/niet-ondersteunde kenmerktypen hieronder weergegeven:
 
 
 | Type kenmerk | Ondersteund |

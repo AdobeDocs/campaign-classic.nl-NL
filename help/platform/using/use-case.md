@@ -8,7 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 2%
@@ -23,22 +25,22 @@ ht-degree: 2%
 
 Met deze gebruiksaanwijzing kunt u zien hoe u een filter maakt voor het sorteren van nieuwsbrieven-abonnementen op basis van de e-mailindeling van de ontvanger.
 
-Hiervoor moet een vooraf gedefinieerd filter worden gebruikt: deze filters zijn gekoppeld aan een documenttype en zijn toegankelijk via de **[!UICONTROL Administration > Configuration > Predefined filters]** knooppunt. Deze gegevensfilters kunnen worden gebruikt voor elk type editor (of document) in de toepassing.
+Hiervoor moet een vooraf gedefinieerd filter worden gebruikt: deze filters zijn gekoppeld aan een documenttype en zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** . Deze gegevensfilters kunnen worden gebruikt voor elk type editor (of document) in de toepassing.
 
 Gegevensfilters worden op dezelfde manier gemaakt als vooraf gedefinieerde filters, maar er is een extra veld om het documenttype te selecteren waarop het filter wordt toegepast.
 
 Voer de volgende stappen uit:
 
-1. Een nieuw filter maken via het dialoogvenster **[!UICONTROL Administration > Configuration > Predefined filters]** knooppunt.
-1. Klik op de knop **[!UICONTROL Select link]** pictogram om het betrokken document te selecteren:
+1. Maak een nieuw filter via het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** .
+1. Klik op het pictogram **[!UICONTROL Select link]** om het desbetreffende document te selecteren:
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. Selecteer het abonnementsschema (nms:abonnement) en klik op **[!UICONTROL OK]**.
+1. Selecteer het abonnementsschema (nms:abonnement) en klik op **[!UICONTROL OK]** .
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
-1. Klikken **[!UICONTROL Edit link]** om de velden van het geselecteerde document weer te geven.
+1. Klik op **[!UICONTROL Edit link]** om de velden van het geselecteerde document weer te geven.
 
    ![](assets/s_ncs_user_filter_edit_schema.png)
 
@@ -46,17 +48,17 @@ Voer de volgende stappen uit:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   U hebt toegang tot deze velden om filtervoorwaarden in de hoofdtekst van de filtereditor te definiëren. Een toepassingsfilter wordt op precies dezelfde manier gedefinieerd als een geavanceerd filter. Zie [Een geavanceerd filter maken](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   U hebt toegang tot deze velden om filtervoorwaarden in de hoofdtekst van de filtereditor te definiëren. Een toepassingsfilter wordt op precies dezelfde manier gedefinieerd als een geavanceerd filter. Zie [ een geavanceerd filter ](../../platform/using/creating-filters.md#creating-an-advanced-filter) creëren.
 
 1. Maak een nieuw filter op abonnementen om alleen abonnementen met een niet-gedefinieerde e-mailindeling weer te geven:
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
-1. Klikken **[!UICONTROL Save]** om een filter aan de vooraf bepaalde filters voor dit type van lijst toe te voegen.
-1. U kunt dit filter nu gebruiken in het dialoogvenster **[!UICONTROL Subscriptions]** tabblad van het ontvangende profiel; u kunt het filter Onbekende e-mailindeling openen door op het tabblad **[!UICONTROL Filters]** knop.
+1. Klik op **[!UICONTROL Save]** om een filter toe te voegen aan de vooraf gedefinieerde filters voor dit type lijst.
+1. U kunt dit filter nu gebruiken op het tabblad **[!UICONTROL Subscriptions]** van het ontvangende profiel. U kunt het filter &quot;Onbekende e-mailindeling&quot; openen door op de knop **[!UICONTROL Filters]** te klikken.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   De naam van het huidige filter wordt boven de lijst weergegeven. Als u het filter wilt annuleren, klikt u op de knop **[!UICONTROL Delete this filter]** pictogram.
+   De naam van het huidige filter wordt boven de lijst weergegeven. Als u het filter wilt annuleren, klikt u op het pictogram **[!UICONTROL Delete this filter]** .
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)

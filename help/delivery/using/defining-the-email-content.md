@@ -5,8 +5,10 @@ description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign gebr
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -64,9 +66,9 @@ U kunt ook emoticons invoegen in uw onderwerpregel via het pop-upvenster van **[
 
 De inhoud van het bericht wordt bepaald in de lagere sectie van het venster van de leveringsconfiguratie.
 
-Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van de voorkeur van de ontvanger. We raden u aan inhoud in beide indelingen te maken om ervoor te zorgen dat berichten correct kunnen worden weergegeven in elk e-mailsysteem. Voor meer op dit, verwijs naar [ Selecterend berichtformaten ](email-parameters.md#selecting-message-formats).
+Berichten worden standaard in HTML of tekstindeling verzonden, afhankelijk van de voorkeur van de ontvanger. We raden u aan inhoud in beide indelingen te maken om ervoor te zorgen dat berichten correct kunnen worden weergegeven in elk e-mailsysteem. Voor meer op dit, verwijs naar [ Selecterend berichtformaten ](email-parameters.md#selecting-message-formats).
 
-* Gebruik de knop **[!UICONTROL Open]** om HTML-inhoud te importeren. U kunt de broncode ook rechtstreeks in de subtab **[!UICONTROL Source]** plakken.
+* Als u HTML-inhoud wilt importeren, gebruikt u de knop **[!UICONTROL Open]** . U kunt de broncode ook rechtstreeks in de subtab **[!UICONTROL Source]** plakken.
 
   Als u de [ Digitale Redacteur van de Inhoud ](../../web/using/about-campaign-html-editor.md) (DCE) gebruikt, verwijs naar [ Selecterend een inhoudsmalplaatje ](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -76,7 +78,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
   Met het subtabblad **[!UICONTROL Preview]** kunt u de rendering van elke inhoud voor een ontvanger weergeven. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel.
 
-  Met de werkbalkknoppen hebt u toegang tot de standaardhandelingen en opmaakparameters voor de pagina HTML.
+  De werkbalkknoppen bieden toegang tot de standaardhandelingen en opmaakparameters voor de HTML-pagina.
 
   ![](assets/s_ncs_user_wizard_email01_138.png)
 
@@ -96,7 +98,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
-  U kunt het bericht HTML valideren. U kunt ook de inhoud van de koptekst van de e-mail weergeven.
+  U kunt het HTML-bericht valideren. U kunt ook de inhoud van de koptekst van de e-mail weergeven.
 
   ![](assets/s_ncs_user_wizard_email01_140.png)
 
@@ -104,7 +106,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  Als u de HTML-indeling gebruikt, klikt u op de tab **[!UICONTROL Preview]** onder aan de pagina om de weergave van het bericht met de personalisatie weer te geven.
+  Voor de HTML-indeling klikt u op de tab **[!UICONTROL Preview]** onder aan de pagina om de weergave van het bericht met de personalisatie weer te geven.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -144,14 +146,14 @@ Om de emoticonlijst aan te passen, verwijs naar deze [ pagina ](customizing-emot
 
 ## Afbeeldingen toevoegen {#adding-images}
 
-E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de bezorgingsassistent kunt u een HTML-pagina met afbeeldingen importeren of rechtstreeks afbeeldingen invoegen met de HTML-editor via het pictogram **[!UICONTROL Image]** .
+E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de bezorgingsassistent kunt u een HTML-pagina met afbeeldingen importeren of afbeeldingen rechtstreeks invoegen via de HTML-editor via het pictogram **[!UICONTROL Image]** .
 
 
 ### Guardrails {#img-guardrails}
 
 Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet groter zijn dan 100 kB. Deze standaard ingestelde limiet kan worden gewijzigd met de optie `NmsDelivery_MaxDownloadedImageSize` . Adobe raadt echter sterk aan om grote afbeeldingen in uw e-mailleveringen te voorkomen.
 
-Leer meer in [ de lijst van Campaign Classic opties ](../../installation/using/configuring-campaign-options.md#delivery).
+Leer meer in [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Afbeeldingstypen {#img-types}
 
@@ -186,7 +188,7 @@ Afbeeldingen beheren via de leveringsassistent:
 * U kunt afbeeldingen handmatig uploaden zonder te wachten op de fase van de leveringsanalyse. Klik hiertoe op de koppeling **[!UICONTROL Upload the images straightaway...]** .
 * U kunt een ander pad opgeven voor toegang tot de afbeeldingen op de trackingserver. U doet dit door het bestand in het veld **[!UICONTROL Images URL]** in te voeren. Deze waarde treedt de waarde met voeten die in de parameters van de installatiemedewerker wordt bepaald.
 
-Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de leveringsassistent, kunt u de afbeeldingen volgens de leveringsparameters direct uploaden.
+Wanneer u HTML-inhoud opent met opgenomen afbeeldingen in de leveringsassistent, kunt u de afbeeldingen volgens de leveringsparameters direct uploaden.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
@@ -282,7 +284,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Met het veld **[!UICONTROL Height]** kunt u de hoogte van de streepjescode configureren zonder de breedte te wijzigen door de hoeveelheid ruimte tussen de streepjes te wijzigen.
 
-   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **&#x200B;**&#x200B;wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
+   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **** wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
 
    >[!NOTE]
    >

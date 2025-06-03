@@ -5,23 +5,25 @@ description: Meer informatie over het verzenden, controleren en volgen van SMS i
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
+source-wordcount: '887'
+ht-degree: 0%
 
 ---
 
-# SMS-leveringen verzenden, controleren en volgen{#sms-properties}
+# Aanvullende configuratie{#sms-properties}
 
-## SMS-berichten verzenden {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-Klik op **[!UICONTROL Send]** als u uw bericht wilt goedkeuren en verzenden naar de ontvangers van de levering die wordt gemaakt.
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-Het gedetailleerde proces voor het valideren en verzenden van een levering wordt in de volgende secties weergegeven:
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [De levering valideren](steps-validating-the-delivery.md)
-* [De levering verzenden](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## Geavanceerde parameters {#advanced-parameters}
 
@@ -55,13 +57,15 @@ De volgende opties zijn beschikbaar:
 
 * **Maximum aantal SMS per bericht**: deze optie laat u het aantal SMS plaatsen om een bericht te verzenden. Als het aantal aan 0 wordt geplaatst, kunt u SMS gebruiken om uw bericht te leveren. Als het aantal SMS bijvoorbeeld op 1 of 2 wordt geplaatst, en het bericht deze drempel overschrijdt, zal het niet worden verzonden.
 
-## SMS controleren en volgen {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [Een verzending controleren](about-delivery-monitoring.md)
-* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
-* [Berichttracking](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 

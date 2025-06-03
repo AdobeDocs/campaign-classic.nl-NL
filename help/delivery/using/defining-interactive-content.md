@@ -5,8 +5,10 @@ description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -23,7 +25,7 @@ Met AMP voor e-mail kunt u:
 
 Voor meer bij het testen van en het verzenden van e-mails van AMP, zie [ deze sectie ](#targeting-amp-email).
 
-Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Afhankelijk van uw machtigingen en uw implementatiemodel kunt u dit pakket installeren of de Adobe bereiken om het voor u te installeren.
+Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Afhankelijk van uw machtigingen en uw implementatiemodel kunt u dit pakket installeren of contact opnemen met Adobe om het voor u te installeren.
 
 >[!NOTE]
 >
@@ -164,7 +166,7 @@ Dit doet u als volgt:
 1. Controleer of de optie voor het inschakelen van dynamische e-mail is ingeschakeld bij de desbetreffende e-mailprovider(s).
 1. Kopieer het adres van de afzender dat in het gebied van de levering **[!UICONTROL From]** wordt getoond en kleef het in de aangewezen sectie van de de rekeningsmontages van uw e-mailprovider.
 
-Voor verdere details, raadpleeg de [&#128279;](https://developers.google.com/gmail/ampemail/testing-dynamic-email) ontwikkelaarsdocumentatie 0&rbrace; Gmail &lbrace;.
+Voor verdere details, raadpleeg de ](https://developers.google.com/gmail/ampemail/testing-dynamic-email) ontwikkelaarsdocumentatie 0} Gmail {.[
 
 ![](assets/amp_from_field.png)
 
@@ -186,7 +188,7 @@ Om AMP e-mails naar Mail.ru adressen te verzenden, volg de vereisten en de stapp
 
 Zodra uw AMP-inhoud en -fallback klaar zijn en u een compatibel doel hebt gedefinieerd, kunt u de e-mail verzenden zoals u dat gewoonlijk doet.
 
-Momenteel ondersteunen alleen Gmail en Mail.ru de AMP-indeling onder bepaalde omstandigheden. U kunt adressen van andere e-mailleveranciers richten, maar zij zullen de HTML of gewone tekstversie van uw e-mail ontvangen.
+Momenteel ondersteunen alleen Gmail en Mail.ru de AMP-indeling onder bepaalde omstandigheden. U kunt adressen van andere e-mailproviders als doel instellen, maar deze ontvangen de HTML of de onbewerkte tekstversie van uw e-mail.
 
 >[!IMPORTANT]
 >

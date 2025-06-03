@@ -5,8 +5,10 @@ description: Leer hoe u e-mailberichten configureert, ontwerpt en verzendt die o
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email, Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -34,10 +36,10 @@ Voor het verzenden van e-mails die worden gelezen op een mobiel apparaat dat wor
 Daarom moet u:
 
 * Alleen afbeeldingen in JPEG- of GIF-indeling gebruiken
-* Creeer een levering met tekst en HTML secties die strikt lager zijn dan 10 000 bytes (voor KDDI AU en DoCoMo)
+* Een levering maken met tekst en HTML-secties die strikt lager zijn dan 10 000 bytes (voor KDDI AU en DoCoMo)
 * Afbeeldingen met een totale grootte (vóór codering) van minder dan 100 kB gebruiken
 * Gebruik niet meer dan 20 afbeeldingen per bericht
-* Gebruik een indeling voor kleiner formaat HTML (er is een beperkt aantal tags beschikbaar voor elke operator)
+* Gebruik een HTML-indeling van beperkte grootte (een beperkt aantal tags is beschikbaar voor elke operator)
 
 >[!NOTE]
 >
@@ -68,7 +70,7 @@ Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij 
 >
 >Deze typologieregel wordt alleen uitgevoerd als ten minste een van de ontvangers is geconfigureerd voor het ontvangen van e-mails in de indeling **[!UICONTROL Deco-mail (DoCoMo)]** , **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** .
 
-Deze typologieregel staat u toe om ervoor te zorgen dat de levering de [ formaatbeperkingen ](#limitations-and-recommendations) respecteert die door de Japanse exploitanten, met name met betrekking tot de totale grootte van e-mail, de grootte van de HTML en tekstsecties, het aantal beelden in de berichten, en de markeringen in de inhoud van de HTML worden bepaald.
+Deze typologieregel staat u toe om ervoor te zorgen dat de levering de [ formaatbeperkingen ](#limitations-and-recommendations) respecteert die door de Japanse exploitanten, met name met betrekking tot de totale grootte van e-mail, de grootte van HTML en tekstsecties, het aantal beelden in de berichten, en de markeringen in de inhoud van HTML worden bepaald.
 
 ### Proefdrukken verzenden {#sending-proofs}
 

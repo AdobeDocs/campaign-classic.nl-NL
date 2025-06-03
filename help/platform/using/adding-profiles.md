@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 2%
+source-wordcount: '61'
+ht-degree: 3%
 
 ---
 
@@ -17,10 +17,17 @@ ht-degree: 2%
 
 
 
-In de meeste gevallen zijn de profielen [geïmporteerd naar Campagne via een workflow](../../platform/using/import-export-workflows.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** knop. Zij zullen dan aan het gegevensbestand worden toegevoegd.
+In de meeste gevallen, worden de profielen ingevoerd [ aan Campagne door een werkschema ](../../platform/using/import-export-workflows.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
 
 ![](assets/s_ncs_user_profile_add.png)
 
-Voer de informatie voor dit profiel in. De in te vullen tabbladen en velden worden beschreven in [Een profiel bewerken](../../platform/using/editing-a-profile.md).
+>[!NOTE]
+>
+>Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
-Klikken **[!UICONTROL Save]** om het maken van profielen te valideren. Het profiel wordt vervolgens toegevoegd aan de Adobe Campaign-database.
+
+<!--
+Enter the information for this profile. The tabs and fields to be completed are described in [Editing a profile](../../platform/using/editing-a-profile.md).
+
+Click **[!UICONTROL Save]** to validate profile creation. The profile is then added in Adobe Campaign database.
+-->

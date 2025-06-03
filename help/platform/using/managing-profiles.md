@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 0%
+source-wordcount: '134'
+ht-degree: 1%
 
 ---
 
@@ -28,24 +28,28 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 
 >[!NOTE]
 >
->Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Leer meer in [ Omslagen en meningen ](../../platform/using/access-management-folders.md).
+> * Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Leer meer in [ Omslagen en meningen ](../../platform/using/access-management-folders.md).
+> * Meer leren op hoe te om uw profielen te beheren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-## Ontvangers verplaatsen {#moving-recipients}
 
-U kunt een of meer ontvangers selecteren, deze uit de lijst met ontvangers slepen en neerzetten in de gewenste map. U wordt in een waarschuwingsbericht gevraagd deze actie te bevestigen.
+<!--
+## Move recipients {#moving-recipients}
 
-## Een ontvanger kopiëren {#copying-a-recipient}
+You can select one or more recipients, drag them from the recipient list, and drop them in the desired folder. A warning message asks you to confirm this action.
 
-U kunt een ontvanger in dezelfde map kopiëren door met de rechtermuisknop op de gewenste ontvanger te klikken en **[!UICONTROL Copy]** te selecteren.
+## Copy a recipient {#copying-a-recipient}
 
-## Ontvangers verwijderen {#deleting-recipients}
+You can copy a recipient in the same folder by right-clicking the desired recipient and selecting **[!UICONTROL Copy]**.
 
-Als u ontvangers wilt verwijderen, verplaatst u ze naar een specifieke map en wist u de inhoud van deze map. Het wordt sterk geadviseerd **niet de &#x200B;** [!UICONTROL Delete]&#x200B;**optie in dit geval te gebruiken.**
+## Delete recipients {#deleting-recipients}
 
-Als u een map wilt leegmaken, gebruikt u het menu **[!UICONTROL Actions > Purge folder]** . Dit menu wordt geopend door met de rechtermuisknop op de gewenste map te klikken.
+To delete recipients, move them to a specific folder and then purge the content of this folder. It is **strongly recommended not to use** the **[!UICONTROL Delete]** option in this case.
+
+To purge a folder, use the **[!UICONTROL Actions > Purge folder]** menu, accessed by right-clicking the desired folder.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-Klik op **[!UICONTROL Start]** om de bewerking te starten. In het middelste gedeelte van het venster wordt de voortgangsstatus weergegeven, zoals hieronder wordt getoond:
+Click **[!UICONTROL Start]** to launch the operation. The middle section of the window displays the progress status, as shown below:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
+-->

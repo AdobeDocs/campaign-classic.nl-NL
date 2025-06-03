@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 10%
 
 ---
 
@@ -21,122 +21,126 @@ ht-degree: 2%
 
 De stappen voor het bouwen van een vraag in Adobe Campaign zijn als volgt:
 
-1. Selecteer de werktabel. Zie [Stap 1 - Kies een tabel](#step-1---choose-a-table).
-1. Selecteer de gegevens die u wilt extraheren. Zie [Stap 2 - Kies de gegevens die u wilt extraheren](#step-2---choose-data-to-extract).
-1. Definieer de gegevenssorteervolgorde. Zie [Stap 3 - Gegevens sorteren](#step-3---sort-data).
-1. Filter de gegevens. Zie [Stap 4 - Gegevens filteren](#step-4---filter-data).
-1. Maak de gegevens op. Zie [Stap 5 - Gegevens opmaken](#step-5---format-data).
-1. Geef het resultaat weer. Zie [Stap 6 - Voorbeeldgegevens](#step-6---preview-data).
+1. Selecteer de werktabel. Verwijs naar [ Stap 1 - kies een lijst ](#step-1---choose-a-table).
+1. Selecteer de gegevens die u wilt extraheren. Verwijs naar [ Stap 2 - kies gegevens om ](#step-2---choose-data-to-extract) te halen.
+1. Definieer de gegevenssorteervolgorde. Verwijs naar [ Stap 3 - de gegevens van de Soort ](#step-3---sort-data).
+1. Filter de gegevens. Verwijs naar [ Stap 4 - de gegevens van de Filter ](#step-4---filter-data).
+1. Maak de gegevens op. Verwijs naar [ Stap 5 - de gegevens van het Formaat ](#step-5---format-data).
+1. Geef het resultaat weer. Verwijs naar [ Stap 6 - de gegevens van de Voorproef ](#step-6---preview-data).
 
 >[!NOTE]
 >
->Al deze stappen zijn beschikbaar in de generische vraagredacteur. Wanneer een query in een andere context wordt gemaakt, kunnen sommige stappen worden weggelaten.\
->De activiteit van de Vraag wordt voorgesteld in [deze sectie](../../workflow/using/query.md).
+>* Al deze stappen zijn beschikbaar in de generische vraagredacteur. Wanneer een query in een andere context wordt gemaakt, kunnen sommige stappen worden weggelaten.\
+>De activiteit van de Vraag wordt voorgesteld in [ deze sectie ](../../workflow/using/query.md).
+>* Meer over Vragen leren en hoe te om hen tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](../../workflow/using/query.md).
 
-## Stap 1 - Kies een tabel {#step-1---choose-a-table}
+<!--
+## Step 1 - Choose a table {#step-1---choose-a-table}
 
-Selecteer de tabel met de gegevens waarop u een query wilt uitvoeren in het dialoogvenster **[!UICONTROL Document type]** venster. Indien nodig, filtert u de gegevens met het filterveld of de **[!UICONTROL Filters]** knop.
+Select the table containing the data you want to query in the **[!UICONTROL Document type]** window. If necessary, filter the data using the filter field or the **[!UICONTROL Filters]** button.
 
 ![](assets/query_editor_nveau_21.png)
 
-## Stap 2 - Kies de gegevens die u wilt extraheren {#step-2---choose-data-to-extract}
+## Step 2 - Choose data to extract {#step-2---choose-data-to-extract}
 
-In de **[!UICONTROL Data to extract]** Selecteer de gegevens die u wilt weergeven. Deze velden vormen de uitvoerkolommen.
+In the **[!UICONTROL Data to extract]** window, select the data to display: these fields will make up the output columns.
 
-Selecteer bijvoorbeeld **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** en **[!UICONTROL City]**. De resultaten worden op basis van deze selectie geordend. Gebruik de blauwe pijlen rechts van het venster om de kolomvolgorde te wijzigen.
+For example, select **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** and **[!UICONTROL City]**. The results will be organized based on this selection. Use the blue arrows to the right of the window to change the column order.
 
 ![](assets/query_editor_nveau_01.png)
 
-U kunt een expressie bewerken door er een formule in op te nemen of door een proces uit te voeren voor een statistische functie. Om dit te doen, klik **[!UICONTROL Expression]** kolomveld, selecteer vervolgens **[!UICONTROL Edit expression]**.
+You can edit an expression by inserting a formula into it or running a process on an aggregate function. To do this, click the **[!UICONTROL Expression]** column field, then select **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-U kunt uitvoerkolomgegevens groeperen: hiervoor controleert u **[!UICONTROL Yes]** in de **[!UICONTROL Group]** kolom van de **[!UICONTROL Data to extract]** venster. Deze functie genereert een resultaat rond de geselecteerde groeperingsas. Een voorbeeld van een query met groepering is beschikbaar in [deze sectie](../../workflow/using/querying-delivery-information.md).
+It is possible to group output column data: to do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Group]** column of the **[!UICONTROL Data to extract]** window. This function generates a result around the checked grouping axis. An example of a query with grouping is available in [this section](../../workflow/using/querying-delivery-information.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* De **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kunt u &quot;groeperen door&quot; en selecteren wat is gegroepeerd (&quot;hebben&quot;). Deze functie is van toepassing op alle velden in de uitvoerkolom. Met deze optie kunt u bijvoorbeeld alle keuzen van een uitvoerkolom groeperen en een bepaald type informatie herstellen, zoals ontvangers tussen 35 en 50.
+* The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** function lets you "group by" and select what has been grouped ("having"). This function applies to all fields in the output column. For example, this option lets you group all choices of an output column and recover a specific type of information, such as recipients between 35 and 50.
 
-  Raadpleeg [deze sectie](../../workflow/using/querying-using-grouping-management.md) voor meer informatie.
+  For more on this, refer to [this section](../../workflow/using/querying-using-grouping-management.md).
 
-* De **[!UICONTROL Remove duplicate rows (DISTINCT)]** Met deze functie kunt u identieke resultaten dedupliceren die in de uitvoerkolom zijn verkregen. Als u bijvoorbeeld een telling uitvoert door de velden Achternaam, Voornaam en E-mail te selecteren in de uitvoerkolom, worden de velden met identieke gegevens verwijderd, omdat dit betekent dat dezelfde contactpersoon meerdere malen in de database is ingevoerd: er wordt slechts één resultaat in aanmerking genomen.
+* The **[!UICONTROL Remove duplicate rows (DISTINCT)]** function lets you deduplicate identical results obtained in the output column. For example, if you take a census by selecting the Last name, First name and Email fields in the output column, those with identical data will be eliminated, since it means the same contact has been entered several times in the database: only one result will be taken into account.
 
-## Stap 3 - Gegevens sorteren {#step-3---sort-data}
+## Step 3 - Sort data {#step-3---sort-data}
 
-De **[!UICONTROL Sorting]** kunt u kolominhoud sorteren. Gebruik de pijlen om de kolomvolgorde te wijzigen:
+The **[!UICONTROL Sorting]** window lets you sort column content. Use the arrows to change the column order:
 
-* De **[!UICONTROL Sorting]** de kolom maakt een eenvoudige sortering mogelijk en rangschikt de kolominhoud van A naar Z of in oplopende volgorde.
-* De **[!UICONTROL Descending sort]** Hiermee rangschikt u de inhoud van Z naar A en in aflopende volgorde. Dit is bijvoorbeeld handig voor het weergeven van recordverkopen: de hoogste cijfers worden boven aan de lijst weergegeven.
+* The **[!UICONTROL Sorting]** column enables a simple sort and arranges column content from A to Z or in ascending order.
+* The **[!UICONTROL Descending sort]** arranges the content from Z to A and in descending order. This is useful for viewing record sales for example: the highest figures are shown at the top of the list.
 
-In dit voorbeeld worden de gegevens in oplopende volgorde gesorteerd op basis van de leeftijd van de ontvanger.
+In this example, the data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_57.png)
 
-## Stap 4 - Gegevens filteren {#step-4---filter-data}
+## Step 4 - Filter data {#step-4---filter-data}
 
-Met de query-editor kunt u gegevens filteren om uw zoekopdracht te verfijnen.
+The query editor lets you filter data to refine your search.
 
-De aangeboden filters zijn afhankelijk van de tabel waarop de query betrekking heeft.
+The filters offered depend on the table which the query concerns.
 
 ![](assets/query_editor_nveau_09.png)
 
-Wanneer u de **[!UICONTROL Filtering conditions]** u krijgt toegang tot de **[!UICONTROL Target elements]** sectie: hiermee kunt u definiëren hoe de te verzamelen gegevens worden gefilterd.
+Once you select the **[!UICONTROL Filtering conditions]** you will access the **[!UICONTROL Target elements]** section: this lets you define how to filter the data to collect.
 
-* Als u een nieuw filter wilt maken, selecteert u de velden, operatoren en waarden die nodig zijn voor het maken van de formule die moet worden gecontroleerd voordat de gegevens worden geselecteerd. Het is mogelijk verschillende voorwaarden te combineren (voor meer informatie hierover raadpleegt u [Filtervoorwaarden definiëren](../../platform/using/defining-filter-conditions.md)).
-* Als u eerder opgeslagen filters wilt gebruiken, opent u de vervolgkeuzelijst door op de knop **[!UICONTROL Add]** klikt u op **[!UICONTROL Predefined filter]** en selecteert u de gewenste versie.
+* To create a new filter, select the fields, operators and values required for creating the formula to be verified in order for data to be selected. It's possible to combine several conditions (for more on this, refer to [Defining filter conditions](../../platform/using/defining-filter-conditions.md)).
+* To use previously saved filters, open the drop-down list by clicking the **[!UICONTROL Add]** button, click **[!UICONTROL Predefined filter]** and select the one you want.
 
   ![](assets/query_editor_15.png)
 
-* De filters die in de **[!UICONTROL Generic query editor]** zijn beschikbaar in andere vraagtoepassingen en vice versa. Als u een filter wilt opslaan, klikt u op de knop **[!UICONTROL Save]** pictogram.
+* The filters created in the **[!UICONTROL Generic query editor]** are available in other query applications and vice versa. To save a filter, click the **[!UICONTROL Save]** icon.
 
   >[!NOTE]
   >
-  >Raadpleeg voor meer informatie over het maken en gebruiken van filters [Filteropties](../../platform/using/filtering-options.md).
+  >For more on creating and using filters, refer to [Filtering options](../../platform/using/filtering-options.md).
 
-Zoals getoond in het volgende voorbeeld, om alle Engelstalige ontvangers terug te krijgen, selecteer: &quot;de ontvangende taal **gelijk aan** NL&quot;.
+As shown in the following example, to recover all English-speaking recipients, select: "recipient language **equal to** EN".
 
 ![](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
->U hebt rechtstreeks toegang tot een optie door de volgende formule te typen in het dialoogvenster **Waarde** veld: **$(opties:OPTION_NAME)**.
+>You can directly access an option by typing the following formula in the **Value** field: **$(options:OPTION_NAME)**.
 
-Klik op de knop **[!UICONTROL Preview]** om het resultaat van de filtervoorwaarde weer te geven. In dit geval worden alle Engelstalige ontvangers weergegeven met hun naam, voornaam en e-mailadres.
+Click the **[!UICONTROL Preview]** tab to view the result of the filtering condition. In this case, all English-speaking recipients are displayed with their name, first name and email address.
 
 ![](assets/query_editor_nveau_98.png)
 
-Gebruikers die vertrouwd zijn met SQL kunnen klikken op **[!UICONTROL Generate SQL query]** om de query in SQL te bekijken.
+Users familiar with SQL language can click **[!UICONTROL Generate SQL query]** to view the query in SQL.
 
 ![](assets/query_editor_nveau_99.png)
 
-## Stap 5 - Gegevens opmaken {#step-5---format-data}
+## Step 5 - Format data {#step-5---format-data}
 
-Zodra u de beperkingsfilters hebt gevormd, zult u tot **[!UICONTROL Data formatting]** venster. In dit venster kunt u de uitvoerkolommen opnieuw rangschikken, gegevens transformeren en het hoofdlettergebruik van de kolomlabels wijzigen. Hiermee kunt u ook een formule op het uiteindelijke resultaat toepassen met een berekend veld.
+Once you have configured the restriction filters, you will access the **[!UICONTROL Data formatting]** window. This window lets you re-arrange output columns, transform data, and change the upper/lower case of the column labels. It also lets you apply a formula to the final result using a calculated field.
 
 >[!NOTE]
 >
->Raadpleeg voor meer informatie over de typen berekende velden [Berekende velden maken](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
+>For more information on the types of calculated fields, refer to [Creating calculated fields](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
 
-Niet-geselecteerde kolommen worden niet weergegeven in het venster met gegevensvoorvertoning.
+Unchecked columns will not be shown in the data preview window.
 
 ![](assets/query_editor_nveau_10.png)
 
-De **[!UICONTROL Transformation]** kunt u een kolomlabel wijzigen in hoofdletters of kleine letters. Selecteer de kolom en klik in het dialoogvenster **[!UICONTROL Transformation]** kolom. U kunt kiezen:
+The **[!UICONTROL Transformation]** column lets you change a column label to upper or lower case. Select the column and click in the **[!UICONTROL Transformation]** column. You can choose:
 
 * **[!UICONTROL Switch to lower case]**,
-* **[!UICONTROL Switch to upper case]**,
+* **[!UICONTROL Switch to upper case]**, 
 * **[!UICONTROL First letter in upper case]**.
 
 ![](assets/query_editor_nveau_42.png)
 
-## Stap 6 - Voorbeeldgegevens {#step-6---preview-data}
+## Step 6 - Preview data {#step-6---preview-data}
 
-De **[!UICONTROL Data preview]** venster is de laatste fase. Klikken **[!UICONTROL Start the preview of the data]** om uw vraagresultaat te krijgen. Deze optie is beschikbaar in kolommen of in XML-indeling. Klik op de knop **[!UICONTROL Generated SQL queries]** om de query in SQL-indeling weer te geven.
+The **[!UICONTROL Data preview]** window is the last stage. Click **[!UICONTROL Start the preview of the data]** to get your query result. It is available in columns or in XML format. Click the **[!UICONTROL Generated SQL queries]** tab to view the query in SQL format.
 
-In dit voorbeeld worden gegevens in oplopende volgorde gesorteerd op basis van de leeftijd van de ontvanger.
+In this example, data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_11.png)
 
 >[!NOTE]
 >
->Standaard worden alleen de eerste 200 regels weergegeven in het dialoogvenster **[!UICONTROL Data preview]** venster. Als u dit wilt wijzigen, voert u een getal in het dialoogvenster **[!UICONTROL Lines to display]** en klik op **[!UICONTROL Start the preview of the data]**.
+>By default, only the first 200 lines are displayed in the **[!UICONTROL Data preview]** window. To change this, enter a number in the **[!UICONTROL Lines to display]** box and click **[!UICONTROL Start the preview of the data]**.
+
+-->

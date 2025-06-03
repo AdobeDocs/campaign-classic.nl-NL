@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
+source-wordcount: '189'
+ht-degree: 92%
 
 ---
 
@@ -37,43 +37,46 @@ Adobe Campaign biedt gegevenscontrollers twee manieren om verzoeken voor toegang
 
 >[!NOTE]
 >
->Voor meer informatie over persoonsgegevens en over de verschillende entiteiten die gegevens beheren (gegevenscontroller, gegevensprocessor en betrokkene) raadpleegt u [Persoonsgegevens en persona&#39;s](privacy-and-recommendations.md#personal-data).
+>* Voor meer informatie over persoonsgegevens en over de verschillende entiteiten die gegevens beheren (gegevenscontroller, gegevensprocessor en betrokkene) raadpleegt u [Persoonsgegevens en persona&#39;s](privacy-and-recommendations.md#personal-data).
+>* Meer over privacyverzoeken leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
 
-## Vereisten {#prerequesites}
+<!--
+## Prerequisites {#prerequesites}
 
-Adobe Campaign biedt tools voor gegevenscontrollers waarmee u verzoeken om toegang tot opgeslagen persoonsgegevens in Adobe Campaign kunt maken en verwerken. Het is echter de verantwoordelijkheid van de gegevenscontroller om de relatie met de betrokkene (e-mail, klantenservice of een webportal) af te handelen.
+Adobe Campaign offers Data Controllers tools to create and process Privacy requests for data stored in Adobe Campaign. However, it is the Data Controller's responsibility to handle the relationship with the Data Subject (email, customer care or a web portal).
 
-Daarom is het uw verantwoordelijkheid als gegevenscontroller om de identiteit te bevestigen van de betrokkene die het verzoek indient, en om te bevestigen dat de gegevens die naar de aanvrager worden teruggestuurd, over de betrokkene gaan.
+It is therefore your responsibility as a Data Controller to confirm the identity of the Data Subject making the request and to confirm that the data returned to the requester is about the Data Subject.
 
-## Het privacypakket installeren {#install-privacy-package}
+## Installing the Privacy package {#install-privacy-package}
 
-Als u deze functie wilt gebruiken, moet u het **[!UICONTROL Privacy Data Protection Regulation]**-pakket installeren via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**. Raadpleeg de [gedetailleerde documentatie](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie over het installeren van pakketten.
+In order to use this feature, you need to install the **[!UICONTROL Privacy Data Protection Regulation]** package via the **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]** menu. For more information on how to install packages, refer to the [detailed documentation](../../installation/using/installing-campaign-standard-packages.md).
 
-Onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** worden twee nieuwe mappen gemaakt die specifiek zijn voor privacy:
+Two new folders, specific to Privacy, are created under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**:
 
-* **[!UICONTROL Privacy Requests]**: hier kunt u uw verzoeken om toegang tot persoonsgegevens maken en de ontwikkeling ervan volgen.
-* **[!UICONTROL Namespaces]**: dit is het veld dat wordt gebruikt om de betrokkene in de Adobe Campaign-database te identificeren.
+* **[!UICONTROL Privacy Requests]**: this is where you will create your Privacy requests and track their evolution.
+* **[!UICONTROL Namespaces]**: this is where you will define the field that will be used to identify the Data Subject in the Adobe Campaign database.
 
 ![](assets/privacy-folders.png)
 
-In **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** worden elke dag drie technische workflows uitgevoerd om verzoeken om toegang tot persoonsgegevens te verwerken.
+In **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**, three technical workflows run every day to process Privacy requests.
 
 ![](assets/privacy-workflows.png)
 
-* **[!UICONTROL Collect privacy requests]**: deze workflow genereert de gegevens van de ontvanger die in Adobe Campaign zijn opgeslagen en maakt deze beschikbaar voor downloaden op het scherm van het verzoek om toegang tot persoonsgegevens.
-* **[!UICONTROL Delete privacy requests data]**: met deze workflow verwijdert u de gegevens van de ontvanger die in Adobe Campaign zijn opgeslagen.
-* **[!UICONTROL Privacy request cleanup]**: met deze workflow wist u de bestanden met toegangsverzoeken die ouder zijn dan 90 dagen.
+* **[!UICONTROL Collect privacy requests]**: this workflow generates the recipient's data stored in Adobe Campaign and makes it available for download in the privacy request's screen.
+* **[!UICONTROL Delete privacy requests data]**: this workflow deletes the recipient's data stored in Adobe Campaign.
+* **[!UICONTROL Privacy request cleanup]**: this workflow erases the access request files that are older than 90 days.
 
-In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]** is het opgegeven recht **[!UICONTROL Privacy Data Right]** toegevoegd. Dit opgegeven recht is vereist voor gegevenscontrollers om privacytools te kunnen gebruiken. Hiermee kunnen ze nieuwe verzoeken maken, de ontwikkeling ervan volgen, de API gebruiken, enzovoort.
+In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**, the **[!UICONTROL Privacy Data Right]** named right has been added. This named right is required for Data Controllers in order for them to use privacy tools. This allows them to create new requests, track their evolution, use the API, etc.
 
 ![](assets/privacy-right.png)
 
-## Naamruimten {#namesspaces}
+## Namespaces {#namesspaces}
 
-Voordat u privacyverzoeken maakt, moet u de naamruimte definiëren die u wilt gebruiken. Dit is de sleutel die wordt gebruikt om de betrokkene in de Adobe Campaign-database te identificeren.
+Before creating Privacy requests, you need to define the namespace you will use. This is the key that will be used to identify the Data Subject in the Adobe Campaign database.
 
-Drie naamruimten zijn standaard beschikbaar: e-mail, telefoon en mobiele telefoon. Als u een andere naamruimte nodig hebt (bijvoorbeeld een aangepast veld voor ontvangers), kunt u een nieuwe naamruimte maken via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
+Three namespaces are available out-of-the-box: email, phone and mobile phone. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
 >[!NOTE]
 >
->Voor optimale prestaties is het raadzaam om unieke naamruimten te gebruiken.
+>For optimal performance, it is recommended to use out-of-the-box namespaces.
+-->

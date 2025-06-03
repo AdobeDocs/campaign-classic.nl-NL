@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 9%
+source-wordcount: '103'
+ht-degree: 13%
 
 ---
 
@@ -25,46 +25,53 @@ Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegeven
 >
 >Houd bij het gebruik van deze functionaliteit rekening met de beperkingen voor SFTP-opslag, databaseopslag en actief profiel zoals vastgelegd in uw Adobe Campaign-contract.
 
+>[!NOTE]
+>
+>Meer leren op hoe te om gegevens in te voeren en uit te voeren naar Campagne, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}.
+
+
+<!--
 ## Workflows {#workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**Workflows** Dit is een handige manier om importprocessen te automatiseren. Of u nu gegevens uit een lokaal bestand of uit een SFTP importeert, u kunt hiermee de procedures voor gegevensbeheer standaardiseren.
+**Workflows** are a useful way to automate your import processes. Whether you import data from a local file or from a SFTP, they allow you to standardize your data management procedures.
 
-Met workflows kunnen import- en exportbewerkingen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren.
+With workflows, import and export operations can be repeated automatically according to a schedule, for example to automate data exchange between several information systems.
 
-Raadpleeg [deze sectie](../../platform/using/import-export-workflows.md) voor meer informatie.
+For more on this, refer to [this section](../../platform/using/import-export-workflows.md).
 
-## Algemene invoer en uitvoer {#generic-import-export}
+## Generic imports and exports {#generic-import-export}
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Bovendien biedt Campaign Classic **algemene invoer en uitvoer** waarmee u af en toe import- of exporttaken kunt maken.
+Additionally, Campaign Classic provides **generic imports and exports** that allow you to create occasional import or export jobs.
 
-De invoer en de uitvoer worden gevormd in specifieke malplaatjes, die u kunt vormen en gebruiken om invoer en de uitvoerbanen te lanceren en te controleren.
+Imports and exports are configured in dedicated templates, that you can configure and use to launch and monitor import and export jobs.
 
-Voor meer informatie over de invoer en de uitvoer van generieke geneesmiddelen raadpleegt u [deze sectie](../../platform/using/about-generic-imports-exports.md).
+For more on generic imports and exports, refer to [this section](../../platform/using/about-generic-imports-exports.md).
 
 >[!IMPORTANT]
->Algemene invoer en uitvoer mogen alleen voor incidentele transacties worden gebruikt. Om de consistentie van de gegevens te waarborgen en de efficiëntie te verbeteren, wordt aangeraden de import- en exportbewerkingen uit te voeren met behulp van workflows.
+>Generic imports and exports should be used for occasional operations only. To ensure data consistency and improve efficiency, it is recommended to perform your import and export operations using workflows.
 
-## Gegevensversleuteling en -compressie {#data-encryption-compression}
+## Data encryption and compression {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 
-Met Campaign Classic kunt u gecomprimeerde of gecodeerde bestanden importeren en gecomprimeerde of gecodeerde bestanden exporteren.
+Campaign Classic allows you to import zipped or encrypted files, and export zipped or encrypted file.
 
-Deze bewerkingen worden uitgevoerd in workflows door het toepassen van voorbewerkingsfasen op de gegevens die u wilt gebruiken.
+These operations are performed within workflows, by applying pre-processing stages to the data you want to leverage.
 
-Raadpleeg deze secties voor meer informatie hierover:
+For more on this, refer to these sections:
 
-* [Een bestand decoderen of decoderen](../../platform/using/unzip-decrypt.md)
-* [Een bestand comprimeren of versleutelen](../../platform/using/zip-encrypt.md)
+* [Unzip or decrypt a file](../../platform/using/unzip-decrypt.md)
+* [Zip or encrypt a file](../../platform/using/zip-encrypt.md)
 
-## Aanbevolen werkwijzen en problemen oplossen {#best-practices-troubleshooting}
+## Best practices and troubleshooting {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-U moet verschillende [best practices](../../platform/using/import-export-best-practices.md) bij het uitvoeren van import- en exportbewerkingen om de consistentie van de gegevens in de database te waarborgen en om veelvoorkomende fouten tijdens update- of exportbewerkingen te voorkomen.
+You should follow several [best practices](../../platform/using/import-export-best-practices.md) when performing import and export operations to ensure data consistency within the database and avoid common errors during update or export operations.
 
-Daarnaast zijn aanbevelingen en algemene problemen met betrekking tot het gebruik van SFTP-servers beschikbaar in [deze sectie](../../platform/using/sftp-server-usage.md).
+Additionally, recommendations and common issues related to SFTP servers usage are available in [this section](../../platform/using/sftp-server-usage.md).
+-->

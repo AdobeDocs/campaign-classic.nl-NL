@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '115'
+ht-degree: 2%
 
 ---
 
@@ -34,68 +34,77 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 >
 >Voor verdere informatie, verwijs naar [ deze pagina ](../../configuration/using/about-schema-edition.md).
 
-## Tabblad Algemeen {#general-tab}
+>[!NOTE]
+>
+>Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
-Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het bevat met name de achternaam, voornaam, e-mailadres, e-mailontvangstnotatie, enz. Het ziet er zo uit:
+
+
+<!--
+## General tab {#general-tab}
+
+This screen contains all general data about the selected profile. In particular, it contains the last name, first name, email address, email reception format, etc. It looks like this:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
 >[!NOTE]
 >
->Wanneer de optie **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van gewezen personen staat, d.w.z. dat het profiel de wens heeft uitgedrukt om niet te worden benaderd (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen op een kanaal (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). They will no longer be targeted by deliveries on any channel (email, direct mail, etc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
-## Tabblad Contactgegevens {#contact-information-tab}
+## Contact information tab {#contact-information-tab}
 
-Dit scherm bevat het directe-mailadres van het geselecteerde profiel. Het ziet er zo uit:
+This screen contains the direct mail address of the selected profile. It looks like this:
 
 ![](assets/s_ncs_user_profile_details_tab.png)
 
-Dit scherm toont de kwaliteitsindex van het adres, evenals hoeveel fouten het adres bevat. Deze informatie wordt gebruikt direct door de postdrager die op het aantal fouten wordt gebaseerd die tijdens vorige leveringen worden gevonden, en is niet manueel wijzigbaar.
+This screen shows the quality index of the address, as well as how many errors the address contains. This information is used directly by the mail carrier based on the number of errors found during previous deliveries, and is not modifiable manually.
 
-## Ander tabblad {#other-tab}
+## Other tab {#other-tab}
 
-Dit scherm bevat door de gebruiker gedefinieerde velden die op basis van vereisten kunnen worden aangepast. U kunt ook de namen van de velden wijzigen en de indeling ervan definiëren via **[!UICONTROL Field properties...]**, zoals hieronder wordt weergegeven:
+This screen contains user-defined fields that can be personalized based on requirements. You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Voor meer op gebiedseigenschappen en bij het toevoegen van gebieden, verwijs naar [ deze pagina ](../../configuration/using/new-field-wizard.md).
+>For more on field properties and on adding fields, refer to [this page](../../configuration/using/new-field-wizard.md).
 
-## Tabblad Lijsten {#lists-tab}
+## Lists tab {#lists-tab}
 
-In dit scherm worden de groep(en) weergegeven waartoe het geselecteerde profiel behoort. Klik op **[!UICONTROL Add]** om het profiel in te schrijven op een lijst. Klik op **[!UICONTROL Detail]** om de beschrijving en de lijst met profielen in de geselecteerde lijst weer te geven.
+This screen displays the group(s) to which the selected profile belongs. Click **[!UICONTROL Add]** to subscribe the profile to a list. Click **[!UICONTROL Detail]** to display the description and the list of profiles in the selected list.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Voor meer op dit, verwijs naar [ creeer en beheer lijsten ](../../platform/using/creating-and-managing-lists.md).
+For more on this, refer to [Create and manage lists](../../platform/using/creating-and-managing-lists.md).
 
-## Tabblad Abonnementen {#subscriptions-tab}
+## Subscriptions tab {#subscriptions-tab}
 
-Dit scherm bevat de informatiediensten waarop het profiel heeft geabonneerd.
+This screen contains the information services to which the profile has subscribed.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-De knop **[!UICONTROL Detail]** geeft de eigenschappen van het geselecteerde abonnement weer. Met de knop **[!UICONTROL Add]** kunt u handmatig een nieuw abonnement toevoegen.
+The **[!UICONTROL Detail]** button displays the properties of the selected subscription. The **[!UICONTROL Add]** button is used to add a new subscription manually.
 
-Raadpleeg [deze pagina](../../delivery/using/managing-subscriptions.md) voor meer informatie.
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
-## Tabblad Aflevering {#deliveries-tab}
+## Deliveries tab {#deliveries-tab}
 
-In dit scherm worden de leveringslogboeken voor het geselecteerde profiel weergegeven. U kunt de labels, datums en status van de aan het profiel geadresseerde leveringsacties ook via alle kanalen weergeven.
+This screen displays the delivery logs for the selected profile. You can also display the labels, dates, and status of the delivery actions addressed to the profile via all channels.
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Tabblad Tekstspatiëring {#tracking-tab}
+## Tracking tab {#tracking-tab}
 
-In dit scherm kunt u de trackinglogboeken voor het geselecteerde profiel weergeven. Deze informatie wordt gebruikt om profielgedrag na leveringen te volgen.
+This screen lets you view the tracking logs for the selected profile. This information is used to track profile behavior following deliveries.
 
 ![](assets/s_ncs_user_profile_tracking_tab.png)
 
-Dit tabblad geeft het cumulatieve totaal weer van alle URL&#39;s die in leveringen worden bijgehouden.
+This tab shows the cumulative total of all URLs tracked in deliveries.
 
-De lijst is configureerbaar en bevat meestal: de URL waarop is geklikt, de datum en tijd waarop is geklikt en het document dat de URL bevat.
+The list is configurable, and usually contains: the URL clicked, date and time of click, and the document that contained the URL.
 
 >[!NOTE]
 >
->Voor meer bij het volgen van functionaliteit, gelieve te verwijzen naar [ deze pagina ](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+
+-->

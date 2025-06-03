@@ -4,11 +4,13 @@ title: De levering valideren
 description: Leer hoe u een levering kunt valideren
 feature: Deliverability, Email Rendering, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -94,7 +96,7 @@ Op dit tabblad hebt u toegang tot de volgende opties:
 * **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow. Hierdoor kunt u de prestaties aanzienlijk verbeteren en de personalisatie uitvoeren. Voor meer op dit, zie [ verpersoonlijking ](personalization-fields.md#optimizing-personalization) optimaliseren.
 * **[!UICONTROL Start job in a detached process]** : met deze optie kunt u de afleveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het Adobe Campaign-toepassingsserverproces (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : deze optie voegt de SQL vraaglogboeken aan het leveringsdagboek tijdens de analysefase toe.
-* **[!UICONTROL Ignore personalization scripts during sending]** : met deze optie kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze instructies worden geïntroduceerd met de tag **&lt;%=** .)
+* **[!UICONTROL Ignore personalization scripts during sending]** : hiermee kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze instructies worden geïntroduceerd met de tag **&lt;%=** .)
 
 ### De prestaties van de leveringsanalyse verbeteren {#improving-delivery-analysis}
 
@@ -127,7 +129,7 @@ Als een levering te groot is, is het beter om een lage prioriteit aan het toe te
 
 ## Een proef verzenden {#sending-a-proof}
 
-Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de content zo vaak als nodig wordt goedgekeurd door proeven naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de content een proef worden verzonden.
+Adobe raadt u ten zeerste aan een validatiecyclus voor levering in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de content zo vaak als nodig wordt goedgekeurd door proeven naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de content een proef worden verzonden.
 
 >[!NOTE]
 >
@@ -150,7 +152,7 @@ Volg onderstaande stappen om een proefdruk te verzenden:
 
    >[!NOTE]
    >
-   >Als er verschillende indelingen zijn gemaakt voor de levering (HTML en Tekst), kunt u de indeling kiezen van de berichten die naar de ontvangers van de proefdrukken in de onderste sectie van het venster worden verzonden.
+   >Als er verschillende indelingen voor de levering zijn gemaakt (HTML en Text), kunt u in de onderste sectie van het venster de indeling kiezen van de berichten die naar de ontvangers van de proefdrukken moeten worden verzonden.
 
    ![](assets/s_ncs_user_email_del_send_proof_formats.png)
 

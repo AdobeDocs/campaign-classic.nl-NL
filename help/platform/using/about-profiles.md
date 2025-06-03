@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 14%
+source-wordcount: '234'
+ht-degree: 34%
 
 ---
 
@@ -23,100 +23,107 @@ Profielen worden gecentraliseerd in de Adobe Campaign-database. Er zijn vele mog
 
 In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, sms’en, enzovoort). De ontvangende gegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren dat om het even welke bepaalde levering zal ontvangen en verpersoonlijkingsgegevens in uw leveringsinhoud toe te voegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende applicaties. Seed-profielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
 
-![](assets/do-not-localize/how-to-video.png) [ Begrijp het concept profielen in video ](#create-profiles-video)
-
-## Profieltypen {#profile-types}
-
-Met Adobe Campaign kunt u profielen gedurende de volledige levenscyclus beheren: maken, importeren, aanwijzen, handelingen bijhouden, updates, enzovoort.
-
-Elk profiel komt overeen met een database-item. Zij bevatten alle informatie die vereist is voor het richten, kwalificeren en volgen van personen.
-
-Profielen kunnen worden geïdentificeerd op basis van opslagruimte. Dit betekent dat een profiel kan overeenkomen: een ontvanger, een bezoeker, een exploitant, een abonnee, een vooruitzicht, enz.
-
-## Ontvangerprofielen {#recipient-profiles}
-
-Ontvangers van leveringen worden in de database opgeslagen als profielen die de hun gekoppelde informatie bevatten: achternaam, voornaam, adres, abonnementen, leveringen, enz. Wanneer u campagnes creeert, kunt u het doel van de leveringen aan een selectie van de profielen in de basis volgens eenvoudige of geavanceerde criteria bepalen.
-
-U kunt ook campagnes maken voor ontvangers waarvan de profielen niet in de database maar in bestanden worden opgeslagen. Deze worden &quot;externe&quot; leveringen genoemd. Voor meer informatie over dit type van levering, verwijs naar [ deze pagina ](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
-
-De belangrijkste methoden voor het maken van profielen voor ontvangers zijn:
-
-* directe invoer in de grafische interfaceschermen,
-* lijsten met ontvangers importeren,
-* online verzameling via webformulieren.
+![ Video die toont welke profielen zijn en hoe zij ](assets/do-not-localize/how-to-video.png) [ werken begrijpt het concept profielen in video ](#create-profiles-video)
 
 >[!NOTE]
 >
->Om te weten te komen hoe de dossiers en de Webvormen worden ingevoerd, verwijs naar [ Algemene invoer en de uitvoer ](../../platform/using/get-started-data-import-export.md).
+>Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
-## Profielen en doelen {#profiles-and-targets}
+<!--
+## Profile types {#profile-types}
 
-Met de koppeling **[!UICONTROL Profiles and targets]** kunt u ontvangers weergeven die zijn opgeslagen in de Adobe Campaign-database. U kunt een nieuwe ontvanger maken, een bestaande ontvanger bewerken en het bijbehorende profiel openen. Raadpleeg [deze pagina](../../platform/using/editing-a-profile.md) voor meer informatie.
+Adobe Campaign lets you manage profiles throughout their entire lifecycle: creation, import, targeting, action tracking, updates, etc.
+
+Each profile matches a database entry. They contain all the information required for targeting, qualifying and tracking individuals.
+
+Profiles can be identified based on storage space. This means that a profile can match: a recipient, a visitor, an operator, a subscriber, a prospect, etc.
+
+## Recipient profiles {#recipient-profiles}
+
+Delivery recipients are stored in the database as profiles containing the information linked to them: last name, first name, address, subscriptions, deliveries, etc. When you create campaigns, you can define the target of the deliveries to a selection of the profiles in the base according to simple or advanced criteria.
+
+You can also create campaigns aimed at recipients whose profiles are stored not in the database, but in files. These are known as "external" deliveries. For more information about this type of delivery, refer to [this page](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+
+The main methods for creating recipient profiles are as follows:
+
+* direct input in the graphical interface screens,
+* importing recipient lists,
+* on-line collection via web forms.
+
+>[!NOTE]
+>
+>To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/get-started-data-import-export.md).
+
+## Profiles and targets {#profiles-and-targets}
+
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. You can create new recipient, edit an existing recipient and access its profile. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
-Het geeft u ook toegang tot:
+It also gives you access to:
 
-* lijsten - [ Leer meer ](../../platform/using/creating-and-managing-lists.md)
-* De diensten van het abonnement - [ leren meer ](../../delivery/using/managing-subscriptions.md)
-* Webtoepassingen - [ leren meer ](../../web/using/about-web-applications.md)
-* de invoer en de uitvoer (banen) - [ leren meer ](../../platform/using/about-generic-imports-exports.md)
-* het richten werkschema&#39;s - [ leer meer ](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* lists - [Learn more](../../platform/using/creating-and-managing-lists.md)
+* subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
+* web applications - [Learn more](../../web/using/about-web-applications.md)
+* imports and exports (jobs) - [Learn more](../../platform/using/about-generic-imports-exports.md)
+* targeting workflows - [Learn more](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
-Op de pagina met ontvangers kunt u veelvuldige bewerkingen uitvoeren op profielen: bewerken, bijwerken, toevoegen, verwijderen en sorteren.
+The recipients page lets you perform frequent operations on profiles: edits, updates, adds, deletions, sorts.
 
-Voor geavanceerdere profielmanipulaties moet u de Adobe Campaign-structuur bewerken. Klik hiertoe op de koppeling **[!UICONTROL Explorer]** op de startpagina van Adobe Campaign.
+For more advanced profile manipulations, you need to edit the Adobe Campaign tree. To do this, click the **[!UICONTROL Explorer]** link on the Adobe Campaign home page.
 
-Ontvangers worden standaard opgeslagen in het knooppunt **[!UICONTROL Profiles and Targets > Recipients]** van de boomstructuur. U kunt ontvangers maken vanuit deze weergave en ook:
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. You can create recipients from this view, as well as:
 
-* soort en filter de profielen van het gegevensbestand - [ Leer meer ](../../platform/using/filtering-options.md)
-* Beweeg, kopieer of schrap profielen van het gegevensbestand - [ leer meer ](../../platform/using/managing-profiles.md),
-* updateprofielen - [ leer meer ](../../platform/using/updating-data.md)
-* de uitvoerontvangers - [ leren meer ](../../platform/using/exporting-and-importing-profiles.md)
-* creeer ontvankelijke groepen - [ leer meer ](../../platform/using/creating-and-managing-lists.md)
+* sort and filter the profiles of the database - [Learn more](../../platform/using/filtering-options.md)
+* move, copy or delete profiles from the database - [Learn more](../../platform/using/managing-profiles.md),
+* update profiles - [Learn more](../../platform/using/updating-data.md)
+* export recipients - [Learn more](../../platform/using/exporting-and-importing-profiles.md)
+* create recipient groups - [Learn more](../../platform/using/creating-and-managing-lists.md)
 
-Voor toegang tot geavanceerde functies en configuraties moet u op het pictogram **[!UICONTROL Explorer]** klikken.
+To access advanced functionalities and configurations, you need to click the **[!UICONTROL Explorer]** icon. 
 
 ![](assets/d_ncs_user_interface01.png)
 
-De algemene lay-out van de ontdekkingsreiziger van Adobe Campaign wordt voorgesteld in [ deze pagina ](../../platform/using/adobe-campaign-explorer.md).
+The general layout of the Adobe Campaign explorer is presented in [this page](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De vertoningsconfiguratie van de lijst wordt beschreven in [ deze pagina ](../../platform/using/adobe-campaign-ui-lists.md).
+>You can also display an advanced view of this list from the Adobe Campaign tree by clicking the **[!UICONTROL Profiles and targets > Recipients]** link. The list display can be configured to suit your needs. You can add or delete columns, define column order, sort data, etc. List display configuration is described in [this page](../../platform/using/adobe-campaign-ui-lists.md).  
 >
->U kunt ook de weergave voor ontvangers definiëren. Voor verdere informatie over deze functionaliteit, verwijs naar [ deze sectie ](../../platform/using/access-management-folders.md).
+>You can also define recipient views. For further information about this functionality, refer to [this section](../../platform/using/access-management-folders.md).
 
-## Actieve profielen {#active-profiles}
+## Active profiles {#active-profiles}
 
-Een actief profiel is een profiel waarmee de klant de afgelopen twaalf maanden via een willekeurig kanaal heeft geprobeerd te communiceren.
+An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-Volgens uw contract worden al uw Campaign-instanties ingericht met een specifieke hoeveelheid actieve profielen die voor factureringsdoeleinden worden geteld. Raadpleeg het meest recente contract voor informatie over het aantal aangeschafte actieve profielen. Leer meer in [ het productbeschrijving van Adobe Campaign ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} .
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-U kunt het aantal actieve profielen op uw instantie direct van het Controlebord van de Campagne controleren. Voor meer op dit, verwijs naar de [ documentatie van het Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=nl-NL){target="_blank"} .
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-De volgende instructies en beperkingen zijn van toepassing:
+The following guardrails and limitations apply:
 
-* Een profiel dat voor meerdere leveringen is bedoeld, wordt slechts eenmaal geteld.
-* Profielen die zijn gericht in het kader van sociale marketing op X (Twitter) of Facebook, worden niet in aanmerking genomen als actieve profielen.
-* De telling van actieve profielen is beschikbaar voor **Marketing instanties** slechts. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
-* De telling is gebaseerd op de ontvankelijke primaire sleutel. Als een profiel aanwezig is in twee verschillende tabellen voor ontvangers, kan het daarom twee keer worden geteld als een actief profiel.
+* A profile that has been targeted by several deliveries is counted only once. 
+* Profiles targeted in the context of Social marketing on X (Twitter) or Facebook are not taken into account as active profiles.
+* The count of active profiles is available for **Marketing instances** only. It is not available for Execution instances, meaning MID (mid sourcing) and RT (Message Center / Real-time messaging) instances.
+* The count is based on the recipient primary key. As a consequence, if a profile is present in two different recipient tables, it can be counted twice as an active profile.
 
 
-## Video over zelfstudie {#create-profiles-video}
+## Tutorial video {#create-profiles-video}
 
-Leer hoe u toegang krijgt tot profielgegevens, profielen kunt sorteren en filteren en profielen handmatig kunt maken en beheren.
+Learn how to access profile data, sort and filter profiles and manually create and manage profiles.
 
-In deze video wordt ook uitgelegd of Adobe Campaign Classic voldoet aan de algemene gegevensbeschermingsregels.
+This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**zie ook**
+**See also**
 
-* [ het beheer van de Privacy in Campagne ](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-* [Vragen en segmentgegevens maken in workflows](../../workflow/using/targeting-data.md)
+* [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
-* [Doeltoewijzing selecteren](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+* [Select target mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+
+-->
