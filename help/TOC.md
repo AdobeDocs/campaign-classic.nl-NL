@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2572'
 ht-degree: 84%
 
 ---
@@ -125,15 +125,15 @@ ht-degree: 84%
          + [De juiste doelgroep definiëren](delivery/using/define-the-right-audience.md)
          + [Controleren vóór verzending](delivery/using/check-before-sending.md)
          + [Bijhouden en bewaken](delivery/using/track-and-monitor.md)
-+ E-mails verzenden {#sending-emails}
++ E-mails {#sending-emails}
 + [ creeer een e-maillevering ](delivery/using/creating-an-email-delivery.md)
 + [ bepalen de e-mailinhoud ](delivery/using/defining-the-email-content.md)
 + [ bepalen interactieve inhoud ](delivery/using/defining-interactive-content.md)
 + Verzend de e-maillevering {#sending-an-email}
-+ [ Belangrijkste stappen om e-mail  te verzenden](delivery/using/sending-messages.md)
++ [ Belangrijkste stappen om e-mail ](delivery/using/sending-messages.md) te verzenden
 + [ E-mailparameters ](delivery/using/email-parameters.md)
 + [ verzend op Japanse mobiles ](delivery/using/sending-emails-on-japanese-mobiles.md)
-+ [ dossiers  vastmaken](delivery/using/attaching-files.md)
++ [ dossiers ](delivery/using/attaching-files.md) vastmaken
 + [E-mails verzenden](delivery/using/about-email-channel.md)
 + SMS verzenden {#sending-messages-on-mobiles}
 + [ worden begonnen met SMS ](delivery/using/sms-channel.md)
