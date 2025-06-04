@@ -39,7 +39,7 @@ Leer de belangrijkste stappen met betrekking tot workflowbeheer in de documentat
 
 * [ werkschema&#39;s van de Monitor ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: Leer hoe te werkschemauitvoering te controleren om ervoor te zorgen dat alles correct loopt.
 
-* {het gebruiksgevallen van het 0} Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Leer contexten waarin de werkschema&#39;s kunnen worden gebruikt en hoe te om hen door gebruiksgevallen van begin tot eind uit te voeren.[
+* {het gebruiksgevallen van het 0} Werkschema [&#128279;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Leer contexten waarin de werkschema&#39;s kunnen worden gebruikt en hoe te om hen door gebruiksgevallen van begin tot eind uit te voeren.
 
 
 >[!ENDTABS]
