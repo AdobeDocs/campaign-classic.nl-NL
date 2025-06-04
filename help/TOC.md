@@ -130,10 +130,10 @@ ht-degree: 84%
 + [ bepalen de e-mailinhoud ](delivery/using/defining-the-email-content.md)
 + [ bepalen interactieve inhoud ](delivery/using/defining-interactive-content.md)
 + Verzend de e-maillevering {#sending-an-email}
-+ [ Belangrijkste stappen om e-mail ](delivery/using/sending-messages.md) te verzenden
++ [ Belangrijkste stappen om e-mail  te verzenden](delivery/using/sending-messages.md)
 + [ E-mailparameters ](delivery/using/email-parameters.md)
 + [ verzend op Japanse mobiles ](delivery/using/sending-emails-on-japanese-mobiles.md)
-+ [ dossiers ](delivery/using/attaching-files.md) vastmaken
++ [ dossiers  vastmaken](delivery/using/attaching-files.md)
 + [E-mails verzenden](delivery/using/about-email-channel.md)
 + SMS verzenden {#sending-messages-on-mobiles}
 + [ worden begonnen met SMS ](delivery/using/sms-channel.md)
