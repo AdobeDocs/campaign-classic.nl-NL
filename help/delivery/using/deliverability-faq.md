@@ -2,13 +2,12 @@
 product: campaign
 title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
 description: Belangrijke punten die u kunt controleren bij het beheren van de prestaties in Adobe Campaign
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -19,7 +18,7 @@ Ondervindt u een probleem met de leesbaarheid? U kunt hier de oplossing vinden.
 
 ## MX-regelfout {#mx-rule-error}
 
-**Wat betekent het foutbericht &#39;quota gehaald&#39;?**
+**wat het foutenbericht &quot;tevreden met quota&quot;betekent?**
 
 Dit bericht geeft aan dat u de quota voor een specifieke MX hebt bereikt en dat u moet wachten om nog een e-mail naar deze provider te kunnen verzenden.
 
@@ -27,50 +26,50 @@ In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan
 
 Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail is verzonden. In dit geval, zal een configuratie met IP of een domein met een lage reputatie verscheidene verbindingen moeten proberen alvorens een e-mail te verzenden. Voor elke poging, zal een berichten per uurkrediet worden gebruikt. Als gevolg hiervan zullen de prestaties van de marketingcampagne aanzienlijk worden beïnvloed.
 
-Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutberichten te analyseren in het dialoogvenster [SMTP-logboek](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
+Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in het [ SMTP logboek ](../../production/using/monitoring-processes.md#smtp-errors-per-domain) te analyseren.
 
-Voor meer op MX configuratie, zie [deze sectie](../../installation/using/email-deliverability.md#mx-configuration).
+Voor meer op MX configuratie, zie [ deze sectie ](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Hetzelfde foutbericht voor een ISP {#same-error-for-an-isp}
 
-**Waarom krijg ik altijd het zelfde foutenbericht voor bepaalde ISP?**
+**waarom ik altijd het zelfde foutenbericht voor bepaalde ISP krijg?**
 
 Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als gebrek door ISP worden ontdekt. Voer de volgende aanbevelingen uit:
-* Controleer of je een groot percentage mislukkingen ontvangt die gekoppeld zijn aan onbestaande e-mailadressen (**Gebruiker onbekend** fouten).
+* Controle of u een groot percentage mislukkingen met onbestaande e-mailadressen verbonden ontvangt (**Gebruiker onbekend** mislukkingen).
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen te detecteren (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
-Als het probleem zich blijft voordoen, neemt u contact op met de commerciële of de te leveren services. [Klantenservice Adoben](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Als het probleem voortduurt, contacteer de commerciële of leveringsdiensten, [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Lijst van gewezen personen versus quarantaine {#denylist-versus-quarantine}
 
-* **Wat is het verschil tussen een e-mailadres op lijst van gewezen personen en een quarantined e-mailadres?**
+* **wat is het verschil tussen een e-mailadres op lijst van gewezen personen en een quarantined e-mailadres?**
 
-   * De status **[!UICONTROL Denylisted]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
+   * De status **[!UICONTROL Denylisted]** is het resultaat van een feedbacklus (wanneer een persoon een bericht meldt als spam).
 
    * De status **[!UICONTROL Quarantined]** is het resultaat van een zachte of harde stuit.
 
   Zie [deze sectie](understanding-quarantine-management.md#quarantine-vs-denylist)voor meer informatie.
 
-* **Wat betekenen de verschillende redenen voor quarantainefouten?**
+* **wat de verschillende redenen van de quarantainefout betekenen?**
 
   Hier zijn 10 mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, op lijst van gewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
-  Zie voor meer informatie [quarantainebeheer](understanding-quarantine-management.md).
+  Voor meer op dit, zie [ Begrijpend quarantainebeheer ](understanding-quarantine-management.md).
 
 ## Verwijderen uit lijst van gewezen personen {#remove-from-denylist}
 
-* **Een van mijn ontvangers is per ongeluk aan de lijst van gewezen personen toegevoegd. Hoe verwijder ik ze uit de denyist zodat ik ze opnieuw berichten kan sturen?**
+* **Één van mijn ontvangers werd toegevoegd aan lijst van gewezen personen door fout. Hoe verwijder ik hen uit ontkenner zodat ik kan beginnen hen berichten opnieuw te verzenden?**
 
-   * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
-   * Stel in de details van de corresponderende record de waarde van de **[!UICONTROL Status]** veld naar **[!UICONTROL Valid]**.
+   * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** .
+   * Stel in de details van de corresponderende record de waarde van het veld **[!UICONTROL Status]** in op **[!UICONTROL Valid]** .
    * Sla de record op.
 
-* **Hoe kan ik te weten komen of één van mijn IPs op een lijst van gewezen personen is? Hoe verwijder ik mijn IP(s) uit een lijst van gewezen personen?**
+* **Hoe kan ik weten of één van mijn IPs op een lijst van gewezen personen is? Hoe verwijder ik mijn IP(s) uit een lijst van gewezen personen?**
 
   Om te controleren of uw IP adres op een lijst van gewezen personen is, kunt u diverse websites gebruiken om het te verifiëren, zoals:
-   * [MX-gereedschapset](https://mxtoolbox.com/)
-   * [Wat is mijn IP adres](https://whatismyipaddress.com)
+   * [ MX Toolbox ](https://mxtoolbox.com/)
+   * [ wat mijn IP adres ](https://whatismyipaddress.com) is
 
   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de lijst van gewezen personen en ook de naam van de website bevat die het IP adres ontkende.
 

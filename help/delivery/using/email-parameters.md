@@ -2,15 +2,14 @@
 product: campaign
 title: E-mailparameters
 description: Meer informatie over opties en instellingen die specifiek zijn voor e-maillevering
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email
 role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '903'
 ht-degree: 7%
 
 ---

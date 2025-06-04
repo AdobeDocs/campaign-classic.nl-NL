@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 86%
+source-wordcount: '2573'
+ht-degree: 84%
 
 ---
 
@@ -125,27 +125,26 @@ ht-degree: 86%
          + [De juiste doelgroep definiëren](delivery/using/define-the-right-audience.md)
          + [Controleren vóór verzending](delivery/using/check-before-sending.md)
          + [Bijhouden en bewaken](delivery/using/track-and-monitor.md)
-   + E-mails verzenden {#sending-emails}
-      + [E-mailkanaal](delivery/using/about-email-channel.md)
-      + [Een e-maillevering maken](delivery/using/creating-an-email-delivery.md)
-      + [De e-mailcontent opgeven](delivery/using/defining-the-email-content.md)
-      + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
-      + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
-      + E-maillevering verzenden {#sending-an-email}
-         + [De belangrijkste stappen om een e-mail te verzenden](delivery/using/sending-messages.md)
-         + [E-mailparameters](delivery/using/email-parameters.md)
-         + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
-      + [Bestanden bijvoegen](delivery/using/attaching-files.md)
-   + SMS verzenden {#sending-messages-on-mobiles}
-      + [Aan de slag met sms](delivery/using/sms-channel.md)
-      + Sms-kanaal configureren {#sms-set-up}
-         + [Sms configureren op een zelfstandig exemplaar](delivery/using/sms-set-up.md)
-         + [Sms configureren op een infrastructuur voor midsourcing](delivery/using/sms-set-up-mid.md)
-         + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
-         + [Aanvullende configuratie](delivery/using/sms-send.md)
-         + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
-      + [Een sms maken](delivery/using/sms-create.md)
-      + [Migreren naar de Extended Generic SMPP-connector](delivery/using/unsupported-connector-migration.md)
++ E-mails verzenden {#sending-emails}
++ [ creeer een e-maillevering ](delivery/using/creating-an-email-delivery.md)
++ [ bepalen de e-mailinhoud ](delivery/using/defining-the-email-content.md)
++ [ bepalen interactieve inhoud ](delivery/using/defining-interactive-content.md)
++ Verzend de e-maillevering {#sending-an-email}
++ [ Belangrijkste stappen om e-mail ](delivery/using/sending-messages.md) te verzenden
++ [ E-mailparameters ](delivery/using/email-parameters.md)
++ [ verzend op Japanse mobiles ](delivery/using/sending-emails-on-japanese-mobiles.md)
++ [ dossiers ](delivery/using/attaching-files.md) vastmaken
++ [E-mails verzenden](delivery/using/about-email-channel.md)
++ SMS verzenden {#sending-messages-on-mobiles}
++ [ worden begonnen met SMS ](delivery/using/sms-channel.md)
++ SMS-kanaal configureren {#sms-set-up}
++ [ vorm SMS op een standalone instantie ](delivery/using/sms-set-up.md)
++ [ vorm SMS op een mid-sourcing infrastructuur ](delivery/using/sms-set-up-mid.md)
++ [ het schakelaarprotocol en montages van SMS ](delivery/using/sms-protocol.md)
++ [ Aanvullende configuratie ](delivery/using/sms-send.md)
++ [ het oplossen van problemen van SMS ](delivery/using/troubleshooting-sms.md)
++ [ creeer een SMS ](delivery/using/sms-create.md)
++ [ Migreer aan de Uitgebreide Algemene schakelaar SMPP ](delivery/using/unsupported-connector-migration.md)
    + [LINE-berichten verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Aan de slag met het kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
@@ -841,6 +840,7 @@ ht-degree: 86%
       + [2023 systeemupgrades](technotes/using/tech-stack-upgrade.md)
       + [IMS-updates](technotes/using/ims-updates.md)
       + [Ondersteuning voor TLS 1.0 en 1.1 verloopt](technotes/using/eol-tls-support.md)
+      + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Onjuiste hard bounces  bijwerken](delivery/using/update-bounce-qualification.md)

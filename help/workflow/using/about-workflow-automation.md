@@ -4,9 +4,9 @@ title: Workflows
 description: Automatiseer processen met workflows, beheer gegevens en doelgroepen, verzend berichten, en meer
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 7%
 
 ---
@@ -21,25 +21,25 @@ U kunt bijvoorbeeld een proces automatiseren om een bestand van een externe serv
 
 >[!TAB  documentatie van het Werkschema ]
 
-Meer over werkstroombeheer leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=nl-NL){target=_blank}.
+Meer over werkstroombeheer leren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}.
 
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=nl-NL){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}
 
 
 >[!TAB  Nuttige verbindingen ]
 
 Leer de belangrijkste stappen met betrekking tot workflowbeheer in de documentatie van Campaign v8:
 
-* [ de activiteiten van het Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=nl-NL){target=_blank}: Een activiteit is een taakmalplaatje. De werkstromen omvatten het richten, debietcontrole, actie en gebeurtenisactiviteiten.
+* [ de activiteiten van het Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html){target=_blank}: Een activiteit is een taakmalplaatje. De werkstromen omvatten het richten, debietcontrole, actie en gebeurtenisactiviteiten.
 
-* [ bouwt een werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=nl-NL){target=_blank}: Leer hoe te om het richten, campagne en technische werkschema&#39;s tot stand te brengen en in werking te stellen.
+* [ bouwt een werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target=_blank}: Leer hoe te om het richten, campagne en technische werkschema&#39;s tot stand te brengen en in werking te stellen.
 
-* [ Beste praktijken ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL){target=_blank}: Leer richtlijnen om de werkstroomprestaties van de Campagne te optimaliseren, uw werkschema&#39;s te verbeteren ontwerp en de correcte montages te bepalen.
+* [ Beste praktijken ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: Leer richtlijnen om de werkstroomprestaties van de Campagne te optimaliseren, uw werkschema&#39;s te verbeteren ontwerp en de correcte montages te bepalen.
 
-* [ werkschema&#39;s van de Monitor ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target=_blank}: Leer hoe te werkschemauitvoering te controleren om ervoor te zorgen dat alles correct loopt.
+* [ werkschema&#39;s van de Monitor ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: Leer hoe te werkschemauitvoering te controleren om ervoor te zorgen dat alles correct loopt.
 
-* {het gebruiksgevallen van het 0} Werkschema [&#128279;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=nl-NL){target=_blank}: Leer contexten waarin de werkschema&#39;s kunnen worden gebruikt en hoe te om hen door gebruiksgevallen van begin tot eind uit te voeren.
+* {het gebruiksgevallen van het 0} Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Leer contexten waarin de werkschema&#39;s kunnen worden gebruikt en hoe te om hen door gebruiksgevallen van begin tot eind uit te voeren.[
 
 
 >[!ENDTABS]
