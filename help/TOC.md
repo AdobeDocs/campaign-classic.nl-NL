@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
+source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 83%
+source-wordcount: '2571'
+ht-degree: 86%
 
 ---
 
@@ -52,13 +52,13 @@ ht-degree: 83%
          + [Ontwikkeling](platform/using/faq-developers.md)
          + [Tutorials](platform/using/tutorials.md)
       + [Verklarende woordenlijst](platform/using/ac-glossary.md)
-   + Privacy {#privacy}
-      + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
-      + [Privacybeheer](platform/using/privacy-management.md)
-      + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
-         + [Privacyverzoeken](platform/using/privacy-requests.md)
-         + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
-         + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
+      + Privacy {#privacy}
+         + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
+         + [Privacybeheer](platform/using/privacy-management.md)
+         + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+            + [Privacyverzoeken](platform/using/privacy-requests.md)
+            + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
+            + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
          + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
    + Profielbeheer {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
@@ -67,7 +67,7 @@ ht-degree: 83%
       + [Profielen beheren](platform/using/managing-profiles.md)
       + [Gegevens bijwerken](platform/using/updating-data.md)
       + [Profielen importeren en exporteren](platform/using/exporting-and-importing-profiles.md)
-      + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
+   + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
    + Gegevens importeren en exporteren {#importing-and-exporting-data}
       + [Aan de slag met gegevens importeren en exporteren](platform/using/get-started-data-import-export.md)
       + [Workflows gebruiken om gegevens te importeren en exporteren](platform/using/import-export-workflows.md)
@@ -111,41 +111,41 @@ ht-degree: 83%
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
    + [Afleveringsinstellingen](delivery/using/delivery-settings.md)
-   + Belangrijke stappen bij het maken van een levering {#key-steps-when-creating-a-delivery}
+   + Snel starten {#key-steps-when-creating-a-delivery}
       + [Aan de slag met leveringen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Een levering maken en identificeren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [De doelgroep definiëren](delivery/using/steps-defining-the-target-population.md)
       + [De levering valideren](delivery/using/steps-validating-the-delivery.md)
       + [De levering verzenden](delivery/using/steps-sending-the-delivery.md)
       + [Best practices voor leveringen](delivery/using/delivery-best-practices.md)
-      + Best practices voor leveringen {#delivery-bestpractices}
-         + [Levering optimaliseren](delivery/using/optimize-delivery.md)
-         + [Sjablonen gebruiken](delivery/using/use-templates.md)
-         + [Gepersonaliseerde content maken](delivery/using/design-and-personalize.md)
-         + [De juiste doelgroep definiëren](delivery/using/define-the-right-audience.md)
-         + [Controleren vóór verzending](delivery/using/check-before-sending.md)
-         + [Bijhouden en bewaken](delivery/using/track-and-monitor.md)
-+ E-mails verzenden {#sending-emails}
-+ [ worden begonnen met e-mail ](delivery/using/about-email-channel.md)
-+ [ verzendt met Verbeterde MTA ](delivery/using/sending-with-enhanced-mta.md)
-+ [ creeer een e-maillevering ](delivery/using/creating-an-email-delivery.md)
-+ [ bepalen de e-mailinhoud ](delivery/using/defining-the-email-content.md)
-+ [ bepalen interactieve inhoud ](delivery/using/defining-interactive-content.md)
-+ Verzend de e-maillevering {#sending-an-email}
-+ [ Belangrijkste stappen om e-mail  te verzenden](delivery/using/sending-messages.md)
-+ [ E-mailparameters ](delivery/using/email-parameters.md)
-+ [ verzend op Japanse mobiles ](delivery/using/sending-emails-on-japanese-mobiles.md)
-+ [ dossiers  vastmaken](delivery/using/attaching-files.md)
-+ SMS verzenden {#sending-messages-on-mobiles}
-+ [ worden begonnen met SMS ](delivery/using/sms-channel.md)
-+ SMS-kanaal configureren {#sms-set-up}
-+ [ vorm SMS op een standalone instantie ](delivery/using/sms-set-up.md)
-+ [ vorm SMS op een mid-sourcing infrastructuur ](delivery/using/sms-set-up-mid.md)
-+ [ het schakelaarprotocol en montages van SMS ](delivery/using/sms-protocol.md)
-+ [ Aanvullende configuratie ](delivery/using/sms-send.md)
-+ [ het oplossen van problemen van SMS ](delivery/using/troubleshooting-sms.md)
-+ [ creeer een SMS ](delivery/using/sms-create.md)
-+ [ Migreer aan de Uitgebreide Algemene schakelaar SMPP ](delivery/using/unsupported-connector-migration.md)
+   + Best practices voor leveringen {#delivery-bestpractices}
+      + [Levering optimaliseren](delivery/using/optimize-delivery.md)
+      + [Sjablonen gebruiken](delivery/using/use-templates.md)
+      + [Gepersonaliseerde content maken](delivery/using/design-and-personalize.md)
+      + [De juiste doelgroep definiëren](delivery/using/define-the-right-audience.md)
+      + [Controleren vóór verzending](delivery/using/check-before-sending.md)
+      + [Bijhouden en bewaken](delivery/using/track-and-monitor.md)
+   + E-mails verzenden {#sending-emails}
+      + [Aan de slag met e-mails](delivery/using/about-email-channel.md)
+      + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
+      + [Een e-maillevering maken](delivery/using/creating-an-email-delivery.md)
+      + [De e-mailcontent opgeven](delivery/using/defining-the-email-content.md)
+      + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
+      + E-maillevering verzenden {#sending-an-email}
+         + [De belangrijkste stappen om een e-mail te verzenden](delivery/using/sending-messages.md)
+         + [E-mailparameters](delivery/using/email-parameters.md)
+         + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
+      + [Bestanden bijvoegen](delivery/using/attaching-files.md)
+   + SMS verzenden {#sending-messages-on-mobiles}
+      + [Aan de slag met sms](delivery/using/sms-channel.md)
+      + Sms-kanaal configureren {#sms-set-up}
+         + [Sms configureren op een zelfstandig exemplaar](delivery/using/sms-set-up.md)
+         + [Sms configureren op een infrastructuur voor midsourcing](delivery/using/sms-set-up-mid.md)
+         + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
+         + [Aanvullende configuratie](delivery/using/sms-send.md)
+         + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
+      + [Een sms maken](delivery/using/sms-create.md)
+      + [Migreren naar de Extended Generic SMPP-connector](delivery/using/unsupported-connector-migration.md)
    + [LINE-berichten verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Aan de slag met het kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
@@ -209,9 +209,9 @@ ht-degree: 83%
       + [Leveringsstatussen](delivery/using/delivery-statuses.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
       + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
-   + Berichten bijhouden {#tracking-messages}
-      + [Berichttracking](delivery/using/about-message-tracking.md)
-      + [Bijgehouden koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
+      + Berichten bijhouden {#tracking-messages}
+         + [Berichttracking](delivery/using/about-message-tracking.md)
+         + [Bijgehouden koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
       + Aangepaste koppelingen bijhouden {#tracking-personalized-links}
          + [Aan de slag met de tracking van gepersonaliseerde koppelingen](delivery/using/tracking-personalized-links.md)
          + [Tracking-URL&#39;s detecteren](delivery/using/detecting-tracking-urls.md)
@@ -477,28 +477,28 @@ ht-degree: 83%
          + [Leveringscontent laden](workflow/using/loading-delivery-content.md)
          + [Cross-channel leveringsworkflow](workflow/using/cross-channel-delivery-workflow.md)
          + [E-mailverrijking met aangepaste datumvelden](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Toezicht {#monitoring}
-         + [Een rapport naar een lijst verzenden](workflow/using/sending-a-report-to-a-list.md)
-         + [Uw workflows controleren](workflow/using/supervising-workflows.md)
-         + [Gepersonaliseerde waarschuwingen verzenden naar operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
-      + Gegevensbeheer {#data-management}
-         + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
-         + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
-         + [Gegevens verrijken](workflow/using/enriching-data.md)
-         + [Aggregaten gebruiken](workflow/using/using-aggregates.md)
-         + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
-         + [Een workflow instellen voor terugkerende importactiviteiten](workflow/using/recurring-import-workflow.md)
-      + Ontwerpquery&#39;s {#designing-queries}
-         + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
-      + Query en filter {#designing-queries}
-         + [Een query uitvoeren op de tabel met ontvangers](workflow/using/querying-recipient-table.md)
-         + [Een query uitvoeren op de leveringssinformatie](workflow/using/querying-delivery-information.md)
-         + [Samengevoegde berekeningen uitvoeren](workflow/using/performing-aggregate-computing.md)
-         + [Een query uitvoeren met behulp van groeperingsbeheer](workflow/using/querying-using-grouping-management.md)
-         + [Een query uitvoeren met behulp van een veel-op-veel-relatie](workflow/using/querying-using-many-to-many-relationship.md)
-         + [Een berekend veld voor een opsommingstype toevoegen](workflow/using/adding-enumeration-type-calculated-field.md)
-         + [Een filter maken](workflow/using/creating-a-filter.md)
-         + [Gedupliceerde ontvangers filteren](workflow/using/filtering-duplicated-recipients.md)
+   + Toezicht {#monitoring}
+      + [Een rapport naar een lijst verzenden](workflow/using/sending-a-report-to-a-list.md)
+      + [Uw workflows controleren](workflow/using/supervising-workflows.md)
+      + [Gepersonaliseerde waarschuwingen verzenden naar operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
+   + Gegevensbeheer {#data-management}
+      + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
+      + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
+      + [Gegevens verrijken](workflow/using/enriching-data.md)
+      + [Aggregaten gebruiken](workflow/using/using-aggregates.md)
+      + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
+      + [Een workflow instellen voor terugkerende importactiviteiten](workflow/using/recurring-import-workflow.md)
+   + Ontwerpquery&#39;s {#designing-queries}
+      + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
+   + Query en filter {#designing-queries}
+      + [Een query uitvoeren op de tabel met ontvangers](workflow/using/querying-recipient-table.md)
+      + [Een query uitvoeren op de leveringssinformatie](workflow/using/querying-delivery-information.md)
+      + [Samengevoegde berekeningen uitvoeren](workflow/using/performing-aggregate-computing.md)
+      + [Een query uitvoeren met behulp van groeperingsbeheer](workflow/using/querying-using-grouping-management.md)
+      + [Een query uitvoeren met behulp van een veel-op-veel-relatie](workflow/using/querying-using-many-to-many-relationship.md)
+      + [Een berekend veld voor een opsommingstype toevoegen](workflow/using/adding-enumeration-type-calculated-field.md)
+      + [Een filter maken](workflow/using/creating-a-filter.md)
+      + [Gedupliceerde ontvangers filteren](workflow/using/filtering-duplicated-recipients.md)
    + Workflows bewaken {#monitoring-workflows}
       + [Workflowuitvoering controleren](workflow/using/monitoring-workflow-execution.md)
       + [Technische workflows controleren](workflow/using/monitoring-technical-workflows.md)
@@ -625,12 +625,12 @@ ht-degree: 83%
          + [Integreren in een webserver](installation/using/integration-into-a-web-server-for-linux.md)
       + [Tijdzonebeheer](installation/using/time-zone-management.md)
       + [Een server voor mid-sourcing installeren](installation/using/mid-sourcing-server.md)
-   + Campagne implementeren (op locatie) {#initial-configuration}
-      + [Belangrijkste stappen](installation/using/about-initial-configuration.md)
-      + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
-      + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
-      + [Een instantie implementeren](installation/using/deploying-an-instance.md)
-      + [Ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
+      + Campagne implementeren (op locatie) {#initial-configuration}
+         + [Belangrijkste stappen](installation/using/about-initial-configuration.md)
+         + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
+         + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
+         + [Een instantie implementeren](installation/using/deploying-an-instance.md)
+         + [Ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Campagne configureren {#additional-configurations}
       + [Configuratie van de Campaign-server](installation/using/configuring-campaign-server.md)
       + [Beveiligingszones definiëren](installation/using/security-zones.md)
@@ -670,10 +670,10 @@ ht-degree: 83%
             + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
             + [Teradata configureren](installation/using/configure-fda-teradata.md)
             + [Vertica Analytics configureren](installation/using/configure-fda-vertica.md)
-         + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
-         + [Verbinding maken met de database](installation/using/connecting-to-database.md)
-         + [Het gegevensschema maken](installation/using/creating-data-schema.md)
-         + [Gegevenstoewijzing definiëren](installation/using/defining-data-mapping.md)
+      + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
+      + [Verbinding maken met de database](installation/using/connecting-to-database.md)
+      + [Het gegevensschema maken](installation/using/creating-data-schema.md)
+      + [Gegevenstoewijzing definiëren](installation/using/defining-data-mapping.md)
    + Bijlagen {#appendices}
       + [Serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
       + [Campaign-netwerkeindpunten](installation/using/campaign-network-endpoints.md)
