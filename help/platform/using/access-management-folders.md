@@ -22,7 +22,7 @@ Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schri
 
 >[!NOTE]
 >
->Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappen en weergaven {#folders-and-views}
