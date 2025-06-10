@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schri
 
 >[!NOTE]
 >
->Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappen en weergaven {#folders-and-views}
@@ -55,16 +55,21 @@ Om weergaven van mappen te onderscheiden, wordt de naam van elke weergave weerge
 
 ### Mappen toevoegen en weergaven maken {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>Buiten de vakmappen mogen niet als weergave worden gemarkeerd.
+
+
 In het onderstaande voorbeeld maken we nieuwe mappen waarin specifieke gegevens worden weergegeven:
 
 1. Creeer een nieuwe **[!UICONTROL Deliveries]** typeomslag, en noem het **levert Frankrijk**.
 1. Klik met de rechtermuisknop op deze map en selecteer **[!UICONTROL Properties...]** .
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![ Schermafbeelding die een juiste klik tonen in de eigenschappen ](assets/s_ncs_user_add_folder_exple.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Restriction]** de optie **[!UICONTROL This folder is a view]** . Alle leveringen in het gegevensbestand zullen dan worden getoond.
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![ Scherm die het meningsvakje tonen dat wordt gecontroleerd ](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Bepaal de criteria van de leveringsfilter van de vraagredacteur in het midden sectie van het venster: de campagnes die aan de bepaalde filter beantwoorden zullen dan worden getoond.
 
@@ -74,7 +79,7 @@ In het onderstaande voorbeeld maken we nieuwe mappen waarin specifieke gegevens 
 
    Met de volgende filtervoorwaarden:
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![ Schermafbeelding die de verschillende filtervoorwaarden tonen ](assets/s_ncs_user_add_folder_exple00.png)
 
 De volgende leveringen worden weergegeven in de weergave:
 
@@ -84,46 +89,48 @@ De volgende leveringen worden weergegeven in de weergave:
 >
 >Wanneer het beheren van [ transactieoverseinen ](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten de **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot de kwesties van het toegangsrecht zou kunnen leiden. Voor meer op gebeurtenisinzameling, zie [ deze sectie ](../../message-center/using/about-event-processing.md#event-collection).
 
-## Rechten op een map
+<!--
+## Permissions on a folder
 
-### Machtigingen bewerken in een map {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-Voer de volgende stappen uit als u machtigingen voor een specifieke map in de structuur wilt bewerken:
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. Klik met de rechtermuisknop op de map en selecteer **[!UICONTROL Properties...]** .
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Klik op het tabblad **[!UICONTROL Security]** om machtigingen voor deze map weer te geven.
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Machtigingen wijzigen {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-Als u machtigingen wilt wijzigen, kunt u:
+To modify permissions, you can:
 
-* **vervangt een groep of een exploitant**. Klik hiertoe op een van de groepen (of operatoren) met rechten voor de map en selecteer een nieuwe groep (of een nieuwe operator) in de vervolgkeuzelijst:
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **machtigt een groep of een exploitant**. Klik hiertoe op de knop **[!UICONTROL Add]** en selecteer de groep of operator waaraan u machtigingen voor deze map wilt toewijzen.
-* **verbiedt een groep of een exploitant**. Klik hiertoe op **[!UICONTROL Delete]** en selecteer de groep of operator waarvan u de autorisatie voor deze map wilt verwijderen.
-* **selecteer de rechten die aan een groep of een exploitant** worden toegewezen. Klik hiertoe op de betrokken groep of operator, selecteer vervolgens de toegangsrechten die u wilt verlenen en hef de selectie van de andere rechten op.
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Machtigingen voor doorgeven {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-U kunt machtigingen en toegangsrechten doorgeven. Selecteer hiertoe de optie **[!UICONTROL Propagate]** in de mapeigenschappen.
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-De autorisaties die in dit venster worden gedefinieerd, worden vervolgens toegepast op alle submappen van het huidige knooppunt. Vervolgens kunt u deze machtigingen voor elke submap te veel laden.
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->Als u deze optie voor een map wist, wordt deze niet automatisch gewist voor de submappen. U moet dit expliciet wissen voor elk van de submappen.
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### Toegang verlenen aan alle marktdeelnemers {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-Als de optie **[!UICONTROL System folder]** op het tabblad **[!UICONTROL Security]** is geselecteerd, hebben alle operatoren toegang tot deze gegevens, ongeacht hun rechten. Als deze optie wordt ontruimd, moet u de exploitant (of hun groep) aan de lijst van toestemmingen uitdrukkelijk toevoegen om hen toegang te hebben.
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
