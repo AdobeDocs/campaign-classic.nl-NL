@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 [!BADGE Beperkte beschikbaarheid]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=nl#rn-statuses" tooltip="Beperkte beschikbaarheid"}
 
-_Mei 12, 2025_
+_12 mei 2025_
 
-Deze build bevat de volgende oplossingen:
+Deze versie bevat de volgende oplossingen:
 
 * Probleem verholpen dat zich na de upgrade voordeed bij niet-Oracle-instellingen. (NEO-87012)
-* Oplossing voor een TLS-/HTTPS-backendprobleem dat zowel de clientconsole als de server betrof. (NEO-87432)
+* Er is een TLS/HTTPS-backendprobleem opgelost dat zowel de clientconsole als de server trof. (NEO-87432)
 
 ### Versie 9390 {#build-9390}
 
@@ -52,7 +52,7 @@ Deze release bevat verschillende beveiligingsoplossingen.
 
 De verbinding met Adobe-oplossingen en -toepassingen via het **[!UICONTROL Adobe Experience Cloud]** externe account is bijgewerkt om de beveiliging te verbeteren.
 
-**Belangrijke moeilijke situaties**
+**Belangrijke oplossingen**
 
 Deze release bevat de volgende belangrijkste oplossingen:
 
@@ -71,7 +71,7 @@ Deze release bevat de volgende belangrijkste oplossingen:
 * Mail Transfer Agent (MTA) - Probleem opgelost met een verweesde onderliggende MTA die vast bleef zitten op de status **[!UICONTROL Start pending]**.
 
 
-**Andere moeilijke situaties**
+**Andere oplossingen**
 
 De volgende problemen zijn ook opgelost in deze release:
 
