@@ -4,16 +4,19 @@ title: Informatie over leveringsinstellingen
 description: Ontdek de specifieke v7-leveringsinstellingen
 feature: Channel Configuration
 role: User
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 2%
 
 ---
 
-# Afleveringsinstellingen {#about-delivery-settings}
+# Leveringsinstellingen {#about-delivery-settings}
 
-De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=nl-NL){target="_blank"}.
+De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Leveringsanalyse {#delivery-analysis}
 
