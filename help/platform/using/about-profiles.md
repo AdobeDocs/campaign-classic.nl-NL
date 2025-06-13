@@ -27,30 +27,30 @@ In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van l
 
 >[!NOTE]
 >
->Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
+>Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
 >[!BEGINTABS]
 
 >[!TAB  documentatie van Profielen ]
 
-Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
+Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
 >[!TAB creeer en geef profielen  uit]
 
 Leer profielen bewerken, beheren en toevoegen in de documentatie van Campagne v8:
 
-* [ voegt profielen ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank} toe: Leer de belangrijkste stappen om nieuwe profielen toe te voegen en tot stand te brengen.
-* [ geef profielen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank} uit: Bekijk en geef bestaande profielen uit.
-* [ beheer profielen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}: Heb toegang tot en beheer uw bestaande profielen gebruikend het hulpmiddel van het omslagbeheer.
+* [ voegt profielen ](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank} toe: Leer de belangrijkste stappen om nieuwe profielen toe te voegen en tot stand te brengen.
+* [ geef profielen ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank} uit: Bekijk en geef bestaande profielen uit.
+* [ beheer profielen ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}: Heb toegang tot en beheer uw bestaande profielen gebruikend het hulpmiddel van het omslagbeheer.
 
 >[!TAB  de Invoer/de uitvoerprofielen ]
 
 Leer hoe u profielen en gegevens kunt importeren en exporteren in de documentatie bij Campagne v8:
 
-* [ de Profielen van de Invoer ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}: U kunt profielen invoeren gebruikend werkschema&#39;s.
-* [ de Invoer/de uitvoergegevens ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}: Leer hoe te om gegevens en profielen in te voeren of uit te voeren gebruikend generische invoer/uitvoer.
+* [ de Profielen van de Invoer ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}: U kunt profielen invoeren gebruikend werkschema&#39;s.
+* [ de Invoer/de uitvoergegevens ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/import){target=_blank}: Leer hoe te om gegevens en profielen in te voeren of uit te voeren gebruikend generische invoer/uitvoer.
 
 >[!ENDTABS]
 
@@ -121,9 +121,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=nl-NL){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -141,7 +141,7 @@ This video also explains the compliance of Adobe Campaign Classic with General D
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl-NL).
 
 **See also**
 

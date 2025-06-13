@@ -30,17 +30,17 @@ Vragen worden gemaakt met velden uit de geselecteerde tabel of met een formule.
 
 >[!TAB  de documentatie van Vragen ]
 
-Meer over vragen leren, verwijs naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Meer over vragen leren, verwijs naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB  creeer een vraag ]
 
-Leer de belangrijkste stappen met betrekking tot de vraagverwezenlijking in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+Leer de belangrijkste stappen met betrekking tot de vraagverwezenlijking in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 
