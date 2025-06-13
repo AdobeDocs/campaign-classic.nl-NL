@@ -6,7 +6,9 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 3%
@@ -23,7 +25,7 @@ In de meeste gevallen, worden de profielen ingevoerd [ aan Campagne door een wer
 
 >[!NOTE]
 >
->Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

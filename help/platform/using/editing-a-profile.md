@@ -7,7 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 2%
@@ -36,7 +38,7 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 
 >[!NOTE]
 >
->Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 
