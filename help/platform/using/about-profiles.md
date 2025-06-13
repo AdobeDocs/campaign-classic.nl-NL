@@ -37,7 +37,7 @@ Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
->[!TAB  creeer en geef profielen ] uit
+>[!TAB creeer en geef profielen  uit]
 
 Leer profielen bewerken, beheren en toevoegen in de documentatie van Campagne v8:
 
