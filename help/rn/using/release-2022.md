@@ -5,11 +5,13 @@ description: Meer informatie over Campaign Classic 2022-releases
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
-source-wordcount: '2100'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -145,7 +147,7 @@ Adobe Campaign is nu compatibel met Windows Server 2019. Raadpleeg de [Campaign-
 **Andere wijzigingen**
 
 * Na hun afschaffing zijn de actieactiviteiten van Microsoft CRM, Salesforce en Oracle CRM On Demand uit de interface verwijderd. Voor het configureren van de gegevenssynchronisatie tussen Adobe Campaign en een CRM-systeem kunt u de activiteit CRM-connector gebruiken. [Meer informatie](../../workflow/using/crm-connector.md)
-* Het veld **[!UICONTROL Encrypted identifier]** is toegevoegd aan het bezoekersschema (nms:bezoeker). Dit veld wordt berekend en moet worden gebruikt voor webtoepassingen. Dit is van toepassing wanneer het Line-kanaal is geconfigureerd in de mid-sourcing-instantie.
+* Het veld **[!UICONTROL Encrypted identifier]** is toegevoegd aan het bezoekersschema (nms :visitor ). Dit veld wordt berekend en moet worden gebruikt voor webtoepassingen. Dit is van toepassing wanneer het Line-kanaal is geconfigureerd in de mid-sourcing-instantie.
 * CRM-databronnen kunnen nu worden gebruikt met de activiteit **Databron wijzigen**.
 * Er is een nieuwe optie toegevoegd in de **Foutbeheer**-eigenschappen van workflowactiviteiten: de optie **Afbreken bij fout** stopt automatisch de workflow. U kunt deze daarna niet opnieuw starten (NEO-29661). [Meer informatie](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * Er wordt nu een speciale reeks gebruikt om de primaire sleutels voor de nmsGroup-tabel te genereren, die wordt gebruikt om statistische groepen ontvangers te maken. Vroeger werd de xtknewId-reeks gebruikt. (NEO-30832)

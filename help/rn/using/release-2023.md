@@ -5,11 +5,13 @@ description: Meer informatie over releases van Campaign Classic 2023
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +81,7 @@ _7 september 2023_
 * De externe BigQuery-account is uitgebreid met nieuwe opties die worden gebruikt voor het instellen van de GCloud SDK. (NEO-63879) [Meer informatie](../../installation/using/configure-fda-google-big-query.md#google-external)
 * Er is een nieuwe sectie `cusHeader` toegevoegd aan het configuratiebestand van de server (serverConf.xml). Hiermee kunt u aangepaste headers toevoegen wanneer u een bestand van een externe server uploadt. (NEO-58339) [Meer informatie](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Het beheer van het trackinglog is verbeterd en voorkomt negatieve ID&#39;s voor lastMsgId. Het is veranderd van int32 in int64. (NEO-52290)
-* De workflow voor het leveren van statistieken (mid-sourcing) is kant-en-klaar toegevoegd. Deze nieuwe workflow synchroniseert de gegevens van de leveringsstatistiek (nms:deliveryStat) van het midden aan de marketinginstantie. (NEO-36802)
+* De workflow voor het leveren van statistieken (mid-sourcing) is kant-en-klaar toegevoegd. Deze nieuwe werkschema synchroniseert levering statistische gegevens (nms :deliveryStat) van het midden aan de marketing instantie. (NEO-36802)
 
 ### Patches {#release-7-3-4-patches}
 
