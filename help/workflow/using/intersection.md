@@ -20,7 +20,7 @@ ht-degree: 8%
 >title="Doorsnede activiteit"
 >abstract="Bij een activiteit van het type Doorsnede wordt een doelstelling gemaakt op basis van de doorsnede van de ontvangen doelstellingen. Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit."
 
-Een **- type van 1} Intersectie** activiteit leidt tot een doel van de doorsnede van de ontvangen doelstellingen.
+Een **- type van 1&rbrace; Intersectie** activiteit leidt tot een doel van de doorsnede van de ontvangen doelstellingen.
 
 Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit. Het doel wordt gecreëerd met alle ontvangen resultaten: alle eerdere activiteiten moeten daarom worden voltooid voordat de doorsnede kan worden uitgevoerd. Om deze activiteit te vormen, moet u een etiket voor het evenals de opties betreffende het resultaat ingaan.
 
