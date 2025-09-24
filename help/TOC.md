@@ -7,9 +7,9 @@ user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -644,7 +644,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -827,7 +827,7 @@ ht-degree: 99%
 + Technische opmerkingen {#technotes}
    + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
    + [Verzenden met de Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
-   + [Inkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-sms-wf.md)
+   + [Binnenkomende sms-workflowactiviteit voor mid-sourcing-infrastructuur](technotes/using/inbound-sms-wf.md)
    + Upgraden naar IMS{#ims}
       + [Overstappen naar Adobe IMS](technotes/using/ac-ims.md)
       + [Gebruikers migreren naar IMS](technotes/using/migrate-users-to-ims.md)

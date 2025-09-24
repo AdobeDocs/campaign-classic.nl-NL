@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2336'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ _7 september 2023_
 * De externe BigQuery-account is uitgebreid met nieuwe opties die worden gebruikt voor het instellen van de GCloud SDK. (NEO-63879) [Meer informatie](../../installation/using/configure-fda-google-big-query.md#google-external)
 * Er is een nieuwe sectie `cusHeader` toegevoegd aan het configuratiebestand van de server (serverConf.xml). Hiermee kunt u aangepaste headers toevoegen wanneer u een bestand van een externe server uploadt. (NEO-58339) [Meer informatie](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Het beheer van het trackinglog is verbeterd en voorkomt negatieve ID&#39;s voor lastMsgId. Het is veranderd van int32 in int64. (NEO-52290)
-* De workflow voor het leveren van statistieken (mid-sourcing) is kant-en-klaar toegevoegd. Deze nieuwe werkschema synchroniseert levering statistische gegevens (nms :deliveryStat) van het midden aan de marketing instantie. (NEO-36802)
+* De workflow voor het leveren van statistieken (mid-sourcing) is kant-en-klaar toegevoegd. Deze nieuwe workflow synchroniseert de statistische gegevens van leveringen (nms:deliveryStat) van de mid- naar de marketinginstantie. (NEO-36802)
 
 ### Patches {#release-7-3-4-patches}
 
