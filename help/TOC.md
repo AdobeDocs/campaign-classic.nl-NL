@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
-source-wordcount: '2569'
+source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+workflow-type: tm+mt
+source-wordcount: '2565'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 100%
          + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
          + [Campaign Explorer gebruiken](platform/using/adobe-campaign-explorer.md)
          + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
+         + [Opsommingen](platform/using/managing-enumerations.md)
       + [Campaign-connectoren](platform/using/about-connectors.md)
       + Veelgestelde vragen {#faq}
          + [Populaire vragen](platform/using/common-questions.md)
@@ -99,9 +100,6 @@ ht-degree: 100%
       + [Groepen maken en beheren](platform/using/access-management-groups.md)
       + [Opgegeven rechten gebruiken om machtigingen in te stellen](platform/using/access-management-named-rights.md)
       + [Toegang tot mappen beheren](platform/using/access-management-folders.md)
-   + Gegevenspakketten en opsommingen {#administration-basics}
-      + [Gegevenspakketten](platform/using/working-with-data-packages.md)
-      + [Opsommingen](platform/using/managing-enumerations.md)
    + CRM-connectoren  {#connectors}
       + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
       + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -738,6 +736,7 @@ ht-degree: 100%
          + [JSP-gedrag](production/using/jsp-behavior.md)
          + [Tomcat-versie zoeken](production/using/locate-tomcat-version.md)
 + Handleiding voor ontwikkelaars {#configuring-campaign-classic}
+   + [Gegevenspakketten](platform/using/working-with-data-packages.md)
    + Datamodel {#data-model}
       + [Het datamodel](configuration/using/about-data-model.md)
       + [Beschrijving van het datamodel](configuration/using/data-model-description.md)
