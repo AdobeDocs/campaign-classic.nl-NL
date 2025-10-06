@@ -19,21 +19,21 @@ Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moe
 
 Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coördineren. Adobe Campaign beschikt over innovatieve functies voor het modelleren, stroomlijnen en automatiseren van marketing- en klantcommunicatieprocessen.
 
-![](assets/do-not-localize/how-to-video.png) [ ontdekt primaire eigenschappen en mogelijkheden in video ](#video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; ontdekt primaire eigenschappen en mogelijkheden in video &#x200B;](#video)
 
 >[!BEGINTABS]
 
 >[!TAB Aan de slag met Campaign]
 
-Meer over Adobe Campaign leren en hoe te om het begonnen te krijgen, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
+Meer over Adobe Campaign leren en hoe te om het begonnen te krijgen, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
 >[!TAB  Campagne van de Lancering ]
 
-* Controleer uw systeem en hulpmiddelverenigbaarheid met de Console van de Cliënt van Adobe Campaign in de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Controleer uw systeem en hulpmiddelverenigbaarheid met de Console van de Cliënt van Adobe Campaign in de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-* Leren om te installeren en login aan Adobe Campaign, gelieve te verwijzen naar de gedetailleerde analyse op de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
+* Leren om te installeren en login aan Adobe Campaign, gelieve te verwijzen naar de gedetailleerde analyse op de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 >[!ENDTABS]
 
@@ -100,10 +100,11 @@ The following capabilities are available. Depending on your license agreement, s
 * [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md) - access built-in reports, analyze data and design your own reports.
 
 -->
+
 ## Video over zelfstudie {#video}
 
 In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
