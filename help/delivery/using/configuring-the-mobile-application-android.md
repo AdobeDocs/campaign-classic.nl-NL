@@ -1,21 +1,23 @@
 ---
 product: campaign
-title: Configureer de mobiele Android-toepassing in Adobe Campaign
-description: Meer informatie over het instellen van uw mobiele app voor Android
+title: De mobiele Android-toepassing in Adobe Campaign configureren
+description: Meer informatie over het instellen van uw mobiele toepassing voor Android
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '843'
 ht-degree: 9%
 
 ---
 
 # Configuratiestappen voor Android
 
-Nadat het pakket is geïnstalleerd, kunt u de instellingen van uw Android-app definiëren in Adobe Campaign Classic.
+Nadat het pakket is geïnstalleerd, kunt u de Android-toepassingsinstellingen in Adobe Campaign Classic definiëren.
 
 De belangrijkste stappen zijn:
 
@@ -24,7 +26,7 @@ De belangrijkste stappen zijn:
 1. [De mobiele app maken in Campagne](#creating-android-app)
 1. [Het app-schema uitbreiden met aanvullende gegevens](#extend-subscription-schema)
 
-U kunt [dan een uitgebreide Android-melding](create-notifications-android.md) maken.
+U zult dan een rijk bericht van Android [ kunnen tot stand brengen. ](create-notifications-android.md)
 
 >[!IMPORTANT]
 >
@@ -38,27 +40,27 @@ Voor Android zijn twee connectors beschikbaar:
 * De V1 schakelaar die één verbinding per kind MTA toestaat.
 * De V2-connector die gelijktijdige verbindingen met de FCM-server mogelijk maakt om de doorvoer te verbeteren.
 
-Volg deze stappen om te kiezen welke connector u wilt gebruiken:
+Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]** .
 1. Selecteer de **[!UICONTROL Android routing]** externe account.
 1. Vul op het tabblad **[!UICONTROL Connector]** het veld **[!UICONTROL JavaScript used in the connector]** in:
 
-   Voor Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
+   Voor Android V2: https://localhost:8080 /nms/jsp/androidPushConnectorV2.js
 
    >[!NOTE]
    >
-   > Je kunt het ook als volgt configureren https://localhost:8080/nms/jsp/androidPushConnector.js maar we raden je aan om versie 2 van de connector te gebruiken.
+   > U kunt het als volgt ook vormen https://localhost:8080 /nms/jsp/androidPushConnector.js maar wij adviseren u om versie 2 van de schakelaar te gebruiken.
 
    ![](assets/nmac_connectors3.png)
 
-1. Voor Android V2 is één extra parameter beschikbaar in het Adobe Server-configuratiebestand (serverConf.xml):
+1. Voor Android V2 is één extra parameter beschikbaar in het configuratiebestand van de Adobe Server (serverConf.xml):
 
-   * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-verzoeken naar de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
+   * **maxGCMConnectPerChild**: Maximale grens van parallelle HTTP- verzoeken aan FCM die door elke kindserver (8 door gebrek in werking wordt gesteld).
 
 ## Een Android-service configureren {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Leer in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=nl-NL#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} hoe u een Android-service configureert.
+![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om de dienst van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} te vormen.
 
 1. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Services and subscriptions]** en klik op **[!UICONTROL New]** .
 
@@ -69,11 +71,11 @@ Volg deze stappen om te kiezen welke connector u wilt gebruiken:
 
    >[!NOTE]
    >
-   >De standaarddoeltoewijzing **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** is gekoppeld aan de tabel met ontvangers. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Raadpleeg deze sectie[&#128279;](../../configuration/using/about-custom-recipient-table.md) voor meer informatie over het maken van doeltoewijzing.
+   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar [ deze sectie ](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Klik vervolgens op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
+1. Klik vervolgens op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
 
    ![](assets/nmac_service_2.png)
 
@@ -91,7 +93,7 @@ Nadat u uw service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
    ![](assets/nmac_android.png)
 
-1. Zorg ervoor dat hetzelfde **[!UICONTROL Integration key]** is gedefinieerd in Adobe Campaign en in de toepassingscode via de SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. Zorg ervoor dat **[!UICONTROL Integration key]** ook in Adobe Campaign en in de toepassingscode via de SDK is gedefinieerd. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -103,7 +105,7 @@ Nadat u uw service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]** . Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
-Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de tabel **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** . Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
+Adobe Campaign slaat standaard een sleutel op in het veld **[!UICONTROL User identifier]** (@userKey) van de tabel **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** . Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
 ### De API-versie configureren{#select-api-version}
 
@@ -126,35 +128,35 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
    ![](assets/nmac_android_10.png)
 
-1. Klik **[!UICONTROL Test the connection]** om te controleren of uw configuratie correct is en of de marketingserver toegang heeft tot de FCM.
+1. Klik op **[!UICONTROL Test the connection]** om te controleren of uw configuratie correct is en of de marketingserver toegang heeft tot de FCM.
 
    >[!CAUTION]
    >
-   >Voor Mid-Sourcing Deployment controleert de **[!UICONTROL Test connection]** knop niet of de MID-server toegang heeft tot de FCM-server.
+   >Voor Mid-sourcing-implementatie controleert de knop **[!UICONTROL Test connection]** niet of de MID-server toegang heeft tot de FCM-server.
 
    ![](assets/nmac_android_11.png)
 
-1. Als optie kunt u de inhoud van een pushbericht indien nodig verrijken met wat **[!UICONTROL Application variables]** . Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
+1. U kunt desgewenst ook de inhoud van een pushbericht verrijken met wat **[!UICONTROL Application variables]** . Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
 
-1. Klik vervolgens **[!UICONTROL Save]** op **[!UICONTROL Finish]** . Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]** . Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
 Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te passen:
 
-| Berichttype | Configureerbaar berichtelement (naam van de FCM-payload) | Configureerbare opties (naam FCM-payload) |
+| Berichttype | Configureerbaar berichtelement (FCM-ladenaam) | Configureerbare opties (FCM-ladenaam) |
 |:-:|:-:|:-:|
 | gegevensbericht | N.v.t. | validate_only |
-| meldingsbericht | titel, lichaam, android_channel_id, icoon, geluid, label, kleur, click_action, afbeelding, ticker, plakkerig, zichtbaarheid, notification_priority, notification_count <br> | validate_only |
+| meldingsbericht | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-## Het appsubscriptionRcp-schema uitbreiden {#extend-subscription-schema}
+## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om het schema appsubscriptionRcp in video uit te breiden ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=nl-NL#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om het schema appsubscriptionRcp in video uit te breiden ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 U moet **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
 
-1. Maak een extensie van het schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** en definieer de nieuwe velden. Leer meer over schemauitbreiding in [ deze pagina ](../../configuration/using/about-schema-edition.md)
+1. Creeer een uitbreiding van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en bepaal de nieuwe gebieden. Leer meer over schemauitbreiding in [ deze pagina ](../../configuration/using/about-schema-edition.md)
 
 1. Definieer de toewijzing op het tabblad **[!UICONTROL Subscription parameters]** .
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad hetzelfde zijn als die in de code van de mobiele toepassing. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >Zorg ervoor dat de configuratienamen op het tabblad **[!UICONTROL Subscription parameters]** gelijk zijn aan die in de code van de mobiele toepassing. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

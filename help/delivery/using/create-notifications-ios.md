@@ -4,8 +4,10 @@ title: Een pushmelding maken voor iOS-apparaten
 description: Meer informatie over het maken van pushmeldingen voor iOS
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 6%
@@ -48,7 +50,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    >[!NOTE]
    >
-   >De **wijze van de Duw van 0&rbrace; Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
+   >De **wijze van de Duw van 0} Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
 1. Voer in het veld **[!UICONTROL Title]** het label in van de titel die u wilt weergeven in de lijst met meldingen die beschikbaar is in het meldingscentrum.
 
@@ -150,7 +152,7 @@ U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing d
 
    ![](assets/nmac_ios_9.png)
 
-1. Selecteer **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** in het **[!UICONTROL Target type]** -venster en klik op **[!UICONTROL Next]** .
+1. Selecteer **[!UICONTROL Target type]** in het **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** -venster en klik op **[!UICONTROL Next]** .
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service, selecteer vervolgens de toepassing die u als doel wilt instellen en klik op **[!UICONTROL Finish]** .
 

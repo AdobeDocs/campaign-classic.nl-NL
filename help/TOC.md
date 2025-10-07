@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [Een sms maken](delivery/using/sms-create.md)
       + [Migreren naar de Extended Generic SMPP-connector](delivery/using/unsupported-connector-migration.md)
    + [LINE-berichten verzenden](delivery/using/line-channel.md)
+   + [Pushmeldingen verzenden](delivery/using/about-mobile-app-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
-      + [Aan de slag met het kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + De mobiele applicatie configureren{#configure-the-mobile-app}
          + [Aan de slag met de appconfiguratie](delivery/using/get-started-app-config.md)
@@ -155,8 +155,8 @@ ht-degree: 100%
          + [Een pushbericht maken voor iOS](delivery/using/create-notifications-ios.md)
          + [Een pushbericht maken voor Android](delivery/using/create-notifications-android.md)
       + [Problemen oplossen](delivery/using/troubleshooting.md)
+   + [Directe e-mail verzenden](delivery/using/about-direct-mail-channel.md)
    + Direct mail verzenden {#sending-direct-mail}
-      + [Kanaal voor direct mail](delivery/using/about-direct-mail-channel.md)
       + [Een levering voor direct mail maken](delivery/using/creating-a-direct-mail-delivery.md)
       + [Content van direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
@@ -642,7 +642,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

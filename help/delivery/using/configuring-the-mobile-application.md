@@ -5,8 +5,10 @@ description: Meer informatie over het instellen van uw mobiele toepassing voor i
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 3%
@@ -23,7 +25,7 @@ De belangrijkste stappen zijn:
 1. [De iOS-service configureren](#configuring-ios-service)
 1. [De mobiele iOS-app integreren in de campagne](#creating-ios-app)
 
-U zult dan een duw bericht voor de apparaten van iOS [&#128279;](create-notifications-ios.md) kunnen tot stand brengen.
+U zult dan een duw bericht voor de apparaten van iOS [ kunnen tot stand brengen.](create-notifications-ios.md)
 
 ## Externe iOS-account configureren {#configuring-external-account-ios}
 
@@ -58,7 +60,7 @@ Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 
    >[!NOTE]
    >
-   >De standaarddoeltoewijzing **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** is gekoppeld aan de tabel met ontvangers. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar de [ gids van de Configuratie ](../../configuration/using/about-custom-recipient-table.md).
+   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar de [ gids van de Configuratie ](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -85,7 +87,7 @@ In het volgende voorbeeld, voegen wij **mediaURl** en **mediaExt** toe om rijke 
 
    ![](assets/nmac_ios_3.png)
 
-1. Op het tabblad **[!UICONTROL Subscription parameters]** kunt u de toewijzing definiëren met een extensie van het schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** .
+1. Het **[!UICONTROL Subscription parameters]** lusje staat u toe om de afbeelding met een uitbreiding van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcpte bepalen)]** schema.
 
    >[!NOTE]
    >
