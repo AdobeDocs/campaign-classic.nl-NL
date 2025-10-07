@@ -37,7 +37,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 [!BADGE &#x200B; Op-gebouw &amp; Hybrid &#x200B;]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het mobiele app pakket in video te installeren &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het mobiele app pakket in video te installeren &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=nl-NL#sending-messages)
 
 Als hybride/ontvangen klant, contacteer [&#x200B; team van de Zorg van de Klant van 0&rbrace; Adobe om tot het kanaal van het pushbericht in Campagne toegang te hebben.](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 

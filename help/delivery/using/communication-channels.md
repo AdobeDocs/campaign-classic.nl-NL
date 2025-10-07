@@ -26,20 +26,20 @@ In het kader van het promotieinitiatief Campaign v8 is de documentatie van Campa
 
 >[!TAB  Communicatie kanaaldocumentatie ]
 
-Meer over communicatiekanalen leren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
+Meer over communicatiekanalen leren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=nl-NL){target=_blank}.
 
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=nl-NL){target=_blank}
 
 
 >[!TAB  inhoud en publiek van de Levering ]
 
 Leer de belangrijkste stappen met betrekking tot het maken van de levering, de inhoud en het publiek in de documentatie van Campagne v8:
 
-* [&#x200B; creeer de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: Leer hoe te om één-schot enige levering tot stand te brengen.
-* [&#x200B; bepaal de inhoud &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Vorm de leveringsinhoud specifiek voor elk kanaal.
-* [&#x200B; specificeer het publiek &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Bepaal verscheidene types van doel: belangrijkste publiek, proefdoel, zaadadressen en controlegroepen.
-* [&#x200B; Werk met leveringsmalplaatjes &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: Leer hoe te om malplaatjes te bepalen om leveringsverwezenlijking te vergemakkelijken.
+* [&#x200B; creeer de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#create-the-delivery){target="_blank"}: Leer hoe te om één-schot enige levering tot stand te brengen.
+* [&#x200B; bepaal de inhoud &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#content-of-the-delivery){target="_blank"}: Vorm de leveringsinhoud specifiek voor elk kanaal.
+* [&#x200B; specificeer het publiek &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#target-population){target="_blank"}: Bepaal verscheidene types van doel: belangrijkste publiek, proefdoel, zaadadressen en controlegroepen.
+* [&#x200B; Werk met leveringsmalplaatjes &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}: Leer hoe te om malplaatjes te bepalen om leveringsverwezenlijking te vergemakkelijken.
 
 
 
@@ -49,13 +49,13 @@ Leer de belangrijkste stappen met betrekking tot het maken van de levering, de i
 
 Raadpleeg de volgende pagina&#39;s voor meer informatie over de validatie van de levering, het verzenden en de aanbevolen procedures in de documentatie van Campagne v8:
 
-* [&#x200B; bevestigt de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: Leer hoe te om de levering te bevestigen alvorens het naar het belangrijkste doel te verzenden.
-* [&#x200B; verzend de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Vorm de leveringsmontages en bepaal hoe te om uw berichten te verzenden.
-* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: Raadpleeg de beste praktijken met betrekking tot de leveringsmogelijkheden van de Campagne.
+* [&#x200B; bevestigt de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#validate-the-delivery){target="_blank"}: Leer hoe te om de levering te bevestigen alvorens het naar het belangrijkste doel te verzenden.
+* [&#x200B; verzend de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#configuring-and-sending-the-delivery){target="_blank"}: Vorm de leveringsmontages en bepaal hoe te om uw berichten te verzenden.
+* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL){target="_blank"}: Raadpleeg de beste praktijken met betrekking tot de leveringsmogelijkheden van de Campagne.
 
 >[!ENDTABS]
 
-De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
+De volgende instellingen gelden specifiek voor Campaign Classic. Voor andere leveringsmontages, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=nl-NL){target="_blank"}.
 
 +++ **Analyse van de Levering**
 
@@ -130,7 +130,7 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}. 
 
 >[!NOTE]
 >

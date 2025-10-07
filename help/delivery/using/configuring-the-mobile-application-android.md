@@ -60,7 +60,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 ## Een Android-service configureren {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om de dienst van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} te vormen.
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om de dienst van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=nl-NL#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} te vormen.
 
 1. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Services and subscriptions]** en klik op **[!UICONTROL New]** .
 
@@ -149,7 +149,7 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 ## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het schema appsubscriptionRcp in video uit te breiden &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het schema appsubscriptionRcp in video uit te breiden &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=nl-NL#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 U moet **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
 
