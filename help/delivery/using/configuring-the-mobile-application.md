@@ -25,7 +25,7 @@ De belangrijkste stappen zijn:
 1. [De iOS-service configureren](#configuring-ios-service)
 1. [De mobiele iOS-app integreren in de campagne](#creating-ios-app)
 
-U zult dan een duw bericht voor de apparaten van iOS [ kunnen tot stand brengen.](create-notifications-ios.md)
+U zult dan een duw bericht voor de apparaten van iOS [&#x200B; kunnen tot stand brengen.](create-notifications-ios.md)
 
 ## Externe iOS-account configureren {#configuring-external-account-ios}
 
@@ -49,7 +49,7 @@ Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 >
 >De toepassing moet zijn geconfigureerd voor push-acties voordat deze kan worden geïntegreerd met Adobe SDK.
 >
->Als dit niet het geval is, gelieve te verwijzen naar [ deze pagina ](https://developer.apple.com/documentation/usernotifications).
+>Als dit niet het geval is, gelieve te verwijzen naar [&#x200B; deze pagina &#x200B;](https://developer.apple.com/documentation/usernotifications).
 
 1. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Services and subscriptions]** en klik op **[!UICONTROL New]** .
 
@@ -60,7 +60,7 @@ Uw iOS-aansluiting is nu geconfigureerd. U kunt uw service gaan maken.
 
    >[!NOTE]
    >
-   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar de [ gids van de Configuratie ](../../configuration/using/about-custom-recipient-table.md).
+   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar de [&#x200B; gids van de Configuratie &#x200B;](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -111,7 +111,7 @@ In het volgende voorbeeld, voegen wij **mediaURl** en **mediaExt** toe om rijke 
 
    Er zijn twee modi beschikbaar:
 
-   * (Aanbevolen) **[!UICONTROL Token-based authentication]**: vul de instellingen voor de APNs-verbinding in **[!UICONTROL Key Id]** , **[!UICONTROL Team Id]** en **[!UICONTROL Bundle Id]** en selecteer vervolgens het p8-certificaat door op **[!UICONTROL Enter the private key...]** te klikken. Voor meer op **[!UICONTROL Token-based authentication]**, verwijs naar [ documentatie van Apple ](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Aanbevolen) **[!UICONTROL Token-based authentication]**: vul de instellingen voor de APNs-verbinding in **[!UICONTROL Key Id]** , **[!UICONTROL Team Id]** en **[!UICONTROL Bundle Id]** en selecteer vervolgens het p8-certificaat door op **[!UICONTROL Enter the private key...]** te klikken. Voor meer op **[!UICONTROL Token-based authentication]**, verwijs naar [&#x200B; documentatie van Apple &#x200B;](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: Klik op **[!UICONTROL Enter the certificate...]** en selecteer de p12-toets. Voer vervolgens het wachtwoord in dat door de ontwikkelaar van de mobiele toepassing is opgegeven.
 

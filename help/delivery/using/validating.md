@@ -18,13 +18,13 @@ ht-degree: 1%
 
 
 
-De globale concepten wanneer het bevestigen van een levering worden voorgesteld in [ deze sectie ](steps-validating-the-delivery.md).
+De globale concepten wanneer het bevestigen van een levering worden voorgesteld in [&#x200B; deze sectie &#x200B;](steps-validating-the-delivery.md).
 
-Het outputdossier van een directe postlevering wordt geproduceerd tijdens de leveringsanalyse. De inhoud van het dossier hangt van de geselecteerde outputkolommen (verwijs naar [ dossier van de Uitwinning ](defining-the-direct-mail-content.md#extraction-file)) af.
+Het outputdossier van een directe postlevering wordt geproduceerd tijdens de leveringsanalyse. De inhoud van het dossier hangt van de geselecteerde outputkolommen (verwijs naar [&#x200B; dossier van de Uitwinning &#x200B;](defining-the-direct-mail-content.md#extraction-file)) af.
 
 >[!NOTE]
 >
->De analysefase wordt gedetailleerd in [ Analyserend de levering ](steps-validating-the-delivery.md#analyzing-the-delivery).
+>De analysefase wordt gedetailleerd in [&#x200B; Analyserend de levering &#x200B;](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Tijdens de analysefase wordt het bestand gegenereerd, maar wordt informatie over ontvangers (d.w.z. leveringslogboeken) niet bijgewerkt. U kunt deze taak dus annuleren zonder risico&#39;s te lopen.
 

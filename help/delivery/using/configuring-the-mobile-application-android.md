@@ -26,11 +26,11 @@ De belangrijkste stappen zijn:
 1. [De mobiele app maken in Campagne](#creating-android-app)
 1. [Het app-schema uitbreiden met aanvullende gegevens](#extend-subscription-schema)
 
-U zult dan een rijk bericht van Android [ kunnen tot stand brengen. ](create-notifications-android.md)
+U zult dan een rijk bericht van Android [&#x200B; kunnen tot stand brengen. &#x200B;](create-notifications-android.md)
 
 >[!IMPORTANT]
 >
->In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. De configuratie van uw lidmaatschapsservices voor Android-pushberichten moet mogelijk worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Leer meer in dit [ Adobe Campaign v8 technote ](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}.
+>In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. De configuratie van uw lidmaatschapsservices voor Android-pushberichten moet mogelijk worden bijgewerkt om deze wijziging te ondersteunen. U kunt al controleren en actie ondernemen. Leer meer in dit [&#x200B; Adobe Campaign v8 technote &#x200B;](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}.
 
 
 ## Externe Android-account configureren {#configuring-external-account-android}
@@ -60,7 +60,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 ## Een Android-service configureren {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om de dienst van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} te vormen.
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om de dienst van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"} te vormen.
 
 1. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Services and subscriptions]** en klik op **[!UICONTROL New]** .
 
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    >[!NOTE]
    >
-   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar [ deze sectie ](../../configuration/using/about-custom-recipient-table.md).
+   >Het gebrek **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is verbonden met de ontvankelijkheidstabel. Als u een andere doelafbeelding wilt gebruiken, moet u een nieuwe doeltoewijzing maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -99,7 +99,7 @@ Nadat u uw service hebt gemaakt, moet u nu uw Android-toepassing maken:
    >
    > **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet precies hetzelfde zijn als de waarde die in de SDK is opgegeven.
 
-1. Selecteer **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties zijn gedetailleerd in [ deze sectie ](#select-api-version)
+1. Selecteer **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](#select-api-version)
 
 1. Vul de velden **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** in.
 
@@ -111,7 +111,7 @@ Adobe Campaign slaat standaard een sleutel op in het veld **[!UICONTROL User ide
 
 >[!IMPORTANT]
 >
->In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. Als deel van Google dat voortdurend probeert om zijn diensten te verbeteren, zal erfenis FCM APIs op **juni 20, 2024** worden opgeheven. Leer meer in dit [ Adobe Campaign v8 technote ](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}.
+>In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FCM (Android Firebase Cloud Messaging). Deze kunnen van invloed zijn op uw Adobe Campaign-implementatie. Als deel van Google dat voortdurend probeert om zijn diensten te verbeteren, zal erfenis FCM APIs op **juni 20, 2024** worden opgeheven. Leer meer in dit [&#x200B; Adobe Campaign v8 technote &#x200B;](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=nl){target="_blank"}.
 
 Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u uw mobiele toepassing configureren. **HTTP (erfenis)** API zou niet moeten worden geselecteerd aangezien het door Google is verouderd.
 
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
 1. Selecteer in het **[!UICONTROL Mobile application creation wizard]** -venster **[!UICONTROL HTTPV1]** in de vervolgkeuzelijst **[!UICONTROL API version]** .
 
-1. Klik op **[!UICONTROL Load project json file to extract project details...]** om het JSON-sleutelbestand rechtstreeks te laden. Voor meer informatie over hoe te om uw JSON- dossier te halen, verwijs naar [ deze pagina ](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. Klik op **[!UICONTROL Load project json file to extract project details...]** om het JSON-sleutelbestand rechtstreeks te laden. Voor meer informatie over hoe te om uw JSON- dossier te halen, verwijs naar [&#x200B; deze pagina &#x200B;](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    U kunt ook handmatig de volgende gegevens invoeren:
    * **[!UICONTROL Project Id]**
@@ -149,11 +149,11 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 ## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om het schema appsubscriptionRcp in video uit te breiden ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het schema appsubscriptionRcp in video uit te breiden &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 U moet **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
 
-1. Creeer een uitbreiding van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en bepaal de nieuwe gebieden. Leer meer over schemauitbreiding in [ deze pagina ](../../configuration/using/about-schema-edition.md)
+1. Creeer een uitbreiding van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en bepaal de nieuwe gebieden. Leer meer over schemauitbreiding in [&#x200B; deze pagina &#x200B;](../../configuration/using/about-schema-edition.md)
 
 1. Definieer de toewijzing op het tabblad **[!UICONTROL Subscription parameters]** .
 

@@ -37,4 +37,4 @@ Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voege
 
 >[!NOTE]
 >
->Deze assistent omvat de stappen van de uitvoermedewerker die in [ worden gedetailleerd Begonnen ](../../platform/using/executing-export-jobs.md) sectie.
+>Deze assistent omvat de stappen van de uitvoermedewerker die in [&#x200B; worden gedetailleerd Begonnen &#x200B;](../../platform/using/executing-export-jobs.md) sectie.

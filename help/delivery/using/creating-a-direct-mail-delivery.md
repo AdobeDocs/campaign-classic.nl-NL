@@ -21,12 +21,12 @@ Voer de volgende stappen uit om een nieuwe levering via e-mail te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in [ deze sectie ](steps-about-delivery-creation-steps.md).
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in [&#x200B; deze sectie &#x200B;](steps-about-delivery-creation-steps.md).
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
 1. Selecteer het leveringsmalplaatje **leveren door directe post (document)**.
 
    ![](assets/direct_mail.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar [ deze sectie ](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar [&#x200B; deze sectie &#x200B;](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. Klik **verdergaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.

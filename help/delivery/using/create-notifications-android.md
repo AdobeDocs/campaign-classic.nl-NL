@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Meldingen maken voor Android{#create-notificaations-android}
 
-Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. De globale concepten op leveringsverwezenlijking worden voorgesteld in [ deze sectie ](steps-about-delivery-creation-steps.md).
+Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. De globale concepten op leveringsverwezenlijking worden voorgesteld in [&#x200B; deze sectie &#x200B;](steps-about-delivery-creation-steps.md).
 
 Begin door een nieuwe levering te maken.
 
@@ -30,7 +30,7 @@ Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 * **[!UICONTROL Notification message]**, automatisch afgehandeld door de FCM SDK.
   <br> FCM geeft automatisch het bericht weer op de apparaten van uw gebruikers namens de client-app. Meldingsberichten bevatten een vooraf gedefinieerde set parameters en opties, maar kunnen nog steeds verder worden aangepast met aangepaste toepassingsvariabelen.
 
-Voor meer informatie over de berichttypes van het Overseinen van de Wolk van de Wolk van de Vuurbasis, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"}.
+Voor meer informatie over de berichttypes van het Overseinen van de Wolk van de Wolk van de Vuurbasis, verwijs naar [&#x200B; documentatie FCM &#x200B;](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"}.
 
 
 ## Een gegevensbericht maken {#creating-data-message}
@@ -70,7 +70,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
 
 ## Een meldingsbericht maken {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om een de duwbericht van Android in video ](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"} tot stand te brengen.
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om een de duwbericht van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"} tot stand te brengen.
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** .
 
@@ -101,7 +101,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
    * **[!UICONTROL Tag]**: stel de id in die wordt gebruikt om bestaande meldingen in de meldingslade te vervangen.
    * **[!UICONTROL Click action]**: Stel de actie in die aan een gebruiker is gekoppeld, en klik op het bericht.
 
-   Voor meer op **[!UICONTROL Notification options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+   Voor meer op **[!UICONTROL Notification options]** en hoe te om deze gebieden te vullen, verwijs naar [&#x200B; documentatie FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_8.png)
 
@@ -111,10 +111,10 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
    * **[!UICONTROL Image]**: stel de URL van de afbeelding in die in de melding moet worden weergegeven.
    * **[!UICONTROL Notification Count]**: stel het aantal nieuwe ongelezen gegevens in dat rechtstreeks op het toepassingspictogram moet worden weergegeven.
    * **[!UICONTROL Sticky]**: ingesteld op true of false. Indien ingesteld op false, wordt het bericht automatisch genegeerd wanneer de gebruiker erop klikt. Indien ingesteld op true, wordt het bericht nog steeds weergegeven, zelfs wanneer de gebruiker erop klikt.
-   * **[!UICONTROL Notification Priority]**: stel de prioriteitsniveaus van uw melding in op de standaardwaarde, minimum, laag of hoog. Voor meer op dit, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. Voor meer op dit, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: stel de prioriteitsniveaus van uw melding in op de standaardwaarde, minimum, laag of hoog. Voor meer op dit, verwijs naar [&#x200B; documentatie FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**: stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. Voor meer op dit, verwijs naar [&#x200B; documentatie FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   Voor meer op **[!UICONTROL HTTP v1 additional options]** en hoe te om deze gebieden te vullen, verwijs naar [ documentatie FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+   Voor meer op **[!UICONTROL HTTP v1 additional options]** en hoe te om deze gebieden te vullen, verwijs naar [&#x200B; documentatie FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_9.png)
 

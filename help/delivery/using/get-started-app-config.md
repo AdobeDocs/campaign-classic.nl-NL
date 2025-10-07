@@ -23,9 +23,9 @@ U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt ge
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
-* Maak een **[!UICONTROL Mobile application]** type information service voor de mobiele toepassing Neotrips. Verwijs naar [ deze sectie voor iOS ](configuring-the-mobile-application.md#configuring-ios-service). en [ deze sectie voor Android ](configuring-the-mobile-application-android.md#configuring-android-service).
+* Maak een **[!UICONTROL Mobile application]** type information service voor de mobiele toepassing Neotrips. Verwijs naar [&#x200B; deze sectie voor iOS &#x200B;](configuring-the-mobile-application.md#configuring-ios-service). en [&#x200B; deze sectie voor Android &#x200B;](configuring-the-mobile-application-android.md#configuring-android-service).
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
-* Creeer een levering voor [ iOS ](create-notifications-ios.md) en [ Android ](create-notifications-android.md).
+* Creeer een levering voor [&#x200B; iOS &#x200B;](create-notifications-ios.md) en [&#x200B; Android &#x200B;](create-notifications-android.md).
 
 ![](assets/nmac_service_diagram.png)
 
@@ -35,17 +35,17 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 ## Het pakket installeren {#installing-package-ios}
 
-[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE &#x200B; Op-gebouw &amp; Hybrid &#x200B;]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
-![](assets/do-not-localize/how-to-video.png) [ Leer hoe te om het mobiele app pakket in video te installeren ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om het mobiele app pakket in video te installeren &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-Als hybride/ontvangen klant, contacteer [ team van de Zorg van de Klant van 0} Adobe om tot het kanaal van het pushbericht in Campagne toegang te hebben.](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+Als hybride/ontvangen klant, contacteer [&#x200B; team van de Zorg van de Klant van 0&rbrace; Adobe om tot het kanaal van het pushbericht in Campagne toegang te hebben.](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 Als klant op locatie moet u een ingebouwd pakket installeren.
 
 >[!CAUTION]
 >
->Leer meer over de ingebouwde pakketten van de Campagne, beste praktijken en aanbevelingen in [ deze pagina ](../../installation/using/installing-campaign-standard-packages.md).
+>Leer meer over de ingebouwde pakketten van de Campagne, beste praktijken en aanbevelingen in [&#x200B; deze pagina &#x200B;](../../installation/using/installing-campaign-standard-packages.md).
 
 Installatiestappen zijn:
 
