@@ -115,4 +115,4 @@ Deze video laat zien hoe u voorwaardelijke content aan een levering kunt toevoeg
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

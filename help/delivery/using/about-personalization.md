@@ -19,17 +19,17 @@ Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manie
 
 * Het berichtformaat aanpassen. Zie {de inhoud van het 0} Bericht [.](defining-the-email-content.md#message-content)
 * Dynamische personalisatievelden invoegen. Zie {de gebieden van 0} Personalisatie [.](personalization-fields.md)
-* Vooraf gedefinieerde aanpassingsblokken invoegen. Zie [ blokken van de Personalisatie ](personalization-blocks.md).
-* Voorwaardelijke content maken. Verwijs naar de [ Voorwaardelijke inhoud ](conditional-content.md) sectie.
+* Vooraf gedefinieerde aanpassingsblokken invoegen. Zie [&#x200B; blokken van de Personalisatie &#x200B;](personalization-blocks.md).
+* Voorwaardelijke content maken. Verwijs naar de [&#x200B; Voorwaardelijke inhoud &#x200B;](conditional-content.md) sectie.
 
 >[!CAUTION]
 >
->De volgende variabelen zijn interne variabelen die voor verpersoonlijking kunnen worden gebruikt maar moeten niet worden gewijzigd: **levering**, **bericht**, **dataSource**, **targetData**, **leverancier**, **coupon**, **couponValue**, **5}.**
+>De volgende variabelen zijn interne variabelen die voor verpersoonlijking kunnen worden gebruikt maar moeten niet worden gewijzigd: **levering**, **bericht**, **dataSource**, **targetData**, **leverancier**, **coupon**, **couponValue**, **5&rbrace;.**
 
 
 Met Adobe Campaign kunt u uw leveringen personaliseren om berichten te verzenden die overeenkomen met het profiel en de interesses van elke ontvanger.
 
-Personalization helpt je om je berichten relevanter en boeiender te maken. U kunt de gegevens van de ontvanger gebruiken om inhoud aan te passen, dynamische gebieden toe te voegen, of verschillende informatie te tonen die op voorwaarden wordt gebaseerd. Leer hoe te opstelling en gebruiks verpersoonlijkingseigenschappen in uw leveringen in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Personalization helpt je om je berichten relevanter en boeiender te maken. U kunt de gegevens van de ontvanger gebruiken om inhoud aan te passen, dynamische gebieden toe te voegen, of verschillende informatie te tonen die op voorwaarden wordt gebaseerd. Leer hoe te opstelling en gebruiks verpersoonlijkingseigenschappen in uw leveringen in [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 In het kader van het promotieinitiatief Campaign v8 is de documentatie van Campaign Classic gereorganiseerd. Algemene functies zijn nu alleen beschikbaar in de documentatieset van Campagne v8.
 
@@ -37,7 +37,7 @@ In het kader van het promotieinitiatief Campaign v8 is de documentatie van Campa
 
 >[!TAB  de verpersoonlijkingsdocumentatie van de Inhoud ]
 
-Om meer over inhoudsprijdmaking te leren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Om meer over inhoudsprijdmaking te leren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
@@ -47,22 +47,22 @@ Om meer over inhoudsprijdmaking te leren, verwijs naar de [ documentatie van de 
 
 Leer de belangrijkste stappen met betrekking tot het maken van e-maillevering in de documentatie van Campagne v8:
 
-* [ creeer een e-maillevering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: Leer over de verschillende stappen nodig om een e-maillevering tot stand te brengen.
-* [ bepaal de e-mailinhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: Bepaal wat uw e-mail zal omvatten: afzender, onderwerp, inhoud, beelden.
-* [ bepaal interactieve inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: Gebruik interactieve AMP voor E-mail formaat om dynamische e-mails te verzenden.
-* [ verzend e-mails op Japanse mobiele toestellen ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: Gebruik één van de drie specifieke Japanse formaten voor e-mail op mobiele telefoons.
-* [ maak dossiers aan e-mail ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"} vast: Leer de verschillende manieren om één of meerdere dossiers aan e-mail vast te maken.
+* [&#x200B; creeer een e-maillevering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: Leer over de verschillende stappen nodig om een e-maillevering tot stand te brengen.
+* [&#x200B; bepaal de e-mailinhoud &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: Bepaal wat uw e-mail zal omvatten: afzender, onderwerp, inhoud, beelden.
+* [&#x200B; bepaal interactieve inhoud &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: Gebruik interactieve AMP voor E-mail formaat om dynamische e-mails te verzenden.
+* [&#x200B; verzend e-mails op Japanse mobiele toestellen &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: Gebruik één van de drie specifieke Japanse formaten voor e-mail op mobiele telefoons.
+* [&#x200B; maak dossiers aan e-mail &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"} vast: Leer de verschillende manieren om één of meerdere dossiers aan e-mail vast te maken.
 
 
 >[!TAB E-mailparameters]
 
 Raadpleeg de volgende pagina&#39;s voor meer informatie over e-mailparameters in de documentatie van Campagne v8:
 
-* [ Verbinding aan de spiegelpagina ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: Vorm de spiegelpagina om ervoor te zorgen uw cliënten altijd de beste het teruggeven ervaring krijgen.
-* [ voeg een adres BCC ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"} toe: Vorm Adobe Campaign om een exemplaar van e-mails te houden die van uw platform worden verzonden.
-* [ bepaalt extra e-mailparameters ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: Leer meer over de opties en de parameters beschikbaar bij de leveringseigenschappen.
+* [&#x200B; Verbinding aan de spiegelpagina &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: Vorm de spiegelpagina om ervoor te zorgen uw cliënten altijd de beste het teruggeven ervaring krijgen.
+* [&#x200B; voeg een adres BCC &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"} toe: Vorm Adobe Campaign om een exemplaar van e-mails te houden die van uw platform worden verzonden.
+* [&#x200B; bepaalt extra e-mailparameters &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: Leer meer over de opties en de parameters beschikbaar bij de leveringseigenschappen.
 
-Ook verwijs naar deze [ pagina ](sending-with-enhanced-mta.md) om over Verbeterde MTA te leren.
+Ook verwijs naar deze [&#x200B; pagina &#x200B;](sending-with-enhanced-mta.md) om over Verbeterde MTA te leren.
 
 >[!ENDTABS]
 

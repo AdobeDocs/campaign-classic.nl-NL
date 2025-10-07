@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Personalisatieblokken{#personalization-blocks}
 
-De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [ verpersoonlijkingsblokken van het Tussenvoegsel ](#inserting-personalization-blocks).
+De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [&#x200B; verpersoonlijkingsblokken van het Tussenvoegsel &#x200B;](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png) ontdekt deze eigenschap [ in video ](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) ontdekt deze eigenschap [&#x200B; in video &#x200B;](#personalization-blocks-video)
 
-U hebt toegang tot aanpassingsblokken via het knooppunt **[!UICONTROL Resources > Campaign Management > Personalization blocks]** van de Adobe Campaign-verkenner. Verscheidene blokken zijn beschikbaar door gebrek (zie [ uit-van-de-doos verpersoonlijkingsblokken ](#out-of-the-box-personalization-blocks)).
+U hebt toegang tot aanpassingsblokken via het knooppunt **[!UICONTROL Resources > Campaign Management > Personalization blocks]** van de Adobe Campaign-verkenner. Verscheidene blokken zijn beschikbaar door gebrek (zie [&#x200B; uit-van-de-doos verpersoonlijkingsblokken &#x200B;](#out-of-the-box-personalization-blocks)).
 
-U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u de personalisatie van uw leveringen kunt optimaliseren. Voor meer op dit, verwijs naar [ de blokken van de douaneverpersoonlijking ](#defining-custom-personalization-blocks) bepalen.
+U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u de personalisatie van uw leveringen kunt optimaliseren. Voor meer op dit, verwijs naar [&#x200B; de blokken van de douaneverpersoonlijking &#x200B;](#defining-custom-personalization-blocks) bepalen.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een beri
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. Het **[!UICONTROL Other...]** menu geeft toegang tot alle uit-van-de-doos en douane verpersoonlijkingsblokken (zie [ uit-van-de-doos verpersoonlijkingsblokken ](#out-of-the-box-personalization-blocks) en [ bepalen de blokken van de douaneverpersoonlijking ](#defining-custom-personalization-blocks)).
+1. Het **[!UICONTROL Other...]** menu geeft toegang tot alle uit-van-de-doos en douane verpersoonlijkingsblokken (zie [&#x200B; uit-van-de-doos verpersoonlijkingsblokken &#x200B;](#out-of-the-box-personalization-blocks) en [&#x200B; bepalen de blokken van de douaneverpersoonlijking &#x200B;](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -70,7 +70,7 @@ Om dit te doen, moeten wij de volgende verpersoonlijkingsblokken opnemen:
 
 >[!NOTE]
 >
->Voor meer op de spiegelpaginageneratie, verwijs naar [ produceer de spiegelpagina ](sending-messages.md#generating-the-mirror-page).
+>Voor meer op de spiegelpaginageneratie, verwijs naar [&#x200B; produceer de spiegelpagina &#x200B;](sending-messages.md#generating-the-mirror-page).
 
 1. Maak een nieuwe levering of open een bestaande e-maillevering.
 1. Klik in de bezorgingsassistent op **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en een onderwerp in te voeren.
@@ -102,12 +102,12 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
 
   >[!NOTE]
   >
-  >Voor meer op de spiegelpaginageneratie, verwijs naar [ produceer de spiegelpagina ](sending-messages.md#generating-the-mirror-page).
+  >Voor meer op de spiegelpaginageneratie, verwijs naar [&#x200B; produceer de spiegelpagina &#x200B;](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Als u dit bericht niet correct kunt weergeven, klikt u hier&quot;.
 * **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (lijst van gewezen personen).
 * **[!UICONTROL Formatting function for proper nouns]** : genereert de functie **[!UICONTROL toSmartCase]** Javascript, die de eerste letter van elk woord in hoofdletters wijzigt.
-* **[!UICONTROL Registration page URL]** : neemt een abonnement URL op (zie [ Ongeveer de diensten en abonnementen ](about-services-and-subscriptions.md)).
+* **[!UICONTROL Registration page URL]** : neemt een abonnement URL op (zie [&#x200B; Ongeveer de diensten en abonnementen &#x200B;](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : voegt een abonnementkoppeling in. die is gedefinieerd tijdens het configureren van de instantie.
 * **[!UICONTROL Registration link (with referrer)]** : voegt een abonnementkoppeling in, waarmee de bezoeker en de levering kunnen worden geïdentificeerd. De koppeling is gedefinieerd tijdens het configureren van de instantie.
 
@@ -116,9 +116,9 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
   >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee het abonnement kan worden bevestigd.
-* **[!UICONTROL Social network sharing links]** : neemt knopen op die de ontvanger toelaten om een verbinding met de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, X (vroeger gekend als Twitter), en LinkedIn (zie [ Virale marketing: door:sturen aan een vriend ](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)) te delen.
+* **[!UICONTROL Social network sharing links]** : neemt knopen op die de ontvanger toelaten om een verbinding met de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, X (vroeger gekend als Twitter), en LinkedIn (zie [&#x200B; Virale marketing: door:sturen aan een vriend &#x200B;](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)) te delen.
 * **[!UICONTROL Style of content emails]** en **[!UICONTROL Notification style]** : genereer code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in de **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
-* **[!UICONTROL Offer acceptance URL in unitary mode]** : neemt een URL op toelatend om een aanbieding van de Interactie aan **[!UICONTROL Accepted]** (zie [ deze sectie ](../../interaction/using/offer-analysis-report.md)) te plaatsen.
+* **[!UICONTROL Offer acceptance URL in unitary mode]** : neemt een URL op toelatend om een aanbieding van de Interactie aan **[!UICONTROL Accepted]** (zie [&#x200B; deze sectie &#x200B;](../../interaction/using/offer-analysis-report.md)) te plaatsen.
 
 ## Aangepaste aanpassingsblokken definiëren {#defining-custom-personalization-blocks}
 
@@ -148,4 +148,4 @@ Leer hoe u dynamische inhoudsblokken maakt en hoe u deze kunt gebruiken om de in
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
