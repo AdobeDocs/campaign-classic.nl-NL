@@ -5,8 +5,10 @@ description: Leer hoe u aanpassingsblokken kunt gebruiken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 1%
@@ -52,7 +54,7 @@ U kunt de broncode van een verpersoonlijkingsblok in de leveringsinhoud omvatten
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-De broncode van de HTML wordt opgenomen in de leveringsinhoud. Het **[!UICONTROL Greetings]** verpersoonlijkingsblok wordt bijvoorbeeld als volgt weergegeven:
+De HTML-broncode wordt ingevoegd in de leveringsinhoud. Het **[!UICONTROL Greetings]** verpersoonlijkingsblok wordt bijvoorbeeld als volgt weergegeven:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -114,8 +116,8 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
   >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee het abonnement kan worden bevestigd.
-* **[!UICONTROL Social network sharing links]** : neemt knopen op die de ontvanger toelaten om een verbinding met de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, X (vroeger genoemd als Twitter), en LinkedIn (zie [ Virale marketing: door:sturen aan een vriend ](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)) te delen.
-* **[!UICONTROL Style of content emails]** en **[!UICONTROL Notification style]** : genereer code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde stijlen voor HTML. Deze blokken moeten in de broncode van de levering, in de **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
+* **[!UICONTROL Social network sharing links]** : neemt knopen op die de ontvanger toelaten om een verbinding met de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, X (vroeger gekend als Twitter), en LinkedIn (zie [ Virale marketing: door:sturen aan een vriend ](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)) te delen.
+* **[!UICONTROL Style of content emails]** en **[!UICONTROL Notification style]** : genereer code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in de **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : neemt een URL op toelatend om een aanbieding van de Interactie aan **[!UICONTROL Accepted]** (zie [ deze sectie ](../../interaction/using/offer-analysis-report.md)) te plaatsen.
 
 ## Aangepaste aanpassingsblokken definiëren {#defining-custom-personalization-blocks}
@@ -132,13 +134,13 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
 
    * Voer het label van het blok in. Dit label wordt weergegeven in het invoegvenster van het aanpassingsveld.
    * Selecteer **[!UICONTROL Visible in the customization menus]** om dit blok toegankelijk te maken via het invoegpictogram voor het aanpassingsveld.
-   * Selecteer indien nodig **[!UICONTROL The content of the personalization block depends upon the format]** om twee aparte blokken voor e-mailberichten in de indeling HTML en tekstblokken in de indeling te definiëren.
+   * Selecteer indien nodig **[!UICONTROL The content of the personalization block depends upon the format]** om twee aparte blokken voor e-mailberichten in HTML-indeling en blokken in tekstindeling te definiëren.
 
-     Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (inhoud van HTML en tekst) om de bijbehorende inhoud te definiëren.
+     Er worden dan twee tabbladen weergegeven in de onderste sectie van deze editor (HTML-inhoud en tekstinhoud) om de bijbehorende inhoud te definiëren.
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van de aanpassingsblokken en klik op **[!UICONTROL Save]** .
+   * Voer de inhoud (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) in en klik op **[!UICONTROL Save]** .
 
 ## Video over zelfstudie {#personalization-blocks-video}
 
@@ -146,4 +148,4 @@ Leer hoe u dynamische inhoudsblokken maakt en hoe u deze kunt gebruiken om de in
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

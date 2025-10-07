@@ -5,8 +5,10 @@ description: Leer hoe u verpersoonlijkingsvelden kunt gebruiken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 8%
@@ -29,7 +31,7 @@ Bijvoorbeeld, vertelt het verpersoonlijkingsgebied met **&lt;%= receiver.LastNam
 
 De gebieden van de verpersoonlijking kunnen uit twee types van gegevensbron, volgens de geselecteerde leveringswijze komen:
 
-* De Adobe Campaign-database is de gegevensbron. Dit is het meest gangbare geval, bijvoorbeeld met &#39;personalisatievelden voor ontvangers&#39;. Dit zijn alle velden die zijn gedefinieerd in de tabel met ontvangers, of het nu standaardvelden zijn (gewoonlijk: achternaam, voornaam, adres, plaats, geboortedatum, enz.) of door de gebruiker gedefinieerde velden.
+* De Adobe Campaign-database is de gegevensbron. Dit is het meest gangbare geval, bijvoorbeeld met &#39;personalisatievelden voor ontvangers&#39;. Dit zijn alle velden die zijn gedefinieerd in de tabel met ontvangers, of het nu standaardvelden zijn (doorgaans: achternaam, voornaam, adres, plaats, geboortedatum, enz.) of door de gebruiker gedefinieerde velden.
 * Een extern bestand is de gegevensbron. Dit zijn alle velden die zijn gedefinieerd in de kolommen van het bestand dat wordt weergegeven als invoer tijdens een levering met behulp van de gegevens in een extern bestand.
 
 >[!NOTE]
@@ -142,4 +144,4 @@ Leer hoe u een personalisatieveld toevoegt aan de onderwerpregel en de content v
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

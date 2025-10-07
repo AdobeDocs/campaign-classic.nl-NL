@@ -5,8 +5,10 @@ description: Leer hoe u voorwaardelijke inhoud toevoegt
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Personalization, Multilingual Messages
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 5%
@@ -80,7 +82,7 @@ Klik op **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijk
 In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De inhoud wordt in de ene of de andere taal weergegeven, afhankelijk van de voorkeurstaal van de ontvanger.
 
 1. Maak een e-mail en selecteer de doelpopulatie. In dit voorbeeld, zal de voorwaarde om één versie of andere te tonen op de **Taal** waarde van het profiel van de ontvanger worden gebaseerd. In dit voorbeeld, worden deze waarden geplaatst aan **EN**, **FR**, **ES**.
-1. Klik in de inhoud van de HTML-e-mail op de tab **[!UICONTROL Source]** en plak de volgende code:
+1. Klik in de HTML-inhoud voor e-mail op het tabblad **[!UICONTROL Source]** en plak de volgende code:
 
    ```
    <% if (language == "EN" ) { %>
@@ -113,4 +115,4 @@ Deze video laat zien hoe u voorwaardelijke content aan een levering kunt toevoeg
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
