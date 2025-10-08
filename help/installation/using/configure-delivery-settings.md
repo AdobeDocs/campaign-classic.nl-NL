@@ -31,7 +31,7 @@ De leveringsparameters moeten in de {**omslag worden gevormd 0} serverConf.xml.*
   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
   ```
 
-U kunt de volgende configuraties afhankelijk van uw behoeften en montages ook uitvoeren: vorm het relais van a [ SMTP ](#smtp-relay), pas het aantal [ MTA kindprocessen ](#mta-child-processes) aan, [ beheer uitgaand verkeer SMTP ](#managing-outbound-smtp-traffic-with-affinities).
+U kunt de volgende configuraties afhankelijk van uw behoeften en montages ook uitvoeren: vorm het relais van a [&#x200B; SMTP &#x200B;](#smtp-relay), pas het aantal [&#x200B; MTA kindprocessen &#x200B;](#mta-child-processes) aan, [&#x200B; beheer uitgaand verkeer SMTP &#x200B;](#managing-outbound-smtp-traffic-with-affinities).
 
 ## SMTP-relay {#smtp-relay}
 
@@ -57,7 +57,7 @@ Het is mogelijk om het aantal onderliggende processen (maxSpareServers door gebr
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Verwijs ook naar [ E-mail die optimalisering verzenden ](../../installation/using/email-deliverability.md#email-sending-optimization).
+Verwijs ook naar [&#x200B; E-mail die optimalisering verzenden &#x200B;](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Beheer uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -88,7 +88,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+   >Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 
    Vervolgens kunt u de affiniteit selecteren die u wilt gebruiken, zoals hieronder voor typologieën wordt getoond:
@@ -97,7 +97,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt ook naar [ de serverconfiguratie van de Levering ](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
+   >U kunt ook naar [&#x200B; de serverconfiguratie van de Levering &#x200B;](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
 
 **Verwante onderwerpen**
 * [Technische e-mailconfiguraties](email-deliverability.md)

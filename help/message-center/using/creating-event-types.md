@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Om ervoor te zorgen elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u eerst **gebeurtenistypen** creëren.
 
-Wanneer [ creërend een berichtmalplaatje ](../../message-center/using/creating-the-message-template.md), zult u het type van gebeurtenis selecteren die het bericht aanpast u wilt verzenden.
+Wanneer [&#x200B; creërend een berichtmalplaatje &#x200B;](../../message-center/using/creating-the-message-template.md), zult u het type van gebeurtenis selecteren die het bericht aanpast u wilt verzenden.
 
 >[!IMPORTANT]
 >
@@ -46,7 +46,7 @@ Voer de volgende stappen uit om gebeurtenistypen te maken die door Adobe Campaig
 
 >[!NOTE]
 >
->Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+>Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 
 

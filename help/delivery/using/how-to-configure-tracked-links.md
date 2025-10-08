@@ -23,7 +23,7 @@ Het volgen is op berichten van toepassing, maar het Web volgen laat u controlere
 
 >[!NOTE]
 >
->De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Voor meer op hoe te om verbindingen in e-mails toe te voegen die kunnen worden gepersonaliseerd en die steun het volgen, verwijs naar [ deze sectie ](tracking-personalized-links.md).
+>De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Voor meer op hoe te om verbindingen in e-mails toe te voegen die kunnen worden gepersonaliseerd en die steun het volgen, verwijs naar [&#x200B; deze sectie &#x200B;](tracking-personalized-links.md).
 
 We raden u ten zeerste aan URL&#39;s op te nemen in scheidingstekens op het tabblad **[!UICONTROL Text content]** voordat u de volgende formule toepast. De URL-scheidingstekens die u op dit tabblad invoert, worden door Adobe Campaign gebruikt om URL&#39;s binnen tekenreeksen te identificeren. U kunt deze paren scheidingstekens gebruiken:
 * Haakjes ( )
@@ -72,4 +72,4 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    * **[!UICONTROL Opt-out]** : beschouwt deze URL als een opt-out- of niet-abonnements-URL.
    * **[!UICONTROL Mirror page]** : beschouwt deze URL als een URL van een spiegelpagina.
 
-1. Bovendien kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de kolom **[!UICONTROL Category]** . Deze categorieën kunnen rapporten, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** worden getoond (zie [ deze sectie ](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+1. Bovendien kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de kolom **[!UICONTROL Category]** . Deze categorieën kunnen rapporten, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** worden getoond (zie [&#x200B; deze sectie &#x200B;](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
