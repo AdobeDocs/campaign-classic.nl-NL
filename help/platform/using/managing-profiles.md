@@ -30,9 +30,8 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 
 >[!NOTE]
 >
-> * Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Leer meer in [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
-
-> * Meer leren op hoe te om uw profielen te beheren, gelieve te verwijzen naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Leer meer in [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Meer leren op hoe te om uw profielen te beheren, gelieve te verwijzen naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

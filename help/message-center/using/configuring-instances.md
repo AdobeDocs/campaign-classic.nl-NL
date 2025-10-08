@@ -20,12 +20,12 @@ ht-degree: 1%
 
 
 Om de mogelijkheden van het transactionele overseinen te gebruiken, moet u de controle en uitvoeringsinstanties vormen. U kunt beide gebruiken:
-* [ Één controleinstantie ](#control-instance) verbonden aan één of verscheidene uitvoeringsinstanties
-* [ Verscheidene controleinstanties ](#using-several-control-instances) verbonden aan verscheidene uitvoeringsinstanties
+* [&#x200B; Één controleinstantie &#x200B;](#control-instance) verbonden aan één of verscheidene uitvoeringsinstanties
+* [&#x200B; Verscheidene controleinstanties &#x200B;](#using-several-control-instances) verbonden aan verscheidene uitvoeringsinstanties
 
 >[!IMPORTANT]
 >
->De uitbreidingen van het schema beïnvloedden de middelen die door [ technische werkschema&#39;s van het Centrum van het Bericht ](../../message-center/using/additional-configurations.md#technical-workflows) op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de Transactionele overseinenmodule worden gebruikt.
+>De uitbreidingen van het schema beïnvloedden de middelen die door [&#x200B; technische werkschema&#39;s van het Centrum van het Bericht &#x200B;](../../message-center/using/additional-configurations.md#technical-workflows) op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de Transactionele overseinenmodule worden gebruikt.
 
 U moet ook de uitvoeringsinstantie(s) opgeven en verbinden met de besturingsinstantie(s).
 
@@ -37,13 +37,13 @@ Alle stappen nodig om de controle en uitvoeringsinstanties te vormen en aan te s
 
 ## Vorm de controleinstantie {#control-instance}
 
-Om de controleinstantie en de uitvoeringsinstanties te verbinden, moet u eerst een **[!UICONTROL Execution instance]** type externe rekening **op de controleinstantie** creëren en vormen. Daarom zodra [ gepubliceerd ](../../message-center/using/publishing-message-templates.md#template-publication), transactionele berichtmalplaatjes aan de uitvoeringsinstanties kunnen worden opgesteld.
+Om de controleinstantie en de uitvoeringsinstanties te verbinden, moet u eerst een **[!UICONTROL Execution instance]** type externe rekening **op de controleinstantie** creëren en vormen. Daarom zodra [&#x200B; gepubliceerd &#x200B;](../../message-center/using/publishing-message-templates.md#template-publication), transactionele berichtmalplaatjes aan de uitvoeringsinstanties kunnen worden opgesteld.
 
 Als u meerdere uitvoeringsinstanties gebruikt, moet u net zoveel externe accounts maken als er uitvoeringen zijn.
 
 >[!NOTE]
 >
->Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, zie [ Gebruik verscheidene controleinstanties ](#using-several-control-instances).
+>Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, zie [&#x200B; Gebruik verscheidene controleinstanties &#x200B;](#using-several-control-instances).
 
 ### Een externe account maken
 
@@ -78,7 +78,7 @@ Pas het volgende toe om een **[!UICONTROL Execution instance]** type extern acco
 
    >[!NOTE]
    >
-   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. Voor meer op dit, zie [ de uitvoeringsinstantie(s) ](#execution-instance) vormen.
+   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. Voor meer op dit, zie [&#x200B; de uitvoeringsinstantie(s) &#x200B;](#execution-instance) vormen.
 
 1. Geef de herstelmethode op die door de uitvoeringsinstantie moet worden gebruikt. De gegevens die moeten terugkrijgen worden door:sturen aan de controleinstantie door de uitvoeringsinstantie, om aan transactiebericht en gebeurtenisarchieven toe te voegen.
 
@@ -94,7 +94,7 @@ Pas het volgende toe om een **[!UICONTROL Execution instance]** type extern acco
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Voor meer informatie over Federated Data Access (FDA), verwijs naar [ deze sectie ](../../installation/using/about-fda.md).
+   Voor meer informatie over Federated Data Access (FDA), verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/about-fda.md).
 
 1. Klik op **[!UICONTROL Test the connection]** om ervoor te zorgen dat de besturingsinstantie en de uitvoeringsinstantie zijn gekoppeld.
 
@@ -134,7 +134,7 @@ Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties e
 
 >[!NOTE]
 >
->Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, zie [ Gebruik verscheidene controleinstanties ](#using-several-control-instances).
+>Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, zie [&#x200B; Gebruik verscheidene controleinstanties &#x200B;](#using-several-control-instances).
 
 1. Ga bij een uitvoeringsinstantie naar de operatormap ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selecteer de **agent van het Centrum van het Bericht**.
@@ -165,17 +165,17 @@ In de boom van alle uitvoeringsinstanties, creeer één omslag per exploitant (*
 >
 >De stappen hieronder moeten **op de controleinstanties** worden uitgevoerd.
 
-1. Op **Controle 1** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc1** exploitant in elke externe rekening in. De {**exploitant 0} mc1 zal daarna op alle uitvoeringsinstanties (zie** uitvoeringsinstanties [ vormen) worden gecreeerd.](#configuring-execution-instances)
+1. Op **Controle 1** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc1** exploitant in elke externe rekening in. De {**exploitant 0} mc1 zal daarna op alle uitvoeringsinstanties (zie** uitvoeringsinstanties [&#x200B; vormen) worden gecreeerd.](#configuring-execution-instances)
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Op **Controle 2** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc2** exploitant in elke externe rekening in. De **mc2** exploitant zal daarna op alle uitvoeringsinstanties (zie [ uitvoeringsinstanties ](#configuring-execution-instances) vormen) worden gecreeerd.
+1. Op **Controle 2** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc2** exploitant in elke externe rekening in. De **mc2** exploitant zal daarna op alle uitvoeringsinstanties (zie [&#x200B; uitvoeringsinstanties &#x200B;](#configuring-execution-instances) vormen) worden gecreeerd.
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >Voor meer bij het vormen van een controleinstantie, zie [ deze sectie ](#control-instance).
+   >Voor meer bij het vormen van een controleinstantie, zie [&#x200B; deze sectie &#x200B;](#control-instance).
 
 ### Uitvoeringsinstanties configureren {#configuring-execution-instances}
 
@@ -185,11 +185,11 @@ In de boom van alle uitvoeringsinstanties, creeer één omslag per exploitant (*
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 
-1. Creeer één omslag per exploitant in de **[!UICONTROL Administration > Production > Message Center]** knoop: **Omslag 1** en **Omslag 2**. Leer meer over omslagen en meningen in [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+1. Creeer één omslag per exploitant in de **[!UICONTROL Administration > Production > Message Center]** knoop: **Omslag 1** en **Omslag 2**. Leer meer over omslagen en meningen in [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Creeer **mc1** en **mc2** exploitanten door de exploitant van het Centrum van het Bericht te dupliceren die door gebrek wordt verstrekt (**mc**). Voor meer bij het creëren van exploitanten, verwijs naar [ deze sectie ](../../platform/using/access-management-operators.md).
+1. Creeer **mc1** en **mc2** exploitanten door de exploitant van het Centrum van het Bericht te dupliceren die door gebrek wordt verstrekt (**mc**). Voor meer bij het creëren van exploitanten, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 

@@ -18,9 +18,9 @@ ht-degree: 2%
 
 
 
-In de context van transactioneel overseinen, wordt een gebeurtenis geproduceerd door een extern informatiesysteem en verzonden naar Adobe Campaign via **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methodes (zie [ de beschrijving van de Gebeurtenis ](../../message-center/using/event-description.md)).
+In de context van transactioneel overseinen, wordt een gebeurtenis geproduceerd door een extern informatiesysteem en verzonden naar Adobe Campaign via **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methodes (zie [&#x200B; de beschrijving van de Gebeurtenis &#x200B;](../../message-center/using/event-description.md)).
 
-Deze gebeurtenis bevat gegevens met betrekking tot de gebeurtenis, zoals zijn [ type ](../../message-center/using/creating-event-types.md) (ordesbevestiging, rekeningsverwezenlijking op een website, enz.), e-mailadres of mobiel aantal, evenals andere informatie die u het transactiebericht vóór levering (de informatie van het klantencontact, taal van het bericht, e-mailformaat, enz.) verrijkt en personaliseert.
+Deze gebeurtenis bevat gegevens met betrekking tot de gebeurtenis, zoals zijn [&#x200B; type &#x200B;](../../message-center/using/creating-event-types.md) (ordesbevestiging, rekeningsverwezenlijking op een website, enz.), e-mailadres of mobiel aantal, evenals andere informatie die u het transactiebericht vóór levering (de informatie van het klantencontact, taal van het bericht, e-mailformaat, enz.) verrijkt en personaliseert.
 
 Voorbeeld van gebeurtenisgegevens:
 
@@ -34,22 +34,22 @@ Om transactionele berichtengebeurtenissen te verwerken, worden de volgende stapp
 1. [Gebeurtenisoverdracht naar een berichtsjabloon](#routing-towards-a-template)
 1. Gebeurtenisverrijking met personalisatiegegevens
 1. [Uitvoering van levering](../../message-center/using/delivery-execution.md)
-1. [ Recycling van gebeurtenissen ](#event-recycling) de waarvan verbonden levering ontbrak (via een werkschema van Adobe Campaign)
+1. [&#x200B; Recycling van gebeurtenissen &#x200B;](#event-recycling) de waarvan verbonden levering ontbrak (via een werkschema van Adobe Campaign)
 
 Zodra alle stappen hierboven door de uitvoeringsinstantie worden uitgevoerd, ontvangt elke gerichte ontvanger een gepersonaliseerd bericht.
 
 >[!NOTE]
 >
->Voor meer op de instanties van het transactionele overseinen, zie [ Transactionele overseinenarchitectuur ](../../message-center/using/transactional-messaging-architecture.md).
+>Voor meer op de instanties van het transactionele overseinen, zie [&#x200B; Transactionele overseinenarchitectuur &#x200B;](../../message-center/using/transactional-messaging-architecture.md).
 
 
 ## Gebeurtenisverzameling {#event-collection}
 
 Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee modi worden verzameld:
 
-* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Voor meer op dit, zie [ beschrijving van de Gebeurtenis ](../../message-center/using/event-description.md).
+* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Voor meer op dit, zie [&#x200B; beschrijving van de Gebeurtenis &#x200B;](../../message-center/using/event-description.md).
 
-* Het creëren van een werkschema laat u gebeurtenissen terugkrijgen door dossiers of via een SQL gateway (met de [ Verdeelde optie van de Toegang van Gegevens ](../../installation/using/about-fda.md) in te voeren).
+* Het creëren van een werkschema laat u gebeurtenissen terugkrijgen door dossiers of via een SQL gateway (met de [&#x200B; Verdeelde optie van de Toegang van Gegevens &#x200B;](../../installation/using/about-fda.md) in te voeren).
 
 Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische werkschema&#39;s tussen echt - tijd en partijrijen van de uitvoeringsinstantie(s), terwijl het wachten om aan een berichtmalplaatje worden verbonden.
 
@@ -57,7 +57,7 @@ Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische we
 
 >[!NOTE]
 >
->Op uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Voor meer bij het plaatsen van een omslag als mening, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Op uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Voor meer bij het plaatsen van een omslag als mening, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 ## Routering naar een sjabloon {#routing-towards-a-template}
 
