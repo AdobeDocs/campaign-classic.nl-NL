@@ -25,7 +25,7 @@ Het kan bijvoorbeeld handig zijn om gegevens over het bijhouden van campagnes (g
 
 Met de exportassistent kunt u een exportbewerking configureren, opties definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type export (eenvoudig of meervoudig) en de rechten van de operator.
 
-De vertoningen van de uitvoermedewerker na het creëren van een nieuwe de uitvoerbaan (zie [ invoer en de uitvoerbanen ](../../platform/using/creating-import-export-jobs.md) creëren.
+De vertoningen van de uitvoermedewerker na het creëren van een nieuwe de uitvoerbaan (zie [&#x200B; invoer en de uitvoerbanen &#x200B;](../../platform/using/creating-import-export-jobs.md) creëren.
 
 ## Stap 1 - Kies de exportsjabloon {#step-1---choosing-the-export-template}
 
@@ -85,7 +85,7 @@ Selecteer de te exporteren velden. Dit doet u als volgt:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klik op de knop **[!UICONTROL Add]** om functies aan te roepen. Voor meer op dit, verwijs naar [ Lijst van functies ](../../platform/using/about-queries-in-campaign.md).
+1. Klik op de knop **[!UICONTROL Add]** om functies aan te roepen. Voor meer op dit, verwijs naar [&#x200B; Lijst van functies &#x200B;](../../platform/using/about-queries-in-campaign.md).
 
 ## Stap 5 - Kolommen sorteren {#step-5---sorting-columns}
 
@@ -113,7 +113,7 @@ U kunt de volgorde en het label van de velden voor het uitvoerbestand wijzigen e
 
   ![](assets/s_ncs_user_export_wizard06.png)
 
-* Klik op **[!UICONTROL Add a calculated field]** als u een nieuw berekend veld wilt maken (bijvoorbeeld een kolom met de achternaam en de voornaam). Voor meer op dit, verwijs naar [ Berekende gebieden ](../../platform/using/executing-import-jobs.md#calculated-fields).
+* Klik op **[!UICONTROL Add a calculated field]** als u een nieuw berekend veld wilt maken (bijvoorbeeld een kolom met de achternaam en de voornaam). Voor meer op dit, verwijs naar [&#x200B; Berekende gebieden &#x200B;](../../platform/using/executing-import-jobs.md#calculated-fields).
 
 Als u een verzameling elementen exporteert (bijvoorbeeld abonnementen van ontvangers, lijsten waartoe ze behoren, enz.), moet u het aantal elementen in de verzameling opgeven dat u wilt exporteren.
 
@@ -133,4 +133,4 @@ Klik op **[!UICONTROL Start]** om het exporteren van gegevens te starten.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-U kunt de uitvoering van de de invoerbaan dan controleren (zie [ de baanuitvoering van de Monitor ](../../platform/using/monitoring-jobs-execution.md).
+U kunt de uitvoering van de de invoerbaan dan controleren (zie [&#x200B; de baanuitvoering van de Monitor &#x200B;](../../platform/using/monitoring-jobs-execution.md).

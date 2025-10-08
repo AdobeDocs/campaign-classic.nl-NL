@@ -39,7 +39,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
 1. Selecteer in het **[!UICONTROL Data to extract]** -venster de velden **[!UICONTROL Email domain]** en **[!UICONTROL Primary key]** . Een telling uitvoeren op het veld **[!UICONTROL Primary key]** .
 
-   Voor meer op primaire zeer belangrijke tellingen, verwijs naar [ deze sectie ](../../platform/using/about-queries-in-campaign.md).
+   Voor meer op primaire zeer belangrijke tellingen, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/about-queries-in-campaign.md).
 
 1. Schakel het selectievakje **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** in.
 

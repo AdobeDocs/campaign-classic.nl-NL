@@ -23,7 +23,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) ontdekt de werkruimte van de Campagne in [ video ](#video)
+![](assets/do-not-localize/how-to-video.png) ontdekt de werkruimte van de Campagne in [&#x200B; video &#x200B;](#video)
 
 >[!NOTE]
 >
@@ -33,17 +33,17 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 
 ### Console en webtoegang {#console-and-web-access}
 
-Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser. Zie compatibele browsers in de [ verenigbaarheidsmatrijs ](../../rn/using/compatibility-matrix.md#Browsers).
+Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser. Zie compatibele browsers in de [&#x200B; verenigbaarheidsmatrijs &#x200B;](../../rn/using/compatibility-matrix.md#Browsers).
 
 De interface van de Webtoegang is gelijkaardig aan de consoleinterface. Vanuit een browser kunt u dezelfde navigatie- en weergavefuncties gebruiken als in de console, maar u kunt slechts een beperkte set acties op campagnes uitvoeren. U kunt bijvoorbeeld campagnes weergeven en annuleren, maar u kunt geen campagnes wijzigen. Voor een bepaalde exploitant, zal een campagne met de volgende opties in de console verschijnen:
 
-![ van het dashboard van een campagne, kan de exploitant een campagne bekijken en annuleren, maar ook het wijzigen, en leveringen, documenten, en taken aan het toevoegen.](assets/operation_from_console.png)
+![&#x200B; van het dashboard van een campagne, kan de exploitant een campagne bekijken en annuleren, maar ook het wijzigen, en leveringen, documenten, en taken aan het toevoegen.](assets/operation_from_console.png)
 
 Terwijl de opties bij toegang tot het web vooral het weergeven van:
 
-![ van browser, kan de zelfde exploitant de campagne slechts bekijken en annuleren.](assets/operation_from_web.png)
+![&#x200B; van browser, kan de zelfde exploitant de campagne slechts bekijken en annuleren.](assets/operation_from_web.png)
 
-Leer meer over [ gebruikend de Webinterface ](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Leer meer over [&#x200B; gebruikend de Webinterface &#x200B;](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Talen {#languages}
 
@@ -59,9 +59,9 @@ U kunt kiezen uit vijf verschillende talen:
 * Duits
 * Japans
 
-De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
-Voor meer informatie over hoe te om een instantie tot stand te brengen, verwijs naar deze [ pagina ](../../installation/using/creating-an-instance-and-logging-on.md).
+Voor meer informatie over hoe te om een instantie tot stand te brengen, verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -110,11 +110,11 @@ De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee h
 
 Raadpleeg de volgende pagina&#39;s in de documentatie bij Campagne v8 (console) voor meer informatie over Adobe Campaign Explorer:
 
-* [ overzicht van het gebruikersinterface van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [&#x200B; overzicht van het gebruikersinterface van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
-* [ montages UI van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
+* [&#x200B; montages UI van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [ beheert omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [&#x200B; beheert omslagen en meningen in de ontdekkingsreiziger &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 ## Gegevens filteren {#filters}
@@ -125,7 +125,7 @@ Tijdens het bladeren in Campagne worden gegevens weergegeven in lijsten. U kunt 
 
 >[!NOTE]
 >
->Leren om tot filters toegang te hebben, te ontwerpen en te delen, naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank} verwijzen.
+>Leren om tot filters toegang te hebben, te ontwerpen en te delen, naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank} verwijzen.
 
 
 ## Werken met lijsten {#manage-and-customize-lists}
@@ -134,7 +134,7 @@ In de de cliëntconsole van de Campagne, worden de gegevens getoond in lijsten. 
 
 >[!NOTE]
 >
->Leren om lijsten te beheren en aan te passen, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Leren om lijsten te beheren en aan te passen, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Opsommingen beheren{#managing-enumerations}
 
@@ -142,7 +142,7 @@ Een opsomming (ook wel een gedetailleerde lijst genoemd) is een vooraf gedefinie
 
 Wanneer deze zijn gedefinieerd, worden de waarden weergegeven in een vervolgkeuzelijst. Een waarde kan rechtstreeks worden geselecteerd of worden ingevoerd met behulp van voorspellende invoer, die overeenkomende items voorstelt en voltooit. Sommige velden bevatten vooraf gedefinieerde opsommingen en indien nodig kunnen aanvullende opsommingen worden gemaakt.
 
-Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 ## Video over zelfstudie {#video}
 
