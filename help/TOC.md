@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 97%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -87,10 +87,9 @@ ht-degree: 97%
       + [Filteropties](platform/using/filtering-options.md)
       + [Filters maken](platform/using/creating-filters.md)
       + [Gebruiksscenario](platform/using/use-case.md)
-   + Query&#39;s maken {#creating-queries}
-      + [Query’s in Campaign](platform/using/about-queries-in-campaign.md)
-      + [Stappen om een query te maken](platform/using/steps-to-create-a-query.md)
-      + [Filtervoorwaarden definiëren](platform/using/defining-filter-conditions.md)
+   + [Query&#39;s maken in campagne](platform/using/about-queries-in-campaign.md)
+   + [Stappen om een vraag tot stand te brengen - VERBORGEN](platform/using/steps-to-create-a-query.md)
+   + [Filtervoorwaarden definiëren - VERBORGEN](platform/using/defining-filter-conditions.md)
    + Machtigingen {#permissions}
       + [Aan de slag met machtigingen](platform/using/access-management.md)
       + [Operatoren maken en beheren](platform/using/access-management-operators.md)
@@ -102,7 +101,7 @@ ht-degree: 97%
       + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
       + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
-   + [Help- en ondersteuningsopties](support.md)
+   + [Help- en ondersteuningsopties - VERBORGEN](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
    + [Leveringsinstellingen](delivery/using/delivery-settings.md)
@@ -339,7 +338,7 @@ ht-degree: 97%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -574,7 +573,7 @@ ht-degree: 97%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
