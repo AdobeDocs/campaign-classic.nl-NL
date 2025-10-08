@@ -87,7 +87,7 @@ Vervolgens moet u ervoor zorgen dat u de persoonsgegevens van profielen die zich
 
    ![](assets/privacy-ccpa-6.png)
 
-1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

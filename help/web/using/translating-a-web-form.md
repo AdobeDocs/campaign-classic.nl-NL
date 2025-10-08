@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Het is mogelijk om een toepassing van het Web in verscheidene talen te lokaliseren.
 
-U kunt vertalingen direct in de console van Adobe Campaign uitvoeren (verwijs naar [ het Leiden vertalingen in de redacteur ](#managing-translations-in-the-editor)), of koorden uitvoeren en invoeren om vertaling (verwijs naar [ het Buiten*stellen vertaling ](#externalizing-translation)) te externaliseren.
+U kunt vertalingen direct in de console van Adobe Campaign uitvoeren (verwijs naar [&#x200B; het Leiden vertalingen in de redacteur &#x200B;](#managing-translations-in-the-editor)), of koorden uitvoeren en invoeren om vertaling (verwijs naar [&#x200B; het Buiten*stellen vertaling &#x200B;](#externalizing-translation)) te externaliseren.
 
-De lijst van vertaaltalen beschikbaar door gebrek is gedetailleerd in [ Veranderende de taal van de vormenvertoning ](#changing-forms-display-language).
+De lijst van vertaaltalen beschikbaar door gebrek is gedetailleerd in [&#x200B; Veranderende de taal van de vormenvertoning &#x200B;](#changing-forms-display-language).
 
 De toepassing van het Web wordt ontworpen in een het uitgeven taal: dit is de verwijzingstaal die wordt gebruikt om etiketten en andere te vertalen inhoud in te gaan.
 
@@ -52,7 +52,7 @@ Op het tabblad **[!UICONTROL Translations]** kunt u vertalingen invoeren voor de
 
 De eerste keer dat u dit tabblad opent, bevat dit tabblad geen gegevens. Klik op de koppeling **[!UICONTROL Collect the strings to translate]** om de tekenreeksen in de webtoepassing bij te werken.
 
-Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd op de tabbladen **[!UICONTROL Texts]** van alle statische elementen: HTML-blokken, JavaScript, enzovoort. De statische elementen worden gedetailleerd in [ Statische elementen in een Webvorm ](static-elements-in-a-web-form.md).
+Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd op de tabbladen **[!UICONTROL Texts]** van alle statische elementen: HTML-blokken, JavaScript, enzovoort. De statische elementen worden gedetailleerd in [&#x200B; Statische elementen in een Webvorm &#x200B;](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -60,7 +60,7 @@ Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd
 >
 >Dit proces kan enkele minuten duren, afhankelijk van het volume gegevens dat moet worden verwerkt.
 > 
->Als een waarschuwing lijkt te zeggen dat sommige vertalingen in het systeemwoordenboek ontbreken, verwijs naar [ Vertaal de systeemkoorden ](#translating-the-system-strings).
+>Als een waarschuwing lijkt te zeggen dat sommige vertalingen in het systeemwoordenboek ontbreken, verwijs naar [&#x200B; Vertaal de systeemkoorden &#x200B;](#translating-the-system-strings).
 
 Elke keer dat een tekenreeks wordt vertaald, wordt de vertaling ervan toegevoegd aan het vertaalwoordenboek.
 
@@ -70,7 +70,7 @@ Voor tekenreeksen die nog niet zijn omgezet, is het veld **[!UICONTROL Text]** l
 
 ### Tekenreeksen filteren {#filtering-strings}
 
-Door gebrek, wordt elke vertaaltaal van de toepassing van het Web getoond. Er zijn twee standaardfilters: taal en status. Klik op de knop **[!UICONTROL Filters]** en klik vervolgens op **[!UICONTROL By language or status]** om de overeenkomende vervolgkeuzelijsten weer te geven. U kunt ook een geavanceerd filter maken. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Door gebrek, wordt elke vertaaltaal van de toepassing van het Web getoond. Er zijn twee standaardfilters: taal en status. Klik op de knop **[!UICONTROL Filters]** en klik vervolgens op **[!UICONTROL By language or status]** om de overeenkomende vervolgkeuzelijsten weer te geven. U kunt ook een geavanceerd filter maken. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -133,7 +133,7 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 >
 >De namen van exportbestanden worden automatisch gegenereerd. Als u dezelfde exportbewerking meerdere malen uitvoert, vervangt u bestaande bestanden door de nieuwe bestanden. Als u de vorige bestanden wilt behouden, wijzigt u **[!UICONTROL Target folder]** en klikt u nogmaals op **[!UICONTROL Start]** om het exporteren uit te voeren.
 
-Wanneer u dossiers in **formaat CSV** uitvoert, is elke taal verbonden met een status en goedkeuringsstatus. **goedkeuren?Met de kolom** kunt u een vertaling goedkeuren. Deze kolom kan de waarden **ja** of **Nr** bevatten. Zoals voor de geïntegreerde redacteur (verwijs naar [ het Leiden vertalingen in de redacteur ](#managing-translations-in-the-editor)), is het goedkeuren van vertalingen facultatief en blokkeert niet het proces.
+Wanneer u dossiers in **formaat CSV** uitvoert, is elke taal verbonden met een status en goedkeuringsstatus. **goedkeuren?Met de kolom** kunt u een vertaling goedkeuren. Deze kolom kan de waarden **ja** of **Nr** bevatten. Zoals voor de geïntegreerde redacteur (verwijs naar [&#x200B; het Leiden vertalingen in de redacteur &#x200B;](#managing-translations-in-the-editor)), is het goedkeuren van vertalingen facultatief en blokkeert niet het proces.
 
 ### Bestanden importeren {#importing-files}
 
@@ -169,11 +169,11 @@ als de taal de eerste of enige parameter van de URL is. Bijvoorbeeld: **https://
 &lang=xx
 ```
 
-als er andere parameters zijn vóór de taal in de URL. Bijvoorbeeld: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+als er andere parameters zijn vóór de taal in de URL. Bijvoorbeeld: **https://myserver/webApp/APP34?status=1&lang=en**
 
 De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hieronder weergegeven.
 
-**Standaard systeemwoordenboek**: sommige talen omvatten een standaardwoordenboek dat de vertaling van de systeemkoorden bevat. Voor meer op dit, verwijs naar [ Vertaal de systeemkoorden ](#translating-the-system-strings).
+**Standaard systeemwoordenboek**: sommige talen omvatten een standaardwoordenboek dat de vertaling van de systeemkoorden bevat. Voor meer op dit, verwijs naar [&#x200B; Vertaal de systeemkoorden &#x200B;](#translating-the-system-strings).
 
 **het beheer van de Kalender**: de pagina&#39;s van een toepassing van het Web kunnen een kalender omvatten om data in te gaan. Deze kalender is standaard beschikbaar in verschillende talen (vertaling van dagen, datumnotatie).
 
@@ -409,7 +409,7 @@ De vertalingstalen en woordenboeken die standaard beschikbaar zijn, worden hiero
 
 >[!NOTE]
 >
->Om andere talen toe te voegen dan die door gebrek worden aangeboden, verwijs naar [ Toevoegend een vertaaltaal ](#adding-a-translation-language)
+>Om andere talen toe te voegen dan die door gebrek worden aangeboden, verwijs naar [&#x200B; Toevoegend een vertaaltaal &#x200B;](#adding-a-translation-language)
 
 ## Voorbeeld: een webtoepassing weergeven in verschillende talen {#example--displaying-a-web-application-in-several-languages}
 
@@ -421,7 +421,7 @@ Voeg **toe?lang=fr** aan het eind van URL om het in het Frans te tonen:
 
 >[!NOTE]
 >
->De lijst van symbolen voor elke taal wordt gedetailleerd in [ Veranderende de taal van de vormenvertoning ](#changing-forms-display-language).
+>De lijst van symbolen voor elke taal wordt gedetailleerd in [&#x200B; Veranderende de taal van de vormenvertoning &#x200B;](#changing-forms-display-language).
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
@@ -430,7 +430,7 @@ U kunt **toevoegen?lang=es** of **?lang=de** om het in Spaans of Duits te tonen.
 >[!NOTE]
 >
 >Als andere parameters al voor deze toepassing van Web worden gebruikt, voeg **&amp;lang=** toe.\
->Bijvoorbeeld: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Bijvoorbeeld: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Geavanceerde vertaalconfiguratie {#advanced-translation-configuration}
 
@@ -440,7 +440,7 @@ U kunt **toevoegen?lang=es** of **?lang=de** om het in Spaans of Duits te tonen.
 
 ### De systeemtekenreeksen omzetten {#translating-the-system-strings}
 
-De koorden van het systeem zijn uit-van-de-doos karakterkoorden die door alle toepassingen van het Web worden gebruikt. Bijvoorbeeld: **[!UICONTROL Next]** , **[!UICONTROL Previous]** , **[!UICONTROL Approve]** knoppen, **[!UICONTROL Loading]** berichten, enzovoort. Standaard bevatten sommige talen een woordenboek met vertalingen voor deze tekenreeksen. De lijst van talen wordt gedetailleerd in [ Veranderende de taal van de vormenvertoning ](#changing-forms-display-language).
+De koorden van het systeem zijn uit-van-de-doos karakterkoorden die door alle toepassingen van het Web worden gebruikt. Bijvoorbeeld: **[!UICONTROL Next]** , **[!UICONTROL Previous]** , **[!UICONTROL Approve]** knoppen, **[!UICONTROL Loading]** berichten, enzovoort. Standaard bevatten sommige talen een woordenboek met vertalingen voor deze tekenreeksen. De lijst van talen wordt gedetailleerd in [&#x200B; Veranderende de taal van de vormenvertoning &#x200B;](#changing-forms-display-language).
 
 Als u uw toepassing van het Web in een taal vertaalt waarvoor het systeemwoordenboek niet wordt vertaald, zal een waarschuwingsbericht schijnen om u te laten weten dat sommige vertalingen ontbreken.
 
@@ -467,7 +467,7 @@ Voer de volgende stappen uit om een taal toe te voegen:
 
 ### Een vertaaltaal toevoegen {#adding-a-translation-language}
 
-Om de toepassingen van het Web in talen buiten standaarddegenen (verwijs naar [ Veranderende de taal van de vormenvertoning ](#changing-forms-display-language)) te vertalen, zult u een nieuwe vertaaltaal moeten toevoegen.
+Om de toepassingen van het Web in talen buiten standaarddegenen (verwijs naar [&#x200B; Veranderende de taal van de vormenvertoning &#x200B;](#changing-forms-display-language)) te vertalen, zult u een nieuwe vertaaltaal moeten toevoegen.
 
 1. Klik op het knooppunt **[!UICONTROL Administration > Platform > Enumerations]** van de Adobe Campaign-structuur en selecteer **[!UICONTROL Languages available for translation]** in de lijst. De lijst met beschikbare vertalingen wordt weergegeven in de onderste sectie van het venster.
 

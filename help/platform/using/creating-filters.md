@@ -18,7 +18,7 @@ Het filtreren van gegevens is het proces om een kleiner deel van uw gegevensreek
 
 Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met filterconfiguratie kunt u gegevens in een lijst selecteren **[!UICONTROL dynamically]** . Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
-Leer meer over **Filters en hoe te om hen** in de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank} te gebruiken.
+Leer meer over **Filters en hoe te om hen** in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank} te gebruiken.
 
 
 <!--
