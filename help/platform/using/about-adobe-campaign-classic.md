@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: a1f655716d24ca199a68fd5df2381c9941db2c84
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '181'
 ht-degree: 48%
 
 ---
@@ -24,23 +24,21 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!TAB Aan de slag met Campaign]
 
-Meer over Adobe Campaign leren en hoe te om het begonnen te krijgen, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/get-started){target=_blank}.
+Meer over de mogelijkheden van Adobe Campaign leren, en hoe te beginnen te worden, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/get-started){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
 >[!TAB  Campagne van de Lancering ]
 
-* Controleer uw systeem en hulpmiddelverenigbaarheid met de Console van de Cliënt van Adobe Campaign in de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Controleer uw systeem en hulpmiddelverenigbaarheid met de Console van de Cliënt van Adobe Campaign in de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-* Leren om te installeren en aan te melden aan Adobe Campaign [&#x200B; op deze pagina &#x200B;](launching-adobe-campaign.md).
-
+* Leren om te installeren en aan te melden aan Adobe Campaign [ op deze pagina ](launching-adobe-campaign.md).
 
 >[!TAB  doorbladert Campagne UI ]
 
-* Ontdek Adobe Campaign gebruikersinterface [&#x200B; op deze pagina &#x200B;](adobe-campaign-workspace.md).
+* Ontdek Adobe Campaign gebruikersinterface [ op deze pagina ](adobe-campaign-workspace.md).
 
-* Leer hoe te met [&#x200B; Ontdekkingsreiziger van de Campagne &#x200B;](adobe-campaign-workspace.md#use-adobe-campaign-explorer) te werken.
-
+* Leer hoe te met [ Ontdekkingsreiziger van de Campagne ](adobe-campaign-workspace.md#use-adobe-campaign-explorer) te werken.
 
 >[!ENDTABS]
 
@@ -86,7 +84,7 @@ You can combine the delivery functionalities and advanced campaign management fu
 
 ## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
@@ -114,4 +112,4 @@ In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Cla
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
