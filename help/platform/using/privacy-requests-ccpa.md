@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 98%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +73,7 @@ Het is de verantwoordelijkheid van de gegevenscontroller om de waarde in het vel
 
 U kunt verschillende methoden gebruiken om de waarden in te vullen:
 
-* De interface van Campaign gebruiken door de gegevens van de ontvanger te bewerken
+* De interface van de Campagne gebruiken door de details van de ontvanger uit te geven
 * De API gebruiken
 * Via een workflow voor het importeren van gegevens
 
@@ -87,6 +87,7 @@ Vervolgens moet u ervoor zorgen dat u de persoonsgegevens van profielen die zich
 
    ![](assets/privacy-ccpa-6.png)
 
-1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Zie [deze sectie](../../platform/using/creating-filters.md) voor meer informatie over het maken van filters.
+1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
    ![](assets/privacy-ccpa-7.png)

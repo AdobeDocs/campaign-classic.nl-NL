@@ -3,16 +3,15 @@ product: campaign
 title: Gebruiksscenario
 description: Gebruiksscenario
 feature: Subscriptions, Email, Data Management
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 2%
 
 ---
@@ -36,7 +35,7 @@ Voer de volgende stappen uit:
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. Selecteer het abonnementsschema (nms:abonnement) en klik op **[!UICONTROL OK]** .
+1. Selecteer het abonnementsschema (nms :subscription) en klik op **[!UICONTROL OK]** .
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
@@ -48,7 +47,8 @@ Voer de volgende stappen uit:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   U hebt toegang tot deze velden om filtervoorwaarden in de hoofdtekst van de filtereditor te definiëren. Een toepassingsfilter wordt op precies dezelfde manier gedefinieerd als een geavanceerd filter. Zie [ een geavanceerd filter ](../../platform/using/creating-filters.md#creating-an-advanced-filter) creëren.
+   U hebt toegang tot deze velden om filtervoorwaarden in de hoofdtekst van de filtereditor te definiëren. Een toepassingsfilter wordt op precies dezelfde manier gedefinieerd als een geavanceerd filter. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
 1. Maak een nieuw filter op abonnementen om alleen abonnementen met een niet-gedefinieerde e-mailindeling weer te geven:
 

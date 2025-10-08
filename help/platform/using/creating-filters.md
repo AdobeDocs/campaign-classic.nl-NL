@@ -2,11 +2,13 @@
 product: campaign
 title: Filters maken
 description: Filters maken
+hide: true
+hidefromtoc: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 3%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +18,7 @@ Het filtreren van gegevens is het proces om een kleiner deel van uw gegevensreek
 
 Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met filterconfiguratie kunt u gegevens in een lijst selecteren **[!UICONTROL dynamically]** . Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
->[!NOTE]
->
->De de configuratiemontages van de gebruikersinterface worden plaatselijk bepaald op het apparatenniveau. Soms kan het nodig zijn deze gegevens op te schonen, vooral als zich problemen voordoen bij het vernieuwen van gegevens. Gebruik hiervoor het menu **[!UICONTROL File > Clear the local cache]** .
-
->[!NOTE]
->
->Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+Leer meer over **Filters en hoe te om hen** in de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank} te gebruiken.
 
 
 <!--

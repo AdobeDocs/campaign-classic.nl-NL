@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -37,6 +37,7 @@ ht-degree: 97%
    + [Bladeren en lijsten aanpassen - Verborgen](platform/using/adobe-campaign-ui-lists.md)
    + [Opsommingen - VERBORGEN](platform/using/managing-enumerations.md)
    + [Campaign-connectoren](platform/using/about-connectors.md)
+   + [Query&#39;s maken in campagne](platform/using/about-queries-in-campaign.md)
    + Veelgestelde vragen {#faq}
       + [Populaire vragen](platform/using/common-questions.md)
       + [Algemene concepten](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [Best practices voor importeren en exporteren](platform/using/import-export-best-practices.md)
          + [Best practices en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Gegevens filteren {#filtering-data}
-      + [Filteropties](platform/using/filtering-options.md)
-      + [Filters maken](platform/using/creating-filters.md)
-      + [Gebruiksscenario](platform/using/use-case.md)
-   + [Query&#39;s maken in campagne](platform/using/about-queries-in-campaign.md)
+      + [Filteropties - VERBORGEN](platform/using/filtering-options.md)
+      + [Filters maken - VERBORGEN](platform/using/creating-filters.md)
+      + [Hoofdlettergebruik - Verborgen](platform/using/use-case.md)
    + [Stappen om een vraag tot stand te brengen - VERBORGEN](platform/using/steps-to-create-a-query.md)
    + [Filtervoorwaarden definiëren - VERBORGEN](platform/using/defining-filter-conditions.md)
    + Machtigingen {#permissions}
@@ -338,7 +338,7 @@ ht-degree: 97%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -573,7 +573,7 @@ ht-degree: 97%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)

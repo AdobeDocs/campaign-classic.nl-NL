@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1730'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecteer de doeltoewijzing in de vervolgkeuzelijst **[!UICONTROL Target mapping]** . Adobe Campaign standaarddoelafbeelding is **[!UICONTROL Recipients]**, gebaseerd op **nms:ontvangend** schema.
+1. Selecteer de doeltoewijzing in de vervolgkeuzelijst **[!UICONTROL Target mapping]** . Adobe Campaign standaarddoelafbeelding is **[!UICONTROL Recipients]**, gebaseerd op **nms:recipient** schema.
 
    Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn.[Meer informatie](#select-a-target-mapping).
 
@@ -48,7 +48,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
    De volgende doeltypen worden standaard aangeboden:
 
-   * **[!UICONTROL Filtering conditions]** : met deze optie kunt u een query definiëren en het resultaat weergeven. De methode om vragen te bepalen wordt voorgesteld in [ deze sectie ](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   * **[!UICONTROL Filtering conditions]** : met deze optie kunt u een query definiëren en het resultaat weergeven. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]** : met deze optie kunt u een nieuwsbrief selecteren waarop de ontvangers moeten worden geabonneerd om de levering die wordt gemaakt als doel te hebben.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
    * **[!UICONTROL Recipients included in a folder]** : met deze optie kunt u de profielen in een specifieke map van de boomstructuur als doel instellen.
    * **[!UICONTROL A recipient]** : met deze optie kunt u een specifieke ontvanger selecteren uit de profielen in de database.
    * **[!UICONTROL A list of recipients]** : met deze optie kunt u een lijst met ontvangers als doel instellen. De lijsten worden voorgesteld in [ deze sectie ](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Vooraf gevormde filters worden voorgesteld in [ deze sectie ](../../platform/using/creating-filters.md#saving-a-filter).
+   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Met de optie **[!UICONTROL Exclude recipients corresponding to this segment]** kunt u zich richten op ontvangers die niet aan de gedefinieerde doelcriteria voldoen. Als u deze optie wilt gebruiken, selecteert u het desbetreffende vak en past u vervolgens de focus toe, zoals eerder is gedefinieerd, om de resulterende profielen uit te sluiten.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -230,7 +230,7 @@ Zie ook:
 
 ## Een targettoewijzing selecteren {#select-a-target-mapping}
 
-Aanleveringssjablonen zijn standaard gericht op **[!UICONTROL Recipients]** . Hun doelafbeelding gebruikt daarom de gebieden van **nms:ontvankelijke** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
+Aanleveringssjablonen zijn standaard gericht op **[!UICONTROL Recipients]** . Hun doelafbeelding gebruikt daarom de gebieden van de **nms:recipient** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -238,10 +238,10 @@ Deze toewijzingen zijn als volgt:
 
 | Naam | Gebruiken | Standaardschema |
 |---|---|---|
-| Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:ontvanger |
-| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, X - voorheen bekend als Twitter) zijn verzameld. | mns:bezoeker |
-| Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
-| Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
+| Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:recipient |
+| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, X - voorheen bekend als Twitter) zijn verzameld. | mns:visitor |
+| Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:subscription |
+| Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:visitorSub |
 | Service | Publiceren naar een X-account of een Facebook-pagina | nms:service |
 | Operatoren | Leveren aan Adobe Campaign-operatoren | nms:operator |
 | Extern bestand | Afleveren via een bestand dat alle benodigde informatie voor levering bevat | Geen gekoppeld schema, geen doel ingevoerd |
