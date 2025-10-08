@@ -5,9 +5,9 @@ description: Leveringsrapporten
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1467'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Voor meer op dit, verwijs naar [ deze sectie ](../../platform/using/managing-enumerations.md). De categorie **[!UICONTROL Others]** bevat domeinnamen die niet tot een waarde in de opgegeven lijst behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken. De categorie **[!UICONTROL Others]** bevat domeinnamen die niet tot een waarde in de opgegeven lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -123,7 +123,7 @@ Dit rapport bevat de lijst met bezochte pagina&#39;s na een levering.
 
 ![](assets/s_ncs_user_url_report.png)
 
-U kunt de inhoud van dit rapport configureren door het volgende te selecteren: het scorediagram dat moet worden weergegeven, het tijdfilter (sinds het starten van de actie, gedurende de eerste 6 uur na het starten, enz.) en de weergavemodus voor gegevens (op label, op URL, op categorie). Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de inhoud van dit rapport configureren door de volgende opties te selecteren: het scorediagram dat moet worden weergegeven, het tijdfilter (sinds de actielocatie, gedurende de eerste 6 uur na de opstart, enz.) en de weergavemodus voor gegevens (op label, op URL, op categorie. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 De volgende tarieven worden getoond in de hogere sectie van het rapport:
 
@@ -175,7 +175,7 @@ Dit deel omvat de volgende indicatoren:
 
 ## Hot clicks {#hot-clicks}
 
-Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage klikt op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen, spiegelpaginakoppelingen en aanbiedingsverbindingen worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
+Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage kliks op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen, spiegelpaginakoppelingen en aanbiedingsverbindingen worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
 
 >[!NOTE]
 >

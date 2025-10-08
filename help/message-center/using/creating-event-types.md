@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '175'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 
 
-Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u eerst creëren **gebeurtenistypen**.
+Om ervoor te zorgen elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u eerst **gebeurtenistypen** creëren.
 
-Wanneer [een berichtsjabloon maken](../../message-center/using/creating-the-message-template.md), selecteert u het type gebeurtenis dat overeenkomt met het bericht dat u wilt verzenden.
+Wanneer [ creërend een berichtmalplaatje ](../../message-center/using/creating-the-message-template.md), zult u het type van gebeurtenis selecteren die het bericht aanpast u wilt verzenden.
 
 >[!IMPORTANT]
 >
@@ -28,24 +28,25 @@ Wanneer [een berichtsjabloon maken](../../message-center/using/creating-the-mess
 
 Voer de volgende stappen uit om gebeurtenistypen te maken die door Adobe Campaign worden verwerkt:
 
-1. Aanmelden bij de **besturingsinstantie**.
+1. Logon aan de **controleinstantie**.
 
-1. Ga naar de **[!UICONTROL Administration > Platform > Enumerations]** map van de structuur.
+1. Ga naar de map **[!UICONTROL Administration > Platform > Enumerations]** van de boomstructuur.
 
-1. Selecteren **[!UICONTROL Event type]** in de lijst.
+1. Selecteer **[!UICONTROL Event type]** in de lijst.
 
-1. Klikken **[!UICONTROL Add]** om een opsommingswaarde te maken. Dit kan een bevestiging zijn van de bestelling, een wijziging van het wachtwoord, een wijziging in de levering van de bestelling, enzovoort.
+1. Klik op **[!UICONTROL Add]** om een opsommingswaarde te maken. Dit kan een bevestiging zijn van de bestelling, een wijziging van het wachtwoord, een wijziging in de levering van de bestelling, enzovoort.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Elk gebeurtenistype moet overeenkomen met een waarde in het dialoogvenster **[!UICONTROL Event type]** opsomming.
+   >Elk gebeurtenistype moet overeenkomen met een waarde in de opsomming **[!UICONTROL Event type]** .
 
 1. Nadat de gespecificeerde lijstwaarden zijn gecreeerd, logoff en terug op uw geval voor de verwezenlijking om efficiënt te zijn.
 
 >[!NOTE]
 >
->Meer informatie over gespecificeerde lijsten in [Opsommingsbeheer](../../platform/using/managing-enumerations.md).
+>Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+
 
 

@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2983'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,8 @@ Met de koppeling **[!UICONTROL Advanced parameters]** hebt u toegang tot de volg
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Zie [ opsommingen beheren ](../../platform/using/managing-enumerations.md).
+     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+
 
 * **[!UICONTROL Variables]** tab
 
@@ -283,7 +284,7 @@ In de volgende stap van de importassistent kunt u de map selecteren of maken waa
 
 >[!NOTE]
 >
->Deze stap verschijnt wanneer het invoeren slechts ontvangers en wanneer het gebruiken van de standaardAdobe Campaign ontvangerslijst (**nms:ontvanger**).
+>Deze stap verschijnt wanneer het invoeren slechts ontvangers en wanneer het gebruiken van de standaardAdobe Campaign ontvangerslijst (**nms:recipient**).
 
 * Klik op de koppelingen in **[!UICONTROL Edit]** om de map, de lijst of de service te selecteren waaraan u de ontvangers wilt koppelen of zich erop wilt abonneren.
 

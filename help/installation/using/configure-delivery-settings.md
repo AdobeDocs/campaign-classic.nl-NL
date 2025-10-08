@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 5%
 
 
 
-De leveringsparameters moeten in worden gevormd **serverConf.xml** map.
+De leveringsparameters moeten in de {**omslag worden gevormd 0} serverConf.xml.**
 
-* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van worden gemaakt **`<dnsconfig>`** en.
+* **DNS configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de module MTA van **`<dnsconfig>`** worden gemaakt.
 
   >[!NOTE]
   >
-  >De **nameServers** parameter is essentieel voor een installatie in Windows. Voor een installatie in Linux, moet het leeg worden verlaten.
+  >De **nameServers** parameter is essentieel voor een installatie in Vensters. Voor een installatie in Linux, moet het leeg worden verlaten.
 
   ```
   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
   ```
 
-U kunt de volgende configuraties afhankelijk van uw behoeften en montages ook uitvoeren: vorm een [SMTP-relay](#smtp-relay)wijzigt u het aantal [MTA onderliggende processen](#mta-child-processes), [Uitgaande SMTP-verkeer beheren](#managing-outbound-smtp-traffic-with-affinities).
+U kunt de volgende configuraties afhankelijk van uw behoeften en montages ook uitvoeren: vorm het relais van a [ SMTP ](#smtp-relay), pas het aantal [ MTA kindprocessen ](#mta-child-processes) aan, [ beheer uitgaand verkeer SMTP ](#managing-outbound-smtp-traffic-with-affinities).
 
 ## SMTP-relay {#smtp-relay}
 
@@ -39,7 +39,7 @@ De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzendi
 
 Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval, zal de globale productie relais zijn één (op voorwaarde dat de productie van de relaisserver aan Adobe Campaign minder is).
 
-In dit geval worden deze parameters geplaatst door de server SMTP in te vormen **`<relay>`** sectie. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
+In dit geval worden deze parameters ingesteld door de SMTP-server in de sectie **`<relay>`** te configureren. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -51,13 +51,13 @@ In dit geval worden deze parameters geplaatst door de server SMTP in te vormen *
 
 ## MTA onderliggende processen {#mta-child-processes}
 
-Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in **`<master>`** sectie van MTA configuratie op elke individuele computer.
+Het is mogelijk om het aantal onderliggende processen (maxSpareServers door gebrek 2) te controleren om uitzendprestaties volgens de macht van CPU van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in de **`<master>`** sectie van configuratie MTA op elke individuele computer worden gemaakt.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Zie ook [Optimalisatie van e-mailverzending](../../installation/using/email-deliverability.md#email-sending-optimization).
+Verwijs ook naar [ E-mail die optimalisering verzenden ](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Beheer uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -69,9 +69,9 @@ U kunt uitgaand verkeer SMTP door affiniteiten met IP adressen verbeteren.
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Voer de affiniteiten in het dialoogvenster **`<ipaffinity>`** van de **serverConf.xml** bestand.
+1. Ga de affiniteiten in de **`<ipaffinity>`** sectie van het **serverConf.xml** dossier in.
 
-   Een affiniteit kan verschillende namen hebben: gebruik de **;** teken.
+   Een affiniteit kan verschillende namen hebben: als u ze wilt scheiden, gebruikt u het teken **;** .
 
    Voorbeeld:
 
@@ -80,15 +80,16 @@ Hiervoor voert u de volgende stappen uit:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Raadpleeg de **serverConf.xml** bestand.
+   Om de relevante parameters te bekijken, verwijs naar het {**dossier 0} serverConf.xml.**
 
-1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in het dialoogvenster **IPAffinity** opsomming.
+1. Om affiniteitselectie in de drop-down lijsten toe te laten, moet u de affiniteitsnaam (s) in de **IPAffinity** opsomming toevoegen.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Opsommingen worden gedetailleerd weergegeven in [dit document](../../platform/using/managing-enumerations.md).
+   >Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+
 
    Vervolgens kunt u de affiniteit selecteren die u wilt gebruiken, zoals hieronder voor typologieën wordt getoond:
 
@@ -96,7 +97,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt ook verwijzen naar [Configuratie van de leveringsserver](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >U kunt ook naar [ de serverconfiguratie van de Levering ](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
 
 **Verwante onderwerpen**
 * [Technische e-mailconfiguraties](email-deliverability.md)

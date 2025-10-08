@@ -6,7 +6,7 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -23,7 +23,7 @@ ht-degree: 99%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Campaign-connectoren](platform/using/about-connectors.md)
    + Veelgestelde vragen {#faq}
       + [Populaire vragen](platform/using/common-questions.md)
-         + [Algemene concepten](platform/using/faq-key-concepts.md)
-         + [Buildupgrade](platform/using/faq-build-upgrade.md)
-         + [Privacy](platform/using/privacy-faq.md)
-         + [Doelgroepen](platform/using/faq-audiences.md)
-         + [Berichten ontwerpen](platform/using/faq-designing.md)
-         + [Berichten verzenden](platform/using/faq-messages.md)
-         + [Workflows](platform/using/faq-workflows.md)
-         + [Configuratie](platform/using/faq-campaign-config.md)
-         + [Rapporten](platform/using/faq-reporting.md)
-         + [Ontwikkeling](platform/using/faq-developers.md)
+      + [Algemene concepten](platform/using/faq-key-concepts.md)
+      + [Buildupgrade](platform/using/faq-build-upgrade.md)
+      + [Privacy](platform/using/privacy-faq.md)
+      + [Doelgroepen](platform/using/faq-audiences.md)
+      + [Berichten ontwerpen](platform/using/faq-designing.md)
+      + [Berichten verzenden](platform/using/faq-messages.md)
+      + [Workflows](platform/using/faq-workflows.md)
+      + [Configuratie](platform/using/faq-campaign-config.md)
+      + [Rapporten](platform/using/faq-reporting.md)
+      + [Ontwikkeling](platform/using/faq-developers.md)
    + [Verklarende woordenlijst](platform/using/ac-glossary.md)
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
@@ -339,7 +339,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -574,7 +574,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)

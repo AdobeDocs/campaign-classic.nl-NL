@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '5969'
 ht-degree: 1%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Kanaal**
 
-Een kanaal is een middel waardoor een mededeling wordt verzonden. Ingebouwde kanalen in Adobe Campaign zijn e-mail, SMS, direct mail, Push berichten, LINE, en X (vroeger genoemd geworden Twitter). Aangepaste kanalen kunnen worden geïmplementeerd voor niet-standaard kanaalvereisten.
+Een kanaal is een middel waardoor een mededeling wordt verzonden. De ingebouwde kanalen in Adobe Campaign zijn e-mail, SMS, direct mail, Push berichten, LINE, en X (vroeger genoemd geworden Twitter). Aangepaste kanalen kunnen worden geïmplementeerd voor niet-standaard kanaalvereisten.
 
 Leer meer over [ Kanalen ](../../delivery/using/communication-channels.md).
 +++
@@ -278,7 +278,7 @@ Leer meer over [ Distributie van waarden ](../../platform/using/defining-filter-
 +++**delegatie van het Domein**
 
 De configuratie van subdomain staat u toe om een onderafdeling van uw domein (technisch een &quot;DNS streek&quot;) voor gebruik met Adobe Campaign te vormen.
-De delegatie van het domein laat Adobe alle aspecten van DNS controleren en handhaven die voor het leveren, het teruggeven en het volgen van e-mailcampagnes worden vereist.
+Met domeindelegatie kan Adobe alle aspecten van DNS beheren en onderhouden die vereist zijn voor het leveren, renderen en bijhouden van e-mailcampagnes.
 
 Leer meer over [ delegatie van het Domein ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=nl)
 +++
@@ -345,7 +345,7 @@ Leer meer over [ de activiteit van de Verrijking ](../../workflow/using/enrichme
 
 Een opsomming is een gegevenstype dat in schema&#39;s of op het niveau van het Platform wordt bepaald dat de geldige inputwaarden voor een gebied bepaalt. Opsommingen worden in de gebruikersinterface en in querybuilders weergegeven als een keuzelijst.
 
-Leer meer over [ Opsommingen ](../../platform/using/managing-enumerations.md).
+Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 +++
 
 +++**mening van de Ontdekkingsreiziger**
@@ -499,7 +499,7 @@ Leer meer over [ invoer en de uitvoerbanen ](../../platform/using/get-started-da
 
 +++**Lijsten**
 
-Een lijst is een statische dataset. Lijsten zijn publiek of segmenten die in Campagne van andere bronnen (Audience Manager, Experience Platform, gegevensbestand, enz.) worden ingevoerd, en in de interface gezien zoals Geïmporteerde Lijsten.
+Een lijst is een statische dataset. Lijsten zijn publiek of segmenten die in Campagne van andere bronnen (Audience Manager, Experience Platform, gegevensbestand, enz.) worden ingevoerd, en in de interface gezien als Geïmporteerde Lijsten.
 
 Leer meer over [ Lijsten ](../../platform/using/creating-and-managing-lists.md).
 +++
@@ -631,7 +631,7 @@ Leer meer over [ milieu&#39;s van de Aanbieding ](../../interaction/using/fundam
 
 *context: De Interactie van de Campagne*
 
-Het Levende milieu van de Aanbieding is verbonden met een milieu van het Ontwerp van de Campagne **&#x200B;**. Het bevat read-only aanbiedingen de waarvan inhoud en geschiktheid via het **milieu van het Ontwerp** zijn goedgekeurd. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
+Het Levende milieu van de Aanbieding is verbonden met een milieu van het Ontwerp van de Campagne ****. Het bevat read-only aanbiedingen de waarvan inhoud en geschiktheid via het **milieu van het Ontwerp** zijn goedgekeurd. Ze kunnen worden geselecteerd voor presentatie op een website of worden ingevoegd in een uitgaand bericht.
 
 Leer meer over [ Levende milieu&#39;s van de Aanbieding ](../../interaction/using/fundamental-principles.md).
 +++
@@ -754,7 +754,7 @@ Leer meer over [ Palet ](../../workflow/using/building-a-workflow.md#adding-and-
 
 +++**Controle van Prestaties**
 
-De het controleinformatie van prestaties wordt getoond op het Lusje van de Controle. Het toont metriek voor het onderliggende systeem, zoals geheugen en CPU gebruik, SMTP serverstatistieken, serverprocessen en andere relevante informatie.
+De het controleinformatie van prestaties wordt getoond op het Lusje van de Controle. Het toont metriek voor het onderliggende systeem, zoals geheugen en gebruik van CPU, SMTP serverstatistieken, serverprocessen en andere relevante informatie.
 
 Leer meer over [ het controleren van Prestaties ](../../production/using/monitoring-processes.md).
 +++
@@ -836,7 +836,7 @@ Leer meer over [ Openbare middelen ](../../installation/using/deploying-an-insta
 
 *Context: Mobiel Kanaal van de Toepassing*
 
-Pushberichten zijn berichten die door mobiele toepassingen worden ontvangen. Push-berichten zijn geconfigureerd om met Adobe Campaign te werken door de SDK-code van het Experience Platform in de mobiele toepassing op te nemen. Voor Push zijn twee leveringskanalen beschikbaar: iOS en Android.
+Pushberichten zijn berichten die door mobiele toepassingen worden ontvangen. Pushmeldingen zijn geconfigureerd om met Adobe Campaign te werken door de Experience Platform SDK-code in de mobiele toepassing op te nemen. Voor Push zijn twee leveringskanalen beschikbaar: iOS en Android.
 
 Leer meer over [ Duw ](../../delivery/using/about-mobile-app-channel.md).
 +++
@@ -909,10 +909,10 @@ Leer meer over [ Diensten ](../../delivery/using/about-services-and-subscription
 
 In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. Met het regelpaneel kunt u handelingen uitvoeren op uw SFTP-servers, zoals de opslagcapaciteit controleren, IP-adressen beheren voor aanbiedingen en het beheren van openbare SSH-sleutels.
 
-Leer meer over [ Beheer SFTP ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL).
+Leer meer over [ Beheer SFTP ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
-+++**de dienstenactiviteit van het Abonnement van 0&rbrace;**
++++**de dienstenactiviteit van het Abonnement van 0}**
 
 Met de workflowactiviteit Subscription Services kunt u een abonnement op een informatieservice maken of verwijderen voor de bevolking die in de overgang is opgegeven.
 
