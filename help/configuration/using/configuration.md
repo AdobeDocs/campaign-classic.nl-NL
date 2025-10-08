@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Als deskundige gebruiker, kunt u omslagen in de ontdekkingsboomstructuur toevoegen en het aanpassen.
 
-Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 De types van omslagen die door de navigatielijst worden gebruikt worden beschreven in een document van XML dat de grammatica van het **xtk:navtree** schema volgt.
 
