@@ -190,7 +190,7 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
   ![](assets/do-not-localize/v7.jpeg) [&#x200B; de documentatie van de Campagne v7 &#x200B;](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=nl-NL)
 
 ### Functies {#functions}
 
