@@ -17,11 +17,11 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden.
+>Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden.
 >
->Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign ten zeerste aan om alle bestaande verificatiemodus voor operatoren te migreren van de native verificatie van aanmelding/wachtwoord naar Adobe Identity Management System (IMS). Leer hoe te om uw exploitanten in [ te migreren deze pagina ](../../technotes/using/migrate-users-to-ims.md).
+>Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign ten zeerste aan om alle bestaande verificatiemodus voor operatoren te migreren van de native verificatie van aanmelding/wachtwoord naar Adobe Identity Management System (IMS). Leer hoe te om uw exploitanten in [&#x200B; te migreren deze pagina &#x200B;](../../technotes/using/migrate-users-to-ims.md).
 > 
->Na deze migratie is de volgende sectie niet meer van toepassing.  Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Na deze migratie is de volgende sectie niet meer van toepassing.  Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschillende operatoren zijn toegewezen. Dit zijn een reeks rechten en beperkingen die autoriseren of weigeren:
@@ -34,21 +34,21 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 
 >[!TAB  documentatie van Toestemmingen ]
 
-Meer over **toestemmingen in Adobe Campaign** leren, gelieve te verwijzen naar de **[Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
+Meer over **toestemmingen in Adobe Campaign** leren, gelieve te verwijzen naar de **[Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
 
 >[!TAB  beheert toestemmingen op omslagen ]
 
-Leren hoe te om **toestemmingen op omslagen** te bepalen, gelieve te verwijzen naar de **[Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
+Leren hoe te om **toestemmingen op omslagen** te bepalen, gelieve te verwijzen naar de **[Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
 
 
 >[!TAB  Inheemse authentificatie ]
 
-De inheemse authentificatie met login/wachtwoord is nog beschikbaar in Campagne v7, nochtans om veiligheid en authentificatieproces te versterken, adviseert Adobe Campaign hoogst om de wijze van de eindgebruikerauthentificatie [ van login/wachtwoord inheemse authentificatie aan het Systeem van Adobe te migreren Identity Management (IMS). ](../../technotes/using/ac-ims.md) In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd).
+De inheemse authentificatie met login/wachtwoord is nog beschikbaar in Campagne v7, nochtans om veiligheid en authentificatieproces te versterken, adviseert Adobe Campaign hoogst om de wijze van de eindgebruikerauthentificatie [&#x200B; van login/wachtwoord inheemse authentificatie aan het Systeem van Adobe te migreren Identity Management (IMS). &#x200B;](../../technotes/using/ac-ims.md) In Campagne v8 is het niet toegestaan om verbinding te maken met gebruiker/wachtwoord (ook wel native verificatie genoemd).
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
 

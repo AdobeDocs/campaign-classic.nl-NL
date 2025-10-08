@@ -18,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing voor operatoren die verbinding maken met Campagne met de oudere native verificatie. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn alleen van toepassing voor operatoren die verbinding maken met Campagne met de oudere native verificatie. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 Operatorgroepen worden gemaakt via het knooppunt **[!UICONTROL Administration > Access management > Operator groups]** in de structuur.
 
@@ -100,7 +100,7 @@ De standaardgroepen met operatoren zijn:
 
 1. **[!UICONTROL Offer managers]**
 
-   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Voor meer informatie over dit, verwijs naar deze [ pagina ](../../interaction/using/operator-profiles.md).
+   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Voor meer informatie over dit, verwijs naar deze [&#x200B; pagina &#x200B;](../../interaction/using/operator-profiles.md).
 Deze groep bevat de volgende benoemde rechten:
 
    * **[!UICONTROL INSERT FOLDERS]**: recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
