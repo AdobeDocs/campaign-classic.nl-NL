@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Zodra alle stappen hierboven door de uitvoeringsinstantie worden uitgevoerd, ont
 
 Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee modi worden verzameld:
 
-* Met aanroepen van SOAP methoden kunt u gebeurtenissen in Adobe Campaign duwen: met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Voor meer op dit, zie [ beschrijving van de Gebeurtenis ](../../message-center/using/event-description.md).
+* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Voor meer op dit, zie [ beschrijving van de Gebeurtenis ](../../message-center/using/event-description.md).
 
 * Het creëren van een werkschema laat u gebeurtenissen terugkrijgen door dossiers of via een SQL gateway (met de [ Verdeelde optie van de Toegang van Gegevens ](../../installation/using/about-fda.md) in te voeren).
 
@@ -57,7 +57,7 @@ Zodra zij worden verzameld, worden de gebeurtenissen verdeeld door technische we
 
 >[!NOTE]
 >
->Op uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Voor meer bij het plaatsen van een omslag als mening, verwijs naar [ deze sectie ](../../platform/using/access-management-folders.md).
+>Op uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Voor meer bij het plaatsen van een omslag als mening, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 ## Routering naar een sjabloon {#routing-towards-a-template}
 
@@ -101,4 +101,4 @@ Om dit te doen, moet u een werkschema vormen dat alle gebeurtenissen met de **fo
 
 >[!CAUTION]
 >
->Deze stap kan alleen worden uitgevoerd met behulp van een workflow en is daarom voorbehouden aan professionele gebruikers. Neem voor meer informatie contact op met het accountmanager van de Adobe.
+>Deze stap kan alleen worden uitgevoerd met behulp van een workflow en is daarom voorbehouden aan professionele gebruikers. Neem voor meer informatie contact op met de Adobe-accountmanager.

@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Pas het volgende toe om een **[!UICONTROL Execution instance]** type extern acco
 
    >[!NOTE]
    >
-   >Houd er rekening mee dat als u FDA via HTTP gebruikt, alleen uitvoeringsinstanties met een PostSQL-database worden ondersteund. MSSQL- of Oracle-databases worden niet ondersteund.
+   >Houd er rekening mee dat als u FDA via HTTP gebruikt, alleen uitvoeringsinstanties met een PostSQL-database worden ondersteund. MSSQL of Oracle databases worden niet ondersteund.
 
    De tweede methode (FDA) wordt geadviseerd als de controleinstantie directe toegang tot het gegevensbestand van de uitvoeringsinstanties heeft. Als niet, kies de de diensttoegang van het Web. De FDA rekening om te specificeren valt met de verbinding aan de gegevensbestanden van de diverse uitvoeringsinstanties die op de controleinstantie worden gecreeerd.
 
@@ -165,7 +165,7 @@ In de boom van alle uitvoeringsinstanties, creeer één omslag per exploitant (*
 >
 >De stappen hieronder moeten **op de controleinstanties** worden uitgevoerd.
 
-1. Op **Controle 1** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc1** exploitant in elke externe rekening in. De {**exploitant 0} mc1 zal daarna op alle uitvoeringsinstanties (zie [ uitvoeringsinstanties ](#configuring-execution-instances) vormen) worden gecreeerd.**
+1. Op **Controle 1** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc1** exploitant in elke externe rekening in. De {**exploitant 0} mc1 zal daarna op alle uitvoeringsinstanties (zie** uitvoeringsinstanties [ vormen) worden gecreeerd.](#configuring-execution-instances)
 
    ![](assets/messagecenter_multi_control_1.png)
 
@@ -185,7 +185,7 @@ In de boom van alle uitvoeringsinstanties, creeer één omslag per exploitant (*
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 
-1. Creeer één omslag per exploitant in de **[!UICONTROL Administration > Production > Message Center]** knoop: **Omslag 1** en **Omslag 2**. Voor meer bij het creëren van omslagen en meningen, verwijs naar [ deze pagina ](../../platform/using/access-management-folders.md).
+1. Creeer één omslag per exploitant in de **[!UICONTROL Administration > Production > Message Center]** knoop: **Omslag 1** en **Omslag 2**. Leer meer over omslagen en meningen in [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 
