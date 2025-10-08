@@ -34,11 +34,11 @@ In het verbindingsvenster van de clientconsole kunt u bestaande databases select
 
 ### Verbinding maken met uw Adobe ID
 
-Campagnegebruikers maken via hun Adobe ID verbinding met de Adobe Campaign-console via Adobe Identity Management System (IMS). Ze kunnen dezelfde id gebruiken voor alle Adobe-oplossingen. De verbinding wordt bewaard wanneer het gebruiken van Adobe Campaign met andere oplossingen. Leer meer over Adobe IMS [&#x200B; op deze pagina &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html).
+Campagnegebruikers maken via hun Adobe ID verbinding met de Adobe Campaign-console via Adobe Identity Management System (IMS). Ze kunnen dezelfde id gebruiken voor alle Adobe-oplossingen. De verbinding wordt bewaard wanneer het gebruiken van Adobe Campaign met andere oplossingen. Leer meer over Adobe IMS [&#x200B; op deze pagina &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html).
 
 Om Campaign Classic v7 verbinding met de Dienst van Identity Management van Adobe (IMS) te vormen, verwijs naar [&#x200B; deze pagina &#x200B;](../../integrations/using/about-adobe-id.md).
 
-Zodra de configuratie wordt gedaan, leer hoe te om met uw Adobe ID in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank} te verbinden.
+Zodra de configuratie wordt gedaan, leer hoe te om met uw Adobe ID in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/connect){target=_blank} te verbinden.
 
 
 ### Verbinding maken met een aanmelding/wachtwoord
@@ -63,7 +63,7 @@ U hebt toegang tot de instellingen voor de serververbinding via de koppeling bov
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Leer hoe te opstellingsverbindingen in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
+Leer hoe te opstellingsverbindingen in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
 
 ## Operatoren en machtigingen {#operators-and-permissions}
 
