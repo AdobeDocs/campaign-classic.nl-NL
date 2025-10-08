@@ -59,7 +59,7 @@ U kunt kiezen uit de volgende talen:
 * Duits
 * Japans
 
-De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Voor meer informatie over hoe te om een instantie tot stand te brengen, verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee h
 
 Raadpleeg de volgende pagina&#39;s in de documentatie bij Campagne v8 (console) voor meer informatie over Adobe Campaign Explorer:
 
-* [&#x200B; overzicht van het gebruikersinterface van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [&#x200B; overzicht van het gebruikersinterface van de Campagne &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [&#x200B; montages UI van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -138,7 +138,7 @@ Een opsomming (ook wel een gedetailleerde lijst genoemd) is een vooraf gedefinie
 
 Wanneer deze zijn gedefinieerd, worden de waarden weergegeven in een vervolgkeuzelijst. Een waarde kan rechtstreeks worden geselecteerd of worden ingevoerd met behulp van voorspellende invoer, die overeenkomende items voorstelt en voltooit. Sommige velden bevatten vooraf gedefinieerde opsommingen en indien nodig kunnen aanvullende opsommingen worden gemaakt.
 
-Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 ## Video over zelfstudie {#video}
 
