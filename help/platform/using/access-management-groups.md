@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -18,22 +18,24 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor Adobe IMS-verificatie raadpleegt u [deze documentatie](https://helpx.adobe.com/nl/enterprise/using/user-groups.html).
+>Deze procedures zijn alleen van toepassing voor operatoren die verbinding maken met Campagne met de oudere native verificatie. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
-Operatorgroepen worden gecreëerd via de **[!UICONTROL Administration > Access management > Operator groups]** knooppunt in de boomstructuur.
+Operatorgroepen worden gemaakt via het knooppunt **[!UICONTROL Administration > Access management > Operator groups]** in de structuur.
 
 ## Nieuwe operatorgroep maken {#creating-a-new-operator-group}
 
 Voer de volgende stappen uit om een nieuwe operatorgroep te maken:
 
-1. Klik op de knop **[!UICONTROL New]** rechts van de lijst met groepen klikken of met de rechtermuisknop op de lijst klikken en **[!UICONTROL New]**.
-1. In het gedeelte onder het venster, vanuit het **[!UICONTROL General]** voert u de naam en een beschrijving van deze groep in de desbetreffende velden in.
+1. Klik op de knop **[!UICONTROL New]** rechts van de lijst met groepen of klik met de rechtermuisknop op de lijst en kies **[!UICONTROL New]** .
+1. Typ in het onderste venster van de sectie de naam en een beschrijving voor deze groep in de desbetreffende velden op het tabblad **[!UICONTROL General]** .
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. Klik op de knop **[!UICONTROL Content]** om machtigingen voor deze groep te definiëren.
-1. Klik op de knop **[!UICONTROL Add]** om een aangesteld recht of een exploitant te selecteren om aan de groep te associëren.
-1. Klik op de vervolgkeuzelijst of op de map rechts van de **[!UICONTROL Folder]** veld om de aangestelde rechten of exploitanten te vinden die aan deze groep moeten worden gekoppeld.
+1. Klik op het tabblad **[!UICONTROL Content]** om autorisaties voor deze groep te definiëren.
+1. Klik op de knop **[!UICONTROL Add]** om een toegewezen recht of operator te selecteren die u aan de groep wilt koppelen.
+1. Klik op de vervolgkeuzelijst of op de map rechts van het veld **[!UICONTROL Folder]** om de toegewezen rechten of operatoren te zoeken die u aan deze groep wilt koppelen.
 1. Selecteer de rechten of operatoren die u wilt toevoegen en klik op **[!UICONTROL OK]** om te valideren.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
@@ -48,11 +50,11 @@ De standaardgroepen met operatoren zijn:
 
 1. **[!UICONTROL Administrator]**
 
-   De operatoren in deze groep hebben volledige toegang tot het exemplaar. Beheerders zijn gebruikers die toegang hebben tot de meest technische onderdelen van de interface. Ze houden de **[!UICONTROL Administration]** en ervoor zorgen dat het platform volledig is opgezet.
+   De operatoren in deze groep hebben volledige toegang tot het exemplaar. Beheerders zijn gebruikers die toegang hebben tot de meest technische onderdelen van de interface. Ze hebben de **[!UICONTROL Administration]** rol en zorgen ervoor dat het platform helemaal is ingesteld.
 
    Deze groep bevat het volgende benoemde recht:
 
-   * **[!UICONTROL ADMINISTRATION]**: recht om objecten zoals workflow, levering, scripts, enz. uit te voeren, te maken, te bewerken/te verwijderen.
+   * **[!UICONTROL ADMINISTRATION]**: het recht om objecten zoals workflow, levering, scripts, enzovoort uit te voeren, te maken, te bewerken/te verwijderen.
 
 1. **[!UICONTROL Delivery operators]**
 
@@ -61,16 +63,16 @@ De standaardgroepen met operatoren zijn:
    Deze groep bevat de volgende benoemde rechten:
 
    * **[!UICONTROL PREPARE DELIVERIES]**: recht om de leveringsanalyse te maken, te bewerken en te starten,
-   * **[!UICONTROL START DELIVERIES]**: recht om eerder geanalyseerde leveringen goed te keuren.
+   * **[!UICONTROL START DELIVERIES]** : rechts om eerder geanalyseerde leveringen goed te keuren.
 
 1. **[!UICONTROL Campaign managers]**
 
-   De exploitanten in deze groep kunnen marketing campagnes beheren: het laat u tot de voorwerpen toegang hebben verbonden aan campagnes (plannen, programma&#39;s, werkschema&#39;s, begrotingen, etc.) in het kader van **[!UICONTROL Campaign]** (optionele Adobe Campaign-module).
+   De operatoren in deze groep kunnen marketingcampagnes beheren. U hebt toegang tot de objecten die gekoppeld zijn aan campagnes (plannen, programma&#39;s, workflows, budgetten, enzovoort) in het kader van **[!UICONTROL Campaign]** (optionele Adobe Campaign-module).
 
    Deze groep bevat de volgende benoemde rechten:
 
-   * **[!UICONTROL INSERT FOLDERS]**: recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen),
-   * **[!UICONTROL WORKFLOW]**: recht om workflows te gebruiken.
+   * **[!UICONTROL INSERT FOLDERS]**: het recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
+   * **[!UICONTROL WORKFLOW]** : recht om workflows te gebruiken.
 
    >[!NOTE]
    >
@@ -78,7 +80,7 @@ De standaardgroepen met operatoren zijn:
 
 1. **[!UICONTROL Content contributors]**
 
-   De operatoren in deze groep hebben binnen het kader van **[!UICONTROL Content management]** (optionele Adobe Campaign-module). Deze groep verleent geen aanvullende rechten.
+   De operatoren in deze groep hebben toegang tot de mappen Inhoud binnen het kader van **[!UICONTROL Content management]** (optionele Adobe Campaign-module). Deze groep verleent geen aanvullende rechten.
 
 1. **[!UICONTROL Access to reports]**
 
@@ -94,12 +96,12 @@ De standaardgroepen met operatoren zijn:
 
 1. Lokaal/centraal beheer
 
-   U kunt deze groepen gebruiken **[!UICONTROL Distributed marketing]** (optionele Adobe Campaign-module).
+   Met deze groepen kunt u **[!UICONTROL Distributed marketing]** gebruiken (optionele Adobe Campaign-module).
 
 1. **[!UICONTROL Offer managers]**
 
-   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Raadpleeg voor meer informatie hierover [page](../../interaction/using/operator-profiles.md).
+   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Voor meer informatie over dit, verwijs naar deze [ pagina ](../../interaction/using/operator-profiles.md).
 Deze groep bevat de volgende benoemde rechten:
 
-   * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
-   * **[!UICONTROL EDIT FOLDERS]**: Recht om mapeigenschappen zoals interne naam, label, gekoppelde afbeelding, volgorde van submappen, enz. te wijzigen.
+   * **[!UICONTROL INSERT FOLDERS]**: recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
+   * **[!UICONTROL EDIT FOLDERS]**: rechts om mapeigenschappen zoals interne naam, label, gekoppelde afbeelding, volgorde van submappen, enz. te wijzigen.

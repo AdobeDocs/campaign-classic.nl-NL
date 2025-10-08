@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 96%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [Filtervoorwaarden definiëren - VERBORGEN](platform/using/defining-filter-conditions.md)
    + Machtigingen {#permissions}
       + [Aan de slag met machtigingen](platform/using/access-management.md)
-      + [Operatoren maken en beheren](platform/using/access-management-operators.md)
-      + [Groepen maken en beheren](platform/using/access-management-groups.md)
+      + Eigen verificatie (verouderd) {#native}
+         + [Operatoren maken en beheren](platform/using/access-management-operators.md)
+         + [Groepen maken en beheren](platform/using/access-management-groups.md)
       + [Opgegeven rechten gebruiken om machtigingen in te stellen](platform/using/access-management-named-rights.md)
-      + [Toegang tot mappen beheren](platform/using/access-management-folders.md)
+      + [Toegang tot mappen beheren - VERBORGEN](platform/using/access-management-folders.md)
    + CRM-connectoren  {#connectors}
       + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
       + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -338,7 +339,7 @@ ht-degree: 96%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -573,7 +574,7 @@ ht-degree: 96%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
