@@ -18,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
 
 Operatorgroepen worden gemaakt via het knooppunt **[!UICONTROL Administration > Access management > Operator groups]** in de structuur.
 

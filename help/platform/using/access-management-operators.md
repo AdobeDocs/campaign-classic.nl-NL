@@ -18,15 +18,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
 
 ## Aan de slag met campagneoperatoren {#about-operators}
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [&#x200B; deze documentatie &#x200B;](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [&#x200B; deze documentatie &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-users-individually.html#_blank).
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 
