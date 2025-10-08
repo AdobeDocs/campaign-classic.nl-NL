@@ -220,7 +220,7 @@ De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is g
 
 >[!NOTE]
 >
->Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Voor meer op dit, verwijs naar [ het Uitgeven vormen ](../../configuration/using/editing-forms.md).
+>Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Voor meer op dit, verwijs naar [&#x200B; het Uitgeven vormen &#x200B;](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Als deskundige gebruiker, kunt u omslagen in de ontdekkingsboomstructuur toevoegen en het aanpassen.
 
-Leer meer over het gebruikersinterface van de Campagne in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 De types van omslagen die door de navigatielijst worden gebruikt worden beschreven in een document van XML dat de grammatica van het **xtk:navtree** schema volgt.
 
@@ -92,7 +92,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door de **&quot;-** waarde in het beveletiket.
 
-De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP API, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP API, verwijs naar [&#x200B; de documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan via de tag **`<enter>`** worden bijgewerkt bij de initialisatie. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 
@@ -265,7 +265,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door de **&quot;-** waarde in het beveletiket.
 
-De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP APIs, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP APIs, verwijs naar [&#x200B; de documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan bij de initialisatie worden bijgewerkt via de tag **`<enter>`** . Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 

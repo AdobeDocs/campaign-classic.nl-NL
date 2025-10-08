@@ -41,7 +41,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
    >[!NOTE]
    >
-   >Om meer over **vorm** typedossiers te weten te komen, verwijs naar [ deze pagina ](../../configuration/using/identifying-a-form.md).
+   >Om meer over **vorm** typedossiers te weten te komen, verwijs naar [&#x200B; deze pagina &#x200B;](../../configuration/using/identifying-a-form.md).
 
    In ons huidige voorbeeld, moet het **vorm** dossier op het **focus:individual** schema worden gebaseerd en daarom de volgende lay-out hebben:
 
