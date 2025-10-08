@@ -113,7 +113,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -125,9 +125,9 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het Configuratiescherm kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL) toe om tot uw instantie(s) van de Campagne toegang te hebben
 * [&#x200B; beheer URL toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=nl-NL)
 * [&#x200B; beheert GPG sleutels voor gegevensencryptie &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
