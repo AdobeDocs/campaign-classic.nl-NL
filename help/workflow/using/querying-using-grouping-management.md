@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken 
 
 * Welke tabel moet worden geselecteerd?
 
-  De tabel met ontvangers (nms:ontvanger)
+  De ontvankelijke lijst (nms :recipient)
 
 * Velden die moeten worden geselecteerd in uitvoerkolommen?
 
@@ -33,13 +33,13 @@ In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken 
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
-1. Open **[!UICONTROL Generic query editor]** en kies de Ontvankelijke lijst (**nms:ontvanger**).
+1. Open **[!UICONTROL Generic query editor]** en kies de Ontvankelijke lijst (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
 1. Selecteer in het **[!UICONTROL Data to extract]** -venster de velden **[!UICONTROL Email domain]** en **[!UICONTROL Primary key]** . Een telling uitvoeren op het veld **[!UICONTROL Primary key]** .
 
-   Voor meer op primaire zeer belangrijke tellingen, verwijs naar [ deze sectie ](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Voor meer op primaire zeer belangrijke tellingen, verwijs naar [ deze sectie ](../../platform/using/about-queries-in-campaign.md).
 
 1. Schakel het selectievakje **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** in.
 
@@ -49,10 +49,10 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Selecteer **[!UICONTROL Filtering conditions]** in **[!UICONTROL Data filtering]** . Ga naar het **[!UICONTROL Target elements]** -venster en klik op **[!UICONTROL Next]** .
+1. Selecteer **[!UICONTROL Data filtering]** in **[!UICONTROL Filtering conditions]** . Ga naar het **[!UICONTROL Target elements]** -venster en klik op **[!UICONTROL Next]** .
 1. Selecteer in het **[!UICONTROL Data grouping]** -venster de **[!UICONTROL Email domain]** door op **[!UICONTROL Add]** te klikken.
 
-   Dit venster voor gegevensgroepering wordt alleen weergegeven als het vak **[!UICONTROL Handle groupings (GROUP BY + HAVING]** ) is ingeschakeld.
+   Dit venster voor gegevensgroepering wordt alleen weergegeven als het vak **[!UICONTROL Handle groupings (GROUP BY + HAVING])** is ingeschakeld.
 
    ![](assets/query_editor_blocklist_04.png)
 

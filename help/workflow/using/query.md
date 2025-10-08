@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Met de koppeling **[!UICONTROL Edit query...]** kunt u het doeltype, de beperkin
 
    U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren dimensie aan de vraag richten afmeting verschillend zijn. Voor meer informatie bij het groeperen, verwijs naar deze [ sectie ](querying-using-grouping-management.md).
 
-   U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. Vervolgens kunt u een voorvertoning van de combinatie **[!UICONTROL Corresponding SQL query...]** for your criteria weergeven. Voor meer op dit verwijs naar deze [ sectie ](../../platform/using/defining-filter-conditions.md#building-expressions).
+   U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. Vervolgens kunt u een voorvertoning van de combinatie **[!UICONTROL Corresponding SQL query...]** for your criteria weergeven. Voor meer op dit verwijs naar deze [ sectie ](../../platform/using/about-queries-in-campaign.md).
 
    Sla het filter op als u het later opnieuw wilt gebruiken.
 
@@ -163,7 +163,7 @@ In het volgende voorbeeld probeert de query mannen tussen 18 en 30 jaar te ident
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de tabel waarin de doel-id&#39;s worden vastgelegd. **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.
+Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms :recipient) en **[!UICONTROL recCount]** is het aantal elementen in de lijst.
 
 Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor alle overgangen met **[!UICONTROL tableName]** en **[!UICONTROL schema]** .
 
@@ -188,16 +188,16 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
   Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-  ![](assets/do-not-localize/v7.jpeg) [ de documentatie van de Campagne v7 ](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[ de documentatie van de Campagne v7 ](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=nl-NL)
+  ![](assets/do-not-localize/v8.png)[ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Functies {#functions}
 
 * Pas op voor functies zoals `Lower(...)` . Wanneer de functie Lower wordt gebruikt, wordt de Index niet gebruikt.
 * Controleer query&#39;s met de ‘soortgelijke’ instructie of de ‘bovenste’ of ‘onderste’ instructies zorgvuldig. Pas &quot;Upper&quot;op de gebruikersinput, niet op het gegevensbestandgebied toe.
 
-  Voor meer op functies, verwijs naar [ deze sectie ](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Voor meer op functies, verwijs naar [ deze sectie ](../../platform/using/about-queries-in-campaign.md).
 
 ### Afmetingen filteren {#filtering-dimensions}
 

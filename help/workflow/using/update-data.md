@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 1. Selecteer de verzamelingen die u wilt verplaatsen naar de primaire record en de velden die u wilt bijwerken.
 
-   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Voor meer op dit, verwijs naar deze [ sectie ](../../platform/using/defining-filter-conditions.md#building-expressions). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
+   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Voor meer op dit, verwijs naar deze [ sectie ](../../platform/using/about-queries-in-campaign.md). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
 
    Dan ga de voorwaarden in om met de regel rekening te houden.
 

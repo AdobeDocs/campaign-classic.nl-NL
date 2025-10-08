@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Met de exporttaken hebt u toegang tot gegevens in de database en kunt u deze ophalen: contactpersonen, clients, lijsten, segmenten enzovoort.
 
-Het kan bijvoorbeeld handig zijn om gegevens voor het bijhouden van campagnes te gebruiken (geschiedenis bijhouden, enz.) in een spreadsheet. De uitvoergegevens kunnen de indeling TXT, CSV, TAB of XML hebben.
+Het kan bijvoorbeeld handig zijn om gegevens over het bijhouden van campagnes (geschiedenis bijhouden, enz.) in een spreadsheet te gebruiken. De uitvoergegevens kunnen de indeling TXT, CSV, TAB of XML hebben.
 
 Met de exportassistent kunt u een exportbewerking configureren, opties definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type export (eenvoudig of meervoudig) en de rechten van de operator.
 
@@ -85,7 +85,7 @@ Selecteer de te exporteren velden. Dit doet u als volgt:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klik op de knop **[!UICONTROL Add]** om functies aan te roepen. Voor meer op dit, verwijs naar [ Lijst van functies ](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Klik op de knop **[!UICONTROL Add]** om functies aan te roepen. Voor meer op dit, verwijs naar [ Lijst van functies ](../../platform/using/about-queries-in-campaign.md).
 
 ## Stap 5 - Kolommen sorteren {#step-5---sorting-columns}
 
