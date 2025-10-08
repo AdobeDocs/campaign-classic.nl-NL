@@ -2,21 +2,15 @@
 product: campaign
 title: Filters maken
 description: Filters maken
-feature: Profiles
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
 
 # Filters maken{#creating-filters}
-
 
 Het filtreren van gegevens is het proces om een kleiner deel van uw gegevensreeks, slechts die verslagen te selecteren die bepaalde criteria aanpassen, en die ondergroep voor specifieke acties (updates, publieksverwezenlijking) of analyse te gebruiken.
 
@@ -28,7 +22,7 @@ Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer
 
 >[!NOTE]
 >
->Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank} .
+>Meer over Filters leren en hoe te om hen te gebruiken, gelieve te verwijzen naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

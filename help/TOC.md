@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2559'
 ht-degree: 99%
 
 ---
@@ -23,24 +23,22 @@ ht-degree: 99%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022](rn/using/release-2022.md)
-      + [2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
+      + [2021 - VERBORGEN](rn/using/release-2021.md)
+      + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
-   + [Documentatie-updates](rn/using/documentation-updates.md)
+   + [Documentatie-updates - VERBORGEN](rn/using/documentation-updates.md)
 + Aan de slag {#getting-started}
-   + Starten met Adobe Campaign {#starting-with-adobe-campaign}
-      + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
-      + Adobe Campaign-werkruimte{#campaign-workspace}
-         + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
-         + [Campaign Explorer gebruiken](platform/using/adobe-campaign-explorer.md)
-         + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
-         + [Opsommingen](platform/using/managing-enumerations.md)
-      + [Campaign-connectoren](platform/using/about-connectors.md)
-      + Veelgestelde vragen {#faq}
-         + [Populaire vragen](platform/using/common-questions.md)
+   + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+   + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
+   + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
+   + [Campagneverkenner gebruiken - Verborgen](platform/using/adobe-campaign-explorer.md)
+   + [Bladeren en lijsten aanpassen - Verborgen](platform/using/adobe-campaign-ui-lists.md)
+   + [Opsommingen - VERBORGEN](platform/using/managing-enumerations.md)
+   + [Campaign-connectoren](platform/using/about-connectors.md)
+   + Veelgestelde vragen {#faq}
+      + [Populaire vragen](platform/using/common-questions.md)
          + [Algemene concepten](platform/using/faq-key-concepts.md)
          + [Buildupgrade](platform/using/faq-build-upgrade.md)
          + [Privacy](platform/using/privacy-faq.md)
@@ -51,16 +49,15 @@ ht-degree: 99%
          + [Configuratie](platform/using/faq-campaign-config.md)
          + [Rapporten](platform/using/faq-reporting.md)
          + [Ontwikkeling](platform/using/faq-developers.md)
-         + [Tutorials](platform/using/tutorials.md)
-      + [Verklarende woordenlijst](platform/using/ac-glossary.md)
-      + Privacy {#privacy}
-         + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
-         + [Privacybeheer](platform/using/privacy-management.md)
-         + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
-            + [Privacyverzoeken](platform/using/privacy-requests.md)
-            + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
-            + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
-         + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
+   + [Verklarende woordenlijst](platform/using/ac-glossary.md)
+   + Privacy {#privacy}
+      + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
+      + [Privacybeheer](platform/using/privacy-management.md)
+      + Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+         + [Privacyverzoeken](platform/using/privacy-requests.md)
+         + [Privacyverzoeken maken en beheren](platform/using/privacy-requests-ui.md)
+         + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
+      + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
    + Profielmanagement {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
@@ -342,7 +339,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -577,7 +574,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)

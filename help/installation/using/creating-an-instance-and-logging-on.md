@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -26,13 +26,13 @@ Pas het volgende proces toe om een nieuwe instantie en een Adobe Campaign-databa
 
 >[!NOTE]
 >
->Alleen de **interne** id kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
+>Slechts kan het **interne** herkenningsteken deze verrichtingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
-Wanneer de Adobe Campaign-console wordt gestart, gaat u naar een aanmeldingspagina.
+Wanneer de Adobe Campaign-console wordt gestart, opent u een aanmeldingspagina.
 
-Als u een nieuwe instantie wilt maken, voert u de onderstaande stappen uit:
+Ga als volgt te werk om een nieuwe instantie te maken:
 
-1. Klik op de koppeling in de rechterbovenhoek van de aanmeldingsgegevens om het venster voor het configureren van de verbinding te openen. Deze koppeling kan **[!UICONTROL New...]** of een bestaande instantienaam zijn.
+1. Klik op de koppeling in de rechterbovenhoek van de aanmeldingsvelden om het venster voor de verbindingsconfiguratie te openen. Deze koppeling kan **[!UICONTROL New...]** of een bestaande instantienaam zijn.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
@@ -46,33 +46,33 @@ Als u een nieuwe instantie wilt maken, voert u de onderstaande stappen uit:
 
    >[!CAUTION]
    >
-   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]` `[0-9]` en streepjes (-) of volledige stops.
+   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]` , `[A-Z]` , `[0-9]` en streepjes (-) of volledige stops.
 
-1. Klik **[!UICONTROL Ok]** om de instellingen te bevestigen: u kunt nu beginnen met het proces voor het maken van instanties.
-1. Voer in het **[!UICONTROL Connection settings]** venster de interne **aanmeldingsnaam en het** bijbehorende wachtwoord in om verbinding te maken met de toepassingsserver van Adobe Campaign. Nadat de verbinding is gemaakt, opent u de assistent voor het maken van instanties om een nieuwe instantie aan te geven
-1. Voer in het **[!UICONTROL Name]** veld de **instantienaam** in. Aangezien deze naam wordt gebruikt om een configuratiebestand **`<instance>`te genereren .xml** en in de opdrachtregelparameters wordt gebruikt om de instantie te identificeren, moet u een korte naam zonder speciale tekens kiezen. Bijvoorbeeld: **eMarketing**.
+1. Klik op **[!UICONTROL Ok]** om de instellingen te bevestigen: u kunt nu beginnen met het maken van de instantie.
+1. In het **[!UICONTROL Connection settings]** venster, ga **interne** login en zijn wachtwoord in om met de de toepassingsserver van Adobe Campaign te verbinden. Zodra verbonden, hebt u toegang tot de medewerker van de instantiescreatie om een nieuwe instantie te verklaren
+1. Op het **[!UICONTROL Name]** gebied, ga de **instantienaam** in. Aangezien deze naam wordt gebruikt om een configuratiedossier **config- `<instance>` .xml** te produceren en in de parameters van de bevellijn wordt gebruikt om de instantie te identificeren, zorg ervoor u een korte naam zonder speciale karakters kiest. Bijvoorbeeld: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   De naam van de instantie die aan de domeinnaam wordt toegevoegd, mag niet langer zijn dan 40 tekens. Hiermee voorkomt u dat berichten als spam worden beschouwd, vooral door hulpmiddelen als SpamAssassin.
+   De naam van de instantie die aan de domeinnaam wordt toegevoegd, mag niet meer dan 40 tekens bevatten. Dit laat u de grootte van &quot;bericht-identiteitskaart&quot;kopballen beperken en verhindert berichten als spam, in het bijzonder door hulpmiddelen zoals SpamAssassin worden beschouwd.
 
-1. Voer in de **[!UICONTROL DNS masks]** velden de **lijst in met DNS-maskers** waaraan de instantie moet worden gekoppeld. De Adobe Campaign-server gebruikt de hostnaam die in de HTTP-aanvragen wordt weergegeven om te bepalen welke instantie moet worden bereikt.
+1. Op de **[!UICONTROL DNS masks]** gebieden, ga de **lijst van DNS maskers** in waaraan de instantie zou moeten worden vastgemaakt. De Adobe Campaign-server gebruikt de hostnaam die in de HTTP-aanvragen wordt weergegeven om te bepalen welke instantie moet worden bereikt.
 
    Hostname is bevat tussen het koord **https://** en het eerste schuine streep karakter **/** van het serveradres.
 
    U kunt een lijst met waarden definiëren, gescheiden door komma&#39;s.
 
-   De ? en &#42; tekens kunnen als jokertekens worden gebruikt om één of meerdere tekens (DNS, poort, enz.) te vervangen. De demowaarde &#42;**werkt bijvoorbeeld** met &quot;https://demo&quot; en zelfs met &quot;https://demo:8080&quot; en zelfs met &quot;https://demo2&quot;.
+   De ? en &#42; -tekens kunnen worden gebruikt als jokertekens ter vervanging van een of meer tekens (DNS, poort, enz.). Bijvoorbeeld, zal de **demo&#42;** waarde met &quot;https://demo&quot;werken aangezien het met &quot;https://demo :8080&quot;en zelfs &quot;https://demo2&quot;zal.
 
-   De gebruikte namen moeten zijn gedefinieerd in uw DNS. U kunt ook de correspondentie tussen een DNS-naam en een IP-adres doorgeven in het **c:/windows/system32/drivers/etc/hosts-bestand** in Windows en in het **/etc/hosts-bestand** in Linux. U moet daarom de verbindingsinstellingen wijzigen, zodat deze DNS-naam wordt gebruikt om verbinding te kunnen maken met de door u gekozen instantie.
+   De gebruikte namen moeten in uw DNS worden bepaald. U kunt de correspondentie tussen een DNS naam en een IP adres in **c:/windows/system32/drivers/etc/hosts** dossier in Vensters en in het **/etc/hosts** dossier in Linux ook meedelen. Daarom moet u de verbindingsmontages wijzigen om deze DNS naam te gebruiken om met uw gekozen instantie te verbinden.
 
-   De server moet deze naam hebben, in het bijzonder voor het uploaden van afbeeldingen in e-mails.
+   De server moet met deze naam worden geïdentificeerd, met name voor het uploaden van afbeeldingen in e-mails.
 
-   Bovendien moet de server verbinding kunnen maken met zichzelf via deze naam, en indien mogelijk met een loopback-adres (127.0.0.1 -), in het bijzonder om het exporteren van rapporten in PDF-indeling mogelijk te maken.
+   Daarnaast moet de server verbinding met zichzelf kunnen maken met deze naam en, indien mogelijk, met een loopbackadres - 127.0.0.1 , vooral om rapporten te kunnen exporteren in PDF-indeling.
 
-1. Selecteer in de **[!UICONTROL Language]** vervolgkeuzelijst de **instantietaal**: Engels (VS), Engels (UK), Frans of Japans.
+1. In de **[!UICONTROL Language]** drop-down lijst, selecteer de **instantietaal**: Engels (V.S.), Engels (VK), Frans, of Japans.
 
-   De verschillen tussen het Engels van de V.S. en het Engels van het VK worden beschreven in [ deze sectie ](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   De verschillen tussen het Engels van de V.S. en het Engels van het VK worden beschreven in [ Campagne v8 (console) documentatie ](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats).
 
    >[!CAUTION]
    >
@@ -82,4 +82,4 @@ Als u een nieuwe instantie wilt maken, voert u de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >De instantie kan vanaf de opdrachtregel worden gemaakt. Zie Opdrachtregels[&#128279;](../../installation/using/command-lines.md) voor meer informatie hierover.
+   >De instantie kan vanaf de opdrachtregel worden gemaakt. Voor meer op dit, verwijs naar [ lijnen van het Bevel ](../../installation/using/command-lines.md).

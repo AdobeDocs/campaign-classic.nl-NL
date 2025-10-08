@@ -6,16 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 0%
 
 ---
 
 # Adobe Campaign-werkruimte{#adobe-campaign-workspace}
-
-
 
 ## De Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
 
@@ -31,7 +29,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 >
 >De Adobe Campaign-mogelijkheden die voor uw instantie beschikbaar zijn, zijn afhankelijk van de geïnstalleerde modules en invoegtoepassingen. Sommige zijn mogelijk ook niet beschikbaar, afhankelijk van uw machtigingen en specifieke configuraties.
 >
->Voordat u een module of add-on installeert, moet u de licentieovereenkomst controleren of contact opnemen met de manager van de Adobe-account.
+>Voordat u een module of add-on installeert, moet u de licentieovereenkomst controleren of contact opnemen met de Adobe-accountmanager.
 
 ### Console en webtoegang {#console-and-web-access}
 
@@ -61,7 +59,7 @@ U kunt kiezen uit vijf verschillende talen:
 * Duits
 * Japans
 
-De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
 
 Voor meer informatie over hoe te om een instantie tot stand te brengen, verwijs naar deze [ pagina ](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -106,70 +104,37 @@ Gebruik bijvoorbeeld op de leveringspagina de knop **[!UICONTROL Create]** om ee
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Indelingen en eenheden {#formats-and-units}
+## Adobe Campaign-verkenner gebruiken {#using-adobe-campaign-explorer}
 
-### Datum en tijd {#date-and-time}
+De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
-De taal van uw Adobe Campaign Classic-exemplaar is van invloed op datum- en tijdnotaties.
+Raadpleeg de volgende pagina&#39;s in de documentatie bij Campagne v8 (console) voor meer informatie over Adobe Campaign Explorer:
 
-Taal wordt geselecteerd tijdens de installatie van Campagne en kan achteraf niet worden gewijzigd. U kunt selecteren: Engels (VS), Engels (EN), Frans, Duits of Japans. Raadpleeg [deze pagina](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie.
+* [ overzicht van het gebruikersinterface van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
-De belangrijkste verschillen tussen het Engels van de VS en het Engels van het Verenigd Koninkrijk zijn:
+* [ montages UI van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> Formaten <br /> </th> 
-   <th> Engels (VS) <br /> </th> 
-   <th> Engels (EN) <br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> Datum <br /> </td> 
-   <td> Week begint op zondag <br /> </td> 
-   <td> Week begint op maandag <br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Korte datum <br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 25-09-2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25-09-2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> Korte datum met tijd <br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10 :47: 25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22 :47: 25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [ beheert omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-### Waarden toevoegen aan een opsomming {#add-values-in-an-enumeration}
 
-Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. U kunt bijvoorbeeld in het veld **[!UICONTROL City]** van het tabblad **[!UICONTROL General]** van een ontvangend profiel Londen invoeren. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
+## Werken met lijsten {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-Als u op **[!UICONTROL Yes]** klikt, is deze waarde beschikbaar in de keuzelijst met invoervak van het desbetreffende veld (in dit geval: **[!UICONTROL London]** ).
+In de de cliëntconsole van de Campagne, worden de gegevens getoond in lijsten. U kunt deze lijsten aan uw behoeften aanpassen. U kunt bijvoorbeeld kolommen, filtergegevens, telrecords toevoegen, uw instellingen opslaan en delen.
 
 >[!NOTE]
 >
->Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de sectie **[!UICONTROL Administration > Platform > Enumerations]** . Voor meer op dit, verwijs naar [ het Leiden opsommingen ](../../platform/using/managing-enumerations.md).
+>Leren om lijsten in Adobe Campaign te beheren en aan te passen, gelieve te verwijzen naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-### Standaardeenheden {#default-units}
+## Opsommingen beheren{#managing-enumerations}
 
-Op de gebieden die een duur (b.v. geldigheidsperiode van de middelen van een levering uitdrukken, goedkeuringsdeadline voor een taak, enz.), kan de waarde in de volgende **eenheden** worden uitgedrukt:
+Een opsomming (ook wel een gedetailleerde lijst genoemd) is een vooraf gedefinieerde lijst met waarden die u kunt gebruiken om bepaalde velden in te vullen. Opsommingen helpen bij het standaardiseren van veldwaarden, het consistenter maken van gegevens en het vereenvoudigen van query&#39;s.
 
-* **[!UICONTROL s]** gedurende seconden,
-* **[!UICONTROL mn]** gedurende minuten,
-* **[!UICONTROL h]** gedurende uren,
-* **[!UICONTROL d]** dagen.
+Wanneer deze zijn gedefinieerd, worden de waarden weergegeven in een vervolgkeuzelijst. Een waarde kan rechtstreeks worden geselecteerd of worden ingevoerd met behulp van voorspellende invoer, die overeenkomende items voorstelt en voltooit. Sommige velden bevatten vooraf gedefinieerde opsommingen en indien nodig kunnen aanvullende opsommingen worden gemaakt.
 
-![](assets/enter_unit_sample.png)
+Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 ## Video over zelfstudie {#video}
 
-In deze video wordt de werkruimte van het Campaign Classic weergegeven.
+Deze video toont de Campaign Classic-werkruimte.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
-
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

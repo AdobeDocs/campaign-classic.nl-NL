@@ -4,7 +4,9 @@ title: Opsommingen beheren
 description: Opsommingen beheren
 feature: Data Management
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%
@@ -17,5 +19,5 @@ Een opsomming (ook wel een gedetailleerde lijst genoemd) is een vooraf gedefinie
 
 Wanneer deze zijn gedefinieerd, worden de waarden weergegeven in een vervolgkeuzelijst. Een waarde kan rechtstreeks worden geselecteerd of worden ingevoerd met behulp van voorspellende invoer, die overeenkomende items voorstelt en voltooit. Sommige velden bevatten vooraf gedefinieerde opsommingen en indien nodig kunnen aanvullende opsommingen worden gemaakt.
 
-Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 

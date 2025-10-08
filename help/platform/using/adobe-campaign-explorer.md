@@ -7,22 +7,23 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
-# Adobe Campaign-verkenner gebruiken {#using-adobe-campaign-explorer}
-
+# Adobe Campaign-verkenner gebruiken
 
 
 De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
 >[!NOTE]
 >
->Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de Campagne v8 documentatie: meer [ over het gebruikersinterface ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}  leren, zijn [ montages ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}  of [ hoe te om omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank} te beheren .
+>Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de Campagne v8 documentatie: om meer [ over het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank} te leren, zijn [ montages ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} of [ hoe te om omslagen en meningen in de ontdekkingsreiziger ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank} te beheren.
 
 
 <!--
