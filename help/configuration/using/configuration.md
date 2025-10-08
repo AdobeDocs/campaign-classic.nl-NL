@@ -5,9 +5,9 @@ feature: Application Settings
 description: Leer hoe te om de boomstructuur van de Navigatie van de Ontdekkingsreiziger van de Campagne te vormen
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Als deskundige gebruiker, kunt u omslagen in de ontdekkingsboomstructuur toevoegen en het aanpassen.
 
-Leer meer over de ontdekkingsreiziger van de Campagne en navigatiehiërarchie [ in deze sectie ](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Leer meer over het gebruikersinterface van de Campagne in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
-De types van omslagen die door de navigatielijst worden gebruikt worden beschreven in een document van XML dat de grammatica van **xtk volgt:navtree** schema.
+De types van omslagen die door de navigatielijst worden gebruikt worden beschreven in een document van XML dat de grammatica van het **xtk:navtree** schema volgt.
 
 Het XML-document is als volgt gestructureerd:
 
@@ -50,7 +50,7 @@ De declaratie van bestandstypen is in het document gestructureerd met de volgend
 
 ## Algemene opdrachten {#global-commands}
 
-Met een algemene opdracht kunt u een handeling starten. Deze handeling kan een invoerformulier of een SOAP zijn.
+Met een algemene opdracht kunt u een handeling starten. Deze handeling kan een invoerformulier of een SOAP-aanroep zijn.
 
 Algemene opdrachten zijn toegankelijk via het hoofdmenu **[!UICONTROL Tools]** .
 
@@ -82,7 +82,7 @@ De beschrijving van een algemene opdracht wordt in het element **`<command>`** i
 * **naam**: interne naam van het bevel: de naam moet zijn ingegaan en uniek
 * **etiket**: etiket van het bevel.
 * **desc**: beschrijving zichtbaar van de statusbar van het belangrijkste scherm.
-* **vorm**: vorm die moet worden gelanceerd: de in te gaan waarde is de identificatiesleutel van de inputvorm (b.v. &quot;cus:ontvanger&quot;)
+* **vorm**: vorm die moet worden gelanceerd: de in te gaan waarde is de identificatiesleutel van de inputvorm (b.v. &quot;cus :recipient&quot;)
 * **rechten**: lijst van genoemde rechten (die door een komma worden gescheiden) die toegang tot dit bevel toestaan. De lijst met beschikbare rechten is toegankelijk via de map **[!UICONTROL Administration > Access management > Named rights]** .
 * **promptLabel**: toont een bevestigingsvakje vóór uitvoering van het bevel.
 
@@ -92,13 +92,13 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door de **&quot;-** waarde in het beveletiket.
 
-De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP methode die moet worden uitgevoerd. Voor verdere informatie over SOAP API, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP API, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan via de tag **`<enter>`** worden bijgewerkt bij de initialisatie. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 
 **Voorbeeld**:
 
-* Verklaring van een algemene opdracht om het formulier &quot;xtk:import&quot; te starten:
+* Verklaring van een globaal bevel om de &quot;xtk :import&quot;vorm te lanceren:
 
   ```
   <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -122,7 +122,7 @@ De formuliercontext kan via de tag **`<enter>`** worden bijgewerkt bij de initia
   </command>
   ```
 
-* Uitvoering van een SOAP:
+* Uitvoering van een SOAP-methode:
 
   ```
   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
@@ -182,7 +182,7 @@ Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier
 
 De standaardconfiguratie van de lijstkolommen is ingegaan via het **`<columns>`** element. Een kolom wordt verklaard op a **`<node>`** element dat het **xpath** attribuut met het gebied bevat dat in zijn schema als zijn waarde moet worden van verwijzingen voorzien.
 
-**Voorbeeld**: verklaring van een omslagtype op het &quot;nms:ontvanger&quot;schema.
+**Voorbeeld**: verklaring van een omslagtype op het &quot;nms :recipient&quot;schema.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -225,7 +225,7 @@ Filteren en sorteren kan worden toegepast wanneer de lijst wordt geladen:
 
 ### Sneltoetsopdrachten {#shortcut-commands}
 
-Met een sneltoetsopdracht kunt u een handeling starten om de lijst te selecteren. De handeling kan een invoerformulier of een SOAP zijn.
+Met een sneltoetsopdracht kunt u een handeling starten om de lijst te selecteren. De handeling kan een invoerformulier of een SOAP-aanroep zijn.
 
 Opdrachten zijn toegankelijk via het **[!UICONTROL Action]** -menu van de lijst of de bijbehorende menuknop.
 
@@ -251,7 +251,7 @@ De beschrijving van een opdracht wordt ingevoerd voor het element **`<command>`*
 * **naam**: interne naam van het bevel: de naam moet zijn ingegaan en uniek.
 * **etiket**: etiket van het bevel.
 * **desc**: beschrijving zichtbaar van de statusbar van het belangrijkste scherm.
-* **vorm**: vorm die moet worden gelanceerd: de in te gaan waarde is de identificatiesleutel van de inputvorm (b.v. &quot;cus:ontvanger&quot;).
+* **vorm**: vorm die moet worden gelanceerd: de in te gaan waarde is de identificatiesleutel van de inputvorm (b.v. &quot;cus :recipient&quot;).
 * **rechten**: lijst van genoemde rechten (die door een komma worden gescheiden) die toegang tot dit bevel toestaan. De lijst met beschikbare rechten is toegankelijk via de map **[!UICONTROL Administration > Access management > Named rights]** .
 * **promptLabel**: toont een bevestigingsvakje vóór uitvoering van het bevel
 * **monoSelection**: krachten mono-selectie (veelvoudige selectie door gebrek).
@@ -265,7 +265,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door de **&quot;-** waarde in het beveletiket.
 
-De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP methode die moet worden uitgevoerd. Voor verdere informatie over SOAP APIs, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+De optionele aanwezigheid van de tag **`<soapcall>`** met de invoerparameters definieert de aanroep van een SOAP-methode die moet worden uitgevoerd. Voor verdere informatie over SOAP APIs, verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 De formuliercontext kan bij de initialisatie worden bijgewerkt via de tag **`<enter>`** . Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 

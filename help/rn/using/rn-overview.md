@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
-workflow-type: ht
-source-wordcount: '903'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '894'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Elke nieuwe build wordt geleverd met een status die wordt bepaald door een kleur
 | Status | Beschrijving |
 |---|---|
 | [!BADGE Algemene beschikbaarheid]{type=Positive} | Nieuwste stabiele build, gevalideerd in productie en aanbevolen door Adobe. |
-| [!BADGE Beperkte beschikbaarheid]{type=Informative} | Alleen on-demand implementatie. |
+| [!BADGE Beperkte beschikbaarheid]{type=Informative} | alleen on-demand implementatie. |
 | [!BADGE Afgeschaft]{type=negative} | Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden bijgewerkt. |
 
 ## Releasecyclus {#rn-cycle}
@@ -152,8 +152,7 @@ Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, tec
 * [Uw Campaign-versie zoeken](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Help en ondersteuning](../../support.md)
 * [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl)
-* [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
-* [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
+* [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 
 Word lid van de [Adobe Priority Product Update](https://www.adobe.com/nl/subscription/priority-product-update.html) om op de hoogte te blijven van nieuwe releases van Experience Cloud-oplossingen.
