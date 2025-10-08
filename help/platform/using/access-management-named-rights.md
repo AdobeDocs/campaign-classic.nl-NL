@@ -71,4 +71,4 @@ Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde 
 
 De de toegangsrechtenmatrijs van Adobe Campaign is beschikbaar [&#x200B; hier &#x200B;](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![afbeelding](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![afbeelding](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=nl-NL)
