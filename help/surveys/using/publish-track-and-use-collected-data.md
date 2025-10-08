@@ -162,4 +162,4 @@ Bewerk het gesplitste vak om het te configureren:
 
 ## Gegevens standaardiseren {#standardizing-data}
 
-Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.

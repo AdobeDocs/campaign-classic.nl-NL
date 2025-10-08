@@ -72,7 +72,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
 1. In de **[!UICONTROL Language]** drop-down lijst, selecteer de **instantietaal**: Engels (V.S.), Engels (VK), Frans, of Japans.
 
-   De verschillen tussen het Engels van de V.S. en het Engels van het VK worden beschreven in [ Campagne v8 (console) documentatie ] (.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
+   De verschillen tussen het Engels van de V.S. en het Engels van het VK worden beschreven in [ Campagne v8 (console) documentatie ] (.https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >

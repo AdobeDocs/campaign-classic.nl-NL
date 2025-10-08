@@ -335,7 +335,7 @@ In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wannee
 
 ## Verwante onderwerpen
 
-* Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+* Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 * [Aan de slag met campagnereschema&#39;s](../../configuration/using/about-schema-edition.md)
 
