@@ -4,7 +4,7 @@ title: Personalisatie en privacy
 description: Meer informatie over best practices op het gebied van beveiliging voor privacy en personalisatie
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen pe
 
 ### Aanbeveling
 
-Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [ de Algemene Redacteur van de Vraag van de Campagne ](../../platform/using/steps-to-create-a-query.md) in werking of creeer een werkschema met filtercriteria in de [ vraagactiviteit ](../../workflow/using/query.md).
+Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [ de Algemene Redacteur van de Vraag van de Campagne ](../../platform/using/about-queries-in-campaign.md) in werking of creeer een werkschema met filtercriteria in de [ vraagactiviteit ](../../workflow/using/query.md).
 
 Voorbeeld:
 
@@ -54,7 +54,7 @@ Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in v
 
 Als u werkt op de build 19.1.4, kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
-Als Ontvangen Campagne, Beheerde Cloud Servicen of hybride klant, moet u uit [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) bereiken om de handtekening te hebben URL gehandicapt.
+Als ontvangen Campagne, Geleide Diensten van de Wolk of hybride klant, moet u uit reiken aan [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om de handtekening van URL onbruikbaar te maken te hebben.
 
 Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
 
@@ -70,13 +70,13 @@ Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert 
 
 1. In het dossier van de serverconfiguratie (`serverConf.xml`), verander **blockRedirectForUnsignedTrackingLink** optie in **waar**.
 1. Start de service `nlserver` opnieuw.
-1. Start de `web` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `tracking` -server.
+1. Start de `tracking` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `web` -server.
 
 Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
 1. In het dossier van de serverconfiguratie (`serverConf.xml`), verandering **signEmailLinks** optie, **waar**.
 1. Begin de **nlserver** dienst opnieuw.
-1. Start de `web` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `tracking` -server.
+1. Start de `tracking` -server (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows) opnieuw op de `web` -server.
 
 ## Gegevensbeperking
 
@@ -151,7 +151,7 @@ Volg onderstaande stappen om dit te doen:
    >
    >U kunt `$(loginId) = 0 or $(login) = 'admin'` vervangen door `hasNamedRight('admin')` zodat alle gebruikers met beheerdersrechten deze wachtwoorden kunnen zien.
 
-## Protect-pagina&#39;s met PI
+## Pagina&#39;s beveiligen met PI
 
 We raden klanten op locatie ten zeerste aan de pagina&#39;s te beschermen die persoonlijke gegevens (PI) kunnen bevatten, zoals spiegel- en webtoepassingen.
 

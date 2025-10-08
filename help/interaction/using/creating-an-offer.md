@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Buiten deze datums wordt de aanbieding niet geselecteerd door de interactie-engi
 
 U kunt filters op het aanbiedingsdoel toepassen.
 
-Klik hiertoe op de koppeling **[!UICONTROL Edit query]** en selecteer het filter dat u wilt toepassen. (Verwijs naar [ deze sectie ](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klik hiertoe op de koppeling **[!UICONTROL Edit query]** en selecteer het filter dat u wilt toepassen. Zie [deze sectie](../../platform/using/about-adobe-campaign-classic.md).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -131,7 +131,7 @@ Klik op de koppeling **[!UICONTROL Schedule and eligibility rules]** om deze wee
    * **[!UICONTROL Title]** : geef de titel op die u wilt maken, die in uw voorstel wordt weergegeven. Waarschuwing: dit verwijst niet naar het label van de aanbieding, dat is gedefinieerd op het tabblad **[!UICONTROL General]** .
    * **[!UICONTROL Destination URL]** : geef de URL van je aanbieding op. Om correct te worden verwerkt, moet het met &quot;http://&quot;of &quot;https://&quot;beginnen.
    * **[!UICONTROL Image URL]** : geef een URL of een toegangspad op naar de afbeelding van uw aanbieding.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : voer de tekst van uw voorstel in op het tabblad dat u wilt gebruiken. Voor het genereren van reeksspatiëring moet **[!UICONTROL HTML content]** bestaan uit HTML-elementen die kunnen worden ingesloten in een `<div>` -tekstelement. Het resultaat van een `<table>` -element op de pagina HTML is bijvoorbeeld als volgt:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : voer de tekst van uw voorstel in op het tabblad dat u wilt gebruiken. Voor het genereren van reeksspatiëring moet **[!UICONTROL HTML content]** bestaan uit HTML-elementen die kunnen worden ingesloten in een `<div>` -tekstelement. Het resultaat van een `<table>` -element op de HTML-pagina is bijvoorbeeld als volgt:
 
    ```
       <div> 
