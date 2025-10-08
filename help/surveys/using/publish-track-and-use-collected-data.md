@@ -20,7 +20,7 @@ Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppel
 
 >[!NOTE]
 >
->De levenscyclus van een onderzoek in Adobe Campaign evenals zijn het publiceren en leveringswijzen zijn gelijkaardig aan die van de vormen van het Web: deze zijn gedetailleerd in [ deze sectie ](../../web/using/about-web-forms.md).
+>De levenscyclus van een onderzoek in Adobe Campaign evenals zijn het publiceren en leveringswijzen zijn gelijkaardig aan die van de vormen van het Web: deze zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/about-web-forms.md).
 
 ## Beoordelingsdashboard {#survey-dashboard}
 
@@ -40,7 +40,7 @@ Voor elke geleverde enquête kunt u de antwoorden bijhouden op het tabblad **[!U
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. Voor meer op dit, verwijs naar [ het Uitvoeren antwoorden ](#exporting-answers).
+Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. Voor meer op dit, verwijs naar [&#x200B; het Uitvoeren antwoorden &#x200B;](#exporting-answers).
 
 De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens toe te voegen:
 
@@ -50,7 +50,7 @@ De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens 
 
 terwijl de enquête wordt bewerkt, bevat de URL de parameter **[!UICONTROL __uuid]** , die aangeeft dat de enquête zich in een testfase bevindt en nog niet online is. Wanneer u de enquête opent via deze URL, wordt er geen rekening gehouden met de gemaakte records in de tracering (rapporten). De oorsprong wordt geforceerd naar de waarde **[!UICONTROL Adobe Campaign]** .
 
-Voor meer op parameters URL, verwijs naar [ deze pagina ](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Voor meer op parameters URL, verwijs naar [&#x200B; deze pagina &#x200B;](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Verslagen over enquêtes {#reports-on-surveys}
 
@@ -84,7 +84,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
    Als u rapportgegevens wilt exporteren, klikt u op de knop **[!UICONTROL Export]** en kiest u de exportindeling.
 
-   Voor meer bij het uitvoeren van rapportgegevens, verwijs naar [ deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md).
+   Voor meer bij het uitvoeren van rapportgegevens, verwijs naar [&#x200B; deze sectie &#x200B;](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Antwoorden exporteren
 
@@ -110,7 +110,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
    >[!NOTE]
    >
-   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [ deze sectie ](../../platform/using/about-generic-imports-exports.md).
+   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../platform/using/about-generic-imports-exports.md).
 
 ## De verzamelde gegevens gebruiken {#using-the-collected-data}
 
@@ -162,4 +162,4 @@ Bewerk het gesplitste vak om het te configureren:
 
 ## Gegevens standaardiseren {#standardizing-data}
 
-Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.

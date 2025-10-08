@@ -26,7 +26,7 @@ Alle marketing campagnes zijn gebaseerd op een malplaatje, dat belangrijkste ken
 
 Een ingebouwde sjabloon wordt geleverd om een campagne te maken waarvoor geen specifieke configuratie is gedefinieerd. U kunt uw campagnemalplaatjes tot stand brengen en vormen en dan campagnes van deze malplaatjes tot stand brengen.
 
-![](assets/do-not-localize/how-to-video.png) voor meer op campagneverwezenlijking, verwijs naar [ deze video ](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) voor meer op campagneverwezenlijking, verwijs naar [&#x200B; deze video &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Een campagnemalplaatje maken {#creating-or-duplicating-a-campaign-template}
 
@@ -56,9 +56,9 @@ Volg onderstaande stappen om een campagnemalplaatje te maken:
 1. Maak uw workflow naar wens.
 1. Klik **sparen**. Uw sjabloon is nu klaar om in een campagne te worden gebruikt.
 
-U kunt **** het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
+U kunt **&#x200B;**&#x200B;het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
 
-De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn montages toegang te hebben, die in [ Algemene configuratie ](#general-configuration) worden beschreven.
+De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn montages toegang te hebben, die in [&#x200B; Algemene configuratie &#x200B;](#general-configuration) worden beschreven.
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
@@ -96,31 +96,31 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
 * **de groep van de Controle**
 
-  Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Leer meer over controlegroepen in [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Leer meer over controlegroepen in [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
   ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Seed-adressen**
 
-  Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Leer meer over zaadadressen in [ deze sectie ](../../delivery/using/about-seed-addresses.md).
+  Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Leer meer over zaadadressen in [&#x200B; deze sectie &#x200B;](../../delivery/using/about-seed-addresses.md).
 
   ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Documenten**
 
-  Als deze module is geselecteerd, wordt een extra tabblad toegevoegd aan het tabblad **[!UICONTROL Edition]** van de sjabloon en aan de campagnes op basis van deze sjabloon. Bijgevoegde documenten kunnen worden toegevoegd vanuit de sjabloon of afzonderlijk voor elke campagne. Leer meer over documenten in [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+  Als deze module is geselecteerd, wordt een extra tabblad toegevoegd aan het tabblad **[!UICONTROL Edition]** van de sjabloon en aan de campagnes op basis van deze sjabloon. Bijgevoegde documenten kunnen worden toegevoegd vanuit de sjabloon of afzonderlijk voor elke campagne. Leer meer over documenten in [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
   ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Overzicht**
 
-  Wanneer deze module is geselecteerd, wordt een subtab **[!UICONTROL Delivery outlines]** toegevoegd aan het tabblad **[!UICONTROL Documents]** om de leveringscontouren voor de campagne te definiëren. Leer meer over leveringsoverzichten in [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Wanneer deze module is geselecteerd, wordt een subtab **[!UICONTROL Delivery outlines]** toegevoegd aan het tabblad **[!UICONTROL Documents]** om de leveringscontouren voor de campagne te definiëren. Leer meer over leveringsoverzichten in [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **het richten en werkschema&#39;s**
 
-  Wanneer u de module **[!UICONTROL Targeting and workflows]** selecteert, wordt een tabblad toegevoegd waarop u een of meer workflows kunt maken voor campagnes die op deze sjabloon zijn gebaseerd. De werkschema&#39;s kunnen ook individueel voor elke campagne worden gevormd die op dit malplaatje wordt gebaseerd.Leer meer over campagnewerkschema&#39;s in [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Wanneer u de module **[!UICONTROL Targeting and workflows]** selecteert, wordt een tabblad toegevoegd waarop u een of meer workflows kunt maken voor campagnes die op deze sjabloon zijn gebaseerd. De werkschema&#39;s kunnen ook individueel voor elke campagne worden gevormd die op dit malplaatje wordt gebaseerd.Leer meer over campagnewerkschema&#39;s in [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -130,7 +130,7 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
 * **Goedkeuring**
 
-  Als u **[!UICONTROL Approval]** selecteert, kunt u de processen selecteren die u wilt goedkeuren en de operatoren die verantwoordelijk zijn voor goedkeuringen. Leer meer over goedkeuringen in [ deze sectie ](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+  Als u **[!UICONTROL Approval]** selecteert, kunt u de processen selecteren die u wilt goedkeuren en de operatoren die verantwoordelijk zijn voor goedkeuringen. Leer meer over goedkeuringen in [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
   ![](assets/s_ncs_user_op_template_activate_5b.png)
 
@@ -157,9 +157,9 @@ Wanneer u een campagnemalplaatje creeert, moet u de volgende informatie ingaan:
 
   >[!NOTE]
   >
-  >Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+  >Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
-* Selecteer het **type van campagne**: uniek, terugkerend, of periodiek. Standaard worden campagnemasjablonen toegepast op unieke campagnes. Het terugkomen en periodieke campagnes worden gedetailleerd in [ deze sectie ](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
+* Selecteer het **type van campagne**: uniek, terugkerend, of periodiek. Standaard worden campagnemasjablonen toegepast op unieke campagnes. Het terugkomen en periodieke campagnes worden gedetailleerd in [&#x200B; deze sectie &#x200B;](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Geef de duur van de campagne op, d.w.z. het aantal dagen waarop de campagne zal plaatsvinden. Wanneer u een campagne maakt op basis van deze sjabloon, worden de begin- en einddatums van de campagne automatisch ingevuld.
 
   Als de campagne terugkerend is, moet u de begin en einddata van de campagne direct in het malplaatje specificeren.
