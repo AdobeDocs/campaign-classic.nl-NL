@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2987'
+source-wordcount: '2984'
 ht-degree: 7%
 
 ---
@@ -41,8 +41,7 @@ Quarantaine en lijst van gewezen personen zijn niet van toepassing op hetzelfde 
 
 * Het zijn op de **lijst van gewezen personen**, anderzijds, zal in het **profiel** resulteren niet meer door de levering, zoals na een unsubscription (opt-out), voor een bepaald kanaal wordt gericht. Als een profiel op de lijst van gewezen personen voor het e-mailkanaal bijvoorbeeld twee e-mailadressen heeft, worden beide adressen van levering uitgesloten.
 
-  In de sectie **[!UICONTROL No longer contact]** van het tabblad **[!UICONTROL General]** van het profiel kunt u controleren of er zich op de lijst van gewezen personen een of meer kanalen bevinden in de sectie  van het profiel. Zie [deze sectie](../../platform/using/editing-a-profile.md#general-tab).
-
+  In de sectie **[!UICONTROL No longer contact]** van het tabblad **[!UICONTROL General]** van het profiel kunt u controleren of er zich op de lijst van gewezen personen een of meer kanalen bevinden in de sectie  van het profiel.
 >[!NOTE]
 >
 >Quarantaine bevat een **[!UICONTROL Denylisted]** -status die van toepassing is wanneer ontvangers uw bericht melden als spam of op een SMS-bericht reageren met een trefwoord zoals &quot;STOP&quot;. In dat geval wordt het betreffende adres of telefoonnummer van het profiel naar quarantaine verzonden met de status **[!UICONTROL Denylisted]** . Voor meer bij het beheren van STOP SMS berichten, verwijs naar [ deze sectie ](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -104,7 +103,7 @@ Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking e
 * **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk in quarantaine geplaatst.
 * **Zachte fout**: bij zachte fouten wordt het adres niet direct in quarantaine geplaatst, maar neemt het aantal fouten op de foutenteller toe. Voor meer op dit, zie [ Zacht foutenbeheer ](#soft-error-management).
 
-Als een gebruiker een e-mail als spam ([ kwalificeert koppelt lijn ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#feedback-loops)), wordt het bericht automatisch opnieuw gericht naar een technische brievenbus die door Adobe wordt geleid. Het e-mailadres van de gebruiker wordt vervolgens automatisch in quarantaine geplaatst met de status **[!UICONTROL Denylisted]**. Deze status verwijst alleen naar het adres, het profiel staat niet op de lijst van gewezen personen, zodat de gebruiker SMS-berichten en pushberichten blijft ontvangen.
+Als een gebruiker een e-mail als spam ([ kwalificeert koppelt lijn ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), wordt het bericht automatisch opnieuw gericht naar een technische brievenbus die door Adobe wordt geleid. Het e-mailadres van de gebruiker wordt vervolgens automatisch in quarantaine geplaatst met de status **[!UICONTROL Denylisted]**. Deze status verwijst alleen naar het adres, het profiel staat niet op de lijst van gewezen personen, zodat de gebruiker SMS-berichten en pushberichten blijft ontvangen.
 
 >[!NOTE]
 >
@@ -167,7 +166,7 @@ Hieronder volgen de geadviseerde richtlijnen voor deze vraag:
    * **status van de Update (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
    * **status van de Update (@lastModified)** op of vóór `MM/DD/YYYY HH:MM:SS PM`
 
-* Voor Campaign Classic v7-instanties met SMTP-stuitresponsinformatie in het veld **[!UICONTROL Error text]** van de quarantainelijst:
+* Voor Campaign Classic v7-instanties met SMTP-responsgegevens voor stuiteren in het veld **[!UICONTROL Error text]** van de quarantainelijst:
 
    * **de tekst van de Fout (quarantainetekst)** bevat &quot;550-5.1.1&quot;EN **Tekst van de Fout (quarantainetekst)** bevat &quot;support.ISP.com&quot;
 
@@ -279,7 +278,7 @@ Synchroon, als APNs een &quot;unregistered&quot;status voor een bericht terugkee
 
 **voor Android V1**
 
-Voor elke melding ontvangt Adobe Campaign de synchrone fouten rechtstreeks van de FCM-server. De campagne van de Adobe behandelt hen op de vlucht en produceert harde of zachte fouten volgens de strengheid van de fout en de pogingen kunnen worden uitgevoerd:
+Voor elke melding ontvangt Adobe Campaign de synchrone fouten rechtstreeks van de FCM-server. De Adobe-campagne handelt deze fouten direct af en genereert harde of zachte fouten afhankelijk van de ernst van de fout. U kunt de volgende pogingen uitvoeren:
 
 * Payloadlengte overschreden, verbindingsprobleem, probleem met beschikbaarheid van service: opnieuw uitgevoerd, soft error, reden van fout is **[!UICONTROL Refused]** .
 * Apparaatquota overschreden: geen nieuwe poging, soft error, reden van mislukking is **[!UICONTROL Refused]** .
@@ -602,7 +601,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-  Door gebrek, haalt regex **err:** gebied zoals die door de **wordt bepaald Bijlage B** sectie van de **4&rbrace; SMPP 3.4 specificatie**.
+  Door gebrek, haalt regex **err:** gebied zoals die door de **wordt bepaald Bijlage B** sectie van de **4} SMPP 3.4 specificatie**.
 
 * Alles wat na het buissymbool (|) komt wordt slechts getoond in de **[!UICONTROL First text]** kolom van de **[!UICONTROL Delivery log qualification]** lijst. Deze inhoud wordt altijd vervangen door **#MESSAGE#** nadat het bericht is genormaliseerd. Dit proces voorkomt het hebben van veelvoudige ingangen voor gelijkaardige fouten en is het zelfde als voor e-mail. Voor meer op dit, zie [ de postkwalificatie van de Stuiteren ](understanding-delivery-failures.md#bounce-mail-qualification).
 

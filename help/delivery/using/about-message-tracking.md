@@ -6,10 +6,10 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 9%
+source-wordcount: '684'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 9%
 
 Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bijhouden en het gedrag van ontvangers controleren: openen, klikken op koppelingen, Abonnement opzeggen, enzovoort.
 
-Deze informatie wordt opgehaald in het dialoogvenster **[!UICONTROL Tracking]** tabblad van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: URL klikte, de datum en de tijd van de klik, en het document waarin URL werd gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
+Deze informatie wordt opgehaald op het tabblad **[!UICONTROL Tracking]** van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: URL klikte, de datum en de tijd van de klik, en het document waarin URL werd gevonden.
 
-De **bezorgdashboard** is ook van essentieel belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie voor meer informatie [deze sectie](delivery-dashboard.md).
+Het **leveringsdashboard** is ook zeer belangrijk om uw leveringen en uiteindelijke kwesties te controleren die tijdens het verzenden van berichten worden ontmoet. Voor meer op dit verwijs naar [ deze sectie ](delivery-dashboard.md).
 
 Het volgende diagram toont de stadia van de dialoog tussen de gebruiker en de diverse servers.
 
@@ -35,11 +35,11 @@ Het volgende diagram toont de stadia van de dialoog tussen de gebruiker en de di
 
 Alvorens het volgen te gebruiken, moet u het voor uw instantie eerst vormen. [Meer informatie](../../installation/using/deploying-an-instance.md#operating-principle)
 
-**Trackingserver**
+**het Volgen server**
 
 Voor het configureren van tracering moet uw instantie worden gedeclareerd en geregistreerd bij de volgende server(s). [Meer informatie](../../installation/using/deploying-an-instance.md#tracking-server)
 
-**Tekstspatiëring opslaan**
+**het Opslaan het volgen**
 
 Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worden geregistreerd. [Meer informatie](../../installation/using/deploying-an-instance.md#saving-tracking)
 
@@ -47,19 +47,19 @@ Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worde
 
 <img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
 
-**Bijgehouden koppelingen**
+**Getraceerde verbindingen**
 
 U kunt de ontvangst van berichten en de activering van de verbindingen volgen die in de berichtinhoud worden opgenomen om het gedrag van ontvangers beter te begrijpen. [Meer informatie](how-to-configure-tracked-links.md)
 
-**URL-tracking**
+**URL het volgen**
 
 Traceringsopties kunnen worden geconfigureerd door bijgehouden URL&#39;s te activeren of deactiveren. [Meer informatie](personalizing-url-tracking.md)
 
-**Aanpassing van koppelingen**
+**Getraceerde verbinding verpersoonlijking**
 
-Met de mogelijkheden voor het bijhouden van Campaigns Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](tracking-personalized-links.md)
+Met de trackingsmogelijkheden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](tracking-personalized-links.md)
 
-**Logboeken bijhouden**
+**het Volgen logboeken**
 
 Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opgehaald nadat de levering is verzonden en de tekstspatiëring is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. [Meer informatie](accessing-the-tracking-logs.md)
 
@@ -83,7 +83,7 @@ Met de optie Web application tracking kunt u het webgedrag van eindgebruikers di
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**Trackingstatistieken**
+**het Volgen statistieken**
 
 Dit rapport bevat statistieken over openen, klikken en transacties en geeft u inzicht in de marketingeffecten van de levering. [Meer informatie](../../reporting/using/delivery-reports.md#tracking-statistics)
 
@@ -107,7 +107,7 @@ De verschillende tabellen geven u de lijst van indicatoren die in de verschillen
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Voor een geavanceerdere oplossing raadpleegt u [deze sectie](tracking-troubleshooting.md).
+De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Voor een geavanceerdere het oplossen van problemen, verwijs naar [ deze sectie ](tracking-troubleshooting.md).
 
 * Controleren of het trackinglogproces wordt uitgevoerd
 
@@ -115,7 +115,7 @@ De volgende tips voor het oplossen van problemen helpen u de meest voorkomende p
 
   U kunt het van de Homepage tot toegang hebben door het lusje van de Controle in uw geval te selecteren. U kunt ook de volgende opdracht op de instantie uitvoeren: `<user>@<instance>:~$ nlserver pdump`
 
-  Als het gevolgde logproces niet in de lijst verschijnt, lanceer het met het volgende bevel op de instantie: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Als het trackinglogd-proces niet in de lijst wordt weergegeven, start u het proces met de volgende opdracht in de lijst: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Controleer of de technische workflow voor bijhouden de laatste tijd is uitgevoerd.
 

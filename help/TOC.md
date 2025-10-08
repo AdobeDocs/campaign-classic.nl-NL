@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -59,13 +59,13 @@ ht-degree: 99%
          + [Automatisch proces voor privacyverzoeken](platform/using/privacy-requests-api.md)
       + [Afmelden voor de verkoop van persoonlijke gegevens](platform/using/privacy-requests-ccpa.md)
    + Profielmanagement {#profile-management}
-      + [Profielen](platform/using/about-profiles.md)
-      + [Een profiel bewerken](platform/using/editing-a-profile.md)
-      + [Profielen toevoegen](platform/using/adding-profiles.md)
-      + [Profielen beheren](platform/using/managing-profiles.md)
+      + [Over profielen](platform/using/about-profiles.md)
+      + [Een profiel bewerken - VERBORGEN](platform/using/editing-a-profile.md)
+      + [Profielen toevoegen - Verborgen](platform/using/adding-profiles.md)
+      + [Profielen beheren - Verborgen](platform/using/managing-profiles.md)
       + [Gegevens bijwerken](platform/using/updating-data.md)
-      + [Profielen importeren en exporteren](platform/using/exporting-and-importing-profiles.md)
-   + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
+      + [Profielen importeren en exporteren - VERBORGEN](platform/using/exporting-and-importing-profiles.md)
+      + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
    + Gegevens importeren en exporteren {#importing-and-exporting-data}
       + [Aan de slag met gegevens importeren en exporteren](platform/using/get-started-data-import-export.md)
       + [Workflows gebruiken om gegevens te importeren en exporteren](platform/using/import-export-workflows.md)
@@ -339,7 +339,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -382,11 +382,11 @@ ht-degree: 99%
       + [De integratie met [!DNL Adobe Target] configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [Aan de slag met [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
-      + [Doelgroepen synchroniseren](integrations/using/synchronizing-audiences.md)
-      + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
-      + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Aan de slag met  [!DNL ACS Connector]  - HIDDEN](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Profielen synchroniseren - VERBORGEN](integrations/using/synchronizing-profiles.md)
+      + [Synchroniseren, publiek - VERBORGEN](integrations/using/synchronizing-audiences.md)
+      + [Webtoepassingen synchroniseren - VERBORGEN](integrations/using/synchronizing-web-applications.md)
+      + [Los  [!DNL ACS Connector]  - VERBORGEN problemen op](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatiseren met workflows](workflow/using/about-workflow-automation.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Aan de slag met workflows {#introduction}
@@ -574,7 +574,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)

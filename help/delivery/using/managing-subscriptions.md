@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1103'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,11 @@ Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Al
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Voer in het veld **[!UICONTROL Label]** de naam van de service in en selecteer het leveringskanaal: email, mobile, Facebook, X (voorheen bekend als Twitter) of mobiele toepassingen.
+* Voer in het veld **[!UICONTROL Label]** de naam van de service in en selecteer het bezorgkanaal: email, mobile, Facebook, X (voorheen bekend als Twitter) of mobiele toepassingen.
 
   >[!NOTE]
   >
-  >Facebook en de abonnementen van X zijn gedetailleerd in [ deze sectie ](../../social/using/about-social-marketing.md). De mobiele toepassingsabonnementen zijn gedetailleerd in [ Ongeveer mobiel toepassingskanaal ](about-mobile-app-channel.md).
+  >De abonnementen van Facebook en van X zijn gedetailleerd in [ deze sectie ](../../social/using/about-social-marketing.md). De mobiele toepassingsabonnementen zijn gedetailleerd in [ Ongeveer mobiel toepassingskanaal ](about-mobile-app-channel.md).
 
 * Voor een E-mail type dienst, selecteer de **wijze van de Levering**. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]** .
 * U kunt **bevestigingsberichten** voor een abonnement of unsubscription verzenden. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de bijbehorende leveringen te maken in de velden **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]** . Deze sjablonen moeten worden geconfigureerd met een **[!UICONTROL Subscription]** type target-toewijzing, zonder een gedefinieerd doel. Zie sectie [ Ongeveer e-mailkanaal ](about-email-channel.md).
@@ -122,8 +122,6 @@ U kunt abonnements- en uitstapmechanismen instellen om de processen en het abonn
 Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
 * Voeg handmatig de service toe: hiervoor klikt u op het tabblad **[!UICONTROL Subscriptions]** van het bijbehorende profiel op **[!UICONTROL Add]** en selecteert u de desbetreffende informatieservice.
-
-  Voor meer op dit, verwijs naar de sectie over profiel het uitgeven in [ deze sectie ](../../platform/using/editing-a-profile.md).
 
 * Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Subscribe selection to a service...]** , selecteer de desbetreffende service en start de bewerking.
 * Importeer ontvangers en meld ze automatisch aan bij een informatieservice. Om dit te doen, selecteer de betrokken dienst in de laatste stap van de invoermedewerker.
