@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2557'
 ht-degree: 99%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 99%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -32,7 +32,7 @@ ht-degree: 99%
 + Aan de slag {#getting-started}
    + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
-   + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
+   + [Campagne-UI detecteren](platform/using/adobe-campaign-workspace.md)
    + [Campagneverkenner gebruiken - Verborgen](platform/using/adobe-campaign-explorer.md)
    + [Bladeren en lijsten aanpassen - Verborgen](platform/using/adobe-campaign-ui-lists.md)
    + [Opsommingen - VERBORGEN](platform/using/managing-enumerations.md)
@@ -339,7 +339,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -574,7 +574,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
