@@ -345,7 +345,7 @@ Leer meer over [&#x200B; de activiteit van de Verrijking &#x200B;](../../workflo
 
 Een opsomming is een gegevenstype dat in schema&#39;s of op het niveau van het Platform wordt bepaald dat de geldige inputwaarden voor een gebied bepaalt. Opsommingen worden in de gebruikersinterface en in querybuilders weergegeven als een keuzelijst.
 
-Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 +++
 
 +++**mening van de Ontdekkingsreiziger**
@@ -909,7 +909,7 @@ Leer meer over [&#x200B; Diensten &#x200B;](../../delivery/using/about-services-
 
 In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. Met het regelpaneel kunt u handelingen uitvoeren op uw SFTP-servers, zoals de opslagcapaciteit controleren, IP-adressen beheren voor aanbiedingen en het beheren van openbare SSH-sleutels.
 
-Leer meer over [&#x200B; Beheer SFTP &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Leer meer over [&#x200B; Beheer SFTP &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL).
 +++
 
 +++**de dienstenactiviteit van het Abonnement van 0&rbrace;**
