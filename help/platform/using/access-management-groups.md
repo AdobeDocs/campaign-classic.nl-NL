@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 1%
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing voor operatoren die verbinding maken met Campagne met de oudere native verificatie. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 Operatorgroepen worden gemaakt via het knooppunt **[!UICONTROL Administration > Access management > Operator groups]** in de structuur.
 
@@ -100,7 +100,7 @@ De standaardgroepen met operatoren zijn:
 
 1. **[!UICONTROL Offer managers]**
 
-   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Voor meer informatie over dit, verwijs naar deze [&#x200B; pagina &#x200B;](../../interaction/using/operator-profiles.md).
+   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Voor meer informatie over dit, verwijs naar deze [ pagina ](../../interaction/using/operator-profiles.md).
 Deze groep bevat de volgende benoemde rechten:
 
    * **[!UICONTROL INSERT FOLDERS]**: recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen),
