@@ -62,7 +62,7 @@ Klik hiertoe op de koppeling **[!UICONTROL Edit query]** en selecteer het filter
 
 ![](assets/offer_eligibility_create_003.png)
 
-Als er al vooraf gedefinieerde filters zijn gemaakt, kunt u deze selecteren in de lijst met gebruikersfilters. Voor meer op dit, verwijs naar [ Creërend vooraf bepaalde filters ](../../interaction/using/creating-predefined-filters.md).
+Als er al vooraf gedefinieerde filters zijn gemaakt, kunt u deze selecteren in de lijst met gebruikersfilters. Voor meer op dit, verwijs naar [&#x200B; Creërend vooraf bepaalde filters &#x200B;](../../interaction/using/creating-predefined-filters.md).
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -76,7 +76,7 @@ Bijvoorbeeld, kan een aanbieding een gewicht van A voor contacten hebben tussen 
 
 >[!NOTE]
 >
->Het toegewezen gewicht kan tijdelijk worden gewijzigd op basis van de parameters van de categorie waartoe de aanbieding behoort. Voor meer op dit, verwijs naar [ Creërend aanbiedingscategorieën ](../../interaction/using/creating-offer-categories.md).
+>Het toegewezen gewicht kan tijdelijk worden gewijzigd op basis van de parameters van de categorie waartoe de aanbieding behoort. Voor meer op dit, verwijs naar [&#x200B; Creërend aanbiedingscategorieën &#x200B;](../../interaction/using/creating-offer-categories.md).
 
 Voer de volgende stappen uit om een dikte in een aanbieding te maken:
 
@@ -148,11 +148,11 @@ Klik op de koppeling **[!UICONTROL Schedule and eligibility rules]** om deze wee
       </div>
    ```
 
-   Het bepalen van acceptatie URL wordt voorgesteld in [ Vormend de status wanneer het voorstel ](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) sectie wordt goedgekeurd.
+   Het bepalen van acceptatie URL wordt voorgesteld in [&#x200B; Vormend de status wanneer het voorstel &#x200B;](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) sectie wordt goedgekeurd.
 
    ![](assets/offer_content_create_002.png)
 
-   Als u de vereiste velden wilt zoeken zoals deze zijn gedefinieerd tijdens de configuratie van de aanbiedingsruimte, klikt u op de koppeling **[!UICONTROL Content definitions]** om de lijst weer te geven. Voor meer op dit, verwijs naar [ Creërend aanbiedingsruimten ](../../interaction/using/creating-offer-spaces.md).
+   Als u de vereiste velden wilt zoeken zoals deze zijn gedefinieerd tijdens de configuratie van de aanbiedingsruimte, klikt u op de koppeling **[!UICONTROL Content definitions]** om de lijst weer te geven. Voor meer op dit, verwijs naar [&#x200B; Creërend aanbiedingsruimten &#x200B;](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -184,6 +184,6 @@ Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw 
 
 Op het tabblad **[!UICONTROL Measure]** wordt verwezen naar de hypothesen die worden uitgevoerd op een aanbiedingsvoorstel.
 
-Het creëren van hypotheses is gedetailleerd in [ deze pagina ](../../response/using/about-response-manager.md).
+Het creëren van hypotheses is gedetailleerd in [&#x200B; deze pagina &#x200B;](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)
