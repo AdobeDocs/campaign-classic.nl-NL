@@ -5,9 +5,9 @@ description: Leer hoe u in een enquête verzamelde gegevens publiceert, bijhoudt
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -162,4 +162,4 @@ Bewerk het gesplitste vak om het te configureren:
 
 ## Gegevens standaardiseren {#standardizing-data}
 
-Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. [Meer informatie](../../platform/using/managing-enumerations.md#about-enumerations)
+Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Hiermee kunt u de gegevens die in de database zijn opgeslagen, standaardiseren: hiervoor definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.

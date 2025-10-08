@@ -7,9 +7,9 @@ feature: Campaigns, Templates
 hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Volg onderstaande stappen om een campagnemalplaatje te maken:
 1. Maak uw workflow naar wens.
 1. Klik **sparen**. Uw sjabloon is nu klaar om in een campagne te worden gebruikt.
 
-U kunt **&#x200B;**&#x200B;het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
+U kunt **** het standaardmalplaatje ook dupliceren om zijn configuratie opnieuw te gebruiken en aan te passen.
 
 De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn montages toegang te hebben, die in [ Algemene configuratie ](#general-configuration) worden beschreven.
 
@@ -157,7 +157,7 @@ Wanneer u een campagnemalplaatje creeert, moet u de volgende informatie ingaan:
 
   >[!NOTE]
   >
-  >Voor meer informatie over opsommingen, verwijs naar [ Begonnen het Worden ](../../platform/using/managing-enumerations.md) sectie.
+  >Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 * Selecteer het **type van campagne**: uniek, terugkerend, of periodiek. Standaard worden campagnemasjablonen toegepast op unieke campagnes. Het terugkomen en periodieke campagnes worden gedetailleerd in [ deze sectie ](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Geef de duur van de campagne op, d.w.z. het aantal dagen waarop de campagne zal plaatsvinden. Wanneer u een campagne maakt op basis van deze sjabloon, worden de begin- en einddatums van de campagne automatisch ingevuld.

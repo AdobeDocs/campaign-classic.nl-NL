@@ -5,9 +5,9 @@ description: Voorbeelden van schemabewerking
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## Een tabel uitbreiden {#extending-a-table}
 
-Om **nms uit te breiden:ontvankelijke** schema ontvankelijke lijst, pas de volgende procedure toe:
+Om de **nms:recipient** schema ontvankelijke lijst uit te breiden, pas de volgende procedure toe:
 
-1. Creeer het extensieschema (**focus:uitbreiding**) gebruikend de volgende gegevens:
+1. Creeer het extensieschema (**focus:extension**) gebruikend de volgende gegevens:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ Om **nms uit te breiden:ontvankelijke** schema ontvankelijke lijst, pas de volge
    </srcSchema>
    ```
 
-   In dit voorbeeld, wordt een geïndexeerd gebied (**getrouwheid**) toegevoegd, en het **plaats** element (dat reeds in **nms bestond:ontvankelijk** schema) wordt aangevuld met een opgesomd gebied (**gebied**).
+   In dit voorbeeld, wordt een geïndexeerd gebied (**getrouwheid**) toegevoegd, en het **plaats** element (dat reeds in het **nms:recipient** schema) bestond wordt aangevuld met een opgesomd gebied (**gebied**).
 
    >[!IMPORTANT]
    >
    >Herinner me om de **extendedSchema** attributen toe te voegen om het uitbreidingsschema van verwijzingen te voorzien.
 
-1. Controle dat het uitgebreide schema **nms is:ontvangend** schema en dat de extra gegevens aanwezig zijn:
+1. Controleer dat het uitgebreide schema het **nms:recipient** schema is en dat de extra gegevens aanwezig zijn:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -153,7 +153,7 @@ Met een extensietabel kunt u de inhoud van een bestaande tabel in een gekoppelde
 
 Het doel van een extensietabel is het voorkomen van beperkingen op het aantal velden dat in een tabel wordt ondersteund, of het optimaliseren van de ruimte die wordt ingenomen door de gegevens, die op verzoek worden gebruikt.
 
-Creërend het schema van de uitbreidingslijst (**focus:eigenschap**):
+Creërend het schema van de uitbreidingslijst (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ Een overlooplijst is een uitbreidingslijst (kardinaliteit 1-1), maar de verklari
 
 De overlooptabel bevat de vreemde sleutel voor de uit te breiden tabel. De uit te breiden tabel wordt derhalve niet gewijzigd. De relatie tussen de twee tabellen is de waarde van de primaire sleutel van de uit te breiden tabel.
 
-Creërend het overlooplijstschema (**concentreert:overflow**):
+Creërend het overlooplijstschema (**concentreert zich:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -222,7 +222,7 @@ Creërend het overlooplijstschema (**concentreert:overflow**):
 
 >[!NOTE]
 >
->De primaire sleutel van de overlooplijst is de verbinding aan de uit te breiden lijst (&quot;nms:ontvangend&quot;schema in ons voorbeeld).
+>De primaire sleutel van de overlooplijst is de verbinding aan de uit te breiden lijst (&quot;nms :recipient&quot;schema in ons voorbeeld).
 
 Het SQL-script voor het maken van tabellen ziet er als volgt uit:
 
@@ -235,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Met een relatietabel kunt u twee tabellen koppelen aan de kardinaliteit N-N. Deze tabel bevat alleen de externe sleutels van de tabellen die moeten worden gekoppeld.
 
-Voorbeeld van een relatietabel tussen groepen (**nms:groep**) en ontvangers (**nms:ontvanger**).
+Voorbeeld van een relatietabel tussen groepen (**nms:group**) en ontvangers (**nms:recipient**).
 
 Source-schema van de relatietabel:
 
@@ -335,8 +335,9 @@ In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wannee
 
 ## Verwante onderwerpen
 
-* [Werken met opsommingen](../../platform/using/managing-enumerations.md)
+* Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 * [Aan de slag met campagnereschema&#39;s](../../configuration/using/about-schema-edition.md)
 
 * [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md)
+
