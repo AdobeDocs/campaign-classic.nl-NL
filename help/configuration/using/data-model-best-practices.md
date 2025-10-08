@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Dit document bevat belangrijke aanbevelingen bij het ontwerpen van uw Adobe Campaign-gegevensmodel.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [ deze sectie ](../../configuration/using/about-data-model.md) sectie.
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-data-model.md) sectie.
 
-Lees uit [ deze documentatie ](../../configuration/using/about-schema-reference.md) om met de schema&#39;s van de Campagne begonnen te worden. Leer hoe te om uitbreidingsschema&#39;s te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign in [ uit te breiden dit document ](../../configuration/using/about-schema-edition.md).
+Lees uit [&#x200B; deze documentatie &#x200B;](../../configuration/using/about-schema-reference.md) om met de schema&#39;s van de Campagne begonnen te worden. Leer hoe te om uitbreidingsschema&#39;s te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign in [&#x200B; uit te breiden dit document &#x200B;](../../configuration/using/about-schema-edition.md).
 
 ## Overzicht {#overview}
 
@@ -39,11 +39,11 @@ Deze klantgerichte benadering wordt getoond in de grafiek hieronder. De **Beguns
 
 Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** om de beschrijving van elke tabel te openen, selecteer een bron in de lijst en klik op de tab **[!UICONTROL Documentation]** .
 
-Het standaardgegevensmodel van Adobe Campaign wordt voorgesteld in [ dit document ](../../configuration/using/data-model-description.md).
+Het standaardgegevensmodel van Adobe Campaign wordt voorgesteld in [&#x200B; dit document &#x200B;](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Adobe Campaign Classic staat toe om een lijst van de douaneklanten te bouwen. Nochtans, in de meeste gevallen, wordt het geadviseerd om de standaard [ Ontvankelijke lijst ](../../configuration/using/about-data-model.md#default-recipient-table) te hefboomwerking die reeds extra lijsten en eigenschappen heeft vooraf gebouwd.
+>Adobe Campaign Classic staat toe om een lijst van de douaneklanten te bouwen. Nochtans, in de meeste gevallen, wordt het geadviseerd om de standaard [&#x200B; Ontvankelijke lijst &#x200B;](../../configuration/using/about-data-model.md#default-recipient-table) te hefboomwerking die reeds extra lijsten en eigenschappen heeft vooraf gebouwd.
 
 ### Gegevens voor Adobe Campaign {#data-for-campaign}
 
@@ -76,11 +76,11 @@ Volg de onderstaande aanbevolen procedures om gegevens in te stellen in Adobe Ca
 
 Een veld moet in een tabel worden opgeslagen als het een doel of een doel voor personalisatie heeft. Met andere woorden, als een veld niet wordt gebruikt om een gepersonaliseerde e-mail te verzenden of als criterium wordt gebruikt in een query, neemt het schijfruimte in beslag terwijl het nutteloos is.
 
-Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Voor meer op dit, zie [ Ongeveer Verdeelde Toegang van Gegevens ](../../installation/using/about-fda.md).
+Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Voor meer op dit, zie [&#x200B; Ongeveer Verdeelde Toegang van Gegevens &#x200B;](../../installation/using/about-fda.md).
 
 ### Keuze van sleutels {#choice-of-keys}
 
-Naast de **die automatisch** wordt bepaald door gebrek in de meeste lijsten, zou u moeten overwegen sommige logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. Voor meer op dit, zie [ Herkenningstekens ](#identifiers).
+Naast de **die automatisch** wordt bepaald door gebrek in de meeste lijsten, zou u moeten overwegen sommige logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. Voor meer op dit, zie [&#x200B; Herkenningstekens &#x200B;](#identifiers).
 
 Efficiënte toetsen zijn essentieel voor de prestaties. Numerieke gegevenstypen verdienen altijd de voorkeur als toetsen voor tabellen.
 
@@ -146,7 +146,7 @@ Wanneer in Adobe Campaign een aangepaste tabel wordt gemaakt met een primaire sl
 
 Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit zou met zorg moeten worden gebruikt en één identiteitskaart zal wanneer het oversteken van negatieve aan positieve aantallen verloren gaan: het verslag 0 wordt typisch genegeerd door Adobe Campaign in geproduceerde SQL vragen.
 
-Voor meer op opeenvolgingen uitputting, bekijk [ deze video ](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Voor meer op opeenvolgingen uitputting, bekijk [&#x200B; deze video &#x200B;](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indexen {#indexes}
 
@@ -246,9 +246,9 @@ Standaard hebben Adobe Campaign-leverings- en trackinglogboeken een retentieduur
 * Als u logboeken langer wilt houden, zou dit besluit zorgvuldig afhankelijk van de gegevensbestandgrootte en het volume van verzonden berichten moeten worden genomen. Ter herinnering: Adobe Campaign-reeks is een 32-bits geheel getal.
 * Aanbevolen wordt niet meer dan 1 miljard records tegelijk in deze tabellen te hebben (ongeveer 50% van de 2,14 miljard beschikbare ids) om het risico van het gebruik van alle beschikbare id&#39;s te beperken. Dit zal voor sommige klanten vereisen om de behoudsduur onder 180 dagen te verminderen.
 
-Leer meer over gegevensbehoud in [ de richtlijnen van de Privacy en van de Veiligheid van de Campagne ](../../platform/using/privacy-and-recommendations.md).
+Leer meer over gegevensbehoud in [&#x200B; de richtlijnen van de Privacy en van de Veiligheid van de Campagne &#x200B;](../../platform/using/privacy-and-recommendations.md).
 
-Leer meer over het opschoonwerkschema van de Gegevens van de Campagne [ in deze sectie ](../../production/using/database-cleanup-workflow.md).
+Leer meer over het opschoonwerkschema van de Gegevens van de Campagne [&#x200B; in deze sectie &#x200B;](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -302,7 +302,7 @@ De tabelgrootte is een combinatie van het aantal records en het aantal kolommen 
 * A **groot-grootte** lijst is gelijkaardig aan de Grote logboeklijst. Het heeft vele verslagen per klant.
 Bijvoorbeeld, als uw gegevensbestand 10 miljoen ontvangers bevat, bevat de Brede logboeklijst ongeveer 100 tot 200 miljoen berichten, en de lijst van de Levering bevat een paar duizend verslagen.
 
-Voor PostgreSQL, zou een rij 8KB niet moeten overschrijden om [ TOAST ](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en CPU) te bewaren.
+Voor PostgreSQL, zou een rij 8KB niet moeten overschrijden om [&#x200B; TOAST &#x200B;](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en CPU) te bewaren.
 
 Het aantal rijen heeft ook invloed op de prestaties. De Adobe Campaign-database is niet bedoeld voor het opslaan van historische gegevens die niet actief worden gebruikt voor het maken van doelen of het maken van persoonlijke gegevens. Dit is een operationele database.
 

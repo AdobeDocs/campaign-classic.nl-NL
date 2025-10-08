@@ -21,7 +21,7 @@ Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten bij
 
 Deze informatie wordt opgehaald op het tabblad **[!UICONTROL Tracking]** van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: URL klikte, de datum en de tijd van de klik, en het document waarin URL werd gevonden.
 
-Het **leveringsdashboard** is ook zeer belangrijk om uw leveringen en uiteindelijke kwesties te controleren die tijdens het verzenden van berichten worden ontmoet. Voor meer op dit verwijs naar [ deze sectie ](delivery-dashboard.md).
+Het **leveringsdashboard** is ook zeer belangrijk om uw leveringen en uiteindelijke kwesties te controleren die tijdens het verzenden van berichten worden ontmoet. Voor meer op dit verwijs naar [&#x200B; deze sectie &#x200B;](delivery-dashboard.md).
 
 Het volgende diagram toont de stadia van de dialoog tussen de gebruiker en de diverse servers.
 
@@ -107,7 +107,7 @@ De verschillende tabellen geven u de lijst van indicatoren die in de verschillen
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Voor een geavanceerdere het oplossen van problemen, verwijs naar [ deze sectie ](tracking-troubleshooting.md).
+De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Voor een geavanceerdere het oplossen van problemen, verwijs naar [&#x200B; deze sectie &#x200B;](tracking-troubleshooting.md).
 
 * Controleren of het trackinglogproces wordt uitgevoerd
 
