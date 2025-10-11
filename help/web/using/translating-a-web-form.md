@@ -70,7 +70,7 @@ Voor tekenreeksen die nog niet zijn omgezet, is het veld **[!UICONTROL Text]** l
 
 ### Tekenreeksen filteren {#filtering-strings}
 
-Door gebrek, wordt elke vertaaltaal van de toepassing van het Web getoond. Er zijn twee standaardfilters: taal en status. Klik op de knop **[!UICONTROL Filters]** en klik vervolgens op **[!UICONTROL By language or status]** om de overeenkomende vervolgkeuzelijsten weer te geven. U kunt ook een geavanceerd filter maken. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Door gebrek, wordt elke vertaaltaal van de toepassing van het Web getoond. Er zijn twee standaardfilters: taal en status. Klik op de knop **[!UICONTROL Filters]** en klik vervolgens op **[!UICONTROL By language or status]** om de overeenkomende vervolgkeuzelijsten weer te geven. U kunt ook een geavanceerd filter maken. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

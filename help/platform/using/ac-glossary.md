@@ -795,7 +795,7 @@ Leer meer over [&#x200B; Abonnementen &#x200B;](../../campaign/using/setting-up-
 
 Vooraf gedefinieerde filters zijn query&#39;s die zijn opgeslagen voor hergebruik. Het gebruik van vooraf gedefinieerde filters verhoogt de productiviteit (omdat ze slechts eenmaal zijn gemaakt), helpt u de consistentie te vergroten (omdat alle marketers ze kunnen gebruiken) en de vaardigheden te verlagen die de markeerder nodig heeft omdat ze code of logica kunnen gebruiken die ze mogelijk niet zelf kunnen maken.
 
-Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--

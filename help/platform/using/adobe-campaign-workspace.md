@@ -123,7 +123,7 @@ Het filtreren van gegevens is het proces om een dataset aan slechts die verslage
 
 Tijdens het bladeren in Campagne worden gegevens weergegeven in lijsten. U kunt ingebouwde filters toepassen om tot een bepaalde ondergroep, zoals quarantined adressen, niet-gerichte ontvangers, of verslagen binnen een specifieke leeftijdswaaier of aanmaakdatum snel toegang te hebben. Bovendien kunt u aangepaste filters maken, deze opslaan voor toekomstig gebruik en deze delen met andere campagnegebruikers.
 
-Leer hoe te **toegang, ontwerp en aandeelfilters** in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Leer hoe te **toegang, ontwerp en aandeelfilters** in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Werken met lijsten {#manage-and-customize-lists}
