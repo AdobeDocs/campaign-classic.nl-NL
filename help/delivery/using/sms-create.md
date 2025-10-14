@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +22,14 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in [ deze sectie ](steps-about-delivery-creation-steps.md).
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [ Verandering de 1&rbrace; sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
+1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [ Verandering de 1} sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Klik op **[!UICONTROL Continue]** om deze informatie te bevestigen en het venster voor berichtconfiguratie weer te geven.
 
 ## De SMS-inhoud definiëren {#defining-the-sms-content}

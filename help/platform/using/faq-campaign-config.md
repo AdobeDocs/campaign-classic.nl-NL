@@ -8,10 +8,10 @@ content-type: reference
 level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 70%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -51,7 +51,7 @@ Naast de [ Gids van de Beste praktijken van de Levering van Adobe ](https://expe
 
 Met Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste stappen van de marketingcampagne in de collaboratieve modus. Voor elke campagne kunt u het leveringsdoel, de content en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen.
 
-[Klik hier voor meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) en ontdek de stappen om goedkeuring van de leveringscontent in Campaign uit te voeren.
+Ontdek hoe te om uw goedkeuring van de leveringsinhoud in de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"} uit te voeren.
 
 ## Hoe kan ik tot gegevens toegang hebben die in een extern gegevensbestand worden opgeslagen? {#how-can-i-access-data-stored-in-an-external-database-}
 

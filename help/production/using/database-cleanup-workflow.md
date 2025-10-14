@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2827'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De database wordt op twee niveaus opgeschoond: in de workflowplanner en in de im
 
 >[!NOTE]
 >
->Voor meer op de planner, verwijs naar [ deze sectie ](../../workflow/using/scheduler.md).
+>Voor meer op de planner, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 Standaard is de **[!UICONTROL Database cleanup]** -workflow zo geconfigureerd dat deze elke dag om 4.00 uur wordt gestart. De planner laat u het werkschema veranderen die frequentie teweegbrengen. De volgende frequenties zijn beschikbaar:
 
@@ -49,7 +49,7 @@ Standaard is de **[!UICONTROL Database cleanup]** -workflow zo geconfigureerd da
 
 ### implementatiewizard {#deployment-assistant}
 
-Via het menu **[!UICONTROL Tools > Advanced]** , dat u opent via **[!UICONTROL deployment wizard]** , kunt u configureren hoe lang gegevens worden opgeslagen voor. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
+Via het menu **[!UICONTROL deployment wizard]** , dat u opent via **[!UICONTROL Tools > Advanced]** , kunt u configureren hoe lang gegevens worden opgeslagen voor. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -457,7 +457,7 @@ Met deze taak kunt u de leveringslogboeken die in verschillende tabellen zijn op
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
-1. Wanneer het gebruiken van midsourcing, wordt de **NmsBroadLogMid** lijst niet van verwijzingen voorzien in leveringsafbeeldingen. Het **nms:wideLogMid** schema wordt toegevoegd aan de lijst die door de vorige vraag wordt teruggekregen.
+1. Wanneer het gebruiken van midsourcing, wordt de **NmsBroadLogMid** lijst niet van verwijzingen voorzien in leveringsafbeeldingen. Het **nms:broadLogMid** schema wordt toegevoegd aan de lijst die door de vorige vraag wordt teruggekregen.
 1. De **schoonmaakbeurt van het Gegevensbestand** werkschema wint dan verouderde gegevens van eerder teruggekregen lijsten. De volgende query wordt gebruikt:
 
    ```sql

@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gew
 
 ![](assets/offer_delivery_009.png)
 
-Leer meer over directe postleveringen [ in deze sectie ](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes [ in deze sectie ](../../campaign/using/setting-up-marketing-campaigns.md).
+Leer meer over directe postleveringen [ in deze sectie ](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
 ### Belangrijkste stappen voor het invoegen van een aanbieding in een levering {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -90,7 +90,7 @@ De levering kan worden gepersonaliseerd met de velden van de aanbieding of, in h
 
 Je kunt ook voorstellen in een levering presenteren met een leveringsoverzicht.
 
-Voor meer informatie over leveringsoverzichten, verwijs naar de [ Campagne - MRM ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) gids.
+Voor meer informatie over leveringsoverzichten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Maak een nieuwe campagne of open een bestaande campagne.
 1. Open de leveringscontouren via het tabblad **[!UICONTROL Edit]** > **[!UICONTROL Documents]** van de campagne.

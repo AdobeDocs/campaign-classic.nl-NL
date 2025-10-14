@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 75%
+source-wordcount: '262'
+ht-degree: 59%
 
 ---
 
@@ -28,12 +28,11 @@ U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole
 
 Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/import-operations-samples.md) in uw database.
 
-![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=nl-NL)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Hoe kan ik de doelpopulatie van een marketingcampagne definiëren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-U kunt [workflows gebruiken om een doelpopulatie te maken](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor een marketingcampagne.
-
+U kunt workflows gebruiken om doelgroepen van een marketingcampagne te maken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
 
 ## Hoe kan ik een lijst met profielen maken? {#how-can-i-create-a-list-of-profiles-}
 
@@ -41,13 +40,13 @@ Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd 
 
 [Klik hier voor meer informatie](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=nl-NL) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=nl-NL)
+![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Hoe kan ik een populatie dedupliceren voordat ik een bericht verstuurt? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 U kunt een workflow gebruiken om dubbele data uit te sluiten van het doel van een levering, om te voorkomen dat hetzelfde bericht meerdere keren naar een ontvanger wordt verzonden.
 
-[Klik hier voor meer informatie](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) via een voorbeeld.
+Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ## Hoe te om abonnees aan een nieuwsbrief te identificeren en te richten? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -55,4 +54,4 @@ Ontdek lidmaatschapsbeheer in Campaign en leer hoe u [een bericht naar leden kun
 
 ## Wat is de beste praktijk om profielen uit te sluiten van een doelpopulatie? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Lees [deze pagina](../../workflow/using/read-list.md) om te leren hoe u een lijst met profielen kunt uitsluiten van de doelpopulatie.
+Leer hoe te om een lijst van profielen van uw doelbevolking in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"} uit te sluiten.

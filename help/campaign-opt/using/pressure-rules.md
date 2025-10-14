@@ -7,9 +7,9 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3335'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Voor meer op dit, verwijs naar [ Toepassend typologieën ](about-campaign-typologies.md#applying-typologies).
+1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 ## Drempels en gewichten definiëren {#defining-thresholds-and-weights}
 
@@ -300,7 +300,7 @@ Pas de volgende configuratiestappen toe:
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3&rbrace; gebied van de Eigenschap.**
+1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3} gebied van de Eigenschap.**
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 

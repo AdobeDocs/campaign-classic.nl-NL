@@ -6,10 +6,10 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 4%
 
 ---
 
@@ -25,11 +25,11 @@ Volg de onderstaande principes bij het ontwerpen van uw berichtinhoud:
 * [ verbinding Unsubscription ](#opt-out) en landende pagina: de unsubscription verbinding is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn.
 * Voorproef: gebruik de hulpmiddelen die door Adobe Campaign worden aangeboden om de inhoud van uw e-mail te controleren en te optimaliseren ([ Inbox teruggevend ](#message-responsiveness), [ SpamAssassin ](#spamassassin)).
 
-Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de [&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=nl-NL) Gids van de Beste praktijken van de Levering van de Adobe van 0&rbrace;.
+Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
 
 >[!NOTE]
 >
->Voor meer informatie bij het uitgeven van e-mailinhoud, zie [ de e-mailinhoud ](defining-the-email-content.md) bepalen.
+>Voor meer informatie bij het uitgeven van e-mailinhoud, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Adres van afzender {#sender-address}
 
@@ -37,7 +37,7 @@ Bepaalde ISPs controleren de geldigheid van het afzenderadres (**[!UICONTROL Fro
 
 U moet ervoor zorgen dat het juiste adres wordt opgegeven op instantieniveau (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) of in de meest gebruikte scenario&#39;s.
 
-Ga voor meer informatie naar [deze pagina](defining-the-email-content.md).
+Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Personalization {#personalization}
 
@@ -47,7 +47,7 @@ Voor meer bij het gebruiken van verpersoonlijkingsgebieden in Adobe Campaign, zi
 
 ## Koppeling en formulier uitschakelen {#opt-out}
 
-Door gebrek, wanneer het bericht wordt geanalyseerd, controleert de a [ typologieregel ](steps-validating-the-delivery.md#validation-process-with-typologies) of een opt-out verbinding is omvat en produceert een waarschuwing als het mist. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling.
+Wanneer het bericht wordt geanalyseerd, controleert standaard een typologische regel of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling. Zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 U moet controleren of de koppeling om te weigeren correct werkt voordat u de koppeling verzendt. Wanneer u bijvoorbeeld de proefdruk verzendt, moet u controleren of de koppeling geldig is, of het formulier online is en of bij validatie de waarde van het veld **[!UICONTROL No longer contact this recipient]** wordt gewijzigd in **[!UICONTROL Yes]** . Deze controle moet u systematisch uitvoeren, omdat een menselijke fout altijd mogelijk is bij het invoeren van de koppeling of bij het wijzigen van het formulier.
 

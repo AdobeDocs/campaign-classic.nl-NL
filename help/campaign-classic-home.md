@@ -3,9 +3,9 @@ keywords: Campaign Classic; startpagina; populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 97%
 
 ---
@@ -60,7 +60,7 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
     <div><strong>Automatiseren met workflows</strong><br/>Leer hoe u workflows kunt gebruiken om processen te ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, participatie van personen.
     </div></td>
     <td>
-    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
     <div><strong>Resultaten verzorgen</strong><br/>Leer hoe u berichten kunt verzenden via verschillende kanalen zoals e-mail, sms en pushberichten.</div>
     </td>
   </tr>
@@ -68,7 +68,7 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -84,7 +84,7 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Ervaring van de klant</strong><br/><a href="workflow/using/about-workflows.md">Automatiseren met workflows</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Marketingcampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interactie- en aanbodbeheer</a> - <a href="delivery/using/about-personalization.md">Personalisatie</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportage</a>
+      <strong>Ervaring van de klant</strong><br/><a href="workflow/using/about-workflows.md">Automatiseren met workflows</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Marketingcampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interactie- en aanbodbeheer</a> - <a href="delivery/using/about-personalization.md">Personalisatie</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportage</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

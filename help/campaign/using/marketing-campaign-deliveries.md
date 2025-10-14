@@ -7,9 +7,9 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow
 
 Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
 
-![](assets/do-not-localize/how-to-video.png) [ ontdekt deze eigenschap in video ](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[ ontdekt deze eigenschap in video ](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -28,7 +28,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md).
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Levering starten {#starting-a-delivery}
 

@@ -7,9 +7,9 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ Bovendien laat de **module van het Middel van de Marketing van het Middel (MRM)*
 >[!NOTE]
 >
 >Voor meer op de kernfuncties van Adobe Campaign, verwijs naar [ deze sectie ](../../platform/using/about-adobe-campaign-classic.md) sectie.\
->De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in [ deze sectie ](../../delivery/using/steps-about-delivery-creation-steps.md).
+>De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [ ontdekt marketing campagnes zeer belangrijke concepten in video ](#video)
 

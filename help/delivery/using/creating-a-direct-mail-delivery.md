@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 10%
+source-wordcount: '105'
+ht-degree: 9%
 
 ---
 
@@ -21,12 +21,12 @@ Voer de volgende stappen uit om een nieuwe levering via e-mail te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in [&#x200B; deze sectie &#x200B;](steps-about-delivery-creation-steps.md).
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
 1. Selecteer het leveringsmalplaatje **leveren door directe post (document)**.
 
    ![](assets/direct_mail.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar [&#x200B; deze sectie &#x200B;](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Klik **verdergaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.

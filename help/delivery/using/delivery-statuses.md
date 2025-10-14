@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Zodra een levering is verzonden, toont het leveringsdashboard een status die u t
 
 ![](assets/delivery-status.png)
 
-Voor meer details over de verschillende leveringsmislukkingen kunt u ontmoeten, en hoe te om hen op te lossen, verwijs naar [deze pagina](understanding-delivery-failures.md).
+Voor meer details op de verschillende leveringsmislukkingen kunt u ontmoeten, en hoe te om hen op te lossen, verwijs naar [ deze pagina ](understanding-delivery-failures.md).
 
 **Verwante onderwerpen:**
 
@@ -38,64 +38,64 @@ Voor meer details over de verschillende leveringsmislukkingen kunt u ontmoeten, 
 <table> 
  <thead> 
   <tr> 
-   <th> Status<br /> </th> 
-   <th> Definities en oplossingen<br /> </th> 
+   <th> Status <br /> </th> 
+   <th> Definities en oplossingen <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Verzonden<br /> </td> 
-   <td> De levering werd correct verzonden naar de berichtenleverancier (maar de ontvanger ontving het niet noodzakelijk).<br /> </td> 
+   <td> De levering werd correct verzonden naar de berichtleverancier (maar de ontvanger niet noodzakelijk het ontving).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Genegeerd<br /> </td> 
+   <td> Genegeerd <br /> </td> 
    <td> De levering is niet naar de ontvanger verzonden vanwege een fout met hun adres. Het was of op lijst van gewezen personen, quarantined, niet verstrekt of een duplicaat. <br /> </td> 
   </tr> 
   <tr> 
-   <td> Mislukt<br /> </td> 
-   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="understanding-delivery-failures.md" target="_blank">Uitvoerfouten</a><br /> </td> 
+   <td> Mislukt <br /> </td> 
+   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="understanding-delivery-failures.md" target="_blank"> Begrip leveringsmislukkingen </a><br /> </td> 
   </tr>
   <tr> 
-   <td> In behandeling<br /> </td> 
-   <td> De levering is klaar om te worden verzonden en zal door de leveringsserver (MTA) worden verwerkt. Zie <a href="#pending-status" target="_blank">Status in behandeling</a>.<br /> </td> 
+   <td> In behandeling <br /> </td> 
+   <td> De levering is klaar om te worden verzonden en zal door de leveringsserver (MTA) worden verwerkt. Zie <a href="#pending-status" target="_blank"> Hangende status </a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Niet van toepassing<br /> </td> 
+   <td> Niet van toepassing <br /> </td> 
    <td> De levering werd in aanmerking genomen door de server (MTA) maar niet verwerkt.<br /> </td> 
   </tr>  
   <tr> 
-   <td> Aflevering geannuleerd<br /> </td> 
-   <td> De levering is geannuleerd door een operator.<br /> </td> 
+   <td> Aflevering geannuleerd <br /> </td> 
+   <td> De levering werd geannuleerd door een exploitant.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Door de dienstverlener in aanmerking genomen<br /> </td> 
-   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor gehoste of hybride installaties, als u een upgrade hebt uitgevoerd naar de <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
+   <td> Rekening gehouden met door de dienstverlener <br /> </td> 
+   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> voor ontvangen of hybride installaties, als u aan <a href="sending-with-enhanced-mta.md" target="_blank"> Verbeterde MTA </a> hebt bevorderd, werd het bericht met succes van Campagne aan Verbeterde MTA met succes afgelost.</td> 
   </tr> 
   <tr> 
-   <td> Ontvangen op mobiel<br /> </td> 
-   <td> De ontvanger heeft het SMS op zijn mobiele apparaat ontvangen.<br /> </td> 
+   <td> Ontvangen op mobiel <br /> </td> 
+   <td> De ontvanger ontving SMS op hun mobiele apparaat.<br /> </td> 
   </tr>
   <tr> 
-   <td> Verzonden naar de serviceprovider<br /> </td> 
+   <td> Verzonden aan de dienstverlener <br /> </td> 
    <td> De levering werd verzonden naar de dienstverlener van SMS maar nog niet ontvangen.<br />
    </td> 
   </tr> 
   <tr> 
-   <td> Voorbereid<br /> </td> 
-   <td> De intermediaire status die slechts voor externe schakelaars zoals het mobiele kanaal wordt gebruikt. Het volgt de status "In afwachting"en is de externe schakelaar die de volgende status zal bepalen.<br /> </td> 
+   <td> Voorbereid <br /> </td> 
+   <td> De intermediaire status die slechts voor externe schakelaars zoals het mobiele kanaal wordt gebruikt. Het volgt de "Hangende"status en is de externe schakelaar die de volgende status zal bepalen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Ga voor meer informatie over het optimaliseren van de leverbaarheid van Adobe Campaign-e-mails naar [deze sectie](about-deliverability.md). Raadpleeg voor een diepgaandere analyse van de leverbaarbaarheid de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Leren hoe te om de leverbaarheid van uw e-mails van Adobe Campaign te optimaliseren, verwijs naar [ deze sectie ](about-deliverability.md). Voor een diepere duik op leverability, verwijs naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Status in behandeling {#pending-status}
 
-Na bevestiging van uw levering, kunt u zien dat de status van uw levering **[!UICONTROL Pending]**. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
+Nadat u de levering hebt bevestigd, ziet u dat de status van de levering **[!UICONTROL Pending]** is. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
 
-De **[!UICONTROL Pending]** de status kan eerst betekenen dat de levering gepland is en in behandeling is tot de opgegeven datum. Raadpleeg voor meer informatie de [Leveringsplanning](steps-sending-the-delivery.md#scheduling-the-delivery-sending) sectie.
+De status **[!UICONTROL Pending]** kan eerst betekenen dat de levering gepland is en in behandeling is tot de opgegeven datum. Voor meer op dit, verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
 
-Als de levering niet wordt verzonden en de status van de levering blijft **[!UICONTROL Pending]**, kan het resultaat zijn van:
+Als uw levering niet wordt verzonden en de status ervan **[!UICONTROL Pending]** blijft, kan dit het gevolg zijn van:
 
 * MTA (de Agent van de Overdracht van het Bericht), die modules en processen op de leveringsserver in werking stelt en die e-mail het verzenden beheert, kan niet zijn begonnen, of kan moeten opnieuw worden begonnen.
 
@@ -103,9 +103,9 @@ Als de levering niet wordt verzonden en de status van de levering blijft **[!UIC
 
   >[!NOTE]
   >
-  >Deze bewerking kan worden uitgevoerd met een **op locatie** of **hybride** hostmodel met toegang tot de campagneserver (zie [hostmodellen](../../installation/using/hosting-models.md)).
+  >Deze verrichting kan met een **op-gebouw** of **hybride** ontvangen model met toegang worden uitgevoerd de server van de Campagne (zie [ ontvangende modellen ](../../installation/using/hosting-models.md)).
 
-   1. Controleer of uw `mta@<instance>` modules worden gelanceerd op uw servers MTA.
+   1. Controleer of uw `mta@<instance>` -modules zijn gestart op uw MTA-servers.
 
       ```
       nlserver pdump
@@ -123,17 +123,17 @@ Als de levering niet wordt verzonden en de status van de levering blijft **[!UIC
 
       >[!NOTE]
       >
-      >Vervangen `<instance-name>` met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden: `[path of application]nl6/conf/config-<instance-name>.xml`
+      >Vervang `<instance-name>` door de naam van de instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden: `[path of application]nl6/conf/config-<instance-name>.xml`
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd.
 
-  In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** veld voor koppeling van leveringen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten raadpleegt u [deze sectie](../../installation/using/configure-delivery-settings.md).
+  Controleer in dit geval de configuratie van het verkeersbeheer (IP-affiniteit) en gebruik het veld **[!UICONTROL Managing affinities with IP addresses]** om leveringen te koppelen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten, verwijs naar [ deze sectie ](../../installation/using/configure-delivery-settings.md).
 
 * Wanneer te veel campagnes lopen, blijft de leveringsstatus in &quot;Hangende&quot;status.
 
-  De limiet van gelijktijdige campagnes wordt bepaald in het gedeelte **[!UICONTROL NmsOperation_LimitConcurrency]** -optie. De standaardwaarde is 10.
+  De limiet van gelijktijdige campagnes wordt gedefinieerd in de optie **[!UICONTROL NmsOperation_LimitConcurrency]** . De standaardwaarde is 10.
 
-  Meer informatie over opties in [deze pagina](../../installation/using/configuring-campaign-options.md).
+  Leer meer over opties in [ deze pagina ](../../installation/using/configuring-campaign-options.md).
 
 
 **Verwante onderwerpen:**

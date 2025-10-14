@@ -5,9 +5,9 @@ description: Meer informatie over het maken van een formulier voor een vriend
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   De **Uw bericht** kunt u een bericht voor de referentie invoeren. De referentie moet ook hun **Achternaam**, **Voornaam** en **E-mail**.
+   Het **Uw bericht** gebied laat u een bericht voor de referentie ingaan. De verwijzer moet ook hun **Familienaam**, **Voornaam** en **E-mail** ingaan.
 
    De informatie die in de velden wordt ingevoerd, wordt opgeslagen in een specifieke tabel die de bezoekerstabel wordt genoemd.
 
    >[!NOTE]
    >
-   >Zolang de ontvanger zijn toestemming niet heeft gegeven, kunt u hen niet met de ontvangers in het gegevensbestand opslaan. Ze worden tijdelijk opgeslagen in de **bezoeker** tabel (**nms:bezoeker**) ontworpen voor virale marketingcampagnes. Deze tabel wordt regelmatig gezuiverd dankzij **reinigen** bewerkingen.
+   >Zolang de ontvanger zijn toestemming niet heeft gegeven, kunt u hen niet met de ontvangers in het gegevensbestand opslaan. Zij zullen tijdelijk in de **bezoeker** lijst (**nms:visitor**) worden opgeslagen die voor virale marketing campagnes wordt ontworpen. Deze lijst wordt gezuiverd op een regelmatige basis dankzij **zuiverend** verrichtingen.
    >
    >In dit voorbeeld willen we ontvangers aansporen om mee te doen aan de concurrentie die door hun referentie wordt aanbevolen. In dit bericht willen we ze echter ook een abonnement op een van onze informatiediensten aanbieden. Als zij zich abonneren, kunnen zij in het gegevensbestand worden opgeslagen.
 
@@ -64,7 +64,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Dan creeer het leveringsmalplaatje verbonden aan de informatiedienst die tijdens stap 1 wordt gecreeerd. Het wordt geselecteerd in het dialoogvenster **[!UICONTROL Choose scenario]** van de informatiedienst.
+1. Dan creeer het leveringsmalplaatje verbonden aan de informatiedienst die tijdens stap 1 wordt gecreeerd. Deze wordt geselecteerd in het veld **[!UICONTROL Choose scenario]** van de inlichtingenservice.
 
    De leveringstemplate die wordt gebruikt om het verwijzingsaanbiedingsbericht te maken, bevat de volgende informatie:
 
@@ -82,13 +82,13 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    * Deze sjabloon bevat een koppeling naar het concurrentieformulier en de abonnementskoppeling waarmee de scheidsrechter zich op de nieuwsbrief kan abonneren.
 
-     De abonnementskoppeling wordt ingevoegd via een aanpassingsblok. Standaard kunt u hiermee profielen abonneren op de **nieuwsbrief** service. Dit verpersoonlijkingsblok kan worden veranderd om uw behoefte aan te passen, bijvoorbeeld om de ontvanger aan een verschillende dienst in te tekenen.
+     De abonnementskoppeling wordt ingevoegd via een aanpassingsblok. Door gebrek, laat het u profielen aan de **nieuwsbrief** dienst intekenen. Dit verpersoonlijkingsblok kan worden veranderd om uw behoefte aan te passen, bijvoorbeeld om de ontvanger aan een verschillende dienst in te tekenen.
 
    * De interne naam (&#39;referrer&#39; hier) zal in het manuscript van de berichtlevering worden gebruikt zoals hieronder getoond.
 
    >[!NOTE]
    >
-   >Zie [deze pagina](../../delivery/using/about-templates.md) voor meer informatie over leveringssjablonen.
+   >Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} voor meer informatie over leveringsmalplaatjes.
 
 1. Maak het tweede script voor het verzenden van abonnementsberichten.
 
@@ -117,11 +117,11 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
     </delivery>)
    ```
 
-1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer een van hen een vriend uitnodigt, wordt een levering gebaseerd op de **Verwijzingsvoorstel** sjabloon is gemaakt.
+1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer één van hen een vriend uitnodigt, wordt een levering die op het **** malplaatje van de Verwijzing wordt gebaseerd gecreeerd.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   De referentie wordt toegevoegd aan de bezoekersmap in de **[!UICONTROL Administration > Visitors node]**:
+   De referentie wordt toegevoegd aan de map bezoeker in de map **[!UICONTROL Administration > Visitors node]** :
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 

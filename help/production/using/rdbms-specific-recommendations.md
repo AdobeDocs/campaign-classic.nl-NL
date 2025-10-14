@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een ov
 
 >[!IMPORTANT]
 >
->De Adobe adviseert sterk om VACUUM niet VOLLEDIG op de Adobe-ontvangen gegevensbestandmontages van de Campagne in werking te stellen.Het voorgestelde onderhoud is een gids voor slechts installaties ON-PREMISE. Voor de implementaties en de schema&#39;s van de douanetabel, gebruik VACUUM VOLLEDIG bij uw eigen risico aangezien VACUUM - zonder controle - lijsten exclusief kan sluiten die gestagelde vragen veroorzaken - en in sommige gevallen, omhoog het volledige gegevensbestand blokkeren.
+>Adobe raadt sterk aan om VACUUM FULL niet uit te voeren bij door Campagne Adobe gehoste databaseinstellingen. Het voorgestelde onderhoud is een leidraad voor alleen ON-PREMISE-installaties. Voor de implementaties en de schema&#39;s van de douanetabel, gebruik VACUUM VOLLEDIG bij uw eigen risico aangezien VACUUM - zonder controle - lijsten exclusief kan sluiten die gestagelde vragen veroorzaken - en in sommige gevallen, omhoog het volledige gegevensbestand blokkeren.
 
 In PostgreSQL, kunt u deze typische sleutelwoorden gebruiken:
 
@@ -141,11 +141,11 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe beveelt aan om te beginnen met kleinere tabellen: als het proces op grote tabellen mislukt (waar het risico op mislukking het grootst is), is ten minste een deel van het onderhoud voltooid.
->* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse stromen van de gegevensreplicatie hebt.
+>* Adobe raadt aan om te beginnen met kleinere tabellen: als het proces op grote tabellen mislukt (waar het risico op mislukking het grootst is), is ten minste een deel van het onderhoud voltooid.
+>* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel. Deze tabellen kunnen in belangrijke mate worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse stromen van de gegevensreplicatie hebt.
 >* De instructie VACUUM vergrendelt de tabel, die sommige processen onderbreekt terwijl onderhoud wordt uitgevoerd.
->* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. De Adobe adviseert niet gebruikend het voor **YyyNmsBroadLogXxx** lijst.
->* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met behulp van een **[!UICONTROL SQL]** -activiteit. Voor meer op dit, verwijs naar [ deze sectie ](../../workflow/using/architecture.md). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+>* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe adviseert niet gebruikend het voor **YyyNmsBroadLogXxx** lijst.
+>* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met behulp van een **[!UICONTROL SQL]** -activiteit. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 >
 
 ### Database opnieuw samenstellen {#rebuilding-a-database}
@@ -157,7 +157,7 @@ PostgreSQL biedt geen eenvoudige manier om een online tabel opnieuw samen te ste
 
 Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. De volgende SQL laat u twee nieuwe functies creëren: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kunnen worden gebruikt om noodzakelijke DDL te produceren om een lijst te ontspannen.
 
-* Met de eerste functie kunt u (**&#x200B; _tmp** hier) een werktabel maken die een kopie is van de oorspronkelijke tabel.
+* Met de eerste functie kunt u (** _tmp** hier) een werktabel maken die een kopie is van de oorspronkelijke tabel.
 * De tweede functie verwijdert vervolgens de oorspronkelijke tabel en wijzigt de naam van de werktabel en de bijbehorende indexen.
 * Het gebruik van twee functies in plaats van één betekent dat als de eerste functie mislukt, u niet het risico loopt de oorspronkelijke tabel te verwijderen.
 
@@ -406,7 +406,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Neem contact op met de databasebeheerder voor meer informatie over de procedures die het meest geschikt zijn voor uw versie van Oracle.
+Neem contact op met uw databasebeheerder voor informatie over de procedures die het meest geschikt zijn voor uw versie van Oracle.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 

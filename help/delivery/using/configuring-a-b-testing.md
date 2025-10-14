@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: A/B Testing
 role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '236'
 ht-degree: 3%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 3%
 
 In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voeren.
 
-1. Maak een nieuwe workflow en configureer vervolgens een [Query](../../workflow/using/query.md) activiteit om de gewenste bevolking te bereiken.
+1. Creeer een nieuw werkschema dan vormen een activiteit van de Vraag om de gewenste bevolking te richten. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Voeg een [Splitsen](../../workflow/using/split.md) activiteit om de doelpopulatie in meerdere subgroepen te verdelen.
+1. Voeg een activiteit van het Splitsen toe om de doelbevolking in veelvoudige ondergroepen te verdelen. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om een te vormen **[!UICONTROL Split]** activiteit, zie [deze sectie](../../workflow/using/split.md).
+1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om a **[!UICONTROL Split]** activiteit te vormen, verwijs naar [ deze sectie ](../../workflow/using/split.md).
 
    In dit voorbeeld willen we twee nieuwe onderwerpen testen voor een nieuwsbrief door ze allemaal te presenteren aan 10 procent van de doelgroep.
 
    ![](assets/ab-testing-split.png)
 
-1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Activeer de **[!UICONTROL Generate complement]** van de **[!UICONTROL General]** tab.
+1. Voeg een overgang toe om de nieuwsbrief met het huidige onderwerp naar de resterende bevolking te sturen. Activeer hiertoe de optie **[!UICONTROL Generate complement]** op het tabblad **[!UICONTROL General]** .
 
    ![](assets/ab-testing-complement.png)
 
@@ -37,4 +37,4 @@ In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voe
 
 U kunt de workflow nu starten. Zodra de leveringen zijn verzonden, zult u het gedrag van de drie ondergroepen in de leveringslogboeken kunnen volgen, om te zien welk onderwerp het meest succesvol is geweest.
 
-Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Raadpleeg voor meer informatie deze [use case](a-b-testing-use-case.md).
+Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Voor meer op dit, verwijs naar dit specifieke [ gebruiksgeval ](a-b-testing-use-case.md).

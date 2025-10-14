@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 82%
+source-wordcount: '839'
+ht-degree: 77%
 
 ---
 
@@ -63,13 +63,13 @@ Raadpleeg [dit document](privacy-and-recommendations.md) voor meer informatie ov
 
 Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte.
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=nl-NL)
+![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hoe kan ik het publiek van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
 Met Adobe Campaign kunt u verschillende strategieën gebruiken om doelgroepen te maken en doelontvangers te selecteren.
 
-[Klik hier voor meer informatie](../../delivery/using/steps-defining-the-target-population.md).
+Klik hier om meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"} te leren.
 
 ## Wat is een workflow? {#what-is-a-workflow-}
 
@@ -79,13 +79,13 @@ U kunt bijvoorbeeld een workflow gebruiken om een bestand van een server te down
 
 Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten worden gebracht of die keuzes kunnen maken en processen kunnen goedkeuren. Op deze manier is het mogelijk om een leveringsactie te maken, een taak toe te wijzen aan een of meer operatoren om aan content te werken, doelen op te geven en proeven goed te keuren voordat de levering wordt gestart.
 
-[Klik hier voor meer informatie](../../workflow/using/about-workflows.md) over workflows. U kunt ook [de best practices voor workflows](../../workflow/using/building-a-workflow.md) lezen.
+[Klik hier voor meer informatie](../../workflow/using/about-workflows.md) over workflows. U kunt werkschemabeste praktijken in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"} ook lezen.
 
 ## Hoe maak en verzend een eerste e-mail? {#how-to-create-and-send-a-first-email-}
 
 [Klik hier voor meer informatie](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Dit ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=nl-NL)
+![](assets/do-not-localize/how-to-video.png) [Dit ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Hoe je SMS-berichten verzendt? {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Ontdek [in deze sectie](../../delivery/using/sms-channel.md) hoe u uw platform c
 
 ## Hoe kan ik pushmeldingen verzenden? {#how-to-send-push-notifications-}
 
-Leer hoe u met Adobe Campaign [een persoonlijke pushmelding](../../delivery/using/create-notifications-ios.md) naar iOS en Android-apparaten kunt verzenden via apps.
+Leer hoe te om Adobe Campaign te gebruiken om een gepersonaliseerd pushbericht in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"} te verzenden.
 
 ## Hoe een online enquête ontwerpen en delen? {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in
 
 ## Zijn er nieuwe documentatie updates en hulpmaterialen vrijgegeven? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=nl-NL).
+De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 U kunt ook de meest recente technische opmerkingen [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/article-list.html) raadplegen.

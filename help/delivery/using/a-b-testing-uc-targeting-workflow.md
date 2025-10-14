@@ -6,30 +6,30 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: A/B Testing
 role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '150'
 ht-degree: 4%
 
 ---
 
 # AB-tests: een doelworkflow maken {#step-1--creating-a-targeting-workflow}
 
-U moet uw workflow maken in het dialoogvenster **[!UICONTROL Targeting and Workflows]** tabblad van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit **[!UICONTROL Split]** activiteiten in verband met twee **[!UICONTROL Email delivery]** activiteiten **[!UICONTROL Wait]** activiteit **[!UICONTROL JavaScript code]** en een **[!UICONTROL Delivery]** activiteit.
+U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]** van een campagne. Deze bestaat uit een **[!UICONTROL Query]** -activiteit, een **[!UICONTROL Split]** -activiteit die gekoppeld is aan twee **[!UICONTROL Email delivery]** -activiteiten, een **[!UICONTROL Wait]** -activiteit, een **[!UICONTROL JavaScript code]** -activiteit en een **[!UICONTROL Delivery]** -activiteit.
 
-1. Als u dit nog niet hebt gedaan, maakt u een campagne (voor meer informatie hierover raadpleegt u [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Maak een campagne als u dat nog niet hebt gedaan. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Ga naar de **[!UICONTROL Targeting and Workflows]** tab.
+1. Ga naar de tab **[!UICONTROL Targeting and Workflows]** .
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Het label van de bestaande workflow wijzigen of op **[!UICONTROL Add]** om een nieuwe te maken (zie voor meer informatie hierover [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Verander het etiket van het bestaande werkschema of klik **[!UICONTROL Add]** om nieuwe tot stand te brengen (voor meer op dit, verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Gebruik de muis om activiteiten naar het werkstroomdiagram te slepen, inclusief een **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), twee **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), **[!UICONTROL Wait]** activiteit (**[!UICONTROL Flow Control]** tab), **[!UICONTROL JavaScript code]** activiteit (**[!UICONTROL Actions]** en een **[!UICONTROL Delivery]** activiteit (**[!UICONTROL Actions]** ).
+1. Gebruik de muis om activiteiten naar het werkstroomdiagram te slepen, zoals een **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), een **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), twee **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), een **[!UICONTROL Wait]** activiteit (**[!UICONTROL Flow Control]** tab), een **[!UICONTROL JavaScript code]** activiteit (**[!UICONTROL Actions]** tab) en een **[!UICONTROL Delivery]** activiteit (**[!UICONTROL Actions]** tab).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 

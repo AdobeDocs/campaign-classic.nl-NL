@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows 
 1. Voeg in een workflow een overzichtsactiviteit toe voordat u een leveringsactiviteit toevoegt.
 1. Geef in de overzichtsactiviteit van de levering de omtrek op die u wilt gebruiken.
 
-   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar de [ Campagne - MRM ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) gids.
+   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Vul de beschikbare velden in op basis van uw levering.
 1. Er zijn twee mogelijke gevallen:
@@ -55,7 +55,7 @@ Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedinge
 
 >[!NOTE]
 >
->Voor meer informatie over de verrijkingsactiviteit, verwijs naar de specifieke documentatie in de [ gids van de Werkschema&#39;s ](../../workflow/using/enrichment.md).
+>Voor meer informatie over de verrijkingsactiviteit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
@@ -68,7 +68,7 @@ Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 
 ### Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Na het vormen van uw vraag (verwijs naar de [ gids van Werkschema&#39;s ](../../workflow/using/query.md)):
+Na het vormen van uw vraag (verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
 1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]** .

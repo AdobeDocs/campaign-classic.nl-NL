@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
+>Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die door Adobe worden gehost, bijvoorbeeld voor toegang tot de server- en instantieconfiguratiebestanden. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
 
 Voor meer op de concepten en de beste praktijken met betrekking tot leverbaarheid met Adobe Campaign, verwijs naar dit [ sectie ](../../delivery/using/about-deliverability.md).
 
-Voor een diepere duik op welke leverbaarheid is, met inbegrip van alle technische aanbevelingen betreffende het efficiënte verzenden van en het ontvangen van e-mails door een platform van de Adobe, verwijs naar de [ Gids van de Beste praktijken van de Levering van de Adobe van de Levering van de Beste ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Voor een diepere duik op wat de leverbaarheid is, met inbegrip van alle technische aanbevelingen betreffende het efficiënte verzenden van en het ontvangen van e-mails door een platform van Adobe, verwijs naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Werkwijze {#operating-principle}
 
@@ -81,7 +81,7 @@ Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door
 
 ## Uitvoercontrole van levering {#delivery-output-controlling}
 
-Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0&rbrace; E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
+Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0} E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
 
 Voordat de berichten worden verzonden, vraagt de module &#39;tokens&#39; van de server. Dit zijn over het algemeen reeksen van minstens 10 tokens, die het aantal vragen aan de server verminderen.
 
@@ -192,7 +192,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
                 mta6.am0.yahoodns.net has address 66.196.118.33
 ```
 
-4 van deze 8 IP-adressen worden al gebruikt in mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 en 98.136.217.203). Met deze record kan de gebruiker 4 nieuwe IP-adressen gebruiken. De derde MX-record doet hetzelfde.
+4 van deze 8 IP-adressen worden al gebruikt in mta5 (98.136.216.26 , 98.138.112.38 , 63.250.192.46 en 98.136.217.203). Met deze record kan de gebruiker 4 nieuwe IP-adressen gebruiken. De derde MX-record doet hetzelfde.
 
 In totaal, hebben wij 16 verre IP adressen. In combinatie met onze 2 lokale openbare IPs hebben wij 32 wegen om yahoo.com postservers te bereiken.
 
@@ -316,22 +316,22 @@ U kunt de indeling van verzonden berichten definiëren, zodat de weergegeven inh
 
 Hiervoor gaat u naar het **[!UICONTROL Management of email formats]** -document, dat zich bevindt in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]** .
 
-Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Voor meer informatie, verwijs naar [ dit document ](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"} voor meer informatie.
 
 ![](assets/mail_rule_sets.png)
 
 De **MIME structuur** (Multipurpose Internet Mail Extensions) parameter staat u toe om de berichtstructuur te bepalen die naar de verschillende postcliënten zal worden verzonden. Er zijn drie opties beschikbaar:
 
-* **Multipart**: Het bericht wordt verzonden in tekst of formaat HTML. Als de indeling HTML niet wordt geaccepteerd, kan het bericht nog steeds worden weergegeven in de tekstindeling.
+* **Multipart**: Het bericht wordt verzonden in tekst of formaat van HTML. Als de HTML-indeling niet wordt geaccepteerd, kan het bericht nog steeds in tekstopmaak worden weergegeven.
 
   Door gebrek, is de multipart structuur **multipart/alternatief**, maar het wordt automatisch **multipart/related** wanneer een beeld aan het bericht wordt toegevoegd. Bepaalde leveranciers verwachten het **multipart/verwante** formaat door gebrek, legt de **[!UICONTROL Force multipart/related]** optie dit formaat voor zelfs als geen beeld in bijlage is.
 
-* **HTML**: Een HTML slechts bericht wordt verzonden. Als de indeling HTML niet wordt geaccepteerd, wordt het bericht niet weergegeven.
+* **HTML**: Een HTML slechts bericht wordt verzonden. Als de HTML-indeling niet wordt geaccepteerd, wordt het bericht niet weergegeven.
 * **Tekst**: Een bericht in tekst slechts formaat wordt verzonden. Het voordeel van tekstformaatberichten is hun zeer kleine grootte.
 
 Als de optie **[!UICONTROL Image inclusion]** is ingeschakeld, worden deze rechtstreeks in de tekst van de e-mail weergegeven. De afbeeldingen worden vervolgens geüpload en de URL-koppelingen worden vervangen door de inhoud ervan.
 
-Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg [ dit document ](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -369,7 +369,7 @@ Om de statistiekenserver op de zelfde machine te gebruiken, moet u minstens de n
 
 De configuratie betreffende verkeersbeheer wordt gevestigd in het **mta/child/smtp** element van het configuratiedossier.
 
-Voor elk **&#x200B;**&#x200B;element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
+Voor elk **** element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
 
 Voorbeeld:
 

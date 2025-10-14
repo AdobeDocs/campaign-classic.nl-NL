@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,19 +24,19 @@ Adobe Campaign zelf beheert gearchiveerde bestanden echter niet. Het laat u toe 
 
 Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overgebracht naar een externe server, zoals een SMTP-e-mailserver. De archiveringsbestemming is een BCC e-mailadres (onzichtbaar voor de leverende ontvangers) dat u moet specificeren.
 
-## Recommendations en beperkingen {#recommendations-and-limitations}
+## Aanbevelingen en beperkingen {#recommendations-and-limitations}
 
 * BCC-functionaliteit voor e-mail is optioneel. Controleer hiervoor uw licentieovereenkomst.
-* Voor **gehoste en hybride architecturen**, neemt u contact op met uw accountmanager om deze te activeren. Het BCC e-mailadres van uw keuze moet worden verstrekt aan het team van de Adobe dat het voor u zal vormen.
-* Voor **installaties op locatie** volgt u de onderstaande richtlijnen om het te activeren - raadpleeg de [BCC via e-mail activeren (op locatie)](#activating-email-archiving--on-premise-) en [Het BCC-e-mailadres configureren (op locatie)](#configuring-the-bcc-email-address--on-premise-) secties.
+* Voor **ontvangen en hybride architecturen**, contacteer uw accountmanager om het te activeren. Het BCC e-mailadres van uw keuze moet worden opgegeven aan het Adobe-team dat het voor u zal configureren.
+* Voor **op-gebouw installaties**, volg de hieronder richtlijnen om het te activeren - zie [ het Activeren e-mail BCC (op gebouw) ](#activating-email-archiving--on-premise-) en [ het Vormen van het BCC e-mailadres (op gebouw) ](#configuring-the-bcc-email-address--on-premise-) secties.
 * U kunt slechts één BCC-e-mailadres gebruiken.
-* Zodra e-mail BCC wordt gevormd, zorg ervoor de eigenschap in het leveringsmalplaatje of in de levering door wordt toegelaten **[!UICONTROL Email BCC]** -optie. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
+* Nadat e-mail-BCC is geconfigureerd, controleert u of de functie is ingeschakeld in de leveringssjabloon of in de levering via de optie **[!UICONTROL Email BCC]** . verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 * Er wordt alleen rekening gehouden met e-mailberichten die zijn verzonden. Overschrijdingen worden niet meegeteld.
-* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Zie voor meer informatie de [Naar de nieuwe e-mail-BCC gaan](#updated-email-archiving-system--bcc-) sectie.
+* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Voor meer op dit, zie [ Bewegend aan de nieuwe E-mailBCC ](#updated-email-archiving-system--bcc-) sectie.
 
 ## BCC via e-mail activeren (op locatie) {#activating-email-archiving--on-premise-}
 
-[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 
 Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
@@ -45,7 +45,7 @@ Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Ca
 
 Als u het overbrengen van verzonden e-mails naar een BCC-e-mailadres wilt inschakelen, moeten exacte onbewerkte kopieën van verzonden e-mails eerst worden opgeslagen als .eml-bestanden naar een lokale map.
 
-Het pad voor de lokale map moet worden opgegeven in het dialoogvenster **config-`<instance>`.xml** van de configuratie. Bijvoorbeeld:
+De weg voor de lokale omslag moet in het **config - `<instance>` .xml** dossier, van de configuratie worden gespecificeerd. Bijvoorbeeld:
 
 ```
 <mta dataLogPath="C:\emails">
@@ -53,7 +53,7 @@ Het pad voor de lokale map moet worden opgegeven in het dialoogvenster **config-
 
 >[!NOTE]
 >
->Het is de verantwoordelijkheid van het team dat het project implementeert om ervoor te zorgen dat de beveiligingsinstellingen toegang verlenen tot de map die via het dialoogvenster **dataLogPath** parameters.
+>Het is de verantwoordelijkheid van het team dat het project uitvoert om ervoor te zorgen dat de veiligheidsmontages toegang tot de omslag verlenen die door de **wordt bepaald dataLogPath** parameters.
 
 Het volledige pad is als volgt: **`<datalogpath>  YYYY-MM-DDHHh`**. De datum en de tijd worden geplaatst volgens de klok van de server MTA (UTC). Bijvoorbeeld:
 
@@ -61,7 +61,7 @@ Het volledige pad is als volgt: **`<datalogpath>  YYYY-MM-DDHHh`**. De datum en 
 C:\emails\2018-12-02\13h
 ```
 
-De archiefbestandsnaam is **`<deliveryid>-<broadlogid>.eml`** wanneer de status van de e-mails niet **[!UICONTROL Sent]**. Zodra de status is gewijzigd in **[!UICONTROL Sent]**, wordt de bestandsnaam **`<deliveryid>-<broadlogid>-sent.eml`**. Bijvoorbeeld:
+De naam van het archiefbestand is **`<deliveryid>-<broadlogid>.eml`** als de status van de e-mails niet **[!UICONTROL Sent]** is. Nadat de status is gewijzigd in **[!UICONTROL Sent]** , wordt de bestandsnaam **`<deliveryid>-<broadlogid>-sent.eml`** . Bijvoorbeeld:
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -71,11 +71,11 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >In een mid-sourcing-instantie bevindt de directory voor de BCC-e-mails zich op de mid-sourcing-server.
 >
->De deliveryID en de broadlogID komen van de mid-sourcingsserver wanneer de status van de e-mails niet wordt verzonden. Zodra de status is gewijzigd in **[!UICONTROL Sent]**, deze id&#39;s komen van de marketingserver.
+>De deliveryID en de broadlogID komen van de mid-sourcingsserver wanneer de status van de e-mails niet wordt verzonden. Zodra de status is gewijzigd in **[!UICONTROL Sent]** , komen deze id&#39;s van de marketingserver.
 
 ### Parameters {#parameters}
 
-Nadat het lokale mappad is gedefinieerd, voegt u de volgende elementen toe en bewerkt u deze naar wens in het dialoogvenster **config-`<instance name>.xml`** bestand. Hieronder ziet u de standaardwaarden:
+Zodra de lokale omslagweg wordt bepaald, voeg en geef de volgende elementen zoals gewenst in het **toe config-`<instance name>.xml`** dossier. Hieronder ziet u de standaardwaarden:
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -83,58 +83,58 @@ Nadat het lokale mappad is gedefinieerd, voegt u de volgende elementen toe en be
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
-* **compressionFormat**: wordt gebruikt bij het comprimeren van de .eml-bestanden. De mogelijke waarden zijn:
+* **compressionFormat**: formaat dat wordt gebruikt wanneer het samenpersen van de .eml dossiers. De mogelijke waarden zijn:
 
   **0**: geen compressie (standaardwaarde)
 
-  **1**: compressie (.zip-indeling)
+  **1**: compressie (.zip formaat)
 
-* **compressBatchSize**: aantal eml-bestanden dat is toegevoegd aan een archief (.zip-bestand).
+* **compressBatchSize**: aantal .eml dossiers die aan een archief (.zip- dossier) worden toegevoegd.
 
 
-* **archivingType**: te gebruiken archiveringsstrategie. De enige mogelijke waarde is **1**. Onbewerkte kopieën van verzonden e-mails worden opgeslagen in de indeling .eml naar de **dataLogPath** en worden ze via SMTP naar het BCC-e-mailadres verzonden. Nadat de e-mailkopieën naar het BCC-adres zijn verzonden, wordt de naam van het archiefbestand gewijzigd in **`<deliveryid>-<broadlogid>-sent-archived.eml`** en het bestand wordt verplaatst naar de **dataLogPath/archives** map. Het pad naar het verzonden en door BCC gearchiveerde e-mailbestand is dan **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**: archiveringsstrategie die moet worden gebruikt. De enige mogelijke waarde is **1**. De ruwe exemplaren van verzonden e-mails worden bewaard in .eml formaat aan de **dataLogPath** omslag en zij worden verzonden naar het BCC e-mailadres over SMTP. Zodra de e-mailexemplaren naar het adres BCC worden verzonden, wordt de naam van het archiefdossier **`<deliveryid>-<broadlogid>-sent-archived.eml`** en het dossier wordt verplaatst naar de **dataLogPath/archives** omslag. Het pad naar het verzonden en door BCC gearchiveerde e-mailbestand is nu **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** .
 
   <!--
   **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
-* **expirationDelay**: het aantal dagen dat .eml-bestanden worden bewaard voor archivering. Na die vertraging worden ze automatisch naar de **dataLogPath/archives** voor compressie. .eml-bestanden verlopen standaard na twee dagen.
-* **purgeArchivesDelay**: aantal dagen dat archieven worden bewaard in het dialoogvenster **dataLogPath/`<archives>`** map. Na die periode worden zij definitief geschrapt. De zuivering begint wanneer MTA wordt begonnen. Standaard wordt het elke zeven dagen uitgevoerd.
-* **pollDelay**: frequentie (in seconden) controleren voor nieuwe e-mailberichten die binnenkomen naar de **dataLogPath** map. Als deze parameter bijvoorbeeld op 60 is ingesteld, betekent dit dat het archiveringsproces elke minuut door de .eml-bestanden in de **dataLogPath/`<date and time>`** mappen, pas indien nodig leegmaken toe en verstuurt e-mailkopieën naar het BCC-adres en/of comprimeer de gearchiveerde bestanden wanneer dat nodig is.
-* **verwervingLimit**: het aantal eml-bestanden dat tegelijk wordt verwerkt voordat het archiveringsproces opnieuw wordt toegepast volgens de methode **pollDelay** parameter. Als u bijvoorbeeld de opdracht **verwervingLimit** tot 100 **pollDelay** parameter wordt ingesteld op 60.100.eml-bestanden per minuut.
-* **smtpNbConnection**: aantal SMTP-verbindingen met het BCC-e-mailadres.
+* **expirationDelay**: aantal dagen .eml- dossiers worden bewaard voor archivering. Na die vertraging, worden zij automatisch verplaatst naar de **dataLogPath/archives** omslag voor compressie. .eml-bestanden verlopen standaard na twee dagen.
+* **purgeArchivesDelay**: aantal dagarchieven worden gehouden in de **dataLogPath/`<archives>`** omslag. Na die periode worden zij definitief geschrapt. De zuivering begint wanneer MTA wordt begonnen. Standaard wordt het elke zeven dagen uitgevoerd.
+* **pollDelay**: het controleren van frequentie (in seconden) voor nieuwe inkomende verzonden e-mails aan de **dataLogPath** omslag. Bijvoorbeeld, als deze parameter aan 60 wordt geplaatst, betekent het dat elke minuut, het archiveringsproces door de .eml dossiers binnen de **dataLogPath/`<date and time>`** omslagen gaat, een zuivering indien nodig toepast en e-mailexemplaren naar het adres BCC verzendt en/of de gearchiveerde dossiers wanneer nodig comprimeert.
+* **verwervingLimit**: aantal.eml- dossiers die onmiddellijk worden verwerkt alvorens het archiveringsproces opnieuw volgens de **pollDelay** parameter wordt toegepast. Bijvoorbeeld, als u de **parameter 0} verwervingLimit {aan 100 plaatst terwijl de** pollDelay **parameter aan 60 wordt geplaatst, zullen 100.eml- dossiers per minuut worden verwerkt.**
+* **smtpNbConnection**: aantal verbindingen SMTP aan het BCC e-mailadres.
 
-Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bijvoorbeeld, in een configuratie waar MTA 30.000 e-mail per uur verzendt, kunt u plaatsen **pollDelay** tot en met 600 **verwervingLimit** tot en met 5000 en **smtpNbConnection** parameter t/m 2. Het betekent dat met 2 verbindingen SMTP, 5.000 e-mails naar het adres BCC om de 10 minuten zullen worden verzonden.
+Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bijvoorbeeld, in een configuratie waar MTA 30.000 e-mails per uur verzendt, kunt u de **parameter 0} pollDelay aan 600 plaatsen, de** verwervingLimit **parameter aan 5000 en de** smtpNbConnection **parameter aan 2.** Het betekent dat met 2 verbindingen SMTP, 5.000 e-mails naar het adres BCC om de 10 minuten zullen worden verzonden.
 
 ## Het BCC-e-mailadres configureren (op locatie) {#configuring-the-bcc-email-address--on-premise-}
 
-[!BADGE Op locatie en hybride]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 
 >[!IMPORTANT]
 >
 >Om privacyredenen moeten BCC-e-mails worden verwerkt door een archiveringssysteem dat veilig identificeerbare informatie (PII) kan opslaan.
 
-In de **config-`<instance name>.xml`** bestand, gebruikt u de volgende parameters om de SMTP e-mailserver te definiëren waarnaar de opgeslagen bestanden worden overgebracht:
+In het **config-`<instance name>.xml`** dossier, gebruik de volgende parameters om de SMTP e-mailserver te bepalen waarnaar de opgeslagen dossiers zullen worden overgebracht:
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
 ```
 
-* **smtpBccAddress**: doel archiveren
-* **smtpEnableTLS**: gebruik van een beveiligde SMTP-verbinding (TLS/SSL-protocol)
-* **smtpRelayAddress**: relaisadres voor gebruik
-* **smtpRelayPort**: relaispoort voor gebruik
+* **smtpBccAddress**: archiverend doelbestemming
+* **smtpEnableTLS**: het gebruiken van een beveiligde verbinding SMTP (protocol TLS/SSL)
+* **smtpRelayAddress**: relaisadres aan gebruik
+* **smtpRelayPort**: relaishaven aan gebruik
 
 >[!NOTE]
 >
 >Als u een SMTP relais gebruikt, worden de veranderingen in de e-mails die door het relais worden aangebracht niet in het archiveringsproces in aanmerking genomen.
 >
->Bovendien wijst de relais een **[!UICONTROL Sent]** status voor alle e-mails, inclusief die welke niet zijn verzonden. Daarom worden alle berichten gearchiveerd.
+>Bovendien kent het relais een **[!UICONTROL Sent]** -status toe aan alle e-mails, ook aan de e-mails die niet zijn verzonden. Daarom worden alle berichten gearchiveerd.
 
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl-NL" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -151,14 +151,14 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 
 ## BCC-tips e-mailen {#best-practices}
 
-* **BCC-adresvak**: zorg ervoor dat het voldoende opvangcapaciteit heeft om alle e-mails die door de MTA worden verzonden te archiveren.
-* **MTA-pooling**: De archiveringsfunctie van BCC werkt op MTA-niveau. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden samengebracht, beïnvloedt het opzetten van deze eigenschap veiligheid:
+* **BCC adresbrievenbus**: zorg ervoor het genoeg ontvangstcapaciteit heeft om alle e-mails te archiveren die door MTA worden verzonden.
+* **MTA die** pooling: De BCC archiveringseigenschap werkt op het niveau MTA. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden samengebracht, beïnvloedt het opzetten van deze eigenschap veiligheid:
 
    * Als u een MTA met veelvoudige cliënten deelt en één van hen heeft deze optie geactiveerd, zal deze cliënt tot alle e-mails van de andere cliënten toegang hebben die de zelfde MTA delen. Om een dergelijke situatie te vermijden, gebruikt u een andere MTA voor elke cliënt.
    * Als u zelfde MTA over veelvoudige instanties (ontwikkeling, test, staaf) voor één enkele cliënt gebruikt, zullen de berichten die van alle drie instanties worden verzonden door de dataLogPath optie worden gedupliceerd.
 
-* **E-mails per verbinding**: BCC e-mailarchivering werkt door een verbinding te openen en alle e-mails via die verbinding te verzenden. Adobe raadt u aan om met uw technische contactpersoon het aantal e-mailberichten te controleren dat via een bepaalde verbinding wordt geaccepteerd. Het verhogen van dit aantal kan een grote invloed op de productie BCC hebben.
-* **BCC die IPs verzendt**: momenteel worden BCC-e-mails niet verzonden via de normale MTA-proxy&#39;s. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs aan de lijst van gewenste personen op uw netwerk, afhankelijk van uw configuratie van de e-mailserver kunt moeten toevoegen.
+* **E-mails per verbinding**: BCC e-mailarchivering werkt door een verbinding te openen en probeert om alle e-mails door die verbinding te verzenden. Adobe raadt u aan om met uw interne technische contactpersoon het aantal e-mails te controleren dat via een bepaalde verbinding wordt geaccepteerd. Het verhogen van dit aantal kan een grote invloed op de productie BCC hebben.
+* **BCC die IPs** verzendt: momenteel, worden BCC e-mails niet verzonden door de normale MTA volmachten. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs aan de lijst van gewenste personen op uw netwerk, afhankelijk van uw configuratie van de e-mailserver kunt moeten toevoegen.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 

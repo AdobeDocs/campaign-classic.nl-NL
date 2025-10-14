@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
    >
    >Leer hoe te om een uitvoerinstantie tot stand te brengen externe rekening in [ deze sectie ](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Breid het schema nms:extAccount uit om het volgen URL toe te voegen:
+1. Breid het nms :extAccount schema uit om het volgen URL toe te voegen:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -131,7 +131,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
    >
    >Leer hoe te om een bestaand schema in [ uit te breiden Uitbreidend een schema ](../../configuration/using/extending-a-schema.md) sectie.
 
-1. Wijzig de vorm nms:extAccount:
+1. Wijzig de nms :extAccount vorm:
 
    ```
    <container label="Message domain branding" type="frame">
@@ -169,6 +169,6 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [ uitvoeringsinstantie ](#execution-instance) wordt bepaald (stap 1).
 
-1. Creeer a [ leveringsmalplaatje ](../../delivery/using/about-templates.md) per merk.
+1. Een leveringssjabloon per merk maken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.

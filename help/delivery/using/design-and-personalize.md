@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1307'
 ht-degree: 3%
 
 ---
 
 # Gepersonaliseerde content maken {#build-personalized-content}
 
-Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. De meeste tijd, de mogelijke fouten zijn verwant met [ verpersoonlijking ](about-personalization.md), [ formatterend ](defining-the-email-content.md#message-content) en [ beelden ](defining-the-email-content.md#adding-images).
+Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. De meeste tijd, de mogelijke fouten zijn verwant met [ verpersoonlijking ](about-personalization.md), [ formatterend ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} en [ beelden ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ## Aanpassing optimaliseren {#optimize-personalization}
 
@@ -58,7 +58,7 @@ Houd rekening met de onderstaande algemene tips bij het samenstellen van e-mails
 
 ### Onderwerpregel
 
-Het werk op de [ onderwerpregel ](defining-the-email-content.md#message-content) om open tarieven te verbeteren:
+Leer over de onderwerpregel in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} om open tarieven te verbeteren:
 
 * Vermijd personen die te lang zijn. Maximaal 50 tekens gebruiken
 
@@ -115,13 +115,13 @@ Controleer de volgende elementen om algemene opmaakfouten te voorkomen:
 
 * Gebruik van **erkende karakters** in e-mail: de lijst van geldige karakters voor e-mailadressen wordt bepaald in de &quot;optie XtkEmail_Characters&quot;. Leer hoe te om tot de opties van de Campagne [ in deze sectie ](../../installation/using/configuring-campaign-options.md) toegang te hebben. Adobe Campaign moet in Unicode zijn geïnstalleerd om speciale tekens correct te kunnen verwerken.
 
-* Configuratie van **E-mailAuthentificatie**: zorg ervoor dat de e-mailkopballen de handtekening DKIM bevatten. DKIM (Domeinsleutels Identified Mail) authentificatie staat de ontvangende e-mailserver toe om te verifiëren dat een bericht inderdaad werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt typisch het domein in van of de kopbal van de Afzender. Voor meer op dit, verwijs naar de [ Gids van de Beste praktijken van de Levering van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
+* Configuratie van **E-mailAuthentificatie**: zorg ervoor dat de e-mailkopballen de handtekening van DKIM bevatten. Met DKIM (Domain Keys Identified Mail)-verificatie kan de ontvangende e-mailserver controleren of een bericht is verzonden door de persoon of entiteit waarvan beweert dat het is verzonden en of de inhoud van het bericht is gewijzigd tussen het tijdstip waarop het oorspronkelijk is verzonden (en DKIM &quot;ondertekend&quot;) en het tijdstip waarop het is ontvangen. Deze standaard gebruikt typisch het domein in van of de kopbal van de Afzender. Voor meer op dit, verwijs naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Responsief e-mailontwerp
 
 Het responsieve ontwerp zorgt ervoor dat een e-mail optimaal wordt weergegeven voor het apparaat waarop het wordt geopend.
 
-* Responsieve e-mail HTML gebruiken in plaats van web HTML
+* Responsieve e-mail gebruiken in plaats van web-HTML
 
 * Gebruik de voorvertoningsmodus en verzend proefdrukken om de rendering op zoveel mogelijk apparaten te testen
 
@@ -151,14 +151,14 @@ Om van buitenaf toegankelijk te zijn, moeten de beelden die in e-mail en openbar
 
 * U kunt controleren als de instantieconfiguratie openbaar middelbeheer toelaat. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Vanuit de bezorgingsassistent kunt u een HTML-pagina met afbeeldingen importeren of rechtstreeks afbeeldingen invoegen met de HTML-editor via het pictogram **[!UICONTROL Image]** . [Meer informatie](defining-the-email-content.md#adding-images)
+* Vanuit de bezorgingsassistent kunt u een HTML-pagina met afbeeldingen importeren of afbeeldingen rechtstreeks invoegen via de HTML-editor via het pictogram **[!UICONTROL Image]** . Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 * Als afbeeldingen niet worden weergegeven, controleert u of de afbeeldingen beschikbaar zijn op de server. Klik hiertoe op het tabblad Source van uw levering. Zoek uw afbeeldingen en kopieer en plak de URL van elke afbeelding in een webbrowser. Als de afbeeldingen niet worden weergegeven, neemt u contact op met uw IT-beheerder of de externe leverancier die uw leveringsinhoud levert.
 
 ## Een voorbeeld van uw bericht bekijken {#preview-msg}
 
-Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan hoe de inhoud van het bericht wordt aangepast en hoe de ontvangers de levering zien.
+Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan wat de personalisatie is en hoe de ontvangers uw bericht zullen bekijken.
 
-* In de bezorgingsassistent kunt u op het subtabblad **[!UICONTROL Preview]** de rendering van elke inhoud voor een ontvanger weergeven. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](defining-the-email-content.md#message-content)
+* In de bezorgingsassistent kunt u op het subtabblad **[!UICONTROL Preview]** de rendering van elke inhoud voor een ontvanger weergeven. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 * Tijdens elke voorvertoning wordt een automatische controle op anti-spam uitgevoerd. In het **[!UICONTROL Preview]** sub-lusje, controleer [ SpamAssassin ](spamassassin.md) spamscoring.  Klik op **[!UICONTROL More...]** voor meer informatie over de waarschuwing.  Controleer voordat u dit doet of SpamAssassin op de juiste wijze is geïnstalleerd en geconfigureerd op de Adobe Campaign-toepassingsserver. [Meer informatie](../../installation/using/configuring-spamassassin.md)

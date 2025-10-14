@@ -5,9 +5,9 @@ description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 feature: Installation, Application Settings
 badge-v7-prem: label="Alleen op locatie/hybride" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1270'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De ingebouwde pakketten bevatten een reeks eigenschappen die volgens uw behoefte
 >
 >Nadat een pakket is geïnstalleerd, kunt u het niet verwijderen.
 >
->Neem als gehoste of hybride klant contact op met de Adobe om een nieuw ingebouwd pakket te implementeren.
+>Neem als gehoste of hybride klant contact op met Adobe om een nieuw ingebouwd pakket te implementeren.
 
 Een ingebouwd pakket installeren:
 
@@ -66,12 +66,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Marketingcampagnes (Campagne) <br /> </td> 
-   <td> Definieert, optimaliseert, voert en analyseert mededelingen en marketing campagnes uit. <a href="../../campaign/using/designing-marketing-campaigns.md"> leer meer </a><br /> </td> 
+   <td> Definieert, optimaliseert, voert en analyseert mededelingen en marketing campagnes uit. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank"> leer meer </a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
    <td> De middelen van de marketing (MRM) <br /> </td> 
-   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="../../mrm/using/about-marketing-resource-management.md"> Leer meer </a> <br /> </td> 
+   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -97,7 +97,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr--> 
   <tr> 
    <td> Sociale netwerken (sociale marketing) <br /> </td> 
-   <td> Hiermee synchroniseert u Adobe Campaign met X (voorheen bekend als Twitter) en Facebook. <a href="../../social/using/about-social-marketing.md"> Leer meer </a> <br /> </td> 
+   <td> Synchroniseert Adobe Campaign met X (voorheen bekend als Twitter) en Facebook. <a href="../../social/using/about-social-marketing.md"> Leer meer </a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Toegang tot externe gegevens (Federated Data Access) <br /> </td> 
-   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="../../workflow/using/accessing-an-external-database-fda.md"> Leer meer </a> <br /> </td> 
+   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
    <td> Campagne optimaliseren <br /> </td> 
-   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="../../campaign-opt/using/about-campaign-typologies.md"> Leer meer </a> <br /> </td> 
+   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Marketing <br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Centrale/lokale Marketing (Verdeelde Marketing) <br /> </td> 
-   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="../../distributed/using/about-distributed-marketing.md"> leer meer </a><br /> </td> 
+   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html" target="_blank"> leer meer </a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -196,8 +196,8 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM integratie <br /> </td> 
-   <td> Hiermee kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren, zodat u kunt profiteren van AEM functionaliteit voor het bewerken van inhoud en de leveringscapaciteit van Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md"> Leer meer </a> <br /> </td> 
+   <td> AEM-integratie <br /> </td> 
+   <td> Hiermee kunt u de inhoud van uw e-mailleveringen en uw formulieren direct in Adobe Experience Manager beheren om te profiteren van de functionaliteit voor het bewerken van inhoud door AEM en de leveringscapaciteit van Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md"> Leer meer </a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -212,7 +212,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Privacy Data Protection Regulation <br /> </td> 
-   <td> Bevat extra functionaliteit om u te helpen met uw naleving van de Privacy in Campaign Classic. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html"> Leer meer </a> <br /> </td> 
+   <td> Bevat extra functionaliteit voor de naleving van uw privacy in Campaign Classic. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html"> Leer meer </a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 
@@ -227,12 +227,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Ondersteuning voor AMP <br /> </td> 
-   <td> Hiermee kunt u het nieuwe interactieve AMP gebruiken voor e-mailindeling en dynamische e-mailberichten verzenden. Optioneel. <a href="../../delivery/using/defining-interactive-content.md"> Leer meer </a> <br /> </td> 
+   <td> Hiermee kunt u het nieuwe interactieve AMP gebruiken voor e-mailindeling en dynamische e-mailberichten verzenden. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Alles </td> 
   </tr> 
   <tr> 
    <td> ACS Connector (afgekeurd) <br /> </td> 
-   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Optioneel.<br /> </td> 
+   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde functie in Campagne v7 die automatisch gegevens aan Campaign Standard repliceert, die het beste van beide toepassingen verenigt. Optioneel.<br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 

@@ -8,9 +8,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '511'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 De doelgroep is belangrijk: maak uw lijsten zorgvuldig, test uw e-mails op populaire e-mailclients en mobiele apparaten en controleer of uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
 
-Leer meer over doelpopulaties [ in deze sectie ](steps-defining-the-target-population.md)
+Leer meer over doelpopulaties in deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Doelgroep {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ In Campaign Classic, door gebrek, richten de leveringsmalplaatjes **Ontvangers**
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
-Deze afbeeldingen worden voorgesteld [ in deze sectie ](steps-defining-the-target-population.md#select-a-target-mapping).
+Deze afbeeldingen worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
 
 U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.
 
 ## Externe ontvangers {#external-recipients}
 
-U kunt leveren aan ontvangers die in een extern dossier eerder dan opgeslagen in het gegevensbestand worden opgeslagen. Leer meer [ in deze sectie ](steps-defining-the-target-population.md#selecting-external-recipients).
+U kunt leveren aan ontvangers die in een extern dossier eerder dan opgeslagen in het gegevensbestand worden opgeslagen. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
 
 ## Verzenden naar uw abonnees {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Om berichten naar de abonnees van een nieuwsbrief te verzenden, kunt u de abonne
 
 Om uw levering te testen, gebruik proef alvorens naar het belangrijkste doel te verzenden.
 
-Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het bepalen van de proefontvangers worden voorgesteld [ in deze sectie ](steps-defining-the-target-population.md#selecting-the-proof-target).
+Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het bepalen van de proefontvangers worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
 De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden voorgesteld [ in deze sectie ](about-seed-addresses.md).
 

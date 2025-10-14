@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Hoofdlettergebruik: de veldvervanging configureren"
-description: "Hoofdlettergebruik: de veldvervanging configureren"
+title: 'Gebruiksscenario: de veldvervanging configureren'
+description: 'Gebruiksscenario: de veldvervanging configureren'
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 4%
 
 ---
 
@@ -22,18 +22,18 @@ Deze vervanging laat u tijd besparen wanneer het creëren van de levering: in pl
 
 ## Context {#context}
 
-In dit geval, de plaats **Mijn onlinebibliotheek** Ik wil haar klanten een korting geven op basis van hun favoriete literaire genre.
+In dit gebruiksgeval, zou de plaats **Mijn online bibliotheek** een korting naar zijn cliënten willen verzenden, die op hun favoriete literaire genre wordt gebaseerd.
 
 De leveringsmanager heeft een verpersoonlijkingsgebied met favoriete genre in hun e-mail geïntegreerd. Het doel is om sommige zaadadressen te gebruiken: deze zaadadressen hebben het verpersoonlijkingsgebied in hun lijst maar geen waarde wordt bewaard daar.
 
 Als u een willekeurige veldvervanging wilt gebruiken, moet u beschikken over:
 
 * een levering met een of meer personalisatievelden;
-* zaadadressen waarvan **gegevensschema** wordt gewijzigd op basis van de personalisatievelden die in de levering worden gebruikt.
+* zaadadressen de waarvan **gegevensschema** volgens de verpersoonlijkingsgebieden wordt gewijzigd die in de levering worden gebruikt.
 
 ## Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het maken van een levering worden beschreven in het dialoogvenster [Een e-maillevering maken](creating-an-email-delivery.md) sectie.
+De stappen voor het creëren van een levering zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt.
 
@@ -52,19 +52,19 @@ In dit voorbeeld, neemt het gegevensschema van zaadadressen een waarde die van h
 
 Deze opsomming laat de gebruiker het favoriete literaire genre van hun cliënten specificeren.
 
-Voor deze wijziging van het gegevensschema om in de zaadadressen te bekijken **Invoerformulier**, moet u deze bijwerken. Zie de [Het invoerformulier bijwerken](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form) sectie.
+Voor deze wijziging van gegevensschema om in de zaadadressen **vorm van de Input** te kunnen bekijken, moet u het bijwerken. Verwijs naar de [ Update de sectie van de inputvorm ](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Aanpassing configureren {#configuring-personalization}
 
 1. Open een levering.
 
-   In dit voorbeeld heeft de levering twee personalisatievelden: de ontvanger **voornaam** en de **favoriete literatuurgenre**.
+   In dit voorbeeld, heeft de levering twee verpersoonlijkingsgebieden: de eerste naam van de ontvanger **** en de favoriete literaire genre van de ontvanger ****.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Vorm uw leveringslijst en uw zaadadressen. Zie [Doelpopulaties identificeren](steps-defining-the-target-population.md).
+1. Vorm uw leveringslijst en uw zaadadressen. Verwijs naar [ identificeer doelpopulaties ](steps-defining-the-target-population.md).
 
-   In dit voorbeeld selecteert de gebruiker de gebruikers van wie **favoriete literatuurgenre** is Sci-Fi als belangrijkste doelpopulatie.
+   In dit voorbeeld, selecteert de gebruiker gebruikers de waarvan **favoriete literaire genre** Sci-Fi als belangrijkste doelbevolking is.
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -74,18 +74,18 @@ Voor deze wijziging van het gegevensschema om in de zaadadressen te bekijken **I
 
    >[!NOTE]
    >
-   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** koppeling, verwijzen naar [Hoofdlettergebruik: zaadadressen op criteria selecteren](use-case-selecting-seed-addresses-on-criteria.md).
+   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** verbinding, verwijs naar [ geval van het Gebruik: uitgezochte zaadadressen op criteria ](use-case-selecting-seed-addresses-on-criteria.md).
 
-1. Klik op de knop **[!UICONTROL Preview]** selecteert u vervolgens een zaadadres om de personalisatie te testen.
+1. Klik op het tabblad **[!UICONTROL Preview]** en selecteer een beginadres om de personalisatie te testen.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   U ziet dat een van de velden voor personalisatie leeg is. Aangezien het zaadadres geen gegevens voor dit gebied heeft, kan de voorproef van de inhoud van de HTML geen waarde tonen.
+   U ziet dat een van de velden voor personalisatie leeg is. Aangezien het zaadadres geen gegevens voor dit gebied heeft, kan de voorproef van de inhoud van HTML geen waarde tonen.
 
-   De velden worden willekeurig vervangen **op het tijdstip van levering**.
+   De willekeurige substitutie van gebieden wordt uitgevoerd **op het tijdstip van levering**.
 
 1. Klik op de knop **[!UICONTROL Send]**.
-1. Uw levering vervolgens analyseren **bevestig levering**.
+1. Analyseer uw levering toen **bevestig levering**.
 
    De zaadadressen ontvangen de levering in hun inbox.
 

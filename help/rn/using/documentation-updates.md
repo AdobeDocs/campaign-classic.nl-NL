@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3864'
-ht-degree: 100%
+source-wordcount: '3865'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ In het kader van een promotie-initiatief voor Campaign v8 zijn we begonnen met h
 * Marketingcampagnes orkestreren: deze handleiding is vervangen door een [landingspagina](../../campaign/using/about-marketing-campaigns.md).
 * Beheer van marketingmiddelen: deze handleiding is verwijderd.
 * Distributed marketing: deze handleiding is verwijderd.
-* Automatiseren met workflows: deze handleiding is vervangen door een [landingspagina](../../workflow/using/about-workflow-automation.md)
+* Automatiseren met workflows: deze handleiding is vervangen door een [landingspagina](../../workflow/using/about-workflows.md)
 
 ## 2024
 
@@ -419,7 +419,7 @@ Er zijn nu instructievideo’s beschikbaar over de volgende onderwerpen:
 
 * [E-mails personaliseren met personalisatievelden](../../delivery/using/personalization-fields.md)
 
-* [Seeds en proeven in een e-mail beheren](../../delivery/using/steps-defining-the-target-population.md)
+* [ hoe te om zaad en proeven in e-mail ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"} te beheren.
 
 * [Een terugkerende levering instellen](../../workflow/using/recurring-delivery.md)
 

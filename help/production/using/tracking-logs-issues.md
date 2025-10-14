@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 13%
+source-wordcount: '71'
+ht-degree: 12%
 
 ---
 
@@ -20,16 +20,16 @@ ht-degree: 13%
 
 Er kunnen veelvoudige redenen voor het volgen van logboeken zijn die niet door:sturen. We raden u aan de volgende gegevens te controleren:
 
-* **doet het** Tekstspatiëring **bevat de workflow fouten?**
+* **heeft het** Volgen **werkschema fouten?**
 
-  Zie [Technische workflows bewaken](../../workflow/using/monitoring-technical-workflows.md).
+Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 
-  ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
-* **Is de module** trackinglogd **op de server wordt uitgevoerd?**
+* **is de module** getraceerd **lopend op de server?**
 
-  Zie [Logbestanden](../../production/using/log-files.md).
+  Verwijs naar [ dossiers van het Logboek ](../../production/using/log-files.md).
 
-* **Zijn er wijzigingen aangebracht?**
+* **zijn veranderingen aangebracht?**
 
   Zij kunnen een verlies van verbinding aan de servers teweegbrengen gebruikend de volgende alias.

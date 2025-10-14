@@ -7,40 +7,40 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
 
 # Gedeeld element invoegen{#inserting-a-shared-asset}
 
-Middelen die door Adobe Experience Cloud worden gedeeld, kunnen als volgt op uw e-mails en landingspagina&#39;s worden gebruikt:
+Assets dat door Adobe Experience Cloud wordt gedeeld, kan als volgt op uw e-mails en landingspagina&#39;s worden gebruikt:
 
 1. Maak een nieuwe e-mail of een nieuwe bestemmingspagina.
 
-   Als u elementen uit de Adobe Experience Manager-elementenbibliotheek gebruikt, gebruikt u een leveringssjabloon die is gemaakt bij [configureren van integratie](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
+   Als u activa van de activa van Adobe Experience Manager bibliotheek gebruikt, gebruik een levermalplaatje dat wanneer [ wordt gecreeerd vormend de integratie ](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   Als u dit specifieke malplaatje niet hebt, zorg ervoor dat in de levering **Eigenschappen** de **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** tab) is ingesteld op **DCE** en dat de AEM externe account die u wilt gebruiken voor toegang tot uw AEM Assets-bronbibliotheek is opgegeven.
+   Als u dit specifieke malplaatje niet hebt, zorg ervoor dat in de levering **Eigenschappen**, **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** lusje) aan **DCE** wordt geplaatst en dat de externe rekening van AEM die u voor de toegang tot van uw het middelbibliotheek van AEM Assets wilt gebruiken wordt verstrekt.
 
 1. Selecteer in het bewerkingsvenster de optie om een afbeelding toe te voegen:
 
-   * Als u het [standaardbewerkingsmodus](../../delivery/using/defining-the-email-content.md#adding-images), selecteert u **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Als u de [ standaard het uitgeven wijze ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} gebruikt, uitgezocht **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Als u het [geavanceerde bewerkingsmodus](../../web/using/about-campaign-html-editor.md) (DCE), ga naar een afbeeldingsblok en selecteer vervolgens via het contextmenu **[!UICONTROL Select a shared asset]**.
+   * Als u [ geavanceerde het uitgeven wijze ](../../web/using/about-campaign-html-editor.md) (DCE) gebruikt, ga naar een beeldblok, dan via het contextafhankelijke menu, uitgezocht **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 
      >[!NOTE]
      >
-     >U kunt geen gedeelde afbeeldingen vanuit Adobe Campaign invoegen in [webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) bij gebruik van de DCE.
+     >U kunt geen gedeelde beelden van Adobe Campaign in [ Webtoegang ](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) opnemen wanneer het gebruiken van DCE.
 
 1. Selecteer in het selectievenster dat wordt geopend een afbeelding en bevestig deze vervolgens.
 
-   De beschikbare afbeeldingen zijn afkomstig uit uw Adobe Experience Cloud-bibliotheek of uw AEM Assets-bibliotheek, afhankelijk van de configuratie van uw Adobe Campaign-instantie. Zie de [Toegang tot elementen configureren](../../integrations/using/configuring-access-to-assets.md) sectie.
+   De beschikbare afbeeldingen zijn afkomstig uit uw Adobe Experience Cloud-bibliotheek of uw AEM Assets-bibliotheek, afhankelijk van de configuratie van uw Adobe Campaign-instantie. Verwijs naar [ het Vormen toegang tot de sectie van Assets ](../../integrations/using/configuring-access-to-assets.md).
 
    ![](assets/dam_shared_image_selection.png)
 

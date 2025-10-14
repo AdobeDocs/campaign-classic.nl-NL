@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 82%
+source-wordcount: '493'
+ht-degree: 79%
 
 ---
 
@@ -52,7 +52,8 @@ Adobe Campaign wordt geleverd met een reeks dashboards en tools om uw e-mailleve
 
 ## &#x200B;5. Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution}
 
-Ontdek hoe u de uitvoering van een Campaign-workflow kunt controleren [op deze pagina](../../workflow/using/starting-a-workflow.md).
+Begrijp hoe te om het werkschemauitvoering van de Campagne in de [ documentatie van de Campagne v8 ] (https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution) te controleren
+.html) {target="_blank"}.
 
 ## &#x200B;6. Hoe kan ik verbinding maken met Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 

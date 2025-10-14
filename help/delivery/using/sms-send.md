@@ -5,7 +5,7 @@ description: Meer informatie over het verzenden, controleren en volgen van SMS i
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -81,8 +81,6 @@ De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen.
   > * Een SMS-account kan alleen aan één externe account worden gekoppeld om ervoor te zorgen dat statusrapporten aan de juiste account worden toegewezen
 
 * **Unsubscription**: de ontvangers die willen ophouden ontvangend de leveringen van SMS kunnen een bericht terugkeren die het woord STOP bevatten. Als uw leverancier het onder de voorwaarden van het contract toestaat, kunt u berichten via de **Binnenkomende het werkschemaactiviteit van SMS** terugwinnen en dan een vraag creëren om **toe te laten niet meer deze ontvankelijke** optie voor de betrokken ontvangers contacteren.
-
-  Verwijs naar de [ gids van de Werkschema&#39;s ](../../workflow/using/architecture.md).
 
 ## InSMS-schema {#insms-schema}
 
@@ -169,4 +167,4 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 >
 >Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](delivery-dashboard.md).
 >
->Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. [Meer informatie](../../campaign-opt/using/pressure-rules.md).
+>Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.

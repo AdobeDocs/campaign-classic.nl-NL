@@ -5,10 +5,10 @@ description: Analyseer het succes van uw campagnes in geïntegreerde of aangepas
 feature: Reporting, Monitoring
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 14%
+source-wordcount: '347'
+ht-degree: 13%
 
 ---
 
@@ -20,7 +20,7 @@ Naast [ ingebouwde rapporten ](../../reporting/using/about-campaign-built-in-rep
 
 Adobe Campaign is geen gespecialiseerd rapportagehulpmiddel: rapporten die in Adobe Campaign zijn gemaakt, stellen u voornamelijk in staat geaggregeerde gegevens weer te geven. Adobe Campaign-rapporten, die speciaal zijn bedoeld voor het analyseren en weergeven van gegevens, zijn niet bedoeld voor het exporteren van databases.
 
-Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Raadpleeg [deze sectie](../../workflow/using/about-action-activities.md) voor meer informatie.
+Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
 
 Adobe Campaign biedt verschillende rapportagegereedschappen:
 

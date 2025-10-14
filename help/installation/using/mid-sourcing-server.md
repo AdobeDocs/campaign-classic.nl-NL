@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 
 >[!CAUTION]
 >
->Zodra de midsourcingserver opstelling is geweest en de [ synchronisatiewerkschema&#39;s ](../../workflow/using/about-technical-workflows.md) voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
+>Zodra de midsourcingserver opstelling is geweest en de [ synchronisatiewerkschema&#39;s ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
 
 ## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 
@@ -98,7 +98,7 @@ Van de cliëntconsole, bepaal de plaats van **E-mail die het gebruiken van mid-s
 
    Plaats het wachtwoord van de voorleggingsrekening: In **/Midden-sourcing/Access Management/Operators/** omslag, wordt de **middenti** exploitant gebruikt door de verre instantie voor voorlegging op midsourcingwijze. U moet een wachtwoord instellen voor deze operator en dit aan de beheerder van het verzendingsexemplaar geven.
 
-   De **optie van het 0&rbrace; Midden-sourcingsplatform &lbrace;leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
+   De **optie van het 0} Midden-sourcingsplatform {leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
 
 ## Multiplexing van de server voor midsourcing {#multiplexing-the-mid-sourcing-server}
 
@@ -125,7 +125,7 @@ Het is mogelijk dat een mid-sourcing-instantie wordt gedeeld door meerdere verze
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Start de module Web opnieuw met de volgende opdracht: **&#x200B; web**.
+1. Start de module Web opnieuw met de volgende opdracht: ** web**.
 
 U moet de instelling voor de server voor midsourcing wijzigen in het bestand serverConf.xml. De volgende lijn moet aan de &quot;Beheer van affiniteiten met IP adressen&quot;sectie, onder de bestaande lijn worden toegevoegd:
 
@@ -139,9 +139,9 @@ Het kenmerk &#39;@name&#39; moet de volgende regels in acht nemen:
 
 &#39;marketing_account_operator_name&#39; heeft betrekking op de interne naam van de mid-sourcingrekening die in het mid-sourcingexemplaar is gedeclareerd.
 
-&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
+&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
 
-&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` .
+&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` .
 
 U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden.
 

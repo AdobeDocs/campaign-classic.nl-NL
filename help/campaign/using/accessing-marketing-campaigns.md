@@ -7,9 +7,9 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Het **[!UICONTROL Browsing]** -blok van het tabblad **[!UICONTROL Campaigns]** b
 >
 >Voor meer op de algemene ergonomie van Adobe Campaign, de toestemmingen en op de functionaliteit van het profielbeheer, verwijs naar [ deze sectie ](../../platform/using/adobe-campaign-workspace.md).
 >
->Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in [ deze sectie ](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ### Campagnekalender {#campaign-calendar}
 

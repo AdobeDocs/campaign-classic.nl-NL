@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 4%
+source-wordcount: '144'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
-1. **creeer en identificeer de levering**. [Meer informatie](steps-create-and-identify-the-delivery.md)
+1. **creeer en identificeer de levering**. Lees meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 
 1. **bepaalt de leveringsinhoud**. De definitie van de leveringsinhoud is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
@@ -27,7 +27,7 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
    * [Direct mailkanaal](defining-the-direct-mail-content.md)
    * [Mobiel toepassingskanaal](about-mobile-app-channel.md)
 
-1. **bepaal de doelbevolking**. [Meer informatie](steps-defining-the-target-population.md)
+1. **bepaal de doelbevolking**. Lees meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}.
 
 1. **verzend de levering**. [Meer informatie](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
 >[!NOTE]
 >
->De stappen in dit hoofdstuk worden beschreven veronderstellen dat alle doelontvangers en hun profielen in het gegevensbestand worden opgeslagen, behalve in het geval van externe levering (zie [ Selecterend externe ontvangers ](steps-defining-the-target-population.md#selecting-external-recipients)) die.
+>De stappen in dit hoofdstuk worden beschreven veronderstellen dat alle doelontvangers en hun profielen in het gegevensbestand worden opgeslagen, behalve in het geval van externe levering (zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"} die.

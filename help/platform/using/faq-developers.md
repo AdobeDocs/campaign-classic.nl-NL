@@ -8,10 +8,10 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 84%
+source-wordcount: '511'
+ht-degree: 82%
 
 ---
 
@@ -55,7 +55,7 @@ U kunt query’s uitvoeren op de Campaign-database met behulp van de generieke q
 
 Query’s worden gemaakt met velden uit de geselecteerde tabel of met een formule. De belangrijkste principes om een query op de Campaign-database te maken, worden beschreven [op deze pagina](../../platform/using/about-queries-in-campaign.md).
 
-[Klik hier](../../workflow/using/query.md) om meer te weten te komen over de query-editor van Campaign.
+Leer over vragen aan de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 ## Hoe kan ik een gegevenspakket importeren? {#how-can-i-import-a-data-package-}
 

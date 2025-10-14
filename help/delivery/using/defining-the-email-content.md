@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 1%
+source-wordcount: '1961'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +115,7 @@ Berichten worden standaard in HTML of tekstindeling verzonden, afhankelijk van d
 
 Adobe Campaign laat u toe om nieuwe interactieve [ AMP voor E-mail ](https://amp.dev/about/email/) formaat te proberen, dat toelaat om dynamische e-mails, onder bepaalde voorwaarden te verzenden.
 
-Zie [deze sectie](defining-interactive-content.md)voor meer informatie.
+Voor meer op dit, zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}.
 
 ## Inhoudsbeheer gebruiken {#using-content-management}
 
@@ -284,7 +284,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Met het veld **[!UICONTROL Height]** kunt u de hoogte van de streepjescode configureren zonder de breedte te wijzigen door de hoeveelheid ruimte tussen de streepjes te wijzigen.
 
-   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **&#x200B;**&#x200B;wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
+   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, zal het slechts op **** wijze van de Voorproef zichtbaar zijn waar de streepjescode in rood zal worden gekruist.
 
    >[!NOTE]
    >

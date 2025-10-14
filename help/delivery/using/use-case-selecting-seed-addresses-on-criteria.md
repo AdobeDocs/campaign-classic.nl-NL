@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Hoofdlettergebruik: selecteer adressen op criteria"
-description: "Hoofdlettergebruik: selecteer adressen op criteria"
+title: 'Gebruiksscenario: seedadressen selecteren op criteria'
+description: 'Gebruiksscenario: seedadressen selecteren op criteria'
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 2%
+source-wordcount: '850'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 
 ## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het creëren van een levering zijn gedetailleerd in [ creeer een e-maillevering ](creating-an-email-delivery.md) sectie.
+De stappen voor het creëren van een levering zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt en de ontvangers geselecteerd.
 
@@ -79,7 +79,7 @@ Voor verdere details op schemauitbreidingen, verwijs naar [ deze sectie ](../../
    In dit geval, specificeert u dat een nieuwe opsomming genoemd **[!UICONTROL Department]** in de lijst van het zaadadres is gecreeerd, en het is gebaseerd op het standaard **[!UICONTROL @company]** opsommingsmalplaatje (geëtiketteerd onder de naam **Bedrijf** in de vorm van het zaadadres).
 
 1. Klik op **[!UICONTROL Save]**.
-1. Selecteer de optie **[!UICONTROL Update database structure]** in het menu **[!UICONTROL Tools > Advanced]** .
+1. Selecteer de optie **[!UICONTROL Tools > Advanced]** in het menu **[!UICONTROL Update database structure]** .
 
    ![](assets/dlv_seeds_usecase_12.png)
 

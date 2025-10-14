@@ -7,14 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 0%
 
 ---
 
-# Lijst met opties voor Campaigns Classic{#configuring-campaign-options}
+# Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
 Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
@@ -57,8 +57,9 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr>
   <tr> 
    <td> <span class="uicontrol"> NMS_ActivateOwnerConfirmation </span> <br /> </td> 
-   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer "0" in om deze optie te deactiveren.</p><p> Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
-   <tr> 
+   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer "0" in om deze optie te deactiveren.</p><p> Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">deze sectie</a>.</p> </td>
+
+<tr> 
    <td> <span class="uicontrol"> Nms_DefaultRcpSchema </span> <br /> </td> 
    <td> Adobe Campaign gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers. <br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_DeliveryPreparationWindow </span> <br /> </td> 
-   <td><p>Deze optie wordt gebruikt door het </a></span> technische werkschema 0&rbrace; operationMgt &lbrace;wanneer het tellen van het aantal lopende leveringen.<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md"></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
+   <td><p>Deze optie wordt gebruikt door het <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank"> technische werkschema 0} operationMgt {wanneer het tellen van het aantal lopende leveringen.</a></span></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol"> NmsPaper_SenderLine1 </span> <br /> </td> 
@@ -364,7 +365,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_OperationMgtDebug </span> <br /> </td> 
-   <td> Staat u toe om de </a> technische werkschemauitvoering te controleren 0&rbrace; operationMgt. <a href="../../workflow/using/about-technical-workflows.md"> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
+   <td> Staat u toe om de <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank"> technische werkschemauitvoering te controleren 0} operationMgt. </a> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_TimeRange </span> <br /> </td> 
@@ -724,18 +725,18 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
  <tbody> 
   <tr> 
    <td> <span class="uicontrol"> AEMResourceTypeFilter </span> <br /> </td> 
-   <td> Typen AEM die in Adobe Campaign kunnen worden gebruikt. Waarden moeten door komma's worden gescheiden.<br /> </td> 
+   <td> Typen AEM-bronnen die in Adobe Campaign kunnen worden gebruikt. Waarden moeten door komma's worden gescheiden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> nmsPipeline_config </span> <br /> </td> 
-   <td> Hiermee kunt u Experience Cloud Triggers configureren. Het gegevenstype is 'lange tekst' en moet de JSON-indeling hebben. Zie <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank"> hoe te om de Trekkers van het Experience Cloud met Adobe Campaign Classic </a> te gebruiken.<br /> </td> 
+   <td> Hiermee kunt u Experience Cloud-triggers configureren. Het gegevenstype is 'lange tekst' en moet de JSON-indeling hebben. Zie <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank"> hoe te om de Trekkers van Experience Cloud met Adobe Campaign Classic </a> te gebruiken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt; </span> <br /> </td> 
    <td> Deze optie wordt gebruikt wanneer het invoeren van gegevens van een derdesysteem door een schakelaar van CRM. Als u de optie inschakelt, kunt u alleen objecten verzamelen die zijn gewijzigd sinds de laatste importbewerking. Deze optie moet handmatig worden gemaakt en als volgt worden ingevuld: 
     <ul> 
      <li> <p> <span class="uicontrol"> Interne naam </span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol"> Waarde (gebied) </span> : datum van de laatste invoer, met het 2&rbrace; s formaat van yyyy/MM/dd hh.:mm: </p> </li> 
+     <li> <p> <span class="uicontrol"> Waarde (gebied) </span> : datum van de laatste invoer, met het 2} s formaat van yyyy/MM/dd hh.:mm: </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
@@ -756,7 +757,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> WdbcCapabilities_Teradata </span> <br /> </td> 
-   <td> Verbindingsopties voor teradata.<br /> </td> 
+   <td> Teradata-verbindingsopties.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> WdbcCapabilities_Hive </span> <br /> </td> 

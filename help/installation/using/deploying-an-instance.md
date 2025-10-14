@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3397'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
+>Configuraties aan de serverzijde kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
 
 ## implementatiewizard {#deployment-assistant}
 
@@ -79,13 +79,12 @@ Deze parameters kunnen in leveringsmalplaatjes, en individueel voor elke leverin
 Geef de volgende parameters op:
 
 * **[!UICONTROL Sender name]** : voer de naam van de afzender in.
-* **[!UICONTROL Sender address]** : voer het e-mailadres van de afzender in. Wanneer het verzenden van e-mails van Adobe Campaign, wordt de **brievenbus van het Adres van de afzender** niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Leer meer over de beste praktijken van de Leverbaarheid [ in deze documentatie ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=nl-NL) {_blank}.
+* **[!UICONTROL Sender address]** : voer het e-mailadres van de afzender in. Wanneer het verzenden van e-mails van Adobe Campaign, wordt de **brievenbus van het Adres van de afzender** niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Leer meer over de beste praktijken van de Leverbaarheid [ in deze documentatie ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** : voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt.
 * **[!UICONTROL Reply address]** : voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt in de software van zijn e-mailclient. Het doel van het **gebied van het Adres van de Reactie** is wanneer u de ontvanger aan een verschillend adres wilt antwoorden dan het **Adres van de Afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Dit kan bijvoorbeeld een ondersteuningsmailbox zijn, `customer-care@customer.com` , waar e-mails worden gelezen en waarop wordt gereageerd.
 
-* **[!UICONTROL Error address]** : voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het kan bijvoorbeeld een stuiterende postbus zijn, `errors@customer.com` . Dit adres kan voor een levering of in de leveringsmalplaatjes, van het **SMTP** lusje van de levering/leveringsmalplaatjeeigenschappen worden veranderd. [Meer informatie](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
-
+* **[!UICONTROL Error address]** : voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het kan bijvoorbeeld een stuiterende postbus zijn, `errors@customer.com` . Dit adres kan voor een levering of in de leveringsmalplaatjes, van het **SMTP** lusje van de levering/leveringsmalplaatjeeigenschappen worden veranderd. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Naast dit, kunt u de **maskers** specificeren die voor het afzenderadres en het foutenadres worden gemachtigd. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
 
@@ -166,7 +165,7 @@ Zodra de montages van POP worden gespecificeerd, klik **Test** om ervoor te zorg
 
 ### Onverwerkte stuitberichten {#unprocessed-bounce-mails}
 
-De grenzen worden behandeld automatisch door Adobe Campaign, die de regels toepassen in het **Beleid > Campaign Management > het Beheer van Niet te leveren stoffen > de kwalificatieknooppunt van het Logboek van de Levering** worden vermeld. Voor meer op dit, verwijs naar [ Stuiteren postbeheer ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+De grenzen worden behandeld automatisch door Adobe Campaign, die de regels toepassen in het **Beleid > Beheer van de Campagne > Beheer van Niet te leveren stoffen > het 1} knoop van het het logboekerkenning van de Levering worden vermeld.** Voor meer op dit, verwijs naar [ Stuiteren postbeheer ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
 
@@ -176,7 +175,7 @@ Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij 
 
 >[!IMPORTANT]
 >
->Als u onverwerkte e-mails met bounce wilt doorsturen, wordt u door de Adobe aangeraden het veld **[!UICONTROL Address for errors]** alleen in te vullen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
+>Adobe raadt alleen aan het veld **[!UICONTROL Address for errors]** in te vullen om onverwerkte e-mails met bounce door te sturen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
 ## Configuratie bijhouden {#tracking-configuration}
 
@@ -277,7 +276,7 @@ Terug in het vorige venster, bevestigt een bericht de registratie op het volgend
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-De parameters verbonden aan URL onderzoeken **moeten niet** voor een standaardinstallatie worden gewijzigd. Neem voor alle andere parameters contact op met de Adobe.
+De parameters verbonden aan URL onderzoeken **moeten niet** voor een standaardinstallatie worden gewijzigd. Neem voor alle andere parameters contact op met Adobe.
 
 ## Parameters van mobiele kanalen {#mobile-channel-parameters}
 
@@ -383,7 +382,7 @@ In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek o
 
   Deze waarde kan voor elke levering worden overschreven.
 
-* Voor openbare middelen, is URL **https://** server **/res/** instantie **&#x200B;**&#x200B;waar **instantie**&#x200B;de naam van de volgende instantie is.
+* Voor openbare middelen, is URL **https://** server **/res/** instantie ****waar **instantie**de naam van de volgende instantie is.
 
 ### Afbeeldingsdetectie leveren {#delivery-image-detection}
 
@@ -395,7 +394,7 @@ Het gebied **maskers URL** laat u de lijst van te slaan maskers URL specificeren
 
 U kunt meerdere URL-maskers opgeven door een komma te gebruiken om ze van elkaar te scheiden.
 
-* Voor informatie bij het gebruiken van en het beheren van beelden in e-mail, verwijs naar [ deze sectie ](../../delivery/using/defining-the-email-content.md#adding-images).
+* Voor informatie bij het gebruiken van en het beheren van beelden in e-mail, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 * In de leveringsassistent hebben de afbeeldingen die vanuit deze URL&#39;s worden aangeroepen de status &quot;Genegeerd&quot;.
 
 ### Publicatiemodi {#publication-modes}

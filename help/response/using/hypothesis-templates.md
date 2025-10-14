@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -25,16 +25,16 @@ Door het samenstellen van de hypothesesjabloon kunt u de context definiëren voo
 
 Voer de volgende stappen uit om een hypothesesjabloon te maken:
 
-1. Klik in de Adobe Campaign-verkenner op **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. Klik in de Adobe Campaign-verkenner op **[!UICONTROL Resources>Templates>Hypothesis templates]** .
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
-1. Klikken **[!UICONTROL New]** of klik met de rechtermuisknop in de lijst met sjablonen en kies **[!UICONTROL New]** in de vervolgkeuzelijst.
+1. Klik op **[!UICONTROL New]** of klik met de rechtermuisknop in de lijst met sjablonen en kies **[!UICONTROL New]** in de vervolgkeuzelijst.
 1. Voer het hypotheselabel in.
-1. Geef aan of de template bestemd is voor hypothesen over aanbiedingen of leveringen via de **[!UICONTROL Hypothesis type]**.
-1. Voor **[!UICONTROL Delivery]** typesjablonen, geef aan of metingen moeten worden uitgevoerd met of zonder een controlegroep. [Meer informatie](#properties-of-a-hypothesis-template)
-1. Voor **[!UICONTROL Delivery]** typesjablonen, kunt u een specifiek kanaal kiezen of de sjabloon toepassen op alle beschikbare kanalen in Adobe Campaign met behulp van de **[!UICONTROL Channel]** vervolgkeuzelijst. [Meer informatie](#properties-of-a-hypothesis-template)
-1. Selecteer de **[!UICONTROL Execution folder]** waarin u de hypothesen wilt creëren en automatisch uitvoeren die van dit malplaatje zullen worden gecreeerd.
+1. Geef op of de sjabloon bestemd is voor hypothesen over aanbiedingen of leveringen via de **[!UICONTROL Hypothesis type]** .
+1. Geef bij **[!UICONTROL Delivery]** -typesjablonen op of metingen moeten worden uitgevoerd met of zonder een controlegroep. [Meer informatie](#properties-of-a-hypothesis-template)
+1. Voor **[!UICONTROL Delivery]** -typesjablonen kunt u een specifiek kanaal kiezen of de sjabloon toepassen op alle beschikbare kanalen in Adobe Campaign via de vervolgkeuzelijst **[!UICONTROL Channel]** . [Meer informatie](#properties-of-a-hypothesis-template)
+1. Selecteer de **[!UICONTROL Execution folder]** waarin u de hypothesen wilt maken en automatisch wilt uitvoeren die op basis van deze sjabloon worden gemaakt.
 1. Kies de instellingen voor uitvoering. [Meer informatie](#hypothesis-template-execution-settings)
 1. Geef de berekeningsperiode voor de hypothese op. [Meer informatie](#hypothesis-template-execution-settings)
 
@@ -42,57 +42,57 @@ Voer de volgende stappen uit om een hypothesesjabloon te maken:
    >
    >Deze periode wordt bepaald vanaf de contactdatum.
 
-1. In de **[!UICONTROL Transactions]** , geeft u de tabellen en velden op die nodig zijn voor de berekening van de hypothese. [Meer informatie](#transactions)
-1. Als uw sjabloon is geconfigureerd voor **[!UICONTROL Offer]** type hypothesen, kunt u toelaten **[!UICONTROL Update offer proposition status]** optie: selecteer in dit geval de status van het voorstel dat u wilt wijzigen.
+1. Geef op het tabblad **[!UICONTROL Transactions]** de tabellen en velden op die nodig zijn voor de hypotheseverberekening. [Meer informatie](#transactions)
+1. Als uw sjabloon is geconfigureerd voor hypothesen van het type **[!UICONTROL Offer]** , kunt u de optie **[!UICONTROL Update offer proposition status]** inschakelen: in dit geval selecteert u de status van het aanbiedingsvoorstel dat u wilt wijzigen.
 1. Geef de reikwijdte van de hypothesetoepassing op. [Meer informatie](#hypothesis-perimeter)
 1. Gebruik indien nodig een script om het filteren te voltooien. [Meer informatie](#hypothesis-perimeter)
 
 ### Eigenschappen van een hypothesesjabloon {#properties-of-a-hypothesis-template}
 
-De sjablonen **[!UICONTROL General]** kunt u de algemene sjabloonopties opgeven. De beschikbare velden zijn:
+Op het tabblad **[!UICONTROL General]** van de sjabloon kunt u de algemene sjabloonopties opgeven. De beschikbare velden zijn:
 
-* **[!UICONTROL Hypothesis type]** Met : kunt u bepalen of de sjabloon bestemd moet zijn voor hypothesen over leveringen of aanbiedingen.
+* **[!UICONTROL Hypothesis type]**: hiermee kunt u bepalen of de sjabloon bestemd moet zijn voor hypotheses bij leveringen of aanbiedingen.
 
   U kunt ook een hypothese maken die zowel op leveringen als op aanbiedingen van toepassing is.
 
   >[!NOTE]
   >
-  >Als de sjabloon van toepassing is op aanbiedingen, **[!UICONTROL Update offer proposition status]** is beschikbaar in het dialoogvenster **[!UICONTROL Transactions]** tab.
+  >Als de sjabloon van toepassing is op aanbiedingen, is de optie **[!UICONTROL Update offer proposition status]** beschikbaar op het tabblad **[!UICONTROL Transactions]** .
 
-* **[!UICONTROL Measurement with control group]**: Hiermee kunt u aangeven of een controlegroep is gedefinieerd voor de levering of de campagne en deze opnemen in meetindicatoren. De controlegroep, die geen leveringen ontvangt, laat u het effect van de campagne na de levering meten, door het met de doelpopulatie te vergelijken die de levering ontving.
+* **[!UICONTROL Measurement with control group]**: hiermee kunt u aangeven of een controlegroep is gedefinieerd voor de levering of de campagne en deze opnemen in meetindicatoren. De controlegroep, die geen leveringen ontvangt, laat u het effect van de campagne na de levering meten, door het met de doelpopulatie te vergelijken die de levering ontving.
 
   >[!NOTE]
   >
   >Als het malplaatje wordt gevormd om een controlegroep in overweging te nemen, maar geen groep wordt bepaald in de levering die de hypothesen betreffen, zullen de resultaten op gerichte slechts ontvangers worden gebaseerd.
 
-  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
 
-* **[!UICONTROL Channel]**: u kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campaign-console door **[!UICONTROL All channels]** in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese. [Meer informatie](creating-hypotheses.md)
+* **[!UICONTROL Channel]**: u kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campaign-console door **[!UICONTROL All channels]** te selecteren in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese. [Meer informatie](creating-hypotheses.md)
 
   ![](assets/response_properties_001.png)
 
-* **[!UICONTROL Execution folder]**: Hiermee kunt u de uitvoeringsmap voor de hypothese opgeven.
-* **[!UICONTROL Taken into account in campaign ROI calculation]**: houdt rekening met het hypothesesultaat in de berekening van het rendement van investeringen voor de desbetreffende campagne.
+* **[!UICONTROL Execution folder]**: hiermee kunt u de uitvoeringsmap voor de hypothese opgeven.
+* **[!UICONTROL Taken into account in campaign ROI calculation]**: hiermee wordt rekening gehouden met het hypothesesultaat in de berekening van het rendement van investeringen voor de desbetreffende campagne.
 
 ### Instellingen voor het uitvoeren van hypothesesjablonen {#hypothesis-template-execution-settings}
 
-De sjablonen **[!UICONTROL General]** kunt u ook de parameters voor het uitvoeren van hypothesen opgeven. De beschikbare opties zijn als volgt:
+Op het tabblad **[!UICONTROL General]** van de sjabloon kunt u ook de parameters voor het uitvoeren van hypothesen opgeven. De beschikbare opties zijn als volgt:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: hiermee kunt u de hypothese plannen om Adobe Campaign-prestaties te optimaliseren. Als deze optie is ingeschakeld, wordt tijdens de downtime in de verwerkingsworkflow van campagnes hypotheseverberekening uitgevoerd.
+* **[!UICONTROL Schedule execution for a time of low activity]**: hiermee kunt u de hypothese plannen om de Adobe Campaign-prestaties te optimaliseren. Als deze optie is ingeschakeld, wordt tijdens de downtime in de verwerkingsworkflow van campagnes hypotheseverberekening uitgevoerd.
 
   ![](assets/response_exec_settings_002.png)
 
-* **[!UICONTROL Priority]**: niveau toegepast op de hypothese om de berekeningsopdrachten voor hypothesen te kunnen uitsplitsen als er sprake is van gelijktijdige executies.
+* **[!UICONTROL Priority]**: niveau dat wordt toegepast op de hypothese om de berekeningsopdrachten voor hypothesen uit te spuiten als er tegelijkertijd executies plaatsvinden.
 
   ![](assets/response_exec_settings_003.png)
 
-* **[!UICONTROL Automatic execution]**: laat u, indien nodig, hypotheseverandering plannen (bijvoorbeeld als u de indicatoren regelmatig wilt bijwerken tot het einde van de levering).
+* **[!UICONTROL Automatic execution]**: als dat nodig is, kunt u een herberekening van een hypothese plannen (bijvoorbeeld als u de indicatoren regelmatig wilt bijwerken tot het einde van de levering).
 
   ![](assets/response_exec_settings_001.png)
 
   Pas het volgende proces toe om een schema op te geven:
 
-   1. Klik op de knop **[!UICONTROL Frequency of execution...]** koppeling, dan de **[!UICONTROL Change...]** knop.
+   1. Klik op de koppeling **[!UICONTROL Frequency of execution...]** en vervolgens op de knop **[!UICONTROL Change...]** .
 
       ![](assets/response_frequency_execution_001.png)
 
@@ -100,12 +100,12 @@ De sjablonen **[!UICONTROL General]** kunt u ook de parameters voor het uitvoere
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Klikken **[!UICONTROL Finish]** om het programma op te slaan.
+   1. Klik op **[!UICONTROL Finish]** om het schema op te slaan.
 
       ![](assets/response_frequency_execution_003.png)
 
-* **[!UICONTROL Log SQL queries in journal]**: deze functie is gereserveerd voor deskundige gebruikers. Het laat u een lusje aan de controle van de meethypothese toevoegen om SQL vragen te tonen. Dit laat de opsporing van mogelijke storingen toe als een simulatie met fouten eindigt.
-* **[!UICONTROL Keep execution workflow]**: Hiermee kunt u de workflow behouden die automatisch is gegenereerd bij het begin van de hypotheseberekening. In de hypothesen die zijn gemaakt op basis van een sjabloon waarop deze optie is ingeschakeld, is de gegenereerde workflow beschikbaar om het proces te volgen.
+* **[!UICONTROL Log SQL queries in journal]** : deze functie is gereserveerd voor deskundige gebruikers. Het laat u een lusje aan de controle van de meethypothese toevoegen om SQL vragen te tonen. Dit laat de opsporing van mogelijke storingen toe als een simulatie met fouten eindigt.
+* **[!UICONTROL Keep execution workflow]**: hiermee kunt u de workflow behouden die automatisch is gegenereerd bij het begin van de hypotheseberekening. In de hypothesen die zijn gemaakt op basis van een sjabloon waarop deze optie is ingeschakeld, is de gegenereerde workflow beschikbaar om het proces te volgen.
 
   >[!CAUTION]
   >
@@ -115,29 +115,29 @@ De sjablonen **[!UICONTROL General]** kunt u ook de parameters voor het uitvoere
 
 ### Transacties {#transactions}
 
-Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis van reacties van ontvangers in termen van transacties kunt opslaan. Zie dit [sectie](../../configuration/using/about-schema-reference.md) voor meer informatie over de tabellen die gewijd zijn aan reactiebeheer.
+Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis van reacties van ontvangers in termen van transacties kunt opslaan. Verwijs naar deze [ sectie ](../../configuration/using/about-schema-reference.md) voor meer informatie over de lijsten specifiek aan reactiebeheer.
 
-* **[!UICONTROL Schema (reaction log storage)]**: selecteer de reactietabel van de ontvanger. De out-of-box-tabel in Adobe Campaign is **NmsRemaMatchRcp**.
+* **[!UICONTROL Schema (reaction log storage)]** : selecteer de tabel met reacties van ontvangers. De uit-van-de-doos lijst in Adobe Campaign is **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: kies de tabel die de hypothesen betreffen, d.w.z. de transactie of de aankooptabel.
-* **[!UICONTROL Querying schema]**: kies de criteria voor het filteren van de hypothese.
-* **[!UICONTROL Link to individuals]**: kies de verbinding tussen individuen en de lijst die als transactieschema wordt gebruikt.
+* **[!UICONTROL Querying schema]** : kies de criteria voor het filteren van de hypothese.
+* **[!UICONTROL Link to individuals]**: kies de koppeling tussen individuen en de tabel die als transactieschema wordt gebruikt.
 * **[!UICONTROL Link to the household]**: selecteer de koppeling naar het huishouden in het transactieschema als u alle leden van een huishouden in een hypothese wilt opnemen. Dit veld is optioneel.
 * **[!UICONTROL Transaction date]**: dit veld is optioneel, maar wordt aanbevolen, omdat u hiermee een bereik voor hypotheseberekening kunt definiëren.
-* **[!UICONTROL Measurement period]**: Hiermee kunt u begin- en einddatums configureren waarin hypothesen worden uitgevoerd en aankooplijnen worden hersteld.
+* **[!UICONTROL Measurement period]**: hiermee kunt u begin- en einddatums configureren waarin hypothesen worden uitgevoerd en aankooplijnen worden hersteld.
 
   Wanneer de hypothese verband houdt met een levering, wordt de meting automatisch geactiveerd een paar dagen na de contactdatum voor directe postzendingen of na de leveringsdatum voor e-mail- of sms-leveringen.
 
   ![](assets/response_measurement_001.png)
 
-  Als de hypothese direct wordt gelanceerd, kan ze worden gedwongen als ze onmiddellijk zou willen worden geactiveerd. Anders, wordt het teweeggebracht automatisch gebaseerd op het gevormde eind van berekeningsdatum, die op de hypotheseaanmaakdatum gebaseerd is. [Meer informatie](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+  Als de hypothese direct wordt gelanceerd, kan ze worden gedwongen als ze onmiddellijk zou willen worden geactiveerd. Anders, wordt het teweeggebracht automatisch gebaseerd op het gevormde eind van berekeningsdatum, die op de hypotheseaanmaakdatum gebaseerd is. [ leer meer ](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
-* **[!UICONTROL Transaction/Margin amount]**: deze velden zijn optioneel, zodat u de omzetindicatoren automatisch kunt berekenen. [Meer informatie](hypothesis-tracking.md#indicators)
-* **[!UICONTROL Unit amount]**: Hiermee kunt u een bedrag instellen voor het berekenen van de inkomsten. [Meer informatie](hypothesis-tracking.md#indicators)
+* **[!UICONTROL Transaction/Margin amount]** : deze velden zijn optioneel, zodat u omzetindicatoren automatisch kunt berekenen. [Meer informatie](hypothesis-tracking.md#indicators)
+* **[!UICONTROL Unit amount]**: hiermee kunt u een bedrag instellen voor het berekenen van de opbrengsten. [Meer informatie](hypothesis-tracking.md#indicators)
 
   ![](assets/response_transactions_001.png)
 
-* **[!UICONTROL Additional measures and data]**: Hiermee kunt u aanvullende rapportagemaatregelen of assen opgeven vanuit velden in de verschillende tabellen.
-* **[!UICONTROL Update offer proposition status]**: Hiermee kunt u de status van het voorstel wijzigen als een ontvanger van de aanbieding wordt geïdentificeerd door de hypothese.
+* **[!UICONTROL Additional measures and data]**: hiermee kunt u aanvullende rapportagemaatregelen of assen opgeven vanuit velden in de verschillende tabellen.
+* **[!UICONTROL Update offer proposition status]**: hiermee kunt u de status van het voorstel wijzigen als een ontvanger van het aanbod door de hypothese wordt geïdentificeerd.
 
   ![](assets/response_offer_status_001.png)
 
@@ -145,7 +145,7 @@ Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis 
 
 Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betrekking heeft, kunt u het bereik van de hypothesen verfijnen door de doeltransacties en -leveringen aan de hand van filters op te geven. U kunt ook een JavaScript-script gebruiken om expliciet te verwijzen naar een product waarnaar in de transactietabel wordt verwezen.
 
-* **Filter op transacties**: in de **[!UICONTROL Scope]** kunt u een filter op de hypothese configureren. Dit doet u als volgt:
+* **Filter op transacties**: in het **[!UICONTROL Scope]** lusje, kunt u een filter op de hypothese vormen. Dit doet u als volgt:
 
    1. Klik op de koppeling **[!UICONTROL Edit query]**.
 
@@ -159,9 +159,9 @@ Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betr
 
       ![](assets/response_scope_filtering_003.png)
 
-* **Filter op ontvangers**: in de **[!UICONTROL Scope]** kunt u uw hypothese beperken tot alle informatie die aan een bericht is gekoppeld (levering, ontvanger, e-mailadres, service, enzovoort):
+* **Filter op ontvangers**: in het **[!UICONTROL Scope]** lusje, kunt u uw hypothese tot om het even welke informatie beperken verbonden aan een bericht (levering, ontvanger, e-mailadres, de dienst, enz.):
 
-   1. Klik op de knop **[!UICONTROL Add a filter]** koppeling, dan **[!UICONTROL Edit query]**.
+   1. Klik op de koppeling **[!UICONTROL Add a filter]** en vervolgens op **[!UICONTROL Edit query]** .
 
       ![](assets/response_scope_filtering_004.png)
 
@@ -169,13 +169,13 @@ Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betr
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Klikken **[!UICONTROL Finish]** om uw query op te slaan.
+   1. Klik op **[!UICONTROL Finish]** om de query op te slaan.
 
       ![](assets/response_scope_filtering_006.png)
 
-* **Script**: u kunt een JavaScript-script gebruiken om de hypothese-instellingen tijdens de uitvoering dynamisch te overladen.
+* **Manuscript**: u kunt een manuscript van JavaScript gebruiken om de hypothesemontages tijdens zijn uitvoering dynamisch te overladen.
 
-  Om dit te doen, klik **[!UICONTROL Advanced settings]** Voer vervolgens het gewenste script in.
+  Klik hiertoe op de koppeling **[!UICONTROL Advanced settings]** en voer het gewenste script in.
 
   >[!NOTE]
   >
@@ -185,10 +185,10 @@ Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betr
 
 ## Voorbeeld: een hypothesesjabloon maken bij levering {#example--creating-a-hypothesis-template-on-a-delivery}
 
-In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype levering tot stand brengen. De transactietabel (**Aankopen** in ons voorbeeld ) waarop de hypothesen gebaseerd zullen zijn , bevat aankooplijnen die gekoppeld zijn aan artikelen of producten . Wij willen ons model vormen om hypotheses op artikelen of producten in de aankooplijst tot stand te brengen.
+In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype levering tot stand brengen. De transactietabel (**Aankopen** in ons voorbeeld) die de hypothesen zullen worden gebaseerd op bevat aankooplijnen verbonden aan artikelen of producten. Wij willen ons model vormen om hypotheses op artikelen of producten in de aankooplijst tot stand te brengen.
 
-1. Ga in de Adobe Campaign explorer naar de **[!UICONTROL Resources > Templates > Hypothesis templates]** knooppunt.
-1. Klikken **[!UICONTROL New]** een sjabloon maken.
+1. Ga in de Adobe Campaign Explorer naar het knooppunt **[!UICONTROL Resources > Templates > Hypothesis templates]** .
+1. Klik op **[!UICONTROL New]** om een sjabloon te maken.
 
    ![](assets/response_hypothesis_model_example_001.png)
 
@@ -196,23 +196,23 @@ In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype leveri
 
    ![](assets/response_hypothesis_model_example_002.png)
 
-1. Selecteren **[!UICONTROL Deliveries]** als hypothesetype.
+1. Selecteer **[!UICONTROL Deliveries]** als type hypothese.
 1. Geef aan dat de levering een controlegroep kan bevatten door het desbetreffende vak in te schakelen.
-1. Kies de optie **[!UICONTROL Direct mail]** kanaal.
+1. Kies het kanaal **[!UICONTROL Direct mail]** .
 
    >[!NOTE]
    >
    >Aangezien de sjabloon specifiek is voor direct-mailleveringen, kunnen hypothesen die met dit model worden gemaakt, niet aan andere leveringstypen worden gekoppeld.
 
-1. In de **[!UICONTROL Transactions]** selecteert u de tabel met reacties bij ontvangers.
+1. Selecteer op het tabblad **[!UICONTROL Transactions]** de tabel met reacties voor ontvangers.
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. In de **[!UICONTROL Transactions schema]** , kiest u uw aankooptabel.
+1. Kies in het veld **[!UICONTROL Transactions schema]** de aankooptabel.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
-1. Selecteer aankooplijnen in het dialoogvenster **[!UICONTROL Querying schema]** veld.
+1. Selecteer aankooplijnen in het veld **[!UICONTROL Querying schema]** .
 
    ![](assets/response_hypothesis_model_example_008.png)
 
@@ -230,10 +230,10 @@ In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype leveri
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. In de **[!UICONTROL Scope]** tabblad, klikt u op **[!UICONTROL Edit query]** om een filter op hypothesen te maken.
+1. Klik op het tabblad **[!UICONTROL Scope]** op **[!UICONTROL Edit query]** om een filter voor hypothesen te maken.
 
    ![](assets/response_hypothesis_model_example_011.png)
 
    Met de gemaakte sjabloon kunt u dus hypothesen uitvoeren op de producten of artikelen in de aankooptabel.
 
-1. Klikken **[!UICONTROL Save]** om de sjabloon op te nemen.
+1. Klik op **[!UICONTROL Save]** om de sjabloon op te nemen.

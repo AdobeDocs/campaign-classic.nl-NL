@@ -5,9 +5,9 @@ description: Meer informatie over de reikwijdte en de specifieke kenmerken van h
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Voor meer op de leveringsproductie, zie [ deze sectie ](../../reporting/using/gl
 
 De instellingen voor Opnieuw proberen in de levering worden niet meer gebruikt door de campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor meer op pogingen, zie [ deze sectie ](steps-sending-the-delivery.md#configuring-retries).
+Voor meer op herpogingen, zie deze [ pagina ](communication-channels.md) onder **Levering die** verzendt > **vormt opnieuw probeert**.
 
 ### Geldigheidsperiode
 
@@ -131,16 +131,16 @@ Bijvoorbeeld, als de geldigheidsperiode aan de standaardwaarde van 5 dagen in Ca
 
 Zodra een bericht 3.5 dagen in de Verbeterde MTA rij is geweest en niet heeft geleverd, zal het uit tijd en zijn status van **[!UICONTROL Sent]** aan **[!UICONTROL Failed]** in de leveringslogboeken worden bijgewerkt.
 
-Voor meer op de geldigheidsperiode, zie [ deze sectie ](steps-sending-the-delivery.md#defining-validity-period).
+Voor meer op de geldigheidsperiode, zie deze [ pagina ](communication-channels.md) onder **Levering die** verzendt > **bepaalt de geldigheidsperiode**.
 
 ### DKIM-ondertekening
 
 Ondertekening van de DKIM-e-mailverificatie (DomainKeys Identified Mail) wordt uitgevoerd door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Voor meer op DKIM, zie de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
+Voor meer op DKIM, zie de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Leveringssuccesrapportage
 
-In de **[!UICONTROL Summary]** mening van een e-maillevering [ dashboard ](delivery-dashboard.md), begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [ geldigheidsperiode ](steps-sending-the-delivery.md#defining-validity-period), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
+In de **[!UICONTROL Summary]** mening van een e-maillevering [ dashboard ](delivery-dashboard.md), begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [ geldigheidsperiode ](communication-channels.md), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
 
 Sterker nog, tonen alle berichten als **[!UICONTROL Sent]** in [ verzendend logboeken ](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campagne aan Verbeterde MTA worden afgelost. Zij blijven in die status tenzij of tot a [ stuiteren ](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht terug van Verbeterde MTA aan Campagne wordt meegedeeld.
 

@@ -6,9 +6,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Deze rechten zijn als volgt:
 
 * **[!UICONTROL START DELIVERIES]**: Recht om eerder geanalyseerde leveringen goed te keuren. Na de afleveringsanalyse wordt de levering onderbroken in verschillende goedkeuringsstappen en moet deze worden goedgekeurd om te worden hervat. Gebruikers met de optie **[!UICONTROL START DELIVERIES]** rechts mogen leveringen goedkeuren.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Recht om uw eigen SQL manuscripten te schrijven die de SQL activiteit van het Beheer van Gegevens gebruiken, om het werklijsten (zie [&#x200B; tot stand te brengen en te bevolken deze sectie &#x200B;](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Recht om uw eigen SQL manuscripten te schrijven gebruikend de SQL activiteit van het Beheer van Gegevens, om het werklijsten tot stand te brengen en te bevolken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: Recht om werkstromen uit te voeren. Zonder dit recht kunnen gebruikers geen workflows starten, stoppen of opnieuw starten.
 
@@ -69,6 +69,6 @@ Deze rechten zijn als volgt:
 
 Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde mappen in de navigatiehiërarchie en kunnen ze lees-, schrijf- en verwijdermachtigingen verlenen.
 
-De de toegangsrechtenmatrijs van Adobe Campaign is beschikbaar [&#x200B; hier &#x200B;](/help/platform/using/assets/access-rights-matrix.pdf).
+De de toegangsrechtenmatrijs van Adobe Campaign is beschikbaar [ hier ](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![afbeelding](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=nl-NL)
+[![afbeelding](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

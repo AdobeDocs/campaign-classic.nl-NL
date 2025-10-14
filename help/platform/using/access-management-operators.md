@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1237'
 ht-degree: 2%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [ Adobe Identity Management Systeem (IMS) ](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 ## Aan de slag met campagneoperatoren {#about-operators}
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [&#x200B; deze documentatie &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-users-individually.html#_blank).
+>Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [ deze documentatie ](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 
@@ -36,13 +36,13 @@ Operatoren worden standaard opgeslagen in het knooppunt **[!UICONTROL Administra
 
 Operatoren kunnen handmatig worden gemaakt of toegewezen aan een bestaande LDAP-directory.
 
-De volledige procedure om een exploitant tot stand te brengen wordt beschreven in [&#x200B; deze pagina &#x200B;](#creating-an-operator).
+De volledige procedure om een exploitant tot stand te brengen wordt beschreven in [ deze pagina ](#creating-an-operator).
 
-Voor meer op de integratie van Adobe Campaign en LDAP, verwijs naar [&#x200B; deze pagina &#x200B;](../../installation/using/connecting-through-ldap.md).
+Voor meer op de integratie van Adobe Campaign en LDAP, verwijs naar [ deze pagina ](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Voor meer op veiligheidsstreken in Adobe Campaign, verwijs naar [&#x200B; deze pagina &#x200B;](../../installation/using/security-zones.md).
+>Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Voor meer op veiligheidsstreken in Adobe Campaign, verwijs naar [ deze pagina ](../../installation/using/security-zones.md).
 
 Gebruikers kunnen ook rechtstreeks verbinding maken met Adobe Campaign via hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 
 1. Geef de **[!UICONTROL Identification parameters]** van de gebruiker op: de aanmeldingsnaam, het wachtwoord en de naam. De aanmeldingsnaam en het wachtwoord worden door de operator gebruikt om u aan te melden bij Adobe Campaign. Zodra de gebruiker is aangemeld, kunnen deze zijn of haar wachtwoord wijzigen via het menu **[!UICONTROL Tools > Change password]** . Het e-mailadres van de exploitant is essentieel omdat het de exploitant in staat stelt meldingen te ontvangen, bijvoorbeeld bij de verwerking van goedkeuringen.
 
-   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](../../distributed/using/about-distributed-marketing.md).
+   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
 
 1. Selecteer in de sectie **[!UICONTROL Operator access rights]** de machtigingen die aan de operator zijn verleend.
 
@@ -64,7 +64,7 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   U kunt één of meerdere genoemde rechten ook selecteren (verwijs naar [&#x200B; Genoemde rechten &#x200B;](#named-rights)). Klik hiertoe op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteer **[!UICONTROL Named rights]** :
+   U kunt één of meerdere genoemde rechten ook selecteren (verwijs naar [ Genoemde rechten ](#named-rights)). Klik hiertoe op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteer **[!UICONTROL Named rights]** :
 
    ![](assets/s_ncs_user_rights_operators.png)
 
@@ -84,13 +84,13 @@ Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen
 
 >[!NOTE]
 >
->In het veld **[!UICONTROL Session timeout]** kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Voor meer op dit, verwijs naar [&#x200B; Ongeveer Verdeelde Toegang van Gegevens &#x200B;](../../installation/using/about-fda.md).
+>In het veld **[!UICONTROL Session timeout]** kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Voor meer op dit, verwijs naar [ Ongeveer Verdeelde Toegang van Gegevens ](../../installation/using/about-fda.md).
 
 ## De tijdzone van de operator definiëren {#time-zone-of-the-operator}
 
 Op het tabblad **[!UICONTROL General]** kunt u de tijdzone van de operator selecteren. Operatoren werken standaard in de tijdzone van de server. Het is echter mogelijk een andere tijdzone te selecteren met de vervolgkeuzelijst.
 
-De configuratie van tijdstreken wordt beschreven in [&#x200B; deze pagina &#x200B;](../../installation/using/time-zone-management.md).
+De configuratie van tijdstreken wordt beschreven in [ deze pagina ](../../installation/using/time-zone-management.md).
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang t
   >
   >Zelfs als hun account is uitgeschakeld, kan de operator nog steeds waarschuwingen of meldingen ontvangen vanuit Campagne. Adobe raadt u aan het e-mailadres uit hun profiel te verwijderen om te stoppen met het verzenden van campagnemeldingen naar deze operator.
 
-* De **[!UICONTROL Forbid access from the rich client]** optie laat u het gebruik van Adobe Campaign tot [&#x200B; toegang van het Web &#x200B;](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of door APIs beperken: de toegang tot de de cliëntconsole van Adobe Campaign is niet meer beschikbaar.
+* De **[!UICONTROL Forbid access from the rich client]** optie laat u het gebruik van Adobe Campaign tot [ toegang van het Web ](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of door APIs beperken: de toegang tot de de cliëntconsole van Adobe Campaign is niet meer beschikbaar.
 * Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/security-zones.md) voor meer informatie.
 * U kunt een vertrouwd IP masker ook bepalen gebruikend de aangewezen verbinding.
 
@@ -148,7 +148,7 @@ U hebt toegang tot:
 
   >[!NOTE]
   >
-  >Voor meer op dit, verwijs naar [&#x200B; het toegangsbeheer van de Omslag &#x200B;](#folder-access-management).
+  >Voor meer op dit, verwijs naar [ het toegangsbeheer van de Omslag ](#folder-access-management).
 
 * Het erkenningslogboek van de exploitant.
 
@@ -174,7 +174,7 @@ De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   De genoemde rechten worden gedetailleerd in de [&#x200B; Benoemde rechten &#x200B;](#named-rights) sectie.
+   De genoemde rechten worden gedetailleerd in de [ Benoemde rechten ](#named-rights) sectie.
 
 1. Selecteer in het knooppunt **[!UICONTROL Administration > Access management > Operators]** de webapplicatieagent (&#39;webapp&#39;).
 
@@ -190,8 +190,8 @@ De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   Het wijzigen van rechten op boomomslagen is gedetailleerd in de [&#x200B; sectie van het de toegangsbeheer van de Omslag &#x200B;](#folder-access-management).
+   Het wijzigen van rechten op boomomslagen is gedetailleerd in de [ sectie van het de toegangsbeheer van de Omslag ](#folder-access-management).
 
 >[!NOTE]
 >
->Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar [&#x200B; checklist van de Configuratie van de Veiligheid van Adobe Campaign &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
+>Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar [ checklist van de Configuratie van de Veiligheid van Adobe Campaign ](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).

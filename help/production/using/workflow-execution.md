@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '652'
 ht-degree: 2%
 
 ---
@@ -24,29 +24,29 @@ In de onderstaande sectie vindt u informatie over algemene problemen met betrekk
 Raadpleeg de volgende secties voor meer informatie over workflows:
 
 * [Workflows](../../workflow/using/about-workflows.md)
-* [Een workflow starten](../../workflow/using/starting-a-workflow.md)
-* [Levenscyclus van workflow](../../workflow/using/workflow-life-cycle.md)
-* [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
+* [ Beginnend een werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
+* [ het levenscyclus van het Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
+* [ Beste praktijken wanneer het gebruiken van werkschema&#39;s ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
 
 ## Zo snel mogelijk starten in campagnes {#start-as-soon-as-possible-in-campaigns}
 
-In sommige gevallen worden workflows die worden uitgevoerd vanuit een campagne, niet gestart wanneer op de knop **[!UICONTROL Start]** knop. In plaats van te beginnen gaat het naar de status &quot;Zo snel mogelijk beginnen&quot;.
+In sommige gevallen worden workflows die worden uitgevoerd via een campagne, niet gestart wanneer wordt geklikt op de knop **[!UICONTROL Start]** . In plaats van te beginnen gaat het naar de status &quot;Zo snel mogelijk beginnen&quot;.
 
 Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om het op te lossen:
 
-1. Controleer de [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) technische workflowstatus. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
+1. Controleer de [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} technische werkschemastatus. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
 
-   Raadpleeg voor meer informatie over technische workflows controle [deze pagina](../../workflow/using/monitoring-technical-workflows.md).
+   Voor meer op technische werkschema&#39;s controle, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 
    >[!NOTE]
    >
-   >Nadat de workflow opnieuw is gestart, moet u de volgende taken uitvoeren (klik met de rechtermuisknop op de knop **[!UICONTROL Scheduler]** activiteit / **[!UICONTROL Execute pending task(s) now]**) om na te gaan of er bij een van de activiteiten opnieuw sprake is van een mislukking.
+   >Nadat u de workflow opnieuw hebt gestart, moet u de volgende taken uitvoeren (klik met de rechtermuisknop op **[!UICONTROL Scheduler]** activity / **[!UICONTROL Execute pending task(s) now]** ) om te controleren of er bij een van de activiteiten opnieuw een fout optreedt.
 
    Als het werkschema nog ontbreekt, controleer het controlelogboek voor specifieke fout, los dienovereenkomstig problemen op, dan opnieuw begin het werkschema opnieuw.
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van het Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [ processen van de Controle ](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
 
-   Een beheerder kan ook controleren of de **wfserver@`<instance>`** wordt op de hoofdtoepassingsserver gestart met de onderstaande opdracht.
+   Een admin gebruiker kan ook controleren dat de **wfserver@`<instance>`** module op uw belangrijkste toepassingsserver gebruikend het hieronder bevel wordt gelanceerd.
 
    ```
    nlserver pdump
@@ -56,7 +56,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
    [...]
    ```
 
-   Als de module niet actief is, neemt u contact op met de klantenservice van de Adobe. Als u een installatie op locatie hebt, moet een beheerder de service opnieuw starten met de onderstaande opdracht.
+   Neem contact op met de klantenservice van Adobe als de module niet actief is. Als u een installatie op locatie hebt, moet een beheerder de service opnieuw starten met de onderstaande opdracht.
 
    ```
    nlserver start wfserver@<instance-name>
@@ -64,32 +64,32 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    >[!NOTE]
    >
-   >Vervangen **`<instance-name>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
+   >Vervang **`<instance-name>`** door de naam van de instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Raadpleeg voor meer informatie over het opnieuw opstarten van modules [deze sectie](../../production/using/usual-commands.md#module-launch-commands).
+   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#module-launch-commands).
 
-1. Controleer of de **aantal campagneprocessen dat wordt uitgevoerd** op het geval is meer dan de drempel. Er is een limiet gedefinieerd door [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) optie op hoeveel campagneprocessen parallel op de instantie kunnen lopen. Wanneer deze limiet is bereikt, blijft de workflow in de status &quot;Zo snel mogelijk starten&quot; staan, zolang het aantal actieve workflows de limiet overschrijdt.
+1. Controle als het **aantal campagneprocessen die** op de instantie lopen meer dan de drempel is. Er is een limiet die door de optie [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) wordt gedefinieerd voor het aantal campagneprocessen dat parallel op de instantie kan worden uitgevoerd. Wanneer deze limiet is bereikt, blijft de workflow in de status &quot;Zo snel mogelijk starten&quot; staan, zolang het aantal actieve workflows de limiet overschrijdt.
 
    U kunt dit probleem oplossen door ongewenste workflows te stoppen en mislukte leveringen te verwijderen. Als de drempelwaarde is bereikt, kunnen nieuwe processen worden uitgevoerd.
 
-   Om het aantal werkstromen te controleren die van uw instantie lopen, adviseren wij gebruikend de vooraf bepaalde meningen, toegankelijk door gebrek in **[!UICONTROL Administration]** / **[!UICONTROL Audit]** map. Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status) voor meer informatie.
+   Als u het aantal workflows van uw instantie wilt controleren, raden we u aan de vooraf gedefinieerde weergaven te gebruiken, die standaard toegankelijk zijn in de map **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"} voor meer informatie.
 
    >[!IMPORTANT]
    >
-   >De **[!UICONTROL NmsOperation_LimitConcurrency]** drempelwaarde voor opties kan leiden tot prestatieproblemen voor uw instantie. Voer dit in geen geval alleen uit en neem contact op met uw Adobe Campaign-contactpersoon.
+   >Als u de optiedrempel van **[!UICONTROL NmsOperation_LimitConcurrency]** verhoogt, kunnen er prestatieproblemen optreden voor uw instantie. Voer dit in geen geval alleen uit en neem contact op met uw Adobe Campaign-contactpersoon.
 
-Raadpleeg voor meer informatie over hoe u uw workflows kunt controleren [deze sectie](../../workflow/using/monitoring-workflow-execution.md).
+Voor meer op hoe te om u werkschema&#39;s te controleren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 ## Beginnen in uitvoering {#start-in-progress}
 
-Als werkstromen niet worden uitgevoerd en hun status is **Beginnen in uitvoering** Dit kan betekenen dat de workflowmodule niet wordt gestart.
+Als de werkschema&#39;s niet uitvoeren en hun status is **Begin lopend**, zou dit kunnen betekenen dat de werkschemamodule niet wordt gelanceerd.
 
 Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in **[!UICONTROL Monitoring]** tabblad, toegankelijk vanaf de startpagina van het Campaign Classic (zie [Monitoringprocessen](../../production/using/monitoring-processes.md)).
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [ processen van de Controle ](../../production/using/monitoring-processes.md)).
 
-   Een beheerder kan ook controleren of de **wfserver@`<instance>`** wordt op de hoofdtoepassingsserver gestart met de onderstaande opdracht.
+   Een admin gebruiker kan ook controleren dat de **wfserver@`<instance>`** module op uw belangrijkste toepassingsserver gebruikend het hieronder bevel wordt gelanceerd.
 
    ```sql
    nlserver pdump
@@ -99,9 +99,9 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
    [...]
    ```
 
-   Raadpleeg voor meer informatie over het controleren van modules [deze sectie](../../production/using/usual-commands.md#monitoring-commands-).
+   Voor meer op hoe te om modules te controleren, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Als de module niet actief is, neemt u contact op met de klantenservice van de Adobe. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
+1. Neem contact op met de klantenservice van Adobe als de module niet actief is. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
 
    ```
    nlserver start wfserver@<instance-name>
@@ -109,15 +109,15 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 
    >[!NOTE]
    >
-   >Vervangen **`<instance-name>`** met de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
+   >Vervang **`<instance-name>`** door de naam van de instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Raadpleeg voor meer informatie over het opnieuw opstarten van modules [deze sectie](../../production/using/usual-commands.md#module-launch-commands).
+   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#module-launch-commands).
 
 ## Mislukte workflow {#failed-workflow}
 
 Als een werkstroom mislukt, voert u de volgende stappen uit:
 
-1. Controleer het werkstroomjournaal. Raadpleeg voor meer informatie de [Uitvoering van controlewerkstroom](../../workflow/using/monitoring-workflow-execution.md) en [Logboeken weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) secties.
-1. Technische workflows controleren. Zie voor meer informatie de [deze sectie](../../workflow/using/monitoring-technical-workflows.md).
+1. Controleer het werkstroomjournaal. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+1. Technische workflows controleren. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 1. Zoek naar mislukkingen op de individuele werkschemaactiviteiten.

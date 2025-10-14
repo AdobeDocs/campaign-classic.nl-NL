@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 6%
+source-wordcount: '463'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +30,13 @@ Met deze optie worden de prestaties aanzienlijk verbeterd wanneer de stap voor p
 
 Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken die in een externe database zijn opgeslagen.
 
-* **Filter op externe gegevens** - de [ activiteit van de Vraag ](../../workflow/using/targeting-data.md#selecting-data) staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken. Raadpleeg [deze pagina](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
+* **Filter op externe gegevens** - de activiteit van de Vraag staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken. Voor meer op dit, verwijs naar de [ Campagne v8 documentatie ] https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html) {target="_blank"}.
 
-* **creeer ondergroepen** - de [ Gesplitste ](../../workflow/using/split.md) activiteit staat u toe om ondergroepen tot stand te brengen. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Raadpleeg [deze pagina](../../workflow/using/split.md) voor meer informatie.
+* **creeer ondergroepen** - de Gesplitste activiteit staat u toe om ondergroepen tot stand te brengen. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-* **Laad externe gegevensbestand** - u kunt de externe gegevens in de [ Lading van Gegevens ](../../workflow/using/data-loading-rdbms.md) (RDBMS) activiteit gebruiken. Meer informatie vindt u [op deze pagina](../../workflow/using/data-loading-rdbms.md).
+* **Laad extern gegevensbestand** - u kunt de externe gegevens in de het laden van Gegevens (RDBMS) activiteit gebruiken. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
 
-* **Toevoegend informatie en verbindingen** - de [ Verrijking ](../../workflow/using/enrichment.md) activiteit laat u om extra gegevens aan de werklijst van het werkschema, en verbindingen aan een externe lijst toe te voegen. In deze context kan het gegevens uit een externe database gebruiken. Meer informatie vindt u [op deze pagina](../../workflow/using/enrichment.md).
+* **het Toevoegen van informatie en verbindingen** - de activiteit van de Verrijking laat u extra gegevens aan de werklijst van het werkschema, en verbindingen aan een externe lijst toevoegen. In deze context kan het gegevens uit een externe database gebruiken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 ## Afvoerkanalen en beperkingen {#fda-limitations}
 

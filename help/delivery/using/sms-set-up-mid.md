@@ -1,35 +1,35 @@
 ---
 product: campaign
-title: Campagne-sms-kanaal configureren op een mid-sourcing-infrastructuur
-description: Meer informatie over het configureren van het sms-kanaal in Campaign op een mid-sourcing-infrastructuur
+title: Vorm het kanaal van SMS van de Campagne op een midsourcinginfrastructuur
+description: Leer hoe te om het kanaal van SMS in Campaign op een midsourcinginfrastructuur te vormen
 feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '982'
 ht-degree: 8%
 
 ---
 
-# SMS-kanaal configureren op een mid-sourcing infrastructuur {#setting-up-sms-channel}
+# SMS-kanaal configureren op een infrastructuur voor midsourcing {#setting-up-sms-channel}
 
 Om naar een mobiele telefoon met midservers te verzenden, hebt u het volgende nodig:
 
 1. Een exploitant van SMS die op de middelste server wordt gecreeerd voor de externe rekening van SMS die op de server van de Marketing wordt gecreeerd.
 
-1. Een extern account op de Marketing-server, waarmee de kanaal- en leveringsmodus worden opgegeven.
+1. Een externe account op de marketingserver die de kanaalmodus en de leveringsmodus aangeeft.
 
-1. Een extern account op de Mid-server, met details over de connector en het berichttype.
+1. Een externe account op de middelste server, met vermelding van de connector en het berichttype.
 
-1. Een leveringssjabloon die verwijst naar het externe account om het verzendproces te stroomlijnen.
+1. Een leveringsmalplaatje dat verwijzingen de externe rekening om het verzendende proces te stroomlijnen.
 
 >[!NOTE]
 >
-> Voor sms-leveringen moet de typologie een specifieke sms-affiniteit gebruiken die is gemaakt in **één** speciale applicatieservercontainer. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> Voor de leveringen van SMS, zou de typologie een specifieke affiniteit van SMS moeten gebruiken die in **wordt gecreeerd één** specifieke container van de toepassingsserver. [Meer informatie](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
-## Creëer de SMS-operator op de Mid-server {#create-sms-operator}
+## Maak de SMS-operator op de middelste server {#create-sms-operator}
 
 Om het configuratieproces te beginnen, moet u een exploitant van SMS op de middelste-server specifiek voor de externe rekening tot stand brengen.
 
@@ -57,13 +57,13 @@ Om het configuratieproces te beginnen, moet u een exploitant van SMS op de midde
 
 ## Een externe SMS-account maken op de marketingserver {#create-accound-mkt}
 
-Om een SMS te versturen naar een mobiele telefoon met Mid-servers, moet je eerst je SMS externe account aanmaken op de Marketing server.
+Als u een SMS-bericht naar een mobiele telefoon met mediaservers wilt verzenden, moet u eerst uw SMS-externe account op de marketingserver maken.
 
-1. Klik in het **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** knooppunt van de boom op het **[!UICONTROL New]** pictogram.
+1. Klik in het knooppunt **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** van de structuur op het pictogram **[!UICONTROL New]** .
 
    ![](assets/mid_external_account_2.png)
 
-1. Typ uw **[!UICONTROL Label]** en **[!UICONTROL Internal name]**. Merk op dat de interne naam later moet worden gebruikt om uw SMPP externe account in de Mid-server een naam te geven.
+1. Typ uw **[!UICONTROL Label]** en **[!UICONTROL Internal name]** in. Merk op dat de Interne naam later moet worden gebruikt om uw externe rekening SMPP in de Midden-server te noemen.
 
 1. Definieer het accounttype als **[!UICONTROL Routing]** , het kanaal als **[!UICONTROL Mobile (SMS)]** en de leveringsmodus als **[!UICONTROL Mid-sourcing]** .
 
@@ -71,19 +71,19 @@ Om een SMS te versturen naar een mobiele telefoon met Mid-servers, moet je eerst
 
 1. Geef op het tabblad **[!UICONTROL Mid-Sourcing]** de parameters voor de serververbinding voor de midsourcing op.
 
-   Voer de gegevens van de [eerder gemaakte SMS-connector](#create-sms-operator) in de **[!UICONTROL Account]** velden en **[!UICONTROL Password]** in.
+   Ga de details van de [ eerder gecreeerde schakelaar van SMS ](#create-sms-operator) op in de **[!UICONTROL Account]** en **[!UICONTROL Password]** gebieden.
 
    ![](assets/mid_external_account_7.png)
 
-1. Bevestig uw configuratie door op **[!UICONTROL Test the connection]**.
+1. Bevestig uw configuratie door op **[!UICONTROL Test the connection]** te klikken.
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Maak een SMPP extern account aan op de Mid-server {#creating-smpp-mid}
+## Een externe SMPP-account maken op de mediumserver {#creating-smpp-mid}
 
 >[!IMPORTANT]
 >
->Het gebruik van hetzelfde account en wachtwoord voor meerdere externe sms-accounts kan leiden tot conflicten en overlapping tussen de accounts. Raadpleeg de pagina[&#128279;](troubleshooting-sms.md#external-account-conflict) voor het oplossen van problemen met sms.
+>Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Verwijs naar de [ het oplossen van problemenpagina van SMS ](troubleshooting-sms.md#external-account-conflict).
 
 Zodra u met succes uw externe rekening van SMS op de server van de Marketing hebt opgezet, is de volgende stap uw externe rekening SMPP op de middentserver te vestigen.
 
@@ -116,7 +116,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Neem contact op met uw SMS-serviceprovider die u uitleg geeft over het invullen van de verschillende externe accountvelden op het tabblad **[!UICONTROL Connection settings]** .
 
-   Neem vervolgens contact op met uw provider, afhankelijk van de gekozen provider, die u de waarde zal geven om het veld in **[!UICONTROL SMSC implementation name]** te voeren.
+   Neem vervolgens contact op met uw provider, afhankelijk van de gekozen provider, die u de waarde geeft die u in het veld **[!UICONTROL SMSC implementation name]** wilt invoeren.
 
    U kunt het aantal verbindingen aan de leverancier per MTA kind bepalen. De standaardwaarde is 1.
 
@@ -148,25 +148,25 @@ Hiervoor voert u de volgende stappen uit:
 
    Met het selectievakje **[!UICONTROL Enable TLS over SMPP]** kunt u SMPP-verkeer coderen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
 
-1. Als u een **[!UICONTROL Extended generic SMPP]** connector configureert, kunt u automatische antwoorden instellen.
+1. Als u een **[!UICONTROL Extended generic SMPP]** -connector configureert, kunt u automatische reacties instellen.
 
    Raadpleeg [deze sectie](sms-set-up.md#automatic-reply) voor meer informatie.
 
-## Het bezorgingssjabloon wijzigen {#changing-the-delivery-template}
+## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Raadpleeg voor meer informatie hierover de [sectie Over sjablonen](about-templates.md) .
+Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Om berichten door het kanaal van SMS te verzenden, moet u een malplaatje creëren dat een verwijzing naar de kanaalschakelaar omvat.
 
-Als u de systeemeigen bezorgingssjabloon wilt behouden, raden we u aan deze te dupliceren en vervolgens te configureren.
+Om het inheemse leveringsmalplaatje te houden, adviseren wij dat u het dupliceert en dan het vormt.
 
-In het onderstaande voorbeeld genereren we een sjabloon om de bezorging van berichten via het eerder aangemaakte SMPP-account te vergemakkelijken. Dit doet u als volgt:
+In het onderstaande voorbeeld genereren we een sjabloon om de levering van berichten via de eerder gemaakte SMPP-account te vergemakkelijken. Dit doet u als volgt:
 
-1. Klik in de **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** knooppunt van de structuur met de rechtermuisknop op de **[!UICONTROL Send to mobiles]** sjabloon en selecteer **[!UICONTROL Duplicate]**.
+1. Klik in het knooppunt **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** van de structuur met de rechtermuisknop op de **[!UICONTROL Send to mobiles]** -sjabloon en selecteer **[!UICONTROL Duplicate]** .
 
    ![](assets/delivery_template_mid_1.png)
 
-1. Wijzig het label van de sjabloon, bijvoorbeeld **Verzonden naar mobiele telefoons (SMPP).**
+1. Verander het etiket van het malplaatje, bijvoorbeeld **Verzonden aan mobiles (SMPP)**.
 
    ![](assets/delivery_template_mid_2.png)
 

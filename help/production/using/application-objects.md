@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 3%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
@@ -22,11 +22,11 @@ Ingebouwde objecten moeten worden gecontroleerd en voorkomen dat ze te veel groe
 
 ## Volgorde van id&#39;s {#sequence-of-ids}
 
-Adobe Campaign gebruikt een id-reeks die dienovereenkomstig moet worden gebruikt: **xtkNewId**. Als de reeks zeer snel wordt verbruikt (d.w.z. van 100.000 per dag), moet u verifiëren dat het met uw bedrijfsvereisten, zoals het verzenden van miljoenen e-mails per dag verenigbaar is. Het is mogelijk om een specifieke opeenvolging voor bepaalde lijsten te bepalen. U kunt een workflow instellen om het gebruik van de id te controleren.
+Adobe Campaign gebruikt een opeenvolging van identiteitskaart die dienovereenkomstig moet worden verbruikt: **xtkNewId**. Als de reeks zeer snel wordt verbruikt (d.w.z. van 100.000 per dag), moet u verifiëren dat het met uw bedrijfsvereisten, zoals het verzenden van miljoenen e-mails per dag verenigbaar is. Het is mogelijk om een specifieke opeenvolging voor bepaalde lijsten te bepalen. U kunt een workflow instellen om het gebruik van de id te controleren.
 
 Wanneer de opeenvolging meer dan 2 miljard (2.147.483.648 is het nauwkeurige aantal) bereikt, gaat het terug naar nul. Het moet worden vermeden en er moeten problemen ontstaan, en daarom moet deze volgorde worden bewaakt.
 
-Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan worden gedaan met de **pkSequence** in het schema.
+Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan met het **pkSequence** attribuut in het schema worden gedaan.
 
 Workflows met hoge frequentie die veel logbestanden maken, verbruiken veel id&#39;s. Daarom wordt het ten zeerste aanbevolen te veel logbestanden en hoge frequenties in workflows te vermijden.
 
@@ -40,7 +40,7 @@ Deze methode markeert ook gebruikers die te veel objecten maken.
 
 ## Leveringen {#deliveries}
 
-Op elk moment moeten er minder dan 1000 leveringen plaatsvinden. Veel leveringen verbruiken databaseruimte en veroorzaken problemen. Een geval dat tot meer dan 10 leveringen per dag leidt moet tegen bedrijfsvereisten worden gecontroleerd. Overweeg continue leveringen te gebruiken om minder leveringen te maken. Raadpleeg [deze sectie](../../workflow/using/continuous-delivery.md) voor meer informatie.
+Op elk moment moeten er minder dan 1000 leveringen plaatsvinden. Veel leveringen verbruiken databaseruimte en veroorzaken problemen. Een geval dat tot meer dan 10 leveringen per dag leidt moet tegen bedrijfsvereisten worden gecontroleerd. Overweeg continue leveringen te gebruiken om minder leveringen te maken. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
 
 Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
@@ -48,14 +48,14 @@ Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
 Het aantal bestanden op de schijf van de toepassingsserver mag niet oneindig toenemen.
 
-De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden voorkomen door de standaard te gebruiken [Bestandsverzamelaar](../../workflow/using/file-collector.md) activiteit. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
+De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden verhinderd door de standaard [ activiteit te gebruiken van de inzamelaar van het 0} Dossier. ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"} De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
 
 Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfuncties, moet deze worden leeggemaakt om schijfruimte tot een minimum te beperken.
 
 ## Transactionele gegevens en logboeken {#transactional-data-and-logs}
 
-Elke [werkstroom](../../workflow/using/data-life-cycle.md#work-table) dat de invoer van gegevens in Adobe Campaign de grootte van het gegevensbestand om veroorzaakt te groeien.
+Elke werkstroom die gegevens in Adobe Campaign invoert veroorzaakt de grootte van het gegevensbestand om te groeien. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
 
-Controleer of werkstromen voor opschonen of leegmaken worden uitgevoerd en of de records op effectieve wijze worden gewist. Alle transactiegegevens en logbestanden moeten worden gewist. Met de opschoningstaak worden alleen de standaardtabellen verwijderd: bijhouden en brede logboeken. Specifieke tabellen moeten worden leeggemaakt door specifieke workflows. Zie [deze sectie](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Controleer of werkstromen voor opschonen of leegmaken worden uitgevoerd en of de records op effectieve wijze worden gewist. Alle transactiegegevens en logbestanden moeten worden gewist. Met de opschoningstaak worden alleen de standaardtabellen verwijderd: bijhouden en brede logboeken. Specifieke tabellen moeten worden leeggemaakt door specifieke workflows. verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 Controleer de oudste aanmaakdatum van de records om transactiegegevens te verouderen.

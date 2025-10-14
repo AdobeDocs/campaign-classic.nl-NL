@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 8%
+source-wordcount: '1027'
+ht-degree: 7%
 
 ---
 
@@ -77,19 +77,19 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
-U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]** , beschikbaar op het tabblad **[!UICONTROL Analysis]** van de leveringseigenschappen. Voor meer bij het analyseren van de levering, zie [&#x200B; deze sectie &#x200B;](steps-validating-the-delivery.md#analyzing-the-delivery).
+U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]** , beschikbaar op het tabblad **[!UICONTROL Analysis]** van de leveringseigenschappen. Voor meer bij het analyseren van de levering, zie [ deze sectie ](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in FDA opslaat.
 
-Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Voor meer op dit, zie [&#x200B; Toegang hebbend tot een extern gegevensbestand (FDA) &#x200B;](../../installation/using/about-fda.md).
+Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Voor meer op dit, zie [ Toegang hebbend tot een extern gegevensbestand (FDA) ](../../installation/using/about-fda.md).
 
 Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal ontvangers terwijl het gebruiken van veel verpersoonlijkingsgebieden en/of verpersoonlijkingsblokken in de inhoud van uw berichten ervaart, kan deze optie de behandeling van verpersoonlijking en daarom het leveren van uw berichten versnellen.
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
-1. Maak een campagne. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
-1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
-1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/delivery.md).
+1. Maak een campagne. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](../../workflow/using/query.md).
+1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](../../workflow/using/delivery.md).
 1. Ga naar de tab **[!UICONTROL Analysis]** van de **[!UICONTROL Delivery properties]** en selecteer de optie **[!UICONTROL Prepare the personalization data with a workflow]** .
 
    ![](assets/perso_optimization.png)
@@ -144,4 +144,4 @@ Leer hoe u een personalisatieveld toevoegt aan de onderwerpregel en de content v
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Adobe Experience Platform-segmenten in campagne plaatsen
-description: Leer hoe u een Adobe Experience Platform-publiek in Campaign Classic kunt opnemen
+description: Leer hoe u een Adobe Experience Platform-publiek kunt opnemen in Campaign Classic
 feature: Experience Platform Integration
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 
 
-Als u een Adobe Experience Platform-publiek wilt opnemen in de campagne en deze wilt gebruiken in uw workflows, moet u eerst Adobe Campaign als een Adobe Experience Platform verbinden **Doel** en configureer deze met het segment dat u wilt exporteren.
+Om het publiek van Adobe Experience Platform in Campagne op te nemen en hen in uw werkschema&#39;s te gebruiken, moet u eerst Adobe Campaign als Adobe Experience Platform **Bestemming** verbinden en het met het segment vormen om uit te voeren.
 
 Zodra de Bestemming is gevormd, zullen de gegevens naar uw opslagplaats worden uitgevoerd, en u zult een specifieke werkschema in Campaign Classic moeten bouwen om het in te voeren.
 
 ## Adobe Campaign verbinden als doel
 
-In het platform van de Ervaring van de Adobe, vorm een verbinding met Adobe Campaign door een opslagplaats voor de uitgevoerde segmenten te selecteren. Met deze stappen kunt u ook de segmenten selecteren die u wilt exporteren en aanvullende XDM-velden opgeven die u wilt opnemen.
+In het Adobe Experience-platform configureert u een verbinding met Adobe Campaign door een opslaglocatie voor de geëxporteerde segmenten te selecteren. Met deze stappen kunt u ook de segmenten selecteren die u wilt exporteren en aanvullende XDM-velden opgeven die u wilt opnemen.
 
-Raadpleeg voor meer informatie de [Doelen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=nl-NL).
+Voor meer op dit, verwijs naar de [ documentatie van Doelen ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 Nadat de Bestemming is gevormd, leidt Adobe Experience Platform tot een lusje-afgebakend .txt of .csv- dossier in de opslagplaats die u verstrekte. Deze bewerking is gepland en wordt één keer per 24 uur uitgevoerd.
 
-U kunt een werkschema van het Campaign Classic nu vormen om het segment in Campagne in te nemen.
+U kunt nu een Campaign Classic-workflow configureren om het segment in te voeren in Campagne.
 
 ## Een importworkflow maken in Campaign Classic
 
-Zodra het Campaign Classic als Bestemming is gevormd, moet u een specifieke werkschema bouwen om het dossier in te voeren dat door Adobe Experience Platform is uitgevoerd.
+Als Campaign Classic eenmaal is geconfigureerd als een doel, moet u een specifieke workflow maken om het bestand te importeren dat door Adobe Experience Platform is geëxporteerd.
 
-Om dit te doen, moet u toevoegen en vormen **[!UICONTROL File transfer]** activiteit. Raadpleeg voor meer informatie over het configureren van deze activiteit [deze sectie](../../workflow/using/file-transfer.md).
+Hiervoor moet u een **[!UICONTROL File transfer]** -activiteit toevoegen en configureren. Voor meer op hoe te om deze activiteit te vormen, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

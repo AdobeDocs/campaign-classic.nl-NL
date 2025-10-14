@@ -4,9 +4,9 @@ title: Audit trail
 description: Leer hoe u uw exemplaar kunt controleren met het Campagne Audit Trail
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Ontdek meer over de functionaliteit van het spoor van de Controle in de [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/audit-trail).
+>Ontdek meer over de functionaliteit van het spoor van de Controle in de [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 
@@ -34,7 +34,7 @@ In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledi
 
   Voor gedetailleerde informatie over schema&#39;s, verwijs naar deze [ pagina ](../../configuration/using/data-schemas.md).
 
-* **sporen van het de controlespoor van het 0&rbrace; Werkschema alle acties met betrekking tot uw werkschema&#39;s, met inbegrip van:**
+* **sporen van het de controlespoor van het 0} Werkschema alle acties met betrekking tot uw werkschema&#39;s, met inbegrip van:**
 
    * Starten
    * Pauzeren
@@ -47,7 +47,8 @@ In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledi
 
   Voor meer informatie over werkschema&#39;s, verwijs naar deze [ pagina ](../../workflow/using/about-workflows.md).
 
-  Voor meer op hoe te om werkschema&#39;s te controleren, verwijs naar de [ specifieke sectie ](../../workflow/using/monitoring-workflow-execution.md).
+  Voor meer op hoe te om werkschema&#39;s te controleren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+
 
 * **de controlespoor van de Optie** staat u toe om activiteiten en laatste wijzigingen te controleren die aan uw opties worden gedaan.
 

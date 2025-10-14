@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 * [Werken met quarantainebeheer](understanding-quarantine-management.md)
-* [Best practices voor verzending](delivery-best-practices.md)
+* [Best practices voor verzending](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [Te leveren items beheren](about-deliverability.md)
 
 ## Leveringsoverzicht {#delivery-summary}
@@ -58,13 +58,13 @@ Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte lever
 
 >[!NOTE]
 >
->De lijst met de leveringslogboeken kan worden aangepast, net als elke lijst in het Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Voor meer op dit, verwijs naar het gebruiksgeval dat in [ wordt gedetailleerd deze sectie ](#use-case).
+>De lijst met de leveringslogboeken kan worden aangepast, net als elke andere lijst in Campaign Classic. U kunt bijvoorbeeld een kolom toevoegen om te weten welk IP-adres elke e-mail in een bezorging heeft verzonden. Voor meer op dit, verwijs naar het gebruiksgeval dat in [ wordt gedetailleerd deze sectie ](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
 Met de koppeling **[!UICONTROL Display the mirror page for this message...]** kunt u de spiegelpagina weergeven voor de inhoud van de levering die in de lijst is geselecteerd in een nieuw venster.
 
-De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar [ Genererend de spiegelpagina ](sending-messages.md#generating-the-mirror-page).
+De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ Het tabblad **[!UICONTROL Audit]** bevat het leveringslogboek en alle berichten 
 
 Met de knop **[!UICONTROL Refresh]** kunt u de gegevens bijwerken. Gebruik de knop **[!UICONTROL Filters]** om een filter voor de gegevens te definiëren.
 
-Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie [ Analyserend de levering ](steps-validating-the-delivery.md#analyzing-the-delivery).
+Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Met het subtabblad **[!UICONTROL Proofs]** kunt u de lijst met proefdrukken weergeven die zijn verzonden.
 
@@ -169,7 +169,7 @@ Zodra de wijzigingen worden gedaan, moet u gegevensbestandstructuur bijwerken zo
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Klik op het menu **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** .**[!UICONTROL Tools]**
+1. Klik op het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** .**[!UICONTROL Update database structure...]**
 
    ![](assets/update-database-structure.png)
 
@@ -203,7 +203,7 @@ Om dit te doen, heb toegang tot de leveringslogboeken en voeg de &quot;IP herken
 
 >[!NOTE]
 >
->Leren hoe te om lijsten in de interface van het Campaign Classic te vormen, verwijs naar [ deze pagina ](../../platform/using/adobe-campaign-workspace.md).
+>Leren hoe te om lijsten in de interface van Campaign Classic te vormen, verwijs naar [ deze pagina ](../../platform/using/adobe-campaign-workspace.md).
 
 Hieronder ziet u wat u na wijzigingen op het tabblad **[!UICONTROL Delivery]** moet zien:
 
