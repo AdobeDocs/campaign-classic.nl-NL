@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Gebruik het **uploadWhiteList** attribuut om de dossiertypes te beperken beschikbaar voor upload op de server van Adobe Campaign.
 
-Dit attribuut is beschikbaar binnen het **element 0&rbrace; dataStore &lbrace;van het** serverConf.xml **dossier.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Dit attribuut is beschikbaar binnen het **element 0&rbrace; dataStore &lbrace;van het** serverConf.xml **dossier.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 De standaardwaarde van dit kenmerk is **.+** en laat u om het even welk dossiertype uploaden.
 
@@ -39,7 +39,7 @@ U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van h
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 
-U kunt de server van de Campagne met een extern systeem door een volmacht verbinden, gebruikend de het werkschemaactiviteit van de Overdracht van het a **Dossier** bijvoorbeeld. Om dit te bereiken, moet u de **proxyConfig** sectie van het **serverConf.xml** dossier door een specifiek bevel vormen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+U kunt de server van de Campagne met een extern systeem door een volmacht verbinden, gebruikend de het werkschemaactiviteit van de Overdracht van het a **Dossier** bijvoorbeeld. Om dit te bereiken, moet u de **proxyConfig** sectie van het **serverConf.xml** dossier door een specifiek bevel vormen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Gelieve te merken op dat de beginnende versie van de Campagne 20.2, de HTTP en HTTPS protocolparameters **niet meer beschikbaar** zijn. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
 
@@ -118,7 +118,7 @@ Als u de proxymodus wilt activeren, moet de volgende wijziging worden uitgevoerd
 <nmac useHTTPProxy="true">
 ```
 
-Voor meer informatie over deze schakelaar van iOS HTTP/2, verwijs naar deze [ pagina ](../../delivery/using/about-mobile-app-channel.md).
+Voor meer informatie over deze schakelaar van iOS HTTP/2, verwijs naar deze [&#x200B; pagina &#x200B;](../../delivery/using/about-mobile-app-channel.md).
 
 ## Overheidsmiddelen beheren {#managing-public-resources}
 

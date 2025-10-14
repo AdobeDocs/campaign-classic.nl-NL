@@ -33,9 +33,9 @@ Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het creÃ
 
 >[!CAUTION]
 >
->Het terugkeren van leveringen steunt het voorvertonen van inhoud of het verzenden van proeven met inbegrip van [ doelgegevens ](../../workflow/using/data-life-cycle.md#target-data) verpersoonlijkingselementen niet.
+>Het terugkeren van leveringen steunt het voorvertonen van inhoud of het verzenden van proeven met inbegrip van [&#x200B; doelgegevens &#x200B;](../../workflow/using/data-life-cycle.md#target-data) verpersoonlijkingselementen niet.
 
-Voor een voorbeeld van deze activiteit die wordt gebruikt, verwijs naar deze [ sectie ](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Voor een voorbeeld van deze activiteit die wordt gebruikt, verwijs naar deze [&#x200B; sectie &#x200B;](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Hoe te opstelling terugkomende levering {#set-up-recurring-delivery}
 
@@ -57,4 +57,4 @@ Deze video verklaart hoe te om een terugkomende levering en een planneractivitei
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

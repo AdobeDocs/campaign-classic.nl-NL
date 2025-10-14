@@ -61,7 +61,7 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
    Het **laden van Gegevens (dossier)** activiteit laat u de het werklijst van het werkschema met de verzamelde gegevens verrijken.
 
-   Voor meer op deze activiteit, verwijs naar [ gegevens van de Lading van een dossier ](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
+   Voor meer op deze activiteit, verwijs naar [&#x200B; gegevens van de Lading van een dossier &#x200B;](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Vorm de **activiteit van de inzamelaar van het 0&rbrace; Dossier &lbrace;om tekst (&#42; te verzamelen.txt) typedossiers van de geselecteerde folder.**
 
@@ -94,7 +94,7 @@ Voeg de verrijkingsactiviteit toe en configureer deze als volgt:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Voor meer op de diverse types van verbindingen, verwijs naar [ het Verrijken en het wijzigen van gegevens ](targeting-data.md#enriching-and-modifying-data).
+Voor meer op de diverse types van verbindingen, verwijs naar [&#x200B; het Verrijken en het wijzigen van gegevens &#x200B;](targeting-data.md#enriching-and-modifying-data).
 
 In het volgende venster, moet u tot stand brengen zich aansluit bij voorwaarde door het brongebied (in de belangrijkste reeks) en het doelgebied (die tot het schema van &quot;Sporen&quot;behoren) te selecteren om gegevensverenigbaarheid te vormen.
 

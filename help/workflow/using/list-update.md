@@ -35,7 +35,7 @@ Als u deze optie wilt gebruiken, moeten de desbetreffende tabellen zijn geconfig
 
 Over het algemeen betekent het opslaan van een doel in een lijst het einde van een workflow. Standaard heeft de **[!UICONTROL List update]** -activiteit daarom geen uitgaande overgang. Schakel de optie **[!UICONTROL Generate an outbound transition]** in om er een toe te voegen.
 
-![](assets/do-not-localize/how-to-video.png) [ ontdekt hoe te om een lijst van ontvangers van de Ontdekkingsreiziger in video ](#video) tot stand te brengen
+![](assets/do-not-localize/how-to-video.png) [&#x200B; ontdekt hoe te om een lijst van ontvangers van de Ontdekkingsreiziger in video &#x200B;](#video) tot stand te brengen
 
 ## Voorbeeld: List update {#example--list-update}
 
@@ -43,7 +43,7 @@ In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die m
 
 1. Voeg een **[!UICONTROL list update activity]** direct na een vraag toe en open het dan om het uit te geven.
 
-   Voor meer bij het creëren van een vraag in een werkschema, verwijs naar [ Vraag ](query.md).
+   Voor meer bij het creëren van een vraag in een werkschema, verwijs naar [&#x200B; Vraag &#x200B;](query.md).
 
 1. U kunt een label voor de activiteit selecteren.
 1. Selecteer de optie **[!UICONTROL Create the list if necessary (Calculated name)]** om aan te geven dat de lijst wordt gemaakt zodra de eerste workflow is uitgevoerd en vervolgens wordt bijgewerkt met de volgende uitvoeringen.
@@ -75,4 +75,4 @@ Deze video laat zien hoe u een lijst met ontvangers in de Verkenner kunt maken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

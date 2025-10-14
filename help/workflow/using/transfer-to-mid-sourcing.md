@@ -17,7 +17,7 @@ ht-degree: 1%
 
 
 
-De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Overdracht aan Midden-het bron** module door gebrek. Voor meer op deze module, verwijs naar [ de Gids van de Installatie van Campaign Classic v7 ](../../installation/using/mid-sourcing-deployment.md).
+De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Overdracht aan Midden-het bron** module door gebrek. Voor meer op deze module, verwijs naar [&#x200B; de Gids van de Installatie van Campaign Classic v7 &#x200B;](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

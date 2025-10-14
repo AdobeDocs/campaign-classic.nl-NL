@@ -41,7 +41,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
   Als uw installatie meerdere workflowservers bevat, gebruikt u dit veld om de computer te kiezen waarop de workflow wordt uitgevoerd. Als de waarde die in dit veld wordt gedefinieerd, op geen enkele server bestaat, blijft de workflow in behandeling.
 
-  Verwijs naar deze [ de installatiegids van Campaign Classic v7 ](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+  Verwijs naar deze [&#x200B; de installatiegids van Campaign Classic v7 &#x200B;](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

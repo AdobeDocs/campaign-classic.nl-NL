@@ -37,4 +37,4 @@ De indicatoren die in de sectie **[!UICONTROL Indicators over the period]** word
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Verwijs naar [ drempels van de Monitor ](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Verwijs naar [&#x200B; drempels van de Monitor &#x200B;](../../message-center/using/additional-configurations.md#monitoring-thresholds).

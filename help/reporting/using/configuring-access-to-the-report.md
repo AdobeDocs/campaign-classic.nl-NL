@@ -116,15 +116,15 @@ Selecteer de optie **[!UICONTROL Global]** of **[!UICONTROL Selection]** om de v
 
 Deze twee opties worden geselecteerd gebaseerd op de vertoningsmontages van het rapport. Als de weergave-instelling **[!UICONTROL Global]** is, moet u de voorvertoningsoptie van **[!UICONTROL Global]** selecteren. Als de weergave-instellingen **[!UICONTROL Single selection]** of **[!UICONTROL Multiple selection]** zijn, moet de voorvertoningsoptie **[!UICONTROL Selection]** zijn geselecteerd.
 
-Voor meer op dit, verwijs naar [ de vertoningscontext van het Rapport ](#report-display-context).
+Voor meer op dit, verwijs naar [&#x200B; de vertoningscontext van het Rapport &#x200B;](#report-display-context).
 
 Met specifieke instellingen kunt u fouten beheren. De **_uuid** instelling wordt gevonden in URL van het rapport. U kunt **&amp;_preview** of **&amp;_debug** montages aan het toevoegen.
 
-Meer over deze montages leren, verwijs naar **het Bepalen van de eigenschappen van de Webvorm** sectie van het [ de vormen van het Web ](../../web/using/about-web-forms.md) hoofdstuk.
+Meer over deze montages leren, verwijs naar **het Bepalen van de eigenschappen van de Webvorm** sectie van het [&#x200B; de vormen van het Web &#x200B;](../../web/using/about-web-forms.md) hoofdstuk.
 
 ## Publish het rapport {#publishing-the-report}
 
-Het publiceren van het rapport is verplicht om hen met andere exploitanten te delen en hen in de lijst van beschikbare rapporten te tonen (verwijs ook naar [ de vertoningscontext van het Rapport ](#report-display-context)). Deze operatie moet telkens opnieuw worden uitgevoerd wanneer het verslag wordt gewijzigd.
+Het publiceren van het rapport is verplicht om hen met andere exploitanten te delen en hen in de lijst van beschikbare rapporten te tonen (verwijs ook naar [&#x200B; de vertoningscontext van het Rapport &#x200B;](#report-display-context)). Deze operatie moet telkens opnieuw worden uitgevoerd wanneer het verslag wordt gewijzigd.
 
 1. Open de publicatieassistent door op **[!UICONTROL Publish]** op de werkbalk te klikken.
 

@@ -28,19 +28,19 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
 1. Opzetten van een serviceprovider in Adobe Campaign
 
-   Zie [ Toevoegend een dienstverlener ](#adding-a-service-provider).
+   Zie [&#x200B; Toevoegend een dienstverlener &#x200B;](#adding-a-service-provider).
 
 1. Bepalend kostencategorieën en structuren van bijbehorende de dienstmalplaatjes
 
-   Zie [ het bepalen van kostencategorieën ](#defining-cost-categories) en [ het bepalen van de kostenstructuur ](#defining-the-cost-structure).
+   Zie [&#x200B; het bepalen van kostencategorieën &#x200B;](#defining-cost-categories) en [&#x200B; het bepalen van de kostenstructuur &#x200B;](#defining-the-cost-structure).
 
 1. Configuratie van processen
 
-   Zie [ het Vormen processen verbonden aan de dienst ](#configuring-processes-associated-with-a-service).
+   Zie [&#x200B; het Vormen processen verbonden aan de dienst &#x200B;](#configuring-processes-associated-with-a-service).
 
 1. Verwijzen naar de dienstverlener op campagneniveau
 
-   Zie [ Associerend de dienst met een campagne ](#associating-a-service-with-a-campaign).
+   Zie [&#x200B; Associerend de dienst met een campagne &#x200B;](#associating-a-service-with-a-campaign).
 
 ### Het creëren van een dienstverlener en zijn kostencategorieën {#creating-a-service-provider-and-its-cost-categories}
 
@@ -61,7 +61,7 @@ U moet de dienstmalplaatjes met elke dienstverlener associëren. In deze templat
 
 >[!NOTE]
 >
->Voor meer op dit, verwijs naar [ het bepalen van de kostenstructuur ](#defining-the-cost-structure).
+>Voor meer op dit, verwijs naar [&#x200B; het bepalen van de kostenstructuur &#x200B;](#defining-the-cost-structure).
 
 Een kostencategorie is een entiteit die een reeks kosten bevat die in aanmerking komen voor een bepaald soort levering (e-mail, direct mail enz.) of voor een taak. De categorieën van kosten worden gegroepeerd in de malplaatjes van de diensten verbonden aan de dienstverleners. Elke dienstverlener kan één of meerdere de dienstmalplaatjes van verwijzingen voorzien.
 
@@ -82,7 +82,7 @@ Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan t
      >[!NOTE]
      >
      >De voorraadlijnen worden bepaald in de **[!UICONTROL Stock management]** knoop.\
-     >Voor meer op dit, verwijs naar [ Beeld en ordebeheer ](#stock-and-order-management).
+     >Voor meer op dit, verwijs naar [&#x200B; Beeld en ordebeheer &#x200B;](#stock-and-order-management).
 
 1. U kunt een waarde voor deze kostencategorie vooraf selecteren, die standaard wordt aangeboden in de kostencategorieën van de serviceprovider (in plaats van een leeg vak). Selecteer hiertoe de optie in de kolom **[!UICONTROL Selected]** voor het desbetreffende type categorie:
 
@@ -189,19 +189,19 @@ De procedure voor het opzetten van het beheer van de voorraden en de orders in A
 
 1. Aanmaak van voorraden en referentie van verbonden dienstverleners
 
-   Zie [ Creërend een voorraad ](#creating-a-stock).
+   Zie [&#x200B; Creërend een voorraad &#x200B;](#creating-a-stock).
 
 1. Stamlijnen toevoegen
 
-   Zie [ Toevoegend voorraadlijnen ](#adding-stock-lines).
+   Zie [&#x200B; Toevoegend voorraadlijnen &#x200B;](#adding-stock-lines).
 
 1. Aanmeldende exploitanten in geval van een waarschuwing
 
-   Zie [ alarmerende exploitanten ](#alerting-operators).
+   Zie [&#x200B; alarmerende exploitanten &#x200B;](#alerting-operators).
 
 1. Bestellingen en levering.
 
-   Verwijs naar [ Orders ](#orders).
+   Verwijs naar [&#x200B; Orders &#x200B;](#orders).
 
 ### Voorraadbeheer {#stock-management}
 
@@ -220,7 +220,7 @@ Pas de volgende stappen toe om een nieuwe voorraad te maken:
 
    >[!NOTE]
    >
-   >Voor meer op dit, verwijs naar [ Creërend dienstverleners en hun kostenstructuren ](#creating-service-providers-and-their-cost-structures).
+   >Voor meer op dit, verwijs naar [&#x200B; Creërend dienstverleners en hun kostenstructuren &#x200B;](#creating-service-providers-and-their-cost-structures).
 
 #### Stamlijnen toevoegen {#adding-stock-lines}
 
@@ -286,8 +286,8 @@ De kosten voor de uitvoering van een campagne worden geconsolideerd op het nivea
 
 ### Implementatie {#implementation}
 
-Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [ Berekend bedragen ](../../mrm/using/controlling-costs.md#calculating-amounts).
+Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [&#x200B; Berekend bedragen &#x200B;](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->De procedure voor het creëren van begrotingen wordt voorgesteld in [ Creërend een begroting ](../../mrm/using/controlling-costs.md#creating-a-budget).
+>De procedure voor het creëren van begrotingen wordt voorgesteld in [&#x200B; Creërend een begroting &#x200B;](../../mrm/using/controlling-costs.md#creating-a-budget).

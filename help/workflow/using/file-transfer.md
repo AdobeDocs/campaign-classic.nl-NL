@@ -18,11 +18,11 @@ ht-degree: 1%
 
 
 De **overdracht van het Dossier** activiteit laat u dossiers ontvangen of verzenden, test voor dossieraanwezigheid, of lijstdossiers op een server. Het gebruikte protocol is Azure Blob Storage, Amazon Simple Storage Service (S3), FTP of SFTP.
-Met S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met Adobe Real-time Customer Data-platform. Voor meer op dit, verwijs naar deze [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=nl-NL).
+Met S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met Adobe Real-time Customer Data-platform. Voor meer op dit, verwijs naar deze [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=nl-NL).
 
 >[!NOTE]
 >
->De beste praktijken en het oplossen van problemen op het servergebruik van SFTP zijn gedetailleerd [ in deze pagina ](../../platform/using/sftp-server-usage.md).
+>De beste praktijken en het oplossen van problemen op het servergebruik van SFTP zijn gedetailleerd [&#x200B; in deze pagina &#x200B;](../../platform/using/sftp-server-usage.md).
 
 ## Properties {#properties}
 
@@ -60,20 +60,20 @@ De configuratie is afhankelijk van de geselecteerde actie.
 
 1. **Test om te zien of bestaat het dossier**
 
-   Als u wilt testen of een bestand bestaat, selecteert u de optie **[!UICONTROL Test to see if file exists]** in het veld **[!UICONTROL Action]** . De configuratie van de externe server is gelijk aan die voor het downloaden van bestanden. Voor meer informatie, verwijs naar deze [ sectie ](#properties).
+   Als u wilt testen of een bestand bestaat, selecteert u de optie **[!UICONTROL Test to see if file exists]** in het veld **[!UICONTROL Action]** . De configuratie van de externe server is gelijk aan die voor het downloaden van bestanden. Voor meer informatie, verwijs naar deze [&#x200B; sectie &#x200B;](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Lijst van dossiers**
 
-   Als u de bestanden wilt weergeven, selecteert u de optie **[!UICONTROL File listing]** in het veld **[!UICONTROL Action]** . De configuratie van de externe server is hetzelfde als voor het ontvangen van bestanden. Voor meer informatie, verwijs naar deze [ sectie ](#properties).
+   Als u de bestanden wilt weergeven, selecteert u de optie **[!UICONTROL File listing]** in het veld **[!UICONTROL Action]** . De configuratie van de externe server is hetzelfde als voor het ontvangen van bestanden. Voor meer informatie, verwijs naar deze [&#x200B; sectie &#x200B;](#properties).
 
    De **[!UICONTROL List all files]** optie, beschikbaar wanneer het selecteren van de **[!UICONTROL File listing]** actie, staat u toe om alle dossiers op te slaan huidig op de server in de gebeurtenisvariabele **vars.filenames** waar de dossiernamen door `\n` karakters worden gescheiden.
 
 Er zijn twee mogelijke opties voor alle opties voor bestandsoverdracht:
 
 * Met de optie **[!UICONTROL Process missing file]** voegt u een overgang toe die wordt geactiveerd wanneer er geen bestand in de opgegeven map wordt gevonden.
-* De **[!UICONTROL Process errors]** optie is gedetailleerd in [ Verwerkingsfouten ](monitoring-workflow-execution.md#processing-errors).
+* De **[!UICONTROL Process errors]** optie is gedetailleerd in [&#x200B; Verwerkingsfouten &#x200B;](monitoring-workflow-execution.md#processing-errors).
 
 Met de koppeling **[!UICONTROL Advanced parameters...]** hebt u toegang tot de volgende opties:
 
@@ -95,7 +95,7 @@ Met de koppeling **[!UICONTROL Advanced parameters...]** hebt u toegang tot de v
 
   Hiermee kunt u de verbindingshaven opgeven die voor gegevensoverdracht moet worden gebruikt.
 
-De **[!UICONTROL File historization settings...]** verbinding geeft toegang tot de opties die in [ worden gedetailleerd de download van het Web ](web-download.md) (**[!UICONTROL File historization]** stap).
+De **[!UICONTROL File historization settings...]** verbinding geeft toegang tot de opties die in [&#x200B; worden gedetailleerd de download van het Web &#x200B;](web-download.md) (**[!UICONTROL File historization]** stap).
 
 ## Invoerparameters {#input-parameters}
 

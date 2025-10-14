@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-De optie van de Toegang van Gegevens van de Campagne van het gebruik [ Federated ](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
+De optie van de Toegang van Gegevens van de Campagne van het gebruik [&#x200B; Federated &#x200B;](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
 
-1. Installeer en vorm [ bestuurders van de Netezza ](#netezza-config)
-1. Vorm de Netezza [ externe rekening ](#netezza-external) in Campagne
+1. Installeer en vorm [&#x200B; bestuurders van de Netezza &#x200B;](#netezza-config)
+1. Vorm de Netezza [&#x200B; externe rekening &#x200B;](#netezza-external) in Campagne
 
 ## Configuratie van netezza {#netezza-config}
 

@@ -17,25 +17,25 @@ ht-degree: 2%
 
 # Upgraden naar een nieuwe build (op locatie){#upgrading}
 
-Alvorens het verbeteringsproces te beginnen, bepaal en bevestig welke versie van Adobe Campaign aan wordt bevorderd en raadpleeg de [ Nota&#39;s van de Versie ](../../rn/using/latest-release.md).
+Alvorens het verbeteringsproces te beginnen, bepaal en bevestig welke versie van Adobe Campaign aan wordt bevorderd en raadpleeg de [&#x200B; Nota&#39;s van de Versie &#x200B;](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
 >* Adobe raadt u ten zeerste aan een databaseback-up te maken voordat u de database bijwerkt. Raadpleeg [deze sectie](../../production/using/backup.md) voor meer informatie.
 >* Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
->* Lees uit [ deze sectie ](../../installation/using/general-architecture.md) en [ bouwt verbeterings ](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk alvorens te beginnen.
+>* Lees uit [&#x200B; deze sectie &#x200B;](../../installation/using/general-architecture.md) en [&#x200B; bouwt verbeterings &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk alvorens te beginnen.
 >
 
 ## Windows {#in-windows}
 
 Voor een Windows-omgeving voert u de onderstaande stappen uit om Adobe Campaign bij te werken naar een nieuwe build:
 
-* [ de diensten van de sluiting ](#shut-down-services),
-* [ bevordert de toepassingsserver ](#upgrade-the-adobe-campaign-server-application),
-* [ synchroniseer middelen ](#synchronize-resources),
-* [ herstart de diensten ](#restart-services).
+* [&#x200B; de diensten van de sluiting &#x200B;](#shut-down-services),
+* [&#x200B; bevordert de toepassingsserver &#x200B;](#upgrade-the-adobe-campaign-server-application),
+* [&#x200B; synchroniseer middelen &#x200B;](#synchronize-resources),
+* [&#x200B; herstart de diensten &#x200B;](#restart-services).
 
-Om te weten te komen hoe te om de cliëntconsole bij te werken, verwijs naar [ deze sectie ](../../installation/using/client-console-availability-for-windows.md).
+Om te weten te komen hoe te om de cliëntconsole bij te werken, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/client-console-availability-for-windows.md).
 
 ### Afsluiten van services {#shut-down-services}
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Looppas **setup.exe**.
 
-   Om dit dossier te downloaden, verbind met het [ de distributieportaal van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Leer meer over de distributie van de Software in [ deze pagina ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
+   Om dit dossier te downloaden, verbind met het [&#x200B; de distributieportaal van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Leer meer over de distributie van de Software in [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
 
 1. Selecteer de installatiemodus: kies **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
@@ -95,7 +95,7 @@ Op deze manier kunt u de volgende bewerkingen uitvoeren:
 >
 >Deze verrichting zou slechts eens, en slechts op een (**moeten worden uitgevoerd het Web van de server**) toepassingsserver.
 
-Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Voor meer op dit, verwijs naar [ Oplossende verbeteringsconflicten ](#resolving-upgrade-conflicts).
+Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Voor meer op dit, verwijs naar [&#x200B; Oplossende verbeteringsconflicten &#x200B;](#resolving-upgrade-conflicts).
 
 ### Herstartservices {#restart-services}
 
@@ -111,15 +111,15 @@ De diensten die opnieuw moeten worden opgestart zijn:
 
 Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bij te werken naar een nieuwe build:
 
-* [ Download de bijgewerkte pakketten ](#obtain-updated-packages),
-* [ voer de update ](#perform-an-update) uit,
-* [ reboot de Webserver ](#reboot-the-web-server).
+* [&#x200B; Download de bijgewerkte pakketten &#x200B;](#obtain-updated-packages),
+* [&#x200B; voer de update &#x200B;](#perform-an-update) uit,
+* [&#x200B; reboot de Webserver &#x200B;](#reboot-the-web-server).
 
-[ Leer meer over de beschikbaarheid van de Console van de Cliënt ](../../installation/using/client-console-availability-for-windows.md).
+[&#x200B; Leer meer over de beschikbaarheid van de Console van de Cliënt &#x200B;](../../installation/using/client-console-availability-for-windows.md).
 
 ### Bijgewerkte pakketten installeren {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign terug te winnen: verbind met het [ de distributieportaal van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Leer meer over de distributie van de Software in [ deze pagina ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
+Begin door beide bijgewerkte pakketten van Adobe Campaign terug te winnen: verbind met het [&#x200B; de distributieportaal van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Leer meer over de distributie van de Software in [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).
 
 Het dossier is **nlserver6-v7-XXX.rpm**
 
@@ -176,7 +176,7 @@ Vervolgens kunt u de vereiste pakketten installeren, zoals hieronder wordt besch
 
 >[!NOTE]
 >
->De volledige installatieprocedures zijn gedetailleerd in [ deze sectie ](../../installation/using/installing-packages-with-linux.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [ los verbeteringsconflicten ](#resolving-upgrade-conflicts) op.
+>De volledige installatieprocedures zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../installation/using/installing-packages-with-linux.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [&#x200B; los verbeteringsconflicten &#x200B;](#resolving-upgrade-conflicts) op.
 >
 
 ### De webserver opnieuw opstarten {#reboot-the-web-server}
@@ -271,7 +271,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 >[!NOTE]
 >
->Zorg ervoor de gebruiker IIS_XPG de aangewezen leesrechten voor dit installatiedossier heeft en naar de [ installatiegids ](../../installation/using/general-architecture.md) voor meer informatie verwijst.
+>Zorg ervoor de gebruiker IIS_XPG de aangewezen leesrechten voor dit installatiedossier heeft en naar de [&#x200B; installatiegids &#x200B;](../../installation/using/general-architecture.md) voor meer informatie verwijst.
 
 ### Linux {#in-linux-1}
 
@@ -285,4 +285,4 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 >[!NOTE]
 >
->Zorg ervoor de gebruiker Apache de aangewezen leesrechten voor dit installatiedossier heeft en verwijs naar de [ installatiegids ](../../installation/using/general-architecture.md) voor meer informatie.
+>Zorg ervoor de gebruiker Apache de aangewezen leesrechten voor dit installatiedossier heeft en verwijs naar de [&#x200B; installatiegids &#x200B;](../../installation/using/general-architecture.md) voor meer informatie.

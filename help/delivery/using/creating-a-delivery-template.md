@@ -30,7 +30,7 @@ Met deze actie maakt u een leveringssjabloon op basis van de geselecteerde lever
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Voor meer informatie over de configuratiewijze, verwijs naar [ Linking van het malplaatje aan een levering ](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Voor meer informatie over de configuratiewijze, verwijs naar [&#x200B; Linking van het malplaatje aan een levering &#x200B;](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
@@ -88,4 +88,4 @@ In deze video wordt uitgelegd hoe u een sjabloon voor ad-hoce-maillevering kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

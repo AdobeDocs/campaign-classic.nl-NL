@@ -19,7 +19,7 @@ ht-degree: 5%
 
 De belangrijkste taak van deze activiteiten bestaat uit het wachten op een gebeurtenis. Dit kan bijvoorbeeld de ontvangst zijn van een bestand, een e-mail of een signaal dat door het programma wordt verzonden.
 
-* Bestandsverzamelaar: bewaakt de aankomst van een of meer bestanden in een map en schakelt de overgang in voor elk ontvangen bestand. Verwijs naar [ inzamelaar van het Dossier ](file-collector.md).
-* Bestandsoverdracht: hiermee wordt een bestand overgebracht naar een server. Verwijs naar [ overdracht van het Dossier ](file-transfer.md).
-* Web downloaden: hiermee downloadt u een bestand van het web. Verwijs naar [ download van het Web ](web-download.md).
-* SMS en e-mailontvangst: herstelt en verwerkt e-mails of SMS. Verwijs naar [ Binnenkomende SMS ](inbound-sms.md) en [ Binnenkomende Emails ](inbound-emails.md).
+* Bestandsverzamelaar: bewaakt de aankomst van een of meer bestanden in een map en schakelt de overgang in voor elk ontvangen bestand. Verwijs naar [&#x200B; inzamelaar van het Dossier &#x200B;](file-collector.md).
+* Bestandsoverdracht: hiermee wordt een bestand overgebracht naar een server. Verwijs naar [&#x200B; overdracht van het Dossier &#x200B;](file-transfer.md).
+* Web downloaden: hiermee downloadt u een bestand van het web. Verwijs naar [&#x200B; download van het Web &#x200B;](web-download.md).
+* SMS en e-mailontvangst: herstelt en verwerkt e-mails of SMS. Verwijs naar [&#x200B; Binnenkomende SMS &#x200B;](inbound-sms.md) en [&#x200B; Binnenkomende Emails &#x200B;](inbound-emails.md).

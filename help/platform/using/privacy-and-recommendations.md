@@ -30,7 +30,7 @@ Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installatio
 
 >[!NOTE]
 >
->Meer over Privacy en veiligheidsverordeningen voor de Campagne van Adobe leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/privacy/security){target=_blank}.
+>Meer over Privacy en veiligheidsverordeningen voor de Campagne van Adobe leren, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/privacy/security){target=_blank}.
 
 
 <!--

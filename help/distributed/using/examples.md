@@ -232,11 +232,11 @@ De stappen zijn als volgt:
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Klik op de tab **[!UICONTROL Edit]** van de campagne op de koppeling **[!UICONTROL Advanced campaign settings...]** om de campagne als een lokale campagne te configureren. Verwijs naar [ Creërend een lokale campagne (door vorm) ](#creating-a-local-campaign--by-form-).
+1. Klik op de tab **[!UICONTROL Edit]** van de campagne op de koppeling **[!UICONTROL Advanced campaign settings...]** om de campagne als een lokale campagne te configureren. Verwijs naar [&#x200B; Creërend een lokale campagne (door vorm) &#x200B;](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. Configureer de campagneworkflow en het webformulier. Verwijs naar [ Creërend een lokale campagne (door vorm) ](#creating-a-local-campaign--by-form-).
+1. Configureer de campagneworkflow en het webformulier. Verwijs naar [&#x200B; Creërend een lokale campagne (door vorm) &#x200B;](#creating-a-local-campaign--by-form-).
 1. Maak uw campagnepakket door het uitvoeringsschema en de betrokken lokale entiteiten op te geven.
 
    ![](assets/mkg_dist_use_case_form_3.png)

@@ -35,11 +35,11 @@ De webApp-operator is een beheerder. Om de veiligheid te verbeteren, volg deze r
 
 Maak genoeg beveiligingsgroepen om uw operatoren de juiste rechten te geven, zodat ze kunnen doen wat ze nodig hebben, en niet meer.
 
-Gebruik de beheeroperator niet (of deel deze niet). Creeer één exploitant per fysieke gebruiker (om een nauwkeurige controle/registreren te hebben). Voeg de nieuwe beheerders toe aan de beheerdersgroep. Als u de beheerder niet gebruikt, verwijder het niet, en maak het niet onbruikbaar: deze exploitant wordt intern gebruikt om verwerking uit te voeren. Maar u kunt zijn [ toegang tot de cliëntconsole ](../../platform/using/access-management.md) verbieden en zijn veiligheidsstreek (aan localhost) beperken.
+Gebruik de beheeroperator niet (of deel deze niet). Creeer één exploitant per fysieke gebruiker (om een nauwkeurige controle/registreren te hebben). Voeg de nieuwe beheerders toe aan de beheerdersgroep. Als u de beheerder niet gebruikt, verwijder het niet, en maak het niet onbruikbaar: deze exploitant wordt intern gebruikt om verwerking uit te voeren. Maar u kunt zijn [&#x200B; toegang tot de cliëntconsole &#x200B;](../../platform/using/access-management.md) verbieden en zijn veiligheidsstreek (aan localhost) beperken.
 
 Voeg niet te veel operatoren toe aan de beheergroep (of met benoemde beheerdersrechten). Het zijn zeer krachtige operatoren (ze kunnen alle SQL-instructies uitvoeren, opdrachten op de server uitvoeren, enz.).
 
-Adobe Campaign verstrekt drie voorrechten op hoog niveau door [ genoemde rechten ](../../platform/using/access-management.md#named-rights):
+Adobe Campaign verstrekt drie voorrechten op hoog niveau door [&#x200B; genoemde rechten &#x200B;](../../platform/using/access-management.md#named-rights):
 
 * **BEHEER** (admin): geeft toegang tot alles en staat toe om alles te doen, die alle genoemde juiste controles omzeilt, zodat omvat het de UITVOERING VAN HET PROGRAMMA (createProcess) en SQL genoemde rechten
 

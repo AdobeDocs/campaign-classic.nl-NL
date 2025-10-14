@@ -21,7 +21,7 @@ Elke leveringsstap kan worden goedgekeurd om te zorgen voor volledige controle e
 
 De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleer dat de recensenten de **aangewezen toestemmingen** voor het goedkeuren hebben, en dat hun veiligheidsstreek correct wordt bepaald. [Meer informatie](#selecting-reviewers).
 
-De goedkeuringsprocedure wordt voorgesteld in [ deze sectie ](#checking-and-approving-deliveries).
+De goedkeuringsprocedure wordt voorgesteld in [&#x200B; deze sectie &#x200B;](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Controleer de informatie die u wilt goedkeuren, kies of u de goedkeuring wilt ac
 
 ### Goedkeuring via kennisgevingsberichten {#approval-via-notification-messages}
 
-Klik de verbinding beschikbaar in het berichtbericht (zie [ Meldingen ](#notifications)). U moet zich aanmelden, zoals hieronder wordt weergegeven:
+Klik de verbinding beschikbaar in het berichtbericht (zie [&#x200B; Meldingen &#x200B;](#notifications)). U moet zich aanmelden, zoals hieronder wordt weergegeven:
 
 ![](assets/s_user_validation__log_in.png)
 
@@ -151,7 +151,7 @@ Met deze methode voor het inschakelen van goedkeuringen kunt u doelgericht werke
 
 Meldingen zijn specifieke e-mailberichten die naar revisoren worden verzonden om hen te laten weten dat een proces in afwachting is van goedkeuring. Wanneer de exploitant de verbinding in het bericht klikt, verschijnt een authentificatiepagina en, na het programma openen, kan de exploitant de informatie bekijken en de baan goedkeuren of verwerpen. U kunt ook een opmerking invoeren in het goedkeuringsvenster.
 
-De inhoud van e-mailberichten voor meldingen kan worden aangepast. Zie [ inhoud van het Bericht ](#notification-content).
+De inhoud van e-mailberichten voor meldingen kan worden aangepast. Zie [&#x200B; inhoud van het Bericht &#x200B;](#notification-content).
 
 ### Melding in-/uitschakelen {#enabling-disabling-notification}
 
@@ -169,9 +169,9 @@ De inhoud van berichten wordt gedefinieerd in een specifieke sjabloon: **[!UICON
 
 Met Adobe Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste fasen van de marketingcampagne in de samenwerkingsmodus.
 
-Voor directe postleveringen, kunnen de exploitanten van Adobe Campaign het extractiedossier bekijken alvorens het naar de router wordt verzonden, en indien nodig kunnen zij het formaat veranderen en extractie opnieuw lanceren. Zie [ een extractiedossier ](#approving-an-extraction-file) goedkeuren.
+Voor directe postleveringen, kunnen de exploitanten van Adobe Campaign het extractiedossier bekijken alvorens het naar de router wordt verzonden, en indien nodig kunnen zij het formaat veranderen en extractie opnieuw lanceren. Zie [&#x200B; een extractiedossier &#x200B;](#approving-an-extraction-file) goedkeuren.
 
-Voor elke campagne kunt u het leveringsdoel, inhoud (zie [ goedkeuren inhoud ](#approving-content)) en kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen. Zie [ Stappen om een levering ](#approving-processes) goed te keuren.
+Voor elke campagne kunt u het leveringsdoel, inhoud (zie [&#x200B; goedkeuren inhoud &#x200B;](#approving-content)) en kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen. Zie [&#x200B; Stappen om een levering &#x200B;](#approving-processes) goed te keuren.
 
 Wanneer deze validatiefasen zijn voltooid, kan de levering worden gestart. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
@@ -183,7 +183,7 @@ Op dit punt is de status van de campagne **[!UICONTROL To validate]** .
 
 >[!NOTE]
 >
->Om de processen te selecteren die een goedkeuring vereisen, wijzig het campagnemalplaatje. Voor meer op dit, verwijs naar [ malplaatjes van de Campagne ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Om de processen te selecteren die een goedkeuring vereisen, wijzig het campagnemalplaatje. Voor meer op dit, verwijs naar [&#x200B; malplaatjes van de Campagne &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 >
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
@@ -232,7 +232,7 @@ Voor elke levering in de campagne, kunt u de volgende processen goedkeuren:
 
 ### Goedkeuren van processen selecteren {#choosing-the-processes-to-be-approved}
 
-De goedkeuringsfasen worden bepaald met het malplaatje verbonden aan de campagne. U moet de goed te keuren onderdelen selecteren in het model en de Adobe Campaign-operatoren specificeren die verantwoordelijk zijn voor deze goedkeuringen. Voor meer op campagnemalplaatjes, verwijs naar [ deze sectie ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+De goedkeuringsfasen worden bepaald met het malplaatje verbonden aan de campagne. U moet de goed te keuren onderdelen selecteren in het model en de Adobe Campaign-operatoren specificeren die verantwoordelijk zijn voor deze goedkeuringen. Voor meer op campagnemalplaatjes, verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Klik voor elke levering op de knop **[!UICONTROL Audit]** en het tabblad **[!UIC
 
 >[!CAUTION]
 >
->Voor het goedkeuren van een inhoud is een proefcyclus verplicht. Met proefdrukken kunt u de weergave van gegevens, aanpassingsgegevens en de werking van koppelingen goedkeuren. Leer hoe te om een proef in [ tot stand te brengen deze sectie ](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Voor het goedkeuren van een inhoud is een proefcyclus verplicht. Met proefdrukken kunt u de weergave van gegevens, aanpassingsgegevens en de werking van koppelingen goedkeuren. Leer hoe te om een proef in [&#x200B; tot stand te brengen deze sectie &#x200B;](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 >
 >De hieronder beschreven functies voor inhoudsgoedkeuring hebben betrekking op de levering van het bewijs.
 
@@ -378,4 +378,4 @@ Op de datum van het extractieverzoek wordt het extractiebestand gemaakt en veran
 
 U kunt de inhoud van het geëxtraheerde bestand weergeven (door op de naam ervan te klikken), goedkeuren of, indien nodig, de indeling wijzigen en de extractie opnieuw starten met de koppelingen op het dashboard.
 
-Zodra het dossier is goedgekeurd, kunt u het bericht e-mail naar de router verzenden. Voor meer op dit, verwijs naar [ Begin een off-line levering ](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).
+Zodra het dossier is goedgekeurd, kunt u het bericht e-mail naar de router verzenden. Voor meer op dit, verwijs naar [&#x200B; Begin een off-line levering &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).

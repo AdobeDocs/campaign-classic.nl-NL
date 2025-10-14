@@ -21,7 +21,7 @@ Met de **[!UICONTROL Sub-workflow]** -activiteit kunt u de uitvoering van een an
 
 U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden synchroon uitgevoerd.
 
-In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Voor meer op sprong-type grafische voorwerpen, zie [ deze sectie ](jump-start-point-and-end-point.md).
+In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Voor meer op sprong-type grafische voorwerpen, zie [&#x200B; deze sectie &#x200B;](jump-start-point-and-end-point.md).
 
 1. Maak een workflow die u als een subworkflow in een andere workflow wilt gebruiken.
 1. Voeg een **[!UICONTROL Jump (end point)]** -activiteit in met een prioriteit van 1 aan het begin van de werkstroom. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campaign de sprongen &quot;eindpunt&quot; met het laagste getal.

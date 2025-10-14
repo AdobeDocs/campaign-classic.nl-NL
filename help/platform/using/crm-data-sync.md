@@ -17,7 +17,7 @@ ht-degree: 0%
 
 
 
-De synchronisatie van gegevens tussen Adobe Campaign en CRM wordt uitgevoerd via een specifieke werkschemaactiviteit: [ schakelaar CRM ](../../workflow/using/crm-connector.md).
+De synchronisatie van gegevens tussen Adobe Campaign en CRM wordt uitgevoerd via een specifieke werkschemaactiviteit: [&#x200B; schakelaar CRM &#x200B;](../../workflow/using/crm-connector.md).
 
 Als u bijvoorbeeld de Microsoft Dynamics-gegevens wilt importeren in Adobe Campaign, maakt u het volgende type workflow:
 
@@ -31,10 +31,10 @@ De **[!UICONTROL CRM Connector]** -activiteit moet worden geconfigureerd om gege
 
 Met deze activiteit kunt u:
 
-* De invoer van CRM - [ leert meer ](#importing-from-the-crm)
-* De uitvoer naar CRM - [ leert meer ](#exporting-to-the-crm)
-* De voorwerpen van de invoer die in CRM worden geschrapt - [ leren meer ](#importing-objects-deleted-in-the-crm)
-* De voorwerpen van de schrapping in CRM - [ leren meer ](#deleting-objects-in-the-crm)
+* De invoer van CRM - [&#x200B; leert meer &#x200B;](#importing-from-the-crm)
+* De uitvoer naar CRM - [&#x200B; leert meer &#x200B;](#exporting-to-the-crm)
+* De voorwerpen van de invoer die in CRM worden geschrapt - [&#x200B; leren meer &#x200B;](#importing-objects-deleted-in-the-crm)
+* De voorwerpen van de schrapping in CRM - [&#x200B; leren meer &#x200B;](#deleting-objects-in-the-crm)
 
 ![](assets/crm_task_select_op.png)
 
@@ -60,7 +60,7 @@ Voor een importactiviteit zijn de stappen in de **[!UICONTROL CRM Connector]** a
 
    ![](assets/crm_task_import_add_field.png)
 
-   Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst met de kolommen **[!UICONTROL Conversion]** . De mogelijke omzettingstypes zijn gedetailleerd in [ formaat van Gegevens ](#data-format).
+   Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst met de kolommen **[!UICONTROL Conversion]** . De mogelijke omzettingstypes zijn gedetailleerd in [&#x200B; formaat van Gegevens &#x200B;](#data-format).
 
    >[!IMPORTANT]
    >
@@ -76,11 +76,11 @@ Voor een importactiviteit zijn de stappen in de **[!UICONTROL CRM Connector]** a
 
    >[!IMPORTANT]
    >
-   >De beperkingen verbonden aan gegevens het filtreren wijzen zijn gedetailleerd in [ het Filtreren gegevens ](#filtering-data).
+   >De beperkingen verbonden aan gegevens het filtreren wijzen zijn gedetailleerd in [&#x200B; het Filtreren gegevens &#x200B;](#filtering-data).
 
 1. Met de optie **[!UICONTROL Use automatic index...]** kunt u automatisch incrementele objectsynchronisatie tussen de CRM en Adobe Campaign beheren, afhankelijk van de datum en de laatste wijziging.
 
-   Voor meer op dit, verwijs naar [ veranderlijk beheer ](#variable-management).
+   Voor meer op dit, verwijs naar [&#x200B; veranderlijk beheer &#x200B;](#variable-management).
 
 ### Variabelen beheren {#variable-management}
 
@@ -184,7 +184,7 @@ Pas voor een exportbewerking de volgende configuratie toe op de **[!UICONTROL CR
    >
    >Voor een bepaald veld kunnen de waarden niet worden bijgewerkt als er geen overeenkomst aan de CRM-zijde is gedefinieerd: ze worden rechtstreeks in de CRM ingevoegd.
 
-   Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst met de kolommen **[!UICONTROL Conversion]** . De mogelijke omzettingstypes zijn gedetailleerd in [ formaat van Gegevens ](#data-format).
+   Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst met de kolommen **[!UICONTROL Conversion]** . De mogelijke omzettingstypes zijn gedetailleerd in [&#x200B; formaat van Gegevens &#x200B;](#data-format).
 
    >[!NOTE]
    >
@@ -252,7 +252,7 @@ Om voorwerpen op de kant van CRM te schrappen, moet u de primaire sleutel van de
 
 ![](assets/crm_delete_in_crm.png)
 
-Op het tabblad **[!UICONTROL Behavior]** kunt u de verwerking van afwijzingen inschakelen. Met deze optie wordt een tweede uitvoerovergang voor de **[!UICONTROL CRM connector]** -activiteit gegenereerd. Voor meer op dit, verwijs naar [ verwerking van de Fout ](#error-processing).
+Op het tabblad **[!UICONTROL Behavior]** kunt u de verwerking van afwijzingen inschakelen. Met deze optie wordt een tweede uitvoerovergang voor de **[!UICONTROL CRM connector]** -activiteit gegenereerd. Voor meer op dit, verwijs naar [&#x200B; verwerking van de Fout &#x200B;](#error-processing).
 
 >[!NOTE]
 >

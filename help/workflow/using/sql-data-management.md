@@ -27,9 +27,9 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 
   Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-  ![](assets/do-not-localize/v7.jpeg) [ de documentatie van de Campagne v7 ](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [&#x200B; de documentatie van de Campagne v7 &#x200B;](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=nl-NL)
+  ![](assets/do-not-localize/v8.png) [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=nl-NL)
 
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden.
 * De operator die de workflow uitvoert, moet de naam **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** hebben. [Meer informatie](../../platform/using/access-management-named-rights.md).

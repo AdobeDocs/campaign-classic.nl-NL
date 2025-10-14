@@ -20,7 +20,7 @@ ht-degree: 2%
 
 In dit geval wordt beschreven hoe u de functie **[!UICONTROL Merge]** in de **[!UICONTROL Deduplication]** -activiteit kunt gebruiken.
 
-Voor meer informatie over deze functionaliteit, verwijs naar [ deze sectie ](deduplication.md#merging-fields-into-single-record).
+Voor meer informatie over deze functionaliteit, verwijs naar [&#x200B; deze sectie &#x200B;](deduplication.md#merging-fields-into-single-record).
 
 De **[!UICONTROL Deduplication]** -activiteit wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensset. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
 

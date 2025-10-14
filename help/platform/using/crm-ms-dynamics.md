@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In deze pagina, zult u leren hoe te om Campaign Classic met **te verbinden CRM 365 van Microsoft Dynamics**.
 
-De mogelijke plaatsing is via **Web API** (geadviseerd). Verwijs naar [ de sectie hieronder ](#microsoft-dynamics-implementation-step) om stappen te leren aan opstelling de verbinding met Microsoft Dynamics.
+De mogelijke plaatsing is via **Web API** (geadviseerd). Verwijs naar [&#x200B; de sectie hieronder &#x200B;](#microsoft-dynamics-implementation-step) om stappen te leren aan opstelling de verbinding met Microsoft Dynamics.
 
 Gegevenssynchronisatie wordt uitgevoerd via een toegewijde werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
 
@@ -52,7 +52,7 @@ In Campaign Classic:
 
 ## Microsoft Dynamics CRM configureren {#config-crm-microsoft}
 
-Om het toegangstoken en de sleutels te produceren om de rekening in te stellen, moet u login aan [ Microsoft Azure Folder ](https://portal.azure.com) gebruikend a **Globale beheerder** geloofsbrieven. Voer vervolgens de hieronder beschreven stappen uit.
+Om het toegangstoken en de sleutels te produceren om de rekening in te stellen, moet u login aan [&#x200B; Microsoft Azure Folder &#x200B;](https://portal.azure.com) gebruikend a **Globale beheerder** geloofsbrieven. Voer vervolgens de hieronder beschreven stappen uit.
 
 ### Microsoft Dynamics-client-id ophalen {#get-client-id-microsoft}
 
@@ -114,7 +114,7 @@ Het **belangrijkste herkenningsteken van het Certificaat (customKeyIdentifier)**
 
 1. Klik **verlenen admin toestemming**.
 
-Voor meer informatie over dit, verwijs naar [ Azure documentatie ](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+Voor meer informatie over dit, verwijs naar [&#x200B; Azure documentatie &#x200B;](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### Een App-gebruiker maken {#create-app-user-microsoft}
 
@@ -132,14 +132,14 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 
 **Stap 2**: Wijs een juiste vergunning aan de gecreeerde gebruiker toe
 
-1. Van [ Microsoft Azure ](https://portal.azure.com), klik op **Admin app**.
+1. Van [&#x200B; Microsoft Azure &#x200B;](https://portal.azure.com), klik op **Admin app**.
 1. Ga naar **Gebruikers > Actieve Gebruikers** en klik op de pas gecreëerde gebruiker.
 1. Klik op **geef productvergunningen** uit en selecteer de **Dynamiek 365 Plan van de Betrokkenheid van de Klant**.
 1. Klik **dicht**.
 
 **Stap 3**: Creeer een toepassingsgebruiker op Dynamica CRM
 
-1. Van [ Microsoft Azure ](https://portal.azure.com), navigeer aan **Montages > Veiligheid > Gebruikers**.
+1. Van [&#x200B; Microsoft Azure &#x200B;](https://portal.azure.com), navigeer aan **Montages > Veiligheid > Gebruikers**.
 1. Klik op drop down, uitgezochte **gebruikers van de Toepassing** en klik **Nieuw**.
 1. Dezelfde gebruikersnaam gebruiken als de gebruiker die hierboven in de actieve map is gemaakt
 
@@ -148,14 +148,14 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
    >Als dezelfde naam wordt gebruikt, treedt een dubbele toetsfout op. Gebruik dus een andere gebruikersnaam en ga verder totdat u bevestigt dat deze stap nodig is.
    >
 
-1. Wijs **identiteitskaart van de Toepassing** voor [ toe de toepassing u vroeger ](#get-client-id-microsoft) creeerde.
+1. Wijs **identiteitskaart van de Toepassing** voor [&#x200B; toe de toepassing u vroeger &#x200B;](#get-client-id-microsoft) creeerde.
 1. Klik op **leiden Rollen** en kies de **beheerder van het Systeem** rol aan de gebruiker.
 
 ## Campagne configureren {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
-> Post de ontmanteling van [ RDS van Microsoft ](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint), de On-premise en Bureau 365 types van plaatsingen van CRM zijn niet meer compatibel met Campagne. Adobe Campaign steunt nu slechts de plaatsing van Web API voor versie van CRM **Dynamische CRM 365**. [Meer informatie](../../rn/using/deprecated-features.md#crm-connectors).
+> Post de ontmanteling van [&#x200B; RDS van Microsoft &#x200B;](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint), de On-premise en Bureau 365 types van plaatsingen van CRM zijn niet meer compatibel met Campagne. Adobe Campaign steunt nu slechts de plaatsing van Web API voor versie van CRM **Dynamische CRM 365**. [Meer informatie](../../rn/using/deprecated-features.md#crm-connectors).
 
 Als u Microsoft Dynamics 365 en Campagne wilt verbinden, moet u een toegewezen **[!UICONTROL External Account]** maken en configureren in Campagne.
 
@@ -167,7 +167,7 @@ Als u Microsoft Dynamics 365 en Campagne wilt verbinden, moet u een toegewezen *
 
    >[!NOTE]
    >
-   >De Externe rekeningsconfiguratie van Microsoft Dynamics CRM met elk **[!UICONTROL CRM O-Auth type]** is gedetailleerd [ in deze sectie ](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
+   >De Externe rekeningsconfiguratie van Microsoft Dynamics CRM met elk **[!UICONTROL CRM O-Auth type]** is gedetailleerd [&#x200B; in deze sectie &#x200B;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
@@ -195,11 +195,11 @@ Als u Microsoft Dynamics 365 en Campagne wilt verbinden, moet u een toegewezen *
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
-Campagne en Microsoft Dynamics zijn nu verbonden. U kunt gegevenssynchronisatie tussen de twee systemen instellen. Leer meer in de [ synchronisatie van Gegevens ](../../platform/using/crm-data-sync.md) sectie.
+Campagne en Microsoft Dynamics zijn nu verbonden. U kunt gegevenssynchronisatie tussen de twee systemen instellen. Leer meer in de [&#x200B; synchronisatie van Gegevens &#x200B;](../../platform/using/crm-data-sync.md) sectie.
 
 >[!NOTE]
 >
-> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: server URL en `login.microsoftonline.com` in de configuratie van de Server. Voor meer informatie over hoe te om toestemmingen te vormen URL, verwijs naar deze [ pagina ](../../installation/using/url-permissions.md).
+> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: server URL en `login.microsoftonline.com` in de configuratie van de Server. Voor meer informatie over hoe te om toestemmingen te vormen URL, verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/url-permissions.md).
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 

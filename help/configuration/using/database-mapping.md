@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Databasetoewijzing{#database-mapping}
 
-De SQL afbeelding van het steekproefschema dat [ in deze pagina ](schema-structure.md) wordt beschreven produceert het volgende document van XML:
+De SQL afbeelding van het steekproefschema dat [&#x200B; in deze pagina &#x200B;](schema-structure.md) wordt beschreven produceert het volgende document van XML:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

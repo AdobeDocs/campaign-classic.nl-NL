@@ -18,7 +18,7 @@ ht-degree: 3%
 
 
 
-De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Campagne** module door gebrek. Voor meer op deze module, verwijs naar deze [ sectie ](../../campaign/using/designing-marketing-campaigns.md).
+De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **Campagne** module door gebrek. Voor meer op deze module, verwijs naar deze [&#x200B; sectie &#x200B;](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >

@@ -30,15 +30,15 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    U kunt bijvoorbeeld:
 
-   * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Leer meer [ in deze sectie ](../../reporting/using/ac-cubes.md)
-   * Voeg indicatoren aan een bestaand rapport toe. Leer meer [ in deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md)
-   * Bekijk de gegevens in de database. Leer meer [ in deze sectie ](../../reporting/using/about-descriptive-analysis.md)
-   * Maak een nieuw leveringsrapport. Leer meer [ in deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * De gegevens van de uitvoer van het gegevensbestand van Adobe Campaign (via een werkschema, verwijs naar [ deze sectie ](../../workflow/using/about-workflows.md)
-   * Maak een draaitabel. Leer meer [ in deze sectie ](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Geaggregeerde gegevens verkennen. Leer meer [ in deze sectie ](../../reporting/using/ac-cubes.md)
-   * Gebruik een medewerker om gegevens te analyseren. Leer meer [ in deze sectie ](../../reporting/using/about-descriptive-analysis.md)
-   * Analyseer grote hoeveelheden gegevens. Leer meer [ in deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/ac-cubes.md)
+   * Voeg indicatoren aan een bestaand rapport toe. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Bekijk de gegevens in de database. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/about-descriptive-analysis.md)
+   * Maak een nieuw leveringsrapport. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * De gegevens van de uitvoer van het gegevensbestand van Adobe Campaign (via een werkschema, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/about-workflows.md)
+   * Maak een draaitabel. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Geaggregeerde gegevens verkennen. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/ac-cubes.md)
+   * Gebruik een medewerker om gegevens te analyseren. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/about-descriptive-analysis.md)
+   * Analyseer grote hoeveelheden gegevens. Leer meer [&#x200B; in deze sectie &#x200B;](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Doelpopulatie identificeren
 
@@ -101,7 +101,7 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
   Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
-  Voor meer op indexen, verwijs naar [ deze sectie ](../../configuration/using/data-model-best-practices.md#indexes).
+  Voor meer op indexen, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Zorg ervoor het rapport scalable is: het gegevensvolume kan in tijd beduidend stijgen.
 
@@ -109,8 +109,8 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
   Tot slot moeten vertragingen bij het wissen van gegevens bekend zijn en waar nodig worden aangepast voor een gemakkelijke gegevensmanipulatie.
 
-  Voor meer op schoonmaak en gegevensbehoud, verwijs naar [ deze sectie ](../../configuration/using/data-model-best-practices.md#data-retention).
+  Voor meer op schoonmaak en gegevensbehoud, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Uw rapporten exporteren {#exporting-reports}
 
-Recommendations specifiek voor het uitvoeren van rapporten wordt gedetailleerd in [ deze sectie ](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations specifiek voor het uitvoeren van rapporten wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../reporting/using/actions-on-reports.md#exporting-a-report).

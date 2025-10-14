@@ -25,7 +25,7 @@ In een campagnewerkstroom, laat de **[!UICONTROL Task]** activiteit u twee scena
 
 ![](assets/mrm_task_in_workflow.png)
 
-Hoe te om een taak te vormen en in werking te stellen is gedetailleerd in [ Campaign Classic v7 documentatie ](../../mrm/using/creating-and-managing-tasks.md).
+Hoe te om een taak te vormen en in werking te stellen is gedetailleerd in [&#x200B; Campaign Classic v7 documentatie &#x200B;](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 

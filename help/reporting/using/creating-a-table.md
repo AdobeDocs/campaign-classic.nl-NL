@@ -26,7 +26,7 @@ Met een **[!UICONTROL List with group]** -typetabel kunt u gegevens in de tabel 
 
 >[!CAUTION]
 >
->De **[!UICONTROL Page]** -activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** - of **[!UICONTROL Script]** -activiteit om de gegevens te verzamelen die in het rapport moeten worden geanalyseerd. Voor meer op deze activiteiten, verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) en [ activiteit van het Manuscript ](../../reporting/using/advanced-functionalities.md#script-activity) te analyseren.
+>De **[!UICONTROL Page]** -activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** - of **[!UICONTROL Script]** -activiteit om de gegevens te verzamelen die in het rapport moeten worden geanalyseerd. Voor meer op deze activiteiten, verwijs naar [&#x200B; verzamelen gegevens om &#x200B;](../../reporting/using/collecting-data-to-analyze.md) en [&#x200B; activiteit van het Manuscript &#x200B;](../../reporting/using/advanced-functionalities.md#script-activity) te analyseren.
 
 ### Werkwijze {#operating-principle}
 
@@ -40,20 +40,20 @@ Het laat u een lijst maken van de campagnes (**[!UICONTROL Label (Campaign)]**, 
 
 ### Implementatiestappen {#implementation-steps}
 
-Een volledig implementatievoorbeeld wordt hier verstrekt: [ het geval van het Gebruik: Creeer een rapport met een groepslijst ](#use-case--create-a-report-with-a-group-list).
+Een volledig implementatievoorbeeld wordt hier verstrekt: [&#x200B; het geval van het Gebruik: Creeer een rapport met een groepslijst &#x200B;](#use-case--create-a-report-with-a-group-list).
 
 Houd rekening met de volgende stappen om een tabel van het type &#39;Lijst met groep&#39; te maken:
 
-1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) te analyseren.
+1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Verwijs naar [&#x200B; verzamelen gegevens om &#x200B;](../../reporting/using/collecting-data-to-analyze.md) te analyseren.
 1. Vul de brontabel in en selecteer de velden van de tabel die de statistieken betreffen.
-1. Plaats een **[!UICONTROL Page]** -activiteit in het diagram. Voor meer op dit, verwijs naar [ Statische elementen ](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Plaats een **[!UICONTROL Page]** -activiteit in het diagram. Voor meer op dit, verwijs naar [&#x200B; Statische elementen &#x200B;](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Voeg een **[!UICONTROL List with group]** typetabel op de pagina in.
 1. Geef het gegevenspad op of de tabel die als gegevensbron in de query is geselecteerd.
 
    Deze stap is verplicht als u de velden in de brontabel later wilt herstellen en deze wilt invoegen in de cellen van de tabel.
 
 1. De tabel en de inhoud ervan maken.
-1. Geef het voltooide rapport weer op het tabblad **[!UICONTROL Preview]** . Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar [ Uitvoer een rapport ](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Geef het voltooide rapport weer op het tabblad **[!UICONTROL Preview]** . Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar [&#x200B; Uitvoer een rapport &#x200B;](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Lijnen en kolommen toevoegen {#adding-lines-and-columns}
 
@@ -125,7 +125,7 @@ Als u de celindeling wilt definiëren, opent u met het menu **[!UICONTROL Cell f
 
 Met deze opties kunt u de uiteindelijke rendering van het rapport aanpassen en het lezen van informatie vereenvoudigen.
 
-Gebruik het veld **[!UICONTROL Carriage return]** wanneer u gegevens exporteert naar Excel: selecteer de waarde **[!UICONTROL Yes]** om de regelterugloop te forceren. Deze waarde blijft behouden bij het exporteren. Voor meer op dit, verwijs naar [ Uitvoer een rapport ](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Gebruik het veld **[!UICONTROL Carriage return]** wanneer u gegevens exporteert naar Excel: selecteer de waarde **[!UICONTROL Yes]** om de regelterugloop te forceren. Deze waarde blijft behouden bij het exporteren. Voor meer op dit, verwijs naar [&#x200B; Uitvoer een rapport &#x200B;](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 In het venster **[!UICONTROL Cell format]** hebt u toegang tot het volgende tabblad:
 
@@ -192,7 +192,7 @@ In het onderstaande voorbeeld kunt u de tweede pagina van het rapport weergeven 
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-Het **Extra** lusje laat u visueel met uw gegevens, zoals een gekleurd teken of een waardebar verbinden. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Voor meer op dit, verwijs naar het implementatievoorbeeld: [ Stap 5 - creeer de tweede pagina ](#step-5---create-the-second-page)
+Het **Extra** lusje laat u visueel met uw gegevens, zoals een gekleurd teken of een waardebar verbinden. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Voor meer op dit, verwijs naar het implementatievoorbeeld: [&#x200B; Stap 5 - creeer de tweede pagina &#x200B;](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -418,7 +418,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Voeg een cirkeldiagram aan de pagina toe gebruikend het met de rechtermuisknop-klik menu en wijs het **E-mail domeinen** etiket aan het toe. Voor meer informatie, verwijs naar [ types en varianten van de Grafiek ](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Voeg een cirkeldiagram aan de pagina toe gebruikend het met de rechtermuisknop-klik menu en wijs het **E-mail domeinen** etiket aan het toe. Voor meer informatie, verwijs naar [&#x200B; types en varianten van de Grafiek &#x200B;](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. Klik op de koppeling **[!UICONTROL Variants]** en schakel de opties **[!UICONTROL Display label]** en **[!UICONTROL Display caption]** uit.
 1. Controleer of er geen waarde sortering is geconfigureerd. Raadpleeg [deze sectie](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report) voor meer informatie.
 
@@ -463,4 +463,4 @@ Dit type van lijst laat u statistieken tonen die op de gegevens in het gegevensb
 
 De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysemedewerker. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) voor meer informatie.
 
-Voor meer bij het creëren van een spillijst, verwijs naar [ deze sectie ](../../reporting/using/ac-cubes.md).
+Voor meer bij het creëren van een spillijst, verwijs naar [&#x200B; deze sectie &#x200B;](../../reporting/using/ac-cubes.md).

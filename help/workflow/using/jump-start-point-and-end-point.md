@@ -31,4 +31,4 @@ U kunt verschillende begin- en eindpunten invoegen in dezelfde workflow. Zij wor
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Om de leesbaarheid van het diagram te verbeteren, kunt u het beeld veranderen verbonden aan sprongen om het verwante aantal te tonen. Zie [ activiteitenbeelden van de Verandering ](managing-activity-images.md).
+Om de leesbaarheid van het diagram te verbeteren, kunt u het beeld veranderen verbonden aan sprongen om het verwante aantal te tonen. Zie [&#x200B; activiteitenbeelden van de Verandering &#x200B;](managing-activity-images.md).

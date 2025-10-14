@@ -37,4 +37,4 @@ De indicatoren die in de sectie **[!UICONTROL Indicators over the period]** word
 
 >[!NOTE]
 >
->De waarschuwings (oranje) en waakzame (rode) indicatordrempels kunnen in de plaatsingstovenaar worden gevormd. Verwijs naar [ drempels van de Monitor ](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De waarschuwings (oranje) en waakzame (rode) indicatordrempels kunnen in de plaatsingstovenaar worden gevormd. Verwijs naar [&#x200B; drempels van de Monitor &#x200B;](../../message-center/using/additional-configurations.md#monitoring-thresholds).

@@ -76,7 +76,7 @@ Object kan:
    * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
    * **[!DNL provider]**: voor de huidige leveringsprovider/routering (nms:externalAccount).
    * Een extra manuscriptobject: als een voorwerp in de context door wordt geladen: **Eigenschappen** > **Personalization** > **voegt voorwerpen in de uitvoeringscontext** toe.
-   * Punt van de foreach lijn: zie [ Foreach ](#foreach) hieronder sectie.
+   * Punt van de foreach lijn: zie [&#x200B; Foreach &#x200B;](#foreach) hieronder sectie.
 * **[!DNL xpath]** : xpath of the field.
 * **[!DNL index]** (optioneel): als **[!DNL object]** een array is (voor extra scriptobjecten), wordt de itemindex in de array (Begint bij 0) weergegeven.
 

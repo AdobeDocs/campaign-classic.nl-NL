@@ -25,9 +25,9 @@ Om statistieken over de gegevens in uw gegevensbestand van de Campagne te produc
 
 Voer de volgende stappen uit om een analyserapport over uw gegevens te maken, te publiceren en te leveren:
 
-1. Creeer een nieuw rapport: verwijs naar [ creeer een nieuw rapport ](../../reporting/using/creating-a-new-report.md),
-1. Verzamel de gegevens om te analyseren: verwijs naar [ verzamelen gegevens om ](../../reporting/using/collecting-data-to-analyze.md) te analyseren en [ de context ](../../reporting/using/using-the-context.md) gebruiken,
-1. Bepaal de inhoud van het rapport met de activiteiten en hun containers: verwijs naar [ creeer een lijst ](../../reporting/using/creating-a-table.md), [ Creërend een grafiek ](../../reporting/using/creating-a-chart.md) en [ lay-out van het Element ](../../reporting/using/element-layout.md),
-1. Vorm de vertoningsopties: vertoningstype, gedeelde rapporten: verwijs naar [ de vertoningscontext van het Rapport ](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [ bepalen een voorwaardelijke inhoud ](../../reporting/using/defining-a-conditional-content.md) en [ vormen toegang tot het rapport ](../../reporting/using/configuring-access-to-the-report.md),
-1. Publiceer het rapport (publicatieassistent): verwijs naar [ publiceer het rapport ](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. Zet het rapport om: de uitvoer, de geschiedenis, de vertoning in browser: verwijs naar [ Acties op rapporten ](../../reporting/using/actions-on-reports.md).
+1. Creeer een nieuw rapport: verwijs naar [&#x200B; creeer een nieuw rapport &#x200B;](../../reporting/using/creating-a-new-report.md),
+1. Verzamel de gegevens om te analyseren: verwijs naar [&#x200B; verzamelen gegevens om &#x200B;](../../reporting/using/collecting-data-to-analyze.md) te analyseren en [&#x200B; de context &#x200B;](../../reporting/using/using-the-context.md) gebruiken,
+1. Bepaal de inhoud van het rapport met de activiteiten en hun containers: verwijs naar [&#x200B; creeer een lijst &#x200B;](../../reporting/using/creating-a-table.md), [&#x200B; Creërend een grafiek &#x200B;](../../reporting/using/creating-a-chart.md) en [&#x200B; lay-out van het Element &#x200B;](../../reporting/using/element-layout.md),
+1. Vorm de vertoningsopties: vertoningstype, gedeelde rapporten: verwijs naar [&#x200B; de vertoningscontext van het Rapport &#x200B;](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [&#x200B; bepalen een voorwaardelijke inhoud &#x200B;](../../reporting/using/defining-a-conditional-content.md) en [&#x200B; vormen toegang tot het rapport &#x200B;](../../reporting/using/configuring-access-to-the-report.md),
+1. Publiceer het rapport (publicatieassistent): verwijs naar [&#x200B; publiceer het rapport &#x200B;](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Zet het rapport om: de uitvoer, de geschiedenis, de vertoning in browser: verwijs naar [&#x200B; Acties op rapporten &#x200B;](../../reporting/using/actions-on-reports.md).

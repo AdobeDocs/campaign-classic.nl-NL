@@ -18,20 +18,20 @@ Adobe Campaign bevat een grafische module voor het definiëren en publiceren van
 
 >[!AVAILABILITY]
 >
->Het beheer van enquêtes is niet beschikbaar in Campaign v8 in de context van een implementatie van een Enterprise (FFDA). Leer meer in [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"} .
+>Het beheer van enquêtes is niet beschikbaar in Campaign v8 in de context van een implementatie van een Enterprise (FFDA). Leer meer in [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"} .
 
 
 De facultatieve **toe:voegen-op van het 0&rbrace; Onderzoek &lbrace;laat u een nieuw type van de toepassing van het Web tot stand brengen en leiden online vragenlijsten, zoals vormen om profielinformatie toe te voegen of te wijzigen, om aan of te ondertekenen van een informatiedienst, of een vorm van de mededingingsingang in te tekenen.** Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
 
 Dit hoofdstuk specificeert om **Enquêtes**, gebied en paginabeheer, opslagwijzen en verslagen tot stand te brengen en te beheren.
 
-Leer hoe te om uw eerste onderzoek in [ tot stand te brengen deze pagina ](getting-started-with-surveys.md).
+Leer hoe te om uw eerste onderzoek in [&#x200B; tot stand te brengen deze pagina &#x200B;](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
->* De gedetailleerde stappen voor het creëren van een standaardvorm van het Web zijn beschikbaar in [ dit document ](../../web/using/about-web-forms.md).
+>* De gedetailleerde stappen voor het creëren van een standaardvorm van het Web zijn beschikbaar in [&#x200B; dit document &#x200B;](../../web/using/about-web-forms.md).
 >
->* Het toepassingsbeheer van het Web is gedetailleerd in [ dit document ](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
+>* Het toepassingsbeheer van het Web is gedetailleerd in [&#x200B; dit document &#x200B;](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
 
 ## Functiebereik {#campaign-surveys-scope}
 
@@ -66,7 +66,7 @@ Pas de volgende stappen toe om een enquête te maken en te leveren en de resulta
 1. Publish, levert de enquête vervolgens aan de ontvangers (bijvoorbeeld de link in een levering of op een website opnemen).
 1. Reacties controleren en rapporten weergeven.
 
-Voor meer informatie bij het vormen en het rangschikken van deze stappen, verwijs naar [ dit document ](../../web/using/about-web-forms.md). In dit hoofdstuk worden alleen configuraties beschreven die specifiek zijn voor enquêtes.
+Voor meer informatie bij het vormen en het rangschikken van deze stappen, verwijs naar [&#x200B; dit document &#x200B;](../../web/using/about-web-forms.md). In dit hoofdstuk worden alleen configuraties beschreven die specifiek zijn voor enquêtes.
 
 >[!CAUTION]
 >
@@ -83,4 +83,4 @@ Instellingen worden opgeslagen in de volgende mappen:
 
 >[!NOTE]
 >
->De details van montages zijn beschikbaar in [ dit document ](../../web/using/about-web-forms.md).
+>De details van montages zijn beschikbaar in [&#x200B; dit document &#x200B;](../../web/using/about-web-forms.md).

@@ -21,7 +21,7 @@ Bij de simulatie wordt rekening gehouden met de context en de subsidiabiliteitsr
 
 Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding.
 
-![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
 
 ## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
 

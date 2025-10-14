@@ -26,4 +26,4 @@ Verschillende gebruikersprofielen zijn betrokken bij het beheer en het gebruik v
 >
 >De volgende configuraties moeten door een **technisch beheerder**.
 
-![](assets/do-not-localize/how-to-video.png) Dit bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om over de architectuur van de interactie van de Campagne te leren en te zien hoe de aanbiedingsmotor werkt.
+![](assets/do-not-localize/how-to-video.png) Dit bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) om over de architectuur van de interactie van de Campagne te leren en te zien hoe de aanbiedingsmotor werkt.

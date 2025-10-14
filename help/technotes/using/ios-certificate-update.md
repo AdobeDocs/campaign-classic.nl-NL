@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Op 17 oktober 2024 had een infrastructuurupdate van de Apple Push Notification Service (APNs) gevolgen voor Adobe Campaign Classic iOS-kanaal. Een OS configuratieverandering is **verplicht** om de stroomonderbreking van het de duwkanaal van iOS te vermijden.
 
-Leer meer over APNs verandert [ in deze pagina ](https://developer.apple.com/news/?id=09za8wzy).
+Leer meer over APNs verandert [&#x200B; in deze pagina &#x200B;](https://developer.apple.com/news/?id=09za8wzy).
 
 Als gehoste klant is geen actie nodig: Adobe heeft het nieuwe basiscertificaat al in uw omgeving opgenomen.
 
@@ -25,7 +25,7 @@ Als klant op-gebouw/hybride, moet u uw configuratie bijwerken om een naadloze ov
 
 Voer de volgende stappen uit om het nieuwe certificaat op te nemen:
 
-1. Download **SHA-2 Woot: Het certificaat van de CertificatieAutoriteit van USERTrust RSA** wortelcertificaat [ van deze pagina ](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO).
+1. Download **SHA-2 Woot: Het certificaat van de CertificatieAutoriteit van USERTrust RSA** wortelcertificaat [&#x200B; van deze pagina &#x200B;](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO).
 
 1. Controleer of het AAA-certificaat aanwezig is in zowel uw OS- als JAVA-betrouwbaarheid. Zo niet, voegt u deze toe.
 

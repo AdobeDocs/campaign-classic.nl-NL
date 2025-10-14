@@ -28,4 +28,4 @@ U doet dit door u aan te melden bij een bestaande database en de volgende stappe
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Geef de parameters van de nieuwe instantie op. Voor meer op dit, verwijs naar [ Creërend een instantie en het programma openen ](../../installation/using/creating-an-instance-and-logging-on.md).
+   Geef de parameters van de nieuwe instantie op. Voor meer op dit, verwijs naar [&#x200B; Creërend een instantie en het programma openen &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).

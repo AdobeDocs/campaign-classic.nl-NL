@@ -98,7 +98,7 @@ Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een b
 
   ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-  Voor meer op persoonlijke dashboards, verwijs naar [ deze sectie ](../../platform/using/access-management-operators.md).
+  Voor meer op persoonlijke dashboards, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/access-management-operators.md).
 
 * Als u wilt zien wie op een forum is geabonneerd, klikt u op de koppeling **[!UICONTROL List of subscribers to this discussion forum]** boven de lijst met berichten.
 

@@ -109,7 +109,7 @@ U kunt extra velden toevoegen, zoals een veld @rank:
 
 Omdat er een veld in de tabel met voorstellen staat met de naam @rank, wordt de waarde in de tabel met werkstroomsjablonen gekopieerd.
 
-Voor meer bij het opslaan van extra gebieden in de propositielijst, zie [ Integrerend een aanbieding via een werkschema ](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Voor meer bij het opslaan van extra gebieden in de propositielijst, zie [&#x200B; Integrerend een aanbieding via een werkschema &#x200B;](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Voor uitgaande aanbiedingen met interactie is dit handig wanneer er meerdere aanbiedingen zijn geselecteerd en u wilt opnemen in welke volgorde deze in een e-mail worden weergegeven.
 

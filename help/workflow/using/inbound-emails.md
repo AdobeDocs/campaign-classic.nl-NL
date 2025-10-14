@@ -70,7 +70,7 @@ Het eerste lusje van de **Binnenkomende E-mail** activiteit laat u de parameters
 
    Als u een schema voor de activiteit wilt definiëren, klikt u op de tab **[!UICONTROL Scheduling]** en schakelt u **[!UICONTROL Plan execution]** in. Klik op de knop **[!UICONTROL Change]** om het schema te configureren.
 
-   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Verwijs naar [ Planner ](scheduler.md).
+   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Verwijs naar [&#x200B; Planner &#x200B;](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
@@ -78,4 +78,4 @@ Het eerste lusje van de **Binnenkomende E-mail** activiteit laat u de parameters
 
    ![](assets/email_rec_edit_3.png)
 
-   De configuratie is het zelfde als voor de het plannen activiteit. Verwijs naar [ Verlopen ](defining-approvals.md).
+   De configuratie is het zelfde als voor de het plannen activiteit. Verwijs naar [&#x200B; Verlopen &#x200B;](defining-approvals.md).

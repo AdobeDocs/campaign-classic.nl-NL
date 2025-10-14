@@ -33,9 +33,9 @@ Als u de status van een set workflows wilt controleren, moet u de volgende stapp
 
 >[!NOTE]
 >
->Naast het werkschema, staat de Heatmap van het Werkschema van de Campagne **&#x200B;**&#x200B;u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Voor meer op dit, verwijs naar de [ specifieke sectie ](heatmap.md).
+>Naast het werkschema, staat de Heatmap van het Werkschema van de Campagne **&#x200B;**&#x200B;u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Voor meer op dit, verwijs naar de [&#x200B; specifieke sectie &#x200B;](heatmap.md).
 >
->Voor meer op hoe te **om de uitvoering van uw werkschema&#39;s** te controleren, verwijs naar [ deze sectie ](monitoring-workflow-execution.md).
+>Voor meer op hoe te **om de uitvoering van uw werkschema&#39;s** te controleren, verwijs naar [&#x200B; deze sectie &#x200B;](monitoring-workflow-execution.md).
 
 ## Stap 1: De controleworkflow maken {#step-1--creating-the-monitoring-workflow}
 

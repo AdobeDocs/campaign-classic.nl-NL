@@ -25,11 +25,11 @@ De **[!UICONTROL Scheduler]**-activiteit kan dus worden beschouwd als een geplan
 
 * Plan geen workflow die meer dan om de 15 minuten wordt uitgevoerd, aangezien dit de algehele systeemprestaties kan belemmeren en blokken in de database kan maken.
 
-* Gebruik nooit meer dan één **[!UICONTROL Scheduler]** activiteit per tak in een werkschema. Zie [ Gebruikend activiteiten ](workflow-best-practices.md#using-activities).
+* Gebruik nooit meer dan één **[!UICONTROL Scheduler]** activiteit per tak in een werkschema. Zie [&#x200B; Gebruikend activiteiten &#x200B;](workflow-best-practices.md#using-activities).
 
 * Het gebruiken van een planneractiviteit kan tot verscheidene uitvoeringen van een werkschema leiden die tezelfdertijd lopen. Bijvoorbeeld, kunt u een planner hebben die de werkschemauitvoering elk uur teweegbrengt, maar soms neemt de uitvoering van het volledige werkschema meer dan een uur.
 
-  U kunt de uitvoering overslaan als de workflow al wordt uitgevoerd. Voor meer op hoe te om gelijktijdige uitvoeringen van een werkschema te verhinderen, verwijs naar [ deze pagina ](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+  U kunt de uitvoering overslaan als de workflow al wordt uitgevoerd. Voor meer op hoe te om gelijktijdige uitvoeringen van een werkschema te verhinderen, verwijs naar [&#x200B; deze pagina &#x200B;](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 * Merk op dat de overgang verscheidene uren later kan worden geactiveerd als het werkschema een taak op lange termijn, zoals het invoeren uitvoerde, of als de wfserver module voor een tijd werd tegengehouden. In dit geval, kan het noodzakelijk zijn om de uitvoering van de taak te beperken die door de planner tot een bepaalde tijdwaaier wordt geactiveerd.
 

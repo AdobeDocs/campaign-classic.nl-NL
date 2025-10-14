@@ -31,7 +31,7 @@ In het bovenste gedeelte van het configuratievenster voor deze activiteit kunt u
 
 ## Voorverwerkingsstadium toepassen {#pre-processing}
 
-U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. [ Leer hoe te om een dossier uit te pakken of te decrypteren alvorens ](../../platform/using/unzip-decrypt.md) te verwerken.
+U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. [&#x200B; Leer hoe te om een dossier uit te pakken of te decrypteren alvorens &#x200B;](../../platform/using/unzip-decrypt.md) te verwerken.
 
 Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en kies een van de drie opties: **[!UICONTROL None]** , **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg).
 
@@ -39,7 +39,7 @@ Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en kies een van
 
 >[!CAUTION]
 >
->Als u met een hybride of op-gebouw plaatsing werkt, kunnen de pre-verwerkingsbevelen niet uit-van-de-doos werken, aangezien hun standaardconfiguratie &quot;zcat&quot;gebruikt, die niet beschikbaar op Vensters is. In dat geval, moet u de **preProcessCommand** knoop in het dossier van de serverconfiguratie (serverConf.xml) aanpassen om uw behoeften aan te passen. [ Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen ](../../installation/using/the-server-configuration-file.md#preprocesscommand)
+>Als u met een hybride of op-gebouw plaatsing werkt, kunnen de pre-verwerkingsbevelen niet uit-van-de-doos werken, aangezien hun standaardconfiguratie &quot;zcat&quot;gebruikt, die niet beschikbaar op Vensters is. In dat geval, moet u de **preProcessCommand** knoop in het dossier van de serverconfiguratie (serverConf.xml) aanpassen om uw behoeften aan te passen. [&#x200B; Leer hoe te om pre-verwerkingsbevelen in het dossier van de serverconfiguratie te vormen &#x200B;](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## De bestandsindeling definiëren {#defining-the-file-format}
 
@@ -98,7 +98,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Het tabblad **[!UICONTROL Directory]** bevat informatie over de bestanden die moeten worden hersteld. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
-   Het gebruiken van **[!UICONTROL File collector]** is gedetailleerd in de [ 2&rbrace; sectie van de inzamelaar van het Dossier &lbrace;.](file-collector.md)
+   Het gebruiken van **[!UICONTROL File collector]** is gedetailleerd in de [&#x200B; 2&rbrace; sectie van de inzamelaar van het Dossier &lbrace;.](file-collector.md)
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -110,7 +110,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Klik hiertoe op de knop **[!UICONTROL Change...]** in de rechterbenedensectie van het bewerkgereedschap en configureer het schema.
 
-   Voor meer op dit, verwijs naar [ Planner ](scheduler.md).
+   Voor meer op dit, verwijs naar [&#x200B; Planner &#x200B;](scheduler.md).
 
 1. Configureer vervolgens de activiteit voor het laden van gegevens (bestand) om aan te geven hoe de verzamelde bestanden moeten worden gelezen. Selecteer hiertoe een voorbeeldbestand met dezelfde structuur als de bestanden die u wilt laden.
 
@@ -139,4 +139,4 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
 1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we naar **[!UICONTROL Update the data]** in de database. Hiervoor plaatst u een **[!UICONTROL Update data]** -activiteit aan het einde van elke uitgaande overgang van de gesplitste activiteit.
 
-   De **[!UICONTROL Update data]** activiteit is gedetailleerd in de [ gegevens van de Update ](update-data.md) sectie.
+   De **[!UICONTROL Update data]** activiteit is gedetailleerd in de [&#x200B; gegevens van de Update &#x200B;](update-data.md) sectie.

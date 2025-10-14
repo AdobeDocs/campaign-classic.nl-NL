@@ -26,11 +26,11 @@ Selecteer het enquêtemalplaatje (**[!UICONTROL newSurvey]** door gebrek).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-De pagina&#39;s van het formulier worden gemaakt met een speciale editor waarmee u invoervelden (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). Zij kunnen worden verzameld in &quot;containers&quot; en worden ingedeeld volgens de vereisten. [ leer meer ](#adding-questions)).
+De pagina&#39;s van het formulier worden gemaakt met een speciale editor waarmee u invoervelden (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). Zij kunnen worden verzameld in &quot;containers&quot; en worden ingedeeld volgens de vereisten. [&#x200B; leer meer &#x200B;](#adding-questions)).
 
 >[!NOTE]
 >
->Voor meer op hoe te om inhoud te bepalen en het schermlay-outs voor een vorm van het Web tot stand te brengen, verwijs naar [ dit document ](../../web/using/about-web-forms.md).
+>Voor meer op hoe te om inhoud te bepalen en het schermlay-outs voor een vorm van het Web tot stand te brengen, verwijs naar [&#x200B; dit document &#x200B;](../../web/using/about-web-forms.md).
 
 ## Velden toevoegen {#adding-fields}
 
@@ -53,13 +53,13 @@ Wanneer u een veld aan een enquête toevoegt, moet u het type van het veld selec
 
    >[!NOTE]
    >
-   >De wijzen van de opslag en de gebiedsinvoer worden gedetailleerd in [ dit sectie ](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >De wijzen van de opslag en de gebiedsinvoer worden gedetailleerd in [&#x200B; dit sectie &#x200B;](../../surveys/using/managing-answers.md#storing-collected-answers).
 
 De aard van het veld dat moet worden toegevoegd (vervolgkeuzelijst, tekstveld, selectievakjes, enz.) past zich aan de geselecteerde opslagmodus aan. U kunt dit wijzigen met het veld **[!UICONTROL Type]** van het tabblad **[!UICONTROL General]** , maar zorg dat u consistent blijft met het gegevenstype.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-De diverse soorten beschikbare gebieden zijn gedetailleerd in [ deze sectie ](../../web/using/about-web-forms.md).
+De diverse soorten beschikbare gebieden zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/about-web-forms.md).
 
 ## Specifieke elementen voor enquêtes {#survey-specific-elements}
 
@@ -108,7 +108,7 @@ Het label van de vraag wordt ingevoerd in het labelveld. In dit geval wordt de s
 
 >[!NOTE]
 >
->Verwijs naar [ dit document ](../../web/using/about-web-forms.md) voor meer bij het gebruiken van de redacteur van HTML.
+>Verwijs naar [&#x200B; dit document &#x200B;](../../web/using/about-web-forms.md) voor meer bij het gebruiken van de redacteur van HTML.
 
 Bijvoorbeeld:
 

@@ -27,12 +27,12 @@ Overweeg de volgende instructies en voorwaarden voordat u begint met het werken 
 
 * De de schakelaartoe:voegen-op van de Analyse van het Web moet op uw milieu, door het specifieke pakket worden geïnstalleerd.
 
-   * Voor Hybride en op-gebouw implementaties, zorg ervoor om de leveringsstappen te volgen die in deze [ worden gedetailleerd pagina ](adobe-analytics-provisioning.md).
+   * Voor Hybride en op-gebouw implementaties, zorg ervoor om de leveringsstappen te volgen die in deze [&#x200B; worden gedetailleerd pagina &#x200B;](adobe-analytics-provisioning.md).
    * Als Hoster of Beheerde gebruiker van Cloud Servicen, contacteer Adobe om Campagne met de diensten en de oplossingen van Adobe Experience Cloud te verbinden.
 
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Om deze integratie toe te laten, moet u uw Adobe technische rekening zoals die in [ wordt gedetailleerd deze pagina ](oauth-technical-account.md) tot stand brengen.
+Om deze integratie toe te laten, moet u uw Adobe technische rekening zoals die in [&#x200B; wordt gedetailleerd deze pagina &#x200B;](oauth-technical-account.md) tot stand brengen.
 
-Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}  te werken.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}  te werken.

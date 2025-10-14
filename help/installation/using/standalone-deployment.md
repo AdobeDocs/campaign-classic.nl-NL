@@ -71,7 +71,7 @@ Naarmate het volume toeneemt, verplaatst een variant van deze architectuur de da
    * de eerste die aan het publiek voor het volgen van en het richten aan de computer op zijn openbaar IP wordt blootgesteld;
    * de tweede alias die aan interne gebruikers voor consoletoegang wordt blootgesteld en aan de zelfde computer richten.
 
-* Firewall geconfigureerd voor het openen van SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Voor verdere informatie, verwijs naar [ configuratie van het Netwerk ](../../installation/using/network-configuration.md).
+* Firewall geconfigureerd voor het openen van SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Voor verdere informatie, verwijs naar [&#x200B; configuratie van het Netwerk &#x200B;](../../installation/using/network-configuration.md).
 
 In de volgende voorbeelden zijn de parameters van de instantie:
 
@@ -85,7 +85,7 @@ Voer de volgende stappen uit:
 
 1. Volg de installatieprocedure voor de server van Adobe Campaign: **nlserver** pakket op Linux of **setup.exe** op Vensters.
 
-   Voor meer op dit, verwijs naar [ Eerste vereisten van de installatie van de Campagne in Linux ](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [ Eerste vereisten van de installatie van de Campagne in Vensters ](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Vensters).
+   Voor meer op dit, verwijs naar [&#x200B; Eerste vereisten van de installatie van de Campagne in Linux &#x200B;](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [&#x200B; Eerste vereisten van de installatie van de Campagne in Vensters &#x200B;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Vensters).
 
 1. Zodra de server van Adobe Campaign wordt geïnstalleerd, begin de toepassingsserver (Web) gebruikend het bevel **nlserver web -tomcat** (de module van het Web laat u toe om Tomcat op standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
@@ -98,14 +98,14 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de &lbrace;**en** serverConf.xml **dossiers in de** conf **folder onder de installatiemap.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de &lbrace;**en** serverConf.xml **dossiers in de** conf **folder onder de installatiemap.** Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
    Pers **Ctrl+C** om de server tegen te houden.
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [ Eerste begin-up van de server ](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
-   * Voor Vensters: [ Eerste opstarten van de server ](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
+   * Voor Linux: [&#x200B; Eerste begin-up van de server &#x200B;](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
+   * Voor Vensters: [&#x200B; Eerste opstarten van de server &#x200B;](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
 
 1. Verander het **interne** wachtwoord gebruikend het bevel:
 
@@ -121,7 +121,7 @@ Voer de volgende stappen uit:
 
      ![](assets/install_create_new_connexion.png)
 
-     Voor meer op dit, verwijs naar [ creeer een geval en login ](../../installation/using/creating-an-instance-and-logging-on.md).
+     Voor meer op dit, verwijs naar [&#x200B; creeer een geval en login &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 
      of
 
@@ -131,7 +131,7 @@ Voer de volgende stappen uit:
      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
      ```
 
-     Voor meer op dit, verwijs naar [ Creërend een instantie ](../../installation/using/command-lines.md#creating-an-instance).
+     Voor meer op dit, verwijs naar [&#x200B; Creërend een instantie &#x200B;](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Bewerk het {**dossier 0} config-demo.xml (dat in de vorige stap naast** wordt gecreeerd config-default.xml **) en zorg de** mta **(levering),** wfserver **(werkschema),** inMail **(stuiterende berichten) en** staat **(statistieken) processen worden toegelaten.** Dan vorm het adres van de statistiekserver:
 
@@ -163,14 +163,14 @@ Voer de volgende stappen uit:
    >
    >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-   Voor meer op dit, verwijs naar [ de serverconfiguratie van de Campagne ](../../installation/using/configuring-campaign-server.md).
+   Voor meer op dit, verwijs naar [&#x200B; de serverconfiguratie van de Campagne &#x200B;](../../installation/using/configuring-campaign-server.md).
 
 1. Kopieer het de opstellingsprogramma van de cliëntconsole **opstelling-cliënt-7.XXX.exe** aan de **/datakit/nl/eng/jsp** omslag. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
-   * Voor Linux: [ Integratie in een server van het Web voor Linux ](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Voor Vensters: [ Integratie in een server van het Web voor Vensters ](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Voor Linux: [&#x200B; Integratie in een server van het Web voor Linux &#x200B;](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * Voor Vensters: [&#x200B; Integratie in een server van het Web voor Vensters &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Start de website en test omleiding met de URL: https://tracking.campaign.net/r/test.
 
@@ -182,8 +182,8 @@ Voer de volgende stappen uit:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [ lanceert de server van het Web en het testen van de configuratie ](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Voor Vensters: [ lanceert de server van het Web en het testen van de configuratie ](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Linux: [&#x200B; lanceert de server van het Web en het testen van de configuratie &#x200B;](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Vensters: [&#x200B; lanceert de server van het Web en het testen van de configuratie &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Begin de server van Adobe Campaign (**netto begin nlserver6** in Vensters, **/etc/init.d/nlserver6 begin** in Linux) en stel het bevel **in werking nlserver pomp** opnieuw om aanwezigheid van alle toegelaten modules te controleren.
 
@@ -214,7 +214,7 @@ Voer de volgende stappen uit:
 
 1. Begin de de cliëntconsole van Adobe Campaign (van de vorige downloadpagina of direct gelanceerd op de server voor een installatie van Vensters), plaats de server verbinding URL aan https://console.campaign.net en verbindt gebruikend **interne** login.
 
-   Verwijs naar [ deze pagina ](../../installation/using/creating-an-instance-and-logging-on.md) en [ deze sectie ](../../installation/using/configuring-campaign-server.md#internal-identifier).
+   Verwijs naar [&#x200B; deze pagina &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md) en [&#x200B; deze sectie &#x200B;](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
    De assistent voor het maken van de database wordt weergegeven wanneer u zich voor het eerst aanmeldt:
 
@@ -222,20 +222,20 @@ Voer de volgende stappen uit:
 
    Volg de stappen in de medewerker en creeer het gegevensbestand verbonden aan de verbindingsinstantie.
 
-   Voor meer op dit, verwijs naar [ Creërend en vormend het gegevensbestand ](../../installation/using/creating-and-configuring-the-database.md).
+   Voor meer op dit, verwijs naar [&#x200B; Creërend en vormend het gegevensbestand &#x200B;](../../installation/using/creating-and-configuring-the-database.md).
 
    Als de database eenmaal is gemaakt, meldt u zich af.
 
 1. Logterug op de cliëntconsole gebruikend **admin** login zonder een wachtwoord en begin de plaatsingstovenaar ( **[!UICONTROL Tools > Advanced]** menu) om het vormen van de instantie te beëindigen.
 
-   Voor meer op dit, verwijs naar [ het Opstellen van een instantie ](../../installation/using/deploying-an-instance.md).
+   Voor meer op dit, verwijs naar [&#x200B; het Opstellen van een instantie &#x200B;](../../installation/using/deploying-an-instance.md).
 
    De belangrijkste parameters die moeten worden ingesteld zijn:
 
    * E-maillevering: verzender- en antwoordadressen en de foutbrievenbus voor stuiterende berichten.
    * Het volgen: Vul externe URL die voor redirection en interne URL wordt gebruikt, klik **Registratie op de volgende server(s)** en bevestig het dan op de **demo** instantie van de volgende server.
 
-     Voor meer op dit, verwijs naar [ het Volgen configuratie ](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Voor meer op dit, verwijs naar [&#x200B; het Volgen configuratie &#x200B;](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 

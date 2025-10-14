@@ -19,8 +19,8 @@ ht-degree: 1%
 
 Als u een database maakt, biedt Adobe Campaign twee verschillende opties:
 
-1. Een database maken of recyclen: kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Verwijs naar [ Geval 1: Creërend/recycling een gegevensbestand ](#case-1--creating-recycling-a-database).
-1. Gebruikend een bestaand gegevensbestand: kies deze optie als een leeg gegevensbestand reeds door uw beheerder is gecreeerd en u het wilt gebruiken; of de structuur van een bestaand gegevensbestand uitbreiden. Verwijs naar [ Geval 2: Gebruikend een bestaand gegevensbestand ](#case-2--using-an-existing-database).
+1. Een database maken of recyclen: kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Verwijs naar [&#x200B; Geval 1: Creërend/recycling een gegevensbestand &#x200B;](#case-1--creating-recycling-a-database).
+1. Gebruikend een bestaand gegevensbestand: kies deze optie als een leeg gegevensbestand reeds door uw beheerder is gecreeerd en u het wilt gebruiken; of de structuur van een bestaand gegevensbestand uitbreiden. Verwijs naar [&#x200B; Geval 2: Gebruikend een bestaand gegevensbestand &#x200B;](#case-2--using-an-existing-database).
 
 De configuratiestappen worden hieronder beschreven.
 
@@ -36,12 +36,12 @@ De stappen voor het creëren van een database of het recyclen van een bestaande 
 
 De volgende stappen zijn hierbij betrokken:
 
-* [ Stap 1 - het Selecteren van de gegevensbestandmotor ](#step-1---selecting-the-database-engine),
-* [ Stap 2 - het Verbinden met de server ](#step-2---connecting-to-the-server),
-* [ Stap 3 - Verbinding en kenmerken van het gegevensbestand ](#step-3---connection-and-characteristics-of-the-database),
-* [ Stap 4 - Pakketten om ](#step-4---packages-to-install) te installeren,
-* [ Stap 5 - de stappen van de creatie ](#step-5---creation-steps),
-* [ Stap 6 - Creërend het gegevensbestand ](#step-6---creating-the-database).
+* [&#x200B; Stap 1 - het Selecteren van de gegevensbestandmotor &#x200B;](#step-1---selecting-the-database-engine),
+* [&#x200B; Stap 2 - het Verbinden met de server &#x200B;](#step-2---connecting-to-the-server),
+* [&#x200B; Stap 3 - Verbinding en kenmerken van het gegevensbestand &#x200B;](#step-3---connection-and-characteristics-of-the-database),
+* [&#x200B; Stap 4 - Pakketten om &#x200B;](#step-4---packages-to-install) te installeren,
+* [&#x200B; Stap 5 - de stappen van de creatie &#x200B;](#step-5---creation-steps),
+* [&#x200B; Stap 6 - Creërend het gegevensbestand &#x200B;](#step-6---creating-the-database).
 
 ### Stap 1 - De database-engine selecteren {#step-1---selecting-the-database-engine}
 
@@ -101,7 +101,7 @@ U moet de volgende instellingen definiëren:
 
 * Kies een tijdzone voor de database en geef op of u deze in UTC wilt plaatsen (indien beschikbaar).
 
-  Voor meer op dit, verwijs naar [ het beheer van de tijdzone ](../../installation/using/time-zone-management.md).
+  Voor meer op dit, verwijs naar [&#x200B; het beheer van de tijdzone &#x200B;](../../installation/using/time-zone-management.md).
 
 ### Stap 4 - Te installeren pakketten {#step-4---packages-to-install}
 
@@ -119,7 +119,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
 
 * Voor een Oracle, de Server van Microsoft SQL of het gegevensbestand PostgreSQL, kan de beheerder de **opslagparameters** ook bepalen die moeten worden gebruikt wanneer het creëren van gegevensbestandvoorwerpen.
 
-  Deze parameters krijgen de exacte tabelnamen (waarschuwing: hoofdlettergevoelig). Zij worden respectievelijk opgeslagen in de **[!UICONTROL Administration > Platform > Options]** knoop in de volgende opties (zie [ deze sectie ](../../installation/using/configuring-campaign-options.md#database)):
+  Deze parameters krijgen de exacte tabelnamen (waarschuwing: hoofdlettergevoelig). Zij worden respectievelijk opgeslagen in de **[!UICONTROL Administration > Platform > Options]** knoop in de volgende opties (zie [&#x200B; deze sectie &#x200B;](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: gebruikerstabellen die op een schema worden gebaseerd
    * **WdbcOptions_TableSpaceIndex**: index van gebruikerslijsten die op een schema worden gebaseerd
@@ -139,7 +139,7 @@ Het definitieve stadium van de medewerker laat u toe om het gegevensbestand tot 
 
 Zodra het gegevensbestand wordt gecreeerd, kunt u opnieuw verbinden om instantieconfiguratie te voltooien.
 
-U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Verwijs naar [ plaatsingstovenaar ](../../installation/using/deploying-an-instance.md#deployment-assistant).
+U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
 
@@ -157,11 +157,11 @@ Bijvoorbeeld, voor een gegevensbestand van het Oracle, zijn de minimaal vereiste
 
 Om een bestaand gegevensbestand te gebruiken, zijn de configuratiestappen als volgt:
 
-* [ Stap 1 - het Kiezen van de gegevensbestandmotor ](#step-1---choosing-the-database-engine),
-* [ Stap 2 - de verbindingsmontages van het Gegevensbestand ](#step-2---database-connection-settings),
-* [ Stap 3 - Pakketten om ](#step-3---packages-to-install) te installeren,
-* [ Stap 4 - de stappen van de creatie ](#step-4---creation-steps),
-* [ Stap 5 - Creërend het gegevensbestand ](#step-5---creating-the-database).
+* [&#x200B; Stap 1 - het Kiezen van de gegevensbestandmotor &#x200B;](#step-1---choosing-the-database-engine),
+* [&#x200B; Stap 2 - de verbindingsmontages van het Gegevensbestand &#x200B;](#step-2---database-connection-settings),
+* [&#x200B; Stap 3 - Pakketten om &#x200B;](#step-3---packages-to-install) te installeren,
+* [&#x200B; Stap 4 - de stappen van de creatie &#x200B;](#step-4---creation-steps),
+* [&#x200B; Stap 5 - Creërend het gegevensbestand &#x200B;](#step-5---creating-the-database).
 
 ### Stap 1 - De database-engine kiezen {#step-1---choosing-the-database-engine}
 
@@ -230,7 +230,7 @@ Het definitieve stadium van de medewerker laat u toe om het gegevensbestand tot 
 
 Wanneer het maken van een database is voltooid, kunt u opnieuw verbinding maken om de instantieconfiguratie te voltooien.
 
-U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Verwijs naar [ plaatsingstovenaar ](../../installation/using/deploying-an-instance.md#deployment-assistant).
+U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
 

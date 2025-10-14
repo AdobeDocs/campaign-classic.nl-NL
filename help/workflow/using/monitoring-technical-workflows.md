@@ -19,7 +19,7 @@ ht-degree: 5%
 
 De technische werkstromen moeten worden bewaakt en er moeten maatregelen worden genomen wanneer ze mislukken.
 
-De extra manieren om de verschillende processen van de Campagne te controleren worden voorgesteld in [ deze pagina ](../../production/using/monitoring-guidelines.md).
+De extra manieren om de verschillende processen van de Campagne te controleren worden voorgesteld in [&#x200B; deze pagina &#x200B;](../../production/using/monitoring-guidelines.md).
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
@@ -39,11 +39,11 @@ Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!
 
 Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
 
-Om beter te begrijpen wat elk technisch werkschema zou moeten doen, verwijs naar dit [ sectie ](about-technical-workflows.md).
+Om beter te begrijpen wat elk technisch werkschema zou moeten doen, verwijs naar dit [&#x200B; sectie &#x200B;](about-technical-workflows.md).
 
 Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Controleer of de **[!UICONTROL Database Cleanup]** -workflow elke dag wordt uitgevoerd en voltooid. Voor meer op dit, verwijs naar deze [ pagina ](../../production/using/database-cleanup-workflow.md).
+1. Controleer of de **[!UICONTROL Database Cleanup]** -workflow elke dag wordt uitgevoerd en voltooid. Voor meer op dit, verwijs naar deze [&#x200B; pagina &#x200B;](../../production/using/database-cleanup-workflow.md).
 1. Bekijk het dagboek om te verifiëren dat de verstreken tijd in tijd vrij constant is en zich niet in andere werkschema&#39;s mengt.
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:

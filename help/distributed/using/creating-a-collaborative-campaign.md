@@ -37,7 +37,7 @@ Als u een samenwerkingscampagne wilt maken (op formulier), moet de sjabloon **[!
 
 In het **[!UICONTROL Edit]** lusje, klik de **[!UICONTROL Advanced campaign settings...]** verbinding om tot de **Verdeelde Marketing** tabel toegang te hebben.
 
-Selecteer **door vorm** Webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Verwijs naar [ Creërend een lokale campagne (door vorm) ](examples.md#creating-a-local-campaign--by-form-).
+Selecteer **door vorm** Webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Verwijs naar [&#x200B; Creërend een lokale campagne (door vorm) &#x200B;](examples.md#creating-a-local-campaign--by-form-).
 
 Sla uw campagne op. U kunt het van de **pakketten van de Campagne** mening in het **Campagne** lusje nu gebruiken, door de **[!UICONTROL Create]** knoop te klikken.
 
@@ -81,7 +81,7 @@ Het campagnewerkschema moet **Lokale goedkeurings** typeactiviteit integreren. D
 * **[!UICONTROL Distribution context]** : expliciet.
 * **[!UICONTROL Data distribution]** : distributie van lokale entiteiten.
 
-**de Lokale distributie van de entiteitdistributie** typegegevens moet worden gecreeerd. Met de sjabloon voor gegevensdistributie kunt u het aantal records uit een lijst met groeperingswaarden beperken. Klik in **[!UICONTROL Resources > Campaign management > Data distribution]** op het pictogram **[!UICONTROL New]** om een nieuwe **[!UICONTROL Data distribution]** te maken. Voor meer informatie over gegevensdistributie, verwijs naar de [ gids van de Werkschema&#39;s ](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
+**de Lokale distributie van de entiteitdistributie** typegegevens moet worden gecreeerd. Met de sjabloon voor gegevensdistributie kunt u het aantal records uit een lijst met groeperingswaarden beperken. Klik in **[!UICONTROL Resources > Campaign management > Data distribution]** op het pictogram **[!UICONTROL New]** om een nieuwe **[!UICONTROL Data distribution]** te maken. Voor meer informatie over gegevensdistributie, verwijs naar de [&#x200B; gids van de Werkschema&#39;s &#x200B;](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
 
 ![](assets/mkg_dist_data_distribution.png)
 
@@ -171,7 +171,7 @@ Nadat een lokale entiteit de registratie heeft voltooid, worden centrale entitei
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-Voor meer op dit, verwijs naar het [ proces van de Goedkeuring ](creating-a-local-campaign.md#approval-process) sectie.
+Voor meer op dit, verwijs naar het [&#x200B; proces van de Goedkeuring &#x200B;](creating-a-local-campaign.md#approval-process) sectie.
 
 ## Een bestelling goedkeuren {#approving-an-order}
 

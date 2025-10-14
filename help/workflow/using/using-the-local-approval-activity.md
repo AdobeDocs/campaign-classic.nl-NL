@@ -53,7 +53,7 @@ De belangrijkste stappen in het lokale goedkeuringsproces zijn:
 
 Met de sjabloon voor gegevensdistributie kunt u de populatie beperken die het resultaat is van het richten op basis van gegevensgroepering, terwijl u elke waarde kunt toewijzen aan een lokale toezichthouder. In dit voorbeeld hebben we het veld **[!UICONTROL Email address domain]** gedefinieerd als een distributieveld en een domein toegewezen aan elke lokale toezichthouder
 
-Voor meer bij het creëren van een malplaatje van de gegevensdistributie, verwijs naar [ Beperkend het aantal subsetverslagen per gegevensdistributie ](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Voor meer bij het creëren van een malplaatje van de gegevensdistributie, verwijs naar [&#x200B; Beperkend het aantal subsetverslagen per gegevensdistributie &#x200B;](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Ga naar het knooppunt **[!UICONTROL Resources > Campaign management > Data distribution]** en klik op **[!UICONTROL New]** om de sjabloon voor gegevensdistributie te maken.
 
@@ -108,7 +108,7 @@ De volgende activiteiten zijn toegevoegd:
 
 Het stroomopwaartse richten bestaat uit twee vragen, één doorsnede en één spleet. De populatie die het resultaat is van het opgeven van doelen, kan worden beperkt met een **[!UICONTROL Split]** -activiteit die gebruikmaakt van een sjabloon voor gegevensdistributie.
 
-Voor meer bij het vormen van een gespleten activiteit, verwijs naar [ Gesplitst ](split.md). De verwezenlijking van een malplaatje van de gegevensdistributie wordt gedetailleerd in [ Beperkend het aantal subsetverslagen per gegevensdistributie ](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Voor meer bij het vormen van een gespleten activiteit, verwijs naar [&#x200B; Gesplitst &#x200B;](split.md). De verwezenlijking van een malplaatje van de gegevensdistributie wordt gedetailleerd in [&#x200B; Beperkend het aantal subsetverslagen per gegevensdistributie &#x200B;](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 Als u de populatie van de query niet wilt beperken, hoeft u de activiteiten **[!UICONTROL Query]** , **[!UICONTROL Intersection]** en **[!UICONTROL Split]** niet te gebruiken. Voer in dit geval de sjabloon voor gegevensdistributie in de eerste **[!UICONTROL Local approval]** -activiteit in.
 
@@ -124,7 +124,7 @@ Als u de populatie van de query niet wilt beperken, hoeft u de activiteiten **[!
 
    ![](assets/local_validation_split_2.png)
 
-1. Selecteer de **[!UICONTROL By data distribution]** optie, selecteer eerder gecreeerd distributiemalplaatje (verwijs naar [ Stap 1: Creërend het malplaatje van de gegevensdistributie ](#step-1--creating-the-data-distribution-template-)) en klik **[!UICONTROL Finish]**.
+1. Selecteer de **[!UICONTROL By data distribution]** optie, selecteer eerder gecreeerd distributiemalplaatje (verwijs naar [&#x200B; Stap 1: Creërend het malplaatje van de gegevensdistributie &#x200B;](#step-1--creating-the-data-distribution-template-)) en klik **[!UICONTROL Finish]**.
 
    ![](assets/local_validation_split_3.png)
 
@@ -136,7 +136,7 @@ In het distributiemalplaatje, hebben wij ervoor gekozen om de bevolking tot 10% 
 
 Met de **[!UICONTROL Local approval]** -activiteit kunt u een melding naar elke lokale toezichthouder sturen.
 
-Voor meer bij het vormen van de **[!UICONTROL Local approval]** activiteit, verwijs naar [ Lokale goedkeuring ](local-approval.md).
+Voor meer bij het vormen van de **[!UICONTROL Local approval]** activiteit, verwijs naar [&#x200B; Lokale goedkeuring &#x200B;](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 

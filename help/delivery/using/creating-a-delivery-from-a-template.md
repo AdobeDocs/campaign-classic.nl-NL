@@ -44,4 +44,4 @@ Deze actie produceert een levering in de omslag verbonden aan het malplaatje. De
 
 >[!NOTE]
 >
->Voor verdere informatie over het vormen van een levering, zie [ de e-mailinhoud ](defining-the-email-content.md) bepalen.
+>Voor verdere informatie over het vormen van een levering, zie [&#x200B; de e-mailinhoud &#x200B;](defining-the-email-content.md) bepalen.

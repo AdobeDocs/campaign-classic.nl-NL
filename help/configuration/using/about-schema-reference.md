@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [ de gegevensmodel van Campaign Classic ](about-data-model.md).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [&#x200B; de gegevensmodel van Campaign Classic &#x200B;](about-data-model.md).
 
 In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een document van XML verbonden aan een gegevensbestandlijst. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 

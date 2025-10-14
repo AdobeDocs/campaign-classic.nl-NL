@@ -23,7 +23,7 @@ Een vereniging groepeert het resultaat van verscheidene binnenkomende activiteit
 
 >[!NOTE]
 >
->Voor meer bij het vormen van en het gebruiken van de vakbondsactiviteit, verwijs naar [ het Combineren van verscheidene doelstellingen (Unie) ](targeting-data.md#combining-several-targets--union-).
+>Voor meer bij het vormen van en het gebruiken van de vakbondsactiviteit, verwijs naar [&#x200B; het Combineren van verscheidene doelstellingen (Unie) &#x200B;](targeting-data.md#combining-several-targets--union-).
 
 ## Voorbeeld van Vereniging {#union-example}
 
@@ -37,7 +37,7 @@ In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd o
 
    Specificeer dit definitieve aantal door het maximumaantal ontvangers in te gaan en door de vraag te selecteren waarvan de bevolking prioriteit zal nemen.
 
-1. Stem de vakbondsactiviteit dan vormen de activiteit van de lijstupdate (zie [ update van de Lijst ](list-update.md)).
+1. Stem de vakbondsactiviteit dan vormen de activiteit van de lijstupdate (zie [&#x200B; update van de Lijst &#x200B;](list-update.md)).
 1. Start de workflow. Het aantal resultaten wordt weergegeven en de lijst die is gedefinieerd in de updateactiviteit van de lijst, wordt gemaakt of bijgewerkt. Deze lijst bevat de reeks ontvangers voor beide query&#39;s of, indien van toepassing, het nummer dat bij de vorige stap is gedefinieerd.
 
    ![](assets/union_example.png)

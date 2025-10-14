@@ -34,11 +34,11 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 >
 >Het XML-schema en het formulier dat betrekking heeft op de velden in de tabel met profielen, zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
 >
->Voor verdere informatie, verwijs naar [ deze pagina ](../../configuration/using/about-schema-edition.md).
+>Voor verdere informatie, verwijs naar [&#x200B; deze pagina &#x200B;](../../configuration/using/about-schema-edition.md).
 
 >[!NOTE]
 >
->Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

@@ -58,7 +58,7 @@ In het onderstaande voorbeeld maken we een workflow voor het verzenden van een e
 1. Voeg en vorm een **[!UICONTROL Wait]** activiteit toe opdat de ontvangers niet teveel leveringen in één keer ontvangen.
 1. Voeg een **[!UICONTROL Split]** -activiteit toe om abonnees van mobiele iOS- of Android-toepassingen te verdelen.
 
-   Selecteer een service voor elk besturingssysteem. Voor meer op de dienstverwezenlijking, verwijs naar deze [ pagina ](../../delivery/using/configuring-the-mobile-application.md).
+   Selecteer een service voor elk besturingssysteem. Voor meer op de dienstverwezenlijking, verwijs naar deze [&#x200B; pagina &#x200B;](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 

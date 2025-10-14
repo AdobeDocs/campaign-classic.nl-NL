@@ -224,7 +224,7 @@ Deze servergastherenWeb vormen, spiegelpagina&#39;s, enz. De volgende poorten mo
 
 ## Integratie met Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het openen van verscheidene havens als de installatie &quot;op-gebouw&quot;is. Voor meer informatie bij het vormen van deze integratie, verwijs naar de [ gedetailleerde documentatie ](../../integrations/using/about-adobe-experience-manager.md).
+De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het openen van verscheidene havens als de installatie &quot;op-gebouw&quot;is. Voor meer informatie bij het vormen van deze integratie, verwijs naar de [&#x200B; gedetailleerde documentatie &#x200B;](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 

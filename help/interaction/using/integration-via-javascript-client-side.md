@@ -103,7 +103,7 @@ element op interactie.
 
 ### Een geïdentificeerd aanbod presenteren {#presenting-an-identified-offer}
 
-Om een aanbieding aan een geïdentificeerd contact voor te stellen, is het proces gelijkaardig zoals hier gedetailleerd: [ Presenterend een anonieme aanbieding ](#presenting-an-anonymous-offer). In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
+Om een aanbieding aan een geïdentificeerd contact voor te stellen, is het proces gelijkaardig zoals hier gedetailleerd: [&#x200B; Presenterend een anonieme aanbieding &#x200B;](#presenting-an-anonymous-offer). In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
 
 ```
 <script type="text/javascript">
@@ -178,9 +178,9 @@ Het volgende gebruiksgeval specificeert de configuraties om in Adobe Campaign ui
 
 1. **Creërend een milieu en een aanbiedingsruimte**
 
-   Voor meer bij het creëren van een milieu, verwijs naar [ Levend/de milieu&#39;s van het Ontwerp ](../../interaction/using/live-design-environments.md).
+   Voor meer bij het creëren van een milieu, verwijs naar [&#x200B; Levend/de milieu&#39;s van het Ontwerp &#x200B;](../../interaction/using/live-design-environments.md).
 
-   Voor meer bij het creëren van een aanbiedingsruimte, verwijs naar [ Creërend aanbiedingsruimten ](../../interaction/using/creating-offer-spaces.md).
+   Voor meer bij het creëren van een aanbiedingsruimte, verwijs naar [&#x200B; Creërend aanbiedingsruimten &#x200B;](../../interaction/using/creating-offer-spaces.md).
 
 1. **Uitbreidend het aanbiedingsschema om nieuwe gebieden toe te voegen**
 
@@ -273,7 +273,7 @@ Het volgende gebruiksgeval specificeert de configuraties om in Adobe Campaign ui
 
 1. **Een aanbieding maken**
 
-   Voor meer bij het creëren van aanbiedingen, verwijs naar [ Creërend een aanbieding ](../../interaction/using/creating-an-offer.md).
+   Voor meer bij het creëren van aanbiedingen, verwijs naar [&#x200B; Creërend een aanbieding &#x200B;](../../interaction/using/creating-an-offer.md).
 
    In het volgende gebruiksgeval wordt de aanbieding als volgt vermeld:
 

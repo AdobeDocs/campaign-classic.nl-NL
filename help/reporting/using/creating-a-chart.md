@@ -34,7 +34,7 @@ Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
 1. Klik op het tabblad **[!UICONTROL Data]** om de gegevensbron en de te berekenen reeks te definiëren.
 
-   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar [ Gebruikend contextgegevens ](../../reporting/using/using-the-context.md#using-context-data)).
+   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar [&#x200B; Gebruikend contextgegevens &#x200B;](../../reporting/using/using-the-context.md#using-context-data)).
 
    * Klik op de koppeling **[!UICONTROL Filter data...]** om filtercriteria voor de gegevens in de database te definiëren.
 
@@ -122,7 +122,7 @@ Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
 
 U kunt een actie bepalen wanneer de gebruiker de grafiek klikt. Open het venster **[!UICONTROL Interaction events]** en selecteer de handeling die u wilt uitvoeren.
 
-De mogelijke interactietypen en hun configuraties zijn gedetailleerd in [ deze sectie ](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+De mogelijke interactietypen en hun configuraties zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 

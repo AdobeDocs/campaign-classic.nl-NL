@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-Het hieronder gedetailleerde werkschema wordt geïnstalleerd met de **Midden-Bronende platform** module door gebrek. Voor meer op deze module, verwijs naar deze [ sectie ](../../installation/using/mid-sourcing-deployment.md).
+Het hieronder gedetailleerde werkschema wordt geïnstalleerd met de **Midden-Bronende platform** module door gebrek. Voor meer op deze module, verwijs naar deze [&#x200B; sectie &#x200B;](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

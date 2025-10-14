@@ -19,12 +19,12 @@ ht-degree: 0%
 
 In deze sectie worden de belangrijkste beginselen en aanbevolen procedures beschreven voor het maken van een workflow in Campagne.
 
-* Creeer een werkschema, zie [ Creërend een nieuw werkschema ](#creating-a-new-workflow)
-* Ontwerp het werkschemadiagram, zie [ Toevoegend en het verbinden activiteiten ](#adding-and-linking-activities)
-* De parameters en de eigenschappen van de toegang van activiteiten, zie [ Vormende activiteiten ](#configuring-activities)
-* Ontwerp richtend werkschema&#39;s, zie [ richtend werkschema&#39;s ](#targeting-workflows)
-* De werkschema&#39;s van het gebruik om een campagne uit te voeren, zie [ werkschema&#39;s van de Campagne ](#campaign-workflows)
-* Toegang en creeer technische werkschema&#39;s, zie [ Technische werkschema&#39;s ](#technical-workflows)
+* Creeer een werkschema, zie [&#x200B; Creërend een nieuw werkschema &#x200B;](#creating-a-new-workflow)
+* Ontwerp het werkschemadiagram, zie [&#x200B; Toevoegend en het verbinden activiteiten &#x200B;](#adding-and-linking-activities)
+* De parameters en de eigenschappen van de toegang van activiteiten, zie [&#x200B; Vormende activiteiten &#x200B;](#configuring-activities)
+* Ontwerp richtend werkschema&#39;s, zie [&#x200B; richtend werkschema&#39;s &#x200B;](#targeting-workflows)
+* De werkschema&#39;s van het gebruik om een campagne uit te voeren, zie [&#x200B; werkschema&#39;s van de Campagne &#x200B;](#campaign-workflows)
+* Toegang en creeer technische werkschema&#39;s, zie [&#x200B; Technische werkschema&#39;s &#x200B;](#technical-workflows)
 * Gebruik malplaatjes om werkschema&#39;s tot stand te brengen, zie {de malplaatjes van het 0} Werkschema [&#128279;](#workflow-templates)
 
 ## Een nieuwe workflow maken {#creating-a-new-workflow}
@@ -57,10 +57,10 @@ U moet nu de verschillende activiteiten definiëren en deze koppelen in het diag
 
 De activiteiten worden gegroepeerd op categorie in de verschillende tabbladen van het palet. De beschikbare tabbladen en activiteiten kunnen variëren afhankelijk van het type workflow (technisch, doelgericht of campagneworkflow).
 
-* Het eerste tabblad bevat bewerkingen voor het activeren van doelen en gegevens. Deze activiteiten zijn gedetailleerd in [ het richten activiteiten ](about-targeting-activities.md).
-* Het tweede tabblad bevat de planningsactiviteiten, die hoofdzakelijk worden gebruikt voor de coördinatie van andere activiteiten. Deze activiteiten zijn gedetailleerd in [ de controleactiviteiten van de Stroom ](about-flow-control-activities.md).
-* Het derde tabblad bevat gereedschappen en handelingen die in de workflow kunnen worden gebruikt. Deze activiteiten zijn gedetailleerd in [ activiteiten van de Actie ](about-action-activities.md).
-* Het vierde tabblad bevat activiteiten die afhankelijk zijn van een bepaalde gebeurtenis, zoals de ontvangst van een e-mail of de aankomst van een bestand op een server. Deze activiteiten zijn gedetailleerd in [ activiteiten van de Gebeurtenis ](about-event-activities.md).
+* Het eerste tabblad bevat bewerkingen voor het activeren van doelen en gegevens. Deze activiteiten zijn gedetailleerd in [&#x200B; het richten activiteiten &#x200B;](about-targeting-activities.md).
+* Het tweede tabblad bevat de planningsactiviteiten, die hoofdzakelijk worden gebruikt voor de coördinatie van andere activiteiten. Deze activiteiten zijn gedetailleerd in [&#x200B; de controleactiviteiten van de Stroom &#x200B;](about-flow-control-activities.md).
+* Het derde tabblad bevat gereedschappen en handelingen die in de workflow kunnen worden gebruikt. Deze activiteiten zijn gedetailleerd in [&#x200B; activiteiten van de Actie &#x200B;](about-action-activities.md).
+* Het vierde tabblad bevat activiteiten die afhankelijk zijn van een bepaalde gebeurtenis, zoals de ontvangst van een e-mail of de aankomst van een bestand op een server. Deze activiteiten zijn gedetailleerd in [&#x200B; activiteiten van de Gebeurtenis &#x200B;](about-event-activities.md).
 
 Het diagram maken
 
@@ -82,7 +82,7 @@ Het diagram maken
 
 >[!CAUTION]
 >
->U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **&#x200B;**&#x200B;werkschema&#39;s dupliceren. Voor meer informatie, zie [ werkschema&#39;s ](#duplicating-workflows) dupliceren.
+>U kunt activiteiten kopiëren en plakken binnen dezelfde workflow. We raden echter niet aan plakactiviteiten over verschillende workflows te kopiëren. Sommige instellingen die zijn gekoppeld aan activiteiten zoals Leveringen en Planner kunnen leiden tot conflicten en fouten tijdens het uitvoeren van de doelworkflow. In plaats daarvan, adviseerden wij u **&#x200B;**&#x200B;werkschema&#39;s dupliceren. Voor meer informatie, zie [&#x200B; werkschema&#39;s &#x200B;](#duplicating-workflows) dupliceren.
 
 U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen:
 
@@ -109,7 +109,7 @@ U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen
 
 * **het beheer van het Beeld**
 
-  U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Verwijs naar [ de activiteitenbeelden van de Verandering ](managing-activity-images.md).
+  U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Verwijs naar [&#x200B; de activiteitenbeelden van de Verandering &#x200B;](managing-activity-images.md).
 
 ## Activiteiten configureren {#configuring-activities}
 
@@ -117,7 +117,7 @@ Dubbelklik op een activiteit om deze te configureren of klik met de rechtermuisk
 
 >[!NOTE]
 >
->De het werkschemaactiviteiten van de campagne zijn gedetailleerd in [ deze sectie ](about-activities.md).
+>De het werkschemaactiviteiten van de campagne zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](about-activities.md).
 
 Het eerste lusje bevat de basisconfiguratie. Het tabblad **[!UICONTROL Advanced]** bevat de aanvullende parameters die met name worden gebruikt voor het definiëren van gedrag wanneer een fout optreedt, het opgeven van de uitvoeringstijd voor een activiteit en het invoeren van een initialisatiescript.
 
@@ -129,13 +129,13 @@ Voor een beter begrip van de activiteiten en om werkschemaleesbaarheid te verbet
 
 Met doelgerichte workflows kunt u verschillende leveringsdoelen maken. U kunt query&#39;s maken, samenvoegingen of uitsluitingen definiëren op basis van specifieke criteria, planning toevoegen dankzij workflowactiviteiten. Het resultaat van deze gerichte actie kan automatisch worden overgedragen naar een lijst die als doel van leveringsacties kan dienen
 
-Naast deze activiteiten kunt u met de opties voor gegevensbeheer gegevens manipuleren en geavanceerde functies gebruiken om complexe doelproblemen op te lossen. Voor meer op dit, verwijs naar [ Beheer van Gegevens ](targeting-data.md#data-management).
+Naast deze activiteiten kunt u met de opties voor gegevensbeheer gegevens manipuleren en geavanceerde functies gebruiken om complexe doelproblemen op te lossen. Voor meer op dit, verwijs naar [&#x200B; Beheer van Gegevens &#x200B;](targeting-data.md#data-management).
 
 Al deze activiteiten vindt u op het eerste tabblad van de workflow.
 
 >[!NOTE]
 >
->Het richten activiteiten zijn gedetailleerd in [ deze sectie ](about-activities.md).
+>Het richten activiteiten zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](about-activities.md).
 
 Doelworkflows kunnen worden gemaakt en bewerkt via het knooppunt **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** van de Adobe Campaign-structuur of via het menu **[!UICONTROL Profiles and Targets > Targeting workflows]** van de startpagina.
 
@@ -147,11 +147,11 @@ Het richten van werkschema&#39;s binnen het kader van een campagne wordt opgesla
 
 De stappen voor het maken van een doelworkflow worden in de volgende secties beschreven:
 
-1. **identificeer** gegevens in het gegevensbestand - zie [ vragen ](targeting-data.md#creating-queries) creëren
-1. **bereidt** gegevens voor om leveringsbehoeften te voldoen - zie [ Verrijken en gegevens wijzigen ](targeting-data.md#enriching-and-modifying-data)
-1. **Gegevens van het Gebruik** om updates of binnen een levering uit te voeren - zie [ het gegevensbestand ](how-to-use-workflow-data.md#updating-the-database) bijwerken
+1. **identificeer** gegevens in het gegevensbestand - zie [&#x200B; vragen &#x200B;](targeting-data.md#creating-queries) creëren
+1. **bereidt** gegevens voor om leveringsbehoeften te voldoen - zie [&#x200B; Verrijken en gegevens wijzigen &#x200B;](targeting-data.md#enriching-and-modifying-data)
+1. **Gegevens van het Gebruik** om updates of binnen een levering uit te voeren - zie [&#x200B; het gegevensbestand &#x200B;](how-to-use-workflow-data.md#updating-the-database) bijwerken
 
-De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Voor meer op dit, verwijs naar [ gegevens van het Doel ](data-life-cycle.md#target-data)
+De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Voor meer op dit, verwijs naar [&#x200B; gegevens van het Doel &#x200B;](data-life-cycle.md#target-data)
 
 ### Afmetingen gericht en filteren {#targeting-and-filtering-dimensions}
 
@@ -185,7 +185,7 @@ Alle campagneworkflows worden gecentraliseerd onder het knooppunt **[!UICONTROL 
 
 ![](assets/campaigns_wf.png)
 
-De werkschema&#39;s en de implementatievoorbeelden van de campagne zijn gedetailleerd in [ deze pagina ](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+De werkschema&#39;s en de implementatievoorbeelden van de campagne zijn gedetailleerd in [&#x200B; deze pagina &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Technische workflows {#technical-workflows}
 
@@ -199,7 +199,7 @@ De submap **[!UICONTROL Campaign process]** centraliseert de workflows die nodig
 
 >[!NOTE]
 >
->De lijst van technische die werkschema&#39;s met elke module worden geïnstalleerd is beschikbaar in a [ specifieke sectie ](about-technical-workflows.md).
+>De lijst van technische die werkschema&#39;s met elke module worden geïnstalleerd is beschikbaar in a [&#x200B; specifieke sectie &#x200B;](about-technical-workflows.md).
 
 U kunt andere technische workflows maken in het knooppunt **[!UICONTROL Administration > Production > Technical workflows]** van de boomstructuur. Dit proces is echter voorbehouden aan professionele gebruikers.
 

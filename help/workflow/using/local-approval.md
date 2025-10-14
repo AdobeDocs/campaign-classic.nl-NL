@@ -25,7 +25,7 @@ Wanneer de **[!UICONTROL Local approval]** -activiteit is geïntegreerd in een d
 >
 >Om deze activiteit te gebruiken, moet u de Verdeelde module van de Marketing hebben gekocht, die een optie van de Campagne is. Controleer hiervoor uw licentieovereenkomst.
 
-Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [ Gebruikend de lokale goedkeuringsactiviteit ](using-the-local-approval-activity.md).
+Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [&#x200B; Gebruikend de lokale goedkeuringsactiviteit &#x200B;](using-the-local-approval-activity.md).
 
 Voer eerst een label in voor de activiteit en het veld **[!UICONTROL Action to execute]** :
 
@@ -35,7 +35,7 @@ Voer eerst een label in voor de activiteit en het veld **[!UICONTROL Action to e
 
   ![](assets/local_validation_intro_2.png)
 
-* **Incrementele vraag**: laat u een vraag uitvoeren en zijn uitvoering plannen. Verwijs naar de [ Incrementele vraag ](incremental-query.md) sectie.
+* **Incrementele vraag**: laat u een vraag uitvoeren en zijn uitvoering plannen. Verwijs naar de [&#x200B; Incrementele vraag &#x200B;](incremental-query.md) sectie.
 
   ![](assets/local_validation_intro_3.png)
 
@@ -51,7 +51,7 @@ De velden die moeten worden ingevuld in het geval van een kennisgeving voor goed
 
 * **[!UICONTROL Distribution context]** : selecteer de optie **[!UICONTROL Specified in the transition]** als u een **[!UICONTROL Split]** -type-activiteit gebruikt om de doelpopulatie te beperken. In dit geval wordt de distributiesjabloon in de splitsingsactiviteit ingevoerd. Als u de doelpopulatie niet beperkt, selecteert u hier de optie **[!UICONTROL Explicit]** en voert u de distributiesjabloon in het veld **[!UICONTROL Data distribution]** in.
 
-  Voor meer bij het creëren van een malplaatje van de gegevensdistributie, verwijs naar [ Beperkend het aantal subsetverslagen per gegevensdistributie ](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Voor meer bij het creëren van een malplaatje van de gegevensdistributie, verwijs naar [&#x200B; Beperkend het aantal subsetverslagen per gegevensdistributie &#x200B;](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
@@ -85,7 +85,7 @@ In het geval van een feedbackrapport voor levering moeten de volgende velden wor
 
 ## Voorbeeld: een workflowlevering goedkeuren {#example--approving-a-workflow-delivery}
 
-In dit voorbeeld wordt getoond hoe u een goedkeuringsproces voor workflowlevering instelt. Voor meer informatie over het creëren van leveringswerkschema&#39;s, verwijs naar het [ Voorbeeld: leveringswerkschema ](delivery.md#example--delivery-workflow) sectie.
+In dit voorbeeld wordt getoond hoe u een goedkeuringsproces voor workflowlevering instelt. Voor meer informatie over het creëren van leveringswerkschema&#39;s, verwijs naar het [&#x200B; Voorbeeld: leveringswerkschema &#x200B;](delivery.md#example--delivery-workflow) sectie.
 
 Een exploitant kan een levering op één van twee manieren goedkeuren: het gebruiken van de Web-pagina verbonden in het e-mailbericht, of via de console.
 

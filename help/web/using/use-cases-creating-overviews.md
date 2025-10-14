@@ -19,11 +19,11 @@ ht-degree: 0%
 
 In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web tot stand brengen om alle toepassingen van het Web in uw gegevensbestand te tonen. Configureer de volgende elementen:
 
-* een filter op de omslag (verwijs naar [ Toevoegend een filter op een omslag ](#adding-a-filter-on-a-folder)),
-* een knoop voor het creëren van een nieuwe toepassing van het Web (verwijs naar [ Toevoegend een knoop om een nieuwe toepassing van het Web ](#adding-a-button-to-configure-a-new-web-application) te vormen),
-* detailvertoning voor elke ingang in de lijst (verwijs naar [ Toevoegend detail aan een lijst ](#adding-detail-to-a-list)),
-* één filter per verbinding het uitgeven hulpmiddel (verwijs naar [ Creërend een filter gebruikend een verbindingsredacteur ](#creating-a-filter-using-a-link-editor)),
-* Vernieuw verbinding (verwijs naar [ Creërend een verfrist verbinding ](#creating-a-refresh-link)).
+* een filter op de omslag (verwijs naar [&#x200B; Toevoegend een filter op een omslag &#x200B;](#adding-a-filter-on-a-folder)),
+* een knoop voor het creëren van een nieuwe toepassing van het Web (verwijs naar [&#x200B; Toevoegend een knoop om een nieuwe toepassing van het Web &#x200B;](#adding-a-button-to-configure-a-new-web-application) te vormen),
+* detailvertoning voor elke ingang in de lijst (verwijs naar [&#x200B; Toevoegend detail aan een lijst &#x200B;](#adding-detail-to-a-list)),
+* één filter per verbinding het uitgeven hulpmiddel (verwijs naar [&#x200B; Creërend een filter gebruikend een verbindingsredacteur &#x200B;](#creating-a-filter-using-a-link-editor)),
+* Vernieuw verbinding (verwijs naar [&#x200B; Creërend een verfrist verbinding &#x200B;](#creating-a-refresh-link)).
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
@@ -171,7 +171,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Voor informatie over elementenlay-out, verwijs naar [ deze sectie ](about-web-forms.md).
+   Voor informatie over elementenlay-out, verwijs naar [&#x200B; deze sectie &#x200B;](about-web-forms.md).
 
 1. Pas **dottedFilter** toe.
 

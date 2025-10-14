@@ -44,11 +44,11 @@ Als u het gedrag van de ontvangers beter wilt weten, kunt u bijhouden hoe zij op
 
 **Uiteinde**: Het volgen van het bericht wordt toegelaten door gebrek. Om URLs te vormen, selecteer de optie van de Vertoning URLs in de lagere sectie van de leveringsmedewerker. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
 
-Voor meer op dit, verwijs naar [ het volgen ](how-to-configure-tracked-links.md) sectie en [ het Volgen indicatoren ](../../reporting/using/delivery-reports.md#tracking-indicators) beschrijving vormen.
+Voor meer op dit, verwijs naar [&#x200B; het volgen &#x200B;](how-to-configure-tracked-links.md) sectie en [&#x200B; het Volgen indicatoren &#x200B;](../../reporting/using/delivery-reports.md#tracking-indicators) beschrijving vormen.
 
 ## Leveringsprestaties {#delivery-performances}
 
-Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de leveringsproductie controleren. De criteria zijn het aantal berichten die per uur worden verzonden en de grootte van de berichten (in beetjes per seconde). Voor meer op dit, zie [ productie van de Levering ](../../reporting/using/global-reports.md#delivery-throughput).
+Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de leveringsproductie controleren. De criteria zijn het aantal berichten die per uur worden verzonden en de grootte van de berichten (in beetjes per seconde). Voor meer op dit, zie [&#x200B; productie van de Levering &#x200B;](../../reporting/using/global-reports.md#delivery-throughput).
 
 **Uiteinden**:
 
@@ -68,4 +68,4 @@ Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optr
 
 * [Leveringsprestaties](delivery-performances.md)
 
-* [ Tijdelijke dossiers kwesties ](../../production/using/temporary-files.md) - *op-gebouw slechts klanten*
+* [&#x200B; Tijdelijke dossiers kwesties &#x200B;](../../production/using/temporary-files.md) - *op-gebouw slechts klanten*

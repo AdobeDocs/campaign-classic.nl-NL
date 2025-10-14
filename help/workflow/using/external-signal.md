@@ -27,9 +27,9 @@ U kunt deze activiteit vormen om gebeurtenissen te bepalen als geen signaal word
 
 ![](assets/edit_signal.png)
 
-De configuratie van verlopen is gedetailleerd in [ Verlopen ](defining-approvals.md).
+De configuratie van verlopen is gedetailleerd in [&#x200B; Verlopen &#x200B;](defining-approvals.md).
 
-Het **gebied van de Vertraging** laat u een vervalvertraging in de eenheden van uw keus specificeren. Zie [ wachten ](wait.md).
+Het **gebied van de Vertraging** laat u een vervalvertraging in de eenheden van uw keus specificeren. Zie [&#x200B; wachten &#x200B;](wait.md).
 
 Elke regel vertegenwoordigt een type vervaldatum en valt samen met een overgang.
 

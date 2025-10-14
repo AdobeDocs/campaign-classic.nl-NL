@@ -27,9 +27,9 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-![](assets/do-not-localize/how-to-video.png) U vindt dit gebruik ook in de vorm van een video. Voor meer op dit, verwijs naar [ Creërend een werkschema ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=nl-NL) video.
+![](assets/do-not-localize/how-to-video.png) U vindt dit gebruik ook in de vorm van een video. Voor meer op dit, verwijs naar [&#x200B; Creërend een werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=nl-NL) video.
 
-Hiertoe maakt u een campagne en klikt u op de tab **[!UICONTROL Targeting and workflows]** . Voor meer op dit, verwijs naar [ Bouwend het belangrijkste doel in een werkschema ](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) sectie.
+Hiertoe maakt u een campagne en klikt u op de tab **[!UICONTROL Targeting and workflows]** . Voor meer op dit, verwijs naar [&#x200B; Bouwend het belangrijkste doel in een werkschema &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) sectie.
 
 Voer vervolgens de volgende stappen uit:
 
@@ -124,7 +124,7 @@ Nadat u de **[!UICONTROL Scheduler]** -activiteit hebt geconfigureerd, zodat de 
 
 ![](assets/birthday-workflow_usecase_2.png)
 
-Het selecteren van ontvangers de waarvan verjaardag aan de huidige datum beantwoordt wordt voorgesteld in [ het identificeren van ontvangers de waarvan verjaardag het ](#identifying-recipients-whose-birthday-it-is) sectie is.
+Het selecteren van ontvangers de waarvan verjaardag aan de huidige datum beantwoordt wordt voorgesteld in [&#x200B; het identificeren van ontvangers de waarvan verjaardag het &#x200B;](#identifying-recipients-whose-birthday-it-is) sectie is.
 
 ### Stap 2: Geef aan of het een schrikkeljaar is {#step-2--select-whether-or-not-it-is-a-leap-year}
 
@@ -204,8 +204,8 @@ Voeg a **Terugkomende die levering** activiteit toe op het malplaatje wordt geba
 
 >[!CAUTION]
 >
->Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagnepakket worden gestart. Voor meer op dit, verwijs naar de [ Lijst van technische werkschema&#39;s ](about-technical-workflows.md) sectie.
+>Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagnepakket worden gestart. Voor meer op dit, verwijs naar de [&#x200B; Lijst van technische werkschema&#39;s &#x200B;](about-technical-workflows.md) sectie.
 >
->Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Voor meer op dit, verwijs naar [ het Kiezen van de processen om ](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) sectie worden goedgekeurd.
+>Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Voor meer op dit, verwijs naar [&#x200B; het Kiezen van de processen om &#x200B;](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) sectie worden goedgekeurd.
 
 ![](assets/birthday-workflow_usecase_1.png)

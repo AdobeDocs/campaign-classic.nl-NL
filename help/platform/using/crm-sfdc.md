@@ -40,10 +40,10 @@ Account gebruikt voor aanmelden bij Salesforce CRM.
 Wachtwoord gebruikt om u aan te melden bij Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Om te weten waar te om uw cliëntherkenningsteken te vinden, verwijs naar deze [ pagina ](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Om te weten waar te om uw cliëntherkenningsteken te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Security token]**
-Om te weten waar te om uw veiligheidstoken te vinden, verwijs naar deze [ pagina ](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Om te weten waar te om uw veiligheidstoken te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API version]**
 Selecteer de versie van de API.
@@ -90,4 +90,4 @@ Als u gegevens wilt synchroniseren tussen Adobe Campaign-gegevens en SFDC, moet 
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-Leer meer over gegevenssynchronisatie [ in deze pagina ](../../platform/using/crm-data-sync.md).
+Leer meer over gegevenssynchronisatie [&#x200B; in deze pagina &#x200B;](../../platform/using/crm-data-sync.md).

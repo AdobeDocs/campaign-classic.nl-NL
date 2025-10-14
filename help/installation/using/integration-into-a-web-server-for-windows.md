@@ -23,7 +23,7 @@ U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen
 
 In dit geval:
 
-* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [ deze sectie ](../../installation/using/configure-tomcat.md).
+* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/configure-tomcat.md).
 * De client consoles maken vervolgens verbinding met een URL zoals ```https:// `<computer>`:8080``` .
 
 Nochtans, voor veiligheid en beleidsredenen, adviseren wij gebruikend een specifieke server van het Web als belangrijkste ingangspunt voor het verkeer van HTTP wanneer de computer die Adobe Campaign in werking stelt op Internet wordt blootgesteld en u wenst om toegang tot de console buiten uw netwerk te openen.
@@ -133,5 +133,5 @@ Bijvoorbeeld, als u het laden van a **Gegevens (dossier)** typeactiviteit in een
 
 In dit geval moet u deze limiet verhogen.
 
-Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;HowTo&quot;sectie van de [ documentatie van Microsoft ](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"} .
+Voor meer informatie over deze optie van Microsoft IIS, verwijs naar de &quot;HowTo&quot;sectie van de [&#x200B; documentatie van Microsoft &#x200B;](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"} .
 

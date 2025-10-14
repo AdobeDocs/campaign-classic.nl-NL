@@ -21,18 +21,18 @@ Als a **Gehoste of Beheerde klant van de Diensten van de Wolk**, informeert Adob
 
 Als **op-gebouw of Hybride klant**, adviseert Adobe hoogst dat u uw systeem en de versies van de Campagne volgens de zelfde kalender bevordert.
 
-Voor veiligheidsredenen, moet u [ de recentste Bouwstijl van de Campagne ](#ac-upgrade) installeren, en dan uw [ werkend systeem ](#os-upgrade) en/of uw [ Systeem van het Beheer van het Gegevensbestand van de Verhouding (RDBMS) ](#pg-upgrade) bevorderen.
+Voor veiligheidsredenen, moet u [&#x200B; de recentste Bouwstijl van de Campagne &#x200B;](#ac-upgrade) installeren, en dan uw [&#x200B; werkend systeem &#x200B;](#os-upgrade) en/of uw [&#x200B; Systeem van het Beheer van het Gegevensbestand van de Verhouding (RDBMS) &#x200B;](#pg-upgrade) bevorderen.
 
 >[!NOTE]
 >
->Voor om het even welke vragen over deze veranderingen, contacteer [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [ verbetering FAQ van de Bouwstijl ](../../platform/using/faq-build-upgrade.md).
+>Voor om het even welke vragen over deze veranderingen, contacteer [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Zie ook de [&#x200B; verbetering FAQ van de Bouwstijl &#x200B;](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Verbetering van campagne-build {#ac-upgrade}
 
 **Heeft dit gevolgen voor u?**
 
-Als u door de [ werkend systeemverbetering ](#os-upgrade) en/of de [ hieronder gedetailleerde verbetering van het gegevensbestandsysteem ](#pg-upgrade) wordt beïnvloed, moet u uw milieu&#39;s van de Campagne aan [ recentste versie 7.3.2 ](../../rn/using/latest-release.md#release-7-3-2) bevorderen, die met deze systemen compatibel is.
+Als u door de [&#x200B; werkend systeemverbetering &#x200B;](#os-upgrade) en/of de [&#x200B; hieronder gedetailleerde verbetering van het gegevensbestandsysteem &#x200B;](#pg-upgrade) wordt beïnvloed, moet u uw milieu&#39;s van de Campagne aan [&#x200B; recentste versie 7.3.2 &#x200B;](../../rn/using/latest-release.md#release-7-3-2) bevorderen, die met deze systemen compatibel is.
 
 **Hoe kan ik bijwerken?**
 
@@ -70,5 +70,5 @@ Als uw gegevensbestandsysteem voor Campagne PostSQL is, om van recentste innovat
 
 * [Upgrade uw omgeving](../../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
-* [ Download de recentste Campaign Classic bouwt ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [&#x200B; Download de recentste Campaign Classic bouwt &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)

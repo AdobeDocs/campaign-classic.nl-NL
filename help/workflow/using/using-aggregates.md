@@ -23,7 +23,7 @@ Met behulp van het volgende proces wordt de aanmaakdatum van ontvangers in de da
 
 Om a **datum van de Aanmaak = max (de datum van de Aanmaak)** typefilter op de ontvangers uit te voeren, moet u een werkschema in werking stellen om deze stappen te volgen:
 
-1. Haal de ontvangers van een database op met behulp van een standaardquery. Voor meer op deze stap, verwijs naar [ Creërend een vraag ](query.md#creating-a-query).
+1. Haal de ontvangers van een database op met behulp van een standaardquery. Voor meer op deze stap, verwijs naar [&#x200B; Creërend een vraag &#x200B;](query.md#creating-a-query).
 1. Bereken de laatste bekende datum een ontvanger werd gecreeerd gebruikend het resultaat dat van **wordt geproduceerd (de datum van de Verwezenlijking)** samenvoegingsfunctie.
 1. Elke ontvanger aan de samenvoegingsfunctie verbinden resulteert in het zelfde schema.
 1. Ontvangers filteren met het aggregaat via het bewerkte schema.

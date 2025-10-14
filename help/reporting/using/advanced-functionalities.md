@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-Als technische gebruiker, naast [ algemene eigenschappen ](../../reporting/using/properties-of-the-report.md), kunt u hefboomwerking geavanceerde mogelijkheden gebruiken om uw rapporten, zoals te vormen:
+Als technische gebruiker, naast [&#x200B; algemene eigenschappen &#x200B;](../../reporting/using/properties-of-the-report.md), kunt u hefboomwerking geavanceerde mogelijkheden gebruiken om uw rapporten, zoals te vormen:
 
 * Creeer complexe vragen om gegevens in de activiteit van het a **Manuscript** te verwerken. [Meer informatie](#script-activity)
 
@@ -36,7 +36,7 @@ U kunt verwijzen naar JavaScript-codes die aan de client- en/of serverzijde word
 
 Dit doet u als volgt:
 
-1. Bewerk de [ rapporteigenschappen ](../../reporting/using/properties-of-the-report.md) en klik **[!UICONTROL Scripts]**.
+1. Bewerk de [&#x200B; rapporteigenschappen &#x200B;](../../reporting/using/properties-of-the-report.md) en klik **[!UICONTROL Scripts]**.
 1. Klik op **[!UICONTROL Add]** en selecteer het script waarnaar moet worden verwezen.
 1. Selecteer vervolgens de uitvoeringsmodus.
 
@@ -48,9 +48,9 @@ Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwez
 
 ### Een scriptactiviteit toevoegen {#script-activity}
 
-Wanneer [ het ontwerpen van uw rapport ](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), gebruik de **[!UICONTROL Script]** activiteit om gegevens te verwerken en gemakkelijk complexe vragen tot stand te brengen die SQL taal niet toelaten. U kunt uw query rechtstreeks invoeren in het scriptvenster.
+Wanneer [&#x200B; het ontwerpen van uw rapport &#x200B;](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), gebruik de **[!UICONTROL Script]** activiteit om gegevens te verwerken en gemakkelijk complexe vragen tot stand te brengen die SQL taal niet toelaten. U kunt uw query rechtstreeks invoeren in het scriptvenster.
 
-Op het tabblad **[!UICONTROL Texts]** kunt u tekstreeksen definiëren. Zij kunnen dan met de volgende syntaxis worden gebruikt: **$ (Herkenningsteken)**. Voor meer bij het gebruiken van teksten, verwijs naar [ Toevoegend een kopbal en footer ](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Op het tabblad **[!UICONTROL Texts]** kunt u tekstreeksen definiëren. Zij kunnen dan met de volgende syntaxis worden gebruikt: **$ (Herkenningsteken)**. Voor meer bij het gebruiken van teksten, verwijs naar [&#x200B; Toevoegend een kopbal en footer &#x200B;](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ Anders worden alleen de huidige gegevens weergegeven.
 
 ## Een URL-parameter toevoegen {#defining-additional-settings}
 
-Het **[!UICONTROL Parameters]** lusje van de [ rapporteigenschappen ](../../reporting/using/properties-of-the-report.md) laat u extra montages voor het rapport bepalen: deze montages zullen in URL tijdens de vraag omhoog worden overgegaan.
+Het **[!UICONTROL Parameters]** lusje van de [&#x200B; rapporteigenschappen &#x200B;](../../reporting/using/properties-of-the-report.md) laat u extra montages voor het rapport bepalen: deze montages zullen in URL tijdens de vraag omhoog worden overgegaan.
 
 >[!CAUTION]
 >

@@ -84,7 +84,7 @@ De configuratie moet op alle servers worden uitgevoerd. De configuratiedossiers 
 
 * **Uitgaande verbindingsbescherming** en **beperking van het Bevel** (server-kant)
 
-* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Verwijs naar de [ documentatie van de de serverconfiguratie van de Campagne ](../../installation/using/configuring-campaign-server.md) en de [ beschrijving van het de configuratiedossier van de Server ](../../installation/using/the-server-configuration-file.md) voor meer informatie.
+* U kunt ook extra HTTP-headers toevoegen, checkIPConsistent activeren, TLS inschakelen, sessionTimeOutSec, enzovoort. Verwijs naar de [&#x200B; documentatie van de de serverconfiguratie van de Campagne &#x200B;](../../installation/using/configuring-campaign-server.md) en de [&#x200B; beschrijving van het de configuratiedossier van de Server &#x200B;](../../installation/using/the-server-configuration-file.md) voor meer informatie.
 
 [Meer informatie](../../installation/using/server-configuration.md)
 

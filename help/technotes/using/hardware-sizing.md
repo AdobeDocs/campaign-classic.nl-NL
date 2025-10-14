@@ -29,16 +29,16 @@ De marketinginstantie is het deel van de Adobe Campaign-architectuur dat alle ma
 >
 >De informatie in dit document is niet van toepassing als u een volledig gehoste Adobe Campaign-instantie gebruikt (geïmplementeerd in Adobe Cloud Servicen).
 
-De verenigbaarheid van de software is gedetailleerd in de [ Matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md).
+De verenigbaarheid van de software is gedetailleerd in de [&#x200B; Matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md).
 
 
 ### Scenarios
 
 De diagrammen van de plaatsing en de aanbevelingen van de hardwarerangschikking worden verstrekt voor drie representatieve scenario&#39;s:
 
-1. [ Matig-Grootte ](#scenario-1) - 5 miljoenen actieve ontvangers in het systeem
-1. [ groot-Grootte ](#scenario-2) - 20 miljoen actieve ontvangers in het systeem
-1. [ Onderneming ](#scenario-3) - 50 miljoen actieve ontvangers, met transactioneel overseinen
+1. [&#x200B; Matig-Grootte &#x200B;](#scenario-1) - 5 miljoenen actieve ontvangers in het systeem
+1. [&#x200B; groot-Grootte &#x200B;](#scenario-2) - 20 miljoen actieve ontvangers in het systeem
+1. [&#x200B; Onderneming &#x200B;](#scenario-3) - 50 miljoen actieve ontvangers, met transactioneel overseinen
 
 ### Veronderstellingen
 
@@ -150,7 +150,7 @@ De toepassingsservers ondersteunen rechtstreeks de gebruikers van de Campagne Co
 
 De servers van het Web ontvangen het Webtoepassingen van de Campagne die de 10 miljoen actieve ontvangers in het systeem steunen.
 
-Verwijs naar [ Scenario 1: Matige-Grootte Plaatsing ](#scenario-1) voor meer commentaren op volmachten, voorkeurscentra/abonnement behandeling, en schijfruimtegebruik.
+Verwijs naar [&#x200B; Scenario 1: Matige-Grootte Plaatsing &#x200B;](#scenario-1) voor meer commentaren op volmachten, voorkeurscentra/abonnement behandeling, en schijfruimtegebruik.
 
 ### Database
 
@@ -178,7 +178,7 @@ Geraamd volume:
 | Maximale dagelijkse e-mailvolume | 2,5 miljoen |
 
 
-De plaatsing die 50 miljoen ontvangers steunt is hoofdzakelijk het zelfde zoals aangetoond in [ Scenario 2 ](#scenario-2): Het verkeer van de het Webtoepassing van de campagne wordt verpletterd aan het Webservers van de Campagne, zodat de uitbarstingen van Webverkeer na grote campagnelanceringen niet de werkschema&#39;s van de Campagne en de gebruikers van de Console van de Cliënt beïnvloeden.
+De plaatsing die 50 miljoen ontvangers steunt is hoofdzakelijk het zelfde zoals aangetoond in [&#x200B; Scenario 2 &#x200B;](#scenario-2): Het verkeer van de het Webtoepassing van de campagne wordt verpletterd aan het Webservers van de Campagne, zodat de uitbarstingen van Webverkeer na grote campagnelanceringen niet de werkschema&#39;s van de Campagne en de gebruikers van de Console van de Cliënt beïnvloeden.
 
 Deze plaatsing omvat ook de vraag van het Centrum van het Bericht, die van uw eigen websites en toepassingen wordt gedreven.
 
@@ -198,7 +198,7 @@ De toepassingsservers ondersteunen rechtstreeks de gebruikers van de Campagne Co
 
 De servers van het Web ontvangen het Webtoepassingen van de Campagne die de 10 miljoen actieve ontvangers in het systeem steunen.
 
-Verwijs naar [ Scenario 1: Matige-Grootte Plaatsing ](#scenario-1) voor meer commentaren op volmachten, voorkeurscentra/abonnement behandeling, en schijfruimtegebruik.
+Verwijs naar [&#x200B; Scenario 1: Matige-Grootte Plaatsing &#x200B;](#scenario-1) voor meer commentaren op volmachten, voorkeurscentra/abonnement behandeling, en schijfruimtegebruik.
 
 ### Database
 
@@ -253,7 +253,7 @@ Gegroepeerde servers, bijvoorbeeld, overtollige toepassingsservers onder een lad
 Elke aanbevolen RAID-configuratie moet worden onderhouden voor databasebeveiliging, om te voorkomen dat gegevensverlies optreedt bij een opslagapparaat.
 
 * **I/O Prestaties**
-De aanbevolen IOPS-classificatie voor databaseopslag moet in acht worden genomen. Cloudservices zoals Amazon EC2 leveren mogelijk niet de vereiste prestaties en moeten zorgvuldig worden geëvalueerd. De Amazon EC2-volumes voor SSD-voorzieningen worden momenteel bijvoorbeeld op elk 20.000 IOPS beoordeeld. Leer meer in [ documentatie van Amazon ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), zodat zou een 4 volumeConfiguratie van de INVAL bij 80.000 IOPS worden geschat, die niet voldoende kan zijn.
+De aanbevolen IOPS-classificatie voor databaseopslag moet in acht worden genomen. Cloudservices zoals Amazon EC2 leveren mogelijk niet de vereiste prestaties en moeten zorgvuldig worden geëvalueerd. De Amazon EC2-volumes voor SSD-voorzieningen worden momenteel bijvoorbeeld op elk 20.000 IOPS beoordeeld. Leer meer in [&#x200B; documentatie van Amazon &#x200B;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), zodat zou een 4 volumeConfiguratie van de INVAL bij 80.000 IOPS worden geschat, die niet voldoende kan zijn.
 
 Adobe raadt aan om voor elke gevirtualiseerde implementatie van Adobe Campaign prestatietests uit te voeren voordat het systeem in productie wordt genomen.
 

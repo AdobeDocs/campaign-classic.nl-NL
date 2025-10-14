@@ -31,21 +31,21 @@ De gegevens van de Adobe Campaign-databank en de bestaande lijsten kunnen worden
 
   ![](assets/s_user_create_list.png)
 
-  Verwijs naar [ update van de Lijst ](list-update.md).
+  Verwijs naar [&#x200B; update van de Lijst &#x200B;](list-update.md).
 
 * De **[!UICONTROL Update data]** -activiteit voert een massa-update uit van de velden in de database.
 
-  Voor meer op dit, verwijs naar [ gegevens van de Update ](update-data.md).
+  Voor meer op dit, verwijs naar [&#x200B; gegevens van de Update &#x200B;](update-data.md).
 
 ### Abonnementsbeheer/Abonnementsbeheer {#subscription-unsubscription-management}
 
-Om te weten te komen over het intekenen van en het opzeggen van ontvangers aan de informatiedienst via een werkschema, verwijs naar [ Diensten van het Abonnement ](subscription-services.md).
+Om te weten te komen over het intekenen van en het opzeggen van ontvangers aan de informatiedienst via een werkschema, verwijs naar [&#x200B; Diensten van het Abonnement &#x200B;](subscription-services.md).
 
 ## Verzenden via een workflow {#sending-via-a-workflow}
 
 ### Leveringsactiviteit {#delivery-activity}
 
-De leveringsactiviteit is gedetailleerd in [ Levering ](delivery.md).
+De leveringsactiviteit is gedetailleerd in [&#x200B; Levering &#x200B;](delivery.md).
 
 ### Verrijking en gerichtheid van leveringen {#enriching-and-targeting-deliveries}
 
@@ -59,7 +59,7 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de werkschemalijst worden geïdentificeerd door zijn naam: het wordt altijd samengesteld uit de **targetData** verbinding. Voor meer op dit, verwijs naar [ gegevens van het Doel ](data-life-cycle.md#target-data).
+De gegevens in de werkschemalijst worden geïdentificeerd door zijn naam: het wordt altijd samengesteld uit de **targetData** verbinding. Voor meer op dit, verwijs naar [&#x200B; gegevens van het Doel &#x200B;](data-life-cycle.md#target-data).
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 

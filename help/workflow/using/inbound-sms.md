@@ -33,4 +33,4 @@ Het eerste lusje van de **Binnenkomende activiteit van SMS** laat u de verplette
 
 1. **[!UICONTROL Expiration]**
 
-De **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** lusjes zijn gedetailleerd in [ Binnenkomende E-mail ](inbound-emails.md).
+De **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** lusjes zijn gedetailleerd in [&#x200B; Binnenkomende E-mail &#x200B;](inbound-emails.md).

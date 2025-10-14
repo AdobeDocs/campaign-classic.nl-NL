@@ -25,12 +25,12 @@ Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de rege
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) om zich met de interactiefunctie en de terminologieën vertrouwd te maken die in de Interactie van de Campagne worden gebruikt, op [ deze video ](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) letten.
+![](assets/do-not-localize/how-to-video.png) om zich met de interactiefunctie en de terminologieën vertrouwd te maken die in de Interactie van de Campagne worden gebruikt, op [&#x200B; deze video &#x200B;](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) letten.
 
 ## Verwante onderwerpen
 
 | Nuttige pagina’s | Aanvullende bronnen |
 |---|---|
-| [ de implementatiestappen van de Interactie ](../../interaction/using/implementation-steps.md) | [ het testen aanbiedingsdistributie ](../../interaction/using/about-offers-simulation.md) |
-| [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) | [ Toevoegend een aanbieding in e-mail ](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Aanbiedingsplaatsingen maken](../../interaction/using/creating-offer-spaces.md) | [ geval van het Gebruik: voeg een aanbieding in een website toe ](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [&#x200B; de implementatiestappen van de Interactie &#x200B;](../../interaction/using/implementation-steps.md) | [&#x200B; het testen aanbiedingsdistributie &#x200B;](../../interaction/using/about-offers-simulation.md) |
+| [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) | [&#x200B; Toevoegend een aanbieding in e-mail &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [Aanbiedingsplaatsingen maken](../../interaction/using/creating-offer-spaces.md) | [&#x200B; geval van het Gebruik: voeg een aanbieding in een website toe &#x200B;](../../interaction/using/offers-on-an-inbound-channel.md) |

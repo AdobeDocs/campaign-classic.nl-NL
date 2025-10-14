@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Transactioneel berichtengegevensmodel {#about-transactional-messaging-datamodel}
 
-Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [ lijsten ](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten de zelfde gebieden en laten u gebeurtenissen in real time aan de ene kant, en partijgebeurtenissen aan de andere kant beheren.
+Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [&#x200B; lijsten &#x200B;](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten de zelfde gebieden en laten u gebeurtenissen in real time aan de ene kant, en partijgebeurtenissen aan de andere kant beheren.
 
 ## SOAP {#soap-methods}
 
@@ -36,7 +36,7 @@ Het WSDL-pad voor toegang tot beide methoden is:
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** om tot het typeschema in real time toegang te hebben.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** om tot het batchtypeschema toegang te hebben.
 
-Voor meer bij het produceren van een dossier van WSDL, zie [ deze sectie ](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+Voor meer bij het produceren van een dossier van WSDL, zie [&#x200B; deze sectie &#x200B;](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Beide methoden bevatten een **`<urn:sessiontoken>`** -element voor het aanmelden bij de module voor transactieberichten. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een opening van een sessie SOAP vraag uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
 

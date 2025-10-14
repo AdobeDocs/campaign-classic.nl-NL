@@ -20,7 +20,7 @@ Als u de aangewezen rechten hebt, kunt u een analyserapport bewaren dat van een 
 
 Als u uw rapport wilt opslaan, klikt u op **[!UICONTROL Save]** en geeft u het rapport een label.
 
-Selecteer **[!UICONTROL Also save data]** als u een historie van uw rapport wilt maken en de waarden van het rapport wilt zien op het moment van opslaan. Voor meer op dit, verwijs naar [ de analyserapporten van het Archief ](#archiving-analysis-reports).
+Selecteer **[!UICONTROL Also save data]** als u een historie van uw rapport wilt maken en de waarden van het rapport wilt zien op het moment van opslaan. Voor meer op dit, verwijs naar [&#x200B; de analyserapporten van het Archief &#x200B;](#archiving-analysis-reports).
 
 Met de optie **[!UICONTROL Share this report]** hebben andere operatoren toegang tot het rapport.
 
@@ -30,7 +30,7 @@ Zodra het is bewaard, kan dit rapport worden opnieuw gebruikt om andere analyser
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Als u wijzigingen in dit rapport wilt aanbrengen, bewerkt u het knooppunt **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** van de Adobe Campaign-structuur (of de eerste map van het type &#39;Reports&#39; waarvoor de operator bewerkingsrechten heeft). Voor meer op dit, verwijs naar [ vorm de lay-out van een beschrijvend analyserapport ](#configuring-the-layout-of-a-descriptive-analysis-report).
+Als u wijzigingen in dit rapport wilt aanbrengen, bewerkt u het knooppunt **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** van de Adobe Campaign-structuur (of de eerste map van het type &#39;Reports&#39; waarvoor de operator bewerkingsrechten heeft). Voor meer op dit, verwijs naar [&#x200B; vorm de lay-out van een beschrijvend analyserapport &#x200B;](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Aanvullende instellingen voor analyserapport {#analysis-report-additional-settings}
 
@@ -38,7 +38,7 @@ Nadat u een beschrijvend analyserapport hebt opgeslagen, kunt u de eigenschappen
 
 ![](assets/s_ncs_user_report_wizard_08b.png)
 
-Deze opties zijn het zelfde als standaardrapporten en in [ gedetailleerd deze pagina ](../../reporting/using/properties-of-the-report.md).
+Deze opties zijn het zelfde als standaardrapporten en in [&#x200B; gedetailleerd deze pagina &#x200B;](../../reporting/using/properties-of-the-report.md).
 
 ## De lay-out van een beschrijvend analyserapport configureren {#configuring-the-layout-of-a-descriptive-analysis-report}
 
@@ -126,7 +126,7 @@ Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md) voor meer i
 
 U kunt beschrijvende analyserapporten over gegevens maken aan de hand van bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de beschrijvende analyseassistent.
 
-Om te weten te komen hoe te om beschrijvende analyses te bewaren, verwijs naar [ het Opslaan van een analyserapport ](#saving-an-analysis-report).
+Om te weten te komen hoe te om beschrijvende analyses te bewaren, verwijs naar [&#x200B; het Opslaan van een analyserapport &#x200B;](#saving-an-analysis-report).
 
 Als u beschrijvende analyserapporten wilt maken, moet de beschrijvende analyseassistent worden uitgevoerd via een workflowovergang of via het menu **[!UICONTROL Tools > Descriptive analysis]** .
 

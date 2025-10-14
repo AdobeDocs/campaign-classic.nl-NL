@@ -81,17 +81,17 @@ De gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) laten de uitwisseling van g
 
 >[!CAUTION]
 >
->In het geval van [ AND-sluit zich ](and-join.md) typeactiviteiten aan, worden de variabelen samengevoegd maar als een zelfde variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
+>In het geval van [&#x200B; AND-sluit zich &#x200B;](and-join.md) typeactiviteiten aan, worden de variabelen samengevoegd maar als een zelfde variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
 
 Gebeurtenissen zijn de meest gebruikte variabelen en moeten bij voorkeur worden gebruikt in plaats van instantievariabelen.
 
-Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de variabele **[!UICONTROL vars.filename]** ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [ Ongeveer activiteiten ](about-activities.md), in de secties **parameters van de Input** en **parameters van de Output** van de activiteiten.
+Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de variabele **[!UICONTROL vars.filename]** ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [&#x200B; Ongeveer activiteiten &#x200B;](about-activities.md), in de secties **parameters van de Input** en **parameters van de Output** van de activiteiten.
 
 ### Gebruiksscenario’s {#example}
 
 >[!NOTE]
 >
->De extra gevallen van het werkschemagebruik zijn beschikbaar in [ deze sectie ](about-workflow-use-cases.md).
+>De extra gevallen van het werkschemagebruik zijn beschikbaar in [&#x200B; deze sectie &#x200B;](about-workflow-use-cases.md).
 
 **Voorbeeld 1**
 
@@ -198,4 +198,4 @@ De meeste eigenschappen van activiteiten kunnen dynamisch worden berekend, of ge
 Voor andere eigenschappen moet u het initialisatiescript echter gebruiken. Dit script wordt geëvalueerd voordat de taak wordt uitgevoerd. De variabele **[!UICONTROL activity]** verwijst naar de activiteit die overeenkomt met de taak. De eigenschappen van deze activiteit kunnen worden gewijzigd en zullen slechts deze taak beïnvloeden.
 
 **Verwante onderwerpen**
-[ Voorbeelden van code van JavaScript in werkschema&#39;s ](javascript-in-workflows.md)
+[&#x200B; Voorbeelden van code van JavaScript in werkschema&#39;s &#x200B;](javascript-in-workflows.md)

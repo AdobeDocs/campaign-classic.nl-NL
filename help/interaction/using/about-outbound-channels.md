@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Aanbiedingen kunnen in diverse ruimten worden voorgesteld gebruikend binnenkomende of uitgaande kanalen. In dit hoofdstuk worden de uitgaande kanalen beschreven.
 
-![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) dat details hoe te om een aanbieding op een uitgaand kanaal te leveren.
+![](assets/do-not-localize/how-to-video.png) U kunt dit ook bekijken [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) dat details hoe te om een aanbieding op een uitgaand kanaal te leveren.
 
 Om een aanbieding door de aanbiedingsmotor te kunnen selecteren, moet deze zijn goedgekeurd en beschikbaar zijn in een levende omgeving. Raadpleeg voor meer informatie hierover [Aanbiedingen goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md).
 

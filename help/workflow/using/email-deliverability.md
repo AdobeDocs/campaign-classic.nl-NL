@@ -17,7 +17,7 @@ ht-degree: 2%
 
 
 
-De hieronder gedetailleerde workflow wordt standaard op alle instanties geïnstalleerd en u kunt de lijst met regels voor stuiterende mailkwalificatie, de lijst met domeinen en de lijst met MX&#39;s initialiseren. Zodra het **controle van de Leverbaarheid (E-mailLeverbaarheid)** pakket geïnstalleerd is, dit werkschemalooppas. Voor meer bij de controle van de Leverbaarheid, verwijs naar deze [ sectie ](../../delivery/using/about-deliverability.md).
+De hieronder gedetailleerde workflow wordt standaard op alle instanties geïnstalleerd en u kunt de lijst met regels voor stuiterende mailkwalificatie, de lijst met domeinen en de lijst met MX&#39;s initialiseren. Zodra het **controle van de Leverbaarheid (E-mailLeverbaarheid)** pakket geïnstalleerd is, dit werkschemalooppas. Voor meer bij de controle van de Leverbaarheid, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 

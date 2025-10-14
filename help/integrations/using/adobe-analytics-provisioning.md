@@ -26,7 +26,7 @@ De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie onder
 
 * Als u een gemigreerde externe account beheert, moet u Adobe IMS implementeren en verbinding maken met Adobe Campaign via een Adobe ID.
 
-  Gelieve te merken op dat de gebruiker die via Adobe ID IMS het programma wordt geopend de eigenaar van de **schakelaar van Gegevens** rekening in Adobe Analytics moet zijn en toestemmingen voor het **genoemde profiel van het Product** [ hieronder ](#analytics-product-profile) heeft.
+  Gelieve te merken op dat de gebruiker die via Adobe ID IMS het programma wordt geopend de eigenaar van de **schakelaar van Gegevens** rekening in Adobe Analytics moet zijn en toestemmingen voor het **genoemde profiel van het Product** [&#x200B; hieronder &#x200B;](#analytics-product-profile) heeft.
 
 Het probleem was dat de eigenaar van de gegevensconnector een andere gebruiker was dan de gebruiker die was aangemeld bij Campagne en die de integratie met Analytics probeerde uit te voeren.
 
@@ -38,7 +38,7 @@ Deze integratie werkt alleen als u een Adobe Analytics-productprofiel maakt dat 
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, moeten de integratie van de Campagne met de oplossingen en apps van Adobe nu op de referentie van Server-aan-Server van OAuth vertrouwen. </br>
 >
-> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](oauth-technical-account.md) zullen tot 30 juni, 2025 blijven werken.</br>
+> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [&#x200B; wordt gedetailleerd deze documentatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [&#x200B; geloofsbrieven van de Rekening van de Dienst (JWT) &#x200B;](oauth-technical-account.md) zullen tot 30 juni, 2025 blijven werken.</br>
 >
 > * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of integratie met Experience Cloud Triggers, zullen ze tot 30 juni 2025 blijven werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan OAuth.
 
@@ -48,9 +48,9 @@ Het Profiel van het product bepaalt het niveau van toegang een gebruiker op uw v
 
 Als u al een productprofiel voor Analytics hebt, moet u nog steeds een nieuw Adobe Analytics-productprofiel maken dat uitsluitend wordt gebruikt voor de Analytics-connector. Zo zorgt u ervoor dat uw productprofiel is ingesteld met de juiste machtigingen voor deze integratie.
 
-Voor meer informatie over de profielen van het Product, verwijs naar de [ documentatie van de Admin console ](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Voor meer informatie over de profielen van het Product, verwijs naar de [&#x200B; documentatie van de Admin console &#x200B;](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. Van de [ console Admin ](https://adminconsole.adobe.com/), selecteer uw Adobe Analytics **[!UICONTROL Product]**.
+1. Van de [&#x200B; console Admin &#x200B;](https://adminconsole.adobe.com/), selecteer uw Adobe Analytics **[!UICONTROL Product]**.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -68,11 +68,11 @@ Voor meer informatie over de profielen van het Product, verwijs naar de [ docume
 
 1. Configureer de verschillende mogelijkheden door op **[!UICONTROL Edit]** te klikken en de machtigingen die aan de **[!UICONTROL Product profile]** -functie moeten worden toegewezen te selecteren door op de plusknop (+) te klikken.
 
-   Voor meer informatie over hoe te om toestemmingen te beheren, verwijs naar de [ documentatie van de Admin console ](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Voor meer informatie over hoe te om toestemmingen te beheren, verwijs naar de [&#x200B; documentatie van de Admin console &#x200B;](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
 1. Voor de **[!UICONTROL Report Suites]** mogelijkheid voegt u **[!UICONTROL Report Suites]** toe die u later moet gebruiken.
 
-   Als u geen rapportsuites hebt, kunt u het na [ tot stand brengen deze stappen ](../../integrations/using/gs-aa.md).
+   Als u geen rapportsuites hebt, kunt u het na [&#x200B; tot stand brengen deze stappen &#x200B;](../../integrations/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -110,8 +110,8 @@ Uw productprofiel is nu geconfigureerd. Vervolgens moet u het OAuth-project make
 
 Als u verder wilt gaan met het configureren van uw Adobe Analytics-connector, opent u de Adobe Developer-console en maakt u uw OAuth Server-to-Server-project.
 
-Verwijs naar [ deze pagina ](oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
+Verwijs naar [&#x200B; deze pagina &#x200B;](oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
 
 ## Configuratie en gebruik {#adobe-analytics-connector-usage}
 
-Leer hoe te met Adobe Campaign en Adobe Analytics in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} te werken.
+Leer hoe te met Adobe Campaign en Adobe Analytics in [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} te werken.

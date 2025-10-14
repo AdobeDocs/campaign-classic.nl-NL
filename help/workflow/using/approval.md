@@ -65,7 +65,7 @@ Klik op de koppeling **[!UICONTROL Advanced parameters...]** om de leveringssjab
 
 Deze sjabloon kan worden gewijzigd om de berichtlay-out aan te passen, maar u kunt het beste een kopie maken. Het doelmechanisme (extern bestand, doeltoewijzing) mag niet worden gewijzigd omdat meldingen correct moeten werken.
 
-Een goedkeuringsvoorbeeld wordt getoond in [ die goedkeuringen ](defining-approvals.md) bepalen.
+Een goedkeuringsvoorbeeld wordt getoond in [&#x200B; die goedkeuringen &#x200B;](defining-approvals.md) bepalen.
 
 ## Uitvoerparameters {#output-parameters}
 

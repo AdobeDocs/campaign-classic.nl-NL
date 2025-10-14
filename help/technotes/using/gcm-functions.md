@@ -143,7 +143,7 @@ Decrypteert een koord van karakters met de sleutel van de instantie of een ander
 
 **waarde van de Terugkeer**: Keert het gedecrypteerde karakterkoord terug.
 
-**Waarschuwing**: De wachtwoorden die in het gegevensbestand (opties/externe rekeningen) worden opgeslagen kunnen niet meer door het gebruik van deze methode worden gedecrypteerd. Voor dat, gebruik [ decryptPassword ](#decryptPassword-javascript).
+**Waarschuwing**: De wachtwoorden die in het gegevensbestand (opties/externe rekeningen) worden opgeslagen kunnen niet meer door het gebruik van deze methode worden gedecrypteerd. Voor dat, gebruik [&#x200B; decryptPassword &#x200B;](#decryptPassword-javascript).
 
 ### decryptPassword() {#decryptPassword-javascript}
 

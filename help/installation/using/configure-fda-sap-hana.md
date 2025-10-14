@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-De optie van de Toegang van Gegevens van de Campagne van het gebruik [ Federated ](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot SAP HANA te configureren.
+De optie van de Toegang van Gegevens van de Campagne van het gebruik [&#x200B; Federated &#x200B;](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot SAP HANA te configureren.
 
-1. Vorm [ gegevensbestand van het SAP HANA ](#sap-config)
-1. Vorm de SAP HANA [ externe rekening ](#sap-external) in Campagne
+1. Vorm [&#x200B; gegevensbestand van het SAP HANA &#x200B;](#sap-config)
+1. Vorm de SAP HANA [&#x200B; externe rekening &#x200B;](#sap-external) in Campagne
 
 ## SAPPEN HANA {#sap-config}
 

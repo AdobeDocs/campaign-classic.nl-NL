@@ -23,10 +23,10 @@ ht-degree: 0%
 >
 >* De LDAP-configuratie is alleen mogelijk voor installaties op locatie of voor hybride installaties.
 >
->* Zorg ervoor dat uw systeem en uw open versies met Campagne in de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md) compatibel zijn. Verouderde versies kunnen invloed hebben op uw LDAP-verificatie.
+>* Zorg ervoor dat uw systeem en uw open versies met Campagne in de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md) compatibel zijn. Verouderde versies kunnen invloed hebben op uw LDAP-verificatie.
 >
 
-De LDAP-configuratie wordt uitgevoerd in de implementatietovenaar. De optie **[!UICONTROL LDAP integration]** moet tijdens de eerste configuratiestatus worden geselecteerd. Verwijs naar [ plaatsingstovenaar ](../../installation/using/deploying-an-instance.md#deployment-assistant).
+De LDAP-configuratie wordt uitgevoerd in de implementatietovenaar. De optie **[!UICONTROL LDAP integration]** moet tijdens de eerste configuratiestatus worden geselecteerd. Verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 In het venster kunt u de identificatie van Adobe Campaign-gebruikers configureren via de opgegeven LDAP-directory.
 
@@ -49,7 +49,7 @@ In het venster kunt u de identificatie van Adobe Campaign-gebruikers configurere
 
    * Wachtwoord voor normale tekst - Geen versleuteling (alleen voor gebruik in testfasen).
 
-* Selecteer de wijze van de gebruikersauthentificatie: **[!UICONTROL Automatically compute the unique user identifier]** (zie stap [ Distinguished Name berekening ](#distinguished-name-calculation)) of **[!UICONTROL Search the unique user identifier in the directory]** (zie stap [ die naar herkenningstekens ](#searching-for-identifiers) zoekt).
+* Selecteer de wijze van de gebruikersauthentificatie: **[!UICONTROL Automatically compute the unique user identifier]** (zie stap [&#x200B; Distinguished Name berekening &#x200B;](#distinguished-name-calculation)) of **[!UICONTROL Search the unique user identifier in the directory]** (zie stap [&#x200B; die naar herkenningstekens &#x200B;](#searching-for-identifiers) zoekt).
 
 ## Compatibiliteit {#compatibility}
 

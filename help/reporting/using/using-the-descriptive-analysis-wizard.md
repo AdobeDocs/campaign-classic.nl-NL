@@ -46,21 +46,21 @@ Open de beschrijvende analyseassistent door items te selecteren en met de rechte
 
   Als u alle ontvangers in de map of het huidige filter wilt selecteren, gebruikt u de sneltoets CTRL+A. Dit betekent dat zelfs ontvangers die niet worden weergegeven, worden geselecteerd.
 
-  Voor een voorbeeld van de beschrijvende analyse van ontvangers, verwijs naar: [ de Kwalitatieve gegevensanalyse ](../../reporting/using/use-cases.md#qualitative-data-analysis).
+  Voor een voorbeeld van de beschrijvende analyse van ontvangers, verwijs naar: [&#x200B; de Kwalitatieve gegevensanalyse &#x200B;](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* In de context van a **werkschema**, plaats de curseur op een overgang die naar de lijst van ontvangers richt, klik met de rechtermuisknop aan en selecteer **[!UICONTROL Analyze target]**. Voor meer op dit, verwijs naar het voorbeeld in [ een overgangsdoel in een werkschema ](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow) analyseren.
+* In de context van a **werkschema**, plaats de curseur op een overgang die naar de lijst van ontvangers richt, klik met de rechtermuisknop aan en selecteer **[!UICONTROL Analyze target]**. Voor meer op dit, verwijs naar het voorbeeld in [&#x200B; een overgangsdoel in een werkschema &#x200B;](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow) analyseren.
 * Voor **lijsten**, selecteer één of meerdere lijsten en pas het zelfde proces zoals voor ontvangers toe.
 * In de context van a **levering**, selecteer de leveringen het waarvan doel u wilt analyseren, met de rechtermuisknop aanklikken en selecteren **[!UICONTROL Actions > Explore the target]**, zoals hieronder getoond:
 
   ![](assets/reporting_descriptive_from_deliveries.png)
 
-  De voorbeelden van beschrijvende analyses voor leveringen worden hier verstrekt: [ analyseren een bevolking ](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [ analyseren ontvankelijke volgende logboeken ](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+  De voorbeelden van beschrijvende analyses voor leveringen worden hier verstrekt: [&#x200B; analyseren een bevolking &#x200B;](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [&#x200B; analyseren ontvankelijke volgende logboeken &#x200B;](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## De sjabloon voor kwalitatieve distributie configureren {#configuring-the-qualitative-distribution-template}
 
 Met de sjabloon **[!UICONTROL Qualitative distribution]** kunt u statistieken maken over alle typen gegevens (bijvoorbeeld de bedrijfsnaam, het e-maildomein).
 
-De opties van de configuratie beschikbaar voor een rapport dat via het **[!UICONTROL Qualitative distribution]** malplaatje wordt gecreeerd zijn gedetailleerd in [ gegevens van de Vertoning in de lijst ](#displaying-data-in-the-table). Een volledig voorbeeld wordt gedetailleerd in [ analyseert een bevolking ](../../reporting/using/use-cases.md#analyzing-a-population).
+De opties van de configuratie beschikbaar voor een rapport dat via het **[!UICONTROL Qualitative distribution]** malplaatje wordt gecreeerd zijn gedetailleerd in [&#x200B; gegevens van de Vertoning in de lijst &#x200B;](#displaying-data-in-the-table). Een volledig voorbeeld wordt gedetailleerd in [&#x200B; analyseert een bevolking &#x200B;](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Wanneer u de beschrijvende analyseassistent gebruikt om uw gegevens te analyseren, zijn de beschikbare opties afhankelijk van de gekozen instellingen. Deze worden hieronder beschreven.
 
@@ -113,7 +113,7 @@ Gebruik de werkbalk om de weergave van variabelen in de tabel aan te passen: ver
 
 In het bovenste gedeelte van het venster kunt u de weergave-instellingen selecteren.
 
-U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de richting van de statistieken kiezen. Voor meer op dit, verwijs naar [ montages van de het rapportvertoning van de Analyse ](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
+U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de richting van de statistieken kiezen. Voor meer op dit, verwijs naar [&#x200B; montages van de het rapportvertoning van de Analyse &#x200B;](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
 ### Gegevens weergeven in het diagram {#displaying-data-in-the-chart}
 
@@ -231,4 +231,4 @@ De volgende bewerkingen zijn mogelijk:
 
   ![](assets/reporting_descriptive_view_report.png)
 
-  Om veranderingen in het rapport aan te brengen, verwijs naar [ Proces een rapport ](../../reporting/using/processing-a-report.md).
+  Om veranderingen in het rapport aan te brengen, verwijs naar [&#x200B; Proces een rapport &#x200B;](../../reporting/using/processing-a-report.md).

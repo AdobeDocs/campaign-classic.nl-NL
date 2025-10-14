@@ -29,7 +29,7 @@ Bij vluchtuitvoeringen zijn alle stadia die goedkeuring vereisen, gebaseerd op h
 
 ![](assets/validation-1-in-op.png)
 
-De voorbeelden van de goedkeuring kunnen in [ worden gevonden deze sectie ](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+De voorbeelden van de goedkeuring kunnen in [&#x200B; worden gevonden deze sectie &#x200B;](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Een exploitant kan op één van twee manieren antwoorden: het bevestigen gebruikend de Web-pagina verbonden in het e-mailbericht, of via de console.
 
@@ -41,7 +41,7 @@ Een exploitant kan op één van twee manieren antwoorden: het bevestigen gebruik
 
 Het is mogelijk om een goedkeuringsbericht te ontvangen die een verbinding met een Web-pagina bevat waarmee het mogelijk is te antwoorden. Voor de beoogde exploitant om een goedkeuringse-mail te ontvangen, moet het exploitant e-mailadres volledig zijn. Als dit niet het geval is, moet de exploitant de console gebruiken om te antwoorden
 
-Het beheer van de exploitant wordt gedetailleerd in deze [ sectie ](../../platform/using/access-management.md).
+Het beheer van de exploitant wordt gedetailleerd in deze [&#x200B; sectie &#x200B;](../../platform/using/access-management.md).
 
 Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]** : deze wordt opgeslagen in de map **[!UICONTROL Administration > Campaign management > Technical delivery templates]** . Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
 
@@ -60,7 +60,7 @@ Voor technische workflows kunt u de taken die de gebruiker kan goedkeuren, opene
 Een goedkeuring wordt toegekend aan een groep operatoren, één exploitant of een reeks operatoren die via een filtervoorwaarde zijn geselecteerd.
 
 1. Voor de eenvoudigste vorm van goedkeuring, wordt de taak gebeëindigd zodra een exploitant antwoordt. Elke andere exploitant die probeert te reageren, wordt op de hoogte gebracht dat iemand het al heeft gedaan.
-1. Voor veelvoudige goedkeuringen, verwijs naar [ Veelvoudige goedkeuring ](#multiple-approval).
+1. Voor veelvoudige goedkeuringen, verwijs naar [&#x200B; Veelvoudige goedkeuring &#x200B;](#multiple-approval).
 
 De groepen van marktdeelnemers voor goedkeuringen moeten worden aangewezen als rollen of functies in plaats van als benoemde personen. Een groep ‘Campagne budget’ verdient bijvoorbeeld de voorkeur boven &#39;Harry&#39;s group&#39;. We raden aan ten minste twee personen in een groep te hebben die een taak kunnen goedkeuren. Op deze manier, als één afwezig is, kan de andere antwoorden.
 

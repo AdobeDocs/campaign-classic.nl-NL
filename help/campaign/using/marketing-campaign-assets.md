@@ -22,7 +22,7 @@ U kunt verschillende documenten aan een campagne koppelen: rapporten, foto&#39;s
 >
 >Deze mogelijkheid is gereserveerd voor kleine elementen en documenten.
 
-In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een bepaald merk of een bepaalde winkel, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. Zie [ verbind en structuurmiddelen die via een leveringsoverzicht ](#associating-and-structuring-resources-linked-via-a-delivery-outline) worden verbonden.
+In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een bepaald merk of een bepaalde winkel, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. Zie [&#x200B; verbind en structuurmiddelen die via een leveringsoverzicht &#x200B;](#associating-and-structuring-resources-linked-via-a-delivery-outline) worden verbonden.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Als u een omtrek wilt maken, klikt u op het subtabblad **[!UICONTROL Delivery ou
 >
 >Als dit tabblad niet aanwezig is, is deze functie niet beschikbaar voor deze campagne. Verwijs naar de configuratie van het campagnemalplaatje.
 >   
->Voor meer op malplaatjes, verwijs naar [ deze sectie ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Voor meer op malplaatjes, verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -103,7 +103,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
   >[!NOTE]
   >
-  >Voor meer op marketing middelen, verwijs naar [ deze sectie ](../../mrm/using/managing-marketing-resources.md).
+  >Voor meer op marketing middelen, verwijs naar [&#x200B; deze sectie &#x200B;](../../mrm/using/managing-marketing-resources.md).
 
 ### Een omtrek selecteren {#selecting-an-outline}
 
@@ -127,8 +127,8 @@ In het volgende voorbeeld worden het label, de geschatte kosten en de beschrijvi
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [ deze sectie ](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [&#x200B; deze sectie &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
->Voor meer op de uitvoer, verwijs naar [ deze sectie ](../../platform/using/get-started-data-import-export.md) sectie.
+>Voor meer op de uitvoer, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/get-started-data-import-export.md) sectie.

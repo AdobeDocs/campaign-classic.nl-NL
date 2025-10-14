@@ -51,14 +51,14 @@ Pas de volgende aanbevelingen toe wanneer u uw Java Development Kit installeert 
 
 * Wanneer u uw Java-versie upgradet, moet u eerst de vorige versie verwijderen. Beide versies van Java die op dezelfde computer zijn geïnstalleerd, kunnen conflicten veroorzaken.
 
-  Als klant On-premise, kunt u `LD_LIBRARY_PATH` controleren [ milieu veranderlijke ](installing-packages-with-linux.md#environment-variables) wordt geplaatst aan de recentste versie (bijvoorbeeld. java11). Als deze op een vorige versie is ingesteld (bijvoorbeeld Java8), dan moet het worden bijgewerkt. Voor JDK 11 is het pad naar JDK-bibliotheken `/usr/lib/jvm/java-11-openjdk-amd64/lib` .
+  Als klant On-premise, kunt u `LD_LIBRARY_PATH` controleren [&#x200B; milieu veranderlijke &#x200B;](installing-packages-with-linux.md#environment-variables) wordt geplaatst aan de recentste versie (bijvoorbeeld. java11). Als deze op een vorige versie is ingesteld (bijvoorbeeld Java8), dan moet het worden bijgewerkt. Voor JDK 11 is het pad naar JDK-bibliotheken `/usr/lib/jvm/java-11-openjdk-amd64/lib` .
 
 
 ### Installatiestappen
 
 Java Development Kit is platformspecifiek: voor elk besturingssysteem zijn afzonderlijke installatieprogramma&#39;s nodig.
 
-Om JDK te downloaden, verbind met [ website van het Oracle ](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"} .
+Om JDK te downloaden, verbind met [&#x200B; website van het Oracle &#x200B;](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"} .
 
 >[!CAUTION]
 >
@@ -91,7 +91,7 @@ Met Adobe Campaign kunt u rapporten exporteren naar Microsoft Excel en Adobe PDF
 
 >[!NOTE]
 >
->Voor Linux moet u lettertypen toevoegen. Voor meer op dit, verwijs naar [ Doopvonten voor MTA statistieken ](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Voor Linux moet u lettertypen toevoegen. Voor meer op dit, verwijs naar [&#x200B; Doopvonten voor MTA statistieken &#x200B;](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 
@@ -103,4 +103,4 @@ De minimum gesteunde versie is: **3.4**
 
 Voor SpamAssassin is HTTP-internettoegang (tcp/80) vereist.
 
-De installatie en de configuratiestadia voor SpamAssassin worden voorgesteld in [ het Vormen SpamAssassin ](../../installation/using/configuring-spamassassin.md).
+De installatie en de configuratiestadia voor SpamAssassin worden voorgesteld in [&#x200B; het Vormen SpamAssassin &#x200B;](../../installation/using/configuring-spamassassin.md).

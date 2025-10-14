@@ -22,12 +22,12 @@ ht-degree: 0%
 
 Voor een Microsoft Windows-omgeving zijn de migratiestappen als volgt:
 
-1. Stop alle diensten - [ leer meer ](#service-stop).
-1. Maak een back-up van uw database - [ Leer meer ](#back-up-the-database) .
-1. Migreer het platform - [ leer meer ](#deploying-adobe-campaign-v7).
-1. Migreer de omleidingsserver (IIS) - [ Leer meer ](#migrating-the-redirection-server--iis-).
-1. De dienst van de herstart - [ Leer meer ](#re-starting-the-services).
-1. Schrap en schoon vorige versie van Adobe Campaign - [ Leer meer ](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. Stop alle diensten - [&#x200B; leer meer &#x200B;](#service-stop).
+1. Maak een back-up van uw database - [&#x200B; Leer meer &#x200B;](#back-up-the-database) .
+1. Migreer het platform - [&#x200B; leer meer &#x200B;](#deploying-adobe-campaign-v7).
+1. Migreer de omleidingsserver (IIS) - [&#x200B; Leer meer &#x200B;](#migrating-the-redirection-server--iis-).
+1. De dienst van de herstart - [&#x200B; Leer meer &#x200B;](#re-starting-the-services).
+1. Schrap en schoon vorige versie van Adobe Campaign - [&#x200B; Leer meer &#x200B;](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## Servicestop {#service-stop}
 
@@ -205,7 +205,7 @@ Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
-1. Installeer de meest recente Adobe Campaign v7 bouwt door het **setup.exe** installatiedossier in werking te stellen. Voor meer bij het installeren van de server van Adobe Campaign in Vensters, verwijs naar [ deze sectie ](../../installation/using/installing-the-server.md).
+1. Installeer de meest recente Adobe Campaign v7 bouwt door het **setup.exe** installatiedossier in werking te stellen. Voor meer bij het installeren van de server van Adobe Campaign in Vensters, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/installing-the-server.md).
 
    ![](assets/migration_wizard_1_7.png)
 
@@ -217,7 +217,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Voor meer bij het installeren van Adobe Campaign in Vensters, verwijs naar [ deze sectie ](../../installation/using/installing-the-server.md).
+   >Voor meer bij het installeren van Adobe Campaign in Vensters, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/installing-the-server.md).
 
 1. Start de instantie voor het eerste gebruik met de volgende opdrachten:
 
@@ -230,7 +230,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >Deze bevelen laten u het interne het dossiersysteem van Adobe Campaign v7 creëren: **conf** folder (met **config-default.xml** en **serverConf.xml** dossiers), **var** folder, enz.
 
-1. Kopieer en deeg (beschrijven) de configuratiedossiers en subfolders van elke instantie via **Neolane v5.back**, **Neolane v6.back** of **Adobe Campaign v6.back** reservedossier (afhankelijk van de versie u van - zie [ deze sectie ](#back-up-the-database-and-the-current-installation) migreert).
+1. Kopieer en deeg (beschrijven) de configuratiedossiers en subfolders van elke instantie via **Neolane v5.back**, **Neolane v6.back** of **Adobe Campaign v6.back** reservedossier (afhankelijk van de versie u van - zie [&#x200B; deze sectie &#x200B;](#back-up-the-database-and-the-current-installation) migreert).
 1. Afhankelijk van de versie waaruit u migreert, voert u de volgende opdrachten uit:
 
    ```
@@ -279,7 +279,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 ## De omleidingsserver migreren {#migrating-the-redirection-server--iis-}
 
-In dit stadium, moet de server IIS worden tegengehouden. Verwijs naar [ het einde van de Dienst ](#service-stop).
+In dit stadium, moet de server IIS worden tegengehouden. Verwijs naar [&#x200B; het einde van de Dienst &#x200B;](#service-stop).
 
 1. Open de **console van de Manager van de Informatie van 0&rbrace; Internet van de Diensten (IIS).**
 1. Wijzig de bindingen (listen ports) van de site die voor de vorige versie van Adobe Campaign wordt gebruikt:
@@ -337,7 +337,7 @@ In dit stadium, moet de server IIS worden tegengehouden. Verwijs naar [ het eind
      >
      >Als de boomstructuur niet wordt getoond, begin IIS opnieuw.
      >
-     >De volgende IIS configuratiestappen zijn gedetailleerd in [ deze sectie ](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >De volgende IIS configuratiestappen zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 <!--
 ## Security zones {#security-zones}

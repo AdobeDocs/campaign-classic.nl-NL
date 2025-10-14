@@ -52,7 +52,7 @@ Er zijn vier typen koppelingen:
 
 In de volgende secties zijn ook gebruiksgevallen te vinden waarin de activiteiten van verrijkingsactiviteiten in hun context worden beschreven:
 
-* [ e-mail verrijking met de gebieden van de douanedatum ](email-enrichment-with-custom-date-fields.md).
+* [&#x200B; e-mail verrijking met de gebieden van de douanedatum &#x200B;](email-enrichment-with-custom-date-fields.md).
 * [Gegevens worden verrijkt](enriching-data.md)
 * [Een overzichtslijst maken](creating-a-summary-list.md)
 
@@ -60,7 +60,7 @@ In de volgende secties zijn ook gebruiksgevallen te vinden waarin de activiteite
 
 Gebruik de activiteit **[!UICONTROL Enrichment]** om kolommen aan een het werklijst toe te voegen: deze activiteit kan als aanvulling op een vraagactiviteit worden gebruikt.
 
-De configuratie van extra kolommen wordt gedetailleerd in [ Toevoegend gegevens ](query.md#adding-data).
+De configuratie van extra kolommen wordt gedetailleerd in [&#x200B; Toevoegend gegevens &#x200B;](query.md#adding-data).
 
 In het veld **[!UICONTROL Primary set]** kunt u de binnenkomende overgang selecteren: de gegevens van de werktabel van deze activiteit worden verrijkt.
 
@@ -153,13 +153,13 @@ Als er meerdere samenvoegvoorwaarden zijn opgegeven, moeten deze ALLES worden ge
 
 Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedingen voor ontvangers van de levering toevoegen.
 
-Voor meer informatie over de verrijkingsactiviteit, verwijs naar dit [ sectie ](enrichment.md).
+Voor meer informatie over de verrijkingsactiviteit, verwijs naar dit [&#x200B; sectie &#x200B;](enrichment.md).
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
 ![](assets/int_enrichment_offer1.png)
 
-Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
+Na het vormen van uw vraag (verwijs naar deze [&#x200B; sectie &#x200B;](query.md)):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
 1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]** .
@@ -178,11 +178,11 @@ Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [&#x200B; de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
 
    Het aantal voorstellen dat beschikbaar is voor de voorvertoning is afhankelijk van de configuratie die wordt uitgevoerd in de verrijkingsactiviteit in plaats van een mogelijke configuratie die rechtstreeks in de levering wordt uitgevoerd.
 
-Als je voorstellen voor aanbiedingen wilt opgeven, kun je ook naar een link naar een voorstel verwijzen. Voor meer op dit, verwijs naar de volgende sectie [ Verwijzend een verbinding aan een aanbieding ](#referencing-a-link-to-an-offer).
+Als je voorstellen voor aanbiedingen wilt opgeven, kun je ook naar een link naar een voorstel verwijzen. Voor meer op dit, verwijs naar de volgende sectie [&#x200B; Verwijzend een verbinding aan een aanbieding &#x200B;](#referencing-a-link-to-an-offer).
 
 ## Verwijzen naar een koppeling naar een aanbieding {#referencing-a-link-to-an-offer}
 
@@ -200,7 +200,7 @@ Dit doet u als volgt:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [&#x200B; de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
 
    >[!NOTE]
    >

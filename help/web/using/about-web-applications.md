@@ -28,7 +28,7 @@ Dit hoofdstuk verstrekt een overzicht van hoe te om de toepassingen van het Web 
 
 >[!NOTE]
 >
->Verwijs naar [ checklist van de Veiligheid en van de Privacy ](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) om te leren hoe te om veiligheid voor Webtoepassingen te optimaliseren.
+>Verwijs naar [&#x200B; checklist van de Veiligheid en van de Privacy &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) om te leren hoe te om veiligheid voor Webtoepassingen te optimaliseren.
 
 >[!CAUTION]
 >
@@ -60,9 +60,9 @@ Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoud
 
 >[!NOTE]
 >
->De onderzoeken zijn gedetailleerd in [ deze sectie ](../../surveys/using/about-surveys.md).
+>De onderzoeken zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../surveys/using/about-surveys.md).
 >
->De algemene functies van de vormen van het Web in Adobe Campaign zijn gedetailleerd in [ deze sectie ](about-web-forms.md).
+>De algemene functies van de vormen van het Web in Adobe Campaign zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](about-web-forms.md).
 
 ## Implementatie van webtoepassingen {#web-application-implementation}
 
@@ -70,7 +70,7 @@ Als u een webtoepassing wilt maken en posten, moet u:
 
 1. Maak de inhoud (velden, lijsten, tabellen, grafieken, enz.).
 
-   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze velden zijn ook beschikbaar voor webtoepassingen. Deze informatie is beschikbaar in [ deze pagina ](adding-fields-to-a-web-form.md).
+   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze velden zijn ook beschikbaar voor webtoepassingen. Deze informatie is beschikbaar in [&#x200B; deze pagina &#x200B;](adding-fields-to-a-web-form.md).
 
 1. Zoals vereist, kunt u het vooraf laden toevoegen, testen, en besparingsstappen, en het toegangsbeheersysteem (hoofdzakelijk binnen het kader van een Extranetpublicatie) vormen.
 1. Het publiceren van de toepassing van het Web om het op een Extranet of in Adobe Campaign ter beschikking te stellen.

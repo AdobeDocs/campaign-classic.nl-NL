@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Adobe Campaign garandeert consistente communicatie dankzij een set regels die zijn opgenomen in campagnetypologieën. Zij hebben tot doel de leveringen die aan de ontvangers worden verzonden, te controleren, zoals volume, aard, relevantie, enz.
 
-**de regels van de Capaciteit**, bijvoorbeeld kunnen vermijden overladend het platform betrokken door de levering van berichten. Bijvoorbeeld, moeten de speciale aanbiedingen die een downloadverbinding bevatten niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Voor meer op dit, verwijs naar [ capaciteit van de Controle ](#controlling-capacity).
+**de regels van de Capaciteit**, bijvoorbeeld kunnen vermijden overladend het platform betrokken door de levering van berichten. Bijvoorbeeld, moeten de speciale aanbiedingen die een downloadverbinding bevatten niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Voor meer op dit, verwijs naar [&#x200B; capaciteit van de Controle &#x200B;](#controlling-capacity).
 
 ## Besturingscapaciteit {#controlling-capacity}
 
@@ -43,7 +43,7 @@ Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
 
    >[!NOTE]
    >
-   >Beschikbaarheidsregels dienen alleen ter informatie. Als u berichten moet uitsluiten wanneer de capaciteitsgrens wordt bereikt, verwijs naar [ deze sectie ](#exclude-messages-when-capacity-limit-reached).
+   >Beschikbaarheidsregels dienen alleen ter informatie. Als u berichten moet uitsluiten wanneer de capaciteitsgrens wordt bereikt, verwijs naar [&#x200B; deze sectie &#x200B;](#exclude-messages-when-capacity-limit-reached).
 
 1. Koppel deze regel aan een typologie en verwijs de typologie in uw levering om deze capaciteitsregel toe te passen. Raadpleeg [deze sectie](applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
 1. U kunt het verbruik controleren met de tabbladen **[!UICONTROL Consumptions]** en **[!UICONTROL Capacity]** .
@@ -56,7 +56,7 @@ Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
 
 ## De maximale belasting definiëren {#defining-the-maximum-load}
 
-Om de maximumlading te bepalen, moet u beschikbaarheidslijnen bepalen. Om dit te doen, zijn twee opties beschikbaar: u kunt één of meerdere beschikbaarheidslijnen manueel tot stand brengen (verwijs naar [ beschikbaarheidslijnen één voor één toevoegen ](#adding-availability-lines-one-by-one)) of beschikbaarheidswaaiers creëren. De frequentie van deze tijdsperioden kan worden geautomatiseerd (verwijs naar [ voegt een reeks beschikbaarheidslijnen ](#add-a-set-of-availability-lines) toe).
+Om de maximumlading te bepalen, moet u beschikbaarheidslijnen bepalen. Om dit te doen, zijn twee opties beschikbaar: u kunt één of meerdere beschikbaarheidslijnen manueel tot stand brengen (verwijs naar [&#x200B; beschikbaarheidslijnen één voor één toevoegen &#x200B;](#adding-availability-lines-one-by-one)) of beschikbaarheidswaaiers creëren. De frequentie van deze tijdsperioden kan worden geautomatiseerd (verwijs naar [&#x200B; voegt een reeks beschikbaarheidslijnen &#x200B;](#add-a-set-of-availability-lines) toe).
 
 ### Beschikbaarheidsregels een voor een toevoegen {#adding-availability-lines-one-by-one}
 

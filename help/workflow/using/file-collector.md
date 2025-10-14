@@ -25,7 +25,7 @@ De bestanden moeten zich op de server bevinden waarop de wfserver-module die voo
 
 ## Properties {#properties}
 
-Op het eerste tabblad van de **[!UICONTROL File collector]** -activiteit kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere lusjes zijn gedetailleerd in [ Binnenkomende E-mail ](inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** lusjes).
+Op het eerste tabblad van de **[!UICONTROL File collector]** -activiteit kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere lusjes zijn gedetailleerd in [&#x200B; Binnenkomende E-mail &#x200B;](inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** lusjes).
 
 ![](assets/file_collect_edit.png)
 
@@ -69,7 +69,7 @@ Op het eerste tabblad van de **[!UICONTROL File collector]** -activiteit kunt u 
 
 1. **Historization**
 
-   Verwijs naar de **[!UICONTROL File historization]** stap hier: [ download van het Web ](web-download.md).
+   Verwijs naar de **[!UICONTROL File historization]** stap hier: [&#x200B; download van het Web &#x200B;](web-download.md).
 
 De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de optie **[!UICONTROL Stop as soon as a file has been processed]** en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de optie **[!UICONTROL Process file nonexistence]** kunt u de herhaling voltooien.
 

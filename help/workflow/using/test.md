@@ -23,9 +23,9 @@ Een voorwaarde is een JavaScript-expressie die moet worden geëvalueerd op &#39;
 
 ![](assets/edit_test.png)
 
-Voor meer informatie over alle extra functies van JavaScript en de methodes van SOAP van de toepassingsserver die via werkschema JavaScript toegankelijk zijn, verwijs naar [ JSAPI documentatie ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+Voor meer informatie over alle extra functies van JavaScript en de methodes van SOAP van de toepassingsserver die via werkschema JavaScript toegankelijk zijn, verwijs naar [&#x200B; JSAPI documentatie &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
-U kunt variabelen ook rechtstreeks vanuit deze editor invoegen. Voor meer informatie over hoe te met variabelen te werken, verwijs naar [ deze sectie ](javascript-scripts-and-templates.md#variables).
+U kunt variabelen ook rechtstreeks vanuit deze editor invoegen. Voor meer informatie over hoe te met variabelen te werken, verwijs naar [&#x200B; deze sectie &#x200B;](javascript-scripts-and-templates.md#variables).
 
 Voorwaarden kunnen worden toegevoegd, verwijderd of geordend in het bewerkingsvenster van de eigenschap activity, maar kunnen ook worden gewijzigd vanuit de overgang.
 

@@ -25,7 +25,7 @@ In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen w
 
 Deze procedures zijn beperkt tot **op-gebouw**/ **hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **ontvangen** plaatsingen, server-zijmontages kunnen door Adobe slechts worden gevormd. Nochtans, kunnen sommige montages opstelling binnen [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL).
+Voor **ontvangen** plaatsingen, server-zijmontages kunnen door Adobe slechts worden gevormd. Nochtans, kunnen sommige montages opstelling binnen [&#x200B; het Controlebord van de Campagne &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=nl), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL).
 
 Raadpleeg de volgende secties voor meer informatie:
 
@@ -37,24 +37,24 @@ Raadpleeg de volgende secties voor meer informatie:
 
 De configuratiedossiers van het Campaign Classic worden opgeslagen in de **conf** omslag van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
-* **serverConf.xml**: algemene configuratie voor alle instanties. Dit bestand combineert de technische parameters van de Adobe Campaign-server: deze worden door alle instanties gedeeld. Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knopen en de parameters en vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+* **serverConf.xml**: algemene configuratie voor alle instanties. Dit bestand combineert de technische parameters van de Adobe Campaign-server: deze worden door alle instanties gedeeld. Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knopen en de parameters en vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 * **config- `<instance>` .xml** (waar **instantie** de naam van de instantie) is: specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 
 ## Configuratiebereik
 
 Vorm of pas de server van de Campagne afhankelijk van uw behoeften en configuratie aan. U kunt:
 
-* Beveilig het [ Interne herkenningsteken ](#internal-identifier)
-* Laat [ processen van de Campagne ](#enabling-processes) toe
-* Vorm [ Toestemmingen URL ](url-permissions.md)
-* Bepaal [ Gebieden van de Veiligheid ](security-zones.md)
-* Vorm [ Tomcat montages ](configure-tomcat.md)
-* Pas [ parameters van de Levering ](configure-delivery-settings.md) aan
-* Bepaal [ Dynamische paginaveiligheid en relais ](#dynamic-page-security-and-relays)
-* Beperk de lijst van [ Toegestane externe bevelen ](#restricting-authorized-external-commands)
-* Opstelling [ Overbodige het volgen ](#redundant-tracking)
-* Beheer [ Hoge beschikbaarheid en werkschemaaffiniteiten ](#high-availability-workflows-and-affinities)
-* Vorm dossierbeheer - [ Leer meer ](file-res-management.md)
+* Beveilig het [&#x200B; Interne herkenningsteken &#x200B;](#internal-identifier)
+* Laat [&#x200B; processen van de Campagne &#x200B;](#enabling-processes) toe
+* Vorm [&#x200B; Toestemmingen URL &#x200B;](url-permissions.md)
+* Bepaal [&#x200B; Gebieden van de Veiligheid &#x200B;](security-zones.md)
+* Vorm [&#x200B; Tomcat montages &#x200B;](configure-tomcat.md)
+* Pas [&#x200B; parameters van de Levering &#x200B;](configure-delivery-settings.md) aan
+* Bepaal [&#x200B; Dynamische paginaveiligheid en relais &#x200B;](#dynamic-page-security-and-relays)
+* Beperk de lijst van [&#x200B; Toegestane externe bevelen &#x200B;](#restricting-authorized-external-commands)
+* Opstelling [&#x200B; Overbodige het volgen &#x200B;](#redundant-tracking)
+* Beheer [&#x200B; Hoge beschikbaarheid en werkschemaaffiniteiten &#x200B;](#high-availability-workflows-and-affinities)
+* Vorm dossierbeheer - [&#x200B; Leer meer &#x200B;](file-res-management.md)
    * Uploadbestandsindeling beperken
    * Toegang tot openbare middelen toestaan
    * Proxyverbinding configureren
@@ -137,7 +137,7 @@ U kunt de opslagfolder (**var** folder) van de gegevens van Adobe Campaign (logb
 
 * In Linux, ga naar het {**dossier 0} customer.sh en wijs aan:** uitvoer XTK_VAR_DIR=/app/log/AdobeCampaign **.**
 
-  Voor meer op dit, verwijs naar [ Persoonlijk parameters ](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Voor meer op dit, verwijs naar [&#x200B; Persoonlijk parameters &#x200B;](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
@@ -234,7 +234,7 @@ sh
 
 In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerde dossier in het **blacklistFile** attribuut van verwijzingen voorzien.
 
-**slechts voor Linux**: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specifiek aan het uitvoeren van externe bevelen specificeert om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+**slechts voor Linux**: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specifiek aan het uitvoeren van externe bevelen specificeert om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >

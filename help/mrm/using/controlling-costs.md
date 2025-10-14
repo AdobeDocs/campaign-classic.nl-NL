@@ -32,21 +32,21 @@ Voor de uitvoering van het begrotingsbeheer met behulp van MRM moeten de volgend
 
 1. Vaststelling van de begroting
 
-   Voor meer op dit, verwijs naar [ creeer een begroting ](#creating-a-budget).
+   Voor meer op dit, verwijs naar [&#x200B; creeer een begroting &#x200B;](#creating-a-budget).
 
 1. De kostprijsberekeningsmethode definiëren
 
-   Kostenstructuren worden gedefinieerd voor de dienstverleners. Zie [ een dienstverlener en zijn kostencategorieën ](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) creëren.
+   Kostenstructuren worden gedefinieerd voor de dienstverleners. Zie [&#x200B; een dienstverlener en zijn kostencategorieën &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) creëren.
 
 1. Campagnekosten definiëren (leveringen/taken)
 
-   De kosten van de leveringen en taken worden individueel of globaal voor het campagnemalplaatje ingevoerd. Zie [ Berekening van kosten en voorraden ](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   De kosten van de leveringen en taken worden individueel of globaal voor het campagnemalplaatje ingevoerd. Zie [&#x200B; Berekening van kosten en voorraden &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Consolidatie
 
    Afhankelijk van de stand van de uitvoering van de taken, leveringen en campagne zullen de kosten worden berekend en aan de desbetreffende begroting worden doorberekend.
 
-   Wanneer de campagne voldoende gevorderd is, kan de status van de voortgang van het campagnebudget worden gewijzigd in **[!UICONTROL Specified]** . De berekende kosten van het programma worden dan automatisch geboekt met de kosten die op de campagne zijn berekend. Zie [ verplichting van Kosten, berekening en het in rekening brengen ](#cost-commitment--calculation-and-charging).
+   Wanneer de campagne voldoende gevorderd is, kan de status van de voortgang van het campagnebudget worden gewijzigd in **[!UICONTROL Specified]** . De berekende kosten van het programma worden dan automatisch geboekt met de kosten die op de campagne zijn berekend. Zie [&#x200B; verplichting van Kosten, berekening en het in rekening brengen &#x200B;](#cost-commitment--calculation-and-charging).
 
 ## Een budget maken {#creating-a-budget}
 
@@ -58,7 +58,7 @@ De begrotingen worden gecreeerd in de kaart, via de **[!UICONTROL Campaign manag
 
 * Invoering van het oorspronkelijke bedrag
 
-  Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [ bedragen ](#calculating-amounts) berekenen.
+  Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [&#x200B; bedragen &#x200B;](#calculating-amounts) berekenen.
 
 * Vaststelling van de geldigheidsperiode
 
@@ -66,7 +66,7 @@ De begrotingen worden gecreeerd in de kaart, via de **[!UICONTROL Campaign manag
 
 * Uitgaven
 
-  Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [ categorieën van de Kosten ](#expense-categories).
+  Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [&#x200B; categorieën van de Kosten &#x200B;](#expense-categories).
 
   ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -74,7 +74,7 @@ De begrotingen worden gecreeerd in de kaart, via de **[!UICONTROL Campaign manag
 >
 >U kunt een gerelateerd budget selecteren.
 >
->Voor meer op dit, verwijs naar [ Linking een begroting aan een andere ](#linking-a-budget-to-another).
+>Voor meer op dit, verwijs naar [&#x200B; Linking een begroting aan een andere &#x200B;](#linking-a-budget-to-another).
 
 ### Bedragen berekenen {#calculating-amounts}
 
@@ -171,7 +171,7 @@ Volgens de gekozen kostencategorieën worden de overeenkomstige kostenstructuren
 
 >[!NOTE]
 >
->De categorieën en de structuren van kosten worden voorgesteld in [ creëren een dienstverlener en zijn kostencategorieën ](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>De categorieën en de structuren van kosten worden voorgesteld in [&#x200B; creëren een dienstverlener en zijn kostencategorieën &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## Vastleggingsverplichting, berekening en toerekening van kosten {#cost-commitment--calculation-and-charging}
 
@@ -214,7 +214,7 @@ De kosten zijn in drie categorieën onderverdeeld:
 
 De kosten worden berekend via kostenstructuren en worden in rekening gebracht op de in de betrokken campagnes, leveringen of taken geselecteerde budgetten.
 
-De bedragen die via de goedkeuring van de begroting voor campagnes zijn vastgelegd, kunnen worden gecontroleerd. Er kunnen extra taken in de vorm van een controlepunt worden gemaakt in een campagne om andere goedkeuringen in te stellen. Zie [ Types van taak ](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
+De bedragen die via de goedkeuring van de begroting voor campagnes zijn vastgelegd, kunnen worden gecontroleerd. Er kunnen extra taken in de vorm van een controlepunt worden gemaakt in een campagne om andere goedkeuringen in te stellen. Zie [&#x200B; Types van taak &#x200B;](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
 
 ### Voorbeeld {#example}
 
@@ -234,7 +234,7 @@ We gaan een campagne opzetten met:
 
 #### Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van de **[!UICONTROL Administration > Campaigns]** knoop. Voor meer op dit, verwijs naar [ creeer een dienstverlener en zijn kostencategorieën ](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van de **[!UICONTROL Administration > Campaigns]** knoop. Voor meer op dit, verwijs naar [&#x200B; creeer een dienstverlener en zijn kostencategorieën &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    Maak kostencategorieën **[!UICONTROL Envelopes]** (typen 114x229 en 162x229), **[!UICONTROL Postage]** en **[!UICONTROL Print]** (typen A3 en A4) voor direct-mailleveringen. En creeer dan de volgende kostenstructuren:
 
@@ -304,7 +304,7 @@ Wanneer u de berekende kosten bewerkt, kunt u de uitsplitsing van de kosten en d
 
 #### Stap 5 - Taken maken {#step-5---creating-tasks}
 
-Aan deze campagne, zullen wij de twee taken toevoegen waarvoor de kostenstructuren vroeger werden gecreeerd (zie [ Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren ](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op de knop **[!UICONTROL Add a task]** in het campagnemdashboard. Geef een naam op voor de taak en klik op **[!UICONTROL Save]** .
+Aan deze campagne, zullen wij de twee taken toevoegen waarvoor de kostenstructuren vroeger werden gecreeerd (zie [&#x200B; Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren &#x200B;](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op de knop **[!UICONTROL Add a task]** in het campagnemdashboard. Geef een naam op voor de taak en klik op **[!UICONTROL Save]** .
 
 1. De taak wordt vervolgens toegevoegd aan de takenlijst. U moet het uitgeven om het te vormen.
 

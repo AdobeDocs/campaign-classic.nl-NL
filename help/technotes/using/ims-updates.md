@@ -17,7 +17,7 @@ ht-degree: 4%
 
 
 
-Op 30 juni, zijn 2021 veranderingen aangebracht in [ Adobe Identity Management Systeem ](https://helpx.adobe.com/nl/enterprise/using/identity.html) (IMS) login mogelijkheden die uw capaciteit konden beïnvloeden om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
+Op 30 juni, zijn 2021 veranderingen aangebracht in [&#x200B; Adobe Identity Management Systeem &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html) (IMS) login mogelijkheden die uw capaciteit konden beïnvloeden om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
 
 ## Wat is er veranderd?
 
@@ -25,11 +25,11 @@ De Dienst van Adobe Identity Management (IMS) stopte ondersteunend oude versies 
 
 Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
-Om deze functionaliteit te bewaren, moeten de klanten de Console van de Cliënt op de machine van elke gebruiker bijwerken, en de recentste update van uw [ versie van Vensters ](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) verzekeren, met **ingebouwde Internet Explorer 11**, op de machine van elke gebruiker geïnstalleerd is.
+Om deze functionaliteit te bewaren, moeten de klanten de Console van de Cliënt op de machine van elke gebruiker bijwerken, en de recentste update van uw [&#x200B; versie van Vensters &#x200B;](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) verzekeren, met **ingebouwde Internet Explorer 11**, op de machine van elke gebruiker geïnstalleerd is.
 
 ## Heb je invloed op?
 
-Als u met Campagne [ via Adobe ID ](../../integrations/using/about-adobe-id.md) verbindt, door de Dienst van Identity Management van Adobe (IMS), en het runnen van een oudere versie van Campagne dan hieronder vermeld, wordt u beïnvloed.
+Als u met Campagne [&#x200B; via Adobe ID &#x200B;](../../integrations/using/about-adobe-id.md) verbindt, door de Dienst van Identity Management van Adobe (IMS), en het runnen van een oudere versie van Campagne dan hieronder vermeld, wordt u beïnvloed.
 
 Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet Explorer gebruikt, moet u een upgrade uitvoeren naar Internet Explorer 11.
 
@@ -49,13 +49,13 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
 
   Deze versies worden geleverd met een nieuw verbindingsprotocol. De verbetering is verplicht voor zowel de server van de Campagne als de Console van de Cliënt: zodra alle instanties worden bevorderd, moet de Console van de Cliënt aan deze versie evenals aan Campagne na **kunnen worden bevorderd 30 Juni, 2021**.
 
-Bovendien verzeker de recentste update van uw [ versie van Vensters ](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **ingebouwde Internet Explorer 11**, op de machine van elke gebruiker geïnstalleerd is.
+Bovendien verzeker de recentste update van uw [&#x200B; versie van Vensters &#x200B;](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met **ingebouwde Internet Explorer 11**, op de machine van elke gebruiker geïnstalleerd is.
 
 ## Veelgestelde vragen
 
 **Hoe kan ik mijn versie van de Campagne controleren?**
 
-Leer hoe te om uw versie [ in deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
+Leer hoe te om uw versie [&#x200B; in deze sectie &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
 
 
 **Hoe kan ik controleren als ik IMS gebruik?**
@@ -95,5 +95,5 @@ Als u de Internet Explorer-versie niet hebt bijgewerkt, wordt het volgende beric
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../../installation/using/client-console-availability-for-windows.md)
 * [Campagne-clientconsole installeren](../../installation/using/installing-the-client-console.md)
-* [ Toegang Adobe de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL)
-* [ Download Campaign Classic build ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [&#x200B; Toegang Adobe de Distributie van de Software &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL)
+* [&#x200B; Download Campaign Classic build &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

@@ -26,7 +26,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
   Deze coderingsmethode gebruikt de gecodeerde Adobe Campaign-id (ID). Deze methode is alleen van toepassing op een Adobe Campaign-object en de gecodeerde id mag alleen worden gegenereerd door het Adobe Campaign-platform.
 
-  Wanneer u deze methode gebruikt, moet u de URL van het formulier aanpassen om het e-mailadres te verzenden door de parameter **`<%=escapeUrl(recipient.cryptedId) %>`** toe te voegen. Voor meer op dit, verwijs naar [ Leverend een vorm via e-mail ](#delivering-a-form-via-email).
+  Wanneer u deze methode gebruikt, moet u de URL van het formulier aanpassen om het e-mailadres te verzenden door de parameter **`<%=escapeUrl(recipient.cryptedId) %>`** toe te voegen. Voor meer op dit, verwijs naar [&#x200B; Leverend een vorm via e-mail &#x200B;](#delivering-a-form-via-email).
 
 * **[!UICONTROL DES encryption]**
 
@@ -40,7 +40,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
   ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-  De gebieden kunnen aan de vormeigenschappen via het **[!UICONTROL Parameters]** lusje worden toegevoegd (verwijs naar [ Toevoegende parameters ](defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
+  De gebieden kunnen aan de vormeigenschappen via het **[!UICONTROL Parameters]** lusje worden toegevoegd (verwijs naar [&#x200B; Toevoegende parameters &#x200B;](defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
 
   >[!CAUTION]
   >
@@ -90,17 +90,17 @@ Er zijn drie fasen in de levenscyclus van een formulier:
 
 1. **Hangende publicatie**
 
-   In sommige gevallen (zoals wanneer [ een vorm door een pakket ](#import-web-packages) invoert), kan een Webvorm de **[!UICONTROL Pending publication]** status hebben tot het levend is.
+   In sommige gevallen (zoals wanneer [&#x200B; een vorm door een pakket &#x200B;](#import-web-packages) invoert), kan een Webvorm de **[!UICONTROL Pending publication]** status hebben tot het levend is.
 
    >[!NOTE]
    >
-   >Voor technische Webtoepassingen (beschikbaar door **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** menu), is een vorm met de **[!UICONTROL Pending publication]** status automatisch [ gepubliceerd ](#publishing-a-form) en krijgt de **[!UICONTROL Online]** status.
+   >Voor technische Webtoepassingen (beschikbaar door **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** menu), is een vorm met de **[!UICONTROL Pending publication]** status automatisch [&#x200B; gepubliceerd &#x200B;](#publishing-a-form) en krijgt de **[!UICONTROL Online]** status.
 
 1. **Online**
 
    Nadat de ontwerpfase is voltooid, kan het formulier worden afgeleverd.
 
-   Wanneer een vorm **[!UICONTROL Being edited]** of **[!UICONTROL Pending publication]** status heeft, moet het [ worden gepubliceerd ](#publishing-a-form) om online en toegankelijk door Webvorm URL in browser te zijn.
+   Wanneer een vorm **[!UICONTROL Being edited]** of **[!UICONTROL Pending publication]** status heeft, moet het [&#x200B; worden gepubliceerd &#x200B;](#publishing-a-form) om online en toegankelijk door Webvorm URL in browser te zijn.
 
    Nadat het formulier is gepubliceerd, blijft het actief tot het vervalt.
 
@@ -114,7 +114,7 @@ Er zijn drie fasen in de levenscyclus van een formulier:
 
    Nadat het formulier is gesloten, is de leveringsfase voorbij en is het formulier niet meer beschikbaar: het is niet meer toegankelijk voor gebruikers.
 
-   De vervaldatum kan worden gedefinieerd in het venster met formuliereigenschappen. Voor meer op dit, verwijs naar [ Making een vorm online ](#making-a-form-available-online) beschikbaar.
+   De vervaldatum kan worden gedefinieerd in het venster met formuliereigenschappen. Voor meer op dit, verwijs naar [&#x200B; Making een vorm online &#x200B;](#making-a-form-available-online) beschikbaar.
 
 De publicatiestatus van een formulier wordt weergegeven in de lijst met formulieren.
 
@@ -136,7 +136,7 @@ Om door gebruikers te kunnen worden geraadpleegd, moet het formulier in producti
 
 * Klik op de koppeling **[!UICONTROL Personalize the message displayed if the form is closed...]** om het foutbericht te definiëren dat moet worden weergegeven als de gebruiker toegang probeert te krijgen tot het formulier terwijl het niet geldig is.
 
-  Zie [ Toegankelijkheid van de vorm ](defining-web-forms-properties.md#accessibility-of-the-form).
+  Zie [&#x200B; Toegankelijkheid van de vorm &#x200B;](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Een formulier via e-mail verzenden {#delivering-a-form-via-email}
 
@@ -146,9 +146,9 @@ Wanneer u een uitnodiging via e-mail verzendt, kunt u de optie **[!UICONTROL Ado
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-In dit geval moet de compatibiliteitssleutel voor gegevensopslag de gecodeerde id van de ontvanger zijn. Voor meer op dit, verwijs naar [ pre-ladend de vormgegevens ](#pre-loading-the-form-data).
+In dit geval moet de compatibiliteitssleutel voor gegevensopslag de gecodeerde id van de ontvanger zijn. Voor meer op dit, verwijs naar [&#x200B; pre-ladend de vormgegevens &#x200B;](#pre-loading-the-form-data).
 
-In dit geval moet u de optie **[!UICONTROL Update the preloaded record]** in het recordvak inschakelen. Voor meer op dit, verwijs naar [ het Opslaan van de vormen van het Web antwoorden ](web-forms-answers.md#saving-web-forms-answers).
+In dit geval moet u de optie **[!UICONTROL Update the preloaded record]** in het recordvak inschakelen. Voor meer op dit, verwijs naar [&#x200B; het Opslaan van de vormen van het Web antwoorden &#x200B;](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
@@ -172,7 +172,7 @@ U kunt de antwoordlogboeken verwerken die in vragen worden verstrekt, bijvoorbee
 
 Bij het exporteren en importeren van een pakket met een webformulier van een exemplaar naar een ander exemplaar (bijvoorbeeld van werkgebied naar productie), kan de status van het webformulier op het nieuwe exemplaar afhankelijk van verschillende omstandigheden variëren. De verschillende gevallen worden hieronder vermeld.
 
-Leer meer op de verschillende statussen van een Webvorm in [ deze sectie ](#life-cycle-of-a-form).
+Leer meer op de verschillende statussen van een Webvorm in [&#x200B; deze sectie &#x200B;](#life-cycle-of-a-form).
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Leer meer op de verschillende statussen van een Webvorm in [ deze sectie ](#life
 
    * Als het webformulier al bestaat op het nieuwe exemplaar, wordt het vervangen door de nieuwe versie van het formulier en krijgt het de status **[!UICONTROL Pending publication]** , zelfs als de oude versie van het formulier **[!UICONTROL Online]** was.
 
-   * Of de vorm al dan niet bestond, moet de vorm [ worden gepubliceerd ](#publishing-a-form) om **[!UICONTROL Online]** op de nieuwe instantie te worden en toegankelijk door Webvorm URL in browser.
+   * Of de vorm al dan niet bestond, moet de vorm [&#x200B; worden gepubliceerd &#x200B;](#publishing-a-form) om **[!UICONTROL Online]** op de nieuwe instantie te worden en toegankelijk door Webvorm URL in browser.
 
 * Als de status van het webformulier tijdens het exporteren **[!UICONTROL Being edited]** was:
 

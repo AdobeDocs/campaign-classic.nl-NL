@@ -35,15 +35,15 @@ Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren va
 >
 >De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
 
-Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Voor meer op dit, zie [ een leveringskanaal ](#adding-a-delivery-channel) toevoegen.
+Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Voor meer op dit, zie [&#x200B; een leveringskanaal &#x200B;](#adding-a-delivery-channel) toevoegen.
 
 ## Control-instantie {#control-instance}
 
-Selecteer het **[!UICONTROL Transactional message control]** -pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** om de besturingsinstantie op uw computer te installeren. Voor meer op dit, zie [ Installerend Campaign Classic standaardpakketten ](../../installation/using/installing-campaign-standard-packages.md).
+Selecteer het **[!UICONTROL Transactional message control]** -pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** om de besturingsinstantie op uw computer te installeren. Voor meer op dit, zie [&#x200B; Installerend Campaign Classic standaardpakketten &#x200B;](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
-De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [ deze sectie ](../../message-center/using/configuring-instances.md#control-instance).
+De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [&#x200B; deze sectie &#x200B;](../../message-center/using/configuring-instances.md#control-instance).
 
 ### Verschillende besturingsinstanties ondersteunen {#supporting-several-control-instances}
 
@@ -57,15 +57,15 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 >[!NOTE]
 >
->Voor meer op de noodzakelijke configuratie, verwijs naar [ Gebruik verscheidene controleinstanties ](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Voor meer op de noodzakelijke configuratie, verwijs naar [&#x200B; Gebruik verscheidene controleinstanties &#x200B;](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Uitvoeringsinstantie {#execution-instance}
 
-Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u het pakket **[!UICONTROL Transactional message execution]** via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Voor meer op dit, zie [ Installerend Campaign Classic standaardpakketten ](../../installation/using/installing-campaign-standard-packages.md).
+Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u het pakket **[!UICONTROL Transactional message execution]** via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Voor meer op dit, zie [&#x200B; Installerend Campaign Classic standaardpakketten &#x200B;](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
-De gedetailleerde stappen om een uitvoeringsinstantie te vormen worden voorgesteld in [ deze sectie ](../../message-center/using/configuring-instances.md#execution-instance).
+De gedetailleerde stappen om een uitvoeringsinstantie te vormen worden voorgesteld in [&#x200B; deze sectie &#x200B;](../../message-center/using/configuring-instances.md#execution-instance).
 
 ## Beschikbare leveringskanalen
 
@@ -132,7 +132,7 @@ In combinatie met de Mobile App Channel-module kunt u met een transactiebericht 
 
 >[!NOTE]
 >
->Het mobiele kanaal van de App is gedetailleerd in [ deze sectie ](../../delivery/using/about-mobile-app-channel.md).
+>Het mobiele kanaal van de App is gedetailleerd in [&#x200B; deze sectie &#x200B;](../../delivery/using/about-mobile-app-channel.md).
 
 Als u transactiemodules voor berichten wilt gebruiken met Mobile App Channel, moet u de volgende configuraties toepassen:
 
@@ -181,7 +181,7 @@ Om transactionele berichtmodule met LIJN te gebruiken, zijn de volgende elemente
 
 * Installeer het **[!UICONTROL LINE Connect]** -pakket op beide instanties.
 * Installeer het pakket **[!UICONTROL Transactional message control]** op de marketinginstantie en het pakket **[!UICONTROL Transactional message execution]** op de uitvoeringsinstantie.
-* Creeer de externe rekening van de LIJN **&#x200B;**&#x200B;en **dienst** op beide instanties met het identieke noemen voor hen om worden gesynchroniseerd. Voor meer informatie over hoe te om tot een externe rekening en de dienst van de LIJN te leiden, verwijs naar [ deze sectie ](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Creeer de externe rekening van de LIJN **&#x200B;**&#x200B;en **dienst** op beide instanties met het identieke noemen voor hen om worden gesynchroniseerd. Voor meer informatie over hoe te om tot een externe rekening en de dienst van de LIJN te leiden, verwijs naar [&#x200B; deze sectie &#x200B;](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Vervolgens moet u in **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , verschillende externe accounts configureren voor beide instanties:
 
@@ -244,4 +244,4 @@ Vervolgens moet u in **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > 
    * Klik op de knop **[!UICONTROL Create the archiving workflow]**.
    * Klik op de knop **[!UICONTROL Create data synchronization workflow]** om de workflow voor het synchroniseren van lijngegevens te maken.
 
-1. U kunt [ nu beginnen creërend transactionele berichten ](../../message-center/using/creating-the-message-template.md).
+1. U kunt [&#x200B; nu beginnen creërend transactionele berichten &#x200B;](../../message-center/using/creating-the-message-template.md).

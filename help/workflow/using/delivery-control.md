@@ -19,11 +19,11 @@ ht-degree: 2%
 
 A **de controle van de Levering** - typeactie laat u beginnen, pauzeren, of een levering tegenhouden.
 
-Dit kan de levering zijn die in de overgang wordt gespecificeerd, uitdrukkelijk geselecteerde levering, of een levering die door een manuscript wordt berekend. Voor meer op dit, verwijs naar [ Levering ](delivery.md).
+Dit kan de levering zijn die in de overgang wordt gespecificeerd, uitdrukkelijk geselecteerde levering, of een levering die door een manuscript wordt berekend. Voor meer op dit, verwijs naar [&#x200B; Levering &#x200B;](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Als u **[!UICONTROL Start]** selecteert, voert de activiteit alle stappen uit die nodig zijn om de levering te starten (doelberekening, inhoudsvoorbereiding, levering). Als sommige van deze stappen al zijn uitgevoerd door een eerdere workflowactiviteit, worden ze niet opnieuw uitgevoerd. Bijvoorbeeld, als de doelschatting reeds door een **[!UICONTROL Delivery]** typeactiviteit (verwijs naar [ Levering ](delivery.md)) werd uitgevoerd, zal de **[!UICONTROL Act on the delivery]** activiteit de resterende stappen (inhoudspreiding en levering) lanceren.
+Als u **[!UICONTROL Start]** selecteert, voert de activiteit alle stappen uit die nodig zijn om de levering te starten (doelberekening, inhoudsvoorbereiding, levering). Als sommige van deze stappen al zijn uitgevoerd door een eerdere workflowactiviteit, worden ze niet opnieuw uitgevoerd. Bijvoorbeeld, als de doelschatting reeds door een **[!UICONTROL Delivery]** typeactiviteit (verwijs naar [&#x200B; Levering &#x200B;](delivery.md)) werd uitgevoerd, zal de **[!UICONTROL Act on the delivery]** activiteit de resterende stappen (inhoudspreiding en levering) lanceren.
 
 De volgende opties zijn beschikbaar:
 
@@ -33,7 +33,7 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Processing errors]**
 
-  Verwijs naar [ de fouten van de Verwerking ](monitoring-workflow-execution.md#processing-errors).
+  Verwijs naar [&#x200B; de fouten van de Verwerking &#x200B;](monitoring-workflow-execution.md#processing-errors).
 
 ## Invoerparameters {#input-parameters}
 

@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## Informatie over het verrijken van gegevens {#about-enriching-data}
 
-In dit geval kunt u details gebruiken over het mogelijke gebruik van de **[!UICONTROL Enrichment]** -activiteit in een doelworkflow. Voor meer bij het gebruiken van de **[!UICONTROL Enrichment]** activiteit, verwijs naar: [ Verrijking ](enrichment.md).
+In dit geval kunt u details gebruiken over het mogelijke gebruik van de **[!UICONTROL Enrichment]** -activiteit in een doelworkflow. Voor meer bij het gebruiken van de **[!UICONTROL Enrichment]** activiteit, verwijs naar: [&#x200B; Verrijking &#x200B;](enrichment.md).
 
-Een gebruiksgeval op hoe te om een e-maillevering met douanedatums te verrijken is ook beschikbaar in [ deze sectie ](email-enrichment-with-custom-date-fields.md).
+Een gebruiksgeval op hoe te om een e-maillevering met douanedatums te verrijken is ook beschikbaar in [&#x200B; deze sectie &#x200B;](email-enrichment-with-custom-date-fields.md).
 
 De contactpersonen in de marketingdatabase worden via een webtoepassing uitgenodigd deel te nemen aan een wedstrijd. De resultaten van de wedstrijd worden hersteld in de tabel **[!UICONTROL Competition results]** . Deze lijst is verbonden met de contactlijst (**[!UICONTROL Recipients]**). De tabel **[!UICONTROL Competition results]** bevat de volgende velden:
 

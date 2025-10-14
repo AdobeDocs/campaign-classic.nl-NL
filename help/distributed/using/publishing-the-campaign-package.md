@@ -37,7 +37,7 @@ Vervolgens wordt een meldingsbericht naar de controleur verzonden om de beschikb
 
 >[!NOTE]
 >
->Op het niveau van de organisatie kunt u ook revisoren opgeven om orders goed te keuren. Voor meer op dit, verwijs naar [ Organisatorische entiteiten ](about-distributed-marketing.md#organizational-entities).
+>Op het niveau van de organisatie kunt u ook revisoren opgeven om orders goed te keuren. Voor meer op dit, verwijs naar [&#x200B; Organisatorische entiteiten &#x200B;](about-distributed-marketing.md#organizational-entities).
 
 ## Andere revisoren toevoegen {#adding-other-reviewers}
 
@@ -63,4 +63,4 @@ Als er geen controleur is opgegeven of als geen van de aangemelde operatoren het
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-Na goedkeuring wordt de campagne gepubliceerd, toegevoegd aan de lijst en kunnen lokale entiteiten deze gebruiken zodra de beschikbaarheidsdatum is bereikt. Als de lokale entiteiten tijdens het maken van de campagne zijn opgegeven, wordt een bericht verzonden naar de operatoren in de kennisgevingsgroep om hen te laten weten dat de campagne beschikbaar is. Als er vooraf geen entiteit is opgegeven, is de campagne standaard beschikbaar voor alle lokale entiteiten. Voor meer op dit, verwijs naar [ Organisatorische entiteiten ](about-distributed-marketing.md#organizational-entities).
+Na goedkeuring wordt de campagne gepubliceerd, toegevoegd aan de lijst en kunnen lokale entiteiten deze gebruiken zodra de beschikbaarheidsdatum is bereikt. Als de lokale entiteiten tijdens het maken van de campagne zijn opgegeven, wordt een bericht verzonden naar de operatoren in de kennisgevingsgroep om hen te laten weten dat de campagne beschikbaar is. Als er vooraf geen entiteit is opgegeven, is de campagne standaard beschikbaar voor alle lokale entiteiten. Voor meer op dit, verwijs naar [&#x200B; Organisatorische entiteiten &#x200B;](about-distributed-marketing.md#organizational-entities).

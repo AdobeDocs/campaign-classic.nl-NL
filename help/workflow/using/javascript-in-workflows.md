@@ -24,7 +24,7 @@ Deze voorbeelden laten zien hoe u JavaScript-code kunt gebruiken in een workflow
 * [Een workflow activeren met een statische SOAP-methode](#trigger-example)
 * [Communiceer met de database met een niet-statische SOAP-methode](#interact-example)
 
-[ leer meer ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=nl-NL) over statische en niet-statische methodes van SOAP.
+[&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=nl-NL) over statische en niet-statische methodes van SOAP.
 
 In deze voorbeelden wordt de extensie ECMAScript for XML (E4X) gebruikt. Met deze extensie kunt u JavaScript-aanroepen en XML-primitieven combineren in hetzelfde script.
 
@@ -35,7 +35,7 @@ Voer de volgende stappen uit om deze voorbeelden uit te proberen:
    1. JavaScript-codeactiviteit
    1. Eindactiviteit
 
-   [ leer meer ](building-a-workflow.md) over het bouwen van werkschema&#39;s.
+   [&#x200B; leer meer &#x200B;](building-a-workflow.md) over het bouwen van werkschema&#39;s.
 
 1. Voeg de JavaScript-code toe aan een activiteit. [Meer informatie](advanced-parameters.md).
 1. Sla de workflow op.
@@ -276,7 +276,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-De lus bevat een variabele voor lokale ontvangers. Voor elke ontvanger die in de inzameling van ontvangers is teruggekeerd, wordt de e-mail van de ontvanger gedrukt. [ leer meer ](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=nl-NL) over de `logInfo` functie.
+De lus bevat een variabele voor lokale ontvangers. Voor elke ontvanger die in de inzameling van ontvangers is teruggekeerd, wordt de e-mail van de ontvanger gedrukt. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=nl-NL) over de `logInfo` functie.
 
 #### Resultaten van een `getIfExists` -bewerking
 
@@ -376,7 +376,7 @@ U kunt workflows op verschillende manieren activeren:
 
      >[!TIP]
      >
-     >Als beste praktijk, wanneer u een manuscript aan een activiteit toevoegt, sluit de activiteitennaam in dubbele koppeltekens, bijvoorbeeld, `-- end --`. [ leer meer ](workflow-best-practices.md) over werkschemabeste praktijken.
+     >Als beste praktijk, wanneer u een manuscript aan een activiteit toevoegt, sluit de activiteitennaam in dubbele koppeltekens, bijvoorbeeld, `-- end --`. [&#x200B; leer meer &#x200B;](workflow-best-practices.md) over werkschemabeste praktijken.
 
 Syntaxis van de methode `PostEvent` :
 
@@ -618,11 +618,11 @@ In deze video ziet u een voorbeeld van het gebruik van een niet-statische API-me
 
 ### API-documentatie
 
-* [ Steekproeven van SOAP roepen ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=nl-NL)
+* [&#x200B; Steekproeven van SOAP roepen &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=nl-NL)
 * Methoden:
-   * [ creeer ](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=nl-NL)
-   * [ DeleteCollection ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=nl-NL)
-   * [ ExecuteQuery ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=nl-NL)
-   * [ PostEvent ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=nl-NL)
-   * [ schrijf ](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=nl-NL)
-* [ logInfo functie ](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=nl-NL)
+   * [&#x200B; creeer &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=nl-NL)
+   * [&#x200B; DeleteCollection &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=nl-NL)
+   * [&#x200B; ExecuteQuery &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=nl-NL)
+   * [&#x200B; PostEvent &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=nl-NL)
+   * [&#x200B; schrijf &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=nl-NL)
+* [&#x200B; logInfo functie &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=nl-NL)

@@ -83,7 +83,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
    * **[!UICONTROL Send a proof]** : met deze optie kunt u een bewijs van de levering verzenden. Deze actie is het equivalent van het klikken van de **[!UICONTROL Send a proof]** knoop in de toolbar van een levering met **Levering**
    * **[!UICONTROL Prepare and start]** : met deze optie wordt het volledige analyseproces gestart (doelberekening en inhoudsvoorbereiding) en wordt de levering verzonden. Deze actie is het equivalent van het klikken **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]**, en **[!UICONTROL Confirm delivery]** optie wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
 
-   Met de **[!UICONTROL Act on a delivery]** -activiteit die verderop in de workflow wordt gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Voor meer op dit, verwijs naar [ controle van de Levering ](delivery-control.md).
+   Met de **[!UICONTROL Act on a delivery]** -activiteit die verderop in de workflow wordt gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Voor meer op dit, verwijs naar [&#x200B; controle van de Levering &#x200B;](delivery-control.md).
 
    De volgende opties zijn ook beschikbaar:
 
@@ -97,7 +97,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
    * **[!UICONTROL Processing errors]**
 
-     Verwijs naar [ de controle van de Levering ](delivery-control.md).
+     Verwijs naar [&#x200B; de controle van de Levering &#x200B;](delivery-control.md).
 
    Het **manuscript** lusje laat u de leveringsparameters wijzigen.
 
@@ -128,11 +128,11 @@ Open de **activiteit van de Goedkeuring** en bepaal de eigenschappen als volgt:
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** geeft het aantal ontvangers aan waarvoor de vorige taak is uitgevoerd. Voor verdere informatie over de uitdrukkingen van JavaScript, verwijs naar [ manuscripten en malplaatjes van JavaScript ](javascript-scripts-and-templates.md).
+   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** geeft het aantal ontvangers aan waarvoor de vorige taak is uitgevoerd. Voor verdere informatie over de uitdrukkingen van JavaScript, verwijs naar [&#x200B; manuscripten en malplaatjes van JavaScript &#x200B;](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   De taak van de Goedkeuring is gedetailleerd in [ Goedkeuring ](approval.md).
+   De taak van de Goedkeuring is gedetailleerd in [&#x200B; Goedkeuring &#x200B;](approval.md).
 
 ## Invoerparameters {#input-parameters}
 

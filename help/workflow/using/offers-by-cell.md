@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Met de activiteit **[!UICONTROL Offers by cell]** kunt u de binnenkomende populatie (bijvoorbeeld van een query) in verschillende segmenten verdelen en een aanbieding opgeven om voor elk van deze segmenten voor te stellen.
 
-Deze activiteit kan slechts met **Interactie** worden gebruikt. Voor meer informatie, verwijs naar deze [ sectie ](../../interaction/using/about-outbound-channels.md).
+Deze activiteit kan slechts met **Interactie** worden gebruikt. Voor meer informatie, verwijs naar deze [&#x200B; sectie &#x200B;](../../interaction/using/about-outbound-channels.md).
 
 Dit doet u als volgt:
 
@@ -32,4 +32,4 @@ Dit doet u als volgt:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [&#x200B; de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)

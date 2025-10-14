@@ -30,7 +30,7 @@ U doet dit door de desbetreffende leveringen te selecteren, vervolgens met de re
 
 ### Een type analyse selecteren {#selecting-a-type-of-analysis}
 
-In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Adobe Campaign biedt standaard twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]** . Voor meer op dit verwijs naar [ het Vormen van de kwalitatieve verdelingsmalplaatje ](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) sectie. De diverse teruggaven worden voorgesteld in [ Ongeveer beschrijvende analyse ](../../reporting/using/about-descriptive-analysis.md) sectie.
+In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Adobe Campaign biedt standaard twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]** . Voor meer op dit verwijs naar [&#x200B; het Vormen van de kwalitatieve verdelingsmalplaatje &#x200B;](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) sectie. De diverse teruggaven worden voorgesteld in [&#x200B; Ongeveer beschrijvende analyse &#x200B;](../../reporting/using/about-descriptive-analysis.md) sectie.
 
 In dit voorbeeld selecteert u de sjabloon **[!UICONTROL Qualitative distribution]** en kiest u een weergave met een diagram en een tabel (array). Geef het rapport een naam (&quot;Beschrijvende analyse&quot;) en klik op **[!UICONTROL Next]** .
 
@@ -64,7 +64,7 @@ Kies in dit geval het histogram.
 
 ![](assets/reporting_descriptive_quickstart_step_3.png)
 
-De mogelijke configuraties van de verschillende grafiek worden gedetailleerd in de [ sectie van de het rapportkaart van de Analyse opties ](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
+De mogelijke configuraties van de verschillende grafiek worden gedetailleerd in de [&#x200B; sectie van de het rapportkaart van de Analyse opties &#x200B;](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
 
 ### De te berekenen statistiek configureren {#configuring-the-statistic-to-calculate}
 
@@ -74,13 +74,13 @@ In dit venster kunt u de lijst met te berekenen statistieken definiëren.
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Klik op de knop **[!UICONTROL Add]** om een nieuwe statistiek te maken. Voor meer op dit, verwijs naar [ berekening van Statistieken ](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Klik op de knop **[!UICONTROL Add]** om een nieuwe statistiek te maken. Voor meer op dit, verwijs naar [&#x200B; berekening van Statistieken &#x200B;](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Het bekijken van en het gebruiken van het rapport {#viewing-and-using-the-report}
 
 De laatste stap van de medewerker toont de lijst en de grafiek.
 
-U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel. Voor meer op dit, verwijs naar [ Verwerking een rapport ](../../reporting/using/processing-a-report.md).
+U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel. Voor meer op dit, verwijs naar [&#x200B; Verwerking een rapport &#x200B;](../../reporting/using/processing-a-report.md).
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
@@ -181,7 +181,7 @@ U kunt gegevens opslaan, exporteren of afdrukken met de werkbalk boven de tabel.
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. Op dit punt kunt u of de **[!UICONTROL Existing analyses and reports]** optie selecteren en rapporten gebruiken die eerder worden gecreeerd (verwijs naar [ het Hergebruiken van bestaande rapporten en analyses ](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)), of tot een nieuwe beschrijvende analyse leiden. Hiervoor blijft de optie **[!UICONTROL New descriptive analysis from a template]** standaard geselecteerd.
+1. Op dit punt kunt u of de **[!UICONTROL Existing analyses and reports]** optie selecteren en rapporten gebruiken die eerder worden gecreeerd (verwijs naar [&#x200B; het Hergebruiken van bestaande rapporten en analyses &#x200B;](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)), of tot een nieuwe beschrijvende analyse leiden. Hiervoor blijft de optie **[!UICONTROL New descriptive analysis from a template]** standaard geselecteerd.
 
    De rest van de configuratie is hetzelfde als voor alle beschrijvende analyses.
 

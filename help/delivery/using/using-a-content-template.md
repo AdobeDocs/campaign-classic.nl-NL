@@ -18,9 +18,9 @@ ht-degree: 2%
 
 ## Over inhoudssjablonen {#about-content-templates}
 
-Er kan rechtstreeks naar inhoudssjablonen worden verwezen en deze kunnen worden gebruikt in leveringen. Verwijs naar [ Creërend een levering via inhoudsbeheer ](#creating-a-delivery-via-content-management)
+Er kan rechtstreeks naar inhoudssjablonen worden verwezen en deze kunnen worden gebruikt in leveringen. Verwijs naar [&#x200B; Creërend een levering via inhoudsbeheer &#x200B;](#creating-a-delivery-via-content-management)
 
-Ze kunnen ook worden gebruikt om inhoudsinstanties te maken. Zodra zij zijn gecreeerd, zijn deze instanties klaar om te worden geleverd (verwijs naar [ leverend een inhoudsinstantie ](#delivering-a-content-instance)) of uitgevoerd (verwijs naar [ Creërend een inhoudsinstantie ](#creating-a-content-instance)).
+Ze kunnen ook worden gebruikt om inhoudsinstanties te maken. Zodra zij zijn gecreeerd, zijn deze instanties klaar om te worden geleverd (verwijs naar [&#x200B; leverend een inhoudsinstantie &#x200B;](#delivering-a-content-instance)) of uitgevoerd (verwijs naar [&#x200B; Creërend een inhoudsinstantie &#x200B;](#creating-a-content-instance)).
 
 ## Levering maken via contentbeheer {#creating-a-delivery-via-content-management}
 
@@ -32,7 +32,7 @@ De lay-out wordt automatisch toegepast op basis van de geselecteerde instellinge
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Voor meer op dit, verwijs naar het volledige implementatievoorbeeld: [ Creërend inhoud in de leveringsmedewerker ](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
+Voor meer op dit, verwijs naar het volledige implementatievoorbeeld: [&#x200B; Creërend inhoud in de leveringsmedewerker &#x200B;](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
 
 ## Inhoudsinstanties maken {#creating-a-content-instance}
 
@@ -70,13 +70,13 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Voor meer op dit, verwijs naar [ Creërend en vormend het malplaatje ](publication-templates.md#creating-and-configuring-the-template).
+   >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Voor meer op dit, verwijs naar [&#x200B; Creërend en vormend het malplaatje &#x200B;](publication-templates.md#creating-and-configuring-the-template).
 
    De inhoud van de HTML en van de Tekst wordt geproduceerd door gebrek in **het publiceren** omslag van de instantie van Adobe Campaign. U kunt de publicatiemap dankzij de **NcmPublishingDir** optie veranderen.
 
 ## Inhoudsinstantie leveren {#delivering-a-content-instance}
 
-Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Voor meer op dit, verwijs naar [ Levering ](publication-templates.md#delivery).
+Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Voor meer op dit, verwijs naar [&#x200B; Levering &#x200B;](publication-templates.md#delivery).
 
 Bovendien moet de opslagmap voor inhoud worden toegewezen aan inhoud die is ontleend aan deze publicatiesjabloon (wanneer u met een inhoudsmap meerdere typen inhoud kunt genereren, kunnen leveringen niet automatisch worden gemaakt).
 

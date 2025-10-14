@@ -67,11 +67,11 @@ Er zijn vier typen webinterfaces beschikbaar:
 
   ![](assets/mkt_distr_8.png)
 
-  Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het veld **[!UICONTROL web Interface]** in de koppeling **[!UICONTROL Advanced campaign settings...]** van de sjabloon. Verwijs naar [ Creërend een lokale campagne (door vorm) ](examples.md#creating-a-local-campaign--by-form-).
+  Het aangeboden formulier wordt opgegeven in een webtoepassing die moet worden geselecteerd in een vervolgkeuzelijst in het veld **[!UICONTROL web Interface]** in de koppeling **[!UICONTROL Advanced campaign settings...]** van de sjabloon. Verwijs naar [&#x200B; Creërend een lokale campagne (door vorm) &#x200B;](examples.md#creating-a-local-campaign--by-form-).
 
   >[!NOTE]
   >
-  >De webtoepassing die in dit voorbeeld wordt gebruikt, is een voorbeeld. U moet een specifieke web-app maken om een formulier te kunnen gebruiken. Verwijs naar [ API ](../../configuration/using/about-web-services.md).
+  >De webtoepassing die in dit voorbeeld wordt gebruikt, is een voorbeeld. U moet een specifieke web-app maken om een formulier te kunnen gebruiken. Verwijs naar [&#x200B; API &#x200B;](../../configuration/using/about-web-services.md).
 
   ![](assets/mkt_distr_7.png)
 
@@ -157,7 +157,7 @@ Sla uw campagnemalplaatje op. U kunt deze nu gebruiken vanuit de **[!UICONTROL C
 
 >[!NOTE]
 >
->De malplaatjes van de campagne en hun algemene configuratie worden gedetailleerd in [ malplaatjes van de Campagne ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>De malplaatjes van de campagne en hun algemene configuratie worden gedetailleerd in [&#x200B; malplaatjes van de Campagne &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ## Het campagnepakket maken {#creating-the-campaign-package}
 
@@ -218,7 +218,7 @@ Vanaf het tabblad **[!UICONTROL General]** kan de centrale entiteit:
 
 ### Meldingen {#notifications}
 
-Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. Voor meer op dit, verwijs naar [ Organisatorische entiteiten ](about-distributed-marketing.md#organizational-entities).
+Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. Voor meer op dit, verwijs naar [&#x200B; Organisatorische entiteiten &#x200B;](about-distributed-marketing.md#organizational-entities).
 
 ## Een campagne bestellen {#ordering-a-campaign}
 
@@ -240,7 +240,7 @@ Een campagne bestellen:
 
    >[!NOTE]
    >
-   >De toepassingen van het Web zijn gedetailleerd in [ deze sectie ](../../web/using/about-web-applications.md).
+   >De toepassingen van het Web zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/about-web-applications.md).
 
 1. Voer de benodigde gegevens in op de eerste pagina (orderlabel en opmerking) en klik op **[!UICONTROL Next]** .
 
@@ -268,9 +268,9 @@ Een campagne bestellen:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Voor meer op dit, verwijs naar het [ proces van de Goedkeuring ](#approval-process) sectie.
+   Voor meer op dit, verwijs naar het [&#x200B; proces van de Goedkeuring &#x200B;](#approval-process) sectie.
 
-1. De lokale exploitant wordt dan meegedeeld dat de campagne beschikbaar is: campagnebeschikbaarheid kan in de lijst van campagnepakketten binnen de **Campagnes** tabel worden gevonden. De campagne kan dan worden gebruikt. Voor meer op dit, verwijs naar [ Toegang hebbend tot campagnes ](accessing-campaigns.md).
+1. De lokale exploitant wordt dan meegedeeld dat de campagne beschikbaar is: campagnebeschikbaarheid kan in de lijst van campagnepakketten binnen de **Campagnes** tabel worden gevonden. De campagne kan dan worden gebruikt. Voor meer op dit, verwijs naar [&#x200B; Toegang hebbend tot campagnes &#x200B;](accessing-campaigns.md).
 
    Met de optie **[!UICONTROL Start targeting with order approval]** kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
 
@@ -296,7 +296,7 @@ Wanneer een campagne wordt besteld door een lokale entiteit, worden de revisoren
 
 >[!NOTE]
 >
->Het selecteren van recensenten wordt voorgesteld in de [ sectie van recensenten ](#reviewers). Ze kunnen de bestelling accepteren of afwijzen.
+>Het selecteren van recensenten wordt voorgesteld in de [&#x200B; sectie van recensenten &#x200B;](#reviewers). Ze kunnen de bestelling accepteren of afwijzen.
 
 ![](assets/mkg_dist_command_valid_web.png)
 
@@ -316,7 +316,7 @@ Zodra een campagneorde wordt goedgekeurd, kan het door de lokale entiteit worden
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-Voor meer op dit, verwijs naar [ Toegang hebbend tot campagnes ](accessing-campaigns.md).
+Voor meer op dit, verwijs naar [&#x200B; Toegang hebbend tot campagnes &#x200B;](accessing-campaigns.md).
 
 ### Afwijzing van een goedkeuring {#rejecting-an-approval}
 
@@ -338,7 +338,7 @@ Ze kunnen de verwante opmerking weergeven op het tabblad **[!UICONTROL Edit]** v
 
 Elke keer dat goedkeuring wordt vereist, worden revisoren via e-mail op de hoogte gesteld.
 
-Voor elke lokale entiteit worden revisoren geselecteerd voor goedkeuring van de campagneorder en goedkeuring van de campagne. Voor meer informatie bij het selecteren van lokale recensenten, verwijs naar [ Organisatorische entiteiten ](about-distributed-marketing.md#organizational-entities).
+Voor elke lokale entiteit worden revisoren geselecteerd voor goedkeuring van de campagneorder en goedkeuring van de campagne. Voor meer informatie bij het selecteren van lokale recensenten, verwijs naar [&#x200B; Organisatorische entiteiten &#x200B;](about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >

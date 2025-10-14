@@ -19,12 +19,12 @@ ht-degree: 2%
 
 ## Context
 
-Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als deel van ons [ Jaarlijks Initiatief van de Verbetering ](../../rn/using/rn-overview.md#yearly-upgrade), bewegen wij al onze klanten aan Adobe Managed Services (Openbare Wolk op AWS) om betere en betrouwbaardere diensten te verlenen.
+Als gewaardeerde Adobe Campaign Classic-klant zijn wij vastbesloten u de beste ervaring en waarde te bieden. In de loop der jaren hebben we de waarde en betrouwbaarheid ingezien van het hosten van onze klanten in de cloud.  Als deel van ons [&#x200B; Jaarlijks Initiatief van de Verbetering &#x200B;](../../rn/using/rn-overview.md#yearly-upgrade), bewegen wij al onze klanten aan Adobe Managed Services (Openbare Wolk op AWS) om betere en betrouwbaardere diensten te verlenen.
 
 Dit programma heeft drie hoofddoelstellingen:
 
 * Oplossing van geïdentificeerde beveiligingskwetsbaarheden door de infrastructuur te verplaatsen naar een beveiligde en moderne omgeving (AWS).
-* Elimineer potentieel omslachtige het schrapen processen, verstrek toegang tot onze [ Verbeterde MTAs ](../../delivery/using//sending-with-enhanced-mta.md) en verbeter alle niveaus van de onderhoudsdienst.
+* Elimineer potentieel omslachtige het schrapen processen, verstrek toegang tot onze [&#x200B; Verbeterde MTAs &#x200B;](../../delivery/using//sending-with-enhanced-mta.md) en verbeter alle niveaus van de onderhoudsdienst.
 * Bereid uw exemplaar voor voor de toekomst van Adobe Campaign Classic, met inbegrip van meer geautomatiseerde, regelmatige upgrades die niet zo veel middelen, noch zoveel tijd zullen vereisen.
 
 ### Verklarende woordenlijst
@@ -78,13 +78,13 @@ Dit programma heeft drie hoofddoelstellingen:
 
 Om deze inspanning op gang te brengen, zullen de rekeningen die deze migratie vereisen een e-mailmededeling van Adobe ontvangen die een chronologie en toegang tot documentatie verstrekken. Dit is uw melding dat uw account is gepland voor migratie.
 
-Een migratie kan worden in werking gesteld door [ een nieuw de steunkaartje van de Zorg van de Klant te openen ](https://experienceleague.adobe.com/nl?support-solution=Campaign#support). Gebruik de onderwerpregel &#39;Migreren naar AWS&#39;.
+Een migratie kan worden in werking gesteld door [&#x200B; een nieuw de steunkaartje van de Zorg van de Klant te openen &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Campaign#support). Gebruik de onderwerpregel &#39;Migreren naar AWS&#39;.
 
 ### Is deze migratie verplicht?
 
-Deze migratie aan de Wolk is **eerste stap aan het [ jaarlijkse verbeteringsprogramma](../../rn/using/rn-overview.md#yearly-upgrade)** van uw instanties van Adobe Campaign. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
+Deze migratie aan de Wolk is **eerste stap aan het [&#x200B; jaarlijkse verbeteringsprogramma](../../rn/using/rn-overview.md#yearly-upgrade)** van uw instanties van Adobe Campaign. Deze migratie is verplicht als u wordt gehost in een datacenter dat niet de openbare cloud (AWS) is.
 
-De Adobe Managed Services cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [ leer meer over AWS ](https://aws.amazon.com/application-hosting/benefits/).
+De Adobe Managed Services cloud wordt gehost op Amazon Web Services (AWS), een moderne, veilige en geoptimaliseerde omgeving. [&#x200B; leer meer over AWS &#x200B;](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe is van plan het oude datacenter uit te schakelen, Adobe Campaign-instanties die daar actief zijn, moeten worden overgebracht naar het nieuwe referentiecentrum in AWS.
 
@@ -105,7 +105,7 @@ We hebben enorme inspanningen gedaan om technologieën te ontwikkelen die deze m
 * IP verandering voor gegevensintegratie.
 * De oprijving van de leverbaarheid van nieuwe verzendende IPs. Het is echter de bedoeling om deze operatie transparant te maken voor het bedrijf, in tegenstelling tot de eerste oprijplaat die tijdens het liveproces wordt uitgevoerd.
 
-Leer meer in de migratie van de Campagne aan [ Openbare Cloud FAQ ](dc-migration-faq.md).
+Leer meer in de migratie van de Campagne aan [&#x200B; Openbare Cloud FAQ &#x200B;](dc-migration-faq.md).
 
 
 ## Migratiepad naar openbare cloud

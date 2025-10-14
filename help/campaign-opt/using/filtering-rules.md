@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Met filterregels kunt u de berichten definiëren die u wilt uitsluiten op basis van criteria die in een query zijn gedefinieerd. Deze regels zijn gekoppeld aan een doelgerichte dimensie.
 
-Het filtreren van regels kan met andere soorten regels (controle, druk, enz.) in typologieën worden verbonden, of in een specifieke **het Filtreren** typologie worden gegroepeerd. Voor meer op dit, verwijs naar [ Creërend en gebruikend een het filtreren typologie ](#creating-and-using-a-filtering-typology).
+Het filtreren van regels kan met andere soorten regels (controle, druk, enz.) in typologieën worden verbonden, of in een specifieke **het Filtreren** typologie worden gegroepeerd. Voor meer op dit, verwijs naar [&#x200B; Creërend en gebruikend een het filtreren typologie &#x200B;](#creating-and-using-a-filtering-typology).
 
 ## Een filterregel maken {#creating-a-filtering-rule}
 

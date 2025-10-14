@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. Het algemene concept van dwars-kanaalleveringen wordt voorgesteld in [ deze sectie ](cross-channel-deliveries.md).
+In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. Het algemene concept van dwars-kanaalleveringen wordt voorgesteld in [&#x200B; deze sectie &#x200B;](cross-channel-deliveries.md).
 
 Het doel is een publiek van de ontvangers van uw gegevensbestand in verschillende groepen te segmenteren met als doel een e-mail naar een groep en een SMS-bericht naar een andere groep te verzenden.
 
@@ -38,7 +38,7 @@ De belangrijkste stappen voor de implementatie van dit gebruiksgeval zijn als vo
 Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
 1. Maak een campagne. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
-1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](query.md).
+1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](query.md).
 1. Bepaal de ontvangers die uw leveringen zullen ontvangen. Selecteer bijvoorbeeld &#39;Gold&#39;-leden als doeldimensie.
 1. Voeg filtervoorwaarden aan uw vraag toe. Selecteer in dit voorbeeld ontvangers met een e-mailadres en een mobiel nummer.
 
@@ -48,12 +48,12 @@ Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
 ## Stap 2: Een e-mail maken met een aanbieding {#step-2--creating-an-email-including-an-offer}
 
-1. Maak een **[!UICONTROL Email delivery]** -activiteit en dubbelklik erop in de workflow om deze te bewerken. Voor meer bij het creëren van een e-mail, verwijs naar [ deze sectie ](../../delivery/using/about-email-channel.md).
+1. Maak een **[!UICONTROL Email delivery]** -activiteit en dubbelklik erop in de workflow om deze te bewerken. Voor meer bij het creëren van een e-mail, verwijs naar [&#x200B; deze sectie &#x200B;](../../delivery/using/about-email-channel.md).
 1. Ontwerp het bericht en voeg een verbinding met inbegrip van een aanbieding in de inhoud op.
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Voor meer bij het integreren van een aanbieding in het lichaam van een bericht, verwijs naar [ deze sectie ](../../interaction/using/integrating-an-offer-via-the-wizard.md#delivering-with-a-call-to-the-offer-engine).
+   Voor meer bij het integreren van een aanbieding in het lichaam van een bericht, verwijs naar [&#x200B; deze sectie &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md#delivering-with-a-call-to-the-offer-engine).
 
 1. Sla uw wijzigingen op.
 1. Klik met de rechtermuisknop op de **[!UICONTROL Email delivery]** -activiteit om deze te openen.
@@ -71,7 +71,7 @@ Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
 Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het doel in verschillende populaties segmenteren gebruikend het filtreren voorwaarden.
 
-1. Voeg a **Gesplitste** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](split.md).
+1. Voeg a **Gesplitste** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](split.md).
 1. Creeer drie segmenten van de bevolking die stroomopwaarts in de vraag wordt berekend.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -111,10 +111,10 @@ Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het
    * Voeg een **[!UICONTROL Mobile delivery]** -activiteit toe om een SMS-bericht naar de tweede subset te verzenden.
    * Voeg een **[!UICONTROL List update]** activiteit toe om de overeenkomstige ontvangers aan het gegevensbestand toe te voegen.
 
-1. Dubbelklik op de leveringsactiviteiten in uw workflow om deze te bewerken. Voor meer bij het creëren van een e-mail en een SMS, verwijs naar [ E-mailkanaal ](../../delivery/using/about-email-channel.md) en [ het kanaal van SMS ](../../delivery/using/sms-channel.md).
+1. Dubbelklik op de leveringsactiviteiten in uw workflow om deze te bewerken. Voor meer bij het creëren van een e-mail en een SMS, verwijs naar [&#x200B; E-mailkanaal &#x200B;](../../delivery/using/about-email-channel.md) en [&#x200B; het kanaal van SMS &#x200B;](../../delivery/using/sms-channel.md).
 1. Dubbelklik op de **[!UICONTROL List update]** -activiteit en selecteer de optie **[!UICONTROL Generate an outbound transition]** .
 
-   Vervolgens kunt u de resulterende ontvangers van Adobe Campaign naar de Adobe Experience Cloud exporteren. U kunt bijvoorbeeld het publiek in Adobe Target gebruiken door een **[!UICONTROL Update shared audience]** -activiteit aan de workflow toe te voegen. Voor meer op dit, verwijs naar [ Exporterend een publiek ](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
+   Vervolgens kunt u de resulterende ontvangers van Adobe Campaign naar de Adobe Experience Cloud exporteren. U kunt bijvoorbeeld het publiek in Adobe Target gebruiken door een **[!UICONTROL Update shared audience]** -activiteit aan de workflow toe te voegen. Voor meer op dit, verwijs naar [&#x200B; Exporterend een publiek &#x200B;](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
 
 1. Klik de **knoop van het Begin** in de actiebar om het werkschema uit te voeren.
 

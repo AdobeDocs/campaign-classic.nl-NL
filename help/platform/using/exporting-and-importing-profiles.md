@@ -20,7 +20,7 @@ ht-degree: 16%
 
 
 
-U kunt [ werkschema&#39;s ](#use-workflows) gebruiken om ontvangende profielen in het gegevensbestand van Adobe Campaign in te voeren of uit te voeren, of opstelling [ generische invoer of de uitvoerbanen ](#create-jobs).
+U kunt [&#x200B; werkschema&#39;s &#x200B;](#use-workflows) gebruiken om ontvangende profielen in het gegevensbestand van Adobe Campaign in te voeren of uit te voeren, of opstelling [&#x200B; generische invoer of de uitvoerbanen &#x200B;](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#import-profiles-video)
 

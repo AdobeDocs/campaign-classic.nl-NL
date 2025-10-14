@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Sjabloonpublicatie {#template-publication}
 
-Wanneer het [ berichtmalplaatje ](../../message-center/using/creating-the-message-template.md) op de controleinstantie wordt gecreeerd volledig is en zodra u [&#128279;](../../message-center/using/testing-message-templates.md) het hebt getest, kunt u het publiceren. Dit proces zal het op alle uitvoeringsinstanties ook publiceren.
+Wanneer het [&#x200B; berichtmalplaatje &#x200B;](../../message-center/using/creating-the-message-template.md) op de controleinstantie wordt gecreeerd volledig is en zodra u [&#128279;](../../message-center/using/testing-message-templates.md) het hebt getest, kunt u het publiceren. Dit proces zal het op alle uitvoeringsinstanties ook publiceren.
 
 De publicatie laat u automatisch **twee berichtmalplaatjes** op de uitvoeringsinstanties creëren, die u zullen toestaan om berichten te verzenden verbonden aan **gebeurtenissen in real time** en **partijgebeurtenissen**.
 
@@ -42,7 +42,7 @@ Wanneer de publicatie is voltooid, worden zowel berichtsjablonen die moeten word
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Zodra een malplaatje wordt gepubliceerd, als de overeenkomstige gebeurtenis wordt teweeggebracht, zal de uitvoeringsinstantie de gebeurtenis ontvangen, zal het verbinden met het transactiesjabloon en het overeenkomstige transactiemelding naar elke ontvanger verzenden. Voor meer op dit, zie [ verwerking van de Gebeurtenis ](../../message-center/using/about-event-processing.md).
+Zodra een malplaatje wordt gepubliceerd, als de overeenkomstige gebeurtenis wordt teweeggebracht, zal de uitvoeringsinstantie de gebeurtenis ontvangen, zal het verbinden met het transactiesjabloon en het overeenkomstige transactiemelding naar elke ontvanger verzenden. Voor meer op dit, zie [&#x200B; verwerking van de Gebeurtenis &#x200B;](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Zodra een malplaatje wordt gepubliceerd, als de overeenkomstige gebeurtenis word
 
 ## Publicatie van sjabloon ongedaan maken {#template-unpublication}
 
-Zodra een berichtmalplaatje op de uitvoeringsinstanties wordt gepubliceerd, kan het unpublished. Voor meer op het proces van de malplaatjepublicatie, zie [ deze sectie ](#template-publication).
+Zodra een berichtmalplaatje op de uitvoeringsinstanties wordt gepubliceerd, kan het unpublished. Voor meer op het proces van de malplaatjepublicatie, zie [&#x200B; deze sectie &#x200B;](#template-publication).
 
 * Een gepubliceerde sjabloon kan zelfs nog steeds worden aangeroepen als de bijbehorende gebeurtenis wordt geactiveerd: als u geen berichtsjabloon meer gebruikt, wordt aangeraden de publicatie ongedaan te maken. Dit om te voorkomen dat er per ongeluk een ongewenste transactiemelding wordt verzonden.
 
@@ -82,7 +82,7 @@ Zodra de publicatie is voltooid:
 
 * Beide berichtmalplaatjes (die op partij en real-time typegebeurtenissen worden toegepast) worden geschrapt van elke uitvoeringsinstantie.
 
-  Zij verschijnen niet meer in de **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** omslag (zie [ deze sectie ](#template-publication)).
+  Zij verschijnen niet meer in de **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** omslag (zie [&#x200B; deze sectie &#x200B;](#template-publication)).
 
 * Zodra een malplaatje unpublished is, kunt u het van de controleinstantie schrappen.
 

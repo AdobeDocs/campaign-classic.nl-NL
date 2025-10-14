@@ -55,11 +55,11 @@ Dit type van configuratie kan een groot aantal ontvangers (500.000 tot 1.000.000
    * de eerste die aan het publiek wordt blootgesteld voor het volgen en aanwijzen van het taakverdelingsmechanisme op een virtueel IP adres (VIP) en die dan aan de twee frontale servers wordt verdeeld;
    * de tweede die aan de interne gebruikers voor toegang via de console wordt blootgesteld en aan de zelfde toepassingsserver richt.
 
-* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Voor verdere informatie, verwijs naar sectie [ toegang van het Gegevensbestand ](../../installation/using/network-configuration.md#database-access).
+* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostSQL, enz.) poorten. Voor verdere informatie, verwijs naar sectie [&#x200B; toegang van het Gegevensbestand &#x200B;](../../installation/using/network-configuration.md#database-access).
 
 ### De toepassingsserver installeren {#installing-the-application-server}
 
-Voer de stappen uit om een zelfstandige instantie van de Adobe Campaign-toepassingsserver te installeren tot de database is gemaakt (stap 12). Verwijs naar [ het Installeren en het vormen (enige machine) ](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Voer de stappen uit om een zelfstandige instantie van de Adobe Campaign-toepassingsserver te installeren tot de database is gemaakt (stap 12). Verwijs naar [&#x200B; het Installeren en het vormen (enige machine) &#x200B;](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Aangezien de computer geen volgende server is, neem niet de integratie met de server van het Web in rekening.
 
@@ -78,12 +78,12 @@ De stappen zijn als volgt:
 
 1. De Adobe Campaign-server installeren.
 
-   Voor meer op dit, verwijs naar [ Eerste vereisten van de installatie van de Campagne in Linux ](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [ Eerste vereisten van de installatie van de Campagne in Vensters ](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Vensters).
+   Voor meer op dit, verwijs naar [&#x200B; Eerste vereisten van de installatie van de Campagne in Linux &#x200B;](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [&#x200B; Eerste vereisten van de installatie van de Campagne in Vensters &#x200B;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Vensters).
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
-   * Voor Linux: [ Integratie in een server van het Web voor Linux ](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Voor Vensters: [ Integratie in een server van het Web voor Vensters ](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Voor Linux: [&#x200B; Integratie in een server van het Web voor Linux &#x200B;](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * Voor Vensters: [&#x200B; Integratie in een server van het Web voor Vensters &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Creeer de **demo** instantie. Er zijn twee manieren om dit te doen:
 
@@ -91,7 +91,7 @@ De stappen zijn als volgt:
 
      ![](assets/install_create_new_connexion.png)
 
-     Voor meer op dit, verwijs naar [ Creërend een instantie en het programma openen ](../../installation/using/creating-an-instance-and-logging-on.md).
+     Voor meer op dit, verwijs naar [&#x200B; Creërend een instantie en het programma openen &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 
      of
 
@@ -101,7 +101,7 @@ De stappen zijn als volgt:
      nlserver config -addinstance:demo/tracking.campaign.net*
      ```
 
-     Voor meer op dit, verwijs naar [ Creërend een instantie ](../../installation/using/command-lines.md#creating-an-instance).
+     Voor meer op dit, verwijs naar [&#x200B; Creërend een instantie &#x200B;](../../installation/using/command-lines.md#creating-an-instance).
 
    De naam van de instantie is gelijk aan die van de toepassingsserver.
 
@@ -133,7 +133,7 @@ De stappen zijn als volgt:
      >
      >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-     Voor meer op dit, verwijs naar [ montages van de Levering ](configure-delivery-settings.md).
+     Voor meer op dit, verwijs naar [&#x200B; montages van de Levering &#x200B;](configure-delivery-settings.md).
 
    * de overtollige het volgen servers in de omleidingsparameters:
 
@@ -142,9 +142,9 @@ De stappen zijn als volgt:
      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
      ```
 
-     Voor meer op dit, verwijs naar [ Overbodige het volgen ](configuring-campaign-server.md#redundant-tracking).
+     Voor meer op dit, verwijs naar [&#x200B; Overbodige het volgen &#x200B;](configuring-campaign-server.md#redundant-tracking).
 
-1. Begin de website en test redirection van URL: [ https://tracking.campaign.net/r/test ](https://tracking.campaign.net/r/test).
+1. Begin de website en test redirection van URL: [&#x200B; https://tracking.campaign.net/r/test &#x200B;](https://tracking.campaign.net/r/test).
 
    De browser moet de volgende berichten weergeven (afhankelijk van de URL die door het taakverdelingsmechanisme is omgeleid):
 
@@ -160,19 +160,19 @@ De stappen zijn als volgt:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [ lanceert de server van het Web en het testen van de configuratie ](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Voor Vensters: [ lanceert de server van het Web en het testen van de configuratie ](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Linux: [&#x200B; lanceert de server van het Web en het testen van de configuratie &#x200B;](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Vensters: [&#x200B; lanceert de server van het Web en het testen van de configuratie &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Start de Adobe Campaign-server.
 1. In de console van Adobe Campaign, verbind gebruikend **admin** login zonder een wachtwoord en lanceer de plaatsingstovenaar.
 
-   Voor meer op dit, verwijs naar [ het Opstellen van een instantie ](../../installation/using/deploying-an-instance.md).
+   Voor meer op dit, verwijs naar [&#x200B; het Opstellen van een instantie &#x200B;](../../installation/using/deploying-an-instance.md).
 
    De configuratie is identiek aan een standalone instantie behalve de configuratie van de volgende module.
 
 1. Vul de externe URL (die van het taakverdelingsmechanisme) die wordt gebruikt voor omleiding en de interne URL&#39;s van de twee frontale servers.
 
-   Voor meer op dit, verwijs naar [ het Volgen configuratie ](../../installation/using/deploying-an-instance.md#tracking-configuration).
+   Voor meer op dit, verwijs naar [&#x200B; het Volgen configuratie &#x200B;](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 

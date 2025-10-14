@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Het **leveringsoverzicht** laat u een overzicht in een campagnewerkschema gebruiken. De contouren moeten vooraf in de campagne zijn gemaakt.
 
-Voor meer informatie over leveringsoverzichten in Adobe Campaign, verwijs naar deze [ sectie ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Voor meer informatie over leveringsoverzichten in Adobe Campaign, verwijs naar deze [&#x200B; sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 Om de activiteit te vormen, moet u eenvoudig het overzicht selecteren u evenals de geplande contactdatum houdt van. U kunt het filtreren regels toevoegen door typologieën of typologieregels toe te voegen.
 
@@ -34,7 +34,7 @@ De **leveringsoverzicht** activiteit, beschikbaar in de campagnewerkschema&#39;s
 1. Voeg in een workflow een overzichtsactiviteit toe voordat u een leveringsactiviteit toevoegt.
 1. Geef in de overzichtsactiviteit van de levering de omtrek op die u wilt gebruiken.
 
-   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar deze [ sectie ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar deze [&#x200B; sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Vul de beschikbare velden in op basis van uw levering.
 1. Er zijn twee mogelijke gevallen:

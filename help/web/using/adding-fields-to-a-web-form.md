@@ -26,18 +26,18 @@ Selecteer het type veld dat u wilt toevoegen wanneer u de knoppen op de werkbalk
 
 De volgende veldtypen zijn beschikbaar:
 
-* Tekst/nummerinvoer. Zie [ Toevoegend inputgebieden ](#adding-input-fields).
-* Selectie vervolgkeuzelijst. Zie [ Toevoegend drop-down lijsten ](#adding-drop-down-lists).
-* Meerdere keuzen via selectievakjes. Zie [ Toevoegend checkboxes ](#adding-checkboxes).
-* Exclusieve selectie via keuzerondjes. Zie [ Toevoegend radioknopen ](#adding-radio-buttons).
-* Stem in een optieraster. Zie [ Toevoegend netten ](#adding-grids).
-* Getallen en datums. Zie [ Toevoegend data en aantallen ](#adding-dates-and-numbers).
-* Abonnement/abonnement op een voorlichtingsservice. Zie [ checkboxes van het Abonnement ](#subscription-checkboxes).
-* Captcha-validatie. Zie [ Invoegend a captcha ](#inserting-a-captcha).
-* Knop Downloaden. [ Uploading een dossier ](#uploading-a-file).
-* De constante Verborgen. Zie [ Invoegend een verborgen constante ](#inserting-a-hidden-constant).
+* Tekst/nummerinvoer. Zie [&#x200B; Toevoegend inputgebieden &#x200B;](#adding-input-fields).
+* Selectie vervolgkeuzelijst. Zie [&#x200B; Toevoegend drop-down lijsten &#x200B;](#adding-drop-down-lists).
+* Meerdere keuzen via selectievakjes. Zie [&#x200B; Toevoegend checkboxes &#x200B;](#adding-checkboxes).
+* Exclusieve selectie via keuzerondjes. Zie [&#x200B; Toevoegend radioknopen &#x200B;](#adding-radio-buttons).
+* Stem in een optieraster. Zie [&#x200B; Toevoegend netten &#x200B;](#adding-grids).
+* Getallen en datums. Zie [&#x200B; Toevoegend data en aantallen &#x200B;](#adding-dates-and-numbers).
+* Abonnement/abonnement op een voorlichtingsservice. Zie [&#x200B; checkboxes van het Abonnement &#x200B;](#subscription-checkboxes).
+* Captcha-validatie. Zie [&#x200B; Invoegend a captcha &#x200B;](#inserting-a-captcha).
+* Knop Downloaden. [&#x200B; Uploading een dossier &#x200B;](#uploading-a-file).
+* De constante Verborgen. Zie [&#x200B; Invoegend een verborgen constante &#x200B;](#inserting-a-hidden-constant).
 
-Geef de opslagmodus voor reacties op: werk een veld in de database bij (sla alleen de laatste opgeslagen waarde op) of sla het veld op in een variabele (het antwoord wordt niet opgeslagen). Voor meer op dit, verwijs naar [ de opslaggebieden van de Reactie ](web-forms-answers.md#response-storage-fields).
+Geef de opslagmodus voor reacties op: werk een veld in de database bij (sla alleen de laatste opgeslagen waarde op) of sla het veld op in een variabele (het antwoord wordt niet opgeslagen). Voor meer op dit, verwijs naar [&#x200B; de opslaggebieden van de Reactie &#x200B;](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
   ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Aantal**: laat de gebruiker een aantal op één lijn ingaan. voor meer op dit, verwijs naar [ Toevoegend aantallen ](#adding-numbers).
+* **Aantal**: laat de gebruiker een aantal op één lijn ingaan. voor meer op dit, verwijs naar [&#x200B; Toevoegend aantallen &#x200B;](#adding-numbers).
 
-  Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Voor meer op dit, verwijs naar [ het bepalen van controlemontages ](form-rendering.md#defining-control-settings).
+  Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Voor meer op dit, verwijs naar [&#x200B; het bepalen van controlemontages &#x200B;](form-rendering.md#defining-control-settings).
 
 * **Wachtwoord**: laat de gebruiker tekst op één enkele lijn ingaan. Tijdens tekstinvoer worden de tekens vervangen door punten:
 
@@ -118,9 +118,9 @@ De antwoordopslagmodus kan worden gewijzigd via de koppeling **[!UICONTROL Edit 
 
 >[!NOTE]
 >
->De wijzen van de opslag zijn gedetailleerd in [ de opslaggebieden van de Reactie ](web-forms-answers.md#response-storage-fields)
+>De wijzen van de opslag zijn gedetailleerd in [&#x200B; de opslaggebieden van de Reactie &#x200B;](web-forms-answers.md#response-storage-fields)
 
-Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [ het bepalen van de lay-out van Webformulieren ](defining-web-forms-layout.md).
+Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [&#x200B; het bepalen van de lay-out van Webformulieren &#x200B;](defining-web-forms-layout.md).
 
 ## Vervolgkeuzelijsten toevoegen {#adding-drop-down-lists}
 
@@ -206,7 +206,7 @@ Als u een keuzerondje aan een formulierpagina wilt toevoegen, gaat u naar het me
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-Keuzerondjes worden gevormd op een gelijkaardige manier aan checkboxes (zie [ Toevoegend checkboxes ](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [ de opslaggebieden van de Reactie ](web-forms-answers.md#response-storage-fields).
+Keuzerondjes worden gevormd op een gelijkaardige manier aan checkboxes (zie [&#x200B; Toevoegend checkboxes &#x200B;](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [&#x200B; de opslaggebieden van de Reactie &#x200B;](web-forms-answers.md#response-storage-fields).
 
 ### Een lijst met knoppen toevoegen {#add-a-list-of-buttons}
 
@@ -239,7 +239,7 @@ Per rasterlijn kan slechts één optie worden geselecteerd.
 
 >[!NOTE]
 >
->In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar de tab **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]** . Zie [ Bepalend de positie van etiketten ](defining-web-forms-layout.md#defining-the-position-of-labels).
+>In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar de tab **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]** . Zie [&#x200B; Bepalend de positie van etiketten &#x200B;](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Datums en getallen toevoegen {#adding-dates-and-numbers}
 
@@ -265,7 +265,7 @@ Datums kunnen worden geselecteerd via een kalender of een vervolgkeuzelijst. U k
 
 >[!NOTE]
 >
->De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. Zie [ Vertaal een Webvorm ](translating-a-web-form.md).
+>De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. Zie [&#x200B; Vertaal een Webvorm &#x200B;](translating-a-web-form.md).
 
 In sommige gevallen (bijvoorbeeld bij het invoeren van geboortedata) kan het echter gemakkelijker zijn om vervolgkeuzelijsten te gebruiken.
 
@@ -313,7 +313,7 @@ Geef het label voor het selectievakje op en selecteer de desbetreffende informat
 
 >[!NOTE]
 >
->De diensten van de informatie zijn gedetailleerd in [ deze pagina ](../../delivery/using/managing-subscriptions.md).
+>De diensten van de informatie zijn gedetailleerd in [&#x200B; deze pagina &#x200B;](../../delivery/using/managing-subscriptions.md).
 
 De gebruiker abonneert zich op de service door de relevante optie te controleren.
 
@@ -367,7 +367,7 @@ U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoor
 
 Als u een uploadveld wilt invoegen in een formulierpagina, selecteert u het menu **[!UICONTROL Advanced controls > File...]** op de werkbalk van de pagina-editor.
 
-De geüploade bestanden worden standaard opgeslagen in bronbestanden die toegankelijk zijn via het menu **[!UICONTROL Resources > Online > Public resources]** . U kunt een script gebruiken om dit gedrag te wijzigen. Dit manuscript kan de functies gebruiken die in [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) worden bepaald, met inbegrip van die die dossiermanipulatie betreffen.
+De geüploade bestanden worden standaard opgeslagen in bronbestanden die toegankelijk zijn via het menu **[!UICONTROL Resources > Online > Public resources]** . U kunt een script gebruiken om dit gedrag te wijzigen. Dit manuscript kan de functies gebruiken die in [&#x200B; de documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) worden bepaald, met inbegrip van die die dossiermanipulatie betreffen.
 
 U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in een databaseveld. U kunt bijvoorbeeld het ontvangende schema uitbreiden om een koppeling naar op een bestand gebaseerde bronnen toe te voegen.
 

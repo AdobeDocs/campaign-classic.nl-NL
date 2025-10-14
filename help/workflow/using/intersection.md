@@ -26,7 +26,7 @@ Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor 
 
 ![](assets/s_user_segmentation_inter.png)
 
-Voor meer bij het vormen van en het gebruiken van de intersectieactiviteit, verwijs naar [ het Uithalen van gezamenlijke gegevens (Intersection) ](targeting-data.md#extracting-joint-data--intersection-).
+Voor meer bij het vormen van en het gebruiken van de intersectieactiviteit, verwijs naar [&#x200B; het Uithalen van gezamenlijke gegevens (Intersection) &#x200B;](targeting-data.md#extracting-joint-data--intersection-).
 
 Schakel de optie **[!UICONTROL Generate complement]** in als u de resterende populatie wilt verwerken. Het complement zal de samenvoeging bevatten van de resultaten van alle binnenkomende activiteiten min de doorsnede. Een extra uitgaande overgang zal dan aan de activiteit worden toegevoegd, als volgt:
 

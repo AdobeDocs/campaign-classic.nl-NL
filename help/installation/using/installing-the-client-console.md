@@ -20,7 +20,7 @@ De Console van de Cliënt van de campagne is een rijke cliënt die u toelaat om 
 
 Voordat u de clientconsole gaat installeren, moet u:
 
-* Controleer uw systeem en hulpmiddelverenigbaarheid met Adobe Campaign in de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Controleer uw systeem en hulpmiddelverenigbaarheid met Adobe Campaign in de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * URL van campagneserver ophalen
 * Je gebruikersgegevens ophalen
 * Microsoft Edge Webview2-runtime op uw systeem laten installeren (vanaf versie 7.3 voor build van Campaign Classic). [Meer informatie](#webview)
@@ -28,11 +28,11 @@ Voordat u de clientconsole gaat installeren, moet u:
 Het proces voor het installeren of bijwerken van de clientconsole is afhankelijk van uw implementatie van Adobe Campaign Classic.
 Controleer de onderstaande details om te begrijpen wat nodig is voor uw implementatie.
 
-![](assets/do-not-localize/how-to-video.png) ontdekt hoe te om de Cliënt van Adobe Campaign in [ video te installeren en te plaatsen ](#video)
+![](assets/do-not-localize/how-to-video.png) ontdekt hoe te om de Cliënt van Adobe Campaign in [&#x200B; video te installeren en te plaatsen &#x200B;](#video)
 
 >[!CAUTION]
 >
->* De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten **op de zelfde productversie** in werking stellen. De Adobe adviseert ook hoogst om **zelfde product te gebruiken bouwt**. Leer hoe te om uw Cliënt van de Campagne en versies van de Server in [ deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
+>* De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten **op de zelfde productversie** in werking stellen. De Adobe adviseert ook hoogst om **zelfde product te gebruiken bouwt**. Leer hoe te om uw Cliënt van de Campagne en versies van de Server in [&#x200B; deze sectie &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
 >
 >* De toegang tot de installatiemap waarin de console wordt geïnstalleerd zou tot de voorgenomen gebruiker moeten worden beperkt slechts, die ervoor zorgt dat de schrijftoestemmingen dienovereenkomstig worden beperkt.
 
@@ -42,7 +42,7 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 
 Vanuit Campaign Classic 7.3 is de build-versie van Microsoft Edge Webview 2 vereist voor elke consoleinstallatie.
 
-De webweergave wordt standaard geïnstalleerd als onderdeel van het besturingssysteem Windows 11. Als het niet reeds op uw systeem aanwezig is, zal de Installateur van de Console van het Campaign Classic u ertoe aanzetten om het van [ de website van de Ontwikkelaar van Microsoft ](https://www.adobe.com/go/acc-ms-webview2-runtime-download) te downloaden. De downloadkoppeling werkt niet in Internet Explorer 11, omdat Microsoft de ondersteuning heeft vervangen. Zorg ervoor dat u een andere browser gebruikt om de koppeling te openen.
+De webweergave wordt standaard geïnstalleerd als onderdeel van het besturingssysteem Windows 11. Als het niet reeds op uw systeem aanwezig is, zal de Installateur van de Console van het Campaign Classic u ertoe aanzetten om het van [&#x200B; de website van de Ontwikkelaar van Microsoft &#x200B;](https://www.adobe.com/go/acc-ms-webview2-runtime-download) te downloaden. De downloadkoppeling werkt niet in Internet Explorer 11, omdat Microsoft de ondersteuning heeft vervangen. Zorg ervoor dat u een andere browser gebruikt om de koppeling te openen.
 
 ## Op Adobe gehoste implementaties {#hosted-customers}
 
@@ -50,7 +50,7 @@ Als gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bi
 
 1. Adobe kan direct worden geïmplementeerd. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
-1. U kunt aan uw cliëntconsole(s) van [ Distributie van de Software downloaden ](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+1. U kunt aan uw cliëntconsole(s) van [&#x200B; Distributie van de Software downloaden &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 
    **de Gebruikers zullen toegang Admin vereisen om de update te voltooien. Als de gebruikers geen admin rechten hebben, zal een systeembeheerder aan alle cliëntconsoles moeten opstellen**
 
@@ -166,7 +166,7 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
 **Verwante onderwerpen**
 
-* [ Creërend een instantie en het programma openen ](../../installation/using/creating-an-instance-and-logging-on.md).
+* [&#x200B; Creërend een instantie en het programma openen &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 ## Video over zelfstudie
@@ -175,4 +175,4 @@ In deze video ziet u hoe u de Adobe Campaign-client installeert en instelt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra Campaign Classic hoe te video&#39;s zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

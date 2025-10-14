@@ -22,8 +22,8 @@ In dit gedeelte wordt de configuratie beschreven die in Adobe Campaign v7 moet w
 
 Daarnaast:
 
-* Als u van v5.11 migreert, moet u ook de configuratie voltooien die in [ wordt gedetailleerd deze sectie ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Als u van v6.02 migreert, moet u ook de configuratie voltooien die in [ wordt gedetailleerd deze sectie ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Als u van v5.11 migreert, moet u ook de configuratie voltooien die in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Als u van v6.02 migreert, moet u ook de configuratie voltooien die in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Tijdzones {#time-zones}
 
@@ -41,7 +41,7 @@ Om TIMESTAMP MET wijze TIMEZONE te gebruiken, moet u ook **- userTimestamptz:1**
 >
 >Het is mogelijk om timezone na migratie via de console (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** knoop) te veranderen.
 >
->Voor meer op tijdzonebeheer, verwijs naar [ deze sectie ](../../installation/using/time-zone-management.md).
+>Voor meer op tijdzonebeheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
@@ -57,7 +57,7 @@ Als u een **ORA 01805** fout tijdens postupgrade krijgt, betekent dit dat de dos
 
 1. Zorg ervoor dat de tijdzonebestanden op beide servers identiek zijn.
 
-Voor meer informatie, bezoek: [ https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004 ](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
+Voor meer informatie, bezoek: [&#x200B; https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004 &#x200B;](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 Een onjuiste uitlijning van de tijdzone tussen client en server kan ook enige vertraging veroorzaken. Daarom adviseren wij het gebruiken van de zelfde versie van de bibliotheek van het Oracle op de cliënt en serverkanten, moeten beide tijdstreken het zelfde zijn.
 
@@ -93,7 +93,7 @@ Adobe Campaign v7 impliceert het concept **veiligheidsstreken**. Elke gebruiker 
 
 **na postupgrade** (vóór het servernieuwe begin), moet u de veiligheidsstreken vormen.
 
-De configuratie van de veiligheidsstreek wordt gevonden in [ deze sectie ](../../installation/using/security-zones.md).
+De configuratie van de veiligheidsstreek wordt gevonden in [&#x200B; deze sectie &#x200B;](../../installation/using/security-zones.md).
 
 ### Gebruikerswachtwoorden {#user-passwords}
 
@@ -105,7 +105,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Voor meer informatie, verwijs naar [ deze sectie ](../../installation/using/configuring-campaign-server.md#internal-identifier) en [ deze sectie ](../../platform/using/access-management.md).
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Voor meer informatie, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/configuring-campaign-server.md#internal-identifier) en [&#x200B; deze sectie &#x200B;](../../platform/using/access-management.md).
 
 ### Nieuwe functies in v7 {#new-features-in-v7}
 
@@ -172,7 +172,7 @@ Nieuwe koppeling met de verbindingspagina:
 
 ### SQL-functies {#sql-functions}
 
-Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzonden. Momenteel, moeten alle SQL functies aan **xtk worden toegevoegd:funcList** schema (voor meer op dit, verwijs naar [ deze sectie ](../../configuration/using/adding-additional-sql-functions.md)). Tijdens het migreren wordt tijdens de postupgrade een optie toegevoegd waarmee u compatibiliteit met oude niet-gedeclareerde SQL-functies kunt behouden. Als u deze functies zou willen blijven gebruiken, controleer dat **XtkPassUnknownSQLFunctionsToRDBMS** optie inderdaad op het **[!UICONTROL Administration > Platform > Options]** knooppuntniveau wordt bepaald.
+Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzonden. Momenteel, moeten alle SQL functies aan **xtk worden toegevoegd:funcList** schema (voor meer op dit, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/adding-additional-sql-functions.md)). Tijdens het migreren wordt tijdens de postupgrade een optie toegevoegd waarmee u compatibiliteit met oude niet-gedeclareerde SQL-functies kunt behouden. Als u deze functies zou willen blijven gebruiken, controleer dat **XtkPassUnknownSQLFunctionsToRDBMS** optie inderdaad op het **[!UICONTROL Administration > Platform > Options]** knooppuntniveau wordt bepaald.
 
 >[!IMPORTANT]
 >
@@ -275,7 +275,7 @@ Daarom lanceer de postupgrade met het volgende bevel:
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-U moet de veiligheidsstreken vormen (verwijs naar [ Veiligheid ](#security)), dan de veiligheid opnieuw activeren door de optie te veranderen:
+U moet de veiligheidsstreken vormen (verwijs naar [&#x200B; Veiligheid &#x200B;](#security)), dan de veiligheid opnieuw activeren door de optie te veranderen:
 
 ```
 allowSQLInjection="false"
@@ -638,7 +638,7 @@ Er zijn twee families voor webtoepassingen:
 
 ### Geïdentificeerde webtoepassingen {#identified-web-applications}
 
-Enkel zoals voor rapporten ([ leert meer ](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
+Enkel zoals voor rapporten ([&#x200B; leert meer &#x200B;](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
 
 Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u om het even welke verbindingsproblemen in uw geïdentificeerde Webtoepassingen ontmoet, moet u **allowUserPassword** en **sessionTokenOnly** opties in het **serverConf.xml** dossier tijdelijk activeren. Na de postupgrade wijzigt u de volgende waarden voor opties:
 

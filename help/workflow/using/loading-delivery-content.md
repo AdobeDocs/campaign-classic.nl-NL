@@ -56,4 +56,4 @@ Dit doet u als volgt:
 
 >[!NOTE]
 >
->De beste praktijken en het oplossen van problemen op het servergebruik van SFTP zijn gedetailleerd [ in deze pagina ](../../platform/using/sftp-server-usage.md).
+>De beste praktijken en het oplossen van problemen op het servergebruik van SFTP zijn gedetailleerd [&#x200B; in deze pagina &#x200B;](../../platform/using/sftp-server-usage.md).

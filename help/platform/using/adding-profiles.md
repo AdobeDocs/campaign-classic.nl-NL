@@ -19,13 +19,13 @@ ht-degree: 3%
 
 
 
-In de meeste gevallen, worden de profielen ingevoerd [ aan Campagne door een werkschema ](../../platform/using/import-export-workflows.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
+In de meeste gevallen, worden de profielen ingevoerd [&#x200B; aan Campagne door een werkschema &#x200B;](../../platform/using/import-export-workflows.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
 
 ![](assets/s_ncs_user_profile_add.png)
 
 >[!NOTE]
 >
->Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8.](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Meer op leren hoe te om profielen in de Console van Adobe Campaign tot stand te brengen, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8.](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

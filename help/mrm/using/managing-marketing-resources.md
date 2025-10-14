@@ -101,7 +101,7 @@ Indien nodig, kunt u het van het dashboard ook manueel ontgrendelen.
 
 Voor elke bron kunt u op het tabblad **[!UICONTROL Forum]** informatie uitwisselen tussen deelnemers.
 
-[ de forums van de Bespreking ](../../mrm/using/discussion-forums.md) verklaart hoe de besprekingsforums in Adobe Campaign werken.
+[&#x200B; de forums van de Bespreking &#x200B;](../../mrm/using/discussion-forums.md) verklaart hoe de besprekingsforums in Adobe Campaign werken.
 
 ## Levenscyclus van een marketingmiddel {#life-cycle-of-a-marketing-resource}
 
@@ -152,7 +152,7 @@ Adobe Campaign kan alleen publiceren als u een geschikte workflow maakt en deze 
 De workflow wordt uitgevoerd:
 
 * Wanneer de controleur op de koppeling **[!UICONTROL Publish resource]** klikt (of, als er geen controleur is gedefinieerd, op de persoon die de bron beheert).
-* Als het middel via een marketing middelaanmaaktaak wordt beheerd, zal het worden uitgevoerd wanneer de taak aan **[!UICONTROL Finished]** wordt geplaatst, zolang **[!UICONTROL Publish the marketing resource]** doos in de taak wordt gecontroleerd (verwijs naar [ het middelaanmaaktaak van de Marketing ](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
+* Als het middel via een marketing middelaanmaaktaak wordt beheerd, zal het worden uitgevoerd wanneer de taak aan **[!UICONTROL Finished]** wordt geplaatst, zolang **[!UICONTROL Publish the marketing resource]** doos in de taak wordt gecontroleerd (verwijs naar [&#x200B; het middelaanmaaktaak van de Marketing &#x200B;](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
 Als een werkstroom niet onmiddellijk wordt gestart (als de werkstroom bijvoorbeeld wordt gestopt), verandert de status van de bron in **[!UICONTROL Pending publication]** . Zodra de werkstroom is gestart, verandert de status van de bron in **[!UICONTROL Published]** . Deze status houdt geen rekening met mogelijke fouten in het publicatieproces. Controleer de status van uw workflow om er zeker van te zijn dat deze correct is uitgevoerd.
 
@@ -164,7 +164,7 @@ Marketingbronnen kunnen aan campagnes worden gekoppeld, op voorwaarde dat deze f
 
 >[!NOTE]
 >
->Voor details op om campagnemalplaatjes tot stand te brengen en te vormen, verwijs naar [ malplaatjes van de Campagne ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Voor details op om campagnemalplaatjes tot stand te brengen en te vormen, verwijs naar [&#x200B; malplaatjes van de Campagne &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 Klik op het tabblad **[!UICONTROL Documents > Resources]** in het campagnedashboard en klik vervolgens op **[!UICONTROL Add]** om de betreffende bron te selecteren.
 
@@ -188,7 +188,7 @@ Marketingbronnen kunnen worden gekoppeld aan leveringen via leveringscontouren.
 
 >[!NOTE]
 >
->Voor meer informatie over leveringsoverzichten, verwijs naar [ het Associeren en het structureren van middelen verbonden via een leveringsoverzicht ](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+>Voor meer informatie over leveringsoverzichten, verwijs naar [&#x200B; het Associeren en het structureren van middelen verbonden via een leveringsoverzicht &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Voorraadbeheer {#stock-management}
 
@@ -196,7 +196,7 @@ U kunt een marketingbron koppelen aan een of meer voorraden om uw voorraad te be
 
 >[!NOTE]
 >
->Voor meer informatie over voorraadbeheer in Adobe Campaign, verwijs naar [ beheer van de Voorraad ](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
+>Voor meer informatie over voorraadbeheer in Adobe Campaign, verwijs naar [&#x200B; beheer van de Voorraad &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Als u een marketingbron aan een voorraad wilt koppelen, bewerkt u de aandelenkaart en bewerkt of maakt u een voorraad. Voeg een voorraadlijn toe en selecteer de overeenkomstige marketing middel.
 

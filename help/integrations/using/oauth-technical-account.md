@@ -20,9 +20,9 @@ Server-aan-server authentificatiegeloofsbrieven staan de server van uw toepassin
 
 De service Account (JWT)-referentie wordt door Adobe afgekeurd. Campagne-integratie met Adobe-oplossingen en -toepassingen moet nu afhankelijk zijn van OAuth Server-to-Server-referenties.
 
-Als u binnenkomende of uitgaande integratie met Campagne vóór Juni 2024 hebt uitgevoerd, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth zoals gedetailleerd [ in deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot **30 juni, 2025** blijven werken.
+Als u binnenkomende of uitgaande integratie met Campagne vóór Juni 2024 hebt uitgevoerd, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth zoals gedetailleerd [&#x200B; in deze documentatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) zullen tot **30 juni, 2025** blijven werken.
 
-Zodra de migratie wordt gedaan, moet u uw nieuwe geloofsbrieven aan Campagne zoals die in [ wordt verklaard deze sectie ](#add-credentials) associëren.
+Zodra de migratie wordt gedaan, moet u uw nieuwe geloofsbrieven aan Campagne zoals die in [&#x200B; wordt verklaard deze sectie &#x200B;](#add-credentials) associëren.
 
 ## Nieuwe technische OAuth-account maken voor nieuwe integratie {#oauth-service}
 
@@ -30,7 +30,7 @@ Ga als volgt te werk om uw technische OAuth-account voor nieuwe integraties te m
 
 1. De console van Adobe Developer van de toegang en login als **Beheerder van het Systeem** van uw Organisatie.
 
-   Voor meer informatie over rollen Admin, verwijs naar deze [ pagina ](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html).
+   Voor meer informatie over rollen Admin, verwijs naar deze [&#x200B; pagina &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html).
 
 1. Klik op **[!UICONTROL Create a new project]**.
 

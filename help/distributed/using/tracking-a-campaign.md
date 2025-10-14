@@ -21,10 +21,10 @@ De centrale entiteitexploitanten kunnen campagneorden in de lijst van campagnepa
 
 Hierdoor kunnen ze:
 
-* [ de pakketten van de Filter ](#filter-packages),
-* [ geef pakketten ](#edit-packages) uit,
-* [ annuleert een pakket ](#cancel-a-package),
-* [ herinitialiseer een pakket ](#reinitializing-a-package).
+* [&#x200B; de pakketten van de Filter &#x200B;](#filter-packages),
+* [&#x200B; geef pakketten &#x200B;](#edit-packages) uit,
+* [&#x200B; annuleert een pakket &#x200B;](#cancel-a-package),
+* [&#x200B; herinitialiseer een pakket &#x200B;](#reinitializing-a-package).
 
 ## Filterpakketten {#filter-packages}
 

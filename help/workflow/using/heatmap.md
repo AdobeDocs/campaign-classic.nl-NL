@@ -19,7 +19,7 @@ ht-degree: 3%
 
 De werkstroom HeatMap van de campagne bestaat uit een kleur-gecodeerde grafische vertegenwoordiging van alle werkschema&#39;s die momenteel lopen. Het is slechts beschikbaar aan **Beheerders van de Campagne**.
 
-Ontdek extra manieren om de processen van de Campagne in [ te controleren deze pagina ](../../production/using/monitoring-guidelines.md).
+Ontdek extra manieren om de processen van de Campagne in [&#x200B; te controleren deze pagina &#x200B;](../../production/using/monitoring-guidelines.md).
 
 ## Aan de slag met de workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -31,14 +31,14 @@ Meer bepaald, helpt het de platformbeheerders om:
 * Workflows filteren op duur om te zien in welke workflows problemen kunnen optreden
 * Filteren van activiteiten op duur om te zien welke activiteiten problemen kunnen tegenkomen
 * Gemakkelijk individuele workflows en alle verwante activiteiten (met hun duur) vinden
-* Filter door werkschematype: [ technische werkschema&#39;s ](building-a-workflow.md#technical-workflows) of [ campagnewerkschema&#39;s ](building-a-workflow.md#campaign-workflows)
+* Filter door werkschematype: [&#x200B; technische werkschema&#39;s &#x200B;](building-a-workflow.md#technical-workflows) of [&#x200B; campagnewerkschema&#39;s &#x200B;](building-a-workflow.md#campaign-workflows)
 * Zoeken naar een specifieke workflow die moet worden geanalyseerd
 
 >[!NOTE]
 >
->Naast **Heatmap van het Werkschema**, kunt u een werkschema tot stand brengen dat u het statuut van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Voor meer op dit, verwijs naar de [ specifieke sectie ](supervising-workflows.md).
+>Naast **Heatmap van het Werkschema**, kunt u een werkschema tot stand brengen dat u het statuut van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Voor meer op dit, verwijs naar de [&#x200B; specifieke sectie &#x200B;](supervising-workflows.md).
 
-Het gebruiken van het Werkschema HeatMap vereist om een goed begrip van de volgende concepten te hebben: [ Werkstromen ](about-workflows.md), [ Activiteiten ](about-activities.md) en [ Beste praktijken van het Werkschema ](workflow-best-practices.md).
+Het gebruiken van het Werkschema HeatMap vereist om een goed begrip van de volgende concepten te hebben: [&#x200B; Werkstromen &#x200B;](about-workflows.md), [&#x200B; Activiteiten &#x200B;](about-activities.md) en [&#x200B; Beste praktijken van het Werkschema &#x200B;](workflow-best-practices.md).
 
 ## De workflow HeatMap aanpassen {#using-the-heatmap}
 
@@ -56,7 +56,7 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed begrip van de volge
 
    >[!NOTE]
    >
-   >Alleen de workflows die niet zijn verwijderd door de **[!UICONTROL Database cleanup]** -workflow zijn zichtbaar. Voor meer op het opschoonwerkschema van het Gegevensbestand, verwijs naar [ deze sectie ](../../production/using/database-cleanup-workflow.md).\
+   >Alleen de workflows die niet zijn verwijderd door de **[!UICONTROL Database cleanup]** -workflow zijn zichtbaar. Voor meer op het opschoonwerkschema van het Gegevensbestand, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/database-cleanup-workflow.md).\
    >Door gebrek, is de de tijdzone van de Werkstroom HeatMap die voor de huidige beheerdergebruiker wordt bepaald. U kunt deze bijvoorbeeld wijzigen als u zich niet in hetzelfde gebied bevindt als de marketinggebruikers waarmee u werkt.
 
 1. Klik op de knop **[!UICONTROL Filters]**.
@@ -77,8 +77,8 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed begrip van de volge
 
 1. U kunt ook filteren op **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]**: Slechts [ uit-van-de doos-technische werkschema&#39;s ](building-a-workflow.md#technical-workflows) en [ werkschema&#39;s van het gegevensbeheer ](targeting-data.md#data-management) worden getoond.
-   * **[!UICONTROL Marketing]**: Slechts worden de werkschema&#39;s verbonden aan een marketing campagne, die als [ wordt bekend campagnewerkschema&#39;s ](building-a-workflow.md#campaign-workflows), getoond.
+   * **[!UICONTROL Technical]**: Slechts [&#x200B; uit-van-de doos-technische werkschema&#39;s &#x200B;](building-a-workflow.md#technical-workflows) en [&#x200B; werkschema&#39;s van het gegevensbeheer &#x200B;](targeting-data.md#data-management) worden getoond.
+   * **[!UICONTROL Marketing]**: Slechts worden de werkschema&#39;s verbonden aan een marketing campagne, die als [&#x200B; wordt bekend campagnewerkschema&#39;s &#x200B;](building-a-workflow.md#campaign-workflows), getoond.
 
 1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook het veld **[!UICONTROL Workflow name filter]** gebruiken.
 

@@ -18,13 +18,13 @@ ht-degree: 0%
 
 In een marketingcampagne kunt u voor elke levering het volgende definiëren:
 
-* Het publiek - leer meer in [ Bouwend het publiek in een werkschema ](#building-the-main-target-in-a-workflow) en [ Selecterend de doelbevolking ](#selecting-the-target-population).
-* Een controlegroep - leer meer in [ deze sectie ](#defining-a-control-group).
-* Zaadadressen - leer meer in [ deze sectie ](../../delivery/using/about-seed-addresses.md).
+* Het publiek - leer meer in [&#x200B; Bouwend het publiek in een werkschema &#x200B;](#building-the-main-target-in-a-workflow) en [&#x200B; Selecterend de doelbevolking &#x200B;](#selecting-the-target-population).
+* Een controlegroep - leer meer in [&#x200B; deze sectie &#x200B;](#defining-a-control-group).
+* Zaadadressen - leer meer in [&#x200B; deze sectie &#x200B;](../../delivery/using/about-seed-addresses.md).
 
-Sommige van deze informatie kan van het [ campagnemalplaatje ](../../campaign/using/marketing-campaign-templates.md#campaign-templates) worden geërft.
+Sommige van deze informatie kan van het [&#x200B; campagnemalplaatje &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates) worden geërft.
 
-Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers in het gegevensbestand bepalen. Deze ontvankelijke selectiewijze wordt voorgesteld in [ deze sectie ](../../delivery/using/steps-defining-the-target-population.md).
+Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers in het gegevensbestand bepalen. Deze ontvankelijke selectiewijze wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../delivery/using/steps-defining-the-target-population.md).
 
 ## Naar een groep verzenden
 
@@ -54,7 +54,7 @@ Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolg
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-De doelpopulatie wordt geëxtraheerd uit de Adobe Campaign-database via een of meer query&#39;s die in een workflow zijn geplaatst. Leren hoe te om een vraag te bouwen, verwijs naar [ deze sectie ](../../workflow/using/query.md).
+De doelpopulatie wordt geëxtraheerd uit de Adobe Campaign-database via een of meer query&#39;s die in een workflow zijn geplaatst. Leren hoe te om een vraag te bouwen, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
 
 U kunt query&#39;s starten en populaties delen via vakken zoals Union, Intersection, Sharing, Exclusion enzovoort.
 
@@ -66,7 +66,7 @@ In het diagram, verbind omhoog het richten en het plannen van vragen die voor do
 
 >[!NOTE]
 >
->De voorbeelden en de procedure om vragen te bepalen worden voorgesteld in [ deze sectie ](../../workflow/using/query.md).
+>De voorbeelden en de procedure om vragen te bepalen worden voorgesteld in [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
 
 Het linkergedeelte van de editor bevat een bibliotheek met grafische objecten die activiteiten vertegenwoordigen. Het eerste lusje bevat de het richten activiteiten, en het tweede lusje bevat de stroom-controle activiteiten, die af en toe worden gebruikt om het richten activiteiten te coördineren.
 
@@ -76,7 +76,7 @@ De functies voor het uitvoeren en opmaken van werkstromen voor het opgeven van d
 
 >[!NOTE]
 >
->De activiteiten beschikbaar om het diagram te bouwen evenals alle vertoning en lay-outeigenschappen zijn in [ het Automatiseren met werkschema&#39;s ](../../workflow/using/architecture.md) gids gedetailleerd.
+>De activiteiten beschikbaar om het diagram te bouwen evenals alle vertoning en lay-outeigenschappen zijn in [&#x200B; het Automatiseren met werkschema&#39;s &#x200B;](../../workflow/using/architecture.md) gids gedetailleerd.
 
 U kunt verschillende doelworkflows voor één campagne maken. Een workflow toevoegen:
 
@@ -193,7 +193,7 @@ U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-De configuratieprocedure wordt voorgesteld in [ Extracterend de controlegroep van het belangrijkste doel ](#extracting-the-control-group-from-the-main-target) en [ Toevoegend een controlegroep ](#adding-a-population).
+De configuratieprocedure wordt voorgesteld in [&#x200B; Extracterend de controlegroep van het belangrijkste doel &#x200B;](#extracting-the-control-group-from-the-main-target) en [&#x200B; Toevoegend een controlegroep &#x200B;](#adding-a-population).
 
 ### De controlegroep voor een levering activeren {#activating-the-control-group-for-a-delivery}
 
@@ -212,7 +212,7 @@ Door gebrek, is de configuratie van de controlegroep die op het campagneniveau w
 1. Klik op de tab **[!UICONTROL Control group]** en selecteer vervolgens **[!UICONTROL Enable and edit control group configuration]** .
 1. Klik **[!UICONTROL Edit...]** om de controlegroep te vormen.
 
-De configuratieprocedure wordt voorgesteld in [ Extracterend de controlegroep van het belangrijkste doel ](#extracting-the-control-group-from-the-main-target) en [ Toevoegend een controlegroep ](#adding-a-population).
+De configuratieprocedure wordt voorgesteld in [&#x200B; Extracterend de controlegroep van het belangrijkste doel &#x200B;](#extracting-the-control-group-from-the-main-target) en [&#x200B; Toevoegend een controlegroep &#x200B;](#adding-a-population).
 
 ### Extraheer de controlegroep uit het hoofddoel {#extracting-the-control-group-from-the-main-target}
 
@@ -229,7 +229,7 @@ Klik op **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Verwijs naar [ deze sectie ](../../workflow/using/architecture.md) voor meer informatie.
+Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/architecture.md) voor meer informatie.
 
 ### Een nieuwe populatie gebruiken als een controlegroep {#adding-a-population}
 
@@ -239,7 +239,7 @@ U kunt een nieuwe populatie definiëren die als een controlegroep moet worden ge
 
 >[!NOTE]
 >
->De vraagredacteur van Adobe Campaign wordt voorgesteld in [ deze sectie ](../../workflow/using/query.md).
+>De vraagredacteur van Adobe Campaign wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
 
 
 #### Video over zelfstudie {#create-email-video}
@@ -248,4 +248,4 @@ In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Ado
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-De extra campagne hoe-aan video&#39;s is beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra campagne hoe-aan video&#39;s is beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

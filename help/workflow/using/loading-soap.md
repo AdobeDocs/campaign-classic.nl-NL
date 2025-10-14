@@ -43,7 +43,7 @@ De bewerking is als volgt:
 
    Selecteer **[!UICONTROL Re-analyze the example]** als u het voorbeeld wilt bijwerken.
 
-   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]** . Voor meer bij het formatteren van ingevoerde gegevens, verwijs naar deze [ sectie ](../../platform/using/executing-import-jobs.md).
+   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]** . Voor meer bij het formatteren van ingevoerde gegevens, verwijs naar deze [&#x200B; sectie &#x200B;](../../platform/using/executing-import-jobs.md).
 
 1. U kunt het regelnummer als een identifier gebruiken en/of opgeven dat de SOAP-aanroep meerdere elementen retourneert.
 1. Voer de volgende tabscripts in op basis van hun functie:

@@ -22,7 +22,7 @@ Voer de volgende stappen uit om een testomgeving (sandboxmodus) te maken:
 
 >[!IMPORTANT]
 >
->Gebruik deze omgevingsmethode alleen voor testomgevingen. In alle andere gevallen, gebruik de medewerker van de doelafbeelding. Voor meer op dit, verwijs naar [ Creërend een aanbiedingsmilieu ](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Gebruik deze omgevingsmethode alleen voor testomgevingen. In alle andere gevallen, gebruik de medewerker van de doelafbeelding. Voor meer op dit, verwijs naar [&#x200B; Creërend een aanbiedingsmilieu &#x200B;](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Start de Adobe Campaign-verkenner en ga naar de hoofdmap van de instantie.
 1. Klik met de rechtermuisknop en voeg een **[!UICONTROL Generic folder]** toe via de vervolgkeuzemenu&#39;s.

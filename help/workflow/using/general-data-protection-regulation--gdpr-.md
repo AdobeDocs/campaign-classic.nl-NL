@@ -17,7 +17,7 @@ ht-degree: 2%
 
 
 
-De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **module van de Verordening van de Bescherming van Gegevens van de Privacy** door gebrek. Voor meer op deze module, verwijs naar dit [ artikel ](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
+De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **module van de Verordening van de Bescherming van Gegevens van de Privacy** door gebrek. Voor meer op deze module, verwijs naar dit [&#x200B; artikel &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 

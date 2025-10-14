@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Met de **[!UICONTROL Data loading (RDBMS)]** -activiteit hebt u rechtstreeks toegang tot deze externe database en kunt u alleen de gegevens verzamelen die vereist zijn voor het opgeven van doelen.
 
-Om prestaties te verbeteren, adviseren wij gebruikend de vraagactiviteit (waar de gegevens van een extern gegevensbestand kunnen worden gebruikt). Voor meer op dit, verwijs naar [ Toegang hebbend tot een extern gegevensbestand (FDA) ](accessing-an-external-database-fda.md).
+Om prestaties te verbeteren, adviseren wij gebruikend de vraagactiviteit (waar de gegevens van een extern gegevensbestand kunnen worden gebruikt). Voor meer op dit, verwijs naar [&#x200B; Toegang hebbend tot een extern gegevensbestand (FDA) &#x200B;](accessing-an-external-database-fda.md).
 
 De bewerking is als volgt:
 

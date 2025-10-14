@@ -25,11 +25,11 @@ Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
 * **[!UICONTROL Edit a recipient]**
 
-  U kunt een veld van de database selecteren: de antwoorden van gebruikers worden in dit veld opgeslagen. Voor elke gebruiker, slechts wordt de laatste ingegane waarde opgeslagen: het wordt toegevoegd aan hun profiel: Verwijs naar [ het Opslaan gegevens in het gegevensbestand ](#storing-data-in-the-database).
+  U kunt een veld van de database selecteren: de antwoorden van gebruikers worden in dit veld opgeslagen. Voor elke gebruiker, slechts wordt de laatste ingegane waarde opgeslagen: het wordt toegevoegd aan hun profiel: Verwijs naar [&#x200B; het Opslaan gegevens in het gegevensbestand &#x200B;](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-  Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Verwijs naar [ het Opslaan van gegevens in een lokale variabele ](#storing-data-in-a-local-variable).
+  Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Verwijs naar [&#x200B; het Opslaan van gegevens in een lokale variabele &#x200B;](#storing-data-in-a-local-variable).
 
 ### Gegevens opslaan in de database {#storing-data-in-the-database}
 
@@ -115,9 +115,9 @@ Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt 
 
 U kunt dit vak op twee manieren gebruiken:
 
-* Als het webformulier wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die de toepassing opent al in de database aanwezig is, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Voor meer op dit, verwijs naar [ Leverend een vorm via e-mail ](publishing-a-web-form.md#delivering-a-form-via-email).
+* Als het webformulier wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die de toepassing opent al in de database aanwezig is, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Voor meer op dit, verwijs naar [&#x200B; Leverend een vorm via e-mail &#x200B;](publishing-a-web-form.md#delivering-a-form-via-email).
 
-  In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Voor meer op dit, verwijs naar [ pre-ladend de vormgegevens ](publishing-a-web-form.md#pre-loading-the-form-data).
+  In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Voor meer op dit, verwijs naar [&#x200B; pre-ladend de vormgegevens &#x200B;](publishing-a-web-form.md#pre-loading-the-form-data).
 
   >[!CAUTION]
   >

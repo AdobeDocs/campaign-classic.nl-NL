@@ -29,7 +29,7 @@ Een **[!UICONTROL SQL code]** activiteit voert een SQL manuscript uit. Het scrip
 
 * **[!UICONTROL Processing errors]**
 
-  Verwijs naar [ de fouten van de Verwerking ](monitoring-workflow-execution.md#processing-errors).
+  Verwijs naar [&#x200B; de fouten van de Verwerking &#x200B;](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-code en geavanceerde JavaScript-code {#javascript-code}
 
@@ -52,7 +52,7 @@ Om deze grens te negeren, moet u de waarde aan **0** plaatsen.
 
 * **[!UICONTROL Script]**: Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd.
 
-* **[!UICONTROL Process errors]**: Verwijs naar [ de fouten van de Verwerking ](monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Verwijs naar [&#x200B; de fouten van de Verwerking &#x200B;](monitoring-workflow-execution.md#processing-errors).
 
 ### Geavanceerde JavaScript-code {#adv-js-code-desc}
 

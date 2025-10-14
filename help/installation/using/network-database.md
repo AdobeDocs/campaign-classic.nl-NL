@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ## Netwerkconfiguratie
 
-Een zeer belangrijk ding om te controleren wanneer het opstellen van een on-premise type van architectuur is de [ voorzien van een netwerkconfiguratie ](../../installation/using/network-configuration.md). Zorg ervoor dat de Tomcat-server NIET rechtstreeks toegankelijk is buiten de server:
+Een zeer belangrijk ding om te controleren wanneer het opstellen van een on-premise type van architectuur is de [&#x200B; voorzien van een netwerkconfiguratie &#x200B;](../../installation/using/network-configuration.md). Zorg ervoor dat de Tomcat-server NIET rechtstreeks toegankelijk is buiten de server:
 
 * Sluit de Tomcat-poort (8080) op externe IP&#39;s (moet werken op localhost)
 * Wijs de standaard HTTP-poort (80) niet toe aan Tomcat (8080)
@@ -49,7 +49,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-U kunt ook een [ schuine ](https://github.com/nabla-c0d3/sslyze/releases) pythonmanuscript gebruiken dat allebei doet.
+U kunt ook een [&#x200B; schuine &#x200B;](https://github.com/nabla-c0d3/sslyze/releases) pythonmanuscript gebruiken dat allebei doet.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

@@ -20,16 +20,16 @@ ht-degree: 0%
 
 De optie van de Toegang van Gegevens van de Campagne van het gebruik **Federated** (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
-1. Vorm [ gegevensbestand van de Hadoop ](#configuring-hadoop)
-1. Vorm de Hadoop [ externe rekening ](#hadoop-external) in Campagne
+1. Vorm [&#x200B; gegevensbestand van de Hadoop &#x200B;](#configuring-hadoop)
+1. Vorm de Hadoop [&#x200B; externe rekening &#x200B;](#hadoop-external) in Campagne
 
 ## Hadoop 3.0 configureren {#configuring-hadoop}
 
 Voor het verbinden met een externe database van een Hadoop in FDA zijn de volgende configuraties op de Adobe Campaign-server vereist. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
-1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. De bestuurders kunnen op [ worden gevonden deze pagina ](https://www.cloudera.com/downloads.html).
+1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. De bestuurders kunnen op [&#x200B; worden gevonden deze pagina &#x200B;](https://www.cloudera.com/downloads.html).
 
-1. Vervolgens moet u de ODBC-stuurprogramma&#39;s installeren en een DSN maken voor uw Hive-verbinding. De instructies kunnen in [ worden gevonden deze pagina ](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. Vervolgens moet u de ODBC-stuurprogramma&#39;s installeren en een DSN maken voor uw Hive-verbinding. De instructies kunnen in [&#x200B; worden gevonden deze pagina &#x200B;](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
 1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u het Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
 
@@ -38,7 +38,7 @@ Voor het verbinden met een externe database van een Hadoop in FDA zijn de volgen
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [ deze sectie ](#hadoop-external).
+1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](#hadoop-external).
 
 ## Externe rekening van hadoop {#hadoop-external}
 
@@ -85,11 +85,11 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 
 ## Hadoop 2.1 configureren {#configure-access-hadoop-2}
 
-Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [ Vensters ](#for-windows) of [ Linux ](#for-linux).
+Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [&#x200B; Vensters &#x200B;](#for-windows) of [&#x200B; Linux &#x200B;](#for-linux).
 
 ### Hadoop 2.1 voor Windows {#for-windows}
 
-1. Installeer ODBC en [ Azure HD Insight ](https://www.microsoft.com/en-us/download/details.aspx?id=40886) bestuurders voor Vensters.
+1. Installeer ODBC en [&#x200B; Azure HD Insight &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=40886) bestuurders voor Vensters.
 1. Maak de DSN (Data Source Name) door het hulpprogramma ODBC DataSource Administrator uit te voeren. Een steekproef van DSN van het Systeem voor Hive wordt verstrekt voor u om te wijzigen.
 
    ```
@@ -101,7 +101,7 @@ Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [
    User/Password: admin/<your password here>
    ```
 
-1. Creeer de externe rekening van de Hadoop, zoals die in [ wordt gedetailleerd deze sectie ](#hadoop-external).
+1. Creeer de externe rekening van de Hadoop, zoals die in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](#hadoop-external).
 
 ### Hadoop 2.1 voor Linux {#for-linux}
 
@@ -111,7 +111,7 @@ Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [
    apt-get install unixodbc
    ```
 
-1. Download en installeer ODBC bestuurders voor Apache Hive van HortonWorks: [ https://www.cloudera.com/downloads.html ](https://www.cloudera.com/downloads.html).
+1. Download en installeer ODBC bestuurders voor Apache Hive van HortonWorks: [&#x200B; https://www.cloudera.com/downloads.html &#x200B;](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -156,7 +156,7 @@ Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [
    >
    >De **parameter UseNativeQuery** is hier zeer belangrijk. De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
-   De authentificatieopstelling hangt van de configuratie van de Bieg/Hadoop af. Bijvoorbeeld, voor HD Inzicht, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [ hier ](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) wordt beschreven.
+   De authentificatieopstelling hangt van de configuratie van de Bieg/Hadoop af. Bijvoorbeeld, voor HD Inzicht, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [&#x200B; hier &#x200B;](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) wordt beschreven.
 
 1. Exporteer de variabelen.
 
@@ -188,4 +188,4 @@ Als u met Hadoop 2.1 moet verbinden, volg de hieronder beschreven stappen voor [
    isql vorac -v
    ```
 
-1. Creeer de externe rekening van de Hadoop, zoals die in [ wordt gedetailleerd deze sectie ](#hadoop-external).
+1. Creeer de externe rekening van de Hadoop, zoals die in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](#hadoop-external).

@@ -62,7 +62,7 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
 
 De meeste vermelde afhankelijkheden zijn verplicht en `nlserver` kan niet starten als ze niet zijn geïnstalleerd (de uitzondering is open; een andere JDK kan worden geïnstalleerd).
 
-Het `bc` bevel, verplicht voor het uitvoeren van [ netreport ](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), is niet beschikbaar door gebrek op alle distributies van Linux. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht `which bc` uit. Als dat niet het geval is, moet u het installeren.
+Het `bc` bevel, verplicht voor het uitvoeren van [&#x200B; netreport &#x200B;](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), is niet beschikbaar door gebrek op alle distributies van Linux. Als u wilt controleren of de opdracht beschikbaar is, voert u de opdracht `which bc` uit. Als dat niet het geval is, moet u het installeren.
 
 Met CentOS, moet u het pakket installeren bc.x86_64: verbind als **wortel** en stel het volgende bevel in werking:
 
@@ -222,7 +222,7 @@ Als u Oracle gebruikt met Adobe Campaign, moet u de clientlagen van het Oracle c
 
 * Omgevingsvariabelen
 
-  Verwijs naar [ variabelen van het Milieu ](#environment-variables).
+  Verwijs naar [&#x200B; variabelen van het Milieu &#x200B;](#environment-variables).
 
 * Configuratie voor Adobe Campaign
 
@@ -272,7 +272,7 @@ De volgende informatie wordt dan getoond:
 17:11:08 >   Web server stop(pid=17546, tid=-151316352)...
 ```
 
-Deze bevelen laten u **config-default.xml** en **serverConf.xml** configuratiedossiers tot stand brengen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Deze bevelen laten u **config-default.xml** en **serverConf.xml** configuratiedossiers tot stand brengen. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 Pers **Ctrl+C** om het proces tegen te houden, dan het volgende bevel in te gaan:
 

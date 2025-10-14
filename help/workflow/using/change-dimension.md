@@ -57,7 +57,7 @@ Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen 
 
      >[!NOTE]
      >
-     >Voor informatie bij het creëren van en het leiden van extra kolommen, verwijs naar [ Toevoegend gegevens ](query.md#adding-data).
+     >Voor informatie bij het creëren van en het leiden van extra kolommen, verwijs naar [&#x200B; Toevoegend gegevens &#x200B;](query.md#adding-data).
 
    * Selecteer de vorige doeldimensie (vóór de asschakelaar) en selecteer **[!UICONTROL Zip Code]** in de **[!UICONTROL Location]** -substructuur van de ontvanger en klik vervolgens op **[!UICONTROL Edit expression]** .
 

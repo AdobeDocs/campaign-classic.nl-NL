@@ -18,8 +18,8 @@ ht-degree: 1%
 
 De optie van de Toegang van Gegevens van de Campagne van het gebruik **Federated** (FDA) om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Snowflake] te configureren.
 
-1. Vorm [!DNL Snowflake] op [ Linux ](#snowflake-linux).
-1. Vorm de [!DNL Snowflake] [ externe rekening ](#snowflake-external) in Campagne
+1. Vorm [!DNL Snowflake] op [&#x200B; Linux &#x200B;](#snowflake-linux).
+1. Vorm de [!DNL Snowflake] [&#x200B; externe rekening &#x200B;](#snowflake-external) in Campagne
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Voer de onderstaande stappen uit om [!DNL Snowflake] op Linux te configureren:
    systemctl start nlserver.service
    ```
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [ deze sectie ](#snowflake-external).
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Voor meer op hoe te om uw externe rekening te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](#snowflake-external).
 
 ## Externe rekening van Snowflake {#snowflake-external}
 
@@ -109,7 +109,7 @@ U moet een [!DNL Snowflake] externe account maken om uw Campagne-instantie te ve
 
    >[!NOTE]
    >
-   >Alle functies zijn alleen beschikbaar als u de Adobe Campaign SQL-functies maakt in de externe database. Voor meer informatie, verwijs naar deze [ pagina ](../../configuration/using/adding-additional-sql-functions.md).
+   >Alle functies zijn alleen beschikbaar als u de Adobe Campaign SQL-functies maakt in de externe database. Voor meer informatie, verwijs naar deze [&#x200B; pagina &#x200B;](../../configuration/using/adding-additional-sql-functions.md).
 
    ![](assets/snowflake_2.png)
 
@@ -121,9 +121,9 @@ De connector ondersteunt de volgende opties:
 |---|---|
 | werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
 | entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-app-server wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br> voor meer op dit, verwijs naar [ deze pagina ](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
-| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br> voor meer op dit, verwijs naar [ deze pagina ](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
-| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten onbruikbaar te maken. <br> voor meer op dit, verwijs naar [ deze pagina ](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-app-server wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br> voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br> voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten onbruikbaar te maken. <br> voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThreads | Het aantal draden dat moet worden gebruikt voor bulksgewijs laden van Snowflaken, meer threads betekenen betere prestaties voor grotere bulkladingen. Standaard ingesteld op 1. Het aantal kan, afhankelijk van het aantal van de machindraad worden aangepast. |
-| chunkSize | Hiermee bepaalt u de bestandsgrootte van het segment voor bulksloader. Standaard ingesteld op 128 MB. Kan worden aangepast voor een betere prestatie, wanneer gebruikt met bulkThreads. Meer tegelijkertijd actieve threads betekenen betere prestaties. <br> voor meer op dit, verwijs naar [ documentatie van de Snowflake ](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| chunkSize | Hiermee bepaalt u de bestandsgrootte van het segment voor bulksloader. Standaard ingesteld op 128 MB. Kan worden aangepast voor een betere prestatie, wanneer gebruikt met bulkThreads. Meer tegelijkertijd actieve threads betekenen betere prestaties. <br> voor meer op dit, verwijs naar [&#x200B; documentatie van de Snowflake &#x200B;](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | StageName | Naam van het vooraf ingestelde interne werkgebied. Het wordt gebruikt in bulk lading in plaats van het creëren van een nieuwe tijdelijke fase. |

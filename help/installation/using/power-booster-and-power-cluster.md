@@ -86,5 +86,5 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
 ## Aanbevelingen {#recommendations}
 
 * Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Bijvoorbeeld, als u aan de **optie van de Booster van de Macht** voor de **dienst van het Centrum van het Bericht** intekent, kunt u het **[!UICONTROL Execution of transactional messages]** pakket op de specifieke uitvoeringsinstantie slechts installeren. Controleer hiervoor uw licentieovereenkomst.
-* Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. Voor meer op dit, verwijs naar [ dit document ](../../production/using/foreword.md).
+* Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. Voor meer op dit, verwijs naar [&#x200B; dit document &#x200B;](../../production/using/foreword.md).
 * Neem contact op met Adobe Campaign Professional Services om de instantie correct te configureren vanuit het gezichtspunt van database-/hardwarecomponenten.

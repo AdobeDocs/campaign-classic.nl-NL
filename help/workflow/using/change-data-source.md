@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> De **[!UICONTROL Change data source]** -activiteit is alleen beschikbaar in het **[!UICONTROL Access to external data (Federated Data Access)]** -pakket. Voor meer informatie over ingebouwde pakketten Adobe Campaign Classic, verwijs naar deze [ pagina ](../../installation/using/installing-campaign-standard-packages.md).
+> De **[!UICONTROL Change data source]** -activiteit is alleen beschikbaar in het **[!UICONTROL Access to external data (Federated Data Access)]** -pakket. Voor meer informatie over ingebouwde pakketten Adobe Campaign Classic, verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/installing-campaign-standard-packages.md).
 
 Met de **[!UICONTROL Change data source]** -activiteit kunt u de gegevensbron van een workflow wijzigen **[!UICONTROL Working table]** . Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database.
 
@@ -34,7 +34,7 @@ De **[!UICONTROL Change Data Source]** -activiteit gebruiken:
 
 1. Vraag de beoogde ontvangers naar een **[!UICONTROL Query]** -activiteit.
 
-   Voor meer informatie over de **[!UICONTROL Query]** activiteit, verwijs naar deze [ pagina ](../../workflow/using/query.md#creating-a-query).
+   Voor meer informatie over de **[!UICONTROL Query]** activiteit, verwijs naar deze [&#x200B; pagina &#x200B;](../../workflow/using/query.md#creating-a-query).
 
 1. Voeg op het tabblad **[!UICONTROL Targeting]** een **[!UICONTROL Change data source]** -activiteit toe.
 
@@ -48,7 +48,7 @@ De **[!UICONTROL Change Data Source]** -activiteit gebruiken:
 
 1. Sleep vanaf het tabblad **[!UICONTROL Actions]** een **[!UICONTROL JavaScript code]** -activiteit om eenheidsbewerkingen uit te voeren op de werktabel.
 
-   Voor meer informatie over de **[!UICONTROL JavaScript code]** activiteit, verwijs naar de [ code van JavaScript en Geavanceerde de code van JavaScript ](../../workflow/using/sql-code-and-javascript-code.md#javascript-code) pagina.
+   Voor meer informatie over de **[!UICONTROL JavaScript code]** activiteit, verwijs naar de [&#x200B; code van JavaScript en Geavanceerde de code van JavaScript &#x200B;](../../workflow/using/sql-code-and-javascript-code.md#javascript-code) pagina.
 
 1. Voeg nog een **[!UICONTROL Change data source]** -activiteit toe om terug te schakelen naar de Cloud-database.
 

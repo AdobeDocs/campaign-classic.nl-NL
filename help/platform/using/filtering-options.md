@@ -31,10 +31,10 @@ Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van he
 
 Er zijn verschillende manieren om de gegevens te filteren die moeten worden weergegeven. Indien nodig kunnen deze samen worden gebruikt:
 
-* Filter op omslagen, verwijs naar [ Filter door omslag ](#filter-by-folder),
-* Filter door status, verwijs naar [ Filter door status ](#filter-by-status),
-* Het sorteren van gegevens, verwijs naar [ Orde door ](#order-by),
-* Onderzoek, verwijs naar [ Snel onderzoek ](#quick-search).
+* Filter op omslagen, verwijs naar [&#x200B; Filter door omslag &#x200B;](#filter-by-folder),
+* Filter door status, verwijs naar [&#x200B; Filter door status &#x200B;](#filter-by-status),
+* Het sorteren van gegevens, verwijs naar [&#x200B; Orde door &#x200B;](#order-by),
+* Onderzoek, verwijs naar [&#x200B; Snel onderzoek &#x200B;](#quick-search).
 
 ## Filteren op map {#filter-by-folder}
 

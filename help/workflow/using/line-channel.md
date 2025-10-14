@@ -17,7 +17,7 @@ ht-degree: 2%
 
 
 
-De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **het kanaal van de LIJN** module door gebrek. Voor meer op deze module, verwijs naar deze [ sectie ](../../delivery/using/line-channel.md).
+De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **het kanaal van de LIJN** module door gebrek. Voor meer op deze module, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 

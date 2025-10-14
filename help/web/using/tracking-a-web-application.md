@@ -60,7 +60,7 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe C
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wanneer een toepassing van het Web gebruikend de de inhoudsredacteur van de HTML wordt gecreeerd - **de Digitale Redacteur van de Inhoud (DCE)** - volgende markeringen worden opgenomen van het **[!UICONTROL Properties]** lusje van de redacteur. Voor meer informatie over de Digitale Redacteur van de Inhoud (DCE), verwijs naar [ deze sectie ](about-campaign-html-editor.md).
+Wanneer een toepassing van het Web gebruikend de de inhoudsredacteur van de HTML wordt gecreeerd - **de Digitale Redacteur van de Inhoud (DCE)** - volgende markeringen worden opgenomen van het **[!UICONTROL Properties]** lusje van de redacteur. Voor meer informatie over de Digitale Redacteur van de Inhoud (DCE), verwijs naar [&#x200B; deze sectie &#x200B;](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 

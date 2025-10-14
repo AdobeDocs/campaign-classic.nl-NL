@@ -26,7 +26,7 @@ Taken kunnen worden gemaakt, weergegeven en gecontroleerd vanuit de takenlijst o
 
 Taken worden aan de campagne gekoppeld en kunnen afhankelijkheden, d.w.z. bijbehorende taken, hebben. Elke taak heeft een status, prioriteit, geschatte belasting en bijbehorende kosten.
 
-Alle taken worden gegroepeerd in een lijst toegankelijk via **Campagnes** tabel. Voor meer op dit, verwijs naar [ taken van de Toegang ](#accessing-tasks).
+Alle taken worden gegroepeerd in een lijst toegankelijk via **Campagnes** tabel. Voor meer op dit, verwijs naar [&#x200B; taken van de Toegang &#x200B;](#accessing-tasks).
 
 Ze kunnen worden weergegeven in het programma waartoe ze behoren.
 
@@ -42,7 +42,7 @@ De taken worden weergegeven in de takenlijst die toegankelijk is via het tabblad
 
 U kunt alle taken van de verbonden exploitant daar bekijken.
 
-Voor meer op dit, verwijs naar [ status van de Uitvoering van een taak ](#execution-status-of-a-task) en [ status van de Voortgang van een taak ](#progress-status-of-a-task).
+Voor meer op dit, verwijs naar [&#x200B; status van de Uitvoering van een taak &#x200B;](#execution-status-of-a-task) en [&#x200B; status van de Voortgang van een taak &#x200B;](#progress-status-of-a-task).
 
 ### Filtertaken {#filtering-tasks}
 
@@ -78,13 +78,13 @@ Nadat een taak wordt gecreeerd, wordt het toegevoegd aan het campagneprogramma e
 
 Om het te vormen, moet u wijzen:
 
-* De manager en de deelnemers: verwijs naar [ Manager en deelnemers ](#manager-and-participants).
-* Het creatieprogramma: verwijs naar [ programma van de Uitvoering ](#execution-schedule).
-* De vastgelegde kosten: verwijs naar [ Uitgaven en opbrengsten ](#expenses-and-revenues).
+* De manager en de deelnemers: verwijs naar [&#x200B; Manager en deelnemers &#x200B;](#manager-and-participants).
+* Het creatieprogramma: verwijs naar [&#x200B; programma van de Uitvoering &#x200B;](#execution-schedule).
+* De vastgelegde kosten: verwijs naar [&#x200B; Uitgaven en opbrengsten &#x200B;](#expenses-and-revenues).
 
-Het is ook mogelijk om recensenten toe te voegen (verwijs naar [ Recensenten ](#reviewers)) en van verwijzingen voorzien documenten (verwijs naar [ Verwezen Documenten ](#documents-referenced)).
+Het is ook mogelijk om recensenten toe te voegen (verwijs naar [&#x200B; Recensenten &#x200B;](#reviewers)) en van verwijzingen voorzien documenten (verwijs naar [&#x200B; Verwezen Documenten &#x200B;](#documents-referenced)).
 
-De het levenscyclus van de taak wordt voorgesteld in [ cyclus van het Leven ](#life-cycle).
+De het levenscyclus van de taak wordt voorgesteld in [&#x200B; cyclus van het Leven &#x200B;](#life-cycle).
 
 ### Manager en deelnemers {#manager-and-participants}
 
@@ -96,7 +96,7 @@ Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automat
 
 >[!NOTE]
 >
->Het beheer van de exploitant wordt voorgesteld in [ deze sectie ](../../platform/using/access-management.md).
+>Het beheer van de exploitant wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../platform/using/access-management.md).
 
 U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
 
@@ -138,7 +138,7 @@ De persoon die met de taak is belast, kan zichzelf de taak toevertrouwen om de t
 
 ### Documenten waarnaar wordt verwezen {#documents-referenced}
 
-Het is mogelijk om documenten en marketing middelen aan een taak toe te voegen (voor meer op dit, verwijs naar [ beheer marketing middelen ](../../mrm/using/managing-marketing-resources.md)). Open hiertoe de taak en klik op het pictogram **[!UICONTROL Documents]** op de taakwerkbalk.
+Het is mogelijk om documenten en marketing middelen aan een taak toe te voegen (voor meer op dit, verwijs naar [&#x200B; beheer marketing middelen &#x200B;](../../mrm/using/managing-marketing-resources.md)). Open hiertoe de taak en klik op het pictogram **[!UICONTROL Documents]** op de taakwerkbalk.
 
 Klik op **[!UICONTROL Add]** en selecteer het document dat u aan de taak wilt toevoegen. Hetzelfde proces toepassen voor marketingbronnen.
 
@@ -154,7 +154,7 @@ De geldigheidsperiode van een taak wordt aangegeven in de velden **[!UICONTROL S
 
 >[!NOTE]
 >
->De levenscyclus van een taak wordt voorgesteld in [ cyclus van het Leven ](#life-cycle).
+>De levenscyclus van een taak wordt voorgesteld in [&#x200B; cyclus van het Leven &#x200B;](#life-cycle).
 
 Met het veld **[!UICONTROL Workload performed]** kunt u de voortgang van de taak met betrekking tot de geplande werkbelasting handmatig bijwerken. Dit wordt ook uitgedrukt in dagen en uren.
 
@@ -172,7 +172,7 @@ Het is ook zichtbaar in het campagnelusje.
 
 Als de einddatum van het schema voor de uitvoering van de taak is bereikt maar de taak niet is voltooid, is de taak **[!UICONTROL Late]** . Er wordt ook een waarschuwingsbericht weergegeven voor waarschuwingsoperatoren.
 
-Voor meer op dit, verwijs naar [ status van de Voortgang van een taak ](#progress-status-of-a-task).
+Voor meer op dit, verwijs naar [&#x200B; status van de Voortgang van een taak &#x200B;](#progress-status-of-a-task).
 
 ### Uitgaven en ontvangsten {#expenses-and-revenues}
 
@@ -186,7 +186,7 @@ De begroting die standaard in rekening wordt gebracht, is de begroting van de ca
 
 >[!NOTE]
 >
->Voor verdere informatie over uitgaven en begrotingen, zie [ de verplichting van de Kosten, berekening en het in rekening brengen ](../../mrm/using/controlling-costs.md#cost-commitment--calculation-and-charging).
+>Voor verdere informatie over uitgaven en begrotingen, zie [&#x200B; de verplichting van de Kosten, berekening en het in rekening brengen &#x200B;](../../mrm/using/controlling-costs.md#cost-commitment--calculation-and-charging).
 
 In dit venster kunt u ook de te bereiken doelstellingen definiëren. De doelstellingen worden uitgedrukt in de geraamde ontvangsten voor de taak.
 
@@ -196,7 +196,7 @@ Een externe dienstverlener kan bij het beheer van een taak worden betrokken.
 
 Hiervoor bewerkt u de taakeigenschappen en selecteert u de betreffende serviceprovider. De kostencategorieën verbonden aan de dienstverlener worden automatisch vermeld in de centrale sectie van het venster.
 
-Voor meer op dit, verwijs naar [ creeer een dienstverlener en zijn kostencategorieën ](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Voor meer op dit, verwijs naar [&#x200B; creeer een dienstverlener en zijn kostencategorieën &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Selecteer de kostencategorieën met betrekking tot de uitvoering van de taak. Hiervoor selecteert u het type kosten en voegt u, indien nodig, een toeslag toe.
 
@@ -204,7 +204,7 @@ Selecteer de kostencategorieën met betrekking tot de uitvoering van de taak. Hi
 
 >[!NOTE]
 >
->De methode om begrotingen en kosten te beheren wordt voorgesteld in [ de kosten van de Controle ](../../mrm/using/controlling-costs.md).
+>De methode om begrotingen en kosten te beheren wordt voorgesteld in [&#x200B; de kosten van de Controle &#x200B;](../../mrm/using/controlling-costs.md).
 
 Wanneer een dienstverlener wordt geselecteerd, wordt het getoond in het taakdashboard:
 
@@ -270,15 +270,15 @@ Wanneer u taken maakt via een campagne, kunt u specifieke taken maken. Het taakt
 
 De volgende taken kunnen worden gepland:
 
-* [ de taken van de Controle ](#control-tasks),
-* [ Groeperende taak ](#grouping-task),
-* [ Groeperende taak ](#grouping-task),
-* [ taak van het Bericht ](#notification-task).
+* [&#x200B; de taken van de Controle &#x200B;](#control-tasks),
+* [&#x200B; Groeperende taak &#x200B;](#grouping-task),
+* [&#x200B; Groeperende taak &#x200B;](#grouping-task),
+* [&#x200B; taak van het Bericht &#x200B;](#notification-task).
 
 >[!NOTE]
 >
 >**[!UICONTROL Control task]** en **[!UICONTROL Grouping]** de taken kunnen **slechts** via het campagnedashboard worden gecreeerd.\
->Zij worden getoond in de taakkaart van de exploitant waaraan zij worden toegewezen. Zie [ de taken van de Toegang ](#accessing-tasks).
+>Zij worden getoond in de taakkaart van de exploitant waaraan zij worden toegewezen. Zie [&#x200B; de taken van de Toegang &#x200B;](#accessing-tasks).
 
 ### Taken beheren {#control-tasks}
 
@@ -385,11 +385,11 @@ U kunt een bijlage aan de taak en aan het bericht e-mail toevoegen. Klik hiertoe
 
 ### Koppelingen tussen taken {#links-between-tasks}
 
-Met de knop **[!UICONTROL Properties]** in elke taak kunt u de koppelingen tussen taken in een campagne definiëren. U kunt taken in subtaken verdelen gebruikend een groeperende taak (zie [ Gekoppelde taken ](#linked-tasks)), of gebiedsdelen tussen de taken (zie [ Groeperende taken ](#grouping-tasks)) bepalen.
+Met de knop **[!UICONTROL Properties]** in elke taak kunt u de koppelingen tussen taken in een campagne definiëren. U kunt taken in subtaken verdelen gebruikend een groeperende taak (zie [&#x200B; Gekoppelde taken &#x200B;](#linked-tasks)), of gebiedsdelen tussen de taken (zie [&#x200B; Groeperende taken &#x200B;](#grouping-tasks)) bepalen.
 
 #### Gekoppelde taken {#linked-tasks}
 
-Gebruik het veld **[!UICONTROL Linked task]** om taken te koppelen aan een groeperingstaak. Zie [ Types van taak ](#types-of-task).
+Gebruik het veld **[!UICONTROL Linked task]** om taken te koppelen aan een groeperingstaak. Zie [&#x200B; Types van taak &#x200B;](#types-of-task).
 
 In het volgende voorbeeld wordt de goedkeuring van het richten opgesplitst in vier subtaken.
 
@@ -431,7 +431,7 @@ Een taak kan: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[!UICO
 * Zodra het is begonnen, is de taak **[!UICONTROL In progress]**. Wanneer de persoon die verantwoordelijk is voor de taak de taak sluit, verandert deze in **[!UICONTROL Finished]** .
 * Als een controleur is gedefinieerd, wordt de taak **[!UICONTROL Pending approval]** uitgevoerd zodra de persoon die verantwoordelijk is voor het sluiten van de controleur deze taak en totdat de controleur deze goedkeurt. Als de controleur het weigert, wordt de taak **[!UICONTROL Rejected]**.
 * Een taak kan door de verantwoordelijke persoon via het dashboard of **[!UICONTROL Task map]** worden geannuleerd door op de knop **[!UICONTROL Cancel]** te klikken.
-* Als u een taak wilt plannen, voert u in de toekomst een begindatum in. Vervolgens kunt u een eerste melding verzenden aan de Adobe Campaign-operatoren die bij de uitvoering van de taak zijn betrokken. Zie [ Volledige cyclus van het taakleven ](#complete-task-life-cycle).
+* Als u een taak wilt plannen, voert u in de toekomst een begindatum in. Vervolgens kunt u een eerste melding verzenden aan de Adobe Campaign-operatoren die bij de uitvoering van de taak zijn betrokken. Zie [&#x200B; Volledige cyclus van het taakleven &#x200B;](#complete-task-life-cycle).
 
 >[!NOTE]
 >
@@ -445,13 +445,13 @@ Naast de uitvoeringsstatus kan een taak worden gekoppeld aan een vorderingsstatu
 
 U kunt de lijst met taken filteren op processtatus of voortgangsstatus.
 
-Voor meer op dit, verwijs naar [ Toegang hebbend tot taken ](#accessing-tasks).
+Voor meer op dit, verwijs naar [&#x200B; Toegang hebbend tot taken &#x200B;](#accessing-tasks).
 
 ### Volledige levenscyclus van taken {#complete-task-life-cycle}
 
 Hieronder staan de fasen van een volledige taaklevenscyclus waarvoor de verantwoordelijke persoon deelnemers en revisoren heeft gedefinieerd.
 
-1. De verantwoordelijke persoon creëert de taak en voert de verschillende velden in. Voor meer op dit, verwijs naar [ creeer een nieuwe taak ](#creating-a-new-task).
+1. De verantwoordelijke persoon creëert de taak en voert de verschillende velden in. Voor meer op dit, verwijs naar [&#x200B; creeer een nieuwe taak &#x200B;](#creating-a-new-task).
 
    Wanneer het creëren van en het uitgeven van een taak **die in de toekomst** wordt gepland (zolang de datum van het taakbegin niet wordt bereikt), is het mogelijk om een bericht naar deelnemers en managers te verzenden om hen te laten weten dat een nieuwe taak is gepland.
 

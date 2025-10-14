@@ -27,7 +27,7 @@ Operatoren zijn vanuit hun profiel in de console gekoppeld aan een beveiligingsz
 >
 >Deze procedure wordt beperkt tot **op-gebouw** plaatsingen.
 >
->Als a **ontvangen** klant, als u tot [ het Controlebord van de Campagne ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL)
+>Als a **ontvangen** klant, als u tot [&#x200B; het Controlebord van de Campagne &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL)
 >
 >Andere **hybride/ontvangen** klanten moeten uit bereiken aan het team van de steun van de Adobe om IP aan de lijst van gewenste personen toe te voegen.
 >
@@ -41,7 +41,7 @@ Een zone wordt gedefinieerd door:
 
 Beveiligingszones zijn onderling vergrendeld, wat betekent dat het definiëren van een nieuwe zone binnen een andere zone het aantal operatoren verlaagt dat zich daarop kan aanmelden, terwijl de rechten die aan elke operator zijn toegewezen, worden vergroot.
 
-De gebieden moeten tijdens serverconfiguratie, in het **serverConf.xml** dossier worden bepaald. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in [ deze sectie ](../../installation/using/the-server-configuration-file.md).
+De gebieden moeten tijdens serverconfiguratie, in het **serverConf.xml** dossier worden bepaald. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in [&#x200B; deze sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 Elke zone definieert rechten, zoals:
 
@@ -99,7 +99,7 @@ Alle rechten die een zone definiëren, zijn als volgt:
 >
 >In een streekdefinitie, vermindert elk attribuut met de **ware** waarde veiligheid.
 
-Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met het **sessionTokenOnly** attribuut tot stand brengen dat als **waar** wordt bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Voor meer bij het vormen van instanties, verwijs naar [ dit document ](../../message-center/using/configuring-instances.md).
+Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met het **sessionTokenOnly** attribuut tot stand brengen dat als **waar** wordt bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Voor meer bij het vormen van instanties, verwijs naar [&#x200B; dit document &#x200B;](../../message-center/using/configuring-instances.md).
 
 ## Aanbevolen procedures voor beveiligingszones {#best-practices-for-security-zones}
 

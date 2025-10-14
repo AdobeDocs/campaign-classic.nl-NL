@@ -63,7 +63,7 @@ Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïns
 
 >[!NOTE]
 >
->Wanneer het installeren van het pakket, worden de **lange** typegebieden van **nms:proposition** lijst zoals proposition identiteitskaart, **int64** typegebieden. Dit type van gegevens wordt gedetailleerd in [ deze sectie ](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wanneer het installeren van het pakket, worden de **lange** typegebieden van **nms:proposition** lijst zoals proposition identiteitskaart, **int64** typegebieden. Dit type van gegevens wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 De duur van het gegevensbehoud moet op elke instantie (via het **[!UICONTROL Data purge]** venster in de plaatsingstovenaar) worden gevormd. Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
 

@@ -126,7 +126,7 @@ Wanneer de uitvoering is voltooid, opent u de simulatie en klikt u op het tabbla
 1. De subtab **[!UICONTROL Alerts]** groepeert alle waarschuwingsberichten die tijdens de simulatie worden gegenereerd. Waarschuwingsberichten kunnen worden verzonden in geval van capaciteitsoverbelasting (als het aantal beoogde ontvangers de ingestelde capaciteit overschrijdt, bijvoorbeeld).
 1. Met het subtabblad **[!UICONTROL Exploration of the exclusions]** kunt u een tabel voor resultaatanalyse maken. De gebruiker moet variabelen in de abscis/ordinates-assen aangeven.
 
-   Voor een voorbeeld van de verwezenlijking van de analystabel, verwijs naar het eind van [ Verkennende resultaten ](#exploring-results).
+   Voor een voorbeeld van de verwezenlijking van de analystabel, verwijs naar het eind van [&#x200B; Verkennende resultaten &#x200B;](#exploring-results).
 
 ### Resultaten weergeven {#viewing-results}
 
@@ -140,7 +140,7 @@ Op het tabblad **[!UICONTROL Audit]** kunt u de uitvoering van de simulatie cont
 
 Met het subtabblad **[!UICONTROL Exploration of the exclusions]** kunt u de gegevens analyseren die het resultaat zijn van een simulatie.
 
-De beschrijvende analyse wordt gedetailleerd in [ deze sectie ](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+De beschrijvende analyse wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## Resultaten van een simulatie {#results-of-a-simulation}
 
@@ -189,7 +189,7 @@ Als u resultaten wilt vergelijken, moet u rapporten gebruiken. In Adobe Campaign
 
 ### Assen rapporteren {#reporting-axes}
 
-Op het tabblad **[!UICONTROL Calculations]** kunt u rapportassen voor het doel definiëren. Deze assen zullen tijdens resultaatanalyse worden gebruikt (verwijs naar [ Verkennende resultaten ](#exploring-results)).
+Op het tabblad **[!UICONTROL Calculations]** kunt u rapportassen voor het doel definiëren. Deze assen zullen tijdens resultaatanalyse worden gebruikt (verwijs naar [&#x200B; Verkennende resultaten &#x200B;](#exploring-results)).
 
 >[!NOTE]
 >
@@ -229,4 +229,4 @@ De doeloverlappingen van de levering geven de beoogde ontvangers aan in ten mins
 >
 >Dit subtabblad wordt alleen weergegeven als de optie **[!UICONTROL Generate target recovery statistics]** is ingeschakeld.
 
-De informatie over rapportassen kan worden verwerkt in uitsluitingsanalyserapporten die zijn gemaakt op het subtabblad **[!UICONTROL Exploring exclusions]** . Voor meer op dit, verwijs naar [ Verkennende resultaten ](#exploring-results).
+De informatie over rapportassen kan worden verwerkt in uitsluitingsanalyserapporten die zijn gemaakt op het subtabblad **[!UICONTROL Exploring exclusions]** . Voor meer op dit, verwijs naar [&#x200B; Verkennende resultaten &#x200B;](#exploring-results).

@@ -22,13 +22,13 @@ Hier volgt een snel overzicht van de belangrijkste stappen om een eenvoudig onde
 
 Deze stappen zijn:
 
-1. [ Stap 1 - creeer een onderzoek ](#step-1---creating-a-survey),
-1. [ Stap 2 - selecteer het malplaatje ](#step-2---selecting-the-template),
-1. [ Stap 3 - bouw het onderzoek ](#step-3---building-the-survey),
-1. [ Stap 4 - creeer de paginainhoud ](#step-4---creating-the-page-content),
-1. [ Stap 5 - sla de onderzoeksgegevens ](#step-5---storing-the-survey-data-) op,
-1. [ Stap 6 - Publish de pagina&#39;s ](#step-6---publishing-the-pages),
-1. [ Stap 7 - deel uw online onderzoek ](#step-7---sharing-your-online-survey).
+1. [&#x200B; Stap 1 - creeer een onderzoek &#x200B;](#step-1---creating-a-survey),
+1. [&#x200B; Stap 2 - selecteer het malplaatje &#x200B;](#step-2---selecting-the-template),
+1. [&#x200B; Stap 3 - bouw het onderzoek &#x200B;](#step-3---building-the-survey),
+1. [&#x200B; Stap 4 - creeer de paginainhoud &#x200B;](#step-4---creating-the-page-content),
+1. [&#x200B; Stap 5 - sla de onderzoeksgegevens &#x200B;](#step-5---storing-the-survey-data-) op,
+1. [&#x200B; Stap 6 - Publish de pagina&#39;s &#x200B;](#step-6---publishing-the-pages),
+1. [&#x200B; Stap 7 - deel uw online onderzoek &#x200B;](#step-7---sharing-your-online-survey).
 
 ## Stap 1 - Een enquête maken {#step-1---creating-a-survey}
 
@@ -107,7 +107,7 @@ In het volgende voorbeeld gebruiken we een **[!UICONTROL Page (v5 compatibility)
 
   >[!NOTE]
   >
-  >Voor elk veld of elke vraag kunt u de paginalay-out aan uw wensen aanpassen, dankzij de opties op het tabblad **[!UICONTROL Advanced]** . De lay-out van de onderzoeksschermen wordt gedetailleerd in [ deze sectie ](../../web/using/about-web-forms.md).
+  >Voor elk veld of elke vraag kunt u de paginalay-out aan uw wensen aanpassen, dankzij de opties op het tabblad **[!UICONTROL Advanced]** . De lay-out van de onderzoeksschermen wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/about-web-forms.md).
 
   Klik in het detailscherm op het tabblad **[!UICONTROL Preview]** om de weergave weer te geven van de enquête die u zojuist hebt gemaakt.
 
@@ -146,7 +146,7 @@ Zodra het in productie is, is het onderzoek toegankelijk op de server en u kunt 
 
 Als u de enquête wilt afleveren, kunt u een bericht met een toegangskoppeling naar de doelpopulatie verzenden of de URL voor de toegang tot de enquête bijvoorbeeld op een webpagina plaatsen.
 
-Vervolgens kunt u de antwoorden van gebruikers controleren via rapporten en logboeken. Zie [ het volgen van de Reactie ](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+Vervolgens kunt u de antwoorden van gebruikers controleren via rapporten en logboeken. Zie [&#x200B; het volgen van de Reactie &#x200B;](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 >[!CAUTION]
 >

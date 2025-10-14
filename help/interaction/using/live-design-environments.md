@@ -33,11 +33,11 @@ Interactie wordt standaard geleverd met een **[!UICONTROL Design]** -omgeving en
 
 >[!NOTE]
 >
->Om een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) te richten, moet u de medewerker van de doelafbeelding gebruiken om de milieu&#39;s tot stand te brengen. Voor meer op dit, verwijs naar [ Creërend een aanbiedingsmilieu ](#creating-an-offer-environment).
+>Om een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) te richten, moet u de medewerker van de doelafbeelding gebruiken om de milieu&#39;s tot stand te brengen. Voor meer op dit, verwijs naar [&#x200B; Creërend een aanbiedingsmilieu &#x200B;](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
-De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen alleen de **[!UICONTROL Live]** -aanbiedingsomgeving bekijken en de aanbiedingen gebruiken om deze te leveren. Aanbiedingsmanagers kunnen de **[!UICONTROL Design]** -omgeving weergeven en wijzigen en de **[!UICONTROL Live]** -omgeving weergeven. Voor meer op dit, verwijs naar [ profielen van de Exploitant ](../../interaction/using/operator-profiles.md).
+De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen alleen de **[!UICONTROL Live]** -aanbiedingsomgeving bekijken en de aanbiedingen gebruiken om deze te leveren. Aanbiedingsmanagers kunnen de **[!UICONTROL Design]** -omgeving weergeven en wijzigen en de **[!UICONTROL Live]** -omgeving weergeven. Voor meer op dit, verwijs naar [&#x200B; profielen van de Exploitant &#x200B;](../../interaction/using/operator-profiles.md).
 
 ## Een aanbiedingsomgeving maken {#creating-an-offer-environment}
 
@@ -61,10 +61,10 @@ Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijk
 
    Met deze optie kunt u anonieme interactiespecifieke functies activeren, vooral wanneer u omgevingen configureert die spaties bieden. U kunt opties ook vormen die u toestaan om van een &quot;geïdentificeerd&quot;milieu aan een &quot;anonieme&quot;milieu over te schakelen.
 
-   U kunt bijvoorbeeld een koppeling maken tussen een ontvankelijke omgeving en een aanbiedingsruimte (geïdentificeerd contact) die overeenkomt met een bezoekersomgeving (niet-geïdentificeerd contact). Op deze manier worden verschillende aanbiedingen ter beschikking gesteld van de contactpersoon, afhankelijk van het feit of deze contactpersoon al dan niet wordt geïdentificeerd. Voor meer op dit, verwijs naar [ Creërend aanbiedingsruimten ](../../interaction/using/creating-offer-spaces.md).
+   U kunt bijvoorbeeld een koppeling maken tussen een ontvankelijke omgeving en een aanbiedingsruimte (geïdentificeerd contact) die overeenkomt met een bezoekersomgeving (niet-geïdentificeerd contact). Op deze manier worden verschillende aanbiedingen ter beschikking gesteld van de contactpersoon, afhankelijk van het feit of deze contactpersoon al dan niet wordt geïdentificeerd. Voor meer op dit, verwijs naar [&#x200B; Creërend aanbiedingsruimten &#x200B;](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >
->Voor meer informatie over anonieme interactie op een binnenkomend kanaal, verwijs naar [ Anonieme interactie ](../../interaction/using/anonymous-interactions.md).
+>Voor meer informatie over anonieme interactie op een binnenkomend kanaal, verwijs naar [&#x200B; Anonieme interactie &#x200B;](../../interaction/using/anonymous-interactions.md).

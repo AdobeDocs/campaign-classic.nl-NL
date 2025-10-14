@@ -31,7 +31,7 @@ Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar:
 >
 >Welke kanalen in de lijst worden aangeboden, is afhankelijk van uw licentieovereenkomst.
 
-U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Voor verdere informatie over malplaatjes, verwijs naar [ deze sectie ](about-templates.md).
+U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Voor verdere informatie over malplaatjes, verwijs naar [&#x200B; deze sectie &#x200B;](about-templates.md).
 
 ## De levering identificeren {#identifying-the-delivery}
 

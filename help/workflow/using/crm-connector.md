@@ -18,7 +18,7 @@ ht-degree: 3%
 
 De **schakelaar van CRM** activiteit laat u de gegevenssynchronisatie tussen Adobe Campaign en een systeem van CRM vormen.
 
-Voor meer informatie over de schakelaars van CRM in Adobe Campaign, verwijs naar dit [ sectie ](../../platform/using/crm-connectors.md).
+Voor meer informatie over de schakelaars van CRM in Adobe Campaign, verwijs naar dit [&#x200B; sectie &#x200B;](../../platform/using/crm-connectors.md).
 
 Met deze activiteit kunt u:
 
@@ -33,4 +33,4 @@ Selecteer de externe rekening die CRM aanpast dat u synchronisatie met wilt vorm
 
 ![](assets/crm_task_select_obj.png)
 
-De configuratie van deze activiteit hangt af van het uit te voeren proces. Diverse configuraties zijn gedetailleerd [ in deze pagina ](../../platform/using/crm-data-sync.md).
+De configuratie van deze activiteit hangt af van het uit te voeren proces. Diverse configuraties zijn gedetailleerd [&#x200B; in deze pagina &#x200B;](../../platform/using/crm-data-sync.md).

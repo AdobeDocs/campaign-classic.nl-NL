@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## E-mailindelingen voor Japanse mobiele apparaten {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign beheert drie specifieke Japanse formaten voor e-mail op mobiles: **Deco-mail** (mobiele telefoons van DoCoMo), **Decore Mail** (mobiele telefoons van Softbank) en **Decoration Mail** (mobiele telefoons van KDDI AU). Deze formaten leggen bijzondere coderings, structuur, en groottebeperkingen op. Leer meer over beperkingen en aanbevelingen in [ deze sectie ](#limitations-and-recommendations).
+Adobe Campaign beheert drie specifieke Japanse formaten voor e-mail op mobiles: **Deco-mail** (mobiele telefoons van DoCoMo), **Decore Mail** (mobiele telefoons van Softbank) en **Decoration Mail** (mobiele telefoons van KDDI AU). Deze formaten leggen bijzondere coderings, structuur, en groottebeperkingen op. Leer meer over beperkingen en aanbevelingen in [&#x200B; deze sectie &#x200B;](#limitations-and-recommendations).
 
 Als u wilt dat de ontvanger berichten in een van deze indelingen correct ontvangt, raden we u aan **[!UICONTROL Deco-mail (DoCoMo)]** , **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** in het bijbehorende profiel te selecteren:
 
@@ -27,7 +27,7 @@ Als u wilt dat de ontvanger berichten in een van deze indelingen correct ontvang
 
 Als u de optie **[!UICONTROL Email format]** echter als **[!UICONTROL Unknown]** , **[!UICONTROL HTML]** of **[!UICONTROL Text]** laat, detecteert Adobe Campaign automatisch (bij het verzenden van het e-mailbericht) de Japanse indeling voor gebruik, zodat het bericht correct wordt weergegeven.
 
-Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die zijn gedefinieerd in de set met mailregels van **[!UICONTROL Management of Email Formats]** . Voor meer bij het beheren van e-mailformaten, verwijs naar [ deze pagina ](../../installation/using/email-deliverability.md#managing-email-formats).
+Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die zijn gedefinieerd in de set met mailregels van **[!UICONTROL Management of Email Formats]** . Voor meer bij het beheren van e-mailformaten, verwijs naar [&#x200B; deze pagina &#x200B;](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ## Beperkingen en aanbevelingen {#limitations-and-recommendations}
 
@@ -70,7 +70,7 @@ Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij 
 >
 >Deze typologieregel wordt alleen uitgevoerd als ten minste een van de ontvangers is geconfigureerd voor het ontvangen van e-mails in de indeling **[!UICONTROL Deco-mail (DoCoMo)]** , **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** .
 
-Deze typologieregel staat u toe om ervoor te zorgen dat de levering de [ formaatbeperkingen ](#limitations-and-recommendations) respecteert die door de Japanse exploitanten, met name met betrekking tot de totale grootte van e-mail, de grootte van HTML en tekstsecties, het aantal beelden in de berichten, en de markeringen in de inhoud van HTML worden bepaald.
+Deze typologieregel staat u toe om ervoor te zorgen dat de levering de [&#x200B; formaatbeperkingen &#x200B;](#limitations-and-recommendations) respecteert die door de Japanse exploitanten, met name met betrekking tot de totale grootte van e-mail, de grootte van HTML en tekstsecties, het aantal beelden in de berichten, en de markeringen in de inhoud van HTML worden bepaald.
 
 ### Proefdrukken verzenden {#sending-proofs}
 
@@ -84,8 +84,8 @@ U kunt bijvoorbeeld het adres van een profiel vervangen door test@softbank.ne.jp
 
 Voor het verzenden van een e-mailbericht naar ontvangers met Japanse e-mailindelingen via Campagne zijn twee opties mogelijk:
 
-* Creeer twee leveringen: één slechts voor Japanse ontvangers en een andere voor andere ontvangers - verwijs naar [ deze sectie ](#designing-a-specific-delivery-for-japanese-formats).
-* Creeer één enkele levering en Adobe Campaign zal automatisch het formaat ontdekken te gebruiken - verwijs naar [ deze sectie ](#designing-a-delivery-for-all-formats).
+* Creeer twee leveringen: één slechts voor Japanse ontvangers en een andere voor andere ontvangers - verwijs naar [&#x200B; deze sectie &#x200B;](#designing-a-specific-delivery-for-japanese-formats).
+* Creeer één enkele levering en Adobe Campaign zal automatisch het formaat ontdekken te gebruiken - verwijs naar [&#x200B; deze sectie &#x200B;](#designing-a-delivery-for-all-formats).
 
 ### Een specifieke levering ontwerpen voor Japanse indelingen {#designing-a-specific-delivery-for-japanese-formats}
 
@@ -105,4 +105,4 @@ Het berichtcontact zal correct voor de gebruikers op Japanse mobiele telefoons, 
 
 >[!IMPORTANT]
 >
->Let erop dat u de speciale functies respecteert die aan elke Japanse e-mailindeling (Deco-mail, Decoration Mail en Decoration Mail) zijn gekoppeld. Voor meer informatie over beperkingen, verwijs naar [ deze sectie ](#limitations-and-recommendations).
+>Let erop dat u de speciale functies respecteert die aan elke Japanse e-mailindeling (Deco-mail, Decoration Mail en Decoration Mail) zijn gekoppeld. Voor meer informatie over beperkingen, verwijs naar [&#x200B; deze sectie &#x200B;](#limitations-and-recommendations).

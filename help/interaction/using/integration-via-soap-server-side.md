@@ -46,7 +46,7 @@ Als antwoord op de vraag, zal de dienst van SOAP de volgende parameters terugker
 
 Voeg **nms toe:interaction#UpdateStatus** bevel aan URL, die door deze parameters wordt gevolgd:
 
-* **voorstel**: koord van karakters, bevat het propositie identiteitskaart die als output tijdens een aanbiedingsvoorstel wordt gegeven. Verwijs naar [ voorstel van de Aanbieding ](#offer-proposition).
+* **voorstel**: koord van karakters, bevat het propositie identiteitskaart die als output tijdens een aanbiedingsvoorstel wordt gegeven. Verwijs naar [&#x200B; voorstel van de Aanbieding &#x200B;](#offer-proposition).
 * **status**: koordtype, specificeert het de nieuwe status van de aanbieding. De mogelijke waarden zijn vermeld in de **propositionStatus** opsomming, in **nms:gemeenschappelijk** schema. Bijvoorbeeld, uit-van-de-doos, beantwoordt aantal 3 aan **Toegelaten** status.
 * **context**: Het element van XML, laat u contextinformatie in het ruimteschema toevoegen. Als het gebruikte schema **nms is:interactie**, **`<empty>`** zou moeten worden toegevoegd.
 

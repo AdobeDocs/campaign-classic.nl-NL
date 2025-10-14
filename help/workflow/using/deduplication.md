@@ -96,7 +96,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
    >[!NOTE]
    >
-   >Met de functie **[!UICONTROL Merge]** , die toegankelijk is via de koppeling **[!UICONTROL Advanced parameters]** , kunt u een set regels configureren om een veld of groep velden samen te voegen tot één gegevensrecord. Voor meer op dit, zie [ het samenvoegen van gebieden in één enkel verslag ](#merging-fields-into-single-record).
+   >Met de functie **[!UICONTROL Merge]** , die toegankelijk is via de koppeling **[!UICONTROL Advanced parameters]** , kunt u een set regels configureren om een veld of groep velden samen te voegen tot één gegevensrecord. Voor meer op dit, zie [&#x200B; het samenvoegen van gebieden in één enkel verslag &#x200B;](#merging-fields-into-single-record).
 
 1. Klik op **[!UICONTROL Finish]** om de geselecteerde deduplicatiemethode goed te keuren.
 
@@ -122,7 +122,7 @@ De geïdentificeerde duplicaten worden ook geïntegreerd in een speciale lijst m
 
 1. Voeg de verschillende activiteiten toe en koppel deze die nodig zijn om de workflow te laten werken, zoals hierboven wordt weergegeven.
 
-   De vakbondsactiviteit wordt hier gebruikt om de drie vragen in één enkele overgang te &quot;verenigen&quot;. Op deze manier werkt deduplicatie niet voor elke query afzonderlijk, maar voor de gehele query. Voor meer op dit onderwerp, verwijs naar [ Beste praktijken ](#best-practices).
+   De vakbondsactiviteit wordt hier gebruikt om de drie vragen in één enkele overgang te &quot;verenigen&quot;. Op deze manier werkt deduplicatie niet voor elke query afzonderlijk, maar voor de gehele query. Voor meer op dit onderwerp, verwijs naar [&#x200B; Beste praktijken &#x200B;](#best-practices).
 
 1. Open de deduplicatieactiviteit en klik vervolgens op de koppeling **[!UICONTROL Edit configuration...]** om de deduplicatiemodus te definiëren.
 1. Selecteer **[!UICONTROL Database schema]** in het nieuwe venster.
@@ -142,7 +142,7 @@ Met de functie **[!UICONTROL Merge]** kunt u een set regels voor deduplicatie co
 
 Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
-Een gebruiksgeval leveraging deze eigenschap is beschikbaar in [ deze sectie ](deduplication-merge.md).
+Een gebruiksgeval leveraging deze eigenschap is beschikbaar in [&#x200B; deze sectie &#x200B;](deduplication-merge.md).
 
 Ga als volgt te werk om dit te doen:
 
@@ -158,7 +158,7 @@ Ga als volgt te werk om dit te doen:
 
 1. Nadat de functionaliteit is geactiveerd, wordt een tabblad **[!UICONTROL Merge]** toegevoegd aan de **[!UICONTROL Deduplication]** -activiteit. Hiermee kunt u groepen velden definiëren die moeten worden samengevoegd en de bijbehorende regels.
 
-   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [ deze sectie ](deduplication-merge.md).
+   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [&#x200B; deze sectie &#x200B;](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

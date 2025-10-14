@@ -21,14 +21,14 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Deze mogelijkheid is niet rechtstreeks beschikbaar als onderdeel van het product. Voor deze implementatie werkt u samen met uw Adobe-vertegenwoordiger/klantenservice. U zult dan de stappen kunnen volgen die in deze [ worden gedetailleerd pagina ](../../integrations/using/configuring-pipeline.md#prerequisites).
+>Deze mogelijkheid is niet rechtstreeks beschikbaar als onderdeel van het product. Voor deze implementatie werkt u samen met uw Adobe-vertegenwoordiger/klantenservice. U zult dan de stappen kunnen volgen die in deze [&#x200B; worden gedetailleerd pagina &#x200B;](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] voert marketingacties uit binnen een korte tijdsspanne na de actie van een gebruiker. De gemiddelde responstijd is minder dan een uur.
 
 Het staat voor meer flexibele integratie toe aangezien de configuratie minimaal is en een derde niet betrokken is.
 Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is op de prestaties van marketingactiviteiten. De integratie kan bijvoorbeeld een miljoen triggers per uur verwerken.
 
-![](assets/do-not-localize/book.png) ontdekt hoe te om [ een trekker van Experience Cloud ](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=nl-NL) tot stand te brengen en, kritiek consumentengedrag te identificeren te bepalen en te controleren.
+![](assets/do-not-localize/book.png) ontdekt hoe te om [&#x200B; een trekker van Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=nl-NL) tot stand te brengen en, kritiek consumentengedrag te identificeren te bepalen en te controleren.
 
 ## [!DNL Triggers] architectuur {#triggers-architecture}
 
@@ -43,7 +43,7 @@ Het [!DNL pipelined] -proces meldt zich aan bij de Experience Cloud met behulp v
 Controleer voordat u met deze implementatie begint of:
 
 * a geldig **herkenningsteken van de Organisatie**: identiteitskaart van de Organisatie is het unieke herkenningsteken binnen Adobe Experience Cloud, dat bijvoorbeeld voor de dienst VisitorID en IMS wordt gebruikt Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl)
-* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [ in deze pagina ](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
+* a **toegang van de Ontwikkelaar** tot uw Organisatie. De beheerder van het Systeem van de organisatie moet **volgen ontwikkelaars aan één enkel productprofiel** gedetailleerde procedure [&#x200B; in deze pagina &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html) toevoegen om ontwikkelaartoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers te verlenen.
 
 ## Implementatiestappen {#implement}
 

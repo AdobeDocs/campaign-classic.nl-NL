@@ -47,7 +47,7 @@ Geen
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-9}
 
-De presentatie van het schema is beschikbaar in [ Ongeveer schemaverwijzing ](../../../configuration/using/about-schema-reference.md) en [ structuur van het Schema ](../../../configuration/using/schema-structure.md).
+De presentatie van het schema is beschikbaar in [&#x200B; Ongeveer schemaverwijzing &#x200B;](../../../configuration/using/about-schema-reference.md) en [&#x200B; structuur van het Schema &#x200B;](../../../configuration/using/schema-structure.md).
 
 ## Beschrijving van kenmerk {#attribute-description-14}
 

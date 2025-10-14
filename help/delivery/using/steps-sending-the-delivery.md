@@ -42,7 +42,7 @@ Voordat u de levering verzendt, kunt u via het tabblad **[!UICONTROL Delivery]**
   >
   >* Deze optie mag niet worden ingesteld in mid-sourcing.
   >
-  >* Leer meer over SMTP serverconfiguratie, in [ deze sectie ](../../installation/using/configure-delivery-settings.md).
+  >* Leer meer over SMTP serverconfiguratie, in [&#x200B; deze sectie &#x200B;](../../installation/using/configure-delivery-settings.md).
 
 * **[!UICONTROL Email BCC]**: gebruik deze optie om e-mails op te slaan op een extern systeem via BCC door gewoon een BCC-e-mailadres toe te voegen aan uw berichtdoel. [Meer informatie](sending-messages.md#archiving-emails).
 
@@ -135,7 +135,7 @@ Als u de lading in evenwicht wilt brengen, kunt u leveringen in verscheidene par
 
      ![](assets/s_ncs_user_wizard_waves_create.png)
 
-   Een specifieke typologieregel, **[!UICONTROL Wave scheduling check]** , zorgt ervoor dat de laatste golf vóór de geldigheidsgrens van de levering wordt gepland. De typologieën van de campagne en hun regels, die in het **[!UICONTROL Typology]** lusje van de leveringseigenschappen worden gevormd, worden voorgesteld in [ proces van de Bevestiging met typologieën ](steps-validating-the-delivery.md#validation-process-with-typologies).
+   Een specifieke typologieregel, **[!UICONTROL Wave scheduling check]** , zorgt ervoor dat de laatste golf vóór de geldigheidsgrens van de levering wordt gepland. De typologieën van de campagne en hun regels, die in het **[!UICONTROL Typology]** lusje van de leveringseigenschappen worden gevormd, worden voorgesteld in [&#x200B; proces van de Bevestiging met typologieën &#x200B;](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
@@ -171,17 +171,17 @@ De twee onderstaande voorbeelden zijn de meest gebruikte voorbeelden voor het ge
 
 ## Opnieuw proberen configureren {#configuring-retries}
 
-Tijdelijk ongeleverde berichten toe te schrijven aan a **Zacht** of **Genegeerde** fout zijn onderworpen aan automatisch opnieuw proberen. De types en de redenen van de leveringsmislukking worden voorgesteld in deze [ sectie ](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Tijdelijk ongeleverde berichten toe te schrijven aan a **Zacht** of **Genegeerde** fout zijn onderworpen aan automatisch opnieuw proberen. De types en de redenen van de leveringsmislukking worden voorgesteld in deze [&#x200B; sectie &#x200B;](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->Voor ontvangen of hybride installaties, als u aan [ Uitgebreide MTA ](sending-with-enhanced-mta.md) hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor ontvangen of hybride installaties, als u aan [&#x200B; Uitgebreide MTA &#x200B;](sending-with-enhanced-mta.md) hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
 Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, wijst de centrale sectie van het **[!UICONTROL Delivery]** lusje voor leveringsparameters erop hoeveel herpogingen de dag na de levering en de minimumvertraging tussen herpogingen zouden moeten worden uitgevoerd.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Elke dag opnieuw proberen wordt geprogrammeerd na die datum en tot de leveringstermijn, die is gedefinieerd op het tabblad **[!UICONTROL Validity]** . Zie [ bepalen de geldigheidsperiode ](#defining-validity-period).
+Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Elke dag opnieuw proberen wordt geprogrammeerd na die datum en tot de leveringstermijn, die is gedefinieerd op het tabblad **[!UICONTROL Validity]** . Zie [&#x200B; bepalen de geldigheidsperiode &#x200B;](#defining-validity-period).
 
 ## De geldigheidsperiode definiëren {#defining-validity-period}
 
@@ -195,8 +195,8 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 
   >[!IMPORTANT]
   >
-  >Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](sending-with-enhanced-mta.md) hebt bevorderd, zal het **[!UICONTROL Delivery duration]** plaatsen in uw e-mailleveringen van de Campagne slechts als reeks aan **3.5 dagen of minder** worden gebruikt. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
+  >Voor ontvangen of hybride installaties, als u aan [&#x200B; Verbeterde MTA &#x200B;](sending-with-enhanced-mta.md) hebt bevorderd, zal het **[!UICONTROL Delivery duration]** plaatsen in uw e-mailleveringen van de Campagne slechts als reeks aan **3.5 dagen of minder** worden gebruikt. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 
 * **grens van de Geldigheid van middelen**: Het **[!UICONTROL Validity limit]** gebied wordt gebruikt voor geuploade middelen, hoofdzakelijk voor de spiegelpagina en beelden. De bronnen op deze pagina zijn gedurende een beperkte tijd geldig (om schijfruimte te besparen).
 
-  De waarden op dit gebied kunnen in de eenheden worden uitgedrukt die in [ worden vermeld deze sectie ](../../platform/using/adobe-campaign-workspace.md#default-units).
+  De waarden op dit gebied kunnen in de eenheden worden uitgedrukt die in [&#x200B; worden vermeld deze sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md#default-units).

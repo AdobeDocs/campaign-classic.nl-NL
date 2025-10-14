@@ -28,7 +28,7 @@ De triggers worden gebruikt voor targeting door een campagneworkflow die e-mails
 Controleer voordat u deze configuratie start of:
 
 * Een Adobe Developer-project
-* Een geldige identiteitskaart van de Organisatie - om uw identiteitskaart van de Organisatie te vinden, verwijs naar [ deze pagina ](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Een geldige identiteitskaart van de Organisatie - om uw identiteitskaart van de Organisatie te vinden, verwijs naar [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Een ontwikkelaar heeft toegang tot uw organisatie
 * Een geldige triggerconfiguratie in Adobe Analytics
 
@@ -38,7 +38,7 @@ De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cl
 
 Voor de integratie met Triggers moet u uw organisatie inschakelen met Adobe Developer-accounttokens.
 
-Leer hoe te om uw technische rekening van Adobe in [ tot stand te brengen deze pagina ](../../integrations/using/oauth-technical-account.md). U moet **[!UICONTROL Adobe Analytics]** selecteren wanneer u API toevoegt aan de Adobe Developer-referentie.
+Leer hoe te om uw technische rekening van Adobe in [&#x200B; tot stand te brengen deze pagina &#x200B;](../../integrations/using/oauth-technical-account.md). U moet **[!UICONTROL Adobe Analytics]** selecteren wanneer u API toevoegt aan de Adobe Developer-referentie.
 
 ## Stap 2: Vorm de pijpleidingsoptie {#configuring-nmspipeline}
 

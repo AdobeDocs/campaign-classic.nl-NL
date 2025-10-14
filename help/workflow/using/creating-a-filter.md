@@ -21,7 +21,7 @@ De filters die beschikbaar zijn in Adobe Campaign worden gedefinieerd door filte
 
 >[!NOTE]
 >
->Voor meer bij het creëren van filters, verwijs naar [ deze sectie ](../../platform/using/filtering-options.md).
+>Voor meer bij het creëren van filters, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/filtering-options.md).
 
 Het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** bevat alle filters die worden gebruikt in de lijsten en overzichten.
 

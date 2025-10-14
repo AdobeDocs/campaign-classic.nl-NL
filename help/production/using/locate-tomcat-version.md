@@ -23,7 +23,7 @@ Volg hieronder de procedure om de nauwkeurige versie van Tomcat te weten te kome
 
 ## Tomcat gebruikt in Adobe Campaign
 
-Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Voor meer informatie, zie de Uitrusting van de Ontwikkeling van Java (JDK) in de [ Matrijs van de Verenigbaarheid van de Campagne ](../../rn/using/compatibility-matrix.md) sectie.
+Tomcat wordt uitgevoerd op Java en vereist dat JDK wordt geïnstalleerd. Voor meer informatie, zie de Uitrusting van de Ontwikkeling van Java (JDK) in de [&#x200B; Matrijs van de Verenigbaarheid van de Campagne &#x200B;](../../rn/using/compatibility-matrix.md) sectie.
 
 De Tomcat die in Adobe Campaign wordt gebruikt, is een aangepaste ingesloten versie die niet alle functies van de volledige algemeen beschikbare versie van Tomcat gebruikt en die mogelijk niet alle kwetsbaarheden van de volledige versie ondervindt. De Tomcat mag ook niet worden blootgesteld aan het externe internet, en Adobe Campaign-instanties die worden blootgesteld, moeten een externe webserver (IIS, Apache, enz.) vóór de Tomcat hebben om deze te beschermen.
 

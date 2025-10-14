@@ -23,18 +23,18 @@ ht-degree: 10%
 
 De stappen voor het bouwen van een vraag in Adobe Campaign zijn als volgt:
 
-1. Selecteer de werktabel. Verwijs naar [ Stap 1 - kies een lijst ](#step-1---choose-a-table).
-1. Selecteer de gegevens die u wilt extraheren. Verwijs naar [ Stap 2 - kies gegevens om ](#step-2---choose-data-to-extract) te halen.
-1. Definieer de gegevenssorteervolgorde. Verwijs naar [ Stap 3 - de gegevens van de Soort ](#step-3---sort-data).
-1. Filter de gegevens. Verwijs naar [ Stap 4 - de gegevens van de Filter ](#step-4---filter-data).
-1. Maak de gegevens op. Verwijs naar [ Stap 5 - de gegevens van het Formaat ](#step-5---format-data).
-1. Geef het resultaat weer. Verwijs naar [ Stap 6 - de gegevens van de Voorproef ](#step-6---preview-data).
+1. Selecteer de werktabel. Verwijs naar [&#x200B; Stap 1 - kies een lijst &#x200B;](#step-1---choose-a-table).
+1. Selecteer de gegevens die u wilt extraheren. Verwijs naar [&#x200B; Stap 2 - kies gegevens om &#x200B;](#step-2---choose-data-to-extract) te halen.
+1. Definieer de gegevenssorteervolgorde. Verwijs naar [&#x200B; Stap 3 - de gegevens van de Soort &#x200B;](#step-3---sort-data).
+1. Filter de gegevens. Verwijs naar [&#x200B; Stap 4 - de gegevens van de Filter &#x200B;](#step-4---filter-data).
+1. Maak de gegevens op. Verwijs naar [&#x200B; Stap 5 - de gegevens van het Formaat &#x200B;](#step-5---format-data).
+1. Geef het resultaat weer. Verwijs naar [&#x200B; Stap 6 - de gegevens van de Voorproef &#x200B;](#step-6---preview-data).
 
 >[!NOTE]
 >
 >* Al deze stappen zijn beschikbaar in de generische vraagredacteur. Wanneer een query in een andere context wordt gemaakt, kunnen sommige stappen worden weggelaten.\
->De activiteit van de Vraag wordt voorgesteld in [ deze sectie ](../../workflow/using/query.md).
->* Meer over Vragen leren en hoe te om hen tot stand te brengen, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](../../workflow/using/query.md).
+>De activiteit van de Vraag wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
+>* Meer over Vragen leren en hoe te om hen tot stand te brengen, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](../../workflow/using/query.md).
 
 <!--
 ## Step 1 - Choose a table {#step-1---choose-a-table}

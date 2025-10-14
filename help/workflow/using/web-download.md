@@ -62,12 +62,12 @@ De **download van het Web** activiteit lanceert het downloaden van een dossier o
    Met de koppeling **[!UICONTROL Advanced parameters...]** kunt u de hieronder weergegeven aanvullende opties opgeven:
 
    * **[!UICONTROL Follow redirections]**: met Bestandsomleiding kunt u overschrijvingen gebruiken om de invoer of uitvoer van gegevens naar een ander type apparaat te sturen.
-   * **[!UICONTROL Add the HTTP headers to the file]**: In sommige gevallen kunt u extra HTTP-headers aan een bestand toevoegen. Meestal, zullen deze kopballen worden gebruikt om extra informatie voor het oplossen van problemendoeleinden, voor [ het Delen van het Middel van de Cross-Origin (CORS) ](https://developer.mozilla.org/docs/Web/HTTP/CORS) te verstrekken, of specifieke caching richtlijnen te plaatsen.
+   * **[!UICONTROL Add the HTTP headers to the file]**: In sommige gevallen kunt u extra HTTP-headers aan een bestand toevoegen. Meestal, zullen deze kopballen worden gebruikt om extra informatie voor het oplossen van problemendoeleinden, voor [&#x200B; het Delen van het Middel van de Cross-Origin (CORS) &#x200B;](https://developer.mozilla.org/docs/Web/HTTP/CORS) te verstrekken, of specifieke caching richtlijnen te plaatsen.
    * **[!UICONTROL Ignore the HTTP return code]**: HTTP-retourcodes, ook wel HTTP-statuscodes genoemd, geven het resultaat van een HTTP-aanvraag aan.
 
    ![](assets/download_web_edit_advanced.png)
 
-   De **[!UICONTROL Process errors]** optie is gedetailleerd in [ Verwerkingsfouten ](monitoring-workflow-execution.md#processing-errors).
+   De **[!UICONTROL Process errors]** optie is gedetailleerd in [&#x200B; Verwerkingsfouten &#x200B;](monitoring-workflow-execution.md#processing-errors).
 
 ## Uitvoerparameters {#output-parameters}
 

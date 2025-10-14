@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # Bijwerken naar de nieuwe releaseserver {#acc-deliverability}
 
-Beginnend [ v7.2.2 versie ](../../rn/using/latest-release.md#release-7-2-2), baseert Adobe Campaign zich op een nieuwe leverbaarheidsserver die hoge beschikbaarheid brengt en veiligheidsnalevingskwesties richt. Campaign Classic synchroniseert nu de regels, de uitzending en het suppressieadres van en naar de nieuwe aanwijsbaarheidsserver. De oude leverbaarheidsserver wordt op 31 augustus 2022 gedecomisseerd.
+Beginnend [&#x200B; v7.2.2 versie &#x200B;](../../rn/using/latest-release.md#release-7-2-2), baseert Adobe Campaign zich op een nieuwe leverbaarheidsserver die hoge beschikbaarheid brengt en veiligheidsnalevingskwesties richt. Campaign Classic synchroniseert nu de regels, de uitzending en het suppressieadres van en naar de nieuwe aanwijsbaarheidsserver. De oude leverbaarheidsserver wordt op 31 augustus 2022 gedecomisseerd.
 
 Als klant van het Campaign Classic, moet u de nieuwe leverbaarheidsserver **vóór 31 augustus, 2022** uitvoeren.
 
 >[!NOTE]
 >
->Voor meer vragen over deze veranderingen, verwijs naar [ Veelgestelde vragen ](#faq), of contacteer [ de Zorg van de Klant van de Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) {_blank}.
+>Voor meer vragen over deze veranderingen, verwijs naar [&#x200B; Veelgestelde vragen &#x200B;](#faq), of contacteer [&#x200B; de Zorg van de Klant van de Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) {_blank}.
 >
 
 ## Wat is er veranderd?{#acc-deliverability-changes}
@@ -32,13 +32,13 @@ Deze nieuwe server garandeert een hoge beschikbaarheid (99.9) &#x200B; en biedt 
 
 ## Heb je invloed op?{#acc-deliverability-impacts}
 
-Alle klanten worden beïnvloed en moeten aan [ Campagne v7.2.2 ](../../rn/using/latest-release.md#release-7-2-2) (of meer) bevorderen en hun milieu uitvoeren om van de nieuwe leverbaarheidsserver te profiteren.
+Alle klanten worden beïnvloed en moeten aan [&#x200B; Campagne v7.2.2 &#x200B;](../../rn/using/latest-release.md#release-7-2-2) (of meer) bevorderen en hun milieu uitvoeren om van de nieuwe leverbaarheidsserver te profiteren.
 
 ## Hoe kan ik bijwerken?{#acc-deliverability-update}
 
 Als a **ontvangen klant**, zal de Adobe met u werken om uw instantie(s) aan de nieuwere versie te bevorderen, en tot het project in Adobe Developer Console te leiden.
 
-Als **op-gebouw/hybride klant**, moet u aan [ Campagne v7.2.2 ](../../rn/using/latest-release.md#release-7-2-2) (of meer) bevorderen om van de nieuwe leverbaarheidsserver te profiteren. Zodra alle instanties worden bevorderd, moet u [ de nieuwe integratie ](#implementation-steps) aan de server van de Adobe leverbaarheid uitvoeren, en een naadloze overgang verzekeren.
+Als **op-gebouw/hybride klant**, moet u aan [&#x200B; Campagne v7.2.2 &#x200B;](../../rn/using/latest-release.md#release-7-2-2) (of meer) bevorderen om van de nieuwe leverbaarheidsserver te profiteren. Zodra alle instanties worden bevorderd, moet u [&#x200B; de nieuwe integratie &#x200B;](#implementation-steps) aan de server van de Adobe leverbaarheid uitvoeren, en een naadloze overgang verzekeren.
 
 ## Implementatiestappen {#implementation-steps}
 
@@ -52,7 +52,7 @@ Als onderdeel van de nieuwe integratie van de leverbaarheidsserver, moet de Camp
 >
 > De referentie van de Rekening van de Dienst (JWT) wordt afgekeurd door Adobe, de integratie van de Campagne met de oplossingen van de Adobe en apps moet nu op server-aan-server referentie van OAuth vertrouwen. </br>
 >
-> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [ wordt gedetailleerd deze documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [ geloofsbrieven van de Rekening van de Dienst (JWT) ](../../integrations/using/oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken. </br>
+> * Als u binnenkomende integratie met Campagne hebt uitgevoerd, moet u uw Technische Rekening zoals die in [&#x200B; wordt gedetailleerd deze documentatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) migreren. De bestaande [&#x200B; geloofsbrieven van de Rekening van de Dienst (JWT) &#x200B;](../../integrations/using/oauth-technical-account.md) zullen tot 27 Januari, 2025 blijven werken. </br>
 >
 > * Als u uitgaande integratie hebt geïmplementeerd, zoals integratie met Campaign-Analytics of Experience Cloud Triggers, blijven ze tot 27 januari 2025 werken. Nochtans, vóór die datum, moet u uw milieu van de Campagne aan v7.4.1 bevorderen en uw Technische Rekening migreren aan Auth.
 
@@ -71,11 +71,11 @@ Controleer uw instantieconfiguratie voordat u de implementatie start.
 
 Als klant op locatie moet u ook controleren of er een campagne **[!UICONTROL Product profile]** beschikbaar is voor uw organisatie. Volg onderstaande stappen om dit te doen:
 
-1. Als Beheerder, verbind met [ Adobe Admin Console ](https://adminconsole.adobe.com/) {_blank}.
+1. Als Beheerder, verbind met [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/) {_blank}.
 1. Heb toegang tot het **Product en de sectie van de Diensten** en controle **Adobe Campaign** is vermeld.
-Als u niet **contact [ de Zorg van de Klant van de Adobe van 0&rbrace; Adobe Campaign ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) {_blank} kunt zien om het toegevoegde te krijgen.**
+Als u niet **contact [&#x200B; de Zorg van de Klant van de Adobe van 0&rbrace; Adobe Campaign &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) {_blank} kunt zien om het toegevoegde te krijgen.**
 1. Klik **Adobe Campaign** en selecteer uw Organisatie.
-   **Voorzichtigheid**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Leer meer over Organisaties [ in deze pagina ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl-NL#ims-org-id) {_blank}.
+   **Voorzichtigheid**: Als u meer dan één organisatie hebt, zorg ervoor om correcte te selecteren. Leer meer over Organisaties [&#x200B; in deze pagina &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl-NL#ims-org-id) {_blank}.
 
 1. Controleer of een **[!UICONTROL Product profile]** bestaat. Als dat niet het geval is, maakt u het. Voor deze **[!UICONTROL Product profile]** is geen toestemming vereist.
 
@@ -89,11 +89,11 @@ Als u niet **contact [ de Zorg van de Klant van de Adobe van 0&rbrace; Adobe Cam
 
 Als u verder wilt gaan met het configureren van uw Adobe Analytics-connector, opent u de Adobe Developer-console en maakt u uw OAuth Server-to-Server-project.
 
-Verwijs naar [ deze pagina ](../../integrations/using/oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
+Verwijs naar [&#x200B; deze pagina &#x200B;](../../integrations/using/oauth-technical-account.md#oauth-service) voor de gedetailleerde documentatie.
 
 ### Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign toe {#add-credentials-campaign}
 
-Volg de stappen die in [ worden gedetailleerd deze pagina ](../../integrations/using/oauth-technical-account.md#add-credentials) om uw OAuth projectgeloofsbrieven in Adobe Campaign toe te voegen.
+Volg de stappen die in [&#x200B; worden gedetailleerd deze pagina &#x200B;](../../integrations/using/oauth-technical-account.md#add-credentials) om uw OAuth projectgeloofsbrieven in Adobe Campaign toe te voegen.
 
 ### Stap 3: Valideer uw configuratie
 
@@ -122,4 +122,4 @@ Om het even welke instantie van de Campagne die niet tegen 31 Augustus wordt bev
 
 Als u uw milieu niet bevordert, zullen de e-mailmontages ophouden gesynchroniseerd (MX de regels van het Beheer, Binnenkomende E-mailregels, de regels van het Beheer van het Domein, en stuiterende kwalificatieregels). Dit kan in de loop der tijd invloed hebben op uw leverbaarheid. Als deze regels ingrijpend worden gewijzigd, moeten ze vanaf dit punt handmatig worden toegepast.
 
-Voor instanties MKT, slechts wordt de [ Globale Lijst van de Onderdrukking ](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) beïnvloed.
+Voor instanties MKT, slechts wordt de [&#x200B; Globale Lijst van de Onderdrukking &#x200B;](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) beïnvloed.

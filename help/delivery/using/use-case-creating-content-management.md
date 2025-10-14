@@ -18,12 +18,12 @@ ht-degree: 0%
 
 Voor het maken van contentbeheer in Adobe Campaign zijn de volgende stappen nodig:
 
-* [ Stap 1 - analyseer de te produceren inhoud ](#step-1---analyzing-the-content-to-be-produced),
-* [ Stap 2 - creeer het gegevensschema ](#step-2---creating-the-data-schema),
-* [ Stap 3 - creeer de inputvorm ](#step-3---creating-the-input-form),
-* [ Stap 4 - creeer het bouwmalplaatje ](#step-4---creating-the-construction-template),
-* [ Stap 5 - creeer het publicatiemalplaatje ](#step-5---creating-the-publication-template),
-* [ Stap 6 - creeer inhoud ](#step-6---creating-contents).
+* [&#x200B; Stap 1 - analyseer de te produceren inhoud &#x200B;](#step-1---analyzing-the-content-to-be-produced),
+* [&#x200B; Stap 2 - creeer het gegevensschema &#x200B;](#step-2---creating-the-data-schema),
+* [&#x200B; Stap 3 - creeer de inputvorm &#x200B;](#step-3---creating-the-input-form),
+* [&#x200B; Stap 4 - creeer het bouwmalplaatje &#x200B;](#step-4---creating-the-construction-template),
+* [&#x200B; Stap 5 - creeer het publicatiemalplaatje &#x200B;](#step-5---creating-the-publication-template),
+* [&#x200B; Stap 6 - creeer inhoud &#x200B;](#step-6---creating-contents).
 
 ## Stap 1 - Analyseer de inhoud die moet worden geproduceerd {#step-1---analyzing-the-content-to-be-produced}
 
@@ -57,9 +57,9 @@ Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt
 
 >[!NOTE]
 >
->Voor meer bij het creëren van en het vormen van gegevensschema&#39;s in Adobe Campaign, gelieve te verwijzen naar [ deze sectie ](../../configuration/using/about-schema-edition.md).
+>Voor meer bij het creëren van en het vormen van gegevensschema&#39;s in Adobe Campaign, gelieve te verwijzen naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-edition.md).
 >
->De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [ schema&#39;s van Gegevens ](data-schemas.md).
+>De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [&#x200B; schema&#39;s van Gegevens &#x200B;](data-schemas.md).
 
 Voer de volgende stappen uit om een gegevensschema te maken:
 
@@ -83,7 +83,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Voor meer op dit, verwijs naar [ het Uitgeven schema&#39;s ](data-schemas.md#editing-schemas).
+   Voor meer op dit, verwijs naar [&#x200B; het Uitgeven schema&#39;s &#x200B;](data-schemas.md#editing-schemas).
 
    Voor elk element waarnaar in de inhoud wordt verwezen, moet u een overeenkomend type selecteren.
 
@@ -169,9 +169,9 @@ De beschrijving van een formulier is een gestructureerd XML-document waarin de g
 
 >[!NOTE]
 >
->Voor meer bij het creëren van en het vormen van vormen in Adobe Campaign, verwijs naar [ deze sectie ](../../configuration/using/identifying-a-form.md).
+>Voor meer bij het creëren van en het vormen van vormen in Adobe Campaign, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/identifying-a-form.md).
 >
->De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [ vormen van de Input ](input-forms.md).
+>De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [&#x200B; vormen van de Input &#x200B;](input-forms.md).
 
 Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
 
@@ -221,7 +221,7 @@ In dit voorbeeld willen we een JavaScript-sjabloon gebruiken om de gegevensconst
 
 >[!NOTE]
 >
->De beperkingen verbonden aan documentbouw (het malplaatje van JavaScript of van XSL) zijn gedetailleerd in [ Formatterend ](formatting.md).
+>De beperkingen verbonden aan documentbouw (het malplaatje van JavaScript of van XSL) zijn gedetailleerd in [&#x200B; Formatterend &#x200B;](formatting.md).
 
 Voer de volgende stappen uit om een JavaScript-sjabloon te gebruiken in Adobe Campaign:
 
@@ -232,7 +232,7 @@ Voer de volgende stappen uit om een JavaScript-sjabloon te gebruiken in Adobe Ca
 1. Voer een sjabloonnaam in en selecteer het schema dat u voor inhoudsbeheer hebt gemaakt.
 1. Importeer de setinhoud die u in het bericht wilt weergeven.
 
-   Voeg de veranderlijke elementen toe terwijl het respecteren van de syntaxis die in [ wordt gedetailleerd de malplaatjes van JavaScript ](formatting.md#javascript-templates).
+   Voeg de veranderlijke elementen toe terwijl het respecteren van de syntaxis die in [&#x200B; wordt gedetailleerd de malplaatjes van JavaScript &#x200B;](formatting.md#javascript-templates).
 
    Als u de inhoud wilt weergeven die in ons voorbeeld wordt weergegeven, moet de JavaScript-sjabloon de volgende elementen bevatten:
 
@@ -325,7 +325,7 @@ Voer de volgende stappen uit om een JavaScript-sjabloon te gebruiken in Adobe Ca
    </html>
    ```
 
-   Het roepen van omhoog een functie bij het begin van een malplaatje laat u opstelling een vraag aan verpersoonlijkingsgegevens die uit het gegevensbestand van Adobe Campaign (in dit geval worden genomen: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Voor meer op dit, verwijs naar [ omvat een malplaatje van JavaScript ](formatting.md#including-a-javascript-template).
+   Het roepen van omhoog een functie bij het begin van een malplaatje laat u opstelling een vraag aan verpersoonlijkingsgegevens die uit het gegevensbestand van Adobe Campaign (in dit geval worden genomen: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Voor meer op dit, verwijs naar [&#x200B; omvat een malplaatje van JavaScript &#x200B;](formatting.md#including-a-javascript-template).
 
    In dit voorbeeld bevat de functie de volgende code:
 
@@ -354,7 +354,7 @@ De volgende stap bestaat uit het maken van een publicatiesjabloon voor inhoud om
 
 >[!NOTE]
 >
->Voor meer op de malplaatjes van de inhoudspublicatie, verwijs naar [ de malplaatjes van de Publicatie ](publication-templates.md).
+>Voor meer op de malplaatjes van de inhoudspublicatie, verwijs naar [&#x200B; de malplaatjes van de Publicatie &#x200B;](publication-templates.md).
 
 In dit voorbeeld zijn de stappen als volgt:
 
@@ -380,7 +380,7 @@ U kunt nu inhoud maken op basis van deze publicatiesjabloon.
 
 >[!NOTE]
 >
->Voor meer bij het creëren van inhoud, verwijs naar [ Gebruik een inhoudsmalplaatje ](using-a-content-template.md).
+>Voor meer bij het creëren van inhoud, verwijs naar [&#x200B; Gebruik een inhoudsmalplaatje &#x200B;](using-a-content-template.md).
 
 ### Inhoud maken in de leveringsassistent {#creating-content-in-the-delivery-assistant}
 

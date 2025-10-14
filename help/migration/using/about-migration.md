@@ -22,13 +22,13 @@ ht-degree: 2%
 
 In dit document worden de voorwaarden voor een migratie beschreven, de stappen voor een migratie naar Adobe Campaign Classic v7. De stappen en de facultatieve montages hangen van uw configuratie af.
 
-Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. Wij adviseren sterk in contact met [ de Zorg van de Klant van de Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) alvorens om het even welke migratieprocedure te beginnen.
+Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. Wij adviseren sterk in contact met [&#x200B; de Zorg van de Klant van de Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) alvorens om het even welke migratieprocedure te beginnen.
 
 De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorgen dat de migratie soepel en zonder fouten functioneert. Het migreren van de productieomgeving mag alleen worden uitgevoerd als de gemigreerde testomgeving volledig is gevalideerd.
 
 >[!NOTE]
 >
->De nieuwe eigenschappen en de verbeteringen die met Adobe Campaign v7 komen worden gedetailleerd in de [ Nota&#39;s van de Versie ](../../rn/using/latest-release.md).
+>De nieuwe eigenschappen en de verbeteringen die met Adobe Campaign v7 komen worden gedetailleerd in de [&#x200B; Nota&#39;s van de Versie &#x200B;](../../rn/using/latest-release.md).
 
 
 ## Vereisten
@@ -40,7 +40,7 @@ De migratie moet vooraf op de test-/werkomgeving worden getest om ervoor te zorg
 * Het migratieproces kan enkele dagen duren.
 * Adobe Campaign v7 is een veiligere versie dan de vorige versie: dit is van invloed op configuratierichtlijnen om problemen zoals gegevenscorruptie te voorkomen en gegevensintegriteit in de database te behouden. Als klant bent u verantwoordelijk voor het testen van alle configuraties, inclusief workflows.
 
-Meer eerste vereisten zijn beschikbaar in [ deze pagina ](../../migration/using/before-starting-migration.md).
+Meer eerste vereisten zijn beschikbaar in [&#x200B; deze pagina &#x200B;](../../migration/using/before-starting-migration.md).
 
 
 ## Moderne omgeving {#modernizing-your-environment}
@@ -49,11 +49,11 @@ Het uitvoeren van een migratie kan een kans zijn om uw omgeving (databasemotoren
 
 >[!CAUTION]
 >
->Voor verdere informatie over de versies die door Adobe Campaign v7 worden gesteund, verwijs naar de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md).
+>Voor verdere informatie over de versies die door Adobe Campaign v7 worden gesteund, verwijs naar de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md).
 
 ## Belangrijke migratiestappen {#key-migration-steps}
 
-De algemene procedure voor het migreren naar Adobe Campaign v7 wordt gedetailleerd in [ deze pagina ](../../migration/using/before-starting-migration.md).
+De algemene procedure voor het migreren naar Adobe Campaign v7 wordt gedetailleerd in [&#x200B; deze pagina &#x200B;](../../migration/using/before-starting-migration.md).
 
 
 ## Specifieke configuraties {#specific-configurations}

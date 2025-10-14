@@ -23,9 +23,9 @@ In dit geval wordt beschreven hoe u een maandelijks out-of-the-box **[!UICONTROL
 
 De belangrijkste implementatiestappen voor dit gebruiksgeval zijn:
 
-* Creërend een lijst van ontvangers die de levering zullen ontvangen (verwijs naar: [ Stap 1: Creërend de ontvankelijke lijst ](#step-1--creating-the-recipient-list)).
-* Creërend een leveringsmalplaatje dat u een nieuwe levering zal laten produceren telkens als het werkschema wordt uitgevoerd (verwijs naar: [ Stap 2: Creërend het leveringsmalplaatje ](#step-2--creating-the-delivery-template)).
-* Creërend een werkschema dat u het rapport in het formaat van PDF zal produceren en het naar de lijst van ontvangers zal verzenden (verwijs naar: [ Stap 3: Creërend het werkschema ](#step-3--creating-the-workflow)).
+* Creërend een lijst van ontvangers die de levering zullen ontvangen (verwijs naar: [&#x200B; Stap 1: Creërend de ontvankelijke lijst &#x200B;](#step-1--creating-the-recipient-list)).
+* Creërend een leveringsmalplaatje dat u een nieuwe levering zal laten produceren telkens als het werkschema wordt uitgevoerd (verwijs naar: [&#x200B; Stap 2: Creërend het leveringsmalplaatje &#x200B;](#step-2--creating-the-delivery-template)).
+* Creërend een werkschema dat u het rapport in het formaat van PDF zal produceren en het naar de lijst van ontvangers zal verzenden (verwijs naar: [&#x200B; Stap 3: Creërend het werkschema &#x200B;](#step-3--creating-the-workflow)).
 
 ## Stap 1: De lijst met ontvangers maken {#step-1--creating-the-recipient-list}
 
@@ -33,7 +33,7 @@ Ga naar het tabblad **[!UICONTROL Profiles and targets]** en klik op de koppelin
 
 ![](assets/use_case_report_1.png)
 
-Voor meer bij het creëren van lijsten, verwijs naar deze [ sectie ](../../platform/using/creating-and-managing-lists.md).
+Voor meer bij het creëren van lijsten, verwijs naar deze [&#x200B; sectie &#x200B;](../../platform/using/creating-and-managing-lists.md).
 
 ## Stap 2: Het creëren van het leveringsmalplaatje {#step-2--creating-the-delivery-template}
 
@@ -41,15 +41,15 @@ Voor meer bij het creëren van lijsten, verwijs naar deze [ sectie ](../../platf
 
    ![](assets/use_case_report_2.png)
 
-   Voor meer bij het creëren van een leveringsmalplaatje, verwijs naar deze [ sectie ](../../delivery/using/about-templates.md).
+   Voor meer bij het creëren van een leveringsmalplaatje, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/about-templates.md).
 
 1. Voer de verschillende sjabloonparameters in: label, doel (de lijst met eerder gemaakte ontvangers), onderwerp en inhoud.
 
    ![](assets/use_case_report_3.png)
 
-1. Telkens als het werkschema wordt uitgevoerd, wordt het **[!UICONTROL Tracking indicators]** rapport bijgewerkt (verwijs naar [ Stap 3: Creërend het werkschema ](#step-3--creating-the-workflow)). Als u de meest recente versie van het rapport in de levering wilt opnemen, moet u een **[!UICONTROL Calculated attachment]** toevoegen:
+1. Telkens als het werkschema wordt uitgevoerd, wordt het **[!UICONTROL Tracking indicators]** rapport bijgewerkt (verwijs naar [&#x200B; Stap 3: Creërend het werkschema &#x200B;](#step-3--creating-the-workflow)). Als u de meest recente versie van het rapport in de levering wilt opnemen, moet u een **[!UICONTROL Calculated attachment]** toevoegen:
 
-   Voor meer bij het creëren van een berekende gehechtheid, verwijs naar deze [ sectie ](../../delivery/using/attaching-files.md#creating-a-calculated-attachment).
+   Voor meer bij het creëren van een berekende gehechtheid, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/attaching-files.md#creating-a-calculated-attachment).
 
    * Klik op de koppeling **[!UICONTROL Attachments]** , klik op **[!UICONTROL Add]** en selecteer vervolgens **[!UICONTROL Calculated attachment]** .
 
@@ -67,7 +67,7 @@ Voor meer bij het creëren van lijsten, verwijs naar deze [ sectie ](../../platf
 
      >[!CAUTION]
      >
-     >Het bestand moet aanwezig zijn op de server. Zijn weg en naam moeten aan die ingegaan in de **[!UICONTROL JavaScript code]** typeactiviteit van het werkschema (verwijs naar: [ Stap 3: Creërend het werkschema ](#step-3--creating-the-workflow)) identiek zijn.
+     >Het bestand moet aanwezig zijn op de server. Zijn weg en naam moeten aan die ingegaan in de **[!UICONTROL JavaScript code]** typeactiviteit van het werkschema (verwijs naar: [&#x200B; Stap 3: Creërend het werkschema &#x200B;](#step-3--creating-the-workflow)) identiek zijn.
 
    * Selecteer de tab **[!UICONTROL Advanced]** en controleer **[!UICONTROL Script the name of the file name displayed in the mails sent]** . Ga naar de uitgeeft streek en ga de naam in u de gehechtheid in de definitieve levering wilt geven.
 
@@ -91,7 +91,7 @@ De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
 
    ![](assets/use_case_report_9.png)
 
-   Voor meer bij het vormen van de planner, verwijs naar [ Planner ](scheduler.md).
+   Voor meer bij het vormen van de planner, verwijs naar [&#x200B; Planner &#x200B;](scheduler.md).
 
 1. Voeg vervolgens een **[!UICONTROL JavaScript code]** type-activiteit toe.
 
@@ -117,7 +117,7 @@ De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
 
      >[!CAUTION]
      >
-     >Het bestand moet op de server worden opgeslagen. U moet de zelfde weg en de zelfde naam in het **[!UICONTROL General]** lusje van uitgeven venster voor de berekende gehechtheid ingaan (verwijs naar: [ Stap 2: Creërend het leveringsmalplaatje ](#step-2--creating-the-delivery-template)).
+     >Het bestand moet op de server worden opgeslagen. U moet de zelfde weg en de zelfde naam in het **[!UICONTROL General]** lusje van uitgeven venster voor de berekende gehechtheid ingaan (verwijs naar: [&#x200B; Stap 2: Creërend het leveringsmalplaatje &#x200B;](#step-2--creating-the-delivery-template)).
 
    * **var exportFormat**: ga het uitvoerformaat van het dossier (&quot;PDF&quot;) in.
    * **var _ctx** (context): in dit geval, gebruiken wij het **[!UICONTROL Tracking indicators]** rapport in zijn globale context.

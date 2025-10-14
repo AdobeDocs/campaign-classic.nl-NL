@@ -25,7 +25,7 @@ De simulatieresultaten bevatten een uitsplitsing van de voorstellingen per rang 
 
 U kunt deze resultaten opslaan en indien nodig exporteren door een beschrijvende analyse van de resultaten te maken. Klik hiertoe op de gewenste koppeling in het resultatenvenster.
 
-Verwijs naar [ deze sectie ](../../reporting/using/about-descriptive-analysis.md) voor meer informatie over de beschrijvende analysemedewerker.
+Verwijs naar [&#x200B; deze sectie &#x200B;](../../reporting/using/about-descriptive-analysis.md) voor meer informatie over de beschrijvende analysemedewerker.
 
 ![](assets/offer_simulation_012.png)
 

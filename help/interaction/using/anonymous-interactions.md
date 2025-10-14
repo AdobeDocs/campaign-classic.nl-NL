@@ -18,11 +18,11 @@ ht-degree: 1%
 
 
 
-![](assets/do-not-localize/how-to-video.png) bekijk deze [ video ](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om een overzicht van te krijgen hoe de aanbiedingen aan geïdentificeerde en anonieme doelstellingen worden geleverd.
+![](assets/do-not-localize/how-to-video.png) bekijk deze [&#x200B; video &#x200B;](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) om een overzicht van te krijgen hoe de aanbiedingen aan geïdentificeerde en anonieme doelstellingen worden geleverd.
 
 ## Een omgeving instellen en opslaan voor anonieme interacties {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) wenst te richten, moet u de medewerker van de doelafbeelding gebruiken om het milieu tot stand te brengen. Voor meer op dit, zie [ Creërend een aanbiedingsmilieu ](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere lijst (bezoekerslijst voor anonieme aanbiedingen of een specifieke ontvankelijke lijst) wenst te richten, moet u de medewerker van de doelafbeelding gebruiken om het milieu tot stand te brengen. Voor meer op dit, zie [&#x200B; Creërend een aanbiedingsmilieu &#x200B;](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 Wanneer u een anonieme omgeving maakt via de assistent voor het maken van toewijzingen, wordt het selectievakje **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatisch ingeschakeld op het tabblad **[!UICONTROL General]** van de omgeving.
 
@@ -40,7 +40,7 @@ Het veld **[!UICONTROL Visitor folder]** wordt weergegeven. De koppeling naar de
 
 Net als uitgaande interacties worden inkomende interacties georganiseerd in een aanbiedingencatalogus die bestaat uit categorieën en aanbiedingen.
 
-Om categorieën en ruimten tot stand te brengen, pas het zelfde proces zoals voor geïdentificeerde bezoekers toe (verwijs naar [ Creërend aanbiedingscategorieën ](../../interaction/using/creating-offer-categories.md) en [ Creërend een aanbiedingsmilieu ](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
+Om categorieën en ruimten tot stand te brengen, pas het zelfde proces zoals voor geïdentificeerde bezoekers toe (verwijs naar [&#x200B; Creërend aanbiedingscategorieën &#x200B;](../../interaction/using/creating-offer-categories.md) en [&#x200B; Creërend een aanbiedingsmilieu &#x200B;](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
 
 ## Anonieme bezoekers {#anonymous-visitors}
 

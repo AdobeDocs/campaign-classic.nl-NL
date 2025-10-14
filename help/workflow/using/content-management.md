@@ -31,7 +31,7 @@ De eigenschappen van de activiteit zijn verdeeld in drie stappen:
 
   ![](assets/content_mgmt_edit.png)
 
-  Voor meer bij het vormen van en het gebruiken van inhoudsbeheer in Adobe Campaign, verwijs naar deze [ sectie ](../../delivery/using/about-content-management.md).
+  Voor meer bij het vormen van en het gebruiken van inhoudsbeheer in Adobe Campaign, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/about-content-management.md).
 
 1. **Inhoud**
 
@@ -103,4 +103,4 @@ Identifier van de inhoud die moet worden gebruikt als de optie **[!UICONTROL Spe
 
 ## Voorbeelden {#examples}
 
-De voorbeelden worden verstrekt in deze [ sectie ](../../delivery/using/automating-via-workflows.md#examples).
+De voorbeelden worden verstrekt in deze [&#x200B; sectie &#x200B;](../../delivery/using/automating-via-workflows.md#examples).

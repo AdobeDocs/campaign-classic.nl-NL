@@ -23,7 +23,7 @@ Deze activiteit werkt volgens hetzelfde principe als de verrijkingsactiviteit me
 
 ![](assets/int_offerengine_activity2.png)
 
-Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
+Na het vormen van uw vraag (verwijs naar deze [&#x200B; sectie &#x200B;](query.md)):
 
 1. Voeg een **[!UICONTROL Offer engine]** -activiteit toe en open deze.
 1. Vul de verschillende beschikbare velden in om de oproep tot het aanbieden van motorparameters op te geven (beschikbare ruimte, categorie of thema(&#39;s), contactdatum, aantal aanbiedingen dat moet worden bewaard). De motor berekent automatisch de aanbieding(en) die volgens deze parameters moet worden toegevoegd.
@@ -34,4 +34,4 @@ Na het vormen van uw vraag (verwijs naar deze [ sectie ](query.md)):
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [ de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Verwijs naar [&#x200B; de leveringen van het Kanaal 1&rbrace;.](cross-channel-deliveries.md)

@@ -23,7 +23,7 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [&#x200B; de lijst van de opties van Campaign Classic &#x200B;](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 Er zijn twee mogelijke gevallen:
 
@@ -32,7 +32,7 @@ Er zijn twee mogelijke gevallen:
 
 >[!NOTE]
 >
->Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Voor meer op dit, verwijs naar [ Ongeveer malplaatjes ](about-templates.md).
+>Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Voor meer op dit, verwijs naar [&#x200B; Ongeveer malplaatjes &#x200B;](about-templates.md).
 
 ## Guardrails {#attachments-guardrails}
 
@@ -40,7 +40,7 @@ Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet g
 
 Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan worden geconfigureerd via de optie `NmsDelivery_MaxRecommendedAttachments` .
 
-Leer meer in [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
+Leer meer in [&#x200B; de lijst van de opties van Campaign Classic &#x200B;](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 

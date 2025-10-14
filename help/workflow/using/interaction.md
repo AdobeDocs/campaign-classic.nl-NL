@@ -21,9 +21,9 @@ De hieronder gedetailleerde werkschema&#39;s worden geïnstalleerd met de **moto
 
 Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
 
-![](assets/do-not-localize/v7.jpeg) [ de documentatie van de Campagne v7 ](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg) [&#x200B; de documentatie van de Campagne v7 &#x200B;](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png) [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png) [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

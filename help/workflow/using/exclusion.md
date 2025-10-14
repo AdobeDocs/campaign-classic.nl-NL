@@ -25,7 +25,7 @@ Om deze activiteit te vormen, ga zijn etiket in en selecteer de belangrijkste on
 
 >[!NOTE]
 >
->Voor meer bij het vormen van en het gebruiken van de uitsluitingsactiviteit, verwijs naar [ exclusief een bevolking (Uitsluiting) ](targeting-data.md#excluding-a-population--exclusion-).
+>Voor meer bij het vormen van en het gebruiken van de uitsluitingsactiviteit, verwijs naar [&#x200B; exclusief een bevolking (Uitsluiting) &#x200B;](targeting-data.md#excluding-a-population--exclusion-).
 
 Schakel de optie **[!UICONTROL Generate complement]** in als u de resterende populatie wilt benutten. De aanvulling zal de belangrijkste inkomende bevolking min de uitgaande bevolking bevatten. Vervolgens wordt als volgt een extra uitvoerovergang aan de activiteit toegevoegd:
 

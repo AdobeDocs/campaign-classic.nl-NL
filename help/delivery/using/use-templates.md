@@ -20,11 +20,11 @@ ht-degree: 0%
 
 De malplaatjes van de levering staan voor verhoogde efficiency toe door kant-en-klare scenario&#39;s voor de meeste gemeenschappelijke soorten activiteiten te verstrekken. Met malplaatjes, kunnen de marketers nieuwe campagnes met minimale aanpassing in een kortere hoeveelheid tijd opstellen.
 
-Leer meer over leveringsmalplaatjes in [ deze sectie ](about-templates.md).
+Leer meer over leveringsmalplaatjes in [&#x200B; deze sectie &#x200B;](about-templates.md).
 
 ## Aan de slag met leveringssjablonen {#gs-templates}
 
-A [ leveringsmalplaatje ](about-templates.md) laat u toe om eens een reeks van technische en functionele eigenschappen te bepalen die uw behoeften aanpassen en die voor toekomstige leveringen kunnen worden opnieuw gebruikt. U kunt dan tijd besparen en leveringen standaardiseren wanneer dat nodig is.
+A [&#x200B; leveringsmalplaatje &#x200B;](about-templates.md) laat u toe om eens een reeks van technische en functionele eigenschappen te bepalen die uw behoeften aanpassen en die voor toekomstige leveringen kunnen worden opnieuw gebruikt. U kunt dan tijd besparen en leveringen standaardiseren wanneer dat nodig is.
 
 Wanneer u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein per merk te hebben. Een bank kan bijvoorbeeld verschillende subdomeinen hebben die overeenkomen met elk van haar regionale agentschappen. Als een bank eigenaar is van het bluebank.com-domein, kunnen de subdomeinen @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com enzovoort zijn. Als u één leveringssjabloon per subdomein hebt, kunt u altijd de juiste vooraf geconfigureerde parameters voor elk merk gebruiken. Hierdoor worden fouten voorkomen en bespaart u tijd.
 
@@ -44,7 +44,7 @@ Wanneer u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdo
 
 Voer de onderstaande stappen uit om adressen in de Campagne-interface te configureren:
 
-1. In het [ leveringsmalplaatje ](about-templates.md), klik de **[!UICONTROL From]** verbinding. Vul in het venster **[!UICONTROL Email header parameters]** de volgende velden in:
+1. In het [&#x200B; leveringsmalplaatje &#x200B;](about-templates.md), klik de **[!UICONTROL From]** verbinding. Vul in het venster **[!UICONTROL Email header parameters]** de volgende velden in:
 
    ![](assets/d_best_practices_email_header.png)
 
@@ -56,7 +56,7 @@ Voer de onderstaande stappen uit om adressen in de Campagne-interface te configu
 
 ### Een controlegroep instellen
 
-Nadat de levering is verzonden, kunt u het gedrag van de uitgesloten ontvangers vergelijken met de ontvangers die de levering wel hebben ontvangen. Vervolgens kunt u de efficiëntie van uw campagnes meten. Leer meer over controlegroepen [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+Nadat de levering is verzonden, kunt u het gedrag van de uitgesloten ontvangers vergelijken met de ontvangers die de levering wel hebben ontvangen. Vervolgens kunt u de efficiëntie van uw campagnes meten. Leer meer over controlegroepen [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
 Klik op de koppeling **[!UICONTROL To]** om een besturingsgroep in te stellen. Selecteer in het **[!UICONTROL Select target]** -venster de tab **[!UICONTROL Control group]** . U kunt een gedeelte van het doel extraheren, bijvoorbeeld een willekeurig monster van 5%.
 
@@ -70,4 +70,4 @@ Wijzig de standaardtypologie naar wens op het tabblad **[!UICONTROL Typology]** 
 
 Bijvoorbeeld, om het uitgaande verkeer beter te controleren, kunt u bepalen welke IP adressen kunnen worden gebruikt door één affiniteit per subdomein te bepalen en één typologie per affiniteit te creëren. De affiniteiten worden gedefinieerd in het configuratiebestand van de instantie. Neem contact op met uw Adobe Campaign-beheerder.
 
-Voor meer op typologieën, verwijs naar [ deze sectie ](../../campaign-opt/using/about-campaign-typologies.md).
+Voor meer op typologieën, verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign-opt/using/about-campaign-typologies.md).

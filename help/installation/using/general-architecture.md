@@ -121,7 +121,7 @@ Dit proces handhaaft statistieken over het aantal verbindingen, de berichten die
 
 >[!NOTE]
 >
->De volledige lijst van de modules van Adobe Campaign is beschikbaar in [ dit document ](../../production/using/operating-principle.md).
+>De volledige lijst van de modules van Adobe Campaign is beschikbaar in [&#x200B; dit document &#x200B;](../../production/using/operating-principle.md).
 
 ## Persistentielaag {#persistence-layer}
 

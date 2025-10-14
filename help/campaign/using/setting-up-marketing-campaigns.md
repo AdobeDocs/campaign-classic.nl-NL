@@ -18,7 +18,7 @@ ht-degree: 2%
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
-![](assets/do-not-localize/how-to-video.png) ontdekt hoe te om een marketing plan, programma&#39;s, en campagnes [ in video ](#video) tot stand te brengen
+![](assets/do-not-localize/how-to-video.png) ontdekt hoe te om een marketing plan, programma&#39;s, en campagnes [&#x200B; in video &#x200B;](#video) tot stand te brengen
 
 Een marketingcampagne maken:
 
@@ -34,7 +34,7 @@ Een marketingcampagne maken:
 
 1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Wanneer deze stappen zijn voltooid, kunt u de leveringen beginnen (verwijs naar [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, de processen en de informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (verwijs naar [ deze sectie ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt de uitvoering van de verwerkingsfasen van campagnes en leveringen ook volgen (verwijs naar [ deze sectie ](../../campaign/using/marketing-campaign-monitoring.md)).
+Wanneer deze stappen zijn voltooid, kunt u de leveringen beginnen (verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, de processen en de informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt de uitvoering van de verwerkingsfasen van campagnes en leveringen ook volgen (verwijs naar [&#x200B; deze sectie &#x200B;](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Plan- en programmahiërarchie maken {#creating-plan-and-program-hierarchy}
 
@@ -226,4 +226,4 @@ In deze video ziet u hoe u een marketingplan, programma&#39;s en campagnes kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-De extra campagne hoe-aan video&#39;s is beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra campagne hoe-aan video&#39;s is beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

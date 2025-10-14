@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Campaign gebruikt een **ingebedde Webserver genoemd Apache Tomcat** om HTTP/HTTPS- verzoeken tussen de toepassing en om het even welke externe interface (met inbegrip van de Console van de Cliënt, gevolgde verbindingen URL, SOAP vraag, en anderen) te verwerken. Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
-Leer meer over Tomcat in Campaign en hoe te om van uw versie van Tomcat in [ de plaats te bepalen deze pagina ](../../production/using/locate-tomcat-version.md).
+Leer meer over Tomcat in Campaign en hoe te om van uw versie van Tomcat in [&#x200B; de plaats te bepalen deze pagina &#x200B;](../../production/using/locate-tomcat-version.md).
 
 >[!AVAILABILITY]
 >

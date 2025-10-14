@@ -44,4 +44,4 @@ Elke exploitant moet met een streek worden verbonden om aan een geval te login e
 
 >[!NOTE]
 >
->Voor meer bij het vormen van veiligheidsstreken, verwijs naar [ deze sectie ](../../installation/using/security-zones.md).
+>Voor meer bij het vormen van veiligheidsstreken, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/security-zones.md).

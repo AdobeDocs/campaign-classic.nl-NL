@@ -50,7 +50,7 @@ Voer de volgende stappen uit om gegevensextractie te configureren:
 
 U kunt een postproces bepalen dat tijdens de gegevensextractie wordt uitgevoerd, toestaand u om de dossiers te zip of te coderen. Hiervoor moet de gewenste opdracht worden toegevoegd op het tabblad **[!UICONTROL Script]** van de activiteit.
 
-Voor meer op dit, verwijs naar deze sectie: [ het Zippen of het coderen van een dossier ](../../platform/using/zip-encrypt.md)
+Voor meer op dit, verwijs naar deze sectie: [&#x200B; het Zippen of het coderen van een dossier &#x200B;](../../platform/using/zip-encrypt.md)
 
 ![](assets/postprocessing_dataextraction.png)
 

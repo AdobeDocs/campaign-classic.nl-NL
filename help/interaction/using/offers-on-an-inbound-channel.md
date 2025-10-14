@@ -33,7 +33,7 @@ Om deze interactie op te zetten, gaan we:
 
 ### Een anonieme omgeving maken {#creating-an-anonymous-environment}
 
-Volg de procedure die in [ wordt beschreven Creërend een aanbiedingsmilieu ](../../interaction/using/live-design-environments.md#creating-an-offer-environment) om uw anoniem milieu tot stand te brengen dat op de **bezoekers**&#39; dimensies wordt gebaseerd.
+Volg de procedure die in [&#x200B; wordt beschreven Creërend een aanbiedingsmilieu &#x200B;](../../interaction/using/live-design-environments.md#creating-an-offer-environment) om uw anoniem milieu tot stand te brengen dat op de **bezoekers**&#39; dimensies wordt gebaseerd.
 
 U krijgt een boomstructuur met uw nieuwe omgeving:
 
@@ -133,9 +133,9 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
 ### Webaanbiedingsruimte op de website configureren {#configure-the-web-offer-space-on-the-website}
 
-Om de aanbiedingen te maken u enkel zichtbaar op de website hebt gevormd, neem een code van JavaScript in de pagina van de HTML van uw plaats op om de motor van de Interactie (voor meer op dit, verwijs naar [ Ongeveer binnenkomende kanalen ](../../interaction/using/about-inbound-channels.md)) op te roepen.
+Om de aanbiedingen te maken u enkel zichtbaar op de website hebt gevormd, neem een code van JavaScript in de pagina van de HTML van uw plaats op om de motor van de Interactie (voor meer op dit, verwijs naar [&#x200B; Ongeveer binnenkomende kanalen &#x200B;](../../interaction/using/about-inbound-channels.md)) op te roepen.
 
-1. Ga naar de pagina van de HTML en neem een @id attribuut met een waarde op die de interne naam van de anonieme die aanbiedingsruimte aanpassen eerder wordt gecreeerd (verwijs naar [ het Creëren van anonieme aanbiedingsruimten ](#creating-anonymous-offer-spaces)), door **i_** wordt voorafgegaan.
+1. Ga naar de pagina van de HTML en neem een @id attribuut met een waarde op die de interne naam van de anonieme die aanbiedingsruimte aanpassen eerder wordt gecreeerd (verwijs naar [&#x200B; het Creëren van anonieme aanbiedingsruimten &#x200B;](#creating-anonymous-offer-spaces)), door **i_** wordt voorafgegaan.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
@@ -143,7 +143,7 @@ Om de aanbiedingen te maken u enkel zichtbaar op de website hebt gevormd, neem e
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
-   De blauwe dozen URL hierboven beantwoorden aan de instantienaam, de interne naam van het milieu (verwijs naar [ Creërend een anoniem milieu ](#creating-an-anonymous-environment)) en het thema verbonden aan de categorie ([ Creërend een aanbiedingscategorie en een thema ](#creating-an-offer-category-and-a-theme)). De laatste optie is facultatief.
+   De blauwe dozen URL hierboven beantwoorden aan de instantienaam, de interne naam van het milieu (verwijs naar [&#x200B; Creërend een anoniem milieu &#x200B;](#creating-an-anonymous-environment)) en het thema verbonden aan de categorie ([&#x200B; Creërend een aanbiedingscategorie en een thema &#x200B;](#creating-an-offer-category-and-a-theme)). De laatste optie is facultatief.
 
 Wanneer een bezoeker tot de homepage van de website toegang heeft, worden de aanbiedingen met het **financiering** thema getoond zoals gevormd op de pagina van de HTML.
 
@@ -197,7 +197,7 @@ Voer de volgende stappen uit:
 
 ### Een omgeving voor anonieme contactpersonen maken {#creating-an-environment-for-anonymous-contacts}
 
-1. Creeer een aanbiedingsmilieu voor anonieme binnenkomende interacties via de medewerker van de leveringsafbeelding (**Bezoeker** afbeelding). Voor meer op dit, verwijs naar [ Creërend een aanbiedingsmilieu ](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Creeer een aanbiedingsmilieu voor anonieme binnenkomende interacties via de medewerker van de leveringsafbeelding (**Bezoeker** afbeelding). Voor meer op dit, verwijs naar [&#x200B; Creërend een aanbiedingsmilieu &#x200B;](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -284,10 +284,10 @@ We gaan nu twee aanbiedingen maken voor elk van de hierboven geschetste rubrieke
 
 De aanbiedingen die u op de website zult voorstellen worden genomen van twee verschillende categorieën: **Beste Aanbieding** en **Partner**. In dit voorbeeld willen we een specifieke spatie maken voor elke categorie.
 
-Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe zoals voor anonieme aanbiedingsruimten. Verwijs naar [ het Vormen aanbiedingsruimten voor het anonieme milieu ](#configuring-offer-spaces-for-the-anonymous-environment).
+Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe zoals voor anonieme aanbiedingsruimten. Verwijs naar [&#x200B; het Vormen aanbiedingsruimten voor het anonieme milieu &#x200B;](#configuring-offer-spaces-for-the-anonymous-environment).
 
 1. In de boom van Adobe Campaign, ga naar het milieu u enkel creeerde en **Beste Aanbieding** en **Partner** aanbiedingsruimten hebt toegevoegd.
-1. Pas het proces toe dat in [ wordt gedetailleerd het Vormen aanbiedingsruimten voor het anonieme milieu ](#configuring-offer-spaces-for-the-anonymous-environment).
+1. Pas het proces toe dat in [&#x200B; wordt gedetailleerd het Vormen aanbiedingsruimten voor het anonieme milieu &#x200B;](#configuring-offer-spaces-for-the-anonymous-environment).
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
@@ -295,7 +295,7 @@ Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe 
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
-1. Gebruikend de drop-down lijst, selecteer de anonieme die ruimte van de Webaanbieding eerder wordt gecreeerd (verwijs naar [ Vormende aanbiedingsruimten voor het anonieme milieu ](#configuring-offer-spaces-for-the-anonymous-environment)).
+1. Gebruikend de drop-down lijst, selecteer de anonieme die ruimte van de Webaanbieding eerder wordt gecreeerd (verwijs naar [&#x200B; Vormende aanbiedingsruimten voor het anonieme milieu &#x200B;](#configuring-offer-spaces-for-the-anonymous-environment)).
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
@@ -395,7 +395,7 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   De identificatie van de persoon kan op een browser koekje, een lezingsparameter in URL, e-mail, of herkenningsteken van de persoon worden gebaseerd. Als een gebied van de ontvankelijke lijst buiten de primaire sleutel wordt gebruikt, moet het in de geavanceerde parameters van de ruimte worden bepaald (verwijs naar [ specificerend de geavanceerde montages van de geïdentificeerde aanbiedingsruimten ](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   De identificatie van de persoon kan op een browser koekje, een lezingsparameter in URL, e-mail, of herkenningsteken van de persoon worden gebaseerd. Als een gebied van de ontvankelijke lijst buiten de primaire sleutel wordt gebruikt, moet het in de geavanceerde parameters van de ruimte worden bepaald (verwijs naar [&#x200B; specificerend de geavanceerde montages van de geïdentificeerde aanbiedingsruimten &#x200B;](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Voeg de URL van de aanroep in.
 

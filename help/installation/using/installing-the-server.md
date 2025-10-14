@@ -60,7 +60,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    >
    >Wanneer de serverinstallatie is voltooid, moet de server opnieuw worden opgestart om mogelijke netwerkproblemen te voorkomen.
 
-   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Verwijs naar [ Eerste begin-up van de server ](#first-start-up-of-the-server).
+   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Verwijs naar [&#x200B; Eerste begin-up van de server &#x200B;](#first-start-up-of-the-server).
 
 ## Samenvattende installatietests {#summary-installation-testing}
 

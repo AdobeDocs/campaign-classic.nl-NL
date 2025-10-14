@@ -44,7 +44,7 @@ U moet contact opnemen met de provider om mogelijke conflicten aan de zijkant va
    * Sommige van de externe accounts delen dezelfde combinatie van login en wachtwoord.
 De provider kan op geen enkele manier zeggen van welk extern account het `BIND PDU` afkomstig is, dus behandelen ze alle verbindingen van de meerdere accounts als één enkele. Ze hebben MO en SR mogelijk willekeurig over de twee accounts geleid, wat problemen veroorzaakt.
 Als de provider meerdere shortcodes voor dezelfde login/wachtwoord-combinatie ondersteunt, moet u hen vragen waar u die shortcode in de `BIND PDU`. Merk op dat dit stukje informatie in de `BIND PDU`, en niet in `SUBMIT_SM`, moet worden geplaatst, aangezien dit `BIND PDU` de enige plaats is waar MO&#39;s correct kunnen worden gerouterd.
-Zie de [ Informatie in elk soort PDU ](sms-protocol.md#information-pdu) sectie hierboven om te weten welk gebied in `BIND PDU` beschikbaar is, gewoonlijk voegt u de korte code in `address_range` toe, maar dat vereist speciale steun van de leverancier. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
+Zie de [&#x200B; Informatie in elk soort PDU &#x200B;](sms-protocol.md#information-pdu) sectie hierboven om te weten welk gebied in `BIND PDU` beschikbaar is, gewoonlijk voegt u de korte code in `address_range` toe, maar dat vereist speciale steun van de leverancier. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
 Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes op dezelfde externe account.
 
 ## Uitgifte met externe rekening in het algemeen {#external-account-issues}
@@ -82,7 +82,7 @@ Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes o
 
 * Controle **Externe rekening** montages. Vraag de provider de waarde van de velden.
 
-* Als de verbinding succesvol maar onstabiel is, controleer het [ Kwestie met instabiele verbindingen ](troubleshooting-sms.md#issues-unstable-connection) sectie.
+* Als de verbinding succesvol maar onstabiel is, controleer het [&#x200B; Kwestie met instabiele verbindingen &#x200B;](troubleshooting-sms.md#issues-unstable-connection) sectie.
 
 * Als verbindingsproblemen moeilijk te diagnosticeren zijn, kan een netwerk vangen informatie verstrekken. Zorg ervoor dat het netwerk vangt gelijktijdig loopt terwijl het probleem voor het efficiënt kan worden geanalyseerd. Let ook op het exacte tijdstip waarop het probleem verschijnt.
 
@@ -114,9 +114,9 @@ Verbindingsstabiliteitsproblemen oplossen:
 
 ## Probleem bij het verzenden van een MT (regelmatig naar een eindgebruiker verzonden SMS){#issue-MT}
 
-* Controleer of de verbinding stabiel is. Een verbinding SMPP zou omhoog minstens 1 uur ononderbroken behalve zenders op Adobe Campaign Classic moeten blijven. Zie de sectie [ Uitgave met instabiele verbindingen ](sms-protocol.md#issues-unstable-connection).
+* Controleer of de verbinding stabiel is. Een verbinding SMPP zou omhoog minstens 1 uur ononderbroken behalve zenders op Adobe Campaign Classic moeten blijven. Zie de sectie [&#x200B; Uitgave met instabiele verbindingen &#x200B;](sms-protocol.md#issues-unstable-connection).
 
-* Als het opnieuw opstarten van de MTA het verzenden van MT opnieuw voor een kleine periode maakt, hebt u waarschijnlijk vertraging toe te schrijven aan een instabiele verbinding. Zie de sectie [ Uitgave met instabiele verbindingen ](troubleshooting-sms.md#issues-unstable-connection).
+* Als het opnieuw opstarten van de MTA het verzenden van MT opnieuw voor een kleine periode maakt, hebt u waarschijnlijk vertraging toe te schrijven aan een instabiele verbinding. Zie de sectie [&#x200B; Uitgave met instabiele verbindingen &#x200B;](troubleshooting-sms.md#issues-unstable-connection).
 
 * Controleer of het brede logboek aanwezig is en in de juiste status met de juiste datums. Als het niet is, zou dit een levering of leveringsvoorbereidingskwestie kunnen zijn.
 
@@ -138,7 +138,7 @@ Duplicaten worden vaak veroorzaakt door nieuwe pogingen. Het is normaal om dupli
 
 * Als u duplicaten ziet die precies 60 seconden van elkaar zijn verwijderd, is dit waarschijnlijk een probleem aan de kant van de provider, dan sturen ze niet snel genoeg een `SUBMIT_SM_RESP` .
 
-* Als u veel `BIND/UNBIND` ziet, hebt u een onstabiele verbinding. Zie [ Uitgave met instabiele verbindingen ](troubleshooting-sms.md#issues-unstable-connection) sectie voor oplossingen alvorens te proberen om dubbele berichtkwesties op te lossen.
+* Als u veel `BIND/UNBIND` ziet, hebt u een onstabiele verbinding. Zie [&#x200B; Uitgave met instabiele verbindingen &#x200B;](troubleshooting-sms.md#issues-unstable-connection) sectie voor oplossingen alvorens te proberen om dubbele berichtkwesties op te lossen.
 
 Het verminderen van de hoeveelheid duplicaten wanneer er opnieuw wordt geprobeerd:
 
@@ -178,7 +178,7 @@ Als je alles hebt opgelost, maar sommige ongeldige SR zijn nog steeds in de buff
 
 ## Uitgave tijdens de voorbereiding van de levering, exclusief in quarantaine geplaatste ontvangers (in quarantaine geplaatst door de functie voor automatisch antwoord) {#issue-delivery-preparation}
 
-* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar deze [ sectie ](sms-protocol.md#automatic-reply) als u kwesties met de plus prefix van het internationale formaat van het telefoonaantal hebt.
+* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar deze [&#x200B; sectie &#x200B;](sms-protocol.md#automatic-reply) als u kwesties met de plus prefix van het internationale formaat van het telefoonaantal hebt.
 
 * Controleer korte codes. Uitsluitingen kunnen optreden als de korte code van de ontvanger gelijk is aan de code die in de externe account is gedefinieerd of als deze leeg is (leeg = enige snelcode). Als slechts één korte code voor de gehele instantie van Adobe Campaign wordt gebruikt, is het gemakkelijker om alle **korte code** gebieden leeg te verlaten.
 
@@ -198,9 +198,9 @@ Kopieer uw bericht niet en plak het tijdens het testen altijd rechtstreeks in de
 
 Met hexadecimaal kunt u het verschil zien tussen vergelijkbare tekens. Een L in kleine letters, een I in hoofdletters, O, 0, alle verschillende typen aanhalingstekens, niet-Latijnse coderingen of zelfs verschillende typen spaties kunnen er allemaal hetzelfde uitzien of zelfs helemaal niet worden weergegeven.
 
-Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals de [ code van Unicode converter ](https://r12a.github.io/app-conversion/) website gebruiken. Het type in uw tekst, zorgt ervoor dat er geen PII zoals telefoonaantallen is en klikt **zet** om. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
+Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals de [&#x200B; code van Unicode converter &#x200B;](https://r12a.github.io/app-conversion/) website gebruiken. Het type in uw tekst, zorgt ervoor dat er geen PII zoals telefoonaantallen is en klikt **zet** om. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
 
-Wanneer het openen van kaartjes over het coderen problemen, of met de leverancier of [ Zorg van de Klant van de Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie van omvat wat u typt en wat u ziet.
+Wanneer het openen van kaartjes over het coderen problemen, of met de leverancier of [&#x200B; Zorg van de Klant van de Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie van omvat wat u typt en wat u ziet.
 
 **Stap 3: Weet wat u** zou moeten verzenden
 
