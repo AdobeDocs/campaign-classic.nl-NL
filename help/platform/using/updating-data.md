@@ -24,7 +24,7 @@ De gegevens die aan het profiel van een ontvanger zijn gekoppeld, kunnen handmat
 
 ## Een automatische update instellen {#setting-up-an-automatic-update}
 
-Een automatische update kan worden geconfigureerd via een workflow. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
+Een automatische update kan worden geconfigureerd via een workflow. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
 
 ## Een massaupdate uitvoeren {#performing-a-mass-update}
 
@@ -95,11 +95,11 @@ U kunt de inhoud van een lijst exporteren. Het exporteren configureren en uitvoe
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Voor meer op hoe te om de uitvoermedewerker te vormen, verwijs naar [ deze sectie ](../../platform/using/executing-export-jobs.md).
+   Voor meer op hoe te om de uitvoermedewerker te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/executing-export-jobs.md).
 
 ## Abonneren op een service {#subscribing-to-a-service}
 
-In de meeste gevallen, tekenen de ontvangers aan een nieuwsbrief door een specifieke het landen pagina in, zoals die in [ wordt verklaard deze sectie ](../../delivery/using/managing-subscriptions.md). De profielen van gefilterde ontvangers kunnen echter handmatig worden geabonneerd op een service (nieuwsbrief of virtuele service). Dit doet u als volgt:
+In de meeste gevallen, tekenen de ontvangers aan een nieuwsbrief door een specifieke het landen pagina in, zoals die in [&#x200B; wordt verklaard deze sectie &#x200B;](../../delivery/using/managing-subscriptions.md). De profielen van gefilterde ontvangers kunnen echter handmatig worden geabonneerd op een service (nieuwsbrief of virtuele service). Dit doet u als volgt:
 
 1. Selecteer de ontvangers u zich wilt intekenen en met de rechtermuisknop klikken.
 1. Selecteer **[!UICONTROL Actions > Subscribe selection to a service]**.
@@ -129,4 +129,4 @@ Als u het proces wilt controleren, gaat u naar het tabblad **[!UICONTROL Subscri
 
 >[!NOTE]
 >
->Voor meer bij het creëren van en het vormen van de informatiediensten, verwijs naar [ deze pagina ](../../delivery/using/managing-subscriptions.md).
+>Voor meer bij het creëren van en het vormen van de informatiediensten, verwijs naar [&#x200B; deze pagina &#x200B;](../../delivery/using/managing-subscriptions.md).

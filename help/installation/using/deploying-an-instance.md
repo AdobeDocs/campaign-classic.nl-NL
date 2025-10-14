@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Configuraties aan de serverzijde kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
+>Configuraties aan de serverzijde kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Om meer over de verschillende plaatsingen te leren, verwijs naar [&#x200B; Hosting modellen &#x200B;](../../installation/using/hosting-models.md) sectie of [&#x200B; deze pagina &#x200B;](../../installation/using/capability-matrix.md).
 
 ## implementatiewizard {#deployment-assistant}
 
@@ -61,10 +61,10 @@ In de onderste sectie van het venster kunt u de opties selecteren die moeten wor
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Email channel]** : voor het activeren van de e-maillevering. Verwijs naar [ parameters van het E-mailkanaal ](#email-channel-parameters).
-* **[!UICONTROL Tracking]** : Als u het bijhouden van de doelpopulatie wilt inschakelen (opent en klikt). Verwijs naar [ het Volgen configuratie ](#tracking-configuration).
-* **[!UICONTROL Managing bounced emails]** : Als u het POP-account wilt definiëren waarmee inkomende e-mail wordt opgehaald. Verwijs naar [ het Leiden van bweere-mails ](#managing-bounced-emails).
-* **[!UICONTROL LDAP integration]** : gebruikersverificatie configureren via een LDAP-directory. Verwijs naar [ het Verbinden door LDAP ](../../installation/using/connecting-through-ldap.md).
+* **[!UICONTROL Email channel]** : voor het activeren van de e-maillevering. Verwijs naar [&#x200B; parameters van het E-mailkanaal &#x200B;](#email-channel-parameters).
+* **[!UICONTROL Tracking]** : Als u het bijhouden van de doelpopulatie wilt inschakelen (opent en klikt). Verwijs naar [&#x200B; het Volgen configuratie &#x200B;](#tracking-configuration).
+* **[!UICONTROL Managing bounced emails]** : Als u het POP-account wilt definiëren waarmee inkomende e-mail wordt opgehaald. Verwijs naar [&#x200B; het Leiden van bweere-mails &#x200B;](#managing-bounced-emails).
+* **[!UICONTROL LDAP integration]** : gebruikersverificatie configureren via een LDAP-directory. Verwijs naar [&#x200B; het Verbinden door LDAP &#x200B;](../../installation/using/connecting-through-ldap.md).
 
 ## Parameters e-mailkanaal {#email-channel-parameters}
 
@@ -79,12 +79,12 @@ Deze parameters kunnen in leveringsmalplaatjes, en individueel voor elke leverin
 Geef de volgende parameters op:
 
 * **[!UICONTROL Sender name]** : voer de naam van de afzender in.
-* **[!UICONTROL Sender address]** : voer het e-mailadres van de afzender in. Wanneer het verzenden van e-mails van Adobe Campaign, wordt de **brievenbus van het Adres van de afzender** niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Leer meer over de beste praktijken van de Leverbaarheid [ in deze documentatie ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
+* **[!UICONTROL Sender address]** : voer het e-mailadres van de afzender in. Wanneer het verzenden van e-mails van Adobe Campaign, wordt de **brievenbus van het Adres van de afzender** niet gecontroleerd en de marketing gebruikers hebben geen toegang tot deze brievenbus. Adobe Campaign biedt ook niet de mogelijkheid om e-mails die in dit postvak zijn ontvangen automatisch te beantwoorden of door te sturen. Leer meer over de beste praktijken van de Leverbaarheid [&#x200B; in deze documentatie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** : voer de naam in die wordt gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt.
 * **[!UICONTROL Reply address]** : voer het e-mailadres in dat moet worden gebruikt wanneer de ontvanger op de knop **[!UICONTROL Reply]** klikt in de software van zijn e-mailclient. Het doel van het **gebied van het Adres van de Reactie** is wanneer u de ontvanger aan een verschillend adres wilt antwoorden dan het **Adres van de Afzender**.  Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant.  Dit kan bijvoorbeeld een ondersteuningsmailbox zijn, `customer-care@customer.com` , waar e-mails worden gelezen en waarop wordt gereageerd.
 
-* **[!UICONTROL Error address]** : voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het kan bijvoorbeeld een stuiterende postbus zijn, `errors@customer.com` . Dit adres kan voor een levering of in de leveringsmalplaatjes, van het **SMTP** lusje van de levering/leveringsmalplaatjeeigenschappen worden veranderd. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
+* **[!UICONTROL Error address]** : voer het e-mailadres in van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen. Dit adres moet een geldig e-mailadres zijn, verbonden aan een gecontroleerd brievenbus, en ontvangen door de klant. Het kan bijvoorbeeld een stuiterende postbus zijn, `errors@customer.com` . Dit adres kan voor een levering of in de leveringsmalplaatjes, van het **SMTP** lusje van de levering/leveringsmalplaatjeeigenschappen worden veranderd. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Naast dit, kunt u de **maskers** specificeren die voor het afzenderadres en het foutenadres worden gemachtigd. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
 
@@ -123,7 +123,7 @@ De volgende opties zijn beschikbaar:
 
 >[!NOTE]
 >
->Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, zal **[!UICONTROL Delivery duration of the messages]** slechts als reeks aan **3.5 dagen of minder** worden gebruikt. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
+>Voor ontvangen of hybride installaties, als u aan [&#x200B; Verbeterde MTA &#x200B;](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, zal **[!UICONTROL Delivery duration of the messages]** slechts als reeks aan **3.5 dagen of minder** worden gebruikt. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 
 ### Parameters opnieuw proberen {#retry-parameters}
 
@@ -131,7 +131,7 @@ De informatie over terugvorderingen wordt verstrekt in de **periodes van de Teru
 
 >[!NOTE]
 >
->Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de het opnieuw proberen van de Campagne parameters niet meer gebruikt. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor ontvangen of hybride installaties, als u aan [&#x200B; Verbeterde MTA &#x200B;](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de het opnieuw proberen van de Campagne parameters niet meer gebruikt. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
 ### Quarantaine-parameters {#quarantine-parameters}
 
@@ -144,7 +144,7 @@ De configuratieopties voor quarantines zijn als volgt:
 
 Bounce mail is uiterst belangrijk om leveringsfouten te kwalificeren. Deze fouten worden gecategoriseerd in NP@I zodra de regels hun oorzaak hebben bepaald.
 
-Deze stap is slechts beschikbaar als het **E-mailkanaal** en **Bounce post** beheersopties in het eerste stadium van de plaatsingstovenaar worden geselecteerd. Verwijs naar [ Algemene parameters ](#general-parameters).
+Deze stap is slechts beschikbaar als het **E-mailkanaal** en **Bounce post** beheersopties in het eerste stadium van de plaatsingstovenaar worden geselecteerd. Verwijs naar [&#x200B; Algemene parameters &#x200B;](#general-parameters).
 
 In dit werkgebied kunt u instellingen definiëren voor het beheer van stuiterende berichten.
 
@@ -165,7 +165,7 @@ Zodra de montages van POP worden gespecificeerd, klik **Test** om ervoor te zorg
 
 ### Onverwerkte stuitberichten {#unprocessed-bounce-mails}
 
-De grenzen worden behandeld automatisch door Adobe Campaign, die de regels toepassen in het **Beleid > Beheer van de Campagne > Beheer van Niet te leveren stoffen > het 1} knoop van het het logboekerkenning van de Levering worden vermeld.** Voor meer op dit, verwijs naar [ Stuiteren postbeheer ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+De grenzen worden behandeld automatisch door Adobe Campaign, die de regels toepassen in het **Beleid > Beheer van de Campagne > Beheer van Niet te leveren stoffen > het 1&rbrace; knoop van het het logboekerkenning van de Levering worden vermeld.** Voor meer op dit, verwijs naar [&#x200B; Stuiteren postbeheer &#x200B;](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
 
@@ -181,9 +181,9 @@ Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij 
 
 In de volgende stap kunt u tracering voor de instantie configureren. De instantie moet worden gedeclareerd en geregistreerd bij de volgende server(s).
 
-Deze stap wordt slechts aangeboden wanneer het **E-mailkanaal** en **het Volgen** opties in de eerste pagina van de plaatsingstovenaar worden geselecteerd. Verwijs naar [ Algemene parameters ](#general-parameters).
+Deze stap wordt slechts aangeboden wanneer het **E-mailkanaal** en **het Volgen** opties in de eerste pagina van de plaatsingstovenaar worden geselecteerd. Verwijs naar [&#x200B; Algemene parameters &#x200B;](#general-parameters).
 
-Voor meer gedetailleerde informatie over Web het volgen (het volgen wijze, het creëren van en het opnemen van markeringen..), verwijs naar [ dit document ](../../configuration/using/about-web-tracking.md).
+Voor meer gedetailleerde informatie over Web het volgen (het volgen wijze, het creëren van en het opnemen van markeringen..), verwijs naar [&#x200B; dit document &#x200B;](../../configuration/using/about-web-tracking.md).
 
 ### Werkwijze {#operating-principle}
 
@@ -195,11 +195,11 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
   Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
 
-  Voor meer op dit, verwijs naar [ het Volgen server ](#tracking-server).
+  Voor meer op dit, verwijs naar [&#x200B; het Volgen server &#x200B;](#tracking-server).
 
 * Zodra URLs wordt gevormd, moet u het volgen toelaten. Hiervoor moet de instantie zijn geregistreerd op de volgende server(s).
 
-  Voor meer op dit, verwijs naar [ het Opslaan het volgen ](#saving-tracking).
+  Voor meer op dit, verwijs naar [&#x200B; het Opslaan het volgen &#x200B;](#saving-tracking).
 
 ### Trackingserver {#tracking-server}
 
@@ -218,7 +218,7 @@ Met de architectuur van de middelste-sourcing, kunt u het volgen beheer external
 1. Selecteer de optie **[!UICONTROL Externalize tracking management]** : hiermee kunt u een mid-sourcingserver gebruiken als trackingserver.
 1. Vul de velden **[!UICONTROL External account]** en **[!UICONTROL Instance name]** in om verbinding te kunnen maken met de server voor midsourcing.
 
-   Voor meer informatie, verwijs naar [ Midden-sourcende server ](../../installation/using/mid-sourcing-server.md).
+   Voor meer informatie, verwijs naar [&#x200B; Midden-sourcende server &#x200B;](../../installation/using/mid-sourcing-server.md).
 
 1. Klik op de knop **[!UICONTROL Enable the tracking instance]** om de verbinding met de server goed te keuren.
 
@@ -364,9 +364,9 @@ Om van buitenaf gezien te kunnen worden, moeten de afbeeldingen die worden gebru
 
 Voor deze stap, moet u ingaan:
 
-1. De nieuwe URL voor de openbare bron. Voor meer informatie verwijs naar de [ Openbare middelen URL ](#public-resources-url) sectie.
-1. De modus voor beelddetectie in een levering. Voor meer informatie, verwijs naar de [ sectie van de het beeldopsporing van de Levering ](#delivery-image-detection).
-1. Publicatieopties Voor meer informatie, verwijs naar de [ wijzen van de Publicatie ](#publication-modes) sectie.
+1. De nieuwe URL voor de openbare bron. Voor meer informatie verwijs naar de [&#x200B; Openbare middelen URL &#x200B;](#public-resources-url) sectie.
+1. De modus voor beelddetectie in een levering. Voor meer informatie, verwijs naar de [&#x200B; sectie van de het beeldopsporing van de Levering &#x200B;](#delivery-image-detection).
+1. Publicatieopties Voor meer informatie, verwijs naar de [&#x200B; wijzen van de Publicatie &#x200B;](#publication-modes) sectie.
 
 De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > Openbare middelen** knoop van de boom van Adobe Campaign. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
 
@@ -382,7 +382,7 @@ In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek o
 
   Deze waarde kan voor elke levering worden overschreven.
 
-* Voor openbare middelen, is URL **https://** server **/res/** instantie ****waar **instantie**de naam van de volgende instantie is.
+* Voor openbare middelen, is URL **https://** server **/res/** instantie **&#x200B;**&#x200B;waar **instantie**&#x200B;de naam van de volgende instantie is.
 
 ### Afbeeldingsdetectie leveren {#delivery-image-detection}
 
@@ -394,7 +394,7 @@ Het gebied **maskers URL** laat u de lijst van te slaan maskers URL specificeren
 
 U kunt meerdere URL-maskers opgeven door een komma te gebruiken om ze van elkaar te scheiden.
 
-* Voor informatie bij het gebruiken van en het beheren van beelden in e-mail, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+* Voor informatie bij het gebruiken van en het beheren van beelden in e-mail, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 * In de leveringsassistent hebben de afbeeldingen die vanuit deze URL&#39;s worden aangeroepen de status &quot;Genegeerd&quot;.
 
 ### Publicatiemodi {#publication-modes}
@@ -405,7 +405,7 @@ De volgende publicatiemodi zijn beschikbaar:
 
 * Volgserver(s)
 
-  De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [ het Volgen configuratie ](#tracking-configuration).
+  De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [&#x200B; het Volgen configuratie &#x200B;](#tracking-configuration).
 
 * Andere Adobe Campaign-servers
 
@@ -448,7 +448,7 @@ In het geval van publicatie op een Adobe Campaign-server zonder handmatig public
 
 >[!NOTE]
 >
->Het is mogelijk om de openbare folder van de middelopslag te veranderen. Voor meer op dit, verwijs naar [ het Leiden openbare middelen ](#managing-public-resources).
+>Het is mogelijk om de openbare folder van de middelopslag te veranderen. Voor meer op dit, verwijs naar [&#x200B; het Leiden openbare middelen &#x200B;](#managing-public-resources).
 
 ### Openbare bronnen synchroniseren {#synchronizing-public-resources}
 
@@ -456,7 +456,7 @@ Deze functionaliteit staat u toe om openbare middelen **op veelvoudige reserve-s
 
 Als een openbaar middel niet aanwezig op de volgende server is of als het middel een 404 fout terugkeert, zal de volgende server proberen om het middel op één van reserve-servers te vinden.
 
-Het verklaren en het vormen reserve-servers moeten in het dossier van Server van de Marketing **serverConf.xml** worden gedaan. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Het verklaren en het vormen reserve-servers moeten in het dossier van Server van de Marketing **serverConf.xml** worden gedaan. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 **Verklaring**
 
@@ -518,4 +518,4 @@ Het laatste stadium van de plaatsingstovenaar laat u het automatische zuiveren v
 
 ![](assets/s_ncs_install_deployment_wiz_16.png)
 
-Gegevens worden automatisch verwijderd via de workflow voor het opschonen van databases. Voor meer op om dit werkschema en details op de geschrapte punten te vormen en in werking te stellen, verwijs naar dit [ document ](../../production/using/database-cleanup-workflow.md).
+Gegevens worden automatisch verwijderd via de workflow voor het opschonen van databases. Voor meer op om dit werkschema en details op de geschrapte punten te vormen en in werking te stellen, verwijs naar dit [&#x200B; document &#x200B;](../../production/using/database-cleanup-workflow.md).

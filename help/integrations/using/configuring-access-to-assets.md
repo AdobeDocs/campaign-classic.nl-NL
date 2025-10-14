@@ -37,7 +37,7 @@ Om de integratie tussen Adobe Campaign en Experience Cloud Assets te kunnen gebr
 * Een Adobe Experience Cloud-organisatie
 * De Adobe IMS-verificatiemodus ingeschakeld
 
-Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschakelen, configureert u de verbinding via IMS (Adobe ID-verbindingsservice). Deze configuratie wordt gedetailleerd in [ het Verbinden via een Adobe ID ](../../integrations/using/about-adobe-id.md) document. Het gaat om:
+Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschakelen, configureert u de verbinding via IMS (Adobe ID-verbindingsservice). Deze configuratie wordt gedetailleerd in [&#x200B; het Verbinden via een Adobe ID &#x200B;](../../integrations/using/about-adobe-id.md) document. Het gaat om:
 
 * Het **[!UICONTROL Integration with the Adobe Experience Cloud]** -pakket installeren.
 * Een externe Adobe Experience Cloud-account configureren.
@@ -51,18 +51,18 @@ Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschak
 
 >[!CAUTION]
 >
->Dit vermogen is ontmanteld, die van Adobe Experience Manager 6.4 beginnen. [ leer meer ](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>Dit vermogen is ontmanteld, die van Adobe Experience Manager 6.4 beginnen. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 Als u AEM Assets wilt integreren met Adobe Campaign, moet u eerst de integratie tussen Adobe Experience Manager en Adobe Campaign configureren. Voor deze configuratie is voornamelijk het volgende vereist:
 
 * Het ingebouwde pakket **[!UICONTROL AEM Integration]** installeren
 * Een externe account configureren die specifiek is voor Adobe Experience Manager
 
-Leer hoe te om Adobe Campaign en Adobe Experience Manager in de [ gedetailleerde documentatie ](../../integrations/using/about-adobe-experience-manager.md) te integreren.
+Leer hoe te om Adobe Campaign en Adobe Experience Manager in de [&#x200B; gedetailleerde documentatie &#x200B;](../../integrations/using/about-adobe-experience-manager.md) te integreren.
 
 Zodra deze integratie is ingesteld, kunt u een nieuwe leveringssjabloon in Adobe Campaign configureren voor het gebruik van de AEM Assets-bibliotheek. Hiervoor voert u de volgende stappen uit:
 
-1. Een nieuwe leveringssjabloon maken - of een bestaande sjabloon dupliceren. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Een nieuwe leveringssjabloon maken - of een bestaande sjabloon dupliceren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 1. Bewerk de **Eigenschappen** van dit malplaatje.
 1. In het **[!UICONTROL Advanced]** lusje, plaats **[!UICONTROL Content editing mode]** aan **DCE**.
 1. Selecteer de externe **[!UICONTROL AEM account]** die u nodig hebt voor toegang tot uw AEM Assets-bibliotheek.

@@ -16,11 +16,11 @@ ht-degree: 13%
 
 
 
-Naast [ ingebouwde rapporten ](../../reporting/using/about-campaign-built-in-reports.md), laat Adobe Campaign u rapporten in diverse contexten produceren en aan verschillende behoeften voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
+Naast [&#x200B; ingebouwde rapporten &#x200B;](../../reporting/using/about-campaign-built-in-reports.md), laat Adobe Campaign u rapporten in diverse contexten produceren en aan verschillende behoeften voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
 
 Adobe Campaign is geen gespecialiseerd rapportagehulpmiddel: rapporten die in Adobe Campaign zijn gemaakt, stellen u voornamelijk in staat geaggregeerde gegevens weer te geven. Adobe Campaign-rapporten, die speciaal zijn bedoeld voor het analyseren en weergeven van gegevens, zijn niet bedoeld voor het exporteren van databases.
 
-Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
+Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
 
 Adobe Campaign biedt verschillende rapportagegereedschappen:
 

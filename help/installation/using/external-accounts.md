@@ -47,7 +47,7 @@ De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts
 
 ### Stuitberichten {#bounce-mails-external-account}
 
-De **Stuits post** externe rekening specificeert de externe POP3 rekening die moet worden gebruikt om met de e-maildienst te verbinden. Voor meer op deze externe rekening, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+De **Stuits post** externe rekening specificeert de externe POP3 rekening die moet worden gebruikt om met de e-maildienst te verbinden. Voor meer op deze externe rekening, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Alle servers die voor POP3 toegang worden gevormd kunnen worden gebruikt om terugkeerpost te ontvangen.
 
@@ -119,7 +119,7 @@ De volgende kanalen kunnen worden gevormd:
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/communication-channels.md#other-channels)
 * [X (voorheen bekend als Twitter)](../../social/using/about-social-marketing.md)
-* [ de kanalen van iOS en van Android ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
+* [&#x200B; de kanalen van iOS en van Android &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### E-mailroutering {#email-routing-external-account}
 
@@ -129,11 +129,11 @@ Als klant op locatie/hybride, kunt u nieuwe verpletterende externe rekeningen, o
 
 * U kunt a **gebruiken midsourcing**, **Extern** verpletterend, of **Bulk** levering die type verplettert.
 
-* Voor **Bulk** en **Midden-sourcing** leveringswijzen, kunt u uw brandende parameters in het **Brandend** lusje specificeren. Deze parameters worden gebruikt om de [ standaardparameters ](../../installation/using/deploying-an-instance.md#email-channel-parameters) voor **spiegel pagina URL** en **adres van de Fout** met montages met voeten te treden specifiek voor uw merk.
+* Voor **Bulk** en **Midden-sourcing** leveringswijzen, kunt u uw brandende parameters in het **Brandend** lusje specificeren. Deze parameters worden gebruikt om de [&#x200B; standaardparameters &#x200B;](../../installation/using/deploying-an-instance.md#email-channel-parameters) voor **spiegel pagina URL** en **adres van de Fout** met montages met voeten te treden specifiek voor uw merk.
 
   ![](assets/ext-account-branding.png)
 
-* Om een Midden-sourcing externe rekening te vormen, verwijs naar [ deze sectie ](mid-sourcing-server.md)
+* Om een Midden-sourcing externe rekening te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](mid-sourcing-server.md)
 
 ### Uitvoeringsinstantie  {#execution-instance-external-account}
 
@@ -153,13 +153,13 @@ Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specif
 
   Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [ pagina ](../../message-center/using/configuring-instances.md#control-instance).
+Voor meer informatie over deze configuratie, verwijs naar deze [&#x200B; pagina &#x200B;](../../message-center/using/configuring-instances.md#control-instance).
 
 ## Toegang tot externe systeemrekeningen
 
 ### FTP {#ftp-external-account}
 
-Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 Hiertoe geeft u in deze externe account het adres en de referenties op waarmee de verbinding met de FTP-server tot stand wordt gebracht
 
@@ -185,11 +185,11 @@ Hiertoe geeft u in deze externe account het adres en de referenties op waarmee d
 
   Type gekozen codering tussen **[!UICONTROL None]** of **[!UICONTROL SSL]** .
 
-Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [ pagina ](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
+Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [&#x200B; pagina &#x200B;](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
 ### SFTP {#sftp-external-account}
 
-Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -220,25 +220,25 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 
 ### Externe database (FDA) {#external-database-external-account}
 
-Gebruik het **Externe gegevensbestand** type externe rekening om met extern een gegevensbestand te verbinden. Leer meer over de Federatieve optie van de Toegang van Gegevens (FDA) in [ deze sectie ](../../installation/using/about-fda.md).
+Gebruik het **Externe gegevensbestand** type externe rekening om met extern een gegevensbestand te verbinden. Leer meer over de Federatieve optie van de Toegang van Gegevens (FDA) in [&#x200B; deze sectie &#x200B;](../../installation/using/about-fda.md).
 
-De externe gegevensbestanden compatibel met Campagne zijn vermeld in de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md)
+De externe gegevensbestanden compatibel met Campagne zijn vermeld in de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Vorm toegang tot [ Vertica Analytics ](../../installation/using/configure-fda-vertica.md)
-* Vorm toegang tot [ Snowflake ](../../installation/using/configure-fda-snowflake.md)
-* Vorm toegang tot [ Google BigQuery ](../../installation/using/configure-fda-google-big-query.md)
-* Vorm toegang tot [ Azure Synapse ](../../installation/using/configure-fda-synapse.md)
-* Vorm toegang tot [ Hadoop ](../../installation/using/configure-fda-hadoop.md)
-* Vorm toegang tot [ Oracle ](../../installation/using/configure-fda-oracle.md)
-* Vorm toegang tot [ Netezza ](../../installation/using/configure-fda-netezza.md)
-* Vorm toegang tot [ SAP HANA ](../../installation/using/configure-fda-sap-hana.md)
-* Vorm toegang tot [ Snowflake ](../../installation/using/configure-fda-snowflake.md)
-* Vorm toegang tot [ Sybase IQ ](../../installation/using/configure-fda-sybase.md)
-* Vorm toegang tot [ Teradata ](../../installation/using/configure-fda-teradata.md)
+* Vorm toegang tot [&#x200B; Vertica Analytics &#x200B;](../../installation/using/configure-fda-vertica.md)
+* Vorm toegang tot [&#x200B; Snowflake &#x200B;](../../installation/using/configure-fda-snowflake.md)
+* Vorm toegang tot [&#x200B; Google BigQuery &#x200B;](../../installation/using/configure-fda-google-big-query.md)
+* Vorm toegang tot [&#x200B; Azure Synapse &#x200B;](../../installation/using/configure-fda-synapse.md)
+* Vorm toegang tot [&#x200B; Hadoop &#x200B;](../../installation/using/configure-fda-hadoop.md)
+* Vorm toegang tot [&#x200B; Oracle &#x200B;](../../installation/using/configure-fda-oracle.md)
+* Vorm toegang tot [&#x200B; Netezza &#x200B;](../../installation/using/configure-fda-netezza.md)
+* Vorm toegang tot [&#x200B; SAP HANA &#x200B;](../../installation/using/configure-fda-sap-hana.md)
+* Vorm toegang tot [&#x200B; Snowflake &#x200B;](../../installation/using/configure-fda-snowflake.md)
+* Vorm toegang tot [&#x200B; Sybase IQ &#x200B;](../../installation/using/configure-fda-sybase.md)
+* Vorm toegang tot [&#x200B; Teradata &#x200B;](../../installation/using/configure-fda-teradata.md)
 
 
 ## Externe accounts bij integratie van Adobe-oplossingen
@@ -271,7 +271,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet
 
 * **[!UICONTROL IMS organization ID]**
 
-  Id van uw organisatie. Om uw organisatieidentiteitskaart te vinden, verwijs naar [ deze pagina ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
+  Id van uw organisatie. Om uw organisatieidentiteitskaart te vinden, verwijs naar [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=nl){_blank}.
 
 * **[!UICONTROL Association mask]**
 
@@ -285,7 +285,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet
 
   Naam van je Adobe Experience Cloud Tenant.
 
-Voor meer informatie over deze configuratie, verwijs naar [ deze pagina ](../../integrations/using/configuring-ims.md).
+Voor meer informatie over deze configuratie, verwijs naar [&#x200B; deze pagina &#x200B;](../../integrations/using/configuring-ims.md).
 
 ## Webanalyse {#web-analytics-external-account}
 
@@ -325,7 +325,7 @@ Raadpleeg deze [sectie](../../integrations/using/about-adobe-experience-manager.
 
 Met de externe account van **[!UICONTROL Microsoft Dynamics CRM]** kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
-Leer meer over Campagne - de schakelaar van Microsoft Dynamics CRM in deze [ pagina ](../../platform/using/crm-ms-dynamics.md).
+Leer meer over Campagne - de schakelaar van Microsoft Dynamics CRM in deze [&#x200B; pagina &#x200B;](../../platform/using/crm-ms-dynamics.md).
 
 Bij het **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Password credentials]** -verificatie moet u de volgende gegevens opgeven:
 
@@ -377,7 +377,7 @@ Bij het **[!UICONTROL Web API]** implementatietype en **[!UICONTROL Certificate]
 
   Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]** , **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]** .
 
-Voor meer informatie over deze configuratie, verwijs naar deze [ pagina ](../../platform/using/crm-connectors.md).
+Voor meer informatie over deze configuratie, verwijs naar deze [&#x200B; pagina &#x200B;](../../platform/using/crm-connectors.md).
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
@@ -397,11 +397,11 @@ Als u de externe Salesforce CRM-account wilt configureren voor Adobe Campaign, m
 
 * **[!UICONTROL Client identifier]**
 
-  Om te weten waar te om uw cliëntherkenningsteken te vinden, verwijs naar deze [ pagina ](https://help.salesforce.com/articleView?id=000205876&type=1).
+  Om te weten waar te om uw cliëntherkenningsteken te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL Security token]**
 
-  Om te weten waar te om uw veiligheidstoken te vinden, verwijs naar deze [ pagina ](https://help.salesforce.com/articleView?id=000205876&type=1).
+  Om te weten waar te om uw veiligheidstoken te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL API version]**
 
@@ -409,13 +409,13 @@ Als u de externe Salesforce CRM-account wilt configureren voor Adobe Campaign, m
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratiemedewerker vormen.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [ pagina ](../../platform/using/crm-connectors.md).
+Voor meer informatie over deze configuratie, verwijs naar deze [&#x200B; pagina &#x200B;](../../platform/using/crm-connectors.md).
 
 ## Externe accounts voor gegevensoverdracht
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -431,23 +431,23 @@ Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
 
 * **[!UICONTROL AWS access key ID]**
 
-  Om te weten waar te om uw AWS toegangs belangrijkste identiteitskaart te vinden, verwijs naar deze [ pagina ](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+  Om te weten waar te om uw AWS toegangs belangrijkste identiteitskaart te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 * **[!UICONTROL Secret access key to AWS]**
 
-  Om te weten waar te om uw geheime toegangstoets aan AWS te vinden, verwijs naar deze [ pagina ](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  Om te weten waar te om uw geheime toegangstoets aan AWS te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-  Om meer op het gebied van AWS te leren, verwijs naar deze [ pagina ](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Om meer op het gebied van AWS te leren, verwijs naar deze [&#x200B; pagina &#x200B;](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * Met het selectievakje **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de modus S3-versleuteling.
 
-Leren waar te om toegangs zeer belangrijke identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de diensten van het Web van Amazon [ documentatie ](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+Leren waar te om toegangs zeer belangrijke identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de diensten van het Web van Amazon [&#x200B; documentatie &#x200B;](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-De **Azure Blob opslag** externe rekening kan worden gebruikt om gegevens in te voeren of naar Adobe Campaign uit te voeren gebruikend een **[!UICONTROL Transfer file]** werkschemaactiviteit. verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+De **Azure Blob opslag** externe rekening kan worden gebruikt om gegevens in te voeren of naar Adobe Campaign uit te voeren gebruikend een **[!UICONTROL Transfer file]** werkschemaactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 
@@ -463,4 +463,4 @@ Als u **[!UICONTROL Azure external account]** wilt configureren om te werken met
 
 * **[!UICONTROL Access key]**
 
-  Om te weten waar te om uw **[!UICONTROL Access key]** te vinden, verwijs naar deze [ pagina ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Om te weten waar te om uw **[!UICONTROL Access key]** te vinden, verwijs naar deze [&#x200B; pagina &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

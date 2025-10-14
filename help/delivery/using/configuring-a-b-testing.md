@@ -17,11 +17,11 @@ ht-degree: 3%
 
 In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voeren.
 
-1. Creeer een nieuw werkschema dan vormen een activiteit van de Vraag om de gewenste bevolking te richten. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Creeer een nieuw werkschema dan vormen een activiteit van de Vraag om de gewenste bevolking te richten. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Voeg een activiteit van het Splitsen toe om de doelbevolking in veelvoudige ondergroepen te verdelen. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+1. Voeg een activiteit van het Splitsen toe om de doelbevolking in veelvoudige ondergroepen te verdelen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om a **[!UICONTROL Split]** activiteit te vormen, verwijs naar [ deze sectie ](../../workflow/using/split.md).
+1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om a **[!UICONTROL Split]** activiteit te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/split.md).
 
    In dit voorbeeld willen we twee nieuwe onderwerpen testen voor een nieuwsbrief door ze allemaal te presenteren aan 10 procent van de doelgroep.
 
@@ -37,4 +37,4 @@ In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voe
 
 U kunt de workflow nu starten. Zodra de leveringen zijn verzonden, zult u het gedrag van de drie ondergroepen in de leveringslogboeken kunnen volgen, om te zien welk onderwerp het meest succesvol is geweest.
 
-Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Voor meer op dit, verwijs naar dit specifieke [ gebruiksgeval ](a-b-testing-use-case.md).
+Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Voor meer op dit, verwijs naar dit specifieke [&#x200B; gebruiksgeval &#x200B;](a-b-testing-use-case.md).

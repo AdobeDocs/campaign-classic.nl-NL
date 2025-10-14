@@ -25,7 +25,7 @@ Zodra de Bestemming is gevormd, zullen de gegevens naar uw opslagplaats worden u
 
 In het Adobe Experience-platform configureert u een verbinding met Adobe Campaign door een opslaglocatie voor de geëxporteerde segmenten te selecteren. Met deze stappen kunt u ook de segmenten selecteren die u wilt exporteren en aanvullende XDM-velden opgeven die u wilt opnemen.
 
-Voor meer op dit, verwijs naar de [ documentatie van Doelen ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+Voor meer op dit, verwijs naar de [&#x200B; documentatie van Doelen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 Nadat de Bestemming is gevormd, leidt Adobe Experience Platform tot een lusje-afgebakend .txt of .csv- dossier in de opslagplaats die u verstrekte. Deze bewerking is gepland en wordt één keer per 24 uur uitgevoerd.
 
@@ -35,7 +35,7 @@ U kunt nu een Campaign Classic-workflow configureren om het segment in te voeren
 
 Als Campaign Classic eenmaal is geconfigureerd als een doel, moet u een specifieke workflow maken om het bestand te importeren dat door Adobe Experience Platform is geëxporteerd.
 
-Hiervoor moet u een **[!UICONTROL File transfer]** -activiteit toevoegen en configureren. Voor meer op hoe te om deze activiteit te vormen, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Hiervoor moet u een **[!UICONTROL File transfer]** -activiteit toevoegen en configureren. Voor meer op hoe te om deze activiteit te vormen, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

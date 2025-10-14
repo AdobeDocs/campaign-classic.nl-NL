@@ -25,7 +25,7 @@ Zodra een levering is verzonden, toont het leveringsdashboard een status die u t
 
 ![](assets/delivery-status.png)
 
-Voor meer details op de verschillende leveringsmislukkingen kunt u ontmoeten, en hoe te om hen op te lossen, verwijs naar [ deze pagina ](understanding-delivery-failures.md).
+Voor meer details op de verschillende leveringsmislukkingen kunt u ontmoeten, en hoe te om hen op te lossen, verwijs naar [&#x200B; deze pagina &#x200B;](understanding-delivery-failures.md).
 
 **Verwante onderwerpen:**
 
@@ -87,13 +87,13 @@ Voor meer details op de verschillende leveringsmislukkingen kunt u ontmoeten, en
  </tbody> 
 </table>
 
-Leren hoe te om de leverbaarheid van uw e-mails van Adobe Campaign te optimaliseren, verwijs naar [ deze sectie ](about-deliverability.md). Voor een diepere duik op leverability, verwijs naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Leren hoe te om de leverbaarheid van uw e-mails van Adobe Campaign te optimaliseren, verwijs naar [&#x200B; deze sectie &#x200B;](about-deliverability.md). Voor een diepere duik op leverability, verwijs naar de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Status in behandeling {#pending-status}
 
 Nadat u de levering hebt bevestigd, ziet u dat de status van de levering **[!UICONTROL Pending]** is. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
 
-De status **[!UICONTROL Pending]** kan eerst betekenen dat de levering gepland is en in behandeling is tot de opgegeven datum. Voor meer op dit, verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
+De status **[!UICONTROL Pending]** kan eerst betekenen dat de levering gepland is en in behandeling is tot de opgegeven datum. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
 
 Als uw levering niet wordt verzonden en de status ervan **[!UICONTROL Pending]** blijft, kan dit het gevolg zijn van:
 
@@ -103,7 +103,7 @@ Als uw levering niet wordt verzonden en de status ervan **[!UICONTROL Pending]**
 
   >[!NOTE]
   >
-  >Deze verrichting kan met een **op-gebouw** of **hybride** ontvangen model met toegang worden uitgevoerd de server van de Campagne (zie [ ontvangende modellen ](../../installation/using/hosting-models.md)).
+  >Deze verrichting kan met een **op-gebouw** of **hybride** ontvangen model met toegang worden uitgevoerd de server van de Campagne (zie [&#x200B; ontvangende modellen &#x200B;](../../installation/using/hosting-models.md)).
 
    1. Controleer of uw `mta@<instance>` -modules zijn gestart op uw MTA-servers.
 
@@ -127,13 +127,13 @@ Als uw levering niet wordt verzonden en de status ervan **[!UICONTROL Pending]**
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd.
 
-  Controleer in dit geval de configuratie van het verkeersbeheer (IP-affiniteit) en gebruik het veld **[!UICONTROL Managing affinities with IP addresses]** om leveringen te koppelen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten, verwijs naar [ deze sectie ](../../installation/using/configure-delivery-settings.md).
+  Controleer in dit geval de configuratie van het verkeersbeheer (IP-affiniteit) en gebruik het veld **[!UICONTROL Managing affinities with IP addresses]** om leveringen te koppelen aan de MTA die de affiniteit beheert. Voor meer informatie over affiniteiten, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/configure-delivery-settings.md).
 
 * Wanneer te veel campagnes lopen, blijft de leveringsstatus in &quot;Hangende&quot;status.
 
   De limiet van gelijktijdige campagnes wordt gedefinieerd in de optie **[!UICONTROL NmsOperation_LimitConcurrency]** . De standaardwaarde is 10.
 
-  Leer meer over opties in [ deze pagina ](../../installation/using/configuring-campaign-options.md).
+  Leer meer over opties in [&#x200B; deze pagina &#x200B;](../../installation/using/configuring-campaign-options.md).
 
 
 **Verwante onderwerpen:**

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met de **[!UICONTROL Database cleanup]** -workflow die toegankelijk is via het knooppunt **[!UICONTROL Administration > Production > Technical workflows]** kunt u verouderde gegevens verwijderen om exponentiële groei van de database te voorkomen. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker.
 
-![ schoonmaakbeurt ](assets/ncs_cleanup_workflow.png)
+![&#x200B; schoonmaakbeurt &#x200B;](assets/ncs_cleanup_workflow.png)
 
 ## Configuratie {#configuration}
 
@@ -32,7 +32,7 @@ De database wordt op twee niveaus opgeschoond: in de workflowplanner en in de im
 
 >[!NOTE]
 >
->Voor meer op de planner, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+>Voor meer op de planner, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 Standaard is de **[!UICONTROL Database cleanup]** -workflow zo geconfigureerd dat deze elke dag om 4.00 uur wordt gestart. De planner laat u het werkschema veranderen die frequentie teweegbrengen. De volgende frequenties zijn beschikbaar:
 
@@ -41,7 +41,7 @@ Standaard is de **[!UICONTROL Database cleanup]** -workflow zo geconfigureerd da
 * **[!UICONTROL Weekly]**
 * **[!UICONTROL Once]**
 
-![ planner ](assets/ncs_cleanup_scheduler.png)
+![&#x200B; planner &#x200B;](assets/ncs_cleanup_scheduler.png)
 
 >[!IMPORTANT]
 >
@@ -55,32 +55,32 @@ Via het menu **[!UICONTROL deployment wizard]** , dat u opent via **[!UICONTROL 
 
 De velden van het venster **[!UICONTROL Purge of data]** komen overeen met de volgende opties. Deze worden gebruikt door een aantal van de taken die worden uitgevoerd door de **[!UICONTROL Database cleanup]** -workflow:
 
-* Geconsolideerde het volgen: **NmsCleanup_TrackingStatPurgeDelay** (verwijs naar [ Opruiming van het volgen logboeken ](#cleanup-of-tracking-logs))
-* Logboeken van de levering: **NmsCleanup_BroadLogPurgeDelay** (verwijs naar [ Opschoning van leveringslogboeken ](#cleanup-of-delivery-logs))
-* Het volgen logboeken: **NmsCleanup_TrackingLogPurgeDelay** (verwijs naar [ Opruiming van het volgen logboeken ](#cleanup-of-tracking-logs))
-* Gewiste leveranties: **NmsCleanup_RecycledDeliveryPurgeDelay** (verwijs naar [ Schoonmaak van te schrappen of te recyclen leveringen ](#cleanup-of-deliveries-to-be-deleted-or-recycled))
-* De invoer verwerpt: **NmsCleanup_RejectsPurgeDelay** (verwijs naar [ Schoonmaak van verwerpingen die door de invoer ](#cleanup-of-rejects-generated-by-imports-) worden geproduceerd)
-* De profielen van de bezoeker: **NmsCleanup_VisitorPurgeDelay** (verwijs naar [ Opschoning van bezoekers ](#cleanup-of-visitors))
-* Voorstellen van de aanbieding: **NmsCleanup_PropositionPurgeDelay** (verwijs naar [ Schoonmaak van voorstellen ](#cleanup-of-propositions))
+* Geconsolideerde het volgen: **NmsCleanup_TrackingStatPurgeDelay** (verwijs naar [&#x200B; Opruiming van het volgen logboeken &#x200B;](#cleanup-of-tracking-logs))
+* Logboeken van de levering: **NmsCleanup_BroadLogPurgeDelay** (verwijs naar [&#x200B; Opschoning van leveringslogboeken &#x200B;](#cleanup-of-delivery-logs))
+* Het volgen logboeken: **NmsCleanup_TrackingLogPurgeDelay** (verwijs naar [&#x200B; Opruiming van het volgen logboeken &#x200B;](#cleanup-of-tracking-logs))
+* Gewiste leveranties: **NmsCleanup_RecycledDeliveryPurgeDelay** (verwijs naar [&#x200B; Schoonmaak van te schrappen of te recyclen leveringen &#x200B;](#cleanup-of-deliveries-to-be-deleted-or-recycled))
+* De invoer verwerpt: **NmsCleanup_RejectsPurgeDelay** (verwijs naar [&#x200B; Schoonmaak van verwerpingen die door de invoer &#x200B;](#cleanup-of-rejects-generated-by-imports-) worden geproduceerd)
+* De profielen van de bezoeker: **NmsCleanup_VisitorPurgeDelay** (verwijs naar [&#x200B; Opschoning van bezoekers &#x200B;](#cleanup-of-visitors))
+* Voorstellen van de aanbieding: **NmsCleanup_PropositionPurgeDelay** (verwijs naar [&#x200B; Schoonmaak van voorstellen &#x200B;](#cleanup-of-propositions))
 
   >[!NOTE]
   >
   >Het **[!UICONTROL Offer propositions]** gebied is slechts beschikbaar wanneer de **Interactie** module geïnstalleerd is.
 
-* Gebeurtenissen: **NmsCleanup_EventPurgeDelay** (verwijs naar [ het Schonen van verlopen gebeurtenissen ](#cleansing-expired-events))
-* Gearchiveerde gebeurtenissen: **NmsCleanup_EventHistoPurgeDelay** (verwijs naar [ het Schoonmaken van verlopen gebeurtenissen ](#cleansing-expired-events))
+* Gebeurtenissen: **NmsCleanup_EventPurgeDelay** (verwijs naar [&#x200B; het Schonen van verlopen gebeurtenissen &#x200B;](#cleansing-expired-events))
+* Gearchiveerde gebeurtenissen: **NmsCleanup_EventHistoPurgeDelay** (verwijs naar [&#x200B; het Schoonmaken van verlopen gebeurtenissen &#x200B;](#cleansing-expired-events))
 
   >[!NOTE]
   >
   >De **[!UICONTROL Events]** en **[!UICONTROL Archived events]** gebieden zijn slechts beschikbaar als het **Centrum van het Bericht** module geïnstalleerd is.
 
-* Het spoor van de controle: **XtkCleanup_AuditTrailPurgeDelay** (verwijs naar [ Schoonmaak van het spoor van de Controle ](#cleanup-of-audit-trail))
+* Het spoor van de controle: **XtkCleanup_AuditTrailPurgeDelay** (verwijs naar [&#x200B; Schoonmaak van het spoor van de Controle &#x200B;](#cleanup-of-audit-trail))
 
 Alle taken die door de **[!UICONTROL Database cleanup]** -workflow worden uitgevoerd, worden in de volgende sectie beschreven.
 
 ## Taken die worden uitgevoerd door de workflow voor het opschonen van databases {#tasks-carried-out-by-the-database-cleanup-workflow}
 
-Op de datum en de tijd die in de werkschemaplanner wordt bepaald (verwijs naar [ de planner ](#the-scheduler)), begint de werkschemamotor het proces van de gegevensbestandschoonmaak. De schoonmaakbeurt van het Gegevensbestand verbindt met het gegevensbestand en voert de taken in de hieronder getoonde opeenvolging uit.
+Op de datum en de tijd die in de werkschemaplanner wordt bepaald (verwijs naar [&#x200B; de planner &#x200B;](#the-scheduler)), begint de werkschemamotor het proces van de gegevensbestandschoonmaak. De schoonmaakbeurt van het Gegevensbestand verbindt met het gegevensbestand en voert de taken in de hieronder getoonde opeenvolging uit.
 
 >[!IMPORTANT]
 >
@@ -125,7 +125,7 @@ De eerste taak die door het **[!UICONTROL Database cleanup]** werkschema wordt u
 
 Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
-1. Het **[!UICONTROL Database cleanup]** werkschema selecteert alle leveringen waarvoor het **deleteStatus** gebied de waarde **[!UICONTROL Yes]** of **[!UICONTROL Recycled]** heeft en waarvan schrappingsdatum vroeger is dan de periode die in **[!UICONTROL Deleted deliveries]** wordt bepaald (**NmsCleanup_RecycledDeliveryPurgeDelay**) gebied van de plaatsingstovenaar. Voor meer op dit, verwijs naar [ plaatsingstovenaar ](#deployment-assistant). Deze periode wordt berekend op basis van de huidige serverdatum.
+1. Het **[!UICONTROL Database cleanup]** werkschema selecteert alle leveringen waarvoor het **deleteStatus** gebied de waarde **[!UICONTROL Yes]** of **[!UICONTROL Recycled]** heeft en waarvan schrappingsdatum vroeger is dan de periode die in **[!UICONTROL Deleted deliveries]** wordt bepaald (**NmsCleanup_RecycledDeliveryPurgeDelay**) gebied van de plaatsingstovenaar. Voor meer op dit, verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant). Deze periode wordt berekend op basis van de huidige serverdatum.
 1. Voor elke server voor midsourcing selecteert de taak de lijst met te verwijderen leveringen.
 1. De **[!UICONTROL Database cleanup]** -workflow verwijdert leveringslogbestanden, bijlagen, spiegelpagina-informatie en alle andere gerelateerde gegevens.
 1. Voordat de levering goed wordt verwijderd, worden de gekoppelde gegevens in de volgende tabellen gewist:
@@ -308,7 +308,7 @@ Met deze stap kunt u records verwijderen waarvoor niet alle gegevens tijdens het
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   waar `$(curDate)` de huidige serverdatum is waarvan wij de periode aftrekken die voor de **wordt bepaald NmsCleanup_RejectsPurgeDelay** optie (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)) en `$(l)` is het maximumaantal verslagen dat massaal moet worden geschrapt.
+   waar `$(curDate)` de huidige serverdatum is waarvan wij de periode aftrekken die voor de **wordt bepaald NmsCleanup_RejectsPurgeDelay** optie (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)) en `$(l)` is het maximumaantal verslagen dat massaal moet worden geschrapt.
 
 1. Alle wezen worden dan geschrapt gebruikend de volgende vraag:
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### Opschonen van bezoekers {#cleanup-of-visitors}
 
-Met deze taak verwijdert u overbodige records uit de bezoekerstabel door middel van massaverwijdering. De verouderde verslagen zijn die waarvoor de laatste wijziging vroeger is dan de behoudsperiode die in de plaatsingstovenaar wordt bepaald (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)). De volgende query wordt gebruikt:
+Met deze taak verwijdert u overbodige records uit de bezoekerstabel door middel van massaverwijdering. De verouderde verslagen zijn die waarvoor de laatste wijziging vroeger is dan de behoudsperiode die in de plaatsingstovenaar wordt bepaald (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)). De volgende query wordt gebruikt:
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### Opschonen van trackinglogboeken {#cleanup-of-tracking-logs}
 
-Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden en webtracking. De verouderde verslagen zijn die die vroeger dan de behoudsperiode zijn die in de plaatsingstovenaar wordt bepaald (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)).
+Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden en webtracking. De verouderde verslagen zijn die die vroeger dan de behoudsperiode zijn die in de plaatsingstovenaar wordt bepaald (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)).
 
 1. Eerst, wordt de lijst van het volgen logboeklijsten teruggekregen gebruikend de volgende vraag:
 
@@ -464,7 +464,7 @@ Met deze taak kunt u de leveringslogboeken die in verschillende tabellen zijn op
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   waar `$(tableName)` de naam van elke lijst in de lijst van schema&#39;s is, en `$(option)` is de datum die voor **wordt bepaald NmsCleanup_BroadLogPurgeDelay** optie (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)).
+   waar `$(tableName)` de naam van elke lijst in de lijst van schema&#39;s is, en `$(option)` is de datum die voor **wordt bepaald NmsCleanup_BroadLogPurgeDelay** optie (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)).
 
 1. Tot slot controleert het werkschema of de **NmsProviderMsgId** lijst bestaat. Als dat het geval is, worden alle verouderde gegevens verwijderd met de volgende query:
 
@@ -472,7 +472,7 @@ Met deze taak kunt u de leveringslogboeken die in verschillende tabellen zijn op
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   waar `$(option)` de datum aanpast die voor **wordt bepaald NmsCleanup_BroadLogPurgeDelay** optie (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)).
+   waar `$(option)` de datum aanpast die voor **wordt bepaald NmsCleanup_BroadLogPurgeDelay** optie (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)).
 
 ### Opschonen van de tabel NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ De lijst met voorstellingstabellen wordt teruggewonnen en de massa-schrapping wo
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-waar `$(option)` de datum is die voor de **wordt bepaald NmsCleanup_PropositionPurgeDelay** optie (verwijs naar [ plaatsingstovenaar ](#deployment-assistant)).
+waar `$(option)` de datum is die voor de **wordt bepaald NmsCleanup_PropositionPurgeDelay** optie (verwijs naar [&#x200B; plaatsingstovenaar &#x200B;](#deployment-assistant)).
 
 ### Opschonen van simulatietabellen {#cleanup-of-simulation-tables}
 

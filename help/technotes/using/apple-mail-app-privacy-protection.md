@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Privacy-beveiliging per post in Apple Mail-app
 
-![ is op v7 en v8 van toepassing ](../../assets/common.svg)
+![&#x200B; is op v7 en v8 van toepassing &#x200B;](../../assets/common.svg)
 
 ## Wat is er veranderd?
 
@@ -29,11 +29,11 @@ De nieuwe functie van Apple is de vorm van zaken die in de sector komen op het g
 
 ### De invloed op uw campagnetriggers beoordelen
 
-Evalueer hoe deze wijzigingen van invloed zijn op uw huidige campagnetriggers. Identificeer de werkschema&#39;s waarin e-mail opent als criterium voor segmentatie, het richten, of het herrichten worden gebruikt. Lees de [ uiteinden en trucs ](#find-email-open-tracking).
+Evalueer hoe deze wijzigingen van invloed zijn op uw huidige campagnetriggers. Identificeer de werkschema&#39;s waarin e-mail opent als criterium voor segmentatie, het richten, of het herrichten worden gebruikt. Lees de [&#x200B; uiteinden en trucs &#x200B;](#find-email-open-tracking).
 
 ### Uw gegevens behouden
 
-Behoud uw gegevens en consolideer uw huidige kennis op apparaten. U kunt zeer belangrijke prestatiesindicatoren (KPIs) op de gebruikersagent baseren. U kunt bijvoorbeeld KPI&#39;s maken rond profielen van personen die de app iOS en Apple Mail gebruiken. Lees de [ uiteinden en trucs ](#preserve-tracking-data).
+Behoud uw gegevens en consolideer uw huidige kennis op apparaten. U kunt zeer belangrijke prestatiesindicatoren (KPIs) op de gebruikersagent baseren. U kunt bijvoorbeeld KPI&#39;s maken rond profielen van personen die de app iOS en Apple Mail gebruiken. Lees de [&#x200B; uiteinden en trucs &#x200B;](#preserve-tracking-data).
 
 ### Uw trackinglogboeken archiveren na de bewaarperiode
 
@@ -46,7 +46,7 @@ Archiveer uw trackinglogboeken na de bewaarperiode van Adobe Campaign:
 ### De huidige trend in de open rentetarieven beoordelen
 
 Bepaal welk deel van uw publiek de Apple Mail-app op een iOS-apparaat gebruikt.
-Op basis van deze beoordeling kunt u mogelijke afwijkende leemten en de oorzaak ervan vaststellen. U kunt bepalen of een gat te wijten is aan problemen met de campagneprestaties of aan de functionaliteit voor privacybescherming van Apple. Lees de [ uiteinden en trucs ](#measure-ios-footprint).
+Op basis van deze beoordeling kunt u mogelijke afwijkende leemten en de oorzaak ervan vaststellen. U kunt bepalen of een gat te wijten is aan problemen met de campagneprestaties of aan de functionaliteit voor privacybescherming van Apple. Lees de [&#x200B; uiteinden en trucs &#x200B;](#measure-ios-footprint).
 
 ### Herzie uw campagnestrategie en prestatiesmetriek
 
@@ -94,7 +94,7 @@ In dit voorbeeld wil een marketeer een beloningsaanbod sturen naar de ontvangers
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* U kunt een vooraf gedefinieerd filter gebruiken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* U kunt een vooraf gedefinieerd filter gebruiken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -139,7 +139,7 @@ In dit voorbeeld wordt een aangepaste implementatie in één technische workflow
 >
 >We raden u ten zeerste aan dit pakket te testen en te valideren in een niet-productieomgeving.
 
-Download het [ steekproefpakket ](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) en installeer het. [Meer informatie](../../platform/using/working-with-data-packages.md#importing-packages).
+Download het [&#x200B; steekproefpakket &#x200B;](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) en installeer het. [Meer informatie](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Nadat u het pakket hebt geïnstalleerd, kunt u tot het werkschema van de omslag toegang hebben die de uit-van-de-doos technische werkschema&#39;s in uw geval bevat:
 

@@ -88,7 +88,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    >[!NOTE]
    >
-   >Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} voor meer informatie over leveringsmalplaatjes.
+   >Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} voor meer informatie over leveringsmalplaatjes.
 
 1. Maak het tweede script voor het verzenden van abonnementsberichten.
 
@@ -117,7 +117,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
     </delivery>)
    ```
 
-1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer één van hen een vriend uitnodigt, wordt een levering die op het **** malplaatje van de Verwijzing wordt gebaseerd gecreeerd.
+1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer één van hen een vriend uitnodigt, wordt een levering die op het **&#x200B;**&#x200B;malplaatje van de Verwijzing wordt gebaseerd gecreeerd.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

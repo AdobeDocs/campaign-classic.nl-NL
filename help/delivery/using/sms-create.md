@@ -22,14 +22,14 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [ Verandering de 1} sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
+1. Selecteer het leveringsmalplaatje **Verzonden aan mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar [&#x200B; Verandering de 1&rbrace; sectie van het leveringsmalplaatje.](sms-set-up.md#changing-the-delivery-template)
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Klik op **[!UICONTROL Continue]** om deze informatie te bevestigen en het venster voor berichtconfiguratie weer te geven.
 
 ## De SMS-inhoud definiëren {#defining-the-sms-content}
@@ -40,7 +40,7 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [ Ongeveer verpersoonlijkings ](about-personalization.md) sectie.
+   Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [&#x200B; Ongeveer verpersoonlijkings &#x200B;](about-personalization.md) sectie.
 
 1. Klik op **[!UICONTROL Preview]** onder aan de pagina om het bericht met de bijbehorende personalisatie weer te geven. Selecteer een ontvanger met de knop **[!UICONTROL Test personalization]** op de werkbalk om de voorvertoning te starten. U kunt een ontvanger selecteren uit de gedefinieerde doelen of een andere ontvanger kiezen.
 
@@ -56,18 +56,18 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
 
    >[!NOTE]
    >
-   >SMS-berichten mogen niet langer zijn dan 160 tekens als de codepagina Latin-1 (ISO-8859-1) wordt gebruikt. Als het bericht in Unicode wordt geschreven, moet het niet 70 karakters overschrijden. Bepaalde speciale tekens kunnen de lengte van het bericht beïnvloeden. Voor meer informatie over berichtlengte, verwijs naar de [ het karaktervertaling van SMS ](#about-character-transliteration) sectie.
+   >SMS-berichten mogen niet langer zijn dan 160 tekens als de codepagina Latin-1 (ISO-8859-1) wordt gebruikt. Als het bericht in Unicode wordt geschreven, moet het niet 70 karakters overschrijden. Bepaalde speciale tekens kunnen de lengte van het bericht beïnvloeden. Voor meer informatie over berichtlengte, verwijs naar de [&#x200B; het karaktervertaling van SMS &#x200B;](#about-character-transliteration) sectie.
    >
    >Wanneer verpersoonlijkingsgebieden of voorwaardelijke inhoudsgebieden aanwezig zijn, varieert de grootte van het bericht van één ontvanger aan andere. De lengte van het bericht moet worden geëvalueerd wanneer de personalisatie is uitgevoerd.
    >
    >Wanneer u de analyse start, wordt de lengte van berichten gecontroleerd en wordt een waarschuwing weergegeven in geval van overloop.
 
-1. Als u de schakelaar NetSize of een schakelaar SMPP gebruikt, kunt u de naam van de leveringsafzender personaliseren. Voor meer op dit, verwijs naar de [ Geavanceerde parameters ](#advanced-parameters) sectie.
+1. Als u de schakelaar NetSize of een schakelaar SMPP gebruikt, kunt u de naam van de leveringsafzender personaliseren. Voor meer op dit, verwijs naar de [&#x200B; Geavanceerde parameters &#x200B;](#advanced-parameters) sectie.
 
 ## Doelpopulatie selecteren {#selecting-the-target-population}
 
-Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in [ deze sectie ](steps-defining-the-target-population.md).
+Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in [&#x200B; deze sectie &#x200B;](steps-defining-the-target-population.md).
 
-Voor meer op het gebruik van verpersoonlijkingsgebieden, verwijs naar [ deze sectie ](about-personalization.md).
+Voor meer op het gebruik van verpersoonlijkingsgebieden, verwijs naar [&#x200B; deze sectie &#x200B;](about-personalization.md).
 
-Voor meer op de opneming van een zaadlijst, verwijs naar [ deze pagina ](about-seed-addresses.md).
+Voor meer op de opneming van een zaadlijst, verwijs naar [&#x200B; deze pagina &#x200B;](about-seed-addresses.md).

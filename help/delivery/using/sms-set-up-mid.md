@@ -71,7 +71,7 @@ Als u een SMS-bericht naar een mobiele telefoon met mediaservers wilt verzenden,
 
 1. Geef op het tabblad **[!UICONTROL Mid-Sourcing]** de parameters voor de serververbinding voor de midsourcing op.
 
-   Ga de details van de [ eerder gecreeerde schakelaar van SMS ](#create-sms-operator) op in de **[!UICONTROL Account]** en **[!UICONTROL Password]** gebieden.
+   Ga de details van de [&#x200B; eerder gecreeerde schakelaar van SMS &#x200B;](#create-sms-operator) op in de **[!UICONTROL Account]** en **[!UICONTROL Password]** gebieden.
 
    ![](assets/mid_external_account_7.png)
 
@@ -83,11 +83,11 @@ Als u een SMS-bericht naar een mobiele telefoon met mediaservers wilt verzenden,
 
 >[!IMPORTANT]
 >
->Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Verwijs naar de [ het oplossen van problemenpagina van SMS ](troubleshooting-sms.md#external-account-conflict).
+>Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Verwijs naar de [&#x200B; het oplossen van problemenpagina van SMS &#x200B;](troubleshooting-sms.md#external-account-conflict).
 
 Zodra u met succes uw externe rekening van SMS op de server van de Marketing hebt opgezet, is de volgende stap uw externe rekening SMPP op de middentserver te vestigen.
 
-Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [ pagina ](sms-protocol.md).
+Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [&#x200B; pagina &#x200B;](sms-protocol.md).
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -128,7 +128,7 @@ Hiervoor voert u de volgende stappen uit:
    >
    >Bepaalde tekens tellen als twee tekens (accolades, vierkante haken, het euroteken, enz.).
    >
-   >De lijst van beschikbare karakters GSM wordt voorgesteld in [ deze sectie ](sms-set-up.md#about-character-transliteration).
+   >De lijst van beschikbare karakters GSM wordt voorgesteld in [&#x200B; deze sectie &#x200B;](sms-set-up.md#about-character-transliteration).
 
    U kunt ook tekentransliteratie autoriseren door het desbetreffende vak in te schakelen.
 
@@ -154,7 +154,7 @@ Hiervoor voert u de volgende stappen uit:
 
 ## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Om berichten door het kanaal van SMS te verzenden, moet u een malplaatje creëren dat een verwijzing naar de kanaalschakelaar omvat.
 
@@ -172,7 +172,7 @@ In het onderstaande voorbeeld genereren we een sjabloon om de levering van beric
 
 1. Klik op **[!UICONTROL Properties]**.
 
-1. Op het **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan de externe rekening beantwoordt die u in de sectie [ creeerde een externe rekening van SMS op de Marketing server ](#create-accound-mkt).
+1. Op het **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan de externe rekening beantwoordt die u in de sectie [&#x200B; creeerde een externe rekening van SMS op de Marketing server &#x200B;](#create-accound-mkt).
 
    ![](assets/delivery_template_mid_3.png)
 

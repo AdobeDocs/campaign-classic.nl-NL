@@ -25,11 +25,11 @@ Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen pe
 
 ### Aanbeveling
 
-Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [ de Algemene Redacteur van de Vraag van de Campagne ](../../platform/using/about-queries-in-campaign.md) in werking of creeer een werkschema met filtercriteria in de vraagactiviteit. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [&#x200B; de Algemene Redacteur van de Vraag van de Campagne &#x200B;](../../platform/using/about-queries-in-campaign.md) in werking of creeer een werkschema met filtercriteria in de vraagactiviteit. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 Voorbeeld:
 
-1. Creeer een werkschema en voeg de activiteit van de a **Vraag** toe. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Creeer een werkschema en voeg de activiteit van de a **Vraag** toe. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Open de **activiteit van de Vraag** en creeer een filter op de `nmsTrackingUrl` lijst als volgt:
 
@@ -50,11 +50,11 @@ Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd vo
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt deze fout geretourneerd: `Requested URL '…' was not found.`
 
-Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt uit aan [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze eigenschap toe te laten.
+Bovendien kunt u een verbetering gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt uit aan [&#x200B; de Zorg van de Klant &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze eigenschap toe te laten.
 
 Als u werkt op de build 19.1.4, kan het zijn dat u problemen ondervindt met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
 
-Als ontvangen Campagne, Geleide Diensten van de Wolk of hybride klant, moet u uit reiken aan [ de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om de handtekening van URL onbruikbaar te maken te hebben.
+Als ontvangen Campagne, Geleide Diensten van de Wolk of hybride klant, moet u uit reiken aan [&#x200B; de Zorg van de Klant &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om de handtekening van URL onbruikbaar te maken te hebben.
 
 Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
 
@@ -157,8 +157,8 @@ We raden klanten op locatie ten zeerste aan de pagina&#39;s te beschermen die pe
 
 Het doel van deze procedure is te voorkomen dat deze pagina&#39;s worden geïndexeerd, waardoor een mogelijk beveiligingsrisico wordt vermeden. Hier volgen enkele handige artikelen:
 
-* [ https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
-* [ https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
+* [&#x200B; https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
+* [&#x200B; https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
 
 Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
 
@@ -170,7 +170,7 @@ Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
    *Disallow: /
    ```
 
-   Voor IIS, verwijs naar [ deze pagina ](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Voor IIS, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    Voor Apache, kunt u het dossier in **plaatsen /var/www/robots.txt** (Debian).
 
@@ -178,9 +178,9 @@ Voer de volgende stappen uit om uw pagina&#39;s te beveiligen:
 
    Naast het {**dossier 0} robots.txt, wordt het geadviseerd om a** x-robots-markering **kopbal toe te voegen.** U kunt het in Apache of IIS en in het **serverConf.xml** configuratiedossier doen.
 
-   Voor meer informatie, verwijs naar [ dit artikel ](https://developers.google.com/search/reference/robots_meta_tag).
+   Voor meer informatie, verwijs naar [&#x200B; dit artikel &#x200B;](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Privacyverzoeken
 
-Verwijs naar [ deze pagina ](../../platform/using/privacy-management.md) voor algemene informatie over wat het Beheer van de Privacy en de implementatiestappen in Adobe Campaign is. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
+Verwijs naar [&#x200B; deze pagina &#x200B;](../../platform/using/privacy-management.md) voor algemene informatie over wat het Beheer van de Privacy en de implementatiestappen in Adobe Campaign is. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.

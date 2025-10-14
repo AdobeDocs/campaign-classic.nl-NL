@@ -40,11 +40,11 @@ Transactionele berichtenmogelijkheden worden ontworpen om scalability te steunen
 
 De module van het Overseinen van Adobe Campaign Transactional integreert in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
 
-Deze eigenschap baseert zich op een specifieke architectuur, waar de **uitvoeringsinstantie** van de **controleinstantie** wordt gescheiden. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Voor meer op dit, zie [ Transactionele overseinenarchitectuur ](../../message-center/using/transactional-messaging-architecture.md).
+Deze eigenschap baseert zich op een specifieke architectuur, waar de **uitvoeringsinstantie** van de **controleinstantie** wordt gescheiden. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Voor meer op dit, zie [&#x200B; Transactionele overseinenarchitectuur &#x200B;](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
->Om nieuwe gebruikers voor de uitvoeringsinstanties van het Centrum van het Bericht te creëren die op de Wolk van Adobe worden ontvangen, moet u [ de Zorg van de Klant van 0} Adobe contacteren. ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Gebruikers van Message Center zijn specifieke operatoren waarvoor speciale machtigingen voor toegang tot **[!UICONTROL Real time events (nmsRtEvent)]** -mappen vereist zijn.
+>Om nieuwe gebruikers voor de uitvoeringsinstanties van het Centrum van het Bericht te creëren die op de Wolk van Adobe worden ontvangen, moet u [&#x200B; de Zorg van de Klant van 0&rbrace; Adobe contacteren. &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Gebruikers van Message Center zijn specifieke operatoren waarvoor speciale machtigingen voor toegang tot **[!UICONTROL Real time events (nmsRtEvent)]** -mappen vereist zijn.
 
 Het algemene proces van het transactieoverseinen kan als volgt worden beschreven:
 
@@ -54,7 +54,7 @@ Stel dat u een bedrijf bent met een website waar uw klanten producten kunnen kop
 
 Met Adobe Campaign kunt u een meldingsbericht verzenden naar klanten die producten aan hun winkelwagentje hebben toegevoegd. Wanneer een van hen uw website verlaat zonder door te gaan met hun aankopen (externe gebeurtenis die een Campagne-gebeurtenis activeert), wordt er automatisch een e-mailbericht over het verlaten van de winkelwagen naar hen verzonden (levering van transactiemeldingen).
 
-De belangrijkste stappen voor het zetten van dit in plaats zijn hieronder gedetailleerd in [ deze sectie ](#key-steps).
+De belangrijkste stappen voor het zetten van dit in plaats zijn hieronder gedetailleerd in [&#x200B; deze sectie &#x200B;](#key-steps).
 
 >[!NOTE]
 >
@@ -68,26 +68,26 @@ De belangrijkste stappen bij het maken en beheren van persoonlijke transactiemel
 
 Op de **controleinstantie**, moet u de volgende acties uitvoeren:
 
-1. [ creeer een gebeurtenistype ](../../message-center/using/creating-event-types.md).
-1. [ creeer en ontwerp het berichtmalplaatje ](../../message-center/using/creating-the-message-template.md). Tijdens deze stap moet u een gebeurtenis koppelen aan uw bericht.
-1. [ Test het bericht ](../../message-center/using/testing-message-templates.md).
-1. [ publiceer het berichtmalplaatje ](../../message-center/using/publishing-message-templates.md).
+1. [&#x200B; creeer een gebeurtenistype &#x200B;](../../message-center/using/creating-event-types.md).
+1. [&#x200B; creeer en ontwerp het berichtmalplaatje &#x200B;](../../message-center/using/creating-the-message-template.md). Tijdens deze stap moet u een gebeurtenis koppelen aan uw bericht.
+1. [&#x200B; Test het bericht &#x200B;](../../message-center/using/testing-message-templates.md).
+1. [&#x200B; publiceer het berichtmalplaatje &#x200B;](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >
->Alle stappen hierboven worden uitgevoerd op de **controleinstantie**. Het publiceren van het malplaatje op de controleinstantie zal het op alle **uitvoeringsinstanties** ook publiceren. Voor meer op de instanties van het transactionele overseinen, zie [ Transactionele overseinenarchitectuur ](../../message-center/using/transactional-messaging-architecture.md).
+>Alle stappen hierboven worden uitgevoerd op de **controleinstantie**. Het publiceren van het malplaatje op de controleinstantie zal het op alle **uitvoeringsinstanties** ook publiceren. Voor meer op de instanties van het transactionele overseinen, zie [&#x200B; Transactionele overseinenarchitectuur &#x200B;](../../message-center/using/transactional-messaging-architecture.md).
 
 ### Gebeurtenisverwerking op de uitvoeringsinstantie
 
 Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een overeenkomstige gebeurtenis wordt teweeggebracht, worden de belangrijkste hieronder stappen uitgevoerd op de **uitvoeringsinstantie**:
 
 1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie {de inzameling van 0} Gebeurtenis [.](../../message-center/using/about-event-processing.md#event-collection)
-1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [ Verpletterend naar een malplaatje ](../../message-center/using/about-event-processing.md#routing-towards-a-template).
-1. Zodra het verrijkingsstadium volledig is, wordt de levering verzonden. Zie [ uitvoering van de Levering ](../../message-center/using/delivery-execution.md). Elke beoogde ontvanger ontvangt een gepersonaliseerd bericht.
+1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [&#x200B; Verpletterend naar een malplaatje &#x200B;](../../message-center/using/about-event-processing.md#routing-towards-a-template).
+1. Zodra het verrijkingsstadium volledig is, wordt de levering verzonden. Zie [&#x200B; uitvoering van de Levering &#x200B;](../../message-center/using/delivery-execution.md). Elke beoogde ontvanger ontvangt een gepersonaliseerd bericht.
 
 ## Verwante onderwerpen {#related-topics}
 
 * [Aan de slag met communicatiekanalen](../../delivery/using/communication-channels.md)
-* [ de creatie belangrijkste stappen van de levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [&#x200B; de creatie belangrijkste stappen van de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [Architectuur van transactionele berichten](../../message-center/using/transactional-messaging-architecture.md)
-* [Rapporten van transactionele berichten openen ](../../message-center/using/about-transactional-messaging-reports.md)
+* [Rapporten van transactionele berichten openen &#x200B;](../../message-center/using/about-transactional-messaging-reports.md)

@@ -419,7 +419,7 @@ Er zijn nu instructievideo’s beschikbaar over de volgende onderwerpen:
 
 * [E-mails personaliseren met personalisatievelden](../../delivery/using/personalization-fields.md)
 
-* [ hoe te om zaad en proeven in e-mail ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"} te beheren.
+* [&#x200B; hoe te om zaad en proeven in e-mail &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"} te beheren.
 
 * [Een terugkerende levering instellen](../../workflow/using/recurring-delivery.md)
 

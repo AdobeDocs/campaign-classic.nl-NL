@@ -22,13 +22,13 @@ Er kunnen veelvoudige redenen voor het volgen van logboeken zijn die niet door:s
 
 * **heeft het** Volgen **werkschema fouten?**
 
-Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 
 ![](assets/tracking_scheduled_task.png)
 
 * **is de module** getraceerd **lopend op de server?**
 
-  Verwijs naar [ dossiers van het Logboek ](../../production/using/log-files.md).
+  Verwijs naar [&#x200B; dossiers van het Logboek &#x200B;](../../production/using/log-files.md).
 
 * **zijn veranderingen aangebracht?**
 

@@ -24,9 +24,9 @@ In de onderstaande sectie vindt u informatie over algemene problemen met betrekk
 Raadpleeg de volgende secties voor meer informatie over workflows:
 
 * [Workflows](../../workflow/using/about-workflows.md)
-* [ Beginnend een werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
-* [ het levenscyclus van het Werkschema ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
-* [ Beste praktijken wanneer het gebruiken van werkschema&#39;s ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
+* [&#x200B; Beginnend een werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
+* [&#x200B; het levenscyclus van het Werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
+* [&#x200B; Beste praktijken wanneer het gebruiken van werkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
 
 ## Zo snel mogelijk starten in campagnes {#start-as-soon-as-possible-in-campaigns}
 
@@ -36,7 +36,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
 1. Controleer de [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} technische werkschemastatus. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
 
-   Voor meer op technische werkschema&#39;s controle, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+   Voor meer op technische werkschema&#39;s controle, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    Als het werkschema nog ontbreekt, controleer het controlelogboek voor specifieke fout, los dienovereenkomstig problemen op, dan opnieuw begin het werkschema opnieuw.
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [ processen van de Controle ](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [&#x200B; processen van de Controle &#x200B;](../../production/using/monitoring-processes.md)). Dit proces is verantwoordelijk voor het uitvoeren van alle workflows.
 
    Een admin gebruiker kan ook controleren dat de **wfserver@`<instance>`** module op uw belangrijkste toepassingsserver gebruikend het hieronder bevel wordt gelanceerd.
 
@@ -67,7 +67,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
    >Vervang **`<instance-name>`** door de naam van de instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#module-launch-commands).
+   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/usual-commands.md#module-launch-commands).
 
 1. Controle als het **aantal campagneprocessen die** op de instantie lopen meer dan de drempel is. Er is een limiet die door de optie [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) wordt gedefinieerd voor het aantal campagneprocessen dat parallel op de instantie kan worden uitgevoerd. Wanneer deze limiet is bereikt, blijft de workflow in de status &quot;Zo snel mogelijk starten&quot; staan, zolang het aantal actieve workflows de limiet overschrijdt.
 
@@ -79,7 +79,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
    >
    >Als u de optiedrempel van **[!UICONTROL NmsOperation_LimitConcurrency]** verhoogt, kunnen er prestatieproblemen optreden voor uw instantie. Voer dit in geen geval alleen uit en neem contact op met uw Adobe Campaign-contactpersoon.
 
-Voor meer op hoe te om u werkschema&#39;s te controleren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Voor meer op hoe te om u werkschema&#39;s te controleren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 ## Beginnen in uitvoering {#start-in-progress}
 
@@ -87,7 +87,7 @@ Als de werkschema&#39;s niet uitvoeren en hun status is **Begin lopend**, zou di
 
 Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
 
-1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [ processen van de Controle ](../../production/using/monitoring-processes.md)).
+1. Controleer de **[!UICONTROL wfserver]** modulestaat in het **[!UICONTROL Monitoring]** lusje, toegankelijk van de homepage van Campaign Classic (zie [&#x200B; processen van de Controle &#x200B;](../../production/using/monitoring-processes.md)).
 
    Een admin gebruiker kan ook controleren dat de **wfserver@`<instance>`** module op uw belangrijkste toepassingsserver gebruikend het hieronder bevel wordt gelanceerd.
 
@@ -99,7 +99,7 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
    [...]
    ```
 
-   Voor meer op hoe te om modules te controleren, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#monitoring-commands-).
+   Voor meer op hoe te om modules te controleren, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/usual-commands.md#monitoring-commands-).
 
 1. Neem contact op met de klantenservice van Adobe als de module niet actief is. Als u een installatie op locatie hebt, moet een beheerder deze opnieuw starten met de onderstaande opdracht.
 
@@ -112,12 +112,12 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
    >Vervang **`<instance-name>`** door de naam van de instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [ deze sectie ](../../production/using/usual-commands.md#module-launch-commands).
+   Voor meer op hoe te om modules opnieuw te beginnen, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/usual-commands.md#module-launch-commands).
 
 ## Mislukte workflow {#failed-workflow}
 
 Als een werkstroom mislukt, voert u de volgende stappen uit:
 
-1. Controleer het werkstroomjournaal. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
-1. Technische workflows controleren. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+1. Controleer het werkstroomjournaal. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+1. Technische workflows controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 1. Zoek naar mislukkingen op de individuele werkschemaactiviteiten.

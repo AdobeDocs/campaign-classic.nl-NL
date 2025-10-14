@@ -43,11 +43,11 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 >[!NOTE]
 >
->* U kunt uw de serveropslag van SFTP met het Campaign Classic [ Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"} controleren.
+>* U kunt uw de serveropslag van SFTP met het Campaign Classic [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"} controleren.
 >
 >* Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel){target="_blank"}.
 >
->* Merk op dat uw instantie met de [ recentste bouw GA ](../../rn/using/rn-overview.md) moet worden bevorderd. Leer hoe te om uw versie in [ te controleren deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* Merk op dat uw instantie met de [&#x200B; recentste bouw GA &#x200B;](../../rn/using/rn-overview.md) moet worden bevorderd. Leer hoe te om uw versie in [&#x200B; te controleren deze sectie &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * De mogelijkheden voor de servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 
@@ -68,7 +68,7 @@ Wanneer u in Campaign Classic een pad naar een externe SFTP-server opgeeft, vers
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
-De sectie hieronder maakt een lijst van de informatie om aan het team van de Steun van Adobe via [ de Zorg van de Klant van Adobe te controleren en te verstrekken ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
+De sectie hieronder maakt een lijst van de informatie om aan het team van de Steun van Adobe via [&#x200B; de Zorg van de Klant van Adobe te controleren en te verstrekken &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
 
 1. Controleer of de instantie actief is. Hiervoor opent u de browser en roept u vervolgens een **[!UICONTROL GET]** oproep aan het eindpunt van de instantie **[!UICONTROL /r/test]** :
 
@@ -96,11 +96,11 @@ De sectie hieronder maakt een lijst van de informatie om aan het team van de Ste
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog verbindingskwesties ontmoet, deel de output van het bevel met [ het team van de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog verbindingskwesties ontmoet, deel de output van het bevel met [&#x200B; het team van de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 1. Controleer of het openbare IP waarvan u probeert de verbinding in werking te stellen SFTP is die u aan de Steun van Adobe voor de lijst van gewenste personen verstrekte.
-1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsperiode van 90 dagen). Daarom adviseren wij sterk gebruikend een zeer belangrijke gebaseerde authentificatie (zie [ best practices van de server SFTP ](#sftp-server-best-practices)).
-1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan [ het team van de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voor de instantieconfiguratie verstrekte.
+1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsperiode van 90 dagen). Daarom adviseren wij sterk gebruikend een zeer belangrijke gebaseerde authentificatie (zie [&#x200B; best practices van de server SFTP &#x200B;](#sftp-server-best-practices)).
+1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan [&#x200B; het team van de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voor de instantieconfiguratie verstrekte.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
 
 ## Fout &quot;Kan hostnaam niet oplossen&quot;
@@ -132,7 +132,7 @@ Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden 
 
 1. Los **zittingslogboeken** problemen op:
 
-   1. In het werkschema, klik de [ overdrachts ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"} activiteit van het Dossier tweemaal.
+   1. In het werkschema, klik de [&#x200B; overdrachts &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"} activiteit van het Dossier tweemaal.
    1. Ga naar de tab **[!UICONTROL File Transfer]** en klik vervolgens op **[!UICONTROL Advanced Parameters]** .
    1. Schakel de optie **[!UICONTROL Display the session logs]** in.
 

@@ -20,7 +20,7 @@ Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow
 
 Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
 
-![](assets/do-not-localize/how-to-video.png)[ ontdekt deze eigenschap in video ](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; ontdekt deze eigenschap in video &#x200B;](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -28,11 +28,11 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Levering starten {#starting-a-delivery}
 
-Zodra alle goedkeuringen zijn verleend, is de levering klaar om te worden begonnen. De leveringsprocedure is dan afhankelijk van het soort levering. Voor e-mail of mobiele kanaalleveringen, zie [ Beginnend een online levering ](#starting-an-online-delivery), en voor directe postleveringen, zie [ Beginnend een off-line levering ](#starting-an-offline-delivery).
+Zodra alle goedkeuringen zijn verleend, is de levering klaar om te worden begonnen. De leveringsprocedure is dan afhankelijk van het soort levering. Voor e-mail of mobiele kanaalleveringen, zie [&#x200B; Beginnend een online levering &#x200B;](#starting-an-online-delivery), en voor directe postleveringen, zie [&#x200B; Beginnend een off-line levering &#x200B;](#starting-an-offline-delivery).
 
 ### Een online levering starten {#starting-an-online-delivery}
 
@@ -58,13 +58,13 @@ Zodra alle goedkeuringen zijn verleend, verandert de leveringsstatus in **[!UICO
 
 >[!NOTE]
 >
->De technische werkschema&#39;s met betrekking tot het pakket van de Campagne worden voorgesteld in [ Lijst van technische werkschema&#39;s ](../../workflow/using/about-technical-workflows.md).
+>De technische werkschema&#39;s met betrekking tot het pakket van de Campagne worden voorgesteld in [&#x200B; Lijst van technische werkschema&#39;s &#x200B;](../../workflow/using/about-technical-workflows.md).
 
 **Stap 1 - de goedkeuring van het Dossier**
 
 Nadat de extractieworkflow is voltooid, moet het extractiebestand worden goedgekeurd (mits de goedkeuring van het extractiebestand is geselecteerd in de leveringsinstellingen).
 
-Voor meer op dit, verwijs naar [ goedkeuren een extractiedossier ](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Voor meer op dit, verwijs naar [&#x200B; goedkeuren een extractiedossier &#x200B;](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Stap 2 - Goedkeuring van het bericht aan de dienstverlener**
 
@@ -113,11 +113,11 @@ Bij het uitpakken van bestanden worden twee bewerkingen gestart: budgetberekenin
 
 >[!NOTE]
 >
->Voor verdere informatie over kostenberekeningen en voorraadbeheer, zie [ Leveranciers, voorraden en begrotingen ](../../campaign/using/providers-stocks-and-budgets.md).
+>Voor verdere informatie over kostenberekeningen en voorraadbeheer, zie [&#x200B; Leveranciers, voorraden en begrotingen &#x200B;](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## Gekoppelde documenten beheren {#managing-associated-documents}
 
-U kunt verschillende documenten koppelen aan een campagne: rapport, foto, webpagina, diagram, enzovoort. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enz.). Leer hoe te om documenten met een campagne [ in deze sectie ](../../campaign/using/marketing-campaign-assets.md) te verbinden.
+U kunt verschillende documenten koppelen aan een campagne: rapport, foto, webpagina, diagram, enzovoort. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enz.). Leer hoe te om documenten met een campagne [&#x200B; in deze sectie &#x200B;](../../campaign/using/marketing-campaign-assets.md) te verbinden.
 
 >[!IMPORTANT]
 >
@@ -127,7 +127,7 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [ marketing middelen beheren ](../../mrm/using/managing-marketing-resources.md).
+>Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [&#x200B; marketing middelen beheren &#x200B;](../../mrm/using/managing-marketing-resources.md).
 
 ### Documenten toevoegen {#adding-documents}
 
@@ -176,7 +176,7 @@ Als u een omtrek wilt maken, klikt u op het subtabblad **[!UICONTROL Delivery ou
 >
 >Als dit tabblad niet aanwezig is, is deze functie niet beschikbaar voor deze campagne. Verwijs naar de configuratie van het campagnemalplaatje.
 >   
->Voor meer op dit, verwijs naar [ malplaatjes van de Campagne ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Voor meer op dit, verwijs naar [&#x200B; malplaatjes van de Campagne &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -204,7 +204,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
   >[!NOTE]
   >
-  >Voor meer op marketing middelen, verwijs naar [ het Leiden marketing middelen ](../../mrm/using/managing-marketing-resources.md).
+  >Voor meer op marketing middelen, verwijs naar [&#x200B; het Leiden marketing middelen &#x200B;](../../mrm/using/managing-marketing-resources.md).
 
 #### Een omtrek selecteren {#selecting-an-outline}
 
@@ -228,11 +228,11 @@ In het volgende voorbeeld worden het label, de geschatte kosten en de beschrijvi
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [ Creërend dienstverleners en hun kostenstructuren ](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokken levering is geselecteerd. Zie [&#x200B; Creërend dienstverleners en hun kostenstructuren &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
->Voor meer op de uitvoer, verwijs naar [ Begonnen het Worden ](../../platform/using/get-started-data-import-export.md) sectie.
+>Voor meer op de uitvoer, verwijs naar [&#x200B; Begonnen het Worden &#x200B;](../../platform/using/get-started-data-import-export.md) sectie.
 
 #### Video over zelfstudie {#create-email-video}
 
@@ -240,4 +240,4 @@ In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Ado
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-De extra campagne hoe-aan video&#39;s is beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra campagne hoe-aan video&#39;s is beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

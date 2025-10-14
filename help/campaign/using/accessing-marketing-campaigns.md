@@ -32,16 +32,16 @@ Campagne-elementen vindt u op het tabblad **[!UICONTROL Campaigns]** . Hier ziet
 
 Het **[!UICONTROL Browsing]** -blok van het tabblad **[!UICONTROL Campaigns]** biedt verschillende ingangen, afhankelijk van de modules die op de instantie zijn geïnstalleerd. U hebt bijvoorbeeld toegang tot:
 
-* **kalender van de Campagne**: kalender van plannen, marketing programma&#39;s, leveringen, en campagnes. Verwijs naar [ kalender van de Campagne ](#campaign-calendar).
+* **kalender van de Campagne**: kalender van plannen, marketing programma&#39;s, leveringen, en campagnes. Verwijs naar [&#x200B; kalender van de Campagne &#x200B;](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes bevat in alle marketing programma&#39;s.
 * **Leveringen**: toegang tot de leveringen verbonden aan de campagnes.
 * **Toepassingen van het Web**: toegang tot Webtoepassingen (vormen, landende pagina&#39;s, enz.).
 
 >[!NOTE]
 >
->Voor meer op de algemene ergonomie van Adobe Campaign, de toestemmingen en op de functionaliteit van het profielbeheer, verwijs naar [ deze sectie ](../../platform/using/adobe-campaign-workspace.md).
+>Voor meer op de algemene ergonomie van Adobe Campaign, de toestemmingen en op de functionaliteit van het profielbeheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md).
 >
->Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ### Campagnekalender {#campaign-calendar}
 
@@ -114,7 +114,7 @@ Met Adobe Campaign kunt u samenwerkingsprocessen opzetten voor het opzetten en g
 
 >[!NOTE]
 >
->De configuratie van campagnemalplaatjes wordt voorgesteld in [ malplaatjes van de Campagne ](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>De configuratie van campagnemalplaatjes wordt voorgesteld in [&#x200B; malplaatjes van de Campagne &#x200B;](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 #### Schema {#schedule}
 
@@ -126,7 +126,7 @@ Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het p
 
 Voor elke campagne kunnen exploitanten berichten uitwisselen via een speciaal forum.
 
-Leer meer in [ forums van de Bespreking ](../../mrm/using/discussion-forums.md).
+Leer meer in [&#x200B; forums van de Bespreking &#x200B;](../../mrm/using/discussion-forums.md).
 
 #### Rapporten {#reports}
 
@@ -136,16 +136,16 @@ Via de koppeling **[!UICONTROL Reports]** hebt u toegang tot de campagnerapporte
 
 >[!NOTE]
 >
->De rapporten worden gedetailleerd in [ deze sectie ](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+>De rapporten worden gedetailleerd in [&#x200B; deze sectie &#x200B;](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 #### Configuratie {#configuration}
 
 Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen configureren waarvoor sommige opties zijn geselecteerd en andere instellingen al zijn opgeslagen. Voor elke campagne wordt de volgende functionaliteit aangeboden:
 
-* Verwijzen van [ documenten en middelen ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten met de campagne (kort, rapport, beelden, enz.) associëren. Alle documentindelingen worden ondersteund.
-* Het bepalen van kosten: voor elke campagne, laat Adobe Campaign u [ kosteningangen en de structuren van de kostenberekening ](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) bepalen die wanneer het creëren van de marketing campagne kunnen worden gebruikt. Bijvoorbeeld: afdrukkosten, gebruik van een externe instantie, huur van ruimte.
+* Verwijzen van [&#x200B; documenten en middelen &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): u kunt documenten met de campagne (kort, rapport, beelden, enz.) associëren. Alle documentindelingen worden ondersteund.
+* Het bepalen van kosten: voor elke campagne, laat Adobe Campaign u [&#x200B; kosteningangen en de structuren van de kostenberekening &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) bepalen die wanneer het creëren van de marketing campagne kunnen worden gebruikt. Bijvoorbeeld: afdrukkosten, gebruik van een externe instantie, huur van ruimte.
 * Vaststellen van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
-* Het leiden [ zaadadressen ](../../delivery/using/about-seed-addresses.md) en [ controlegroepen ](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* Het leiden [&#x200B; zaadadressen &#x200B;](../../delivery/using/about-seed-addresses.md) en [&#x200B; controlegroepen &#x200B;](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Goedkeuringen beheren: u kunt de behandelingen selecteren die u wilt goedkeuren en, indien nodig, de revisieoperatoren of -groepen selecteren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
@@ -194,4 +194,4 @@ Goedkeuringen (bijvoorbeeld van een doel of een leveringsinhoud) kunnen via webt
 
 ![](assets/campaign_web_interface_validation.png)
 
-U kunt ook de koppeling gebruiken die zich in de meldingen bevindt. Voor meer op dit, verwijs naar [ het Controleren en het goedkeuren van leveringen ](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+U kunt ook de koppeling gebruiken die zich in de meldingen bevindt. Voor meer op dit, verwijs naar [&#x200B; het Controleren en het goedkeuren van leveringen &#x200B;](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).

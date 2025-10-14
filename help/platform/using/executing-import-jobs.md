@@ -23,11 +23,11 @@ Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TA
 
 >[!NOTE]
 >
->U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de functie **[!UICONTROL Import a list]** . De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** -object worden gebruikt. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+>U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de functie **[!UICONTROL Import a list]** . De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** -object worden gebruikt. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
 
 Met de importassistent kunt u een importbewerking configureren, opties ervan definiëren (zoals gegevenstransformatie) en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type import (enkelvoudig of meervoudig) en de rechten van de operator.
 
-De vertoningen van de invoerassistent na het creëren van een nieuwe de invoerbaan (zie [ invoer en de uitvoerbanen ](../../platform/using/creating-import-export-jobs.md) creëren.
+De vertoningen van de invoerassistent na het creëren van een nieuwe de invoerbaan (zie [&#x200B; invoer en de uitvoerbanen &#x200B;](../../platform/using/creating-import-export-jobs.md) creëren.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Wanneer u de importassistent start, moet u eerst een sjabloon selecteren. Als vo
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Telkens wanneer een bestand wordt toegevoegd, wordt het scherm van de **[!UICONTROL File to import]** assistent weergegeven. Zie sectie [ Stap 2 - het dossierselectie van Source ](#step-2---source-file-selection) en volg de stappen in de medewerker om de invoeropties zoals voor een eenvoudige invoer te bepalen.
+   Telkens wanneer een bestand wordt toegevoegd, wordt het scherm van de **[!UICONTROL File to import]** assistent weergegeven. Zie sectie [&#x200B; Stap 2 - het dossierselectie van Source &#x200B;](#step-2---source-file-selection) en volg de stappen in de medewerker om de invoeropties zoals voor een eenvoudige invoer te bepalen.
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ Met de koppeling **[!UICONTROL Advanced parameters]** hebt u toegang tot de volg
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Leer meer hoe te **met opsommingen** in [ Adobe Campaign v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 
 * **[!UICONTROL Variables]** tab
@@ -294,7 +294,7 @@ In de volgende stap van de importassistent kunt u de map selecteren of maken waa
 
       >[!NOTE]
       >
-      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Leer meer in [ toegangsbeheer van de Omslag ](../../platform/using/access-management-folders.md).
+      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Leer meer in [&#x200B; toegangsbeheer van de Omslag &#x200B;](../../platform/using/access-management-folders.md).
 
       Als u de importmap wilt selecteren, klikt u op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteert u de desbetreffende map. U kunt het pictogram **[!UICONTROL Select link]** ook gebruiken om de structuur in een nieuw venster weer te geven of een nieuwe map te maken.
 
@@ -314,7 +314,7 @@ In de volgende stap van de importassistent kunt u de map selecteren of maken waa
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      U kunt een nieuwe lijst voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op **[!UICONTROL Create]** te klikken. De verwezenlijking en het beheer van lijsten worden voorgesteld in [ deze sectie ](../../platform/using/creating-and-managing-lists.md).
+      U kunt een nieuwe lijst voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op **[!UICONTROL Create]** te klikken. De verwezenlijking en het beheer van lijsten worden voorgesteld in [&#x200B; deze sectie &#x200B;](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -326,7 +326,7 @@ In de volgende stap van de importassistent kunt u de map selecteren of maken waa
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      U kunt een nieuwe service voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op het pictogram **[!UICONTROL Create]** te klikken. Het beheer van de informatiediensten wordt voorgesteld in [ deze sectie ](../../delivery/using/managing-subscriptions.md).
+      U kunt een nieuwe service voor deze ontvangers maken door op **[!UICONTROL Select link]** en vervolgens op het pictogram **[!UICONTROL Create]** te klikken. Het beheer van de informatiediensten wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../delivery/using/managing-subscriptions.md).
 
 * Gebruik het veld **[!UICONTROL Origin]** om informatie over de oorsprong van ontvangers toe te voegen aan hun profielen. Deze informatie is met name nuttig in het kader van een meervoudige import.
 
@@ -338,4 +338,4 @@ In de laatste stap van de assistent kunt u gegevensimport starten. Klik hiertoe 
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-U kunt de uitvoering van de de invoerbaan dan controleren (zie [ de baanuitvoering van de Monitor ](../../platform/using/monitoring-jobs-execution.md).
+U kunt de uitvoering van de de invoerbaan dan controleren (zie [&#x200B; de baanuitvoering van de Monitor &#x200B;](../../platform/using/monitoring-jobs-execution.md).

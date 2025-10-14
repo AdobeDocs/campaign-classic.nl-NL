@@ -263,7 +263,7 @@ Koppeling maken naar een tabel en verzamelingselement:
 
 >[!NOTE]
 >
->* Gebruik de knop **[!UICONTROL Add]** (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Voor meer bij het uitgeven van een uitdrukking, verwijs naar [ deze sectie ](#building-expressions).
+>* Gebruik de knop **[!UICONTROL Add]** (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Voor meer bij het uitgeven van een uitdrukking, verwijs naar [&#x200B; deze sectie &#x200B;](#building-expressions).
 >* Schrap een outputkolom door rode &quot;x&quot;te klikken (**Schrapping**).
 >* Wijzig de volgorde van de uitvoerkolommen met de pijlen.
 >* De **[!UICONTROL Distribution of values]** fungeert als een manier om de verspreiding van de waarden van het geselecteerde veld te bekijken (bijvoorbeeld de distributies die gekoppeld zijn aan de ontvangende steden, de ontvangende talen, enz.).
@@ -292,7 +292,7 @@ Er zijn vier typen berekende velden:
 
   Het is mogelijk om de bronwaarde van een kolom te gebruiken en het een bestemmingswaarde te geven. Deze bestemmingswaarde zal in de nieuwe outputkolom worden getoond.
 
-  Een voorbeeld om berekend gebiedstype **[!UICONTROL Enumerations]** toe te voegen is beschikbaar, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
+  Een voorbeeld om berekend gebiedstype **[!UICONTROL Enumerations]** toe te voegen is beschikbaar, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 
@@ -348,7 +348,7 @@ Hier volgt een gedetailleerde weergave van de opties die beschikbaar zijn in het
 
    ![](assets/query_editor_nveau_71.png)
 
-   Voor een lijst van alle beschikbare functies, verwijs naar [ Lijst van functies ](#list-of-functions).
+   Voor een lijst van alle beschikbare functies, verwijs naar [&#x200B; Lijst van functies &#x200B;](#list-of-functions).
 
 ## Lijst met functies {#list-of-functions}
 

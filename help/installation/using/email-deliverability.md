@@ -25,11 +25,11 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die door Adobe worden gehost, bijvoorbeeld voor toegang tot de server- en instantieconfiguratiebestanden. Om meer over de verschillende plaatsingen te leren, verwijs naar [ Hosting modellen ](../../installation/using/hosting-models.md) sectie of [ deze pagina ](../../installation/using/capability-matrix.md).
+>Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die door Adobe worden gehost, bijvoorbeeld voor toegang tot de server- en instantieconfiguratiebestanden. Om meer over de verschillende plaatsingen te leren, verwijs naar [&#x200B; Hosting modellen &#x200B;](../../installation/using/hosting-models.md) sectie of [&#x200B; deze pagina &#x200B;](../../installation/using/capability-matrix.md).
 
-Voor meer op de concepten en de beste praktijken met betrekking tot leverbaarheid met Adobe Campaign, verwijs naar dit [ sectie ](../../delivery/using/about-deliverability.md).
+Voor meer op de concepten en de beste praktijken met betrekking tot leverbaarheid met Adobe Campaign, verwijs naar dit [&#x200B; sectie &#x200B;](../../delivery/using/about-deliverability.md).
 
-Voor een diepere duik op wat de leverbaarheid is, met inbegrip van alle technische aanbevelingen betreffende het efficiënte verzenden van en het ontvangen van e-mails door een platform van Adobe, verwijs naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Voor een diepere duik op wat de leverbaarheid is, met inbegrip van alle technische aanbevelingen betreffende het efficiënte verzenden van en het ontvangen van e-mails door een platform van Adobe, verwijs naar de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 ## Werkwijze {#operating-principle}
 
@@ -77,11 +77,11 @@ De statistiekserver kan verscheidene instanties of verscheidene machines met het
 
 De statistieken van de levering worden gehouden voor elke doel MX en voor elke bronIP. Als het doeldomein bijvoorbeeld 5 MX heeft en het platform 3 verschillende IP-adressen kan gebruiken, kan de server maximaal 15 reeksen indicatoren voor dit domein beheren.
 
-Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door de verre e-mailserver wordt gezien. Dit IP adres kan van het adres van de machine verschillend zijn die gastheren **mta**, als een NATIONAAL router wordt verstrekt. Dit is waarom de statistiekserver een herkenningsteken gebruikt dat openbare IP (**publicId**) aanpast. De vereniging tussen het lokale adres en dit herkenningsteken wordt verklaard in het **serverConf.xml** configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door de verre e-mailserver wordt gezien. Dit IP adres kan van het adres van de machine verschillend zijn die gastheren **mta**, als een NATIONAAL router wordt verstrekt. Dit is waarom de statistiekserver een herkenningsteken gebruikt dat openbare IP (**publicId**) aanpast. De vereniging tussen het lokale adres en dit herkenningsteken wordt verklaard in het **serverConf.xml** configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 ## Uitvoercontrole van levering {#delivery-output-controlling}
 
-Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0} E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
+Om berichten aan e-mailservers te leveren, verzoekt de **component van de Verkeer 0&rbrace; E-mailShapier van het Verkeer een verbinding van de statistiekenserver.** Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
 
 Voordat de berichten worden verzonden, vraagt de module &#39;tokens&#39; van de server. Dit zijn over het algemeen reeksen van minstens 10 tokens, die het aantal vragen aan de server verminderen.
 
@@ -95,7 +95,7 @@ Wanneer een bericht wordt verzonden, zijn er 3 mogelijke resultaten:
 
 1. **Succes**: het bericht werd met succes verzonden. Het bericht wordt bijgewerkt.
 1. **Ontbroken Bericht**: De gecontacteerde server verwierp het bericht voor de gekozen ontvanger. Dit resultaat komt overeen met de retourcodes 550 tot en met 599, maar er kunnen uitzonderingen worden gedefinieerd.
-1. **Ontbroken Zitting** (voor 5.11): als **mta** een antwoord voor dit bericht ontvangt, wordt het bericht verlaten (verwijs naar [ Verlaten van het Bericht ](#message-abandonment)). Het bericht wordt verzonden naar een andere weg of geplaatst aan hangend als geen andere wegen beschikbaar zijn (verwijs naar [ Bestaand Bericht ](#message-pending)).
+1. **Ontbroken Zitting** (voor 5.11): als **mta** een antwoord voor dit bericht ontvangt, wordt het bericht verlaten (verwijs naar [&#x200B; Verlaten van het Bericht &#x200B;](#message-abandonment)). Het bericht wordt verzonden naar een andere weg of geplaatst aan hangend als geen andere wegen beschikbaar zijn (verwijs naar [&#x200B; Bestaand Bericht &#x200B;](#message-pending)).
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Door gebrek, is de **staat** module begonnen voor elke instantie. Wanneer de ins
 
 ### Definitie van de serverpoort {#definition-of-the-server-port}
 
-Door gebrek, luistert de statistiekserver op haven 7777. Deze haven kan in het **serverConf.xml** dossier worden gewijzigd. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [ sectie ](../../installation/using/the-server-configuration-file.md).
+Door gebrek, luistert de statistiekserver op haven 7777. Deze haven kan in het **serverConf.xml** dossier worden gewijzigd. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [&#x200B; sectie &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 ```
 <stat port="1234"/>
@@ -135,7 +135,7 @@ Door gebrek, luistert de statistiekserver op haven 7777. Deze haven kan in het *
 
 >[!IMPORTANT]
 >
->Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** regels van de leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+>Voor ontvangen of hybride installaties, als u aan [&#x200B; Verbeterde MTA &#x200B;](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** regels van de leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
 ### Informatie over MX-regels {#about-mx-rules}
 
@@ -308,7 +308,7 @@ Voorbeeld van configuratie:
 
 >[!NOTE]
 >
->Voor meer bij het gebruiken van MX servers met Adobe Campaign, zie [ deze sectie ](../../installation/using/using-mx-servers.md).
+>Voor meer bij het gebruiken van MX servers met Adobe Campaign, zie [&#x200B; deze sectie &#x200B;](../../installation/using/using-mx-servers.md).
 
 ### E-mailindelingen beheren {#managing-email-formats}
 
@@ -331,7 +331,7 @@ De **MIME structuur** (Multipurpose Internet Mail Extensions) parameter staat u 
 
 Als de optie **[!UICONTROL Image inclusion]** is ingeschakeld, worden deze rechtstreeks in de tekst van de e-mail weergegeven. De afbeeldingen worden vervolgens geüpload en de URL-koppelingen worden vervangen door de inhoud ervan.
 
-Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -369,7 +369,7 @@ Om de statistiekenserver op de zelfde machine te gebruiken, moet u minstens de n
 
 De configuratie betreffende verkeersbeheer wordt gevestigd in het **mta/child/smtp** element van het configuratiedossier.
 
-Voor elk **** element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
+Voor elk **&#x200B;**&#x200B;element IPAffinity, moet u de IP adressen verklaren die voor de machine kunnen worden gebruikt.
 
 Voorbeeld:
 

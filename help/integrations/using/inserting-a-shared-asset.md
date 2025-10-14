@@ -20,27 +20,27 @@ Assets dat door Adobe Experience Cloud wordt gedeeld, kan als volgt op uw e-mail
 
 1. Maak een nieuwe e-mail of een nieuwe bestemmingspagina.
 
-   Als u activa van de activa van Adobe Experience Manager bibliotheek gebruikt, gebruik een levermalplaatje dat wanneer [ wordt gecreeerd vormend de integratie ](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
+   Als u activa van de activa van Adobe Experience Manager bibliotheek gebruikt, gebruik een levermalplaatje dat wanneer [&#x200B; wordt gecreeerd vormend de integratie &#x200B;](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
    Als u dit specifieke malplaatje niet hebt, zorg ervoor dat in de levering **Eigenschappen**, **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** lusje) aan **DCE** wordt geplaatst en dat de externe rekening van AEM die u voor de toegang tot van uw het middelbibliotheek van AEM Assets wilt gebruiken wordt verstrekt.
 
 1. Selecteer in het bewerkingsvenster de optie om een afbeelding toe te voegen:
 
-   * Als u de [ standaard het uitgeven wijze ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} gebruikt, uitgezocht **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Als u de [&#x200B; standaard het uitgeven wijze &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} gebruikt, uitgezocht **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Als u [ geavanceerde het uitgeven wijze ](../../web/using/about-campaign-html-editor.md) (DCE) gebruikt, ga naar een beeldblok, dan via het contextafhankelijke menu, uitgezocht **[!UICONTROL Select a shared asset]**.
+   * Als u [&#x200B; geavanceerde het uitgeven wijze &#x200B;](../../web/using/about-campaign-html-editor.md) (DCE) gebruikt, ga naar een beeldblok, dan via het contextafhankelijke menu, uitgezocht **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 
      >[!NOTE]
      >
-     >U kunt geen gedeelde beelden van Adobe Campaign in [ Webtoegang ](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) opnemen wanneer het gebruiken van DCE.
+     >U kunt geen gedeelde beelden van Adobe Campaign in [&#x200B; Webtoegang &#x200B;](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) opnemen wanneer het gebruiken van DCE.
 
 1. Selecteer in het selectievenster dat wordt geopend een afbeelding en bevestig deze vervolgens.
 
-   De beschikbare afbeeldingen zijn afkomstig uit uw Adobe Experience Cloud-bibliotheek of uw AEM Assets-bibliotheek, afhankelijk van de configuratie van uw Adobe Campaign-instantie. Verwijs naar [ het Vormen toegang tot de sectie van Assets ](../../integrations/using/configuring-access-to-assets.md).
+   De beschikbare afbeeldingen zijn afkomstig uit uw Adobe Experience Cloud-bibliotheek of uw AEM Assets-bibliotheek, afhankelijk van de configuratie van uw Adobe Campaign-instantie. Verwijs naar [&#x200B; het Vormen toegang tot de sectie van Assets &#x200B;](../../integrations/using/configuring-access-to-assets.md).
 
    ![](assets/dam_shared_image_selection.png)
 

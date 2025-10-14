@@ -65,7 +65,7 @@ Op het tabblad **[!UICONTROL General]** van de sjabloon kunt u de algemene sjabl
   >
   >Als het malplaatje wordt gevormd om een controlegroep in overweging te nemen, maar geen groep wordt bepaald in de levering die de hypothesen betreffen, zullen de resultaten op gerichte slechts ontvangers worden gebaseerd.
 
-  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
+  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Channel]**: u kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campaign-console door **[!UICONTROL All channels]** te selecteren in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese. [Meer informatie](creating-hypotheses.md)
 
@@ -115,7 +115,7 @@ Op het tabblad **[!UICONTROL General]** van de sjabloon kunt u ook de parameters
 
 ### Transacties {#transactions}
 
-Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis van reacties van ontvangers in termen van transacties kunt opslaan. Verwijs naar deze [ sectie ](../../configuration/using/about-schema-reference.md) voor meer informatie over de lijsten specifiek aan reactiebeheer.
+Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis van reacties van ontvangers in termen van transacties kunt opslaan. Verwijs naar deze [&#x200B; sectie &#x200B;](../../configuration/using/about-schema-reference.md) voor meer informatie over de lijsten specifiek aan reactiebeheer.
 
 * **[!UICONTROL Schema (reaction log storage)]** : selecteer de tabel met reacties van ontvangers. De uit-van-de-doos lijst in Adobe Campaign is **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: kies de tabel die de hypothesen betreffen, d.w.z. de transactie of de aankooptabel.
@@ -129,7 +129,7 @@ Dit tabblad bevat de verschillende velden en tabellen waarmee u de geschiedenis 
 
   ![](assets/response_measurement_001.png)
 
-  Als de hypothese direct wordt gelanceerd, kan ze worden gedwongen als ze onmiddellijk zou willen worden geactiveerd. Anders, wordt het teweeggebracht automatisch gebaseerd op het gevormde eind van berekeningsdatum, die op de hypotheseaanmaakdatum gebaseerd is. [ leer meer ](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+  Als de hypothese direct wordt gelanceerd, kan ze worden gedwongen als ze onmiddellijk zou willen worden geactiveerd. Anders, wordt het teweeggebracht automatisch gebaseerd op het gevormde eind van berekeningsdatum, die op de hypotheseaanmaakdatum gebaseerd is. [&#x200B; leer meer &#x200B;](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
 * **[!UICONTROL Transaction/Margin amount]** : deze velden zijn optioneel, zodat u omzetindicatoren automatisch kunt berekenen. [Meer informatie](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**: hiermee kunt u een bedrag instellen voor het berekenen van de opbrengsten. [Meer informatie](hypothesis-tracking.md#indicators)

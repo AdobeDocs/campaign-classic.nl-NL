@@ -62,7 +62,7 @@ In Adobe Campaign kunt u op twee manieren een dynamische afbeelding van Target i
 * De lus **[!UICONTROL Landing Page]**: als u wilt dat de standaardafbeelding wordt omgeleid naar een standaard openingspagina. Deze URL is alleen bedoeld voor gevallen waarin de standaardafbeelding in de uiteindelijke e-mail wordt weergegeven en optioneel is.
 * **[!UICONTROL Additional decision parameters]**: geef de toewijzing op tussen de velden die zijn gedefinieerd in de Adobe Target-segmenten en de Adobe Campaign-velden. De Adobe Campaign-velden die worden gebruikt, moeten zijn opgegeven in de keuzelijst. In ons voorbeeld hebben we het veld Land toegevoegd.
 
-Als u Enterprise-machtigingen gebruikt in uw instellingen in Adobe Target, voegt u de bijbehorende eigenschap toe in dit veld. Leer meer over de toestemmingen van de Onderneming van het Doel in [ deze pagina ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+Als u Enterprise-machtigingen gebruikt in uw instellingen in Adobe Target, voegt u de bijbehorende eigenschap toe in dit veld. Leer meer over de toestemmingen van de Onderneming van het Doel in [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
@@ -154,7 +154,7 @@ In de sectie **[!UICONTROL Reporting Settings]** kunt u een handeling selecteren
 
 ## E-mail voorvertonen en verzenden {#preview-send-email}
 
-In Adobe Campaign kunt u nu een voorbeeld van uw e-mail bekijken en de weergave ervan testen op verschillende ontvangers. U zult merken dat de afbeelding verandert op basis van de verschillende ervaringen die u hebt opgedaan. Om meer op e-mailverwezenlijking te leren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+In Adobe Campaign kunt u nu een voorbeeld van uw e-mail bekijken en de weergave ervan testen op verschillende ontvangers. U zult merken dat de afbeelding verandert op basis van de verschillende ervaringen die u hebt opgedaan. Om meer op e-mailverwezenlijking te leren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 U kunt nu uw e-mail verzenden, inclusief een dynamisch voorstel van Target.
 

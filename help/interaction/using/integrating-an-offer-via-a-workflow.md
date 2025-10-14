@@ -32,7 +32,7 @@ Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows 
 1. Voeg in een workflow een overzichtsactiviteit toe voordat u een leveringsactiviteit toevoegt.
 1. Geef in de overzichtsactiviteit van de levering de omtrek op die u wilt gebruiken.
 
-   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
+   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Vul de beschikbare velden in op basis van uw levering.
 1. Er zijn twee mogelijke gevallen:
@@ -55,7 +55,7 @@ Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedinge
 
 >[!NOTE]
 >
->Voor meer informatie over de verrijkingsactiviteit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+>Voor meer informatie over de verrijkingsactiviteit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
@@ -68,7 +68,7 @@ Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 
 ### Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Na het vormen van uw vraag (verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
+Na het vormen van uw vraag (verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
 1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]** .
@@ -87,7 +87,7 @@ Na het vormen van uw vraag (verwijs naar de [ Campagne v8 documentatie ](https:/
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [ het Invoegen van een aanbiedingsvoorstel in een levering ](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [&#x200B; het Invoegen van een aanbiedingsvoorstel in een levering &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
 
    >[!NOTE]
    >
@@ -109,7 +109,7 @@ Hiervoor gebruikt u het volgende proces:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [ het Invoegen van een aanbiedingsvoorstel in een levering ](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [&#x200B; het Invoegen van een aanbiedingsvoorstel in een levering &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Door gebrek, wanneer een **verrijking** activiteit wordt gebruikt om aanbiedinge
 
 U kunt deze gegevens echter als volgt opslaan:
 
-1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Verwijs naar [ specificerend een aanbieding of een vraag aan de sectie van de aanbiedingsmotor ](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Verwijs naar [&#x200B; specificerend een aanbieding of een vraag aan de sectie van de aanbiedingsmotor &#x200B;](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Selecteer **[!UICONTROL Edit additional data...]** in het hoofdvenster van de activiteit.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -146,7 +146,7 @@ Deze activiteit werkt volgens hetzelfde principe als de verrijkingsactiviteit me
 
 ![](assets/int_offerengine_activity2.png)
 
-Na het vormen van uw vraag (verwijs naar de [ gids van Werkschema&#39;s ](../../workflow/using/query.md)):
+Na het vormen van uw vraag (verwijs naar de [&#x200B; gids van Werkschema&#39;s &#x200B;](../../workflow/using/query.md)):
 
 1. Voeg een **[!UICONTROL Offer engine]** -activiteit toe en open deze.
 1. Vul de verschillende beschikbare velden in om de oproep tot het aanbieden van motorparameters op te geven (beschikbare ruimte, categorie of thema(&#39;s), contactdatum, aantal aanbiedingen dat moet worden bewaard). De motor berekent automatisch de aanbieding(en) die volgens deze parameters moet worden toegevoegd.
@@ -157,7 +157,7 @@ Na het vormen van uw vraag (verwijs naar de [ gids van Werkschema&#39;s ](../../
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [ het Invoegen van een aanbiedingsvoorstel in een levering ](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [&#x200B; het Invoegen van een aanbiedingsvoorstel in een levering &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
 
 ## Aanbiedingen per cel {#offers-by-cell}
 
@@ -174,4 +174,4 @@ Hiervoor gebruikt u het volgende proces:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [ het Invoegen van een aanbiedingsvoorstel in een levering ](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [&#x200B; het Invoegen van een aanbiedingsvoorstel in een levering &#x200B;](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.

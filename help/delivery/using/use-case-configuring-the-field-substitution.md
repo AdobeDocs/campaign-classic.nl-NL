@@ -33,7 +33,7 @@ Als u een willekeurige veldvervanging wilt gebruiken, moet u beschikken over:
 
 ## Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het creëren van een levering zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+De stappen voor het creëren van een levering zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt.
 
@@ -52,17 +52,17 @@ In dit voorbeeld, neemt het gegevensschema van zaadadressen een waarde die van h
 
 Deze opsomming laat de gebruiker het favoriete literaire genre van hun cliënten specificeren.
 
-Voor deze wijziging van gegevensschema om in de zaadadressen **vorm van de Input** te kunnen bekijken, moet u het bijwerken. Verwijs naar de [ Update de sectie van de inputvorm ](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+Voor deze wijziging van gegevensschema om in de zaadadressen **vorm van de Input** te kunnen bekijken, moet u het bijwerken. Verwijs naar de [&#x200B; Update de sectie van de inputvorm &#x200B;](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Aanpassing configureren {#configuring-personalization}
 
 1. Open een levering.
 
-   In dit voorbeeld, heeft de levering twee verpersoonlijkingsgebieden: de eerste naam van de ontvanger **** en de favoriete literaire genre van de ontvanger ****.
+   In dit voorbeeld, heeft de levering twee verpersoonlijkingsgebieden: de eerste naam van de ontvanger **&#x200B;**&#x200B;en de favoriete literaire genre van de ontvanger **&#x200B;**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Vorm uw leveringslijst en uw zaadadressen. Verwijs naar [ identificeer doelpopulaties ](steps-defining-the-target-population.md).
+1. Vorm uw leveringslijst en uw zaadadressen. Verwijs naar [&#x200B; identificeer doelpopulaties &#x200B;](steps-defining-the-target-population.md).
 
    In dit voorbeeld, selecteert de gebruiker gebruikers de waarvan **favoriete literaire genre** Sci-Fi als belangrijkste doelbevolking is.
 
@@ -74,7 +74,7 @@ Voor deze wijziging van gegevensschema om in de zaadadressen **vorm van de Input
 
    >[!NOTE]
    >
-   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** verbinding, verwijs naar [ geval van het Gebruik: uitgezochte zaadadressen op criteria ](use-case-selecting-seed-addresses-on-criteria.md).
+   >Voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]** verbinding, verwijs naar [&#x200B; geval van het Gebruik: uitgezochte zaadadressen op criteria &#x200B;](use-case-selecting-seed-addresses-on-criteria.md).
 
 1. Klik op het tabblad **[!UICONTROL Preview]** en selecteer een beginadres om de personalisatie te testen.
 

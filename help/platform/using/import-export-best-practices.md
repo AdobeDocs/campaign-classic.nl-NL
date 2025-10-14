@@ -31,7 +31,7 @@ In veel projecten wordt de import gemaakt zonder **[!UICONTROL Deduplication]** 
 
 Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en correct zijn, of dat de afdeling van IT of de supervisor van Adobe Campaign het zal behandelen. Houd tijdens het project rekening met het opschonen van gegevens. U kunt gegevens dedupliceren, op elkaar afstemmen en de consistentie behouden bij het importeren van gegevens.
 
-Een voorbeeld van een generisch werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in het [ Voorbeeld: Het malplaatje van het werkschema om gegevens ](../../platform/using/creating-import-export-templates.md) sectie in te voeren.
+Een voorbeeld van een generisch werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in het [&#x200B; Voorbeeld: Het malplaatje van het werkschema om gegevens &#x200B;](../../platform/using/creating-import-export-templates.md) sectie in te voeren.
 
 ## Vlakke bestandsindelingen gebruiken {#using-flat-file-formats}
 
@@ -60,8 +60,8 @@ Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. 
 
 **Verwante onderwerpen:**
 
-* [ het laden van Gegevens (dossier) activiteit ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [ de extractie van Gegevens (dossier) activiteit ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [&#x200B; het laden van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+* [&#x200B; de extractie van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
 ## Importeren in de Delta-modus {#importing-in-delta-mode}
 

@@ -25,7 +25,7 @@ Als open oplossing is Adobe Campaign klaar voor aanpassing en implementatie van 
 
 Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks ingebouwde tabellen en hun interactie. De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md) voor meer informatie over Adobe Campaign-schema’s.
 
-[ klik hier om meer over het gegevensmodel van de Campagne ](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html) te leren.
+[&#x200B; klik hier om meer over het gegevensmodel van de Campagne &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html) te leren.
 
 De best practices worden vermeld [in dit artikel](../../configuration/using/data-model-best-practices.md).
 
@@ -55,7 +55,7 @@ U kunt query’s uitvoeren op de Campaign-database met behulp van de generieke q
 
 Query’s worden gemaakt met velden uit de geselecteerde tabel of met een formule. De belangrijkste principes om een query op de Campaign-database te maken, worden beschreven [op deze pagina](../../platform/using/about-queries-in-campaign.md).
 
-Leer over vragen aan de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Leer over vragen aan de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 ## Hoe kan ik een gegevenspakket importeren? {#how-can-i-import-a-data-package-}
 

@@ -32,7 +32,7 @@ Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](.
 
 ## Hoe kan ik de doelpopulatie van een marketingcampagne definiëren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-U kunt workflows gebruiken om doelgroepen van een marketingcampagne te maken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
+U kunt workflows gebruiken om doelgroepen van een marketingcampagne te maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
 
 ## Hoe kan ik een lijst met profielen maken? {#how-can-i-create-a-list-of-profiles-}
 
@@ -46,7 +46,7 @@ Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd 
 
 U kunt een workflow gebruiken om dubbele data uit te sluiten van het doel van een levering, om te voorkomen dat hetzelfde bericht meerdere keren naar een ontvanger wordt verzonden.
 
-Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ## Hoe te om abonnees aan een nieuwsbrief te identificeren en te richten? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ Ontdek lidmaatschapsbeheer in Campaign en leer hoe u [een bericht naar leden kun
 
 ## Wat is de beste praktijk om profielen uit te sluiten van een doelpopulatie? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Leer hoe te om een lijst van profielen van uw doelbevolking in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"} uit te sluiten.
+Leer hoe te om een lijst van profielen van uw doelbevolking in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"} uit te sluiten.

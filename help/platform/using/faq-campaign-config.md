@@ -43,7 +43,7 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
+Naast de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
@@ -51,7 +51,7 @@ Naast de [ Gids van de Beste praktijken van de Levering van Adobe ](https://expe
 
 Met Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste stappen van de marketingcampagne in de collaboratieve modus. Voor elke campagne kunt u het leveringsdoel, de content en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen.
 
-Ontdek hoe te om uw goedkeuring van de leveringsinhoud in de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"} uit te voeren.
+Ontdek hoe te om uw goedkeuring van de leveringsinhoud in de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"} uit te voeren.
 
 ## Hoe kan ik tot gegevens toegang hebben die in een extern gegevensbestand worden opgeslagen? {#how-can-i-access-data-stored-in-an-external-database-}
 
@@ -75,9 +75,9 @@ Adobe Campaign biedt verschillende CRM-connectoren waarmee u uw Adobe Campaign-p
 
 Deze schakelaars laten snelle en gemakkelijke gegevensintegratie toe: Adobe Campaign verstrekt een specifieke medewerker voor het verzamelen van en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
 
-Lees uit [ vorm de schakelaars van CRM ](../../platform/using/crm-connectors.md) om te leren hoe te om uw hulpmiddel van CRM met Adobe Campaign te synchroniseren.
+Lees uit [&#x200B; vorm de schakelaars van CRM &#x200B;](../../platform/using/crm-connectors.md) om te leren hoe te om uw hulpmiddel van CRM met Adobe Campaign te synchroniseren.
 
-![](assets/do-not-localize/how-to-video.png) bekijk dit gebruiksgeval video op [ Adobe Campaign en Microsoft Dynamics 365 integratie ](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) bekijk dit gebruiksgeval video op [&#x200B; Adobe Campaign en Microsoft Dynamics 365 integratie &#x200B;](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
 ## Hoe te om Zacht Geheime voorgeheugen Duidelijk uit te voeren wanneer de kwesties machine-specifiek of gebruiker-specifiek zijn? {#perform-soft-cache-clear}
 

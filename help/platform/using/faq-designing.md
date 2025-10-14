@@ -24,19 +24,19 @@ Ontdek de belangrijkste stappen voor het ontwerpen van berichten voor meerdere k
 
 Leer voordat u begint met het ontwerpen van e-mails de concepten en best practices met betrekking tot het ontwerpen en verzenden van leveringen met Adobe Campaign.
 
-Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
+Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
 
 ## Wat is een leveringssjabloon? {#what-is-a-delivery-template-}
 
 De configuratie en parameters van de levering kunnen in een leveringssjabloon worden bewaard om opnieuw te worden gebruikt.
 
-Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 ## Kan ik eenvoudig een bestaande HTML importeren om een e-mailbericht te maken in Campagne? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Ontdek hoe u met één klik een bestaande HTML importeert om een e-mailbericht te maken en te verzenden in Adobe Campaign.
 
-Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
+Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 ## Hoe maakt u een e-mailinhoud met Campagne DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
@@ -50,7 +50,7 @@ Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.ado
 
 Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de content of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de ontvangers zijn afgeleid. In het algemeen kunt u met Adobe Campaign:
 
-* Het berichtformaat aanpassen. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
+* Het berichtformaat aanpassen. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 * Dynamische personalisatievelden invoegen. [Klik hier voor meer informatie](../../delivery/using/personalization-fields.md).
 * Vooraf gedefinieerde personalisatieblokken invoegen of uw eigen blok maken. [Klik hier voor meer informatie](../../delivery/using/personalization-blocks.md).
 * Voorwaardelijke content maken. [Klik hier voor meer informatie](../../delivery/using/conditional-content.md) en lees [deze sectie](../../delivery/using/conditional-content.md).
@@ -59,7 +59,7 @@ Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manie
 
 U kunt meertalige berichten naar uw ontvangers verzenden, bijvoorbeeld afhankelijk van hun voorkeuren of land.
 
-Hiervoor lokaliseert u de content van het bericht en personaliseert u de content afhankelijk van het profiel van de ontvanger, met behulp van [voorwaarden](../../delivery/using/conditional-content.md). U kunt werkstromen ook gebruiken om de versie van het te verzenden bericht te selecteren afhankelijk van een test op aangewezen taal. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+Hiervoor lokaliseert u de content van het bericht en personaliseert u de content afhankelijk van het profiel van de ontvanger, met behulp van [voorwaarden](../../delivery/using/conditional-content.md). U kunt werkstromen ook gebruiken om de versie van het te verzenden bericht te selecteren afhankelijk van een test op aangewezen taal. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 ## Hoe kan ik een webformulier lokaliseren? {#how-can-i-localize-a-webform-}
 

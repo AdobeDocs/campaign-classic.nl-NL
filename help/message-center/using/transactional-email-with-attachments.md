@@ -43,7 +43,7 @@ Om prestatieproblemen te voorkomen, mogen afbeeldingen in e-mailberichten niet g
 
 Adobe raadt ook aan de grootte en het aantal bijgevoegde bestanden te beperken. Standaard kunt u slechts één bestand als bijlage aan een e-mailbericht toevoegen. Deze drempel kan worden geconfigureerd via de optie `NmsDelivery_MaxRecommendedAttachments` .
 
-Leer meer in [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
+Leer meer in [&#x200B; de lijst van de opties van Campaign Classic &#x200B;](../../installation/using/configuring-campaign-options.md#delivery).
 
 Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implementeert:
 
@@ -54,7 +54,7 @@ Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implemen
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [ de lijst van de opties van Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [&#x200B; de lijst van de opties van Campaign Classic &#x200B;](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 ## Implementatie {#implementation}
 
@@ -64,13 +64,13 @@ In het onderstaande diagram worden de verschillende stappen weergegeven bij de i
 
 Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan een transactiebericht:
 
-1. Begin door uw bijlage te ontwerpen. Voor meer op dit, zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"} verwijzen.
+1. Begin door uw bijlage te ontwerpen. Voor meer op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"} verwijzen.
 
    Hierdoor kunt u de bestanden als bijlage aan een e-mail toevoegen, zelfs als deze niet worden gehost op de uitvoeringsinstantie.
 
 1. Je kunt e-mailberichten verzenden via een SOAP-berichttrigger. In de SOAP-aanroep is er een URL-parameter (bijlageURL).
 
-   Voor meer informatie over SOAP verzoeken, zie [ beschrijving van de Gebeurtenis ](../../message-center/using/event-description.md).
+   Voor meer informatie over SOAP verzoeken, zie [&#x200B; beschrijving van de Gebeurtenis &#x200B;](../../message-center/using/event-description.md).
 
 1. Klik bij het ontwerpen van uw e-mail op **[!UICONTROL Attachment]** .
 

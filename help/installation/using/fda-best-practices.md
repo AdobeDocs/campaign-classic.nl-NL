@@ -32,11 +32,11 @@ Bij meerdere Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken di
 
 * **Filter op externe gegevens** - de activiteit van de Vraag staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken. Voor meer op dit, verwijs naar de [ Campagne v8 documentatie ] https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html) {target="_blank"}.
 
-* **creeer ondergroepen** - de Gesplitste activiteit staat u toe om ondergroepen tot stand te brengen. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+* **creeer ondergroepen** - de Gesplitste activiteit staat u toe om ondergroepen tot stand te brengen. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-* **Laad extern gegevensbestand** - u kunt de externe gegevens in de het laden van Gegevens (RDBMS) activiteit gebruiken. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
+* **Laad extern gegevensbestand** - u kunt de externe gegevens in de het laden van Gegevens (RDBMS) activiteit gebruiken. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
 
-* **het Toevoegen van informatie en verbindingen** - de activiteit van de Verrijking laat u extra gegevens aan de werklijst van het werkschema, en verbindingen aan een externe lijst toevoegen. In deze context kan het gegevens uit een externe database gebruiken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+* **het Toevoegen van informatie en verbindingen** - de activiteit van de Verrijking laat u extra gegevens aan de werklijst van het werkschema, en verbindingen aan een externe lijst toevoegen. In deze context kan het gegevens uit een externe database gebruiken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 ## Afvoerkanalen en beperkingen {#fda-limitations}
 

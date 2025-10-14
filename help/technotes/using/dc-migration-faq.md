@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-Adobe ontmantelt het oude datacenter: Campaign Classic-exemplaren moeten worden overgebracht naar Public Cloud Amazon Web Services (AWS). [ Leer meer over dit initiatief ](dc-migration.md).
+Adobe ontmantelt het oude datacenter: Campaign Classic-exemplaren moeten worden overgebracht naar Public Cloud Amazon Web Services (AWS). [&#x200B; Leer meer over dit initiatief &#x200B;](dc-migration.md).
 
 Hieronder vindt u een aantal veelgestelde vragen over dit project, de invloed op uw campagneomgeving en andere nuttige bronnen.
 
-Voor een andere vraag, kunt u uit aan [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/?support-solution=Campaign#support) bereiken.
+Voor een andere vraag, kunt u uit aan [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/?support-solution=Campaign#support) bereiken.
 
 ## Infrastructuureffecten
 
@@ -51,7 +51,7 @@ De wereldwijde gevolgen voor de database en de infrastructuur worden hieronder v
 
 * **wat is het plan om om het even welke post migratiekwesties te behandelen?**
 
-  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. Nochtans in het geval van om het even welke kwesties, [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal het belangrijkste punt van contact blijven. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
+  Er zouden uitgebreide tests worden uitgevoerd voordat de productiesystemen migreren. Nochtans in het geval van om het even welke kwesties, [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal het belangrijkste punt van contact blijven. Adobe heeft een team van deskundigen ingesteld om indien nodig geavanceerde ondersteuning te bieden.
 
 ## Afzetbaarheidseffecten
 
@@ -63,7 +63,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
   Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen in de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-  [ leer meer ](#config) over IP op de lijst van gewenste personen.
+  [&#x200B; leer meer &#x200B;](#config) over IP op de lijst van gewenste personen.
 
 * **hoe wij haven zullen behandelen die aan de lijst van gewenste personen voor toegang wordt toegevoegd SFTP/FTP?**
 
@@ -73,7 +73,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
   Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-  [ leer meer ](#config) over IP op de lijst van gewenste personen.
+  [&#x200B; leer meer &#x200B;](#config) over IP op de lijst van gewenste personen.
 
 * **hoe subdomain delegatie zal worden behandeld?**
 
@@ -97,7 +97,7 @@ De wereldwijde gevolgen voor IP&#39;s, lijst van gewezen personen, subdomeinen e
 
   Ten eerste zal de leverbaarheid van Adobe de leverbaarheidsstatus van het platform beoordelen en een plan voor de overstap naar de nieuwe IP&#39;s aanbevelen
 
-  Na de migratie is geen opwarmen vereist. Het zou één of andere uitzondering kunnen zijn en, in zulk geval, [ de Zorg van de Klant van Adobe ](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal uit aan klanten bereiken.
+  Na de migratie is geen opwarmen vereist. Het zou één of andere uitzondering kunnen zijn en, in zulk geval, [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://experienceleague.adobe.com/?support-solution=Campaign#support) zal uit aan klanten bereiken.
 
   Het is echter de bedoeling om deze operatie transparant te maken voor het bedrijf, in tegenstelling tot de eerste oprijplaat die tijdens het liveproces wordt uitgevoerd.
 
@@ -159,7 +159,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
   Het IP-adres van de Adobe-servers wordt gewijzigd. Zo kunnen de klanten die nieuwe IP adressen aan de lijst van gewenste personen in hun systeem moeten toevoegen.
 
-  [ leer meer ](#config) over IP op lijst van gewenste personen.
+  [&#x200B; leer meer &#x200B;](#config) over IP op lijst van gewenste personen.
 
 * **zullen wij ervoor zorgen dat alle parameters van de het geheugenconfiguratie van JavaScript correct na de migratie worden geplaatst?**
 
@@ -173,7 +173,7 @@ De wereldwijde gevolgen voor configuratie, connectiviteit met andere systemen en
 
   Het kan veranderen afhankelijk van nieuwe serverplaats. Nochtans zal de klant hun huidige timezone kunnen behouden.
 
-  Leer meer over timezone beheer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
+  Leer meer over timezone beheer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Beveiliging en machtigingen

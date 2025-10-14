@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Deze sectie detailleert de installatie en de configuratie van een mid-sourcing server, evenals de plaatsing van een instantie die derden toelaat om berichten op **midsourcing** wijze te verzenden.
 
-De &quot;midsourcing&quot;architectuur wordt voorgesteld in [ midsourcing plaatsing ](../../installation/using/mid-sourcing-deployment.md).
+De &quot;midsourcing&quot;architectuur wordt voorgesteld in [&#x200B; midsourcing plaatsing &#x200B;](../../installation/using/mid-sourcing-deployment.md).
 
 Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevolgd als voor de installatie van een server op de normale manier (zie de standaardconfiguratie). Het is een onafhankelijke instantie met zijn eigen gegevensbestand dat kan worden gebruikt om leveringen in werking te stellen. Eenvoudig gezet, bevat het een extra configuratie om verre instanties toe te staan leveringen door het in midsourcingswijze uitvoeren.
 
 >[!CAUTION]
 >
->Zodra de midsourcingserver opstelling is geweest en de [ synchronisatiewerkschema&#39;s ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
+>Zodra de midsourcingserver opstelling is geweest en de [&#x200B; synchronisatiewerkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
 
 ## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 
@@ -41,7 +41,7 @@ In de volgende procedure wordt een configuratie beschreven met behulp van één 
 
 ### De toepassingsserver installeren en configureren voor implementatie van midsourcing {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
-De installatieprocedure is identiek aan die van standalone instantie. Verwijs naar [ het Installeren en het vormen (enige machine) ](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+De installatieprocedure is identiek aan die van standalone instantie. Verwijs naar [&#x200B; het Installeren en het vormen (enige machine) &#x200B;](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 U moet echter het volgende toepassen:
 
@@ -98,7 +98,7 @@ Van de cliëntconsole, bepaal de plaats van **E-mail die het gebruiken van mid-s
 
    Plaats het wachtwoord van de voorleggingsrekening: In **/Midden-sourcing/Access Management/Operators/** omslag, wordt de **middenti** exploitant gebruikt door de verre instantie voor voorlegging op midsourcingwijze. U moet een wachtwoord instellen voor deze operator en dit aan de beheerder van het verzendingsexemplaar geven.
 
-   De **optie van het 0} Midden-sourcingsplatform {leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
+   De **optie van het 0&rbrace; Midden-sourcingsplatform &lbrace;leidt tot de standaardomslagen voor het opslaan van de voorgelegde leveringen en de standaardexploitant die de voorlegging uitvoeren.**
 
 ## Multiplexing van de server voor midsourcing {#multiplexing-the-mid-sourcing-server}
 
@@ -125,7 +125,7 @@ Het is mogelijk dat een mid-sourcing-instantie wordt gedeeld door meerdere verze
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Start de module Web opnieuw met de volgende opdracht: ** web**.
+1. Start de module Web opnieuw met de volgende opdracht: **&#x200B; web**.
 
 U moet de instelling voor de server voor midsourcing wijzigen in het bestand serverConf.xml. De volgende lijn moet aan de &quot;Beheer van affiniteiten met IP adressen&quot;sectie, onder de bestaande lijn worden toegevoegd:
 
@@ -139,9 +139,9 @@ Het kenmerk &#39;@name&#39; moet de volgende regels in acht nemen:
 
 &#39;marketing_account_operator_name&#39; heeft betrekking op de interne naam van de mid-sourcingrekening die in het mid-sourcingexemplaar is gedeclareerd.
 
-&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
+&#39;affinity_name&#39; heeft betrekking op de willekeurige naam die aan de affiniteit is gegeven. Deze naam moet uniek zijn. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` . Het doel is een groep openbare IP adressen te verklaren.
 
-&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]``[A-Z]``[0-9]` .
+&#39;affinity_group&#39; heeft betrekking op de subaffiniteit die is opgegeven in de doeltoewijzing die in elk van de leveringen wordt gebruikt. Het laatste deel, inclusief de &#39;.&#39; wordt genegeerd als er geen subaffiniteit is. Geautoriseerde tekens zijn `[a-z]` `[A-Z]` `[0-9]` .
 
 U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te houden.
 

@@ -29,7 +29,7 @@ Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gew
 
 ![](assets/offer_delivery_009.png)
 
-Leer meer over directe postleveringen [ in deze sectie ](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+Leer meer over directe postleveringen [&#x200B; in deze sectie &#x200B;](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
 ### Belangrijkste stappen voor het invoegen van een aanbieding in een levering {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ Voer de volgende stappen uit om voorstellen voor aanbiedingen in te voegen in ee
 
    ![](assets/offer_delivery_005.png)
 
-1. Selecteer indien nodig de optie **[!UICONTROL Exclude non-eligible recipients]** . Voor meer op dit, verwijs naar [ Parameters voor het roepen van aanbiedingsmotor ](#parameters-for-calling-offer-engine).
+1. Selecteer indien nodig de optie **[!UICONTROL Exclude non-eligible recipients]** . Voor meer op dit, verwijs naar [&#x200B; Parameters voor het roepen van aanbiedingsmotor &#x200B;](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Selecteer indien nodig de optie **[!UICONTROL Do not display anything if no offers are selected]** . Voor meer op dit, verwijs naar [ Parameters voor het roepen van aanbiedingsmotor ](#parameters-for-calling-offer-engine).
+1. Selecteer indien nodig de optie **[!UICONTROL Do not display anything if no offers are selected]** . Voor meer op dit, verwijs naar [&#x200B; Parameters voor het roepen van aanbiedingsmotor &#x200B;](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -90,7 +90,7 @@ De levering kan worden gepersonaliseerd met de velden van de aanbieding of, in h
 
 Je kunt ook voorstellen in een levering presenteren met een leveringsoverzicht.
 
-Voor meer informatie over leveringsoverzichten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
+Voor meer informatie over leveringsoverzichten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Maak een nieuwe campagne of open een bestaande campagne.
 1. Open de leveringscontouren via het tabblad **[!UICONTROL Edit]** > **[!UICONTROL Documents]** van de campagne.
@@ -111,7 +111,7 @@ Voor meer informatie over leveringsoverzichten, verwijs naar de [ documentatie v
 
    ![](assets/int_compo_offre3.png)
 
-1. Voeg de voorstellen in het leveringslichaam toe gebruikend de verpersoonlijkingsgebieden (voor meer op dit, verwijs naar het [ Opnemen van een aanbiedingsvoorstel in een levering ](#inserting-an-offer-proposition-into-a-delivery) sectie), of in het geval van een directe postlevering, door het formaat van het extractiedossier uit te geven.
+1. Voeg de voorstellen in het leveringslichaam toe gebruikend de verpersoonlijkingsgebieden (voor meer op dit, verwijs naar het [&#x200B; Opnemen van een aanbiedingsvoorstel in een levering &#x200B;](#inserting-an-offer-proposition-into-a-delivery) sectie), of in het geval van een directe postlevering, door het formaat van het extractiedossier uit te geven.
 
    De voorstellen zullen van de aanbiedingen worden geselecteerd waarnaar in het leveringsoverzicht wordt verwezen.
 

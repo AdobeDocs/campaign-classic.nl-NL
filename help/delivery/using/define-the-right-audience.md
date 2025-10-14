@@ -19,7 +19,7 @@ ht-degree: 3%
 
 De doelgroep is belangrijk: maak uw lijsten zorgvuldig, test uw e-mails op populaire e-mailclients en mobiele apparaten en controleer of uw e-maillijsten up-to-date zijn (zonder onbekende of verouderde adressen). U kunt ook proefdrukken verzenden waarmee u een volledige validatiecyclus kunt instellen.
 
-Leer meer over doelpopulaties in deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Leer meer over doelpopulaties in deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Doelgroep {#target-the-right-audience}
 
@@ -33,26 +33,26 @@ In Campaign Classic, door gebrek, richten de leveringsmalplaatjes **Ontvangers**
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
-Deze afbeeldingen worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
+Deze afbeeldingen worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
 
 U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.
 
 ## Externe ontvangers {#external-recipients}
 
-U kunt leveren aan ontvangers die in een extern dossier eerder dan opgeslagen in het gegevensbestand worden opgeslagen. Leer meer in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+U kunt leveren aan ontvangers die in een extern dossier eerder dan opgeslagen in het gegevensbestand worden opgeslagen. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
 
 ## Verzenden naar uw abonnees {#send-to-subscribers}
 
-Om berichten naar de abonnees van een nieuwsbrief te verzenden, kunt u de abonnees aan de overeenkomstige informatiedienst direct richten. Leer meer [ in deze sectie ](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Om berichten naar de abonnees van een nieuwsbrief te verzenden, kunt u de abonnees aan de overeenkomstige informatiedienst direct richten. Leer meer [&#x200B; in deze sectie &#x200B;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
 ## Ontvangers en zaadadressen testen {#test-recipients-seed-addresses}
 
 Om uw levering te testen, gebruik proef alvorens naar het belangrijkste doel te verzenden.
 
-Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het bepalen van de proefontvangers worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
+Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het bepalen van de proefontvangers worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
-De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden voorgesteld [ in deze sectie ](about-seed-addresses.md).
+De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden voorgesteld [&#x200B; in deze sectie &#x200B;](about-seed-addresses.md).
 
 ## Gedupliceerde adressen {#deduplicate-addresses}
 
@@ -66,11 +66,11 @@ Deduplicating adressen beschermt uw verzendende reputatie en verzekert goed quar
 
 **Verwante onderwerpen:**
 
-* [ de activiteit van de Deduplicatie ](../../workflow/using/deduplication.md).
+* [&#x200B; de activiteit van de Deduplicatie &#x200B;](../../workflow/using/deduplication.md).
 * [Hoofdlettergebruik: samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
 
 ## E-mailadressen indexeren {#index-addresses}
 
 Om de prestaties van de SQL vragen te optimaliseren die in de toepassing worden gebruikt, kan een index van het belangrijkste element van het gegevensschema worden verklaard.
 
-De stappen voor het toevoegen van een index aan het e-mailadres worden voorgesteld [ in deze sectie ](../../configuration/using/database-mapping.md#indexed-fields).
+De stappen voor het toevoegen van een index aan het e-mailadres worden voorgesteld [&#x200B; in deze sectie &#x200B;](../../configuration/using/database-mapping.md#indexed-fields).

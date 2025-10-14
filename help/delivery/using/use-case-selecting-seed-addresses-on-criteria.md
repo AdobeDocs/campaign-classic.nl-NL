@@ -30,7 +30,7 @@ Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 
 ## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het creëren van een levering zijn gedetailleerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+De stappen voor het creëren van een levering zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt en de ontvangers geselecteerd.
 
@@ -42,7 +42,7 @@ Om tot een gemeenschappelijke waarde zoals in ons voorbeeld (het Aankopen afdeli
 
 ### Het gegevensschema uitbreiden {#extending-the-data-schema}
 
-Voor verdere details op schemauitbreidingen, verwijs naar [ deze sectie ](../../configuration/using/data-schemas.md).
+Voor verdere details op schemauitbreidingen, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/data-schemas.md).
 
 1. Klik in het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** op het pictogram **[!UICONTROL New]** .
 1. Selecteer in het **[!UICONTROL Creation of a data schema]** -venster de optie **[!UICONTROL Extension of a schema]** en klik op **[!UICONTROL Next]** .
@@ -93,7 +93,7 @@ Voor verdere details op schemauitbreidingen, verwijs naar [ deze sectie ](../../
 
    Nadat de update is voltooid, kunt u de assistent sluiten.
 
-1. Verbinding verbreken en vervolgens opnieuw verbinding maken met Adobe Campaign. De veranderingen in het schema van de zaadadresgegevens worden aangebracht die zijn nu effectief. Als u deze wilt weergeven vanuit het scherm met het zaadadres, moet u de gekoppelde **[!UICONTROL Input form]** bijwerken. Verwijs naar de [ Update de sectie van de inputvorm ](#updating-the-input-form).
+1. Verbinding verbreken en vervolgens opnieuw verbinding maken met Adobe Campaign. De veranderingen in het schema van de zaadadresgegevens worden aangebracht die zijn nu effectief. Als u deze wilt weergeven vanuit het scherm met het zaadadres, moet u de gekoppelde **[!UICONTROL Input form]** bijwerken. Verwijs naar de [&#x200B; Update de sectie van de inputvorm &#x200B;](#updating-the-input-form).
 
 #### Het gegevensschema uitbreiden vanuit een gekoppelde tabel {#extending-the-data-schema-from-a-linked-table}
 
@@ -129,7 +129,7 @@ Zij geven aan:
 
 De gebruiker kan dan uit **stap 5** van de sectie volgen, en **[!UICONTROL Input form]** van de zaadadressen bijwerken.
 
-Verwijs naar de [ Update de sectie van de inputvorm ](#updating-the-input-form).
+Verwijs naar de [&#x200B; Update de sectie van de inputvorm &#x200B;](#updating-the-input-form).
 
 #### Het invoerformulier bijwerken {#updating-the-input-form}
 

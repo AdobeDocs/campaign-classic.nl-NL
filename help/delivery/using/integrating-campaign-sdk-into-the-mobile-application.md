@@ -18,11 +18,11 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Adobe raadt u ten zeerste aan de Adobe Experience Platform Mobile SDK te gebruiken door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile-SDK maakt de Experience Cloud-oplossingen en -services van Adobe in uw mobiele apps mogelijk. De configuratie van SDK&#39;s wordt beheerd via de gebruikersinterface voor dataverzameling voor een flexibele configuratie en uitbreidbare integraties op basis van regels. [ leer meer in de documentatie van Adobe Developer ](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Adobe raadt u ten zeerste aan de Adobe Experience Platform Mobile SDK te gebruiken door de Adobe Campaign-extensie te configureren in de gebruikersinterface voor gegevensverzameling. De Adobe Experience Platform Mobile-SDK maakt de Experience Cloud-oplossingen en -services van Adobe in uw mobiele apps mogelijk. De configuratie van SDK&#39;s wordt beheerd via de gebruikersinterface voor dataverzameling voor een flexibele configuratie en uitbreidbare integraties op basis van regels. [&#x200B; leer meer in de documentatie van Adobe Developer &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Om Campagne SDK (eerder genoemd geworden Neolane SDK) te krijgen, contacteer [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+Om Campagne SDK (eerder genoemd geworden Neolane SDK) te krijgen, contacteer [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
-Om meer op de verschillende gesteunde versies van Android en van iOS te leren, verwijs naar de [ matrijs van de Verenigbaarheid ](../../rn/using/compatibility-matrix.md#MobileSDK).
+Om meer op de verschillende gesteunde versies van Android en van iOS te leren, verwijs naar de [&#x200B; matrijs van de Verenigbaarheid &#x200B;](../../rn/using/compatibility-matrix.md#MobileSDK).
 
 U vindt de integratiestappen voor Campagne SDK hieronder.
 
@@ -64,7 +64,7 @@ Om Campagne SDK in de mobiele toepassing te integreren, moet de functionele behe
 
   >[!NOTE]
   >
-  >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+  >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **het volgen URL van A**: die het adres van de het volgen van Adobe Campaign server aanpast.
 * **A marketing URL**: om de inzameling van abonnementen toe te laten.
@@ -542,7 +542,7 @@ Om **registerDeviceStatus** afgevaardigde uit te voeren, volg deze stappen:
 
 +++**Variabelen**
 
-Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten in de mobiele toepassingscode en in de console van Adobe Campaign, in het **[!UICONTROL Variables]** lusje in de specifieke mobiele toepassing (zie [ Vormend een mobiele toepassing in Adobe Campaign ](configuring-the-mobile-application.md)) worden bepaald. Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
+Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten in de mobiele toepassingscode en in de console van Adobe Campaign, in het **[!UICONTROL Variables]** lusje in de specifieke mobiele toepassing (zie [&#x200B; Vormend een mobiele toepassing in Adobe Campaign &#x200B;](configuring-the-mobile-application.md)) worden bepaald. Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
 * **in Android**:
 
@@ -634,7 +634,7 @@ Op dit niveau moet u:
 
 * Wijs de extensie van de inhoud toe aan de categorie die door Adobe Campaign is verzonden:
 
-  Als u uw mobiele toepassing een beeld wilt tonen, kunt u de categoriewaarde aan &quot;beeld&quot;in Adobe Campaign en in uw mobiele toepassing plaatsen, creeert u een berichtuitbreiding met de **parameter 0} UNNotificationExtensionCategory die aan &quot;beeld&quot;wordt geplaatst.** Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
+  Als u uw mobiele toepassing een beeld wilt tonen, kunt u de categoriewaarde aan &quot;beeld&quot;in Adobe Campaign en in uw mobiele toepassing plaatsen, creeert u een berichtuitbreiding met de **parameter 0&rbrace; UNNotificationExtensionCategory die aan &quot;beeld&quot;wordt geplaatst.** Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
 
 * De lay-out voor uw melding definiëren
 

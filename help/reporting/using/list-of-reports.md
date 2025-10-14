@@ -20,7 +20,7 @@ ht-degree: 2%
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar [ deze sectie ](../../reporting/using/delivery-reports.md).
+Voor meer op de inhoud van deze rapporten, verwijs naar [&#x200B; deze sectie &#x200B;](../../reporting/using/delivery-reports.md).
 
 <table> 
  <tbody> 
@@ -123,7 +123,7 @@ De rapporten over campagnes betreffen de gegevens in de **nms:operation** lijst.
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 
@@ -314,7 +314,7 @@ De rapporten over de toepassingen van het Web betreffen de gegevens in de **nms:
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar [ deze sectie ](../../web/using/about-web-applications.md).
+Voor meer op de inhoud van deze rapporten, verwijs naar [&#x200B; deze sectie &#x200B;](../../web/using/about-web-applications.md).
 
 <table> 
  <tbody> 

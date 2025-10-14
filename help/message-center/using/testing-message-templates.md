@@ -18,7 +18,7 @@ ht-degree: 2%
 
 
 
-Zodra uw [ berichtmalplaatje ](../../message-center/using/creating-the-message-template.md) klaar is, volg de stappen hieronder aan voorproef en test het.
+Zodra uw [&#x200B; berichtmalplaatje &#x200B;](../../message-center/using/creating-the-message-template.md) klaar is, volg de stappen hieronder aan voorproef en test het.
 
 ## Seedadressen in transactionele berichten beheren {#managing-seed-addresses-in-transactional-messages}
 
@@ -42,7 +42,7 @@ Voer de onderstaande stappen uit om zaadadressen te maken in een transactiemeldi
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. De testgegevens van het tussenvoegsel (verwijs naar [ gegevens van Personalization ](#personalization-data)).
+1. De testgegevens van het tussenvoegsel (verwijs naar [&#x200B; gegevens van Personalization &#x200B;](#personalization-data)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
@@ -56,17 +56,17 @@ Voer de onderstaande stappen uit om zaadadressen te maken in een transactiemeldi
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking tonen. Verwijs naar [ Transactionele berichtvoorproef ](#transactional-message-preview).
+Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking tonen. Verwijs naar [&#x200B; Transactionele berichtvoorproef &#x200B;](#transactional-message-preview).
 
 ## Personalisatiegegevens {#personalization-data}
 
-Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Voor meer op dit, zie [ Inbox teruggevend ](../../delivery/using/inbox-rendering.md).
+Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Voor meer op dit, zie [&#x200B; Inbox teruggevend &#x200B;](../../delivery/using/inbox-rendering.md).
 
 Het doel van deze gegevens is om uw berichten vóór hun definitieve levering te testen. Deze berichten komen niet overeen met de werkelijk te verwerken gegevens. De XML-structuur moet echter gelijk zijn aan die van de gebeurtenis die in de uitvoeringsinstantie is opgeslagen, zoals hieronder wordt getoond:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpersoonlijkingsmarkeringen (voor meer op dit, zie [ de berichtinhoud ](../../message-center/using/creating-the-message-template.md#creating-message-content) creëren).
+Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpersoonlijkingsmarkeringen (voor meer op dit, zie [&#x200B; de berichtinhoud &#x200B;](../../message-center/using/creating-the-message-template.md#creating-message-content) creëren).
 
 1. Selecteer het transactiemalplaatje van het bericht.
 
@@ -94,16 +94,16 @@ Zodra u één of meerdere zaadadressen en het berichtlichaam hebt gecreeerd, kun
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Voor meer op dit, zie [ Inbox teruggevend ](../../delivery/using/inbox-rendering.md).
+Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Voor meer op dit, zie [&#x200B; Inbox teruggevend &#x200B;](../../delivery/using/inbox-rendering.md).
 
 ## Een proef verzenden {#sending-a-proof}
 
 U kunt berichtlevering testen door een bewijs naar een eerder gecreeerd zaadadres te verzenden.
 
-Bij het verzenden van een bewijs wordt hetzelfde proces gebruikt als bij een normale levering. Zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Met transactiemeldingen moet u echter de volgende bewerkingen vooraf uitvoeren:
+Bij het verzenden van een bewijs wordt hetzelfde proces gebruikt als bij een normale levering. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Met transactiemeldingen moet u echter de volgende bewerkingen vooraf uitvoeren:
 
-* Creeer één of meerdere [ zaadadressen ](#managing-seed-addresses-in-transactional-messages) met [ verpersoonlijkingsgegevens ](#personalization-data).
-* [ creeer de berichtinhoud ](../../message-center/using/creating-the-message-template.md#creating-message-content).
+* Creeer één of meerdere [&#x200B; zaadadressen &#x200B;](#managing-seed-addresses-in-transactional-messages) met [&#x200B; verpersoonlijkingsgegevens &#x200B;](#personalization-data).
+* [&#x200B; creeer de berichtinhoud &#x200B;](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
 Het bewijs verzenden:
 
@@ -117,8 +117,8 @@ Het bewijs verzenden:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-In elke sjabloon kunt u proefdrukken openen via het tabblad **[!UICONTROL Audit]** . Voor meer details op dit, zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+In elke sjabloon kunt u proefdrukken openen via het tabblad **[!UICONTROL Audit]** . Voor meer details op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Uw berichtmalplaatje is nu klaar om [ worden gepubliceerd ](../../message-center/using/publishing-message-templates.md).
+Uw berichtmalplaatje is nu klaar om [&#x200B; worden gepubliceerd &#x200B;](../../message-center/using/publishing-message-templates.md).

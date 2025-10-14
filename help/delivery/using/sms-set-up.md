@@ -31,10 +31,10 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 >[!IMPORTANT]
 >
->Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Verwijs naar de [ het oplossen van problemenpagina van SMS ](troubleshooting-sms.md#external-account-conflict).
+>Het gebruik van hetzelfde account en wachtwoord voor meerdere externe SMS-accounts kan leiden tot conflicten en overlapping tussen de accounts. Verwijs naar de [&#x200B; het oplossen van problemenpagina van SMS &#x200B;](troubleshooting-sms.md#external-account-conflict).
 
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
-Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [ pagina ](sms-protocol.md).
+Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [&#x200B; pagina &#x200B;](sms-protocol.md).
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -50,7 +50,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!CAUTION]
    >
-   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. We raden u aan de **[!UICONTROL Extended generic SMPP]** -connector te gebruiken. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar deze [ pagina ](unsupported-connector-migration.md).
+   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. We raden u aan de **[!UICONTROL Extended generic SMPP]** -connector te gebruiken. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar deze [&#x200B; pagina &#x200B;](unsupported-connector-migration.md).
 
 1. Met de optie **[!UICONTROL Enable verbose SMPP traces in the log file]** kunt u al het SMPP-verkeer in logbestanden dumpen. Deze optie moet zijn ingeschakeld om problemen met de connector op te lossen en om vergelijkingen te maken met het verkeer dat door de provider wordt waargenomen.
 
@@ -349,11 +349,11 @@ U kunt dit voorkomen door een van de volgende oplossingen toe te passen, afhanke
 
   ![](assets/extended_smpp_system-type.png)
 
-De stappen voor vestiging een externe rekening die de Uitgebreide generische schakelaar gebruiken SMPP worden gedetailleerd in [ creeer een externe rekening SMPP ](#creating-an-smpp-external-account) sectie.
+De stappen voor vestiging een externe rekening die de Uitgebreide generische schakelaar gebruiken SMPP worden gedetailleerd in [&#x200B; creeer een externe rekening SMPP &#x200B;](#creating-an-smpp-external-account) sectie.
 
 ## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen waarin de kanaalschakelaar van verwijzingen wordt voorzien.
 

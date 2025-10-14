@@ -82,7 +82,7 @@ Als u een hypothese over een bestaande levering wilt maken, past u het volgende 
 
 U kunt in een marketingcampagne naar een hypothese verwijzen voordat deze wordt gestart. In dit geval wordt de hypothese automatisch gestart zodra de levering is verzonden, op basis van de uitvoeringsinstellingen die in de hypothesesjabloon zijn gedefinieerd. Als u een hypothese wilt maken in een levering, past u het volgende proces toe:
 
-1. Afhankelijk van uw behoeften, kunt u één of meerdere **[!UICONTROL Delivery]** typemalplaatjes tot stand brengen, zoals die in [ worden beschreven deze sectie ](hypothesis-templates.md#creating-a-hypothesis-model)
+1. Afhankelijk van uw behoeften, kunt u één of meerdere **[!UICONTROL Delivery]** typemalplaatjes tot stand brengen, zoals die in [&#x200B; worden beschreven deze sectie &#x200B;](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Maak een marketingcampagne en maak doelgerichte workflows.
 1. Klik in het leveringsvenster op het pictogram **[!UICONTROL Delivery measurement]** .
 1. Selecteer het hypothesemalplaatje (de vraag die in het model wordt gevormd wordt getoond in het hypothesevenster).
@@ -110,13 +110,13 @@ U kunt rechtstreeks verwijzen naar een hypothese op campagnereniveau. In dit gev
 
 De resultaten van de hypothese kunnen worden weergegeven op de tabbladen **[!UICONTROL General]** en **[!UICONTROL Reactions]** . [Meer informatie](hypothesis-tracking.md)
 
-Voor meer informatie, kunt u ook naar [ verwijzen deze steekproef ](#example--creating-a-hypothesis-linked-to-a-delivery).
+Voor meer informatie, kunt u ook naar [&#x200B; verwijzen deze steekproef &#x200B;](#example--creating-a-hypothesis-linked-to-a-delivery).
 
 ## Een hypothese op een aanbod maken {#creating-a-hypothesis-on-an-offer}
 
 Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met het creëren van een hypothese over de levering tijdens de vlucht. De hypothese kan worden uitgevoerd zolang het aanbod actief is. De berekeningsperiode is gebaseerd op de datum van het voorstel. Wanneer de hypothese u een ontvanger aan een aankoop laat verbinden, kan de status van het aanbiedingsvoorstel waarschijnlijk worden goedgekeurd automatisch worden veranderd. [Meer informatie](hypothesis-templates.md#transactions)
 
-1. Creeer één of meerdere **[!UICONTROL Offer]** typemodellen zoals die in [ worden beschreven deze sectie ](hypothesis-templates.md#creating-a-hypothesis-model).
+1. Creeer één of meerdere **[!UICONTROL Offer]** typemodellen zoals die in [&#x200B; worden beschreven deze sectie &#x200B;](hypothesis-templates.md#creating-a-hypothesis-model).
 1. Ga naar het knooppunt **[!UICONTROL Campaign management > Measurement hypotheses]** .
 1. Maak een hypothese van het type **[!UICONTROL Offers]** door het eerder gemaakte model te selecteren.
 
@@ -138,7 +138,7 @@ Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met
 
    ![](assets/response_hypothesis_instance_offer_007.png)
 
-   Als de **[!UICONTROL Update offer proposition status]** optie in het hypothesemalplaatje werd toegelaten, wordt het statuut van de aanbiedingsvoorstel automatisch veranderd, daardoor verstrekkend terugkoppelt op het effect van de campagne (voor meer op dit, verwijs naar [ Transacties ](hypothesis-templates.md#transactions)).
+   Als de **[!UICONTROL Update offer proposition status]** optie in het hypothesemalplaatje werd toegelaten, wordt het statuut van de aanbiedingsvoorstel automatisch veranderd, daardoor verstrekkend terugkoppelt op het effect van de campagne (voor meer op dit, verwijs naar [&#x200B; Transacties &#x200B;](hypothesis-templates.md#transactions)).
 
 ## Voorbeeld: een hypothese maken die gekoppeld is aan een levering {#example--creating-a-hypothesis-linked-to-a-delivery}
 
@@ -146,7 +146,7 @@ In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een lever
 
 Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt een hypothese gemaakt voor een specifiek artikel van de aankooptabel.
 
-1. Maak een campagne en een levering. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Maak een campagne en een levering. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
    In ons voorbeeld, zullen wij een directe posttype levering gebruiken.
 
@@ -178,7 +178,7 @@ Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt ee
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Start de doelworkflow en voer de vereiste controles uit totdat de campagne is voltooid. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
+1. Start de doelworkflow en voer de vereiste controles uit totdat de campagne is voltooid. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

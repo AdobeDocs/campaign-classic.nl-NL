@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Met Adobe Campaign kunt u uw leveringen personaliseren om berichten te verzenden die overeenkomen met het profiel en de interesses van elke ontvanger.
 
-Personalization helpt je om je berichten relevanter en boeiender te maken. U kunt de gegevens van de ontvanger gebruiken om inhoud aan te passen, dynamische gebieden toe te voegen, of verschillende informatie te tonen die op voorwaarden wordt gebaseerd. Leer hoe te opstelling en gebruiks verpersoonlijkingseigenschappen in uw leveringen in [ Adobe Campaign v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Personalization helpt je om je berichten relevanter en boeiender te maken. U kunt de gegevens van de ontvanger gebruiken om inhoud aan te passen, dynamische gebieden toe te voegen, of verschillende informatie te tonen die op voorwaarden wordt gebaseerd. Leer hoe te opstelling en gebruiks verpersoonlijkingseigenschappen in uw leveringen in [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 In het kader van het promotieinitiatief Campaign v8 is de documentatie van Campaign Classic gereorganiseerd. Algemene functies zijn nu alleen beschikbaar in de documentatieset van Campagne v8.
 
@@ -25,7 +25,7 @@ In het kader van het promotieinitiatief Campaign v8 is de documentatie van Campa
 
 >[!TAB  de verpersoonlijkingsdocumentatie van de Inhoud ]
 
-Om meer over inhoudsprijdmaking te leren, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Om meer over inhoudsprijdmaking te leren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 
 [![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
@@ -35,10 +35,10 @@ Om meer over inhoudsprijdmaking te leren, verwijs naar de [ documentatie van de 
 
 Leer de belangrijkste stappen met betrekking tot voorwaardelijke inhoud en personalisatie in de documentatie van Campagne v8:
 
-* [ gegevens van Personalization ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: Leer hoe te om verschillende gegevensbronnen voor verpersoonlijking te gebruiken om uw leveringen aan te passen.
-* [ de gebieden van de Personalisatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: Leer hoe te om verpersoonlijkingsgebieden op te nemen en te gebruiken zodat elke ontvanger hun eigen gegevens in het onderwerp of het lichaam van uw bericht ziet.
-* [ de blokken van de Personalisatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}: Leer hoe te om verpersoonlijkingsblokken te gebruiken om dynamische, voorwaardelijke inhoud in uw berichten op te nemen die op ontvankelijke gegevens worden gebaseerd.
-* [ Voorwaardelijke inhoud ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: Leer hoe te om voorwaardelijke inhoud op te nemen die op ontvankelijke gebiedswaarden wordt gebaseerd.
+* [&#x200B; gegevens van Personalization &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: Leer hoe te om verschillende gegevensbronnen voor verpersoonlijking te gebruiken om uw leveringen aan te passen.
+* [&#x200B; de gebieden van de Personalisatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: Leer hoe te om verpersoonlijkingsgebieden op te nemen en te gebruiken zodat elke ontvanger hun eigen gegevens in het onderwerp of het lichaam van uw bericht ziet.
+* [&#x200B; de blokken van de Personalisatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}: Leer hoe te om verpersoonlijkingsblokken te gebruiken om dynamische, voorwaardelijke inhoud in uw berichten op te nemen die op ontvankelijke gegevens worden gebaseerd.
+* [&#x200B; Voorwaardelijke inhoud &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: Leer hoe te om voorwaardelijke inhoud op te nemen die op ontvankelijke gebiedswaarden wordt gebaseerd.
 
 >[!TAB  EXXXX ]
 

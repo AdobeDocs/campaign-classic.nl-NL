@@ -23,7 +23,7 @@ Ga naar **[!UICONTROL Admin > Configuration > Data schemas]** om de beschrijving
 
 >[!NOTE]
 >
->De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Voor meer op de schema&#39;s van Adobe Campaign, lees uit [ deze sectie ](../../configuration/using/about-schema-reference.md).
+>De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Voor meer op de schema&#39;s van Adobe Campaign, lees uit [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-reference.md).
 
 ## Beschrijving van de belangrijkste tabellen {#description-main-tables}
 
@@ -49,17 +49,17 @@ Het is de standaardlijst die voor de **ontvangers van leveringen** wordt gebruik
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
 * iBlackList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, anders 0).
 
-Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Voor meer op dit, zie [ XtkFolder ](#XtkFolder).
+Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Voor meer op dit, zie [&#x200B; XtkFolder &#x200B;](#XtkFolder).
 
 Het veld sCountryCode is de 3166-1 Alpha 2 ISO-code (2 tekens) van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
 
-Voor meer op de Ontvankelijke lijst, zie [ deze sectie ](../../configuration/using/about-data-model.md#default-recipient-table).
+Voor meer op de Ontvankelijke lijst, zie [&#x200B; deze sectie &#x200B;](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
 Deze lijst past het **nms:group** schema aan.
 
-Het laat u toe om **statische groepen ontvangers** tot stand te brengen. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Voor meer op dit, zie [ XtkFolder ](#XtkFolder)).
+Het laat u toe om **statische groepen ontvangers** tot stand te brengen. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Voor meer op dit, zie [&#x200B; XtkFolder &#x200B;](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -73,7 +73,7 @@ In Adobe Campaign kunt u abonnementen op informatieservices (onderwerpen) maken 
 
 De diensten zijn entiteiten die aan groepen (statische ontvankelijke groeperingen) gelijkaardig zijn, behalve dat zij meer informatie verspreiden en gemakkelijke beheer van abonnementen en abonnementen via vormen toelaten.
 
-Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. Voor meer op dit, zie [ XtkFolder ](#XtkFolder)). Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
+Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. Voor meer op dit, zie [&#x200B; XtkFolder &#x200B;](#XtkFolder)). Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -93,11 +93,11 @@ Deze lijst past het **nms:delivery** schema aan.
 
 Elk verslag in deze lijst vertegenwoordigt a **leveringsactie** of a **leveringsmalplaatje**. Het bevat alle parameters die nodig zijn voor het uitvoeren van leveringen (doel, inhoud, enz.). Logboeken voor levering (uitzending) (NmsBroadLog) en bijbehorende URL&#39;s voor tracering (NmsTrackingUrl) worden tijdens de analysefase gemaakt (zie hieronder voor meer informatie over beide tabellen).
 
-Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. Voor meer op dit, zie [ XtkFolder ](#XtkFolder)).
+Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. Voor meer op dit, zie [&#x200B; XtkFolder &#x200B;](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
-Het bevat **alle omslagen in de boom** zichtbaar in het **3} lusje van de Navigatie {van de console.**
+Het bevat **alle omslagen in de boom** zichtbaar in het **3&rbrace; lusje van de Navigatie &lbrace;van de console.**
 
 De mappen worden getypt: de waarde van het veld sModel geeft het type gegevens aan dat in de map kan worden opgenomen. Met dit veld kan de clientconsole de gegevens ook correct weergeven met de bijbehorende formulieren. De mogelijke waarden voor dit veld worden gedefinieerd in de navTree.
 
@@ -105,7 +105,7 @@ De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFu
 
 ## Aflevering en tekstspatiëring {#delivery-and-tracking}
 
-Deze reeks lijsten is verbonden met de **Levering** module, die toestaat om leveringen en uiteindelijke kwesties te controleren wanneer de berichten worden verzonden. Voor meer op dit, zie [ Leveringen van de Controle ](../../delivery/using/about-delivery-monitoring.md). Voor meer bij het volgen, zie [ het Volgen berichten ](../../delivery/using/about-message-tracking.md).
+Deze reeks lijsten is verbonden met de **Levering** module, die toestaat om leveringen en uiteindelijke kwesties te controleren wanneer de berichten worden verzonden. Voor meer op dit, zie [&#x200B; Leveringen van de Controle &#x200B;](../../delivery/using/about-delivery-monitoring.md). Voor meer bij het volgen, zie [&#x200B; het Volgen berichten &#x200B;](../../delivery/using/about-message-tracking.md).
 
 ![](assets/data-model_delivery.png)
 
@@ -113,7 +113,7 @@ Deze reeks lijsten is verbonden met de **Levering** module, die toestaat om leve
 
 ## Campagnebeheer {#campaign-management}
 
-Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Voor meer op dit, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,7 @@ Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toest
 
 ## Communicatieconsistentie {#communication-consistency}
 
-Deze reeks lijsten is verbonden met de **module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Deze reeks lijsten is verbonden met de **module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 
 ![](assets/data-model_typology.png)
@@ -142,7 +142,7 @@ Deze reeks lijsten is verbonden met de **module van de Optimalisering van de Cam
 
 ## Responsbeheer {#response-management}
 
-Deze reeks lijsten is verbonden met de **module van de Manager van de Reactie**, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Voor meer op dit, zie [ Ongeveer reactiemanager ](../../response/using/about-response-manager.md).
+Deze reeks lijsten is verbonden met de **module van de Manager van de Reactie**, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Voor meer op dit, zie [&#x200B; Ongeveer reactiemanager &#x200B;](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
@@ -202,7 +202,7 @@ Het bevat een overzicht van de reactie van een individu op een bepaalde hypothes
 
 ## Simulatie en levering {#simulation-and-delivery}
 
-Deze reeks lijsten is verbonden met de **Simulatie** module, die toestaat om de distributie van aanbiedingen te testen die tot een categorie of een milieu behoren alvorens uw voorstel naar ontvangers te verzenden. Voor meer op dit, zie [ Ongeveer aanbiedingen simulatie ](../../interaction/using/about-offers-simulation.md).
+Deze reeks lijsten is verbonden met de **Simulatie** module, die toestaat om de distributie van aanbiedingen te testen die tot een categorie of een milieu behoren alvorens uw voorstel naar ontvangers te verzenden. Voor meer op dit, zie [&#x200B; Ongeveer aanbiedingen simulatie &#x200B;](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
@@ -212,7 +212,7 @@ Deze reeks lijsten is verbonden met de **Simulatie** module, die toestaat om de 
 
 ## Interactiemodule {#interaction-module}
 
-Deze reeks lijsten is verbonden aan de **module van de Interactie**, die toestaat om in echt te antwoorden - tijd tijdens een interactie met een bepaald contact door hen één of verscheidene aangepaste aanbiedingen te maken. Voor meer op dit, zie [ Interactie en bied beheer ](../../interaction/using/interaction-and-offer-management.md) aan.
+Deze reeks lijsten is verbonden aan de **module van de Interactie**, die toestaat om in echt te antwoorden - tijd tijdens een interactie met een bepaald contact door hen één of verscheidene aangepaste aanbiedingen te maken. Voor meer op dit, zie [&#x200B; Interactie en bied beheer &#x200B;](../../interaction/using/interaction-and-offer-management.md) aan.
 
 * **NmsOffer**: Deze lijst past het **nms:offer** schema aan. Het bevat de definitie van elk marketingaanbod.
 * **NmsPropositionRcp**: Deze lijst past het **nms:propositionRcp** schema aan. Het bevat het kanaallogboek van marketingvoorstellen die naar elk individu worden verzonden. De record wordt gemaakt wanneer een voorstel wordt voorbereid of daadwerkelijk aan een individu wordt gedaan.
@@ -224,7 +224,7 @@ Deze reeks lijsten is verbonden aan de **module van de Interactie**, die toestaa
 
 ## Module Berichtencentrum {#message-center-module}
 
-De volgende reeks lijsten is verbonden met het **Transactionele overseinen** (Centrum van het Bericht) module, die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Voor meer op dit, zie [ Ongeveer transactioneel overseinen ](../../message-center/using/about-transactional-messaging.md).
+De volgende reeks lijsten is verbonden met het **Transactionele overseinen** (Centrum van het Bericht) module, die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Voor meer op dit, zie [&#x200B; Ongeveer transactioneel overseinen &#x200B;](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -250,7 +250,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## NMAC-module {#nmac-module}
 
-Deze reeks lijsten is verbonden met het **Mobiele Kanaal van de App**, dat toestaat om gepersonaliseerde berichten naar de terminals van iOS en van Android via apps te verzenden. Voor meer op dit, zie [ Ongeveer mobiel app kanaal ](../../delivery/using/about-mobile-app-channel.md).
+Deze reeks lijsten is verbonden met het **Mobiele Kanaal van de App**, dat toestaat om gepersonaliseerde berichten naar de terminals van iOS en van Android via apps te verzenden. Voor meer op dit, zie [&#x200B; Ongeveer mobiel app kanaal &#x200B;](../../delivery/using/about-mobile-app-channel.md).
 
 * **NmsMobileApp**: Deze lijst past het **nms:mobileApp** schema aan. Het bevat de mobiele toepassingen die in Adobe Campaign zijn gedefinieerd.
 * **NmsAppSubscription**: Deze lijst past het **nms:appSubscription** schema aan. Het bevat de abonneeinformatie betreffende één of meerdere toepassingen.
@@ -261,7 +261,7 @@ Deze reeks lijsten is verbonden met het **Mobiele Kanaal van de App**, dat toest
 
 ## Module voor sociale marketing {#social-marketing-module}
 
-Deze reeks lijsten is verbonden met **het Leiden sociale netwerken** module, die toestaat om met klanten en vooruitzichten via Facebook en X (vroeger gekend als Twitter) in wisselwerking te staan. Voor meer op dit, zie [ Ongeveer sociale marketing ](../../social/using/about-social-marketing.md).
+Deze reeks lijsten is verbonden met **het Leiden sociale netwerken** module, die toestaat om met klanten en vooruitzichten via Facebook en X (vroeger gekend als Twitter) in wisselwerking te staan. Voor meer op dit, zie [&#x200B; Ongeveer sociale marketing &#x200B;](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 

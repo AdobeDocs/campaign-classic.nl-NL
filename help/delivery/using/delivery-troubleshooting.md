@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Deze sectie maakt een lijst van gemeenschappelijke kwesties u kunt ontmoeten wanneer het verzenden van leveringen, en hoe te om hen problemen op te lossen.
 
-Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [ wordt gedetailleerd deze pagina ](delivery-performances.md) om uw leveringen te verzekeren presteren goed.
+Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [&#x200B; wordt gedetailleerd deze pagina &#x200B;](delivery-performances.md) om uw leveringen te verzekeren presteren goed.
 
 **Verwante onderwerpen:**
 
@@ -29,13 +29,13 @@ Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [ wor
 
 Nadat u op de knop **[!UICONTROL Send]** hebt geklikt, lijkt het alsof de levering langer duurt dan normaal. Dit kan worden veroorzaakt door verschillende elementen:
 
-* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van gewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [ deze sectie ](about-deliverability.md).
+* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van gewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [&#x200B; deze sectie &#x200B;](about-deliverability.md).
 
-* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge JavaScript-personalisatie of als uw levering meer dan 60 kB weegt. Verwijs naar Adobe Campaign v8 [ beste praktijken van de Levering ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.  voor meer informatie over richtlijnen voor inhoud.
+* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge JavaScript-personalisatie of als uw levering meer dan 60 kB weegt. Verwijs naar Adobe Campaign v8 [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.  voor meer informatie over richtlijnen voor inhoud.
 
 * Throttling zou binnen Adobe Campaign MTA kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
-   * Berichten gebeëindigd (**[!UICONTROL quotas met]** bericht): de quota die door de verklarende MX regels worden verklaard die in Campagne worden bepaald zijn voldaan. Voor meer informatie over dit bericht, verwijs naar [ deze pagina ](deliverability-faq.md). Meer over MX regels leren, verwijs naar [ deze sectie ](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Berichten gebeëindigd (**[!UICONTROL quotas met]** bericht): de quota die door de verklarende MX regels worden verklaard die in Campagne worden bepaald zijn voldaan. Voor meer informatie over dit bericht, verwijs naar [&#x200B; deze pagina &#x200B;](deliverability-faq.md). Meer over MX regels leren, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Berichten gepended (**[!UICONTROL dynamic flow control]** bericht): De campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te groot van een foutendichtheid te vermijden en zo het onder ogen zien van potentiële lijst van gewezen personen.
 
@@ -71,9 +71,9 @@ Leveringslogboeken zijn essentieel om te leren waarom een levering is mislukt. H
 
   De oorzaak hangt samen met prestatieproblemen. Het betekent dat de marketinginstantie te veel tijd besteedt aan het samenstellen van gegevens voordat ze deze naar de server voor midsourcing verzenden.
 
-  Om dit op te lossen, adviseren wij een vacuüm en een herdex op het gegevensbestand uit te voeren. Voor meer informatie over gegevensbestandonderhoud, verwijs naar [ deze sectie ](../../production/using/recommendations.md).
+  Om dit op te lossen, adviseren wij een vacuüm en een herdex op het gegevensbestand uit te voeren. Voor meer informatie over gegevensbestandonderhoud, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/recommendations.md).
 
-  U moet ook alle werkstromen met een geplande activiteit opnieuw beginnen, en alle werkschema&#39;s in ontbroken status. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+  U moet ook alle werkstromen met een geplande activiteit opnieuw beginnen, en alle werkschema&#39;s in ontbroken status. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 * Wanneer een levering mislukt, kan de volgende fout in de leveringslogboeken verschijnen:
 
@@ -83,7 +83,7 @@ Leveringslogboeken zijn essentieel om te leren waarom een levering is mislukt. H
 
   Gewoonlijk betekent deze fout dat er een verpersoonlijkingsgebied of een blok binnen e-mail is dat meer dan één waarden voor de ontvanger heeft. Er wordt een verpersoonlijkingsblok gebruikt en het haalt meer dan één record op voor een bepaalde ontvanger.
 
-  Om dit op te lossen, controleer de gebruikte verpersoonlijkingsgegevens, en controleer dan het doel voor ontvangers die meer dan één ingang voor om het even welk van die gebieden hebben. U kunt ook een **[!UICONTROL Deduplication]** -activiteit gebruiken in de doelworkflow voordat u de levering uitvoert om te controleren of er slechts één verpersoonlijkingsveld tegelijk is. Voor meer informatie over deduplicatie, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+  Om dit op te lossen, controleer de gebruikte verpersoonlijkingsgegevens, en controleer dan het doel voor ontvangers die meer dan één ingang voor om het even welk van die gebieden hebben. U kunt ook een **[!UICONTROL Deduplication]** -activiteit gebruiken in de doelworkflow voordat u de levering uitvoert om te controleren of er slechts één verpersoonlijkingsveld tegelijk is. Voor meer informatie over deduplicatie, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 * Sommige levering kan mislukken met een &quot;Onbereikbare&quot;fout die verklaart:
 
