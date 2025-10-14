@@ -21,12 +21,12 @@ Voer de volgende stappen uit om een nieuwe levering via e-mail te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
 1. Selecteer het leveringsmalplaatje **leveren door directe post (document)**.
 
    ![](assets/direct_mail.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#create-the-delivery){target="_blank"}.
 1. Klik **verdergaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.

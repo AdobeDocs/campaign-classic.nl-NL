@@ -29,7 +29,7 @@ Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gew
 
 ![](assets/offer_delivery_009.png)
 
-Leer meer over directe postleveringen [&#x200B; in deze sectie &#x200B;](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+Leer meer over directe postleveringen [&#x200B; in deze sectie &#x200B;](../../delivery/using/about-direct-mail-channel.md). Leer meer over marketing campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl-NL){target=_blank}.
 
 ### Belangrijkste stappen voor het invoegen van een aanbieding in een levering {#main-steps-for-inserting-an-offer-into-a-delivery}
 

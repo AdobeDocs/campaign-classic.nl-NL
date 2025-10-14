@@ -25,11 +25,11 @@ Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen pe
 
 ### Aanbeveling
 
-Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [&#x200B; de Algemene Redacteur van de Vraag van de Campagne &#x200B;](../../platform/using/about-queries-in-campaign.md) in werking of creeer een werkschema met filtercriteria in de vraagactiviteit. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Om te bevestigen en ervoor te zorgen dat u hierboven niet gebruikt, stel een vraag bij het volgen van een lijst URL via [&#x200B; de Algemene Redacteur van de Vraag van de Campagne &#x200B;](../../platform/using/about-queries-in-campaign.md) in werking of creeer een werkschema met filtercriteria in de vraagactiviteit. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=nl-NL){target="_blank"}.
 
 Voorbeeld:
 
-1. Creeer een werkschema en voeg de activiteit van de a **Vraag** toe. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Creeer een werkschema en voeg de activiteit van de a **Vraag** toe. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=nl-NL){target="_blank"}.
 
 1. Open de **activiteit van de Vraag** en creeer een filter op de `nmsTrackingUrl` lijst als volgt:
 

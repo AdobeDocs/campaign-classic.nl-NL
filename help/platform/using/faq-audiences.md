@@ -28,7 +28,7 @@ U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole
 
 Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/import-operations-samples.md) in uw database.
 
-![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=nl-NL)
 
 ## Hoe kan ik de doelpopulatie van een marketingcampagne definiëren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -40,13 +40,13 @@ Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd 
 
 [Klik hier voor meer informatie](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Ontdek deze functie [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=nl-NL) en [in deze andere video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=nl-NL)
 
 ## Hoe kan ik een populatie dedupliceren voordat ik een bericht verstuurt? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 U kunt een workflow gebruiken om dubbele data uit te sluiten van het doel van een levering, om te voorkomen dat hetzelfde bericht meerdere keren naar een ontvanger wordt verzonden.
 
-Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=nl-NL){target="_blank"}.
 
 ## Hoe te om abonnees aan een nieuwsbrief te identificeren en te richten? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ Ontdek lidmaatschapsbeheer in Campaign en leer hoe u [een bericht naar leden kun
 
 ## Wat is de beste praktijk om profielen uit te sluiten van een doelpopulatie? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Leer hoe te om een lijst van profielen van uw doelbevolking in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"} uit te sluiten.
+Leer hoe te om een lijst van profielen van uw doelbevolking in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=nl-NL){target="_blank"} uit te sluiten.

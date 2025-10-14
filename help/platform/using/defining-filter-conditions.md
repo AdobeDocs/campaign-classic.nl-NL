@@ -292,7 +292,7 @@ Er zijn vier typen berekende velden:
 
   Het is mogelijk om de bronwaarde van een kolom te gebruiken en het een bestemmingswaarde te geven. Deze bestemmingswaarde zal in de nieuwe outputkolom worden getoond.
 
-  Een voorbeeld om berekend gebiedstype **[!UICONTROL Enumerations]** toe te voegen is beschikbaar, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
+  Een voorbeeld om berekend gebiedstype **[!UICONTROL Enumerations]** toe te voegen is beschikbaar, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=nl-NL){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

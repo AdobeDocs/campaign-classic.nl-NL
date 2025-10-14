@@ -87,7 +87,7 @@ Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal o
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
-1. Maak een campagne. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Maak een campagne. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl-NL){target=_blank}.
 1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
 1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/delivery.md).
 1. Ga naar de tab **[!UICONTROL Analysis]** van de **[!UICONTROL Delivery properties]** en selecteer de optie **[!UICONTROL Prepare the personalization data with a workflow]** .

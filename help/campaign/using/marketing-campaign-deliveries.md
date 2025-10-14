@@ -28,7 +28,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. Leer meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 ## Levering starten {#starting-a-delivery}
 

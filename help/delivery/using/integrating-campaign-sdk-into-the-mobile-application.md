@@ -64,7 +64,7 @@ Om Campagne SDK in de mobiele toepassing te integreren, moet de functionele behe
 
   >[!NOTE]
   >
-  >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+  >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=nl-NL){target="_blank"}.
 
 * **het volgen URL van A**: die het adres van de het volgen van Adobe Campaign server aanpast.
 * **A marketing URL**: om de inzameling van abonnementen toe te laten.

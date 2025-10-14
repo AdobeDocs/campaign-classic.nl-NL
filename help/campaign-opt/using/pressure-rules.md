@@ -92,7 +92,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL){target="_blank"}.
 
 ## Drempels en gewichten definiëren {#defining-thresholds-and-weights}
 

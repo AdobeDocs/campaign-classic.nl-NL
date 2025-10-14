@@ -18,7 +18,7 @@ ht-degree: 8%
 
 # Een bestand decoderen of decoderen {#unzipping-or-decrypting-a-file-before-processing}
 
-Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Alvorens zij in a [&#x200B; Gegevens kunnen worden gelezen die (dossier) laden &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} activiteit, kunt u een pre-verwerking aan unzip bepalen of het dossier decrypteren.
+Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Alvorens zij in a [&#x200B; Gegevens kunnen worden gelezen die (dossier) laden &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=nl-NL){target="_blank"} activiteit, kunt u een pre-verwerking aan unzip bepalen of het dossier decrypteren.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Alv
 
 Om dit te kunnen doen:
 
-1. Gebruik het [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren om dossierdecryptie toe te staan.
+1. Gebruik het [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren om dossierdecryptie toe te staan.
 
    >[!NOTE]
    >
@@ -51,8 +51,8 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 **Verwante onderwerpen:**
 
-* [&#x200B; het laden van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
-* [&#x200B; Zip of codeer een dossier &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [&#x200B; het laden van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=nl-NL){target="_blank"}.
+* [&#x200B; Zip of codeer een dossier &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=nl-NL){target="_blank"}.
 
 ## Hoofdlettergebruik: gegevens importeren die zijn versleuteld met een toets die is gegenereerd door Configuratiescherm {#use-case-gpg-decrypt}
 
@@ -62,7 +62,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in e
 
 De volgende stappen voor dit gebruik zijn nodig:
 
-1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. De gedetailleerde stappen zijn beschikbaar in [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. De gedetailleerde stappen zijn beschikbaar in [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
@@ -82,10 +82,10 @@ De volgende stappen voor dit gebruik zijn nodig:
 
    ![](assets/gpg_key_transfer.png)
 
-   De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+   De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
 
-1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=nl-NL){target="_blank"}.
 
    Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Selecteer hiertoe de optie **[!UICONTROL Pre-process the file]** en selecteer vervolgens **[!UICONTROL Decrypt]** in de vervolgkeuzelijst **[!UICONTROL Command]** :
 

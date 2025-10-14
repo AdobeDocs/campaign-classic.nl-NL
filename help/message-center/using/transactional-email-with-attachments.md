@@ -64,7 +64,7 @@ In het onderstaande diagram worden de verschillende stappen weergegeven bij de i
 
 Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan een transactiebericht:
 
-1. Begin door uw bijlage te ontwerpen. Voor meer op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"} verwijzen.
+1. Begin door uw bijlage te ontwerpen. Voor meer op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=nl-NL#attach-a-personalized-file){target="_blank"} verwijzen.
 
    Hierdoor kunt u de bestanden als bijlage aan een e-mail toevoegen, zelfs als deze niet worden gehost op de uitvoeringsinstantie.
 

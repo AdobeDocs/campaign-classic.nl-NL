@@ -17,9 +17,9 @@ ht-degree: 3%
 
 In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voeren.
 
-1. Creeer een nieuw werkschema dan vormen een activiteit van de Vraag om de gewenste bevolking te richten. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Creeer een nieuw werkschema dan vormen een activiteit van de Vraag om de gewenste bevolking te richten. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=nl-NL){target="_blank"}.
 
-1. Voeg een activiteit van het Splitsen toe om de doelbevolking in veelvoudige ondergroepen te verdelen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+1. Voeg een activiteit van het Splitsen toe om de doelbevolking in veelvoudige ondergroepen te verdelen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=nl-NL){target="_blank"}.
 
 1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om a **[!UICONTROL Split]** activiteit te vormen, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/split.md).
 

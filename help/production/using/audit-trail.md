@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Ontdek meer over de functionaliteit van het spoor van de Controle in de [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Ontdek meer over de functionaliteit van het spoor van de Controle in de [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 
@@ -47,7 +47,7 @@ In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledi
 
   Voor meer informatie over werkschema&#39;s, verwijs naar deze [&#x200B; pagina &#x200B;](../../workflow/using/about-workflows.md).
 
-  Voor meer op hoe te om werkschema&#39;s te controleren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+  Voor meer op hoe te om werkschema&#39;s te controleren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"}.
 
 
 * **de controlespoor van de Optie** staat u toe om activiteiten en laatste wijzigingen te controleren die aan uw opties worden gedaan.

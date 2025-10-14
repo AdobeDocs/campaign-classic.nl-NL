@@ -30,7 +30,7 @@ Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 
 ## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het creëren van een levering zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+De stappen voor het creëren van een levering zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=nl-NL){target="_blank"}.
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt en de ontvangers geselecteerd.
 

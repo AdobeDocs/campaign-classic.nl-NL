@@ -32,7 +32,7 @@ De database wordt op twee niveaus opgeschoond: in de workflowplanner en in de im
 
 >[!NOTE]
 >
->Voor meer op de planner, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+>Voor meer op de planner, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=nl-NL){target="_blank"}.
 
 Standaard is de **[!UICONTROL Database cleanup]** -workflow zo geconfigureerd dat deze elke dag om 4.00 uur wordt gestart. De planner laat u het werkschema veranderen die frequentie teweegbrengen. De volgende frequenties zijn beschikbaar:
 

@@ -100,7 +100,7 @@ Met zaadadressen kunt u ook de weergave van het bericht voor verschillende inter
 
 U kunt berichtlevering testen door een bewijs naar een eerder gecreeerd zaadadres te verzenden.
 
-Bij het verzenden van een bewijs wordt hetzelfde proces gebruikt als bij een normale levering. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Met transactiemeldingen moet u echter de volgende bewerkingen vooraf uitvoeren:
+Bij het verzenden van een bewijs wordt hetzelfde proces gebruikt als bij een normale levering. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=nl-NL){target="_blank"}. Met transactiemeldingen moet u echter de volgende bewerkingen vooraf uitvoeren:
 
 * Creeer één of meerdere [&#x200B; zaadadressen &#x200B;](#managing-seed-addresses-in-transactional-messages) met [&#x200B; verpersoonlijkingsgegevens &#x200B;](#personalization-data).
 * [&#x200B; creeer de berichtinhoud &#x200B;](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Het bewijs verzenden:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-In elke sjabloon kunt u proefdrukken openen via het tabblad **[!UICONTROL Audit]** . Voor meer details op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+In elke sjabloon kunt u proefdrukken openen via het tabblad **[!UICONTROL Audit]** . Voor meer details op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

@@ -24,7 +24,7 @@ Bovendien laat de **module van het Middel van de Marketing van het Middel (MRM)*
 >[!NOTE]
 >
 >Voor meer op de kernfuncties van Adobe Campaign, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/about-adobe-campaign-classic.md) sectie.\
->De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [&#x200B; ontdekt marketing campagnes zeer belangrijke concepten in video &#x200B;](#video)
 

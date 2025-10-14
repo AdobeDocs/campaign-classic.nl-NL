@@ -23,7 +23,7 @@ Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TA
 
 >[!NOTE]
 >
->U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de functie **[!UICONTROL Import a list]** . De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** -object worden gebruikt. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+>U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de functie **[!UICONTROL Import a list]** . De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** -object worden gebruikt. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=nl-NL){target="_blank"}.
 
 Met de importassistent kunt u een importbewerking configureren, opties ervan definiëren (zoals gegevenstransformatie) en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type import (enkelvoudig of meervoudig) en de rechten van de operator.
 
@@ -87,7 +87,7 @@ Met de koppeling **[!UICONTROL Advanced parameters]** hebt u toegang tot de volg
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+     Selecteer deze optie om te voorkomen dat de lijst met opgesomde waarden in de database wordt verrijkt. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 
 * **[!UICONTROL Variables]** tab

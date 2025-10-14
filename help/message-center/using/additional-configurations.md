@@ -169,6 +169,6 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [&#x200B; uitvoeringsinstantie &#x200B;](#execution-instance) wordt bepaald (stap 1).
 
-1. Een leveringssjabloon per merk maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Een leveringssjabloon per merk maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}.
 
 1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.

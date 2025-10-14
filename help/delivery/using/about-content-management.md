@@ -19,7 +19,7 @@ De module van de Manager van de Inhoud van Adobe Campaign is een specifiek Campa
 
 >[!NOTE]
 >
->Deze sectie verwijst naar de module Inhoudsbeheer. Voor meer informatie over hoe te om e-mailleveringeninhoud te ontwerpen, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+>Deze sectie verwijst naar de module Inhoudsbeheer. Voor meer informatie over hoe te om e-mailleveringeninhoud te ontwerpen, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=nl-NL){target="_blank"}.
 
 De module Inhoudsbeheer bevat de functionaliteit voor werkgroepen, werkstromen en aggregatie van inhoud. Hierdoor kan een bericht automatisch worden opgemaakt: e-mail, e-mail, SMS, web, enz.
 

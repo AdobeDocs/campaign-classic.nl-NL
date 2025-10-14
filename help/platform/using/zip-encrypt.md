@@ -21,7 +21,7 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wan
 
 Om dit te kunnen doen:
 
-1. Installeer een zeer belangrijk paar GPG voor uw instantie gebruikend het [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installeer een zeer belangrijk paar GPG voor uw instantie gebruikend het [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#encrypting-data).
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Vervolgens kunt u opdrachten of code gebruiken op het tabblad **[!UICONTROL Scri
 **Verwante onderwerpen:**
 
 * [Een bestand uitpakken of ontsleutelen vóór verwerking](../../platform/using/unzip-decrypt.md)
-* [&#x200B; de extractie van gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
+* [&#x200B; de extractie van gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=nl-NL){target="_blank"}
 
 ## Hoofdlettergebruik: gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
 
@@ -46,7 +46,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te 
 
 De volgende stappen voor dit gebruik zijn nodig:
 
-1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. De gedetailleerde stappen zijn beschikbaar in [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. De gedetailleerde stappen zijn beschikbaar in [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl-NL#encrypting-data).
 
 1. In Campaign Classic maakt u een workflow om de gegevens te exporteren en te coderen met de persoonlijke sleutel die via het Configuratiescherm is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
@@ -57,9 +57,9 @@ De volgende stappen voor dit gebruik zijn nodig:
    * **[!UICONTROL JavaScript code]** activity: codeert de gegevens die geëxtraheerd moeten worden.
    * **[!UICONTROL File transfer]** activity: verzendt de gegevens naar een externe bron (in dit voorbeeld een SFTP-server).
 
-1. Configureer de **[!UICONTROL Query]** -activiteit om de gewenste gegevens uit de database als doel in te stellen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Configureer de **[!UICONTROL Query]** -activiteit om de gewenste gegevens uit de database als doel in te stellen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=nl-NL){target="_blank"}.
 
-1. Open de **[!UICONTROL Data extraction (file)]** -activiteit en configureer deze op basis van uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+1. Open de **[!UICONTROL Data extraction (file)]** -activiteit en configureer deze op basis van uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=nl-NL){target="_blank"}.
 
    ![](assets/gpg-data-extraction.png)
 
@@ -81,7 +81,7 @@ De volgende stappen voor dit gebruik zijn nodig:
 
    ![](assets/gpg-script.png)
 
-1. Open de **[!UICONTROL File transfer]** -activiteit en geef vervolgens de SFTP-server op waarnaar u het bestand wilt verzenden. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+1. Open de **[!UICONTROL File transfer]** -activiteit en geef vervolgens de SFTP-server op waarnaar u het bestand wilt verzenden. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
    ![](assets/gpg-file-transfer.png)
 

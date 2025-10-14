@@ -86,7 +86,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken. De categorie **[!UICONTROL Others]** bevat domeinnamen die niet tot een waarde in de opgegeven lijst behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken. De categorie **[!UICONTROL Others]** bevat domeinnamen die niet tot een waarde in de opgegeven lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -158,7 +158,7 @@ Dit rapport bevat alle belangrijke informatie over de levering.
 Deze sectie heeft twee indicatoren:
 
 * **[!UICONTROL Initial population]** : Het totale aantal ontvangers dat de levering als doel heeft.
-* **[!UICONTROL Messages rejected by the rule]** : Het aantal adressen dat tijdens de analyse wordt genegeerd wanneer het toepassen van typologische regels: adres ontbreekt, in quarantaine geplaatst, op lijst van gewezen personen, enz. Voor meer informatie over typologische regels, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+* **[!UICONTROL Messages rejected by the rule]** : Het aantal adressen dat tijdens de analyse wordt genegeerd wanneer het toepassen van typologische regels: adres ontbreekt, in quarantaine geplaatst, op lijst van gewezen personen, enz. Voor meer informatie over typologische regels, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=nl-NL){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

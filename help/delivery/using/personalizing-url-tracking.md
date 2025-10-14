@@ -19,7 +19,7 @@ Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via
 
 >[!NOTE]
 >
->Het beheer van afbeeldingen in e-mailberichten wordt ook in dit venster geconfigureerd. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+>Het beheer van afbeeldingen in e-mailberichten wordt ook in dit venster geconfigureerd. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=nl-NL#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

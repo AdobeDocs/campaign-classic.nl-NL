@@ -27,7 +27,7 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 
 >[!CAUTION]
 >
->Zodra de midsourcingserver opstelling is geweest en de [&#x200B; synchronisatiewerkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
+>Zodra de midsourcingserver opstelling is geweest en de [&#x200B; synchronisatiewerkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=nl-NL){target="_blank"} voor het eerst in werking zijn gesteld, zorg ervoor u niet de interne naam van de midsourcing externe rekeningen bijwerkt.
 
 ## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 

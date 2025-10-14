@@ -25,11 +25,11 @@ Volg de onderstaande principes bij het ontwerpen van uw berichtinhoud:
 * [&#x200B; verbinding Unsubscription &#x200B;](#opt-out) en landende pagina: de unsubscription verbinding is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn.
 * Voorproef: gebruik de hulpmiddelen die door Adobe Campaign worden aangeboden om de inhoud van uw e-mail te controleren en te optimaliseren ([&#x200B; Inbox teruggevend &#x200B;](#message-responsiveness), [&#x200B; SpamAssassin &#x200B;](#spamassassin)).
 
-Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
+Voor extra uiteinden om leverbaarheid te optimaliseren wanneer het ontwerpen van inhoud, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=nl-NL).
 
 >[!NOTE]
 >
->Voor meer informatie bij het uitgeven van e-mailinhoud, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+>Voor meer informatie bij het uitgeven van e-mailinhoud, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=nl-NL){target="_blank"}.
 
 ## Adres van afzender {#sender-address}
 
@@ -37,7 +37,7 @@ Bepaalde ISPs controleren de geldigheid van het afzenderadres (**[!UICONTROL Fro
 
 U moet ervoor zorgen dat het juiste adres wordt opgegeven op instantieniveau (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) of in de meest gebruikte scenario&#39;s.
 
-Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=nl-NL){target="_blank"}.
 
 ## Personalization {#personalization}
 
@@ -47,7 +47,7 @@ Voor meer bij het gebruiken van verpersoonlijkingsgebieden in Adobe Campaign, zi
 
 ## Koppeling en formulier uitschakelen {#opt-out}
 
-Wanneer het bericht wordt geanalyseerd, controleert standaard een typologische regel of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Wanneer het bericht wordt geanalyseerd, controleert standaard een typologische regel of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=nl-NL){target="_blank"}.
 
 U moet controleren of de koppeling om te weigeren correct werkt voordat u de koppeling verzendt. Wanneer u bijvoorbeeld de proefdruk verzendt, moet u controleren of de koppeling geldig is, of het formulier online is en of bij validatie de waarde van het veld **[!UICONTROL No longer contact this recipient]** wordt gewijzigd in **[!UICONTROL Yes]** . Deze controle moet u systematisch uitvoeren, omdat een menselijke fout altijd mogelijk is bij het invoeren van de koppeling of bij het wijzigen van het formulier.
 

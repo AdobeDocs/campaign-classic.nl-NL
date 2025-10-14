@@ -316,7 +316,7 @@ U kunt de indeling van verzonden berichten definiëren, zodat de weergegeven inh
 
 Hiervoor gaat u naar het **[!UICONTROL Management of email formats]** -document, dat zich bevindt in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]** .
 
-Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"} voor meer informatie.
+Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=nl-NL){target="_blank"} voor meer informatie.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ De **MIME structuur** (Multipurpose Internet Mail Extensions) parameter staat u 
 
 Als de optie **[!UICONTROL Image inclusion]** is ingeschakeld, worden deze rechtstreeks in de tekst van de e-mail weergegeven. De afbeeldingen worden vervolgens geüpload en de URL-koppelingen worden vervangen door de inhoud ervan.
 
-Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Voor meer informatie, raadpleeg de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=nl-NL){target="_blank"}.
 
 >[!IMPORTANT]
 >

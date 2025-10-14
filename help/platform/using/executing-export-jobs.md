@@ -95,7 +95,7 @@ Selecteer de sorteervolgorde van de kolommen.
 
 ## Stap 6 - Filtervoorwaarden {#step-6---filter-conditions-}
 
-U kunt filtervoorwaarden toevoegen om het exporteren van alle gegevens te voorkomen. De configuratie van dit het filtreren is het zelfde als ontvankelijke het richten in de leveringsmedewerker. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+U kunt filtervoorwaarden toevoegen om het exporteren van alle gegevens te voorkomen. De configuratie van dit het filtreren is het zelfde als ontvankelijke het richten in de leveringsmedewerker. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#target-population){target="_blank"}.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

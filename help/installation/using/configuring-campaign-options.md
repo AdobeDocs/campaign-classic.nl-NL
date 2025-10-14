@@ -57,7 +57,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr>
   <tr> 
    <td> <span class="uicontrol"> NMS_ActivateOwnerConfirmation </span> <br /> </td> 
-   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer "0" in om deze optie te deactiveren.</p><p> Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">deze sectie</a>.</p> </td>
+   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer "0" in om deze optie te deactiveren.</p><p> Het verzendbevestigingsproces functioneert vervolgens als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=nl-NL#start-a-delivery" target="_blank">deze sectie</a>.</p> </td>
 
 <tr> 
    <td> <span class="uicontrol"> Nms_DefaultRcpSchema </span> <br /> </td> 
@@ -209,7 +209,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_DeliveryPreparationWindow </span> <br /> </td> 
-   <td><p>Deze optie wordt gebruikt door het <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank"> technische werkschema 0&rbrace; operationMgt &lbrace;wanneer het tellen van het aantal lopende leveringen.</a></span></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
+   <td><p>Deze optie wordt gebruikt door het <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=nl-NL" target="_blank"> technische werkschema 0&rbrace; operationMgt &lbrace;wanneer het tellen van het aantal lopende leveringen.</a></span></p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol"> NmsPaper_SenderLine1 </span> <br /> </td> 
@@ -365,7 +365,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_OperationMgtDebug </span> <br /> </td> 
-   <td> Staat u toe om de <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank"> technische werkschemauitvoering te controleren 0&rbrace; operationMgt. </a> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
+   <td> Staat u toe om de <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=nl-NL" target="_blank"> technische werkschemauitvoering te controleren 0&rbrace; operationMgt. </a> Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie het programma geopend in de logboeken van de werkschemacontrole.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol"> NmsOperation_TimeRange </span> <br /> </td> 

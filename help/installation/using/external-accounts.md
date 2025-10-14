@@ -47,7 +47,7 @@ De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts
 
 ### Stuitberichten {#bounce-mails-external-account}
 
-De **Stuits post** externe rekening specificeert de externe POP3 rekening die moet worden gebruikt om met de e-maildienst te verbinden. Voor meer op deze externe rekening, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+De **Stuits post** externe rekening specificeert de externe POP3 rekening die moet worden gebruikt om met de e-maildienst te verbinden. Voor meer op deze externe rekening, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=nl-NL){target="_blank"}.
 
 Alle servers die voor POP3 toegang worden gevormd kunnen worden gebruikt om terugkeerpost te ontvangen.
 
@@ -119,7 +119,7 @@ De volgende kanalen kunnen worden gevormd:
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/communication-channels.md#other-channels)
 * [X (voorheen bekend als Twitter)](../../social/using/about-social-marketing.md)
-* [&#x200B; de kanalen van iOS en van Android &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
+* [&#x200B; de kanalen van iOS en van Android &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=nl-NL){target="_blank"}
 
 ### E-mailroutering {#email-routing-external-account}
 
@@ -159,7 +159,7 @@ Voor meer informatie over deze configuratie, verwijs naar deze [&#x200B; pagina 
 
 ### FTP {#ftp-external-account}
 
-Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
 Hiertoe geeft u in deze externe account het adres en de referenties op waarmee de verbinding met de FTP-server tot stand wordt gebracht
 
@@ -189,7 +189,7 @@ Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naa
 
 ### SFTP {#sftp-external-account}
 
-Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -415,7 +415,7 @@ Voor meer informatie over deze configuratie, verwijs naar deze [&#x200B; pagina 
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -447,7 +447,7 @@ Leren waar te om toegangs zeer belangrijke identiteitskaart en geheime toegangss
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-De **Azure Blob opslag** externe rekening kan worden gebruikt om gegevens in te voeren of naar Adobe Campaign uit te voeren gebruikend een **[!UICONTROL Transfer file]** werkschemaactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+De **Azure Blob opslag** externe rekening kan worden gebruikt om gegevens in te voeren of naar Adobe Campaign uit te voeren gebruikend een **[!UICONTROL Transfer file]** werkschemaactiviteit. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 

@@ -52,7 +52,7 @@ Om een **e-maillevering** tot stand te brengen, moet u:
 1. Creeer een levering van een malplaatje DCE - [&#x200B; leer meer &#x200B;](use-case-creating-an-email-delivery.md)
 1. Selecteer een bestaande inhoud of creeer inhoud van a [&#x200B; standaardmalplaatje &#x200B;](template-management.md)
 1. Online-inhoud bewerken en configureren
-1. Verzend de levering - leer meer in de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Verzend de levering - leer meer in de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}
 
 >[!NOTE]
 >

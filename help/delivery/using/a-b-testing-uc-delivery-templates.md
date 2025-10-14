@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # AB-tests: de leveringssjablonen maken {#step-3--creating-two-delivery-templates}
 
-We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** -activiteit die is gekoppeld aan de **[!UICONTROL Split]** -activiteit. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** -activiteit die is gekoppeld aan de **[!UICONTROL Split]** -activiteit. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}.
 
 1. Blader naar de map **[!UICONTROL Resources > Delivery template]** .
 1. Dupliceer de leveringssjabloon **[!UICONTROL Email]** .

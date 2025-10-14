@@ -115,7 +115,7 @@ Berichten worden standaard in HTML of tekstindeling verzonden, afhankelijk van d
 
 Adobe Campaign laat u toe om nieuwe interactieve [&#x200B; AMP voor E-mail &#x200B;](https://amp.dev/about/email/) formaat te proberen, dat toelaat om dynamische e-mails, onder bepaalde voorwaarden te verzenden.
 
-Voor meer op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}.
+Voor meer op dit, zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=nl-NL){target="_blank"}.
 
 ## Inhoudsbeheer gebruiken {#using-content-management}
 

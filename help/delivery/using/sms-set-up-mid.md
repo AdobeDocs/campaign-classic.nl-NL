@@ -154,7 +154,7 @@ Hiervoor voert u de volgende stappen uit:
 
 ## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Adobe Campaign biedt een mobiele leveringssjabloon in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]** . Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}.
 
 Om berichten door het kanaal van SMS te verzenden, moet u een malplaatje creëren dat een verwijzing naar de kanaalschakelaar omvat.
 

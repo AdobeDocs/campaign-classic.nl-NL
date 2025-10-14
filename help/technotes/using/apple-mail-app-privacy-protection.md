@@ -94,7 +94,7 @@ In dit voorbeeld wil een marketeer een beloningsaanbod sturen naar de ontvangers
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* U kunt een vooraf gedefinieerd filter gebruiken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* U kunt een vooraf gedefinieerd filter gebruiken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=nl-NL){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 

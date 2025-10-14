@@ -123,7 +123,7 @@ De rapporten over campagnes betreffen de gegevens in de **nms:operation** lijst.
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=nl-NL){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
-Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Voor meer op de inhoud van deze rapporten, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=nl-NL){target=_blank}.
 
 <table> 
  <tbody> 

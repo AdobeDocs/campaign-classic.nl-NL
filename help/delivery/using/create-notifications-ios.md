@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Meldingen maken voor iOS{#create-notifications-ios}
 
-In deze sectie worden de specifieke elementen voor de levering van iOS-berichten beschreven. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+In deze sectie worden de specifieke elementen voor de levering van iOS-berichten beschreven. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 Begin door een nieuwe levering te maken.
 
@@ -34,7 +34,7 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    >[!NOTE]
    >
-   >Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
+   >Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#target-population.){target="_blank"}.
    >
    >Voor meer op het gebruik van verpersoonlijkingsgebieden, verwijs naar [&#x200B; deze sectie &#x200B;](about-personalization.md).
    >

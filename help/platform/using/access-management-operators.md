@@ -18,15 +18,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
+>Deze procedures zijn slechts voor exploitanten van toepassing die met Campagne met de **erfenis inheemse authentificatie** verbinden. Beginnend Campaign Classic v7.3.1, zouden alle exploitanten [&#x200B; Adobe Identity Management Systeem (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten gebruiken om met Campagne te verbinden. [Meer informatie](../../technotes/using/migrate-users-to-ims.md)
 >
->Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>Wanneer u verbinding maakt met Campagne met uw Adobe ID, is de volgende sectie niet meer van toepassing. Leer hoe te opstellingstoestemmingen met Adobe IMS in [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=nl-NL){target="_blank"}.
 
 ## Aan de slag met campagneoperatoren {#about-operators}
 
 >[!NOTE]
 >
->Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [&#x200B; deze documentatie &#x200B;](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Deze procedures zijn alleen van toepassing op operatoren die verbinding maken met een campagne met native verificatie. Voor de authentificatie van Adobe IMS, verwijs naar [&#x200B; deze documentatie &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-users-individually.html#_blank).
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 
 1. Geef de **[!UICONTROL Identification parameters]** van de gebruiker op: de aanmeldingsnaam, het wachtwoord en de naam. De aanmeldingsnaam en het wachtwoord worden door de operator gebruikt om u aan te melden bij Adobe Campaign. Zodra de gebruiker is aangemeld, kunnen deze zijn of haar wachtwoord wijzigen via het menu **[!UICONTROL Tools > Change password]** . Het e-mailadres van de exploitant is essentieel omdat het de exploitant in staat stelt meldingen te ontvangen, bijvoorbeeld bij de verwerking van goedkeuringen.
 
-   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
+   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=nl-NL){target="_blank"}.
 
 1. Selecteer in de sectie **[!UICONTROL Operator access rights]** de machtigingen die aan de operator zijn verleend.
 

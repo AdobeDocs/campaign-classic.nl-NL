@@ -31,7 +31,7 @@ De mobiele, overseinen en webmail cliënten beschikbaar voor **Inbox teruggevend
 
 >[!NOTE]
 >
->Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalization kan worden gecontroleerd met Adobe Campaign-gereedschappen, zoals **[!UICONTROL Preview]** en proefdrukken. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+>Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalization kan worden gecontroleerd met Adobe Campaign-gereedschappen, zoals **[!UICONTROL Preview]** en proefdrukken. Zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=nl-NL){target="_blank"}.
 
 ## Inbox-rendering activeren {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Voor meer bij het creëren van, het ontwerpen van en het richten van een leverin
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Voor meer bij het verzenden van proeven, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Voor meer bij het verzenden van proeven, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=nl-NL){target="_blank"}.
 
 1. Na verzending wordt de proefdruk weergegeven in de leveringslijst. Dubbelklik erop.
 

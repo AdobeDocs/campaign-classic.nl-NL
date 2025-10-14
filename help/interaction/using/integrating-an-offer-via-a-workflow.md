@@ -55,7 +55,7 @@ Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedinge
 
 >[!NOTE]
 >
->Voor meer informatie over de verrijkingsactiviteit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+>Voor meer informatie over de verrijkingsactiviteit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=nl-NL){target="_blank"}.
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
@@ -68,7 +68,7 @@ Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 
 ### Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Na het vormen van uw vraag (verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
+Na het vormen van uw vraag (verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=nl-NL){target="_blank"}):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
 1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]** .

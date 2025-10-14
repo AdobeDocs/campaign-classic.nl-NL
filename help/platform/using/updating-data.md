@@ -24,7 +24,7 @@ De gegevens die aan het profiel van een ontvanger zijn gekoppeld, kunnen handmat
 
 ## Een automatische update instellen {#setting-up-an-automatic-update}
 
-Een automatische update kan worden geconfigureerd via een workflow. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
+Een automatische update kan worden geconfigureerd via een workflow. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=nl-NL){target="_blank"}.
 
 ## Een massaupdate uitvoeren {#performing-a-mass-update}
 

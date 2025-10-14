@@ -41,7 +41,7 @@ Het **[!UICONTROL Browsing]** -blok van het tabblad **[!UICONTROL Campaigns]** b
 >
 >Voor meer op de algemene ergonomie van Adobe Campaign, de toestemmingen en op de functionaliteit van het profielbeheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md).
 >
->Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Alle functionaliteiten met betrekking tot kanalen en leveringen zijn gedetailleerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 ### Campagnekalender {#campaign-calendar}
 

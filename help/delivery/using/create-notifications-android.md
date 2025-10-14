@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Meldingen maken voor Android{#create-notificaations-android}
 
-Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 Begin door een nieuwe levering te maken.
 
@@ -70,7 +70,7 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
 
 ## Een meldingsbericht maken {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om een de duwbericht van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"} tot stand te brengen.
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Leer hoe te om een de duwbericht van Android in video &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=nl-NL#additional-resources){target="_blank"} tot stand te brengen.
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** .
 

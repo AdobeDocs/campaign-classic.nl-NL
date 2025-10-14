@@ -60,8 +60,8 @@ Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. 
 
 **Verwante onderwerpen:**
 
-* [&#x200B; het laden van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [&#x200B; de extractie van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [&#x200B; het laden van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=nl-NL){target="_blank"}
+* [&#x200B; de extractie van Gegevens (dossier) activiteit &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=nl-NL){target="_blank"}.
 
 ## Importeren in de Delta-modus {#importing-in-delta-mode}
 

@@ -24,9 +24,9 @@ In de onderstaande sectie vindt u informatie over algemene problemen met betrekk
 Raadpleeg de volgende secties voor meer informatie over workflows:
 
 * [Workflows](../../workflow/using/about-workflows.md)
-* [&#x200B; Beginnend een werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
-* [&#x200B; het levenscyclus van het Werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
-* [&#x200B; Beste praktijken wanneer het gebruiken van werkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
+* [&#x200B; Beginnend een werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=nl-NL){target="_blank"}.
+* [&#x200B; het levenscyclus van het Werkschema &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=nl-NL){target="_blank"}.
+* [&#x200B; Beste praktijken wanneer het gebruiken van werkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL){target="_blank"}.
 
 ## Zo snel mogelijk starten in campagnes {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,9 +34,9 @@ In sommige gevallen worden workflows die worden uitgevoerd via een campagne, nie
 
 Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om het op te lossen:
 
-1. Controleer de [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} technische werkschemastatus. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
+1. Controleer de [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=nl-NL){target="_blank"} technische werkschemastatus. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
 
-   Voor meer op technische werkschema&#39;s controle, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+   Voor meer op technische werkschema&#39;s controle, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=nl-NL){target="_blank"}.
 
    >[!NOTE]
    >
@@ -73,13 +73,13 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    U kunt dit probleem oplossen door ongewenste workflows te stoppen en mislukte leveringen te verwijderen. Als de drempelwaarde is bereikt, kunnen nieuwe processen worden uitgevoerd.
 
-   Als u het aantal workflows van uw instantie wilt controleren, raden we u aan de vooraf gedefinieerde weergaven te gebruiken, die standaard toegankelijk zijn in de map **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"} voor meer informatie.
+   Als u het aantal workflows van uw instantie wilt controleren, raden we u aan de vooraf gedefinieerde weergaven te gebruiken, die standaard toegankelijk zijn in de map **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"} voor meer informatie.
 
    >[!IMPORTANT]
    >
    >Als u de optiedrempel van **[!UICONTROL NmsOperation_LimitConcurrency]** verhoogt, kunnen er prestatieproblemen optreden voor uw instantie. Voer dit in geen geval alleen uit en neem contact op met uw Adobe Campaign-contactpersoon.
 
-Voor meer op hoe te om u werkschema&#39;s te controleren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Voor meer op hoe te om u werkschema&#39;s te controleren, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"}.
 
 ## Beginnen in uitvoering {#start-in-progress}
 
@@ -118,6 +118,6 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 
 Als een werkstroom mislukt, voert u de volgende stappen uit:
 
-1. Controleer het werkstroomjournaal. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
-1. Technische workflows controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+1. Controleer het werkstroomjournaal. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"}.
+1. Technische workflows controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=nl-NL){target="_blank"}.
 1. Zoek naar mislukkingen op de individuele werkschemaactiviteiten.

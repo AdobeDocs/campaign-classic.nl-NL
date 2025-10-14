@@ -20,12 +20,12 @@ Voer de onderstaande stappen uit om een nieuwe e-maillevering te maken:
 
 >[!NOTE]
 >
->De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
 1. Selecteer het leveringsmalplaatje **E-maillevering (post)** of om het even welk malplaatje van de e-maillevering dat u creeerde. Voor meer op leveringsmalplaatjes, verwijs naar [&#x200B; deze sectie &#x200B;](about-templates.md).
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Voor meer op dit, verwijs naar deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#create-the-delivery){target="_blank"}.
 1. Klik **verdergaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.

@@ -20,7 +20,7 @@ Naast [&#x200B; ingebouwde rapporten &#x200B;](../../reporting/using/about-campa
 
 Adobe Campaign is geen gespecialiseerd rapportagehulpmiddel: rapporten die in Adobe Campaign zijn gemaakt, stellen u voornamelijk in staat geaggregeerde gegevens weer te geven. Adobe Campaign-rapporten, die speciaal zijn bedoeld voor het analyseren en weergeven van gegevens, zijn niet bedoeld voor het exporteren van databases.
 
-Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
+Als u gegevens uit de Adobe Campaign-database wilt exporteren, moet u een workflow maken en gegevens exporteren. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=nl-NL){target="_blank"}.
 
 Adobe Campaign biedt verschillende rapportagegereedschappen:
 

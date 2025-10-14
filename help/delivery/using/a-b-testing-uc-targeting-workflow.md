@@ -17,7 +17,7 @@ ht-degree: 4%
 
 U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]** van een campagne. Deze bestaat uit een **[!UICONTROL Query]** -activiteit, een **[!UICONTROL Split]** -activiteit die gekoppeld is aan twee **[!UICONTROL Email delivery]** -activiteiten, een **[!UICONTROL Wait]** -activiteit, een **[!UICONTROL JavaScript code]** -activiteit en een **[!UICONTROL Delivery]** -activiteit.
 
-1. Maak een campagne als u dat nog niet hebt gedaan. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Maak een campagne als u dat nog niet hebt gedaan. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl-NL){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]**
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Verander het etiket van het bestaande werkschema of klik **[!UICONTROL Add]** om nieuwe tot stand te brengen (voor meer op dit, verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
+1. Verander het etiket van het bestaande werkschema of klik **[!UICONTROL Add]** om nieuwe tot stand te brengen (voor meer op dit, verwijs naar de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=nl-NL){target="_blank"}.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 

@@ -88,7 +88,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    >[!NOTE]
    >
-   >Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} voor meer informatie over leveringsmalplaatjes.
+   >Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"} voor meer informatie over leveringsmalplaatjes.
 
 1. Maak het tweede script voor het verzenden van abonnementsberichten.
 

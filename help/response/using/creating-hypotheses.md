@@ -146,7 +146,7 @@ In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een lever
 
 Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt een hypothese gemaakt voor een specifiek artikel van de aankooptabel.
 
-1. Maak een campagne en een levering. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Maak een campagne en een levering. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl-NL){target=_blank}.
 
    In ons voorbeeld, zullen wij een directe posttype levering gebruiken.
 
@@ -156,7 +156,7 @@ Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt ee
 
    >[!NOTE]
    >
-   >Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"} voor meer informatie.
+   >Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=nl-NL#add-a-control-group){target="_blank"} voor meer informatie.
 
 1. Open **[!UICONTROL Direct mail delivery]**, klik op het pictogram **[!UICONTROL Delivery measurement]** en klik vervolgens op **[!UICONTROL Add]** .
 
@@ -178,7 +178,7 @@ Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt ee
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Start de doelworkflow en voer de vereiste controles uit totdat de campagne is voltooid. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
+1. Start de doelworkflow en voer de vereiste controles uit totdat de campagne is voltooid. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=nl-NL#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

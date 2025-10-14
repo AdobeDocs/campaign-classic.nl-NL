@@ -88,6 +88,6 @@ Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een ov
 ## Verwante onderwerpen {#related-topics}
 
 * [Aan de slag met communicatiekanalen](../../delivery/using/communication-channels.md)
-* [&#x200B; de creatie belangrijkste stappen van de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [&#x200B; de creatie belangrijkste stappen van de levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL){target="_blank"}
 * [Architectuur van transactionele berichten](../../message-center/using/transactional-messaging-architecture.md)
 * [Rapporten van transactionele berichten openen &#x200B;](../../message-center/using/about-transactional-messaging-reports.md)

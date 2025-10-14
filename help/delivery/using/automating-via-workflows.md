@@ -214,12 +214,12 @@ De laatste actie van de activiteit is het voorbereiden en lanceren van de leveri
 
 ### Inhoud importeren vanuit FTP {#importing-content-from-ftp}
 
-Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=nl-NL){target="_blank"}.
 
 
 ### Inhoud importeren uit de Amazon Simple Storage Service (S3)-connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Als uw leveringsinhoud zich op de emmers van de Dienst van de Eenvoudige Opslag van Amazon (S3) bevindt, kunt u deze inhoud in Adobe Campaign leveringen gemakkelijk laden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Als uw leveringsinhoud zich op de emmers van de Dienst van de Eenvoudige Opslag van Amazon (S3) bevindt, kunt u deze inhoud in Adobe Campaign leveringen gemakkelijk laden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=nl-NL){target="_blank"}.
 
 
 ## Halfautomatische update {#semi-automatic-update}

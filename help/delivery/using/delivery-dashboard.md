@@ -35,7 +35,7 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 
 * [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 * [Werken met quarantainebeheer](understanding-quarantine-management.md)
-* [Best practices voor verzending](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+* [Best practices voor verzending](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL){target="_blank"}
 * [Te leveren items beheren](about-deliverability.md)
 
 ## Leveringsoverzicht {#delivery-summary}
@@ -64,7 +64,7 @@ Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte lever
 
 Met de koppeling **[!UICONTROL Display the mirror page for this message...]** kunt u de spiegelpagina weergeven voor de inhoud van de levering die in de lijst is geselecteerd in een nieuw venster.
 
-De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
+De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=nl-NL){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ Het tabblad **[!UICONTROL Audit]** bevat het leveringslogboek en alle berichten 
 
 Met de knop **[!UICONTROL Refresh]** kunt u de gegevens bijwerken. Gebruik de knop **[!UICONTROL Filters]** om een filter voor de gegevens te definiëren.
 
-Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=nl-NL){target="_blank"}.
 
 Met het subtabblad **[!UICONTROL Proofs]** kunt u de lijst met proefdrukken weergeven die zijn verzonden.
 

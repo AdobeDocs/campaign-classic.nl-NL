@@ -65,7 +65,7 @@ Op het tabblad **[!UICONTROL General]** van de sjabloon kunt u de algemene sjabl
   >
   >Als het malplaatje wordt gevormd om een controlegroep in overweging te nemen, maar geen groep wordt bepaald in de levering die de hypothesen betreffen, zullen de resultaten op gerichte slechts ontvangers worden gebaseerd.
 
-  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
+  Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=nl-NL#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Channel]**: u kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campaign-console door **[!UICONTROL All channels]** te selecteren in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese. [Meer informatie](creating-hypotheses.md)
 

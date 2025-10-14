@@ -26,7 +26,7 @@ Assets dat door Adobe Experience Cloud wordt gedeeld, kan als volgt op uw e-mail
 
 1. Selecteer in het bewerkingsvenster de optie om een afbeelding toe te voegen:
 
-   * Als u de [&#x200B; standaard het uitgeven wijze &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} gebruikt, uitgezocht **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Als u de [&#x200B; standaard het uitgeven wijze &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=nl-NL#adding-images){target="_blank"} gebruikt, uitgezocht **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 
