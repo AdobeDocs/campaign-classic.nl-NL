@@ -82,7 +82,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowser. De inhoud is identiek aan de e-mail.
 
-Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsbloktoevoeging, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsbloktoevoeging, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=nl-NL){target="_blank"}.
 
 In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van het **[!UICONTROL Validity]** lusje u de generatiemodus voor deze pagina wijzigen.
 

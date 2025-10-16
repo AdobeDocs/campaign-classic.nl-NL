@@ -22,13 +22,13 @@ Als een eindgebruiker via cookies of webbeacons de functie voor het bijhouden va
 
 >[!NOTE]
 >
->Wanneer het scripting altijd de richtlijnen volgt die in [&#x200B; worden beschreven checklist van de Veiligheid en van de Privacy &#x200B;](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Wanneer het scripting altijd de richtlijnen volgt die in [&#x200B; worden beschreven checklist van de Veiligheid en van de Privacy &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 
 Om binnen de toepassingen van het Web of het Landing pagina&#39;s te worden getoond, moet de banner worden gevormd.
 
-Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=nl-NL){target="_blank"}.
 
 >[!IMPORTANT]
 >

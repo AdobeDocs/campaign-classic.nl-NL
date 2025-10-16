@@ -25,7 +25,7 @@ De volgende extensies worden ondersteund: &quot;.docx&quot;, &quot;.doc&quot; en
 
 Voor het personaliseren van uw documenten zijn dezelfde JavaScript-functies beschikbaar als voor het aanpassen van e-mails.
 
-U moet de optie **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Voor meer bij het vastmaken van een berekend dossier, verwijs de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
+U moet de optie **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Voor meer bij het vastmaken van een berekend dossier, verwijs de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=nl-NL){target="_blank"}.
 
 Voorbeeld van een personalisatie van de factuurheader:
 

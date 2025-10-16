@@ -66,12 +66,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Marketingcampagnes (Campagne) <br /> </td> 
-   <td> Definieert, optimaliseert, voert en analyseert mededelingen en marketing campagnes uit. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank"> leer meer </a><br /> </td> 
+   <td> Definieert, optimaliseert, voert en analyseert mededelingen en marketing campagnes uit. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=nl-NL" target="_blank"> leer meer </a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
    <td> De middelen van de marketing (MRM) <br /> </td> 
-   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html" target="_blank"> Leer meer </a> <br /> </td> 
+   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=nl-NL" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Toegang tot externe gegevens (Federated Data Access) <br /> </td> 
-   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank"> Leer meer </a> <br /> </td> 
+   <td> Verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen zodat u tot externe gegevens kunt toegang hebben zonder de structuur van de gegevens van Adobe Campaign te veranderen.  Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=nl-NL" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
    <td> Campagne optimaliseren <br /> </td> 
-   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html" target="_blank"> Leer meer </a> <br /> </td> 
+   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Marketing <br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Centrale/lokale Marketing (Verdeelde Marketing) <br /> </td> 
-   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html" target="_blank"> leer meer </a><br /> </td> 
+   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=nl-NL" target="_blank"> leer meer </a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Ondersteuning voor AMP <br /> </td> 
-   <td> Hiermee kunt u het nieuwe interactieve AMP gebruiken voor e-mailindeling en dynamische e-mailberichten verzenden. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank"> Leer meer </a> <br /> </td> 
+   <td> Hiermee kunt u het nieuwe interactieve AMP gebruiken voor e-mailindeling en dynamische e-mailberichten verzenden. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=nl-NL" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Alles </td> 
   </tr> 
   <tr> 
