@@ -22,19 +22,19 @@ Als een eindgebruiker via cookies of webbeacons de functie voor het bijhouden va
 
 >[!NOTE]
 >
->Wanneer het scripting altijd de richtlijnen volgt die in [ worden beschreven checklist van de Veiligheid en van de Privacy ](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Wanneer het scripting altijd de richtlijnen volgt die in [&#x200B; worden beschreven checklist van de Veiligheid en van de Privacy &#x200B;](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 
 Om binnen de toepassingen van het Web of het Landing pagina&#39;s te worden getoond, moet de banner worden gevormd.
 
-Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
 >Als u uw eigen banner wilt maken, moet u de uit-van-de-box banner personaliseren.
 
-Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Verwijs naar [ het Ontwerpen van een sectie van de Webtoepassing ](designing-a-web-application.md).
+Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Verwijs naar [&#x200B; het Ontwerpen van een sectie van de Webtoepassing &#x200B;](designing-a-web-application.md).
 
 Als het Web het volgen wordt geactiveerd, kunt u of hebben:
 

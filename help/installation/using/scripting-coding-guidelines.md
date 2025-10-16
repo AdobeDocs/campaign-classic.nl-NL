@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## Scripts
 
-Voor meer details, verwijs naar [ documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
+Voor meer details, verwijs naar [&#x200B; documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl).
 
 Als u een script maakt met behulp van workflow, webtoepassingen of jssp, volgt u de volgende aanbevolen procedures:
 
@@ -57,7 +57,7 @@ Om SQL-injecties te voorkomen, moeten SQL-functies worden toegevoegd aan de lijs
 >
 >Als u een bouwstijl gebruikt die ouder is dan 8140, zou de **optie XtkPassUnknownSQLFunctionsToRDBMS** aan &quot;1&quot;kunnen worden geplaatst. Als u uw database wilt beveiligen, verwijdert u deze optie (of stelt u deze in op &#39;0&#39;).
 
-Als u gebruikersinput gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - de bescherming van Gegevens: het ontsnappen van functies). Deze functies zijn:
+Als u gebruikersinput gebruikt om filters in vragen of SQL verklaringen te bouwen, moet u hen altijd ontsnappen (verwijs naar [&#x200B; de documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) - de bescherming van Gegevens: het ontsnappen van functies). Deze functies zijn:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -77,7 +77,7 @@ Raadpleeg de volgende pagina&#39;s:
 
 Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruiken om de acties van de operator te beperken:
 
-* U kunt sommige systeemfilters (sysFilter) toevoegen om het lezen/het schrijven aan uw gegevens (zie [ te verhinderen deze pagina ](../../configuration/using/filtering-schemas.md)).
+* U kunt sommige systeemfilters (sysFilter) toevoegen om het lezen/het schrijven aan uw gegevens (zie [&#x200B; te verhinderen deze pagina &#x200B;](../../configuration/using/filtering-schemas.md)).
 
   ```
   <sysFilter name="writeAccess">    
@@ -105,13 +105,13 @@ Naast het op mappen gebaseerde beveiligingsmodel kunt u benoemde rechten gebruik
 
 Als u vertrouwelijke gegevens (deel van een schema) afhankelijk van het niveau van de exploitanttoegang moet beschermen, verberg hen niet in de vormdefinitie (enabledIf/visibleIf voorwaarden).
 
-De volledige entiteit wordt geladen door het scherm, kunt u hen in kolomdefinitie ook tonen. Hiervoor moet u een overlooptabel maken. Verwijs [ deze pagina ](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+De volledige entiteit wordt geladen door het scherm, kunt u hen in kolomdefinitie ook tonen. Hiervoor moet u een overlooptabel maken. Verwijs [&#x200B; deze pagina &#x200B;](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Bijschriften toevoegen in webtoepassingen
 
 Het is aan te raden een Captcha toe te voegen op openbare aanlandingspagina&#39;s/abonnementspagina&#39;s. Helaas is het niet eenvoudig om een captcha toe te voegen aan DCE-pagina&#39;s (Digital Content Editor). We tonen u hoe u een v5-captcha of een Google reCAPTCHA toevoegt.
 
-De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U zult a **activiteit 0} van het Manuscript {en a** Test **moeten toevoegen.**
+De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkingsblok tot stand te brengen om het gemakkelijk binnen de paginacontent te omvatten. U zult a **activiteit 0&rbrace; van het Manuscript &lbrace;en a** Test **moeten toevoegen.**
 
 ### Personalization-blok
 
@@ -148,7 +148,7 @@ De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkings
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   U zou de bevestigingsknoop moeten kunnen onbruikbaar maken, maar aangezien wij geen standaardknoop/verbinding hebben, is het beter om het in de HTML zelf te doen. Leren hoe te om het te doen, verwijs naar [ deze pagina ](https://developers.google.com/recaptcha/).
+   U zou de bevestigingsknoop moeten kunnen onbruikbaar maken, maar aangezien wij geen standaardknoop/verbinding hebben, is het beter om het in de HTML zelf te doen. Leren hoe te om het te doen, verwijs naar [&#x200B; deze pagina &#x200B;](https://developers.google.com/recaptcha/).
 
 ### De webtoepassing bijwerken
 
@@ -168,7 +168,7 @@ De algemene manier om een captcha in DCE toe te voegen is een verpersoonlijkings
 
 1. Bewerk de **[!UICONTROL Script]** -activiteit. De inhoud is afhankelijk van de gekozen captcha-engine.
 
-1. Tot slot kunt u uw gepersonaliseerd blok in de pagina toevoegen: verwijs naar [ deze pagina ](../../web/using/editing-content.md).
+1. Tot slot kunt u uw gepersonaliseerd blok in de pagina toevoegen: verwijs naar [&#x200B; deze pagina &#x200B;](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -200,7 +200,7 @@ Regel 6: u kunt om het even welk soort foutenmelding zetten.
 
 ### Google recaptcha
 
-Gelieve te verwijzen naar de [ officiële documentatie ](https://developers.google.com/recaptcha/docs/verify).
+Gelieve te verwijzen naar de [&#x200B; officiële documentatie &#x200B;](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

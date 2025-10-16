@@ -22,7 +22,7 @@ Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken, en da
 
 >[!NOTE]
 >
->Als u JavaScript-code aan de serverzijde wilt toevoegen, gebruikt u aanpassingsblokken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+>Als u JavaScript-code aan de serverzijde wilt toevoegen, gebruikt u aanpassingsblokken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -38,22 +38,22 @@ De algemene actie is als volgt:
 
 Om een eenvoudige **Webtoepassing** tot stand te brengen, moet u:
 
-1. Creeer een Webtoepassing - [ leer meer ](creating-a-landing-page.md)
-1. Selecteer bestaande inhoud of creërend inhoud van een standaardmalplaatje - [ leer meer ](template-management.md)
-1. Bewerk en vorm inhoud - [ Leer meer ](editing-content.md)
-1. Publiceer de toepassing van het Web - [ leer meer ](creating-a-landing-page.md#step-3---publishing-content)
+1. Creeer een Webtoepassing - [&#x200B; leer meer &#x200B;](creating-a-landing-page.md)
+1. Selecteer bestaande inhoud of creërend inhoud van een standaardmalplaatje - [&#x200B; leer meer &#x200B;](template-management.md)
+1. Bewerk en vorm inhoud - [&#x200B; Leer meer &#x200B;](editing-content.md)
+1. Publiceer de toepassing van het Web - [&#x200B; leer meer &#x200B;](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->Een volledige implementatiemonster in de context van een Webtoepassing is beschikbaar in [ deze sectie ](creating-a-landing-page.md).
+>Een volledige implementatiemonster in de context van een Webtoepassing is beschikbaar in [&#x200B; deze sectie &#x200B;](creating-a-landing-page.md).
 
 Om een **e-maillevering** tot stand te brengen, moet u:
 
-1. Creeer een levering van een malplaatje DCE - [ leer meer ](use-case-creating-an-email-delivery.md)
-1. Selecteer een bestaande inhoud of creeer inhoud van a [ standaardmalplaatje ](template-management.md)
+1. Creeer een levering van een malplaatje DCE - [&#x200B; leer meer &#x200B;](use-case-creating-an-email-delivery.md)
+1. Selecteer een bestaande inhoud of creeer inhoud van a [&#x200B; standaardmalplaatje &#x200B;](template-management.md)
 1. Online-inhoud bewerken en configureren
-1. Verzend de levering - leer meer in de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Verzend de levering - leer meer in de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 
 >[!NOTE]
 >
->Een volledige implementatiemonster in de context van een e-maillevering is beschikbaar in [ dit gebruiksgeval ](use-case-creating-an-email-delivery.md).
+>Een volledige implementatiemonster in de context van een e-maillevering is beschikbaar in [&#x200B; dit gebruiksgeval &#x200B;](use-case-creating-an-email-delivery.md).
