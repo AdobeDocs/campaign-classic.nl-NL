@@ -6,9 +6,9 @@ badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toep
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1106'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Er zijn drie modi voor abonnementen/abonnementen op services:
 
 >[!NOTE]
 >
->Een steekproef om een abonnementvorm met dubbel te creëren opt-in wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+>Een steekproef om een abonnementvorm met dubbel te creëren opt-in wordt gedetailleerd in [ deze sectie ](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 ## Een informatiedienst maken {#creating-an-information-service}
 
@@ -54,13 +54,13 @@ Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Al
 
   >[!NOTE]
   >
-  >De abonnementen van Facebook en van X zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../social/using/about-social-marketing.md). De mobiele toepassingsabonnementen zijn gedetailleerd in [&#x200B; Ongeveer mobiel toepassingskanaal &#x200B;](about-mobile-app-channel.md).
+  >De abonnementen van Facebook en van X zijn gedetailleerd in [ deze sectie ](../../social/using/about-social-marketing.md). De mobiele toepassingsabonnementen zijn gedetailleerd in [ Ongeveer mobiel toepassingskanaal ](about-mobile-app-channel.md).
 
 * Voor een E-mail type dienst, selecteer de **wijze van de Levering**. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]** .
-* U kunt **bevestigingsberichten** voor een abonnement of unsubscription verzenden. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de bijbehorende leveringen te maken in de velden **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]** . Deze sjablonen moeten worden geconfigureerd met een **[!UICONTROL Subscription]** type target-toewijzing, zonder een gedefinieerd doel. Zie sectie [&#x200B; Ongeveer e-mailkanaal &#x200B;](about-email-channel.md).
+* U kunt **bevestigingsberichten** voor een abonnement of unsubscription verzenden. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de bijbehorende leveringen te maken in de velden **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]** . Deze sjablonen moeten worden geconfigureerd met een **[!UICONTROL Subscription]** type target-toewijzing, zonder een gedefinieerd doel. Zie sectie [ Ongeveer e-mailkanaal ](about-email-channel.md).
 * Abonnementen zijn standaard onbeperkt. U kunt de optie **[!UICONTROL Unlimited]** uitschakelen om een geldigheidsduur voor de service te definiëren. De duur kan in dagen (**[!UICONTROL d]** ) of maanden (**[!UICONTROL m]** ) worden gespecificeerd.
 
-Nadat de service is opgeslagen, wordt deze toegevoegd aan de lijst Services en abonnementen. Klik op de naam van de service om deze te bewerken. Er zijn verschillende tabbladen beschikbaar. Het **[!UICONTROL Subscriptions]** lusje laat u de lijst van abonnees aan de informatiedienst (**[!UICONTROL Active subscriptions]** lusje) of de abonnement/unsubscription geschiedenis (**[!UICONTROL History]** tabel) bekijken. U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [&#x200B; Toevoegend en schrappend abonnees &#x200B;](#adding-and-deleting-subscribers).
+Nadat de service is opgeslagen, wordt deze toegevoegd aan de lijst Services en abonnementen. Klik op de naam van de service om deze te bewerken. Er zijn verschillende tabbladen beschikbaar. Het **[!UICONTROL Subscriptions]** lusje laat u de lijst van abonnees aan de informatiedienst (**[!UICONTROL Active subscriptions]** lusje) of de abonnement/unsubscription geschiedenis (**[!UICONTROL History]** tabel) bekijken. U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [ Toevoegend en schrappend abonnees ](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -78,11 +78,11 @@ Klik op het tabblad **[!UICONTROL Subscriptions]** van een informatieservice op 
 
 Als u abonnees wilt verwijderen, selecteert u deze en klikt u op **[!UICONTROL Delete]** . U kunt ook met de rechtermuisknop op de abonnementenlijst klikken en **[!UICONTROL Delete]** selecteren.
 
-In beide gevallen, kunt u een bevestigingsbericht naar de betrokken gebruikers verzenden als een leveringsmalplaatje voor abonnementen in bijlage aan de dienst (zie [&#x200B; Creërend een informatiedienst &#x200B;](#creating-an-information-service)) is geweest. Met een waarschuwing kunt u deze levering valideren of niet valideren:
+In beide gevallen, kunt u een bevestigingsbericht naar de betrokken gebruikers verzenden als een leveringsmalplaatje voor abonnementen in bijlage aan de dienst (zie [ Creërend een informatiedienst ](#creating-an-information-service)) is geweest. Met een waarschuwing kunt u deze levering valideren of niet valideren:
 
 ![](assets/s_ncs_user_services_update.png)
 
-Zie [&#x200B; Abonnement en unsubscription mechanismen &#x200B;](#subscription-and-unsubscription-mechanisms).
+Zie [ Abonnement en unsubscription mechanismen ](#subscription-and-unsubscription-mechanisms).
 
 ## Het leveren aan de abonnees van een dienst {#delivering-to-the-subscribers-of-a-service}
 
@@ -136,7 +136,7 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  De werkschema&#39;s en hoe te om hen te gebruiken zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../workflow/using/about-workflows.md).
+  De werkschema&#39;s en hoe te om hen te gebruiken zijn gedetailleerd in [ deze sectie ](../../workflow/using/about-workflows.md).
 
 ### Een ontvanger afmelden bij een service {#unsubscribing-a-recipient-from-a-service}
 
@@ -144,9 +144,9 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
 e-mailleveringen moeten wettelijk gezien een link zonder abonnement bevatten. Ontvangers kunnen op deze koppeling klikken om hun profiel bij te werken en worden uitgesloten van de doelstellingen voor toekomstige leveringen.
 
-De standaard unsubscription verbinding wordt opgenomen via de laatste knoop in de toolbar van de inhoudsredacteur die in de leveringsmedewerker wordt verstrekt (zie [&#x200B; Ongeveer verpersoonlijking &#x200B;](about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van gewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
+De standaard unsubscription verbinding wordt opgenomen via de laatste knoop in de toolbar van de inhoudsredacteur die in de leveringsmedewerker wordt verstrekt (zie [ Ongeveer verpersoonlijking ](about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van gewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
 
-Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. Om dit toe te staan, kunt u een Webvorm gebruiken (verwijs naar [&#x200B; deze sectie &#x200B;](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of neemt een gepersonaliseerde unsubscription verbinding (zie [&#x200B; blokken van de Aanpassing &#x200B;](personalization-blocks.md)) op.
+Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. Om dit toe te staan, kunt u een Webvorm gebruiken (verwijs naar [ deze sectie ](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of een gepersonaliseerde unsubscription verbinding opnemen. Zie de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 U kunt het abonnement op een ontvanger ook handmatig opzeggen vanuit het ontvangende profiel. Klik hiertoe op het tabblad **[!UICONTROL Subscriptions]** van de betrokken ontvanger, selecteer de betrokken informatiedienst(en) en klik op **[!UICONTROL Delete]** .
 
@@ -158,7 +158,7 @@ Een informatiedienst kan een beperkte duur hebben. Ontvangers worden automatisch
 
 ![](assets/s_ncs_user_services_delay.png)
 
-U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementswerkstroom, maar selecteert u de optie **[!UICONTROL Unsubscription]** . Zie [&#x200B; Abonnerend een ontvanger aan de dienst &#x200B;](#subscribing-a-recipient-to-a-service).
+U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementswerkstroom, maar selecteert u de optie **[!UICONTROL Unsubscription]** . Zie [ Abonnerend een ontvanger aan de dienst ](#subscribing-a-recipient-to-a-service).
 
 ### Abonnementen bijhouden {#subscriber-tracking}
 

@@ -5,7 +5,7 @@ description: Opt-out voor tracking van een webapplicatie
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -18,23 +18,23 @@ ht-degree: 2%
 
 Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; u kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 
-Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van gedrag uitschakelt, wordt die informatie met JavaScript-API&#39;s naar de Adobe Campaign-traceringsserver verzonden. Houd er rekening mee dat sommige rechtsgebieden vereisen dat de klant eindgebruikers een opt-in biedt voordat een opt-out kan worden aangeboden (of andere wettelijke vereisten heeft) en dat de klant verantwoordelijk is voor het naleven van de toepasselijke wetgeving.
+Als een eindgebruiker via cookies of webbeacons de functie voor het bijhouden van gedrag uitschakelt, wordt die informatie met JavaScript API&#39;s naar de Adobe Campaign-traceringsserver verzonden. Houd er rekening mee dat sommige rechtsgebieden vereisen dat de klant eindgebruikers een opt-in biedt voordat een opt-out kan worden aangeboden (of andere wettelijke vereisten heeft) en dat de klant verantwoordelijk is voor het naleven van de toepasselijke wetgeving.
 
 >[!NOTE]
 >
->Volg bij het schrijven van scripts altijd de richtlijnen die in het dialoogvenster [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#dev).
+>Wanneer het scripting altijd de richtlijnen volgt die in [ worden beschreven checklist van de Veiligheid en van de Privacy ](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## De banner configureren {#configuring-the-banner-}
 
 Om binnen de toepassingen van het Web of het Landing pagina&#39;s te worden getoond, moet de banner worden gevormd.
 
-Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. Zie [deze pagina](../../delivery/using/personalization-blocks.md).
+Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moet aanpassen. Deze bannerversie wordt weergegeven als een verpersoonlijkingsblok in de map van het inhoudsmodel. verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
 >Als u uw eigen banner wilt maken, moet u de uit-van-de-box banner personaliseren.
 
-Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Zie de [Een webtoepassing ontwerpen](designing-a-web-application.md) sectie.
+Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Verwijs naar [ het Ontwerpen van een sectie van de Webtoepassing ](designing-a-web-application.md).
 
 Als het Web het volgen wordt geactiveerd, kunt u of hebben:
 
@@ -63,7 +63,7 @@ De standaardbanner heeft de volgende structuur:
       
 ```
 
-U moet de opdracht **Voeg hier uw bericht in** met het blok met de trackinggegevens. Deze vervanging zou in uw nieuw personaliseringsblok met betrekking tot de uit opt-banner moeten worden uitgevoerd.
+U moet **vervangen gelieve uw bericht hier** met het blok op te nemen dat uw het volgen informatie bevat. Deze vervanging zou in uw nieuw personaliseringsblok met betrekking tot de uit opt-banner moeten worden uitgevoerd.
 
 De banner wordt geleverd met een specifieke CSS. U kunt de stijlen echter overschrijven bij het maken en configureren van een webpagina. Zie [deze pagina](content-editor-interface.md).
 
@@ -71,7 +71,7 @@ De banner wordt geleverd met een specifieke CSS. U kunt de stijlen echter oversc
 
 Adobe Campaign wordt geleverd met API&#39;s waarmee u de cookiewaarde kunt beheren en gebruikersvoorkeuren kunt ophalen.
 
-De cookienaam is **acoptout**. De gemeenschappelijke waarden zijn:
+De koekjesnaam is **acoptout**. De gemeenschappelijke waarden zijn:
 
 * 0: gebruiker heeft webspatiëring toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
@@ -79,22 +79,22 @@ De cookienaam is **acoptout**. De gemeenschappelijke waarden zijn:
 
 De beschikbare client-side API&#39;s om de banner aan te passen zijn:
 
-* **NL.ClientWebTracking.allow()**: Stelt de waarde van het uitschakelcookie in om webtracking toe te staan. Webspatiëring is standaard toegestaan.
-* **NL.ClientWebTracking.forbid()**: Hiermee stelt u de waarde van de uitschakelcookie in om webtracking te verbieden. Webtracering vereist dat gebruikersinvoer wordt verboden.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Sluit de uitschakelcookie-banner nadat de gebruiker op de knop Accepteren of Weigeren heeft geklikt. (tijdens de terugkoppelfase van de klikgebeurtenis)
+* **NL.ClientWebTracking.allow ()**: Plaatst de opt-out koekjeswaarde om Web het volgen toe te staan. Webspatiëring is standaard toegestaan.
+* **NL.ClientWebTracking.forbid ()**: Plaatst de opt-out koekjeswaarde om het volgen van het Web te verbieden. Webtracering vereist dat gebruikersinvoer wordt verboden.
+* **NL.ClientWebTracking.closeOptOutBanner (bannerDomElt)**: Sluit de opt-out koekjesbanner nadat de gebruiker Accepteert of de knoop van de Weigering heeft geklikt. (tijdens de terugkoppelfase van de klikgebeurtenis)
 
-  bannerDomElt {DOMElement} het basis-DOM-element van de cookiebanner die moet worden verwijderd
+  bannerDomElt {DOMElement} het hoofd-DOM-element van de cookie-banner die moet worden verwijderd
 
-* **NL.ClientWebTracking.hasUserPrefs()**: Retourneert true als de gebruiker zijn voorkeuren voor webspatiëring heeft gekozen.
-* **NL.ClientWebTracking.getUserPrefs()**: Geeft de uitschakelcookie-waarde die de voorkeuren van de gebruiker definieert.
+* **NL.ClientWebTracking.hasUserPrefs ()**: Keert waar terug als de gebruiker hun voorkeur voor het volgen van het Web heeft gekozen.
+* **NL.ClientWebTracking.getUserPrefs ()**: Keert de opt-out koekjeswaarde terug die de voorkeur van de gebruiker bepaalt.
 
 Als u een JSSP moet schrijven, zijn de server-zij APIs beschikbaar:
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Genereert de opmaak voor de uitschakelbanner die in de JSSP-pagina moet worden ingevoegd
+* **NL.ServerWebTracking.generateOptOutBanner (escapeJs)**: Produceert de prijsverhoging voor de opt-out banner om in de JSSP pagina op te nemen
 
-  **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd om in JavaScript te kunnen worden gebruikt.
+  **escapeJs{Boolean}**: waar wanneer de geproduceerde prijsverhoging moet zijn ontsnapt om binnen JavaScript te worden gebruikt.
 
-  Deze geeft de HTML van de opmaakcode voor de uitschakelbanner die op de pagina moet worden afgedrukt.
+  Het retourneert de HTML van de opmaakcode voor de uitschakelbanner die op de pagina moet worden afgedrukt.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
@@ -104,11 +104,11 @@ Als u een JSSP moet schrijven, zijn de server-zij APIs beschikbaar:
 
   De banner moet worden weergegeven als de gebruiker er nog niet voor heeft gekozen om te worden bijgehouden of niet.
 
-* **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
+* **NL.ServerWebTracking.renderOptOutBanner (escapeJs)**
 
   Geeft de prijsverhoging voor de opt-out banner door het in te voegen in de JSSP pagina terug. Wordt aangeroepen als in JPEG tussen &lt;% %>
 
-  **escapeJs {Boolean}**: true wanneer de gegenereerde markering moet worden beschermd voor gebruik in JavaScript
+  **escapeJs{Boolean}**: waar wanneer de geproduceerde prijsverhoging moet zijn ontsnapt om binnen JavaScript te worden gebruikt
 
 JSSP-voorbeeld:
 

@@ -5,9 +5,9 @@ description: Content bewerken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Als u een zichtbaarheidsvoorwaarde wilt toevoegen, selecteert u een blok en voer
 
 >[!NOTE]
 >
->Geavanceerde uitdrukking het uitgeven wordt voorgesteld op [&#x200B; deze pagina &#x200B;](../../platform/using/about-queries-in-campaign.md).
+>Geavanceerde uitdrukking het uitgeven wordt voorgesteld op [ deze pagina ](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -164,7 +164,7 @@ De **Verbinding die een actie** optie bepaalt laat u een actie vormen wanneer he
 
 >[!NOTE]
 >
->De beschikbare acties worden gedetailleerd in [&#x200B; Toevoegend een actie aan een knoop &#x200B;](#adding-an-action-to-a-button) sectie.
+>De beschikbare acties worden gedetailleerd in [ Toevoegend een actie aan een knoop ](#adding-an-action-to-a-button) sectie.
 
 ### Een koppeling verwijderen {#delete-a-link}
 
@@ -249,7 +249,7 @@ Standaard komen de velden uit de tabel **[!UICONTROL Recipient]** . Indien nodig
 
 De veldnaam wordt in de editor weergegeven en geel gemarkeerd. Deze wordt vervangen door het profiel van de beoogde ontvanger wanneer de personalisatie wordt gegenereerd (bijvoorbeeld wanneer een voorvertoning van een landingspagina wordt weergegeven).
 
-Een voorbeeld wordt voorgesteld in het [&#x200B; Tussenvoegend een verpersoonlijkingsgebied &#x200B;](creating-a-landing-page.md#inserting-a-personalization-field) sectie.
+Een voorbeeld wordt voorgesteld in het [ Tussenvoegend een verpersoonlijkingsgebied ](creating-a-landing-page.md#inserting-a-personalization-field) sectie.
 
 ### Een aanpassingsblok invoegen {#inserting-a-personalization-block}
 
@@ -259,4 +259,4 @@ De **het blok van Personalization** optie laat u dynamische en gepersonaliseerde
 
 Zodra opgenomen, verschijnt de naam van het verpersoonlijkingsblok in de redacteur, die in geel wordt benadrukt. Het wordt automatisch aangepast aan het ontvankelijke profiel wanneer de verpersoonlijking wordt geproduceerd.
 
-Voor meer op ingebouwde verpersoonlijkingsblokken en hoe te om de blokken van de douaneverpersoonlijking te bepalen, verwijs naar [&#x200B; deze pagina &#x200B;](../../delivery/using/personalization-blocks.md).
+Voor meer op ingebouwde verpersoonlijkingsblokken en hoe te om de blokken van de douaneverpersoonlijking te bepalen, verwijs naar de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.

@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 72%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [ 2022 - VERBORGEN ](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -119,7 +119,7 @@ ht-degree: 72%
       + [Aangepaste inhoud maken - VERBORGEN](delivery/using/design-and-personalize.md)
       + [Het juiste publiek definiëren - VERBORGEN](delivery/using/define-the-right-audience.md)
       + [Controleren vóór verzending - VERBORGEN](delivery/using/check-before-sending.md)
-      + [&#x200B; Spoor en monitor - VERBORGEN &#x200B;](delivery/using/track-and-monitor.md)
+      + [ Spoor en monitor - VERBORGEN ](delivery/using/track-and-monitor.md)
    + [E-mails verzenden](delivery/using/about-email-channel.md)
    + E-mails verzenden {#sending-emails}
       + [E-maillevering maken - VERBORGEN](delivery/using/creating-an-email-delivery.md)
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [Een levering maken op basis van een sjabloon - VERBORGEN](delivery/using/creating-a-delivery-from-a-template.md)
    + Verzendingen personaliseren {#personalizing-deliveries}
       + [Personalisatie](delivery/using/about-personalization.md)
-      + [Personalisatievelden](delivery/using/personalization-fields.md)
-      + [Personalisatieblokken](delivery/using/personalization-blocks.md)
-      + [Voorwaardelijke content](delivery/using/conditional-content.md)
-      + [Gepersonaliseerde coupons](delivery/using/personalized-coupons.md)
-      + [Gepersonaliseerde PDF-documenten genereren](delivery/using/generating-personalized-pdf-documents.md)
+      + [Velden aanpassen - VERBORGEN](delivery/using/personalization-fields.md)
+      + [Personeelsblokken - VERBORGEN](delivery/using/personalization-blocks.md)
+      + [Voorwaardelijke inhoud - VERBORGEN](delivery/using/conditional-content.md)
+      + [Persoonlijke coupons - VERBORGEN](delivery/using/personalized-coupons.md)
+      + [Aangepaste PDF-documenten genereren - VERBORGEN](delivery/using/generating-personalized-pdf-documents.md)
       + [De lijst met emoticons aanpassen](delivery/using/customizing-emoticon-list.md)
    + Seedadressen gebruiken {#using-seed-addresses}
       + [Seedadressen](delivery/using/about-seed-addresses.md)
@@ -237,7 +237,7 @@ ht-degree: 72%
    + [Info over Campagne optimaliseren - VERBORGEN](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
       + [Marketing campagnes ontwerpen - HIDDEN](campaign/using/designing-marketing-campaigns.md)
-      + [&#x200B; de marketing van de Toegang campagnes - VERBORGEN &#x200B;](campaign/using/accessing-marketing-campaigns.md)
+      + [ de marketing van de Toegang campagnes - VERBORGEN ](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes - HIDDEN](campaign/using/setting-up-marketing-campaigns.md)
       + [Sjablonen maken en configureren - VERBORGEN](campaign/using/marketing-campaign-templates.md)
@@ -339,7 +339,7 @@ ht-degree: 72%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -477,7 +477,7 @@ ht-degree: 72%
    + Data management {#data-management}
       + [Coördinaatgegevensupdates - VERBORGEN](workflow/using/coordinating-data-updates.md)
       + [Een samenvattingslijst maken - VERBORGEN](workflow/using/creating-a-summary-list.md)
-      + [&#x200B; verrijkt gegevens - VERBORGEN &#x200B;](workflow/using/enriching-data.md)
+      + [ verrijkt gegevens - VERBORGEN ](workflow/using/enriching-data.md)
       + [aggregaten gebruiken - VERBORGEN](workflow/using/using-aggregates.md)
       + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken - HIDDEN](workflow/using/deduplication-merge.md)
       + [Een terugkerende importworkflow instellen - VERBORGEN](workflow/using/recurring-import-workflow.md)
@@ -573,7 +573,7 @@ ht-degree: 72%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
