@@ -172,7 +172,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Couponbeheer <br /> </td> 
-   <td> Hiermee maakt u een set coupons die u kunt toevoegen aan de volgende marketingaanbiedingen. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank"> Leer meer </a> <br /> </td> 
+   <td> Hiermee maakt u een set coupons die u kunt toevoegen aan de volgende marketingaanbiedingen. Optioneel. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=nl-NL" target="_blank"> Leer meer </a> <br /> </td> 
    <td> Marketing <br /> </td> 
   </tr> 
   <tr> 

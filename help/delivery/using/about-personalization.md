@@ -45,8 +45,8 @@ Leer de belangrijkste stappen met betrekking tot voorwaardelijke inhoud en verpe
 Verwijs naar deze pagina&#39;s om over gepersonaliseerde coupons, de documenten van PDF en emoticon aanpassing **in de documentatie van de Campagne v8** te leren:
 
 * [&#x200B; Gepersonaliseerde coupons &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}: Leer om gepersonaliseerde of anonieme coupons in uw e-mailleveringen tot stand te brengen en toe te wijzen.
-* [&#x200B; produceer gepersonaliseerde documenten van PDF &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}: Leer hoe te om de gehechtheid van PDF met gepersonaliseerde inhoud voor elke ontvanger te produceren.
-* [&#x200B; pas de emoticonlijst &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"} aan: Leer hoe te om emoticons toe te voegen en te beheren om e-mailberichten te verbeteren.
+* [&#x200B; produceer gepersonaliseerde documenten van PDF &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=nl-NL){target="_blank"}: Leer hoe te om de gehechtheid van PDF met gepersonaliseerde inhoud voor elke ontvanger te produceren.
+* [&#x200B; pas de emoticonlijst &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=nl-NL){target="_blank"} aan: Leer hoe te om emoticons toe te voegen en te beheren om e-mailberichten te verbeteren.
 
 >[!ENDTABS]
 
