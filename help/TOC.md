@@ -119,7 +119,7 @@ ht-degree: 0%
       + [Aangepaste inhoud maken - VERBORGEN](delivery/using/design-and-personalize.md)
       + [Het juiste publiek definiëren - VERBORGEN](delivery/using/define-the-right-audience.md)
       + [Controleren vóór verzending - VERBORGEN](delivery/using/check-before-sending.md)
-      + [ Spoor en monitor - VERBORGEN ](delivery/using/track-and-monitor.md)
+      + [&#x200B; Spoor en monitor - VERBORGEN &#x200B;](delivery/using/track-and-monitor.md)
    + [E-mails verzenden](delivery/using/about-email-channel.md)
    + E-mails verzenden {#sending-emails}
       + [E-maillevering maken - VERBORGEN](delivery/using/creating-an-email-delivery.md)
@@ -237,7 +237,7 @@ ht-degree: 0%
    + [Info over Campagne optimaliseren - VERBORGEN](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
       + [Marketing campagnes ontwerpen - HIDDEN](campaign/using/designing-marketing-campaigns.md)
-      + [ de marketing van de Toegang campagnes - VERBORGEN ](campaign/using/accessing-marketing-campaigns.md)
+      + [&#x200B; de marketing van de Toegang campagnes - VERBORGEN &#x200B;](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes - HIDDEN](campaign/using/setting-up-marketing-campaigns.md)
       + [Sjablonen maken en configureren - VERBORGEN](campaign/using/marketing-campaign-templates.md)
@@ -339,7 +339,7 @@ ht-degree: 0%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -477,7 +477,7 @@ ht-degree: 0%
    + Data management {#data-management}
       + [Coördinaatgegevensupdates - VERBORGEN](workflow/using/coordinating-data-updates.md)
       + [Een samenvattingslijst maken - VERBORGEN](workflow/using/creating-a-summary-list.md)
-      + [ verrijkt gegevens - VERBORGEN ](workflow/using/enriching-data.md)
+      + [&#x200B; verrijkt gegevens - VERBORGEN &#x200B;](workflow/using/enriching-data.md)
       + [aggregaten gebruiken - VERBORGEN](workflow/using/using-aggregates.md)
       + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken - HIDDEN](workflow/using/deduplication-merge.md)
       + [Een terugkerende importworkflow instellen - VERBORGEN](workflow/using/recurring-import-workflow.md)
@@ -573,7 +573,7 @@ ht-degree: 0%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
