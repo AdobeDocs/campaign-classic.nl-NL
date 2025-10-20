@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 72%
    + Eerdere releases {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [&#x200B; 2022 - VERBORGEN &#x200B;](rn/using/release-2022.md)
+      + [2022 - VERBORGEN](rn/using/release-2022.md)
       + [2021 - VERBORGEN](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
@@ -32,12 +32,12 @@ ht-degree: 72%
 + Aan de slag {#getting-started}
    + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
-   + [Campagne-UI detecteren](platform/using/adobe-campaign-workspace.md)
-   + [Campagneverkenner gebruiken - Verborgen](platform/using/adobe-campaign-explorer.md)
-   + [Bladeren en lijsten aanpassen - Verborgen](platform/using/adobe-campaign-ui-lists.md)
+   + [De Campaign-UI ontdekken](platform/using/adobe-campaign-workspace.md)
+   + [Campaign Explorer gebruiken - VERBORGEN](platform/using/adobe-campaign-explorer.md)
+   + [Lijsten verkennen en aanpassen - VERBORGEN](platform/using/adobe-campaign-ui-lists.md)
    + [Opsommingen - VERBORGEN](platform/using/managing-enumerations.md)
    + [Campaign-connectoren](platform/using/about-connectors.md)
-   + [Query&#39;s maken in campagne](platform/using/about-queries-in-campaign.md)
+   + [Query’s maken in Campaign](platform/using/about-queries-in-campaign.md)
    + Veelgestelde vragen {#faq}
       + [Populaire vragen](platform/using/common-questions.md)
       + [Algemene concepten](platform/using/faq-key-concepts.md)
@@ -62,8 +62,8 @@ ht-degree: 72%
    + Profielmanagement {#profile-management}
       + [Over profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken - VERBORGEN](platform/using/editing-a-profile.md)
-      + [Profielen toevoegen - Verborgen](platform/using/adding-profiles.md)
-      + [Profielen beheren - Verborgen](platform/using/managing-profiles.md)
+      + [Profielen toevoegen - VERBORGEN](platform/using/adding-profiles.md)
+      + [Profielen beheren - VERBORGEN](platform/using/managing-profiles.md)
       + [Gegevens bijwerken](platform/using/updating-data.md)
       + [Profielen importeren en exporteren - VERBORGEN](platform/using/exporting-and-importing-profiles.md)
       + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
@@ -87,8 +87,8 @@ ht-degree: 72%
    + Gegevens filteren {#filtering-data}
       + [Filteropties - VERBORGEN](platform/using/filtering-options.md)
       + [Filters maken - VERBORGEN](platform/using/creating-filters.md)
-      + [Hoofdlettergebruik - Verborgen](platform/using/use-case.md)
-   + [Stappen om een vraag tot stand te brengen - VERBORGEN](platform/using/steps-to-create-a-query.md)
+      + [Gebruiksscenario - Verborgen](platform/using/use-case.md)
+   + [Stappen om een query te maken - VERBORGEN](platform/using/steps-to-create-a-query.md)
    + [Filtervoorwaarden definiëren - VERBORGEN](platform/using/defining-filter-conditions.md)
    + Machtigingen {#permissions}
       + [Aan de slag met machtigingen](platform/using/access-management.md)
@@ -119,7 +119,7 @@ ht-degree: 72%
       + [Aangepaste inhoud maken - VERBORGEN](delivery/using/design-and-personalize.md)
       + [Het juiste publiek definiëren - VERBORGEN](delivery/using/define-the-right-audience.md)
       + [Controleren vóór verzending - VERBORGEN](delivery/using/check-before-sending.md)
-      + [&#x200B; Spoor en monitor - VERBORGEN &#x200B;](delivery/using/track-and-monitor.md)
+      + [ Spoor en monitor - VERBORGEN ](delivery/using/track-and-monitor.md)
    + [E-mails verzenden](delivery/using/about-email-channel.md)
    + E-mails verzenden {#sending-emails}
       + [E-maillevering maken - VERBORGEN](delivery/using/creating-an-email-delivery.md)
@@ -152,7 +152,7 @@ ht-degree: 72%
          + [Een pushbericht maken voor iOS - HIDDEN](delivery/using/create-notifications-ios.md)
          + [Een pushbericht maken voor Android - HIDDEN](delivery/using/create-notifications-android.md)
       + [Problemen oplossen - VERBORGEN](delivery/using/troubleshooting.md)
-   + [Directe e-mail verzenden](delivery/using/about-direct-mail-channel.md)
+   + [Directe mails verzenden](delivery/using/about-direct-mail-channel.md)
    + Direct mail verzenden {#sending-direct-mail}
       + [Een directe postbezorging maken - VERBORGEN](delivery/using/creating-a-direct-mail-delivery.md)
       + [De inhoud voor direct mail definiëren - VERBORGEN](delivery/using/defining-the-direct-mail-content.md)
@@ -237,7 +237,7 @@ ht-degree: 72%
    + [Info over Campagne optimaliseren - VERBORGEN](campaign-opt/using/about-campaign-optimization.md)
    + Marketingcampagnes {#about-marketing-campaigns}
       + [Marketing campagnes ontwerpen - HIDDEN](campaign/using/designing-marketing-campaigns.md)
-      + [&#x200B; de marketing van de Toegang campagnes - VERBORGEN &#x200B;](campaign/using/accessing-marketing-campaigns.md)
+      + [ de marketing van de Toegang campagnes - VERBORGEN ](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
       + [Aan de slag met marketingcampagnes - HIDDEN](campaign/using/setting-up-marketing-campaigns.md)
       + [Sjablonen maken en configureren - VERBORGEN](campaign/using/marketing-campaign-templates.md)
@@ -339,7 +339,7 @@ ht-degree: 72%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -382,11 +382,11 @@ ht-degree: 72%
       + [De integratie met [!DNL Adobe Target] configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [Aan de slag met  [!DNL ACS Connector]  - HIDDEN](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Aan de slag met [!DNL ACS Connector] - VERBORGEN](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren - VERBORGEN](integrations/using/synchronizing-profiles.md)
-      + [Synchroniseren, publiek - VERBORGEN](integrations/using/synchronizing-audiences.md)
-      + [Webtoepassingen synchroniseren - VERBORGEN](integrations/using/synchronizing-web-applications.md)
-      + [Los  [!DNL ACS Connector]  - VERBORGEN problemen op](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Doelgroepen synchroniseren - VERBORGEN](integrations/using/synchronizing-audiences.md)
+      + [Webapplicaties synchroniseren - VERBORGEN](integrations/using/synchronizing-web-applications.md)
+      + [Problemen oplossen met de [!DNL ACS Connector] - VERBORGEN](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatiseren met workflows](workflow/using/about-workflows.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Aan de slag met workflows {#introduction}
@@ -477,7 +477,7 @@ ht-degree: 72%
    + Data management {#data-management}
       + [Coördinaatgegevensupdates - VERBORGEN](workflow/using/coordinating-data-updates.md)
       + [Een samenvattingslijst maken - VERBORGEN](workflow/using/creating-a-summary-list.md)
-      + [&#x200B; verrijkt gegevens - VERBORGEN &#x200B;](workflow/using/enriching-data.md)
+      + [ verrijkt gegevens - VERBORGEN ](workflow/using/enriching-data.md)
       + [aggregaten gebruiken - VERBORGEN](workflow/using/using-aggregates.md)
       + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken - HIDDEN](workflow/using/deduplication-merge.md)
       + [Een terugkerende importworkflow instellen - VERBORGEN](workflow/using/recurring-import-workflow.md)
@@ -573,7 +573,7 @@ ht-degree: 72%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)

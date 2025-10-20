@@ -10,8 +10,8 @@ hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3865'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -419,7 +419,7 @@ Er zijn nu instructievideo’s beschikbaar over de volgende onderwerpen:
 
 * [E-mails personaliseren met personalisatievelden](../../delivery/using/personalization-fields.md)
 
-* [&#x200B; hoe te om zaad en proeven in e-mail &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#target-population){target="_blank"} te beheren.
+* [ hoe te om zaad en proeven in e-mail ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"} te beheren.
 
 * [Een terugkerende levering instellen](../../workflow/using/recurring-delivery.md)
 
