@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '850'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## Drempels controleren {#monitoring-thresholds}
 
-U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in het **de dienstniveau van het Centrum van het Bericht** en **de verwerkingstijd van het Centrum van het Bericht** rapporten verschijnen (verwijs naar [&#x200B; de transactionele overseinenrapporten van de Toegang &#x200B;](../../message-center/using/about-transactional-messaging-reports.md)).
+U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in het **de dienstniveau van het Centrum van het Bericht** en **de verwerkingstijd van het Centrum van het Bericht** rapporten verschijnen (verwijs naar [ de transactionele overseinenrapporten van de Toegang ](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -34,13 +34,13 @@ Hiervoor voert u de volgende stappen uit:
 
 >[!NOTE]
 >
->Het aantal gebeurtenissen die in rij in behandeling zijn wordt getoond in de [&#x200B; sectie van de indicatoren van het Systeem &#x200B;](../../production/using/monitoring-processes.md#system-indicators) van de het procescontrole pagina van Adobe Campaign. Voor meer informatie over de plaatsingstovenaar, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/deploying-an-instance.md#deployment-assistant).
+>Het aantal gebeurtenissen die in rij in behandeling zijn wordt getoond in de [ sectie van de indicatoren van het Systeem ](../../production/using/monitoring-processes.md#system-indicators) van de het procescontrole pagina van Adobe Campaign. Voor meer informatie over de plaatsingstovenaar, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 ## Gebeurtenissen opschonen {#purging-events}
 
-U kunt de [&#x200B; plaatsingstovenaar &#x200B;](../../production/using/database-cleanup-workflow.md#deployment-assistant) gebruiken om te vormen hoe lang het gegeven in het gegevensbestand moet worden opgeslagen.
+U kunt de [ plaatsingstovenaar ](../../production/using/database-cleanup-workflow.md#deployment-assistant) gebruiken om te vormen hoe lang het gegeven in het gegevensbestand moet worden opgeslagen.
 
-De ontruiming van de gebeurtenis wordt uitgevoerd automatisch door het [&#x200B; opschoonwerkschema van het Gegevensbestand &#x200B;](../../production/using/database-cleanup-workflow.md). Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
+De ontruiming van de gebeurtenis wordt uitgevoerd automatisch door het [ opschoonwerkschema van het Gegevensbestand ](../../production/using/database-cleanup-workflow.md). Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
 
 Gebruik de pijlen naar wens om de instellingen voor leegmaken te wijzigen.
 
@@ -52,7 +52,7 @@ Instellingen voor het opschonen van gebeurtenissen op een uitvoeringsinstantie:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Voor meer op het werkschema van de gegevensbestandschoonmaak, zie [&#x200B; deze sectie &#x200B;](../../production/using/database-cleanup-workflow.md).
+Voor meer op het werkschema van de gegevensbestandschoonmaak, zie [ deze sectie ](../../production/using/database-cleanup-workflow.md).
 
 
 ## Technische workflows {#technical-workflows}
@@ -102,6 +102,12 @@ Als u het het archiveren werkschema wijzigt, moet u het **volgen werkschema** pr
 
 In deze sectie wordt één oplossing beschreven voor het configureren van URL&#39;s voor bijhouden en spiegelen per merk, voor transactieberichten in Adobe Campaign.
 
+### Compatibiliteitsnotitie {#compatibility-note}
+
+Deze erfenisbranding configuratie is niet compatibel met het nieuwe [ gecentraliseerde branding ](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} model dat in Campagne v8 wordt geïntroduceerd.
+
+Als uw bestaande omgeving deze oudere configuratie gebruikt, kan deze niet rechtstreeks worden gemigreerd naar het nieuwe gecentraliseerde brandingmodel. Voor de invoering van het nieuwe systeem is een volledige herimplementatie van de branding-instellingen vereist.
+
 ### Vereisten {#prerequisites}
 
 * Alle gastheren moeten aan het configuratiedossier van de instantie (`config-<instance>.xml`) worden toegevoegd.
@@ -118,7 +124,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >Leer hoe te om een uitvoerinstantie tot stand te brengen externe rekening in [&#x200B; deze sectie &#x200B;](../../message-center/using/configuring-instances.md#control-instance).
+   >Leer hoe te om een uitvoerinstantie tot stand te brengen externe rekening in [ deze sectie ](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Breid het nms :extAccount schema uit om het volgen URL toe te voegen:
 
@@ -129,7 +135,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >Leer hoe te om een bestaand schema in [&#x200B; uit te breiden Uitbreidend een schema &#x200B;](../../configuration/using/extending-a-schema.md) sectie.
+   >Leer hoe te om een bestaand schema in [ uit te breiden Uitbreidend een schema ](../../configuration/using/extending-a-schema.md) sectie.
 
 1. Wijzig de nms :extAccount vorm:
 
@@ -167,8 +173,8 @@ Voor de controleinstantie, moet u leveringsmalplaatjes en externe rekeningen ver
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [&#x200B; uitvoeringsinstantie &#x200B;](#execution-instance) wordt bepaald (stap 1).
+1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [ uitvoeringsinstantie ](#execution-instance) wordt bepaald (stap 1).
 
-1. Een leveringssjabloon per merk maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}.
+1. Een leveringssjabloon per merk maken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.
