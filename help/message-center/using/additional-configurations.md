@@ -104,7 +104,7 @@ In deze sectie wordt één oplossing beschreven voor het configureren van URL&#3
 
 ### Compatibiliteitsnotitie {#compatibility-note}
 
-Deze erfenisbranding configuratie is niet compatibel met het nieuwe [&#x200B; gecentraliseerde branding &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} model dat in Campagne v8 wordt geïntroduceerd.
+Deze erfenisbranding configuratie is niet compatibel met het nieuwe [&#x200B; gecentraliseerde branding &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=nl-NL){target="_blank"} model dat in Campagne v8 wordt geïntroduceerd.
 
 Als uw bestaande omgeving deze oudere configuratie gebruikt, kan deze niet rechtstreeks worden gemigreerd naar het nieuwe gecentraliseerde brandingmodel. Voor de invoering van het nieuwe systeem is een volledige herimplementatie van de branding-instellingen vereist.
 
@@ -175,6 +175,6 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Creeer één externe rekening per merk met de zelfde interne naam zoals die op de [&#x200B; uitvoeringsinstantie &#x200B;](#execution-instance) wordt bepaald (stap 1).
 
-1. Een leveringssjabloon per merk maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Een leveringssjabloon per merk maken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=nl-NL){target="_blank"}.
 
 1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.
