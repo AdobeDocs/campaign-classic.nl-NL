@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -472,7 +472,7 @@ De Campaign SDK is [verouderd](deprecated-features.md) vanaf Campaign v7.4. Om e
 
 ## Browsers {#Browsers}
 
-De volgende browsers, in hun meest recente versie, zijn compatibel met Campagne voor Webtoegang. Voor meer op dit, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=nl-NL#use-the-web-interface-){target=_blank}.
+De nieuwste versies van de volgende browsers zijn compatibel met Campaign voor webtoegang. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=nl#use-the-web-interface-){target=_blank} voor meer informatie hierover.
 
 * Google Chrome
 * Microsoft Edge
@@ -483,7 +483,7 @@ De volgende browsers, in hun meest recente versie, zijn compatibel met Campagne 
 
 >[!MORELIKETHIS]
 >
->* [Opmerkingen bij de release van Campaign Classic &#x200B;](../../rn/using/latest-release.md)
+>* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
 >* [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
 >* [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 >* [Verouderde functies en systemen](../../rn/using/deprecated-features.md)

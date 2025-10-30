@@ -4,9 +4,9 @@ product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '341'
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Ervaring van de klant</strong><br/><a href="workflow/using/about-workflows.md">Automatiseren met workflows</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl-NL" target="_blank">Marketingcampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interactie- en aanbodbeheer</a> - <a href="delivery/using/about-personalization.md">Personalisatie</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportage</a>
+      <strong>Ervaring van de klant</strong><br/><a href="workflow/using/about-workflows.md">Automatiseren met workflows</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=nl" target="_blank">Marketingcampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interactie- en aanbodbeheer</a> - <a href="delivery/using/about-personalization.md">Personalisatie</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportage</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

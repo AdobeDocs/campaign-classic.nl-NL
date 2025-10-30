@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1658'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
     <tr>
   <td>Rapport Technical Deliverability Monitoring<br></td>
    <td><p>Het rapport Technical Deliverability Monitoring is niet meer beschikbaar. Deze is vervangen door de release van Campaign 21.1.3.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -99,7 +99,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   </tr>
   <tr>  
    <td>Faxkanaal<br></td>
-   <td><p>Vanaf Campaign 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL" target="_blank"> leer meer in de documentatie van de Campagne v8 </a></p>
+   <td><p>Vanaf Campaign 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl" target="_blank">Meer informatie in de Campaign v8-documentatie</a></p>
   </tr>
   <tr>
   <td>Demdex-domein<br></td>
@@ -137,7 +137,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   <tr> 
    <td>decryptString API</td>
    <td><p>Vanaf de release van Campaign 18.6 is de <em>decryptString</em> API om veiligheidsredenen standaard niet meer beschikbaar voor nieuwe installaties.</p> 
-   <p>Na een upgrade naar 18.6 (en hoger) wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=nl-NL&hl=decrypt">Meer informatie</a></p></td>
+   <p>Na een upgrade naar 18.6 (en hoger) wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Meer informatie</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiel kanaal - MMS- en WAP-pushberichten</td>
