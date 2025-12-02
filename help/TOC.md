@@ -3,12 +3,13 @@ audience: end-user
 breadcrumb-title: Documentatie voor Campaign Classic v7
 product: campaign
 title: Gids voor Campaign Classic v7
+user-guide-title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
@@ -483,7 +484,7 @@ ht-degree: 100%
       + [Een workflow instellen voor terugkerende importactiviteiten - VERBORGEN](workflow/using/recurring-import-workflow.md)
    + Query&#39;s ontwerpen {#designing-queries}
       + [Driemaandelijkse lijstupdate met een incrementele query - VERBORGEN](workflow/using/quarterly-list-update.md)
-   + Query&#39;s uitvoeren en filteren {#designing-queries}
+   + Query&#39;s uitvoeren en filteren {#query-and-filter-hidden}
       + [Een query uitvoeren op de tabel met ontvangers - VERBORGEN](workflow/using/querying-recipient-table.md)
       + [Een query uitvoeren op de leveringsinformatie - VERBORGEN](workflow/using/querying-delivery-information.md)
       + [Samengevoegde berekeningen uitvoeren - VERBORGEN](workflow/using/performing-aggregate-computing.md)
