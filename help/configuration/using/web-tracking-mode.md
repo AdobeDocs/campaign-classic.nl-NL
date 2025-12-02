@@ -3,11 +3,11 @@ product: campaign
 title: Webtrackingmodus
 description: Leer hoe u de webtraceringsmodus selecteert
 feature: Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Merk op dat als u het **permanente Web** of **anonieme** het volgen wijze gebrui
 </dbindex>
 ```
 
-**Permanent &lbrace;en** Anonieme **het volgen van het Web wijzen omvatten twee opties:** Geforceerde levering **en** Laatste levering **.**
+**Permanent {en** Anonieme **het volgen van het Web wijzen omvatten twee opties:** Geforceerde levering **en** Laatste levering **.**
 
 De **Geforceerde levering** optie laat u toe om het herkenningsteken van de levering (@jobid) tijdens het volgen te specificeren.
 
@@ -80,7 +80,7 @@ Deze wijze is het duurst in termen van berekening en volume.
 
 >[!NOTE]
 >
->Als het **[!UICONTROL Leads]** pakket geïnstalleerd is, moet u het zelfde voor de activiteitenlijst doen (**crm:innerLead**)
+>Als het **[!UICONTROL Leads]** pakket geïnstalleerd is, moet u het zelfde voor de activiteitenlijst doen (**crm:incomingLead**)
 
 Het volgende schema vat de functionaliteit van alle drie het volgen wijzen van het Web samen:
 

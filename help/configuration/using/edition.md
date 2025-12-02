@@ -3,9 +3,9 @@ product: campaign
 title: Navigatiestructuur van Campagneverkenner bewerken
 description: Navigatiestructuur van Campagneverkenner bewerken
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Navigatiestructuur van Campagneverkenner bewerken{#edition}
 
-Het scherm voor het maken en configureren van de configuratiedocumenten voor de navigatiehiërarchie is toegankelijk via **[!UICONTROL Administration > Configuration > Navigation hierarchies]** knooppunt:
+Het scherm voor het maken en configureren van de configuratiedocumenten van de navigatiehiërarchie is toegankelijk via het knooppunt **[!UICONTROL Administration > Configuration > Navigation hierarchies]** :
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ Het bewerkingsveld bevat de inhoud van het XML-document:
 
 >[!NOTE]
 >
->Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van de **`<navtree>`** het element wordt automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
+>Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van het **`<navtree>`** -element worden automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
 
 In de voorvertoning wordt automatisch het samengevoegde document met de volledige configuratie gegenereerd:
 

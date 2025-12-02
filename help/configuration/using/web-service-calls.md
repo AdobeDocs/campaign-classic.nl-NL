@@ -3,11 +3,11 @@ product: campaign
 title: Webserviceaanroepen
 description: Webserviceaanroepen
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De diensten van het Web laten u vele toepassingen van een derdesysteem tot stand
 
 De definitie van de diensten van het Web die op de de toepassingsserver van Adobe Campaign worden uitgevoerd is beschikbaar bij de gegevensschema&#39;s.
 
-De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij de **`<methods>`** element.
+Een dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij het **`<methods>`** element.
 
 ```
 <methods>
@@ -43,17 +43,17 @@ De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#3
 </methods>
 ```
 
-Hier hebben we een voorbeeld van de definitie van de methode die **GenerateForm**.
+Hier hebben wij een voorbeeld van de definitie van de methode genoemd **GenerateForm**.
 
-De beschrijving van de dienst begint met de `<method>` element. De lijst met parameters van de methode wordt voltooid via de  `<parameters>` element. Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Het &quot;inout&quot;attribuut met de &quot;uit&quot;waarde laat u specificeren dat de &quot;resultaat&quot;parameter bij de vraagoutput van de ZEEP is.
+De beschrijving van de service begint met het element `<method>` . De lijst met parameters van de methode wordt voltooid vanuit het element `<parameters>` . Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Met het kenmerk &quot;inout&quot; met de waarde &quot;out&quot; kunt u opgeven dat de parameter &quot;result&quot; zich op de SOAP-aanroepuitvoer bevindt.
 
 De aanwezigheid van het attribuut &quot;static&quot; (met de waarde &quot;true&quot;) beschrijft deze methode als statisch, wat betekent dat alle parameters van de methode moeten worden gedeclareerd.
 
 Een &quot;const&quot;methode heeft impliciet een document van XML in het formaat van zijn bijbehorend schema als input.
 
-Een volledige beschrijving van de `<method>` element of an Adobe Campaign schema is available in the &quot;Schema references&quot; chapter under [Methode](../../configuration/using/schema/method.md)
+Een volledige beschrijving van het `<method>` element van een schema van Adobe Campaign is beschikbaar in het &quot;hoofdstuk van de verwijzingen van het Schema&quot;onder [ Methode ](../../configuration/using/schema/method.md)
 
-Voorbeeld van de methode &quot;const&quot;-type &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
+Voorbeeld van de &quot;const&quot;-type &quot;ExecuteQuery&quot;methode van het &quot;xtk :queryDef&quot;schema:
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -64,7 +64,7 @@ Voorbeeld van de methode &quot;const&quot;-type &quot;ExecuteQuery&quot; in het 
 </method>
 ```
 
-De invoerparameter van deze methode is een XML-document in de indeling van het schema &quot;xtk:queryDef&quot;.
+De inputparameter van deze methode is een document van XML in het formaat van het &quot;xtk :queryDef&quot;schema.
 
 ## Webservicebeschrijving: WSDL {#web-service-description--wsdl}
 
@@ -74,14 +74,14 @@ Een WSDL-bestand (Web Service Description Library) is beschikbaar voor elke serv
 
 Als u een WSDL-bestand wilt genereren, moet u de volgende URL vanuit een webbrowser invoeren:
 
-https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
+https://`<server>` /nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 Met:
 
 * **`<server>`**: de Adobe Campaign-toepassingsserver (nlserver-web)
-* **`<schema>`**: schema-id (namespace:schema_name)
+* **`<schema>`**: schema-id (naamruimte :schema_name)
 
-### Voorbeeld van de methode &#39;ExecuteQuery&#39; van schema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### Voorbeeld op de methode &#39;ExecuteQuery&#39; van schema &#39;xtk :queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 Het WSDL-bestand wordt gegenereerd via de URL:
 
@@ -91,7 +91,7 @@ Een beschrijving WSDL begint door de types te bepalen die aan vormberichten, ver
 
 #### Typen {#types}
 
-De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld gebruikt de methode &quot;ExecuteQuery&quot; een tekenreeks &quot;s:string&quot; en een XML-document (`<s:complextype>`) als parameters. De geretourneerde waarde van de methode (&quot;ExecuteQueryResponse&quot;) is een XML-document (  `<s:complextype>`).
+De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld, neemt de methode &quot;ExecuteQuery&quot;koord &quot;s :string&quot;en een document van XML (`<s:complextype>`) als parameters. De geretourneerde waarde van de methode (&quot;ExecuteQueryResponse&quot;) is een XML-document ( `<s:complextype>`).
 
 ```
 <types>
@@ -127,7 +127,7 @@ De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld ge
 
 #### Berichten {#messages}
 
-De `<message>` beschrijft de namen en typen van een set velden die moeten worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
+In `<message>` worden de namen en typen beschreven van een set velden die moet worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
 
 ```
 <message name="ExecuteQueryIn">
@@ -141,7 +141,7 @@ De `<message>` beschrijft de namen en typen van een set velden die moeten worden
 
 #### PortType {#porttype}
 
-De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;) produceert.
+`<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;) produceert.
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -154,7 +154,7 @@ De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verricht
 
 #### Binding {#binding}
 
-De `<binding>` part geeft het SOAP-communicatieprotocol aan ( `<soap:binding>` ), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
+In het gedeelte `<binding>` worden het SOAP-communicatieprotocol ( `<soap:binding>` ), het gegevensvervoer in HTTP (waarde van het kenmerk &quot;transport&quot;) en de gegevensindeling voor de bewerking &quot;ExecuteQuery&quot; opgegeven. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten rechtstreeks en zonder transformatie.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -173,7 +173,7 @@ De `<binding>` part geeft het SOAP-communicatieprotocol aan ( `<soap:binding>` )
 
 #### Service {#service}
 
-De `<service>` In dit onderdeel wordt de service &quot;XtkQueryDef&quot; beschreven met de URI ervan op de URL van de Adobe Campaign-toepassingsserver.
+In het onderdeel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met de URI ervan op de URL van de Adobe Campaign-toepassingsserver.
 
 ```
 <service name="XtkQueryDef">
@@ -185,15 +185,15 @@ De `<service>` In dit onderdeel wordt de service &quot;XtkQueryDef&quot; beschre
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft de beveiliging van authenticatiemechanismen verbeterd door de invoering van [beveiligingszones](../../installation/using/security-zones.md) en sessiebeheerinstellingen.
+Adobe Campaign heeft veiligheid voor authentificatiemechanismen verhoogd door [ veiligheidsstreken ](../../installation/using/security-zones.md) en montages van het zittingsbeheer te introduceren.
 
 Er zijn twee beschikbare verificatiemodi:
 
-* **via een aanroep van de aanmeldingsmethode()**. In deze modus worden een sessietoken en een beveiligingstoken gegenereerd. Het is de veiligste modus en daarom de meest aanbevolen.
+* **via een vraag aan openings van een sessiemethode ()**. In deze modus worden een sessietoken en een beveiligingstoken gegenereerd. Het is de veiligste modus en daarom de meest aanbevolen.
 
 of
 
-* **via Adobe Campaign-aanmelding + wachtwoord** die een sessietoken maakt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
+* **via login van Adobe Campaign + wachtwoord** dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
 
 ### Sessietekenmerken {#session-token-characteristics}
 
@@ -226,18 +226,18 @@ Wanneer deze via de console wordt benaderd, is de volgende code beschikbaar:
 * verzonden in de openings van een sessierespons (in de kopbal van HTTP)
 * gebruikt in elke query (in de HTTP-header)
 
-Van een POST en GET HTTP:
+Vanuit een POST en GET HTTP:
 
 * de server voltooit de koppelingen met het token
 * de server voegt een verborgen veld toe aan formulieren
 
-Van een SOAP-aanroep:
+Vanuit een SOAP-oproep:
 
 * het wordt toegevoegd aan vraagkopballen
 
 ### Voorbeelden bellen {#call-examples}
 
-* Gebruiken **HttpSoapConnection/SoapService**:
+* Gebruikend **HttpSoapConnection/SoapService**:
 
 ```
   
@@ -270,11 +270,11 @@ Van een SOAP-aanroep:
   logInfo(queryRes[0].toXMLString())
 ```
 
-* Gebruiken **HttpServletRequest**:
+* Gebruikend **HttpServletRequest**:
 
 >[!NOTE]
 >
->De URL&#39;s die in het volgende worden gebruikt **HttpServletRequest** de vraag moet op lijst van gewenste personen in de url toestemmingensectie van zijn **serverConf.xml** bestand. Dit geldt ook voor de URL van de server zelf.
+>URLs die in het volgende **wordt gebruikt HttpServletRequest** vraag moet op lijst van gewenste personen in de url toestemmingensectie van het **serverConf.xml** dossier zijn. Dit geldt ook voor de URL van de server zelf.
 
 Uitvoering aanmelding():
 

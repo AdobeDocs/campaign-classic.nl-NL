@@ -3,11 +3,11 @@ product: campaign
 title: Bedrijfsgerichte API’s
 description: Bedrijfsgerichte API’s
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 * Leveringen:
 
-   * Een leveringsactie maken. Raadpleeg [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
+   * Creërend een leveringsactie, verwijs naar [ SubmitDelivery (nms :delivery) ](#submitdelivery--nms-delivery-),
    * het verzenden van een campagne (starten, pauzeren, stoppen, verzenden van bewijzen);
    * leveringslogboeken herstellen.
 
@@ -27,19 +27,19 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
    * het starten van een workflow,
    * controleren van processen, enz.
 
-     Zie [SOAP-methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Verwijs naar [ methodes van SOAP in JavaScript ](../../configuration/using/soap-methods-in-javascript.md).
 
 * Inhoudsbeheer
-* Abonnementsbeheer, zie [Abonneren (nms:abonnement)](#subscribe--nms-subscription-) en [Abonnement opzeggen (nms:abonnement)](#unsubscribe--nms-subscription-).
+* Het beheer van het abonnement, verwijs naar [ Abonneren (nms :subscription) ](#subscribe--nms-subscription-) en [ Unsubscribe (nms :subscription) ](#unsubscribe--nms-subscription-).
 * Gegevensprocessen: invoer, uitvoer.
 
 In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Unsubscribe&quot; en &quot;VerzendenLevering&quot; beschreven.
 
 >[!IMPORTANT]
 >
->[JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) bevat aanvullende informatie over SOAP-aanroepen en het gebruik van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methoden en functies die in de toepassing worden gebruikt.
+>[ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) bevat extra informatie over de vraag van SOAP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
 
-## Abonneren (nms:abonnement) {#subscribe--nms-subscription-}
+## Abonneren (nms :subscription) {#subscribe--nms-subscription-}
 
 Met deze service kunt u een ontvanger abonneren op een informatieservice en het profiel van de ontvanger bijwerken.
 
@@ -47,10 +47,10 @@ De volgende parameters worden vereist om de dienst te roepen:
 
 * een verificatie,
 * interne naam van de abonnementendienst;
-* een XML-document met de informatie over de ontvanger (uit het schema &quot;nms:ontvanger&quot;);
+* een XML-document met de ontvangende informatie (uit het schema &quot;nms :recipient&quot;);
 * een Booleaanse waarde voor het maken van ontvangers als dat nog niet het geval is.
 
-Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms:subscription&quot;:
+Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms :subscription&quot;:
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms:subscr
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via de _&#x200B;**key** kenmerk op de `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de verzoeningssleutel moet via de _ **zeer belangrijke** attributen op het `<recipient>` element van het document van XML zijn ingegaan. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
@@ -112,7 +112,7 @@ De ontvanger en het abonnement bijwerken.
   </SOAP-ENV:Envelope>
   ```
 
-## Abonnement opzeggen (nms:abonnement) {#unsubscribe--nms-subscription-}
+## Abonnement opzeggen (nms :subscription) {#unsubscribe--nms-subscription-}
 
 Met deze service kunt u het abonnement van een ontvanger op een informatieservice opzeggen en het profiel van de ontvanger bijwerken.
 
@@ -120,9 +120,9 @@ De volgende parameters worden vereist om de dienst te roepen:
 
 * een verificatie,
 * Interne naam van de dienst waarvan het abonnement moet worden opgezegd;
-* een XML-document met de informatie over de ontvanger (uit het schema &quot;nms:ontvanger&quot;);
+* een XML-document met de ontvangende informatie (uit het schema &quot;nms :recipient&quot;);
 
-Beschrijving van de methode &quot;Unsubscribe&quot; in het schema &quot;nms:subscription&quot;:
+Beschrijving van de methode &quot;Unsubscribe&quot; in het schema &quot;nms :subscription&quot;:
 
 ```
 <method name="Unsubscribe" static="true">
@@ -133,7 +133,7 @@ Beschrijving van de methode &quot;Unsubscribe&quot; in het schema &quot;nms:subs
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via het _key-kenmerk op het tabblad `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via het _key-kenmerk op het `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokken informatiedienst geabonneerd, voert de dienst geen actie uit en produceert geen fout.
 
@@ -173,7 +173,7 @@ Reactie:
 </SOAP-ENV:Envelope>
 ```
 
-## VerzendenAflevering (nms:aflevering) {#submitdelivery--nms-delivery-}
+## SubmitDelivery (nms :delivery) {#submitdelivery--nms-delivery-}
 
 Met deze service kunt u een leveringsactie maken en verzenden.
 
@@ -198,7 +198,7 @@ Beschrijving van de methode in het schema:
 
 Er moet een leveringssjabloon worden gemaakt vanaf de Adobe Campaign-clientconsole. Het bevat de parameters gemeenschappelijk voor alle leveringen (het adres van de afzender of de duur van de geldigheid van het bericht).
 
-Het invoerXML-document is een leveringssjabloonfragment dat voldoet aan de structuur van het schema &quot;nms:delivery&quot;. Het zal alle extra gegevens bevatten die niet statisch in het leveringsmalplaatje (b.v., lijst van ontvangers aan doel) konden worden bepaald.
+Het document van inputXML is een fragment van het leveringsmalplaatje dat de structuur van het &quot;nms :delivery&quot;schema volgt. Het zal alle extra gegevens bevatten die niet statisch in het leveringsmalplaatje (b.v., lijst van ontvangers aan doel) konden worden bepaald.
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 

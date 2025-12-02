@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ Deduplicatie verwijdert duplicaten van de resultaten van binnenkomende activitei
 De **[!UICONTROL Deduplication]** -activiteit wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensset. De onderstaande records kunnen bijvoorbeeld als duplicaat worden beschouwd omdat ze hetzelfde e-mailadres en hetzelfde mobiele en/of thuistelefoon hebben.
 
 | Laatste wijzigingsdatum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 03-02-2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
 | 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
@@ -30,7 +30,7 @@ De **[!UICONTROL Deduplication]** -activiteit wordt gebruikt voor het verwijdere
 De **[!UICONTROL Deduplication]** -activiteit kan een hele rij als unieke record bewaren nadat duplicaten zijn geïdentificeerd. Als in het bovenstaande geval bijvoorbeeld de activiteit is geconfigureerd om alleen de record bij de oudste **[!UICONTROL Date]** te houden, is het resultaat:
 
 | Datum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 03-02-2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-888 |
 
 De geselecteerde hoofdrecord stuurt de gegevens door zonder dat veldgegevens worden samengevoegd met andere relevante gegevens in de dubbele rijen.
@@ -38,7 +38,7 @@ De geselecteerde hoofdrecord stuurt de gegevens door zonder dat veldgegevens wor
 Complementeren:
 
 | Datum | Voornaam | Achternaam | Email | Mobiele telefoon | Telefoon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
@@ -48,7 +48,7 @@ Tijdens deduplicatie worden inkomende stromen afzonderlijk verwerkt. Als bijvoor
 
 Deze kwestie moet als volgt worden aangepakt:
 
-* Creeer a **activiteit 0&rbrace; van de Unie &lbrace;om elke binnenkomende stroom te verenigen.**
+* Creeer a **activiteit 0} van de Unie {om elke binnenkomende stroom te verenigen.**
 * Creeer a **Deduplicatie** activiteit na de **Vereniging** activiteit.
 
 ![](assets/dedup_bonnepratique.png)
@@ -96,7 +96,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
    >[!NOTE]
    >
-   >Met de functie **[!UICONTROL Merge]** , die toegankelijk is via de koppeling **[!UICONTROL Advanced parameters]** , kunt u een set regels configureren om een veld of groep velden samen te voegen tot één gegevensrecord. Voor meer op dit, zie [&#x200B; het samenvoegen van gebieden in één enkel verslag &#x200B;](#merging-fields-into-single-record).
+   >Met de functie **[!UICONTROL Merge]** , die toegankelijk is via de koppeling **[!UICONTROL Advanced parameters]** , kunt u een set regels configureren om een veld of groep velden samen te voegen tot één gegevensrecord. Voor meer op dit, zie [ het samenvoegen van gebieden in één enkel verslag ](#merging-fields-into-single-record).
 
 1. Klik op **[!UICONTROL Finish]** om de geselecteerde deduplicatiemethode goed te keuren.
 
@@ -122,7 +122,7 @@ De geïdentificeerde duplicaten worden ook geïntegreerd in een speciale lijst m
 
 1. Voeg de verschillende activiteiten toe en koppel deze die nodig zijn om de workflow te laten werken, zoals hierboven wordt weergegeven.
 
-   De vakbondsactiviteit wordt hier gebruikt om de drie vragen in één enkele overgang te &quot;verenigen&quot;. Op deze manier werkt deduplicatie niet voor elke query afzonderlijk, maar voor de gehele query. Voor meer op dit onderwerp, verwijs naar [&#x200B; Beste praktijken &#x200B;](#best-practices).
+   De vakbondsactiviteit wordt hier gebruikt om de drie vragen in één enkele overgang te &quot;verenigen&quot;. Op deze manier werkt deduplicatie niet voor elke query afzonderlijk, maar voor de gehele query. Voor meer op dit onderwerp, verwijs naar [ Beste praktijken ](#best-practices).
 
 1. Open de deduplicatieactiviteit en klik vervolgens op de koppeling **[!UICONTROL Edit configuration...]** om de deduplicatiemodus te definiëren.
 1. Selecteer **[!UICONTROL Database schema]** in het nieuwe venster.
@@ -142,7 +142,7 @@ Met de functie **[!UICONTROL Merge]** kunt u een set regels voor deduplicatie co
 
 Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
-Een gebruiksgeval leveraging deze eigenschap is beschikbaar in [&#x200B; deze sectie &#x200B;](deduplication-merge.md).
+Een gebruiksgeval leveraging deze eigenschap is beschikbaar in [ deze sectie ](deduplication-merge.md).
 
 Ga als volgt te werk om dit te doen:
 
@@ -158,7 +158,7 @@ Ga als volgt te werk om dit te doen:
 
 1. Nadat de functionaliteit is geactiveerd, wordt een tabblad **[!UICONTROL Merge]** toegevoegd aan de **[!UICONTROL Deduplication]** -activiteit. Hiermee kunt u groepen velden definiëren die moeten worden samengevoegd en de bijbehorende regels.
 
-   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [&#x200B; deze sectie &#x200B;](deduplication-merge.md).
+   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [ deze sectie ](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 
@@ -175,6 +175,6 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert het doel dat uit de deduplicatie voortvloeit. **[!UICONTROL tableName]** is de naam van de tabel die doel-id&#39;s opslaat. **[!UICONTROL schema]** is het schema van de populatie (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de tabel.
+Deze reeks van drie waarden identificeert het doel dat uit de deduplicatie voortvloeit. **[!UICONTROL tableName]** is de naam van de lijst die doelherkenningstekens opslaat, **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms :recipient) en **[!UICONTROL recCount]** is het aantal elementen in de lijst.
 
 De overgang verbonden aan het complement heeft de zelfde parameters.

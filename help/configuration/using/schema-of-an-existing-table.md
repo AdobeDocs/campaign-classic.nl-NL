@@ -3,9 +3,9 @@ product: campaign
 title: Schema van een bestaande tabel
 description: Schema van een bestaande tabel
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 7%
@@ -28,8 +28,8 @@ Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tab
 
 Pas de volgende stappen toe om het bijbehorende schema te maken:
 
-1. Bewerk de **[!UICONTROL Administration>Configuration>Data schemas]** knoop van de boom van Adobe Campaign en klik **[!UICONTROL New]** .
-1. Selecteer de **[!UICONTROL Access data from an existing table or an SQL view]** en klik op **[!UICONTROL Next]** .
+1. Bewerk het knooppunt **[!UICONTROL Administration>Configuration>Data schemas]** van de Adobe Campaign-structuur en klik op **[!UICONTROL New]** .
+1. Selecteer de optie **[!UICONTROL Access data from an existing table or an SQL view]** en klik op **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -41,9 +41,9 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het tabblad `<srcSchema>` basiselement om geen SQL-script voor het maken van tabellen te genereren.
+   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het basiselement `<srcSchema>` om geen SQL-script voor het maken van tabellen te genereren.
 
-**Voorbeeld** :
+**Voorbeeld**:
 
 ```
 <srcSchema name="recipient" namespace="cus" view="true">
@@ -58,6 +58,6 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 ## Een externe database openen {#accessing-an-external-database}
 
-De **Federale gegevenstoegang - FDA** hebt u toegang tot de gegevens die in een externe database zijn opgeslagen.
+De **Federated Toegang van Gegevens - FDA** optie geeft u toegang tot de gegevens die in een extern gegevensbestand worden opgeslagen.
 
-De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een externe gegevensbestand toegang te hebben is gedetailleerd in [deze pagina](../../installation/using/creating-data-schema.md).
+De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben wordt gedetailleerd in [ deze pagina ](../../installation/using/creating-data-schema.md).

@@ -4,11 +4,11 @@ title: Opmaak
 description: Opmaak
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Een JavaScript-sjabloon wordt net als schema&#39;s en formulieren aangeduid met 
 
 ### Structuur van een JavaScript-sjabloon {#structure-of-a-javascript-template}
 
-Voorbeeld van een opmaaksjabloon voor JavaScript HTML op basis van het schema &quot;cus:book&quot;:
+Voorbeeld van een opmaaksjabloon van JavaScript HTML die is gebaseerd op het schema &quot;cus :book&quot;:
 
 ```
 <html>
@@ -175,7 +175,7 @@ In de bewerkingszone kunt u de inhoud van de JavaScript-sjabloon vullen:
 >
 >Het bijbehorende schema van het gegevensmodel moet worden ingevuld voor de initialisatie van JavaScript-objecten.
 
-Als u de voorvertoning van het uitvoerdocument wilt genereren, selecteert u op elk gewenst moment een inhoud en een uitvoerindeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]** :
+Als u de voorvertoning van het uitvoerdocument wilt genereren, selecteert u op elk gewenst moment een inhoud en een uitvoerindeling (HTML, Text, XML) en klikt u op **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -262,7 +262,7 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
    </form>
    ```
 
-1. Maak de JavaScript-sjablonen met de inhoud van berichten voor de indelingen HTML en Tekst.
+1. Maak de JavaScript-sjablonen met de berichtinhoud voor HTML- en Text-indelingen.
 
    * In ons voorbeeld geldt voor HTML:
 
@@ -364,7 +364,7 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
 1. U kunt deze inhoudssjabloon dan gebruiken in uw leveringen.
 
-   Voor meer op dit, verwijs naar [&#x200B; Gebruikend een inhoudsmalplaatje &#x200B;](using-a-content-template.md).
+   Voor meer op dit, verwijs naar [ Gebruikend een inhoudsmalplaatje ](using-a-content-template.md).
 
 ## XSL Stylesheets {#xsl-stylesheets}
 
@@ -376,11 +376,11 @@ Deze transformatie wordt op zijn beurt in XML in een document gedetaillerd dat a
 
 Een stijlpagina wordt geïdentificeerd door zijn naam en namespace, enkel als schema&#39;s en vormen. Het wordt echter aanbevolen de extensie **.xsl** toe te voegen aan de naam van de stijlpagina.
 
-De identificatiesleutel van een stijlblad is een koord dat door namespace en de naam wordt gevormd die door een dubbelpunt wordt gescheiden; bijvoorbeeld: **cus:book.xsl**.
+De identificatiesleutel van een stylesheet is een koord dat door namespace en de naam wordt gevormd die door een dubbelepunt wordt gescheiden; bijvoorbeeld: **cus :book .xsl**.
 
 ### Structuur van een stijlblad {#structure-of-a-stylesheet}
 
-Voorbeeld van een opmaakstijlpagina voor HTML op basis van het voorbeeldschema &quot;cus:book&quot;:
+Voorbeeld van een HTML die stijlblad formatteren op het voorbeeldschema &quot;cus :book&quot;wordt gebaseerd:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ In de volgende instructies wordt de configuratie van de stijlpagina voor de opma
 
 Door gebrek, zoekt de bewerker van XSLT het **malplaatje** dat op de wortel of de belangrijkste knoop van het document van inputXML van toepassing is. De bouw van het outputdocument begint met dit **malplaatje**.
 
-In ons voorbeeld wordt een HTML-pagina gegenereerd vanuit het schema &quot;cus:book&quot; door de naam van het boek en de lijst met hoofdstukken weer te geven.
+In ons voorbeeld, wordt een pagina van HTML geproduceerd van het &quot;focus :book&quot;schema door de naam van het boek en de lijst van hoofdstukken te tonen.
 
 >[!NOTE]
 >
@@ -503,7 +503,7 @@ Met de bewerkingszone kunt u de inhoud van het stijlblad vullen:
 
 ![](assets/d_ncs_content_form14.png)
 
-Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een inhoudsinstantie en de indeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]** :
+Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een inhoudsinstantie en de indeling (HTML, Text, XML) en klikt u op **[!UICONTROL Generate]** :
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -560,7 +560,7 @@ In het formulier wordt het veld voor het selecteren van de afbeelding toegevoegd
 
 >[!NOTE]
 >
->Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumweergave {#date-display}
 

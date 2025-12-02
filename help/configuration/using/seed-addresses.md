@@ -2,14 +2,14 @@
 product: campaign
 title: Seedadressen
 description: Seedadressen
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Seed Address
 level: Intermediate, Experienced
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '326'
 ht-degree: 6%
 
 ---
@@ -22,11 +22,11 @@ Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties ver
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Voor meer bij het gebruiken van zaadadressen, verwijs [&#x200B; deze sectie &#x200B;](../../delivery/using/about-seed-addresses.md).
+Voor meer bij het gebruiken van zaadadressen, verwijs [ deze sectie ](../../delivery/using/about-seed-addresses.md).
 
 ## Implementatie {#implementation}
 
-**nms:seedMember** schema en de verbonden vorm die uit-van-de-doos komen moeten voor klantenconfiguratie worden uitgebreid, om alle noodzakelijke gebieden van verwijzingen te voorzien. De schemadefinitie bevat commentaren detailleert zijn configuratiewijze.
+Het **nms:seedMember** schema en de verbonden vorm die uit-van-de-doos komen moeten voor klantenconfiguratie worden uitgebreid, om alle noodzakelijke gebieden van verwijzingen te voorzien. De schemadefinitie bevat commentaren detailleert zijn configuratiewijze.
 
 Definitie van het uitgebreide schema van de lijst van ontvangers:
 
@@ -71,7 +71,7 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >De uitbreiding van **nms:seedMember** schema moet aan de structuren van een campagne en een levering in Adobe Campaign voldoen.
+   >De uitbreiding van het **nms:seedMember** schema moet aan de structuren van een campagne en een levering in Adobe Campaign voldoen.
 
    >[!IMPORTANT]
    >
@@ -80,7 +80,7 @@ Voer de volgende stappen uit:
    >    
    >    * Tijdens de uitbreiding, moet u een **SQL naam (@sqlname)** voor het &quot;e-mailgebied&quot;specificeren. De SQL-naam moet afwijken van de &#39;sEmail&#39;-naam die is gereserveerd voor het ontvangende schema.
    >    * U moet de gegevensbestandstructuur met het gecreeerde schema bijwerken wanneer het uitbreiden van **nms:seedMember**.
-   >    * In **nms:seedMember** uitbreiding, moet het gebied dat het e-mailadres bevat **name= &quot;email&quot;** als attribuut hebben. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk worden gedeclareerd onder het element **`<element name="custom_cus_person" />`** .
+   >    * In de **nms:seedMember** uitbreiding, moet het gebied dat het e-mailadres bevat **name= &quot;e-mail&quot;** als attribuut hebben. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk worden gedeclareerd onder het element **`<element name="custom_cus_person" />`** .
    >    
    >
 

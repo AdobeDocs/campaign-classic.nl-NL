@@ -3,11 +3,11 @@ product: campaign
 title: Sleutelbeheer in gegevensschema's
 description: Belangrijk beheer in gegevensschema's begrijpen
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -126,11 +126,11 @@ De volgende regels zijn van toepassing op sleutels:
 
 ## Automatische incrementele toets {#auto-incremental-key}
 
-De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de zeer belangrijke waarde hangt van een opeenvolging (door gebrek, de **SQL functie 0&rbrace; XtkNewId &lbrace;af) die een aantal produceert dat in het volledige gegevensbestand uniek is.** De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de zeer belangrijke waarde hangt van een opeenvolging (door gebrek, de **SQL functie 0} XtkNewId {af) die een aantal produceert dat in het volledige gegevensbestand uniek is.** De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 
-U kunt in het bronschema de naam van de opeenvolging specificeren die met het **pkSequence** attribuut moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal de **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke opeenvolgingen voor **nms:wideLog** en **nms:trackingLog** schema&#39;s (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat dit de lijsten zijn die de meeste verslagen bevatten.
+U kunt in het bronschema de naam van de opeenvolging specificeren die met het **pkSequence** attribuut moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal de **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke opeenvolgingen voor **nms:broadLog** en **nms:trackingLog** schema&#39;s (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat dit de lijsten zijn die de meeste verslagen bevatten.
 
 Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
 
@@ -138,7 +138,7 @@ Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
-Een opeenvolging die in een schema van Adobe Campaign wordt van verwijzingen voorzien (**NmsTrackingLogId** bijvoorbeeld) moet met een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **worden geroepen GetNew** Ids **, waar** XXX **de naam van de opeenvolging is (** GetNewNmsTrackingLogIds **bijvoorbeeld).** Bekijk **postgres-nms.sql**, **mssql-nms.sql** of **oracle-nms.sql** dossiers die van de toepassing in **worden voorzien datakit/nms/eng/sql/** folder om het voorbeeld van een opeenvolging NmsTrackingLogId&quot;voor elk terug te krijgen database-engine.
+Een opeenvolging die in een schema van Adobe Campaign wordt van verwijzingen voorzien (**NmsTrackingLogId** bijvoorbeeld) moet met een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **worden geroepen GetNew** Ids **, waar** XXX **de naam van de opeenvolging is (** GetNewNmsTrackingLogIds **bijvoorbeeld).** Bekijk **postgres-nms.sql**, **mssql-nms.sql** of **oracle-nms.sql** dossiers die van de toepassing in **worden voorzien datakit/nms/eng/sql/** folder om het voorbeeld van een &quot;NmsTrackingLogId&quot;verwezenlijking terug te krijgen elke database-engine.
 
 Om een unieke sleutel te verklaren, bevolk het **automatische** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
 

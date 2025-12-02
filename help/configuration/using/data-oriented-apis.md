@@ -3,11 +3,11 @@ product: campaign
 title: Gegevensgerichte API’s
 description: Gegevensgerichte API’s
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Voor een presentatie van het gegevensmodel, verwijs naar de [&#x200B; het modelbeschrijving van Gegevens van Adobe Campaign &#x200B;](../../configuration/using/data-model-description.md).
+Voor een presentatie van het gegevensmodel, verwijs naar de [ het modelbeschrijving van Gegevens van Adobe Campaign ](../../configuration/using/data-model-description.md).
 
 ## Query en schrijver {#query-and-writer}
 
@@ -44,9 +44,9 @@ Voor kolommen en voorwaarden kunt u Query&#39;s gebruiken.
 
 Hierdoor kunt u de onderliggende SQL isoleren. De querytaal is niet afhankelijk van de onderliggende engine: sommige functies worden opnieuw toegewezen, waardoor meerdere SELECT SQL-orders kunnen worden gegenereerd.
 
-Voor meer op dit, verwijs naar [&#x200B; Voorbeeld op de methode &quot;ExecuteQuery&quot;van schema &quot;xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Voor meer op dit, verwijs naar [ Voorbeeld op de methode &quot;ExecuteQuery&quot;van schema &quot;xtk :queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-De **ExecuteQuery** methode wordt voorgesteld in [&#x200B; ExecuteQuery (xtk:queryDef) &#x200B;](#executequery--xtk-querydef-).
+De **ExecuteQuery** methode wordt voorgesteld in [ ExecuteQuery (xtk :queryDef) ](#executequery--xtk-querydef-).
 
 ### Schrijven {#write}
 
@@ -56,13 +56,13 @@ Transactionele APIs laat u aansluitingen via het **updateOrInsert** bevel behere
 
 De structuur van XML biedt een logische mening van de gegevens aan en laat u de fysieke structuur van de SQL lijst negeren.
 
-De schrijfmethode wordt voorgesteld in [&#x200B; Write/WriteCollection (xtk:zitting) &#x200B;](#write---writecollection--xtk-session-).
+De schrijfmethode wordt voorgesteld in [ Write/WriteCollection (xtk :session) ](#write---writecollection--xtk-session-).
 
-## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
+## ExecuteQuery (xtk :queryDef) {#executequery--xtk-querydef-}
 
 Deze methode laat u vragen van gegevens uitvoeren verbonden aan een schema. Het neemt een authentificatietekenreeks (moet worden het programma geopend) en een document van XML beschrijvend de vraag die als parameters moet worden voorgelegd. De retourparameter is een XML-document dat het resultaat bevat van de query in de indeling van het schema waarnaar de query verwijst.
 
-Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
+Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk :queryDef&quot;:
 
 ```xml
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryD
 
 >[!NOTE]
 >
->Dit is een const-methode. De invoerparameters worden in een XML-document opgenomen in de indeling van het schema &quot;xtk:queryDef&quot;.
+>Dit is een const-methode. De inputparameters zijn inbegrepen in een document van XML in het formaat van het &quot;xtk :queryDef&quot;schema.
 
 ### Indeling van het XML-document van de invoerquery {#format-of-the-xml-document-of-the-input-query}
 
-De structuur van het XML-document van de query wordt beschreven in het schema &quot;xtk:queryDef&quot;. In dit document worden de clausules van een SQL-query beschreven: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;have&quot;.
+De structuur van het document van XML van de vraag wordt beschreven in het &quot;xtk :queryDef &quot; schema. In dit document worden de clausules van een SQL-query beschreven: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;have&quot;.
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -137,11 +137,11 @@ Het gewenste type van verrichting is ingegaan in het **verrichting** attribuut e
 * **uitgezocht**: creeert een curseur om verscheidene verslagen terug te keren en een leeg document terug te keren als er geen gegevens zijn,
 * **telling**: keert een gegevenstelling terug.
 
-De **XPath** syntaxis wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Voor verdere informatie over XPparagraphs, verwijs naar [&#x200B; schema&#39;s van Gegevens &#x200B;](../../configuration/using/data-schemas.md).
+De **XPath** syntaxis wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Voor verdere informatie over XPparagraphs, verwijs naar [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md).
 
 #### Voorbeeld met de bewerking get {#example-with-the--get--operation}
 
-Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-schema) op met een filter in de e-mail.
+Haalt de achternaam en voornaam van een ontvanger (&quot;nms :recipient&quot;schema) met een filter op e-mail terug.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -306,7 +306,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </where>
   ```
 
-  U kunt als volgt de velden van de map ophalen uit het schema &quot;nms:ontvanger&quot;:
+  Om de gebieden van de omslag van het &quot;nms :recipient&quot;schema terug te winnen:
 
   ```xml
   <select>
@@ -317,7 +317,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </select>
   ```
 
-* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **&#x200B;**&#x200B;exploitant NIET BESTAAT.
+* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **** exploitant NIET BESTAAT.
 
   Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 
@@ -391,7 +391,7 @@ Als u wilt voorkomen dat een parameter wordt gebonden, moet het kenmerk &quot;no
 
 De retourparameter is een XML-document in de indeling van het schema dat aan de query is gekoppeld.
 
-Voorbeeld van een terugkeer van het &quot;nms:ontvanger&quot;schema op &quot;krijgt&quot;verrichting:
+Voorbeeld van een terugkeer van het &quot;nms :recipient&quot;schema op &quot;krijgt&quot;verrichting:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -442,7 +442,7 @@ In plaats van:
 </recipient>
 ```
 
-### Voorbeeld van SOAP berichten {#example-of-soap-messages}
+### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
 
 * Query:
 
@@ -484,7 +484,7 @@ In plaats van:
   </SOAP-ENV:Envelope>
   ```
 
-## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
+## Write/WriteCollection (xtk :session) {#write---writecollection--xtk-session-}
 
 Deze services worden gebruikt om een entiteit (&quot;Write&quot;-methode) of een verzameling entiteiten (&quot;WriteCollection&quot;-methode) in te voegen, bij te werken of te verwijderen.
 
@@ -494,7 +494,7 @@ Dit document wordt aangevuld met instructies voor het configureren van de schrij
 
 De aanroep retourneert geen gegevens, behalve fouten.
 
-Definitie van de methoden &quot;Write&quot; en &quot;WriteCollection&quot; in het schema &quot;xtk:session&quot;:
+Definitie van de &quot;Write&quot;en &quot;WriteCollection&quot;methodes in het &quot;xtk :session&quot;schema:
 
 ```xml
 <method name="Write" static="true">
@@ -575,7 +575,7 @@ De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
 De kenmerken &quot;_key&quot; en &quot;_operation&quot; kunnen worden ingevoerd op een gekoppeld element. Het gedrag op dit element is hetzelfde als op het hoofdelement van het invoerschema.
 
-De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bestaat uit een veld van een gekoppelde tabel (element `<folder>` schema &quot;xtk:folder&quot;) en de e-mail.
+De definitie van de sleutel van de belangrijkste entiteit (&quot;nms :recipient&quot;) bestaat uit een gebied van een verbonden lijst (element `<folder>` schema &quot;xtk :folder&quot;) en e-mail.
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bes
 
 #### Voorbeeld 2 {#example-2}
 
-Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema) van een ontvanger:
+Het bijwerken van het bedrijf (verbonden lijst in &quot;cus :company&quot;schema) van een ontvanger:
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -593,7 +593,7 @@ Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema)
 
 #### Voorbeeld 3 {#example-3}
 
-Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrpRel&quot;):
+Het toevoegen van een ontvanger aan een groep met de lijst van de groepsverhouding (&quot;nms :rcpGrpRel&quot;):
 
 ```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -605,13 +605,13 @@ Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrp
 
 >[!NOTE]
 >
->De definitie van de sleutel wordt niet ingevoerd in het element `<rcpgroup>` omdat een impliciete sleutel die op de groepsnaam wordt gebaseerd, in het schema &quot;nms:group&quot; wordt gedefinieerd.
+>De definitie van de sleutel is niet ingegaan in het `<rcpgroup>` element omdat een impliciete sleutel die op de groepsnaam wordt gebaseerd in het &quot;nms :group&quot;schema wordt bepaald.
 
 ### XML-verzamelingselementen {#xml-collection-elements}
 
 Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzamelingselementen van XML bij te werken. Gegevens uit de database worden vervangen door gegevens uit het invoerdocument. Als het document alleen de elementen bevat die moeten worden bijgewerkt, moet u het kenmerk &quot;_operation&quot; invullen voor alle verzamelingselementen die moeten worden bijgewerkt om een samenvoeging met de XML-gegevens van de database te forceren.
 
-### Voorbeeld van SOAP berichten {#example-of-soap-messages-1}
+### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
 
 * Query:
 

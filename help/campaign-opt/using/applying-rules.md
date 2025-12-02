@@ -2,12 +2,12 @@
 product: campaign
 title: Typologieregels toepassen
 description: Leer hoe u typologische regels toepast
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Dan gebruik de vraagredacteur om het filtreren voorwaarden te bepalen. In het vo
 
 >[!NOTE]
 >
->Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: deze kunnen afhankelijk zijn van de levering of de leveringscontour. Voor meer op dit, verwijs naar [&#x200B; Voorwaardelijk een het filtreren regel &#x200B;](filtering-rules.md#conditioning-a-filtering-rule).
+>Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: deze kunnen afhankelijk zijn van de levering of de leveringscontour. Voor meer op dit, verwijs naar [ Voorwaardelijk een het filtreren regel ](filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Rekenfrequentie aanpassen {#adjusting-calculation-frequency}
 
@@ -98,7 +98,7 @@ Bijvoorbeeld, zal een drukregel met een uitvoeringsorde van 20 vóór een drukre
 
 ### Controleregels {#control-rules}
 
-Voor **[!UICONTROL Control]** -regels kunt u bepalen op welk punt van de levenscyclus van de levering de regel wordt toegepast (vóór of na het opgeven van de regel, aan het begin van de personalisatie, aan het einde van de analyse). Selecteer op het tabblad **[!UICONTROL General]** van de typologieregel de waarde die u wilt toepassen in de vervolgkeuzelijst van het veld **[!UICONTROL Phase]** .
+Voor **[!UICONTROL Control]** -regels kunt u bepalen op welk punt van de levenscyclus van de levering de regel wordt toegepast (vóór of na het opgeven van de regel, aan het begin van de personalisatie, aan het einde van de analyse). Selecteer op het tabblad **[!UICONTROL Phase]** van de typologieregel de waarde die u wilt toepassen in de vervolgkeuzelijst van het veld **[!UICONTROL General]** .
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -144,4 +144,4 @@ Op het tabblad **[!UICONTROL Distributed Marketing]** kunt u de typologieën en/
 >[!NOTE]
 >
 >In typologieën en typologieregels wordt het tabblad **[!UICONTROL Distributed Marketing]** toegevoegd als uw licentie deze optie bevat: controleer de licentieovereenkomst.\
->Voor meer informatie over Verdeelde Marketing, verwijs naar [&#x200B; Ongeveer verdeelde marketing &#x200B;](../../distributed/using/about-distributed-marketing.md).
+>Voor meer informatie over Verdeelde Marketing, verwijs naar [ Ongeveer verdeelde marketing ](../../distributed/using/about-distributed-marketing.md).

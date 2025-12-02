@@ -4,9 +4,9 @@ title: Best practices voor leveringen
 description: Meer informatie over leveringsprestaties en aanbevolen procedures
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
-role: User, Data Engineer
+role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 5%
@@ -37,7 +37,7 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 
 * De grote leveringen, zoals leveringen aan meer dan één miljoen ontvangers, hebben ruimte in de verzendende rijen nodig. Dit is op zich geen probleem voor de server, maar in combinatie met tientallen andere grote leveringen die allemaal tegelijk worden uitgevoerd, kan er een vertraging bij het verzenden ontstaan.
 
-* Personalisatie in e-mailberichten haalt gegevens uit de database voor elke ontvanger. Als er vele verpersoonlijkingselementen zijn, verhoogt dat de hoeveelheid gegevens nodig om de levering voor te bereiden.
+* Personalization in e-mailberichten haalt gegevens uit de database voor elke ontvanger. Als er vele verpersoonlijkingselementen zijn, verhoogt dat de hoeveelheid gegevens nodig om de levering voor te bereiden.
 
 * Indexadressen. Om de prestaties van de SQL vragen te optimaliseren die in de toepassing worden gebruikt, kan een index van het belangrijkste element van het gegevensschema worden verklaard.
 
@@ -49,8 +49,8 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 
 Als de leveringsprestaties slecht zijn, kunt u controleren:
 
-* **De omvang van de levering**: Het voltooien van grote leveringen kan langer duren. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
-* **Het doel van de levering**: Het verbod op prestaties bij levering wordt beïnvloed door zachte stuiterfouten, die worden verwerkt volgens de configuratie voor opnieuw uitproberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie hierover [deze sectie](about-deliverability.md) en aan de [Handleiding voor beste praktijken bij de levering van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+* **de grootte van de levering**: De grote leveringen kunnen langer duren om te voltooien. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
+* **het doel van de levering**: Het verbod van de uitvoeringen van de levering wordt beïnvloed door zachte stuiteringsfouten, die volgens de retry configuratie worden behandeld. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
+* **de algemene platformlading**: Wanneer verscheidene grote leveringen worden verzonden, kan het algemene platform worden beïnvloed. U kunt IP reputatie en leveringsproblemen ook controleren. Voor meer op dit, verwijs naar [ deze sectie ](about-deliverability.md) en naar de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
 
 Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.

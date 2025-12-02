@@ -4,11 +4,11 @@ title: Gegevensschema's gebruiken in campagne
 description: Leer hoe u gegevensschema's kunt gebruiken in Campagne
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
-Raadpleeg voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign [deze sectie](../../configuration/using/about-schema-edition.md).
+Voor meer bij het creëren van en het vormen van gegevensschema&#39;s in Adobe Campaign, verwijs naar [ deze sectie ](../../configuration/using/about-schema-edition.md).
 
 ## Schemastructuur {#schema-structure}
 
-Het XML-document van een gegevensschema moet het **`<srcschema>`** hoofdelement met de **name** en **namespace** attributen om de schemanaam en zijn namespace te bevolken.
+Het document van XML van een gegevensschema moet het **`<srcschema>`** wortelelement met de **naam** en **namespace** attributen bevatten om de schemanaam en zijn namespace te bevolken.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -37,13 +37,13 @@ In een inhoudsbeheerschema, wordt het belangrijkste element vertegenwoordigd doo
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-De **template** kunt u het schema met algemene eigenschappen uitbreiden tot alle inhoudsdefinities, zoals naam, aanmaakdatum, auteur, gekoppelde tekenreeks, enzovoort.
+Het **malplaatje** attribuut ingegaan in het belangrijkste element laat u het schema met generische eigenschappen tot alle inhoudsdefinities zoals naam, creatieve datum, auteur, geassocieerd koord, enz. uitbreiden.
 
-Deze eigenschappen worden beschreven in het dialoogvenster **ncm:inhoud** schema.
+Deze eigenschappen worden beschreven in het **ncm:content** schema.
 
 >[!NOTE]
 >
->De aanwezigheid van de **xmlChildren** kenmerk geeft aan dat de gegevensstructuur die via het hoofdelement wordt ingevoerd, wordt opgeslagen in een XML-document van de instantie content.
+>De aanwezigheid van het **xmlChildren** attribuut wijst erop dat de gegevensstructuur die via het belangrijkste element wordt ingegaan in een document van XML van de inhoudsinstantie wordt opgeslagen.
 
 >[!CAUTION]
 >
@@ -71,15 +71,15 @@ Hier volgt een voorbeeld van een inhoudsbeheerschema met de ingevulde typen:
 
 ## Properties {#properties}
 
-U kunt verschillende eigenschappen gebruiken om de **`<element>`** en **`<attribute>`** elementen van het gegevensschema.
+U kunt verschillende eigenschappen gebruiken om de elementen **`<element>`** en **`<attribute>`** van het gegevensschema te verrijken.
 
 De belangrijkste eigenschappen die in inhoudsbeheer worden gebruikt zijn als volgt:
 
-* **label**: korte beschrijving,
+* **etiket**: korte beschrijving,
 * **desc**: lange beschrijving,
-* **default**: expressie die een standaardwaarde retourneert bij het maken van inhoud,
-* **userEnum**: gratis opsomming voor het opslaan en weergeven van de waarden die via dit veld zijn ingevoerd;
-* **enum**: vaste opsomming die wordt gebruikt wanneer de lijst met mogelijke waarden vooraf bekend is.
+* **gebrek**: uitdrukking die een standaardwaarde op inhoudsverwezenlijking terugkeren,
+* **userEnum**: vrije opsomming om de waarden op te slaan en te tonen ingegaan via dit gebied,
+* **enum**: vaste opsomming die wordt gebruikt wanneer de lijst van mogelijke waarden vooraf gekend is.
 
 Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
@@ -108,7 +108,7 @@ Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
 Een verzameling is een lijst met elementen met dezelfde naam en hetzelfde hiërarchische niveau.
 
-In ons voorbeeld **`<chapter>`** en **`<page>`** elementen zijn verzamelingselementen. De **ongebonden** Dit kenmerk moet derhalve worden toegevoegd aan de definitie van deze elementen:
+In ons voorbeeld zijn de elementen **`<chapter>`** en **`<page>`** verzamelingselementen. Het **ongebonden** attribuut moet daarom aan de definitie van deze elementen worden toegevoegd:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -120,15 +120,15 @@ In ons voorbeeld **`<chapter>`** en **`<page>`** elementen zijn verzamelingselem
 
 >[!NOTE]
 >
->De aanwezigheid van de **ordered=&quot;true&quot;** Met dit kenmerk kunt u de ingevoegde verzamelingselementen ordenen.
+>De aanwezigheid van **ordered= &quot;waar&quot;** attributen laat u tot de opgenomen inzamelingselementen opdracht geven.
 
 ## Element verwijzen {#element-referencing}
 
-Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Hiermee kunt u de definitie van een **`<element>`** -element zodat er naar kan worden verwezen op andere elementen met dezelfde structuur.
+Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Hiermee kunt u de definitie van een **`<element>`** -element factoriseren, zodat er naar kan worden verwezen op andere elementen met dezelfde structuur.
 
-De **ref** kenmerk op het element waarnaar moet worden verwezen, moet worden ingevuld met het pad (XPath) van het referentie-element.
+Het **ref** attribuut op het element dat moet worden van verwijzingen voorzien moet met de weg (XPath) van het verwijzingselement worden voltooid.
 
-**Voorbeeld**: toevoegen van een **Bijlage** met dezelfde structuur als de **`<chapter>`** element van ons voorbeeldschema.
+**Voorbeeld**: het toevoegen van een **bijlage** sectie met de zelfde structuur zoals het **`<chapter>`** element van ons voorbeeldschema.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -152,9 +152,9 @@ De hoofdstukstructuur wordt verplaatst naar het element met de naam &quot;sectie
 
 ## Compute string {#compute-string}
 
-A **Rekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een inhoudsinstantie vertegenwoordigt.
+A **verwerkt koord** is een uitdrukking van XPath die wordt gebruikt om een koord te construeren dat een inhoudsinstantie vertegenwoordigt.
 
-Hier is ons voorbeeldschema met zijn **Rekenreeks**:
+Hier is ons voorbeeldschema met zijn **verwerkt koord**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -165,7 +165,7 @@ Hier is ons voorbeeldschema met zijn **Rekenreeks**:
 </srcSchema>
 ```
 
-## Schema&#39;s bewerken {#editing-schemas}
+## Schema’s bewerken {#editing-schemas}
 
 In het bewerkingsveld kunt u de XML-inhoud van het bronschema invoeren:
 
@@ -175,4 +175,4 @@ Wanneer het bronschema wordt opgeslagen, wordt het uitgebreide schema automatisc
 
 >[!NOTE]
 >
->De **Naam** Met de besturingselementen voor bewerken kunt u de sleutel van het schema invoeren. Deze bestaat uit de naam en naamruimte. De **name** en **namespace** attributen van het element van de schemagrootte worden automatisch bijgewerkt op XML uitgeeft gebied van het schema.
+>De **Naam** geeft controle uit laat u de sleutel van het schema ingaan, die uit de naam en namespace bestaat. De **naam** en **namespace** attributen van het element van de schemawortel worden automatisch bijgewerkt in XML geeft gebied van het schema uit.

@@ -2,12 +2,12 @@
 product: campaign
 title: Drukregels
 description: Leer hoe u met drukregels werkt in Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 4%
@@ -24,8 +24,8 @@ Door het beheer van de verkoopdruk te implementeren, kunt u voorkomen dat de pop
 
 De campagnes worden geselecteerd gebaseerd op bepaalde drempels en berichtgewicht.
 
-* Een drempel is het hoogste aantal leveringen dat binnen een bepaalde periode voor een bepaalde afnemer is toegestaan. De variabele kan ingesteld of variabel zijn. Deze wordt ingesteld of berekend in de instellingen voor de typologieregel. Verwijs naar [&#x200B; Maximum aantal berichten &#x200B;](#maximum-number-of-messages).
-* Met leveringsgewichten kunt u topprioriteit-leveringen identificeren in het kader van drukbeheer. Berichten met het hoogste gewicht hebben prioriteit. Verwijs naar [&#x200B; gewicht van het Bericht &#x200B;](#message-weight).
+* Een drempel is het hoogste aantal leveringen dat binnen een bepaalde periode voor een bepaalde afnemer is toegestaan. De variabele kan ingesteld of variabel zijn. Deze wordt ingesteld of berekend in de instellingen voor de typologieregel. Verwijs naar [ Maximum aantal berichten ](#maximum-number-of-messages).
+* Met leveringsgewichten kunt u topprioriteit-leveringen identificeren in het kader van drukbeheer. Berichten met het hoogste gewicht hebben prioriteit. Verwijs naar [ gewicht van het Bericht ](#message-weight).
 
 Arbitrage bestaat erin ervoor te zorgen dat geplande campagnes met een groter gewicht dan de lopende campagne niet leiden tot excessieve profielopvraging: als dit het geval is, wordt het profiel uitgesloten van de levering.
 
@@ -36,7 +36,7 @@ Arbitragecriteria (gewicht en/of drempel) kunnen variëren op basis van twee soo
 
 De arbitrageregel voor het definiëren van in aanmerking komende berichten wordt toegepast tijdens de analysefase. Voor elke ontvanger en voor de betrokken periode, zal het bericht worden verzonden als de volgende formule waar is: **(aantal verzonden berichten) + (aantal berichten met een groter gewicht) &lt; drempel**.
 
-Anders is de ontvanger **[!UICONTROL Excluded by arbitration]** . Voor meer op dit, verwijs naar [&#x200B; Uitsluiting na arbitrage &#x200B;](#exclusion-after-arbitration).
+Anders is de ontvanger **[!UICONTROL Excluded by arbitration]** . Voor meer op dit, verwijs naar [ Uitsluiting na arbitrage ](#exclusion-after-arbitration).
 
 ## Een drukregel maken {#creating-a-pressure-rule}
 
@@ -52,8 +52,8 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Wijzig zo nodig de uitvoeringsvolgorde. Wanneer meerdere typologische regels worden toegepast als een **[!UICONTROL Typology]** -set, worden eerst de onderste geordende regels toegepast. Voor meer op dit, verwijs naar [&#x200B; orde van de Uitvoering &#x200B;](applying-rules.md#execution-order).
-1. Definieer in de sectie **[!UICONTROL Calculation parameters]** een frequentie als u het opgeven van doelen na de volgende dagelijkse herarbitrageuitvoering wilt opslaan. Voor meer op dit, verwijs naar [&#x200B; het Aanpassen van berekeningsfrequentie &#x200B;](applying-rules.md#adjusting-calculation-frequency).
+1. Wijzig zo nodig de uitvoeringsvolgorde. Wanneer meerdere typologische regels worden toegepast als een **[!UICONTROL Typology]** -set, worden eerst de onderste geordende regels toegepast. Voor meer op dit, verwijs naar [ orde van de Uitvoering ](applying-rules.md#execution-order).
+1. Definieer in de sectie **[!UICONTROL Calculation parameters]** een frequentie als u het opgeven van doelen na de volgende dagelijkse herarbitrageuitvoering wilt opslaan. Voor meer op dit, verwijs naar [ het Aanpassen van berekeningsfrequentie ](applying-rules.md#adjusting-calculation-frequency).
 1. Klik op het tabblad **[!UICONTROL Pressure]** en kies de kalenderperiode waarin de typologieregel van toepassing is.
 
    ![](assets/campaign_opt_create_a_rule_03.png)
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    >[!NOTE]
    >
-   >Met geplande leveringen wordt alleen rekening gehouden als de optie **[!UICONTROL Take the deliveries into account in the provisional calendar]** is geselecteerd. Voor meer op dit, verwijs naar [&#x200B; Plaatsend de periode &#x200B;](#setting-the-period).
+   >Met geplande leveringen wordt alleen rekening gehouden als de optie **[!UICONTROL Take the deliveries into account in the provisional calendar]** is geselecteerd. Voor meer op dit, verwijs naar [ Plaatsend de periode ](#setting-the-period).
    >
 
 1. Definieer de methode voor het berekenen van het hoogste aantal berichten.
@@ -77,11 +77,11 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
-   Voor meer op dit, verwijs naar [&#x200B; Maximum aantal berichten &#x200B;](#maximum-number-of-messages).
+   Voor meer op dit, verwijs naar [ Maximum aantal berichten ](#maximum-number-of-messages).
 
 1. Geef de methode op voor de berekening van het leveringsgewicht.
 
-   Elke levering heeft een gewicht, d.w.z. een waarde die het prioriteitsniveau vertegenwoordigt: dit maakt arbitrage tussen campagnes mogelijk. Het gewicht wordt berekend aan de hand van de formule die is gedefinieerd in de typologieregel en/of in de eigenschappen ervan. Voor meer op dit, verwijs naar [&#x200B; gewicht van het Bericht &#x200B;](#message-weight).
+   Elke levering heeft een gewicht, d.w.z. een waarde die het prioriteitsniveau vertegenwoordigt: dit maakt arbitrage tussen campagnes mogelijk. Het gewicht wordt berekend aan de hand van de formule die is gedefinieerd in de typologieregel en/of in de eigenschappen ervan. Voor meer op dit, verwijs naar [ gewicht van het Bericht ](#message-weight).
 
 1. Standaard worden alle berichten in aanmerking genomen voor de berekening van de drempelwaarde. Op het tabblad **[!UICONTROL Restriction]** kunt u de berichten filteren waarop de typologieregel betrekking heeft:
 
@@ -92,7 +92,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL){target="_blank"}.
+1. Op het tabblad **[!UICONTROL Typologies]** kunt u de typologieën van de campagne weergeven die deze regel toepassen of de regel koppelen aan een of meer bestaande typologieën. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 ## Drempels en gewichten definiëren {#defining-thresholds-and-weights}
 
@@ -114,7 +114,7 @@ U kunt het aantal geoorloofde berichten volgens het segment indexeren waartot de
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Om de drempel te bepalen, kunt u een afmeting gebruiken verbonden aan de het richten afmeting: bijvoorbeeld, om berichten te omvatten die aan de ontvankelijke profielen worden geleverd in de bezoekerslijst (voor meer op de bezoekerslijst, verwijs naar [&#x200B; deze sectie &#x200B;](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) of vermijden verzendend meer dan één bericht per week naar het zelfde huishouden, (dat naar verscheidene e-mailadressen kan verwijzen) die in een afmeting met die van de ontvangers worden geïdentificeerd.
+Om de drempel te bepalen, kunt u een afmeting gebruiken verbonden aan de het richten afmeting: bijvoorbeeld, om berichten te omvatten die aan de ontvankelijke profielen worden geleverd in de bezoekerslijst (voor meer op de bezoekerslijst, verwijs naar [ deze sectie ](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) of vermijden verzendend meer dan één bericht per week naar het zelfde huishouden, (dat naar verscheidene e-mailadressen kan verwijzen) die in een afmeting met die van de ontvangers worden geïdentificeerd.
 
 Selecteer hiertoe de optie **[!UICONTROL Count messages on a linked dimension]** en selecteer vervolgens de bezoeker of de tabel met contactpersonen.
 
@@ -195,7 +195,7 @@ Tot slot als geen groepering wordt geselecteerd, slechts **nieuwsbrief nr.4** za
 
 >[!NOTE]
 >
->Wanneer u de definitie van een typologieregel verandert, kunt u a **Simulatie** tot stand brengen om zijn effect op de leveringen te controleren het wordt toegepast op en het effect te controleren dat de leveringen op elkaar hebben. Voor meer op dit, verwijs naar [&#x200B; simulaties van de Campagne &#x200B;](campaign-simulations.md).
+>Wanneer u de definitie van een typologieregel verandert, kunt u a **Simulatie** tot stand brengen om zijn effect op de leveringen te controleren het wordt toegepast op en het effect te controleren dat de leveringen op elkaar hebben. Voor meer op dit, verwijs naar [ simulaties van de Campagne ](campaign-simulations.md).
 
 ## Uitsluiting na arbitrage {#exclusion-after-arbitration}
 
@@ -300,7 +300,7 @@ Pas de volgende configuratiestappen toe:
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3&rbrace; gebied van de Eigenschap.**
+1. Door gebrek, wordt waarde **5** getoond in de hogere sectie van de uitdrukkingsredacteur. Wij willen de volheidsscore van elke ontvanger aan dit gewicht toevoegen: plaats uw curseur rechts van 5, ga het **+** karakter in en selecteer het **3} gebied van de Eigenschap.**
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
@@ -319,19 +319,19 @@ Hiervoor moet u verschillende leveringen met verschillende gewichten voor dezelf
 
 Eerst, vorm de drukregel.
 
-1. Maak een drukregel. Voor meer op dit, verwijs naar [&#x200B; creeer een drukregel &#x200B;](#creating-a-pressure-rule).
+1. Maak een drukregel. Voor meer op dit, verwijs naar [ creeer een drukregel ](#creating-a-pressure-rule).
 1. Selecteer op het tabblad **[!UICONTROL General]** de optie **[!UICONTROL Re-apply the rule at the start of personalization]** .
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
-   Met deze optie wordt de waarde die in het veld **[!UICONTROL Frequency]** is gedefinieerd, overschreven en wordt de regel tijdens de verpersoonlijkingsfase automatisch toegepast. Voor meer op dit, verwijs naar [&#x200B; aanpassen berekeningsfrequentie &#x200B;](applying-rules.md#adjusting-calculation-frequency).
+   Met deze optie wordt de waarde die in het veld **[!UICONTROL Frequency]** is gedefinieerd, overschreven en wordt de regel tijdens de verpersoonlijkingsfase automatisch toegepast. Voor meer op dit, verwijs naar [ aanpassen berekeningsfrequentie ](applying-rules.md#adjusting-calculation-frequency).
 
 1. Selecteer op het tabblad **[!UICONTROL Pressure]** **[!UICONTROL 7d]** als de **[!UICONTROL Period considered]** en **[!UICONTROL Grouping per day]** als de **[!UICONTROL Period type]** .
 1. Selecteer de optie **[!UICONTROL Take the deliveries into account in the provisional calendar]** om de geplande leveringen op te nemen.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum zijn gepland. Voor meer op dit, verwijs naar [&#x200B; plaats de periode &#x200B;](#setting-the-period).
+   Bij de berekening wordt rekening gehouden met leveringen die tot 7 dagen vóór de leveringsdatum zijn verzonden en die tot 7 dagen na de leveringsdatum zijn gepland. Voor meer op dit, verwijs naar [ plaats de periode ](#setting-the-period).
 
 1. Koppel op het tabblad **[!UICONTROL Typologies]** de regel aan een campagnetypologie.
 1. Sla uw wijzigingen op.
@@ -339,8 +339,8 @@ Eerst, vorm de drukregel.
 Maak en configureer nu een workflow voor elke levering waarop u de drukregel wilt toepassen.
 
 1. Maak een campagne. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
-1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/query.md).
-1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/delivery.md).
+1. In het **[!UICONTROL Targeting and workflows]** lusje van uw campagne, voeg de activiteit van de a **Vraag** aan uw werkschema toe. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](../../workflow/using/query.md).
+1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Voor meer bij het gebruiken van deze activiteit, verwijs naar [ deze sectie ](../../workflow/using/delivery.md).
 1. Ga naar het tabblad **[!UICONTROL Approvals]** van **[!UICONTROL Delivery properties]** en schakel alle goedkeuringen uit.
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -355,13 +355,13 @@ Maak en configureer nu een workflow voor elke levering waarop u de drukregel wil
 
    ![](assets/campaign_opt_pressure_example_4.png)
 
-   Voor de drukregeluitsluitingen die met succes moeten worden geïmplementeerd, moet u de extractiedatum en -tijd vóór de contactdatum en -tijd instellen, evenals voordat de nachtelijke arbitrage opnieuw wordt toegepast. Voor meer op dit, verwijs naar [&#x200B; Uitsluiting na arbitrage &#x200B;](#exclusion-after-arbitration).
+   Voor de drukregeluitsluitingen die met succes moeten worden geïmplementeerd, moet u de extractiedatum en -tijd vóór de contactdatum en -tijd instellen, evenals voordat de nachtelijke arbitrage opnieuw wordt toegepast. Voor meer op dit, verwijs naar [ Uitsluiting na arbitrage ](#exclusion-after-arbitration).
 
 1. Hef de selectie van de optie **[!UICONTROL Confirm the delivery before sending]** op en sla uw wijzigingen op.
 1. Ga op dezelfde manier te werk voor elke levering die u wilt verzenden. Zorg ervoor dat u het gewenste gewicht voor elke levering instelt.
 1. Voer de relevante workflows uit om de leveringen voor te bereiden en te verzenden.
 
-Wanneer de nachtelijke arbitrage wordt toegepast, worden de leveringen met de laagste gewichten voor dezelfde afnemer uitgesloten. Alleen leveringen met het hoogste gewicht worden in aanmerking genomen voor verzending. Voor meer op dit, verwijs naar [&#x200B; gewicht van het Bericht &#x200B;](#message-weight).
+Wanneer de nachtelijke arbitrage wordt toegepast, worden de leveringen met de laagste gewichten voor dezelfde afnemer uitgesloten. Alleen leveringen met het hoogste gewicht worden in aanmerking genomen voor verzending. Voor meer op dit, verwijs naar [ gewicht van het Bericht ](#message-weight).
 
 Aangezien er al eerder in de week een e-mailbericht naar de betrokken ontvangers is verzonden, wordt in de onderstaande tabel een voorbeeld weergegeven van de configuraties die kunnen worden toegepast voor nog twee leveringen.
 

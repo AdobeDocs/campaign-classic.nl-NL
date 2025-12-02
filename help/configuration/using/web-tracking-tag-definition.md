@@ -3,9 +3,9 @@ product: campaign
 title: Tag voor webspatiëring definiëren
 description: Tag voor webspatiëring definiëren
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Een tag voor webtracering is een URL die is samengesteld met de juiste parameter
 
 ## Formaat van de te verzenden gegevens {#format-of-the-data-to-be-sent}
 
-De indeling van een URL voor webtracering is als volgt: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+Het formaat van een web-tracking URL is als volgt: **https:// `<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -78,7 +78,8 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Leverings-id die moet worden gebruikt als er geen sessiecookie is. Deze waarde moet worden uitgedrukt in hexadecimale waarden.
+                              <p>Leverings-id die moet worden gebruikt als er geen sessiecookie is. Deze waarde moet
+                                 uitgedrukt in hexadecimaal.
                               </p> 
                            </td> 
                         </tr>
@@ -90,14 +91,16 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter gebruikt om de internetgebruiker te identificeren. De indeling van deze parameter is "name=value", waarbij de naam een veld is van het ontvangende schema. Deze parameter heeft voorrang op het herkenningsteken in het zittingskoekje.
+                              <p>Parameter gebruikt om de internetgebruiker te identificeren. De notatie van deze parameter is "name=value",
+                                 waarbij de naam een veld van het ontvangende schema is. Deze parameter heeft voorrang op
+                                 de id in het sessiecookie.
                               </p> 
                            </td> 
                         </tr> 
                      </tbody>  
                   </table>
 
-**Enkele URL&#39;s voor webtracking**
+**een paar Web het volgen URLs**
 
 * Bezoek naar een homepage met id&#39;s
 
@@ -105,17 +108,17 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
 
 * Gegevens over bedrijfsvolumes verzamelen
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Veld opgeven om ontvanger te zoeken
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   Een ontvanger van wie het rekeningnummer 10 is, wordt naar de homepage verzonden.
 
 * Een standaardlevering gebruiken
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   Een ontvanger wordt verzonden naar de homepage. Deze informatie zal in de levering met herkenningsteken 230 (e6 in gegevensbestand 16) worden opgeslagen tenzij een zittingskoekje die een leveringsherkenningsteken bevat met deze vraag wordt verzonden.
 
@@ -127,5 +130,5 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
 
 De volgende methoden zijn mogelijk:
 
-* De URL invoegen in het dialoogvenster **&quot;src&quot;** kenmerk van een HTML **`<img>`** -tag wordt opgenomen in de webpagina die u wilt bijhouden.
+* Het opnemen van URL in het **&quot;src&quot;** attribuut van een markering van HTML **`<img>`** opgenomen in de Web-pagina u wenst te volgen.
 * Directe aanroep naar de omleidingsserver wanneer de webpagina die u wilt bijhouden, wordt gegenereerd.

@@ -3,10 +3,10 @@ product: campaign
 title: De interface configureren
 description: Leer hoe u de interface Campagne configureert
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
    >[!NOTE]
    >
-   >Om meer over **vorm** typedossiers te weten te komen, verwijs naar [&#x200B; deze pagina &#x200B;](../../configuration/using/identifying-a-form.md).
+   >Om meer over **vorm** typedossiers te weten te komen, verwijs naar [ deze pagina ](../../configuration/using/identifying-a-form.md).
 
    In ons huidige voorbeeld, moet het **vorm** dossier op het **focus:individual** schema worden gebaseerd en daarom de volgende lay-out hebben:
 

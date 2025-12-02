@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Nieuwe veldassistent
-description: Nieuwe veldassistent
+title: Nieuwe assistent voor velden
+description: Nieuwe assistent voor velden
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 0%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
-# Nieuwe veldassistent{#new-field-wizard}
+# Nieuwe assistent voor velden{#new-field-wizard}
 
 
 Met een assistent die toegankelijk is via **[!UICONTROL Tools > Advanced > Add new fields]** kunt u een of meer velden toevoegen aan een tabel in de database.
@@ -35,7 +35,7 @@ De hulpschermen bevatten de volgende stappen:
 
 1. Klik op de knop **[!UICONTROL Finish]** om de wijzigingen te bevestigen.
 
-In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:receiver&#39; gemaakt en wordt het bijbehorende SQL-script uitgevoerd:
+Een uitbreidingsdossier, genoemd &quot;cus :recipient&quot;in ons voorbeeld, wordt automatisch gecreeerd en het overeenkomstige SQL manuscript wordt uitgevoerd:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  

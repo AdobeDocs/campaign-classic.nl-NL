@@ -3,11 +3,11 @@ product: campaign
 title: Aanvullende parameters voor webtracking
 description: Meer informatie over parameters voor webtracking
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 Uw Adobe Campaign-platform biedt standaard twee webtrackingparameters van het type TRANSACTION:
 
-* **bedrag**: staat voor het bedrag van een transactie;
-* **artikel**: geeft het aantal items in een transactie aan.
+* **bedrag**: vertegenwoordigt de hoeveelheid een transactie,
+* **artikel**: vertegenwoordigt het aantal punten in een transactie.
 
-Deze parameters worden gedefinieerd in het dialoogvenster **nms:webTrackingLog** en zijn enkele van de indicatoren die worden weergegeven in de rapportage.
+Deze parameters worden bepaald in het **nms:webTrackingLog** schema, en zijn enkele indicatoren die in het melden worden gezien.
 
 Als u aanvullende parameters wilt definiëren, moet u dit schema uitbreiden.
 
@@ -49,11 +49,11 @@ In de serverconfiguratie, kunt u het maximumaantal karakters bepalen waarmee voo
 >
 >Als u het maximumaantal tekens verhoogt waarmee rekening moet worden gehouden, kan dit van invloed zijn op de webprestaties van uw platform.
 
-Om dit te doen, wijzig **webTrackingParamSize** kenmerk van de **`<trackinglogd>`** in het **serverConf.xml** bestand. Dit bestand wordt opgeslagen in het dialoogvenster **conf** subdirectory van de installatiemap van Adobe Campaign.
+Om dit te doen, wijzig **webTrackingParamSize** attributen van het **`<trackinglogd>`** element in het **serverConf.xml** dossier. Dit dossier wordt bewaard in **conf** subdirectory van de de installatiemap van Adobe Campaign.
 
 **Voorbeeld**:
 
-De standaardwaarde is 64 tekens. Met deze waarde kunt u rekening houden met **bedrag** en **artikel** (&quot;bedrag=xxxxxxxx&amp;article=xxxxxxxx&quot;) standaardparameters.
+De standaardwaarde is 64 tekens. Deze waarde laat u rekening houden met de **hoeveelheid** en **artikel** (&quot;bedrag=xxxxxxxx&amp;article=xxxxxxxx&quot;) standaardparameters.
 
 Door rekening te houden met beide parameters (grootte van naam + grootte van waarde) die in het bovenstaande voorbeeld van het extensieschema worden vermeld, kunt u de configuratie wijzigen om 100 tekens in aanmerking te nemen (&quot;bedrag=xxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxx&amp;code=xxxxxxx&quot;).
 
@@ -67,22 +67,22 @@ webTrackingParamSize="64"/>
 Wanneer de configuratie is gewijzigd, moet u:
 
 * Stop de webserver die als host fungeert voor de omleidingsmodule (Apache, IIS, enz.),
-* Stop de Adobe Campaign-server: **netstop nlserver6** in Windows **/etc/init.d/nlserver6 stop** in Linux,
+* Stop de server van Adobe Campaign: **netto stop nlserver6** in Vensters, **/etc/init.d/nlserver6 stop** in Linux,
 
   >[!NOTE]
   >
-  >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+  >Beginnend 20.1, adviseren wij het gebruiken van het volgende bevel in plaats daarvan (voor Linux): **systemctl stop nlserver**
 
-* Verwijder in Linux de gedeelde geheugensegmenten met behulp van de **ipcrm** opdracht,
-* Start de Adobe Campaign-server opnieuw: **netwerkbeginserver6** in Windows **/etc/init.d/nlserver6 start** in Linux,
+* In Linux, schrap de gedeelde geheugensegmenten gebruikend het **ipcrm** bevel,
+* Start de Adobe Campaign-server opnieuw: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
   >[!NOTE]
   >
-  >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+  >Beginnend 20.1, adviseren wij het gebruiken van het volgende bevel in plaats daarvan (voor Linux): **systeemctl begin nlserver**
 
 * Start de webserver opnieuw.
 
-**Voorbeeld**: rekening houdend met de configuratie onder Linux.
+**Voorbeeld**: die rekening houdend met de configuratie onder Linux.
 
 ```
 adobe@selma:~$ systemctl stop nlserver
@@ -108,4 +108,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Voor Linux, als u de grootte van **webTrackingParamSize** of **maxSharedLogs** parameters, moet u mogelijk de grootte van het gedeelde geheugen (SHM) verhogen.
+>Voor Linux, als u de grootte van **webTrackingParamSize** of **maxSharedLogs** parameters verhoogt, kunt u de grootte van het gedeelde geheugen (SHM) moeten verhogen.

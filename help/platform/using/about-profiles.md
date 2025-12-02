@@ -3,10 +3,10 @@ product: campaign
 title: Aan de slag met profielen
 description: Werken met profielen in Adobe Campaign
 feature: Profiles, Audiences
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 22%
@@ -23,34 +23,34 @@ Profielen worden gecentraliseerd in de Adobe Campaign-database. Er zijn vele mog
 
 In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, sms’en, enzovoort). De ontvangende gegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren dat om het even welke bepaalde levering zal ontvangen en verpersoonlijkingsgegevens in uw leveringsinhoud toe te voegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende applicaties. Seed-profielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
 
-![&#x200B; Video die toont welke profielen zijn en hoe zij &#x200B;](assets/do-not-localize/how-to-video.png) [&#x200B; werken begrijpt het concept profielen in video &#x200B;](#create-profiles-video)
+![ Video die toont welke profielen zijn en hoe zij ](assets/do-not-localize/how-to-video.png) [ werken begrijpt het concept profielen in video ](#create-profiles-video)
 
 >[!NOTE]
 >
->Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
+>Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
 >[!BEGINTABS]
 
 >[!TAB  documentatie van Profielen ]
 
-Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de **[Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**.
+Meer over profiel leren, om hen tot stand te brengen en uit te geven, gelieve te verwijzen naar de gedetailleerde documentatie over de **[Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**.
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
->[!TAB creeer en geef profielen  uit]
+>[!TAB  creeer en geef profielen ] uit
 
 Leer om profielen in de **documentatie van de Campagne v8** uit te geven, te beheren en toe te voegen:
 
-* [&#x200B; voegt profielen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank} toe: Leer de belangrijkste stappen om nieuwe profielen toe te voegen en tot stand te brengen.
-* [&#x200B; geef profielen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank} uit: Bekijk en geef bestaande profielen uit.
-* [&#x200B; beheer profielen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}: Heb toegang tot en beheer uw bestaande profielen gebruikend het hulpmiddel van het omslagbeheer.
+* [ voegt profielen ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank} toe: Leer de belangrijkste stappen om nieuwe profielen toe te voegen en tot stand te brengen.
+* [ geef profielen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank} uit: Bekijk en geef bestaande profielen uit.
+* [ beheer profielen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}: Heb toegang tot en beheer uw bestaande profielen gebruikend het hulpmiddel van het omslagbeheer.
 
 >[!TAB  de Invoer/de uitvoerprofielen ]
 
 Leer hoe te om profielen en gegevens in de **Campagne v8 documentatie** in te voeren en uit te voeren:
 
-* [&#x200B; de Profielen van de Invoer &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}: U kunt profielen invoeren gebruikend werkschema&#39;s.
-* [&#x200B; de Invoer/de uitvoergegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/import){target=_blank}: Leer hoe te om gegevens en profielen in te voeren of uit te voeren gebruikend generische invoer/uitvoer.
+* [ de Profielen van de Invoer ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}: U kunt profielen invoeren gebruikend werkschema&#39;s.
+* [ de Invoer/de uitvoergegevens ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}: Leer hoe te om gegevens en profielen in te voeren of uit te voeren gebruikend generische invoer/uitvoer.
 
 >[!ENDTABS]
 
@@ -121,9 +121,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=nl-NL){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -141,11 +141,11 @@ This video also explains the compliance of Adobe Campaign Classic with General D
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl-NL).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 

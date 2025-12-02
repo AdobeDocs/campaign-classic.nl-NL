@@ -3,12 +3,12 @@ product: campaign
 title: Formulierstructuur
 description: Formulierstructuur
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 
 
-De beschrijving van een vorm is een gestructureerd document van XML dat de grammatica van het vormschema **xtk waarneemt:vorm**.
+De beschrijving van een vorm is een gestructureerd document van XML dat de grammatica van het vormschema **xtk:form** waarneemt.
 
 Het document van XML van de inputvorm moet het `<form>` wortelelement met de **naam** en **namespace** attributen bevatten om de vormnaam en namespace te bevolken.
 
@@ -27,7 +27,7 @@ Het document van XML van de inputvorm moet het `<form>` wortelelement met de **n
 </form>
 ```
 
-Een formulier is standaard gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Om een vorm met een verschillende naam te associëren, plaats het **entiteit-schema** attribuut van het `<form>` element aan de naam van de schemasleutel. Als u de structuur van een invoerformulier wilt illustreren, kunt u een interface beschrijven met het voorbeeldschema &quot;focus:receiver&quot;:
+Een formulier is standaard gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Om een vorm met een verschillende naam te associëren, plaats het **entiteit-schema** attribuut van het `<form>` element aan de naam van de schemasleutel. Om de structuur van een inputvorm te illustreren, laten wij een interface beschrijven gebruikend het &quot;slag :recipient&quot;voorbeeldschema:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -70,7 +70,7 @@ Elk veld wordt standaard weergegeven op één regel en neemt alle beschikbare ru
 
 ## Opmaak {#formatting}
 
-De lay-out van de controles kijkt als lay-out die in HTML lijsten wordt gebruikt, met de mogelijkheid om een controle in verscheidene kolommen te verdelen, interliniërende elementen, of het specificeren van de bezetting van beschikbare ruimte. Houd er echter rekening mee dat u met de opmaak het gebied alleen door verhoudingen kunt opsplitsen. U kunt geen vaste afmetingen voor een object opgeven.
+De lay-out van de controles kijkt als lay-out die in de lijsten van HTML wordt gebruikt, met de mogelijkheid om een controle in verscheidene kolommen te verdelen, interliniërende elementen, of het specificeren van de bezetting van beschikbare ruimte. Houd er echter rekening mee dat u met de opmaak het gebied alleen door verhoudingen kunt opsplitsen. U kunt geen vaste afmetingen voor een object opgeven.
 
 De besturingselementen van het bovenstaande voorbeeld in twee kolommen weergeven:
 
@@ -187,7 +187,7 @@ De belangrijkste container wordt bepaald door **type= &quot;notitieboekje&quot;*
 
 >[!NOTE]
 >
->A **style=&quot;neer|omhoog** (door gebrek) **&#x200B;**&#x200B;eigenschap dwingt de verticale plaatsing van lusjeetiketten onder of boven de controle. Deze functie is optioneel.
+>A **style=&quot;neer|omhoog** (door gebrek) **** eigenschap dwingt de verticale plaatsing van lusjeetiketten onder of boven de controle. Deze functie is optioneel.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Pictogramlijst {#icon-list}
@@ -211,7 +211,7 @@ In deze container wordt een verticale pictogrambalk weergegeven waarmee u de pag
 
 De belangrijkste container wordt bepaald door **type= &quot; iconbox&quot;** attributen. De pagina&#39;s die aan de pictogrammen zijn gekoppeld, worden gedeclareerd in de onderliggende containers. Het etiket van de pictogrammen wordt bevolkt van het **etiket** attribuut.
 
-Het pictogram van een pagina wordt gevuld vanuit het kenmerk `img="<image>"` , waarbij `<image>` de naam is van de afbeelding die overeenkomt met de sleutel waaruit de naam en naamruimte bestaan (bijvoorbeeld &quot;xtk:properties.png&quot;).
+Het pictogram van een pagina wordt gevuld van het `img="<image>"` attribuut, waar `<image>` de naam van het beeld is die aan zijn sleutel beantwoordt die uit de naam en namespace (b.v., &quot;xtk :properties.png&quot;bestaat).
 
 De afbeeldingen zijn beschikbaar via het knooppunt **[!UICONTROL Administration > Configuration > Images]** .
 
@@ -277,7 +277,7 @@ Met het pictogram **[!UICONTROL Modify the link]** (map) wordt een selectieformu
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-Met het pictogram **[!UICONTROL Edit link]** (vergrootglas) wordt de bewerkvorm van het gekoppelde element gestart. Het gebruikte formulier wordt standaard afgetrokken op de sleutel van het doelschema. Het **vorm** attribuut laat u de naam van uitgeven vorm (b.v. &quot;cus:company2&quot;) dwingen.
+Met het pictogram **[!UICONTROL Edit link]** (vergrootglas) wordt de bewerkvorm van het gekoppelde element gestart. Het gebruikte formulier wordt standaard afgetrokken op de sleutel van het doelschema. Het **vorm** attribuut laat u de naam van uitgeven vorm (b.v. &quot;cus :company2&quot;dwingen).
 
 U kunt de keuze van doelelementen beperken door het element **`<sysfilter>`** toe te voegen van de koppelingsdefinitie in het invoerformulier:
 
@@ -378,7 +378,7 @@ Voorbeeld van een relatietabel in een schema:
 </srcSchema>
 ```
 
-Bij ons voorbeeld beginnen we met de invoervorm van het schema &#39;cus:receiver&#39;. De lijst moet de verenigingen met abonnementen aan de diensten tonen en moet u toestaan om een abonnement toe te voegen door een bestaande dienst te selecteren.
+Voor ons voorbeeld, beginnen wij met de inputvorm van het &quot;cus :recipient&quot;schema. De lijst moet de verenigingen met abonnementen aan de diensten tonen en moet u toestaan om een abonnement toe te voegen door een bestaande dienst te selecteren.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -636,9 +636,9 @@ De aanwezigheid van **type= &quot;tovenaar&quot;** attributen op het `<form>` el
 
 Met de knop **[!UICONTROL Finish]** slaat u de ingevoerde gegevens op en sluit u het formulier.
 
-### SOAP {#soap-methods}
+### Methoden van SOAP {#soap-methods}
 
-SOAP methode-uitvoering kan worden gestart vanuit een gevulde **`<leave>`** -tag aan het einde van een pagina.
+De uitvoering van de SOAP-methode kan worden gestart met een gevulde **`<leave>`** -tag aan het einde van een pagina.
 
 De tag **`<soapcall>`** bevat de aanroep van de methode met de volgende invoerparameters:
 

@@ -3,9 +3,9 @@ product: campaign
 title: Tags voor webtracering op uw site invoegen
 description: Leer hoe u tags voor webspatiëring op uw site kunt invoegen
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Eenvoudige methode {#simple-method}
 
-Deze methode bestaat uit het verzenden van een HTTP-aanroep naar de omleidingsserver door een **`<img>`** HTML-tag in de HTML-broncode van de webpagina die u wilt bijhouden.
+Deze methode bestaat uit het verzenden van een HTTP-aanroep naar de omleidingsserver door een **`<img>`** HTML-tag in te voegen in de HTML-broncode van de webpagina die u wilt bijhouden.
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ De ingevoegde tag neemt contact op met de omleidingsserver.
 
 Wanneer u een pagina definieert die in de console moet worden bijgehouden, kunt u een voorbeeld van een webtrackingtag genereren en deze kopiëren en plakken in de broncode van uw webpagina.
 
-Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en alle informatie die in een extensieschema is gedefinieerd in te voegen.
+Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag met JavaScript wijzigen om de transactiegegevens (hoeveelheid, aantal items) en informatie die in een extensieschema is gedefinieerd, in te voegen.
 
 ### Statische invoeging van tags {#static-insertion-of-tags}
 
 Als u statische tags wilt invoegen, kopieert en plakt u gewoon de tags die door de console zijn gegenereerd of die u handmatig hebt gemaakt in de bron van uw webpagina.
 
-**Voorbeeld**: invoeging van een tag voor webtracering op een pagina waarop een formulier wordt weergegeven.
+**Voorbeeld**: toevoeging van een Web het volgen markering op een pagina die een vorm toont.
 
 ```
 <html>
@@ -88,7 +88,7 @@ Een webtrackingtag van het type TRANSACTION wordt ingevoegd in de bevestigingspa
 
 Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web tracking tijdens het genereren van de pagina toevoegen.
 
-**Voorbeeld**: Web tracking toegevoegd aan JSPs.
+**Voorbeeld**: Het volgen van het Web voegde aan JSPs toe.
 
 ```
 <%@page import="java.util.Random" %>
@@ -125,7 +125,7 @@ Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web track
 
 Als u wenst om de informatie te controleren die naar de omleidingsserver wordt verzonden, is de betrouwbaarste manier de vraag van HTTP synchroon uit te voeren zelf gebruikend een pagina die taal produceert.
 
-De URL die u maakt, moet voldoen aan de syntaxisregels die zijn gedefinieerd in [Tag voor webspatiëring: definitie](../../configuration/using/web-tracking-tag-definition.md).
+URL u bouwt moet de syntaxisregels volgen die in [ Web volgende markering worden bepaald: definitie ](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ De URL die u maakt, moet voldoen aan de syntaxisregels die zijn gedefinieerd in 
 >
 >Voor omleiding en webtracering worden cookies gebruikt. Het is belangrijk dat de webserver die de synchrone HTTP-aanroep uitvoert zich in hetzelfde domein bevindt als de omleidingsserver. De verschillende HTTP-uitwisselingen moeten de cookies &#39;id&#39;, &#39;uuid&#39; en &#39;uuid230&#39; overbrengen.
 
-**Voorbeeld**: Dynamische generatie in Java, met verificatie van ontvangers op basis van hun accountnummer.
+**Voorbeeld**: Dynamische generatie in Java, met ontvankelijke authentificatie die hun rekeningsaantal gebruiken.
 
 ```
 [...]

@@ -2,14 +2,14 @@
 product: campaign
 title: Filterregels
 description: Leer hoe u filterregels kunt gebruiken in Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Met filterregels kunt u de berichten definiëren die u wilt uitsluiten op basis van criteria die in een query zijn gedefinieerd. Deze regels zijn gekoppeld aan een doelgerichte dimensie.
 
-Het filtreren van regels kan met andere soorten regels (controle, druk, enz.) in typologieën worden verbonden, of in een specifieke **het Filtreren** typologie worden gegroepeerd. Voor meer op dit, verwijs naar [&#x200B; Creërend en gebruikend een het filtreren typologie &#x200B;](#creating-and-using-a-filtering-typology).
+Het filtreren van regels kan met andere soorten regels (controle, druk, enz.) in typologieën worden verbonden, of in een specifieke **het Filtreren** typologie worden gegroepeerd. Voor meer op dit, verwijs naar [ Creërend en gebruikend een het filtreren typologie ](#creating-and-using-a-filtering-typology).
 
 ## Een filterregel maken {#creating-a-filtering-rule}
 
@@ -30,7 +30,7 @@ Pas de volgende stappen toe om dit filter te definiëren:
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Verander het gebrek richtend afmeting en selecteer de abonnementen (**nms:abonnement**).
+1. Verander het gebrek richtend afmeting en selecteer de abonnementen (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 

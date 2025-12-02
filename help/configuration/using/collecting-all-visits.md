@@ -3,9 +3,9 @@ product: campaign
 title: Alle bezoeken verzamelen
 description: Alle bezoeken verzamelen
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 3%
@@ -26,11 +26,11 @@ Een gebruiker die aan het platform wordt bekend is een ontvanger die reeds door 
 
 ## Serverconfiguratie {#server-configuration}
 
-De servers worden gevormd door bepaalde elementen van te laden **serverConf.xml** bestand. Deze bestanden worden opgeslagen in de **conf** subdirectory van de installatiemap van Adobe Campaign.
+De servers worden gevormd door bepaalde elementen van het {**dossier te overbelasten 0} serverConf.xml.** Deze dossiers worden bewaard in **conf** subdirectory van de de installatiemap van Adobe Campaign.
 
 ### Redirection-server {#redirection-server}
 
-Voor de omleidingsserver stelt u de optie **trackWebVisitors** kenmerk van de **omleiding** element naar **true**.
+Voor de redirection server, plaats **trackWebVisitors** attributen van het **redirection** element aan **waar**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -43,7 +43,7 @@ trackingPassword=""
 
 Als u de trackinggegevens via uw clientconsole wilt weergeven, moet u:
 
-* Een **dummylevering** (de leveringstoewijzing moet identiek zijn aan de toewijzing van het doelschema),
-* Voer de **interne naam** van deze levering in de **NmsTracking_WebTrackingDelivery** -optie.
+* Creeer a **dummy levering** (de leveringstoewijzing moet aan de afbeelding van het doelschema identiek zijn),
+* Ga de **interne naam** van deze levering in **NmsTracking_WebTrackingDelivery** optie in.
 
 Alle informatie over het bijhouden van de site die niet direct na een klik in een e-mailbericht wordt weergegeven, kunt u bekijken in de gemaakte dummylevering.

@@ -3,10 +3,10 @@ product: campaign
 title: Formulieren bewerken
 description: Formulieren bewerken
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 1%
@@ -25,7 +25,7 @@ U kunt invoerformulieren maken en wijzigen:
 * U kunt de fabrieksinvoerformulieren wijzigen die standaard worden geleverd. De fabrieksinvoerformulieren zijn gebaseerd op de fabrieksgegevensschema&#39;s.
 * U kunt aangepaste invoerformulieren maken op basis van gegevensschema&#39;s die u definieert.
 
-Forms zijn entiteiten van het type `xtk:form` . U kunt de structuur van het invoerformulier weergeven in het `xtk:form` -schema. Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** in het menu om dit schema weer te geven. Lees meer over [&#x200B; vormstructuur &#x200B;](form-structure.md).
+Forms zijn entiteiten van het type `xtk:form` . U kunt de structuur van het invoerformulier weergeven in het `xtk:form` -schema. Kies **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** in het menu om dit schema weer te geven. Lees meer over [ vormstructuur ](form-structure.md).
 
 Als u invoerformulieren wilt openen, kiest u **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** in het menu:
 
@@ -53,7 +53,7 @@ U kunt verschillende typen invoerformulieren maken. Het formuliertype bepaalt ho
 
 * Contentmanagement
 
-  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [&#x200B; gebruiksgeval &#x200B;](../../delivery/using/use-case-creating-content-management.md).
+  Gebruik dit formuliertype voor inhoudsbeheer. Zie dit [ gebruiksgeval ](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -244,7 +244,7 @@ Voer de volgende stappen uit om een formulier te maken:
    | Selectievakje | `type="checkbox"` |
    | Boomstructuur bewerken | `type="tree"` |
 
-   Lees meer over [&#x200B; controles van de geheugenlijst &#x200B;](form-structure.md#memory-list-controls).
+   Lees meer over [ controles van de geheugenlijst ](form-structure.md#memory-list-controls).
 
 1. U kunt ook toegang tot de velden definiëren:
 
@@ -487,11 +487,11 @@ In dit voorbeeld is het e-mailadres vereist en wordt een foutbericht weergegeven
 </leave>
 ```
 
-Lees meer over [&#x200B; uitdrukkingsgebieden &#x200B;](form-structure.md#expression-field) en [&#x200B; vormcontext &#x200B;](form-structure.md#context-of-forms).
+Lees meer over [ uitdrukkingsgebieden ](form-structure.md#expression-field) en [ vormcontext ](form-structure.md#context-of-forms).
 
 ### Waarden valideren
 
-U kunt JavaScript-SOAP gebruiken om formuliergegevens te valideren vanuit de Console. Gebruik deze aanroepen voor complexe validatie, bijvoorbeeld om een waarde te controleren op basis van een lijst met toegestane waarden. [Meer informatie](form-structure.md#soap-methods).
+U kunt JavaScript SOAP-aanroepen gebruiken om formuliergegevens te valideren vanuit de Console. Gebruik deze aanroepen voor complexe validatie, bijvoorbeeld om een waarde te controleren op basis van een lijst met toegestane waarden. [Meer informatie](form-structure.md#soap-methods).
 
 1. Maak een validatiefunctie in een JS-bestand.
 
@@ -515,7 +515,7 @@ U kunt JavaScript-SOAP gebruiken om formuliergegevens te valideren vanuit de Con
 
 1. Voeg in het formulier het element `<soapCall>` toe aan het element `<leave>` .
 
-   In dit voorbeeld wordt een SOAP aanroep gebruikt om de tekenreeks `@valueToCheck` te valideren:
+   In dit voorbeeld wordt een SOAP-aanroep gebruikt om de tekenreeks `@valueToCheck` te valideren:
 
    ```xml
    <form name="recipient" (…)>
@@ -548,4 +548,4 @@ In dit voorbeeld wordt getoond hoe u serviceaanroepen kunt uitvoeren vanuit form
 </enter>
 ```
 
-In dit voorbeeld is de invoer een id, die een primaire sleutel is. Wanneer gebruikers het formulier voor deze id invullen, wordt een SOAP aanroep met deze id uitgevoerd als invoerparameter. De uitvoer is een Booleaanse waarde die naar dit veld wordt geschreven: `/tmp/@count` . U kunt deze Booleaanse waarde in het formulier gebruiken. Lees meer over [&#x200B; vormcontext &#x200B;](form-structure.md#context-of-forms).
+In dit voorbeeld is de invoer een id, die een primaire sleutel is. Wanneer gebruikers het formulier voor deze id invullen, wordt een SOAP-aanroep met deze id uitgevoerd als invoerparameter. De uitvoer is een Booleaanse waarde die naar dit veld wordt geschreven: `/tmp/@count` . U kunt deze Booleaanse waarde in het formulier gebruiken. Lees meer over [ vormcontext ](form-structure.md#context-of-forms).

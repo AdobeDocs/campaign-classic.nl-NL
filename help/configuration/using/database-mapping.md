@@ -3,9 +3,9 @@ product: campaign
 title: Databasetoewijzing
 description: Databasetoewijzing
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Databasetoewijzing{#database-mapping}
 
-De SQL afbeelding van het steekproefschema dat [&#x200B; in deze pagina &#x200B;](schema-structure.md) wordt beschreven produceert het volgende document van XML:
+De SQL afbeelding van het steekproefschema dat [ in deze pagina ](schema-structure.md) wordt beschreven produceert het volgende document van XML:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -92,13 +92,13 @@ Om een gebied in XML te bevolken, moet u **xml** attributen met de waarde &quot;
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
-* Beschrijving van de gegevens in HTML-formaat:
+* Beschrijving van gegevens in HTML-indeling:
 
   ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale controle voor het bewerken van HTML weergeven in de Adobe Campaign-clientinterface.
+  Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale HTML-bewerkingscontrole weergeven in de Adobe Campaign-clientinterface.
 
 Gebruik XML-velden om nieuwe velden toe te voegen zonder de fysieke structuur van de database te wijzigen. Een ander voordeel is dat u minder bronnen gebruikt (grootte die is toegewezen aan SQL-velden, beperking van het aantal velden per tabel, enzovoort). U kunt een XML-veld echter niet indexeren of filteren.
 

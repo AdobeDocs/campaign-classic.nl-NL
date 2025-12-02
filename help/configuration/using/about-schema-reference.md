@@ -3,12 +3,12 @@ product: campaign
 title: Aan de slag met schema's in Adobe Campaign
 description: Leer hoe u met schema's werkt en breid het conceptuele gegevensmodel van de Adobe Campaign-database uit
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [&#x200B; de gegevensmodel van Campaign Classic &#x200B;](about-data-model.md).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het [ de gegevensmodel van Campaign Classic ](about-data-model.md).
 
 In Adobe Campaign wordt de fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, in XML beschreven. A **schema** is een document van XML verbonden aan een gegevensbestandlijst. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 
@@ -74,7 +74,7 @@ Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
 Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld, wordt **focus** namespace gebruikt voor klant-specifieke configuratie (**klanten**).
 
-De identificatiesleutel van een schema is een koord dat wordt gebouwd gebruikend namespace en de naam die door een dubbelpunt wordt gescheiden; bijvoorbeeld: **concentreert:ontvanger**.
+De identificatiesleutel van een schema is een koord dat wordt gebouwd gebruikend namespace en de naam die door een dubbelpunt wordt gescheiden; bijvoorbeeld: **cus:recipient**.
 
 >[!IMPORTANT]
 >

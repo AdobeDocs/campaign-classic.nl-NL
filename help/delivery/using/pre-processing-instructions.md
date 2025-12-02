@@ -4,11 +4,11 @@ title: Voorverwerkingsinstructies voor bijgehouden URL's
 description: Meer informatie over voorbewerkingsinstructies die moeten worden gebruikt om de URL van een e-mailbericht te scripten en deze nog steeds te laten bijhouden
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Monitoring
-role: User, Data Engineer, Developer
+role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -74,9 +74,9 @@ Waarbij:
 * **[!DNL object]**: naam van het object (bijvoorbeeld: levering, provider, enzovoort).
 Object kan:
    * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
-   * **[!DNL provider]**: voor de huidige leveringsprovider/routering (nms:externalAccount).
+   * **[!DNL provider]**: voor de huidige leverancier/het verpletteren van levering (nms :externalAccount).
    * Een extra manuscriptobject: als een voorwerp in de context door wordt geladen: **Eigenschappen** > **Personalization** > **voegt voorwerpen in de uitvoeringscontext** toe.
-   * Punt van de foreach lijn: zie [&#x200B; Foreach &#x200B;](#foreach) hieronder sectie.
+   * Punt van de foreach lijn: zie [ Foreach ](#foreach) hieronder sectie.
 * **[!DNL xpath]** : xpath of the field.
 * **[!DNL index]** (optioneel): als **[!DNL object]** een array is (voor extra scriptobjecten), wordt de itemindex in de array (Begint bij 0) weergegeven.
 
@@ -101,7 +101,7 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
 
 **Voorzichtigheid**
 
-Als u de volgende instructie gebruikt voor leveringen die via mid-sourcing worden verzonden, moet het aangepaste veld **@myCustomField** aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingsplatforms:
+Als u de volgende instructie voor leveringen gebruikt die via mid-sourcing worden verzonden, moet het douanegebied **@myCustomField** aan het nms :delivery schema op zowel marketing als midsourcing platforms worden toegevoegd:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>

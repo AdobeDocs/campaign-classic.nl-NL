@@ -4,11 +4,11 @@ title: Inhoud verrijken
 description: Inhoud verrijken
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De vragen worden gevormd via het publicatiesjabloon in **[!UICONTROL Aggregator]
 
 De opgehaalde gegevens verrijken het XML-uitvoerdocument via het hoofdelement.
 
-Voorbeeld van terugkeer van een vraag op het ontvankelijke schema (**nms:ontvanger**):
+Voorbeeld van terugkeer van een vraag op het ontvankelijke schema (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -78,7 +78,7 @@ Een inhoudskoppeling wordt als volgt gedeclareerd in het gegevensschema:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-De definitie van de verbinding wordt bevolkt op a **koord** - type **`<element>`**, en **expandSchemaTarget** kenmerkverwijzingen het doelschema (&quot;focus:hoofdstuk&quot;in ons voorbeeld). Het schema waarnaar wordt verwezen, moet een inhoudsschema zijn.
+De definitie van de verbinding wordt bevolkt op a **koord** - type **`<element>`**, en **expandSchemaTarget** kenmerkverwijzingen het doelschema (&quot;focus :chapter&quot;in ons voorbeeld). Het schema waarnaar wordt verwezen, moet een inhoudsschema zijn.
 
 De inhoud van het doelelement verrijkt het koppelingselement, dat wil zeggen het element **`<chapter>`** in ons voorbeeldschema:
 
@@ -136,13 +136,13 @@ Een koppeling naar een externe tabel wordt als volgt gedeclareerd in het gegeven
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-De definitie van de verbinding wordt bevolkt op a **verbinding** - type **`<element>`**, en de **doel** kenmerkverwijzingen het doelschema (&quot;nms:ontvanger&quot;in ons voorbeeld).
+De definitie van de verbinding wordt bevolkt op a **verbinding** - type **`<element>`**, en de **doel** kenmerkverwijzingen het doelschema (&quot;nms :recipient&quot;in ons voorbeeld).
 
 Door overeenkomst, moeten de verbindingen van het belangrijkste element van het gegevensschema worden verklaard.
 
 Het **verwerkt koord** en de sleutel van het gerichte element verrijken de **`<name>-id`** en **`<name>-cs`** attributen op het belangrijkste element.
 
-In ons voorbeeld wordt de koppeling gevuld in het schema &quot;cus:book&quot;. De inhoud van de koppelingsgegevens bevindt zich in de kenmerken &quot;mainContact-id&quot; en &quot;mainContact-cs&quot;:
+In ons voorbeeld, is de verbinding bevolkt in het &quot;focus :book&quot;schema, is de inhoud van de verbindingsgegevens bevat in &quot;mainContact-id&quot;en &quot;mainContact-cs&quot;attributen:
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
@@ -206,7 +206,7 @@ De inhoud van het doelelement verrijkt elk verzamelingselement in het uitvoerdoc
 
 De inhoud van elke verbinding waarnaar wordt verwezen is beperkt tot de interne sleutel en **verwerkt koord** van het gerichte element.
 
-Een JavaScript-script wordt gebruikt om de inhoud van de koppelingen te verrijken via SOAP query&#39;s.
+Een JavaScript-script wordt gebruikt om de inhoud van de koppelingen te verrijken via SOAP-query&#39;s.
 
 **Voorbeeld**: Het toevoegen van de ontvankelijke naam aan de &quot;mainContact&quot;verbinding en de &quot;contact&quot;inzamelingsverbindingen:
 

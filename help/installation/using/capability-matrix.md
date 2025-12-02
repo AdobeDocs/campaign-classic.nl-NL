@@ -4,7 +4,7 @@ title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 17%
@@ -17,9 +17,9 @@ ht-degree: 17%
 
 Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. In dit artikel worden enkele details weergegeven over de belangrijkste verschillen tussen volledig gehoste (Managed Services) en on-premise implementaties voor bepaalde functies.
 
-Deze pagina toont de belangrijkste verschillen tussen gehoste (Managed Services) en on-premise implementaties. De specifieke eigenschappen van hybride plaatsingen hangen van de elementen af die door Adobe worden ontvangen en in uw gebouwen worden ontvangen.
+Deze pagina toont de belangrijkste verschillen tussen gehoste (Managed Services) en on-premise implementaties. De specifieke kenmerken van hybride implementaties zijn afhankelijk van de elementen die door Adobe worden gehost en in uw gebouwen worden gehost.
 
-De verschillende ontvangende modellen worden geïntroduceerd [&#x200B; in deze sectie &#x200B;](../../installation/using/hosting-models.md).
+De verschillende ontvangende modellen worden geïntroduceerd [ in deze sectie ](../../installation/using/hosting-models.md).
 
 ## Beschikbaarheid per implementatiemodel {#capability-matrix}
 
@@ -45,13 +45,13 @@ Adobe Campaign verstrekt de **Federated optie van de Toegang van Gegevens** (FDA
 
 >[!CAUTION]
 >
->Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Leer meer in [&#x200B; de Matrijs van de Verenigbaarheid van de Campagne &#x200B;](../../rn/using/compatibility-matrix.md).
+>Compatibele externe databasesystemen zijn afhankelijk van uw hostingmodel. Leer meer in [ de Matrijs van de Verenigbaarheid van de Campagne ](../../rn/using/compatibility-matrix.md).
 >
 
 **zie ook**
 
 * [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
-* [Aanvullende informatie &#x200B;](../../rn/using/latest-release.md)
-* [Campaign Classic upgrades](../../rn/using/rn-overview.md)
+* [Aanvullende informatie ](../../rn/using/latest-release.md)
+* [Campaign Classic-upgrades](../../rn/using/rn-overview.md)
 * [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard]-releases &#x200B;](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)

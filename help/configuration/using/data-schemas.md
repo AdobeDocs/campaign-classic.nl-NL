@@ -3,9 +3,9 @@ product: campaign
 title: Gegevensschema’s
 description: Aan de slag met schema's voor campagnegegevens
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -40,7 +40,7 @@ In de voorvertoning wordt het uitgebreide schema automatisch gegenereerd:
 >
 >Wanneer het bronschema wordt opgeslagen, wordt het genereren van het uitgebreide schema automatisch gestart.
 
-Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie geldt alleen voor gegenereerde schema&#39;s. Voor meer op dit, verwijs naar [&#x200B; Regenererende schema&#39;s &#x200B;](../../configuration/using/regenerating-schemas.md) sectie.
+Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie geldt alleen voor gegenereerde schema&#39;s. Voor meer op dit, verwijs naar [ Regenererende schema&#39;s ](../../configuration/using/regenerating-schemas.md) sectie.
 
 ## Voorbeeld: een tabel met contracten maken {#example--creating-a-contract-table}
 
@@ -59,7 +59,7 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    >[!NOTE]
    >
-   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Voor meer op dit, verwijs naar [&#x200B; Identificatie van een schema &#x200B;](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Voor meer op dit, verwijs naar [ Identificatie van een schema ](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
 1. Maak de inhoud van de tabel. Wij adviseren gebruikend de ingangsmedewerker om ervoor te zorgen geen montages ontbreken. Klik hiertoe op de knop **[!UICONTROL Insert]** en kies het type instelling dat u wilt toevoegen.
 
@@ -117,4 +117,4 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Voor meer op dit, verwijs naar [&#x200B; het Bijwerken van de gegevensbestandstructuur &#x200B;](../../configuration/using/updating-the-database-structure.md).
+1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Voor meer op dit, verwijs naar [ het Bijwerken van de gegevensbestandstructuur ](../../configuration/using/updating-the-database-structure.md).

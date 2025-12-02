@@ -5,9 +5,9 @@ description: Meer informatie over de reikwijdte en de specifieke kenmerken van h
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Het is geïmplementeerd om de schaalbaarheid te verbeteren, de doorvoer van de l
 >
 >De Adobe Campaign Enhanced MTA is alleen beschikbaar voor door Campaign Classic gehoste of hybride klanten. Campaign Classic on-premise installaties kunnen niet worden geüpgraded om de Enhanced MTA te gebruiken.
 
-Als u na september 2018 een Campaign Classic-instantie hebt ingericht, gebruikt u de Enhanced MTA. Voor alle andere klanten van Campaign Classic, zie [&#x200B; vaak gestelde vragen &#x200B;](#enhanced-mta-faq) hieronder.
+Als u na september 2018 een Campaign Classic-instantie hebt ingericht, gebruikt u de Enhanced MTA. Voor alle andere klanten van Campaign Classic, zie [ vaak gestelde vragen ](#enhanced-mta-faq) hieronder.
 
-De verbeterde implementatie MTA kan enkele bestaande functionaliteit van de Campagne beïnvloeden. Voor meer op dit, zie de [&#x200B; Verbeterde specialiteiten MTA &#x200B;](#enhanced-mta-impacts).
+De verbeterde implementatie MTA kan enkele bestaande functionaliteit van de Campagne beïnvloeden. Voor meer op dit, zie de [ Verbeterde specialiteiten MTA ](#enhanced-mta-impacts).
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Voor klanten die de functionaliteit van het de transactieoverseinen van Adobe Ca
 
 De MX regels van de het beheersleveringsproductie worden niet meer gebruikt. Verbeterde MTA heeft zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
-Voor meer op MX configuratie, zie [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#mx-configuration).
+Voor meer op MX configuratie, zie [ deze sectie ](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### Stuitkwalificatie
 
@@ -105,7 +105,7 @@ De stuitkwalificaties in de lijst van de Campagne **[!UICONTROL Delivery log qua
 >
 >Verbeterde MTA kwalificeert de stuit SMTP en verzendt die kwalificatie terug naar Campagne in de vorm van een stuitercode die aan een de stuiteringsreden en kwalificatie van de Campagne in kaart wordt gebracht.
 
-Voor meer bij stuitkwalificatie, zie [&#x200B; deze sectie &#x200B;](understanding-delivery-failures.md#bounce-mail-qualification).
+Voor meer bij stuitkwalificatie, zie [ deze sectie ](understanding-delivery-failures.md#bounce-mail-qualification).
 
 ### Levering
 
@@ -115,13 +115,13 @@ Een levering kan niet worden gestopt wanneer deze is overgebracht naar de verbet
 
 De grafiek van de productie van de Levering van de Campagne zal niet meer de productie aan uw e-mailontvangers tonen. Die grafiek zal nu de productiesnelheid voor het relais van uw berichten van Campaign over aan Verbeterde MTA tonen.
 
-Voor meer op de leveringsproductie, zie [&#x200B; deze sectie &#x200B;](../../reporting/using/global-reports.md#delivery-throughput).
+Voor meer op de leveringsproductie, zie [ deze sectie ](../../reporting/using/global-reports.md#delivery-throughput).
 
 ### Opnieuw
 
 De instellingen voor Opnieuw proberen in de levering worden niet meer gebruikt door de campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor meer op herpogingen, zie deze [&#x200B; pagina &#x200B;](communication-channels.md) onder **Levering die** verzendt > **vormt opnieuw probeert**.
+Voor meer op herpogingen, zie deze [ pagina ](communication-channels.md) onder **Levering die** verzendt > **vormt opnieuw probeert**.
 
 ### Geldigheidsperiode
 
@@ -131,22 +131,22 @@ Bijvoorbeeld, als de geldigheidsperiode aan de standaardwaarde van 5 dagen in Ca
 
 Zodra een bericht 3.5 dagen in de Verbeterde MTA rij is geweest en niet heeft geleverd, zal het uit tijd en zijn status van **[!UICONTROL Sent]** aan **[!UICONTROL Failed]** in de leveringslogboeken worden bijgewerkt.
 
-Voor meer op de geldigheidsperiode, zie deze [&#x200B; pagina &#x200B;](communication-channels.md) onder **Levering die** verzendt > **bepaalt de geldigheidsperiode**.
+Voor meer op de geldigheidsperiode, zie deze [ pagina ](communication-channels.md) onder **Levering die** verzendt > **bepaalt de geldigheidsperiode**.
 
 ### DKIM-ondertekening
 
 Ondertekening van de DKIM-e-mailverificatie (DomainKeys Identified Mail) wordt uitgevoerd door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Voor meer op DKIM, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
+Voor meer op DKIM, zie de [ Gids van de Beste praktijken van de Levering van Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Leveringssuccesrapportage
 
-In de **[!UICONTROL Summary]** mening van een e-maillevering [&#x200B; dashboard &#x200B;](delivery-dashboard.md), begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [&#x200B; geldigheidsperiode &#x200B;](communication-channels.md), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
+In de **[!UICONTROL Summary]** mening van een e-maillevering [ dashboard ](delivery-dashboard.md), begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [ geldigheidsperiode ](communication-channels.md), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
 
-Sterker nog, tonen alle berichten als **[!UICONTROL Sent]** in [&#x200B; verzendend logboeken &#x200B;](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campagne aan Verbeterde MTA worden afgelost. Zij blijven in die status tenzij of tot a [&#x200B; stuiteren &#x200B;](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht terug van Verbeterde MTA aan Campagne wordt meegedeeld.
+Sterker nog, tonen alle berichten als **[!UICONTROL Sent]** in [ verzendend logboeken ](delivery-dashboard.md#delivery-logs-and-history) zodra zij met succes van Campagne aan Verbeterde MTA worden afgelost. Zij blijven in die status tenzij of tot a [ stuiteren ](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht terug van Verbeterde MTA aan Campagne wordt meegedeeld.
 
 Wanneer hard-bouncing berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** in **[!UICONTROL Failed]** en **[!UICONTROL Success]** percentage wordt dienovereenkomstig verminderd.
 
-Wanneer soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog steeds als **[!UICONTROL Sent]** en het **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. De soft-bouncing berichten worden dan [&#x200B; opnieuw geprobeerd &#x200B;](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
+Wanneer soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog steeds als **[!UICONTROL Sent]** en het **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. De soft-bouncing berichten worden dan [ opnieuw geprobeerd ](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
 
 * Als het opnieuw proberen is gelukt vóór het einde van de geldigheidsperiode, blijft de status van het bericht behouden als **[!UICONTROL Sent]** en blijft het percentage **[!UICONTROL Success]** ongewijzigd.
 
@@ -161,6 +161,5 @@ In de onderstaande tabel staan de verschillende stappen in het verzendingsproces
 | Het bericht wordt met succes afgelost van Campagne aan Verbeterde MTA | **[!UICONTROL Success]** percentage begint bij 100% | Verzonden |
 | Fel-stuiterende berichten worden gemeld terug van Verbeterde MTA | **[!UICONTROL Success]** percentage is dienovereenkomstig verlaagd | Mislukt |
 | De zachte die berichten bewegen worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden |
-| Herhalingen van soft-bouncing berichten zijn succesvol | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd | Verzonden |
+| Herhalingen van soft-bouncing berichten zijn succesvol | Geen wijziging in **[!UICONTROL Success]** percentage \|  **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd | Verzonden |
 | Herhalingen van soft-bouncing berichten mislukken | **[!UICONTROL Success]** percentage is dienovereenkomstig verlaagd | Mislukt |
-

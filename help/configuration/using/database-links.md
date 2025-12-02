@@ -3,11 +3,11 @@ product: campaign
 title: Databasetoewijzing
 description: Databasetoewijzing
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Voor join-relaties met FDA (Federated Database Access):
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Voor meer informatie over lijsten FDA, verwijs naar [&#x200B; Toegang hebbend tot een extern gegevensbestand &#x200B;](../../installation/using/about-fda.md).
+Voor meer informatie over lijsten FDA, verwijs naar [ Toegang hebbend tot een extern gegevensbestand ](../../installation/using/about-fda.md).
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
@@ -61,7 +61,7 @@ Mogelijke waarden zijn:
       * **bepaalt**: het is mogelijk om het bronvoorkomen te schrappen als het niet meer door een doelvoorkomen van verwijzingen wordt voorzien
       * **normaal**: het schrappen van de broninstantie initialiseert de sleutels van de verbinding aan het doelvoorkomen (standaardwijze), initialiseert dit type van integriteit alle buitenlandse sleutels
       * **eigen**: het schrappen van de broninstantie leidt tot de schrapping van het doelvoorkomen
-      * **eigen exemplaar**: het zelfde als **&#x200B;**&#x200B;(in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
+      * **eigen exemplaar**: het zelfde als **** (in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
       * **neutraal**: geen specifiek gedrag
 
    * **revIntegrity** (facultatief): integriteit op het doelschema (facultatief, &quot;normaal&quot;door gebrek)
@@ -80,7 +80,7 @@ Mogelijke waarden zijn:
 
 ## Voorbeeld: omgekeerde koppeling {#example-1}
 
-In het onderstaande voorbeeld declareren we een 1-N relatie tot de schematabel &quot;cus:company&quot;:
+In het voorbeeld hieronder, verklaren wij een verhouding 1-N met betrekking tot de &quot;cus :company&quot;schemalijst:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -112,7 +112,7 @@ De koppelingsdefinitie wordt aangevuld met de velden waaruit de verbinding besta
 
 De buitenlandse sleutel wordt automatisch toegevoegd in een element dat de zelfde kenmerken zoals het bijbehorende gebied in de bestemmingslijst, met de volgende noemende overeenkomst gebruikt: naam van doelschema dat door naam van bijbehorend gebied (&quot;bedrijf-identiteitskaart&quot;in ons voorbeeld) wordt gevolgd.
 
-Uitgebreid schema van het doel (&quot;cus:company&quot;):
+Uitgebreid schema van het doel (&quot;cus :company&quot;):
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -133,17 +133,17 @@ Uitgebreid schema van het doel (&quot;cus:company&quot;):
 </schema>
 ```
 
-Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoegd met de volgende parameters:
+Een omgekeerde verbinding aan de &quot;cus :recipient&quot;lijst werd toegevoegd met de volgende parameters:
 
 * **naam**: automatisch afgetrokken van de naam van het bronschema (kan met het &quot;revLink&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen)
 * **revLink**: naam van omgekeerde verbinding
-* **doel**: sleutel van verbonden schema (&quot;focus:ontvankelijk&quot;schema)
+* **doel**: sleutel van verbonden schema (&quot;focus :recipient&quot;schema)
 * **niet geconsolideerd**: de verbinding wordt verklaard als inzamelingselement voor een kardinaliteit 1-N (door gebrek)
 * **integriteit**: &quot;bepaal&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
 ## Voorbeeld: eenvoudige koppeling {#example-2}
 
-In dit voorbeeld, verklaren wij een verbinding aan de &quot;nms:adres&quot;schemalijst. De join is een outer join en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
+In dit voorbeeld, verklaren wij een verbinding naar de &quot;nms :address&quot;schemalijst. Bij zich voegen is een buitenste zich aansluit en uitdrukkelijk bevolkt met het e-mailadres van de ontvanger en het &quot;@adres&quot;gebied van de verbonden lijst (&quot;nms :address&quot;).
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -158,7 +158,7 @@ In dit voorbeeld, verklaren wij een verbinding aan de &quot;nms:adres&quot;schem
 
 ## Voorbeeld: unieke kardinaliteit {#example-3}
 
-In dit voorbeeld maken we een 1-1 relatie met de schematabel &quot;cus:extension&quot;:
+In dit voorbeeld, creëren wij 1-1 verband met de &quot;focus :extension&quot;schemalijst:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -166,7 +166,7 @@ In dit voorbeeld maken we een 1-1 relatie met de schematabel &quot;cus:extension
 
 ## Voorbeeld: koppelen naar een map {#example-4}
 
-In dit voorbeeld wordt een koppeling naar een map gedeclareerd (&quot;xtk:folder&quot;-schema):
+In dit voorbeeld, verklaren wij een verbinding aan een omslag (&quot;xtk :folder&quot;schema):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -176,7 +176,7 @@ De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-
 
 ## Voorbeeld: een sleutel maken op een koppeling {#example-5}
 
-In dit voorbeeld, creëren wij een sleutel op een verbinding (&quot;bedrijf&quot;aan &quot;focus:bedrijf&quot;schema) met het **xlink** attribuut en een gebied van de (&quot;e-mail&quot;) lijst:
+In dit voorbeeld, creëren wij een sleutel op een verbinding (&quot;bedrijf&quot;aan &quot;concentreer :company&quot;schema) met het **xlink** attribuut en een gebied van de (&quot;e-mail&quot;) lijst:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

@@ -3,13 +3,13 @@ product: campaign
 title: Schema-structuur begrijpen in Adobe Campaign
 description: Schemastructuur
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 audience: configuration
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
@@ -121,11 +121,11 @@ In ons voorbeeldschema zijn de volgende:
 
 De volgende regels zijn van toepassing:
 
-* Elk **`<element>`** en **`<attribute>`** moet op naam worden geïdentificeerd via het **name-attribuut** .
+* Elk **`<element>`** en **`<attribute>`** moeten door naam via het **naam** attribuut worden geïdentificeerd.
 
   >[!IMPORTANT]
   >
-  >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen tekens bevatten die zijn toegestaan in de XML-naamgevingsregels.
+  >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen tekens bevatten die zijn toegestaan in XML-naamgevingsregels.
 
 * Alleen **`<element>`** -elementen kunnen **`<attribute>`** -elementen en **`<element>`** -elementen in de XML-structuur bevatten.
 * Een **`<attribute>`** -element moet een unieke naam binnen een **`<element>`** hebben.
@@ -135,7 +135,7 @@ De volgende regels zijn van toepassing:
 
 Het gegevenstype is ingegaan via het **type** attribuut in **`<attribute>`** en **`<element>`** elementen.
 
-Een gedetailleerde lijst is beschikbaar in de beschrijving van het [`<attribute>` element &#x200B;](../../configuration/using/schema/attribute.md) en het [`<element>` element &#x200B;](../../configuration/using/schema/element.md).
+Een gedetailleerde lijst is beschikbaar in de beschrijving van het [`<attribute>` element ](../../configuration/using/schema/attribute.md) en het [`<element>` element ](../../configuration/using/schema/element.md).
 
 Wanneer dit attribuut niet bevolkt is, **koord** is het standaardgegevenstype tenzij het element kindelementen bevat. Als het, wordt het gebruikt slechts om de elementen hiërarchisch te structureren (**`<location>`** element in ons voorbeeld).
 
@@ -147,11 +147,11 @@ De volgende gegevenstypen worden ondersteund in schema&#39;s:
 
 * **boolean**: Van Boole gebied. Voorbeeld van mogelijke waarden: true/false, 0/1, ja/nee enz.
 * **byte**, **kort**, **lang**: gehelen (1 byte, 2 bytes, 4 bytes). Voorbeelden: leeftijd, rekeningnummer, aantal punten, enz.
-* **Dubbel**: drijvende-kommagetal met dubbele precisie. Voorbeelden: een prijs, een tarief enz.
+* **dubbel**: dubbel-precisie drijvende puntaantal. Voorbeelden: een prijs, een tarief enz.
 * **datum**, **datetime**: data en data + tijden. Voorbeelden: geboortedatum, aankoopdatum enz.
 * **datetimenotz**: datum + tijd zonder gegevens van de tijdzone.
 * **timespan**: duur. Voorbeeld: anciënniteit.
-* **Memo**: Lange tekstvelden (meerdere regels). Voorbeelden: een beschrijving, een opmerking, enz.
+* **memo**: lange tekstgebieden (veelvoudige lijnen). Voorbeelden: een beschrijving, een opmerking enz.
 * **uuid**: &quot;uniqueidentifier&quot;gebieden om een GUID (die in de Server van Microsoft SQL slechts wordt gesteund) te steunen.
 
   >[!NOTE]
@@ -180,13 +180,13 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campagne</strong><br /> </td> 
-   <td> <strong>PosgreSQL</strong><br /> </td> 
-   <td> <strong>Orakel</strong><br /> </td> 
+   <td> <strong> Adobe Campaign </strong><br /> </td> 
+   <td> <strong> PosgreSQL </strong><br /> </td> 
+   <td> <strong> Oracle </strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Snaar<br /> </td> 
-   <td> VARCHAR(255)<br /> </td> 
+   <td> String <br /> </td> 
+   <td> VARCHAR(255) <br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 als unicode) <br /> </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
-   <td> KLEIN<br /> </td> 
+   <td> SMALLINT <br /> </td> 
    <td> NUMBER(3) <br /> </td> 
   </tr> 
   <tr> 
@@ -212,7 +212,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   <tr> 
    <td> Lang <br /> </td> 
    <td> INTEGER <br /> </td> 
-   <td> AANTAL(10)<br /> </td> 
+   <td> NUMBER(10) <br /> </td> 
   </tr> 
   <tr> 
    <td> Int64 <br /> </td> 
@@ -246,7 +246,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   </tr> 
   <tr> 
    <td> Memo <br /> </td> 
-   <td> SMS<br /> </td> 
+   <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB als Unicode) <br /> </td> 
   </tr> 
   <tr> 
@@ -297,7 +297,7 @@ De elementen **`<elements>`** en **`<attributes>`** van het gegevensschema kunne
 
 Gebruik het **gebrek** bezit om een uitdrukking te bepalen die een standaardwaarde op inhoudsverwezenlijking terugkeert.
 
-De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op dit, verwijs naar [&#x200B; Verwijzend met XPath &#x200B;](../../configuration/using/schema-structure.md#referencing-with-xpath).
+De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op dit, verwijs naar [ Verwijzend met XPath ](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Voorbeeld**:
 
@@ -310,7 +310,7 @@ De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op
   >
   >Blader in de Adobe Campaign-clientconsole naar de map **[!UICONTROL Administration > Counters]** van de Verkenner om tellers te beheren.
 
-Als u een standaardwaarde aan een veld wilt koppelen, kunt u het `<default>`  veld of  `<sqldefault>`   gebruiken.
+Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<default>` of `<sqldefault>`   veld.
 
 `<default>` : hiermee kunt u het veld vooraf vullen met een standaardwaarde wanneer u entiteiten maakt. De waarde wordt geen standaard SQL-waarde.
 
@@ -318,9 +318,9 @@ Als u een standaardwaarde aan een veld wilt koppelen, kunt u het `<default>`  ve
 
 ### Opsommingen {#enumerations}
 
-#### Open opsomming {#free-enumeration}
+#### Opsomming openen {#free-enumeration}
 
-Met de **eigenschap userEnum** kunt u een open opsomming definiëren om de waarden die via dit veld zijn ingevoerd, op te slaan en weer te geven.
+Het **userEnum** bezit laat u een open opsomming bepalen om de waarden op te slaan en te tonen ingegaan via dit gebied.
 
 De syntaxis is als volgt:
 
@@ -340,7 +340,7 @@ Het **enum** bezit laat u een vaste opsomming bepalen die wordt gebruikt wanneer
 
 Het **enum** attribuut verwijst naar de definitie van een opsommingsklasse die in het schema buiten het belangrijkste element wordt bevolkt.
 
-Met opsommingen kan de gebruiker een waarde selecteren in een vervolgkeuzelijst in plaats van de waarde in een regulier invoerveld in te voeren:
+Met opsommingen kan de gebruiker een waarde in een vervolgkeuzelijst selecteren in plaats van de waarde in te voeren in een gewoon invoerveld:
 
 ![](assets/d_ncs_integration_schema_enum.png)
 
@@ -354,7 +354,7 @@ Voorbeeld van een opsommingsdeclaratie in het gegevensschema:
 </enumeration>
 ```
 
-Een opsomming wordt via het element buiten het **`<enumeration>`** hoofdelement gedeclareerd.
+Een opsomming wordt buiten het hoofdelement gedeclareerd via het element **`<enumeration>`** .
 
 De opsommingseigenschappen zijn als volgt:
 
@@ -374,7 +374,7 @@ De opsommingswaarden worden gedeclareerd in het element **`<value>`** met de vol
 
 Nochtans, slaat het **naam** attribuut intern niet de waarde op, het slaat een code op die u de betrokken lijsten zonder hun schema uit te breiden laat uitbreiden.
 
-Deze opsomming wordt bijvoorbeeld gebruikt om de aard van campagnes te specificeren.
+Deze opsomming wordt bijvoorbeeld gebruikt om de aard van campagnes op te geven.
 
 ![](assets/d_ncs_configuration_schema_dbenum.png)
 
@@ -467,7 +467,7 @@ U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in
 
 A **verwerkt koord** is een uitdrukking van XPath die wordt gebruikt om een koord te construeren dat een verslag in een lijst vertegenwoordigt verbonden aan het schema. **verwerkt koord** wordt hoofdzakelijk gebruikt in de grafische interface om het etiket van een geselecteerd verslag te tonen.
 
-De **Compute string** wordt gedefinieerd via het **`<compute-string>`** element onder het hoofdelement van het gegevensschema. Een **expr** attribuut bevat een uitdrukking van XPath om de vertoning te berekenen.
+Het **berekent koord** wordt bepaald via het **`<compute-string>`** element onder het belangrijkste element van het gegevensschema. Een **expr** attribuut bevat een uitdrukking van XPath om de vertoning te berekenen.
 
 **Voorbeeld**: compute koord van de ontvankelijke lijst.
 
@@ -489,7 +489,7 @@ Resultaat van het gegevens verwerkte koord voor een ontvanger: **Doe John (john.
 
 ## Meer informatie
 
-Blader door de volgende links voor meer informatie:
+Klik op de volgende koppelingen voor meer informatie:
 
 * [Aan de slag met schema&#39;s](about-schema-reference.md)
 * [Databasetoewijzing](database-mapping.md)

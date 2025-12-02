@@ -3,35 +3,35 @@ product: campaign
 title: SOAP-methoden implementeren
 description: SOAP-methoden implementeren
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 2%
 
 ---
 
-# SOAP implementeren{#implementing-soap-methods}
+# SOAP-methoden implementeren{#implementing-soap-methods}
 
 
 
 ## Inleiding {#introduction}
 
-Het is mogelijk SOAP methoden te maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
+Het is mogelijk om SOAP-methoden te maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
 
-Deze SOAP werken op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen-toets en const.
+Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen-toets en const.
 
 ## Een methodebibliotheek definiëren {#defining-a-method-library}
 
 Het maken van een methodebibliotheek bestaat uit twee fasen:
 
-* de declaratie van de SOAP methode;
+* de declaratie van de methode SOAP,
 * Definitie (of implementatie) in JavaScript.
 
 ### Verklaring {#declaration}
 
-Begin door de methodes in de schema&#39;s (voor meer op te verklaren om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-edition.md)).
+Begin door de methodes in de schema&#39;s (voor meer op te verklaren om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [ deze sectie ](../../configuration/using/about-schema-edition.md)).
 
 Hun verklaring is gelijkaardig aan die van inheemse methodes, behalve dat moet u het attribuut &quot;bibliotheek&quot;toevoegen die de naam van de methodebibliotheek specificeren waar de definitie wordt gevestigd.
 
@@ -39,7 +39,7 @@ Deze naam valt samen met de naam (met de naamruimte) van het type &#39;JavaScrip
 
 Voorbeeld:
 
-De methode testLog(msg) wordt gedeclareerd in een extensie nms:ontvanger
+De testLog(msg) methode wordt verklaard in een nms :recipient uitbreiding
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -55,7 +55,7 @@ De methode testLog(msg) wordt gedeclareerd in een extensie nms:ontvanger
 
 ### Definitie {#definition}
 
-SOAP methoden worden geïmplementeerd in de vorm van een JavaScript-functie gegroepeerd in een script dat een bibliotheek vertegenwoordigt.
+SOAP-methoden worden geïmplementeerd in de vorm van een JavaScript-functie gegroepeerd in een script dat een bibliotheek vertegenwoordigt.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ De naam van de functie moet de volgende indeling hebben:
 
 Voorbeeld:
 
-De volgende JavaScript-functie is de implementatie van de hierboven beschreven methode. Zij wordt in de entiteit van het type &quot;JavaScript Code&quot; gedefinieerd met de naam &quot;cus:test&quot;.
+De volgende JavaScript-functie is de implementatie van de hierboven beschreven methode. Zij wordt gedefinieerd in het type &quot;JavaScript Code&quot; met de naam &quot;cus :test&quot;.
 
 ```
 function nms_recipient_testLog(message)

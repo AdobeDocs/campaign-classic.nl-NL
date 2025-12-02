@@ -2,12 +2,12 @@
 product: campaign
 title: Campagnetypologieën
 description: Campagnetypologieën
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 33%
@@ -24,7 +24,7 @@ Afhankelijk van uw aanbieding kan de optimalisatie van de campagne worden opgeno
 
 >[!NOTE]
 >
->Meer over de Optimalisering van de Campagne voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank} .
+>Meer over de Optimalisering van de Campagne voor Adobe Campaign leren en hoe te om het te gebruiken, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
 
 <!--
 
@@ -81,7 +81,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl-NL).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Related topic**
 
