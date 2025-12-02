@@ -22,8 +22,8 @@ Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en i
 
 >[!IMPORTANT]
 >
->Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) voor meer informatie.\
->Een lijst van alle APIs met inbegrip van hun volledige beschrijving is beschikbaar in [ deze specifieke documentatie ] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-campaign-classic---product-description.html) voor meer informatie.\
+>Een lijst van alle APIs met inbegrip van hun volledige beschrijving is beschikbaar in [ deze specifieke documentatie ] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl-NL.
 
 ## Vereisten {#prerequisites}
 

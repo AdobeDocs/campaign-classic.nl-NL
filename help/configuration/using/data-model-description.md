@@ -113,7 +113,7 @@ Deze reeks lijsten is verbonden met de **Levering** module, die toestaat om leve
 
 ## Campagnebeheer {#campaign-management}
 
-Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank} voor meer informatie hierover.
+Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Raadpleeg de [Campaign v8-documentatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=nl-NL){target=_blank} voor meer informatie hierover.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,7 @@ Deze reeks lijsten is verbonden met de **Marketing campagnes** module, die toest
 
 ## Communicatieconsistentie {#communication-consistency}
 
-Deze reeks lijsten is verbonden met de **module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Deze reeks lijsten is verbonden met de **module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL){target="_blank"}.
 
 
 ![](assets/data-model_typology.png)

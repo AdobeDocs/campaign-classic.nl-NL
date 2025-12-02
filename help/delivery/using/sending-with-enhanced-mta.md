@@ -136,7 +136,7 @@ Voor meer op de geldigheidsperiode, zie deze [&#x200B; pagina &#x200B;](communic
 ### DKIM-ondertekening
 
 Ondertekening van de DKIM-e-mailverificatie (DomainKeys Identified Mail) wordt uitgevoerd door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Voor meer op DKIM, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+Voor meer op DKIM, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
 
 ### Leveringssuccesrapportage
 
