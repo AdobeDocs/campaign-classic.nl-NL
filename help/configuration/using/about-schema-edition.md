@@ -20,13 +20,13 @@ Adobe Campaign past gegevensschema&#39;s toe op:
 * Definiëren van koppelingen tussen de verschillende dataobjecten in de Campaign-applicatie.
 * Definiëren en beschrijven van de afzonderlijke velden die in elk object zijn opgenomen.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [ deze sectie ](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
+Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [&#x200B; deze sectie &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
 
 ## Schema&#39;s uitbreiden of maken {#extending-or-creating-schemas}
 
-Om een gebied of een index of een ander element aan één van de schema&#39;s van kerngegevens in Campagne, zoals de ontvankelijke lijst (nms :recipient) toe te voegen, moet u dat schema uitbreiden. Voor meer op dit, verwijs naar [ Uitbreidend een schema ](../../configuration/using/extending-a-schema.md) sectie.
+Om een gebied of een index of een ander element aan één van de schema&#39;s van kerngegevens in Campagne, zoals de ontvankelijke lijst (nms :recipient) toe te voegen, moet u dat schema uitbreiden. Voor meer op dit, verwijs naar [&#x200B; Uitbreidend een schema &#x200B;](../../configuration/using/extending-a-schema.md) sectie.
 
-Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campaign buiten het vak bestaat (bijvoorbeeld een contracttabel), kunt u rechtstreeks een aangepast schema maken. Voor meer op dit, verwijs naar de [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md) sectie.
+Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campaign buiten het vak bestaat (bijvoorbeeld een contracttabel), kunt u rechtstreeks een aangepast schema maken. Voor meer op dit, verwijs naar de [&#x200B; schema&#39;s van Gegevens &#x200B;](../../configuration/using/data-schemas.md) sectie.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -57,7 +57,7 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >U kunt door de gebruiker beheerde opsommingen ook gebruiken (meestal onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) om de waarden voor een bepaald veld op te geven. Dit zijn in feite globale opsommingen, en een betere keus als uw opsomming buiten het specifieke schema kan worden gebruikt u binnen werkt.
 
-Om meer over opsommingen te weten te komen, verwijs naar [ Opsommingen ](../../configuration/using/schema-structure.md#enumerations) en [`<enumeration>` element ](../../configuration/using/schema/enumeration.md) secties.
+Om meer over opsommingen te weten te komen, verwijs naar [&#x200B; Opsommingen &#x200B;](../../configuration/using/schema-structure.md#enumerations) en [`<enumeration>` element &#x200B;](../../configuration/using/schema/enumeration.md) secties.
 
 ## Index {#index}
 
@@ -86,7 +86,7 @@ Het **xpath** attribuut richt aan het gebied in uw schema dat u wenst om te inde
 >
 >Het is belangrijk om te herinneren dat de SQL de prestatiewinst van de vraaglees die door indexen wordt verstrekt ook met een prestatieshit bij het schrijven van verslagen komt. De indexen moeten daarom met voorzichtigheid worden gebruikt.
 
-Voor meer op indexen, verwijs naar de [ Geïndexeerde gebieden ](../../configuration/using/database-mapping.md#indexed-fields) sectie.
+Voor meer op indexen, verwijs naar de [&#x200B; Geïndexeerde gebieden &#x200B;](../../configuration/using/database-mapping.md#indexed-fields) sectie.
 
 ## Toetsen {#keys}
 
@@ -108,15 +108,15 @@ In dit voorbeeld, in plaats van het laten **@automatische** attribuut een standa
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
-Om meer over sleutels te weten te komen, verwijs naar het [ Beheer van sleutels ](../../configuration/using/database-mapping.md#management-of-keys) sectie.
+Om meer over sleutels te weten te komen, verwijs naar het [&#x200B; Beheer van sleutels &#x200B;](../../configuration/using/database-mapping.md#management-of-keys) sectie.
 
 ## Attributen (velden) {#attributes--fields-}
 
-Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** knoop in de toolbar van de schemageditie gebruiken om lege attributenmalplaatjes in uw XML te laten vallen waar uw curseur is. Voor meer op dit, verwijs naar de [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md) sectie.
+Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** knoop in de toolbar van de schemageditie gebruiken om lege attributenmalplaatjes in uw XML te laten vallen waar uw curseur is. Voor meer op dit, verwijs naar de [&#x200B; schema&#39;s van Gegevens &#x200B;](../../configuration/using/data-schemas.md) sectie.
 
 ![](assets/schemaextension_getting_started_2.png)
 
-De volledige lijst van attributen is beschikbaar in de [`<attribute>` element ](../../configuration/using/schema/attribute.md) sectie. Hier volgen enkele van de meer gebruikte kenmerken:
+De volledige lijst van attributen is beschikbaar in de [`<attribute>` element &#x200B;](../../configuration/using/schema/attribute.md) sectie. Hier volgen enkele van de meer gebruikte kenmerken:
 
 * **@advanced**
 * **@dataPolicy**
@@ -133,9 +133,9 @@ De volledige lijst van attributen is beschikbaar in de [`<attribute>` element ](
 * **@xml**
 * **@type**
 
-  Om een lijst te bekijken die van de afbeeldingen voor de gegevenstypes een lijst maakt door Adobe Campaign voor de verschillende systemen van het gegevensbestandbeheer worden geproduceerd, verwijs naar [ Toewijzing de types van Adobe Campaign/DBMS gegevens ](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie die.
+  Om een lijst te bekijken die van de afbeeldingen voor de gegevenstypes een lijst maakt door Adobe Campaign voor de verschillende systemen van het gegevensbestandbeheer worden geproduceerd, verwijs naar [&#x200B; Toewijzing de types van Adobe Campaign/DBMS gegevens &#x200B;](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sectie die.
 
-Voor meer informatie over elk attribuut, verwijs naar de [ beschrijving van Attributen ](../../configuration/using/schema/attribute.md) sectie.
+Voor meer informatie over elk attribuut, verwijs naar de [&#x200B; beschrijving van Attributen &#x200B;](../../configuration/using/schema/attribute.md) sectie.
 
 ### Voorbeelden {#examples}
 
@@ -221,4 +221,4 @@ Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/u
 
 >[!NOTE]
 >
->Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Voor meer op dit, verwijs naar [ Regenererende schema&#39;s ](../../configuration/using/regenerating-schemas.md) sectie.
+>Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Voor meer op dit, verwijs naar [&#x200B; Regenererende schema&#39;s &#x200B;](../../configuration/using/regenerating-schemas.md) sectie.

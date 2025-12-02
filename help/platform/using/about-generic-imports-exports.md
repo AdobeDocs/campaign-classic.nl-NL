@@ -24,7 +24,7 @@ Algemene import- en exportbewerkingen worden beheerd via het knooppunt **[!UICON
 
 De stappen voor het uitvoeren van generieke import- en exportbewerkingen zijn als volgt:
 
-1. [ creeer een invoer of de uitvoermalplaatje ](../../platform/using/creating-import-export-templates.md) (facultatief).
-1. [ creeer een invoer of de uitvoerbaan ](../../platform/using/creating-import-export-jobs.md).
-1. Vorm en voer de [ invoer ](../../platform/using/executing-import-jobs.md) of [ uitvoer ](../../platform/using/executing-export-jobs.md) baan uit.
-1. [ Monitor ](../../platform/using/monitoring-jobs-execution.md) de uitvoering van de baan.
+1. [&#x200B; creeer een invoer of de uitvoermalplaatje &#x200B;](../../platform/using/creating-import-export-templates.md) (facultatief).
+1. [&#x200B; creeer een invoer of de uitvoerbaan &#x200B;](../../platform/using/creating-import-export-jobs.md).
+1. Vorm en voer de [&#x200B; invoer &#x200B;](../../platform/using/executing-import-jobs.md) of [&#x200B; uitvoer &#x200B;](../../platform/using/executing-export-jobs.md) baan uit.
+1. [&#x200B; Monitor &#x200B;](../../platform/using/monitoring-jobs-execution.md) de uitvoering van de baan.

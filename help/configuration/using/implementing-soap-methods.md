@@ -31,7 +31,7 @@ Het maken van een methodebibliotheek bestaat uit twee fasen:
 
 ### Verklaring {#declaration}
 
-Begin door de methodes in de schema&#39;s (voor meer op te verklaren om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [ deze sectie ](../../configuration/using/about-schema-edition.md)).
+Begin door de methodes in de schema&#39;s (voor meer op te verklaren om schema&#39;s tot stand te brengen en uit te geven, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-edition.md)).
 
 Hun verklaring is gelijkaardig aan die van inheemse methodes, behalve dat moet u het attribuut &quot;bibliotheek&quot;toevoegen die de naam van de methodebibliotheek specificeren waar de definitie wordt gevestigd.
 

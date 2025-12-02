@@ -44,11 +44,11 @@ Het gebruiken van een douane ontvankelijke lijst heeft de volgende beperkingen:
   We raden aan:
 
    * De schema&#39;s **[!UICONTROL nms:BroadLogRcp]** en **[!UICONTROL nms:TrackingLogRcp]** verwijzen naar de schema&#39;s out-of-the-box **[!UICONTROL nms:Recipientschema]** . Die twee logboeklijsten zouden niet aan een extra douane ontvankelijke lijst moeten worden verbonden.
-   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer vestiging de doelafbeelding, zie [ afbeelding van het Doel ](../../configuration/using/target-mapping.md).
+   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer vestiging de doelafbeelding, zie [&#x200B; afbeelding van het Doel &#x200B;](../../configuration/using/target-mapping.md).
 
 * U kunt de standaard **[!UICONTROL Services and Subscriptions]** die in het product wordt aangeboden niet gebruiken.
 
-  Dit betekent de algemene die verrichting in [ wordt gedetailleerd deze sectie ](../../delivery/using/managing-subscriptions.md) is niet van toepassing.
+  Dit betekent de algemene die verrichting in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](../../delivery/using/managing-subscriptions.md) is niet van toepassing.
 
 * De koppeling met de tabel **[!UICONTROL visitor]** werkt niet.
 
@@ -58,18 +58,18 @@ Het gebruiken van een douane ontvankelijke lijst heeft de volgende beperkingen:
 
 * U kunt niet handmatig profielen toevoegen aan een lijst.
 
-  Daarom is de procedure die in [ wordt gedetailleerd deze sectie ](../../platform/using/creating-and-managing-lists.md) niet van toepassing zonder een extra configuratie.
+  Daarom is de procedure die in [&#x200B; wordt gedetailleerd deze sectie &#x200B;](../../platform/using/creating-and-managing-lists.md) niet van toepassing zonder een extra configuratie.
 
   >[!NOTE]
   >
-  >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Voor meer op dit, verwijs naar [ Creërend een profiellijst met een werkschema ](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Voor meer op dit, verwijs naar [&#x200B; Creërend een profiellijst met een werkschema &#x200B;](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 We raden ook aan de standaardwaarden te controleren die worden gebruikt in de verschillende configuraties buiten de box: afhankelijk van de gebruikte functies moeten verschillende aanpassingen worden uitgevoerd.
 
 Bijvoorbeeld:
 
-* Bepaalde standaardrapporten, in het bijzonder die aangeboden door **Interactie** en **Mobiele Toepassingen** moeten worden herontwikkeld. Verwijs naar [ het Leiden rapporten ](../../configuration/using/managing-reports.md) sectie.
-* De standaardconfiguraties voor bepaalde werkschemaactiviteiten verwijzen naar de standaardlijst van ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe lijst van ontvangers. Verwijs naar [ het Leiden werkschema&#39;s ](../../configuration/using/managing-workflows.md) sectie.
+* Bepaalde standaardrapporten, in het bijzonder die aangeboden door **Interactie** en **Mobiele Toepassingen** moeten worden herontwikkeld. Verwijs naar [&#x200B; het Leiden rapporten &#x200B;](../../configuration/using/managing-reports.md) sectie.
+* De standaardconfiguraties voor bepaalde werkschemaactiviteiten verwijzen naar de standaardlijst van ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe lijst van ontvangers. Verwijs naar [&#x200B; het Leiden werkschema&#39;s &#x200B;](../../configuration/using/managing-workflows.md) sectie.
 * Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
 * V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.

@@ -187,7 +187,7 @@ De belangrijkste container wordt bepaald door **type= &quot;notitieboekje&quot;*
 
 >[!NOTE]
 >
->A **style=&quot;neer|omhoog** (door gebrek) **** eigenschap dwingt de verticale plaatsing van lusjeetiketten onder of boven de controle. Deze functie is optioneel.
+>A **style=&quot;neer|omhoog** (door gebrek) **&#x200B;**&#x200B;eigenschap dwingt de verticale plaatsing van lusjeetiketten onder of boven de controle. Deze functie is optioneel.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Pictogramlijst {#icon-list}

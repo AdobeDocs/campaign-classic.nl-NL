@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Zaadadressen worden niet beheerd via standaardprofielen en -doelen, maar in een speciaal knooppunt van de Adobe Campaign-hiërarchie **[!UICONTROL Resources > Campaign management > Seed addresses]** .
 
-U kunt submappen maken om de zaadadressen te ordenen. Klik hiertoe met de rechtermuisknop op het knooppunt **[!UICONTROL Seed addresses]** en selecteer **[!UICONTROL Create a new 'Seed addresses' folder]** . Geef de submap een naam en druk op **[!UICONTROL Enter]** om te valideren. U kunt nu zaadadressen maken of kopiëren naar deze submap. Voor meer op dit, verwijs naar [ bepalen adressen ](#defining-addresses).
+U kunt submappen maken om de zaadadressen te ordenen. Klik hiertoe met de rechtermuisknop op het knooppunt **[!UICONTROL Seed addresses]** en selecteer **[!UICONTROL Create a new 'Seed addresses' folder]** . Geef de submap een naam en druk op **[!UICONTROL Enter]** om te valideren. U kunt nu zaadadressen maken of kopiëren naar deze submap. Voor meer op dit, verwijs naar [&#x200B; bepalen adressen &#x200B;](#defining-addresses).
 
-Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd in leveringen of campagnes en die worden aangepast aan de specifieke behoeften van de desbetreffende leveringen en campagnes. Verwijs naar [ zaadadresmalplaatjes ](#creating-seed-address-templates) creëren.
+Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd in leveringen of campagnes en die worden aangepast aan de specifieke behoeften van de desbetreffende leveringen en campagnes. Verwijs naar [&#x200B; zaadadresmalplaatjes &#x200B;](#creating-seed-address-templates) creëren.
 
 ## Adressen definiëren {#defining-addresses}
 
@@ -58,4 +58,4 @@ Als u een sjabloonmap wilt definiëren, past u het volgende proces toe:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   In deze map opgeslagen adressen kunnen nu worden gebruikt als adressjablonen. U kunt hen invoeren in leveringen of campagnes en hen aanpassen die op de specifieke behoeften van de betrokken leveringen en de campagnes worden gebaseerd (zie [ zaadadressen ](adding-seed-addresses.md) toevoegen).
+   In deze map opgeslagen adressen kunnen nu worden gebruikt als adressjablonen. U kunt hen invoeren in leveringen of campagnes en hen aanpassen die op de specifieke behoeften van de betrokken leveringen en de campagnes worden gebaseerd (zie [&#x200B; zaadadressen &#x200B;](adding-seed-addresses.md) toevoegen).

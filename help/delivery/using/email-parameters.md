@@ -24,7 +24,7 @@ Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC 
 
 Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
 
-Voor meer informatie over de configuratie en beste praktijken van BCC E-mail, verwijs naar [ deze sectie ](../../installation/using/email-archiving.md).
+Voor meer informatie over de configuratie en beste praktijken van BCC E-mail, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet
 
 >[!NOTE]
 >
->Als u E-mail BCC met [ Verbeterde MTA ](sending-with-enhanced-mta.md) gebruikt, wordt deze optie automatisch toegelaten voor alle leveringen.
+>Als u E-mail BCC met [&#x200B; Verbeterde MTA &#x200B;](sending-with-enhanced-mta.md) gebruikt, wordt deze optie automatisch toegelaten voor alle leveringen.
 
 Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
 
@@ -76,13 +76,13 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 >[!NOTE]
 >
->Voor meer bij het bepalen van de e-mailinhoud, zie [ deze sectie ](defining-the-email-content.md).
+>Voor meer bij het bepalen van de e-mailinhoud, zie [&#x200B; deze sectie &#x200B;](defining-the-email-content.md).
 
 ## De spiegelpagina genereren {#generating-mirror-page}
 
 De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowser. De inhoud is identiek aan de e-mail.
 
-Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsbloktoevoeging, verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsbloktoevoeging, verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van het **[!UICONTROL Validity]** lusje u de generatiemodus voor deze pagina wijzigen.
 
@@ -116,13 +116,13 @@ Hiervoor selecteert u de optie **[!UICONTROL Force the encoding used for message
 
 Met het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u het beheer van stuiterende mails configureren.
 
-Door gebrek, worden de teruggestuurde e-mails ontvangen in de [ standaardfoutendoos van het platform ](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), maar u kunt een specifiek foutenadres voor een levering bepalen.
+Door gebrek, worden de teruggestuurde e-mails ontvangen in de [&#x200B; standaardfoutendoos van het platform &#x200B;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), maar u kunt een specifiek foutenadres voor een levering bepalen.
 
 U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor stuiterende berichten te onderzoeken wanneer deze niet automatisch door de toepassing kunnen worden gekwalificeerd. Voor elk van deze gebieden, **voeg gepersonaliseerde gebieden** pictogram toe laat u verpersoonlijkingsparameters toevoegen.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Voor meer bij stuiteren postbeheer, zie [ deze sectie ](understanding-delivery-failures.md#bounce-mail-management).
+Voor meer bij stuiteren postbeheer, zie [&#x200B; deze sectie &#x200B;](understanding-delivery-failures.md#bounce-mail-management).
 
 ## SMTP-koppen toevoegen {#adding-smtp-headers}
 

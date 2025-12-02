@@ -35,7 +35,7 @@ Voor join-relaties met FDA (Federated Database Access):
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Voor meer informatie over lijsten FDA, verwijs naar [ Toegang hebbend tot een extern gegevensbestand ](../../installation/using/about-fda.md).
+Voor meer informatie over lijsten FDA, verwijs naar [&#x200B; Toegang hebbend tot een extern gegevensbestand &#x200B;](../../installation/using/about-fda.md).
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
@@ -61,7 +61,7 @@ Mogelijke waarden zijn:
       * **bepaalt**: het is mogelijk om het bronvoorkomen te schrappen als het niet meer door een doelvoorkomen van verwijzingen wordt voorzien
       * **normaal**: het schrappen van de broninstantie initialiseert de sleutels van de verbinding aan het doelvoorkomen (standaardwijze), initialiseert dit type van integriteit alle buitenlandse sleutels
       * **eigen**: het schrappen van de broninstantie leidt tot de schrapping van het doelvoorkomen
-      * **eigen exemplaar**: het zelfde als **** (in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
+      * **eigen exemplaar**: het zelfde als **&#x200B;**&#x200B;(in het geval van schrapping) of dupliceert de voorkomen (in het geval van verdubbeling)
       * **neutraal**: geen specifiek gedrag
 
    * **revIntegrity** (facultatief): integriteit op het doelschema (facultatief, &quot;normaal&quot;door gebrek)

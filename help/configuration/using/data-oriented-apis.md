@@ -30,7 +30,7 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Voor een presentatie van het gegevensmodel, verwijs naar de [ het modelbeschrijving van Gegevens van Adobe Campaign ](../../configuration/using/data-model-description.md).
+Voor een presentatie van het gegevensmodel, verwijs naar de [&#x200B; het modelbeschrijving van Gegevens van Adobe Campaign &#x200B;](../../configuration/using/data-model-description.md).
 
 ## Query en schrijver {#query-and-writer}
 
@@ -44,9 +44,9 @@ Voor kolommen en voorwaarden kunt u Query&#39;s gebruiken.
 
 Hierdoor kunt u de onderliggende SQL isoleren. De querytaal is niet afhankelijk van de onderliggende engine: sommige functies worden opnieuw toegewezen, waardoor meerdere SELECT SQL-orders kunnen worden gegenereerd.
 
-Voor meer op dit, verwijs naar [ Voorbeeld op de methode &quot;ExecuteQuery&quot;van schema &quot;xtk :queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Voor meer op dit, verwijs naar [&#x200B; Voorbeeld op de methode &quot;ExecuteQuery&quot;van schema &quot;xtk :queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-De **ExecuteQuery** methode wordt voorgesteld in [ ExecuteQuery (xtk :queryDef) ](#executequery--xtk-querydef-).
+De **ExecuteQuery** methode wordt voorgesteld in [&#x200B; ExecuteQuery (xtk :queryDef) &#x200B;](#executequery--xtk-querydef-).
 
 ### Schrijven {#write}
 
@@ -56,7 +56,7 @@ Transactionele APIs laat u aansluitingen via het **updateOrInsert** bevel behere
 
 De structuur van XML biedt een logische mening van de gegevens aan en laat u de fysieke structuur van de SQL lijst negeren.
 
-De schrijfmethode wordt voorgesteld in [ Write/WriteCollection (xtk :session) ](#write---writecollection--xtk-session-).
+De schrijfmethode wordt voorgesteld in [&#x200B; Write/WriteCollection (xtk :session) &#x200B;](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk :queryDef) {#executequery--xtk-querydef-}
 
@@ -137,7 +137,7 @@ Het gewenste type van verrichting is ingegaan in het **verrichting** attribuut e
 * **uitgezocht**: creeert een curseur om verscheidene verslagen terug te keren en een leeg document terug te keren als er geen gegevens zijn,
 * **telling**: keert een gegevenstelling terug.
 
-De **XPath** syntaxis wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Voor verdere informatie over XPparagraphs, verwijs naar [ schema&#39;s van Gegevens ](../../configuration/using/data-schemas.md).
+De **XPath** syntaxis wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Voor verdere informatie over XPparagraphs, verwijs naar [&#x200B; schema&#39;s van Gegevens &#x200B;](../../configuration/using/data-schemas.md).
 
 #### Voorbeeld met de bewerking get {#example-with-the--get--operation}
 
@@ -317,7 +317,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
   </select>
   ```
 
-* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **** exploitant NIET BESTAAT.
+* De verbindingen van de inzameling (1N): Het filtreren op de gebieden van een inzamelingslijst moet via **worden uitgevoerd BESTAAT** of **&#x200B;**&#x200B;exploitant NIET BESTAAT.
 
   Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 

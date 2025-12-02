@@ -51,7 +51,7 @@ De aanwezigheid van het attribuut &quot;static&quot; (met de waarde &quot;true&q
 
 Een &quot;const&quot;methode heeft impliciet een document van XML in het formaat van zijn bijbehorend schema als input.
 
-Een volledige beschrijving van het `<method>` element van een schema van Adobe Campaign is beschikbaar in het &quot;hoofdstuk van de verwijzingen van het Schema&quot;onder [ Methode ](../../configuration/using/schema/method.md)
+Een volledige beschrijving van het `<method>` element van een schema van Adobe Campaign is beschikbaar in het &quot;hoofdstuk van de verwijzingen van het Schema&quot;onder [&#x200B; Methode &#x200B;](../../configuration/using/schema/method.md)
 
 Voorbeeld van de &quot;const&quot;-type &quot;ExecuteQuery&quot;methode van het &quot;xtk :queryDef&quot;schema:
 
@@ -185,7 +185,7 @@ In het onderdeel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft veiligheid voor authentificatiemechanismen verhoogd door [ veiligheidsstreken ](../../installation/using/security-zones.md) en montages van het zittingsbeheer te introduceren.
+Adobe Campaign heeft veiligheid voor authentificatiemechanismen verhoogd door [&#x200B; veiligheidsstreken &#x200B;](../../installation/using/security-zones.md) en montages van het zittingsbeheer te introduceren.
 
 Er zijn twee beschikbare verificatiemodi:
 

@@ -22,7 +22,7 @@ Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties ver
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Voor meer bij het gebruiken van zaadadressen, verwijs [ deze sectie ](../../delivery/using/about-seed-addresses.md).
+Voor meer bij het gebruiken van zaadadressen, verwijs [&#x200B; deze sectie &#x200B;](../../delivery/using/about-seed-addresses.md).
 
 ## Implementatie {#implementation}
 

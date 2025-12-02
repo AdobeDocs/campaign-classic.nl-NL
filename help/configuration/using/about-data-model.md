@@ -24,7 +24,7 @@ Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan 
 
 Het gegevensmodel baseert zich op een belangrijkste lijst die door gebrek de Ontvankelijke lijst (**NmsRecipient**) is. In deze tabel kunt u alle marketingprofielen opslaan.
 
-Voor meer op de Ontvankelijke lijst, zie [ deze sectie ](#default-recipient-table).
+Voor meer op de Ontvankelijke lijst, zie [&#x200B; deze sectie &#x200B;](#default-recipient-table).
 
 ### Afleveringstabel {#delivery-table}
 
@@ -65,14 +65,14 @@ Aangezien de tabel Ontvanger deel uitmaakt van het product, veranderen zowel de 
 
 Wanneer u begint met Adobe Campaign, moet u het standaardgegevensmodel beoordelen om te controleren welke tabel het meest geschikt is om uw marketinggegevens op te slaan.
 
-Als relevant, kunt u de standaard Ontvanger lijst met de uit-van-de-doos gebieden gebruiken, zoals die in [ wordt beschreven deze sectie ](#default-recipient-table).
+Als relevant, kunt u de standaard Ontvanger lijst met de uit-van-de-doos gebieden gebruiken, zoals die in [&#x200B; wordt beschreven deze sectie &#x200B;](#default-recipient-table).
 
 Indien nodig, kunt u het uitbreiden met twee mechanismen:
 
 * Een bestaande tabel uitbreiden met nieuwe velden. U kunt bijvoorbeeld een nieuw veld Loyalty toevoegen aan de tabel Ontvanger.
 * Maak een nieuwe tabel, bijvoorbeeld een tabel met de naam Aanschaffen, waarin alle aankopen worden vermeld die door elk profiel van de database zijn gedaan, en koppel deze aan de tabel Ontvanger.
 
-Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegevensmodel uit te breiden, zie [ Ongeveer schemageditie ](../../configuration/using/about-schema-edition.md).
+Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegevensmodel uit te breiden, zie [&#x200B; Ongeveer schemageditie &#x200B;](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
@@ -80,15 +80,15 @@ Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegeven
 
 ## Een aangepaste tabel voor ontvangers gebruiken {#custom-recipient-table}
 
-Wanneer het ontwerpen van uw de gegevensmodel van Adobe Campaign, kunt u de [ ingebouwde ontvankelijke lijst ](#default-recipient-table) gebruiken, of besluiten om a [ douane ontvankelijke lijst ](../../configuration/using/about-custom-recipient-table.md) te creëren lijst om u marketing profielen op te slaan.
+Wanneer het ontwerpen van uw de gegevensmodel van Adobe Campaign, kunt u de [&#x200B; ingebouwde ontvankelijke lijst &#x200B;](#default-recipient-table) gebruiken, of besluiten om a [&#x200B; douane ontvankelijke lijst &#x200B;](../../configuration/using/about-custom-recipient-table.md) te creëren lijst om u marketing profielen op te slaan.
 
 Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u andere tabellen instellen als de doeldimensie in Adobe Campaign. Dit kan bijvoorbeeld van belang zijn wanneer u huishoudens, rekeningen (zoals mobiele telefoons) en bedrijven/sites moet aanspreken in plaats van alleen ontvangers.
 
 >[!NOTE]
 >
->In dit geval, zult u een nieuwe [ doelafbeelding ](../../configuration/using/target-mapping.md) moeten creëren.
+>In dit geval, zult u een nieuwe [&#x200B; doelafbeelding &#x200B;](../../configuration/using/target-mapping.md) moeten creëren.
 
-Alle principes en stappen nodig wanneer het gebruiken van een douane ontvankelijke lijst zijn gedetailleerd in [ deze sectie ](../../configuration/using/about-custom-recipient-table.md).
+Alle principes en stappen nodig wanneer het gebruiken van een douane ontvankelijke lijst zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../configuration/using/about-custom-recipient-table.md).
 
 De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
@@ -108,13 +108,13 @@ De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
 Meer informatie over het gegevensmodel van campagne vindt u in de volgende secties:
 
-* **Beschrijving van de belangrijkste lijsten** - voor meer op de standaardbeschrijving van het gegevensmodel van Campaign Classic, verwijs naar [ deze sectie ](../../configuration/using/data-model-description.md).
+* **Beschrijving van de belangrijkste lijsten** - voor meer op de standaardbeschrijving van het gegevensmodel van Campaign Classic, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/data-model-description.md).
 
 * **Volledige beschrijving van elke lijst** - om tot de volledige beschrijving van elke lijst toegang te hebben, ga **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik **[!UICONTROL Documentation]** tabel.
 
   ![](assets/data-model_documentation-tab.png)
 
 
-* **schema&#39;s van de Campagne** - de fysieke en logische structuur van de gegevens die in de toepassing worden gedragen wordt beschreven in XML. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Voor meer op de schema&#39;s van Adobe Campaign, lees uit [ deze sectie ](../../configuration/using/about-schema-reference.md).
+* **schema&#39;s van de Campagne** - de fysieke en logische structuur van de gegevens die in de toepassing worden gedragen wordt beschreven in XML. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. Voor meer op de schema&#39;s van Adobe Campaign, lees uit [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-reference.md).
 
-* **modelbeste praktijken van Gegevens** - leer de architectuur van het het gegevensmodel van de Campagne en verwante beste praktijken, in [ deze sectie ](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+* **modelbeste praktijken van Gegevens** - leer de architectuur van het het gegevensmodel van de Campagne en verwante beste praktijken, in [&#x200B; deze sectie &#x200B;](../../configuration/using/data-model-best-practices.md#data-model-architecture).

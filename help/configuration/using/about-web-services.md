@@ -18,7 +18,7 @@ ht-degree: 2%
 
 De Adobe Campaign-toepassingsserver is ontworpen voor openheid en eenvoudige integratie met steeds meer uiteenlopende en complexe bedrijfsinformatiesystemen.
 
-Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van generieke functies die kunnen worden verrijkt. Voor verdere informatie, verwijs naar [ het Uitvoeren van de methodes van SOAP ](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van generieke functies die kunnen worden verrijkt. Voor verdere informatie, verwijs naar [&#x200B; het Uitvoeren van de methodes van SOAP &#x200B;](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -37,10 +37,10 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
-* Algemene API&#39;s voor gegevenstoegang voor het opvragen van gegevens van het gegevensmodel. Verwijs naar [ Gegevens georiënteerde APIs ](../../configuration/using/data-oriented-apis.md).
-* Bedrijfsspecifieke API&#39;s waarmee u op elk object kunt reageren: leveringen, workflows, abonnementen, enzovoort. Verwijs naar [ Bedrijfs georiënteerde APIs ](../../configuration/using/business-oriented-apis.md).
+* Algemene API&#39;s voor gegevenstoegang voor het opvragen van gegevens van het gegevensmodel. Verwijs naar [&#x200B; Gegevens georiënteerde APIs &#x200B;](../../configuration/using/data-oriented-apis.md).
+* Bedrijfsspecifieke API&#39;s waarmee u op elk object kunt reageren: leveringen, workflows, abonnementen, enzovoort. Verwijs naar [&#x200B; Bedrijfs georiënteerde APIs &#x200B;](../../configuration/using/business-oriented-apis.md).
 
-Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw gegevensmodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Verwijs naar [ Beschrijving van het model ](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw gegevensmodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Verwijs naar [&#x200B; Beschrijving van het model &#x200B;](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-oproepen {#soap-calls}
 
@@ -65,11 +65,11 @@ In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij he
 
 In dit voorbeeld roept een SOAP-query de methode &quot;ExecuteQuery&quot; aan, die een tekenreeks neemt als een parameter voor verificatie (sessietoken) en een XML-inhoud voor de beschrijving van de query die moet worden uitgevoerd.
 
-Voor verdere informatie, verwijs naar [ ExecuteQuery (xtk :queryDef) ](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+Voor verdere informatie, verwijs naar [&#x200B; ExecuteQuery (xtk :queryDef) &#x200B;](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
->De beschrijving van WSDL van deze dienst wordt voltooid in het hier getoonde voorbeeld: [ de dienstbeschrijving van het Web: WSDL ](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>De beschrijving van WSDL van deze dienst wordt voltooid in het hier getoonde voorbeeld: [&#x200B; de dienstbeschrijving van het Web: WSDL &#x200B;](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP-query {#soap-query}
 

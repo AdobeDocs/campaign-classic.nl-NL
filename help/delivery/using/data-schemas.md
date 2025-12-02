@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
-Voor meer bij het creëren van en het vormen van gegevensschema&#39;s in Adobe Campaign, verwijs naar [ deze sectie ](../../configuration/using/about-schema-edition.md).
+Voor meer bij het creëren van en het vormen van gegevensschema&#39;s in Adobe Campaign, verwijs naar [&#x200B; deze sectie &#x200B;](../../configuration/using/about-schema-edition.md).
 
 ## Schemastructuur {#schema-structure}
 

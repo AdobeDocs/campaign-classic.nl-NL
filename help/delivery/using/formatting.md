@@ -364,7 +364,7 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
 1. U kunt deze inhoudssjabloon dan gebruiken in uw leveringen.
 
-   Voor meer op dit, verwijs naar [ Gebruikend een inhoudsmalplaatje ](using-a-content-template.md).
+   Voor meer op dit, verwijs naar [&#x200B; Gebruikend een inhoudsmalplaatje &#x200B;](using-a-content-template.md).
 
 ## XSL Stylesheets {#xsl-stylesheets}
 
@@ -560,7 +560,7 @@ In het formulier wordt het veld voor het selecteren van de afbeelding toegevoegd
 
 >[!NOTE]
 >
->Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumweergave {#date-display}
 

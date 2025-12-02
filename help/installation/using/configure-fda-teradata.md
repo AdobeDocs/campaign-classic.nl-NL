@@ -18,17 +18,17 @@ ht-degree: 0%
 
 
 
-De optie van de Toegang van Gegevens van de Campagne van het gebruik [ Federated ](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot Teradata te configureren.
+De optie van de Toegang van Gegevens van de Campagne van het gebruik [&#x200B; Federated &#x200B;](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die in externe gegevensbestanden wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot Teradata te configureren.
 
-1. Installeer en vorm [ de bestuurders van Teradata ](#teradata-config)
-1. Vorm de Teradata [ externe rekening ](#teradata-external) in Campagne
-1. Opstelling [ extra configuratie ](#teradata-additional-configurations) voor Teradata en de server van de Campagne
+1. Installeer en vorm [&#x200B; de bestuurders van Teradata &#x200B;](#teradata-config)
+1. Vorm de Teradata [&#x200B; externe rekening &#x200B;](#teradata-external) in Campagne
+1. Opstelling [&#x200B; extra configuratie &#x200B;](#teradata-additional-configurations) voor Teradata en de server van de Campagne
 
 ## Teradata-configuratie {#teradata-config}
 
 U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken met Campagne.
 
-1. Installeer de [ bestuurder ODBC voor Teradata ](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
+1. Installeer de [&#x200B; bestuurder ODBC voor Teradata &#x200B;](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
    Het bestaat uit drie pakketten die in de volgende volgorde op Red Hat (of CentOS)/Suse kunnen worden geïnstalleerd:
 
@@ -104,8 +104,8 @@ De connector ondersteunt de volgende opties:
 |---|---|
 | TD_MAX_SESSIONS | Geeft het maximumaantal aanmeldingssessies op dat de Teradata Parallelle Transporter kan verkrijgen voor een operatortaak. |
 | TimeZoneName | Naam van de servertijdzone. |
-| CharacterSet | Wordt gebruikt om Teradata-tekenset te configureren. <br> voor meer op dit, verwijs naar [ deze pagina ](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAppCodePage | Codepagina van ODBC-toepassing. <br> voor meer op dit, verwijs naar [ deze pagina ](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| CharacterSet | Wordt gebruikt om Teradata-tekenset te configureren. <br> voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAppCodePage | Codepagina van ODBC-toepassing. <br> voor meer op dit, verwijs naar [&#x200B; deze pagina &#x200B;](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Extra externe ODBC-accounts toevoegen {#add-external}
 
@@ -129,7 +129,7 @@ Wanneer deze optie wordt gevormd, telkens als een gebruiker van de Campagne een 
 
 >[!NOTE]
 >
->Voor meer informatie over **[!UICONTROL Query banding]**, verwijs naar de [ documentatie van Teradata ](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+>Voor meer informatie over **[!UICONTROL Query banding]**, verwijs naar de [&#x200B; documentatie van Teradata &#x200B;](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 Voer de onderstaande stappen uit om querybanding te configureren:
 
@@ -186,7 +186,7 @@ Adobe Campaign stelt geen beveiligingsmodus (fallback) in voor de objecten die w
 
 ### MD5-installatie {#md5-installation}
 
-Als u md5 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de functie van de gebruikerswijze op uw gegevensbestand van Teradata van deze [ pagina ](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip) moeten installeren.
+Als u md5 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de functie van de gebruikerswijze op uw gegevensbestand van Teradata van deze [&#x200B; pagina &#x200B;](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip) moeten installeren.
 
 De sha1 van het gedownloade bestand is als volgt 65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e.
 
@@ -206,7 +206,7 @@ Om md5 te installeren:
 
 ### SHA2-installatie {#sha2-installation}
 
-Als u sha2 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de functie van de gebruikerswijze op uw gegevensbestand van Teradata van deze [ pagina ](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip) moeten installeren.
+Als u sha2 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de functie van de gebruikerswijze op uw gegevensbestand van Teradata van deze [&#x200B; pagina &#x200B;](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip) moeten installeren.
 
 De sha1 van het gedownloade bestand is als volgt: e87438d37424836358bd3902cf1adeb629349780.
 
@@ -258,9 +258,9 @@ U installeert als volgt udf_utf16to8:
 
 Voor de installatie van het stuurprogramma is het volgende vereist:
 
-* De Bestuurder van Teradata ODBC, die in deze [ pagina ](https://downloads.teradata.com/download/connectivity/odbc-driver/linux) kan worden gevonden
+* De Bestuurder van Teradata ODBC, die in deze [&#x200B; pagina &#x200B;](https://downloads.teradata.com/download/connectivity/odbc-driver/linux) kan worden gevonden
 
-* Teradata Hulpmiddelen en Hulpmiddelen (die voor de bulklading worden gebruikt), die in deze [ pagina ](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0) kunnen worden gevonden
+* Teradata Hulpmiddelen en Hulpmiddelen (die voor de bulklading worden gebruikt), die in deze [&#x200B; pagina &#x200B;](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0) kunnen worden gevonden
 
 Bestandsnamen en sha1:
 
@@ -308,7 +308,7 @@ Gereedschappen installeren:
 
 ## Configuratie van de campagneserver voor Windows {#campaign-server-windows}
 
-U moet eerst Teradata Tools en Extra&#39;s voor Windows downloaden. U kunt het van deze [ pagina ](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) downloaden
+U moet eerst Teradata Tools en Extra&#39;s voor Windows downloaden. U kunt het van deze [&#x200B; pagina &#x200B;](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) downloaden
 
 Installeer het ODBC-stuurprogramma en de Teradata Parallel Transporter Base. Het installeert telapi.dll dat wordt gebruikt voor het laden van grote hoeveelheden in de Teradata-database.
 
@@ -316,7 +316,7 @@ Zorg ervoor dat het pad van het stuurprogramma en de hulpprogramma&#39;s zich in
 
 ## Tijdzone {#timezone}
 
-Teradata gebruikt tijdzonenaam die niet standaard is, kunt u de lijst op de [ plaats van Teradata ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA) vinden. Adobe Campaign zal proberen de tijdzone die in de externe configuratie wordt gegeven om te zetten in iets wat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
+Teradata gebruikt tijdzonenaam die niet standaard is, kunt u de lijst op de [&#x200B; plaats van Teradata &#x200B;](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA) vinden. Adobe Campaign zal proberen de tijdzone die in de externe configuratie wordt gegeven om te zetten in iets wat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
 
 De conversie is voltooid en er wordt een bestand met de naam teradata_timezones.txt gelezen dat zich in de volgende gegevensdirectory moet bevinden: /usr/local/neolane/nl6/datakit onder Linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
 

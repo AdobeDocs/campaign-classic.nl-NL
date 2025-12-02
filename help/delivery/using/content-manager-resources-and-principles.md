@@ -26,11 +26,11 @@ Wanneer u het XML-document en de XSL- of JavaScript-sjabloonopmaakmodellen combi
 
 De volgende middelen worden vereist voor inhoudsconfiguratie:
 
-* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [ schema&#39;s van Gegevens ](data-schemas.md).
-* Formulieren voor gegevensinvoer: constructie van gegevensinvoerschermen. Voor meer op dit, verwijs naar [ vormen van de Input ](input-forms.md).
-* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Voor meer op dit, verwijs naar [ beheer van het Beeld ](formatting.md#image-management).
-* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Voor meer op dit, verwijs naar [ Formatterend ](formatting.md).
-* JavaScript-sjablonen: opmaken van uitvoerdocumenten met de JavaScript-taal. Voor meer op dit, verwijs naar [ malplaatjes van de Publicatie ](publication-templates.md).
-* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Voor meer op dit, verwijs naar [ Agregator ](publication-templates.md#aggregator).
-* Publicatiesjablonen: definitie van publicatiesjablonen. Voor meer op dit, verwijs naar [ malplaatjes van de Publicatie ](publication-templates.md).
-* Inhoud: instanties van inhoud die moeten worden gemaakt en gepubliceerd. Voor meer op dit, verwijs naar [ Gebruikend een inhoudsmalplaatje ](using-a-content-template.md).
+* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [&#x200B; schema&#39;s van Gegevens &#x200B;](data-schemas.md).
+* Formulieren voor gegevensinvoer: constructie van gegevensinvoerschermen. Voor meer op dit, verwijs naar [&#x200B; vormen van de Input &#x200B;](input-forms.md).
+* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Voor meer op dit, verwijs naar [&#x200B; beheer van het Beeld &#x200B;](formatting.md#image-management).
+* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Voor meer op dit, verwijs naar [&#x200B; Formatterend &#x200B;](formatting.md).
+* JavaScript-sjablonen: opmaken van uitvoerdocumenten met de JavaScript-taal. Voor meer op dit, verwijs naar [&#x200B; malplaatjes van de Publicatie &#x200B;](publication-templates.md).
+* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Voor meer op dit, verwijs naar [&#x200B; Agregator &#x200B;](publication-templates.md#aggregator).
+* Publicatiesjablonen: definitie van publicatiesjablonen. Voor meer op dit, verwijs naar [&#x200B; malplaatjes van de Publicatie &#x200B;](publication-templates.md).
+* Inhoud: instanties van inhoud die moeten worden gemaakt en gepubliceerd. Voor meer op dit, verwijs naar [&#x200B; Gebruikend een inhoudsmalplaatje &#x200B;](using-a-content-template.md).

@@ -18,7 +18,7 @@ ht-degree: 5%
 >
 >Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid, met name die waarvoor de volgende instellingen zijn gedefinieerd:\
 >**dataSource= &quot;dossier&quot;** en **mappingType=&quot;xmlFile&quot;**.\
->De volgende schema&#39;s moeten niet worden uitgebreid: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, 6} nms **,:remoteTracking** nms **,:userAgentRules** xtk **,:builder** xtk **,:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk tk: jst **,** xtk **,:navtree** xtk **,:queryDef** xtk **,:resourceMenu** xtk **,:schema** xtk **,:scriptContext** xtk **,:session** xtk **,:sqlSchema** xtk **.:strings**
+>De volgende schema&#39;s moeten niet worden uitgebreid: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, 6&rbrace; nms **,:remoteTracking** nms **,:userAgentRules** xtk **,:builder** xtk **,:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk tk: jst **,** xtk **,:navtree** xtk **,:queryDef** xtk **,:resourceMenu** xtk **,:schema** xtk **,:scriptContext** xtk **,:session** xtk **,:sqlSchema** xtk **.:strings**
 >Deze lijst is niet limitatief.
 
 Er zijn twee methoden om een bestaand schema uit te breiden:

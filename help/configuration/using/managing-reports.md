@@ -17,11 +17,11 @@ ht-degree: 3%
 
 
 
-De rapporten die op een schema worden gebaseerd dat voor de standaardAdobe Campaign ontvangers (NM :recipient of verbonden schema) specifiek is moeten worden herontwikkeld om met de gegevens van de douanelijst en zijn lijsten rekening te houden die via de doelafbeelding (zie de [ sectie van de afbeelding van het Doel ](../../configuration/using/target-mapping.md)) worden verbonden.
+De rapporten die op een schema worden gebaseerd dat voor de standaardAdobe Campaign ontvangers (NM :recipient of verbonden schema) specifiek is moeten worden herontwikkeld om met de gegevens van de douanelijst en zijn lijsten rekening te houden die via de doelafbeelding (zie de [&#x200B; sectie van de afbeelding van het Doel &#x200B;](../../configuration/using/target-mapping.md)) worden verbonden.
 
-Om nieuwe rapporten tot stand te brengen, verwijs naar [ deze sectie ](../../reporting/using/about-reports-creation-in-campaign.md).
+Om nieuwe rapporten tot stand te brengen, verwijs naar [&#x200B; deze sectie &#x200B;](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor deze tabellen. De kubussen zijn gedetailleerd in [ deze sectie ](../../reporting/using/ac-cubes.md).
+In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor deze tabellen. De kubussen zijn gedetailleerd in [&#x200B; deze sectie &#x200B;](../../reporting/using/ac-cubes.md).
 
 De volgende verslagen hebben betrekking op:
 

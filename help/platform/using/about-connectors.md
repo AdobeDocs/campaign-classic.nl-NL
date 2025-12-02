@@ -31,4 +31,4 @@ U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 
 >[!NOTE]
 >
->De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Verwijs naar [ Campagne op-gebouw - ontvangen vermogensmatrijs ](../../installation/using/capability-matrix.md).
+>De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Verwijs naar [&#x200B; Campagne op-gebouw - ontvangen vermogensmatrijs &#x200B;](../../installation/using/capability-matrix.md).

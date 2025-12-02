@@ -18,7 +18,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 * Leveringen:
 
-   * Creërend een leveringsactie, verwijs naar [ SubmitDelivery (nms :delivery) ](#submitdelivery--nms-delivery-),
+   * Creërend een leveringsactie, verwijs naar [&#x200B; SubmitDelivery (nms :delivery) &#x200B;](#submitdelivery--nms-delivery-),
    * het verzenden van een campagne (starten, pauzeren, stoppen, verzenden van bewijzen);
    * leveringslogboeken herstellen.
 
@@ -27,17 +27,17 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
    * het starten van een workflow,
    * controleren van processen, enz.
 
-     Verwijs naar [ methodes van SOAP in JavaScript ](../../configuration/using/soap-methods-in-javascript.md).
+     Verwijs naar [&#x200B; methodes van SOAP in JavaScript &#x200B;](../../configuration/using/soap-methods-in-javascript.md).
 
 * Inhoudsbeheer
-* Het beheer van het abonnement, verwijs naar [ Abonneren (nms :subscription) ](#subscribe--nms-subscription-) en [ Unsubscribe (nms :subscription) ](#unsubscribe--nms-subscription-).
+* Het beheer van het abonnement, verwijs naar [&#x200B; Abonneren (nms :subscription) &#x200B;](#subscribe--nms-subscription-) en [&#x200B; Unsubscribe (nms :subscription) &#x200B;](#unsubscribe--nms-subscription-).
 * Gegevensprocessen: invoer, uitvoer.
 
 In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Unsubscribe&quot; en &quot;VerzendenLevering&quot; beschreven.
 
 >[!IMPORTANT]
 >
->[ de documentatie van JSAPI van de Campagne ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) bevat extra informatie over de vraag van SOAP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
+>[&#x200B; de documentatie van JSAPI van de Campagne &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=nl) bevat extra informatie over de vraag van SOAP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
 
 ## Abonneren (nms :subscription) {#subscribe--nms-subscription-}
 

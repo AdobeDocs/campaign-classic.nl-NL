@@ -17,7 +17,7 @@ ht-degree: 4%
 
 
 
-Door gebrek, zijn uw nieuwe werkschema&#39;s gebaseerd op een werkschemamalplaatje dat pre-gevormd en gebaseerd op een ontvankelijke lijst (nms :recipient) is. Opdat zij automatisch op de douanelijst van ontvangers worden gebaseerd die in **worden van verwijzingen voorzien Nms_DefaultRcpSchema** optie (zie [ Vormend de interface ](../../configuration/using/configuring-the-interface.md) sectie), moet u een nieuw werkschemamalplaatje tot stand brengen.
+Door gebrek, zijn uw nieuwe werkschema&#39;s gebaseerd op een werkschemamalplaatje dat pre-gevormd en gebaseerd op een ontvankelijke lijst (nms :recipient) is. Opdat zij automatisch op de douanelijst van ontvangers worden gebaseerd die in **worden van verwijzingen voorzien Nms_DefaultRcpSchema** optie (zie [&#x200B; Vormend de interface &#x200B;](../../configuration/using/configuring-the-interface.md) sectie), moet u een nieuw werkschemamalplaatje tot stand brengen.
 
 Maak een nieuwe sjabloon via het knooppunt **[!UICONTROL Resources > Templates > Workflow templates]** . In de eigenschappen van de sjabloon komen de afmetingen overeen met de tabel met externe ontvangers.
 
@@ -25,6 +25,6 @@ Door uw nieuwe werkschema&#39;s op een onlangs gecreeerd malplaatje te baseren, 
 
 Alle activiteiten die in uw werkschema worden gebruikt zullen zo uw douanetabel zonder enige extra handconfiguratie gebruiken.
 
-Voor meer informatie over werkschema&#39;s, verwijs naar [ deze sectie ](../../workflow/using/about-workflows.md).
+Voor meer informatie over werkschema&#39;s, verwijs naar [&#x200B; deze sectie &#x200B;](../../workflow/using/about-workflows.md).
 
 ![](assets/cfg_external_table_workflow.png)

@@ -125,7 +125,7 @@ Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web track
 
 Als u wenst om de informatie te controleren die naar de omleidingsserver wordt verzonden, is de betrouwbaarste manier de vraag van HTTP synchroon uit te voeren zelf gebruikend een pagina die taal produceert.
 
-URL u bouwt moet de syntaxisregels volgen die in [ Web volgende markering worden bepaald: definitie ](../../configuration/using/web-tracking-tag-definition.md).
+URL u bouwt moet de syntaxisregels volgen die in [&#x200B; Web volgende markering worden bepaald: definitie &#x200B;](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

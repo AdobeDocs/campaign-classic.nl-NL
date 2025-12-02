@@ -135,7 +135,7 @@ De volgende regels zijn van toepassing:
 
 Het gegevenstype is ingegaan via het **type** attribuut in **`<attribute>`** en **`<element>`** elementen.
 
-Een gedetailleerde lijst is beschikbaar in de beschrijving van het [`<attribute>` element ](../../configuration/using/schema/attribute.md) en het [`<element>` element ](../../configuration/using/schema/element.md).
+Een gedetailleerde lijst is beschikbaar in de beschrijving van het [`<attribute>` element &#x200B;](../../configuration/using/schema/attribute.md) en het [`<element>` element &#x200B;](../../configuration/using/schema/element.md).
 
 Wanneer dit attribuut niet bevolkt is, **koord** is het standaardgegevenstype tenzij het element kindelementen bevat. Als het, wordt het gebruikt slechts om de elementen hiërarchisch te structureren (**`<location>`** element in ons voorbeeld).
 
@@ -297,7 +297,7 @@ De elementen **`<elements>`** en **`<attributes>`** van het gegevensschema kunne
 
 Gebruik het **gebrek** bezit om een uitdrukking te bepalen die een standaardwaarde op inhoudsverwezenlijking terugkeert.
 
-De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op dit, verwijs naar [ Verwijzend met XPath ](../../configuration/using/schema-structure.md#referencing-with-xpath).
+De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op dit, verwijs naar [&#x200B; Verwijzend met XPath &#x200B;](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Voorbeeld**:
 

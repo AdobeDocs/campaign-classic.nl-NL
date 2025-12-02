@@ -30,7 +30,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Maak een nieuw gegevensschema waarin de velden van de aangepaste tabel die u wilt gebruiken, zijn geïntegreerd.
 
-   Voor verdere informatie, verwijs naar [ Referentie van het Schema (xtk :srcSchema) ](../../configuration/using/about-schema-reference.md).
+   Voor verdere informatie, verwijs naar [&#x200B; Referentie van het Schema (xtk :srcSchema) &#x200B;](../../configuration/using/about-schema-reference.md).
 
    In ons voorbeeld maken we een klantschema, een zeer eenvoudige tabel met de volgende velden: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of sms-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
 
@@ -51,7 +51,7 @@ Hiervoor voert u de volgende stappen uit:
    </srcSchema>
    ```
 
-1. Declareer uw schema als externe mening gebruikend het = &quot;ware&quot;attribuut. Verwijs naar [ de meningsattributen ](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Declareer uw schema als externe mening gebruikend het = &quot;ware&quot;attribuut. Verwijs naar [&#x200B; de meningsattributen &#x200B;](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -102,7 +102,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Voor meer informatie over dit, verwijs naar de [ Aanbeveling en beperkingen ](../../configuration/using/about-custom-recipient-table.md) pagina.
+   >Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Voor meer informatie over dit, verwijs naar de [&#x200B; Aanbeveling en beperkingen &#x200B;](../../configuration/using/about-custom-recipient-table.md) pagina.
 
 1. In het **venster van Uitbreidingen**, selecteer de facultatieve schema&#39;s die u wilt produceren (de lijst van beschikbare schema&#39;s hangt van de modules af die op het platform van Adobe Campaign worden geïnstalleerd).
 

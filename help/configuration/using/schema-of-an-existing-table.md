@@ -60,4 +60,4 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 De **Federated Toegang van Gegevens - FDA** optie geeft u toegang tot de gegevens die in een extern gegevensbestand worden opgeslagen.
 
-De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben wordt gedetailleerd in [ deze pagina ](../../installation/using/creating-data-schema.md).
+De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben wordt gedetailleerd in [&#x200B; deze pagina &#x200B;](../../installation/using/creating-data-schema.md).

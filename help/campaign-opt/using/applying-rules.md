@@ -53,7 +53,7 @@ Dan gebruik de vraagredacteur om het filtreren voorwaarden te bepalen. In het vo
 
 >[!NOTE]
 >
->Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: deze kunnen afhankelijk zijn van de levering of de leveringscontour. Voor meer op dit, verwijs naar [ Voorwaardelijk een het filtreren regel ](filtering-rules.md#conditioning-a-filtering-rule).
+>Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: deze kunnen afhankelijk zijn van de levering of de leveringscontour. Voor meer op dit, verwijs naar [&#x200B; Voorwaardelijk een het filtreren regel &#x200B;](filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Rekenfrequentie aanpassen {#adjusting-calculation-frequency}
 
@@ -144,4 +144,4 @@ Op het tabblad **[!UICONTROL Distributed Marketing]** kunt u de typologieën en/
 >[!NOTE]
 >
 >In typologieën en typologieregels wordt het tabblad **[!UICONTROL Distributed Marketing]** toegevoegd als uw licentie deze optie bevat: controleer de licentieovereenkomst.\
->Voor meer informatie over Verdeelde Marketing, verwijs naar [ Ongeveer verdeelde marketing ](../../distributed/using/about-distributed-marketing.md).
+>Voor meer informatie over Verdeelde Marketing, verwijs naar [&#x200B; Ongeveer verdeelde marketing &#x200B;](../../distributed/using/about-distributed-marketing.md).

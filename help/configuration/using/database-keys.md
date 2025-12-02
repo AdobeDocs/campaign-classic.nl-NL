@@ -126,7 +126,7 @@ De volgende regels zijn van toepassing op sleutels:
 
 ## Automatische incrementele toets {#auto-incremental-key}
 
-De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de zeer belangrijke waarde hangt van een opeenvolging (door gebrek, de **SQL functie 0} XtkNewId {af) die een aantal produceert dat in het volledige gegevensbestand uniek is.** De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de zeer belangrijke waarde hangt van een opeenvolging (door gebrek, de **SQL functie 0&rbrace; XtkNewId &lbrace;af) die een aantal produceert dat in het volledige gegevensbestand uniek is.** De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 

@@ -109,4 +109,4 @@ U kunt nog steeds de systeemfilters wijzigen van de out-of-the-box schema&#39;s 
 
 1. Maak een extensie voor het desbetreffende schema of open een bestaande extensie.
 1. Voeg een onderliggend element **`<sysfilter name="<filter name>" _operation="delete"/>`** toe aan het hoofdelement om de toepassing van het filter onder hetzelfde filter in het oorspronkelijke schema te verwijderen.
-1. Als u houdt van, kunt u een nieuw filter toevoegen, zoals die in [ worden gedetailleerd de filters van het Systeem ](#system-filters).
+1. Als u houdt van, kunt u een nieuw filter toevoegen, zoals die in [&#x200B; worden gedetailleerd de filters van het Systeem &#x200B;](#system-filters).

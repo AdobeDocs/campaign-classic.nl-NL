@@ -20,7 +20,7 @@ Wanneer u een schema wijzigt en de wijzigingen opslaat, wordt het uitgebreide sc
 1. Klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** .
 1. Klik op **[!UICONTROL OK]** om het proces te bevestigen en te starten.
 
-U kunt de structuur van het gegenereerde schema vervolgens controleren op de tabbladen Voorbeeld en Documentatie. Voor meer op dit, verwijs naar de [ sectie van Beginselen ](../../configuration/using/data-schemas.md#principles).
+U kunt de structuur van het gegenereerde schema vervolgens controleren op de tabbladen Voorbeeld en Documentatie. Voor meer op dit, verwijs naar de [&#x200B; sectie van Beginselen &#x200B;](../../configuration/using/data-schemas.md#principles).
 
 >[!NOTE]
 >
