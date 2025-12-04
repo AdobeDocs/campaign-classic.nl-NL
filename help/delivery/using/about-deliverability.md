@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # Wat is afleverbaarheid?{#about-deliverability}
 
-Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren, of als spam worden gemerkt. [&#x200B; leer waarom de leverbaarheid &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters) van belang is.
+Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren, of als spam worden gemerkt. [&#x200B; leer waarom de leverbaarheid &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=nl-NL#why-deliverability-matters) van belang is.
 
 Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
@@ -25,7 +25,7 @@ Voor een diepere duik op wat de leverbaarheid is en meer op zeer belangrijke lev
 
 De leveringsproblemen houden gewoonlijk verband met maatregelen van bescherming tegen spam die door Internet dienstverleners en de beheerders van de postserver worden uitgevoerd.
 
-* Voor algemene aanbevelingen op hoe te om succesvolle e-mail marketing campagnes te ontwerpen, verwijs naar [&#x200B; de strategie en de definitie van de Levering &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html).
+* Voor algemene aanbevelingen op hoe te om succesvolle e-mail marketing campagnes te ontwerpen, verwijs naar [&#x200B; de strategie en de definitie van de Levering &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=nl-NL).
 
 * Adobe raadt u aan de beste praktijken in deze sectie te gebruiken voor specifieke aanbevelingen voor het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails.
 
@@ -40,12 +40,12 @@ Het leverbaarheidstarief is het aantal berichten die de inboxes van ontvangers v
 Bij Adobe Campaign hangt het leverbrengingscijfer af van een groot aantal factoren, met name:
 
 * Correcte configuratie van uw instanties: neem contact op met uw Adobe-vertegenwoordiger voor hulp.
-* Legitieme netwerkconfiguratie: zie [&#x200B; de opstelling en de strategie van het Domein &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
-* Uw IP adresreputatie: zie [&#x200B; IP strategie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
-* De lage [&#x200B; klachten &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) en [&#x200B; harde stuiteren &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces) tarieven.
+* Legitieme netwerkconfiguratie: zie [&#x200B; de opstelling en de strategie van het Domein &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#domain-setup-and-strategy).
+* Uw IP adresreputatie: zie [&#x200B; IP strategie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#ip-strategy).
+* De lage [&#x200B; klachten &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=nl-NL) en [&#x200B; harde stuiteren &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=nl-NL#hard-bounces) tarieven.
 * Uw berichtinhoud: zie [&#x200B; Controle de e-mailinhoud &#x200B;](control-message-content.md).
-* De authentificatie van het bericht (SPF, DKIM, DMARC): zie [&#x200B; deze sectie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
-* De reputatie van de afzender: om te leren hoe hoofd ISPs een afzenderreputatie evalueert, zie [&#x200B; deze sectie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
+* De authentificatie van het bericht (SPF, DKIM, DMARC): zie [&#x200B; deze sectie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
+* De reputatie van de afzender: om te leren hoe hoofd ISPs een afzenderreputatie evalueert, zie [&#x200B; deze sectie &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=nl-NL).
 
 ## Hulpprogramma&#39;s voor het leveren van campagnes {#deliverability-tools}
 
@@ -56,10 +56,10 @@ Adobe Campaign biedt verschillende tools om de prestaties van uw platform bij te
 
 Wanneer het vormen van, het ontwerpen van, en het testen van uw bericht, zorg ervoor u de beste praktijken volgt die in de hieronder vermelde secties worden vermeld. Door gebruik te maken van alle functies die Adobe Campaign biedt, kunt u de leverbaarheid verbeteren.
 
-* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
+* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL){target="_blank"}.
 * [De e-mailinhoud beheren](control-message-content.md)
 * [Inboxrendering](inbox-rendering.md)
-* [Een proef verzenden](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}
+* [Een proef verzenden](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=nl-NL){target="_blank"}
 
 ### Verifieer toestemming door dubbele opt-in {#double-opt-in}
 
@@ -67,7 +67,7 @@ Om te voorkomen dat berichten naar ongeldige adressen worden verzonden, onjuiste
 
 Zie [Een lidmaatschapsformulier maken met dubbele opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
 
-Voor meer op beste praktijken wanneer het verzamelen van gegevens van uw klanten, verwijs naar de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
+Voor meer op beste praktijken wanneer het verzamelen van gegevens van uw klanten, verwijs naar de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=nl-NL#data-quality-and-hygiene).
 
 ### Gebruik quarantainebeheer
 

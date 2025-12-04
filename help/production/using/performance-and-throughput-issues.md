@@ -57,7 +57,7 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
   >
   >De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten moeten contact opnemen met hun Adobe-vertegenwoordiger voor informatie over de leveringsservice.
 
-* DKIM: om het beveiligingsniveau van de DKIM te garanderen, is 1024b de aanbevolen beste manier om de coderingsgrootte te bepalen. De lagere sleutels van DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* DKIM: om het beveiligingsniveau van de DKIM te garanderen, is 1024b de aanbevolen beste manier om de coderingsgrootte te bepalen. De lagere sleutels van DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
 
 ## Leverbaarheidsproblemen {#deliverability-issues}
 
@@ -71,7 +71,7 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
   >De betrokkenheid van het leveringsteam is gebaseerd op een contract en klanten moeten contact opnemen met hun Adobe-vertegenwoordiger voor informatie over de leveringsservice.
 
 * IP affiniteitopstelling: een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-mailformaat: e-mailgrootte speelt een belangrijke rol bij de doorvoer. De aanbevolen maximale e-mailgrootte is 60 kB. Verwijs naar deze [&#x200B; pagina &#x200B;](https://helpx.adobe.com/legal/product-descriptions/campaign.html). In het [&#x200B; rapport van de productie van de Levering &#x200B;](../../reporting/using/global-reports.md#delivery-throughput), controleer het aantal bytes die door uur worden overgebracht.
+* E-mailformaat: e-mailgrootte speelt een belangrijke rol bij de doorvoer. De aanbevolen maximale e-mailgrootte is 60 kB. Verwijs naar deze [&#x200B; pagina &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/campaign.html). In het [&#x200B; rapport van de productie van de Levering &#x200B;](../../reporting/using/global-reports.md#delivery-throughput), controleer het aantal bytes die door uur worden overgebracht.
 * Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan dit van invloed zijn op de doorvoer. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
 * Hoeveelheid personalisatie: als een levering in &quot;Personalization in uitvoering&quot; blijft, controleert u de JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 

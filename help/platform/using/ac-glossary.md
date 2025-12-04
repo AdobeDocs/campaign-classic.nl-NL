@@ -69,7 +69,7 @@ De activiteit van de Lokale Goedkeuring is een werkschemaactiviteit die wordt ge
 
 Een publiek is de resulterende set profielen die voldoen aan de criteria van een filterdefinitie, op basis van regels en kenmerken.
 
-Leer meer over publiek in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
+Leer meer over publiek in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Audittrail**
@@ -102,7 +102,7 @@ Leer meer over [&#x200B; Interactie &#x200B;](../../interaction/using/interactio
 
 Campagne is een interface voor het coördineren, definiëren en uitvoeren van marketingcampagnes. Campagnes kunnen een of meer workflows, leveringen, documenten en andere gerelateerde gegevenspunten bevatten in één gebruiksvriendelijke interface.
 
-Leer meer over campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Leer meer over campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=nl-NL){target=_blank}.
 +++
 
 <!--
@@ -135,7 +135,7 @@ Leer meer over [&#x200B; console van de Cliënt &#x200B;](../../platform/using/a
 
 Inhoudsgoedkeuring is het proces waarbij een afzonderlijke exploitant of groep exploitanten de inhoud van een levering goedkeurt voordat deze kan worden verzonden.
 
-Leer meer over inhoudsgoedkeuring in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}.
+Leer meer over inhoudsgoedkeuring in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=nl-NL){target="_blank"}.
 
 +++
 
@@ -143,7 +143,7 @@ Leer meer over inhoudsgoedkeuring in de [&#x200B; documentatie van de Campagne v
 
 Gebruik Controlegroepen om de impact van uw campagnes te meten door een deel van hun publiek uit te sluiten. De exploitanten kunnen het gedrag van de doelbevolking vergelijken die het bericht met het gedrag van contacten ontving die niet werden gericht. Gebaseerd op de verzendende logboeken, kunnen de Exploitanten een controlegroep in toekomstige campagnes ook richten.
 
-Leer meer over controlegroepen in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+Leer meer over controlegroepen in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=nl-NL#add-a-control-group){target="_blank"}.
 +++
 
 +++**Configuratiescherm**
@@ -215,7 +215,7 @@ Leer meer over [&#x200B; Leveringen &#x200B;](../../delivery/using/communication
 
 De leveringsanalyse is de voorbereiding van de levering. Dit proces combineert de inhoud met de gegevens van het ontvankelijke profiel om de gepersonaliseerde e-mail te produceren die de ontvanger ontvangt. De logica van de leveringsanalyse kan ontvangers van het doel uitsluiten of de levering helemaal tegenhouden, die op de bepaalde logica wordt gebaseerd. Dit proces omvat ook de evaluatie van de logica voor dynamische inhoud en de invoeging van aanbiedingen die specifiek zijn voor het individuele ontvangende profiel.
 
-Leer meer over leveringsanalyse in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Leer meer over leveringsanalyse in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Logboeken van de Levering**
@@ -266,7 +266,7 @@ Leer meer over [&#x200B; Beschrijvende Analyse &#x200B;](../../reporting/using/a
 
 De add-on voor gedistribueerde marketing biedt aan campagnebeheerders een gezamenlijke werkruimte aan voor het uitvoeren van campagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die als **lijst van de pakketten van de Campagne** wordt bekend, waar de centraal gecreeerde campagnemalplaatjes en de instanties aan lokale entiteiten worden aangeboden.
 
-Leer meer over Verdeelde Marketing in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
+Leer meer over Verdeelde Marketing in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Distributie van waarden**
@@ -339,14 +339,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 De verrijkingsactiviteit is een geavanceerde werkschemaactiviteit die Exploitanten toestaat om de geproduceerde werkbare gegevens te verrijken die in het werkschema zullen worden verwerkt. Deze activiteit wordt over het algemeen gebruikt na het richten van activiteiten of na het invoeren van een dossier en vóór activiteiten die het gebruik van gerichte gegevens gebruiken. De verbeteringen kunnen de binnenkomende overgangsgegevens omzetten en de activiteit vormen om de outputovergang met verbeterde gegevens te voltooien. Het staat de Exploitant toe om gegevens van veelvoudige gegevensreeksen te combineren, of verbindingen aan een tijdelijke middel tot stand te brengen.
 
-Leer meer over de activiteit van de Verrijking in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+Leer meer over de activiteit van de Verrijking in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Opsommingen**
 
 Een opsomming is een gegevenstype dat in schema&#39;s of op het niveau van het Platform wordt bepaald dat de geldige inputwaarden voor een gebied bepaalt. Opsommingen worden in de gebruikersinterface en in querybuilders weergegeven als een keuzelijst.
 
-Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 +++
 
 +++**mening van de Ontdekkingsreiziger**
@@ -354,7 +354,7 @@ Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) do
 De weergave Ontdekkingsreiziger is een hiërarchische weergave van de mappen die Adobe Campaign-artefacten en -gegevens bevatten. Het mappensysteem in Adobe Campaign werkt niet zoals een standaardvoorvertoning, omdat elke map gegevens van een specifiek type bevat, zoals leveringen, workflows of aanbiedingen.
 
 
-Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -371,7 +371,7 @@ Leer meer over [&#x200B; Externe rekeningen &#x200B;](../../installation/using/e
 
 Met vermoeidheidsbeheer kunt u de frequentie en de hoeveelheid berichten bepalen om overmatige opvraging van ontvangers te voorkomen. Deze wordt vaak toegepast met behulp van een typologieregel.
 
-Leer meer over vermoeidheidsbeheer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
+Leer meer over vermoeidheidsbeheer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Federated Data Access (FDA)**
@@ -394,14 +394,14 @@ Leer meer over de goedkeuring van de dossierextractie in de [&#x200B; documentat
 
 De het filtreren afmeting is het schema dat de gegevens of de attributen bevat die door een vraag worden gebruikt om de gewenste rijen te filtreren. Het Filtrerende dimensieschema moet direct met de bepaalde het richten afmeting worden verbonden om Adobe Campaign toe te staan om het gegevensbestand te kruisen toetreedt en de geënquêteerde rijen terug te keren.
 
-Leer meer over het filtreren dimensie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}.
+Leer meer over het filtreren dimensie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=nl-NL#targeting-and-filtering-dimensions){target="_blank"}.
 +++
 
 +++**Omslag**
 
 Een omslag is een de meningspunt van de Ontdekkingsreiziger dat gegevensbestandverslagen van een specifiek gegevenstype houdt. De uitzondering hierop is het algemene maptype dat wordt gebruikt als een element dat de map ordent en dat zelf geen gegevens bevat, alleen andere mappen.
 
-Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -409,7 +409,7 @@ Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campai
 
 De Mapweergave is een speciaal maptype van Verkenner dat wordt gebruikt om alle records van een geselecteerd gegevenstype weer te geven, ongeacht tot welke map het behoort. Mapweergaven worden gebruikt als een beheerprogramma voor het beheer van gepartitioneerde gegevens of gegevens die over veel mappen worden verspreid.
 
-Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -433,7 +433,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 
 Campagne Heatmap is een tabel met informatie over de workflowuitvoering voor een periode van 24 uur. Het toont de verdeling van werkschema&#39;s over de periode door uur en door vijf-minieme intervallen. Heatmap wordt gebruikt om serverlading te evalueren en de werkschemaactiviteiten te bepalen die de meeste middelen verbruiken.
 
-Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}.
+Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Hybride plaatsing**
@@ -523,7 +523,7 @@ Leer meer over [&#x200B; Lokale Geheime voorgeheugen &#x200B;](../../platform/us
 
 De **module van het Middel van de Marketing van het Beheer (MRM)** in Adobe Campaign laat u marketing acties op een samenwerkingswijze controleren door volledig beheer en controle in real time van de taken, de begrotingen, en de marketing middelen te verstrekken betrokken. Adobe Campaign-operatoren kunnen hun acties coördineren en hun voortgang in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackingsinstrumenten: rapportage, tracering van goedkeuringen, meldingen, discussieforums, enz.
 
-Leer meer over MRM in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html){target="_blank"}.
+Leer meer over MRM in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=nl-NL){target="_blank"}.
 +++
 
 <!--
@@ -562,7 +562,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 De navigatieboom is de belangrijkste navigatie in de mening van de Ontdekkingsreiziger van Adobe Campaign. De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt. De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invoerformulier voor het bewerken van de geselecteerde regel. U kunt de navigatiestructuur aanpassen en machtigingen voor mappen instellen.
 
-Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -572,7 +572,7 @@ Leer meer over het gebruikersinterface van de Campagne in [&#x200B; Adobe Campai
 
 In het kader van de campagne, het programma of het plan kunnen exploitanten een lijst met doelstellingen opstellen. Dit zijn gekwantificeerde waarden die moeten worden bereikt. Aan het eind van de campagne, het programma of het plan, laat de module MRM Exploitanten de doelstellingen en de resultaten in specifieke rapporten vergelijken.
 
-Leer meer over doelstellingen in de [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}.
+Leer meer over doelstellingen in de [&#x200B; Adobe Campaign v8 documentatie &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=nl-NL#expenses-and-revenues){target=_blank}.
 +++
 
 +++**de catalogus van de Aanbieding**
@@ -754,7 +754,7 @@ Leer meer over [&#x200B; de uitvoer/de invoer van het Pakket &#x200B;](../../pla
 
 In het werkstroompalet worden de beschikbare activiteiten weergegeven die aan een werkstroom kunnen worden toegevoegd. Deze component wordt getoond in een van labels voorzien formaat met werkschemaactiviteiten die logisch door hun gebruik worden gegroepeerd. De activiteiten die beschikbaar zijn op het palet worden bepaald door de invoegtoepassingen die zijn geïnstalleerd in de instantie Campagne en door de context waarin de workflow wordt weergegeven.
 
-Leer meer over het palet in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}.
+Leer meer over het palet in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=nl-NL#add-and-link-activities){target="_blank"}.
 +++
 
 +++**Controle van Prestaties**
@@ -768,14 +768,14 @@ Leer meer over [&#x200B; het controleren van Prestaties &#x200B;](../../producti
 
 Adobe Campaign biedt ingebouwde aanpassingsblokken die u in uw leveringen kunt invoegen. Ze zijn dynamisch, gepersonaliseerd en bevatten een specifieke rendering. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Verschillende verpersoonlijkingsblokken zijn standaard beschikbaar. U kunt ook aangepaste verpersoonlijkingsblokken definiëren waarmee u uw verpersoonlijking van de levering kunt optimaliseren. De daadwerkelijke gegevens worden opgenomen in elk geproduceerd bericht tijdens de analysefase van de levering.
 
-Leer meer over verpersoonlijkingsblokken binnen aan de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Leer meer over verpersoonlijkingsblokken binnen aan de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**het gebied van Personalization**
 
 Een verpersoonlijkingsgebied is één enkele verwijzing van het gegevensgebied die wanneer het personaliseren van een levering voor een specifieke ontvanger wordt gebruikt. De werkelijke gegevenswaarde wordt ingevoegd tijdens de fase van de leveringsanalyse.
 
-Leer meer over verpersoonlijkingsgebieden in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}.
+Leer meer over verpersoonlijkingsgebieden in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**de variabelen van Personalization**
@@ -796,7 +796,7 @@ Leer meer over plannen in de [&#x200B; documentatie van de Campagne v8 &#x200B;]
 
 Vooraf gedefinieerde filters zijn query&#39;s die zijn opgeslagen voor hergebruik. Het gebruik van vooraf gedefinieerde filters verhoogt de productiviteit (omdat ze slechts eenmaal zijn gemaakt), helpt u de consistentie te vergroten (omdat alle marketers ze kunnen gebruiken) en de vaardigheden te verlagen die de markeerder nodig heeft omdat ze code of logica kunnen gebruiken die ze mogelijk niet zelf kunnen maken.
 
-Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -914,14 +914,14 @@ Leer meer over [&#x200B; Diensten &#x200B;](../../delivery/using/about-services-
 
 In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. Met het regelpaneel kunt u handelingen uitvoeren op uw SFTP-servers, zoals de opslagcapaciteit controleren, IP-adressen beheren voor aanbiedingen en het beheren van openbare SSH-sleutels.
 
-Leer meer over [&#x200B; Beheer SFTP &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Leer meer over [&#x200B; Beheer SFTP &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL).
 +++
 
 +++**de dienstenactiviteit van het Abonnement van 0&rbrace;**
 
 Met de workflowactiviteit Subscription Services kunt u een abonnement op een informatieservice maken of verwijderen voor de bevolking die in de overgang is opgegeven.
 
-Leer meer over de de dienstenactiviteit van het Abonnement in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}.
+Leer meer over de de dienstenactiviteit van het Abonnement in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**goedkeuring van het Doel**
@@ -930,21 +930,21 @@ Leer meer over de de dienstenactiviteit van het Abonnement in de [&#x200B; docum
 
 Doelgoedkeuring is het proces waarbij een afzonderlijke exploitant of groep exploitanten het uiteindelijke doel van een levering goedkeurt (nadat de analysefase het doel heeft gegenereerd) voordat de levering kan worden verzonden.
 
-Leer meer over de activiteit van de Goedkeuring van het Doel de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}.
+Leer meer over de activiteit van de Goedkeuring van het Doel de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Targetgegevens**
 
 Doelgegevens zijn de gegevens die zijn opgeslagen in de werktabel (overgang) van een werkstroom. Deze gegevens zijn beschikbaar binnen de levering voor verpersoonlijking van de leveringsinhoud of om de logica van dynamische elementen van de levering te bepalen.
 
-Leer meer over doelgegevens in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}.
+Leer meer over doelgegevens in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=nl-NL#target-data){target="_blank"}.
 +++
 
 +++**Doeltoewijzing**
 
 De afbeelding van het doel is de afbeelding van leveringskanalen aan een specifiek gegevenstype. De afbeeldingen van het doel bepalen hoe de verschillende leveringskanalen met de gegevensgebieden van een schema verbinden. Het bepaalt hoe de Campagne naar dat gegevenstype verzendt gebruikend een specifiek gebied of een uitdrukking.
 
-Leer meer over doelafbeelding in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
+Leer meer over doelafbeelding in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**het richten activiteiten**
@@ -959,7 +959,7 @@ Leer meer over het richten van activiteiten in de [ documentatie van de Campagne
 
 Het richten dimensie is het gegevenstype dat (teruggekeerd) door een vraag of andere werkschemaactiviteiten wordt veroorzaakt. Merk op dat Adobe Campaign slechts de Primaire Sleutel van de geënquêteerde gegevensbestandrijen terugkeert, geen kwestie welke vraag werd gebruikt om hen te verkrijgen.
 
-Leer meer over het richten van dimensie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
+Leer meer over het richten van dimensie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**activiteit van de Taak**
@@ -968,7 +968,7 @@ Leer meer over het richten van dimensie in de [&#x200B; documentatie van de Camp
 
 De het werkschemaactiviteit van de Taak neemt menselijke actie in de logica van een werkschema op. U kunt twee scenario&#39;s specificeren: eerste als de taak wordt voltooid en tweede als de taak niet wordt voltooid. De typische gebruiksgevallen zijn voor het opnemen van off-line acties in een campagne, of voor douaneacties zoals goedkeuringen.
 
-Leer meer over de maskeractiviteit in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html){target="_blank"}.
+Leer meer over de maskeractiviteit in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=nl-NL){target="_blank"}.
 +++
 
 <!--
@@ -1025,7 +1025,7 @@ Leer meer over [&#x200B; Transactioneel overseinen &#x200B;](../../message-cente
 
 Gegenereerde campagnes zijn campagnes die worden uitgevoerd wanneer een API-verzoek in een werkstroom wordt ontvangen. API-aanroepen worden verbruikt door een Signal-activiteit in de workflow die de uitvoering van de workflow start.
 
-Leer meer over teweeggebrachte campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}.
+Leer meer over teweeggebrachte campagnes in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=nl-NL){target="_blank"}.
 +++
 
 <!--
@@ -1044,7 +1044,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Een typologie is een groepering van typologische regels die worden toegepast op de analysefase van een levering. Een campagneretypologie kan verschillende typologische regels bevatten, maar een levering kan slechts naar één typologie verwijzen.
 
-Leer meer over typologieën in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Leer meer over typologieën in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**de regel van de Typologie**
@@ -1053,7 +1053,7 @@ Leer meer over typologieën in de [&#x200B; documentatie van de Campagne v8 &#x2
 
 Typologieregels zijn bedrijfsregels die worden geïmplementeerd als onderdeel van de analysefase van de levering. De typologische regels zijn controles op de inhoud van de levering (controleregels) of het doel van de levering (het filtreren regels) of andere logica (drukregels) die bedrijfsvereisten afdwingen. De regels zijn korrelige elementen die in één of meerdere typologieën kunnen worden omvat.
 
-Leer meer over typologieregels in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Leer meer over typologieregels in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=nl-NL){target="_blank"}.
 +++
 
 ## U - Z {#sec-6}
@@ -1085,7 +1085,7 @@ Leer meer over [&#x200B; Werkschema&#39;s &#x200B;](../../workflow/using/about-w
 
 Het werkschemadagboek is het geleidelijke uitvoeringslogboek van een werkschema. Het bevat alle historie of audittrail van de workflow. Het wordt gebruikt voor ontwikkeling, het oplossen van problemen of zuivert doeleinden.
 
-Leer meer over het werkschemadagboek in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Leer meer over het werkschemadagboek in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"}.
 +++
 
 +++**Werkbaar**
