@@ -7,9 +7,9 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
@@ -32,16 +32,16 @@ Let op: als het uitstellen van de melding &quot;452 gevraagde actie afgebroken: 
 
 >[!NOTE]
 >
->U kunt het Apple System Status Dashboard inschakelen [deze pagina](https://www.apple.com/support/systemstatus/){_blank}.
+>U kunt het dashboard van de Status van het Systeem van Apple op [ deze pagina ](https://www.apple.com/support/systemstatus/){_blank} controleren.
 >
->U kunt het Google Workspace Status Dashboard inschakelen [deze pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>U kunt het Dashboard van de Status van Google Workspace op [ deze pagina ](https://www.google.com/appsstatus#hl=en&v=status){_blank} controleren.
 >
 
 ## Gevolgen{#update-bounce-impact}
 
 Als een internetprovider buiten beschouwing blijft, kunnen e-mails die via Campagne worden verzonden niet succesvol aan de ontvanger worden bezorgd: deze e-mails worden ten onrechte gemarkeerd als steunkleuren.
 
-Volgens de standaardlogica voor stuitverwerking heeft Adobe Campaign deze ontvangers automatisch aan de quarantainelijst toegevoegd met een **[!UICONTROL Status]** instellen van **[!UICONTROL Quarantine]**. Om dit te verbeteren, moet u uw quarantainetabel in Campagne bijwerken door deze ontvangers te vinden en te verwijderen, of hun te veranderen **[!UICONTROL Status]** tot **[!UICONTROL Valid]** zodat de nachtelijke schoonmaakworkflow ze verwijdert.
+Volgens de standaardlogica voor stuitverwerking heeft Adobe Campaign deze ontvangers automatisch toegevoegd aan de quarantainelijst met een **[!UICONTROL Status]** instelling van **[!UICONTROL Quarantine]** . U kunt dit corrigeren door uw quarantainetabel in Campagne bij te werken door deze ontvangers te zoeken en te verwijderen of door hun **[!UICONTROL Status]** in **[!UICONTROL Valid]** te wijzigen zodat deze tijdens de nachtelijke opschoonworkflow worden verwijderd.
 
 Zie de onderstaande instructies voor meer informatie over de ontvangers die door dit probleem zijn beïnvloed.
 
@@ -51,25 +51,25 @@ U moet een vraag op uw quarantainetabel in werking stellen om alle beïnvloede o
 
 Gebaseerd op het timeframe van het incident, en ISP, hieronder zijn de geadviseerde richtlijnen voor deze vraag.
 
-* Voor Campagneomgevingen met informatie over de binnenkomende e-mailregel in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campagneomgevingen met informatie over de regel Inbound-e-mail in het veld **[!UICONTROL Error text]** van de quarantainelijst:
 
-   * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-maildomein (@domein)** gelijk aan domain1.com OR **E-maildomein (@domein)** gelijk aan domain2.com OR **E-maildomein (@domein)** is gelijk aan domain3.com
-   * **Status bijwerken (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
-   * **Status bijwerken (@lastModified)** op of voor `MM/DD/YYYY HH:MM:SS PM`
+   * **tekst van de Fout (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
+   * **E-maildomein (@domein)** is gelijk aan domain1.com OF **E-maildomein (@domein)** gelijk aan domain2.com OF **E-maildomein (@domein)** gelijk aan domain3.com
+   * **status van de Update (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
+   * **status van de Update (@lastModified)** op of vóór `MM/DD/YYYY HH:MM:SS PM`
 
-* Voor Campagneomgevingen met SMTP-stuiteringsresponsinformatie in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campagneomgevingen met SMTP-stuiteringsresponsinformatie in het veld **[!UICONTROL Error text]** van de quarantainelijst:
 
-   * **Fouttekst (quarantainetekst)** bevat &quot;550-5.1.1&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.ISP.com&quot;
+   * **de tekst van de Fout (quarantainetekst)** bevat &quot;550-5.1.1&quot;EN **Tekst van de Fout (quarantainetekst)** bevat &quot;support.ISP.com&quot;
 
      waar &quot;support.ISP.com&quot; kan zijn: bijvoorbeeld &quot;support.apple.com&quot; of &quot;support.google.com&quot;
 
-   * **Status bijwerken (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
-   * **Status bijwerken (@lastModified)** op of voor  `MM/DD/YYYY HH:MM:SS PM`
+   * **status van de Update (@lastModified)** op of na `MM/DD/YYYY HH:MM:SS AM`
+   * **status van de Update (@lastModified)** op of vóór `MM/DD/YYYY HH:MM:SS PM`
 
 
-Als u de lijst met betrokken ontvangers hebt, kunt u deze instellen op de status **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** of deze uit de tabel verwijderen.
+Als u de lijst met betrokken ontvangers hebt, kunt u ze instellen op de status **[!UICONTROL Valid]** zodat ze via de **[!UICONTROL Database cleanup]** -workflow uit de quarantainelijst worden verwijderd of gewoon uit de tabel verwijderen.
 
 **Verwante onderwerpen:**
-* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
-* [Bounce mail-kwalificatie](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Leveringsfouten begrijpen](delivery-failures-quarantine.md)
+* [Bounce mail-kwalificatie](delivery-failures-quarantine.md#bounce-mail-qualification)

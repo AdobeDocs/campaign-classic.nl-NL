@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,9 @@ Wanneer u een e-mail verzendt, zal de softwareserver een verbinding met de ontva
 
 In het verbindingsprotocol moeten de regels worden gerespecteerd om spamming en monopolisering van servers te voorkomen. De belangrijkste zijn de volgende:
 
-* **Maximum aantal toegestane verbindingen**: Wanneer dit aantal wordt gerespecteerd, staan IPs niet op de lijst van gewezen personen en e-mails worden niet geweigerd wegens extra verbindingen.
-* **Maximum aantal berichten**: Tijdens de verbinding moet het aantal berichten worden gedefinieerd dat mag worden verzonden. Als dit aantal niet wordt bepaald, zal de server zo veel mogelijk verzenden. Dit resulteert in wordt geïdentificeerd als spammer en wordt toegevoegd aan de lijst van gewezen personen door ISP.
-* **Berichten per uur**: Adobe Campaign bepaalt het aantal e-mailberichten dat uw IP&#39;s per uur kunnen verzenden om aan uw e-reputatie te voldoen. Dit systeem beschermt u tegen e-mailweigering of lijst van gewezen personen.
+* **Maximum aantal toegestane verbindingen**: Wanneer dit aantal wordt gerespecteerd, zijn IPs niet op de lijst van gewezen personen en e-mails worden niet geweigerd toe te schrijven aan extra verbindingen.
+* **Maximum aantal berichten**: Tijdens de verbinding, moet het aantal berichten die worden toegestaan worden verzonden worden bepaald. Als dit aantal niet wordt bepaald, zal de server zo veel mogelijk verzenden. Dit resulteert in wordt geïdentificeerd als spammer en wordt toegevoegd aan de lijst van gewezen personen door ISP.
+* **Berichten per uur**: Om met uw e-reputatie aan te passen, zal Adobe Campaign het aantal e-mails controleren uw IPs per uur kunnen verzenden. Dit systeem beschermt u tegen e-mailweigering of lijst van gewezen personen.
 
 ## E-mailberichten opsturen
 
@@ -50,21 +50,21 @@ Dit is het proces dat Adobe Campaign gebruikt om fouten tijdens servercommunicat
 
 Het foutenadres zal stuitingen verwerken die door ISPs worden teruggestuurd. Het proces zal verschillende SMTP foutencodes analyseren en de juiste actie volgens de norm toepassen RegEx.
 
-Bijvoorbeeld, heeft een e-mailadres terugkoppelen &quot;550 Gebruiker Onbekend&quot;die door ISP wordt verzonden. Deze foutcode wordt verwerkt door het Adobe Campaign-foutadres (Retournpath-adres). Deze fout wordt dan vergeleken met de norm RegEx en de juiste regel zal van toepassing zijn. Het e-mailadres wordt beschouwd als een *Hard stuiteren* (overeenkomend met het type) en vervolgens *Gebruiker onbekend* (die de reden aanpast) en in quarantaine geplaatst na de eerste lus in het systeem.
+Bijvoorbeeld, heeft een e-mailadres terugkoppelen &quot;550 Gebruiker Onbekend&quot;die door ISP wordt verzonden. Deze foutcode wordt verwerkt door het Adobe Campaign-foutadres (Retournpath-adres). Deze fout wordt dan vergeleken met de norm RegEx en de juiste regel zal van toepassing zijn. E-mail wordt beschouwd als a *Vaste stuit* (aanpassend het type) en dan *Onbekende Gebruiker* (aanpassend de reden) en in quarantaine na de eerste lijn in het systeem geduwd.
 
 ### Hoe beheert Adobe Campaign het?
 
 Adobe Campaign beheert dit proces met een overeenkomst tussen een fouttype en een reden:
 
-* **[!UICONTROL User Unknown]**: Adres dat syntactisch correct is maar niet bestaat. Deze fout wordt gecategoriseerd als harde stuit en in quarantaine binnen de eerste fout geduwd.
-* **[!UICONTROL Mailbox full]**: Brievenbus die de maximale capaciteit heeft bereikt. Deze fout kan ook erop wijzen dat de gebruiker deze brievenbus niet meer gebruikt. Deze fout wordt gecategoriseerd als een zachte stuit en in quarantaine gezet binnen de derde fout en na een periode van 30 dagen verwijderd uit de quarantaine.
+* **[!UICONTROL User Unknown]**: adres dat syntactisch correct is maar niet bestaat. Deze fout wordt gecategoriseerd als harde stuit en in quarantaine binnen de eerste fout geduwd.
+* **[!UICONTROL Mailbox full]**: postbus die de maximale capaciteit heeft bereikt. Deze fout kan ook erop wijzen dat de gebruiker deze brievenbus niet meer gebruikt. Deze fout wordt gecategoriseerd als een zachte stuit en in quarantaine gezet binnen de derde fout en na een periode van 30 dagen verwijderd uit de quarantaine.
 * **[!UICONTROL Inactive User]**: De brievenbus is gedeactiveerd door ISP toe te schrijven aan een inactieve gebruiker in de laatste 6 maanden. Deze fout wordt gecategoriseerd als zachte stuit en in quarantaine binnen de derde fout.
 * **[!UICONTROL Invalid domain]**: Het domein in het e-mailadres bestaat niet. Deze fout wordt gecategoriseerd als zachte stuit en in quarantaine binnen de derde fout.
 * **[!UICONTROL Refused]**: ISP weigerde om e-mail aan zijn gebruikers te leveren. Deze fout wordt gecategoriseerd als zachte stuit en niet in quarantaine geduwd aangezien de fout niet met het e-mailadres maar IP of/een domeinreputatie verbonden is.
 
 >[!NOTE]
 >
->Om meer over de types en de redenen van de leveringsmislukking te leren, verwijs naar dit [sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Meer over de types en de redenen van de leveringsmislukking leren, verwijs naar deze [ sectie ](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 ## Leverbaarheid-instantie {#deliveratbility-env}
 
@@ -80,15 +80,15 @@ De modus Aangepast is voor geavanceerde clients die hun eigen MX-regels willen i
 
 ## Voorbeelden van stuit
 
-* **Gebruiker onbekend** (harde stuit): 550 5.1.1 ... Gebruiker is onbekend {mx003}
-* **Postbus vol** (soft bounce): gebruikersquota van 550 5.2.2 overschreden
-* **Inactieve postbus** (soft bounce): 550 5.7.1 : Ontvangen geadresseerde adres: Inactive MailBox, niet langer dan 6 maanden opgevuld
-* **Domein ongeldig** (soft bounce): DNS-query is mislukt voor &#39;ourdan.com&#39;
-* **Geweigerd** (soft bounce): Inbound email bounce (rule &#39;Feedback_loop_Hotmail&#39; has match this bounce)
-* **Onbereikbaar** (zachte stuit): 421 4.16.55 [TS01] Berichten van x.x.x.x tijdelijk uitgesteld wegens bovenmatige gebruikersklachten
+* **Onbekende Gebruiker** (harde stuit): 550 5.1.1.. Gebruiker is onbekend {mx003}
+* **Volledige Brievenbus** (zachte stuit): Het quotum van de Gebruiker van 5.2.2 van 550 overschreden
+* **Inactieve Brievenbus** (zachte stuit): 550 5.7.1: Ontworpen Ontvangen Ontvangeradres: Inactieve MailBox, niet voor meer dan 6 maanden
+* **ongeldig Domein** (zachte stuit): DNS vraag ontbrak voor &quot;ourdan.com&quot;
+* **Geweigerd** (zachte stuiter): Binnenkomende e-mailstuit (de regel &quot;Feedback_loop_Hotmail&quot;heeft deze stuit aangepast)
+* **Onbereikbaar** (zachte stuit): 421 4.16.55 [ TS01 ] Berichten van x.x.x.x tijdelijk uitgesteld wegens bovenmatige gebruikersklachten
 
 **Verwante onderwerpen:**
 * [MX-configuratie](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische e-mailconfiguratie](../../installation/using/email-deliverability.md)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Technische Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=nl-NL)
+* [Leveringsfouten begrijpen](../../delivery/using/delivery-failures-quarantine.md)
+* [ Campaign Classic - Technische Aanbevelingen ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

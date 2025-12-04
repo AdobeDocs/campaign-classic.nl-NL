@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 1%
@@ -28,15 +28,15 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 
 * BCC-functionaliteit voor e-mail is optioneel. Controleer hiervoor uw licentieovereenkomst.
 * Voor **ontvangen en hybride architecturen**, contacteer uw accountmanager om het te activeren. Het BCC e-mailadres van uw keuze moet worden opgegeven aan het Adobe-team dat het voor u zal configureren.
-* Voor **op-gebouw installaties**, volg de hieronder richtlijnen om het te activeren - zie [&#x200B; het Activeren e-mail BCC (op gebouw) &#x200B;](#activating-email-archiving--on-premise-) en [&#x200B; het Vormen van het BCC e-mailadres (op gebouw) &#x200B;](#configuring-the-bcc-email-address--on-premise-) secties.
+* Voor **op-gebouw installaties**, volg de hieronder richtlijnen om het te activeren - zie [ het Activeren e-mail BCC (op gebouw) ](#activating-email-archiving--on-premise-) en [ het Vormen van het BCC e-mailadres (op gebouw) ](#configuring-the-bcc-email-address--on-premise-) secties.
 * U kunt slechts één BCC-e-mailadres gebruiken.
-* Nadat e-mail-BCC is geconfigureerd, controleert u of de functie is ingeschakeld in de leveringssjabloon of in de levering via de optie **[!UICONTROL Email BCC]** . verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
+* Nadat e-mail-BCC is geconfigureerd, controleert u of de functie is ingeschakeld in de leveringssjabloon of in de levering via de optie **[!UICONTROL Email BCC]** . verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 * Er wordt alleen rekening gehouden met e-mailberichten die zijn verzonden. Overschrijdingen worden niet meegeteld.
-* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Voor meer op dit, zie [&#x200B; Bewegend aan de nieuwe E-mailBCC &#x200B;](#updated-email-archiving-system--bcc-) sectie.
+* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Voor meer op dit, zie [ Bewegend aan de nieuwe E-mailBCC ](#updated-email-archiving-system--bcc-) sectie.
 
 ## BCC via e-mail activeren (op locatie) {#activating-email-archiving--on-premise-}
 
-[!BADGE &#x200B; Op-gebouw &amp; Hybrid &#x200B;]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 
 Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
@@ -100,14 +100,14 @@ Zodra de lokale omslagweg wordt bepaald, voeg en geef de volgende elementen zoal
 * **expirationDelay**: aantal dagen .eml- dossiers worden bewaard voor archivering. Na die vertraging, worden zij automatisch verplaatst naar de **dataLogPath/archives** omslag voor compressie. .eml-bestanden verlopen standaard na twee dagen.
 * **purgeArchivesDelay**: aantal dagarchieven worden gehouden in de **dataLogPath/`<archives>`** omslag. Na die periode worden zij definitief geschrapt. De zuivering begint wanneer MTA wordt begonnen. Standaard wordt het elke zeven dagen uitgevoerd.
 * **pollDelay**: het controleren van frequentie (in seconden) voor nieuwe inkomende verzonden e-mails aan de **dataLogPath** omslag. Bijvoorbeeld, als deze parameter aan 60 wordt geplaatst, betekent het dat elke minuut, het archiveringsproces door de .eml dossiers binnen de **dataLogPath/`<date and time>`** omslagen gaat, een zuivering indien nodig toepast en e-mailexemplaren naar het adres BCC verzendt en/of de gearchiveerde dossiers wanneer nodig comprimeert.
-* **verwervingLimit**: aantal.eml- dossiers die onmiddellijk worden verwerkt alvorens het archiveringsproces opnieuw volgens de **pollDelay** parameter wordt toegepast. Bijvoorbeeld, als u de **parameter 0&rbrace; verwervingLimit &lbrace;aan 100 plaatst terwijl de** pollDelay **parameter aan 60 wordt geplaatst, zullen 100.eml- dossiers per minuut worden verwerkt.**
+* **verwervingLimit**: aantal.eml- dossiers die onmiddellijk worden verwerkt alvorens het archiveringsproces opnieuw volgens de **pollDelay** parameter wordt toegepast. Bijvoorbeeld, als u de **parameter 0} verwervingLimit {aan 100 plaatst terwijl de** pollDelay **parameter aan 60 wordt geplaatst, zullen 100.eml- dossiers per minuut worden verwerkt.**
 * **smtpNbConnection**: aantal verbindingen SMTP aan het BCC e-mailadres.
 
-Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bijvoorbeeld, in een configuratie waar MTA 30.000 e-mails per uur verzendt, kunt u de **parameter 0&rbrace; pollDelay aan 600 plaatsen, de** verwervingLimit **parameter aan 5000 en de** smtpNbConnection **parameter aan 2.** Het betekent dat met 2 verbindingen SMTP, 5.000 e-mails naar het adres BCC om de 10 minuten zullen worden verzonden.
+Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bijvoorbeeld, in een configuratie waar MTA 30.000 e-mails per uur verzendt, kunt u de **parameter 0} pollDelay aan 600 plaatsen, de** verwervingLimit **parameter aan 5000 en de** smtpNbConnection **parameter aan 2.** Het betekent dat met 2 verbindingen SMTP, 5.000 e-mails naar het adres BCC om de 10 minuten zullen worden verzonden.
 
 ## Het BCC-e-mailadres configureren (op locatie) {#configuring-the-bcc-email-address--on-premise-}
 
-[!BADGE &#x200B; Op-gebouw &amp; Hybrid &#x200B;]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
+[!BADGE  Op-gebouw &amp; Hybrid ]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl" tooltip="Alleen van toepassing op on-premise en hybride implementaties"}
 
 
 >[!IMPORTANT]
@@ -134,7 +134,7 @@ In het **config-`<instance name>.xml`** dossier, gebruik de volgende parameters 
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=nl-NL" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -184,6 +184,6 @@ Consequently, make sure:
 
 ### Limitations
 
-* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/delivery-failures-quarantine.md).
 
 * There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

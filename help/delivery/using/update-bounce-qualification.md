@@ -5,7 +5,7 @@ description: Leer hoe u de stuiterende kwalificatie bijwerkt na een Apple 2021-s
 badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -22,11 +22,11 @@ Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
 
 >[!NOTE]
 >
->U kunt het Apple System Status Dashboard inschakelen [deze pagina](https://www.apple.com/support/systemstatus/).
+>U kunt het dashboard van de Status van het Systeem van Apple op [ deze pagina ](https://www.apple.com/support/systemstatus/) controleren.
 
 Als een internetprovider buiten beschouwing blijft, kunnen e-mails die via Campagne worden verzonden niet succesvol aan de ontvanger worden bezorgd: deze e-mails worden ten onrechte gemarkeerd als steunkleuren.
 
-Volgens de standaardlogica voor stuitverwerking heeft Adobe Campaign deze ontvangers automatisch aan de quarantainelijst toegevoegd met een **[!UICONTROL Status]** instellen van **[!UICONTROL Quarantine]**. Om dit te verbeteren, moet u uw quarantainetabel in Campagne bijwerken door deze ontvangers te vinden en te verwijderen, of hun te veranderen **[!UICONTROL Status]** tot **[!UICONTROL Valid]** zodat de nachtelijke schoonmaakworkflow ze verwijdert.
+Volgens de standaardlogica voor stuitverwerking heeft Adobe Campaign deze ontvangers automatisch toegevoegd aan de quarantainelijst met een **[!UICONTROL Status]** instelling van **[!UICONTROL Quarantine]** . U kunt dit corrigeren door uw quarantainetabel in Campagne bij te werken door deze ontvangers te zoeken en te verwijderen of door hun **[!UICONTROL Status]** in **[!UICONTROL Valid]** te wijzigen zodat deze tijdens de nachtelijke opschoonworkflow worden verwijderd.
 
 Om de ontvangers te vinden die door deze kwestie werden beïnvloed, of in het geval dat dit opnieuw met een andere ISP gebeurt, gelieve de instructies hieronder te zien.
 
@@ -40,21 +40,21 @@ Gebaseerd op het tijdkader van het incident, hieronder zijn de geadviseerde rich
 >
 >Deze datums/tijden zijn gebaseerd op de tijdzone van de Oost-Standard (EST). Pas de tijdzone van uw instantie aan.
 
-* Voor Campagne-instanties met SMTP-responsgegevens voor stuiteren in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor Campagne-instanties met SMTP-responsgegevens voor stuiteren in het veld **[!UICONTROL Error text]** van de quarantainelijst:
 
-   * **Fouttekst (quarantainetekst)** bevat &quot;user lookup success but no user record found&quot; EN **Fouttekst (quarantainetekst)** bevat &quot;support.apple.com&quot;
-   * **Status bijwerken (@lastModified)** 26-04-2021 07:00:00
-   * **Status bijwerken (@lastModified)** 26-04-2021 01:00:22:00
+   * **Tekst van de Fout (quarantainetekst)** bevat &quot;gebruikersraadplegingssucces maar geen gevonden gebruikersverslag&quot;EN **Tekst van de Fout (quarantainetekst)** bevat &quot;support.apple.com&quot;
+   * **status van de Update (@lastModified)** op of na 4/26/2021 07 :00: 00 AM
+   * **status van de Update (@lastModified)** op of vóór 4/26/2021 01 :00: 00 PM
 
-* Voor campagneinstanties met de informatie over de binnenkomende e-mailregel in het dialoogvenster **[!UICONTROL Error text]** veld van de quarantainelijst:
+* Voor campagneinstanties met informatie over de regel Inbound Email in het veld **[!UICONTROL Error text]** van de quarantainelijst:
 
-   * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-maildomein (@domein)** gelijk aan icloud.com OR **E-maildomein (@domein)** gelijk aan me.com OR **E-maildomein (@domein)** is gelijk aan mac.com
-   * **Status bijwerken (@lastModified)** 26-04-2021 07:00:00
-   * **Status bijwerken (@lastModified)** 26-04-2021 01:00:22:00
+   * **tekst van de Fout (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
+   * **E-maildomein (@domein)** is gelijk aan icloud.com OF **E-maildomein (@domein)** gelijk aan me.com OF **E-maildomein (@domein)** gelijk aan mac.com
+   * **status van de Update (@lastModified)** op of na 4/26/2021 07 :00: 00 AM
+   * **status van de Update (@lastModified)** op of vóór 4/26/2021 01 :00: 00 PM
 
-Als u de lijst met betrokken ontvangers hebt, kunt u deze instellen op de status **[!UICONTROL Valid]** zodat zij uit de quarantainelijst worden verwijderd door **[!UICONTROL Database cleanup]** of deze uit de tabel verwijderen.
+Als u de lijst met betrokken ontvangers hebt, kunt u ze instellen op de status **[!UICONTROL Valid]** zodat ze via de **[!UICONTROL Database cleanup]** -workflow uit de quarantainelijst worden verwijderd of gewoon uit de tabel verwijderen.
 
 **Verwante onderwerpen:**
-* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
-* [Bounce mail-kwalificatie](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Leveringsfouten begrijpen](delivery-failures-quarantine.md)
+* [Bounce mail-kwalificatie](delivery-failures-quarantine.md#bounce-mail-qualification)
