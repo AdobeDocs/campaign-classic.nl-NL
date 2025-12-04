@@ -7,10 +7,10 @@ user-guide-title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2692'
+ht-degree: 99%
 
 ---
 
@@ -40,17 +40,8 @@ ht-degree: 100%
    + [Campaign-connectoren](platform/using/about-connectors.md)
    + [Query’s maken in Campaign](platform/using/about-queries-in-campaign.md)
    + Veelgestelde vragen {#faq}
-      + [Populaire vragen](platform/using/common-questions.md)
-      + [Algemene concepten](platform/using/faq-key-concepts.md)
+      + [Veelgestelde vragen over Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Buildupgrade](platform/using/faq-build-upgrade.md)
-      + [Privacy](platform/using/privacy-faq.md)
-      + [Doelgroepen](platform/using/faq-audiences.md)
-      + [Berichten ontwerpen](platform/using/faq-designing.md)
-      + [Berichten verzenden](platform/using/faq-messages.md)
-      + [Workflows](platform/using/faq-workflows.md)
-      + [Configuratie](platform/using/faq-campaign-config.md)
-      + [Rapporten](platform/using/faq-reporting.md)
-      + [Ontwikkeling](platform/using/faq-developers.md)
    + [Verklarende woordenlijst](platform/using/ac-glossary.md)
    + Privacy {#privacy}
       + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
@@ -120,7 +111,6 @@ ht-degree: 100%
       + [Gepersonaliseerde content maken - VERBORGEN](delivery/using/design-and-personalize.md)
       + [De juiste doelgroep definiëren - VERBORGEN](delivery/using/define-the-right-audience.md)
       + [Controleren vóór verzending - VERBORGEN](delivery/using/check-before-sending.md)
-      + [Bijhouden en bewaken - VERBORGEN](delivery/using/track-and-monitor.md)
    + [E-mails verzenden](delivery/using/about-email-channel.md)
    + E-mails verzenden {#sending-emails}
       + [Een e-maillevering maken - VERBORGEN](delivery/using/creating-an-email-delivery.md)
@@ -197,28 +187,15 @@ ht-degree: 100%
       + [Viral en social marketing](delivery/using/viral-and-social-marketing.md)
    + Verzendingen controleren {#monitoring-deliveries}
       + [Aan de slag met verzendingscontrole](delivery/using/about-delivery-monitoring.md)
-      + [De lijst met verzendingen openen](delivery/using/list-of-deliveries.md)
-      + [Leveringsdashboard](delivery/using/delivery-dashboard.md)
+      + [Bewaking van uw leveringen in de interface van de campagne](delivery/using/delivery-dashboard.md)
       + [Best practices voor leveringen](delivery/using/delivery-performances.md)
       + [Problemen met een levering oplossen](delivery/using/delivery-troubleshooting.md)
-      + [Leveringsstatussen](delivery/using/delivery-statuses.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
       + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
-      + Berichten bijhouden {#tracking-messages}
-         + [Berichttracking](delivery/using/about-message-tracking.md)
-         + [Bijgehouden koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
-      + Gepersonaliseerde koppelingen bijhouden {#tracking-personalized-links}
-         + [Aan de slag met de tracking van gepersonaliseerde koppelingen](delivery/using/tracking-personalized-links.md)
-         + [Tracking-URL&#39;s detecteren](delivery/using/detecting-tracking-urls.md)
-         + [Voorverwerkingsinstructies voor tracking](delivery/using/pre-processing-instructions.md)
-      + [Opties voor URL-tracking configureren](delivery/using/personalizing-url-tracking.md)
-      + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
-      + [Tracking testen](delivery/using/testing-tracking.md)
-      + [Problemen met tracking oplossen](delivery/using/tracking-troubleshooting.md)
+      + [Berichten tracken](delivery/using/about-message-tracking.md)
    + Leverbaarheidsbeheer {#deliverability-management}
       + [Wat is afleverbaarheid?](delivery/using/about-deliverability.md)
       + [Content van controleberichten](delivery/using/control-message-content.md)
-      + [Afleverbaarheid controleren](delivery/using/monitoring-deliverability.md)
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
@@ -639,7 +616,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

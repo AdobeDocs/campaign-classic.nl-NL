@@ -6,10 +6,10 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 61%
+source-wordcount: '631'
+ht-degree: 62%
 
 ---
 
@@ -33,28 +33,22 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
 
 ### Veelgestelde vragen
 
-Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de workflow worden gecontroleerd? wat is het werkschema van de gegevensbestandschoonmaak?.. [&#x200B; las uit hoogste 10 vragen &#x200B;](platform/using/common-questions.md).
-
 <table>
     <tr><td><strong>Onderwerpen van Vragen en antwoorden</strong></td><td><strong>Veelvoorkomende problemen</strong></td><td><strong>Best practices</strong></td><td><strong>Instructies</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">Belangrijkste concepten</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Campagne-instellingen</a></li>
-        <li><a href="platform/using/faq-reporting.md">Rapportage</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Veelgestelde vragen over Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Buildupgrade</a></li>
-        <li><a href="platform/using/faq-messages.md">Berichten testen, verzenden en volgen</a></li>
-        <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
-        <li><a href="platform/using/faq-developers.md">Ontwikkelaars</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">Afleverbaarheid</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Uitgebreide veelgestelde vragen over campagne v8</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Afleveringscontrole</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemen met prestaties en doorvoer</a></li>
         <li><a href="delivery/using/delivery-performances.md">Leveringsprestaties</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Workflowprestaties optimaliseren</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Workflowprestaties optimaliseren</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Leveringsfouten begrijpen</a></li>
@@ -62,14 +56,14 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Technische werkstroomcontrole</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Trackingbeheer begrijpen</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Controlemiddelen detecteren</a></li>
         <li><a href="platform/using/import-export-workflows.md">Gegevens importeren met workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Berichten verzenden in meerdere golven</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">E-mailinhoud ontwerpen</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL" target="_blank">Best practices voor leveringen</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practices voor leveringen</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -101,7 +95,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [&#x200B; bouwt GA &#x200B;](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [ bouwt GA ](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -109,11 +103,11 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### Veelgestelde vragen over configuratiescherm
 
-[Klik hier &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
+[Klik hier ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -125,27 +119,27 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het Configuratiescherm kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL) toe om tot uw instantie(s) van de Campagne toegang te hebben
-* [&#x200B; beheer URL toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=nl-NL)
-* [&#x200B; beheert GPG sleutels voor gegevensencryptie &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
+* [ voegt IPs op de lijst van gewenste personen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [ beheer URL toestemmingen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
+* [ de instantiedetails van de Toegang ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [ beheert GPG sleutels voor gegevensencryptie ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Het nieuwe ticketing systeem is gelanceerd door [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
+Het nieuwe ticketing systeem is gelanceerd door [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [&#x200B; sluit zich aan bij het gesprek &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [ sluit zich aan bij het gesprek ](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Downloadcentrum voor campagne openen
 
-Als Beheerder van de Campagne, doorblader aan [&#x200B; deze pagina &#x200B;](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
+Als Beheerder van de Campagne, doorblader aan [ deze pagina ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
 
 ### Een ticket maken of een chat starten
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.
+Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.

@@ -2,55 +2,61 @@
 product: campaign
 title: Best practices voor leveringen
 description: Meer informatie over leveringsprestaties en aanbevolen procedures
-badge-v8: label="Ook van toepassing op v8" type="Positive" tooltip="Ook van toepassing op campagne v8"
 feature: Deliverability
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 5%
+source-wordcount: '362'
+ht-degree: 3%
 
 ---
 
 # Best practices voor leveringen {#delivery-performances}
 
-We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw leveringen goed functioneren en dat de prestaties worden gecontroleerd als er problemen met leveringen optreden.
+>[!NOTE]
+>
+>De uitvoerige begeleiding op leveringsprestaties en beste praktijken wordt gedocumenteerd in de [ pagina van de Beste praktijken van de Lading van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices). Deze inhoud is van toepassing op gebruikers van Campaign Classic v7 en Campagne v8.
+>
+>Deze pagina documenteert **Campaign Classic v7-specifieke prestatiesconfiguraties** voor hybride en op-gebouw plaatsingen.
 
-**Verwante onderwerpen:**
+Voor uitvoerige beste praktijken op leveringsprestaties, platformoptimalisering, quarantainebeheer, gegevensbestandonderhoud, en het plannen van aanbevelingen, verwijs naar de [ documentatie van de beste praktijken van de Bevordering van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
-* [Leveringsdashboard](delivery-dashboard.md)
-* [Problemen met een levering oplossen](delivery-troubleshooting.md)
-* [Informatie over leverbaarheid](about-deliverability.md)
+## Prestaties afstemmen {#best-practices-performance}
 
-## Aanbevolen werkwijzen voor prestaties {#best-practices-performance}
+Voor **de hybride/op-gebouw plaatsingen van Campaign Classic v7**, kunnen de volgende gegevensbestand en infrastructuuroptimalisaties leveringsprestaties verbeteren:
 
-* Bewaar de levering niet in mislukte staat, aangezien dit tijdelijke lijsten handhaaft en de prestaties beïnvloedt.
+### Databaseoptimalisatie
 
-* Leveringen verwijderen die niet meer nodig zijn.
+**de adressen van de Index** om de prestaties van SQL vragen te optimaliseren die in de toepassing worden gebruikt. Een index kan van het belangrijkste element van het gegevensschema worden verklaard. Deze optimalisering vereist directe gegevensbestandtoegang en schemaaanpassing beschikbaar in plaatsingen op-gebouw.
 
-* Inactieve ontvangers in de laatste 12 maanden die uit het gegevensbestand moeten worden verwijderd om adreskwaliteit te handhaven.
+### Afstelling van infrastructuur
 
-* Probeer geen grote leveringen samen te plannen. Er is een tussenruimte van 5-10 minuten om de belasting gelijkmatig over het systeem te spreiden. Coördineer het plannen van leveringen met de andere leden van uw team om de beste prestaties te verzekeren. Wanneer de marketingserver meerdere taken tegelijk uitvoert, kan dit de prestaties vertragen.
-
-* Houd je e-mailadres zo klein mogelijk. De aanbevolen maximale grootte van een e-mailbericht is ongeveer 35 kB. De grootte van een e-maillevering genereert een bepaalde hoeveelheid volume in de verzendende servers.
-
-* De grote leveringen, zoals leveringen aan meer dan één miljoen ontvangers, hebben ruimte in de verzendende rijen nodig. Dit is op zich geen probleem voor de server, maar in combinatie met tientallen andere grote leveringen die allemaal tegelijk worden uitgevoerd, kan er een vertraging bij het verzenden ontstaan.
-
-* Personalization in e-mailberichten haalt gegevens uit de database voor elke ontvanger. Als er vele verpersoonlijkingselementen zijn, verhoogt dat de hoeveelheid gegevens nodig om de levering voor te bereiden.
-
-* Indexadressen. Om de prestaties van de SQL vragen te optimaliseren die in de toepassing worden gebruikt, kan een index van het belangrijkste element van het gegevensschema worden verklaard.
+**Grote leveringsconfiguratie**: Leveringen aan meer dan één miljoen ontvangers vereisen ruimte in de verzendende rijen. Voor installaties op locatie, kunnen de kinderen MTA worden gevormd om de grootte van de douanepartij te behandelen. Neem contact op met de systeembeheerder om deze instellingen aan te passen op basis van de capaciteit van uw infrastructuur.
 
 >[!NOTE]
 >
->ISPs zou adressen na een periode van inactiviteit deactiveren. De berichten van de vlag worden verzonden naar afzenders om hen over deze nieuwe status te informeren.
+>Voor gebruikers van de Beheerde Cloud Services van Campagne v8 worden de optimalisatie van de infrastructuur en de MTA-configuratie beheerd door Adobe. Verwijs naar de [ beste praktijken van de Levering van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} voor prestatiesaanbevelingen van toepassing op uw plaatsing.
 
-## Checklist voor prestatieproblemen {#performance-issues}
+## Databaseonderhoud {#performance-issues}
 
-Als de leveringsprestaties slecht zijn, kunt u controleren:
+Voor **Campaign Classic v7 hybride/op-gebouw plaatsingen**, platform en gegevensbestandonderhoud beïnvloedt direct levering verzendende prestaties.
 
-* **de grootte van de levering**: De grote leveringen kunnen langer duren om te voltooien. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
-* **het doel van de levering**: Het verbod van de uitvoeringen van de levering wordt beïnvloed door zachte stuiteringsfouten, die volgens de retry configuratie worden behandeld. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **de algemene platformlading**: Wanneer verscheidene grote leveringen worden verzonden, kan het algemene platform worden beïnvloed. U kunt IP reputatie en leveringsproblemen ook controleren. Voor meer op dit, verwijs naar [&#x200B; deze sectie &#x200B;](about-deliverability.md) en naar de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl).
+Regelmatige onderhoudstaken omvatten:
 
-Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.
+**Schoonmaak van het Gegevensbestand**: Gebruik het gegevensbestand schoonmaakbeurt werkschema om oude leveringslogboeken, het volgen gegevens, en tijdelijke lijsten te verwijderen. Het slechte gegevensbestandonderhoud kan leveringsvoorbereiding en het verzenden vertragen.
+
+**prestaties van het Gegevensbestand controle**: De prestaties van de vraagcontrole van de monitor, indexfragmentatie, en lijststatistieken. Voor gedetailleerde begeleiding, verwijs naar [ deze pagina ](../../production/using/database-performances.md).
+
+**Technische werkschemacontrole**: Zorg alle technische werkschema&#39;s (vooral schoonmaak, het volgen, en de werkschema&#39;s van de leveringsupdate) correct zonder fouten lopen.
+
+>[!NOTE]
+>
+>Voor gebruikers van Campagne v8 Managed Cloud Services worden het onderhoud van databases en de technische workflows gecontroleerd en beheerd door Adobe. De nadruk op levering-specifieke controle zoals die in de [ documentatie van de leveringen van de Monitor v8 van de Campagne wordt beschreven ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
+
+## Verwante onderwerpen
+
+* [ beste praktijken van de Levering ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
+* [ monitor uw leverbaarheid ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"} (de documentatie van de Campagne v8)
+* [Problemen met een levering oplossen](delivery-troubleshooting.md)
+* [ prestaties van het Gegevensbestand ](../../production/using/database-performances.md) (v7 hybride/op-gebouw)
