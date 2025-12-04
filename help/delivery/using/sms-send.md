@@ -118,7 +118,7 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 >[!IMPORTANT]
 >
->De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Voor meer op dit, verwijs naar [ creeer een externe rekening SMPP ](sms-set-up.md#creating-an-smpp-external-account) sectie.
+>De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Voor meer op dit, verwijs naar [&#x200B; creeer een externe rekening SMPP &#x200B;](sms-set-up.md#creating-an-smpp-external-account) sectie.
 >
 >Het maakt deel uit van het certificeringsproces dat door Amerikaanse marktdeelnemers wordt uitgevoerd voor marketingcampagnes in de VS. Deze reacties op SMS-berichten van abonnees die het trefwoord bevatten, moeten onmiddellijk na ontvangst van een bericht van de abonnee worden teruggestuurd naar de abonnee.
 
@@ -167,4 +167,4 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 >
 >Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
->Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
+>Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
