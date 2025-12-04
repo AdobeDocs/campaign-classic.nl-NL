@@ -40,7 +40,7 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze sortering ka
 
 ## Transactionele berichtbewaking {#transactional-message-monitoring}
 
-Om uw transactionele berichten te controleren, controleer de [&#x200B; leveringslogboeken &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Om uw transactionele berichten te controleren, controleer de [&#x200B; leveringslogboeken &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 De transactionele leveringen die van de uitvoeringsinstantie worden verzonden worden gesynchroniseerd terug naar de controleinstantie door een technisch werkschema (**[!UICONTROL Message Center execution instance]**) dat elk uur in werking stelt.
 
