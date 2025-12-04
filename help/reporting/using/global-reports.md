@@ -52,7 +52,7 @@ U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: een w
 
 >[!NOTE]
 >
->Als uw instantie op AWS wordt ontvangen, kunt u het aantal leveringen ook controleren die per uur gebruikend het Campaign Classic [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html) worden verzonden. Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>Als uw instantie op AWS wordt ontvangen, kunt u het aantal leveringen ook controleren die per uur gebruikend het Campaign Classic [&#x200B; Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=nl-NL) worden verzonden. Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
