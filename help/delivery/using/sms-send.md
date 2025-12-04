@@ -167,4 +167,4 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 >
 >Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
->Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
+>Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=nl-NL){target="_blank"}.
