@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->De uitvoerige begeleiding op quarantainebeheer wordt gedocumenteerd in de [ het beheer van de Quarantaine v8 van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines) pagina. Deze inhoud is van toepassing op zowel Campaign Classic v7- als Campagne v8-gebruikers. Deze inhoud omvat:
+>De uitvoerige begeleiding op quarantainebeheer wordt gedocumenteerd in de [&#x200B; het beheer van de Quarantaine v8 van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines) pagina. Deze inhoud is van toepassing op zowel Campaign Classic v7- als Campagne v8-gebruikers. Deze inhoud omvat:
 >
 >* Concepten quarantaine en lijst van gewezen personen
 >* Waarom adressen naar quarantaine (hard/zachte fouten) worden verzonden
@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >Deze pagina documenteert **Campaign Classic v7-specifieke configuratie** voor quarantainebeheer in hybride en op-gebouw plaatsingen.
 
-Voor uitvoerige richtlijnen van het quarantainebeheer, verwijs naar de [ het beheersdocumentatie van de Campagne v8 Quarantine ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
+Voor uitvoerige richtlijnen van het quarantainebeheer, verwijs naar de [&#x200B; het beheersdocumentatie van de Campagne v8 Quarantine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
 
 ## Quarantaineconfiguratie {#v7-quarantine-config}
 
@@ -47,7 +47,7 @@ Deze instellingen configureren:
 
 Wanneer de foutenteller de drempel bereikt, is het adres quarantined. Als de laatste significante fout meer dan 10 dagen geleden voorkwam, wordt de foutenteller opnieuw geïnitialiseerd.
 
-Voor meer details, verwijs naar [ deze pagina ](communication-channels.md) onder **het verzenden van de Levering** > **vormen opnieuw probeert**.
+Voor meer details, verwijs naar [&#x200B; deze pagina &#x200B;](communication-channels.md) onder **het verzenden van de Levering** > **vormen opnieuw probeert**.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ De workflow verwijdert adressen uit quarantaine in de volgende gevallen:
 
 Zorg ervoor dat deze workflow regelmatig wordt uitgevoerd (aanbevolen: dagelijks) om de hygiëne van de quarantainelijst te handhaven.
 
-Voor meer op gegevensbestandschoonmaakbeurt, verwijs naar [ deze sectie ](../../production/using/database-cleanup-workflow.md).
+Voor meer op gegevensbestandschoonmaakbeurt, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/database-cleanup-workflow.md).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Voor Campaign Classic v7 volgen pushmeldingen het algemene quarantainemechanisme
 
 Voor **iOS** en **Android** dupberichten, gebruikt het quarantainemechanisme apparatentokens eerder dan e-mailadressen. Wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd, wordt het bijbehorende token in quarantaine geplaatst.
 
-Voor gedetailleerde informatie over de scenario&#39;s van de duw- bericht quarantaine (de foutentypes van iOS en van Android, retry gedrag, enz.), verwijs naar de [ Begrijpende documentatie van de leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die uitvoerige het type van de dupmeldingsfout lijsten omvat.
+Voor gedetailleerde informatie over de scenario&#39;s van de duw- bericht quarantaine (de foutentypes van iOS en van Android, retry gedrag, enz.), verwijs naar de [&#x200B; Begrijpende documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die uitvoerige het type van de dupmeldingsfout lijsten omvat.
 
 ### SMS-quarantainespecificaties {#sms-quarantine-specifics}
 
@@ -91,12 +91,12 @@ Het quarantainemechanisme van SMS varieert afhankelijk van de gebruikte schakela
 
 * **Uitgebreide generische schakelaar SMPP**: Het beheer van de fout wordt behandeld verschillend gebruikend regelmatige uitdrukkingen (regexes) om de berichten van het Rapport van de Status (SR) te ontleden die door de leverancier SMSC zijn teruggekeerd.
 
-Voor gedetailleerde informatie over de quarantainescenario&#39;s van SMS en foutentypes, verwijs naar [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} documentatie die uitvoerige de foutenentabellen van SMS omvat.
+Voor gedetailleerde informatie over de quarantainescenario&#39;s van SMS en foutentypes, verwijs naar [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} documentatie die uitvoerige de foutenentabellen van SMS omvat.
 
 ## Verwante onderwerpen
 
-* [ het beheer van de quarantaine ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
-* [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
-* [ beste praktijken van de Levering ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
-* [ het schoonmaakbeurtenwerkschema van het Gegevensbestand ](../../production/using/database-cleanup-workflow.md) (v7 hybride/op-gebouw)
-* [ vorm levering opnieuw probeert ](communication-channels.md) (v7 hybride/op-gebouw)
+* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; het schoonmaakbeurtenwerkschema van het Gegevensbestand &#x200B;](../../production/using/database-cleanup-workflow.md) (v7 hybride/op-gebouw)
+* [&#x200B; vorm levering opnieuw probeert &#x200B;](communication-channels.md) (v7 hybride/op-gebouw)

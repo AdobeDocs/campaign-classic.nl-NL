@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->De uitvoerige begeleiding bij het begrip van leveringsmislukkingen wordt gedocumenteerd in de [ Campagne v8 die leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures) pagina begrijpen. Deze inhoud is van toepassing op zowel Campaign Classic v7- als Campagne v8-gebruikers. Deze inhoud omvat:
+>De uitvoerige begeleiding bij het begrip van leveringsmislukkingen wordt gedocumenteerd in de [&#x200B; Campagne v8 die leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures) pagina begrijpen. Deze inhoud is van toepassing op zowel Campaign Classic v7- als Campagne v8-gebruikers. Deze inhoud omvat:
 >
 >* Typen en oorzaken van leveringsfouten (hard, zacht, genegeerd)
 >* Synchrone en asynchrone fouten
@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >Deze pagina documenteert **Campaign Classic v7-specifieke configuratie** voor stuit postbeheer in hybride en op-gebouw plaatsingen.
 
-Voor gemeenschappelijke concepten van de leveringsmislukking, foutentypes, en het oplossen van problemenbegeleiding, verwijs naar de [ Campagne v8 die de documentatie van de leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} begrijpen.
+Voor gemeenschappelijke concepten van de leveringsmislukking, foutentypes, en het oplossen van problemenbegeleiding, verwijs naar de [&#x200B; Campagne v8 die de documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} begrijpen.
 
 ## Bounce mail-configuratie {#v7-bounce-mail-config}
 
@@ -35,7 +35,7 @@ De volgende configuratieopties zijn beschikbaar voor **de hybride/op-gebouw plaa
 
 ### Vorm van postvak stuiteren {#bounce-mailbox-configuration}
 
-Voor installaties op-gebouw, is de configuratie van de stuiterende brievenbus gedetailleerd in [ deze sectie ](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
+Voor installaties op-gebouw, is de configuratie van de stuiterende brievenbus gedetailleerd in [&#x200B; deze sectie &#x200B;](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
 De asynchrone foutenmeldingen worden verzameld door het platform van Adobe Campaign door de stuiterende brievenbus en door het inMail proces gekwalificeerd om de lijst van e-mailbeheerregels te verrijken.
 
@@ -83,7 +83,7 @@ E-mailregels zijn toegankelijk via het knooppunt **[!UICONTROL Administration > 
 
 >[!NOTE]
 >
->De standaardparameters van het platform worden gevormd in de plaatsingstovenaar. Voor verdere informatie, verwijs naar [ deze sectie ](../../installation/using/deploying-an-instance.md).
+>De standaardparameters van het platform worden gevormd in de plaatsingstovenaar. Voor verdere informatie, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/deploying-an-instance.md).
 
 De standaardregels zijn als volgt:
 
@@ -102,7 +102,7 @@ Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht
 >
 >De gebruiker kan zijn eigen regels tot stand brengen. Wanneer het invoeren van een pakket en wanneer het bijwerken van gegevens via **verfrissen zich voor leverability** werkschema, worden de user-created regels beschreven.
 
-Voor meer op de kwalificatie van de stuiterende post, verwijs naar [ deze sectie ](#bounce-mail-qualification-management).
+Voor meer op de kwalificatie van de stuiterende post, verwijs naar [&#x200B; deze sectie &#x200B;](#bounce-mail-qualification-management).
 
 #### Domeinbeheer {#domain-management}
 
@@ -113,7 +113,7 @@ Voor op-gebouw installaties, past MTA één enkele **het beheersregel van het Do
 * U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals **identiteitskaart van de Afzender**, **DomainKeys**, **DKIM**, en **S/MIME** te controleren.
 * De **SMTP relais** parameters laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay) voor meer informatie.
 
-Als uw berichten **[!UICONTROL on behalf of]** in het afzenderadres tonen, zorg ervoor niet om e-mails met **identiteitskaart van de Afzender** te ondertekenen, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie wordt toegelaten, uncheck de overeenkomstige doos en contacteer [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
+Als uw berichten **[!UICONTROL on behalf of]** in het afzenderadres tonen, zorg ervoor niet om e-mails met **identiteitskaart van de Afzender** te ondertekenen, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie wordt toegelaten, uncheck de overeenkomstige doos en contacteer [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
 
 #### MX-beheer {#mx-management}
 
@@ -129,9 +129,9 @@ Deze regels zijn beschikbaar in de plaatsingstovenaar en kunnen worden aangepast
 
 * **[!UICONTROL Limit]**: het maximale aantal berichten dat per tijdsperiode is toegestaan.
 
-* **[!UICONTROL Type]**: het fouttype (hard, zacht of genegeerd) dat wordt gebruikt om het verzendgedrag te bepalen. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} voor foutentype definities.
+* **[!UICONTROL Type]**: het fouttype (hard, zacht of genegeerd) dat wordt gebruikt om het verzendgedrag te bepalen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} voor foutentype definities.
 
-Voor meer op MX beheer, verwijs naar [ deze sectie ](../../installation/using/email-deliverability.md#about-mx-rules).
+Voor meer op MX beheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#about-mx-rules).
 
 >[!NOTE]
 >
@@ -139,10 +139,10 @@ Voor meer op MX beheer, verwijs naar [ deze sectie ](../../installation/using/em
 
 ## Verwante onderwerpen
 
-* [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
-* [ leveringsstatussen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
-* [ het beheer van de quarantaine ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
-* [ de configuratie van de quarantaine ](understanding-quarantine-management.md) (v7 hybride/op-gebouw)
-* [ stuitkwalificatie van de update ](update-bounce-qualification.md) (v7 hybride/op-gebouw)
-* [ de configuratie van de E-maillevering ](../../installation/using/email-deliverability.md) (v7 hybride/op-gebouw)
-* [ die een instantie ](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 hybride/op-gebouw) opstelt
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; de configuratie van de quarantaine &#x200B;](understanding-quarantine-management.md) (v7 hybride/op-gebouw)
+* [&#x200B; stuitkwalificatie van de update &#x200B;](update-bounce-qualification.md) (v7 hybride/op-gebouw)
+* [&#x200B; de configuratie van de E-maillevering &#x200B;](../../installation/using/email-deliverability.md) (v7 hybride/op-gebouw)
+* [&#x200B; die een instantie &#x200B;](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 hybride/op-gebouw) opstelt

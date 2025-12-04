@@ -18,9 +18,9 @@ ht-degree: 1%
 >
 >Uitgebreide instructies voor het oplossen van problemen met de levering worden beschreven in de documentatie bij Campagne v8, die van toepassing is op zowel Campaign Classic v7- als Campagne v8-gebruikers:
 >
->* Gemeenschappelijke leveringsmislukkingen en oplossingen: [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Trage leveringsdiagnose: [ leveringen van de Monitor in Campagne UI ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
->* De beste praktijken van de levering: [ Beste praktijken van de Levering ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>* Gemeenschappelijke leveringsmislukkingen en oplossingen: [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Trage leveringsdiagnose: [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* De beste praktijken van de levering: [&#x200B; Beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >Deze pagina documenteert **het v7-specifieke oplossen van problemen van Campaign Classic** voor hybride en op-gebouw plaatsingen.
 
@@ -30,7 +30,7 @@ Voor **de hybride/op-gebouw plaatsingen van Campaign Classic v7**, zijn de volge
 
 ### Configuratie van MX-regels
 
-Als u throttling kwesties met specifieke ISPs ervaart, kunt u uw MX regelconfiguratie moeten herzien en aanpassen. Voor meer informatie over MX regels en quota, verwijs naar [ deze sectie ](../../installation/using/email-deliverability.md#about-mx-rules).
+Als u throttling kwesties met specifieke ISPs ervaart, kunt u uw MX regelconfiguratie moeten herzien en aanpassen. Voor meer informatie over MX regels en quota, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#about-mx-rules).
 
 ### Databaseonderhoud voor prestaties van levering
 
@@ -42,7 +42,7 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 De oorzaak is gekoppeld aan prestatieproblemen waarbij de marketinginstantie te veel tijd besteedt aan het samenstellen van gegevens voordat deze naar de server voor midsourcing worden verzonden.
 
-**voor op-gebouw installaties**, voer vacuüm en herdex op het gegevensbestand uit. Voor meer informatie over gegevensbestandonderhoud, verwijs naar [ deze sectie ](../../production/using/recommendations.md).
+**voor op-gebouw installaties**, voer vacuüm en herdex op het gegevensbestand uit. Voor meer informatie over gegevensbestandonderhoud, verwijs naar [&#x200B; deze sectie &#x200B;](../../production/using/recommendations.md).
 
 U moet ook alle werkstromen met een geplande activiteit opnieuw beginnen, en alle werkschema&#39;s in ontbroken status. Zie [deze sectie](../../workflow/using/scheduler.md).
 
@@ -60,12 +60,12 @@ Controleer de workflowstatus in **[!UICONTROL Administration]** > **[!UICONTROL 
 
 >[!NOTE]
 >
->Voor gebruikers van Campagne v8 Managed Cloud Services worden de technische workflows en de infrastructuurbewaking beheerd door Adobe. De nadruk op leveringsinhoud en het richten zoals die in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} wordt beschreven.
+>Voor gebruikers van Campagne v8 Managed Cloud Services worden de technische workflows en de infrastructuurbewaking beheerd door Adobe. De nadruk op leveringsinhoud en het richten zoals die in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} wordt beschreven.
 
 ## Verwante onderwerpen
 
-* [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
-* [ beste praktijken van de Levering ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
-* [ leveringen van de Monitor in Campagne UI ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
-* [ onderhoud van het Gegevensbestand ](../../production/using/recommendations.md) (v7 hybride/op-gebouw)
-* [ E-mailleverbaarheid ](../../installation/using/email-deliverability.md) (v7 hybride/op-gebouw)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; onderhoud van het Gegevensbestand &#x200B;](../../production/using/recommendations.md) (v7 hybride/op-gebouw)
+* [&#x200B; E-mailleverbaarheid &#x200B;](../../installation/using/email-deliverability.md) (v7 hybride/op-gebouw)

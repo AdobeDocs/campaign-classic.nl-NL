@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De uitvoerige begeleiding bij de toegang tot van de leveringslijst en het gebruiken van het leveringsdashboard wordt gedocumenteerd in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Deze inhoud is van toepassing op gebruikers van Campaign Classic v7 en Campagne v8.
+>De uitvoerige begeleiding bij de toegang tot van de leveringslijst en het gebruiken van het leveringsdashboard wordt gedocumenteerd in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Deze inhoud is van toepassing op gebruikers van Campaign Classic v7 en Campagne v8.
 >
 >Deze pagina documenteert **Campaign Classic v7-specifieke aanpassingen** voor hybride en op-gebouw plaatsingen.
 
 Het is van essentieel belang dat u uw leveringen controleert om ervoor te zorgen dat uw campagnes efficiënt zijn en uw klanten bereiken.
 
-Voor uitvoerige informatie bij de toegang tot van de leveringslijst, die de lusjes van het leveringsdashboard gebruiken, en uw leveringen controleren, verwijs naar de [ Bezorgingen van de Monitor van de Campagne v8 in de documentatie van UI van de Campagne ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Voor uitvoerige informatie bij de toegang tot van de leveringslijst, die de lusjes van het leveringsdashboard gebruiken, en uw leveringen controleren, verwijs naar de [&#x200B; Bezorgingen van de Monitor van de Campagne v8 in de documentatie van UI van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Leveringslogboeken aanpassen {#use-case}
 
@@ -40,7 +40,7 @@ Om **publicID** in uw leveringslogboeken toe te voegen moet u het schema eerst u
 
 1. Maak een schema-extensie onder **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]** .
 
-   Voor meer informatie over schemauitbreidingen, verwijs naar [ deze pagina ](../../configuration/using/extending-a-schema.md).
+   Voor meer informatie over schemauitbreidingen, verwijs naar [&#x200B; deze pagina &#x200B;](../../configuration/using/extending-a-schema.md).
 
 1. Selecteer **[!UICONTROL broadLogRcp]** om de Ontvanger leverlogboeken (nms) uit te breiden en een aangepaste Namespace te bepalen. In dit geval is het &quot;cus&quot;:
 
@@ -107,7 +107,7 @@ Om dit te doen, heb toegang tot de leveringslogboeken en voeg de &quot;IP herken
 
 >[!NOTE]
 >
->Leren hoe te om lijsten in de interface van Campaign Classic te vormen, verwijs naar [ deze pagina ](../../platform/using/adobe-campaign-workspace.md).
+>Leren hoe te om lijsten in de interface van Campaign Classic te vormen, verwijs naar [&#x200B; deze pagina &#x200B;](../../platform/using/adobe-campaign-workspace.md).
 
 Hieronder ziet u wat u na wijzigingen op het tabblad **[!UICONTROL Delivery]** moet zien:
 
@@ -115,9 +115,9 @@ Hieronder ziet u wat u na wijzigingen op het tabblad **[!UICONTROL Delivery]** m
 
 ## Verwante onderwerpen
 
-* [ leveringen van de Monitor in Campagne UI ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
-* [ leveringsstatussen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
-* [ Begrijpend leveringsmislukkingen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
-* [ het beheer van de quarantaine ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
-* [ Bounce postconfiguratie ](understanding-delivery-failures.md) (v7 hybride/op-gebouw)
-* [ de configuratie van de quarantaine ](understanding-quarantine-management.md) (v7 hybride/op-gebouw)
+* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
+* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
+* [&#x200B; Bounce postconfiguratie &#x200B;](understanding-delivery-failures.md) (v7 hybride/op-gebouw)
+* [&#x200B; de configuratie van de quarantaine &#x200B;](understanding-quarantine-management.md) (v7 hybride/op-gebouw)
