@@ -17,7 +17,7 @@ ht-degree: 1%
 
 In deze veelgestelde vragen wordt ingegaan op specifieke vragen met betrekking tot Adobe Campaign Classic v7-architectuur, implementatiemodellen en v7-specifieke functies.
 
-**voor uitvoerige antwoorden aan gemeenschappelijke vragen van de Campagne** (werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, enz.), gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}, die gedetailleerde antwoorden verstrekt die door onderwerp worden georganiseerd.
+**voor uitvoerige antwoorden aan gemeenschappelijke vragen van de Campagne** (werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, enz.), gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}, die gedetailleerde antwoorden verstrekt die door onderwerp worden georganiseerd.
 
 ## Campaign Classic v7-architectuur en -implementatie {#v7-architecture}
 
@@ -31,13 +31,13 @@ Adobe Campaign Classic v7 biedt drie implementatiemodellen:
 
 Elk implementatiemodel heeft verschillende mogelijkheden en beheerverantwoordelijkheden. De beschikbaarheid van modules, opties, en configuraties hangt van uw plaatsingstype af.
 
-[&#x200B; klik hier om meer &#x200B;](../../installation/using/hosting-models.md) over het ontvangen van modellen en hun verschillen te leren.
+[ klik hier om meer ](../../installation/using/hosting-models.md) over het ontvangen van modellen en hun verschillen te leren.
 
-**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [&#x200B; leer over Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}.
+**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [ leer over Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
 ### Wat zijn de verschillen wanneer het werken op-gebouw tegenover in een ontvangen milieu? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
-Adobe Campaign Classic v7 wordt geleverd met een aantal modules en opties. De beschikbaarheid van deze modules en hun configuratie hangt van het [&#x200B; type van plaatsing &#x200B;](../../installation/using/hosting-models.md) van uw installatie af: ontvangen (Managed Services), hybride of op-gebouw.
+Adobe Campaign Classic v7 wordt geleverd met een aantal modules en opties. De beschikbaarheid van deze modules en hun configuratie hangt van het [ type van plaatsing ](../../installation/using/hosting-models.md) van uw installatie af: ontvangen (Managed Services), hybride of op-gebouw.
 
 Belangrijkste verschillen:
 
@@ -45,7 +45,7 @@ Belangrijkste verschillen:
 * **Gehost/Managed Services** - Infrastructuur en onderhoud die door Adobe wordt beheerd. Automatische upgrades en verbeterde beveiliging. Beperkte directe servertoegang.
 * **Hybride** - combineert voordelen van beide modellen. Marketing-exemplaar gehost door Adobe, uitvoering/medio-sourcing afzonderlijk beheerd.
 
-[&#x200B; klik hier voor de volledige vermogensmatrijs &#x200B;](../../installation/using/capability-matrix.md).
+[ klik hier voor de volledige vermogensmatrijs ](../../installation/using/capability-matrix.md).
 
 ### Hoe migreer ik van op-gebouw/hybride naar Adobe Managed Services? {#how-do-i-migrate-from-on-premise-hybrid-to-adobe-managed-services}
 
@@ -60,7 +60,7 @@ Migratie naar Adobe Managed Services biedt verbeterde schaalbaarheid, beveiligin
 
 **Begonnen het worden:** contacteer uw vertegenwoordiger van Adobe om uw milieu te beoordelen en een gedetailleerd migratieplan met Adobe Professional Services te ontwikkelen.
 
-Leer meer over [&#x200B; migrerend aan Managed Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Leer meer over [ migrerend aan Managed Services ](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
 
 ## Upgrades voor build (Campaign Classic v7) {#build-upgrades-v7}
 
@@ -70,7 +70,7 @@ Een Build Upgrade is wanneer de Adobe Campaign Classic v7-software wordt bijgewe
 
 Adobe Campaign wordt regelmatig bijgewerkt. Kleine versies worden vrijgegeven met nieuwe functies, verbeteringen en oplossingen. Daarnaast worden builds met cumulatieve correcties alleen periodiek vrijgegeven.
 
-Leer meer [&#x200B; in deze sectie &#x200B;](../../rn/using/rn-overview.md).
+Leer meer [ in deze sectie ](../../rn/using/rn-overview.md).
 
 ### Hoe kan ik Campaign Classic v7 upgraden naar de nieuwste versie? {#how-can-i-upgrade-campaign-classic-v7}
 
@@ -80,17 +80,17 @@ Adobe Campaign Classic gebruikt een scala aan technologie om waarde te bieden. D
 
 **voor op-gebouw/hybride klanten:** u bent verantwoordelijk voor het uitvoeren van verbeteringen. Adobe beveelt ten minste eenmaal per jaar een upgrade aan.
 
-[&#x200B; leest deze sectie &#x200B;](../../production/using/build-upgrade.md) om te leren hoe te om uw milieu bij te werken en [&#x200B; te lezen Veelgestelde vragen van de Verbetering van de Bouwstijl &#x200B;](../../platform/using/faq-build-upgrade.md) voor gedetailleerde vragen over dit specifieke onderwerp.
+[ leest deze sectie ](../../production/using/build-upgrade.md) om te leren hoe te om uw milieu bij te werken en [ te lezen Veelgestelde vragen van de Verbetering van de Bouwstijl ](../../platform/using/faq-build-upgrade.md) voor gedetailleerde vragen over dit specifieke onderwerp.
 
 ### Wat is de nieuwste versie van Adobe Campaign Classic v7? {#what-is-the-latest-version-v7}
 
-De recentste versie van Campaign Classic v7, met inbegrip van nieuwe eigenschappen en documentatie, is gedetailleerd in de recentste [&#x200B; Nota&#39;s van de Versie &#x200B;](../../rn/using/latest-release.md).
+De recentste versie van Campaign Classic v7, met inbegrip van nieuwe eigenschappen en documentatie, is gedetailleerd in de recentste [ Nota&#39;s van de Versie ](../../rn/using/latest-release.md).
 
 ### Hoe weet ik welke versie van Campaign Classic v7 ik heb? {#how-do-i-know-which-version-v7}
 
 Controleer uw versie en buildnummer via het menu **[!UICONTROL Help > About...]** in de Adobe Campaign Client Console. Het vak **[!UICONTROL About]** bevat gedetailleerde informatie over de versie en build die u uitvoert voor zowel de console als de server.
 
-Leer meer [&#x200B; in deze sectie &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Leer meer [ in deze sectie ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ### Is een bouwstijlverbetering het zelfde als een versieverbetering? {#is-build-upgrade-same-as-version-upgrade}
 
@@ -108,7 +108,7 @@ De gebruikersinterface van Adobe Campaign v7 is beschikbaar in vier talen: Engel
 
 Voor het Engels kunt u bij de installatie van Campaign v7 Amerikaans Engels of Brits Engels selecteren: ze verschillen per datum- en tijdnotatie.
 
-[&#x200B; leer meer in deze sectie &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
+[ leer meer in deze sectie ](../../installation/using/creating-an-instance-and-logging-on.md).
 
 **Nota:** het Web UI van de Campagne v8 staat gebruikers toe om hun interfacetaal onafhankelijk te veranderen. [Meer informatie](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}.
 
@@ -116,9 +116,9 @@ Voor het Engels kunt u bij de installatie van Campaign v7 Amerikaans Engels of B
 
 De zelfbedieningsinterface van de Zones van de Veiligheid kan worden gebruikt om ingangen in de configuratie van de Zone van de Veiligheid van VPN van een plaatsing van Adobe Campaign Classic v7 te beheren. Dit is vooral relevant voor on-premise en hybride plaatsingen.
 
-Lees [&#x200B; deze sectie &#x200B;](../../installation/using/security-zones.md) om over veiligheidsstreken in Campagne v7 te leren.
+Lees [ deze sectie ](../../installation/using/security-zones.md) om over veiligheidsstreken in Campagne v7 te leren.
 
-[&#x200B; klik hier om meer &#x200B;](https://helpx.adobe.com/nl/campaign/kb/configuring-security-zones-self-service.html){target="_blank"} over de zelfbediening UI van de Zone van de Veiligheid te leren.
+[ klik hier om meer ](https://helpx.adobe.com/nl/campaign/kb/configuring-security-zones-self-service.html){target="_blank"} over de zelfbediening UI van de Zone van de Veiligheid te leren.
 
 **Nota:** Gehoste/klanten van Managed Services zouden Adobe moeten contacteren om veiligheidsstreken te vormen.
 
@@ -133,7 +133,7 @@ Deze integratie maakt het mogelijk:
 * Automatische synchronisatie van gebruikersgroepen en machtigingen
 * Single Sign-On-mogelijkheden
 
-[&#x200B; klik hier om te leren hoe &#x200B;](../../installation/using/connecting-through-ldap.md) aan opstellingsLDAP integratie in Campaign Classic v7.
+[ klik hier om te leren hoe ](../../installation/using/connecting-through-ldap.md) aan opstellingsLDAP integratie in Campaign Classic v7.
 
 **Nota:** integratie LDAP is beschikbaar voor op-gebouw en hybride plaatsingen. Gehoste klanten gebruiken Adobe IMS voor verificatie.
 
@@ -153,7 +153,7 @@ Voor on-premise en hybride implementaties zijn aanvullende beveiligingsconfigura
 * Regelmatige beveiligingspatches
 * Controle registreren en controleren
 
-Lees de [&#x200B; controlelijst van de Configuratie van de Veiligheid &#x200B;](https://helpx.adobe.com/nl/campaign/kb/acc-security.html){target="_blank"} om zeer belangrijke elementen te ontdekken om betreffende veiligheidsconfiguratie en het verharden voor plaatsingen op-gebouw te controleren.
+Lees de [ controlelijst van de Configuratie van de Veiligheid ](https://helpx.adobe.com/nl/campaign/kb/acc-security.html){target="_blank"} om zeer belangrijke elementen te ontdekken om betreffende veiligheidsconfiguratie en het verharden voor plaatsingen op-gebouw te controleren.
 
 ### Hoe kan ik de cache van de clientconsole wissen? {#how-do-i-clear-console-cache}
 
@@ -186,7 +186,7 @@ Als u het cachegeheugen van de Campagne-clientconsole wist, worden veel algemene
    * **Belangrijk:** schrapt `nlclient_cnx.xml` geen dossier
    * Client-console opnieuw starten
 
-Leer meer in [&#x200B; de documentatie van de cliëntconsole van de Campagne &#x200B;](../../platform/using/launching-adobe-campaign.md).
+Leer meer in [ de documentatie van de cliëntconsole van de Campagne ](../../platform/using/launching-adobe-campaign.md).
 
 ## Help opvragen {#getting-help}
 
@@ -194,14 +194,14 @@ Leer meer in [&#x200B; de documentatie van de cliëntconsole van de Campagne &#x
 
 **Documentatie en middelen:**
 
-* [&#x200B; de Documentatie van Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=nl){target="_blank"} - Volledige documentatie
-* [&#x200B; de Nota&#39;s van de Versie van Campaign Classic v7 &#x200B;](../../rn/using/latest-release.md) - de recentste versieinformatie
-* [&#x200B; de Matrijs van de Verenigbaarheid van Campaign Classic &#x200B;](../../rn/using/compatibility-matrix.md) - Ondersteunde systemen en versies
-* [&#x200B; Zelfstudies van Campaign Classic &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - Videozelfstudies
+* [ de Documentatie van Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=nl){target="_blank"} - Volledige documentatie
+* [ de Nota&#39;s van de Versie van Campaign Classic v7 ](../../rn/using/latest-release.md) - de recentste versieinformatie
+* [ de Matrijs van de Verenigbaarheid van Campaign Classic ](../../rn/using/compatibility-matrix.md) - Ondersteunde systemen en versies
+* [ Zelfstudies van Campaign Classic ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl){target="_blank"} - Videozelfstudies
 
 **voor gemeenschappelijke vragen van de Campagne:**
 
-Gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"} die gedetailleerde antwoorden op verstrekt:
+Gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"} die gedetailleerde antwoorden op verstrekt:
 
 * Aan de slag met campagne
 * Profielen en doelgroepen
@@ -214,9 +214,9 @@ Gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](http
 
 **Gemeenschap en steun:**
 
-* [&#x200B; Forums van de Gemeenschap van de Campagne &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
-* [&#x200B; de Steun van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
-* [&#x200B; Controlebord (Gehoste klanten) &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl){target="_blank"}
+* [ Forums van de Gemeenschap van de Campagne ](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [ de Steun van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+* [ Controlebord (Gehoste klanten) ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl){target="_blank"}
 
 ### Moet ik migreren van Campaign Classic v7 naar Campaign v8? {#should-i-migrate-to-v8}
 
@@ -240,8 +240,8 @@ Campagne v8 is een strategisch Adobe-platform dat ideaal is voor organisaties di
 
 Meer informatie:
 
-* [&#x200B; het Overzicht van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}
-* [&#x200B; Overgang van Campaign Classic v7 aan v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [&#x200B; Campagne v8 Uitgebreide FAQ &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+* [ het Overzicht van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [ Overgang van Campaign Classic v7 aan v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
+* [ Campagne v8 Uitgebreide FAQ ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
-**voor gedetailleerde antwoorden op gemeenschappelijke vragen van de Campagne over werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, en meer**, bezoek [&#x200B; Uitgebreide FAQ van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+**voor gedetailleerde antwoorden op gemeenschappelijke vragen van de Campagne over werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, en meer**, bezoek [ Uitgebreide FAQ van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
