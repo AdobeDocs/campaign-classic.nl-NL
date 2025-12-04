@@ -5,9 +5,9 @@ description: Meer informatie over het verzenden, controleren en volgen van SMS i
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 >[!IMPORTANT]
 >
->De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Voor meer op dit, verwijs naar [&#x200B; creeer een externe rekening SMPP &#x200B;](sms-set-up.md#creating-an-smpp-external-account) sectie.
+>De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Voor meer op dit, verwijs naar [ creeer een externe rekening SMPP ](sms-set-up.md#creating-an-smpp-external-account) sectie.
 >
 >Het maakt deel uit van het certificeringsproces dat door Amerikaanse marktdeelnemers wordt uitgevoerd voor marketingcampagnes in de VS. Deze reacties op SMS-berichten van abonnees die het trefwoord bevatten, moeten onmiddellijk na ontvangst van een bericht van de abonnee worden teruggestuurd naar de abonnee.
 
@@ -165,6 +165,6 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 >[!IMPORTANT]
 >
->Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](delivery-dashboard.md).
+>Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
->Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=nl-NL){target="_blank"}.
+>Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
