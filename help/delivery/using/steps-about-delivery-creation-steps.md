@@ -18,7 +18,7 @@ ht-degree: 1%
 
 De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
-1. **creeer en identificeer de levering**. Lees meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. **creeer en identificeer de levering**. Lees meer in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#create-the-delivery){target="_blank"}.
 
 1. **bepaalt de leveringsinhoud**. De definitie van de leveringsinhoud is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
@@ -35,4 +35,4 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
 >[!NOTE]
 >
->De stappen in dit hoofdstuk worden beschreven veronderstellen dat alle doelontvangers en hun profielen in het gegevensbestand worden opgeslagen, behalve in het geval van externe levering (zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"} die.
+>De stappen in dit hoofdstuk worden beschreven veronderstellen dat alle doelontvangers en hun profielen in het gegevensbestand worden opgeslagen, behalve in het geval van externe levering (zie de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl-NL#selecting-external-recipients){target="_blank"} die.

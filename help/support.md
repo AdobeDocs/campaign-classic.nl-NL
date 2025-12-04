@@ -48,7 +48,7 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemen met prestaties en doorvoer</a></li>
         <li><a href="delivery/using/delivery-performances.md">Leveringsprestaties</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Workflowprestaties optimaliseren</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Workflowprestaties optimaliseren</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Leveringsfouten begrijpen</a></li>
@@ -56,14 +56,14 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Technische werkstroomcontrole</a></li>
         <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Trackingbeheer begrijpen</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Controlemiddelen detecteren</a></li>
         <li><a href="platform/using/import-export-workflows.md">Gegevens importeren met workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Berichten verzenden in meerdere golven</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">E-mailinhoud ontwerpen</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practices voor leveringen</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL" target="_blank">Best practices voor leveringen</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -107,7 +107,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -119,9 +119,9 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het Configuratiescherm kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL) toe om tot uw instantie(s) van de Campagne toegang te hebben
 * [&#x200B; beheer URL toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=nl-NL)
 * [&#x200B; beheert GPG sleutels voor gegevensencryptie &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
