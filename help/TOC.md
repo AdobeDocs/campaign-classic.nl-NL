@@ -7,7 +7,7 @@ user-guide-title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 99%
@@ -186,7 +186,8 @@ ht-degree: 99%
       + [Lidmaatschappen beheren](delivery/using/managing-subscriptions.md)
       + [Viral en social marketing](delivery/using/viral-and-social-marketing.md)
    + Verzendingen controleren {#monitoring-deliveries}
-      + [Aan de slag met leveringscontrole](delivery/using/about-delivery-monitoring.md)
+      + [Prestaties van monitoren](delivery/using/about-delivery-monitoring.md)
+      + [Berichten bijhouden](delivery/using/about-message-tracking.md)
       + [Leveringsprestaties en probleemoplossing](delivery/using/delivery-performance-troubleshooting.md)
       + [Afleveringsfouten en quarantainebeheer](delivery/using/delivery-failures-quarantine.md)
       + [Geavanceerd: leveringslogboeken aanpassen](delivery/using/customize-delivery-logs.md)
@@ -314,7 +315,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -548,7 +549,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
