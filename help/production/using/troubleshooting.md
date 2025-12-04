@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 12%
 
 Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
-## Algemene kwesties {#common-and-general-issues}
+## Veel voorkomende en algemene problemen {#common-and-general-issues}
 
-* Dit [page](../../production/using/modules-and-frequent-issues.md) geeft een overzicht van de meest voorkomende problemen die voor de vermelde modules worden ondervonden.
-* Dit [page](../../production/using/workflow-execution.md) geeft een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het ontmoeten van kwesties met werkschemauitvoering.
-* Dit [page](../../production/using/lost-password.md) details hoe te om een verloren wachtwoord te veranderen of terug te krijgen.
-* Dit [page](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakte.
+* Deze [ pagina ](../../production/using/modules-and-frequent-issues.md) stelt de frequentste kwesties voor die voor de vermelde modules worden ontmoet.
+* Deze [ pagina ](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het onder ogen zien van kwesties met werkschemauitvoering.
+* Deze [ pagina ](../../production/using/lost-password.md) details hoe te om een verloren wachtwoord te veranderen of terug te krijgen.
+* Deze [ pagina ](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakte.
 
 ## Problemen met een levering oplossen {#delivery-troubleshooting}
 
@@ -33,13 +33,13 @@ Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
 * [Afbeelding ontbreekt](../../production/using/images-missing.md)
-* [Problemen met tijdelijke bestanden](../../production/using/temporary-files.md) (*alleen hostmodellen op locatie*)
+* [ Tijdelijke dossiers kwesties ](../../production/using/temporary-files.md) (*op-gebouw slechts ontvangende modellen*)
 
 **Verwant onderwerp**:
 
-[Leveringsprestaties](../../delivery/using/delivery-performances.md)
+[Leveringsprestaties](../../delivery/using/delivery-performance-troubleshooting.md)
 
-## Werken met logbestanden {#working-with-logs}
+## Werken met logboeken {#working-with-logs}
 
 Hier volgen enkele tips voor het verbeteren van uw ervaring met logboeken:
 
@@ -53,14 +53,14 @@ Ontdek hoe u prestatieproblemen kunt oplossen door de volgende secties uit te le
 * [Databaseprestaties](../../production/using/database-performances.md)
 * [Codering van de Oracle-database](../../production/using/encoding-of-the-oracle-database.md)
 
-## Verbindingsverbeteringen {#connection-improvements}
+## De verbinding verbeteren {#connection-improvements}
 
 Als u verbindingsproblemen tegenkomt, kunt u deze op een aantal manieren verhelpen:
 
 * [Mislukte verbinding](../../production/using/failure-to-connect.md)
 * [Drempelwaarden voor verbinding](../../production/using/connection-thresholds.md)
 
-## Technische problemen {#technical-troubleshooting}
+## Technische problemen oplossen {#technical-troubleshooting}
 
 Ga naar de volgende secties voor meer informatie over specifieke problemen:
 
