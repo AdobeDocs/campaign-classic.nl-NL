@@ -136,13 +136,13 @@ Voor meer op de geldigheidsperiode, zie deze [&#x200B; pagina &#x200B;](communic
 ### DKIM-ondertekening
 
 Ondertekening van de DKIM-e-mailverificatie (DomainKeys Identified Mail) wordt uitgevoerd door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Voor meer op DKIM, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+Voor meer op DKIM, zie de [&#x200B; Gids van de Beste praktijken van de Levering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=nl-NL#authentication).
 
 ### Leveringssuccesrapportage
 
-In de **[!UICONTROL Summary]** mening van een e-maillevering [&#x200B; dashboard &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [&#x200B; geldigheidsperiode &#x200B;](communication-channels.md), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
+In de **[!UICONTROL Summary]** mening van een e-maillevering [&#x200B; dashboard &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, begint het **[!UICONTROL Success]** percentage bij 100% en gaat dan progressief door de levering [&#x200B; geldigheidsperiode &#x200B;](communication-channels.md), aangezien de zachte en harde grenzen terug van Verbeterde MTA aan Campagne worden gemeld.
 
-Sterker nog, tonen alle berichten als **[!UICONTROL Sent]** in [&#x200B; verzendend logboeken &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} zodra zij met succes van Campagne aan Verbeterde MTA worden afgelost. Zij blijven in die status tenzij of tot a [&#x200B; stuiteren &#x200B;](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) voor dat bericht terug van Verbeterde MTA aan Campagne wordt meegedeeld.
+Sterker nog, tonen alle berichten als **[!UICONTROL Sent]** in [&#x200B; verzendend logboeken &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} zodra zij met succes van Campagne aan Verbeterde MTA worden afgelost. Zij blijven in die status tenzij of tot a [&#x200B; stuiteren &#x200B;](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) voor dat bericht terug van Verbeterde MTA aan Campagne wordt meegedeeld.
 
 Wanneer hard-bouncing berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** in **[!UICONTROL Failed]** en **[!UICONTROL Success]** percentage wordt dienovereenkomstig verminderd.
 

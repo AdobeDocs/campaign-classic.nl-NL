@@ -75,10 +75,10 @@ In Adobe Campaign Classic, **wordt de controle van de Levering** beheerd door he
 * Controleer regelmatig de [&#x200B; leveringsproductie &#x200B;](../../reporting/using/global-reports.md#delivery-throughput) voor het volledige platform om te verifiëren of het met de originele opstelling verenigbaar is.
 * Controle dat [&#x200B; opnieuw probeert &#x200B;](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) opstelling correct (30 minuten voor herbeproefperiode en meer dan 20 herpogingen) in leveringsmalplaatjes is.
 * Verifieer regelmatig dat de [&#x200B; stuiteren &#x200B;](delivery-failures-quarantine.md#bounce-mail-management) brievenbus toegankelijk is en dat de rekening niet op het punt staat te verlopen.
-* Controleer elke leveringsproductie, die van het [&#x200B; leveringsdashboard &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} toegankelijk is, om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud verenigbaar is (b.v. &quot;flitsverkoop&quot;zou in notulen, niet dagen moeten worden geleverd).
+* Controleer elke leveringsproductie, die van het [&#x200B; leveringsdashboard &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} toegankelijk is, om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud verenigbaar is (b.v. &quot;flitsverkoop&quot;zou in notulen, niet dagen moeten worden geleverd).
 * Wanneer het gebruiken van golven, verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer dat het aantal fouten en nieuwe [&#x200B; quarantines &#x200B;](delivery-failures-quarantine.md) met andere leveringen verenigbaar zijn.
-* Raadpleeg zorgvuldig de [&#x200B; leveringslogboeken &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} in detail om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
+* Raadpleeg zorgvuldig de [&#x200B; leveringslogboeken &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} in detail om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
 
 ### Problemen oplossen {#delivery-troubleshooting}
 
@@ -97,17 +97,17 @@ Met de volgende bronnen kunt u de prestaties van uw levering in Campaign Classic
 
 Leer hoe te om tot leveringslijsten toegang te hebben en het leveringsdashboard te gebruiken om uw verzendende activiteit te controleren:
 
-* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8 - is op zowel v7 als v8 van toepassing)
-* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8 - is op zowel v7 als v8 van toepassing)
+* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
 * [&#x200B; Geavanceerd: Pas leveringslogboeken &#x200B;](customize-delivery-logs.md) aan (v7 hybride/op-gebouw slechts - schemaversie)
 
 ### Berichtinteracties bijhouden
 
 Het spoor opent, klikt, en ontvankelijke interactie met uw leveringen:
 
-* [&#x200B; het volgen van het bericht documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (de documentatie van de Campagne v8 - is op zowel v7 als v8 van toepassing)
-* [&#x200B; vorm bijgehouden verbindingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (de documentatie van de Campagne v8)
-* [&#x200B; het volgen van de Toegang logboeken &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (de documentatie van Campagne v8)
+* [&#x200B; het volgen van het bericht documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (de documentatie van de Campagne v8 - is op zowel v7 als v8 van toepassing)
+* [&#x200B; vorm bijgehouden verbindingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; het volgen van de Toegang logboeken &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (de documentatie van Campagne v8)
 
 ### Prestaties optimaliseren
 
@@ -120,6 +120,6 @@ Aanbevolen werkwijzen en probleemoplossing voor prestatieproblemen bij levering:
 
 De leveringsmislukkingen, stuitpost, en quarantined adressen beheren:
 
-* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
-* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
+* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids voor zowel v7 als v8)
 * [&#x200B; mislukkingen van de Levering en quarantaineconfiguratie &#x200B;](delivery-failures-quarantine.md) (v7 hybride/op-gebouw specifieke configuraties)

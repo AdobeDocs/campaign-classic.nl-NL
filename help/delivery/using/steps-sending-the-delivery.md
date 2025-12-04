@@ -143,7 +143,7 @@ Als u de lading in evenwicht wilt brengen, kunt u leveringen in verscheidene par
    >
    >U moet ook genoeg tijd voor pogingen toestaan wanneer het vormen van de laatste golven. Zie [deze sectie](steps-sending-the-delivery.md#configuring-retries).
 
-1. Ga naar de leveringslogboeken om uw verzendingen te controleren. Zie [deze pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Ga naar de leveringslogboeken om uw verzendingen te controleren. Zie [deze pagina](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    U kunt de leveringen zien die reeds in de verwerkte golven (**[!UICONTROL Sent]** status) werden verzonden en de te verzenden leveringen in de resterende golven (**[!UICONTROL Pending]** status).
 
