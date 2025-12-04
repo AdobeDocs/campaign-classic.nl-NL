@@ -33,7 +33,7 @@ Elk implementatiemodel heeft verschillende mogelijkheden en beheerverantwoordeli
 
 [&#x200B; klik hier om meer &#x200B;](../../installation/using/hosting-models.md) over het ontvangen van modellen en hun verschillen te leren.
 
-**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [&#x200B; leer over Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
+**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [&#x200B; leer over Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}.
 
 ### Wat zijn de verschillen wanneer het werken op-gebouw tegenover in een ontvangen milieu? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
@@ -240,7 +240,7 @@ Campagne v8 is een strategisch Adobe-platform dat ideaal is voor organisaties di
 
 Meer informatie:
 
-* [&#x200B; het Overzicht van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [&#x200B; het Overzicht van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}
 * [&#x200B; Overgang van Campaign Classic v7 aan v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [&#x200B; Campagne v8 Uitgebreide FAQ &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
