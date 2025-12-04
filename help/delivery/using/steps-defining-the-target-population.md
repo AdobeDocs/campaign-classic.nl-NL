@@ -48,7 +48,7 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
    De volgende doeltypen worden standaard aangeboden:
 
-   * **[!UICONTROL Filtering conditions]** : met deze optie kunt u een query definiëren en het resultaat weergeven. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filtering conditions]** : met deze optie kunt u een query definiëren en het resultaat weergeven. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]** : met deze optie kunt u een nieuwsbrief selecteren waarop de ontvangers moeten worden geabonneerd om de levering die wordt gemaakt als doel te hebben.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -71,8 +71,8 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
    * **[!UICONTROL Recipients included in a folder]** : met deze optie kunt u de profielen in een specifieke map van de boomstructuur als doel instellen.
    * **[!UICONTROL A recipient]** : met deze optie kunt u een specifieke ontvanger selecteren uit de profielen in de database.
-   * **[!UICONTROL A list of recipients]** : met deze optie kunt u een lijst met ontvangers als doel instellen. De lijsten worden voorgesteld in [ deze sectie ](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL A list of recipients]** : met deze optie kunt u een lijst met ontvangers als doel instellen. De lijsten worden voorgesteld in [&#x200B; deze sectie &#x200B;](../../platform/using/creating-and-managing-lists.md).
+   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Met de optie **[!UICONTROL Exclude recipients corresponding to this segment]** kunt u zich richten op ontvangers die niet aan de gedefinieerde doelcriteria voldoen. Als u deze optie wilt gebruiken, selecteert u het desbetreffende vak en past u vervolgens de focus toe, zoals eerder is gedefinieerd, om de resulterende profielen uit te sluiten.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -101,7 +101,7 @@ Dit doet u als volgt:
 
 1. Klik tijdens het importeren van de ontvangers op de koppeling **[!UICONTROL File format definition...]** om het externe bestand te selecteren en te configureren.
 
-   Voor meer informatie bij de invoer van gegevens, verwijs naar [ deze sectie ](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
+   Voor meer informatie bij de invoer van gegevens, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Klik op **[!UICONTROL Finish]** en configureer de levering als standaardlevering.
 
@@ -149,7 +149,7 @@ De volgende opties zijn beschikbaar:
 
   >[!NOTE]
   >
-  >Voor verdere informatie over quarantainebeheer, verwijs naar [ begrijp quarantainebeheer ](delivery-failures-quarantine.md).
+  >Voor verdere informatie over quarantainebeheer, verwijs naar [&#x200B; begrijp quarantainebeheer &#x200B;](delivery-failures-quarantine.md).
 
 * **[!UICONTROL Limit delivery]** aan een bepaald aantal berichten. Met deze optie kunt u het maximum aantal berichten invoeren dat moet worden verzonden. Als de inhoud van het doel het aangegeven aantal berichten overschrijdt, wordt een willekeurige selectie toegepast op het doel.
 
@@ -180,11 +180,11 @@ Voer de onderstaande stappen uit om het doel van de proefdrukken te selecteren:
 
 Als u het proefdrukdoel selecteert, kunt u met de optie **[!UICONTROL Definition of a specific proof target]** de proefdrukontvangers selecteren in de profielen in de database.
 
-Selecteer deze optie om ontvangers te kiezen met de knop **[!UICONTROL Add]** , zoals bij het definiëren van het hoofddoel. Zie [ selecteren het belangrijkste doel ](steps-defining-the-target-population.md#selecting-the-main-target).
+Selecteer deze optie om ontvangers te kiezen met de knop **[!UICONTROL Add]** , zoals bij het definiëren van het hoofddoel. Zie [&#x200B; selecteren het belangrijkste doel &#x200B;](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Voor meer bij bewijs dat verzendt, verwijs naar [ deze sectie ](steps-validating-the-delivery.md#sending-a-proof).
+Voor meer bij bewijs dat verzendt, verwijs naar [&#x200B; deze sectie &#x200B;](steps-validating-the-delivery.md#sending-a-proof).
 
 ### Adres vervangen in proefdruk gebruiken {#using-address-substitution-in-proof}
 
@@ -218,7 +218,7 @@ U kunt **[!UICONTROL Seed addresses]** gebruiken als doel voor proefdrukken: met
 
 >[!NOTE]
 >
->De zaadadressen worden voorgesteld in [ Ongeveer zaadadressen ](about-seed-addresses.md).
+>De zaadadressen worden voorgesteld in [&#x200B; Ongeveer zaadadressen &#x200B;](about-seed-addresses.md).
 
 Met de optie **[!UICONTROL Specific target and Seed addresses]** kunt u de definitie van een specifiek proefdrukdoel combineren met het gebruik van beginadressen. De gerelateerde configuraties worden vervolgens in twee aparte subtabbladen gedefinieerd.
 
@@ -253,4 +253,4 @@ In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [ hier ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).
+De extra hoe te video&#39;s van Campaign Classic zijn beschikbaar [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl).

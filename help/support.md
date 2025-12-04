@@ -95,7 +95,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [ bouwt GA ](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [&#x200B; bouwt GA &#x200B;](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -103,7 +103,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### Veelgestelde vragen over configuratiescherm
 
-[Klik hier ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
+[Klik hier &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
 
 ### SFTP-beheer
 
@@ -119,27 +119,27 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het Configuratiescherm kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [ voegt IPs op de lijst van gewenste personen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
-* [ beheer URL toestemmingen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [ de instantiedetails van de Toegang ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [ beheert GPG sleutels voor gegevensencryptie ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
+* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [&#x200B; beheer URL toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
+* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [&#x200B; beheert GPG sleutels voor gegevensencryptie &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Het nieuwe ticketing systeem is gelanceerd door [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
+Het nieuwe ticketing systeem is gelanceerd door [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [ sluit zich aan bij het gesprek ](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [&#x200B; sluit zich aan bij het gesprek &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Downloadcentrum voor campagne openen
 
-Als Beheerder van de Campagne, doorblader aan [ deze pagina ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
+Als Beheerder van de Campagne, doorblader aan [&#x200B; deze pagina &#x200B;](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
 
 ### Een ticket maken of een chat starten
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.
+Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.

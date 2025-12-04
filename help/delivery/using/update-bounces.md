@@ -32,9 +32,9 @@ Let op: als het uitstellen van de melding &quot;452 gevraagde actie afgebroken: 
 
 >[!NOTE]
 >
->U kunt het dashboard van de Status van het Systeem van Apple op [ deze pagina ](https://www.apple.com/support/systemstatus/){_blank} controleren.
+>U kunt het dashboard van de Status van het Systeem van Apple op [&#x200B; deze pagina &#x200B;](https://www.apple.com/support/systemstatus/){_blank} controleren.
 >
->U kunt het Dashboard van de Status van Google Workspace op [ deze pagina ](https://www.google.com/appsstatus#hl=en&v=status){_blank} controleren.
+>U kunt het Dashboard van de Status van Google Workspace op [&#x200B; deze pagina &#x200B;](https://www.google.com/appsstatus#hl=en&v=status){_blank} controleren.
 >
 
 ## Gevolgen{#update-bounce-impact}

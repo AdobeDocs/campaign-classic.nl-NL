@@ -17,7 +17,7 @@ ht-degree: 4%
 
 
 
-Het hieronder gedetailleerde werkschema wordt geïnstalleerd met de **Mobiele module van het Kanaal van de App** door gebrek. Voor meer op deze module, verwijs naar deze [ sectie ](../../delivery/using/about-mobile-app-channel.md).
+Het hieronder gedetailleerde werkschema wordt geïnstalleerd met de **Mobiele module van het Kanaal van de App** door gebrek. Voor meer op deze module, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 

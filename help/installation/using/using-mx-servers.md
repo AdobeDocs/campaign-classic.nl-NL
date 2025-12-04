@@ -64,7 +64,7 @@ Adobe Campaign beheert dit proces met een overeenkomst tussen een fouttype en ee
 
 >[!NOTE]
 >
->Meer over de types en de redenen van de leveringsmislukking leren, verwijs naar deze [ sectie ](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
+>Meer over de types en de redenen van de leveringsmislukking leren, verwijs naar deze [&#x200B; sectie &#x200B;](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 ## Leverbaarheid-instantie {#deliveratbility-env}
 
@@ -91,4 +91,4 @@ De modus Aangepast is voor geavanceerde clients die hun eigen MX-regels willen i
 * [MX-configuratie](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische e-mailconfiguratie](../../installation/using/email-deliverability.md)
 * [Leveringsfouten begrijpen](../../delivery/using/delivery-failures-quarantine.md)
-* [ Campaign Classic - Technische Aanbevelingen ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [&#x200B; Campaign Classic - Technische Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

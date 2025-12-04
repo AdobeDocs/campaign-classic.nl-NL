@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Meldingen maken voor iOS{#create-notifications-ios}
 
-In deze sectie worden de specifieke elementen voor de levering van iOS-berichten beschreven. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl){target="_blank"}.
+In deze sectie worden de specifieke elementen voor de levering van iOS-berichten beschreven. De globale concepten op leveringsverwezenlijking worden voorgesteld in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=nl){target="_blank"}.
 
 Begin door een nieuwe levering te maken.
 
@@ -34,11 +34,11 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    >[!NOTE]
    >
-   >Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in deze sectie in de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
+   >Het gedetailleerde proces wanneer het selecteren van de doelbevolking van een levering wordt voorgesteld in deze sectie in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
-   >Voor meer op het gebruik van verpersoonlijkingsgebieden, verwijs naar [ deze sectie ](about-personalization.md).
+   >Voor meer op het gebruik van verpersoonlijkingsgebieden, verwijs naar [&#x200B; deze sectie &#x200B;](about-personalization.md).
    >
-   >Voor meer op de opneming van een zaadlijst, verwijs naar [ Ongeveer zaadadressen ](about-seed-addresses.md).
+   >Voor meer op de opneming van een zaadlijst, verwijs naar [&#x200B; Ongeveer zaadadressen &#x200B;](about-seed-addresses.md).
 
 1. Selecteer **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** , selecteer de service die relevant is voor uw mobiele toepassing (in dit geval Neotrips) en selecteer vervolgens de iOS-versie van de toepassing.
 
@@ -50,19 +50,19 @@ Voer de volgende stappen uit om een pushmelding voor iOS-apparaten te maken:
 
    >[!NOTE]
    >
-   >De **wijze van de Duw van 0} Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
+   >De **wijze van de Duw van 0&rbrace; Zijde** staat een &quot;stil&quot;bericht toe om naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
 1. Voer in het veld **[!UICONTROL Title]** het label in van de titel die u wilt weergeven in de lijst met meldingen die beschikbaar is in het meldingscentrum.
 
    Dit gebied staat u toe om de waarde van de **titel** parameter van de het berichtlading van iOS te bepalen.
 
-1. U kunt een **[!UICONTROL Subtitle]** -waarde van de ondertitelparameter van de iOS-berichtlading toevoegen. Verwijs naar [ deze sectie ](configuring-the-mobile-application.md).
+1. U kunt een **[!UICONTROL Subtitle]** -waarde van de ondertitelparameter van de iOS-berichtlading toevoegen. Verwijs naar [&#x200B; deze sectie &#x200B;](configuring-the-mobile-application.md).
 
-1. Voer de inhoud van het bericht in in de sectie **[!UICONTROL Message content]** van de assistent. Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [ Ongeveer verpersoonlijkings ](about-personalization.md) sectie.
+1. Voer de inhoud van het bericht in in de sectie **[!UICONTROL Message content]** van de assistent. Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [&#x200B; Ongeveer verpersoonlijkings &#x200B;](about-personalization.md) sectie.
 
    ![](assets/nmac_delivery_ios_5.png)
 
-1. Klik op het pictogram **[!UICONTROL Insert emoticon]** om emoticons in te voegen bij uw pushmelding. Om de emoticonlijst aan te passen, verwijs naar [ deze sectie ](customizing-emoticon-list.md)
+1. Klik op het pictogram **[!UICONTROL Insert emoticon]** om emoticons in te voegen bij uw pushmelding. Om de emoticonlijst aan te passen, verwijs naar [&#x200B; deze sectie &#x200B;](customizing-emoticon-list.md)
 
 1. Op het tabblad **[!UICONTROL Sound and Badge]** kunt u de volgende opties bewerken:
 

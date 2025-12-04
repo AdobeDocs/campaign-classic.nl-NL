@@ -22,7 +22,7 @@ Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
 
 >[!NOTE]
 >
->U kunt het dashboard van de Status van het Systeem van Apple op [ deze pagina ](https://www.apple.com/support/systemstatus/) controleren.
+>U kunt het dashboard van de Status van het Systeem van Apple op [&#x200B; deze pagina &#x200B;](https://www.apple.com/support/systemstatus/) controleren.
 
 Als een internetprovider buiten beschouwing blijft, kunnen e-mails die via Campagne worden verzonden niet succesvol aan de ontvanger worden bezorgd: deze e-mails worden ten onrechte gemarkeerd als steunkleuren.
 
