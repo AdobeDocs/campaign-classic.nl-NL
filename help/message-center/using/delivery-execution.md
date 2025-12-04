@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '234'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,11 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze sortering ka
 
 >[!NOTE]
 >
->Voor ontvangen of hybride installaties, als u aan [&#x200B; Verbeterde MTA &#x200B;](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
+>Voor ontvangen of hybride installaties, als u aan [ Verbeterde MTA ](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
 
 ## Transactionele berichtbewaking {#transactional-message-monitoring}
 
-Om uw transactionele berichten te controleren, controleer de [&#x200B; leveringslogboeken &#x200B;](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Om uw transactionele berichten te controleren, controleer de [ leveringslogboeken ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 De transactionele leveringen die van de uitvoeringsinstantie worden verzonden worden gesynchroniseerd terug naar de controleinstantie door een technisch werkschema (**[!UICONTROL Message Center execution instance]**) dat elk uur in werking stelt.
 
@@ -75,4 +75,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-Om de activiteit en het runnen van de uitvoeringsinstantie(s) te controleren, zie [&#x200B; Transactionele overseinenrapporten &#x200B;](../../message-center/using/about-transactional-messaging-reports.md).
+Om de activiteit en het runnen van de uitvoeringsinstantie(s) te controleren, zie [ Transactionele overseinenrapporten ](../../message-center/using/about-transactional-messaging-reports.md).

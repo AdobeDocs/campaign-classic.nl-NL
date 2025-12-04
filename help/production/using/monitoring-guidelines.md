@@ -4,7 +4,7 @@ title: Controlerichtlijnen
 description: Ontdek richtlijnen en best practices om de Campaign-instantie en -processen te controleren
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 16%
@@ -56,7 +56,7 @@ In het Configuratiescherm kunt u verschillende instellingen van uw instantie beh
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden ontvangen en met de [&#x200B; recentste bouw GA &#x200B;](../../rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>Merk op dat uw instantie op AWS moet worden ontvangen en met de [ recentste bouw GA ](../../rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Workflows controleren {#monitoring-workflows}
 
@@ -64,25 +64,25 @@ In het Configuratiescherm kunt u verschillende instellingen van uw instantie beh
 
 **Workflow HeatMap**
 
-De Werkstroom HeatMap verstrekte een visuele vertegenwoordiging van alle werkschema&#39;s die op uw instantie lopen. Het staat u toe om de lading op de instantie gemakkelijk te controleren en werkschema&#39;s dienovereenkomstig te plannen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=nl-NL){target="_blank"}.
+De Werkstroom HeatMap verstrekte een visuele vertegenwoordiging van alle werkschema&#39;s die op uw instantie lopen. Het staat u toe om de lading op de instantie gemakkelijk te controleren en werkschema&#39;s dienovereenkomstig te plannen. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}.
 
 **Audittrail**
 
-Met het audittrail kunt u alle wijzigingen visualiseren die in workflows zijn aangebracht, plus de huidige status. [&#x200B; klik hier &#x200B;](../../production/using/audit-trail.md).
+Met het audittrail kunt u alle wijzigingen visualiseren die in workflows zijn aangebracht, plus de huidige status. [ klik hier ](../../production/using/audit-trail.md).
 
 **het oplossen van problemen van Werkschema&#39;s**
 
-Er kunnen specifieke acties worden uitgevoerd wanneer er problemen optreden met de uitvoering van een workflow. [&#x200B; klik hier &#x200B;](../../production/using/workflow-execution.md) voor meer informatie
+Er kunnen specifieke acties worden uitgevoerd wanneer er problemen optreden met de uitvoering van een workflow. [ klik hier ](../../production/using/workflow-execution.md) voor meer informatie
 
 **de status van het Werkschema controle**
 
-Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set workflows kunt controleren en terugkerende berichten naar supervisors kunt verzenden. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=nl-NL){target="_blank"}.
+Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set workflows kunt controleren en terugkerende berichten naar supervisors kunt verzenden. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Algemene richtlijnen**
 
 De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema&#39;s kunnen helpen prestaties verbeteren. Raadpleeg de volgende secties voor meer informatie:
-* [&#x200B; Beste praktijken wanneer het gebruiken van werkschema&#39;s &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL){target="_blank"}
-* [Workflowuitvoering controleren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=nl-NL){target="_blank"}
+* [ Beste praktijken wanneer het gebruiken van werkschema&#39;s ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Workflowuitvoering controleren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### Bewaking van leveringen {#monitoring-deliveries}
 
@@ -94,14 +94,14 @@ In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergeg
 
 **Best practices**
 
-Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL){target="_blank"} om over beste praktijken voor levering te leren die verzenden en ontwerpen om prestaties te verbeteren.
+Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} om over beste praktijken voor levering te leren die verzenden en ontwerpen om prestaties te verbeteren.
 
 **het oplossen van problemen van de Levering**
 Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optreden:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
-* [Leveringsprestaties](../../delivery/using/delivery-performances.md)
-* [&#x200B; Tijdelijke dossiers kwesties &#x200B;](../../production/using/temporary-files.md) - *op gebouw slechts ontvangende modellen*
+* [Leveringsprestaties](../../delivery/using/delivery-performance-troubleshooting.md)
+* [ Tijdelijke dossiers kwesties ](../../production/using/temporary-files.md) - *op gebouw slechts ontvangende modellen*
 
 ### Toezicht op de database {#monitoring-database}
 
@@ -125,7 +125,7 @@ Wij adviseren dat u gegevensbestandonderhoud op een regelmatige basis uitvoert o
 
 *op-gebouw en hybride slechts ontvangende modellen*
 
-Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [&#x200B; klik hier &#x200B;](../../production/using/backup.md) voor meer informatie. De procedure van het herstel wordt beschreven in [&#x200B; deze sectie &#x200B;](../../production/using/restoration.md).
+Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [ klik hier ](../../production/using/backup.md) voor meer informatie. De procedure van het herstel wordt beschreven in [ deze sectie ](../../production/using/restoration.md).
 
 ## Technische beginselen van Campaign Classic {#campaign-classic-technical-principles}
 

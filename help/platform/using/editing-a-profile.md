@@ -9,7 +9,7 @@ topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 hide: true
 hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 2%
@@ -34,11 +34,11 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 >
 >Het XML-schema en het formulier dat betrekking heeft op de velden in de tabel met profielen, zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
 >
->Voor verdere informatie, verwijs naar [&#x200B; deze pagina &#x200B;](../../configuration/using/about-schema-edition.md).
+>Voor verdere informatie, verwijs naar [ deze pagina ](../../configuration/using/about-schema-edition.md).
 
 >[!NOTE]
 >
->Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [&#x200B; Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Meer leren op hoe te om profielen uit te geven en tot hen toegang te hebben, gelieve te verwijzen naar de gedetailleerde documentatie over de [ Campagne v8 documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 
@@ -107,6 +107,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->
