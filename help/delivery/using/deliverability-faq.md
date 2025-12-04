@@ -26,9 +26,9 @@ In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan
 
 Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail is verzonden. In dit geval, zal een configuratie met IP of een domein met een lage reputatie verscheidene verbindingen moeten proberen alvorens een e-mail te verzenden. Voor elke poging, zal een berichten per uurkrediet worden gebruikt. Als gevolg hiervan zullen de prestaties van de marketingcampagne aanzienlijk worden beïnvloed.
 
-Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in het [ SMTP logboek ](../../production/using/monitoring-processes.md#smtp-errors-per-domain) te analyseren.
+Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in het [&#x200B; SMTP logboek &#x200B;](../../production/using/monitoring-processes.md#smtp-errors-per-domain) te analyseren.
 
-Voor meer op MX configuratie, zie [ deze sectie ](../../installation/using/email-deliverability.md#mx-configuration).
+Voor meer op MX configuratie, zie [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Hetzelfde foutbericht voor een ISP {#same-error-for-an-isp}
 
@@ -39,7 +39,7 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen te detecteren (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
-Als het probleem voortduurt, contacteer de commerciële of leveringsdiensten, [ de Zorg van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Als het probleem voortduurt, contacteer de commerciële of leveringsdiensten, [&#x200B; de Zorg van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Lijst van gewezen personen versus quarantaine {#denylist-versus-quarantine}
 
@@ -55,7 +55,7 @@ Als het probleem voortduurt, contacteer de commerciële of leveringsdiensten, [ 
 
   Hier zijn 10 mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, op lijst van gewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
-  Voor meer op dit, zie [ Begrijpend quarantainebeheer ](delivery-failures-quarantine.md).
+  Voor meer op dit, zie [&#x200B; Begrijpend quarantainebeheer &#x200B;](delivery-failures-quarantine.md).
 
 ## Verwijderen uit lijst van gewezen personen {#remove-from-denylist}
 
@@ -68,8 +68,8 @@ Als het probleem voortduurt, contacteer de commerciële of leveringsdiensten, [ 
 * **Hoe kan ik weten of één van mijn IPs op een lijst van gewezen personen is? Hoe verwijder ik mijn IP(s) uit een lijst van gewezen personen?**
 
   Om te controleren of uw IP adres op een lijst van gewezen personen is, kunt u diverse websites gebruiken om het te verifiëren, zoals:
-   * [ MX Toolbox ](https://mxtoolbox.com/)
-   * [ wat mijn IP adres ](https://whatismyipaddress.com) is
+   * [&#x200B; MX Toolbox &#x200B;](https://mxtoolbox.com/)
+   * [&#x200B; wat mijn IP adres &#x200B;](https://whatismyipaddress.com) is
 
   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de lijst van gewezen personen en ook de naam van de website bevat die het IP adres ontkende.
 
