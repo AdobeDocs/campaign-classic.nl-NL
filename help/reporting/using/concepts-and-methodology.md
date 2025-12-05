@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Alleen van toepassing op Campaign 
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Met Binding kunt u de gegevensweergave vereenvoudigen door waarden te groeperen 
 
 Er zijn in totaal drie typen binding beschikbaar:
 
-1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). Raadpleeg voor meer informatie hierover [Elke bin definiëren](#defining-each-bin).
-1. Afhankelijk van de waarden van een opsomming worden dynamisch alle andere waarden gegroepeerd in &#39;Overige&#39;, waarbij alleen de waarden in de opsomming worden weergegeven. Raadpleeg voor meer informatie hierover [Banden dynamisch beheren](#dynamically-managing-bins).
-1. Met waardebereiken worden alle andere reeksen gegroepeerd. Bijvoorbeeld 18- tot 25-jarigen, 26- tot 59-jarigen en de andere. Raadpleeg voor meer informatie hierover [Waardebereiken maken](#creating-value-ranges).
+1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). Voor meer op dit, verwijs naar [ het bepalen van elke bak ](#defining-each-bin).
+1. Afhankelijk van de waarden van een opsomming worden dynamisch alle andere waarden gegroepeerd in &#39;Overige&#39;, waarbij alleen de waarden in de opsomming worden weergegeven. Voor meer op dit, verwijs naar [ dynamisch het leiden bins ](#dynamically-managing-bins).
+1. Met waardebereiken worden alle andere reeksen gegroepeerd. Bijvoorbeeld 18- tot 25-jarigen, 26- tot 59-jarigen en de andere. Voor meer op dit, verwijs naar [ Creërend waardewaaiers ](#creating-value-ranges).
 
 Om het binden toe te laten, controleer de aangewezen doos wanneer het creëren van de afmeting.
 
@@ -38,11 +38,11 @@ Adobe Campaign biedt ook een assistent voor automatisch binden: waarden kunnen w
 
 ### Elke bin definiëren {#defining-each-bin}
 
-Als u elke bin afzonderlijk wilt maken, selecteert u de **[!UICONTROL Define each bin]** en gebruikt u de tabel om de verschillende vakken te maken.
+Als u elke bin afzonderlijk wilt maken, selecteert u de optie **[!UICONTROL Define each bin]** en gebruikt u de tabel om de verschillende vakken te maken.
 
 ![](assets/s_advuser_cube_class_01.png)
 
-Klik op de knop **[!UICONTROL Add]** om een nieuwe bin te maken en de waarden weer te geven die in de bin worden gegroepeerd.
+Klik op de knop **[!UICONTROL Add]** om een nieuw vak te maken en geef de waarden op die in het vak moeten worden gegroepeerd.
 
 ![](assets/s_advuser_cube_class_02.png)
 
@@ -50,9 +50,9 @@ In het volgende voorbeeld worden talen gegroepeerd in drie categorieën: Engels/
 
 ![](assets/s_advuser_cube_class_03.png)
 
-Met een SQL-masker kunt u verschillende waarden combineren tot een filter. Om dit te doen, controleer **[!UICONTROL Yes]** in de **[!UICONTROL Use an SQL mask]** en voer het SQL-filter in dat u wilt toepassen in het dialoogvenster **[!UICONTROL Value or expression]** kolom.
+Met een SQL-masker kunt u verschillende waarden combineren tot een filter. Hiervoor controleert u **[!UICONTROL Yes]** in de kolom **[!UICONTROL Use an SQL mask]** en voert u het SQL-filter in dat in de kolom **[!UICONTROL Value or expression]** moet worden toegepast.
 
-In het onderstaande voorbeeld worden alle e-maildomeinen weergegeven waarmee wordt begonnen **yahoo** (yahoo.fr, yahoo.com, yahoo.be, enz.) of met **e-mail** (ymail.com, ymail.eu, enz.) wordt onder het label gegroepeerd **YAHOO!**, alsmede de adressen met de **rocketmail.com** domein.
+In het voorbeeld hieronder, zullen alle e-maildomeinen die met **yahoo** (yahoo.fr, yahoo.com, yahoo.be, enz.) beginnen, of met **ymail** (ymail.com, ymail.eu, enz.) onder het etiket **YAHOO! worden gegroepeerd!**, evenals adressen met het {**domein 1} rocketmail.com.**
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -63,7 +63,7 @@ Waarden kunnen dynamisch worden beheerd via opsommingen. Dit betekent dat alleen
 Voer de volgende stappen uit om dit type waardenbinding te maken:
 
 1. Maak een nieuwe dimensie en schakel het binden in.
-1. Selecteer de **[!UICONTROL Dynamically link the values to an enumeration]** en selecteert u de overeenkomstige opsomming.
+1. Selecteer de optie **[!UICONTROL Dynamically link the values to an enumeration]** en selecteer de overeenkomstige opsomming.
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -77,11 +77,11 @@ Als u bereiken handmatig wilt definiëren, klikt u op de knop **[!UICONTROL Add]
 
 ![](assets/s_advuser_cube_class_05.png)
 
-Geef vervolgens de onderste en bovenste limiet op en klik op **[!UICONTROL Ok]** ter bevestiging.
+Geef vervolgens de onderste en bovenste limiet op en klik op **[!UICONTROL Ok]** om te bevestigen.
 
 ### Automatisch vakken genereren {#generating-bins-automatically}
 
-Het is ook mogelijk om automatisch bakken te produceren. Om dit te doen, klik **[!UICONTROL Generate bins...]** koppeling.
+Het is ook mogelijk om automatisch bakken te produceren. Klik hiertoe op de koppeling **[!UICONTROL Generate bins...]** .
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -109,17 +109,17 @@ Deze is gemaakt met de volgende sjabloon:
 
 ![](assets/nmx_enum_domain.png)
 
-Als u een rapport wilt maken met deze opsomming, maakt u een kubus met de opdracht **[!UICONTROL Email domain]** dimensie. Kies de optie **[!UICONTROL Enable binning]** optie dan **[!UICONTROL Dynamically link the values to an enumeration]**. Selecteer vervolgens de optie **Domeinen** opsomming zoals hierboven getoond. Alle waarden zonder opgegeven alias worden opnieuw gegroepeerd onder het dialoogvenster **Overige** label.
+Als u een rapport wilt maken met deze opsomming, maakt u een kubus met de dimensie **[!UICONTROL Email domain]** . Kies vervolgens **[!UICONTROL Enable binning]** . **[!UICONTROL Dynamically link the values to an enumeration]** Dan selecteer de **Opsomming van Domeinen** zoals hierboven getoond. Alle waarden die geen gespecificeerde alias hebben zullen onder **opnieuw worden gegroepeerd anderen** etiket.
 
 ![](assets/nmx_add_dimension.png)
 
 Maak vervolgens een rapport op basis van deze kubus om de waarden weer te geven.
 
-U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Maak bijvoorbeeld de **Adobe** en voeg de **adobe.com** alias en het rapport wordt automatisch bijgewerkt met de waarde van de Adobe op het opsommingsniveau.
+U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Bijvoorbeeld, creeer de **Adobe** waarde en voeg **adobe.com** alias toe en het rapport wordt automatisch bijgewerkt met de waarde van Adobe op het opsommingsniveau.
 
 ![](assets/nmx_add_alias.png)
 
-De **[!UICONTROL Domains]** opsomming wordt gebruikt om ingebouwde rapporten te produceren die de lijst van domeinen tonen. Als u de inhoud van deze rapporten wilt aanpassen, kunt u deze lijst bewerken.
+De opsomming **[!UICONTROL Domains]** wordt gebruikt om ingebouwde rapporten te produceren die de lijst van domeinen tonen. Als u de inhoud van deze rapporten wilt aanpassen, kunt u deze lijst bewerken.
 
 U kunt andere opsommingen maken die zijn gereserveerd voor binden en deze gebruiken in andere kubussen: alle aliaswaarden worden opnieuw gegroepeerd in de vakken die zijn opgegeven op het eerste tabblad voor opsomming.
 
@@ -137,7 +137,7 @@ De aggregaten worden bepaald in het relevante lusje van elke kubus.
 
 Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
-1. Klik op de knop **[!UICONTROL Aggregates]** tabblad van de kubus en klik vervolgens op de knop **[!UICONTROL Add]** knop.
+1. Klik op de tab **[!UICONTROL Aggregates]** van de kubus en klik vervolgens op de knop **[!UICONTROL Add]** .
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -146,12 +146,12 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. Selecteer een dimensie en een niveau. Herhaal dit proces voor elke dimensie en elk niveau.
-1. Klik op de knop **[!UICONTROL Workflow]** om de samenvoegingsworkflow te maken.
+1. Klik op het tabblad **[!UICONTROL Workflow]** om de samenvoegingsworkflow te maken.
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * De **[!UICONTROL Scheduler]** Met deze activiteit kunt u de frequentie van de berekening-updates definiëren. De planner is gedetailleerd in [deze sectie](../../workflow/using/scheduler.md).
-   * De **[!UICONTROL Aggregate update]** Met activiteit kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
+   * Met de **[!UICONTROL Scheduler]** -activiteit kunt u de frequentie van de berekening-updates definiëren. De planner wordt gedetailleerd in [ deze sectie ](../../workflow/using/scheduler.md).
+   * Met de activiteit **[!UICONTROL Aggregate update]** kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
 
      Standaard wordt bij elke berekening een volledige update uitgevoerd. Als u een gedeeltelijke update wilt inschakelen, selecteert u de desbetreffende optie en definieert u de updatevoorwaarden.
 
@@ -159,39 +159,39 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
 ## Maatregelen definiëren {#defining-measures}
 
-De soorten maatregelen worden gedefinieerd in de **[!UICONTROL Measures]** tabblad van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
+De typen metingen worden gedefinieerd op het tabblad **[!UICONTROL Measures]** van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
 
-U kunt zoveel maatregelen maken als nodig zijn: selecteer vervolgens de maatregel die u wilt weergeven of verbergen in de tabel. Raadpleeg voor meer informatie hierover [Weergavemaatregelen](#displaying-measures).
+U kunt zoveel maatregelen maken als nodig zijn: selecteer vervolgens de maatregel die u wilt weergeven of verbergen in de tabel. Voor meer op dit, verwijs naar [ Weergavemaatregelen ](#displaying-measures).
 
 Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
-1. Klik op de knop **[!UICONTROL Add]** boven de lijst van maatregelen en selecteer het type maatregel en de te berekenen formule.
+1. Klik op de knop **[!UICONTROL Add]** boven de lijst met maatregelen en selecteer het type maatregel en de formule die u wilt berekenen.
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. Kies zo nodig, en afhankelijk van de operator, de expressie waarop de bewerking betrekking heeft.
 
-   De **[!UICONTROL Advanced selection]** Met deze knop kunt u complexe berekeningsformules maken. Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md) voor meer informatie.
+   Met de knop **[!UICONTROL Advanced selection]** kunt u complexe berekeningsformules maken. Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) voor meer informatie.
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. De **[!UICONTROL Filter the measure data...]** Met de koppeling kunt u het berekeningsveld beperken en alleen toepassen op specifieke gegevens in de database.
+1. Met de koppeling **[!UICONTROL Filter the measure data...]** kunt u het berekeningsveld beperken en dit alleen toepassen op specifieke gegevens in de database.
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. Voer het label van de maatregel in en voeg een beschrijving toe. Klik vervolgens op **[!UICONTROL Finish]** om het te maken.
+1. Voer het label van de maatregel in en voeg een beschrijving toe. Klik vervolgens op **[!UICONTROL Finish]** om de maatregel te maken.
 
 ## Weergaveopties {#displaying-measures}
 
 U kunt de weergave van maatregelen in de tabel configureren, afhankelijk van uw behoeften:
 
-* de weergavesequentie van de metingen (zie [Weergavevolgorde](#display-sequence)),
-* de informatie die in het rapport moet worden weergegeven/verborgen (zie [De weergave configureren](#configuring-the-display))
-* welke maatstaven moeten worden weergegeven: percentage, totaal, aantal decimalen, enz. (zie [Het weergegeven type maatregel wijzigen](#changing-the-type-of-measure-displayed)).
+* de vertoningsopeenvolging van maatregelen (verwijs naar [ opeenvolging van de Vertoning ](#display-sequence)),
+* de informatie om in het rapport te tonen/te verbergen (verwijs naar [ de vertoning ](#configuring-the-display) vormen)
+* welke maatstaven moeten worden weergegeven: percentage, totaal, aantal decimalen, enz. (verwijs naar [ Verandering het type van getoonde maatregel ](#changing-the-type-of-measure-displayed)).
 
 ### Weergavevolgorde {#display-sequence}
 
-De in de kubus berekende maatregelen worden geconfigureerd via de **[!UICONTROL Measures]** knop.
+De maateenheden die in de kubus worden berekend, worden geconfigureerd via de knop **[!UICONTROL Measures]** .
 
 Verplaats de lijnen om de weergavereeks te wijzigen. In het volgende voorbeeld worden Franse gegevens naar de onderkant van de lijst verplaatst. Dit betekent dat de gegevens in de laatste kolom worden weergegeven.
 
@@ -201,7 +201,7 @@ Verplaats de lijnen om de weergavereeks te wijzigen. In het volgende voorbeeld w
 
 De opstelling van maatregelen, lijnen en kolommen kan voor elke maatregel afzonderlijk of in zijn geheel worden uitgevoerd. Met een specifiek pictogram hebt u toegang tot het selectievenster voor de weergavemodus.
 
-* Klik op de knop **[!UICONTROL Edit the configuration of the pivot table]** pictogram om tot het configuratievenster toegang te hebben.
+* Klik op het pictogram **[!UICONTROL Edit the configuration of the pivot table]** om het configuratievenster te openen.
 
   U kunt kiezen of u de labels van maatregelen wilt weergeven en de lay-out (lijnen of kolommen) ervan wilt configureren.
 
@@ -221,11 +221,11 @@ Binnen elke meting kunt u de toe te passen eenheid en opmaak definiëren.
 
 Zodra het rapport wordt gevormd, kunt u het bewaren en het met andere exploitanten delen.
 
-Om dit te doen, klik **[!UICONTROL Show the report properties]** en schakelt u de **[!UICONTROL Share this report]** -optie.
+Klik hiertoe op het pictogram **[!UICONTROL Show the report properties]** en schakel de optie **[!UICONTROL Share this report]** in.
 
 ![](assets/cube_share_option.png)
 
-Geef aan tot welke categorie het rapport behoort en wat de relevantie ervan is. Raadpleeg voor meer informatie hierover de [deze pagina](../../reporting/using/configuring-access-to-the-report.md#report-display-context) aan de **Weergavevolgorde** en **Filteropties definiëren** secties.
+Geef aan tot welke categorie het rapport behoort en wat de relevantie ervan is. Voor meer op dit, verwijs in [ deze pagina ](../../reporting/using/configuring-access-to-the-report.md#report-display-context) naar de **opeenvolging van de Vertoning** en **die de het filtreren opties** secties bepalen.
 
 Om deze veranderingen te bevestigen, moet u het rapport bewaren.
 
@@ -237,7 +237,7 @@ Het is mogelijk filters te maken voor het weergeven van een gedeelte van de gege
 
 Dit doet u als volgt:
 
-1. Klik op de knop **[!UICONTROL Add a filter]** pictogram.
+1. Klik op het pictogram **[!UICONTROL Add a filter]** .
 
    ![](assets/neolap_add_filter.png)
 
@@ -263,7 +263,7 @@ Dit doet u als volgt:
 
 Telkens wanneer een filter wordt gewijzigd (voeg toe, verwijder, verander), moet het rapport worden opnieuw berekend.
 
-U kunt ook filters maken op basis van een selectie. Hiervoor selecteert u de broncellen, -lijnen en -kolommen en klikt u op de knop **[!UICONTROL Add a filter]** pictogram.
+U kunt ook filters maken op basis van een selectie. Hiervoor selecteert u de broncellen, -lijnen en -kolommen en klikt u op het pictogram **[!UICONTROL Add a filter]** .
 
 Als u een lijn, kolom of cel wilt selecteren, klikt u er met de linkermuisknop op. Klik nogmaals om de selectie op te heffen.
 

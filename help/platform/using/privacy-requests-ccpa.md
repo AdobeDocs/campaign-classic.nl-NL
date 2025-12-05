@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 94%
@@ -83,11 +83,11 @@ Vervolgens moet u ervoor zorgen dat u de persoonsgegevens van profielen die zich
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configureer de lijst met ontvangers om de opt-outkolom te tonen. Raadpleeg de [gedetailleerde documentatie](../../platform/using/adobe-campaign-workspace.md#configuring-lists) om te leren hoe u lijsten configureert.
+1. Configureer de lijst met ontvangers om de opt-outkolom te tonen. Raadpleeg de [gedetailleerde documentatie](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists) om te leren hoe u lijsten configureert.
 
    ![](assets/privacy-ccpa-6.png)
 
-1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Voor meer informatie over filters, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de opt-outgegevens. U kunt ook een filter maken om alleen ontvangers te tonen die zich hebben afgemeld. Voor meer informatie over filters, verwijs naar de [ Campagne v8 (console) documentatie ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

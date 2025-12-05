@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 36%
@@ -25,11 +25,11 @@ Met Adobe Campaign kunt u de platformconfiguratie en data via een pakketsysteem 
 
 Met datapakketten kunnen entiteiten van de Adobe Campaign-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn data vertegenwoordigd.
 
-Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie uitvoeren en het in een ander systeem van Adobe Campaign integreren. Leer hoe te om een verenigbare reeks gegevenspakketten in deze [&#x200B; sectie &#x200B;](#data-package-best-practices) te handhaven.
+Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie uitvoeren en het in een ander systeem van Adobe Campaign integreren. Leer hoe te om een verenigbare reeks gegevenspakketten in deze [ sectie ](#data-package-best-practices) te handhaven.
 
 >[!NOTE]
 >
->Meer over gegevenspakketten leren, gelieve te verwijzen naar de [&#x200B; Campagne v8 documentatie.](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Meer over gegevenspakketten leren, gelieve te verwijzen naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
@@ -114,7 +114,7 @@ For the three types of packages, the assistant offers the following steps:
 
    >[!NOTE]
    >
-   >The query editor is presented in [this section](../../platform/using/about-queries-in-campaign.md).
+   >The query editor is presented in [this section](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 1. Click **[!UICONTROL Next]** and select the sorting columns to order the data during extraction:
 

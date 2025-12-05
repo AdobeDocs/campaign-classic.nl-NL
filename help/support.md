@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 62%
@@ -48,7 +48,7 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemen met prestaties en doorvoer</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">Leveringsprestaties</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Workflowprestaties optimaliseren</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Workflowprestaties optimaliseren</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">Leveringsfouten begrijpen</a></li>
@@ -56,14 +56,14 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=nl-NL" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Aanbevolen werkwijzen voor workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Technische werkstroomcontrole</a></li>
-        <li><a href="https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Trackingbeheer begrijpen</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Trackingbeheer begrijpen</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Controlemiddelen detecteren</a></li>
         <li><a href="platform/using/import-export-workflows.md">Gegevens importeren met workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Berichten verzenden in meerdere golven</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">E-mailinhoud ontwerpen</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=nl-NL" target="_blank">Best practices voor leveringen</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practices voor leveringen</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -74,7 +74,7 @@ Krijg ondersteuning via onze veelgestelde vragen, best practices, online hulpbro
         <li><a href="delivery/using/delivery-failures-quarantine.md">Quarantainebeheer begrijpen</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Controlelijst voor beveiliging en privacy</a></li>
         <li><a href="platform/using/privacy-management.md">Privacy- en toestemmingsbeheer</a></li>
-        <li><a href="platform/using/about-queries-in-campaign.md">Een query ontwerpen</a></li>
+        <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Een query ontwerpen</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Voorbeelden van query’s</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Een workflow maken</a></li>
         </ul>
@@ -95,7 +95,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [&#x200B; bouwt GA &#x200B;](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
+>Merk op dat uw instantie op AWS moet worden ontvangen en met de recentste [ bouwt GA ](rn/using/rn-overview.md) wordt bevorderd. Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -103,11 +103,11 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### Veelgestelde vragen over configuratiescherm
 
-[Klik hier &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
+[Klik hier ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=nl) om de veelgestelde vragen over het Campaign-configuratiescherm te openen. 
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=nl-NL) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -119,27 +119,27 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Instantie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het Configuratiescherm kunt beheren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [&#x200B; voegt IPs op de lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=nl-NL) toe om tot uw instantie(s) van de Campagne toegang te hebben
-* [&#x200B; beheer URL toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
-* [&#x200B; de instantiedetails van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=nl-NL)
-* [&#x200B; beheert GPG sleutels voor gegevensencryptie &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
+* [ voegt IPs op de lijst van gewenste personen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [ beheer URL toestemmingen ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
+* [ de instantiedetails van de Toegang ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [ beheert GPG sleutels voor gegevensencryptie ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=nl)
 
 ## Vragen om hulp {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Het nieuwe ticketing systeem is gelanceerd door [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
+Het nieuwe ticketing systeem is gelanceerd door [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Voor het nieuwe systeem zijn nieuwe individuele accounts nodig voor elke gebruiker, met de juiste toestemmingen. Als u zich niet kunt aanmelden met uw Adobe ID, kunt u om toegang vragen via de Experience League. Het klantenserviceteam helpt u dan zo snel mogelijk. [Meer informatie](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [&#x200B; sluit zich aan bij het gesprek &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [ sluit zich aan bij het gesprek ](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Downloadcentrum voor campagne openen
 
-Als Beheerder van de Campagne, doorblader aan [&#x200B; deze pagina &#x200B;](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
+Als Beheerder van de Campagne, doorblader aan [ deze pagina ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) om tot de Distributie van de Software van Experience Cloud toegang te hebben.
 
 ### Een ticket maken of een chat starten
 
 U kunt een ticket maken om contact op te nemen met de Adobe-klantenondersteuning voor problemen die u ondervindt in Adobe-producten. In de Adobe Admin Console kunt u chatten met de Adobe-klantenondersteuning om uw problemen op te lossen.
 
-Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.
+Om een kwestie te registreren of een praatjezitting in dat nieuwe systeem te beginnen, verbind met [ Adobe Admin Console ](https://adminconsole.adobe.com/overview){_blank}. Volg de gedetailleerde procedure die op [deze pagina](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html){_blank} wordt beschreven.

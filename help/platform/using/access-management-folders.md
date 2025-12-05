@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 hidefromtoc: true
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schri
 
 >[!NOTE]
 >
->Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Meer over toestemmingen op omslagen leren, gelieve te verwijzen naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappen en weergaven {#folders-and-views}
@@ -35,7 +35,7 @@ Mappen zijn knooppunten in Adobe Campaign-structuur. Deze knooppunten worden gem
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-U kunt de boomstructuur van de Explorer aanpassen. Leer configuratiestappen en beste praktijken [&#x200B; in deze sectie &#x200B;](adobe-campaign-workspace.md).
+U kunt de boomstructuur van de Explorer aanpassen. Leer configuratiestappen en beste praktijken [ in deze sectie ](adobe-campaign-workspace.md).
 
 ### Wat is een weergave {#about-views}
 
@@ -67,21 +67,21 @@ In het onderstaande voorbeeld maken we nieuwe mappen waarin specifieke gegevens 
 1. Creeer een nieuwe **[!UICONTROL Deliveries]** typeomslag, en noem het **levert Frankrijk**.
 1. Klik met de rechtermuisknop op deze map en selecteer **[!UICONTROL Properties...]** .
 
-   ![&#x200B; Schermafbeelding die een juiste klik tonen in de eigenschappen &#x200B;](assets/s_ncs_user_add_folder_exple.png)
+   ![ Schermafbeelding die een juiste klik tonen in de eigenschappen ](assets/s_ncs_user_add_folder_exple.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Restriction]** de optie **[!UICONTROL This folder is a view]** . Alle leveringen in het gegevensbestand zullen dan worden getoond.
 
-   ![&#x200B; Scherm die het meningsvakje tonen dat wordt gecontroleerd &#x200B;](assets/s_ncs_user_add_folder_exple01.png)
+   ![ Scherm die het meningsvakje tonen dat wordt gecontroleerd ](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Bepaal de criteria van de leveringsfilter van de vraagredacteur in het midden sectie van het venster: de campagnes die aan de bepaalde filter beantwoorden zullen dan worden getoond.
 
    >[!NOTE]
    >
-   >De vraagredacteur wordt voorgesteld in [&#x200B; deze sectie &#x200B;](../../platform/using/about-queries-in-campaign.md).
+   >De vraagredacteur wordt voorgesteld in [ deze sectie ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    Met de volgende filtervoorwaarden:
 
-![&#x200B; Schermafbeelding die de verschillende filtervoorwaarden tonen &#x200B;](assets/s_ncs_user_add_folder_exple00.png)
+![ Schermafbeelding die de verschillende filtervoorwaarden tonen ](assets/s_ncs_user_add_folder_exple00.png)
 
 De volgende leveringen worden weergegeven in de weergave:
 
@@ -89,7 +89,7 @@ De volgende leveringen worden weergegeven in de weergave:
 
 >[!NOTE]
 >
->Wanneer het beheren van [&#x200B; transactieoverseinen &#x200B;](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten de **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot de kwesties van het toegangsrecht zou kunnen leiden. Voor meer op gebeurtenisinzameling, zie [&#x200B; deze sectie &#x200B;](../../message-center/using/about-event-processing.md#event-collection).
+>Wanneer het beheren van [ transactieoverseinen ](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten de **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot de kwesties van het toegangsrecht zou kunnen leiden. Voor meer op gebeurtenisinzameling, zie [ deze sectie ](../../message-center/using/about-event-processing.md#event-collection).
 
 <!--
 ## Permissions on a folder
