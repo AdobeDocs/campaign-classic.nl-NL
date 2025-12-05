@@ -89,7 +89,7 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Berichten verzenden</strong><br/><a href="delivery/using/communication-channels.md">Communicatiekanalen</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Proeven verzenden</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B-tests</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Berichten bijhouden</a> - <a href="delivery/using/about-deliverability.md">Leverbaarheid</a> - <a href="message-center/using/about-transactional-messaging.md">Transactieberichten</a>
+      <strong>Berichten verzenden</strong><br/><a href="delivery/using/communication-channels.md">Communicatiekanalen</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Proeven verzenden</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B-tests</a> - <a href="https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Berichten bijhouden</a> - <a href="delivery/using/about-deliverability.md">Leverbaarheid</a> - <a href="message-center/using/about-transactional-messaging.md">Transactieberichten</a>
     </td>
   </tr>
   <tr style="border: 0;">
