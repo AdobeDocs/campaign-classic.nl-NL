@@ -7,9 +7,9 @@ user-guide-title: Gids voor Campaign Classic v7
 user-guide-description: Productdocumentatie voor Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 99%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 99%
    + [Lijsten verkennen en aanpassen - VERBORGEN](platform/using/adobe-campaign-ui-lists.md)
    + [Opsommingen - VERBORGEN](platform/using/managing-enumerations.md)
    + [Campaign-connectoren](platform/using/about-connectors.md)
-   + [Query’s maken in Campaign](platform/using/about-queries-in-campaign.md)
    + Veelgestelde vragen {#faq}
       + [Veelgestelde vragen over Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Buildupgrade](platform/using/faq-build-upgrade.md)
@@ -315,7 +314,7 @@ ht-degree: 99%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases-web-forms.md)
 + Online enquêtes maken {#online-surveys}
-   + [Aan de slag met enquêtes &#x200B;](surveys/using/about-surveys.md)
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
    + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
    + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
    + [Antwoorden beheren](surveys/using/managing-answers.md)
@@ -549,7 +548,7 @@ ht-degree: 99%
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten van transactionele berichten openen &#x200B;](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
