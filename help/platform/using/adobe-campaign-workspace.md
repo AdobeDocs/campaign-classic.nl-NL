@@ -59,7 +59,7 @@ U kunt kiezen uit de volgende talen:
 * Duits
 * Japans
 
-De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Voor meer op dit, verwijs naar de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Voor meer informatie over hoe te om een instantie tot stand te brengen, verwijs naar deze [&#x200B; pagina &#x200B;](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee h
 
 Meer over de ontdekkingsreiziger van Adobe Campaign leren, verwijs naar deze pagina&#39;s in de **Campagne v8 (console) documentatie**:
 
-* [&#x200B; overzicht van het gebruikersinterface van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [&#x200B; overzicht van het gebruikersinterface van de Campagne &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [&#x200B; montages UI van de Campagne &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -125,7 +125,7 @@ Het filtreren van gegevens is het proces om een dataset aan slechts die verslage
 
 Tijdens het bladeren in Campagne worden gegevens weergegeven in lijsten. U kunt ingebouwde filters toepassen om tot een bepaalde ondergroep, zoals quarantined adressen, niet-gerichte ontvangers, of verslagen binnen een specifieke leeftijdswaaier of aanmaakdatum snel toegang te hebben. Bovendien kunt u aangepaste filters maken, deze opslaan voor toekomstig gebruik en deze delen met andere campagnegebruikers.
 
-Leer hoe te **toegang, ontwerp en aandeelfilters** in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Leer hoe te **toegang, ontwerp en aandeelfilters** in de [&#x200B; Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ### De database opvragen{#about-queries-in-campaign}
 
@@ -145,23 +145,23 @@ De generische vraagredacteur centraliseert alle het vragen mogelijkheden. Het st
 
 >[!TAB  Vraag het gegevensbestand ]
 
-De stappen om een vraag tot stand te brengen zijn gedetailleerd in **[Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+De stappen om een vraag tot stand te brengen zijn gedetailleerd in **[Campagne v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB  voeg een vraag in een werkschema toe ]
 
-Leer de belangrijkste stappen met betrekking tot de vraagverwezenlijking in de context van een werkschema in de **[Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+Leer de belangrijkste stappen met betrekking tot de vraagverwezenlijking in de context van een werkschema in de **[Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB  voorwaarden van de Filter ]
 
-Om uw vraag te ontwerpen, moet u de het filtreren voorwaarden in de vraagredacteur selecteren. De beschikbare mogelijkheden en gebruiksgevallen zijn gedetailleerd in de **[documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Om uw vraag te ontwerpen, moet u de het filtreren voorwaarden in de vraagredacteur selecteren. De beschikbare mogelijkheden en gebruiksgevallen zijn gedetailleerd in de **[documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![afbeelding](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
@@ -177,7 +177,7 @@ Een opsomming (ook wel een gedetailleerde lijst genoemd) is een vooraf gedefinie
 
 Wanneer deze zijn gedefinieerd, worden de waarden weergegeven in een vervolgkeuzelijst. Een waarde kan rechtstreeks worden geselecteerd of worden ingevoerd met behulp van voorspellende invoer, die overeenkomende items voorstelt en voltooit. Sommige velden bevatten vooraf gedefinieerde opsommingen en indien nodig kunnen aanvullende opsommingen worden gemaakt.
 
-Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
+Leer meer hoe te **met opsommingen** in [&#x200B; Adobe Campaign v8 (console) documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank} werken.
 
 ## Video over zelfstudie {#video}
 
