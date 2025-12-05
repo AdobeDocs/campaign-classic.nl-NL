@@ -102,7 +102,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 1. Selecteer de verzamelingen die u wilt verplaatsen naar de primaire record en de velden die u wilt bijwerken.
 
-   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Voor meer op dit, verwijs naar deze [ sectie ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
+   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Voor meer op dit, verwijs naar deze [&#x200B; sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
 
    Dan ga de voorwaarden in om met de regel rekening te houden.
 
@@ -118,7 +118,7 @@ Gegevens voor secundaire records worden gekoppeld aan het hoofdrecord als de ged
 
 ## Voorbeeld: Gegevens bijwerken na een verrijking {#example--update-data-following-an-enrichment}
 
-De [ Stap 2: Het schrijven van verrijkte gegevens aan de lijst van &quot;Aankopen&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sectie van het gebruiksgeval dat de details die tot een rechthoeklijst leiden een voorbeeld van een gegevensupdate na een verrijkingsactiviteit aanbieden.
+De [&#x200B; Stap 2: Het schrijven van verrijkte gegevens aan de lijst van &quot;Aankopen&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sectie van het gebruiksgeval dat de details die tot een rechthoeklijst leiden een voorbeeld van een gegevensupdate na een verrijkingsactiviteit aanbieden.
 
 ## Invoerparameters {#input-parameters}
 

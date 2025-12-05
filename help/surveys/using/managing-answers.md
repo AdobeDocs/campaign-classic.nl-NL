@@ -96,7 +96,7 @@ Voor elk formulier kunnen de antwoorden worden gebruikt in velden of labels. Geb
 
 >[!NOTE]
 >
->Voor andere types van gebieden, wordt de syntaxis gedetailleerd in [ deze sectie ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
+>Voor andere types van gebieden, wordt de syntaxis gedetailleerd in [&#x200B; deze sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ### Opslaginstellingen {#storage-settings}
 

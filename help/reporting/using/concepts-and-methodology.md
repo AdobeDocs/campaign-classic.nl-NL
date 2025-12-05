@@ -24,9 +24,9 @@ Met Binding kunt u de gegevensweergave vereenvoudigen door waarden te groeperen 
 
 Er zijn in totaal drie typen binding beschikbaar:
 
-1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). Voor meer op dit, verwijs naar [ het bepalen van elke bak ](#defining-each-bin).
-1. Afhankelijk van de waarden van een opsomming worden dynamisch alle andere waarden gegroepeerd in &#39;Overige&#39;, waarbij alleen de waarden in de opsomming worden weergegeven. Voor meer op dit, verwijs naar [ dynamisch het leiden bins ](#dynamically-managing-bins).
-1. Met waardebereiken worden alle andere reeksen gegroepeerd. Bijvoorbeeld 18- tot 25-jarigen, 26- tot 59-jarigen en de andere. Voor meer op dit, verwijs naar [ Creërend waardewaaiers ](#creating-value-ranges).
+1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). Voor meer op dit, verwijs naar [&#x200B; het bepalen van elke bak &#x200B;](#defining-each-bin).
+1. Afhankelijk van de waarden van een opsomming worden dynamisch alle andere waarden gegroepeerd in &#39;Overige&#39;, waarbij alleen de waarden in de opsomming worden weergegeven. Voor meer op dit, verwijs naar [&#x200B; dynamisch het leiden bins &#x200B;](#dynamically-managing-bins).
+1. Met waardebereiken worden alle andere reeksen gegroepeerd. Bijvoorbeeld 18- tot 25-jarigen, 26- tot 59-jarigen en de andere. Voor meer op dit, verwijs naar [&#x200B; Creërend waardewaaiers &#x200B;](#creating-value-ranges).
 
 Om het binden toe te laten, controleer de aangewezen doos wanneer het creëren van de afmeting.
 
@@ -150,7 +150,7 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * Met de **[!UICONTROL Scheduler]** -activiteit kunt u de frequentie van de berekening-updates definiëren. De planner wordt gedetailleerd in [ deze sectie ](../../workflow/using/scheduler.md).
+   * Met de **[!UICONTROL Scheduler]** -activiteit kunt u de frequentie van de berekening-updates definiëren. De planner wordt gedetailleerd in [&#x200B; deze sectie &#x200B;](../../workflow/using/scheduler.md).
    * Met de activiteit **[!UICONTROL Aggregate update]** kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
 
      Standaard wordt bij elke berekening een volledige update uitgevoerd. Als u een gedeeltelijke update wilt inschakelen, selecteert u de desbetreffende optie en definieert u de updatevoorwaarden.
@@ -161,7 +161,7 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
 De typen metingen worden gedefinieerd op het tabblad **[!UICONTROL Measures]** van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
 
-U kunt zoveel maatregelen maken als nodig zijn: selecteer vervolgens de maatregel die u wilt weergeven of verbergen in de tabel. Voor meer op dit, verwijs naar [ Weergavemaatregelen ](#displaying-measures).
+U kunt zoveel maatregelen maken als nodig zijn: selecteer vervolgens de maatregel die u wilt weergeven of verbergen in de tabel. Voor meer op dit, verwijs naar [&#x200B; Weergavemaatregelen &#x200B;](#displaying-measures).
 
 Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
@@ -185,9 +185,9 @@ Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
 U kunt de weergave van maatregelen in de tabel configureren, afhankelijk van uw behoeften:
 
-* de vertoningsopeenvolging van maatregelen (verwijs naar [ opeenvolging van de Vertoning ](#display-sequence)),
-* de informatie om in het rapport te tonen/te verbergen (verwijs naar [ de vertoning ](#configuring-the-display) vormen)
-* welke maatstaven moeten worden weergegeven: percentage, totaal, aantal decimalen, enz. (verwijs naar [ Verandering het type van getoonde maatregel ](#changing-the-type-of-measure-displayed)).
+* de vertoningsopeenvolging van maatregelen (verwijs naar [&#x200B; opeenvolging van de Vertoning &#x200B;](#display-sequence)),
+* de informatie om in het rapport te tonen/te verbergen (verwijs naar [&#x200B; de vertoning &#x200B;](#configuring-the-display) vormen)
+* welke maatstaven moeten worden weergegeven: percentage, totaal, aantal decimalen, enz. (verwijs naar [&#x200B; Verandering het type van getoonde maatregel &#x200B;](#changing-the-type-of-measure-displayed)).
 
 ### Weergavevolgorde {#display-sequence}
 
@@ -225,7 +225,7 @@ Klik hiertoe op het pictogram **[!UICONTROL Show the report properties]** en sch
 
 ![](assets/cube_share_option.png)
 
-Geef aan tot welke categorie het rapport behoort en wat de relevantie ervan is. Voor meer op dit, verwijs in [ deze pagina ](../../reporting/using/configuring-access-to-the-report.md#report-display-context) naar de **opeenvolging van de Vertoning** en **die de het filtreren opties** secties bepalen.
+Geef aan tot welke categorie het rapport behoort en wat de relevantie ervan is. Voor meer op dit, verwijs in [&#x200B; deze pagina &#x200B;](../../reporting/using/configuring-access-to-the-report.md#report-display-context) naar de **opeenvolging van de Vertoning** en **die de het filtreren opties** secties bepalen.
 
 Om deze veranderingen te bevestigen, moet u het rapport bewaren.
 

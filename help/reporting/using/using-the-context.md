@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-Wanneer u gegevens in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]** wilt vertegenwoordigen, kan het uit twee bronnen worden genomen: een nieuwe vraag (verwijs naar [ een directe filter op gegevens ](#defining-a-direct-filter-on-data)) of de rapportcontext (verwijs naar [ de contextgegevens van het Gebruik ](#using-context-data)) bepalen.
+Wanneer u gegevens in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]** wilt vertegenwoordigen, kan het uit twee bronnen worden genomen: een nieuwe vraag (verwijs naar [&#x200B; een directe filter op gegevens &#x200B;](#defining-a-direct-filter-on-data)) of de rapportcontext (verwijs naar [&#x200B; de contextgegevens van het Gebruik &#x200B;](#using-context-data)) bepalen.
 
 ## Een rechtstreeks filter op gegevens definiëren {#defining-a-direct-filter-on-data}
 
@@ -34,7 +34,7 @@ Klik hiertoe op de koppeling **[!UICONTROL Filter data...]** op het tabblad **[!
 
 In het volgende voorbeeld willen we dat in het diagram alleen de ontvangende profielen worden weergegeven die in Frankrijk wonen en die in het jaar een aankoop hebben gedaan.
 
-Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de koppeling **[!UICONTROL Filter data]** en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Voor meer bij het bouwen van vragen in Adobe Campaign, verwijs naar [ deze sectie ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
+Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de koppeling **[!UICONTROL Filter data]** en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Voor meer bij het bouwen van vragen in Adobe Campaign, verwijs naar [&#x200B; deze sectie &#x200B;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -71,7 +71,7 @@ Op de pagina die de tabel of het diagram bevat, kunt u met het tabblad **[!UICON
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Met de optie **[!UICONTROL New query]** kunt u een query voor het verzamelen van gegevens maken. Voor meer op dit, verwijs naar [ bepaal een directe filter op gegevens ](#defining-a-direct-filter-on-data).
+* Met de optie **[!UICONTROL New query]** kunt u een query voor het verzamelen van gegevens maken. Voor meer op dit, verwijs naar [&#x200B; bepaal een directe filter op gegevens &#x200B;](#defining-a-direct-filter-on-data).
 * Met de optie **[!UICONTROL Context data]** kunt u de invoergegevens gebruiken: de context van het rapport valt samen met de informatie in de binnenkomende overgang van de pagina die de tabel of tabel bevat. Deze context kan bijvoorbeeld gegevens bevatten die zijn verzameld via een **[!UICONTROL Query]** -activiteit die vóór de **[!UICONTROL Page]** -activiteit is geplaatst en waarvoor u de tabel en de velden wilt opgeven waarop het rapport betrekking heeft.
 
 Bijvoorbeeld, in een vraagvakje, bouw de volgende vraag voor de ontvangers:

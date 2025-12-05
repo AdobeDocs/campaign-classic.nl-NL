@@ -25,11 +25,11 @@ Met Adobe Campaign kunt u de platformconfiguratie en data via een pakketsysteem 
 
 Met datapakketten kunnen entiteiten van de Adobe Campaign-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn data vertegenwoordigd.
 
-Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie uitvoeren en het in een ander systeem van Adobe Campaign integreren. Leer hoe te om een verenigbare reeks gegevenspakketten in deze [ sectie ](#data-package-best-practices) te handhaven.
+Het beginsel van **gegevenspakketten** moet een gegevensconfiguratie uitvoeren en het in een ander systeem van Adobe Campaign integreren. Leer hoe te om een verenigbare reeks gegevenspakketten in deze [&#x200B; sectie &#x200B;](#data-package-best-practices) te handhaven.
 
 >[!NOTE]
 >
->Meer over gegevenspakketten leren, gelieve te verwijzen naar de [ Campagne v8 documentatie.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Meer over gegevenspakketten leren, gelieve te verwijzen naar de [&#x200B; Campagne v8 documentatie.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
