@@ -60,8 +60,8 @@ Regelmatige onderhoudstaken omvatten:
 >
 >Uitgebreide instructies voor het oplossen van problemen met de levering worden beschreven in de documentatie bij Campagne v8, die van toepassing is op zowel Campaign Classic v7- als Campagne v8-gebruikers:
 >
->* Gemeenschappelijke leveringsmislukkingen en oplossingen: [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Trage leveringsdiagnose: [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Gemeenschappelijke leveringsmislukkingen en oplossingen: [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Trage leveringsdiagnose: [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* De beste praktijken van de levering: [&#x200B; Beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >Deze sectie documenteert **het v7-specifieke oplossen van problemen van Campaign Classic** voor hybride en op-gebouw plaatsingen.
@@ -100,13 +100,13 @@ Controleer de workflowstatus in **[!UICONTROL Administration]** > **[!UICONTROL 
 
 >[!NOTE]
 >
->Voor gebruikers van Campagne v8 Managed Cloud Services worden de technische workflows en de infrastructuurbewaking beheerd door Adobe. De nadruk op leveringsinhoud en het richten zoals die in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} wordt beschreven.
+>Voor gebruikers van Campagne v8 Managed Cloud Services worden de technische workflows en de infrastructuurbewaking beheerd door Adobe. De nadruk op leveringsinhoud en het richten zoals die in de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} wordt beschreven.
 
 ## Verwante onderwerpen
 
-* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
 * [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
-* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringen van de Monitor in Campagne UI &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (de documentatie van de Campagne v8)
 * [&#x200B; onderhoud van het Gegevensbestand &#x200B;](../../production/using/recommendations.md) (v7 hybride/op-gebouw)
 * [&#x200B; E-mailleverbaarheid &#x200B;](../../installation/using/email-deliverability.md) (v7 hybride/op-gebouw)
 * [&#x200B; prestaties van het Gegevensbestand &#x200B;](../../production/using/database-performances.md) (v7 hybride/op-gebouw)

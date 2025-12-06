@@ -16,12 +16,12 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Voor **algemene het volgen begeleiding** die op zowel Campaign Classic v7 als Campagne v8 van toepassing is, verwijs naar de [&#x200B; het volgen van het Bericht van de Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
+>Voor **algemene het volgen begeleiding** die op zowel Campaign Classic v7 als Campagne v8 van toepassing is, verwijs naar de [&#x200B; het volgen van het Bericht van de Campagne v8 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [&#x200B; vorm getraceerde verbindingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [Opties voor URL-tracking configureren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [&#x200B; spoor gepersonaliseerde verbindingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [&#x200B; het volgen van de Toegang logboeken &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [&#x200B; vorm getraceerde verbindingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [Opties voor URL-tracking configureren](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [&#x200B; spoor gepersonaliseerde verbindingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [&#x200B; het volgen van de Toegang logboeken &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [Tracking testen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [&#x200B; het Volgen rapporten &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +82,7 @@ Met de optie Web application tracking kunt u het webgedrag van eindgebruikers di
 
 De volgende het oplossen van problemenuiteinden zijn op **hybride/op-gebouw plaatsingen van Campaign Classic v7** van toepassing. Sommige informatie kan ook van toepassing zijn op on-premise implementaties van Campagne v8. Neem voor Campagne v8 Managed Cloud Services contact op met uw Adobe-vertegenwoordiger voor hulp.
 
-Voor basis het volgen van het oplossen van problemenstappen in Campagne v8, verwijs naar het [&#x200B; Oplossen van problemen die in de documentatie van Campagne v8 volgen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Voor basis het volgen van het oplossen van problemenstappen in Campagne v8, verwijs naar het [&#x200B; Oplossen van problemen die in de documentatie van Campagne v8 volgen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Basiscontroles {#basic-checks}
 

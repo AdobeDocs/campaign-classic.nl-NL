@@ -18,14 +18,14 @@ ht-degree: 1%
 >
 >Uitgebreide instructies over leveringstekorten en quarantainebeheer worden beschreven in de documentatie van Campagne v8. Deze inhoud is van toepassing op gebruikers van Campaign Classic v7 en Campagne v8:
 >
->* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - behandelt mislukkingstypes, foutenredenen, synchrone/asynchrone fouten, herprobeert beheer, en het oplossen van problemen
->* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - behandelt quarantaine vs lijst van gewezen personen, zachte foutendrempels, quarantainerapporten, en adresverwijdering
+>* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - behandelt mislukkingstypes, foutenredenen, synchrone/asynchrone fouten, herprobeert beheer, en het oplossen van problemen
+>* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - behandelt quarantaine vs lijst van gewezen personen, zachte foutendrempels, quarantainerapporten, en adresverwijdering
 >
 >Deze pagina documenteert **Campaign Classic v7-specifieke configuratie** voor stuit post en quarantainebeheer in hybride en op-gebouw plaatsingen.
 
 ## Leveringsfouten begrijpen
 
-Voor gemeenschappelijke concepten van de leveringsmislukking, foutentypes, en het oplossen van problemenbegeleiding, verwijs naar de [&#x200B; Campagne v8 die de documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} begrijpen.
+Voor gemeenschappelijke concepten van de leveringsmislukking, foutentypes, en het oplossen van problemenbegeleiding, verwijs naar de [&#x200B; Campagne v8 die de documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} begrijpen.
 
 ## Bounce mail-configuratie {#bounce-mail-config}
 
@@ -127,7 +127,7 @@ Deze regels zijn beschikbaar in de plaatsingstovenaar en kunnen worden aangepast
 
 * **[!UICONTROL Limit]**: het maximale aantal berichten dat per tijdsperiode is toegestaan.
 
-* **[!UICONTROL Type]**: het fouttype (hard, zacht of genegeerd) dat wordt gebruikt om het verzendgedrag te bepalen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} voor foutentype definities.
+* **[!UICONTROL Type]**: het fouttype (hard, zacht of genegeerd) dat wordt gebruikt om het verzendgedrag te bepalen. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} voor foutentype definities.
 
 Voor meer op MX beheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../installation/using/email-deliverability.md#about-mx-rules).
 
@@ -137,7 +137,7 @@ Voor meer op MX beheer, verwijs naar [&#x200B; deze sectie &#x200B;](../../insta
 
 ## Quarantainebeheer {#quarantine-management}
 
-Voor uitvoerige richtlijnen van het quarantainebeheer, verwijs naar de [&#x200B; het beheersdocumentatie van de Campagne v8 Quarantine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
+Voor uitvoerige richtlijnen van het quarantainebeheer, verwijs naar de [&#x200B; het beheersdocumentatie van de Campagne v8 Quarantine &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
 
 ## Quarantaineconfiguratie {#quarantine-config}
 
@@ -189,7 +189,7 @@ Voor Campaign Classic v7 volgen pushmeldingen het algemene quarantainemechanisme
 
 Voor **iOS** en **Android** dupberichten, gebruikt het quarantainemechanisme apparatentokens eerder dan e-mailadressen. Wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd, wordt het bijbehorende token in quarantaine geplaatst.
 
-Voor gedetailleerde informatie over de scenario&#39;s van de duw- bericht quarantaine (de foutentypes van iOS en van Android, retry gedrag, enz.), verwijs naar de [&#x200B; Begrijpende documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die uitvoerige het type van de dupmeldingsfout lijsten omvat.
+Voor gedetailleerde informatie over de scenario&#39;s van de duw- bericht quarantaine (de foutentypes van iOS en van Android, retry gedrag, enz.), verwijs naar de [&#x200B; Begrijpende documentatie van de leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die uitvoerige het type van de dupmeldingsfout lijsten omvat.
 
 ### SMS-quarantainespecificaties {#sms-quarantine-specifics}
 
@@ -201,14 +201,14 @@ Het quarantainemechanisme van SMS varieert afhankelijk van de gebruikte schakela
 
 * **Uitgebreide generische schakelaar SMPP**: Het beheer van de fout wordt behandeld verschillend gebruikend regelmatige uitdrukkingen (regexes) om de berichten van het Rapport van de Status (SR) te ontleden die door de leverancier SMSC zijn teruggekeerd.
 
-Voor gedetailleerde informatie over de quarantainescenario&#39;s van SMS en foutentypes, verwijs naar [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} documentatie die uitvoerige de foutenentabellen van SMS omvat.
+Voor gedetailleerde informatie over de quarantainescenario&#39;s van SMS en foutentypes, verwijs naar [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} documentatie die uitvoerige de foutenentabellen van SMS omvat.
 
 ## Verwante onderwerpen
 
-* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
-* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; Begrijpend leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; het beheer van de quarantaine &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8)
 * [&#x200B; beste praktijken van de Levering &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (de documentatie van de Campagne v8)
-* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
+* [&#x200B; leveringsstatussen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (de documentatie van de Campagne v8)
 * [&#x200B; het schoonmaakbeurtenwerkschema van het Gegevensbestand &#x200B;](../../production/using/database-cleanup-workflow.md) (v7 hybride/op-gebouw)
 * [&#x200B; vorm levering opnieuw probeert &#x200B;](communication-channels.md) (v7 hybride/op-gebouw)
 * [&#x200B; stuitkwalificatie van de update &#x200B;](update-bounce-qualification.md) (v7 hybride/op-gebouw)

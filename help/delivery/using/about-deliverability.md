@@ -79,8 +79,8 @@ Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal
 
 Raadpleeg de volgende secties voor meer informatie hierover:
 
-* [&#x200B; begrijp leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids)
-* [&#x200B; begrijp quarantainebeheer &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids)
+* [&#x200B; begrijp leveringsmislukkingen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids)
+* [&#x200B; begrijp quarantainebeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (de documentatie van de Campagne v8 - uitvoerige gids)
 
 ### Gereedschappen voor bewaking en rapportage gebruiken
 

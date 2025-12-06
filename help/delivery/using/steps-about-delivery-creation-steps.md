@@ -31,7 +31,7 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
 1. **verzend de levering**. [Meer informatie](steps-sending-the-delivery.md)
 
-1. **monitor de levering** (het volgen, quarantaine, rapporten, enz.). Voor meer op dit, verwijs naar de [&#x200B; Leveringen van de Controle &#x200B;](about-delivery-monitoring.md) en [&#x200B; het volgen van het Bericht &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} secties.
+1. **monitor de levering** (het volgen, quarantaine, rapporten, enz.). Voor meer op dit, verwijs naar de [&#x200B; Leveringen van de Controle &#x200B;](about-delivery-monitoring.md) en [&#x200B; het volgen van het Bericht &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} secties.
 
 >[!NOTE]
 >
