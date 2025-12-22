@@ -4,9 +4,9 @@ product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,9 +77,10 @@ In 2024 komt er een versie met enkele belangrijke wijzigingen voor de service FC
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+      
+<img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong> krijgen begonnen </strong><br/> <a href="platform/using/adobe-campaign-workspace.md"> gebruikersinterface </a> - <a href="platform/using/launching-adobe-campaign.md"> verbindt met Campagne </a> - <a href="platform/using/get-started-data-import-export.md"> invoer &amp; de uitvoergegevens </a> - <a href="platform/using/access-management.md"> Toestemmingen </a>
+      <strong>Aan de slag</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Gebruikersinterface</a> - <a href="platform/using/launching-adobe-campaign.md">Verbinding maken met Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Gegevens importeren en exporteren</a> - <a href="platform/using/access-management.md">Machtigingen</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
