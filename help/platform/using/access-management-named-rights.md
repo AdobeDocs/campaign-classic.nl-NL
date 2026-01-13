@@ -25,13 +25,13 @@ Deze rechten zijn als volgt:
 
   >[!IMPORTANT]
   >
-  >**na het migreren aan IMS:** Zodra u aan het Systeem van Adobe Identity Management (IMS) migreert, zal om het even welk Profiel van het Product of Benoemd Rechts die het woord &quot;admin&quot;in zijn naam (zoals &quot;Beheerders&quot;, &quot;admin&quot;, &quot;admins&quot;, enz.) bevatten automatisch toegang tot het Controlebord van de Campagne verlenen. We raden u aan het gebruik van &quot;admin&quot; in namen van benoemde rechten of Rol te vermijden, tenzij u van plan bent dat deze gebruikers toegang tot het Configuratiescherm hebben. Leer meer over [ migratie IMS ](../../technotes/using/migrate-users-to-ims.md) en [ het leiden toegang van het Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**na het migreren aan IMS:** Zodra u aan het Systeem van Adobe Identity Management (IMS) migreert, zal om het even welk Profiel van het Product of Benoemd Rechts die het woord &quot;admin&quot;in zijn naam (zoals &quot;Beheerders&quot;, &quot;admin&quot;, &quot;admins&quot;, enz.) bevatten automatisch toegang tot het Controlebord van de Campagne verlenen. We raden u aan het gebruik van &quot;admin&quot; in namen van benoemde rechten of Rol te vermijden, tenzij u van plan bent dat deze gebruikers toegang tot het Configuratiescherm hebben. Leer meer over [&#x200B; migratie IMS &#x200B;](../../technotes/using/migrate-users-to-ims.md) en [&#x200B; het leiden toegang van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: U kunt meerdere goedkeuringsstappen instellen in workflows en leveringen om ervoor te zorgen dat het huidige frame is goedgekeurd door een toegewezen operator of groep. Gebruikers met de optie **[!UICONTROL APPROVAL ADMINISTRATION]** kunnen goedkeuringsstappen instellen en ook een operator of groep van operatoren toewijzen die deze stappen moeten goedkeuren.
 
   >[!IMPORTANT]
   >
-  >**na het migreren aan IMS:** Profielen van het Product of de Genoemde Rechten die het woord &quot;admin&quot;bevatten (zoals &quot;Beheerder van de Goedkeuring&quot;) zullen toegang tot het Controlebord van de Campagne verlenen. Leer meer over [ migratie IMS ](../../technotes/using/migrate-users-to-ims.md) en [ het leiden toegang van het Controlebord ](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**na het migreren aan IMS:** Profielen van het Product of de Genoemde Rechten die het woord &quot;admin&quot;bevatten (zoals &quot;Beheerder van de Goedkeuring&quot;) zullen toegang tot het Controlebord van de Campagne verlenen. Leer meer over [&#x200B; migratie IMS &#x200B;](../../technotes/using/migrate-users-to-ims.md) en [&#x200B; het leiden toegang van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL CENTRAL]**: Recht op centraal beheer (Distributed Marketing).
 
@@ -63,7 +63,7 @@ Deze rechten zijn als volgt:
 
 * **[!UICONTROL START DELIVERIES]**: Recht om eerder geanalyseerde leveringen goed te keuren. Na de afleveringsanalyse wordt de levering onderbroken in verschillende goedkeuringsstappen en moet deze worden goedgekeurd om te worden hervat. Gebruikers met de optie **[!UICONTROL START DELIVERIES]** rechts mogen leveringen goedkeuren.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Recht om uw eigen SQL manuscripten te schrijven gebruikend de SQL activiteit van het Beheer van Gegevens, om het werklijsten tot stand te brengen en te bevolken. Verwijs naar de [ documentatie van de Campagne v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Recht om uw eigen SQL manuscripten te schrijven gebruikend de SQL activiteit van het Beheer van Gegevens, om het werklijsten tot stand te brengen en te bevolken. Verwijs naar de [&#x200B; documentatie van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: Recht om werkstromen uit te voeren. Zonder dit recht kunnen gebruikers geen workflows starten, stoppen of opnieuw starten.
 
@@ -77,6 +77,6 @@ Deze rechten zijn als volgt:
 
 Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde mappen in de navigatiehiërarchie en kunnen ze lees-, schrijf- en verwijdermachtigingen verlenen.
 
-De de toegangsrechtenmatrijs van Adobe Campaign is beschikbaar [ hier ](/help/platform/using/assets/access-rights-matrix.pdf).
+De de toegangsrechtenmatrijs van Adobe Campaign is beschikbaar [&#x200B; hier &#x200B;](/help/platform/using/assets/access-rights-matrix.pdf).
 
 [![afbeelding](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
