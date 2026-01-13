@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Campagnebeheerders migreren naar Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
-Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign u ten zeerste aan de modus voor verificatie van eindgebruikers te migreren van de native aanmelding/wachtwoord-verificatie naar Adobe Identity Management System (IMS). Alle exploitanten zouden [&#x200B; het Systeem van Adobe Identity Management (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} moeten uitvoeren om met Campagne te verbinden.
+Als onderdeel van de inspanningen om het beveiligings- en verificatieproces te versterken, raadt Adobe Campaign u ten zeerste aan de modus voor verificatie van eindgebruikers te migreren van de native aanmelding/wachtwoord-verificatie naar Adobe Identity Management System (IMS). Alle exploitanten zouden [&#x200B; het Systeem van Adobe Identity Management (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} moeten uitvoeren om met Campagne te verbinden.
 
 Leer meer over deze migratie in [&#x200B; deze pagina &#x200B;](ac-ims.md).
 
@@ -31,7 +31,7 @@ Deze procedure is van toepassing op alle campagnegebruikers die nog geen verbind
 
 Als de exploitanten in uw organisatie met de cliëntconsole van de Campagne gebruikend hun login/wachtwoord verbinden (alias. (native verificatie), heeft dit invloed op u en moet u deze operator(s) migreren naar Adobe IMS, zoals hieronder beschreven.
 
-De migratie aan [&#x200B; Identity Management Systeem van Adobe (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} is een veiligheidsvereiste om uw milieu&#39;s veilig en gestandaardiseerd te maken, aangezien de meeste andere oplossingen en apps van Adobe Experience Cloud reeds op IMS zijn.
+De migratie aan [&#x200B; Identity Management Systeem van Adobe (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"} is een veiligheidsvereiste om uw milieu&#39;s veilig en gestandaardiseerd te maken, aangezien de meeste andere oplossingen en apps van Adobe Experience Cloud reeds op IMS zijn.
 
 Deze verandering is van toepassing beginnend Campaign Classic v7.4.1 (en recentste [&#x200B; IMS migratie compatibele versies &#x200B;](ac-ims.md#ims-versions)) en is **verplicht** om zich naar Adobe Campaign v8 te bewegen.
 
@@ -41,7 +41,7 @@ Deze verandering is van toepassing beginnend Campaign Classic v7.4.1 (en recents
 >
 >Wanneer u uw gebruikers naar IMS migreert, moet u er rekening mee houden dat elk productprofiel in de Adobe Admin Console dat het woord &quot;admin&quot; in de naam bevat (zoals &quot;Beheerders&quot;, &quot;admin&quot;, &quot;admins&quot;, &quot;approval admin&quot; enz.) automatisch toegang verleent tot het Configuratiescherm. Het Controlebord is een zelfbedienend hulpmiddel dat het aanbrengen van significante veranderingen in de instanties van de Campagne toestaat.
 >
->Controleer zorgvuldig de naamgevingsconventies van het productprofiel om ervoor te zorgen dat alleen geautoriseerde gebruikers toegang hebben tot het Configuratiescherm. Leer meer over het beheren van de toestemmingen van het Controlebord in de [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+>Controleer zorgvuldig de naamgevingsconventies van het productprofiel om ervoor te zorgen dat alleen geautoriseerde gebruikers toegang hebben tot het Configuratiescherm. Leer meer over het beheren van de toestemmingen van het Controlebord in de [&#x200B; documentatie van het Controlebord &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl-NL){target="_blank"}.
 
 
 ## Hoe migreren naar gehoste en Managed Services-omgevingen? {#ims-migration-procedure}
@@ -142,4 +142,4 @@ U kunt de lijst van uw **Operatoren** en hun **Type van Authentificatie** nu zie
 >
 >* [&#x200B; Migratie van technische gebruikers aan de console van Adobe Developer &#x200B;](ims-migration.md)
 >* [&#x200B; de versienota&#39;s van Adobe Campaign Classic v7 &#x200B;](../../rn/using/latest-release.md)
->* [&#x200B; wat is het Systeem van Adobe Identity Management (IMS) &#x200B;](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+>* [&#x200B; wat is het Systeem van Adobe Identity Management (IMS) &#x200B;](https://helpx.adobe.com/nl/enterprise/using/identity.html){target="_blank"}
