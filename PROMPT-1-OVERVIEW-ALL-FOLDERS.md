@@ -9,7 +9,7 @@ ht-degree: 1%
 
 **Génère un rapport Markdown avec vue d&#39;ensemble de tous les files v7**
 
----
+&#x200B;---
 
 ## 📋 PROMPT VOOR KOPIER CE
 
@@ -483,7 +483,7 @@ Make it:
 - ✅ Ready to present to stakeholders
 ```
 
----
+&#x200B;---
 
 ## GEBRUIK
 
@@ -493,7 +493,7 @@ Make it:
 4. **krijgt volledig rapport van de Prijsverhoging**
 5. **sparen als**: `v7-reorganization-overview.md`
 
----
+&#x200B;---
 
 ## UITVOERVOORVERTONING
 

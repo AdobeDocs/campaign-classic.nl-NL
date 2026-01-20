@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Génère un rapport Markdown détaillé pour UN folder avec % de match**
 
----
+&#x200B;---
 
 ## 📋 PROMPT VOOR KOPIER CE
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## GEBRUIK
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **Deeg in Curseur**
 4. **Analyse van de Looppas**
 5. **krijgt volledig rapport van de Prijsverhoging**
 6. **sparen als**: `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## VOORBEELDEN MAP
 
@@ -490,7 +491,7 @@ Probeer met:
 - `/help/platform/using/` (61 bestanden)
 - `/help/web/using/` (26 bestanden)
 
----
+&#x200B;---
 
 ## UITVOERVOORVERTONING
 

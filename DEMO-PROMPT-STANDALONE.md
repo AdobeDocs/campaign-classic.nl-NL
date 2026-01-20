@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **kopiëren-kleef deze volledige herinnering in Cursor/ChatGPT om het even welke omslag te analyseren v7**
 
----
+&#x200B;---
 
 ## 📋 DE PROMPT (KOPIËREN VAN HIER) ⬇️
 
@@ -187,57 +187,27 @@ Generate a complete Markdown report with this structure:
 Generate the complete Markdown report now.
 ```
 
----
+&#x200B;---
 
 ## 🎯 DEMO-INSTRUCTIES
 
-### Stap 1: De prompt weergeven
-1. Dit bestand openen (`DEMO-PROMPT-STANDALONE.md`)
-2. Naar de sectie &quot;PROMPT&quot; schuiven
-3. Zeg: *&quot;Dit is onze geautomatiseerde analyseherinnering&quot;*
+### Stap 1: De prompt weergeven1. Dit bestand openen (`DEMO-PROMPT-STANDALONE.md`)2. Naar de sectie &quot;PROMPT&quot; schuiven3. Zeg: *&quot;Dit is onze geautomatiseerde analyseherinnering&quot;*
 
-### Stap 2: De prompt kopiëren
-1. Selecteer alles van &quot;# de Analyse van de Documentatie van de Campagne v7 aan het eind&quot;
-2. Kopiëren naar klembord
-3. Zeg: *&quot;Ik kopieer enkel de volledige herinnering...&quot;*
+### Stap 2: De prompt kopiëren1. Selecteer alles van &quot;# de Analyse van de Documentatie van de Campagne v7 aan het eind&quot;2. Kopiëren naar klembord3. Zeg: *&quot;Ik kopieer enkel de volledige herinnering...&quot;*
 
-### Stap 3: Plakken en uitvoeren
-1. Cursor openen
-2. De prompt plakken
-3. Zeg: *&quot;...en kleef het in Cursor&quot;*
-4. Druk op Enter
+### Stap 3: Plakken en uitvoeren1. Cursor openen2. De prompt plakken3. Zeg: *&quot;...en kleef het in Cursor&quot;*4. Druk op Enter
 
-### Stap 4: Resultaten tonen
-1. Wachten op genereren (~30-60 seconden)
-2. Door het gegenereerde rapport bladeren
-3. Belangrijke gedeelten markeren:
-   - 📊 Samenvattingsstaten
-   - 📋 Bestand-voor-bestand tabel
-   - ✅ Sectie behouden
-   - 🗑️ Snel wint
-   - 🎯 Uitvoeringsplan
+### Stap 4: Resultaten tonen1. Wachten op genereren (~30-60 seconden)2. Door het gegenereerde rapport bladeren3. Belangrijke gedeelten markeren:   - 📊 Samenvattingsstaten   - 📋 Bestand-voor-bestand tabel   - ✅ Sectie behouden   - 🗑️ Snel wint   - 🎯 Uitvoeringsplan
 
-### Stap 5: Wow Moment
-1. De markeringsvoorvertoning weergeven
-2. Punt uit:
-   - *&quot;111 dossiers automatisch geanalyseerd&quot;*
-   - *&quot;67 veilig te schrappen dossiers (60% vermindering)&quot;*
-   - *&quot;18 v7-specifieke geïdentificeerde dossiers&quot;*
-   - *&quot;Volledig uitvoeringsplan met chronologie&quot;*
+### Stap 5: Wow Moment1. De markeringsvoorvertoning weergeven2. Punt uit:   - *&quot;111 dossiers automatisch geanalyseerd&quot;*   - *&quot;67 veilig te schrappen dossiers (60% vermindering)&quot;*   - *&quot;18 v7-specifieke geïdentificeerde dossiers&quot;*   - *&quot;Volledig uitvoeringsplan met chronologie&quot;*
 
----
+&#x200B;---
 
 ## 💡 DEMO-TIPS
 
-### Interactief maken
-**vraag het publiek**: *&quot;Welke omslag zouden wij moeten analyseren?&quot;*
-- levering ✅ (111 bestanden - indrukwekkend)
-- workflow ✅ (121 bestanden - nog groter)
-- web ✅ (26 bestanden - snelle demo)
-- melden ✅ (32 bestanden, snel)
+### Interactief maken&#x200B;**vraag het publiek**: *&quot;Welke omslag zouden wij moeten analyseren?&quot;*- levering ✅ (111 bestanden - indrukwekkend)- workflow ✅ (121 bestanden - nog groter)- web ✅ (26 bestanden - snelle demo)- melden ✅ (32 bestanden, snel)
 
-### Aanpassen op de vlucht
-**toon flexibiliteit**: Verander de omslagweg in de herinnering:
+### Aanpassen op de vlucht&#x200B;**toon flexibiliteit**: Verander de omslagweg in de herinnering:
 
 ```
 /help/workflow/using/  → Analyze workflows
@@ -245,19 +215,13 @@ Generate the complete Markdown report now.
 /help/platform/using/  → Analyze platform
 ```
 
-### Belangrijkste kenmerken markeren
-1. **Automatisering**: *&quot;Geen nodig handwerk&quot;*
-2. **Nauwkeurigheid**: *&quot;gebruikt v8 documentatie voor vergelijking&quot;*
-3. **Handelbaar**: *&quot;Klaar-om plan met checkboxes uit te voeren&quot;*
-4. **Slim**: *&quot;identificeert v7-specifieke eigenschappen automatisch&quot;*
+### Belangrijkste kenmerken markeren1. **Automatisering**: *&quot;Geen nodig handwerk&quot;*2. **Nauwkeurigheid**: *&quot;gebruikt v8 documentatie voor vergelijking&quot;*3. **Handelbaar**: *&quot;Klaar-om plan met checkboxes uit te voeren&quot;*4. **Slim**: *&quot;identificeert v7-specifieke eigenschappen automatisch&quot;*
 
-### Tijdvergelijking
-**vóór**: *&quot;Handmatige analyse = 2-3 dagen per omslag&quot;*\
-**na**: *&quot;Geautomatiseerde analyse = 30 seconden per omslag&quot;*
+### Tijdvergelijking&#x200B;**vóór**: *&quot;Handmatige analyse = 2-3 dagen per omslag&quot;*\**na**: *&quot;Geautomatiseerde analyse = 30 seconden per omslag&quot;*
 
 **ROI**: *&quot;21 omslagen × 2 dagen = 42 dagen → 15 minuten&quot;*
 
----
+&#x200B;---
 
 ## 📊 VERWACHTE VOORVERTONING UITVOER
 
@@ -304,7 +268,7 @@ Week 2: Badge 18 files
 Week 3: Review 18 files
 ```
 
----
+&#x200B;---
 
 ## 🎬 DEMO-SCRIPT
 
@@ -336,7 +300,7 @@ Week 3: Review 18 files
 **dicht**:
 > &quot;Hetzelfde proces werkt voor alle 21 mappen. Wat vroeger 6 weken duurde, duurt nu 15 minuten.&quot;
 
----
+&#x200B;---
 
 ## 🚀 READY TO DEMO!
 

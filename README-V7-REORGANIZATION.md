@@ -7,9 +7,9 @@ ht-degree: 0%
 ---
 # 📚 v7 Documentation Reorganisation Kit
 
-**{2 herinneringen pour analyser et réorganizer la doc v7 → v8**
+**&lbrace;2 herinneringen pour analyser et réorganizer la doc v7 → v8**
 
----
+&#x200B;---
 
 ## 📁 Fichiers
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | Analyseren, détaillée d&#39;UN folder avec % match | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## 🚀 Gebruik
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **Kaart**: ~50-60 pagina&#39;sAfname
 
----
+&#x200B;---
 
 ### 2️⃣ Analyze Détaillée d&#39;un Folder
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **Kaart** : ~30-40 pagina&#39;sAfname
 
----
+&#x200B;---
 
 ## 📊 Voorbeeld d&#39;Output
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯 Workflowaanbevolen
 
-### Semaine 1: Vue d&#39;ensemble
-1. Exécuter **Herinnering 1** → Obtenir `v7-reorganization-overview.md`
-2. Prioriteiten voor mappen voor id&#39;s
-3. Deelnemers in de omgeving van partners
+### Semaine 1: Vue d&#39;ensemble1. Exécuter **Herinnering 1** → Obtenir `v7-reorganization-overview.md`2. Prioriteiten voor mappen voor id&#39;s3. Deelnemers in de omgeving van partners
 
-### Semaine 2-4: Analyze détaillée
-1. Pour chaque folder:
-   - Exécuter **Vragen 2**
-   - Obtenir `[folder]-detailed-analysis.md`
-   - Geldigheidsbesluiten
-   - Handelingen van Commentaar
+### Semaine 2-4: Analyze détaillée1. Pour chaque folder:   - Exécuter **Vragen 2**   - Obtenir `[folder]-detailed-analysis.md`   - Geldigheidsbesluiten   - Handelingen van Commentaar
 
-### Semaine 5+ : Exécution
-1. Supprimer les fichiers identifiés (DELETE)
-2. Badger les fichiers v7-only (KEEP)
-3. Migrer le contenu manquant (MOVE)
-4. Revisor les cas ambigus (REVIEW)
+### Semaine 5+ : Exécution1. Supprimer les fichiers identifiés (DELETE)2. Badger les fichiers v7-only (KEEP)3. Migrer le contenu manquant (MOVE)4. Revisor les cas ambigus (REVIEW)
 
----
+&#x200B;---
 
 ## 💡 Tips
 
-### Vragen om kleuren
-- ✅ Copier/coller l&#39;intégralité du prompt
-- ✅ Nieuwe bestandsindeling pas modifier le
-- ✅ Adapter seulement le chemin du folder (Vraag 2)
+### Vragen om kleuren- ✅ Copier/coller l&#39;intégralité du prompt- ✅ Nieuwe bestandsindeling pas modifier le- ✅ Adapter seulement le chemin du folder (Vraag 2)
 
-### Uitvoer van ronddraaiende blokken
-- 📝 Output en Markdown (pas HTML)
-- 🔗 Hiermee worden de cliquables automatisch geladen
-- ✅ Selectievakjes voor tekstspatiëring
-- 📊 Stats et pourcentages
-- 🎨 Emojis et icônes
+### Uitvoer van ronddraaiende blokken- 📝 Output en Markdown (pas HTML)- 🔗 Hiermee worden de cliquables automatisch geladen- ✅ Selectievakjes voor tekstspatiëring- 📊 Stats et pourcentages- 🎨 Emojis et icônes
 
-### Pour l&#39;analyze
-- 🎯 Commencer par les gros folders (levering, workflow)
-- ⚡ Prioriser les quick wins (95-100% overeenkomst)
-- 🔍 Reviewer-handleiding les cas ambigus (&lt;70% overeenkomst)
-- ✅ Grote onderdrukking voor Valideren van gemiddelde kmo&#39;s
+### Pour l&#39;analyze- 🎯 Commencer par les gros folders (levering, workflow)- ⚡ Prioriser les quick wins (95-100% overeenkomst)- 🔍 Reviewer-handleiding les cas ambigus (&lt;70% overeenkomst)- ✅ Grote onderdrukking voor Valideren van gemiddelde kmo&#39;s
 
----
+&#x200B;---
 
 ## ⚠️ Belangrijk
 
-### Avant de supprimer
-1. ✅ Vérifier l&#39;équivalent v8
-2. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7-specific
-3. ✅ Mettre à jour `redirects.csv`
-4. ✅ Valider avec un expert (pour les premiers)
+### Avant de supprimer1. ✅ Vérifier l&#39;équivalent v82. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7-specific3. ✅ Mettre à jour `redirects.csv`4. ✅ Valider avec un expert (pour les premiers)
 
-### Pour les fichiers v7-only
-1. ✅ Ajouter un badge au début du fichier
-2. ✅ Expliquer pourquoi c&#39;est alleen v7
-3. ✅ Levensmiddelen in beperkte mate v8
+### Pour les fichiers v7-only1. ✅ Ajouter un badge au début du fichier2. ✅ Expliquer pourquoi c&#39;est alleen v73. ✅ Levensmiddelen in beperkte mate v8
 
----
+&#x200B;---
 
 ## 🆘 Ondersteuning
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - Uitvoertrop lang → Demander un résumé
 - Besoin d&#39;aide → Ping l&#39;équipe doc
 
----
+&#x200B;---
 
 **Dernière mise à jour** : 2026-01-13
 

@@ -11,7 +11,7 @@ ht-degree: 18%
 **Totale Omslagen**: 21\
 **Totale Dossiers**: ~1.500
 
----
+&#x200B;---
 
 ## 📈 Samenvatting
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 **🎯Geschatte reductie**: 60-75% (1.500 → 400-600 bestanden)
 
----
+&#x200B;---
 
 ## 📁 Mapanalyse op prioriteit
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 | 📂 `/migration/` | 8 | v6.1 → v7 migratie | v7-specifiek | ✅ ALLES BEHOUDEN |
 | **TOTAL** | **108** | **7%** | - | **Badge als v7-slechts** |
 
----
+&#x200B;---
 
 ### 🔴 Prioriteit 2: 60-70% DELETE - hoge duplicatie
 
@@ -54,7 +54,7 @@ ht-degree: 18%
 | 📂 `/campaign/` | 11 | 2 (18%) | 7 (64%) | 1 (9%) | 1 (9%) | Campagnebeheer in v8 |
 | **TOTAL** | **336** | **59** | **190** | **28** | **59** | **Hoog verminderingspotentieel** |
 
----
+&#x200B;---
 
 ### 🟡 Prioriteit 3: 30-50% GEMENGD - Gedetailleerde analyse vereist
 
@@ -68,7 +68,7 @@ ht-degree: 18%
 | 📂 `/message-center/` | 16 | 60% | 30% | Transactieberichten |
 | **TOTAL** | **230** | **~55%** | **~25%** | **vereist omslag-door-omslag overzicht** |
 
----
+&#x200B;---
 
 ## 🎯 Snel winnen - Week 1
 
@@ -89,7 +89,7 @@ ht-degree: 18%
 - ✅ `query.md` (workflow) → `campaign/v8/automation/workflow/query`
 - ✅ `about-workflows.md` → `campaign/v8/automation/workflow`
 
----
+&#x200B;---
 
 ## 📋 Gedetailleerde mapindeling
 
@@ -121,7 +121,7 @@ ht-degree: 18%
 - 🗑️ `creating-an-email-delivery.md` → 95% in `campaign-web/v8/email/create-email`
 - 🗑️ `sms-channel.md` → 90% in `campaign-web/v8/msg/send-sms`
 
----
+&#x200B;---
 
 ### 📂 Workflow (`/help/workflow/using/`) - 121 bestanden
 
@@ -148,7 +148,7 @@ ht-degree: 18%
 - 🗑️ `split.md` → 95% in `campaign/v8/automation/workflow/split`
 - 🗑️ `enrichment.md` → 95% in `campaign/v8/automation/workflow/enrichment`
 
----
+&#x200B;---
 
 ### 📂 Installatie (`/help/installation/using/`) - 75 bestanden
 
@@ -165,7 +165,7 @@ ht-degree: 18%
 
 **Reden**: v8 is wolk-slechts, zijn alle on-premise opstellingsdocumenten v7-specifiek.
 
----
+&#x200B;---
 
 ### 📂 Web (`/help/web/using/`) - 26 bestanden
 
@@ -179,40 +179,19 @@ ht-degree: 18%
 
 **Reden**: v7 heeft het volledige kader van de Toepassingen van het Web, v8 heeft het Aanlanden van Pagina&#39;s vereenvoudigd.
 
----
+&#x200B;---
 
 ## ✅ Actieplan
 
-### Week 1: Verwijdering met grote impact
-- [ ] `/delivery/`: Verwijder 67 bestanden (e-mail, SMS, push-basics)
-- [ ] `/workflow/`: Verwijder 60 bestanden (algemene activiteiten)
-- [ ] `/reporting/`: 22 bestanden verwijderen (standaardrapporten)
-- [ ] `/platform/`: 34 bestanden verwijderen (algemene functies)
-- [ ] `/campaign/`: 7 bestanden verwijderen (campagnebeheer)
-- **Totaal**: 190 schrapte dossiers (13% vermindering)
+### Week 1: Verwijdering met grote impact- [ ] `/delivery/`: Verwijder 67 bestanden (e-mail, SMS, push-basics)- [ ] `/workflow/`: Verwijder 60 bestanden (algemene activiteiten)- [ ] `/reporting/`: 22 bestanden verwijderen (standaardrapporten)- [ ] `/platform/`: 34 bestanden verwijderen (algemene functies)- [ ] `/campaign/`: 7 bestanden verwijderen (campagnebeheer)- **Totaal**: 190 schrapte dossiers (13% vermindering)
 
-### Week 2: v7-specifieke Badging
-- [ ] `/installation/`: 71-bestanden indelen als &quot;alleen on-premise versie 7&quot;
-- [ ] `/mrm/`: Badge 5-bestanden als &quot;Niet beschikbaar in FFDA v8&quot;
-- [ ] `/surveys/`: Badge 8 bestanden als &quot;Niet beschikbaar in FFDA v8&quot;
-- [ ] `/distributed/`: Badge 7-bestanden als &quot;Niet beschikbaar in FFDA v8&quot;
-- [ ] `/web/`: 24 bestanden indelen als &quot;v7-webtoepassingen&quot;
-- **Totaal**: 115 dossiers badged
+### Week 2: v7-specifieke Badging- [ ] `/installation/`: 71-bestanden indelen als &quot;alleen on-premise versie 7&quot;- [ ] `/mrm/`: Badge 5-bestanden als &quot;Niet beschikbaar in FFDA v8&quot;- [ ] `/surveys/`: Badge 8 bestanden als &quot;Niet beschikbaar in FFDA v8&quot;- [ ] `/distributed/`: Badge 7-bestanden als &quot;Niet beschikbaar in FFDA v8&quot;- [ ] `/web/`: 24 bestanden indelen als &quot;v7-webtoepassingen&quot;- **Totaal**: 115 dossiers badged
 
-### Week 3: Inhoud migreren
-- [ ] Tips voor het oplossen van problemen migreren van `/delivery/` naar v8
-- [ ] Best practices voor workflow migreren naar v8
-- [ ] Geavanceerde patronen migreren van `/platform/` naar v8
-- **Totaal**: 40 dossiers gemigreerd toen geschrapt
+### Week 3: Inhoud migreren- [ ] Tips voor het oplossen van problemen migreren van `/delivery/` naar v8- [ ] Best practices voor workflow migreren naar v8- [ ] Geavanceerde patronen migreren van `/platform/` naar v8- **Totaal**: 40 dossiers gemigreerd toen geschrapt
 
-### Week 4: Handmatige revisie
-- [ ] Gemengde inhoud controleren `/configuration/`
-- [ ] Beschikbaarheid van de connector controleren `/integrations/`
-- [ ] Bekijken `/interaction/` biedt motordekking
-- [ ] Status van revisie `/response/` -functie
-- **Totaal**: 50 gereviseerde dossiers en beslist
+### Week 4: Handmatige revisie- [ ] Gemengde inhoud controleren `/configuration/`- [ ] Beschikbaarheid van de connector controleren `/integrations/`- [ ] Bekijken `/interaction/` biedt motordekking- [ ] Status van revisie `/response/` -functie- **Totaal**: 50 gereviseerde dossiers en beslist
 
----
+&#x200B;---
 
 ## 📊 Verwachte resultaten
 
@@ -228,7 +207,7 @@ ht-degree: 18%
 
 **Definitief Doel**: 1.500 → 400-600 dossiers (60-73% vermindering)
 
----
+&#x200B;---
 
 ## 🎯 Succeswaarden
 
@@ -240,7 +219,7 @@ ht-degree: 18%
 | Verbroken koppelingen | 0 | ⏳ In behandeling |
 | Toelating van belanghebbenden | ✅ | ⏳ In behandeling |
 
----
+&#x200B;---
 
 **Laatste bijgewerkte**: 2026-01-13\
 **Volgende Overzicht**: Na Week 1 uitvoering
