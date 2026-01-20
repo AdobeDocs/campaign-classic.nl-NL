@@ -35,11 +35,11 @@ ht-degree: 5%
 |---|---------|----------|---------|-------|--------|
 | 1 | `about-email-channel.md` | [&#x200B; campagne-web/v8/email &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 95% | Basisprincipes van e-mail volledig in v8 | 🗑️ DELETE |
 | 2 | `communication-channels.md` | [&#x200B; campagne-web/v8/msg &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg) | 85% | Kanaaloverzicht in v8 | 🗑️ DELETE |
-| 3 | `steps-about-delivery-creation-steps.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90% | Leveringsproces in v8 | 🗑️ DELETE |
-| 4 | `key-steps-when-creating-a-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90% | Gelijk aan bovenstaande | 🗑️ DELETE |
+| 3 | `steps-about-delivery-creation-steps.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/gs-deliveries) | 90% | Leveringsproces in v8 | 🗑️ DELETE |
+| 4 | `key-steps-when-creating-a-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/gs-deliveries) | 90% | Gelijk aan bovenstaande | 🗑️ DELETE |
 | 5 | `delivery-best-practices.md` | [&#x200B; campagne/v8/send/best-practices &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/best-practices) | 85% | Aanbevolen procedures in v8 | 🗑️ DELETE |
-| 6 | `steps-validating-the-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 80% | Validatie in v8 | 🗑️ DELETE |
-| 7 | `steps-sending-the-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 85% | Verzenden in v8 | 🗑️ DELETE |
+| 6 | `steps-validating-the-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/gs-deliveries) | 80% | Validatie in v8 | 🗑️ DELETE |
+| 7 | `steps-sending-the-delivery.md` | [&#x200B; campagne-web/v8/msg/gs-leveringen &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/gs-deliveries) | 85% | Verzenden in v8 | 🗑️ DELETE |
 | 8 | `deliveries-with-recurring-dates.md` | [&#x200B; campagne-web/v8/workflows &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/workflows) | 70% | Workflowplanner controleren in v8 | 🔍 REVISIE |
 
 **Samenvatting**: 7 DELETE, 0 HOUD, 0 VERPLAATSEN, 1 HERZIENING
@@ -53,7 +53,7 @@ ht-degree: 5%
 | 9 | `creating-an-email-delivery.md` | [&#x200B; campagne-web/v8/email/create-email &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/create-email) | 95% | E-mailontwerp volledig gedocumenteerd | 🗑️ DELETE |
 | 10 | `email-parameters.md` | [&#x200B; campagne-web/v8/email/configure-and-send &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/configure-and-send) | 85% | Instellingen in v8 | 🗑️ DELETE |
 | 11 | `defining-the-email-content.md` | [&#x200B; campagne-web/v8/email/edit-content &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 90% | Inhoud bewerken in v8 | 🗑️ DELETE |
-| 12 | `email-content-templates.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 85% | Sjablonen in v8 | 🗑️ DELETE |
+| 12 | `email-content-templates.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/delivery-template) | 85% | Sjablonen in v8 | 🗑️ DELETE |
 | 13 | `formatting.md` | [&#x200B; campagne-web/v8/email/edit-content &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 80% | E-mailontwerper in v8 | 🗑️ DELETE |
 | 14 | `inserting-images.md` | [&#x200B; campagne-web/v8/email/edit-content &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 85% | Afbeeldingsverwerking in v8 | 🗑️ DELETE |
 | 15 | `attaching-files.md` | [&#x200B; campagne-web/v8/email &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 90% | Bijlagen in v8 | 🗑️ DELETE |
@@ -73,7 +73,7 @@ ht-degree: 5%
 | 27 | `sms-channel.md` | [&#x200B; campagne-web/v8/msg/send-sms &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | Basisinformatie over SMS in v8 | 🗑️ DELETE |
 | 28 | `sms-send.md` | [&#x200B; campagne-web/v8/msg/send-sms &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 95% | SMS verzenden in v8 | 🗑️ DELETE |
 | 29 | **`sms-set-up-mid.md`** | GEEN | **0%** | **midsourcing opstelling (slechts op prem)** | ✅ **HOUD** |
-| 30 | `sms-protocol.md` | [&#x200B; campagne/v8/send/sms/smpp &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 60% | Geavanceerde SMPP, v8-diepte controleren | 🔍 REVISIE |
+| 30 | `sms-protocol.md` | [&#x200B; campagne/v8/send/sms/smpp &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/sms) | 60% | Geavanceerde SMPP, v8-diepte controleren | 🔍 REVISIE |
 | 31 | `sms-create.md` | [&#x200B; campagne-web/v8/msg/send-sms &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | SMS maken in v8 | 🗑️ DELETE |
 | 32 | `line-channel.md` | [&#x200B; campagne/v8/send/lijn &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line) | 85% | LINE-kanaal in v8 | 🗑️ DELETE |
 | 33 | `sms-content.md` | [&#x200B; campagne-web/v8/msg/send-sms &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | SMS-inhoud in v8 | 🗑️ DELETE |
@@ -129,8 +129,8 @@ ht-degree: 5%
 
 | Aantal | v7-bestand | v8-overeenkomst | % afstemmen | Notities | Actie |
 |---|---------|----------|---------|-------|--------|
-| 55 | `about-templates.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 90% | Sjablonen in v8 | 🗑️ DELETE |
-| 56 | `creating-a-delivery-template.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 95% | Sjabloon maken in v8 | 🗑️ DELETE |
+| 55 | `about-templates.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/delivery-template) | 90% | Sjablonen in v8 | 🗑️ DELETE |
+| 56 | `creating-a-delivery-template.md` | [&#x200B; campagne-web/v8/msg/levering-malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign-web/v8/msg/delivery-template) | 95% | Sjabloon maken in v8 | 🗑️ DELETE |
 | 57 | `about-seed-addresses.md` | [&#x200B; campagne/v8/send/test-and-send &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/test-and-send) | 95% | Zaden volledig in v8 | 🗑️ DELETE |
 | 58-60 | *(3 meer malplaatjedossiers)* | Diverse v8 | 85-95% | Alles in v8 | 🗑️ DELETE |
 
@@ -157,7 +157,7 @@ ht-degree: 5%
 |---|---------|----------|---------|-------|--------|
 | 75 | `understanding-delivery-failures.md` | [&#x200B; campagne/v8/send/levering-mislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 85% | In v8 gedocumenteerde fouten | 🗑️ DELETE |
 | 76 | `delivery-troubleshooting.md` | [&#x200B; campagne/v8/send/levering-mislukkingen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 70% | Goede uiteinden, **migreren ontbrekende inhoud** | ➡️ VERPLAATSEN |
-| 77 | `troubleshooting-sms.md` | [&#x200B; campagne/v8/send/sms &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 65% | SMS-Specifieke kwesties, **migreren** | ➡️ VERPLAATSEN |
+| 77 | `troubleshooting-sms.md` | [&#x200B; campagne/v8/send/sms &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/send/sms) | 65% | SMS-Specifieke kwesties, **migreren** | ➡️ VERPLAATSEN |
 | 78 | **`monitoring-deliverability.md`** | GEEN | **0%** | **Op-gebouw controlehulpmiddelen** | ✅ **HOUD** |
 | 79-83 | *(5 meer het oplossen van problemendossiers)* | Diverse v8 | 60-85% | Gemengd, per geval herzien | 🗑️ DELETE / ➡️ VERPLAATSEN |
 
