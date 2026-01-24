@@ -60,7 +60,7 @@ Migratie naar Adobe Managed Services biedt verbeterde schaalbaarheid, beveiligin
 
 **Begonnen het worden:** contacteer uw vertegenwoordiger van Adobe om uw milieu te beoordelen en een gedetailleerd migratieplan met Adobe Professional Services te ontwikkelen.
 
-Leer meer over [&#x200B; migrerend aan Managed Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Leer meer over [&#x200B; migrerend aan Managed Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=nl){target="_blank"}.
 
 ## Upgrades voor build (Campaign Classic v7) {#build-upgrades-v7}
 
@@ -214,7 +214,7 @@ Gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](http
 
 **Gemeenschap en steun:**
 
-* [&#x200B; Forums van de Gemeenschap van de Campagne &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [&#x200B; Forums van de Gemeenschap van de Campagne &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=nl){target="_blank"}
 * [&#x200B; de Steun van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 * [&#x200B; Controlebord (Gehoste klanten) &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl){target="_blank"}
 

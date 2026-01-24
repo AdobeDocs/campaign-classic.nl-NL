@@ -132,7 +132,7 @@ Het nieuwe ticketing systeem is gelanceerd door [&#x200B; Adobe Admin Console &#
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [&#x200B; sluit zich aan bij het gesprek &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [&#x200B; sluit zich aan bij het gesprek &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=nl){_blank}.
 
 ### Downloadcentrum voor campagne openen
 
