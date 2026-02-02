@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >In deze veelgestelde vragen wordt ingegaan op specifieke vragen met betrekking tot Adobe Campaign Classic v7-architectuur, implementatiemodellen en v7-specifieke functies.
 >
->**voor uitvoerige antwoorden aan gemeenschappelijke vragen van de Campagne** (werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, enz.), gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, die gedetailleerde antwoorden verstrekt die door onderwerp worden georganiseerd.
+>**voor uitvoerige antwoorden aan gemeenschappelijke vragen van de Campagne** (werkschema&#39;s, leveringen, publiek, het melden, verpersoonlijking, enz.), gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, die gedetailleerde antwoorden verstrekt die door onderwerp worden georganiseerd.
 
 ## Campaign Classic v7-architectuur en -implementatie {#v7-architecture}
 
@@ -37,7 +37,7 @@ Elk implementatiemodel heeft verschillende mogelijkheden en beheerverantwoordeli
 
 [&#x200B; klik hier om meer &#x200B;](../../installation/using/hosting-models.md) over het ontvangen van modellen en hun verschillen te leren.
 
-**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [&#x200B; leer over Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
+**Nota:** de Campagne v8 is uitsluitend beschikbaar als Beheerde Diensten van de Wolk. [&#x200B; leer over Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}.
 
 +++
 
@@ -68,7 +68,7 @@ Migratie naar Adobe Managed Services biedt verbeterde schaalbaarheid, beveiligin
 
 **Begonnen het worden:** contacteer uw vertegenwoordiger van Adobe om uw milieu te beoordelen en een gedetailleerd migratieplan met Adobe Professional Services te ontwikkelen.
 
-Leer meer over [&#x200B; migrerend aan Managed Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Leer meer over [&#x200B; migrerend aan Managed Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=nl){target="_blank"}.
 
 +++
 
@@ -94,7 +94,7 @@ Campagne v8 is een strategisch Adobe-platform dat ideaal is voor organisaties di
 
 Meer informatie:
 
-* [&#x200B; het Overzicht van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [&#x200B; het Overzicht van de Campagne v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=nl-NL){target="_blank"}
 * [&#x200B; Overgang van Campaign Classic v7 aan v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [&#x200B; Campagne v8 Uitgebreide FAQ &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -252,7 +252,7 @@ Gelieve te verwijzen naar [**Uitgebreide FAQ van de Campagne v8** &#x200B;](http
 
 **Gemeenschap en steun:**
 
-* [&#x200B; Forums van de Gemeenschap van de Campagne &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [&#x200B; Forums van de Gemeenschap van de Campagne &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=nl){target="_blank"}
 * [&#x200B; de Steun van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++
