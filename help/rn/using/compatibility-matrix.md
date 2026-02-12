@@ -485,7 +485,7 @@ De nieuwste versies van de volgende browsers zijn compatibel met Campaign voor w
 
 >[!MORELIKETHIS]
 >
->* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
+>* [Opmerkingen bij de release van Campaign Classic &#x200B;](../../rn/using/latest-release.md)
 >* [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
 >* [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 >* [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
